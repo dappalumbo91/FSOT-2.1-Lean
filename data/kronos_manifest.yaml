@@ -1,0 +1,13 @@
+# Kronos FSOT metrology / chronometry thesis runs.
+version: "1.0"
+updated: "2026-06-20"
+kronos_root: "C:/Users/damia/Desktop/Kronos"
+
+artifacts:
+  run_summary:
+    path: "thesis_kronos_run_summary.csv"
+
+verification:
+  run_count_min: 100
+  best_fractional_error_max: 1.0e-5
+  record_fractional_uncertainty: 5.5e-19

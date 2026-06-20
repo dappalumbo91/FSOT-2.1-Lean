@@ -1,0 +1,90 @@
+{
+  "generated_from": "C:\\Users\\damia\\Desktop\\FSOT_UNIFIED_DATABASE_SYSTEM_2026-05-03\\database\\FSOT_UNIFIED_INDEX.json",
+  "records_total": 30984,
+  "records_science": 13936,
+  "records_mathematics": 17048,
+  "records_strict_empirical": 7941,
+  "projects": 26,
+  "formula_lineages": 4232,
+  "top_projects": [
+    {
+      "project": "Math generator",
+      "records": 16593
+    },
+    {
+      "project": "FSOT NEURON Gene LLM",
+      "records": 2979
+    },
+    {
+      "project": "Fsot3.0 code",
+      "records": 2723
+    },
+    {
+      "project": "FSOT SMILES Lab",
+      "records": 2717
+    },
+    {
+      "project": "fsot_archive",
+      "records": 1756
+    },
+    {
+      "project": "New folder",
+      "records": 1162
+    },
+    {
+      "project": "FSOT-NL",
+      "records": 526
+    },
+    {
+      "project": "FluidThinker",
+      "records": 485
+    },
+    {
+      "project": "FSOT Cosmology Lab",
+      "records": 241
+    },
+    {
+      "project": "FSOT linguistics",
+      "records": 236
+    },
+    {
+      "project": "Aether Prime",
+      "records": 232
+    },
+    {
+      "project": "Aether",
+      "records": 225
+    },
+    {
+      "project": "FSOT NeuroLab",
+      "records": 196
+    },
+    {
+      "project": "fsuft aasb",
+      "records": 143
+    },
+    {
+      "project": "Fsot trinary",
+      "records": 130
+    }
+  ],
+  "verification_candidates": {
+    "total": 13637,
+    "foundation": 105,
+    "current": 13532,
+    "strict_empirical": 9403,
+    "with_error_pct": 9412
+  },
+  "numeric_evaluation": {
+    "rows_written": 165,
+    "evaluation_ok": 146,
+    "evaluation_failed": 19,
+    "table": "verification_numeric",
+    "evaluator_version": "fsot_numeric_eval_v4"
+  },
+  "outputs": {
+    "by_domain_dir": "c:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain",
+    "by_project_dir": "c:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_project",
+    "strict_empirical_jsonl": "c:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain\\strict_empirical.jsonl"
+  }
+}

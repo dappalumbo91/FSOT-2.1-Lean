@@ -31,7 +31,7 @@ It was developed in close collaboration with the Python reference implementation
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
-- **47 proved claims**, 0 active `sorry`, `lean_build_ok: true`
+- **54 proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
 - 64-codon dual-axis map (`FSOT.Formal.CodonPriors`) — 8 primary + 27 secondary patterns
@@ -48,7 +48,15 @@ Full pipeline: `python scripts/fsot_verification_runner.py`
 - Evolution sim (`FSOT.Formal.EvolutionPriors`) — 13 mitochondrial operons, fitness 58.49
 - Weather scalar sim (`FSOT.Formal.WeatherPriors`) — 24h at D_eff=15, all S>0
 - Linguistics anchors (`FSOT.Formal.LinguisticsPriors`) — 10 targets within 5% FSOT derivations
-- Unified DB meta-oracle (`FSOT.Formal.UnifiedDBPriors`) — 9403 strict_empirical, 146 evaluation_ok
+- Unified DB meta-oracle (`FSOT.Formal.UnifiedDBPriors`) — 9403 strict_empirical, 30984 indexed records
+- Cosmology Wave-4 (`FSOT.Formal.CosmologyWave4`) — 16 observables (PMNS/CKM/nuclear/dark-energy), max err 0.23%
+- Kronos metrology (`FSOT.Formal.KronosPriors`) — 568 runs, best fractional error 1.64e-7
+- Knowledge base corpus (`FSOT.Formal.KnowledgeBasePriors`) — 19213 formulas, 1905 citations
+- Math generator (`FSOT.Formal.MathGeneratorPriors`) — 7 comparisons within 2%
+- Trinary Fluid Computer v2 (`FSOT.Formal.TrinaryFluidPriors`) — 99.3% accuracy, 27 Metatron pathways
+- Soul Sibling kernel (`FSOT.Formal.SoulSiblingPriors`) — D_compact=24.98, zero_free
+- Lean proofs bridge (`FSOT.Formal.LeanProofsBridge`) — 28 formal constants, k aligned to SMILES
+- Domain coverage map: `data/domain_coverage_map.yaml` (26 ledger domains, 14 proved_sign / 9 partial / 3 gap)
 - Certificate: `data/certificate.json` | Run log: `data/verification_runs.jsonl`
 
 See `REPRODUCE.md` and `docs/genomic_brain_priors_verification.md` for details.

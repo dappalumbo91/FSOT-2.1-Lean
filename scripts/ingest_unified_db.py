@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -16,9 +17,15 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "data" / "unified_db_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
+INDEX_PATH = ROOT / "data" / "unified_db_domain_index.json"
+BUILD_INDEX_SCRIPT = ROOT / "scripts" / "build_unified_db_domain_index.py"
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from unified_db_meta import load_verification_report, summarize_unified_db  # noqa: E402
+from unified_db_meta import (  # noqa: E402
+    load_verification_report,
+    summarize_unified_db,
+    summarize_unified_index,
+)
 
 
 def ingest_unified_db(manifest_path: Path = MANIFEST_PATH) -> dict:
@@ -28,7 +35,20 @@ def ingest_unified_db(manifest_path: Path = MANIFEST_PATH) -> dict:
     root = Path(manifest["unified_root"])
     report_path = root / manifest["artifacts"]["verification_report"]["path"]
     report = load_verification_report(report_path)
-    return {"present": report_path.exists(), "report_path": str(report_path), **summarize_unified_db(report)}
+
+    subprocess.run(
+        [sys.executable, str(BUILD_INDEX_SCRIPT), "--output", str(INDEX_PATH)],
+        check=True,
+        cwd=str(ROOT),
+    )
+    index_summary = summarize_unified_index(INDEX_PATH)
+
+    return {
+        "present": report_path.exists(),
+        "report_path": str(report_path),
+        **summarize_unified_db(report),
+        **index_summary,
+    }
 
 
 def main() -> int:
@@ -42,6 +62,7 @@ def main() -> int:
     args.registry.write_text(json.dumps(registry, indent=2), encoding="utf-8")
     print(f"Updated {args.registry}")
     print(f"  strict_empirical: {unified['strict_empirical']}  evaluation_ok: {unified['evaluation_ok']}")
+    print(f"  records_total: {unified.get('records_total')}  top_projects: {unified.get('top_project_count')}")
     return 0
 
 

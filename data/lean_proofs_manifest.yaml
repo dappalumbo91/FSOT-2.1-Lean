@@ -1,0 +1,12 @@
+# FSOT_Lean_Proofs formal constant bridge.
+version: "1.0"
+updated: "2026-06-20"
+lean_proofs_root: "C:/Users/damia/Desktop/FSOT_Lean_Proofs"
+
+artifacts:
+  formal_output:
+    path: "FSOT_Formal_Output.json"
+
+verification:
+  formal_constant_count_min: 25
+  domain_proven_min: 25

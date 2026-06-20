@@ -1,0 +1,12 @@
+# Math generator cross-domain FSOT formula comparisons.
+version: "1.0"
+updated: "2026-06-20"
+math_generator_root: "C:/Users/damia/Desktop/Math generator"
+
+artifacts:
+  comparison_report:
+    path: "Unified/ada_spark_formula_generator/generated_formula_comparison_report.json"
+
+verification:
+  comparison_count_min: 5
+  max_error_pct: 5.0

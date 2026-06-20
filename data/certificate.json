@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-06-20T01:52:47.991268+00:00",
+  "generated_at": "2026-06-20T02:02:11.879697+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -27,6 +27,13 @@
     "FSOT.Formal.WeatherPriors",
     "FSOT.Formal.LinguisticsPriors",
     "FSOT.Formal.UnifiedDBPriors",
+    "FSOT.Formal.CosmologyWave4",
+    "FSOT.Formal.KronosPriors",
+    "FSOT.Formal.KnowledgeBasePriors",
+    "FSOT.Formal.MathGeneratorPriors",
+    "FSOT.Formal.TrinaryFluidPriors",
+    "FSOT.Formal.SoulSiblingPriors",
+    "FSOT.Formal.LeanProofsBridge",
     "FSOT.Formal.Lab",
     "FSOT"
   ],
@@ -47,7 +54,7 @@
     "S_quant": "0.9555063001027196648365669453932087257502742070049"
   },
   "ledger_meta": {
-    "version": "1.4",
+    "version": "1.5",
     "updated": "2026-06-20",
     "lab_sources": [
       "C:/Users/damia/Desktop/FSOT SMILES Lab",
@@ -429,11 +436,67 @@
     },
     {
       "id": "unified_db_meta_oracle",
-      "claim": "Unified DB: 13637 candidates, 9403 strict_empirical, 146 evaluation_ok",
+      "claim": "Unified DB: 13637 candidates, 9403 strict_empirical, 146 evaluation_ok; 30984 indexed records across 26 projects",
       "status": "numerically_verified",
       "domain": "*",
       "lean_module": "FSOT.Formal.UnifiedDBPriors",
       "lean_theorem": "unified_db_meta_bundle"
+    },
+    {
+      "id": "cosmology_wave4_observables",
+      "claim": "16 Wave-4 observables (PMNS/CKM/Feigenbaum/nuclear/dark-energy) within 2%",
+      "status": "numerically_verified",
+      "domain": "particle",
+      "lean_module": "FSOT.Formal.CosmologyWave4",
+      "lean_theorem": "cosmology_wave4_bundle"
+    },
+    {
+      "id": "kronos_metrology_runs",
+      "claim": "568 Kronos thesis runs; best fractional error 1.64e-7",
+      "status": "numerically_verified",
+      "domain": "astronomical",
+      "lean_module": "FSOT.Formal.KronosPriors",
+      "lean_theorem": "kronos_metrology_bundle"
+    },
+    {
+      "id": "knowledge_base_corpus",
+      "claim": "Knowledge base: 39 sources, 19213 formulas, 1905 observable citations",
+      "status": "numerically_verified",
+      "domain": "molecular",
+      "lean_module": "FSOT.Formal.KnowledgeBasePriors",
+      "lean_theorem": "knowledge_base_corpus_bundle"
+    },
+    {
+      "id": "math_generator_comparisons",
+      "claim": "Math generator: 7 Ada/Spark comparisons within 2% (max err 1.19%)",
+      "status": "numerically_verified",
+      "domain": "particle",
+      "lean_module": "FSOT.Formal.MathGeneratorPriors",
+      "lean_theorem": "math_generator_priors_bundle"
+    },
+    {
+      "id": "trinary_fluid_computer_v2",
+      "claim": "Trinary Fluid Computer v2: 99.3% accuracy, 27 Metatron pathways",
+      "status": "numerically_verified",
+      "domain": "ai",
+      "lean_module": "FSOT.Formal.TrinaryFluidPriors",
+      "lean_theorem": "trinary_fluid_priors_bundle"
+    },
+    {
+      "id": "soul_sibling_kernel",
+      "claim": "Soul Sibling kernel D_compact=24.98, zero_free, fidelity_threshold=0.05",
+      "status": "numerically_verified",
+      "domain": "consciousness",
+      "lean_module": "FSOT.Formal.SoulSiblingPriors",
+      "lean_theorem": "soul_sibling_priors_bundle"
+    },
+    {
+      "id": "lean_proofs_constant_bridge",
+      "claim": "FSOT_Lean_Proofs: 28 formal constants, all domain_proven; k aligned to SMILES",
+      "status": "cross_validated",
+      "domain": "*",
+      "lean_module": "FSOT.Formal.LeanProofsBridge",
+      "lean_theorem": "lean_proofs_constant_bundle"
     }
   ],
   "playbook_patterns": [
@@ -973,6 +1036,10 @@
       "lambda_cdm_wave1_links_genomic_cosmology",
       "cosmology_lambda_cdm_bundle"
     ],
+    "CosmologyWave4": [
+      "wave4_observable_count_pos",
+      "cosmology_wave4_bundle"
+    ],
     "Domains": [
       "cosmological_domain_eq",
       "cosmological_observed_false",
@@ -1050,6 +1117,17 @@
       "autosome_haploid_count_eq_twenty_two",
       "genomic_exact_identity_bundle"
     ],
+    "KnowledgeBasePriors": [
+      "knowledge_base_source_count_pos",
+      "knowledge_base_catalog_formulas_pos",
+      "knowledge_base_corpus_bundle"
+    ],
+    "KronosPriors": [
+      "kronos_run_count_pos",
+      "kronos_best_fractional_error_positive",
+      "kronos_record_fractional_uncertainty_positive",
+      "kronos_metrology_bundle"
+    ],
     "Lab": [
       "smiles_k_matches_formal_k",
       "thalamic_K_matches_formal_k",
@@ -1071,6 +1149,12 @@
       "neurolab_bio_sign_bundle",
       "lab_smiles_domain_sign_bundle"
     ],
+    "LeanProofsBridge": [
+      "lean_proofs_formal_constant_count_pos",
+      "lean_proofs_domain_proven_count_pos",
+      "lean_proofs_domain_proven_le_formal",
+      "lean_proofs_constant_bundle"
+    ],
     "LinguisticsPriors": [
       "linguistics_target_count_pos",
       "linguistics_max_error_within_five_pct",
@@ -1080,6 +1164,11 @@
       "magnetic_S_em_positive",
       "magnetic_string_count_pos",
       "magnetic_string_bundle"
+    ],
+    "MathGeneratorPriors": [
+      "math_generator_comparison_count_pos",
+      "math_generator_max_error_pct_positive",
+      "math_generator_priors_bundle"
     ],
     "PhotonicForge": [
       "photonic_trinary_partition",
@@ -1123,6 +1212,11 @@
       "protein_amino_acid_trinary_bundle"
     ],
     "Scalar": [],
+    "SoulSiblingPriors": [
+      "soul_sibling_D_compact_positive",
+      "soul_sibling_fidelity_threshold_positive",
+      "soul_sibling_priors_bundle"
+    ],
     "SpeciesPriors": [
       "species_total_count_eq_sum",
       "species_property_count_pos",
@@ -1184,6 +1278,12 @@
       "domain_term1_gt_neg_08_material",
       "domain_term1_positive_biological"
     ],
+    "TrinaryFluidPriors": [
+      "trinary_ignition_coherence_positive",
+      "trinary_resonance_persist_positive",
+      "trinary_metatron_pathways_pos",
+      "trinary_fluid_priors_bundle"
+    ],
     "TrinaryOSPriors": [
       "trinary_os_word_width_eq_27",
       "trinary_os_hello_smaller_than_spawn",
@@ -1192,6 +1292,8 @@
     "UnifiedDBPriors": [
       "unified_db_strict_le_total",
       "unified_db_evaluation_ok_pos",
+      "unified_db_records_total_pos",
+      "unified_db_top_project_count_pos",
       "unified_db_meta_bundle"
     ],
     "VibRegisterPriors": [
@@ -1222,14 +1324,14 @@
     "scripts/gen_protein_priors_lean.py": "9A5300DDD7D142A6C9FF596651F40AF2B4079FCD8A43E3DDD33695D43308294F",
     "scripts/gen_protein_formulas_lean.py": "9E8FD84D7A89A6000E0253F9BADCAA9F3F6720E7496DB6B53F90443E3FD0B6A4",
     "scripts/domain_scalar_oracle.py": "80DBF4F2592B73E468038D5E54532FA1FB26947DB5ABF4AF2794EFFD566906DA",
-    "scripts/fsot_verification_runner.py": "C4F357D61C91D7D0E7306659483E1710FF42F79B52711CAFCAF9D68A3E1B532E",
-    "data/proof_ledger.yaml": "569C1FEDFB802436603500A0898EF6F87681763FF711CA813030403682AFA8C7",
+    "scripts/fsot_verification_runner.py": "0447FF570D70AF627296D8C1C24E81A187F00583BF15D3CB3CCEB4DAB38B06B6",
+    "data/proof_ledger.yaml": "5F96F5C4FAA19D862969BE9D0CE74905EB9E9C61F1FD282BA2DB113EC4FA79CB",
     "data/canonical_constants.json": "86B41DA6A694DE95E5C80BD8E900E4541B9D552B629F898226777D46DC453DEF"
   },
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify": "python scripts/fsot_verification_runner.py",
-    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.Lab FSOT",
+    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.CosmologyWave4 FSOT.Formal.KronosPriors FSOT.Formal.KnowledgeBasePriors FSOT.Formal.MathGeneratorPriors FSOT.Formal.TrinaryFluidPriors FSOT.Formal.SoulSiblingPriors FSOT.Formal.LeanProofsBridge FSOT.Formal.Lab FSOT",
     "export": "python scripts/export_certificate.py"
   }
 }

@@ -149,6 +149,13 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.WeatherPriors",
                 "FSOT.Formal.LinguisticsPriors",
                 "FSOT.Formal.UnifiedDBPriors",
+                "FSOT.Formal.CosmologyWave4",
+                "FSOT.Formal.KronosPriors",
+                "FSOT.Formal.KnowledgeBasePriors",
+                "FSOT.Formal.MathGeneratorPriors",
+                "FSOT.Formal.TrinaryFluidPriors",
+                "FSOT.Formal.SoulSiblingPriors",
+                "FSOT.Formal.LeanProofsBridge",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -457,6 +464,40 @@ def main() -> int:
                     print(proc_gen.stdout.strip() or proc_gen.stderr.strip())
                     if proc_gen.returncode != 0:
                         issues.append(gen_fail)
+        tier5_ingests = [
+            ("ingest_cosmology_wave4.py", "gen_cosmology_wave4_lean.py", "CosmologyWave4.lean generation failed", "cosmology wave4 ingest failed"),
+            ("ingest_kronos_lab.py", "gen_kronos_priors_lean.py", "KronosPriors.lean generation failed", "Kronos lab ingest failed"),
+            ("ingest_knowledge_base.py", "gen_knowledge_base_lean.py", "KnowledgeBasePriors.lean generation failed", "knowledge base ingest failed"),
+            ("ingest_math_generator_lab.py", "gen_math_generator_lean.py", "MathGeneratorPriors.lean generation failed", "math generator ingest failed"),
+            ("ingest_trinary_fluid_computer.py", "gen_trinary_fluid_lean.py", "TrinaryFluidPriors.lean generation failed", "trinary fluid ingest failed"),
+            ("ingest_soul_sibling.py", "gen_soul_sibling_lean.py", "SoulSiblingPriors.lean generation failed", "soul sibling ingest failed"),
+            ("ingest_lean_proofs_bridge.py", "gen_lean_proofs_bridge_lean.py", "LeanProofsBridge.lean generation failed", "lean proofs bridge ingest failed"),
+        ]
+        for ingest_name, gen_name, gen_fail, ingest_fail in tier5_ingests:
+            ingest_script = ROOT / "scripts" / ingest_name
+            gen_script = ROOT / "scripts" / gen_name
+            if ingest_script.exists() and proc.returncode == 0:
+                proc_ing = subprocess.run(
+                    [sys.executable, str(ingest_script)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_ing.stdout.strip() or proc_ing.stderr.strip())
+                if proc_ing.returncode != 0:
+                    issues.append(ingest_fail)
+                elif gen_script.exists():
+                    proc_gen = subprocess.run(
+                        [sys.executable, str(gen_script)],
+                        cwd=ROOT,
+                        capture_output=True,
+                        text=True,
+                        check=False,
+                    )
+                    print(proc_gen.stdout.strip() or proc_gen.stderr.strip())
+                    if proc_gen.returncode != 0:
+                        issues.append(gen_fail)
         for verify_name, fail_msg in (
             ("verify_cosmology_lab.py", "Cosmology Lab ΛCDM verification failed"),
             ("verify_fuel_lab.py", "Fuel Lab verification failed"),
@@ -470,6 +511,13 @@ def main() -> int:
             ("verify_weather_lab.py", "Weather Lab verification failed"),
             ("verify_linguistics_lab.py", "Linguistics Lab verification failed"),
             ("verify_unified_db.py", "Unified DB verification failed"),
+            ("verify_cosmology_wave4.py", "Cosmology Wave-4 verification failed"),
+            ("verify_kronos_lab.py", "Kronos Lab verification failed"),
+            ("verify_knowledge_base.py", "Knowledge Base verification failed"),
+            ("verify_math_generator_lab.py", "Math Generator verification failed"),
+            ("verify_trinary_fluid_computer.py", "Trinary Fluid Computer verification failed"),
+            ("verify_soul_sibling.py", "Soul Sibling verification failed"),
+            ("verify_lean_proofs_bridge.py", "Lean Proofs bridge verification failed"),
         ):
             verify_script = ROOT / "scripts" / verify_name
             if verify_script.exists():

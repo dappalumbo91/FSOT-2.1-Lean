@@ -15,9 +15,14 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "data" / "unified_db_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
+INDEX_PATH = ROOT / "data" / "unified_db_domain_index.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
-from unified_db_meta import load_verification_report, summarize_unified_db  # noqa: E402
+from unified_db_meta import (  # noqa: E402
+    load_verification_report,
+    summarize_unified_db,
+    summarize_unified_index,
+)
 
 
 def verify_unified_db(
@@ -45,6 +50,15 @@ def verify_unified_db(
         issues.append(f"unified_db: strict_empirical={live.get('strict_empirical')}")
     if (live.get("evaluation_ok") or 0) < ver.get("evaluation_ok_min", 140):
         issues.append(f"unified_db: evaluation_ok={live.get('evaluation_ok')}")
+
+    if not INDEX_PATH.exists():
+        issues.append(f"unified_db: missing domain index — run ingest_unified_db.py ({INDEX_PATH})")
+    else:
+        index_live = summarize_unified_index(INDEX_PATH)
+        records_total = index_live.get("records_total") or 0
+        if records_total < ver.get("records_total_min", 30000):
+            issues.append(f"unified_db: records_total={records_total} < 30000")
+        live = {**live, **index_live}
 
     return issues, {**live, "issues": len(issues)}
 

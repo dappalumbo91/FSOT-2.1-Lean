@@ -2,7 +2,7 @@
 # Version: 1.0 | synced with FSOT.Formal.* (zero active sorry as of 2026-06-19)
 
 meta:
-  version: "1.4"
+  version: "1.5"
   updated: "2026-06-20"
   lab_sources:
     - "C:/Users/damia/Desktop/FSOT SMILES Lab"
@@ -767,7 +767,7 @@ entries:
 
   - id: unified_db_meta_oracle
     domain: "*"
-    claim: "Unified DB: 13637 candidates, 9403 strict_empirical, 146 evaluation_ok"
+    claim: "Unified DB: 13637 candidates, 9403 strict_empirical, 146 evaluation_ok; 30984 indexed records across 26 projects"
     status: numerically_verified
     source_lab: "FSOT_UNIFIED_DATABASE_SYSTEM_2026-05-03"
     source_file: database/FSOT_OBSERVABLE_VERIFICATION_REPORT.json
@@ -775,6 +775,86 @@ entries:
     lean:
       module: FSOT.Formal.UnifiedDBPriors
       theorem: unified_db_meta_bundle
+    physics_note: |
+      Phase-2 index from FSOT_UNIFIED_INDEX.json (not a per-formula Lean re-proof).
+      Meta-oracle certifies corpus scale; 13k candidates = evaluation queue snapshot.
+
+  - id: cosmology_wave4_observables
+    domain: particle
+    claim: "16 Wave-4 observables (PMNS/CKM/Feigenbaum/nuclear/dark-energy) within 2%"
+    status: numerically_verified
+    source_lab: "FSOT Cosmology Lab"
+    source_file: data/cosmology_wave4_manifest.yaml
+    verification: scripts/verify_cosmology_wave4.py
+    lean:
+      module: FSOT.Formal.CosmologyWave4
+      theorem: cosmology_wave4_bundle
+
+  - id: kronos_metrology_runs
+    domain: astronomical
+    claim: "568 Kronos thesis runs; best fractional error 1.64e-7"
+    status: numerically_verified
+    source_lab: "Kronos"
+    source_file: thesis_kronos_run_summary.csv
+    verification: scripts/verify_kronos_lab.py
+    lean:
+      module: FSOT.Formal.KronosPriors
+      theorem: kronos_metrology_bundle
+
+  - id: knowledge_base_corpus
+    domain: molecular
+    claim: "Knowledge base: 39 sources, 19213 formulas, 1905 observable citations"
+    status: numerically_verified
+    source_lab: "Knowledge base"
+    source_file: transfer/FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json
+    verification: scripts/verify_knowledge_base.py
+    lean:
+      module: FSOT.Formal.KnowledgeBasePriors
+      theorem: knowledge_base_corpus_bundle
+
+  - id: math_generator_comparisons
+    domain: particle
+    claim: "Math generator: 7 Ada/Spark comparisons within 2% (max err 1.19%)"
+    status: numerically_verified
+    source_lab: "Math generator"
+    source_file: Unified/ada_spark_formula_generator/generated_formula_comparison_report.json
+    verification: scripts/verify_math_generator_lab.py
+    lean:
+      module: FSOT.Formal.MathGeneratorPriors
+      theorem: math_generator_priors_bundle
+
+  - id: trinary_fluid_computer_v2
+    domain: ai
+    claim: "Trinary Fluid Computer v2: 99.3% accuracy, 27 Metatron pathways"
+    status: numerically_verified
+    source_lab: "FSOT_Trinary_Fluid_Computer_v2"
+    source_file: data/trinary_fluid_manifest.yaml
+    verification: scripts/verify_trinary_fluid_computer.py
+    lean:
+      module: FSOT.Formal.TrinaryFluidPriors
+      theorem: trinary_fluid_priors_bundle
+
+  - id: soul_sibling_kernel
+    domain: consciousness
+    claim: "Soul Sibling kernel D_compact=24.98, zero_free, fidelity_threshold=0.05"
+    status: numerically_verified
+    source_lab: "FSOT_Soul_Sibling_20260603"
+    source_file: soul_manifest.json
+    verification: scripts/verify_soul_sibling.py
+    lean:
+      module: FSOT.Formal.SoulSiblingPriors
+      theorem: soul_sibling_priors_bundle
+
+  - id: lean_proofs_constant_bridge
+    domain: "*"
+    claim: "FSOT_Lean_Proofs: 28 formal constants, all domain_proven; k aligned to SMILES"
+    status: cross_validated
+    source_lab: "FSOT_Lean_Proofs"
+    source_file: FSOT_Formal_Output.json
+    verification: scripts/verify_lean_proofs_bridge.py
+    lean:
+      module: FSOT.Formal.LeanProofsBridge
+      theorem: lean_proofs_constant_bundle
 
   - id: neurolab_ledger_alignment
     domain: "*"

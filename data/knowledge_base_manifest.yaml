@@ -1,0 +1,13 @@
+# FSOT Knowledge Base unified formula transfer corpus.
+version: "1.0"
+updated: "2026-06-20"
+knowledge_root: "C:/Users/damia/Desktop/Knowledge base"
+
+artifacts:
+  unified_transfer:
+    path: "transfer/FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json"
+
+verification:
+  source_count_min: 30
+  catalog_formulas_min: 19000
+  observable_citations_min: 1800

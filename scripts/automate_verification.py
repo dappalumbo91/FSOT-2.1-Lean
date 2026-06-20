@@ -74,6 +74,27 @@ STAGES: dict[str, tuple[str, list[str]]] = {
     "verify_weather": ("Verify weather scalar simulation", ["verify_weather_lab.py"]),
     "verify_linguistics": ("Verify linguistics anchor derivations", ["verify_linguistics_lab.py"]),
     "verify_unified_db": ("Verify unified DB meta-oracle", ["verify_unified_db.py"]),
+    "wave4_ingest": ("Ingest Cosmology Lab Wave-4 observables", ["ingest_cosmology_wave4.py"]),
+    "wave4_lean": ("Generate CosmologyWave4.lean", ["gen_cosmology_wave4_lean.py"]),
+    "kronos_ingest": ("Ingest Kronos metrology thesis runs", ["ingest_kronos_lab.py"]),
+    "kronos_lean": ("Generate KronosPriors.lean", ["gen_kronos_priors_lean.py"]),
+    "knowledge_ingest": ("Ingest Knowledge base unified transfer corpus", ["ingest_knowledge_base.py"]),
+    "knowledge_lean": ("Generate KnowledgeBasePriors.lean", ["gen_knowledge_base_lean.py"]),
+    "math_gen_ingest": ("Ingest Math generator comparison report", ["ingest_math_generator_lab.py"]),
+    "math_gen_lean": ("Generate MathGeneratorPriors.lean", ["gen_math_generator_lean.py"]),
+    "trinary_fluid_ingest": ("Ingest Trinary Fluid Computer v2 audit", ["ingest_trinary_fluid_computer.py"]),
+    "trinary_fluid_lean": ("Generate TrinaryFluidPriors.lean", ["gen_trinary_fluid_lean.py"]),
+    "soul_sibling_ingest": ("Ingest Soul Sibling kernel manifest", ["ingest_soul_sibling.py"]),
+    "soul_sibling_lean": ("Generate SoulSiblingPriors.lean", ["gen_soul_sibling_lean.py"]),
+    "lean_proofs_ingest": ("Ingest FSOT_Lean_Proofs formal output", ["ingest_lean_proofs_bridge.py"]),
+    "lean_proofs_lean": ("Generate LeanProofsBridge.lean", ["gen_lean_proofs_bridge_lean.py"]),
+    "verify_wave4": ("Verify Cosmology Wave-4 observables", ["verify_cosmology_wave4.py"]),
+    "verify_kronos": ("Verify Kronos metrology runs", ["verify_kronos_lab.py"]),
+    "verify_knowledge": ("Verify Knowledge base corpus", ["verify_knowledge_base.py"]),
+    "verify_math_gen": ("Verify Math generator comparisons", ["verify_math_generator_lab.py"]),
+    "verify_trinary_fluid": ("Verify Trinary Fluid Computer v2", ["verify_trinary_fluid_computer.py"]),
+    "verify_soul_sibling": ("Verify Soul Sibling kernel", ["verify_soul_sibling.py"]),
+    "verify_lean_proofs": ("Verify Lean proofs constant bridge", ["verify_lean_proofs_bridge.py"]),
     "runner": ("Full hash gate + Lean build + certificate", ["fsot_verification_runner.py"]),
 }
 
@@ -114,7 +135,9 @@ def main() -> int:
                 "verify_lab", "verify_bio", "verify_codon", "verify_protein",
                 "verify_cosmology", "verify_fuel", "verify_species",
                 "verify_vibra", "verify_magnetic", "verify_evolution",
-                "verify_weather", "verify_linguistics", "verify_unified_db", "runner",
+                "verify_weather", "verify_linguistics", "verify_unified_db",
+                "verify_wave4", "verify_kronos", "verify_knowledge", "verify_math_gen",
+                "verify_trinary_fluid", "verify_soul_sibling", "verify_lean_proofs", "runner",
             ):
                 break
 

@@ -17,6 +17,8 @@ def build_lean(registry: dict) -> str:
     total = u.get("total_candidates", 13637)
     strict = u.get("strict_empirical", 9403)
     eval_ok = u.get("evaluation_ok", 146)
+    records_total = u.get("records_total", 30000)
+    top_project_count = u.get("top_project_count", 15)
 
     return f"""/-
   FSOT Formal UnifiedDBPriors — unified observable database meta-certificate.
@@ -35,6 +37,8 @@ noncomputable section
 def unified_db_total_candidates : ℕ := {total}
 def unified_db_strict_empirical : ℕ := {strict}
 def unified_db_evaluation_ok : ℕ := {eval_ok}
+def unified_db_records_total : ℕ := {records_total}
+def unified_db_top_project_count : ℕ := {top_project_count}
 
 theorem unified_db_strict_le_total :
     unified_db_strict_empirical ≤ unified_db_total_candidates := by
@@ -43,17 +47,27 @@ theorem unified_db_strict_le_total :
 theorem unified_db_evaluation_ok_pos : 0 < unified_db_evaluation_ok := by
   unfold unified_db_evaluation_ok; norm_num
 
-/-- Bundle: 13k+ candidate observables with 9.4k strict-empirical and 146 evaluation-ok rows. -/
+theorem unified_db_records_total_pos : 0 < unified_db_records_total := by
+  unfold unified_db_records_total; norm_num
+
+theorem unified_db_top_project_count_pos : 0 < unified_db_top_project_count := by
+  unfold unified_db_top_project_count; norm_num
+
+/-- Bundle: 30k+ indexed records with 13k+ candidates and molecular-domain sign proxy. -/
 theorem unified_db_meta_bundle :
     unified_db_total_candidates = {total} ∧
     unified_db_strict_empirical = {strict} ∧
     unified_db_evaluation_ok = {eval_ok} ∧
+    unified_db_records_total = {records_total} ∧
+    unified_db_top_project_count = {top_project_count} ∧
     unified_db_strict_empirical ≤ unified_db_total_candidates ∧
     (0 : ℝ) < raw_S (get_domain_params "molecular") := by
   refine ⟨
     by unfold unified_db_total_candidates; norm_num,
     by unfold unified_db_strict_empirical; norm_num,
     by unfold unified_db_evaluation_ok; norm_num,
+    by unfold unified_db_records_total; norm_num,
+    by unfold unified_db_top_project_count; norm_num,
     unified_db_strict_le_total,
     lab_molecular_raw_S_positive
   ⟩

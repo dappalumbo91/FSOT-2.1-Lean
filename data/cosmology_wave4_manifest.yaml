@@ -1,0 +1,13 @@
+# FSOT Cosmology Lab Wave-4 (PMNS/CKM/Feigenbaum/nuclear/dark energy).
+version: "1.0"
+updated: "2026-06-20"
+cosmology_root: "C:/Users/damia/Desktop/FSOT Cosmology Lab"
+
+artifacts:
+  fsot_compute:
+    path: "fsot_compute.py"
+
+verification:
+  observable_count: 16
+  wave4_count: 16
+  max_error_pct: 2.0

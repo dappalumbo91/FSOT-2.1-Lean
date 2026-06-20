@@ -27,3 +27,22 @@ def summarize_unified_db(report: dict) -> dict[str, Any]:
         "done_total": checkpoint.get("done_total"),
         "evaluator_version": numeric.get("evaluator_version"),
     }
+
+
+def summarize_unified_index(index_path: Path) -> dict[str, Any]:
+    if not index_path.exists():
+        return {}
+    data = json.loads(index_path.read_text(encoding="utf-8"))
+    top_projects = data.get("top_projects", [])
+    return {
+        "index_path": str(index_path),
+        "generated_from": data.get("generated_from"),
+        "records_total": data.get("records_total"),
+        "records_science": data.get("records_science"),
+        "records_mathematics": data.get("records_mathematics"),
+        "records_strict_empirical": data.get("records_strict_empirical"),
+        "projects": data.get("projects"),
+        "formula_lineages": data.get("formula_lineages"),
+        "top_project_count": len(top_projects),
+        "top_projects": top_projects,
+    }
