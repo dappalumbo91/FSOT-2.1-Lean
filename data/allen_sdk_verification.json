@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-06-20T05:24:13.594740+00:00",
+  "allensdk_version": "2.16.2",
+  "allensdk_installed": true,
+  "hero_specimen_id": 324257146,
+  "hero_cell_class": "Sst_interneuron",
+  "hero_data_source": "allen_sdk",
+  "hero_rheobase_nA": 0.13,
+  "hero_input_resistance_MOhm": 282.994112,
+  "hero_fi_slope_Hz_per_nA": 750.0,
+  "certified_mean_rel_err": 0.07002728543379658,
+  "native_hybrid_mean_rel_err": 0.07002728543379658,
+  "canonical_bridge_mean_rel_err": 0.07354375821147667,
+  "canonical_vs_certified_delta": 0.0035164727776800936,
+  "within_few_points": true,
+  "cohort_cell_count": 2166,
+  "cohort_fi_median_rel_err": 0.24522634418835965,
+  "cohort_fi_pearson_r": 0.6070731362799854,
+  "verification_checks_passed": true,
+  "notes": "Allen SDK was already installed. Prior ~93% hero FI error was cwd/manifest fallback, not missing SDK. Hero sim requires cwd=nuron/cell data or run_neuron_cohort_eval.py."
+}
