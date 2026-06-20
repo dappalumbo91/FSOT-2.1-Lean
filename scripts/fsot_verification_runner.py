@@ -143,6 +143,12 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.CameoPriors",
                 "FSOT.Formal.TrinaryOSPriors",
                 "FSOT.Formal.PhotonicForge",
+                "FSOT.Formal.VibRegisterPriors",
+                "FSOT.Formal.MagneticStringPriors",
+                "FSOT.Formal.EvolutionPriors",
+                "FSOT.Formal.WeatherPriors",
+                "FSOT.Formal.LinguisticsPriors",
+                "FSOT.Formal.UnifiedDBPriors",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -418,6 +424,39 @@ def main() -> int:
                     print(proc_gen.stdout.strip() or proc_gen.stderr.strip())
                     if proc_gen.returncode != 0:
                         issues.append(gen_fail)
+        tier4_ingests = [
+            ("ingest_vibra_register.py", "gen_vibra_register_lean.py", "VibRegisterPriors.lean generation failed", "VibraFSOT register ingest failed"),
+            ("ingest_magnetic_strings.py", "gen_magnetic_strings_lean.py", "MagneticStringPriors.lean generation failed", "magnetic strings ingest failed"),
+            ("ingest_evolution_lab.py", "gen_evolution_priors_lean.py", "EvolutionPriors.lean generation failed", "evolution lab ingest failed"),
+            ("ingest_weather_lab.py", "gen_weather_priors_lean.py", "WeatherPriors.lean generation failed", "weather lab ingest failed"),
+            ("ingest_linguistics_lab.py", "gen_linguistics_priors_lean.py", "LinguisticsPriors.lean generation failed", "linguistics lab ingest failed"),
+            ("ingest_unified_db.py", "gen_unified_db_lean.py", "UnifiedDBPriors.lean generation failed", "unified DB ingest failed"),
+        ]
+        for ingest_name, gen_name, gen_fail, ingest_fail in tier4_ingests:
+            ingest_script = ROOT / "scripts" / ingest_name
+            gen_script = ROOT / "scripts" / gen_name
+            if ingest_script.exists() and proc.returncode == 0:
+                proc_ing = subprocess.run(
+                    [sys.executable, str(ingest_script)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_ing.stdout.strip() or proc_ing.stderr.strip())
+                if proc_ing.returncode != 0:
+                    issues.append(ingest_fail)
+                elif gen_script.exists():
+                    proc_gen = subprocess.run(
+                        [sys.executable, str(gen_script)],
+                        cwd=ROOT,
+                        capture_output=True,
+                        text=True,
+                        check=False,
+                    )
+                    print(proc_gen.stdout.strip() or proc_gen.stderr.strip())
+                    if proc_gen.returncode != 0:
+                        issues.append(gen_fail)
         for verify_name, fail_msg in (
             ("verify_cosmology_lab.py", "Cosmology Lab ΛCDM verification failed"),
             ("verify_fuel_lab.py", "Fuel Lab verification failed"),
@@ -425,6 +464,12 @@ def main() -> int:
             ("verify_cameo_lab.py", "CAMEO Lab verification failed"),
             ("verify_trinary_os.py", "Trinary OS verification failed"),
             ("verify_photonic_forge.py", "Photonic Forge verification failed"),
+            ("verify_vibra_register.py", "VibraFSOT register verification failed"),
+            ("verify_magnetic_strings.py", "Magnetic strings verification failed"),
+            ("verify_evolution_lab.py", "Evolution Lab verification failed"),
+            ("verify_weather_lab.py", "Weather Lab verification failed"),
+            ("verify_linguistics_lab.py", "Linguistics Lab verification failed"),
+            ("verify_unified_db.py", "Unified DB verification failed"),
         ):
             verify_script = ROOT / "scripts" / verify_name
             if verify_script.exists():

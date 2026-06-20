@@ -49,6 +49,12 @@ LEAN_TARGETS = [
     "FSOT.Formal.CameoPriors",
     "FSOT.Formal.TrinaryOSPriors",
     "FSOT.Formal.PhotonicForge",
+    "FSOT.Formal.VibRegisterPriors",
+    "FSOT.Formal.MagneticStringPriors",
+    "FSOT.Formal.EvolutionPriors",
+    "FSOT.Formal.WeatherPriors",
+    "FSOT.Formal.LinguisticsPriors",
+    "FSOT.Formal.UnifiedDBPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

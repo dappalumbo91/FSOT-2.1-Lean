@@ -1,0 +1,13 @@
+# FSOT Unified Database observable verification meta-certificate.
+version: "1.0"
+updated: "2026-06-20"
+unified_root: "C:/Users/damia/Desktop/FSOT_UNIFIED_DATABASE_SYSTEM_2026-05-03"
+
+artifacts:
+  verification_report:
+    path: "database/FSOT_OBSERVABLE_VERIFICATION_REPORT.json"
+
+verification:
+  total_candidates_min: 13000
+  strict_empirical_min: 9000
+  evaluation_ok_min: 140

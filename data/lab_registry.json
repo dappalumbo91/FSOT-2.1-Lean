@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0",
-  "generated_at": "2026-06-20T01:33:09.927675+00:00",
+  "generated_at": "2026-06-20T01:52:39.431816+00:00",
   "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
   "smiles_lab": {
     "source_path": "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\FSOT_SMILES_Lab_Dataset.json",
@@ -2728,7 +2728,31 @@
         "error_pct": 0.009407278780006465
       },
       {
-        "wave": "wave3_cosmology",
+        "wave": "wave3",
+        "name": "|V_us|",
+        "formula": "\u03b8_S/\u03c6 + (1 \u2212 S_quant)",
+        "computed": 0.22427764916395915,
+        "measured": 0.2243,
+        "error_pct": 0.009964706215270609
+      },
+      {
+        "wave": "wave3",
+        "name": "|V_cb|",
+        "formula": "S_quant/C_eff \u2212 S_quant",
+        "computed": 0.04220081332791359,
+        "measured": 0.0422,
+        "error_pct": 0.0019273173307759674
+      },
+      {
+        "wave": "wave3",
+        "name": "sin_theta_C",
+        "formula": "\u03c6/e\u00b3 + Suction",
+        "computed": 0.22759115424752144,
+        "measured": 0.22759,
+        "error_pct": 0.0005071609128041613
+      },
+      {
+        "wave": "wave3",
         "name": "Age_Gyr",
         "formula": "A_in\u00b7\u03c6 + \u03c6\u2075",
         "computed": 13.787196119245323,
@@ -2736,7 +2760,7 @@
         "error_pct": 0.00142249398217106
       },
       {
-        "wave": "wave3_cosmology",
+        "wave": "wave3",
         "name": "z_eq",
         "formula": "\u03c0\u2075\u00b7\u03c6\u2075",
         "computed": 3393.8103104014167,
@@ -2744,7 +2768,7 @@
         "error_pct": 0.240731616654418
       },
       {
-        "wave": "wave3_cosmology",
+        "wave": "wave3",
         "name": "theta_star",
         "formula": "P_base\u00b7\u03c6 \u2212 \u03b3\u00b2",
         "computed": 0.01040475951507544,
@@ -2752,21 +2776,85 @@
         "error_pct": 0.059941263323023214
       },
       {
-        "wave": "wave3_cosmology",
+        "wave": "wave3",
         "name": "r_star_Mpc",
         "formula": "\u03c0\u00b3/P_base \u2212 \u03c6",
         "computed": 144.39983003198907,
         "measured": 144.43,
         "error_pct": 0.02088898982963232
+      },
+      {
+        "wave": "wave3",
+        "name": "Deuteron_binding_MeV",
+        "formula": "\u221ae/e + \u03c6",
+        "computed": 2.224564648462528,
+        "measured": 2.224566,
+        "error_pct": 6.075510781503307e-05
+      },
+      {
+        "wave": "wave3",
+        "name": "Neutron_lifetime_s",
+        "formula": "\u03c0\u2077\u00b7\u03b8_S",
+        "computed": 878.5928513922833,
+        "measured": 878.4,
+        "error_pct": 0.021954848848277954
+      },
+      {
+        "wave": "wave3",
+        "name": "Ising2D_beta",
+        "formula": "\u03b8_S/\u03c6\u2075 + P_new",
+        "computed": 0.3265324013682464,
+        "measured": 0.32653,
+        "error_pct": 0.0007354204043789445
+      },
+      {
+        "wave": "wave3",
+        "name": "Ising2D_nu",
+        "formula": "\u221a\u03c6/ln(\u03c0) \u2212 ln(\u03c6)",
+        "computed": 0.6299845062655096,
+        "measured": 0.63002,
+        "error_pct": 0.005633747260469587
+      },
+      {
+        "wave": "wave3",
+        "name": "Ising2D_gamma",
+        "formula": "(1\u2212S_quant)/ln(\u03c6) + ln(\u03c0)",
+        "computed": 1.2371916616832948,
+        "measured": 1.2372,
+        "error_pct": 0.0006739667560075375
+      },
+      {
+        "wave": "wave3",
+        "name": "m_t/m_W",
+        "formula": "|S_cosm|/|Chaos| + \u03c8_con",
+        "computed": 2.15000345864463,
+        "measured": 2.1498,
+        "error_pct": 0.009464073152396864
+      },
+      {
+        "wave": "wave3",
+        "name": "m_H/m_W",
+        "formula": "S_quant\u00b7\u03c8_con + S_quant",
+        "computed": 1.5595014764878583,
+        "measured": 1.5595,
+        "error_pct": 9.46770027700249e-05
+      },
+      {
+        "wave": "wave3",
+        "name": "m_tau/m_e",
+        "formula": "\u03c0\u2077\u00b7ln(\u03c0) + e\u00b3",
+        "computed": 3477.5054587878312,
+        "measured": 3477.48,
+        "error_pct": 0.0007321045076093104
       }
     ],
-    "observable_count": 19,
+    "observable_count": 30,
     "wave1_count": 5,
     "wave2_count": 10,
-    "wave3_cosmology_count": 4,
-    "measured_count": 19,
+    "wave3_count": 15,
+    "measured_count": 30,
     "max_error_pct": 1.5431110234336303,
-    "mean_error_pct": 0.1466362918082917
+    "mean_error_pct": 0.09459461072853731
   },
   "fuel_lab": {
     "present": true,
@@ -11084,5 +11172,202 @@
       0,
       1
     ]
+  },
+  "vibra_register": {
+    "present": true,
+    "vibra_path": "C:\\Users\\damia\\Desktop\\VibraFSOT\\artifacts\\vibrafsot_final_progress.json",
+    "mc_report_path": "C:\\Users\\damia\\Desktop\\FSOTLean\\fsot_mc_report.json",
+    "d_eff": 11,
+    "base_freq_hz": 144.0,
+    "trial_count": 2,
+    "vib_stability_mean": 0.47,
+    "vib_S_mean": 0.4744906315011612,
+    "pattern_stability": 0.7662378870755164,
+    "relative_improvement_percent": -7.39,
+    "mc_trials": 10000,
+    "mc_checkpoint": 5,
+    "mc_prob_non_decrease": 1.0,
+    "mc_mean_delta_stability": 0.02499999999999991,
+    "ai_avg_raw_S": -0.35267159488654787,
+    "ai_prob_positive": 0.0
+  },
+  "magnetic_strings": {
+    "present": true,
+    "data_path": "C:\\Users\\damia\\Desktop\\fsot_magnetic_string_sim\\files-8306230f\\fsot_magnetic_strings_final.json",
+    "string_count": 250,
+    "S_em": 0.5188655207983146,
+    "S_ac": 0.3115907970863415,
+    "coherence_efficiency": 1.1013575330136454,
+    "top_aligned_count": 75,
+    "top_aligned_fraction": 0.3,
+    "final_mean_stability": 0.040471838368864095
+  },
+  "evolution_lab": {
+    "present": true,
+    "operons_path": "C:\\Users\\damia\\Desktop\\fsot_evolution_\\files-b7d9d6b8\\fsot_evolution_sim\\results\\biological_mt_operons.json",
+    "best_path": "C:\\Users\\damia\\Desktop\\fsot_evolution_\\files-b7d9d6b8\\fsot_evolution_sim\\results\\best_evolved_organism.json",
+    "operon_count": 13,
+    "total_bp": 11395,
+    "best_id": "I0_G50_ELITE",
+    "fitness": 58.493466,
+    "biological_capacity": 8002.5,
+    "best_operon_count": 13
+  },
+  "weather_lab": {
+    "present": true,
+    "log_path": "C:\\Users\\damia\\Desktop\\weather\\fsot_weather_sim_log.json",
+    "hour_count": 24,
+    "D_eff_values": [
+      15.0
+    ],
+    "S_min": 0.364542,
+    "S_max": 0.624044,
+    "S_mean": 0.48326775000000016,
+    "positive_S_hours": 24
+  },
+  "linguistics_lab": {
+    "present": true,
+    "targets_path": "C:\\Users\\damia\\Desktop\\FSOT linguistics\\data\\LINGUISTIC_TARGETS.csv",
+    "db_path": "C:\\Users\\damia\\Desktop\\FSOT linguistics\\db\\linguistics.db",
+    "rows": [
+      {
+        "name": "Zipf_exponent_English",
+        "measured": 1.0,
+        "sigma": 0.1,
+        "unit": "dimensionless",
+        "group": "lexicon",
+        "source": "Zipf 1949; Piantadosi 2014",
+        "computed": 1.0,
+        "error_pct": 0.0,
+        "formula": "FSOT: phi**2 - phi  (exact golden-ratio identity)",
+        "status": "hand"
+      },
+      {
+        "name": "Mean_dependency_length_EN",
+        "measured": 2.3,
+        "sigma": 0.2,
+        "unit": "words",
+        "group": "syntax",
+        "source": "Liu 2008; Futrell Mahowald Gibson 2015",
+        "computed": 2.40001358369048,
+        "error_pct": 0.0005659871035364658,
+        "formula": "FSOT: phi*(e/pi)+1",
+        "status": "search-loose"
+      },
+      {
+        "name": "Mean_phoneme_inventory_size",
+        "measured": 31.0,
+        "sigma": 3.0,
+        "unit": "phonemes",
+        "group": "phonology",
+        "source": "Maddieson 1984 UPSID",
+        "computed": 30.9995813680981,
+        "error_pct": -0.0013504254899468224,
+        "formula": "FSOT: ((1/gamma)-sqrt(2))*(pi^4)",
+        "status": "search-loose"
+      },
+      {
+        "name": "Letter_entropy_English",
+        "measured": 4.18,
+        "sigma": 0.05,
+        "unit": "bits/letter",
+        "group": "orthography",
+        "source": "Shannon 1951",
+        "computed": 4.18002506099209,
+        "error_pct": 0.0005995452654275573,
+        "formula": "FSOT: sqrt(5)*(2*pi)-(pi^2)",
+        "status": "search-loose"
+      },
+      {
+        "name": "Mean_word_length_English",
+        "measured": 4.5,
+        "sigma": 0.3,
+        "unit": "characters",
+        "group": "lexicon",
+        "source": "Moby + COCA unigrams",
+        "computed": 4.49971638840435,
+        "error_pct": -0.006302479903277616,
+        "formula": "FSOT: (1/gamma)*(sqrt(3)+(e/pi))",
+        "status": "search-loose"
+      },
+      {
+        "name": "Saccade_length_reading",
+        "measured": 8.0,
+        "sigma": 1.0,
+        "unit": "characters",
+        "group": "reading",
+        "source": "Rayner 1998",
+        "computed": 8.00021360546018,
+        "error_pct": 0.002670068252275115,
+        "formula": "FSOT: ((e^2)-sqrt(3))*sqrt(2)",
+        "status": "search-loose"
+      },
+      {
+        "name": "Mean_fixation_duration",
+        "measured": 225.0,
+        "sigma": 25.0,
+        "unit": "ms",
+        "group": "reading",
+        "source": "Rayner 1998",
+        "computed": 224.988085867106,
+        "error_pct": -0.005295170175132726,
+        "formula": "FSOT: (phi^5)*(e^3)+sqrt(5)",
+        "status": "search-loose"
+      },
+      {
+        "name": "Heaps_exponent",
+        "measured": 0.6,
+        "sigma": 0.1,
+        "unit": "dimensionless",
+        "group": "lexicon",
+        "source": "Heaps 1978; Gerlach Altmann 2013",
+        "computed": 0.599997786040735,
+        "error_pct": -0.00036899321083823844,
+        "formula": "FSOT: ((e^3)-(2*pi^2))*(1/gamma)",
+        "status": "search-loose"
+      },
+      {
+        "name": "Cross_linguistic_info_rate",
+        "measured": 39.15,
+        "sigma": 5.0,
+        "unit": "bits/s",
+        "group": "pragmatics",
+        "source": "Coup\u00e9 et al. 2019 Science Advances",
+        "computed": 39.1495279442755,
+        "error_pct": -0.001205761748405669,
+        "formula": "FSOT: (phi^3)*(phi^7)/pi",
+        "status": "search-loose"
+      },
+      {
+        "name": "Sentence_length_mean_EN",
+        "measured": 17.0,
+        "sigma": 3.0,
+        "unit": "words",
+        "group": "syntax",
+        "source": "Brown + COCA",
+        "computed": 16.9995632588799,
+        "error_pct": -0.0025690654122958196,
+        "formula": "FSOT: ((phi^3)-(e/pi))*(e^phi)",
+        "status": "search-loose"
+      }
+    ],
+    "target_count": 10,
+    "derived_count": 10,
+    "max_error_pct": 0.006302479903277616,
+    "mean_error_pct": 0.002092749656113603
+  },
+  "unified_db": {
+    "present": true,
+    "report_path": "C:\\Users\\damia\\Desktop\\FSOT_UNIFIED_DATABASE_SYSTEM_2026-05-03\\database\\FSOT_OBSERVABLE_VERIFICATION_REPORT.json",
+    "total_candidates": 13637,
+    "foundation_candidates": 105,
+    "current_candidates": 13532,
+    "strict_empirical": 9403,
+    "with_error_pct": 9412,
+    "evaluation_ok": 146,
+    "evaluation_failed": 19,
+    "processed_total": 30984,
+    "done_total": 30984,
+    "evaluator_version": "fsot_numeric_eval_v4"
   }
 }

@@ -56,6 +56,24 @@ STAGES: dict[str, tuple[str, list[str]]] = {
     "verify_cameo": ("Verify CAMEO symbolic benchmarks", ["verify_cameo_lab.py"]),
     "verify_trinary_os": ("Verify trinary OS FSOTB oracles", ["verify_trinary_os.py"]),
     "verify_photonic": ("Verify photonic VRAM payload", ["verify_photonic_forge.py"]),
+    "vibra_ingest": ("Ingest VibraFSOT register + MC report", ["ingest_vibra_register.py"]),
+    "vibra_lean": ("Generate VibRegisterPriors.lean", ["gen_vibra_register_lean.py"]),
+    "magnetic_ingest": ("Ingest magnetic string lattice", ["ingest_magnetic_strings.py"]),
+    "magnetic_lean": ("Generate MagneticStringPriors.lean", ["gen_magnetic_strings_lean.py"]),
+    "evolution_ingest": ("Ingest evolution sim operons", ["ingest_evolution_lab.py"]),
+    "evolution_lean": ("Generate EvolutionPriors.lean", ["gen_evolution_priors_lean.py"]),
+    "weather_ingest": ("Ingest weather simulation log", ["ingest_weather_lab.py"]),
+    "weather_lean": ("Generate WeatherPriors.lean", ["gen_weather_priors_lean.py"]),
+    "linguistics_ingest": ("Ingest linguistics empirical targets", ["ingest_linguistics_lab.py"]),
+    "linguistics_lean": ("Generate LinguisticsPriors.lean", ["gen_linguistics_priors_lean.py"]),
+    "unified_db_ingest": ("Ingest unified DB verification report", ["ingest_unified_db.py"]),
+    "unified_db_lean": ("Generate UnifiedDBPriors.lean", ["gen_unified_db_lean.py"]),
+    "verify_vibra": ("Verify VibraFSOT register + MC alignment", ["verify_vibra_register.py"]),
+    "verify_magnetic": ("Verify magnetic string lattice", ["verify_magnetic_strings.py"]),
+    "verify_evolution": ("Verify evolution sim metrics", ["verify_evolution_lab.py"]),
+    "verify_weather": ("Verify weather scalar simulation", ["verify_weather_lab.py"]),
+    "verify_linguistics": ("Verify linguistics anchor derivations", ["verify_linguistics_lab.py"]),
+    "verify_unified_db": ("Verify unified DB meta-oracle", ["verify_unified_db.py"]),
     "runner": ("Full hash gate + Lean build + certificate", ["fsot_verification_runner.py"]),
 }
 
@@ -94,7 +112,9 @@ def main() -> int:
             failures += 1
             if name in (
                 "verify_lab", "verify_bio", "verify_codon", "verify_protein",
-                "verify_cosmology", "verify_fuel", "verify_species", "runner",
+                "verify_cosmology", "verify_fuel", "verify_species",
+                "verify_vibra", "verify_magnetic", "verify_evolution",
+                "verify_weather", "verify_linguistics", "verify_unified_db", "runner",
             ):
                 break
 

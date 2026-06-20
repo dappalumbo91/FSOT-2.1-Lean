@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-06-20T01:33:24.822337+00:00",
+  "generated_at": "2026-06-20T01:52:47.991268+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -21,6 +21,12 @@
     "FSOT.Formal.CameoPriors",
     "FSOT.Formal.TrinaryOSPriors",
     "FSOT.Formal.PhotonicForge",
+    "FSOT.Formal.VibRegisterPriors",
+    "FSOT.Formal.MagneticStringPriors",
+    "FSOT.Formal.EvolutionPriors",
+    "FSOT.Formal.WeatherPriors",
+    "FSOT.Formal.LinguisticsPriors",
+    "FSOT.Formal.UnifiedDBPriors",
     "FSOT.Formal.Lab",
     "FSOT"
   ],
@@ -41,8 +47,8 @@
     "S_quant": "0.9555063001027196648365669453932087257502742070049"
   },
   "ledger_meta": {
-    "version": "1.3",
-    "updated": "2026-06-19",
+    "version": "1.4",
+    "updated": "2026-06-20",
     "lab_sources": [
       "C:/Users/damia/Desktop/FSOT SMILES Lab",
       "C:/Users/damia/Desktop/FSOT NeuroLab"
@@ -335,7 +341,7 @@
     },
     {
       "id": "cosmology_lambda_cdm_observables",
-      "claim": "19 \u039bCDM observables (Wave-1/2/3 scales) within 2% of measured targets",
+      "claim": "30 \u039bCDM observables (Wave-1/2/3 full) within 2% of measured targets",
       "status": "numerically_verified",
       "domain": "cosmological",
       "lean_module": "FSOT.Formal.CosmologyLab",
@@ -380,6 +386,54 @@
       "domain": "electron",
       "lean_module": "FSOT.Formal.PhotonicForge",
       "lean_theorem": "photonic_forge_bundle"
+    },
+    {
+      "id": "vibra_register_mc_alignment",
+      "claim": "VibraFSOT D_eff=11 register: pattern_stability\u22480.766, avg_S\u22480.474; MC cp5 prob_non_decrease=1.0",
+      "status": "numerically_verified",
+      "domain": "ai",
+      "lean_module": "FSOT.Formal.VibRegisterPriors",
+      "lean_theorem": "vibra_register_bundle"
+    },
+    {
+      "id": "magnetic_string_lattice",
+      "claim": "250 magnetic strings, S_em\u22480.519, 75 top-aligned",
+      "status": "numerically_verified",
+      "domain": "electron",
+      "lean_module": "FSOT.Formal.MagneticStringPriors",
+      "lean_theorem": "magnetic_string_bundle"
+    },
+    {
+      "id": "evolution_mt_operons",
+      "claim": "13 mitochondrial operons; best fitness 58.49, biological_capacity 8002.5",
+      "status": "numerically_verified",
+      "domain": "biological",
+      "lean_module": "FSOT.Formal.EvolutionPriors",
+      "lean_theorem": "evolution_priors_bundle"
+    },
+    {
+      "id": "weather_scalar_simulation",
+      "claim": "24-hour weather sim at D_eff=15; all hourly S>0",
+      "status": "numerically_verified",
+      "domain": "medical",
+      "lean_module": "FSOT.Formal.WeatherPriors",
+      "lean_theorem": "weather_priors_bundle"
+    },
+    {
+      "id": "linguistics_empirical_anchors",
+      "claim": "10 LINGUISTIC_TARGETS.csv anchors within 5% FSOT seed derivations",
+      "status": "numerically_verified",
+      "domain": "neural",
+      "lean_module": "FSOT.Formal.LinguisticsPriors",
+      "lean_theorem": "linguistics_priors_bundle"
+    },
+    {
+      "id": "unified_db_meta_oracle",
+      "claim": "Unified DB: 13637 candidates, 9403 strict_empirical, 146 evaluation_ok",
+      "status": "numerically_verified",
+      "domain": "*",
+      "lean_module": "FSOT.Formal.UnifiedDBPriors",
+      "lean_theorem": "unified_db_meta_bundle"
     }
   ],
   "playbook_patterns": [
@@ -915,7 +969,6 @@
       "r_d_approx_value"
     ],
     "CosmologyLab": [
-      "lambda_cdm_observable_count_eq_nineteen",
       "lambda_cdm_wave_partition",
       "lambda_cdm_wave1_links_genomic_cosmology",
       "cosmology_lambda_cdm_bundle"
@@ -962,6 +1015,11 @@
       "biological_raw_S_positive",
       "nuclear_raw_S_positive",
       "energy_raw_S_positive"
+    ],
+    "EvolutionPriors": [
+      "evolution_fitness_positive",
+      "evolution_operon_count_pos",
+      "evolution_priors_bundle"
     ],
     "FuelPriors": [
       "fuel_profile_count_pos",
@@ -1012,6 +1070,16 @@
       "neurolab_genomic_exact_bundle",
       "neurolab_bio_sign_bundle",
       "lab_smiles_domain_sign_bundle"
+    ],
+    "LinguisticsPriors": [
+      "linguistics_target_count_pos",
+      "linguistics_max_error_within_five_pct",
+      "linguistics_priors_bundle"
+    ],
+    "MagneticStringPriors": [
+      "magnetic_S_em_positive",
+      "magnetic_string_count_pos",
+      "magnetic_string_bundle"
     ],
     "PhotonicForge": [
       "photonic_trinary_partition",
@@ -1120,6 +1188,22 @@
       "trinary_os_word_width_eq_27",
       "trinary_os_hello_smaller_than_spawn",
       "trinary_os_fsotb_bundle"
+    ],
+    "UnifiedDBPriors": [
+      "unified_db_strict_le_total",
+      "unified_db_evaluation_ok_pos",
+      "unified_db_meta_bundle"
+    ],
+    "VibRegisterPriors": [
+      "vibra_pattern_stability_positive",
+      "vibra_avg_S_mean_positive",
+      "vibra_mc_prob_non_decrease_cp5_le_one",
+      "vibra_register_bundle"
+    ],
+    "WeatherPriors": [
+      "weather_S_min_positive",
+      "weather_hour_count_pos",
+      "weather_priors_bundle"
     ]
   },
   "source_manifest_sha256": {
@@ -1138,14 +1222,14 @@
     "scripts/gen_protein_priors_lean.py": "9A5300DDD7D142A6C9FF596651F40AF2B4079FCD8A43E3DDD33695D43308294F",
     "scripts/gen_protein_formulas_lean.py": "9E8FD84D7A89A6000E0253F9BADCAA9F3F6720E7496DB6B53F90443E3FD0B6A4",
     "scripts/domain_scalar_oracle.py": "80DBF4F2592B73E468038D5E54532FA1FB26947DB5ABF4AF2794EFFD566906DA",
-    "scripts/fsot_verification_runner.py": "B9A445D84B29468A5112471564B26AE49B411973F72B063EF919580E78FD0E53",
-    "data/proof_ledger.yaml": "BE486A7062F2E4F86611E3B0A1782062B64BCD25E7AD6EE182F05E857844A075",
+    "scripts/fsot_verification_runner.py": "C4F357D61C91D7D0E7306659483E1710FF42F79B52711CAFCAF9D68A3E1B532E",
+    "data/proof_ledger.yaml": "569C1FEDFB802436603500A0898EF6F87681763FF711CA813030403682AFA8C7",
     "data/canonical_constants.json": "86B41DA6A694DE95E5C80BD8E900E4541B9D552B629F898226777D46DC453DEF"
   },
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify": "python scripts/fsot_verification_runner.py",
-    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.Lab FSOT",
+    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.Lab FSOT",
     "export": "python scripts/export_certificate.py"
   }
 }

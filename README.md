@@ -31,18 +31,24 @@ It was developed in close collaboration with the Python reference implementation
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
-- **41 proved claims**, 0 active `sorry`, `lean_build_ok: true`
+- **47 proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
 - 64-codon dual-axis map (`FSOT.Formal.CodonPriors`) — 8 primary + 27 secondary patterns
 - Protein amino-acid trinary (`FSOT.Formal.ProteinPriors`) — 20 AAs, 10 distinct patterns ⊆ 27
 - Protein formula closed forms (`FSOT.Formal.ProteinFormulas`) — 15 catalog + 3 proposed, φ⁶ disulfide certified
-- ΛCDM cosmology observables (`FSOT.Formal.CosmologyLab`) — 19 observables within 2%
+- ΛCDM cosmology observables (`FSOT.Formal.CosmologyLab`) — 30 observables (full Wave-3) within 2%
 - Fuel Lab compound profiles (`FSOT.Formal.FuelPriors`) — 6 profiles, 34 resolved PubChem lookups
 - Machine & Molecule catalog (`FSOT.Formal.SpeciesPriors`) — 141 species, 684 FSOT properties within 5%
 - Genetics CAMEO symbolic folding (`FSOT.Formal.CameoPriors`) — 130 benchmarks, 8.85 Å MAE formula
 - Fsot trinary OS (`FSOT.Formal.TrinaryOSPriors`) — FSOTB Tier-1/2/3 oracle invariants
 - Photonic V2 virtual crystal (`FSOT.Formal.PhotonicForge`) — 180 voxels, POOF/P_new resonance map
+- VibraFSOT register + MC alignment (`FSOT.Formal.VibRegisterPriors`) — D_eff=11, cp5 prob_non_decrease=1.0
+- Magnetic string lattice (`FSOT.Formal.MagneticStringPriors`) — 250 strings, S_em≈0.519
+- Evolution sim (`FSOT.Formal.EvolutionPriors`) — 13 mitochondrial operons, fitness 58.49
+- Weather scalar sim (`FSOT.Formal.WeatherPriors`) — 24h at D_eff=15, all S>0
+- Linguistics anchors (`FSOT.Formal.LinguisticsPriors`) — 10 targets within 5% FSOT derivations
+- Unified DB meta-oracle (`FSOT.Formal.UnifiedDBPriors`) — 9403 strict_empirical, 146 evaluation_ok
 - Certificate: `data/certificate.json` | Run log: `data/verification_runs.jsonl`
 
 See `REPRODUCE.md` and `docs/genomic_brain_priors_verification.md` for details.
@@ -54,7 +60,7 @@ pip install -r requirements.txt
 python scripts/fsot_verification_runner.py
 
 # Or Lean-only build
-lake build FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.Lab
+lake build FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.Lab
 ```
 
 ## Alignment with Reference Files

@@ -1,0 +1,14 @@
+# FSOT linguistics empirical anchor targets.
+version: "1.0"
+updated: "2026-06-20"
+linguistics_root: "C:/Users/damia/Desktop/FSOT linguistics"
+
+artifacts:
+  targets_csv:
+    path: "data/LINGUISTIC_TARGETS.csv"
+  derivations_db:
+    path: "db/linguistics.db"
+
+verification:
+  target_count: 10
+  max_error_pct: 5.0

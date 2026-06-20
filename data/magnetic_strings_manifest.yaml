@@ -1,0 +1,13 @@
+# FSOT magnetic string lattice simulation.
+version: "1.0"
+updated: "2026-06-20"
+magnetic_root: "C:/Users/damia/Desktop/fsot_magnetic_string_sim"
+
+artifacts:
+  final_json:
+    path: "files-8306230f/fsot_magnetic_strings_final.json"
+
+verification:
+  string_count_min: 250
+  S_em_min: 0.4
+  top_aligned_min: 50

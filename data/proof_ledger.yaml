@@ -2,8 +2,8 @@
 # Version: 1.0 | synced with FSOT.Formal.* (zero active sorry as of 2026-06-19)
 
 meta:
-  version: "1.3"
-  updated: "2026-06-19"
+  version: "1.4"
+  updated: "2026-06-20"
   lab_sources:
     - "C:/Users/damia/Desktop/FSOT SMILES Lab"
     - "C:/Users/damia/Desktop/FSOT NeuroLab"
@@ -630,7 +630,7 @@ entries:
 
   - id: cosmology_lambda_cdm_observables
     domain: cosmological
-    claim: "19 ΛCDM observables (Wave-1/2/3 scales) within 2% of measured targets"
+    claim: "30 ΛCDM observables (Wave-1/2/3 full) within 2% of measured targets"
     status: numerically_verified
     source_lab: "FSOT Cosmology Lab"
     source_file: fsot_compute.py
@@ -639,8 +639,8 @@ entries:
       module: FSOT.Formal.CosmologyLab
       theorem: cosmology_lambda_cdm_bundle
     physics_note: |
-      Wave-1 (5) links to FSOT.Formal.Cosmology interval certificates; Wave-2 (10) and
-      Wave-3 cosmology scales (4) numerically verified via Cosmology Lab engine.
+      Phase 2: Wave-1 (5) + Wave-2 (10) + full Wave-3 (15 CKM/cosmology/nuclear/Ising/mass ratios).
+      Max error ~1.54% (H0); links to FSOT.Formal.Cosmology interval certificates.
 
   - id: fuel_lab_compound_profiles
     domain: chemical
@@ -706,6 +706,75 @@ entries:
       theorem: photonic_forge_bundle
     physics_note: |
       Photonic V2 VRAM slicer payload; balanced trinary {-1,0,+1} with FSOT layer-2 composites.
+
+  - id: vibra_register_mc_alignment
+    domain: ai
+    claim: "VibraFSOT D_eff=11 register: pattern_stability≈0.766, avg_S≈0.474; MC cp5 prob_non_decrease=1.0"
+    status: numerically_verified
+    source_lab: "VibraFSOT + FSOTLean"
+    source_file: artifacts/vibrafsot_final_progress.json
+    verification: scripts/verify_vibra_register.py
+    lean:
+      module: FSOT.Formal.VibRegisterPriors
+      theorem: vibra_register_bundle
+    physics_note: |
+      Certified snapshot (relative_improvement -7.39% vs binary baseline documented).
+      MC ai avg_raw_S<0 aligns Lean ai_raw_S_non_positive at canonical ledger params.
+
+  - id: magnetic_string_lattice
+    domain: electron
+    claim: "250 magnetic strings, S_em≈0.519, 75 top-aligned"
+    status: numerically_verified
+    source_lab: "fsot_magnetic_string_sim"
+    source_file: fsot_magnetic_strings_final.json
+    verification: scripts/verify_magnetic_strings.py
+    lean:
+      module: FSOT.Formal.MagneticStringPriors
+      theorem: magnetic_string_bundle
+
+  - id: evolution_mt_operons
+    domain: biological
+    claim: "13 mitochondrial operons; best fitness 58.49, biological_capacity 8002.5"
+    status: numerically_verified
+    source_lab: "fsot_evolution_sim"
+    source_file: biological_mt_operons.json
+    verification: scripts/verify_evolution_lab.py
+    lean:
+      module: FSOT.Formal.EvolutionPriors
+      theorem: evolution_priors_bundle
+
+  - id: weather_scalar_simulation
+    domain: medical
+    claim: "24-hour weather sim at D_eff=15; all hourly S>0"
+    status: numerically_verified
+    source_lab: "weather"
+    source_file: fsot_weather_sim_log.json
+    verification: scripts/verify_weather_lab.py
+    lean:
+      module: FSOT.Formal.WeatherPriors
+      theorem: weather_priors_bundle
+
+  - id: linguistics_empirical_anchors
+    domain: neural
+    claim: "10 LINGUISTIC_TARGETS.csv anchors within 5% FSOT seed derivations"
+    status: numerically_verified
+    source_lab: "FSOT linguistics"
+    source_file: data/LINGUISTIC_TARGETS.csv
+    verification: scripts/verify_linguistics_lab.py
+    lean:
+      module: FSOT.Formal.LinguisticsPriors
+      theorem: linguistics_priors_bundle
+
+  - id: unified_db_meta_oracle
+    domain: "*"
+    claim: "Unified DB: 13637 candidates, 9403 strict_empirical, 146 evaluation_ok"
+    status: numerically_verified
+    source_lab: "FSOT_UNIFIED_DATABASE_SYSTEM_2026-05-03"
+    source_file: database/FSOT_OBSERVABLE_VERIFICATION_REPORT.json
+    verification: scripts/verify_unified_db.py
+    lean:
+      module: FSOT.Formal.UnifiedDBPriors
+      theorem: unified_db_meta_bundle
 
   - id: neurolab_ledger_alignment
     domain: "*"

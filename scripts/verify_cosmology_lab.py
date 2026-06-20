@@ -48,7 +48,7 @@ def verify_cosmology(
     if not stored:
         issues.append("cosmology_lambda_cdm: not ingested — run ingest_cosmology_lab.py")
     else:
-        for key in ("observable_count", "wave1_count", "wave2_count", "wave3_cosmology_count"):
+        for key in ("observable_count", "wave1_count", "wave2_count", "wave3_count"):
             if stored.get(key) != live_summary[key]:
                 issues.append(f"cosmology_lambda_cdm: {key}={stored.get(key)} != live {live_summary[key]}")
 

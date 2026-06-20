@@ -1,0 +1,21 @@
+# VibraFSOT register experiment + FSOTLean MC alignment.
+version: "1.0"
+updated: "2026-06-20"
+vibra_root: "C:/Users/damia/Desktop/VibraFSOT"
+fsotlean_root: "C:/Users/damia/Desktop/FSOTLean"
+
+artifacts:
+  vibra_progress:
+    path: "artifacts/vibrafsot_final_progress.json"
+  mc_report:
+    path: "fsot_mc_report.json"
+
+verification:
+  d_eff: 11
+  base_freq_hz: 144.0
+  pattern_stability_min: 0.5
+  vib_avg_S_min: 0.0
+  mc_trials_min: 1000
+  mc_checkpoint: 5
+  mc_prob_non_decrease_min: 0.99
+  ai_avg_raw_S_max: 0.0

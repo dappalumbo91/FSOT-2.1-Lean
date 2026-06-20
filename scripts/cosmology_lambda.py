@@ -19,16 +19,15 @@ def load_fsot_compute(path: Path):
 
 
 def lambda_cdm_observables(mod) -> list[dict[str, Any]]:
-    """Wave-1 (5) + Wave-2 (10) + Wave-3 cosmology scales (4) = 19 observables."""
+    """Wave-1 (5) + Wave-2 (10) + Wave-3 (15) = 30 observables."""
     w1 = mod.wave1()
     w2 = mod.wave2()[:10]
     w3 = mod.wave3()
-    cos = [w3[3], w3[4], w3[5], w3[6]]
     rows: list[dict[str, Any]] = []
     for wave_group, results in (
         ("wave1", w1),
         ("wave2", w2),
-        ("wave3_cosmology", cos),
+        ("wave3", w3),
     ):
         for r in results:
             measured = float(r.measured) if r.measured is not None else None
@@ -54,7 +53,7 @@ def summarize_lambda(rows: list[dict]) -> dict:
         "observable_count": len(rows),
         "wave1_count": sum(1 for r in rows if r["wave"] == "wave1"),
         "wave2_count": sum(1 for r in rows if r["wave"] == "wave2"),
-        "wave3_cosmology_count": sum(1 for r in rows if r["wave"] == "wave3_cosmology"),
+        "wave3_count": sum(1 for r in rows if r["wave"] == "wave3"),
         "measured_count": len(with_measured),
         "max_error_pct": max(errors) if errors else 0.0,
         "mean_error_pct": sum(errors) / len(errors) if errors else 0.0,

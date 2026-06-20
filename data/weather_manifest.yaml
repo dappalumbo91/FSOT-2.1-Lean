@@ -1,0 +1,13 @@
+# FSOT weather scalar simulation log.
+version: "1.0"
+updated: "2026-06-20"
+weather_root: "C:/Users/damia/Desktop/weather"
+
+artifacts:
+  sim_log:
+    path: "fsot_weather_sim_log.json"
+
+verification:
+  hour_count_min: 24
+  D_eff: 15.0
+  min_positive_S_hours: 24

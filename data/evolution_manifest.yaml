@@ -1,0 +1,15 @@
+# FSOT biological evolution sim (mitochondrial operons).
+version: "1.0"
+updated: "2026-06-20"
+evolution_root: "C:/Users/damia/Desktop/fsot_evolution_/files-b7d9d6b8/fsot_evolution_sim"
+
+artifacts:
+  operons_json:
+    path: "results/biological_mt_operons.json"
+  best_organism_json:
+    path: "results/best_evolved_organism.json"
+
+verification:
+  operon_count_min: 13
+  fitness_min: 50.0
+  biological_capacity_min: 5000.0
