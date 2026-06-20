@@ -1,0 +1,13 @@
+# FSOT Photonic V2 — virtual crystal VRAM payload.
+version: "1.0"
+updated: "2026-06-20"
+photonic_root: "C:/Users/damia/Desktop/FSOT Photonic V2 Experiments"
+
+artifacts:
+  vram_payload: "3_driver_zig/fsot_vram_payload.json"
+  slicer_script: "2_architect_python/fsot_virtual_crystal_slicer.py"
+
+verification:
+  voxel_count_min: 180
+  trinary_values: [-1, 0, 1]
+  resonance_tolerance: 1.0e-4

@@ -1,0 +1,21 @@
+# Fsot trinary OS — FSOTB regression oracles and derived ISA constants.
+version: "1.0"
+updated: "2026-06-20"
+fsot_os_root: "C:/Users/damia/Desktop/Fsot trinary/fsot_os"
+
+artifacts:
+  oracles:
+    hello: "target/hello.fsotb.oracle.json"
+    call_ret: "target/call_ret.fsotb.oracle.json"
+    spawn_join: "target/spawn_join.fsotb.oracle.json"
+
+verification:
+  seeds_hash_hex: "0xc627292ec4eb3b90"
+  panel_S_hex: "0x3fee69c97260701a"
+  hello_file_size: 264
+  call_ret_file_size: 312
+  spawn_join_file_size: 440
+  num_task_slots: 8
+  trit_word_width: 27
+  cortical_layers: 6
+  constant_tolerance: 1.0e-6

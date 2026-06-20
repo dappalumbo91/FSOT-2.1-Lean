@@ -140,6 +140,9 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.CosmologyLab",
                 "FSOT.Formal.FuelPriors",
                 "FSOT.Formal.SpeciesPriors",
+                "FSOT.Formal.CameoPriors",
+                "FSOT.Formal.TrinaryOSPriors",
+                "FSOT.Formal.PhotonicForge",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -385,10 +388,43 @@ def main() -> int:
                     print(proc_gen.stdout.strip() or proc_gen.stderr.strip())
                     if proc_gen.returncode != 0:
                         issues.append(gen_fail)
+        tier3_ingests = [
+            ("ingest_cameo_lab.py", "gen_cameo_priors_lean.py", "CameoPriors.lean generation failed", "CAMEO lab ingest failed"),
+            ("ingest_trinary_os.py", "gen_trinary_os_lean.py", "TrinaryOSPriors.lean generation failed", "trinary OS ingest failed"),
+            ("ingest_photonic_forge.py", "gen_photonic_forge_lean.py", "PhotonicForge.lean generation failed", "photonic forge ingest failed"),
+        ]
+        for ingest_name, gen_name, gen_fail, ingest_fail in tier3_ingests:
+            ingest_script = ROOT / "scripts" / ingest_name
+            gen_script = ROOT / "scripts" / gen_name
+            if ingest_script.exists() and proc.returncode == 0:
+                proc_ing = subprocess.run(
+                    [sys.executable, str(ingest_script)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_ing.stdout.strip() or proc_ing.stderr.strip())
+                if proc_ing.returncode != 0:
+                    issues.append(ingest_fail)
+                elif gen_script.exists():
+                    proc_gen = subprocess.run(
+                        [sys.executable, str(gen_script)],
+                        cwd=ROOT,
+                        capture_output=True,
+                        text=True,
+                        check=False,
+                    )
+                    print(proc_gen.stdout.strip() or proc_gen.stderr.strip())
+                    if proc_gen.returncode != 0:
+                        issues.append(gen_fail)
         for verify_name, fail_msg in (
             ("verify_cosmology_lab.py", "Cosmology Lab ΛCDM verification failed"),
             ("verify_fuel_lab.py", "Fuel Lab verification failed"),
             ("verify_species_catalog.py", "species catalog verification failed"),
+            ("verify_cameo_lab.py", "CAMEO Lab verification failed"),
+            ("verify_trinary_os.py", "Trinary OS verification failed"),
+            ("verify_photonic_forge.py", "Photonic Forge verification failed"),
         ):
             verify_script = ROOT / "scripts" / verify_name
             if verify_script.exists():

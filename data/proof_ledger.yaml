@@ -668,6 +668,45 @@ entries:
     physics_note: |
       Material and molecular domain sign certificates; max catalog error ~1% at ingest.
 
+  - id: cameo_symbolic_folding
+    domain: molecular
+    claim: "130 CAMEO PDB benchmarks; 5-node FSOT symbolic formula MAE 8.85 Å"
+    status: numerically_verified
+    source_lab: "Genetics"
+    source_file: fsot_cameo_results.csv
+    verification: scripts/verify_cameo_lab.py
+    lean:
+      module: FSOT.Formal.CameoPriors
+      theorem: cameo_symbolic_bundle
+    physics_note: |
+      Fluid-to-solid symbolic regression on CAMEO; constants {e, π, φ} only.
+
+  - id: trinary_os_fsotb_oracles
+    domain: ai
+    claim: "FSOTB Tier-1/2/3 oracles (hello/call_ret/spawn_join) with seeds_hash 0xc627292ec4eb3b90"
+    status: numerically_verified
+    source_lab: "Fsot trinary"
+    source_file: fsot_os/target/*.oracle.json
+    verification: scripts/verify_trinary_os.py
+    lean:
+      module: FSOT.Formal.TrinaryOSPriors
+      theorem: trinary_os_fsotb_bundle
+    physics_note: |
+      Hard regression invariants for bare-metal trinary OS; K/POOF/P_new from canonical cache.
+
+  - id: photonic_forge_vram_crystal
+    domain: electron
+    claim: "180-voxel FSOT virtual crystal; trinary resonance maps POOF/P_new"
+    status: numerically_verified
+    source_lab: "FSOT Photonic V2 Experiments"
+    source_file: 3_driver_zig/fsot_vram_payload.json
+    verification: scripts/verify_photonic_forge.py
+    lean:
+      module: FSOT.Formal.PhotonicForge
+      theorem: photonic_forge_bundle
+    physics_note: |
+      Photonic V2 VRAM slicer payload; balanced trinary {-1,0,+1} with FSOT layer-2 composites.
+
   - id: neurolab_ledger_alignment
     domain: "*"
     claim: "17 NeuroLab domains aligned to Lean ledger params (δψ, hits, D_eff, observed)"

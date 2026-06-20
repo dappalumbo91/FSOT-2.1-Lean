@@ -1,0 +1,18 @@
+# Genetics CAMEO symbolic folding benchmarks.
+version: "1.0"
+updated: "2026-06-20"
+genetics_root: "C:/Users/damia/Desktop/Genetics"
+
+artifacts:
+  results_csv: "fsot_cameo_results.csv"
+  symbolic_thesis: "docs/FSOT_Fluid_to_Solid_Thesis.md"
+
+symbolic_formula:
+  mae_angstrom: 8.85
+  constants: ["e", "pi", "phi"]
+  node_count: 5
+
+verification:
+  benchmark_count_min: 100
+  top_l_prec_mean_min: 80.0
+  symbolic_mae_max: 15.0

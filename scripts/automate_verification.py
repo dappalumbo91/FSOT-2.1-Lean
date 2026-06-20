@@ -47,6 +47,15 @@ STAGES: dict[str, tuple[str, list[str]]] = {
     "verify_cosmology": ("Verify Cosmology Lab ΛCDM observables", ["verify_cosmology_lab.py"]),
     "verify_fuel": ("Verify Fuel Lab compound lookups", ["verify_fuel_lab.py"]),
     "verify_species": ("Verify species catalog tolerances", ["verify_species_catalog.py"]),
+    "cameo_ingest": ("Ingest Genetics CAMEO benchmarks", ["ingest_cameo_lab.py"]),
+    "cameo_priors_lean": ("Generate CameoPriors.lean", ["gen_cameo_priors_lean.py"]),
+    "trinary_os_ingest": ("Ingest Fsot trinary OS oracles", ["ingest_trinary_os.py"]),
+    "trinary_os_lean": ("Generate TrinaryOSPriors.lean", ["gen_trinary_os_lean.py"]),
+    "photonic_ingest": ("Ingest FSOT Photonic V2 payload", ["ingest_photonic_forge.py"]),
+    "photonic_lean": ("Generate PhotonicForge.lean", ["gen_photonic_forge_lean.py"]),
+    "verify_cameo": ("Verify CAMEO symbolic benchmarks", ["verify_cameo_lab.py"]),
+    "verify_trinary_os": ("Verify trinary OS FSOTB oracles", ["verify_trinary_os.py"]),
+    "verify_photonic": ("Verify photonic VRAM payload", ["verify_photonic_forge.py"]),
     "runner": ("Full hash gate + Lean build + certificate", ["fsot_verification_runner.py"]),
 }
 

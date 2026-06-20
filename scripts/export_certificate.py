@@ -46,6 +46,9 @@ LEAN_TARGETS = [
     "FSOT.Formal.CosmologyLab",
     "FSOT.Formal.FuelPriors",
     "FSOT.Formal.SpeciesPriors",
+    "FSOT.Formal.CameoPriors",
+    "FSOT.Formal.TrinaryOSPriors",
+    "FSOT.Formal.PhotonicForge",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

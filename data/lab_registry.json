@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0",
-  "generated_at": "2026-06-20T01:29:07.797228+00:00",
+  "generated_at": "2026-06-20T01:33:09.927675+00:00",
   "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
   "smiles_lab": {
     "source_path": "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\FSOT_SMILES_Lab_Dataset.json",
@@ -10067,5 +10067,1022 @@
     "property_count": 684,
     "max_error_pct": 0.9952,
     "mean_error_pct": 0.2350703412848426
+  },
+  "cameo_lab": {
+    "present": true,
+    "genetics_root": "C:\\Users\\damia\\Desktop\\Genetics",
+    "results_path": "C:\\Users\\damia\\Desktop\\Genetics\\fsot_cameo_results.csv",
+    "symbolic_formula": {
+      "mae_angstrom": 8.85,
+      "constants": [
+        "e",
+        "pi",
+        "phi"
+      ],
+      "node_count": 5
+    },
+    "rows": [
+      {
+        "pdb": "1CBN",
+        "pearson": 19.56,
+        "spearman": 50.8,
+        "top_l_prec": 82.35,
+        "long_range_prec": 28.0
+      },
+      {
+        "pdb": "1EJG",
+        "pearson": 23.29,
+        "spearman": 48.83,
+        "top_l_prec": 83.64,
+        "long_range_prec": 25.93
+      },
+      {
+        "pdb": "1FN8",
+        "pearson": 29.6,
+        "spearman": 20.84,
+        "top_l_prec": 91.16,
+        "long_range_prec": 10.48
+      },
+      {
+        "pdb": "1FY4",
+        "pearson": 35.8,
+        "spearman": 21.07,
+        "top_l_prec": 91.79,
+        "long_range_prec": 12.69
+      },
+      {
+        "pdb": "1FY5",
+        "pearson": 33.22,
+        "spearman": 21.8,
+        "top_l_prec": 90.95,
+        "long_range_prec": 12.4
+      },
+      {
+        "pdb": "1GCI",
+        "pearson": 29.24,
+        "spearman": 35.26,
+        "top_l_prec": 99.64,
+        "long_range_prec": 5.04
+      },
+      {
+        "pdb": "1GDN",
+        "pearson": 35.11,
+        "spearman": 21.22,
+        "top_l_prec": 91.6,
+        "long_range_prec": 9.92
+      },
+      {
+        "pdb": "1HJE",
+        "pearson": 51.83,
+        "spearman": 47.42,
+        "top_l_prec": 92.31,
+        "long_range_prec": 50.0
+      },
+      {
+        "pdb": "1IUA",
+        "pearson": 24.59,
+        "spearman": 37.39,
+        "top_l_prec": 95.29,
+        "long_range_prec": 11.9
+      },
+      {
+        "pdb": "1N55",
+        "pearson": 40.99,
+        "spearman": 38.49,
+        "top_l_prec": 97.63,
+        "long_range_prec": 3.97
+      },
+      {
+        "pdb": "1NWZ",
+        "pearson": 26.6,
+        "spearman": 37.86,
+        "top_l_prec": 100.0,
+        "long_range_prec": 20.0
+      },
+      {
+        "pdb": "1PQ7",
+        "pearson": 35.68,
+        "spearman": 22.78,
+        "top_l_prec": 88.89,
+        "long_range_prec": 14.53
+      },
+      {
+        "pdb": "1R6J",
+        "pearson": 37.59,
+        "spearman": 36.33,
+        "top_l_prec": 98.94,
+        "long_range_prec": 12.77
+      },
+      {
+        "pdb": "1SSX",
+        "pearson": 20.77,
+        "spearman": 25.12,
+        "top_l_prec": 86.55,
+        "long_range_prec": 13.51
+      },
+      {
+        "pdb": "1UCS",
+        "pearson": 54.91,
+        "spearman": 23.18,
+        "top_l_prec": 98.44,
+        "long_range_prec": 3.12
+      },
+      {
+        "pdb": "1US0",
+        "pearson": 23.59,
+        "spearman": 35.14,
+        "top_l_prec": 90.68,
+        "long_range_prec": 3.3
+      },
+      {
+        "pdb": "1W0N",
+        "pearson": 24.08,
+        "spearman": 18.49,
+        "top_l_prec": 100.0,
+        "long_range_prec": 6.45
+      },
+      {
+        "pdb": "1X6Z",
+        "pearson": 62.36,
+        "spearman": 35.05,
+        "top_l_prec": 100.0,
+        "long_range_prec": 6.78
+      },
+      {
+        "pdb": "1YK4",
+        "pearson": 23.26,
+        "spearman": 40.59,
+        "top_l_prec": 96.61,
+        "long_range_prec": 34.48
+      },
+      {
+        "pdb": "2B97",
+        "pearson": 37.57,
+        "spearman": 52.14,
+        "top_l_prec": 28.17,
+        "long_range_prec": 2.82
+      },
+      {
+        "pdb": "2DSX",
+        "pearson": 64.62,
+        "spearman": 42.74,
+        "top_l_prec": 96.15,
+        "long_range_prec": 19.23
+      },
+      {
+        "pdb": "2H5C",
+        "pearson": 21.65,
+        "spearman": 26.32,
+        "top_l_prec": 74.68,
+        "long_range_prec": 21.19
+      },
+      {
+        "pdb": "2I16",
+        "pearson": 24.18,
+        "spearman": 35.18,
+        "top_l_prec": 90.71,
+        "long_range_prec": 3.28
+      },
+      {
+        "pdb": "2I17",
+        "pearson": 24.08,
+        "spearman": 35.19,
+        "top_l_prec": 90.71,
+        "long_range_prec": 3.28
+      },
+      {
+        "pdb": "2IXT",
+        "pearson": 23.89,
+        "spearman": 51.68,
+        "top_l_prec": 98.62,
+        "long_range_prec": 9.94
+      },
+      {
+        "pdb": "2IZQ",
+        "pearson": 30.65,
+        "spearman": 50.74,
+        "top_l_prec": 97.44,
+        "long_range_prec": 31.58
+      },
+      {
+        "pdb": "2J8T",
+        "pearson": 25.8,
+        "spearman": 34.26,
+        "top_l_prec": 92.42,
+        "long_range_prec": 1.69
+      },
+      {
+        "pdb": "2JFR",
+        "pearson": 21.57,
+        "spearman": 30.67,
+        "top_l_prec": 99.63,
+        "long_range_prec": 10.45
+      },
+      {
+        "pdb": "2O9S",
+        "pearson": 21.42,
+        "spearman": 21.33,
+        "top_l_prec": 98.65,
+        "long_range_prec": 2.7
+      },
+      {
+        "pdb": "2OV0",
+        "pearson": 50.08,
+        "spearman": 20.36,
+        "top_l_prec": 100.0,
+        "long_range_prec": 5.77
+      },
+      {
+        "pdb": "2PVE",
+        "pearson": 53.1,
+        "spearman": 49.76,
+        "top_l_prec": 64.78,
+        "long_range_prec": 7.59
+      },
+      {
+        "pdb": "2PWA",
+        "pearson": 28.3,
+        "spearman": 33.41,
+        "top_l_prec": 97.17,
+        "long_range_prec": 6.38
+      },
+      {
+        "pdb": "2QXW",
+        "pearson": 22.29,
+        "spearman": 35.42,
+        "top_l_prec": 92.37,
+        "long_range_prec": 2.26
+      },
+      {
+        "pdb": "2VB1",
+        "pearson": 26.1,
+        "spearman": 35.91,
+        "top_l_prec": 85.98,
+        "long_range_prec": 19.51
+      },
+      {
+        "pdb": "2VXN",
+        "pearson": 23.05,
+        "spearman": 38.19,
+        "top_l_prec": 97.68,
+        "long_range_prec": 2.33
+      },
+      {
+        "pdb": "2WFI",
+        "pearson": 20.68,
+        "spearman": 23.29,
+        "top_l_prec": 94.32,
+        "long_range_prec": 6.82
+      },
+      {
+        "pdb": "2WFJ",
+        "pearson": 18.66,
+        "spearman": 23.87,
+        "top_l_prec": 81.35,
+        "long_range_prec": 4.17
+      },
+      {
+        "pdb": "2YGI",
+        "pearson": 28.78,
+        "spearman": 17.86,
+        "top_l_prec": 55.56,
+        "long_range_prec": 33.33
+      },
+      {
+        "pdb": "2YGJ",
+        "pearson": 44.42,
+        "spearman": 75.61,
+        "top_l_prec": 80.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "3A38",
+        "pearson": 26.33,
+        "spearman": 38.96,
+        "top_l_prec": 95.92,
+        "long_range_prec": 14.29
+      },
+      {
+        "pdb": "3A39",
+        "pearson": 25.51,
+        "spearman": 39.73,
+        "top_l_prec": 95.96,
+        "long_range_prec": 14.29
+      },
+      {
+        "pdb": "3AL1",
+        "pearson": 82.94,
+        "spearman": 70.24,
+        "top_l_prec": 95.83,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "3BCJ",
+        "pearson": 23.19,
+        "spearman": 35.08,
+        "top_l_prec": 93.81,
+        "long_range_prec": 4.73
+      },
+      {
+        "pdb": "3D43",
+        "pearson": 25.18,
+        "spearman": 51.67,
+        "top_l_prec": 98.62,
+        "long_range_prec": 9.94
+      },
+      {
+        "pdb": "3MFJ",
+        "pearson": 24.8,
+        "spearman": 21.42,
+        "top_l_prec": 69.43,
+        "long_range_prec": 7.02
+      },
+      {
+        "pdb": "3MI4",
+        "pearson": 25.15,
+        "spearman": 21.42,
+        "top_l_prec": 69.43,
+        "long_range_prec": 7.02
+      },
+      {
+        "pdb": "3NIR",
+        "pearson": 30.15,
+        "spearman": 48.88,
+        "top_l_prec": 85.48,
+        "long_range_prec": 22.58
+      },
+      {
+        "pdb": "3UI4",
+        "pearson": 23.25,
+        "spearman": 27.32,
+        "top_l_prec": 100.0,
+        "long_range_prec": 6.67
+      },
+      {
+        "pdb": "3W5H",
+        "pearson": 23.55,
+        "spearman": 44.74,
+        "top_l_prec": 96.92,
+        "long_range_prec": 6.16
+      },
+      {
+        "pdb": "3X2L",
+        "pearson": 18.67,
+        "spearman": 15.82,
+        "top_l_prec": 81.41,
+        "long_range_prec": 11.11
+      },
+      {
+        "pdb": "3X32",
+        "pearson": 31.46,
+        "spearman": 36.13,
+        "top_l_prec": 100.0,
+        "long_range_prec": 5.66
+      },
+      {
+        "pdb": "3X34",
+        "pearson": 23.85,
+        "spearman": 37.28,
+        "top_l_prec": 100.0,
+        "long_range_prec": 12.96
+      },
+      {
+        "pdb": "4G13",
+        "pearson": 65.83,
+        "spearman": 74.55,
+        "top_l_prec": 60.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "4HP2",
+        "pearson": 38.97,
+        "spearman": 62.27,
+        "top_l_prec": 93.33,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "4I8G",
+        "pearson": 20.29,
+        "spearman": 21.89,
+        "top_l_prec": 69.2,
+        "long_range_prec": 7.63
+      },
+      {
+        "pdb": "4I8H",
+        "pearson": 19.9,
+        "spearman": 21.87,
+        "top_l_prec": 60.23,
+        "long_range_prec": 9.09
+      },
+      {
+        "pdb": "4LB3",
+        "pearson": 20.64,
+        "spearman": 35.6,
+        "top_l_prec": 93.52,
+        "long_range_prec": 1.23
+      },
+      {
+        "pdb": "4LB4",
+        "pearson": 20.67,
+        "spearman": 35.61,
+        "top_l_prec": 93.52,
+        "long_range_prec": 1.23
+      },
+      {
+        "pdb": "4LBR",
+        "pearson": 20.54,
+        "spearman": 35.61,
+        "top_l_prec": 93.52,
+        "long_range_prec": 1.23
+      },
+      {
+        "pdb": "4LBS",
+        "pearson": 20.38,
+        "spearman": 35.62,
+        "top_l_prec": 93.52,
+        "long_range_prec": 1.23
+      },
+      {
+        "pdb": "4M7G",
+        "pearson": 20.59,
+        "spearman": 23.72,
+        "top_l_prec": 92.31,
+        "long_range_prec": 10.77
+      },
+      {
+        "pdb": "4NAG",
+        "pearson": 55.56,
+        "spearman": 41.51,
+        "top_l_prec": 93.75,
+        "long_range_prec": 25.0
+      },
+      {
+        "pdb": "4UA6",
+        "pearson": 25.22,
+        "spearman": 51.49,
+        "top_l_prec": 99.66,
+        "long_range_prec": 6.85
+      },
+      {
+        "pdb": "4Y9W",
+        "pearson": 21.26,
+        "spearman": 39.92,
+        "top_l_prec": 98.35,
+        "long_range_prec": 8.84
+      },
+      {
+        "pdb": "4ZM7",
+        "pearson": 18.15,
+        "spearman": 15.6,
+        "top_l_prec": 81.22,
+        "long_range_prec": 12.24
+      },
+      {
+        "pdb": "5AL6",
+        "pearson": 30.47,
+        "spearman": 90.92,
+        "top_l_prec": 100.0,
+        "long_range_prec": 14.81
+      },
+      {
+        "pdb": "5D8V",
+        "pearson": 28.22,
+        "spearman": 39.58,
+        "top_l_prec": 96.46,
+        "long_range_prec": 16.07
+      },
+      {
+        "pdb": "5GV7",
+        "pearson": 22.46,
+        "spearman": 43.29,
+        "top_l_prec": 96.97,
+        "long_range_prec": 8.11
+      },
+      {
+        "pdb": "5GV8",
+        "pearson": 21.05,
+        "spearman": 44.7,
+        "top_l_prec": 96.97,
+        "long_range_prec": 6.76
+      },
+      {
+        "pdb": "5HB7",
+        "pearson": 21.9,
+        "spearman": 28.81,
+        "top_l_prec": 100.0,
+        "long_range_prec": 2.74
+      },
+      {
+        "pdb": "5I6A",
+        "pearson": 81.62,
+        "spearman": 73.54,
+        "top_l_prec": 94.44,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "5KWM",
+        "pearson": 20.97,
+        "spearman": 25.51,
+        "top_l_prec": 92.4,
+        "long_range_prec": 14.5
+      },
+      {
+        "pdb": "5MN1",
+        "pearson": 21.32,
+        "spearman": 22.62,
+        "top_l_prec": 67.26,
+        "long_range_prec": 11.43
+      },
+      {
+        "pdb": "5MNK",
+        "pearson": 20.09,
+        "spearman": 22.96,
+        "top_l_prec": 61.05,
+        "long_range_prec": 9.77
+      },
+      {
+        "pdb": "5NFM",
+        "pearson": 20.04,
+        "spearman": 36.56,
+        "top_l_prec": 100.0,
+        "long_range_prec": 5.26
+      },
+      {
+        "pdb": "5NW3",
+        "pearson": 19.43,
+        "spearman": 44.32,
+        "top_l_prec": 96.49,
+        "long_range_prec": 25.0
+      },
+      {
+        "pdb": "5OME",
+        "pearson": 21.88,
+        "spearman": 42.51,
+        "top_l_prec": 96.67,
+        "long_range_prec": 23.33
+      },
+      {
+        "pdb": "5OQZ",
+        "pearson": 23.51,
+        "spearman": 32.14,
+        "top_l_prec": 100.0,
+        "long_range_prec": 33.33
+      },
+      {
+        "pdb": "5TDA",
+        "pearson": 18.71,
+        "spearman": 20.98,
+        "top_l_prec": 68.6,
+        "long_range_prec": 16.28
+      },
+      {
+        "pdb": "5WQQ",
+        "pearson": 23.15,
+        "spearman": 39.42,
+        "top_l_prec": 95.83,
+        "long_range_prec": 12.5
+      },
+      {
+        "pdb": "5WQR",
+        "pearson": 22.93,
+        "spearman": 40.08,
+        "top_l_prec": 95.74,
+        "long_range_prec": 10.64
+      },
+      {
+        "pdb": "5XSG",
+        "pearson": 98.37,
+        "spearman": 93.99,
+        "top_l_prec": 100.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "5YCE",
+        "pearson": 27.64,
+        "spearman": 31.05,
+        "top_l_prec": 100.0,
+        "long_range_prec": 34.51
+      },
+      {
+        "pdb": "6AXZ",
+        "pearson": 97.16,
+        "spearman": 95.97,
+        "top_l_prec": 88.89,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "6CF4",
+        "pearson": 85.16,
+        "spearman": 88.15,
+        "top_l_prec": 80.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "6E6O",
+        "pearson": 24.97,
+        "spearman": 66.0,
+        "top_l_prec": 74.47,
+        "long_range_prec": 52.17
+      },
+      {
+        "pdb": "6JGJ",
+        "pearson": 20.8,
+        "spearman": 17.36,
+        "top_l_prec": 99.65,
+        "long_range_prec": 11.97
+      },
+      {
+        "pdb": "6KJ1",
+        "pearson": 98.38,
+        "spearman": 92.92,
+        "top_l_prec": 100.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "6KJ2",
+        "pearson": 98.36,
+        "spearman": 92.2,
+        "top_l_prec": 100.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "6KJ3",
+        "pearson": 98.35,
+        "spearman": 94.71,
+        "top_l_prec": 100.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "6KJ4",
+        "pearson": 98.36,
+        "spearman": 91.84,
+        "top_l_prec": 100.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "6KL0",
+        "pearson": 21.76,
+        "spearman": 18.18,
+        "top_l_prec": 99.68,
+        "long_range_prec": 14.84
+      },
+      {
+        "pdb": "6L27",
+        "pearson": 20.42,
+        "spearman": 18.03,
+        "top_l_prec": 99.62,
+        "long_range_prec": 11.54
+      },
+      {
+        "pdb": "6MZ2",
+        "pearson": 21.48,
+        "spearman": 43.23,
+        "top_l_prec": 99.63,
+        "long_range_prec": 7.43
+      },
+      {
+        "pdb": "6S2M",
+        "pearson": 27.64,
+        "spearman": 31.61,
+        "top_l_prec": 100.0,
+        "long_range_prec": 24.75
+      },
+      {
+        "pdb": "6SYJ",
+        "pearson": 23.77,
+        "spearman": 7.82,
+        "top_l_prec": 95.19,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "6UFA",
+        "pearson": 22.5,
+        "spearman": 41.71,
+        "top_l_prec": 81.82,
+        "long_range_prec": 40.0
+      },
+      {
+        "pdb": "6ZM8",
+        "pearson": 21.43,
+        "spearman": 36.69,
+        "top_l_prec": 99.1,
+        "long_range_prec": 7.27
+      },
+      {
+        "pdb": "7A5M",
+        "pearson": 26.84,
+        "spearman": 26.45,
+        "top_l_prec": 97.33,
+        "long_range_prec": 16.0
+      },
+      {
+        "pdb": "7AVK",
+        "pearson": 20.6,
+        "spearman": 30.4,
+        "top_l_prec": 99.48,
+        "long_range_prec": 1.04
+      },
+      {
+        "pdb": "7ETN",
+        "pearson": 90.59,
+        "spearman": 86.37,
+        "top_l_prec": 100.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "7FEZ",
+        "pearson": 23.21,
+        "spearman": 27.71,
+        "top_l_prec": 99.38,
+        "long_range_prec": 16.05
+      },
+      {
+        "pdb": "7KR0",
+        "pearson": 27.33,
+        "spearman": 36.51,
+        "top_l_prec": 98.84,
+        "long_range_prec": 17.05
+      },
+      {
+        "pdb": "7R2H",
+        "pearson": 22.81,
+        "spearman": 26.21,
+        "top_l_prec": 97.59,
+        "long_range_prec": 8.43
+      },
+      {
+        "pdb": "7TLS",
+        "pearson": 40.94,
+        "spearman": 63.03,
+        "top_l_prec": 83.33,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "7TLU",
+        "pearson": 42.28,
+        "spearman": 74.69,
+        "top_l_prec": 87.5,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "7TME",
+        "pearson": 46.5,
+        "spearman": 73.91,
+        "top_l_prec": 88.89,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "7TMH",
+        "pearson": 36.85,
+        "spearman": 71.97,
+        "top_l_prec": 87.5,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "7TMI",
+        "pearson": 77.55,
+        "spearman": 66.85,
+        "top_l_prec": 100.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "7VOS",
+        "pearson": 24.73,
+        "spearman": 38.42,
+        "top_l_prec": 96.04,
+        "long_range_prec": 14.0
+      },
+      {
+        "pdb": "7WKB",
+        "pearson": 24.45,
+        "spearman": 29.21,
+        "top_l_prec": 99.4,
+        "long_range_prec": 19.05
+      },
+      {
+        "pdb": "8C3X",
+        "pearson": 20.72,
+        "spearman": 34.73,
+        "top_l_prec": 99.62,
+        "long_range_prec": 6.87
+      },
+      {
+        "pdb": "8C5N",
+        "pearson": 21.44,
+        "spearman": 24.7,
+        "top_l_prec": 94.31,
+        "long_range_prec": 7.62
+      },
+      {
+        "pdb": "8DTS",
+        "pearson": 31.24,
+        "spearman": 15.0,
+        "top_l_prec": 90.18,
+        "long_range_prec": 5.36
+      },
+      {
+        "pdb": "8GKX",
+        "pearson": 24.39,
+        "spearman": 48.12,
+        "top_l_prec": 92.31,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "8GL4",
+        "pearson": 37.07,
+        "spearman": 63.59,
+        "top_l_prec": 100.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "8W8U",
+        "pearson": 25.17,
+        "spearman": 34.89,
+        "top_l_prec": 95.84,
+        "long_range_prec": 7.35
+      },
+      {
+        "pdb": "8ZST",
+        "pearson": 23.75,
+        "spearman": 36.97,
+        "top_l_prec": 85.8,
+        "long_range_prec": 17.28
+      },
+      {
+        "pdb": "9BZT",
+        "pearson": 47.03,
+        "spearman": 79.96,
+        "top_l_prec": 100.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "9BZZ",
+        "pearson": 44.0,
+        "spearman": 79.68,
+        "top_l_prec": 100.0,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "9EH3",
+        "pearson": 23.37,
+        "spearman": 66.96,
+        "top_l_prec": 92.31,
+        "long_range_prec": 33.33
+      },
+      {
+        "pdb": "9EWK",
+        "pearson": 29.5,
+        "spearman": 49.5,
+        "top_l_prec": 85.71,
+        "long_range_prec": 29.03
+      },
+      {
+        "pdb": "9M1X",
+        "pearson": 22.54,
+        "spearman": 28.17,
+        "top_l_prec": 99.37,
+        "long_range_prec": 13.92
+      },
+      {
+        "pdb": "9M22",
+        "pearson": 23.31,
+        "spearman": 28.31,
+        "top_l_prec": 100.0,
+        "long_range_prec": 17.28
+      },
+      {
+        "pdb": "9MDB",
+        "pearson": 48.96,
+        "spearman": 83.78,
+        "top_l_prec": 100.0,
+        "long_range_prec": 85.71
+      },
+      {
+        "pdb": "9MNV",
+        "pearson": 25.96,
+        "spearman": 63.3,
+        "top_l_prec": 92.86,
+        "long_range_prec": 0.0
+      },
+      {
+        "pdb": "9TA4",
+        "pearson": 28.27,
+        "spearman": 44.36,
+        "top_l_prec": 97.4,
+        "long_range_prec": 26.32
+      },
+      {
+        "pdb": "9TA6",
+        "pearson": 28.59,
+        "spearman": 44.37,
+        "top_l_prec": 97.4,
+        "long_range_prec": 26.32
+      },
+      {
+        "pdb": "9XZU",
+        "pearson": 20.28,
+        "spearman": 44.69,
+        "top_l_prec": 96.49,
+        "long_range_prec": 21.43
+      },
+      {
+        "pdb": "9Y2E",
+        "pearson": 19.07,
+        "spearman": 43.75,
+        "top_l_prec": 96.36,
+        "long_range_prec": 25.93
+      }
+    ],
+    "benchmark_count": 130,
+    "mean_pearson": 33.60484615384616,
+    "mean_spearman": 42.396153846153844,
+    "mean_top_l_prec": 91.73823076923078,
+    "mean_long_range_prec": 11.674923076923072,
+    "min_top_l_prec": 28.17,
+    "mae_angstrom": 8.85,
+    "constants": [
+      "e",
+      "pi",
+      "phi"
+    ],
+    "node_count": 5
+  },
+  "trinary_os": {
+    "present": true,
+    "fsot_os_root": "C:\\Users\\damia\\Desktop\\Fsot trinary\\fsot_os",
+    "oracle_count": 3,
+    "oracles": {
+      "hello": {
+        "panel_S_f64": 0.9504134401245239,
+        "panel_S_hex": "0x3fee69c97260701a",
+        "expected_emit": "RESULT tag=42 S=0x3fee69c97260701a",
+        "seeds_hash": 14278426424450431888,
+        "seeds_hash_hex": "0xc627292ec4eb3b90",
+        "file_size": 264,
+        "n_instructions": 2,
+        "panel_count": 1,
+        "code_off": 56,
+        "panel_off": 72
+      },
+      "call_ret": {
+        "panel_S_f64": 0.9504134401245239,
+        "panel_S_hex": "0x3fee69c97260701a",
+        "expected_emit": "RESULT tag=0 S=0x3fee69c97260701a",
+        "seeds_hash": 14278426424450431888,
+        "seeds_hash_hex": "0xc627292ec4eb3b90",
+        "file_size": 312,
+        "n_instructions": 10,
+        "panel_count": 1,
+        "code_off": 56,
+        "panel_off": 120
+      },
+      "spawn_join": {
+        "panel_S_f64": 0.9504134401245239,
+        "panel_S_hex": "0x3fee69c97260701a",
+        "expected_emit": "RESULT tag=0 S=0x3fee69c97260701a",
+        "seeds_hash": 14278426424450431888,
+        "seeds_hash_hex": "0xc627292ec4eb3b90",
+        "file_size": 440,
+        "n_instructions": 31,
+        "panel_count": 1,
+        "code_off": 56,
+        "panel_off": 248
+      }
+    },
+    "constants": {
+      "seeds_hash_hex": "0xc627292ec4eb3b90",
+      "panel_S_hex": "0x3fee69c97260701a",
+      "panel_S_f64": 0.9504134401245242,
+      "k": 0.4202216641606967,
+      "poof": 0.1534822148944508,
+      "p_new": 0.30030227667037146,
+      "collapse_threshold": 0.9174663774653723,
+      "num_task_slots": 8,
+      "trit_word_width": 27,
+      "cortical_layers": 6
+    },
+    "hello_file_size": 264,
+    "call_ret_file_size": 312,
+    "spawn_join_file_size": 440
+  },
+  "photonic_forge": {
+    "present": true,
+    "photonic_root": "C:\\Users\\damia\\Desktop\\FSOT Photonic V2 Experiments",
+    "payload_path": "C:\\Users\\damia\\Desktop\\FSOT Photonic V2 Experiments\\3_driver_zig\\fsot_vram_payload.json",
+    "constants": {
+      "poof": 0.1534822148944508,
+      "p_new": 0.30030227667037146
+    },
+    "voxel_count": 180,
+    "trinary_counts": {
+      "-1": 40,
+      "0": 60,
+      "1": 80
+    },
+    "distinct_trinary_values": [
+      -1,
+      0,
+      1
+    ]
   }
 }
