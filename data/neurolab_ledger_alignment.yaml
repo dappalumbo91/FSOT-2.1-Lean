@@ -1,0 +1,129 @@
+# Align NeuroLab 35-domain fsot_compute.py table to Lean ledger (FSOT.Formal.Scalar / domain_scalar_oracle).
+# Interpretation constants (C field) are preserved; only D_eff, hits, delta_psi, observed change.
+# Applied by scripts/align_neurolab_domains.py to authority fsot_compute.py, then synced to NeuroLab.
+
+version: "1.0"
+updated: "2026-06-19"
+authority_path: "C:/Users/damia/Desktop/FSOT document update/fsot_compute.py"
+neurolab_path: "C:/Users/damia/Desktop/FSOT NeuroLab/fsot_compute.py"
+
+# Domains with explicit Lean ledger mapping (remaining 23 keep native NeuroLab params).
+overrides:
+  Atomic_Physics:
+    lean_domain: particle
+    D_eff: 7
+    hits: 0
+    delta_psi: 0.85
+    observed: true
+
+  Chemistry:
+    lean_domain: electron
+    D_eff: 8
+    hits: 0
+    delta_psi: 0.6
+    observed: true
+
+  Molecular_Chemistry:
+    lean_domain: chemical
+    D_eff: 9
+    hits: 0
+    delta_psi: 0.5
+    observed: true
+
+  Quantum_Computing:
+    lean_domain: ai
+    D_eff: 11
+    hits: 0
+    delta_psi: 0.5
+    observed: false
+
+  Biology:
+    lean_domain: biological
+    D_eff: 12
+    hits: 0
+    delta_psi: 0.08
+    observed: false
+
+  Biochemistry:
+    lean_domain: medical
+    D_eff: 13
+    hits: 1
+    delta_psi: 0.35
+    observed: true
+
+  Thermodynamics:
+    lean_domain: energy
+    D_eff: 15
+    hits: 1
+    delta_psi: 0.9
+    observed: true
+
+  Neuroscience:
+    lean_domain: neural
+    D_eff: 14
+    hits: 1
+    delta_psi: 0.7
+    observed: true
+
+  Materials_Science:
+    lean_domain: material
+    D_eff: 10
+    hits: 0
+    delta_psi: 0.5
+    observed: true
+
+  Psychology:
+    lean_domain: consciousness
+    D_eff: 16
+    hits: 1
+    delta_psi: 1.15
+    observed: true
+
+  High_Energy_Physics:
+    lean_domain: higgs
+    D_eff: 7
+    hits: 1
+    delta_psi: 0.95
+    observed: true
+
+  Planetary_Science:
+    lean_domain: galactic
+    D_eff: 21
+    hits: 1
+    delta_psi: 0.9
+    observed: true
+
+  Particle_Astrophysics:
+    lean_domain: cmb
+    D_eff: 24
+    hits: 0
+    delta_psi: 0.8
+    observed: false
+
+  Quantum_Mechanics:
+    lean_domain: quantum
+    D_eff: 6
+    hits: 0
+    delta_psi: 1.0
+    observed: true
+
+  Nuclear_Physics:
+    lean_domain: nuclear
+    D_eff: 15
+    hits: 1
+    delta_psi: 1.0
+    observed: true
+
+  Cosmology:
+    lean_domain: cosmological
+    D_eff: 25
+    hits: 0
+    delta_psi: 1.0
+    observed: false
+
+  Astronomy:
+    lean_domain: astronomical
+    D_eff: 20
+    hits: 1
+    delta_psi: 1.0
+    observed: true

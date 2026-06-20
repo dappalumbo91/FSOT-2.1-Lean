@@ -1,0 +1,97 @@
+# SMILES Lab catalog gaps — 8 records with matched=false and no error_pct in source export.
+# Formulas from FSOT_SMILES_Lab_Findings.md / notebook V3 resolution (all ≤5% tolerance).
+# Applied by scripts/fill_smiles_catalog_gaps.py to FSOT SMILES Lab dataset files.
+
+version: "1.0"
+updated: "2026-06-19"
+source: "FSOT_SMILES_Lab_Findings.md Tier 22 (§90–§95)"
+tolerance_pct: 5.0
+
+gaps:
+  - section: "§90 Heat of Combustion"
+    name: C3H8
+    target_value: 2219.2
+    unit: kJ/mol
+    source: "NIST/TRC (2024)"
+    fsot_formula: "P_VAR·P_BASE⁻⁵"
+    computed_value: 2218.9194495142683
+    error_pct: 0.012641964930223053
+    lean_domain: energy
+    note: "Propane combustion; P_VAR·P_BASE⁻⁵ from known-improvements search"
+
+  - section: "§90 Heat of Combustion"
+    name: C6H6
+    target_value: 3267.5
+    unit: kJ/mol
+    source: "NIST/TRC (2024)"
+    fsot_formula: "E⁸+PI⁵"
+    computed_value: 3286.9776718270095
+    error_pct: 0.5961031928694581
+    lean_domain: chemical
+    note: "Benzene combustion; e^8 + pi^5 homologous series terminus"
+
+  - section: "§91 Critical Pressure Pc"
+    name: H2O
+    target_value: 217.7
+    unit: atm
+    source: "Poling et al. (2001)"
+    fsot_formula: "PI⁵-PI⁴+PI²"
+    computed_value: 218.4801981523684
+    error_pct: 0.35838224729830004
+    lean_domain: material
+    note: "Water critical pressure; pi-power phase-boundary ladder"
+
+  - section: "§93 Membrane Potential"
+    name: E_coli
+    target_value: 140.0
+    unit: mV
+    source: "Hille (2001)"
+    fsot_formula: "E⁵-E²"
+    computed_value: 141.02410300364596
+    error_pct: 0.7315021454614014
+    lean_domain: biological
+    note: "E. coli resting potential; e^5 - e^2 platform (notebook V3 fix)"
+
+  - section: "§94 Donor Number DN"
+    name: dioxane
+    target_value: 14.8
+    unit: kcal/mol
+    source: "Gutmann (1978)"
+    fsot_formula: "PHI⁶-PI"
+    computed_value: 14.802679256409366
+    error_pct: 0.018103083847063467
+    lean_domain: chemical
+    note: "Lewis donor number; phi^6 - pi Fibonacci cascade"
+
+  - section: "§94 Donor Number DN"
+    name: acetonitrile
+    target_value: 14.1
+    unit: kcal/mol
+    source: "Gutmann (1978)"
+    fsot_formula: "PHI⁵+PHI²"
+    computed_value: 13.70820393249937
+    error_pct: 2.778695514188867
+    lean_domain: chemical
+    note: "Acetonitrile DN; phi^5 + phi^2 (2.78% within tolerance)"
+
+  - section: "§95 Hole Mobility μh"
+    name: Ge
+    target_value: 1900.0
+    unit: "cm²/(V·s)"
+    source: "Madelung (2004)"
+    fsot_formula: "E⁸-E⁷+E³"
+    computed_value: 1904.4103655364574
+    error_pct: 0.23212450191881306
+    lean_domain: material
+    note: "Germanium hole mobility; Euler ladder (mirrors §83 electron mobility)"
+
+  - section: "§95 Hole Mobility μh"
+    name: InSb
+    target_value: 850.0
+    unit: "cm²/(V·s)"
+    source: "Madelung (2004)"
+    fsot_formula: "PHI¹⁴+PHI⁴"
+    computed_value: 849.8529157249601
+    error_pct: 0.01730403235763547
+    lean_domain: material
+    note: "InSb hole mobility; phi^14 + phi^4 (0.02% precision)"

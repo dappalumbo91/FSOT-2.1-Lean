@@ -1,0 +1,635 @@
+# FSOT proof ledger — links claims, Lean certificates, oracle values, and physics notes.
+# Version: 1.0 | synced with FSOT.Formal.* (zero active sorry as of 2026-06-19)
+
+meta:
+  version: "1.3"
+  updated: "2026-06-19"
+  lab_sources:
+    - "C:/Users/damia/Desktop/FSOT SMILES Lab"
+    - "C:/Users/damia/Desktop/FSOT NeuroLab"
+  lean_toolchain: "leanprover/lean4:v4.31.0"
+  mathlib: "v4.31.0"
+  oracle_script: scripts/domain_scalar_oracle.py
+  runner: scripts/fsot_verification_runner.py
+
+entries:
+  - id: cosmological_raw_S_negative
+    domain: cosmological
+    claim: "raw_S(cosmological) < 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: cosmological_raw_S_negative
+      helpers:
+        - FSOT.Formal.Theorems.raw_S_negative_when_term1_overcomes_defaults
+        - FSOT.Formal.Theorems.term1_base_negative_for_high_D_eff
+    strategy: term1_dominance_high_D
+    params:
+      D_eff: 25
+      delta_psi: 1.0
+      recent_hits: 0
+      observed: false
+    oracle:
+      term1: -2.20
+      term2: 1.0
+      term3: "~0"
+      raw_S: -1.195693
+      scaled_S: -0.502456
+    physics_note: |
+      High D_eff (25) with no observer: quirkMod = 1, perceived_adjust = 1.
+      term1_base is strongly negative (cos dispersal); |term1| >> |term3| (~10^-17).
+      Sign is carried by term1; term2 = 1 cannot flip the sum negative.
+    proof_blocker_history:
+      - "Early attempts targeted scaled_S sign; proofs use raw_S then scale separately."
+      - "Dominance requires |term1_base| > 1.2 + |term3|, not merely term1 < 0."
+
+  - id: dark_energy_raw_S_negative
+    domain: dark_energy
+    claim: "raw_S(dark_energy) < 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: dark_energy_raw_S_negative
+      helpers:
+        - FSOT.Formal.Theorems.dark_energy_term1_base_abs_gt_one_two
+    strategy: term1_dominance_high_D
+    params:
+      D_eff: 25
+      delta_psi: 1.1
+      recent_hits: 0
+      observed: false
+    oracle:
+      raw_S: -1.134979
+    physics_note: |
+      Same high-D dispersal regime as cosmological; δψ = 1.1 shifts cos argument
+      but keeps term1_base negative and large. δψ bound (0.5, 1.3) used in proof.
+
+  - id: cmb_raw_S_negative
+    domain: cmb
+    claim: "raw_S(cmb) < 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: cmb_raw_S_negative
+      helpers:
+        - FSOT.Formal.Theorems.domain_cmb_term1_overcomes_term3
+        - FSOT.Formal.Theorems.raw_S_negative_of_term1_overcomes_term3
+    strategy: term1_negative_overcomes_term2_term3
+    params:
+      D_eff: 24
+      delta_psi: 0.8
+      recent_hits: 0
+      observed: false
+    oracle:
+      term1: -2.009971
+      term2: 1.0
+      term3: 0.0
+      raw_S: -1.009971
+    physics_note: |
+      D=24 is still high-D dispersal; perceived_adjust > 1 amplifies negative term1_base.
+      Proof shows term1 < 0 and |term1| > 1 + |term3| (term2 fixed at 1).
+    proof_blocker_history:
+      - "Cannot use raw_S_positive_of_term1_gt_neg_08 — wrong sign direction."
+      - "Fix: domain_cmb_term1_overcomes_term3 via cmb_term1_base_abs_gt_one_three_five."
+
+  - id: ai_raw_S_non_positive
+    domain: ai
+    claim: "raw_S(ai) ≤ 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: ai_raw_S_non_positive
+      helpers:
+        - FSOT.Formal.Theorems.domain_term1_lt_neg_08_ai
+        - FSOT.Formal.Theorems.domain_ai_term1_overcomes_term3
+    strategy: term1_negative_overcomes_term2_term3
+    params:
+      D_eff: 11
+      delta_psi: 0.5
+      recent_hits: 0
+      observed: false
+    oracle:
+      term1: -1.351417
+      term2: 1.0
+      term3: 0.0
+      raw_S: -0.351417
+    physics_note: |
+      Mid-D, no observer: quirkMod = 1 but perceived_adjust < 1 (D < 25) shrinks |term1|.
+      Still term1 < -0.8 so |term1| > 1 + |term3|. AI ledger entry is non-positive, not
+      strictly negative in all parameter sweeps — theorem states ≤ 0 at canonical params.
+
+  - id: medical_raw_S_positive
+    domain: medical
+    claim: "raw_S(medical) > 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: medical_raw_S_positive
+      helpers:
+        - FSOT.Formal.Theorems.domain_term1_gt_neg_08_medical
+        - FSOT.Formal.Theorems.raw_S_positive_of_term1_gt_neg_08
+    strategy: term1_lower_bound
+    params:
+      D_eff: 13
+      delta_psi: 0.35
+      recent_hits: 1
+      observed: true
+    oracle:
+      term1: -0.271286
+      term2: 1.0
+      term3: 0.0
+      raw_S: 0.728714
+    physics_note: |
+      Observed domain with positive quirkMod (δψ = 0.35 ≤ 0.6). term1 is slightly negative
+      but above -0.8; term2 = 1 wins. recent_hits = 1 changes growth_term / rexp in term1_base
+      — must not use the recent_hits = 0 template.
+    proof_blocker_history:
+      - "Upper-bound on term1 (h_prod_hi) failed: oracle term1 ≈ -0.27, not < -0.8."
+      - "Fix: prove term1 > -0.8 via product worst-case with hits=1 growth_term bounds."
+      - "linarith failed until rexp chain matched full term1_base with recent_hits=1."
+
+  - id: chemical_raw_S_positive
+    domain: chemical
+    claim: "raw_S(chemical) > 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: chemical_raw_S_positive
+      helpers:
+        - FSOT.Formal.Theorems.domain_term1_gt_neg_08_chemical
+    strategy: term1_lower_bound
+    params:
+      D_eff: 9
+      delta_psi: 0.5
+      recent_hits: 0
+      observed: true
+    oracle:
+      term1: -0.203817
+      term2: 1.0
+      term3: 0.0
+      raw_S: 0.796183
+    physics_note: |
+      Positive quirkMod at δψ = 0.5 (observer, borderline). Small negative term1;
+      lower-bound strategy: term1 > -0.8 suffices with term2 = 1 and |term3| < 0.2.
+    proof_blocker_history:
+      - "Tight upper bound on term1 failed — physics: dispersal is weak at D=9 with observer boost."
+
+  - id: electron_raw_S_positive
+    domain: electron
+    claim: "raw_S(electron) > 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: electron_raw_S_positive
+      helpers:
+        - FSOT.Formal.Theorems.domain_term1_gt_neg_08_electron
+    strategy: term1_lower_bound
+    params:
+      D_eff: 8
+      delta_psi: 0.6
+      recent_hits: 0
+      observed: true
+    oracle:
+      term1: -0.029360
+      term2: 1.0
+      term3: 0.0
+      raw_S: 0.970640
+    physics_note: |
+      Near-threshold case: term1 barely negative. Proof uses coarse lower bound
+      term1 > -0.8; margin is large (oracle -0.03). Smallest |term1| among positive-raw_S observed domains.
+
+  - id: neural_raw_S_positive
+    domain: neural
+    claim: "raw_S(neural) > 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: neural_raw_S_positive
+      helpers:
+        - FSOT.Formal.Theorems.domain_term1_positive_of_params
+    strategy: term1_positive_observer
+    params:
+      D_eff: 14
+      delta_psi: 0.7
+      recent_hits: 1
+      observed: true
+    oracle:
+      term1: 0.224025
+      term2: 1.0
+      term3: 0.0
+      raw_S: 1.224025
+    physics_note: |
+      Negative quirkMod (δψ ≥ 0.7) with observer: term1_base negative but quirk × adjust
+      flips term1 positive. Uses term1_positive_of_observer_negative_quirk (nlinarith).
+
+  - id: quantum_raw_S_positive
+    domain: quantum
+    claim: "raw_S(quantum) > 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: quantum_raw_S_positive
+      helpers:
+        - FSOT.Formal.Theorems.domain_term1_positive_of_params
+    strategy: term1_positive_observer
+    params:
+      D_eff: 6
+      delta_psi: 1.0
+      recent_hits: 0
+      observed: true
+    oracle:
+      term1: 1.273815
+      term2: 1.0
+      term3: 0.0
+      raw_S: 2.273815
+    physics_note: |
+      Low D, high δψ, observed: strong positive term1. Anchors S_quant for Wave-1 Ω_b h².
+
+  - id: particle_raw_S_positive
+    domain: particle
+    claim: "raw_S(particle) > 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: particle_raw_S_positive
+    strategy: term1_positive_observer
+    params:
+      D_eff: 7
+      delta_psi: 0.85
+      recent_hits: 0
+      observed: true
+    oracle:
+      term1: 0.751037
+      raw_S: 1.751037
+
+  - id: term3_negligible_default
+    domain: "*"
+    claim: "|term3(p)| < 0.2 under default β and typical D_eff, δψ"
+    status: proved
+    lean:
+      module: FSOT.Formal.Theorems
+      theorem: term3_abs_lt_fifth_default
+    strategy: beta_tiny_bound
+    physics_note: |
+      β ≈ 2.6×10^-17 makes term3 numerically ~0 at all ledger domains.
+      Formal bound uses |term3| < 1/5 as conservative certificate for sign proofs.
+
+  - id: raw_S_positive_template
+    domain: "*"
+    claim: "term1 > -0.8 ∧ term2 = 1 ∧ |term3| < 0.2 → raw_S > 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Theorems
+      theorem: raw_S_positive_of_term1_gt_neg_08
+    strategy: arithmetic_closure
+    physics_note: |
+      Central sign template for observed domains with small negative term1.
+      Physics: term2 (scale/amplitude channel) acts as +1 bias in default ledger.
+
+  - id: raw_S_negative_template
+    domain: "*"
+    claim: "term1 < 0 ∧ |term1| > 1 + |term3| ∧ term2 = 1 → raw_S < 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Theorems
+      theorem: raw_S_negative_of_term1_overcomes_term3
+    strategy: dominance_arithmetic
+    physics_note: |
+      Dual template for high-D dispersal domains (cmb, ai, cosmological family).
+
+  - id: wave1_h0_approx
+    domain: cosmological
+    claim: "|H0_fsot(S_cosm_cached) - 68.440056829794272| < 1e-8"
+    status: proved
+    lean:
+      module: FSOT.Formal.Cosmology
+      theorem: h0_fsot_cached_approx_value
+    strategy: interval_certificate
+    oracle:
+      H0: 68.440056829794272
+    external_reference:
+      name: "Planck 2018 / local H0 tension literature"
+      note: "Compare in arXiv §5; formal proof is internal consistency at cached S_cosm."
+
+  - id: wave1_ns_approx
+    domain: cosmological
+    claim: "|n_s_fsot(S_cosm_cached) - 0.9638062833678816| < 1e-4"
+    status: proved
+    lean:
+      module: FSOT.Formal.Cosmology
+      theorem: n_s_fsot_cached_approx_value
+    oracle:
+      n_s: 0.9638062833678816
+
+  - id: wave1_alpha_s_approx
+    domain: particle
+    claim: "|α_s(M_Z) - 1/(eπ)| < 1e-8 at canonical definition"
+    status: proved
+    lean:
+      module: FSOT.Formal.Cosmology
+      theorem: alpha_s_MZ_approx_value
+    oracle:
+      alpha_s_MZ: 0.117099663048638321
+
+  - id: wave1_omega_b_approx
+    domain: cosmological
+    claim: "|Ω_b h²_fsot(S_cosm, S_quant) - 0.022356124082273698| < 1e-5"
+    status: proved
+    lean:
+      module: FSOT.Formal.Cosmology
+      theorem: omega_b_h2_fsot_cached_approx_value
+    oracle:
+      omega_b_h2: 0.022356124082273698
+
+  - id: wave1_t_cmb_approx
+    domain: cosmological
+    claim: "|T_CMB_fsot(S_cosm) - 2.724728386673958| < 1e-6"
+    status: proved
+    lean:
+      module: FSOT.Formal.Cosmology
+      theorem: t_cmb_fsot_cached_approx_value
+    oracle:
+      T_CMB: 2.724728386673958
+
+  - id: r_d_interval_certificate
+    domain: cosmological
+    claim: "|r_d_canonical - 147.52| < 0.05"
+    status: proved
+    lean:
+      module: FSOT.Formal.Cosmology
+      theorem: r_d_approx_value
+    strategy: interval_certificate
+    oracle:
+      r_d: 147.52
+      r_star_Mpc: "π³/p_base - φ"
+      delta_lambda: 0.0216083
+    external_reference:
+      name: "BAO / DESI r_d measurements"
+      value_band: "~147.4–147.8 Mpc"
+      note: "±0.01 Mpc tightening is optional polish (see Cosmology.lean)."
+    proof_blocker_history:
+      - "±0.01 failed: p_base and π³ intervals too wide for sub-0.02 Mpc gap at r★."
+      - "Working certificate: r_d ∈ (147.48, 147.55)."
+
+  - id: observer_quirk_sign_lemma
+    domain: "*"
+    claim: "observed ∧ quirkMod < 0 → term1 > 0 when term1_base < 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Theorems
+      theorem: term1_positive_of_observer_negative_quirk
+    strategy: sign_algebra
+    physics_note: |
+      Negative × negative = positive. Common pitfall: using mul_neg_of_neg_of_pos incorrectly.
+      Applies to neural, higgs, galactic, and other high-δψ observed domains.
+    proof_blocker_history:
+      - "Wrong tactic choice on sign multiplication; fix: nlinarith on quirk × base."
+
+  - id: smiles_lab_layer_alignment
+    domain: chemical
+    claim: "SMILES Lab Layer 1/2 constants match canonical_constants.json"
+    status: numerically_verified
+    source_lab: "FSOT SMILES Lab"
+    source_file: FSOT_SMILES_Lab_Dataset.json
+    verification: scripts/verify_lab_registry.py
+    physics_note: |
+      SMILES Lab renders 1470 seed-mapped chemical/biological constants.
+      Layer K, A_bleed, A_in must align with authority before cross-lab citation.
+
+  - id: smiles_medical_bio_catalog
+    domain: medical
+    claim: "SMILES §21–§24, §35–§36 bio records within 5% experimental tolerance"
+    status: numerically_verified
+    source_lab: "FSOT SMILES Lab"
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: medical_raw_S_positive
+    verification: scripts/verify_lab_registry.py
+    physics_note: |
+      Protein folding, amino acid pKa, drug pKd, enzyme kcat, Km, hydrophobicity
+      sections map to medical/biochemistry domain (D_eff=13).
+
+  - id: smiles_chemical_catalog
+    domain: chemical
+    claim: "SMILES §1–§18 foundation/chemistry records within 5% tolerance"
+    status: numerically_verified
+    source_lab: "FSOT SMILES Lab"
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: chemical_raw_S_positive
+    verification: scripts/verify_lab_registry.py
+
+  - id: neurolab_thalamic_K_alignment
+    domain: neural
+    claim: "Thalamic gate K matches canonical layer2.k"
+    status: numerically_verified
+    source_lab: "FSOT NeuroLab"
+    source_file: DataAnalysisExpert/export/thalamus/thalamic_gate_manifest.json
+    lean:
+      module: FSOT.Formal.Domains
+      theorem: neural_raw_S_positive
+    verification: scripts/verify_lab_registry.py
+    physics_note: |
+      Seven thalamic nuclei (VPM, VPL, MGN, LGN, LP, MD, Pulvinar) embed K in
+      gate_embedding[5]. Allen Brain Atlas + GO terms ground neurological observables.
+
+  - id: neurolab_brain_fit_dashboard
+    domain: neural
+    claim: "15 neurological observable domains have mean_abs_gap < 0.15"
+    status: numerically_verified
+    source_lab: "FSOT NeuroLab"
+    source_file: DataAnalysisExpert/data/brain_public_sources/brain_live_fit_dashboard_by_domain.csv
+    verification: scripts/verify_lab_registry.py
+    physics_note: |
+      Auditory localization, memory encoding/replay, corticothalamic feedback,
+      executive relay — model vs target gaps for FSOT brain public-source fit.
+
+  - id: lab_domain_bridge
+    domain: "*"
+    claim: "Lean ledger domains align with NeuroLab 35-domain scalars at bridge params"
+    status: cross_validated
+    source_file: data/lab_domain_crosswalk.yaml
+    verification: scripts/ingest_lab_data.py
+    physics_note: |
+      Crosswalk maps neural↔Neuroscience, medical↔Biochemistry, chemical↔Molecular_Chemistry,
+      electron↔Chemistry. Lean proves signs at ledger params; labs render constants at D_eff.
+
+  - id: lab_smiles_full_map
+    domain: "*"
+    claim: "All 1470 SMILES records mapped via section_domain_map.json (108 sections)"
+    status: numerically_verified
+    source_file: data/section_domain_map.json
+    verification: scripts/build_section_domain_map.py
+
+  - id: lab_molecular_raw_S_positive
+    domain: molecular
+    claim: "raw_S(molecular) > 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Lab
+      theorem: lab_molecular_raw_S_positive
+    source_lab: "FSOT SMILES Lab"
+    oracle:
+      term1: -0.28
+      raw_S: 0.72
+
+  - id: lab_material_raw_S_positive
+    domain: material
+    claim: "raw_S(material) > 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Lab
+      theorem: lab_material_raw_S_positive
+    source_lab: "FSOT SMILES Lab"
+    oracle:
+      term1: -0.20
+      raw_S: 0.80
+
+  - id: lab_biological_raw_S_positive
+    domain: biological
+    claim: "raw_S(biological) > 0"
+    status: proved
+    lean:
+      module: FSOT.Formal.Lab
+      theorem: lab_biological_raw_S_positive
+
+  - id: lab_layer_k_certificate
+    domain: "*"
+    claim: "|k - smiles_k_cached| < 5e-4 ∧ |k - thalamic_K_cached| < 5e-4"
+    status: proved
+    lean:
+      module: FSOT.Formal.Lab
+      theorem: smiles_k_matches_formal_k
+
+  - id: lab_smiles_sign_bundle
+    domain: "*"
+    claim: "11 SMILES-mapped domains have positive raw_S at ledger params"
+    status: proved
+    lean:
+      module: FSOT.Formal.Lab
+      theorem: lab_smiles_domain_sign_bundle
+
+  - id: smiles_catalog_gaps_resolved
+    domain: "*"
+    claim: "8 Tier-22 SMILES catalog gaps filled (§90–§95) within 5% tolerance"
+    status: numerically_verified
+    source_file: data/smiles_catalog_gaps.yaml
+    verification: scripts/fill_smiles_catalog_gaps.py
+    physics_note: |
+      Export pipeline left 8 records with matched=false and null error_pct:
+      C3H8/C6H6 combustion, H2O Pc, E_coli membrane, dioxane/acetonitrile DN,
+      Ge/InSb hole mobility. Formulas from FSOT_SMILES_Lab_Findings Tier 22;
+      max gap fill error 2.78% (acetonitrile PHI⁵+PHI²).
+    gaps:
+      - {section: "§90 Heat of Combustion", name: C3H8, formula: "P_VAR·P_BASE⁻⁵", error_pct: 0.013}
+      - {section: "§90 Heat of Combustion", name: C6H6, formula: "E⁸+PI⁵", error_pct: 0.596}
+      - {section: "§91 Critical Pressure Pc", name: H2O, formula: "PI⁵-PI⁴+PI²", error_pct: 0.358}
+      - {section: "§93 Membrane Potential", name: E_coli, formula: "E⁵-E²", error_pct: 0.732}
+      - {section: "§94 Donor Number DN", name: dioxane, formula: "PHI⁶-PI", error_pct: 0.018}
+      - {section: "§94 Donor Number DN", name: acetonitrile, formula: "PHI⁵+PHI²", error_pct: 2.779}
+      - {section: "§95 Hole Mobility μh", name: Ge, formula: "E⁸-E⁷+E³", error_pct: 0.232}
+      - {section: "§95 Hole Mobility μh", name: InSb, formula: "PHI¹⁴+PHI⁴", error_pct: 0.017}
+
+  - id: neurolab_bio_translations
+    domain: biological
+    claim: "NeuroLab NEUROSCIENCE/BIOPHYSICS/GENOMIC translations within 5% tolerance"
+    status: numerically_verified
+    source_lab: "FSOT NeuroLab"
+    source_file: DataAnalysisExpert/scripts/fsot_translations.jl
+    verification: scripts/verify_neurolab_bio.py
+    lean:
+      module: FSOT.Formal.Lab
+      theorem: neurolab_bio_sign_bundle
+    physics_note: |
+      10 Neuroscience + 12 Biophysics + 16 Genomic Sciences dimensionless ratios.
+      Lean proves domain signs; Python verifies per-translation FSOT mathematics.
+
+  - id: neurolab_brain_pathways
+    domain: neural
+    claim: "25 brain formula training pathways have abs_gap < 0.15"
+    status: numerically_verified
+    source_lab: "FSOT NeuroLab"
+    source_file: DataAnalysisExpert/data/brain_public_sources/brain_formula_training_dataset.csv
+    verification: scripts/verify_neurolab_bio.py
+    lean:
+      module: FSOT.Formal.Lab
+      theorem: neurolab_bio_sign_bundle
+
+  - id: genomic_exact_identities
+    domain: biological
+    claim: "64 codons (4³), 27 trinary patterns (3³), 20 amino acids (4φ³+8φ⁻²), autosome ≈ 22"
+    status: proved
+    source_lab: "FSOT NeuroLab"
+    source_file: DataAnalysisExpert/scripts/fsot_translations.jl
+    verification: scripts/gen_genomic_bounds.py
+    lean:
+      module: FSOT.Formal.Genomic
+      theorem: genomic_exact_identity_bundle
+    physics_note: |
+      Machine-checked exact identities for Genomic Sciences translations.
+      Interval certificate for 2(φ⁵−φ⁻⁵)≈22; Python validates φ-power brackets pre-commit.
+
+  - id: neurolab_brain_component_priors
+    domain: neural
+    claim: "10 brain components carry 72bp dna_proxy trinary signatures and FSOT coupling priors"
+    status: numerically_verified
+    source_lab: "FSOT NeuroLab"
+    source_file: DataAnalysisExpert/data/brain_public_sources/brain_component_priors.csv
+    verification: scripts/verify_neurolab_bio.py
+    lean:
+      module: FSOT.Formal.BrainPriors
+      theorem: brain_component_priors_trinary_bundle
+    physics_note: |
+      gc_content equals superposition_ratio per component; aa_preview is 6-codon peptide proxy.
+      Registry key neurolab_bio.brain_component_priors in data/lab_registry.json.
+      Auto-generated FSOT.Formal.BrainPriors links per-base genetic trits to 3³=27 codon patterns.
+
+  - id: protein_amino_acid_trinary
+    domain: biological
+    claim: "20 canonical amino acids map to [Charge,Polarity,Volume] ∈ {-1,0,+1}³ with 10 distinct patterns ⊆ 27"
+    status: proved
+    source_lab: "FSOT Genetics"
+    source_file: fsot_protein/src/secondary.rs
+    verification: scripts/verify_protein_formulas.py
+    lean:
+      module: FSOT.Formal.ProteinPriors
+      theorem: protein_amino_acid_trinary_bundle
+    physics_note: |
+      Trinary phases from Genetics/fsot_protein; links to genomic 4φ³+8φ⁻²=20 via
+      FSOT.Formal.Genomic.amino_acids_canonical_eq_twenty. Registry key protein_formulas
+      in data/lab_registry.json; auto-generated FSOT.Formal.ProteinPriors.
+
+  - id: neurolab_ledger_alignment
+    domain: "*"
+    claim: "17 NeuroLab domains aligned to Lean ledger params (δψ, hits, D_eff, observed)"
+    status: cross_validated
+    source_file: data/neurolab_ledger_alignment.yaml
+    verification: scripts/align_neurolab_domains.py
+    physics_note: |
+      Bridges prior δψ/hits drift (e.g. Neuroscience 0.1→0.7, Biochemistry hits 0→1).
+      Interpretation constants (C field) preserved; raw_S signs match Lean oracle post-align.
+
+playbook_patterns:
+  - pattern: wrong_bound_direction
+    symptom: "linarith fails on term1 upper bound when oracle shows term1 ≈ -0.2"
+    physics_cause: "Observer/quirk boosts term1 toward zero; dispersal is weak, not strong."
+    fix: "Switch to term1 > -0.8 lower bound + raw_S_positive_of_term1_gt_neg_08"
+    examples: [chemical, electron, medical]
+
+  - pattern: wrong_hits_template
+    symptom: "growth_term / rexp mismatch in medical proof"
+    physics_cause: "recent_hits modulates exp(-α·hits/N) in term1_base"
+    fix: "Use growth_term_hits_one (or domain-specific) bounds, not hits=0 template"
+    examples: [medical]
+
+  - pattern: dominance_not_sign
+    symptom: "term1 < 0 proved but raw_S sign still ambiguous"
+    physics_cause: "term2 = 1 is a positive floor; need |term1| > 1 + |term3|"
+    fix: "Prove domain_*_term1_overcomes_term3 or magnitude lemmas"
+    examples: [cmb, ai, cosmological]
+
+  - pattern: scaled_vs_raw
+    symptom: "Sign flip between raw_S and scaled_S = k · raw_S"
+    physics_cause: "k > 0 is positive scale factor; signs agree but magnitudes differ"
+    fix: "Prove on raw_S; scaled sign follows from k_pos"
+    examples: [all domains]

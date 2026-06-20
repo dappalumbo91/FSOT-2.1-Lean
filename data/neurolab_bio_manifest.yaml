@@ -1,0 +1,55 @@
+# FSOT NeuroLab biological / neural artifacts for Lean-aligned verification.
+version: "1.0"
+updated: "2026-06-19"
+neurolab_root: "C:/Users/damia/Desktop/FSOT NeuroLab"
+
+# Julia translation domains → Lean ledger domains (sign proofs in FSOT.Formal.Domains)
+translation_domains:
+  NEUROSCIENCE:
+    lean_domain: neural
+    lean_theorem: neural_raw_S_positive
+    neurolab_domain: Neuroscience
+    tolerance_pct: 5.0
+  BIOPHYSICS:
+    lean_domain: biological
+    lean_theorem: biological_raw_S_positive
+    neurolab_domain: Biology
+    tolerance_pct: 5.0
+  GENOMIC_SCIENCES:
+    lean_domain: biological
+    lean_theorem: biological_raw_S_positive
+    neurolab_domain: Biology
+    tolerance_pct: 5.0
+
+artifacts:
+  translations_jl:
+    path: "DataAnalysisExpert/scripts/fsot_translations.jl"
+    domains: [NEUROSCIENCE, BIOPHYSICS, GENOMIC_SCIENCES]
+
+  thalamic_gate:
+    path: "DataAnalysisExpert/export/thalamus/thalamic_gate_manifest.json"
+    lean_certificate: thalamic_K_matches_formal_k
+
+  brain_fit_by_domain:
+    path: "DataAnalysisExpert/data/brain_public_sources/brain_live_fit_dashboard_by_domain.csv"
+    max_mean_abs_gap: 0.15
+
+  brain_formula_training:
+    path: "DataAnalysisExpert/data/brain_public_sources/brain_formula_training_dataset.csv"
+    max_abs_gap: 0.15
+
+  brain_component_priors:
+    path: "DataAnalysisExpert/data/brain_public_sources/brain_component_priors.csv"
+
+  articulation_targets:
+    path: "FluidModels/checkpoints/fsot_articulation_targets_manifest.json"
+
+verification:
+  translation_tolerance_pct: 5.0
+  brain_pathway_max_gap: 0.15
+  thalamic_k_rel_err: 1.0e-6
+  brain_component_priors_count: 10
+  brain_component_priors_dna_length: 72
+  brain_component_priors_codon_count: 24
+  brain_component_priors_gc_sp_tolerance: 1.0e-6
+  brain_component_priors_signature_tolerance: 1.0e-4

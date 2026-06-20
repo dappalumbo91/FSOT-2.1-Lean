@@ -1,0 +1,160 @@
+# Maps external lab data to FSOT Lean ledger domains and NeuroLab 35-domain names.
+
+lean_domains:
+  neural:
+    neurolab_name: Neuroscience
+    D_eff: 14
+    recent_hits: 1
+    delta_psi: 0.7
+    observed: true
+    lean_theorem: neural_raw_S_positive
+    smiles_section_prefixes:
+      - "§19 NMR"
+    tags: [neuroscience, brain, thalamus]
+
+  medical:
+    neurolab_name: Biochemistry
+    D_eff: 13
+    recent_hits: 1
+    delta_psi: 0.35
+    observed: true
+    lean_theorem: medical_raw_S_positive
+    smiles_section_prefixes:
+      - "§21 Protein"
+      - "§22 Amino"
+      - "§23 Drug"
+      - "§24 Enzyme"
+      - "§35 Michaelis"
+      - "§36 Hydrophobicity"
+    tags: [biochemistry, medical, protein, enzyme]
+
+  chemical:
+    neurolab_name: Molecular_Chemistry
+    D_eff: 9
+    recent_hits: 0
+    delta_psi: 0.5
+    observed: true
+    lean_theorem: chemical_raw_S_positive
+    smiles_section_prefixes:
+      - "§1 Foundation"
+      - "§2 "
+      - "§3 "
+      - "§4"
+      - "§5"
+      - "§6 "
+      - "§8 "
+      - "§9 "
+      - "§10 "
+      - "§11 "
+      - "§12 "
+      - "§13 "
+      - "§14 "
+      - "§15 "
+      - "§16 "
+      - "§17 "
+      - "§18 "
+    tags: [chemistry, molecular]
+
+  electron:
+    neurolab_name: Chemistry
+    D_eff: 8
+    recent_hits: 0
+    delta_psi: 0.6
+    observed: true
+    lean_theorem: electron_raw_S_positive
+    smiles_section_prefixes:
+      - "§25 vdW"
+      - "§26 Polarizability"
+      - "§40 Ionic"
+      - "§41 Covalent"
+    tags: [atomic, electron, radii]
+
+  consciousness:
+    neurolab_name: Psychology
+    D_eff: 16
+    recent_hits: 1
+    delta_psi: 1.15
+    observed: true
+    lean_theorem: consciousness_raw_S_positive
+    smiles_section_prefixes: []
+    tags: [psychology, cognition]
+
+  particle:
+    neurolab_name: Atomic_Physics
+    D_eff: 7
+    recent_hits: 0
+    delta_psi: 0.85
+    observed: true
+    lean_theorem: particle_raw_S_positive
+    smiles_section_prefixes:
+      - "§42 Nuclear"
+    tags: [atomic, nuclear]
+
+  quantum:
+    neurolab_name: Quantum_Mechanics
+    D_eff: 6
+    recent_hits: 0
+    delta_psi: 1.0
+    observed: true
+    lean_theorem: quantum_raw_S_positive
+    tags: [quantum]
+
+  molecular:
+    neurolab_name: Molecular_Chemistry
+    shared_neurolab_with: chemical
+    D_eff: 9
+    recent_hits: 0
+    delta_psi: 0.4
+    observed: true
+    lean_theorem: molecular_raw_S_positive
+    tags: [molecular, chemistry]
+    bridge_note: "NeuroLab Molecular_Chemistry aligned to chemical ledger params; molecular oracle differs at δψ=0.4"
+
+  material:
+    neurolab_name: Materials_Science
+    D_eff: 10
+    recent_hits: 0
+    delta_psi: 0.5
+    observed: true
+    lean_theorem: material_raw_S_positive
+    tags: [materials, condensed_matter]
+
+  biological:
+    neurolab_name: Biology
+    D_eff: 12
+    recent_hits: 0
+    delta_psi: 0.08
+    observed: false
+    lean_theorem: biological_raw_S_positive
+    tags: [biology, biochemistry]
+
+  nuclear:
+    neurolab_name: Nuclear_Physics
+    D_eff: 15
+    recent_hits: 1
+    delta_psi: 1.0
+    observed: true
+    lean_theorem: nuclear_raw_S_positive
+    tags: [nuclear]
+
+  energy:
+    neurolab_name: Thermodynamics
+    D_eff: 15
+    recent_hits: 1
+    delta_psi: 0.9
+    observed: true
+    lean_theorem: energy_raw_S_positive
+    tags: [thermodynamics, energy]
+
+lab_paths:
+  smiles_lab: "C:/Users/damia/Desktop/FSOT SMILES Lab"
+  neurolab: "C:/Users/damia/Desktop/FSOT NeuroLab"
+
+smiles_files:
+  dataset_json: "FSOT_SMILES_Lab_Dataset.json"
+  dataset_csv: "FSOT_SMILES_Lab_Dataset.csv"
+
+neurolab_files:
+  thalamic_gate: "DataAnalysisExpert/export/thalamus/thalamic_gate_manifest.json"
+  brain_fit_csv: "DataAnalysisExpert/data/brain_public_sources/brain_live_fit_dashboard_by_domain.csv"
+  articulation_manifest: "FluidModels/checkpoints/fsot_articulation_targets_manifest.json"

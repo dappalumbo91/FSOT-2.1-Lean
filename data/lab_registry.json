@@ -1,0 +1,1327 @@
+{
+  "registry_version": "1.0",
+  "generated_at": "2026-06-20T01:16:35.608110+00:00",
+  "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
+  "smiles_lab": {
+    "source_path": "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\FSOT_SMILES_Lab_Dataset.json",
+    "sha256": "CC6BF2DAA41D0C5EFE3AD2F267C8FD7CBFB5761EDDA7D2D7AE0A463E99C2C8F4",
+    "metadata": {
+      "title": "FSOT SMILES Lab Dataset",
+      "author": "Damian Arthur Palumbo",
+      "theory": "Fluid Spacetime Omni Theory (FSOT) 3.0",
+      "generated": "2026-04-13T18:27:18.669164",
+      "seeds": [
+        "\u03c0",
+        "e",
+        "\u03c6",
+        "\u03b3",
+        "G"
+      ],
+      "free_parameters": 0,
+      "total_constants": 1320,
+      "matched": 1312,
+      "hit_rate": "99.4%",
+      "sections": 96,
+      "tiers": 24,
+      "median_error_pct": 0.058,
+      "mean_error_pct": 0.1105,
+      "description": "Each record maps a physical/chemical constant to its FSOT formula \u2014 an algebraic expression of the five mathematical seeds (\u03c0, e, \u03c6, \u03b3, G) and their derived Layer 1/Layer 2 constants. Zero free parameters. Every prediction is within 5% of the published experimental value.",
+      "catalog_gaps_filled": 8,
+      "catalog_gaps_filled_at": "2026-06-20T00:39:34.284388+00:00"
+    },
+    "total_records": 1470,
+    "mapped_records": 1470,
+    "unmapped_records": 0,
+    "layer_constants": {
+      "alpha": 0.0008082937414140405,
+      "k": 0.4202216641606967,
+      "acoustic_bleed": 1.046973630587551,
+      "acoustic_inflow": 1.6668538450045731
+    },
+    "domain_stats": {
+      "chemical": {
+        "record_count": 608,
+        "matched_count": 608,
+        "unmatched_count": 0,
+        "median_error_pct": 0.415811,
+        "max_error_pct": 4.841504,
+        "catalog_gaps": [],
+        "sample_names": [
+          "IE_H",
+          "IE_He",
+          "IE_Li",
+          "IE_Be",
+          "IE_B"
+        ]
+      },
+      "electron": {
+        "record_count": 99,
+        "matched_count": 99,
+        "unmatched_count": 0,
+        "median_error_pct": 0.717702,
+        "max_error_pct": 4.304529,
+        "catalog_gaps": [],
+        "sample_names": [
+          "H",
+          "Li",
+          "B",
+          "C",
+          "N"
+        ]
+      },
+      "material": {
+        "record_count": 485,
+        "matched_count": 485,
+        "unmatched_count": 0,
+        "median_error_pct": 0.658987,
+        "max_error_pct": 4.669601,
+        "catalog_gaps": [],
+        "sample_names": [
+          "H\u2082O",
+          "NaCl",
+          "C(diamond)",
+          "C\u2086H\u2086",
+          "Cu"
+        ]
+      },
+      "neural": {
+        "record_count": 39,
+        "matched_count": 39,
+        "unmatched_count": 0,
+        "median_error_pct": 1.025856,
+        "max_error_pct": 4.305297,
+        "catalog_gaps": [],
+        "sample_names": [
+          "TMS",
+          "R-CH\u2083",
+          "R\u2082-CH\u2082",
+          "R\u2083-CH",
+          "-CH\u2082X"
+        ]
+      },
+      "medical": {
+        "record_count": 128,
+        "matched_count": 128,
+        "unmatched_count": 0,
+        "median_error_pct": 0.795617,
+        "max_error_pct": 4.472614,
+        "catalog_gaps": [],
+        "sample_names": [
+          "CI2",
+          "barnase",
+          "ubiquitin",
+          "lysozyme",
+          "RNase A"
+        ]
+      },
+      "quantum": {
+        "record_count": 24,
+        "matched_count": 24,
+        "unmatched_count": 0,
+        "median_error_pct": 1.232204,
+        "max_error_pct": 3.869913,
+        "catalog_gaps": [],
+        "sample_names": [
+          "InAs",
+          "Ge",
+          "Si",
+          "InP",
+          "GaAs"
+        ]
+      },
+      "nuclear": {
+        "record_count": 51,
+        "matched_count": 51,
+        "unmatched_count": 0,
+        "median_error_pct": 0.82106,
+        "max_error_pct": 4.673928,
+        "catalog_gaps": [],
+        "sample_names": [
+          "H-2",
+          "He-3",
+          "He-4",
+          "Li-6",
+          "Li-7"
+        ]
+      },
+      "particle": {
+        "record_count": 36,
+        "matched_count": 36,
+        "unmatched_count": 0,
+        "median_error_pct": 1.050199,
+        "max_error_pct": 4.499825,
+        "catalog_gaps": [],
+        "sample_names": [
+          "electron",
+          "muon",
+          "tau",
+          "proton",
+          "neutron"
+        ]
+      }
+    },
+    "catalog_gaps": {
+      "resolved": 8,
+      "remaining": 0,
+      "entries": []
+    },
+    "bio_sections": {
+      "medical": {
+        "record_count": 128,
+        "matched_count": 128,
+        "unmatched_count": 0,
+        "median_error_pct": 0.795617,
+        "max_error_pct": 4.472614,
+        "catalog_gaps": [],
+        "sample_names": [
+          "CI2",
+          "barnase",
+          "ubiquitin",
+          "lysozyme",
+          "RNase A"
+        ]
+      },
+      "neural": {
+        "record_count": 39,
+        "matched_count": 39,
+        "unmatched_count": 0,
+        "median_error_pct": 1.025856,
+        "max_error_pct": 4.305297,
+        "catalog_gaps": [],
+        "sample_names": [
+          "TMS",
+          "R-CH\u2083",
+          "R\u2082-CH\u2082",
+          "R\u2083-CH",
+          "-CH\u2082X"
+        ]
+      },
+      "chemical": {
+        "record_count": 608,
+        "matched_count": 608,
+        "unmatched_count": 0,
+        "median_error_pct": 0.415811,
+        "max_error_pct": 4.841504,
+        "catalog_gaps": [],
+        "sample_names": [
+          "IE_H",
+          "IE_He",
+          "IE_Li",
+          "IE_Be",
+          "IE_B"
+        ]
+      },
+      "electron": {
+        "record_count": 99,
+        "matched_count": 99,
+        "unmatched_count": 0,
+        "median_error_pct": 0.717702,
+        "max_error_pct": 4.304529,
+        "catalog_gaps": [],
+        "sample_names": [
+          "H",
+          "Li",
+          "B",
+          "C",
+          "N"
+        ]
+      }
+    },
+    "unmapped_section_sample": []
+  },
+  "neurolab": {
+    "thalamic_gate": {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\DataAnalysisExpert\\export\\thalamus\\thalamic_gate_manifest.json",
+      "sha256": "BD5AD395314B0213F98221A1AF786A56B467BF02A54D50ACA284D039A3434AEF",
+      "K": 0.420222080893624,
+      "n_nuclei": 7,
+      "nuclei": [
+        {
+          "code": "VPM",
+          "full_name": "Ventral Posteromedial",
+          "modality": "somatosensory_facial",
+          "cortical_target": "S1_somatosensory",
+          "gate_embedding_dim": 8,
+          "go_term_count": 10,
+          "allen_genes": [
+            "structure_id",
+            "RORB",
+            "NTNG2",
+            "CALB1"
+          ],
+          "K_embedded": 0.420222080893624
+        },
+        {
+          "code": "VPL",
+          "full_name": "Ventral Posterolateral",
+          "modality": "somatosensory_body",
+          "cortical_target": "S1_body",
+          "gate_embedding_dim": 8,
+          "go_term_count": 10,
+          "allen_genes": [
+            "structure_id",
+            "RORB",
+            "NTNG2",
+            "SCN8A"
+          ],
+          "K_embedded": 0.420222080893624
+        },
+        {
+          "code": "LGN",
+          "full_name": "Lateral Geniculate Nucleus",
+          "modality": "visual",
+          "cortical_target": "V1_visual",
+          "gate_embedding_dim": 8,
+          "go_term_count": 7,
+          "allen_genes": [
+            "structure_id",
+            "CALB2",
+            "WIF1",
+            "EGR1"
+          ],
+          "K_embedded": 0.420222080893624
+        },
+        {
+          "code": "MGN",
+          "full_name": "Medial Geniculate Nucleus",
+          "modality": "auditory",
+          "cortical_target": "A1_auditory",
+          "gate_embedding_dim": 8,
+          "go_term_count": 10,
+          "allen_genes": [
+            "structure_id",
+            "CALB2",
+            "TBR1",
+            "KCNK9"
+          ],
+          "K_embedded": 0.420222080893624
+        },
+        {
+          "code": "MD",
+          "full_name": "Mediodorsal Nucleus",
+          "modality": "cognitive_emotional",
+          "cortical_target": "PFC_prefrontal",
+          "gate_embedding_dim": 8,
+          "go_term_count": 10,
+          "allen_genes": [
+            "structure_id",
+            "PRSS56",
+            "PENK",
+            "CHRM2"
+          ],
+          "K_embedded": 0.420222080893624
+        },
+        {
+          "code": "VA_VL",
+          "full_name": "Ventral Anterior / Ventral Lateral",
+          "modality": "motor_cerebellar",
+          "cortical_target": "M1_motor",
+          "gate_embedding_dim": 8,
+          "go_term_count": 10,
+          "allen_genes": [
+            "structure_id",
+            "CALB1",
+            "FOXP2",
+            "SCN4B"
+          ],
+          "K_embedded": 0.420222080893624
+        },
+        {
+          "code": "Pulvinar",
+          "full_name": "Pulvinar",
+          "modality": "attention_multisensory",
+          "cortical_target": "association_cortex",
+          "gate_embedding_dim": 8,
+          "go_term_count": 10,
+          "allen_genes": [
+            "structure_id",
+            "SEMA3E",
+            "NXPH1",
+            "GRIK2"
+          ],
+          "K_embedded": 0.420222080893624
+        }
+      ]
+    },
+    "brain_fit": {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\DataAnalysisExpert\\data\\brain_public_sources\\brain_live_fit_dashboard_by_domain.csv",
+      "sha256": "548A60ABC3B94836E2B6AC3594D3E8AA695E317829A09F4E9EB93CA19367563C",
+      "observable_domains": 15,
+      "rows": [
+        {
+          "observable_domain": "auditory_localization_inhibitory",
+          "mean_abs_gap": 0.07660671656120954,
+          "mean_target": 0.9000728223964304,
+          "mean_model": 0.8234661058352208
+        },
+        {
+          "observable_domain": "auditory_context",
+          "mean_abs_gap": 0.05506701164706662,
+          "mean_target": 0.9009453617763606,
+          "mean_model": 0.845878350129294
+        },
+        {
+          "observable_domain": "auditory_feedforward",
+          "mean_abs_gap": 0.051817827300569747,
+          "mean_target": 0.7630785228934437,
+          "mean_model": 0.8148963501940134
+        },
+        {
+          "observable_domain": "corticothalamic_feedback",
+          "mean_abs_gap": 0.034947622167438554,
+          "mean_target": 0.7860487812013403,
+          "mean_model": 0.8209964033687789
+        },
+        {
+          "observable_domain": "predictive_correction",
+          "mean_abs_gap": 0.03368352591044255,
+          "mean_target": 0.8148186449853311,
+          "mean_model": 0.8485021708957736
+        },
+        {
+          "observable_domain": "memory_replay",
+          "mean_abs_gap": 0.03070904623807902,
+          "mean_target": 0.8294371353498102,
+          "mean_model": 0.8601461815878892
+        },
+        {
+          "observable_domain": "auditory_localization_level",
+          "mean_abs_gap": 0.022193748254325796,
+          "mean_target": 0.9007115519625628,
+          "mean_model": 0.8785178037082371
+        },
+        {
+          "observable_domain": "auditory_localization_timing",
+          "mean_abs_gap": 0.022041908990612147,
+          "mean_target": 0.8514624165175518,
+          "mean_model": 0.862431262194497
+        },
+        {
+          "observable_domain": "memory_encoding",
+          "mean_abs_gap": 0.02199126570774529,
+          "mean_target": 0.773446478350834,
+          "mean_model": 0.7954377440585794
+        },
+        {
+          "observable_domain": "auditory_semantic",
+          "mean_abs_gap": 0.012395208388253587,
+          "mean_target": 0.8995502058123231,
+          "mean_model": 0.8871549974240696
+        },
+        {
+          "observable_domain": "gating_brake",
+          "mean_abs_gap": 0.008514674373894193,
+          "mean_target": 0.8724977056381592,
+          "mean_model": 0.8810123800120534
+        },
+        {
+          "observable_domain": "executive_relay",
+          "mean_abs_gap": 0.008302452645308322,
+          "mean_target": 0.841526718362078,
+          "mean_model": 0.8498291710073864
+        },
+        {
+          "observable_domain": "sensory_feedforward",
+          "mean_abs_gap": 0.003886154433125344,
+          "mean_target": 0.8623830495570881,
+          "mean_model": 0.8584968951239628
+        },
+        {
+          "observable_domain": "homeostatic_control",
+          "mean_abs_gap": 0.003765593193213679,
+          "mean_target": 0.9262991290113165,
+          "mean_model": 0.9300647222045302
+        },
+        {
+          "observable_domain": "state_transition",
+          "mean_abs_gap": 0.003749290180063758,
+          "mean_target": 0.8866389920200926,
+          "mean_model": 0.8828897018400288
+        }
+      ]
+    },
+    "articulation": {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\FluidModels\\checkpoints\\fsot_articulation_targets_manifest.json",
+      "case_count": 25,
+      "canary_count": 10,
+      "fsot_knowledge_cases": [
+        "one_word_fsot",
+        "two_word_deff",
+        "short_phrase_scalar",
+        "sentence_fsot",
+        "sentence_deff",
+        "two_sentence_fsot",
+        "expand_deff",
+        "two_word_fsot_goal",
+        "short_phrase_gate",
+        "short_phrase_neuron",
+        "short_phrase_coupling",
+        "sentence_scalar_why",
+        "sentence_gate_role",
+        "two_sentence_gate",
+        "two_sentence_scalar",
+        "expand_neuron"
+      ]
+    },
+    "domain_bridge": [
+      {
+        "lean_domain": "neural",
+        "neurolab_domain": "Neuroscience",
+        "lean_theorem": "neural_raw_S_positive",
+        "tags": [
+          "neuroscience",
+          "brain",
+          "thalamus"
+        ],
+        "params": {
+          "D_eff": 14,
+          "recent_hits": 1,
+          "delta_psi": 0.7,
+          "observed": true
+        },
+        "lean_oracle": {
+          "term1": 0.224025,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 1.224025,
+          "sign": "+"
+        },
+        "neurolab_scalar": 0.514362,
+        "neurolab_raw_S_est": 1.224025,
+        "ledger_aligned": true
+      },
+      {
+        "lean_domain": "medical",
+        "neurolab_domain": "Biochemistry",
+        "lean_theorem": "medical_raw_S_positive",
+        "tags": [
+          "biochemistry",
+          "medical",
+          "protein",
+          "enzyme"
+        ],
+        "params": {
+          "D_eff": 13,
+          "recent_hits": 1,
+          "delta_psi": 0.35,
+          "observed": true
+        },
+        "lean_oracle": {
+          "term1": -0.271286,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 0.728714,
+          "sign": "+"
+        },
+        "neurolab_scalar": 0.306221,
+        "neurolab_raw_S_est": 0.728714,
+        "ledger_aligned": true
+      },
+      {
+        "lean_domain": "chemical",
+        "neurolab_domain": "Molecular_Chemistry",
+        "lean_theorem": "chemical_raw_S_positive",
+        "tags": [
+          "chemistry",
+          "molecular"
+        ],
+        "params": {
+          "D_eff": 9,
+          "recent_hits": 0,
+          "delta_psi": 0.5,
+          "observed": true
+        },
+        "lean_oracle": {
+          "term1": -0.203817,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 0.796183,
+          "sign": "+"
+        },
+        "neurolab_scalar": 0.334573,
+        "neurolab_raw_S_est": 0.796183,
+        "ledger_aligned": true
+      },
+      {
+        "lean_domain": "electron",
+        "neurolab_domain": "Chemistry",
+        "lean_theorem": "electron_raw_S_positive",
+        "tags": [
+          "atomic",
+          "electron",
+          "radii"
+        ],
+        "params": {
+          "D_eff": 8,
+          "recent_hits": 0,
+          "delta_psi": 0.6,
+          "observed": true
+        },
+        "lean_oracle": {
+          "term1": -0.02936,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 0.97064,
+          "sign": "+"
+        },
+        "neurolab_scalar": 0.407884,
+        "neurolab_raw_S_est": 0.97064,
+        "ledger_aligned": true
+      },
+      {
+        "lean_domain": "consciousness",
+        "neurolab_domain": "Psychology",
+        "lean_theorem": "consciousness_raw_S_positive",
+        "tags": [
+          "psychology",
+          "cognition"
+        ],
+        "params": {
+          "D_eff": 16,
+          "recent_hits": 1,
+          "delta_psi": 1.15,
+          "observed": true
+        },
+        "lean_oracle": {
+          "term1": 1.499171,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 2.499171,
+          "sign": "+"
+        },
+        "neurolab_scalar": 1.050206,
+        "neurolab_raw_S_est": 2.499171,
+        "ledger_aligned": true
+      },
+      {
+        "lean_domain": "particle",
+        "neurolab_domain": "Atomic_Physics",
+        "lean_theorem": "particle_raw_S_positive",
+        "tags": [
+          "atomic",
+          "nuclear"
+        ],
+        "params": {
+          "D_eff": 7,
+          "recent_hits": 0,
+          "delta_psi": 0.85,
+          "observed": true
+        },
+        "lean_oracle": {
+          "term1": 0.751037,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 1.751037,
+          "sign": "+"
+        },
+        "neurolab_scalar": 0.735824,
+        "neurolab_raw_S_est": 1.751037,
+        "ledger_aligned": true
+      },
+      {
+        "lean_domain": "quantum",
+        "neurolab_domain": "Quantum_Mechanics",
+        "lean_theorem": "quantum_raw_S_positive",
+        "tags": [
+          "quantum"
+        ],
+        "params": {
+          "D_eff": 6,
+          "recent_hits": 0,
+          "delta_psi": 1.0,
+          "observed": true
+        },
+        "lean_oracle": {
+          "term1": 1.273815,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 2.273815,
+          "sign": "+"
+        },
+        "neurolab_scalar": 0.955506,
+        "neurolab_raw_S_est": 2.273815,
+        "ledger_aligned": true
+      },
+      {
+        "lean_domain": "molecular",
+        "neurolab_domain": "Molecular_Chemistry",
+        "lean_theorem": "molecular_raw_S_positive",
+        "tags": [
+          "molecular",
+          "chemistry"
+        ],
+        "params": {
+          "D_eff": 9,
+          "recent_hits": 0,
+          "delta_psi": 0.4,
+          "observed": true
+        },
+        "lean_oracle": {
+          "term1": -0.279868,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 0.720132,
+          "sign": "+"
+        },
+        "neurolab_scalar": 0.334573,
+        "neurolab_raw_S_est": 0.796183,
+        "ledger_aligned": false
+      },
+      {
+        "lean_domain": "material",
+        "neurolab_domain": "Materials_Science",
+        "lean_theorem": "material_raw_S_positive",
+        "tags": [
+          "materials",
+          "condensed_matter"
+        ],
+        "params": {
+          "D_eff": 10,
+          "recent_hits": 0,
+          "delta_psi": 0.5,
+          "observed": true
+        },
+        "lean_oracle": {
+          "term1": -0.202183,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 0.797817,
+          "sign": "+"
+        },
+        "neurolab_scalar": 0.33526,
+        "neurolab_raw_S_est": 0.797817,
+        "ledger_aligned": true
+      },
+      {
+        "lean_domain": "biological",
+        "neurolab_domain": "Biology",
+        "lean_theorem": "biological_raw_S_positive",
+        "tags": [
+          "biology",
+          "biochemistry"
+        ],
+        "params": {
+          "D_eff": 12,
+          "recent_hits": 0,
+          "delta_psi": 0.08,
+          "observed": false
+        },
+        "lean_oracle": {
+          "term1": 0.058311,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 1.058311,
+          "sign": "+"
+        },
+        "neurolab_scalar": 0.444725,
+        "neurolab_raw_S_est": 1.058311,
+        "ledger_aligned": true
+      },
+      {
+        "lean_domain": "nuclear",
+        "neurolab_domain": "Nuclear_Physics",
+        "lean_theorem": "nuclear_raw_S_positive",
+        "tags": [
+          "nuclear"
+        ],
+        "params": {
+          "D_eff": 15,
+          "recent_hits": 1,
+          "delta_psi": 1.0,
+          "observed": true
+        },
+        "lean_oracle": {
+          "term1": 1.192437,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 2.192437,
+          "sign": "+"
+        },
+        "neurolab_scalar": 0.921309,
+        "neurolab_raw_S_est": 2.192437,
+        "ledger_aligned": true
+      },
+      {
+        "lean_domain": "energy",
+        "neurolab_domain": "Thermodynamics",
+        "lean_theorem": "energy_raw_S_positive",
+        "tags": [
+          "thermodynamics",
+          "energy"
+        ],
+        "params": {
+          "D_eff": 15,
+          "recent_hits": 1,
+          "delta_psi": 0.9,
+          "observed": true
+        },
+        "lean_oracle": {
+          "term1": 0.87276,
+          "term2": 1.0,
+          "term3": 0.0,
+          "raw_S": 1.87276,
+          "sign": "+"
+        },
+        "neurolab_scalar": 0.786975,
+        "neurolab_raw_S_est": 1.87276,
+        "ledger_aligned": true
+      }
+    ],
+    "neurolab_compute": {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\fsot_compute.py",
+      "sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70"
+    }
+  },
+  "neurolab_bio": {
+    "present": true,
+    "translations_source": "C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\DataAnalysisExpert\\scripts\\fsot_translations.jl",
+    "translation_total": 38,
+    "translation_domains": {
+      "NEUROSCIENCE": {
+        "record_count": 10,
+        "matched_count": 10,
+        "max_error_pct": 7.339042524742712e-05,
+        "lean_domain": "neural"
+      },
+      "BIOPHYSICS": {
+        "record_count": 13,
+        "matched_count": 13,
+        "max_error_pct": 9.703172509922808e-05,
+        "lean_domain": "biological"
+      },
+      "GENOMIC_SCIENCES": {
+        "record_count": 15,
+        "matched_count": 15,
+        "max_error_pct": 0.22323428743599671,
+        "lean_domain": "biological"
+      }
+    },
+    "brain_pathways": {
+      "count": 25,
+      "max_abs_gap": 0.07657426687619628,
+      "sample": [
+        {
+          "edge_id": "aud_01",
+          "pathway": "AVCN to MSO",
+          "observable_domain": "auditory_localization_timing",
+          "primary_domain": "Neuroscience",
+          "abs_gap": 0.03285501996197082,
+          "target_score": 0.8020818108145595
+        },
+        {
+          "edge_id": "aud_02",
+          "pathway": "PVCN to LSO",
+          "observable_domain": "auditory_localization_level",
+          "primary_domain": "Neuroscience",
+          "abs_gap": 0.01669988414514878,
+          "target_score": 0.9023827023172534
+        },
+        {
+          "edge_id": "aud_03",
+          "pathway": "MNTB to LSO",
+          "observable_domain": "auditory_localization_inhibitory",
+          "primary_domain": "Neuroscience",
+          "abs_gap": 0.07657426687619628,
+          "target_score": 0.8999806479782217
+        },
+        {
+          "edge_id": "aud_04",
+          "pathway": "MSO to VLL",
+          "observable_domain": "auditory_localization_timing",
+          "primary_domain": "Neuroscience",
+          "abs_gap": 0.01103214732760649,
+          "target_score": 0.9007870494899578
+        },
+        {
+          "edge_id": "aud_05",
+          "pathway": "LSO to DLL",
+          "observable_domain": "auditory_localization_level",
+          "primary_domain": "Neuroscience",
+          "abs_gap": 0.02756733113024723,
+          "target_score": 0.898927828387184
+        }
+      ]
+    },
+    "brain_component_priors": {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\DataAnalysisExpert\\data\\brain_public_sources\\brain_component_priors.csv",
+      "sha256": "B4A6DB004BEC0533355F4D7DC3F743ABD4D01F8DE732C8CCF4AD2959C94008D7",
+      "count": 10,
+      "components": [
+        "Neocortex",
+        "Cerebellum",
+        "Brainstem Arousal",
+        "Hippocampus",
+        "Basal Ganglia",
+        "Thalamus",
+        "Astrocyte Syncytium",
+        "Oligodendrocyte Myelination",
+        "Amygdala",
+        "Microglial Surveillance"
+      ],
+      "rows": [
+        {
+          "component": "Neocortex",
+          "system": "Cortex",
+          "organization": "six-layer laminar sheet",
+          "canonical_function": "hierarchical perception, planning, abstraction, and language",
+          "fsot_coupling": 0.5034,
+          "telemetry_alignment": 0.6649,
+          "gc_content": 0.5139,
+          "entropy_norm": 0.834,
+          "superposition_ratio": 0.5139,
+          "spin_balance": 0.0833,
+          "dna_proxy": "TGACCTCAACCATGGAAGGCGGGCTCATTGTTCCAAAGCTACAGCCCAAAGAACCGCGAAAACATGACCTCA",
+          "aa_preview": "Stop-Pro-Gln-Pro-Trp-Lys",
+          "reference_url": "https://portal.brain-map.org/",
+          "trinary_signature": {
+            "codon_count": 24,
+            "genetic_plus": 24,
+            "genetic_zero": 37,
+            "genetic_minus": 11,
+            "spin_plus": 39,
+            "spin_minus": 33,
+            "recomputed_gc_content": 0.5139,
+            "recomputed_superposition_ratio": 0.5139,
+            "recomputed_spin_balance": 0.0833,
+            "recomputed_entropy_norm": 0.9683
+          }
+        },
+        {
+          "component": "Cerebellum",
+          "system": "Prediction",
+          "organization": "microzones and deep nuclei",
+          "canonical_function": "predictive error correction, timing, and coordination",
+          "fsot_coupling": 0.482,
+          "telemetry_alignment": 0.6876,
+          "gc_content": 0.5417,
+          "entropy_norm": 0.84,
+          "superposition_ratio": 0.5417,
+          "spin_balance": -0.1944,
+          "dna_proxy": "CCGTCTAATCTTGACAATTCATGTCCCTCAACCCGCGGCATGGCTCTATAGCTACCCACCGGGACCGTCTAA",
+          "aa_preview": "Pro-Ser-Asn-Leu-Asp-Asn",
+          "reference_url": "https://neuromorpho.org/",
+          "trinary_signature": {
+            "codon_count": 24,
+            "genetic_plus": 16,
+            "genetic_zero": 39,
+            "genetic_minus": 17,
+            "spin_plus": 29,
+            "spin_minus": 43,
+            "recomputed_gc_content": 0.5417,
+            "recomputed_superposition_ratio": 0.5417,
+            "recomputed_spin_balance": -0.1944,
+            "recomputed_entropy_norm": 0.9752
+          }
+        },
+        {
+          "component": "Brainstem Arousal",
+          "system": "State Control",
+          "organization": "distributed neuromodulatory nuclei",
+          "canonical_function": "wakefulness, autonomic stability, and gain modulation",
+          "fsot_coupling": 0.4802,
+          "telemetry_alignment": 0.6814,
+          "gc_content": 0.5417,
+          "entropy_norm": 0.8531,
+          "superposition_ratio": 0.5417,
+          "spin_balance": 0.0,
+          "dna_proxy": "TGTCGCAAGTGATGGTGGGCACCCACGTTATCTGACGGGTCGTGGCTCCTAAATGATTGATCGCTGTCGCAA",
+          "aa_preview": "Cys-Arg-Lys-Stop-Trp-Trp",
+          "reference_url": "https://openneuro.org/",
+          "trinary_signature": {
+            "codon_count": 24,
+            "genetic_plus": 14,
+            "genetic_zero": 39,
+            "genetic_minus": 19,
+            "spin_plus": 36,
+            "spin_minus": 36,
+            "recomputed_gc_content": 0.5417,
+            "recomputed_superposition_ratio": 0.5417,
+            "recomputed_spin_balance": 0.0,
+            "recomputed_entropy_norm": 0.9905
+          }
+        },
+        {
+          "component": "Hippocampus",
+          "system": "Memory",
+          "organization": "trisynaptic loop",
+          "canonical_function": "episodic encoding, sequence binding, and spatial context",
+          "fsot_coupling": 0.4701,
+          "telemetry_alignment": 0.6448,
+          "gc_content": 0.5,
+          "entropy_norm": 0.8531,
+          "superposition_ratio": 0.5,
+          "spin_balance": -0.1389,
+          "dna_proxy": "GCCCTTTAGGGCTATCAGGGCCCCATTCGCTGGAGCTTACATACAACCATGAATGTTGTTTGGTGCCCTTTA",
+          "aa_preview": "Ala-Leu-Stop-Gly-Tyr-Gln",
+          "reference_url": "https://www.brainspan.org/",
+          "trinary_signature": {
+            "codon_count": 24,
+            "genetic_plus": 14,
+            "genetic_zero": 36,
+            "genetic_minus": 22,
+            "spin_plus": 31,
+            "spin_minus": 41,
+            "recomputed_gc_content": 0.5,
+            "recomputed_superposition_ratio": 0.5,
+            "recomputed_spin_balance": -0.1389,
+            "recomputed_entropy_norm": 0.9905
+          }
+        },
+        {
+          "component": "Basal Ganglia",
+          "system": "Action Selection",
+          "organization": "re-entrant corticostriatal loops",
+          "canonical_function": "policy selection, habit formation, and reinforcement gating",
+          "fsot_coupling": 0.4656,
+          "telemetry_alignment": 0.6787,
+          "gc_content": 0.5417,
+          "entropy_norm": 0.859,
+          "superposition_ratio": 0.5417,
+          "spin_balance": 0.0,
+          "dna_proxy": "CACTTTAGCTAGCACGAGACGCGTGTGAACAGCAAACCCGCGGCAATTTCCCGGGTTGAGGTTCCACTTTAG",
+          "aa_preview": "His-Phe-Ser-Stop-His-Glu",
+          "reference_url": "https://www.humanconnectome.org/",
+          "trinary_signature": {
+            "codon_count": 24,
+            "genetic_plus": 17,
+            "genetic_zero": 39,
+            "genetic_minus": 16,
+            "spin_plus": 36,
+            "spin_minus": 36,
+            "recomputed_gc_content": 0.5417,
+            "recomputed_superposition_ratio": 0.5417,
+            "recomputed_spin_balance": 0.0,
+            "recomputed_entropy_norm": 0.9972
+          }
+        },
+        {
+          "component": "Thalamus",
+          "system": "Relay",
+          "organization": "relay nuclei and reticular gating shell",
+          "canonical_function": "sensory routing, attention gating, and corticothalamic coordination",
+          "fsot_coupling": 0.4539,
+          "telemetry_alignment": 0.6365,
+          "gc_content": 0.4861,
+          "entropy_norm": 0.8455,
+          "superposition_ratio": 0.4861,
+          "spin_balance": -0.2222,
+          "dna_proxy": "TGTTCTCCAGCTCCTTATACCCTACCTGAATGGGCGACCACTATGTTTCCAGATGAGCATGTAGTGTTCTCC",
+          "aa_preview": "Cys-Ser-Pro-Ala-Pro-Tyr",
+          "reference_url": "https://portal.brain-map.org/",
+          "trinary_signature": {
+            "codon_count": 24,
+            "genetic_plus": 14,
+            "genetic_zero": 35,
+            "genetic_minus": 23,
+            "spin_plus": 28,
+            "spin_minus": 44,
+            "recomputed_gc_content": 0.4861,
+            "recomputed_superposition_ratio": 0.4861,
+            "recomputed_spin_balance": -0.2222,
+            "recomputed_entropy_norm": 0.9816
+          }
+        },
+        {
+          "component": "Astrocyte Syncytium",
+          "system": "Support",
+          "organization": "glial syncytium",
+          "canonical_function": "metabolic coupling, neurotransmitter clearance, and vascular mediation",
+          "fsot_coupling": 0.4387,
+          "telemetry_alignment": 0.6817,
+          "gc_content": 0.5417,
+          "entropy_norm": 0.8526,
+          "superposition_ratio": 0.5417,
+          "spin_balance": 0.0556,
+          "dna_proxy": "ATCAATGTGGTGCTAGTGGTAGACCATGGGAGCAGGCATCGCCCGGTATTTGGTAGCGCCTCCGATCAATGT",
+          "aa_preview": "Ile-Asn-Val-Val-Leu-Val",
+          "reference_url": "https://portal.brain-map.org/",
+          "trinary_signature": {
+            "codon_count": 24,
+            "genetic_plus": 15,
+            "genetic_zero": 39,
+            "genetic_minus": 18,
+            "spin_plus": 38,
+            "spin_minus": 34,
+            "recomputed_gc_content": 0.5417,
+            "recomputed_superposition_ratio": 0.5417,
+            "recomputed_spin_balance": 0.0556,
+            "recomputed_entropy_norm": 0.9898
+          }
+        },
+        {
+          "component": "Oligodendrocyte Myelination",
+          "system": "Support",
+          "organization": "white-matter conduction scaffold",
+          "canonical_function": "latency control, synchrony support, and signal insulation",
+          "fsot_coupling": 0.4383,
+          "telemetry_alignment": 0.6802,
+          "gc_content": 0.5417,
+          "entropy_norm": 0.8558,
+          "superposition_ratio": 0.5417,
+          "spin_balance": -0.0833,
+          "dna_proxy": "ATACGCGAGGCCCCTGTGTAGCAGGCTAATCTGCATTCTCTTGTCTCATGAGCTGCCAGCGGTTATACGCGA",
+          "aa_preview": "Ile-Arg-Glu-Ala-Pro-Val",
+          "reference_url": "https://portal.brain-map.org/",
+          "trinary_signature": {
+            "codon_count": 24,
+            "genetic_plus": 14,
+            "genetic_zero": 39,
+            "genetic_minus": 19,
+            "spin_plus": 33,
+            "spin_minus": 39,
+            "recomputed_gc_content": 0.5417,
+            "recomputed_superposition_ratio": 0.5417,
+            "recomputed_spin_balance": -0.0833,
+            "recomputed_entropy_norm": 0.9936
+          }
+        },
+        {
+          "component": "Amygdala",
+          "system": "Limbic",
+          "organization": "nuclear complex",
+          "canonical_function": "salience tagging, threat evaluation, and affective learning",
+          "fsot_coupling": 0.4345,
+          "telemetry_alignment": 0.5666,
+          "gc_content": 0.3889,
+          "entropy_norm": 0.8449,
+          "superposition_ratio": 0.3889,
+          "spin_balance": 0.0556,
+          "dna_proxy": "GCAGTACAGGCATTTCTAGTCGAATGGTGTCGCACTTAAAAAATAATTAATTTCAATTGGCTGCGCAGTACA",
+          "aa_preview": "Ala-Val-Gln-Ala-Phe-Leu",
+          "reference_url": "https://portal.brain-map.org/",
+          "trinary_signature": {
+            "codon_count": 24,
+            "genetic_plus": 23,
+            "genetic_zero": 28,
+            "genetic_minus": 21,
+            "spin_plus": 38,
+            "spin_minus": 34,
+            "recomputed_gc_content": 0.3889,
+            "recomputed_superposition_ratio": 0.3889,
+            "recomputed_spin_balance": 0.0556,
+            "recomputed_entropy_norm": 0.9809
+          }
+        },
+        {
+          "component": "Microglial Surveillance",
+          "system": "Support",
+          "organization": "immune surveillance mesh",
+          "canonical_function": "homeostasis, pruning, debris response, and inflammatory monitoring",
+          "fsot_coupling": 0.4246,
+          "telemetry_alignment": 0.6307,
+          "gc_content": 0.4861,
+          "entropy_norm": 0.8599,
+          "superposition_ratio": 0.4861,
+          "spin_balance": 0.0278,
+          "dna_proxy": "GCAGATTACTAGTACCTGTGCGAGCTCACGTCTGCAAAAACAGAGTTGCAGGCGTCATCACTCTGCAGATTA",
+          "aa_preview": "Ala-Asp-Tyr-Stop-Tyr-Leu",
+          "reference_url": "https://portal.brain-map.org/",
+          "trinary_signature": {
+            "codon_count": 24,
+            "genetic_plus": 20,
+            "genetic_zero": 35,
+            "genetic_minus": 17,
+            "spin_plus": 37,
+            "spin_minus": 35,
+            "recomputed_gc_content": 0.4861,
+            "recomputed_superposition_ratio": 0.4861,
+            "recomputed_spin_balance": 0.0278,
+            "recomputed_entropy_norm": 0.9984
+          }
+        }
+      ]
+    }
+  },
+  "verification_hooks": {
+    "smiles_tolerance_pct": 5.0,
+    "brain_fit_max_gap": 0.15
+  },
+  "protein_formulas": {
+    "present": true,
+    "path": "C:\\Users\\damia\\Desktop\\Genetics\\fsot_protein\\formulas\\fsot_protein_formulas.json",
+    "sha256": "5D8C270DB32B54AD44B73474557E1B38F54C9E5C370109A08DD1148632E60002",
+    "formula_count": 15,
+    "amino_acid_count": 20,
+    "distinct_trinary_patterns": 10,
+    "trinary_pattern_space": 27,
+    "rows": [
+      {
+        "letter": "A",
+        "name": "Alanine",
+        "charge": 0,
+        "polarity": -1,
+        "volume": -1,
+        "pattern": "0,-1,-1"
+      },
+      {
+        "letter": "C",
+        "name": "Cysteine",
+        "charge": 0,
+        "polarity": 0,
+        "volume": -1,
+        "pattern": "0,0,-1"
+      },
+      {
+        "letter": "D",
+        "name": "Aspartic Acid",
+        "charge": -1,
+        "polarity": 1,
+        "volume": 0,
+        "pattern": "-1,1,0"
+      },
+      {
+        "letter": "E",
+        "name": "Glutamic Acid",
+        "charge": -1,
+        "polarity": 1,
+        "volume": 1,
+        "pattern": "-1,1,1"
+      },
+      {
+        "letter": "F",
+        "name": "Phenylalanine",
+        "charge": 0,
+        "polarity": -1,
+        "volume": 1,
+        "pattern": "0,-1,1"
+      },
+      {
+        "letter": "G",
+        "name": "Glycine",
+        "charge": 0,
+        "polarity": -1,
+        "volume": -1,
+        "pattern": "0,-1,-1"
+      },
+      {
+        "letter": "H",
+        "name": "Histidine",
+        "charge": 1,
+        "polarity": 1,
+        "volume": 1,
+        "pattern": "1,1,1"
+      },
+      {
+        "letter": "I",
+        "name": "Isoleucine",
+        "charge": 0,
+        "polarity": -1,
+        "volume": 1,
+        "pattern": "0,-1,1"
+      },
+      {
+        "letter": "K",
+        "name": "Lysine",
+        "charge": 1,
+        "polarity": 1,
+        "volume": 1,
+        "pattern": "1,1,1"
+      },
+      {
+        "letter": "L",
+        "name": "Leucine",
+        "charge": 0,
+        "polarity": -1,
+        "volume": 1,
+        "pattern": "0,-1,1"
+      },
+      {
+        "letter": "M",
+        "name": "Methionine",
+        "charge": 0,
+        "polarity": -1,
+        "volume": 1,
+        "pattern": "0,-1,1"
+      },
+      {
+        "letter": "N",
+        "name": "Asparagine",
+        "charge": 0,
+        "polarity": 1,
+        "volume": 0,
+        "pattern": "0,1,0"
+      },
+      {
+        "letter": "P",
+        "name": "Proline",
+        "charge": 0,
+        "polarity": -1,
+        "volume": 0,
+        "pattern": "0,-1,0"
+      },
+      {
+        "letter": "Q",
+        "name": "Glutamine",
+        "charge": 0,
+        "polarity": 1,
+        "volume": 1,
+        "pattern": "0,1,1"
+      },
+      {
+        "letter": "R",
+        "name": "Arginine",
+        "charge": 1,
+        "polarity": 1,
+        "volume": 1,
+        "pattern": "1,1,1"
+      },
+      {
+        "letter": "S",
+        "name": "Serine",
+        "charge": 0,
+        "polarity": 1,
+        "volume": -1,
+        "pattern": "0,1,-1"
+      },
+      {
+        "letter": "T",
+        "name": "Threonine",
+        "charge": 0,
+        "polarity": 1,
+        "volume": 0,
+        "pattern": "0,1,0"
+      },
+      {
+        "letter": "V",
+        "name": "Valine",
+        "charge": 0,
+        "polarity": -1,
+        "volume": 0,
+        "pattern": "0,-1,0"
+      },
+      {
+        "letter": "W",
+        "name": "Tryptophan",
+        "charge": 0,
+        "polarity": -1,
+        "volume": 1,
+        "pattern": "0,-1,1"
+      },
+      {
+        "letter": "Y",
+        "name": "Tyrosine",
+        "charge": 0,
+        "polarity": 1,
+        "volume": 1,
+        "pattern": "0,1,1"
+      }
+    ],
+    "formula_ids": [
+      "F01_amino_acid_trinary_phase",
+      "F02_aa_chemical_scalar_table",
+      "F03_disulfide_bridge",
+      "F04_hydrophobic_interaction",
+      "F05_electrostatic_interaction",
+      "F06_dipole_interaction",
+      "F07_backbone_proximity",
+      "F08_chemistry_envelope",
+      "F09_chemistry_amplitude",
+      "F10_helix_periodicity_bonus",
+      "F11_sheet_pair_bonus",
+      "F12_region_detection_gate",
+      "F13_region_pair_contact",
+      "F14_long_range_gate",
+      "F15_distogram_assembly"
+    ]
+  }
+}

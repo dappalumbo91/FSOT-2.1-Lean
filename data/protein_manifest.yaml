@@ -1,0 +1,18 @@
+# FSOT Genetics protein formulas for Lean-aligned verification.
+version: "1.0"
+updated: "2026-06-20"
+genetics_root: "C:/Users/damia/Desktop/Genetics"
+
+artifacts:
+  formulas_json:
+    path: "fsot_protein/formulas/fsot_protein_formulas.json"
+  derivations_md:
+    path: "fsot_protein/formulas/FSOT_PROTEIN_DERIVATIONS.md"
+  trinary_source:
+    path: "fsot_protein/src/secondary.rs"
+    function: "trinary_phase"
+
+verification:
+  amino_acid_count: 20
+  trinary_pattern_space: 27
+  coordinate_tolerance: 0

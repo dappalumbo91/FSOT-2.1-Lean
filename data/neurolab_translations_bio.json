@@ -1,0 +1,397 @@
+{
+  "source": "C:\\Users\\damia\\Desktop\\FSOT NeuroLab\\DataAnalysisExpert\\scripts\\fsot_translations.jl",
+  "domains": {
+    "NEUROSCIENCE": [
+      {
+        "name": "Action/resting potential",
+        "expr": "1e^-4+7\u03b3^3+1\u03b3^5",
+        "fsot_value": 1.428599541247517,
+        "observed": 1.4286,
+        "error_pct": 3.211203157723188e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v5 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "Synaptic delay/refractory",
+        "expr": "1/4",
+        "fsot_value": 0.25,
+        "observed": 0.25,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "0.5ms/2.0ms exact"
+      },
+      {
+        "name": "Brain/body mass ratio",
+        "expr": "8\u03c0^-7+7e^-6",
+        "fsot_value": 0.02000001467808505,
+        "observed": 0.02,
+        "error_pct": 7.339042524742712e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v5 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "Neuron/glia count ratio",
+        "expr": "(7/10)\u03c0^-5\u00b7e^3\u00b7\u03c6^3\u00b7\u03b3^-3",
+        "fsot_value": 1.0120004757137226,
+        "observed": 1.012,
+        "error_pct": 4.700728484548699e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v5 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "Gyrification index",
+        "expr": "6\u03b3^1-3e^-3-2\u03c6^-2",
+        "fsot_value": 2.5500007618053955,
+        "observed": 2.55,
+        "error_pct": 2.987472139822928e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v5 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "EEG alpha/delta freq",
+        "expr": "5\u03c0^0",
+        "fsot_value": 5.0,
+        "observed": 5.0,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "v4 \u2192 EXACT"
+      },
+      {
+        "name": "Max/min firing rate",
+        "expr": "10\u03c6^3-10\u03c6^-3",
+        "fsot_value": 40.0,
+        "observed": 40.0,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "v4 \u2192 EXACT"
+      },
+      {
+        "name": "Hemispheric symmetry",
+        "expr": "1",
+        "fsot_value": 1.0,
+        "observed": 1.0,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "Exact bilateral symmetry"
+      },
+      {
+        "name": "Vesicle/soma diameter",
+        "expr": "(151/18)\u03c0^-5\u00b7e^-2\u00b7\u03c6^1\u00b7\u03b3^2",
+        "fsot_value": 0.001999999894380532,
+        "observed": 0.002,
+        "error_pct": 5.280973401633471e-06,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v6 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "Sleep/wake ratio",
+        "expr": "1/2",
+        "fsot_value": 0.5,
+        "observed": 0.5,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "8h/16h exact"
+      }
+    ],
+    "BIOPHYSICS": [
+      {
+        "name": "Phyllotaxis angle",
+        "expr": "6\u03c0^-2+7\u03b3^3+8\u03c6^-6",
+        "fsot_value": 2.3999604396090484,
+        "observed": 2.39996,
+        "error_pct": 1.8317348967274563e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v5 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "Phyllotaxis angle (deg)",
+        "expr": "2\u03b3^-1-3\u03c6^-2+5\u03b3^-6",
+        "fsot_value": 137.50801017494203,
+        "observed": 137.508,
+        "error_pct": 7.399527314485626e-06,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v5 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "DNA pitch/diameter ratio",
+        "expr": "(5\u03c6^-2+4\u03b3^-1)/(1\u03b3^-3)",
+        "fsot_value": 1.7000016495393266,
+        "observed": 1.7,
+        "error_pct": 9.703172509922808e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v4 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "DNA bases per turn",
+        "expr": "(21/2)\u03c0^0",
+        "fsot_value": 10.5,
+        "observed": 10.5,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "v5 \u2192 EXACT"
+      },
+      {
+        "name": "Kleiber's law exponent",
+        "expr": "(2\u03c0^1-3e^-3)/(2\u03c6^3)",
+        "fsot_value": 0.7239997250582718,
+        "observed": 0.724,
+        "error_pct": 3.797537681798698e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v4 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "Blood pH",
+        "expr": "(4\u03c0^2-1\u03c0^0)/(1\u03b3^-3)",
+        "fsot_value": 7.399996768043367,
+        "observed": 7.4,
+        "error_pct": 4.367508963496589e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v4 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "Hill coefficient (Hb)",
+        "expr": "5\u03c6^-2-8\u03c0^-2+1\u03c0^-6",
+        "fsot_value": 1.1003007485851193,
+        "observed": 1.1003,
+        "error_pct": 6.803463775567651e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v5 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "Chromosome arm ratio",
+        "expr": "2",
+        "fsot_value": 2.0,
+        "observed": 2.0,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "46 chromo/ 23 pairs"
+      },
+      {
+        "name": "Nernst slope (dim-less)",
+        "expr": "7e^2\u00b7\u03b3^4\u00b7\u03b3^5",
+        "fsot_value": 0.3679001652209538,
+        "observed": 0.3679,
+        "error_pct": 4.49092019046538e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v4 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "Goldman eqn. ratio",
+        "expr": "1e^-1+2\u03c6^-3-2\u03b3^4",
+        "fsot_value": 0.6180003383453777,
+        "observed": 0.618,
+        "error_pct": 5.474844299596175e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v5 \u2192 NEAR-EXACT"
+      },
+      {
+        "name": "Heart rate scaling exp.",
+        "expr": "\u22121/4",
+        "fsot_value": -0.25,
+        "observed": -0.25,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "Exact quarter-power"
+      },
+      {
+        "name": "Metabolic rate exponent",
+        "expr": "3/4",
+        "fsot_value": 0.75,
+        "observed": 0.75,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "Exact Kleiber"
+      },
+      {
+        "name": "Respiratory quotient RQ",
+        "expr": "9e^-7+16e^-3",
+        "fsot_value": 0.8048000315758139,
+        "observed": 0.8048,
+        "error_pct": 3.923436128667198e-06,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "v5 \u2192 NEAR-EXACT"
+      }
+    ],
+    "GENOMIC_SCIENCES": [
+      {
+        "name": "Codon table size",
+        "expr": "4\u00b3",
+        "fsot_value": 64.0,
+        "observed": 64.0,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "4 bases \u00d7 3 positions = 64 codons EXACT"
+      },
+      {
+        "name": "Trinary pattern count",
+        "expr": "3\u00b3",
+        "fsot_value": 27.0,
+        "observed": 27.0,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "3 trinary states \u00d7 3 positions = 27 patterns EXACT"
+      },
+      {
+        "name": "Stop codons / total",
+        "expr": "3/4\u00b3",
+        "fsot_value": 0.046875,
+        "observed": 0.046875,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "3/64 = 0.046875 EXACT"
+      },
+      {
+        "name": "Amino acids canonical",
+        "expr": "4\u03c6\u00b3+8\u03c6\u207b\u00b2",
+        "fsot_value": 20.0,
+        "observed": 20.0,
+        "error_pct": 0.0,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "Golden ratio identity: 4(2\u03c6+1)+8(2-\u03c6)=20 EXACT"
+      },
+      {
+        "name": "Autosome count (haploid)",
+        "expr": "2(\u03c6\u2075-\u03c6\u207b\u2075) = 2L\u2085",
+        "fsot_value": 22.000000000000004,
+        "observed": 22.0,
+        "error_pct": 1.6148698540002278e-14,
+        "tier": "EXACT",
+        "matched": true,
+        "note": "2\u00d7 Lucas number L\u2085=11; \u03c6\u2075-\u03c6\u207b\u2075=L\u2085 EXACT"
+      },
+      {
+        "name": "GC content (human genome)",
+        "expr": "(8\u03c0-7)/(6e\u00b2)",
+        "fsot_value": 0.40899994500746695,
+        "observed": 0.409,
+        "error_pct": 1.3445607097144362e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "Ensembl GRCh38: 40.9% GC; trinary mirror: \u00bd(1-\u03b3/\u03c0)=0.408 \u2192 deviation=mutation AT-bias"
+      },
+      {
+        "name": "AT content (spin-collapsed)",
+        "expr": "(2\u03c0\u207b\u00b2+5\u03b3\u207b\u00b3)/(6e\u00b2)",
+        "fsot_value": 0.5909998107402131,
+        "observed": 0.591,
+        "error_pct": 3.202365259601984e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "1-GC = collapsed trinary fraction; trinary mirror: \u00bd(1+\u03b3/\u03c0)=0.592"
+      },
+      {
+        "name": "Repeat element coverage",
+        "expr": "(9\u03b3\u207b\u00b9-6\u03c6\u207b\u00b2)/(4e\u00b2)",
+        "fsot_value": 0.4499998438849957,
+        "observed": 0.45,
+        "error_pct": 3.4692223180618794e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "RepeatMasker: ~45% of genome is repeat elements"
+      },
+      {
+        "name": "MT coding fraction",
+        "expr": "(6e\u207b\u2075+3\u03c6\u00b3)/(2\u03c6\u2074)",
+        "fsot_value": 0.9300001427808834,
+        "observed": 0.93,
+        "error_pct": 1.5352783154703707e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "NCBI NC_012920: 93% coding (densest human genome region)"
+      },
+      {
+        "name": "TGA stop codon frequency",
+        "expr": "(\u03c6\u2075-4e\u207b\u00b3)/(8\u03c6\u00b2)",
+        "fsot_value": 0.5200000132293191,
+        "observed": 0.52,
+        "error_pct": 2.544099823971362e-06,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "RefSeq: TGA=52% of human stop codons (most common)"
+      },
+      {
+        "name": "GC bias chr19 (highest)",
+        "expr": "(4+3\u03c0\u2074)/(2\u03c0\u2075)",
+        "fsot_value": 0.48400035656179274,
+        "observed": 0.484,
+        "error_pct": 7.366979189217239e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "Ensembl: chr19 GC=48.4% (highest GC autosome)"
+      },
+      {
+        "name": "Ti/Tv ratio (human)",
+        "expr": "(8\u03c0\u207b\u00b2+8\u03c6\u207b\u2075)/(5\u03c6\u207b\u2074)",
+        "fsot_value": 2.0999995404409404,
+        "observed": 2.1,
+        "error_pct": 2.1883764747411217e-05,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "1000 Genomes: transition/transversion \u2248 2.1"
+      },
+      {
+        "name": "CpG mutation rate factor",
+        "expr": "(5e\u00b3-3\u03b3)/(\u03c0\u00b2)",
+        "fsot_value": 9.999999352592098,
+        "observed": 10.0,
+        "error_pct": 6.474079015106326e-06,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "CpG sites mutate 10\u00d7 faster; methylation-driven"
+      },
+      {
+        "name": "Exonic fraction of genome",
+        "expr": "\u03b3/(e\u00b2+\u03c0\u00b3)",
+        "fsot_value": 0.015033485143115399,
+        "observed": 0.015,
+        "error_pct": 0.22323428743599671,
+        "tier": "APPROX",
+        "matched": true,
+        "note": "ENCODE: ~1.5% exonic; \u03b3/(growth\u00b2+curvature\u00b3); \u03bc\u22482.2e-3 ppm"
+      },
+      {
+        "name": "Codon-to-AA degeneracy",
+        "expr": "\u03c0+\u03b3/\u03c0\u00b2",
+        "fsot_value": 3.2000768279745153,
+        "observed": 3.2,
+        "error_pct": 0.0024008742035980246,
+        "tier": "NEAR-EXACT",
+        "matched": true,
+        "note": "64/20=3.2 codons per amino acid; \u03c0+\u03b3/\u03c0\u00b2 \u2192 \u03bc=24 ppm mutation drift"
+      }
+    ]
+  },
+  "counts": {
+    "NEUROSCIENCE": 10,
+    "BIOPHYSICS": 13,
+    "GENOMIC_SCIENCES": 15
+  },
+  "total": 38
+}
