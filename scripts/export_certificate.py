@@ -43,6 +43,9 @@ LEAN_TARGETS = [
     "FSOT.Formal.CodonPriors",
     "FSOT.Formal.ProteinPriors",
     "FSOT.Formal.ProteinFormulas",
+    "FSOT.Formal.CosmologyLab",
+    "FSOT.Formal.FuelPriors",
+    "FSOT.Formal.SpeciesPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

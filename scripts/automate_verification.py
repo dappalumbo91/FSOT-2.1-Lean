@@ -38,6 +38,15 @@ STAGES: dict[str, tuple[str, list[str]]] = {
     "verify_bio": ("Verify NeuroLab biological data", ["verify_neurolab_bio.py"]),
     "verify_codon": ("Verify 64-codon trinary map", ["verify_codon_map.py"]),
     "verify_protein": ("Verify protein amino-acid trinary phases", ["verify_protein_formulas.py"]),
+    "cosmology_ingest": ("Ingest Cosmology Lab ΛCDM observables", ["ingest_cosmology_lab.py"]),
+    "cosmology_priors_lean": ("Generate CosmologyLab.lean", ["gen_cosmology_lab_lean.py"]),
+    "fuel_ingest": ("Ingest Fuel Lab compound profiles", ["ingest_fuel_lab.py"]),
+    "fuel_priors_lean": ("Generate FuelPriors.lean", ["gen_fuel_priors_lean.py"]),
+    "species_ingest": ("Ingest Machine & Molecule species catalog", ["ingest_species_catalog.py"]),
+    "species_priors_lean": ("Generate SpeciesPriors.lean", ["gen_species_priors_lean.py"]),
+    "verify_cosmology": ("Verify Cosmology Lab ΛCDM observables", ["verify_cosmology_lab.py"]),
+    "verify_fuel": ("Verify Fuel Lab compound lookups", ["verify_fuel_lab.py"]),
+    "verify_species": ("Verify species catalog tolerances", ["verify_species_catalog.py"]),
     "runner": ("Full hash gate + Lean build + certificate", ["fsot_verification_runner.py"]),
 }
 
@@ -74,7 +83,10 @@ def main() -> int:
         extra = ["--skip-lean"] if name == "runner" and args.skip_lean else None
         if run_stage(name, extra) != 0:
             failures += 1
-            if name in ("verify_lab", "verify_bio", "verify_codon", "verify_protein", "runner"):
+            if name in (
+                "verify_lab", "verify_bio", "verify_codon", "verify_protein",
+                "verify_cosmology", "verify_fuel", "verify_species", "runner",
+            ):
                 break
 
     print(f"\n=== Automation summary: {len(selected) - failures}/{len(selected)} stages OK ===")

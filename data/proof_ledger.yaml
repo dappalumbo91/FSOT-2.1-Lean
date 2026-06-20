@@ -628,6 +628,46 @@ entries:
       F01 trinary in ProteinPriors; F02–F15 catalog ingested; F16–F18 proposed.
       Closed-form certificates for disulfide (φ⁶ ∈ (17,18)) and dipole damping denominator.
 
+  - id: cosmology_lambda_cdm_observables
+    domain: cosmological
+    claim: "19 ΛCDM observables (Wave-1/2/3 scales) within 2% of measured targets"
+    status: numerically_verified
+    source_lab: "FSOT Cosmology Lab"
+    source_file: fsot_compute.py
+    verification: scripts/verify_cosmology_lab.py
+    lean:
+      module: FSOT.Formal.CosmologyLab
+      theorem: cosmology_lambda_cdm_bundle
+    physics_note: |
+      Wave-1 (5) links to FSOT.Formal.Cosmology interval certificates; Wave-2 (10) and
+      Wave-3 cosmology scales (4) numerically verified via Cosmology Lab engine.
+
+  - id: fuel_lab_compound_profiles
+    domain: chemical
+    claim: "6 fuel profiles with 34 resolved PubChem compound lookups"
+    status: numerically_verified
+    source_lab: "Fuel Lab"
+    source_file: fuel_profile_compound_lookup_batch*.json
+    verification: scripts/verify_fuel_lab.py
+    lean:
+      module: FSOT.Formal.FuelPriors
+      theorem: fuel_lab_compound_bundle
+    physics_note: |
+      Biofuel blend compositions and precursor economics; chemical domain sign bundle.
+
+  - id: species_catalog_machine_molecule
+    domain: material
+    claim: "141 species (metals/molecules/polymers), 684 FSOT formula properties within 5%"
+    status: numerically_verified
+    source_lab: "FSOT Machine & Molecule"
+    source_file: fsot_species_catalog.json
+    verification: scripts/verify_species_catalog.py
+    lean:
+      module: FSOT.Formal.SpeciesPriors
+      theorem: species_catalog_bundle
+    physics_note: |
+      Material and molecular domain sign certificates; max catalog error ~1% at ingest.
+
   - id: neurolab_ledger_alignment
     domain: "*"
     claim: "17 NeuroLab domains aligned to Lean ledger params (δψ, hits, D_eff, observed)"

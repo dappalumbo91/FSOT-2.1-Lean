@@ -1,0 +1,14 @@
+# FSOT Machine & Molecule species catalog.
+version: "1.0"
+updated: "2026-06-20"
+machine_molecule_root: "C:/Users/damia/Desktop/FSOT_Machine_And_Molecule"
+
+artifacts:
+  catalog_json:
+    path: "fsot_species_catalog.json"
+
+verification:
+  categories: ["metals", "molecules", "polymers"]
+  species_count_min: 140
+  property_count_min: 680
+  max_error_pct: 5.0

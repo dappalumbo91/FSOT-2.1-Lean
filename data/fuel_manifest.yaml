@@ -1,0 +1,11 @@
+# FSOT Fuel Lab compound lookup profiles.
+version: "1.0"
+updated: "2026-06-20"
+fuel_root: "C:/Users/damia/Desktop/Fuel Lab"
+
+verification:
+  profile_count_min: 6
+  composition_fraction_tolerance: 0.05
+  resolved_entry_requires:
+    - molecular_formula
+    - inchi_key

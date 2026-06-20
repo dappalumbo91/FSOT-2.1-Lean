@@ -31,12 +31,15 @@ It was developed in close collaboration with the Python reference implementation
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
-- **35 proved claims**, 0 active `sorry`, `lean_build_ok: true`
+- **38 proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
 - 64-codon dual-axis map (`FSOT.Formal.CodonPriors`) — 8 primary + 27 secondary patterns
 - Protein amino-acid trinary (`FSOT.Formal.ProteinPriors`) — 20 AAs, 10 distinct patterns ⊆ 27
 - Protein formula closed forms (`FSOT.Formal.ProteinFormulas`) — 15 catalog + 3 proposed, φ⁶ disulfide certified
+- ΛCDM cosmology observables (`FSOT.Formal.CosmologyLab`) — 19 observables within 2%
+- Fuel Lab compound profiles (`FSOT.Formal.FuelPriors`) — 6 profiles, 34 resolved PubChem lookups
+- Machine & Molecule catalog (`FSOT.Formal.SpeciesPriors`) — 141 species, 684 FSOT properties within 5%
 - Certificate: `data/certificate.json` | Run log: `data/verification_runs.jsonl`
 
 See `REPRODUCE.md` and `docs/genomic_brain_priors_verification.md` for details.
@@ -48,7 +51,7 @@ pip install -r requirements.txt
 python scripts/fsot_verification_runner.py
 
 # Or Lean-only build
-lake build FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.Lab
+lake build FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.Lab
 ```
 
 ## Alignment with Reference Files

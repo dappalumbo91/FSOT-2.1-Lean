@@ -137,6 +137,9 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.CodonPriors",
                 "FSOT.Formal.ProteinPriors",
                 "FSOT.Formal.ProteinFormulas",
+                "FSOT.Formal.CosmologyLab",
+                "FSOT.Formal.FuelPriors",
+                "FSOT.Formal.SpeciesPriors",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -351,6 +354,55 @@ def main() -> int:
             print(proc4.stdout.strip())
             if proc4.returncode != 0:
                 issues.append("protein formula verification failed")
+
+        tier2_ingests = [
+            ("ingest_cosmology_lab.py", "gen_cosmology_lab_lean.py", "CosmologyLab.lean generation failed", "cosmology lab ingest failed"),
+            ("ingest_fuel_lab.py", "gen_fuel_priors_lean.py", "FuelPriors.lean generation failed", "fuel lab ingest failed"),
+            ("ingest_species_catalog.py", "gen_species_priors_lean.py", "SpeciesPriors.lean generation failed", "species catalog ingest failed"),
+        ]
+        for ingest_name, gen_name, gen_fail, ingest_fail in tier2_ingests:
+            ingest_script = ROOT / "scripts" / ingest_name
+            gen_script = ROOT / "scripts" / gen_name
+            if ingest_script.exists() and proc.returncode == 0:
+                proc_ing = subprocess.run(
+                    [sys.executable, str(ingest_script)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_ing.stdout.strip() or proc_ing.stderr.strip())
+                if proc_ing.returncode != 0:
+                    issues.append(ingest_fail)
+                elif gen_script.exists():
+                    proc_gen = subprocess.run(
+                        [sys.executable, str(gen_script)],
+                        cwd=ROOT,
+                        capture_output=True,
+                        text=True,
+                        check=False,
+                    )
+                    print(proc_gen.stdout.strip() or proc_gen.stderr.strip())
+                    if proc_gen.returncode != 0:
+                        issues.append(gen_fail)
+        for verify_name, fail_msg in (
+            ("verify_cosmology_lab.py", "Cosmology Lab ΛCDM verification failed"),
+            ("verify_fuel_lab.py", "Fuel Lab verification failed"),
+            ("verify_species_catalog.py", "species catalog verification failed"),
+        ):
+            verify_script = ROOT / "scripts" / verify_name
+            if verify_script.exists():
+                proc_v = subprocess.run(
+                    [sys.executable, str(verify_script)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_v.stdout.strip())
+                if proc_v.returncode != 0:
+                    issues.append(fail_msg)
+
         parse_bio = ROOT / "scripts" / "parse_neurolab_translations.py"
         verify_bio = ROOT / "scripts" / "verify_neurolab_bio.py"
         if parse_bio.exists():
