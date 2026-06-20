@@ -599,6 +599,35 @@ entries:
       FSOT.Formal.Genomic.amino_acids_canonical_eq_twenty. Registry key protein_formulas
       in data/lab_registry.json; auto-generated FSOT.Formal.ProteinPriors.
 
+  - id: codon_trinary_map
+    domain: biological
+    claim: "64 codons encode dual-axis trinary phases: primary 8-pattern spin axis, secondary 27-pattern genetic axis"
+    status: proved
+    source_lab: "FSOT Genetics"
+    source_file: 64_codon_trinary_map.txt
+    verification: scripts/verify_codon_map.py
+    lean:
+      module: FSOT.Formal.CodonPriors
+      theorem: codon_trinary_map_bundle
+    physics_note: |
+      Matches Genetics/codon_core and FSOT_Trinary_Codon_Project/build_64_codon_map.py.
+      primary ≡ genomic_trinary.SPIN_MAP; secondary ≡ genomic_trinary.GENETIC_MAP.
+      Registry key codon_trinary_map in data/lab_registry.json.
+
+  - id: protein_formula_closed_forms
+    domain: biological
+    claim: "15 catalog formulas + 3 proposed; F03 φ⁶ disulfide and F06 γ·π·e² dipole damping certified"
+    status: proved
+    source_lab: "FSOT Genetics"
+    source_file: fsot_protein/formulas/fsot_protein_formulas.json
+    verification: scripts/verify_protein_formulas.py
+    lean:
+      module: FSOT.Formal.ProteinFormulas
+      theorem: protein_formula_closed_form_bundle
+    physics_note: |
+      F01 trinary in ProteinPriors; F02–F15 catalog ingested; F16–F18 proposed.
+      Closed-form certificates for disulfide (φ⁶ ∈ (17,18)) and dipole damping denominator.
+
   - id: neurolab_ledger_alignment
     domain: "*"
     claim: "17 NeuroLab domains aligned to Lean ledger params (δψ, hits, D_eff, observed)"

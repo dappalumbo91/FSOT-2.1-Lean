@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0",
-  "generated_at": "2026-06-20T01:16:35.608110+00:00",
+  "generated_at": "2026-06-20T01:25:00.999898+00:00",
   "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
   "smiles_lab": {
     "source_path": "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\FSOT_SMILES_Lab_Dataset.json",
@@ -1136,11 +1136,1188 @@
     "smiles_tolerance_pct": 5.0,
     "brain_fit_max_gap": 0.15
   },
+  "codon_trinary_map": {
+    "present": true,
+    "map_path": "C:\\Users\\damia\\Desktop\\Genetics\\64_codon_trinary_map.txt",
+    "map_sha256": "D4267FA8909F85E82A29D80D48A11E31018FF2A144682412F822A5AFFB493DED",
+    "codon_core_path": "C:\\Users\\damia\\Desktop\\Genetics\\codon_core\\src\\lib.rs",
+    "codon_core_sha256": "36A4148E9891912BCD932D359894EFCC90916FF1D59270AC1B9B6A5F1F4507B6",
+    "build_script_path": "C:\\Users\\damia\\Desktop\\FSOT_Trinary_Codon_Project\\build_64_codon_map.py",
+    "build_script_sha256": "C360F75C9036474769ED5ACC44ECF9821C4A9D288309188CC787AA191EDCD8A1",
+    "file_map_rows": 64,
+    "codon_count": 64,
+    "distinct_primary_patterns": 8,
+    "distinct_secondary_patterns": 27,
+    "primary_pattern_space": 8,
+    "secondary_pattern_space": 27,
+    "stop_codon_count": 3,
+    "stop_codons": [
+      "TAA",
+      "TAG",
+      "TGA"
+    ],
+    "start_codon": "ATG",
+    "rows": [
+      {
+        "codon": "AAA",
+        "primary": [
+          1,
+          1,
+          1
+        ],
+        "secondary": [
+          1,
+          1,
+          1
+        ],
+        "primary_key": "1,1,1",
+        "secondary_key": "1,1,1",
+        "amino_acid": "K",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "AAC",
+        "primary": [
+          1,
+          1,
+          -1
+        ],
+        "secondary": [
+          1,
+          1,
+          0
+        ],
+        "primary_key": "1,1,-1",
+        "secondary_key": "1,1,0",
+        "amino_acid": "N",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "AAG",
+        "primary": [
+          1,
+          1,
+          1
+        ],
+        "secondary": [
+          1,
+          1,
+          0
+        ],
+        "primary_key": "1,1,1",
+        "secondary_key": "1,1,0",
+        "amino_acid": "K",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "AAT",
+        "primary": [
+          1,
+          1,
+          -1
+        ],
+        "secondary": [
+          1,
+          1,
+          -1
+        ],
+        "primary_key": "1,1,-1",
+        "secondary_key": "1,1,-1",
+        "amino_acid": "N",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "ACA",
+        "primary": [
+          1,
+          -1,
+          1
+        ],
+        "secondary": [
+          1,
+          0,
+          1
+        ],
+        "primary_key": "1,-1,1",
+        "secondary_key": "1,0,1",
+        "amino_acid": "T",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "ACC",
+        "primary": [
+          1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          1,
+          0,
+          0
+        ],
+        "primary_key": "1,-1,-1",
+        "secondary_key": "1,0,0",
+        "amino_acid": "T",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "ACG",
+        "primary": [
+          1,
+          -1,
+          1
+        ],
+        "secondary": [
+          1,
+          0,
+          0
+        ],
+        "primary_key": "1,-1,1",
+        "secondary_key": "1,0,0",
+        "amino_acid": "T",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "ACT",
+        "primary": [
+          1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          1,
+          0,
+          -1
+        ],
+        "primary_key": "1,-1,-1",
+        "secondary_key": "1,0,-1",
+        "amino_acid": "T",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "AGA",
+        "primary": [
+          1,
+          1,
+          1
+        ],
+        "secondary": [
+          1,
+          0,
+          1
+        ],
+        "primary_key": "1,1,1",
+        "secondary_key": "1,0,1",
+        "amino_acid": "R",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "AGC",
+        "primary": [
+          1,
+          1,
+          -1
+        ],
+        "secondary": [
+          1,
+          0,
+          0
+        ],
+        "primary_key": "1,1,-1",
+        "secondary_key": "1,0,0",
+        "amino_acid": "S",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "AGG",
+        "primary": [
+          1,
+          1,
+          1
+        ],
+        "secondary": [
+          1,
+          0,
+          0
+        ],
+        "primary_key": "1,1,1",
+        "secondary_key": "1,0,0",
+        "amino_acid": "R",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "AGT",
+        "primary": [
+          1,
+          1,
+          -1
+        ],
+        "secondary": [
+          1,
+          0,
+          -1
+        ],
+        "primary_key": "1,1,-1",
+        "secondary_key": "1,0,-1",
+        "amino_acid": "S",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "ATA",
+        "primary": [
+          1,
+          -1,
+          1
+        ],
+        "secondary": [
+          1,
+          -1,
+          1
+        ],
+        "primary_key": "1,-1,1",
+        "secondary_key": "1,-1,1",
+        "amino_acid": "I",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "ATC",
+        "primary": [
+          1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          1,
+          -1,
+          0
+        ],
+        "primary_key": "1,-1,-1",
+        "secondary_key": "1,-1,0",
+        "amino_acid": "I",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "ATG",
+        "primary": [
+          1,
+          -1,
+          1
+        ],
+        "secondary": [
+          1,
+          -1,
+          0
+        ],
+        "primary_key": "1,-1,1",
+        "secondary_key": "1,-1,0",
+        "amino_acid": "M",
+        "is_start": true,
+        "is_stop": false
+      },
+      {
+        "codon": "ATT",
+        "primary": [
+          1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          1,
+          -1,
+          -1
+        ],
+        "primary_key": "1,-1,-1",
+        "secondary_key": "1,-1,-1",
+        "amino_acid": "I",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CAA",
+        "primary": [
+          -1,
+          1,
+          1
+        ],
+        "secondary": [
+          0,
+          1,
+          1
+        ],
+        "primary_key": "-1,1,1",
+        "secondary_key": "0,1,1",
+        "amino_acid": "Q",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CAC",
+        "primary": [
+          -1,
+          1,
+          -1
+        ],
+        "secondary": [
+          0,
+          1,
+          0
+        ],
+        "primary_key": "-1,1,-1",
+        "secondary_key": "0,1,0",
+        "amino_acid": "H",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CAG",
+        "primary": [
+          -1,
+          1,
+          1
+        ],
+        "secondary": [
+          0,
+          1,
+          0
+        ],
+        "primary_key": "-1,1,1",
+        "secondary_key": "0,1,0",
+        "amino_acid": "Q",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CAT",
+        "primary": [
+          -1,
+          1,
+          -1
+        ],
+        "secondary": [
+          0,
+          1,
+          -1
+        ],
+        "primary_key": "-1,1,-1",
+        "secondary_key": "0,1,-1",
+        "amino_acid": "H",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CCA",
+        "primary": [
+          -1,
+          -1,
+          1
+        ],
+        "secondary": [
+          0,
+          0,
+          1
+        ],
+        "primary_key": "-1,-1,1",
+        "secondary_key": "0,0,1",
+        "amino_acid": "P",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CCC",
+        "primary": [
+          -1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          0,
+          0,
+          0
+        ],
+        "primary_key": "-1,-1,-1",
+        "secondary_key": "0,0,0",
+        "amino_acid": "P",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CCG",
+        "primary": [
+          -1,
+          -1,
+          1
+        ],
+        "secondary": [
+          0,
+          0,
+          0
+        ],
+        "primary_key": "-1,-1,1",
+        "secondary_key": "0,0,0",
+        "amino_acid": "P",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CCT",
+        "primary": [
+          -1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          0,
+          0,
+          -1
+        ],
+        "primary_key": "-1,-1,-1",
+        "secondary_key": "0,0,-1",
+        "amino_acid": "P",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CGA",
+        "primary": [
+          -1,
+          1,
+          1
+        ],
+        "secondary": [
+          0,
+          0,
+          1
+        ],
+        "primary_key": "-1,1,1",
+        "secondary_key": "0,0,1",
+        "amino_acid": "R",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CGC",
+        "primary": [
+          -1,
+          1,
+          -1
+        ],
+        "secondary": [
+          0,
+          0,
+          0
+        ],
+        "primary_key": "-1,1,-1",
+        "secondary_key": "0,0,0",
+        "amino_acid": "R",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CGG",
+        "primary": [
+          -1,
+          1,
+          1
+        ],
+        "secondary": [
+          0,
+          0,
+          0
+        ],
+        "primary_key": "-1,1,1",
+        "secondary_key": "0,0,0",
+        "amino_acid": "R",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CGT",
+        "primary": [
+          -1,
+          1,
+          -1
+        ],
+        "secondary": [
+          0,
+          0,
+          -1
+        ],
+        "primary_key": "-1,1,-1",
+        "secondary_key": "0,0,-1",
+        "amino_acid": "R",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CTA",
+        "primary": [
+          -1,
+          -1,
+          1
+        ],
+        "secondary": [
+          0,
+          -1,
+          1
+        ],
+        "primary_key": "-1,-1,1",
+        "secondary_key": "0,-1,1",
+        "amino_acid": "L",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CTC",
+        "primary": [
+          -1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          0,
+          -1,
+          0
+        ],
+        "primary_key": "-1,-1,-1",
+        "secondary_key": "0,-1,0",
+        "amino_acid": "L",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CTG",
+        "primary": [
+          -1,
+          -1,
+          1
+        ],
+        "secondary": [
+          0,
+          -1,
+          0
+        ],
+        "primary_key": "-1,-1,1",
+        "secondary_key": "0,-1,0",
+        "amino_acid": "L",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "CTT",
+        "primary": [
+          -1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          0,
+          -1,
+          -1
+        ],
+        "primary_key": "-1,-1,-1",
+        "secondary_key": "0,-1,-1",
+        "amino_acid": "L",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GAA",
+        "primary": [
+          1,
+          1,
+          1
+        ],
+        "secondary": [
+          0,
+          1,
+          1
+        ],
+        "primary_key": "1,1,1",
+        "secondary_key": "0,1,1",
+        "amino_acid": "E",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GAC",
+        "primary": [
+          1,
+          1,
+          -1
+        ],
+        "secondary": [
+          0,
+          1,
+          0
+        ],
+        "primary_key": "1,1,-1",
+        "secondary_key": "0,1,0",
+        "amino_acid": "D",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GAG",
+        "primary": [
+          1,
+          1,
+          1
+        ],
+        "secondary": [
+          0,
+          1,
+          0
+        ],
+        "primary_key": "1,1,1",
+        "secondary_key": "0,1,0",
+        "amino_acid": "E",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GAT",
+        "primary": [
+          1,
+          1,
+          -1
+        ],
+        "secondary": [
+          0,
+          1,
+          -1
+        ],
+        "primary_key": "1,1,-1",
+        "secondary_key": "0,1,-1",
+        "amino_acid": "D",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GCA",
+        "primary": [
+          1,
+          -1,
+          1
+        ],
+        "secondary": [
+          0,
+          0,
+          1
+        ],
+        "primary_key": "1,-1,1",
+        "secondary_key": "0,0,1",
+        "amino_acid": "A",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GCC",
+        "primary": [
+          1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          0,
+          0,
+          0
+        ],
+        "primary_key": "1,-1,-1",
+        "secondary_key": "0,0,0",
+        "amino_acid": "A",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GCG",
+        "primary": [
+          1,
+          -1,
+          1
+        ],
+        "secondary": [
+          0,
+          0,
+          0
+        ],
+        "primary_key": "1,-1,1",
+        "secondary_key": "0,0,0",
+        "amino_acid": "A",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GCT",
+        "primary": [
+          1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          0,
+          0,
+          -1
+        ],
+        "primary_key": "1,-1,-1",
+        "secondary_key": "0,0,-1",
+        "amino_acid": "A",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GGA",
+        "primary": [
+          1,
+          1,
+          1
+        ],
+        "secondary": [
+          0,
+          0,
+          1
+        ],
+        "primary_key": "1,1,1",
+        "secondary_key": "0,0,1",
+        "amino_acid": "G",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GGC",
+        "primary": [
+          1,
+          1,
+          -1
+        ],
+        "secondary": [
+          0,
+          0,
+          0
+        ],
+        "primary_key": "1,1,-1",
+        "secondary_key": "0,0,0",
+        "amino_acid": "G",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GGG",
+        "primary": [
+          1,
+          1,
+          1
+        ],
+        "secondary": [
+          0,
+          0,
+          0
+        ],
+        "primary_key": "1,1,1",
+        "secondary_key": "0,0,0",
+        "amino_acid": "G",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GGT",
+        "primary": [
+          1,
+          1,
+          -1
+        ],
+        "secondary": [
+          0,
+          0,
+          -1
+        ],
+        "primary_key": "1,1,-1",
+        "secondary_key": "0,0,-1",
+        "amino_acid": "G",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GTA",
+        "primary": [
+          1,
+          -1,
+          1
+        ],
+        "secondary": [
+          0,
+          -1,
+          1
+        ],
+        "primary_key": "1,-1,1",
+        "secondary_key": "0,-1,1",
+        "amino_acid": "V",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GTC",
+        "primary": [
+          1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          0,
+          -1,
+          0
+        ],
+        "primary_key": "1,-1,-1",
+        "secondary_key": "0,-1,0",
+        "amino_acid": "V",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GTG",
+        "primary": [
+          1,
+          -1,
+          1
+        ],
+        "secondary": [
+          0,
+          -1,
+          0
+        ],
+        "primary_key": "1,-1,1",
+        "secondary_key": "0,-1,0",
+        "amino_acid": "V",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "GTT",
+        "primary": [
+          1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          0,
+          -1,
+          -1
+        ],
+        "primary_key": "1,-1,-1",
+        "secondary_key": "0,-1,-1",
+        "amino_acid": "V",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TAA",
+        "primary": [
+          -1,
+          1,
+          1
+        ],
+        "secondary": [
+          -1,
+          1,
+          1
+        ],
+        "primary_key": "-1,1,1",
+        "secondary_key": "-1,1,1",
+        "amino_acid": "*",
+        "is_start": false,
+        "is_stop": true
+      },
+      {
+        "codon": "TAC",
+        "primary": [
+          -1,
+          1,
+          -1
+        ],
+        "secondary": [
+          -1,
+          1,
+          0
+        ],
+        "primary_key": "-1,1,-1",
+        "secondary_key": "-1,1,0",
+        "amino_acid": "Y",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TAG",
+        "primary": [
+          -1,
+          1,
+          1
+        ],
+        "secondary": [
+          -1,
+          1,
+          0
+        ],
+        "primary_key": "-1,1,1",
+        "secondary_key": "-1,1,0",
+        "amino_acid": "*",
+        "is_start": false,
+        "is_stop": true
+      },
+      {
+        "codon": "TAT",
+        "primary": [
+          -1,
+          1,
+          -1
+        ],
+        "secondary": [
+          -1,
+          1,
+          -1
+        ],
+        "primary_key": "-1,1,-1",
+        "secondary_key": "-1,1,-1",
+        "amino_acid": "Y",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TCA",
+        "primary": [
+          -1,
+          -1,
+          1
+        ],
+        "secondary": [
+          -1,
+          0,
+          1
+        ],
+        "primary_key": "-1,-1,1",
+        "secondary_key": "-1,0,1",
+        "amino_acid": "S",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TCC",
+        "primary": [
+          -1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          -1,
+          0,
+          0
+        ],
+        "primary_key": "-1,-1,-1",
+        "secondary_key": "-1,0,0",
+        "amino_acid": "S",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TCG",
+        "primary": [
+          -1,
+          -1,
+          1
+        ],
+        "secondary": [
+          -1,
+          0,
+          0
+        ],
+        "primary_key": "-1,-1,1",
+        "secondary_key": "-1,0,0",
+        "amino_acid": "S",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TCT",
+        "primary": [
+          -1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          -1,
+          0,
+          -1
+        ],
+        "primary_key": "-1,-1,-1",
+        "secondary_key": "-1,0,-1",
+        "amino_acid": "S",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TGA",
+        "primary": [
+          -1,
+          1,
+          1
+        ],
+        "secondary": [
+          -1,
+          0,
+          1
+        ],
+        "primary_key": "-1,1,1",
+        "secondary_key": "-1,0,1",
+        "amino_acid": "*",
+        "is_start": false,
+        "is_stop": true
+      },
+      {
+        "codon": "TGC",
+        "primary": [
+          -1,
+          1,
+          -1
+        ],
+        "secondary": [
+          -1,
+          0,
+          0
+        ],
+        "primary_key": "-1,1,-1",
+        "secondary_key": "-1,0,0",
+        "amino_acid": "C",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TGG",
+        "primary": [
+          -1,
+          1,
+          1
+        ],
+        "secondary": [
+          -1,
+          0,
+          0
+        ],
+        "primary_key": "-1,1,1",
+        "secondary_key": "-1,0,0",
+        "amino_acid": "W",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TGT",
+        "primary": [
+          -1,
+          1,
+          -1
+        ],
+        "secondary": [
+          -1,
+          0,
+          -1
+        ],
+        "primary_key": "-1,1,-1",
+        "secondary_key": "-1,0,-1",
+        "amino_acid": "C",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TTA",
+        "primary": [
+          -1,
+          -1,
+          1
+        ],
+        "secondary": [
+          -1,
+          -1,
+          1
+        ],
+        "primary_key": "-1,-1,1",
+        "secondary_key": "-1,-1,1",
+        "amino_acid": "L",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TTC",
+        "primary": [
+          -1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          -1,
+          -1,
+          0
+        ],
+        "primary_key": "-1,-1,-1",
+        "secondary_key": "-1,-1,0",
+        "amino_acid": "F",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TTG",
+        "primary": [
+          -1,
+          -1,
+          1
+        ],
+        "secondary": [
+          -1,
+          -1,
+          0
+        ],
+        "primary_key": "-1,-1,1",
+        "secondary_key": "-1,-1,0",
+        "amino_acid": "L",
+        "is_start": false,
+        "is_stop": false
+      },
+      {
+        "codon": "TTT",
+        "primary": [
+          -1,
+          -1,
+          -1
+        ],
+        "secondary": [
+          -1,
+          -1,
+          -1
+        ],
+        "primary_key": "-1,-1,-1",
+        "secondary_key": "-1,-1,-1",
+        "amino_acid": "F",
+        "is_start": false,
+        "is_stop": false
+      }
+    ]
+  },
   "protein_formulas": {
     "present": true,
     "path": "C:\\Users\\damia\\Desktop\\Genetics\\fsot_protein\\formulas\\fsot_protein_formulas.json",
     "sha256": "5D8C270DB32B54AD44B73474557E1B38F54C9E5C370109A08DD1148632E60002",
     "formula_count": 15,
+    "proposed_formula_count": 3,
     "amino_acid_count": 20,
     "distinct_trinary_patterns": 10,
     "trinary_pattern_space": 27,
@@ -1322,6 +2499,107 @@
       "F13_region_pair_contact",
       "F14_long_range_gate",
       "F15_distogram_assembly"
-    ]
+    ],
+    "proposed_formula_ids": [
+      "F16_heptad_register",
+      "F17_strand_register",
+      "F18_disulfide_geometry_gate"
+    ],
+    "formulas": [
+      {
+        "id": "F01_amino_acid_trinary_phase",
+        "purpose": "Collapse each of 20 amino acids to a balanced-ternary signature [Charge, Polarity, Volume] in {-1, 0, +1}^3. This is the bedrock \u2014 every downstream layer reads from this table.",
+        "current_form": "lookup table in secondary::trinary_phase"
+      },
+      {
+        "id": "F02_aa_chemical_scalar_table",
+        "purpose": "Map each AA to four continuous FSOT scalars: hydrophobicity_fsot, volume_fsot, charge, dipole_moment.",
+        "current_form": "ChemicalPropensity::from_amino_acid (chemical.rs)"
+      },
+      {
+        "id": "F03_disulfide_bridge",
+        "purpose": "Strongest covalent interaction in the model \u2014 locks Cys-Cys pairs into closed loops, dominates crambin and many extracellular proteins.",
+        "current_form": "fsot_chemical_interaction returns PHI.powi(6) when both AAs are Cys."
+      },
+      {
+        "id": "F04_hydrophobic_interaction",
+        "purpose": "Burial term \u2014 two hydrophobic residues attract in aqueous environment (water entropy gain); hydrophobic + hydrophilic repels.",
+        "current_form": "h_term = ((h1 - phi)/phi) * ((h2 - phi)/phi)\nwhere h_i = hydrophobicity_fsot of residue i, phi acts as neutral threshold."
+      },
+      {
+        "id": "F05_electrostatic_interaction",
+        "purpose": "Coulomb-like: opposite charges attract, same charges repel.",
+        "current_form": "elec_term = -q1 * q2 * E\nwhere q_i in {-1, -0.5, 0, +0.5, +1}."
+      },
+      {
+        "id": "F06_dipole_interaction",
+        "purpose": "Weak attractive contribution from co-aligned polar moments.",
+        "current_form": "dip_term = sqrt(mu1 * mu2) / (gamma * pi * e * e)"
+      },
+      {
+        "id": "F07_backbone_proximity",
+        "purpose": "Flory random-walk baseline \u2014 residues close in sequence are close in 3D regardless of identity.",
+        "current_form": "backbone = 1 / sqrt(sep)\nwhere sep = |i - j|."
+      },
+      {
+        "id": "F08_chemistry_envelope",
+        "purpose": "Gate the chemistry term: short-range pairs are already covered by backbone, chemistry should peak at medium/long range where it adds information.",
+        "current_form": "env = s / (s + pi*e)\nwhere s = sep, pi*e ~= 8.54."
+      },
+      {
+        "id": "F09_chemistry_amplitude",
+        "purpose": "Set the absolute weight of the chemistry term relative to backbone, helix, sheet, region-pair layers.",
+        "current_form": "chem_amp = max(|S_molchem|, P_NEW) * P_NEW"
+      },
+      {
+        "id": "F10_helix_periodicity_bonus",
+        "purpose": "\u03b1-helix is a 3.6-residue-per-turn coil \u2014 residues at i, i+3, i+4, i+7 sit close in 3D. Boost predicted proximity for such pairs when both prefer \u03b1.",
+        "current_form": "if sep in {3, 4, 7}: bonus = (p_alpha_i * p_alpha_j)^1.5 / e\nelse 0"
+      },
+      {
+        "id": "F11_sheet_pair_bonus",
+        "purpose": "\u03b2-sheet pairs (parallel and antiparallel strands) bring residues from distant parts of the sequence into close 3D contact.",
+        "current_form": "if sep < 3: 0\nelse: bonus = (p_beta_i * p_beta_j) * 1 / (1 + ln(sep/pi).clamp(>=0)) / phi"
+      },
+      {
+        "id": "F12_region_detection_gate",
+        "purpose": "Collapse per-residue \u03b1/\u03b2/coil propensities into contiguous runs (\u22653 residues) \u2014 the FSOT trinary triadic-collapse mechanism. Only collapsed regions can engage in cross-region long-range coupling.",
+        "current_form": "for each residue: collapse to H/E/C using gate p_dominant > 1/e AND p_dominant > the other.\nA region = \u22653 consecutive residues of same kind."
+      },
+      {
+        "id": "F13_region_pair_contact",
+        "purpose": "Long-range bonus for residue pairs that belong to two DIFFERENT same-kind collapsed regions (helix-helix packing or strand-strand pairing). The FSOT trinary higher-order coupling.",
+        "current_form": "if both residues in regions of same kind, different regions, sep >= long_range_gate:\n  bonus = sqrt(p_i * p_j) * ln(sqrt(L_i * L_j)).max(0) * region_amp\nwhere p_i = p_alpha or p_beta depending on kind, L = region length, region_amp = max(|S_biochem|, P_NEW) * P_NEW * C_EFF."
+      },
+      {
+        "id": "F14_long_range_gate",
+        "purpose": "Threshold above which sequence separation counts as 'long range' for the region-pair layer.",
+        "current_form": "long_range_gate = ceil(ETA_EFF * 13) = ceil(0.46694 * 13) = ceil(6.07) = 7"
+      },
+      {
+        "id": "F15_distogram_assembly",
+        "purpose": "Final layered sum producing matrix[i][j] = predicted spatial proximity (larger = closer).",
+        "current_form": "matrix[i][j] = F07_backbone + F04_F05_F06_chemistry_F08_envelope_F09_amp + F10_helix + F11_sheet + F13_region_pair"
+      }
+    ],
+    "proposed_formulas": [
+      {
+        "id": "F16_heptad_register",
+        "purpose": "Helix-helix packing register \u2014 residues at positions 0,3 mod 7 face the partner helix in coiled-coils and bundles."
+      },
+      {
+        "id": "F17_strand_register",
+        "purpose": "\u03b2-strand pairing register \u2014 antiparallel vs parallel, with specific residue-to-residue correspondence."
+      },
+      {
+        "id": "F18_disulfide_geometry_gate",
+        "purpose": "Suppress disulfide for sequence separations that are sterically impossible (sep < 4) or entropically penalized (sep > 50)."
+      }
+    ],
+    "closed_forms": {
+      "disulfide_bridge_phi6": true,
+      "dipole_damping_gamma_pi_e2": true,
+      "electrostatic_scale_e": true
+    }
   }
 }

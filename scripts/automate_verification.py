@@ -29,10 +29,14 @@ STAGES: dict[str, tuple[str, list[str]]] = {
     "genomic": ("Validate genomic exact identities + sync Lean brackets", ["gen_genomic_bounds.py", "--write-lean"]),
     "ingest": ("Ingest SMILES + NeuroLab registry", ["ingest_lab_data.py"]),
     "brain_priors_lean": ("Generate BrainPriors.lean from registry", ["gen_brain_priors_lean.py"]),
+    "codon_ingest": ("Ingest 64-codon dual-axis trinary map", ["ingest_codon_map.py"]),
+    "codon_priors_lean": ("Generate CodonPriors.lean from registry", ["gen_codon_priors_lean.py"]),
     "protein_ingest": ("Ingest protein trinary phases into registry", ["ingest_protein_formulas.py"]),
     "protein_priors_lean": ("Generate ProteinPriors.lean from registry", ["gen_protein_priors_lean.py"]),
+    "protein_formulas_lean": ("Generate ProteinFormulas.lean closed forms", ["gen_protein_formulas_lean.py"]),
     "verify_lab": ("Verify lab registry", ["verify_lab_registry.py"]),
     "verify_bio": ("Verify NeuroLab biological data", ["verify_neurolab_bio.py"]),
+    "verify_codon": ("Verify 64-codon trinary map", ["verify_codon_map.py"]),
     "verify_protein": ("Verify protein amino-acid trinary phases", ["verify_protein_formulas.py"]),
     "runner": ("Full hash gate + Lean build + certificate", ["fsot_verification_runner.py"]),
 }
@@ -70,7 +74,7 @@ def main() -> int:
         extra = ["--skip-lean"] if name == "runner" and args.skip_lean else None
         if run_stage(name, extra) != 0:
             failures += 1
-            if name in ("verify_lab", "verify_bio", "verify_protein", "runner"):
+            if name in ("verify_lab", "verify_bio", "verify_codon", "verify_protein", "runner"):
                 break
 
     print(f"\n=== Automation summary: {len(selected) - failures}/{len(selected)} stages OK ===")

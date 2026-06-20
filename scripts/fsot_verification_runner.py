@@ -134,7 +134,9 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.Domains",
                 "FSOT.Formal.Genomic",
                 "FSOT.Formal.BrainPriors",
+                "FSOT.Formal.CodonPriors",
                 "FSOT.Formal.ProteinPriors",
+                "FSOT.Formal.ProteinFormulas",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -265,6 +267,42 @@ def main() -> int:
             print(proc_bp.stdout.strip() or proc_bp.stderr.strip())
             if proc_bp.returncode != 0:
                 issues.append("BrainPriors.lean generation failed")
+        ingest_codon = ROOT / "scripts" / "ingest_codon_map.py"
+        gen_codon_priors = ROOT / "scripts" / "gen_codon_priors_lean.py"
+        if ingest_codon.exists() and proc.returncode == 0:
+            proc_ci = subprocess.run(
+                [sys.executable, str(ingest_codon)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_ci.stdout.strip() or proc_ci.stderr.strip())
+            if proc_ci.returncode != 0:
+                issues.append("codon map ingest failed")
+            elif gen_codon_priors.exists():
+                proc_cp = subprocess.run(
+                    [sys.executable, str(gen_codon_priors)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_cp.stdout.strip() or proc_cp.stderr.strip())
+                if proc_cp.returncode != 0:
+                    issues.append("CodonPriors.lean generation failed")
+        verify_codon = ROOT / "scripts" / "verify_codon_map.py"
+        if verify_codon.exists():
+            proc_codon = subprocess.run(
+                [sys.executable, str(verify_codon)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_codon.stdout.strip())
+            if proc_codon.returncode != 0:
+                issues.append("codon trinary map verification failed")
         ingest_protein = ROOT / "scripts" / "ingest_protein_formulas.py"
         gen_protein_priors = ROOT / "scripts" / "gen_protein_priors_lean.py"
         if ingest_protein.exists() and proc.returncode == 0:
@@ -289,6 +327,18 @@ def main() -> int:
                 print(proc_pp.stdout.strip() or proc_pp.stderr.strip())
                 if proc_pp.returncode != 0:
                     issues.append("ProteinPriors.lean generation failed")
+                gen_protein_formulas = ROOT / "scripts" / "gen_protein_formulas_lean.py"
+                if gen_protein_formulas.exists():
+                    proc_pf = subprocess.run(
+                        [sys.executable, str(gen_protein_formulas)],
+                        cwd=ROOT,
+                        capture_output=True,
+                        text=True,
+                        check=False,
+                    )
+                    print(proc_pf.stdout.strip() or proc_pf.stderr.strip())
+                    if proc_pf.returncode != 0:
+                        issues.append("ProteinFormulas.lean generation failed")
         verify_protein = ROOT / "scripts" / "verify_protein_formulas.py"
         if verify_protein.exists():
             proc4 = subprocess.run(

@@ -1,0 +1,23 @@
+# FSOT 64-codon dual-axis trinary map for Lean-aligned verification.
+version: "1.0"
+updated: "2026-06-20"
+genetics_root: "C:/Users/damia/Desktop/Genetics"
+trinary_codon_project_root: "C:/Users/damia/Desktop/FSOT_Trinary_Codon_Project"
+
+artifacts:
+  codon_map_txt:
+    path: "64_codon_trinary_map.txt"
+  codon_core:
+    path: "codon_core/src/lib.rs"
+  build_script:
+    path: "build_64_codon_map.py"
+    project_root: "C:/Users/damia/Desktop/FSOT_Trinary_Codon_Project"
+
+verification:
+  codon_count: 64
+  primary_pattern_space: 8
+  secondary_pattern_space: 27
+  stop_codon_count: 3
+  stop_codons: ["TAA", "TAG", "TGA"]
+  start_codon: "ATG"
+  coordinate_tolerance: 0

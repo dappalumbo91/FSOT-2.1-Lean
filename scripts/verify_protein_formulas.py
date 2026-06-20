@@ -17,6 +17,14 @@ MANIFEST_PATH = ROOT / "data" / "protein_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
+from protein_formulas import (  # noqa: E402
+    FORMULA_IDS,
+    PROPOSED_FORMULA_IDS,
+    disulfide_bridge,
+    dipole_damping_denominator,
+    electrostatic_term,
+    fsot_chemical_interaction,
+)
 from protein_trinary import (  # noqa: E402
     AMINO_ACID_NAMES,
     AMINO_ACID_TRINARY,
@@ -97,6 +105,42 @@ def check_registry_protein(registry: dict, manifest: dict) -> list[str]:
     return issues
 
 
+def check_formula_closed_forms(registry: dict) -> list[str]:
+    issues: list[str] = []
+    protein = registry.get("protein_formulas", {})
+    ds = disulfide_bridge()
+    if not (17.0 < ds < 18.0):
+        issues.append(f"F03 disulfide phi^6={ds:.6f} outside (17, 18)")
+    cc = fsot_chemical_interaction("C", "C")
+    if abs(cc - ds) > 1e-9:
+        issues.append(f"F03 C-C interaction {cc} != disulfide_bridge {ds}")
+    kd = dipole_damping_denominator()
+    if kd <= 0:
+        issues.append(f"F06 dipole damping denominator non-positive: {kd}")
+    ke = electrostatic_term("K", "D")
+    if ke <= 0:
+        issues.append(f"F05 K-D electrostatic should be attractive (positive term), got {ke}")
+    kd_rep = electrostatic_term("K", "K")
+    if kd_rep >= 0:
+        issues.append(f"F05 K-K electrostatic should be repulsive (negative term), got {kd_rep}")
+    if protein.get("formula_count") != len(FORMULA_IDS):
+        issues.append(
+            f"formula_count={protein.get('formula_count')} != expected {len(FORMULA_IDS)}"
+        )
+    if protein.get("proposed_formula_count") != len(PROPOSED_FORMULA_IDS):
+        issues.append(
+            f"proposed_formula_count={protein.get('proposed_formula_count')} "
+            f"!= expected {len(PROPOSED_FORMULA_IDS)}"
+        )
+    ids = protein.get("formula_ids", [])
+    if ids != FORMULA_IDS:
+        issues.append("formula_ids order/content mismatch vs protein_formulas.py")
+    proposed = protein.get("proposed_formula_ids", [])
+    if proposed != PROPOSED_FORMULA_IDS:
+        issues.append("proposed_formula_ids mismatch vs protein_formulas.py")
+    return issues
+
+
 def check_formulas_catalog(manifest: dict) -> list[str]:
     issues: list[str] = []
     genetics_root = Path(manifest["genetics_root"])
@@ -126,6 +170,7 @@ def verify_protein(
     issues: list[str] = []
     issues.extend(check_formulas_catalog(manifest))
     issues.extend(check_registry_protein(registry, manifest))
+    issues.extend(check_formula_closed_forms(registry))
 
     protein = registry.get("protein_formulas", {})
     summary = {
@@ -133,6 +178,7 @@ def verify_protein(
         "distinct_trinary_patterns": protein.get("distinct_trinary_patterns", 0),
         "trinary_pattern_space": protein.get("trinary_pattern_space", 27),
         "formula_count": protein.get("formula_count", 0),
+        "proposed_formula_count": protein.get("proposed_formula_count", 0),
         "issues": len(issues),
     }
     return issues, summary

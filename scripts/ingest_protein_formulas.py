@@ -21,6 +21,7 @@ sys_path = ROOT / "scripts"
 import sys
 
 sys.path.insert(0, str(sys_path))
+from protein_formulas import FORMULA_IDS, PROPOSED_FORMULA_IDS  # noqa: E402
 from protein_trinary import (  # noqa: E402
     AMINO_ACID_NAMES,
     AMINO_ACID_TRINARY,
@@ -57,16 +58,36 @@ def ingest_protein(manifest_path: Path = MANIFEST_PATH) -> dict:
             "pattern": f"{charge},{polarity},{volume}",
         })
 
+    catalog = formulas.get("formulas", [])
+    proposed = formulas.get("missing_formulas_pointed_at_by_data", [])
     return {
         "present": formulas_path.exists(),
         "path": str(formulas_path),
         "sha256": sha256_file(formulas_path) if formulas_path.exists() else None,
-        "formula_count": len(formulas.get("formulas", [])),
+        "formula_count": len(catalog),
+        "proposed_formula_count": len(proposed),
         "amino_acid_count": summary["amino_acid_count"],
         "distinct_trinary_patterns": summary["distinct_trinary_patterns"],
         "trinary_pattern_space": summary["pattern_space_size"],
         "rows": rows,
-        "formula_ids": [f["id"] for f in formulas.get("formulas", [])],
+        "formula_ids": [f["id"] for f in catalog],
+        "proposed_formula_ids": [f["id"] for f in proposed],
+        "formulas": [
+            {
+                "id": f["id"],
+                "purpose": f.get("purpose", ""),
+                "current_form": f.get("current_form", ""),
+            }
+            for f in catalog
+        ],
+        "proposed_formulas": [
+            {"id": f["id"], "purpose": f.get("purpose", "")} for f in proposed
+        ],
+        "closed_forms": {
+            "disulfide_bridge_phi6": True,
+            "dipole_damping_gamma_pi_e2": True,
+            "electrostatic_scale_e": True,
+        },
     }
 
 
@@ -87,6 +108,7 @@ def main() -> int:
     print(f"  amino acids: {protein['amino_acid_count']}")
     print(f"  distinct trinary patterns: {protein['distinct_trinary_patterns']} / {protein['trinary_pattern_space']}")
     print(f"  formula catalog entries: {protein['formula_count']}")
+    print(f"  proposed formulas: {protein['proposed_formula_count']}")
     return 0
 
 

@@ -31,10 +31,12 @@ It was developed in close collaboration with the Python reference implementation
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
-- **33 proved claims**, 0 active `sorry`, `lean_build_ok: true`
+- **35 proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
-- Protein amino-acid trinary phases (`FSOT.Formal.ProteinPriors`) — 20 canonical AAs, 10 distinct patterns ⊆ 27
+- 64-codon dual-axis map (`FSOT.Formal.CodonPriors`) — 8 primary + 27 secondary patterns
+- Protein amino-acid trinary (`FSOT.Formal.ProteinPriors`) — 20 AAs, 10 distinct patterns ⊆ 27
+- Protein formula closed forms (`FSOT.Formal.ProteinFormulas`) — 15 catalog + 3 proposed, φ⁶ disulfide certified
 - Certificate: `data/certificate.json` | Run log: `data/verification_runs.jsonl`
 
 See `REPRODUCE.md` and `docs/genomic_brain_priors_verification.md` for details.
@@ -46,7 +48,7 @@ pip install -r requirements.txt
 python scripts/fsot_verification_runner.py
 
 # Or Lean-only build
-lake build FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.ProteinPriors FSOT.Formal.Lab
+lake build FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.Lab
 ```
 
 ## Alignment with Reference Files
