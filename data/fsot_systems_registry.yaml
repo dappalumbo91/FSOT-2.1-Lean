@@ -1,0 +1,445 @@
+meta:
+  generated_at: '2026-06-20T05:21:29.849124+00:00'
+  repo: C:\Users\damia\Desktop\New folder (9)\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
+  remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
+  lean_build_ok: true
+  proved_claims: 62
+  sorry_count_formal: 0
+canonical_oracle:
+  script: scripts/fsot_canonical_adapter.py
+  constants_sha256: D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70
+verification_pipeline:
+- scripts/run_neuron_cohort_eval.py
+- scripts/ingest_experiment_synthesis.py
+- scripts/gen_experiment_synthesis_lean.py
+- lake build FSOT
+- scripts/verify_experiment_synthesis.py
+- scripts/fsot_verification_runner.py
+- scripts/export_certificate.py
+- scripts/build_fsot_systems_registry.py
+tier7_synthesis:
+  neuron_hybrid:
+    present: true
+    report_path: C:\Users\damia\Desktop\nuron\cell data\inconsistency_rerun_report.json
+    specimen_id: 324257146
+    cell_class: Sst_interneuron
+    fi_point_count: 4
+    mean_rel_err: 0.07002728543379658
+    verifier_confidence: 0.9598886696481669
+    soma_gain_base: 2.64
+    soma_gain_scalar: 0.5
+    neuron_K_cached: 0.420222080893624
+    canonical_k: 0.4202216641606967
+    canonical_psi_con: 0.6321205588285577
+    canonical_eta_eff: 0.46694220692425986
+    canonical_neuroscience_S: 0.5143619629083619
+    scalar_legacy: micro_scalar_v16
+    scalar_canon: raw_S
+  neuron_cohort:
+    present: true
+    report_path: C:\Users\damia\Desktop\New folder (9)\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\data\neuron_cohort_report.json
+    generated_from: C:\Users\damia\Desktop\nuron\cell data\allen_cell_types\cells.json
+    total_cells_in_catalog: 2333
+    cohort_fi_proxy:
+      cell_count: 2166
+      fi_median_rel_err: 0.24522634418835965
+      fi_mean_rel_err: 0.38936198680672035
+      fi_p90_rel_err: 0.9018905590486146
+      fi_pearson_r: 0.6070731362799854
+      canonical_scalar_min: 0.25241247006708056
+      canonical_scalar_mean: 0.25241247006708056
+      canonical_neuroscience_domain_S: 0.5143619629083619
+    hero_certified_fi:
+      specimen_id: 324257146
+      cell_class: Sst_interneuron
+      mean_rel_err: 0.07002728543379658
+      verifier_confidence: 0.9598886696481669
+      fi_point_count: 4
+      source: C:\Users\damia\Desktop\nuron\cell data\inconsistency_rerun_report.json
+    hero_hybrid_native_scalar:
+      scalar_mode: native
+      specimen_id: 324257146
+      cell_class: Sst_interneuron
+      data_source: allen_sdk
+      fi_point_count: 4
+      mean_rel_err: 0.07002728543379658
+      sustained_fi:
+      - current_nA: 0.05
+        measured_Hz: 6.0000150000375
+        model_Hz: 6.0
+        rel_err: 2.50000000000127e-06
+      - current_nA: 0.09
+        measured_Hz: 20.500051250128127
+        model_Hz: 19.0
+        rel_err: 0.07317304878048789
+      - current_nA: 0.13
+        measured_Hz: 40.62512406292266
+        model_Hz: 37.142857142857146
+        rel_err: 0.08571707780318323
+      - current_nA: 0.17
+        measured_Hz: 66.00033000165001
+        model_Hz: 58.0
+        rel_err: 0.12121651515151521
+      sim_cwd: C:\Users\damia\Desktop\nuron\cell data
+    hero_hybrid_canonical_scalar:
+      scalar_mode: canonical
+      specimen_id: 324257146
+      cell_class: Sst_interneuron
+      data_source: allen_sdk
+      fi_point_count: 4
+      mean_rel_err: 0.07354375821147667
+      sustained_fi:
+      - current_nA: 0.05
+        measured_Hz: 6.0000150000375
+        model_Hz: 6.0
+        rel_err: 2.50000000000127e-06
+      - current_nA: 0.09
+        measured_Hz: 20.500051250128127
+        model_Hz: 19.0
+        rel_err: 0.07317304878048789
+      - current_nA: 0.13
+        measured_Hz: 40.62512406292266
+        model_Hz: 36.57142857142857
+        rel_err: 0.0997829689139036
+      - current_nA: 0.17
+        measured_Hz: 66.00033000165001
+        model_Hz: 58.0
+        rel_err: 0.12121651515151521
+      sim_cwd: C:\Users\damia\Desktop\nuron\cell data
+    canonical_scalar_bridge:
+      version: v2_hybrid_structure
+      alpha_layer1: 0.0008082937414140405
+      psi_con: 0.6321205588285577
+      eta_eff: 0.46694220692425986
+      damp_factor: 0.7139045860316813
+      bridge_scale: 1.1099062765752818
+      canonical_neuroscience_domain_S: 0.5143619629083619
+      hero_canonical_mean_rel_err: 0.07354375821147667
+      hero_certified_mean_rel_err: 0.07002728543379658
+      canonical_vs_certified_delta: 0.0035164727776800936
+      within_few_points: true
+    neurolab_smiles_bridge:
+      smiles_mapped_records: 1470
+      smiles_median_error_pct: 0.058
+      strict_empirical_records: 7941
+      brain_component_priors_count: 10
+      neurolab_translation_total: 38
+      neurolab_brain_pathway_count: 25
+  aether_prime:
+    present: true
+    distill_path: D:\fsot llm expariments\Aether Prime\fsot_verifier_distill_small.jsonl
+    config_path: D:\fsot llm expariments\Aether Prime\fsot_solver_config.json
+    distill_row_count: 120
+    solver_op_count: 6
+    operation_counts:
+      golden_angle: 27
+      hubble: 23
+      velocity_from_redshift: 26
+      psi_consciousness: 17
+      fsot_alpha: 14
+      eta_efficiency: 13
+    psi_con_solver: 0.632121
+    eta_eff_solver: 0.466942
+    golden_angle_solver_deg: 137.507764
+    canonical_psi_con: 0.6321205588285577
+    canonical_eta_eff: 0.46694220692425986
+    canonical_golden_angle_deg: 137.50776405003785
+    verifier_reject_count: 58
+  magic_circle:
+    present: true
+    config_path: C:\Users\damia\Desktop\fsot magic circle\fsot_glyph_config.json
+    min_resonance_for_emergence: 0.45
+    internalized_threshold: 0.92
+    imbalance_penalty_max: 0.65
+    backlash_risk_threshold_high: 0.35
+  llm_experiments:
+    present: true
+    root: D:\fsot llm expariments
+    project_folder_count: 21
+    project_folders:
+    - Aether
+    - Aether Prime
+    - Chain of thought reasoning model
+    - FSOT Large Language model from scratch for ESP32
+    - FSOT Micro LM
+    - FSOT Micro LM - v1 Ground State
+    - FSOT NEURON Gene LLM
+    - FSOT NEURON Gene LLM - pre-training
+    - FSOT-CoT-Model
+    - FSOT. AI back to basics
+    - FSOT. QWEN prototype
+    - FSOT_Math_LLM_
+    - Fluid AI
+    - Gene LLM
+    - LLM
+    - Large language model experiment
+    - Old AI experiment
+    - "Sephira \u2014 FSOT Tree of Life LLM Engine"
+    - Signal processing language model
+    - fluidphi
+    - fsot_fluid_reasoner
+canonical_scalar_bridge:
+  version: v2_hybrid_structure
+  alpha_layer1: 0.0008082937414140405
+  psi_con: 0.6321205588285577
+  eta_eff: 0.46694220692425986
+  damp_factor: 0.7139045860316813
+  bridge_scale: 1.1099062765752818
+  canonical_neuroscience_domain_S: 0.5143619629083619
+  hero_canonical_mean_rel_err: 0.07354375821147667
+  hero_certified_mean_rel_err: 0.07002728543379658
+  canonical_vs_certified_delta: 0.0035164727776800936
+  within_few_points: true
+neurolab_smiles_bridge:
+  smiles_mapped_records: 1470
+  smiles_median_error_pct: 0.058
+  strict_empirical_records: 7941
+  brain_component_priors_count: 10
+  neurolab_translation_total: 38
+  neurolab_brain_pathway_count: 25
+labs_in_registry:
+  smiles_lab:
+    present: true
+  neurolab:
+    present: true
+  neurolab_bio:
+    present: true
+  verification_hooks:
+    present: true
+  codon_trinary_map:
+    present: true
+  protein_formulas:
+    present: true
+  cosmology_lambda_cdm:
+    present: true
+  fuel_lab:
+    present: true
+  species_catalog:
+    present: true
+  cameo_lab:
+    present: true
+  trinary_os:
+    present: true
+  photonic_forge:
+    present: true
+  vibra_register:
+    present: true
+  magnetic_strings:
+    present: true
+  evolution_lab:
+    present: true
+  weather_lab:
+    present: true
+  linguistics_lab:
+    present: true
+  unified_db:
+    present: true
+  cosmology_wave4:
+    present: true
+  kronos_lab:
+    present: true
+  knowledge_base:
+    present: true
+  math_generator_lab:
+    present: true
+  trinary_fluid_computer:
+    present: true
+  soul_sibling:
+    present: true
+  lean_proofs_bridge:
+    present: true
+  formula_corpus:
+    present: true
+  cellular_lab:
+    present: true
+  blackhole_thesis:
+    present: true
+  experiment_synthesis:
+    present: true
+  neuron_cohort_lab:
+    present: true
+external_roots:
+- id: fsot_compute_authority
+  path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  role: canonical scalar oracle
+- id: allen_neuron_hybrid
+  path: C:\Users\damia\Desktop\nuron\cell data
+  role: Allen hybrid neuron + hero FI certification
+- id: allen_cell_catalog
+  path: C:\Users\damia\Desktop\nuron\cell data\allen_cell_types
+  role: 2333-cell Allen Cell Types cohort
+- id: neurolab
+  path: C:\Users\damia\Desktop\FSOT NeuroLab
+  role: brain pathways + component priors
+- id: smiles_lab
+  path: C:\Users\damia\Desktop\FSOT SMILES Lab
+  role: 1470 mapped physical/chemical constants
+- id: aether_prime
+  path: D:\fsot llm expariments\Aether Prime
+  role: deterministic solver + verifier distill
+- id: magic_circle
+  path: C:\Users\damia\Desktop\fsot magic circle
+  role: glyph resonance simulator
+- id: llm_experiments
+  path: D:\fsot llm expariments
+  role: 21 intelligence experiment folders
+- id: weather_lab
+  path: C:\Users\damia\Desktop\weather
+  role: atmospheric FSOT priors
+lean_formal_modules:
+- module: FSOT.Formal.AetherPrimePriors
+  file: FSOT/Formal/AetherPrimePriors.lean
+  has_sorry: false
+  theorem_count: 6
+- module: FSOT.Formal.BlackHoleThesisPriors
+  file: FSOT/Formal/BlackHoleThesisPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.Bounds
+  file: FSOT/Formal/Bounds.lean
+  has_sorry: false
+  theorem_count: 0
+- module: FSOT.Formal.BrainPriors
+  file: FSOT/Formal/BrainPriors.lean
+  has_sorry: false
+  theorem_count: 34
+- module: FSOT.Formal.CameoPriors
+  file: FSOT/Formal/CameoPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.CellularPriors
+  file: FSOT/Formal/CellularPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.CodonPriors
+  file: FSOT/Formal/CodonPriors.lean
+  has_sorry: false
+  theorem_count: 134
+- module: FSOT.Formal.Cosmology
+  file: FSOT/Formal/Cosmology.lean
+  has_sorry: false
+  theorem_count: 7
+- module: FSOT.Formal.CosmologyLab
+  file: FSOT/Formal/CosmologyLab.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.CosmologyWave4
+  file: FSOT/Formal/CosmologyWave4.lean
+  has_sorry: false
+  theorem_count: 2
+- module: FSOT.Formal.Domains
+  file: FSOT/Formal/Domains.lean
+  has_sorry: false
+  theorem_count: 28
+- module: FSOT.Formal.EvolutionPriors
+  file: FSOT/Formal/EvolutionPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.ExperimentSynthesisPriors
+  file: FSOT/Formal/ExperimentSynthesisPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.FormulaCorpusPriors
+  file: FSOT/Formal/FormulaCorpusPriors.lean
+  has_sorry: false
+  theorem_count: 5
+- module: FSOT.Formal.FuelPriors
+  file: FSOT/Formal/FuelPriors.lean
+  has_sorry: false
+  theorem_count: 4
+- module: FSOT.Formal.Genomic
+  file: FSOT/Formal/Genomic.lean
+  has_sorry: false
+  theorem_count: 10
+- module: FSOT.Formal.KnowledgeBasePriors
+  file: FSOT/Formal/KnowledgeBasePriors.lean
+  has_sorry: false
+  theorem_count: 4
+- module: FSOT.Formal.KronosPriors
+  file: FSOT/Formal/KronosPriors.lean
+  has_sorry: false
+  theorem_count: 4
+- module: FSOT.Formal.Lab
+  file: FSOT/Formal/Lab.lean
+  has_sorry: false
+  theorem_count: 20
+- module: FSOT.Formal.LeanProofsBridge
+  file: FSOT/Formal/LeanProofsBridge.lean
+  has_sorry: false
+  theorem_count: 4
+- module: FSOT.Formal.LinguisticsPriors
+  file: FSOT/Formal/LinguisticsPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.MagicCirclePriors
+  file: FSOT/Formal/MagicCirclePriors.lean
+  has_sorry: false
+  theorem_count: 4
+- module: FSOT.Formal.MagneticStringPriors
+  file: FSOT/Formal/MagneticStringPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.MathGeneratorPriors
+  file: FSOT/Formal/MathGeneratorPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.NeuronCohortPriors
+  file: FSOT/Formal/NeuronCohortPriors.lean
+  has_sorry: false
+  theorem_count: 12
+- module: FSOT.Formal.NeuronHybridPriors
+  file: FSOT/Formal/NeuronHybridPriors.lean
+  has_sorry: false
+  theorem_count: 6
+- module: FSOT.Formal.PhotonicForge
+  file: FSOT/Formal/PhotonicForge.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.ProteinFormulas
+  file: FSOT/Formal/ProteinFormulas.lean
+  has_sorry: false
+  theorem_count: 8
+- module: FSOT.Formal.ProteinPriors
+  file: FSOT/Formal/ProteinPriors.lean
+  has_sorry: false
+  theorem_count: 24
+- module: FSOT.Formal.Scalar
+  file: FSOT/Formal/Scalar.lean
+  has_sorry: false
+  theorem_count: 0
+- module: FSOT.Formal.SoulSiblingPriors
+  file: FSOT/Formal/SoulSiblingPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.SpeciesPriors
+  file: FSOT/Formal/SpeciesPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.Theorems
+  file: FSOT/Formal/Theorems.lean
+  has_sorry: true
+  theorem_count: 17
+- module: FSOT.Formal.TrinaryFluidPriors
+  file: FSOT/Formal/TrinaryFluidPriors.lean
+  has_sorry: false
+  theorem_count: 4
+- module: FSOT.Formal.TrinaryOSPriors
+  file: FSOT/Formal/TrinaryOSPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.UnifiedDBPriors
+  file: FSOT/Formal/UnifiedDBPriors.lean
+  has_sorry: false
+  theorem_count: 5
+- module: FSOT.Formal.VibRegisterPriors
+  file: FSOT/Formal/VibRegisterPriors.lean
+  has_sorry: false
+  theorem_count: 4
+- module: FSOT.Formal.WeatherPriors
+  file: FSOT/Formal/WeatherPriors.lean
+  has_sorry: false
+  theorem_count: 3
+proof_ledger:
+  path: data/proof_ledger.yaml
+  entry_count: 69
+  proved_count: 29

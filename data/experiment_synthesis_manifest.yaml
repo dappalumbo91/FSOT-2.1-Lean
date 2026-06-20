@@ -1,0 +1,49 @@
+# Tier 7 — verified math synthesis from FSOT intelligence experiments.
+# Corrects project-specific math against Lean / fsot_compute canon.
+
+experiment_synthesis_root: "C:/Users/damia/Desktop"
+
+sources:
+  neuron_hybrid:
+    root: "C:/Users/damia/Desktop/nuron"
+    report: "cell data/inconsistency_rerun_report.json"
+    lean_ready: "FSOT_Neuron_Mathematical_Rendering_LeanReady.md"
+    scalar_legacy: "micro_scalar_v16"
+    scalar_canon: "raw_S"
+    domain_lean: "neural"
+    domain_compute: "Neuroscience"
+
+  aether_prime:
+    root: "D:/fsot llm expariments/Aether Prime"
+    config: "fsot_solver_config.json"
+    distill: "fsot_verifier_distill_small.jsonl"
+    solver_ops:
+      - velocity_from_redshift
+      - hubble
+      - fsot_alpha
+      - psi_consciousness
+      - eta_efficiency
+      - golden_angle
+
+  magic_circle:
+    root: "C:/Users/damia/Desktop/fsot magic circle"
+    config: "fsot_glyph_config.json"
+    simulator: "witch_hat_atelier_magic_simulator.py"
+
+  llm_experiments:
+    root: "D:/fsot llm expariments"
+
+verification:
+  neuron_mean_rel_err_max: 0.15
+  neuron_verifier_confidence_min: 0.90
+  neuron_K_abs_tol: 0.0005
+  aether_distill_row_min: 100
+  aether_constant_rel_tol: 1.0e-5
+  magic_min_resonance_max: 0.5
+  magic_internalized_min: 0.9
+  min_cell_count: 2000
+  fi_median_rel_err_max: 0.30
+  fi_pearson_r_min: 0.55
+  hybrid_mean_rel_err_max: 0.15
+  smiles_mapped_min: 1400
+  strict_empirical_min: 7900

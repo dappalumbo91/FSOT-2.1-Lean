@@ -1,0 +1,113 @@
+{
+  "generated_from": "C:\\Users\\damia\\Desktop\\nuron\\cell data\\allen_cell_types\\cells.json",
+  "total_cells_in_catalog": 2333,
+  "cohort_fi_proxy": {
+    "cell_count": 2166,
+    "fi_median_rel_err": 0.24522634418835965,
+    "fi_mean_rel_err": 0.38936198680672035,
+    "fi_p90_rel_err": 0.9018905590486146,
+    "fi_pearson_r": 0.6070731362799854,
+    "canonical_scalar_min": 0.25241247006708056,
+    "canonical_scalar_mean": 0.25241247006708056,
+    "canonical_neuroscience_domain_S": 0.5143619629083619
+  },
+  "hero_certified_fi": {
+    "specimen_id": 324257146,
+    "cell_class": "Sst_interneuron",
+    "mean_rel_err": 0.07002728543379658,
+    "verifier_confidence": 0.9598886696481669,
+    "fi_point_count": 4,
+    "source": "C:\\Users\\damia\\Desktop\\nuron\\cell data\\inconsistency_rerun_report.json"
+  },
+  "hero_hybrid_native_scalar": {
+    "scalar_mode": "native",
+    "specimen_id": 324257146,
+    "cell_class": "Sst_interneuron",
+    "data_source": "allen_sdk",
+    "fi_point_count": 4,
+    "mean_rel_err": 0.07002728543379658,
+    "sustained_fi": [
+      {
+        "current_nA": 0.05,
+        "measured_Hz": 6.0000150000375,
+        "model_Hz": 6.0,
+        "rel_err": 2.50000000000127e-06
+      },
+      {
+        "current_nA": 0.09,
+        "measured_Hz": 20.500051250128127,
+        "model_Hz": 19.0,
+        "rel_err": 0.07317304878048789
+      },
+      {
+        "current_nA": 0.13,
+        "measured_Hz": 40.62512406292266,
+        "model_Hz": 37.142857142857146,
+        "rel_err": 0.08571707780318323
+      },
+      {
+        "current_nA": 0.17,
+        "measured_Hz": 66.00033000165001,
+        "model_Hz": 58.0,
+        "rel_err": 0.12121651515151521
+      }
+    ],
+    "sim_cwd": "C:\\Users\\damia\\Desktop\\nuron\\cell data"
+  },
+  "hero_hybrid_canonical_scalar": {
+    "scalar_mode": "canonical",
+    "specimen_id": 324257146,
+    "cell_class": "Sst_interneuron",
+    "data_source": "allen_sdk",
+    "fi_point_count": 4,
+    "mean_rel_err": 0.07354375821147667,
+    "sustained_fi": [
+      {
+        "current_nA": 0.05,
+        "measured_Hz": 6.0000150000375,
+        "model_Hz": 6.0,
+        "rel_err": 2.50000000000127e-06
+      },
+      {
+        "current_nA": 0.09,
+        "measured_Hz": 20.500051250128127,
+        "model_Hz": 19.0,
+        "rel_err": 0.07317304878048789
+      },
+      {
+        "current_nA": 0.13,
+        "measured_Hz": 40.62512406292266,
+        "model_Hz": 36.57142857142857,
+        "rel_err": 0.0997829689139036
+      },
+      {
+        "current_nA": 0.17,
+        "measured_Hz": 66.00033000165001,
+        "model_Hz": 58.0,
+        "rel_err": 0.12121651515151521
+      }
+    ],
+    "sim_cwd": "C:\\Users\\damia\\Desktop\\nuron\\cell data"
+  },
+  "canonical_scalar_bridge": {
+    "version": "v2_hybrid_structure",
+    "alpha_layer1": 0.0008082937414140405,
+    "psi_con": 0.6321205588285577,
+    "eta_eff": 0.46694220692425986,
+    "damp_factor": 0.7139045860316813,
+    "bridge_scale": 1.1099062765752818,
+    "canonical_neuroscience_domain_S": 0.5143619629083619,
+    "hero_canonical_mean_rel_err": 0.07354375821147667,
+    "hero_certified_mean_rel_err": 0.07002728543379658,
+    "canonical_vs_certified_delta": 0.0035164727776800936,
+    "within_few_points": true
+  },
+  "neurolab_smiles_bridge": {
+    "smiles_mapped_records": 1470,
+    "smiles_median_error_pct": 0.058,
+    "strict_empirical_records": 7941,
+    "brain_component_priors_count": 10,
+    "neurolab_translation_total": 38,
+    "neurolab_brain_pathway_count": 25
+  }
+}

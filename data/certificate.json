@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-06-20T02:25:15.270491+00:00",
+  "generated_at": "2026-06-20T05:21:22.442003+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -37,6 +37,11 @@
     "FSOT.Formal.FormulaCorpusPriors",
     "FSOT.Formal.CellularPriors",
     "FSOT.Formal.BlackHoleThesisPriors",
+    "FSOT.Formal.NeuronHybridPriors",
+    "FSOT.Formal.NeuronCohortPriors",
+    "FSOT.Formal.AetherPrimePriors",
+    "FSOT.Formal.MagicCirclePriors",
+    "FSOT.Formal.ExperimentSynthesisPriors",
     "FSOT.Formal.Lab",
     "FSOT"
   ],
@@ -487,7 +492,7 @@
     },
     {
       "id": "knowledge_base_corpus",
-      "claim": "Knowledge base: 19213 catalog formulas; 7941 strict-empirical observable-verified (6921 within 2%)",
+      "claim": "Knowledge base: 19213 catalog per-formula pass; 7941 strict-empirical bridge (6921 within 2%); 105 catalog verified",
       "status": "numerically_verified",
       "domain": "molecular",
       "lean_module": "FSOT.Formal.KnowledgeBasePriors",
@@ -524,6 +529,46 @@
       "domain": "*",
       "lean_module": "FSOT.Formal.LeanProofsBridge",
       "lean_theorem": "lean_proofs_constant_bundle"
+    },
+    {
+      "id": "neuron_allen_hybrid_fi",
+      "claim": "Allen Sst interneuron hybrid: 4-point FI mean rel err 7.0%; verifier confidence 0.96; K aligned",
+      "status": "numerically_verified",
+      "domain": "neural",
+      "lean_module": "FSOT.Formal.NeuronHybridPriors",
+      "lean_theorem": "neuron_hybrid_priors_bundle"
+    },
+    {
+      "id": "aether_prime_solver_distill",
+      "claim": "Aether Prime: 6 deterministic solver ops; 120 verifier-distill rows; \u03c8_con/\u03b7_eff match Bounds",
+      "status": "numerically_verified",
+      "domain": "ai",
+      "lean_module": "FSOT.Formal.AetherPrimePriors",
+      "lean_theorem": "aether_prime_priors_bundle"
+    },
+    {
+      "id": "magic_circle_glyph_emergence",
+      "claim": "Magic circle glyph config: stabilization thresholds + 27-pathway trinary anchor",
+      "status": "cross_validated",
+      "domain": "consciousness",
+      "lean_module": "FSOT.Formal.MagicCirclePriors",
+      "lean_theorem": "magic_circle_priors_bundle"
+    },
+    {
+      "id": "allen_neuron_cohort_fi",
+      "claim": "Allen cohort 2166 cells: FI proxy median rel err 24.5%; pearson r 0.61; hero certified 7.0%",
+      "status": "numerically_verified",
+      "domain": "neural",
+      "lean_module": "FSOT.Formal.NeuronCohortPriors",
+      "lean_theorem": "neuron_cohort_priors_bundle"
+    },
+    {
+      "id": "experiment_synthesis_tier7",
+      "claim": "Tier 7 synthesis: 4 corrected approaches + 21 LLM experiment folders inventoried",
+      "status": "cross_validated",
+      "domain": "*",
+      "lean_module": "FSOT.Formal.ExperimentSynthesisPriors",
+      "lean_theorem": "experiment_synthesis_priors_bundle"
     }
   ],
   "playbook_patterns": [
@@ -579,6 +624,14 @@
     "translation_total": 38
   },
   "formal_theorem_inventory": {
+    "AetherPrimePriors": [
+      "aether_distill_row_count_pos",
+      "aether_solver_op_count_eq_six",
+      "aether_psi_con_solver_in_bounds",
+      "aether_eta_eff_solver_in_bounds",
+      "aether_golden_angle_gt_137",
+      "aether_prime_priors_bundle"
+    ],
     "BlackHoleThesisPriors": [
       "blackhole_thesis_observable_count_pos",
       "blackhole_thesis_within_le_total",
@@ -1127,6 +1180,11 @@
       "evolution_operon_count_pos",
       "evolution_priors_bundle"
     ],
+    "ExperimentSynthesisPriors": [
+      "experiment_synthesis_approach_count_pos",
+      "experiment_llm_project_count_pos",
+      "experiment_synthesis_priors_bundle"
+    ],
     "FormulaCorpusPriors": [
       "formula_corpus_records_total_pos",
       "formula_corpus_matched_le_total",
@@ -1208,6 +1266,12 @@
       "linguistics_max_error_within_five_pct",
       "linguistics_priors_bundle"
     ],
+    "MagicCirclePriors": [
+      "magic_min_resonance_lt_internalized",
+      "magic_imbalance_penalty_in_unit_interval",
+      "magic_backlash_threshold_in_unit_interval",
+      "magic_circle_priors_bundle"
+    ],
     "MagneticStringPriors": [
       "magnetic_S_em_positive",
       "magnetic_string_count_pos",
@@ -1217,6 +1281,28 @@
       "math_generator_comparison_count_pos",
       "math_generator_max_error_pct_positive",
       "math_generator_priors_bundle"
+    ],
+    "NeuronCohortPriors": [
+      "allen_cohort_cell_count_pos",
+      "allen_cohort_fi_median_rel_err_lt_thirty_pct",
+      "allen_cohort_fi_pearson_r_gt_fifty_five",
+      "hero_certified_fi_mean_rel_err_lt_fifteen_pct",
+      "hero_certified_verifier_confidence_gt_ninety_pct",
+      "cohort_canonical_scalar_min_positive",
+      "hero_canonical_bridge_mean_rel_err_lt_twelve_pct",
+      "hero_canonical_bridge_delta_lt_five_pct",
+      "canonical_bridge_scale_gt_one",
+      "neurolab_smiles_mapped_records_pos",
+      "neurolab_strict_empirical_records_large",
+      "neuron_cohort_priors_bundle"
+    ],
+    "NeuronHybridPriors": [
+      "neuron_fi_point_count_pos",
+      "neuron_mean_rel_err_lt_fifteen_pct",
+      "neuron_verifier_confidence_gt_ninety_pct",
+      "neuron_K_matches_thalamic_gate",
+      "neuron_canonical_neuroscience_S_positive",
+      "neuron_hybrid_priors_bundle"
     ],
     "PhotonicForge": [
       "photonic_trinary_partition",
@@ -1372,14 +1458,14 @@
     "scripts/gen_protein_priors_lean.py": "9A5300DDD7D142A6C9FF596651F40AF2B4079FCD8A43E3DDD33695D43308294F",
     "scripts/gen_protein_formulas_lean.py": "9E8FD84D7A89A6000E0253F9BADCAA9F3F6720E7496DB6B53F90443E3FD0B6A4",
     "scripts/domain_scalar_oracle.py": "80DBF4F2592B73E468038D5E54532FA1FB26947DB5ABF4AF2794EFFD566906DA",
-    "scripts/fsot_verification_runner.py": "31DA1DE58B73CFBB3FDCD6FACA0834F259724C8A877DE899C0A5EF1E742015A2",
-    "data/proof_ledger.yaml": "05609D0E639355E41EB3EAE63CEE22A3E7AD69E44020A05EEA7B07BC78AC26C6",
+    "scripts/fsot_verification_runner.py": "A53A9895E2489148A4846735A2707142B1EE451AAB9CBC079F29020639D1A69B",
+    "data/proof_ledger.yaml": "34CFAAF375312401C2F55D47EDA859B87641D84616F2A67116D5B9489CBF11E0",
     "data/canonical_constants.json": "86B41DA6A694DE95E5C80BD8E900E4541B9D552B629F898226777D46DC453DEF"
   },
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify": "python scripts/fsot_verification_runner.py",
-    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.CosmologyWave4 FSOT.Formal.KronosPriors FSOT.Formal.KnowledgeBasePriors FSOT.Formal.MathGeneratorPriors FSOT.Formal.TrinaryFluidPriors FSOT.Formal.SoulSiblingPriors FSOT.Formal.LeanProofsBridge FSOT.Formal.FormulaCorpusPriors FSOT.Formal.CellularPriors FSOT.Formal.BlackHoleThesisPriors FSOT.Formal.Lab FSOT",
+    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.CosmologyWave4 FSOT.Formal.KronosPriors FSOT.Formal.KnowledgeBasePriors FSOT.Formal.MathGeneratorPriors FSOT.Formal.TrinaryFluidPriors FSOT.Formal.SoulSiblingPriors FSOT.Formal.LeanProofsBridge FSOT.Formal.FormulaCorpusPriors FSOT.Formal.CellularPriors FSOT.Formal.BlackHoleThesisPriors FSOT.Formal.NeuronHybridPriors FSOT.Formal.NeuronCohortPriors FSOT.Formal.AetherPrimePriors FSOT.Formal.MagicCirclePriors FSOT.Formal.ExperimentSynthesisPriors FSOT.Formal.Lab FSOT",
     "export": "python scripts/export_certificate.py"
   }
 }

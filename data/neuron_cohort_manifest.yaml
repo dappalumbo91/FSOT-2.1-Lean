@@ -1,0 +1,24 @@
+# Allen Cell Types cohort + NeuroLab/SMILES bridge for Tier 7b neuron expansion.
+
+neuron_cohort_root: "C:/Users/damia/Desktop/nuron/cell data/allen_cell_types"
+hybrid_model_root: "C:/Users/damia/Desktop/nuron/cell data"
+hero_report: "inconsistency_rerun_report.json"
+
+artifacts:
+  cells_json: "cells.json"
+  ephys_features_csv: "ephys_features.csv"
+
+fi_proxy:
+  stim_offset_pa: 60.0
+  min_slope: 0.0
+
+verification:
+  min_cell_count: 2000
+  fi_median_rel_err_max: 0.30
+  fi_pearson_r_min: 0.55
+  hybrid_mean_rel_err_max: 0.15
+  canonical_bridge_mean_rel_err_max: 0.12
+  canonical_bridge_delta_max: 0.05
+  canonical_S_positive_min: 0.0
+  smiles_mapped_min: 1400
+  strict_empirical_min: 7900

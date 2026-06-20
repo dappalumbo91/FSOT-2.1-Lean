@@ -65,6 +65,11 @@ LEAN_TARGETS = [
     "FSOT.Formal.FormulaCorpusPriors",
     "FSOT.Formal.CellularPriors",
     "FSOT.Formal.BlackHoleThesisPriors",
+    "FSOT.Formal.NeuronHybridPriors",
+    "FSOT.Formal.NeuronCohortPriors",
+    "FSOT.Formal.AetherPrimePriors",
+    "FSOT.Formal.MagicCirclePriors",
+    "FSOT.Formal.ExperimentSynthesisPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

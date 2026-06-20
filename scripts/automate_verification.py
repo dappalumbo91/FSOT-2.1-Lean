@@ -95,6 +95,9 @@ STAGES: dict[str, tuple[str, list[str]]] = {
     "verify_trinary_fluid": ("Verify Trinary Fluid Computer v2", ["verify_trinary_fluid_computer.py"]),
     "verify_soul_sibling": ("Verify Soul Sibling kernel", ["verify_soul_sibling.py"]),
     "verify_lean_proofs": ("Verify Lean proofs constant bridge", ["verify_lean_proofs_bridge.py"]),
+    "synthesis_ingest": ("Ingest Tier 7 experiment synthesis labs", ["ingest_experiment_synthesis.py"]),
+    "synthesis_lean": ("Generate experiment synthesis Lean priors", ["gen_experiment_synthesis_lean.py"]),
+    "verify_synthesis": ("Verify experiment synthesis vs fsot_compute", ["verify_experiment_synthesis.py"]),
     "runner": ("Full hash gate + Lean build + certificate", ["fsot_verification_runner.py"]),
 }
 

@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-20T02:30:00.000000+00:00",
+  "generated_at": "2026-06-20T05:20:55.276951+00:00",
   "evaluator_version": "fsot_numeric_eval_v4",
   "db_path": "C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\FSOT_UNIFIED.db",
   "before": {
     "records_total": 24800,
-    "verification_numeric_total": 1723,
-    "evaluation_ok": 1672,
+    "verification_numeric_total": 9607,
+    "evaluation_ok": 9556,
     "evaluation_failed": 51,
-    "within_target_2pct": 1419,
-    "within_tolerable_5pct": 1630,
-    "strict_empirical_pending_numeric": 7875
+    "within_target_2pct": 8283,
+    "within_tolerable_5pct": 9514,
+    "strict_empirical_pending_numeric": 0
   },
   "after": {
     "records_total": 24800,
@@ -20,12 +20,7 @@
     "within_tolerable_5pct": 9514,
     "strict_empirical_pending_numeric": 0
   },
-  "delta_numeric_rows": 7884,
+  "delta_numeric_rows": 0,
   "backfill_ran": true,
-  "pipeline_ran": false,
-  "gap_resolution": {
-    "script": "scripts/resolve_strict_empirical_gap.py",
-    "cnc_mrr_records": 54,
-    "source": "D:/training data/cnc_data/Exp1.csv"
-  }
+  "pipeline_ran": false
 }

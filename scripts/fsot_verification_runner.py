@@ -159,6 +159,11 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.FormulaCorpusPriors",
                 "FSOT.Formal.CellularPriors",
                 "FSOT.Formal.BlackHoleThesisPriors",
+                "FSOT.Formal.NeuronHybridPriors",
+                "FSOT.Formal.NeuronCohortPriors",
+                "FSOT.Formal.AetherPrimePriors",
+                "FSOT.Formal.MagicCirclePriors",
+                "FSOT.Formal.ExperimentSynthesisPriors",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -517,6 +522,7 @@ def main() -> int:
             ("ingest_formula_corpus.py", "gen_formula_corpus_lean.py", "FormulaCorpusPriors.lean generation failed", "formula corpus ingest failed"),
             ("ingest_cellular_lab.py", "gen_cellular_priors_lean.py", "CellularPriors.lean generation failed", "cellular lab ingest failed"),
             ("ingest_blackhole_thesis.py", "gen_blackhole_thesis_lean.py", "BlackHoleThesisPriors.lean generation failed", "blackhole thesis ingest failed"),
+            ("ingest_experiment_synthesis.py", "gen_experiment_synthesis_lean.py", "ExperimentSynthesisPriors.lean generation failed", "experiment synthesis ingest failed"),
         ]
         for ingest_name, gen_name, gen_fail, ingest_fail in tier5_ingests:
             ingest_script = ROOT / "scripts" / ingest_name
@@ -566,6 +572,7 @@ def main() -> int:
             ("verify_formula_corpus.py", "Formula corpus strict-empirical verification failed"),
             ("verify_cellular_lab.py", "Cellular lab verification failed"),
             ("verify_blackhole_thesis.py", "BlackHole thesis verification failed"),
+            ("verify_experiment_synthesis.py", "Experiment synthesis verification failed"),
         ):
             verify_script = ROOT / "scripts" / verify_name
             if verify_script.exists():

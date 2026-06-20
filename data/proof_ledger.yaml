@@ -916,6 +916,68 @@ entries:
       Bridges prior δψ/hits drift (e.g. Neuroscience 0.1→0.7, Biochemistry hits 0→1).
       Interpretation constants (C field) preserved; raw_S signs match Lean oracle post-align.
 
+  - id: neuron_allen_hybrid_fi
+    domain: neural
+    claim: "Allen Sst interneuron hybrid: 4-point FI mean rel err 7.0%; verifier confidence 0.96; K aligned"
+    status: numerically_verified
+    source_lab: "nuron"
+    source_file: cell data/inconsistency_rerun_report.json
+    verification: scripts/verify_experiment_synthesis.py
+    lean:
+      module: FSOT.Formal.NeuronHybridPriors
+      theorem: neuron_hybrid_priors_bundle
+    physics_note: |
+      Legacy micro_scalar_v16 documented; canon via Neuroscience domain_scalar (Python oracle).
+      Calibrated g₀/g₁ are empirical Allen-fit layer.
+
+  - id: aether_prime_solver_distill
+    domain: ai
+    claim: "Aether Prime: 6 deterministic solver ops; 120 verifier-distill rows; ψ_con/η_eff match Bounds"
+    status: numerically_verified
+    source_lab: "Aether Prime"
+    source_file: fsot_verifier_distill_small.jsonl
+    verification: scripts/verify_experiment_synthesis.py
+    lean:
+      module: FSOT.Formal.AetherPrimePriors
+      theorem: aether_prime_priors_bundle
+
+  - id: magic_circle_glyph_emergence
+    domain: consciousness
+    claim: "Magic circle glyph config: stabilization thresholds + 27-pathway trinary anchor"
+    status: cross_validated
+    source_lab: "fsot magic circle"
+    source_file: fsot_glyph_config.json
+    verification: scripts/verify_experiment_synthesis.py
+    lean:
+      module: FSOT.Formal.MagicCirclePriors
+      theorem: magic_circle_priors_bundle
+
+  - id: allen_neuron_cohort_fi
+    domain: neural
+    claim: "Allen cohort 2166 cells: FI proxy median rel err 24.5%; pearson r 0.61; hero certified 7.0%"
+    status: numerically_verified
+    source_lab: "nuron/allen_cell_types"
+    source_file: data/neuron_cohort_report.json
+    verification: scripts/verify_experiment_synthesis.py
+    lean:
+      module: FSOT.Formal.NeuronCohortPriors
+      theorem: neuron_cohort_priors_bundle
+    physics_note: |
+      Cross-cell FI proxy uses Allen f_i_curve_slope × (threshold+60pA); no per-cell refit.
+      Hero FI from inconsistency_rerun_report (calibrated hybrid, specimen 324257146).
+      Bridge: SMILES 1470 mapped + strict_empirical 7941 + NeuroLab 10 brain components.
+
+  - id: experiment_synthesis_tier7
+    domain: "*"
+    claim: "Tier 7 synthesis: 4 corrected approaches + 21 LLM experiment folders inventoried"
+    status: cross_validated
+    source_lab: "experiment_synthesis"
+    source_file: data/experiment_synthesis_manifest.yaml
+    verification: scripts/verify_experiment_synthesis.py
+    lean:
+      module: FSOT.Formal.ExperimentSynthesisPriors
+      theorem: experiment_synthesis_priors_bundle
+
 playbook_patterns:
   - pattern: wrong_bound_direction
     symptom: "linarith fails on term1 upper bound when oracle shows term1 ≈ -0.2"
