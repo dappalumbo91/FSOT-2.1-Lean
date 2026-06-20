@@ -84,7 +84,27 @@ From `FSOT.Formal.Cosmology`, at cached `S_cosm` and `S_quant`:
 
 These are **internal consistency** proofs at pinned scalars, not standalone fits to cosmological data.
 
-### 5.6 Verification pipeline and reproducibility
+### 5.6 Tier 6: Per-formula observable verification
+
+Beyond sign certificates and lab ingests, the verification program now requires **per-formula** checks for FSOT-derived observables (`data/formula_verification_policy.yaml`):
+
+| Tier | Meaning | Lean module | Python verification |
+|------|---------|-------------|---------------------|
+| `lean_structural` | Sign proofs, bounds, wave intervals | `Domains`, `Cosmology`, `CosmologyLab` | `domain_scalar_oracle.py` |
+| `numeric_formula` | formula → computed vs measured | `FormulaCorpusPriors`, `KnowledgeBasePriors` | `verify_formula_corpus.py`, `run_numeric_eval_queue.py` |
+| `inventory` | Counts only — not per-formula | `UnifiedDBPriors` | `verify_unified_db.py` (index) |
+
+**Strict-empirical corpus:** 7,941 records in `strict_empirical.jsonl`; all matched; 6,921 within 2%; all within 5%. Certified in `FSOT.Formal.FormulaCorpusPriors`.
+
+**Unified DB numeric queue:** `verification_numeric` table in `FSOT_UNIFIED.db` — 9,607 rows after outcome_json backfill (7,830) and CNC turning MRR gap resolution (54 Kaggle runs). **0** strict_empirical records pending. Report: `data/numeric_eval_queue_report.json`.
+
+**Knowledge base:** 19,213 catalog formulas with per-formula pass (`knowledge_base_formula_verification.jsonl`); 7,941 strict-empirical bridge counts in `KnowledgeBasePriors`.
+
+**Additional Tier 6 labs:** Cellular (`CellularPriors` — Soul Simulator 234k records + 13 mt operons); BlackHole thesis (`BlackHoleThesisPriors` — 28/28 within 2%).
+
+Current certificate: **57 proved claims**, 0 `sorry`, `lean_build_ok: true`.
+
+### 5.7 Verification pipeline and reproducibility
 
 The end-to-end pipeline:
 
@@ -93,12 +113,12 @@ fsot_compute.py  →  canonical_constants.json  →  hash gate
        ↓                    ↓                           ↓
 fill_smiles_catalog_gaps   align_neurolab_domains   lake build FSOT.Formal.*
        ↓                    ↓                           ↓
-ingest_lab_data.py  →  verify_lab_registry.py  →  certificate.json
+Tier 2–6 lab ingests  →  formula/numeric verify  →  certificate.json
 ```
 
 A clean reproduction is documented in `REPRODUCE.md`. The source-only release (`python scripts/make_source_release.py`) excludes the 3+ GB `.lake/` tree.
 
-### 5.7 What was not proved
+### 5.8 What was not proved
 
 - FSOT as a fundamental physical theory
 - Sign invariance under arbitrary parameter perturbations

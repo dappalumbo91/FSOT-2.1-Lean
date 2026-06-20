@@ -467,6 +467,45 @@ def main() -> int:
                     print(proc_gen.stdout.strip() or proc_gen.stderr.strip())
                     if proc_gen.returncode != 0:
                         issues.append(gen_fail)
+        gap_resolver = ROOT / "scripts" / "resolve_strict_empirical_gap.py"
+        if gap_resolver.exists():
+            proc_gap = subprocess.run(
+                [sys.executable, str(gap_resolver)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_gap.stdout.strip() or proc_gap.stderr.strip())
+            if proc_gap.returncode != 0:
+                issues.append("strict-empirical CNC gap resolution failed")
+
+        numeric_eval = ROOT / "scripts" / "run_numeric_eval_queue.py"
+        if numeric_eval.exists():
+            proc_ne = subprocess.run(
+                [sys.executable, str(numeric_eval), "--skip-pipeline"],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_ne.stdout.strip() or proc_ne.stderr.strip())
+            if proc_ne.returncode != 0:
+                issues.append("numeric eval queue backfill failed")
+
+        kb_verify = ROOT / "scripts" / "run_knowledge_base_formula_verify.py"
+        if kb_verify.exists():
+            proc_kb = subprocess.run(
+                [sys.executable, str(kb_verify), "--skip-validator"],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_kb.stdout.strip() or proc_kb.stderr.strip())
+            if proc_kb.returncode != 0:
+                issues.append("knowledge base per-formula verification failed")
+
         tier5_ingests = [
             ("ingest_cosmology_wave4.py", "gen_cosmology_wave4_lean.py", "CosmologyWave4.lean generation failed", "cosmology wave4 ingest failed"),
             ("ingest_kronos_lab.py", "gen_kronos_priors_lean.py", "KronosPriors.lean generation failed", "Kronos lab ingest failed"),

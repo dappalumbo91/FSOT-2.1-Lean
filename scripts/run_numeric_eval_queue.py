@@ -18,6 +18,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PIPELINE = Path(r"C:\Users\damia\Desktop\fsot code language\audits\fsot_observable_verification_pipeline.py")
+BACKFILL = ROOT / "scripts" / "backfill_numeric_from_outcomes.py"
+GAP_RESOLVER = ROOT / "scripts" / "resolve_strict_empirical_gap.py"
 DEFAULT_DB = Path(r"C:\Users\damia\Desktop\fsot code language\audits\reports\FSOT_UNIFIED_DATABASE\FSOT_UNIFIED.db")
 OUT_REPORT = ROOT / "data" / "numeric_eval_queue_report.json"
 
@@ -63,6 +65,8 @@ def main() -> int:
     parser.add_argument("--db", type=Path, default=DEFAULT_DB)
     parser.add_argument("--max-candidates", type=int, default=0, help="0 = all candidates")
     parser.add_argument("--dry-run", action="store_true", help="Summarize only, do not run pipeline")
+    parser.add_argument("--skip-pipeline", action="store_true", help="Only backfill from outcome_json")
+    parser.add_argument("--skip-backfill", action="store_true", help="Only run observable pipeline")
     args = parser.parse_args()
 
     before = summarize_db(args.db)
@@ -73,28 +77,49 @@ def main() -> int:
     if args.dry_run:
         return 0
 
-    if not PIPELINE.exists():
-        print(f"FAIL: pipeline not found: {PIPELINE}", file=sys.stderr)
-        return 1
+    if not args.skip_pipeline:
+        if not PIPELINE.exists():
+            print(f"FAIL: pipeline not found: {PIPELINE}", file=sys.stderr)
+            return 1
 
-    cmd = [
-        sys.executable,
-        str(PIPELINE),
-        "--mode",
-        "numeric-only",
-        "--db",
-        str(args.db),
-        "--checkpoint-every",
-        "100",
-    ]
-    if args.max_candidates > 0:
-        cmd.extend(["--max-candidates", str(args.max_candidates)])
+        cmd = [
+            sys.executable,
+            str(PIPELINE),
+            "--mode",
+            "numeric-only",
+            "--db",
+            str(args.db),
+            "--checkpoint-every",
+            "100",
+        ]
+        if args.max_candidates > 0:
+            cmd.extend(["--max-candidates", str(args.max_candidates)])
 
-    print("\n=== Running numeric-only pipeline ===")
-    proc = subprocess.run(cmd, check=False)
-    if proc.returncode != 0:
-        print(f"FAIL: pipeline exit {proc.returncode}", file=sys.stderr)
-        return proc.returncode
+        print("\n=== Running numeric-only pipeline ===")
+        proc = subprocess.run(cmd, check=False)
+        if proc.returncode != 0:
+            print(f"FAIL: pipeline exit {proc.returncode}", file=sys.stderr)
+            return proc.returncode
+
+    if not args.skip_backfill and GAP_RESOLVER.exists():
+        print("\n=== Resolving strict-empirical CNC gap ===")
+        proc_gap = subprocess.run(
+            [sys.executable, str(GAP_RESOLVER), "--db", str(args.db)],
+            check=False,
+        )
+        if proc_gap.returncode != 0:
+            print(f"FAIL: gap resolver exit {proc_gap.returncode}", file=sys.stderr)
+            return proc_gap.returncode
+
+    if not args.skip_backfill and BACKFILL.exists():
+        print("\n=== Backfilling verification_numeric from outcome_json ===")
+        proc_bf = subprocess.run(
+            [sys.executable, str(BACKFILL), "--db", str(args.db)],
+            check=False,
+        )
+        if proc_bf.returncode != 0:
+            print(f"FAIL: backfill exit {proc_bf.returncode}", file=sys.stderr)
+            return proc_bf.returncode
 
     after = summarize_db(args.db)
     payload = {
@@ -104,6 +129,8 @@ def main() -> int:
         "before": before,
         "after": after,
         "delta_numeric_rows": after["verification_numeric_total"] - before["verification_numeric_total"],
+        "backfill_ran": not args.skip_backfill,
+        "pipeline_ran": not args.skip_pipeline,
     }
     OUT_REPORT.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     print(f"\nWrote {OUT_REPORT}")

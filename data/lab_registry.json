@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0",
-  "generated_at": "2026-06-20T02:21:01.900273+00:00",
+  "generated_at": "2026-06-20T02:24:55.421334+00:00",
   "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
   "smiles_lab": {
     "source_path": "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\FSOT_SMILES_Lab_Dataset.json",
@@ -46703,7 +46703,17 @@
     "observable_verified_matched": 7941,
     "within_target_2pct": 6921,
     "within_tolerable_5pct": 7941,
-    "strict_empirical_corpus_path": "C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain\\strict_empirical.jsonl"
+    "strict_empirical_corpus_path": "C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain\\strict_empirical.jsonl",
+    "per_formula_total": 19213,
+    "per_formula_with_target": 160,
+    "per_formula_evaluated": 71,
+    "per_formula_verified": 105,
+    "per_formula_tolerable": 32,
+    "per_formula_unacceptable": 172,
+    "per_formula_within_target_2pct": 50,
+    "per_formula_within_tolerable_5pct": 82,
+    "per_formula_unparseable": 89,
+    "per_formula_validation_path": "C:\\Users\\damia\\Desktop\\Knowledge base\\export\\full_corpus_math_validation.json"
   },
   "math_generator_lab": {
     "present": true,
@@ -46797,7 +46807,7 @@
     ],
     "corpus_path": "C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain\\strict_empirical.jsonl",
     "verification_tier": "numeric_formula",
-    "ingested_at": "2026-06-20T02:21:07.905469+00:00"
+    "ingested_at": "2026-06-20T02:25:01.885591+00:00"
   },
   "cellular_lab": {
     "soul_records_processed": 234447,
@@ -46811,7 +46821,7 @@
     "evolution_total_bp": 11395,
     "domain": "cellular",
     "D_eff": 12,
-    "ingested_at": "2026-06-20T02:21:08.151405+00:00"
+    "ingested_at": "2026-06-20T02:25:02.124655+00:00"
   },
   "blackhole_thesis": {
     "observable_count": 28,
@@ -47074,6 +47084,6 @@
       }
     ],
     "source_md": "C:\\Users\\damia\\Desktop\\New folder (2)\\fsot_trinary_validator_go\\fsot-knowledge-base\\thesis\\FSOT_BlackHole_Thermo_Thesis_2026\\FSOT_BlackHole_Thermo_Thesis_2026_ARXIV_PROFILE_MAIN_PAPER_FRESH_v1.md",
-    "ingested_at": "2026-06-20T02:21:08.383527+00:00"
+    "ingested_at": "2026-06-20T02:25:02.349937+00:00"
   }
 }

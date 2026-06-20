@@ -1,5 +1,5 @@
-# FSOT 35-domain ledger vs lab/numeric coverage (Tier 5 gap index).
-version: "1.0"
+# FSOT 35-domain ledger vs lab/numeric coverage (Tier 6 complete).
+version: "1.1"
 updated: "2026-06-20"
 lean_module: FSOT.Formal.Scalar
 domain_count: 26
@@ -102,12 +102,10 @@ domains:
     D_eff: 21
     status: proved_sign
     labs: [Lean Domains.galactic_raw_S_positive]
-    tier6_candidates: [FSOT_BlackHole_WhiteHole lab observables]
   - id: blackhole
     D_eff: 23
     status: proved_sign
-    labs: [Lean Domains.blackhole_raw_S_positive]
-    tier6_candidates: [FSOT_BlackHole_Thermo_Thesis_2026 numeric lab]
+    labs: [Lean Domains.blackhole_raw_S_positive, BlackHoleThesisPriors 28/28 within 2%]
   - id: cmb
     D_eff: 24
     status: proved_sign
@@ -131,3 +129,9 @@ summary:
     - soul_sibling
     - lean_proofs_bridge
     - unified_db_index
+  tier6_labs:
+    - formula_corpus_strict_empirical
+    - numeric_eval_queue_complete
+    - knowledge_base_per_formula
+    - cellular_soul_evolution
+    - blackhole_thermo_thesis

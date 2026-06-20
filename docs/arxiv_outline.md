@@ -48,6 +48,8 @@ We present a Lean 4 formalization of the FSOT domain scalar `raw_S = term1 + ter
 - `fill_smiles_catalog_gaps.py` — resolves 8 SMILES Tier-22 export gaps
 - `align_neurolab_domains.py` — patches 17/35 NeuroLab domains to Lean ledger params
 - `ingest_lab_data.py` / `verify_lab_registry.py` — SMILES + NeuroLab cross-validation
+- **Tier 6 formula verification** — `verify_formula_corpus.py`, `run_numeric_eval_queue.py`, `backfill_numeric_from_outcomes.py`, `resolve_strict_empirical_gap.py`, `run_knowledge_base_formula_verify.py`
+- `data/formula_verification_policy.yaml` — `lean_structural` / `numeric_formula` / `inventory` tiers
 
 ## 5. Results
 
@@ -86,7 +88,15 @@ We present a Lean 4 formalization of the FSOT domain scalar `raw_S = term1 + ter
 - **NeuroLab:** thalamic gate K within 5×10⁻⁴ of formal `k`; 17 domains ledger-aligned; brain-fit mean_abs_gap &lt;0.15
 - **Lean:** `FSOT.Formal.Lab` — `lab_smiles_domain_sign_bundle` (11 positive domain signs + Layer-2 alignment)
 
-### 5.4 Baryon drag horizon
+### 5.4 Strict-empirical formula corpus (Tier 6)
+
+- **7,941** FSOT-derived formulas checked vs measured observables (`strict_empirical.jsonl`)
+- **6,921** within 2% error band; **all 7,941** within 5%
+- Unified DB `verification_numeric`: **9,607** rows; **0** strict_empirical pending after outcome backfill + CNC gap resolution
+- Knowledge base: **19,213** catalog formulas with per-formula pass; **7,941** strict-empirical bridge (not inventory-only counts)
+- Policy: `FormulaCorpusPriors` for observable checks; `UnifiedDBPriors` for inventory only
+
+### 5.5 Baryon drag horizon
 
 - `r_d = r★(1 + δλ)` with interval certificate |r_d − 147.52| < **0.05** Mpc
 - DESI/BAO band discussion; ±0.01 tightening left as future work
@@ -134,7 +144,8 @@ Physics-to-proof patterns from `proof_ledger.yaml`:
 | Category | Definition | Examples in this work |
 |----------|------------|------------------------|
 | **Proved** | Lean QED, no `sorry` | `medical_raw_S_positive`, `r_d_approx_value` |
-| **Numerically verified** | Oracle/hash gate match | Wave-1 cache, domain oracle rows |
+| **Numerically verified** | Oracle/hash gate match | Wave-1 cache, domain oracle rows, 7941 strict-empirical formulas, lab ingests |
+| **Inventory** | Counts only, not per-formula | UnifiedDBPriors 30k record index |
 | **Conjectured** | Stated, not formalized | FSOT as fundamental physical framework |
 | **Interpretation** | Physics narrative | “dispersal dominance at high D_eff” |
 | **Empirical** | External data agreement | H₀ vs Planck (not a Lean theorem) |

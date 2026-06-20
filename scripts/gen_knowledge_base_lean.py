@@ -21,6 +21,10 @@ def build_lean(registry: dict) -> str:
     obs_verified = kb.get("observable_verified_formulas", 7941)
     obs_matched = kb.get("observable_verified_matched", 7941)
     w2 = kb.get("within_target_2pct", 6921)
+    pf_total = kb.get("per_formula_total", catalog)
+    pf_eval = kb.get("per_formula_evaluated", 0)
+    pf_verified = kb.get("per_formula_verified", 0)
+    pf_w2 = kb.get("per_formula_within_target_2pct", 0)
 
     return f"""/-
   FSOT Formal KnowledgeBasePriors — unified formula transfer corpus certificates.
@@ -42,6 +46,10 @@ def knowledge_base_observable_citations : ℕ := {citations}
 def knowledge_base_observable_verified_formulas : ℕ := {obs_verified}
 def knowledge_base_observable_verified_matched : ℕ := {obs_matched}
 def knowledge_base_within_target_2pct : ℕ := {w2}
+def knowledge_base_per_formula_total : ℕ := {pf_total}
+def knowledge_base_per_formula_evaluated : ℕ := {pf_eval}
+def knowledge_base_per_formula_verified : ℕ := {pf_verified}
+def knowledge_base_per_formula_within_target_2pct : ℕ := {pf_w2}
 
 theorem knowledge_base_source_count_pos : 0 < knowledge_base_source_count := by
   unfold knowledge_base_source_count; norm_num
@@ -53,7 +61,7 @@ theorem knowledge_base_observable_matched_le_verified :
     knowledge_base_observable_verified_matched ≤ knowledge_base_observable_verified_formulas := by
   unfold knowledge_base_observable_verified_matched knowledge_base_observable_verified_formulas; norm_num
 
-/-- Bundle: 19k catalog + 7941 observable-verified strict-empirical bridge. -/
+/-- Bundle: 19k catalog per-formula pass + 7941 strict-empirical observable bridge. -/
 theorem knowledge_base_corpus_bundle :
     knowledge_base_source_count = {sources} ∧
     knowledge_base_catalog_formulas = {catalog} ∧
@@ -62,6 +70,10 @@ theorem knowledge_base_corpus_bundle :
     knowledge_base_observable_verified_formulas = {obs_verified} ∧
     knowledge_base_observable_verified_matched = {obs_matched} ∧
     knowledge_base_within_target_2pct = {w2} ∧
+    knowledge_base_per_formula_total = {pf_total} ∧
+    knowledge_base_per_formula_evaluated = {pf_eval} ∧
+    knowledge_base_per_formula_verified = {pf_verified} ∧
+    knowledge_base_per_formula_within_target_2pct = {pf_w2} ∧
     knowledge_base_observable_verified_matched ≤ knowledge_base_observable_verified_formulas ∧
     (0 : ℝ) < raw_S (get_domain_params "molecular") := by
   refine ⟨
@@ -72,6 +84,10 @@ theorem knowledge_base_corpus_bundle :
     by unfold knowledge_base_observable_verified_formulas; norm_num,
     by unfold knowledge_base_observable_verified_matched; norm_num,
     by unfold knowledge_base_within_target_2pct; norm_num,
+    by unfold knowledge_base_per_formula_total; norm_num,
+    by unfold knowledge_base_per_formula_evaluated; norm_num,
+    by unfold knowledge_base_per_formula_verified; norm_num,
+    by unfold knowledge_base_per_formula_within_target_2pct; norm_num,
     knowledge_base_observable_matched_le_verified,
     molecular_raw_S_positive
   ⟩

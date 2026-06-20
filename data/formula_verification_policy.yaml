@@ -1,7 +1,7 @@
 # FSOT formula verification honesty policy.
 # Lean proves the scalar engine + domain application pattern.
 # Python re-checks each FSOT-derived formula against measured observables.
-version: "1.0"
+version: "1.1"
 updated: "2026-06-20"
 
 tiers:
@@ -13,6 +13,12 @@ tiers:
     meaning: "Each record: FSOT formula → computed_value vs target_quantity (measured)"
     engine: fsot_compute.py / fsot_numeric_eval_v4
     required_fields: [formula_canonical, target_value, computed_value, error_pct, matched]
+    scripts:
+      - scripts/verify_formula_corpus.py
+      - scripts/run_numeric_eval_queue.py
+      - scripts/backfill_numeric_from_outcomes.py
+      - scripts/resolve_strict_empirical_gap.py
+      - scripts/run_knowledge_base_formula_verify.py
 
   meta_inventory:
     meaning: "Counts only — does NOT prove individual formulas"
@@ -27,3 +33,13 @@ bands:
 corpus:
   strict_empirical_jsonl: "C:/Users/damia/Desktop/fsot code language/audits/reports/FSOT_UNIFIED_DATABASE/by_domain/strict_empirical.jsonl"
   knowledge_base_json: "C:/Users/damia/Desktop/Knowledge base/transfer/FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json"
+  unified_db: "C:/Users/damia/Desktop/fsot code language/audits/reports/FSOT_UNIFIED_DATABASE/FSOT_UNIFIED.db"
+  verification_table: verification_numeric
+
+numeric_eval_queue:
+  evaluator_version: fsot_numeric_eval_v4
+  report: data/numeric_eval_queue_report.json
+  target_state:
+    strict_empirical_pending_numeric: 0
+    verification_numeric_total: 9607
+    within_target_2pct: 8283

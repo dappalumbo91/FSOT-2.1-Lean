@@ -15,7 +15,8 @@ We extended the FSOT formal verification pipeline with:
 2. **Brain component prior ingestion** — 10 NeuroLab components with 72bp `dna_proxy` trinary genetic signatures.
 3. **Auto-generated Lean certificates** — `BrainPriors.lean` from registry data; φ-interval brackets synced into `Genomic.lean`.
 4. **Protein amino-acid trinary stack** — 20 canonical phases from `Genetics/fsot_protein`, auto-generated `ProteinPriors.lean`.
-5. **End-to-end green build** — 33 proved claims, 0 `sorry`, `lean_build_ok: true`.
+5. **End-to-end green build** — **57 proved claims** (Tier 6), 0 `sorry`, `lean_build_ok: true`.
+6. **Formula verification honesty** — 7,941 strict-empirical observable checks; unified DB `verification_numeric` queue closed (0 pending).
 
 ---
 

@@ -52,10 +52,16 @@ def verify_knowledge_base(
         issues.append(
             f"knowledge_base: observable_verified_formulas={stored.get('observable_verified_formulas')}"
         )
+    if (stored.get("per_formula_total") or 0) < ver.get("per_formula_total_min", 19000):
+        issues.append(f"knowledge_base: per_formula_total={stored.get('per_formula_total')}")
+    if (stored.get("per_formula_evaluated") or 0) < ver.get("per_formula_evaluated_min", 70):
+        issues.append(f"knowledge_base: per_formula_evaluated={stored.get('per_formula_evaluated')}")
 
     summary = {**live, **{k: stored.get(k) for k in (
         "observable_verified_formulas", "observable_verified_matched",
         "within_target_2pct", "within_tolerable_5pct",
+        "per_formula_total", "per_formula_evaluated", "per_formula_verified",
+        "per_formula_within_target_2pct",
     )}, "issues": len(issues)}
     return issues, summary
 

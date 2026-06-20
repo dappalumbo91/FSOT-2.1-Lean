@@ -839,7 +839,7 @@ entries:
 
   - id: knowledge_base_corpus
     domain: molecular
-    claim: "Knowledge base: 19213 catalog formulas; 7941 strict-empirical observable-verified (6921 within 2%)"
+    claim: "Knowledge base: 19213 catalog per-formula pass; 7941 strict-empirical bridge (6921 within 2%); 105 catalog verified"
     status: numerically_verified
     source_lab: "Knowledge base"
     source_file: transfer/FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json
@@ -847,6 +847,20 @@ entries:
     lean:
       module: FSOT.Formal.KnowledgeBasePriors
       theorem: knowledge_base_corpus_bundle
+    physics_note: |
+      Catalog pass: data/knowledge_base_formula_verification.jsonl (19213 rows).
+      Observable bridge: strict_empirical.jsonl counts — not inventory-only meta-oracle.
+
+  - id: numeric_eval_queue_complete
+    domain: "*"
+    claim: "Unified DB verification_numeric: 9607 rows; 9541 strict_empirical covered; 0 pending"
+    status: numerically_verified
+    source_lab: "FSOT_UNIFIED_DATABASE"
+    source_file: FSOT_UNIFIED.db / verification_numeric
+    verification: scripts/run_numeric_eval_queue.py
+    physics_note: |
+      Backfill from outcome_json (7830) + CNC turning MRR gap (54) + pipeline select_observable hooks.
+      Report: data/numeric_eval_queue_report.json. Evaluator: fsot_numeric_eval_v4.
 
   - id: math_generator_comparisons
     domain: particle

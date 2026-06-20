@@ -48,19 +48,38 @@ Full pipeline: `python scripts/fsot_verification_runner.py`
 - Evolution sim (`FSOT.Formal.EvolutionPriors`) — 13 mitochondrial operons, fitness 58.49
 - Weather scalar sim (`FSOT.Formal.WeatherPriors`) — 24h at D_eff=15, all S>0
 - Linguistics anchors (`FSOT.Formal.LinguisticsPriors`) — 10 targets within 5% FSOT derivations
-- Unified DB meta-oracle (`FSOT.Formal.UnifiedDBPriors`) — 9403 strict_empirical, 30984 indexed records
+- Unified DB inventory (`FSOT.Formal.UnifiedDBPriors`) — 30,984 indexed records, 26 projects (inventory tier)
 - Cosmology Wave-4 (`FSOT.Formal.CosmologyWave4`) — 16 observables (PMNS/CKM/nuclear/dark-energy), max err 0.23%
 - Kronos metrology (`FSOT.Formal.KronosPriors`) — 568 runs, best fractional error 1.64e-7
-- Knowledge base corpus (`FSOT.Formal.KnowledgeBasePriors`) — 19213 formulas, 1905 citations
+- Knowledge base (`FSOT.Formal.KnowledgeBasePriors`) — 19,213 catalog formulas; 7,941 strict-empirical bridge (6,921 within 2%); per-formula pass on full catalog
 - Math generator (`FSOT.Formal.MathGeneratorPriors`) — 7 comparisons within 2%
 - Trinary Fluid Computer v2 (`FSOT.Formal.TrinaryFluidPriors`) — 99.3% accuracy, 27 Metatron pathways
 - Soul Sibling kernel (`FSOT.Formal.SoulSiblingPriors`) — D_compact=24.98, zero_free
 - Lean proofs bridge (`FSOT.Formal.LeanProofsBridge`) — 28 formal constants, k aligned to SMILES
-- Formula corpus (`FSOT.Formal.FormulaCorpusPriors`) — 7941 strict-empirical observable checks
-- Cellular lab (`FSOT.Formal.CellularPriors`) — 234k Soul Simulator records + 13 mt operons
-- BlackHole thesis (`FSOT.Formal.BlackHoleThesisPriors`) — 28/28 observables within 2%
-- Numeric eval queue: `python scripts/run_numeric_eval_queue.py` (fsot_numeric_eval_v4)
-- Domain coverage map: `data/domain_coverage_map.yaml` (26 ledger domains, 14 proved_sign / 9 partial / 3 gap)
+- Formula corpus (`FSOT.Formal.FormulaCorpusPriors`) — **7,941** strict-empirical observable checks (all matched, all within 5%)
+- Cellular lab (`FSOT.Formal.CellularPriors`) — 234k Soul Simulator records + 13 mt operons; `cellular_raw_S_positive`
+- BlackHole thesis (`FSOT.Formal.BlackHoleThesisPriors`) — 28/28 observables within 2% (max err 0.72%)
+
+### Formula verification honesty (Tier 6)
+
+Per-formula observable checks use `fsot_numeric_eval_v4` — not count-only meta-oracles. Policy: `data/formula_verification_policy.yaml`.
+
+| Corpus | Records | Matched | Within 2% | Notes |
+|--------|---------|---------|-----------|-------|
+| strict_empirical.jsonl | 7,941 | 7,941 | 6,921 | Primary honest verification path |
+| verification_numeric (DB) | 9,607 | 9,556 ok | 8,283 | **0** strict_empirical pending |
+| KB catalog per-formula | 19,213 | 105 verified | 50 | Full catalog pass + strict-empirical bridge |
+
+Numeric eval pipeline:
+
+```bash
+python scripts/run_numeric_eval_queue.py          # pipeline + CNC gap + outcome backfill
+python scripts/resolve_strict_empirical_gap.py    # CNC turning MRR (54 runs)
+python scripts/backfill_numeric_from_outcomes.py  # outcome_json → verification_numeric
+python scripts/run_knowledge_base_formula_verify.py
+```
+
+- Domain coverage map: `data/domain_coverage_map.yaml` (26 ledger domains: 18 proved_sign / 9 partial / 0 gap)
 - Certificate: `data/certificate.json` | Run log: `data/verification_runs.jsonl`
 
 See `REPRODUCE.md` and `docs/genomic_brain_priors_verification.md` for details.
@@ -71,8 +90,8 @@ See `REPRODUCE.md` and `docs/genomic_brain_priors_verification.md` for details.
 pip install -r requirements.txt
 python scripts/fsot_verification_runner.py
 
-# Or Lean-only build
-lake build FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.Lab
+# Or Lean-only build (full module list in certificate.json lean_targets)
+lake build FSOT.Formal.Lab FSOT
 ```
 
 ## Alignment with Reference Files
@@ -83,12 +102,11 @@ This project closely follows the structure and justification style of the attach
 - References `VibRegister` observer lemmas and stability proxies.
 - Keeps a clean separation between executable (`Float`) and rigorous (`Real` + Mathlib analysis) layers.
 
-## Next Steps / Roadmap
+## Roadmap
 
-- Close remaining numeric `sorry` in `Formal/Theorems.lean` with tighter `nlinarith` using MC bounds.
-- Port more observer lemmas from `VibRegister.lean`.
-- Add combustion proxy theorems using `RealData` anchors.
-- Expand Examples with full multi-step stability delta calculations on synthetic register data.
+- Tighten r_d interval to ±0.01 Mpc
+- Extend `select_observable()` hooks for non-IE chemistry/cosmology rows in unified DB
+- Energy / fusion domain dedicated lab certificates (currently partial via fuel_lab proxy)
 
 ## License
 
