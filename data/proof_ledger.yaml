@@ -765,19 +765,33 @@ entries:
       module: FSOT.Formal.LinguisticsPriors
       theorem: linguistics_priors_bundle
 
-  - id: unified_db_meta_oracle
+  - id: unified_db_inventory
     domain: "*"
-    claim: "Unified DB: 13637 candidates, 9403 strict_empirical, 146 evaluation_ok; 30984 indexed records across 26 projects"
-    status: numerically_verified
+    claim: "Unified DB inventory: 30984 indexed records, 26 projects (inventory only — not per-formula proof)"
+    status: inventory
     source_lab: "FSOT_UNIFIED_DATABASE_SYSTEM_2026-05-03"
-    source_file: database/FSOT_OBSERVABLE_VERIFICATION_REPORT.json
+    source_file: database/FSOT_UNIFIED_INDEX.json
     verification: scripts/verify_unified_db.py
     lean:
       module: FSOT.Formal.UnifiedDBPriors
       theorem: unified_db_meta_bundle
     physics_note: |
-      Phase-2 index from FSOT_UNIFIED_INDEX.json (not a per-formula Lean re-proof).
-      Meta-oracle certifies corpus scale; 13k candidates = evaluation queue snapshot.
+      Inventory tier: record counts and project index. Does NOT certify individual formulas.
+      See formula_corpus_strict_empirical for observable-checked FSOT formulas.
+
+  - id: formula_corpus_strict_empirical
+    domain: molecular
+    claim: "7941 FSOT-derived formulas checked vs measured observables: 6921 within 2%, all within 5%"
+    status: numerically_verified
+    source_lab: "FSOT_UNIFIED_DATABASE strict_empirical"
+    source_file: by_domain/strict_empirical.jsonl
+    verification: scripts/verify_formula_corpus.py
+    lean:
+      module: FSOT.Formal.FormulaCorpusPriors
+      theorem: formula_corpus_strict_empirical_bundle
+    physics_note: |
+      Each record: formula_canonical → computed_value vs target_quantity (NIST/CRC/etc).
+      This is the honest formula verification path — not a count-only meta-oracle.
 
   - id: cosmology_wave4_observables
     domain: particle

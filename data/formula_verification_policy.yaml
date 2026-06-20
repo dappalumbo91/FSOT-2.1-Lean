@@ -1,0 +1,29 @@
+# FSOT formula verification honesty policy.
+# Lean proves the scalar engine + domain application pattern.
+# Python re-checks each FSOT-derived formula against measured observables.
+version: "1.0"
+updated: "2026-06-20"
+
+tiers:
+  lean_structural:
+    meaning: "Real proofs: raw_S signs, K bounds, wave observables, application lemmas"
+    examples: [FSOT.Formal.Domains, FSOT.Formal.CosmologyLab, FSOT.Formal.CosmologyWave4]
+
+  numeric_formula:
+    meaning: "Each record: FSOT formula → computed_value vs target_quantity (measured)"
+    engine: fsot_compute.py / fsot_numeric_eval_v4
+    required_fields: [formula_canonical, target_value, computed_value, error_pct, matched]
+
+  meta_inventory:
+    meaning: "Counts only — does NOT prove individual formulas"
+    deprecated_for_claims: true
+    note: "Former 'meta-oracle'; use formula_corpus_strict_empirical instead"
+
+bands:
+  target: { max_error_pct: 2.0, label: "FSOT target band" }
+  tolerable_refine: { max_error_pct: 5.0, label: "acceptable pending refinement" }
+  unacceptable: { min_error_pct: 5.0, label: "must re-derive or reject" }
+
+corpus:
+  strict_empirical_jsonl: "C:/Users/damia/Desktop/fsot code language/audits/reports/FSOT_UNIFIED_DATABASE/by_domain/strict_empirical.jsonl"
+  knowledge_base_json: "C:/Users/damia/Desktop/Knowledge base/transfer/FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json"

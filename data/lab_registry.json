@@ -46766,5 +46766,31 @@
       "raw_S",
       "exact_S"
     ]
+  },
+  "formula_corpus": {
+    "records_total": 7941,
+    "matched_count": 7941,
+    "unmatched_count": 0,
+    "within_target_2pct": 6921,
+    "within_tolerable_5pct": 7941,
+    "max_error_pct": 4.841504,
+    "top_project_count": 3,
+    "top_projects": [
+      {
+        "project": "FSOT NEURON Gene LLM",
+        "records": 2647
+      },
+      {
+        "project": "FSOT SMILES Lab",
+        "records": 2647
+      },
+      {
+        "project": "Fsot3.0 code",
+        "records": 2647
+      }
+    ],
+    "corpus_path": "C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain\\strict_empirical.jsonl",
+    "verification_tier": "numeric_formula",
+    "ingested_at": "2026-06-20T02:07:07.918465+00:00"
   }
 }

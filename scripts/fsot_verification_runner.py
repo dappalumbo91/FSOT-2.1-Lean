@@ -156,6 +156,7 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.TrinaryFluidPriors",
                 "FSOT.Formal.SoulSiblingPriors",
                 "FSOT.Formal.LeanProofsBridge",
+                "FSOT.Formal.FormulaCorpusPriors",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -472,6 +473,7 @@ def main() -> int:
             ("ingest_trinary_fluid_computer.py", "gen_trinary_fluid_lean.py", "TrinaryFluidPriors.lean generation failed", "trinary fluid ingest failed"),
             ("ingest_soul_sibling.py", "gen_soul_sibling_lean.py", "SoulSiblingPriors.lean generation failed", "soul sibling ingest failed"),
             ("ingest_lean_proofs_bridge.py", "gen_lean_proofs_bridge_lean.py", "LeanProofsBridge.lean generation failed", "lean proofs bridge ingest failed"),
+            ("ingest_formula_corpus.py", "gen_formula_corpus_lean.py", "FormulaCorpusPriors.lean generation failed", "formula corpus ingest failed"),
         ]
         for ingest_name, gen_name, gen_fail, ingest_fail in tier5_ingests:
             ingest_script = ROOT / "scripts" / ingest_name
@@ -518,6 +520,7 @@ def main() -> int:
             ("verify_trinary_fluid_computer.py", "Trinary Fluid Computer verification failed"),
             ("verify_soul_sibling.py", "Soul Sibling verification failed"),
             ("verify_lean_proofs_bridge.py", "Lean Proofs bridge verification failed"),
+            ("verify_formula_corpus.py", "Formula corpus strict-empirical verification failed"),
         ):
             verify_script = ROOT / "scripts" / verify_name
             if verify_script.exists():

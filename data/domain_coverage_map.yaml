@@ -21,8 +21,8 @@ domains:
     labs: [SMILES, wave1, wave3, wave4]
   - id: higgs
     D_eff: 7
-    status: gap
-    tier6_candidates: [FSOT_BlackHole_WhiteHole blueprint]
+    status: proved_sign
+    labs: [Lean Domains.higgs_raw_S_positive]
   - id: proton
     D_eff: 8
     status: partial
@@ -100,11 +100,14 @@ domains:
     labs: [cosmology_lab wave1-4, FSOTLean MC]
   - id: galactic
     D_eff: 21
-    status: gap
+    status: proved_sign
+    labs: [Lean Domains.galactic_raw_S_positive]
+    tier6_candidates: [FSOT_BlackHole_WhiteHole lab observables]
   - id: blackhole
     D_eff: 23
-    status: gap
-    tier6_candidates: [FSOT_BlackHole_WhiteHole]
+    status: proved_sign
+    labs: [Lean Domains.blackhole_raw_S_positive]
+    tier6_candidates: [FSOT_BlackHole_Thermo_Thesis_2026 numeric lab]
   - id: cmb
     D_eff: 24
     status: proved_sign
@@ -115,10 +118,11 @@ domains:
     labs: [cosmology_wave4]
 
 summary:
-  proved_sign: 14
+  proved_sign: 17
   numerically_verified: 0
   partial: 9
-  gap: 3
+  gap: 1
+  gap_domains: [cellular]
   tier5_labs:
     - cosmology_wave4
     - kronos_metrology

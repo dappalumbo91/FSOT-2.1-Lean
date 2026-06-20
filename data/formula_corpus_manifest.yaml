@@ -1,0 +1,15 @@
+# Strict-empirical FSOT formula corpus — per-formula observable verification.
+version: "1.0"
+updated: "2026-06-20"
+corpus_root: "C:/Users/damia/Desktop/fsot code language/audits/reports/FSOT_UNIFIED_DATABASE"
+
+artifacts:
+  strict_empirical_jsonl:
+    path: "by_domain/strict_empirical.jsonl"
+
+verification:
+  records_min: 7900
+  matched_min: 7900
+  within_target_2pct_min: 6900
+  within_tolerable_5pct_min: 7900
+  unmatched_max: 0

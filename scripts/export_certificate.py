@@ -62,6 +62,7 @@ LEAN_TARGETS = [
     "FSOT.Formal.TrinaryFluidPriors",
     "FSOT.Formal.SoulSiblingPriors",
     "FSOT.Formal.LeanProofsBridge",
+    "FSOT.Formal.FormulaCorpusPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]
