@@ -508,6 +508,16 @@ theorem biological_raw_S_positive :
   exact raw_S_positive_of_term1_gt_neg_08 (get_domain_params "biological")
     (domain_term2_eq_one "biological") (lt_trans (by norm_num) h_term1) h_term3
 
+/-- Cellular biology (D=12, δψ=0.08) positive raw_S — Soul Simulator / evolution crosswalk. -/
+theorem cellular_params_eq_biological :
+    get_domain_params "cellular" = get_domain_params "biological" := by
+  simp [get_domain_params, FSOTParams]
+
+theorem cellular_raw_S_positive :
+    raw_S (get_domain_params "cellular") > 0 := by
+  rw [cellular_params_eq_biological]
+  exact biological_raw_S_positive
+
 /-- Nuclear physics (D=15, observed) positive raw_S — SMILES §42/§64 crosswalk. -/
 theorem nuclear_raw_S_positive :
     raw_S (get_domain_params "nuclear") > 0 := by

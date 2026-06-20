@@ -1,0 +1,14 @@
+# FSOT cellular domain — Soul Simulator corpus + mitochondrial evolution proxy.
+version: "1.0"
+updated: "2026-06-20"
+
+artifacts:
+  soul_simulator_manifest:
+    path: "C:/Users/damia/Desktop/Soul Simulator/data/processed_test/manifest.json"
+  evolution_operons:
+    path: "C:/Users/damia/Desktop/fsot_evolution_/files-b7d9d6b8/fsot_evolution_sim/results/biological_mt_operons.json"
+
+verification:
+  soul_records_min: 200000
+  evolution_operon_count_min: 13
+  evolution_fitness_min: 50.0

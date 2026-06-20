@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-06-20T02:12:05.666280+00:00",
+  "evaluator_version": "fsot_numeric_eval_v4",
+  "db_path": "C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\FSOT_UNIFIED.db",
+  "before": {
+    "records_total": 24800,
+    "verification_numeric_total": 1691,
+    "evaluation_ok": 1672,
+    "evaluation_failed": 19,
+    "within_target_2pct": 1419,
+    "within_tolerable_5pct": 1630,
+    "strict_empirical_pending_numeric": 7875
+  },
+  "after": {
+    "records_total": 24800,
+    "verification_numeric_total": 1723,
+    "evaluation_ok": 1672,
+    "evaluation_failed": 51,
+    "within_target_2pct": 1419,
+    "within_tolerable_5pct": 1630,
+    "strict_empirical_pending_numeric": 7875
+  },
+  "delta_numeric_rows": 32
+}

@@ -31,7 +31,7 @@ It was developed in close collaboration with the Python reference implementation
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
-- **54 proved claims**, 0 active `sorry`, `lean_build_ok: true`
+- **57 proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
 - 64-codon dual-axis map (`FSOT.Formal.CodonPriors`) — 8 primary + 27 secondary patterns
@@ -56,6 +56,10 @@ Full pipeline: `python scripts/fsot_verification_runner.py`
 - Trinary Fluid Computer v2 (`FSOT.Formal.TrinaryFluidPriors`) — 99.3% accuracy, 27 Metatron pathways
 - Soul Sibling kernel (`FSOT.Formal.SoulSiblingPriors`) — D_compact=24.98, zero_free
 - Lean proofs bridge (`FSOT.Formal.LeanProofsBridge`) — 28 formal constants, k aligned to SMILES
+- Formula corpus (`FSOT.Formal.FormulaCorpusPriors`) — 7941 strict-empirical observable checks
+- Cellular lab (`FSOT.Formal.CellularPriors`) — 234k Soul Simulator records + 13 mt operons
+- BlackHole thesis (`FSOT.Formal.BlackHoleThesisPriors`) — 28/28 observables within 2%
+- Numeric eval queue: `python scripts/run_numeric_eval_queue.py` (fsot_numeric_eval_v4)
 - Domain coverage map: `data/domain_coverage_map.yaml` (26 ledger domains, 14 proved_sign / 9 partial / 3 gap)
 - Certificate: `data/certificate.json` | Run log: `data/verification_runs.jsonl`
 

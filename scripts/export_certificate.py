@@ -63,6 +63,8 @@ LEAN_TARGETS = [
     "FSOT.Formal.SoulSiblingPriors",
     "FSOT.Formal.LeanProofsBridge",
     "FSOT.Formal.FormulaCorpusPriors",
+    "FSOT.Formal.CellularPriors",
+    "FSOT.Formal.BlackHoleThesisPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

@@ -779,6 +779,28 @@ entries:
       Inventory tier: record counts and project index. Does NOT certify individual formulas.
       See formula_corpus_strict_empirical for observable-checked FSOT formulas.
 
+  - id: cellular_soul_evolution_lab
+    domain: cellular
+    claim: "Cellular: 234k Soul Simulator records + 13 mitochondrial operons; raw_S(cellular)>0"
+    status: numerically_verified
+    source_lab: "Soul Simulator + fsot_evolution_sim"
+    source_file: data/cellular_manifest.yaml
+    verification: scripts/verify_cellular_lab.py
+    lean:
+      module: FSOT.Formal.CellularPriors
+      theorem: cellular_priors_bundle
+
+  - id: blackhole_thermo_thesis
+    domain: blackhole
+    claim: "BlackHole thermo thesis: 28/28 observables within 2% (max err 0.72%)"
+    status: numerically_verified
+    source_lab: "FSOT_BlackHole_Thermo_Thesis_2026"
+    source_file: FSOT_BlackHole_Thermo_Thesis_2026_ARXIV_PROFILE_MAIN_PAPER_FRESH_v1.md
+    verification: scripts/verify_blackhole_thesis.py
+    lean:
+      module: FSOT.Formal.BlackHoleThesisPriors
+      theorem: blackhole_thesis_bundle
+
   - id: formula_corpus_strict_empirical
     domain: molecular
     claim: "7941 FSOT-derived formulas checked vs measured observables: 6921 within 2%, all within 5%"
@@ -817,7 +839,7 @@ entries:
 
   - id: knowledge_base_corpus
     domain: molecular
-    claim: "Knowledge base: 39 sources, 19213 formulas, 1905 observable citations"
+    claim: "Knowledge base: 19213 catalog formulas; 7941 strict-empirical observable-verified (6921 within 2%)"
     status: numerically_verified
     source_lab: "Knowledge base"
     source_file: transfer/FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json

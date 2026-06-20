@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0",
-  "generated_at": "2026-06-20T02:01:23.091770+00:00",
+  "generated_at": "2026-06-20T02:21:01.900273+00:00",
   "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
   "smiles_lab": {
     "source_path": "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\FSOT_SMILES_Lab_Dataset.json",
@@ -46697,7 +46697,13 @@
     "source_count": 39,
     "catalog_formulas": 19213,
     "resolved_formulas": 19213,
-    "observable_citations": 1905
+    "observable_citations": 1905,
+    "catalog_formulas_total": 19213,
+    "observable_verified_formulas": 7941,
+    "observable_verified_matched": 7941,
+    "within_target_2pct": 6921,
+    "within_tolerable_5pct": 7941,
+    "strict_empirical_corpus_path": "C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain\\strict_empirical.jsonl"
   },
   "math_generator_lab": {
     "present": true,
@@ -46791,6 +46797,283 @@
     ],
     "corpus_path": "C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain\\strict_empirical.jsonl",
     "verification_tier": "numeric_formula",
-    "ingested_at": "2026-06-20T02:07:07.918465+00:00"
+    "ingested_at": "2026-06-20T02:21:07.905469+00:00"
+  },
+  "cellular_lab": {
+    "soul_records_processed": 234447,
+    "soul_file_count": 20,
+    "soul_types": {
+      "multiple_choice": 231838,
+      "question_only": 1634,
+      "raw": 975
+    },
+    "evolution_operon_count": 13,
+    "evolution_total_bp": 11395,
+    "domain": "cellular",
+    "D_eff": 12,
+    "ingested_at": "2026-06-20T02:21:08.151405+00:00"
+  },
+  "blackhole_thesis": {
+    "observable_count": 28,
+    "measured_count": 28,
+    "within_target_2pct": 28,
+    "max_error_pct": 0.718,
+    "strong_tier_count": 28,
+    "observables": [
+      {
+        "index": 1,
+        "name": "BH entropy coeff",
+        "formula": "1/4",
+        "computed": "0.2500",
+        "target": "0.2500",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 2,
+        "name": "Hawking T factor",
+        "formula": "8\u03c0",
+        "computed": "25.133",
+        "target": "25.133",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 3,
+        "name": "Unruh T factor",
+        "formula": "1/(2\u03c0)",
+        "computed": "0.15915",
+        "target": "0.15915",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 4,
+        "name": "Holographic coeff",
+        "formula": "1/4",
+        "computed": "0.2500",
+        "target": "0.2500",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 5,
+        "name": "Penrose efficiency",
+        "formula": "1\u22121/\u221a2",
+        "computed": "0.29289",
+        "target": "0.29289",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 6,
+        "name": "Extremal Q/M",
+        "formula": "1",
+        "computed": "1.0000",
+        "target": "1.0000",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 7,
+        "name": "First-law terms",
+        "formula": "3",
+        "computed": "3.0000",
+        "target": "3.0000",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 8,
+        "name": "BH thermo laws",
+        "formula": "4",
+        "computed": "4.0000",
+        "target": "4.0000",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 9,
+        "name": "Rindler entropy",
+        "formula": "1/4",
+        "computed": "0.2500",
+        "target": "0.2500",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 10,
+        "name": "Smarr T\u00b7S/M",
+        "formula": "1/2",
+        "computed": "0.5000",
+        "target": "0.5000",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 11,
+        "name": "Stefan-Boltzmann exp",
+        "formula": "4",
+        "computed": "4.0000",
+        "target": "4.0000",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 12,
+        "name": "BH entropy denom",
+        "formula": "4",
+        "computed": "4.0000",
+        "target": "4.0000",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 13,
+        "name": "Kerr BH entropy factor",
+        "formula": "$8\\pi\\varphi$",
+        "computed": "$40.726$",
+        "target": "$40.726$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 14,
+        "name": "Schwarzschild BH surface gravity $\\kappa$ (r_s)",
+        "formula": "$c^4/(4GM) \\to 1/(4r_s)$ \u2014 prefactor",
+        "computed": "$1/4$",
+        "target": "$0.2500$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 15,
+        "name": "Reissner-Nordstr\u00f6m extremal $r_Q/r_s$",
+        "formula": "$1/2$",
+        "computed": "$0.5000$",
+        "target": "$0.5000$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 16,
+        "name": "GW150914 merger $\\Delta E/M_\\text{total}c^2$",
+        "formula": "$1 - \\psi_\\text{con} - P_\\text{new}^2$",
+        "computed": "$0.28$",
+        "target": "$0.2780$",
+        "error_pct": 0.718,
+        "tier": "STRONG"
+      },
+      {
+        "index": 17,
+        "name": "Black hole luminosity $L_{BH}/L_\\text{Edd}$ max",
+        "formula": "$P_\\text{new}^2 + G_C\\cdot P_\\text{base} + P_\\text{new}^3$",
+        "computed": "$0.40$",
+        "target": "$0.3997$",
+        "error_pct": 0.075,
+        "tier": "STRONG"
+      },
+      {
+        "index": 18,
+        "name": "AMPS firewall condition (entanglement purification)",
+        "formula": "$1$",
+        "computed": "$1.000$",
+        "target": "$1.000$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 19,
+        "name": "Cardy entropy correction factor",
+        "formula": "$\\pi^2\\cdot c/3$ coefficient $= 1/3$",
+        "computed": "$1/3$",
+        "target": "$0.3333$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 20,
+        "name": "Bekenstein information bound $I_\\text{max}$ (bits/Joule\u00b7m)",
+        "formula": "$k_B \\ln 2 / 2\\pi\\hbar c$ prefix: $1/(2\\pi)$",
+        "computed": "$1/(2\\pi)$",
+        "target": "$0.1592$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 21,
+        "name": "Hawking radiation peak frequency $\\hbar\\omega_\\text{max}/k_BT_H$",
+        "formula": "$e^{W_0(x)}-1$ approx WL at $x=2$ \u2192 $\\approx 2$",
+        "computed": "$2$",
+        "target": "$2.000$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 22,
+        "name": "BH mass\u2013area scaling $A\\propto M^2$ exponent",
+        "formula": "$2$",
+        "computed": "$2.000$",
+        "target": "$2.000$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 23,
+        "name": "Penrose process angular momentum extraction max",
+        "formula": "$1 - 1/\\sqrt2$",
+        "computed": "$0.29289$",
+        "target": "$0.29289$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 24,
+        "name": "Area theorem \u2014 minimum area change",
+        "formula": "$0$",
+        "computed": "$0.000$",
+        "target": "$0.000$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 25,
+        "name": "Susskind\u2013Lindesay Page-time entropy fraction",
+        "formula": "$1/2$",
+        "computed": "$0.5000$",
+        "target": "$0.5000$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 26,
+        "name": "Page curve information release half-point",
+        "formula": "$1/2$",
+        "computed": "$0.5000$",
+        "target": "$0.5000$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      },
+      {
+        "index": 27,
+        "name": "Black hole scrambling time $t_s/r_s$ (fast scrambler)",
+        "formula": "$\\ln(S_{BH})/2\\pi = $ $\\ln(\\pi^2)/2\\pi$",
+        "computed": "$0.1816$",
+        "target": "$0.181$",
+        "error_pct": 0.331,
+        "tier": "STRONG"
+      },
+      {
+        "index": 28,
+        "name": "JT gravity dimensionless coupling at $S_0=2\\pi$",
+        "formula": "$2\\pi$",
+        "computed": "$6.2832$",
+        "target": "$6.2832$",
+        "error_pct": 0.0,
+        "tier": "STRONG"
+      }
+    ],
+    "source_md": "C:\\Users\\damia\\Desktop\\New folder (2)\\fsot_trinary_validator_go\\fsot-knowledge-base\\thesis\\FSOT_BlackHole_Thermo_Thesis_2026\\FSOT_BlackHole_Thermo_Thesis_2026_ARXIV_PROFILE_MAIN_PAPER_FRESH_v1.md",
+    "ingested_at": "2026-06-20T02:21:08.383527+00:00"
   }
 }

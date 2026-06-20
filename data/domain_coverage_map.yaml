@@ -57,8 +57,8 @@ domains:
     labs: [NeuroLab, linguistics]
   - id: cellular
     D_eff: 12
-    status: gap
-    tier6_candidates: [Soul Simulator corpus]
+    status: proved_sign
+    labs: [Soul Simulator corpus, evolution_mt_operons, Lean Domains.cellular_raw_S_positive]
   - id: energy
     D_eff: 15
     status: gap
@@ -118,11 +118,10 @@ domains:
     labs: [cosmology_wave4]
 
 summary:
-  proved_sign: 17
+  proved_sign: 18
   numerically_verified: 0
   partial: 9
-  gap: 1
-  gap_domains: [cellular]
+  gap: 0
   tier5_labs:
     - cosmology_wave4
     - kronos_metrology

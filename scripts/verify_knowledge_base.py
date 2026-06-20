@@ -48,8 +48,15 @@ def verify_knowledge_base(
         issues.append(f"knowledge_base: catalog_formulas={live.get('catalog_formulas')}")
     if (live.get("observable_citations") or 0) < ver.get("observable_citations_min", 1800):
         issues.append(f"knowledge_base: observable_citations={live.get('observable_citations')}")
+    if (stored.get("observable_verified_formulas") or 0) < ver.get("observable_verified_min", 7900):
+        issues.append(
+            f"knowledge_base: observable_verified_formulas={stored.get('observable_verified_formulas')}"
+        )
 
-    summary = {**live, "issues": len(issues)}
+    summary = {**live, **{k: stored.get(k) for k in (
+        "observable_verified_formulas", "observable_verified_matched",
+        "within_target_2pct", "within_tolerable_5pct",
+    )}, "issues": len(issues)}
     return issues, summary
 
 

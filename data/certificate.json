@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-06-20T02:07:21.056754+00:00",
+  "generated_at": "2026-06-20T02:21:48.603065+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -35,6 +35,8 @@
     "FSOT.Formal.SoulSiblingPriors",
     "FSOT.Formal.LeanProofsBridge",
     "FSOT.Formal.FormulaCorpusPriors",
+    "FSOT.Formal.CellularPriors",
+    "FSOT.Formal.BlackHoleThesisPriors",
     "FSOT.Formal.Lab",
     "FSOT"
   ],
@@ -444,6 +446,22 @@
       "lean_theorem": "unified_db_meta_bundle"
     },
     {
+      "id": "cellular_soul_evolution_lab",
+      "claim": "Cellular: 234k Soul Simulator records + 13 mitochondrial operons; raw_S(cellular)>0",
+      "status": "numerically_verified",
+      "domain": "cellular",
+      "lean_module": "FSOT.Formal.CellularPriors",
+      "lean_theorem": "cellular_priors_bundle"
+    },
+    {
+      "id": "blackhole_thermo_thesis",
+      "claim": "BlackHole thermo thesis: 28/28 observables within 2% (max err 0.72%)",
+      "status": "numerically_verified",
+      "domain": "blackhole",
+      "lean_module": "FSOT.Formal.BlackHoleThesisPriors",
+      "lean_theorem": "blackhole_thesis_bundle"
+    },
+    {
       "id": "formula_corpus_strict_empirical",
       "claim": "7941 FSOT-derived formulas checked vs measured observables: 6921 within 2%, all within 5%",
       "status": "numerically_verified",
@@ -469,7 +487,7 @@
     },
     {
       "id": "knowledge_base_corpus",
-      "claim": "Knowledge base: 39 sources, 19213 formulas, 1905 observable citations",
+      "claim": "Knowledge base: 19213 catalog formulas; 7941 strict-empirical observable-verified (6921 within 2%)",
       "status": "numerically_verified",
       "domain": "molecular",
       "lean_module": "FSOT.Formal.KnowledgeBasePriors",
@@ -561,6 +579,11 @@
     "translation_total": 38
   },
   "formal_theorem_inventory": {
+    "BlackHoleThesisPriors": [
+      "blackhole_thesis_observable_count_pos",
+      "blackhole_thesis_within_le_total",
+      "blackhole_thesis_bundle"
+    ],
     "Bounds": [
       "gamma_euler_pos",
       "phi_gt_one",
@@ -881,6 +904,11 @@
       "cameo_symbolic_mae_positive",
       "cameo_symbolic_bundle"
     ],
+    "CellularPriors": [
+      "cellular_soul_records_pos",
+      "cellular_operon_count_pos",
+      "cellular_priors_bundle"
+    ],
     "CodonPriors": [
       "codon_table_count_eq_sixty_four",
       "codon_primary_pattern_space_eq_eight",
@@ -1089,6 +1117,8 @@
       "molecular_raw_S_positive",
       "material_raw_S_positive",
       "biological_raw_S_positive",
+      "cellular_params_eq_biological",
+      "cellular_raw_S_positive",
       "nuclear_raw_S_positive",
       "energy_raw_S_positive"
     ],
@@ -1136,6 +1166,7 @@
     "KnowledgeBasePriors": [
       "knowledge_base_source_count_pos",
       "knowledge_base_catalog_formulas_pos",
+      "knowledge_base_observable_matched_le_verified",
       "knowledge_base_corpus_bundle"
     ],
     "KronosPriors": [
@@ -1160,6 +1191,7 @@
       "lab_molecular_raw_S_positive",
       "lab_material_raw_S_positive",
       "lab_biological_raw_S_positive",
+      "lab_cellular_raw_S_positive",
       "lab_consciousness_raw_S_positive",
       "neurolab_genomic_exact_bundle",
       "neurolab_bio_sign_bundle",
@@ -1325,11 +1357,11 @@
     ]
   },
   "source_manifest_sha256": {
-    "FSOT/Formal/Scalar.lean": "03D9B069FDAA9B9B9452AEAEED88E9C8026236F9F8AA492AE4514D4F75F88322",
+    "FSOT/Formal/Scalar.lean": "D406DBD020F8A22F635C13F2EB22AD02174D95F90813877118F054791B79F19E",
     "FSOT/Formal/Bounds.lean": "FC595D807C1F391AD08B98D627F98E9C80BD7A0670F8D0BEE898017FF4F58FFB",
     "FSOT/Formal/Theorems.lean": "7BBCC598D31EFFDC9FFD5145A90C6D0F5D5892AF165EBE88BF9C7AEF1E213E23",
     "FSOT/Formal/Cosmology.lean": "FBAA456C96AB8350193ECD1E373321A64F97119B0B58690EBCDE8EE5E3D33931",
-    "FSOT/Formal/Domains.lean": "81E2E4279EFF83C65ECDB8C69E8D5313A457DB16C36E39530D522124F0076F5A",
+    "FSOT/Formal/Domains.lean": "8788FFA993AD3C8F2A2FEFA04484FEE8F6C8637365EDFCB812154B068478543E",
     "FSOT/Formal/Genomic.lean": "36F4F7263922401FCF60CDDC24514A4AA1A6373B0EC528CFA2FF9C9EE9E7E47F",
     "FSOT/Formal/BrainPriors.lean": "FEE990051810143B2F777F3A44A059943BE6F1ECBEAA509D444BCD8D2F68587F",
     "FSOT/Formal/CodonPriors.lean": "23790F33B0C571CAE6FC3ED1DCAD6EE7F475A7BCC519C7E957E90E60206CEA6E",
@@ -1340,14 +1372,14 @@
     "scripts/gen_protein_priors_lean.py": "9A5300DDD7D142A6C9FF596651F40AF2B4079FCD8A43E3DDD33695D43308294F",
     "scripts/gen_protein_formulas_lean.py": "9E8FD84D7A89A6000E0253F9BADCAA9F3F6720E7496DB6B53F90443E3FD0B6A4",
     "scripts/domain_scalar_oracle.py": "80DBF4F2592B73E468038D5E54532FA1FB26947DB5ABF4AF2794EFFD566906DA",
-    "scripts/fsot_verification_runner.py": "69BCDD6AA1F5109CEB849CCF71F7D87BA2C0647B46DA795E91AABC33A4286B10",
-    "data/proof_ledger.yaml": "FF0188CD39C7021657A062E5957FF0C52DDEFCF8F708445CD860A2CA70C98A8B",
+    "scripts/fsot_verification_runner.py": "D1F3FFB8FDFF764AECC104444CA2F4A81BCE2E0E6D9994ADD9C1D9167BEFEA58",
+    "data/proof_ledger.yaml": "05609D0E639355E41EB3EAE63CEE22A3E7AD69E44020A05EEA7B07BC78AC26C6",
     "data/canonical_constants.json": "86B41DA6A694DE95E5C80BD8E900E4541B9D552B629F898226777D46DC453DEF"
   },
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify": "python scripts/fsot_verification_runner.py",
-    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.CosmologyWave4 FSOT.Formal.KronosPriors FSOT.Formal.KnowledgeBasePriors FSOT.Formal.MathGeneratorPriors FSOT.Formal.TrinaryFluidPriors FSOT.Formal.SoulSiblingPriors FSOT.Formal.LeanProofsBridge FSOT.Formal.FormulaCorpusPriors FSOT.Formal.Lab FSOT",
+    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.CosmologyWave4 FSOT.Formal.KronosPriors FSOT.Formal.KnowledgeBasePriors FSOT.Formal.MathGeneratorPriors FSOT.Formal.TrinaryFluidPriors FSOT.Formal.SoulSiblingPriors FSOT.Formal.LeanProofsBridge FSOT.Formal.FormulaCorpusPriors FSOT.Formal.CellularPriors FSOT.Formal.BlackHoleThesisPriors FSOT.Formal.Lab FSOT",
     "export": "python scripts/export_certificate.py"
   }
 }

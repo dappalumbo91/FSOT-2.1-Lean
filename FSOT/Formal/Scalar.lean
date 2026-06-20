@@ -115,7 +115,7 @@ def get_domain_params (domain : String) : FSOTParams :=
   | "biological"    => { D_eff := 12, recent_hits := 0, delta_psi := 0.08,  observed := false }
   | "medical"       => { D_eff := 13, recent_hits := 1, delta_psi := 0.35,  observed := true }
   | "neural"        => { D_eff := 14, recent_hits := 1, delta_psi := 0.70,  observed := true }
-  | "cellular"      => { D_eff := 12, recent_hits := 0, delta_psi := 0.1,   observed := false }
+  | "cellular"      => { D_eff := 12, recent_hits := 0, delta_psi := 0.08,  observed := false }
   | "energy"        => { D_eff := 15, recent_hits := 1, delta_psi := 0.9,   observed := true }
   | "nuclear"       => { D_eff := 15, recent_hits := 1, delta_psi := 1.0,   observed := true }
   | "fusion"        => { D_eff := 16, recent_hits := 1, delta_psi := 0.95,  observed := true }

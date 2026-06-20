@@ -19,6 +19,7 @@ REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from knowledge_base_corpus import load_unified_transfer, summarize_knowledge_base  # noqa: E402
+from knowledge_base_formula_verify import summarize_knowledge_base_formulas  # noqa: E402
 
 
 def ingest_knowledge_base(manifest_path: Path = MANIFEST_PATH) -> dict:
@@ -28,11 +29,20 @@ def ingest_knowledge_base(manifest_path: Path = MANIFEST_PATH) -> dict:
     knowledge_root = Path(manifest["knowledge_root"])
     transfer_path = knowledge_root / manifest["artifacts"]["unified_transfer"]["path"]
     data = load_unified_transfer(transfer_path) if transfer_path.exists() else {}
+    strict_path = Path(
+        r"C:\Users\damia\Desktop\fsot code language\audits\reports\FSOT_UNIFIED_DATABASE\by_domain\strict_empirical.jsonl"
+    )
+    formula_stats = (
+        summarize_knowledge_base_formulas(data, strict_path)
+        if transfer_path.exists() and strict_path.exists()
+        else {}
+    )
     return {
         "present": transfer_path.exists(),
         "knowledge_root": str(knowledge_root),
         "transfer_path": str(transfer_path),
         **summarize_knowledge_base(data),
+        **formula_stats,
     }
 
 

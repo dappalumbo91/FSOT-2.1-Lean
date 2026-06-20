@@ -1,0 +1,13 @@
+# FSOT BlackHole Thermo Thesis 2026 observable verification.
+version: "1.0"
+updated: "2026-06-20"
+thesis_root: "C:/Users/damia/Desktop/New folder (2)/fsot_trinary_validator_go/fsot-knowledge-base/thesis/FSOT_BlackHole_Thermo_Thesis_2026"
+
+artifacts:
+  thesis_md:
+    path: "FSOT_BlackHole_Thermo_Thesis_2026_ARXIV_PROFILE_MAIN_PAPER_FRESH_v1.md"
+
+verification:
+  observable_count_min: 28
+  within_target_2pct_min: 28
+  max_error_pct: 2.0

@@ -102,6 +102,10 @@ theorem lab_biological_raw_S_positive :
     raw_S (get_domain_params "biological") > 0 :=
   biological_raw_S_positive
 
+theorem lab_cellular_raw_S_positive :
+    raw_S (get_domain_params "cellular") > 0 :=
+  cellular_raw_S_positive
+
 theorem lab_consciousness_raw_S_positive :
     raw_S (get_domain_params "consciousness") > 0 :=
   consciousness_raw_S_positive
