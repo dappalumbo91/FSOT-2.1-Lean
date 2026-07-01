@@ -1,0 +1,141 @@
+# FSOT 35-domain NeuroLab table → Lean ledger → empirical lab sources.
+# Generator input for scripts/run_domain_coverage_eval.py
+
+version: "1.0"
+authority: "C:/Users/damia/Desktop/FSOT document update/fsot_compute.py"
+
+# Lean ledger overrides (from neurolab_ledger_alignment.yaml)
+lean_overrides:
+  Atomic_Physics: particle
+  Chemistry: electron
+  Molecular_Chemistry: chemical
+  Quantum_Computing: ai
+  Biology: biological
+  Biochemistry: medical
+  Thermodynamics: energy
+  Neuroscience: neural
+  Materials_Science: material
+  Psychology: consciousness
+  High_Energy_Physics: higgs
+  Planetary_Science: galactic
+  Particle_Astrophysics: cmb
+  Quantum_Mechanics: quantum
+  Nuclear_Physics: nuclear
+  Cosmology: cosmological
+  Astronomy: astronomical
+
+# Empirical lab bindings (neurolab domain → registry key + optional lean rollup)
+empirical_sources:
+  Neuroscience:
+    labs: [smiles_lab, neuron_cohort_lab]
+    lean_domain: neural
+  Molecular_Chemistry:
+    labs: [smiles_lab]
+    lean_domain: chemical
+  Chemistry:
+    labs: [smiles_lab]
+    lean_domain: electron
+  Physical_Chemistry:
+    labs: [smiles_lab]
+    lean_domain: chemical
+  Materials_Science:
+    labs: [smiles_lab, species_catalog]
+    lean_domain: material
+  Condensed_Matter:
+    labs: [smiles_lab, species_catalog]
+    lean_domain: material
+  Optics:
+    labs: [smiles_lab]
+    lean_domain: material
+  Electromagnetism:
+    labs: [smiles_lab]
+    lean_domain: material
+  Acoustics:
+    labs: [smiles_lab]
+    lean_domain: material
+  Quantum_Mechanics:
+    labs: [smiles_lab]
+    lean_domain: quantum
+  Quantum_Optics:
+    labs: [smiles_lab]
+    lean_domain: quantum
+  Particle_Physics:
+    labs: [smiles_lab]
+    lean_domain: particle
+  Atomic_Physics:
+    labs: [smiles_lab]
+    lean_domain: particle
+  Nuclear_Physics:
+    labs: [smiles_lab, blackhole_thesis]
+    lean_domain: nuclear
+  High_Energy_Physics:
+    labs: [smiles_lab]
+    lean_domain: higgs
+  Biochemistry:
+    labs: [smiles_lab, neurolab_bio]
+    lean_domain: medical
+  Biology:
+    labs: [evolution_lab, cellular_lab, neurolab_bio]
+    lean_domain: biological
+  Psychology:
+    labs: [linguistics_lab]
+    lean_domain: consciousness
+  Thermodynamics:
+    labs: [fuel_lab]
+    lean_domain: energy
+  Cosmology:
+    labs: [cosmology_lambda_cdm]
+    lean_domain: cosmological
+  Astronomy:
+    labs: [cosmology_lambda_cdm, cosmology_wave4]
+    lean_domain: astronomical
+  Astrophysics:
+    labs: [cosmology_wave4]
+    lean_domain: astronomical
+  Planetary_Science:
+    labs: [cosmology_wave4]
+    lean_domain: galactic
+  Particle_Astrophysics:
+    labs: [cosmology_wave4]
+    lean_domain: cmb
+  Meteorology:
+    labs: [weather_lab]
+    lean_domain: energy
+  Atmospheric_Physics:
+    labs: [weather_lab]
+    lean_domain: energy
+  Fluid_Dynamics:
+    labs: [trinary_fluid_computer, vibra_register]
+    lean_domain: energy
+  Ecology:
+    labs: [evolution_lab]
+    lean_domain: biological
+  Oceanography:
+    labs: [weather_lab]
+    lean_domain: energy
+  Geophysics:
+    labs: [weather_lab]
+    lean_domain: energy
+  Seismology:
+    labs: [weather_lab]
+    lean_domain: energy
+  Economics:
+    labs: [linguistics_lab]
+    lean_domain: consciousness
+  Sociology:
+    labs: [linguistics_lab]
+    lean_domain: consciousness
+  Quantum_Computing:
+    labs: [trinary_os]
+    lean_domain: ai
+  Quantum_Gravity:
+    labs: [blackhole_thesis]
+    lean_domain: blackhole
+
+verification:
+  min_domain_count: 35
+  min_empirical_domains: 28
+  min_total_empirical_records: 2000
+  min_smiles_mapped: 1400
+  lean_align_tol: 1.0e-9
+  scalar_sign_tol: 1.0e-6

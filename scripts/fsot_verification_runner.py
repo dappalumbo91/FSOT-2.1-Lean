@@ -588,6 +588,44 @@ def main() -> int:
                 if proc_v.returncode != 0:
                     issues.append(fail_msg)
 
+        # Tier 9: 35 NeuroLab domains → Lean ledger + empirical lab rollup
+        domain_eval = ROOT / "scripts" / "run_domain_coverage_eval.py"
+        domain_gen = ROOT / "scripts" / "gen_domain_coverage_lean.py"
+        if domain_eval.exists():
+            proc_dc = subprocess.run(
+                [sys.executable, str(domain_eval)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_dc.stdout.strip() or proc_dc.stderr.strip())
+            if proc_dc.returncode != 0:
+                issues.append("35-domain coverage eval failed")
+            elif domain_gen.exists():
+                proc_dg = subprocess.run(
+                    [sys.executable, str(domain_gen)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_dg.stdout.strip() or proc_dg.stderr.strip())
+                if proc_dg.returncode != 0:
+                    issues.append("DomainCoveragePriors.lean generation failed")
+        domain_verify = ROOT / "scripts" / "verify_domain_coverage.py"
+        if domain_verify.exists():
+            proc_dv = subprocess.run(
+                [sys.executable, str(domain_verify)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_dv.stdout.strip())
+            if proc_dv.returncode != 0:
+                issues.append("35-domain coverage verification failed")
+
         parse_bio = ROOT / "scripts" / "parse_neurolab_translations.py"
         verify_bio = ROOT / "scripts" / "verify_neurolab_bio.py"
         if parse_bio.exists():

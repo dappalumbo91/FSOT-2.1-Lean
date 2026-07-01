@@ -1,15 +1,15 @@
-generated_at: '2026-07-01T04:34:15.553366+00:00'
+generated_at: '2026-07-01T04:43:45.783058+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 39
-  proved_claims: 63
+  lean_formal_modules: 40
+  proved_claims: 64
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 5
-  tiers_total: 5
+  tiers_complete: 6
+  tiers_total: 6
   percent_complete: 100.0
-current_position: Tier 8 strata certified; precision refinement phase next
+current_position: Tier 9 domain coverage certified; per-domain numeric bounds next
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -29,6 +29,7 @@ tiers:
   - CellularPriors
   - CodonPriors
   - CosmologyLab
+  - DomainCoveragePriors
   - EvolutionPriors
   - ExperimentSynthesisPriors
   - FormulaCorpusPriors
@@ -71,6 +72,18 @@ tiers:
   metrics:
     held_out_cells: 2165
     strata_count: 4
+- tier: 9
+  name: 35-domain NeuroLab coverage (Lean + empirical labs)
+  status: complete
+  metrics:
+    domain_count: 35
+    empirical_domains: 35
+    total_empirical_records: 261999
+    lean_override_aligned: 17/17
+    negative_scalar_domains: 10
+  artifacts:
+  - FSOT.Formal.DomainCoveragePriors
+  - data/fsot_35_domain_registry.yaml
 next_steps:
 - Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class
 - "Multi-hero held-out: certify 3\u20135 specimens per Sst/PV/VIP/L2/3"
@@ -84,3 +97,5 @@ key_metrics:
   allen_eval_cells: 2166
   hero_fi_pct: 7.0
   canonical_bridge_fi_pct: 7.35
+  neurolab_domain_count: 35
+  domains_with_empirical_data: 35

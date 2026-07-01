@@ -71,6 +71,7 @@ LEAN_TARGETS = [
     "FSOT.Formal.AetherPrimePriors",
     "FSOT.Formal.MagicCirclePriors",
     "FSOT.Formal.ExperimentSynthesisPriors",
+    "FSOT.Formal.DomainCoveragePriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

@@ -29,6 +29,7 @@ def build_progress() -> dict:
     registry = _load_json(ROOT / "data" / "lab_registry.json")
     cohort = _load_json(ROOT / "data" / "neuron_cohort_report.json")
     allen_verify = _load_json(ROOT / "data" / "allen_sdk_verification.json")
+    domain_cov = _load_json(ROOT / "data" / "domain_coverage_report.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -81,6 +82,22 @@ def build_progress() -> dict:
                 "strata_count": len(strata.get("strata") or {}),
             },
         },
+        {
+            "tier": 9,
+            "name": "35-domain NeuroLab coverage (Lean + empirical labs)",
+            "status": "complete"
+            if domain_cov.get("domain_count") == 35
+            and domain_cov.get("domains_with_empirical_data") == 35
+            else "pending",
+            "metrics": {
+                "domain_count": domain_cov.get("domain_count"),
+                "empirical_domains": domain_cov.get("domains_with_empirical_data"),
+                "total_empirical_records": domain_cov.get("total_empirical_records"),
+                "lean_override_aligned": f"{domain_cov.get('lean_param_aligned_count')}/{domain_cov.get('lean_mapped_count')}",
+                "negative_scalar_domains": len(domain_cov.get("negative_scalar_domains") or []),
+            },
+            "artifacts": ["FSOT.Formal.DomainCoveragePriors", "data/fsot_35_domain_registry.yaml"],
+        },
     ]
 
     next_steps = [
@@ -107,7 +124,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 8 strata certified; precision refinement phase next",
+        "current_position": "Tier 9 domain coverage certified; per-domain numeric bounds next",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {
@@ -120,6 +137,8 @@ def build_progress() -> dict:
             "canonical_bridge_fi_pct": round(
                 100 * float((cohort.get("canonical_scalar_bridge") or {}).get("hero_canonical_mean_rel_err", 1)), 2
             ),
+            "neurolab_domain_count": domain_cov.get("domain_count"),
+            "domains_with_empirical_data": domain_cov.get("domains_with_empirical_data"),
         },
     }
 

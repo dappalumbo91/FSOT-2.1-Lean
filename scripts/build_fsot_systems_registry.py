@@ -100,6 +100,7 @@ def build_registry() -> dict:
         ledger_entries = ledger.get("entries") or []
 
     syn = registry.get("experiment_synthesis", {})
+    domain_cov = _load_json(ROOT / "data" / "domain_coverage_report.json")
     proved_raw = cert.get("proved_claims") or cert.get("proved_claim_count")
     proved_claims = len(proved_raw) if isinstance(proved_raw, list) else proved_raw
 
@@ -120,8 +121,11 @@ def build_registry() -> dict:
             "scripts/run_neuron_cohort_eval.py",
             "scripts/ingest_experiment_synthesis.py",
             "scripts/gen_experiment_synthesis_lean.py",
+            "scripts/run_domain_coverage_eval.py",
+            "scripts/gen_domain_coverage_lean.py",
             "lake build FSOT",
             "scripts/verify_experiment_synthesis.py",
+            "scripts/verify_domain_coverage.py",
             "scripts/fsot_verification_runner.py",
             "scripts/export_certificate.py",
             "scripts/build_fsot_systems_registry.py",
@@ -132,6 +136,16 @@ def build_registry() -> dict:
             "aether_prime": syn.get("aether_prime_lab", {}),
             "magic_circle": syn.get("magic_circle_lab", {}),
             "llm_experiments": syn.get("llm_experiments_lab", {}),
+        },
+        "tier9_domain_coverage": {
+            "domain_count": domain_cov.get("domain_count"),
+            "domains_with_empirical_data": domain_cov.get("domains_with_empirical_data"),
+            "total_empirical_records": domain_cov.get("total_empirical_records"),
+            "lean_override_aligned": f"{domain_cov.get('lean_param_aligned_count')}/{domain_cov.get('lean_mapped_count')}",
+            "negative_scalar_domains": domain_cov.get("negative_scalar_domains") or [],
+            "registry_yaml": "data/fsot_35_domain_registry.yaml",
+            "report_json": "data/domain_coverage_report.json",
+            "lean_module": "FSOT.Formal.DomainCoveragePriors",
         },
         "canonical_scalar_bridge": cohort.get("canonical_scalar_bridge", {}),
         "neurolab_smiles_bridge": cohort.get("neurolab_smiles_bridge", {}),

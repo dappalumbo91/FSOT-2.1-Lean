@@ -1,0 +1,907 @@
+{
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "domain_count": 35,
+  "domains_with_empirical_data": 35,
+  "total_empirical_records": 261999,
+  "lean_mapped_count": 17,
+  "lean_param_aligned_count": 17,
+  "negative_scalar_domains": [
+    "Atmospheric_Physics",
+    "Cosmology",
+    "Fluid_Dynamics",
+    "Geophysics",
+    "Meteorology",
+    "Oceanography",
+    "Particle_Astrophysics",
+    "Quantum_Computing",
+    "Quantum_Gravity",
+    "Seismology"
+  ],
+  "domains": [
+    {
+      "neurolab_domain": "Acoustics",
+      "lean_domain": "material",
+      "D_eff": 10,
+      "hits": 0,
+      "delta_psi": 0.3,
+      "observed": true,
+      "domain_scalar_S": 0.3115907970863415,
+      "scalar_sign": "positive",
+      "lean_raw_S": 0.7978167460880297,
+      "lean_sign_theorem": "material_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 1470,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Astronomy",
+      "lean_domain": "astronomical",
+      "D_eff": 20,
+      "hits": 1,
+      "delta_psi": 1.0,
+      "observed": true,
+      "domain_scalar_S": 0.8984595681660628,
+      "scalar_sign": "positive",
+      "lean_raw_S": 2.138061039667111,
+      "lean_sign_theorem": "astronomical_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 46,
+      "empirical_sources": [
+        {
+          "lab": "cosmology_lambda_cdm",
+          "records": 30,
+          "median_error_pct": 0.005633747260469587
+        },
+        {
+          "lab": "cosmology_wave4",
+          "records": 16,
+          "median_error_pct": 0.03162247159570792
+        }
+      ],
+      "empirical_median_error_pct": 0.03162247159570792,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Astrophysics",
+      "lean_domain": "astronomical",
+      "D_eff": 24,
+      "hits": 1,
+      "delta_psi": 1.0,
+      "observed": true,
+      "domain_scalar_S": 0.8824107984181293,
+      "scalar_sign": "positive",
+      "lean_raw_S": 2.138061039667111,
+      "lean_sign_theorem": "astronomical_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 16,
+      "empirical_sources": [
+        {
+          "lab": "cosmology_wave4",
+          "records": 16,
+          "median_error_pct": 0.03162247159570792
+        }
+      ],
+      "empirical_median_error_pct": 0.03162247159570792,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Atmospheric_Physics",
+      "lean_domain": "energy",
+      "D_eff": 17,
+      "hits": 2,
+      "delta_psi": 0.8,
+      "observed": false,
+      "domain_scalar_S": -0.47643190542960023,
+      "scalar_sign": "negative",
+      "lean_raw_S": 1.872760423200424,
+      "lean_sign_theorem": "energy_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 24,
+      "empirical_sources": [
+        {
+          "lab": "weather_lab",
+          "records": 24,
+          "median_error_pct": null
+        }
+      ],
+      "empirical_median_error_pct": null,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Atomic_Physics",
+      "lean_domain": "particle",
+      "D_eff": 7,
+      "hits": 0,
+      "delta_psi": 0.85,
+      "observed": true,
+      "domain_scalar_S": 0.7358238658627416,
+      "scalar_sign": "positive",
+      "lean_raw_S": 1.751037437187807,
+      "lean_sign_theorem": "particle_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 1470,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Biochemistry",
+      "lean_domain": "medical",
+      "D_eff": 13,
+      "hits": 1,
+      "delta_psi": 0.35,
+      "observed": true,
+      "domain_scalar_S": 0.3062212293865662,
+      "scalar_sign": "positive",
+      "lean_raw_S": 0.7287135707250552,
+      "lean_sign_theorem": "medical_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 1508,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        },
+        {
+          "lab": "neurolab_bio",
+          "records": 38,
+          "median_error_pct": null
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Biology",
+      "lean_domain": "biological",
+      "D_eff": 12,
+      "hits": 0,
+      "delta_psi": 0.08,
+      "observed": false,
+      "domain_scalar_S": 0.4447250077038459,
+      "scalar_sign": "positive",
+      "lean_raw_S": 1.0583105195018667,
+      "lean_sign_theorem": "biological_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 234498,
+      "empirical_sources": [
+        {
+          "lab": "evolution_lab",
+          "records": 13,
+          "median_error_pct": null
+        },
+        {
+          "lab": "cellular_lab",
+          "records": 234447,
+          "median_error_pct": null
+        },
+        {
+          "lab": "neurolab_bio",
+          "records": 38,
+          "median_error_pct": null
+        }
+      ],
+      "empirical_median_error_pct": null,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Chemistry",
+      "lean_domain": "electron",
+      "D_eff": 8,
+      "hits": 0,
+      "delta_psi": 0.6,
+      "observed": true,
+      "domain_scalar_S": 0.4078840642307454,
+      "scalar_sign": "positive",
+      "lean_raw_S": 0.9706402573161165,
+      "lean_sign_theorem": "electron_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 1470,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Condensed_Matter",
+      "lean_domain": "material",
+      "D_eff": 14,
+      "hits": 0,
+      "delta_psi": 0.5,
+      "observed": true,
+      "domain_scalar_S": 0.3384059955797751,
+      "scalar_sign": "positive",
+      "lean_raw_S": 0.7978167460880297,
+      "lean_sign_theorem": "material_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 2154,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        },
+        {
+          "lab": "species_catalog",
+          "records": 684,
+          "median_error_pct": 0.2350703412848426
+        }
+      ],
+      "empirical_median_error_pct": 0.2350703412848426,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Cosmology",
+      "lean_domain": "cosmological",
+      "D_eff": 25,
+      "hits": 0,
+      "delta_psi": 1.0,
+      "observed": false,
+      "domain_scalar_S": -0.5024559462100433,
+      "scalar_sign": "negative",
+      "lean_raw_S": null,
+      "lean_sign_theorem": "cosmological_raw_S_negative",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 30,
+      "empirical_sources": [
+        {
+          "lab": "cosmology_lambda_cdm",
+          "records": 30,
+          "median_error_pct": 0.005633747260469587
+        }
+      ],
+      "empirical_median_error_pct": 0.005633747260469587,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Ecology",
+      "lean_domain": "biological",
+      "D_eff": 15,
+      "hits": 1,
+      "delta_psi": 0.2,
+      "observed": false,
+      "domain_scalar_S": 0.3003170815488647,
+      "scalar_sign": "positive",
+      "lean_raw_S": 1.0583105195018667,
+      "lean_sign_theorem": "biological_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 13,
+      "empirical_sources": [
+        {
+          "lab": "evolution_lab",
+          "records": 13,
+          "median_error_pct": null
+        }
+      ],
+      "empirical_median_error_pct": null,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Economics",
+      "lean_domain": "consciousness",
+      "D_eff": 20,
+      "hits": 3,
+      "delta_psi": 1.5,
+      "observed": true,
+      "domain_scalar_S": 0.6460045206857493,
+      "scalar_sign": "positive",
+      "lean_raw_S": 2.4991706281862376,
+      "lean_sign_theorem": "consciousness_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 10,
+      "empirical_sources": [
+        {
+          "lab": "linguistics_lab",
+          "records": 10,
+          "median_error_pct": 0.0013504254899468224
+        }
+      ],
+      "empirical_median_error_pct": 0.0013504254899468224,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Electromagnetism",
+      "lean_domain": "material",
+      "D_eff": 9,
+      "hits": 0,
+      "delta_psi": 0.7,
+      "observed": true,
+      "domain_scalar_S": 0.5188655207983146,
+      "scalar_sign": "positive",
+      "lean_raw_S": 0.7978167460880297,
+      "lean_sign_theorem": "material_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 1470,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Fluid_Dynamics",
+      "lean_domain": "energy",
+      "D_eff": 15,
+      "hits": 1,
+      "delta_psi": 0.9,
+      "observed": false,
+      "domain_scalar_S": -0.562733806256851,
+      "scalar_sign": "negative",
+      "lean_raw_S": 1.872760423200424,
+      "lean_sign_theorem": "energy_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 29,
+      "empirical_sources": [
+        {
+          "lab": "trinary_fluid_computer",
+          "records": 27,
+          "median_error_pct": 99.3
+        },
+        {
+          "lab": "vibra_register",
+          "records": 2,
+          "median_error_pct": null
+        }
+      ],
+      "empirical_median_error_pct": 99.3,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Geophysics",
+      "lean_domain": "energy",
+      "D_eff": 19,
+      "hits": 2,
+      "delta_psi": 1.0,
+      "observed": false,
+      "domain_scalar_S": -0.5490942927204095,
+      "scalar_sign": "negative",
+      "lean_raw_S": 1.872760423200424,
+      "lean_sign_theorem": "energy_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 24,
+      "empirical_sources": [
+        {
+          "lab": "weather_lab",
+          "records": 24,
+          "median_error_pct": null
+        }
+      ],
+      "empirical_median_error_pct": null,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "High_Energy_Physics",
+      "lean_domain": "higgs",
+      "D_eff": 7,
+      "hits": 1,
+      "delta_psi": 0.95,
+      "observed": true,
+      "domain_scalar_S": 0.8862640566467022,
+      "scalar_sign": "positive",
+      "lean_raw_S": 2.109039424268679,
+      "lean_sign_theorem": "higgs_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 1470,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Materials_Science",
+      "lean_domain": "material",
+      "D_eff": 10,
+      "hits": 0,
+      "delta_psi": 0.5,
+      "observed": true,
+      "domain_scalar_S": 0.33525988073638374,
+      "scalar_sign": "positive",
+      "lean_raw_S": 0.7978167460880297,
+      "lean_sign_theorem": "material_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 2154,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        },
+        {
+          "lab": "species_catalog",
+          "records": 684,
+          "median_error_pct": 0.2350703412848426
+        }
+      ],
+      "empirical_median_error_pct": 0.2350703412848426,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Meteorology",
+      "lean_domain": "energy",
+      "D_eff": 16,
+      "hits": 2,
+      "delta_psi": 0.8,
+      "observed": false,
+      "domain_scalar_S": -0.4849970208468799,
+      "scalar_sign": "negative",
+      "lean_raw_S": 1.872760423200424,
+      "lean_sign_theorem": "energy_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 24,
+      "empirical_sources": [
+        {
+          "lab": "weather_lab",
+          "records": 24,
+          "median_error_pct": null
+        }
+      ],
+      "empirical_median_error_pct": null,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Molecular_Chemistry",
+      "lean_domain": "chemical",
+      "D_eff": 9,
+      "hits": 0,
+      "delta_psi": 0.5,
+      "observed": true,
+      "domain_scalar_S": 0.3345733830778106,
+      "scalar_sign": "positive",
+      "lean_raw_S": 0.7961830900509372,
+      "lean_sign_theorem": "chemical_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 1470,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Neuroscience",
+      "lean_domain": "neural",
+      "D_eff": 14,
+      "hits": 1,
+      "delta_psi": 0.7,
+      "observed": true,
+      "domain_scalar_S": 0.5143619629083619,
+      "scalar_sign": "positive",
+      "lean_raw_S": 1.2240253341904455,
+      "lean_sign_theorem": "neural_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 3636,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        },
+        {
+          "lab": "neuron_cohort_lab",
+          "records": 2166,
+          "median_error_pct": 24.522634418835963
+        }
+      ],
+      "empirical_median_error_pct": 24.522634418835963,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Nuclear_Physics",
+      "lean_domain": "nuclear",
+      "D_eff": 15,
+      "hits": 1,
+      "delta_psi": 1.0,
+      "observed": true,
+      "domain_scalar_S": 0.9213094330291355,
+      "scalar_sign": "positive",
+      "lean_raw_S": 2.192436781833356,
+      "lean_sign_theorem": "nuclear_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 1498,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        },
+        {
+          "lab": "blackhole_thesis",
+          "records": 28,
+          "median_error_pct": 0.718
+        }
+      ],
+      "empirical_median_error_pct": 0.718,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Oceanography",
+      "lean_domain": "energy",
+      "D_eff": 17,
+      "hits": 1,
+      "delta_psi": 0.7,
+      "observed": false,
+      "domain_scalar_S": -0.37715907584612024,
+      "scalar_sign": "negative",
+      "lean_raw_S": 1.872760423200424,
+      "lean_sign_theorem": "energy_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 24,
+      "empirical_sources": [
+        {
+          "lab": "weather_lab",
+          "records": 24,
+          "median_error_pct": null
+        }
+      ],
+      "empirical_median_error_pct": null,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Optics",
+      "lean_domain": "material",
+      "D_eff": 10,
+      "hits": 0,
+      "delta_psi": 0.6,
+      "observed": true,
+      "domain_scalar_S": 0.4080624712153455,
+      "scalar_sign": "positive",
+      "lean_raw_S": 0.7978167460880297,
+      "lean_sign_theorem": "material_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 1470,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Particle_Astrophysics",
+      "lean_domain": "cmb",
+      "D_eff": 24,
+      "hits": 0,
+      "delta_psi": 0.8,
+      "observed": false,
+      "domain_scalar_S": -0.424411720028886,
+      "scalar_sign": "negative",
+      "lean_raw_S": -1.0099710610507393,
+      "lean_sign_theorem": "cmb_raw_S_negative",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 16,
+      "empirical_sources": [
+        {
+          "lab": "cosmology_wave4",
+          "records": 16,
+          "median_error_pct": 0.03162247159570792
+        }
+      ],
+      "empirical_median_error_pct": 0.03162247159570792,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Particle_Physics",
+      "lean_domain": "particle",
+      "D_eff": 5,
+      "hits": 0,
+      "delta_psi": 1.0,
+      "observed": true,
+      "domain_scalar_S": 0.9504134401245242,
+      "scalar_sign": "positive",
+      "lean_raw_S": 1.751037437187807,
+      "lean_sign_theorem": "particle_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 1470,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Physical_Chemistry",
+      "lean_domain": "chemical",
+      "D_eff": 8,
+      "hits": 0,
+      "delta_psi": 0.5,
+      "observed": true,
+      "domain_scalar_S": 0.33401327040170914,
+      "scalar_sign": "positive",
+      "lean_raw_S": 0.7961830900509372,
+      "lean_sign_theorem": "chemical_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 1470,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Planetary_Science",
+      "lean_domain": "galactic",
+      "D_eff": 21,
+      "hits": 1,
+      "delta_psi": 0.9,
+      "observed": true,
+      "domain_scalar_S": 0.7671791385407586,
+      "scalar_sign": "positive",
+      "lean_raw_S": 1.8256534680881713,
+      "lean_sign_theorem": "galactic_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 16,
+      "empirical_sources": [
+        {
+          "lab": "cosmology_wave4",
+          "records": 16,
+          "median_error_pct": 0.03162247159570792
+        }
+      ],
+      "empirical_median_error_pct": 0.03162247159570792,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Psychology",
+      "lean_domain": "consciousness",
+      "D_eff": 16,
+      "hits": 1,
+      "delta_psi": 1.15,
+      "observed": true,
+      "domain_scalar_S": 1.050205640397955,
+      "scalar_sign": "positive",
+      "lean_raw_S": 2.4991706281862376,
+      "lean_sign_theorem": "consciousness_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 10,
+      "empirical_sources": [
+        {
+          "lab": "linguistics_lab",
+          "records": 10,
+          "median_error_pct": 0.0013504254899468224
+        }
+      ],
+      "empirical_median_error_pct": 0.0013504254899468224,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Quantum_Computing",
+      "lean_domain": "ai",
+      "D_eff": 11,
+      "hits": 0,
+      "delta_psi": 0.5,
+      "observed": false,
+      "domain_scalar_S": -0.14767310363368644,
+      "scalar_sign": "negative",
+      "lean_raw_S": -0.3514171596284352,
+      "lean_sign_theorem": "ai_raw_S_non_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 3,
+      "empirical_sources": [
+        {
+          "lab": "trinary_os",
+          "records": 3,
+          "median_error_pct": null
+        }
+      ],
+      "empirical_median_error_pct": null,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Quantum_Gravity",
+      "lean_domain": "blackhole",
+      "D_eff": 22,
+      "hits": 0,
+      "delta_psi": 1.0,
+      "observed": false,
+      "domain_scalar_S": -0.5255977531899868,
+      "scalar_sign": "negative",
+      "lean_raw_S": 2.427813814074099,
+      "lean_sign_theorem": "blackhole_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 28,
+      "empirical_sources": [
+        {
+          "lab": "blackhole_thesis",
+          "records": 28,
+          "median_error_pct": 0.718
+        }
+      ],
+      "empirical_median_error_pct": 0.718,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Quantum_Mechanics",
+      "lean_domain": "quantum",
+      "D_eff": 6,
+      "hits": 0,
+      "delta_psi": 1.0,
+      "observed": true,
+      "domain_scalar_S": 0.9555063001027196,
+      "scalar_sign": "positive",
+      "lean_raw_S": 2.2738149448128526,
+      "lean_sign_theorem": "quantum_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 1470,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Quantum_Optics",
+      "lean_domain": "quantum",
+      "D_eff": 11,
+      "hits": 0,
+      "delta_psi": 0.6,
+      "observed": true,
+      "domain_scalar_S": 0.4081705381715019,
+      "scalar_sign": "positive",
+      "lean_raw_S": 2.2738149448128526,
+      "lean_sign_theorem": "quantum_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 1470,
+      "empirical_sources": [
+        {
+          "lab": "smiles_lab",
+          "records": 1470,
+          "median_error_pct": 0.058
+        }
+      ],
+      "empirical_median_error_pct": 0.058,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Seismology",
+      "lean_domain": "energy",
+      "D_eff": 18,
+      "hits": 2,
+      "delta_psi": 1.2,
+      "observed": false,
+      "domain_scalar_S": -0.4459015721103038,
+      "scalar_sign": "negative",
+      "lean_raw_S": 1.872760423200424,
+      "lean_sign_theorem": "energy_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 24,
+      "empirical_sources": [
+        {
+          "lab": "weather_lab",
+          "records": 24,
+          "median_error_pct": null
+        }
+      ],
+      "empirical_median_error_pct": null,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Sociology",
+      "lean_domain": "consciousness",
+      "D_eff": 18,
+      "hits": 3,
+      "delta_psi": 1.5,
+      "observed": true,
+      "domain_scalar_S": 0.6501466524159132,
+      "scalar_sign": "positive",
+      "lean_raw_S": 2.4991706281862376,
+      "lean_sign_theorem": "consciousness_raw_S_positive",
+      "lean_param_aligned": null,
+      "lean_override": false,
+      "empirical_records": 10,
+      "empirical_sources": [
+        {
+          "lab": "linguistics_lab",
+          "records": 10,
+          "median_error_pct": 0.0013504254899468224
+        }
+      ],
+      "empirical_median_error_pct": 0.0013504254899468224,
+      "has_empirical_data": true
+    },
+    {
+      "neurolab_domain": "Thermodynamics",
+      "lean_domain": "energy",
+      "D_eff": 15,
+      "hits": 1,
+      "delta_psi": 0.9,
+      "observed": true,
+      "domain_scalar_S": 0.7869745016115727,
+      "scalar_sign": "positive",
+      "lean_raw_S": 1.872760423200424,
+      "lean_sign_theorem": "energy_raw_S_positive",
+      "lean_param_aligned": true,
+      "lean_override": true,
+      "empirical_records": 34,
+      "empirical_sources": [
+        {
+          "lab": "fuel_lab",
+          "records": 34,
+          "median_error_pct": 0.0
+        }
+      ],
+      "empirical_median_error_pct": 0.0,
+      "has_empirical_data": true
+    }
+  ]
+}

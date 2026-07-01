@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-01T04:34:15.241620+00:00",
+  "generated_at": "2026-07-01T04:43:45.478981+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -43,6 +43,7 @@
     "FSOT.Formal.AetherPrimePriors",
     "FSOT.Formal.MagicCirclePriors",
     "FSOT.Formal.ExperimentSynthesisPriors",
+    "FSOT.Formal.DomainCoveragePriors",
     "FSOT.Formal.Lab",
     "FSOT"
   ],
@@ -578,6 +579,14 @@
       "domain": "*",
       "lean_module": "FSOT.Formal.ExperimentSynthesisPriors",
       "lean_theorem": "experiment_synthesis_priors_bundle"
+    },
+    {
+      "id": "domain_coverage_priors_bundle",
+      "claim": "Tier 9: 35/35 NeuroLab domains with empirical anchors; 17/17 Lean override alignment",
+      "status": "cross_validated",
+      "domain": "*",
+      "lean_module": "FSOT.Formal.DomainCoveragePriors",
+      "lean_theorem": "domain_coverage_priors_bundle"
     }
   ],
   "playbook_patterns": [
@@ -1139,6 +1148,22 @@
       "wave4_observable_count_pos",
       "cosmology_wave4_bundle"
     ],
+    "DomainCoveragePriors": [
+      "fsot_neurolab_domain_count_eq_thirty_five",
+      "domains_with_empirical_data_full",
+      "lean_override_aligned_all_mapped",
+      "negative_scalar_domain_count_pos",
+      "smiles_total_mapped_records_large",
+      "smiles_chemical_records_pos",
+      "smiles_electron_records_pos",
+      "smiles_material_records_pos",
+      "smiles_medical_records_pos",
+      "smiles_neural_records_pos",
+      "smiles_nuclear_records_pos",
+      "smiles_particle_records_pos",
+      "smiles_quantum_records_pos",
+      "domain_coverage_priors_bundle"
+    ],
     "Domains": [
       "cosmological_domain_eq",
       "cosmological_observed_false",
@@ -1485,14 +1510,14 @@
     "scripts/gen_protein_priors_lean.py": "9A5300DDD7D142A6C9FF596651F40AF2B4079FCD8A43E3DDD33695D43308294F",
     "scripts/gen_protein_formulas_lean.py": "9E8FD84D7A89A6000E0253F9BADCAA9F3F6720E7496DB6B53F90443E3FD0B6A4",
     "scripts/domain_scalar_oracle.py": "80DBF4F2592B73E468038D5E54532FA1FB26947DB5ABF4AF2794EFFD566906DA",
-    "scripts/fsot_verification_runner.py": "462DE7B521ADF844EFB07D790AD9C1413F4211CD87CA8B6A37C2C181D39DA8CD",
-    "data/proof_ledger.yaml": "C7ECA732BAD51C1A3DD561679EE82CBD53CAF7B37EAF7A455BABE5E8828E50DC",
+    "scripts/fsot_verification_runner.py": "7B44DE57C8F75C02700B218722861111651C5FB5065704AB6E44B43657E15DEB",
+    "data/proof_ledger.yaml": "2FAD8BF493DD74A6E299E995A1448410BD5EFF27480EDFD48751A5A03A5A0114",
     "data/canonical_constants.json": "86B41DA6A694DE95E5C80BD8E900E4541B9D552B629F898226777D46DC453DEF"
   },
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify": "python scripts/fsot_verification_runner.py",
-    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.CosmologyWave4 FSOT.Formal.KronosPriors FSOT.Formal.KnowledgeBasePriors FSOT.Formal.MathGeneratorPriors FSOT.Formal.TrinaryFluidPriors FSOT.Formal.SoulSiblingPriors FSOT.Formal.LeanProofsBridge FSOT.Formal.FormulaCorpusPriors FSOT.Formal.CellularPriors FSOT.Formal.BlackHoleThesisPriors FSOT.Formal.NeuronHybridPriors FSOT.Formal.NeuronCohortPriors FSOT.Formal.NeuronCohortStrataPriors FSOT.Formal.AetherPrimePriors FSOT.Formal.MagicCirclePriors FSOT.Formal.ExperimentSynthesisPriors FSOT.Formal.Lab FSOT",
+    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.CosmologyWave4 FSOT.Formal.KronosPriors FSOT.Formal.KnowledgeBasePriors FSOT.Formal.MathGeneratorPriors FSOT.Formal.TrinaryFluidPriors FSOT.Formal.SoulSiblingPriors FSOT.Formal.LeanProofsBridge FSOT.Formal.FormulaCorpusPriors FSOT.Formal.CellularPriors FSOT.Formal.BlackHoleThesisPriors FSOT.Formal.NeuronHybridPriors FSOT.Formal.NeuronCohortPriors FSOT.Formal.NeuronCohortStrataPriors FSOT.Formal.AetherPrimePriors FSOT.Formal.MagicCirclePriors FSOT.Formal.ExperimentSynthesisPriors FSOT.Formal.DomainCoveragePriors FSOT.Formal.Lab FSOT",
     "export": "python scripts/export_certificate.py"
   }
 }
