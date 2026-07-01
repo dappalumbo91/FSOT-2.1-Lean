@@ -351,12 +351,12 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 72,
-      "median_error_pct": 4.602204765150334e-06,
-      "p90_error_pct": 55.52749922961541,
-      "max_error_pct": 92.74310595065312,
-      "within_2pct": 64,
-      "within_5pct": 64,
+      "record_count": 67,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.19157088122605362,
+      "max_error_pct": 0.8595988538681949,
+      "within_2pct": 67,
+      "within_5pct": 67,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -389,12 +389,12 @@
         },
         {
           "lab": "biology_strict_lab",
-          "record_count": 20,
-          "median_error_pct": 0.3521956970232832,
-          "p90_error_pct": 66.32996632996633,
-          "max_error_pct": 92.74310595065312,
-          "within_2pct": 12,
-          "within_5pct": 12
+          "record_count": 15,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.5128205128205128,
+          "max_error_pct": 0.8595988538681949,
+          "within_2pct": 15,
+          "within_5pct": 15
         }
       ],
       "top_properties": [
@@ -414,29 +414,29 @@
           "median_error_pct": 5.280973401633471e-06
         },
         {
-          "property": "bio_constant_scale",
-          "records": 5,
-          "median_error_pct": 55.52749922961541
-        },
-        {
           "property": "biology_corpus_fraction",
           "records": 1,
           "median_error_pct": 0.0
         },
         {
+          "property": "mt_coding_bp_sum",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "mt_operon_count",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
           "property": "mt_operon_length",
-          "records": 24,
+          "records": 25,
           "median_error_pct": 0.0
         },
         {
           "property": "soul_corpus_depth",
           "records": 1,
           "median_error_pct": 0.0
-        },
-        {
-          "property": "soul_corpus_gene_mention",
-          "records": 3,
-          "median_error_pct": 80.95238095238095
         }
       ],
       "diagnostic": null

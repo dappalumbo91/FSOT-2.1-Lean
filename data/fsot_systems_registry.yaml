@@ -1,5 +1,5 @@
 meta:
-  generated_at: '2026-07-01T05:40:10.196166+00:00'
+  generated_at: '2026-07-01T18:26:42.570880+00:00'
   repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
   remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
   lean_build_ok: true
@@ -395,6 +395,10 @@ lean_formal_modules:
   file: FSOT/Formal/AetherPrimePriors.lean
   has_sorry: false
   theorem_count: 6
+- module: FSOT.Formal.BiologyStrictEmpiricalPriors
+  file: FSOT/Formal/BiologyStrictEmpiricalPriors.lean
+  has_sorry: false
+  theorem_count: 4
 - module: FSOT.Formal.BlackHoleThesisPriors
   file: FSOT/Formal/BlackHoleThesisPriors.lean
   has_sorry: false

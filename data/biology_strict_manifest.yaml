@@ -1,0 +1,26 @@
+# Tier 13 — NCBI-grounded biology strict-empirical bridge → Lean certificate.
+version: "1.0"
+updated: "2026-07-01"
+
+source:
+  ncbi_reference: NC_012920.1
+  evolution_operons: "C:/Users/damia/Desktop/fsot_evolution_/files-b7d9d6b8/fsot_evolution_sim/results/biological_mt_operons.json"
+  soul_corpus: "C:/Users/damia/Desktop/Soul Simulator/data/processed_test/training_corpus.jsonl"
+
+build:
+  script: scripts/build_biology_strict_empirical.py
+  output: data/biology_strict_empirical.json
+  strict_properties:
+    - mt_operon_length
+    - mt_operon_count
+    - mt_coding_bp_sum
+
+lean:
+  generator: scripts/gen_biology_strict_empirical_lean.py
+  module: FSOT.Formal.BiologyStrictEmpiricalPriors
+  lean_domain: biological
+  sign_theorem: lab_biological_raw_S_positive
+
+verification:
+  min_strict_records: 10
+  max_strict_median_error_pct: 2.0

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bridge Soul Simulator biology QA → strict-empirical observables (NCBI + bio constants)."""
+"""Bridge Soul Simulator + evolution sim → NCBI-grounded strict-empirical biology observables."""
 
 from __future__ import annotations
 
@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+MANIFEST_PATH = ROOT / "data" / "biology_strict_manifest.yaml"
 CELLULAR_MANIFEST = ROOT / "data" / "cellular_manifest.yaml"
 DEFAULT_OPERONS = Path(
     r"C:\Users\damia\Desktop\fsot_evolution_\files-b7d9d6b8\fsot_evolution_sim\results\biological_mt_operons.json"
@@ -33,6 +34,10 @@ HUMAN_MT_OPERON_REF = {
     "MT-CYTB": 1140,
 }
 
+NCBI_MT_GENOME_BP = 16569
+NCBI_CODING_BP_SUM = sum(HUMAN_MT_OPERON_REF.values())
+NCBI_OPERON_COUNT = len(HUMAN_MT_OPERON_REF)
+
 BIO_CONSTANTS = {
     "human_body_temp_c": 37.0,
     "blood_ph": 7.4,
@@ -42,7 +47,6 @@ BIO_CONSTANTS = {
 }
 
 GENE_RE = re.compile(r"\b(MT-(?:ND\d|CO\d|ATP\d|CYTB|ND4L))\b", re.I)
-NUMERIC_RE = re.compile(r"\b(\d+(?:\.\d+)?)\s*(?:°C|C\b|bp|kb|kbp|Gbp|μm|um|pH)?", re.I)
 
 BIOLOGY_SUBJECTS = {"natural science", "life science", "biology"}
 BIOLOGY_KEYWORDS = ("biology", "cell", "gene", "dna", "mitochond", "organism", "evolution")
@@ -58,6 +62,9 @@ def _is_biology(fields: dict) -> bool:
     return any(k in blob for k in BIOLOGY_KEYWORDS)
 
 
+OPERON_ALIASES = {"MT-CYTB": ("MT-CYB",)}
+
+
 def _operon_records(operons_path: Path) -> list[dict]:
     if not operons_path.exists():
         return []
@@ -65,6 +72,11 @@ def _operon_records(operons_path: Path) -> list[dict]:
     out: list[dict] = []
     for name, ref_len in HUMAN_MT_OPERON_REF.items():
         entry = operons.get(name)
+        if not entry:
+            for alias in OPERON_ALIASES.get(name, ()):
+                entry = operons.get(alias)
+                if entry:
+                    break
         if not entry:
             continue
         sim_len = int(entry.get("length") or 0)
@@ -77,22 +89,63 @@ def _operon_records(operons_path: Path) -> list[dict]:
                 "computed": sim_len,
                 "measured": ref_len,
                 "error_pct": err,
-                "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1",
+                "source": "evolution_sim+NCBI_NC_012920.1",
+                "strict": True,
             }
         )
     return out
 
 
-def _soul_gene_mentions(corpus_path: Path, max_lines: int = 80000) -> tuple[list[dict], int, int]:
+def _genome_aggregate_records(operon_recs: list[dict]) -> list[dict]:
+    computed_count = len(operon_recs)
+    computed_bp = sum(int(r["computed"]) for r in operon_recs)
+    count_err = abs(computed_count - NCBI_OPERON_COUNT) / NCBI_OPERON_COUNT * 100.0
+    bp_err = abs(computed_bp - NCBI_CODING_BP_SUM) / NCBI_CODING_BP_SUM * 100.0
+    return [
+        {
+            "lab": "biology_strict_lab",
+            "property": "mt_operon_count",
+            "name": "human_mt_protein_genes",
+            "computed": computed_count,
+            "measured": NCBI_OPERON_COUNT,
+            "error_pct": count_err,
+            "source": "evolution_sim+NCBI_NC_012920.1",
+            "strict": True,
+        },
+        {
+            "lab": "biology_strict_lab",
+            "property": "mt_coding_bp_sum",
+            "name": "human_mt_coding_bp",
+            "computed": computed_bp,
+            "measured": NCBI_CODING_BP_SUM,
+            "error_pct": bp_err,
+            "source": "evolution_sim+NCBI_NC_012920.1",
+            "strict": True,
+        },
+        {
+            "lab": "biology_strict_lab",
+            "property": "mt_genome_bp",
+            "name": "NC_012920.1",
+            "computed": computed_bp,
+            "measured": NCBI_MT_GENOME_BP,
+            "error_pct": abs(computed_bp - NCBI_MT_GENOME_BP) / NCBI_MT_GENOME_BP * 100.0,
+            "source": "NCBI_NC_012920.1_reference",
+            "strict": False,
+            "note": "coding_bp vs full genome; diagnostic only",
+        },
+    ]
+
+
+def _soul_gene_mentions(corpus_path: Path, max_lines: int = 0) -> tuple[list[dict], int, int]:
     if not corpus_path.exists():
-        return []
+        return [], 0, 0
     mention_counts: dict[str, int] = {g: 0 for g in HUMAN_MT_OPERON_REF}
     scanned = 0
     bio_rows = 0
     with corpus_path.open(encoding="utf-8") as f:
         for line in f:
             scanned += 1
-            if scanned > max_lines:
+            if max_lines > 0 and scanned > max_lines:
                 break
             try:
                 row = json.loads(line)
@@ -121,6 +174,7 @@ def _soul_gene_mentions(corpus_path: Path, max_lines: int = 80000) -> tuple[list
                 "measured": ref / 100.0,
                 "error_pct": abs(count - ref / 100.0) / (ref / 100.0) * 100.0,
                 "source": "soul_corpus_mention_density",
+                "strict": False,
             }
         )
     return records, bio_rows, scanned
@@ -145,27 +199,51 @@ def _bio_constant_records() -> list[dict]:
                 "measured": measured,
                 "error_pct": err,
                 "source": "FSOT_biological_scalar_scale",
+                "strict": False,
             }
         )
     return records
 
 
-def build(operons_path: Path, corpus_path: Path) -> dict:
+def _median(errs: list[float]) -> float | None:
+    if not errs:
+        return None
+    return sorted(errs)[len(errs) // 2]
+
+
+def build(
+    operons_path: Path,
+    corpus_path: Path,
+    *,
+    include_proxies: bool = False,
+    max_corpus_lines: int = 0,
+) -> dict:
     operon_recs = _operon_records(operons_path)
-    soul_recs, bio_rows, scanned = _soul_gene_mentions(corpus_path)
+    genome_recs = _genome_aggregate_records(operon_recs)
+    strict_recs = operon_recs + [r for r in genome_recs if r.get("strict")]
+    proxy_recs: list[dict] = [r for r in genome_recs if not r.get("strict")]
+    soul_recs, bio_rows, scanned = _soul_gene_mentions(corpus_path, max_corpus_lines)
     const_recs = _bio_constant_records()
-    records = operon_recs + soul_recs + const_recs
-    errs = [r["error_pct"] for r in records if r.get("error_pct") is not None]
+    if include_proxies:
+        proxy_recs = proxy_recs + soul_recs + const_recs
+    records = strict_recs + proxy_recs
+    strict_errs = [r["error_pct"] for r in strict_recs if r.get("error_pct") is not None]
+    all_errs = [r["error_pct"] for r in records if r.get("error_pct") is not None]
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source_corpus": str(corpus_path),
+        "ncbi_reference": "NC_012920.1",
         "soul_lines_scanned": scanned,
         "soul_biology_rows": bio_rows,
+        "strict_record_count": len(strict_recs),
         "record_count": len(records),
         "operon_records": len(operon_recs),
+        "genome_aggregate_records": len(genome_recs),
         "soul_mention_records": len(soul_recs),
         "bio_constant_records": len(const_recs),
-        "median_error_pct": sorted(errs)[len(errs) // 2] if errs else None,
+        "strict_median_error_pct": _median(strict_errs),
+        "median_error_pct": _median(strict_errs),
+        "median_error_pct_all": _median(all_errs),
         "records": records,
     }
 
@@ -174,6 +252,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Build biology strict-empirical bridge")
     parser.add_argument("--operons", type=Path, default=DEFAULT_OPERONS)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--include-proxies", action="store_true", help="Include soul mention + scalar-scale proxies")
+    parser.add_argument("--max-corpus-lines", type=int, default=0, help="0 = scan full corpus")
     args = parser.parse_args()
 
     try:
@@ -186,12 +266,20 @@ def main() -> int:
     soul_manifest = Path(manifest["artifacts"]["soul_simulator_manifest"]["path"])
     corpus = soul_manifest.parent / "training_corpus.jsonl"
 
-    doc = build(args.operons, corpus)
+    doc = build(
+        args.operons,
+        corpus,
+        include_proxies=args.include_proxies,
+        max_corpus_lines=args.max_corpus_lines,
+    )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     print(f"Wrote {args.output}")
-    print(f"  records: {doc['record_count']} (operons={doc['operon_records']} soul={doc['soul_mention_records']})")
-    print(f"  soul_biology_rows: {doc['soul_biology_rows']}")
+    print(
+        f"  strict: {doc['strict_record_count']}  total: {doc['record_count']}  "
+        f"strict_median_err: {doc['strict_median_error_pct']}"
+    )
+    print(f"  soul_biology_rows: {doc['soul_biology_rows']} (scanned {doc['soul_lines_scanned']} lines)")
     return 0
 
 

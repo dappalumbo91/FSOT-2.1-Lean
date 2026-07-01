@@ -1,13 +1,18 @@
 {
-  "generated_at": "2026-07-01T05:39:41.004161+00:00",
+  "generated_at": "2026-07-01T18:27:14.935673+00:00",
   "source_corpus": "C:\\Users\\damia\\Desktop\\Soul Simulator\\data\\processed_test\\training_corpus.jsonl",
-  "soul_lines_scanned": 80001,
+  "ncbi_reference": "NC_012920.1",
+  "soul_lines_scanned": 234447,
   "soul_biology_rows": 16794,
-  "record_count": 20,
-  "operon_records": 12,
+  "strict_record_count": 15,
+  "record_count": 16,
+  "operon_records": 13,
+  "genome_aggregate_records": 3,
   "soul_mention_records": 3,
   "bio_constant_records": 5,
-  "median_error_pct": 0.5128205128205128,
+  "strict_median_error_pct": 0.0,
+  "median_error_pct": 0.0,
+  "median_error_pct_all": 0.0,
   "records": [
     {
       "lab": "biology_strict_lab",
@@ -16,7 +21,8 @@
       "computed": 956,
       "measured": 956,
       "error_pct": 0.0,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
@@ -25,7 +31,8 @@
       "computed": 1042,
       "measured": 1044,
       "error_pct": 0.19157088122605362,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
@@ -34,7 +41,8 @@
       "computed": 1542,
       "measured": 1542,
       "error_pct": 0.0,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
@@ -43,7 +51,8 @@
       "computed": 684,
       "measured": 684,
       "error_pct": 0.0,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
@@ -52,7 +61,8 @@
       "computed": 207,
       "measured": 207,
       "error_pct": 0.0,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
@@ -61,7 +71,8 @@
       "computed": 681,
       "measured": 681,
       "error_pct": 0.0,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
@@ -70,7 +81,8 @@
       "computed": 784,
       "measured": 780,
       "error_pct": 0.5128205128205128,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
@@ -79,7 +91,8 @@
       "computed": 346,
       "measured": 349,
       "error_pct": 0.8595988538681949,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
@@ -88,7 +101,8 @@
       "computed": 297,
       "measured": 297,
       "error_pct": 0.0,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
@@ -97,7 +111,8 @@
       "computed": 1378,
       "measured": 1378,
       "error_pct": 0.0,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
@@ -106,7 +121,8 @@
       "computed": 1812,
       "measured": 1812,
       "error_pct": 0.0,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
@@ -115,79 +131,49 @@
       "computed": 525,
       "measured": 525,
       "error_pct": 0.0,
-      "source": "soul_corpus+evolution_sim+NCBI_NC_012920.1"
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
-      "property": "soul_corpus_gene_mention",
-      "name": "MT-ND4L",
-      "computed": 1.0,
-      "measured": 2.97,
-      "error_pct": 66.32996632996633,
-      "source": "soul_corpus_mention_density"
+      "property": "mt_operon_length",
+      "name": "MT-CYTB",
+      "computed": 1141,
+      "measured": 1140,
+      "error_pct": 0.08771929824561403,
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
-      "property": "soul_corpus_gene_mention",
-      "name": "MT-ND4",
-      "computed": 1.0,
-      "measured": 13.78,
-      "error_pct": 92.74310595065312,
-      "source": "soul_corpus_mention_density"
+      "property": "mt_operon_count",
+      "name": "human_mt_protein_genes",
+      "computed": 13,
+      "measured": 13,
+      "error_pct": 0.0,
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
-      "property": "soul_corpus_gene_mention",
-      "name": "MT-ND6",
-      "computed": 1.0,
-      "measured": 5.25,
-      "error_pct": 80.95238095238095,
-      "source": "soul_corpus_mention_density"
+      "property": "mt_coding_bp_sum",
+      "name": "human_mt_coding_bp",
+      "computed": 11395,
+      "measured": 11395,
+      "error_pct": 0.0,
+      "source": "evolution_sim+NCBI_NC_012920.1",
+      "strict": true
     },
     {
       "lab": "biology_strict_lab",
-      "property": "bio_constant_scale",
-      "name": "human_body_temp_c",
-      "computed": 16.454825,
-      "measured": 37.0,
-      "error_pct": 55.527499229615415,
-      "source": "FSOT_biological_scalar_scale"
-    },
-    {
-      "lab": "biology_strict_lab",
-      "property": "bio_constant_scale",
-      "name": "blood_ph",
-      "computed": 3.290965,
-      "measured": 7.4,
-      "error_pct": 55.52749922961541,
-      "source": "FSOT_biological_scalar_scale"
-    },
-    {
-      "lab": "biology_strict_lab",
-      "property": "bio_constant_scale",
-      "name": "mt_genome_bp",
-      "computed": 7368.648653,
+      "property": "mt_genome_bp",
+      "name": "NC_012920.1",
+      "computed": 11395,
       "measured": 16569,
-      "error_pct": 55.52749922961541,
-      "source": "FSOT_biological_scalar_scale"
-    },
-    {
-      "lab": "biology_strict_lab",
-      "property": "bio_constant_scale",
-      "name": "human_genome_gbp",
-      "computed": 1.42312,
-      "measured": 3.2,
-      "error_pct": 55.527499229615415,
-      "source": "FSOT_biological_scalar_scale"
-    },
-    {
-      "lab": "biology_strict_lab",
-      "property": "bio_constant_scale",
-      "name": "rbc_diameter_um",
-      "computed": 3.335438,
-      "measured": 7.5,
-      "error_pct": 55.52749922961541,
-      "source": "FSOT_biological_scalar_scale"
+      "error_pct": 31.22699016235138,
+      "source": "NCBI_NC_012920.1_reference",
+      "strict": false,
+      "note": "coding_bp vs full genome; diagnostic only"
     }
   ]
 }

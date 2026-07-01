@@ -165,6 +165,10 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.AetherPrimePriors",
                 "FSOT.Formal.MagicCirclePriors",
                 "FSOT.Formal.ExperimentSynthesisPriors",
+                "FSOT.Formal.BiologyStrictEmpiricalPriors",
+                "FSOT.Formal.PlasmaPhysicsPriors",
+                "FSOT.Formal.ImmunologyPriors",
+                "FSOT.Formal.ClimateSciencePriors",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -702,6 +706,19 @@ def main() -> int:
                 print(proc_b.stdout.strip() or proc_b.stderr.strip())
                 if proc_b.returncode != 0:
                     issues.append(f"{bench_script} failed")
+
+        bio_strict_gen = ROOT / "scripts" / "gen_biology_strict_empirical_lean.py"
+        if bio_strict_gen.exists():
+            proc_bs = subprocess.run(
+                [sys.executable, str(bio_strict_gen)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_bs.stdout.strip() or proc_bs.stderr.strip())
+            if proc_bs.returncode != 0:
+                issues.append("BiologyStrictEmpiricalPriors.lean generation failed")
 
         ext_gen = ROOT / "scripts" / "gen_extension_domains_lean.py"
         if ext_gen.exists():

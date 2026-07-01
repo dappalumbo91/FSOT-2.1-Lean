@@ -24,6 +24,13 @@ def _load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _median_error(doc: dict, *keys: str, default: float = 99.0) -> float:
+    for key in keys:
+        if key in doc and doc[key] is not None:
+            return float(doc[key])
+    return default
+
+
 def build_progress() -> dict:
     cert = _load_json(ROOT / "data" / "certificate.json")
     registry = _load_json(ROOT / "data" / "lab_registry.json")
@@ -177,6 +184,30 @@ def build_progress() -> dict:
                 "data/extension_domains_manifest.yaml",
             ],
         },
+        {
+            "tier": 13,
+            "name": "Biology strict-empirical NCBI bridge (mt operons → Lean)",
+            "status": "complete"
+            if bio_strict.get("strict_record_count", 0) >= 10
+            and _median_error(bio_strict, "strict_median_error_pct", "median_error_pct") <= 2.0
+            else "pending",
+            "metrics": {
+                "strict_records": bio_strict.get("strict_record_count"),
+                "operon_records": bio_strict.get("operon_records"),
+                "strict_median_error_pct": _median_error(
+                    bio_strict, "strict_median_error_pct", "median_error_pct", default=0.0
+                )
+                if "strict_median_error_pct" in bio_strict or "median_error_pct" in bio_strict
+                else None,
+                "ncbi_reference": bio_strict.get("ncbi_reference"),
+                "soul_biology_rows": bio_strict.get("soul_biology_rows"),
+            },
+            "artifacts": [
+                "FSOT.Formal.BiologyStrictEmpiricalPriors",
+                "data/biology_strict_manifest.yaml",
+                "data/biology_strict_empirical.json",
+            ],
+        },
     ]
 
     next_steps = [
@@ -203,7 +234,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 12 extension domains (Plasma, Immunology, Climate) + biology strict-empirical bridge",
+        "current_position": "Tier 13 biology strict-empirical NCBI bridge + extension domains #37-39",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

@@ -1,16 +1,16 @@
-generated_at: '2026-07-01T07:16:46.241389+00:00'
+generated_at: '2026-07-01T18:27:16.218256+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 45
+  lean_formal_modules: 46
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 10
-  tiers_total: 10
+  tiers_complete: 11
+  tiers_total: 11
   percent_complete: 100.0
-current_position: Tier 12 extension domains (Plasma, Immunology, Climate) + biology
-  strict-empirical bridge
+current_position: 'Tier 13 biology strict-empirical NCBI bridge + extension domains
+  #37-39'
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -24,6 +24,7 @@ tiers:
   status: complete
   artifacts:
   - AetherPrimePriors
+  - BiologyStrictEmpiricalPriors
   - BlackHoleThesisPriors
   - BrainPriors
   - CameoPriors
@@ -131,12 +132,25 @@ tiers:
     plasma_records: 6
     immunology_records: 84
     climate_months: 2519
-    biology_strict_records: 20
+    biology_strict_records: 16
   artifacts:
   - FSOT.Formal.PlasmaPhysicsPriors
   - FSOT.Formal.ImmunologyPriors
   - FSOT.Formal.ClimateSciencePriors
   - data/extension_domains_manifest.yaml
+- tier: 13
+  name: "Biology strict-empirical NCBI bridge (mt operons \u2192 Lean)"
+  status: complete
+  metrics:
+    strict_records: 15
+    operon_records: 13
+    strict_median_error_pct: 0.0
+    ncbi_reference: NC_012920.1
+    soul_biology_rows: 16794
+  artifacts:
+  - FSOT.Formal.BiologyStrictEmpiricalPriors
+  - data/biology_strict_manifest.yaml
+  - data/biology_strict_empirical.json
 next_steps:
 - Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class
 - "Multi-hero held-out: certify 3\u20135 specimens per Sst/PV/VIP/L2/3"

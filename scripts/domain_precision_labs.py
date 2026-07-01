@@ -363,7 +363,10 @@ def extract_biology_strict() -> dict[str, Any]:
     if not BIOLOGY_STRICT.exists():
         return _summarize_records([])
     doc = json.loads(BIOLOGY_STRICT.read_text(encoding="utf-8"))
-    return _summarize_records(doc.get("records") or [])
+    records = doc.get("records") or []
+    strict_props = {"mt_operon_length", "mt_operon_count", "mt_coding_bp_sum"}
+    strict = [r for r in records if r.get("strict") or r.get("property") in strict_props]
+    return _summarize_records(strict or records)
 
 
 def extract_climate_benchmark() -> dict[str, Any]:
