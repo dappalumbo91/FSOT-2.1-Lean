@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T07:17:39.845308+00:00",
+  "generated_at": "2026-07-01T18:31:16.848889+00:00",
   "source": "NOAA_NCEI_GHCND_by_year_chunked",
   "climatology_method": "per_station_per_calendar_month",
   "station_count": 7,
@@ -35284,5 +35284,54 @@
       "S": 0.499045
     }
   ],
-  "ingest_state": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\climate_cache\\ingest_state.json"
+  "ingest_state": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\climate_cache\\ingest_state.json",
+  "cohort": {
+    "train": {
+      "stations": [
+        "USC00053005",
+        "USW00012960",
+        "USW00013881",
+        "USW00014922"
+      ],
+      "station_count": 4,
+      "record_count": 1439,
+      "median_error_pct": 0.0
+    },
+    "holdout": {
+      "stations": [
+        "USW00023169",
+        "USW00024233",
+        "USW00094728"
+      ],
+      "station_count": 3,
+      "record_count": 1080,
+      "median_error_pct": 0.0
+    },
+    "holdout_median_error_max_pct": 5.0,
+    "holdout_min_records": 200,
+    "train_station_ids": [
+      "USC00053005",
+      "USW00003928",
+      "USW00012836",
+      "USW00012918",
+      "USW00012960",
+      "USW00013739",
+      "USW00013743",
+      "USW00013874",
+      "USW00013881",
+      "USW00014819",
+      "USW00014922",
+      "USW00014933",
+      "USW00014939",
+      "USW00023174",
+      "USW00023188",
+      "USW00024057"
+    ],
+    "holdout_station_ids": [
+      "USW00012839",
+      "USW00023169",
+      "USW00024233",
+      "USW00094728"
+    ]
+  }
 }

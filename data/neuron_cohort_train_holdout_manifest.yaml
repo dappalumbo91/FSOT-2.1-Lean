@@ -1,0 +1,17 @@
+# Tier 14 — Allen neuron cohort train/holdout regression gates.
+version: "1.0"
+updated: "2026-07-01"
+
+split:
+  method: deterministic_specimen_hash
+  train_percent: 80
+
+gates:
+  holdout_min_cells: 400
+  holdout_fi_median_rel_err_max: 0.30
+  holdout_fi_pearson_r_min: 0.55
+  train_fi_median_rel_err_max: 0.30
+
+lean:
+  generator: scripts/gen_neuron_cohort_train_holdout_lean.py
+  module: FSOT.Formal.NeuronCohortTrainHoldoutPriors

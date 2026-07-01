@@ -12,7 +12,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from climate_ncei_lab import MANIFEST_PATH, build_benchmark_records, load_all_chunks, load_manifest  # noqa: E402
+from climate_ncei_lab import (  # noqa: E402
+    MANIFEST_PATH,
+    attach_cohort_metrics,
+    build_benchmark_records,
+    load_all_chunks,
+    load_manifest,
+)
 
 
 def main() -> int:
@@ -36,6 +42,7 @@ def main() -> int:
             D_eff=float(spec["benchmark"].get("D_eff", 16)),
         )
         doc["ingest_state"] = str(cache_root / "ingest_state.json")
+        doc = attach_cohort_metrics(doc, spec)
     elif args.fallback_open_meteo:
         fetch = ROOT / "scripts" / "fetch_climate_observed_benchmark.py"
         proc = subprocess.run([sys.executable, str(fetch), "--output", str(output)], check=False)
@@ -52,6 +59,18 @@ def main() -> int:
     print(f"Wrote {output}")
     print(f"  stations: {doc.get('station_count')}  records: {doc.get('record_count')}")
     print(f"  median_err: {doc.get('median_error_pct')}")
+    cohort = doc.get("cohort") or {}
+    if cohort:
+        tr = cohort.get("train") or {}
+        ho = cohort.get("holdout") or {}
+        print(
+            f"  cohort train: {tr.get('record_count')} rec / {tr.get('station_count')} stn "
+            f"median={tr.get('median_error_pct')}"
+        )
+        print(
+            f"  cohort holdout: {ho.get('record_count')} rec / {ho.get('station_count')} stn "
+            f"median={ho.get('median_error_pct')}"
+        )
     return 0
 
 

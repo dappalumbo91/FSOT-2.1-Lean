@@ -166,6 +166,7 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.MagicCirclePriors",
                 "FSOT.Formal.ExperimentSynthesisPriors",
                 "FSOT.Formal.BiologyStrictEmpiricalPriors",
+                "FSOT.Formal.NeuronCohortTrainHoldoutPriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -706,6 +707,34 @@ def main() -> int:
                 print(proc_b.stdout.strip() or proc_b.stderr.strip())
                 if proc_b.returncode != 0:
                     issues.append(f"{bench_script} failed")
+
+        for cohort_script in (
+            "run_neuron_cohort_train_holdout.py",
+            "gen_neuron_cohort_train_holdout_lean.py",
+        ):
+            script = ROOT / "scripts" / cohort_script
+            if script.exists():
+                proc_c = subprocess.run(
+                    [sys.executable, str(script)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_c.stdout.strip() or proc_c.stderr.strip())
+                if proc_c.returncode != 0 and "train_holdout" in cohort_script:
+                    issues.append(f"{cohort_script} failed")
+
+        map_script = ROOT / "scripts" / "build_scientific_domain_expansion_map.py"
+        if map_script.exists():
+            proc_map = subprocess.run(
+                [sys.executable, str(map_script)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_map.stdout.strip() or proc_map.stderr.strip())
 
         bio_strict_gen = ROOT / "scripts" / "gen_biology_strict_empirical_lean.py"
         if bio_strict_gen.exists():

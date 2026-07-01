@@ -1,0 +1,523 @@
+generated_at: '2026-07-01T18:31:39.039040+00:00'
+summary:
+  neurolab_domains: 35
+  extension_domains: 3
+  total_scientific_domains_covered: 39
+  total_empirical_records: 261999
+  domains_target_band_2pct: 35
+  domains_sign_mismatch: 0
+  tier_distribution:
+    A_strong: 8
+    B_verified: 18
+    C_thin: 9
+    D_needs_work: 0
+    unverified: 0
+  lean_formal_modules: 47
+neurolab_domains:
+- domain: Acoustics
+  lean_domain: material
+  empirical_records: 485
+  median_error_pct: 0.658987
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: A_strong
+  labs:
+  - smiles_lab
+- domain: Astronomy
+  lean_domain: astronomical
+  empirical_records: 46
+  median_error_pct: 0.008528684416521978
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: B_verified
+  labs:
+  - cosmology_lambda_cdm
+  - cosmology_wave4
+- domain: Astrophysics
+  lean_domain: astronomical
+  empirical_records: 16
+  median_error_pct: 0.010466357473454788
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: C_thin
+  labs:
+  - cosmology_wave4
+- domain: Atmospheric_Physics
+  lean_domain: energy
+  empirical_records: 47
+  median_error_pct: 0.0
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: true
+  coverage_tier: B_verified
+  labs:
+  - weather_lab
+- domain: Atomic_Physics
+  lean_domain: particle
+  empirical_records: 36
+  median_error_pct: 0.9320035
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: B_verified
+  labs:
+  - smiles_lab
+- domain: Biochemistry
+  lean_domain: medical
+  empirical_records: 166
+  median_error_pct: 0.319061
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: A_strong
+  labs:
+  - smiles_lab
+  - neurolab_bio
+- domain: Biology
+  lean_domain: biological
+  empirical_records: 67
+  median_error_pct: 0.0
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: B_verified
+  labs:
+  - evolution_lab
+  - cellular_lab
+  - neurolab_bio
+- domain: Chemistry
+  lean_domain: electron
+  empirical_records: 99
+  median_error_pct: 0.717702
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: B_verified
+  labs:
+  - smiles_lab
+- domain: Condensed_Matter
+  lean_domain: material
+  empirical_records: 1169
+  median_error_pct: 0.272464
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: A_strong
+  labs:
+  - smiles_lab
+  - species_catalog
+- domain: Cosmology
+  lean_domain: cosmological
+  empirical_records: 30
+  median_error_pct: 0.004296638039763263
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: true
+  coverage_tier: B_verified
+  labs:
+  - cosmology_lambda_cdm
+- domain: Ecology
+  lean_domain: biological
+  empirical_records: 12
+  median_error_pct: 0.0
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: C_thin
+  labs:
+  - evolution_lab
+- domain: Economics
+  lean_domain: consciousness
+  empirical_records: 10
+  median_error_pct: -0.0007873774796219538
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: C_thin
+  labs:
+  - linguistics_lab
+- domain: Electromagnetism
+  lean_domain: material
+  empirical_records: 485
+  median_error_pct: 0.658987
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: A_strong
+  labs:
+  - smiles_lab
+- domain: Fluid_Dynamics
+  lean_domain: energy
+  empirical_records: 1
+  median_error_pct: 0.7000000000000028
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: true
+  coverage_tier: C_thin
+  labs:
+  - trinary_fluid_computer
+  - vibra_register
+- domain: Geophysics
+  lean_domain: energy
+  empirical_records: 47
+  median_error_pct: 0.0
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: true
+  coverage_tier: B_verified
+  labs:
+  - weather_lab
+- domain: High_Energy_Physics
+  lean_domain: higgs
+  empirical_records: 36
+  median_error_pct: 0.9320035
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: B_verified
+  labs:
+  - smiles_lab
+- domain: Materials_Science
+  lean_domain: material
+  empirical_records: 1169
+  median_error_pct: 0.272464
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: A_strong
+  labs:
+  - smiles_lab
+  - species_catalog
+- domain: Meteorology
+  lean_domain: energy
+  empirical_records: 47
+  median_error_pct: 0.0
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: true
+  coverage_tier: B_verified
+  labs:
+  - weather_lab
+- domain: Molecular_Chemistry
+  lean_domain: chemical
+  empirical_records: 608
+  median_error_pct: 0.41124649999999996
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: A_strong
+  labs:
+  - smiles_lab
+- domain: Neuroscience
+  lean_domain: neural
+  empirical_records: 44
+  median_error_pct: 1.2044815
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: B_verified
+  labs:
+  - smiles_lab
+  - neuron_cohort_lab
+- domain: Nuclear_Physics
+  lean_domain: nuclear
+  empirical_records: 79
+  median_error_pct: 0.288226
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: B_verified
+  labs:
+  - smiles_lab
+  - blackhole_thesis
+- domain: Oceanography
+  lean_domain: energy
+  empirical_records: 47
+  median_error_pct: 0.0
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: true
+  coverage_tier: B_verified
+  labs:
+  - weather_lab
+- domain: Optics
+  lean_domain: material
+  empirical_records: 485
+  median_error_pct: 0.658987
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: A_strong
+  labs:
+  - smiles_lab
+- domain: Particle_Astrophysics
+  lean_domain: cmb
+  empirical_records: 16
+  median_error_pct: 0.010466357473454788
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: true
+  coverage_tier: C_thin
+  labs:
+  - cosmology_wave4
+- domain: Particle_Physics
+  lean_domain: particle
+  empirical_records: 36
+  median_error_pct: 0.9320035
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: B_verified
+  labs:
+  - smiles_lab
+- domain: Physical_Chemistry
+  lean_domain: chemical
+  empirical_records: 608
+  median_error_pct: 0.41124649999999996
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: A_strong
+  labs:
+  - smiles_lab
+- domain: Planetary_Science
+  lean_domain: galactic
+  empirical_records: 16
+  median_error_pct: 0.010466357473454788
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: C_thin
+  labs:
+  - cosmology_wave4
+- domain: Psychology
+  lean_domain: consciousness
+  empirical_records: 10
+  median_error_pct: -0.0007873774796219538
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: C_thin
+  labs:
+  - linguistics_lab
+- domain: Quantum_Computing
+  lean_domain: ai
+  empirical_records: 3
+  median_error_pct: 0.0
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: true
+  coverage_tier: C_thin
+  labs:
+  - trinary_os
+- domain: Quantum_Gravity
+  lean_domain: blackhole
+  empirical_records: 28
+  median_error_pct: 0.0
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: true
+  coverage_tier: B_verified
+  labs:
+  - blackhole_thesis
+- domain: Quantum_Mechanics
+  lean_domain: quantum
+  empirical_records: 24
+  median_error_pct: 1.230796
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: B_verified
+  labs:
+  - smiles_lab
+- domain: Quantum_Optics
+  lean_domain: quantum
+  empirical_records: 24
+  median_error_pct: 1.230796
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: B_verified
+  labs:
+  - smiles_lab
+- domain: Seismology
+  lean_domain: energy
+  empirical_records: 47
+  median_error_pct: 0.0
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: true
+  coverage_tier: B_verified
+  labs:
+  - weather_lab
+- domain: Sociology
+  lean_domain: consciousness
+  empirical_records: 10
+  median_error_pct: -0.0007873774796219538
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: C_thin
+  labs:
+  - linguistics_lab
+- domain: Thermodynamics
+  lean_domain: energy
+  empirical_records: 89
+  median_error_pct: 0.452599
+  precision_status: target_band
+  sign_mismatch: false
+  authority_scalar_negative: false
+  coverage_tier: B_verified
+  labs:
+  - fuel_lab
+extension_domains:
+- domain: Plasma_Physics
+  tier: 12
+  record_count: 6
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.PlasmaPhysicsPriors
+- domain: Immunology
+  tier: 12
+  record_count: 84
+  median_error_pct: 0.451494
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ImmunologyPriors
+- domain: Climate_Science
+  tier: 12
+  record_count: 2519
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.ClimateSciencePriors
+intelligence_compression:
+  domain: Intelligence_Compression
+  record_count: 572
+  median_error_pct: null
+  coverage_tier: unverified
+  lean_module: FSOT.Formal.IntelligenceCompressionPriors
+specialized_bridges:
+  biology_strict_ncbi:
+    strict_records: 15
+    median_error_pct: 0.0
+  climate_ncei_cohort:
+    train:
+      stations:
+      - USC00053005
+      - USW00012960
+      - USW00013881
+      - USW00014922
+      station_count: 4
+      record_count: 1439
+      median_error_pct: 0.0
+    holdout:
+      stations:
+      - USW00023169
+      - USW00024233
+      - USW00094728
+      station_count: 3
+      record_count: 1080
+      median_error_pct: 0.0
+    holdout_median_error_max_pct: 5.0
+    holdout_min_records: 200
+    train_station_ids:
+    - USC00053005
+    - USW00003928
+    - USW00012836
+    - USW00012918
+    - USW00012960
+    - USW00013739
+    - USW00013743
+    - USW00013874
+    - USW00013881
+    - USW00014819
+    - USW00014922
+    - USW00014933
+    - USW00014939
+    - USW00023174
+    - USW00023188
+    - USW00024057
+    holdout_station_ids:
+    - USW00012839
+    - USW00023169
+    - USW00024233
+    - USW00094728
+  neuron_train_holdout:
+    train_cells: 1745
+    holdout_cells: 420
+    gates_pass: true
+accuracy_weak_spots:
+- Astrophysics
+- Ecology
+- Economics
+- Fluid_Dynamics
+- Particle_Astrophysics
+- Planetary_Science
+- Psychology
+- Quantum_Computing
+- Sociology
+thin_empirical_coverage:
+- Astronomy
+- Astrophysics
+- Atmospheric_Physics
+- Atomic_Physics
+- Cosmology
+- Ecology
+- Economics
+- Fluid_Dynamics
+- Geophysics
+- High_Energy_Physics
+- Meteorology
+- Neuroscience
+- Oceanography
+- Particle_Astrophysics
+- Particle_Physics
+- Planetary_Science
+- Psychology
+- Quantum_Computing
+- Quantum_Gravity
+- Quantum_Mechanics
+- Quantum_Optics
+- Seismology
+- Sociology
+authority_dispersal_domains: []
+expansion_candidates:
+- id: Geochemistry
+  rationale: SMILES + planetary lab overlap; no dedicated observables
+  priority: high
+- id: Pharmacology
+  rationale: Medical/immunology bridge; drug-target strict empirical thin
+  priority: high
+- id: Oncology
+  rationale: Biology strict + immunology extension; tumor marker benchmarks
+  priority: medium
+- id: Space_Weather
+  rationale: Plasma + climate coupling; NOAA SWPC data ingest
+  priority: high
+- id: Hydrology
+  rationale: Climate NCEI scale-up; streamflow/USGS chunked ingest
+  priority: medium
+- id: Cryosphere
+  rationale: Climate + geophysics; ice-core / GRACE proxies
+  priority: medium
+- id: Neuroimmunology
+  rationale: Immunology + neuron cohort cross-domain
+  priority: medium
+- id: Synthetic_Biology
+  rationale: Biology strict + evolution operons; iGEM benchmarks
+  priority: medium
+- id: Quantum_Materials
+  rationale: Condensed matter SMILES depth; dedicated lab thin
+  priority: low
+- id: Econometrics
+  rationale: Economics uses linguistics proxy only
+  priority: low
+recommended_next_waves:
+- "Scale climate to 20 stations \xD7 40 years with holdout station gates (in progress)"
+- Expand Plasma_Physics beyond 6 records (fusion lab + NIST plasma tables)
+- 'Wire Space_Weather as domain #40 (NOAA SWPC Kp/Ap chunked ingest)'
+- "Multi-hero neuron certification (3\u20135 specimens per Allen class)"
+- Pharmacology strict-empirical (ChEMBL / DrugBank property bridge)
+- Hydrology USGS streamflow chunked ingest (climate cohort pattern)

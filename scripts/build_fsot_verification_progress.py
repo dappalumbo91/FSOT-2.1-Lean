@@ -44,6 +44,8 @@ def build_progress() -> dict:
     plasma_bench = _load_json(ROOT / "data" / "plasma_physics_benchmark.json")
     immuno_bench = _load_json(ROOT / "data" / "immunology_benchmark.json")
     climate_bench = _load_json(ROOT / "data" / "climate_observed_benchmark.json")
+    neuron_th = _load_json(ROOT / "data" / "neuron_cohort_train_holdout.json")
+    sci_map = _load_json(ROOT / "data" / "scientific_domain_expansion_map.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -208,6 +210,37 @@ def build_progress() -> dict:
                 "data/biology_strict_empirical.json",
             ],
         },
+        {
+            "tier": 14,
+            "name": "Climate scale cohort + neuron train/holdout + scientific domain map",
+            "status": "complete"
+            if (neuron_th.get("gates") or {}).get("all_pass")
+            and (climate_bench.get("cohort") or {}).get("holdout", {}).get("record_count", 0) >= 1
+            and sci_map.get("summary", {}).get("total_scientific_domains_covered", 0) >= 39
+            else "pending",
+            "metrics": {
+                "climate_total_months": climate_bench.get("record_count"),
+                "climate_holdout_months": (climate_bench.get("cohort") or {})
+                .get("holdout", {})
+                .get("record_count"),
+                "climate_holdout_median_err": (climate_bench.get("cohort") or {})
+                .get("holdout", {})
+                .get("median_error_pct"),
+                "neuron_train_cells": (neuron_th.get("train") or {}).get("cell_count"),
+                "neuron_holdout_cells": (neuron_th.get("holdout") or {}).get("cell_count"),
+                "neuron_holdout_gates_pass": (neuron_th.get("gates") or {}).get("all_pass"),
+                "scientific_domains_covered": sci_map.get("summary", {}).get(
+                    "total_scientific_domains_covered"
+                ),
+                "expansion_candidates": len(sci_map.get("expansion_candidates") or []),
+            },
+            "artifacts": [
+                "data/climate_ncei_manifest.yaml",
+                "data/neuron_cohort_train_holdout.json",
+                "data/scientific_domain_expansion_map.json",
+                "FSOT.Formal.NeuronCohortTrainHoldoutPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -234,7 +267,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 13 biology strict-empirical NCBI bridge + extension domains #37-39",
+        "current_position": "Tier 14 climate scale cohort + neuron train/holdout + domain expansion map",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

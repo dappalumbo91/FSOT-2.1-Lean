@@ -1,5 +1,5 @@
 # NOAA NCEI GHCND chunked ingest — memory-safe year-by-year streaming.
-version: "1.0"
+version: "1.1"
 updated: "2026-07-01"
 
 source:
@@ -17,46 +17,141 @@ cache:
   chunks_dir: data/climate_cache/chunks
   state_file: data/climate_cache/ingest_state.json
 
-# Reference US climate stations (GHCND IDs)
+# 20 US reference stations — continental climate cohort (train/holdout split below)
 stations:
   - id: USC00053005
     name: Denver/Centennial CO
     lat: 39.74
     lon: -104.99
+    zone: mountain
   - id: USW00014922
     name: Sioux City IA
     lat: 42.45
     lon: -96.38
+    zone: midwest
   - id: USW00094728
     name: New York Central Park NY
     lat: 40.78
     lon: -73.97
-  - id: USW00023104
-    name: Los Angeles CA
+    zone: northeast
+  - id: USW00023174
+    name: Los Angeles Intl CA
     lat: 33.94
     lon: -118.41
+    zone: pacific_southwest
   - id: USW00012960
     name: Houston TX
     lat: 29.76
     lon: -95.37
+    zone: gulf
   - id: USW00024233
     name: Seattle WA
     lat: 47.45
     lon: -122.31
+    zone: pacific_northwest
   - id: USW00013881
     name: Atlanta GA
     lat: 33.64
     lon: -84.43
+    zone: southeast
   - id: USW00023169
     name: Phoenix AZ
     lat: 33.43
     lon: -112.02
+    zone: desert
+  - id: USW00014819
+    name: Chicago O'Hare IL
+    lat: 41.98
+    lon: -87.90
+    zone: midwest
+  - id: USW00013743
+    name: Boston MA
+    lat: 42.36
+    lon: -71.01
+    zone: northeast
+  - id: USW00012839
+    name: Miami FL
+    lat: 25.79
+    lon: -80.29
+    zone: tropical
+  - id: USW00003928
+    name: Dallas-Fort Worth TX
+    lat: 32.90
+    lon: -97.04
+    zone: south_central
+  - id: USW00012918
+    name: New Orleans LA
+    lat: 29.99
+    lon: -90.25
+    zone: gulf
+  - id: USW00024057
+    name: Portland OR
+    lat: 45.59
+    lon: -122.60
+    zone: pacific_northwest
+  - id: USW00014939
+    name: Minneapolis MN
+    lat: 44.88
+    lon: -93.22
+    zone: upper_midwest
+  - id: USW00013739
+    name: Philadelphia PA
+    lat: 39.87
+    lon: -75.24
+    zone: mid_atlantic
+  - id: USW00012836
+    name: Kansas City MO
+    lat: 39.12
+    lon: -94.55
+    zone: midwest
+  - id: USW00023188
+    name: San Diego CA
+    lat: 32.73
+    lon: -117.18
+    zone: pacific_southwest
+  - id: USW00013874
+    name: Nashville TN
+    lat: 36.12
+    lon: -86.68
+    zone: southeast
+  - id: USW00014933
+    name: Milwaukee WI
+    lat: 42.95
+    lon: -87.90
+    zone: great_lakes
 
 ingest:
-  start_year: 1995
+  start_year: 1985
   end_year: 2024
   elements: [TMAX, TMIN, TAVG, PRCP]
   chunk_key_format: "{station_id}_{year}"
+
+# Station cohort for train/holdout generalization gates (geographic diversity holdout)
+cohort:
+  train_stations:
+    - USC00053005
+    - USW00014922
+    - USW00023174
+    - USW00012960
+    - USW00013881
+    - USW00014819
+    - USW00013743
+    - USW00003928
+    - USW00012918
+    - USW00014939
+    - USW00013739
+    - USW00012836
+    - USW00023188
+    - USW00013874
+    - USW00014933
+    - USW00024057
+  holdout_stations:
+    - USW00094728
+    - USW00024233
+    - USW00023169
+    - USW00012839
+  holdout_median_error_max_pct: 5.0
+  holdout_min_records: 200
 
 benchmark:
   output: data/climate_observed_benchmark.json

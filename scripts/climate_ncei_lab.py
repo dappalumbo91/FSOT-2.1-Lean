@@ -282,3 +282,44 @@ def build_benchmark_records(
         "median_error_pct": sorted(errs)[len(errs) // 2] if errs else None,
         "records": records,
     }
+
+
+def cohort_split_metrics(
+    records: list[dict],
+    train_stations: set[str],
+    holdout_stations: set[str],
+) -> dict[str, Any]:
+    """Train/holdout station cohort metrics for climate generalization gates."""
+
+    def _bucket(ids: set[str]) -> dict[str, Any]:
+        subset = [r for r in records if r.get("station") in ids]
+        errs = [float(r["error_pct"]) for r in subset if r.get("error_pct") is not None]
+        active = sorted({r["station"] for r in subset})
+        return {
+            "stations": active,
+            "station_count": len(active),
+            "record_count": len(subset),
+            "median_error_pct": sorted(errs)[len(errs) // 2] if errs else None,
+        }
+
+    return {
+        "train": _bucket(train_stations),
+        "holdout": _bucket(holdout_stations),
+    }
+
+
+def attach_cohort_metrics(doc: dict, manifest: dict) -> dict:
+    cohort = manifest.get("cohort") or {}
+    train = set(cohort.get("train_stations") or [])
+    holdout = set(cohort.get("holdout_stations") or [])
+    if not train or not holdout:
+        return doc
+    metrics = cohort_split_metrics(doc.get("records") or [], train, holdout)
+    doc["cohort"] = {
+        **metrics,
+        "holdout_median_error_max_pct": float(cohort.get("holdout_median_error_max_pct", 5.0)),
+        "holdout_min_records": int(cohort.get("holdout_min_records", 200)),
+        "train_station_ids": sorted(train),
+        "holdout_station_ids": sorted(holdout),
+    }
+    return doc

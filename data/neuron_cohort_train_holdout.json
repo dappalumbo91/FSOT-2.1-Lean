@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-07-01T18:31:17.278139+00:00",
+  "split_method": "deterministic_specimen_hash",
+  "train_percent": 80,
+  "hero_specimen_excluded": 324257146,
+  "train": {
+    "cell_count": 1745,
+    "fi_median_rel_err": 0.24544591854270223,
+    "fi_mean_rel_err": 0.38736151936123947,
+    "fi_p90_rel_err": 0.8915537829615927,
+    "fi_pearson_r": 0.6100175974330627,
+    "canonical_scalar_min": 0.25241247006708056,
+    "canonical_scalar_mean": 0.25241247006708056,
+    "canonical_neuroscience_domain_S": 0.5143619629083619
+  },
+  "holdout": {
+    "cell_count": 420,
+    "fi_median_rel_err": 0.23879717016341562,
+    "fi_mean_rel_err": 0.39785089336884893,
+    "fi_p90_rel_err": 0.9075472602706502,
+    "fi_pearson_r": 0.5982032061315143,
+    "canonical_scalar_min": 0.25241247006708056,
+    "canonical_scalar_mean": 0.25241247006708056,
+    "canonical_neuroscience_domain_S": 0.5143619629083619
+  },
+  "strata": {
+    "Sst_interneuron": {
+      "train": {
+        "catalog_cells": 124,
+        "cell_count": 115,
+        "fi_median_rel_err": 0.3675469888888891,
+        "fi_mean_rel_err": 0.46323640731986887,
+        "fi_p90_rel_err": 0.9427734852734924,
+        "fi_pearson_r": 0.4963253851626082,
+        "canonical_scalar_min": 0.25241247006708056,
+        "canonical_scalar_mean": 0.25241247006708056,
+        "canonical_neuroscience_domain_S": 0.5143619629083619
+      },
+      "holdout": {
+        "catalog_cells": 41,
+        "cell_count": 39,
+        "fi_median_rel_err": 0.21861099999999897,
+        "fi_mean_rel_err": 0.3961651262879663,
+        "fi_p90_rel_err": 0.9771464286060237,
+        "fi_pearson_r": 0.5769543404768117,
+        "canonical_scalar_min": 0.25241247006708056,
+        "canonical_scalar_mean": 0.25241247006708056,
+        "canonical_neuroscience_domain_S": 0.5143619629083619
+      }
+    },
+    "PV_interneuron": {
+      "train": {
+        "catalog_cells": 193,
+        "cell_count": 177,
+        "fi_median_rel_err": 0.31548114702353747,
+        "fi_mean_rel_err": 0.7287802055545147,
+        "fi_p90_rel_err": 0.8226596048078404,
+        "fi_pearson_r": 0.3885944731622832,
+        "canonical_scalar_min": 0.25241247006708056,
+        "canonical_scalar_mean": 0.25241247006708056,
+        "canonical_neuroscience_domain_S": 0.5143619629083619
+      },
+      "holdout": {
+        "catalog_cells": 49,
+        "cell_count": 45,
+        "fi_median_rel_err": 0.2561800848805613,
+        "fi_mean_rel_err": 0.6080724201852677,
+        "fi_p90_rel_err": 0.7300716622997058,
+        "fi_pearson_r": 0.41195746988690735,
+        "canonical_scalar_min": 0.25241247006708056,
+        "canonical_scalar_mean": 0.25241247006708056,
+        "canonical_neuroscience_domain_S": 0.5143619629083619
+      }
+    },
+    "VIP_interneuron": {
+      "train": {
+        "catalog_cells": 120,
+        "cell_count": 115,
+        "fi_median_rel_err": 0.3545654550387896,
+        "fi_mean_rel_err": 0.4614625907372926,
+        "fi_p90_rel_err": 0.966682,
+        "fi_pearson_r": 0.4313059424143418,
+        "canonical_scalar_min": 0.25241247006708056,
+        "canonical_scalar_mean": 0.25241247006708056,
+        "canonical_neuroscience_domain_S": 0.5143619629083619
+      },
+      "holdout": {
+        "catalog_cells": 35,
+        "cell_count": 31,
+        "fi_median_rel_err": 0.2138946928058822,
+        "fi_mean_rel_err": 0.38220183485227127,
+        "fi_p90_rel_err": 0.9626176137497382,
+        "fi_pearson_r": 0.4344529732001576,
+        "canonical_scalar_min": 0.25241247006708056,
+        "canonical_scalar_mean": 0.25241247006708056,
+        "canonical_neuroscience_domain_S": 0.5143619629083619
+      }
+    },
+    "L2_3_pyramidal": {
+      "train": {
+        "catalog_cells": 999,
+        "cell_count": 922,
+        "fi_median_rel_err": 0.21733954256504773,
+        "fi_mean_rel_err": 0.31710711684099513,
+        "fi_p90_rel_err": 0.7746900511016434,
+        "fi_pearson_r": 0.1869161448516247,
+        "canonical_scalar_min": 0.25241247006708056,
+        "canonical_scalar_mean": 0.25241247006708056,
+        "canonical_neuroscience_domain_S": 0.5143619629083619
+      },
+      "holdout": {
+        "catalog_cells": 225,
+        "cell_count": 205,
+        "fi_median_rel_err": 0.22423932773109068,
+        "fi_mean_rel_err": 0.36523062235996334,
+        "fi_p90_rel_err": 0.8883774716129229,
+        "fi_pearson_r": 0.3176553348672731,
+        "canonical_scalar_min": 0.25241247006708056,
+        "canonical_scalar_mean": 0.25241247006708056,
+        "canonical_neuroscience_domain_S": 0.5143619629083619
+      }
+    }
+  },
+  "gates": {
+    "holdout_min_cells": 400,
+    "holdout_fi_median_rel_err_max": 0.3,
+    "holdout_fi_pearson_r_min": 0.55,
+    "train_fi_median_rel_err_max": 0.3,
+    "all_pass": true,
+    "holdout_median_rel_err": 0.23879717016341562,
+    "holdout_pearson_r": 0.5982032061315143,
+    "holdout_cell_count": 420
+  }
+}
