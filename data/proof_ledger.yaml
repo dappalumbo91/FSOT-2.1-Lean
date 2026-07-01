@@ -967,9 +967,23 @@ entries:
       Hero FI from inconsistency_rerun_report (calibrated hybrid, specimen 324257146).
       Bridge: SMILES 1470 mapped + strict_empirical 7941 + NeuroLab 10 brain components.
 
+  - id: allen_neuron_cohort_strata
+    domain: neural
+    claim: "Allen strata: Sst/PV/VIP/L2-3 FI proxy + 2165-cell held-out (hero excluded)"
+    status: numerically_verified
+    source_lab: "nuron/allen_cell_types"
+    source_file: data/neuron_cohort_report.json
+    verification: scripts/verify_experiment_synthesis.py
+    lean:
+      module: FSOT.Formal.NeuronCohortStrataPriors
+      theorem: neuron_cohort_strata_bundle
+    physics_note: |
+      Per-class strata from Allen cre-line + dendrite tags; FI proxy unchanged from cohort.
+      Held-out excludes hero specimen 324257146 for regression independence.
+
   - id: experiment_synthesis_tier7
     domain: "*"
-    claim: "Tier 7 synthesis: 4 corrected approaches + 21 LLM experiment folders inventoried"
+    claim: "Tier 7–8 synthesis: 5 corrected approaches + 21 LLM experiment folders inventoried"
     status: cross_validated
     source_lab: "experiment_synthesis"
     source_file: data/experiment_synthesis_manifest.yaml

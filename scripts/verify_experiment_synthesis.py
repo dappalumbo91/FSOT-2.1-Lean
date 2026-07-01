@@ -14,6 +14,7 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "data" / "experiment_synthesis_manifest.yaml"
+COHORT_MANIFEST_PATH = ROOT / "data" / "neuron_cohort_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -109,6 +110,28 @@ def verify_experiment_synthesis(
         if bridge.get("strict_empirical_records", 0) < ver.get("strict_empirical_min", 7900):
             issues.append("neuron_cohort: strict empirical count too low")
 
+        strata_block = cohort.get("cohort_strata", {})
+        held = strata_block.get("held_out_fi_proxy", {})
+        cohort_ver = {}
+        if COHORT_MANIFEST_PATH.exists():
+            cohort_ver = yaml.safe_load(COHORT_MANIFEST_PATH.read_text(encoding="utf-8")).get("verification", {})
+        if held.get("cell_count", 0) < cohort_ver.get("held_out_min_cells", 2100):
+            issues.append("neuron_cohort: held-out cell count too low")
+        if held.get("fi_median_rel_err", 1) > cohort_ver.get("held_out_fi_median_rel_err_max", 0.30):
+            issues.append("neuron_cohort: held-out FI median too high")
+        if held.get("fi_pearson_r", 0) < cohort_ver.get("held_out_fi_pearson_r_min", 0.55):
+            issues.append("neuron_cohort: held-out FI pearson too low")
+        for spec in (yaml.safe_load(COHORT_MANIFEST_PATH.read_text(encoding="utf-8")).get("strata", {}).get("classes", [])
+                     if COHORT_MANIFEST_PATH.exists()
+                     else []):
+            row = (strata_block.get("strata") or {}).get(spec["id"], {})
+            if row.get("cell_count", 0) < spec.get("min_eval_cells", 0):
+                issues.append(f"neuron_cohort stratum {spec['id']}: insufficient cells")
+            if row.get("fi_median_rel_err", 1) > spec.get("fi_median_rel_err_max", 1):
+                issues.append(f"neuron_cohort stratum {spec['id']}: FI median too high")
+            if row.get("fi_pearson_r", 0) < spec.get("fi_pearson_r_min", 0):
+                issues.append(f"neuron_cohort stratum {spec['id']}: FI pearson too low")
+
     summary = {
         "neuron_mean_rel_err": neuron.get("mean_rel_err"),
         "aether_distill_rows": aether.get("distill_row_count"),
@@ -116,6 +139,8 @@ def verify_experiment_synthesis(
         "llm_folder_count": llm.get("project_folder_count"),
         "cohort_cell_count": cohort.get("cohort_fi_proxy", {}).get("cell_count"),
         "hero_certified_err": cohort.get("hero_certified_fi", {}).get("mean_rel_err"),
+        "held_out_cells": cohort.get("cohort_strata", {}).get("held_out_fi_proxy", {}).get("cell_count"),
+        "strata_count": len(cohort.get("cohort_strata", {}).get("strata") or {}),
         "issues": len(issues),
     }
     return issues, summary

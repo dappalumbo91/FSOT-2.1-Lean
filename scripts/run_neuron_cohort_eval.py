@@ -45,6 +45,24 @@ def _pearson(xs: list[float], ys: list[float]) -> float:
     return statistics.correlation(xs, ys)
 
 
+def _infer_stratum(cell: dict, strata_cfg: list[dict]) -> str | None:
+    line = str(cell.get("line_name") or "")
+    dendrite = str(cell.get("tag__dendrite_type") or "")
+    for spec in strata_cfg:
+        markers = spec.get("cre_markers") or []
+        if any(m in line for m in markers):
+            return spec["id"]
+        dendrite_types = spec.get("dendrite_types") or []
+        if dendrite_types and dendrite in dendrite_types:
+            if not any(
+                any(m in line for m in other.get("cre_markers") or [])
+                for other in strata_cfg
+                if other["id"] != spec["id"]
+            ):
+                return spec["id"]
+    return None
+
+
 def eval_allen_fi_cohort(cells: list[dict], offset_pa: float) -> dict:
     rel_errs: list[float] = []
     preds: list[float] = []
@@ -185,6 +203,49 @@ def hero_certified_from_report(hero_report: Path) -> dict | None:
     }
 
 
+def eval_cohort_strata(cells: list[dict], manifest: dict) -> dict:
+    """Per-class Allen FI proxy + held-out (hero excluded) for Tier 8 Lean priors."""
+    strata_cfg = manifest.get("strata", {}).get("classes") or []
+    hero_id = int(manifest.get("strata", {}).get("hero_specimen_id") or 0)
+    offset_pa = float(manifest["fi_proxy"]["stim_offset_pa"])
+    buckets: dict[str, list[dict]] = {spec["id"]: [] for spec in strata_cfg}
+    unclassified: list[dict] = []
+    held_out: list[dict] = []
+
+    for cell in cells:
+        sid = cell.get("specimen__id")
+        if hero_id and sid == hero_id:
+            continue
+        held_out.append(cell)
+        name = _infer_stratum(cell, strata_cfg)
+        if name:
+            buckets[name].append(cell)
+        else:
+            unclassified.append(cell)
+
+    strata_results = {}
+    for spec in strata_cfg:
+        sid = spec["id"]
+        cohort = eval_allen_fi_cohort(buckets.get(sid, []), offset_pa)
+        strata_results[sid] = {
+            "catalog_cells": len(buckets.get(sid, [])),
+            **cohort,
+        }
+
+    held = eval_allen_fi_cohort(held_out, offset_pa)
+    catalog_coverage = {
+        "hero_specimen_excluded": hero_id,
+        "classified_catalog_cells": sum(len(v) for v in buckets.values()),
+        "unclassified_catalog_cells": len(unclassified),
+        "held_out_catalog_cells": len(held_out),
+    }
+    return {
+        "catalog_coverage": catalog_coverage,
+        "held_out_fi_proxy": held,
+        "strata": strata_results,
+    }
+
+
 def neurolab_bridge(registry: dict) -> dict:
     smiles = registry.get("smiles_lab", {})
     formula = registry.get("formula_corpus", {})
@@ -226,6 +287,7 @@ def main() -> int:
     hero_path = hybrid_root / manifest.get("hero_report", "inconsistency_rerun_report.json")
 
     cohort = eval_allen_fi_cohort(cells, manifest["fi_proxy"]["stim_offset_pa"])
+    strata = eval_cohort_strata(cells, manifest)
     hero_certified = hero_certified_from_report(hero_path)
     hero_native = eval_hero_hybrid_fi(hybrid_root, hero_path, "native")
     hero_canon = eval_hero_hybrid_fi(hybrid_root, hero_path, "canonical")
@@ -240,6 +302,7 @@ def main() -> int:
         "generated_from": str(cells_path),
         "total_cells_in_catalog": len(cells),
         "cohort_fi_proxy": cohort,
+        "cohort_strata": strata,
         "hero_certified_fi": hero_certified,
         "hero_hybrid_native_scalar": hero_native,
         "hero_hybrid_canonical_scalar": hero_canon,
@@ -262,6 +325,10 @@ def main() -> int:
         print(f"  hero native mean rel err: {hero_native['mean_rel_err']:.4f} ({hero_native.get('data_source')})")
     if hero_canon:
         print(f"  hero canonical mean rel err: {hero_canon['mean_rel_err']:.4f} (delta {canon_delta:.4f})")
+    held = strata.get("held_out_fi_proxy", {})
+    print(f"  held-out cells: {held.get('cell_count', 0)} median err {held.get('fi_median_rel_err', 0):.4f}")
+    for sid, row in (strata.get("strata") or {}).items():
+        print(f"  stratum {sid}: n={row.get('cell_count')} median={row.get('fi_median_rel_err', 0):.4f}")
     return 0
 
 

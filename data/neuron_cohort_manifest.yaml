@@ -12,6 +12,31 @@ fi_proxy:
   stim_offset_pa: 60.0
   min_slope: 0.0
 
+strata:
+  hero_specimen_id: 324257146
+  classes:
+    - id: Sst_interneuron
+      cre_markers: ["Sst"]
+      min_eval_cells: 150
+      fi_median_rel_err_max: 0.40
+      fi_pearson_r_min: 0.50
+    - id: PV_interneuron
+      cre_markers: ["Pvalb"]
+      min_eval_cells: 200
+      fi_median_rel_err_max: 0.35
+      fi_pearson_r_min: 0.35
+    - id: VIP_interneuron
+      cre_markers: ["Vip"]
+      min_eval_cells: 140
+      fi_median_rel_err_max: 0.35
+      fi_pearson_r_min: 0.40
+    - id: L2_3_pyramidal
+      cre_markers: ["Rorb", "Rbp4", "Cux2", "Scnn1a"]
+      dendrite_types: ["spiny"]
+      min_eval_cells: 1100
+      fi_median_rel_err_max: 0.25
+      fi_pearson_r_min: 0.20
+
 verification:
   min_cell_count: 2000
   fi_median_rel_err_max: 0.30
@@ -19,6 +44,9 @@ verification:
   hybrid_mean_rel_err_max: 0.15
   canonical_bridge_mean_rel_err_max: 0.12
   canonical_bridge_delta_max: 0.05
+  held_out_min_cells: 2100
+  held_out_fi_median_rel_err_max: 0.30
+  held_out_fi_pearson_r_min: 0.55
   canonical_S_positive_min: 0.0
   smiles_mapped_min: 1400
   strict_empirical_min: 7900

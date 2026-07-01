@@ -13,7 +13,7 @@ noncomputable section
 
 open Real
 
-def kronos_run_count : ℕ := 568
+def kronos_run_count : ℕ := 569
 def kronos_best_fractional_error : ℝ := (1.644295e-07 : ℝ)
 def kronos_record_fractional_uncertainty : ℝ := (5.5e-19 : ℝ)
 
@@ -29,7 +29,7 @@ theorem kronos_record_fractional_uncertainty_positive :
 
 /-- Bundle: Kronos metrology runs with medical-domain observed-sign proxy. -/
 theorem kronos_metrology_bundle :
-    kronos_run_count = 568 ∧
+    kronos_run_count = 569 ∧
     kronos_best_fractional_error = (1.644295e-07 : ℝ) ∧
     kronos_record_fractional_uncertainty = (5.5e-19 : ℝ) ∧
     (0 : ℝ) < raw_S (get_domain_params "medical") := by

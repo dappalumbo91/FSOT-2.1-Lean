@@ -362,6 +362,139 @@ end FSOT.Formal
 """
 
 
+_STRATUM_LEAN_NAMES = {
+    "Sst_interneuron": "sst",
+    "PV_interneuron": "pv",
+    "VIP_interneuron": "vip",
+    "L2_3_pyramidal": "l23_pyramidal",
+}
+
+_STRATUM_BOUNDS = {
+    "Sst_interneuron": (0.40, 0.50),
+    "PV_interneuron": (0.35, 0.35),
+    "VIP_interneuron": (0.35, 0.40),
+    "L2_3_pyramidal": (0.25, 0.20),
+}
+
+
+def gen_neuron_cohort_strata(registry: dict) -> str:
+    cohort = registry.get("neuron_cohort_lab", {})
+    strata_block = cohort.get("cohort_strata", {})
+    held = strata_block.get("held_out_fi_proxy", {})
+    strata = strata_block.get("strata", {})
+
+    defs: list[str] = []
+    count_thms: list[str] = []
+    median_thms: list[str] = []
+    pearson_thms: list[str] = []
+    bundle_conjuncts: list[str] = []
+    bundle_proofs: list[str] = []
+
+    defs.append(f"def held_out_cell_count : ℕ := {int(held.get('cell_count') or 0)}")
+    defs.append(f"def held_out_fi_median_rel_err : ℝ := ({_f(float(held.get('fi_median_rel_err') or 1.0))} : ℝ)")
+    defs.append(f"def held_out_fi_pearson_r : ℝ := ({_f(float(held.get('fi_pearson_r') or 0.0))} : ℝ)")
+
+    defs.append("theorem held_out_cell_count_large : (2100 : ℕ) < held_out_cell_count := by")
+    defs.append("  unfold held_out_cell_count; norm_num")
+    defs.append("")
+    defs.append("theorem held_out_fi_median_rel_err_lt_thirty_pct : held_out_fi_median_rel_err < (0.30 : ℝ) := by")
+    defs.append("  unfold held_out_fi_median_rel_err; norm_num")
+    defs.append("")
+    defs.append("theorem held_out_fi_pearson_r_gt_fifty_five : (0.55 : ℝ) < held_out_fi_pearson_r := by")
+    defs.append("  unfold held_out_fi_pearson_r; norm_num")
+
+    bundle_conjuncts.extend(
+        [
+            "(2100 : ℕ) < held_out_cell_count",
+            "held_out_fi_median_rel_err < (0.30 : ℝ)",
+            "(0.55 : ℝ) < held_out_fi_pearson_r",
+        ]
+    )
+    bundle_proofs.extend(
+        [
+            "held_out_cell_count_large",
+            "held_out_fi_median_rel_err_lt_thirty_pct",
+            "held_out_fi_pearson_r_gt_fifty_five",
+        ]
+    )
+
+    for sid, row in strata.items():
+        lean_name = _STRATUM_LEAN_NAMES.get(sid, sid.lower())
+        med_max, pear_min = _STRATUM_BOUNDS.get(sid, (0.50, 0.20))
+        n_cells = int(row.get("cell_count") or 0)
+        med_err = float(row.get("fi_median_rel_err") or 1.0)
+        pearson = float(row.get("fi_pearson_r") or 0.0)
+        min_cells = {"Sst_interneuron": 150, "PV_interneuron": 200, "VIP_interneuron": 140, "L2_3_pyramidal": 1100}.get(
+            sid, 50
+        )
+
+        defs.append(f"def stratum_{lean_name}_cell_count : ℕ := {n_cells}")
+        defs.append(f"def stratum_{lean_name}_fi_median_rel_err : ℝ := ({_f(med_err)} : ℝ)")
+        defs.append(f"def stratum_{lean_name}_fi_pearson_r : ℝ := ({_f(pearson)} : ℝ)")
+        defs.append(f"theorem stratum_{lean_name}_cell_count_pos : ({min_cells} : ℕ) < stratum_{lean_name}_cell_count := by")
+        defs.append(f"  unfold stratum_{lean_name}_cell_count; norm_num")
+        defs.append("")
+        defs.append(
+            f"theorem stratum_{lean_name}_fi_median_lt_bound : "
+            f"stratum_{lean_name}_fi_median_rel_err < ({med_max} : ℝ) := by"
+        )
+        defs.append(f"  unfold stratum_{lean_name}_fi_median_rel_err; norm_num")
+        defs.append("")
+        defs.append(
+            f"theorem stratum_{lean_name}_fi_pearson_gt_bound : "
+            f"({pear_min} : ℝ) < stratum_{lean_name}_fi_pearson_r := by"
+        )
+        defs.append(f"  unfold stratum_{lean_name}_fi_pearson_r; norm_num")
+        defs.append("")
+
+        bundle_conjuncts.extend(
+            [
+                f"({min_cells} : ℕ) < stratum_{lean_name}_cell_count",
+                f"stratum_{lean_name}_fi_median_rel_err < ({med_max} : ℝ)",
+                f"({pear_min} : ℝ) < stratum_{lean_name}_fi_pearson_r",
+            ]
+        )
+        bundle_proofs.extend(
+            [
+                f"stratum_{lean_name}_cell_count_pos",
+                f"stratum_{lean_name}_fi_median_lt_bound",
+                f"stratum_{lean_name}_fi_pearson_gt_bound",
+            ]
+        )
+
+    bundle_body = " ∧\n    ".join(bundle_conjuncts)
+    proof_body = ",\n    ".join(bundle_proofs)
+
+    return f"""/-
+  FSOT Formal NeuronCohortStrataPriors — per-class Allen FI proxy + held-out certificates.
+
+  Source: data/neuron_cohort_report.json (cohort_strata)
+  Generator: scripts/gen_experiment_synthesis_lean.py
+
+  Tier 8: Sst / PV / VIP / L2-3 pyramidal strata + hero-held-out cohort.
+-/
+
+import FSOT.Formal.NeuronCohortPriors
+
+namespace FSOT.Formal
+
+noncomputable section
+
+open Real
+
+{chr(10).join(defs)}
+
+/-- Bundle: held-out cohort + four major Allen cell-class strata. -/
+theorem neuron_cohort_strata_bundle :
+    {bundle_body} := by
+  refine ⟨{proof_body}⟩
+
+end
+
+end FSOT.Formal
+"""
+
+
 def gen_synthesis(registry: dict) -> str:
     syn = registry.get("experiment_synthesis", {})
     llm = syn.get("llm_experiments_lab", {})
@@ -370,8 +503,24 @@ def gen_synthesis(registry: dict) -> str:
     aether = syn.get("aether_prime_lab", {})
     magic = syn.get("magic_circle_lab", {})
     cohort = registry.get("neuron_cohort_lab", {})
+    has_strata = bool((cohort.get("cohort_strata") or {}).get("strata"))
     approach_count = sum(
         1 for lab in (neuron, aether, magic, cohort) if lab.get("present")
+    ) + (1 if has_strata else 0)
+    strata_import = (
+        "import FSOT.Formal.NeuronCohortStrataPriors\n"
+        if has_strata
+        else ""
+    )
+    strata_conjunct = (
+        "\n    (2100 : ℕ) < held_out_cell_count ∧"
+        if has_strata
+        else ""
+    )
+    strata_proof = (
+        ",\n    held_out_cell_count_large"
+        if has_strata
+        else ""
     )
 
     return f"""/-
@@ -380,13 +529,13 @@ def gen_synthesis(registry: dict) -> str:
   Source: data/experiment_synthesis_manifest.yaml
   Generator: scripts/gen_experiment_synthesis_lean.py
 
-  Tier 7 synthesis: correct project math against Lean + fsot_compute canon.
+  Tier 7–8 synthesis: corrected project math + Allen strata against Lean + fsot_compute canon.
 -/
 
 import FSOT.Formal.Domains
 import FSOT.Formal.NeuronHybridPriors
 import FSOT.Formal.NeuronCohortPriors
-import FSOT.Formal.AetherPrimePriors
+{strata_import}import FSOT.Formal.AetherPrimePriors
 import FSOT.Formal.MagicCirclePriors
 
 namespace FSOT.Formal
@@ -407,7 +556,7 @@ theorem experiment_synthesis_priors_bundle :
     experiment_synthesis_approach_count = {approach_count} ∧
     experiment_llm_project_folder_count = {llm_count} ∧
     allen_cohort_fi_median_rel_err < (0.30 : ℝ) ∧
-    hero_certified_fi_mean_rel_err < (0.15 : ℝ) ∧
+    hero_certified_fi_mean_rel_err < (0.15 : ℝ) ∧{strata_conjunct}
     aether_distill_row_count = {int(aether.get('distill_row_count') or 0)} ∧
     magic_min_resonance_for_emergence < magic_internalized_threshold ∧
     (7900 : ℕ) < neurolab_strict_empirical_records ∧
@@ -416,7 +565,7 @@ theorem experiment_synthesis_priors_bundle :
     by unfold experiment_synthesis_approach_count; norm_num,
     by unfold experiment_llm_project_folder_count; norm_num,
     allen_cohort_fi_median_rel_err_lt_thirty_pct,
-    hero_certified_fi_mean_rel_err_lt_fifteen_pct,
+    hero_certified_fi_mean_rel_err_lt_fifteen_pct{strata_proof},
     by unfold aether_distill_row_count; norm_num,
     magic_min_resonance_lt_internalized,
     neurolab_strict_empirical_records_large,
@@ -442,6 +591,8 @@ def main() -> int:
         "MagicCirclePriors.lean": gen_magic(registry),
         "ExperimentSynthesisPriors.lean": gen_synthesis(registry),
     }
+    if (registry.get("neuron_cohort_lab", {}).get("cohort_strata") or {}).get("strata"):
+        outputs["NeuronCohortStrataPriors.lean"] = gen_neuron_cohort_strata(registry)
     for name, content in outputs.items():
         path = FORMAL / name
         path.write_text(content, encoding="utf-8")

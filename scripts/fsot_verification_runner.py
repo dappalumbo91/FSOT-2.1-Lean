@@ -161,6 +161,7 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.BlackHoleThesisPriors",
                 "FSOT.Formal.NeuronHybridPriors",
                 "FSOT.Formal.NeuronCohortPriors",
+                "FSOT.Formal.NeuronCohortStrataPriors",
                 "FSOT.Formal.AetherPrimePriors",
                 "FSOT.Formal.MagicCirclePriors",
                 "FSOT.Formal.ExperimentSynthesisPriors",

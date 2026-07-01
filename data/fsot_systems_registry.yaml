@@ -1,6 +1,6 @@
 meta:
-  generated_at: '2026-06-20T05:24:07.952072+00:00'
-  repo: C:\Users\damia\Desktop\New folder (9)\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
+  generated_at: '2026-07-01T04:33:27.387392+00:00'
+  repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
   remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
   lean_build_ok: true
   proved_claims: 62
@@ -37,7 +37,7 @@ tier7_synthesis:
     scalar_canon: raw_S
   neuron_cohort:
     present: true
-    report_path: C:\Users\damia\Desktop\New folder (9)\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\data\neuron_cohort_report.json
+    report_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\data\neuron_cohort_report.json
     generated_from: C:\Users\damia\Desktop\nuron\cell data\allen_cell_types\cells.json
     total_cells_in_catalog: 2333
     cohort_fi_proxy:
@@ -49,6 +49,62 @@ tier7_synthesis:
       canonical_scalar_min: 0.25241247006708056
       canonical_scalar_mean: 0.25241247006708056
       canonical_neuroscience_domain_S: 0.5143619629083619
+    cohort_strata:
+      catalog_coverage:
+        hero_specimen_excluded: 324257146
+        classified_catalog_cells: 1786
+        unclassified_catalog_cells: 546
+        held_out_catalog_cells: 2332
+      held_out_fi_proxy:
+        cell_count: 2165
+        fi_median_rel_err: 0.24520261127596557
+        fi_mean_rel_err: 0.3893964094689512
+        fi_p90_rel_err: 0.9018905590486146
+        fi_pearson_r: 0.6068416819088323
+        canonical_scalar_min: 0.25241247006708056
+        canonical_scalar_mean: 0.25241247006708056
+        canonical_neuroscience_domain_S: 0.5143619629083619
+      strata:
+        Sst_interneuron:
+          catalog_cells: 165
+          cell_count: 154
+          fi_median_rel_err: 0.35479861060568474
+          fi_mean_rel_err: 0.446250823162439
+          fi_p90_rel_err: 0.9427734852734924
+          fi_pearson_r: 0.5196512945807779
+          canonical_scalar_min: 0.25241247006708056
+          canonical_scalar_mean: 0.25241247006708056
+          canonical_neuroscience_domain_S: 0.5143619629083619
+        PV_interneuron:
+          catalog_cells: 242
+          cell_count: 222
+          fi_median_rel_err: 0.2959837154055862
+          fi_mean_rel_err: 0.7043124112229106
+          fi_p90_rel_err: 0.8156916584836724
+          fi_pearson_r: 0.3915167429133035
+          canonical_scalar_min: 0.25241247006708056
+          canonical_scalar_mean: 0.25241247006708056
+          canonical_neuroscience_domain_S: 0.5143619629083619
+        VIP_interneuron:
+          catalog_cells: 155
+          cell_count: 146
+          fi_median_rel_err: 0.2972767467532461
+          fi_mean_rel_err: 0.44463325215896615
+          fi_p90_rel_err: 0.966682
+          fi_pearson_r: 0.42970594991301575
+          canonical_scalar_min: 0.25241247006708056
+          canonical_scalar_mean: 0.25241247006708056
+          canonical_neuroscience_domain_S: 0.5143619629083619
+        L2_3_pyramidal:
+          catalog_cells: 1224
+          cell_count: 1127
+          fi_median_rel_err: 0.22104086005830942
+          fi_mean_rel_err: 0.325860726984197
+          fi_p90_rel_err: 0.8092848352409213
+          fi_pearson_r: 0.22516239104042488
+          canonical_scalar_min: 0.25241247006708056
+          canonical_scalar_mean: 0.25241247006708056
+          canonical_neuroscience_domain_S: 0.5143619629083619
     hero_certified_fi:
       specimen_id: 324257146
       cell_class: Sst_interneuron
@@ -387,6 +443,10 @@ lean_formal_modules:
   file: FSOT/Formal/NeuronCohortPriors.lean
   has_sorry: false
   theorem_count: 12
+- module: FSOT.Formal.NeuronCohortStrataPriors
+  file: FSOT/Formal/NeuronCohortStrataPriors.lean
+  has_sorry: false
+  theorem_count: 16
 - module: FSOT.Formal.NeuronHybridPriors
   file: FSOT/Formal/NeuronHybridPriors.lean
   has_sorry: false
@@ -441,5 +501,5 @@ lean_formal_modules:
   theorem_count: 3
 proof_ledger:
   path: data/proof_ledger.yaml
-  entry_count: 69
+  entry_count: 70
   proved_count: 29

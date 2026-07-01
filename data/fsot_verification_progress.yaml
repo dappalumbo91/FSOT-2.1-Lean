@@ -1,0 +1,86 @@
+generated_at: '2026-07-01T04:34:15.553366+00:00'
+repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
+remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
+summary:
+  lean_formal_modules: 39
+  proved_claims: 63
+  sorry_count_formal: 0
+  lean_build_ok: true
+  tiers_complete: 5
+  tiers_total: 5
+  percent_complete: 100.0
+current_position: Tier 8 strata certified; precision refinement phase next
+tiers:
+- tier: 1
+  name: Core scalar + domains
+  status: complete
+  artifacts:
+  - FSOT.Formal.Domains
+  - FSOT.Formal.Bounds
+  - FSOT.Formal.Theorems
+- tier: 2
+  name: "Lab ingest (SMILES, NeuroLab, cosmology, \u2026)"
+  status: complete
+  artifacts:
+  - AetherPrimePriors
+  - BlackHoleThesisPriors
+  - BrainPriors
+  - CameoPriors
+  - CellularPriors
+  - CodonPriors
+  - CosmologyLab
+  - EvolutionPriors
+  - ExperimentSynthesisPriors
+  - FormulaCorpusPriors
+  - FuelPriors
+  - KnowledgeBasePriors
+  - KronosPriors
+  - LinguisticsPriors
+  - MagicCirclePriors
+  - MagneticStringPriors
+  - MathGeneratorPriors
+  - NeuronCohortPriors
+  - NeuronCohortStrataPriors
+  - NeuronHybridPriors
+  - PhotonicForge
+  - ProteinPriors
+  - SoulSiblingPriors
+  - SpeciesPriors
+  - TrinaryFluidPriors
+  - TrinaryOSPriors
+  - UnifiedDBPriors
+  - VibRegisterPriors
+  - WeatherPriors
+- tier: 7
+  name: Experiment synthesis (neuron, Aether, magic circle, LLM inventory)
+  status: complete
+  metrics:
+    hero_fi_mean_rel_err: 0.07002728543379658
+    aether_distill_rows: 120
+    llm_folders: 21
+- tier: 7b
+  name: Neuron cohort + canonical scalar bridge
+  status: complete
+  metrics:
+    cohort_cells: 2166
+    canonical_bridge_delta: 0.0035164727776800936
+    allensdk_verified: true
+- tier: 8
+  name: Allen per-class strata + held-out cohort
+  status: complete
+  metrics:
+    held_out_cells: 2165
+    strata_count: 4
+next_steps:
+- Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class
+- "Multi-hero held-out: certify 3\u20135 specimens per Sst/PV/VIP/L2/3"
+- Tighten canonical bridge per-class using psi_con/eta_eff only
+- Wire remaining LLM experiment folders into Lean namespaces
+- Cohort train/holdout split with Lean regression gates
+key_metrics:
+  strict_empirical_records: 7941
+  smiles_mapped: 1470
+  allen_catalog_cells: 2333
+  allen_eval_cells: 2166
+  hero_fi_pct: 7.0
+  canonical_bridge_fi_pct: 7.35

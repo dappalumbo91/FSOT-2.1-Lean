@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0",
-  "generated_at": "2026-06-20T05:20:50.238359+00:00",
+  "generated_at": "2026-07-01T04:33:31.507751+00:00",
   "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
   "smiles_lab": {
     "source_path": "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\FSOT_SMILES_Lab_Dataset.json",
@@ -11369,7 +11369,7 @@
     "processed_total": 30984,
     "done_total": 30984,
     "evaluator_version": "fsot_numeric_eval_v4",
-    "index_path": "C:\\Users\\damia\\Desktop\\New folder (9)\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\unified_db_domain_index.json",
+    "index_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\unified_db_domain_index.json",
     "generated_from": "C:\\Users\\damia\\Desktop\\FSOT_UNIFIED_DATABASE_SYSTEM_2026-05-03\\database\\FSOT_UNIFIED_INDEX.json",
     "records_total": 30984,
     "records_science": 13936,
@@ -46683,11 +46683,75 @@
           "3.820921e+02",
           "timeapi+astronomical_sidereal_transform"
         ]
+      },
+      {
+        "run_started": "2026-06-20T22:51:02.7438561Z",
+        "run_ended": "2026-06-20T23:00:31.2441319Z",
+        "duration_seconds": "568.500276",
+        "rows": "5678",
+        "intervals": "5677",
+        "refresh_ms": "100.000000",
+        "scheduled_avg_ms": "100.123305",
+        "scheduled_std_ms": "9.289671",
+        "scheduled_min_ms": "100.000000",
+        "scheduled_max_ms": "800.000000",
+        "actual_avg_ms": "99.989026",
+        "actual_std_ms": "0.854577",
+        "actual_min_ms": "37.675300",
+        "actual_max_ms": "104.625500",
+        "actual_avg_abs_error_ms": "0.134279",
+        "lag_avg_ms": "0.285060",
+        "lag_std_ms": "10.119187",
+        "lag_p95_ms": "0.442800",
+        "lag_p99_ms": "0.560900",
+        "lag_max_ms": "762.576100",
+        "actual_ci95_half_width_ms": "0.022230",
+        "dead_time_percent": "0.123131",
+        "missed_ticks": "7",
+        "phase_noise_proxy_rms_ns": "10119187.024",
+        "holdover_drift_ms_per_day": "115873.937227",
+        "allan_dev_tau1": "6.403976e-03",
+        "tdev_tau1_s": "3.701896e-04",
+        "phi_gate_hits": "0",
+        "gamma_gate_hits": "0",
+        "record_fractional_uncertainty": "5.500e-19",
+        "kronos_fractional_error": "1.341134e-03",
+        "record_gap_factor": "2.438425e+15",
+        "beats_record": "0",
+        "champion_fractional_ref": "5.500000e-19",
+        "champion_fractional_gap_factor": "2.438425e+15",
+        "champion_fractional_gap_oom": "15.387109",
+        "champion_allan_ref": "1.600000e-18",
+        "champion_allan_ref_tau_s": "25200",
+        "champion_allan_gap_factor": "4.002485e+15",
+        "champion_allan_gap_oom": "15.602330",
+        "champion_tdev_ref_s": "3.000000e-10",
+        "champion_tdev_gap_factor": "1.233965e+06",
+        "champion_tdev_gap_oom": "6.091303",
+        "champion_time_align_ref_ns": "3.000",
+        "champion_phase_noise_gap_factor": "3.373062e+06",
+        "champion_phase_noise_gap_oom": "6.528024",
+        "competitor_citation_set": "nist-2025-07+nist-2013-science+nist-time-realization-2024",
+        "time_anchor_enabled": "1",
+        "time_anchor_ok": "1",
+        "time_anchor_provider": "timeapi",
+        "time_anchor_utc": "2026-06-20T22:51:05.4497974Z",
+        "time_anchor_offset_ms": "2275.172350",
+        "time_anchor_uncertainty_ms": "430.255150",
+        "time_anchor_rtt_ms": "860.510300",
+        "time_anchor_error": "",
+        "null": [
+          "utc",
+          "utc_api",
+          "2.275172e+03",
+          "4.302552e+02",
+          "timeapi"
+        ]
       }
     ],
-    "run_count": 568,
+    "run_count": 569,
     "best_fractional_error": 1.644295e-07,
-    "mean_fractional_error": 0.06375268952176777,
+    "mean_fractional_error": 0.06364300313245007,
     "record_fractional_uncertainty": 5.5e-19
   },
   "knowledge_base": {
@@ -46807,7 +46871,7 @@
     ],
     "corpus_path": "C:\\Users\\damia\\Desktop\\fsot code language\\audits\\reports\\FSOT_UNIFIED_DATABASE\\by_domain\\strict_empirical.jsonl",
     "verification_tier": "numeric_formula",
-    "ingested_at": "2026-06-20T05:20:58.022608+00:00"
+    "ingested_at": "2026-07-01T04:33:55.001932+00:00"
   },
   "cellular_lab": {
     "soul_records_processed": 234447,
@@ -46821,7 +46885,7 @@
     "evolution_total_bp": 11395,
     "domain": "cellular",
     "D_eff": 12,
-    "ingested_at": "2026-06-20T05:20:58.269229+00:00"
+    "ingested_at": "2026-07-01T04:33:55.669005+00:00"
   },
   "blackhole_thesis": {
     "observable_count": 28,
@@ -47084,7 +47148,7 @@
       }
     ],
     "source_md": "C:\\Users\\damia\\Desktop\\New folder (2)\\fsot_trinary_validator_go\\fsot-knowledge-base\\thesis\\FSOT_BlackHole_Thermo_Thesis_2026\\FSOT_BlackHole_Thermo_Thesis_2026_ARXIV_PROFILE_MAIN_PAPER_FRESH_v1.md",
-    "ingested_at": "2026-06-20T05:20:58.505046+00:00"
+    "ingested_at": "2026-07-01T04:33:56.285781+00:00"
   },
   "experiment_synthesis": {
     "neuron_hybrid_lab": {
@@ -47163,10 +47227,10 @@
         "fsot_fluid_reasoner"
       ]
     },
-    "manifest_path": "C:\\Users\\damia\\Desktop\\New folder (9)\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\experiment_synthesis_manifest.yaml",
+    "manifest_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\experiment_synthesis_manifest.yaml",
     "neuron_cohort_lab": {
       "present": true,
-      "report_path": "C:\\Users\\damia\\Desktop\\New folder (9)\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\neuron_cohort_report.json",
+      "report_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\neuron_cohort_report.json",
       "generated_from": "C:\\Users\\damia\\Desktop\\nuron\\cell data\\allen_cell_types\\cells.json",
       "total_cells_in_catalog": 2333,
       "cohort_fi_proxy": {
@@ -47178,6 +47242,70 @@
         "canonical_scalar_min": 0.25241247006708056,
         "canonical_scalar_mean": 0.25241247006708056,
         "canonical_neuroscience_domain_S": 0.5143619629083619
+      },
+      "cohort_strata": {
+        "catalog_coverage": {
+          "hero_specimen_excluded": 324257146,
+          "classified_catalog_cells": 1786,
+          "unclassified_catalog_cells": 546,
+          "held_out_catalog_cells": 2332
+        },
+        "held_out_fi_proxy": {
+          "cell_count": 2165,
+          "fi_median_rel_err": 0.24520261127596557,
+          "fi_mean_rel_err": 0.3893964094689512,
+          "fi_p90_rel_err": 0.9018905590486146,
+          "fi_pearson_r": 0.6068416819088323,
+          "canonical_scalar_min": 0.25241247006708056,
+          "canonical_scalar_mean": 0.25241247006708056,
+          "canonical_neuroscience_domain_S": 0.5143619629083619
+        },
+        "strata": {
+          "Sst_interneuron": {
+            "catalog_cells": 165,
+            "cell_count": 154,
+            "fi_median_rel_err": 0.35479861060568474,
+            "fi_mean_rel_err": 0.446250823162439,
+            "fi_p90_rel_err": 0.9427734852734924,
+            "fi_pearson_r": 0.5196512945807779,
+            "canonical_scalar_min": 0.25241247006708056,
+            "canonical_scalar_mean": 0.25241247006708056,
+            "canonical_neuroscience_domain_S": 0.5143619629083619
+          },
+          "PV_interneuron": {
+            "catalog_cells": 242,
+            "cell_count": 222,
+            "fi_median_rel_err": 0.2959837154055862,
+            "fi_mean_rel_err": 0.7043124112229106,
+            "fi_p90_rel_err": 0.8156916584836724,
+            "fi_pearson_r": 0.3915167429133035,
+            "canonical_scalar_min": 0.25241247006708056,
+            "canonical_scalar_mean": 0.25241247006708056,
+            "canonical_neuroscience_domain_S": 0.5143619629083619
+          },
+          "VIP_interneuron": {
+            "catalog_cells": 155,
+            "cell_count": 146,
+            "fi_median_rel_err": 0.2972767467532461,
+            "fi_mean_rel_err": 0.44463325215896615,
+            "fi_p90_rel_err": 0.966682,
+            "fi_pearson_r": 0.42970594991301575,
+            "canonical_scalar_min": 0.25241247006708056,
+            "canonical_scalar_mean": 0.25241247006708056,
+            "canonical_neuroscience_domain_S": 0.5143619629083619
+          },
+          "L2_3_pyramidal": {
+            "catalog_cells": 1224,
+            "cell_count": 1127,
+            "fi_median_rel_err": 0.22104086005830942,
+            "fi_mean_rel_err": 0.325860726984197,
+            "fi_p90_rel_err": 0.8092848352409213,
+            "fi_pearson_r": 0.22516239104042488,
+            "canonical_scalar_min": 0.25241247006708056,
+            "canonical_scalar_mean": 0.25241247006708056,
+            "canonical_neuroscience_domain_S": 0.5143619629083619
+          }
+        }
       },
       "hero_certified_fi": {
         "specimen_id": 324257146,
@@ -47282,7 +47410,7 @@
   },
   "neuron_cohort_lab": {
     "present": true,
-    "report_path": "C:\\Users\\damia\\Desktop\\New folder (9)\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\neuron_cohort_report.json",
+    "report_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\neuron_cohort_report.json",
     "generated_from": "C:\\Users\\damia\\Desktop\\nuron\\cell data\\allen_cell_types\\cells.json",
     "total_cells_in_catalog": 2333,
     "cohort_fi_proxy": {
@@ -47294,6 +47422,70 @@
       "canonical_scalar_min": 0.25241247006708056,
       "canonical_scalar_mean": 0.25241247006708056,
       "canonical_neuroscience_domain_S": 0.5143619629083619
+    },
+    "cohort_strata": {
+      "catalog_coverage": {
+        "hero_specimen_excluded": 324257146,
+        "classified_catalog_cells": 1786,
+        "unclassified_catalog_cells": 546,
+        "held_out_catalog_cells": 2332
+      },
+      "held_out_fi_proxy": {
+        "cell_count": 2165,
+        "fi_median_rel_err": 0.24520261127596557,
+        "fi_mean_rel_err": 0.3893964094689512,
+        "fi_p90_rel_err": 0.9018905590486146,
+        "fi_pearson_r": 0.6068416819088323,
+        "canonical_scalar_min": 0.25241247006708056,
+        "canonical_scalar_mean": 0.25241247006708056,
+        "canonical_neuroscience_domain_S": 0.5143619629083619
+      },
+      "strata": {
+        "Sst_interneuron": {
+          "catalog_cells": 165,
+          "cell_count": 154,
+          "fi_median_rel_err": 0.35479861060568474,
+          "fi_mean_rel_err": 0.446250823162439,
+          "fi_p90_rel_err": 0.9427734852734924,
+          "fi_pearson_r": 0.5196512945807779,
+          "canonical_scalar_min": 0.25241247006708056,
+          "canonical_scalar_mean": 0.25241247006708056,
+          "canonical_neuroscience_domain_S": 0.5143619629083619
+        },
+        "PV_interneuron": {
+          "catalog_cells": 242,
+          "cell_count": 222,
+          "fi_median_rel_err": 0.2959837154055862,
+          "fi_mean_rel_err": 0.7043124112229106,
+          "fi_p90_rel_err": 0.8156916584836724,
+          "fi_pearson_r": 0.3915167429133035,
+          "canonical_scalar_min": 0.25241247006708056,
+          "canonical_scalar_mean": 0.25241247006708056,
+          "canonical_neuroscience_domain_S": 0.5143619629083619
+        },
+        "VIP_interneuron": {
+          "catalog_cells": 155,
+          "cell_count": 146,
+          "fi_median_rel_err": 0.2972767467532461,
+          "fi_mean_rel_err": 0.44463325215896615,
+          "fi_p90_rel_err": 0.966682,
+          "fi_pearson_r": 0.42970594991301575,
+          "canonical_scalar_min": 0.25241247006708056,
+          "canonical_scalar_mean": 0.25241247006708056,
+          "canonical_neuroscience_domain_S": 0.5143619629083619
+        },
+        "L2_3_pyramidal": {
+          "catalog_cells": 1224,
+          "cell_count": 1127,
+          "fi_median_rel_err": 0.22104086005830942,
+          "fi_mean_rel_err": 0.325860726984197,
+          "fi_p90_rel_err": 0.8092848352409213,
+          "fi_pearson_r": 0.22516239104042488,
+          "canonical_scalar_min": 0.25241247006708056,
+          "canonical_scalar_mean": 0.25241247006708056,
+          "canonical_neuroscience_domain_S": 0.5143619629083619
+        }
+      }
     },
     "hero_certified_fi": {
       "specimen_id": 324257146,
