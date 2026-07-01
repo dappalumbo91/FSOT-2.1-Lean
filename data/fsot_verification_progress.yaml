@@ -1,16 +1,16 @@
-generated_at: '2026-07-01T18:31:39.370376+00:00'
+generated_at: '2026-07-01T19:01:55.034801+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 47
+  lean_formal_modules: 49
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 12
-  tiers_total: 12
+  tiers_complete: 13
+  tiers_total: 13
   percent_complete: 100.0
-current_position: Tier 14 climate scale cohort + neuron train/holdout + domain expansion
-  map
+current_position: Tier 15 Wave A core theory grounding (thesis sim + emergent MC +
+  math rules)
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -34,6 +34,7 @@ tiers:
   - CosmologyLab
   - DomainCoveragePriors
   - DomainPrecisionPriors
+  - EmergentDomainPriors
   - EvolutionPriors
   - ExperimentSynthesisPriors
   - FormulaCorpusPriors
@@ -55,6 +56,7 @@ tiers:
   - ProteinPriors
   - SoulSiblingPriors
   - SpeciesPriors
+  - ThesisSimulationPriors
   - TrinaryFluidPriors
   - TrinaryOSPriors
   - UnifiedDBPriors
@@ -169,6 +171,25 @@ tiers:
   - data/neuron_cohort_train_holdout.json
   - data/scientific_domain_expansion_map.json
   - FSOT.Formal.NeuronCohortTrainHoldoutPriors
+- tier: 15
+  name: Wave A core theory grounding (thesis sim + emergent MC + math rules)
+  status: complete
+  metrics:
+    thesis_wave_targets: 98
+    thesis_intrinsic_screens: 58
+    thesis_observables: 156
+    emergent_domains: 29
+    emergent_observed: 28
+    emergence_health: 0.8547351151068473
+    math_rule_corpora: 61
+    math_rule_observables: 1520
+  artifacts:
+  - data/thesis_simulation_manifest.yaml
+  - data/emergent_domains_manifest.yaml
+  - data/math_generator_rules_manifest.yaml
+  - FSOT.Formal.ThesisSimulationPriors
+  - FSOT.Formal.EmergentDomainPriors
+  - FSOT.Formal.MathGeneratorPriors
 next_steps:
 - Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class
 - "Multi-hero held-out: certify 3\u20135 specimens per Sst/PV/VIP/L2/3"

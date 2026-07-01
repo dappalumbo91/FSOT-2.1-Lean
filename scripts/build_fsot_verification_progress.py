@@ -46,6 +46,9 @@ def build_progress() -> dict:
     climate_bench = _load_json(ROOT / "data" / "climate_observed_benchmark.json")
     neuron_th = _load_json(ROOT / "data" / "neuron_cohort_train_holdout.json")
     sci_map = _load_json(ROOT / "data" / "scientific_domain_expansion_map.json")
+    thesis_bench = _load_json(ROOT / "data" / "thesis_simulation_benchmark.json")
+    emergent_bench = _load_json(ROOT / "data" / "emergent_domains_benchmark.json")
+    mg_rules_bench = _load_json(ROOT / "data" / "math_generator_rules_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -241,6 +244,36 @@ def build_progress() -> dict:
                 "FSOT.Formal.NeuronCohortTrainHoldoutPriors",
             ],
         },
+        {
+            "tier": 15,
+            "name": "Wave A core theory grounding (thesis sim + emergent MC + math rules)",
+            "status": "complete"
+            if thesis_bench.get("wave_target_count", 0) >= 90
+            and thesis_bench.get("intrinsic_screen_count", 0) >= 50
+            and emergent_bench.get("emergent_domain_count", 0) >= 29
+            and emergent_bench.get("observed_domain_count", 0) >= 25
+            and mg_rules_bench.get("rule_corpus_count", 0) >= 55
+            and mg_rules_bench.get("total_rule_count", 0) >= 1000
+            else "pending",
+            "metrics": {
+                "thesis_wave_targets": thesis_bench.get("wave_target_count"),
+                "thesis_intrinsic_screens": thesis_bench.get("intrinsic_screen_count"),
+                "thesis_observables": thesis_bench.get("observable_count"),
+                "emergent_domains": emergent_bench.get("emergent_domain_count"),
+                "emergent_observed": emergent_bench.get("observed_domain_count"),
+                "emergence_health": emergent_bench.get("final_emergence_health"),
+                "math_rule_corpora": mg_rules_bench.get("rule_corpus_count"),
+                "math_rule_observables": mg_rules_bench.get("total_rule_count"),
+            },
+            "artifacts": [
+                "data/thesis_simulation_manifest.yaml",
+                "data/emergent_domains_manifest.yaml",
+                "data/math_generator_rules_manifest.yaml",
+                "FSOT.Formal.ThesisSimulationPriors",
+                "FSOT.Formal.EmergentDomainPriors",
+                "FSOT.Formal.MathGeneratorPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -267,7 +300,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 14 climate scale cohort + neuron train/holdout + domain expansion map",
+        "current_position": "Tier 15 Wave A core theory grounding (thesis sim + emergent MC + math rules)",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

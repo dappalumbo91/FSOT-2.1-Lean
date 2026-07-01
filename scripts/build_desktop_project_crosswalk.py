@@ -21,7 +21,7 @@ OUTPUT_YAML = ROOT / "data" / "desktop_project_crosswalk.yaml"
 # User-supplied Desktop roots (2026-07-01 audit)
 DESKTOP_FOLDERS: list[dict] = [
     {"name": "FSOT, Cube Block Trinary Design", "theme": "trinary_hardware", "lean_lab": None},
-    {"name": "New folder", "theme": "thesis_simulation", "lean_lab": None},
+    {"name": "New folder", "theme": "thesis_simulation", "lean_lab": "thesis_simulation_lab"},
     {"name": "Fluid spacetime omni-theory, FSOT, and the Holy Bible", "theme": "omni_theory_humanities", "lean_lab": None},
     {"name": "New folder (2)", "theme": "validators_intrinsic_llm", "lean_lab": None},
     {"name": "Kronos", "theme": "spacetime_precision", "lean_lab": "kronos_lab"},
@@ -53,7 +53,7 @@ DESKTOP_FOLDERS: list[dict] = [
     {"name": "FSOT_3_5", "theme": "scalar_solver", "lean_lab": None},
     {"name": "loop", "theme": "arxiv_primitives", "lean_lab": None},
     {"name": "fsot flow chart", "theme": "documentation", "lean_lab": None},
-    {"name": "autonomous_monte_carlo_fsot_refiner", "theme": "emergent_domains_mc", "lean_lab": None},
+    {"name": "autonomous_monte_carlo_fsot_refiner", "theme": "emergent_domains_mc", "lean_lab": "emergent_domains_lab"},
     {"name": "New folder (8)", "theme": "lean_duplicate", "lean_lab": None},
     {"name": "fsot llm expariments", "theme": "llm_experiments", "lean_lab": "experiment_synthesis"},
     {"name": "nuron", "theme": "neuron_allen", "lean_lab": "neuron_cohort_lab"},

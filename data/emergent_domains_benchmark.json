@@ -1,0 +1,310 @@
+{
+  "benchmark_version": "1.0",
+  "generated_at": "2026-07-01T19:01:25.053775+00:00",
+  "source_root": "C:\\Users\\damia\\Desktop\\autonomous_monte_carlo_fsot_refiner",
+  "emergent_domain_count": 29,
+  "observed_domain_count": 28,
+  "refined_robust_count": 6,
+  "total_steps": 200,
+  "total_proposals": 200,
+  "fertile_accept_rate": 0.145,
+  "final_meta_S": 0.32988227338082093,
+  "final_emergence_health": 0.8547351151068473,
+  "sampling_bias_final_D": 10,
+  "D_eff_min": 5,
+  "D_eff_max": 21,
+  "S_final_mean": 0.31355548904593944,
+  "observable_count": 29,
+  "emergent_domains": [
+    {
+      "name": "Emergent_D17_S0.310_3",
+      "D_eff": 17,
+      "delta_psi": 0.3717161955986181,
+      "observed": true,
+      "S_final": 0.30959256004318736,
+      "C_interpret": 0.3876404392368981,
+      "discovery_step": 3,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D15_S0.319_12",
+      "D_eff": 15,
+      "delta_psi": 0.2919571876497779,
+      "observed": true,
+      "S_final": 0.31874901105428255,
+      "C_interpret": 0.3978283546048799,
+      "discovery_step": 12,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D17_S0.324_16",
+      "D_eff": 17,
+      "delta_psi": 0.28203498444351427,
+      "observed": true,
+      "S_final": 0.32352422233041417,
+      "C_interpret": 0.38817728758896475,
+      "discovery_step": 16,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D16_S0.344_18",
+      "D_eff": 16,
+      "delta_psi": 0.5085628533023893,
+      "observed": true,
+      "S_final": 0.34435884619614154,
+      "C_interpret": 0.39372520085629226,
+      "discovery_step": 18,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D17_S0.312_27",
+      "D_eff": 17,
+      "delta_psi": 0.41009709614787,
+      "observed": true,
+      "S_final": 0.31232453400696125,
+      "C_interpret": 0.3877457142349639,
+      "discovery_step": 27,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D15_S0.310_30",
+      "D_eff": 15,
+      "delta_psi": 0.33232269128694997,
+      "observed": true,
+      "S_final": 0.3102628199707991,
+      "C_interpret": 0.39749305501285537,
+      "discovery_step": 30,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D13_S0.329_36",
+      "D_eff": 13,
+      "delta_psi": 0.4824022013505742,
+      "observed": true,
+      "S_final": 0.3292587437157667,
+      "C_interpret": 0.40980607665485924,
+      "discovery_step": 36,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D20_S0.153_41",
+      "D_eff": 20,
+      "delta_psi": 0.31702113570514345,
+      "observed": false,
+      "S_final": 0.1532890240151296,
+      "C_interpret": 0.36941278776281766,
+      "discovery_step": 41,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D14_S0.326_42",
+      "D_eff": 14,
+      "delta_psi": 0.2657792914317009,
+      "observed": true,
+      "S_final": 0.3261726028330713,
+      "C_interpret": 0.4036532573050193,
+      "discovery_step": 42,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D15_S0.312_43",
+      "D_eff": 15,
+      "delta_psi": 0.420430447831452,
+      "observed": true,
+      "S_final": 0.3119515800239847,
+      "C_interpret": 0.3975597799488472,
+      "discovery_step": 43,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D10_S0.327_45",
+      "D_eff": 10,
+      "delta_psi": 0.2537914350267052,
+      "observed": true,
+      "S_final": 0.3272896856571696,
+      "C_interpret": 0.4317995778458508,
+      "discovery_step": 45,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D21_S0.315_47",
+      "D_eff": 21,
+      "delta_psi": 0.4042597615683773,
+      "observed": true,
+      "S_final": 0.31543300757111353,
+      "C_interpret": 0.3718151434898891,
+      "discovery_step": 47,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D13_S0.326_67",
+      "D_eff": 13,
+      "delta_psi": 0.4758257424564745,
+      "observed": true,
+      "S_final": 0.32646131789873084,
+      "C_interpret": 0.409692337923871,
+      "discovery_step": 67,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D14_S0.308_74",
+      "D_eff": 14,
+      "delta_psi": 0.3414769641805368,
+      "observed": true,
+      "S_final": 0.308029021266751,
+      "C_interpret": 0.4029264222172236,
+      "discovery_step": 74,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D16_S0.336_75",
+      "D_eff": 16,
+      "delta_psi": 0.24388395355333703,
+      "observed": true,
+      "S_final": 0.33645519431063836,
+      "C_interpret": 0.39341692303760833,
+      "discovery_step": 75,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D16_S0.309_79",
+      "D_eff": 16,
+      "delta_psi": 0.38250590567755793,
+      "observed": true,
+      "S_final": 0.3087544046044347,
+      "C_interpret": 0.3923364681858312,
+      "discovery_step": 79,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D5_S0.303_90",
+      "D_eff": 5,
+      "delta_psi": 0.3434476402698006,
+      "observed": true,
+      "S_final": 0.3025519205203004,
+      "C_interpret": 0.4947898639414582,
+      "discovery_step": 90,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D14_S0.308_92",
+      "D_eff": 14,
+      "delta_psi": 0.3385268448029892,
+      "observed": true,
+      "S_final": 0.3083702737233202,
+      "C_interpret": 0.40294009285101356,
+      "discovery_step": 92,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D11_S0.331_106",
+      "D_eff": 11,
+      "delta_psi": 0.2458034794974128,
+      "observed": true,
+      "S_final": 0.3314845019071571,
+      "C_interpret": 0.42382290122004806,
+      "discovery_step": 106,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D11_S0.314_119",
+      "D_eff": 11,
+      "delta_psi": 0.4461004888174155,
+      "observed": true,
+      "S_final": 0.3139932566976563,
+      "C_interpret": 0.42308757396846725,
+      "discovery_step": 119,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D13_S0.336_123",
+      "D_eff": 13,
+      "delta_psi": 0.23870142811099748,
+      "observed": true,
+      "S_final": 0.3362549616636203,
+      "C_interpret": 0.4100905313654222,
+      "discovery_step": 123,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D14_S0.348_132",
+      "D_eff": 14,
+      "delta_psi": 0.5173367874778065,
+      "observed": true,
+      "S_final": 0.34776027673087195,
+      "C_interpret": 0.40451806334099727,
+      "discovery_step": 132,
+      "fertile_phases": 3
+    },
+    {
+      "name": "Emergent_D10_S0.304_137",
+      "D_eff": 10,
+      "delta_psi": 0.4017085907471408,
+      "observed": true,
+      "S_final": 0.3037549475723728,
+      "C_interpret": 0.4307911430100248,
+      "discovery_step": 137,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D16_S0.316_140",
+      "D_eff": 16,
+      "delta_psi": 0.4339211756817362,
+      "observed": true,
+      "S_final": 0.31582301607689395,
+      "C_interpret": 0.392612175688821,
+      "discovery_step": 140,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D16_S0.322_155",
+      "D_eff": 16,
+      "delta_psi": 0.28534445009193604,
+      "observed": true,
+      "S_final": 0.3216059924351565,
+      "C_interpret": 0.392837737664861,
+      "discovery_step": 155,
+      "fertile_phases": 2
+    },
+    {
+      "name": "Emergent_D7_S0.300_157",
+      "D_eff": 7,
+      "delta_psi": 0.36464540459950257,
+      "observed": true,
+      "S_final": 0.2998700614687004,
+      "C_interpret": 0.4624654670485286,
+      "discovery_step": 157,
+      "fertile_phases": 3
+    },
+    {
+      "name": "Emergent_D7_S0.342_160",
+      "D_eff": 7,
+      "delta_psi": 0.515041388372678,
+      "observed": true,
+      "S_final": 0.342190839116183,
+      "C_interpret": 0.4644129447851453,
+      "discovery_step": 160,
+      "fertile_phases": 3
+    },
+    {
+      "name": "Emergent_D7_S0.300_169",
+      "D_eff": 7,
+      "delta_psi": 0.3613867896640349,
+      "observed": true,
+      "S_final": 0.29998030587005003,
+      "C_interpret": 0.4624705401716882,
+      "discovery_step": 169,
+      "fertile_phases": 3
+    },
+    {
+      "name": "Emergent_D15_S0.308_181",
+      "D_eff": 15,
+      "delta_psi": 0.363976418205012,
+      "observed": true,
+      "S_final": 0.3075622530513835,
+      "C_interpret": 0.39738635237354314,
+      "discovery_step": 181,
+      "fertile_phases": 3
+    }
+  ]
+}

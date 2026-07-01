@@ -1,0 +1,31 @@
+# Tier 15 Wave A — Core thesis simulation lab (wave observations + intrinsic screens).
+version: "1.0"
+updated: "2026-07-01"
+
+source:
+  thesis_root: "C:/Users/damia/Desktop/New folder"
+  wave_observations:
+    - wave7_observations.json
+    - wave8_observations.json
+    - wave9_observations.json
+    - wave10_observations.json
+  intrinsic_screens:
+    - intrinsic_formula_screen.json
+    - intrinsic_formula_screen_refined.json
+    - intrinsic_formula_screen_ceff_phi.json
+    - intrinsic_grid_search.json
+  lab_config: wave7_lab_config.json
+
+build:
+  script: scripts/build_thesis_simulation_benchmark.py
+  output: data/thesis_simulation_benchmark.json
+
+lean:
+  generator: scripts/gen_thesis_simulation_lean.py
+  module: FSOT.Formal.ThesisSimulationPriors
+  lean_domain: particle
+  sign_theorem: particle_raw_S_positive
+
+verification:
+  min_wave_targets: 90
+  min_intrinsic_screens: 50

@@ -1,0 +1,1316 @@
+{
+  "benchmark_version": "1.0",
+  "generated_at": "2026-07-01T19:01:24.751449+00:00",
+  "source_root": "C:\\Users\\damia\\Desktop\\New folder",
+  "wave_file_count": 4,
+  "wave_target_count": 98,
+  "wave_by_file": {
+    "wave7_observations.json": 29,
+    "wave8_observations.json": 52,
+    "wave9_observations.json": 7,
+    "wave10_observations.json": 10
+  },
+  "intrinsic_screen_count": 58,
+  "intrinsic_by_file": {
+    "intrinsic_formula_screen.json": 11,
+    "intrinsic_formula_screen_refined.json": 9,
+    "intrinsic_formula_screen_ceff_phi.json": 8,
+    "intrinsic_grid_search.json": 30
+  },
+  "intrinsic_best_rmse": 6.763968608085996,
+  "intrinsic_best_r2": 0.09618580081642514,
+  "lab_config_present": true,
+  "observable_count": 156,
+  "wave_observables": [
+    {
+      "id": "Apery_zeta_3",
+      "name": "Apery zeta(3)",
+      "category": "Number Theory",
+      "measured": "1.2020569031595942854",
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Soldner",
+      "name": "Soldner constant",
+      "category": "Number Theory",
+      "measured": "1.4513692348833810503",
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Mills",
+      "name": "Mills constant",
+      "category": "Number Theory",
+      "measured": "1.306377883863080690",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Sierpinski_constant",
+      "name": "Sierpinski constant",
+      "category": "Number Theory",
+      "measured": "2.584981759579253217",
+      "unit": "dimensionless",
+      "sigma_percent": 0.6,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Niven",
+      "name": "Niven constant",
+      "category": "Number Theory",
+      "measured": "1.7052111401053677643",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Artin",
+      "name": "Artin constant",
+      "category": "Number Theory",
+      "measured": "0.373955813619202288",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Hafner_Sarnak",
+      "name": "Hafner-Sarnak constant",
+      "category": "Number Theory",
+      "measured": "0.6079271018540266286632767793",
+      "unit": "dimensionless",
+      "sigma_percent": 1.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Porter",
+      "name": "Porter constant",
+      "category": "Number Theory",
+      "measured": "1.467078079433975472",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Thue_Morse",
+      "name": "Thue-Morse constant",
+      "category": "Number Theory",
+      "measured": "0.4124540336401075977",
+      "unit": "dimensionless",
+      "sigma_percent": 0.5,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "MRB",
+      "name": "MRB constant",
+      "category": "Number Theory",
+      "measured": "0.1878596424620671202485179341",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Gauss_Kuzmin",
+      "name": "Gauss-Kuzmin constant",
+      "category": "Number Theory",
+      "measured": "0.3036630028987326586",
+      "unit": "dimensionless",
+      "sigma_percent": 0.3,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Universal_parabolic",
+      "name": "Universal parabolic constant",
+      "category": "Geometry / Analysis",
+      "measured": "2.295587149392638074",
+      "unit": "dimensionless",
+      "sigma_percent": 0.3,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Lieb_square_ice",
+      "name": "Lieb square-ice constant",
+      "category": "Geometry / Analysis",
+      "measured": "1.539600717839002039",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Komornik_Loreti",
+      "name": "Komornik-Loreti constant",
+      "category": "Geometry / Analysis",
+      "measured": "1.787231650182965933",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Bloch_Landau",
+      "name": "Bloch-Landau constant",
+      "category": "Geometry / Analysis",
+      "measured": "0.5432589653429767069527282953",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Golden_angle_deg",
+      "name": "Golden angle",
+      "category": "Geometry / Analysis",
+      "measured": "137.50776405003785465",
+      "unit": "deg",
+      "sigma_percent": 0.2,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Ising3D_eta",
+      "name": "Ising 3D eta",
+      "category": "Ising 3D",
+      "measured": "0.036298",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Ising3D_alpha",
+      "name": "Ising 3D alpha",
+      "category": "Ising 3D",
+      "measured": "0.11008",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Ising3D_delta",
+      "name": "Ising 3D delta",
+      "category": "Ising 3D",
+      "measured": "4.78982",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "XY_nu",
+      "name": "XY nu",
+      "category": "XY Model",
+      "measured": "0.67175",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "XY_eta",
+      "name": "XY eta",
+      "category": "XY Model",
+      "measured": "0.03852",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Heisenberg_nu",
+      "name": "Heisenberg nu",
+      "category": "Heisenberg Model",
+      "measured": "0.7116",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Heisenberg_eta",
+      "name": "Heisenberg eta",
+      "category": "Heisenberg Model",
+      "measured": "0.0378",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "Honeycomb_site",
+      "name": "Honeycomb site threshold",
+      "category": "Percolation",
+      "measured": "0.697040230",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "SC_bond",
+      "name": "Simple-cubic bond threshold",
+      "category": "Percolation",
+      "measured": "0.24881182",
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "SC_site",
+      "name": "Simple-cubic site threshold",
+      "category": "Percolation",
+      "measured": "0.31160768",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "m_u_over_m_d",
+      "name": "m_u / m_d",
+      "category": "Mass Ratios",
+      "measured": "0.46",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "m_s_over_m_d",
+      "name": "m_s / m_d",
+      "category": "Mass Ratios",
+      "measured": "19.66",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "m_tau_over_m_mu",
+      "name": "m_tau / m_mu",
+      "category": "Mass Ratios",
+      "measured": "16.817029332426183289",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave7_observations.json"
+    },
+    {
+      "id": "V_ud",
+      "name": "|V_ud|",
+      "category": "Particle Physics",
+      "measured": "0.97373",
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "V_cd",
+      "name": "|V_cd|",
+      "category": "Particle Physics",
+      "measured": "0.221",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "V_cs",
+      "name": "|V_cs|",
+      "category": "Particle Physics",
+      "measured": "0.975",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "delta_CP_PMNS",
+      "name": "delta_CP (PMNS)",
+      "category": "Particle Physics",
+      "measured": "3.87",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "m_t_over_m_b",
+      "name": "m_t / m_b",
+      "category": "Particle Physics",
+      "measured": "36.102510460251046",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "BR_Z_ee",
+      "name": "BR(Z -> e+e-)",
+      "category": "Z Branching Ratios",
+      "measured": "0.03363",
+      "unit": "dimensionless",
+      "sigma_percent": 0.4,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "BR_Z_had",
+      "name": "BR(Z -> had)",
+      "category": "Z Branching Ratios",
+      "measured": "0.69911",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "BR_Z_inv",
+      "name": "BR(Z -> inv)",
+      "category": "Z Branching Ratios",
+      "measured": "0.2",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "BR_H_ZZ",
+      "name": "BR(H -> ZZ)",
+      "category": "Higgs Branching Ratios",
+      "measured": "0.0262",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "BR_H_gg",
+      "name": "BR(H -> gg)",
+      "category": "Higgs Branching Ratios",
+      "measured": "0.0818",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "BR_H_cc",
+      "name": "BR(H -> c cbar)",
+      "category": "Higgs Branching Ratios",
+      "measured": "0.0288",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "BR_H_gammagamma",
+      "name": "BR(H -> gamma gamma)",
+      "category": "Higgs Branching Ratios",
+      "measured": "0.00227",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "BR_H_Zgamma",
+      "name": "BR(H -> Z gamma)",
+      "category": "Higgs Branching Ratios",
+      "measured": "0.00154",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "He4_binding_MeV",
+      "name": "He-4 binding",
+      "category": "Nuclear Physics",
+      "measured": "28.295674",
+      "unit": "MeV",
+      "sigma_percent": 0.5,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Triton_binding_MeV",
+      "name": "Triton binding",
+      "category": "Nuclear Physics",
+      "measured": "8.481798",
+      "unit": "MeV",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Deuteron_mu_muN",
+      "name": "Deuteron mu",
+      "category": "Nuclear Physics",
+      "measured": "0.8574382338",
+      "unit": "mu_N",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "S8",
+      "name": "S_8",
+      "category": "Cosmology",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "z_reion",
+      "name": "z_reion",
+      "category": "Cosmology",
+      "measured": "7.7",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "XY_beta",
+      "name": "XY beta",
+      "category": "Universality Classes",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "XY_gamma",
+      "name": "XY gamma",
+      "category": "Universality Classes",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Heisenberg_beta",
+      "name": "Heisenberg beta",
+      "category": "Universality Classes",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Heisenberg_gamma",
+      "name": "Heisenberg gamma",
+      "category": "Universality Classes",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Perc_BCC_bond",
+      "name": "Perc BCC bond",
+      "category": "Universality Classes",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Perc_FCC_site",
+      "name": "Perc FCC site",
+      "category": "Universality Classes",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Perc3D_nu",
+      "name": "Perc 3D nu",
+      "category": "Universality Classes",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Perc3D_beta",
+      "name": "Perc 3D beta",
+      "category": "Universality Classes",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.3,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Perc3D_gamma",
+      "name": "Perc 3D gamma",
+      "category": "Universality Classes",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.5,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Brun_B2",
+      "name": "Brun B2",
+      "category": "Mathematical Constants",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Copeland_Erdos",
+      "name": "Copeland-Erdos",
+      "category": "Mathematical Constants",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Erdos_Tenenbaum_Ford",
+      "name": "Erdos-Tenenbaum-Ford",
+      "category": "Mathematical Constants",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.7,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Foias_alpha",
+      "name": "Foias alpha",
+      "category": "Mathematical Constants",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Madelung_ZnS",
+      "name": "Madelung ZnS",
+      "category": "Lattice Physics",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Madelung_CaF2",
+      "name": "Madelung CaF2",
+      "category": "Lattice Physics",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Madelung_TiO2",
+      "name": "Madelung TiO2",
+      "category": "Lattice Physics",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Ice_Ih_density",
+      "name": "Ice Ih density",
+      "category": "Chemistry",
+      "measured": null,
+      "unit": "g/cm^3",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "H2O_bond_angle_deg",
+      "name": "H2O bond angle",
+      "category": "Chemistry",
+      "measured": null,
+      "unit": "deg",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Lorenz_attractor_d",
+      "name": "Lorenz attractor d",
+      "category": "Fractal Dimensions",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Henon_attractor_d",
+      "name": "Henon attractor d",
+      "category": "Fractal Dimensions",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Apollonian_gasket_d",
+      "name": "Apollonian gasket d",
+      "category": "Fractal Dimensions",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "SAW_mu_square",
+      "name": "SAW mu (square)",
+      "category": "Self-Avoiding Walks",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.5,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "SAW_nu_3D",
+      "name": "SAW nu (3D)",
+      "category": "Self-Avoiding Walks",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "SAW_gamma_3D",
+      "name": "SAW gamma (3D)",
+      "category": "Self-Avoiding Walks",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Potts3_beta",
+      "name": "3-state Potts beta",
+      "category": "Extended Universality",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "KT_transition_T_over_J",
+      "name": "KT transition T_KT / J",
+      "category": "Extended Universality",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Quark_condensate_abs_qq_1_3",
+      "name": "Quark condensate |<qbar q>|^(1/3)",
+      "category": "QCD",
+      "measured": null,
+      "unit": "GeV",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Figure8_knot_volume",
+      "name": "Figure-8 knot volume",
+      "category": "Knot Theory",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Bessel_J0_first_zero",
+      "name": "Bessel J0 first zero",
+      "category": "Special Function Zeros",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.6,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Airy_Ai_first_zero",
+      "name": "Airy Ai first zero",
+      "category": "Special Function Zeros",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.4,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Stieltjes_gamma2",
+      "name": "gamma_2 (Stieltjes)",
+      "category": "Stieltjes & Riemann",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "First_Riemann_zero",
+      "name": "First Riemann zero",
+      "category": "Stieltjes & Riemann",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Spanning_tree_square",
+      "name": "Spanning tree (square)",
+      "category": "Graph / Lattice Combinatorics",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "Hard_square_entropy",
+      "name": "Hard square entropy",
+      "category": "Graph / Lattice Combinatorics",
+      "measured": null,
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave8_observations.json"
+    },
+    {
+      "id": "V_tb",
+      "name": "|V_tb|",
+      "category": "CKM",
+      "measured": "0.99910",
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave9_observations.json"
+    },
+    {
+      "id": "Omega_r",
+      "name": "Omega_r",
+      "category": "Cosmology",
+      "measured": "9.167728879734846e-5",
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave9_observations.json"
+    },
+    {
+      "id": "O4_nu",
+      "name": "O(4) nu",
+      "category": "Universality Classes",
+      "measured": "0.7488930539619457",
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave9_observations.json"
+    },
+    {
+      "id": "Gluon_condensate",
+      "name": "Gluon condensate",
+      "category": "QCD",
+      "measured": "0.01201633050712554",
+      "unit": "dimensionless",
+      "sigma_percent": 0.2,
+      "wave_file": "wave9_observations.json"
+    },
+    {
+      "id": "Mandelbrot_boundary",
+      "name": "Mandelbrot boundary",
+      "category": "Fractals",
+      "measured": "2.0",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave9_observations.json"
+    },
+    {
+      "id": "Sierpinski_dim",
+      "name": "Sierpinski dim",
+      "category": "Fractals",
+      "measured": "1.5849625007211561814537389439478165087598144076925",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave9_observations.json"
+    },
+    {
+      "id": "Stieltjes_gamma1",
+      "name": "gamma_1 (Stieltjes)",
+      "category": "Stieltjes & Riemann",
+      "measured": "-0.072816",
+      "unit": "dimensionless",
+      "sigma_percent": 0.7,
+      "wave_file": "wave9_observations.json"
+    },
+    {
+      "id": "m_mu_over_m_e",
+      "name": "m_mu / m_e",
+      "category": "Particle Physics",
+      "measured": "206.7682827",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave10_observations.json"
+    },
+    {
+      "id": "electron_g_minus_2_over_2",
+      "name": "(g-2)/2 (electron)",
+      "category": "Particle Physics",
+      "measured": "0.00115965218128",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave10_observations.json"
+    },
+    {
+      "id": "Logistic_accumulation",
+      "name": "Logistic accumulation",
+      "category": "Dynamical Systems",
+      "measured": "3.569946",
+      "unit": "dimensionless",
+      "sigma_percent": 0.9,
+      "wave_file": "wave10_observations.json"
+    },
+    {
+      "id": "Cahen_constant",
+      "name": "Cahen constant",
+      "category": "Mathematical Constants",
+      "measured": "0.643410546288338",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave10_observations.json"
+    },
+    {
+      "id": "Reciprocal_Fibonacci",
+      "name": "Reciprocal Fibonacci",
+      "category": "Mathematical Constants",
+      "measured": "3.3598856662431776",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave10_observations.json"
+    },
+    {
+      "id": "Water_triple_point_K",
+      "name": "Water triple point",
+      "category": "Thermodynamics",
+      "measured": "273.16",
+      "unit": "K",
+      "sigma_percent": 0.4,
+      "wave_file": "wave10_observations.json"
+    },
+    {
+      "id": "CO2_bond_angle_deg",
+      "name": "CO2 bond angle",
+      "category": "Chemistry",
+      "measured": "180.0",
+      "unit": "deg",
+      "sigma_percent": 0.1,
+      "wave_file": "wave10_observations.json"
+    },
+    {
+      "id": "SAW_connective_hex",
+      "name": "SAW connective (hex)",
+      "category": "Self-Avoiding Walks",
+      "measured": "1.8477590650225735",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave10_observations.json"
+    },
+    {
+      "id": "Bessel_J1_first_zero",
+      "name": "Bessel J1 first zero",
+      "category": "Special Function Zeros",
+      "measured": "3.8317059702075125",
+      "unit": "dimensionless",
+      "sigma_percent": 0.0,
+      "wave_file": "wave10_observations.json"
+    },
+    {
+      "id": "eta_baryon_photon",
+      "name": "eta baryon-photon",
+      "category": "Cosmology",
+      "measured": "6.139749535425554e-10",
+      "unit": "dimensionless",
+      "sigma_percent": 0.1,
+      "wave_file": "wave10_observations.json"
+    }
+  ],
+  "intrinsic_screens": [
+    {
+      "source_file": "intrinsic_formula_screen.json",
+      "name": "ceff_additive",
+      "rmse": 6.846075948410455,
+      "mae": 5.523595714963998,
+      "r2": 0.07410994623318212
+    },
+    {
+      "source_file": "intrinsic_formula_screen.json",
+      "name": "frame_in_gate",
+      "rmse": 6.868488051745764,
+      "mae": 5.544752739501229,
+      "r2": 0.06803782246870604
+    },
+    {
+      "source_file": "intrinsic_formula_screen.json",
+      "name": "baseline",
+      "rmse": 6.8690192111667185,
+      "mae": 5.545264135021991,
+      "r2": 0.06789367440365879
+    },
+    {
+      "source_file": "intrinsic_formula_screen.json",
+      "name": "novelty_threshold",
+      "rmse": 6.883937118247069,
+      "mae": 5.5578315464412436,
+      "r2": 0.06384064312910853
+    },
+    {
+      "source_file": "intrinsic_formula_screen.json",
+      "name": "sqrt_gate",
+      "rmse": 6.888700300796872,
+      "mae": 5.561810491916127,
+      "r2": 0.06254468689906967
+    },
+    {
+      "source_file": "intrinsic_formula_screen.json",
+      "name": "transport_plus_domain",
+      "rmse": 7.845202798350387,
+      "mae": 6.204683859956175,
+      "r2": -0.2158621594654555
+    },
+    {
+      "source_file": "intrinsic_formula_screen.json",
+      "name": "overlap_gate",
+      "rmse": 8.511798541902449,
+      "mae": 6.914074382080104,
+      "r2": -0.4312604333533625
+    },
+    {
+      "source_file": "intrinsic_formula_screen.json",
+      "name": "transport_gated",
+      "rmse": 9.713348197995863,
+      "mae": 8.160393707908089,
+      "r2": -0.8638626599811727
+    },
+    {
+      "source_file": "intrinsic_formula_screen.json",
+      "name": "osc_gated",
+      "rmse": 14.244838192075363,
+      "mae": 12.984088878963435,
+      "r2": -3.0085844192112887
+    },
+    {
+      "source_file": "intrinsic_formula_screen.json",
+      "name": "n2_air_blend",
+      "rmse": 14.458373493326793,
+      "mae": 12.7683665400442,
+      "r2": -3.1296654666329298
+    },
+    {
+      "source_file": "intrinsic_formula_screen.json",
+      "name": "attention_damped",
+      "rmse": 35.14080158144906,
+      "mae": 31.72376805307938,
+      "r2": -23.394915649780675
+    },
+    {
+      "source_file": "intrinsic_formula_screen_refined.json",
+      "name": "ceff_phi_additive",
+      "rmse": 6.790604159437153,
+      "mae": 5.465075959360182,
+      "r2": 0.08905360074083557
+    },
+    {
+      "source_file": "intrinsic_formula_screen_refined.json",
+      "name": "ceff_plus_pbase_additive",
+      "rmse": 6.802821252577506,
+      "mae": 5.478449942933075,
+      "r2": 0.08577285339131513
+    },
+    {
+      "source_file": "intrinsic_formula_screen_refined.json",
+      "name": "ceff_transport_mix",
+      "rmse": 6.846075948410455,
+      "mae": 5.523595714963998,
+      "r2": 0.07410994623318223
+    },
+    {
+      "source_file": "intrinsic_formula_screen_refined.json",
+      "name": "ceff_additive",
+      "rmse": 6.846075948410455,
+      "mae": 5.523595714963998,
+      "r2": 0.07410994623318212
+    },
+    {
+      "source_file": "intrinsic_formula_screen_refined.json",
+      "name": "ceff_n2_frame",
+      "rmse": 6.847183806826043,
+      "mae": 5.524166264301072,
+      "r2": 0.07381025978753719
+    },
+    {
+      "source_file": "intrinsic_formula_screen_refined.json",
+      "name": "ceff_output_scale",
+      "rmse": 6.849315560849097,
+      "mae": 5.525230230469649,
+      "r2": 0.0732334632213062
+    },
+    {
+      "source_file": "intrinsic_formula_screen_refined.json",
+      "name": "ceff_half_additive",
+      "rmse": 6.885260286594731,
+      "mae": 5.561169049803761,
+      "r2": 0.06348072831477158
+    },
+    {
+      "source_file": "intrinsic_formula_screen_refined.json",
+      "name": "ceff_domain_shift",
+      "rmse": 11.714670606558007,
+      "mae": 9.559390905147705,
+      "r2": -1.711041442155271
+    },
+    {
+      "source_file": "intrinsic_formula_screen_refined.json",
+      "name": "ceff_gate_in_denominator",
+      "rmse": 23.63076948900601,
+      "mae": 20.317772726320328,
+      "r2": -10.031427646036326
+    },
+    {
+      "source_file": "intrinsic_formula_screen_ceff_phi.json",
+      "name": "ceff_phi_plus_pbase",
+      "rmse": 6.763968608085996,
+      "mae": 5.4295227349871755,
+      "r2": 0.09618580081642514
+    },
+    {
+      "source_file": "intrinsic_formula_screen_ceff_phi.json",
+      "name": "ceff_phi_frame_in_gate",
+      "rmse": 6.789673280863859,
+      "mae": 5.464003162835038,
+      "r2": 0.0893033347387514
+    },
+    {
+      "source_file": "intrinsic_formula_screen_ceff_phi.json",
+      "name": "ceff_phi_additive",
+      "rmse": 6.790604159437153,
+      "mae": 5.465075959360182,
+      "r2": 0.08905360074083557
+    },
+    {
+      "source_file": "intrinsic_formula_screen_ceff_phi.json",
+      "name": "ceff_phi_n2_frame",
+      "rmse": 6.792189993944416,
+      "mae": 5.465874695634105,
+      "r2": 0.0886280778027192
+    },
+    {
+      "source_file": "intrinsic_formula_screen_ceff_phi.json",
+      "name": "ceff_phi_novelty",
+      "rmse": 6.806286739590537,
+      "mae": 5.477801494590949,
+      "r2": 0.08484116661977537
+    },
+    {
+      "source_file": "intrinsic_formula_screen_ceff_phi.json",
+      "name": "ceff_phi_sqrt_gate",
+      "rmse": 6.811288520226692,
+      "mae": 5.481816977212616,
+      "r2": 0.08349561482987156
+    },
+    {
+      "source_file": "intrinsic_formula_screen_ceff_phi.json",
+      "name": "ceff_phi_output_scale",
+      "rmse": 7.374726183025667,
+      "mae": 5.816995318523142,
+      "r2": -0.07440443707665234
+    },
+    {
+      "source_file": "intrinsic_formula_screen_ceff_phi.json",
+      "name": "ceff_phi_log_weight",
+      "rmse": 12.915537670935231,
+      "mae": 10.90045014097963,
+      "r2": -2.2953456466237947
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.763968608085996,
+      "mae": 5.4295227349871755,
+      "r2": 0.09618580081642514
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.765900706704174,
+      "mae": 5.4303214537866955,
+      "r2": 0.0956693857730967
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.780041263166838,
+      "mae": 5.442248284460799,
+      "r2": 0.09188538074958276
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.782020356530006,
+      "mae": 5.443047009840947,
+      "r2": 0.0913551462410307
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.790604159437153,
+      "mae": 5.465075959360182,
+      "r2": 0.08905360074083557
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.792189993944416,
+      "mae": 5.465874695634105,
+      "r2": 0.0886280778027192
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.79861741650327,
+      "mae": 5.446882074339065,
+      "r2": 0.08690240639160507
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.800814300750755,
+      "mae": 5.447756867373528,
+      "r2": 0.08631219997217154
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.802821252577506,
+      "mae": 5.478449942933075,
+      "r2": 0.08577285339131513
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.804283680853322,
+      "mae": 5.479096539937313,
+      "r2": 0.0853797413899402
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.806286739590537,
+      "mae": 5.477801494590949,
+      "r2": 0.08484116661977537
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.807920297913808,
+      "mae": 5.478600237454781,
+      "r2": 0.08440182435052834
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.815315800548258,
+      "mae": 5.459675386775276,
+      "r2": 0.0824114994673858
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.817558609721155,
+      "mae": 5.460563158263202,
+      "r2": 0.0818074733035764
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.818360092636047,
+      "mae": 5.491089185848687,
+      "r2": 0.08159157229778868
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.819834166958313,
+      "mae": 5.481187829910094,
+      "r2": 0.0811944244197691
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.8198704755281465,
+      "mae": 5.491735789401818,
+      "r2": 0.08118464101319556
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.821690315077121,
+      "mae": 5.481986575598006,
+      "r2": 0.08069421538745625
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.830059512967727,
+      "mae": 5.493932888396817,
+      "r2": 0.07843712915720369
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.831794008479958,
+      "mae": 5.494731640477927,
+      "r2": 0.07796900743039636
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.836158051590471,
+      "mae": 5.493913466510127,
+      "r2": 0.07679067325913347
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.838060920184908,
+      "mae": 5.494712218721929,
+      "r2": 0.07627664461354022
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.846075948410455,
+      "mae": 5.523595714963998,
+      "r2": 0.07410994623318212
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.846244941776394,
+      "mae": 5.50665852014502,
+      "r2": 0.07406423502312431
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.847183806826043,
+      "mae": 5.524166264301072,
+      "r2": 0.07381025978753719
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.848026414659885,
+      "mae": 5.507457278753183,
+      "r2": 0.0735822937298739
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.861188006796099,
+      "mae": 5.536227150614795,
+      "r2": 0.0700178070943347
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.862344394285013,
+      "mae": 5.536797706504884,
+      "r2": 0.06970430150388263
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.867406508612831,
+      "mae": 5.535606423301101,
+      "r2": 0.06833130130332477
+    },
+    {
+      "source_file": "intrinsic_grid_search.json",
+      "name": null,
+      "rmse": 6.868790816998034,
+      "mae": 5.536176979667163,
+      "r2": 0.06795565824838812
+    }
+  ]
+}

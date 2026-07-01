@@ -1,0 +1,23 @@
+# Tier 15 Wave A — Math generator *_RULES.json corpora as formal observables.
+version: "1.0"
+updated: "2026-07-01"
+
+source:
+  math_generator_root: "C:/Users/damia/Desktop/Math generator"
+  corpus_glob: "*_RULES.json"
+  dedupe_subdirs:
+    - Unified/ada_spark_formula_generator
+
+build:
+  script: scripts/build_math_generator_rules_benchmark.py
+  output: data/math_generator_rules_benchmark.json
+
+lean:
+  generator: scripts/gen_math_generator_lean.py
+  module: FSOT.Formal.MathGeneratorPriors
+  lean_domain: particle
+  sign_theorem: particle_raw_S_positive
+
+verification:
+  min_rule_corpora: 55
+  min_total_rules: 1000

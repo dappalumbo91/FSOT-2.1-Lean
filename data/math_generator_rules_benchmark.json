@@ -1,0 +1,925 @@
+{
+  "benchmark_version": "1.0",
+  "generated_at": "2026-07-01T19:01:25.371984+00:00",
+  "source_root": "C:\\Users\\damia\\Desktop\\Math generator",
+  "rule_corpus_count": 61,
+  "total_rule_count": 1520,
+  "observable_count": 1520,
+  "corpora": [
+    {
+      "corpus": "ABSTRACT_ALGEBRA",
+      "file": "ABSTRACT_ALGEBRA_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ABSTRACT_ALGEBRA_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "AA-001",
+        "AA-002",
+        "AA-010",
+        "AA-020",
+        "AA-030"
+      ]
+    },
+    {
+      "corpus": "ADVANCED_ALGEBRA",
+      "file": "ADVANCED_ALGEBRA_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ADVANCED_ALGEBRA_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "HA-001",
+        "HA-010",
+        "HA-020",
+        "HA-030",
+        "HA-040"
+      ]
+    },
+    {
+      "corpus": "ADVANCED_ANALYSIS",
+      "file": "ADVANCED_ANALYSIS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ADVANCED_ANALYSIS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "AN-001",
+        "AN-010",
+        "AN-020",
+        "AN-030",
+        "AN-040"
+      ]
+    },
+    {
+      "corpus": "ADVANCED_FOUNDATIONS",
+      "file": "ADVANCED_FOUNDATIONS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ADVANCED_FOUNDATIONS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "AF-001",
+        "AF-010",
+        "AF-020",
+        "AF-030",
+        "AF-040"
+      ]
+    },
+    {
+      "corpus": "ADVANCED_GEOMETRY_TOPOLOGY",
+      "file": "ADVANCED_GEOMETRY_TOPOLOGY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ADVANCED_GEOMETRY_TOPOLOGY_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "GT-001",
+        "GT-010",
+        "GT-020",
+        "GT-030",
+        "GT-040"
+      ]
+    },
+    {
+      "corpus": "AI_ML",
+      "file": "AI_ML_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "AI_ML_RULEBOOK.md",
+      "rule_count": 12,
+      "rule_ids_sample": [
+        "AI-001",
+        "AI-002",
+        "AI-003",
+        "AI-004",
+        "AI-005"
+      ]
+    },
+    {
+      "corpus": "ALGEBRA",
+      "file": "ALGEBRA_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ALGEBRA_RULEBOOK.md",
+      "rule_count": 36,
+      "rule_ids_sample": [
+        "AL-001",
+        "AL-002",
+        "AL-003",
+        "AL-010",
+        "AL-011"
+      ]
+    },
+    {
+      "corpus": "ALGEBRAIC_TOPOLOGY",
+      "file": "ALGEBRAIC_TOPOLOGY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ALGEBRAIC_TOPOLOGY_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "AT-001",
+        "AT-010",
+        "AT-020",
+        "AT-030",
+        "AT-040"
+      ]
+    },
+    {
+      "corpus": "ANALYTIC_EXTENSIONS",
+      "file": "ANALYTIC_EXTENSIONS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ANALYTIC_EXTENSIONS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "AX-001",
+        "AX-010",
+        "AX-020",
+        "AX-030",
+        "AX-040"
+      ]
+    },
+    {
+      "corpus": "ARITHMETIC",
+      "file": "ARITHMETIC_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ARITHMETIC_RULEBOOK.md",
+      "rule_count": 83,
+      "rule_ids_sample": [
+        "AR-001",
+        "AR-002",
+        "AR-010",
+        "AR-011",
+        "AR-012"
+      ]
+    },
+    {
+      "corpus": "CAD",
+      "file": "CAD_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "CAD_RULEBOOK.md",
+      "rule_count": 12,
+      "rule_ids_sample": [
+        "CAD-001",
+        "CAD-002",
+        "CAD-003",
+        "CAD-004",
+        "CAD-005"
+      ]
+    },
+    {
+      "corpus": "CALCULUS",
+      "file": "CALCULUS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "CALCULUS_RULEBOOK.md",
+      "rule_count": 44,
+      "rule_ids_sample": [
+        "CA-001",
+        "CA-002",
+        "CA-003",
+        "CA-010",
+        "CA-011"
+      ]
+    },
+    {
+      "corpus": "CATEGORY_THEORY",
+      "file": "CATEGORY_THEORY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "CATEGORY_THEORY_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "CT-001",
+        "CT-010",
+        "CT-020",
+        "CT-030",
+        "CT-040"
+      ]
+    },
+    {
+      "corpus": "CIVIL_STRUCTURAL",
+      "file": "CIVIL_STRUCTURAL_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "CIVIL_STRUCTURAL_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "CI-001",
+        "CI-002",
+        "CI-003",
+        "CI-004",
+        "CI-005"
+      ]
+    },
+    {
+      "corpus": "COMPLEX_ANALYSIS",
+      "file": "COMPLEX_ANALYSIS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "COMPLEX_ANALYSIS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "CX-001",
+        "CX-002",
+        "CX-010",
+        "CX-020",
+        "CX-030"
+      ]
+    },
+    {
+      "corpus": "COMPUTATIONAL_APPLIED",
+      "file": "COMPUTATIONAL_APPLIED_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "COMPUTATIONAL_APPLIED_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "CP-001",
+        "CP-010",
+        "CP-020",
+        "CP-030",
+        "CP-040"
+      ]
+    },
+    {
+      "corpus": "COMPUTATIONAL_SHAPE",
+      "file": "COMPUTATIONAL_SHAPE_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "COMPUTATIONAL_SHAPE_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "CG-001",
+        "CG-010",
+        "CG-020",
+        "CG-030",
+        "CG-040"
+      ]
+    },
+    {
+      "corpus": "CONTROL_THEORY",
+      "file": "CONTROL_THEORY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "CONTROL_THEORY_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "CR-001",
+        "CR-010",
+        "CR-020",
+        "CR-030",
+        "CR-040"
+      ]
+    },
+    {
+      "corpus": "CRYPTOGRAPHY",
+      "file": "CRYPTOGRAPHY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "CRYPTOGRAPHY_RULEBOOK.md",
+      "rule_count": 12,
+      "rule_ids_sample": [
+        "CR-001",
+        "CR-002",
+        "CR-003",
+        "CR-004",
+        "CR-005"
+      ]
+    },
+    {
+      "corpus": "DIFFERENTIAL_EQUATIONS",
+      "file": "DIFFERENTIAL_EQUATIONS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "DIFFERENTIAL_EQUATIONS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "DE-001",
+        "DE-002",
+        "DE-010",
+        "DE-020",
+        "DE-030"
+      ]
+    },
+    {
+      "corpus": "DIFFERENTIAL_GEOMETRY",
+      "file": "DIFFERENTIAL_GEOMETRY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "DIFFERENTIAL_GEOMETRY_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "DG-001",
+        "DG-010",
+        "DG-020",
+        "DG-030",
+        "DG-040"
+      ]
+    },
+    {
+      "corpus": "DISCRETE_MATH",
+      "file": "DISCRETE_MATH_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "DISCRETE_MATH_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "DM-001",
+        "DM-002",
+        "DM-003",
+        "DM-010",
+        "DM-011"
+      ]
+    },
+    {
+      "corpus": "ELECTRICAL_CIRCUITS",
+      "file": "ELECTRICAL_CIRCUITS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ELECTRICAL_CIRCUITS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "EL-001",
+        "EL-002",
+        "EL-003",
+        "EL-004",
+        "EL-005"
+      ]
+    },
+    {
+      "corpus": "ENGINEERING_DYNAMICS",
+      "file": "ENGINEERING_DYNAMICS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ENGINEERING_DYNAMICS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "EN-001",
+        "EN-002",
+        "EN-003",
+        "EN-004",
+        "EN-005"
+      ]
+    },
+    {
+      "corpus": "ENGINEERING_STATICS",
+      "file": "ENGINEERING_STATICS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ENGINEERING_STATICS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "EN-001",
+        "EN-002",
+        "EN-003",
+        "EN-004",
+        "EN-005"
+      ]
+    },
+    {
+      "corpus": "EUCLIDEAN_PROOF",
+      "file": "EUCLIDEAN_PROOF_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "EUCLIDEAN_PROOF_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "EP-001",
+        "EP-002",
+        "EP-010",
+        "EP-011",
+        "EP-012"
+      ]
+    },
+    {
+      "corpus": "FINANCE_ECON_MATH",
+      "file": "FINANCE_ECON_MATH_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "FINANCE_ECON_MATH_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "FI-001",
+        "FI-002",
+        "FI-003",
+        "FI-004",
+        "FI-005"
+      ]
+    },
+    {
+      "corpus": "FLUID_MECHANICS",
+      "file": "FLUID_MECHANICS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "FLUID_MECHANICS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "FM-001",
+        "FM-010",
+        "FM-020",
+        "FM-030",
+        "FM-040"
+      ]
+    },
+    {
+      "corpus": "FSOT_OVERLAY",
+      "file": "FSOT_OVERLAY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "FSOT_OVERLAY_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "FO-001",
+        "FO-010",
+        "FO-020",
+        "FO-030",
+        "FO-040"
+      ]
+    },
+    {
+      "corpus": "GENERAL_MATHEMATICS",
+      "file": "GENERAL_MATHEMATICS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "GENERAL_MATHEMATICS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "GM-001",
+        "GM-010",
+        "GM-020",
+        "GM-030",
+        "GM-040"
+      ]
+    },
+    {
+      "corpus": "GEOMETRY",
+      "file": "GEOMETRY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "GEOMETRY_RULEBOOK.md",
+      "rule_count": 27,
+      "rule_ids_sample": [
+        "GE-001",
+        "GE-002",
+        "GE-003",
+        "GE-010",
+        "GE-011"
+      ]
+    },
+    {
+      "corpus": "HEAT_TRANSFER",
+      "file": "HEAT_TRANSFER_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "HEAT_TRANSFER_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "HE-001",
+        "HE-002",
+        "HE-003",
+        "HE-004",
+        "HE-005"
+      ]
+    },
+    {
+      "corpus": "INFORMATION_THEORY",
+      "file": "INFORMATION_THEORY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "INFORMATION_THEORY_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "IT-001",
+        "IT-010",
+        "IT-020",
+        "IT-030",
+        "IT-040"
+      ]
+    },
+    {
+      "corpus": "LINEAR_ALGEBRA",
+      "file": "LINEAR_ALGEBRA_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "LINEAR_ALGEBRA_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "LA-001",
+        "LA-002",
+        "LA-003",
+        "LA-010",
+        "LA-011"
+      ]
+    },
+    {
+      "corpus": "LINEAR_SYSTEM",
+      "file": "LINEAR_SYSTEM_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "LINEAR_SYSTEM_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "LS-001",
+        "LS-002",
+        "LS-010",
+        "LS-011",
+        "LS-020"
+      ]
+    },
+    {
+      "corpus": "LOGIC_FOUNDATIONS",
+      "file": "LOGIC_FOUNDATIONS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "LOGIC_FOUNDATIONS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "LF-001",
+        "LF-002",
+        "LF-003",
+        "LF-010",
+        "LF-011"
+      ]
+    },
+    {
+      "corpus": "MACHINING_MATH",
+      "file": "MACHINING_MATH_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "MACHINING_MATH_RULEBOOK.md",
+      "rule_count": 13,
+      "rule_ids_sample": [
+        "MA-001",
+        "MA-002",
+        "MA-003",
+        "MA-004",
+        "MA-005"
+      ]
+    },
+    {
+      "corpus": "MANUFACTURING_PROCESSES",
+      "file": "MANUFACTURING_PROCESSES_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "MANUFACTURING_PROCESSES_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "MA-001",
+        "MA-002",
+        "MA-003",
+        "MA-004",
+        "MA-005"
+      ]
+    },
+    {
+      "corpus": "MATERIALS_SCIENCE",
+      "file": "MATERIALS_SCIENCE_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "MATERIALS_SCIENCE_RULEBOOK.md",
+      "rule_count": 12,
+      "rule_ids_sample": [
+        "MS-001",
+        "MS-002",
+        "MS-003",
+        "MS-004",
+        "MS-005"
+      ]
+    },
+    {
+      "corpus": "MATHEMATICAL_PHYSICS",
+      "file": "MATHEMATICAL_PHYSICS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "MATHEMATICAL_PHYSICS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "MP-001",
+        "MP-010",
+        "MP-020",
+        "MP-030",
+        "MP-040"
+      ]
+    },
+    {
+      "corpus": "MEASURE_THEORY",
+      "file": "MEASURE_THEORY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "MEASURE_THEORY_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "MT-001",
+        "MT-010",
+        "MT-020",
+        "MT-030",
+        "MT-040"
+      ]
+    },
+    {
+      "corpus": "META_MATHEMATICS",
+      "file": "META_MATHEMATICS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "META_MATHEMATICS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "MM-001",
+        "MM-010",
+        "MM-020",
+        "MM-030",
+        "MM-040"
+      ]
+    },
+    {
+      "corpus": "NUMBER_THEORY",
+      "file": "NUMBER_THEORY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "NUMBER_THEORY_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "NT-001",
+        "NT-002",
+        "NT-003",
+        "NT-004",
+        "NT-010"
+      ]
+    },
+    {
+      "corpus": "NUMERICAL_ANALYSIS",
+      "file": "NUMERICAL_ANALYSIS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "NUMERICAL_ANALYSIS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "NA-001",
+        "NA-002",
+        "NA-010",
+        "NA-020",
+        "NA-030"
+      ]
+    },
+    {
+      "corpus": "OPEN_PROBLEMS",
+      "file": "OPEN_PROBLEMS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "OPEN_PROBLEMS_RULEBOOK.md",
+      "rule_count": 16,
+      "rule_ids_sample": [
+        "OP-001",
+        "OP-002",
+        "OP-003",
+        "OP-004",
+        "OP-005"
+      ]
+    },
+    {
+      "corpus": "OPERATIONS_RESEARCH",
+      "file": "OPERATIONS_RESEARCH_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "OPERATIONS_RESEARCH_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "OP-001",
+        "OP-002",
+        "OP-003",
+        "OP-004",
+        "OP-005"
+      ]
+    },
+    {
+      "corpus": "OPTIMIZATION",
+      "file": "OPTIMIZATION_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "OPTIMIZATION_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "OP-001",
+        "OP-010",
+        "OP-011",
+        "OP-020",
+        "OP-030"
+      ]
+    },
+    {
+      "corpus": "PROBABILITY_APPLICATIONS",
+      "file": "PROBABILITY_APPLICATIONS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "PROBABILITY_APPLICATIONS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "PB-001",
+        "PB-010",
+        "PB-020",
+        "PB-030",
+        "PB-040"
+      ]
+    },
+    {
+      "corpus": "PROBABILITY",
+      "file": "PROBABILITY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "PROBABILITY_RULEBOOK.md",
+      "rule_count": 26,
+      "rule_ids_sample": [
+        "PR-001",
+        "PR-002",
+        "PR-003",
+        "PR-004",
+        "PR-010"
+      ]
+    },
+    {
+      "corpus": "QUANTUM_COMPUTING",
+      "file": "QUANTUM_COMPUTING_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "QUANTUM_COMPUTING_RULEBOOK.md",
+      "rule_count": 12,
+      "rule_ids_sample": [
+        "QC-001",
+        "QC-002",
+        "QC-003",
+        "QC-004",
+        "QC-005"
+      ]
+    },
+    {
+      "corpus": "REAL_ANALYSIS",
+      "file": "REAL_ANALYSIS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "REAL_ANALYSIS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "RA-001",
+        "RA-002",
+        "RA-003",
+        "RA-010",
+        "RA-020"
+      ]
+    },
+    {
+      "corpus": "ROBOTICS",
+      "file": "ROBOTICS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "ROBOTICS_RULEBOOK.md",
+      "rule_count": 12,
+      "rule_ids_sample": [
+        "RB-001",
+        "RB-002",
+        "RB-003",
+        "RB-004",
+        "RB-005"
+      ]
+    },
+    {
+      "corpus": "SCIENCE_SIDE",
+      "file": "SCIENCE_SIDE_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "SCIENCE_SIDE_RULEBOOK.md",
+      "rule_count": 28,
+      "rule_ids_sample": [
+        "SS-001",
+        "SS-010",
+        "SS-020",
+        "SS-030",
+        "SS-040"
+      ]
+    },
+    {
+      "corpus": "SIGNALS_SYSTEMS",
+      "file": "SIGNALS_SYSTEMS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "SIGNALS_SYSTEMS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "SI-001",
+        "SI-002",
+        "SI-003",
+        "SI-004",
+        "SI-005"
+      ]
+    },
+    {
+      "corpus": "STATISTICS",
+      "file": "STATISTICS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "STATISTICS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "ST-001",
+        "ST-002",
+        "ST-010",
+        "ST-011",
+        "ST-020"
+      ]
+    },
+    {
+      "corpus": "STOCHASTIC_PROCESSES",
+      "file": "STOCHASTIC_PROCESSES_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "STOCHASTIC_PROCESSES_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "SP-001",
+        "SP-010",
+        "SP-011",
+        "SP-020",
+        "SP-030"
+      ]
+    },
+    {
+      "corpus": "STRENGTH_OF_MATERIALS",
+      "file": "STRENGTH_OF_MATERIALS_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "STRENGTH_OF_MATERIALS_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "ST-001",
+        "ST-002",
+        "ST-003",
+        "ST-004",
+        "ST-005"
+      ]
+    },
+    {
+      "corpus": "STRUCTURAL_ALGEBRA",
+      "file": "STRUCTURAL_ALGEBRA_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "STRUCTURAL_ALGEBRA_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "SA-001",
+        "SA-010",
+        "SA-020",
+        "SA-030",
+        "SA-040"
+      ]
+    },
+    {
+      "corpus": "THERMODYNAMICS_ENGINEERING",
+      "file": "THERMODYNAMICS_ENGINEERING_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "THERMODYNAMICS_ENGINEERING_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "TH-001",
+        "TH-002",
+        "TH-003",
+        "TH-004",
+        "TH-005"
+      ]
+    },
+    {
+      "corpus": "TOPOLOGY",
+      "file": "TOPOLOGY_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "TOPOLOGY_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "TP-001",
+        "TP-002",
+        "TP-003",
+        "TP-010",
+        "TP-011"
+      ]
+    },
+    {
+      "corpus": "WOODWORKING_MATH",
+      "file": "WOODWORKING_MATH_RULES.json",
+      "schema_version": "1.0",
+      "knowledge_base": "math-generator",
+      "document_source": "WOODWORKING_MATH_RULEBOOK.md",
+      "rule_count": 25,
+      "rule_ids_sample": [
+        "WO-001",
+        "WO-002",
+        "WO-003",
+        "WO-004",
+        "WO-005"
+      ]
+    }
+  ]
+}

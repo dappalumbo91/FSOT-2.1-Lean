@@ -1,0 +1,23 @@
+# Tier 15 Wave A — Autonomous MC emergent domain discovery → Lean certificate.
+version: "1.0"
+updated: "2026-07-01"
+
+source:
+  mc_root: "C:/Users/damia/Desktop/autonomous_monte_carlo_fsot_refiner"
+  run_summary: fsot_autonomous_run_summary.json
+  refined_robust: refined_robust_emergents.json
+
+build:
+  script: scripts/build_emergent_domains_benchmark.py
+  output: data/emergent_domains_benchmark.json
+
+lean:
+  generator: scripts/gen_emergent_domains_lean.py
+  module: FSOT.Formal.EmergentDomainPriors
+  lean_domain: quantum
+  sign_theorem: quantum_raw_S_positive
+
+verification:
+  min_emergent_domains: 29
+  min_observed_domains: 25
+  min_emergence_health: 0.8

@@ -167,6 +167,8 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.ExperimentSynthesisPriors",
                 "FSOT.Formal.BiologyStrictEmpiricalPriors",
                 "FSOT.Formal.NeuronCohortTrainHoldoutPriors",
+                "FSOT.Formal.ThesisSimulationPriors",
+                "FSOT.Formal.EmergentDomainPriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -690,6 +692,9 @@ def main() -> int:
                     issues.append("DomainPrecisionPriors.lean generation failed")
         for bench_script in (
             "build_biology_strict_empirical.py",
+            "build_thesis_simulation_benchmark.py",
+            "build_emergent_domains_benchmark.py",
+            "build_math_generator_rules_benchmark.py",
             "build_plasma_physics_benchmark.py",
             "build_immunology_benchmark.py",
             "ingest_climate_ncei_chunked.py",
@@ -748,6 +753,52 @@ def main() -> int:
             print(proc_bs.stdout.strip() or proc_bs.stderr.strip())
             if proc_bs.returncode != 0:
                 issues.append("BiologyStrictEmpiricalPriors.lean generation failed")
+
+        wave_a_steps = [
+            ("ingest_thesis_simulation_lab.py", "gen_thesis_simulation_lean.py", "ThesisSimulationPriors.lean generation failed", "thesis simulation ingest failed"),
+            ("ingest_emergent_domains_lab.py", "gen_emergent_domains_lean.py", "EmergentDomainPriors.lean generation failed", "emergent domains ingest failed"),
+            ("ingest_math_generator_rules_lab.py", None, None, "math generator rules ingest failed"),
+        ]
+        for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
+            ingest_script = ROOT / "scripts" / ingest_name
+            if not ingest_script.exists():
+                continue
+            proc_wa = subprocess.run(
+                [sys.executable, str(ingest_script)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_wa.stdout.strip() or proc_wa.stderr.strip())
+            if proc_wa.returncode != 0:
+                issues.append(ingest_fail)
+                continue
+            if gen_name:
+                gen_script = ROOT / "scripts" / gen_name
+                if gen_script.exists():
+                    proc_wg = subprocess.run(
+                        [sys.executable, str(gen_script)],
+                        cwd=ROOT,
+                        capture_output=True,
+                        text=True,
+                        check=False,
+                    )
+                    print(proc_wg.stdout.strip() or proc_wg.stderr.strip())
+                    if proc_wg.returncode != 0:
+                        issues.append(gen_fail)
+        math_gen = ROOT / "scripts" / "gen_math_generator_lean.py"
+        if math_gen.exists():
+            proc_mg = subprocess.run(
+                [sys.executable, str(math_gen)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_mg.stdout.strip() or proc_mg.stderr.strip())
+            if proc_mg.returncode != 0:
+                issues.append("MathGeneratorPriors.lean generation failed")
 
         ext_gen = ROOT / "scripts" / "gen_extension_domains_lean.py"
         if ext_gen.exists():

@@ -79,6 +79,8 @@ LEAN_TARGETS = [
     "FSOT.Formal.ClimateSciencePriors",
     "FSOT.Formal.BiologyStrictEmpiricalPriors",
     "FSOT.Formal.NeuronCohortTrainHoldoutPriors",
+    "FSOT.Formal.ThesisSimulationPriors",
+    "FSOT.Formal.EmergentDomainPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]
