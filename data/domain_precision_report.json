@@ -1,8 +1,8 @@
 {
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
   "domain_count": 35,
-  "domains_with_numeric_precision": 33,
-  "domains_target_band_2pct": 26,
+  "domains_with_numeric_precision": 35,
+  "domains_target_band_2pct": 27,
   "domains_tolerable_band_5pct": 0,
   "domains_unacceptable": 1,
   "domains_huge_gap": 0,
@@ -801,26 +801,42 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 0,
-      "median_error_pct": null,
-      "p90_error_pct": null,
-      "max_error_pct": null,
-      "within_2pct": 0,
-      "within_5pct": 0,
-      "precision_status": "no_numeric_records",
+      "record_count": 36,
+      "median_error_pct": 0.9320035,
+      "p90_error_pct": 3.81752,
+      "max_error_pct": 4.499825,
+      "within_2pct": 23,
+      "within_5pct": 36,
+      "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
           "lab": "smiles_lab",
-          "record_count": 0,
-          "median_error_pct": null,
-          "p90_error_pct": null,
-          "max_error_pct": null,
-          "within_2pct": 0,
-          "within_5pct": 0
+          "record_count": 36,
+          "median_error_pct": 0.9320035,
+          "p90_error_pct": 3.81752,
+          "max_error_pct": 4.499825,
+          "within_2pct": 23,
+          "within_5pct": 36
         }
       ],
-      "top_properties": [],
+      "top_properties": [
+        {
+          "property": "\u00a766 Particle Masses",
+          "records": 12,
+          "median_error_pct": 0.784358
+        },
+        {
+          "property": "\u00a778 X-ray K\u03b1 Energy",
+          "records": 12,
+          "median_error_pct": 2.352752
+        },
+        {
+          "property": "\u00a788 XPS 1s Binding E",
+          "records": 12,
+          "median_error_pct": 1.050199
+        }
+      ],
       "diagnostic": null
     },
     {
@@ -1078,12 +1094,12 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 51,
-      "median_error_pct": 0.82106,
-      "p90_error_pct": 2.165674,
+      "record_count": 79,
+      "median_error_pct": 0.288226,
+      "p90_error_pct": 1.969931,
       "max_error_pct": 4.673928,
-      "within_2pct": 44,
-      "within_5pct": 51,
+      "within_2pct": 72,
+      "within_5pct": 79,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -1098,15 +1114,20 @@
         },
         {
           "lab": "blackhole_thesis",
-          "record_count": 0,
-          "median_error_pct": null,
-          "p90_error_pct": null,
-          "max_error_pct": null,
-          "within_2pct": 0,
-          "within_5pct": 0
+          "record_count": 28,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.075,
+          "max_error_pct": 0.718,
+          "within_2pct": 28,
+          "within_5pct": 28
         }
       ],
       "top_properties": [
+        {
+          "property": "STRONG",
+          "records": 28,
+          "median_error_pct": 0.0
+        },
         {
           "property": "\u00a742 Binding E/A",
           "records": 15,
@@ -1497,26 +1518,32 @@
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
       "sign_mismatch": true,
-      "record_count": 0,
-      "median_error_pct": null,
-      "p90_error_pct": null,
-      "max_error_pct": null,
-      "within_2pct": 0,
-      "within_5pct": 0,
+      "record_count": 28,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.075,
+      "max_error_pct": 0.718,
+      "within_2pct": 28,
+      "within_5pct": 28,
       "precision_status": "sign_mismatch",
       "huge_gap": false,
       "labs": [
         {
           "lab": "blackhole_thesis",
-          "record_count": 0,
-          "median_error_pct": null,
-          "p90_error_pct": null,
-          "max_error_pct": null,
-          "within_2pct": 0,
-          "within_5pct": 0
+          "record_count": 28,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.075,
+          "max_error_pct": 0.718,
+          "within_2pct": 28,
+          "within_5pct": 28
         }
       ],
-      "top_properties": [],
+      "top_properties": [
+        {
+          "property": "STRONG",
+          "records": 28,
+          "median_error_pct": 0.0
+        }
+      ],
       "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
     },
     {

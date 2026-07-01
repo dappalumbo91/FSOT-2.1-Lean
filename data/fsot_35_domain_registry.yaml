@@ -71,6 +71,7 @@ empirical_sources:
   High_Energy_Physics:
     labs: [smiles_lab]
     lean_domain: higgs
+    smiles_lean_fallback: particle
   Biochemistry:
     labs: [smiles_lab, neurolab_bio]
     lean_domain: medical
@@ -139,6 +140,48 @@ verification:
   min_smiles_mapped: 1400
   lean_align_tol: 1.0e-9
   scalar_sign_tol: 1.0e-6
+
+# FSOT-2.0-code authority reference (continued domain expansion + IntelligenceCompressor)
+fsot_20_reference:
+  repo: "https://github.com/dappalumbo91/FSOT-2.0-code.git"
+  local_path: "C:/Users/damia/Desktop/FSOT-2.0-code"
+  expansion_doc: "continued domain expansion"
+  crosswalk_script: scripts/build_fsot_20_domain_crosswalk.py
+  extension_domains:
+    Intelligence_Compression:
+      source: IntelligenceCompressor/Intelligence_Compression_Domain.md
+      D_eff: 12
+      observed: true
+      maps_to_lean: [neural, consciousness, ai]
+
+# Weather/geophysical domains: authority uses observed=false (negative S dispersal);
+# empirical weather lab uses observed=true D_eff=15 (stability classifier).
+application_overrides:
+  Meteorology:
+    empirical_mode: weather_observed
+    D_eff: 15
+    observed: true
+    lean_domain: energy
+  Atmospheric_Physics:
+    empirical_mode: weather_observed
+    D_eff: 15
+    observed: true
+    lean_domain: energy
+  Oceanography:
+    empirical_mode: weather_observed
+    D_eff: 15
+    observed: true
+    lean_domain: energy
+  Geophysics:
+    empirical_mode: weather_observed
+    D_eff: 15
+    observed: true
+    lean_domain: energy
+  Seismology:
+    empirical_mode: weather_observed
+    D_eff: 15
+    observed: true
+    lean_domain: energy
 
 precision_verification:
   huge_gap_pct: 25.0

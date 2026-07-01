@@ -1,0 +1,777 @@
+generated_at: '2026-07-01T05:10:17.140950+00:00'
+fsot_20_repo: C:\Users\damia\Desktop\FSOT-2.0-code
+fsot_20_remote: https://github.com/dappalumbo91/FSOT-2.0-code.git
+authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+domain_count_fsot20_doc: 35
+domain_count_matched_neurolab: 35
+param_drift_count: 11
+extra_domains:
+  Intelligence_Compression:
+    source: C:\Users\damia\Desktop\FSOT-2.0-code\IntelligenceCompressor
+    status: fsot20_extension_domain_36
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.8
+      recent_hits: 1
+    maps_to_lean:
+    - neural
+    - consciousness
+    - ai
+    note: Attention-weighted observer; not in 35-domain NeuroLab table yet
+domains:
+- fsot20_name: Acoustics
+  neurolab_domain: Acoustics
+  lean_domain: material
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 10
+    hits: 0
+    delta_psi: 0.3
+    observed: true
+    S: 0.3115907970863415
+  fsot20_canonical:
+    fsot20_name: Acoustics
+    D_eff: 10
+    recent_hits: 0
+    delta_psi: 0.3
+    observed: true
+    canonical_S: 0.3115907970863415
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.658987
+  sign_mismatch: false
+- fsot20_name: Astronomy
+  neurolab_domain: Astronomy
+  lean_domain: astronomical
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 20
+    hits: 1
+    delta_psi: 1.0
+    observed: true
+    S: 0.8984595681660628
+  fsot20_canonical:
+    fsot20_name: Astronomy
+    D_eff: 20
+    recent_hits: 1
+    delta_psi: 1.0
+    observed: true
+    canonical_S: 0.8984595681660628
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.008528684416521978
+  sign_mismatch: false
+- fsot20_name: Astrophysics
+  neurolab_domain: Astrophysics
+  lean_domain: astronomical
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 24
+    hits: 1
+    delta_psi: 1.0
+    observed: true
+    S: 0.8824107984181293
+  fsot20_canonical:
+    fsot20_name: Astrophysics
+    D_eff: 24
+    recent_hits: 1
+    delta_psi: 1.0
+    observed: true
+    canonical_S: 0.8824107984181293
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.010466357473454788
+  sign_mismatch: false
+- fsot20_name: Atmospheric Physics
+  neurolab_domain: Atmospheric_Physics
+  lean_domain: energy
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 17
+    hits: 2
+    delta_psi: 0.8
+    observed: false
+    S: -0.47643190542960023
+  fsot20_canonical:
+    fsot20_name: Atmospheric Physics
+    D_eff: 17
+    recent_hits: 2
+    delta_psi: 0.8
+    observed: false
+    canonical_S: -0.4764319054296003
+  param_drift: []
+  precision_status: sign_mismatch
+  median_error_pct: 0.0
+  sign_mismatch: true
+- fsot20_name: Atomic Physics
+  neurolab_domain: Atomic_Physics
+  lean_domain: particle
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 7
+    hits: 0
+    delta_psi: 0.85
+    observed: true
+    S: 0.7358238658627416
+  fsot20_canonical:
+    fsot20_name: Atomic Physics
+    D_eff: 7
+    recent_hits: 0
+    delta_psi: 0.5
+    observed: true
+    canonical_S: 0.3336789529237226
+  param_drift:
+  - S auth=0.735824 fsot20=0.3336789529237226
+  precision_status: target_band
+  median_error_pct: 0.9320035
+  sign_mismatch: false
+- fsot20_name: Biochemistry
+  neurolab_domain: Biochemistry
+  lean_domain: medical
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 13
+    hits: 1
+    delta_psi: 0.35
+    observed: true
+    S: 0.3062212293865662
+  fsot20_canonical:
+    fsot20_name: Biochemistry
+    D_eff: 13
+    recent_hits: 0
+    delta_psi: 0.1
+    observed: false
+    canonical_S: 0.42178167382420056
+  param_drift:
+  - hits auth=1 fsot20=0
+  - observed auth=True fsot20=False
+  - S auth=0.306221 fsot20=0.42178167382420056
+  precision_status: target_band
+  median_error_pct: 0.319061
+  sign_mismatch: false
+- fsot20_name: Biology
+  neurolab_domain: Biology
+  lean_domain: biological
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 12
+    hits: 0
+    delta_psi: 0.08
+    observed: false
+    S: 0.4447250077038459
+  fsot20_canonical:
+    fsot20_name: Biology
+    D_eff: 12
+    recent_hits: 0
+    delta_psi: 0.05
+    observed: false
+    canonical_S: 0.47768238921582773
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 4.602204765150334e-06
+  sign_mismatch: false
+- fsot20_name: Chemistry
+  neurolab_domain: Chemistry
+  lean_domain: electron
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 8
+    hits: 0
+    delta_psi: 0.6
+    observed: true
+    S: 0.4078840642307454
+  fsot20_canonical:
+    fsot20_name: Chemistry
+    D_eff: 8
+    recent_hits: 0
+    delta_psi: 0.5
+    observed: true
+    canonical_S: 0.33401327040170914
+  param_drift:
+  - S auth=0.407884 fsot20=0.33401327040170914
+  precision_status: target_band
+  median_error_pct: 0.717702
+  sign_mismatch: false
+- fsot20_name: Condensed Matter Physics
+  neurolab_domain: Condensed_Matter
+  lean_domain: material
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 14
+    hits: 0
+    delta_psi: 0.5
+    observed: true
+    S: 0.3384059955797751
+  fsot20_canonical:
+    fsot20_name: Condensed Matter Physics
+    D_eff: 14
+    recent_hits: 0
+    delta_psi: 0.5
+    observed: true
+    canonical_S: 0.3384059955797751
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.272464
+  sign_mismatch: false
+- fsot20_name: Cosmology
+  neurolab_domain: Cosmology
+  lean_domain: cosmological
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 25
+    hits: 0
+    delta_psi: 1.0
+    observed: false
+    S: -0.5024559462100433
+  fsot20_canonical:
+    fsot20_name: Cosmology
+    D_eff: 25
+    recent_hits: 0
+    delta_psi: 1.0
+    observed: false
+    canonical_S: -0.5024559462100433
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.004296638039763263
+  sign_mismatch: false
+- fsot20_name: Ecology
+  neurolab_domain: Ecology
+  lean_domain: biological
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 15
+    hits: 1
+    delta_psi: 0.2
+    observed: false
+    S: 0.3003170815488647
+  fsot20_canonical:
+    fsot20_name: Ecology
+    D_eff: 15
+    recent_hits: 1
+    delta_psi: 0.2
+    observed: false
+    canonical_S: 0.3003170815488647
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.0
+  sign_mismatch: false
+- fsot20_name: Economics
+  neurolab_domain: Economics
+  lean_domain: consciousness
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 20
+    hits: 3
+    delta_psi: 1.5
+    observed: true
+    S: 0.6460045206857493
+  fsot20_canonical:
+    fsot20_name: Economics
+    D_eff: 20
+    recent_hits: 3
+    delta_psi: 1.5
+    observed: true
+    canonical_S: 0.6460045206857492
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: -0.0007873774796219538
+  sign_mismatch: false
+- fsot20_name: Electromagnetism
+  neurolab_domain: Electromagnetism
+  lean_domain: material
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 9
+    hits: 0
+    delta_psi: 0.7
+    observed: true
+    S: 0.5188655207983146
+  fsot20_canonical:
+    fsot20_name: Electromagnetism
+    D_eff: 9
+    recent_hits: 0
+    delta_psi: 0.7
+    observed: true
+    canonical_S: 0.5188655207983145
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.658987
+  sign_mismatch: false
+- fsot20_name: Fluid Dynamics
+  neurolab_domain: Fluid_Dynamics
+  lean_domain: energy
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 15
+    hits: 1
+    delta_psi: 0.9
+    observed: false
+    S: -0.562733806256851
+  fsot20_canonical:
+    fsot20_name: Fluid Dynamics
+    D_eff: 15
+    recent_hits: 1
+    delta_psi: 0.9
+    observed: false
+    canonical_S: -0.562733806256851
+  param_drift: []
+  precision_status: sign_mismatch
+  median_error_pct: 0.7000000000000028
+  sign_mismatch: true
+- fsot20_name: Geophysics
+  neurolab_domain: Geophysics
+  lean_domain: energy
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 19
+    hits: 2
+    delta_psi: 1.0
+    observed: false
+    S: -0.5490942927204095
+  fsot20_canonical:
+    fsot20_name: Geophysics
+    D_eff: 19
+    recent_hits: 2
+    delta_psi: 1.0
+    observed: false
+    canonical_S: -0.5490942927204095
+  param_drift: []
+  precision_status: sign_mismatch
+  median_error_pct: 0.0
+  sign_mismatch: true
+- fsot20_name: High-Energy Physics
+  neurolab_domain: High_Energy_Physics
+  lean_domain: higgs
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 7
+    hits: 1
+    delta_psi: 0.95
+    observed: true
+    S: 0.8862640566467022
+  fsot20_canonical:
+    fsot20_name: High-Energy Physics
+    D_eff: 19
+    recent_hits: 1
+    delta_psi: 1.2
+    observed: true
+    canonical_S: 1.047109184613469
+  param_drift:
+  - D_eff auth=7 fsot20=19
+  - S auth=0.886264 fsot20=1.047109184613469
+  precision_status: target_band
+  median_error_pct: 0.9320035
+  sign_mismatch: false
+- fsot20_name: Materials Science
+  neurolab_domain: Materials_Science
+  lean_domain: material
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 10
+    hits: 0
+    delta_psi: 0.5
+    observed: true
+    S: 0.33525988073638374
+  fsot20_canonical:
+    fsot20_name: Materials Science
+    D_eff: 16
+    recent_hits: 0
+    delta_psi: 0.5
+    observed: true
+    canonical_S: 0.3399741970931801
+  param_drift:
+  - D_eff auth=10 fsot20=16
+  precision_status: target_band
+  median_error_pct: 0.272464
+  sign_mismatch: false
+- fsot20_name: Meteorology
+  neurolab_domain: Meteorology
+  lean_domain: energy
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 16
+    hits: 2
+    delta_psi: 0.8
+    observed: false
+    S: -0.4849970208468799
+  fsot20_canonical:
+    fsot20_name: Meteorology
+    D_eff: 16
+    recent_hits: 2
+    delta_psi: 0.8
+    observed: false
+    canonical_S: -0.48499702084687996
+  param_drift: []
+  precision_status: sign_mismatch
+  median_error_pct: 0.0
+  sign_mismatch: true
+- fsot20_name: Molecular Chemistry
+  neurolab_domain: Molecular_Chemistry
+  lean_domain: chemical
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 9
+    hits: 0
+    delta_psi: 0.5
+    observed: true
+    S: 0.3345733830778106
+  fsot20_canonical:
+    fsot20_name: Molecular Chemistry
+    D_eff: 9
+    recent_hits: 0
+    delta_psi: 0.4
+    observed: true
+    canonical_S: 0.30261486356495465
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.41124649999999996
+  sign_mismatch: false
+- fsot20_name: Neuroscience
+  neurolab_domain: Neuroscience
+  lean_domain: neural
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 14
+    hits: 1
+    delta_psi: 0.7
+    observed: true
+    S: 0.5143619629083619
+  fsot20_canonical:
+    fsot20_name: Neuroscience
+    D_eff: 14
+    recent_hits: 1
+    delta_psi: 0.1
+    observed: true
+    canonical_S: 0.42121911878182766
+  param_drift:
+  - S auth=0.514362 fsot20=0.42121911878182766
+  precision_status: target_band
+  median_error_pct: 1.2044815
+  sign_mismatch: false
+- fsot20_name: Nuclear Physics
+  neurolab_domain: Nuclear_Physics
+  lean_domain: nuclear
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 15
+    hits: 1
+    delta_psi: 1.0
+    observed: true
+    S: 0.9213094330291355
+  fsot20_canonical:
+    fsot20_name: Nuclear Physics
+    D_eff: 15
+    recent_hits: 1
+    delta_psi: 1.0
+    observed: true
+    canonical_S: 0.9213094330291354
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.288226
+  sign_mismatch: false
+- fsot20_name: Oceanography
+  neurolab_domain: Oceanography
+  lean_domain: energy
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 17
+    hits: 1
+    delta_psi: 0.7
+    observed: false
+    S: -0.37715907584612024
+  fsot20_canonical:
+    fsot20_name: Oceanography
+    D_eff: 17
+    recent_hits: 1
+    delta_psi: 0.7
+    observed: false
+    canonical_S: -0.37715907584612024
+  param_drift: []
+  precision_status: sign_mismatch
+  median_error_pct: 0.0
+  sign_mismatch: true
+- fsot20_name: Optics
+  neurolab_domain: Optics
+  lean_domain: material
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 10
+    hits: 0
+    delta_psi: 0.6
+    observed: true
+    S: 0.4080624712153455
+  fsot20_canonical:
+    fsot20_name: Optics
+    D_eff: 10
+    recent_hits: 0
+    delta_psi: 0.6
+    observed: true
+    canonical_S: 0.40806247121534545
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.658987
+  sign_mismatch: false
+- fsot20_name: Particle Astrophysics
+  neurolab_domain: Particle_Astrophysics
+  lean_domain: cmb
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 24
+    hits: 0
+    delta_psi: 0.8
+    observed: false
+    S: -0.424411720028886
+  fsot20_canonical:
+    fsot20_name: Particle Astrophysics
+    D_eff: 23
+    recent_hits: 1
+    delta_psi: 1.0
+    observed: true
+    canonical_S: 0.8862424235007276
+  param_drift:
+  - D_eff auth=24 fsot20=23
+  - hits auth=0 fsot20=1
+  - observed auth=False fsot20=True
+  - S auth=-0.424412 fsot20=0.8862424235007276
+  precision_status: target_band
+  median_error_pct: 0.010466357473454788
+  sign_mismatch: false
+- fsot20_name: Particle Physics
+  neurolab_domain: Particle_Physics
+  lean_domain: particle
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 5
+    hits: 0
+    delta_psi: 1.0
+    observed: true
+    S: 0.9504134401245242
+  fsot20_canonical:
+    fsot20_name: Particle Physics
+    D_eff: 5
+    recent_hits: 0
+    delta_psi: 1.0
+    observed: true
+    canonical_S: 0.9504134401245243
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.9320035
+  sign_mismatch: false
+- fsot20_name: Physical Chemistry
+  neurolab_domain: Physical_Chemistry
+  lean_domain: chemical
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 8
+    hits: 0
+    delta_psi: 0.5
+    observed: true
+    S: 0.33401327040170914
+  fsot20_canonical:
+    fsot20_name: Physical Chemistry
+    D_eff: 8
+    recent_hits: 0
+    delta_psi: 0.5
+    observed: true
+    canonical_S: 0.33401327040170914
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 0.41124649999999996
+  sign_mismatch: false
+- fsot20_name: Planetary Science
+  neurolab_domain: Planetary_Science
+  lean_domain: galactic
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 21
+    hits: 1
+    delta_psi: 0.9
+    observed: true
+    S: 0.7671791385407586
+  fsot20_canonical:
+    fsot20_name: Planetary Science
+    D_eff: 21
+    recent_hits: 1
+    delta_psi: 1.0
+    observed: true
+    canonical_S: 0.8942633864762616
+  param_drift:
+  - S auth=0.767179 fsot20=0.8942633864762616
+  precision_status: target_band
+  median_error_pct: 0.010466357473454788
+  sign_mismatch: false
+- fsot20_name: Psychology
+  neurolab_domain: Psychology
+  lean_domain: consciousness
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 16
+    hits: 1
+    delta_psi: 1.15
+    observed: true
+    S: 1.050205640397955
+  fsot20_canonical:
+    fsot20_name: Psychology
+    D_eff: 16
+    recent_hits: 1
+    delta_psi: 0.3
+    observed: true
+    canonical_S: 0.3177158131300322
+  param_drift:
+  - S auth=1.050206 fsot20=0.3177158131300322
+  precision_status: target_band
+  median_error_pct: -0.0007873774796219538
+  sign_mismatch: false
+- fsot20_name: Quantum Computing
+  neurolab_domain: Quantum_Computing
+  lean_domain: ai
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 11
+    hits: 0
+    delta_psi: 0.5
+    observed: false
+    S: -0.14767310363368644
+  fsot20_canonical:
+    fsot20_name: Quantum Computing
+    D_eff: 11
+    recent_hits: 0
+    delta_psi: 1.0
+    observed: true
+    canonical_S: 0.9414848613953228
+  param_drift:
+  - observed auth=False fsot20=True
+  - S auth=-0.147673 fsot20=0.9414848613953228
+  precision_status: target_band
+  median_error_pct: 0.0
+  sign_mismatch: false
+- fsot20_name: Quantum Gravity
+  neurolab_domain: Quantum_Gravity
+  lean_domain: blackhole
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 22
+    hits: 0
+    delta_psi: 1.0
+    observed: false
+    S: -0.5255977531899868
+  fsot20_canonical:
+    fsot20_name: Quantum Gravity
+    D_eff: 22
+    recent_hits: 0
+    delta_psi: 1.0
+    observed: false
+    canonical_S: -0.5255977531899868
+  param_drift: []
+  precision_status: sign_mismatch
+  median_error_pct: 0.0
+  sign_mismatch: true
+- fsot20_name: Quantum Mechanics
+  neurolab_domain: Quantum_Mechanics
+  lean_domain: quantum
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 6
+    hits: 0
+    delta_psi: 1.0
+    observed: true
+    S: 0.9555063001027196
+  fsot20_canonical:
+    fsot20_name: Quantum Mechanics
+    D_eff: 6
+    recent_hits: 0
+    delta_psi: 1.0
+    observed: true
+    canonical_S: 0.9555063001027196
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 1.230796
+  sign_mismatch: false
+- fsot20_name: Quantum Optics
+  neurolab_domain: Quantum_Optics
+  lean_domain: quantum
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 11
+    hits: 0
+    delta_psi: 0.6
+    observed: true
+    S: 0.4081705381715019
+  fsot20_canonical:
+    fsot20_name: Quantum Optics
+    D_eff: 11
+    recent_hits: 0
+    delta_psi: 0.6
+    observed: true
+    canonical_S: 0.4081705381715019
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: 1.230796
+  sign_mismatch: false
+- fsot20_name: Seismology
+  neurolab_domain: Seismology
+  lean_domain: energy
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 18
+    hits: 2
+    delta_psi: 1.2
+    observed: false
+    S: -0.4459015721103038
+  fsot20_canonical:
+    fsot20_name: Seismology
+    D_eff: 18
+    recent_hits: 2
+    delta_psi: 1.2
+    observed: false
+    canonical_S: -0.44590157211030385
+  param_drift: []
+  precision_status: sign_mismatch
+  median_error_pct: 0.0
+  sign_mismatch: true
+- fsot20_name: Sociology
+  neurolab_domain: Sociology
+  lean_domain: consciousness
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 18
+    hits: 3
+    delta_psi: 1.5
+    observed: true
+    S: 0.6501466524159132
+  fsot20_canonical:
+    fsot20_name: Sociology
+    D_eff: 18
+    recent_hits: 3
+    delta_psi: 1.5
+    observed: true
+    canonical_S: 0.6501466524159132
+  param_drift: []
+  precision_status: target_band
+  median_error_pct: -0.0007873774796219538
+  sign_mismatch: false
+- fsot20_name: Thermodynamics
+  neurolab_domain: Thermodynamics
+  lean_domain: energy
+  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority:
+    D_eff: 15
+    hits: 1
+    delta_psi: 0.9
+    observed: true
+    S: 0.7869745016115727
+  fsot20_canonical:
+    fsot20_name: Thermodynamics
+    D_eff: 13
+    recent_hits: 0
+    delta_psi: 0.4
+    observed: true
+    canonical_S: 0.30677827327089424
+  param_drift:
+  - D_eff auth=15 fsot20=13
+  - hits auth=1 fsot20=0
+  - S auth=0.786975 fsot20=0.30677827327089424
+  precision_status: unacceptable
+  median_error_pct: 6.5
+  sign_mismatch: false

@@ -626,6 +626,19 @@ def main() -> int:
             if proc_dv.returncode != 0:
                 issues.append("35-domain coverage verification failed")
 
+        crosswalk = ROOT / "scripts" / "build_fsot_20_domain_crosswalk.py"
+        if crosswalk.exists():
+            proc_xw = subprocess.run(
+                [sys.executable, str(crosswalk)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_xw.stdout.strip() or proc_xw.stderr.strip())
+            if proc_xw.returncode != 0:
+                issues.append("FSOT 2.0 domain crosswalk build failed")
+
         # Tier 10: per-record numeric precision + observed-data benchmarks
         for fetch_name in (
             "fetch_weather_observed_benchmark.py",

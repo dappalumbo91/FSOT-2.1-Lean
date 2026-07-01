@@ -72,11 +72,18 @@ def evaluate() -> dict:
 
         lab_summaries = []
         lab_breakdown = []
-        for lab_key in (empirical_sources.get(name, {}).get("labs") or []):
+        src_cfg = empirical_sources.get(name, {})
+        smiles_lean = lean_domain
+        if lab_key_hint := src_cfg.get("smiles_lean_fallback"):
+            smiles_lean = src_cfg.get("smiles_lean_fallback") or lean_domain
+        for lab_key in (src_cfg.get("labs") or []):
             extractor = LAB_EXTRACTORS.get(lab_key)
             if extractor is None:
                 continue
-            summary = extractor(registry, lean_domain if lab_key == "smiles_lab" else None)
+            summary = extractor(
+                registry,
+                smiles_lean if lab_key == "smiles_lab" else None,
+            )
             lab_breakdown.append(
                 {
                     "lab": lab_key,

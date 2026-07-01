@@ -11,6 +11,15 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 SMILES_JSON = Path(r"C:\Users\damia\Desktop\FSOT SMILES Lab\FSOT_SMILES_Lab_Dataset.json")
 SECTION_MAP = ROOT / "data" / "section_domain_map.json"
+# Lean ledger domains with no SMILES sections — fallback rollups per FSOT-2.0-code mapping
+SMILES_LEAN_FALLBACK: dict[str, str] = {
+    "higgs": "particle",
+    "galactic": "astronomical",
+    "cmb": "astronomical",
+    "fusion": "nuclear",
+    "proton": "particle",
+    "molecular": "chemical",
+}
 TRANSLATIONS = ROOT / "data" / "neurolab_translations_bio.json"
 WEATHER_BENCH = ROOT / "data" / "weather_observed_benchmark.json"
 EVOLUTION_BENCH = ROOT / "data" / "evolution_operon_benchmark.json"
@@ -69,26 +78,33 @@ def extract_smiles(lean_domain: str | None = None) -> dict[str, Any]:
     sec_to_dom = section_map.get("section_to_domain") or {}
     doc = json.loads(SMILES_JSON.read_text(encoding="utf-8"))
     rows = doc.get("records") if isinstance(doc, dict) else doc
-    records: list[dict[str, Any]] = []
-    for row in rows or []:
-        section = row.get("section") or ""
-        dom = sec_to_dom.get(section)
-        if lean_domain and dom != lean_domain:
-            continue
-        err = row.get("error_pct")
-        if err is None:
-            continue
-        records.append(
-            {
-                "lab": "smiles_lab",
-                "property": section,
-                "name": row.get("name"),
-                "computed": row.get("computed_value"),
-                "measured": row.get("target_value"),
-                "error_pct": float(err),
-                "lean_domain": dom,
-            }
-        )
+
+    def _collect(for_domain: str | None) -> list[dict[str, Any]]:
+        out: list[dict[str, Any]] = []
+        for row in rows or []:
+            section = row.get("section") or ""
+            dom = sec_to_dom.get(section)
+            if for_domain and dom != for_domain:
+                continue
+            err = row.get("error_pct")
+            if err is None:
+                continue
+            out.append(
+                {
+                    "lab": "smiles_lab",
+                    "property": section,
+                    "name": row.get("name"),
+                    "computed": row.get("computed_value"),
+                    "measured": row.get("target_value"),
+                    "error_pct": float(err),
+                    "lean_domain": dom,
+                }
+            )
+        return out
+
+    records = _collect(lean_domain)
+    if not records and lean_domain and lean_domain in SMILES_LEAN_FALLBACK:
+        records = _collect(SMILES_LEAN_FALLBACK[lean_domain])
     return _summarize_records(records)
 
 
@@ -193,14 +209,15 @@ def extract_species_catalog(registry: dict) -> dict[str, Any]:
 
 
 def extract_blackhole(registry: dict) -> dict[str, Any]:
-    rows = registry.get("blackhole_thesis", {}).get("rows") or []
+    lab = registry.get("blackhole_thesis", {})
+    rows = lab.get("rows") or lab.get("observables") or []
     records = [
         {
             "lab": "blackhole_thesis",
-            "property": r.get("category"),
+            "property": r.get("category") or r.get("tier"),
             "name": r.get("name"),
             "computed": r.get("computed"),
-            "measured": r.get("measured"),
+            "measured": r.get("measured") or r.get("target"),
             "error_pct": float(r["error_pct"]),
         }
         for r in rows

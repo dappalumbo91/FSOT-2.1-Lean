@@ -102,6 +102,7 @@ def build_registry() -> dict:
     syn = registry.get("experiment_synthesis", {})
     domain_cov = _load_json(ROOT / "data" / "domain_coverage_report.json")
     domain_prec = _load_json(ROOT / "data" / "domain_precision_report.json")
+    fsot20_xw = _load_json(ROOT / "data" / "fsot_20_domain_crosswalk.json")
     proved_raw = cert.get("proved_claims") or cert.get("proved_claim_count")
     proved_claims = len(proved_raw) if isinstance(proved_raw, list) else proved_raw
 
@@ -117,6 +118,14 @@ def build_registry() -> dict:
         "canonical_oracle": {
             "script": "scripts/fsot_canonical_adapter.py",
             "constants_sha256": registry.get("canonical_constants_sha256"),
+        },
+        "fsot_20_reference": {
+            "remote": "https://github.com/dappalumbo91/FSOT-2.0-code.git",
+            "local_path": fsot20_xw.get("fsot_20_repo"),
+            "matched_domains": fsot20_xw.get("domain_count_matched_neurolab"),
+            "param_drift_count": fsot20_xw.get("param_drift_count"),
+            "extension_domains": list((fsot20_xw.get("extra_domains") or {}).keys()),
+            "crosswalk": "data/fsot_20_domain_crosswalk.json",
         },
         "verification_pipeline": [
             "scripts/run_neuron_cohort_eval.py",
