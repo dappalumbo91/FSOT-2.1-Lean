@@ -1,0 +1,29 @@
+# Tier 11: Intelligence_Compression (FSOT-2.0-code extension domain 36)
+version: "1.0"
+updated: "2026-07-01"
+
+source_repo: "C:/Users/damia/Desktop/FSOT-2.0-code/IntelligenceCompressor"
+domain_doc: "Intelligence_Compression_Domain.md"
+
+artifacts:
+  fic_simulation:
+    generator: scripts/fic_lab.py
+    sweep_script: scripts/run_fic_sensitivity_sweep.py
+  fic_sensitivity_sweep:
+    path: data/fic_sensitivity_sweep.csv
+  fic_report:
+    path: data/fic_sensitivity_report.json
+
+optimal_params:
+  D_eff: 12
+  delta_psi: 0.8
+  recent_hits: 1
+  observed: true
+  attention_weight: 1.0
+  S_final_target: 0.2736
+
+verification:
+  min_sweep_rows: 100
+  min_fertile_rows: 5
+  min_best_intelligence_score: 0.5
+  optimal_must_be_fertile: true

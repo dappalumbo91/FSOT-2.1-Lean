@@ -73,6 +73,10 @@ LEAN_TARGETS = [
     "FSOT.Formal.ExperimentSynthesisPriors",
     "FSOT.Formal.DomainCoveragePriors",
     "FSOT.Formal.DomainPrecisionPriors",
+    "FSOT.Formal.IntelligenceCompressionPriors",
+    "FSOT.Formal.PlasmaPhysicsPriors",
+    "FSOT.Formal.ImmunologyPriors",
+    "FSOT.Formal.ClimateSciencePriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

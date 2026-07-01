@@ -75,15 +75,15 @@ empirical_sources:
   Biochemistry:
     labs: [smiles_lab, neurolab_bio]
     lean_domain: medical
-  Biology:
-    labs: [evolution_lab, cellular_lab, neurolab_bio]
-    lean_domain: biological
   Psychology:
     labs: [linguistics_lab]
     lean_domain: consciousness
   Thermodynamics:
-    labs: [fuel_lab]
+    labs: [fuel_lab, thermodynamics_smiles]
     lean_domain: energy
+  Biology:
+    labs: [evolution_lab, cellular_lab, neurolab_bio, biology_strict_lab]
+    lean_domain: biological
   Cosmology:
     labs: [cosmology_lambda_cdm]
     lean_domain: cosmological
@@ -153,6 +153,18 @@ fsot_20_reference:
       D_eff: 12
       observed: true
       maps_to_lean: [neural, consciousness, ai]
+    Plasma_Physics:
+      D_eff: 14
+      observed: true
+      maps_to_lean: [energy, fusion]
+    Immunology:
+      D_eff: 13
+      observed: true
+      maps_to_lean: [medical, biological]
+    Climate_Science:
+      D_eff: 16
+      observed: true
+      maps_to_lean: [energy, galactic]
 
 # Weather/geophysical domains: authority uses observed=false (negative S dispersal);
 # empirical weather lab uses observed=true D_eff=15 (stability classifier).
@@ -182,6 +194,14 @@ application_overrides:
     D_eff: 15
     observed: true
     lean_domain: energy
+  Fluid_Dynamics:
+    empirical_mode: stability
+    D_eff: 15
+    observed: true
+    lean_domain: energy
+  Quantum_Gravity:
+    empirical_mode: blackhole_observed
+    lean_domain: blackhole
 
 precision_verification:
   huge_gap_pct: 25.0

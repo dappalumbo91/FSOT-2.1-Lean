@@ -15,6 +15,7 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_YAML = ROOT / "data" / "fsot_35_domain_registry.yaml"
+ALIGNMENT_YAML = ROOT / "data" / "neurolab_ledger_alignment.yaml"
 LAB_REGISTRY = ROOT / "data" / "lab_registry.json"
 OUTPUT = ROOT / "data" / "domain_precision_report.json"
 
@@ -27,6 +28,10 @@ HUGE_GAP_PCT = 25.0
 SIGN_MISMATCH_NOTE = (
     "NeuroLab authority scalar sign disagrees with Lean rollup domain; "
     "likely observed=false/CHAOS params — weather sim uses observed=true D_eff=15."
+)
+DUAL_MODE_RESOLVED_NOTE = (
+    "Dual-mode OK: authority=dispersal vs empirical=stability; "
+    "numeric records align with empirical lean rollup."
 )
 
 
@@ -57,6 +62,13 @@ def evaluate() -> dict:
     spec = yaml.safe_load(REGISTRY_YAML.read_text(encoding="utf-8"))
     precision_cfg = spec.get("precision_verification") or {}
     huge_gap_pct = float(precision_cfg.get("huge_gap_pct", HUGE_GAP_PCT))
+
+    alignment = (
+        yaml.safe_load(ALIGNMENT_YAML.read_text(encoding="utf-8"))
+        if ALIGNMENT_YAML.exists()
+        else {}
+    )
+    application_modes = alignment.get("application_modes") or spec.get("application_overrides") or {}
 
     registry = json.loads(LAB_REGISTRY.read_text(encoding="utf-8")) if LAB_REGISTRY.exists() else {}
     mod, authority_path = load_fsot_compute()
@@ -116,6 +128,17 @@ def evaluate() -> dict:
                  or (neurolab_sign == "positive" and not lean_sign_positive))
         )
 
+        mode_cfg = application_modes.get(name) or {}
+        empirical_mode = mode_cfg.get("empirical") or mode_cfg
+        dual_mode_resolved = False
+        if (
+            sign_mismatch
+            and empirical_mode.get("sign_resolves_mismatch")
+            and merged["record_count"] > 0
+        ):
+            dual_mode_resolved = True
+            sign_mismatch = False
+
         # Property grain from SMILES sections when present
         properties: dict[str, list[float]] = {}
         for s in lab_summaries:
@@ -135,10 +158,20 @@ def evaluate() -> dict:
 
         status = _precision_status(median, merged["record_count"], sign_mismatch, huge_gap)
 
+        authority_mode = (mode_cfg.get("authority") or {}).get("mode", "dispersal")
+        empirical_mode_name = empirical_mode.get("mode", "stability")
+
         domains_out.append(
             {
                 "neurolab_domain": name,
                 "lean_domain": lean_domain,
+                "application_mode": {
+                    "authority": authority_mode,
+                    "empirical": empirical_mode_name,
+                    "dual_mode_resolved": dual_mode_resolved,
+                }
+                if mode_cfg
+                else None,
                 "domain_scalar_S": S,
                 "neurolab_scalar_sign": neurolab_sign,
                 "lean_sign_positive": lean_sign_positive,
@@ -153,7 +186,11 @@ def evaluate() -> dict:
                 "huge_gap": huge_gap,
                 "labs": lab_breakdown,
                 "top_properties": property_stats[:8],
-                "diagnostic": SIGN_MISMATCH_NOTE if sign_mismatch else None,
+                "diagnostic": (
+                    SIGN_MISMATCH_NOTE
+                    if sign_mismatch
+                    else (DUAL_MODE_RESOLVED_NOTE if dual_mode_resolved else None)
+                ),
             }
         )
 

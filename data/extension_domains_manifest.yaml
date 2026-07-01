@@ -1,0 +1,42 @@
+# FSOT extension domains #37–#39 (beyond 35-domain NeuroLab table)
+version: "1.0"
+updated: "2026-07-01"
+
+extension_domains:
+  Plasma_Physics:
+    tier: 12
+    D_eff: 14
+    delta_psi: 0.85
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [energy, fusion]
+    benchmark_script: scripts/build_plasma_physics_benchmark.py
+    benchmark_data: data/plasma_physics_benchmark.json
+    lean_module: FSOT.Formal.PlasmaPhysicsPriors
+
+  Immunology:
+    tier: 12
+    D_eff: 13
+    delta_psi: 0.45
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [medical, biological]
+    benchmark_script: scripts/build_immunology_benchmark.py
+    benchmark_data: data/immunology_benchmark.json
+    lean_module: FSOT.Formal.ImmunologyPriors
+
+  Climate_Science:
+    tier: 12
+    D_eff: 16
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, galactic]
+    fetch_script: scripts/fetch_climate_observed_benchmark.py
+    benchmark_data: data/climate_observed_benchmark.json
+    lean_module: FSOT.Formal.ClimateSciencePriors
+    note: "Lightweight Open-Meteo monthly sample; full NOAA NCEI ingest optional"
+
+verification:
+  min_records_per_domain: 5
+  max_median_error_pct: 5.0

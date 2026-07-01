@@ -20,6 +20,7 @@ FSOT_20_REPO = Path(r"C:\Users\damia\Desktop\FSOT-2.0-code")
 EXPANSION_DOC = FSOT_20_REPO / "continued domain expansion"
 PRECISION_REPORT = ROOT / "data" / "domain_precision_report.json"
 REGISTRY_35 = ROOT / "data" / "fsot_35_domain_registry.yaml"
+DRIFT_RESOLUTION = ROOT / "data" / "param_drift_resolution.yaml"
 OUTPUT_JSON = ROOT / "data" / "fsot_20_domain_crosswalk.json"
 OUTPUT_YAML = ROOT / "data" / "fsot_20_domain_crosswalk.yaml"
 
@@ -79,6 +80,12 @@ def build_crosswalk() -> dict:
         raise RuntimeError("PyYAML required")
     mod, authority_path = load_fsot_compute()
     reg35 = yaml.safe_load(REGISTRY_35.read_text(encoding="utf-8"))
+    drift_doc = (
+        yaml.safe_load(DRIFT_RESOLUTION.read_text(encoding="utf-8"))
+        if DRIFT_RESOLUTION.exists()
+        else {}
+    )
+    drift_resolutions = drift_doc.get("resolutions") or {}
     lean_overrides = reg35.get("lean_overrides", {})
     empirical = reg35.get("empirical_sources", {})
     precision = json.loads(PRECISION_REPORT.read_text(encoding="utf-8")) if PRECISION_REPORT.exists() else {}
@@ -104,7 +111,9 @@ def build_crosswalk() -> dict:
             drift.append(f"observed auth={bool(cfg.observed)} fsot20={f20['observed']}")
         if f20.get("canonical_S") is not None and abs(auth_S - f20["canonical_S"]) > 0.05:
             drift.append(f"S auth={auth_S:.6f} fsot20={f20['canonical_S']}")
-        if drift:
+        resolution = drift_resolutions.get(neuro, {})
+        drift_resolved = bool(resolution.get("canonical") == "authority" and drift)
+        if drift and not drift_resolved:
             drift_count += 1
         rows.append(
             {
@@ -121,13 +130,17 @@ def build_crosswalk() -> dict:
                 },
                 "fsot20_canonical": f20,
                 "param_drift": drift,
+                "drift_resolved": drift_resolved,
+                "canonical_source": resolution.get("canonical", "authority"),
+                "drift_rationale": resolution.get("rationale"),
                 "precision_status": prec.get("precision_status"),
                 "median_error_pct": prec.get("median_error_pct"),
                 "sign_mismatch": prec.get("sign_mismatch"),
             }
         )
 
-    extra_domains = {
+    ext_manifest = ROOT / "data" / "extension_domains_manifest.yaml"
+    extra_domains: dict = {
         "Intelligence_Compression": {
             "source": str(FSOT_20_REPO / "IntelligenceCompressor"),
             "status": "fsot20_extension_domain_36",
@@ -136,6 +149,20 @@ def build_crosswalk() -> dict:
             "note": "Attention-weighted observer; not in 35-domain NeuroLab table yet",
         }
     }
+    if ext_manifest.exists():
+        ext_spec = yaml.safe_load(ext_manifest.read_text(encoding="utf-8"))
+        for name, cfg in (ext_spec.get("extension_domains") or {}).items():
+            extra_domains[name] = {
+                "status": "fsot21_extension_domain",
+                "params": {
+                    "D_eff": cfg.get("D_eff"),
+                    "observed": cfg.get("observed"),
+                    "delta_psi": cfg.get("delta_psi"),
+                    "recent_hits": cfg.get("recent_hits"),
+                },
+                "maps_to_lean": cfg.get("maps_to_lean"),
+                "benchmark_data": cfg.get("benchmark_data"),
+            }
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -145,6 +172,8 @@ def build_crosswalk() -> dict:
         "domain_count_fsot20_doc": len(fsot20),
         "domain_count_matched_neurolab": len(rows),
         "param_drift_count": drift_count,
+        "param_drift_resolved_count": sum(1 for r in rows if r.get("drift_resolved")),
+        "drift_resolution_path": str(DRIFT_RESOLUTION) if DRIFT_RESOLUTION.exists() else None,
         "extra_domains": extra_domains,
         "domains": rows,
     }
@@ -162,7 +191,8 @@ def main() -> int:
     print(f"Wrote {args.json}")
     print(f"Wrote {args.yaml}")
     print(f"  matched: {doc['domain_count_matched_neurolab']}/{doc['domain_count_fsot20_doc']}")
-    print(f"  param drift: {doc['param_drift_count']}")
+    print(f"  param drift (unresolved): {doc['param_drift_count']}")
+    print(f"  param drift resolved: {doc.get('param_drift_resolved_count', 0)}")
     return 0
 
 

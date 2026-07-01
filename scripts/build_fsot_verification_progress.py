@@ -31,6 +31,12 @@ def build_progress() -> dict:
     allen_verify = _load_json(ROOT / "data" / "allen_sdk_verification.json")
     domain_cov = _load_json(ROOT / "data" / "domain_coverage_report.json")
     domain_prec = _load_json(ROOT / "data" / "domain_precision_report.json")
+    fic_report = _load_json(ROOT / "data" / "fic_sensitivity_report.json")
+    bio_report = _load_json(ROOT / "data" / "biology_numeric_report.json")
+    bio_strict = _load_json(ROOT / "data" / "biology_strict_empirical.json")
+    plasma_bench = _load_json(ROOT / "data" / "plasma_physics_benchmark.json")
+    immuno_bench = _load_json(ROOT / "data" / "immunology_benchmark.json")
+    climate_bench = _load_json(ROOT / "data" / "climate_observed_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -114,6 +120,63 @@ def build_progress() -> dict:
             },
             "artifacts": ["FSOT.Formal.DomainPrecisionPriors", "data/domain_precision_report.json"],
         },
+        {
+            "tier": 11,
+            "name": "Intelligence_Compression (FIC sweep + fertile window)",
+            "status": "complete"
+            if fic_report.get("sweep_row_count", 0) >= 100
+            and fic_report.get("fertile_count", 0) >= 5
+            else "pending",
+            "metrics": {
+                "sweep_rows": fic_report.get("sweep_row_count"),
+                "fertile_rows": fic_report.get("fertile_count"),
+                "optimal_S_final": fic_report.get("optimal_S_final"),
+                "best_intelligence_score": fic_report.get("best_intelligence_score"),
+            },
+            "artifacts": [
+                "FSOT.Formal.IntelligenceCompressionPriors",
+                "data/fic_sensitivity_sweep.csv",
+                "data/intelligence_compression_manifest.yaml",
+            ],
+        },
+        {
+            "tier": "11b",
+            "name": "Biology numeric depth (Soul 234k + DB bio subset)",
+            "status": "complete"
+            if bio_report.get("soul_manifest", {}).get("records_processed", 0) >= 200000
+            else "pending",
+            "metrics": {
+                "soul_records": bio_report.get("soul_manifest", {}).get("records_processed"),
+                "biology_corpus_estimated": bio_report.get("soul_biology_sample", {}).get(
+                    "biology_records_estimated"
+                ),
+                "db_bio_numeric": bio_report.get("unified_db_biology", {}).get(
+                    "verification_numeric"
+                ),
+            },
+            "artifacts": ["data/biology_numeric_report.json", "data/cellular_manifest.yaml"],
+        },
+        {
+            "tier": 12,
+            "name": "Extension domains #37-39 (Plasma, Immunology, Climate)",
+            "status": "complete"
+            if plasma_bench.get("record_count", 0) >= 5
+            and immuno_bench.get("record_count", 0) >= 5
+            and climate_bench.get("month_count", 0) >= 5
+            else "pending",
+            "metrics": {
+                "plasma_records": plasma_bench.get("record_count"),
+                "immunology_records": immuno_bench.get("record_count"),
+                "climate_months": climate_bench.get("month_count"),
+                "biology_strict_records": bio_strict.get("record_count"),
+            },
+            "artifacts": [
+                "FSOT.Formal.PlasmaPhysicsPriors",
+                "FSOT.Formal.ImmunologyPriors",
+                "FSOT.Formal.ClimateSciencePriors",
+                "data/extension_domains_manifest.yaml",
+            ],
+        },
     ]
 
     next_steps = [
@@ -140,7 +203,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 10 numeric precision certified; sign-mismatch param fixes next",
+        "current_position": "Tier 12 extension domains (Plasma, Immunology, Climate) + biology strict-empirical bridge",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

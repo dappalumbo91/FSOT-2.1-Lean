@@ -524,10 +524,12 @@ def main() -> int:
             ("ingest_cellular_lab.py", "gen_cellular_priors_lean.py", "CellularPriors.lean generation failed", "cellular lab ingest failed"),
             ("ingest_blackhole_thesis.py", "gen_blackhole_thesis_lean.py", "BlackHoleThesisPriors.lean generation failed", "blackhole thesis ingest failed"),
             ("ingest_experiment_synthesis.py", "gen_experiment_synthesis_lean.py", "ExperimentSynthesisPriors.lean generation failed", "experiment synthesis ingest failed"),
+            ("run_fic_sensitivity_sweep.py", None, None, "FIC sensitivity sweep failed"),
+            ("ingest_intelligence_compression.py", "gen_intelligence_compression_lean.py", "IntelligenceCompressionPriors.lean generation failed", "intelligence compression ingest failed"),
         ]
         for ingest_name, gen_name, gen_fail, ingest_fail in tier5_ingests:
             ingest_script = ROOT / "scripts" / ingest_name
-            gen_script = ROOT / "scripts" / gen_name
+            gen_script = ROOT / "scripts" / gen_name if gen_name else None
             if ingest_script.exists() and proc.returncode == 0:
                 proc_ing = subprocess.run(
                     [sys.executable, str(ingest_script)],
@@ -539,7 +541,7 @@ def main() -> int:
                 print(proc_ing.stdout.strip() or proc_ing.stderr.strip())
                 if proc_ing.returncode != 0:
                     issues.append(ingest_fail)
-                elif gen_script.exists():
+                elif gen_script and gen_script.exists():
                     proc_gen = subprocess.run(
                         [sys.executable, str(gen_script)],
                         cwd=ROOT,
@@ -574,6 +576,7 @@ def main() -> int:
             ("verify_cellular_lab.py", "Cellular lab verification failed"),
             ("verify_blackhole_thesis.py", "BlackHole thesis verification failed"),
             ("verify_experiment_synthesis.py", "Experiment synthesis verification failed"),
+            ("verify_intelligence_compression.py", "Intelligence Compression verification failed"),
         ):
             verify_script = ROOT / "scripts" / verify_name
             if verify_script.exists():
@@ -680,6 +683,75 @@ def main() -> int:
                 print(proc_pg.stdout.strip() or proc_pg.stderr.strip())
                 if proc_pg.returncode != 0:
                     issues.append("DomainPrecisionPriors.lean generation failed")
+        for bench_script in (
+            "build_biology_strict_empirical.py",
+            "build_plasma_physics_benchmark.py",
+            "build_immunology_benchmark.py",
+            "fetch_climate_observed_benchmark.py",
+        ):
+            script = ROOT / "scripts" / bench_script
+            if script.exists():
+                proc_b = subprocess.run(
+                    [sys.executable, str(script)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_b.stdout.strip() or proc_b.stderr.strip())
+                if proc_b.returncode != 0:
+                    issues.append(f"{bench_script} failed")
+
+        ext_gen = ROOT / "scripts" / "gen_extension_domains_lean.py"
+        if ext_gen.exists():
+            proc_eg = subprocess.run(
+                [sys.executable, str(ext_gen)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_eg.stdout.strip() or proc_eg.stderr.strip())
+            if proc_eg.returncode != 0:
+                issues.append("extension domains Lean generation failed")
+
+        ext_verify = ROOT / "scripts" / "verify_extension_domains.py"
+        if ext_verify.exists():
+            proc_ev = subprocess.run(
+                [sys.executable, str(ext_verify)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_ev.stdout.strip())
+            if proc_ev.returncode != 0:
+                issues.append("extension domains verification failed")
+
+        bio_eval = ROOT / "scripts" / "run_biology_numeric_eval.py"
+        if bio_eval.exists():
+            proc_bio = subprocess.run(
+                [sys.executable, str(bio_eval)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_bio.stdout.strip() or proc_bio.stderr.strip())
+            if proc_bio.returncode != 0:
+                issues.append("biology numeric depth eval failed")
+
+        numeric_queue = ROOT / "scripts" / "run_numeric_eval_queue.py"
+        if numeric_queue.exists():
+            proc_nq = subprocess.run(
+                [sys.executable, str(numeric_queue), "--biology-subset", "--dry-run"],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_nq.stdout.strip() or proc_nq.stderr.strip())
+
         precision_verify = ROOT / "scripts" / "verify_domain_precision.py"
         if precision_verify.exists():
             proc_pv = subprocess.run(

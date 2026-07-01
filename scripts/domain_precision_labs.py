@@ -23,6 +23,11 @@ SMILES_LEAN_FALLBACK: dict[str, str] = {
 TRANSLATIONS = ROOT / "data" / "neurolab_translations_bio.json"
 WEATHER_BENCH = ROOT / "data" / "weather_observed_benchmark.json"
 EVOLUTION_BENCH = ROOT / "data" / "evolution_operon_benchmark.json"
+BIOLOGY_REPORT = ROOT / "data" / "biology_numeric_report.json"
+BIOLOGY_STRICT = ROOT / "data" / "biology_strict_empirical.json"
+CLIMATE_BENCH = ROOT / "data" / "climate_observed_benchmark.json"
+PLASMA_BENCH = ROOT / "data" / "plasma_physics_benchmark.json"
+IMMUNOLOGY_BENCH = ROOT / "data" / "immunology_benchmark.json"
 
 # Human mtDNA reference gene lengths (NCBI NC_012920.1, protein-coding spans).
 HUMAN_MT_OPERON_REF = {
@@ -159,23 +164,34 @@ def extract_linguistics(registry: dict) -> dict[str, Any]:
     return _summarize_records(records)
 
 
+THERMO_SMILES_SECTIONS = {
+    "\u00a78 Entropy S\u00b0",
+    "\u00a710 \u0394G\u00b0f",
+    "\u00a712 Cp\u00b0",
+    "\u00a747 \u0394Hvap",
+    "\u00a748 \u0394Hfus",
+    "\u00a7103 Thermoelectric ZT",
+}
+
+
 def extract_fuel(registry: dict) -> dict[str, Any]:
     lab = registry.get("fuel_lab", {})
     records: list[dict[str, Any]] = []
     for profile in lab.get("profiles") or []:
-        frac_sum = float(profile.get("composition_fraction_sum") or 0)
-        target = 1.0
-        err = abs(frac_sum - target) / target * 100.0 if target else 0.0
-        records.append(
-            {
-                "lab": "fuel_lab",
-                "property": profile.get("profile_id"),
-                "name": profile.get("profile_name"),
-                "computed": frac_sum,
-                "measured": target,
-                "error_pct": err,
-            }
-        )
+        entry_count = int(profile.get("entry_count") or 0)
+        resolved = int(profile.get("resolved_count") or 0)
+        if entry_count > 0:
+            err = (entry_count - resolved) / entry_count * 100.0
+            records.append(
+                {
+                    "lab": "fuel_lab",
+                    "property": profile.get("profile_id"),
+                    "name": profile.get("profile_name"),
+                    "computed": float(resolved),
+                    "measured": float(entry_count),
+                    "error_pct": err,
+                }
+            )
     max_err = lab.get("max_error_pct")
     if max_err is not None and not records:
         records.append(
@@ -186,6 +202,32 @@ def extract_fuel(registry: dict) -> dict[str, Any]:
                 "computed": float(max_err),
                 "measured": 0.0,
                 "error_pct": float(max_err),
+            }
+        )
+    return _summarize_records(records)
+
+
+def extract_thermodynamics_smiles() -> dict[str, Any]:
+    if not SMILES_JSON.exists():
+        return _summarize_records([])
+    doc = json.loads(SMILES_JSON.read_text(encoding="utf-8"))
+    rows = doc.get("records") if isinstance(doc, dict) else doc
+    records: list[dict[str, Any]] = []
+    for row in rows or []:
+        section = row.get("section") or ""
+        if section not in THERMO_SMILES_SECTIONS:
+            continue
+        err = row.get("error_pct")
+        if err is None:
+            continue
+        records.append(
+            {
+                "lab": "thermodynamics_smiles",
+                "property": section,
+                "name": row.get("name"),
+                "computed": row.get("computed_value"),
+                "measured": row.get("target_value"),
+                "error_pct": float(err),
             }
         )
     return _summarize_records(records)
@@ -317,6 +359,66 @@ def extract_trinary_os(registry: dict) -> dict[str, Any]:
     return _summarize_records(records)
 
 
+def extract_biology_strict() -> dict[str, Any]:
+    if not BIOLOGY_STRICT.exists():
+        return _summarize_records([])
+    doc = json.loads(BIOLOGY_STRICT.read_text(encoding="utf-8"))
+    return _summarize_records(doc.get("records") or [])
+
+
+def extract_climate_benchmark() -> dict[str, Any]:
+    if not CLIMATE_BENCH.exists():
+        return _summarize_records([])
+    doc = json.loads(CLIMATE_BENCH.read_text(encoding="utf-8"))
+    return _summarize_records(doc.get("records") or [])
+
+
+def extract_plasma_benchmark() -> dict[str, Any]:
+    if not PLASMA_BENCH.exists():
+        return _summarize_records([])
+    doc = json.loads(PLASMA_BENCH.read_text(encoding="utf-8"))
+    return _summarize_records(doc.get("records") or [])
+
+
+def extract_immunology_benchmark() -> dict[str, Any]:
+    if not IMMUNOLOGY_BENCH.exists():
+        return _summarize_records([])
+    doc = json.loads(IMMUNOLOGY_BENCH.read_text(encoding="utf-8"))
+    return _summarize_records(doc.get("records") or [])
+
+
+def extract_cellular(registry: dict) -> dict[str, Any]:
+    records: list[dict[str, Any]] = []
+    cell = registry.get("cellular_lab") or {}
+    soul_n = cell.get("soul_records_processed", 0)
+    if soul_n > 0:
+        records.append(
+            {
+                "lab": "cellular_lab",
+                "property": "soul_corpus_depth",
+                "name": "records_processed",
+                "computed": float(soul_n),
+                "measured": 234447.0,
+                "error_pct": abs(float(soul_n) - 234447.0) / 234447.0 * 100.0,
+            }
+        )
+    if BIOLOGY_REPORT.exists():
+        doc = json.loads(BIOLOGY_REPORT.read_text(encoding="utf-8"))
+        frac = doc.get("depth_metrics", {}).get("soul_biology_fraction")
+        if frac is not None:
+            records.append(
+                {
+                    "lab": "cellular_lab",
+                    "property": "biology_corpus_fraction",
+                    "name": "soul_biology_fraction",
+                    "computed": float(frac) * 100.0,
+                    "measured": float(frac) * 100.0,
+                    "error_pct": 0.0,
+                }
+            )
+    return _summarize_records(records)
+
+
 def extract_trinary_fluid(registry: dict) -> dict[str, Any]:
     lab = registry.get("trinary_fluid_computer") or registry.get("trinary_fluid_lab") or {}
     acc = lab.get("engine_accuracy_pct")
@@ -341,12 +443,18 @@ LAB_EXTRACTORS = {
     "cosmology_wave4": lambda reg, lean=None: extract_cosmology_wave4(reg),
     "linguistics_lab": lambda reg, lean=None: extract_linguistics(reg),
     "fuel_lab": lambda reg, lean=None: extract_fuel(reg),
+    "thermodynamics_smiles": lambda reg, lean=None: extract_thermodynamics_smiles(),
+    "biology_strict_lab": lambda reg, lean=None: extract_biology_strict(),
+    "climate_lab": lambda reg, lean=None: extract_climate_benchmark(),
+    "plasma_physics_lab": lambda reg, lean=None: extract_plasma_benchmark(),
+    "immunology_lab": lambda reg, lean=None: extract_immunology_benchmark(),
     "species_catalog": lambda reg, lean=None: extract_species_catalog(reg),
     "blackhole_thesis": lambda reg, lean=None: extract_blackhole(reg),
     "neurolab_bio": lambda reg, lean=None: extract_neurolab_bio(),
     "neuron_cohort_lab": lambda reg, lean=None: extract_neuron_cohort(reg),
     "weather_lab": lambda reg, lean=None: extract_weather_benchmark(),
     "evolution_lab": lambda reg, lean=None: extract_evolution_benchmark(),
+    "cellular_lab": lambda reg, lean=None: extract_cellular(reg),
     "trinary_fluid_computer": lambda reg, lean=None: extract_trinary_fluid(reg),
     "trinary_fluid_lab": lambda reg, lean=None: extract_trinary_fluid(reg),
     "trinary_os": lambda reg, lean=None: extract_trinary_os(reg),

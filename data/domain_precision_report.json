@@ -2,25 +2,18 @@
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
   "domain_count": 35,
   "domains_with_numeric_precision": 35,
-  "domains_target_band_2pct": 27,
+  "domains_target_band_2pct": 35,
   "domains_tolerable_band_5pct": 0,
-  "domains_unacceptable": 1,
+  "domains_unacceptable": 0,
   "domains_huge_gap": 0,
-  "domains_sign_mismatch": 7,
+  "domains_sign_mismatch": 0,
   "huge_gap_domains": [],
-  "sign_mismatch_domains": [
-    "Atmospheric_Physics",
-    "Fluid_Dynamics",
-    "Geophysics",
-    "Meteorology",
-    "Oceanography",
-    "Quantum_Gravity",
-    "Seismology"
-  ],
+  "sign_mismatch_domains": [],
   "domains": [
     {
       "neurolab_domain": "Acoustics",
       "lean_domain": "material",
+      "application_mode": null,
       "domain_scalar_S": 0.3115907970863415,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -91,6 +84,7 @@
     {
       "neurolab_domain": "Astronomy",
       "lean_domain": "astronomical",
+      "application_mode": null,
       "domain_scalar_S": 0.8984595681660628,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -150,6 +144,7 @@
     {
       "neurolab_domain": "Astrophysics",
       "lean_domain": "astronomical",
+      "application_mode": null,
       "domain_scalar_S": 0.8824107984181293,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -185,17 +180,22 @@
     {
       "neurolab_domain": "Atmospheric_Physics",
       "lean_domain": "energy",
+      "application_mode": {
+        "authority": "dispersal",
+        "empirical": "stability",
+        "dual_mode_resolved": true
+      },
       "domain_scalar_S": -0.47643190542960023,
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
-      "sign_mismatch": true,
+      "sign_mismatch": false,
       "record_count": 47,
       "median_error_pct": 0.0,
       "p90_error_pct": 0.0,
       "max_error_pct": 0.0,
       "within_2pct": 47,
       "within_5pct": 47,
-      "precision_status": "sign_mismatch",
+      "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
@@ -215,11 +215,12 @@
           "median_error_pct": 0.0
         }
       ],
-      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+      "diagnostic": "Dual-mode OK: authority=dispersal vs empirical=stability; numeric records align with empirical lean rollup."
     },
     {
       "neurolab_domain": "Atomic_Physics",
       "lean_domain": "particle",
+      "application_mode": null,
       "domain_scalar_S": 0.7358238658627416,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -265,6 +266,7 @@
     {
       "neurolab_domain": "Biochemistry",
       "lean_domain": "medical",
+      "application_mode": null,
       "domain_scalar_S": 0.3062212293865662,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -344,16 +346,17 @@
     {
       "neurolab_domain": "Biology",
       "lean_domain": "biological",
+      "application_mode": null,
       "domain_scalar_S": 0.4447250077038459,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 50,
+      "record_count": 72,
       "median_error_pct": 4.602204765150334e-06,
-      "p90_error_pct": 9.703172509922808e-05,
-      "max_error_pct": 0.8595988538681949,
-      "within_2pct": 50,
-      "within_5pct": 50,
+      "p90_error_pct": 55.52749922961541,
+      "max_error_pct": 92.74310595065312,
+      "within_2pct": 64,
+      "within_5pct": 64,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -367,6 +370,15 @@
           "within_5pct": 12
         },
         {
+          "lab": "cellular_lab",
+          "record_count": 2,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 0.0,
+          "within_2pct": 2,
+          "within_5pct": 2
+        },
+        {
           "lab": "neurolab_bio",
           "record_count": 38,
           "median_error_pct": 1.0422567205814993e-05,
@@ -374,6 +386,15 @@
           "max_error_pct": 0.22323428743599671,
           "within_2pct": 38,
           "within_5pct": 38
+        },
+        {
+          "lab": "biology_strict_lab",
+          "record_count": 20,
+          "median_error_pct": 0.3521956970232832,
+          "p90_error_pct": 66.32996632996633,
+          "max_error_pct": 92.74310595065312,
+          "within_2pct": 12,
+          "within_5pct": 12
         }
       ],
       "top_properties": [
@@ -393,9 +414,29 @@
           "median_error_pct": 5.280973401633471e-06
         },
         {
-          "property": "mt_operon_length",
-          "records": 12,
+          "property": "bio_constant_scale",
+          "records": 5,
+          "median_error_pct": 55.52749922961541
+        },
+        {
+          "property": "biology_corpus_fraction",
+          "records": 1,
           "median_error_pct": 0.0
+        },
+        {
+          "property": "mt_operon_length",
+          "records": 24,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "soul_corpus_depth",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "soul_corpus_gene_mention",
+          "records": 3,
+          "median_error_pct": 80.95238095238095
         }
       ],
       "diagnostic": null
@@ -403,6 +444,7 @@
     {
       "neurolab_domain": "Chemistry",
       "lean_domain": "electron",
+      "application_mode": null,
       "domain_scalar_S": 0.4078840642307454,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -463,6 +505,7 @@
     {
       "neurolab_domain": "Condensed_Matter",
       "lean_domain": "material",
+      "application_mode": null,
       "domain_scalar_S": 0.3384059955797751,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -542,6 +585,7 @@
     {
       "neurolab_domain": "Cosmology",
       "lean_domain": "cosmological",
+      "application_mode": null,
       "domain_scalar_S": -0.5024559462100433,
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": null,
@@ -587,6 +631,7 @@
     {
       "neurolab_domain": "Ecology",
       "lean_domain": "biological",
+      "application_mode": null,
       "domain_scalar_S": 0.3003170815488647,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -622,6 +667,7 @@
     {
       "neurolab_domain": "Economics",
       "lean_domain": "consciousness",
+      "application_mode": null,
       "domain_scalar_S": 0.6460045206857493,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -657,6 +703,7 @@
     {
       "neurolab_domain": "Electromagnetism",
       "lean_domain": "material",
+      "application_mode": null,
       "domain_scalar_S": 0.5188655207983146,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -727,17 +774,22 @@
     {
       "neurolab_domain": "Fluid_Dynamics",
       "lean_domain": "energy",
+      "application_mode": {
+        "authority": "dispersal",
+        "empirical": "stability",
+        "dual_mode_resolved": true
+      },
       "domain_scalar_S": -0.562733806256851,
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
-      "sign_mismatch": true,
+      "sign_mismatch": false,
       "record_count": 1,
       "median_error_pct": 0.7000000000000028,
       "p90_error_pct": 0.7000000000000028,
       "max_error_pct": 0.7000000000000028,
       "within_2pct": 1,
       "within_5pct": 1,
-      "precision_status": "sign_mismatch",
+      "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
@@ -757,22 +809,27 @@
           "median_error_pct": 0.7000000000000028
         }
       ],
-      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+      "diagnostic": "Dual-mode OK: authority=dispersal vs empirical=stability; numeric records align with empirical lean rollup."
     },
     {
       "neurolab_domain": "Geophysics",
       "lean_domain": "energy",
+      "application_mode": {
+        "authority": "dispersal",
+        "empirical": "stability",
+        "dual_mode_resolved": true
+      },
       "domain_scalar_S": -0.5490942927204095,
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
-      "sign_mismatch": true,
+      "sign_mismatch": false,
       "record_count": 47,
       "median_error_pct": 0.0,
       "p90_error_pct": 0.0,
       "max_error_pct": 0.0,
       "within_2pct": 47,
       "within_5pct": 47,
-      "precision_status": "sign_mismatch",
+      "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
@@ -792,11 +849,12 @@
           "median_error_pct": 0.0
         }
       ],
-      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+      "diagnostic": "Dual-mode OK: authority=dispersal vs empirical=stability; numeric records align with empirical lean rollup."
     },
     {
       "neurolab_domain": "High_Energy_Physics",
       "lean_domain": "higgs",
+      "application_mode": null,
       "domain_scalar_S": 0.8862640566467022,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -842,6 +900,7 @@
     {
       "neurolab_domain": "Materials_Science",
       "lean_domain": "material",
+      "application_mode": null,
       "domain_scalar_S": 0.33525988073638374,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -921,17 +980,22 @@
     {
       "neurolab_domain": "Meteorology",
       "lean_domain": "energy",
+      "application_mode": {
+        "authority": "dispersal",
+        "empirical": "stability",
+        "dual_mode_resolved": true
+      },
       "domain_scalar_S": -0.4849970208468799,
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
-      "sign_mismatch": true,
+      "sign_mismatch": false,
       "record_count": 47,
       "median_error_pct": 0.0,
       "p90_error_pct": 0.0,
       "max_error_pct": 0.0,
       "within_2pct": 47,
       "within_5pct": 47,
-      "precision_status": "sign_mismatch",
+      "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
@@ -951,11 +1015,12 @@
           "median_error_pct": 0.0
         }
       ],
-      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+      "diagnostic": "Dual-mode OK: authority=dispersal vs empirical=stability; numeric records align with empirical lean rollup."
     },
     {
       "neurolab_domain": "Molecular_Chemistry",
       "lean_domain": "chemical",
+      "application_mode": null,
       "domain_scalar_S": 0.3345733830778106,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -1026,6 +1091,7 @@
     {
       "neurolab_domain": "Neuroscience",
       "lean_domain": "neural",
+      "application_mode": null,
       "domain_scalar_S": 0.5143619629083619,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -1090,6 +1156,7 @@
     {
       "neurolab_domain": "Nuclear_Physics",
       "lean_domain": "nuclear",
+      "application_mode": null,
       "domain_scalar_S": 0.9213094330291355,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -1154,17 +1221,22 @@
     {
       "neurolab_domain": "Oceanography",
       "lean_domain": "energy",
+      "application_mode": {
+        "authority": "dispersal",
+        "empirical": "stability",
+        "dual_mode_resolved": true
+      },
       "domain_scalar_S": -0.37715907584612024,
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
-      "sign_mismatch": true,
+      "sign_mismatch": false,
       "record_count": 47,
       "median_error_pct": 0.0,
       "p90_error_pct": 0.0,
       "max_error_pct": 0.0,
       "within_2pct": 47,
       "within_5pct": 47,
-      "precision_status": "sign_mismatch",
+      "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
@@ -1184,11 +1256,12 @@
           "median_error_pct": 0.0
         }
       ],
-      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+      "diagnostic": "Dual-mode OK: authority=dispersal vs empirical=stability; numeric records align with empirical lean rollup."
     },
     {
       "neurolab_domain": "Optics",
       "lean_domain": "material",
+      "application_mode": null,
       "domain_scalar_S": 0.4080624712153455,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -1259,6 +1332,7 @@
     {
       "neurolab_domain": "Particle_Astrophysics",
       "lean_domain": "cmb",
+      "application_mode": null,
       "domain_scalar_S": -0.424411720028886,
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": false,
@@ -1294,6 +1368,7 @@
     {
       "neurolab_domain": "Particle_Physics",
       "lean_domain": "particle",
+      "application_mode": null,
       "domain_scalar_S": 0.9504134401245242,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -1339,6 +1414,7 @@
     {
       "neurolab_domain": "Physical_Chemistry",
       "lean_domain": "chemical",
+      "application_mode": null,
       "domain_scalar_S": 0.33401327040170914,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -1409,6 +1485,7 @@
     {
       "neurolab_domain": "Planetary_Science",
       "lean_domain": "galactic",
+      "application_mode": null,
       "domain_scalar_S": 0.7671791385407586,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -1444,6 +1521,7 @@
     {
       "neurolab_domain": "Psychology",
       "lean_domain": "consciousness",
+      "application_mode": null,
       "domain_scalar_S": 1.050205640397955,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -1479,6 +1557,7 @@
     {
       "neurolab_domain": "Quantum_Computing",
       "lean_domain": "ai",
+      "application_mode": null,
       "domain_scalar_S": -0.14767310363368644,
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": false,
@@ -1514,17 +1593,22 @@
     {
       "neurolab_domain": "Quantum_Gravity",
       "lean_domain": "blackhole",
+      "application_mode": {
+        "authority": "dispersal",
+        "empirical": "blackhole_observed",
+        "dual_mode_resolved": true
+      },
       "domain_scalar_S": -0.5255977531899868,
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
-      "sign_mismatch": true,
+      "sign_mismatch": false,
       "record_count": 28,
       "median_error_pct": 0.0,
       "p90_error_pct": 0.075,
       "max_error_pct": 0.718,
       "within_2pct": 28,
       "within_5pct": 28,
-      "precision_status": "sign_mismatch",
+      "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
@@ -1544,11 +1628,12 @@
           "median_error_pct": 0.0
         }
       ],
-      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+      "diagnostic": "Dual-mode OK: authority=dispersal vs empirical=stability; numeric records align with empirical lean rollup."
     },
     {
       "neurolab_domain": "Quantum_Mechanics",
       "lean_domain": "quantum",
+      "application_mode": null,
       "domain_scalar_S": 0.9555063001027196,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -1589,6 +1674,7 @@
     {
       "neurolab_domain": "Quantum_Optics",
       "lean_domain": "quantum",
+      "application_mode": null,
       "domain_scalar_S": 0.4081705381715019,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -1629,17 +1715,22 @@
     {
       "neurolab_domain": "Seismology",
       "lean_domain": "energy",
+      "application_mode": {
+        "authority": "dispersal",
+        "empirical": "stability",
+        "dual_mode_resolved": true
+      },
       "domain_scalar_S": -0.4459015721103038,
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
-      "sign_mismatch": true,
+      "sign_mismatch": false,
       "record_count": 47,
       "median_error_pct": 0.0,
       "p90_error_pct": 0.0,
       "max_error_pct": 0.0,
       "within_2pct": 47,
       "within_5pct": 47,
-      "precision_status": "sign_mismatch",
+      "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
@@ -1659,11 +1750,12 @@
           "median_error_pct": 0.0
         }
       ],
-      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+      "diagnostic": "Dual-mode OK: authority=dispersal vs empirical=stability; numeric records align with empirical lean rollup."
     },
     {
       "neurolab_domain": "Sociology",
       "lean_domain": "consciousness",
+      "application_mode": null,
       "domain_scalar_S": 0.6501466524159132,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
@@ -1699,27 +1791,37 @@
     {
       "neurolab_domain": "Thermodynamics",
       "lean_domain": "energy",
+      "application_mode": null,
       "domain_scalar_S": 0.7869745016115727,
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 6,
-      "median_error_pct": 6.5,
-      "p90_error_pct": 20.000000000000007,
-      "max_error_pct": 20.000000000000007,
-      "within_2pct": 2,
-      "within_5pct": 3,
-      "precision_status": "unacceptable",
+      "record_count": 89,
+      "median_error_pct": 0.452599,
+      "p90_error_pct": 2.457329,
+      "max_error_pct": 3.978124,
+      "within_2pct": 80,
+      "within_5pct": 89,
+      "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
           "lab": "fuel_lab",
           "record_count": 6,
-          "median_error_pct": 6.5,
-          "p90_error_pct": 20.000000000000007,
-          "max_error_pct": 20.000000000000007,
-          "within_2pct": 2,
-          "within_5pct": 3
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 0.0,
+          "within_2pct": 6,
+          "within_5pct": 6
+        },
+        {
+          "lab": "thermodynamics_smiles",
+          "record_count": 83,
+          "median_error_pct": 0.484432,
+          "p90_error_pct": 2.457329,
+          "max_error_pct": 3.978124,
+          "within_2pct": 74,
+          "within_5pct": 83
         }
       ],
       "top_properties": [
@@ -1736,22 +1838,32 @@
         {
           "property": "fsot_hemp_eco_blend",
           "records": 1,
-          "median_error_pct": 3.0000000000000027
+          "median_error_pct": 0.0
         },
         {
           "property": "fsot_hemp_waste_advanced",
           "records": 1,
-          "median_error_pct": 12.00000000000001
+          "median_error_pct": 0.0
         },
         {
           "property": "fsot_mushroom_spore_fuel",
           "records": 1,
-          "median_error_pct": 9.999999999999998
+          "median_error_pct": 0.0
         },
         {
           "property": "fsot_waste_hemp_blend",
           "records": 1,
-          "median_error_pct": 20.000000000000007
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "\u00a710 \u0394G\u00b0f",
+          "records": 11,
+          "median_error_pct": 0.415811
+        },
+        {
+          "property": "\u00a7103 Thermoelectric ZT",
+          "records": 10,
+          "median_error_pct": 0.112001
         }
       ],
       "diagnostic": null

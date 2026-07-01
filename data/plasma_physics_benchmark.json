@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-07-01T05:39:41.330083+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "plasma_scalar_S": 0.7869745016115727,
+  "maps_to_lean": [
+    "energy",
+    "fusion"
+  ],
+  "D_eff": 14,
+  "record_count": 6,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "ionosphere",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 1e-06,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "solar_wind",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.05,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "tokamak_H_mode",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.03,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "tokamak_high_beta",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "beta": 0.15,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "laboratory_Q_machine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.001,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "magnetosphere",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.08,
+      "S": 0.786975
+    }
+  ]
+}

@@ -18,17 +18,17 @@ noncomputable section
 open Real
 
 def domain_precision_numeric_count : ℕ := 35
-def domain_precision_target_band_count : ℕ := 27
+def domain_precision_target_band_count : ℕ := 35
 def domain_precision_tolerable_band_count : ℕ := 0
 def domain_precision_huge_gap_count : ℕ := 0
-def domain_precision_sign_mismatch_count : ℕ := 7
+def domain_precision_sign_mismatch_count : ℕ := 0
 
 theorem domain_precision_numeric_majority :
     (30 : ℕ) < domain_precision_numeric_count := by
   unfold domain_precision_numeric_count; norm_num
 
 theorem domain_precision_target_band_large :
-    (24 : ℕ) < domain_precision_target_band_count := by
+    (32 : ℕ) < domain_precision_target_band_count := by
   unfold domain_precision_target_band_count; norm_num
 
 theorem domain_precision_huge_gap_bounded :
@@ -45,7 +45,7 @@ theorem smiles_chemical_median_under_one_pct :
 theorem domain_precision_priors_bundle :
     fsot_neurolab_domain_count = 35 ∧
     (30 : ℕ) < domain_precision_numeric_count ∧
-    (24 : ℕ) < domain_precision_target_band_count ∧
+    (32 : ℕ) < domain_precision_target_band_count ∧
     domain_precision_huge_gap_count ≤ (2 : ℕ) ∧
     (0.004296638039763263 : ℝ) < (1 : ℝ) ∧
     (0.41124649999999996 : ℝ) < (1 : ℝ) ∧

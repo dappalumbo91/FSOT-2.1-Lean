@@ -1,0 +1,66 @@
+# Canonical source per domain when FSOT-2.0 expansion doc disagrees with NeuroLab authority.
+# Lean labs and Tier-9/10 verification use fsot_compute.py (authority) unless noted.
+version: "1.0"
+updated: "2026-07-01"
+canonical_source: authority
+authority_path: "C:/Users/damia/Desktop/FSOT document update/fsot_compute.py"
+superseded_reference: "C:/Users/damia/Desktop/FSOT-2.0-code/continued domain expansion"
+note: >
+  FSOT-2.0 continued-domain-expansion captured an earlier parameter sweep.
+  NeuroLab authority table is canonical for Lean ledger alignment and empirical labs.
+
+resolutions:
+  Atomic_Physics:
+    canonical: authority
+    drift_fields: [S]
+    rationale: "Lean particle rollup aligned to authority D_eff=7 observed=true"
+
+  Biochemistry:
+    canonical: authority
+    drift_fields: [hits, observed, S]
+    rationale: "Medical rollup uses authority hits=1 observed=true"
+
+  Chemistry:
+    canonical: authority
+    drift_fields: [S]
+    rationale: "Electron rollup; authority delta_psi=0.6"
+
+  High_Energy_Physics:
+    canonical: authority
+    drift_fields: [D_eff, S]
+    rationale: "Higgs→particle SMILES fallback; authority D_eff=7 not fsot20 D_eff=19"
+
+  Materials_Science:
+    canonical: authority
+    drift_fields: [D_eff]
+    rationale: "Material rollup D_eff=10 per neurolab_ledger_alignment"
+
+  Neuroscience:
+    canonical: authority
+    drift_fields: [S]
+    rationale: "Neural rollup uses authority delta_psi=0.7 hits=1"
+
+  Particle_Astrophysics:
+    canonical: authority
+    drift_fields: [D_eff, hits, observed]
+    rationale: "CMB rollup; authority observed=false matches dispersal class"
+
+  Planetary_Science:
+    canonical: authority
+    drift_fields: [S]
+    rationale: "Galactic rollup uses authority D_eff=21"
+
+  Psychology:
+    canonical: authority
+    drift_fields: [S]
+    rationale: "Consciousness rollup uses authority delta_psi=1.15"
+
+  Quantum_Computing:
+    canonical: authority
+    drift_fields: [observed, S]
+    rationale: "AI rollup; authority observed=false is dispersal mode"
+
+  Thermodynamics:
+    canonical: authority
+    drift_fields: [D_eff, hits, S]
+    rationale: "Energy rollup D_eff=15 hits=1 per alignment override"

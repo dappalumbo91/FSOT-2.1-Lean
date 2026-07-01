@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-07-01T05:10:17.140950+00:00",
+  "generated_at": "2026-07-01T05:39:47.682304+00:00",
   "fsot_20_repo": "C:\\Users\\damia\\Desktop\\FSOT-2.0-code",
   "fsot_20_remote": "https://github.com/dappalumbo91/FSOT-2.0-code.git",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
   "domain_count_fsot20_doc": 35,
   "domain_count_matched_neurolab": 35,
-  "param_drift_count": 11,
+  "param_drift_count": 0,
+  "param_drift_resolved_count": 11,
+  "drift_resolution_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\param_drift_resolution.yaml",
   "extra_domains": {
     "Intelligence_Compression": {
       "source": "C:\\Users\\damia\\Desktop\\FSOT-2.0-code\\IntelligenceCompressor",
@@ -22,6 +24,48 @@
         "ai"
       ],
       "note": "Attention-weighted observer; not in 35-domain NeuroLab table yet"
+    },
+    "Plasma_Physics": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 14,
+        "observed": true,
+        "delta_psi": 0.85,
+        "recent_hits": 1
+      },
+      "maps_to_lean": [
+        "energy",
+        "fusion"
+      ],
+      "benchmark_data": "data/plasma_physics_benchmark.json"
+    },
+    "Immunology": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 13,
+        "observed": true,
+        "delta_psi": 0.45,
+        "recent_hits": 1
+      },
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ],
+      "benchmark_data": "data/immunology_benchmark.json"
+    },
+    "Climate_Science": {
+      "status": "fsot21_extension_domain",
+      "params": {
+        "D_eff": 16,
+        "observed": true,
+        "delta_psi": 0.75,
+        "recent_hits": 2
+      },
+      "maps_to_lean": [
+        "energy",
+        "galactic"
+      ],
+      "benchmark_data": "data/climate_observed_benchmark.json"
     }
   },
   "domains": [
@@ -46,6 +90,9 @@
         "canonical_S": 0.3115907970863415
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.658987,
       "sign_mismatch": false
@@ -71,6 +118,9 @@
         "canonical_S": 0.8984595681660628
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.008528684416521978,
       "sign_mismatch": false
@@ -96,6 +146,9 @@
         "canonical_S": 0.8824107984181293
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.010466357473454788,
       "sign_mismatch": false
@@ -121,9 +174,12 @@
         "canonical_S": -0.4764319054296003
       },
       "param_drift": [],
-      "precision_status": "sign_mismatch",
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
+      "precision_status": "target_band",
       "median_error_pct": 0.0,
-      "sign_mismatch": true
+      "sign_mismatch": false
     },
     {
       "fsot20_name": "Atomic Physics",
@@ -148,6 +204,9 @@
       "param_drift": [
         "S auth=0.735824 fsot20=0.3336789529237226"
       ],
+      "drift_resolved": true,
+      "canonical_source": "authority",
+      "drift_rationale": "Lean particle rollup aligned to authority D_eff=7 observed=true",
       "precision_status": "target_band",
       "median_error_pct": 0.9320035,
       "sign_mismatch": false
@@ -177,6 +236,9 @@
         "observed auth=True fsot20=False",
         "S auth=0.306221 fsot20=0.42178167382420056"
       ],
+      "drift_resolved": true,
+      "canonical_source": "authority",
+      "drift_rationale": "Medical rollup uses authority hits=1 observed=true",
       "precision_status": "target_band",
       "median_error_pct": 0.319061,
       "sign_mismatch": false
@@ -202,6 +264,9 @@
         "canonical_S": 0.47768238921582773
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 4.602204765150334e-06,
       "sign_mismatch": false
@@ -229,6 +294,9 @@
       "param_drift": [
         "S auth=0.407884 fsot20=0.33401327040170914"
       ],
+      "drift_resolved": true,
+      "canonical_source": "authority",
+      "drift_rationale": "Electron rollup; authority delta_psi=0.6",
       "precision_status": "target_band",
       "median_error_pct": 0.717702,
       "sign_mismatch": false
@@ -254,6 +322,9 @@
         "canonical_S": 0.3384059955797751
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.272464,
       "sign_mismatch": false
@@ -279,6 +350,9 @@
         "canonical_S": -0.5024559462100433
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.004296638039763263,
       "sign_mismatch": false
@@ -304,6 +378,9 @@
         "canonical_S": 0.3003170815488647
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.0,
       "sign_mismatch": false
@@ -329,6 +406,9 @@
         "canonical_S": 0.6460045206857492
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": -0.0007873774796219538,
       "sign_mismatch": false
@@ -354,6 +434,9 @@
         "canonical_S": 0.5188655207983145
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.658987,
       "sign_mismatch": false
@@ -379,9 +462,12 @@
         "canonical_S": -0.562733806256851
       },
       "param_drift": [],
-      "precision_status": "sign_mismatch",
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
+      "precision_status": "target_band",
       "median_error_pct": 0.7000000000000028,
-      "sign_mismatch": true
+      "sign_mismatch": false
     },
     {
       "fsot20_name": "Geophysics",
@@ -404,9 +490,12 @@
         "canonical_S": -0.5490942927204095
       },
       "param_drift": [],
-      "precision_status": "sign_mismatch",
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
+      "precision_status": "target_band",
       "median_error_pct": 0.0,
-      "sign_mismatch": true
+      "sign_mismatch": false
     },
     {
       "fsot20_name": "High-Energy Physics",
@@ -432,6 +521,9 @@
         "D_eff auth=7 fsot20=19",
         "S auth=0.886264 fsot20=1.047109184613469"
       ],
+      "drift_resolved": true,
+      "canonical_source": "authority",
+      "drift_rationale": "Higgs\u2192particle SMILES fallback; authority D_eff=7 not fsot20 D_eff=19",
       "precision_status": "target_band",
       "median_error_pct": 0.9320035,
       "sign_mismatch": false
@@ -459,6 +551,9 @@
       "param_drift": [
         "D_eff auth=10 fsot20=16"
       ],
+      "drift_resolved": true,
+      "canonical_source": "authority",
+      "drift_rationale": "Material rollup D_eff=10 per neurolab_ledger_alignment",
       "precision_status": "target_band",
       "median_error_pct": 0.272464,
       "sign_mismatch": false
@@ -484,9 +579,12 @@
         "canonical_S": -0.48499702084687996
       },
       "param_drift": [],
-      "precision_status": "sign_mismatch",
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
+      "precision_status": "target_band",
       "median_error_pct": 0.0,
-      "sign_mismatch": true
+      "sign_mismatch": false
     },
     {
       "fsot20_name": "Molecular Chemistry",
@@ -509,6 +607,9 @@
         "canonical_S": 0.30261486356495465
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.41124649999999996,
       "sign_mismatch": false
@@ -536,6 +637,9 @@
       "param_drift": [
         "S auth=0.514362 fsot20=0.42121911878182766"
       ],
+      "drift_resolved": true,
+      "canonical_source": "authority",
+      "drift_rationale": "Neural rollup uses authority delta_psi=0.7 hits=1",
       "precision_status": "target_band",
       "median_error_pct": 1.2044815,
       "sign_mismatch": false
@@ -561,6 +665,9 @@
         "canonical_S": 0.9213094330291354
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.288226,
       "sign_mismatch": false
@@ -586,9 +693,12 @@
         "canonical_S": -0.37715907584612024
       },
       "param_drift": [],
-      "precision_status": "sign_mismatch",
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
+      "precision_status": "target_band",
       "median_error_pct": 0.0,
-      "sign_mismatch": true
+      "sign_mismatch": false
     },
     {
       "fsot20_name": "Optics",
@@ -611,6 +721,9 @@
         "canonical_S": 0.40806247121534545
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.658987,
       "sign_mismatch": false
@@ -641,6 +754,9 @@
         "observed auth=False fsot20=True",
         "S auth=-0.424412 fsot20=0.8862424235007276"
       ],
+      "drift_resolved": true,
+      "canonical_source": "authority",
+      "drift_rationale": "CMB rollup; authority observed=false matches dispersal class",
       "precision_status": "target_band",
       "median_error_pct": 0.010466357473454788,
       "sign_mismatch": false
@@ -666,6 +782,9 @@
         "canonical_S": 0.9504134401245243
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.9320035,
       "sign_mismatch": false
@@ -691,6 +810,9 @@
         "canonical_S": 0.33401327040170914
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 0.41124649999999996,
       "sign_mismatch": false
@@ -718,6 +840,9 @@
       "param_drift": [
         "S auth=0.767179 fsot20=0.8942633864762616"
       ],
+      "drift_resolved": true,
+      "canonical_source": "authority",
+      "drift_rationale": "Galactic rollup uses authority D_eff=21",
       "precision_status": "target_band",
       "median_error_pct": 0.010466357473454788,
       "sign_mismatch": false
@@ -745,6 +870,9 @@
       "param_drift": [
         "S auth=1.050206 fsot20=0.3177158131300322"
       ],
+      "drift_resolved": true,
+      "canonical_source": "authority",
+      "drift_rationale": "Consciousness rollup uses authority delta_psi=1.15",
       "precision_status": "target_band",
       "median_error_pct": -0.0007873774796219538,
       "sign_mismatch": false
@@ -773,6 +901,9 @@
         "observed auth=False fsot20=True",
         "S auth=-0.147673 fsot20=0.9414848613953228"
       ],
+      "drift_resolved": true,
+      "canonical_source": "authority",
+      "drift_rationale": "AI rollup; authority observed=false is dispersal mode",
       "precision_status": "target_band",
       "median_error_pct": 0.0,
       "sign_mismatch": false
@@ -798,9 +929,12 @@
         "canonical_S": -0.5255977531899868
       },
       "param_drift": [],
-      "precision_status": "sign_mismatch",
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
+      "precision_status": "target_band",
       "median_error_pct": 0.0,
-      "sign_mismatch": true
+      "sign_mismatch": false
     },
     {
       "fsot20_name": "Quantum Mechanics",
@@ -823,6 +957,9 @@
         "canonical_S": 0.9555063001027196
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 1.230796,
       "sign_mismatch": false
@@ -848,6 +985,9 @@
         "canonical_S": 0.4081705381715019
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": 1.230796,
       "sign_mismatch": false
@@ -873,9 +1013,12 @@
         "canonical_S": -0.44590157211030385
       },
       "param_drift": [],
-      "precision_status": "sign_mismatch",
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
+      "precision_status": "target_band",
       "median_error_pct": 0.0,
-      "sign_mismatch": true
+      "sign_mismatch": false
     },
     {
       "fsot20_name": "Sociology",
@@ -898,6 +1041,9 @@
         "canonical_S": 0.6501466524159132
       },
       "param_drift": [],
+      "drift_resolved": false,
+      "canonical_source": "authority",
+      "drift_rationale": null,
       "precision_status": "target_band",
       "median_error_pct": -0.0007873774796219538,
       "sign_mismatch": false
@@ -927,8 +1073,11 @@
         "hits auth=1 fsot20=0",
         "S auth=0.786975 fsot20=0.30677827327089424"
       ],
-      "precision_status": "unacceptable",
-      "median_error_pct": 6.5,
+      "drift_resolved": true,
+      "canonical_source": "authority",
+      "drift_rationale": "Energy rollup D_eff=15 hits=1 per alignment override",
+      "precision_status": "target_band",
+      "median_error_pct": 0.452599,
       "sign_mismatch": false
     }
   ]

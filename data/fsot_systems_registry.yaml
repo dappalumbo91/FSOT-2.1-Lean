@@ -1,5 +1,5 @@
 meta:
-  generated_at: '2026-07-01T05:09:47.292141+00:00'
+  generated_at: '2026-07-01T05:40:10.196166+00:00'
   repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
   remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
   lean_build_ok: true
@@ -12,9 +12,12 @@ fsot_20_reference:
   remote: https://github.com/dappalumbo91/FSOT-2.0-code.git
   local_path: C:\Users\damia\Desktop\FSOT-2.0-code
   matched_domains: 35
-  param_drift_count: 11
+  param_drift_count: 0
   extension_domains:
   - Intelligence_Compression
+  - Plasma_Physics
+  - Immunology
+  - Climate_Science
   crosswalk: data/fsot_20_domain_crosswalk.json
 verification_pipeline:
 - scripts/run_neuron_cohort_eval.py
@@ -270,18 +273,11 @@ tier9_domain_coverage:
   report_json: data/domain_coverage_report.json
   lean_module: FSOT.Formal.DomainCoveragePriors
 tier10_domain_precision:
-  numeric_precision_domains: 34
-  target_band_2pct: 27
+  numeric_precision_domains: 35
+  target_band_2pct: 35
   tolerable_band_5pct: 0
   huge_gap_domains: []
-  sign_mismatch_domains:
-  - Atmospheric_Physics
-  - Fluid_Dynamics
-  - Geophysics
-  - Meteorology
-  - Oceanography
-  - Quantum_Gravity
-  - Seismology
+  sign_mismatch_domains: []
   report_json: data/domain_precision_report.json
   lean_module: FSOT.Formal.DomainPrecisionPriors
 canonical_scalar_bridge:
@@ -364,6 +360,8 @@ labs_in_registry:
     present: true
   neuron_cohort_lab:
     present: true
+  intelligence_compression:
+    present: true
 external_roots:
 - id: fsot_compute_authority
   path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
@@ -417,6 +415,10 @@ lean_formal_modules:
   file: FSOT/Formal/CellularPriors.lean
   has_sorry: false
   theorem_count: 3
+- module: FSOT.Formal.ClimateSciencePriors
+  file: FSOT/Formal/ClimateSciencePriors.lean
+  has_sorry: false
+  theorem_count: 3
 - module: FSOT.Formal.CodonPriors
   file: FSOT/Formal/CodonPriors.lean
   has_sorry: false
@@ -465,6 +467,14 @@ lean_formal_modules:
   file: FSOT/Formal/Genomic.lean
   has_sorry: false
   theorem_count: 10
+- module: FSOT.Formal.ImmunologyPriors
+  file: FSOT/Formal/ImmunologyPriors.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.IntelligenceCompressionPriors
+  file: FSOT/Formal/IntelligenceCompressionPriors.lean
+  has_sorry: false
+  theorem_count: 4
 - module: FSOT.Formal.KnowledgeBasePriors
   file: FSOT/Formal/KnowledgeBasePriors.lean
   has_sorry: false
@@ -511,6 +521,10 @@ lean_formal_modules:
   theorem_count: 6
 - module: FSOT.Formal.PhotonicForge
   file: FSOT/Formal/PhotonicForge.lean
+  has_sorry: false
+  theorem_count: 3
+- module: FSOT.Formal.PlasmaPhysicsPriors
+  file: FSOT/Formal/PlasmaPhysicsPriors.lean
   has_sorry: false
   theorem_count: 3
 - module: FSOT.Formal.ProteinFormulas

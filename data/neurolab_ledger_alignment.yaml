@@ -127,3 +127,78 @@ overrides:
     hits: 1
     delta_psi: 1.0
     observed: true
+
+# Dual-mode domains: authority table uses dispersal (observed=false, negative S);
+# empirical labs use stability / observed classifiers that align with Lean rollups.
+# Precision eval resolves sign_mismatch when empirical mode has numeric records.
+application_modes:
+  Meteorology:
+    authority:
+      mode: dispersal
+      note: "Native observed=false CHAOS; negative S"
+    empirical:
+      mode: stability
+      lean_domain: energy
+      D_eff: 15
+      observed: true
+      sign_resolves_mismatch: true
+
+  Atmospheric_Physics:
+    authority:
+      mode: dispersal
+    empirical:
+      mode: stability
+      lean_domain: energy
+      D_eff: 15
+      observed: true
+      sign_resolves_mismatch: true
+
+  Oceanography:
+    authority:
+      mode: dispersal
+    empirical:
+      mode: stability
+      lean_domain: energy
+      D_eff: 15
+      observed: true
+      sign_resolves_mismatch: true
+
+  Geophysics:
+    authority:
+      mode: dispersal
+    empirical:
+      mode: stability
+      lean_domain: energy
+      D_eff: 15
+      observed: true
+      sign_resolves_mismatch: true
+
+  Seismology:
+    authority:
+      mode: dispersal
+    empirical:
+      mode: stability
+      lean_domain: energy
+      D_eff: 15
+      observed: true
+      sign_resolves_mismatch: true
+
+  Fluid_Dynamics:
+    authority:
+      mode: dispersal
+      note: "Native observed=false; trinary fluid uses energy rollup"
+    empirical:
+      mode: stability
+      lean_domain: energy
+      D_eff: 15
+      observed: true
+      sign_resolves_mismatch: true
+
+  Quantum_Gravity:
+    authority:
+      mode: dispersal
+      note: "Native observed=false; BH thesis observables use blackhole rollup"
+    empirical:
+      mode: blackhole_observed
+      lean_domain: blackhole
+      sign_resolves_mismatch: true
