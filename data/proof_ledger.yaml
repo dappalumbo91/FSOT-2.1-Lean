@@ -1006,6 +1006,20 @@ entries:
       Rolls up SMILES, cosmology, weather, evolution, neuron cohort, and sibling labs per domain.
       10 negative-scalar domains (cosmology, meteorology, quantum computing, …) certified via oracle + Lean signs.
 
+  - id: domain_precision_priors_bundle
+    domain: "*"
+    claim: "Tier 10: per-record numeric precision across domains (2%/5% bands + gap diagnostics)"
+    status: numerically_verified
+    source_lab: "fsot_35_domain_registry"
+    source_file: data/domain_precision_report.json
+    verification: scripts/verify_domain_precision.py
+    lean:
+      module: FSOT.Formal.DomainPrecisionPriors
+      theorem: domain_precision_priors_bundle
+    physics_note: |
+      Per-record error_pct from SMILES, ΛCDM, linguistics, fuel, species, operon benchmarks, Open-Meteo weather.
+      Sign-mismatch domains flag observed=false/CHAOS authority vs Lean rollup misapplication.
+
 playbook_patterns:
   - pattern: wrong_bound_direction
     symptom: "linarith fails on term1 upper bound when oracle shows term1 ≈ -0.2"

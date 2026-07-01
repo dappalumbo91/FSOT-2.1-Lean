@@ -101,6 +101,7 @@ def build_registry() -> dict:
 
     syn = registry.get("experiment_synthesis", {})
     domain_cov = _load_json(ROOT / "data" / "domain_coverage_report.json")
+    domain_prec = _load_json(ROOT / "data" / "domain_precision_report.json")
     proved_raw = cert.get("proved_claims") or cert.get("proved_claim_count")
     proved_claims = len(proved_raw) if isinstance(proved_raw, list) else proved_raw
 
@@ -123,9 +124,14 @@ def build_registry() -> dict:
             "scripts/gen_experiment_synthesis_lean.py",
             "scripts/run_domain_coverage_eval.py",
             "scripts/gen_domain_coverage_lean.py",
+            "scripts/fetch_weather_observed_benchmark.py",
+            "scripts/fetch_evolution_operon_benchmark.py",
+            "scripts/run_domain_precision_eval.py",
+            "scripts/gen_domain_precision_lean.py",
             "lake build FSOT",
             "scripts/verify_experiment_synthesis.py",
             "scripts/verify_domain_coverage.py",
+            "scripts/verify_domain_precision.py",
             "scripts/fsot_verification_runner.py",
             "scripts/export_certificate.py",
             "scripts/build_fsot_systems_registry.py",
@@ -146,6 +152,15 @@ def build_registry() -> dict:
             "registry_yaml": "data/fsot_35_domain_registry.yaml",
             "report_json": "data/domain_coverage_report.json",
             "lean_module": "FSOT.Formal.DomainCoveragePriors",
+        },
+        "tier10_domain_precision": {
+            "numeric_precision_domains": domain_prec.get("domains_with_numeric_precision"),
+            "target_band_2pct": domain_prec.get("domains_target_band_2pct"),
+            "tolerable_band_5pct": domain_prec.get("domains_tolerable_band_5pct"),
+            "huge_gap_domains": domain_prec.get("huge_gap_domains") or [],
+            "sign_mismatch_domains": domain_prec.get("sign_mismatch_domains") or [],
+            "report_json": "data/domain_precision_report.json",
+            "lean_module": "FSOT.Formal.DomainPrecisionPriors",
         },
         "canonical_scalar_bridge": cohort.get("canonical_scalar_bridge", {}),
         "neurolab_smiles_bridge": cohort.get("neurolab_smiles_bridge", {}),

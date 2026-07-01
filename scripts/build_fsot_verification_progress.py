@@ -30,6 +30,7 @@ def build_progress() -> dict:
     cohort = _load_json(ROOT / "data" / "neuron_cohort_report.json")
     allen_verify = _load_json(ROOT / "data" / "allen_sdk_verification.json")
     domain_cov = _load_json(ROOT / "data" / "domain_coverage_report.json")
+    domain_prec = _load_json(ROOT / "data" / "domain_precision_report.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -98,6 +99,21 @@ def build_progress() -> dict:
             },
             "artifacts": ["FSOT.Formal.DomainCoveragePriors", "data/fsot_35_domain_registry.yaml"],
         },
+        {
+            "tier": 10,
+            "name": "Per-record numeric precision (2%/5% bands + gap diagnostics)",
+            "status": "complete"
+            if domain_prec.get("domains_with_numeric_precision", 0) >= 25
+            else "pending",
+            "metrics": {
+                "numeric_precision_domains": domain_prec.get("domains_with_numeric_precision"),
+                "target_band_2pct": domain_prec.get("domains_target_band_2pct"),
+                "tolerable_band_5pct": domain_prec.get("domains_tolerable_band_5pct"),
+                "huge_gap_domains": domain_prec.get("domains_huge_gap"),
+                "sign_mismatch_domains": domain_prec.get("domains_sign_mismatch"),
+            },
+            "artifacts": ["FSOT.Formal.DomainPrecisionPriors", "data/domain_precision_report.json"],
+        },
     ]
 
     next_steps = [
@@ -124,7 +140,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 9 domain coverage certified; per-domain numeric bounds next",
+        "current_position": "Tier 10 numeric precision certified; sign-mismatch param fixes next",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

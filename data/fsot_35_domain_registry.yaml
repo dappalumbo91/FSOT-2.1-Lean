@@ -139,3 +139,12 @@ verification:
   min_smiles_mapped: 1400
   lean_align_tol: 1.0e-9
   scalar_sign_tol: 1.0e-6
+
+precision_verification:
+  huge_gap_pct: 25.0
+  min_domains_with_numeric_precision: 25
+  min_domains_target_band: 18
+  max_huge_gap_domains: 2
+  max_unacceptable_domains: 3
+  target_max_error_pct: 2.0
+  tolerable_max_error_pct: 5.0

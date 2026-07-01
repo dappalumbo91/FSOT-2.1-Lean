@@ -1,15 +1,15 @@
-generated_at: '2026-07-01T04:43:45.783058+00:00'
+generated_at: '2026-07-01T04:58:37.699973+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 40
-  proved_claims: 64
+  lean_formal_modules: 41
+  proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 6
-  tiers_total: 6
+  tiers_complete: 7
+  tiers_total: 7
   percent_complete: 100.0
-current_position: Tier 9 domain coverage certified; per-domain numeric bounds next
+current_position: Tier 10 numeric precision certified; sign-mismatch param fixes next
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -30,6 +30,7 @@ tiers:
   - CodonPriors
   - CosmologyLab
   - DomainCoveragePriors
+  - DomainPrecisionPriors
   - EvolutionPriors
   - ExperimentSynthesisPriors
   - FormulaCorpusPriors
@@ -84,6 +85,18 @@ tiers:
   artifacts:
   - FSOT.Formal.DomainCoveragePriors
   - data/fsot_35_domain_registry.yaml
+- tier: 10
+  name: Per-record numeric precision (2%/5% bands + gap diagnostics)
+  status: complete
+  metrics:
+    numeric_precision_domains: 33
+    target_band_2pct: 26
+    tolerable_band_5pct: 0
+    huge_gap_domains: 0
+    sign_mismatch_domains: 7
+  artifacts:
+  - FSOT.Formal.DomainPrecisionPriors
+  - data/domain_precision_report.json
 next_steps:
 - Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class
 - "Multi-hero held-out: certify 3\u20135 specimens per Sst/PV/VIP/L2/3"

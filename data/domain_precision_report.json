@@ -1,0 +1,1733 @@
+{
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "domain_count": 35,
+  "domains_with_numeric_precision": 33,
+  "domains_target_band_2pct": 26,
+  "domains_tolerable_band_5pct": 0,
+  "domains_unacceptable": 1,
+  "domains_huge_gap": 0,
+  "domains_sign_mismatch": 7,
+  "huge_gap_domains": [],
+  "sign_mismatch_domains": [
+    "Atmospheric_Physics",
+    "Fluid_Dynamics",
+    "Geophysics",
+    "Meteorology",
+    "Oceanography",
+    "Quantum_Gravity",
+    "Seismology"
+  ],
+  "domains": [
+    {
+      "neurolab_domain": "Acoustics",
+      "lean_domain": "material",
+      "domain_scalar_S": 0.3115907970863415,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 485,
+      "median_error_pct": 0.658987,
+      "p90_error_pct": 2.497929,
+      "max_error_pct": 4.669601,
+      "within_2pct": 409,
+      "within_5pct": 485,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 485,
+          "median_error_pct": 0.658987,
+          "p90_error_pct": 2.497929,
+          "max_error_pct": 4.669601,
+          "within_2pct": 409,
+          "within_5pct": 485
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "\u00a7102 Piezoelectric d\u2083\u2083",
+          "records": 10,
+          "median_error_pct": 0.10923
+        },
+        {
+          "property": "\u00a7103 Thermoelectric ZT",
+          "records": 10,
+          "median_error_pct": 0.112001
+        },
+        {
+          "property": "\u00a7105 Autoignition T",
+          "records": 12,
+          "median_error_pct": 0.121334
+        },
+        {
+          "property": "\u00a713 \u03c7m Magnetic",
+          "records": 12,
+          "median_error_pct": 0.483271
+        },
+        {
+          "property": "\u00a727 Boiling Points",
+          "records": 15,
+          "median_error_pct": 0.792126
+        },
+        {
+          "property": "\u00a728 Melting Points",
+          "records": 15,
+          "median_error_pct": 1.081167
+        },
+        {
+          "property": "\u00a729 Dielectric \u03b5r",
+          "records": 15,
+          "median_error_pct": 0.802701
+        },
+        {
+          "property": "\u00a730 Refractive nD",
+          "records": 15,
+          "median_error_pct": 0.640992
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Astronomy",
+      "lean_domain": "astronomical",
+      "domain_scalar_S": 0.8984595681660628,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 46,
+      "median_error_pct": 0.008528684416521978,
+      "p90_error_pct": 0.11335025724100276,
+      "max_error_pct": 1.5431110234336303,
+      "within_2pct": 46,
+      "within_5pct": 46,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "cosmology_lambda_cdm",
+          "record_count": 30,
+          "median_error_pct": 0.004296638039763263,
+          "p90_error_pct": 0.11335025724100276,
+          "max_error_pct": 1.5431110234336303,
+          "within_2pct": 30,
+          "within_5pct": 30
+        },
+        {
+          "lab": "cosmology_wave4",
+          "record_count": 16,
+          "median_error_pct": 0.010466357473454788,
+          "p90_error_pct": 0.06890100520055274,
+          "max_error_pct": 0.23468225112121452,
+          "within_2pct": 16,
+          "within_5pct": 16
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "wave1",
+          "records": 5,
+          "median_error_pct": 0.11335025724100276
+        },
+        {
+          "property": "wave2",
+          "records": 10,
+          "median_error_pct": 0.002173459608308579
+        },
+        {
+          "property": "wave3",
+          "records": 15,
+          "median_error_pct": 0.0019273173307759674
+        },
+        {
+          "property": "wave4",
+          "records": 16,
+          "median_error_pct": 0.011586387979935279
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Astrophysics",
+      "lean_domain": "astronomical",
+      "domain_scalar_S": 0.8824107984181293,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 16,
+      "median_error_pct": 0.010466357473454788,
+      "p90_error_pct": 0.06890100520055274,
+      "max_error_pct": 0.23468225112121452,
+      "within_2pct": 16,
+      "within_5pct": 16,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "cosmology_wave4",
+          "record_count": 16,
+          "median_error_pct": 0.010466357473454788,
+          "p90_error_pct": 0.06890100520055274,
+          "max_error_pct": 0.23468225112121452,
+          "within_2pct": 16,
+          "within_5pct": 16
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "wave4",
+          "records": 16,
+          "median_error_pct": 0.011586387979935279
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Atmospheric_Physics",
+      "lean_domain": "energy",
+      "domain_scalar_S": -0.47643190542960023,
+      "neurolab_scalar_sign": "negative",
+      "lean_sign_positive": true,
+      "sign_mismatch": true,
+      "record_count": 47,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.0,
+      "max_error_pct": 0.0,
+      "within_2pct": 47,
+      "within_5pct": 47,
+      "precision_status": "sign_mismatch",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "weather_lab",
+          "record_count": 47,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 0.0,
+          "within_2pct": 47,
+          "within_5pct": 47
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "stability_classifier",
+          "records": 47,
+          "median_error_pct": 0.0
+        }
+      ],
+      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+    },
+    {
+      "neurolab_domain": "Atomic_Physics",
+      "lean_domain": "particle",
+      "domain_scalar_S": 0.7358238658627416,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 36,
+      "median_error_pct": 0.9320035,
+      "p90_error_pct": 3.81752,
+      "max_error_pct": 4.499825,
+      "within_2pct": 23,
+      "within_5pct": 36,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 36,
+          "median_error_pct": 0.9320035,
+          "p90_error_pct": 3.81752,
+          "max_error_pct": 4.499825,
+          "within_2pct": 23,
+          "within_5pct": 36
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "\u00a766 Particle Masses",
+          "records": 12,
+          "median_error_pct": 0.784358
+        },
+        {
+          "property": "\u00a778 X-ray K\u03b1 Energy",
+          "records": 12,
+          "median_error_pct": 2.352752
+        },
+        {
+          "property": "\u00a788 XPS 1s Binding E",
+          "records": 12,
+          "median_error_pct": 1.050199
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Biochemistry",
+      "lean_domain": "medical",
+      "domain_scalar_S": 0.3062212293865662,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 166,
+      "median_error_pct": 0.319061,
+      "p90_error_pct": 1.792301,
+      "max_error_pct": 4.472614,
+      "within_2pct": 155,
+      "within_5pct": 166,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 128,
+          "median_error_pct": 0.7764425,
+          "p90_error_pct": 1.912783,
+          "max_error_pct": 4.472614,
+          "within_2pct": 117,
+          "within_5pct": 128
+        },
+        {
+          "lab": "neurolab_bio",
+          "record_count": 38,
+          "median_error_pct": 1.0422567205814993e-05,
+          "p90_error_pct": 7.366979189217239e-05,
+          "max_error_pct": 0.22323428743599671,
+          "within_2pct": 38,
+          "within_5pct": 38
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "BIOPHYSICS",
+          "records": 13,
+          "median_error_pct": 1.8317348967274563e-05
+        },
+        {
+          "property": "GENOMIC_SCIENCES",
+          "records": 15,
+          "median_error_pct": 1.3445607097144362e-05
+        },
+        {
+          "property": "NEUROSCIENCE",
+          "records": 10,
+          "median_error_pct": 5.280973401633471e-06
+        },
+        {
+          "property": "\u00a721 Protein \u0394G",
+          "records": 10,
+          "median_error_pct": 0.819727
+        },
+        {
+          "property": "\u00a722 Amino Acid pKa",
+          "records": 20,
+          "median_error_pct": 0.351972
+        },
+        {
+          "property": "\u00a723 Drug pKd",
+          "records": 10,
+          "median_error_pct": 0.327812
+        },
+        {
+          "property": "\u00a724 Enzyme kcat",
+          "records": 10,
+          "median_error_pct": 0.70505
+        },
+        {
+          "property": "\u00a735 Michaelis Km",
+          "records": 10,
+          "median_error_pct": 1.267814
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Biology",
+      "lean_domain": "biological",
+      "domain_scalar_S": 0.4447250077038459,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 50,
+      "median_error_pct": 4.602204765150334e-06,
+      "p90_error_pct": 9.703172509922808e-05,
+      "max_error_pct": 0.8595988538681949,
+      "within_2pct": 50,
+      "within_5pct": 50,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "evolution_lab",
+          "record_count": 12,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.5128205128205128,
+          "max_error_pct": 0.8595988538681949,
+          "within_2pct": 12,
+          "within_5pct": 12
+        },
+        {
+          "lab": "neurolab_bio",
+          "record_count": 38,
+          "median_error_pct": 1.0422567205814993e-05,
+          "p90_error_pct": 7.366979189217239e-05,
+          "max_error_pct": 0.22323428743599671,
+          "within_2pct": 38,
+          "within_5pct": 38
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "BIOPHYSICS",
+          "records": 13,
+          "median_error_pct": 1.8317348967274563e-05
+        },
+        {
+          "property": "GENOMIC_SCIENCES",
+          "records": 15,
+          "median_error_pct": 1.3445607097144362e-05
+        },
+        {
+          "property": "NEUROSCIENCE",
+          "records": 10,
+          "median_error_pct": 5.280973401633471e-06
+        },
+        {
+          "property": "mt_operon_length",
+          "records": 12,
+          "median_error_pct": 0.0
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Chemistry",
+      "lean_domain": "electron",
+      "domain_scalar_S": 0.4078840642307454,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 99,
+      "median_error_pct": 0.717702,
+      "p90_error_pct": 1.996813,
+      "max_error_pct": 4.304529,
+      "within_2pct": 90,
+      "within_5pct": 99,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 99,
+          "median_error_pct": 0.717702,
+          "p90_error_pct": 1.996813,
+          "max_error_pct": 4.304529,
+          "within_2pct": 90,
+          "within_5pct": 99
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "\u00a725 vdW Radii",
+          "records": 18,
+          "median_error_pct": 0.65951
+        },
+        {
+          "property": "\u00a726 Polarizability",
+          "records": 18,
+          "median_error_pct": 1.514641
+        },
+        {
+          "property": "\u00a740 Ionic Radii",
+          "records": 18,
+          "median_error_pct": 0.938212
+        },
+        {
+          "property": "\u00a741 Covalent Radii",
+          "records": 18,
+          "median_error_pct": 1.29809
+        },
+        {
+          "property": "\u00a772 Electronegativity Ext",
+          "records": 12,
+          "median_error_pct": 0.957141
+        },
+        {
+          "property": "\u00a79 Electron Affinities",
+          "records": 15,
+          "median_error_pct": 0.00699
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Condensed_Matter",
+      "lean_domain": "material",
+      "domain_scalar_S": 0.3384059955797751,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 1169,
+      "median_error_pct": 0.272464,
+      "p90_error_pct": 1.502909,
+      "max_error_pct": 4.669601,
+      "within_2pct": 1093,
+      "within_5pct": 1169,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 485,
+          "median_error_pct": 0.658987,
+          "p90_error_pct": 2.497929,
+          "max_error_pct": 4.669601,
+          "within_2pct": 409,
+          "within_5pct": 485
+        },
+        {
+          "lab": "species_catalog",
+          "record_count": 684,
+          "median_error_pct": 0.09045,
+          "p90_error_pct": 0.6805,
+          "max_error_pct": 0.9952,
+          "within_2pct": 684,
+          "within_5pct": 684
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "acoustic_imp_MRayl",
+          "records": 9,
+          "median_error_pct": 0.0835
+        },
+        {
+          "property": "autoignition_K",
+          "records": 12,
+          "median_error_pct": 0.0863
+        },
+        {
+          "property": "band_gap_eV",
+          "records": 11,
+          "median_error_pct": 0.0025363868782773526
+        },
+        {
+          "property": "boiling_K",
+          "records": 15,
+          "median_error_pct": 0.2743
+        },
+        {
+          "property": "bulk_GPa",
+          "records": 33,
+          "median_error_pct": 0.0173
+        },
+        {
+          "property": "cohesive_eV",
+          "records": 33,
+          "median_error_pct": 0.0012311360683454771
+        },
+        {
+          "property": "compressibility_1e_11_Pa",
+          "records": 12,
+          "median_error_pct": 0.0607
+        },
+        {
+          "property": "cp_J_molK",
+          "records": 27,
+          "median_error_pct": 0.5025
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Cosmology",
+      "lean_domain": "cosmological",
+      "domain_scalar_S": -0.5024559462100433,
+      "neurolab_scalar_sign": "negative",
+      "lean_sign_positive": null,
+      "sign_mismatch": false,
+      "record_count": 30,
+      "median_error_pct": 0.004296638039763263,
+      "p90_error_pct": 0.11335025724100276,
+      "max_error_pct": 1.5431110234336303,
+      "within_2pct": 30,
+      "within_5pct": 30,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "cosmology_lambda_cdm",
+          "record_count": 30,
+          "median_error_pct": 0.004296638039763263,
+          "p90_error_pct": 0.11335025724100276,
+          "max_error_pct": 1.5431110234336303,
+          "within_2pct": 30,
+          "within_5pct": 30
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "wave1",
+          "records": 5,
+          "median_error_pct": 0.11335025724100276
+        },
+        {
+          "property": "wave2",
+          "records": 10,
+          "median_error_pct": 0.002173459608308579
+        },
+        {
+          "property": "wave3",
+          "records": 15,
+          "median_error_pct": 0.0019273173307759674
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Ecology",
+      "lean_domain": "biological",
+      "domain_scalar_S": 0.3003170815488647,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 12,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.5128205128205128,
+      "max_error_pct": 0.8595988538681949,
+      "within_2pct": 12,
+      "within_5pct": 12,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "evolution_lab",
+          "record_count": 12,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.5128205128205128,
+          "max_error_pct": 0.8595988538681949,
+          "within_2pct": 12,
+          "within_5pct": 12
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "mt_operon_length",
+          "records": 12,
+          "median_error_pct": 0.0
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Economics",
+      "lean_domain": "consciousness",
+      "domain_scalar_S": 0.6460045206857493,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 10,
+      "median_error_pct": -0.0007873774796219538,
+      "p90_error_pct": 0.0005995452654275573,
+      "max_error_pct": 0.002670068252275115,
+      "within_2pct": 10,
+      "within_5pct": 10,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "linguistics_lab",
+          "record_count": 10,
+          "median_error_pct": -0.0007873774796219538,
+          "p90_error_pct": 0.0005995452654275573,
+          "max_error_pct": 0.002670068252275115,
+          "within_2pct": 10,
+          "within_5pct": 10
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "unknown",
+          "records": 10,
+          "median_error_pct": -0.00036899321083823844
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Electromagnetism",
+      "lean_domain": "material",
+      "domain_scalar_S": 0.5188655207983146,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 485,
+      "median_error_pct": 0.658987,
+      "p90_error_pct": 2.497929,
+      "max_error_pct": 4.669601,
+      "within_2pct": 409,
+      "within_5pct": 485,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 485,
+          "median_error_pct": 0.658987,
+          "p90_error_pct": 2.497929,
+          "max_error_pct": 4.669601,
+          "within_2pct": 409,
+          "within_5pct": 485
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "\u00a7102 Piezoelectric d\u2083\u2083",
+          "records": 10,
+          "median_error_pct": 0.10923
+        },
+        {
+          "property": "\u00a7103 Thermoelectric ZT",
+          "records": 10,
+          "median_error_pct": 0.112001
+        },
+        {
+          "property": "\u00a7105 Autoignition T",
+          "records": 12,
+          "median_error_pct": 0.121334
+        },
+        {
+          "property": "\u00a713 \u03c7m Magnetic",
+          "records": 12,
+          "median_error_pct": 0.483271
+        },
+        {
+          "property": "\u00a727 Boiling Points",
+          "records": 15,
+          "median_error_pct": 0.792126
+        },
+        {
+          "property": "\u00a728 Melting Points",
+          "records": 15,
+          "median_error_pct": 1.081167
+        },
+        {
+          "property": "\u00a729 Dielectric \u03b5r",
+          "records": 15,
+          "median_error_pct": 0.802701
+        },
+        {
+          "property": "\u00a730 Refractive nD",
+          "records": 15,
+          "median_error_pct": 0.640992
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Fluid_Dynamics",
+      "lean_domain": "energy",
+      "domain_scalar_S": -0.562733806256851,
+      "neurolab_scalar_sign": "negative",
+      "lean_sign_positive": true,
+      "sign_mismatch": true,
+      "record_count": 1,
+      "median_error_pct": 0.7000000000000028,
+      "p90_error_pct": 0.7000000000000028,
+      "max_error_pct": 0.7000000000000028,
+      "within_2pct": 1,
+      "within_5pct": 1,
+      "precision_status": "sign_mismatch",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "trinary_fluid_computer",
+          "record_count": 1,
+          "median_error_pct": 0.7000000000000028,
+          "p90_error_pct": 0.7000000000000028,
+          "max_error_pct": 0.7000000000000028,
+          "within_2pct": 1,
+          "within_5pct": 1
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "engine_accuracy",
+          "records": 1,
+          "median_error_pct": 0.7000000000000028
+        }
+      ],
+      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+    },
+    {
+      "neurolab_domain": "Geophysics",
+      "lean_domain": "energy",
+      "domain_scalar_S": -0.5490942927204095,
+      "neurolab_scalar_sign": "negative",
+      "lean_sign_positive": true,
+      "sign_mismatch": true,
+      "record_count": 47,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.0,
+      "max_error_pct": 0.0,
+      "within_2pct": 47,
+      "within_5pct": 47,
+      "precision_status": "sign_mismatch",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "weather_lab",
+          "record_count": 47,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 0.0,
+          "within_2pct": 47,
+          "within_5pct": 47
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "stability_classifier",
+          "records": 47,
+          "median_error_pct": 0.0
+        }
+      ],
+      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+    },
+    {
+      "neurolab_domain": "High_Energy_Physics",
+      "lean_domain": "higgs",
+      "domain_scalar_S": 0.8862640566467022,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 0,
+      "median_error_pct": null,
+      "p90_error_pct": null,
+      "max_error_pct": null,
+      "within_2pct": 0,
+      "within_5pct": 0,
+      "precision_status": "no_numeric_records",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 0,
+          "median_error_pct": null,
+          "p90_error_pct": null,
+          "max_error_pct": null,
+          "within_2pct": 0,
+          "within_5pct": 0
+        }
+      ],
+      "top_properties": [],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Materials_Science",
+      "lean_domain": "material",
+      "domain_scalar_S": 0.33525988073638374,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 1169,
+      "median_error_pct": 0.272464,
+      "p90_error_pct": 1.502909,
+      "max_error_pct": 4.669601,
+      "within_2pct": 1093,
+      "within_5pct": 1169,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 485,
+          "median_error_pct": 0.658987,
+          "p90_error_pct": 2.497929,
+          "max_error_pct": 4.669601,
+          "within_2pct": 409,
+          "within_5pct": 485
+        },
+        {
+          "lab": "species_catalog",
+          "record_count": 684,
+          "median_error_pct": 0.09045,
+          "p90_error_pct": 0.6805,
+          "max_error_pct": 0.9952,
+          "within_2pct": 684,
+          "within_5pct": 684
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "acoustic_imp_MRayl",
+          "records": 9,
+          "median_error_pct": 0.0835
+        },
+        {
+          "property": "autoignition_K",
+          "records": 12,
+          "median_error_pct": 0.0863
+        },
+        {
+          "property": "band_gap_eV",
+          "records": 11,
+          "median_error_pct": 0.0025363868782773526
+        },
+        {
+          "property": "boiling_K",
+          "records": 15,
+          "median_error_pct": 0.2743
+        },
+        {
+          "property": "bulk_GPa",
+          "records": 33,
+          "median_error_pct": 0.0173
+        },
+        {
+          "property": "cohesive_eV",
+          "records": 33,
+          "median_error_pct": 0.0012311360683454771
+        },
+        {
+          "property": "compressibility_1e_11_Pa",
+          "records": 12,
+          "median_error_pct": 0.0607
+        },
+        {
+          "property": "cp_J_molK",
+          "records": 27,
+          "median_error_pct": 0.5025
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Meteorology",
+      "lean_domain": "energy",
+      "domain_scalar_S": -0.4849970208468799,
+      "neurolab_scalar_sign": "negative",
+      "lean_sign_positive": true,
+      "sign_mismatch": true,
+      "record_count": 47,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.0,
+      "max_error_pct": 0.0,
+      "within_2pct": 47,
+      "within_5pct": 47,
+      "precision_status": "sign_mismatch",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "weather_lab",
+          "record_count": 47,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 0.0,
+          "within_2pct": 47,
+          "within_5pct": 47
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "stability_classifier",
+          "records": 47,
+          "median_error_pct": 0.0
+        }
+      ],
+      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+    },
+    {
+      "neurolab_domain": "Molecular_Chemistry",
+      "lean_domain": "chemical",
+      "domain_scalar_S": 0.3345733830778106,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 608,
+      "median_error_pct": 0.41124649999999996,
+      "p90_error_pct": 2.411449,
+      "max_error_pct": 4.841504,
+      "within_2pct": 529,
+      "within_5pct": 608,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 608,
+          "median_error_pct": 0.41124649999999996,
+          "p90_error_pct": 2.411449,
+          "max_error_pct": 4.841504,
+          "within_2pct": 529,
+          "within_5pct": 608
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "\u00a71 Foundation",
+          "records": 68,
+          "median_error_pct": 0.022023
+        },
+        {
+          "property": "\u00a710 \u0394G\u00b0f",
+          "records": 11,
+          "median_error_pct": 0.415811
+        },
+        {
+          "property": "\u00a7100 Solvatochromic E_T(30)",
+          "records": 14,
+          "median_error_pct": 0.084751
+        },
+        {
+          "property": "\u00a7101 Atomization \u0394H_at",
+          "records": 16,
+          "median_error_pct": 0.033627
+        },
+        {
+          "property": "\u00a7104 Molar Volume V_m",
+          "records": 12,
+          "median_error_pct": 0.052537
+        },
+        {
+          "property": "\u00a7106 Isotope Frac \u2030",
+          "records": 10,
+          "median_error_pct": 0.121027
+        },
+        {
+          "property": "\u00a7107 Electrode Ext E\u00b0",
+          "records": 12,
+          "median_error_pct": 0.19301
+        },
+        {
+          "property": "\u00a711 IE\u2082",
+          "records": 15,
+          "median_error_pct": 0.527043
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Neuroscience",
+      "lean_domain": "neural",
+      "domain_scalar_S": 0.5143619629083619,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 44,
+      "median_error_pct": 1.2044815,
+      "p90_error_pct": 22.104086005830943,
+      "max_error_pct": 35.479861060568474,
+      "within_2pct": 28,
+      "within_5pct": 39,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 39,
+          "median_error_pct": 1.025856,
+          "p90_error_pct": 3.354256,
+          "max_error_pct": 4.305297,
+          "within_2pct": 28,
+          "within_5pct": 39
+        },
+        {
+          "lab": "neuron_cohort_lab",
+          "record_count": 5,
+          "median_error_pct": 29.59837154055862,
+          "p90_error_pct": 35.479861060568474,
+          "max_error_pct": 35.479861060568474,
+          "within_2pct": 0,
+          "within_5pct": 0
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "cohort_fi_proxy",
+          "records": 1,
+          "median_error_pct": 24.522634418835963
+        },
+        {
+          "property": "stratum",
+          "records": 4,
+          "median_error_pct": 29.72767467532461
+        },
+        {
+          "property": "\u00a719 NMR \u03b4",
+          "records": 12,
+          "median_error_pct": 0.451494
+        },
+        {
+          "property": "\u00a752 \u00b9\u00b3C NMR \u03b4",
+          "records": 15,
+          "median_error_pct": 1.025856
+        },
+        {
+          "property": "\u00a753 Fluorescence \u03a6f",
+          "records": 12,
+          "median_error_pct": 1.509076
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Nuclear_Physics",
+      "lean_domain": "nuclear",
+      "domain_scalar_S": 0.9213094330291355,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 51,
+      "median_error_pct": 0.82106,
+      "p90_error_pct": 2.165674,
+      "max_error_pct": 4.673928,
+      "within_2pct": 44,
+      "within_5pct": 51,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 51,
+          "median_error_pct": 0.82106,
+          "p90_error_pct": 2.165674,
+          "max_error_pct": 4.673928,
+          "within_2pct": 44,
+          "within_5pct": 51
+        },
+        {
+          "lab": "blackhole_thesis",
+          "record_count": 0,
+          "median_error_pct": null,
+          "p90_error_pct": null,
+          "max_error_pct": null,
+          "within_2pct": 0,
+          "within_5pct": 0
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "\u00a742 Binding E/A",
+          "records": 15,
+          "median_error_pct": 0.230975
+        },
+        {
+          "property": "\u00a764 Neutron \u03c3_a",
+          "records": 12,
+          "median_error_pct": 1.208837
+        },
+        {
+          "property": "\u00a767 Nuclear \u03bcN",
+          "records": 12,
+          "median_error_pct": 1.103988
+        },
+        {
+          "property": "\u00a782 M\u00f6ssbauer IS",
+          "records": 12,
+          "median_error_pct": 1.386517
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Oceanography",
+      "lean_domain": "energy",
+      "domain_scalar_S": -0.37715907584612024,
+      "neurolab_scalar_sign": "negative",
+      "lean_sign_positive": true,
+      "sign_mismatch": true,
+      "record_count": 47,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.0,
+      "max_error_pct": 0.0,
+      "within_2pct": 47,
+      "within_5pct": 47,
+      "precision_status": "sign_mismatch",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "weather_lab",
+          "record_count": 47,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 0.0,
+          "within_2pct": 47,
+          "within_5pct": 47
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "stability_classifier",
+          "records": 47,
+          "median_error_pct": 0.0
+        }
+      ],
+      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+    },
+    {
+      "neurolab_domain": "Optics",
+      "lean_domain": "material",
+      "domain_scalar_S": 0.4080624712153455,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 485,
+      "median_error_pct": 0.658987,
+      "p90_error_pct": 2.497929,
+      "max_error_pct": 4.669601,
+      "within_2pct": 409,
+      "within_5pct": 485,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 485,
+          "median_error_pct": 0.658987,
+          "p90_error_pct": 2.497929,
+          "max_error_pct": 4.669601,
+          "within_2pct": 409,
+          "within_5pct": 485
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "\u00a7102 Piezoelectric d\u2083\u2083",
+          "records": 10,
+          "median_error_pct": 0.10923
+        },
+        {
+          "property": "\u00a7103 Thermoelectric ZT",
+          "records": 10,
+          "median_error_pct": 0.112001
+        },
+        {
+          "property": "\u00a7105 Autoignition T",
+          "records": 12,
+          "median_error_pct": 0.121334
+        },
+        {
+          "property": "\u00a713 \u03c7m Magnetic",
+          "records": 12,
+          "median_error_pct": 0.483271
+        },
+        {
+          "property": "\u00a727 Boiling Points",
+          "records": 15,
+          "median_error_pct": 0.792126
+        },
+        {
+          "property": "\u00a728 Melting Points",
+          "records": 15,
+          "median_error_pct": 1.081167
+        },
+        {
+          "property": "\u00a729 Dielectric \u03b5r",
+          "records": 15,
+          "median_error_pct": 0.802701
+        },
+        {
+          "property": "\u00a730 Refractive nD",
+          "records": 15,
+          "median_error_pct": 0.640992
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Particle_Astrophysics",
+      "lean_domain": "cmb",
+      "domain_scalar_S": -0.424411720028886,
+      "neurolab_scalar_sign": "negative",
+      "lean_sign_positive": false,
+      "sign_mismatch": false,
+      "record_count": 16,
+      "median_error_pct": 0.010466357473454788,
+      "p90_error_pct": 0.06890100520055274,
+      "max_error_pct": 0.23468225112121452,
+      "within_2pct": 16,
+      "within_5pct": 16,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "cosmology_wave4",
+          "record_count": 16,
+          "median_error_pct": 0.010466357473454788,
+          "p90_error_pct": 0.06890100520055274,
+          "max_error_pct": 0.23468225112121452,
+          "within_2pct": 16,
+          "within_5pct": 16
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "wave4",
+          "records": 16,
+          "median_error_pct": 0.011586387979935279
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Particle_Physics",
+      "lean_domain": "particle",
+      "domain_scalar_S": 0.9504134401245242,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 36,
+      "median_error_pct": 0.9320035,
+      "p90_error_pct": 3.81752,
+      "max_error_pct": 4.499825,
+      "within_2pct": 23,
+      "within_5pct": 36,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 36,
+          "median_error_pct": 0.9320035,
+          "p90_error_pct": 3.81752,
+          "max_error_pct": 4.499825,
+          "within_2pct": 23,
+          "within_5pct": 36
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "\u00a766 Particle Masses",
+          "records": 12,
+          "median_error_pct": 0.784358
+        },
+        {
+          "property": "\u00a778 X-ray K\u03b1 Energy",
+          "records": 12,
+          "median_error_pct": 2.352752
+        },
+        {
+          "property": "\u00a788 XPS 1s Binding E",
+          "records": 12,
+          "median_error_pct": 1.050199
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Physical_Chemistry",
+      "lean_domain": "chemical",
+      "domain_scalar_S": 0.33401327040170914,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 608,
+      "median_error_pct": 0.41124649999999996,
+      "p90_error_pct": 2.411449,
+      "max_error_pct": 4.841504,
+      "within_2pct": 529,
+      "within_5pct": 608,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 608,
+          "median_error_pct": 0.41124649999999996,
+          "p90_error_pct": 2.411449,
+          "max_error_pct": 4.841504,
+          "within_2pct": 529,
+          "within_5pct": 608
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "\u00a71 Foundation",
+          "records": 68,
+          "median_error_pct": 0.022023
+        },
+        {
+          "property": "\u00a710 \u0394G\u00b0f",
+          "records": 11,
+          "median_error_pct": 0.415811
+        },
+        {
+          "property": "\u00a7100 Solvatochromic E_T(30)",
+          "records": 14,
+          "median_error_pct": 0.084751
+        },
+        {
+          "property": "\u00a7101 Atomization \u0394H_at",
+          "records": 16,
+          "median_error_pct": 0.033627
+        },
+        {
+          "property": "\u00a7104 Molar Volume V_m",
+          "records": 12,
+          "median_error_pct": 0.052537
+        },
+        {
+          "property": "\u00a7106 Isotope Frac \u2030",
+          "records": 10,
+          "median_error_pct": 0.121027
+        },
+        {
+          "property": "\u00a7107 Electrode Ext E\u00b0",
+          "records": 12,
+          "median_error_pct": 0.19301
+        },
+        {
+          "property": "\u00a711 IE\u2082",
+          "records": 15,
+          "median_error_pct": 0.527043
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Planetary_Science",
+      "lean_domain": "galactic",
+      "domain_scalar_S": 0.7671791385407586,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 16,
+      "median_error_pct": 0.010466357473454788,
+      "p90_error_pct": 0.06890100520055274,
+      "max_error_pct": 0.23468225112121452,
+      "within_2pct": 16,
+      "within_5pct": 16,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "cosmology_wave4",
+          "record_count": 16,
+          "median_error_pct": 0.010466357473454788,
+          "p90_error_pct": 0.06890100520055274,
+          "max_error_pct": 0.23468225112121452,
+          "within_2pct": 16,
+          "within_5pct": 16
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "wave4",
+          "records": 16,
+          "median_error_pct": 0.011586387979935279
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Psychology",
+      "lean_domain": "consciousness",
+      "domain_scalar_S": 1.050205640397955,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 10,
+      "median_error_pct": -0.0007873774796219538,
+      "p90_error_pct": 0.0005995452654275573,
+      "max_error_pct": 0.002670068252275115,
+      "within_2pct": 10,
+      "within_5pct": 10,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "linguistics_lab",
+          "record_count": 10,
+          "median_error_pct": -0.0007873774796219538,
+          "p90_error_pct": 0.0005995452654275573,
+          "max_error_pct": 0.002670068252275115,
+          "within_2pct": 10,
+          "within_5pct": 10
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "unknown",
+          "records": 10,
+          "median_error_pct": -0.00036899321083823844
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Quantum_Computing",
+      "lean_domain": "ai",
+      "domain_scalar_S": -0.14767310363368644,
+      "neurolab_scalar_sign": "negative",
+      "lean_sign_positive": false,
+      "sign_mismatch": false,
+      "record_count": 3,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.0,
+      "max_error_pct": 0.0,
+      "within_2pct": 3,
+      "within_5pct": 3,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "trinary_os",
+          "record_count": 3,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 0.0,
+          "within_2pct": 3,
+          "within_5pct": 3
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "oracle_panel",
+          "records": 3,
+          "median_error_pct": 0.0
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Quantum_Gravity",
+      "lean_domain": "blackhole",
+      "domain_scalar_S": -0.5255977531899868,
+      "neurolab_scalar_sign": "negative",
+      "lean_sign_positive": true,
+      "sign_mismatch": true,
+      "record_count": 0,
+      "median_error_pct": null,
+      "p90_error_pct": null,
+      "max_error_pct": null,
+      "within_2pct": 0,
+      "within_5pct": 0,
+      "precision_status": "sign_mismatch",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "blackhole_thesis",
+          "record_count": 0,
+          "median_error_pct": null,
+          "p90_error_pct": null,
+          "max_error_pct": null,
+          "within_2pct": 0,
+          "within_5pct": 0
+        }
+      ],
+      "top_properties": [],
+      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+    },
+    {
+      "neurolab_domain": "Quantum_Mechanics",
+      "lean_domain": "quantum",
+      "domain_scalar_S": 0.9555063001027196,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 24,
+      "median_error_pct": 1.230796,
+      "p90_error_pct": 2.817834,
+      "max_error_pct": 3.869913,
+      "within_2pct": 18,
+      "within_5pct": 24,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 24,
+          "median_error_pct": 1.230796,
+          "p90_error_pct": 2.817834,
+          "max_error_pct": 3.869913,
+          "within_2pct": 18,
+          "within_5pct": 24
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "\u00a731 Band Gaps",
+          "records": 12,
+          "median_error_pct": 1.075916
+        },
+        {
+          "property": "\u00a777 Effective Mass m*",
+          "records": 12,
+          "median_error_pct": 1.890384
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Quantum_Optics",
+      "lean_domain": "quantum",
+      "domain_scalar_S": 0.4081705381715019,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 24,
+      "median_error_pct": 1.230796,
+      "p90_error_pct": 2.817834,
+      "max_error_pct": 3.869913,
+      "within_2pct": 18,
+      "within_5pct": 24,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "smiles_lab",
+          "record_count": 24,
+          "median_error_pct": 1.230796,
+          "p90_error_pct": 2.817834,
+          "max_error_pct": 3.869913,
+          "within_2pct": 18,
+          "within_5pct": 24
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "\u00a731 Band Gaps",
+          "records": 12,
+          "median_error_pct": 1.075916
+        },
+        {
+          "property": "\u00a777 Effective Mass m*",
+          "records": 12,
+          "median_error_pct": 1.890384
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Seismology",
+      "lean_domain": "energy",
+      "domain_scalar_S": -0.4459015721103038,
+      "neurolab_scalar_sign": "negative",
+      "lean_sign_positive": true,
+      "sign_mismatch": true,
+      "record_count": 47,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.0,
+      "max_error_pct": 0.0,
+      "within_2pct": 47,
+      "within_5pct": 47,
+      "precision_status": "sign_mismatch",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "weather_lab",
+          "record_count": 47,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 0.0,
+          "within_2pct": 47,
+          "within_5pct": 47
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "stability_classifier",
+          "records": 47,
+          "median_error_pct": 0.0
+        }
+      ],
+      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+    },
+    {
+      "neurolab_domain": "Sociology",
+      "lean_domain": "consciousness",
+      "domain_scalar_S": 0.6501466524159132,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 10,
+      "median_error_pct": -0.0007873774796219538,
+      "p90_error_pct": 0.0005995452654275573,
+      "max_error_pct": 0.002670068252275115,
+      "within_2pct": 10,
+      "within_5pct": 10,
+      "precision_status": "target_band",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "linguistics_lab",
+          "record_count": 10,
+          "median_error_pct": -0.0007873774796219538,
+          "p90_error_pct": 0.0005995452654275573,
+          "max_error_pct": 0.002670068252275115,
+          "within_2pct": 10,
+          "within_5pct": 10
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "unknown",
+          "records": 10,
+          "median_error_pct": -0.00036899321083823844
+        }
+      ],
+      "diagnostic": null
+    },
+    {
+      "neurolab_domain": "Thermodynamics",
+      "lean_domain": "energy",
+      "domain_scalar_S": 0.7869745016115727,
+      "neurolab_scalar_sign": "positive",
+      "lean_sign_positive": true,
+      "sign_mismatch": false,
+      "record_count": 6,
+      "median_error_pct": 6.5,
+      "p90_error_pct": 20.000000000000007,
+      "max_error_pct": 20.000000000000007,
+      "within_2pct": 2,
+      "within_5pct": 3,
+      "precision_status": "unacceptable",
+      "huge_gap": false,
+      "labs": [
+        {
+          "lab": "fuel_lab",
+          "record_count": 6,
+          "median_error_pct": 6.5,
+          "p90_error_pct": 20.000000000000007,
+          "max_error_pct": 20.000000000000007,
+          "within_2pct": 2,
+          "within_5pct": 3
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "fsot_algae_oil_biodiesel",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "fsot_green_hydrogen",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "fsot_hemp_eco_blend",
+          "records": 1,
+          "median_error_pct": 3.0000000000000027
+        },
+        {
+          "property": "fsot_hemp_waste_advanced",
+          "records": 1,
+          "median_error_pct": 12.00000000000001
+        },
+        {
+          "property": "fsot_mushroom_spore_fuel",
+          "records": 1,
+          "median_error_pct": 9.999999999999998
+        },
+        {
+          "property": "fsot_waste_hemp_blend",
+          "records": 1,
+          "median_error_pct": 20.000000000000007
+        }
+      ],
+      "diagnostic": null
+    }
+  ]
+}

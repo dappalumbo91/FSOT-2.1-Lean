@@ -72,6 +72,7 @@ LEAN_TARGETS = [
     "FSOT.Formal.MagicCirclePriors",
     "FSOT.Formal.ExperimentSynthesisPriors",
     "FSOT.Formal.DomainCoveragePriors",
+    "FSOT.Formal.DomainPrecisionPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

@@ -626,6 +626,60 @@ def main() -> int:
             if proc_dv.returncode != 0:
                 issues.append("35-domain coverage verification failed")
 
+        # Tier 10: per-record numeric precision + observed-data benchmarks
+        for fetch_name in (
+            "fetch_weather_observed_benchmark.py",
+            "fetch_evolution_operon_benchmark.py",
+        ):
+            fetch_script = ROOT / "scripts" / fetch_name
+            if fetch_script.exists():
+                proc_fb = subprocess.run(
+                    [sys.executable, str(fetch_script)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_fb.stdout.strip() or proc_fb.stderr.strip())
+                if proc_fb.returncode != 0:
+                    issues.append(f"{fetch_name} failed")
+        precision_eval = ROOT / "scripts" / "run_domain_precision_eval.py"
+        precision_gen = ROOT / "scripts" / "gen_domain_precision_lean.py"
+        if precision_eval.exists():
+            proc_pe = subprocess.run(
+                [sys.executable, str(precision_eval)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_pe.stdout.strip() or proc_pe.stderr.strip())
+            if proc_pe.returncode != 0:
+                issues.append("domain precision eval failed")
+            elif precision_gen.exists():
+                proc_pg = subprocess.run(
+                    [sys.executable, str(precision_gen)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_pg.stdout.strip() or proc_pg.stderr.strip())
+                if proc_pg.returncode != 0:
+                    issues.append("DomainPrecisionPriors.lean generation failed")
+        precision_verify = ROOT / "scripts" / "verify_domain_precision.py"
+        if precision_verify.exists():
+            proc_pv = subprocess.run(
+                [sys.executable, str(precision_verify)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_pv.stdout.strip())
+            if proc_pv.returncode != 0:
+                issues.append("domain precision verification failed")
+
         parse_bio = ROOT / "scripts" / "parse_neurolab_translations.py"
         verify_bio = ROOT / "scripts" / "verify_neurolab_bio.py"
         if parse_bio.exists():
