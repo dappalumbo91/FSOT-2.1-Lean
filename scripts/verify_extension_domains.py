@@ -31,7 +31,7 @@ def main() -> int:
             issues.append(f"{name}: missing {path}")
             continue
         doc = json.loads(path.read_text(encoding="utf-8"))
-        n = doc.get("record_count") or len(doc.get("records") or [])
+        n = doc.get("record_count") or doc.get("month_count") or len(doc.get("records") or [])
         med = doc.get("median_error_pct")
         print(f"  {name}: records={n} median_err={med}")
         if n < min_records:

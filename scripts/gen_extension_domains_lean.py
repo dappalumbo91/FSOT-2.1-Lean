@@ -35,7 +35,11 @@ def _module_stem(name: str) -> str:
 
 def build_module(name: str, cfg: dict, bench: dict) -> str:
     stem = _module_stem(name)
-    n = int(bench.get("record_count") or len(bench.get("records") or []))
+    n = int(
+        bench.get("record_count")
+        or bench.get("month_count")
+        or len(bench.get("records") or [])
+    )
     med = bench.get("median_error_pct")
     med = 0.0 if med is None else float(med)
     d_eff = int(cfg.get("D_eff", 12))

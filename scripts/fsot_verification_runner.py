@@ -687,7 +687,8 @@ def main() -> int:
             "build_biology_strict_empirical.py",
             "build_plasma_physics_benchmark.py",
             "build_immunology_benchmark.py",
-            "fetch_climate_observed_benchmark.py",
+            "ingest_climate_ncei_chunked.py",
+            "build_climate_observed_benchmark.py",
         ):
             script = ROOT / "scripts" / bench_script
             if script.exists():

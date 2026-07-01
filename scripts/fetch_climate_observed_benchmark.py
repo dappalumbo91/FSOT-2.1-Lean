@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sample NOAA-class climate reanalysis via Open-Meteo (lightweight monthly subset)."""
+"""Open-Meteo fallback climate benchmark (use build_climate_observed_benchmark.py for NCEI)."""
 
 from __future__ import annotations
 

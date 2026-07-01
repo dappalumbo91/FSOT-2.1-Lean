@@ -1,0 +1,65 @@
+# NOAA NCEI GHCND chunked ingest — memory-safe year-by-year streaming.
+version: "1.0"
+updated: "2026-07-01"
+
+source:
+  name: NOAA_NCEI_GHCND
+  description: Global Historical Climatology Network Daily (by-year CSV.gz)
+  base_url: "https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/by_year"
+  api_fallback:
+    name: NOAA_CDO_API_v2
+    base_url: "https://www.ncei.noaa.gov/cdo-web/api/v2/data"
+    token_env: NOAA_TOKEN
+    dataset: GHCND
+
+cache:
+  root: data/climate_cache
+  chunks_dir: data/climate_cache/chunks
+  state_file: data/climate_cache/ingest_state.json
+
+# Reference US climate stations (GHCND IDs)
+stations:
+  - id: USC00053005
+    name: Denver/Centennial CO
+    lat: 39.74
+    lon: -104.99
+  - id: USW00014922
+    name: Sioux City IA
+    lat: 42.45
+    lon: -96.38
+  - id: USW00094728
+    name: New York Central Park NY
+    lat: 40.78
+    lon: -73.97
+  - id: USW00023104
+    name: Los Angeles CA
+    lat: 33.94
+    lon: -118.41
+  - id: USW00012960
+    name: Houston TX
+    lat: 29.76
+    lon: -95.37
+  - id: USW00024233
+    name: Seattle WA
+    lat: 47.45
+    lon: -122.31
+  - id: USW00013881
+    name: Atlanta GA
+    lat: 33.64
+    lon: -84.43
+  - id: USW00023169
+    name: Phoenix AZ
+    lat: 33.43
+    lon: -112.02
+
+ingest:
+  start_year: 1995
+  end_year: 2024
+  elements: [TMAX, TMIN, TAVG, PRCP]
+  chunk_key_format: "{station_id}_{year}"
+
+benchmark:
+  output: data/climate_observed_benchmark.json
+  anomaly_tolerance_c: 2.5
+  D_eff: 16
+  min_months_total: 120
