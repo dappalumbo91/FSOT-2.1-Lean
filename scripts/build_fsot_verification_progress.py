@@ -64,6 +64,9 @@ def build_progress() -> dict:
     orbital_bench = _load_json(ROOT / "data" / "orbital_mechanics_benchmark.json")
     small_body_bench = _load_json(ROOT / "data" / "small_body_orbits_benchmark.json")
     magnetosphere_bench = _load_json(ROOT / "data" / "magnetosphere_benchmark.json")
+    grace_cryosphere_bench = _load_json(ROOT / "data" / "grace_cryosphere_benchmark.json")
+    seismology_deep_bench = _load_json(ROOT / "data" / "seismology_deep_benchmark.json")
+    planetary_atmospheres_bench = _load_json(ROOT / "data" / "planetary_atmospheres_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -506,6 +509,35 @@ def build_progress() -> dict:
                 "FSOT.Formal.MagnetospherePriors",
             ],
         },
+        {
+            "tier": 23,
+            "name": "GRACE cryosphere + seismology deep + planetary atmospheres",
+            "status": "complete"
+            if grace_cryosphere_bench.get("observable_count", 0) >= 120
+            and grace_cryosphere_bench.get("stability_match_rate", 0) >= 0.5
+            and seismology_deep_bench.get("observable_count", 0) >= 80
+            and seismology_deep_bench.get("stability_match_rate", 0) >= 0.5
+            and planetary_atmospheres_bench.get("observable_count", 0) >= 4
+            and _median_error(planetary_atmospheres_bench, "median_error_pct") <= 5.0
+            else "pending",
+            "metrics": {
+                "grace_cryosphere_months": grace_cryosphere_bench.get("observable_count"),
+                "grace_cryosphere_match_rate": grace_cryosphere_bench.get("stability_match_rate"),
+                "seismology_deep_observables": seismology_deep_bench.get("observable_count"),
+                "seismology_deep_match_rate": seismology_deep_bench.get("stability_match_rate"),
+                "seismology_deep_holdout_match_rate": seismology_deep_bench.get("holdout_match_rate"),
+                "planetary_atmospheres_observables": planetary_atmospheres_bench.get("observable_count"),
+                "planetary_atmospheres_median_error_pct": planetary_atmospheres_bench.get("median_error_pct"),
+            },
+            "artifacts": [
+                "data/grace_cryosphere_manifest.yaml",
+                "data/seismology_deep_manifest.yaml",
+                "data/planetary_atmospheres_manifest.yaml",
+                "FSOT.Formal.GraceCryospherePriors",
+                "FSOT.Formal.SeismologyDeepPriors",
+                "FSOT.Formal.PlanetaryAtmospheresPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -532,7 +564,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 22 Small-body orbits + magnetosphere coupling",
+        "current_position": "Tier 23 GRACE cryosphere + seismology deep + planetary atmospheres",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

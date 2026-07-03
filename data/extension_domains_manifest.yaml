@@ -215,6 +215,48 @@ extension_domains:
     lean_module: FSOT.Formal.MagnetospherePriors
     note: "Coupled Dst+Kp storm classifier crosswalk to Geomagnetism/SpaceWeather/MagneticString"
 
+  Grace_Cryosphere:
+    tier: 23
+    D_eff: 16
+    delta_psi: 0.76
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [galactic, energy]
+    ingest_script: scripts/ingest_grace_greenland.py
+    build_script: scripts/build_grace_cryosphere_benchmark.py
+    manifest: data/grace_cryosphere_manifest.yaml
+    benchmark_data: data/grace_cryosphere_benchmark.json
+    lean_module: FSOT.Formal.GraceCryospherePriors
+    note: "GFZ GravIS Greenland monthly mass-decline directional classifier (GRACE/GRACE-FO)"
+
+  Seismology_Deep:
+    tier: 23
+    D_eff: 18
+    delta_psi: 1.0
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy]
+    ingest_script: scripts/ingest_seismology_deep_usgs.py
+    build_script: scripts/build_seismology_deep_benchmark.py
+    manifest: data/seismology_deep_manifest.yaml
+    benchmark_data: data/seismology_deep_benchmark.json
+    lean_module: FSOT.Formal.SeismologyDeepPriors
+    note: "USGS moment-tensor quality + PB2002 plate-margin holdout (Pacific ring)"
+
+  Planetary_Atmospheres:
+    tier: 23
+    D_eff: 16
+    delta_psi: 0.82
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [galactic, astronomical]
+    ingest_script: scripts/ingest_planetary_atmospheres_jpl.py
+    build_script: scripts/build_planetary_atmospheres_benchmark.py
+    manifest: data/planetary_atmospheres_manifest.yaml
+    benchmark_data: data/planetary_atmospheres_benchmark.json
+    lean_module: FSOT.Formal.PlanetaryAtmospheresPriors
+    note: "Mars/Venus JPL Horizons pressure/temperature + Titan NASA fact-sheet reference"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

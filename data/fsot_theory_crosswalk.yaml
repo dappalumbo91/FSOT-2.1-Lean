@@ -97,6 +97,27 @@ verified_extension_domains:
     labs: [magnetosphere_lab, geomagnetism_lab, space_weather_lab, magnetic_string]
     lean_modules: [FSOT.Formal.MagnetospherePriors, FSOT.Formal.GeomagnetismPriors, FSOT.Formal.SpaceWeatherPriors, FSOT.Formal.MagneticStringPriors]
 
+  Grace_Cryosphere:
+    tier: 23
+    D_eff: 16
+    maps_to_lean: [galactic, energy]
+    labs: [grace_cryosphere_lab, cryosphere_lab]
+    lean_modules: [FSOT.Formal.GraceCryospherePriors, FSOT.Formal.CryospherePriors]
+
+  Seismology_Deep:
+    tier: 23
+    D_eff: 18
+    maps_to_lean: [energy]
+    labs: [seismology_deep_lab, seismology_lab, tectonics_lab]
+    lean_modules: [FSOT.Formal.SeismologyDeepPriors, FSOT.Formal.SeismologyPriors, FSOT.Formal.TectonicsPriors]
+
+  Planetary_Atmospheres:
+    tier: 23
+    D_eff: 16
+    maps_to_lean: [galactic, astronomical]
+    labs: [planetary_atmospheres_lab, planetary_structure_lab]
+    lean_modules: [FSOT.Formal.PlanetaryAtmospheresPriors, FSOT.Formal.PlanetaryStructurePriors]
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

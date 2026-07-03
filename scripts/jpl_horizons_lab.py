@@ -41,6 +41,16 @@ PLANET_COMMANDS = {
     "Neptune": "899",
 }
 
+ATMOSPHERE_BODY_COMMANDS = {
+    "Mars": ("499", "@10"),
+    "Venus": ("299", "@10"),
+}
+
+# NASA Planetary Fact Sheet — Titan (Horizons lacks 1-bar atmosphere block for 606).
+NASA_ATMOSPHERE_REFERENCE = {
+    "Titan": {"pressure_bar": 1.476, "temperature_k": 93.7},
+}
+
 # NASA Planetary Fact Sheet semi-major axes (AU) — ephemeris reference for Kepler checks.
 NASA_SEMI_MAJOR_AU = {
     "Mercury": 0.387,
@@ -85,6 +95,16 @@ def _first_float(pattern: str, text: str) -> float | None:
     except ValueError:
         sub = re.search(r"[-+]?\d*\.\d+|\d+", raw)
         return float(sub.group(0)) if sub else None
+
+
+def parse_atmosphere_block(text: str) -> dict[str, Any]:
+    pressure = _first_float(r"Atmos\.\s*pressure\s*\(bar\)\s*=\s*([0-9.]+)", text)
+    if pressure is None:
+        pressure = _first_float(r"Atmos\.\s*pressure\s*\(bar\)\s*=\s*([0-9.Ee+-]+)", text)
+    temp = _first_float(r"Mean\s+[Tt]emperature\s*\(K\)\s*=\s*([0-9.]+)", text)
+    if temp is None:
+        temp = _first_float(r"Atmos\.\s*temp\.\s*\(1\s*bar\)\s*=\s*([0-9.]+)", text)
+    return {"pressure_bar": pressure, "temperature_k": temp}
 
 
 def parse_physical_block(text: str) -> dict[str, Any]:

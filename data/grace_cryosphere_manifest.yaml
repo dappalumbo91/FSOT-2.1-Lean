@@ -1,0 +1,24 @@
+# Tier 23 — GRACE/GRACE-FO Greenland ice-mass directional classifier (GFZ GravIS).
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  name: GFZ_GravIS_GIS
+  asc_url: https://isdc-data.gfz.de/grace/GravIS/GFZ/Level-3/ICE/GIS/GRAVIS-3_GFZOP_0600_GIS_BAVE_AWI_0005.asc
+  mass_column: 1
+  decline_threshold_gt: 0.0
+
+build:
+  ingest: scripts/ingest_grace_greenland.py
+  benchmark: scripts/build_grace_cryosphere_benchmark.py
+  output: data/grace_cryosphere_benchmark.json
+
+lean:
+  generator: scripts/gen_grace_cryosphere_lean.py
+  module: FSOT.Formal.GraceCryospherePriors
+  lean_domain: galactic
+  sign_theorem: galactic_raw_S_positive
+
+verification:
+  min_records: 120
+  min_stability_match_rate: 0.5

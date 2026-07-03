@@ -1,0 +1,70 @@
+{
+  "benchmark_version": "1.0",
+  "generated_at": "2026-07-03T16:40:49.574057+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "source": "JPL_Horizons_x_NASA_fact_sheets",
+  "record_count": 6,
+  "observable_count": 6,
+  "median_error_pct": 0.27137,
+  "D_eff": 16,
+  "crosswalk_modules": [
+    "FSOT.Formal.PlanetaryStructurePriors",
+    "FSOT.Formal.PlanetaryAtmospheresPriors"
+  ],
+  "records": [
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "surface_pressure",
+      "name": "Mars:surface_pressure",
+      "computed": 0.0056,
+      "measured": 0.00636,
+      "error_pct": 11.949686,
+      "within_tol": false
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Mars:mean_temperature",
+      "computed": 210.0,
+      "measured": 210.0,
+      "error_pct": 0.0,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "surface_pressure",
+      "name": "Venus:surface_pressure",
+      "computed": 90.0,
+      "measured": 92.0,
+      "error_pct": 2.173913,
+      "within_tol": false
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Venus:mean_temperature",
+      "computed": 735.0,
+      "measured": 737.0,
+      "error_pct": 0.27137,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "surface_pressure",
+      "name": "Titan:surface_pressure",
+      "computed": 1.476,
+      "measured": 1.476,
+      "error_pct": 0.0,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Titan:mean_temperature",
+      "computed": 93.7,
+      "measured": 93.7,
+      "error_pct": 0.0,
+      "within_tol": true
+    }
+  ]
+}

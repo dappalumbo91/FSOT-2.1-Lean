@@ -32,6 +32,9 @@ DEDICATED_GENERATORS = {
     "Orbital_Mechanics",
     "Small_Body_Orbits",
     "Magnetosphere",
+    "Grace_Cryosphere",
+    "Seismology_Deep",
+    "Planetary_Atmospheres",
 }
 
 LEAN_SIGN = {
@@ -51,6 +54,9 @@ LEAN_SIGN = {
     "Orbital_Mechanics": ("astronomical", "astronomical_raw_S_positive"),
     "Small_Body_Orbits": ("astronomical", "astronomical_raw_S_positive"),
     "Magnetosphere": ("electron", "electron_raw_S_positive"),
+    "Grace_Cryosphere": ("galactic", "galactic_raw_S_positive"),
+    "Seismology_Deep": ("energy", "energy_raw_S_positive"),
+    "Planetary_Atmospheres": ("galactic", "galactic_raw_S_positive"),
 }
 
 

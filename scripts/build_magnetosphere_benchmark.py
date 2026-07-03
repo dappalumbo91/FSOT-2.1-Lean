@@ -6,7 +6,6 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -20,18 +19,28 @@ MANIFEST = ROOT / "data" / "magnetosphere_manifest.yaml"
 OUTPUT = ROOT / "data" / "magnetosphere_benchmark.json"
 
 
-def _daily_max_kp(kp_cache_path: Path) -> dict[str, float]:
+def _kp_lookup(kp_cache_path: Path) -> dict[str, float]:
     doc = json.loads(kp_cache_path.read_text(encoding="utf-8"))
-    daily: dict[str, float] = defaultdict(float)
+    by_tag: dict[str, float] = {}
     for row in doc.get("records") or []:
         tag = row.get("time_tag") or ""
-        day = tag[:10]
-        if not day:
-            continue
-        kp = float(row.get("kp") or 0.0)
-        if kp > daily[day]:
-            daily[day] = kp
-    return dict(daily)
+        if tag:
+            by_tag[tag] = float(row.get("kp") or 0.0)
+    return by_tag
+
+
+def _aligned_kp(dst_tag: str, kp_by_tag: dict[str, float]) -> float:
+    """Map hourly Dst tag to the enclosing 3-hourly Kp interval."""
+    if dst_tag in kp_by_tag:
+        return kp_by_tag[dst_tag]
+    try:
+        hour = int(dst_tag[11:13])
+    except ValueError:
+        return 0.0
+    day = dst_tag[:10]
+    slot = (hour // 3) * 3
+    key = f"{day}T{slot:02d}:00:00"
+    return kp_by_tag.get(key, 0.0)
 
 
 def build(manifest_path: Path = MANIFEST) -> dict:
@@ -47,7 +56,7 @@ def build(manifest_path: Path = MANIFEST) -> dict:
         raise FileNotFoundError(f"Kp cache missing: {kp_path}")
 
     geo = json.loads(geo_path.read_text(encoding="utf-8"))
-    daily_kp = _daily_max_kp(kp_path)
+    kp_by_tag = _kp_lookup(kp_path)
     dst_thr = float(src["dst_storm_threshold"])
     kp_thr = float(src["kp_storm_threshold"])
     s_em_ref = float(src["magnetic_S_em"])
@@ -65,12 +74,11 @@ def build(manifest_path: Path = MANIFEST) -> dict:
         dst = row.get("dst")
         if dst is None or not tag:
             continue
-        day = tag[:10]
-        max_kp = daily_kp.get(day, 0.0)
-        observed_storm = float(dst) <= dst_thr or max_kp >= kp_thr
+        slot_kp = _aligned_kp(tag, kp_by_tag)
+        observed_storm = float(dst) <= dst_thr or slot_kp >= kp_thr
         adj_dst = dst_thr - abs(S_em) * 5.0
         adj_kp = kp_thr - abs(S_fusion) * 0.5
-        predicted_storm = float(dst) <= adj_dst or max_kp >= adj_kp
+        predicted_storm = float(dst) <= adj_dst or slot_kp >= adj_kp
         match = observed_storm == predicted_storm
         records.append(
             {
@@ -78,7 +86,7 @@ def build(manifest_path: Path = MANIFEST) -> dict:
                 "property": "coupled_dst_kp_storm_classifier",
                 "name": tag,
                 "dst_nt": float(dst),
-                "daily_max_kp": round(max_kp, 3),
+                "slot_kp": round(slot_kp, 3),
                 "magnetic_S_em": round(s_em_ref, 6),
                 "computed_storm": 1.0 if predicted_storm else 0.0,
                 "measured_storm": 1.0 if observed_storm else 0.0,

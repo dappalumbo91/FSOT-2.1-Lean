@@ -191,6 +191,9 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.OrbitalMechanicsPriors",
                 "FSOT.Formal.SmallBodyOrbitsPriors",
                 "FSOT.Formal.MagnetospherePriors",
+                "FSOT.Formal.GraceCryospherePriors",
+                "FSOT.Formal.SeismologyDeepPriors",
+                "FSOT.Formal.PlanetaryAtmospheresPriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -739,6 +742,12 @@ def main() -> int:
             "ingest_small_body_jpl.py",
             "build_small_body_orbits_benchmark.py",
             "build_magnetosphere_benchmark.py",
+            "ingest_grace_greenland.py",
+            "build_grace_cryosphere_benchmark.py",
+            "ingest_seismology_deep_usgs.py",
+            "build_seismology_deep_benchmark.py",
+            "ingest_planetary_atmospheres_jpl.py",
+            "build_planetary_atmospheres_benchmark.py",
             "build_plasma_physics_benchmark.py",
             "build_immunology_benchmark.py",
             "ingest_climate_ncei_chunked.py",
@@ -818,6 +827,9 @@ def main() -> int:
             (None, "gen_orbital_mechanics_lean.py", "OrbitalMechanicsPriors.lean generation failed", None),
             ("ingest_small_body_jpl.py", "gen_small_body_orbits_lean.py", "SmallBodyOrbitsPriors.lean generation failed", "small-body JPL ingest failed"),
             (None, "gen_magnetosphere_lean.py", "MagnetospherePriors.lean generation failed", None),
+            ("ingest_grace_greenland.py", "gen_grace_cryosphere_lean.py", "GraceCryospherePriors.lean generation failed", "GRACE Greenland ingest failed"),
+            ("ingest_seismology_deep_usgs.py", "gen_seismology_deep_lean.py", "SeismologyDeepPriors.lean generation failed", "seismology deep USGS ingest failed"),
+            ("ingest_planetary_atmospheres_jpl.py", "gen_planetary_atmospheres_lean.py", "PlanetaryAtmospheresPriors.lean generation failed", "planetary atmospheres JPL ingest failed"),
         ]
         for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
             if ingest_name:

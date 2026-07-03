@@ -1,4 +1,4 @@
-generated_at: '2026-07-03T16:28:37.565599+00:00'
+generated_at: '2026-07-03T16:42:05.467355+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,14 +6,14 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 71
+  lean_formal_modules: 74
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 20
-  tiers_total: 20
+  tiers_complete: 21
+  tiers_total: 21
   percent_complete: 100.0
-current_tier: Tier 22 Small-body orbits + magnetosphere coupling
+current_tier: Tier 23 GRACE cryosphere + seismology deep + planetary atmospheres
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -464,6 +464,7 @@ tier_coverage:
   - FormulaCorpusPriors
   - FuelPriors
   - GeomagnetismPriors
+  - GraceCryospherePriors
   - HiggsBranchingPriors
   - HydrologyPriors
   - ImmunologyPriors
@@ -483,9 +484,11 @@ tier_coverage:
   - ParticlePhysicsPriors
   - PharmacologyPriors
   - PhotonicForge
+  - PlanetaryAtmospheresPriors
   - PlanetaryStructurePriors
   - PlasmaPhysicsPriors
   - ProteinPriors
+  - SeismologyDeepPriors
   - SeismologyPriors
   - SmallBodyOrbitsPriors
   - SoulSiblingPriors
@@ -746,12 +749,30 @@ tier_coverage:
     small_body_orbit_count: 5
     small_body_median_error_pct: 0.014433
     magnetosphere_observables: 167
-    magnetosphere_match_rate: 0.7125748502994012
+    magnetosphere_match_rate: 0.9640718562874252
   artifacts:
   - data/small_body_orbits_manifest.yaml
   - data/magnetosphere_manifest.yaml
   - FSOT.Formal.SmallBodyOrbitsPriors
   - FSOT.Formal.MagnetospherePriors
+- tier: 23
+  name: GRACE cryosphere + seismology deep + planetary atmospheres
+  status: complete
+  metrics:
+    grace_cryosphere_months: 253
+    grace_cryosphere_match_rate: 0.9367588932806324
+    seismology_deep_observables: 1000
+    seismology_deep_match_rate: 0.81
+    seismology_deep_holdout_match_rate: 1.0
+    planetary_atmospheres_observables: 6
+    planetary_atmospheres_median_error_pct: 0.27137
+  artifacts:
+  - data/grace_cryosphere_manifest.yaml
+  - data/seismology_deep_manifest.yaml
+  - data/planetary_atmospheres_manifest.yaml
+  - FSOT.Formal.GraceCryospherePriors
+  - FSOT.Formal.SeismologyDeepPriors
+  - FSOT.Formal.PlanetaryAtmospheresPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -849,6 +870,18 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.MagnetospherePriors
+- domain: Grace_Cryosphere
+  tier: 23
+  record_count: 253
+  lean_module: FSOT.Formal.GraceCryospherePriors
+- domain: Seismology_Deep
+  tier: 23
+  record_count: 1000
+  lean_module: FSOT.Formal.SeismologyDeepPriors
+- domain: Planetary_Atmospheres
+  tier: 23
+  record_count: 6
+  lean_module: FSOT.Formal.PlanetaryAtmospheresPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -983,6 +1016,43 @@ theory_crosswalk:
     - FSOT.Formal.GeomagnetismPriors
     - FSOT.Formal.SpaceWeatherPriors
     - FSOT.Formal.MagneticStringPriors
+  Grace_Cryosphere:
+    tier: 23
+    D_eff: 16
+    maps_to_lean:
+    - galactic
+    - energy
+    labs:
+    - grace_cryosphere_lab
+    - cryosphere_lab
+    lean_modules:
+    - FSOT.Formal.GraceCryospherePriors
+    - FSOT.Formal.CryospherePriors
+  Seismology_Deep:
+    tier: 23
+    D_eff: 18
+    maps_to_lean:
+    - energy
+    labs:
+    - seismology_deep_lab
+    - seismology_lab
+    - tectonics_lab
+    lean_modules:
+    - FSOT.Formal.SeismologyDeepPriors
+    - FSOT.Formal.SeismologyPriors
+    - FSOT.Formal.TectonicsPriors
+  Planetary_Atmospheres:
+    tier: 23
+    D_eff: 16
+    maps_to_lean:
+    - galactic
+    - astronomical
+    labs:
+    - planetary_atmospheres_lab
+    - planetary_structure_lab
+    lean_modules:
+    - FSOT.Formal.PlanetaryAtmospheresPriors
+    - FSOT.Formal.PlanetaryStructurePriors
 lean_formal_modules:
 - AetherPrimePriors
 - BiologyStrictEmpiricalPriors
@@ -1011,6 +1081,7 @@ lean_formal_modules:
 - FormulaCorpusPriors
 - FuelPriors
 - GeomagnetismPriors
+- GraceCryospherePriors
 - HiggsBranchingPriors
 - HydrologyPriors
 - ImmunologyPriors
@@ -1029,9 +1100,11 @@ lean_formal_modules:
 - OrbitalMechanicsPriors
 - ParticlePhysicsPriors
 - PharmacologyPriors
+- PlanetaryAtmospheresPriors
 - PlanetaryStructurePriors
 - PlasmaPhysicsPriors
 - ProteinPriors
+- SeismologyDeepPriors
 - SeismologyPriors
 - SmallBodyOrbitsPriors
 - SoulSiblingPriors

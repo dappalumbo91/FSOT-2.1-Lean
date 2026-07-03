@@ -1,0 +1,31 @@
+# Tier 23 — USGS deep seismology (moment-tensor quality + plate-margin holdout).
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  name: USGS_FDSN_deep
+  starttime: "2020-01-01"
+  endtime: "2024-12-31"
+  minmagnitude: 5.0
+  limit: 500
+  plate_margin_km: 250.0
+  holdout_lon_min: 120.0
+  holdout_lon_max: 180.0
+  holdout_lat_min: -60.0
+  holdout_lat_max: 60.0
+  plates_cache: data/tectonics_plates_cache.json
+
+build:
+  ingest: scripts/ingest_seismology_deep_usgs.py
+  benchmark: scripts/build_seismology_deep_benchmark.py
+  output: data/seismology_deep_benchmark.json
+
+lean:
+  generator: scripts/gen_seismology_deep_lean.py
+  module: FSOT.Formal.SeismologyDeepPriors
+  lean_domain: energy
+  sign_theorem: energy_raw_S_positive
+
+verification:
+  min_records: 80
+  min_stability_match_rate: 0.5
