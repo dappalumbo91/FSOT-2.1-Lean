@@ -1,15 +1,16 @@
-generated_at: '2026-07-03T15:59:49.869039+00:00'
+generated_at: '2026-07-03T16:11:18.693689+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 62
+  lean_formal_modules: 64
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 17
-  tiers_total: 17
+  tiers_complete: 18
+  tiers_total: 18
   percent_complete: 100.0
-current_position: "Tier 19 GFZ 2010\u20132024 + Wave4 Priors + USGS hydrology"
+current_position: Tier 20 GFZ 1932 arc + Priors-only Wave4 + ChEMBL + Cryosphere +
+  ToE crosswalk
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -40,6 +41,7 @@ tiers:
   - CosmologyWave7Priors
   - CosmologyWave8Priors
   - CosmologyWave9Priors
+  - CryospherePriors
   - DomainCoveragePriors
   - DomainPrecisionPriors
   - EmergentDomainPriors
@@ -62,6 +64,7 @@ tiers:
   - NeuronCohortTrainHoldoutPriors
   - NeuronHybridPriors
   - ParticlePhysicsPriors
+  - PharmacologyPriors
   - PhotonicForge
   - PlasmaPhysicsPriors
   - ProteinPriors
@@ -176,8 +179,8 @@ tiers:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 43
-    expansion_candidates: 9
+    scientific_domains_covered: 45
+    expansion_candidates: 6
   artifacts:
   - data/climate_ncei_manifest.yaml
   - data/neuron_cohort_train_holdout.json
@@ -225,7 +228,7 @@ tiers:
   metrics:
     cosmology_higher_waves: 142
     higgs_branching_observables: 14
-    space_weather_kp_records: 43893
+    space_weather_kp_records: 271813
     astrophysics_empirical_records: 216
     particle_astrophysics_empirical_records: 216
   artifacts:
@@ -241,7 +244,7 @@ tiers:
   metrics:
     cosmology_wave5_observables: 22
     cosmology_wave8_observables: 52
-    space_weather_kp_records: 43893
+    space_weather_kp_records: 271813
     plasma_crosswalk_labs:
     - plasma_physics_lab
     - space_weather_lab
@@ -256,7 +259,7 @@ tiers:
   status: complete
   metrics:
     cosmology_wave4_observables: 16
-    space_weather_kp_records: 43893
+    space_weather_kp_records: 271813
     hydrology_month_records: 960
     gfz_year_range:
     - 2010
@@ -266,6 +269,32 @@ tiers:
   - data/hydrology_usgs_manifest.yaml
   - FSOT.Formal.CosmologyWave4Priors
   - FSOT.Formal.HydrologyPriors
+- tier: 20
+  name: GFZ 1932 arc + Priors-only Wave4 + ChEMBL + Cryosphere + ToE crosswalk
+  status: complete
+  metrics:
+    space_weather_kp_records: 271813
+    pharmacology_observables: 120
+    cryosphere_month_records: 1919
+    cryosphere_match_rate: 0.9927045336112559
+    gfz_year_range:
+    - 1932
+    - 2024
+    theory_crosswalk_domains:
+    - Aerospace_Engineering
+    - Computer_Science
+    - Hearing_Science
+    - Pharmacology
+    - Cryosphere
+  artifacts:
+  - data/space_weather_manifest.yaml
+  - data/pharmacology_chembl_manifest.yaml
+  - data/cryosphere_manifest.yaml
+  - data/fsot_theory_crosswalk.yaml
+  - data/FSOT_VERIFIED_SCOPE.yaml
+  - FSOT.Formal.CosmologyWave4Priors
+  - FSOT.Formal.PharmacologyPriors
+  - FSOT.Formal.CryospherePriors
 next_steps:
 - Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class
 - "Multi-hero held-out: certify 3\u20135 specimens per Sst/PV/VIP/L2/3"

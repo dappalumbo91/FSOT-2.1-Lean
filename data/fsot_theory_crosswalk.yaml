@@ -1,0 +1,55 @@
+# FSOT Fluid Spacetime Omni-Theory — cross-domain verification map (Theory of Everything arc).
+version: "1.0"
+updated: "2026-07-03"
+author: Damian Arthur Palumbo
+
+theory:
+  name: Fluid Spacetime Omni-Theory
+  acronym: FSOT
+  lean_repo: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
+  verification_standard: "Per-record numeric precision + Lean certificate bundles; 0 sorry"
+
+# Extension + anchor domains beyond the 35-domain NeuroLab table
+verified_extension_domains:
+  Aerospace_Engineering:
+    tier: 20
+    D_eff: 16
+    maps_to_lean: [material, energy, astronomical]
+    labs: [species_catalog, trinary_fluid_computer, cosmology_wave4_lab]
+    lean_modules: [FSOT.Formal.SpeciesPriors, FSOT.Formal.TrinaryFluidPriors, FSOT.Formal.CosmologyWave4Priors]
+    note: "Propulsion/material catalogs + trinary fluid pathways + wave-4 particle scales"
+
+  Computer_Science:
+    tier: 20
+    D_eff: 17
+    maps_to_lean: [ai, consciousness]
+    labs: [trinary_os, linguistics_lab, math_generator rules]
+    lean_modules: [FSOT.Formal.TrinaryOSPriors, FSOT.Formal.LinguisticsPriors, FSOT.Formal.MathGeneratorPriors]
+    note: "Trinary OS oracle + linguistics anchors + math-generator rule corpus"
+
+  Hearing_Science:
+    tier: 20
+    D_eff: 11
+    maps_to_lean: [material, energy]
+    neurolab_anchor: Acoustics
+    labs: [smiles_lab]
+    lean_modules: [FSOT.Formal.SpeciesPriors]
+    note: "Acoustic/material SMILES sections; signal-processing bridge to aerospace comms"
+
+  Pharmacology:
+    tier: 20
+    D_eff: 14
+    maps_to_lean: [medical, chemical]
+    lean_module: FSOT.Formal.PharmacologyPriors
+
+  Cryosphere:
+    tier: 20
+    D_eff: 16
+    maps_to_lean: [energy, galactic]
+    lean_module: FSOT.Formal.CryospherePriors
+
+pipeline:
+  runner: scripts/fsot_verification_runner.py
+  certificate: data/certificate.json
+  scope: data/FSOT_VERIFIED_SCOPE.yaml
+  progress: data/fsot_verification_progress.yaml

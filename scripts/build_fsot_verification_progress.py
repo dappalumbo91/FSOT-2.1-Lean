@@ -55,6 +55,8 @@ def build_progress() -> dict:
     registry_full = _load_json(ROOT / "data" / "lab_registry.json")
     higher_waves = registry_full.get("cosmology_higher_waves_lab", {})
     space_weather_bench = _load_json(ROOT / "data" / "space_weather_benchmark.json")
+    pharmacology_bench = _load_json(ROOT / "data" / "pharmacology_benchmark.json")
+    cryosphere_bench = _load_json(ROOT / "data" / "cryosphere_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -408,6 +410,41 @@ def build_progress() -> dict:
                 "FSOT.Formal.HydrologyPriors",
             ],
         },
+        {
+            "tier": 20,
+            "name": "GFZ 1932 arc + Priors-only Wave4 + ChEMBL + Cryosphere + ToE crosswalk",
+            "status": "complete"
+            if space_weather_bench.get("kp_record_count", 0) >= 250000
+            and pharmacology_bench.get("observable_count", 0) >= 40
+            and cryosphere_bench.get("observable_count", 0) >= 48
+            and (ROOT / "data" / "fsot_theory_crosswalk.yaml").exists()
+            and (ROOT / "data" / "FSOT_VERIFIED_SCOPE.yaml").exists()
+            else "pending",
+            "metrics": {
+                "space_weather_kp_records": space_weather_bench.get("kp_record_count"),
+                "pharmacology_observables": pharmacology_bench.get("observable_count"),
+                "cryosphere_month_records": cryosphere_bench.get("observable_count"),
+                "cryosphere_match_rate": cryosphere_bench.get("stability_match_rate"),
+                "gfz_year_range": [1932, 2024],
+                "theory_crosswalk_domains": [
+                    "Aerospace_Engineering",
+                    "Computer_Science",
+                    "Hearing_Science",
+                    "Pharmacology",
+                    "Cryosphere",
+                ],
+            },
+            "artifacts": [
+                "data/space_weather_manifest.yaml",
+                "data/pharmacology_chembl_manifest.yaml",
+                "data/cryosphere_manifest.yaml",
+                "data/fsot_theory_crosswalk.yaml",
+                "data/FSOT_VERIFIED_SCOPE.yaml",
+                "FSOT.Formal.CosmologyWave4Priors",
+                "FSOT.Formal.PharmacologyPriors",
+                "FSOT.Formal.CryospherePriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -434,7 +471,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 19 GFZ 2010–2024 + Wave4 Priors + USGS hydrology",
+        "current_position": "Tier 20 GFZ 1932 arc + Priors-only Wave4 + ChEMBL + Cryosphere + ToE crosswalk",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

@@ -11,11 +11,11 @@ noncomputable section
 
 open Real
 
-def space_weather_kp_record_count : ℕ := 43893
-def space_weather_ap_record_count : ℕ := 43893
-def space_weather_stability_match_count : ℕ := 43890
+def space_weather_kp_record_count : ℕ := 271813
+def space_weather_ap_record_count : ℕ := 271813
+def space_weather_stability_match_count : ℕ := 271810
 def space_weather_D_eff : ℕ := 14
-def space_weather_stability_match_rate : ℝ := (0.9999316519718406 : ℝ)
+def space_weather_stability_match_rate : ℝ := (0.999988963000298 : ℝ)
 
 theorem space_weather_kp_record_count_pos : 0 < space_weather_kp_record_count := by
   unfold space_weather_kp_record_count; norm_num
@@ -29,9 +29,9 @@ theorem space_weather_stability_match_rate_nonneg : (0 : ℝ) ≤ space_weather_
 
 /-- Bundle: NOAA Kp storm classifier bridged to fusion-domain sign proxy. -/
 theorem space_weather_bundle :
-    space_weather_kp_record_count = 43893 ∧
-    space_weather_ap_record_count = 43893 ∧
-    space_weather_stability_match_count = 43890 ∧
+    space_weather_kp_record_count = 271813 ∧
+    space_weather_ap_record_count = 271813 ∧
+    space_weather_stability_match_count = 271810 ∧
     space_weather_D_eff = 14 ∧
     space_weather_stability_match_count ≤ space_weather_kp_record_count ∧
     (0 : ℝ) < raw_S (get_domain_params "fusion") := by

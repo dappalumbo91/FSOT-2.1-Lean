@@ -1,0 +1,27 @@
+# Tier 20 — Cryosphere proxy from climate NCEI northern cohort (GRACE-scale bridge).
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  name: climate_cryosphere_proxy
+  climate_manifest: data/climate_ncei_manifest.yaml
+  northern_stations:
+    - USW00024233
+    - USW00014933
+    - USC00053005
+    - USW00014922
+  freezing_threshold_c: 2.0
+
+build:
+  benchmark: scripts/build_cryosphere_benchmark.py
+  output: data/cryosphere_benchmark.json
+
+lean:
+  generator: scripts/gen_cryosphere_lean.py
+  module: FSOT.Formal.CryospherePriors
+  lean_domain: galactic
+  sign_theorem: galactic_raw_S_positive
+
+verification:
+  min_records: 48
+  max_median_error_pct: 5.0

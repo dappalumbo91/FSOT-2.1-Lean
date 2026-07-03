@@ -138,6 +138,22 @@ extension_empirical_sources:
   Plasma_Physics:
     labs: [plasma_physics_lab, space_weather_lab]
     lean_domain: fusion
+  Aerospace_Engineering:
+    labs: [species_catalog, trinary_fluid_computer, cosmology_wave4_lab]
+    lean_domain: material
+  Computer_Science:
+    labs: [trinary_os, linguistics_lab, math_generator]
+    lean_domain: ai
+  Hearing_Science:
+    labs: [smiles_lab]
+    lean_domain: material
+    neurolab_anchor: Acoustics
+  Pharmacology:
+    labs: [pharmacology_lab]
+    lean_domain: medical
+  Cryosphere:
+    labs: [cryosphere_lab]
+    lean_domain: galactic
 
 verification:
   min_domain_count: 35

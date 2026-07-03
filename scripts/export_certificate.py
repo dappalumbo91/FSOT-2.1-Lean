@@ -55,7 +55,7 @@ LEAN_TARGETS = [
     "FSOT.Formal.WeatherPriors",
     "FSOT.Formal.LinguisticsPriors",
     "FSOT.Formal.UnifiedDBPriors",
-    "FSOT.Formal.CosmologyWave4",
+
     "FSOT.Formal.KronosPriors",
     "FSOT.Formal.KnowledgeBasePriors",
     "FSOT.Formal.MathGeneratorPriors",
@@ -94,6 +94,8 @@ LEAN_TARGETS = [
     "FSOT.Formal.HiggsBranchingPriors",
     "FSOT.Formal.SpaceWeatherPriors",
     "FSOT.Formal.HydrologyPriors",
+    "FSOT.Formal.PharmacologyPriors",
+    "FSOT.Formal.CryospherePriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

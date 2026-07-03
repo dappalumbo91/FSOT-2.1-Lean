@@ -1,0 +1,24 @@
+# Tier 20 — ChEMBL approved-drug molecular property ingest.
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  name: ChEMBL
+  base_url: "https://www.ebi.ac.uk/chembl/api/data/molecule.json"
+  max_phase: 4
+  limit: 120
+
+build:
+  ingest: scripts/ingest_pharmacology_chembl.py
+  benchmark: scripts/build_pharmacology_benchmark.py
+  output: data/pharmacology_benchmark.json
+
+lean:
+  generator: scripts/gen_pharmacology_lean.py
+  module: FSOT.Formal.PharmacologyPriors
+  lean_domain: medical
+  sign_theorem: medical_raw_S_positive
+
+verification:
+  min_records: 40
+  max_median_error_pct: 5.0

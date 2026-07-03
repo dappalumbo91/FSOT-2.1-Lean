@@ -1,0 +1,883 @@
+generated_at: '2026-07-03T16:11:18.854598+00:00'
+theory:
+  name: Fluid Spacetime Omni-Theory
+  acronym: FSOT
+  lean_repo: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
+  verification_standard: Per-record numeric precision + Lean certificate bundles;
+    0 sorry
+verification_summary:
+  lean_formal_modules: 64
+  proved_claims: 65
+  sorry_count_formal: 0
+  lean_build_ok: true
+  tiers_complete: 18
+  tiers_total: 18
+  percent_complete: 100.0
+current_tier: Tier 20 GFZ 1932 arc + Priors-only Wave4 + ChEMBL + Cryosphere + ToE
+  crosswalk
+proved_claims:
+- id: cosmological_raw_S_negative
+  claim: raw_S(cosmological) < 0
+  status: proved
+  domain: cosmological
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: cosmological_raw_S_negative
+- id: dark_energy_raw_S_negative
+  claim: raw_S(dark_energy) < 0
+  status: proved
+  domain: dark_energy
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: dark_energy_raw_S_negative
+- id: cmb_raw_S_negative
+  claim: raw_S(cmb) < 0
+  status: proved
+  domain: cmb
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: cmb_raw_S_negative
+- id: ai_raw_S_non_positive
+  claim: raw_S(ai) ≤ 0
+  status: proved
+  domain: ai
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: ai_raw_S_non_positive
+- id: medical_raw_S_positive
+  claim: raw_S(medical) > 0
+  status: proved
+  domain: medical
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: medical_raw_S_positive
+- id: chemical_raw_S_positive
+  claim: raw_S(chemical) > 0
+  status: proved
+  domain: chemical
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: chemical_raw_S_positive
+- id: electron_raw_S_positive
+  claim: raw_S(electron) > 0
+  status: proved
+  domain: electron
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: electron_raw_S_positive
+- id: neural_raw_S_positive
+  claim: raw_S(neural) > 0
+  status: proved
+  domain: neural
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: neural_raw_S_positive
+- id: quantum_raw_S_positive
+  claim: raw_S(quantum) > 0
+  status: proved
+  domain: quantum
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: quantum_raw_S_positive
+- id: particle_raw_S_positive
+  claim: raw_S(particle) > 0
+  status: proved
+  domain: particle
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: particle_raw_S_positive
+- id: term3_negligible_default
+  claim: '|term3(p)| < 0.2 under default β and typical D_eff, δψ'
+  status: proved
+  domain: '*'
+  lean_module: FSOT.Formal.Theorems
+  lean_theorem: term3_abs_lt_fifth_default
+- id: raw_S_positive_template
+  claim: term1 > -0.8 ∧ term2 = 1 ∧ |term3| < 0.2 → raw_S > 0
+  status: proved
+  domain: '*'
+  lean_module: FSOT.Formal.Theorems
+  lean_theorem: raw_S_positive_of_term1_gt_neg_08
+- id: raw_S_negative_template
+  claim: term1 < 0 ∧ |term1| > 1 + |term3| ∧ term2 = 1 → raw_S < 0
+  status: proved
+  domain: '*'
+  lean_module: FSOT.Formal.Theorems
+  lean_theorem: raw_S_negative_of_term1_overcomes_term3
+- id: wave1_h0_approx
+  claim: '|H0_fsot(S_cosm_cached) - 68.440056829794272| < 1e-8'
+  status: proved
+  domain: cosmological
+  lean_module: FSOT.Formal.Cosmology
+  lean_theorem: h0_fsot_cached_approx_value
+- id: wave1_ns_approx
+  claim: '|n_s_fsot(S_cosm_cached) - 0.9638062833678816| < 1e-4'
+  status: proved
+  domain: cosmological
+  lean_module: FSOT.Formal.Cosmology
+  lean_theorem: n_s_fsot_cached_approx_value
+- id: wave1_alpha_s_approx
+  claim: '|α_s(M_Z) - 1/(eπ)| < 1e-8 at canonical definition'
+  status: proved
+  domain: particle
+  lean_module: FSOT.Formal.Cosmology
+  lean_theorem: alpha_s_MZ_approx_value
+- id: wave1_omega_b_approx
+  claim: '|Ω_b h²_fsot(S_cosm, S_quant) - 0.022356124082273698| < 1e-5'
+  status: proved
+  domain: cosmological
+  lean_module: FSOT.Formal.Cosmology
+  lean_theorem: omega_b_h2_fsot_cached_approx_value
+- id: wave1_t_cmb_approx
+  claim: '|T_CMB_fsot(S_cosm) - 2.724728386673958| < 1e-6'
+  status: proved
+  domain: cosmological
+  lean_module: FSOT.Formal.Cosmology
+  lean_theorem: t_cmb_fsot_cached_approx_value
+- id: r_d_interval_certificate
+  claim: '|r_d_canonical - 147.52| < 0.05'
+  status: proved
+  domain: cosmological
+  lean_module: FSOT.Formal.Cosmology
+  lean_theorem: r_d_approx_value
+- id: observer_quirk_sign_lemma
+  claim: observed ∧ quirkMod < 0 → term1 > 0 when term1_base < 0
+  status: proved
+  domain: '*'
+  lean_module: FSOT.Formal.Theorems
+  lean_theorem: term1_positive_of_observer_negative_quirk
+- id: smiles_medical_bio_catalog
+  claim: SMILES §21–§24, §35–§36 bio records within 5% experimental tolerance
+  status: numerically_verified
+  domain: medical
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: medical_raw_S_positive
+- id: smiles_chemical_catalog
+  claim: SMILES §1–§18 foundation/chemistry records within 5% tolerance
+  status: numerically_verified
+  domain: chemical
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: chemical_raw_S_positive
+- id: neurolab_thalamic_K_alignment
+  claim: Thalamic gate K matches canonical layer2.k
+  status: numerically_verified
+  domain: neural
+  lean_module: FSOT.Formal.Domains
+  lean_theorem: neural_raw_S_positive
+- id: lab_molecular_raw_S_positive
+  claim: raw_S(molecular) > 0
+  status: proved
+  domain: molecular
+  lean_module: FSOT.Formal.Lab
+  lean_theorem: lab_molecular_raw_S_positive
+- id: lab_material_raw_S_positive
+  claim: raw_S(material) > 0
+  status: proved
+  domain: material
+  lean_module: FSOT.Formal.Lab
+  lean_theorem: lab_material_raw_S_positive
+- id: lab_biological_raw_S_positive
+  claim: raw_S(biological) > 0
+  status: proved
+  domain: biological
+  lean_module: FSOT.Formal.Lab
+  lean_theorem: lab_biological_raw_S_positive
+- id: lab_layer_k_certificate
+  claim: '|k - smiles_k_cached| < 5e-4 ∧ |k - thalamic_K_cached| < 5e-4'
+  status: proved
+  domain: '*'
+  lean_module: FSOT.Formal.Lab
+  lean_theorem: smiles_k_matches_formal_k
+- id: lab_smiles_sign_bundle
+  claim: 11 SMILES-mapped domains have positive raw_S at ledger params
+  status: proved
+  domain: '*'
+  lean_module: FSOT.Formal.Lab
+  lean_theorem: lab_smiles_domain_sign_bundle
+- id: neurolab_bio_translations
+  claim: NeuroLab NEUROSCIENCE/BIOPHYSICS/GENOMIC translations within 5% tolerance
+  status: numerically_verified
+  domain: biological
+  lean_module: FSOT.Formal.Lab
+  lean_theorem: neurolab_bio_sign_bundle
+- id: neurolab_brain_pathways
+  claim: 25 brain formula training pathways have abs_gap < 0.15
+  status: numerically_verified
+  domain: neural
+  lean_module: FSOT.Formal.Lab
+  lean_theorem: neurolab_bio_sign_bundle
+- id: genomic_exact_identities
+  claim: 64 codons (4³), 27 trinary patterns (3³), 20 amino acids (4φ³+8φ⁻²), autosome
+    ≈ 22
+  status: proved
+  domain: biological
+  lean_module: FSOT.Formal.Genomic
+  lean_theorem: genomic_exact_identity_bundle
+- id: neurolab_brain_component_priors
+  claim: 10 brain components carry 72bp dna_proxy trinary signatures and FSOT coupling
+    priors
+  status: numerically_verified
+  domain: neural
+  lean_module: FSOT.Formal.BrainPriors
+  lean_theorem: brain_component_priors_trinary_bundle
+- id: protein_amino_acid_trinary
+  claim: 20 canonical amino acids map to [Charge,Polarity,Volume] ∈ {-1,0,+1}³ with
+    10 distinct patterns ⊆ 27
+  status: proved
+  domain: biological
+  lean_module: FSOT.Formal.ProteinPriors
+  lean_theorem: protein_amino_acid_trinary_bundle
+- id: codon_trinary_map
+  claim: '64 codons encode dual-axis trinary phases: primary 8-pattern spin axis,
+    secondary 27-pattern genetic axis'
+  status: proved
+  domain: biological
+  lean_module: FSOT.Formal.CodonPriors
+  lean_theorem: codon_trinary_map_bundle
+- id: protein_formula_closed_forms
+  claim: 15 catalog formulas + 3 proposed; F03 φ⁶ disulfide and F06 γ·π·e² dipole
+    damping certified
+  status: proved
+  domain: biological
+  lean_module: FSOT.Formal.ProteinFormulas
+  lean_theorem: protein_formula_closed_form_bundle
+- id: cosmology_lambda_cdm_observables
+  claim: 30 ΛCDM observables (Wave-1/2/3 full) within 2% of measured targets
+  status: numerically_verified
+  domain: cosmological
+  lean_module: FSOT.Formal.CosmologyLab
+  lean_theorem: cosmology_lambda_cdm_bundle
+- id: fuel_lab_compound_profiles
+  claim: 6 fuel profiles with 34 resolved PubChem compound lookups
+  status: numerically_verified
+  domain: chemical
+  lean_module: FSOT.Formal.FuelPriors
+  lean_theorem: fuel_lab_compound_bundle
+- id: species_catalog_machine_molecule
+  claim: 141 species (metals/molecules/polymers), 684 FSOT formula properties within
+    5%
+  status: numerically_verified
+  domain: material
+  lean_module: FSOT.Formal.SpeciesPriors
+  lean_theorem: species_catalog_bundle
+- id: cameo_symbolic_folding
+  claim: 130 CAMEO PDB benchmarks; 5-node FSOT symbolic formula MAE 8.85 Å
+  status: numerically_verified
+  domain: molecular
+  lean_module: FSOT.Formal.CameoPriors
+  lean_theorem: cameo_symbolic_bundle
+- id: trinary_os_fsotb_oracles
+  claim: FSOTB Tier-1/2/3 oracles (hello/call_ret/spawn_join) with seeds_hash 0xc627292ec4eb3b90
+  status: numerically_verified
+  domain: ai
+  lean_module: FSOT.Formal.TrinaryOSPriors
+  lean_theorem: trinary_os_fsotb_bundle
+- id: photonic_forge_vram_crystal
+  claim: 180-voxel FSOT virtual crystal; trinary resonance maps POOF/P_new
+  status: numerically_verified
+  domain: electron
+  lean_module: FSOT.Formal.PhotonicForge
+  lean_theorem: photonic_forge_bundle
+- id: vibra_register_mc_alignment
+  claim: 'VibraFSOT D_eff=11 register: pattern_stability≈0.766, avg_S≈0.474; MC cp5
+    prob_non_decrease=1.0'
+  status: numerically_verified
+  domain: ai
+  lean_module: FSOT.Formal.VibRegisterPriors
+  lean_theorem: vibra_register_bundle
+- id: magnetic_string_lattice
+  claim: 250 magnetic strings, S_em≈0.519, 75 top-aligned
+  status: numerically_verified
+  domain: electron
+  lean_module: FSOT.Formal.MagneticStringPriors
+  lean_theorem: magnetic_string_bundle
+- id: evolution_mt_operons
+  claim: 13 mitochondrial operons; best fitness 58.49, biological_capacity 8002.5
+  status: numerically_verified
+  domain: biological
+  lean_module: FSOT.Formal.EvolutionPriors
+  lean_theorem: evolution_priors_bundle
+- id: weather_scalar_simulation
+  claim: 24-hour weather sim at D_eff=15; all hourly S>0
+  status: numerically_verified
+  domain: medical
+  lean_module: FSOT.Formal.WeatherPriors
+  lean_theorem: weather_priors_bundle
+- id: linguistics_empirical_anchors
+  claim: 10 LINGUISTIC_TARGETS.csv anchors within 5% FSOT seed derivations
+  status: numerically_verified
+  domain: neural
+  lean_module: FSOT.Formal.LinguisticsPriors
+  lean_theorem: linguistics_priors_bundle
+- id: unified_db_inventory
+  claim: 'Unified DB inventory: 30984 indexed records, 26 projects (inventory only
+    — not per-formula proof)'
+  status: inventory
+  domain: '*'
+  lean_module: FSOT.Formal.UnifiedDBPriors
+  lean_theorem: unified_db_meta_bundle
+- id: cellular_soul_evolution_lab
+  claim: 'Cellular: 234k Soul Simulator records + 13 mitochondrial operons; raw_S(cellular)>0'
+  status: numerically_verified
+  domain: cellular
+  lean_module: FSOT.Formal.CellularPriors
+  lean_theorem: cellular_priors_bundle
+- id: blackhole_thermo_thesis
+  claim: 'BlackHole thermo thesis: 28/28 observables within 2% (max err 0.72%)'
+  status: numerically_verified
+  domain: blackhole
+  lean_module: FSOT.Formal.BlackHoleThesisPriors
+  lean_theorem: blackhole_thesis_bundle
+- id: formula_corpus_strict_empirical
+  claim: '7941 FSOT-derived formulas checked vs measured observables: 6921 within
+    2%, all within 5%'
+  status: numerically_verified
+  domain: molecular
+  lean_module: FSOT.Formal.FormulaCorpusPriors
+  lean_theorem: formula_corpus_strict_empirical_bundle
+- id: cosmology_wave4_observables
+  claim: 16 Wave-4 observables (PMNS/CKM/Feigenbaum/nuclear/dark-energy) within 2%
+  status: numerically_verified
+  domain: particle
+  lean_module: FSOT.Formal.CosmologyWave4
+  lean_theorem: cosmology_wave4_bundle
+- id: kronos_metrology_runs
+  claim: 568 Kronos thesis runs; best fractional error 1.64e-7
+  status: numerically_verified
+  domain: astronomical
+  lean_module: FSOT.Formal.KronosPriors
+  lean_theorem: kronos_metrology_bundle
+- id: knowledge_base_corpus
+  claim: 'Knowledge base: 19213 catalog per-formula pass; 7941 strict-empirical bridge
+    (6921 within 2%); 105 catalog verified'
+  status: numerically_verified
+  domain: molecular
+  lean_module: FSOT.Formal.KnowledgeBasePriors
+  lean_theorem: knowledge_base_corpus_bundle
+- id: math_generator_comparisons
+  claim: 'Math generator: 7 Ada/Spark comparisons within 2% (max err 1.19%)'
+  status: numerically_verified
+  domain: particle
+  lean_module: FSOT.Formal.MathGeneratorPriors
+  lean_theorem: math_generator_priors_bundle
+- id: trinary_fluid_computer_v2
+  claim: 'Trinary Fluid Computer v2: 99.3% accuracy, 27 Metatron pathways'
+  status: numerically_verified
+  domain: ai
+  lean_module: FSOT.Formal.TrinaryFluidPriors
+  lean_theorem: trinary_fluid_priors_bundle
+- id: soul_sibling_kernel
+  claim: Soul Sibling kernel D_compact=24.98, zero_free, fidelity_threshold=0.05
+  status: numerically_verified
+  domain: consciousness
+  lean_module: FSOT.Formal.SoulSiblingPriors
+  lean_theorem: soul_sibling_priors_bundle
+- id: lean_proofs_constant_bridge
+  claim: 'FSOT_Lean_Proofs: 28 formal constants, all domain_proven; k aligned to SMILES'
+  status: cross_validated
+  domain: '*'
+  lean_module: FSOT.Formal.LeanProofsBridge
+  lean_theorem: lean_proofs_constant_bundle
+- id: neuron_allen_hybrid_fi
+  claim: 'Allen Sst interneuron hybrid: 4-point FI mean rel err 7.0%; verifier confidence
+    0.96; K aligned'
+  status: numerically_verified
+  domain: neural
+  lean_module: FSOT.Formal.NeuronHybridPriors
+  lean_theorem: neuron_hybrid_priors_bundle
+- id: aether_prime_solver_distill
+  claim: 'Aether Prime: 6 deterministic solver ops; 120 verifier-distill rows; ψ_con/η_eff
+    match Bounds'
+  status: numerically_verified
+  domain: ai
+  lean_module: FSOT.Formal.AetherPrimePriors
+  lean_theorem: aether_prime_priors_bundle
+- id: magic_circle_glyph_emergence
+  claim: 'Magic circle glyph config: stabilization thresholds + 27-pathway trinary
+    anchor'
+  status: cross_validated
+  domain: consciousness
+  lean_module: FSOT.Formal.MagicCirclePriors
+  lean_theorem: magic_circle_priors_bundle
+- id: allen_neuron_cohort_fi
+  claim: 'Allen cohort 2166 cells: FI proxy median rel err 24.5%; pearson r 0.61;
+    hero certified 7.0%'
+  status: numerically_verified
+  domain: neural
+  lean_module: FSOT.Formal.NeuronCohortPriors
+  lean_theorem: neuron_cohort_priors_bundle
+- id: allen_neuron_cohort_strata
+  claim: 'Allen strata: Sst/PV/VIP/L2-3 FI proxy + 2165-cell held-out (hero excluded)'
+  status: numerically_verified
+  domain: neural
+  lean_module: FSOT.Formal.NeuronCohortStrataPriors
+  lean_theorem: neuron_cohort_strata_bundle
+- id: experiment_synthesis_tier7
+  claim: 'Tier 7–8 synthesis: 5 corrected approaches + 21 LLM experiment folders inventoried'
+  status: cross_validated
+  domain: '*'
+  lean_module: FSOT.Formal.ExperimentSynthesisPriors
+  lean_theorem: experiment_synthesis_priors_bundle
+- id: domain_coverage_priors_bundle
+  claim: 'Tier 9: 35/35 NeuroLab domains with empirical anchors; 17/17 Lean override
+    alignment'
+  status: cross_validated
+  domain: '*'
+  lean_module: FSOT.Formal.DomainCoveragePriors
+  lean_theorem: domain_coverage_priors_bundle
+- id: domain_precision_priors_bundle
+  claim: 'Tier 10: per-record numeric precision across domains (2%/5% bands + gap
+    diagnostics)'
+  status: numerically_verified
+  domain: '*'
+  lean_module: FSOT.Formal.DomainPrecisionPriors
+  lean_theorem: domain_precision_priors_bundle
+sorry_count: 0
+lean_build_ok: true
+scientific_domains_covered: 45
+total_empirical_records: 261401
+tier_coverage:
+- tier: 1
+  name: Core scalar + domains
+  status: complete
+  artifacts:
+  - FSOT.Formal.Domains
+  - FSOT.Formal.Bounds
+  - FSOT.Formal.Theorems
+- tier: 2
+  name: Lab ingest (SMILES, NeuroLab, cosmology, …)
+  status: complete
+  artifacts:
+  - AetherPrimePriors
+  - BiologyStrictEmpiricalPriors
+  - BlackHoleThesisPriors
+  - BrainPriors
+  - CameoPriors
+  - CellularPriors
+  - ClimateSciencePriors
+  - CodonPriors
+  - CosmologyExtendedPriors
+  - CosmologyHigherWavesPriors
+  - CosmologyLab
+  - CosmologyWave10Priors
+  - CosmologyWave4Priors
+  - CosmologyWave5Priors
+  - CosmologyWave6Priors
+  - CosmologyWave7Priors
+  - CosmologyWave8Priors
+  - CosmologyWave9Priors
+  - CryospherePriors
+  - DomainCoveragePriors
+  - DomainPrecisionPriors
+  - EmergentDomainPriors
+  - EvolutionPriors
+  - ExperimentSynthesisPriors
+  - FormulaCorpusPriors
+  - FuelPriors
+  - HiggsBranchingPriors
+  - HydrologyPriors
+  - ImmunologyPriors
+  - IntelligenceCompressionPriors
+  - KnowledgeBasePriors
+  - KronosPriors
+  - LinguisticsPriors
+  - MagicCirclePriors
+  - MagneticStringPriors
+  - MathGeneratorPriors
+  - NeuronCohortPriors
+  - NeuronCohortStrataPriors
+  - NeuronCohortTrainHoldoutPriors
+  - NeuronHybridPriors
+  - ParticlePhysicsPriors
+  - PharmacologyPriors
+  - PhotonicForge
+  - PlasmaPhysicsPriors
+  - ProteinPriors
+  - SoulSiblingPriors
+  - SpaceWeatherPriors
+  - SpeciesPriors
+  - ThesisSimulationPriors
+  - TrinaryFluidPriors
+  - TrinaryOSPriors
+  - UnifiedDBPriors
+  - VibRegisterPriors
+  - WeatherPriors
+- tier: 7
+  name: Experiment synthesis (neuron, Aether, magic circle, LLM inventory)
+  status: complete
+  metrics:
+    hero_fi_mean_rel_err: 0.07002728543379658
+    aether_distill_rows: 120
+    llm_folders: 21
+- tier: 7b
+  name: Neuron cohort + canonical scalar bridge
+  status: complete
+  metrics:
+    cohort_cells: 2166
+    canonical_bridge_delta: 0.0035164727776800936
+    allensdk_verified: true
+- tier: 8
+  name: Allen per-class strata + held-out cohort
+  status: complete
+  metrics:
+    held_out_cells: 2165
+    strata_count: 4
+- tier: 9
+  name: 35-domain NeuroLab coverage (Lean + empirical labs)
+  status: complete
+  metrics:
+    domain_count: 35
+    empirical_domains: 35
+    total_empirical_records: 261401
+    lean_override_aligned: 17/17
+    negative_scalar_domains: 10
+  artifacts:
+  - FSOT.Formal.DomainCoveragePriors
+  - data/fsot_35_domain_registry.yaml
+- tier: 10
+  name: Per-record numeric precision (2%/5% bands + gap diagnostics)
+  status: complete
+  metrics:
+    numeric_precision_domains: 35
+    target_band_2pct: 35
+    tolerable_band_5pct: 0
+    huge_gap_domains: 0
+    sign_mismatch_domains: 0
+  artifacts:
+  - FSOT.Formal.DomainPrecisionPriors
+  - data/domain_precision_report.json
+- tier: 11
+  name: Intelligence_Compression (FIC sweep + fertile window)
+  status: complete
+  metrics:
+    sweep_rows: 572
+    fertile_rows: 156
+    optimal_S_final: 0.2734642953133369
+    best_intelligence_score: 0.9997093332777109
+  artifacts:
+  - FSOT.Formal.IntelligenceCompressionPriors
+  - data/fic_sensitivity_sweep.csv
+  - data/intelligence_compression_manifest.yaml
+- tier: 11b
+  name: Biology numeric depth (Soul 234k + DB bio subset)
+  status: complete
+  metrics:
+    soul_records: 234447
+    biology_corpus_estimated: 31620
+    db_bio_numeric: 22
+  artifacts:
+  - data/biology_numeric_report.json
+  - data/cellular_manifest.yaml
+- tier: 12
+  name: 'Extension domains #37-39 (Plasma, Immunology, Climate)'
+  status: complete
+  metrics:
+    plasma_records: 6
+    immunology_records: 84
+    climate_months: 9439
+    biology_strict_records: 16
+  artifacts:
+  - FSOT.Formal.PlasmaPhysicsPriors
+  - FSOT.Formal.ImmunologyPriors
+  - FSOT.Formal.ClimateSciencePriors
+  - data/extension_domains_manifest.yaml
+- tier: 13
+  name: Biology strict-empirical NCBI bridge (mt operons → Lean)
+  status: complete
+  metrics:
+    strict_records: 15
+    operon_records: 13
+    strict_median_error_pct: 0.0
+    ncbi_reference: NC_012920.1
+    soul_biology_rows: 16794
+  artifacts:
+  - FSOT.Formal.BiologyStrictEmpiricalPriors
+  - data/biology_strict_manifest.yaml
+  - data/biology_strict_empirical.json
+- tier: 14
+  name: Climate scale cohort + neuron train/holdout + scientific domain map
+  status: complete
+  metrics:
+    climate_total_months: 9439
+    climate_holdout_months: 1920
+    climate_holdout_median_err: 0.0
+    neuron_train_cells: 1745
+    neuron_holdout_cells: 420
+    neuron_holdout_gates_pass: true
+    scientific_domains_covered: 45
+    expansion_candidates: 6
+  artifacts:
+  - data/climate_ncei_manifest.yaml
+  - data/neuron_cohort_train_holdout.json
+  - data/scientific_domain_expansion_map.json
+  - FSOT.Formal.NeuronCohortTrainHoldoutPriors
+- tier: 15
+  name: Wave A core theory grounding (thesis sim + emergent MC + math rules)
+  status: complete
+  metrics:
+    thesis_wave_targets: 98
+    thesis_intrinsic_screens: 58
+    thesis_observables: 156
+    emergent_domains: 29
+    emergent_observed: 28
+    emergence_health: 0.8547351151068473
+    math_rule_corpora: 61
+    math_rule_observables: 1520
+  artifacts:
+  - data/thesis_simulation_manifest.yaml
+  - data/emergent_domains_manifest.yaml
+  - data/math_generator_rules_manifest.yaml
+  - FSOT.Formal.ThesisSimulationPriors
+  - FSOT.Formal.EmergentDomainPriors
+  - FSOT.Formal.MathGeneratorPriors
+- tier: 16
+  name: Wave B cosmology + particle physics extended domains
+  status: complete
+  metrics:
+    cosmology_skeleton_derivations: 24
+    cosmology_lambda_cdm_bundle: 30
+    cosmology_extended_observables: 58
+    particle_smiles_records: 36
+    particle_wave4_observables: 16
+    particle_math_physics_rules: 25
+    particle_extended_observables: 98
+    particle_median_error_pct: 0.492528
+  artifacts:
+  - data/cosmology_extended_manifest.yaml
+  - data/particle_physics_manifest.yaml
+  - FSOT.Formal.CosmologyExtendedPriors
+  - FSOT.Formal.ParticlePhysicsPriors
+- tier: 17
+  name: Cosmo/particle deepen (astro thicken + Higgs + SWPC + waves 5–10)
+  status: complete
+  metrics:
+    cosmology_higher_waves: 142
+    higgs_branching_observables: 14
+    space_weather_kp_records: 271813
+    astrophysics_empirical_records: 216
+    particle_astrophysics_empirical_records: 216
+  artifacts:
+  - data/cosmology_higher_waves_manifest.yaml
+  - data/higgs_branching_manifest.yaml
+  - data/space_weather_manifest.yaml
+  - FSOT.Formal.CosmologyHigherWavesPriors
+  - FSOT.Formal.HiggsBranchingPriors
+  - FSOT.Formal.SpaceWeatherPriors
+- tier: 18
+  name: Per-wave cosmology + historical SWPC + plasma crosswalk
+  status: complete
+  metrics:
+    cosmology_wave5_observables: 22
+    cosmology_wave8_observables: 52
+    space_weather_kp_records: 271813
+    plasma_crosswalk_labs:
+    - plasma_physics_lab
+    - space_weather_lab
+  artifacts:
+  - data/cosmology_per_wave_manifest.yaml
+  - data/space_weather_manifest.yaml
+  - FSOT.Formal.CosmologyWave5Priors
+  - FSOT.Formal.CosmologyWave10Priors
+  - FSOT.Formal.SpaceWeatherPriors
+- tier: 19
+  name: GFZ 2010–2024 + Wave4 Priors + USGS hydrology
+  status: complete
+  metrics:
+    cosmology_wave4_observables: 16
+    space_weather_kp_records: 271813
+    hydrology_month_records: 960
+    gfz_year_range:
+    - 2010
+    - 2024
+  artifacts:
+  - data/space_weather_manifest.yaml
+  - data/hydrology_usgs_manifest.yaml
+  - FSOT.Formal.CosmologyWave4Priors
+  - FSOT.Formal.HydrologyPriors
+- tier: 20
+  name: GFZ 1932 arc + Priors-only Wave4 + ChEMBL + Cryosphere + ToE crosswalk
+  status: complete
+  metrics:
+    space_weather_kp_records: 271813
+    pharmacology_observables: 120
+    cryosphere_month_records: 1919
+    cryosphere_match_rate: 0.9927045336112559
+    gfz_year_range:
+    - 1932
+    - 2024
+    theory_crosswalk_domains:
+    - Aerospace_Engineering
+    - Computer_Science
+    - Hearing_Science
+    - Pharmacology
+    - Cryosphere
+  artifacts:
+  - data/space_weather_manifest.yaml
+  - data/pharmacology_chembl_manifest.yaml
+  - data/cryosphere_manifest.yaml
+  - data/fsot_theory_crosswalk.yaml
+  - data/FSOT_VERIFIED_SCOPE.yaml
+  - FSOT.Formal.CosmologyWave4Priors
+  - FSOT.Formal.PharmacologyPriors
+  - FSOT.Formal.CryospherePriors
+extension_domains:
+- domain: Plasma_Physics
+  tier: 12
+  record_count: 43899
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.PlasmaPhysicsPriors
+- domain: Immunology
+  tier: 12
+  record_count: 84
+  median_error_pct: 0.451494
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ImmunologyPriors
+- domain: Climate_Science
+  tier: 12
+  record_count: 9439
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.ClimateSciencePriors
+- domain: Cosmology_Extended
+  tier: 16
+  record_count: 58
+  median_error_pct: 0.022
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.CosmologyExtendedPriors
+- domain: Particle_Physics
+  tier: 16
+  record_count: 98
+  median_error_pct: 0.492528
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ParticlePhysicsPriors
+- domain: Space_Weather
+  tier: 17
+  record_count: 271813
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.SpaceWeatherPriors
+- domain: Hydrology
+  tier: 19
+  record_count: 960
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.HydrologyPriors
+- domain: Pharmacology
+  tier: 20
+  record_count: 120
+  median_error_pct: 0.0011715432153059484
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.PharmacologyPriors
+- domain: Cryosphere
+  tier: 20
+  record_count: 1919
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.CryospherePriors
+theory_crosswalk:
+  Aerospace_Engineering:
+    tier: 20
+    D_eff: 16
+    maps_to_lean:
+    - material
+    - energy
+    - astronomical
+    labs:
+    - species_catalog
+    - trinary_fluid_computer
+    - cosmology_wave4_lab
+    lean_modules:
+    - FSOT.Formal.SpeciesPriors
+    - FSOT.Formal.TrinaryFluidPriors
+    - FSOT.Formal.CosmologyWave4Priors
+    note: Propulsion/material catalogs + trinary fluid pathways + wave-4 particle
+      scales
+  Computer_Science:
+    tier: 20
+    D_eff: 17
+    maps_to_lean:
+    - ai
+    - consciousness
+    labs:
+    - trinary_os
+    - linguistics_lab
+    - math_generator rules
+    lean_modules:
+    - FSOT.Formal.TrinaryOSPriors
+    - FSOT.Formal.LinguisticsPriors
+    - FSOT.Formal.MathGeneratorPriors
+    note: Trinary OS oracle + linguistics anchors + math-generator rule corpus
+  Hearing_Science:
+    tier: 20
+    D_eff: 11
+    maps_to_lean:
+    - material
+    - energy
+    neurolab_anchor: Acoustics
+    labs:
+    - smiles_lab
+    lean_modules:
+    - FSOT.Formal.SpeciesPriors
+    note: Acoustic/material SMILES sections; signal-processing bridge to aerospace
+      comms
+  Pharmacology:
+    tier: 20
+    D_eff: 14
+    maps_to_lean:
+    - medical
+    - chemical
+    lean_module: FSOT.Formal.PharmacologyPriors
+  Cryosphere:
+    tier: 20
+    D_eff: 16
+    maps_to_lean:
+    - energy
+    - galactic
+    lean_module: FSOT.Formal.CryospherePriors
+lean_formal_modules:
+- AetherPrimePriors
+- BiologyStrictEmpiricalPriors
+- BlackHoleThesisPriors
+- BrainPriors
+- CameoPriors
+- CellularPriors
+- ClimateSciencePriors
+- CodonPriors
+- CosmologyExtendedPriors
+- CosmologyHigherWavesPriors
+- CosmologyLab
+- CosmologyWave10Priors
+- CosmologyWave4Priors
+- CosmologyWave5Priors
+- CosmologyWave6Priors
+- CosmologyWave7Priors
+- CosmologyWave8Priors
+- CosmologyWave9Priors
+- CryospherePriors
+- DomainCoveragePriors
+- DomainPrecisionPriors
+- EmergentDomainPriors
+- EvolutionPriors
+- ExperimentSynthesisPriors
+- FormulaCorpusPriors
+- FuelPriors
+- HiggsBranchingPriors
+- HydrologyPriors
+- ImmunologyPriors
+- IntelligenceCompressionPriors
+- KnowledgeBasePriors
+- KronosPriors
+- LinguisticsPriors
+- MagicCirclePriors
+- MagneticStringPriors
+- MathGeneratorPriors
+- NeuronCohortPriors
+- NeuronCohortStrataPriors
+- NeuronCohortTrainHoldoutPriors
+- NeuronHybridPriors
+- ParticlePhysicsPriors
+- PharmacologyPriors
+- PlasmaPhysicsPriors
+- ProteinPriors
+- SoulSiblingPriors
+- SpaceWeatherPriors
+- SpeciesPriors
+- ThesisSimulationPriors
+- TrinaryFluidPriors
+- TrinaryOSPriors
+- UnifiedDBPriors
+- VibRegisterPriors
+- WeatherPriors
+certificate_path: data/certificate.json
+reproduce: python scripts/fsot_verification_runner.py

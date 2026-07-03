@@ -23,6 +23,8 @@ DEDICATED_GENERATORS = {
     "Particle_Physics",
     "Space_Weather",
     "Hydrology",
+    "Pharmacology",
+    "Cryosphere",
 }
 
 LEAN_SIGN = {
@@ -33,6 +35,8 @@ LEAN_SIGN = {
     "Particle_Physics": ("particle", "particle_raw_S_positive"),
     "Space_Weather": ("fusion", "fusion_raw_S_positive"),
     "Hydrology": ("energy", "energy_raw_S_positive"),
+    "Pharmacology": ("medical", "medical_raw_S_positive"),
+    "Cryosphere": ("galactic", "galactic_raw_S_positive"),
 }
 
 

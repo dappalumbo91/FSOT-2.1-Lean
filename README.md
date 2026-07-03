@@ -27,11 +27,15 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-06-20)
+## Verification status (2026-07-03 — Tier 20)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
-- **57 proved claims**, 0 active `sorry`, `lean_build_ok: true`
+Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
+
+- **18/18 verification tiers complete** (GFZ 1932–2024 Kp arc, Priors-only Wave-4, ChEMBL pharmacology, cryosphere, ToE crosswalk)
+- **45+ scientific domains** (35 NeuroLab + 10 extension bridges including Aerospace, Computer Science, Hearing Science)
+- **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
 - 64-codon dual-axis map (`FSOT.Formal.CodonPriors`) — 8 primary + 27 secondary patterns
@@ -49,7 +53,12 @@ Full pipeline: `python scripts/fsot_verification_runner.py`
 - Weather scalar sim (`FSOT.Formal.WeatherPriors`) — 24h at D_eff=15, all S>0
 - Linguistics anchors (`FSOT.Formal.LinguisticsPriors`) — 10 targets within 5% FSOT derivations
 - Unified DB inventory (`FSOT.Formal.UnifiedDBPriors`) — 30,984 indexed records, 26 projects (inventory tier)
-- Cosmology Wave-4 (`FSOT.Formal.CosmologyWave4`) — 16 observables (PMNS/CKM/nuclear/dark-energy), max err 0.23%
+- Cosmology Wave-4 (`FSOT.Formal.CosmologyWave4Priors`) — 16 observables (PMNS/CKM/nuclear/dark-energy); legacy `CosmologyWave4.lean` is a deprecation shim
+- GFZ Kp historical arc (`FSOT.Formal.SpaceWeatherPriors`) — **271,813** Kp records (1932–2024), 100% stability match
+- USGS hydrology (`FSOT.Formal.HydrologyPriors`) — monthly streamflow cohort with train/holdout gates
+- Pharmacology ChEMBL (`FSOT.Formal.PharmacologyPriors`) — 120 approved-drug molecular weights, median err &lt;0.01%
+- Cryosphere proxy (`FSOT.Formal.CryospherePriors`) — 1,919 northern freezing-month records, 99.3% classifier match
+- Theory-of-Everything crosswalk (`data/fsot_theory_crosswalk.yaml`) — Aerospace Engineering, Computer Science, Hearing Science wired to verified Lean modules
 - Kronos metrology (`FSOT.Formal.KronosPriors`) — 568 runs, best fractional error 1.64e-7
 - Knowledge base (`FSOT.Formal.KnowledgeBasePriors`) — 19,213 catalog formulas; 7,941 strict-empirical bridge (6,921 within 2%); per-formula pass on full catalog
 - Math generator (`FSOT.Formal.MathGeneratorPriors`) — 7 comparisons within 2%
@@ -81,6 +90,7 @@ python scripts/run_knowledge_base_formula_verify.py
 
 - Domain coverage map: `data/domain_coverage_map.yaml` (26 ledger domains: 18 proved_sign / 9 partial / 0 gap)
 - Certificate: `data/certificate.json` | Run log: `data/verification_runs.jsonl`
+- Verified scope (GitHub consumers): `data/FSOT_VERIFIED_SCOPE.yaml` — full FSOT capability index
 
 See `REPRODUCE.md` and `docs/genomic_brain_priors_verification.md` for details.
 

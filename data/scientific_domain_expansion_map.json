@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-03T15:59:49.639783+00:00",
+  "generated_at": "2026-07-03T16:11:08.047804+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 7,
-    "total_scientific_domains_covered": 43,
+    "extension_domains": 9,
+    "total_scientific_domains_covered": 45,
     "total_empirical_records": 261401,
     "domains_target_band_2pct": 35,
     "domains_sign_mismatch": 0,
@@ -14,7 +14,7 @@
       "D_needs_work": 0,
       "unverified": 0
     },
-    "lean_formal_modules": 62
+    "lean_formal_modules": 64
   },
   "neurolab_domains": [
     {
@@ -535,7 +535,7 @@
     {
       "domain": "Space_Weather",
       "tier": 17,
-      "record_count": 43893,
+      "record_count": 271813,
       "median_error_pct": 0.0,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.SpaceWeatherPriors"
@@ -547,6 +547,22 @@
       "median_error_pct": 0.0,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.HydrologyPriors"
+    },
+    {
+      "domain": "Pharmacology",
+      "tier": 20,
+      "record_count": 120,
+      "median_error_pct": 0.0011715432153059484,
+      "coverage_tier": "A_strong",
+      "lean_module": "FSOT.Formal.PharmacologyPriors"
+    },
+    {
+      "domain": "Cryosphere",
+      "tier": 20,
+      "record_count": 1919,
+      "median_error_pct": 0.0,
+      "coverage_tier": "A_strong",
+      "lean_module": "FSOT.Formal.CryospherePriors"
     }
   ],
   "intelligence_compression": {
@@ -664,23 +680,8 @@
       "priority": "high"
     },
     {
-      "id": "Pharmacology",
-      "rationale": "Medical/immunology bridge; drug-target strict empirical thin",
-      "priority": "high"
-    },
-    {
       "id": "Oncology",
       "rationale": "Biology strict + immunology extension; tumor marker benchmarks",
-      "priority": "medium"
-    },
-    {
-      "id": "Space_Weather",
-      "rationale": "Plasma + climate coupling; NOAA SWPC data ingest",
-      "priority": "high"
-    },
-    {
-      "id": "Cryosphere",
-      "rationale": "Climate + geophysics; ice-core / GRACE proxies",
       "priority": "medium"
     },
     {
@@ -707,9 +708,9 @@
   "recommended_next_waves": [
     "Scale climate to 20 stations \u00d7 40 years with holdout station gates (in progress)",
     "Expand Plasma_Physics beyond 6 records (fusion lab + NIST plasma tables)",
-    "Wire Space_Weather as domain #40 (NOAA SWPC Kp/Ap chunked ingest)",
+    "NSIDC/GRACE direct cryosphere mass-balance ingest (beyond NCEI proxy)",
     "Multi-hero neuron certification (3\u20135 specimens per Allen class)",
-    "Pharmacology strict-empirical (ChEMBL / DrugBank property bridge)",
-    "Hydrology USGS streamflow chunked ingest (climate cohort pattern)"
+    "Oncology tumor-marker strict-empirical bridge",
+    "Geochemistry dedicated observables (SMILES + planetary overlap)"
   ]
 }

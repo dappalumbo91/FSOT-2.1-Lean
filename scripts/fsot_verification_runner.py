@@ -149,7 +149,7 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.WeatherPriors",
                 "FSOT.Formal.LinguisticsPriors",
                 "FSOT.Formal.UnifiedDBPriors",
-                "FSOT.Formal.CosmologyWave4",
+
                 "FSOT.Formal.KronosPriors",
                 "FSOT.Formal.KnowledgeBasePriors",
                 "FSOT.Formal.MathGeneratorPriors",
@@ -182,6 +182,8 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.HiggsBranchingPriors",
                 "FSOT.Formal.SpaceWeatherPriors",
                 "FSOT.Formal.HydrologyPriors",
+                "FSOT.Formal.PharmacologyPriors",
+                "FSOT.Formal.CryospherePriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -533,7 +535,7 @@ def main() -> int:
                 issues.append("knowledge base per-formula verification failed")
 
         tier5_ingests = [
-            ("ingest_cosmology_wave4.py", "gen_cosmology_wave4_lean.py", "CosmologyWave4.lean generation failed", "cosmology wave4 ingest failed"),
+            ("ingest_cosmology_per_wave.py", "gen_cosmology_wave_lean.py", "CosmologyWave4Priors.lean generation failed", "cosmology wave4 per-wave ingest failed"),
             ("ingest_kronos_lab.py", "gen_kronos_priors_lean.py", "KronosPriors.lean generation failed", "Kronos lab ingest failed"),
             ("ingest_knowledge_base.py", "gen_knowledge_base_lean.py", "KnowledgeBasePriors.lean generation failed", "knowledge base ingest failed"),
             ("ingest_math_generator_lab.py", "gen_math_generator_lean.py", "MathGeneratorPriors.lean generation failed", "math generator ingest failed"),
@@ -715,6 +717,9 @@ def main() -> int:
             "ingest_space_weather_swpc_chunked.py",
             "ingest_hydrology_usgs_chunked.py",
             "build_hydrology_benchmark.py",
+            "ingest_pharmacology_chembl.py",
+            "build_pharmacology_benchmark.py",
+            "build_cryosphere_benchmark.py",
             "build_plasma_physics_benchmark.py",
             "build_immunology_benchmark.py",
             "ingest_climate_ncei_chunked.py",
@@ -785,22 +790,26 @@ def main() -> int:
             ("ingest_higgs_branching_lab.py", "gen_higgs_branching_lean.py", "HiggsBranchingPriors.lean generation failed", "higgs branching ingest failed"),
             ("ingest_space_weather_lab.py", "gen_space_weather_lean.py", "SpaceWeatherPriors.lean generation failed", "space weather ingest failed"),
             ("ingest_hydrology_lab.py", "gen_hydrology_lean.py", "HydrologyPriors.lean generation failed", "hydrology ingest failed"),
+            ("ingest_pharmacology_chembl.py", "gen_pharmacology_lean.py", "PharmacologyPriors.lean generation failed", "pharmacology ChEMBL ingest failed"),
+            (None, "gen_cryosphere_lean.py", "CryospherePriors.lean generation failed", None),
         ]
         for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
-            ingest_script = ROOT / "scripts" / ingest_name
-            if not ingest_script.exists():
-                continue
-            proc_wa = subprocess.run(
-                [sys.executable, str(ingest_script)],
-                cwd=ROOT,
-                capture_output=True,
-                text=True,
-                check=False,
-            )
-            print(proc_wa.stdout.strip() or proc_wa.stderr.strip())
-            if proc_wa.returncode != 0:
-                issues.append(ingest_fail)
-                continue
+            if ingest_name:
+                ingest_script = ROOT / "scripts" / ingest_name
+                if not ingest_script.exists():
+                    continue
+                proc_wa = subprocess.run(
+                    [sys.executable, str(ingest_script)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_wa.stdout.strip() or proc_wa.stderr.strip())
+                if proc_wa.returncode != 0:
+                    if ingest_fail:
+                        issues.append(ingest_fail)
+                    continue
             if gen_name:
                 gen_script = ROOT / "scripts" / gen_name
                 if gen_script.exists():
@@ -951,6 +960,32 @@ def main() -> int:
         return 1
 
     print("  All checks passed.")
+
+    for meta_script in (
+        "build_fsot_verification_progress.py",
+        "build_scientific_domain_expansion_map.py",
+        "build_fsot_verified_scope.py",
+    ):
+        script = ROOT / "scripts" / meta_script
+        if script.exists():
+            proc_meta = subprocess.run(
+                [sys.executable, str(script)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc_meta.stdout.strip() or proc_meta.stderr.strip())
+            if proc_meta.returncode != 0:
+                issues.append(f"{meta_script} failed")
+                append_run_log(
+                    ok=False,
+                    issues=issues,
+                    authority_sha256=live_digest if not args.no_hash_gate else None,
+                    authority_path=str(source),
+                    lean_ok=lean_ok,
+                )
+                return 1
 
     export = ROOT / "scripts" / "export_certificate.py"
     if export.exists():

@@ -823,7 +823,7 @@ entries:
     source_file: data/cosmology_wave4_manifest.yaml
     verification: scripts/verify_cosmology_wave4.py
     lean:
-      module: FSOT.Formal.CosmologyWave4
+      module: FSOT.Formal.CosmologyWave4Priors
       theorem: cosmology_wave4_bundle
 
   - id: kronos_metrology_runs

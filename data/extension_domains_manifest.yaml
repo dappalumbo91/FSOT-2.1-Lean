@@ -91,6 +91,33 @@ extension_domains:
     lean_module: FSOT.Formal.HydrologyPriors
     note: "USGS NWIS daily streamflow chunked ingest; climate cohort train/holdout pattern"
 
+  Pharmacology:
+    tier: 20
+    D_eff: 14
+    delta_psi: 0.72
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [medical, chemical]
+    ingest_script: scripts/ingest_pharmacology_chembl.py
+    build_script: scripts/build_pharmacology_benchmark.py
+    manifest: data/pharmacology_chembl_manifest.yaml
+    benchmark_data: data/pharmacology_benchmark.json
+    lean_module: FSOT.Formal.PharmacologyPriors
+    note: "ChEMBL max_phase=4 molecular weight vs FSOT formula mass"
+
+  Cryosphere:
+    tier: 20
+    D_eff: 16
+    delta_psi: 0.74
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, galactic]
+    build_script: scripts/build_cryosphere_benchmark.py
+    manifest: data/cryosphere_manifest.yaml
+    benchmark_data: data/cryosphere_benchmark.json
+    lean_module: FSOT.Formal.CryospherePriors
+    note: "Northern NCEI climate cohort freezing-month classifier (GRACE-scale proxy)"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0
