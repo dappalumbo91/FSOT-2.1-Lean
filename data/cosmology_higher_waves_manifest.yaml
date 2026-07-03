@@ -1,0 +1,17 @@
+# Tier 17 — fsot_compute waves 5–10 (142 observables beyond Wave-4).
+version: "1.0"
+updated: "2026-07-01"
+
+source:
+  cosmology_root: "C:/Users/damia/Desktop/FSOT Cosmology Lab"
+  fsot_compute: fsot_compute.py
+  waves: [5, 6, 7, 8, 9, 10]
+
+build:
+  ingest: scripts/ingest_cosmology_higher_waves.py
+  generator: scripts/gen_cosmology_higher_waves_lean.py
+  module: FSOT.Formal.CosmologyHigherWavesPriors
+
+verification:
+  min_total_observables: 140
+  max_error_pct: 5.0

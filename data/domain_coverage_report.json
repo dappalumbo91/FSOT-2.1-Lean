@@ -2,7 +2,7 @@
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
   "domain_count": 35,
   "domains_with_empirical_data": 35,
-  "total_empirical_records": 261999,
+  "total_empirical_records": 261401,
   "lean_mapped_count": 17,
   "lean_param_aligned_count": 17,
   "negative_scalar_domains": [
@@ -55,7 +55,7 @@
       "lean_sign_theorem": "astronomical_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 46,
+      "empirical_records": 104,
       "empirical_sources": [
         {
           "lab": "cosmology_lambda_cdm",
@@ -66,9 +66,14 @@
           "lab": "cosmology_wave4",
           "records": 16,
           "median_error_pct": 0.03162247159570792
+        },
+        {
+          "lab": "cosmology_extended_lab",
+          "records": 58,
+          "median_error_pct": 0.022
         }
       ],
-      "empirical_median_error_pct": 0.03162247159570792,
+      "empirical_median_error_pct": 0.022,
       "has_empirical_data": true
     },
     {
@@ -84,12 +89,22 @@
       "lean_sign_theorem": "astronomical_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 16,
+      "empirical_records": 216,
       "empirical_sources": [
         {
           "lab": "cosmology_wave4",
           "records": 16,
           "median_error_pct": 0.03162247159570792
+        },
+        {
+          "lab": "cosmology_extended_lab",
+          "records": 58,
+          "median_error_pct": 0.022
+        },
+        {
+          "lab": "cosmology_higher_waves_lab",
+          "records": 142,
+          "median_error_pct": 0.08133168472446134
         }
       ],
       "empirical_median_error_pct": 0.03162247159570792,
@@ -272,15 +287,25 @@
       "lean_sign_theorem": "cosmological_raw_S_negative",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 30,
+      "empirical_records": 230,
       "empirical_sources": [
         {
           "lab": "cosmology_lambda_cdm",
           "records": 30,
           "median_error_pct": 0.005633747260469587
+        },
+        {
+          "lab": "cosmology_extended_lab",
+          "records": 58,
+          "median_error_pct": 0.022
+        },
+        {
+          "lab": "cosmology_higher_waves_lab",
+          "records": 142,
+          "median_error_pct": 0.08133168472446134
         }
       ],
-      "empirical_median_error_pct": 0.005633747260469587,
+      "empirical_median_error_pct": 0.022,
       "has_empirical_data": true
     },
     {
@@ -421,15 +446,20 @@
       "lean_sign_theorem": "higgs_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 1470,
+      "empirical_records": 156,
       "empirical_sources": [
         {
-          "lab": "smiles_lab",
-          "records": 1470,
-          "median_error_pct": 0.058
+          "lab": "higgs_branching_lab",
+          "records": 14,
+          "median_error_pct": 0.08808351263334355
+        },
+        {
+          "lab": "cosmology_higher_waves_lab",
+          "records": 142,
+          "median_error_pct": 0.08133168472446134
         }
       ],
-      "empirical_median_error_pct": 0.058,
+      "empirical_median_error_pct": 0.08808351263334355,
       "has_empirical_data": true
     },
     {
@@ -628,12 +658,22 @@
       "lean_sign_theorem": "cmb_raw_S_negative",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 16,
+      "empirical_records": 216,
       "empirical_sources": [
         {
           "lab": "cosmology_wave4",
           "records": 16,
           "median_error_pct": 0.03162247159570792
+        },
+        {
+          "lab": "cosmology_extended_lab",
+          "records": 58,
+          "median_error_pct": 0.022
+        },
+        {
+          "lab": "cosmology_higher_waves_lab",
+          "records": 142,
+          "median_error_pct": 0.08133168472446134
         }
       ],
       "empirical_median_error_pct": 0.03162247159570792,
@@ -700,12 +740,17 @@
       "lean_sign_theorem": "galactic_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 16,
+      "empirical_records": 74,
       "empirical_sources": [
         {
           "lab": "cosmology_wave4",
           "records": 16,
           "median_error_pct": 0.03162247159570792
+        },
+        {
+          "lab": "cosmology_extended_lab",
+          "records": 58,
+          "median_error_pct": 0.022
         }
       ],
       "empirical_median_error_pct": 0.03162247159570792,

@@ -1,0 +1,135 @@
+{
+  "benchmark_version": "1.0",
+  "generated_at": "2026-07-03T15:26:11.693917+00:00",
+  "compute_higgs_count": 9,
+  "thesis_higgs_count": 5,
+  "observable_count": 14,
+  "median_error_pct": 0.08808351263334355,
+  "max_error_pct": 4.232801452006084,
+  "within_five_pct_count": 9,
+  "compute_higgs_rows": [
+    {
+      "wave": "wave5",
+      "name": "m_H/m_t",
+      "formula": "A_bleed\u00b7ln(2)",
+      "computed": 0.7257068201623708,
+      "measured": 0.7256,
+      "error_pct": 0.014721632079759569,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave5",
+      "name": "BR_H_bb",
+      "formula": "C_eff/\u221ae",
+      "computed": 0.5808757487636912,
+      "measured": 0.5809,
+      "error_pct": 0.004174769548765883,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave5",
+      "name": "BR_H_WW",
+      "formula": "ln(\u03c6)/\u221a5",
+      "computed": 0.21520447048200203,
+      "measured": 0.2152,
+      "error_pct": 0.0020773615251059676,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave5",
+      "name": "BR_H_tautau",
+      "formula": "\u03b7_eff/e\u00b2",
+      "computed": 0.06319375582922372,
+      "measured": 0.0632,
+      "error_pct": 0.009880017051083028,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave8",
+      "name": "BR_H_ZZ",
+      "formula": "1/(e\u2074ln(2))",
+      "computed": 0.026423881395489845,
+      "measured": 0.0264,
+      "error_pct": 0.09045983140093045,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave8",
+      "name": "BR_H_gg",
+      "formula": "\u03c6\u207b\u2074 \u2212 \u03b3\u2075",
+      "computed": 0.08182274913982478,
+      "measured": 0.0785,
+      "error_pct": 4.232801452006084,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave8",
+      "name": "BR_H_cc",
+      "formula": "Suction/(\u03c0\u03c6)",
+      "computed": 0.028925456135151035,
+      "measured": 0.0289,
+      "error_pct": 0.08808351263334355,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave8",
+      "name": "BR_H_gamgam",
+      "formula": "\u03b3\u2076\u00b7C_cosm",
+      "computed": 0.0022858146532987495,
+      "measured": 0.00228,
+      "error_pct": 0.2550286534539278,
+      "source": "fsot_compute"
+    },
+    {
+      "wave": "wave8",
+      "name": "BR_H_Zgam",
+      "formula": "\u03b7_eff/\u03c0\u2075",
+      "computed": 0.0015258567671942072,
+      "measured": 0.00153,
+      "error_pct": 0.27079952979037436,
+      "source": "fsot_compute"
+    }
+  ],
+  "thesis_higgs_rows": [
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_ZZ",
+      "name": "BR(H -> ZZ)",
+      "measured": "0.0262",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_gg",
+      "name": "BR(H -> gg)",
+      "measured": "0.0818",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_cc",
+      "name": "BR(H -> c cbar)",
+      "measured": "0.0288",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_gammagamma",
+      "name": "BR(H -> gamma gamma)",
+      "measured": "0.00227",
+      "sigma_percent": "0.1"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_Zgamma",
+      "name": "BR(H -> Z gamma)",
+      "measured": "0.00154",
+      "sigma_percent": "0.1"
+    }
+  ]
+}

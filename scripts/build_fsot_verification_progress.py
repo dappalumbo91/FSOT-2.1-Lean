@@ -51,6 +51,10 @@ def build_progress() -> dict:
     mg_rules_bench = _load_json(ROOT / "data" / "math_generator_rules_benchmark.json")
     cosmo_ext_bench = _load_json(ROOT / "data" / "cosmology_extended_benchmark.json")
     particle_bench = _load_json(ROOT / "data" / "particle_physics_benchmark.json")
+    higgs_bench = _load_json(ROOT / "data" / "higgs_branching_benchmark.json")
+    registry_full = _load_json(ROOT / "data" / "lab_registry.json")
+    higher_waves = registry_full.get("cosmology_higher_waves_lab", {})
+    space_weather_bench = _load_json(ROOT / "data" / "space_weather_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -303,6 +307,62 @@ def build_progress() -> dict:
                 "FSOT.Formal.ParticlePhysicsPriors",
             ],
         },
+        {
+            "tier": 17,
+            "name": "Cosmo/particle deepen (astro thicken + Higgs + SWPC + waves 5–10)",
+            "status": "complete"
+            if higher_waves.get("observable_count", 0) >= 140
+            and higgs_bench.get("observable_count", 0) >= 8
+            and space_weather_bench.get("kp_record_count", 0) >= 30
+            and next(
+                (
+                    d.get("empirical_records", 0)
+                    for d in (domain_cov.get("domains") or [])
+                    if d.get("neurolab_domain") == "Astrophysics"
+                ),
+                0,
+            )
+            >= 50
+            and next(
+                (
+                    d.get("empirical_records", 0)
+                    for d in (domain_cov.get("domains") or [])
+                    if d.get("neurolab_domain") == "Particle_Astrophysics"
+                ),
+                0,
+            )
+            >= 50
+            else "pending",
+            "metrics": {
+                "cosmology_higher_waves": higher_waves.get("observable_count"),
+                "higgs_branching_observables": higgs_bench.get("observable_count"),
+                "space_weather_kp_records": space_weather_bench.get("kp_record_count"),
+                "astrophysics_empirical_records": next(
+                    (
+                        d.get("empirical_records")
+                        for d in (domain_cov.get("domains") or [])
+                        if d.get("neurolab_domain") == "Astrophysics"
+                    ),
+                    None,
+                ),
+                "particle_astrophysics_empirical_records": next(
+                    (
+                        d.get("empirical_records")
+                        for d in (domain_cov.get("domains") or [])
+                        if d.get("neurolab_domain") == "Particle_Astrophysics"
+                    ),
+                    None,
+                ),
+            },
+            "artifacts": [
+                "data/cosmology_higher_waves_manifest.yaml",
+                "data/higgs_branching_manifest.yaml",
+                "data/space_weather_manifest.yaml",
+                "FSOT.Formal.CosmologyHigherWavesPriors",
+                "FSOT.Formal.HiggsBranchingPriors",
+                "FSOT.Formal.SpaceWeatherPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -329,7 +389,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 16 Wave B cosmology + particle physics extended domains",
+        "current_position": "Tier 17 cosmo/particle deepen (astro thicken + Higgs + SWPC + waves 5–10)",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

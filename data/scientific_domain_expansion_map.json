@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-03T15:20:52.049776+00:00",
+  "generated_at": "2026-07-03T15:27:04.070051+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 5,
-    "total_scientific_domains_covered": 41,
-    "total_empirical_records": 261999,
+    "extension_domains": 6,
+    "total_scientific_domains_covered": 42,
+    "total_empirical_records": 261401,
     "domains_target_band_2pct": 35,
     "domains_sign_mismatch": 0,
     "tier_distribution": {
@@ -14,7 +14,7 @@
       "D_needs_work": 0,
       "unverified": 0
     },
-    "lean_formal_modules": 51
+    "lean_formal_modules": 54
   },
   "neurolab_domains": [
     {
@@ -41,7 +41,8 @@
       "coverage_tier": "B_verified",
       "labs": [
         "cosmology_lambda_cdm",
-        "cosmology_wave4"
+        "cosmology_wave4",
+        "cosmology_extended_lab"
       ]
     },
     {
@@ -54,7 +55,9 @@
       "authority_scalar_negative": false,
       "coverage_tier": "C_thin",
       "labs": [
-        "cosmology_wave4"
+        "cosmology_wave4",
+        "cosmology_extended_lab",
+        "cosmology_higher_waves_lab"
       ]
     },
     {
@@ -149,7 +152,9 @@
       "authority_scalar_negative": true,
       "coverage_tier": "B_verified",
       "labs": [
-        "cosmology_lambda_cdm"
+        "cosmology_lambda_cdm",
+        "cosmology_extended_lab",
+        "cosmology_higher_waves_lab"
       ]
     },
     {
@@ -228,7 +233,8 @@
       "authority_scalar_negative": false,
       "coverage_tier": "B_verified",
       "labs": [
-        "smiles_lab"
+        "higgs_branching_lab",
+        "cosmology_higher_waves_lab"
       ]
     },
     {
@@ -335,7 +341,9 @@
       "authority_scalar_negative": true,
       "coverage_tier": "C_thin",
       "labs": [
-        "cosmology_wave4"
+        "cosmology_wave4",
+        "cosmology_extended_lab",
+        "cosmology_higher_waves_lab"
       ]
     },
     {
@@ -374,7 +382,8 @@
       "authority_scalar_negative": false,
       "coverage_tier": "C_thin",
       "labs": [
-        "cosmology_wave4"
+        "cosmology_wave4",
+        "cosmology_extended_lab"
       ]
     },
     {
@@ -522,6 +531,14 @@
       "median_error_pct": 0.492528,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.ParticlePhysicsPriors"
+    },
+    {
+      "domain": "Space_Weather",
+      "tier": 17,
+      "record_count": 61,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.SpaceWeatherPriors"
     }
   ],
   "intelligence_compression": {

@@ -1,0 +1,24 @@
+# Tier 17 — Higgs / HEP branching split from atomic particle pool.
+version: "1.0"
+updated: "2026-07-01"
+
+source:
+  cosmology_compute: "C:/Users/damia/Desktop/FSOT Cosmology Lab/fsot_compute.py"
+  thesis_root: "C:/Users/damia/Desktop/New folder"
+  thesis_wave: 8
+  higgs_categories:
+    - Higgs Branching Ratios
+
+build:
+  script: scripts/build_higgs_branching_benchmark.py
+  output: data/higgs_branching_benchmark.json
+
+lean:
+  generator: scripts/gen_higgs_branching_lean.py
+  module: FSOT.Formal.HiggsBranchingPriors
+  lean_domain: higgs
+  sign_theorem: higgs_raw_S_positive
+
+verification:
+  min_higgs_observables: 8
+  max_median_error_pct: 5.0

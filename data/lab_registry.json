@@ -48050,5 +48050,1181 @@
     "max_error_pct": 4.499825,
     "within_two_pct_count": 39,
     "ingested_at": "2026-07-03T15:20:08.967640+00:00"
+  },
+  "cosmology_higher_waves_lab": {
+    "observable_count": 142,
+    "measured_count": 142,
+    "max_error_pct": 4.232801452006084,
+    "mean_error_pct": 0.08133168472446134,
+    "wave5_count": 22,
+    "wave6_count": 22,
+    "wave7_count": 29,
+    "wave8_count": 52,
+    "wave9_count": 7,
+    "wave10_count": 10,
+    "waves": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "rows": [
+      {
+        "wave": "wave5",
+        "name": "Gamma_Z/M_Z",
+        "formula": "\u03c6\u2075/e\u2076",
+        "computed": 0.027489782887668835,
+        "measured": 0.02749,
+        "error_pct": 0.0007897865811767023
+      },
+      {
+        "wave": "wave5",
+        "name": "R_ell",
+        "formula": "G\u00b3/\u03b3\u2076",
+        "computed": 20.77824342349839,
+        "measured": 20.767,
+        "error_pct": 0.05414081715410144
+      },
+      {
+        "wave": "wave5",
+        "name": "R_b",
+        "formula": "G/\u03c6\u00b3",
+        "computed": 0.21623014527680923,
+        "measured": 0.21629,
+        "error_pct": 0.027673365939610298
+      },
+      {
+        "wave": "wave5",
+        "name": "R_c",
+        "formula": "\u2212ln(2) + e/\u03c0",
+        "computed": 0.17210879887231978,
+        "measured": 0.1721,
+        "error_pct": 0.005112650970236068
+      },
+      {
+        "wave": "wave5",
+        "name": "A_FB_ell",
+        "formula": "A_in/\u03c0\u2074",
+        "computed": 0.0171118919939693,
+        "measured": 0.0171,
+        "error_pct": 0.06954382438186675
+      },
+      {
+        "wave": "wave5",
+        "name": "A_ell_SLD",
+        "formula": "\u03b3\u00b3/\u221a\u03c6",
+        "computed": 0.15118910851310519,
+        "measured": 0.1513,
+        "error_pct": 0.0732924566389981
+      },
+      {
+        "wave": "wave5",
+        "name": "m_H/m_t",
+        "formula": "A_bleed\u00b7ln(2)",
+        "computed": 0.7257068201623708,
+        "measured": 0.7256,
+        "error_pct": 0.014721632079759569
+      },
+      {
+        "wave": "wave5",
+        "name": "BR_H_bb",
+        "formula": "C_eff/\u221ae",
+        "computed": 0.5808757487636912,
+        "measured": 0.5809,
+        "error_pct": 0.004174769548765883
+      },
+      {
+        "wave": "wave5",
+        "name": "BR_H_WW",
+        "formula": "ln(\u03c6)/\u221a5",
+        "computed": 0.21520447048200203,
+        "measured": 0.2152,
+        "error_pct": 0.0020773615251059676
+      },
+      {
+        "wave": "wave5",
+        "name": "BR_H_tautau",
+        "formula": "\u03b7_eff/e\u00b2",
+        "computed": 0.06319375582922372,
+        "measured": 0.0632,
+        "error_pct": 0.009880017051083028
+      },
+      {
+        "wave": "wave5",
+        "name": "Y_p_He4",
+        "formula": "\u03b8_S\u00b7sin(1)",
+        "computed": 0.24478099844975698,
+        "measured": 0.2449,
+        "error_pct": 0.0485918947501124
+      },
+      {
+        "wave": "wave5",
+        "name": "D_H_ratio",
+        "formula": "1/(\u03c0\u2074\u00b7e\u2076)",
+        "computed": 2.5446825859417006e-05,
+        "measured": 2.547e-05,
+        "error_pct": 0.09098602506082563
+      },
+      {
+        "wave": "wave5",
+        "name": "Khinchin_K0",
+        "formula": "A_bleed/ln(3) + 1/\u03b3",
+        "computed": 2.685451182405338,
+        "measured": 2.685452,
+        "error_pct": 3.0445327721168166e-05
+      },
+      {
+        "wave": "wave5",
+        "name": "Glaisher_A",
+        "formula": "G\u2074\u221a5 \u2212 G/\u03c0",
+        "computed": 1.2824279243871977,
+        "measured": 1.282427,
+        "error_pct": 7.208107733820862e-05
+      },
+      {
+        "wave": "wave5",
+        "name": "Twin_prime_C2",
+        "formula": "\u03b3\u2074/G\u2074 + |S_cosm|",
+        "computed": 0.6601574344174435,
+        "measured": 0.660162,
+        "error_pct": 0.0006915851800876859
+      },
+      {
+        "wave": "wave5",
+        "name": "Mertens_M",
+        "formula": "\u2212Poof\u00b7ln(2) + 1/e",
+        "computed": 0.2614936766512581,
+        "measured": 0.261497,
+        "error_pct": 0.0012708936400296132
+      },
+      {
+        "wave": "wave5",
+        "name": "Dottie_number",
+        "formula": "\u2212G\u2076/e\u00b3 + G\u00b3",
+        "computed": 0.7390857024468026,
+        "measured": 0.739085,
+        "error_pct": 9.504276268818857e-05
+      },
+      {
+        "wave": "wave5",
+        "name": "Omega_constant",
+        "formula": "Suction/\u03c6\u2074 + sin(\u03b3)",
+        "computed": 0.5671447925724256,
+        "measured": 0.567143,
+        "error_pct": 0.0003160706251522764
+      },
+      {
+        "wave": "wave5",
+        "name": "Conway_lambda",
+        "formula": "G\u2075ln(3) + \u03c6/e",
+        "computed": 1.3035789762668335,
+        "measured": 1.303577,
+        "error_pct": 0.00015160338311541037
+      },
+      {
+        "wave": "wave5",
+        "name": "Plastic_number",
+        "formula": "\u2212G\u00b3\u03c0\u03b3 + e",
+        "computed": 1.324722496060228,
+        "measured": 1.324718,
+        "error_pct": 0.00033939753426002545
+      },
+      {
+        "wave": "wave5",
+        "name": "Landau_Ramanujan",
+        "formula": "\u22121/(G\u00b3\u03c0\u2075) + G\u00b3",
+        "computed": 0.7642364991979522,
+        "measured": 0.764236,
+        "error_pct": 6.531986875746861e-05
+      },
+      {
+        "wave": "wave5",
+        "name": "Laplace_limit",
+        "formula": "G\u2078C_cosm + \u03c8_con",
+        "computed": 0.6627434116142251,
+        "measured": 0.662743,
+        "error_pct": 6.210766845499419e-05
+      },
+      {
+        "wave": "wave6",
+        "name": "zeta_5",
+        "formula": "\u03c0/3 \u2212 \u03c0\u207b\u2074",
+        "computed": 1.0369315689419134,
+        "measured": 1.036928,
+        "error_pct": 0.0003441841587202251
+      },
+      {
+        "wave": "wave6",
+        "name": "zeta_7",
+        "formula": "\u2212\u221a2\u00b7cos(1) + \u221a\u03c0",
+        "computed": 1.0083510021653366,
+        "measured": 1.008349,
+        "error_pct": 0.00019855876652173212
+      },
+      {
+        "wave": "wave6",
+        "name": "Levy_constant",
+        "formula": "\u03c8_con\u00b7P_base + \u03c0",
+        "computed": 3.275820784331113,
+        "measured": 3.275823,
+        "error_pct": 6.763701479075501e-05
+      },
+      {
+        "wave": "wave6",
+        "name": "Erdos_Borwein",
+        "formula": "\u221a2/G\u2076 \u2212 B_in",
+        "computed": 1.6066981052307703,
+        "measured": 1.606695,
+        "error_pct": 0.00019326821645022913
+      },
+      {
+        "wave": "wave6",
+        "name": "Bernstein",
+        "formula": "\u2212\u03b3\u2075\u03c6/e + 1/\u03c0",
+        "computed": 0.28016962153089064,
+        "measured": 0.280169,
+        "error_pct": 0.0002218414209435045
+      },
+      {
+        "wave": "wave6",
+        "name": "Backhouse",
+        "formula": "\u221a\u03c0/3 + e/\u03c0",
+        "computed": 1.4560739297341037,
+        "measured": 1.456075,
+        "error_pct": 7.350348686382198e-05
+      },
+      {
+        "wave": "wave6",
+        "name": "Viswanath",
+        "formula": "\u03c0\u03b3/\u03c6\u00b3 + G\u2074",
+        "computed": 1.131989324238136,
+        "measured": 1.131988,
+        "error_pct": 0.00011698340760111065
+      },
+      {
+        "wave": "wave6",
+        "name": "Kepler_Bouwkamp",
+        "formula": "\u2212\u03b3ln(2) + \u03c6/\u03c0",
+        "computed": 0.11494080409895219,
+        "measured": 0.114942,
+        "error_pct": 0.001040438697617229
+      },
+      {
+        "wave": "wave6",
+        "name": "Sphere_packing_3D",
+        "formula": "\u221a2\u03c6/e \u2212 1/\u03c0\u00b2",
+        "computed": 0.7404773330949465,
+        "measured": 0.74048,
+        "error_pct": 0.0003601589581855207
+      },
+      {
+        "wave": "wave6",
+        "name": "Gauss_AGM",
+        "formula": "A_bleed \u2212 P_base",
+        "computed": 0.8346278543481727,
+        "measured": 0.834627,
+        "error_pct": 0.00010236287259481817
+      },
+      {
+        "wave": "wave6",
+        "name": "Lemniscate",
+        "formula": "(e/\u03c6)/G + B_in",
+        "computed": 2.6220605143146716,
+        "measured": 2.622058,
+        "error_pct": 9.589088691308851e-05
+      },
+      {
+        "wave": "wave6",
+        "name": "Hashing_bound",
+        "formula": "\u2212G\u2077\u221a3 + A_bleed",
+        "computed": 0.11002721665641338,
+        "measured": 0.110028,
+        "error_pct": 0.0007119493098317588
+      },
+      {
+        "wave": "wave6",
+        "name": "von_Karman",
+        "formula": "A_bleed/\u03c6\u00b2",
+        "computed": 0.39990834155956795,
+        "measured": 0.4,
+        "error_pct": 0.02291461010801854
+      },
+      {
+        "wave": "wave6",
+        "name": "Madelung_NaCl",
+        "formula": "e/3 + sin(1)",
+        "computed": 1.7475649276275782,
+        "measured": 1.747565,
+        "error_pct": 4.14132932584609e-06
+      },
+      {
+        "wave": "wave6",
+        "name": "Madelung_CsCl",
+        "formula": "G\u2078C_cosm + \u221a3",
+        "computed": 1.7626736603545448,
+        "measured": 1.762672,
+        "error_pct": 9.419532078238822e-05
+      },
+      {
+        "wave": "wave6",
+        "name": "Methane_angle",
+        "formula": "e\u2074/G\u2077 + e\u03c0",
+        "computed": 109.4705542253899,
+        "measured": 109.471,
+        "error_pct": 0.000407207945574305
+      },
+      {
+        "wave": "wave6",
+        "name": "O_N_electronegativity",
+        "formula": "e\u207b\u2074 + G\u2076",
+        "computed": 0.608890511720405,
+        "measured": 0.6087,
+        "error_pct": 0.031298130508454446
+      },
+      {
+        "wave": "wave6",
+        "name": "Water_max_density_C",
+        "formula": "ln(\u03c0)/C",
+        "computed": 3.9802826201882504,
+        "measured": 3.98,
+        "error_pct": 0.00710100975503584
+      },
+      {
+        "wave": "wave6",
+        "name": "Perc_sq_site",
+        "formula": "\u2212C_cosm\u00b7sin(1) + G\u2075",
+        "computed": 0.5927508446708531,
+        "measured": 0.592746,
+        "error_pct": 0.0008173266210408258
+      },
+      {
+        "wave": "wave6",
+        "name": "Polya_3D_return",
+        "formula": "\u221a\u03c0/2 \u2212 sin(\u03b3)",
+        "computed": 0.34053410224876524,
+        "measured": 0.340537,
+        "error_pct": 0.0008509357969156905
+      },
+      {
+        "wave": "wave6",
+        "name": "Random_walk_CN",
+        "formula": "G\u2077/K \u2212 \u03b3\u2074",
+        "computed": 1.1762803727707378,
+        "measured": 1.176281,
+        "error_pct": 5.332308029157856e-05
+      },
+      {
+        "wave": "wave6",
+        "name": "Nats_per_bit",
+        "formula": "\u2212\u03b7_eff\u00b7cos(\u03c6) + G\u207b\u2074",
+        "computed": 1.4426868248704778,
+        "measured": 1.442695,
+        "error_pct": 0.00056665681396452
+      },
+      {
+        "wave": "wave7",
+        "name": "Apery_zeta3_w7",
+        "formula": "\u03b3\u00b3/\u03b8_S + G\u2077",
+        "computed": 1.2020593750320427,
+        "measured": 1.20206,
+        "error_pct": 5.19914111744415e-05
+      },
+      {
+        "wave": "wave7",
+        "name": "Soldner",
+        "formula": "\u221a5/2 + 1/3",
+        "computed": 1.4513673220832282,
+        "measured": 1.45136,
+        "error_pct": 0.0005044980727165142
+      },
+      {
+        "wave": "wave7",
+        "name": "Mills",
+        "formula": "\u03b3\u00b3\u03c6/e + G\u207b\u00b2",
+        "computed": 1.306379265718492,
+        "measured": 1.30637,
+        "error_pct": 0.0007092721428097841
+      },
+      {
+        "wave": "wave7",
+        "name": "Sierpinski_const",
+        "formula": "\u03c6\u00b3/2 + \u03b7_eff",
+        "computed": 2.584976195674155,
+        "measured": 2.5849,
+        "error_pct": 0.002947722316322571
+      },
+      {
+        "wave": "wave7",
+        "name": "Niven",
+        "formula": "1/(G\u00b3\u221ae) + G",
+        "computed": 1.7052168407275836,
+        "measured": 1.7052,
+        "error_pct": 0.0009876101092872926
+      },
+      {
+        "wave": "wave7",
+        "name": "Artin",
+        "formula": "C_eff/\u03c6\u2075 + C",
+        "computed": 0.37395610555822756,
+        "measured": 0.374,
+        "error_pct": 0.011736481757337094
+      },
+      {
+        "wave": "wave7",
+        "name": "Hafner_Sarnak",
+        "formula": "ln(2)/e\u2074 + \u03c6/e",
+        "computed": 0.6079368730335913,
+        "measured": 0.608,
+        "error_pct": 0.010382724738263856
+      },
+      {
+        "wave": "wave7",
+        "name": "Porter",
+        "formula": "1/(\u03c0\u03c6\u2074) + G\u207b\u2074",
+        "computed": 1.4670785554317929,
+        "measured": 1.467,
+        "error_pct": 0.0053548351597003324
+      },
+      {
+        "wave": "wave7",
+        "name": "Thue_Morse",
+        "formula": "C_eff/(e\u03c0) + P_new",
+        "computed": 0.41244888189817797,
+        "measured": 0.4125,
+        "error_pct": 0.012392267108366528
+      },
+      {
+        "wave": "wave7",
+        "name": "MRB",
+        "formula": "C/\u03c6\u2074 + \u03c6\u207b\u2074",
+        "computed": 0.1878583304070266,
+        "measured": 0.1879,
+        "error_pct": 0.022176473109853403
+      },
+      {
+        "wave": "wave7",
+        "name": "Gauss_Kuzmin",
+        "formula": "\u03b3/(e\u03c0) + \u03c6\u207b\u00b3",
+        "computed": 0.3036597373661549,
+        "measured": 0.3036,
+        "error_pct": 0.019676339313222612
+      },
+      {
+        "wave": "wave7",
+        "name": "Universal_parabolic",
+        "formula": "B_in/G\u2077 + G\u00b2",
+        "computed": 2.295590129689312,
+        "measured": 2.2956,
+        "error_pct": 0.0004299664875364716
+      },
+      {
+        "wave": "wave7",
+        "name": "Lieb_square_ice",
+        "formula": "B_in/G\u2074 + K",
+        "computed": 1.5396001133368624,
+        "measured": 1.5396,
+        "error_pct": 7.3614485801252296e-06
+      },
+      {
+        "wave": "wave7",
+        "name": "Komornik_Loreti",
+        "formula": "(\u03c0/e)\u00b7A_bleed + \u03b3",
+        "computed": 1.7872317242814628,
+        "measured": 1.7872,
+        "error_pct": 0.0017750828929565397
+      },
+      {
+        "wave": "wave7",
+        "name": "Bloch_Landau",
+        "formula": "1/(G\u00b2\u221a5) + \u03c0\u207b\u2074",
+        "computed": 0.5433021478033816,
+        "measured": 0.5433,
+        "error_pct": 0.00039532548897319584
+      },
+      {
+        "wave": "wave7",
+        "name": "Golden_angle_deg",
+        "formula": "(\u03c6/\u03c0)/cos(\u03c6) + e\u2075",
+        "computed": 137.50601880311288,
+        "measured": 137.508,
+        "error_pct": 0.0014407866357808267
+      },
+      {
+        "wave": "wave7",
+        "name": "Ising3D_eta",
+        "formula": "\u221a\u03c6/\u03c0\u2075 + 1/\u03c0\u00b3",
+        "computed": 0.03640819399713107,
+        "measured": 0.0363,
+        "error_pct": 0.2980550885153489
+      },
+      {
+        "wave": "wave7",
+        "name": "Ising3D_alpha",
+        "formula": "Suction \u2212 \u03b3\u2076",
+        "computed": 0.11004872741790349,
+        "measured": 0.1101,
+        "error_pct": 0.04656910272163021
+      },
+      {
+        "wave": "wave7",
+        "name": "Ising3D_delta",
+        "formula": "\u221a5/\u03b7_eff",
+        "computed": 4.788746753540937,
+        "measured": 4.7898,
+        "error_pct": 0.021989361957966604
+      },
+      {
+        "wave": "wave7",
+        "name": "XY_nu",
+        "formula": "G\u2074 \u2212 1/\u03c0\u00b3",
+        "computed": 0.671657668800388,
+        "measured": 0.672,
+        "error_pct": 0.050942142799408126
+      },
+      {
+        "wave": "wave7",
+        "name": "XY_eta",
+        "formula": "\u03b3\u2075\u03c6/e",
+        "computed": 0.03814026465290003,
+        "measured": 0.0381,
+        "error_pct": 0.1056815036746216
+      },
+      {
+        "wave": "wave7",
+        "name": "Heisenberg_nu",
+        "formula": "cos(1)/\u221a\u03b3",
+        "computed": 0.7111607292512704,
+        "measured": 0.7112,
+        "error_pct": 0.005521758820257243
+      },
+      {
+        "wave": "wave7",
+        "name": "Heisenberg_eta",
+        "formula": "C_cosm/\u221ae",
+        "computed": 0.037485656292130395,
+        "measured": 0.0375,
+        "error_pct": 0.038249887652275216
+      },
+      {
+        "wave": "wave7",
+        "name": "Perc_honeycomb_site",
+        "formula": "\u03c0/(3\u03c6) + e\u207b\u00b3",
+        "computed": 0.6969907479430195,
+        "measured": 0.697,
+        "error_pct": 0.001327411331482858
+      },
+      {
+        "wave": "wave7",
+        "name": "Perc_SC_bond",
+        "formula": "G\u2077/e + e\u207b\u00b3",
+        "computed": 0.2487900777821054,
+        "measured": 0.2488,
+        "error_pct": 0.003988029700396626
+      },
+      {
+        "wave": "wave7",
+        "name": "Perc_SC_site",
+        "formula": "cos(\u03c6)/G\u00b2 + 1/e",
+        "computed": 0.31159756759350293,
+        "measured": 0.3116,
+        "error_pct": 0.0007806182596453451
+      },
+      {
+        "wave": "wave7",
+        "name": "m_u/m_d",
+        "formula": "\u221a3 \u2212 \u221a\u03c6",
+        "computed": 0.4600311580548083,
+        "measured": 0.4596,
+        "error_pct": 0.09381158720807475
+      },
+      {
+        "wave": "wave7",
+        "name": "m_s/m_d",
+        "formula": "e\u00b3 + \u03b3\u2074",
+        "computed": 20.19654445210049,
+        "measured": 20.196,
+        "error_pct": 0.002695841258111791
+      },
+      {
+        "wave": "wave7",
+        "name": "m_tau/m_mu",
+        "formula": "\u03c0\u00b2e/\u03c6 + \u03c6\u207b\u00b3",
+        "computed": 16.81691021202443,
+        "measured": 16.817,
+        "error_pct": 0.0005339119674847408
+      },
+      {
+        "wave": "wave8",
+        "name": "|V_ud|",
+        "formula": "A_in \u2212 ln(2)",
+        "computed": 0.9737066644446277,
+        "measured": 0.9737,
+        "error_pct": 0.0006844453761644341
+      },
+      {
+        "wave": "wave8",
+        "name": "|V_cd|",
+        "formula": "\u221a\u03b3\u00b7\u03b8_S",
+        "computed": 0.22100780479132598,
+        "measured": 0.221,
+        "error_pct": 0.003531579785510005
+      },
+      {
+        "wave": "wave8",
+        "name": "|V_cs|",
+        "formula": "\u03c6\u03b3/P_var",
+        "computed": 0.9749134853131556,
+        "measured": 0.9735,
+        "error_pct": 0.14519623144895213
+      },
+      {
+        "wave": "wave8",
+        "name": "delta_CP_PMNS",
+        "formula": "\u03c6\u00b3 \u2212 1/e",
+        "computed": 3.8681885363283475,
+        "measured": 3.8685,
+        "error_pct": 0.008051277540456992
+      },
+      {
+        "wave": "wave8",
+        "name": "m_t/m_b",
+        "formula": "\u03c0\u2074\u00b7K",
+        "computed": 40.933410338689306,
+        "measured": 41.08,
+        "error_pct": 0.35683948712437213
+      },
+      {
+        "wave": "wave8",
+        "name": "BR_Z_ee",
+        "formula": "\u03b3\u2076/ln(3)",
+        "computed": 0.03366543264779789,
+        "measured": 0.03363,
+        "error_pct": 0.10536023728185157
+      },
+      {
+        "wave": "wave8",
+        "name": "BR_Z_had",
+        "formula": "sin(\u03b3) + Poof",
+        "computed": 0.6991750380984436,
+        "measured": 0.6991,
+        "error_pct": 0.010733528600137083
+      },
+      {
+        "wave": "wave8",
+        "name": "BR_Z_inv",
+        "formula": "(1/3)/A_in",
+        "computed": 0.19997754112174054,
+        "measured": 0.2,
+        "error_pct": 0.011229439129734065
+      },
+      {
+        "wave": "wave8",
+        "name": "BR_H_ZZ",
+        "formula": "1/(e\u2074ln(2))",
+        "computed": 0.026423881395489845,
+        "measured": 0.0264,
+        "error_pct": 0.09045983140093045
+      },
+      {
+        "wave": "wave8",
+        "name": "BR_H_gg",
+        "formula": "\u03c6\u207b\u2074 \u2212 \u03b3\u2075",
+        "computed": 0.08182274913982478,
+        "measured": 0.0785,
+        "error_pct": 4.232801452006084
+      },
+      {
+        "wave": "wave8",
+        "name": "BR_H_cc",
+        "formula": "Suction/(\u03c0\u03c6)",
+        "computed": 0.028925456135151035,
+        "measured": 0.0289,
+        "error_pct": 0.08808351263334355
+      },
+      {
+        "wave": "wave8",
+        "name": "BR_H_gamgam",
+        "formula": "\u03b3\u2076\u00b7C_cosm",
+        "computed": 0.0022858146532987495,
+        "measured": 0.00228,
+        "error_pct": 0.2550286534539278
+      },
+      {
+        "wave": "wave8",
+        "name": "BR_H_Zgam",
+        "formula": "\u03b7_eff/\u03c0\u2075",
+        "computed": 0.0015258567671942072,
+        "measured": 0.00153,
+        "error_pct": 0.27079952979037436
+      },
+      {
+        "wave": "wave8",
+        "name": "He4_binding_MeV",
+        "formula": "\u03c0\u03b3/\u03b3\u2075",
+        "computed": 28.30071693656917,
+        "measured": 28.3,
+        "error_pct": 0.002533344767383359
+      },
+      {
+        "wave": "wave8",
+        "name": "Triton_binding_MeV",
+        "formula": "e\u00b2 + G\u207b\u00b9",
+        "computed": 8.480800162634557,
+        "measured": 8.482,
+        "error_pct": 0.014145689288404753
+      },
+      {
+        "wave": "wave8",
+        "name": "Deuteron_mu_muN",
+        "formula": "G\u2074 + Poof",
+        "computed": 0.8573914181280383,
+        "measured": 0.8574,
+        "error_pct": 0.0010009181200994338
+      },
+      {
+        "wave": "wave8",
+        "name": "S_8",
+        "formula": "\u03c8_con/\u221a\u03b3",
+        "computed": 0.8320144347134201,
+        "measured": 0.832,
+        "error_pct": 0.0017349415168399496
+      },
+      {
+        "wave": "wave8",
+        "name": "z_reion",
+        "formula": "e\u00b3/\u03c6\u00b2",
+        "computed": 7.671992422366703,
+        "measured": 7.68,
+        "error_pct": 0.10426533376688604
+      },
+      {
+        "wave": "wave8",
+        "name": "XY_beta",
+        "formula": "\u03c8_con/(\u03c0\u03b3)",
+        "computed": 0.3485875996963401,
+        "measured": 0.3486,
+        "error_pct": 0.003557172593200954
+      },
+      {
+        "wave": "wave8",
+        "name": "XY_gamma",
+        "formula": "\u03c6 \u2212 P_new",
+        "computed": 1.3177317120795233,
+        "measured": 1.3177,
+        "error_pct": 0.0024066236262607877
+      },
+      {
+        "wave": "wave8",
+        "name": "Heisenberg_beta",
+        "formula": "\u03c6/\u03c0 \u2212 \u03c6\u207b\u2074",
+        "computed": 0.36913818105016843,
+        "measured": 0.3689,
+        "error_pct": 0.06456520741892896
+      },
+      {
+        "wave": "wave8",
+        "name": "Heisenberg_gamma",
+        "formula": "\u221a2 \u2212 e\u207b\u2074",
+        "computed": 1.395897923484361,
+        "measured": 1.3962,
+        "error_pct": 0.021635619226413296
+      },
+      {
+        "wave": "wave8",
+        "name": "Perc_BCC_bond",
+        "formula": "G\u2077/3",
+        "computed": 0.18031542143313228,
+        "measured": 0.1803,
+        "error_pct": 0.008553207505432887
+      },
+      {
+        "wave": "wave8",
+        "name": "Perc_FCC_site",
+        "formula": "1/3 \u2212 e\u207b\u00b2",
+        "computed": 0.19799805009672064,
+        "measured": 0.1982,
+        "error_pct": 0.10189197945476643
+      },
+      {
+        "wave": "wave8",
+        "name": "Perc3D_nu",
+        "formula": "sin(\u03b3) \u2212 Chaos",
+        "computed": 0.8767170058144746,
+        "measured": 0.875,
+        "error_pct": 0.19622923593995978
+      },
+      {
+        "wave": "wave8",
+        "name": "Perc3D_beta",
+        "formula": "\u221a\u03c0/\u03c6\u00b3",
+        "computed": 0.41841959579497895,
+        "measured": 0.4181,
+        "error_pct": 0.07644003706742929
+      },
+      {
+        "wave": "wave8",
+        "name": "Perc3D_gamma",
+        "formula": "\u03b3\u2077 + \u221a\u03c0",
+        "computed": 1.793802321199428,
+        "measured": 1.8052,
+        "error_pct": 0.6313803900161674
+      },
+      {
+        "wave": "wave8",
+        "name": "Brun_B2",
+        "formula": "\u03b3\u00b2 + e\u03b3",
+        "computed": 1.902212776811461,
+        "measured": 1.9022,
+        "error_pct": 0.0006716860194015948
+      },
+      {
+        "wave": "wave8",
+        "name": "Copeland_Erdos",
+        "formula": "(1/3)/\u221a2",
+        "computed": 0.23570226039551584,
+        "measured": 0.2357,
+        "error_pct": 0.0009590137954375161
+      },
+      {
+        "wave": "wave8",
+        "name": "Erdos_Tenenbaum_Ford",
+        "formula": "\u03b3\u00b3/\u221a5",
+        "computed": 0.0860061137480346,
+        "measured": 0.0862,
+        "error_pct": 0.2249260463635699
+      },
+      {
+        "wave": "wave8",
+        "name": "Foias_alpha",
+        "formula": "e\u03b3 \u2212 \u03c6\u207b\u00b2",
+        "computed": 1.187068841753637,
+        "measured": 1.1874,
+        "error_pct": 0.027889358797623682
+      },
+      {
+        "wave": "wave8",
+        "name": "Madelung_ZnS",
+        "formula": "e\u03b3/C_eff",
+        "computed": 1.6383327183652612,
+        "measured": 1.6381,
+        "error_pct": 0.014206603092685816
+      },
+      {
+        "wave": "wave8",
+        "name": "Madelung_CaF2",
+        "formula": "G\u207b\u2074 + ln(3)",
+        "computed": 2.5192500575824006,
+        "measured": 2.5194,
+        "error_pct": 0.005951512963382909
+      },
+      {
+        "wave": "wave8",
+        "name": "Madelung_TiO2",
+        "formula": "G\u00b2 + e\u03b3",
+        "computed": 2.408027822720168,
+        "measured": 2.408,
+        "error_pct": 0.0011554285784141829
+      },
+      {
+        "wave": "wave8",
+        "name": "Ice_Ih_density",
+        "formula": "sin(\u03b3)\u00b7e/\u03c6",
+        "computed": 0.9167587921820931,
+        "measured": 0.917,
+        "error_pct": 0.026304015038923653
+      },
+      {
+        "wave": "wave8",
+        "name": "H2O_bond_angle",
+        "formula": "e\u00b3/\u03b3\u00b3",
+        "computed": 104.4405425791162,
+        "measured": 104.5,
+        "error_pct": 0.05689705347732303
+      },
+      {
+        "wave": "wave8",
+        "name": "Lorenz_dim",
+        "formula": "\u221a\u03c6 + B_in",
+        "computed": 2.0599604417905124,
+        "measured": 2.06,
+        "error_pct": 0.0019203014314390556
+      },
+      {
+        "wave": "wave8",
+        "name": "Henon_dim",
+        "formula": "P_var/\u221a\u03b3",
+        "computed": 1.2609289528725578,
+        "measured": 1.261,
+        "error_pct": 0.005634189329270673
+      },
+      {
+        "wave": "wave8",
+        "name": "Apollonian_dim",
+        "formula": "ln(3)/sin(1)",
+        "computed": 1.305585467000882,
+        "measured": 1.3058,
+        "error_pct": 0.01642923871328772
+      },
+      {
+        "wave": "wave8",
+        "name": "SAW_mu_sq",
+        "formula": "\u221a\u03c0 + e/\u03c0",
+        "computed": 2.6377098303377813,
+        "measured": 2.6382,
+        "error_pct": 0.01857970063750277
+      },
+      {
+        "wave": "wave8",
+        "name": "SAW_nu_3D",
+        "formula": "cos(1) \u2212 cos(\u03c6)",
+        "computed": 0.5875224021224995,
+        "measured": 0.5877,
+        "error_pct": 0.030219138591201376
+      },
+      {
+        "wave": "wave8",
+        "name": "SAW_gamma_3D",
+        "formula": "G\u207b\u00b2 \u2212 \u03c0\u207b\u00b3",
+        "computed": 1.159653566199519,
+        "measured": 1.1575,
+        "error_pct": 0.1860532353796215
+      },
+      {
+        "wave": "wave8",
+        "name": "Potts3_beta",
+        "formula": "1/9",
+        "computed": 0.1111111111111111,
+        "measured": 0.11111,
+        "error_pct": 0.001000010000094062
+      },
+      {
+        "wave": "wave8",
+        "name": "KT_T/J",
+        "formula": "A_bleed \u2212 Poof",
+        "computed": 0.8934914156931002,
+        "measured": 0.8935,
+        "error_pct": 0.0009607506323180223
+      },
+      {
+        "wave": "wave8",
+        "name": "Quark_condensate",
+        "formula": "1/4",
+        "computed": 0.25,
+        "measured": 0.25,
+        "error_pct": 0.0
+      },
+      {
+        "wave": "wave8",
+        "name": "Figure8_knot_vol",
+        "formula": "G\u207b\u00b2 + cos(\u03b3)",
+        "computed": 2.029890388512915,
+        "measured": 2.0299,
+        "error_pct": 0.0004734955950979309
+      },
+      {
+        "wave": "wave8",
+        "name": "Bessel_J0_zero1",
+        "formula": "A_in/ln(2)",
+        "computed": 2.4047617760747984,
+        "measured": 2.405,
+        "error_pct": 0.009905360715237125
+      },
+      {
+        "wave": "wave8",
+        "name": "Airy_Ai_zero1",
+        "formula": "(1/G)/\u03b7_eff",
+        "computed": 2.3380710664285527,
+        "measured": 2.338,
+        "error_pct": 0.0030396248311629947
+      },
+      {
+        "wave": "wave8",
+        "name": "gamma_2_Stieltjes",
+        "formula": "\u03c0\u207b\u00b2 \u2212 \u03b3\u2074",
+        "computed": -0.009686345270484219,
+        "measured": -0.00946,
+        "error_pct": 2.3926561361968224
+      },
+      {
+        "wave": "wave8",
+        "name": "First_Riemann_zero",
+        "formula": "e/\u03b3\u00b3",
+        "computed": 14.1344904113302,
+        "measured": 14.135,
+        "error_pct": 0.0036051550746381998
+      },
+      {
+        "wave": "wave8",
+        "name": "Spanning_tree_sq",
+        "formula": "\u03b3\u2077 + ln(\u03c0)",
+        "computed": 1.1660783561433121,
+        "measured": 1.1663,
+        "error_pct": 0.019004017550181763
+      },
+      {
+        "wave": "wave8",
+        "name": "Hard_sq_entropy",
+        "formula": "e\u03b3\u00b7P_var",
+        "computed": 1.5031151842015722,
+        "measured": 1.5031,
+        "error_pct": 0.0010101923739001908
+      },
+      {
+        "wave": "wave9",
+        "name": "|V_tb|",
+        "formula": "cos(1/e)/(\u03c6\u03b3)",
+        "computed": 0.9990765192612288,
+        "measured": 0.9991,
+        "error_pct": 0.0023501890472656414
+      },
+      {
+        "wave": "wave9",
+        "name": "Omega_r",
+        "formula": "\u03b3\u2076/e\u2076",
+        "computed": 9.167728879734846e-05,
+        "measured": 9.15e-05,
+        "error_pct": 0.19375824846825943
+      },
+      {
+        "wave": "wave9",
+        "name": "O4_nu",
+        "formula": "(\u03b3/G)/sin(1)",
+        "computed": 0.7488930539619457,
+        "measured": 0.749,
+        "error_pct": 0.014278509753575246
+      },
+      {
+        "wave": "wave9",
+        "name": "Gluon_condensate",
+        "formula": "C_cosm \u2212 e\u207b\u00b3",
+        "computed": 0.012016330507125542,
+        "measured": 0.012,
+        "error_pct": 0.13608755937951147
+      },
+      {
+        "wave": "wave9",
+        "name": "Mandelbrot_boundary",
+        "formula": "\u03c6 + 1/\u03c6\u00b2",
+        "computed": 2.0,
+        "measured": 2.0,
+        "error_pct": 0.0
+      },
+      {
+        "wave": "wave9",
+        "name": "Sierpinski_dim",
+        "formula": "ln(3)/ln(2)",
+        "computed": 1.584962500721156,
+        "measured": 1.584963,
+        "error_pct": 3.150097786661633e-05
+      },
+      {
+        "wave": "wave9",
+        "name": "gamma1_Stieltjes",
+        "formula": "G\u00b2 + cos(e)",
+        "computed": -0.07274094507053921,
+        "measured": -0.072816,
+        "error_pct": 0.10307477678091498
+      },
+      {
+        "wave": "wave10",
+        "name": "m_mu/m_e",
+        "formula": "(\u03c0\u00b3 \u2212 G\u00b2)\u00b7\u03c6\u2074",
+        "computed": 206.7696385971217,
+        "measured": 206.768283,
+        "error_pct": 0.0006556117321513212
+      },
+      {
+        "wave": "wave10",
+        "name": "(g-2)/2_electron",
+        "formula": "(e/\u03c0 \u2212 ln2)/e\u2075",
+        "computed": 0.0011596599648779514,
+        "measured": 0.00115965,
+        "error_pct": 0.0008593004744053731
+      },
+      {
+        "wave": "wave10",
+        "name": "Logistic_accum",
+        "formula": "e\u221ae + cos(e)",
+        "computed": 3.5699551555510998,
+        "measured": 3.569946,
+        "error_pct": 0.0002564618932590685
+      },
+      {
+        "wave": "wave10",
+        "name": "Cahen_constant",
+        "formula": "(C_eff + K)\u00b7\u03b7_eff",
+        "computed": 0.6434108113284505,
+        "measured": 0.643411,
+        "error_pct": 2.932364375100156e-05
+      },
+      {
+        "wave": "wave10",
+        "name": "Reciprocal_Fib",
+        "formula": "(Poof + C_cosm)/\u03b3\u2075",
+        "computed": 3.3598854078939637,
+        "measured": 3.359886,
+        "error_pct": 1.7622801374847268e-05
+      },
+      {
+        "wave": "wave10",
+        "name": "Water_triple_K",
+        "formula": "\u03c0\u2075sin(\u03c0/\u03c6)\u00b7C_eff",
+        "computed": 273.1560794175609,
+        "measured": 273.16,
+        "error_pct": 0.0014352695999231826
+      },
+      {
+        "wave": "wave10",
+        "name": "CO2_bond_angle",
+        "formula": "\u03c0\u2074/cos(1) \u2212 C",
+        "computed": 179.99867657892466,
+        "measured": 180.0,
+        "error_pct": 0.0007352339307450013
+      },
+      {
+        "wave": "wave10",
+        "name": "SAW_connective_hex",
+        "formula": "\u03c0/A_in \u2212 \u03b3\u2076",
+        "computed": 1.8477586642028332,
+        "measured": 1.847759,
+        "error_pct": 1.8173212347469673e-05
+      },
+      {
+        "wave": "wave10",
+        "name": "Bessel_J1_zero1",
+        "formula": "\u03c8_con/G + \u03c0",
+        "computed": 3.831706521236067,
+        "measured": 3.831706,
+        "error_pct": 1.3603237480975994e-05
+      },
+      {
+        "wave": "wave10",
+        "name": "eta_baryon_photon",
+        "formula": "Poof\u00b9\u00b9/(\u03c0\u03b3)",
+        "computed": 6.139749535425554e-10,
+        "measured": 6.14e-10,
+        "error_pct": 0.004079227596853056
+      }
+    ],
+    "compute_path": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab\\fsot_compute.py",
+    "ingested_at": "2026-07-03T15:26:11.529265+00:00"
+  },
+  "higgs_branching_lab": {
+    "compute_higgs_count": 9,
+    "thesis_higgs_count": 5,
+    "observable_count": 14,
+    "median_error_pct": 0.08808351263334355,
+    "max_error_pct": 4.232801452006084,
+    "ingested_at": "2026-07-03T15:26:11.792009+00:00"
+  },
+  "space_weather_lab": {
+    "kp_record_count": 61,
+    "ap_record_count": 61,
+    "observable_count": 61,
+    "stability_match_rate": 0.9508196721311475,
+    "fusion_scalar_S": 0.7869745016115727,
+    "ingested_at": "2026-07-03T15:26:42.329595+00:00"
   }
 }

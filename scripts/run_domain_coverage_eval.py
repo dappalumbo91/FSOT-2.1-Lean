@@ -73,6 +73,22 @@ def _lab_record_count(registry: dict, lab_key: str) -> tuple[int, float | None]:
     if lab_key == "cosmology_wave4":
         return int(lab.get("observable_count") or lab.get("wave4_count") or 0), float(lab.get("mean_error_pct") or 0)
 
+    if lab_key == "cosmology_extended_lab":
+        return int(lab.get("observable_count") or 0), float(lab.get("median_error_pct") or 0)
+
+    if lab_key == "cosmology_higher_waves_lab":
+        n = int(lab.get("observable_count") or 0)
+        med = lab.get("mean_error_pct")
+        if med is None:
+            med = lab.get("max_error_pct")
+        return n, float(med or 0)
+
+    if lab_key == "higgs_branching_lab":
+        return int(lab.get("observable_count") or 0), float(lab.get("median_error_pct") or 0)
+
+    if lab_key == "space_weather_lab":
+        return int(lab.get("observable_count") or lab.get("kp_record_count") or 0), None
+
     if lab_key == "weather_lab":
         return int(lab.get("hour_count") or 0), None
 

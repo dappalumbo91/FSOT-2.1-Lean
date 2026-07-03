@@ -62,6 +62,19 @@ extension_domains:
     benchmark_data: data/particle_physics_benchmark.json
     lean_module: FSOT.Formal.ParticlePhysicsPriors
 
+  Space_Weather:
+    tier: 17
+    D_eff: 14
+    delta_psi: 0.82
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [fusion, energy, plasma]
+    ingest_script: scripts/ingest_space_weather_swpc.py
+    build_script: scripts/build_space_weather_benchmark.py
+    benchmark_data: data/space_weather_benchmark.json
+    lean_module: FSOT.Formal.SpaceWeatherPriors
+    note: "NOAA SWPC Kp/Ap chunked ingest; bridges plasma physics with cosmology-scale dispersal"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

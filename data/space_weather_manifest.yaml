@@ -1,0 +1,22 @@
+# Tier 17 — NOAA SWPC Kp/Ap space weather bridge (plasma #37 ↔ cosmology scales).
+version: "1.0"
+updated: "2026-07-01"
+
+source:
+  swpc_kp_url: "https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json"
+  cache: data/space_weather_cache/kp_index.json
+
+build:
+  ingest: scripts/ingest_space_weather_swpc.py
+  benchmark: scripts/build_space_weather_benchmark.py
+  output: data/space_weather_benchmark.json
+
+lean:
+  generator: scripts/gen_space_weather_lean.py
+  module: FSOT.Formal.SpaceWeatherPriors
+  lean_domain: fusion
+  sign_theorem: fusion_raw_S_positive
+
+verification:
+  min_kp_records: 30
+  min_stability_match_rate: 0.5

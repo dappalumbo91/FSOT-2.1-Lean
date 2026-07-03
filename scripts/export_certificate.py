@@ -83,6 +83,9 @@ LEAN_TARGETS = [
     "FSOT.Formal.EmergentDomainPriors",
     "FSOT.Formal.CosmologyExtendedPriors",
     "FSOT.Formal.ParticlePhysicsPriors",
+    "FSOT.Formal.CosmologyHigherWavesPriors",
+    "FSOT.Formal.HiggsBranchingPriors",
+    "FSOT.Formal.SpaceWeatherPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

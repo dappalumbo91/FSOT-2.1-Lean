@@ -1,15 +1,16 @@
-generated_at: '2026-07-03T15:20:52.195073+00:00'
+generated_at: '2026-07-03T15:27:04.220949+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 51
+  lean_formal_modules: 54
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 14
-  tiers_total: 14
+  tiers_complete: 15
+  tiers_total: 15
   percent_complete: 100.0
-current_position: Tier 16 Wave B cosmology + particle physics extended domains
+current_position: "Tier 17 cosmo/particle deepen (astro thicken + Higgs + SWPC + waves\
+  \ 5\u201310)"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -31,6 +32,7 @@ tiers:
   - ClimateSciencePriors
   - CodonPriors
   - CosmologyExtendedPriors
+  - CosmologyHigherWavesPriors
   - CosmologyLab
   - DomainCoveragePriors
   - DomainPrecisionPriors
@@ -39,6 +41,7 @@ tiers:
   - ExperimentSynthesisPriors
   - FormulaCorpusPriors
   - FuelPriors
+  - HiggsBranchingPriors
   - ImmunologyPriors
   - IntelligenceCompressionPriors
   - KnowledgeBasePriors
@@ -56,6 +59,7 @@ tiers:
   - PlasmaPhysicsPriors
   - ProteinPriors
   - SoulSiblingPriors
+  - SpaceWeatherPriors
   - SpeciesPriors
   - ThesisSimulationPriors
   - TrinaryFluidPriors
@@ -89,7 +93,7 @@ tiers:
   metrics:
     domain_count: 35
     empirical_domains: 35
-    total_empirical_records: 261999
+    total_empirical_records: 261401
     lean_override_aligned: 17/17
     negative_scalar_domains: 10
   artifacts:
@@ -165,7 +169,7 @@ tiers:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 41
+    scientific_domains_covered: 42
     expansion_candidates: 10
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -208,6 +212,22 @@ tiers:
   - data/particle_physics_manifest.yaml
   - FSOT.Formal.CosmologyExtendedPriors
   - FSOT.Formal.ParticlePhysicsPriors
+- tier: 17
+  name: "Cosmo/particle deepen (astro thicken + Higgs + SWPC + waves 5\u201310)"
+  status: complete
+  metrics:
+    cosmology_higher_waves: 142
+    higgs_branching_observables: 14
+    space_weather_kp_records: 61
+    astrophysics_empirical_records: 216
+    particle_astrophysics_empirical_records: 216
+  artifacts:
+  - data/cosmology_higher_waves_manifest.yaml
+  - data/higgs_branching_manifest.yaml
+  - data/space_weather_manifest.yaml
+  - FSOT.Formal.CosmologyHigherWavesPriors
+  - FSOT.Formal.HiggsBranchingPriors
+  - FSOT.Formal.SpaceWeatherPriors
 next_steps:
 - Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class
 - "Multi-hero held-out: certify 3\u20135 specimens per Sst/PV/VIP/L2/3"

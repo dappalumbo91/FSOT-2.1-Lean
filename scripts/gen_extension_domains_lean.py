@@ -16,10 +16,21 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "data" / "extension_domains_manifest.yaml"
 FORMAL = ROOT / "FSOT" / "Formal"
 
+# Domains with dedicated generators (avoid overwriting rich bundle theorems).
+DEDICATED_GENERATORS = {
+    "Climate_Science",
+    "Cosmology_Extended",
+    "Particle_Physics",
+    "Space_Weather",
+}
+
 LEAN_SIGN = {
     "Plasma_Physics": ("energy", "energy_raw_S_positive"),
     "Immunology": ("medical", "medical_raw_S_positive"),
     "Climate_Science": ("energy", "energy_raw_S_positive"),
+    "Cosmology_Extended": ("cosmological", "omega_b_h2_fsot_cached_pos"),
+    "Particle_Physics": ("particle", "particle_raw_S_positive"),
+    "Space_Weather": ("fusion", "fusion_raw_S_positive"),
 }
 
 
@@ -113,6 +124,8 @@ def build_module(name: str, cfg: dict, bench: dict) -> str:
     n = int(
         bench.get("record_count")
         or bench.get("month_count")
+        or bench.get("observable_count")
+        or bench.get("kp_record_count")
         or len(bench.get("records") or [])
     )
     med = bench.get("median_error_pct")
@@ -165,6 +178,8 @@ def main() -> int:
     args = parser.parse_args()
     spec = yaml.safe_load(args.manifest.read_text(encoding="utf-8"))
     for name, cfg in (spec.get("extension_domains") or {}).items():
+        if name in DEDICATED_GENERATORS:
+            continue
         bench_path = ROOT / cfg["benchmark_data"]
         bench = _load_bench(bench_path)
         stem = _module_stem(name)

@@ -1,9 +1,9 @@
-generated_at: '2026-07-03T15:20:52.049776+00:00'
+generated_at: '2026-07-03T15:27:04.070051+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 5
-  total_scientific_domains_covered: 41
-  total_empirical_records: 261999
+  extension_domains: 6
+  total_scientific_domains_covered: 42
+  total_empirical_records: 261401
   domains_target_band_2pct: 35
   domains_sign_mismatch: 0
   tier_distribution:
@@ -12,7 +12,7 @@ summary:
     C_thin: 9
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 51
+  lean_formal_modules: 54
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -35,6 +35,7 @@ neurolab_domains:
   labs:
   - cosmology_lambda_cdm
   - cosmology_wave4
+  - cosmology_extended_lab
 - domain: Astrophysics
   lean_domain: astronomical
   empirical_records: 16
@@ -45,6 +46,8 @@ neurolab_domains:
   coverage_tier: C_thin
   labs:
   - cosmology_wave4
+  - cosmology_extended_lab
+  - cosmology_higher_waves_lab
 - domain: Atmospheric_Physics
   lean_domain: energy
   empirical_records: 47
@@ -119,6 +122,8 @@ neurolab_domains:
   coverage_tier: B_verified
   labs:
   - cosmology_lambda_cdm
+  - cosmology_extended_lab
+  - cosmology_higher_waves_lab
 - domain: Ecology
   lean_domain: biological
   empirical_records: 12
@@ -179,7 +184,8 @@ neurolab_domains:
   authority_scalar_negative: false
   coverage_tier: B_verified
   labs:
-  - smiles_lab
+  - higgs_branching_lab
+  - cosmology_higher_waves_lab
 - domain: Materials_Science
   lean_domain: material
   empirical_records: 1169
@@ -263,6 +269,8 @@ neurolab_domains:
   coverage_tier: C_thin
   labs:
   - cosmology_wave4
+  - cosmology_extended_lab
+  - cosmology_higher_waves_lab
 - domain: Particle_Physics
   lean_domain: particle
   empirical_records: 36
@@ -293,6 +301,7 @@ neurolab_domains:
   coverage_tier: C_thin
   labs:
   - cosmology_wave4
+  - cosmology_extended_lab
 - domain: Psychology
   lean_domain: consciousness
   empirical_records: 10
@@ -404,6 +413,12 @@ extension_domains:
   median_error_pct: 0.492528
   coverage_tier: B_verified
   lean_module: FSOT.Formal.ParticlePhysicsPriors
+- domain: Space_Weather
+  tier: 17
+  record_count: 61
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.SpaceWeatherPriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572

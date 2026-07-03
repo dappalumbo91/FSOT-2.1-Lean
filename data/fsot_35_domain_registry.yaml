@@ -69,7 +69,7 @@ empirical_sources:
     labs: [smiles_lab, blackhole_thesis]
     lean_domain: nuclear
   High_Energy_Physics:
-    labs: [smiles_lab]
+    labs: [higgs_branching_lab, cosmology_higher_waves_lab]
     lean_domain: higgs
     smiles_lean_fallback: particle
   Biochemistry:
@@ -85,19 +85,19 @@ empirical_sources:
     labs: [evolution_lab, cellular_lab, neurolab_bio, biology_strict_lab]
     lean_domain: biological
   Cosmology:
-    labs: [cosmology_lambda_cdm]
+    labs: [cosmology_lambda_cdm, cosmology_extended_lab, cosmology_higher_waves_lab]
     lean_domain: cosmological
   Astronomy:
-    labs: [cosmology_lambda_cdm, cosmology_wave4]
+    labs: [cosmology_lambda_cdm, cosmology_wave4, cosmology_extended_lab]
     lean_domain: astronomical
   Astrophysics:
-    labs: [cosmology_wave4]
+    labs: [cosmology_wave4, cosmology_extended_lab, cosmology_higher_waves_lab]
     lean_domain: astronomical
   Planetary_Science:
-    labs: [cosmology_wave4]
+    labs: [cosmology_wave4, cosmology_extended_lab]
     lean_domain: galactic
   Particle_Astrophysics:
-    labs: [cosmology_wave4]
+    labs: [cosmology_wave4, cosmology_extended_lab, cosmology_higher_waves_lab]
     lean_domain: cmb
   Meteorology:
     labs: [weather_lab]
