@@ -1,10 +1,10 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-03T16:21:51.699869+00:00",
+  "generated_at": "2026-07-03T17:56:13.197537+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
   "source": "JPL_Horizons_kepler",
-  "record_count": 8,
-  "observable_count": 8,
+  "record_count": 9,
+  "observable_count": 9,
   "median_error_pct": 0.106141,
   "D_eff": 18,
   "records": [
@@ -94,6 +94,17 @@
       "computed": 0.998809,
       "measured": 1.0,
       "error_pct": 0.119069,
+      "within_tol": true
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Pluto",
+      "semi_major_au": 39.482,
+      "period_years": 249.58932,
+      "computed": 1.012173,
+      "measured": 1.0,
+      "error_pct": 1.217257,
       "within_tol": true
     }
   ]

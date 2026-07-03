@@ -1,0 +1,19 @@
+# Tier 26 — immunology SMILES + Allen neuron cohort strata crosswalk.
+version: "1.0"
+updated: "2026-07-03"
+
+D_eff: 14
+
+build:
+  benchmark: scripts/build_neuroimmunology_benchmark.py
+  output: data/neuroimmunology_benchmark.json
+
+lean:
+  generator: scripts/gen_neuroimmunology_lean.py
+  module: FSOT.Formal.NeuroimmunologyPriors
+  lean_domain: medical
+  sign_theorem: medical_raw_S_positive
+
+verification:
+  min_records: 20
+  max_median_error_pct: 5.0

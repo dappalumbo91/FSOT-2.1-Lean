@@ -11,8 +11,8 @@ noncomputable section
 
 open Real
 
-def small_body_orbit_count : ℕ := 5
-def small_body_median_error_pct : ℝ := (0.014433 : ℝ)
+def small_body_orbit_count : ℕ := 12
+def small_body_median_error_pct : ℝ := (0.094587 : ℝ)
 def small_body_D_eff : ℕ := 18
 
 theorem small_body_orbit_count_pos : 0 < small_body_orbit_count := by
@@ -23,7 +23,7 @@ theorem small_body_median_error_under_eight_pct :
   unfold small_body_median_error_pct; norm_num
 
 theorem small_body_orbits_bundle :
-    small_body_orbit_count = 5 ∧
+    small_body_orbit_count = 12 ∧
     small_body_D_eff = 18 ∧
     small_body_median_error_pct < (8 : ℝ) ∧
     raw_S (get_domain_params "astronomical") > 0 := by

@@ -68,6 +68,9 @@ def build_progress() -> dict:
     seismology_deep_bench = _load_json(ROOT / "data" / "seismology_deep_benchmark.json")
     planetary_atmospheres_bench = _load_json(ROOT / "data" / "planetary_atmospheres_benchmark.json")
     magnetosphere_ext_bench = _load_json(ROOT / "data" / "magnetosphere_extended_benchmark.json")
+    geochemistry_bench = _load_json(ROOT / "data" / "geochemistry_benchmark.json")
+    oncology_bench = _load_json(ROOT / "data" / "oncology_benchmark.json")
+    neuroimmunology_bench = _load_json(ROOT / "data" / "neuroimmunology_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -603,6 +606,38 @@ def build_progress() -> dict:
                 "FSOT.Formal.MagnetosphereExtendedPriors",
             ],
         },
+        {
+            "tier": 26,
+            "name": "Thin-domain thicken + Geochemistry/Oncology/Neuroimmunology",
+            "status": "complete"
+            if planetary_bench.get("observable_count", 0) >= 12
+            and small_body_bench.get("observable_count", 0) >= 10
+            and plasma_bench.get("record_count", 0) >= 15
+            and geochemistry_bench.get("record_count", 0) >= 50
+            and oncology_bench.get("record_count", 0) >= 20
+            and neuroimmunology_bench.get("record_count", 0) >= 20
+            else "pending",
+            "metrics": {
+                "planetary_structure_bodies": planetary_bench.get("observable_count"),
+                "orbital_mechanics_bodies": orbital_bench.get("observable_count"),
+                "small_body_orbits_bodies": small_body_bench.get("observable_count"),
+                "plasma_physics_cases": plasma_bench.get("record_count"),
+                "geochemistry_records": geochemistry_bench.get("record_count"),
+                "geochemistry_median_error_pct": geochemistry_bench.get("median_error_pct"),
+                "oncology_records": oncology_bench.get("record_count"),
+                "oncology_median_error_pct": oncology_bench.get("median_error_pct"),
+                "neuroimmunology_records": neuroimmunology_bench.get("record_count"),
+                "neuroimmunology_median_error_pct": neuroimmunology_bench.get("median_error_pct"),
+            },
+            "artifacts": [
+                "data/geochemistry_manifest.yaml",
+                "data/oncology_manifest.yaml",
+                "data/neuroimmunology_manifest.yaml",
+                "FSOT.Formal.GeochemistryPriors",
+                "FSOT.Formal.OncologyPriors",
+                "FSOT.Formal.NeuroimmunologyPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -629,7 +664,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 25 Magnetosphere extended (historical Dst, RTSW Bz, G-scale holdout)",
+        "current_position": "Tier 26 Thin-domain thicken + Geochemistry/Oncology/Neuroimmunology",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

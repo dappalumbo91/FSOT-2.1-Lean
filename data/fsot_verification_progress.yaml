@@ -1,16 +1,15 @@
-generated_at: '2026-07-03T17:34:45.946143+00:00'
+generated_at: '2026-07-03T17:56:41.684434+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 75
+  lean_formal_modules: 78
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: false
-  tiers_complete: 23
-  tiers_total: 23
+  tiers_complete: 24
+  tiers_total: 24
   percent_complete: 100.0
-current_position: Tier 25 Magnetosphere extended (historical Dst, RTSW Bz, G-scale
-  holdout)
+current_position: Tier 26 Thin-domain thicken + Geochemistry/Oncology/Neuroimmunology
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -49,6 +48,7 @@ tiers:
   - ExperimentSynthesisPriors
   - FormulaCorpusPriors
   - FuelPriors
+  - GeochemistryPriors
   - GeomagnetismPriors
   - GraceCryospherePriors
   - HiggsBranchingPriors
@@ -63,10 +63,12 @@ tiers:
   - MagnetosphereExtendedPriors
   - MagnetospherePriors
   - MathGeneratorPriors
+  - NeuroimmunologyPriors
   - NeuronCohortPriors
   - NeuronCohortStrataPriors
   - NeuronCohortTrainHoldoutPriors
   - NeuronHybridPriors
+  - OncologyPriors
   - OrbitalMechanicsPriors
   - ParticlePhysicsPriors
   - PharmacologyPriors
@@ -158,7 +160,7 @@ tiers:
   name: 'Extension domains #37-39 (Plasma, Immunology, Climate)'
   status: complete
   metrics:
-    plasma_records: 6
+    plasma_records: 20
     immunology_records: 84
     climate_months: 9439
     biology_strict_records: 16
@@ -315,8 +317,8 @@ tiers:
     tectonics_events: 500
     tectonics_boundary_features: 241
     geomagnetism_observables: 525
-    planetary_structure_bodies: 8
-    orbital_mechanics_bodies: 8
+    planetary_structure_bodies: 20
+    orbital_mechanics_bodies: 9
     orbital_median_error_pct: 0.106141
   artifacts:
   - data/seismology_usgs_manifest.yaml
@@ -333,8 +335,8 @@ tiers:
   name: "Small-body orbits + magnetosphere coupling (Dst\xD7Kp\xD7magnetic-string)"
   status: complete
   metrics:
-    small_body_orbit_count: 5
-    small_body_median_error_pct: 0.014433
+    small_body_orbit_count: 12
+    small_body_median_error_pct: 0.094587
     magnetosphere_observables: 167
     magnetosphere_match_rate: 1.0
     magnetosphere_kp_resolution: interpolated_1h
@@ -424,6 +426,27 @@ tiers:
   - data/magnetosphere_extended_manifest.yaml
   - data/solar_wind_rtsw_manifest.yaml
   - FSOT.Formal.MagnetosphereExtendedPriors
+- tier: 26
+  name: Thin-domain thicken + Geochemistry/Oncology/Neuroimmunology
+  status: complete
+  metrics:
+    planetary_structure_bodies: 20
+    orbital_mechanics_bodies: 9
+    small_body_orbits_bodies: 12
+    plasma_physics_cases: 20
+    geochemistry_records: 153
+    geochemistry_median_error_pct: 0.617258
+    oncology_records: 67
+    oncology_median_error_pct: 0.280526
+    neuroimmunology_records: 92
+    neuroimmunology_median_error_pct: 0.431577
+  artifacts:
+  - data/geochemistry_manifest.yaml
+  - data/oncology_manifest.yaml
+  - data/neuroimmunology_manifest.yaml
+  - FSOT.Formal.GeochemistryPriors
+  - FSOT.Formal.OncologyPriors
+  - FSOT.Formal.NeuroimmunologyPriors
 next_steps:
 - Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class
 - "Multi-hero held-out: certify 3\u20135 specimens per Sst/PV/VIP/L2/3"

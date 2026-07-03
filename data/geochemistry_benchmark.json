@@ -1,0 +1,1396 @@
+{
+  "generated_at": "2026-07-03T17:56:13.303884+00:00",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\FSOT_SMILES_Lab_Dataset.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\planetary_structure_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "chemical",
+    "galactic"
+  ],
+  "D_eff": 15,
+  "record_count": 153,
+  "observable_count": 153,
+  "smiles_record_count": 133,
+  "planetary_record_count": 20,
+  "median_error_pct": 0.617258,
+  "records": [
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "H",
+      "computed": 1.2081624564371403,
+      "measured": 1.2,
+      "error_pct": 0.680205,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "He",
+      "computed": 1.4056882125105163,
+      "measured": 1.4,
+      "error_pct": 0.406301,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "C",
+      "computed": 1.7039063864536625,
+      "measured": 1.7,
+      "error_pct": 0.229787,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "N",
+      "computed": 1.558686270628166,
+      "measured": 1.55,
+      "error_pct": 0.560405,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "O",
+      "computed": 1.5235586648398984,
+      "measured": 1.52,
+      "error_pct": 0.234123,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "F",
+      "computed": 1.464551773855444,
+      "measured": 1.47,
+      "error_pct": 0.370628,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Ne",
+      "computed": 1.5235586648398984,
+      "measured": 1.54,
+      "error_pct": 1.067619,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Si",
+      "computed": 1.7881288238310158,
+      "measured": 1.8,
+      "error_pct": 0.65951,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "P",
+      "computed": 1.7881288238310158,
+      "measured": 1.8,
+      "error_pct": 0.65951,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "S",
+      "computed": 1.7881288238310158,
+      "measured": 1.8,
+      "error_pct": 0.65951,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Cl",
+      "computed": 1.745642994897005,
+      "measured": 1.75,
+      "error_pct": 0.248972,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Ar",
+      "computed": 1.8736677967977804,
+      "measured": 1.88,
+      "error_pct": 0.336819,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Se",
+      "computed": 1.8736677967977804,
+      "measured": 1.9,
+      "error_pct": 1.385905,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Br",
+      "computed": 1.8736677967977804,
+      "measured": 1.85,
+      "error_pct": 1.27934,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Kr",
+      "computed": 2.0077096578811253,
+      "measured": 2.02,
+      "error_pct": 0.608433,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "I",
+      "computed": 2.0077096578811253,
+      "measured": 1.98,
+      "error_pct": 1.399478,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Xe",
+      "computed": 2.1526763787613303,
+      "measured": 2.16,
+      "error_pct": 0.339057,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Te",
+      "computed": 2.032756991271005,
+      "measured": 2.06,
+      "error_pct": 1.322476,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "He",
+      "computed": 0.21234577623937842,
+      "measured": 0.205,
+      "error_pct": 3.583305,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "Ne",
+      "computed": 0.3849085862990923,
+      "measured": 0.396,
+      "error_pct": 2.800862,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "Ar",
+      "computed": 1.618033988749895,
+      "measured": 1.64,
+      "error_pct": 1.339391,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "H",
+      "computed": 0.6573999259501898,
+      "measured": 0.667,
+      "error_pct": 1.439291,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "N",
+      "computed": 1.0917440637039062,
+      "measured": 1.1,
+      "error_pct": 0.75054,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "O",
+      "computed": 0.7879407922764435,
+      "measured": 0.802,
+      "error_pct": 1.753018,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "F",
+      "computed": 0.5737038790551475,
+      "measured": 0.557,
+      "error_pct": 2.998901,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "C",
+      "computed": 1.7324547146006335,
+      "measured": 1.76,
+      "error_pct": 1.565073,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "S",
+      "computed": 2.9183362654202663,
+      "measured": 2.9,
+      "error_pct": 0.632285,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "Cl",
+      "computed": 2.0861612696304874,
+      "measured": 2.18,
+      "error_pct": 4.304529,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "Br",
+      "computed": 2.9881104386953425,
+      "measured": 3.05,
+      "error_pct": 2.029166,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "Si",
+      "computed": 5.199788433763263,
+      "measured": 5.38,
+      "error_pct": 3.349657,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "P",
+      "computed": 3.603947418671232,
+      "measured": 3.63,
+      "error_pct": 0.717702,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "Al",
+      "computed": 6.854101966249685,
+      "measured": 6.8,
+      "error_pct": 0.795617,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "Mg",
+      "computed": 10.657545193365802,
+      "measured": 10.6,
+      "error_pct": 0.542879,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "Ca",
+      "computed": 22.70357091193756,
+      "measured": 22.8,
+      "error_pct": 0.422935,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "Na",
+      "computed": 24.321604900687458,
+      "measured": 24.11,
+      "error_pct": 0.877664,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "K",
+      "computed": 42.742645786248005,
+      "measured": 43.4,
+      "error_pct": 1.514641,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Li\u207a",
+      "computed": 0.7624833792827682,
+      "measured": 0.76,
+      "error_pct": 0.32676,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Na\u207a",
+      "computed": 1.000286568515822,
+      "measured": 1.02,
+      "error_pct": 1.932689,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "K\u207a",
+      "computed": 1.3829078011014788,
+      "measured": 1.38,
+      "error_pct": 0.21071,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Rb\u207a",
+      "computed": 1.5235586648398984,
+      "measured": 1.52,
+      "error_pct": 0.234123,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Cs\u207a",
+      "computed": 1.6799905609889012,
+      "measured": 1.67,
+      "error_pct": 0.598237,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Be\u00b2\u207a",
+      "computed": 0.44437875543962385,
+      "measured": 0.45,
+      "error_pct": 1.249165,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Mg\u00b2\u207a",
+      "computed": 0.7205239408310682,
+      "measured": 0.72,
+      "error_pct": 0.07277,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Ca\u00b2\u207a",
+      "computed": 1.000286568515822,
+      "measured": 1.0,
+      "error_pct": 0.028657,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "F\u207b",
+      "computed": 1.3361872583379157,
+      "measured": 1.33,
+      "error_pct": 0.465207,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Cl\u207b",
+      "computed": 1.8303797649892732,
+      "measured": 1.81,
+      "error_pct": 1.125954,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Br\u207b",
+      "computed": 1.9416110387254666,
+      "measured": 1.96,
+      "error_pct": 0.938212,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "I\u207b",
+      "computed": 2.23606797749979,
+      "measured": 2.2,
+      "error_pct": 1.639454,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "O\u00b2\u207b",
+      "computed": 1.4056882125105163,
+      "measured": 1.4,
+      "error_pct": 0.406301,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "S\u00b2\u207b",
+      "computed": 1.8303797649892732,
+      "measured": 1.84,
+      "error_pct": 0.522839,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Al\u00b3\u207a",
+      "computed": 0.5287096894699311,
+      "measured": 0.535,
+      "error_pct": 1.175759,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Fe\u00b2\u207a",
+      "computed": 0.7879407922764435,
+      "measured": 0.78,
+      "error_pct": 1.01805,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Fe\u00b3\u207a",
+      "computed": 0.6321205588285577,
+      "measured": 0.645,
+      "error_pct": 1.996813,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a740 Ionic Radii",
+      "name": "Cu\u00b2\u207a",
+      "computed": 0.7205239408310682,
+      "measured": 0.73,
+      "error_pct": 1.29809,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "H",
+      "computed": 0.30030227667037146,
+      "measured": 0.31,
+      "error_pct": 3.128298,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "He",
+      "computed": 0.29089654054517305,
+      "measured": 0.28,
+      "error_pct": 3.891622,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "C",
+      "computed": 0.7624833792827682,
+      "measured": 0.77,
+      "error_pct": 0.976185,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "N",
+      "computed": 0.7624833792827682,
+      "measured": 0.75,
+      "error_pct": 1.664451,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "O",
+      "computed": 0.7205239408310682,
+      "measured": 0.73,
+      "error_pct": 1.29809,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "F",
+      "computed": 0.7036198179378406,
+      "measured": 0.71,
+      "error_pct": 0.898617,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "Si",
+      "computed": 1.1283113704165975,
+      "measured": 1.11,
+      "error_pct": 1.649673,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "P",
+      "computed": 1.06944780907167,
+      "measured": 1.07,
+      "error_pct": 0.051607,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "S",
+      "computed": 1.06944780907167,
+      "measured": 1.05,
+      "error_pct": 1.852172,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "Cl",
+      "computed": 1.000286568515822,
+      "measured": 1.02,
+      "error_pct": 1.932689,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "Ge",
+      "computed": 1.2081624564371403,
+      "measured": 1.2,
+      "error_pct": 0.680205,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "As",
+      "computed": 1.2081624564371403,
+      "measured": 1.19,
+      "error_pct": 1.526257,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "Se",
+      "computed": 1.2081624564371403,
+      "measured": 1.2,
+      "error_pct": 0.680205,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "Br",
+      "computed": 1.2081624564371403,
+      "measured": 1.2,
+      "error_pct": 0.680205,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "I",
+      "computed": 1.3829078011014788,
+      "measured": 1.39,
+      "error_pct": 0.51023,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "Fe",
+      "computed": 1.3361872583379157,
+      "measured": 1.32,
+      "error_pct": 1.226307,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "Cu",
+      "computed": 1.3361872583379157,
+      "measured": 1.32,
+      "error_pct": 1.226307,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a741 Covalent Radii",
+      "name": "Au",
+      "computed": 1.3829078011014788,
+      "measured": 1.36,
+      "error_pct": 1.684397,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "H-2",
+      "computed": 1.1283113704165975,
+      "measured": 1.112,
+      "error_pct": 1.46685,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "He-3",
+      "computed": 2.5647996135645945,
+      "measured": 2.573,
+      "error_pct": 0.318709,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "He-4",
+      "computed": 7.066447742489063,
+      "measured": 7.074,
+      "error_pct": 0.106761,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "Li-6",
+      "computed": 5.33631581720894,
+      "measured": 5.332,
+      "error_pct": 0.080942,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "Li-7",
+      "computed": 5.559971388193718,
+      "measured": 5.606,
+      "error_pct": 0.82106,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "Be-9",
+      "computed": 6.433880302088988,
+      "measured": 6.463,
+      "error_pct": 0.45056,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "C-12",
+      "computed": 7.689358375601022,
+      "measured": 7.68,
+      "error_pct": 0.121854,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "N-14",
+      "computed": 7.486222525078242,
+      "measured": 7.476,
+      "error_pct": 0.136738,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "O-16",
+      "computed": 7.966271763832183,
+      "measured": 7.976,
+      "error_pct": 0.121969,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "Fe-56",
+      "computed": 8.683186676986617,
+      "measured": 8.79,
+      "error_pct": 1.215169,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "Ni-62",
+      "computed": 8.683186676986617,
+      "measured": 8.795,
+      "error_pct": 1.271328,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "U-235",
+      "computed": 7.601401875170029,
+      "measured": 7.591,
+      "error_pct": 0.137029,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "U-238",
+      "computed": 7.542538313825101,
+      "measured": 7.57,
+      "error_pct": 0.36277,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "Pu-239",
+      "computed": 7.542538313825101,
+      "measured": 7.56,
+      "error_pct": 0.230975,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a742 Binding E/A",
+      "name": "Pb-208",
+      "computed": 7.85599830585491,
+      "measured": 7.867,
+      "error_pct": 0.139846,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Ag(NH3)2+",
+      "computed": 6.854101966249685,
+      "measured": 7.05,
+      "error_pct": 2.778696,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Cu(NH3)4_2+",
+      "computed": 11.955743912849497,
+      "measured": 12.03,
+      "error_pct": 0.617258,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Zn(NH3)4_2+",
+      "computed": 9.292388736187826,
+      "measured": 9.46,
+      "error_pct": 1.771789,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Ni(NH3)6_2+",
+      "computed": 8.683186676986617,
+      "measured": 8.61,
+      "error_pct": 0.850019,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Cu(en)2_2+",
+      "computed": 19.562305898749052,
+      "measured": 19.6,
+      "error_pct": 0.192317,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Ni(en)3_2+",
+      "computed": 17.94427190999916,
+      "measured": 18.1,
+      "error_pct": 0.860376,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Ca_EDTA",
+      "computed": 10.530648752520444,
+      "measured": 10.69,
+      "error_pct": 1.490657,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Mg_EDTA",
+      "computed": 8.683186676986617,
+      "measured": 8.69,
+      "error_pct": 0.078404,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Fe3_EDTA",
+      "computed": 24.798373876248842,
+      "measured": 25.1,
+      "error_pct": 1.201698,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Cu_EDTA",
+      "computed": 18.46750293443777,
+      "measured": 18.8,
+      "error_pct": 1.768601,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Zn_EDTA",
+      "computed": 16.723706367339044,
+      "measured": 16.5,
+      "error_pct": 1.355796,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Pb_EDTA",
+      "computed": 17.94427190999916,
+      "measured": 18.04,
+      "error_pct": 0.530644,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Mn_EDTA",
+      "computed": 13.80845177220852,
+      "measured": 13.87,
+      "error_pct": 0.443751,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Ni_EDTA",
+      "computed": 18.46750293443777,
+      "measured": 18.56,
+      "error_pct": 0.498368,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a758 log\u03b2 Stability",
+      "name": "Co_EDTA",
+      "computed": 15.969355376478132,
+      "measured": 16.31,
+      "error_pct": 2.088563,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "Cu_fcc",
+      "computed": 3.608534860514053,
+      "measured": 3.615,
+      "error_pct": 0.178842,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "Ag_fcc",
+      "computed": 4.099294856210355,
+      "measured": 4.086,
+      "error_pct": 0.325376,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "Au_fcc",
+      "computed": 4.0575582477670125,
+      "measured": 4.078,
+      "error_pct": 0.501269,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "Al_fcc",
+      "computed": 4.0575582477670125,
+      "measured": 4.05,
+      "error_pct": 0.186623,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "Ni_fcc",
+      "computed": 3.533999582927114,
+      "measured": 3.524,
+      "error_pct": 0.283757,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "Pt_fcc",
+      "computed": 3.929533445866237,
+      "measured": 3.924,
+      "error_pct": 0.141015,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "Pb_fcc",
+      "computed": 5.0832036923152595,
+      "measured": 4.95,
+      "error_pct": 2.690984,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "Fe_bcc",
+      "computed": 2.871764043353496,
+      "measured": 2.867,
+      "error_pct": 0.166168,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "W_bcc",
+      "computed": 3.185224035383305,
+      "measured": 3.165,
+      "error_pct": 0.63899,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "Na_bcc",
+      "computed": 4.33631581720894,
+      "measured": 4.291,
+      "error_pct": 1.056067,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "K_bcc",
+      "computed": 5.23606797749979,
+      "measured": 5.328,
+      "error_pct": 1.725451,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "Si_dia",
+      "computed": 5.559971388193718,
+      "measured": 5.431,
+      "error_pct": 2.374726,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "Ge_dia",
+      "computed": 5.559971388193718,
+      "measured": 5.658,
+      "error_pct": 1.732566,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "C_dia",
+      "computed": 3.56181431775049,
+      "measured": 3.567,
+      "error_pct": 0.145379,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a763 Lattice Param",
+      "name": "NaCl_rs",
+      "computed": 5.559971388193718,
+      "measured": 5.64,
+      "error_pct": 1.418947,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Li",
+      "computed": 159.3962971660773,
+      "measured": 159.3,
+      "error_pct": 0.06045,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Na",
+      "computed": 107.27871310854295,
+      "measured": 107.3,
+      "error_pct": 0.019839,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "K",
+      "computed": 89.0200676427627,
+      "measured": 89.0,
+      "error_pct": 0.022548,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Be",
+      "computed": 323.96395669528056,
+      "measured": 324.0,
+      "error_pct": 0.011124,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Mg",
+      "computed": 147.10608662620928,
+      "measured": 147.1,
+      "error_pct": 0.004138,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Ca",
+      "computed": 177.8014017941265,
+      "measured": 177.8,
+      "error_pct": 0.000788,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Al",
+      "computed": 330.03367186398845,
+      "measured": 330.0,
+      "error_pct": 0.010204,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Si",
+      "computed": 455.4089095371293,
+      "measured": 455.6,
+      "error_pct": 0.041943,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Fe",
+      "computed": 416.43999054741414,
+      "measured": 416.3,
+      "error_pct": 0.033627,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Cu",
+      "computed": 337.2852422763279,
+      "measured": 337.4,
+      "error_pct": 0.034012,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Zn",
+      "computed": 130.67960086525085,
+      "measured": 130.7,
+      "error_pct": 0.015608,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Ag",
+      "computed": 284.6046792009292,
+      "measured": 284.9,
+      "error_pct": 0.103658,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Au",
+      "computed": 368.0068909173563,
+      "measured": 368.2,
+      "error_pct": 0.052447,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "Ti",
+      "computed": 472.4061424077031,
+      "measured": 473.0,
+      "error_pct": 0.125551,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "W",
+      "computed": 845.2116236763211,
+      "measured": 849.4,
+      "error_pct": 0.493098,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a7101 Atomization \u0394H_at",
+      "name": "C",
+      "computed": 716.8375343769471,
+      "measured": 716.7,
+      "error_pct": 0.01919,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Mercury",
+      "computed": 5.4305,
+      "measured": 5.427,
+      "error_pct": 0.064396,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Venus",
+      "computed": 5.2438,
+      "measured": 5.204,
+      "error_pct": 0.764363,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Earth",
+      "computed": 5.5134,
+      "measured": 5.51,
+      "error_pct": 0.061854,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Mars",
+      "computed": 3.9326,
+      "measured": 3.933,
+      "error_pct": 0.009693,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Jupiter",
+      "computed": 1.3262,
+      "measured": 1.3262,
+      "error_pct": 0.001268,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Saturn",
+      "computed": 0.6871,
+      "measured": 0.687,
+      "error_pct": 0.017906,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Uranus",
+      "computed": 1.2704,
+      "measured": 1.271,
+      "error_pct": 0.046016,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Neptune",
+      "computed": 1.6375,
+      "measured": 1.638,
+      "error_pct": 0.032274,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Pluto",
+      "computed": 1.8596,
+      "measured": 1.86,
+      "error_pct": 0.024003,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Eris",
+      "computed": 2.499,
+      "measured": 2.43,
+      "error_pct": 2.838109,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Makemake",
+      "computed": 2.0247,
+      "measured": 1.7,
+      "error_pct": 19.09843,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Haumea",
+      "computed": 1.7602,
+      "measured": 2.018,
+      "error_pct": 12.777065,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Io",
+      "computed": 3.5275,
+      "measured": 3.528,
+      "error_pct": 0.014547,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Europa",
+      "computed": 3.0129,
+      "measured": 3.013,
+      "error_pct": 0.003991,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Ganymede",
+      "computed": 1.9415,
+      "measured": 1.942,
+      "error_pct": 0.02395,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Callisto",
+      "computed": 1.8339,
+      "measured": 1.834,
+      "error_pct": 0.005956,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Titan",
+      "computed": 1.8803,
+      "measured": 1.88,
+      "error_pct": 0.014338,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Triton",
+      "computed": 2.0648,
+      "measured": 2.065,
+      "error_pct": 0.010088,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Phobos",
+      "computed": 11468.8866,
+      "measured": 1.9,
+      "error_pct": 603525.611355,
+      "source": "planetary_structure_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "planetary_bulk_density",
+      "name": "Deimos",
+      "computed": 90552.4255,
+      "measured": 1.76,
+      "error_pct": 5144924.177206,
+      "source": "planetary_structure_lab"
+    }
+  ]
+}

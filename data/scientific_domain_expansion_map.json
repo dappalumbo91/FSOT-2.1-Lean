@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-03T16:28:36.827436+00:00",
+  "generated_at": "2026-07-03T17:56:42.368570+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 16,
-    "total_scientific_domains_covered": 52,
+    "extension_domains": 23,
+    "total_scientific_domains_covered": 59,
     "total_empirical_records": 261401,
     "domains_target_band_2pct": 35,
     "domains_sign_mismatch": 0,
@@ -14,7 +14,7 @@
       "D_needs_work": 0,
       "unverified": 0
     },
-    "lean_formal_modules": 71
+    "lean_formal_modules": 78
   },
   "neurolab_domains": [
     {
@@ -495,7 +495,7 @@
     {
       "domain": "Plasma_Physics",
       "tier": 12,
-      "record_count": 43899,
+      "record_count": 43913,
       "median_error_pct": 0.0,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.PlasmaPhysicsPriors"
@@ -591,15 +591,15 @@
     {
       "domain": "Planetary_Structure",
       "tier": 21,
-      "record_count": 8,
-      "median_error_pct": 0.046016,
-      "coverage_tier": "C_thin",
+      "record_count": 20,
+      "median_error_pct": 0.032274,
+      "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.PlanetaryStructurePriors"
     },
     {
       "domain": "Orbital_Mechanics",
       "tier": 21,
-      "record_count": 8,
+      "record_count": 9,
       "median_error_pct": 0.106141,
       "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.OrbitalMechanicsPriors"
@@ -607,8 +607,8 @@
     {
       "domain": "Small_Body_Orbits",
       "tier": 22,
-      "record_count": 5,
-      "median_error_pct": 0.014433,
+      "record_count": 12,
+      "median_error_pct": 0.094587,
       "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.SmallBodyOrbitsPriors"
     },
@@ -619,6 +619,62 @@
       "median_error_pct": 0.0,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.MagnetospherePriors"
+    },
+    {
+      "domain": "Grace_Cryosphere",
+      "tier": 23,
+      "record_count": 253,
+      "median_error_pct": 0.0,
+      "coverage_tier": "A_strong",
+      "lean_module": "FSOT.Formal.GraceCryospherePriors"
+    },
+    {
+      "domain": "Seismology_Deep",
+      "tier": 23,
+      "record_count": 1000,
+      "median_error_pct": 0.0,
+      "coverage_tier": "A_strong",
+      "lean_module": "FSOT.Formal.SeismologyDeepPriors"
+    },
+    {
+      "domain": "Planetary_Atmospheres",
+      "tier": 23,
+      "record_count": 6,
+      "median_error_pct": 0.27137,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.PlanetaryAtmospheresPriors"
+    },
+    {
+      "domain": "Magnetosphere_Extended",
+      "tier": 25,
+      "record_count": 122293,
+      "median_error_pct": null,
+      "coverage_tier": "unverified",
+      "lean_module": "FSOT.Formal.MagnetosphereExtendedPriors"
+    },
+    {
+      "domain": "Geochemistry",
+      "tier": 26,
+      "record_count": 153,
+      "median_error_pct": 0.617258,
+      "coverage_tier": "A_strong",
+      "lean_module": "FSOT.Formal.GeochemistryPriors"
+    },
+    {
+      "domain": "Oncology",
+      "tier": 26,
+      "record_count": 67,
+      "median_error_pct": 0.280526,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.OncologyPriors"
+    },
+    {
+      "domain": "Neuroimmunology",
+      "tier": 26,
+      "record_count": 92,
+      "median_error_pct": 0.431577,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.NeuroimmunologyPriors"
     }
   ],
   "intelligence_compression": {
@@ -731,21 +787,6 @@
   "authority_dispersal_domains": [],
   "expansion_candidates": [
     {
-      "id": "Geochemistry",
-      "rationale": "SMILES + planetary lab overlap; no dedicated observables",
-      "priority": "high"
-    },
-    {
-      "id": "Oncology",
-      "rationale": "Biology strict + immunology extension; tumor marker benchmarks",
-      "priority": "medium"
-    },
-    {
-      "id": "Neuroimmunology",
-      "rationale": "Immunology + neuron cohort cross-domain",
-      "priority": "medium"
-    },
-    {
       "id": "Synthetic_Biology",
       "rationale": "Biology strict + evolution operons; iGEM benchmarks",
       "priority": "medium"
@@ -763,10 +804,9 @@
   ],
   "recommended_next_waves": [
     "Scale climate to 20 stations \u00d7 40 years with holdout station gates (in progress)",
-    "Expand Plasma_Physics beyond 6 records (fusion lab + NIST plasma tables)",
     "NSIDC/GRACE direct cryosphere mass-balance ingest (beyond NCEI proxy)",
     "Multi-hero neuron certification (3\u20135 specimens per Allen class)",
-    "Oncology tumor-marker strict-empirical bridge",
-    "Geochemistry dedicated observables (SMILES + planetary overlap)"
+    "Synthetic biology iGEM strict-empirical bridge",
+    "Quantum materials dedicated SMILES depth lab"
   ]
 }

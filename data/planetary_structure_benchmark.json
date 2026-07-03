@@ -1,11 +1,11 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-03T16:21:41.688171+00:00",
+  "generated_at": "2026-07-03T17:56:13.014231+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
   "source": "JPL_Horizons_physical",
-  "record_count": 8,
-  "observable_count": 8,
-  "median_error_pct": 0.046016,
+  "record_count": 20,
+  "observable_count": 20,
+  "median_error_pct": 0.032274,
   "D_eff": 16,
   "records": [
     {
@@ -79,6 +79,114 @@
       "measured": 1.638,
       "error_pct": 0.032274,
       "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Pluto",
+      "computed": 1.8596,
+      "measured": 1.86,
+      "error_pct": 0.024003,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Eris",
+      "computed": 2.499,
+      "measured": 2.43,
+      "error_pct": 2.838109,
+      "within_tol": false
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Makemake",
+      "computed": 2.0247,
+      "measured": 1.7,
+      "error_pct": 19.09843,
+      "within_tol": false
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Haumea",
+      "computed": 1.7602,
+      "measured": 2.018,
+      "error_pct": 12.777065,
+      "within_tol": false
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Io",
+      "computed": 3.5275,
+      "measured": 3.528,
+      "error_pct": 0.014547,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Europa",
+      "computed": 3.0129,
+      "measured": 3.013,
+      "error_pct": 0.003991,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Ganymede",
+      "computed": 1.9415,
+      "measured": 1.942,
+      "error_pct": 0.02395,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Callisto",
+      "computed": 1.8339,
+      "measured": 1.834,
+      "error_pct": 0.005956,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Titan",
+      "computed": 1.8803,
+      "measured": 1.88,
+      "error_pct": 0.014338,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Triton",
+      "computed": 2.0648,
+      "measured": 2.065,
+      "error_pct": 0.010088,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Phobos",
+      "computed": 11468.8866,
+      "measured": 1.9,
+      "error_pct": 603525.611355,
+      "within_tol": false
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Deimos",
+      "computed": 90552.4255,
+      "measured": 1.76,
+      "error_pct": 5144924.177206,
+      "within_tol": false
     }
   ]
 }

@@ -4,7 +4,7 @@ updated: "2026-07-03"
 
 source:
   horizons_url: "https://ssd.jpl.nasa.gov/api/horizons.api"
-  bodies: [Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune]
+  bodies: [Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto, Eris, Makemake, Haumea, Io, Europa, Ganymede, Callisto, Titan, Triton, Phobos, Deimos]
 
 build:
   ingest: scripts/ingest_planetary_jpl.py

@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def orbital_mechanics_body_count : ℕ := 8
+def orbital_mechanics_body_count : ℕ := 9
 def orbital_mechanics_median_error_pct : ℝ := (0.106141 : ℝ)
 def orbital_mechanics_D_eff : ℕ := 18
 
@@ -23,7 +23,7 @@ theorem orbital_mechanics_median_error_under_five_pct :
   unfold orbital_mechanics_median_error_pct; norm_num
 
 theorem orbital_mechanics_bundle :
-    orbital_mechanics_body_count = 8 ∧
+    orbital_mechanics_body_count = 9 ∧
     orbital_mechanics_D_eff = 18 ∧
     orbital_mechanics_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "astronomical") > 0 := by

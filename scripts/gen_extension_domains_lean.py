@@ -36,6 +36,9 @@ DEDICATED_GENERATORS = {
     "Seismology_Deep",
     "Planetary_Atmospheres",
     "Magnetosphere_Extended",
+    "Geochemistry",
+    "Oncology",
+    "Neuroimmunology",
 }
 
 LEAN_SIGN = {
@@ -59,6 +62,9 @@ LEAN_SIGN = {
     "Seismology_Deep": ("energy", "energy_raw_S_positive"),
     "Planetary_Atmospheres": ("galactic", "galactic_raw_S_positive"),
     "Magnetosphere_Extended": ("electron", "electron_raw_S_positive"),
+    "Geochemistry": ("galactic", "galactic_raw_S_positive"),
+    "Oncology": ("medical", "medical_raw_S_positive"),
+    "Neuroimmunology": ("medical", "medical_raw_S_positive"),
 }
 
 

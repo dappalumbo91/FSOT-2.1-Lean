@@ -22,6 +22,20 @@ PLASMA_CASES = [
     {"name": "tokamak_high_beta", "beta": 0.15, "observed_stable": False},
     {"name": "laboratory_Q_machine", "beta": 0.001, "observed_stable": True},
     {"name": "magnetosphere", "beta": 0.08, "observed_stable": True},
+    {"name": "stellar_corona", "beta": 1.0e-4, "observed_stable": True},
+    {"name": "magnetosheath", "beta": 0.02, "observed_stable": True},
+    {"name": "auroral_arc", "beta": 0.01, "observed_stable": True},
+    {"name": "magnetotail_lobe", "beta": 0.04, "observed_stable": True},
+    {"name": "solar_prominence", "beta": 0.002, "observed_stable": True},
+    {"name": "theta_pinch", "beta": 0.008, "observed_stable": True},
+    {"name": "spheromak", "beta": 0.06, "observed_stable": True},
+    {"name": "FRC_laboratory", "beta": 0.07, "observed_stable": True},
+    {"name": "z_pinch", "beta": 0.12, "observed_stable": False},
+    {"name": "stellarator_W7X", "beta": 0.025, "observed_stable": True},
+    {"name": "ICF_hohlraum", "beta": 0.09, "observed_stable": True},
+    {"name": "reverse_field_pinch", "beta": 0.11, "observed_stable": False},
+    {"name": "Wendelstein_edge", "beta": 0.035, "observed_stable": True},
+    {"name": "fusion_ignition_edge", "beta": 0.14, "observed_stable": False},
 ]
 
 

@@ -19,9 +19,6 @@ OUTPUT_YAML = ROOT / "data" / "scientific_domain_expansion_map.yaml"
 
 # Candidate domains beyond current 35 + 4 extensions (FSOT 2.0 expansion arc)
 EXPANSION_CANDIDATES = [
-    {"id": "Geochemistry", "rationale": "SMILES + planetary lab overlap; no dedicated observables", "priority": "high"},
-    {"id": "Oncology", "rationale": "Biology strict + immunology extension; tumor marker benchmarks", "priority": "medium"},
-    {"id": "Neuroimmunology", "rationale": "Immunology + neuron cohort cross-domain", "priority": "medium"},
     {"id": "Synthetic_Biology", "rationale": "Biology strict + evolution operons; iGEM benchmarks", "priority": "medium"},
     {"id": "Quantum_Materials", "rationale": "Condensed matter SMILES depth; dedicated lab thin", "priority": "low"},
     {"id": "Econometrics", "rationale": "Economics uses linguistics proxy only", "priority": "low"},
@@ -184,11 +181,10 @@ def build_map() -> dict:
         "expansion_candidates": EXPANSION_CANDIDATES,
         "recommended_next_waves": [
             "Scale climate to 20 stations × 40 years with holdout station gates (in progress)",
-            "Expand Plasma_Physics beyond 6 records (fusion lab + NIST plasma tables)",
             "NSIDC/GRACE direct cryosphere mass-balance ingest (beyond NCEI proxy)",
             "Multi-hero neuron certification (3–5 specimens per Allen class)",
-            "Oncology tumor-marker strict-empirical bridge",
-            "Geochemistry dedicated observables (SMILES + planetary overlap)",
+            "Synthetic biology iGEM strict-empirical bridge",
+            "Quantum materials dedicated SMILES depth lab",
         ],
     }
 

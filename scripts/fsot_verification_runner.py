@@ -195,6 +195,9 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.SeismologyDeepPriors",
                 "FSOT.Formal.PlanetaryAtmospheresPriors",
                 "FSOT.Formal.MagnetosphereExtendedPriors",
+                "FSOT.Formal.GeochemistryPriors",
+                "FSOT.Formal.OncologyPriors",
+                "FSOT.Formal.NeuroimmunologyPriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -754,6 +757,9 @@ def main() -> int:
             "build_magnetosphere_extended_benchmark.py",
             "build_plasma_physics_benchmark.py",
             "build_immunology_benchmark.py",
+            "build_geochemistry_benchmark.py",
+            "build_oncology_benchmark.py",
+            "build_neuroimmunology_benchmark.py",
             "ingest_climate_ncei_chunked.py",
             "build_climate_observed_benchmark.py",
         ):
@@ -835,6 +841,9 @@ def main() -> int:
             ("ingest_seismology_deep_usgs.py", "gen_seismology_deep_lean.py", "SeismologyDeepPriors.lean generation failed", "seismology deep USGS ingest failed"),
             ("ingest_planetary_atmospheres_jpl.py", "gen_planetary_atmospheres_lean.py", "PlanetaryAtmospheresPriors.lean generation failed", "planetary atmospheres JPL ingest failed"),
             ("ingest_kyoto_dst_historical.py", "gen_magnetosphere_extended_lean.py", "MagnetosphereExtendedPriors.lean generation failed", "Kyoto Dst historical ingest failed"),
+            (None, "gen_geochemistry_lean.py", "GeochemistryPriors.lean generation failed", None),
+            (None, "gen_oncology_lean.py", "OncologyPriors.lean generation failed", None),
+            (None, "gen_neuroimmunology_lean.py", "NeuroimmunologyPriors.lean generation failed", None),
         ]
         for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
             if ingest_name:

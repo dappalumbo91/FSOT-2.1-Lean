@@ -20,21 +20,19 @@ def build(cache_path: Path = CACHE) -> dict:
     doc = json.loads(cache_path.read_text(encoding="utf-8"))
     sys.path.insert(0, str(ROOT / "scripts"))
     from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
-    from jpl_horizons_lab import density_from_mass_radius, mass_to_kg, parse_physical_block  # noqa: E402
+    from jpl_horizons_lab import density_from_mass_radius, resolve_body_physical  # noqa: E402
 
     mod, authority_path = load_fsot_compute()
     S_plan = float(mod.domain_scalar("Planetary_Science"))
 
     records: list[dict] = []
     for body in doc.get("bodies") or []:
-        phys = parse_physical_block(body.get("horizons_text") or "")
+        phys = resolve_body_physical(body.get("name") or "", body.get("horizons_text") or "")
         radius = phys.get("radius_km")
         published = phys.get("density_g_cm3")
-        mass_val = phys.get("mass_value")
-        mass_exp = phys.get("mass_exponent")
-        if None in (radius, published, mass_val, mass_exp):
+        mass_kg = phys.get("mass_kg")
+        if None in (radius, published, mass_kg):
             continue
-        mass_kg = mass_to_kg(float(mass_val), int(mass_exp))
         computed = density_from_mass_radius(mass_kg, float(radius))
         tol_pct = 0.5 + abs(S_plan) * 0.3
         err = abs(computed - float(published)) / float(published) * 100.0

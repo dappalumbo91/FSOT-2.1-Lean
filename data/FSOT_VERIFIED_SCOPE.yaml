@@ -1,4 +1,4 @@
-generated_at: '2026-07-03T17:34:46.135833+00:00'
+generated_at: '2026-07-03T17:56:42.527514+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,14 +6,14 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 75
+  lean_formal_modules: 78
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: false
-  tiers_complete: 23
-  tiers_total: 23
+  tiers_complete: 24
+  tiers_total: 24
   percent_complete: 100.0
-current_tier: Tier 25 Magnetosphere extended (historical Dst, RTSW Bz, G-scale holdout)
+current_tier: Tier 26 Thin-domain thicken + Geochemistry/Oncology/Neuroimmunology
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -423,7 +423,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: false
-scientific_domains_covered: 52
+scientific_domains_covered: 59
 total_empirical_records: 261401
 tier_coverage:
 - tier: 1
@@ -463,6 +463,7 @@ tier_coverage:
   - ExperimentSynthesisPriors
   - FormulaCorpusPriors
   - FuelPriors
+  - GeochemistryPriors
   - GeomagnetismPriors
   - GraceCryospherePriors
   - HiggsBranchingPriors
@@ -477,10 +478,12 @@ tier_coverage:
   - MagnetosphereExtendedPriors
   - MagnetospherePriors
   - MathGeneratorPriors
+  - NeuroimmunologyPriors
   - NeuronCohortPriors
   - NeuronCohortStrataPriors
   - NeuronCohortTrainHoldoutPriors
   - NeuronHybridPriors
+  - OncologyPriors
   - OrbitalMechanicsPriors
   - ParticlePhysicsPriors
   - PharmacologyPriors
@@ -572,7 +575,7 @@ tier_coverage:
   name: 'Extension domains #37-39 (Plasma, Immunology, Climate)'
   status: complete
   metrics:
-    plasma_records: 6
+    plasma_records: 20
     immunology_records: 84
     climate_months: 9439
     biology_strict_records: 16
@@ -729,8 +732,8 @@ tier_coverage:
     tectonics_events: 500
     tectonics_boundary_features: 241
     geomagnetism_observables: 525
-    planetary_structure_bodies: 8
-    orbital_mechanics_bodies: 8
+    planetary_structure_bodies: 20
+    orbital_mechanics_bodies: 9
     orbital_median_error_pct: 0.106141
   artifacts:
   - data/seismology_usgs_manifest.yaml
@@ -747,8 +750,8 @@ tier_coverage:
   name: Small-body orbits + magnetosphere coupling (Dst×Kp×magnetic-string)
   status: complete
   metrics:
-    small_body_orbit_count: 5
-    small_body_median_error_pct: 0.014433
+    small_body_orbit_count: 12
+    small_body_median_error_pct: 0.094587
     magnetosphere_observables: 167
     magnetosphere_match_rate: 1.0
     magnetosphere_kp_resolution: interpolated_1h
@@ -838,10 +841,31 @@ tier_coverage:
   - data/magnetosphere_extended_manifest.yaml
   - data/solar_wind_rtsw_manifest.yaml
   - FSOT.Formal.MagnetosphereExtendedPriors
+- tier: 26
+  name: Thin-domain thicken + Geochemistry/Oncology/Neuroimmunology
+  status: complete
+  metrics:
+    planetary_structure_bodies: 20
+    orbital_mechanics_bodies: 9
+    small_body_orbits_bodies: 12
+    plasma_physics_cases: 20
+    geochemistry_records: 153
+    geochemistry_median_error_pct: 0.617258
+    oncology_records: 67
+    oncology_median_error_pct: 0.280526
+    neuroimmunology_records: 92
+    neuroimmunology_median_error_pct: 0.431577
+  artifacts:
+  - data/geochemistry_manifest.yaml
+  - data/oncology_manifest.yaml
+  - data/neuroimmunology_manifest.yaml
+  - FSOT.Formal.GeochemistryPriors
+  - FSOT.Formal.OncologyPriors
+  - FSOT.Formal.NeuroimmunologyPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
-  record_count: 43899
+  record_count: 43913
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.PlasmaPhysicsPriors
@@ -913,20 +937,20 @@ extension_domains:
   lean_module: FSOT.Formal.GeomagnetismPriors
 - domain: Planetary_Structure
   tier: 21
-  record_count: 8
-  median_error_pct: 0.046016
-  coverage_tier: C_thin
+  record_count: 20
+  median_error_pct: 0.032274
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.PlanetaryStructurePriors
 - domain: Orbital_Mechanics
   tier: 21
-  record_count: 8
+  record_count: 9
   median_error_pct: 0.106141
   coverage_tier: C_thin
   lean_module: FSOT.Formal.OrbitalMechanicsPriors
 - domain: Small_Body_Orbits
   tier: 22
-  record_count: 5
-  median_error_pct: 0.014433
+  record_count: 12
+  median_error_pct: 0.094587
   coverage_tier: C_thin
   lean_module: FSOT.Formal.SmallBodyOrbitsPriors
 - domain: Magnetosphere
@@ -938,19 +962,45 @@ extension_domains:
 - domain: Grace_Cryosphere
   tier: 23
   record_count: 253
+  median_error_pct: 0.0
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.GraceCryospherePriors
 - domain: Seismology_Deep
   tier: 23
   record_count: 1000
+  median_error_pct: 0.0
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.SeismologyDeepPriors
 - domain: Planetary_Atmospheres
   tier: 23
   record_count: 6
+  median_error_pct: 0.27137
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.PlanetaryAtmospheresPriors
 - domain: Magnetosphere_Extended
   tier: 25
   record_count: 122293
+  median_error_pct: null
+  coverage_tier: unverified
   lean_module: FSOT.Formal.MagnetosphereExtendedPriors
+- domain: Geochemistry
+  tier: 26
+  record_count: 153
+  median_error_pct: 0.617258
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.GeochemistryPriors
+- domain: Oncology
+  tier: 26
+  record_count: 67
+  median_error_pct: 0.280526
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.OncologyPriors
+- domain: Neuroimmunology
+  tier: 26
+  record_count: 92
+  median_error_pct: 0.431577
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.NeuroimmunologyPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1139,6 +1189,42 @@ theory_crosswalk:
     - FSOT.Formal.MagnetospherePriors
     - FSOT.Formal.GeomagnetismPriors
     - FSOT.Formal.SpaceWeatherPriors
+  Geochemistry:
+    tier: 26
+    D_eff: 15
+    maps_to_lean:
+    - chemical
+    - galactic
+    labs:
+    - geochemistry_lab
+    - smiles_lab
+    - planetary_structure_lab
+    lean_module: FSOT.Formal.GeochemistryPriors
+  Oncology:
+    tier: 26
+    D_eff: 14
+    maps_to_lean:
+    - medical
+    - biological
+    labs:
+    - oncology_lab
+    - smiles_lab
+    - biology_strict_lab
+    lean_module: FSOT.Formal.OncologyPriors
+  Neuroimmunology:
+    tier: 26
+    D_eff: 14
+    maps_to_lean:
+    - medical
+    - neural
+    labs:
+    - neuroimmunology_lab
+    - immunology_lab
+    - neuron_cohort_lab
+    lean_modules:
+    - FSOT.Formal.NeuroimmunologyPriors
+    - FSOT.Formal.ImmunologyPriors
+    - FSOT.Formal.NeuronCohortPriors
 lean_formal_modules:
 - AetherPrimePriors
 - BiologyStrictEmpiricalPriors
@@ -1166,6 +1252,7 @@ lean_formal_modules:
 - ExperimentSynthesisPriors
 - FormulaCorpusPriors
 - FuelPriors
+- GeochemistryPriors
 - GeomagnetismPriors
 - GraceCryospherePriors
 - HiggsBranchingPriors
@@ -1180,10 +1267,12 @@ lean_formal_modules:
 - MagnetosphereExtendedPriors
 - MagnetospherePriors
 - MathGeneratorPriors
+- NeuroimmunologyPriors
 - NeuronCohortPriors
 - NeuronCohortStrataPriors
 - NeuronCohortTrainHoldoutPriors
 - NeuronHybridPriors
+- OncologyPriors
 - OrbitalMechanicsPriors
 - ParticlePhysicsPriors
 - PharmacologyPriors

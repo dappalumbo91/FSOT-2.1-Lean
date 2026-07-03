@@ -27,14 +27,14 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-03 — Tier 25)
+## Verification status (2026-07-03 — Tier 26)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
 Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
 
-- **23/23 verification tiers complete** (historical Dst 120k+ hrs, RTSW Bz, G-scale storm holdout)
-- **55+ scientific domains** (35 NeuroLab + 20 extension bridges)
+- **26/26 verification tiers complete** (thin-domain JPL/plasma thicken + Geochemistry/Oncology/Neuroimmunology)
+- **58+ scientific domains** (35 NeuroLab + 23 extension bridges)
 - **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
@@ -70,6 +70,9 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - GRACE cryosphere (`FSOT.Formal.GraceCryospherePriors`) — **253** GFZ GravIS Greenland months, 93.7% mass-decline classifier match
 - Seismology deep (`FSOT.Formal.SeismologyDeepPriors`) — **1000** moment-tensor + plate-margin observables, 81% match (Pacific holdout 100%)
 - Planetary atmospheres (`FSOT.Formal.PlanetaryAtmospheresPriors`) — Mars/Venus/Titan pressure &amp; temperature, 0.27% median error
+- Geochemistry (`FSOT.Formal.GeochemistryPriors`) — SMILES mineral/geo sections + planetary bulk-density overlap
+- Oncology (`FSOT.Formal.OncologyPriors`) — SMILES drug/enzyme affinity + biology strict operon bridge
+- Neuroimmunology (`FSOT.Formal.NeuroimmunologyPriors`) — immunology SMILES + Allen neuron cohort strata crosswalk
 - Kronos metrology (`FSOT.Formal.KronosPriors`) — 568 runs, best fractional error 1.64e-7
 - Knowledge base (`FSOT.Formal.KnowledgeBasePriors`) — 19,213 catalog formulas; 7,941 strict-empirical bridge (6,921 within 2%); per-formula pass on full catalog
 - Math generator (`FSOT.Formal.MathGeneratorPriors`) — 7 comparisons within 2%

@@ -271,6 +271,45 @@ extension_domains:
     lean_module: FSOT.Formal.MagnetosphereExtendedPriors
     note: "Kyoto Dst 1998-2012 (120k+ hrs) + RTSW 1-min Bz + G-scale storm holdout"
 
+  Geochemistry:
+    tier: 26
+    D_eff: 15
+    delta_psi: 0.72
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [chemical, galactic]
+    build_script: scripts/build_geochemistry_benchmark.py
+    manifest: data/geochemistry_manifest.yaml
+    benchmark_data: data/geochemistry_benchmark.json
+    lean_module: FSOT.Formal.GeochemistryPriors
+    note: "SMILES ionic/lattice/binding sections + planetary bulk-density overlap"
+
+  Oncology:
+    tier: 26
+    D_eff: 14
+    delta_psi: 0.68
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [medical, biological]
+    build_script: scripts/build_oncology_benchmark.py
+    manifest: data/oncology_manifest.yaml
+    benchmark_data: data/oncology_benchmark.json
+    lean_module: FSOT.Formal.OncologyPriors
+    note: "SMILES drug/enzyme affinity + biology strict operon bridge"
+
+  Neuroimmunology:
+    tier: 26
+    D_eff: 14
+    delta_psi: 0.7
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [medical, neural]
+    build_script: scripts/build_neuroimmunology_benchmark.py
+    manifest: data/neuroimmunology_manifest.yaml
+    benchmark_data: data/neuroimmunology_benchmark.json
+    lean_module: FSOT.Formal.NeuroimmunologyPriors
+    note: "Immunology SMILES + Allen neuron cohort strata FI coupling crosswalk"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

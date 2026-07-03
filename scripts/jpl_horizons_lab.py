@@ -16,6 +16,13 @@ SMALL_BODY_COMMANDS = {
     "Vesta": ("4;", "@10"),
     "Eros": ("433", "@10"),
     "Halley": ("90000022", "@10"),
+    "Pluto": ("999", "@10"),
+    "Eris": ("136199", "@10"),
+    "Makemake": ("136472", "@10"),
+    "Haumea": ("136108", "@10"),
+    "Pallas": ("2;", "@10"),
+    "Juno": ("3;", "@10"),
+    "Hygiea": ("10;", "@10"),
 }
 
 # Heliocentric semi-major axes (AU) — JPL SBDB reference for Kepler/perturbation checks.
@@ -24,6 +31,13 @@ SMALL_BODY_SEMI_MAJOR_AU = {
     "Vesta": 2.362,
     "Eros": 1.458,
     "Halley": 17.834,
+    "Pluto": 39.482,
+    "Eris": 67.669,
+    "Makemake": 45.791,
+    "Haumea": 43.131,
+    "Pallas": 2.773,
+    "Juno": 2.668,
+    "Hygiea": 3.139,
 }
 
 # Moon-Earth orbit (geocentric reference)
@@ -41,6 +55,22 @@ PLANET_COMMANDS = {
     "Neptune": "899",
 }
 
+# Dwarf planets + major moons (command, Horizons center) for extended planetary structure ingest.
+EXTENDED_BODY_COMMANDS = {
+    "Pluto": ("999", "@10"),
+    "Eris": ("136199", "@10"),
+    "Makemake": ("136472", "@10"),
+    "Haumea": ("136108", "@10"),
+    "Io": ("501", "@599"),
+    "Europa": ("502", "@599"),
+    "Ganymede": ("503", "@599"),
+    "Callisto": ("504", "@599"),
+    "Titan": ("606", "@699"),
+    "Triton": ("801", "@899"),
+    "Phobos": ("401", "@499"),
+    "Deimos": ("402", "@499"),
+}
+
 ATMOSPHERE_BODY_COMMANDS = {
     "Mars": ("499", "@10"),
     "Venus": ("299", "@10"),
@@ -50,6 +80,15 @@ ATMOSPHERE_BODY_COMMANDS = {
 NASA_ATMOSPHERE_REFERENCE = {
     "Titan": {"pressure_bar": 1.476, "temperature_k": 93.7},
 }
+
+# NASA/JPL fact-sheet fallback when Horizons ELEMENTS block lacks mass/radius.
+NASA_EXTENDED_PHYSICAL_REFERENCE = {
+    "Eris": {"radius_km": 1163.0, "density_g_cm3": 2.43, "mass_kg": 1.6466e22},
+    "Makemake": {"radius_km": 715.0, "density_g_cm3": 1.7, "mass_kg": 3.1e21},
+    "Haumea": {"radius_km": 816.0, "density_g_cm3": 2.018, "mass_kg": 4.006e21},
+}
+
+G_SI = 6.67430e-11
 
 # NASA Planetary Fact Sheet semi-major axes (AU) — ephemeris reference for Kepler checks.
 NASA_SEMI_MAJOR_AU = {
@@ -61,6 +100,10 @@ NASA_SEMI_MAJOR_AU = {
     "Saturn": 9.537,
     "Uranus": 19.191,
     "Neptune": 30.069,
+    "Pluto": 39.482,
+    "Eris": 67.669,
+    "Makemake": 45.791,
+    "Haumea": 43.131,
 }
 
 
@@ -108,7 +151,12 @@ def parse_atmosphere_block(text: str) -> dict[str, Any]:
 
 
 def parse_physical_block(text: str) -> dict[str, Any]:
-    radius_km = _first_float(r"Vol\.\s*Mean\s*Radius\s*\(km\)\s*=\s*([0-9.]+)", text)
+    mass_unit = 23
+    radius_km = _first_float(r"Vol\.\s*mean\s*radius\s*\(km\)\s*=\s*([0-9.]+)", text)
+    if radius_km is None:
+        radius_km = _first_float(r"Vol\.\s*Mean\s*Radius\s*\(km\)\s*=\s*([0-9.]+)", text)
+    if radius_km is None:
+        radius_km = _first_float(r"Mean\s+[Rr]adius\s*\(km\)\s*=\s*([0-9.]+)", text)
     if radius_km is None:
         radius_km = _first_float(r"Equat\.\s*radius,\s*km\s*=\s*([0-9.]+)", text)
     density = _first_float(r"Density\s*\(g/cm\^3\)\s*=\s*([0-9.]+)", text)
@@ -116,15 +164,45 @@ def parse_physical_block(text: str) -> dict[str, Any]:
         density = _first_float(r"Density\s*\(g\s*cm\^-3\)\s*=\s*([0-9.]+)", text)
     if density is None:
         density = _first_float(r"Density,\s*g/cm\^3\s*=\s*([0-9.]+)", text)
-    mass = _first_float(r"Mass\s*x10\^23\s*\(kg\)\s*=\s*([0-9.]+)", text)
+    if density is None:
+        density = _first_float(r"Density\s*\([^)]*\)\s*=\s*([0-9.]+)\s*g/cm\^3", text)
+    if density is None:
+        density = _first_float(r"Density\s*\(g/cm\^3\)\s*=\s*([0-9.]+)", text)
+    if density is None:
+        density = _first_float(r"Mean\s+dens\s*\(g\s*cm\^-3\)\s*=\s*([0-9.]+)", text)
+    mass = _first_float(r"Mass\s*x10\^22\s*\(kg\)\s*=\s*([0-9.]+)", text)
+    if mass is not None:
+        mass_unit = 22
+    if mass is None:
+        mass = _first_float(r"Mass\s*x10\^23\s*\(kg\)\s*=\s*([0-9.]+)", text)
+        if mass is not None:
+            mass_unit = 23
     if mass is None:
         mass = _first_float(r"Mass\s*x10\^24\s*\(kg\)\s*=\s*([0-9.]+)", text)
-        mass_unit = 24
-    else:
-        mass_unit = 23
+        if mass is not None:
+            mass_unit = 24
+    if mass is None:
+        mass = _first_float(r"Mass\s*\(10\^19\s*kg\)\s*=\s*([0-9.]+)", text)
+        if mass is not None:
+            mass_unit = 19
     if mass is None:
         mass = _first_float(r"Mass\s*x\s*10\^26\s*\(kg\)\s*=\s*([0-9.]+)", text)
-        mass_unit = 26
+        if mass is not None:
+            mass_unit = 26
+    if mass is None:
+        mass = _first_float(r"Mass\s*\(10\^20\s*kg\s*\)\s*=\s*([0-9.]+)", text)
+        if mass is not None:
+            mass_unit = 20
+    if radius_km is None:
+        radius_km = _first_float(r"Radius\s*\(km\)\s*=\s*([0-9.]+)", text)
+    gm_km3 = _first_float(r"GM\s*\(km\^3/s\^2\)\s*=\s*([0-9.Ee+-]+)", text)
+    if gm_km3 is None:
+        gm_km3 = _first_float(r"GM\s*\(km\^3/s\^2\)\s*=\s*([0-9.]+)", text)
+    mass_kg = None
+    if mass is not None:
+        mass_kg = float(mass) * (10.0 ** int(mass_unit))
+    elif gm_km3 is not None:
+        mass_kg = float(gm_km3) * 1.0e9 / G_SI
     period_days = _first_float(r"Orbit\s+period\s*=\s*([0-9.]+)\s*d", text)
     if period_days is None:
         period_days = _first_float(r"Sidereal\s+orbit\s+period\s*=\s*([0-9.]+)\s*d", text)
@@ -147,8 +225,23 @@ def parse_physical_block(text: str) -> dict[str, Any]:
         "density_g_cm3": density,
         "mass_value": mass,
         "mass_exponent": mass_unit,
+        "mass_kg": mass_kg,
         "period_days": period_days,
     }
+
+
+def resolve_body_physical(name: str, text: str) -> dict[str, Any]:
+    """Merge Horizons parse with NASA fact-sheet fallback for incomplete bodies."""
+    phys = parse_physical_block(text)
+    ref = NASA_EXTENDED_PHYSICAL_REFERENCE.get(name)
+    if ref:
+        if phys.get("radius_km") is None:
+            phys["radius_km"] = ref.get("radius_km")
+        if phys.get("density_g_cm3") is None:
+            phys["density_g_cm3"] = ref.get("density_g_cm3")
+        if phys.get("mass_kg") is None and ref.get("mass_kg") is not None:
+            phys["mass_kg"] = ref["mass_kg"]
+    return phys
 
 
 def parse_soe_elements(text: str) -> dict[str, float | None]:

@@ -125,6 +125,27 @@ verified_extension_domains:
     labs: [magnetosphere_lab, solar_wind_bz_lab, geomagnetism_lab, space_weather_lab]
     lean_modules: [FSOT.Formal.MagnetosphereExtendedPriors, FSOT.Formal.MagnetospherePriors, FSOT.Formal.GeomagnetismPriors, FSOT.Formal.SpaceWeatherPriors]
 
+  Geochemistry:
+    tier: 26
+    D_eff: 15
+    maps_to_lean: [chemical, galactic]
+    labs: [geochemistry_lab, smiles_lab, planetary_structure_lab]
+    lean_module: FSOT.Formal.GeochemistryPriors
+
+  Oncology:
+    tier: 26
+    D_eff: 14
+    maps_to_lean: [medical, biological]
+    labs: [oncology_lab, smiles_lab, biology_strict_lab]
+    lean_module: FSOT.Formal.OncologyPriors
+
+  Neuroimmunology:
+    tier: 26
+    D_eff: 14
+    maps_to_lean: [medical, neural]
+    labs: [neuroimmunology_lab, immunology_lab, neuron_cohort_lab]
+    lean_modules: [FSOT.Formal.NeuroimmunologyPriors, FSOT.Formal.ImmunologyPriors, FSOT.Formal.NeuronCohortPriors]
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

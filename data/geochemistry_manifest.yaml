@@ -1,0 +1,19 @@
+# Tier 26 — SMILES mineral/geo sections + planetary bulk density overlap.
+version: "1.0"
+updated: "2026-07-03"
+
+D_eff: 15
+
+build:
+  benchmark: scripts/build_geochemistry_benchmark.py
+  output: data/geochemistry_benchmark.json
+
+lean:
+  generator: scripts/gen_geochemistry_lean.py
+  module: FSOT.Formal.GeochemistryPriors
+  lean_domain: galactic
+  sign_theorem: galactic_raw_S_positive
+
+verification:
+  min_records: 20
+  max_median_error_pct: 5.0

@@ -1,11 +1,11 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-03T16:27:49.718446+00:00",
+  "generated_at": "2026-07-03T17:54:58.207302+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
   "source": "JPL_Horizons_small_bodies",
-  "record_count": 5,
-  "observable_count": 5,
-  "median_error_pct": 0.014433,
+  "record_count": 12,
+  "observable_count": 12,
+  "median_error_pct": 0.094587,
   "D_eff": 18,
   "records": [
     {
@@ -61,6 +61,83 @@
       "eccentricity": 0.967350313866682,
       "semi_major_km": 2678455669.9,
       "error_pct": 0.394585,
+      "within_tol": true
+    },
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "heliocentric_semi_major_axis",
+      "name": "Pluto",
+      "computed_au": 39.119815,
+      "measured_au": 39.482,
+      "eccentricity": 0.2453609208640384,
+      "semi_major_km": 5852241015.9,
+      "error_pct": 0.917342,
+      "within_tol": true
+    },
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "heliocentric_semi_major_axis",
+      "name": "Eris",
+      "computed_au": 68.14399,
+      "measured_au": 67.669,
+      "eccentricity": 0.4328389057827545,
+      "semi_major_km": 10194195849.4,
+      "error_pct": 0.701932,
+      "within_tol": true
+    },
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "heliocentric_semi_major_axis",
+      "name": "Makemake",
+      "computed_au": 45.311686,
+      "measured_au": 45.791,
+      "eccentricity": 0.1651981256410704,
+      "semi_major_km": 6778531680.4,
+      "error_pct": 1.046744,
+      "within_tol": true
+    },
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "heliocentric_semi_major_axis",
+      "name": "Haumea",
+      "computed_au": 42.894748,
+      "measured_au": 43.131,
+      "eccentricity": 0.1995500845975406,
+      "semi_major_km": 6416963015.1,
+      "error_pct": 0.547754,
+      "within_tol": true
+    },
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "heliocentric_semi_major_axis",
+      "name": "Pallas",
+      "computed_au": 2.770377,
+      "measured_au": 2.773,
+      "eccentricity": 0.2303053074255927,
+      "semi_major_km": 414442515.1,
+      "error_pct": 0.094587,
+      "within_tol": true
+    },
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "heliocentric_semi_major_axis",
+      "name": "Juno",
+      "computed_au": 2.669503,
+      "measured_au": 2.668,
+      "eccentricity": 0.2562051674092646,
+      "semi_major_km": 399351956.2,
+      "error_pct": 0.056332,
+      "within_tol": true
+    },
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "heliocentric_semi_major_axis",
+      "name": "Hygiea",
+      "computed_au": 3.139894,
+      "measured_au": 3.139,
+      "eccentricity": 0.1109479778641034,
+      "semi_major_km": 469721501.8,
+      "error_pct": 0.02849,
       "within_tol": true
     }
   ]

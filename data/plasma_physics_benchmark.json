@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T05:39:41.330083+00:00",
+  "generated_at": "2026-07-03T17:54:58.343473+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
   "plasma_scalar_S": 0.7869745016115727,
   "maps_to_lean": [
@@ -7,7 +7,7 @@
     "fusion"
   ],
   "D_eff": 14,
-  "record_count": 6,
+  "record_count": 20,
   "median_error_pct": 0.0,
   "records": [
     {
@@ -68,6 +68,146 @@
       "measured": 1.0,
       "error_pct": 0.0,
       "beta": 0.08,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "stellar_corona",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.0001,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "magnetosheath",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.02,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "auroral_arc",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.01,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "magnetotail_lobe",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.04,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "solar_prominence",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.002,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "theta_pinch",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.008,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "spheromak",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.06,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "FRC_laboratory",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.07,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "z_pinch",
+      "computed": 1.0,
+      "measured": 0.0,
+      "error_pct": 100.0,
+      "beta": 0.12,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "stellarator_W7X",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.025,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "ICF_hohlraum",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.09,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "reverse_field_pinch",
+      "computed": 1.0,
+      "measured": 0.0,
+      "error_pct": 100.0,
+      "beta": 0.11,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "Wendelstein_edge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "beta": 0.035,
+      "S": 0.786975
+    },
+    {
+      "lab": "plasma_physics_lab",
+      "property": "mhd_beta_stability",
+      "name": "fusion_ignition_edge",
+      "computed": 1.0,
+      "measured": 0.0,
+      "error_pct": 100.0,
+      "beta": 0.14,
       "S": 0.786975
     }
   ]

@@ -17,18 +17,20 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "data" / "planetary_jpl_cache.json"
 sys.path.insert(0, str(ROOT / "scripts"))
-from jpl_horizons_lab import PLANET_COMMANDS, fetch_horizons  # noqa: E402
+from jpl_horizons_lab import EXTENDED_BODY_COMMANDS, PLANET_COMMANDS, fetch_horizons  # noqa: E402
 
 
 def main() -> int:
     if yaml is None:
         raise RuntimeError("PyYAML required")
-    bodies = list(PLANET_COMMANDS.keys())
     rows: list[dict] = []
-    for name in bodies:
-        cmd = PLANET_COMMANDS[name]
+    for name, cmd in PLANET_COMMANDS.items():
         physical_text = fetch_horizons(command=cmd, ephem_type="ELEMENTS")
-        rows.append({"name": name, "command": cmd, "horizons_text": physical_text})
+        rows.append({"name": name, "command": cmd, "center": "@10", "horizons_text": physical_text})
+        print(f"  fetched {name}")
+    for name, (cmd, center) in EXTENDED_BODY_COMMANDS.items():
+        physical_text = fetch_horizons(command=cmd, center=center, ephem_type="ELEMENTS")
+        rows.append({"name": name, "command": cmd, "center": center, "horizons_text": physical_text})
         print(f"  fetched {name}")
     CACHE.write_text(
         json.dumps(
