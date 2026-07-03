@@ -28,6 +28,9 @@ BIOLOGY_STRICT = ROOT / "data" / "biology_strict_empirical.json"
 CLIMATE_BENCH = ROOT / "data" / "climate_observed_benchmark.json"
 PLASMA_BENCH = ROOT / "data" / "plasma_physics_benchmark.json"
 IMMUNOLOGY_BENCH = ROOT / "data" / "immunology_benchmark.json"
+COSMOLOGY_EXTENDED_BENCH = ROOT / "data" / "cosmology_extended_benchmark.json"
+HIGGS_BRANCHING_BENCH = ROOT / "data" / "higgs_branching_benchmark.json"
+SPACE_WEATHER_BENCH = ROOT / "data" / "space_weather_benchmark.json"
 
 # Human mtDNA reference gene lengths (NCBI NC_012920.1, protein-coding spans).
 HUMAN_MT_OPERON_REF = {
@@ -145,6 +148,88 @@ def extract_cosmology_wave4(registry: dict) -> dict[str, Any]:
         if r.get("error_pct") is not None
     ]
     return _summarize_records(records)
+
+
+def extract_cosmology_extended(registry: dict) -> dict[str, Any]:
+    if not COSMOLOGY_EXTENDED_BENCH.exists():
+        return _summarize_records([])
+    doc = json.loads(COSMOLOGY_EXTENDED_BENCH.read_text(encoding="utf-8"))
+    records: list[dict[str, Any]] = []
+    for section, prop in (
+        ("skeleton_derivations", "skeleton"),
+        ("lambda_cdm_observables", "lambda_cdm"),
+    ):
+        for r in doc.get(section) or []:
+            if r.get("error_pct") is None:
+                continue
+            records.append(
+                {
+                    "lab": "cosmology_extended_lab",
+                    "property": prop,
+                    "name": r.get("name") or r.get("symbol") or r.get("id"),
+                    "computed": r.get("computed"),
+                    "measured": r.get("measured") or r.get("target"),
+                    "error_pct": float(r["error_pct"]),
+                }
+            )
+    return _summarize_records(records)
+
+
+def extract_cosmology_higher_waves(registry: dict) -> dict[str, Any]:
+    rows = registry.get("cosmology_higher_waves_lab", {}).get("rows") or []
+    records = [
+        {
+            "lab": "cosmology_higher_waves_lab",
+            "property": r.get("wave"),
+            "name": r.get("name"),
+            "computed": r.get("computed"),
+            "measured": r.get("measured"),
+            "error_pct": float(r["error_pct"]),
+        }
+        for r in rows
+        if r.get("error_pct") is not None
+    ]
+    return _summarize_records(records)
+
+
+def extract_higgs_branching(registry: dict) -> dict[str, Any]:
+    if HIGGS_BRANCHING_BENCH.exists():
+        doc = json.loads(HIGGS_BRANCHING_BENCH.read_text(encoding="utf-8"))
+        records = [
+            {
+                "lab": "higgs_branching_lab",
+                "property": r.get("wave"),
+                "name": r.get("name"),
+                "computed": r.get("computed"),
+                "measured": r.get("measured"),
+                "error_pct": float(r["error_pct"]),
+            }
+            for r in doc.get("compute_higgs_rows") or []
+            if r.get("error_pct") is not None
+        ]
+        return _summarize_records(records)
+    lab = registry.get("higgs_branching_lab") or {}
+    if lab.get("median_error_pct") is not None and lab.get("observable_count"):
+        return _summarize_records(
+            [
+                {
+                    "lab": "higgs_branching_lab",
+                    "property": "aggregate",
+                    "name": "higgs_branching_bundle",
+                    "computed": float(lab["observable_count"]),
+                    "measured": float(lab["observable_count"]),
+                    "error_pct": float(lab["median_error_pct"]),
+                }
+            ]
+        )
+    return _summarize_records([])
+
+
+def extract_space_weather(registry: dict) -> dict[str, Any]:
+    if not SPACE_WEATHER_BENCH.exists():
+        return _summarize_records([])
+    doc = json.loads(SPACE_WEATHER_BENCH.read_text(encoding="utf-8"))
+    return _summarize_records(doc.get("records") or [])
 
 
 def extract_linguistics(registry: dict) -> dict[str, Any]:
@@ -444,6 +529,10 @@ LAB_EXTRACTORS = {
     "smiles_lab": lambda reg, lean=None: extract_smiles(lean),
     "cosmology_lambda_cdm": lambda reg, lean=None: extract_cosmology_lambda(reg),
     "cosmology_wave4": lambda reg, lean=None: extract_cosmology_wave4(reg),
+    "cosmology_extended_lab": lambda reg, lean=None: extract_cosmology_extended(reg),
+    "cosmology_higher_waves_lab": lambda reg, lean=None: extract_cosmology_higher_waves(reg),
+    "higgs_branching_lab": lambda reg, lean=None: extract_higgs_branching(reg),
+    "space_weather_lab": lambda reg, lean=None: extract_space_weather(reg),
     "linguistics_lab": lambda reg, lean=None: extract_linguistics(reg),
     "fuel_lab": lambda reg, lean=None: extract_fuel(reg),
     "thermodynamics_smiles": lambda reg, lean=None: extract_thermodynamics_smiles(),
