@@ -1,0 +1,16 @@
+# Tier 25 — NOAA SWPC RTSW 1-minute solar wind magnetic field (sub-hourly Bz).
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  name: NOAA_RTSW_mag_1m
+  url: https://services.swpc.noaa.gov/json/rtsw/rtsw_mag_1m.json
+  bz_southward_threshold_nt: -5.0
+  prefer_active: true
+
+build:
+  ingest: scripts/ingest_solar_wind_rtsw.py
+  output_cache: data/solar_wind_rtsw_cache.json
+
+verification:
+  min_records: 100

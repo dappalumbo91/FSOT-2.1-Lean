@@ -1,15 +1,16 @@
-generated_at: '2026-07-03T16:50:06.663845+00:00'
+generated_at: '2026-07-03T17:34:45.946143+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 74
+  lean_formal_modules: 75
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: false
-  tiers_complete: 22
-  tiers_total: 22
+  tiers_complete: 23
+  tiers_total: 23
   percent_complete: 100.0
-current_position: Tier 24 Magnetosphere timeline resolution (hourly Kp + channel decomposition)
+current_position: Tier 25 Magnetosphere extended (historical Dst, RTSW Bz, G-scale
+  holdout)
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -59,6 +60,7 @@ tiers:
   - LinguisticsPriors
   - MagicCirclePriors
   - MagneticStringPriors
+  - MagnetosphereExtendedPriors
   - MagnetospherePriors
   - MathGeneratorPriors
   - NeuronCohortPriors
@@ -406,6 +408,22 @@ tiers:
   - data/magnetosphere_manifest.yaml
   - scripts/magnetosphere_timeline.py
   - FSOT.Formal.MagnetospherePriors
+- tier: 25
+  name: Magnetosphere extended (historical Dst 120k+ hrs, RTSW Bz, G-scale holdout)
+  status: complete
+  metrics:
+    historical_coupled_hours: 120877
+    historical_coupled_match_rate: 0.9979317818939915
+    storm_holdout_hours: 77188
+    storm_holdout_match_rate: 0.996761154583614
+    quiet_baseline_match_rate: 1.0
+    solar_wind_bz_records: 1416
+    solar_wind_bz_match_rate: 0.9943502824858758
+  artifacts:
+  - data/kyoto_dst_manifest.yaml
+  - data/magnetosphere_extended_manifest.yaml
+  - data/solar_wind_rtsw_manifest.yaml
+  - FSOT.Formal.MagnetosphereExtendedPriors
 next_steps:
 - Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class
 - "Multi-hero held-out: certify 3\u20135 specimens per Sst/PV/VIP/L2/3"

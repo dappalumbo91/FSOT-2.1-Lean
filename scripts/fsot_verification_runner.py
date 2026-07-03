@@ -194,6 +194,7 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.GraceCryospherePriors",
                 "FSOT.Formal.SeismologyDeepPriors",
                 "FSOT.Formal.PlanetaryAtmospheresPriors",
+                "FSOT.Formal.MagnetosphereExtendedPriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -748,6 +749,9 @@ def main() -> int:
             "build_seismology_deep_benchmark.py",
             "ingest_planetary_atmospheres_jpl.py",
             "build_planetary_atmospheres_benchmark.py",
+            "ingest_kyoto_dst_historical.py",
+            "ingest_solar_wind_rtsw.py",
+            "build_magnetosphere_extended_benchmark.py",
             "build_plasma_physics_benchmark.py",
             "build_immunology_benchmark.py",
             "ingest_climate_ncei_chunked.py",
@@ -830,6 +834,7 @@ def main() -> int:
             ("ingest_grace_greenland.py", "gen_grace_cryosphere_lean.py", "GraceCryospherePriors.lean generation failed", "GRACE Greenland ingest failed"),
             ("ingest_seismology_deep_usgs.py", "gen_seismology_deep_lean.py", "SeismologyDeepPriors.lean generation failed", "seismology deep USGS ingest failed"),
             ("ingest_planetary_atmospheres_jpl.py", "gen_planetary_atmospheres_lean.py", "PlanetaryAtmospheresPriors.lean generation failed", "planetary atmospheres JPL ingest failed"),
+            ("ingest_kyoto_dst_historical.py", "gen_magnetosphere_extended_lean.py", "MagnetosphereExtendedPriors.lean generation failed", "Kyoto Dst historical ingest failed"),
         ]
         for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
             if ingest_name:

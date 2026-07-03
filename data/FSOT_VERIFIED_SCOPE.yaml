@@ -1,4 +1,4 @@
-generated_at: '2026-07-03T16:50:06.841312+00:00'
+generated_at: '2026-07-03T17:34:46.135833+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,14 +6,14 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 74
+  lean_formal_modules: 75
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: false
-  tiers_complete: 22
-  tiers_total: 22
+  tiers_complete: 23
+  tiers_total: 23
   percent_complete: 100.0
-current_tier: Tier 24 Magnetosphere timeline resolution (hourly Kp + channel decomposition)
+current_tier: Tier 25 Magnetosphere extended (historical Dst, RTSW Bz, G-scale holdout)
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -474,6 +474,7 @@ tier_coverage:
   - LinguisticsPriors
   - MagicCirclePriors
   - MagneticStringPriors
+  - MagnetosphereExtendedPriors
   - MagnetospherePriors
   - MathGeneratorPriors
   - NeuronCohortPriors
@@ -821,6 +822,22 @@ tier_coverage:
   - data/magnetosphere_manifest.yaml
   - scripts/magnetosphere_timeline.py
   - FSOT.Formal.MagnetospherePriors
+- tier: 25
+  name: Magnetosphere extended (historical Dst 120k+ hrs, RTSW Bz, G-scale holdout)
+  status: complete
+  metrics:
+    historical_coupled_hours: 120877
+    historical_coupled_match_rate: 0.9979317818939915
+    storm_holdout_hours: 77188
+    storm_holdout_match_rate: 0.996761154583614
+    quiet_baseline_match_rate: 1.0
+    solar_wind_bz_records: 1416
+    solar_wind_bz_match_rate: 0.9943502824858758
+  artifacts:
+  - data/kyoto_dst_manifest.yaml
+  - data/magnetosphere_extended_manifest.yaml
+  - data/solar_wind_rtsw_manifest.yaml
+  - FSOT.Formal.MagnetosphereExtendedPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -930,6 +947,10 @@ extension_domains:
   tier: 23
   record_count: 6
   lean_module: FSOT.Formal.PlanetaryAtmospheresPriors
+- domain: Magnetosphere_Extended
+  tier: 25
+  record_count: 122293
+  lean_module: FSOT.Formal.MagnetosphereExtendedPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1101,6 +1122,23 @@ theory_crosswalk:
     lean_modules:
     - FSOT.Formal.PlanetaryAtmospheresPriors
     - FSOT.Formal.PlanetaryStructurePriors
+  Magnetosphere_Extended:
+    tier: 25
+    D_eff: 14
+    maps_to_lean:
+    - electron
+    - fusion
+    - plasma
+    labs:
+    - magnetosphere_lab
+    - solar_wind_bz_lab
+    - geomagnetism_lab
+    - space_weather_lab
+    lean_modules:
+    - FSOT.Formal.MagnetosphereExtendedPriors
+    - FSOT.Formal.MagnetospherePriors
+    - FSOT.Formal.GeomagnetismPriors
+    - FSOT.Formal.SpaceWeatherPriors
 lean_formal_modules:
 - AetherPrimePriors
 - BiologyStrictEmpiricalPriors
@@ -1139,6 +1177,7 @@ lean_formal_modules:
 - LinguisticsPriors
 - MagicCirclePriors
 - MagneticStringPriors
+- MagnetosphereExtendedPriors
 - MagnetospherePriors
 - MathGeneratorPriors
 - NeuronCohortPriors

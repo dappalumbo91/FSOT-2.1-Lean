@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import bisect
 from datetime import datetime
 from typing import Iterable
 
@@ -37,21 +38,26 @@ def kp_interpolated_1h(
     dst_tag: str,
     kp_by_tag: dict[str, float],
     kp_series: list[tuple[datetime, float]],
+    *,
+    kp_times: list[datetime] | None = None,
 ) -> float:
     if dst_tag in kp_by_tag:
         return kp_by_tag[dst_tag]
+    if not kp_series:
+        return kp_slot_3h(dst_tag, kp_by_tag)
     target = parse_time_tag(dst_tag)
-    for idx, (ts, kp) in enumerate(kp_series):
-        if ts == target:
-            return kp
-        if ts > target and idx > 0:
-            t0, k0 = kp_series[idx - 1]
-            t1, k1 = ts, kp
-            span = (t1 - t0).total_seconds()
-            if span <= 0:
-                return k0
-            frac = (target - t0).total_seconds() / span
-            return k0 + (k1 - k0) * frac
+    times = kp_times or [ts for ts, _ in kp_series]
+    idx = bisect.bisect_right(times, target)
+    if idx < len(kp_series) and kp_series[idx][0] == target:
+        return kp_series[idx][1]
+    if idx > 0 and idx < len(kp_series):
+        t0, k0 = kp_series[idx - 1]
+        t1, k1 = kp_series[idx]
+        span = (t1 - t0).total_seconds()
+        if span <= 0:
+            return k0
+        frac = (target - t0).total_seconds() / span
+        return k0 + (k1 - k0) * frac
     return kp_slot_3h(dst_tag, kp_by_tag)
 
 

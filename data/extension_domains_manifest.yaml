@@ -257,6 +257,20 @@ extension_domains:
     lean_module: FSOT.Formal.PlanetaryAtmospheresPriors
     note: "Mars/Venus JPL Horizons pressure/temperature + Titan NASA fact-sheet reference"
 
+  Magnetosphere_Extended:
+    tier: 25
+    D_eff: 14
+    delta_psi: 0.75
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [electron, fusion, plasma]
+    ingest_script: scripts/ingest_kyoto_dst_historical.py
+    build_script: scripts/build_magnetosphere_extended_benchmark.py
+    manifest: data/magnetosphere_extended_manifest.yaml
+    benchmark_data: data/magnetosphere_extended_benchmark.json
+    lean_module: FSOT.Formal.MagnetosphereExtendedPriors
+    note: "Kyoto Dst 1998-2012 (120k+ hrs) + RTSW 1-min Bz + G-scale storm holdout"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

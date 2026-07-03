@@ -35,6 +35,7 @@ DEDICATED_GENERATORS = {
     "Grace_Cryosphere",
     "Seismology_Deep",
     "Planetary_Atmospheres",
+    "Magnetosphere_Extended",
 }
 
 LEAN_SIGN = {
@@ -57,6 +58,7 @@ LEAN_SIGN = {
     "Grace_Cryosphere": ("galactic", "galactic_raw_S_positive"),
     "Seismology_Deep": ("energy", "energy_raw_S_positive"),
     "Planetary_Atmospheres": ("galactic", "galactic_raw_S_positive"),
+    "Magnetosphere_Extended": ("electron", "electron_raw_S_positive"),
 }
 
 

@@ -1,0 +1,33 @@
+# Tier 25 — Historical Dst×Kp coupling, sub-hourly Bz, G-scale storm holdout.
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  kyoto_dst_cache: data/kyoto_dst_historical_cache.json
+  kp_cache: data/space_weather_cache/kp_index.json
+  solar_wind_cache: data/solar_wind_rtsw_cache.json
+  dst_storm_threshold: -30.0
+  kp_storm_threshold: 5.0
+  kp_primary_resolution: interpolated_1h
+  kp_scalar_multiplier: 0.35
+  bz_southward_threshold_nt: -5.0
+  bz_scalar_multiplier: 2.0
+  magnetic_S_em: 0.5188655207983146
+
+build:
+  benchmark: scripts/build_magnetosphere_extended_benchmark.py
+  output: data/magnetosphere_extended_benchmark.json
+
+lean:
+  generator: scripts/gen_magnetosphere_extended_lean.py
+  module: FSOT.Formal.MagnetosphereExtendedPriors
+  lean_domain: electron
+  sign_theorem: electron_raw_S_positive
+
+verification:
+  min_historical_hours: 10000
+  min_historical_match_rate: 0.95
+  min_storm_holdout_hours: 50
+  min_storm_holdout_match_rate: 0.5
+  min_bz_records: 100
+  min_bz_match_rate: 0.5

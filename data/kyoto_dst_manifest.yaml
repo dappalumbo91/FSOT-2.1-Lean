@@ -1,0 +1,17 @@
+# Tier 25 — NOAA/WDC Kyoto hourly Dst archive (1998–2012) for magnetosphere coupling.
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  name: NOAA_NGDC_Kyoto_Dst
+  base_url: https://www.ngdc.noaa.gov/stp/space-weather/geomagnetic-data/INDICES/DST/
+  year_start: 1998
+  year_end: 2012
+  rolling_dst_url: https://services.swpc.noaa.gov/products/kyoto-dst.json
+
+build:
+  ingest: scripts/ingest_kyoto_dst_historical.py
+  output_cache: data/kyoto_dst_historical_cache.json
+
+verification:
+  min_hour_count: 10000

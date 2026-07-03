@@ -67,6 +67,7 @@ def build_progress() -> dict:
     grace_cryosphere_bench = _load_json(ROOT / "data" / "grace_cryosphere_benchmark.json")
     seismology_deep_bench = _load_json(ROOT / "data" / "seismology_deep_benchmark.json")
     planetary_atmospheres_bench = _load_json(ROOT / "data" / "planetary_atmospheres_benchmark.json")
+    magnetosphere_ext_bench = _load_json(ROOT / "data" / "magnetosphere_extended_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -566,6 +567,42 @@ def build_progress() -> dict:
                 "FSOT.Formal.MagnetospherePriors",
             ],
         },
+        {
+            "tier": 25,
+            "name": "Magnetosphere extended (historical Dst 120k+ hrs, RTSW Bz, G-scale holdout)",
+            "status": "complete"
+            if (magnetosphere_ext_bench.get("historical_coupled") or {}).get("observable_count", 0) >= 10000
+            and (magnetosphere_ext_bench.get("historical_coupled") or {}).get("stability_match_rate", 0) >= 0.95
+            and (magnetosphere_ext_bench.get("storm_holdout") or {}).get("observable_count", 0) >= 50
+            and (magnetosphere_ext_bench.get("storm_holdout") or {}).get("stability_match_rate", 0) >= 0.5
+            and (magnetosphere_ext_bench.get("solar_wind_bz") or {}).get("observable_count", 0) >= 100
+            else "pending",
+            "metrics": {
+                "historical_coupled_hours": (magnetosphere_ext_bench.get("historical_coupled") or {}).get(
+                    "observable_count"
+                ),
+                "historical_coupled_match_rate": (magnetosphere_ext_bench.get("historical_coupled") or {}).get(
+                    "stability_match_rate"
+                ),
+                "storm_holdout_hours": (magnetosphere_ext_bench.get("storm_holdout") or {}).get("observable_count"),
+                "storm_holdout_match_rate": (magnetosphere_ext_bench.get("storm_holdout") or {}).get(
+                    "stability_match_rate"
+                ),
+                "quiet_baseline_match_rate": (magnetosphere_ext_bench.get("storm_holdout") or {}).get(
+                    "quiet_baseline_match_rate"
+                ),
+                "solar_wind_bz_records": (magnetosphere_ext_bench.get("solar_wind_bz") or {}).get("observable_count"),
+                "solar_wind_bz_match_rate": (magnetosphere_ext_bench.get("solar_wind_bz") or {}).get(
+                    "stability_match_rate"
+                ),
+            },
+            "artifacts": [
+                "data/kyoto_dst_manifest.yaml",
+                "data/magnetosphere_extended_manifest.yaml",
+                "data/solar_wind_rtsw_manifest.yaml",
+                "FSOT.Formal.MagnetosphereExtendedPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -592,7 +629,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 24 Magnetosphere timeline resolution (hourly Kp + channel decomposition)",
+        "current_position": "Tier 25 Magnetosphere extended (historical Dst, RTSW Bz, G-scale holdout)",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

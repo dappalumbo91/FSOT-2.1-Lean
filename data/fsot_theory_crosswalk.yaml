@@ -118,6 +118,13 @@ verified_extension_domains:
     labs: [planetary_atmospheres_lab, planetary_structure_lab]
     lean_modules: [FSOT.Formal.PlanetaryAtmospheresPriors, FSOT.Formal.PlanetaryStructurePriors]
 
+  Magnetosphere_Extended:
+    tier: 25
+    D_eff: 14
+    maps_to_lean: [electron, fusion, plasma]
+    labs: [magnetosphere_lab, solar_wind_bz_lab, geomagnetism_lab, space_weather_lab]
+    lean_modules: [FSOT.Formal.MagnetosphereExtendedPriors, FSOT.Formal.MagnetospherePriors, FSOT.Formal.GeomagnetismPriors, FSOT.Formal.SpaceWeatherPriors]
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json
