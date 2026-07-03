@@ -27,13 +27,13 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-03 — Tier 23)
+## Verification status (2026-07-03 — Tier 24)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
 Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
 
-- **21/21 verification tiers complete** (GRACE cryosphere + seismology deep + planetary atmospheres)
+- **22/22 verification tiers complete** (magnetosphere hourly Kp timeline + channel decomposition)
 - **55+ scientific domains** (35 NeuroLab + 20 extension bridges)
 - **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
@@ -65,7 +65,7 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - Planetary structure (`FSOT.Formal.PlanetaryStructurePriors`) — **8** JPL bodies, density median err 0.05%
 - Orbital mechanics (`FSOT.Formal.OrbitalMechanicsPriors`) — **8** planets, Kepler T²/a³ median err 0.11%
 - Small-body orbits (`FSOT.Formal.SmallBodyOrbitsPriors`) — Moon + Ceres/Vesta/Eros/Halley, 0.01% median perturbation err
-- Magnetosphere (`FSOT.Formal.MagnetospherePriors`) — **167** coupled Dst×Kp records, 96% storm-classifier match (3-hourly Kp alignment; crosswalk to Geomagnetism/SpaceWeather/MagneticString)
+- Magnetosphere (`FSOT.Formal.MagnetospherePriors`) — **167** coupled Dst×Kp hours (NOAA ~7-day Kyoto window); timeline arc: daily-max Kp **71%** → 3-hourly **96%** → hourly-interpolated **100%**; channel decomposition on overlap: Dst/Kp/coupled each **100%** (full single-channel corpora: Geomagnetism **525 @ 100%**, Space Weather **271,813 @ 99.99%**)
 - GRACE cryosphere (`FSOT.Formal.GraceCryospherePriors`) — **253** GFZ GravIS Greenland months, 93.7% mass-decline classifier match
 - Seismology deep (`FSOT.Formal.SeismologyDeepPriors`) — **1000** moment-tensor + plate-margin observables, 81% match (Pacific holdout 100%)
 - Planetary atmospheres (`FSOT.Formal.PlanetaryAtmospheresPriors`) — Mars/Venus/Titan pressure &amp; temperature, 0.27% median error

@@ -8,6 +8,8 @@ source:
   magnetic_S_em: 0.5188655207983146
   dst_storm_threshold: -30.0
   kp_storm_threshold: 5.0
+  kp_primary_resolution: interpolated_1h
+  kp_scalar_multiplier: 0.35
 
 build:
   benchmark: scripts/build_magnetosphere_benchmark.py

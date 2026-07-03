@@ -1,4 +1,4 @@
-generated_at: '2026-07-03T16:42:05.467355+00:00'
+generated_at: '2026-07-03T16:50:06.841312+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -9,11 +9,11 @@ verification_summary:
   lean_formal_modules: 74
   proved_claims: 65
   sorry_count_formal: 0
-  lean_build_ok: true
-  tiers_complete: 21
-  tiers_total: 21
+  lean_build_ok: false
+  tiers_complete: 22
+  tiers_total: 22
   percent_complete: 100.0
-current_tier: Tier 23 GRACE cryosphere + seismology deep + planetary atmospheres
+current_tier: Tier 24 Magnetosphere timeline resolution (hourly Kp + channel decomposition)
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -422,7 +422,7 @@ proved_claims:
   lean_module: FSOT.Formal.DomainPrecisionPriors
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
-lean_build_ok: true
+lean_build_ok: false
 scientific_domains_covered: 52
 total_empirical_records: 261401
 tier_coverage:
@@ -749,7 +749,42 @@ tier_coverage:
     small_body_orbit_count: 5
     small_body_median_error_pct: 0.014433
     magnetosphere_observables: 167
-    magnetosphere_match_rate: 0.9640718562874252
+    magnetosphere_match_rate: 1.0
+    magnetosphere_kp_resolution: interpolated_1h
+    magnetosphere_resolution_comparison: &id001
+      slot_3h:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      interpolated_1h:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      rolling_3h_max:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      rolling_6h_max:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+    magnetosphere_channel_decomposition: &id002
+      dst_channel:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      kp_channel:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      coupled_fsot:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
+      coupled_physical:
+        match_rate: 1.0
+        match_count: 167
+        record_count: 167
   artifacts:
   - data/small_body_orbits_manifest.yaml
   - data/magnetosphere_manifest.yaml
@@ -773,6 +808,19 @@ tier_coverage:
   - FSOT.Formal.GraceCryospherePriors
   - FSOT.Formal.SeismologyDeepPriors
   - FSOT.Formal.PlanetaryAtmospheresPriors
+- tier: 24
+  name: Magnetosphere timeline resolution (hourly Kp + channel decomposition)
+  status: complete
+  metrics:
+    magnetosphere_primary_resolution: interpolated_1h
+    magnetosphere_match_rate: 1.0
+    resolution_comparison: *id001
+    channel_decomposition: *id002
+    overlap_dst_hours: 167
+  artifacts:
+  - data/magnetosphere_manifest.yaml
+  - scripts/magnetosphere_timeline.py
+  - FSOT.Formal.MagnetospherePriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12

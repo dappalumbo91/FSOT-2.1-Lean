@@ -501,6 +501,9 @@ def build_progress() -> dict:
                 "small_body_median_error_pct": small_body_bench.get("median_error_pct"),
                 "magnetosphere_observables": magnetosphere_bench.get("observable_count"),
                 "magnetosphere_match_rate": magnetosphere_bench.get("stability_match_rate"),
+                "magnetosphere_kp_resolution": magnetosphere_bench.get("kp_primary_resolution"),
+                "magnetosphere_resolution_comparison": magnetosphere_bench.get("resolution_comparison"),
+                "magnetosphere_channel_decomposition": magnetosphere_bench.get("channel_decomposition"),
             },
             "artifacts": [
                 "data/small_body_orbits_manifest.yaml",
@@ -538,6 +541,31 @@ def build_progress() -> dict:
                 "FSOT.Formal.PlanetaryAtmospheresPriors",
             ],
         },
+        {
+            "tier": 24,
+            "name": "Magnetosphere timeline resolution (hourly Kp + channel decomposition)",
+            "status": "complete"
+            if magnetosphere_bench.get("benchmark_version") == "1.1"
+            and magnetosphere_bench.get("kp_primary_resolution") == "interpolated_1h"
+            and magnetosphere_bench.get("stability_match_rate", 0) >= 0.98
+            and magnetosphere_bench.get("channel_decomposition", {}).get("coupled_physical", {}).get(
+                "match_rate", 0
+            )
+            >= 0.99
+            else "pending",
+            "metrics": {
+                "magnetosphere_primary_resolution": magnetosphere_bench.get("kp_primary_resolution"),
+                "magnetosphere_match_rate": magnetosphere_bench.get("stability_match_rate"),
+                "resolution_comparison": magnetosphere_bench.get("resolution_comparison"),
+                "channel_decomposition": magnetosphere_bench.get("channel_decomposition"),
+                "overlap_dst_hours": (magnetosphere_bench.get("overlap_window") or {}).get("dst_hour_count"),
+            },
+            "artifacts": [
+                "data/magnetosphere_manifest.yaml",
+                "scripts/magnetosphere_timeline.py",
+                "FSOT.Formal.MagnetospherePriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -564,7 +592,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 23 GRACE cryosphere + seismology deep + planetary atmospheres",
+        "current_position": "Tier 24 Magnetosphere timeline resolution (hourly Kp + channel decomposition)",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {
