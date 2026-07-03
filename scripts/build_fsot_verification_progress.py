@@ -49,6 +49,8 @@ def build_progress() -> dict:
     thesis_bench = _load_json(ROOT / "data" / "thesis_simulation_benchmark.json")
     emergent_bench = _load_json(ROOT / "data" / "emergent_domains_benchmark.json")
     mg_rules_bench = _load_json(ROOT / "data" / "math_generator_rules_benchmark.json")
+    cosmo_ext_bench = _load_json(ROOT / "data" / "cosmology_extended_benchmark.json")
+    particle_bench = _load_json(ROOT / "data" / "particle_physics_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -274,6 +276,33 @@ def build_progress() -> dict:
                 "FSOT.Formal.MathGeneratorPriors",
             ],
         },
+        {
+            "tier": 16,
+            "name": "Wave B cosmology + particle physics extended domains",
+            "status": "complete"
+            if cosmo_ext_bench.get("observable_count", 0) >= 50
+            and cosmo_ext_bench.get("skeleton_derivation_count", 0) >= 20
+            and particle_bench.get("observable_count", 0) >= 70
+            and particle_bench.get("wave4_count", 0) >= 16
+            and _median_error(particle_bench, "median_error_pct", default=99.0) <= 5.0
+            else "pending",
+            "metrics": {
+                "cosmology_skeleton_derivations": cosmo_ext_bench.get("skeleton_derivation_count"),
+                "cosmology_lambda_cdm_bundle": cosmo_ext_bench.get("lambda_cdm_count"),
+                "cosmology_extended_observables": cosmo_ext_bench.get("observable_count"),
+                "particle_smiles_records": particle_bench.get("smiles_particle_count"),
+                "particle_wave4_observables": particle_bench.get("wave4_count"),
+                "particle_math_physics_rules": particle_bench.get("math_physics_rule_count"),
+                "particle_extended_observables": particle_bench.get("observable_count"),
+                "particle_median_error_pct": _median_error(particle_bench, "median_error_pct", default=0.0),
+            },
+            "artifacts": [
+                "data/cosmology_extended_manifest.yaml",
+                "data/particle_physics_manifest.yaml",
+                "FSOT.Formal.CosmologyExtendedPriors",
+                "FSOT.Formal.ParticlePhysicsPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -300,7 +329,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 15 Wave A core theory grounding (thesis sim + emergent MC + math rules)",
+        "current_position": "Tier 16 Wave B cosmology + particle physics extended domains",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

@@ -169,6 +169,8 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.NeuronCohortTrainHoldoutPriors",
                 "FSOT.Formal.ThesisSimulationPriors",
                 "FSOT.Formal.EmergentDomainPriors",
+                "FSOT.Formal.CosmologyExtendedPriors",
+                "FSOT.Formal.ParticlePhysicsPriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -695,6 +697,8 @@ def main() -> int:
             "build_thesis_simulation_benchmark.py",
             "build_emergent_domains_benchmark.py",
             "build_math_generator_rules_benchmark.py",
+            "build_cosmology_extended_benchmark.py",
+            "build_particle_physics_benchmark.py",
             "build_plasma_physics_benchmark.py",
             "build_immunology_benchmark.py",
             "ingest_climate_ncei_chunked.py",
@@ -758,6 +762,8 @@ def main() -> int:
             ("ingest_thesis_simulation_lab.py", "gen_thesis_simulation_lean.py", "ThesisSimulationPriors.lean generation failed", "thesis simulation ingest failed"),
             ("ingest_emergent_domains_lab.py", "gen_emergent_domains_lean.py", "EmergentDomainPriors.lean generation failed", "emergent domains ingest failed"),
             ("ingest_math_generator_rules_lab.py", None, None, "math generator rules ingest failed"),
+            ("ingest_cosmology_extended_lab.py", "gen_cosmology_extended_lean.py", "CosmologyExtendedPriors.lean generation failed", "cosmology extended ingest failed"),
+            ("ingest_particle_physics_lab.py", "gen_particle_physics_lean.py", "ParticlePhysicsPriors.lean generation failed", "particle physics ingest failed"),
         ]
         for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
             ingest_script = ROOT / "scripts" / ingest_name

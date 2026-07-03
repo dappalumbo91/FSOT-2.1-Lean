@@ -1,16 +1,15 @@
-generated_at: '2026-07-01T19:01:55.034801+00:00'
+generated_at: '2026-07-03T15:20:52.195073+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 49
+  lean_formal_modules: 51
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 13
-  tiers_total: 13
+  tiers_complete: 14
+  tiers_total: 14
   percent_complete: 100.0
-current_position: Tier 15 Wave A core theory grounding (thesis sim + emergent MC +
-  math rules)
+current_position: Tier 16 Wave B cosmology + particle physics extended domains
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -31,6 +30,7 @@ tiers:
   - CellularPriors
   - ClimateSciencePriors
   - CodonPriors
+  - CosmologyExtendedPriors
   - CosmologyLab
   - DomainCoveragePriors
   - DomainPrecisionPriors
@@ -51,6 +51,7 @@ tiers:
   - NeuronCohortStrataPriors
   - NeuronCohortTrainHoldoutPriors
   - NeuronHybridPriors
+  - ParticlePhysicsPriors
   - PhotonicForge
   - PlasmaPhysicsPriors
   - ProteinPriors
@@ -134,7 +135,7 @@ tiers:
   metrics:
     plasma_records: 6
     immunology_records: 84
-    climate_months: 2519
+    climate_months: 9439
     biology_strict_records: 16
   artifacts:
   - FSOT.Formal.PlasmaPhysicsPriors
@@ -158,13 +159,13 @@ tiers:
   name: Climate scale cohort + neuron train/holdout + scientific domain map
   status: complete
   metrics:
-    climate_total_months: 2519
-    climate_holdout_months: 1080
+    climate_total_months: 9439
+    climate_holdout_months: 1920
     climate_holdout_median_err: 0.0
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 39
+    scientific_domains_covered: 41
     expansion_candidates: 10
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -190,6 +191,23 @@ tiers:
   - FSOT.Formal.ThesisSimulationPriors
   - FSOT.Formal.EmergentDomainPriors
   - FSOT.Formal.MathGeneratorPriors
+- tier: 16
+  name: Wave B cosmology + particle physics extended domains
+  status: complete
+  metrics:
+    cosmology_skeleton_derivations: 24
+    cosmology_lambda_cdm_bundle: 30
+    cosmology_extended_observables: 58
+    particle_smiles_records: 36
+    particle_wave4_observables: 16
+    particle_math_physics_rules: 25
+    particle_extended_observables: 98
+    particle_median_error_pct: 0.492528
+  artifacts:
+  - data/cosmology_extended_manifest.yaml
+  - data/particle_physics_manifest.yaml
+  - FSOT.Formal.CosmologyExtendedPriors
+  - FSOT.Formal.ParticlePhysicsPriors
 next_steps:
 - Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class
 - "Multi-hero held-out: certify 3\u20135 specimens per Sst/PV/VIP/L2/3"

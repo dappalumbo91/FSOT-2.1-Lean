@@ -1,0 +1,32 @@
+# Tier 16 Wave B — Particle physics extended (SMILES + waves + Wave-4 + math rules).
+version: "1.0"
+updated: "2026-07-01"
+
+source:
+  smiles_dataset: "C:/Users/damia/Desktop/FSOT SMILES Lab/FSOT_SMILES_Lab_Dataset.json"
+  section_domain_map: data/section_domain_map.json
+  thesis_root: "C:/Users/damia/Desktop/New folder"
+  thesis_particle_categories:
+    - Particle Physics
+    - Higgs Branching Ratios
+    - Mass Ratios
+    - Z Branching Ratios
+    - Nuclear Physics
+  math_physics_rules: "C:/Users/damia/Desktop/Math generator/MATHEMATICAL_PHYSICS_RULES.json"
+  cosmology_compute: "C:/Users/damia/Desktop/FSOT Cosmology Lab/fsot_compute.py"
+
+build:
+  script: scripts/build_particle_physics_benchmark.py
+  output: data/particle_physics_benchmark.json
+
+lean:
+  generator: scripts/gen_particle_physics_lean.py
+  module: FSOT.Formal.ParticlePhysicsPriors
+  lean_domain: particle
+  sign_theorem: particle_raw_S_positive
+
+verification:
+  min_smiles_particle_records: 30
+  min_wave4_observables: 16
+  min_total_observables: 70
+  max_median_error_pct: 5.0

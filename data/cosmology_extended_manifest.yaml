@@ -1,0 +1,25 @@
+# Tier 16 Wave B — Cosmology extended (Skeleton Key DB + ΛCDM + thesis waves).
+version: "1.0"
+updated: "2026-07-01"
+
+source:
+  cosmology_root: "C:/Users/damia/Desktop/FSOT Cosmology Lab"
+  skeleton_database: database/FSOT_Mathematical_Database_Unified.json
+  thesis_root: "C:/Users/damia/Desktop/New folder"
+  thesis_cosmology_categories:
+    - Cosmology
+
+build:
+  script: scripts/build_cosmology_extended_benchmark.py
+  output: data/cosmology_extended_benchmark.json
+
+lean:
+  generator: scripts/gen_cosmology_extended_lean.py
+  module: FSOT.Formal.CosmologyExtendedPriors
+  sign_theorem: omega_b_h2_fsot_cached_pos
+
+verification:
+  min_skeleton_derivations: 20
+  min_lambda_cdm_observables: 30
+  min_total_observables: 50
+  max_median_error_pct: 5.0

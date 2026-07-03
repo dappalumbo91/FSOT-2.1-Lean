@@ -1,8 +1,8 @@
-generated_at: '2026-07-01T18:31:39.039040+00:00'
+generated_at: '2026-07-03T15:20:52.049776+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 3
-  total_scientific_domains_covered: 39
+  extension_domains: 5
+  total_scientific_domains_covered: 41
   total_empirical_records: 261999
   domains_target_band_2pct: 35
   domains_sign_mismatch: 0
@@ -12,7 +12,7 @@ summary:
     C_thin: 9
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 47
+  lean_formal_modules: 51
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -388,10 +388,22 @@ extension_domains:
   lean_module: FSOT.Formal.ImmunologyPriors
 - domain: Climate_Science
   tier: 12
-  record_count: 2519
+  record_count: 9439
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.ClimateSciencePriors
+- domain: Cosmology_Extended
+  tier: 16
+  record_count: 58
+  median_error_pct: 0.022
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.CosmologyExtendedPriors
+- domain: Particle_Physics
+  tier: 16
+  record_count: 98
+  median_error_pct: 0.492528
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ParticlePhysicsPriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572
@@ -406,19 +418,32 @@ specialized_bridges:
     train:
       stations:
       - USC00053005
+      - USW00003928
+      - USW00012836
+      - USW00012918
       - USW00012960
+      - USW00013739
+      - USW00013743
+      - USW00013874
       - USW00013881
+      - USW00014819
       - USW00014922
-      station_count: 4
-      record_count: 1439
+      - USW00014933
+      - USW00014939
+      - USW00023174
+      - USW00023188
+      - USW00024057
+      station_count: 16
+      record_count: 7519
       median_error_pct: 0.0
     holdout:
       stations:
+      - USW00012839
       - USW00023169
       - USW00024233
       - USW00094728
-      station_count: 3
-      record_count: 1080
+      station_count: 4
+      record_count: 1920
       median_error_pct: 0.0
     holdout_median_error_max_pct: 5.0
     holdout_min_records: 200

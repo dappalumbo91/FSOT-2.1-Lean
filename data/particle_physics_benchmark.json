@@ -1,0 +1,777 @@
+{
+  "benchmark_version": "1.0",
+  "generated_at": "2026-07-03T15:20:08.739821+00:00",
+  "smiles_particle_count": 36,
+  "thesis_particle_wave_count": 21,
+  "wave4_count": 16,
+  "math_physics_rule_count": 25,
+  "observable_count": 98,
+  "median_error_pct": 0.492528,
+  "max_error_pct": 4.499825,
+  "within_two_pct_count": 39,
+  "within_five_pct_count": 52,
+  "wave4_max_error_pct": 0.23468225112121452,
+  "smiles_particle_records": [
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "electron",
+      "computed": 0.5126480529097499,
+      "measured": 0.511,
+      "error_pct": 0.322515
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "muon",
+      "computed": 104.79814713293308,
+      "measured": 105.658,
+      "error_pct": 0.813808
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "tau",
+      "computed": 1774.3897235273942,
+      "measured": 1776.86,
+      "error_pct": 0.139025
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "proton",
+      "computed": 941.3036566521167,
+      "measured": 938.272,
+      "error_pct": 0.323111
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "neutron",
+      "computed": 941.3036566521167,
+      "measured": 939.565,
+      "error_pct": 0.185049
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "pion_pm",
+      "computed": 138.54355470148724,
+      "measured": 139.57,
+      "error_pct": 0.735434
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "pion_0",
+      "computed": 138.54355470148724,
+      "measured": 134.977,
+      "error_pct": 2.642343
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "kaon_pm",
+      "computed": 500.8378845267376,
+      "measured": 493.677,
+      "error_pct": 1.45052
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "W_boson",
+      "computed": 81900.60751000454,
+      "measured": 80369.0,
+      "error_pct": 1.905719
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "Z_boson",
+      "computed": 90627.75424830623,
+      "measured": 91188.0,
+      "error_pct": 0.614385
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "Higgs",
+      "computed": 123457.14680952924,
+      "measured": 125200.0,
+      "error_pct": 1.392055
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a766 Particle Masses",
+      "name": "D_meson",
+      "computed": 1884.3248286132696,
+      "measured": 1869.66,
+      "error_pct": 0.784358
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "C",
+      "computed": 0.2667394492662459,
+      "measured": 0.277,
+      "error_pct": 3.70417
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "O",
+      "computed": 0.5126480529097499,
+      "measured": 0.525,
+      "error_pct": 2.352752
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "Na",
+      "computed": 1.046973630587551,
+      "measured": 1.041,
+      "error_pct": 0.573836
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "Mg",
+      "computed": 1.2941305780559662,
+      "measured": 1.254,
+      "error_pct": 3.200206
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "Al",
+      "computed": 1.4671952947482478,
+      "measured": 1.487,
+      "error_pct": 1.331856
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "Si",
+      "computed": 1.6668538450045731,
+      "measured": 1.74,
+      "error_pct": 4.203802
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "Cr",
+      "computed": 5.530198555555756,
+      "measured": 5.415,
+      "error_pct": 2.127397
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "Fe",
+      "computed": 6.431353896310089,
+      "measured": 6.404,
+      "error_pct": 0.427138
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "Cu",
+      "computed": 8.021176657759208,
+      "measured": 8.048,
+      "error_pct": 0.333292
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "Mo",
+      "computed": 17.367255094728623,
+      "measured": 17.479,
+      "error_pct": 0.639309
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "Ag",
+      "computed": 22.803818751646713,
+      "measured": 22.163,
+      "error_pct": 2.89139
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a778 X-ray K\u03b1 Energy",
+      "name": "W",
+      "computed": 61.98720613207489,
+      "measured": 59.318,
+      "error_pct": 4.499825
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "Li",
+      "computed": 54.598150033144236,
+      "measured": 54.7,
+      "error_pct": 0.186197
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "Be",
+      "computed": 107.27869543509179,
+      "measured": 111.5,
+      "error_pct": 3.785923
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "B",
+      "computed": 182.56102843646622,
+      "measured": 188.0,
+      "error_pct": 2.89307
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "C",
+      "computed": 285.93414786209377,
+      "measured": 284.6,
+      "error_pct": 0.46878
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "N",
+      "computed": 396.0397373938045,
+      "measured": 398.0,
+      "error_pct": 0.492528
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "O",
+      "computed": 521.0019193787255,
+      "measured": 532.0,
+      "error_pct": 2.067308
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "F",
+      "computed": 693.2043649357234,
+      "measured": 686.0,
+      "error_pct": 1.050199
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "Ne",
+      "computed": 863.980102541302,
+      "measured": 870.2,
+      "error_pct": 0.714766
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "Na",
+      "computed": 1076.5476215052709,
+      "measured": 1071.8,
+      "error_pct": 0.442958
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "Mg",
+      "computed": 1245.0463175310351,
+      "measured": 1303.0,
+      "error_pct": 4.447712
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "Al",
+      "computed": 1500.0619519211937,
+      "measured": 1559.6,
+      "error_pct": 3.81752
+    },
+    {
+      "source": "smiles_lab",
+      "section": "\u00a788 XPS 1s Binding E",
+      "name": "Si",
+      "computed": 1837.3461148495219,
+      "measured": 1839.0,
+      "error_pct": 0.089934
+    }
+  ],
+  "thesis_particle_waves": [
+    {
+      "source": "thesis_wave",
+      "wave": 7,
+      "id": "m_u_over_m_d",
+      "name": "m_u / m_d",
+      "category": "Mass Ratios",
+      "measured": "0.46",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 7,
+      "id": "m_s_over_m_d",
+      "name": "m_s / m_d",
+      "category": "Mass Ratios",
+      "measured": "19.66",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 7,
+      "id": "m_tau_over_m_mu",
+      "name": "m_tau / m_mu",
+      "category": "Mass Ratios",
+      "measured": "16.817029332426183289",
+      "sigma_percent": "0.1"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "V_ud",
+      "name": "|V_ud|",
+      "category": "Particle Physics",
+      "measured": "0.97373",
+      "sigma_percent": "0.2"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "V_cd",
+      "name": "|V_cd|",
+      "category": "Particle Physics",
+      "measured": "0.221",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "V_cs",
+      "name": "|V_cs|",
+      "category": "Particle Physics",
+      "measured": "0.975",
+      "sigma_percent": "0.1"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "delta_CP_PMNS",
+      "name": "delta_CP (PMNS)",
+      "category": "Particle Physics",
+      "measured": "3.87",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "m_t_over_m_b",
+      "name": "m_t / m_b",
+      "category": "Particle Physics",
+      "measured": "36.102510460251046",
+      "sigma_percent": "0.1"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_Z_ee",
+      "name": "BR(Z -> e+e-)",
+      "category": "Z Branching Ratios",
+      "measured": "0.03363",
+      "sigma_percent": "0.4"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_Z_had",
+      "name": "BR(Z -> had)",
+      "category": "Z Branching Ratios",
+      "measured": "0.69911",
+      "sigma_percent": "0.1"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_Z_inv",
+      "name": "BR(Z -> inv)",
+      "category": "Z Branching Ratios",
+      "measured": "0.2",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_ZZ",
+      "name": "BR(H -> ZZ)",
+      "category": "Higgs Branching Ratios",
+      "measured": "0.0262",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_gg",
+      "name": "BR(H -> gg)",
+      "category": "Higgs Branching Ratios",
+      "measured": "0.0818",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_cc",
+      "name": "BR(H -> c cbar)",
+      "category": "Higgs Branching Ratios",
+      "measured": "0.0288",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_gammagamma",
+      "name": "BR(H -> gamma gamma)",
+      "category": "Higgs Branching Ratios",
+      "measured": "0.00227",
+      "sigma_percent": "0.1"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "BR_H_Zgamma",
+      "name": "BR(H -> Z gamma)",
+      "category": "Higgs Branching Ratios",
+      "measured": "0.00154",
+      "sigma_percent": "0.1"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "He4_binding_MeV",
+      "name": "He-4 binding",
+      "category": "Nuclear Physics",
+      "measured": "28.295674",
+      "sigma_percent": "0.5"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "Triton_binding_MeV",
+      "name": "Triton binding",
+      "category": "Nuclear Physics",
+      "measured": "8.481798",
+      "sigma_percent": "0.1"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 8,
+      "id": "Deuteron_mu_muN",
+      "name": "Deuteron mu",
+      "category": "Nuclear Physics",
+      "measured": "0.8574382338",
+      "sigma_percent": "0.0"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 10,
+      "id": "m_mu_over_m_e",
+      "name": "m_mu / m_e",
+      "category": "Particle Physics",
+      "measured": "206.7682827",
+      "sigma_percent": "0.1"
+    },
+    {
+      "source": "thesis_wave",
+      "wave": 10,
+      "id": "electron_g_minus_2_over_2",
+      "name": "(g-2)/2 (electron)",
+      "category": "Particle Physics",
+      "measured": "0.00115965218128",
+      "sigma_percent": "0.1"
+    }
+  ],
+  "wave4_observables": [
+    {
+      "wave": "wave4",
+      "name": "sin2_theta12",
+      "formula": "2\u00b7Poof",
+      "computed": 0.3069644297889016,
+      "measured": 0.307,
+      "error_pct": 0.011586387979935279
+    },
+    {
+      "wave": "wave4",
+      "name": "sin2_theta23",
+      "formula": "|Chaos|\u00b7\u221ae",
+      "computed": 0.5457666109860249,
+      "measured": 0.546,
+      "error_pct": 0.04274524065479535
+    },
+    {
+      "wave": "wave4",
+      "name": "sin2_theta13",
+      "formula": "\u03b3\u2076\u00b7\u03c6/e",
+      "computed": 0.02201515822114412,
+      "measured": 0.022,
+      "error_pct": 0.06890100520055274
+    },
+    {
+      "wave": "wave4",
+      "name": "Dm2_21/Dm2_32",
+      "formula": "\u03b3\u00b3\u00b7Poof",
+      "computed": 0.02951701148028642,
+      "measured": 0.0295,
+      "error_pct": 0.05766603486922898
+    },
+    {
+      "wave": "wave4",
+      "name": "|V_ub|",
+      "formula": "C_cosm\u00b2",
+      "computed": 0.0038196601125010513,
+      "measured": 0.00382,
+      "error_pct": 0.008897578506510621
+    },
+    {
+      "wave": "wave4",
+      "name": "|V_td|",
+      "formula": "\u221a\u03c6/e\u2075",
+      "computed": 0.00857080098022107,
+      "measured": 0.00857,
+      "error_pct": 0.009346326966974296
+    },
+    {
+      "wave": "wave4",
+      "name": "|V_ts|",
+      "formula": "\u03b3\u2075\u00b7\u03c8_con",
+      "computed": 0.04050330471508225,
+      "measured": 0.0405,
+      "error_pct": 0.008159790326533337
+    },
+    {
+      "wave": "wave4",
+      "name": "Jarlskog_J",
+      "formula": "G/(\u03c0\u2079)",
+      "computed": 3.072771786665467e-05,
+      "measured": 3.08e-05,
+      "error_pct": 0.23468225112121452
+    },
+    {
+      "wave": "wave4",
+      "name": "Feigenbaum_delta",
+      "formula": "ln(\u03c0)\u00b7(e/G) + \u221a\u03c6",
+      "computed": 4.669197957279608,
+      "measured": 4.6692,
+      "error_pct": 4.3748830462353164e-05
+    },
+    {
+      "wave": "wave4",
+      "name": "Feigenbaum_alpha",
+      "formula": "|Chaos|\u00b7\u03c6\u00b7e + A_bleed",
+      "computed": 2.5029081532028084,
+      "measured": 2.50291,
+      "error_pct": 7.378600075983818e-05
+    },
+    {
+      "wave": "wave4",
+      "name": "r_p_fm",
+      "formula": "G\u2077 + P_new",
+      "computed": 0.8412485409697683,
+      "measured": 0.8414,
+      "error_pct": 0.018000835539782083
+    },
+    {
+      "wave": "wave4",
+      "name": "m_n-m_p_MeV",
+      "formula": "\u03b3\u2074/|Chaos| + P_var",
+      "computed": 1.2933328005542002,
+      "measured": 1.29333,
+      "error_pct": 0.00021653825397228277
+    },
+    {
+      "wave": "wave4",
+      "name": "mu_p_muN",
+      "formula": "\u03c0\u00b7(1 \u2212 \u03b3\u2074)",
+      "computed": 2.792852216264115,
+      "measured": 2.79285,
+      "error_pct": 7.935492829532375e-05
+    },
+    {
+      "wave": "wave4",
+      "name": "w0",
+      "formula": "\u2212P_new\u00b7\u03c0/G",
+      "computed": -1.0299812921372637,
+      "measured": -1.03,
+      "error_pct": 0.0018162973530366992
+    },
+    {
+      "wave": "wave4",
+      "name": "m_c/m_b",
+      "formula": "C_cosm/P_base",
+      "computed": 0.2910507567869785,
+      "measured": 0.291,
+      "error_pct": 0.017442194837980426
+    },
+    {
+      "wave": "wave4",
+      "name": "alpha_s_ratio",
+      "formula": "\u03c0\u2076\u00b7\u03b3\u2078",
+      "computed": 11.846883192361886,
+      "measured": 11.85,
+      "error_pct": 0.026302174161292595
+    }
+  ],
+  "math_physics_rules": [
+    {
+      "source": "math_physics_rules",
+      "id": "MP-001",
+      "name": "Newton second law rule",
+      "category": "classical mechanics"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-010",
+      "name": "Heat equation seed",
+      "category": "continuum physics"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-020",
+      "name": "Wave equation seed",
+      "category": "continuum physics"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-030",
+      "name": "Schrodinger equation seed",
+      "category": "quantum theory"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-040",
+      "name": "Einstein field equation seed",
+      "category": "relativity"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-050",
+      "name": "Action principle seed",
+      "category": "variational mechanics"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-051",
+      "name": "Euler-Lagrange equation seed",
+      "category": "variational mechanics"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-060",
+      "name": "Maxwell equation structural seed",
+      "category": "classical fields"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-061",
+      "name": "Noether symmetry-conservation seed",
+      "category": "symmetry principles"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-070",
+      "name": "Partition function seed",
+      "category": "statistical mechanics"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-071",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-072",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-073",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-074",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-075",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-076",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-077",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-078",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-079",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-080",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-081",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-082",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-083",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-084",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation"
+    },
+    {
+      "source": "math_physics_rules",
+      "id": "MP-085",
+      "name": "Counterexample mining expansion",
+      "category": "auto_expansion_validation"
+    }
+  ]
+}

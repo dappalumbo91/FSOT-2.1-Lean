@@ -98,7 +98,12 @@ def build_map() -> dict:
     for name, cfg in (extension.get("extension_domains") or {}).items():
         bench_path = ROOT / cfg["benchmark_data"]
         bench = _load(bench_path)
-        n = int(bench.get("record_count") or bench.get("month_count") or 0)
+        n = int(
+            bench.get("record_count")
+            or bench.get("month_count")
+            or bench.get("observable_count")
+            or 0
+        )
         med = bench.get("median_error_pct")
         extensions.append(
             {

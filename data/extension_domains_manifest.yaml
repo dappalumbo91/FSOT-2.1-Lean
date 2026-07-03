@@ -40,6 +40,28 @@ extension_domains:
     lean_module: FSOT.Formal.ClimateSciencePriors
     note: "Chunked NOAA NCEI GHCND by-year streaming; Open-Meteo fallback if cache empty"
 
+  Cosmology_Extended:
+    tier: 16
+    D_eff: 25
+    delta_psi: 0.92
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, astronomical]
+    build_script: scripts/build_cosmology_extended_benchmark.py
+    benchmark_data: data/cosmology_extended_benchmark.json
+    lean_module: FSOT.Formal.CosmologyExtendedPriors
+
+  Particle_Physics:
+    tier: 16
+    D_eff: 18
+    delta_psi: 0.88
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, higgs, nuclear]
+    build_script: scripts/build_particle_physics_benchmark.py
+    benchmark_data: data/particle_physics_benchmark.json
+    lean_module: FSOT.Formal.ParticlePhysicsPriors
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0
