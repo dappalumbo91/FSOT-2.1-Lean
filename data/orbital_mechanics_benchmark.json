@@ -1,0 +1,100 @@
+{
+  "benchmark_version": "1.0",
+  "generated_at": "2026-07-03T16:21:51.699869+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "source": "JPL_Horizons_kepler",
+  "record_count": 8,
+  "observable_count": 8,
+  "median_error_pct": 0.106141,
+  "D_eff": 18,
+  "records": [
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Mercury",
+      "semi_major_au": 0.387,
+      "period_years": 0.240843,
+      "computed": 1.00077,
+      "measured": 1.0,
+      "error_pct": 0.07699,
+      "within_tol": true
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Venus",
+      "semi_major_au": 0.723,
+      "period_years": 0.615187,
+      "computed": 1.001382,
+      "measured": 1.0,
+      "error_pct": 0.138164,
+      "within_tol": true
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Earth",
+      "semi_major_au": 1.0,
+      "period_years": 1.000017,
+      "computed": 1.000035,
+      "measured": 1.0,
+      "error_pct": 0.00348,
+      "within_tol": true
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Mars",
+      "semi_major_au": 1.524,
+      "period_years": 1.880818,
+      "computed": 0.999398,
+      "measured": 1.0,
+      "error_pct": 0.060179,
+      "within_tol": true
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Jupiter",
+      "semi_major_au": 5.203,
+      "period_years": 11.861787,
+      "computed": 0.998939,
+      "measured": 1.0,
+      "error_pct": 0.106141,
+      "within_tol": true
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Saturn",
+      "semi_major_au": 9.537,
+      "period_years": 29.447013,
+      "computed": 0.999648,
+      "measured": 1.0,
+      "error_pct": 0.035193,
+      "within_tol": true
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Uranus",
+      "semi_major_au": 19.191,
+      "period_years": 84.010666,
+      "computed": 0.998564,
+      "measured": 1.0,
+      "error_pct": 0.143568,
+      "within_tol": true
+    },
+    {
+      "lab": "orbital_mechanics_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Neptune",
+      "semi_major_au": 30.069,
+      "period_years": 164.785794,
+      "computed": 0.998809,
+      "measured": 1.0,
+      "error_pct": 0.119069,
+      "within_tol": true
+    }
+  ]
+}

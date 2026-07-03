@@ -48,8 +48,8 @@ empirical_sources:
     labs: [smiles_lab]
     lean_domain: material
   Electromagnetism:
-    labs: [smiles_lab]
-    lean_domain: material
+    labs: [smiles_lab, geomagnetism_lab, magnetic_string, space_weather_lab]
+    lean_domain: electron
   Acoustics:
     labs: [smiles_lab]
     lean_domain: material
@@ -94,7 +94,7 @@ empirical_sources:
     labs: [cosmology_wave4, cosmology_extended_lab, cosmology_higher_waves_lab]
     lean_domain: astronomical
   Planetary_Science:
-    labs: [cosmology_wave4, cosmology_extended_lab]
+    labs: [planetary_structure_lab, orbital_mechanics_lab, cosmology_wave4, cosmology_extended_lab]
     lean_domain: galactic
   Particle_Astrophysics:
     labs: [cosmology_wave4, cosmology_extended_lab, cosmology_higher_waves_lab]
@@ -115,10 +115,10 @@ empirical_sources:
     labs: [weather_lab]
     lean_domain: energy
   Geophysics:
-    labs: [weather_lab]
+    labs: [weather_lab, tectonics_lab, geomagnetism_lab]
     lean_domain: energy
   Seismology:
-    labs: [weather_lab]
+    labs: [seismology_lab, tectonics_lab]
     lean_domain: energy
   Economics:
     labs: [linguistics_lab]

@@ -118,6 +118,76 @@ extension_domains:
     lean_module: FSOT.Formal.CryospherePriors
     note: "Northern NCEI climate cohort freezing-month classifier (GRACE-scale proxy)"
 
+  Seismology:
+    tier: 21
+    D_eff: 18
+    delta_psi: 1.2
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy]
+    ingest_script: scripts/ingest_seismology_usgs.py
+    build_script: scripts/build_seismology_benchmark.py
+    manifest: data/seismology_usgs_manifest.yaml
+    benchmark_data: data/seismology_benchmark.json
+    lean_module: FSOT.Formal.SeismologyPriors
+    note: "USGS FDSN M4.5+ earthquake shallow-depth classifier"
+
+  Tectonics:
+    tier: 21
+    D_eff: 17
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy]
+    ingest_script: scripts/ingest_tectonics_plates.py
+    build_script: scripts/build_tectonics_benchmark.py
+    manifest: data/tectonics_manifest.yaml
+    benchmark_data: data/tectonics_benchmark.json
+    lean_module: FSOT.Formal.TectonicsPriors
+    note: "PB2002 plate boundaries + crustal earthquake coupling"
+
+  Geomagnetism:
+    tier: 21
+    D_eff: 13
+    delta_psi: 0.65
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [electron, fusion]
+    ingest_script: scripts/ingest_geomagnetism_swpc.py
+    build_script: scripts/build_geomagnetism_benchmark.py
+    manifest: data/geomagnetism_manifest.yaml
+    benchmark_data: data/geomagnetism_benchmark.json
+    lean_module: FSOT.Formal.GeomagnetismPriors
+    note: "NOAA SWPC Kyoto Dst + GOES Hp storm classifier"
+
+  Planetary_Structure:
+    tier: 21
+    D_eff: 16
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [galactic, astronomical]
+    ingest_script: scripts/ingest_planetary_jpl.py
+    build_script: scripts/build_planetary_structure_benchmark.py
+    manifest: data/planetary_structure_manifest.yaml
+    benchmark_data: data/planetary_structure_benchmark.json
+    lean_module: FSOT.Formal.PlanetaryStructurePriors
+    note: "JPL Horizons mass/radius vs published mean density"
+
+  Orbital_Mechanics:
+    tier: 21
+    D_eff: 18
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical]
+    ingest_script: scripts/ingest_planetary_jpl.py
+    build_script: scripts/build_orbital_mechanics_benchmark.py
+    manifest: data/orbital_mechanics_manifest.yaml
+    benchmark_data: data/orbital_mechanics_benchmark.json
+    lean_module: FSOT.Formal.OrbitalMechanicsPriors
+    note: "Kepler third-law ratio via JPL periods + NASA fact-sheet semi-major axes"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

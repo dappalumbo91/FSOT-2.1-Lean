@@ -1,0 +1,22 @@
+# Tier 21 — JPL Horizons planetary mass/radius/density verification.
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  horizons_url: "https://ssd.jpl.nasa.gov/api/horizons.api"
+  bodies: [Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune]
+
+build:
+  ingest: scripts/ingest_planetary_jpl.py
+  benchmark: scripts/build_planetary_structure_benchmark.py
+  output: data/planetary_structure_benchmark.json
+
+lean:
+  generator: scripts/gen_planetary_structure_lean.py
+  module: FSOT.Formal.PlanetaryStructurePriors
+  lean_domain: galactic
+  sign_theorem: galactic_raw_S_positive
+
+verification:
+  min_records: 6
+  max_median_error_pct: 5.0

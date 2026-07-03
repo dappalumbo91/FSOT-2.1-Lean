@@ -48,6 +48,41 @@ verified_extension_domains:
     maps_to_lean: [energy, galactic]
     lean_module: FSOT.Formal.CryospherePriors
 
+  Seismology:
+    tier: 21
+    D_eff: 18
+    maps_to_lean: [energy]
+    labs: [seismology_lab]
+    lean_module: FSOT.Formal.SeismologyPriors
+
+  Tectonics:
+    tier: 21
+    D_eff: 17
+    maps_to_lean: [energy]
+    labs: [tectonics_lab, seismology_lab]
+    lean_module: FSOT.Formal.TectonicsPriors
+
+  Geomagnetism:
+    tier: 21
+    D_eff: 13
+    maps_to_lean: [electron, fusion]
+    labs: [geomagnetism_lab, space_weather_lab, magnetic_string]
+    lean_modules: [FSOT.Formal.GeomagnetismPriors, FSOT.Formal.MagneticStringPriors]
+
+  Planetary_Structure:
+    tier: 21
+    D_eff: 16
+    maps_to_lean: [galactic, astronomical]
+    labs: [planetary_structure_lab, cosmology_extended_lab]
+    lean_module: FSOT.Formal.PlanetaryStructurePriors
+
+  Orbital_Mechanics:
+    tier: 21
+    D_eff: 18
+    maps_to_lean: [astronomical]
+    labs: [orbital_mechanics_lab, cosmology_lambda_cdm]
+    lean_module: FSOT.Formal.OrbitalMechanicsPriors
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

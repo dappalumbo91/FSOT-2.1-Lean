@@ -1,0 +1,25 @@
+# Tier 21 — NOAA SWPC geomagnetic indices (Dst, GOES Hp, solar wind).
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  dst_url: "https://services.swpc.noaa.gov/products/kyoto-dst.json"
+  goes_url: "https://services.swpc.noaa.gov/json/goes/primary/magnetometers-6-hour.json"
+  solar_wind_url: "https://services.swpc.noaa.gov/products/summary/solar-wind-speed.json"
+  dst_storm_threshold: -30.0
+  hp_storm_threshold: 80.0
+
+build:
+  ingest: scripts/ingest_geomagnetism_swpc.py
+  benchmark: scripts/build_geomagnetism_benchmark.py
+  output: data/geomagnetism_benchmark.json
+
+lean:
+  generator: scripts/gen_geomagnetism_lean.py
+  module: FSOT.Formal.GeomagnetismPriors
+  lean_domain: electron
+  sign_theorem: electron_raw_S_positive
+
+verification:
+  min_records: 40
+  min_stability_match_rate: 0.5

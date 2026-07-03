@@ -27,14 +27,14 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-03 — Tier 20)
+## Verification status (2026-07-03 — Tier 21)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
 Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
 
-- **18/18 verification tiers complete** (GFZ 1932–2024 Kp arc, Priors-only Wave-4, ChEMBL pharmacology, cryosphere, ToE crosswalk)
-- **45+ scientific domains** (35 NeuroLab + 10 extension bridges including Aerospace, Computer Science, Hearing Science)
+- **19/19 verification tiers complete** (geophysics & planetary mechanics arc)
+- **50+ scientific domains** (35 NeuroLab + 15 extension bridges)
 - **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
@@ -58,7 +58,12 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - USGS hydrology (`FSOT.Formal.HydrologyPriors`) — monthly streamflow cohort with train/holdout gates
 - Pharmacology ChEMBL (`FSOT.Formal.PharmacologyPriors`) — 120 approved-drug molecular weights, median err &lt;0.01%
 - Cryosphere proxy (`FSOT.Formal.CryospherePriors`) — 1,919 northern freezing-month records, 99.3% classifier match
-- Theory-of-Everything crosswalk (`data/fsot_theory_crosswalk.yaml`) — Aerospace Engineering, Computer Science, Hearing Science wired to verified Lean modules
+- Theory-of-Everything crosswalk (`data/fsot_theory_crosswalk.yaml`) — Aerospace, CS, Hearing + geophysics/planetary stack
+- Seismology (`FSOT.Formal.SeismologyPriors`) — **500** USGS M4.5+ events, 98.6% shallow-depth classifier match
+- Tectonics (`FSOT.Formal.TectonicsPriors`) — **241** PB2002 plate boundaries + crustal earthquake coupling
+- Geomagnetism (`FSOT.Formal.GeomagnetismPriors`) — **525** NOAA Dst/GOES records, 100% storm-classifier match
+- Planetary structure (`FSOT.Formal.PlanetaryStructurePriors`) — **8** JPL bodies, density median err 0.05%
+- Orbital mechanics (`FSOT.Formal.OrbitalMechanicsPriors`) — **8** planets, Kepler T²/a³ median err 0.11%
 - Kronos metrology (`FSOT.Formal.KronosPriors`) — 568 runs, best fractional error 1.64e-7
 - Knowledge base (`FSOT.Formal.KnowledgeBasePriors`) — 19,213 catalog formulas; 7,941 strict-empirical bridge (6,921 within 2%); per-formula pass on full catalog
 - Math generator (`FSOT.Formal.MathGeneratorPriors`) — 7 comparisons within 2%

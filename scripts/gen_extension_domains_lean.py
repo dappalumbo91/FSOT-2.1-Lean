@@ -25,6 +25,11 @@ DEDICATED_GENERATORS = {
     "Hydrology",
     "Pharmacology",
     "Cryosphere",
+    "Seismology",
+    "Tectonics",
+    "Geomagnetism",
+    "Planetary_Structure",
+    "Orbital_Mechanics",
 }
 
 LEAN_SIGN = {
@@ -37,6 +42,11 @@ LEAN_SIGN = {
     "Hydrology": ("energy", "energy_raw_S_positive"),
     "Pharmacology": ("medical", "medical_raw_S_positive"),
     "Cryosphere": ("galactic", "galactic_raw_S_positive"),
+    "Seismology": ("energy", "energy_raw_S_positive"),
+    "Tectonics": ("energy", "energy_raw_S_positive"),
+    "Geomagnetism": ("electron", "electron_raw_S_positive"),
+    "Planetary_Structure": ("galactic", "galactic_raw_S_positive"),
+    "Orbital_Mechanics": ("astronomical", "astronomical_raw_S_positive"),
 }
 
 

@@ -96,6 +96,11 @@ LEAN_TARGETS = [
     "FSOT.Formal.HydrologyPriors",
     "FSOT.Formal.PharmacologyPriors",
     "FSOT.Formal.CryospherePriors",
+    "FSOT.Formal.SeismologyPriors",
+    "FSOT.Formal.TectonicsPriors",
+    "FSOT.Formal.GeomagnetismPriors",
+    "FSOT.Formal.PlanetaryStructurePriors",
+    "FSOT.Formal.OrbitalMechanicsPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

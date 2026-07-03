@@ -1,4 +1,4 @@
-generated_at: '2026-07-03T16:11:18.854598+00:00'
+generated_at: '2026-07-03T16:23:07.121870+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 64
+  lean_formal_modules: 69
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 18
-  tiers_total: 18
+  tiers_complete: 19
+  tiers_total: 19
   percent_complete: 100.0
-current_tier: Tier 20 GFZ 1932 arc + Priors-only Wave4 + ChEMBL + Cryosphere + ToE
-  crosswalk
+current_tier: Tier 21 Geophysics & planetary mechanics (seismology, tectonics, EM,
+  orbits)
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -329,7 +329,7 @@ proved_claims:
   claim: 16 Wave-4 observables (PMNS/CKM/Feigenbaum/nuclear/dark-energy) within 2%
   status: numerically_verified
   domain: particle
-  lean_module: FSOT.Formal.CosmologyWave4
+  lean_module: FSOT.Formal.CosmologyWave4Priors
   lean_theorem: cosmology_wave4_bundle
 - id: kronos_metrology_runs
   claim: 568 Kronos thesis runs; best fractional error 1.64e-7
@@ -424,7 +424,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: true
-scientific_domains_covered: 45
+scientific_domains_covered: 50
 total_empirical_records: 261401
 tier_coverage:
 - tier: 1
@@ -464,6 +464,7 @@ tier_coverage:
   - ExperimentSynthesisPriors
   - FormulaCorpusPriors
   - FuelPriors
+  - GeomagnetismPriors
   - HiggsBranchingPriors
   - HydrologyPriors
   - ImmunologyPriors
@@ -478,14 +479,18 @@ tier_coverage:
   - NeuronCohortStrataPriors
   - NeuronCohortTrainHoldoutPriors
   - NeuronHybridPriors
+  - OrbitalMechanicsPriors
   - ParticlePhysicsPriors
   - PharmacologyPriors
   - PhotonicForge
+  - PlanetaryStructurePriors
   - PlasmaPhysicsPriors
   - ProteinPriors
+  - SeismologyPriors
   - SoulSiblingPriors
   - SpaceWeatherPriors
   - SpeciesPriors
+  - TectonicsPriors
   - ThesisSimulationPriors
   - TrinaryFluidPriors
   - TrinaryOSPriors
@@ -594,7 +599,7 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 45
+    scientific_domains_covered: 50
     expansion_candidates: 6
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -710,6 +715,29 @@ tier_coverage:
   - FSOT.Formal.CosmologyWave4Priors
   - FSOT.Formal.PharmacologyPriors
   - FSOT.Formal.CryospherePriors
+- tier: 21
+  name: Geophysics & planetary mechanics (seismology, tectonics, EM, orbits)
+  status: complete
+  metrics:
+    seismology_events: 500
+    seismology_match_rate: 0.986
+    tectonics_events: 500
+    tectonics_boundary_features: 241
+    geomagnetism_observables: 525
+    planetary_structure_bodies: 8
+    orbital_mechanics_bodies: 8
+    orbital_median_error_pct: 0.106141
+  artifacts:
+  - data/seismology_usgs_manifest.yaml
+  - data/tectonics_manifest.yaml
+  - data/geomagnetism_manifest.yaml
+  - data/planetary_structure_manifest.yaml
+  - data/orbital_mechanics_manifest.yaml
+  - FSOT.Formal.SeismologyPriors
+  - FSOT.Formal.TectonicsPriors
+  - FSOT.Formal.GeomagnetismPriors
+  - FSOT.Formal.PlanetaryStructurePriors
+  - FSOT.Formal.OrbitalMechanicsPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -765,6 +793,36 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.CryospherePriors
+- domain: Seismology
+  tier: 21
+  record_count: 500
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.SeismologyPriors
+- domain: Tectonics
+  tier: 21
+  record_count: 500
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.TectonicsPriors
+- domain: Geomagnetism
+  tier: 21
+  record_count: 525
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.GeomagnetismPriors
+- domain: Planetary_Structure
+  tier: 21
+  record_count: 8
+  median_error_pct: 0.046016
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.PlanetaryStructurePriors
+- domain: Orbital_Mechanics
+  tier: 21
+  record_count: 8
+  median_error_pct: 0.106141
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.OrbitalMechanicsPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -825,6 +883,55 @@ theory_crosswalk:
     - energy
     - galactic
     lean_module: FSOT.Formal.CryospherePriors
+  Seismology:
+    tier: 21
+    D_eff: 18
+    maps_to_lean:
+    - energy
+    labs:
+    - seismology_lab
+    lean_module: FSOT.Formal.SeismologyPriors
+  Tectonics:
+    tier: 21
+    D_eff: 17
+    maps_to_lean:
+    - energy
+    labs:
+    - tectonics_lab
+    - seismology_lab
+    lean_module: FSOT.Formal.TectonicsPriors
+  Geomagnetism:
+    tier: 21
+    D_eff: 13
+    maps_to_lean:
+    - electron
+    - fusion
+    labs:
+    - geomagnetism_lab
+    - space_weather_lab
+    - magnetic_string
+    lean_modules:
+    - FSOT.Formal.GeomagnetismPriors
+    - FSOT.Formal.MagneticStringPriors
+  Planetary_Structure:
+    tier: 21
+    D_eff: 16
+    maps_to_lean:
+    - galactic
+    - astronomical
+    labs:
+    - planetary_structure_lab
+    - cosmology_extended_lab
+    lean_module: FSOT.Formal.PlanetaryStructurePriors
+  Orbital_Mechanics:
+    tier: 21
+    D_eff: 18
+    maps_to_lean:
+    - astronomical
+    labs:
+    - orbital_mechanics_lab
+    - cosmology_lambda_cdm
+    lean_module: FSOT.Formal.OrbitalMechanicsPriors
 lean_formal_modules:
 - AetherPrimePriors
 - BiologyStrictEmpiricalPriors
@@ -852,6 +959,7 @@ lean_formal_modules:
 - ExperimentSynthesisPriors
 - FormulaCorpusPriors
 - FuelPriors
+- GeomagnetismPriors
 - HiggsBranchingPriors
 - HydrologyPriors
 - ImmunologyPriors
@@ -866,13 +974,17 @@ lean_formal_modules:
 - NeuronCohortStrataPriors
 - NeuronCohortTrainHoldoutPriors
 - NeuronHybridPriors
+- OrbitalMechanicsPriors
 - ParticlePhysicsPriors
 - PharmacologyPriors
+- PlanetaryStructurePriors
 - PlasmaPhysicsPriors
 - ProteinPriors
+- SeismologyPriors
 - SoulSiblingPriors
 - SpaceWeatherPriors
 - SpeciesPriors
+- TectonicsPriors
 - ThesisSimulationPriors
 - TrinaryFluidPriors
 - TrinaryOSPriors

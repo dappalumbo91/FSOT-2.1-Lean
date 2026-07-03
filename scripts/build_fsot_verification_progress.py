@@ -57,6 +57,11 @@ def build_progress() -> dict:
     space_weather_bench = _load_json(ROOT / "data" / "space_weather_benchmark.json")
     pharmacology_bench = _load_json(ROOT / "data" / "pharmacology_benchmark.json")
     cryosphere_bench = _load_json(ROOT / "data" / "cryosphere_benchmark.json")
+    seismology_bench = _load_json(ROOT / "data" / "seismology_benchmark.json")
+    tectonics_bench = _load_json(ROOT / "data" / "tectonics_benchmark.json")
+    geomagnetism_bench = _load_json(ROOT / "data" / "geomagnetism_benchmark.json")
+    planetary_bench = _load_json(ROOT / "data" / "planetary_structure_benchmark.json")
+    orbital_bench = _load_json(ROOT / "data" / "orbital_mechanics_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -445,6 +450,39 @@ def build_progress() -> dict:
                 "FSOT.Formal.CryospherePriors",
             ],
         },
+        {
+            "tier": 21,
+            "name": "Geophysics & planetary mechanics (seismology, tectonics, EM, orbits)",
+            "status": "complete"
+            if seismology_bench.get("observable_count", 0) >= 80
+            and tectonics_bench.get("observable_count", 0) >= 80
+            and geomagnetism_bench.get("observable_count", 0) >= 40
+            and planetary_bench.get("observable_count", 0) >= 6
+            and orbital_bench.get("observable_count", 0) >= 6
+            else "pending",
+            "metrics": {
+                "seismology_events": seismology_bench.get("observable_count"),
+                "seismology_match_rate": seismology_bench.get("stability_match_rate"),
+                "tectonics_events": tectonics_bench.get("observable_count"),
+                "tectonics_boundary_features": tectonics_bench.get("plate_boundary_features"),
+                "geomagnetism_observables": geomagnetism_bench.get("observable_count"),
+                "planetary_structure_bodies": planetary_bench.get("observable_count"),
+                "orbital_mechanics_bodies": orbital_bench.get("observable_count"),
+                "orbital_median_error_pct": orbital_bench.get("median_error_pct"),
+            },
+            "artifacts": [
+                "data/seismology_usgs_manifest.yaml",
+                "data/tectonics_manifest.yaml",
+                "data/geomagnetism_manifest.yaml",
+                "data/planetary_structure_manifest.yaml",
+                "data/orbital_mechanics_manifest.yaml",
+                "FSOT.Formal.SeismologyPriors",
+                "FSOT.Formal.TectonicsPriors",
+                "FSOT.Formal.GeomagnetismPriors",
+                "FSOT.Formal.PlanetaryStructurePriors",
+                "FSOT.Formal.OrbitalMechanicsPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -471,7 +509,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 20 GFZ 1932 arc + Priors-only Wave4 + ChEMBL + Cryosphere + ToE crosswalk",
+        "current_position": "Tier 21 Geophysics & planetary mechanics (seismology, tectonics, EM, orbits)",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

@@ -1,8 +1,8 @@
-generated_at: '2026-07-03T16:11:08.047804+00:00'
+generated_at: '2026-07-03T16:23:06.391372+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 9
-  total_scientific_domains_covered: 45
+  extension_domains: 14
+  total_scientific_domains_covered: 50
   total_empirical_records: 261401
   domains_target_band_2pct: 35
   domains_sign_mismatch: 0
@@ -12,7 +12,7 @@ summary:
     C_thin: 6
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 64
+  lean_formal_modules: 69
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -437,6 +437,36 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.CryospherePriors
+- domain: Seismology
+  tier: 21
+  record_count: 500
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.SeismologyPriors
+- domain: Tectonics
+  tier: 21
+  record_count: 500
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.TectonicsPriors
+- domain: Geomagnetism
+  tier: 21
+  record_count: 525
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.GeomagnetismPriors
+- domain: Planetary_Structure
+  tier: 21
+  record_count: 8
+  median_error_pct: 0.046016
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.PlanetaryStructurePriors
+- domain: Orbital_Mechanics
+  tier: 21
+  record_count: 8
+  median_error_pct: 0.106141
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.OrbitalMechanicsPriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572

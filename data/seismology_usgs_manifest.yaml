@@ -1,0 +1,26 @@
+# Tier 21 — USGS FDSN earthquake catalog (seismology depth classifier).
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  name: USGS_FDSN
+  starttime: "2020-01-01"
+  endtime: "2024-12-31"
+  minmagnitude: 4.5
+  limit: 500
+  shallow_depth_km: 70.0
+
+build:
+  ingest: scripts/ingest_seismology_usgs.py
+  benchmark: scripts/build_seismology_benchmark.py
+  output: data/seismology_benchmark.json
+
+lean:
+  generator: scripts/gen_seismology_lean.py
+  module: FSOT.Formal.SeismologyPriors
+  lean_domain: energy
+  sign_theorem: energy_raw_S_positive
+
+verification:
+  min_records: 80
+  min_stability_match_rate: 0.5

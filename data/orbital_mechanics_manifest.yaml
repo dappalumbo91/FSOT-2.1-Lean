@@ -1,0 +1,24 @@
+# Tier 21 — Kepler third-law verification via JPL Horizons orbital elements.
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  horizons_url: "https://ssd.jpl.nasa.gov/api/horizons.api"
+  bodies: [Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune]
+  au_km: 149597870.7
+  earth_year_days: 365.256
+
+build:
+  ingest: scripts/ingest_planetary_jpl.py
+  benchmark: scripts/build_orbital_mechanics_benchmark.py
+  output: data/orbital_mechanics_benchmark.json
+
+lean:
+  generator: scripts/gen_orbital_mechanics_lean.py
+  module: FSOT.Formal.OrbitalMechanicsPriors
+  lean_domain: astronomical
+  sign_theorem: astronomical_raw_S_positive
+
+verification:
+  min_records: 6
+  max_median_error_pct: 5.0

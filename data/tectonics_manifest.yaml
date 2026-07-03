@@ -1,0 +1,23 @@
+# Tier 21 — PB2002 plate boundaries + USGS crustal earthquake coupling.
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  plates_url: "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
+  seismology_cache: data/seismology_usgs_cache.json
+  crustal_depth_km: 70.0
+
+build:
+  ingest: scripts/ingest_tectonics_plates.py
+  benchmark: scripts/build_tectonics_benchmark.py
+  output: data/tectonics_benchmark.json
+
+lean:
+  generator: scripts/gen_tectonics_lean.py
+  module: FSOT.Formal.TectonicsPriors
+  lean_domain: energy
+  sign_theorem: energy_raw_S_positive
+
+verification:
+  min_records: 40
+  min_stability_match_rate: 0.5
