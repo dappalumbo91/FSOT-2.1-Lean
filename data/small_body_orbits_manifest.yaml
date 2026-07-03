@@ -1,0 +1,25 @@
+# Tier 22 — JPL Horizons small-body / Moon orbit perturbation checks.
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  horizons_url: "https://ssd.jpl.nasa.gov/api/horizons.api"
+  bodies: [Moon, Ceres, Vesta, Eros, Halley]
+  moon_reference_days: 27.321582
+  moon_semi_major_km: 384400.0
+  perturbation_tol_pct: 8.0
+
+build:
+  ingest: scripts/ingest_small_body_jpl.py
+  benchmark: scripts/build_small_body_orbits_benchmark.py
+  output: data/small_body_orbits_benchmark.json
+
+lean:
+  generator: scripts/gen_small_body_orbits_lean.py
+  module: FSOT.Formal.SmallBodyOrbitsPriors
+  lean_domain: astronomical
+  sign_theorem: astronomical_raw_S_positive
+
+verification:
+  min_records: 4
+  max_median_error_pct: 8.0

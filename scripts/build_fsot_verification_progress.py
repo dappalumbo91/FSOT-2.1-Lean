@@ -62,6 +62,8 @@ def build_progress() -> dict:
     geomagnetism_bench = _load_json(ROOT / "data" / "geomagnetism_benchmark.json")
     planetary_bench = _load_json(ROOT / "data" / "planetary_structure_benchmark.json")
     orbital_bench = _load_json(ROOT / "data" / "orbital_mechanics_benchmark.json")
+    small_body_bench = _load_json(ROOT / "data" / "small_body_orbits_benchmark.json")
+    magnetosphere_bench = _load_json(ROOT / "data" / "magnetosphere_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -483,6 +485,27 @@ def build_progress() -> dict:
                 "FSOT.Formal.OrbitalMechanicsPriors",
             ],
         },
+        {
+            "tier": 22,
+            "name": "Small-body orbits + magnetosphere coupling (Dst×Kp×magnetic-string)",
+            "status": "complete"
+            if small_body_bench.get("observable_count", 0) >= 4
+            and magnetosphere_bench.get("observable_count", 0) >= 40
+            and magnetosphere_bench.get("stability_match_rate", 0) >= 0.5
+            else "pending",
+            "metrics": {
+                "small_body_orbit_count": small_body_bench.get("observable_count"),
+                "small_body_median_error_pct": small_body_bench.get("median_error_pct"),
+                "magnetosphere_observables": magnetosphere_bench.get("observable_count"),
+                "magnetosphere_match_rate": magnetosphere_bench.get("stability_match_rate"),
+            },
+            "artifacts": [
+                "data/small_body_orbits_manifest.yaml",
+                "data/magnetosphere_manifest.yaml",
+                "FSOT.Formal.SmallBodyOrbitsPriors",
+                "FSOT.Formal.MagnetospherePriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -509,7 +532,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 21 Geophysics & planetary mechanics (seismology, tectonics, EM, orbits)",
+        "current_position": "Tier 22 Small-body orbits + magnetosphere coupling",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

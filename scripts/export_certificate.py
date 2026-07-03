@@ -101,6 +101,8 @@ LEAN_TARGETS = [
     "FSOT.Formal.GeomagnetismPriors",
     "FSOT.Formal.PlanetaryStructurePriors",
     "FSOT.Formal.OrbitalMechanicsPriors",
+    "FSOT.Formal.SmallBodyOrbitsPriors",
+    "FSOT.Formal.MagnetospherePriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

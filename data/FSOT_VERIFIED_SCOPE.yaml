@@ -1,4 +1,4 @@
-generated_at: '2026-07-03T16:23:07.121870+00:00'
+generated_at: '2026-07-03T16:28:37.565599+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,14 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 69
+  lean_formal_modules: 71
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 19
-  tiers_total: 19
+  tiers_complete: 20
+  tiers_total: 20
   percent_complete: 100.0
-current_tier: Tier 21 Geophysics & planetary mechanics (seismology, tectonics, EM,
-  orbits)
+current_tier: Tier 22 Small-body orbits + magnetosphere coupling
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -424,7 +423,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: true
-scientific_domains_covered: 50
+scientific_domains_covered: 52
 total_empirical_records: 261401
 tier_coverage:
 - tier: 1
@@ -474,6 +473,7 @@ tier_coverage:
   - LinguisticsPriors
   - MagicCirclePriors
   - MagneticStringPriors
+  - MagnetospherePriors
   - MathGeneratorPriors
   - NeuronCohortPriors
   - NeuronCohortStrataPriors
@@ -487,6 +487,7 @@ tier_coverage:
   - PlasmaPhysicsPriors
   - ProteinPriors
   - SeismologyPriors
+  - SmallBodyOrbitsPriors
   - SoulSiblingPriors
   - SpaceWeatherPriors
   - SpeciesPriors
@@ -599,7 +600,7 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 50
+    scientific_domains_covered: 52
     expansion_candidates: 6
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -738,6 +739,19 @@ tier_coverage:
   - FSOT.Formal.GeomagnetismPriors
   - FSOT.Formal.PlanetaryStructurePriors
   - FSOT.Formal.OrbitalMechanicsPriors
+- tier: 22
+  name: Small-body orbits + magnetosphere coupling (Dst×Kp×magnetic-string)
+  status: complete
+  metrics:
+    small_body_orbit_count: 5
+    small_body_median_error_pct: 0.014433
+    magnetosphere_observables: 167
+    magnetosphere_match_rate: 0.7125748502994012
+  artifacts:
+  - data/small_body_orbits_manifest.yaml
+  - data/magnetosphere_manifest.yaml
+  - FSOT.Formal.SmallBodyOrbitsPriors
+  - FSOT.Formal.MagnetospherePriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -823,6 +837,18 @@ extension_domains:
   median_error_pct: 0.106141
   coverage_tier: C_thin
   lean_module: FSOT.Formal.OrbitalMechanicsPriors
+- domain: Small_Body_Orbits
+  tier: 22
+  record_count: 5
+  median_error_pct: 0.014433
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.SmallBodyOrbitsPriors
+- domain: Magnetosphere
+  tier: 22
+  record_count: 167
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.MagnetospherePriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -932,6 +958,31 @@ theory_crosswalk:
     - orbital_mechanics_lab
     - cosmology_lambda_cdm
     lean_module: FSOT.Formal.OrbitalMechanicsPriors
+  Small_Body_Orbits:
+    tier: 22
+    D_eff: 18
+    maps_to_lean:
+    - astronomical
+    labs:
+    - small_body_orbits_lab
+    - orbital_mechanics_lab
+    lean_module: FSOT.Formal.SmallBodyOrbitsPriors
+  Magnetosphere:
+    tier: 22
+    D_eff: 14
+    maps_to_lean:
+    - electron
+    - fusion
+    labs:
+    - magnetosphere_lab
+    - geomagnetism_lab
+    - space_weather_lab
+    - magnetic_string
+    lean_modules:
+    - FSOT.Formal.MagnetospherePriors
+    - FSOT.Formal.GeomagnetismPriors
+    - FSOT.Formal.SpaceWeatherPriors
+    - FSOT.Formal.MagneticStringPriors
 lean_formal_modules:
 - AetherPrimePriors
 - BiologyStrictEmpiricalPriors
@@ -969,6 +1020,7 @@ lean_formal_modules:
 - LinguisticsPriors
 - MagicCirclePriors
 - MagneticStringPriors
+- MagnetospherePriors
 - MathGeneratorPriors
 - NeuronCohortPriors
 - NeuronCohortStrataPriors
@@ -981,6 +1033,7 @@ lean_formal_modules:
 - PlasmaPhysicsPriors
 - ProteinPriors
 - SeismologyPriors
+- SmallBodyOrbitsPriors
 - SoulSiblingPriors
 - SpaceWeatherPriors
 - SpeciesPriors

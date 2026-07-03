@@ -83,6 +83,20 @@ verified_extension_domains:
     labs: [orbital_mechanics_lab, cosmology_lambda_cdm]
     lean_module: FSOT.Formal.OrbitalMechanicsPriors
 
+  Small_Body_Orbits:
+    tier: 22
+    D_eff: 18
+    maps_to_lean: [astronomical]
+    labs: [small_body_orbits_lab, orbital_mechanics_lab]
+    lean_module: FSOT.Formal.SmallBodyOrbitsPriors
+
+  Magnetosphere:
+    tier: 22
+    D_eff: 14
+    maps_to_lean: [electron, fusion]
+    labs: [magnetosphere_lab, geomagnetism_lab, space_weather_lab, magnetic_string]
+    lean_modules: [FSOT.Formal.MagnetospherePriors, FSOT.Formal.GeomagnetismPriors, FSOT.Formal.SpaceWeatherPriors, FSOT.Formal.MagneticStringPriors]
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

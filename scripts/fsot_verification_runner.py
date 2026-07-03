@@ -189,6 +189,8 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.GeomagnetismPriors",
                 "FSOT.Formal.PlanetaryStructurePriors",
                 "FSOT.Formal.OrbitalMechanicsPriors",
+                "FSOT.Formal.SmallBodyOrbitsPriors",
+                "FSOT.Formal.MagnetospherePriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -734,6 +736,9 @@ def main() -> int:
             "ingest_planetary_jpl.py",
             "build_planetary_structure_benchmark.py",
             "build_orbital_mechanics_benchmark.py",
+            "ingest_small_body_jpl.py",
+            "build_small_body_orbits_benchmark.py",
+            "build_magnetosphere_benchmark.py",
             "build_plasma_physics_benchmark.py",
             "build_immunology_benchmark.py",
             "ingest_climate_ncei_chunked.py",
@@ -811,6 +816,8 @@ def main() -> int:
             ("ingest_geomagnetism_swpc.py", "gen_geomagnetism_lean.py", "GeomagnetismPriors.lean generation failed", "geomagnetism SWPC ingest failed"),
             ("ingest_planetary_jpl.py", "gen_planetary_structure_lean.py", "PlanetaryStructurePriors.lean generation failed", "JPL planetary ingest failed"),
             (None, "gen_orbital_mechanics_lean.py", "OrbitalMechanicsPriors.lean generation failed", None),
+            ("ingest_small_body_jpl.py", "gen_small_body_orbits_lean.py", "SmallBodyOrbitsPriors.lean generation failed", "small-body JPL ingest failed"),
+            (None, "gen_magnetosphere_lean.py", "MagnetospherePriors.lean generation failed", None),
         ]
         for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
             if ingest_name:

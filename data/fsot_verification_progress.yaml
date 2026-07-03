@@ -1,16 +1,15 @@
-generated_at: '2026-07-03T16:23:06.961370+00:00'
+generated_at: '2026-07-03T16:28:37.395512+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 69
+  lean_formal_modules: 71
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 19
-  tiers_total: 19
+  tiers_complete: 20
+  tiers_total: 20
   percent_complete: 100.0
-current_position: Tier 21 Geophysics & planetary mechanics (seismology, tectonics,
-  EM, orbits)
+current_position: Tier 22 Small-body orbits + magnetosphere coupling
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -59,6 +58,7 @@ tiers:
   - LinguisticsPriors
   - MagicCirclePriors
   - MagneticStringPriors
+  - MagnetospherePriors
   - MathGeneratorPriors
   - NeuronCohortPriors
   - NeuronCohortStrataPriors
@@ -72,6 +72,7 @@ tiers:
   - PlasmaPhysicsPriors
   - ProteinPriors
   - SeismologyPriors
+  - SmallBodyOrbitsPriors
   - SoulSiblingPriors
   - SpaceWeatherPriors
   - SpeciesPriors
@@ -184,7 +185,7 @@ tiers:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 50
+    scientific_domains_covered: 52
     expansion_candidates: 6
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -323,6 +324,19 @@ tiers:
   - FSOT.Formal.GeomagnetismPriors
   - FSOT.Formal.PlanetaryStructurePriors
   - FSOT.Formal.OrbitalMechanicsPriors
+- tier: 22
+  name: "Small-body orbits + magnetosphere coupling (Dst\xD7Kp\xD7magnetic-string)"
+  status: complete
+  metrics:
+    small_body_orbit_count: 5
+    small_body_median_error_pct: 0.014433
+    magnetosphere_observables: 167
+    magnetosphere_match_rate: 0.7125748502994012
+  artifacts:
+  - data/small_body_orbits_manifest.yaml
+  - data/magnetosphere_manifest.yaml
+  - FSOT.Formal.SmallBodyOrbitsPriors
+  - FSOT.Formal.MagnetospherePriors
 next_steps:
 - Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class
 - "Multi-hero held-out: certify 3\u20135 specimens per Sst/PV/VIP/L2/3"

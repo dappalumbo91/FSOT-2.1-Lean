@@ -188,6 +188,33 @@ extension_domains:
     lean_module: FSOT.Formal.OrbitalMechanicsPriors
     note: "Kepler third-law ratio via JPL periods + NASA fact-sheet semi-major axes"
 
+  Small_Body_Orbits:
+    tier: 22
+    D_eff: 18
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical]
+    ingest_script: scripts/ingest_small_body_jpl.py
+    build_script: scripts/build_small_body_orbits_benchmark.py
+    manifest: data/small_body_orbits_manifest.yaml
+    benchmark_data: data/small_body_orbits_benchmark.json
+    lean_module: FSOT.Formal.SmallBodyOrbitsPriors
+    note: "Moon + Ceres/Vesta/Eros/Halley JPL EC/QR semi-major perturbation checks"
+
+  Magnetosphere:
+    tier: 22
+    D_eff: 14
+    delta_psi: 0.7
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [electron, fusion]
+    build_script: scripts/build_magnetosphere_benchmark.py
+    manifest: data/magnetosphere_manifest.yaml
+    benchmark_data: data/magnetosphere_benchmark.json
+    lean_module: FSOT.Formal.MagnetospherePriors
+    note: "Coupled Dst+Kp storm classifier crosswalk to Geomagnetism/SpaceWeather/MagneticString"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

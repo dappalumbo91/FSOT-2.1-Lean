@@ -10,6 +10,26 @@ from typing import Any
 HORIZONS_URL = "https://ssd.jpl.nasa.gov/api/horizons.api"
 
 # Major planets (JPL NAIF IDs)
+SMALL_BODY_COMMANDS = {
+    "Moon": ("301", "@399"),
+    "Ceres": ("1;", "@10"),
+    "Vesta": ("4;", "@10"),
+    "Eros": ("433", "@10"),
+    "Halley": ("90000022", "@10"),
+}
+
+# Heliocentric semi-major axes (AU) — JPL SBDB reference for Kepler/perturbation checks.
+SMALL_BODY_SEMI_MAJOR_AU = {
+    "Ceres": 2.767,
+    "Vesta": 2.362,
+    "Eros": 1.458,
+    "Halley": 17.834,
+}
+
+# Moon-Earth orbit (geocentric reference)
+MOON_ORBIT_DAYS = 27.321582
+MOON_SEMI_MAJOR_KM = 384400.0
+
 PLANET_COMMANDS = {
     "Mercury": "199",
     "Venus": "299",
@@ -34,13 +54,13 @@ NASA_SEMI_MAJOR_AU = {
 }
 
 
-def fetch_horizons(*, command: str, ephem_type: str = "ELEMENTS") -> str:
+def fetch_horizons(*, command: str, ephem_type: str = "ELEMENTS", center: str = "@10") -> str:
     data = urllib.parse.urlencode(
         {
             "format": "json",
             "COMMAND": f"'{command}'",
             "EPHEM_TYPE": ephem_type,
-            "CENTER": "@10",
+            "CENTER": center,
             "START_TIME": "2024-01-01",
             "STOP_TIME": "2024-01-02",
             "STEP_SIZE": "1d",
@@ -85,7 +105,9 @@ def parse_physical_block(text: str) -> dict[str, Any]:
     if mass is None:
         mass = _first_float(r"Mass\s*x\s*10\^26\s*\(kg\)\s*=\s*([0-9.]+)", text)
         mass_unit = 26
-    period_days = _first_float(r"Sidereal\s+orbit\s+period\s*=\s*([0-9.]+)\s*d", text)
+    period_days = _first_float(r"Orbit\s+period\s*=\s*([0-9.]+)\s*d", text)
+    if period_days is None:
+        period_days = _first_float(r"Sidereal\s+orbit\s+period\s*=\s*([0-9.]+)\s*d", text)
     if period_days is None:
         period_days = _first_float(r"Sidereal\s+orb\.\s+per\.,\s*d\s*=\s*([0-9.]+)", text)
     if period_days is None:
@@ -106,6 +128,24 @@ def parse_physical_block(text: str) -> dict[str, Any]:
         "mass_value": mass,
         "mass_exponent": mass_unit,
         "period_days": period_days,
+    }
+
+
+def parse_soe_elements(text: str) -> dict[str, float | None]:
+    """Parse osculating EC/QR from JPL Horizons $$SOE block."""
+    if "$$SOE" not in text:
+        return {"eccentricity": None, "perihelion_km": None, "semi_major_axis_au": None}
+    block = text.split("$$SOE")[1].split("$$EOE")[0]
+    ecc = _first_float(r"EC=\s*([0-9.Ee+-]+)", block)
+    qr_km = _first_float(r"QR=\s*([0-9.Ee+-]+)", block)
+    sma_au = None
+    if ecc is not None and qr_km is not None and ecc < 1.0:
+        sma_km = qr_km / (1.0 - ecc)
+        sma_au = sma_km / 149597870.7
+    return {
+        "eccentricity": ecc,
+        "perihelion_km": qr_km,
+        "semi_major_axis_au": sma_au,
     }
 
 

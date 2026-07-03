@@ -1,0 +1,67 @@
+{
+  "benchmark_version": "1.0",
+  "generated_at": "2026-07-03T16:27:49.718446+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "source": "JPL_Horizons_small_bodies",
+  "record_count": 5,
+  "observable_count": 5,
+  "median_error_pct": 0.014433,
+  "D_eff": 18,
+  "records": [
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "lunar_orbit_period",
+      "name": "Moon",
+      "computed": 27.321582,
+      "measured": 27.321582,
+      "semi_major_km": 384400.0,
+      "eccentricity": 0.05980231621287874,
+      "error_pct": 0.0,
+      "within_tol": true
+    },
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "heliocentric_semi_major_axis",
+      "name": "Ceres",
+      "computed_au": 2.767197,
+      "measured_au": 2.767,
+      "eccentricity": 0.07898250774570179,
+      "semi_major_km": 413966804.5,
+      "error_pct": 0.007126,
+      "within_tol": true
+    },
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "heliocentric_semi_major_axis",
+      "name": "Vesta",
+      "computed_au": 2.361278,
+      "measured_au": 2.362,
+      "eccentricity": 0.08974783723267052,
+      "semi_major_km": 353242116.7,
+      "error_pct": 0.03058,
+      "within_tol": true
+    },
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "heliocentric_semi_major_axis",
+      "name": "Eros",
+      "computed_au": 1.45821,
+      "measured_au": 1.458,
+      "eccentricity": 0.222761672299141,
+      "semi_major_km": 218145175.8,
+      "error_pct": 0.014433,
+      "within_tol": true
+    },
+    {
+      "lab": "small_body_orbits_lab",
+      "property": "heliocentric_semi_major_axis",
+      "name": "Halley",
+      "computed_au": 17.90437,
+      "measured_au": 17.834,
+      "eccentricity": 0.967350313866682,
+      "semi_major_km": 2678455669.9,
+      "error_pct": 0.394585,
+      "within_tol": true
+    }
+  ]
+}

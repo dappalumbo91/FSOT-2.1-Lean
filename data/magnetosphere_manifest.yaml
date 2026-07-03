@@ -1,0 +1,24 @@
+# Tier 22 — Magnetosphere coupling (Dst + Kp + magnetic-string crosswalk).
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  geomagnetism_cache: data/geomagnetism_swpc_cache.json
+  kp_cache: data/space_weather_cache/kp_index.json
+  magnetic_S_em: 0.5188655207983146
+  dst_storm_threshold: -30.0
+  kp_storm_threshold: 5.0
+
+build:
+  benchmark: scripts/build_magnetosphere_benchmark.py
+  output: data/magnetosphere_benchmark.json
+
+lean:
+  generator: scripts/gen_magnetosphere_lean.py
+  module: FSOT.Formal.MagnetospherePriors
+  lean_domain: electron
+  sign_theorem: electron_raw_S_positive
+
+verification:
+  min_records: 40
+  min_stability_match_rate: 0.5
