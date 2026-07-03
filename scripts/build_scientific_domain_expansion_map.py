@@ -38,6 +38,21 @@ def _load(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _lab_record_count(registry: dict, lab_key: str) -> int:
+    lab = registry.get(lab_key) or {}
+    n = int(
+        lab.get("observable_count")
+        or lab.get("kp_record_count")
+        or lab.get("record_count")
+        or lab.get("mapped_records")
+        or 0
+    )
+    if n == 0 and lab_key == "plasma_physics_lab":
+        bench = _load(ROOT / "data" / "plasma_physics_benchmark.json")
+        n = int(bench.get("record_count") or 0)
+    return n
+
+
 def _tier(median: float | None, records: int) -> str:
     if median is None or records == 0:
         return "unverified"
@@ -94,17 +109,23 @@ def build_map() -> dict:
         ):
             sign_dispersal.append(name)
 
+    lab_registry = _load(ROOT / "data" / "lab_registry.json")
+
     extensions = []
     for name, cfg in (extension.get("extension_domains") or {}).items():
         bench_path = ROOT / cfg["benchmark_data"]
         bench = _load(bench_path)
-        n = int(
-            bench.get("record_count")
-            or bench.get("month_count")
-            or bench.get("observable_count")
-            or 0
-        )
-        med = bench.get("median_error_pct")
+        if cfg.get("labs"):
+            n = sum(_lab_record_count(lab_registry, lab) for lab in cfg["labs"])
+            med = bench.get("median_error_pct")
+        else:
+            n = int(
+                bench.get("record_count")
+                or bench.get("month_count")
+                or bench.get("observable_count")
+                or 0
+            )
+            med = bench.get("median_error_pct")
         extensions.append(
             {
                 "domain": name,

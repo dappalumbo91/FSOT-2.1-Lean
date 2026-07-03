@@ -1,13 +1,24 @@
-# Tier 17 — NOAA SWPC Kp/Ap space weather bridge (plasma #37 ↔ cosmology scales).
-version: "1.0"
-updated: "2026-07-01"
+# Tier 17–18 — NOAA SWPC Kp/Ap + GFZ historical chunked ingest.
+version: "1.1"
+updated: "2026-07-03"
 
 source:
   swpc_kp_url: "https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json"
   cache: data/space_weather_cache/kp_index.json
 
+historical:
+  gfz_kp_url: "http://www-app3.gfz-potsdam.de/kp_index/Kp_ap_since_1932.txt"
+  start_year: 2018
+  end_year: 2024
+
+cache:
+  root: data/space_weather_cache
+  chunks_dir: data/space_weather_cache/chunks
+  state_file: data/space_weather_cache/ingest_state.json
+
 build:
   ingest: scripts/ingest_space_weather_swpc.py
+  chunked_ingest: scripts/ingest_space_weather_swpc_chunked.py
   benchmark: scripts/build_space_weather_benchmark.py
   output: data/space_weather_benchmark.json
 

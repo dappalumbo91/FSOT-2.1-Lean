@@ -1,4 +1,4 @@
-generated_at: '2026-07-03T15:29:26.598321+00:00'
+generated_at: '2026-07-03T15:49:28.560259+00:00'
 summary:
   neurolab_domains: 35
   extension_domains: 6
@@ -12,7 +12,7 @@ summary:
     C_thin: 6
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 54
+  lean_formal_modules: 60
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -385,9 +385,9 @@ neurolab_domains:
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
-  record_count: 6
+  record_count: 20523
   median_error_pct: 0.0
-  coverage_tier: C_thin
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.PlasmaPhysicsPriors
 - domain: Immunology
   tier: 12
@@ -415,9 +415,9 @@ extension_domains:
   lean_module: FSOT.Formal.ParticlePhysicsPriors
 - domain: Space_Weather
   tier: 17
-  record_count: 61
+  record_count: 20517
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.SpaceWeatherPriors
 intelligence_compression:
   domain: Intelligence_Compression

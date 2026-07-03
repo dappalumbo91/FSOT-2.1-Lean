@@ -1,0 +1,16 @@
+# Tier 18 — per-wave Lean modules (CosmologyWave5Priors … CosmologyWave10Priors).
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  parent_lab: cosmology_higher_waves_lab
+  waves: [5, 6, 7, 8, 9, 10]
+
+build:
+  ingest: scripts/ingest_cosmology_per_wave.py
+  generator: scripts/gen_cosmology_wave_lean.py
+  module_pattern: "FSOT.Formal.CosmologyWave{wave}Priors"
+
+verification:
+  min_observables_per_wave: 5
+  max_error_pct: 5.0

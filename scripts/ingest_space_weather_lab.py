@@ -13,10 +13,13 @@ ROOT = Path(__file__).resolve().parents[1]
 BENCH = ROOT / "data" / "space_weather_benchmark.json"
 REGISTRY = ROOT / "data" / "lab_registry.json"
 INGEST = ROOT / "scripts" / "ingest_space_weather_swpc.py"
+CHUNKED = ROOT / "scripts" / "ingest_space_weather_swpc_chunked.py"
 BUILDER = ROOT / "scripts" / "build_space_weather_benchmark.py"
 
 
 def main() -> int:
+    if CHUNKED.exists():
+        subprocess.run([sys.executable, str(CHUNKED)], cwd=ROOT, check=False)
     if INGEST.exists():
         subprocess.run([sys.executable, str(INGEST)], cwd=ROOT, check=False)
     if not BENCH.exists() and BUILDER.exists():

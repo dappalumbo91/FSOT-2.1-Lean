@@ -363,6 +363,30 @@ def build_progress() -> dict:
                 "FSOT.Formal.SpaceWeatherPriors",
             ],
         },
+        {
+            "tier": 18,
+            "name": "Per-wave cosmology + historical SWPC + plasma crosswalk",
+            "status": "complete"
+            if all(
+                (registry_full.get(f"cosmology_wave{n}_lab") or {}).get("observable_count", 0) >= 5
+                for n in (5, 6, 7, 8, 9, 10)
+            )
+            and space_weather_bench.get("kp_record_count", 0) >= 500
+            else "pending",
+            "metrics": {
+                "cosmology_wave5_observables": (registry_full.get("cosmology_wave5_lab") or {}).get("observable_count"),
+                "cosmology_wave8_observables": (registry_full.get("cosmology_wave8_lab") or {}).get("observable_count"),
+                "space_weather_kp_records": space_weather_bench.get("kp_record_count"),
+                "plasma_crosswalk_labs": ["plasma_physics_lab", "space_weather_lab"],
+            },
+            "artifacts": [
+                "data/cosmology_per_wave_manifest.yaml",
+                "data/space_weather_manifest.yaml",
+                "FSOT.Formal.CosmologyWave5Priors",
+                "FSOT.Formal.CosmologyWave10Priors",
+                "FSOT.Formal.SpaceWeatherPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -389,7 +413,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 17 cosmo/particle deepen (astro thicken + Higgs + SWPC + waves 5–10)",
+        "current_position": "Tier 18 per-wave cosmology + historical SWPC + plasma crosswalk",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

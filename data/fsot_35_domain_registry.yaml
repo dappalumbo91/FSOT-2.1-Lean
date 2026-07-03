@@ -133,6 +133,12 @@ empirical_sources:
     labs: [blackhole_thesis]
     lean_domain: blackhole
 
+# Extension domain empirical crosswalk (beyond 35-domain NeuroLab table)
+extension_empirical_sources:
+  Plasma_Physics:
+    labs: [plasma_physics_lab, space_weather_lab]
+    lean_domain: fusion
+
 verification:
   min_domain_count: 35
   min_empirical_domains: 28
@@ -156,7 +162,9 @@ fsot_20_reference:
     Plasma_Physics:
       D_eff: 14
       observed: true
-      maps_to_lean: [energy, fusion]
+      maps_to_lean: [energy, fusion, plasma]
+      labs: [plasma_physics_lab, space_weather_lab]
+      lean_domain: fusion
     Immunology:
       D_eff: 13
       observed: true

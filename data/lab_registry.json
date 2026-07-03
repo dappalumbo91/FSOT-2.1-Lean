@@ -49220,11 +49220,71 @@
     "ingested_at": "2026-07-03T15:26:11.792009+00:00"
   },
   "space_weather_lab": {
-    "kp_record_count": 61,
-    "ap_record_count": 61,
-    "observable_count": 61,
-    "stability_match_rate": 0.9508196721311475,
+    "kp_record_count": 20517,
+    "ap_record_count": 20517,
+    "observable_count": 20517,
+    "stability_match_rate": 0.9998537797923673,
     "fusion_scalar_S": 0.7869745016115727,
-    "ingested_at": "2026-07-03T15:26:42.329595+00:00"
+    "ingested_at": "2026-07-03T15:48:56.505757+00:00"
+  },
+  "cosmology_wave5_lab": {
+    "wave": 5,
+    "observable_count": 22,
+    "measured_count": 22,
+    "max_error_pct": 0.09098602506082563,
+    "mean_error_pct": 0.018367234034056677,
+    "median_error_pct": 0.0020773615251059676,
+    "ingested_at": "2026-07-03T15:48:45.067367+00:00",
+    "parent_lab": "cosmology_higher_waves_lab"
+  },
+  "cosmology_wave6_lab": {
+    "wave": 6,
+    "observable_count": 22,
+    "measured_count": 22,
+    "max_error_pct": 0.031298130508454446,
+    "mean_error_pct": 0.0030742870216562625,
+    "median_error_pct": 0.0003441841587202251,
+    "ingested_at": "2026-07-03T15:48:45.067367+00:00",
+    "parent_lab": "cosmology_higher_waves_lab"
+  },
+  "cosmology_wave7_lab": {
+    "wave": 7,
+    "observable_count": 29,
+    "measured_count": 29,
+    "max_error_pct": 0.2980550885153489,
+    "mean_error_pct": 0.026245344277916752,
+    "median_error_pct": 0.003988029700396626,
+    "ingested_at": "2026-07-03T15:48:45.067367+00:00",
+    "parent_lab": "cosmology_higher_waves_lab"
+  },
+  "cosmology_wave8_lab": {
+    "wave": 8,
+    "observable_count": 52,
+    "measured_count": 52,
+    "max_error_pct": 4.232801452006084,
+    "mean_error_pct": 0.18958827252035676,
+    "median_error_pct": 0.014206603092685816,
+    "ingested_at": "2026-07-03T15:48:45.067367+00:00",
+    "parent_lab": "cosmology_higher_waves_lab"
+  },
+  "cosmology_wave9_lab": {
+    "wave": 9,
+    "observable_count": 7,
+    "measured_count": 7,
+    "max_error_pct": 0.19375824846825943,
+    "mean_error_pct": 0.06422582634391334,
+    "median_error_pct": 0.014278509753575246,
+    "ingested_at": "2026-07-03T15:48:45.067367+00:00",
+    "parent_lab": "cosmology_higher_waves_lab"
+  },
+  "cosmology_wave10_lab": {
+    "wave": 10,
+    "observable_count": 10,
+    "measured_count": 10,
+    "max_error_pct": 0.004079227596853056,
+    "mean_error_pct": 0.0008099828122291297,
+    "median_error_pct": 0.0006556117321513212,
+    "ingested_at": "2026-07-03T15:48:45.067367+00:00",
+    "parent_lab": "cosmology_higher_waves_lab"
   }
 }

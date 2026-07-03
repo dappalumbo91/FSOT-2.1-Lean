@@ -9,10 +9,12 @@ extension_domains:
     delta_psi: 0.85
     recent_hits: 1
     observed: true
-    maps_to_lean: [energy, fusion]
+    maps_to_lean: [energy, fusion, plasma]
+    labs: [plasma_physics_lab, space_weather_lab]
     benchmark_script: scripts/build_plasma_physics_benchmark.py
     benchmark_data: data/plasma_physics_benchmark.json
     lean_module: FSOT.Formal.PlasmaPhysicsPriors
+    note: "MHD beta proxy + NOAA/GFZ Kp storm classifier via space_weather_lab"
 
   Immunology:
     tier: 12
