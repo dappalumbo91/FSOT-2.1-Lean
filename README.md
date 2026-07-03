@@ -27,14 +27,14 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-03 — Tier 26)
+## Verification status (2026-07-03 — Tier 27)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
 Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
 
-- **26/26 verification tiers complete** (thin-domain JPL/plasma thicken + Geochemistry/Oncology/Neuroimmunology)
-- **58+ scientific domains** (35 NeuroLab + 23 extension bridges)
+- **27/27 verification tiers complete** (Synthetic Biology, Quantum Materials, multi-hero, climate 30×50yr)
+- **62+ scientific domains** (35 NeuroLab + 26 extension bridges)
 - **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
@@ -73,6 +73,10 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - Geochemistry (`FSOT.Formal.GeochemistryPriors`) — SMILES mineral/geo sections + planetary bulk-density overlap
 - Oncology (`FSOT.Formal.OncologyPriors`) — SMILES drug/enzyme affinity + biology strict operon bridge
 - Neuroimmunology (`FSOT.Formal.NeuroimmunologyPriors`) — immunology SMILES + Allen neuron cohort strata crosswalk
+- Synthetic biology (`FSOT.Formal.SyntheticBiologyPriors`) — evolution mt-operons + biology strict NCBI bridge
+- Quantum materials (`FSOT.Formal.QuantumMaterialsPriors`) — condensed-matter SMILES (band gaps, Tc, lattice)
+- Neuron multi-hero (`FSOT.Formal.NeuronMultiHeroPriors`) — 4 FI-proxy certified heroes per Allen class
+- Climate scale-up (`FSOT.Formal.ClimateSciencePriors`) — **30 stations × 50 years** (24 train / 6 holdout gates)
 - Kronos metrology (`FSOT.Formal.KronosPriors`) — 568 runs, best fractional error 1.64e-7
 - Knowledge base (`FSOT.Formal.KnowledgeBasePriors`) — 19,213 catalog formulas; 7,941 strict-empirical bridge (6,921 within 2%); per-formula pass on full catalog
 - Math generator (`FSOT.Formal.MathGeneratorPriors`) — 7 comparisons within 2%

@@ -1,8 +1,8 @@
-generated_at: '2026-07-03T17:56:42.368570+00:00'
+generated_at: '2026-07-03T23:23:24.415386+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 23
-  total_scientific_domains_covered: 59
+  extension_domains: 26
+  total_scientific_domains_covered: 62
   total_empirical_records: 261401
   domains_target_band_2pct: 35
   domains_sign_mismatch: 0
@@ -12,7 +12,7 @@ summary:
     C_thin: 6
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 78
+  lean_formal_modules: 81
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -397,7 +397,7 @@ extension_domains:
   lean_module: FSOT.Formal.ImmunologyPriors
 - domain: Climate_Science
   tier: 12
-  record_count: 9439
+  record_count: 17296
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.ClimateSciencePriors
@@ -521,6 +521,24 @@ extension_domains:
   median_error_pct: 0.431577
   coverage_tier: B_verified
   lean_module: FSOT.Formal.NeuroimmunologyPriors
+- domain: Synthetic_Biology
+  tier: 27
+  record_count: 21
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.SyntheticBiologyPriors
+- domain: Quantum_Materials
+  tier: 27
+  record_count: 168
+  median_error_pct: 0.857198
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.QuantumMaterialsPriors
+- domain: Neuron_Multi_Hero
+  tier: 27
+  record_count: 16
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.NeuronMultiHeroPriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572
@@ -535,56 +553,76 @@ specialized_bridges:
     train:
       stations:
       - USC00053005
+      - USW00003031
       - USW00003928
       - USW00012836
       - USW00012918
       - USW00012960
+      - USW00013723
       - USW00013739
       - USW00013743
       - USW00013874
       - USW00013881
+      - USW00013958
       - USW00014819
+      - USW00014822
       - USW00014922
       - USW00014933
       - USW00014939
+      - USW00023050
       - USW00023174
       - USW00023188
+      - USW00023234
       - USW00024057
-      station_count: 16
-      record_count: 7519
+      - USW00024193
+      - USW00093721
+      station_count: 24
+      record_count: 13700
       median_error_pct: 0.0
     holdout:
       stations:
       - USW00012839
       - USW00023169
+      - USW00023185
       - USW00024233
+      - USW00026616
       - USW00094728
-      station_count: 4
-      record_count: 1920
+      station_count: 6
+      record_count: 3596
       median_error_pct: 0.0
     holdout_median_error_max_pct: 5.0
     holdout_min_records: 200
     train_station_ids:
     - USC00053005
+    - USW00003031
     - USW00003928
     - USW00012836
     - USW00012918
     - USW00012960
+    - USW00013723
     - USW00013739
     - USW00013743
     - USW00013874
     - USW00013881
+    - USW00013958
     - USW00014819
+    - USW00014822
     - USW00014922
     - USW00014933
     - USW00014939
+    - USW00023050
     - USW00023174
     - USW00023188
+    - USW00023234
     - USW00024057
+    - USW00024193
+    - USW00093721
     holdout_station_ids:
     - USW00012839
     - USW00023169
+    - USW00023185
     - USW00024233
+    - USW00026616
     - USW00094728
   neuron_train_holdout:
     train_cells: 1745
@@ -617,18 +655,15 @@ thin_empirical_coverage:
 - Sociology
 authority_dispersal_domains: []
 expansion_candidates:
-- id: Synthetic_Biology
-  rationale: Biology strict + evolution operons; iGEM benchmarks
-  priority: medium
-- id: Quantum_Materials
-  rationale: Condensed matter SMILES depth; dedicated lab thin
-  priority: low
 - id: Econometrics
   rationale: Economics uses linguistics proxy only
   priority: low
+- id: iGEM_Synthetic_Biology
+  rationale: Dedicated iGEM parts-registry strict-empirical bridge
+  priority: medium
 recommended_next_waves:
-- "Scale climate to 20 stations \xD7 40 years with holdout station gates (in progress)"
 - NSIDC/GRACE direct cryosphere mass-balance ingest (beyond NCEI proxy)
-- "Multi-hero neuron certification (3\u20135 specimens per Allen class)"
-- Synthetic biology iGEM strict-empirical bridge
-- Quantum materials dedicated SMILES depth lab
+- Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens
+- iGEM parts-registry strict-empirical synthetic biology bridge
+- Econometrics real macro time-series (beyond linguistics proxy)
+- "Climate scale to 40 stations \xD7 60 years"

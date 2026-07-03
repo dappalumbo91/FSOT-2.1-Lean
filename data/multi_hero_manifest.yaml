@@ -1,0 +1,23 @@
+# Tier 27 — multi-hero FI-proxy certification (4 heroes × 4 Allen classes).
+version: "1.0"
+updated: "2026-07-03"
+
+D_eff: 14
+neuron_cohort_manifest: data/neuron_cohort_manifest.yaml
+heroes_per_class: 4
+fi_cert_threshold: 0.05
+
+build:
+  benchmark: scripts/build_multi_hero_benchmark.py
+  output: data/multi_hero_benchmark.json
+
+lean:
+  generator: scripts/gen_multi_hero_lean.py
+  module: FSOT.Formal.NeuronMultiHeroPriors
+  lean_domain: neural
+  sign_theorem: neural_raw_S_positive
+
+verification:
+  min_records: 12
+  max_median_error_pct: 5.0
+  max_median_fi_proxy_rel_err_pct: 30.0

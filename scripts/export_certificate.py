@@ -110,6 +110,9 @@ LEAN_TARGETS = [
     "FSOT.Formal.GeochemistryPriors",
     "FSOT.Formal.OncologyPriors",
     "FSOT.Formal.NeuroimmunologyPriors",
+    "FSOT.Formal.SyntheticBiologyPriors",
+    "FSOT.Formal.QuantumMaterialsPriors",
+    "FSOT.Formal.NeuronMultiHeroPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

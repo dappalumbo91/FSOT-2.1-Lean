@@ -1,6 +1,6 @@
 # NOAA NCEI GHCND chunked ingest — memory-safe year-by-year streaming.
-version: "1.1"
-updated: "2026-07-01"
+version: "1.2"
+updated: "2026-07-03"
 
 source:
   name: NOAA_NCEI_GHCND
@@ -119,9 +119,59 @@ stations:
     lat: 42.95
     lon: -87.90
     zone: great_lakes
+  - id: USW00024193
+    name: Anchorage AK
+    lat: 61.17
+    lon: -150.20
+    zone: arctic
+  - id: USW00026616
+    name: Honolulu HI
+    lat: 21.32
+    lon: -157.92
+    zone: tropical_pacific
+  - id: USW00003031
+    name: Albuquerque NM
+    lat: 35.04
+    lon: -106.62
+    zone: desert_southwest
+  - id: USW00023050
+    name: Salt Lake City Intl UT
+    lat: 40.79
+    lon: -111.97
+    zone: mountain_west
+  - id: USW00023185
+    name: Las Vegas NV
+    lat: 36.08
+    lon: -115.15
+    zone: desert
+  - id: USW00013958
+    name: St Louis MO
+    lat: 38.75
+    lon: -90.37
+    zone: midwest
+  - id: USW00014822
+    name: Detroit MI
+    lat: 42.23
+    lon: -83.35
+    zone: great_lakes
+  - id: USW00013723
+    name: Charlotte NC
+    lat: 35.21
+    lon: -80.94
+    zone: southeast
+  - id: USW00093721
+    name: Raleigh NC
+    lat: 35.77
+    lon: -78.64
+    zone: mid_atlantic
+  - id: USW00023234
+    name: Sacramento CA
+    lat: 38.51
+    lon: -121.50
+    zone: pacific_southwest
 
 ingest:
-  start_year: 1985
+  start_year: 1975
   end_year: 2024
   elements: [TMAX, TMIN, TAVG, PRCP]
   chunk_key_format: "{station_id}_{year}"
@@ -145,11 +195,21 @@ cohort:
     - USW00013874
     - USW00014933
     - USW00024057
+    - USW00024193
+    - USW00003031
+    - USW00023050
+    - USW00013958
+    - USW00014822
+    - USW00013723
+    - USW00093721
+    - USW00023234
   holdout_stations:
     - USW00094728
     - USW00024233
     - USW00023169
     - USW00012839
+    - USW00026616
+    - USW00023185
   holdout_median_error_max_pct: 5.0
   holdout_min_records: 200
 

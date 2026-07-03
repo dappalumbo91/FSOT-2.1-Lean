@@ -1,4 +1,4 @@
-generated_at: '2026-07-03T17:56:42.527514+00:00'
+generated_at: '2026-07-03T23:23:24.572833+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,14 +6,14 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 78
+  lean_formal_modules: 81
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: false
-  tiers_complete: 24
-  tiers_total: 24
+  tiers_complete: 25
+  tiers_total: 25
   percent_complete: 100.0
-current_tier: Tier 26 Thin-domain thicken + Geochemistry/Oncology/Neuroimmunology
+current_tier: Tier 27 Synthetic Biology/Quantum Materials + multi-hero + climate scale-up
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -423,7 +423,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: false
-scientific_domains_covered: 59
+scientific_domains_covered: 62
 total_empirical_records: 261401
 tier_coverage:
 - tier: 1
@@ -483,6 +483,7 @@ tier_coverage:
   - NeuronCohortStrataPriors
   - NeuronCohortTrainHoldoutPriors
   - NeuronHybridPriors
+  - NeuronMultiHeroPriors
   - OncologyPriors
   - OrbitalMechanicsPriors
   - ParticlePhysicsPriors
@@ -492,12 +493,14 @@ tier_coverage:
   - PlanetaryStructurePriors
   - PlasmaPhysicsPriors
   - ProteinPriors
+  - QuantumMaterialsPriors
   - SeismologyDeepPriors
   - SeismologyPriors
   - SmallBodyOrbitsPriors
   - SoulSiblingPriors
   - SpaceWeatherPriors
   - SpeciesPriors
+  - SyntheticBiologyPriors
   - TectonicsPriors
   - ThesisSimulationPriors
   - TrinaryFluidPriors
@@ -577,7 +580,7 @@ tier_coverage:
   metrics:
     plasma_records: 20
     immunology_records: 84
-    climate_months: 9439
+    climate_months: 17296
     biology_strict_records: 16
   artifacts:
   - FSOT.Formal.PlasmaPhysicsPriors
@@ -601,14 +604,14 @@ tier_coverage:
   name: Climate scale cohort + neuron train/holdout + scientific domain map
   status: complete
   metrics:
-    climate_total_months: 9439
-    climate_holdout_months: 1920
+    climate_total_months: 17296
+    climate_holdout_months: 3596
     climate_holdout_median_err: 0.0
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 52
-    expansion_candidates: 6
+    scientific_domains_covered: 59
+    expansion_candidates: 3
   artifacts:
   - data/climate_ncei_manifest.yaml
   - data/neuron_cohort_train_holdout.json
@@ -862,6 +865,26 @@ tier_coverage:
   - FSOT.Formal.GeochemistryPriors
   - FSOT.Formal.OncologyPriors
   - FSOT.Formal.NeuroimmunologyPriors
+- tier: 27
+  name: Synthetic Biology/Quantum Materials + multi-hero + climate scale-up
+  status: complete
+  metrics:
+    synthetic_biology_records: 21
+    quantum_materials_records: 168
+    multi_hero_records: 16
+    multi_hero_median_fi_proxy_pct: 0.22565
+    climate_station_count: 30
+    climate_record_count: 17296
+    climate_holdout_records: 3596
+    climate_holdout_median_error_pct: 0.0
+  artifacts:
+  - data/synthetic_biology_manifest.yaml
+  - data/quantum_materials_manifest.yaml
+  - data/multi_hero_manifest.yaml
+  - data/climate_ncei_manifest.yaml
+  - FSOT.Formal.SyntheticBiologyPriors
+  - FSOT.Formal.QuantumMaterialsPriors
+  - FSOT.Formal.NeuronMultiHeroPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -877,7 +900,7 @@ extension_domains:
   lean_module: FSOT.Formal.ImmunologyPriors
 - domain: Climate_Science
   tier: 12
-  record_count: 9439
+  record_count: 17296
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.ClimateSciencePriors
@@ -1001,6 +1024,24 @@ extension_domains:
   median_error_pct: 0.431577
   coverage_tier: B_verified
   lean_module: FSOT.Formal.NeuroimmunologyPriors
+- domain: Synthetic_Biology
+  tier: 27
+  record_count: 21
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.SyntheticBiologyPriors
+- domain: Quantum_Materials
+  tier: 27
+  record_count: 168
+  median_error_pct: 0.857198
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.QuantumMaterialsPriors
+- domain: Neuron_Multi_Hero
+  tier: 27
+  record_count: 16
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.NeuronMultiHeroPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1225,6 +1266,38 @@ theory_crosswalk:
     - FSOT.Formal.NeuroimmunologyPriors
     - FSOT.Formal.ImmunologyPriors
     - FSOT.Formal.NeuronCohortPriors
+  Synthetic_Biology:
+    tier: 27
+    D_eff: 14
+    maps_to_lean:
+    - biological
+    - medical
+    labs:
+    - synthetic_biology_lab
+    - evolution_lab
+    - biology_strict_lab
+    lean_module: FSOT.Formal.SyntheticBiologyPriors
+  Quantum_Materials:
+    tier: 27
+    D_eff: 16
+    maps_to_lean:
+    - material
+    - quantum
+    labs:
+    - quantum_materials_lab
+    - smiles_lab
+    lean_module: FSOT.Formal.QuantumMaterialsPriors
+  Neuron_Multi_Hero:
+    tier: 27
+    D_eff: 14
+    maps_to_lean:
+    - neural
+    labs:
+    - multi_hero_lab
+    - neuron_cohort_lab
+    lean_modules:
+    - FSOT.Formal.NeuronMultiHeroPriors
+    - FSOT.Formal.NeuronCohortPriors
 lean_formal_modules:
 - AetherPrimePriors
 - BiologyStrictEmpiricalPriors
@@ -1272,6 +1345,7 @@ lean_formal_modules:
 - NeuronCohortStrataPriors
 - NeuronCohortTrainHoldoutPriors
 - NeuronHybridPriors
+- NeuronMultiHeroPriors
 - OncologyPriors
 - OrbitalMechanicsPriors
 - ParticlePhysicsPriors
@@ -1280,12 +1354,14 @@ lean_formal_modules:
 - PlanetaryStructurePriors
 - PlasmaPhysicsPriors
 - ProteinPriors
+- QuantumMaterialsPriors
 - SeismologyDeepPriors
 - SeismologyPriors
 - SmallBodyOrbitsPriors
 - SoulSiblingPriors
 - SpaceWeatherPriors
 - SpeciesPriors
+- SyntheticBiologyPriors
 - TectonicsPriors
 - ThesisSimulationPriors
 - TrinaryFluidPriors

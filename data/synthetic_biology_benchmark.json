@@ -1,0 +1,212 @@
+{
+  "generated_at": "2026-07-03T22:49:59.023673+00:00",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\evolution_operon_benchmark.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\biology_strict_empirical.json"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "medical"
+  ],
+  "D_eff": 14,
+  "record_count": 21,
+  "observable_count": 21,
+  "evolution_record_count": 12,
+  "biology_strict_record_count": 16,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND1",
+      "computed": 956,
+      "measured": 956,
+      "error_pct": 0.0,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND2",
+      "computed": 1042,
+      "measured": 1044,
+      "error_pct": 0.19157088122605362,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-CO1",
+      "computed": 1542,
+      "measured": 1542,
+      "error_pct": 0.0,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-CO2",
+      "computed": 684,
+      "measured": 684,
+      "error_pct": 0.0,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ATP8",
+      "computed": 207,
+      "measured": 207,
+      "error_pct": 0.0,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ATP6",
+      "computed": 681,
+      "measured": 681,
+      "error_pct": 0.0,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-CO3",
+      "computed": 784,
+      "measured": 780,
+      "error_pct": 0.5128205128205128,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND3",
+      "computed": 346,
+      "measured": 349,
+      "error_pct": 0.8595988538681949,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND4L",
+      "computed": 297,
+      "measured": 297,
+      "error_pct": 0.0,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND4",
+      "computed": 1378,
+      "measured": 1378,
+      "error_pct": 0.0,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND5",
+      "computed": 1812,
+      "measured": 1812,
+      "error_pct": 0.0,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND6",
+      "computed": 525,
+      "measured": 525,
+      "error_pct": 0.0,
+      "source": "evolution_lab"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_length",
+      "name": "MT-CYTB",
+      "computed": 1141,
+      "measured": 1140,
+      "error_pct": 0.08771929824561403,
+      "source": "biology_strict_lab",
+      "strict": true
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_operon_count",
+      "name": "human_mt_protein_genes",
+      "computed": 13,
+      "measured": 13,
+      "error_pct": 0.0,
+      "source": "biology_strict_lab",
+      "strict": true
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_coding_bp_sum",
+      "name": "human_mt_coding_bp",
+      "computed": 11395,
+      "measured": 11395,
+      "error_pct": 0.0,
+      "source": "biology_strict_lab",
+      "strict": true
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "mt_genome_bp",
+      "name": "NC_012920.1",
+      "computed": 11395,
+      "measured": 16569,
+      "error_pct": 31.22699016235138,
+      "source": "biology_strict_lab",
+      "strict": false
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "bio_constant",
+      "name": "human_body_temp_c",
+      "computed": 37.016455,
+      "measured": 37.0,
+      "error_pct": 0.04447250077037312,
+      "source": "fsot_biology_scalar"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "bio_constant",
+      "name": "blood_ph",
+      "computed": 7.403291,
+      "measured": 7.4,
+      "error_pct": 0.04447250077037072,
+      "source": "fsot_biology_scalar"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "bio_constant",
+      "name": "mt_genome_bp",
+      "computed": 16576.368649,
+      "measured": 16569.0,
+      "error_pct": 0.044472500770367254,
+      "source": "fsot_biology_scalar"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "bio_constant",
+      "name": "human_genome_gbp",
+      "computed": 3.201423,
+      "measured": 3.2,
+      "error_pct": 0.04447250077037335,
+      "source": "fsot_biology_scalar"
+    },
+    {
+      "lab": "synthetic_biology_lab",
+      "property": "bio_constant",
+      "name": "rbc_diameter_um",
+      "computed": 7.503335,
+      "measured": 7.5,
+      "error_pct": 0.0444725007703776,
+      "source": "fsot_biology_scalar"
+    }
+  ]
+}

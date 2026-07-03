@@ -71,6 +71,9 @@ def build_progress() -> dict:
     geochemistry_bench = _load_json(ROOT / "data" / "geochemistry_benchmark.json")
     oncology_bench = _load_json(ROOT / "data" / "oncology_benchmark.json")
     neuroimmunology_bench = _load_json(ROOT / "data" / "neuroimmunology_benchmark.json")
+    synthetic_bio_bench = _load_json(ROOT / "data" / "synthetic_biology_benchmark.json")
+    quantum_materials_bench = _load_json(ROOT / "data" / "quantum_materials_benchmark.json")
+    multi_hero_bench = _load_json(ROOT / "data" / "multi_hero_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -638,11 +641,42 @@ def build_progress() -> dict:
                 "FSOT.Formal.NeuroimmunologyPriors",
             ],
         },
+        {
+            "tier": 27,
+            "name": "Synthetic Biology/Quantum Materials + multi-hero + climate scale-up",
+            "status": "complete"
+            if synthetic_bio_bench.get("record_count", 0) >= 20
+            and quantum_materials_bench.get("record_count", 0) >= 50
+            and multi_hero_bench.get("record_count", 0) >= 12
+            and climate_bench.get("station_count", 0) >= 30
+            and (climate_bench.get("cohort") or {}).get("holdout", {}).get("record_count", 0) >= 200
+            else "pending",
+            "metrics": {
+                "synthetic_biology_records": synthetic_bio_bench.get("record_count"),
+                "quantum_materials_records": quantum_materials_bench.get("record_count"),
+                "multi_hero_records": multi_hero_bench.get("record_count"),
+                "multi_hero_median_fi_proxy_pct": multi_hero_bench.get("median_fi_proxy_rel_err_pct"),
+                "climate_station_count": climate_bench.get("station_count"),
+                "climate_record_count": climate_bench.get("record_count"),
+                "climate_holdout_records": (climate_bench.get("cohort") or {}).get("holdout", {}).get("record_count"),
+                "climate_holdout_median_error_pct": (climate_bench.get("cohort") or {})
+                .get("holdout", {})
+                .get("median_error_pct"),
+            },
+            "artifacts": [
+                "data/synthetic_biology_manifest.yaml",
+                "data/quantum_materials_manifest.yaml",
+                "data/multi_hero_manifest.yaml",
+                "data/climate_ncei_manifest.yaml",
+                "FSOT.Formal.SyntheticBiologyPriors",
+                "FSOT.Formal.QuantumMaterialsPriors",
+                "FSOT.Formal.NeuronMultiHeroPriors",
+            ],
+        },
     ]
 
     next_steps = [
-        "Per-stratum hybrid FI sim (not just slope proxy) for top specimens per class",
-        "Multi-hero held-out: certify 3–5 specimens per Sst/PV/VIP/L2/3",
+        "Per-stratum hybrid FI sim (not just slope proxy) for multi-hero specimens",
         "Tighten canonical bridge per-class using psi_con/eta_eff only",
         "Wire remaining LLM experiment folders into Lean namespaces",
         "Cohort train/holdout split with Lean regression gates",
@@ -664,7 +698,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 26 Thin-domain thicken + Geochemistry/Oncology/Neuroimmunology",
+        "current_position": "Tier 27 Synthetic Biology/Quantum Materials + multi-hero + climate scale-up",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

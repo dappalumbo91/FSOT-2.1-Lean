@@ -39,6 +39,9 @@ DEDICATED_GENERATORS = {
     "Geochemistry",
     "Oncology",
     "Neuroimmunology",
+    "Synthetic_Biology",
+    "Quantum_Materials",
+    "Neuron_Multi_Hero",
 }
 
 LEAN_SIGN = {
@@ -65,6 +68,9 @@ LEAN_SIGN = {
     "Geochemistry": ("galactic", "galactic_raw_S_positive"),
     "Oncology": ("medical", "medical_raw_S_positive"),
     "Neuroimmunology": ("medical", "medical_raw_S_positive"),
+    "Synthetic_Biology": ("biological", "biological_raw_S_positive"),
+    "Quantum_Materials": ("material", "material_raw_S_positive"),
+    "Neuron_Multi_Hero": ("neural", "neural_raw_S_positive"),
 }
 
 

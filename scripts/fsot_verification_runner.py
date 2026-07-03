@@ -198,6 +198,9 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.GeochemistryPriors",
                 "FSOT.Formal.OncologyPriors",
                 "FSOT.Formal.NeuroimmunologyPriors",
+                "FSOT.Formal.SyntheticBiologyPriors",
+                "FSOT.Formal.QuantumMaterialsPriors",
+                "FSOT.Formal.NeuronMultiHeroPriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -760,6 +763,9 @@ def main() -> int:
             "build_geochemistry_benchmark.py",
             "build_oncology_benchmark.py",
             "build_neuroimmunology_benchmark.py",
+            "build_synthetic_biology_benchmark.py",
+            "build_quantum_materials_benchmark.py",
+            "build_multi_hero_benchmark.py",
             "ingest_climate_ncei_chunked.py",
             "build_climate_observed_benchmark.py",
         ):
@@ -844,6 +850,9 @@ def main() -> int:
             (None, "gen_geochemistry_lean.py", "GeochemistryPriors.lean generation failed", None),
             (None, "gen_oncology_lean.py", "OncologyPriors.lean generation failed", None),
             (None, "gen_neuroimmunology_lean.py", "NeuroimmunologyPriors.lean generation failed", None),
+            (None, "gen_synthetic_biology_lean.py", "SyntheticBiologyPriors.lean generation failed", None),
+            (None, "gen_quantum_materials_lean.py", "QuantumMaterialsPriors.lean generation failed", None),
+            (None, "gen_multi_hero_lean.py", "NeuronMultiHeroPriors.lean generation failed", None),
         ]
         for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
             if ingest_name:

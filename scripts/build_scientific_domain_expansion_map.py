@@ -19,9 +19,8 @@ OUTPUT_YAML = ROOT / "data" / "scientific_domain_expansion_map.yaml"
 
 # Candidate domains beyond current 35 + 4 extensions (FSOT 2.0 expansion arc)
 EXPANSION_CANDIDATES = [
-    {"id": "Synthetic_Biology", "rationale": "Biology strict + evolution operons; iGEM benchmarks", "priority": "medium"},
-    {"id": "Quantum_Materials", "rationale": "Condensed matter SMILES depth; dedicated lab thin", "priority": "low"},
     {"id": "Econometrics", "rationale": "Economics uses linguistics proxy only", "priority": "low"},
+    {"id": "iGEM_Synthetic_Biology", "rationale": "Dedicated iGEM parts-registry strict-empirical bridge", "priority": "medium"},
 ]
 
 
@@ -180,11 +179,11 @@ def build_map() -> dict:
         "authority_dispersal_domains": sorted(set(sign_dispersal)),
         "expansion_candidates": EXPANSION_CANDIDATES,
         "recommended_next_waves": [
-            "Scale climate to 20 stations × 40 years with holdout station gates (in progress)",
             "NSIDC/GRACE direct cryosphere mass-balance ingest (beyond NCEI proxy)",
-            "Multi-hero neuron certification (3–5 specimens per Allen class)",
-            "Synthetic biology iGEM strict-empirical bridge",
-            "Quantum materials dedicated SMILES depth lab",
+            "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens",
+            "iGEM parts-registry strict-empirical synthetic biology bridge",
+            "Econometrics real macro time-series (beyond linguistics proxy)",
+            "Climate scale to 40 stations × 60 years",
         ],
     }
 

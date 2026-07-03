@@ -146,6 +146,27 @@ verified_extension_domains:
     labs: [neuroimmunology_lab, immunology_lab, neuron_cohort_lab]
     lean_modules: [FSOT.Formal.NeuroimmunologyPriors, FSOT.Formal.ImmunologyPriors, FSOT.Formal.NeuronCohortPriors]
 
+  Synthetic_Biology:
+    tier: 27
+    D_eff: 14
+    maps_to_lean: [biological, medical]
+    labs: [synthetic_biology_lab, evolution_lab, biology_strict_lab]
+    lean_module: FSOT.Formal.SyntheticBiologyPriors
+
+  Quantum_Materials:
+    tier: 27
+    D_eff: 16
+    maps_to_lean: [material, quantum]
+    labs: [quantum_materials_lab, smiles_lab]
+    lean_module: FSOT.Formal.QuantumMaterialsPriors
+
+  Neuron_Multi_Hero:
+    tier: 27
+    D_eff: 14
+    maps_to_lean: [neural]
+    labs: [multi_hero_lab, neuron_cohort_lab]
+    lean_modules: [FSOT.Formal.NeuronMultiHeroPriors, FSOT.Formal.NeuronCohortPriors]
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

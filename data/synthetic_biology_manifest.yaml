@@ -1,0 +1,19 @@
+# Tier 27 — evolution operons + biology strict NCBI bridge.
+version: "1.0"
+updated: "2026-07-03"
+
+D_eff: 14
+
+build:
+  benchmark: scripts/build_synthetic_biology_benchmark.py
+  output: data/synthetic_biology_benchmark.json
+
+lean:
+  generator: scripts/gen_synthetic_biology_lean.py
+  module: FSOT.Formal.SyntheticBiologyPriors
+  lean_domain: biological
+  sign_theorem: biological_raw_S_positive
+
+verification:
+  min_records: 20
+  max_median_error_pct: 5.0

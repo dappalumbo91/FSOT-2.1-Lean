@@ -31,7 +31,7 @@ extension_domains:
     tier: 12
     D_eff: 16
     delta_psi: 0.75
-    recent_hits: 2
+    recent_hits: 3
     observed: true
     maps_to_lean: [energy, galactic]
     ingest_script: scripts/ingest_climate_ncei_chunked.py
@@ -40,7 +40,7 @@ extension_domains:
     manifest: data/climate_ncei_manifest.yaml
     benchmark_data: data/climate_observed_benchmark.json
     lean_module: FSOT.Formal.ClimateSciencePriors
-    note: "Chunked NOAA NCEI GHCND by-year streaming; Open-Meteo fallback if cache empty"
+    note: "30-station × 50-year NOAA NCEI GHCND cohort (24 train / 6 holdout gates)"
 
   Cosmology_Extended:
     tier: 16
@@ -309,6 +309,45 @@ extension_domains:
     benchmark_data: data/neuroimmunology_benchmark.json
     lean_module: FSOT.Formal.NeuroimmunologyPriors
     note: "Immunology SMILES + Allen neuron cohort strata FI coupling crosswalk"
+
+  Synthetic_Biology:
+    tier: 27
+    D_eff: 14
+    delta_psi: 0.65
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, medical]
+    build_script: scripts/build_synthetic_biology_benchmark.py
+    manifest: data/synthetic_biology_manifest.yaml
+    benchmark_data: data/synthetic_biology_benchmark.json
+    lean_module: FSOT.Formal.SyntheticBiologyPriors
+    note: "Evolution mt-operons + biology strict NCBI operon bridge"
+
+  Quantum_Materials:
+    tier: 27
+    D_eff: 16
+    delta_psi: 0.7
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, quantum]
+    build_script: scripts/build_quantum_materials_benchmark.py
+    manifest: data/quantum_materials_manifest.yaml
+    benchmark_data: data/quantum_materials_benchmark.json
+    lean_module: FSOT.Formal.QuantumMaterialsPriors
+    note: "Condensed-matter SMILES — band gaps, Tc, lattice, magnetic ordering"
+
+  Neuron_Multi_Hero:
+    tier: 27
+    D_eff: 14
+    delta_psi: 0.72
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [neural]
+    build_script: scripts/build_multi_hero_benchmark.py
+    manifest: data/multi_hero_manifest.yaml
+    benchmark_data: data/multi_hero_benchmark.json
+    lean_module: FSOT.Formal.NeuronMultiHeroPriors
+    note: "4 FI-proxy certified heroes per Sst/PV/VIP/L2-3 Allen class"
 
 verification:
   min_records_per_domain: 5

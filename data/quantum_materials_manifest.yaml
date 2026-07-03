@@ -1,0 +1,19 @@
+# Tier 27 — condensed-matter SMILES depth lab.
+version: "1.0"
+updated: "2026-07-03"
+
+D_eff: 16
+
+build:
+  benchmark: scripts/build_quantum_materials_benchmark.py
+  output: data/quantum_materials_benchmark.json
+
+lean:
+  generator: scripts/gen_quantum_materials_lean.py
+  module: FSOT.Formal.QuantumMaterialsPriors
+  lean_domain: material
+  sign_theorem: material_raw_S_positive
+
+verification:
+  min_records: 50
+  max_median_error_pct: 5.0
