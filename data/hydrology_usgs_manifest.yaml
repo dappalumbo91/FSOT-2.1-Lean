@@ -1,0 +1,88 @@
+# Tier 19 — USGS NWIS daily streamflow chunked ingest (climate cohort pattern).
+version: "1.0"
+updated: "2026-07-03"
+
+source:
+  name: USGS_NWIS_DV
+  description: Daily mean discharge (00060) via Water Services REST API
+  base_url: "https://waterservices.usgs.gov/nwis/dv/"
+  parameter_cd: "00060"
+
+cache:
+  root: data/hydrology_cache
+  chunks_dir: data/hydrology_cache/chunks
+  state_file: data/hydrology_cache/ingest_state.json
+
+# Reference gages — continental hydrology cohort
+stations:
+  - id: "01646500"
+    name: Potomac River near Washington DC
+    lat: 38.95
+    lon: -77.13
+    zone: mid_atlantic
+  - id: "05420500"
+    name: Cedar River at Cedar Rapids IA
+    lat: 41.97
+    lon: -91.67
+    zone: midwest
+  - id: "08013000"
+    name: Brazos River near Houston TX
+    lat: 29.77
+    lon: -95.59
+    zone: gulf
+  - id: "09402500"
+    name: Colorado River at Lees Ferry AZ
+    lat: 36.86
+    lon: -111.59
+    zone: southwest
+  - id: "06803510"
+    name: Missouri River at Hermann MO
+    lat: 38.71
+    lon: -91.43
+    zone: great_plains
+  - id: "14246900"
+    name: Columbia River at Vancouver WA
+    lat: 45.63
+    lon: -122.69
+    zone: pacific_northwest
+  - id: "023177483"
+    name: Withlacoochee River at Skipper Bridge GA
+    lat: 30.85
+    lon: -83.28
+    zone: southeast
+  - id: "03072655"
+    name: Monongahela River near Masontown PA
+    lat: 39.84
+    lon: -79.88
+    zone: northeast
+
+ingest:
+  start_year: 2015
+  end_year: 2024
+  chunk_key_format: "{station_id}_{year}"
+
+cohort:
+  train_stations:
+    - "01646500"
+    - "05420500"
+    - "08013000"
+    - "09402500"
+    - "06803510"
+    - "14246900"
+  holdout_stations:
+    - "023177483"
+    - "03072655"
+  holdout_median_error_max_pct: 5.0
+  holdout_min_records: 24
+
+benchmark:
+  output: data/hydrology_benchmark.json
+  anomaly_tolerance_pct: 25.0
+  D_eff: 15
+  min_months_total: 120
+
+lean:
+  generator: scripts/gen_hydrology_lean.py
+  module: FSOT.Formal.HydrologyPriors
+  lean_domain: energy
+  sign_theorem: energy_raw_S_positive

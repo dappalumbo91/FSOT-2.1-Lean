@@ -172,6 +172,7 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.CosmologyExtendedPriors",
                 "FSOT.Formal.ParticlePhysicsPriors",
                 "FSOT.Formal.CosmologyHigherWavesPriors",
+                "FSOT.Formal.CosmologyWave4Priors",
                 "FSOT.Formal.CosmologyWave5Priors",
                 "FSOT.Formal.CosmologyWave6Priors",
                 "FSOT.Formal.CosmologyWave7Priors",
@@ -180,6 +181,7 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.CosmologyWave10Priors",
                 "FSOT.Formal.HiggsBranchingPriors",
                 "FSOT.Formal.SpaceWeatherPriors",
+                "FSOT.Formal.HydrologyPriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -711,6 +713,8 @@ def main() -> int:
             "build_higgs_branching_benchmark.py",
             "build_space_weather_benchmark.py",
             "ingest_space_weather_swpc_chunked.py",
+            "ingest_hydrology_usgs_chunked.py",
+            "build_hydrology_benchmark.py",
             "build_plasma_physics_benchmark.py",
             "build_immunology_benchmark.py",
             "ingest_climate_ncei_chunked.py",
@@ -780,6 +784,7 @@ def main() -> int:
             ("ingest_cosmology_per_wave.py", "gen_cosmology_wave_lean.py", "CosmologyWave5-10Priors.lean generation failed", "cosmology per-wave ingest failed"),
             ("ingest_higgs_branching_lab.py", "gen_higgs_branching_lean.py", "HiggsBranchingPriors.lean generation failed", "higgs branching ingest failed"),
             ("ingest_space_weather_lab.py", "gen_space_weather_lean.py", "SpaceWeatherPriors.lean generation failed", "space weather ingest failed"),
+            ("ingest_hydrology_lab.py", "gen_hydrology_lean.py", "HydrologyPriors.lean generation failed", "hydrology ingest failed"),
         ]
         for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
             ingest_script = ROOT / "scripts" / ingest_name

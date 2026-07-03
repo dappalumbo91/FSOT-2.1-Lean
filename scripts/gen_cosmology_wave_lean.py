@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate FSOT/Formal/CosmologyWave{N}Priors.lean for waves 5–10."""
+"""Generate FSOT/Formal/CosmologyWave{N}Priors.lean for waves 4–10."""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "data" / "lab_registry.json"
 FORMAL = ROOT / "FSOT" / "Formal"
-DEFAULT_WAVES = [5, 6, 7, 8, 9, 10]
+DEFAULT_WAVES = [4, 5, 6, 7, 8, 9, 10]
 
 
 def build_lean(wave_num: int, summary: dict) -> str:

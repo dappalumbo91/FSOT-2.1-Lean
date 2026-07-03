@@ -84,6 +84,7 @@ LEAN_TARGETS = [
     "FSOT.Formal.CosmologyExtendedPriors",
     "FSOT.Formal.ParticlePhysicsPriors",
     "FSOT.Formal.CosmologyHigherWavesPriors",
+    "FSOT.Formal.CosmologyWave4Priors",
     "FSOT.Formal.CosmologyWave5Priors",
     "FSOT.Formal.CosmologyWave6Priors",
     "FSOT.Formal.CosmologyWave7Priors",
@@ -92,6 +93,7 @@ LEAN_TARGETS = [
     "FSOT.Formal.CosmologyWave10Priors",
     "FSOT.Formal.HiggsBranchingPriors",
     "FSOT.Formal.SpaceWeatherPriors",
+    "FSOT.Formal.HydrologyPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

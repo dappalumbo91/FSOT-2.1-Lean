@@ -23,7 +23,7 @@ EXPANSION_CANDIDATES = [
     {"id": "Pharmacology", "rationale": "Medical/immunology bridge; drug-target strict empirical thin", "priority": "high"},
     {"id": "Oncology", "rationale": "Biology strict + immunology extension; tumor marker benchmarks", "priority": "medium"},
     {"id": "Space_Weather", "rationale": "Plasma + climate coupling; NOAA SWPC data ingest", "priority": "high"},
-    {"id": "Hydrology", "rationale": "Climate NCEI scale-up; streamflow/USGS chunked ingest", "priority": "medium"},
+
     {"id": "Cryosphere", "rationale": "Climate + geophysics; ice-core / GRACE proxies", "priority": "medium"},
     {"id": "Neuroimmunology", "rationale": "Immunology + neuron cohort cross-domain", "priority": "medium"},
     {"id": "Synthetic_Biology", "rationale": "Biology strict + evolution operons; iGEM benchmarks", "priority": "medium"},

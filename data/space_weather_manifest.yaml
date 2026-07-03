@@ -1,5 +1,5 @@
-# Tier 17–18 — NOAA SWPC Kp/Ap + GFZ historical chunked ingest.
-version: "1.1"
+# Tier 17–19 — NOAA SWPC Kp/Ap + GFZ historical chunked ingest.
+version: "1.2"
 updated: "2026-07-03"
 
 source:
@@ -8,7 +8,7 @@ source:
 
 historical:
   gfz_kp_url: "http://www-app3.gfz-potsdam.de/kp_index/Kp_ap_since_1932.txt"
-  start_year: 2018
+  start_year: 2010
   end_year: 2024
 
 cache:

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-03T15:49:28.560259+00:00",
+  "generated_at": "2026-07-03T15:59:49.639783+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 6,
-    "total_scientific_domains_covered": 42,
+    "extension_domains": 7,
+    "total_scientific_domains_covered": 43,
     "total_empirical_records": 261401,
     "domains_target_band_2pct": 35,
     "domains_sign_mismatch": 0,
@@ -14,7 +14,7 @@
       "D_needs_work": 0,
       "unverified": 0
     },
-    "lean_formal_modules": 60
+    "lean_formal_modules": 62
   },
   "neurolab_domains": [
     {
@@ -495,7 +495,7 @@
     {
       "domain": "Plasma_Physics",
       "tier": 12,
-      "record_count": 20523,
+      "record_count": 43899,
       "median_error_pct": 0.0,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.PlasmaPhysicsPriors"
@@ -535,10 +535,18 @@
     {
       "domain": "Space_Weather",
       "tier": 17,
-      "record_count": 20517,
+      "record_count": 43893,
       "median_error_pct": 0.0,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.SpaceWeatherPriors"
+    },
+    {
+      "domain": "Hydrology",
+      "tier": 19,
+      "record_count": 960,
+      "median_error_pct": 0.0,
+      "coverage_tier": "A_strong",
+      "lean_module": "FSOT.Formal.HydrologyPriors"
     }
   ],
   "intelligence_compression": {
@@ -669,11 +677,6 @@
       "id": "Space_Weather",
       "rationale": "Plasma + climate coupling; NOAA SWPC data ingest",
       "priority": "high"
-    },
-    {
-      "id": "Hydrology",
-      "rationale": "Climate NCEI scale-up; streamflow/USGS chunked ingest",
-      "priority": "medium"
     },
     {
       "id": "Cryosphere",

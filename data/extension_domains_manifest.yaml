@@ -77,6 +77,20 @@ extension_domains:
     lean_module: FSOT.Formal.SpaceWeatherPriors
     note: "NOAA SWPC Kp/Ap chunked ingest; bridges plasma physics with cosmology-scale dispersal"
 
+  Hydrology:
+    tier: 19
+    D_eff: 15
+    delta_psi: 0.78
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, galactic]
+    ingest_script: scripts/ingest_hydrology_usgs_chunked.py
+    build_script: scripts/build_hydrology_benchmark.py
+    manifest: data/hydrology_usgs_manifest.yaml
+    benchmark_data: data/hydrology_benchmark.json
+    lean_module: FSOT.Formal.HydrologyPriors
+    note: "USGS NWIS daily streamflow chunked ingest; climate cohort train/holdout pattern"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

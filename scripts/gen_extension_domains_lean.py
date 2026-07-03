@@ -22,6 +22,7 @@ DEDICATED_GENERATORS = {
     "Cosmology_Extended",
     "Particle_Physics",
     "Space_Weather",
+    "Hydrology",
 }
 
 LEAN_SIGN = {
@@ -31,6 +32,7 @@ LEAN_SIGN = {
     "Cosmology_Extended": ("cosmological", "omega_b_h2_fsot_cached_pos"),
     "Particle_Physics": ("particle", "particle_raw_S_positive"),
     "Space_Weather": ("fusion", "fusion_raw_S_positive"),
+    "Hydrology": ("energy", "energy_raw_S_positive"),
 }
 
 

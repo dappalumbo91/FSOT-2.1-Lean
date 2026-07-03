@@ -387,6 +387,27 @@ def build_progress() -> dict:
                 "FSOT.Formal.SpaceWeatherPriors",
             ],
         },
+        {
+            "tier": 19,
+            "name": "GFZ 2010–2024 + Wave4 Priors + USGS hydrology",
+            "status": "complete"
+            if (registry_full.get("cosmology_wave4_lab") or {}).get("observable_count", 0) >= 16
+            and space_weather_bench.get("kp_record_count", 0) >= 35000
+            and _load_json(ROOT / "data" / "hydrology_benchmark.json").get("record_count", 0) >= 120
+            else "pending",
+            "metrics": {
+                "cosmology_wave4_observables": (registry_full.get("cosmology_wave4_lab") or {}).get("observable_count"),
+                "space_weather_kp_records": space_weather_bench.get("kp_record_count"),
+                "hydrology_month_records": _load_json(ROOT / "data" / "hydrology_benchmark.json").get("record_count"),
+                "gfz_year_range": [2010, 2024],
+            },
+            "artifacts": [
+                "data/space_weather_manifest.yaml",
+                "data/hydrology_usgs_manifest.yaml",
+                "FSOT.Formal.CosmologyWave4Priors",
+                "FSOT.Formal.HydrologyPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -413,7 +434,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 18 per-wave cosmology + historical SWPC + plasma crosswalk",
+        "current_position": "Tier 19 GFZ 2010–2024 + Wave4 Priors + USGS hydrology",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {
