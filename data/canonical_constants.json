@@ -1,5 +1,5 @@
 {
-  "source": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "source": "vendor/fsot_compute.py",
   "seeds": {
     "pi": "3.1415926535897932384626433832795028841971693993751",
     "e": "2.7182818284590452353602874713526624977572470937",
@@ -43,10 +43,10 @@
     "Omega_b_h2": "0.022356124082273698114310622688489593591736735542849"
   },
   "hash_gate": {
-    "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+    "authority_path": "vendor/fsot_compute.py",
     "authority_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
     "expected_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
-    "synced_at": "2026-06-20T00:39:50.088423+00:00",
+    "synced_at": "2026-07-04T17:19:07.231947+00:00",
     "known_hashes": {
       "canonical": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
       "pre_ledger_align": "EE4E02C4CD658541C019AB6F1B0649926D9319F969231E17F4987389235A83B7",
@@ -54,6 +54,15 @@
       "stale": "BF668F9E3682E7834545501BE6254E5149B0D409CE02B6976B96814E07645F57"
     },
     "mirrors": [
+      {
+        "label": "vendor",
+        "path": "vendor/fsot_compute.py",
+        "present": true,
+        "sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
+        "class": "canonical",
+        "expected_role": "canonical",
+        "matches_expected": true
+      },
       {
         "label": "authority",
         "path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",

@@ -116,11 +116,16 @@ See `REPRODUCE.md` and `docs/genomic_brain_priors_verification.md` for details.
 
 ```bash
 pip install -r requirements.txt
-python scripts/fsot_verification_runner.py
+lake build
 
-# Or Lean-only build (full module list in certificate.json lean_targets)
-lake build FSOT.Formal.Lab FSOT
+# Portable verification (clone-and-verify; no author Desktop required)
+python scripts/fsot_verification_runner.py --portable
+
+# Full pipeline (author machine with optional Desktop lab mirrors)
+python scripts/fsot_verification_runner.py
 ```
+
+Bundled oracle and lab inputs live under `vendor/`. See `CONTRIBUTING.md` and `data/external_data_manifest.yaml` for path overrides and contributor workflow.
 
 ## Alignment with Reference Files
 

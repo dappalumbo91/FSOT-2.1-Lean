@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-03T23:23:24.415386+00:00",
+  "generated_at": "2026-07-04T17:20:06.997884+00:00",
   "summary": {
     "neurolab_domains": 35,
     "extension_domains": 26,
     "total_scientific_domains_covered": 62,
-    "total_empirical_records": 261401,
-    "domains_target_band_2pct": 35,
-    "domains_sign_mismatch": 0,
+    "total_empirical_records": 305270,
+    "domains_target_band_2pct": 34,
+    "domains_sign_mismatch": 1,
     "tier_distribution": {
       "A_strong": 12,
-      "B_verified": 17,
+      "B_verified": 16,
       "C_thin": 6,
       "D_needs_work": 0,
-      "unverified": 0
+      "unverified": 1
     },
     "lean_formal_modules": 81
   },
@@ -185,15 +185,16 @@
     },
     {
       "domain": "Electromagnetism",
-      "lean_domain": "material",
-      "empirical_records": 485,
-      "median_error_pct": 0.658987,
+      "lean_domain": "electron",
+      "empirical_records": 271912,
+      "median_error_pct": 0.0,
       "precision_status": "target_band",
       "sign_mismatch": false,
       "authority_scalar_negative": false,
       "coverage_tier": "A_strong",
       "labs": [
-        "smiles_lab"
+        "smiles_lab",
+        "space_weather_lab"
       ]
     },
     {
@@ -454,15 +455,13 @@
     {
       "domain": "Seismology",
       "lean_domain": "energy",
-      "empirical_records": 47,
-      "median_error_pct": 0.0,
-      "precision_status": "target_band",
-      "sign_mismatch": false,
+      "empirical_records": 0,
+      "median_error_pct": null,
+      "precision_status": "sign_mismatch",
+      "sign_mismatch": true,
       "authority_scalar_negative": true,
-      "coverage_tier": "B_verified",
-      "labs": [
-        "weather_lab"
-      ]
+      "coverage_tier": "unverified",
+      "labs": []
     },
     {
       "domain": "Sociology",
@@ -828,7 +827,9 @@
     "Seismology",
     "Sociology"
   ],
-  "authority_dispersal_domains": [],
+  "authority_dispersal_domains": [
+    "Seismology"
+  ],
   "expansion_candidates": [
     {
       "id": "Econometrics",

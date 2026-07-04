@@ -16,7 +16,9 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from fsot_canonical_adapter import load_fsot_compute
 from fsot_hash_gate import check_authority, check_cache_gate, scan_mirrors
+from fsot_paths import authority_path_for_export, portable_mode as env_portable_mode
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "canonical_constants.json"
@@ -54,27 +56,6 @@ def append_run_log(
     RUN_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
     with RUN_LOG_PATH.open("a", encoding="utf-8") as f:
         f.write(json.dumps(entry) + "\n")
-
-CANONICAL_PATHS = [
-    Path(r"C:\Users\damia\Desktop\FSOT document update\fsot_compute.py"),
-    ROOT / "_research" / "FSOT-2.0-code" / "fsot-2.0" / "fsot_2_0.py",
-    Path(r"C:\Users\damia\Desktop\FSOT Cosmology Lab\fsot_compute.py"),
-]
-
-
-def load_fsot_compute():
-    for path in CANONICAL_PATHS:
-        if not path.exists():
-            continue
-        spec = importlib.util.spec_from_file_location("fsot_compute", path)
-        if spec is None or spec.loader is None:
-            continue
-        mod = importlib.util.module_from_spec(spec)
-        sys.modules[spec.name] = mod
-        spec.loader.exec_module(mod)
-        return mod, path
-    raise FileNotFoundError("fsot_compute.py not found in expected locations")
-
 
 def rel_err(a: float, b: float) -> float:
     if b == 0:
@@ -219,7 +200,7 @@ def run_lean_build() -> tuple[bool, str]:
 
 
 def print_mirror_scan() -> None:
-    print("\n=== Hash-gate mirrors (Desktop fsot_compute.py) ===")
+    print("\n=== Hash-gate mirrors (bundled + optional desktop fsot_compute.py) ===")
     for row in scan_mirrors():
         if not row["present"]:
             print(f"  {row['label']:14s}  MISSING")
@@ -244,9 +225,21 @@ def main() -> int:
     parser.add_argument(
         "--scan-mirrors",
         action="store_true",
-        help="Print Desktop mirror digest table and exit",
+        help="Print mirror digest table and exit",
+    )
+    parser.add_argument(
+        "--portable",
+        action="store_true",
+        help="Verify using bundled vendor assets only (no desktop lab rebuild)",
     )
     args = parser.parse_args()
+
+    if args.portable:
+        import os
+
+        os.environ["FSOT_PORTABLE"] = "1"
+
+    portable = args.portable or env_portable_mode()
 
     if args.scan_mirrors:
         print_mirror_scan()
@@ -256,19 +249,22 @@ def main() -> int:
         sync = ROOT / "scripts" / "sync_canonical_constants.py"
         subprocess.run([sys.executable, str(sync)], check=True)
 
-    fill_gaps = ROOT / "scripts" / "fill_smiles_catalog_gaps.py"
-    if fill_gaps.exists():
-        subprocess.run([sys.executable, str(fill_gaps)], cwd=ROOT, check=False)
+    if not portable:
+        fill_gaps = ROOT / "scripts" / "fill_smiles_catalog_gaps.py"
+        if fill_gaps.exists():
+            subprocess.run([sys.executable, str(fill_gaps)], cwd=ROOT, check=False)
 
-    align_nb = ROOT / "scripts" / "align_neurolab_domains.py"
-    if align_nb.exists():
-        subprocess.run([sys.executable, str(align_nb), "--skip-sync"], cwd=ROOT, check=False)
-        sync_mirrors = ROOT / "scripts" / "sync_lab_compute_mirrors.py"
-        if sync_mirrors.exists():
-            subprocess.run([sys.executable, str(sync_mirrors)], cwd=ROOT, check=False)
+        align_nb = ROOT / "scripts" / "align_neurolab_domains.py"
+        if align_nb.exists():
+            subprocess.run([sys.executable, str(align_nb), "--skip-sync"], cwd=ROOT, check=False)
+            sync_mirrors = ROOT / "scripts" / "sync_lab_compute_mirrors.py"
+            if sync_mirrors.exists():
+                subprocess.run([sys.executable, str(sync_mirrors)], cwd=ROOT, check=False)
 
     mod, source = load_fsot_compute()
-    print(f"Using compute engine: {source}")
+    print(f"Using compute engine: {authority_path_for_export(source)}")
+    if portable:
+        print("Portable mode: using bundled vendor assets and cached data benchmarks")
 
     if not DATA.exists():
         print("canonical_constants.json missing; run with --sync first", file=sys.stderr)
@@ -291,23 +287,29 @@ def main() -> int:
     issues.extend(check_dominance_heuristics(mod))
 
     section_map = ROOT / "scripts" / "build_section_domain_map.py"
-    if section_map.exists():
+    if section_map.exists() and not portable:
         subprocess.run([sys.executable, str(section_map)], cwd=ROOT, check=False)
     ingest = ROOT / "scripts" / "ingest_lab_data.py"
     verify_lab = ROOT / "scripts" / "verify_lab_registry.py"
+    rebuild = not portable
+    lab_ingest_ok = True
     if ingest.exists():
-        print("\n=== Lab data ingest (SMILES + NeuroLab) ===")
-        proc = subprocess.run(
-            [sys.executable, str(ingest)],
-            cwd=ROOT,
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-        print(proc.stdout.strip() or proc.stderr.strip())
-        if proc.returncode != 0:
-            issues.append("lab data ingest failed")
-        elif verify_lab.exists():
+        if rebuild:
+            print("\n=== Lab data ingest (SMILES + NeuroLab) ===")
+            proc = subprocess.run(
+                [sys.executable, str(ingest)],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            print(proc.stdout.strip() or proc.stderr.strip())
+            lab_ingest_ok = proc.returncode == 0
+            if not lab_ingest_ok:
+                issues.append("lab data ingest failed")
+        else:
+            print("\n=== Portable mode: cached lab registry ===")
+        if verify_lab.exists() and (not rebuild or lab_ingest_ok):
             proc2 = subprocess.run(
                 [sys.executable, str(verify_lab)],
                 cwd=ROOT,
@@ -323,7 +325,7 @@ def main() -> int:
                         if line.strip().startswith("- "):
                             issues.append(line.strip()[2:])
         gen_brain_priors = ROOT / "scripts" / "gen_brain_priors_lean.py"
-        if gen_brain_priors.exists() and proc.returncode == 0:
+        if gen_brain_priors.exists() and rebuild and lab_ingest_ok:
             proc_bp = subprocess.run(
                 [sys.executable, str(gen_brain_priors)],
                 cwd=ROOT,
@@ -336,7 +338,7 @@ def main() -> int:
                 issues.append("BrainPriors.lean generation failed")
         ingest_codon = ROOT / "scripts" / "ingest_codon_map.py"
         gen_codon_priors = ROOT / "scripts" / "gen_codon_priors_lean.py"
-        if ingest_codon.exists() and proc.returncode == 0:
+        if ingest_codon.exists() and rebuild and lab_ingest_ok:
             proc_ci = subprocess.run(
                 [sys.executable, str(ingest_codon)],
                 cwd=ROOT,
@@ -372,7 +374,7 @@ def main() -> int:
                 issues.append("codon trinary map verification failed")
         ingest_protein = ROOT / "scripts" / "ingest_protein_formulas.py"
         gen_protein_priors = ROOT / "scripts" / "gen_protein_priors_lean.py"
-        if ingest_protein.exists() and proc.returncode == 0:
+        if ingest_protein.exists() and rebuild and lab_ingest_ok:
             proc_pi = subprocess.run(
                 [sys.executable, str(ingest_protein)],
                 cwd=ROOT,
@@ -427,7 +429,7 @@ def main() -> int:
         for ingest_name, gen_name, gen_fail, ingest_fail in tier2_ingests:
             ingest_script = ROOT / "scripts" / ingest_name
             gen_script = ROOT / "scripts" / gen_name
-            if ingest_script.exists() and proc.returncode == 0:
+            if ingest_script.exists() and rebuild and lab_ingest_ok:
                 proc_ing = subprocess.run(
                     [sys.executable, str(ingest_script)],
                     cwd=ROOT,
@@ -457,7 +459,7 @@ def main() -> int:
         for ingest_name, gen_name, gen_fail, ingest_fail in tier3_ingests:
             ingest_script = ROOT / "scripts" / ingest_name
             gen_script = ROOT / "scripts" / gen_name
-            if ingest_script.exists() and proc.returncode == 0:
+            if ingest_script.exists() and rebuild and lab_ingest_ok:
                 proc_ing = subprocess.run(
                     [sys.executable, str(ingest_script)],
                     cwd=ROOT,
@@ -490,7 +492,7 @@ def main() -> int:
         for ingest_name, gen_name, gen_fail, ingest_fail in tier4_ingests:
             ingest_script = ROOT / "scripts" / ingest_name
             gen_script = ROOT / "scripts" / gen_name
-            if ingest_script.exists() and proc.returncode == 0:
+            if ingest_script.exists() and rebuild and lab_ingest_ok:
                 proc_ing = subprocess.run(
                     [sys.executable, str(ingest_script)],
                     cwd=ROOT,
@@ -569,7 +571,7 @@ def main() -> int:
         for ingest_name, gen_name, gen_fail, ingest_fail in tier5_ingests:
             ingest_script = ROOT / "scripts" / ingest_name
             gen_script = ROOT / "scripts" / gen_name if gen_name else None
-            if ingest_script.exists() and proc.returncode == 0:
+            if ingest_script.exists() and rebuild and lab_ingest_ok:
                 proc_ing = subprocess.run(
                     [sys.executable, str(ingest_script)],
                     cwd=ROOT,
@@ -669,7 +671,7 @@ def main() -> int:
                 issues.append("35-domain coverage verification failed")
 
         crosswalk = ROOT / "scripts" / "build_fsot_20_domain_crosswalk.py"
-        if crosswalk.exists():
+        if crosswalk.exists() and rebuild:
             proc_xw = subprocess.run(
                 [sys.executable, str(crosswalk)],
                 cwd=ROOT,
@@ -682,22 +684,23 @@ def main() -> int:
                 issues.append("FSOT 2.0 domain crosswalk build failed")
 
         # Tier 10: per-record numeric precision + observed-data benchmarks
-        for fetch_name in (
-            "fetch_weather_observed_benchmark.py",
-            "fetch_evolution_operon_benchmark.py",
-        ):
-            fetch_script = ROOT / "scripts" / fetch_name
-            if fetch_script.exists():
-                proc_fb = subprocess.run(
-                    [sys.executable, str(fetch_script)],
-                    cwd=ROOT,
-                    capture_output=True,
-                    text=True,
-                    check=False,
-                )
-                print(proc_fb.stdout.strip() or proc_fb.stderr.strip())
-                if proc_fb.returncode != 0:
-                    issues.append(f"{fetch_name} failed")
+        if rebuild:
+            for fetch_name in (
+                "fetch_weather_observed_benchmark.py",
+                "fetch_evolution_operon_benchmark.py",
+            ):
+                fetch_script = ROOT / "scripts" / fetch_name
+                if fetch_script.exists():
+                    proc_fb = subprocess.run(
+                        [sys.executable, str(fetch_script)],
+                        cwd=ROOT,
+                        capture_output=True,
+                        text=True,
+                        check=False,
+                    )
+                    print(proc_fb.stdout.strip() or proc_fb.stderr.strip())
+                    if proc_fb.returncode != 0:
+                        issues.append(f"{fetch_name} failed")
         precision_eval = ROOT / "scripts" / "run_domain_precision_eval.py"
         precision_gen = ROOT / "scripts" / "gen_domain_precision_lean.py"
         if precision_eval.exists():
@@ -722,108 +725,109 @@ def main() -> int:
                 print(proc_pg.stdout.strip() or proc_pg.stderr.strip())
                 if proc_pg.returncode != 0:
                     issues.append("DomainPrecisionPriors.lean generation failed")
-        for bench_script in (
-            "build_biology_strict_empirical.py",
-            "build_thesis_simulation_benchmark.py",
-            "build_emergent_domains_benchmark.py",
-            "build_math_generator_rules_benchmark.py",
-            "build_cosmology_extended_benchmark.py",
-            "build_particle_physics_benchmark.py",
-            "build_higgs_branching_benchmark.py",
-            "build_space_weather_benchmark.py",
-            "ingest_space_weather_swpc_chunked.py",
-            "ingest_hydrology_usgs_chunked.py",
-            "build_hydrology_benchmark.py",
-            "ingest_pharmacology_chembl.py",
-            "build_pharmacology_benchmark.py",
-            "build_cryosphere_benchmark.py",
-            "ingest_seismology_usgs.py",
-            "build_seismology_benchmark.py",
-            "ingest_tectonics_plates.py",
-            "build_tectonics_benchmark.py",
-            "ingest_geomagnetism_swpc.py",
-            "build_geomagnetism_benchmark.py",
-            "ingest_planetary_jpl.py",
-            "build_planetary_structure_benchmark.py",
-            "build_orbital_mechanics_benchmark.py",
-            "ingest_small_body_jpl.py",
-            "build_small_body_orbits_benchmark.py",
-            "build_magnetosphere_benchmark.py",
-            "ingest_grace_greenland.py",
-            "build_grace_cryosphere_benchmark.py",
-            "ingest_seismology_deep_usgs.py",
-            "build_seismology_deep_benchmark.py",
-            "ingest_planetary_atmospheres_jpl.py",
-            "build_planetary_atmospheres_benchmark.py",
-            "ingest_kyoto_dst_historical.py",
-            "ingest_solar_wind_rtsw.py",
-            "build_magnetosphere_extended_benchmark.py",
-            "build_plasma_physics_benchmark.py",
-            "build_immunology_benchmark.py",
-            "build_geochemistry_benchmark.py",
-            "build_oncology_benchmark.py",
-            "build_neuroimmunology_benchmark.py",
-            "build_synthetic_biology_benchmark.py",
-            "build_quantum_materials_benchmark.py",
-            "build_multi_hero_benchmark.py",
-            "ingest_climate_ncei_chunked.py",
-            "build_climate_observed_benchmark.py",
-        ):
-            script = ROOT / "scripts" / bench_script
-            if script.exists():
-                proc_b = subprocess.run(
-                    [sys.executable, str(script)],
+        if rebuild:
+            for bench_script in (
+                "build_biology_strict_empirical.py",
+                "build_thesis_simulation_benchmark.py",
+                "build_emergent_domains_benchmark.py",
+                "build_math_generator_rules_benchmark.py",
+                "build_cosmology_extended_benchmark.py",
+                "build_particle_physics_benchmark.py",
+                "build_higgs_branching_benchmark.py",
+                "build_space_weather_benchmark.py",
+                "ingest_space_weather_swpc_chunked.py",
+                "ingest_hydrology_usgs_chunked.py",
+                "build_hydrology_benchmark.py",
+                "ingest_pharmacology_chembl.py",
+                "build_pharmacology_benchmark.py",
+                "build_cryosphere_benchmark.py",
+                "ingest_seismology_usgs.py",
+                "build_seismology_benchmark.py",
+                "ingest_tectonics_plates.py",
+                "build_tectonics_benchmark.py",
+                "ingest_geomagnetism_swpc.py",
+                "build_geomagnetism_benchmark.py",
+                "ingest_planetary_jpl.py",
+                "build_planetary_structure_benchmark.py",
+                "build_orbital_mechanics_benchmark.py",
+                "ingest_small_body_jpl.py",
+                "build_small_body_orbits_benchmark.py",
+                "build_magnetosphere_benchmark.py",
+                "ingest_grace_greenland.py",
+                "build_grace_cryosphere_benchmark.py",
+                "ingest_seismology_deep_usgs.py",
+                "build_seismology_deep_benchmark.py",
+                "ingest_planetary_atmospheres_jpl.py",
+                "build_planetary_atmospheres_benchmark.py",
+                "ingest_kyoto_dst_historical.py",
+                "ingest_solar_wind_rtsw.py",
+                "build_magnetosphere_extended_benchmark.py",
+                "build_plasma_physics_benchmark.py",
+                "build_immunology_benchmark.py",
+                "build_geochemistry_benchmark.py",
+                "build_oncology_benchmark.py",
+                "build_neuroimmunology_benchmark.py",
+                "build_synthetic_biology_benchmark.py",
+                "build_quantum_materials_benchmark.py",
+                "build_multi_hero_benchmark.py",
+                "ingest_climate_ncei_chunked.py",
+                "build_climate_observed_benchmark.py",
+            ):
+                script = ROOT / "scripts" / bench_script
+                if script.exists():
+                    proc_b = subprocess.run(
+                        [sys.executable, str(script)],
+                        cwd=ROOT,
+                        capture_output=True,
+                        text=True,
+                        check=False,
+                    )
+                    print(proc_b.stdout.strip() or proc_b.stderr.strip())
+                    if proc_b.returncode != 0:
+                        issues.append(f"{bench_script} failed")
+
+            for cohort_script in (
+                "run_neuron_cohort_train_holdout.py",
+                "gen_neuron_cohort_train_holdout_lean.py",
+            ):
+                script = ROOT / "scripts" / cohort_script
+                if script.exists():
+                    proc_c = subprocess.run(
+                        [sys.executable, str(script)],
+                        cwd=ROOT,
+                        capture_output=True,
+                        text=True,
+                        check=False,
+                    )
+                    print(proc_c.stdout.strip() or proc_c.stderr.strip())
+                    if proc_c.returncode != 0 and "train_holdout" in cohort_script:
+                        issues.append(f"{cohort_script} failed")
+
+            map_script = ROOT / "scripts" / "build_scientific_domain_expansion_map.py"
+            if map_script.exists():
+                proc_map = subprocess.run(
+                    [sys.executable, str(map_script)],
                     cwd=ROOT,
                     capture_output=True,
                     text=True,
                     check=False,
                 )
-                print(proc_b.stdout.strip() or proc_b.stderr.strip())
-                if proc_b.returncode != 0:
-                    issues.append(f"{bench_script} failed")
+                print(proc_map.stdout.strip() or proc_map.stderr.strip())
 
-        for cohort_script in (
-            "run_neuron_cohort_train_holdout.py",
-            "gen_neuron_cohort_train_holdout_lean.py",
-        ):
-            script = ROOT / "scripts" / cohort_script
-            if script.exists():
-                proc_c = subprocess.run(
-                    [sys.executable, str(script)],
+            bio_strict_gen = ROOT / "scripts" / "gen_biology_strict_empirical_lean.py"
+            if bio_strict_gen.exists():
+                proc_bs = subprocess.run(
+                    [sys.executable, str(bio_strict_gen)],
                     cwd=ROOT,
                     capture_output=True,
                     text=True,
                     check=False,
                 )
-                print(proc_c.stdout.strip() or proc_c.stderr.strip())
-                if proc_c.returncode != 0 and "train_holdout" in cohort_script:
-                    issues.append(f"{cohort_script} failed")
+                print(proc_bs.stdout.strip() or proc_bs.stderr.strip())
+                if proc_bs.returncode != 0:
+                    issues.append("BiologyStrictEmpiricalPriors.lean generation failed")
 
-        map_script = ROOT / "scripts" / "build_scientific_domain_expansion_map.py"
-        if map_script.exists():
-            proc_map = subprocess.run(
-                [sys.executable, str(map_script)],
-                cwd=ROOT,
-                capture_output=True,
-                text=True,
-                check=False,
-            )
-            print(proc_map.stdout.strip() or proc_map.stderr.strip())
-
-        bio_strict_gen = ROOT / "scripts" / "gen_biology_strict_empirical_lean.py"
-        if bio_strict_gen.exists():
-            proc_bs = subprocess.run(
-                [sys.executable, str(bio_strict_gen)],
-                cwd=ROOT,
-                capture_output=True,
-                text=True,
-                check=False,
-            )
-            print(proc_bs.stdout.strip() or proc_bs.stderr.strip())
-            if proc_bs.returncode != 0:
-                issues.append("BiologyStrictEmpiricalPriors.lean generation failed")
-
-        wave_a_steps = [
+            wave_a_steps = [
             ("ingest_thesis_simulation_lab.py", "gen_thesis_simulation_lean.py", "ThesisSimulationPriors.lean generation failed", "thesis simulation ingest failed"),
             ("ingest_emergent_domains_lab.py", "gen_emergent_domains_lean.py", "EmergentDomainPriors.lean generation failed", "emergent domains ingest failed"),
             ("ingest_math_generator_rules_lab.py", None, None, "math generator rules ingest failed"),
@@ -853,62 +857,62 @@ def main() -> int:
             (None, "gen_synthetic_biology_lean.py", "SyntheticBiologyPriors.lean generation failed", None),
             (None, "gen_quantum_materials_lean.py", "QuantumMaterialsPriors.lean generation failed", None),
             (None, "gen_multi_hero_lean.py", "NeuronMultiHeroPriors.lean generation failed", None),
-        ]
-        for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
-            if ingest_name:
-                ingest_script = ROOT / "scripts" / ingest_name
-                if not ingest_script.exists():
-                    continue
-                proc_wa = subprocess.run(
-                    [sys.executable, str(ingest_script)],
-                    cwd=ROOT,
-                    capture_output=True,
-                    text=True,
-                    check=False,
-                )
-                print(proc_wa.stdout.strip() or proc_wa.stderr.strip())
-                if proc_wa.returncode != 0:
-                    if ingest_fail:
-                        issues.append(ingest_fail)
-                    continue
-            if gen_name:
-                gen_script = ROOT / "scripts" / gen_name
-                if gen_script.exists():
-                    proc_wg = subprocess.run(
-                        [sys.executable, str(gen_script)],
+            ]
+            for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
+                if ingest_name:
+                    ingest_script = ROOT / "scripts" / ingest_name
+                    if not ingest_script.exists():
+                        continue
+                    proc_wa = subprocess.run(
+                        [sys.executable, str(ingest_script)],
                         cwd=ROOT,
                         capture_output=True,
                         text=True,
                         check=False,
                     )
-                    print(proc_wg.stdout.strip() or proc_wg.stderr.strip())
-                    if proc_wg.returncode != 0:
-                        issues.append(gen_fail)
-        math_gen = ROOT / "scripts" / "gen_math_generator_lean.py"
-        if math_gen.exists():
-            proc_mg = subprocess.run(
-                [sys.executable, str(math_gen)],
-                cwd=ROOT,
-                capture_output=True,
-                text=True,
-                check=False,
-            )
-            print(proc_mg.stdout.strip() or proc_mg.stderr.strip())
-            if proc_mg.returncode != 0:
-                issues.append("MathGeneratorPriors.lean generation failed")
+                    print(proc_wa.stdout.strip() or proc_wa.stderr.strip())
+                    if proc_wa.returncode != 0:
+                        if ingest_fail:
+                            issues.append(ingest_fail)
+                        continue
+                if gen_name:
+                    gen_script = ROOT / "scripts" / gen_name
+                    if gen_script.exists():
+                        proc_wg = subprocess.run(
+                            [sys.executable, str(gen_script)],
+                            cwd=ROOT,
+                            capture_output=True,
+                            text=True,
+                            check=False,
+                        )
+                        print(proc_wg.stdout.strip() or proc_wg.stderr.strip())
+                        if proc_wg.returncode != 0:
+                            issues.append(gen_fail)
+            math_gen = ROOT / "scripts" / "gen_math_generator_lean.py"
+            if math_gen.exists():
+                proc_mg = subprocess.run(
+                    [sys.executable, str(math_gen)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_mg.stdout.strip() or proc_mg.stderr.strip())
+                if proc_mg.returncode != 0:
+                    issues.append("MathGeneratorPriors.lean generation failed")
 
-        ext_gen = ROOT / "scripts" / "gen_extension_domains_lean.py"
-        if ext_gen.exists():
-            proc_eg = subprocess.run(
-                [sys.executable, str(ext_gen)],
-                cwd=ROOT,
-                capture_output=True,
-                text=True,
-                check=False,
-            )
-            print(proc_eg.stdout.strip() or proc_eg.stderr.strip())
-            if proc_eg.returncode != 0:
-                issues.append("extension domains Lean generation failed")
+            ext_gen = ROOT / "scripts" / "gen_extension_domains_lean.py"
+            if ext_gen.exists():
+                proc_eg = subprocess.run(
+                    [sys.executable, str(ext_gen)],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    check=False,
+                )
+                print(proc_eg.stdout.strip() or proc_eg.stderr.strip())
+                if proc_eg.returncode != 0:
+                    issues.append("extension domains Lean generation failed")
 
         ext_verify = ROOT / "scripts" / "verify_extension_domains.py"
         if ext_verify.exists():
@@ -962,7 +966,7 @@ def main() -> int:
 
         parse_bio = ROOT / "scripts" / "parse_neurolab_translations.py"
         verify_bio = ROOT / "scripts" / "verify_neurolab_bio.py"
-        if parse_bio.exists():
+        if parse_bio.exists() and rebuild:
             subprocess.run([sys.executable, str(parse_bio)], cwd=ROOT, check=False)
         if verify_bio.exists():
             proc3 = subprocess.run(
@@ -1015,7 +1019,7 @@ def main() -> int:
             ok=False,
             issues=issues,
             authority_sha256=live_digest if not args.no_hash_gate else None,
-            authority_path=str(source),
+            authority_path=authority_path_for_export(source),
             lean_ok=lean_ok,
         )
         return 1
@@ -1043,7 +1047,7 @@ def main() -> int:
                     ok=False,
                     issues=issues,
                     authority_sha256=live_digest if not args.no_hash_gate else None,
-                    authority_path=str(source),
+                    authority_path=authority_path_for_export(source),
                     lean_ok=lean_ok,
                 )
                 return 1
@@ -1055,7 +1059,7 @@ def main() -> int:
             sys.executable,
             str(export),
             "--authority-path",
-            str(source),
+            authority_path_for_export(source),
         ]
         if lean_ok:
             cmd.append("--lean-ok")
@@ -1067,7 +1071,7 @@ def main() -> int:
                 ok=False,
                 issues=issues,
                 authority_sha256=live_digest if not args.no_hash_gate else None,
-                authority_path=str(source),
+                authority_path=authority_path_for_export(source),
                 lean_ok=lean_ok,
             )
             return 1

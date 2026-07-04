@@ -28,7 +28,15 @@ REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from fsot_canonical_adapter import canonical_domain_scalar  # noqa: E402
+from fsot_paths import REPO_ROOT  # noqa: E402
 from neuron_canonical_scalar import bridge_metadata, canonical_neuron_scalar, legacy_micro_scalar  # noqa: E402
+
+
+def _resolve_manifest_path(raw: str) -> Path:
+    path = Path(raw)
+    if not path.is_absolute():
+        path = REPO_ROOT / path
+    return path
 
 
 def _percentile(vals: list[float], p: float) -> float:
@@ -278,8 +286,8 @@ def main() -> int:
     if yaml is None:
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(args.manifest.read_text(encoding="utf-8"))
-    cohort_root = Path(manifest["neuron_cohort_root"])
-    hybrid_root = Path(manifest["hybrid_model_root"])
+    cohort_root = _resolve_manifest_path(manifest["neuron_cohort_root"])
+    hybrid_root = _resolve_manifest_path(manifest["hybrid_model_root"])
     cells_path = cohort_root / manifest["artifacts"]["cells_json"]
     cells = json.loads(cells_path.read_text(encoding="utf-8"))
 

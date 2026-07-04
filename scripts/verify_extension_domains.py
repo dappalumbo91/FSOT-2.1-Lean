@@ -16,6 +16,23 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "data" / "extension_domains_manifest.yaml"
 
 
+def _record_count(doc: dict) -> int:
+    for key in ("record_count", "observable_count", "month_count"):
+        val = doc.get(key)
+        if val is not None:
+            return int(val)
+    records = doc.get("records") or []
+    if records:
+        return len(records)
+    nested = 0
+    for val in doc.values():
+        if isinstance(val, dict):
+            for key in ("record_count", "observable_count", "month_count"):
+                if val.get(key) is not None:
+                    nested += int(val[key])
+    return nested
+
+
 def main() -> int:
     if yaml is None:
         raise RuntimeError("PyYAML required")
@@ -31,7 +48,7 @@ def main() -> int:
             issues.append(f"{name}: missing {path}")
             continue
         doc = json.loads(path.read_text(encoding="utf-8"))
-        n = doc.get("record_count") or doc.get("month_count") or len(doc.get("records") or [])
+        n = _record_count(doc)
         med = doc.get("median_error_pct")
         print(f"  {name}: records={n} median_err={med}")
         if n < min_records:

@@ -32,6 +32,7 @@ CACHE_PATH = DATA / "canonical_constants.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from domain_scalar_oracle import DOMAINS, raw_S, term1, term2, term3  # noqa: E402
+from fsot_paths import fsot_compute_path, neurolab_root, smiles_lab_root  # noqa: E402
 from genomic_trinary import trinary_signatures  # noqa: E402
 
 try:
@@ -54,8 +55,16 @@ def load_crosswalk() -> dict:
     return yaml.safe_load(CROSSWALK_PATH.read_text(encoding="utf-8"))
 
 
+def resolve_lab_path(raw: str) -> Path:
+    path = Path(raw)
+    if not path.is_absolute():
+        path = ROOT / path
+    return path
+
+
 def load_neurolab_scalars() -> dict[str, float]:
-    neurolab_compute = Path(r"C:\Users\damia\Desktop\FSOT NeuroLab\fsot_compute.py")
+    root = neurolab_root()
+    neurolab_compute = root / "fsot_compute.py" if root else fsot_compute_path()
     if not neurolab_compute.exists():
         return {}
     spec = importlib.util.spec_from_file_location("neurolab_compute", neurolab_compute)
@@ -332,8 +341,16 @@ def ingest_neurolab_bio(neurolab_root: Path, manifest_path: Path | None = None) 
 
 def build_registry(crosswalk: dict | None = None) -> dict:
     crosswalk = crosswalk or load_crosswalk()
-    smiles_root = Path(crosswalk["lab_paths"]["smiles_lab"])
-    neurolab_root = Path(crosswalk["lab_paths"]["neurolab"])
+    smiles_root = resolve_lab_path(crosswalk["lab_paths"]["smiles_lab"])
+    if not smiles_root.exists():
+        fallback = smiles_lab_root(require=False)
+        if fallback is not None:
+            smiles_root = fallback
+    neurolab_root_path = resolve_lab_path(crosswalk["lab_paths"]["neurolab"])
+    if not neurolab_root_path.exists():
+        fallback = neurolab_root()
+        if fallback is not None:
+            neurolab_root_path = fallback
     cache = json.loads(CACHE_PATH.read_text(encoding="utf-8")) if CACHE_PATH.exists() else {}
 
     return {
@@ -342,11 +359,11 @@ def build_registry(crosswalk: dict | None = None) -> dict:
         "canonical_constants_sha256": cache.get("hash_gate", {}).get("authority_sha256"),
         "smiles_lab": ingest_smiles(smiles_root, crosswalk),
         "neurolab": ingest_neurolab(
-            neurolab_root,
+            neurolab_root_path,
             crosswalk,
             layer_k=float(cache.get("layer2", {}).get("k", 0)) or None,
         ),
-        "neurolab_bio": ingest_neurolab_bio(neurolab_root),
+        "neurolab_bio": ingest_neurolab_bio(neurolab_root_path),
         "verification_hooks": {
             "smiles_tolerance_pct": 5.0,
             "brain_fit_max_gap": 0.15,

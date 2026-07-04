@@ -8,6 +8,8 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
+from fsot_paths import REPO_ROOT, portable_mode, rel_repo_path
+
 AUTHORITY_SHA256 = (
     "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70"
 )
@@ -36,33 +38,47 @@ class MirrorEntry:
     role: str
 
 
+REPO_MIRRORS: tuple[MirrorEntry, ...] = (
+    MirrorEntry(
+        "vendor",
+        REPO_ROOT / "vendor" / "fsot_compute.py",
+        "canonical",
+    ),
+)
+
 DESKTOP_MIRRORS: tuple[MirrorEntry, ...] = (
     MirrorEntry(
         "authority",
-        Path(r"C:\Users\damia\Desktop\FSOT document update\fsot_compute.py"),
+        Path.home() / "Desktop" / "FSOT document update" / "fsot_compute.py",
         "canonical",
     ),
     MirrorEntry(
         "fsot_3_0",
-        Path(r"C:\Users\damia\Desktop\Fsot3.0 code\fsot_compute.py"),
+        Path.home() / "Desktop" / "Fsot3.0 code" / "fsot_compute.py",
         "extended_fork",
     ),
     MirrorEntry(
         "cosmology_lab",
-        Path(r"C:\Users\damia\Desktop\FSOT Cosmology Lab\fsot_compute.py"),
+        Path.home() / "Desktop" / "FSOT Cosmology Lab" / "fsot_compute.py",
         "extended_fork",
     ),
     MirrorEntry(
         "smiles_lab",
-        Path(r"C:\Users\damia\Desktop\FSOT SMILES Lab\fsot_compute.py"),
+        Path.home() / "Desktop" / "FSOT SMILES Lab" / "fsot_compute.py",
         "canonical",
     ),
     MirrorEntry(
         "neurolab",
-        Path(r"C:\Users\damia\Desktop\FSOT NeuroLab\fsot_compute.py"),
+        Path.home() / "Desktop" / "FSOT NeuroLab" / "fsot_compute.py",
         "canonical",
     ),
 )
+
+
+def mirror_entries() -> tuple[MirrorEntry, ...]:
+    if portable_mode():
+        return REPO_MIRRORS
+    return REPO_MIRRORS + DESKTOP_MIRRORS
 
 
 def sha256_file(path: Path) -> str:
@@ -80,7 +96,7 @@ def classify_hash(digest: str) -> str:
 def build_hash_gate_payload(source: Path) -> dict:
     digest = sha256_file(source)
     return {
-        "authority_path": str(source),
+        "authority_path": rel_repo_path(source),
         "authority_sha256": digest,
         "expected_sha256": AUTHORITY_SHA256,
         "synced_at": datetime.now(timezone.utc).isoformat(),
@@ -96,12 +112,12 @@ def build_hash_gate_payload(source: Path) -> dict:
 
 def scan_mirrors() -> list[dict]:
     rows: list[dict] = []
-    for entry in DESKTOP_MIRRORS:
+    for entry in mirror_entries():
         if not entry.path.exists():
             rows.append(
                 {
                     "label": entry.label,
-                    "path": str(entry.path),
+                    "path": rel_repo_path(entry.path) if entry.path.is_relative_to(REPO_ROOT) else str(entry.path),
                     "present": False,
                     "sha256": None,
                     "class": None,
@@ -115,7 +131,7 @@ def scan_mirrors() -> list[dict]:
         rows.append(
             {
                 "label": entry.label,
-                "path": str(entry.path),
+                "path": rel_repo_path(entry.path) if entry.path.is_relative_to(REPO_ROOT) else str(entry.path),
                 "present": True,
                 "sha256": digest,
                 "class": mirror_class,

@@ -19,11 +19,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 
-CANONICAL_PATHS = [
-    Path(r"C:\Users\damia\Desktop\FSOT document update\fsot_compute.py"),
-    ROOT / "_research" / "FSOT-2.0-code" / "fsot-2.0" / "fsot_2_0.py",
-    Path(r"C:\Users\damia\Desktop\FSOT Cosmology Lab\fsot_compute.py"),
-]
+from fsot_paths import fsot_compute_candidates, fsot_compute_path  # noqa: E402
 
 _MOD: Any = None
 _MOD_PATH: Path | None = None
@@ -33,9 +29,7 @@ def load_fsot_compute():
     global _MOD, _MOD_PATH
     if _MOD is not None:
         return _MOD, _MOD_PATH
-    for path in CANONICAL_PATHS:
-        if not path.exists():
-            continue
+    for path in fsot_compute_candidates() or [fsot_compute_path()]:
         spec = importlib.util.spec_from_file_location("fsot_compute", path)
         if spec is None or spec.loader is None:
             continue

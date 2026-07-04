@@ -4,8 +4,8 @@ updated: "2026-07-01"
 
 source:
   ncbi_reference: NC_012920.1
-  evolution_operons: "C:/Users/damia/Desktop/fsot_evolution_/files-b7d9d6b8/fsot_evolution_sim/results/biological_mt_operons.json"
-  soul_corpus: "C:/Users/damia/Desktop/Soul Simulator/data/processed_test/training_corpus.jsonl"
+  evolution_operons: "vendor/evolution/biological_mt_operons.json"
+  soul_corpus: "vendor/soul_simulator/training_corpus.jsonl"
 
 build:
   script: scripts/build_biology_strict_empirical.py

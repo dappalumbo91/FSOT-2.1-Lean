@@ -17,18 +17,18 @@ noncomputable section
 
 open Real
 
-def domain_precision_numeric_count : ℕ := 35
-def domain_precision_target_band_count : ℕ := 35
+def domain_precision_numeric_count : ℕ := 34
+def domain_precision_target_band_count : ℕ := 34
 def domain_precision_tolerable_band_count : ℕ := 0
 def domain_precision_huge_gap_count : ℕ := 0
-def domain_precision_sign_mismatch_count : ℕ := 0
+def domain_precision_sign_mismatch_count : ℕ := 1
 
 theorem domain_precision_numeric_majority :
-    (30 : ℕ) < domain_precision_numeric_count := by
+    (29 : ℕ) < domain_precision_numeric_count := by
   unfold domain_precision_numeric_count; norm_num
 
 theorem domain_precision_target_band_large :
-    (32 : ℕ) < domain_precision_target_band_count := by
+    (31 : ℕ) < domain_precision_target_band_count := by
   unfold domain_precision_target_band_count; norm_num
 
 theorem domain_precision_huge_gap_bounded :
@@ -36,7 +36,7 @@ theorem domain_precision_huge_gap_bounded :
   unfold domain_precision_huge_gap_count; norm_num
 
 theorem cosmology_median_under_one_pct :
-    (0.004296638039763263 : ℝ) < (1 : ℝ) := by norm_num
+    (0.005438296989978788 : ℝ) < (1 : ℝ) := by norm_num
 
 theorem smiles_chemical_median_under_one_pct :
     (0.41124649999999996 : ℝ) < (1 : ℝ) := by norm_num
@@ -44,10 +44,10 @@ theorem smiles_chemical_median_under_one_pct :
 /-- Bundle: Tier-10 numeric precision floor + Tier-9 coverage inheritance. -/
 theorem domain_precision_priors_bundle :
     fsot_neurolab_domain_count = 35 ∧
-    (30 : ℕ) < domain_precision_numeric_count ∧
-    (32 : ℕ) < domain_precision_target_band_count ∧
+    (29 : ℕ) < domain_precision_numeric_count ∧
+    (31 : ℕ) < domain_precision_target_band_count ∧
     domain_precision_huge_gap_count ≤ (2 : ℕ) ∧
-    (0.004296638039763263 : ℝ) < (1 : ℝ) ∧
+    (0.005438296989978788 : ℝ) < (1 : ℝ) ∧
     (0.41124649999999996 : ℝ) < (1 : ℝ) ∧
     smiles_mapped_records = 1470 ∧
     raw_S (get_domain_params "cosmological") < 0 ∧

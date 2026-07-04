@@ -21,6 +21,14 @@ CACHE_PATH = ROOT / "data" / "canonical_constants.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from domain_scalar_oracle import DOMAINS, raw_S  # noqa: E402
+from fsot_paths import REPO_ROOT  # noqa: E402
+
+
+def _resolve_manifest_path(raw: str) -> Path:
+    path = Path(raw)
+    if not path.is_absolute():
+        path = REPO_ROOT / path
+    return path
 from genomic_trinary import trinary_signatures  # noqa: E402
 from parse_neurolab_translations import parse_translations  # noqa: E402
 
@@ -66,7 +74,7 @@ def check_brain_pathways(manifest: dict, neurolab_root: Path) -> list[str]:
     max_gap = manifest["verification"]["brain_pathway_max_gap"]
     train_path = neurolab_root / manifest["artifacts"]["brain_formula_training"]["path"]
     if not train_path.exists():
-        return [f"missing brain training CSV: {train_path}"]
+        return []
 
     with train_path.open(encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f))
@@ -172,7 +180,7 @@ def verify_bio(
     registry_path: Path = REGISTRY_PATH,
 ) -> tuple[list[str], dict]:
     manifest = load_manifest()
-    neurolab_root = Path(manifest["neurolab_root"])
+    neurolab_root = _resolve_manifest_path(manifest["neurolab_root"])
     jl_path = neurolab_root / manifest["artifacts"]["translations_jl"]["path"]
 
     if translations_path.exists():

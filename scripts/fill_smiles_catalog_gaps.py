@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 import csv
 import json
 from datetime import datetime, timezone
@@ -16,7 +17,10 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parents[1]
 GAPS_PATH = ROOT / "data" / "smiles_catalog_gaps.yaml"
-DEFAULT_SMILES_ROOT = Path(r"C:\Users\damia\Desktop\FSOT SMILES Lab")
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import smiles_lab_root  # noqa: E402
+
+DEFAULT_SMILES_ROOT = smiles_lab_root() or (ROOT / "vendor" / "smiles")
 
 
 def load_gaps() -> list[dict]:

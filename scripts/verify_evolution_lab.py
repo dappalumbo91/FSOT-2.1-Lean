@@ -18,6 +18,14 @@ REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from evolution_lab import load_best_organism, load_operons, summarize_evolution  # noqa: E402
+from fsot_paths import REPO_ROOT  # noqa: E402
+
+
+def _resolve_manifest_path(raw: str) -> Path:
+    path = Path(raw)
+    if not path.is_absolute():
+        path = REPO_ROOT / path
+    return path
 
 
 def verify_evolution(
@@ -28,7 +36,7 @@ def verify_evolution(
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
     ver = manifest.get("verification", {})
-    root = Path(manifest["evolution_root"])
+    root = _resolve_manifest_path(manifest["evolution_root"])
     operons_path = root / manifest["artifacts"]["operons_json"]["path"]
     best_path = root / manifest["artifacts"]["best_organism_json"]["path"]
     registry = json.loads(registry_path.read_text(encoding="utf-8")) if registry_path.exists() else {}

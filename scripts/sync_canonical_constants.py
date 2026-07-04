@@ -9,17 +9,11 @@ import sys
 from pathlib import Path
 
 from fsot_hash_gate import build_hash_gate_payload
+from fsot_paths import authority_path_for_export, fsot_compute_path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 OUT = DATA / "canonical_constants.json"
-
-DEFAULT_SOURCES = [
-    Path(r"C:\Users\damia\Desktop\FSOT document update\fsot_compute.py"),
-    ROOT / "_research" / "FSOT-2.0-code" / "fsot-2.0" / "fsot_2_0.py",
-    Path(r"C:\Users\damia\Desktop\FSOT Cosmology Lab\fsot_compute.py"),
-    Path(r"C:\Users\damia\Desktop\Fsot3.0 code\fsot_compute.py"),
-]
 
 
 def load_module(path: Path):
@@ -33,13 +27,7 @@ def load_module(path: Path):
 
 
 def find_source() -> Path:
-    for candidate in DEFAULT_SOURCES:
-        if candidate.exists():
-            return candidate
-    raise FileNotFoundError(
-        "No fsot_compute.py found. Expected one of:\n"
-        + "\n".join(f"  - {p}" for p in DEFAULT_SOURCES)
-    )
+    return fsot_compute_path()
 
 
 def main() -> int:
@@ -47,7 +35,7 @@ def main() -> int:
     mod = load_module(source)
 
     entries = {
-        "source": str(source),
+        "source": authority_path_for_export(source),
         "seeds": {
             "pi": str(mod.PI),
             "e": str(mod.E),

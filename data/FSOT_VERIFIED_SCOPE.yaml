@@ -1,4 +1,4 @@
-generated_at: '2026-07-03T23:23:24.572833+00:00'
+generated_at: '2026-07-04T17:20:07.185119+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -10,9 +10,9 @@ verification_summary:
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: false
-  tiers_complete: 25
+  tiers_complete: 24
   tiers_total: 25
-  percent_complete: 100.0
+  percent_complete: 96.0
 current_tier: Tier 27 Synthetic Biology/Quantum Materials + multi-hero + climate scale-up
 proved_claims:
 - id: cosmological_raw_S_negative
@@ -424,7 +424,7 @@ proved_claims:
 sorry_count: 0
 lean_build_ok: false
 scientific_domains_covered: 62
-total_empirical_records: 261401
+total_empirical_records: 305270
 tier_coverage:
 - tier: 1
   name: Core scalar + domains
@@ -530,11 +530,11 @@ tier_coverage:
     strata_count: 4
 - tier: 9
   name: 35-domain NeuroLab coverage (Lean + empirical labs)
-  status: complete
+  status: pending
   metrics:
     domain_count: 35
-    empirical_domains: 35
-    total_empirical_records: 261401
+    empirical_domains: 34
+    total_empirical_records: 305270
     lean_override_aligned: 17/17
     negative_scalar_domains: 10
   artifacts:
@@ -544,11 +544,11 @@ tier_coverage:
   name: Per-record numeric precision (2%/5% bands + gap diagnostics)
   status: complete
   metrics:
-    numeric_precision_domains: 35
-    target_band_2pct: 35
+    numeric_precision_domains: 34
+    target_band_2pct: 34
     tolerable_band_5pct: 0
     huge_gap_domains: 0
-    sign_mismatch_domains: 0
+    sign_mismatch_domains: 1
   artifacts:
   - FSOT.Formal.DomainPrecisionPriors
   - data/domain_precision_report.json
@@ -610,8 +610,8 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 59
-    expansion_candidates: 3
+    scientific_domains_covered: 62
+    expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
   - data/neuron_cohort_train_holdout.json

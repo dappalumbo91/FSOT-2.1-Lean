@@ -265,9 +265,12 @@ def build_certificate(*, lean_build_ok: bool, authority_path: str | None = None)
         "source_manifest_sha256": source_manifest,
         "reproduce": {
             "sync_constants": "python scripts/sync_canonical_constants.py",
-            "verify": "python scripts/fsot_verification_runner.py",
+            "verify_portable": "python scripts/fsot_verification_runner.py --portable",
+            "verify_full": "python scripts/fsot_verification_runner.py",
             "lean_build": "lake build " + " ".join(LEAN_TARGETS),
             "export": "python scripts/export_certificate.py",
+            "contributing": "CONTRIBUTING.md",
+            "external_data": "data/external_data_manifest.yaml",
         },
     }
     return cert

@@ -1,0 +1,56 @@
+# Bundled vs optional external data for portable FSOT verification.
+version: "1.0"
+updated: "2026-07-04"
+
+bundled:
+  fsot_compute:
+    path: vendor/fsot_compute.py
+    sha256: D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70
+    role: canonical numeric oracle for constants, wave1, and domain scalars
+    env_override: FSOT_COMPUTE_PATH
+
+  smiles_dataset:
+    path: vendor/smiles/FSOT_SMILES_Lab_Dataset.json
+    role: SMILES Lab catalog for chemical/medical domain benchmarks
+    env_override: FSOT_SMILES_DATASET
+
+  evolution_operons:
+    path: vendor/evolution/biological_mt_operons.json
+    role: mitochondrial operon source for evolution and synthetic biology bridges
+    env_override: FSOT_EVOLUTION_OPERONS
+
+  evolution_best_organism:
+    path: vendor/evolution/best_evolved_organism.json
+    role: best evolved organism metrics for evolution lab verification
+
+cached_in_repo:
+  description: >
+    Pre-built benchmarks and reports under data/ let contributors verify Lean
+    certificates without re-fetching NOAA/USGS/JPL or rebuilding every lab ingest.
+  examples:
+    - data/lab_registry.json
+    - data/neuron_cohort_report.json
+    - data/multi_hero_benchmark.json
+    - data/climate_observed_benchmark.json
+    - data/space_weather_benchmark.json
+
+optional_desktop:
+  description: >
+    Author development mirrors on the original machine. Not required for clone-and-verify.
+  neurolab:
+    env_override: FSOT_NEUROLAB_ROOT
+    note: NeuroLab Julia translations and brain priors; cached in data/neurolab_translations_bio.json
+  neuron_cohort:
+    env_override: FSOT_NEURON_COHORT_ROOT
+    note: Full Allen cells.json for cohort re-evaluation; cached in data/neuron_cohort_report.json
+  soul_simulator:
+    note: Soul Simulator corpus for biology strict rebuild only; data/biology_strict_empirical.json is cached
+
+verification_modes:
+  portable:
+    command: python scripts/fsot_verification_runner.py --portable
+    uses: bundled vendor assets + cached data benchmarks + lake build
+    skips: desktop mirror hash gate, lab ingest rebuild, desktop-only rebuild scripts
+  full:
+    command: python scripts/fsot_verification_runner.py
+    uses: same oracle plus optional desktop mirrors when present on author machine

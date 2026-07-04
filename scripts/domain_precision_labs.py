@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import sys
 import json
 import math
 import statistics
@@ -9,7 +10,10 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-SMILES_JSON = Path(r"C:\Users\damia\Desktop\FSOT SMILES Lab\FSOT_SMILES_Lab_Dataset.json")
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import smiles_dataset_path  # noqa: E402
+
+SMILES_JSON = smiles_dataset_path()
 SECTION_MAP = ROOT / "data" / "section_domain_map.json"
 # Lean ledger domains with no SMILES sections — fallback rollups per FSOT-2.0-code mapping
 SMILES_LEAN_FALLBACK: dict[str, str] = {

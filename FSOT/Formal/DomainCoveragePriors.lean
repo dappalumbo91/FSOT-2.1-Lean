@@ -17,7 +17,7 @@ noncomputable section
 open Real
 
 def fsot_neurolab_domain_count : ℕ := 35
-def domains_with_empirical_data_count : ℕ := 35
+def domains_with_empirical_data_count : ℕ := 34
 def lean_override_mapped_count : ℕ := 17
 def lean_override_aligned_count : ℕ := 17
 def negative_scalar_domain_count : ℕ := 10

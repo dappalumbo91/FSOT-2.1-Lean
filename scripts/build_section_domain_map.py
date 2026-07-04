@@ -3,11 +3,15 @@
 
 from __future__ import annotations
 
+import sys
 import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SMILES_JSON = Path(r"C:\Users\damia\Desktop\FSOT SMILES Lab\FSOT_SMILES_Lab_Dataset.json")
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import smiles_dataset_path  # noqa: E402
+
+SMILES_JSON = smiles_dataset_path()
 OUT = ROOT / "data" / "section_domain_map.json"
 
 # Explicit mapping for all 108 SMILES Lab sections → Lean ledger domain

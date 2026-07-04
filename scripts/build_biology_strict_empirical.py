@@ -13,9 +13,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "data" / "biology_strict_manifest.yaml"
 CELLULAR_MANIFEST = ROOT / "data" / "cellular_manifest.yaml"
-DEFAULT_OPERONS = Path(
-    r"C:\Users\damia\Desktop\fsot_evolution_\files-b7d9d6b8\fsot_evolution_sim\results\biological_mt_operons.json"
-)
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import evolution_operons_path  # noqa: E402
+
+DEFAULT_OPERONS = evolution_operons_path()
 OUTPUT = ROOT / "data" / "biology_strict_empirical.json"
 
 HUMAN_MT_OPERON_REF = {

@@ -1,8 +1,8 @@
 {
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "domain_count": 35,
-  "domains_with_empirical_data": 35,
-  "total_empirical_records": 261401,
+  "domains_with_empirical_data": 34,
+  "total_empirical_records": 305270,
   "lean_mapped_count": 17,
   "lean_param_aligned_count": 17,
   "negative_scalar_domains": [
@@ -358,23 +358,28 @@
     },
     {
       "neurolab_domain": "Electromagnetism",
-      "lean_domain": "material",
+      "lean_domain": "electron",
       "D_eff": 9,
       "hits": 0,
       "delta_psi": 0.7,
       "observed": true,
       "domain_scalar_S": 0.5188655207983146,
       "scalar_sign": "positive",
-      "lean_raw_S": 0.7978167460880297,
-      "lean_sign_theorem": "material_raw_S_positive",
+      "lean_raw_S": 0.9706402573161165,
+      "lean_sign_theorem": "electron_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 1470,
+      "empirical_records": 45363,
       "empirical_sources": [
         {
           "lab": "smiles_lab",
           "records": 1470,
           "median_error_pct": 0.058
+        },
+        {
+          "lab": "space_weather_lab",
+          "records": 43893,
+          "median_error_pct": null
         }
       ],
       "empirical_median_error_pct": 0.058,
@@ -889,16 +894,10 @@
       "lean_sign_theorem": "energy_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 24,
-      "empirical_sources": [
-        {
-          "lab": "weather_lab",
-          "records": 24,
-          "median_error_pct": null
-        }
-      ],
+      "empirical_records": 0,
+      "empirical_sources": [],
       "empirical_median_error_pct": null,
-      "has_empirical_data": true
+      "has_empirical_data": false
     },
     {
       "neurolab_domain": "Sociology",
