@@ -1,0 +1,620 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "SCIENCE_SIDE_RULEBOOK.md",
+  "domain_symbols": {
+    "science_model": "physical, biological, chemical, and socioeconomic models",
+    "field_or_state": "fields, states, and ensemble quantities in scientific models",
+    "symbolic": "symbolic science-side expressions"
+  },
+  "rules": [
+    {
+      "id": "SS-001",
+      "name": "Free energy seed",
+      "category": "thermodynamics",
+      "input_form": "partition-function ensemble data",
+      "output_form": "Helmholtz free energy relation",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A canonical equilibrium ensemble and unit convention are fixed"],
+      "operation": "Relate free energy to partition-function structure.",
+      "properties": ["thermodynamic_seed"],
+      "examples": ["Thermodynamic work potential is encoded through logarithmic partition-function data in equilibrium settings"],
+      "counterexamples": ["Treating free energy as unrelated to the underlying ensemble model is invalid"],
+      "common_errors": [],
+      "cross_links": ["MP-070"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "MP-070"
+        }
+      ]
+    },
+    {
+      "id": "SS-010",
+      "name": "Electromagnetic wave seed",
+      "category": "electromagnetic theory",
+      "input_form": "source-free Maxwell field regime",
+      "output_form": "wave-type field propagation equations",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["The standard homogeneous source-free regime is active"],
+      "operation": "Derive electromagnetic wave propagation from Maxwell structure.",
+      "properties": ["field_propagation_seed"],
+      "examples": ["Electromagnetic fields propagate dynamically rather than remaining static algebraic quantities"],
+      "counterexamples": ["Discarding time dependence while still claiming wave propagation is invalid"],
+      "common_errors": [],
+      "cross_links": ["MP-060"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "MP-060"
+        }
+      ]
+    },
+    {
+      "id": "SS-020",
+      "name": "Gibbs measure seed",
+      "category": "statistical mechanics",
+      "input_form": "energy levels and temperature scale",
+      "output_form": "canonical Gibbs weights",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A canonical statistical-mechanics setting is fixed"],
+      "operation": "Assign Gibbs weights through exponential energy penalties normalized by the partition function.",
+      "properties": ["ensemble_seed"],
+      "examples": ["Higher-energy states are suppressed relative to lower-energy states according to the temperature scale"],
+      "counterexamples": ["Assigning arbitrary unnormalized weights without ensemble structure is invalid"],
+      "common_errors": [],
+      "cross_links": ["MP-070"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "MP-070"
+        }
+      ]
+    },
+    {
+      "id": "SS-030",
+      "name": "Spacetime interval seed",
+      "category": "relativity and gravitation",
+      "input_form": "spacetime coordinates under an active metric convention",
+      "output_form": "invariant interval structure",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A relativistic metric convention is fixed"],
+      "operation": "Use metric structure to define invariant spacetime interval data.",
+      "properties": ["invariant_seed"],
+      "examples": ["Coordinate changes may alter components while preserving interval-type invariant structure"],
+      "counterexamples": ["Treating time and space as Euclidean coordinates under all relativistic transformations is invalid"],
+      "common_errors": [],
+      "cross_links": ["MP-040"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "MP-040"
+        }
+      ]
+    },
+    {
+      "id": "SS-040",
+      "name": "Reaction-diffusion seed",
+      "category": "mathematical biology",
+      "input_form": "coupled reacting and diffusing fields",
+      "output_form": "reaction-diffusion evolution model",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["Reaction and diffusion mechanisms are fixed on a spatial domain"],
+      "operation": "Model coupled local reaction and spatial diffusion dynamics.",
+      "properties": ["model_seed"],
+      "examples": ["Pattern formation can arise from interplay between local reactions and spatial diffusion"],
+      "counterexamples": ["Ignoring spatial coupling while claiming reaction-diffusion dynamics is invalid"],
+      "common_errors": [],
+      "cross_links": ["DE-050"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DE-050"
+        }
+      ]
+    },
+    {
+      "id": "SS-050",
+      "name": "Chemical kinetics mass-action seed",
+      "category": "mathematical chemistry",
+      "input_form": "reaction network with stoichiometry",
+      "output_form": "mass-action rate law system",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A reaction network and rate constants are fixed"],
+      "operation": "Build kinetic equations from stoichiometric reaction data under mass action.",
+      "properties": ["kinetic_seed"],
+      "examples": ["Nonlinear ODE systems in chemistry arise directly from reaction-network stoichiometry under mass action"],
+      "counterexamples": ["Assigning arbitrary reaction exponents with no kinetic model justification is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "SS-060",
+      "name": "Competitive equilibrium seed",
+      "category": "mathematical economics",
+      "input_form": "prices, allocations, and agent optimization data",
+      "output_form": "market-clearing equilibrium condition",
+      "domains": ["science_model", "symbolic"],
+      "preconditions": ["A standard competitive-market model is fixed"],
+      "operation": "Recognize competitive equilibrium by joint individual optimality and market clearing.",
+      "properties": ["equilibrium_seed"],
+      "examples": ["Equilibrium requires both individual optimality and aggregate consistency"],
+      "counterexamples": ["Optimizing one agent in isolation does not determine market equilibrium"],
+      "common_errors": []
+    },
+    {
+      "id": "SS-070",
+      "name": "Black-Scholes seed",
+      "category": "mathematical finance",
+      "input_form": "frictionless diffusion-based asset model and derivative claim",
+      "output_form": "Black-Scholes-type valuation equation",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["The standard no-arbitrage diffusion assumptions hold"],
+      "operation": "Model derivative valuation through the Black-Scholes-type pricing equation.",
+      "properties": ["pricing_seed"],
+      "examples": ["No-arbitrage and diffusion assumptions lead to PDE-based option pricing structure"],
+      "counterexamples": ["Applying Black-Scholes outside its modeling assumptions without adjustment is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "SS-080",
+      "name": "Network diffusion seed",
+      "category": "mathematical sociology",
+      "input_form": "graph-based population with interaction or threshold dynamics",
+      "output_form": "network diffusion or adoption model",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A graph or interaction network and update rule are fixed"],
+      "operation": "Model spread or adoption through network-coupled state evolution.",
+      "properties": ["network_seed"],
+      "examples": ["Adoption patterns can depend on local neighborhood state rather than on isolated individual parameters alone"],
+      "counterexamples": ["Treating population interactions as completely structure-free loses the network model"],
+      "common_errors": [],
+      "cross_links": ["DM-040"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DM-040"
+        }
+      ]
+    },
+    {
+      "id": "SS-090",
+      "name": "Signal detection seed",
+      "category": "mathematical psychology",
+      "input_form": "latent signal-noise model with response threshold or psychometric data",
+      "output_form": "decision or discrimination structure",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A probabilistic response model and discrimination setting are fixed"],
+      "operation": "Model decision behavior through signal-noise separation or psychometric transition structure.",
+      "properties": ["decision_seed"],
+      "examples": ["Response accuracy can vary systematically with signal strength rather than as an unstructured yes-no outcome"],
+      "counterexamples": ["Ignoring latent uncertainty while claiming a signal-detection model is invalid"],
+      "common_errors": [],
+      "cross_links": ["ST-050"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "ST-050"
+        }
+      ]
+    },
+    {
+      "id": "SS-100",
+      "name": "Entropy production seed",
+      "category": "thermodynamics",
+      "input_form": "irreversible process model with entropy accounting",
+      "output_form": "nonnegative entropy-production structure",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A standard irreversible-process interpretation and entropy balance are fixed"],
+      "operation": "Impose nonnegative entropy production in the standard nonequilibrium setting.",
+      "properties": ["dissipation_seed"],
+      "examples": ["Dissipation distinguishes irreversible evolution from ideal reversible balance laws"],
+      "counterexamples": ["Assigning negative total entropy production in a closed irreversible model is invalid in the standard setting"],
+      "common_errors": [],
+      "cross_links": ["SS-001", "MP-070"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-001"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "MP-070"
+        }
+      ]
+    },
+    {
+      "id": "SS-110",
+      "name": "Poynting flux seed",
+      "category": "electromagnetic theory",
+      "input_form": "electromagnetic field configuration with energy-balance interpretation",
+      "output_form": "field-energy transport structure",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A Maxwell-type field model with energy accounting is fixed"],
+      "operation": "Encode electromagnetic energy transport through Poynting-flux balance.",
+      "properties": ["flux_seed"],
+      "examples": ["Wave propagation carries energy through space rather than only oscillating local field values"],
+      "counterexamples": ["Treating electromagnetic energy as present with no transport structure is invalid in the standard flux setting"],
+      "common_errors": [],
+      "cross_links": ["SS-010", "MP-060"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-010"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "MP-060"
+        }
+      ]
+    },
+    {
+      "id": "SS-120",
+      "name": "FLRW symmetry seed",
+      "category": "relativity and gravitation",
+      "input_form": "homogeneous and isotropic cosmological spacetime model",
+      "output_form": "scale-factor-reduced relativistic geometry",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["Homogeneity, isotropy, and an FLRW-type metric ansatz are fixed"],
+      "operation": "Reduce cosmological relativistic structure to scale-factor dynamics under FLRW symmetry.",
+      "properties": ["symmetry_seed"],
+      "examples": ["Large-scale symmetry assumptions compress relativistic geometry into a small number of dynamical cosmological variables"],
+      "counterexamples": ["Arbitrary anisotropic or inhomogeneous universes are not automatically FLRW models"],
+      "common_errors": [],
+      "cross_links": ["SS-030", "MP-040"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-030"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "MP-040"
+        }
+      ]
+    },
+    {
+      "id": "SS-125",
+      "name": "Friedmann expansion seed",
+      "category": "astronomy and astrophysics",
+      "input_form": "cosmological scale factor with curvature and energy-density data",
+      "output_form": "Friedmann-type expansion law",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["An FLRW-type cosmological model and matter-energy content are fixed"],
+      "operation": "Relate cosmic expansion to curvature and matter-energy content through a Friedmann-type equation.",
+      "properties": ["cosmology_seed"],
+      "examples": ["Cosmological dynamics are encoded through scale-factor evolution rather than by static spatial geometry alone"],
+      "counterexamples": ["Assuming cosmic expansion is independent of matter-energy content is invalid in the standard Friedmann setting"],
+      "common_errors": [],
+      "cross_links": ["SS-120"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-120"
+        }
+      ]
+    },
+    {
+      "id": "SS-126",
+      "name": "Virial balance seed",
+      "category": "astronomy and astrophysics",
+      "input_form": "gravitationally bound astrophysical system under an averaging regime",
+      "output_form": "virial-type balance relation",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A bound astrophysical system and averaging assumptions are fixed"],
+      "operation": "Constrain bulk astrophysical behavior through averaged kinetic-potential balance.",
+      "properties": ["balance_seed"],
+      "examples": ["Cluster or stellar-system scale estimates can be constrained through bulk balance instead of exact trajectory tracking for every constituent"],
+      "counterexamples": ["Arbitrary nonequilibrium transients do not automatically satisfy virial balance identities without the required averaging regime"],
+      "common_errors": []
+    },
+    {
+      "id": "SS-130",
+      "name": "SIR compartment seed",
+      "category": "mathematical biology",
+      "input_form": "population state partitioned into susceptible, infectious, and removed classes",
+      "output_form": "coupled compartment-transition dynamics",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A compartment model and transmission/removal conventions are fixed"],
+      "operation": "Model epidemiological evolution through coupled SIR state transfers.",
+      "properties": ["compartment_seed"],
+      "examples": ["Outbreak growth and decline can be modeled by state transfers between population compartments rather than by one scalar trend alone"],
+      "counterexamples": ["Ignoring interaction-driven transmission while claiming an SIR-style model is invalid"],
+      "common_errors": [],
+      "cross_links": ["DE-050", "SS-040"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DE-050"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-040"
+        }
+      ]
+    },
+    {
+      "id": "SS-140",
+      "name": "Replicator dynamics seed",
+      "category": "mathematical economics",
+      "input_form": "population of strategies with payoff-dependent updates",
+      "output_form": "relative-payoff share evolution",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["Strategy shares and payoff functions are fixed"],
+      "operation": "Evolve population shares by payoff advantage relative to the population average.",
+      "properties": ["evolution_seed"],
+      "examples": ["Strategies with above-average payoff increase share while below-average strategies decline in a competitive population model"],
+      "counterexamples": ["Changing shares with no payoff-relative update structure is not automatically replicator dynamics"],
+      "common_errors": [],
+      "cross_links": ["CP-060", "SS-060"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CP-060"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-060"
+        }
+      ]
+    },
+    {
+      "id": "SS-150",
+      "name": "Stochastic volatility seed",
+      "category": "mathematical finance",
+      "input_form": "asset-price model with evolving latent volatility state",
+      "output_form": "state-dependent volatility pricing structure",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A diffusion-based asset model and stochastic volatility state are fixed"],
+      "operation": "Couple asset-price evolution to a separate stochastic volatility process.",
+      "properties": ["volatility_seed"],
+      "examples": ["Option-pricing structure can depend on both price uncertainty and volatility dynamics rather than on constant variance alone"],
+      "counterexamples": ["Treating every diffusion-pricing model as constant-volatility Black-Scholes is invalid once volatility becomes state-dependent"],
+      "common_errors": [],
+      "cross_links": ["SS-070", "PB-010"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-070"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "PB-010"
+        }
+      ]
+    },
+    {
+      "id": "SS-160",
+      "name": "Partition function thermodynamic seed",
+      "category": "statistical mechanics",
+      "input_form": "equilibrium ensemble with microscopic state-sum structure",
+      "output_form": "partition-function-based thermodynamic quantities",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A standard equilibrium ensemble and temperature scale are fixed"],
+      "operation": "Recover macroscopic thermodynamic quantities from partition-function structure.",
+      "properties": ["bridge_seed"],
+      "examples": ["Free energy, entropy, and response quantities can be recovered from one partition-function object rather than by separate unrelated formulas"],
+      "counterexamples": ["Arbitrary state weights without normalization and temperature structure are not automatically partition-function models"],
+      "common_errors": [],
+      "cross_links": ["SS-001", "SS-020"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-001"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-020"
+        }
+      ]
+    },
+    {
+      "id": "SS-170",
+      "name": "Fluctuation response seed",
+      "category": "statistical mechanics",
+      "input_form": "equilibrium observable fluctuations with weak perturbation data",
+      "output_form": "linear-response susceptibility relation",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["An equilibrium ensemble and weak-response regime are fixed"],
+      "operation": "Relate equilibrium fluctuations to linear response in the standard statistical-mechanics regime.",
+      "properties": ["response_seed"],
+      "examples": ["Observable variance can predict weak-response behavior near equilibrium instead of requiring a fully separate model"],
+      "counterexamples": ["Strong nonequilibrium response does not automatically satisfy equilibrium fluctuation-response relations"],
+      "common_errors": [],
+      "cross_links": ["SS-020", "SS-160"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-020"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-160"
+        }
+      ]
+    },
+    {
+      "id": "SS-180",
+      "name": "Hydrostatic balance seed",
+      "category": "geophysics",
+      "input_form": "large-scale atmospheric or oceanic vertical momentum structure",
+      "output_form": "pressure-gravity vertical balance",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A large-scale geophysical flow regime and gravity field are fixed"],
+      "operation": "Reduce vertical momentum structure to hydrostatic pressure-gravity balance when the standard regime applies.",
+      "properties": ["balance_seed"],
+      "examples": ["Large-scale atmospheric and oceanic models often reduce vertical momentum structure to pressure-gravity balance"],
+      "counterexamples": ["Rapidly accelerating vertical flows are not automatically hydrostatic"],
+      "common_errors": [],
+      "cross_links": ["FM-001"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "FM-001"
+        }
+      ]
+    },
+    {
+      "id": "SS-190",
+      "name": "Geostrophic balance seed",
+      "category": "geophysics",
+      "input_form": "rotating large-scale flow with horizontal pressure-gradient data",
+      "output_form": "Coriolis-pressure geostrophic balance",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A rotating-frame geophysical model and large-scale regime are fixed"],
+      "operation": "Balance Coriolis and horizontal pressure-gradient forces in the standard geostrophic regime.",
+      "properties": ["rotation_seed"],
+      "examples": ["Synoptic-scale atmospheric motion is often approximated through pressure-Coriolis balance rather than full acceleration terms"],
+      "counterexamples": ["Small-scale or highly ageostrophic flows are not automatically geostrophic"],
+      "common_errors": [],
+      "cross_links": ["SS-180", "FM-020"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-180"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "FM-020"
+        }
+      ]
+    },
+    {
+      "id": "SS-200",
+      "name": "Reaction network conservation seed",
+      "category": "mathematical chemistry",
+      "input_form": "reaction network with stoichiometric matrix",
+      "output_form": "stoichiometric conservation relations",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A reaction network and species-balance interpretation are fixed"],
+      "operation": "Constrain chemical trajectories by stoichiometric conservation relations.",
+      "properties": ["conservation_seed"],
+      "examples": ["Total atom counts or conserved moieties can constrain system trajectories before any numerical solve is attempted"],
+      "counterexamples": ["Assuming every concentration can vary independently despite stoichiometric constraints is invalid"],
+      "common_errors": [],
+      "cross_links": ["SS-050"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-050"
+        }
+      ]
+    },
+    {
+      "id": "SS-210",
+      "name": "Chemical equilibrium law seed",
+      "category": "mathematical chemistry",
+      "input_form": "reaction system with forward and reverse equilibrium structure",
+      "output_form": "equilibrium-constant relation",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A thermodynamic-kinetic equilibrium setting is fixed"],
+      "operation": "Relate long-time chemical composition to equilibrium-constant structure.",
+      "properties": ["equilibrium_seed"],
+      "examples": ["Long-time chemical composition can be constrained by equilibrium-constant structure rather than only by transient kinetics"],
+      "counterexamples": ["Applying equilibrium laws unchanged to strongly driven nonequilibrium reactors is invalid"],
+      "common_errors": [],
+      "cross_links": ["SS-050", "SS-200"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-050"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-200"
+        }
+      ]
+    },
+    {
+      "id": "SS-220",
+      "name": "Threshold cascade seed",
+      "category": "mathematical sociology",
+      "input_form": "network diffusion model with local activation thresholds",
+      "output_form": "cascade condition and adoption spread pattern",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A graph, threshold rule, and seeded state are fixed"],
+      "operation": "Trigger adoption cascades when local network thresholds are exceeded.",
+      "properties": ["cascade_seed"],
+      "examples": ["A small seeded minority can generate large adoption if neighborhood thresholds and graph structure align appropriately"],
+      "counterexamples": ["Treating every diffusion process as threshold-free independent contagion is invalid"],
+      "common_errors": [],
+      "cross_links": ["SS-080"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-080"
+        }
+      ]
+    },
+    {
+      "id": "SS-230",
+      "name": "Centrality influence seed",
+      "category": "mathematical sociology",
+      "input_form": "interaction network with candidate influence ranking",
+      "output_form": "centrality-based influence structure",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A graph-mediated interaction model and centrality notion are fixed"],
+      "operation": "Rank influence by structural centrality in the network.",
+      "properties": ["ranking_seed"],
+      "examples": ["Intervention on a structurally central node may alter diffusion far more than intervention on a peripheral node"],
+      "counterexamples": ["Assuming all nodes contribute equally regardless of graph position is invalid"],
+      "common_errors": [],
+      "cross_links": ["SS-080", "DM-040"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-080"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "DM-040"
+        }
+      ]
+    },
+    {
+      "id": "SS-240",
+      "name": "Psychometric curve seed",
+      "category": "mathematical psychology",
+      "input_form": "stimulus intensity and response probability data",
+      "output_form": "graded psychometric transition curve",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["A discrimination task and stimulus-response setting are fixed"],
+      "operation": "Model response probability as a smooth psychometric transition across stimulus intensity.",
+      "properties": ["curve_seed"],
+      "examples": ["Discrimination performance is often modeled by graded threshold behavior rather than by one abrupt binary switch only"],
+      "counterexamples": ["A raw accuracy percentage with no stimulus-response structure is not automatically a psychometric curve"],
+      "common_errors": [],
+      "cross_links": ["SS-090"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-090"
+        }
+      ]
+    },
+    {
+      "id": "SS-250",
+      "name": "Drift diffusion decision seed",
+      "category": "mathematical psychology",
+      "input_form": "sequential evidence stream with noise and decision boundaries",
+      "output_form": "drift-diffusion decision model",
+      "domains": ["science_model", "field_or_state", "symbolic"],
+      "preconditions": ["An evidence-accumulation setting and decision thresholds are fixed"],
+      "operation": "Model sequential choice through noisy evidence accumulation with absorbing decision boundaries.",
+      "properties": ["decision_dynamics_seed"],
+      "examples": ["Both accuracy and response time can emerge from one evidence-accumulation model rather than from separate unrelated rules"],
+      "counterexamples": ["Arbitrary delayed responses do not automatically arise from drift-diffusion evidence accumulation"],
+      "common_errors": [],
+      "cross_links": ["SS-090", "PB-050"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SS-090"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "PB-050"
+        }
+      ]
+    }
+  ]
+}

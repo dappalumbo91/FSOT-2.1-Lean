@@ -1,0 +1,716 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "DIFFERENTIAL_EQUATIONS_RULEBOOK.md",
+  "domain_symbols": {
+    "function_space": "differentiable real-valued functions",
+    "ode": "ordinary differential equations",
+    "symbolic": "symbolic differential-equation expressions"
+  },
+  "rules": [
+    {
+      "id": "DE-001",
+      "name": "Separable equation pattern",
+      "category": "first-order ODEs",
+      "input_form": "y' = g(x)h(y)",
+      "output_form": "separated integrable form",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "h(y) is nonzero on the working domain"
+      ],
+      "operation": "Separate variables to reduce a first-order ODE to two integrals.",
+      "properties": [
+        "solution_method"
+      ],
+      "examples": [
+        "Equations of the form y' = xy reduce to dy/y = x dx on regions where y is nonzero"
+      ],
+      "counterexamples": [
+        "Separating terms that are not multiplicatively factored is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DE-002",
+      "name": "Linear first-order integrating factor rule",
+      "category": "first-order ODEs",
+      "input_form": "y' + p(x)y = q(x)",
+      "output_form": "integrating-factor transformed equation",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "p and q are defined on the active interval"
+      ],
+      "operation": "Multiply by an integrating factor to convert the equation into a product derivative.",
+      "properties": [
+        "solution_method"
+      ],
+      "examples": [
+        "Integrating factors convert the left side into the derivative of a product"
+      ],
+      "counterexamples": [
+        "Using an integrating factor unrelated to p(x) is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DE-010",
+      "name": "Constant-coefficient characteristic equation rule",
+      "category": "second-order ODEs",
+      "input_form": "ay'' + by' + cy = 0",
+      "output_form": "solution form from roots of ar^2 + br + c = 0",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "a is nonzero"
+      ],
+      "operation": "Solve the characteristic polynomial to determine the homogeneous solution type.",
+      "properties": [
+        "solution_method"
+      ],
+      "examples": [
+        "Distinct real roots produce a linear combination of exponentials"
+      ],
+      "counterexamples": [
+        "Ignoring multiplicity of repeated roots is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DE-020",
+      "name": "Equilibrium point criterion for autonomous ODEs",
+      "category": "qualitative ODE theory",
+      "input_form": "y' = f(y)",
+      "output_form": "equilibrium solutions at zeros of f",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The equation is autonomous"
+      ],
+      "operation": "Identify equilibrium solutions by locating zeros of the vector field.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "Constant solutions arise where the vector field vanishes"
+      ],
+      "counterexamples": [
+        "Taking a point with f(y_*) not equal to 0 as an equilibrium is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DE-030",
+      "name": "Picard-Lindelof existence-uniqueness seed",
+      "category": "ODE theory",
+      "input_form": "initial value problem y' = f(x,y), y(x_0)=y_0",
+      "output_form": "local existence and uniqueness under standard hypotheses",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "f is continuous and locally Lipschitz in y on the working region"
+      ],
+      "operation": "Use standard regularity hypotheses to guarantee a unique local solution.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Well-behaved right-hand sides admit a unique local solution through the initial point"
+      ],
+      "counterexamples": [
+        "Claiming uniqueness without the needed regularity hypotheses is invalid in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DE-040",
+      "name": "Variation of parameters seed",
+      "category": "linear ODEs",
+      "input_form": "nonhomogeneous linear differential equation with homogeneous basis",
+      "output_form": "solution with variable coefficients",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A fundamental homogeneous solution family is known and the standard method hypotheses hold"
+      ],
+      "operation": "Allow homogeneous solution coefficients to vary in order to solve forced linear equations.",
+      "properties": [
+        "solution_method"
+      ],
+      "examples": [
+        "Variation of parameters extends homogeneous solution data to forced equations"
+      ],
+      "counterexamples": [
+        "Keeping the coefficients constant in a genuinely forced equation is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DE-041",
+      "name": "Matrix exponential rule for linear systems",
+      "category": "linear systems of ODEs",
+      "input_form": "x' = Ax",
+      "output_form": "x(t) = e^(tA)x(0)",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A is a constant matrix"
+      ],
+      "operation": "Represent constant-coefficient linear system evolution by a matrix exponential.",
+      "properties": [
+        "solution_formula"
+      ],
+      "examples": [
+        "Constant-coefficient linear systems evolve through matrix exponentials"
+      ],
+      "counterexamples": [
+        "Replacing e^(tA) by I + tA alone is invalid except as a first-order approximation"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LA-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LA-040"
+        }
+      ]
+    },
+    {
+      "id": "DE-050",
+      "name": "Separation-of-variables seed for the heat equation",
+      "category": "PDE methods",
+      "input_form": "heat equation with separable ansatz",
+      "output_form": "spatial and temporal factor equations",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The domain and boundary conditions fit the standard separation method"
+      ],
+      "operation": "Reduce a heat equation by product ansatz to eigenfunction and exponential factor equations.",
+      "properties": [
+        "solution_method_seed"
+      ],
+      "examples": [
+        "Rectangular and interval domains often reduce the heat equation to eigenfunction expansions by separation of variables"
+      ],
+      "counterexamples": [
+        "Assuming every boundary-value problem separates without the needed structure is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DE-051",
+      "name": "d'Alembert formula seed",
+      "category": "PDE solutions",
+      "input_form": "one-dimensional wave equation on the line",
+      "output_form": "traveling-wave representation",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The problem is posed on the whole line with the standard one-dimensional wave hypotheses"
+      ],
+      "operation": "Split a wave solution into left- and right-moving components.",
+      "properties": [
+        "solution_formula_seed"
+      ],
+      "examples": [
+        "d'Alembert decomposition splits a line-wave solution into left- and right-moving components"
+      ],
+      "counterexamples": [
+        "Applying the formula unchanged on bounded domains with boundary conditions is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DE-060",
+      "name": "Linearization stability seed",
+      "category": "dynamical systems",
+      "input_form": "equilibrium of a smooth autonomous system",
+      "output_form": "stability inference from linearization under standard spectral hypotheses",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The Jacobian at the equilibrium is defined and the standard linearization theorem hypotheses hold"
+      ],
+      "operation": "Use local linear spectral data to infer nearby stability behavior.",
+      "properties": [
+        "stability_seed"
+      ],
+      "examples": [
+        "Eigenvalues with negative real part indicate local asymptotic stability in the standard linearization theorem setting"
+      ],
+      "counterexamples": [
+        "Linearization is inconclusive in general when eigenvalues lie on the imaginary axis"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DE-061",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-062",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-063",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-064",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-065",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-066",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-067",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-068",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-069",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-070",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-071",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-072",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-073",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-074",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DE-075",
+      "name": "Counterexample mining expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "universal claim C",
+      "output_form": "counterexample search status",
+      "domains": [
+        "function_space",
+        "ode",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Systematically attempt to falsify broad claims before promoting them.",
+      "properties": [
+        "auto_generated",
+        "counterexample_search"
+      ],
+      "examples": [
+        "Boundary or low-dimensional cases can reveal hidden failures"
+      ],
+      "counterexamples": [
+        "Treating untested universality as proven is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

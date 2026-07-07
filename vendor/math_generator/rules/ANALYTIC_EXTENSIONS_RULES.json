@@ -1,0 +1,800 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "ANALYTIC_EXTENSIONS_RULEBOOK.md",
+  "domain_symbols": {
+    "analytic_object": "continuous, discrete, and variational analytic objects",
+    "function_family": "special functions and approximation classes",
+    "symbolic": "symbolic analytic-extension expressions"
+  },
+  "rules": [
+    {
+      "id": "AX-001",
+      "name": "Gamma recurrence seed",
+      "category": "special functions",
+      "input_form": "gamma-function argument in the standard domain",
+      "output_form": "factorial-extension recurrence relation",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The gamma function is evaluated away from its singular set"
+      ],
+      "operation": "Extend factorial structure by the gamma recurrence relation.",
+      "properties": [
+        "recurrence_seed"
+      ],
+      "examples": [
+        "Factorial identities extend from integers to broader arguments through gamma recurrence"
+      ],
+      "counterexamples": [
+        "Treating gamma as a polynomial extension of factorial is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AX-010",
+      "name": "Bessel-type differential seed",
+      "category": "special functions",
+      "input_form": "canonical differential operator with singular or symmetry-adapted structure",
+      "output_form": "distinguished special-function solution family",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A canonical operator equation is fixed"
+      ],
+      "operation": "Define a special-function family through a characteristic operator equation.",
+      "properties": [
+        "operator_seed"
+      ],
+      "examples": [
+        "Bessel families arise from radial-separation problems and are governed by a characteristic second-order equation"
+      ],
+      "counterexamples": [
+        "Arbitrary functions with no defining operator relation are not special-function families in this sense"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AN-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-010"
+        }
+      ]
+    },
+    {
+      "id": "AX-020",
+      "name": "Linear difference equation seed",
+      "category": "difference equations",
+      "input_form": "discrete recurrence relation with linear structure",
+      "output_form": "difference-equation evolution law",
+      "domains": [
+        "analytic_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A discrete index set and linear recurrence are fixed"
+      ],
+      "operation": "Model discrete evolution by a linear recurrence relation.",
+      "properties": [
+        "discrete_seed"
+      ],
+      "examples": [
+        "Recursively defined sequences can be solved by characteristic or variation-style discrete methods when linear structure is present"
+      ],
+      "counterexamples": [
+        "Replacing shift relations by unrelated pointwise formulas destroys the recurrence model"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AX-030",
+      "name": "Weierstrass approximation seed",
+      "category": "approximation theory",
+      "input_form": "continuous function on a compact interval",
+      "output_form": "uniform polynomial approximation family",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The function is continuous on a compact interval"
+      ],
+      "operation": "Approximate continuous functions uniformly by polynomials.",
+      "properties": [
+        "density_seed"
+      ],
+      "examples": [
+        "Polynomial families provide dense approximants to continuous targets on closed bounded intervals"
+      ],
+      "counterexamples": [
+        "Expecting exact finite-degree representation for every continuous function is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "RA-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "RA-050"
+        }
+      ]
+    },
+    {
+      "id": "AX-040",
+      "name": "Best approximation seed",
+      "category": "approximation theory",
+      "input_form": "target object, approximation class, and error norm",
+      "output_form": "optimal approximant relative to the chosen geometry",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An approximation class and metric or norm are fixed"
+      ],
+      "operation": "Minimize approximation error relative to the active norm or metric.",
+      "properties": [
+        "optimization_seed"
+      ],
+      "examples": [
+        "Least-squares and uniform approximation problems depend on the error geometry selected in advance"
+      ],
+      "counterexamples": [
+        "Claiming one approximation is universally best without specifying the error metric is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "OP-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "OP-040"
+        }
+      ]
+    },
+    {
+      "id": "AX-050",
+      "name": "Euler-Lagrange seed",
+      "category": "calculus of variations",
+      "input_form": "smooth functional on an admissible family",
+      "output_form": "Euler-Lagrange stationarity equations",
+      "domains": [
+        "analytic_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An admissible variational class and smooth integrand are fixed"
+      ],
+      "operation": "Pass from stationary functional behavior to Euler-Lagrange equations.",
+      "properties": [
+        "variational_seed"
+      ],
+      "examples": [
+        "Minimizing an action functional leads to differential equations for admissible paths or fields"
+      ],
+      "counterexamples": [
+        "Optimizing over arbitrary discontinuous competitors without admissibility structure is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "MP-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "MP-020"
+        }
+      ]
+    },
+    {
+      "id": "AX-060",
+      "name": "Elliptic index bridge seed",
+      "category": "global analysis",
+      "input_form": "elliptic operator on a global geometric object",
+      "output_form": "analytic-topological index bridge",
+      "domains": [
+        "analytic_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An elliptic operator and global manifold-type setting are fixed"
+      ],
+      "operation": "Relate analytic index data of an elliptic operator to global topological invariants.",
+      "properties": [
+        "bridge_seed"
+      ],
+      "examples": [
+        "Local differential operators can encode global topological information through index constructions"
+      ],
+      "counterexamples": [
+        "Treating purely local operator coefficients as the whole story of global index behavior is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DG-100",
+        "AT-100"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DG-100"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "AT-100"
+        }
+      ]
+    },
+    {
+      "id": "AX-070",
+      "name": "Hypergeometric equation seed",
+      "category": "special functions",
+      "input_form": "parameterized second-order hypergeometric-type differential equation",
+      "output_form": "special-function family under hypergeometric structure",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A hypergeometric-type differential equation and parameter regime are fixed"
+      ],
+      "operation": "Organize special functions through hypergeometric differential-equation structure.",
+      "properties": [
+        "family_seed"
+      ],
+      "examples": [
+        "Classical orthogonal and special functions can often be organized as specializations of hypergeometric structure"
+      ],
+      "counterexamples": [
+        "Arbitrary parameterized functions with no governing differential equation are not automatically hypergeometric families"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AX-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AX-010"
+        }
+      ]
+    },
+    {
+      "id": "AX-080",
+      "name": "Nonlinear recurrence fixed-point seed",
+      "category": "difference equations",
+      "input_form": "nonlinear update map with parameterized iteration",
+      "output_form": "fixed-point or periodic discrete-dynamics structure",
+      "domains": [
+        "analytic_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A nonlinear recurrence map and iteration domain are fixed"
+      ],
+      "operation": "Study nonlinear discrete evolution through fixed points, stability, and parameter-driven regime changes.",
+      "properties": [
+        "dynamics_seed"
+      ],
+      "examples": [
+        "Discrete iteration can exhibit stable, unstable, or oscillatory regimes even when the update rule is elementary"
+      ],
+      "counterexamples": [
+        "Assuming every nonlinear recurrence behaves like a linear recurrence is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AN-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-020"
+        }
+      ]
+    },
+    {
+      "id": "AX-090",
+      "name": "Chebyshev minimax seed",
+      "category": "approximation theory",
+      "input_form": "uniform approximation problem on a compact domain",
+      "output_form": "minimax-optimal approximation structure",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A compact domain and finite-dimensional approximation family are fixed"
+      ],
+      "operation": "Characterize best uniform approximation through minimax structure and alternation behavior.",
+      "properties": [
+        "minimax_seed"
+      ],
+      "examples": [
+        "Best uniform approximants are controlled by extremal error patterns rather than only average error size"
+      ],
+      "counterexamples": [
+        "Minimizing pointwise error at one location does not by itself produce a minimax-optimal approximant"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AX-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AX-040"
+        }
+      ]
+    },
+    {
+      "id": "AX-100",
+      "name": "Noether symmetry seed",
+      "category": "calculus of variations",
+      "input_form": "action functional with continuous symmetry",
+      "output_form": "conserved quantity or invariant current",
+      "domains": [
+        "analytic_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A smooth variational problem and symmetry action are fixed"
+      ],
+      "operation": "Generate conserved quantities from continuous variational symmetries.",
+      "properties": [
+        "symmetry_seed"
+      ],
+      "examples": [
+        "Time-translation invariance leads to an energy-type conservation law in many classical action models"
+      ],
+      "counterexamples": [
+        "Arbitrary transformations with no variational symmetry do not automatically generate conserved quantities"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AX-050",
+        "MP-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AX-050"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "MP-020"
+        }
+      ]
+    },
+    {
+      "id": "AX-110",
+      "name": "Heat kernel asymptotic seed",
+      "category": "global analysis",
+      "input_form": "elliptic or Laplace-type operator on a geometric object",
+      "output_form": "short-time heat-kernel asymptotic structure",
+      "domains": [
+        "analytic_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A heat-type operator and global geometric setting are fixed"
+      ],
+      "operation": "Relate short-time heat-kernel behavior to geometric and spectral structure.",
+      "properties": [
+        "asymptotic_seed"
+      ],
+      "examples": [
+        "Local curvature or operator data can influence short-time diffusion signatures in a global geometric model"
+      ],
+      "counterexamples": [
+        "Treating heat propagation as independent of the operator or geometry is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AX-060",
+        "DG-091"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AX-060"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "DG-091"
+        }
+      ]
+    },
+    {
+      "id": "AX-111",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-112",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-113",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-114",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-115",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-116",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-117",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-118",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-119",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-120",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-121",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-122",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AX-123",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "analytic_object",
+        "function_family",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

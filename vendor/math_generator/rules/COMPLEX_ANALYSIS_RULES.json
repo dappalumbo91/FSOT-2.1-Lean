@@ -1,0 +1,728 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "COMPLEX_ANALYSIS_RULEBOOK.md",
+  "domain_symbols": {
+    "complex_plane": "complex numbers and planar complex domains",
+    "holomorphic": "holomorphic complex functions",
+    "symbolic": "symbolic complex-analysis expressions"
+  },
+  "rules": [
+    {
+      "id": "CX-001",
+      "name": "Modulus-conjugate identity",
+      "category": "complex arithmetic",
+      "input_form": "|z|^2",
+      "output_form": "z conjugate(z)",
+      "domains": [
+        "complex_plane",
+        "symbolic"
+      ],
+      "preconditions": [
+        "z is a complex number"
+      ],
+      "operation": "Rewrite squared modulus as the product of a complex number with its conjugate.",
+      "properties": [
+        "identity"
+      ],
+      "examples": [
+        "For z = a + bi, the identity gives |z|^2 = a^2 + b^2"
+      ],
+      "counterexamples": [
+        "Replacing |z|^2 by z^2 is invalid in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CX-002",
+      "name": "Euler formula",
+      "category": "complex exponentials",
+      "input_form": "e^(i theta)",
+      "output_form": "cos(theta) + i sin(theta)",
+      "domains": [
+        "complex_plane",
+        "symbolic"
+      ],
+      "preconditions": [
+        "theta is real-valued in the standard formula"
+      ],
+      "operation": "Convert a unit-circle complex exponential into trigonometric form.",
+      "properties": [
+        "identity"
+      ],
+      "examples": [
+        "Euler's formula converts exponential oscillation into trigonometric form"
+      ],
+      "counterexamples": [
+        "Dropping the imaginary unit from the exponent changes the rule and is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CX-010",
+      "name": "Cauchy-Riemann seed",
+      "category": "holomorphicity",
+      "input_form": "f = u + iv holomorphic with differentiable components",
+      "output_form": "u_x = v_y and u_y = -v_x",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The component functions are differentiable as required"
+      ],
+      "operation": "Use the Cauchy-Riemann equations as a standard holomorphicity test under smoothness assumptions.",
+      "properties": [
+        "necessary_condition"
+      ],
+      "examples": [
+        "Verifying the Cauchy-Riemann equations is a standard holomorphicity check in smooth settings"
+      ],
+      "counterexamples": [
+        "Satisfying the equations without the needed regularity hypotheses is insufficient in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CX-020",
+      "name": "Contour integral linearity",
+      "category": "contour integration",
+      "input_form": "integral_gamma (af + bg) dz",
+      "output_form": "a integral_gamma f dz + b integral_gamma g dz",
+      "domains": [
+        "complex_plane",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The contour integrals involved are well-defined"
+      ],
+      "operation": "Distribute contour integration over linear combinations of integrands.",
+      "properties": [
+        "linearity"
+      ],
+      "examples": [
+        "Contour integration distributes over linear combinations of integrands"
+      ],
+      "counterexamples": [
+        "Treating contour integration as multiplicative over sums is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CX-030",
+      "name": "Cauchy integral theorem seed",
+      "category": "contour integration",
+      "input_form": "closed contour integral of a holomorphic function",
+      "output_form": "0 under standard simply connected hypotheses",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The function is holomorphic on the relevant simply connected region containing the contour"
+      ],
+      "operation": "Use holomorphicity to conclude vanishing of closed contour integrals under the standard theorem hypotheses.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Holomorphicity on a disk yields vanishing closed-loop integrals in that disk"
+      ],
+      "counterexamples": [
+        "Applying the theorem across singularities is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CX-020",
+        "TP-042"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "CX-020"
+        }
+      ]
+    },
+    {
+      "id": "CX-040",
+      "name": "Residue theorem seed",
+      "category": "complex integration",
+      "input_form": "closed contour integral around isolated singularities",
+      "output_form": "2 pi i times sum of enclosed residues",
+      "domains": [
+        "complex_plane",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The contour and singularity hypotheses of the residue theorem hold"
+      ],
+      "operation": "Reduce contour integrals to enclosed residue data under the standard theorem hypotheses.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Residues convert certain complex contour integrals into local singular data"
+      ],
+      "counterexamples": [
+        "Summing residues outside the contour is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "CX-030"
+        }
+      ]
+    },
+    {
+      "id": "CX-050",
+      "name": "Cauchy integral formula seed",
+      "category": "holomorphic function theory",
+      "input_form": "holomorphic function and interior evaluation point",
+      "output_form": "boundary contour integral representation",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard contour and holomorphicity hypotheses hold"
+      ],
+      "operation": "Recover interior values of a holomorphic function from contour data.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Cauchy integral formulas convert boundary integral data into interior function values"
+      ],
+      "counterexamples": [
+        "Applying the formula when the evaluation point lies on or outside the admissible contour is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "CX-030"
+        }
+      ]
+    },
+    {
+      "id": "CX-051",
+      "name": "Liouville theorem seed",
+      "category": "entire functions",
+      "input_form": "bounded entire function",
+      "output_form": "constant function",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The function is entire and bounded on the whole complex plane"
+      ],
+      "operation": "Collapse bounded entire holomorphic functions to constants.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Bounded holomorphicity on the whole complex plane collapses the function to a constant"
+      ],
+      "counterexamples": [
+        "Boundedness on only a local region is insufficient"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CX-052",
+      "name": "Maximum modulus principle seed",
+      "category": "holomorphic function theory",
+      "input_form": "nonconstant holomorphic function on a connected domain",
+      "output_form": "no strict interior maximum of modulus",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The domain is connected and the function is holomorphic"
+      ],
+      "operation": "Forbid strict interior modulus maxima for nonconstant holomorphic functions.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Interior modulus maxima force holomorphic functions to be locally constant in the standard theorem setting"
+      ],
+      "counterexamples": [
+        "Applying the principle to nonholomorphic functions is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CX-060",
+      "name": "Laurent series seed",
+      "category": "series expansions",
+      "input_form": "holomorphic function on an annulus",
+      "output_form": "Laurent expansion",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The function is holomorphic on the working annulus"
+      ],
+      "operation": "Expand an annular holomorphic function into positive and negative complex powers.",
+      "properties": [
+        "representation_seed"
+      ],
+      "examples": [
+        "Isolated singular behavior is encoded by negative Laurent coefficients"
+      ],
+      "counterexamples": [
+        "Replacing annular validity by arbitrary disconnected domains is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CX-061",
+      "name": "Isolated singularity classification seed",
+      "category": "singularity theory",
+      "input_form": "isolated singularity and Laurent expansion",
+      "output_form": "removable, pole, or essential classification",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An isolated singularity and its Laurent expansion are under consideration"
+      ],
+      "operation": "Classify isolated singularities by the negative-power structure of the Laurent series.",
+      "properties": [
+        "classification_seed"
+      ],
+      "examples": [
+        "Finitely many negative powers correspond to a pole and no negative powers correspond to a removable singularity"
+      ],
+      "counterexamples": [
+        "Declaring every isolated singularity a pole is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "CX-060"
+        }
+      ]
+    },
+    {
+      "id": "CX-062",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-063",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-064",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-065",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-066",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-067",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-068",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-069",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-070",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-071",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-072",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-073",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-074",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CX-075",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "complex_plane",
+        "holomorphic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

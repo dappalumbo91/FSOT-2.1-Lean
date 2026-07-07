@@ -1,0 +1,753 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "EUCLIDEAN_PROOF_RULEBOOK.md",
+  "domain_symbols": {
+    "euclidean_plane": "Euclidean plane geometry",
+    "proof_symbolic": "structured Euclidean proof statements"
+  },
+  "rules": [
+    {
+      "id": "EP-001",
+      "name": "Given statements enter the proof context",
+      "category": "proof setup",
+      "input_form": "given statement",
+      "output_form": "available proof fact",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "The statement is explicitly declared as a given"
+      ],
+      "operation": "Insert the given statement into the set of proof facts available for later citation.",
+      "properties": [
+        "context_introduction"
+      ],
+      "examples": [
+        "If AB is parallel to CD is given, it may be used later to infer angle relations"
+      ],
+      "counterexamples": [
+        "Using a non-given, non-proved statement as if it were established is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "EP-002",
+      "name": "Shared object reflexivity",
+      "category": "proof setup",
+      "input_form": "shared segment, angle, or figure",
+      "output_form": "self-congruence statement",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "The same object appears in both compared configurations"
+      ],
+      "operation": "Use reflexivity to assert that an object is congruent to itself.",
+      "properties": [
+        "reflexive"
+      ],
+      "examples": [
+        "Segment AC is congruent to segment AC"
+      ],
+      "counterexamples": [
+        "Reflexivity cannot justify congruence between distinct objects with no identity relation"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "EP-010",
+      "name": "Vertical angles congruent",
+      "category": "local inference",
+      "input_form": "intersecting lines",
+      "output_form": "pair of congruent vertical angles",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Two lines intersect to form vertical angles"
+      ],
+      "operation": "Infer congruence of vertical angles from line intersection.",
+      "properties": [
+        "angle_theorem"
+      ],
+      "examples": [
+        "If lines intersect at E, then angle AEC is congruent to angle BED"
+      ],
+      "counterexamples": [
+        "Adjacent angles are not vertical angles merely because they share a vertex"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "EP-011",
+      "name": "Parallel lines yield alternate interior angle congruence",
+      "category": "parallel-line inference",
+      "input_form": "parallel lines and transversal",
+      "output_form": "congruent alternate interior angles",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "The lines are parallel",
+        "A transversal intersects both lines"
+      ],
+      "operation": "Infer alternate interior angle congruence from parallel lines cut by a transversal.",
+      "properties": [
+        "angle_theorem"
+      ],
+      "examples": [
+        "Parallel lines l and m with transversal t produce matching alternate interior angles"
+      ],
+      "counterexamples": [
+        "Without parallelism, this inference is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GE-012"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GE-012"
+        }
+      ]
+    },
+    {
+      "id": "EP-012",
+      "name": "Corresponding angles imply parallelism",
+      "category": "parallel-line inference",
+      "input_form": "congruent corresponding angles under a transversal",
+      "output_form": "parallel line conclusion",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "The angle pair is a corresponding-angle configuration"
+      ],
+      "operation": "Infer that two lines are parallel from congruent corresponding angles.",
+      "properties": [
+        "converse_theorem"
+      ],
+      "examples": [
+        "Congruent corresponding angles can justify a parallelism conclusion"
+      ],
+      "counterexamples": [
+        "Visually similar but unproved angle placement is insufficient"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "converse_of",
+          "target_rule_id": "EP-011"
+        }
+      ]
+    },
+    {
+      "id": "EP-020",
+      "name": "Triangle congruence justification by SSS or SAS",
+      "category": "triangle proof moves",
+      "input_form": "triangle data matching a valid congruence criterion",
+      "output_form": "triangle congruence statement",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "A valid criterion such as SSS or SAS is fully established"
+      ],
+      "operation": "Conclude triangle congruence from an approved congruence criterion.",
+      "properties": [
+        "congruence_step"
+      ],
+      "examples": [
+        "Three matched side equalities justify triangle congruence by SSS"
+      ],
+      "counterexamples": [
+        "Citing SSA as a universal congruence rule is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GE-030",
+        "GE-031"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GE-030"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "GE-031"
+        }
+      ]
+    },
+    {
+      "id": "EP-021",
+      "name": "CPCTC transfer rule",
+      "category": "triangle proof moves",
+      "input_form": "established triangle congruence",
+      "output_form": "corresponding-part congruence statement",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Triangle congruence has already been proved"
+      ],
+      "operation": "Transfer congruence from triangles to corresponding sides or angles.",
+      "properties": [
+        "derived_consequence"
+      ],
+      "examples": [
+        "If triangle ABC is congruent to triangle DEF, then angle A is congruent to angle D under the stated correspondence"
+      ],
+      "counterexamples": [
+        "Using CPCTC before congruence is proved is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GE-030",
+        "GE-031",
+        "GE-032",
+        "GE-033"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "EP-020"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "GE-030"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "GE-031"
+        }
+      ]
+    },
+    {
+      "id": "EP-030",
+      "name": "Auxiliary construction introduction",
+      "category": "strategy pattern",
+      "input_form": "proof state lacking a direct theorem pattern",
+      "output_form": "augmented figure with justified auxiliary object",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "The auxiliary construction is explicitly introduced and structurally valid"
+      ],
+      "operation": "Add a useful line, segment, or point to expose known theorem patterns.",
+      "properties": [
+        "construction_step"
+      ],
+      "examples": [
+        "Drawing a diagonal in a quadrilateral can create triangles for congruence reasoning"
+      ],
+      "counterexamples": [
+        "Introducing an auxiliary object and silently assuming unsupported properties about it is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "EP-031",
+      "name": "Proof by contradiction pattern",
+      "category": "strategy pattern",
+      "input_form": "target statement and negated temporary assumption",
+      "output_form": "rejection of the negated assumption",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "A contradiction with givens or proved theorems is derived"
+      ],
+      "operation": "Assume the negation of the target, derive a contradiction, and discharge the assumption.",
+      "properties": [
+        "indirect_proof"
+      ],
+      "examples": [
+        "Assume two lines are not parallel, derive conflicting angle relations, conclude the assumption fails"
+      ],
+      "counterexamples": [
+        "Declaring contradiction without explicitly deriving the conflict is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "EP-032",
+      "name": "Diagram not-to-scale warning",
+      "category": "invalid pattern",
+      "input_form": "visual appearance of a figure",
+      "output_form": "claimed proof fact",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Reject diagram appearance as a standalone justification.",
+      "properties": [
+        "invalid_pattern"
+      ],
+      "examples": [
+        "A picture that looks like an isosceles triangle does not prove equal sides"
+      ],
+      "counterexamples": [
+        "Inferring exact angle equality from an unlabeled sketch is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "EP-040",
+      "name": "Midpoint introduction rule",
+      "category": "segment proof moves",
+      "input_form": "M is midpoint of AB",
+      "output_form": "A,M,B collinear and AM = MB",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Midpoint status is given or proved"
+      ],
+      "operation": "Expand midpoint data into collinearity and equal-segment facts.",
+      "properties": [
+        "definition_unpacking"
+      ],
+      "examples": [
+        "Midpoint data can supply both a collinearity fact and a pair of equal segments"
+      ],
+      "counterexamples": [
+        "Equal segments alone do not establish midpoint status without collinearity"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "EP-041",
+      "name": "Perpendicular-bisector proof pattern",
+      "category": "segment proof moves",
+      "input_form": "point P on perpendicular bisector of AB",
+      "output_form": "PA = PB",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "P lies on the perpendicular bisector of AB"
+      ],
+      "operation": "Infer equal distances to segment endpoints from perpendicular-bisector membership.",
+      "properties": [
+        "distance_inference"
+      ],
+      "examples": [
+        "A point on the perpendicular bisector of a segment yields equal distance facts to the segment endpoints"
+      ],
+      "counterexamples": [
+        "Being merely perpendicular to AB at an unrelated point is insufficient"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "EP-042",
+      "name": "Angle-bisector proof pattern",
+      "category": "angle proof moves",
+      "input_form": "ray AD bisects angle BAC",
+      "output_form": "angle BAD = angle DAC",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "AD is established as an angle bisector"
+      ],
+      "operation": "Convert angle-bisector data into equal-angle facts.",
+      "properties": [
+        "definition_unpacking"
+      ],
+      "examples": [
+        "Angle-bisector givens can create equal-angle pairs for congruence or similarity proofs"
+      ],
+      "counterexamples": [
+        "A ray inside the angle is not automatically an angle bisector"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "EP-050",
+      "name": "Tangent-chord proof chain",
+      "category": "circle proof moves",
+      "input_form": "tangent and chord through a point of tangency",
+      "output_form": "angle equals inscribed angle subtending same arc",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "A tangent and chord configuration is established"
+      ],
+      "operation": "Transfer circle angle data through the tangent-chord theorem.",
+      "properties": [
+        "angle_theorem"
+      ],
+      "examples": [
+        "Tangent-chord configurations can transfer angle data into circle-angle arguments"
+      ],
+      "counterexamples": [
+        "Using a secant line in place of a tangent invalidates the tangent-chord rule"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GE-060",
+        "GE-061"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GE-060"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "GE-061"
+        }
+      ]
+    },
+    {
+      "id": "EP-051",
+      "name": "Similarity proof template",
+      "category": "triangle proof moves",
+      "input_form": "triangle data matching a similarity criterion",
+      "output_form": "triangle similarity statement and proportional-part consequences",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "A valid similarity criterion such as AA is established"
+      ],
+      "operation": "Conclude similarity and then transfer proportional side relations.",
+      "properties": [
+        "similarity_step"
+      ],
+      "examples": [
+        "Two matched angles justify similarity and then proportional corresponding sides"
+      ],
+      "counterexamples": [
+        "Using proportional side conclusions before similarity is established is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GE-032",
+        "GE-033"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GE-032"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "GE-033"
+        }
+      ]
+    },
+    {
+      "id": "EP-060",
+      "name": "Two-column proof representation rule",
+      "category": "proof representation",
+      "input_form": "ordered proof statements and justifications",
+      "output_form": "two-column proof structure",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Each statement has a declared justification source"
+      ],
+      "operation": "Represent a proof as statement-justification pairs that expose dependency structure.",
+      "properties": [
+        "representation_rule"
+      ],
+      "examples": [
+        "A valid two-column proof records what was concluded and why at each step"
+      ],
+      "counterexamples": [
+        "Listing statements without any justifications does not constitute a complete two-column proof"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LF-001",
+        "LF-021"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LF-001"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "LF-021"
+        }
+      ]
+    },
+    {
+      "id": "EP-061",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "EP-062",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "EP-063",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "EP-064",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "EP-065",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "EP-066",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "EP-067",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "EP-068",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "EP-069",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "euclidean_plane",
+        "proof_symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

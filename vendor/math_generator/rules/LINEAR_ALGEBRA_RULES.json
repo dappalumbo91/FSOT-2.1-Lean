@@ -1,0 +1,686 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "LINEAR_ALGEBRA_RULEBOOK.md",
+  "domain_symbols": {
+    "field": "base field of scalars",
+    "vector_space": "vector spaces over a field",
+    "symbolic": "symbolic linear-algebra expressions"
+  },
+  "rules": [
+    {
+      "id": "LA-001",
+      "name": "Vector space closure under addition and scalar multiplication",
+      "category": "vector spaces",
+      "input_form": "u, v in V and c in F",
+      "output_form": "u+v in V and cu in V",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "V is claimed to be a vector space over F"
+      ],
+      "operation": "Use the closure axioms to keep vector addition and scalar multiplication inside the space.",
+      "properties": [
+        "closure"
+      ],
+      "examples": [
+        "In R^n, vector addition and scalar multiplication stay in R^n"
+      ],
+      "counterexamples": [
+        "A set not closed under these operations is not a vector space under the claimed operations"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-002",
+      "name": "Linear combination formation",
+      "category": "span",
+      "input_form": "c1v1 + ... + ckvk",
+      "output_form": "linear combination",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Each ci is a scalar and each vi is a vector in the same vector space"
+      ],
+      "operation": "Form a linear combination of listed vectors with field scalars.",
+      "properties": [
+        "finite_sum"
+      ],
+      "examples": [
+        "2v1 - 3v2 + v3 is a linear combination of v1, v2, v3"
+      ],
+      "counterexamples": [
+        "Using nonlinear operations such as v1*v2 is not a linear combination"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-003",
+      "name": "Span definition",
+      "category": "span",
+      "input_form": "set S of vectors",
+      "output_form": "all linear combinations of vectors in S",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Interpret the span of a set as the total collection of its linear combinations.",
+      "properties": [
+        "generated_subspace"
+      ],
+      "examples": [
+        "Span of a nonzero vector in R^2 is a line through the origin"
+      ],
+      "counterexamples": [
+        "Omitting some allowed scalar combinations gives only part of the span"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-010",
+      "name": "Linear independence criterion",
+      "category": "independence",
+      "input_form": "c1v1 + ... + ckvk = 0",
+      "output_form": "independent or dependent classification",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Classify a vector family as linearly independent exactly when the zero combination has only the trivial coefficient solution.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "Standard basis vectors in R^n are linearly independent"
+      ],
+      "counterexamples": [
+        "If one vector is a scalar multiple of another, the pair is dependent"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-011",
+      "name": "Basis criterion",
+      "category": "basis",
+      "input_form": "set B of vectors",
+      "output_form": "basis classification",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The ambient vector space is fixed"
+      ],
+      "operation": "Recognize a basis by simultaneous spanning and linear independence.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "The standard coordinate vectors form a basis of R^n"
+      ],
+      "counterexamples": [
+        "A spanning set with redundancy is not automatically a basis"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-012",
+      "name": "Dimension as basis cardinality",
+      "category": "dimension",
+      "input_form": "finite-dimensional vector space",
+      "output_form": "cardinality of any basis",
+      "domains": [
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The vector space is finite-dimensional"
+      ],
+      "operation": "Use basis size as the invariant dimension of a finite-dimensional vector space.",
+      "properties": [
+        "invariant"
+      ],
+      "examples": [
+        "Every basis of R^3 has three vectors"
+      ],
+      "counterexamples": [
+        "Claiming two finite bases of the same vector space have different sizes is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-020",
+      "name": "Linear transformation preservation rule",
+      "category": "linear maps",
+      "input_form": "T(u+v) and T(cv)",
+      "output_form": "T(u)+T(v) and cT(v)",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "T is claimed to be linear"
+      ],
+      "operation": "Use the defining preservation laws of a linear transformation.",
+      "properties": [
+        "structure_preserving"
+      ],
+      "examples": [
+        "Matrix multiplication by a fixed matrix defines a linear map"
+      ],
+      "counterexamples": [
+        "T(v) = v + b with nonzero fixed b is not linear"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LS-040"
+      ]
+    },
+    {
+      "id": "LA-021",
+      "name": "Kernel and image definitions",
+      "category": "linear maps",
+      "input_form": "linear map T",
+      "output_form": "kernel(T) and image(T)",
+      "domains": [
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Interpret the kernel as vectors mapped to zero and the image as actual outputs.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "The kernel of the zero map is the whole domain"
+      ],
+      "counterexamples": [
+        "Confusing kernel vectors with output vectors is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-022",
+      "name": "Rank-nullity pattern",
+      "category": "linear maps",
+      "input_form": "finite-dimensional linear map",
+      "output_form": "dim(domain) = rank + nullity",
+      "domains": [
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The domain is finite-dimensional"
+      ],
+      "operation": "Relate domain dimension to image dimension and kernel dimension.",
+      "properties": [
+        "dimension_identity"
+      ],
+      "examples": [
+        "A map from R^4 with rank 3 has nullity 1"
+      ],
+      "counterexamples": [
+        "Subtracting image dimension from codomain dimension instead of domain dimension is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LS-076"
+      ]
+    },
+    {
+      "id": "LA-023",
+      "name": "Eigenpair definition",
+      "category": "eigenstructure",
+      "input_form": "T(v) = lambda v",
+      "output_form": "eigenvalue-eigenvector relation",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "v != 0"
+      ],
+      "operation": "Recognize an eigenpair from scalar-rescaling behavior under a linear map.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "For a diagonal matrix, diagonal entries act as eigenvalues on standard basis vectors"
+      ],
+      "counterexamples": [
+        "The zero vector cannot serve as an eigenvector"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-030",
+      "name": "Inner product positivity and symmetry",
+      "category": "inner products",
+      "input_form": "<u,v>",
+      "output_form": "positive and symmetric or conjugate-symmetric pairing",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An inner product structure is fixed"
+      ],
+      "operation": "Use positivity and symmetry axioms of an inner product.",
+      "properties": [
+        "axiom_family"
+      ],
+      "examples": [
+        "Standard dot product on R^n has these properties"
+      ],
+      "counterexamples": [
+        "A bilinear form with <v,v> negative for some nonzero v is not an inner product"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-031",
+      "name": "Orthogonality criterion",
+      "category": "inner products",
+      "input_form": "<u,v>",
+      "output_form": "orthogonality classification",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An inner product structure is fixed"
+      ],
+      "operation": "Classify vectors as orthogonal when their inner product is zero.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "Standard basis vectors in R^n are orthogonal under the dot product"
+      ],
+      "counterexamples": [
+        "Nonzero angle alone without the inner-product-zero condition is insufficient"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-032",
+      "name": "Projection onto a unit vector",
+      "category": "projections",
+      "input_form": "vector v and unit vector u",
+      "output_form": "<v,u>u",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "u is a unit vector under the active inner product"
+      ],
+      "operation": "Project a vector orthogonally onto the one-dimensional subspace spanned by a unit vector.",
+      "properties": [
+        "projection_formula"
+      ],
+      "examples": [
+        "Projecting onto a coordinate axis extracts the matching component under the standard dot product"
+      ],
+      "counterexamples": [
+        "Omitting unit normalization when the formula requires it is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-040",
+      "name": "Diagonalization criterion",
+      "category": "spectral structure",
+      "input_form": "linear operator or matrix",
+      "output_form": "diagonalizable classification",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A basis of eigenvectors exists over the active field"
+      ],
+      "operation": "Recognize diagonalizability from the existence of a full eigenbasis.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "A matrix with n linearly independent eigenvectors is diagonalizable over the active field"
+      ],
+      "counterexamples": [
+        "Having repeated eigenvalues alone does not prevent or guarantee diagonalization"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-041",
+      "name": "Spectral theorem pattern",
+      "category": "spectral structure",
+      "input_form": "real symmetric matrix",
+      "output_form": "orthonormal eigenbasis and orthogonal diagonalization",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The matrix is real and symmetric"
+      ],
+      "operation": "Apply the spectral theorem to obtain orthogonal diagonalization.",
+      "properties": [
+        "theorem_pattern"
+      ],
+      "examples": [
+        "Symmetric matrices can be diagonalized by an orthogonal change of basis"
+      ],
+      "counterexamples": [
+        "Applying the real symmetric spectral theorem to arbitrary nonsymmetric matrices is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-042",
+      "name": "Tensor product bilinearity seed rule",
+      "category": "multilinear algebra",
+      "input_form": "(u1+u2) tensor v or u tensor (v1+v2)",
+      "output_form": "distributed tensor sum",
+      "domains": [
+        "vector_space",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Tensor product context is fixed"
+      ],
+      "operation": "Distribute tensor product over addition in each slot.",
+      "properties": [
+        "bilinear"
+      ],
+      "examples": [
+        "Tensor expressions distribute over addition in each slot"
+      ],
+      "counterexamples": [
+        "Treating tensor product as commutative by default is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LA-043",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "field",
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "LA-044",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "field",
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "LA-045",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "field",
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "LA-046",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "field",
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "LA-047",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "field",
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "LA-048",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "field",
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "LA-049",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "field",
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "LA-050",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "field",
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "LA-051",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "field",
+        "vector_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Tier 30 — materials engineering ↔ species-catalog machine bridge.
+version: "1.0"
+updated: "2026-07-07"
+
+source:
+  smiles_dataset: "vendor/smiles/FSOT_SMILES_Lab_Dataset.json"
+  species_catalog: "vendor/species/fsot_species_catalog.json"
+
+build:
+  script: scripts/build_materials_species_bridge_benchmark.py
+  output: data/materials_species_bridge_benchmark.json
+
+lean:
+  generator: scripts/gen_materials_species_bridge_lean.py
+  module: FSOT.Formal.MaterialsSpeciesBridgePriors
+  lean_domain: material
+  sign_theorem: material_raw_S_positive
+
+verification:
+  min_records: 20
+  min_overlap_metals: 10
+  max_median_error_pct: 5.0

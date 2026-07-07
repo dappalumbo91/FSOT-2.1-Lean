@@ -1,0 +1,798 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "ADVANCED_ANALYSIS_RULEBOOK.md",
+  "domain_symbols": {
+    "analytic_space": "domains, function spaces, and analytic structures",
+    "operator_space": "operators and transforms on function spaces",
+    "symbolic": "symbolic advanced-analysis expressions"
+  },
+  "rules": [
+    {
+      "id": "AN-001",
+      "name": "Holomorphicity in several variables seed",
+      "category": "several complex variables",
+      "input_form": "function on C^n",
+      "output_form": "holomorphic classification",
+      "domains": [
+        "analytic_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A domain in C^n and complex-variable structure are fixed"
+      ],
+      "operation": "Recognize holomorphicity in the several-complex-variables setting.",
+      "properties": [
+        "classification_seed"
+      ],
+      "examples": [
+        "Several-complex-variable holomorphicity is stricter than separately checking arbitrary real differentiability conditions"
+      ],
+      "counterexamples": [
+        "Continuity alone on C^n is insufficient for holomorphicity"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CX-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "CX-050"
+        }
+      ]
+    },
+    {
+      "id": "AN-010",
+      "name": "PDE classification seed",
+      "category": "partial differential equations",
+      "input_form": "second-order linear PDE principal part",
+      "output_form": "elliptic, parabolic, or hyperbolic class",
+      "domains": [
+        "analytic_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The principal second-order coefficients are fixed"
+      ],
+      "operation": "Classify a second-order linear PDE by its principal-part quadratic form.",
+      "properties": [
+        "classification_seed"
+      ],
+      "examples": [
+        "Heat, Laplace, and wave equations fall into distinct PDE classes under principal-symbol analysis"
+      ],
+      "counterexamples": [
+        "Classifying a PDE by lower-order terms alone is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AN-020",
+      "name": "Dynamical system orbit seed",
+      "category": "dynamical systems",
+      "input_form": "initial state and evolution rule",
+      "output_form": "orbit or trajectory",
+      "domains": [
+        "analytic_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A time evolution map or flow is fixed"
+      ],
+      "operation": "Generate the orbit of an initial state under repeated or continuous evolution.",
+      "properties": [
+        "definition_seed"
+      ],
+      "examples": [
+        "Long-term behavior questions in dynamics are phrased in terms of orbits, invariant sets, and recurrence"
+      ],
+      "counterexamples": [
+        "Treating one isolated time step as a full orbit is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AN-030",
+      "name": "Fourier transform seed",
+      "category": "harmonic analysis and transforms",
+      "input_form": "integrable or transformable function",
+      "output_form": "frequency-domain representation",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A standard Fourier-transform convention is fixed"
+      ],
+      "operation": "Convert a function into its frequency-domain transform.",
+      "properties": [
+        "transform_seed"
+      ],
+      "examples": [
+        "Oscillatory structure becomes algebraic frequency data under Fourier transformation"
+      ],
+      "counterexamples": [
+        "Replacing the transform by pointwise multiplication is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AN-040",
+      "name": "Banach space completeness seed",
+      "category": "functional analysis",
+      "input_form": "normed vector space",
+      "output_form": "Banach-space classification when norm complete",
+      "domains": [
+        "analytic_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A norm and induced metric are fixed"
+      ],
+      "operation": "Recognize a Banach space by norm completeness.",
+      "properties": [
+        "classification_seed"
+      ],
+      "examples": [
+        "Completeness permits limit arguments for Cauchy sequences of functions or vectors in the active norm"
+      ],
+      "counterexamples": [
+        "A normed space need not be Banach if Cauchy sequences fail to converge inside the space"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AN-050",
+      "name": "Bounded linear operator seed",
+      "category": "operator theory",
+      "input_form": "linear map between normed spaces",
+      "output_form": "bounded iff continuous",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Domain and codomain normed spaces are fixed"
+      ],
+      "operation": "Equate boundedness and continuity for linear maps in normed spaces.",
+      "properties": [
+        "equivalence_seed"
+      ],
+      "examples": [
+        "Operator norm control gives continuity of linear maps between normed spaces"
+      ],
+      "counterexamples": [
+        "Nonlinear continuity does not define a bounded linear operator"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "AN-040"
+        }
+      ]
+    },
+    {
+      "id": "AN-060",
+      "name": "Fredholm integral equation seed",
+      "category": "integral equations",
+      "input_form": "unknown function under integral operator with fixed kernel",
+      "output_form": "integral-operator equation",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A kernel, domain of integration, and function space are fixed"
+      ],
+      "operation": "Represent an equation as a Fredholm integral equation on a function space.",
+      "properties": [
+        "operator_equation_seed"
+      ],
+      "examples": [
+        "Integral equations can be rewritten as operator equations on function spaces"
+      ],
+      "counterexamples": [
+        "Treating arbitrary pointwise equations as integral equations is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AN-070",
+      "name": "Montel normal family seed",
+      "category": "several complex variables",
+      "input_form": "locally bounded family of holomorphic functions",
+      "output_form": "normal-family compactness structure",
+      "domains": [
+        "analytic_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A standard several-complex-variables domain and local boundedness assumptions are fixed"
+      ],
+      "operation": "Use Montel-type compactness for locally bounded holomorphic families.",
+      "properties": [
+        "compactness_seed"
+      ],
+      "examples": [
+        "Compactness of function families in several complex variables is controlled by holomorphic boundedness rather than by arbitrary pointwise behavior alone"
+      ],
+      "counterexamples": [
+        "An unconstrained family of holomorphic functions is not automatically normal"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AN-001",
+        "RA-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-001"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "RA-050"
+        }
+      ]
+    },
+    {
+      "id": "AN-080",
+      "name": "Sobolev weak derivative seed",
+      "category": "partial differential equations and functional analysis",
+      "input_form": "function with weak derivative structure and integrability data",
+      "output_form": "Sobolev-space classification",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A domain, integrability exponent, and weak derivative interpretation are fixed"
+      ],
+      "operation": "Treat weak differentiability and integrability jointly through Sobolev-space structure.",
+      "properties": [
+        "variational_seed"
+      ],
+      "examples": [
+        "PDE solutions can be treated variationally even when classical derivatives fail to exist everywhere"
+      ],
+      "counterexamples": [
+        "Demanding pointwise smoothness everywhere is invalid as a general Sobolev criterion"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AN-010",
+        "AN-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-010"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-040"
+        }
+      ]
+    },
+    {
+      "id": "AN-090",
+      "name": "Semigroup evolution seed",
+      "category": "partial differential equations and dynamical systems",
+      "input_form": "operator-generated time-evolution family",
+      "output_form": "semigroup solution structure",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A linear evolution generator and semigroup law are fixed"
+      ],
+      "operation": "Model time evolution through operator semigroups.",
+      "properties": [
+        "evolution_seed"
+      ],
+      "examples": [
+        "Time propagation for heat-type problems is organized by semigroup structure rather than by isolated time steps only"
+      ],
+      "counterexamples": [
+        "Arbitrary families of operators with no semigroup law do not define semigroup evolution"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AN-010",
+        "AN-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-010"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-020"
+        }
+      ]
+    },
+    {
+      "id": "AN-100",
+      "name": "Attractor invariance seed",
+      "category": "dynamical systems",
+      "input_form": "dynamical system with candidate long-term invariant set",
+      "output_form": "attractor classification",
+      "domains": [
+        "analytic_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An invariant-set framework and asymptotic notion are fixed"
+      ],
+      "operation": "Summarize long-term behavior through invariant attracting sets.",
+      "properties": [
+        "asymptotic_seed"
+      ],
+      "examples": [
+        "Asymptotic dynamics are summarized by invariant sets rather than by one transient orbit segment"
+      ],
+      "counterexamples": [
+        "Any bounded set visited once is not automatically an attractor"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AN-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-020"
+        }
+      ]
+    },
+    {
+      "id": "AN-110",
+      "name": "Plancherel seed",
+      "category": "harmonic analysis and integral transforms",
+      "input_form": "square-integrable function under a Fourier-transform convention",
+      "output_form": "L2 energy-preserving transform relation",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An L2 setting and transform normalization are fixed"
+      ],
+      "operation": "Preserve quadratic energy under Fourier transformation up to normalization convention.",
+      "properties": [
+        "isometry_seed"
+      ],
+      "examples": [
+        "Frequency-domain analysis can conserve quadratic energy even while changing representation completely"
+      ],
+      "counterexamples": [
+        "Assuming arbitrary transforms preserve L2 norm without the required theorem is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AN-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-030"
+        }
+      ]
+    },
+    {
+      "id": "AN-120",
+      "name": "Compact operator seed",
+      "category": "functional analysis and operator theory",
+      "input_form": "bounded operator on a normed or Banach setting",
+      "output_form": "compactness classification",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A bounded-set and relative-compactness interpretation are fixed"
+      ],
+      "operation": "Recognize compact operators by relative compactness of images of bounded sets.",
+      "properties": [
+        "compactness_seed"
+      ],
+      "examples": [
+        "Compactness gives spectral discreteness features absent for generic bounded operators"
+      ],
+      "counterexamples": [
+        "Boundedness alone does not imply compactness"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AN-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-050"
+        }
+      ]
+    },
+    {
+      "id": "AN-130",
+      "name": "Spectral theorem seed",
+      "category": "operator theory",
+      "input_form": "self-adjoint or normal operator with spectral setting",
+      "output_form": "spectral decomposition structure",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A spectral setting for self-adjoint or normal operators is fixed"
+      ],
+      "operation": "Decompose suitable operators through spectral data.",
+      "properties": [
+        "decomposition_seed"
+      ],
+      "examples": [
+        "Diagonalization ideas extend from finite matrices to operators through spectral measures or analogous decompositions"
+      ],
+      "counterexamples": [
+        "Arbitrary nonnormal operators do not automatically satisfy the standard spectral theorem"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AN-050",
+        "AN-120"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-050"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-120"
+        }
+      ]
+    },
+    {
+      "id": "AN-140",
+      "name": "Green function seed",
+      "category": "partial differential equations and integral equations",
+      "input_form": "linear operator with boundary-value problem",
+      "output_form": "kernel-based inverse-response representation",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A linear differential operator and boundary conditions are fixed"
+      ],
+      "operation": "Represent forced solutions through Green-function kernels.",
+      "properties": [
+        "kernel_seed"
+      ],
+      "examples": [
+        "Forcing-response structure can be encoded by kernels rather than solved from scratch for every right-hand side"
+      ],
+      "counterexamples": [
+        "Ignoring boundary conditions while claiming a Green-function solution is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AN-010",
+        "AN-060"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-010"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "AN-060"
+        }
+      ]
+    },
+    {
+      "id": "AN-141",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AN-142",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AN-143",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AN-144",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AN-145",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AN-146",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AN-147",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AN-148",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AN-149",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AN-150",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "analytic_space",
+        "operator_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

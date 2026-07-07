@@ -1,0 +1,797 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "INFORMATION_THEORY_RULEBOOK.md",
+  "domain_symbols": {
+    "distribution": "probability distributions on finite supports",
+    "information_measure": "entropy, divergence, and capacity quantities",
+    "symbolic": "symbolic information-theory expressions"
+  },
+  "rules": [
+    {
+      "id": "IT-001",
+      "name": "Shannon entropy definition",
+      "category": "entropy",
+      "input_form": "distribution of X",
+      "output_form": "- sum p(x) log p(x)",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A logarithm base and discrete distribution are specified"
+      ],
+      "operation": "Compute Shannon entropy from the active discrete distribution.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "A fair binary variable has larger entropy than a deterministic variable"
+      ],
+      "counterexamples": [
+        "Omitting the minus sign is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "PR-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "PR-001"
+        }
+      ]
+    },
+    {
+      "id": "IT-010",
+      "name": "Chain rule for joint entropy",
+      "category": "entropy",
+      "input_form": "H(X,Y)",
+      "output_form": "H(X) + H(Y|X)",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The joint and conditional distributions are defined"
+      ],
+      "operation": "Decompose joint entropy into marginal entropy plus conditional entropy.",
+      "properties": [
+        "decomposition_identity"
+      ],
+      "examples": [
+        "Joint uncertainty decomposes into uncertainty of one variable plus remaining uncertainty of the other after conditioning"
+      ],
+      "counterexamples": [
+        "Replacing conditional entropy by unconditional entropy is invalid in general"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "IT-001"
+        }
+      ]
+    },
+    {
+      "id": "IT-020",
+      "name": "Mutual information definition",
+      "category": "information measures",
+      "input_form": "I(X;Y)",
+      "output_form": "H(X) + H(Y) - H(X,Y)",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The joint distribution of X and Y is defined"
+      ],
+      "operation": "Measure shared dependence through the standard entropy identity for mutual information.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "Mutual information measures shared dependence between random variables"
+      ],
+      "counterexamples": [
+        "Treating mutual information as signed and freely negative is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "IT-001",
+        "IT-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "IT-001"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "IT-010"
+        }
+      ]
+    },
+    {
+      "id": "IT-030",
+      "name": "KL divergence nonnegativity seed",
+      "category": "divergence",
+      "input_form": "D(P || Q)",
+      "output_form": "nonnegative divergence value",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard absolute-continuity hypotheses of the discrete setting hold"
+      ],
+      "operation": "Use Gibbs-type inequality to keep KL divergence nonnegative.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "KL divergence measures directed discrepancy between distributions without becoming negative"
+      ],
+      "counterexamples": [
+        "Treating KL divergence as symmetric is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "IT-040",
+      "name": "Channel capacity seed",
+      "category": "communication theory",
+      "input_form": "channel model",
+      "output_form": "supremum of mutual information over admissible input distributions",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An admissible family of input distributions is specified for the channel"
+      ],
+      "operation": "Define channel capacity as the maximal achievable mutual information rate in the basic channel model.",
+      "properties": [
+        "optimization_seed"
+      ],
+      "examples": [
+        "Optimizing input statistics determines the maximal reliable information rate in the basic information-theoretic model"
+      ],
+      "counterexamples": [
+        "Fixing an arbitrary input distribution and calling its mutual information the capacity is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "IT-020",
+        "OP-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "IT-020"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "OP-030"
+        }
+      ]
+    },
+    {
+      "id": "IT-050",
+      "name": "Conditional entropy rule",
+      "category": "entropy identities",
+      "input_form": "joint and marginal discrete entropies",
+      "output_form": "H(X|Y) = H(X,Y) - H(Y)",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The variables are interpreted in the standard discrete Shannon setting"
+      ],
+      "operation": "Express conditional entropy as the difference between joint and marginal entropy.",
+      "properties": [
+        "identity"
+      ],
+      "examples": [
+        "Conditioning can reduce uncertainty by accounting for side information carried by Y"
+      ],
+      "counterexamples": [
+        "Declaring conditional entropy negative in the ordinary discrete Shannon setting is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "IT-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "IT-010"
+        }
+      ]
+    },
+    {
+      "id": "IT-051",
+      "name": "Data processing inequality seed",
+      "category": "mutual information",
+      "input_form": "Markov chain X -> Y -> Z",
+      "output_form": "I(X;Z) <= I(X;Y)",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The variables form the stated Markov chain in the standard information-theoretic sense"
+      ],
+      "operation": "Forbid information increase under admissible post-processing.",
+      "properties": [
+        "monotonicity_seed"
+      ],
+      "examples": [
+        "Post-processing cannot increase mutual information about the original source in the standard Markov-chain setting"
+      ],
+      "counterexamples": [
+        "Claiming deterministic processing always increases information is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "IT-020"
+        }
+      ]
+    },
+    {
+      "id": "IT-060",
+      "name": "Source coding theorem seed",
+      "category": "coding theory",
+      "input_form": "discrete memoryless source",
+      "output_form": "lossless coding length constrained by entropy and asymptotically achievable near it",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard asymptotic lossless source-coding setup is active"
+      ],
+      "operation": "Use entropy as the fundamental asymptotic compression limit.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Shannon entropy sets the fundamental compression scale for lossless source coding"
+      ],
+      "counterexamples": [
+        "Demanding arbitrarily short exact lossless codes below the entropy barrier is invalid in the standard asymptotic sense"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "IT-061",
+      "name": "Channel coding theorem seed",
+      "category": "coding theory",
+      "input_form": "noisy channel and transmission rate",
+      "output_form": "reliable transmission below capacity and impossibility above capacity in the standard asymptotic setting",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard noisy-channel asymptotic regime is active"
+      ],
+      "operation": "Place the reliable-communication threshold at channel capacity.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Channel capacity marks the asymptotic threshold between feasible and infeasible reliable transmission rates"
+      ],
+      "counterexamples": [
+        "Asserting arbitrarily small error at all rates above capacity is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "IT-040"
+        }
+      ]
+    },
+    {
+      "id": "IT-070",
+      "name": "Fano inequality seed",
+      "category": "inference bounds",
+      "input_form": "decoding or classification problem",
+      "output_form": "error lower bound from conditional entropy and alphabet size",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A standard finite-alphabet decoding or classification setting is active"
+      ],
+      "operation": "Lower-bound error probability using residual uncertainty.",
+      "properties": [
+        "bound_seed"
+      ],
+      "examples": [
+        "Fano-type bounds connect residual uncertainty with irreducible classification or decoding error"
+      ],
+      "counterexamples": [
+        "Treating zero mutual information as compatible with perfect decoding is invalid in the standard finite-alphabet setting"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "IT-050",
+        "IT-051"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "IT-050"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "IT-051"
+        }
+      ]
+    },
+    {
+      "id": "IT-080",
+      "name": "Relative entropy chain decomposition seed",
+      "category": "divergence identities",
+      "input_form": "joint-model divergence",
+      "output_form": "marginal plus conditional divergence decomposition in the standard chain-rule setting",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The relevant joint, marginal, and conditional distributions are defined"
+      ],
+      "operation": "Decompose joint relative entropy into staged contributions.",
+      "properties": [
+        "decomposition_seed"
+      ],
+      "examples": [
+        "Divergence across multistage models separates into stagewise information discrepancies"
+      ],
+      "counterexamples": [
+        "Treating KL divergence across coupled variables as always additively separable without conditioning terms is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "IT-030"
+        }
+      ]
+    },
+    {
+      "id": "IT-081",
+      "name": "Typical set seed",
+      "category": "asymptotic coding structure",
+      "input_form": "long source sample from a discrete memoryless source",
+      "output_form": "high-probability typical set of near-entropy exponential size",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard asymptotic i.i.d. source setting is active"
+      ],
+      "operation": "Concentrate long samples on a typical set with entropy-controlled size.",
+      "properties": [
+        "asymptotic_seed"
+      ],
+      "examples": [
+        "Typicality explains why most long source outputs behave as though they carry roughly nH bits of information"
+      ],
+      "counterexamples": [
+        "Expecting every source word of a given length to be typical is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "IT-001"
+        }
+      ]
+    },
+    {
+      "id": "IT-090",
+      "name": "Rate-distortion seed",
+      "category": "lossy coding",
+      "input_form": "source model with distortion constraint",
+      "output_form": "minimum asymptotic rate for admissible distortion",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A source, reconstruction alphabet, and distortion measure are fixed"
+      ],
+      "operation": "Quantify the least information rate needed for lossy reproduction under an allowed distortion level.",
+      "properties": [
+        "optimization_seed"
+      ],
+      "examples": [
+        "Permitting more distortion lowers the minimal information rate needed for compression in lossy coding"
+      ],
+      "counterexamples": [
+        "Identifying lossless entropy directly with every lossy coding threshold is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "IT-091",
+      "name": "Hypothesis testing divergence seed",
+      "category": "inference bounds",
+      "input_form": "pair of competing distribution models",
+      "output_form": "divergence-controlled asymptotic distinguishability",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard asymptotic hypothesis-testing setting is active"
+      ],
+      "operation": "Use divergence quantities to control asymptotic testing strength.",
+      "properties": [
+        "bound_seed"
+      ],
+      "examples": [
+        "Larger divergence supports exponentially stronger evidence separation between competing distribution models"
+      ],
+      "counterexamples": [
+        "Treating two identical distributions as asymptotically distinguishable with nontrivial exponent is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "IT-030"
+        }
+      ]
+    },
+    {
+      "id": "IT-100",
+      "name": "Fisher information geometry bridge seed",
+      "category": "information geometry",
+      "input_form": "regular differentiable statistical model family",
+      "output_form": "local Fisher-information metric structure",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A regular differentiable parametric model is fixed"
+      ],
+      "operation": "Equip a statistical model family with a local metric from Fisher information.",
+      "properties": [
+        "bridge_seed"
+      ],
+      "examples": [
+        "Parametric models can be compared locally by curvature-like information encoded in the Fisher metric"
+      ],
+      "counterexamples": [
+        "Treating arbitrary nondifferentiable model families as automatically carrying the same information-geometric metric is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "ST-041"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "ST-041"
+        }
+      ]
+    },
+    {
+      "id": "IT-101",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "IT-102",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "IT-103",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "IT-104",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "IT-105",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "IT-106",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "IT-107",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "IT-108",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "IT-109",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "IT-110",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "distribution",
+        "information_measure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

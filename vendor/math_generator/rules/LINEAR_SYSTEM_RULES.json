@@ -1,0 +1,652 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "LINEAR_SYSTEM_RULEBOOK.md",
+  "domain_symbols": {
+    "R": "real numbers",
+    "symbolic": "symbolic linear equations and systems",
+    "matrix_real": "real matrices and vectors used to represent systems"
+  },
+  "rules": [
+    {
+      "id": "LS-001",
+      "name": "System solution means simultaneous satisfaction",
+      "category": "system semantics",
+      "input_form": "equation system and assignment",
+      "output_form": "assignment is a solution iff every equation is true simultaneously",
+      "domains": [
+        "R",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The assignment is defined for every system variable"
+      ],
+      "operation": "Interpret a system solution as a simultaneous truth assignment for all equations.",
+      "properties": [
+        "simultaneous_truth"
+      ],
+      "examples": [
+        "If a pair satisfies one equation but not the other, it is not a system solution"
+      ],
+      "counterexamples": [
+        "Solving equations independently and keeping incompatible assignments is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-002",
+      "name": "Linear equation form",
+      "category": "system semantics",
+      "input_form": "a1x1 + ... + anxn = b",
+      "output_form": "linear equation classification",
+      "domains": [
+        "R",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Variables do not multiply each other and appear only to first power"
+      ],
+      "operation": "Recognize an equation as linear in its variables.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "2x + 3y = 7 is linear"
+      ],
+      "counterexamples": [
+        "xy = 1 is not linear",
+        "x^2 + y = 4 is not linear"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-010",
+      "name": "Replace an equation by an equivalent equation",
+      "category": "system equivalence",
+      "input_form": "system with one equation replaced by an equivalent equation",
+      "output_form": "equivalent system",
+      "domains": [
+        "R",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The replacement equation is logically equivalent to the original equation in the active domain"
+      ],
+      "operation": "Preserve the solution set by replacing an equation with an equivalent one.",
+      "properties": [
+        "equivalence_preserving"
+      ],
+      "examples": [
+        "Replacing 2x = 8 with x = 4 preserves solutions"
+      ],
+      "counterexamples": [
+        "Replacing an equation with a nonequivalent statement changes the solution set"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-011",
+      "name": "Row-style combination rule",
+      "category": "system equivalence",
+      "input_form": "system where one equation is replaced by itself plus a multiple of another",
+      "output_form": "equivalent system",
+      "domains": [
+        "R",
+        "symbolic",
+        "matrix_real"
+      ],
+      "preconditions": [
+        "The multiplier is defined in the active domain"
+      ],
+      "operation": "Add a multiple of one equation to another without changing the solution set.",
+      "properties": [
+        "equivalence_preserving"
+      ],
+      "examples": [
+        "From x + y = 3 and x - y = 1, subtracting the second from the first yields 2y = 2"
+      ],
+      "counterexamples": [
+        "Applying different uncontrolled transformations to both equations can break equivalence"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-020",
+      "name": "Isolate a variable in a simple equation",
+      "category": "substitution method",
+      "input_form": "linear equation with one easily isolated variable",
+      "output_form": "equivalent explicit expression for that variable",
+      "domains": [
+        "R",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The target variable has a nonzero coefficient and isolation is straightforward"
+      ],
+      "operation": "Solve one equation for one variable in preparation for substitution.",
+      "properties": [
+        "solving_pattern"
+      ],
+      "examples": [
+        "x + y = 3 becomes x = 3 - y"
+      ],
+      "counterexamples": [
+        "Isolating incorrectly, such as x = 3 + y, is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-021",
+      "name": "Substitute into remaining equations",
+      "category": "substitution method",
+      "input_form": "system and isolated variable expression",
+      "output_form": "reduced system with one fewer variable in a target equation",
+      "domains": [
+        "R",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The isolated expression is equivalent to the original equation"
+      ],
+      "operation": "Replace the isolated variable in the remaining equations by its equivalent expression.",
+      "properties": [
+        "structural_rewrite"
+      ],
+      "examples": [
+        "Substituting x = 3 - y into x - y = 1 gives 3 - y - y = 1"
+      ],
+      "counterexamples": [
+        "Substituting into only part of an equation is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-022",
+      "name": "Back-substitution",
+      "category": "substitution method",
+      "input_form": "solved value for one variable and an earlier relation",
+      "output_form": "solved value for remaining variable",
+      "domains": [
+        "R",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The earlier relation remains valid for the current system"
+      ],
+      "operation": "Recover remaining variable values after solving for one variable.",
+      "properties": [
+        "solving_pattern"
+      ],
+      "examples": [
+        "After finding y = 1, substitute into x + y = 3 to get x = 2"
+      ],
+      "counterexamples": [
+        "Reporting a partial assignment as a complete solution is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-030",
+      "name": "Align variables for elimination",
+      "category": "elimination method",
+      "input_form": "two equations with a target elimination variable",
+      "output_form": "scaled or arranged equations with opposite coefficients",
+      "domains": [
+        "R",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The target variable appears in both equations with controllable coefficients"
+      ],
+      "operation": "Prepare a pair of equations so a chosen variable will cancel under addition or subtraction.",
+      "properties": [
+        "preparation_step"
+      ],
+      "examples": [
+        "x + y = 3 and x - y = 1 already align for eliminating y by addition"
+      ],
+      "counterexamples": [
+        "Eliminating mismatched variables without coefficient control is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-031",
+      "name": "Eliminate a variable by addition or subtraction",
+      "category": "elimination method",
+      "input_form": "aligned equations",
+      "output_form": "reduced equation with one fewer variable",
+      "domains": [
+        "R",
+        "symbolic",
+        "matrix_real"
+      ],
+      "preconditions": [
+        "A chosen variable has opposite or matching coefficients suitable for cancellation"
+      ],
+      "operation": "Combine equations so one variable cancels.",
+      "properties": [
+        "solving_pattern"
+      ],
+      "examples": [
+        "Adding x + y = 3 and x - y = 1 gives 2x = 4"
+      ],
+      "counterexamples": [
+        "Combining equations and failing to cancel correctly is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-032",
+      "name": "Solve reduced equation and recover remaining variables",
+      "category": "elimination method",
+      "input_form": "single-variable reduced equation and original system relation",
+      "output_form": "full assignment",
+      "domains": [
+        "R",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The reduced equation was derived equivalently from the original system"
+      ],
+      "operation": "Solve the reduced equation, then back-substitute into an original or equivalent relation.",
+      "properties": [
+        "solving_pattern"
+      ],
+      "examples": [
+        "2x = 4 gives x = 2, then x + y = 3 gives y = 1"
+      ],
+      "counterexamples": [
+        "Recovering remaining variables from a transformed equation that lost needed information can be invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-040",
+      "name": "Coefficient matrix representation",
+      "category": "matrix viewpoint",
+      "input_form": "linear system",
+      "output_form": "Ax = b representation",
+      "domains": [
+        "R",
+        "matrix_real",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The system is linear"
+      ],
+      "operation": "Represent a linear system in matrix-vector form.",
+      "properties": [
+        "representation_change"
+      ],
+      "examples": [
+        "The system 2x + y = 5 and x - y = 1 corresponds to A = [[2,1],[1,-1]]"
+      ],
+      "counterexamples": [
+        "Non-linear systems do not fit this linear matrix form directly"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-041",
+      "name": "Augmented matrix representation",
+      "category": "matrix viewpoint",
+      "input_form": "coefficient matrix A and constant vector b",
+      "output_form": "augmented matrix [A|b]",
+      "domains": [
+        "R",
+        "matrix_real",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The ordering of variables is fixed consistently"
+      ],
+      "operation": "Attach the constant column to the coefficient matrix for row-operation workflows.",
+      "properties": [
+        "representation_change"
+      ],
+      "examples": [
+        "[A|b] stores the system in row-operation form"
+      ],
+      "counterexamples": [
+        "Mixing coefficient and constant columns incorrectly changes the system"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-050",
+      "name": "Unique solution case",
+      "category": "solution classification",
+      "input_form": "reduced system",
+      "output_form": "unique solution classification",
+      "domains": [
+        "R",
+        "symbolic",
+        "matrix_real"
+      ],
+      "preconditions": [
+        "Reduction yields one value for each variable and no free variables"
+      ],
+      "operation": "Classify the system as having a unique solution.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "x + y = 3 and x - y = 1 has unique solution (2,1)"
+      ],
+      "counterexamples": [
+        "Free variables indicate the solution is not unique"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-051",
+      "name": "Inconsistent system case",
+      "category": "solution classification",
+      "input_form": "reduced system with contradiction row",
+      "output_form": "no-solution classification",
+      "domains": [
+        "R",
+        "symbolic",
+        "matrix_real"
+      ],
+      "preconditions": [
+        "Reduction yields a contradiction such as 0 = 5"
+      ],
+      "operation": "Classify the system as inconsistent.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "x + y = 1 and x + y = 3 are inconsistent together"
+      ],
+      "counterexamples": [
+        "Treating a contradiction row as harmless is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-052",
+      "name": "Infinitely many solutions case",
+      "category": "solution classification",
+      "input_form": "reduced system with dependent equations and free variables",
+      "output_form": "infinite-solution classification",
+      "domains": [
+        "R",
+        "symbolic",
+        "matrix_real"
+      ],
+      "preconditions": [
+        "At least one free variable remains and no contradiction is present"
+      ],
+      "operation": "Classify the system as having infinitely many solutions.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "x + y = 2 and 2x + 2y = 4 have infinitely many solutions"
+      ],
+      "counterexamples": [
+        "Claiming uniqueness when a free parameter remains is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-060",
+      "name": "Invalid equation-by-equation solution merge",
+      "category": "invalid pattern",
+      "input_form": "independent equation solutions merged without simultaneous check",
+      "output_form": "claimed system solution",
+      "domains": [
+        "R",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Mark independent solution merging without simultaneous validation as invalid.",
+      "properties": [
+        "invalid_pattern"
+      ],
+      "examples": [],
+      "counterexamples": [
+        "Values valid for one equation but not the other are not system solutions"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-061",
+      "name": "Invalid elimination arithmetic",
+      "category": "invalid pattern",
+      "input_form": "equations combined without coefficient alignment or correct arithmetic",
+      "output_form": "claimed reduced equation",
+      "domains": [
+        "R",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Mark naive elimination without compatible coefficients or correct arithmetic as invalid.",
+      "properties": [
+        "invalid_pattern"
+      ],
+      "examples": [],
+      "counterexamples": [
+        "x + 2y = 5 and x + y = 3 do not cancel y by naive subtraction unless arithmetic is done correctly"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-070",
+      "name": "Gaussian elimination step",
+      "category": "gaussian elimination",
+      "input_form": "matrix row set or equation system with pivot row",
+      "output_form": "equivalent system with zeros introduced below a pivot",
+      "domains": [
+        "R",
+        "symbolic",
+        "matrix_real"
+      ],
+      "preconditions": [
+        "A pivot entry has been chosen",
+        "The applied row operation is valid"
+      ],
+      "operation": "Use a valid row operation to eliminate entries below a pivot and move the system toward echelon form.",
+      "properties": [
+        "equivalence_preserving"
+      ],
+      "examples": [
+        "Subtracting 2 times the first row from the second can eliminate a leading coefficient below the pivot"
+      ],
+      "counterexamples": [
+        "Changing only part of a row is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-071",
+      "name": "Read solution from row-echelon form",
+      "category": "gaussian elimination",
+      "input_form": "row-echelon or reduced-row-echelon system",
+      "output_form": "pivot-variable solution and free-variable structure",
+      "domains": [
+        "R",
+        "symbolic",
+        "matrix_real"
+      ],
+      "preconditions": [
+        "The system has been reduced to echelon form"
+      ],
+      "operation": "Solve pivot variables from the bottom upward and identify any free variables.",
+      "properties": [
+        "readout_rule"
+      ],
+      "examples": [
+        "If the last row gives y = 1 and the row above gives x + y = 3, then x = 2"
+      ],
+      "counterexamples": [
+        "Reading a free variable as uniquely determined is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-072",
+      "name": "Nonzero determinant implies unique solution",
+      "category": "determinant reasoning",
+      "input_form": "square system Ax = b",
+      "output_form": "unique solution classification",
+      "domains": [
+        "R",
+        "matrix_real",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A is square",
+        "det(A) != 0"
+      ],
+      "operation": "Use a nonzero determinant to conclude invertibility and uniqueness.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "A 2x2 system with determinant 5 has exactly one solution"
+      ],
+      "counterexamples": [
+        "Determinant reasoning in this form does not apply directly to nonsquare systems"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-073",
+      "name": "Zero determinant blocks inverse-based uniqueness",
+      "category": "determinant reasoning",
+      "input_form": "square system Ax = b",
+      "output_form": "no inverse-based unique-solution guarantee",
+      "domains": [
+        "R",
+        "matrix_real",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A is square",
+        "det(A) = 0"
+      ],
+      "operation": "Use determinant zero to rule out inverse-based unique solving while leaving consistency to further analysis.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "Two proportional equations give determinant 0 and no inverse-based unique solution"
+      ],
+      "counterexamples": [
+        "Determinant 0 does not by itself decide between inconsistency and infinitely many solutions"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-074",
+      "name": "Least-squares normal equations",
+      "category": "least squares",
+      "input_form": "overdetermined system Ax approximately equals b",
+      "output_form": "A^T A x = A^T b",
+      "domains": [
+        "R",
+        "matrix_real",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The least-squares formulation is active",
+        "Matrix products are well-defined"
+      ],
+      "operation": "Translate an overdetermined least-squares problem into its normal equations.",
+      "properties": [
+        "optimization_rewrite"
+      ],
+      "examples": [
+        "A line-fit problem reduces to normal equations for the coefficient vector"
+      ],
+      "counterexamples": [
+        "Treating an inconsistent overdetermined system as exactly solvable without approximation is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-075",
+      "name": "Inverse matrix solution rule",
+      "category": "matrix inverse",
+      "input_form": "Ax = b",
+      "output_form": "x = A^(-1)b",
+      "domains": [
+        "R",
+        "matrix_real",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A is invertible"
+      ],
+      "operation": "Solve a square system by left-multiplying with the inverse matrix.",
+      "properties": [
+        "solving_pattern"
+      ],
+      "examples": [
+        "For invertible A, left-multiplying Ax = b by A^(-1) isolates x"
+      ],
+      "counterexamples": [
+        "Using A^(-1)b when A is singular is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-076",
+      "name": "Rank-based consistency check",
+      "category": "rank reasoning",
+      "input_form": "coefficient matrix A and augmented matrix [A|b]",
+      "output_form": "consistency classification and free-variable signal",
+      "domains": [
+        "R",
+        "matrix_real",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The ranks are computed correctly"
+      ],
+      "operation": "Use rank equality or inequality between A and [A|b] to classify consistency and uniqueness structure.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "Equal coefficient and augmented ranks certify consistency"
+      ],
+      "counterexamples": [
+        "rank(A) < rank([A|b]) signals inconsistency, not a solution family"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LS-077",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "R",
+        "symbolic",
+        "matrix_real"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

@@ -33,6 +33,21 @@ bundled:
     role: cross-domain FSOT formula comparisons for mathematics computational tier
     env_override: FSOT_MATH_GENERATOR_COMPARISON
 
+  math_generator_rules:
+    path: vendor/math_generator/rules
+    role: 61 corpora / 1520 formal rules for per-rule eval tier
+    env_override: FSOT_MATH_GENERATOR_RULES_ROOT
+
+  trinary_os_oracles:
+    path: vendor/trinary_os/target
+    role: FSOTB regression oracles for portable Trinary-OS coding rebuild
+    env_override: FSOT_TRINARY_OS_ROOT
+
+  species_catalog:
+    path: vendor/species/fsot_species_catalog.json
+    role: Machine & Molecule metals/molecules/polymers for species bridge
+    env_override: FSOT_SPECIES_CATALOG
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification

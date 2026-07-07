@@ -27,14 +27,14 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-04 — Tier 29)
+## Verification status (2026-07-07 — Tier 30)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
 Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
 
-- **29/29 verification tiers complete** (portable vendor bundle + practical application wave)
-- **66+ scientific domains** (35 NeuroLab + 30 extension bridges)
+- **30/30 verification tiers complete** (portable vendor bundle + practical application + bridge wave)
+- **69+ scientific domains** (35 NeuroLab + 33 extension bridges)
 - **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
@@ -81,6 +81,9 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - Mathematics computational (`FSOT.Formal.MathematicsComputationalPriors`) — math-generator comparisons + constant alignment
 - Materials engineering (`FSOT.Formal.MaterialsEngineeringPriors`) — Young's modulus, thermal, bulk/shear SMILES
 - Computational reasoning (`FSOT.Formal.ComputationalReasoningPriors`) — FIC sweep + trinary-OS coding invariants
+- Math generator rules eval (`FSOT.Formal.MathGeneratorRulesEvalPriors`) — **1520** per-rule schema/domain eval across 61 corpora
+- Trinary OS portable (`FSOT.Formal.TrinaryOSPortablePriors`) — vendor FSOTB oracles + ISA constants for clone-and-rebuild
+- Materials↔species bridge (`FSOT.Formal.MaterialsSpeciesBridgePriors`) — 12 overlapping engineering metals cross-validated
 - Kronos metrology (`FSOT.Formal.KronosPriors`) — 568 runs, best fractional error 1.64e-7
 - Knowledge base (`FSOT.Formal.KnowledgeBasePriors`) — 19,213 catalog formulas; 7,941 strict-empirical bridge (6,921 within 2%); per-formula pass on full catalog
 - Math generator (`FSOT.Formal.MathGeneratorPriors`) — 7 comparisons within 2%

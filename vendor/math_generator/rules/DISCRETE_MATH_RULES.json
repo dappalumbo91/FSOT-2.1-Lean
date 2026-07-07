@@ -1,0 +1,696 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "DISCRETE_MATH_RULEBOOK.md",
+  "domain_symbols": {
+    "finite": "finite discrete objects",
+    "graph": "finite graphs",
+    "symbolic": "symbolic discrete-mathematics expressions"
+  },
+  "rules": [
+    {
+      "id": "DM-001",
+      "name": "Addition principle for disjoint cases",
+      "category": "counting",
+      "input_form": "disjoint cases A and B",
+      "output_form": "|A| + |B|",
+      "domains": [
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The cases are disjoint"
+      ],
+      "operation": "Count total outcomes by summing disjoint case counts.",
+      "properties": [
+        "counting_principle"
+      ],
+      "examples": [
+        "Choosing from two disjoint groups of sizes 3 and 5 yields 8 total choices"
+      ],
+      "counterexamples": [
+        "Summing overlapping cases without correcting overlap is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-002",
+      "name": "Multiplication principle",
+      "category": "counting",
+      "input_form": "two-step choice process",
+      "output_form": "product of step counts",
+      "domains": [
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The number of second-step choices is well-defined for each first-step choice under the stated model"
+      ],
+      "operation": "Count composite outcomes by multiplying counts of sequential choice stages.",
+      "properties": [
+        "counting_principle"
+      ],
+      "examples": [
+        "3 shirts and 4 pants give 12 outfits"
+      ],
+      "counterexamples": [
+        "Using ab when the second-step count changes with the first-step choice is invalid without refinement"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-003",
+      "name": "Mathematical induction pattern",
+      "category": "proof method",
+      "input_form": "base case and inductive step",
+      "output_form": "statement for all integers in range",
+      "domains": [
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A valid base case is proved",
+        "A valid inductive implication is proved"
+      ],
+      "operation": "Use induction to extend a proposition from the base case across the intended integer domain.",
+      "properties": [
+        "proof_pattern"
+      ],
+      "examples": [
+        "Induction proves sum_{i=1}^{n} i = n(n+1)/2"
+      ],
+      "counterexamples": [
+        "Proving only the inductive step without a base case is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-010",
+      "name": "Inclusion-exclusion for two sets",
+      "category": "set counting",
+      "input_form": "|A|, |B|, |A intersection B|",
+      "output_form": "|A union B|",
+      "domains": [
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "All relevant set cardinalities are finite"
+      ],
+      "operation": "Correct double counting in a two-set union by subtracting the overlap once.",
+      "properties": [
+        "counting_identity"
+      ],
+      "examples": [
+        "If |A| = 5, |B| = 6, and |A intersection B| = 2, then |A union B| = 9"
+      ],
+      "counterexamples": [
+        "Adding |A| and |B| without subtracting overlap is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-011",
+      "name": "Pigeonhole principle",
+      "category": "combinatorial existence",
+      "input_form": "objects distributed among boxes",
+      "output_form": "at least one repeated box occupancy",
+      "domains": [
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Object count exceeds box count"
+      ],
+      "operation": "Infer repeated occupancy from excess objects over boxes.",
+      "properties": [
+        "existence_principle"
+      ],
+      "examples": [
+        "More than 12 objects placed into 12 boxes forces some box to contain at least two objects"
+      ],
+      "counterexamples": [
+        "Applying the strict-more-than form when object count equals box count is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-012",
+      "name": "Handshake lemma",
+      "category": "graph theory",
+      "input_form": "finite undirected graph",
+      "output_form": "sum of degrees equals 2|E|",
+      "domains": [
+        "graph",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The graph is finite and undirected"
+      ],
+      "operation": "Count each edge twice across vertex degrees.",
+      "properties": [
+        "double_counting"
+      ],
+      "examples": [
+        "A graph with 5 edges has total degree sum 10"
+      ],
+      "counterexamples": [
+        "Odd total degree sum in a finite undirected graph is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-013",
+      "name": "Recurrence verification rule",
+      "category": "recurrences",
+      "input_form": "candidate closed form and recurrence system",
+      "output_form": "valid or invalid solution classification",
+      "domains": [
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The recurrence and initial conditions are explicit"
+      ],
+      "operation": "Validate a candidate sequence by checking both the recurrence relation and initial data.",
+      "properties": [
+        "verification_rule"
+      ],
+      "examples": [
+        "Checking both recurrence relation and seed values validates the candidate sequence"
+      ],
+      "counterexamples": [
+        "Matching the recurrence but missing the initial condition is insufficient"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-020",
+      "name": "Binomial coefficient counting rule",
+      "category": "enumeration",
+      "input_form": "C(n,k)",
+      "output_form": "number of k-element subsets of an n-element set",
+      "domains": [
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "0 <= k <= n"
+      ],
+      "operation": "Interpret the binomial coefficient as an unordered selection count.",
+      "properties": [
+        "counting_identity"
+      ],
+      "examples": [
+        "C(5,2) = 10 counts unordered pairs from 5 objects"
+      ],
+      "counterexamples": [
+        "Using permutations when order is irrelevant is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-021",
+      "name": "Pascal identity",
+      "category": "enumeration",
+      "input_form": "C(n,k)",
+      "output_form": "C(n-1,k-1) + C(n-1,k)",
+      "domains": [
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "1 <= k <= n-1"
+      ],
+      "operation": "Split k-subsets by whether they contain a distinguished element.",
+      "properties": [
+        "recursive_identity"
+      ],
+      "examples": [
+        "C(5,2) = C(4,1) + C(4,2) = 10"
+      ],
+      "counterexamples": [
+        "Shifting the wrong lower index in Pascal's identity is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-030",
+      "name": "Tree edge count rule",
+      "category": "graph theory",
+      "input_form": "finite tree with n vertices",
+      "output_form": "n-1 edges",
+      "domains": [
+        "graph",
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The graph is a tree"
+      ],
+      "operation": "Count edges in a finite tree from the tree characterization.",
+      "properties": [
+        "graph_invariant"
+      ],
+      "examples": [
+        "A tree on 7 vertices has 6 edges"
+      ],
+      "counterexamples": [
+        "A connected graph with cycles can have more than n - 1 edges"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-031",
+      "name": "Connected acyclic graph criterion",
+      "category": "graph theory",
+      "input_form": "finite undirected graph",
+      "output_form": "tree classification",
+      "domains": [
+        "graph",
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Connectivity and acyclicity are both determined"
+      ],
+      "operation": "Classify a finite undirected graph as a tree exactly when it is connected and acyclic.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "Checking both connectivity and absence of cycles certifies a tree"
+      ],
+      "counterexamples": [
+        "Acyclic but disconnected graphs are forests, not trees"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-032",
+      "name": "Euler formula for connected planar graphs",
+      "category": "graph theory",
+      "input_form": "connected planar graph",
+      "output_form": "V - E + F = 2",
+      "domains": [
+        "graph",
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A planar embedding exists and the graph is connected"
+      ],
+      "operation": "Relate vertices, edges, and faces through Euler's planar formula.",
+      "properties": [
+        "topological_invariant"
+      ],
+      "examples": [
+        "Planar embeddings obey the Euler characteristic relation 2"
+      ],
+      "counterexamples": [
+        "Applying the formula to a nonplanar graph without a planar embedding is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-040",
+      "name": "Ordinary generating function encoding rule",
+      "category": "generating functions",
+      "input_form": "sequence a_n",
+      "output_form": "sum_{n>=0} a_n x^n",
+      "domains": [
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A formal power-series context is active"
+      ],
+      "operation": "Encode a sequence as its ordinary generating function.",
+      "properties": [
+        "formal_series_encoding"
+      ],
+      "examples": [
+        "The constant-one sequence has generating function 1 + x + x^2 + ... in formal-series context"
+      ],
+      "counterexamples": [
+        "Treating a formal generating function as automatically convergent analytically is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-050",
+      "name": "Proper vertex coloring rule",
+      "category": "graph theory",
+      "input_form": "color assignment on vertices",
+      "output_form": "proper coloring classification",
+      "domains": [
+        "graph",
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The graph is finite and the coloring is defined on every vertex"
+      ],
+      "operation": "Classify a coloring as proper exactly when adjacent vertices receive different colors.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "A bipartite graph has a proper coloring with at most two colors"
+      ],
+      "counterexamples": [
+        "Assigning one color to both ends of an edge is invalid in a proper coloring"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-051",
+      "name": "Bipartite graph criterion by two-colorability",
+      "category": "graph theory",
+      "input_form": "finite graph",
+      "output_form": "bipartite iff properly 2-colorable",
+      "domains": [
+        "graph",
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The graph is finite"
+      ],
+      "operation": "Recognize bipartite graphs through the existence of a proper two-coloring.",
+      "properties": [
+        "equivalence_criterion"
+      ],
+      "examples": [
+        "Even cycles are bipartite because their vertices alternate between two color classes"
+      ],
+      "counterexamples": [
+        "An odd cycle is not bipartite and cannot be properly 2-colored"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DM-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DM-050"
+        }
+      ]
+    },
+    {
+      "id": "DM-052",
+      "name": "Hall marriage criterion seed",
+      "category": "graph theory",
+      "input_form": "bipartite graph with left part U",
+      "output_form": "matching saturating U when every S subseteq U satisfies |N(S)| >= |S|",
+      "domains": [
+        "graph",
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The graph is bipartite and Hall's neighborhood condition is checked for every subset of U"
+      ],
+      "operation": "Use Hall's neighborhood condition as a seed criterion for existence of a matching saturating one side.",
+      "properties": [
+        "existence_criterion"
+      ],
+      "examples": [
+        "Neighborhood expansion conditions certify the existence of a perfect matching on one side"
+      ],
+      "counterexamples": [
+        "Checking Hall's condition only for single vertices is invalid in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-053",
+      "name": "Max-flow min-cut seed",
+      "category": "graph theory",
+      "input_form": "capacitated network with source s and sink t",
+      "output_form": "maximum flow value equals minimum cut capacity",
+      "domains": [
+        "graph",
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A directed capacitated network model is fixed"
+      ],
+      "operation": "Connect flow optimization to cut certificates through the max-flow min-cut principle.",
+      "properties": [
+        "optimization_theorem_seed"
+      ],
+      "examples": [
+        "Flow optimization can be certified by a cut of the same value"
+      ],
+      "counterexamples": [
+        "Comparing a flow value to an arbitrary partition that is not an s-t cut is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-054",
+      "name": "Clique lower bound on chromatic number",
+      "category": "graph theory",
+      "input_form": "graph G",
+      "output_form": "chi(G) >= omega(G)",
+      "domains": [
+        "graph",
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Clique number and chromatic number are interpreted in the standard graph-theoretic sense"
+      ],
+      "operation": "Lower-bound the chromatic number by the size of a largest clique.",
+      "properties": [
+        "lower_bound"
+      ],
+      "examples": [
+        "A triangle subgraph forces at least three colors in any proper coloring"
+      ],
+      "counterexamples": [
+        "Concluding equality of clique number and chromatic number for every graph is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DM-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DM-050"
+        }
+      ]
+    },
+    {
+      "id": "DM-055",
+      "name": "Planar graph edge bound",
+      "category": "graph theory",
+      "input_form": "simple connected planar graph with V >= 3",
+      "output_form": "E <= 3V - 6",
+      "domains": [
+        "graph",
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The graph is simple, connected, planar, and has at least three vertices"
+      ],
+      "operation": "Bound edge count in a simple connected planar graph using Euler-type planar structure.",
+      "properties": [
+        "upper_bound"
+      ],
+      "examples": [
+        "The planar edge bound quickly rules out some dense graphs from being planar"
+      ],
+      "counterexamples": [
+        "Applying the bound to multigraphs or to graphs without the stated hypotheses is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DM-032"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DM-032"
+        }
+      ]
+    },
+    {
+      "id": "DM-056",
+      "name": "Adjacency-matrix walk-count rule",
+      "category": "graph theory",
+      "input_form": "adjacency matrix A and integer k >= 1",
+      "output_form": "(i,j) entry of A^k counts k-step walks from i to j",
+      "domains": [
+        "graph",
+        "finite",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A is the adjacency matrix of the graph",
+        "k is a positive integer"
+      ],
+      "operation": "Interpret matrix powers combinatorially as walk counts in the graph.",
+      "properties": [
+        "algebraic_encoding"
+      ],
+      "examples": [
+        "Squaring an adjacency matrix counts two-step walks between vertices"
+      ],
+      "counterexamples": [
+        "Interpreting A^k entries as counting only simple paths is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DM-057",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "finite",
+        "graph",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DM-058",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "finite",
+        "graph",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DM-059",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "finite",
+        "graph",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DM-060",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "finite",
+        "graph",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DM-061",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "finite",
+        "graph",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

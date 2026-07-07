@@ -1,0 +1,780 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "ADVANCED_ALGEBRA_RULEBOOK.md",
+  "domain_symbols": {
+    "algebraic_structure": "ordered, universal, and ring-like structures",
+    "module_like": "modules, complexes, and representations",
+    "symbolic": "symbolic advanced-algebra expressions"
+  },
+  "rules": [
+    {
+      "id": "HA-001",
+      "name": "Lattice meet-join rule",
+      "category": "lattice theory",
+      "input_form": "ordered pair of lattice elements",
+      "output_form": "meet and join values",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A lattice order is fixed"
+      ],
+      "operation": "Use meet and join as greatest lower and least upper bound operations.",
+      "properties": [
+        "structure_rule"
+      ],
+      "examples": [
+        "Divisibility on integers produces meet and join behavior through gcd and lcm in the appropriate positive setting"
+      ],
+      "counterexamples": [
+        "A partially ordered set with missing pairwise bounds is not automatically a lattice"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "HA-010",
+      "name": "Universal algebra homomorphism seed",
+      "category": "universal algebra",
+      "input_form": "map between algebras in a common signature",
+      "output_form": "operation-preserving homomorphism",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A common operation signature is fixed"
+      ],
+      "operation": "Recognize a homomorphism by preservation of each fundamental operation.",
+      "properties": [
+        "preservation_seed"
+      ],
+      "examples": [
+        "Structural maps in universal algebra are defined by operation preservation rather than by set-theoretic behavior alone"
+      ],
+      "counterexamples": [
+        "Preserving only one selected operation in a many-operation signature is insufficient in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "HA-020",
+      "name": "Prime ideal quotient seed",
+      "category": "commutative algebra",
+      "input_form": "commutative ring R and prime ideal p",
+      "output_form": "integral-domain quotient R/p",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "R is commutative and p is prime"
+      ],
+      "operation": "Pass from a ring to an integral-domain quotient through a prime ideal.",
+      "properties": [
+        "quotient_seed"
+      ],
+      "examples": [
+        "Prime ideals encode domain-like quotient behavior in commutative algebra"
+      ],
+      "counterexamples": [
+        "Replacing prime by arbitrary ideal is invalid in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "HA-030",
+      "name": "Exact sequence seed",
+      "category": "homological algebra",
+      "input_form": "composable algebraic morphisms",
+      "output_form": "exactness at a chosen object",
+      "domains": [
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Kernels and images are defined in the active category"
+      ],
+      "operation": "Require image-equals-kernel compatibility at a stage of a sequence.",
+      "properties": [
+        "exactness_seed"
+      ],
+      "examples": [
+        "Exactness measures how algebraic information passes with no gap and no excess at each stage"
+      ],
+      "counterexamples": [
+        "Mere composability of maps is insufficient for exactness"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AT-090"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AT-090"
+        }
+      ]
+    },
+    {
+      "id": "HA-040",
+      "name": "Representation action seed",
+      "category": "representation theory",
+      "input_form": "group or algebra acting on a vector space",
+      "output_form": "linear representation",
+      "domains": [
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A vector space and action-compatible algebraic structure are fixed"
+      ],
+      "operation": "Model symmetry by linear transformations on a vector space.",
+      "properties": [
+        "action_seed"
+      ],
+      "examples": [
+        "Abstract symmetry becomes matrix or operator action through representation data"
+      ],
+      "counterexamples": [
+        "Assigning arbitrary nonlinear self-maps does not define a linear representation"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LA-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LA-010"
+        }
+      ]
+    },
+    {
+      "id": "HA-050",
+      "name": "Lie bracket axiom seed",
+      "category": "Lie theory",
+      "input_form": "bilinear bracket operation",
+      "output_form": "Lie-algebra structure when alternating and Jacobi conditions hold",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A vector space and bilinear bracket are fixed"
+      ],
+      "operation": "Recognize a Lie algebra through bracket axioms.",
+      "properties": [
+        "axiom_seed"
+      ],
+      "examples": [
+        "Commutators of linear operators produce a standard Lie bracket"
+      ],
+      "counterexamples": [
+        "Any bilinear product lacking Jacobi behavior is not automatically a Lie bracket"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "HA-060",
+      "name": "Grothendieck completion seed",
+      "category": "K-theory starters",
+      "input_form": "commutative additive monoid of classes",
+      "output_form": "group completion",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A commutative additive monoid of equivalence classes is fixed"
+      ],
+      "operation": "Formally adjoin inverses to pass from a monoid of classes to a Grothendieck group.",
+      "properties": [
+        "construction_seed"
+      ],
+      "examples": [
+        "Vector-bundle isomorphism classes can be group-completed to encode stable difference data"
+      ],
+      "counterexamples": [
+        "Treating a monoid as already a group without formal inverses is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "HA-070",
+      "name": "Distributive lattice seed",
+      "category": "lattice theory",
+      "input_form": "lattice with candidate distributive identities",
+      "output_form": "distributive-lattice classification",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Meet and join operations are fixed"
+      ],
+      "operation": "Impose distributive interaction between meet and join operations.",
+      "properties": [
+        "law_seed"
+      ],
+      "examples": [
+        "Boolean-style lattice behavior is stronger than arbitrary lattice structure and supports sharper normal forms"
+      ],
+      "counterexamples": [
+        "An arbitrary lattice need not satisfy distributive laws"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "HA-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-001"
+        }
+      ]
+    },
+    {
+      "id": "HA-080",
+      "name": "Congruence quotient seed",
+      "category": "universal algebra",
+      "input_form": "algebra with a congruence relation",
+      "output_form": "well-defined quotient algebra",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An operation-preserving congruence relation is fixed"
+      ],
+      "operation": "Construct quotient algebras from congruence relations compatible with every basic operation.",
+      "properties": [
+        "quotient_seed"
+      ],
+      "examples": [
+        "Quotient construction in universal algebra depends on compatibility with the full operation signature, not just set partitioning"
+      ],
+      "counterexamples": [
+        "An arbitrary equivalence relation with no operation compatibility is invalid as a congruence quotient source"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "HA-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-010"
+        }
+      ]
+    },
+    {
+      "id": "HA-090",
+      "name": "Noetherian ACC seed",
+      "category": "commutative algebra",
+      "input_form": "commutative ring with ideal structure",
+      "output_form": "Noetherian classification by ideal-chain stabilization",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A commutative ring and its ideals are fixed"
+      ],
+      "operation": "Recognize Noetherian behavior through ascending-chain stabilization or finite ideal generation.",
+      "properties": [
+        "finiteness_seed"
+      ],
+      "examples": [
+        "Finite generation controls ideal growth and underpins localization and algebraic-geometry constructions"
+      ],
+      "counterexamples": [
+        "Allowing infinite strictly ascending ideal chains violates Noetherian behavior"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "HA-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-020"
+        }
+      ]
+    },
+    {
+      "id": "HA-100",
+      "name": "Localization seed",
+      "category": "commutative algebra",
+      "input_form": "ring or module with multiplicative set",
+      "output_form": "localized object with selected inverses adjoined",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A multiplicative subset and compatible localization setting are fixed"
+      ],
+      "operation": "Invert a chosen multiplicative set to focus algebraic behavior locally.",
+      "properties": [
+        "local_seed"
+      ],
+      "examples": [
+        "Local algebra extracts behavior near primes by selectively adjoining inverses rather than globally changing every element"
+      ],
+      "counterexamples": [
+        "Trying to invert elements containing zero divisors or forbidden denominators without the required multiplicative-set conditions is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "HA-090"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-090"
+        }
+      ]
+    },
+    {
+      "id": "HA-110",
+      "name": "Projective resolution seed",
+      "category": "homological algebra",
+      "input_form": "algebraic object in an abelian or module-like category",
+      "output_form": "exact chain complex of projective objects resolving it",
+      "domains": [
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Projective objects and exactness are defined in the active category"
+      ],
+      "operation": "Replace an object by an exact projective chain complex suitable for derived computations.",
+      "properties": [
+        "resolution_seed"
+      ],
+      "examples": [
+        "Derived invariants are computed by resolving objects into exact chains with tractable homological pieces"
+      ],
+      "counterexamples": [
+        "Any chain complex is not automatically a projective resolution without exactness and projectivity hypotheses"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "HA-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-030"
+        }
+      ]
+    },
+    {
+      "id": "HA-120",
+      "name": "Ext functor seed",
+      "category": "homological algebra",
+      "input_form": "pair of algebraic objects with a chosen resolution",
+      "output_form": "derived extension groups",
+      "domains": [
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A resolution-based derived-functor setting is fixed"
+      ],
+      "operation": "Measure higher extension data through derived Hom constructions.",
+      "properties": [
+        "derived_seed"
+      ],
+      "examples": [
+        "Higher extension classes detect information invisible to plain homomorphism spaces"
+      ],
+      "counterexamples": [
+        "Computing only ordinary Hom data does not automatically determine higher Ext structure"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "HA-110"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-110"
+        }
+      ]
+    },
+    {
+      "id": "HA-130",
+      "name": "Semisimple representation seed",
+      "category": "representation theory",
+      "input_form": "representation with invariant substructure decomposition data",
+      "output_form": "direct-sum decomposition into irreducibles",
+      "domains": [
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A representation and irreducibility notion are fixed"
+      ],
+      "operation": "Split a semisimple representation into irreducible summands.",
+      "properties": [
+        "decomposition_seed"
+      ],
+      "examples": [
+        "Reducible symmetry action can still be fully understood when it splits cleanly into irreducible blocks"
+      ],
+      "counterexamples": [
+        "A reducible representation with nontrivial extension data need not be semisimple"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "HA-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-040"
+        }
+      ]
+    },
+    {
+      "id": "HA-140",
+      "name": "Lie group bridge seed",
+      "category": "Lie theory",
+      "input_form": "smooth Lie group with identity tangent data",
+      "output_form": "associated Lie algebra and infinitesimal structure",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A smooth Lie group and tangent-space bracket construction are fixed"
+      ],
+      "operation": "Pass from local smooth group structure to its tangent Lie algebra.",
+      "properties": [
+        "bridge_seed"
+      ],
+      "examples": [
+        "Continuous symmetry can be studied locally by brackets on tangent-space generators rather than only by global multiplication laws"
+      ],
+      "counterexamples": [
+        "An arbitrary topological group without the required smooth structure is not automatically a Lie-group/Lie-algebra bridge case"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "HA-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-050"
+        }
+      ]
+    },
+    {
+      "id": "HA-150",
+      "name": "K0 additivity seed",
+      "category": "K-theory starters",
+      "input_form": "short exact sequence of admissible classes or objects",
+      "output_form": "additive K0 relation",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A K0-type class construction and exact-sequence setting are fixed"
+      ],
+      "operation": "Impose additivity of K0 classes across short exact sequences.",
+      "properties": [
+        "additivity_seed"
+      ],
+      "examples": [
+        "Exact decompositions contribute stable class relations even when objects are not literally equal componentwise"
+      ],
+      "counterexamples": [
+        "Ignoring exact-sequence structure loses the additive meaning of K0 classes"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "HA-060",
+        "HA-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-060"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-030"
+        }
+      ]
+    },
+    {
+      "id": "HA-151",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "HA-152",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "HA-153",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "HA-154",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "HA-155",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "HA-156",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "HA-157",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "HA-158",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "HA-159",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "algebraic_structure",
+        "module_like",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,797 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "CONTROL_THEORY_RULEBOOK.md",
+  "domain_symbols": {
+    "state_space": "linear state, input, and output spaces",
+    "control_system": "controlled dynamical systems",
+    "symbolic": "symbolic control-theory expressions"
+  },
+  "rules": [
+    {
+      "id": "CR-001",
+      "name": "Linear state-space model rule",
+      "category": "system models",
+      "input_form": "x' = Ax + Bu and y = Cx + Du",
+      "output_form": "linear control-system representation",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "State, input, and output dimensions are fixed"
+      ],
+      "operation": "Represent a controlled linear system in standard state-space form.",
+      "properties": [
+        "model_form"
+      ],
+      "examples": [
+        "Control input enters dynamics through the input matrix B in state-space form"
+      ],
+      "counterexamples": [
+        "Suppressing the input channel while still calling the model controlled is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CR-010",
+      "name": "Controllability matrix criterion seed",
+      "category": "reachability",
+      "input_form": "pair (A,B)",
+      "output_form": "full-rank controllability matrix",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The system is finite-dimensional, linear, and time-invariant"
+      ],
+      "operation": "Test controllability by the rank of the classical controllability matrix.",
+      "properties": [
+        "criterion_seed"
+      ],
+      "examples": [
+        "Repeated action of A on the input directions tests state reachability"
+      ],
+      "counterexamples": [
+        "Checking only the rank of B is insufficient in general"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LS-070"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LS-070"
+        }
+      ]
+    },
+    {
+      "id": "CR-020",
+      "name": "Observability matrix criterion seed",
+      "category": "state reconstruction",
+      "input_form": "pair (A,C)",
+      "output_form": "full-rank observability matrix",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The system is finite-dimensional, linear, and time-invariant"
+      ],
+      "operation": "Test observability by the rank of the classical observability matrix.",
+      "properties": [
+        "criterion_seed"
+      ],
+      "examples": [
+        "Repeated output sampling through powers of A tests recoverability of the internal state"
+      ],
+      "counterexamples": [
+        "Measuring one output snapshot alone is insufficient in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CR-030",
+      "name": "Lyapunov stability matrix seed",
+      "category": "stability analysis",
+      "input_form": "linear system x' = Ax",
+      "output_form": "positive-definite Lyapunov certificate condition",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The system matrix and a symmetric candidate certificate are fixed"
+      ],
+      "operation": "Certify linear asymptotic stability through a quadratic Lyapunov condition.",
+      "properties": [
+        "certificate_seed"
+      ],
+      "examples": [
+        "Quadratic Lyapunov functions certify decay of linear autonomous systems under the standard hypotheses"
+      ],
+      "counterexamples": [
+        "Using an indefinite quadratic form as a Lyapunov certificate is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DE-060"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DE-060"
+        }
+      ]
+    },
+    {
+      "id": "CR-040",
+      "name": "Linear quadratic regulator objective seed",
+      "category": "optimal control",
+      "input_form": "linear dynamics with quadratic state and control penalties",
+      "output_form": "quadratic optimal-control problem",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "State and control weighting structure is fixed"
+      ],
+      "operation": "Formulate the standard linear-quadratic regulator problem.",
+      "properties": [
+        "optimization_seed"
+      ],
+      "examples": [
+        "Quadratic penalties balance state regulation against control effort in classical optimal control"
+      ],
+      "counterexamples": [
+        "Replacing the quadratic objective by an arbitrary nonsmooth cost without changing the method is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "OP-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "OP-050"
+        }
+      ]
+    },
+    {
+      "id": "CR-050",
+      "name": "State feedback pole placement seed",
+      "category": "feedback design",
+      "input_form": "controllable linear system and desired closed-loop spectrum",
+      "output_form": "feedback law u = -Kx",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard controllability and admissible spectrum hypotheses hold"
+      ],
+      "operation": "Place the closed-loop poles by linear state feedback in the classical controllable setting.",
+      "properties": [
+        "design_seed"
+      ],
+      "examples": [
+        "Feedback changes the closed-loop dynamics matrix from A to A - BK"
+      ],
+      "counterexamples": [
+        "Prescribing arbitrary closed-loop poles for an uncontrollable system is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "CR-010"
+        }
+      ]
+    },
+    {
+      "id": "CR-060",
+      "name": "Algebraic Riccati equation seed",
+      "category": "optimal control",
+      "input_form": "linear-quadratic regulator problem data",
+      "output_form": "value-matrix Riccati equation",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An LQR weighting structure and stabilizability assumptions are fixed"
+      ],
+      "operation": "Reduce quadratic optimal control to the algebraic Riccati equation.",
+      "properties": [
+        "equation_seed"
+      ],
+      "examples": [
+        "Optimal feedback gain can be recovered from a matrix equation instead of by trajectory-level search alone"
+      ],
+      "counterexamples": [
+        "Arbitrary matrix equations with no quadratic optimal-control origin are not automatically Riccati characterizations"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CR-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CR-040"
+        }
+      ]
+    },
+    {
+      "id": "CR-070",
+      "name": "Kalman filter seed",
+      "category": "state estimation",
+      "input_form": "linear Gaussian state model with noisy observations",
+      "output_form": "predictor-corrector state estimate evolution",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A linear state model, observation model, and Gaussian noise assumptions are fixed"
+      ],
+      "operation": "Estimate latent state through standard Kalman predictor-corrector updates.",
+      "properties": [
+        "estimation_seed"
+      ],
+      "examples": [
+        "Noisy measurement streams can reconstruct latent state by balancing model prediction against observation residuals"
+      ],
+      "counterexamples": [
+        "Applying Kalman updates outside the required linear-Gaussian framework without adjustment is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CR-020",
+        "PB-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CR-020"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "PB-050"
+        }
+      ]
+    },
+    {
+      "id": "CR-080",
+      "name": "Separation principle seed",
+      "category": "output feedback",
+      "input_form": "linear-quadratic-Gaussian control architecture",
+      "output_form": "decoupled estimation and control design structure",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard LQG assumptions are fixed"
+      ],
+      "operation": "Separate controller design and state estimation under standard linear-quadratic-Gaussian hypotheses.",
+      "properties": [
+        "duality_seed"
+      ],
+      "examples": [
+        "Optimal feedback and optimal filtering can be designed modularly before being combined into one control architecture"
+      ],
+      "counterexamples": [
+        "Arbitrary nonlinear partially observed control problems do not automatically satisfy the separation principle"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CR-060",
+        "CR-070"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CR-060"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "CR-070"
+        }
+      ]
+    },
+    {
+      "id": "CR-090",
+      "name": "Model predictive control seed",
+      "category": "constrained control",
+      "input_form": "finite-horizon constrained control problem",
+      "output_form": "receding-horizon control law",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A predictive model, constraints, and finite-horizon objective are fixed"
+      ],
+      "operation": "Apply repeated finite-horizon constrained optimization in receding-horizon form.",
+      "properties": [
+        "receding_horizon_seed"
+      ],
+      "examples": [
+        "State and input constraints can be handled online by repeated finite-horizon optimization rather than by one offline feedback law only"
+      ],
+      "counterexamples": [
+        "Choosing a one-shot open-loop plan with no receding-horizon update is not automatically MPC"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CR-040",
+        "CP-100"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CR-040"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "CP-100"
+        }
+      ]
+    },
+    {
+      "id": "CR-100",
+      "name": "Controllability Gramian seed",
+      "category": "reachability energy",
+      "input_form": "stable linear system with input matrix",
+      "output_form": "controllability Gramian and reachability-energy structure",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A stable linear system and reachability-energy setting are fixed"
+      ],
+      "operation": "Encode reachability energy and controllability geometry through the controllability Gramian.",
+      "properties": [
+        "energy_seed"
+      ],
+      "examples": [
+        "Low-energy reachable directions are identified through Gramian geometry rather than through rank tests alone"
+      ],
+      "counterexamples": [
+        "Using a rank-only criterion as though it already measured control energy is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CR-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CR-010"
+        }
+      ]
+    },
+    {
+      "id": "CR-101",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-102",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-103",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-104",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-105",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-106",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-107",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-108",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-109",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-110",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-111",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-112",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-113",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CR-114",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "state_space",
+        "control_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

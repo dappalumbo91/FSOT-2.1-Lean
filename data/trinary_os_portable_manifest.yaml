@@ -1,0 +1,22 @@
+# Tier 30 — portable Trinary-OS vendor bundle for coding rebuild.
+version: "1.0"
+updated: "2026-07-07"
+
+source:
+  trinary_os_root: "vendor/trinary_os"
+  trinary_os_manifest: "data/trinary_os_manifest.yaml"
+
+build:
+  script: scripts/build_trinary_os_portable_benchmark.py
+  output: data/trinary_os_portable_benchmark.json
+
+lean:
+  generator: scripts/gen_trinary_os_portable_lean.py
+  module: FSOT.Formal.TrinaryOSPortablePriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 8
+  min_oracle_count: 3
+  max_median_error_pct: 0.0

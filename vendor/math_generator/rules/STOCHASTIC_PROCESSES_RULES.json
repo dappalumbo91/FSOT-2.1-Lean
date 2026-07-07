@@ -1,0 +1,732 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "STOCHASTIC_PROCESSES_RULEBOOK.md",
+  "domain_symbols": {
+    "process": "indexed families of random variables",
+    "filtration": "increasing information families",
+    "symbolic": "symbolic stochastic-process expressions"
+  },
+  "rules": [
+    {
+      "id": "SP-001",
+      "name": "Stochastic process indexed-family definition",
+      "category": "process structure",
+      "input_form": "{X_t}_{t in T}",
+      "output_form": "indexed family of random variables",
+      "domains": [
+        "process",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A common probability space and index set are fixed"
+      ],
+      "operation": "Interpret a stochastic process as a family of random variables indexed by time or another parameter.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "Discrete-time chains and continuous-time paths are both indexed random-variable families"
+      ],
+      "counterexamples": [
+        "A single isolated random variable is not by itself a process family"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "SP-010",
+      "name": "Markov property seed",
+      "category": "Markov processes",
+      "input_form": "process X_n",
+      "output_form": "future independent of past given present",
+      "domains": [
+        "process",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The process is evaluated in the active Markov model"
+      ],
+      "operation": "Use the present state as a sufficient summary of the past for future evolution.",
+      "properties": [
+        "memoryless_structure"
+      ],
+      "examples": [
+        "Transition probabilities in a Markov chain depend only on the current state"
+      ],
+      "counterexamples": [
+        "Processes with memory of earlier states are not Markov in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "SP-011",
+      "name": "Transition matrix power rule",
+      "category": "Markov chains",
+      "input_form": "transition matrix P and step count k",
+      "output_form": "k-step transition probabilities from P^k",
+      "domains": [
+        "process",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The chain is finite-state and time-homogeneous"
+      ],
+      "operation": "Compose one-step transitions through matrix powers to obtain k-step transitions.",
+      "properties": [
+        "composition_rule"
+      ],
+      "examples": [
+        "Repeated one-step transitions compose through matrix powers"
+      ],
+      "counterexamples": [
+        "Using P^k for nonhomogeneous chains without adjustment is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LA-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LA-020"
+        }
+      ]
+    },
+    {
+      "id": "SP-020",
+      "name": "Martingale conditional expectation rule",
+      "category": "martingales",
+      "input_form": "process M_n and filtration F_n",
+      "output_form": "E[M_{n+1}|F_n] = M_n",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Integrability and filtration-adapted hypotheses hold"
+      ],
+      "operation": "Characterize martingale evolution through conditional expectation equality.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "Fair-game models satisfy the martingale recursion relative to their information filtration"
+      ],
+      "counterexamples": [
+        "Dropping integrability or filtration conditions is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "SP-030",
+      "name": "Poisson process increment rule",
+      "category": "counting processes",
+      "input_form": "N_t - N_s for t > s",
+      "output_form": "Poisson(lambda(t-s)) with independent stationary increments",
+      "domains": [
+        "process",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The process is the standard homogeneous Poisson process with rate lambda"
+      ],
+      "operation": "Use independent stationary increment structure to identify interval count laws.",
+      "properties": [
+        "distribution_rule"
+      ],
+      "examples": [
+        "Event counts over disjoint intervals are independent in a Poisson process"
+      ],
+      "counterexamples": [
+        "Nonstationary increment laws do not fit the standard homogeneous Poisson process"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "PR-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "PR-050"
+        }
+      ]
+    },
+    {
+      "id": "SP-040",
+      "name": "Brownian motion covariance seed",
+      "category": "continuous-time processes",
+      "input_form": "B_s and B_t",
+      "output_form": "Cov(B_s,B_t) = min(s,t)",
+      "domains": [
+        "process",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The process is standard Brownian motion"
+      ],
+      "operation": "Use the covariance structure of standard Brownian motion.",
+      "properties": [
+        "covariance_rule"
+      ],
+      "examples": [
+        "Covariance of Brownian values is governed by the overlap of the time intervals"
+      ],
+      "counterexamples": [
+        "Treating Brownian increments as deterministic is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "SP-050",
+      "name": "Stationary distribution criterion",
+      "category": "Markov chains",
+      "input_form": "distribution pi and transition matrix P",
+      "output_form": "pi P = pi",
+      "domains": [
+        "process",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The chain is finite-state and time-homogeneous"
+      ],
+      "operation": "Check stationarity by one-step distribution invariance.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "Stationary distributions remain unchanged after one time step of the chain"
+      ],
+      "counterexamples": [
+        "Any distribution on the state space is not automatically stationary"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "SP-051",
+      "name": "Detailed balance reversibility seed",
+      "category": "Markov chains",
+      "input_form": "distribution pi and transition matrix P",
+      "output_form": "pi_i P_ij = pi_j P_ji",
+      "domains": [
+        "process",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The chain is finite-state and the candidate stationary distribution is specified"
+      ],
+      "operation": "Use detailed balance as a standard sufficient test for reversibility.",
+      "properties": [
+        "reversibility_seed"
+      ],
+      "examples": [
+        "Detailed balance gives a practical route to verifying reversibility and stationarity"
+      ],
+      "counterexamples": [
+        "Reversibility cannot be concluded from pi P = pi alone without the extra symmetry condition in general"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "SP-050"
+        }
+      ]
+    },
+    {
+      "id": "SP-060",
+      "name": "Optional stopping seed",
+      "category": "martingales",
+      "input_form": "martingale and stopping time",
+      "output_form": "expectation preservation under standard hypotheses",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The stopping time and integrability hypotheses of the standard optional-stopping theorem hold"
+      ],
+      "operation": "Preserve martingale expectation at suitable stopping times.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Optional stopping transfers fairness from deterministic horizons to suitable random horizons"
+      ],
+      "counterexamples": [
+        "Applying optional stopping without checking its hypotheses is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "SP-020"
+        }
+      ]
+    },
+    {
+      "id": "SP-061",
+      "name": "Ito integral adaptedness seed",
+      "category": "stochastic integration",
+      "input_form": "Ito integrand relative to a filtration",
+      "output_form": "adaptedness requirement",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An Ito stochastic integral setting is active"
+      ],
+      "operation": "Require integrands to use only present and past information in standard Ito integration.",
+      "properties": [
+        "well_formedness_rule"
+      ],
+      "examples": [
+        "Stochastic integrals depend only on present and past information, not future paths, in the adapted Ito setting"
+      ],
+      "counterexamples": [
+        "Using future information inside a standard Ito integrand is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "SP-070",
+      "name": "Stochastic differential equation Ito form seed",
+      "category": "stochastic calculus",
+      "input_form": "dX_t",
+      "output_form": "b(t,X_t) dt + sigma(t,X_t) dW_t",
+      "domains": [
+        "process",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An Ito diffusion model is specified"
+      ],
+      "operation": "Decompose stochastic differential dynamics into drift and diffusion parts.",
+      "properties": [
+        "model_form_seed"
+      ],
+      "examples": [
+        "Diffusion models split drift and noise through dt and dW_t terms"
+      ],
+      "counterexamples": [
+        "Treating dW_t as an ordinary differentiable increment is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "SP-061"
+        }
+      ]
+    },
+    {
+      "id": "SP-071",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-072",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-073",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-074",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-075",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-076",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-077",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-078",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-079",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-080",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-081",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-082",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-083",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SP-084",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "process",
+        "filtration",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

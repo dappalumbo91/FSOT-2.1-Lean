@@ -1,0 +1,728 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "ABSTRACT_ALGEBRA_RULEBOOK.md",
+  "domain_symbols": {
+    "group": "groups and group homomorphisms",
+    "ring": "rings and ideals",
+    "field": "fields and field operations",
+    "symbolic": "symbolic abstract-algebra expressions"
+  },
+  "rules": [
+    {
+      "id": "AA-001",
+      "name": "Subgroup criterion",
+      "category": "group theory",
+      "input_form": "nonempty subset H of a group G",
+      "output_form": "subgroup classification via ab^(-1) closure",
+      "domains": [
+        "group",
+        "symbolic"
+      ],
+      "preconditions": [
+        "H is nonempty"
+      ],
+      "operation": "Use the one-step subgroup test based on closure under ab^(-1).",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "Closure under the subgroup test verifies many candidate subgroups efficiently"
+      ],
+      "counterexamples": [
+        "Checking only closure under multiplication without inverses is insufficient in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AA-002",
+      "name": "Homomorphism preservation rule",
+      "category": "structure-preserving maps",
+      "input_form": "homomorphism phi",
+      "output_form": "preserved algebraic operations",
+      "domains": [
+        "group",
+        "ring",
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The map is declared in an algebraic category with specified operations"
+      ],
+      "operation": "Preserve the active algebraic operations under a homomorphism.",
+      "properties": [
+        "structure_preserving"
+      ],
+      "examples": [
+        "Group homomorphisms send products to products and identities to identities"
+      ],
+      "counterexamples": [
+        "Arbitrary set maps need not preserve structure"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AA-010",
+      "name": "Ideal criterion in a ring",
+      "category": "ring theory",
+      "input_form": "subset I of a ring R",
+      "output_form": "ideal classification",
+      "domains": [
+        "ring",
+        "symbolic"
+      ],
+      "preconditions": [
+        "R is a ring with the declared operations"
+      ],
+      "operation": "Classify a subset as an ideal via additive subgroup and absorption conditions.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "Multiples of a fixed integer form an ideal in the integer ring"
+      ],
+      "counterexamples": [
+        "Additive closure alone without absorption is insufficient for ideal status"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AA-020",
+      "name": "Field nonzero invertibility rule",
+      "category": "field theory",
+      "input_form": "nonzero field element a",
+      "output_form": "multiplicative inverse a^(-1)",
+      "domains": [
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "a is nonzero in the active field"
+      ],
+      "operation": "Use field structure to invert any nonzero element.",
+      "properties": [
+        "field_axiom_consequence"
+      ],
+      "examples": [
+        "Rational numbers form a field because every nonzero rational has a reciprocal in Q"
+      ],
+      "counterexamples": [
+        "Zero does not admit a multiplicative inverse in a field"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AA-030",
+      "name": "First isomorphism theorem seed",
+      "category": "quotient structures",
+      "input_form": "homomorphism phi",
+      "output_form": "domain modulo kernel(phi) isomorphic to image(phi)",
+      "domains": [
+        "group",
+        "ring",
+        "symbolic"
+      ],
+      "preconditions": [
+        "phi is a well-defined homomorphism in the active algebraic category"
+      ],
+      "operation": "Collapse kernel-equivalent elements to obtain the image through a quotient-isomorphism statement.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Quotienting out the kernel compresses exactly the redundancy of the homomorphism"
+      ],
+      "counterexamples": [
+        "Replacing the kernel by an arbitrary subset is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AA-002"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "AA-002"
+        }
+      ]
+    },
+    {
+      "id": "AA-040",
+      "name": "Normal subgroup criterion",
+      "category": "group theory",
+      "input_form": "subgroup N of G",
+      "output_form": "gNg^(-1) = N for all g in G",
+      "domains": [
+        "group",
+        "symbolic"
+      ],
+      "preconditions": [
+        "N is already known to be a subgroup of G"
+      ],
+      "operation": "Check normality by conjugation invariance.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "Kernels of group homomorphisms are normal subgroups"
+      ],
+      "counterexamples": [
+        "An arbitrary subgroup need not be normal"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AA-002"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "AA-002"
+        }
+      ]
+    },
+    {
+      "id": "AA-041",
+      "name": "Quotient group operation rule",
+      "category": "quotient structures",
+      "input_form": "cosets aN and bN with N normal",
+      "output_form": "(aN)(bN) = (ab)N",
+      "domains": [
+        "group",
+        "symbolic"
+      ],
+      "preconditions": [
+        "N is a normal subgroup of G"
+      ],
+      "operation": "Define group multiplication on cosets after normality ensures well-definedness.",
+      "properties": [
+        "construction_rule"
+      ],
+      "examples": [
+        "Quotient groups inherit a well-defined multiplication only after normality is established"
+      ],
+      "counterexamples": [
+        "Defining coset multiplication for nonnormal subgroups is invalid in general"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AA-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "AA-040"
+        }
+      ]
+    },
+    {
+      "id": "AA-050",
+      "name": "Cyclic subgroup generator rule",
+      "category": "group theory",
+      "input_form": "element a",
+      "output_form": "subgroup generated by integer powers or integer multiples of a",
+      "domains": [
+        "group",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The active notation convention for the algebraic operation is fixed"
+      ],
+      "operation": "Generate a cyclic subgroup from a single element.",
+      "properties": [
+        "construction_rule"
+      ],
+      "examples": [
+        "Cyclic subgroups are determined entirely by one generator element"
+      ],
+      "counterexamples": [
+        "Adding unrelated elements to the generated set is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AA-051",
+      "name": "Irreducibility seed over a field",
+      "category": "polynomial theory",
+      "input_form": "nonconstant polynomial over a field",
+      "output_form": "irreducible iff no nontrivial factorization exists over that field",
+      "domains": [
+        "field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A coefficient field is fixed"
+      ],
+      "operation": "Classify polynomial irreducibility relative to the active coefficient field.",
+      "properties": [
+        "classification_seed"
+      ],
+      "examples": [
+        "Irreducibility depends on the coefficient field, not just the formal expression"
+      ],
+      "counterexamples": [
+        "Calling a polynomial irreducible over every field after checking only one field is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AA-060",
+      "name": "Principal ideal rule in a PID",
+      "category": "ring theory",
+      "input_form": "ideal I in a principal ideal domain",
+      "output_form": "I = (a) for some a",
+      "domains": [
+        "ring",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The ambient ring is a principal ideal domain"
+      ],
+      "operation": "Collapse ideals to single generators in a PID.",
+      "properties": [
+        "structure_rule"
+      ],
+      "examples": [
+        "Ideals in the integers are generated by one integer"
+      ],
+      "counterexamples": [
+        "Extending the rule automatically to arbitrary integral domains is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AA-061",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-062",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-063",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-064",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-065",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-066",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-067",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-068",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-069",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-070",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-071",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-072",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-073",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-074",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AA-075",
+      "name": "Counterexample mining expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "universal claim C",
+      "output_form": "counterexample search status",
+      "domains": [
+        "group",
+        "ring",
+        "field"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Systematically attempt to falsify broad claims before promoting them.",
+      "properties": [
+        "auto_generated",
+        "counterexample_search"
+      ],
+      "examples": [
+        "Boundary or low-dimensional cases can reveal hidden failures"
+      ],
+      "counterexamples": [
+        "Treating untested universality as proven is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

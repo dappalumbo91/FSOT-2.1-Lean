@@ -1,0 +1,737 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "REAL_ANALYSIS_RULEBOOK.md",
+  "domain_symbols": {
+    "real_line": "real numbers and intervals",
+    "sequence": "real-valued sequences",
+    "symbolic": "symbolic analysis expressions"
+  },
+  "rules": [
+    {
+      "id": "RA-001",
+      "name": "Epsilon definition of sequence limit",
+      "category": "sequence convergence",
+      "input_form": "a_n converges to L",
+      "output_form": "for every epsilon > 0 there exists N with |a_n-L| < epsilon for n >= N",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The sequence and candidate limit are real-valued"
+      ],
+      "operation": "Express sequence convergence through the epsilon-N definition.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "The sequence 1/n converges to 0 by making n large enough to force 1/n below any epsilon"
+      ],
+      "counterexamples": [
+        "Checking the inequality for only finitely many indices is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "RA-002",
+      "name": "Monotone bounded convergence rule",
+      "category": "sequence convergence",
+      "input_form": "monotone bounded real sequence",
+      "output_form": "convergent real sequence",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The sequence is monotone and bounded in R"
+      ],
+      "operation": "Conclude convergence of a monotone bounded sequence in the real numbers.",
+      "properties": [
+        "completeness_consequence"
+      ],
+      "examples": [
+        "An increasing sequence bounded above has a real limit"
+      ],
+      "counterexamples": [
+        "Monotonicity alone without boundedness does not ensure convergence in R"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "RA-003",
+      "name": "Cauchy criterion seed",
+      "category": "completeness",
+      "input_form": "real sequence",
+      "output_form": "convergent iff Cauchy",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The sequence is interpreted in the complete real metric"
+      ],
+      "operation": "Use completeness of the real numbers to identify convergence with the Cauchy property.",
+      "properties": [
+        "equivalence_criterion"
+      ],
+      "examples": [
+        "Completeness of R converts Cauchy control into actual convergence"
+      ],
+      "counterexamples": [
+        "Using the criterion in an incomplete space without extra hypotheses is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "RA-001"
+        }
+      ]
+    },
+    {
+      "id": "RA-010",
+      "name": "Epsilon-delta continuity definition",
+      "category": "continuity",
+      "input_form": "f continuous at x_0",
+      "output_form": "for every epsilon > 0 there exists delta > 0 with |f(x)-f(x_0)| < epsilon when |x-x_0| < delta",
+      "domains": [
+        "real_line",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The function is defined near x_0"
+      ],
+      "operation": "Express pointwise continuity using the epsilon-delta criterion.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "Polynomial functions satisfy the epsilon-delta continuity condition at every real point"
+      ],
+      "counterexamples": [
+        "Checking continuity only on one side when two-sided continuity is required is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "RA-020",
+      "name": "Intermediate value theorem seed",
+      "category": "continuity theorems",
+      "input_form": "continuous function on an interval",
+      "output_form": "attains every intermediate value between endpoint values",
+      "domains": [
+        "real_line",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The function is continuous on the relevant interval"
+      ],
+      "operation": "Use continuity on an interval to guarantee intermediate values.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "If f(a) < 0 < f(b), then some c between a and b satisfies f(c) = 0"
+      ],
+      "counterexamples": [
+        "Applying the theorem to a discontinuous function is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "RA-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "RA-010"
+        }
+      ]
+    },
+    {
+      "id": "RA-030",
+      "name": "Heine-Borel compactness rule",
+      "category": "compactness",
+      "input_form": "subset of R",
+      "output_form": "compact iff closed and bounded",
+      "domains": [
+        "real_line",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The subset is interpreted in the standard real topology"
+      ],
+      "operation": "Classify compact subsets of the real line by closedness and boundedness.",
+      "properties": [
+        "equivalence_criterion"
+      ],
+      "examples": [
+        "A closed interval [a,b] is compact in the real line"
+      ],
+      "counterexamples": [
+        "An open interval is bounded but not compact in R"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "TP-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "TP-020"
+        }
+      ]
+    },
+    {
+      "id": "RA-031",
+      "name": "Bolzano-Weierstrass rule",
+      "category": "compactness",
+      "input_form": "bounded real sequence",
+      "output_form": "convergent subsequence exists",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The sequence is bounded in R"
+      ],
+      "operation": "Extract a convergent subsequence from a bounded real sequence.",
+      "properties": [
+        "compactness_consequence"
+      ],
+      "examples": [
+        "Bounded oscillating sequences still admit convergent subsequences"
+      ],
+      "counterexamples": [
+        "Unbounded sequences do not satisfy the theorem hypotheses"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "RA-032",
+      "name": "Uniform continuity on compact intervals",
+      "category": "continuity theorems",
+      "input_form": "continuous function on a compact interval",
+      "output_form": "uniformly continuous function",
+      "domains": [
+        "real_line",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The function is continuous on a compact interval"
+      ],
+      "operation": "Promote pointwise continuity to uniform continuity on compact intervals.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Continuous functions on [0,1] admit one delta choice that works across the whole interval"
+      ],
+      "counterexamples": [
+        "Continuity on a noncompact domain does not imply uniform continuity in general"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "RA-010",
+        "RA-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "RA-010"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "RA-030"
+        }
+      ]
+    },
+    {
+      "id": "RA-040",
+      "name": "Limsup and liminf order rule",
+      "category": "asymptotic structure",
+      "input_form": "real sequence",
+      "output_form": "liminf a_n <= limsup a_n",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Limsup and liminf are interpreted in the extended real sense"
+      ],
+      "operation": "Order the lower and upper asymptotic limits of a sequence.",
+      "properties": [
+        "order_property"
+      ],
+      "examples": [
+        "Oscillating bounded sequences may have distinct liminf and limsup values framing their subsequential limits"
+      ],
+      "counterexamples": [
+        "Reversing the inequality is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "RA-041",
+      "name": "Ratio test seed",
+      "category": "series convergence",
+      "input_form": "series sum a_n with ratio limit L",
+      "output_form": "absolute convergence if L < 1 and divergence if L > 1",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The relevant ratio limit exists in the stated form"
+      ],
+      "operation": "Classify many series by the limiting size ratio of successive terms.",
+      "properties": [
+        "convergence_test"
+      ],
+      "examples": [
+        "Geometric-type tails are classified effectively by the ratio test"
+      ],
+      "counterexamples": [
+        "The ratio test is inconclusive in general when L = 1"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "RA-050",
+      "name": "Arzela-Ascoli seed",
+      "category": "compact families of functions",
+      "input_form": "equibounded equicontinuous family on a compact domain",
+      "output_form": "uniformly convergent subsequence exists under the standard hypotheses",
+      "domains": [
+        "real_line",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The family is defined on a compact domain and satisfies the standard equicontinuity and boundedness hypotheses"
+      ],
+      "operation": "Extract a uniformly convergent subsequence from a controlled family of functions.",
+      "properties": [
+        "compactness_seed"
+      ],
+      "examples": [
+        "Compactness of function families can be proved by controlling both oscillation and size on compact sets"
+      ],
+      "counterexamples": [
+        "Pointwise boundedness without equicontinuity is insufficient in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "RA-051",
+      "name": "Absolute convergence implies convergence",
+      "category": "series convergence",
+      "input_form": "series with convergent absolute series",
+      "output_form": "convergent original series",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "sum |a_n| converges"
+      ],
+      "operation": "Promote absolute summability to ordinary convergence.",
+      "properties": [
+        "convergence_theorem"
+      ],
+      "examples": [
+        "Alternating or signed terms become harmless once the absolute series is summable"
+      ],
+      "counterexamples": [
+        "Conditional convergence does not imply absolute convergence"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "RA-060",
+      "name": "Power series radius rule",
+      "category": "power series",
+      "input_form": "power series sum a_n (x-c)^n",
+      "output_form": "radius of convergence R with absolute convergence inside and divergence outside",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The series is interpreted in the standard one-variable power-series setting"
+      ],
+      "operation": "Classify power-series convergence by a radius parameter.",
+      "properties": [
+        "classification_seed"
+      ],
+      "examples": [
+        "Coefficient growth determines a sharp analytic disk or interval of convergence through the radius parameter"
+      ],
+      "counterexamples": [
+        "Behavior at boundary points cannot be inferred from the radius alone in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "RA-061",
+      "name": "Differentiability implies continuity rule",
+      "category": "differentiation theorems",
+      "input_form": "function differentiable at a point",
+      "output_form": "continuous at that point",
+      "domains": [
+        "real_line",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The derivative exists at the point under consideration"
+      ],
+      "operation": "Use derivative existence to force continuity.",
+      "properties": [
+        "implication_rule"
+      ],
+      "examples": [
+        "Derivative existence gives a first-order approximation strong enough to force local continuity"
+      ],
+      "counterexamples": [
+        "Continuity alone does not imply differentiability"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "RA-070",
+      "name": "Fundamental theorem of calculus seed",
+      "category": "integration and differentiation",
+      "input_form": "integral and antiderivative data under the standard regularity hypotheses",
+      "output_form": "differentiation and integration invert one another in the basic one-variable setting",
+      "domains": [
+        "real_line",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The active continuity and integrability hypotheses hold"
+      ],
+      "operation": "Relate antiderivatives, accumulated-area functions, and definite integrals.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Antiderivative structure converts integrals into endpoint evaluation and accumulated-area functions into derivatives"
+      ],
+      "counterexamples": [
+        "Applying the theorem without the needed integrability or continuity hypotheses is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CA-055",
+        "CA-056"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CA-055"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "CA-056"
+        }
+      ]
+    },
+    {
+      "id": "RA-071",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "RA-072",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "RA-073",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "RA-074",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "RA-075",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "RA-076",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "RA-077",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "RA-078",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "RA-079",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "RA-080",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "real_line",
+        "sequence",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

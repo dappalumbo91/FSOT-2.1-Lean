@@ -1,0 +1,792 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "CATEGORY_THEORY_RULEBOOK.md",
+  "domain_symbols": {
+    "category": "categories, functors, and diagrams",
+    "morphism": "morphisms and compositions",
+    "symbolic": "symbolic category-theory expressions"
+  },
+  "rules": [
+    {
+      "id": "CT-001",
+      "name": "Category definition",
+      "category": "category foundations",
+      "input_form": "objects, morphisms, composition, identities",
+      "output_form": "category classification",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Composition is associative and identities exist for each object"
+      ],
+      "operation": "Recognize a category from its compositional data.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "Sets with functions form a standard category"
+      ],
+      "counterexamples": [
+        "A directed graph without associative composition and identities is not automatically a category"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CT-010",
+      "name": "Functor preservation rule",
+      "category": "functors",
+      "input_form": "mapping between categories",
+      "output_form": "identity and composition preserving functor",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Source and target categories are fixed"
+      ],
+      "operation": "Verify that a candidate functor preserves identities and composition.",
+      "properties": [
+        "structure_preservation"
+      ],
+      "examples": [
+        "Forgetful constructions often preserve compositional structure while discarding extra data"
+      ],
+      "counterexamples": [
+        "Mapping objects while breaking composition is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "CT-001"
+        }
+      ]
+    },
+    {
+      "id": "CT-020",
+      "name": "Natural transformation seed",
+      "category": "functor comparison",
+      "input_form": "two functors F and G",
+      "output_form": "component morphisms with commuting naturality squares",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The functors share source and target categories"
+      ],
+      "operation": "Build a natural transformation from component morphisms satisfying naturality.",
+      "properties": [
+        "structure_seed"
+      ],
+      "examples": [
+        "Canonical comparison maps between two functors are natural only when all naturality squares commute"
+      ],
+      "counterexamples": [
+        "Choosing unrelated component morphisms with no square compatibility is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "CT-010"
+        }
+      ]
+    },
+    {
+      "id": "CT-030",
+      "name": "Universal property seed",
+      "category": "universal constructions",
+      "input_form": "candidate universal object and compatible morphisms",
+      "output_form": "unique factorization property",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The ambient diagram shape and compatibility conditions are fixed"
+      ],
+      "operation": "Characterize an object by unique factorization of compatible morphisms.",
+      "properties": [
+        "characterization_seed"
+      ],
+      "examples": [
+        "Products and coproducts are specified by their mapping universality rather than by elementwise recipes alone"
+      ],
+      "counterexamples": [
+        "Existence without uniqueness is insufficient for the standard universal-property pattern"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CT-040",
+      "name": "Adjunction seed",
+      "category": "adjoint functors",
+      "input_form": "functors F and G",
+      "output_form": "natural hom-set correspondence",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The relevant source and target categories are fixed"
+      ],
+      "operation": "Recognize adjunction through natural bijections of hom-sets.",
+      "properties": [
+        "equivalence_seed"
+      ],
+      "examples": [
+        "Free and forgetful constructions often appear as adjoint pairs"
+      ],
+      "counterexamples": [
+        "Object-level correspondence without hom-set naturality is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "CT-010"
+        }
+      ]
+    },
+    {
+      "id": "CT-050",
+      "name": "Commutative diagram consistency rule",
+      "category": "diagram reasoning",
+      "input_form": "diagram with parallel composite paths",
+      "output_form": "commutative-diagram status",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "All named composites in the diagram are defined"
+      ],
+      "operation": "Require all relevant composites between common endpoints to agree.",
+      "properties": [
+        "diagram_rule"
+      ],
+      "examples": [
+        "Diagram commutativity encodes structural compatibility without introducing elementwise reasoning"
+      ],
+      "counterexamples": [
+        "Checking only one path pair in a larger diagram is insufficient in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CT-060",
+      "name": "Limit cone seed",
+      "category": "limits and universal constructions",
+      "input_form": "diagram with a candidate universal cone",
+      "output_form": "limit object and universal factorization property",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A diagram shape and cone compatibility conditions are fixed"
+      ],
+      "operation": "Characterize limits by universal cones and unique factorization.",
+      "properties": [
+        "universal_seed"
+      ],
+      "examples": [
+        "Products, pullbacks, and inverse limits are organized by universal cone structure rather than by ad hoc elementwise recipes"
+      ],
+      "counterexamples": [
+        "A compatible cone without universal factorization is not automatically a limit"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CT-030",
+        "CT-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CT-030"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "CT-050"
+        }
+      ]
+    },
+    {
+      "id": "CT-070",
+      "name": "Yoneda embedding seed",
+      "category": "representable structure",
+      "input_form": "object and representable hom-functor context",
+      "output_form": "object behavior encoded by natural transformation data",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A locally well-formed hom-functor setting is fixed"
+      ],
+      "operation": "Use representable functors and natural transformations to encode object behavior categorically.",
+      "properties": [
+        "representation_seed"
+      ],
+      "examples": [
+        "Representable functors encode object behavior through natural transformations instead of hidden internal coordinates"
+      ],
+      "counterexamples": [
+        "Treating arbitrary set-valued assignments as representable is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CT-010",
+        "CT-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CT-010"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "CT-020"
+        }
+      ]
+    },
+    {
+      "id": "CT-080",
+      "name": "Monoidal structure seed",
+      "category": "monoidal categories",
+      "input_form": "category with tensor product and unit data",
+      "output_form": "coherent monoidal-category structure",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Tensor product, unit object, and coherence maps are fixed"
+      ],
+      "operation": "Equip a category with associative tensor and unit structure up to coherence.",
+      "properties": [
+        "tensor_seed"
+      ],
+      "examples": [
+        "Parallel composition of processes can be formalized by tensor structure rather than by overloading ordinary composition"
+      ],
+      "counterexamples": [
+        "Having a binary operation with no coherence data is not automatically monoidal structure"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CT-001",
+        "CT-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CT-001"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "CT-050"
+        }
+      ]
+    },
+    {
+      "id": "CT-090",
+      "name": "Monad seed",
+      "category": "monads and algebraic structure",
+      "input_form": "endofunctor with unit and multiplication candidates",
+      "output_form": "coherent monad structure",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An endofunctor and natural transformation data are fixed"
+      ],
+      "operation": "Recognize monads through unit and multiplication coherence identities.",
+      "properties": [
+        "coherence_seed"
+      ],
+      "examples": [
+        "Algebraic effects and free constructions can be encoded by monadic structure instead of by one-off rewrite rules"
+      ],
+      "counterexamples": [
+        "An endofunctor alone is not automatically a monad"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CT-020",
+        "CT-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CT-020"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "CT-040"
+        }
+      ]
+    },
+    {
+      "id": "CT-100",
+      "name": "Abelian exactness seed",
+      "category": "abelian and homological categories",
+      "input_form": "abelian-category style kernel, cokernel, and sequence data",
+      "output_form": "categorical exactness structure",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Kernel, cokernel, and additive categorical structure are fixed"
+      ],
+      "operation": "Generalize algebraic exactness through abelian categorical structure.",
+      "properties": [
+        "exactness_seed"
+      ],
+      "examples": [
+        "Categorical exactness lets diagrammatic arguments recover algebraic short-exact-sequence behavior abstractly"
+      ],
+      "counterexamples": [
+        "An arbitrary category with limits is not automatically abelian"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CT-060",
+        "HA-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CT-060"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-030"
+        }
+      ]
+    },
+    {
+      "id": "CT-101",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-102",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-103",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-104",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-105",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-106",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-107",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-108",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-109",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-110",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-111",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-112",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-113",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CT-114",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "category",
+        "morphism",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

@@ -117,6 +117,9 @@ LEAN_TARGETS = [
     "FSOT.Formal.MathematicsComputationalPriors",
     "FSOT.Formal.MaterialsEngineeringPriors",
     "FSOT.Formal.ComputationalReasoningPriors",
+    "FSOT.Formal.MathGeneratorRulesEvalPriors",
+    "FSOT.Formal.TrinaryOSPortablePriors",
+    "FSOT.Formal.MaterialsSpeciesBridgePriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

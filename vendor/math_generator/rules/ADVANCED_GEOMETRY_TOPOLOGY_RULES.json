@@ -1,0 +1,767 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "ADVANCED_GEOMETRY_TOPOLOGY_RULEBOOK.md",
+  "domain_symbols": {
+    "geometric_space": "projective, affine, metric, and topological spaces",
+    "topological_object": "manifolds, knots, and simplicial decompositions",
+    "symbolic": "symbolic advanced-geometry-topology expressions"
+  },
+  "rules": [
+    {
+      "id": "GT-001",
+      "name": "Projective incidence seed",
+      "category": "projective geometry",
+      "input_form": "affine incidence data under projective completion",
+      "output_form": "projective incidence structure",
+      "domains": [
+        "geometric_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A projective-completion model is fixed"
+      ],
+      "operation": "Extend affine incidence by adding points at infinity in projective geometry.",
+      "properties": [
+        "completion_seed"
+      ],
+      "examples": [
+        "Parallel affine lines meet at a projective point at infinity after projective completion"
+      ],
+      "counterexamples": [
+        "Keeping Euclidean parallel nonintersection unchanged in projective completion is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "GT-010",
+      "name": "Affine combination seed",
+      "category": "affine geometry",
+      "input_form": "weighted point combination with coefficients summing to 1",
+      "output_form": "affine combination",
+      "domains": [
+        "geometric_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The coefficient field and affine space are fixed"
+      ],
+      "operation": "Construct affine combinations independently of a chosen origin.",
+      "properties": [
+        "construction_seed"
+      ],
+      "examples": [
+        "Line segments and affine spans are described by affine rather than purely linear combinations"
+      ],
+      "counterexamples": [
+        "Arbitrary coefficient sums define linear combinations, not affine ones in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "GT-020",
+      "name": "Hyperbolic parallel seed",
+      "category": "non-Euclidean geometry",
+      "input_form": "point and line in hyperbolic geometry",
+      "output_form": "multiple nonintersecting lines through the point",
+      "domains": [
+        "geometric_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A standard hyperbolic model is fixed"
+      ],
+      "operation": "Use hyperbolic parallel behavior in place of Euclidean uniqueness.",
+      "properties": [
+        "axiom_variant_seed"
+      ],
+      "examples": [
+        "Hyperbolic parallel behavior differs fundamentally from Euclidean uniqueness of parallels"
+      ],
+      "counterexamples": [
+        "Imposing Euclidean parallel uniqueness inside hyperbolic geometry is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "GT-030",
+      "name": "Convex hull seed",
+      "category": "convex geometry",
+      "input_form": "subset of an affine space",
+      "output_form": "smallest containing convex set",
+      "domains": [
+        "geometric_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A convexity notion in an affine or vector space is fixed"
+      ],
+      "operation": "Build the convex hull as the minimal convex enclosure.",
+      "properties": [
+        "construction_seed"
+      ],
+      "examples": [
+        "Finite point clouds generate polygons or polyhedra through convex hull construction"
+      ],
+      "counterexamples": [
+        "Arbitrary enclosing nonconvex sets do not define the convex hull"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "GT-040",
+      "name": "Triangulation seed",
+      "category": "discrete geometry and topology",
+      "input_form": "object decomposed into simplices",
+      "output_form": "compatible triangulation",
+      "domains": [
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Face-gluing compatibility is fixed"
+      ],
+      "operation": "Decompose an object into simplices with compatible face structure.",
+      "properties": [
+        "decomposition_seed"
+      ],
+      "examples": [
+        "Discrete geometry and topology often reduce global structure to simplicial pieces"
+      ],
+      "counterexamples": [
+        "Overlapping simplices with inconsistent face data are invalid as a triangulation"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "GT-050",
+      "name": "Knot equivalence seed",
+      "category": "knot theory",
+      "input_form": "pair of embedded circles in three-space",
+      "output_form": "ambient-isotopy equivalence status",
+      "domains": [
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Embeddings are taken in the standard knot-theoretic category"
+      ],
+      "operation": "Classify knots by ambient isotopy.",
+      "properties": [
+        "equivalence_seed"
+      ],
+      "examples": [
+        "Knot type is preserved by continuous deformation that avoids cutting and self-intersection passage"
+      ],
+      "counterexamples": [
+        "Arbitrary planar diagram similarity does not determine knot equivalence"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "GT-060",
+      "name": "Symplectic form seed",
+      "category": "symplectic geometry",
+      "input_form": "differential 2-form on a manifold",
+      "output_form": "symplectic structure when closed and nondegenerate",
+      "domains": [
+        "geometric_space",
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An even-dimensional smooth manifold and differential-form structure are fixed"
+      ],
+      "operation": "Recognize a symplectic structure by closedness and nondegeneracy of a 2-form.",
+      "properties": [
+        "structure_seed"
+      ],
+      "examples": [
+        "Hamiltonian phase spaces carry geometry through closed nondegenerate 2-forms"
+      ],
+      "counterexamples": [
+        "A degenerate 2-form is not symplectic"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DG-050",
+        "DG-051"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DG-050"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "DG-051"
+        }
+      ]
+    },
+    {
+      "id": "GT-070",
+      "name": "Homeomorphism-type invariant seed",
+      "category": "geometric topology",
+      "input_form": "geometric or topological object with candidate invariant",
+      "output_form": "homeomorphism or isotopy invariant status",
+      "domains": [
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An active category of homeomorphism or isotopy equivalence is fixed"
+      ],
+      "operation": "Require invariants to survive the appropriate topological equivalence relation.",
+      "properties": [
+        "invariant_seed"
+      ],
+      "examples": [
+        "Manifold and knot classification questions are phrased in terms of homeomorphism-type or isotopy invariants"
+      ],
+      "counterexamples": [
+        "Metric quantities alone are not automatically topological invariants"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "GT-080",
+      "name": "Cross-ratio seed",
+      "category": "projective geometry",
+      "input_form": "ordered quadruple of collinear projective points",
+      "output_form": "projective-invariant cross-ratio value",
+      "domains": [
+        "geometric_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A projective line model and admissible quadruple are fixed"
+      ],
+      "operation": "Use cross-ratio as a projective invariant of four collinear points.",
+      "properties": [
+        "invariant_seed"
+      ],
+      "examples": [
+        "Projective structure retains cross-ratio information even when affine distances are not preserved"
+      ],
+      "counterexamples": [
+        "Arbitrary metric ratios of segments are not projective invariants in general"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GT-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GT-001"
+        }
+      ]
+    },
+    {
+      "id": "GT-090",
+      "name": "Projective duality seed",
+      "category": "projective geometry",
+      "input_form": "projective incidence statement",
+      "output_form": "dual incidence statement",
+      "domains": [
+        "geometric_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A projective duality correspondence is fixed"
+      ],
+      "operation": "Swap point and line roles through projective duality.",
+      "properties": [
+        "duality_seed"
+      ],
+      "examples": [
+        "Incidence theorems often generate dual companions by swapping points with lines in the projective plane"
+      ],
+      "counterexamples": [
+        "Euclidean metric claims do not automatically survive projective dualization"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GT-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GT-001"
+        }
+      ]
+    },
+    {
+      "id": "GT-100",
+      "name": "Affine transformation seed",
+      "category": "affine geometry",
+      "input_form": "map on an affine space with linear-plus-translation structure",
+      "output_form": "affine-geometry invariant transformation",
+      "domains": [
+        "geometric_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An affine space and affine transformation law are fixed"
+      ],
+      "operation": "Preserve affine combinations, lines, and parallelism through affine transformations.",
+      "properties": [
+        "transformation_seed"
+      ],
+      "examples": [
+        "Barycentric structure survives translations and linear distortions even when Euclidean lengths do not"
+      ],
+      "counterexamples": [
+        "Arbitrary nonlinear maps are not affine transformations"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GT-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GT-010"
+        }
+      ]
+    },
+    {
+      "id": "GT-110",
+      "name": "Geodesic model seed",
+      "category": "non-Euclidean geometry",
+      "input_form": "curved geometric model with candidate shortest paths",
+      "output_form": "model-specific geodesic structure",
+      "domains": [
+        "geometric_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A non-Euclidean model and geodesic notion are fixed"
+      ],
+      "operation": "Use model-dependent geodesics in place of Euclidean straight lines.",
+      "properties": [
+        "geodesic_seed"
+      ],
+      "examples": [
+        "Straight lines in Euclidean space are replaced by model geodesics in hyperbolic and spherical geometry"
+      ],
+      "counterexamples": [
+        "Forcing Euclidean straightness into curved models is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GT-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GT-020"
+        }
+      ]
+    },
+    {
+      "id": "GT-120",
+      "name": "Helly-type seed",
+      "category": "convex geometry",
+      "input_form": "finite family of convex sets",
+      "output_form": "finite-subfamily intersection criterion",
+      "domains": [
+        "geometric_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A convex family in a standard affine space is fixed"
+      ],
+      "operation": "Infer global intersection structure from small convex subfamilies.",
+      "properties": [
+        "finite_intersection_seed"
+      ],
+      "examples": [
+        "Global intersection of many convex sets can be certified from small subfamilies rather than exhaustive checking"
+      ],
+      "counterexamples": [
+        "Arbitrary nonconvex families do not automatically satisfy Helly-type conclusions"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GT-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GT-030"
+        }
+      ]
+    },
+    {
+      "id": "GT-130",
+      "name": "Polytope face seed",
+      "category": "discrete geometry",
+      "input_form": "polytope with candidate face-incidence structure",
+      "output_form": "face-lattice organization",
+      "domains": [
+        "geometric_space",
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A polytope and incidence interpretation are fixed"
+      ],
+      "operation": "Organize polytope structure through its hierarchy of faces.",
+      "properties": [
+        "combinatorial_seed"
+      ],
+      "examples": [
+        "Combinatorial face lattices encode much of a polytope's discrete structure beyond one visualization alone"
+      ],
+      "counterexamples": [
+        "A generic point set is not automatically a polytope with consistent face data"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GT-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GT-040"
+        }
+      ]
+    },
+    {
+      "id": "GT-140",
+      "name": "Reidemeister move seed",
+      "category": "knot theory",
+      "input_form": "pair of knot diagrams",
+      "output_form": "diagrammatic equivalence by Reidemeister moves",
+      "domains": [
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A standard knot-diagram setting is fixed"
+      ],
+      "operation": "Recognize knot equivalence through sequences of Reidemeister moves.",
+      "properties": [
+        "diagram_seed"
+      ],
+      "examples": [
+        "Local diagram changes can preserve ambient-isotopy class without cutting the knot"
+      ],
+      "counterexamples": [
+        "Arbitrary redrawing that changes crossing structure is not automatically knot-equivalent"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GT-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GT-050"
+        }
+      ]
+    },
+    {
+      "id": "GT-150",
+      "name": "Symplectic capacity seed",
+      "category": "symplectic geometry",
+      "input_form": "symplectic manifold with candidate embedding constraint",
+      "output_form": "capacity-type symplectic invariant",
+      "domains": [
+        "geometric_space",
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A symplectic structure and capacity setting are fixed"
+      ],
+      "operation": "Use symplectic capacities to constrain embeddings beyond volume data.",
+      "properties": [
+        "capacity_seed"
+      ],
+      "examples": [
+        "Symplectic geometry can distinguish embedding possibilities invisible to mere volume comparison"
+      ],
+      "counterexamples": [
+        "Volume preservation alone does not determine symplectic embeddability"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GT-060"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GT-060"
+        }
+      ]
+    },
+    {
+      "id": "GT-160",
+      "name": "Surgery seed",
+      "category": "geometric topology",
+      "input_form": "manifold or knot-complement modification data",
+      "output_form": "surgically modified topological object",
+      "domains": [
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A controlled cut-and-glue topology construction is fixed"
+      ],
+      "operation": "Modify topological objects through compatible surgery constructions.",
+      "properties": [
+        "construction_seed"
+      ],
+      "examples": [
+        "New topological objects can be produced by local replacement rules that alter global classification data"
+      ],
+      "counterexamples": [
+        "Arbitrary cutting and regluing with no compatibility data is invalid as surgery"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GT-070"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GT-070"
+        }
+      ]
+    },
+    {
+      "id": "GT-161",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "geometric_space",
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "GT-162",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "geometric_space",
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "GT-163",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "geometric_space",
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "GT-164",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "geometric_space",
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "GT-165",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "geometric_space",
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "GT-166",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "geometric_space",
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "GT-167",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "geometric_space",
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "GT-168",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "geometric_space",
+        "topological_object",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

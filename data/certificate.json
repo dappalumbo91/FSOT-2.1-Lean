@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-07T16:27:28.813395+00:00",
+  "generated_at": "2026-07-07T23:15:08.649312+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -88,6 +88,9 @@
     "FSOT.Formal.MathematicsComputationalPriors",
     "FSOT.Formal.MaterialsEngineeringPriors",
     "FSOT.Formal.ComputationalReasoningPriors",
+    "FSOT.Formal.MathGeneratorRulesEvalPriors",
+    "FSOT.Formal.TrinaryOSPortablePriors",
+    "FSOT.Formal.MaterialsSpeciesBridgePriors",
     "FSOT.Formal.Lab",
     "FSOT"
   ],
@@ -1520,6 +1523,11 @@
       "materials_engineering_median_error_under_five_pct",
       "materials_engineering_bundle"
     ],
+    "MaterialsSpeciesBridgePriors": [
+      "materials_species_bridge_observable_count_pos",
+      "materials_species_bridge_median_error_under_five_pct",
+      "materials_species_bridge_bundle"
+    ],
     "MathematicsComputationalPriors": [
       "mathematics_computational_observable_count_pos",
       "mathematics_computational_median_error_under_five_pct",
@@ -1532,6 +1540,11 @@
       "math_generator_max_error_pct_positive",
       "math_generator_rule_observables_ge_corpora",
       "math_generator_priors_bundle"
+    ],
+    "MathGeneratorRulesEvalPriors": [
+      "math_generator_rules_eval_observable_count_pos",
+      "math_generator_rules_eval_median_error_under_five_pct",
+      "math_generator_rules_eval_bundle"
     ],
     "NeuroimmunologyPriors": [
       "neuroimmunology_observable_count_pos",
@@ -1712,6 +1725,12 @@
       "species_property_count_pos",
       "species_catalog_bundle"
     ],
+    "StructureCalibrationPriors": [
+      "structure_calibration_residue_count_pos",
+      "structure_calibration_burial_beats_fifty_pct",
+      "structure_calibration_links_codon_map",
+      "structure_calibration_bundle"
+    ],
     "SyntheticBiologyPriors": [
       "synthetic_biology_observable_count_pos",
       "synthetic_biology_median_error_under_five_pct",
@@ -1793,6 +1812,11 @@
       "trinary_metatron_pathways_pos",
       "trinary_fluid_priors_bundle"
     ],
+    "TrinaryOSPortablePriors": [
+      "trinary_os_portable_observable_count_pos",
+      "trinary_os_portable_median_error_under_five_pct",
+      "trinary_os_portable_bundle"
+    ],
     "TrinaryOSPriors": [
       "trinary_os_word_width_eq_27",
       "trinary_os_hello_smaller_than_spawn",
@@ -1833,7 +1857,7 @@
     "scripts/gen_protein_priors_lean.py": "9A5300DDD7D142A6C9FF596651F40AF2B4079FCD8A43E3DDD33695D43308294F",
     "scripts/gen_protein_formulas_lean.py": "9E8FD84D7A89A6000E0253F9BADCAA9F3F6720E7496DB6B53F90443E3FD0B6A4",
     "scripts/domain_scalar_oracle.py": "80DBF4F2592B73E468038D5E54532FA1FB26947DB5ABF4AF2794EFFD566906DA",
-    "scripts/fsot_verification_runner.py": "AE33931A6D0946096CFB395F70347D321F4F7273FB095F5E9CAAA15F8F295C01",
+    "scripts/fsot_verification_runner.py": "AC1239C60AC49E207F431D11E04FB54914A7D807A852F8CAF9F49DA34B2250ED",
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
@@ -1841,7 +1865,7 @@
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",
     "verify_full": "python scripts/fsot_verification_runner.py",
-    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.KronosPriors FSOT.Formal.KnowledgeBasePriors FSOT.Formal.MathGeneratorPriors FSOT.Formal.TrinaryFluidPriors FSOT.Formal.SoulSiblingPriors FSOT.Formal.LeanProofsBridge FSOT.Formal.FormulaCorpusPriors FSOT.Formal.CellularPriors FSOT.Formal.BlackHoleThesisPriors FSOT.Formal.NeuronHybridPriors FSOT.Formal.NeuronCohortPriors FSOT.Formal.NeuronCohortStrataPriors FSOT.Formal.AetherPrimePriors FSOT.Formal.MagicCirclePriors FSOT.Formal.ExperimentSynthesisPriors FSOT.Formal.DomainCoveragePriors FSOT.Formal.DomainPrecisionPriors FSOT.Formal.IntelligenceCompressionPriors FSOT.Formal.PlasmaPhysicsPriors FSOT.Formal.ImmunologyPriors FSOT.Formal.ClimateSciencePriors FSOT.Formal.BiologyStrictEmpiricalPriors FSOT.Formal.NeuronCohortTrainHoldoutPriors FSOT.Formal.ThesisSimulationPriors FSOT.Formal.EmergentDomainPriors FSOT.Formal.CosmologyExtendedPriors FSOT.Formal.ParticlePhysicsPriors FSOT.Formal.CosmologyHigherWavesPriors FSOT.Formal.CosmologyWave4Priors FSOT.Formal.CosmologyWave5Priors FSOT.Formal.CosmologyWave6Priors FSOT.Formal.CosmologyWave7Priors FSOT.Formal.CosmologyWave8Priors FSOT.Formal.CosmologyWave9Priors FSOT.Formal.CosmologyWave10Priors FSOT.Formal.HiggsBranchingPriors FSOT.Formal.SpaceWeatherPriors FSOT.Formal.HydrologyPriors FSOT.Formal.PharmacologyPriors FSOT.Formal.CryospherePriors FSOT.Formal.SeismologyPriors FSOT.Formal.TectonicsPriors FSOT.Formal.GeomagnetismPriors FSOT.Formal.PlanetaryStructurePriors FSOT.Formal.OrbitalMechanicsPriors FSOT.Formal.SmallBodyOrbitsPriors FSOT.Formal.MagnetospherePriors FSOT.Formal.GraceCryospherePriors FSOT.Formal.SeismologyDeepPriors FSOT.Formal.PlanetaryAtmospheresPriors FSOT.Formal.MagnetosphereExtendedPriors FSOT.Formal.GeochemistryPriors FSOT.Formal.OncologyPriors FSOT.Formal.NeuroimmunologyPriors FSOT.Formal.SyntheticBiologyPriors FSOT.Formal.QuantumMaterialsPriors FSOT.Formal.NeuronMultiHeroPriors FSOT.Formal.LinguisticsFormalPriors FSOT.Formal.MathematicsComputationalPriors FSOT.Formal.MaterialsEngineeringPriors FSOT.Formal.ComputationalReasoningPriors FSOT.Formal.Lab FSOT",
+    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.KronosPriors FSOT.Formal.KnowledgeBasePriors FSOT.Formal.MathGeneratorPriors FSOT.Formal.TrinaryFluidPriors FSOT.Formal.SoulSiblingPriors FSOT.Formal.LeanProofsBridge FSOT.Formal.FormulaCorpusPriors FSOT.Formal.CellularPriors FSOT.Formal.BlackHoleThesisPriors FSOT.Formal.NeuronHybridPriors FSOT.Formal.NeuronCohortPriors FSOT.Formal.NeuronCohortStrataPriors FSOT.Formal.AetherPrimePriors FSOT.Formal.MagicCirclePriors FSOT.Formal.ExperimentSynthesisPriors FSOT.Formal.DomainCoveragePriors FSOT.Formal.DomainPrecisionPriors FSOT.Formal.IntelligenceCompressionPriors FSOT.Formal.PlasmaPhysicsPriors FSOT.Formal.ImmunologyPriors FSOT.Formal.ClimateSciencePriors FSOT.Formal.BiologyStrictEmpiricalPriors FSOT.Formal.NeuronCohortTrainHoldoutPriors FSOT.Formal.ThesisSimulationPriors FSOT.Formal.EmergentDomainPriors FSOT.Formal.CosmologyExtendedPriors FSOT.Formal.ParticlePhysicsPriors FSOT.Formal.CosmologyHigherWavesPriors FSOT.Formal.CosmologyWave4Priors FSOT.Formal.CosmologyWave5Priors FSOT.Formal.CosmologyWave6Priors FSOT.Formal.CosmologyWave7Priors FSOT.Formal.CosmologyWave8Priors FSOT.Formal.CosmologyWave9Priors FSOT.Formal.CosmologyWave10Priors FSOT.Formal.HiggsBranchingPriors FSOT.Formal.SpaceWeatherPriors FSOT.Formal.HydrologyPriors FSOT.Formal.PharmacologyPriors FSOT.Formal.CryospherePriors FSOT.Formal.SeismologyPriors FSOT.Formal.TectonicsPriors FSOT.Formal.GeomagnetismPriors FSOT.Formal.PlanetaryStructurePriors FSOT.Formal.OrbitalMechanicsPriors FSOT.Formal.SmallBodyOrbitsPriors FSOT.Formal.MagnetospherePriors FSOT.Formal.GraceCryospherePriors FSOT.Formal.SeismologyDeepPriors FSOT.Formal.PlanetaryAtmospheresPriors FSOT.Formal.MagnetosphereExtendedPriors FSOT.Formal.GeochemistryPriors FSOT.Formal.OncologyPriors FSOT.Formal.NeuroimmunologyPriors FSOT.Formal.SyntheticBiologyPriors FSOT.Formal.QuantumMaterialsPriors FSOT.Formal.NeuronMultiHeroPriors FSOT.Formal.LinguisticsFormalPriors FSOT.Formal.MathematicsComputationalPriors FSOT.Formal.MaterialsEngineeringPriors FSOT.Formal.ComputationalReasoningPriors FSOT.Formal.MathGeneratorRulesEvalPriors FSOT.Formal.TrinaryOSPortablePriors FSOT.Formal.MaterialsSpeciesBridgePriors FSOT.Formal.Lab FSOT",
     "export": "python scripts/export_certificate.py",
     "contributing": "CONTRIBUTING.md",
     "external_data": "data/external_data_manifest.yaml"

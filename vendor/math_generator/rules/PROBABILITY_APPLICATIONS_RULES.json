@@ -1,0 +1,777 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "PROBABILITY_APPLICATIONS_RULEBOOK.md",
+  "domain_symbols": {
+    "probabilistic_model": "random variables, processes, and statistical models",
+    "uncertainty_structure": "uncertainty sets, metrics, and rate descriptions",
+    "symbolic": "symbolic probability-applications expressions"
+  },
+  "rules": [
+    {
+      "id": "PB-001",
+      "name": "Ito integral isometry seed",
+      "category": "stochastic calculus",
+      "input_form": "square-integrable adapted Ito integrand",
+      "output_form": "L2 isometry relation",
+      "domains": [
+        "probabilistic_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard Ito integral framework and adaptedness hypotheses hold"
+      ],
+      "operation": "Relate the second moment of an Ito integral to a deterministic integral of the integrand square.",
+      "properties": [
+        "isometry_seed"
+      ],
+      "examples": [
+        "Ito isometry converts stochastic integral size control into deterministic integral control"
+      ],
+      "counterexamples": [
+        "Using nonadapted integrands in the standard Ito-isometry statement is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "SP-061"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SP-061"
+        }
+      ]
+    },
+    {
+      "id": "PB-010",
+      "name": "Ito formula seed",
+      "category": "stochastic calculus",
+      "input_form": "smooth function of an Ito process",
+      "output_form": "Ito expansion with correction terms",
+      "domains": [
+        "probabilistic_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The process and smoothness assumptions satisfy the standard Ito-formula setting"
+      ],
+      "operation": "Apply the stochastic chain rule with quadratic-variation correction.",
+      "properties": [
+        "chain_rule_seed"
+      ],
+      "examples": [
+        "Stochastic chain rules require second-order correction terms absent from ordinary calculus"
+      ],
+      "counterexamples": [
+        "Applying the ordinary deterministic chain rule directly to Ito processes is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "PB-001"
+        }
+      ]
+    },
+    {
+      "id": "PB-020",
+      "name": "Fisher-Rao metric seed",
+      "category": "information geometry",
+      "input_form": "regular differentiable statistical model family",
+      "output_form": "local Fisher-information metric",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A regular differentiable parametric model is fixed"
+      ],
+      "operation": "Use Fisher information as a local metric tensor on a statistical model family.",
+      "properties": [
+        "geometric_seed"
+      ],
+      "examples": [
+        "Nearby parameter values are compared by local statistical distinguishability encoded through the Fisher metric"
+      ],
+      "counterexamples": [
+        "Treating arbitrary nondifferentiable model families as automatically Fisher-Rao metric spaces is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "IT-100"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "IT-100"
+        }
+      ]
+    },
+    {
+      "id": "PB-030",
+      "name": "Uncertainty set seed",
+      "category": "uncertainty modeling",
+      "input_form": "unknown parameter or disturbance class",
+      "output_form": "structured admissible uncertainty description",
+      "domains": [
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A modeling framework for admissible uncertainty is fixed"
+      ],
+      "operation": "Represent uncertainty by sets, distributions, or regions rather than one fixed exact value.",
+      "properties": [
+        "modeling_seed"
+      ],
+      "examples": [
+        "Robust optimization and interval uncertainty use structured admissible sets rather than single exact inputs"
+      ],
+      "counterexamples": [
+        "Replacing structured uncertainty by one arbitrary guessed parameter value loses the uncertainty model"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "PB-040",
+      "name": "Large-deviation rate seed",
+      "category": "uncertainty asymptotics",
+      "input_form": "family of rare-event probabilities",
+      "output_form": "rate-function asymptotic description",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A standard large-deviation scaling regime is fixed"
+      ],
+      "operation": "Describe rare-event decay by an exponential rate function.",
+      "properties": [
+        "asymptotic_seed"
+      ],
+      "examples": [
+        "Exponentially unlikely events can still be studied structurally through rate-function geometry"
+      ],
+      "counterexamples": [
+        "Treating every small probability as if it had the same decay mechanism is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "PB-050",
+      "name": "Stochastic differential equation seed",
+      "category": "stochastic calculus",
+      "input_form": "drift-diffusion equation with stochastic driver",
+      "output_form": "random state-evolution law",
+      "domains": [
+        "probabilistic_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A standard Ito drift-diffusion setting is fixed"
+      ],
+      "operation": "Model random evolution through stochastic differential equations.",
+      "properties": [
+        "evolution_seed"
+      ],
+      "examples": [
+        "Random forcing is modeled structurally through differential drift-diffusion form rather than by adding ad hoc noise after a deterministic solve"
+      ],
+      "counterexamples": [
+        "An arbitrary noisy update rule is not automatically an Ito SDE"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "PB-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "PB-010"
+        }
+      ]
+    },
+    {
+      "id": "PB-060",
+      "name": "Martingale representation seed",
+      "category": "stochastic calculus",
+      "input_form": "adapted martingale in a suitable filtration",
+      "output_form": "stochastic integral representation",
+      "domains": [
+        "probabilistic_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A filtration and driving-noise model satisfying a representation theorem are fixed"
+      ],
+      "operation": "Represent suitable martingales as stochastic integrals against the driving noise.",
+      "properties": [
+        "representation_seed"
+      ],
+      "examples": [
+        "Stochastic information flow can be encoded through one canonical noise source plus adapted integrands"
+      ],
+      "counterexamples": [
+        "Representing arbitrary nonadapted processes as martingale integrals is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "PB-001",
+        "PB-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "PB-001"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "PB-050"
+        }
+      ]
+    },
+    {
+      "id": "PB-070",
+      "name": "Divergence geometry seed",
+      "category": "information geometry",
+      "input_form": "statistical model with admissible divergence functional",
+      "output_form": "local geometric structure from divergence data",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A smooth statistical model and admissible divergence are fixed"
+      ],
+      "operation": "Recover local information geometry from divergence structure.",
+      "properties": [
+        "divergence_seed"
+      ],
+      "examples": [
+        "Relative-entropy-like quantities induce local geometric structure beyond raw parameter distance"
+      ],
+      "counterexamples": [
+        "Treating arbitrary dissimilarity scores as information-geometric divergences without structural conditions is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "PB-020",
+        "IT-080"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "PB-020"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "IT-080"
+        }
+      ]
+    },
+    {
+      "id": "PB-080",
+      "name": "Distributionally robust uncertainty seed",
+      "category": "uncertainty modeling",
+      "input_form": "ambiguity set of admissible probability laws",
+      "output_form": "distributionally robust decision model",
+      "domains": [
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An ambiguity-set construction and decision objective are fixed"
+      ],
+      "operation": "Model uncertainty through admissible families of distributions rather than one single law.",
+      "properties": [
+        "robust_seed"
+      ],
+      "examples": [
+        "Optimization or inference can remain valid across whole neighborhoods of distributions rather than one estimated law only"
+      ],
+      "counterexamples": [
+        "Replacing ambiguity classes by one guessed nominal distribution loses distributional robustness"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "PB-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "PB-030"
+        }
+      ]
+    },
+    {
+      "id": "PB-090",
+      "name": "Concentration inequality seed",
+      "category": "uncertainty modeling",
+      "input_form": "random quantity with admissible tail or dependence assumptions",
+      "output_form": "deviation-probability bound",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Independence, boundedness, tail, or martingale assumptions are fixed"
+      ],
+      "operation": "Bound deviation probabilities without computing the full distribution exactly.",
+      "properties": [
+        "bound_seed"
+      ],
+      "examples": [
+        "Rare large fluctuations can be controlled without computing the full distribution exactly"
+      ],
+      "counterexamples": [
+        "Applying concentration results with no independence, boundedness, or tail hypotheses is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "PB-100",
+      "name": "Rare-event sampling seed",
+      "category": "uncertainty asymptotics",
+      "input_form": "rare-event probability estimator with changed sampling law",
+      "output_form": "importance-weighted rare-event estimate",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A valid importance-sampling change of measure and weight correction are fixed"
+      ],
+      "operation": "Estimate tiny probabilities efficiently by weighted rare-event sampling.",
+      "properties": [
+        "simulation_seed"
+      ],
+      "examples": [
+        "Sampling from a tilted distribution can estimate tiny probabilities far more effectively than naive Monte Carlo"
+      ],
+      "counterexamples": [
+        "Changing the sampling law without correcting weights is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "PB-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "PB-040"
+        }
+      ]
+    },
+    {
+      "id": "PB-101",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-102",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-103",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-104",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-105",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-106",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-107",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-108",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-109",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-110",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-111",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-112",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-113",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "PB-114",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "probabilistic_model",
+        "uncertainty_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

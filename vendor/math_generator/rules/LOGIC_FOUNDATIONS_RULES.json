@@ -1,0 +1,705 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "LOGIC_FOUNDATIONS_RULEBOOK.md",
+  "domain_symbols": {
+    "logic": "classical logical statements",
+    "set_theory": "basic set-theoretic foundation",
+    "symbolic": "symbolic formal statements"
+  },
+  "rules": [
+    {
+      "id": "LF-001",
+      "name": "Modus ponens",
+      "category": "propositional inference",
+      "input_form": "P and P implies Q",
+      "output_form": "Q",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Both premises are established in the same proof context"
+      ],
+      "operation": "Infer the consequent from an established antecedent and implication.",
+      "properties": [
+        "inference_rule"
+      ],
+      "examples": [
+        "If x is even implies x^2 is even and x is even, then infer x^2 is even"
+      ],
+      "counterexamples": [
+        "From Q and P implies Q, inferring P is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-002",
+      "name": "Modus tollens",
+      "category": "propositional inference",
+      "input_form": "P implies Q and not Q",
+      "output_form": "not P",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Both premises are established in the same proof context"
+      ],
+      "operation": "Reject an antecedent whose implication has a false consequent.",
+      "properties": [
+        "inference_rule"
+      ],
+      "examples": [
+        "If P implies Q but Q is false, then P cannot hold"
+      ],
+      "counterexamples": [
+        "From not P and P implies Q, inferring not Q is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-003",
+      "name": "Proof by cases pattern",
+      "category": "proof pattern",
+      "input_form": "P or Q, plus R from P and R from Q",
+      "output_form": "R",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "All case conclusions derive the same target statement"
+      ],
+      "operation": "Infer a common result after exhausting the declared cases.",
+      "properties": [
+        "inference_rule"
+      ],
+      "examples": [
+        "Parity arguments often split into even and odd cases and conclude the same target statement"
+      ],
+      "counterexamples": [
+        "Concluding R when only one case has been handled is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DM-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DM-001"
+        }
+      ]
+    },
+    {
+      "id": "LF-010",
+      "name": "Universal instantiation",
+      "category": "quantifier inference",
+      "input_form": "forall x, P(x)",
+      "output_form": "P(a)",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "a is a valid term in the declared domain"
+      ],
+      "operation": "Instantiate a universally quantified formula at a valid term.",
+      "properties": [
+        "inference_rule"
+      ],
+      "examples": [
+        "From forall x in R, x^2 >= 0, infer a^2 >= 0 for a in R"
+      ],
+      "counterexamples": [
+        "Instantiating with a term outside the declared domain is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-011",
+      "name": "Existential witness introduction",
+      "category": "quantifier inference",
+      "input_form": "P(a)",
+      "output_form": "exists x such that P(x)",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "a is a valid witness term"
+      ],
+      "operation": "Introduce an existential statement from a witnessed instance.",
+      "properties": [
+        "inference_rule"
+      ],
+      "examples": [
+        "From 2 is prime, infer there exists a prime number"
+      ],
+      "counterexamples": [
+        "Asserting a universal statement from one witness is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-012",
+      "name": "Equality substitution rule",
+      "category": "equality reasoning",
+      "input_form": "a = b and a well-formed context containing a",
+      "output_form": "same context with a replaced by b",
+      "domains": [
+        "logic",
+        "symbolic",
+        "set_theory"
+      ],
+      "preconditions": [
+        "Replacement preserves well-formedness"
+      ],
+      "operation": "Substitute equals for equals in a well-formed logical or mathematical context.",
+      "properties": [
+        "substitution_rule"
+      ],
+      "examples": [
+        "From a = b and f(a) = 0, infer f(b) = 0"
+      ],
+      "counterexamples": [
+        "Substituting into only part of a structured occurrence inconsistently is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-020",
+      "name": "Set extensionality",
+      "category": "set-theoretic foundations",
+      "input_form": "forall x, x in A iff x in B",
+      "output_form": "A = B",
+      "domains": [
+        "set_theory",
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Membership equivalence is established for arbitrary x"
+      ],
+      "operation": "Conclude set equality from equality of membership conditions.",
+      "properties": [
+        "foundational_axiom_pattern"
+      ],
+      "examples": [
+        "If every x belongs to A exactly when x belongs to B, then A = B"
+      ],
+      "counterexamples": [
+        "Sharing some elements is insufficient for set equality"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-021",
+      "name": "Contradiction rule",
+      "category": "proof pattern",
+      "input_form": "assumption leading to contradiction",
+      "output_form": "rejection of the assumption",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An explicit contradiction is derived in classical logic"
+      ],
+      "operation": "Discharge an assumption once it leads to contradiction.",
+      "properties": [
+        "inference_rule"
+      ],
+      "examples": [
+        "Indirect proofs discharge a negated goal after deriving contradiction"
+      ],
+      "counterexamples": [
+        "Declaring contradiction without an explicit incompatible pair of statements is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "EP-031"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "EP-031"
+        }
+      ]
+    },
+    {
+      "id": "LF-022",
+      "name": "Induction schema",
+      "category": "foundational schema",
+      "input_form": "base case and successor step",
+      "output_form": "statement for all naturals in range",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The base case and successor implication are both valid"
+      ],
+      "operation": "Extend a proposition across the natural numbers by induction.",
+      "properties": [
+        "proof_schema"
+      ],
+      "examples": [
+        "Induction proves sum identities over N"
+      ],
+      "counterexamples": [
+        "Omitting the base case or the successor implication invalidates the schema"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DM-003"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "DM-003"
+        }
+      ]
+    },
+    {
+      "id": "LF-030",
+      "name": "Negated universal equivalence",
+      "category": "quantifier equivalences",
+      "input_form": "not forall x, P(x)",
+      "output_form": "exists x such that not P(x)",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Quantifiers range over the same declared domain"
+      ],
+      "operation": "Push negation across a universal quantifier by converting it to an existential quantifier.",
+      "properties": [
+        "logical_equivalence"
+      ],
+      "examples": [
+        "If not every real number is positive, then some real number is not positive"
+      ],
+      "counterexamples": [
+        "Replacing not forall x, P(x) by forall x, not P(x) is invalid in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-031",
+      "name": "Negated existential equivalence",
+      "category": "quantifier equivalences",
+      "input_form": "not exists x such that P(x)",
+      "output_form": "forall x, not P(x)",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Quantifiers range over the same declared domain"
+      ],
+      "operation": "Push negation across an existential quantifier by converting it to a universal quantifier.",
+      "properties": [
+        "logical_equivalence"
+      ],
+      "examples": [
+        "If no integer in a set is odd, then every integer in the set is not odd"
+      ],
+      "counterexamples": [
+        "Replacing not exists x, P(x) by exists x, not P(x) is invalid in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-032",
+      "name": "Alpha-renaming of bound variables",
+      "category": "quantifier equivalences",
+      "input_form": "formula with a bound variable",
+      "output_form": "equivalent formula with a fresh bound variable name",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Variable capture is avoided during renaming"
+      ],
+      "operation": "Rename a bound variable without changing the semantic content of the formula.",
+      "properties": [
+        "logical_equivalence"
+      ],
+      "examples": [
+        "forall x, P(x) is equivalent to forall y, P(y) when y is fresh in the formula"
+      ],
+      "counterexamples": [
+        "Renaming a bound variable to one already free in the scope can change meaning and is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-040",
+      "name": "Implication elimination rewrite",
+      "category": "normal forms",
+      "input_form": "P implies Q",
+      "output_form": "not P or Q",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Rewrite implication into disjunction to normalize formulas.",
+      "properties": [
+        "normal_form_rewrite"
+      ],
+      "examples": [
+        "Implication elimination reduces formulas toward disjunctive and conjunctive normal-form pipelines"
+      ],
+      "counterexamples": [
+        "Rewriting P implies Q as P or Q is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-041",
+      "name": "De Morgan rewrite for conjunction and disjunction",
+      "category": "normal forms",
+      "input_form": "negated conjunction or disjunction",
+      "output_form": "equivalent formula with negation pushed inward",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Apply De Morgan's laws to move negation inward through conjunction or disjunction.",
+      "properties": [
+        "normal_form_rewrite"
+      ],
+      "examples": [
+        "Pushing negations inward is a standard normalization step"
+      ],
+      "counterexamples": [
+        "Dropping negations on both operands during rewriting is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-042",
+      "name": "CNF distribution seed rule",
+      "category": "normal forms",
+      "input_form": "P or (Q and R)",
+      "output_form": "(P or Q) and (P or R)",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Distribute disjunction over conjunction as a seed step toward conjunctive normal form.",
+      "properties": [
+        "normal_form_rewrite"
+      ],
+      "examples": [
+        "Distributing disjunction over conjunction moves a formula toward conjunctive normal form"
+      ],
+      "counterexamples": [
+        "Distributing in the wrong direction can change the formula and is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "LF-041"
+        }
+      ]
+    },
+    {
+      "id": "LF-050",
+      "name": "Deduction theorem pattern",
+      "category": "proof pattern",
+      "input_form": "derivation of Q from Gamma together with P",
+      "output_form": "derivation of P implies Q from Gamma",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The active proof calculus satisfies the standard deduction-theorem hypotheses"
+      ],
+      "operation": "Convert a derivation under a temporary assumption into a conditional conclusion.",
+      "properties": [
+        "proof_schema"
+      ],
+      "examples": [
+        "Proving a conditional may proceed by temporarily assuming the antecedent and deriving the consequent"
+      ],
+      "counterexamples": [
+        "Using the deduction theorem in a proof system where its side conditions fail is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "LF-001"
+        }
+      ]
+    },
+    {
+      "id": "LF-060",
+      "name": "Soundness seed",
+      "category": "metalogic",
+      "input_form": "provable statement in the active proof system",
+      "output_form": "semantic validity in the intended models",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A semantics has been specified for the proof system"
+      ],
+      "operation": "Connect derivability to semantic validity through a soundness principle.",
+      "properties": [
+        "metatheorem_seed"
+      ],
+      "examples": [
+        "Soundness prevents the derivation system from proving false statements in all models"
+      ],
+      "counterexamples": [
+        "Claiming derivability of semantically invalid formulas under a sound system is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-061",
+      "name": "Completeness seed",
+      "category": "metalogic",
+      "input_form": "semantically valid statement",
+      "output_form": "derivable statement in a complete proof system",
+      "domains": [
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A complete proof system is under discussion"
+      ],
+      "operation": "Connect semantic validity back to derivability through a completeness principle.",
+      "properties": [
+        "metatheorem_seed"
+      ],
+      "examples": [
+        "Completeness connects model-theoretic validity back to derivability"
+      ],
+      "counterexamples": [
+        "Treating non-derivability in an incomplete fragment as disproof of semantic validity is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "LF-070",
+      "name": "Set-builder membership expansion",
+      "category": "set-theoretic foundations",
+      "input_form": "x in {y in A such that P(y)}",
+      "output_form": "x in A and P(x)",
+      "domains": [
+        "set_theory",
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The ambient set A and predicate P are well-formed"
+      ],
+      "operation": "Expand set-builder membership into ambient-set membership and predicate satisfaction.",
+      "properties": [
+        "definition_expansion"
+      ],
+      "examples": [
+        "Membership in a filtered set splits into ambient membership plus predicate satisfaction"
+      ],
+      "counterexamples": [
+        "Treating predicate satisfaction alone as enough for membership without ambient-set membership is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LF-020"
+        }
+      ]
+    },
+    {
+      "id": "LF-071",
+      "name": "Subset criterion",
+      "category": "set-theoretic foundations",
+      "input_form": "A subseteq B",
+      "output_form": "forall x, x in A implies x in B",
+      "domains": [
+        "set_theory",
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Reduce a subset claim to a universal membership implication.",
+      "properties": [
+        "logical_equivalence"
+      ],
+      "examples": [
+        "Proving subset relations reduces to a universally quantified membership implication"
+      ],
+      "counterexamples": [
+        "Checking only some sample elements does not prove a subset relation"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LF-020"
+        }
+      ]
+    },
+    {
+      "id": "LF-072",
+      "name": "Union and intersection membership laws",
+      "category": "set-theoretic foundations",
+      "input_form": "x in A union B or x in A intersection B",
+      "output_form": "membership rewritten as or/and statements",
+      "domains": [
+        "set_theory",
+        "logic",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Rewrite union and intersection membership into propositional membership formulas.",
+      "properties": [
+        "definition_expansion"
+      ],
+      "examples": [
+        "Elementwise set identities reduce to propositional membership formulas"
+      ],
+      "counterexamples": [
+        "Using and in place of or for union membership is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LF-020"
+        }
+      ]
+    },
+    {
+      "id": "LF-073",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "logic",
+        "set_theory",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "LF-074",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "logic",
+        "set_theory",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "LF-075",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "logic",
+        "set_theory",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "LF-076",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "logic",
+        "set_theory",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

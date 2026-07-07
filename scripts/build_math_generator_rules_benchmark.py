@@ -18,6 +18,11 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "data" / "math_generator_rules_manifest.yaml"
 OUTPUT = ROOT / "data" / "math_generator_rules_benchmark.json"
 
+import sys
+
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import REPO_ROOT, math_generator_rules_root, rel_repo_path  # noqa: E402
+
 
 def _corpus_name(path: Path) -> str:
     stem = path.stem
@@ -65,7 +70,10 @@ def build_benchmark(manifest_path: Path = MANIFEST_PATH) -> dict:
     if yaml is None:
         raise RuntimeError("PyYAML required")
     spec = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
-    mg_root = Path(spec["source"]["math_generator_root"])
+    raw_root = spec["source"]["math_generator_root"]
+    mg_root = math_generator_rules_root() if raw_root.startswith("vendor/") else Path(raw_root)
+    if not mg_root.is_absolute():
+        mg_root = REPO_ROOT / mg_root
     if not mg_root.exists():
         raise FileNotFoundError(f"Math generator root missing: {mg_root}")
 
@@ -76,7 +84,7 @@ def build_benchmark(manifest_path: Path = MANIFEST_PATH) -> dict:
     return {
         "benchmark_version": "1.0",
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "source_root": str(mg_root),
+        "source_root": rel_repo_path(mg_root),
         "rule_corpus_count": len(corpora),
         "total_rule_count": total_rules,
         "observable_count": total_rules,

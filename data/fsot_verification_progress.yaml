@@ -1,16 +1,16 @@
-generated_at: '2026-07-07T16:27:27.507834+00:00'
+generated_at: '2026-07-07T23:15:09.323907+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 85
+  lean_formal_modules: 89
   proved_claims: 65
   sorry_count_formal: 0
-  lean_build_ok: false
-  tiers_complete: 26
-  tiers_total: 27
-  percent_complete: 96.3
-current_position: "Tier 29 Practical application \u2014 linguistics, math, materials\
-  \ engineering, reasoning"
+  lean_build_ok: true
+  tiers_complete: 27
+  tiers_total: 28
+  percent_complete: 96.4
+current_position: "Tier 30 Portable bridges \u2014 math rules eval, trinary OS, materials\u2194\
+  species"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -66,7 +66,9 @@ tiers:
   - MagnetosphereExtendedPriors
   - MagnetospherePriors
   - MaterialsEngineeringPriors
+  - MaterialsSpeciesBridgePriors
   - MathGeneratorPriors
+  - MathGeneratorRulesEvalPriors
   - MathematicsComputationalPriors
   - NeuroimmunologyPriors
   - NeuronCohortPriors
@@ -90,10 +92,12 @@ tiers:
   - SoulSiblingPriors
   - SpaceWeatherPriors
   - SpeciesPriors
+  - StructureCalibrationPriors
   - SyntheticBiologyPriors
   - TectonicsPriors
   - ThesisSimulationPriors
   - TrinaryFluidPriors
+  - TrinaryOSPortablePriors
   - TrinaryOSPriors
   - UnifiedDBPriors
   - VibRegisterPriors
@@ -502,11 +506,31 @@ tiers:
   - FSOT.Formal.MathematicsComputationalPriors
   - FSOT.Formal.MaterialsEngineeringPriors
   - FSOT.Formal.ComputationalReasoningPriors
+- tier: 30
+  name: "Portable bridges \u2014 math rules eval, trinary OS, materials\u2194species"
+  status: complete
+  metrics:
+    math_generator_rules_eval_records: 1520
+    math_generator_rules_eval_median_error_pct: 0.0
+    math_generator_rules_schema_fail_count: 0
+    trinary_os_portable_records: 8
+    trinary_os_portable_oracle_count: 3
+    materials_species_bridge_records: 45
+    materials_species_bridge_metals: 10
+    materials_species_bridge_median_error_pct: 0.0
+  artifacts:
+  - data/math_generator_rules_eval_manifest.yaml
+  - data/trinary_os_portable_manifest.yaml
+  - data/materials_species_bridge_manifest.yaml
+  - vendor/trinary_os/target
+  - vendor/species/fsot_species_catalog.json
+  - FSOT.Formal.MathGeneratorRulesEvalPriors
+  - FSOT.Formal.TrinaryOSPortablePriors
+  - FSOT.Formal.MaterialsSpeciesBridgePriors
 next_steps:
-- Math-generator per-rule FSOT numeric eval across 1520 formal rules
-- Trinary-OS oracle bundle in vendor/ for portable coding rebuild
-- Materials engineering species-catalog machine bridge
 - iGEM parts-registry strict-empirical synthetic biology bridge
+- Math-generator benchmark_formula live eval (3 overlay rules)
+- Trinary-OS full ISA rebuild from vendor bundle
 key_metrics:
   strict_empirical_records: 7941
   smiles_mapped: 1470

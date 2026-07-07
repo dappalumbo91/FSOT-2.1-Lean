@@ -1,0 +1,778 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "COMPUTATIONAL_APPLIED_RULEBOOK.md",
+  "domain_symbols": {
+    "computational_model": "algorithms, symbolic rewrites, and computational systems",
+    "decision_model": "optimization, cryptographic, and game-theoretic structures",
+    "symbolic": "symbolic computational-applied expressions"
+  },
+  "rules": [
+    {
+      "id": "CP-001",
+      "name": "Consistency-stability-convergence seed",
+      "category": "scientific computing",
+      "input_form": "numerical scheme and target problem",
+      "output_form": "structural route to convergence analysis",
+      "domains": [
+        "computational_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A standard discretization setting is fixed"
+      ],
+      "operation": "Use consistency and stability as the core structural ingredients of convergence analysis.",
+      "properties": [
+        "analysis_seed"
+      ],
+      "examples": [
+        "Reliable scientific computing depends on both correct limiting equations and controlled error propagation"
+      ],
+      "counterexamples": [
+        "Consistency alone does not guarantee convergence in general"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "NA-060"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "NA-060"
+        }
+      ]
+    },
+    {
+      "id": "CP-010",
+      "name": "Symbolic rewrite preservation seed",
+      "category": "symbolic computation",
+      "input_form": "candidate algebraic rewrite",
+      "output_form": "domain-valid symbolic transformation",
+      "domains": [
+        "computational_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Active domain assumptions are fixed"
+      ],
+      "operation": "Accept symbolic rewrites only when they preserve valid mathematical structure under the domain conditions.",
+      "properties": [
+        "validity_seed"
+      ],
+      "examples": [
+        "Symbolic computation requires domain-aware rewrites rather than blind string replacement"
+      ],
+      "counterexamples": [
+        "Canceling factors across zero divisors or undefined values is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CP-020",
+      "name": "Grobner basis seed",
+      "category": "computer algebra",
+      "input_form": "polynomial ideal with fixed monomial order",
+      "output_form": "order-adapted canonical generating basis",
+      "domains": [
+        "computational_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A polynomial ring and monomial ordering are fixed"
+      ],
+      "operation": "Replace an ideal generating set by a Gr\u00f6bner basis adapted to canonical reduction.",
+      "properties": [
+        "normal_form_seed"
+      ],
+      "examples": [
+        "Computer algebra uses Gr\u00f6bner bases to normalize polynomial ideal computations"
+      ],
+      "counterexamples": [
+        "Changing monomial order can change the Gr\u00f6bner basis, so treating it as order-independent is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CP-030",
+      "name": "Public-key trapdoor seed",
+      "category": "cryptography",
+      "input_form": "public forward map with private trapdoor",
+      "output_form": "computational asymmetry structure",
+      "domains": [
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A standard computational-security setting is fixed"
+      ],
+      "operation": "Model public-key cryptography through easy forward computation and hard inverse recovery without trapdoor data.",
+      "properties": [
+        "security_seed"
+      ],
+      "examples": [
+        "Encryption can be public while efficient decryption remains private through trapdoor structure"
+      ],
+      "counterexamples": [
+        "Assuming information-theoretic secrecy from any computationally hard problem is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CP-040",
+      "name": "System interconnection seed",
+      "category": "systems theory",
+      "input_form": "subsystems with compatible coupling equations",
+      "output_form": "interconnected system model",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "State, input, output, and coupling conventions are fixed"
+      ],
+      "operation": "Compose subsystems through compatible coupling to form a larger system model.",
+      "properties": [
+        "composition_seed"
+      ],
+      "examples": [
+        "Overall system behavior depends on subsystem interaction structure, not only isolated component equations"
+      ],
+      "counterexamples": [
+        "Stacking unrelated equations without compatibility data is insufficient for a true interconnection model"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CR-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CR-001"
+        }
+      ]
+    },
+    {
+      "id": "CP-050",
+      "name": "Linear programming feasible-region seed",
+      "category": "operations research",
+      "input_form": "linear objective with linear constraints",
+      "output_form": "polyhedral optimization problem",
+      "domains": [
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The decision variables, objective, and linear constraints are fixed"
+      ],
+      "operation": "Model linear programming as optimization over a polyhedral feasible region.",
+      "properties": [
+        "optimization_seed"
+      ],
+      "examples": [
+        "Operations research problems often reduce resource-allocation decisions to polyhedral optimization"
+      ],
+      "counterexamples": [
+        "Introducing nonlinear constraints moves the problem outside standard linear programming"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "OP-060"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "OP-060"
+        }
+      ]
+    },
+    {
+      "id": "CP-060",
+      "name": "Nash equilibrium seed",
+      "category": "game theory",
+      "input_form": "normal-form game and strategy profile",
+      "output_form": "equilibrium status under unilateral deviations",
+      "domains": [
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Players, strategies, and payoff functions are fixed"
+      ],
+      "operation": "Recognize Nash equilibrium through mutual best-response stability under unilateral deviation.",
+      "properties": [
+        "equilibrium_seed"
+      ],
+      "examples": [
+        "Equilibrium captures strategic mutual best response rather than global welfare optimality"
+      ],
+      "counterexamples": [
+        "A socially optimal outcome need not be a Nash equilibrium"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CP-070",
+      "name": "Adaptive refinement seed",
+      "category": "scientific computing",
+      "input_form": "numerical discretization with local error indicator or structural trigger",
+      "output_form": "adaptively refined computational scheme",
+      "domains": [
+        "computational_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A refinement criterion and discretization framework are fixed"
+      ],
+      "operation": "Concentrate computational resolution where estimated error or structure demands it.",
+      "properties": [
+        "adaptivity_seed"
+      ],
+      "examples": [
+        "Mesh or timestep resources can be concentrated near steep gradients, singular behavior, or sensitive regions"
+      ],
+      "counterexamples": [
+        "Refining everywhere uniformly is not automatically adaptive computation"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CP-001",
+        "NA-060"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CP-001"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "NA-060"
+        }
+      ]
+    },
+    {
+      "id": "CP-080",
+      "name": "Elimination order seed",
+      "category": "computer algebra and symbolic computation",
+      "input_form": "polynomial system with target variables to eliminate",
+      "output_form": "elimination-friendly term-order structure",
+      "domains": [
+        "computational_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A monomial order and target elimination variables are fixed"
+      ],
+      "operation": "Choose term orders that expose elimination structure in symbolic computations.",
+      "properties": [
+        "elimination_seed"
+      ],
+      "examples": [
+        "Gr\u00f6bner-basis calculations can isolate target variables by choosing an elimination-friendly monomial order"
+      ],
+      "counterexamples": [
+        "Arbitrary term ordering does not automatically eliminate the variables of interest"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CP-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CP-020"
+        }
+      ]
+    },
+    {
+      "id": "CP-090",
+      "name": "Security reduction seed",
+      "category": "cryptography",
+      "input_form": "cryptographic scheme with attack model and hard problem assumption",
+      "output_form": "security claim justified by reduction",
+      "domains": [
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A formal adversary model and hard problem are fixed"
+      ],
+      "operation": "Transfer security claims by reducing attacks on the scheme to solving an assumed hard problem.",
+      "properties": [
+        "proof_seed"
+      ],
+      "examples": [
+        "Security claims are transferred by explicit adversary transformations rather than by intuition alone"
+      ],
+      "counterexamples": [
+        "Asserting hardness with no reduction or proof scaffold is invalid as a formal security argument"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CP-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CP-030"
+        }
+      ]
+    },
+    {
+      "id": "CP-100",
+      "name": "State-space realization seed",
+      "category": "systems theory",
+      "input_form": "input-output behavior with candidate internal state model",
+      "output_form": "realized state-space representation",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A system class and admissible realization setting are fixed"
+      ],
+      "operation": "Link external input-output behavior to internal state evolution through realization.",
+      "properties": [
+        "realization_seed"
+      ],
+      "examples": [
+        "Transfer behavior and internal state evolution are linked by realization rather than treated as unrelated descriptions"
+      ],
+      "counterexamples": [
+        "An arbitrary input-output table with no consistent internal dynamics is not automatically a valid realization"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CP-040",
+        "CR-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CP-040"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "CR-001"
+        }
+      ]
+    },
+    {
+      "id": "CP-110",
+      "name": "Simplex pivot seed",
+      "category": "operations research",
+      "input_form": "basic feasible solution with eligible entering and leaving variables",
+      "output_form": "adjacent basic feasible solution",
+      "domains": [
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A simplex tableau or basis representation is fixed"
+      ],
+      "operation": "Traverse the polyhedral feasible region by admissible basis pivots.",
+      "properties": [
+        "algorithm_seed"
+      ],
+      "examples": [
+        "Optimization can be organized along polyhedral edges rather than by sampling the whole feasible region blindly"
+      ],
+      "counterexamples": [
+        "A pivot that violates feasibility or basis structure is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CP-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CP-050"
+        }
+      ]
+    },
+    {
+      "id": "CP-120",
+      "name": "Repeated game value seed",
+      "category": "game theory",
+      "input_form": "iterated strategic interaction with history-dependent policies",
+      "output_form": "long-run value or strategic pattern",
+      "domains": [
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A repeated-game protocol and payoff accumulation rule are fixed"
+      ],
+      "operation": "Extend one-shot strategy analysis to history-dependent repeated interactions.",
+      "properties": [
+        "dynamic_seed"
+      ],
+      "examples": [
+        "Long-run cooperation or punishment patterns can emerge from iterated play even when the one-shot game is static"
+      ],
+      "counterexamples": [
+        "Treating every repeated game as identical to one isolated stage game is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CP-060"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CP-060"
+        }
+      ]
+    },
+    {
+      "id": "CP-121",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CP-122",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CP-123",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CP-124",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CP-125",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CP-126",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CP-127",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CP-128",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CP-129",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CP-130",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CP-131",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CP-132",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "computational_model",
+        "decision_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

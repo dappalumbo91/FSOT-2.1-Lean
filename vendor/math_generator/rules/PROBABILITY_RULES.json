@@ -1,0 +1,445 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "PROBABILITY_RULEBOOK.md",
+  "domain_symbols": {
+    "probability_space": "fixed probability space",
+    "event": "event in the sigma-algebra",
+    "random_variable": "random variable on the probability space",
+    "symbolic": "symbolic probability expressions"
+  },
+  "rules": [
+    {
+      "id": "PR-001",
+      "name": "Nonnegativity of probability",
+      "category": "probability axioms",
+      "input_form": "P(A)",
+      "output_form": "value >= 0",
+      "domains": ["probability_space", "event", "symbolic"],
+      "preconditions": ["A is an event in the active probability space"],
+      "operation": "Use the nonnegativity axiom of probability.",
+      "properties": ["axiom"],
+      "examples": ["Probabilities cannot be negative"],
+      "counterexamples": ["Assigning probability -0.2 to an event is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-002",
+      "name": "Normalization of sample space",
+      "category": "probability axioms",
+      "input_form": "P(Omega)",
+      "output_form": "1",
+      "domains": ["probability_space", "symbolic"],
+      "preconditions": [],
+      "operation": "Assign total probability 1 to the whole sample space.",
+      "properties": ["axiom"],
+      "examples": ["The whole sample space has probability 1"],
+      "counterexamples": ["Assigning total probability different from 1 violates the axioms"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-003",
+      "name": "Complement rule",
+      "category": "event algebra",
+      "input_form": "P(A)",
+      "output_form": "P(A^c) = 1 - P(A)",
+      "domains": ["probability_space", "event", "symbolic"],
+      "preconditions": [],
+      "operation": "Use complementarity to move between an event and its complement.",
+      "properties": ["derived_identity"],
+      "examples": ["If P(A) = 0.3, then P(A^c) = 0.7"],
+      "counterexamples": ["Setting P(A^c) = P(A) in general is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-004",
+      "name": "Addition rule for two events",
+      "category": "event algebra",
+      "input_form": "P(A union B)",
+      "output_form": "P(A) + P(B) - P(A intersection B)",
+      "domains": ["probability_space", "event", "symbolic"],
+      "preconditions": [],
+      "operation": "Correct overlap when combining probabilities of two events.",
+      "properties": ["derived_identity"],
+      "examples": ["Disjoint events simplify to P(A union B) = P(A) + P(B)"],
+      "counterexamples": ["Adding probabilities without subtracting overlap is invalid when events overlap"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-010",
+      "name": "Conditional probability definition",
+      "category": "conditional probability",
+      "input_form": "P(A|B)",
+      "output_form": "P(A intersection B) / P(B)",
+      "domains": ["probability_space", "event", "symbolic"],
+      "preconditions": ["P(B) > 0"],
+      "operation": "Define conditional probability by restriction to the conditioning event.",
+      "properties": ["definition"],
+      "examples": ["Conditional probability rescales to the event B as the new context"],
+      "counterexamples": ["Conditioning on an event of probability 0 is invalid in this elementary rule set"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-011",
+      "name": "Independence product rule",
+      "category": "independence",
+      "input_form": "P(A intersection B)",
+      "output_form": "P(A)P(B)",
+      "domains": ["probability_space", "event", "symbolic"],
+      "preconditions": ["A and B are independent"],
+      "operation": "Multiply event probabilities when independence is established.",
+      "properties": ["independence_rule"],
+      "examples": ["Independent coin flips multiply probabilities"],
+      "counterexamples": ["Using the product rule for dependent events is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-012",
+      "name": "Law of total probability",
+      "category": "conditional probability",
+      "input_form": "partition B1,...,Bn and event A",
+      "output_form": "sum P(A|Bi)P(Bi)",
+      "domains": ["probability_space", "event", "symbolic"],
+      "preconditions": ["B1,...,Bn form a partition of the sample space"],
+      "operation": "Expand event probability across a partition of mutually exclusive exhaustive cases.",
+      "properties": ["partition_rule"],
+      "examples": ["Total probability combines conditional branches over a partition"],
+      "counterexamples": ["Using overlapping branch events as if they were a partition is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-013",
+      "name": "Bayes rule",
+      "category": "conditional probability",
+      "input_form": "P(B|A)",
+      "output_form": "P(A|B)P(B)/P(A)",
+      "domains": ["probability_space", "event", "symbolic"],
+      "preconditions": ["P(A) > 0"],
+      "operation": "Reverse a conditional probability using prior and evidence terms.",
+      "properties": ["conditional_reversal"],
+      "examples": ["Bayes rule reverses a conditional probability using prior and evidence terms"],
+      "counterexamples": ["Swapping conditionals without the Bayes factor is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-020",
+      "name": "Linearity of expectation",
+      "category": "expectation",
+      "input_form": "E[X+Y] and E[cX]",
+      "output_form": "E[X] + E[Y] and cE[X]",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["The relevant expectations exist"],
+      "operation": "Distribute expectation over addition and scalar multiplication.",
+      "properties": ["linearity"],
+      "examples": ["Expectation is linear even when X and Y are dependent"],
+      "counterexamples": ["Requiring independence for linearity of expectation is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-021",
+      "name": "Variance definition",
+      "category": "variance",
+      "input_form": "Var(X)",
+      "output_form": "E[(X-E[X])^2]",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["The second moment exists"],
+      "operation": "Define variance through the mean-centered square.",
+      "properties": ["definition"],
+      "examples": ["Constant random variables have variance 0"],
+      "counterexamples": ["Replacing centered square by E[X]^2 in general is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-022",
+      "name": "Covariance bilinearity seed",
+      "category": "covariance",
+      "input_form": "Cov(X,Y)",
+      "output_form": "E[(X-E[X])(Y-E[Y])] with bilinear expansion laws",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["The relevant second moments exist"],
+      "operation": "Use the centered-product definition and additive distribution laws of covariance.",
+      "properties": ["bilinear"],
+      "examples": ["Covariance distributes over addition in each argument when moments exist"],
+      "counterexamples": ["Treating covariance as multiplicative is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-030",
+      "name": "Bernoulli distribution rule",
+      "category": "distributions",
+      "input_form": "Bernoulli(p)",
+      "output_form": "P(X=1)=p and P(X=0)=1-p",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["0 <= p <= 1"],
+      "operation": "Specify the support and mass function of a Bernoulli random variable.",
+      "properties": ["distribution_family"],
+      "examples": ["A single biased coin flip is Bernoulli(p)"],
+      "counterexamples": ["Assigning support outside {0,1} is invalid for a Bernoulli variable"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-031",
+      "name": "Binomial distribution rule",
+      "category": "distributions",
+      "input_form": "Binomial(n,p)",
+      "output_form": "P(X=k)=C(n,k)p^k(1-p)^(n-k)",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["n is a nonnegative integer", "0 <= p <= 1", "Trials are independent and identically distributed Bernoulli trials"],
+      "operation": "Use the binomial mass function to count successes across independent Bernoulli trials.",
+      "properties": ["distribution_family"],
+      "examples": ["Counting successes in n independent Bernoulli trials yields a binomial distribution"],
+      "counterexamples": ["Using the binomial pmf when trials are not independent and identically distributed is invalid in this basic form"],
+      "common_errors": [],
+      "cross_links": ["DM-020", "PR-030"],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DM-020"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "PR-030"
+        }
+      ]
+    },
+    {
+      "id": "PR-032",
+      "name": "Normal standardization rule",
+      "category": "distributions",
+      "input_form": "X distributed Normal(mu,sigma^2)",
+      "output_form": "(X-mu)/sigma distributed Normal(0,1)",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["sigma > 0"],
+      "operation": "Center and scale a normal variable to obtain a standard normal one.",
+      "properties": ["distribution_family"],
+      "examples": ["Centering and scaling a normal variable produces N(0,1)"],
+      "counterexamples": ["Dividing by variance instead of standard deviation is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-040",
+      "name": "Weak law of large numbers pattern",
+      "category": "limit theorems",
+      "input_form": "sample average of iid variables",
+      "output_form": "convergence in probability to common expectation",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["The standard iid integrability assumptions hold"],
+      "operation": "Recognize convergence in probability of sample averages under weak-law assumptions.",
+      "properties": ["limit_pattern"],
+      "examples": ["Repeated fair-coin averages stabilize near 1/2 in probability"],
+      "counterexamples": ["Claiming exact equality for every finite sample size is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-041",
+      "name": "Central limit theorem pattern",
+      "category": "limit theorems",
+      "input_form": "standardized sum of iid variables",
+      "output_form": "approximate or limiting normal law",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["The standard iid finite-variance assumptions hold"],
+      "operation": "Recognize asymptotic normality of standardized iid sums under clt assumptions.",
+      "properties": ["limit_pattern"],
+      "examples": ["Sums of many iid bounded variables become approximately normal after centering and scaling"],
+      "counterexamples": ["Treating the clt as an exact finite-sample identity is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-050",
+      "name": "Poisson distribution rule",
+      "category": "distributions",
+      "input_form": "Poisson(lambda)",
+      "output_form": "P(X=k)=e^(-lambda)lambda^k/k!",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["lambda > 0", "k is a nonnegative integer"],
+      "operation": "Use the Poisson mass function for count variables on the nonnegative integers.",
+      "properties": ["distribution_family"],
+      "examples": ["Rare-event counts over a fixed interval are modeled by Poisson laws in standard settings"],
+      "counterexamples": ["Assigning support to negative integers is invalid for a Poisson variable"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-051",
+      "name": "Geometric distribution rule",
+      "category": "distributions",
+      "input_form": "Geometric(p)",
+      "output_form": "P(X=k)=(1-p)^(k-1)p",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["0 < p <= 1", "k is a positive integer", "Trials are iid Bernoulli trials"],
+      "operation": "Use the geometric mass function for the waiting time to first success.",
+      "properties": ["distribution_family"],
+      "examples": ["Waiting time until first success in repeated independent trials is geometric"],
+      "counterexamples": ["Using the geometric pmf when the success probability changes between trials is invalid in this basic form"],
+      "common_errors": [],
+      "cross_links": ["PR-030"],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "PR-030"
+        }
+      ]
+    },
+    {
+      "id": "PR-052",
+      "name": "Exponential distribution density rule",
+      "category": "distributions",
+      "input_form": "Exponential(lambda)",
+      "output_form": "density lambda e^(-lambda x) on x >= 0",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["lambda > 0"],
+      "operation": "Use the exponential density for nonnegative waiting-time variables.",
+      "properties": ["distribution_family"],
+      "examples": ["Continuous waiting-time models with rate lambda use the exponential density"],
+      "counterexamples": ["Extending the density to negative x in the standard exponential family is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-053",
+      "name": "Gamma distribution generalization rule",
+      "category": "distributions",
+      "input_form": "Gamma(alpha,beta)",
+      "output_form": "density proportional to x^(alpha-1)e^(-beta x) on x > 0",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["alpha > 0", "beta > 0"],
+      "operation": "Use the gamma family as a positive-support continuous distribution that contains the exponential case.",
+      "properties": ["distribution_family"],
+      "examples": ["Exponential waiting times sit inside the gamma family as a one-parameter slice"],
+      "counterexamples": ["Treating gamma densities as supported on the whole real line is invalid"],
+      "common_errors": [],
+      "cross_links": ["PR-052"],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "PR-052"
+        }
+      ]
+    },
+    {
+      "id": "PR-054",
+      "name": "Multivariate normal linear-image rule",
+      "category": "distributions",
+      "input_form": "multivariate normal vector and linear map",
+      "output_form": "normal marginal or linear image",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["The random vector is multivariate normal", "The linear map is fixed"],
+      "operation": "Preserve normality under marginals and linear transformations in the multivariate normal family.",
+      "properties": ["distribution_family"],
+      "examples": ["Any fixed linear combination of jointly normal coordinates is normally distributed"],
+      "counterexamples": ["Applying the rule to arbitrary non-normal vectors is invalid"],
+      "common_errors": [],
+      "cross_links": ["PR-032"],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "PR-032"
+        }
+      ]
+    },
+    {
+      "id": "PR-060",
+      "name": "Correlation normalization rule",
+      "category": "covariance",
+      "input_form": "Corr(X,Y)",
+      "output_form": "Cov(X,Y)/sqrt(Var(X)Var(Y))",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["Var(X) > 0", "Var(Y) > 0"],
+      "operation": "Normalize covariance into a dimensionless correlation coefficient.",
+      "properties": ["normalization_identity"],
+      "examples": ["Correlation rescales covariance to a dimensionless quantity between -1 and 1 in the standard setting"],
+      "counterexamples": ["Dividing covariance by Var(X)+Var(Y) is invalid"],
+      "common_errors": [],
+      "cross_links": ["PR-021", "PR-022"],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "PR-021"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "PR-022"
+        }
+      ]
+    },
+    {
+      "id": "PR-061",
+      "name": "Tower property of conditional expectation",
+      "category": "conditional expectation",
+      "input_form": "E[E[X|G]]",
+      "output_form": "E[X]",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["The conditional expectation exists"],
+      "operation": "Average a conditional expectation back to the original expectation.",
+      "properties": ["conditioning_identity"],
+      "examples": ["Conditioning and then averaging back over the coarser information returns the original expectation"],
+      "counterexamples": ["Dropping integrability requirements from conditional expectation arguments is invalid"],
+      "common_errors": [],
+      "cross_links": ["PR-020"],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "PR-020"
+        }
+      ]
+    },
+    {
+      "id": "PR-062",
+      "name": "Law of total variance",
+      "category": "variance",
+      "input_form": "Var(X)",
+      "output_form": "E[Var(X|G)] + Var(E[X|G])",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["The involved conditional moments exist"],
+      "operation": "Decompose total variance into conditional and between-condition contributions.",
+      "properties": ["variance_decomposition"],
+      "examples": ["Total variance splits uncertainty into within-condition and between-condition components"],
+      "counterexamples": ["Replacing the sum by a product is invalid"],
+      "common_errors": [],
+      "cross_links": ["PR-021", "PR-061"],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "PR-021"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "PR-061"
+        }
+      ]
+    },
+    {
+      "id": "PR-070",
+      "name": "Almost-sure convergence implies convergence in probability",
+      "category": "convergence modes",
+      "input_form": "X_n converges almost surely to X",
+      "output_form": "X_n converges in probability to X",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["All random variables are defined on the same probability space"],
+      "operation": "Pass from almost-sure convergence to the weaker convergence-in-probability mode.",
+      "properties": ["mode_implication"],
+      "examples": ["Stronger pointwise probabilistic convergence implies the weaker in-probability mode"],
+      "counterexamples": ["Reversing the implication in general is invalid"],
+      "common_errors": []
+    },
+    {
+      "id": "PR-071",
+      "name": "L2 convergence implies convergence in probability",
+      "category": "convergence modes",
+      "input_form": "E[(X_n-X)^2] tends to 0",
+      "output_form": "X_n converges in probability to X",
+      "domains": ["probability_space", "random_variable", "symbolic"],
+      "preconditions": ["The second moments are finite"],
+      "operation": "Pass from mean-square convergence to convergence in probability.",
+      "properties": ["mode_implication"],
+      "examples": ["Mean-square convergence is stronger than convergence in probability"],
+      "counterexamples": ["Assuming convergence in probability automatically gives L2 convergence is invalid in general"],
+      "common_errors": [],
+      "cross_links": ["PR-021"],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "PR-021"
+        }
+      ]
+    }
+  ]
+}

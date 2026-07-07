@@ -1,0 +1,695 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "NUMBER_THEORY_RULEBOOK.md",
+  "domain_symbols": {
+    "Z": "integers",
+    "N": "natural numbers",
+    "symbolic": "symbolic number-theoretic expressions"
+  },
+  "rules": [
+    {
+      "id": "NT-001",
+      "name": "Divisibility transitivity",
+      "category": "divisibility",
+      "input_form": "a divides b and b divides c",
+      "output_form": "a divides c",
+      "domains": [
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [
+        "All divisibility relations are interpreted over integers"
+      ],
+      "operation": "Compose divisibility through an intermediate multiple.",
+      "properties": [
+        "transitive"
+      ],
+      "examples": [
+        "2 divides 6 and 6 divides 24, so 2 divides 24"
+      ],
+      "counterexamples": [
+        "Replacing one divisibility premise by a nondivisibility statement invalidates the conclusion"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NT-002",
+      "name": "Euclidean division form",
+      "category": "division algorithm",
+      "input_form": "a and positive b",
+      "output_form": "a = bq + r with 0 <= r < b",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "b > 0"
+      ],
+      "operation": "Express integer division by quotient and constrained remainder.",
+      "properties": [
+        "existence_uniqueness"
+      ],
+      "examples": [
+        "17 = 5*3 + 2"
+      ],
+      "counterexamples": [
+        "17 = 5*2 + 7 is invalid Euclidean division because the remainder is not less than 5"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NT-003",
+      "name": "gcd invariance under remainder reduction",
+      "category": "gcd",
+      "input_form": "gcd(a,b)",
+      "output_form": "gcd(b, a mod b)",
+      "domains": [
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [
+        "b != 0"
+      ],
+      "operation": "Reduce gcd computation by one Euclidean remainder step.",
+      "properties": [
+        "reduction_rule"
+      ],
+      "examples": [
+        "gcd(30,18) = gcd(18,12)"
+      ],
+      "counterexamples": [
+        "Replacing a mod b with an unrelated remainder breaks the rule"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NT-004",
+      "name": "Euclidean algorithm termination rule",
+      "category": "gcd",
+      "input_form": "iterated gcd remainder chain",
+      "output_form": "last nonzero remainder",
+      "domains": [
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Remainder reduction is applied correctly at each step"
+      ],
+      "operation": "Continue remainder reduction until the remainder is zero; return the last nonzero remainder as the gcd.",
+      "properties": [
+        "algorithmic"
+      ],
+      "examples": [
+        "gcd(30,18) -> gcd(18,12) -> gcd(12,6) -> gcd(6,0), so gcd = 6"
+      ],
+      "counterexamples": [
+        "Stopping before the zero remainder step can miss the gcd"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NT-010",
+      "name": "Bezout identity",
+      "category": "linear combination",
+      "input_form": "integers a, b",
+      "output_form": "ax + by = gcd(a,b)",
+      "domains": [
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Represent the gcd as an integer linear combination of the two inputs.",
+      "properties": [
+        "existence"
+      ],
+      "examples": [
+        "30*(-1) + 18*(2) = 6"
+      ],
+      "counterexamples": [
+        "Claiming ax + by = 1 for non-coprime a and b is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NT-011",
+      "name": "Coprime criterion via gcd",
+      "category": "coprimality",
+      "input_form": "gcd(a,b)",
+      "output_form": "coprime or not coprime classification",
+      "domains": [
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Classify two integers as coprime exactly when their gcd is 1.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "8 and 15 are coprime"
+      ],
+      "counterexamples": [
+        "8 and 12 are not coprime because gcd(8,12) = 4"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NT-012",
+      "name": "Modular inverse existence criterion",
+      "category": "modular arithmetic",
+      "input_form": "a modulo n",
+      "output_form": "inverse exists iff gcd(a,n)=1",
+      "domains": [
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [
+        "n > 1"
+      ],
+      "operation": "Use coprimality to determine whether a multiplicative inverse exists modulo n.",
+      "properties": [
+        "existence_criterion"
+      ],
+      "examples": [
+        "3 has an inverse modulo 7 because gcd(3,7)=1"
+      ],
+      "counterexamples": [
+        "6 has no inverse modulo 9 because gcd(6,9)=3"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AR-294"
+      ]
+    },
+    {
+      "id": "NT-020",
+      "name": "Fundamental theorem of arithmetic",
+      "category": "prime factorization",
+      "input_form": "integer n > 1",
+      "output_form": "prime factorization unique up to order",
+      "domains": [
+        "N",
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [
+        "n > 1"
+      ],
+      "operation": "Factor a positive integer into primes uniquely up to permutation of factors.",
+      "properties": [
+        "uniqueness"
+      ],
+      "examples": [
+        "84 = 2^2 * 3 * 7"
+      ],
+      "counterexamples": [
+        "Writing two different prime factorizations for the same positive integer is invalid up to ordering"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NT-021",
+      "name": "Chinese remainder compatibility rule",
+      "category": "congruence systems",
+      "input_form": "x congruent a mod m and x congruent b mod n",
+      "output_form": "unique solution modulo mn",
+      "domains": [
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [
+        "gcd(m,n)=1"
+      ],
+      "operation": "Solve a pair of congruences uniquely modulo the product of coprime moduli.",
+      "properties": [
+        "existence_uniqueness"
+      ],
+      "examples": [
+        "x congruent 1 mod 2 and x congruent 2 mod 3 has a unique solution modulo 6"
+      ],
+      "counterexamples": [
+        "Using the uniqueness claim when moduli are not coprime is invalid without extra compatibility checks"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AR-294"
+      ]
+    },
+    {
+      "id": "NT-022",
+      "name": "Fermat little theorem pattern",
+      "category": "modular arithmetic",
+      "input_form": "a^(p-1) mod p",
+      "output_form": "1",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "p is prime",
+        "p does not divide a"
+      ],
+      "operation": "Reduce powers modulo a prime using Fermat's little theorem.",
+      "properties": [
+        "prime_modulus_rule"
+      ],
+      "examples": [
+        "2^4 congruent 1 mod 5"
+      ],
+      "counterexamples": [
+        "Applying the rule with composite modulus as if it were prime is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NT-030",
+      "name": "Linear Diophantine solvability criterion",
+      "category": "Diophantine equations",
+      "input_form": "ax + by = c",
+      "output_form": "integer solution exists iff gcd(a,b) divides c",
+      "domains": [
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Use gcd divisibility to decide solvability of a linear Diophantine equation.",
+      "properties": [
+        "solvability_criterion"
+      ],
+      "examples": [
+        "6x + 9y = 3 has integer solutions because gcd(6,9)=3 divides 3"
+      ],
+      "counterexamples": [
+        "6x + 9y = 4 has no integer solution because 3 does not divide 4"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "NT-010"
+      ]
+    },
+    {
+      "id": "NT-031",
+      "name": "Euler phi function on prime powers",
+      "category": "arithmetic functions",
+      "input_form": "phi(p^k)",
+      "output_form": "p^k - p^(k-1)",
+      "domains": [
+        "N",
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [
+        "p is prime",
+        "k >= 1"
+      ],
+      "operation": "Count integers up to p^k that are coprime to p^k.",
+      "properties": [
+        "prime_power_formula"
+      ],
+      "examples": [
+        "phi(3^2) = 9 - 3 = 6"
+      ],
+      "counterexamples": [
+        "Treating phi(p^k) as p^k for k >= 1 is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NT-032",
+      "name": "Divisor-count function from prime exponents",
+      "category": "arithmetic functions",
+      "input_form": "n = p1^a1 * ... * pr^ar",
+      "output_form": "tau(n) = (a1+1)...(ar+1)",
+      "domains": [
+        "N",
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Prime factorization of n is known"
+      ],
+      "operation": "Compute the divisor-count function from prime exponents.",
+      "properties": [
+        "multiplicative_structure"
+      ],
+      "examples": [
+        "12 = 2^2 * 3 gives tau(12) = 6"
+      ],
+      "counterexamples": [
+        "Summing exponents instead of multiplying shifted exponents is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "NT-020"
+      ]
+    },
+    {
+      "id": "NT-040",
+      "name": "Quadratic residue criterion by square congruence",
+      "category": "quadratic residues",
+      "input_form": "a mod p",
+      "output_form": "quadratic residue classification",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "p is an odd prime in the standard residue setting"
+      ],
+      "operation": "Classify a residue by existence of a square root modulo p.",
+      "properties": [
+        "existence_criterion"
+      ],
+      "examples": [
+        "4 is a quadratic residue mod 7 because 2^2 congruent 4 mod 7"
+      ],
+      "counterexamples": [
+        "Declaring every nonzero residue class a square mod p is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AR-294"
+      ]
+    },
+    {
+      "id": "NT-041",
+      "name": "p-adic valuation additivity on products",
+      "category": "valuations",
+      "input_form": "v_p(ab)",
+      "output_form": "v_p(a) + v_p(b)",
+      "domains": [
+        "Z",
+        "symbolic"
+      ],
+      "preconditions": [
+        "a and b are nonzero integers",
+        "p is prime"
+      ],
+      "operation": "Add p-adic valuations across products.",
+      "properties": [
+        "valuation_rule"
+      ],
+      "examples": [
+        "v_2(12*10) = 3"
+      ],
+      "counterexamples": [
+        "Treating valuations as additive over sums in general is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NT-042",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NT-043",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NT-044",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NT-045",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NT-046",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NT-047",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NT-048",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NT-049",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NT-050",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NT-051",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "Z",
+        "N",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

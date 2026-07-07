@@ -17,6 +17,7 @@ MANIFEST_PATH = ROOT / "data" / "trinary_os_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import REPO_ROOT, trinary_os_root  # noqa: E402
 from trinary_os_invariants import (  # noqa: E402
     derived_os_constants,
     load_fsotb_oracles,
@@ -36,7 +37,13 @@ def verify_trinary_os(
 ) -> tuple[list[str], dict]:
     manifest = load_manifest()
     ver = manifest.get("verification", {})
-    fsot_os_root = Path(manifest["fsot_os_root"])
+    raw_root = manifest["fsot_os_root"]
+    if raw_root.startswith("vendor/"):
+        fsot_os_root = trinary_os_root()
+    else:
+        fsot_os_root = Path(raw_root)
+        if not fsot_os_root.is_absolute():
+            fsot_os_root = REPO_ROOT / fsot_os_root
     registry = json.loads(registry_path.read_text(encoding="utf-8")) if registry_path.exists() else {}
     issues: list[str] = []
 

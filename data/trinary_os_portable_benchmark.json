@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-07-07T23:13:36.277094+00:00",
+  "source": [
+    "vendor/trinary_os",
+    "data/trinary_os_manifest.yaml"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai",
+    "neural"
+  ],
+  "D_eff": 12,
+  "oracle_count": 3,
+  "record_count": 8,
+  "observable_count": 8,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "trinary_os_portable",
+      "property": "seeds_hash_hex",
+      "computed": "0xc627292ec4eb3b90",
+      "measured": "0xc627292ec4eb3b90",
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "panel_S_hex",
+      "computed": "0x3fee69c97260701a",
+      "measured": "0x3fee69c97260701a",
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "hello_file_size",
+      "computed": 264,
+      "measured": 264,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "call_ret_file_size",
+      "computed": 312,
+      "measured": 312,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "spawn_join_file_size",
+      "computed": 440,
+      "measured": 440,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "num_task_slots",
+      "computed": 8,
+      "measured": 8,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "trit_word_width",
+      "computed": 27,
+      "measured": 27,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "cortical_layers",
+      "computed": 6,
+      "measured": 6,
+      "error_pct": 0.0
+    }
+  ]
+}

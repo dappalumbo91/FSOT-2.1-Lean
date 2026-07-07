@@ -1,0 +1,736 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "META_MATHEMATICS_RULEBOOK.md",
+  "domain_symbols": {
+    "meta_structure": "formal dependency, axiomatic, and instructional structures for mathematics",
+    "theory_layer": "theory definitions, prerequisites, and abstractions",
+    "symbolic": "symbolic meta-mathematical expressions"
+  },
+  "rules": [
+    {
+      "id": "MM-001",
+      "name": "Historical dependency graph seed",
+      "category": "history of mathematics",
+      "input_form": "family of mathematical concepts or theories",
+      "output_form": "prerequisite graph or partial-order representation",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Conceptual dependency data are specified"
+      ],
+      "operation": "Represent mathematical development by prerequisite structure rather than chronology alone.",
+      "properties": [
+        "dependency_seed"
+      ],
+      "examples": [
+        "Calculus depends on algebraic symbolism and limit concepts even when historical presentation compresses the timeline"
+      ],
+      "counterexamples": [
+        "Ordering topics only by calendar date loses mathematical dependency structure"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "MM-010",
+      "name": "Axiomatic theory seed",
+      "category": "philosophy of mathematics",
+      "input_form": "primitives, axioms, and inference rules",
+      "output_form": "formal theory specification",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A formal language and structural commitments are fixed"
+      ],
+      "operation": "Specify a mathematical theory through primitives, axioms, inference, and models.",
+      "properties": [
+        "axiomatic_seed"
+      ],
+      "examples": [
+        "Group theory is determined by operation and axioms rather than by a concrete preferred example"
+      ],
+      "counterexamples": [
+        "Listing worked examples without explicit structural commitments does not define a full theory"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AF-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AF-001"
+        }
+      ]
+    },
+    {
+      "id": "MM-020",
+      "name": "Structuralism seed",
+      "category": "philosophy of mathematics",
+      "input_form": "pair of isomorphic realizations",
+      "output_form": "structure-preserving equivalence viewpoint",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An isomorphism notion is fixed in the active branch"
+      ],
+      "operation": "Preserve mathematical content across isomorphic realizations in a structural reading.",
+      "properties": [
+        "equivalence_seed"
+      ],
+      "examples": [
+        "Two isomorphic groups encode the same group-theoretic structure despite different underlying carriers"
+      ],
+      "counterexamples": [
+        "Treating irrelevant labels of isomorphic models as mathematically essential is invalid in a structural reading"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "MM-030",
+      "name": "Prerequisite sequencing seed",
+      "category": "mathematics education",
+      "input_form": "ordered instructional topic list",
+      "output_form": "dependency-respecting progression",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Topic prerequisites are identified"
+      ],
+      "operation": "Require instructional sequencing to respect prerequisite dependencies.",
+      "properties": [
+        "sequencing_seed"
+      ],
+      "examples": [
+        "Introducing eigenvalue algorithms before linear maps and matrices breaks prerequisite order"
+      ],
+      "counterexamples": [
+        "Presenting advanced methods with no dependency path is not valid structured sequencing"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "MM-040",
+      "name": "Error taxonomy seed",
+      "category": "mathematics education",
+      "input_form": "mathematical mistake instance",
+      "output_form": "classified error family",
+      "domains": [
+        "meta_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A rule system with explicit preconditions and transformations is active"
+      ],
+      "operation": "Classify mistakes by domain, syntax, transformation, or inference failure.",
+      "properties": [
+        "diagnostic_seed"
+      ],
+      "examples": [
+        "Dividing by zero is a precondition error rather than a mere arithmetic slip"
+      ],
+      "counterexamples": [
+        "Collapsing all mistakes into one undifferentiated error class loses repair structure"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "MM-050",
+      "name": "Notation compression seed",
+      "category": "history of mathematics",
+      "input_form": "recurrent mathematical reasoning pattern",
+      "output_form": "stable symbolic notation that compresses repeated structure",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The compressed notation preserves the intended mathematical relations"
+      ],
+      "operation": "Compress repeated reasoning into symbolic notation without losing formal structure.",
+      "properties": [
+        "notation_seed"
+      ],
+      "examples": [
+        "Index notation, operator notation, and functional notation shorten repeated verbal reasoning into reusable symbolic structure"
+      ],
+      "counterexamples": [
+        "Replacing explicit mathematical relations by ambiguous shorthand that erases structure is invalid compression"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "MM-060",
+      "name": "Independence phenomenon seed",
+      "category": "philosophy of mathematics",
+      "input_form": "statement in a fixed axiomatic system",
+      "output_form": "independence or undecidability status relative to that axiom set",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A formal system and model-theoretic or proof-theoretic environment are fixed"
+      ],
+      "operation": "Recognize that some statements may be undecidable from the active axiom set.",
+      "properties": [
+        "independence_seed"
+      ],
+      "examples": [
+        "Axiomatic strength matters because truth in one formal environment need not collapse to provability in every nearby environment"
+      ],
+      "counterexamples": [
+        "Assuming every well-formed mathematical statement is automatically decidable inside any chosen axiom system is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AF-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AF-010"
+        }
+      ]
+    },
+    {
+      "id": "MM-070",
+      "name": "Worked-example fading seed",
+      "category": "mathematics education",
+      "input_form": "instructional sequence with structured examples",
+      "output_form": "scaffolded-to-independent progression",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Prerequisite competence is tracked across the sequence"
+      ],
+      "operation": "Reduce scaffolding as rule fluency increases while preserving dependency order.",
+      "properties": [
+        "pedagogy_seed"
+      ],
+      "examples": [
+        "Early derivations may show every algebraic step while later exercises omit routine transformations to train autonomous rule use"
+      ],
+      "counterexamples": [
+        "Removing all scaffolding before prerequisite structure is internalized is invalid instructional fading"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "MM-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "MM-030"
+        }
+      ]
+    },
+    {
+      "id": "MM-080",
+      "name": "Representation translation seed",
+      "category": "mathematics education",
+      "input_form": "equivalent mathematical content in multiple representation modes",
+      "output_form": "coherent cross-representation translation",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The representations describe the same underlying mathematical object or process"
+      ],
+      "operation": "Translate coherently across symbolic, geometric, algorithmic, and verbal mathematical forms.",
+      "properties": [
+        "translation_seed"
+      ],
+      "examples": [
+        "A differential equation, slope field, numerical scheme, and phase portrait can encode one underlying dynamic system"
+      ],
+      "counterexamples": [
+        "Presenting mutually inconsistent representations as if they described the same object is invalid translation"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "MM-081",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-082",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-083",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-084",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-085",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-086",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-087",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-088",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-089",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-090",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-091",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-092",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-093",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-094",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-095",
+      "name": "Counterexample mining expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "universal claim C",
+      "output_form": "counterexample search status",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Systematically attempt to falsify broad claims before promoting them.",
+      "properties": [
+        "auto_generated",
+        "counterexample_search"
+      ],
+      "examples": [
+        "Boundary or low-dimensional cases can reveal hidden failures"
+      ],
+      "counterexamples": [
+        "Treating untested universality as proven is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MM-096",
+      "name": "Computational complexity annotation expansion",
+      "category": "auto_expansion_computation",
+      "input_form": "algorithmic mathematical pipeline",
+      "output_form": "complexity and resource annotation",
+      "domains": [
+        "meta_structure",
+        "theory_layer",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach asymptotic complexity and practical resource requirements where relevant.",
+      "properties": [
+        "auto_generated",
+        "complexity"
+      ],
+      "examples": [
+        "Equivalent formulations can differ significantly in computational cost"
+      ],
+      "counterexamples": [
+        "Ignoring tractability for large-scale tasks is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

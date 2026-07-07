@@ -1,0 +1,773 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "DIFFERENTIAL_GEOMETRY_RULEBOOK.md",
+  "domain_symbols": {
+    "manifold": "smooth manifolds and charts",
+    "tangent_space": "tangent vectors and tangent bundles",
+    "symbolic": "symbolic differential-geometry expressions"
+  },
+  "rules": [
+    {
+      "id": "DG-001",
+      "name": "Smooth manifold chart seed",
+      "category": "manifold structure",
+      "input_form": "topological space with compatible local charts",
+      "output_form": "smooth manifold classification",
+      "domains": [
+        "manifold",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Compatible smooth coordinate charts cover the space locally"
+      ],
+      "operation": "Use compatible local Euclidean models to define a smooth manifold.",
+      "properties": [
+        "definition_seed"
+      ],
+      "examples": [
+        "The sphere is locally Euclidean even though it is not globally a Euclidean plane"
+      ],
+      "counterexamples": [
+        "Requiring a single global chart for every manifold is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "TP-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "TP-040"
+        }
+      ]
+    },
+    {
+      "id": "DG-010",
+      "name": "Tangent vector seed",
+      "category": "tangent structure",
+      "input_form": "smooth curve or derivation at a point",
+      "output_form": "tangent vector at that point",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The point and local smooth structure are fixed"
+      ],
+      "operation": "Represent tangent vectors through curve velocities or derivations.",
+      "properties": [
+        "definition_seed"
+      ],
+      "examples": [
+        "Curve velocities give coordinate realizations of tangent vectors"
+      ],
+      "counterexamples": [
+        "Treating a point itself as a tangent vector is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DG-020",
+      "name": "Riemannian metric rule",
+      "category": "metric geometry",
+      "input_form": "smooth assignment g_p on tangent spaces",
+      "output_form": "Riemannian metric classification",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Each g_p is a positive-definite bilinear form varying smoothly in p"
+      ],
+      "operation": "Use smooth positive-definite inner products on tangent spaces to define a Riemannian metric.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "The Euclidean dot product defines the standard metric on Euclidean space"
+      ],
+      "counterexamples": [
+        "An indefinite bilinear form is not a Riemannian metric"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LA-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LA-030"
+        }
+      ]
+    },
+    {
+      "id": "DG-030",
+      "name": "Geodesic seed",
+      "category": "Riemannian geometry",
+      "input_form": "curve on a Riemannian manifold",
+      "output_form": "locally length-extremizing or zero-covariant-acceleration characterization",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A Riemannian metric and its Levi-Civita connection are fixed"
+      ],
+      "operation": "Characterize geodesics as locally extremizing curves or connection-straight curves.",
+      "properties": [
+        "equivalence_seed"
+      ],
+      "examples": [
+        "Straight lines in Euclidean space are geodesics of the standard metric"
+      ],
+      "counterexamples": [
+        "Arbitrary smooth curves are not geodesics in general"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DG-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DG-020"
+        }
+      ]
+    },
+    {
+      "id": "DG-040",
+      "name": "Gaussian curvature seed",
+      "category": "curvature",
+      "input_form": "smooth surface with metric data",
+      "output_form": "intrinsic curvature quantity",
+      "domains": [
+        "manifold",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A surface metric or equivalent smooth geometric structure is fixed"
+      ],
+      "operation": "Use intrinsic surface data to determine Gaussian curvature.",
+      "properties": [
+        "intrinsic_invariant_seed"
+      ],
+      "examples": [
+        "The sphere has positive Gaussian curvature while the plane has zero Gaussian curvature"
+      ],
+      "counterexamples": [
+        "Confusing intrinsic curvature with arbitrary extrinsic bending is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DG-020"
+        }
+      ]
+    },
+    {
+      "id": "DG-050",
+      "name": "Differential form degree rule",
+      "category": "differential forms",
+      "input_form": "k-form",
+      "output_form": "alternating covariant tensor field of degree k",
+      "domains": [
+        "manifold",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A smooth manifold and tensor conventions are fixed"
+      ],
+      "operation": "Classify differential forms by alternating covariant degree.",
+      "properties": [
+        "structural_rule"
+      ],
+      "examples": [
+        "1-forms act on tangent vectors, while 2-forms act on ordered tangent-vector pairs antisymmetrically"
+      ],
+      "counterexamples": [
+        "Treating a scalar field as a 1-form without an explicit differential or covector identification is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DG-051",
+      "name": "Exterior derivative nilpotence rule",
+      "category": "exterior calculus",
+      "input_form": "differential form omega",
+      "output_form": "d(d omega) = 0",
+      "domains": [
+        "manifold",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The exterior derivative is taken in the standard smooth setting"
+      ],
+      "operation": "Apply the nilpotence of the exterior derivative.",
+      "properties": [
+        "operator_identity"
+      ],
+      "examples": [
+        "Exact forms are automatically closed because applying d twice yields zero"
+      ],
+      "counterexamples": [
+        "Expecting d(d omega) to produce higher-order correction terms is invalid in exterior calculus"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DG-052",
+      "name": "Wedge antisymmetry rule",
+      "category": "exterior calculus",
+      "input_form": "forms alpha and beta of degrees p and q",
+      "output_form": "alpha wedge beta = (-1)^(pq) beta wedge alpha",
+      "domains": [
+        "manifold",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The wedge product is defined for the given forms"
+      ],
+      "operation": "Swap forms in a wedge product with graded sign control.",
+      "properties": [
+        "graded_commutativity"
+      ],
+      "examples": [
+        "Swapping two 1-forms introduces a minus sign in the wedge product"
+      ],
+      "counterexamples": [
+        "Treating wedge multiplication as ordinary commutative multiplication is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DG-060",
+      "name": "Stokes theorem seed on manifolds",
+      "category": "integration on manifolds",
+      "input_form": "oriented manifold with boundary and differential form omega",
+      "output_form": "integral_M d omega = integral_boundary(M) omega",
+      "domains": [
+        "manifold",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard smoothness, orientation, and boundary hypotheses hold"
+      ],
+      "operation": "Convert an integral of an exterior derivative over a manifold into a boundary integral.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Manifold boundary integrals convert exterior derivatives into boundary flux terms through Stokes-type identities"
+      ],
+      "counterexamples": [
+        "Applying Stokes theorem without orientation or boundary regularity is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DG-051"
+        }
+      ]
+    },
+    {
+      "id": "DG-061",
+      "name": "Covariant derivative component rule",
+      "category": "connections",
+      "input_form": "tensor field in local coordinates",
+      "output_form": "partial derivatives plus Christoffel-symbol corrections",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A connection and coordinate chart are fixed"
+      ],
+      "operation": "Compute covariant derivatives in coordinates by correcting partial derivatives with connection coefficients.",
+      "properties": [
+        "coordinate_rule"
+      ],
+      "examples": [
+        "Vector-field derivatives on curved manifolds require connection terms beyond ordinary coordinate differentiation"
+      ],
+      "counterexamples": [
+        "Dropping Christoffel-symbol terms in nonflat coordinates is invalid in general"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DG-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "DG-010"
+        }
+      ]
+    },
+    {
+      "id": "DG-070",
+      "name": "Ricci curvature contraction seed",
+      "category": "curvature",
+      "input_form": "Riemann curvature tensor",
+      "output_form": "Ricci tensor by index contraction",
+      "domains": [
+        "manifold",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A curvature tensor and contraction convention are fixed"
+      ],
+      "operation": "Obtain Ricci curvature by tracing the Riemann tensor over a standard index pair.",
+      "properties": [
+        "derived_quantity_seed"
+      ],
+      "examples": [
+        "Curvature tensors reduce to Ricci data by tracing over appropriate indices"
+      ],
+      "counterexamples": [
+        "Arbitrary index contractions do not all define the Ricci tensor"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DG-040"
+        }
+      ]
+    },
+    {
+      "id": "DG-080",
+      "name": "Jacobi field seed",
+      "category": "geodesic variation",
+      "input_form": "vector field along a geodesic",
+      "output_form": "Jacobi equation under geodesic variation hypotheses",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A Riemannian manifold, geodesic, and curvature operator are fixed"
+      ],
+      "operation": "Model first-order geodesic variation through the Jacobi equation.",
+      "properties": [
+        "variation_seed"
+      ],
+      "examples": [
+        "Nearby geodesic families induce vector fields governed by curvature through the Jacobi equation"
+      ],
+      "counterexamples": [
+        "Arbitrary vector fields along a geodesic are not automatically Jacobi fields"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DG-030"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DG-070"
+        }
+      ]
+    },
+    {
+      "id": "DG-081",
+      "name": "Sectional curvature rule",
+      "category": "curvature",
+      "input_form": "two-plane in a tangent space",
+      "output_form": "sectional curvature scalar",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Metric and Riemann curvature data are fixed"
+      ],
+      "operation": "Assign a curvature scalar to a tangent two-plane using the Riemann tensor and metric.",
+      "properties": [
+        "derived_quantity"
+      ],
+      "examples": [
+        "Constant-curvature manifolds assign the same sectional curvature to every tangent two-plane"
+      ],
+      "counterexamples": [
+        "Ricci curvature alone does not determine every sectional curvature value in general"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DG-070"
+        }
+      ]
+    },
+    {
+      "id": "DG-090",
+      "name": "Lie derivative seed",
+      "category": "tensor transport",
+      "input_form": "tensor field and vector field flow",
+      "output_form": "infinitesimal tensor variation along the flow",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A tensor field and generating vector field are fixed"
+      ],
+      "operation": "Measure infinitesimal change of a tensor field along a vector-field flow.",
+      "properties": [
+        "operator_seed"
+      ],
+      "examples": [
+        "Symmetries are detected by vanishing Lie derivatives of the preserved tensor quantities"
+      ],
+      "counterexamples": [
+        "Replacing flow-based transport by ordinary coordinate differentiation is invalid in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "DG-091",
+      "name": "Hodge star seed",
+      "category": "Riemannian exterior calculus",
+      "input_form": "k-form on an oriented Riemannian manifold",
+      "output_form": "complementary-degree form",
+      "domains": [
+        "manifold",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Metric and orientation data are fixed"
+      ],
+      "operation": "Map differential forms to complementary-degree forms using the Hodge star.",
+      "properties": [
+        "operator_seed"
+      ],
+      "examples": [
+        "The Hodge star converts exterior-form data into dual-volume data tied to the metric"
+      ],
+      "counterexamples": [
+        "Defining the Hodge star without metric and orientation data is invalid in general"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DG-050"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DG-020"
+        }
+      ]
+    },
+    {
+      "id": "DG-100",
+      "name": "de Rham cohomology bridge seed",
+      "category": "topological bridges",
+      "input_form": "closed differential forms modulo exact forms",
+      "output_form": "de Rham cohomology classes",
+      "domains": [
+        "manifold",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard smooth-manifold and exterior-calculus setting is active"
+      ],
+      "operation": "Convert closed-versus-exact differential-form structure into cohomological invariants.",
+      "properties": [
+        "bridge_seed"
+      ],
+      "examples": [
+        "Exterior calculus yields topological invariants when closed forms are quotiented by exact forms"
+      ],
+      "counterexamples": [
+        "Treating every closed form as exact is invalid in general"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AT-070"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AT-070"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "DG-051"
+        }
+      ]
+    },
+    {
+      "id": "DG-101",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DG-102",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DG-103",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DG-104",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DG-105",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DG-106",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DG-107",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DG-108",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "DG-109",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "manifold",
+        "tangent_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

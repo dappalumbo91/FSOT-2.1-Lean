@@ -1,0 +1,757 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "STRUCTURAL_ALGEBRA_RULEBOOK.md",
+  "domain_symbols": {
+    "ordered_structure": "partially ordered and adjoint structures",
+    "algebraic_structure": "fields and non-associative algebras",
+    "symbolic": "symbolic structural-algebra expressions"
+  },
+  "rules": [
+    {
+      "id": "SA-001",
+      "name": "Poset antisymmetry seed",
+      "category": "order theory",
+      "input_form": "binary relation on a carrier set",
+      "output_form": "partial-order structure when reflexive, antisymmetric, and transitive",
+      "domains": [
+        "ordered_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A carrier set and comparison relation are fixed"
+      ],
+      "operation": "Recognize a partial order through reflexivity, antisymmetry, and transitivity.",
+      "properties": [
+        "axiom_seed"
+      ],
+      "examples": [
+        "Subset inclusion on a power set defines a standard partial order"
+      ],
+      "counterexamples": [
+        "A relation with cycles between distinct elements violates antisymmetry"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "SA-010",
+      "name": "Galois connection seed",
+      "category": "order theory",
+      "input_form": "paired monotone maps between ordered sets",
+      "output_form": "adjoint order-theoretic correspondence",
+      "domains": [
+        "ordered_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The ordered sets and monotone maps are fixed"
+      ],
+      "operation": "Use equivalent inequality conditions to recognize a Galois connection.",
+      "properties": [
+        "adjunction_seed"
+      ],
+      "examples": [
+        "Closure-style constructions often arise from paired order-reversing or order-preserving adjoint behavior"
+      ],
+      "counterexamples": [
+        "Unrelated monotone maps do not automatically define a Galois connection"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CT-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "CT-040"
+        }
+      ]
+    },
+    {
+      "id": "SA-020",
+      "name": "Field extension degree seed",
+      "category": "field theory",
+      "input_form": "tower of finite field extensions",
+      "output_form": "multiplicative degree relation",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A finite tower of fields is fixed"
+      ],
+      "operation": "Multiply intermediate degrees to obtain the total extension degree.",
+      "properties": [
+        "tower_seed"
+      ],
+      "examples": [
+        "Extension size in a tower can be decomposed into successive intermediate degrees"
+      ],
+      "counterexamples": [
+        "Treating arbitrary nonfield extensions as if degree multiplicativity automatically applies is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "SA-030",
+      "name": "Minimal polynomial seed",
+      "category": "field theory",
+      "input_form": "algebraic element over a base field",
+      "output_form": "unique monic minimal polynomial",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The element is algebraic over the base field"
+      ],
+      "operation": "Encode algebraic dependence by the unique monic polynomial of least degree that vanishes at the element.",
+      "properties": [
+        "polynomial_seed"
+      ],
+      "examples": [
+        "Algebraic dependence over a base field is encoded by the minimal polynomial relation"
+      ],
+      "counterexamples": [
+        "Transcendental elements do not possess minimal polynomials over the base field"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AA-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AA-050"
+        }
+      ]
+    },
+    {
+      "id": "SA-040",
+      "name": "Non-associative closure seed",
+      "category": "non-associative algebra",
+      "input_form": "bilinear product on a vector space or module-like object",
+      "output_form": "non-associative algebra structure",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Closure and bilinearity are fixed for the product"
+      ],
+      "operation": "Allow algebraic multiplication without imposing associativity.",
+      "properties": [
+        "structure_seed"
+      ],
+      "examples": [
+        "Lie and Jordan algebras are algebraic systems whose multiplication laws are not governed by ordinary associativity"
+      ],
+      "counterexamples": [
+        "Assuming every bilinear product is associative erases genuine non-associative structure"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "SA-050",
+      "name": "Jordan identity seed",
+      "category": "non-associative algebra",
+      "input_form": "commutative non-associative product",
+      "output_form": "Jordan-algebra structure when the Jordan identity holds",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A commutative bilinear product is fixed"
+      ],
+      "operation": "Recognize Jordan structure through the Jordan identity rather than associativity.",
+      "properties": [
+        "axiom_seed"
+      ],
+      "examples": [
+        "Symmetric operator products motivate Jordan-type algebraic structures distinct from associative multiplication"
+      ],
+      "counterexamples": [
+        "Any commutative bilinear product lacking the Jordan identity is not automatically a Jordan algebra"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "SA-060",
+      "name": "Complete lattice seed",
+      "category": "order theory",
+      "input_form": "partially ordered set with arbitrary subset bounds",
+      "output_form": "complete-lattice structure",
+      "domains": [
+        "ordered_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Arbitrary subset joins and meets are defined in the active order"
+      ],
+      "operation": "Recognize completeness by existence of joins and meets for arbitrary subsets.",
+      "properties": [
+        "completion_seed"
+      ],
+      "examples": [
+        "Power sets ordered by inclusion form complete lattices through unions and intersections"
+      ],
+      "counterexamples": [
+        "A finite-join structure without arbitrary subset bounds is not automatically complete"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "HA-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "HA-001"
+        }
+      ]
+    },
+    {
+      "id": "SA-070",
+      "name": "Galois correspondence seed",
+      "category": "field theory",
+      "input_form": "finite Galois extension with automorphism group data",
+      "output_form": "order-reversing correspondence between intermediate fields and subgroups",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A finite Galois extension and its automorphism group are fixed"
+      ],
+      "operation": "Relate intermediate fields to automorphism subgroups through the classical correspondence.",
+      "properties": [
+        "correspondence_seed"
+      ],
+      "examples": [
+        "Intermediate fields and automorphism subgroups are matched through a structural correspondence rather than by arbitrary enumeration"
+      ],
+      "counterexamples": [
+        "Arbitrary extensions without the required normal-separable hypotheses do not automatically satisfy the classical correspondence"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "SA-010",
+        "SA-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SA-010"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "SA-020"
+        }
+      ]
+    },
+    {
+      "id": "SA-080",
+      "name": "Alternative algebra seed",
+      "category": "non-associative algebra",
+      "input_form": "nonassociative product with left- and right-alternative laws",
+      "output_form": "alternative-algebra structure",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A bilinear product and active alternative identities are fixed"
+      ],
+      "operation": "Weaken associativity by imposing the alternative laws instead of full associativity.",
+      "properties": [
+        "law_seed"
+      ],
+      "examples": [
+        "Octonion multiplication is nonassociative but still alternative"
+      ],
+      "counterexamples": [
+        "A nonassociative product with no left- or right-alternative law is not automatically alternative"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "SA-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SA-040"
+        }
+      ]
+    },
+    {
+      "id": "SA-090",
+      "name": "Octonion norm seed",
+      "category": "non-associative algebra",
+      "input_form": "octonionic elements with composition-algebra norm",
+      "output_form": "multiplicative norm relation",
+      "domains": [
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard octonion product and norm are fixed"
+      ],
+      "operation": "Preserve norm multiplicativity despite nonassociative multiplication.",
+      "properties": [
+        "composition_seed"
+      ],
+      "examples": [
+        "Norm multiplicativity allows inverse and magnitude control despite nonassociative multiplication"
+      ],
+      "counterexamples": [
+        "Treating arbitrary nonassociative algebras as composition algebras with multiplicative norms is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "SA-080"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "SA-080"
+        }
+      ]
+    },
+    {
+      "id": "SA-091",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-092",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-093",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-094",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-095",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-096",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-097",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-098",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-099",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-100",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-101",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-102",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-103",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-104",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "SA-105",
+      "name": "Counterexample mining expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "universal claim C",
+      "output_form": "counterexample search status",
+      "domains": [
+        "ordered_structure",
+        "algebraic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Systematically attempt to falsify broad claims before promoting them.",
+      "properties": [
+        "auto_generated",
+        "counterexample_search"
+      ],
+      "examples": [
+        "Boundary or low-dimensional cases can reveal hidden failures"
+      ],
+      "counterexamples": [
+        "Treating untested universality as proven is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

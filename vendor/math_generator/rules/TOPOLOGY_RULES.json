@@ -1,0 +1,754 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "TOPOLOGY_RULEBOOK.md",
+  "domain_symbols": {
+    "topological_space": "topological spaces",
+    "subset": "subsets of a topological space",
+    "symbolic": "symbolic topology expressions"
+  },
+  "rules": [
+    {
+      "id": "TP-001",
+      "name": "Arbitrary union of open sets",
+      "category": "open sets",
+      "input_form": "union of open sets",
+      "output_form": "open set",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Each set in the union is open in the same topology"
+      ],
+      "operation": "Preserve openness under arbitrary unions.",
+      "properties": [
+        "topology_axiom"
+      ],
+      "examples": [
+        "The union of open intervals in R is open"
+      ],
+      "counterexamples": [
+        "Replacing arbitrary union with arbitrary intersection is invalid in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-002",
+      "name": "Finite intersection of open sets",
+      "category": "open sets",
+      "input_form": "finite intersection of open sets",
+      "output_form": "open set",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Each set in the intersection is open in the same topology"
+      ],
+      "operation": "Preserve openness under finite intersections.",
+      "properties": [
+        "topology_axiom"
+      ],
+      "examples": [
+        "Intersection of two open intervals is open or empty, both open in the standard topology"
+      ],
+      "counterexamples": [
+        "Infinite intersection of open sets need not be open"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-003",
+      "name": "Closed set complement rule",
+      "category": "closed sets",
+      "input_form": "subset A",
+      "output_form": "A closed iff complement open",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Characterize closed sets by openness of complements.",
+      "properties": [
+        "complement_duality"
+      ],
+      "examples": [
+        "A closed interval in R has open complement"
+      ],
+      "counterexamples": [
+        "Treating openness and closedness as mutually exclusive in general is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-010",
+      "name": "Continuity by preimages of open sets",
+      "category": "continuity",
+      "input_form": "function f",
+      "output_form": "continuous iff all open preimages are open",
+      "domains": [
+        "topological_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A domain and codomain topology are fixed"
+      ],
+      "operation": "Characterize continuity topologically through preimages of open sets.",
+      "properties": [
+        "equivalence_criterion"
+      ],
+      "examples": [
+        "Polynomial maps are continuous in the usual topology on R"
+      ],
+      "counterexamples": [
+        "Checking only images of open sets does not characterize continuity in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-011",
+      "name": "Basis criterion for a topology",
+      "category": "bases",
+      "input_form": "collection B of subsets",
+      "output_form": "basis classification",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The collection covers the space and satisfies local intersection refinement"
+      ],
+      "operation": "Recognize when a collection of subsets generates a topology as a basis.",
+      "properties": [
+        "generation_rule"
+      ],
+      "examples": [
+        "Open intervals form a basis for the standard topology on R"
+      ],
+      "counterexamples": [
+        "A collection missing points of the space cannot be a basis for the whole space"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-020",
+      "name": "Compactness by open covers",
+      "category": "compactness",
+      "input_form": "open cover of a space",
+      "output_form": "finite subcover exists",
+      "domains": [
+        "topological_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Compactness is interpreted through open covers"
+      ],
+      "operation": "Use the finite-subcover property to characterize compactness.",
+      "properties": [
+        "equivalence_criterion"
+      ],
+      "examples": [
+        "Closed interval [0,1] is compact in the standard topology on R"
+      ],
+      "counterexamples": [
+        "An open interval (0,1) is not compact in the standard topology on R"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-021",
+      "name": "Connectedness by no separation",
+      "category": "connectedness",
+      "input_form": "space X",
+      "output_form": "connected iff no separation exists",
+      "domains": [
+        "topological_space",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Characterize connectedness through impossibility of separation into two disjoint nonempty open pieces.",
+      "properties": [
+        "equivalence_criterion"
+      ],
+      "examples": [
+        "An interval in R is connected"
+      ],
+      "counterexamples": [
+        "A set split into two separated open pieces is disconnected"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-022",
+      "name": "Hausdorff separation rule",
+      "category": "separation axioms",
+      "input_form": "distinct points x and y",
+      "output_form": "disjoint open neighborhoods",
+      "domains": [
+        "topological_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The space is claimed to be Hausdorff"
+      ],
+      "operation": "Separate distinct points by disjoint open neighborhoods.",
+      "properties": [
+        "separation_axiom"
+      ],
+      "examples": [
+        "Standard Euclidean spaces are Hausdorff"
+      ],
+      "counterexamples": [
+        "A topology where distinct points cannot be separated by disjoint open sets is not Hausdorff"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-030",
+      "name": "Closure operator definition",
+      "category": "topology operators",
+      "input_form": "closure(A)",
+      "output_form": "smallest closed superset of A",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Interpret closure as the intersection of all closed supersets of a set.",
+      "properties": [
+        "operator_definition"
+      ],
+      "examples": [
+        "Closure of an open interval in standard real topology adds its limit boundary points"
+      ],
+      "counterexamples": [
+        "Omitting boundary limit points from closure is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-031",
+      "name": "Interior operator definition",
+      "category": "topology operators",
+      "input_form": "interior(A)",
+      "output_form": "largest open subset of A",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Interpret interior as the largest open set contained in a set.",
+      "properties": [
+        "operator_definition"
+      ],
+      "examples": [
+        "Interior of [0,1] in R is (0,1)"
+      ],
+      "counterexamples": [
+        "Including boundary points without an open neighborhood contained in A is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-032",
+      "name": "Boundary relation",
+      "category": "topology operators",
+      "input_form": "boundary(A)",
+      "output_form": "closure(A) minus interior(A)",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [],
+      "operation": "Express boundary through closure and interior.",
+      "properties": [
+        "operator_identity"
+      ],
+      "examples": [
+        "Boundary of (0,1) in R is {0,1}"
+      ],
+      "counterexamples": [
+        "Identifying boundary with the whole closure in general is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-040",
+      "name": "Subspace topology rule",
+      "category": "topological constructions",
+      "input_form": "subset Y of X",
+      "output_form": "open sets of Y are U intersection Y with U open in X",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Y is a subset of X with X already topologized"
+      ],
+      "operation": "Induce the subspace topology by intersecting ambient open sets with the subset.",
+      "properties": [
+        "construction_rule"
+      ],
+      "examples": [
+        "Open intervals intersected with a subspace inherit subspace-open sets"
+      ],
+      "counterexamples": [
+        "Using arbitrary subsets of Y as automatically open in the subspace is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-041",
+      "name": "Product topology basis rule",
+      "category": "topological constructions",
+      "input_form": "product space X x Y",
+      "output_form": "basis of products of open sets",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Factor topologies on X and Y are fixed"
+      ],
+      "operation": "Generate the product topology from basic open products.",
+      "properties": [
+        "construction_rule"
+      ],
+      "examples": [
+        "Rectangles U x V with U and V open form a basis in X x Y"
+      ],
+      "counterexamples": [
+        "Taking arbitrary products of non-open subsets does not define basic open sets"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-042",
+      "name": "Homeomorphism criterion",
+      "category": "topological equivalence",
+      "input_form": "bijection f between spaces",
+      "output_form": "homeomorphism classification",
+      "domains": [
+        "topological_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "f and its inverse are continuous"
+      ],
+      "operation": "Recognize topological equivalence through a continuous bijection with continuous inverse.",
+      "properties": [
+        "equivalence_criterion"
+      ],
+      "examples": [
+        "Homeomorphic spaces have the same topology up to relabeling by a continuous bijection with continuous inverse"
+      ],
+      "counterexamples": [
+        "A bijection that is continuous but whose inverse is not continuous is not a homeomorphism"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-050",
+      "name": "Dense-set criterion",
+      "category": "topology operators",
+      "input_form": "subset A of X",
+      "output_form": "dense iff closure(A) = X",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A is a subset of the ambient space X"
+      ],
+      "operation": "Characterize density through equality of closure with the ambient space.",
+      "properties": [
+        "equivalence_criterion"
+      ],
+      "examples": [
+        "The rationals are dense in the real line under the standard topology"
+      ],
+      "counterexamples": [
+        "Merely being infinite does not imply density"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "TP-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-030"
+        }
+      ]
+    },
+    {
+      "id": "TP-051",
+      "name": "Nowhere-dense criterion",
+      "category": "topology operators",
+      "input_form": "subset A of X",
+      "output_form": "interior(closure(A)) is empty",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A is a subset of the ambient space X"
+      ],
+      "operation": "Characterize nowhere-dense sets by emptiness of the interior of their closure.",
+      "properties": [
+        "equivalence_criterion"
+      ],
+      "examples": [
+        "Finite subsets of the real line are nowhere dense in the standard topology"
+      ],
+      "counterexamples": [
+        "A dense open set is not nowhere dense"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "TP-030",
+        "TP-031"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-030"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-031"
+        }
+      ]
+    },
+    {
+      "id": "TP-052",
+      "name": "Baire category seed",
+      "category": "global properties",
+      "input_form": "complete metric space or locally compact Hausdorff space",
+      "output_form": "countable intersections of dense open sets remain dense",
+      "domains": [
+        "topological_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The space satisfies the standard Baire-category hypotheses"
+      ],
+      "operation": "Use the Baire-category principle to preserve density under countable intersections of dense open sets.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Baire category prevents a complete metric space from being expressed as a countable union of nowhere dense sets in the standard theorem setting"
+      ],
+      "counterexamples": [
+        "Applying the Baire conclusion outside the stated hypotheses is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "TP-051"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-051"
+        }
+      ]
+    },
+    {
+      "id": "TP-060",
+      "name": "Quotient topology definition",
+      "category": "topological constructions",
+      "input_form": "surjection q: X -> Y and subset U of Y",
+      "output_form": "U open iff q^(-1)(U) is open in X",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [
+        "q is the designated quotient map"
+      ],
+      "operation": "Define quotient-space openness by preimages under the quotient map.",
+      "properties": [
+        "construction_rule"
+      ],
+      "examples": [
+        "Quotient spaces transport openness through the identifying surjection"
+      ],
+      "counterexamples": [
+        "Testing quotient openness by image preservation alone is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "TP-061",
+      "name": "Continuous image of a compact space is compact",
+      "category": "compactness",
+      "input_form": "continuous map f: X -> Y with compact X",
+      "output_form": "f(X) compact",
+      "domains": [
+        "topological_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "f is continuous",
+        "X is compact"
+      ],
+      "operation": "Preserve compactness under continuous images.",
+      "properties": [
+        "preservation_rule"
+      ],
+      "examples": [
+        "Continuous maps send compact intervals to compact subsets in their codomain topology"
+      ],
+      "counterexamples": [
+        "Dropping continuity invalidates the preservation claim"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "TP-010",
+        "TP-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-010"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-020"
+        }
+      ]
+    },
+    {
+      "id": "TP-062",
+      "name": "Compact subset of a Hausdorff space is closed",
+      "category": "compactness",
+      "input_form": "compact subset K of Hausdorff space X",
+      "output_form": "K closed in X",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [
+        "K is compact",
+        "X is Hausdorff"
+      ],
+      "operation": "Combine compactness and Hausdorff separation to conclude closedness.",
+      "properties": [
+        "preservation_rule"
+      ],
+      "examples": [
+        "Compact intervals in Euclidean spaces are closed because Euclidean spaces are Hausdorff"
+      ],
+      "counterexamples": [
+        "Assuming compact subsets are closed in arbitrary non-Hausdorff spaces is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "TP-003",
+        "TP-020",
+        "TP-022"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-003"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-020"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-022"
+        }
+      ]
+    },
+    {
+      "id": "TP-063",
+      "name": "Path connected implies connected",
+      "category": "connectedness",
+      "input_form": "path-connected space X",
+      "output_form": "connected space X",
+      "domains": [
+        "topological_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "For every two points in X, a continuous path joining them exists"
+      ],
+      "operation": "Use path-connectedness as a sufficient condition for connectedness.",
+      "properties": [
+        "implication_rule"
+      ],
+      "examples": [
+        "Connected open intervals in the real line are path connected and therefore connected"
+      ],
+      "counterexamples": [
+        "Reversing the implication in general is invalid without extra hypotheses"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "TP-021"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-021"
+        }
+      ]
+    },
+    {
+      "id": "TP-064",
+      "name": "Finite product compactness rule",
+      "category": "compactness",
+      "input_form": "finite family of compact spaces",
+      "output_form": "compact product space",
+      "domains": [
+        "topological_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The product topology is used",
+        "Only finitely many factors are involved"
+      ],
+      "operation": "Preserve compactness across finite products.",
+      "properties": [
+        "preservation_rule"
+      ],
+      "examples": [
+        "[0,1] x [0,1] is compact in the standard product topology"
+      ],
+      "counterexamples": [
+        "Replacing compactness by openness in the same statement is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "TP-020",
+        "TP-041"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-020"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-041"
+        }
+      ]
+    },
+    {
+      "id": "TP-065",
+      "name": "Product Hausdorff rule",
+      "category": "separation axioms",
+      "input_form": "finite family of Hausdorff spaces",
+      "output_form": "Hausdorff product space",
+      "domains": [
+        "topological_space",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The product topology is used",
+        "Only finitely many factors are involved"
+      ],
+      "operation": "Preserve the Hausdorff property across finite products.",
+      "properties": [
+        "preservation_rule"
+      ],
+      "examples": [
+        "Euclidean product spaces remain Hausdorff under the product topology"
+      ],
+      "counterexamples": [
+        "Claiming every product space is Hausdorff regardless of the factors is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "TP-022",
+        "TP-041"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-022"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "TP-041"
+        }
+      ]
+    },
+    {
+      "id": "TP-066",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "TP-067",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "topological_space",
+        "subset",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

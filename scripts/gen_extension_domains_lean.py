@@ -46,6 +46,9 @@ DEDICATED_GENERATORS = {
     "Mathematics_Computational",
     "Materials_Engineering",
     "Computational_Reasoning",
+    "Math_Generator_Rules_Eval",
+    "Trinary_OS_Portable",
+    "Materials_Species_Bridge",
 }
 
 LEAN_SIGN = {
@@ -79,6 +82,9 @@ LEAN_SIGN = {
     "Mathematics_Computational": ("particle", "particle_raw_S_positive"),
     "Materials_Engineering": ("material", "material_raw_S_positive"),
     "Computational_Reasoning": ("consciousness", "consciousness_raw_S_positive"),
+    "Math_Generator_Rules_Eval": ("particle", "particle_raw_S_positive"),
+    "Trinary_OS_Portable": ("consciousness", "consciousness_raw_S_positive"),
+    "Materials_Species_Bridge": ("material", "material_raw_S_positive"),
 }
 
 

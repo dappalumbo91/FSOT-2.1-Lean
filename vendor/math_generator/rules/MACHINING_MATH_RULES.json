@@ -1,0 +1,392 @@
+{
+    "schema_version": "1.0",
+    "knowledge_base": "math-generator",
+    "document_source": "MACHINING_MATH_RULEBOOK.md",
+    "domain_symbols": {
+        "machining": "CNC feeds, speeds, material removal, and tool life math",
+        "symbolic": "symbolic expressions used by this domain"
+    },
+    "rules": [
+        {
+            "id": "MA-001",
+            "name": "Spindle Speed (RPM)",
+            "category": "speeds_and_feeds",
+            "input_form": "cutting speed V_c, tool/workpiece diameter D",
+            "output_form": "N = (1000 * V_c) / (pi * D) in metric, or N = (12 * V_c) / (pi * D) in imperial",
+            "domains": [
+                "machining",
+                "symbolic"
+            ],
+            "preconditions": [
+                "D > 0",
+                "V_c > 0"
+            ],
+            "operation": "Calculate the required spindle speed in RPM from the recommended surface cutting speed.",
+            "properties": [
+                "kinematic"
+            ],
+            "examples": [
+                "V_c = 100 m/min, D = 10 mm -> N = (1000 * 100) / (pi * 10) \u00e2\u2030\u02c6 3183 RPM"
+            ],
+            "counterexamples": [
+                "Using the imperial formula for metric inputs results in vastly incorrect RPM"
+            ],
+            "common_errors": [
+                "Confusing tool diameter (milling) with workpiece diameter (turning)"
+            ]
+        },
+        {
+            "id": "MA-002",
+            "name": "Feed Rate (Table Feed)",
+            "category": "speeds_and_feeds",
+            "input_form": "feed per tooth f_z, number of flutes/teeth z, spindle speed N",
+            "output_form": "V_f = f_z * z * N",
+            "domains": [
+                "machining",
+                "symbolic"
+            ],
+            "preconditions": [
+                "z >= 1",
+                "N > 0",
+                "f_z > 0"
+            ],
+            "operation": "Calculate the linear feed rate of the machine table.",
+            "properties": [
+                "kinematic"
+            ],
+            "examples": [
+                "f_z = 0.1 mm/tooth, z = 4, N = 3000 RPM -> V_f = 1200 mm/min"
+            ],
+            "counterexamples": [
+                "Assuming feed rate is independent of spindle speed"
+            ],
+            "common_errors": [
+                "Forgetting to multiply by the number of effective flutes z"
+            ]
+        },
+        {
+            "id": "MA-003",
+            "name": "Material Removal Rate (Milling)",
+            "category": "material_removal",
+            "input_form": "axial depth of cut a_p, radial depth of cut a_e, feed rate V_f",
+            "output_form": "MRR = a_p * a_e * V_f",
+            "domains": [
+                "machining",
+                "symbolic"
+            ],
+            "preconditions": [
+                "a_p > 0",
+                "a_e > 0",
+                "V_f > 0"
+            ],
+            "operation": "Calculate the volume of material removed per unit time.",
+            "properties": [
+                "volumetric"
+            ],
+            "examples": [
+                "a_p = 5 mm, a_e = 2 mm, V_f = 1000 mm/min -> MRR = 10,000 mm^3/min"
+            ],
+            "counterexamples": [
+                "MRR falls to zero if no radial engagement exists"
+            ],
+            "common_errors": [
+                "Using cutting speed V_c instead of feed rate V_f"
+            ]
+        },
+        {
+            "id": "MA-004",
+            "name": "Surface Roughness (Turning)",
+            "category": "surface_finish",
+            "input_form": "feed per revolution f, tool nose radius r_epsilon",
+            "output_form": "R_a \u00e2\u2030\u02c6 (f^2) / (32 * r_epsilon)",
+            "domains": [
+                "machining",
+                "symbolic"
+            ],
+            "preconditions": [
+                "r_epsilon > 0",
+                "f > 0"
+            ],
+            "operation": "Estimate theoretical surface roughness based on tool geometry and feed.",
+            "properties": [
+                "geometric",
+                "approximation"
+            ],
+            "examples": [
+                "f = 0.2 mm/rev, r_eps = 0.8 mm -> R_max \u00e2\u2030\u02c6 6.25 \u00c2\u00b5m"
+            ],
+            "counterexamples": [
+                "Vibration will cause actual Ra to exceed theoretical Ra"
+            ],
+            "common_errors": [
+                "Using feed per minute instead of feed per revolution"
+            ]
+        },
+        {
+            "id": "MA-005",
+            "name": "Taylor Tool Life Equation",
+            "category": "tool_life",
+            "input_form": "cutting speed V_c, tool life T, constants C and n",
+            "output_form": "V_c * T^n = C",
+            "domains": [
+                "machining",
+                "symbolic"
+            ],
+            "preconditions": [
+                "C > 0",
+                "0 < n < 1"
+            ],
+            "operation": "Model the relationship between cutting speed and tool life.",
+            "properties": [
+                "empirical",
+                "exponential"
+            ],
+            "examples": [
+                "n=0.25, C=300, V_c=150 m/min -> T = 16 minutes"
+            ],
+            "counterexamples": [
+                "Equation breaks arbitrarily at extremely low cutting speeds"
+            ],
+            "common_errors": [
+                "Assuming constants are material-independent"
+            ]
+        },
+        {
+            "id": "MA-006",
+            "name": "Average Chip Thickness",
+            "category": "cutting_physics",
+            "input_form": "feed per tooth f_z, radial depth a_e, tool diameter D",
+            "output_form": "h_m = f_z * sqrt(a_e / D)",
+            "domains": [
+                "machining",
+                "symbolic"
+            ],
+            "preconditions": [
+                "D > 0",
+                "a_e <= D/2"
+            ],
+            "operation": "Calculate the average chip thickness to optimize feed for chip thinning.",
+            "properties": [
+                "geometric"
+            ],
+            "examples": [
+                "f_z = 0.1, a_e = 1 mm, D = 10 mm -> h_m \u00e2\u2030\u02c6 0.0316 mm"
+            ],
+            "counterexamples": [
+                "If slotting (a_e = D), approximation is invalid; use h_m = f_z"
+            ],
+            "common_errors": [
+                "Ignoring chip thinning at low radial depths"
+            ]
+        },
+        {
+            "id": "MA-007",
+            "name": "Cutting Power Required",
+            "category": "machine_requirements",
+            "input_form": "material removal rate MRR, specific cutting force k_c, efficiency eta",
+            "output_form": "P_c = (MRR * k_c) / (60 * 10^6 * eta)",
+            "domains": [
+                "machining",
+                "symbolic"
+            ],
+            "preconditions": [
+                "eta > 0",
+                "eta <= 1"
+            ],
+            "operation": "Determine the spindle motor power required.",
+            "properties": [
+                "thermodynamic",
+                "power"
+            ],
+            "examples": [
+                "MRR = 100 cm^3/min, k_c = 2000 N/mm^2, eta=0.8 -> P \u00e2\u2030\u02c6 4.16 kW"
+            ],
+            "counterexamples": [
+                "Dull tools significantly increase required k_c"
+            ],
+            "common_errors": [
+                "Ignoring drivetrain efficiency losses"
+            ]
+        },
+        {
+            "id": "MA-008",
+            "name": "Tapping Feed Rate",
+            "category": "speeds_and_feeds",
+            "input_form": "spindle speed N, thread pitch p",
+            "output_form": "V_f = N * p",
+            "domains": [
+                "machining",
+                "symbolic"
+            ],
+            "preconditions": [
+                "N > 0",
+                "p > 0"
+            ],
+            "operation": "Calculate the exact Z-axis feed rate required for rigid tapping.",
+            "properties": [
+                "kinematic",
+                "synchronous"
+            ],
+            "examples": [
+                "M8x1.25 tap, N = 500 RPM -> V_f = 625 mm/min"
+            ],
+            "counterexamples": [
+                "Rigid tapping requires absolute synchronization versus floating holders"
+            ],
+            "common_errors": [
+                "Multiplying by threads per inch (TPI) instead of pitch"
+            ]
+        },
+        {
+            "id": "MA-009",
+            "name": "Bending Deflection of End Mill",
+            "category": "tool_physics",
+            "input_form": "cutting force F_c, tool length L, Youngs modulus E, moment of inertia I",
+            "output_form": "delta = (F_c * L^3) / (3 * E * I)",
+            "domains": [
+                "machining",
+                "symbolic"
+            ],
+            "preconditions": [
+                "Tool modeled as cantilever beam"
+            ],
+            "operation": "Calculate tool deflection under lateral cutting force.",
+            "properties": [
+                "mechanical",
+                "deflection"
+            ],
+            "examples": [
+                "Doubling tool length increases deflection by 8x"
+            ],
+            "counterexamples": [
+                "Tapered tools violate uniform beam assumptions"
+            ],
+            "common_errors": [
+                "Treating HSS and Carbide as having equal rigidity"
+            ]
+        },
+        {
+            "id": "MA-013",
+            "domains": [
+                "machining",
+                "symbolic",
+                "fsot"
+            ],
+            "category": "surface_finish",
+            "input_form": "feed f, tool radius r_eps, depth a_p, speed v_c, norm v_cnorm",
+            "preconditions": [
+                "r_eps > 0",
+                "f > 0"
+            ],
+            "common_errors": [
+                "Using arbitrary ML weights instead of FSOT derived dimensionless constants."
+            ],
+            "name": "FSOT Intrinsic Surface Roughness (Turning)",
+            "counterexamples": [
+                "Standard math excludes ap and vc completely, missing thermodynamic and deflection realities."
+            ],
+            "examples": [
+                "f=0.07, ap=0.25, vc=350 -> FSOT predicts 0.315 um, matching physical reality better than standard."
+            ],
+            "properties": [
+                "fsot_derived",
+                "empirical_precision"
+            ],
+            "operation": "Predict true surface roughness using zero-free-parameter FSOT physical compensation.",
+            "output_form": "R_a = (f^2 / (32 * r_eps)) * (1 + (gamma/pi^2)*a_p) * (1 - (gamma/e^2)*v_cnorm)"
+        },
+        {
+            "id": "MA-014",
+            "domains": [
+                "machining",
+                "symbolic",
+                "fsot"
+            ],
+            "category": "tool_life",
+            "input_form": "speed V_c, constants C and n, reference speed V_ref, golden ratio phi",
+            "preconditions": [
+                "V_c > 0",
+                "phi > 0"
+            ],
+            "common_errors": [
+                "Ignoring exponential thermal degradation beyond the Taylor baseline."
+            ],
+            "name": "FSOT Thermodynamic Tool Life Decay",
+            "counterexamples": [
+                "Taylor's equation implies infinite life at zero speed, missing oxidation and ambient entropy scales."
+            ],
+            "examples": [
+                "V_c = 150, standard predicts 16 mins. FSOT predicts 14.2 mins due to harmonic resonance fatigue."
+            ],
+            "properties": [
+                "fsot_derived",
+                "thermodynamic"
+            ],
+            "operation": "Predict real tool life bounding empirical Taylor coefficients with FSOT golden ratio entropy.",
+            "output_form": "T_fsot = ((C / V_c)^(1/n)) * (1 - (gamma/phi) * ln(V_c / V_ref))"
+        },
+        {
+            "id": "MA-015",
+            "domains": [
+                "machining",
+                "symbolic",
+                "fsot"
+            ],
+            "category": "tool_physics",
+            "input_form": "force F_c, length L, diameter D, modulus E, inertia I",
+            "preconditions": [
+                "L > 0",
+                "D > 0",
+                "E > 0"
+            ],
+            "common_errors": [
+                "Treating the spindle/collet connection as infinitely rigid."
+            ],
+            "name": "FSOT Dynamic Deflection Resonance",
+            "counterexamples": [
+                "Standard linear beam deflection completely ignores harmonic chatter frequencies induced by the L/D ratio."
+            ],
+            "examples": [
+                "L=50, D=10. Standard delta=0.02mm. FSOT delta=0.021mm (capturing structural resonance)."
+            ],
+            "properties": [
+                "fsot_derived",
+                "mechanical",
+                "resonance"
+            ],
+            "operation": "Account for non-linear structural resonance using FSOT dimensional bounds.",
+            "output_form": "delta_fsot = ((F_c * L^3) / (3 * E * I)) * (1 + (gamma/pi^2) * (L/D))"
+        },
+        {
+            "id": "MA-016",
+            "domains": [
+                "machining",
+                "symbolic",
+                "fsot"
+            ],
+            "category": "machine_requirements",
+            "input_form": "removal rate MRR, specific force k_c, efficiency eta, MRR_norm",
+            "preconditions": [
+                "MRR > 0",
+                "eta > 0"
+            ],
+            "common_errors": [
+                "Assuming constant efficiency independent of the material load."
+            ],
+            "name": "FSOT True Cutting Power Draw",
+            "counterexamples": [
+                "Theoretical power scales perfectly linearly; real spindles experience exponentially worse torque loss at peak MRR."
+            ],
+            "examples": [
+                "MRR=100. Standard predicts 4.16 kW. FSOT predicts 4.32 kW due to load inefficiency flow."
+            ],
+            "properties": [
+                "fsot_derived",
+                "thermodynamic",
+                "power"
+            ],
+            "operation": "Predict the true electrical power load using FSOT spatial energy translation limits.",
+            "output_form": "P_fsot = ((MRR * k_c) / (60 * 10^6 * eta)) * (1 + (e/pi^3) * MRR_norm)"
+        }
+    ]
+}

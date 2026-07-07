@@ -1,4 +1,4 @@
-generated_at: '2026-07-07T16:27:06.487766+00:00'
+generated_at: '2026-07-07T23:15:08.366359+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,14 +6,14 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 85
+  lean_formal_modules: 89
   proved_claims: 65
   sorry_count_formal: 0
-  lean_build_ok: false
-  tiers_complete: 26
-  tiers_total: 27
-  percent_complete: 96.3
-current_tier: Tier 27 Synthetic Biology/Quantum Materials + multi-hero + climate scale-up
+  lean_build_ok: true
+  tiers_complete: 27
+  tiers_total: 28
+  percent_complete: 96.4
+current_tier: Tier 30 Portable bridges — math rules eval, trinary OS, materials↔species
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -480,7 +480,9 @@ tier_coverage:
   - MagnetosphereExtendedPriors
   - MagnetospherePriors
   - MaterialsEngineeringPriors
+  - MaterialsSpeciesBridgePriors
   - MathGeneratorPriors
+  - MathGeneratorRulesEvalPriors
   - MathematicsComputationalPriors
   - NeuroimmunologyPriors
   - NeuronCohortPriors
@@ -504,10 +506,12 @@ tier_coverage:
   - SoulSiblingPriors
   - SpaceWeatherPriors
   - SpeciesPriors
+  - StructureCalibrationPriors
   - SyntheticBiologyPriors
   - TectonicsPriors
   - ThesisSimulationPriors
   - TrinaryFluidPriors
+  - TrinaryOSPortablePriors
   - TrinaryOSPriors
   - UnifiedDBPriors
   - VibRegisterPriors
@@ -614,7 +618,7 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 62
+    scientific_domains_covered: 66
     expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -915,6 +919,27 @@ tier_coverage:
   - FSOT.Formal.MathematicsComputationalPriors
   - FSOT.Formal.MaterialsEngineeringPriors
   - FSOT.Formal.ComputationalReasoningPriors
+- tier: 30
+  name: Portable bridges — math rules eval, trinary OS, materials↔species
+  status: complete
+  metrics:
+    math_generator_rules_eval_records: 1520
+    math_generator_rules_eval_median_error_pct: 0.0
+    math_generator_rules_schema_fail_count: 0
+    trinary_os_portable_records: 8
+    trinary_os_portable_oracle_count: 3
+    materials_species_bridge_records: 45
+    materials_species_bridge_metals: 10
+    materials_species_bridge_median_error_pct: 0.0
+  artifacts:
+  - data/math_generator_rules_eval_manifest.yaml
+  - data/trinary_os_portable_manifest.yaml
+  - data/materials_species_bridge_manifest.yaml
+  - vendor/trinary_os/target
+  - vendor/species/fsot_species_catalog.json
+  - FSOT.Formal.MathGeneratorRulesEvalPriors
+  - FSOT.Formal.TrinaryOSPortablePriors
+  - FSOT.Formal.MaterialsSpeciesBridgePriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -1096,6 +1121,18 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.ComputationalReasoningPriors
+- domain: Math_Generator_Rules_Eval
+  tier: 30
+  record_count: 1520
+  lean_module: FSOT.Formal.MathGeneratorRulesEvalPriors
+- domain: Trinary_OS_Portable
+  tier: 30
+  record_count: 8
+  lean_module: FSOT.Formal.TrinaryOSPortablePriors
+- domain: Materials_Species_Bridge
+  tier: 30
+  record_count: 45
+  lean_module: FSOT.Formal.MaterialsSpeciesBridgePriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1352,6 +1389,83 @@ theory_crosswalk:
     lean_modules:
     - FSOT.Formal.NeuronMultiHeroPriors
     - FSOT.Formal.NeuronCohortPriors
+  Linguistics_Formal:
+    tier: 29
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - neural
+    labs:
+    - linguistics_lab
+    - linguistics_formal_lab
+    lean_module: FSOT.Formal.LinguisticsFormalPriors
+    note: Thickens Economics/Psychology/Sociology consciousness proxies
+  Mathematics_Computational:
+    tier: 29
+    D_eff: 17
+    maps_to_lean:
+    - particle
+    - mathematical
+    labs:
+    - math_generator_lab
+    - math_generator_rules
+    lean_module: FSOT.Formal.MathematicsComputationalPriors
+  Materials_Engineering:
+    tier: 29
+    D_eff: 14
+    maps_to_lean:
+    - material
+    - energy
+    labs:
+    - materials_engineering_lab
+    - smiles_lab
+    - species_catalog
+    lean_module: FSOT.Formal.MaterialsEngineeringPriors
+  Computational_Reasoning:
+    tier: 29
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - fic_intelligence_compressor
+    - trinary_os
+    - knowledge_base
+    lean_module: FSOT.Formal.ComputationalReasoningPriors
+  Math_Generator_Rules_Eval:
+    tier: 30
+    D_eff: 17
+    maps_to_lean:
+    - particle
+    - mathematical
+    - consciousness
+    labs:
+    - math_generator_rules
+    - math_generator_lab
+    lean_module: FSOT.Formal.MathGeneratorRulesEvalPriors
+  Trinary_OS_Portable:
+    tier: 30
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - trinary_os
+    - trinary_os_portable
+    lean_module: FSOT.Formal.TrinaryOSPortablePriors
+  Materials_Species_Bridge:
+    tier: 30
+    D_eff: 14
+    maps_to_lean:
+    - material
+    - energy
+    labs:
+    - materials_engineering_lab
+    - smiles_lab
+    - species_catalog
+    lean_module: FSOT.Formal.MaterialsSpeciesBridgePriors
 lean_formal_modules:
 - AetherPrimePriors
 - BiologyStrictEmpiricalPriors
@@ -1396,7 +1510,9 @@ lean_formal_modules:
 - MagnetosphereExtendedPriors
 - MagnetospherePriors
 - MaterialsEngineeringPriors
+- MaterialsSpeciesBridgePriors
 - MathGeneratorPriors
+- MathGeneratorRulesEvalPriors
 - MathematicsComputationalPriors
 - NeuroimmunologyPriors
 - NeuronCohortPriors
@@ -1419,10 +1535,12 @@ lean_formal_modules:
 - SoulSiblingPriors
 - SpaceWeatherPriors
 - SpeciesPriors
+- StructureCalibrationPriors
 - SyntheticBiologyPriors
 - TectonicsPriors
 - ThesisSimulationPriors
 - TrinaryFluidPriors
+- TrinaryOSPortablePriors
 - TrinaryOSPriors
 - UnifiedDBPriors
 - VibRegisterPriors

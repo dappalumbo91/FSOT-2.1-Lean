@@ -19,6 +19,7 @@ MANIFEST_PATH = ROOT / "data" / "species_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import REPO_ROOT, rel_repo_path, species_catalog_path  # noqa: E402
 from species_catalog import flatten_catalog, load_catalog, summarize_species  # noqa: E402
 
 
@@ -34,14 +35,20 @@ def ingest_species(manifest_path: Path = MANIFEST_PATH) -> dict:
     if yaml is None:
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
-    root = Path(manifest["machine_molecule_root"])
-    catalog_path = root / manifest["artifacts"]["catalog_json"]["path"]
+    raw_root = manifest["machine_molecule_root"]
+    if raw_root.startswith("vendor/"):
+        catalog_path = species_catalog_path()
+    else:
+        root = Path(raw_root)
+        if not root.is_absolute():
+            root = REPO_ROOT / root
+        catalog_path = root / manifest["artifacts"]["catalog_json"]["path"]
     catalog = load_catalog(catalog_path)
     rows = flatten_catalog(catalog)
     summary = summarize_species(catalog, rows)
     return {
         "present": catalog_path.exists(),
-        "catalog_path": str(catalog_path),
+        "catalog_path": rel_repo_path(catalog_path),
         "catalog_sha256": sha256_file(catalog_path) if catalog_path.exists() else None,
         "rows": rows,
         **summary,

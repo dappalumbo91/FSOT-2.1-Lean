@@ -161,6 +161,42 @@ def linguistics_root(*, require: bool = False) -> Path | None:
     return path
 
 
+def math_generator_rules_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_MATH_GENERATOR_RULES_ROOT",
+        VENDOR_ROOT / "math_generator" / "rules",
+        _DESKTOP / "Math generator",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Math generator rules root not found.")
+    assert path is not None
+    return path
+
+
+def trinary_os_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_TRINARY_OS_ROOT",
+        VENDOR_ROOT / "trinary_os",
+        _DESKTOP / "Fsot trinary" / "fsot_os",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Trinary OS root not found.")
+    assert path is not None
+    return path
+
+
+def species_catalog_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_SPECIES_CATALOG",
+        VENDOR_ROOT / "species" / "fsot_species_catalog.json",
+        _DESKTOP / "FSOT_Machine_And_Molecule" / "fsot_species_catalog.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Species catalog not found.")
+    assert path is not None
+    return path
+
+
 def math_generator_comparison_path(*, require: bool = True) -> Path:
     path = _resolve(
         "FSOT_MATH_GENERATOR_COMPARISON",

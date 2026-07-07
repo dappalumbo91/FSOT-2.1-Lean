@@ -1,0 +1,1367 @@
+{
+  "$schema": "schemas/fsot_overlay_rule_document.schema.json",
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "FSOT_OVERLAY_RULEBOOK.md",
+  "domain_symbols": {
+    "overlay_basis": "Declared FSOT primitive basis and admissibility constraints",
+    "overlay_workflow": "Workflow objects used to generate and rank FSOT candidate formulas",
+    "overlay_prediction": "Prediction records tied to explicit provenance and failure classes",
+    "overlay_theorem": "Theorem-level FSOT records normalized from executable and thesis sources",
+    "overlay_benchmark": "Concrete benchmark-report artifacts promoted with held-out metrics and provenance",
+    "normalized_branch_link": "Base mathematics branches used to route supporting reasoning"
+  },
+  "rules": [
+    {
+      "id": "FO-001",
+      "name": "Seed Set Primitive Normalization",
+      "category": "primitive_normalization",
+      "input_form": "A source claim declares FSOT core seeds and/or explicitly admitted auxiliary constants.",
+      "output_form": "A normalized overlay basis record with tracked symbols, source-family framing, and branch links.",
+      "domains": [
+        "fsot_overlay",
+        "general_mathematics",
+        "number_theory"
+      ],
+      "preconditions": [
+        "The source file has been admitted to the overlay intake manifest.",
+        "The declared seed basis or auxiliary constant set is explicitly named in the source evidence."
+      ],
+      "operation": "Create a basis-level overlay record before any constant, workflow, or prediction claim is promoted, while preserving source-family differences in how the basis is framed.",
+      "properties": [
+        "The basis record stays overlay-scoped and is not merged into the base mathematics corpus.",
+        "The overlay preserves disagreements between source families instead of flattening them into a false consensus.",
+        "Downstream claims must point back to the normalized primitive record."
+      ],
+      "examples": [
+        "Normalize the thesis four-core-seed framing {pi, e, phi, gamma} together with the mathematical-key auxiliary Catalan/G usage as overlay basis record fop-001."
+      ],
+      "counterexamples": [
+        "Treating the declared basis as already-validated foundational mathematics without provenance tracking.",
+        "Collapsing distinct source-family seed framings into a single invented statement that no admitted source actually makes."
+      ],
+      "common_errors": [
+        "Promoting derived constants before the basis record is normalized.",
+        "Forgetting that branch links describe supporting math routes rather than endorsement of the FSOT claim itself."
+      ],
+      "cross_links": [
+        "GM-001",
+        "GM-040",
+        "FO-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "GM-001",
+          "note": "Object normalization is required before overlay primitives can be tracked."
+        }
+      ],
+      "claim_kind": "primitive",
+      "overlay_status": "normalized",
+      "source_ids": [
+        "fsot_core_3_0"
+      ],
+      "file_ids": [
+        "fof-001"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "B. Number theory"
+      ],
+      "intake_record_ids": [
+        "fop-001"
+      ]
+    },
+    {
+      "id": "FO-010",
+      "name": "Zero-Free-Parameter Overlay Constraint",
+      "category": "constraint_management",
+      "input_form": "An FSOT claim or derivation path proposes a formula, workflow, or prediction object.",
+      "output_form": "An overlay admissibility judgment annotated with the zero-free-parameter constraint.",
+      "domains": [
+        "fsot_overlay",
+        "general_mathematics",
+        "symbolic_computation"
+      ],
+      "preconditions": [
+        "The candidate claim is tied to a normalized primitive or workflow record.",
+        "The claim exposes its parameter sources explicitly enough to audit."
+      ],
+      "operation": "Reject or flag any promoted overlay record that violates the declared zero-free-parameter constraint.",
+      "properties": [
+        "The constraint acts as a global overlay invariant.",
+        "Parameter provenance must be auditable from source record to promoted claim."
+      ],
+      "examples": [
+        "Accept a prediction whose constants are routed entirely through the declared primitive seed set and tracked layers."
+      ],
+      "counterexamples": [
+        "Admitting a curve-fit constant with no provenance simply because the numeric result is close to observation."
+      ],
+      "common_errors": [
+        "Confusing a symbolic placeholder with a justified zero-parameter quantity.",
+        "Treating undocumented tuning as harmless bookkeeping."
+      ],
+      "cross_links": [
+        "GM-020",
+        "GM-080",
+        "FO-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-001",
+          "note": "Constraint checking requires a normalized primitive basis."
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "GM-020",
+          "note": "The constraint is treated as an invariant over the overlay derivation."
+        }
+      ],
+      "claim_kind": "constraint",
+      "overlay_status": "normalized",
+      "source_ids": [
+        "fsot_core_3_0"
+      ],
+      "file_ids": [
+        "fof-001"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "F. Symbolic computation"
+      ],
+      "intake_record_ids": [
+        "fop-002"
+      ]
+    },
+    {
+      "id": "FO-020",
+      "name": "Scalar Engine Componentization",
+      "category": "primitive_normalization",
+      "input_form": "An FSOT source expresses scalar-engine variables or intermediate symbolic components.",
+      "output_form": "A set of normalized overlay engine objects with tracked dependencies.",
+      "domains": [
+        "fsot_overlay",
+        "dynamical_systems",
+        "fluid_mechanics"
+      ],
+      "preconditions": [
+        "The primitive basis has already been normalized.",
+        "The source identifies engine symbols or intermediate quantities explicitly."
+      ],
+      "operation": "Split scalar-engine expressions into reusable named overlay objects before any prediction record is promoted.",
+      "properties": [
+        "Predictions should expose which engine components they consume.",
+        "Engine symbols remain overlay-native even when their supporting mathematics uses base branches."
+      ],
+      "examples": [
+        "Normalize S, K, D_eff, and psi_con as engine objects rather than leaving them embedded in prose."
+      ],
+      "counterexamples": [
+        "Using an unexplained scalar engine blob with no symbol-level provenance."
+      ],
+      "common_errors": [
+        "Collapsing distinct engine symbols into a single opaque constant.",
+        "Skipping dependency annotations for intermediate quantities."
+      ],
+      "cross_links": [
+        "GM-001",
+        "GM-050",
+        "FO-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-001",
+          "note": "Engine components inherit provenance from the normalized primitive basis."
+        }
+      ],
+      "claim_kind": "primitive",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_core_3_0"
+      ],
+      "file_ids": [
+        "fof-001"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "C. Dynamical systems",
+        "G. Fluid mechanics"
+      ],
+      "intake_record_ids": [
+        "fop-003"
+      ]
+    },
+    {
+      "id": "FO-030",
+      "name": "Dependency Tier Audit",
+      "category": "provenance_audit",
+      "input_form": "A normalized overlay primitive, workflow, or prediction record.",
+      "output_form": "A claim annotated with explicit dependency tier and lineage.",
+      "domains": [
+        "fsot_overlay",
+        "general_mathematics",
+        "category_theory"
+      ],
+      "preconditions": [
+        "The claim already has stable source and file identifiers.",
+        "Dependency layers can be traced in the dependency map evidence."
+      ],
+      "operation": "Attach dependency-tier metadata so later validators can distinguish primitive, layered, engine, and downstream claims.",
+      "properties": [
+        "Dependency tiers prevent downstream predictions from posing as primitive content.",
+        "Lineage remains explicit across promotions into overlay rule records."
+      ],
+      "examples": [
+        "Classify a cosmology prediction as depending on layer-1 constants, scalar-engine outputs, and a formula-level transformation."
+      ],
+      "counterexamples": [
+        "Publishing a promoted prediction with no statement of whether it is primitive, layered, or downstream."
+      ],
+      "common_errors": [
+        "Treating every source claim as if it lived at the same derivation depth.",
+        "Dropping lineage information during rulebook promotion."
+      ],
+      "cross_links": [
+        "GM-060",
+        "GM-090",
+        "FO-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-020",
+          "note": "Engine componentization provides the intermediate lineage nodes needed for audit."
+        }
+      ],
+      "claim_kind": "audit",
+      "overlay_status": "normalized",
+      "source_ids": [
+        "fsot_document_update"
+      ],
+      "file_ids": [
+        "fof-002"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "B. Category theory",
+        "C. Measure theory"
+      ],
+      "intake_record_ids": [
+        "fop-004"
+      ]
+    },
+    {
+      "id": "FO-040",
+      "name": "Falsifiability Class Split",
+      "category": "workflow_control",
+      "input_form": "A candidate overlay prediction with provenance and dependency-tier metadata.",
+      "output_form": "A prediction tagged as Category A or Category B with explicit failure semantics.",
+      "domains": [
+        "fsot_overlay",
+        "general_mathematics",
+        "statistical_mechanics"
+      ],
+      "preconditions": [
+        "The prediction record has a stable dependency tier.",
+        "The source identifies whether failure is engine-critical or formula-local."
+      ],
+      "operation": "Assign the overlay prediction to the declared falsifiability class and preserve that class through later solver use.",
+      "properties": [
+        "Category A claims represent engine-critical failures.",
+        "Category B claims represent formula-level failures that may not invalidate the core engine."
+      ],
+      "examples": [
+        "Classify H0 as Category A and a downstream equation-of-state forecast as Category B."
+      ],
+      "counterexamples": [
+        "Treating all prediction failures as equally damaging without source-backed classification."
+      ],
+      "common_errors": [
+        "Mixing engine-critical and formula-level predictions in the same failure bucket.",
+        "Dropping falsifiability metadata when exporting a prediction record."
+      ],
+      "cross_links": [
+        "GM-080",
+        "FO-030",
+        "FO-100"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-030",
+          "note": "Prediction class assignment depends on the underlying dependency tier audit."
+        }
+      ],
+      "claim_kind": "workflow",
+      "overlay_status": "normalized",
+      "source_ids": [
+        "fsot_document_update"
+      ],
+      "file_ids": [
+        "fof-003"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "G. Statistical mechanics",
+        "G. Fluid mechanics"
+      ],
+      "intake_record_ids": [
+        "fop-005"
+      ]
+    },
+    {
+      "id": "FO-050",
+      "name": "Observable Generation Workflow Binding",
+      "category": "workflow_control",
+      "input_form": "A user request, anchor selection state, and report-oriented candidate generation path.",
+      "output_form": "A normalized overlay workflow state with request, anchor, and report objects.",
+      "domains": [
+        "fsot_overlay",
+        "symbolic_computation",
+        "computer_algebra"
+      ],
+      "preconditions": [
+        "The read/write workspace source has been admitted to the overlay intake.",
+        "The request specifies observables or report objectives explicitly."
+      ],
+      "operation": "Bind request, anchor provenance, and report objects before any generated formula is eligible for overlay promotion.",
+      "properties": [
+        "The workflow record separates generation machinery from promoted scientific claims.",
+        "Report metadata should include anchor provenance and comparative evidence hooks."
+      ],
+      "examples": [
+        "Normalize a FormulaGenerationRequest plus anchor-selection metadata before ranking candidate formulas."
+      ],
+      "counterexamples": [
+        "Promoting an output formula without the request and anchor context that produced it."
+      ],
+      "common_errors": [
+        "Confusing workflow objects with validated prediction objects.",
+        "Dropping overlap and provenance metrics from the generated report state."
+      ],
+      "cross_links": [
+        "GM-050",
+        "GM-080",
+        "FO-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "GM-050",
+          "note": "The workflow is decomposed into request, anchor, and report subobjects."
+        }
+      ],
+      "claim_kind": "workflow",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_breakdown_workspace"
+      ],
+      "file_ids": [
+        "fof-004"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "F. Symbolic computation",
+        "F. Computer algebra"
+      ],
+      "intake_record_ids": [
+        "fop-006",
+        "fop-007"
+      ]
+    },
+    {
+      "id": "FO-100",
+      "name": "H0 Prediction Overlay",
+      "category": "prediction_normalization",
+      "input_form": "A source-backed H0 claim with explicit falsifiability class and provenance.",
+      "output_form": "A normalized overlay prediction record for H0.",
+      "domains": [
+        "fsot_overlay",
+        "relativity_and_gravitation",
+        "astronomy_and_astrophysics"
+      ],
+      "preconditions": [
+        "The claim has a declared numeric prediction.",
+        "Its falsifiability class has been assigned explicitly."
+      ],
+      "operation": "Promote the H0 prediction into a reusable overlay prediction object with provenance and branch links.",
+      "properties": [
+        "The prediction remains overlay-scoped.",
+        "Its provenance and failure class remain attached during downstream evaluation."
+      ],
+      "examples": [
+        "Normalize H0 = 68.44 km/s/Mpc as a Category A prediction record."
+      ],
+      "counterexamples": [
+        "Quoting H0 numerically without its falsifiability class or source file."
+      ],
+      "common_errors": [
+        "Treating the number as a base-corpus theorem instead of an overlay prediction.",
+        "Dropping the dependency on the falsifiability split."
+      ],
+      "cross_links": [
+        "GM-080",
+        "FO-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-040",
+          "note": "Prediction promotion requires the falsifiability class split."
+        }
+      ],
+      "claim_kind": "prediction",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_document_update"
+      ],
+      "file_ids": [
+        "fof-003"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "G. Relativity and gravitation",
+        "G. Astronomy and astrophysics"
+      ],
+      "intake_record_ids": [
+        "fpr-001"
+      ],
+      "falsifiability_class": "category_a_core_engine",
+      "prediction_value": "68.44 km/s/Mpc"
+    },
+    {
+      "id": "FO-110",
+      "name": "sigma_8 Prediction Overlay",
+      "category": "prediction_normalization",
+      "input_form": "A source-backed sigma_8 claim with explicit falsifiability class and provenance.",
+      "output_form": "A normalized overlay prediction record for sigma_8.",
+      "domains": [
+        "fsot_overlay",
+        "probability_theory",
+        "statistical_mechanics"
+      ],
+      "preconditions": [
+        "The claim has a declared numeric prediction.",
+        "Its falsifiability class has been assigned explicitly."
+      ],
+      "operation": "Promote the sigma_8 prediction into a reusable overlay prediction object with provenance and branch links.",
+      "properties": [
+        "The prediction stays attached to engine-critical failure semantics.",
+        "The record preserves its file-level evidence source."
+      ],
+      "examples": [
+        "Normalize sigma_8 = 0.8111 as a Category A prediction record."
+      ],
+      "counterexamples": [
+        "Keeping sigma_8 only as prose under a broad claim family."
+      ],
+      "common_errors": [
+        "Separating the numeric value from its provenance.",
+        "Misclassifying the prediction as formula-level."
+      ],
+      "cross_links": [
+        "GM-080",
+        "FO-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-040",
+          "note": "Prediction promotion requires explicit failure-class assignment."
+        }
+      ],
+      "claim_kind": "prediction",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_document_update"
+      ],
+      "file_ids": [
+        "fof-003"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "E. Probability theory",
+        "G. Statistical mechanics"
+      ],
+      "intake_record_ids": [
+        "fpr-002"
+      ],
+      "falsifiability_class": "category_a_core_engine",
+      "prediction_value": "0.8111"
+    },
+    {
+      "id": "FO-120",
+      "name": "Omega_Lambda Prediction Overlay",
+      "category": "prediction_normalization",
+      "input_form": "A source-backed Omega_Lambda claim with explicit falsifiability class and provenance.",
+      "output_form": "A normalized overlay prediction record for Omega_Lambda.",
+      "domains": [
+        "fsot_overlay",
+        "statistical_mechanics",
+        "astronomy_and_astrophysics"
+      ],
+      "preconditions": [
+        "The claim has a declared numeric prediction.",
+        "Its falsifiability class has been assigned explicitly."
+      ],
+      "operation": "Promote the Omega_Lambda prediction into a reusable overlay prediction object with provenance and branch links.",
+      "properties": [
+        "The prediction remains separate from base-corpus science rules.",
+        "The record can be evaluated by later benchmark tooling without losing source lineage."
+      ],
+      "examples": [
+        "Normalize Omega_Lambda = 0.6847 as a Category A prediction record."
+      ],
+      "counterexamples": [
+        "Treating Omega_Lambda as a bare number detached from its source evidence."
+      ],
+      "common_errors": [
+        "Dropping the source file reference during export.",
+        "Assuming the overlay value is validated because it resembles a standard benchmark."
+      ],
+      "cross_links": [
+        "GM-080",
+        "FO-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-040",
+          "note": "Prediction normalization requires explicit falsifiability metadata."
+        }
+      ],
+      "claim_kind": "prediction",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_document_update"
+      ],
+      "file_ids": [
+        "fof-003"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "G. Statistical mechanics",
+        "G. Astronomy and astrophysics"
+      ],
+      "intake_record_ids": [
+        "fpr-003"
+      ],
+      "falsifiability_class": "category_a_core_engine",
+      "prediction_value": "0.6847"
+    },
+    {
+      "id": "FO-130",
+      "name": "N_eff Prediction Overlay",
+      "category": "prediction_normalization",
+      "input_form": "A source-backed N_eff claim with explicit falsifiability class and provenance.",
+      "output_form": "A normalized overlay prediction record for N_eff.",
+      "domains": [
+        "fsot_overlay",
+        "statistical_mechanics",
+        "quantum_theory"
+      ],
+      "preconditions": [
+        "The claim has a declared numeric prediction.",
+        "Its falsifiability class has been assigned explicitly."
+      ],
+      "operation": "Promote the N_eff prediction into a reusable overlay prediction object with provenance and branch links.",
+      "properties": [
+        "The prediction keeps engine-critical failure semantics.",
+        "The overlay record is ready for benchmark comparison without losing provenance."
+      ],
+      "examples": [
+        "Normalize N_eff = 3.046 as a Category A prediction record."
+      ],
+      "counterexamples": [
+        "Storing N_eff only inside a broad falsifiability narrative with no standalone record."
+      ],
+      "common_errors": [
+        "Losing the prediction class during downstream serialization.",
+        "Treating the overlay record as detached from the dependency-tier audit."
+      ],
+      "cross_links": [
+        "GM-080",
+        "FO-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-040",
+          "note": "Prediction normalization requires explicit failure-class assignment."
+        }
+      ],
+      "claim_kind": "prediction",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_document_update"
+      ],
+      "file_ids": [
+        "fof-003"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "G. Statistical mechanics",
+        "G. Quantum theory"
+      ],
+      "intake_record_ids": [
+        "fpr-004"
+      ],
+      "falsifiability_class": "category_a_core_engine",
+      "prediction_value": "3.046"
+    },
+    {
+      "id": "FO-140",
+      "name": "dark-energy w0 Prediction Overlay",
+      "category": "prediction_normalization",
+      "input_form": "A source-backed w0 claim with explicit provenance and the falsifiability class stated in the currently admitted guide.",
+      "output_form": "A normalized overlay prediction record for w0 that preserves the admitted-source classification rather than an older overlay assumption.",
+      "domains": [
+        "fsot_overlay",
+        "relativity_and_gravitation",
+        "astronomy_and_astrophysics"
+      ],
+      "preconditions": [
+        "The claim has a declared numeric value.",
+        "The claim is explicitly classified in the admitted falsifiability source."
+      ],
+      "operation": "Promote the w0 claim using the falsifiability class stated in the currently admitted guide, and only downgrade it if a newer admitted source supersedes that classification.",
+      "properties": [
+        "The overlay should preserve source-backed classification even when earlier overlay drafts assumed a weaker status.",
+        "Classification changes should happen only when the authoritative source set changes."
+      ],
+      "examples": [
+        "Normalize dark_energy_equation_of_state_w0 = -1.030 using the Category A placement currently present in the admitted falsifiability guide."
+      ],
+      "counterexamples": [
+        "Keeping w0 in Category B after the admitted guide has already placed it inside the Category A section."
+      ],
+      "common_errors": [
+        "Letting an older overlay assumption override the currently admitted source.",
+        "Changing falsifiability classes without a concrete source update."
+      ],
+      "cross_links": [
+        "FO-040",
+        "FO-100"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-040",
+          "note": "w0 promotion depends on preserving the explicit falsifiability classification found in the admitted source set."
+        }
+      ],
+      "claim_kind": "prediction",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_document_update"
+      ],
+      "file_ids": [
+        "fof-003"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "G. Relativity and gravitation",
+        "G. Astronomy and astrophysics"
+      ],
+      "intake_record_ids": [
+        "fpr-005"
+      ],
+      "falsifiability_class": "category_a_core_engine",
+      "prediction_value": "-1.030",
+      "dependency_tier": "formula_level"
+    },
+    {
+      "id": "FO-060",
+      "name": "Executable Constant Stack Normalization",
+      "category": "theorem_normalization",
+      "input_form": "A runnable FSOT engine file with explicit layer-1 and layer-2 constant definitions.",
+      "output_form": "A theorem-level overlay record for executable constant definitions.",
+      "domains": [
+        "fsot_overlay",
+        "scientific_computing",
+        "dynamical_systems"
+      ],
+      "preconditions": [
+        "The executable source is admitted to the overlay intake.",
+        "The constant names and formulas are explicit in code rather than inferred indirectly."
+      ],
+      "operation": "Normalize executable constant definitions as theorem-level overlay material with file-level provenance and dependency tier metadata.",
+      "properties": [
+        "The code file becomes an auditable theorem source rather than a secondary implementation note.",
+        "Layer-1 and Layer-2 records remain linked back to the primitive seed basis."
+      ],
+      "examples": [
+        "Normalize ALPHA, PSI_CON, ETA_EFF, OMEGA, C_EFF, A_BLEED, A_IN, P_NEW, K, and C_COSM from fsot_compute.py."
+      ],
+      "counterexamples": [
+        "Treating executable definitions as untracked implementation detail even when they are the clearest available theorem source."
+      ],
+      "common_errors": [
+        "Copying theorem formulas into the overlay without file provenance.",
+        "Dropping the dependency tier that distinguishes theorem-level engine material from benchmark reports."
+      ],
+      "cross_links": [
+        "FO-001",
+        "FO-020",
+        "FO-070"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-001",
+          "note": "Executable constant normalization still inherits from the primitive seed basis."
+        }
+      ],
+      "claim_kind": "theorem",
+      "overlay_status": "normalized",
+      "source_ids": [
+        "fsot_core_3_0"
+      ],
+      "file_ids": [
+        "fof-005"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "C. Dynamical systems",
+        "F. Scientific computing"
+      ],
+      "intake_record_ids": [
+        "fop-008"
+      ],
+      "dependency_tier": "theorem_level"
+    },
+    {
+      "id": "FO-070",
+      "name": "Domain Registry and Scalar Engine Normalization",
+      "category": "theorem_normalization",
+      "input_form": "A runnable FSOT engine file with explicit scalar inputs, domain metadata, and domain-scalar evaluation paths.",
+      "output_form": "A theorem-level overlay record for the executable scalar engine and domain registry.",
+      "domains": [
+        "fsot_overlay",
+        "dynamical_systems",
+        "fluid_mechanics",
+        "astronomy_and_astrophysics"
+      ],
+      "preconditions": [
+        "The executable source exposes the scalar input structure and domain table explicitly.",
+        "Domain-level outputs are reproducible from the admitted file."
+      ],
+      "operation": "Normalize the executable scalar engine and domain registry as theorem-level overlay objects with code-backed provenance.",
+      "properties": [
+        "The scalar engine remains overlay-native even when it uses familiar mathematical operators.",
+        "Domain metadata and domain_scalar outputs become reusable overlay theorem records."
+      ],
+      "examples": [
+        "Normalize ScalarInput, compute_scalar, DomainConfig, DOMAINS, domain_scalar, S_COSM, and S_QUANT from fsot_compute.py."
+      ],
+      "counterexamples": [
+        "Leaving the domain registry implicit in prose while the executable source already defines it concretely."
+      ],
+      "common_errors": [
+        "Separating domain metadata from the scalar engine that consumes it.",
+        "Treating S_COSM or S_QUANT as detached constants with no executable lineage."
+      ],
+      "cross_links": [
+        "FO-020",
+        "FO-060",
+        "FO-080"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-060",
+          "note": "The domain registry sits on top of the executable constant stack."
+        }
+      ],
+      "claim_kind": "theorem",
+      "overlay_status": "normalized",
+      "source_ids": [
+        "fsot_core_3_0"
+      ],
+      "file_ids": [
+        "fof-005"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "C. Dynamical systems",
+        "G. Fluid mechanics",
+        "G. Astronomy and astrophysics"
+      ],
+      "intake_record_ids": [
+        "fop-009"
+      ],
+      "dependency_tier": "theorem_level"
+    },
+    {
+      "id": "FO-080",
+      "name": "Thesis Medium and D_eff Theorem Normalization",
+      "category": "theorem_normalization",
+      "input_form": "A thesis source that states the 25D medium model, D_eff assignments, and master scalar framing.",
+      "output_form": "A theorem-level overlay record for thesis medium and D_eff claims.",
+      "domains": [
+        "fsot_overlay",
+        "differential_geometry",
+        "fluid_mechanics",
+        "relativity_and_gravitation"
+      ],
+      "preconditions": [
+        "The thesis source is admitted to the overlay intake.",
+        "The medium and D_eff claims are explicit enough to quote and audit."
+      ],
+      "operation": "Normalize the thesis medium story and D_eff mappings as theorem-level overlay records while preserving their theory-native status.",
+      "properties": [
+        "The theorem record preserves the distinction between overlay claims and accepted base mathematics.",
+        "The normalized record can route supporting reasoning into geometry, fluid, and relativity branches without contaminating them."
+      ],
+      "examples": [
+        "Normalize the 25D fluid-medium framing and D_eff domain assignment tables from FSOT_Thesis.md."
+      ],
+      "counterexamples": [
+        "Treating thesis narrative claims as if they were already validated geometric theorems."
+      ],
+      "common_errors": [
+        "Dropping the overlay qualifier when quoting thesis-level theorems.",
+        "Flattening D_eff assignments into bare labels with no source lineage."
+      ],
+      "cross_links": [
+        "FO-070",
+        "FO-090"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-070",
+          "note": "Executable engine normalization provides the sharper machine-facing counterpart to thesis-level scalar claims."
+        }
+      ],
+      "claim_kind": "theorem",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_document_update"
+      ],
+      "file_ids": [
+        "fof-006"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "D. Differential geometry",
+        "G. Fluid mechanics",
+        "G. Relativity and gravitation"
+      ],
+      "intake_record_ids": [
+        "fop-010"
+      ],
+      "dependency_tier": "theorem_level"
+    },
+    {
+      "id": "FO-090",
+      "name": "Thesis Translation Registry Normalization",
+      "category": "theorem_normalization",
+      "input_form": "A thesis source that enumerates translation tiers, registry counts, and correction-pipeline claims.",
+      "output_form": "A theorem-level overlay registry record with explicit provenance and audit scope.",
+      "domains": [
+        "fsot_overlay",
+        "scientific_computing",
+        "statistical_mechanics"
+      ],
+      "preconditions": [
+        "The thesis source states translation-tier or correction-pipeline claims explicitly.",
+        "The normalization pass can separate scorecard metadata from theorem content."
+      ],
+      "operation": "Normalize the thesis translation registry, tier definitions, and correction-pipeline claims as theorem-level overlay metadata.",
+      "properties": [
+        "Registry-level claims remain auditable without pretending they are base-corpus mathematical theorems.",
+        "Correction-pipeline claims become machine-addressable for later comparative evaluation."
+      ],
+      "examples": [
+        "Normalize the EXACT/NEAR/CLOSE/APPROX tier framing and correction-pipeline narrative from FSOT_Thesis.md."
+      ],
+      "counterexamples": [
+        "Collapsing registry scorecards into a generic note with no theorem or provenance structure."
+      ],
+      "common_errors": [
+        "Confusing translation coverage counts with proof of correctness.",
+        "Omitting the distinction between theorem records and benchmark scorekeeping records."
+      ],
+      "cross_links": [
+        "FO-080",
+        "FO-210",
+        "FO-220"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-080",
+          "note": "Translation-registry normalization builds on the broader thesis theorem frame."
+        }
+      ],
+      "claim_kind": "theorem",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_document_update"
+      ],
+      "file_ids": [
+        "fof-006"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "F. Scientific computing",
+        "G. Statistical mechanics"
+      ],
+      "intake_record_ids": [
+        "fop-011"
+      ],
+      "dependency_tier": "theorem_level"
+    },
+    {
+      "id": "FO-200",
+      "name": "H0 Benchmark Report Promotion",
+      "category": "benchmark_promotion",
+      "input_form": "A concrete H0 read/write report with ranked generated candidates and target comparison metrics.",
+      "output_form": "A benchmark-report prediction record for the best generated H0 candidate.",
+      "domains": [
+        "fsot_overlay",
+        "symbolic_computation",
+        "astronomy_and_astrophysics"
+      ],
+      "preconditions": [
+        "The report includes generated candidates with explicit rank, formula, and error metrics.",
+        "The promoted record remains classified as benchmark evidence rather than theorem-level validation."
+      ],
+      "operation": "Promote the best generated H0 candidate from the concrete report into a benchmark-report prediction record with formula, rank, score, and target comparison.",
+      "properties": [
+        "The promoted record preserves report provenance and ranking metadata.",
+        "The benchmark record remains distinct from engine-critical predictions sourced from the falsifiability guide."
+      ],
+      "examples": [
+        "Promote 10 * (1 + abs(p_base) * a_in / abs(c_cosm)) with computed value 67.27021167735879 and relative error 0.192564276915754 from hubble_report.json."
+      ],
+      "counterexamples": [
+        "Replacing the core H0 prediction record with a generated benchmark candidate because its local error is smaller."
+      ],
+      "common_errors": [
+        "Dropping the rank or score from the promoted record.",
+        "Escalating a benchmark report candidate into engine-core status."
+      ],
+      "cross_links": [
+        "FO-050",
+        "FO-100",
+        "FO-230"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-050",
+          "note": "Benchmark promotion depends on the workflow binding that preserves request, anchor, and report structure."
+        }
+      ],
+      "claim_kind": "benchmark",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_breakdown_workspace"
+      ],
+      "file_ids": [
+        "fof-007"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "F. Symbolic computation",
+        "G. Astronomy and astrophysics"
+      ],
+      "intake_record_ids": [
+        "fpr-006"
+      ],
+      "falsifiability_class": "benchmark_report",
+      "prediction_value": "67.27021167735879",
+      "dependency_tier": "benchmark_report",
+      "benchmark_formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
+      "benchmark_summary": {
+        "metric_name": "relative_error_percent",
+        "metric_value": 0.192564276915754,
+        "ranking": 7,
+        "goal_hit": true
+      }
+    },
+    {
+      "id": "FO-210",
+      "name": "Airfoil Benchmark Report Promotion",
+      "category": "benchmark_promotion",
+      "input_form": "A concrete airfoil dataset report with held-out metrics and promoted sandbox winners.",
+      "output_form": "A benchmark-report prediction record for the airfoil benchmark winner.",
+      "domains": [
+        "fsot_overlay",
+        "scientific_computing",
+        "fluid_mechanics"
+      ],
+      "preconditions": [
+        "The report exposes held-out train/test metrics for the promoted formula.",
+        "The promoted record remains benchmark evidence rather than theorem-level validation."
+      ],
+      "operation": "Promote the best held-out airfoil report candidate into a benchmark-report prediction record with formula and generalization metrics.",
+      "properties": [
+        "The benchmark record stores held-out RMSE and R\u00b2 rather than pretending to be a closed-form physical theorem.",
+        "The record remains tied to the concrete report file that produced it."
+      ],
+      "examples": [
+        "Promote the sandbox combinatorial-search winner with held-out test RMSE 6.247387360026391 from airfoil_three_seed_report.json."
+      ],
+      "counterexamples": [
+        "Treating an aeroacoustic dataset score as if it were a proven theorem about fluid mechanics."
+      ],
+      "common_errors": [
+        "Quoting only the formula and omitting held-out metrics.",
+        "Comparing the record to engine-core cosmology predictions as though the evidence class were the same."
+      ],
+      "cross_links": [
+        "FO-050",
+        "FO-090",
+        "FO-230"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-050",
+          "note": "Report promotion depends on retaining the reasoning-path and report structure."
+        }
+      ],
+      "claim_kind": "benchmark",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_breakdown_workspace"
+      ],
+      "file_ids": [
+        "fof-008"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "F. Scientific computing",
+        "G. Fluid mechanics"
+      ],
+      "intake_record_ids": [
+        "fpr-007"
+      ],
+      "falsifiability_class": "benchmark_report",
+      "prediction_value": "held_out_test_rmse=6.247387360026391",
+      "dependency_tier": "benchmark_report",
+      "benchmark_formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+      "benchmark_summary": {
+        "metric_name": "test_rmse",
+        "metric_value": 6.247387360026391,
+        "ranking": 0,
+        "goal_hit": false
+      }
+    },
+    {
+      "id": "FO-220",
+      "name": "Chemistry Benchmark Report Promotion",
+      "category": "benchmark_promotion",
+      "input_form": "A concrete physical-chemistry dataset report with held-out metrics and promoted sandbox winners.",
+      "output_form": "A benchmark-report prediction record for the chemistry benchmark winner.",
+      "domains": [
+        "fsot_overlay",
+        "scientific_computing",
+        "mathematical_chemistry"
+      ],
+      "preconditions": [
+        "The report exposes held-out train/test metrics for the promoted formula.",
+        "The benchmark winner is distinguished from the theorem-level chemistry claims."
+      ],
+      "operation": "Promote the best held-out chemistry report candidate into a benchmark-report prediction record with formula and generalization metrics.",
+      "properties": [
+        "The benchmark record captures concrete performance against a held-out split.",
+        "The promoted record stays benchmark-scoped even when the held-out metrics are strong."
+      ],
+      "examples": [
+        "Promote the formula computed_value with held-out test RMSE 1.246498473526364 and goal_hit=true from chemistry_delta_hf_report.json."
+      ],
+      "counterexamples": [
+        "Elevating a small-sample benchmark win to theorem-level status without independent theory normalization."
+      ],
+      "common_errors": [
+        "Ignoring the benchmark goal source and held-out split information.",
+        "Confusing dataset reconstruction success with closed-form physical derivation."
+      ],
+      "cross_links": [
+        "FO-050",
+        "FO-090",
+        "FO-230"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-050",
+          "note": "Benchmark promotion depends on report-structured workflow outputs."
+        }
+      ],
+      "claim_kind": "benchmark",
+      "overlay_status": "normalized",
+      "source_ids": [
+        "fsot_breakdown_workspace"
+      ],
+      "file_ids": [
+        "fof-009"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "F. Scientific computing",
+        "G. Mathematical chemistry"
+      ],
+      "intake_record_ids": [
+        "fpr-008"
+      ],
+      "falsifiability_class": "benchmark_report",
+      "prediction_value": "held_out_test_rmse=1.246498473526364",
+      "dependency_tier": "benchmark_report",
+      "benchmark_formula": "computed_value",
+      "benchmark_summary": {
+        "metric_name": "test_rmse",
+        "metric_value": 1.246498473526364,
+        "ranking": 0,
+        "goal_hit": true
+      }
+    },
+    {
+      "id": "FO-230",
+      "name": "Overlay Benchmark Transition Capture",
+      "category": "benchmark_promotion",
+      "input_form": "A benchmark report candidate plus its report provenance, falsifiability tag, and dependency tier.",
+      "output_form": "A provenance-rich overlay transition object that captures how benchmark evidence becomes a formal intake record.",
+      "domains": [
+        "fsot_overlay",
+        "symbolic_computation",
+        "scientific_computing"
+      ],
+      "preconditions": [
+        "The benchmark candidate has a concrete report file, metric, and ranking.",
+        "The transition can preserve falsifiability and dependency-tier metadata explicitly."
+      ],
+      "operation": "Capture benchmark-to-overlay promotion as a dedicated overlay transition with provenance, benchmark context, dependency tier, and falsifiability metadata.",
+      "properties": [
+        "The transition object records how evidence moved from raw report output into the formal overlay intake.",
+        "The same mechanism can later separate benchmark artifacts from theorem-level promotions."
+      ],
+      "examples": [
+        "Capture the promotion of the generated H0 report candidate into benchmark record fpr-006 with rank, formula, score, and benchmark_report falsifiability class."
+      ],
+      "counterexamples": [
+        "Adding a benchmark prediction record with no machine-readable transition metadata about how it was promoted."
+      ],
+      "common_errors": [
+        "Dropping source_ids, file_ids, or intake_record_ids during promotion.",
+        "Losing the distinction between benchmark_report and engine_core falsifiability classes."
+      ],
+      "cross_links": [
+        "FO-050",
+        "FO-200",
+        "FO-210",
+        "FO-220"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-050",
+          "note": "Transition capture depends on structured workflow objects and report provenance."
+        }
+      ],
+      "claim_kind": "benchmark",
+      "overlay_status": "normalized",
+      "source_ids": [
+        "fsot_breakdown_workspace"
+      ],
+      "file_ids": [
+        "fof-007",
+        "fof-008",
+        "fof-009"
+      ],
+      "supporting_math_branches": [
+        "A. General mathematics",
+        "F. Symbolic computation",
+        "F. Scientific computing"
+      ],
+      "intake_record_ids": [
+        "fpr-006",
+        "fpr-007",
+        "fpr-008"
+      ],
+      "falsifiability_class": "benchmark_report",
+      "dependency_tier": "benchmark_report"
+    },
+    {
+      "id": "FO-231",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "overlay_basis",
+        "overlay_workflow",
+        "overlay_prediction"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FO-232",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "overlay_basis",
+        "overlay_workflow",
+        "overlay_prediction"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FO-233",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "overlay_basis",
+        "overlay_workflow",
+        "overlay_prediction"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FO-234",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "overlay_basis",
+        "overlay_workflow",
+        "overlay_prediction"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FO-235",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "overlay_basis",
+        "overlay_workflow",
+        "overlay_prediction"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FO-236",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "overlay_basis",
+        "overlay_workflow",
+        "overlay_prediction"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

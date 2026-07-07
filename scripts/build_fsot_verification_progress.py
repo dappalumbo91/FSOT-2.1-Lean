@@ -78,6 +78,9 @@ def build_progress() -> dict:
     mathematics_bench = _load_json(ROOT / "data" / "mathematics_computational_benchmark.json")
     materials_eng_bench = _load_json(ROOT / "data" / "materials_engineering_benchmark.json")
     computational_reasoning_bench = _load_json(ROOT / "data" / "computational_reasoning_benchmark.json")
+    mg_rules_eval_bench = _load_json(ROOT / "data" / "math_generator_rules_eval_benchmark.json")
+    trinary_portable_bench = _load_json(ROOT / "data" / "trinary_os_portable_benchmark.json")
+    materials_species_bench = _load_json(ROOT / "data" / "materials_species_bridge_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -717,13 +720,43 @@ def build_progress() -> dict:
                 "FSOT.Formal.ComputationalReasoningPriors",
             ],
         },
+        {
+            "tier": 30,
+            "name": "Portable bridges — math rules eval, trinary OS, materials↔species",
+            "status": "complete"
+            if mg_rules_eval_bench.get("record_count", 0) >= 1500
+            and mg_rules_eval_bench.get("schema_fail_count", 99) == 0
+            and trinary_portable_bench.get("oracle_count", 0) >= 3
+            and trinary_portable_bench.get("median_error_pct", 99) == 0
+            and materials_species_bench.get("record_count", 0) >= 20
+            else "pending",
+            "metrics": {
+                "math_generator_rules_eval_records": mg_rules_eval_bench.get("record_count"),
+                "math_generator_rules_eval_median_error_pct": mg_rules_eval_bench.get("median_error_pct"),
+                "math_generator_rules_schema_fail_count": mg_rules_eval_bench.get("schema_fail_count"),
+                "trinary_os_portable_records": trinary_portable_bench.get("record_count"),
+                "trinary_os_portable_oracle_count": trinary_portable_bench.get("oracle_count"),
+                "materials_species_bridge_records": materials_species_bench.get("record_count"),
+                "materials_species_bridge_metals": materials_species_bench.get("overlap_metal_count"),
+                "materials_species_bridge_median_error_pct": materials_species_bench.get("median_error_pct"),
+            },
+            "artifacts": [
+                "data/math_generator_rules_eval_manifest.yaml",
+                "data/trinary_os_portable_manifest.yaml",
+                "data/materials_species_bridge_manifest.yaml",
+                "vendor/trinary_os/target",
+                "vendor/species/fsot_species_catalog.json",
+                "FSOT.Formal.MathGeneratorRulesEvalPriors",
+                "FSOT.Formal.TrinaryOSPortablePriors",
+                "FSOT.Formal.MaterialsSpeciesBridgePriors",
+            ],
+        },
     ]
 
     next_steps = [
-        "Math-generator per-rule FSOT numeric eval across 1520 formal rules",
-        "Trinary-OS oracle bundle in vendor/ for portable coding rebuild",
-        "Materials engineering species-catalog machine bridge",
         "iGEM parts-registry strict-empirical synthetic biology bridge",
+        "Math-generator benchmark_formula live eval (3 overlay rules)",
+        "Trinary-OS full ISA rebuild from vendor bundle",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -742,7 +775,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 29 Practical application — linguistics, math, materials engineering, reasoning",
+        "current_position": "Tier 30 Portable bridges — math rules eval, trinary OS, materials↔species",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

@@ -1,0 +1,747 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "STATISTICS_RULEBOOK.md",
+  "domain_symbols": {
+    "sample": "finite data samples",
+    "parameter": "statistical model parameters",
+    "statistic": "functions of sample data",
+    "symbolic": "symbolic statistical expressions"
+  },
+  "rules": [
+    {
+      "id": "ST-001",
+      "name": "Sample mean definition",
+      "category": "descriptive statistics",
+      "input_form": "x_1,...,x_n",
+      "output_form": "(1/n) sum x_i",
+      "domains": [
+        "sample",
+        "statistic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "n >= 1"
+      ],
+      "operation": "Compute the arithmetic mean of a finite sample.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "The sample mean aggregates observations into an average estimator of location"
+      ],
+      "counterexamples": [
+        "Dividing by n-1 instead of n defines a different statistic and is invalid here"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "ST-002",
+      "name": "Sample variance with Bessel correction",
+      "category": "descriptive statistics",
+      "input_form": "x_1,...,x_n",
+      "output_form": "(1/(n-1)) sum (x_i - x_bar)^2",
+      "domains": [
+        "sample",
+        "statistic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "n > 1"
+      ],
+      "operation": "Compute the corrected sample variance in the standard iid setting.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "Bessel correction is the standard unbiased finite-sample adjustment for variance in the iid setting"
+      ],
+      "counterexamples": [
+        "Omitting the centering term gives an invalid variance statistic"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "ST-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "ST-001"
+        }
+      ]
+    },
+    {
+      "id": "ST-010",
+      "name": "Likelihood function construction rule",
+      "category": "statistical inference",
+      "input_form": "model p_theta(x) and observed data x",
+      "output_form": "likelihood as a function of theta",
+      "domains": [
+        "sample",
+        "parameter",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A statistical model indexed by theta is specified and data are fixed"
+      ],
+      "operation": "View the model density or mass as a function of the parameter with data fixed.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "Bernoulli observations produce a likelihood in the parameter p after fixing the data"
+      ],
+      "counterexamples": [
+        "Treating the likelihood as a probability distribution over theta without normalization is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "PR-031"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "PR-031"
+        }
+      ]
+    },
+    {
+      "id": "ST-011",
+      "name": "Maximum likelihood invariance seed",
+      "category": "statistical inference",
+      "input_form": "mle theta_hat and function g",
+      "output_form": "g(theta_hat) as mle of g(theta)",
+      "domains": [
+        "parameter",
+        "symbolic"
+      ],
+      "preconditions": [
+        "theta_hat is an mle and g is a suitable function of the parameter"
+      ],
+      "operation": "Transfer an mle through a parameter transformation by invariance.",
+      "properties": [
+        "estimation_rule"
+      ],
+      "examples": [
+        "Estimating a variance parameter may induce an mle for the corresponding standard deviation through invariance"
+      ],
+      "counterexamples": [
+        "Applying invariance to non-function-valued set estimators is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "ST-010"
+        }
+      ]
+    },
+    {
+      "id": "ST-020",
+      "name": "Unbiased estimator criterion",
+      "category": "estimation theory",
+      "input_form": "estimator T and target tau(theta)",
+      "output_form": "E_theta[T] = tau(theta)",
+      "domains": [
+        "parameter",
+        "statistic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The estimator expectation exists across the model family"
+      ],
+      "operation": "Check unbiasedness by comparing estimator expectation to the target parameter function.",
+      "properties": [
+        "classification"
+      ],
+      "examples": [
+        "Unbiasedness compares the estimator's expected value to the target parameter across the model family"
+      ],
+      "counterexamples": [
+        "Checking equality at only one parameter value is insufficient"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "ST-030",
+      "name": "p-value interpretation rule",
+      "category": "hypothesis testing",
+      "input_form": "test statistic under a null model",
+      "output_form": "null-model tail probability at least as extreme as observed",
+      "domains": [
+        "sample",
+        "statistic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A null hypothesis, extremeness rule, and test statistic are specified"
+      ],
+      "operation": "Interpret the p-value as a null tail probability rather than a posterior belief in the null.",
+      "properties": [
+        "interpretation_rule"
+      ],
+      "examples": [
+        "Small p-values indicate tension between the observed data and the null model under the chosen test statistic"
+      ],
+      "counterexamples": [
+        "Interpreting the p-value as the probability that the null hypothesis is true is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "ST-040",
+      "name": "Neyman-Fisher factorization criterion seed",
+      "category": "sufficiency",
+      "input_form": "likelihood or joint density",
+      "output_form": "factorization through a statistic T",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The model admits the standard factorization analysis"
+      ],
+      "operation": "Test sufficiency by factoring the data dependence of the likelihood through a candidate statistic.",
+      "properties": [
+        "criterion_seed"
+      ],
+      "examples": [
+        "Exponential-family models often expose sufficient statistics through multiplicative likelihood factorization"
+      ],
+      "counterexamples": [
+        "Observing that a statistic is correlated with the parameter is insufficient for sufficiency"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "ST-010"
+        }
+      ]
+    },
+    {
+      "id": "ST-041",
+      "name": "Fisher information seed",
+      "category": "information in statistical models",
+      "input_form": "parametric model",
+      "output_form": "expected score variance or log-likelihood curvature quantity",
+      "domains": [
+        "parameter",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The model satisfies the standard differentiability hypotheses"
+      ],
+      "operation": "Measure local parameter identifiability through expected score variability or likelihood curvature.",
+      "properties": [
+        "model_quantity_seed"
+      ],
+      "examples": [
+        "Sharper likelihood concentration corresponds to larger information about the parameter"
+      ],
+      "counterexamples": [
+        "Treating information as independent of the model parameter in general is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "ST-050",
+      "name": "Confidence interval coverage interpretation",
+      "category": "frequentist inference",
+      "input_form": "1-alpha confidence procedure",
+      "output_form": "long-run coverage 1-alpha",
+      "domains": [
+        "parameter",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The interval procedure is defined relative to repeated sampling under the model"
+      ],
+      "operation": "Interpret confidence levels through repeated-sampling coverage rather than posterior belief.",
+      "properties": [
+        "interpretation_rule"
+      ],
+      "examples": [
+        "Confidence levels describe procedure performance across repetitions, not posterior beliefs after one sample"
+      ],
+      "counterexamples": [
+        "Interpreting one realized 95 percent confidence interval as containing the true parameter with posterior probability 0.95 is invalid in the frequentist reading"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "ST-051",
+      "name": "Bayes posterior update rule",
+      "category": "Bayesian inference",
+      "input_form": "prior and likelihood",
+      "output_form": "posterior proportional to likelihood times prior",
+      "domains": [
+        "parameter",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A prior and likelihood are defined on a common parameter space"
+      ],
+      "operation": "Update prior beliefs by multiplying with the data likelihood and normalizing.",
+      "properties": [
+        "update_rule"
+      ],
+      "examples": [
+        "Bayesian updating combines prior structure with data evidence through multiplication and normalization"
+      ],
+      "counterexamples": [
+        "Adding prior and likelihood instead of multiplying is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "ST-010"
+        }
+      ]
+    },
+    {
+      "id": "ST-060",
+      "name": "Linear regression normal equations seed",
+      "category": "regression",
+      "input_form": "least-squares model X beta approximately y",
+      "output_form": "X^T X beta = X^T y",
+      "domains": [
+        "sample",
+        "parameter",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The ordinary least-squares linear model is active"
+      ],
+      "operation": "Convert classical linear regression fitting into a normal-equations system.",
+      "properties": [
+        "estimation_rule"
+      ],
+      "examples": [
+        "Regression estimation reduces to a least-squares system in the classical linear model"
+      ],
+      "counterexamples": [
+        "Treating arbitrary nonlinear models as satisfying the same normal equations is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LS-075"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LS-075"
+        }
+      ]
+    },
+    {
+      "id": "ST-061",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-062",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-063",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-064",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-065",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-066",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-067",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-068",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-069",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-070",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-071",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-072",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-073",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "ST-074",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "sample",
+        "parameter",
+        "statistic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

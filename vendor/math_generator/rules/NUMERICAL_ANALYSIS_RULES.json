@@ -1,0 +1,734 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "NUMERICAL_ANALYSIS_RULEBOOK.md",
+  "domain_symbols": {
+    "numeric_method": "numerical algorithms and approximations",
+    "matrix_numeric": "matrix computations in floating-point or symbolic numeric settings",
+    "symbolic": "symbolic numerical-analysis expressions"
+  },
+  "rules": [
+    {
+      "id": "NA-001",
+      "name": "Bisection method rule",
+      "category": "root finding",
+      "input_form": "continuous f on [a,b] with f(a)f(b) < 0",
+      "output_form": "nested bracketing intervals for a root",
+      "domains": [
+        "numeric_method",
+        "symbolic"
+      ],
+      "preconditions": [
+        "f is continuous on the interval and changes sign across endpoints"
+      ],
+      "operation": "Halve the interval repeatedly while preserving a certified root bracket.",
+      "properties": [
+        "algorithmic_rule"
+      ],
+      "examples": [
+        "Sign changes on a continuous interval justify bisection root isolation"
+      ],
+      "counterexamples": [
+        "Using bisection without a sign change on the interval is invalid as a certified root-bracketing method"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "RA-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "RA-020"
+        }
+      ]
+    },
+    {
+      "id": "NA-002",
+      "name": "Newton iteration rule",
+      "category": "root finding",
+      "input_form": "x_n and differentiable f",
+      "output_form": "x_{n+1} = x_n - f(x_n)/f'(x_n)",
+      "domains": [
+        "numeric_method",
+        "symbolic"
+      ],
+      "preconditions": [
+        "f'(x_n) is nonzero"
+      ],
+      "operation": "Update a root approximation using tangent-line linearization.",
+      "properties": [
+        "algorithmic_rule"
+      ],
+      "examples": [
+        "Newton iteration uses tangent-line intersections to accelerate root finding near a simple root"
+      ],
+      "counterexamples": [
+        "Dividing by a zero derivative is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NA-010",
+      "name": "Trapezoidal quadrature rule",
+      "category": "numerical integration",
+      "input_form": "integral_a^b f(x) dx",
+      "output_form": "(b-a)(f(a)+f(b))/2",
+      "domains": [
+        "numeric_method",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The integrand is defined at the interval endpoints"
+      ],
+      "operation": "Approximate an integral by the area under the endpoint interpolating trapezoid.",
+      "properties": [
+        "approximation_rule"
+      ],
+      "examples": [
+        "Trapezoidal quadrature approximates area by a linear interpolant across the interval"
+      ],
+      "counterexamples": [
+        "Treating the trapezoidal rule as exact for arbitrary nonlinear functions is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NA-020",
+      "name": "Forward Euler time step rule",
+      "category": "numerical ODEs",
+      "input_form": "y' = f(t,y)",
+      "output_form": "y_{n+1} = y_n + h f(t_n,y_n)",
+      "domains": [
+        "numeric_method",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Step size h and current state are specified"
+      ],
+      "operation": "Advance an ODE approximation explicitly using the current slope.",
+      "properties": [
+        "time_stepping_rule"
+      ],
+      "examples": [
+        "Explicit Euler advances an ODE solution using the slope at the current step"
+      ],
+      "counterexamples": [
+        "Using a future-time slope in the explicit Euler formula is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DE-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DE-001"
+        }
+      ]
+    },
+    {
+      "id": "NA-030",
+      "name": "LU factorization solve rule",
+      "category": "numerical linear algebra",
+      "input_form": "A = LU and Ax = b",
+      "output_form": "solve Ly = b then Ux = y",
+      "domains": [
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An LU factorization exists under the active pivoting assumptions"
+      ],
+      "operation": "Reduce a linear solve to forward and backward substitution using triangular factors.",
+      "properties": [
+        "factorization_rule"
+      ],
+      "examples": [
+        "Triangular factorization reduces a matrix solve to two simpler substitution problems"
+      ],
+      "counterexamples": [
+        "Applying LU without required pivoting or factor existence conditions is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LS-070"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LS-070"
+        }
+      ]
+    },
+    {
+      "id": "NA-040",
+      "name": "Lagrange interpolation formula",
+      "category": "interpolation",
+      "input_form": "distinct nodes and data values",
+      "output_form": "interpolation polynomial in Lagrange basis",
+      "domains": [
+        "numeric_method",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Interpolation nodes are distinct"
+      ],
+      "operation": "Build the unique interpolating polynomial through distinct sample nodes.",
+      "properties": [
+        "representation_rule"
+      ],
+      "examples": [
+        "Polynomial interpolation exactly matches the given data at the chosen nodes"
+      ],
+      "counterexamples": [
+        "Repeated nodes in the ordinary distinct-node formula are invalid without Hermite-style modification"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NA-041",
+      "name": "QR least-squares solve rule",
+      "category": "numerical linear algebra",
+      "input_form": "A = QR and least-squares problem",
+      "output_form": "solve R x = Q^T b",
+      "domains": [
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Q has orthonormal columns and the standard full-rank assumptions hold"
+      ],
+      "operation": "Reduce least-squares fitting to a triangular solve using QR factorization.",
+      "properties": [
+        "factorization_rule"
+      ],
+      "examples": [
+        "QR factorization stabilizes least-squares solves better than normal equations in standard practice"
+      ],
+      "counterexamples": [
+        "Using the same reduced triangular solve when rank assumptions fail is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LS-075"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LS-075"
+        }
+      ]
+    },
+    {
+      "id": "NA-050",
+      "name": "Condition number seed",
+      "category": "conditioning",
+      "input_form": "problem and active norm",
+      "output_form": "sensitivity quantity",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The relevant problem map and norm are specified"
+      ],
+      "operation": "Measure sensitivity of outputs to perturbations in inputs.",
+      "properties": [
+        "stability_quantity_seed"
+      ],
+      "examples": [
+        "Large condition numbers indicate numerical instability or sensitivity to noise"
+      ],
+      "counterexamples": [
+        "Confusing algorithmic error with conditioning is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NA-051",
+      "name": "Classical fourth-order Runge-Kutta seed",
+      "category": "numerical ODEs",
+      "input_form": "ODE step data",
+      "output_form": "RK4 weighted four-slope update",
+      "domains": [
+        "numeric_method",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The step size and slope evaluations are well-defined"
+      ],
+      "operation": "Advance an ODE approximation using the standard four-stage fourth-order explicit Runge-Kutta method.",
+      "properties": [
+        "time_stepping_rule"
+      ],
+      "examples": [
+        "RK4 improves accuracy over Euler by sampling multiple intermediate slopes"
+      ],
+      "counterexamples": [
+        "Replacing the RK4 weights arbitrarily is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NA-060",
+      "name": "CFL-type stability seed",
+      "category": "numerical PDEs",
+      "input_form": "explicit space-time discretization",
+      "output_form": "time-step restriction tied to mesh spacing and propagation scale",
+      "domains": [
+        "numeric_method",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An explicit discretization of a transport or wave-type PDE is under consideration"
+      ],
+      "operation": "Impose a mesh-dependent time-step restriction in standard explicit stability analysis.",
+      "properties": [
+        "stability_seed"
+      ],
+      "examples": [
+        "Shrinking the time step relative to grid size can be necessary for stable explicit evolution"
+      ],
+      "counterexamples": [
+        "Declaring unconditional stability for an explicit scheme without analysis is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "NA-061",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-062",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-063",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-064",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-065",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-066",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-067",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-068",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-069",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-070",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-071",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-072",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-073",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-074",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "NA-075",
+      "name": "Counterexample mining expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "universal claim C",
+      "output_form": "counterexample search status",
+      "domains": [
+        "numeric_method",
+        "matrix_numeric",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Systematically attempt to falsify broad claims before promoting them.",
+      "properties": [
+        "auto_generated",
+        "counterexample_search"
+      ],
+      "examples": [
+        "Boundary or low-dimensional cases can reveal hidden failures"
+      ],
+      "counterexamples": [
+        "Treating untested universality as proven is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

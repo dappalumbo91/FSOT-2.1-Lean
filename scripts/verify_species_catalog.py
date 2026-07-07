@@ -17,6 +17,7 @@ MANIFEST_PATH = ROOT / "data" / "species_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import REPO_ROOT, species_catalog_path  # noqa: E402
 from species_catalog import flatten_catalog, load_catalog, summarize_species  # noqa: E402
 
 
@@ -32,8 +33,14 @@ def verify_species(
 ) -> tuple[list[str], dict]:
     manifest = load_manifest()
     ver = manifest.get("verification", {})
-    root = Path(manifest["machine_molecule_root"])
-    catalog_path = root / manifest["artifacts"]["catalog_json"]["path"]
+    raw_root = manifest["machine_molecule_root"]
+    if raw_root.startswith("vendor/"):
+        catalog_path = species_catalog_path()
+    else:
+        root = Path(raw_root)
+        if not root.is_absolute():
+            root = REPO_ROOT / root
+        catalog_path = root / manifest["artifacts"]["catalog_json"]["path"]
     registry = json.loads(registry_path.read_text(encoding="utf-8")) if registry_path.exists() else {}
     issues: list[str] = []
 

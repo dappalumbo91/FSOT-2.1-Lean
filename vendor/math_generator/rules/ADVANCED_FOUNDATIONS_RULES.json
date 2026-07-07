@@ -1,0 +1,788 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "ADVANCED_FOUNDATIONS_RULEBOOK.md",
+  "domain_symbols": {
+    "formal_system": "languages, structures, and proof systems",
+    "computation": "machines, algorithms, and decision procedures",
+    "symbolic": "symbolic advanced-foundations expressions"
+  },
+  "rules": [
+    {
+      "id": "AF-001",
+      "name": "Satisfaction relation seed",
+      "category": "model theory",
+      "input_form": "structure M, assignment s, formula phi",
+      "output_form": "M satisfies phi under s",
+      "domains": [
+        "formal_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A formal language, structure, and assignment are fixed"
+      ],
+      "operation": "Evaluate a formula semantically inside a structure under the standard satisfaction clauses.",
+      "properties": [
+        "semantic_seed"
+      ],
+      "examples": [
+        "Truth in a structure depends on both interpretation data and variable assignment"
+      ],
+      "counterexamples": [
+        "Treating formal provability and semantic satisfaction as identical is invalid in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AF-010",
+      "name": "Elementary equivalence seed",
+      "category": "model theory",
+      "input_form": "structures M and N in a common language",
+      "output_form": "same first-order theory",
+      "domains": [
+        "formal_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The structures are interpreted in the same first-order language"
+      ],
+      "operation": "Identify structures that satisfy exactly the same first-order sentences.",
+      "properties": [
+        "equivalence_seed"
+      ],
+      "examples": [
+        "Nonisomorphic structures can still be elementarily equivalent"
+      ],
+      "counterexamples": [
+        "Isomorphism is stronger than elementary equivalence, so replacing one by the other is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "AF-001"
+        }
+      ]
+    },
+    {
+      "id": "AF-020",
+      "name": "Turing computability seed",
+      "category": "computability theory",
+      "input_form": "function with algorithmic specification",
+      "output_form": "Turing-computable classification",
+      "domains": [
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A standard Turing-machine model and input-output convention are fixed"
+      ],
+      "operation": "Classify a function as computable by existence of a halting correct machine procedure.",
+      "properties": [
+        "classification_seed"
+      ],
+      "examples": [
+        "Effective finite-step symbolic procedures are modeled by Turing-computable functions in the standard setting"
+      ],
+      "counterexamples": [
+        "Describing a function informally without a halting effective procedure is insufficient"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AF-030",
+      "name": "Decidability seed",
+      "category": "computability theory",
+      "input_form": "language of encoded inputs",
+      "output_form": "decidable iff some total correct decision machine exists",
+      "domains": [
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "An encoding and machine model are fixed"
+      ],
+      "operation": "Recognize decidability by existence of a total halting decision procedure.",
+      "properties": [
+        "decision_seed"
+      ],
+      "examples": [
+        "Total halting behavior distinguishes decision procedures from partial recognizers"
+      ],
+      "counterexamples": [
+        "Semidecidability alone is insufficient for decidability"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "AF-020"
+        }
+      ]
+    },
+    {
+      "id": "AF-040",
+      "name": "Simply typed lambda judgment seed",
+      "category": "type theory",
+      "input_form": "Gamma |- t : T",
+      "output_form": "well-typed term judgment",
+      "domains": [
+        "formal_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A typing context and simply typed lambda calculus are fixed"
+      ],
+      "operation": "Assign a type to a term through a valid typing derivation.",
+      "properties": [
+        "judgment_seed"
+      ],
+      "examples": [
+        "Typing rules constrain application and abstraction by domain-codomain compatibility"
+      ],
+      "counterexamples": [
+        "Applying a nonfunction term as though it had an arrow type is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "AF-050",
+      "name": "Curry-Howard bridge seed",
+      "category": "type theory and logic bridges",
+      "input_form": "proposition and proof system with typed terms",
+      "output_form": "propositions-as-types interpretation",
+      "domains": [
+        "formal_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A compatible typed proof-term system is fixed"
+      ],
+      "operation": "Relate propositions to types and proofs to terms under Curry-Howard.",
+      "properties": [
+        "bridge_seed"
+      ],
+      "examples": [
+        "Implication behaves like a function type under the propositions-as-types reading"
+      ],
+      "counterexamples": [
+        "Treating every semantic truth automatically as a proof term is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "LF-060"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "LF-060"
+        },
+        {
+          "relation": "depends_on",
+          "target_rule_id": "AF-040"
+        }
+      ]
+    },
+    {
+      "id": "AF-060",
+      "name": "Compactness seed",
+      "category": "model theory",
+      "input_form": "set of first-order sentences",
+      "output_form": "finite-satisfiability to satisfiability transfer",
+      "domains": [
+        "formal_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A first-order language and standard semantic setting are fixed"
+      ],
+      "operation": "Pass from satisfiability of every finite fragment to satisfiability of the full theory.",
+      "properties": [
+        "compactness_seed"
+      ],
+      "examples": [
+        "Global model existence can be forced through consistent finite fragments rather than by constructing the full model directly"
+      ],
+      "counterexamples": [
+        "Inferring compactness-style behavior for stronger logics without qualification is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AF-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AF-001"
+        }
+      ]
+    },
+    {
+      "id": "AF-070",
+      "name": "Lowenheim-Skolem seed",
+      "category": "model theory",
+      "input_form": "first-order theory with an infinite model",
+      "output_form": "existence of models at controlled infinite cardinalities",
+      "domains": [
+        "formal_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A first-order theory and infinite-model hypothesis are fixed"
+      ],
+      "operation": "Transfer infinite model existence across standard L\u00f6wenheim-Skolem cardinality regimes.",
+      "properties": [
+        "cardinality_seed"
+      ],
+      "examples": [
+        "First-order syntax cannot pin down one unique infinite size merely by categorical intent"
+      ],
+      "counterexamples": [
+        "Assuming one infinite model cardinality forces uniqueness across all first-order models is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AF-010",
+        "AF-060"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AF-010"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "AF-060"
+        }
+      ]
+    },
+    {
+      "id": "AF-080",
+      "name": "Universal machine seed",
+      "category": "computability theory",
+      "input_form": "encoded machine and encoded input",
+      "output_form": "universal simulation behavior",
+      "domains": [
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A standard encoding of machines and inputs is fixed"
+      ],
+      "operation": "Simulate any encoded machine-input pair on one universal Turing machine.",
+      "properties": [
+        "universality_seed"
+      ],
+      "examples": [
+        "Machine descriptions can themselves be treated as inputs to a single universal simulator"
+      ],
+      "counterexamples": [
+        "A machine specialized to one finite task family is not automatically universal"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AF-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AF-020"
+        }
+      ]
+    },
+    {
+      "id": "AF-090",
+      "name": "Many-one reduction seed",
+      "category": "computability theory",
+      "input_form": "pair of decision problems with a computable translation",
+      "output_form": "hardness transfer by reduction",
+      "domains": [
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A computable encoding map between the problems is fixed"
+      ],
+      "operation": "Transfer decision complexity by computable many-one reduction.",
+      "properties": [
+        "reduction_seed"
+      ],
+      "examples": [
+        "Hardness is transferred by effective encoding rather than by verbal similarity of problems"
+      ],
+      "counterexamples": [
+        "An informal analogy between problems with no computable reduction map is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AF-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AF-030"
+        }
+      ]
+    },
+    {
+      "id": "AF-100",
+      "name": "Halting undecidability seed",
+      "category": "computability theory",
+      "input_form": "encoded machine-input pair",
+      "output_form": "undecidable halting-status classification",
+      "domains": [
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A universal machine encoding and total-decision interpretation are fixed"
+      ],
+      "operation": "Reject existence of a total decision procedure for the general halting problem.",
+      "properties": [
+        "undecidability_seed"
+      ],
+      "examples": [
+        "Universal simulation power also creates undecidable boundary problems for total algorithmic prediction"
+      ],
+      "counterexamples": [
+        "Solving halting only for one restricted machine family does not refute general undecidability"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AF-080",
+        "AF-090"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AF-080"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "AF-090"
+        }
+      ]
+    },
+    {
+      "id": "AF-110",
+      "name": "Dependent type family seed",
+      "category": "type theory",
+      "input_form": "type expression indexed by term data",
+      "output_form": "dependent type family",
+      "domains": [
+        "formal_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A dependent type theory with term-indexed families is fixed"
+      ],
+      "operation": "Allow types to vary with terms in indexed families.",
+      "properties": [
+        "family_seed"
+      ],
+      "examples": [
+        "Vectors indexed by length encode both data and size constraints in one typed object"
+      ],
+      "counterexamples": [
+        "Treating every simply typed system as already dependent is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AF-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "AF-040"
+        }
+      ]
+    },
+    {
+      "id": "AF-120",
+      "name": "Normalization seed",
+      "category": "type theory",
+      "input_form": "well-typed lambda term under a normalizing reduction discipline",
+      "output_form": "normal-form reduction result",
+      "domains": [
+        "formal_system",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A typed reduction system with normalization guarantees is fixed"
+      ],
+      "operation": "Reduce well-typed terms to normal form through admissible computation steps.",
+      "properties": [
+        "normalization_seed"
+      ],
+      "examples": [
+        "Computation in proof-term systems can be viewed as normalization rather than arbitrary term rewriting"
+      ],
+      "counterexamples": [
+        "Allowing unrestricted self-application destroys the standard normalization guarantee"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AF-040",
+        "AF-050"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AF-040"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "AF-050"
+        }
+      ]
+    },
+    {
+      "id": "AF-121",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AF-122",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AF-123",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AF-124",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AF-125",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AF-126",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AF-127",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AF-128",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AF-129",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AF-130",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AF-131",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "AF-132",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "formal_system",
+        "computation",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

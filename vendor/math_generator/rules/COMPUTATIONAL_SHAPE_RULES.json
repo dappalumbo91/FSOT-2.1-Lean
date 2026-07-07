@@ -1,0 +1,749 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "COMPUTATIONAL_SHAPE_RULEBOOK.md",
+  "domain_symbols": {
+    "shape_data": "finite geometric and topological data structures",
+    "algorithmic_structure": "ordered events, complexes, and filtrations",
+    "symbolic": "symbolic computational-shape expressions"
+  },
+  "rules": [
+    {
+      "id": "CG-001",
+      "name": "Convex hull algorithmic seed",
+      "category": "computational geometry",
+      "input_form": "finite point set",
+      "output_form": "minimal convex container",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A finite point set is fixed in an ambient affine or Euclidean space"
+      ],
+      "operation": "Form the minimal convex set containing all sample points.",
+      "properties": [
+        "geometric_seed"
+      ],
+      "examples": [
+        "Point-cloud boundary structure is often reduced first to its convex hull before finer geometric analysis"
+      ],
+      "counterexamples": [
+        "Arbitrary polygons passing through sample points are not automatically convex hulls"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "GT-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "GT-030"
+        }
+      ]
+    },
+    {
+      "id": "CG-010",
+      "name": "Voronoi-Delaunay duality seed",
+      "category": "computational geometry",
+      "input_form": "finite Euclidean site configuration",
+      "output_form": "dual partition and triangulation structures",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A finite set of sites is fixed in a standard Euclidean setting"
+      ],
+      "operation": "Relate nearest-site Voronoi cells to the dual Delaunay triangulation.",
+      "properties": [
+        "duality_seed"
+      ],
+      "examples": [
+        "Nearest-site partition data and triangulation connectivity encode the same geometric configuration from dual viewpoints"
+      ],
+      "counterexamples": [
+        "An arbitrary triangulation of sample points is not automatically the Delaunay dual of the Voronoi diagram"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CG-020",
+      "name": "Sweep-order seed",
+      "category": "computational geometry",
+      "input_form": "geometric event family with an ordered traversal parameter",
+      "output_form": "event-driven active-structure algorithmic model",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A total or partial event order is fixed"
+      ],
+      "operation": "Reduce geometric reasoning to event ordering with active state updates.",
+      "properties": [
+        "algorithmic_seed"
+      ],
+      "examples": [
+        "Intersection and arrangement computations can be organized by event ordering instead of naive pairwise search"
+      ],
+      "counterexamples": [
+        "Ignoring event-order updates breaks the correctness of sweep-based reasoning"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CG-030",
+      "name": "Simplicial complex data seed",
+      "category": "computational topology",
+      "input_form": "finite simplex and face-incidence data",
+      "output_form": "combinatorial topological model",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Face-closure and incidence compatibility are fixed"
+      ],
+      "operation": "Encode shape by a finite simplicial complex with explicit face relations.",
+      "properties": [
+        "combinatorial_seed"
+      ],
+      "examples": [
+        "A triangulated surface can be encoded by vertices, edges, and higher-dimensional faces together with incidence data"
+      ],
+      "counterexamples": [
+        "A cloud of points with no adjacency or face data is not yet a simplicial complex"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "AT-080"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "AT-080"
+        }
+      ]
+    },
+    {
+      "id": "CG-040",
+      "name": "Persistent homology filtration seed",
+      "category": "computational topology",
+      "input_form": "filtered family of complexes or spaces",
+      "output_form": "birth-death feature evolution",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A filtration parameter and compatible inclusions are fixed"
+      ],
+      "operation": "Track topological features across a filtration instead of at one isolated scale.",
+      "properties": [
+        "filtration_seed"
+      ],
+      "examples": [
+        "Changing scale in a point-cloud filtration reveals which connected components and cycles persist robustly"
+      ],
+      "counterexamples": [
+        "Reading topology from one isolated scale only loses persistence information"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CG-050",
+      "name": "Nerve reconstruction seed",
+      "category": "computational topology",
+      "input_form": "family of overlapping sets or local patches",
+      "output_form": "nerve complex encoding overlap topology",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Overlap relations among sets are fixed"
+      ],
+      "operation": "Build combinatorial topology from overlap data through the nerve construction.",
+      "properties": [
+        "reconstruction_seed"
+      ],
+      "examples": [
+        "Sensor or sample coverage can be summarized by intersection patterns encoded in a nerve complex"
+      ],
+      "counterexamples": [
+        "Recording only set counts without overlap relations is insufficient for nerve-based topology"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CG-060",
+      "name": "Nearest-neighbor search seed",
+      "category": "computational geometry",
+      "input_form": "finite metric or Euclidean sample set with query points",
+      "output_form": "nearest-neighbor query structure",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A metric or geometric search space is fixed"
+      ],
+      "operation": "Use geometric structure to prune search for nearest neighbors.",
+      "properties": [
+        "search_seed"
+      ],
+      "examples": [
+        "Spatial indexing can prune large parts of a point set when exact or approximate neighbor queries are asked repeatedly"
+      ],
+      "counterexamples": [
+        "Treating all search problems as if metric structure offers no pruning opportunity is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CG-070",
+      "name": "Arrangement complexity seed",
+      "category": "computational geometry",
+      "input_form": "finite family of geometric objects with incidences",
+      "output_form": "cell-decomposition and combinatorial complexity structure",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The active family of objects and incidence conventions are fixed"
+      ],
+      "operation": "Analyze geometric arrangements through subdivisions, incidences, and event complexity.",
+      "properties": [
+        "complexity_seed"
+      ],
+      "examples": [
+        "Line or segment arrangements are understood through cells, intersections, and boundary incidences rather than raw drawing alone"
+      ],
+      "counterexamples": [
+        "Counting only input objects without their induced subdivisions loses arrangement complexity"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CG-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CG-020"
+        }
+      ]
+    },
+    {
+      "id": "CG-080",
+      "name": "Witness complex seed",
+      "category": "computational topology",
+      "input_form": "landmark set with witness relations from sampled data",
+      "output_form": "reduced simplicial summary",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A landmark selection and witness rule are fixed"
+      ],
+      "operation": "Compress sampled topology through landmark-based witness-complex construction.",
+      "properties": [
+        "compression_seed"
+      ],
+      "examples": [
+        "Large point clouds can be compressed topologically by landmark-based simplicial summaries rather than full dense complexes"
+      ],
+      "counterexamples": [
+        "Selecting landmarks with no witness rule does not automatically produce a witness complex"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CG-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CG-030"
+        }
+      ]
+    },
+    {
+      "id": "CG-090",
+      "name": "Persistence stability seed",
+      "category": "computational topology",
+      "input_form": "filtered data set under controlled perturbation",
+      "output_form": "stable persistent summary behavior",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A filtration metric and perturbation model are fixed"
+      ],
+      "operation": "Control persistence summaries under bounded perturbations of filtered data.",
+      "properties": [
+        "stability_seed"
+      ],
+      "examples": [
+        "Small changes in point-cloud data should not arbitrarily destroy every persistent feature when the filtration metric is well chosen"
+      ],
+      "counterexamples": [
+        "Expecting identical persistence summaries after arbitrary large perturbations is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CG-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CG-040"
+        }
+      ]
+    },
+    {
+      "id": "CG-100",
+      "name": "Mapper summary seed",
+      "category": "computational topology",
+      "input_form": "data set with lens function, cover, and clustering rule",
+      "output_form": "mapper-style graph summary",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A lens, cover, and local clustering procedure are fixed"
+      ],
+      "operation": "Summarize high-dimensional data by a pullback-cover clustering graph.",
+      "properties": [
+        "summary_seed"
+      ],
+      "examples": [
+        "Coarse topological summaries can reveal branching or loop-like organization in structured data sets"
+      ],
+      "counterexamples": [
+        "Clustering data once with no cover or lens structure is not automatically a mapper construction"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "CG-101",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-102",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-103",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-104",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-105",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-106",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-107",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-108",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-109",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-110",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-111",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-112",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-113",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "CG-114",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "shape_data",
+        "algorithmic_structure",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,768 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "FLUID_MECHANICS_RULEBOOK.md",
+  "domain_symbols": {
+    "fluid_field": "velocity, pressure, density, and forcing fields",
+    "continuum_model": "continuum-fluid equations and control volumes",
+    "symbolic": "symbolic fluid-mechanics expressions"
+  },
+  "rules": [
+    {
+      "id": "FM-001",
+      "name": "Continuity equation seed",
+      "category": "mass conservation",
+      "input_form": "rho_t + div(rho u)",
+      "output_form": "0",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The continuum-fluid model and density and velocity fields are fixed"
+      ],
+      "operation": "Express local mass conservation by the continuity equation.",
+      "properties": [
+        "model_equation_seed"
+      ],
+      "examples": [
+        "Local density change is balanced by mass flux divergence"
+      ],
+      "counterexamples": [
+        "Replacing div(rho u) by an unrelated scalar source term without changing the model is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "FM-010",
+      "name": "Incompressibility criterion rule",
+      "category": "kinematic constraints",
+      "input_form": "velocity field u",
+      "output_form": "div u = 0",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard incompressible constant-density regime is active"
+      ],
+      "operation": "Enforce incompressibility by zero divergence of velocity.",
+      "properties": [
+        "constraint_rule"
+      ],
+      "examples": [
+        "Divergence-free velocity fields preserve local volume in the incompressible model"
+      ],
+      "counterexamples": [
+        "Declaring every constant-speed flow incompressible is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "FM-020",
+      "name": "Navier-Stokes structural seed",
+      "category": "momentum balance",
+      "input_form": "u_t + (u dot grad)u",
+      "output_form": "-grad p + nu Delta u + f with div u = 0",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard viscous incompressible regime is active"
+      ],
+      "operation": "Represent viscous incompressible flow by the Navier-Stokes momentum balance and incompressibility constraint.",
+      "properties": [
+        "model_equation_seed"
+      ],
+      "examples": [
+        "Viscosity enters through Laplacian smoothing while pressure enforces incompressibility constraints"
+      ],
+      "counterexamples": [
+        "Removing the pressure term without changing the constrained flow model is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DE-050",
+        "MP-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DE-050"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "MP-020"
+        }
+      ]
+    },
+    {
+      "id": "FM-030",
+      "name": "Reynolds transport theorem seed",
+      "category": "transport identities",
+      "input_form": "moving control-volume integral",
+      "output_form": "local-change plus flux decomposition",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A moving control volume and transported extensive quantity are fixed"
+      ],
+      "operation": "Differentiate moving-domain integrals through Reynolds transport structure.",
+      "properties": [
+        "transport_seed"
+      ],
+      "examples": [
+        "Transport identities bridge particle and control-volume descriptions of fluid motion"
+      ],
+      "counterexamples": [
+        "Differentiating a moving-domain integral as though the domain were fixed is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "FM-040",
+      "name": "Vorticity curl rule",
+      "category": "rotational flow",
+      "input_form": "velocity field u",
+      "output_form": "omega = curl u",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard three-dimensional differential-operator setting is active"
+      ],
+      "operation": "Define vorticity as the curl of velocity.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "Rigid rotation has nonzero vorticity even when speed is spatially simple"
+      ],
+      "counterexamples": [
+        "Treating vorticity as div u is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "FM-050",
+      "name": "Bernoulli along streamlines seed",
+      "category": "ideal flow",
+      "input_form": "steady inviscid incompressible flow",
+      "output_form": "Bernoulli quantity constant along streamlines",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard steady inviscid incompressible hypotheses hold"
+      ],
+      "operation": "Apply Bernoulli conservation along streamlines in the classical ideal-flow regime.",
+      "properties": [
+        "conservation_seed"
+      ],
+      "examples": [
+        "Pressure, kinetic, and potential terms trade off along a streamline in ideal flow models"
+      ],
+      "counterexamples": [
+        "Applying Bernoulli unchanged to arbitrary viscous unsteady flow is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "FM-060",
+      "name": "Euler equation seed",
+      "category": "ideal flow",
+      "input_form": "inviscid continuum-fluid momentum balance",
+      "output_form": "Euler flow equation",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The inviscid continuum-fluid regime is active"
+      ],
+      "operation": "Model inviscid flow through Euler momentum balance.",
+      "properties": [
+        "limit_seed"
+      ],
+      "examples": [
+        "Ideal-fluid dynamics arise as the zero-viscosity structural limit of the viscous balance law"
+      ],
+      "counterexamples": [
+        "Dropping viscosity while keeping viscous boundary effects unchanged is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "FM-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "FM-020"
+        }
+      ]
+    },
+    {
+      "id": "FM-070",
+      "name": "Reynolds number seed",
+      "category": "nondimensionalization",
+      "input_form": "flow scale, speed, density, and viscosity data",
+      "output_form": "dimensionless inertial-to-viscous regime measure",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Characteristic scales and viscosity are fixed"
+      ],
+      "operation": "Compare fluid regimes by the Reynolds number.",
+      "properties": [
+        "regime_seed"
+      ],
+      "examples": [
+        "The same governing equations can exhibit very different regimes depending on whether viscous or inertial effects dominate"
+      ],
+      "counterexamples": [
+        "Comparing flow similarity without matching the governing nondimensional balance is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "FM-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "FM-020"
+        }
+      ]
+    },
+    {
+      "id": "FM-080",
+      "name": "Kelvin circulation seed",
+      "category": "vortex dynamics",
+      "input_form": "transported loop in an inviscid barotropic conservative-force flow",
+      "output_form": "circulation conservation law",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard Kelvin theorem hypotheses hold"
+      ],
+      "operation": "Conserve circulation along transported loops under the standard inviscid hypotheses.",
+      "properties": [
+        "circulation_seed"
+      ],
+      "examples": [
+        "Vortex transport can be constrained by circulation structure instead of only by local velocity inspection"
+      ],
+      "counterexamples": [
+        "Arbitrary viscous forced flow does not automatically satisfy Kelvin circulation conservation"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "FM-040",
+        "FM-060"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "FM-040"
+        },
+        {
+          "relation": "uses",
+          "target_rule_id": "FM-060"
+        }
+      ]
+    },
+    {
+      "id": "FM-090",
+      "name": "Boundary layer seed",
+      "category": "high-Reynolds-number flow",
+      "input_form": "viscous wall-bounded flow with high Reynolds number",
+      "output_form": "thin near-wall viscous boundary-layer structure",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A wall-bounded high-Reynolds-number regime is fixed"
+      ],
+      "operation": "Localize strong viscous effects to thin boundary layers near walls.",
+      "properties": [
+        "asymptotic_seed"
+      ],
+      "examples": [
+        "Near-wall flow may remain viscosity-dominated even when the bulk flow is largely inertial"
+      ],
+      "counterexamples": [
+        "Treating the full domain as uniformly boundary-layer scaled is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "FM-070"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "FM-070"
+        }
+      ]
+    },
+    {
+      "id": "FM-100",
+      "name": "Acoustic perturbation seed",
+      "category": "compressible flow and acoustics",
+      "input_form": "small compressible perturbation of a fluid background state",
+      "output_form": "linearized acoustic wave equation structure",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A compressible background state and small-perturbation regime are fixed"
+      ],
+      "operation": "Derive acoustic wave behavior from linearized fluid conservation laws.",
+      "properties": [
+        "wave_seed"
+      ],
+      "examples": [
+        "Sound propagation can be derived from fluid conservation laws rather than introduced as a separate unrelated field law"
+      ],
+      "counterexamples": [
+        "Arbitrary finite-amplitude turbulent flow is not automatically governed by linear acoustic perturbation equations"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "FM-001"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "FM-001"
+        }
+      ]
+    },
+    {
+      "id": "FM-101",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-102",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-103",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-104",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-105",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-106",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-107",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-108",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-109",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-110",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-111",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-112",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-113",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "FM-114",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "fluid_field",
+        "continuum_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

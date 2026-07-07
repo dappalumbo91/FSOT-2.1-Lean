@@ -1,0 +1,750 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "OPTIMIZATION_RULEBOOK.md",
+  "domain_symbols": {
+    "feasible_set": "optimization feasible domains",
+    "objective": "objective functions",
+    "symbolic": "symbolic optimization expressions"
+  },
+  "rules": [
+    {
+      "id": "OP-001",
+      "name": "Convex set segment criterion",
+      "category": "convexity",
+      "input_form": "set C",
+      "output_form": "all line segments between points of C remain in C",
+      "domains": [
+        "feasible_set",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The ambient vector space is fixed"
+      ],
+      "operation": "Classify a set as convex by its segment closure property.",
+      "properties": [
+        "definition"
+      ],
+      "examples": [
+        "Intervals and Euclidean balls are standard convex sets"
+      ],
+      "counterexamples": [
+        "Sets with missing interior gaps along connecting segments are not convex"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "OP-010",
+      "name": "First-order necessary condition for unconstrained optima",
+      "category": "smooth optimization",
+      "input_form": "differentiable objective with interior local extremum x_*",
+      "output_form": "gradient f(x_*) = 0",
+      "domains": [
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "x_* is an interior point and f is differentiable there"
+      ],
+      "operation": "Use vanishing gradient as a necessary condition for interior local extrema.",
+      "properties": [
+        "necessary_condition"
+      ],
+      "examples": [
+        "Stationary points are necessary candidates for smooth interior optima"
+      ],
+      "counterexamples": [
+        "Boundary optima need not satisfy the interior gradient-zero condition"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "CA-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "CA-020"
+        }
+      ]
+    },
+    {
+      "id": "OP-011",
+      "name": "Gradient descent update rule",
+      "category": "optimization algorithms",
+      "input_form": "x_k and gradient of f at x_k",
+      "output_form": "x_{k+1} = x_k - alpha_k grad f(x_k)",
+      "domains": [
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A positive step size alpha_k is specified"
+      ],
+      "operation": "Update an iterate by moving opposite the gradient to seek descent.",
+      "properties": [
+        "algorithmic_rule"
+      ],
+      "examples": [
+        "Moving opposite the gradient gives a local descent direction for smooth objectives"
+      ],
+      "counterexamples": [
+        "Stepping along the positive gradient is invalid as a descent update for minimization"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "OP-010"
+        }
+      ]
+    },
+    {
+      "id": "OP-020",
+      "name": "Lagrange multiplier rule",
+      "category": "constrained optimization",
+      "input_form": "objective f and equality constraint g(x) = 0",
+      "output_form": "grad f = lambda grad g",
+      "domains": [
+        "objective",
+        "feasible_set",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard differentiability and regularity hypotheses hold"
+      ],
+      "operation": "Relate objective and constraint gradients at constrained extrema.",
+      "properties": [
+        "necessary_condition"
+      ],
+      "examples": [
+        "Equality-constrained optimization introduces multiplier equations coupling objective and constraint gradients"
+      ],
+      "counterexamples": [
+        "Applying the rule when the constraint gradient vanishes everywhere is invalid in general"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "OP-010"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "OP-010"
+        }
+      ]
+    },
+    {
+      "id": "OP-030",
+      "name": "Weak duality seed for minimization",
+      "category": "duality",
+      "input_form": "primal-feasible and dual-feasible values",
+      "output_form": "dual value <= primal value",
+      "domains": [
+        "objective",
+        "feasible_set",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The primal-dual pair is formed in a standard minimization framework"
+      ],
+      "operation": "Lower-bound primal minimization values by dual-feasible certificates.",
+      "properties": [
+        "duality_rule"
+      ],
+      "examples": [
+        "Dual certificates provide guaranteed lower bounds on primal objective values"
+      ],
+      "counterexamples": [
+        "Reversing the inequality without strong-duality hypotheses is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "OP-040",
+      "name": "Subgradient inequality rule",
+      "category": "convex analysis",
+      "input_form": "convex function f, point x, candidate subgradient g",
+      "output_form": "f(y) >= f(x) + g dot (y-x)",
+      "domains": [
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "f is convex on the active domain"
+      ],
+      "operation": "Use a subgradient as a global supporting linear functional for a convex objective.",
+      "properties": [
+        "first_order_rule"
+      ],
+      "examples": [
+        "Nondifferentiable convex optimization still admits first-order support inequalities through subgradients"
+      ],
+      "counterexamples": [
+        "Using a local slope that violates the global support inequality is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "OP-041",
+      "name": "Jensen inequality seed",
+      "category": "convex analysis",
+      "input_form": "convex function and convex combination",
+      "output_form": "f(sum lambda_i x_i) <= sum lambda_i f(x_i)",
+      "domains": [
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Weights form a convex combination and f is convex"
+      ],
+      "operation": "Control the function value of an average by the average of function values for convex objectives.",
+      "properties": [
+        "convexity_consequence"
+      ],
+      "examples": [
+        "Convexity controls objective values under averaging and mixture formation"
+      ],
+      "counterexamples": [
+        "Reversing the inequality for convex functions is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "OP-050",
+      "name": "KKT condition seed",
+      "category": "constrained optimization",
+      "input_form": "nonlinear program with equality and inequality constraints",
+      "output_form": "stationarity, feasibility, and multiplier conditions",
+      "domains": [
+        "objective",
+        "feasible_set",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard differentiability and constraint-qualification hypotheses hold"
+      ],
+      "operation": "Use KKT relations as first-order necessary conditions for constrained optimality.",
+      "properties": [
+        "necessary_condition_seed"
+      ],
+      "examples": [
+        "KKT conditions generalize Lagrange multipliers to inequality-constrained problems"
+      ],
+      "counterexamples": [
+        "Applying KKT without the needed qualification hypotheses is invalid in general"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "OP-020"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "OP-020"
+        }
+      ]
+    },
+    {
+      "id": "OP-051",
+      "name": "Complementary slackness rule",
+      "category": "constrained optimization",
+      "input_form": "inequality constraint slack and multiplier",
+      "output_form": "multiplier times slack equals zero",
+      "domains": [
+        "objective",
+        "feasible_set",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The KKT framework is active"
+      ],
+      "operation": "Couple multipliers and inactive constraint slack through zero products.",
+      "properties": [
+        "KKT_component"
+      ],
+      "examples": [
+        "Active constraints may carry positive multipliers, while inactive constraints force zero multipliers in the basic complementary-slackness picture"
+      ],
+      "counterexamples": [
+        "Assigning positive multiplier and positive slack simultaneously is invalid in the standard KKT relation"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "OP-050"
+        }
+      ]
+    },
+    {
+      "id": "OP-060",
+      "name": "Strong duality seed in convex optimization",
+      "category": "duality",
+      "input_form": "convex primal-dual pair",
+      "output_form": "equal optimal values under standard qualification hypotheses",
+      "domains": [
+        "objective",
+        "feasible_set",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The problem is convex and satisfies a standard duality qualification hypothesis"
+      ],
+      "operation": "Close the duality gap under standard convex-optimization regularity assumptions.",
+      "properties": [
+        "duality_seed"
+      ],
+      "examples": [
+        "Convex programs with suitable constraint qualifications can close the duality gap"
+      ],
+      "counterexamples": [
+        "Promoting weak duality to equality without the extra hypotheses is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "OP-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "generalizes",
+          "target_rule_id": "OP-030"
+        }
+      ]
+    },
+    {
+      "id": "OP-061",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-062",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-063",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-064",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-065",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-066",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-067",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-068",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-069",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-070",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-071",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-072",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-073",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-074",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "OP-075",
+      "name": "Counterexample mining expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "universal claim C",
+      "output_form": "counterexample search status",
+      "domains": [
+        "feasible_set",
+        "objective",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Systematically attempt to falsify broad claims before promoting them.",
+      "properties": [
+        "auto_generated",
+        "counterexample_search"
+      ],
+      "examples": [
+        "Boundary or low-dimensional cases can reveal hidden failures"
+      ],
+      "counterexamples": [
+        "Treating untested universality as proven is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

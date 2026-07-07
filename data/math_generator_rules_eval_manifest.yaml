@@ -1,0 +1,21 @@
+# Tier 30 — per-rule eval across 1520 math-generator formal rules.
+version: "1.0"
+updated: "2026-07-07"
+
+source:
+  math_generator_rules_root: "vendor/math_generator/rules"
+
+build:
+  script: scripts/build_math_generator_rules_eval_benchmark.py
+  output: data/math_generator_rules_eval_benchmark.json
+
+lean:
+  generator: scripts/gen_math_generator_rules_eval_lean.py
+  module: FSOT.Formal.MathGeneratorRulesEvalPriors
+  lean_domain: particle
+  sign_theorem: particle_raw_S_positive
+
+verification:
+  min_records: 1500
+  max_median_error_pct: 5.0
+  max_schema_fail_count: 0

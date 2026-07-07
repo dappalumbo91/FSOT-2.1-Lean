@@ -1,0 +1,739 @@
+{
+  "schema_version": "1.0",
+  "knowledge_base": "math-generator",
+  "document_source": "MATHEMATICAL_PHYSICS_RULEBOOK.md",
+  "domain_symbols": {
+    "physical_field": "fields and states in mathematical models of physics",
+    "pde_model": "partial differential equation models",
+    "symbolic": "symbolic mathematical-physics expressions"
+  },
+  "rules": [
+    {
+      "id": "MP-001",
+      "name": "Newton second law rule",
+      "category": "classical mechanics",
+      "input_form": "net force and mass",
+      "output_form": "force = mass times acceleration",
+      "domains": [
+        "physical_field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard Newtonian point-particle model is active and mass is nonzero"
+      ],
+      "operation": "Relate net force to acceleration in the basic Newtonian model.",
+      "properties": [
+        "model_equation"
+      ],
+      "examples": [
+        "Given mass and net force, acceleration is determined by dividing by mass when mass is nonzero"
+      ],
+      "counterexamples": [
+        "Using the rule with zero mass in the same elementary form is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "MP-010",
+      "name": "Heat equation seed",
+      "category": "continuum physics",
+      "input_form": "u_t",
+      "output_form": "kappa Delta u",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The homogeneous diffusion model and Laplacian operator are defined"
+      ],
+      "operation": "Model diffusion by equating time change to a Laplacian smoothing term.",
+      "properties": [
+        "model_equation"
+      ],
+      "examples": [
+        "Temperature profiles smooth over time under heat-flow dynamics"
+      ],
+      "counterexamples": [
+        "Replacing the spatial Laplacian by a first derivative changes the model and is invalid here"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DE-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DE-030"
+        }
+      ]
+    },
+    {
+      "id": "MP-020",
+      "name": "Wave equation seed",
+      "category": "continuum physics",
+      "input_form": "u_tt",
+      "output_form": "c^2 Delta u",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The homogeneous wave model and Laplacian operator are defined"
+      ],
+      "operation": "Model wave propagation with second-order time evolution driven by spatial Laplacian structure.",
+      "properties": [
+        "model_equation"
+      ],
+      "examples": [
+        "Vibrating strings and membranes are idealized by wave-type second-order time equations"
+      ],
+      "counterexamples": [
+        "Using a first-order time derivative in place of u_tt is invalid for the standard wave equation"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DE-030"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DE-030"
+        }
+      ]
+    },
+    {
+      "id": "MP-030",
+      "name": "Schrodinger equation seed",
+      "category": "quantum theory",
+      "input_form": "psi_t",
+      "output_form": "i hbar psi_t = H psi",
+      "domains": [
+        "physical_field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A Hamiltonian operator and wavefunction setting are fixed"
+      ],
+      "operation": "Model linear quantum time evolution through the Schrodinger equation.",
+      "properties": [
+        "model_equation"
+      ],
+      "examples": [
+        "Hamiltonian operators generate unitary time evolution in the elementary quantum model"
+      ],
+      "counterexamples": [
+        "Dropping the imaginary unit changes the equation class and is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "MP-040",
+      "name": "Einstein field equation seed",
+      "category": "relativity",
+      "input_form": "G_mu_nu and T_mu_nu",
+      "output_form": "G_mu_nu = 8 pi T_mu_nu in geometric units up to convention choices",
+      "domains": [
+        "physical_field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The active relativistic sign and constant conventions are fixed"
+      ],
+      "operation": "Relate spacetime curvature to stress-energy in the standard general-relativistic tensor equation.",
+      "properties": [
+        "model_equation"
+      ],
+      "examples": [
+        "Relativistic gravity couples geometry to matter through tensor equations rather than scalar force laws"
+      ],
+      "counterexamples": [
+        "Replacing the tensors by unrelated scalar quantities is invalid"
+      ],
+      "common_errors": [],
+      "cross_links": [
+        "DG-040"
+      ],
+      "dependency_links": [
+        {
+          "relation": "uses",
+          "target_rule_id": "DG-040"
+        }
+      ]
+    },
+    {
+      "id": "MP-050",
+      "name": "Action principle seed",
+      "category": "variational mechanics",
+      "input_form": "action functional and admissible variations",
+      "output_form": "stationary trajectory condition",
+      "domains": [
+        "physical_field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A variational formulation and admissible variation class are fixed"
+      ],
+      "operation": "Characterize physical trajectories by stationarity of the action.",
+      "properties": [
+        "variational_seed"
+      ],
+      "examples": [
+        "Mechanics can be recast as an optimization-like stationarity problem for an action functional"
+      ],
+      "counterexamples": [
+        "Replacing stationarity by arbitrary pointwise minimization is invalid in general"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "MP-051",
+      "name": "Euler-Lagrange equation seed",
+      "category": "variational mechanics",
+      "input_form": "Lagrangian L(q,qdot,t)",
+      "output_form": "Euler-Lagrange differential equations",
+      "domains": [
+        "physical_field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard endpoint and smoothness hypotheses hold"
+      ],
+      "operation": "Differentiate stationary action conditions into Euler-Lagrange equations.",
+      "properties": [
+        "equation_generation_seed"
+      ],
+      "examples": [
+        "Variational mechanics produces differential equations by differentiating the action with respect to admissible path variations"
+      ],
+      "counterexamples": [
+        "Applying the Euler-Lagrange formula without the required endpoint or smoothness hypotheses is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "MP-050"
+        }
+      ]
+    },
+    {
+      "id": "MP-060",
+      "name": "Maxwell equation structural seed",
+      "category": "classical fields",
+      "input_form": "electric and magnetic field variables with sources",
+      "output_form": "coupled divergence and curl field equations",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard classical electromagnetic regime is active"
+      ],
+      "operation": "Represent electromagnetic dynamics through Maxwell-type field equations.",
+      "properties": [
+        "field_equation_seed"
+      ],
+      "examples": [
+        "Electric and magnetic fields are coupled through field equations rather than treated as independent free variables"
+      ],
+      "counterexamples": [
+        "Dropping source terms or coupling structure without changing the physical regime is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "MP-061",
+      "name": "Noether symmetry-conservation seed",
+      "category": "symmetry principles",
+      "input_form": "continuous symmetry of an action",
+      "output_form": "conserved quantity",
+      "domains": [
+        "physical_field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "The standard Noether theorem hypotheses hold"
+      ],
+      "operation": "Translate continuous action symmetries into conservation laws.",
+      "properties": [
+        "theorem_seed"
+      ],
+      "examples": [
+        "Time-translation symmetry corresponds to energy conservation in classical variational mechanics"
+      ],
+      "counterexamples": [
+        "Inferring conservation laws from arbitrary transformations with no action symmetry is invalid"
+      ],
+      "common_errors": [],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "MP-050"
+        }
+      ]
+    },
+    {
+      "id": "MP-070",
+      "name": "Partition function seed",
+      "category": "statistical mechanics",
+      "input_form": "canonical ensemble",
+      "output_form": "partition function and derivative-derived observables",
+      "domains": [
+        "physical_field",
+        "symbolic"
+      ],
+      "preconditions": [
+        "A canonical ensemble and thermodynamic parameterization are fixed"
+      ],
+      "operation": "Encode thermodynamic observables through partition-function structure.",
+      "properties": [
+        "generating_quantity_seed"
+      ],
+      "examples": [
+        "Free energy, expected energy, and fluctuation quantities can be derived from partition-function structure"
+      ],
+      "counterexamples": [
+        "Treating the partition function as a mere normalization constant with no observable content is invalid"
+      ],
+      "common_errors": []
+    },
+    {
+      "id": "MP-071",
+      "name": "Canonical form normalization expansion",
+      "category": "auto_expansion_normalization",
+      "input_form": "raw expression E",
+      "output_form": "canonical_form(E)",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rewrite expressions into a canonical form that preserves the active equivalence relation.",
+      "properties": [
+        "auto_generated",
+        "normalization"
+      ],
+      "examples": [
+        "x + y and y + x map to a shared canonical additive form in commutative settings"
+      ],
+      "counterexamples": [
+        "Applying canonicalization rules outside their preconditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-072",
+      "name": "Substitution soundness expansion",
+      "category": "auto_expansion_transformation",
+      "input_form": "expression F(x) with admissible substitution x <- g",
+      "output_form": "transformed expression F(g)",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Substitute only under explicit domain and structural admissibility constraints.",
+      "properties": [
+        "auto_generated",
+        "substitution"
+      ],
+      "examples": [
+        "Replacing a variable by a constrained expression must preserve declared domain assumptions"
+      ],
+      "counterexamples": [
+        "Substitution that violates assumptions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-073",
+      "name": "Composition rule expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "objects A and B with a valid composition law",
+      "output_form": "composed object A o B",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Compose structured objects when composition preconditions are satisfied.",
+      "properties": [
+        "auto_generated",
+        "composition"
+      ],
+      "examples": [
+        "Function and operator compositions require compatible codomain-domain interfaces"
+      ],
+      "counterexamples": [
+        "Composing incompatible objects is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-074",
+      "name": "Inverse admissibility expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "object A with invertibility conditions",
+      "output_form": "inverse object A^{-1}",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Introduce inverses only when invertibility conditions are explicitly satisfied.",
+      "properties": [
+        "auto_generated",
+        "inverse"
+      ],
+      "examples": [
+        "Matrix inversion requires nonsingularity"
+      ],
+      "counterexamples": [
+        "Assuming inverses exist without conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-075",
+      "name": "Constraint propagation expansion",
+      "category": "auto_expansion_constraints",
+      "input_form": "state with constraints C and transform T",
+      "output_form": "updated constraints T(C)",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Propagate constraints through each accepted transformation step.",
+      "properties": [
+        "auto_generated",
+        "constraints"
+      ],
+      "examples": [
+        "Positivity or boundedness constraints should be preserved or updated after transformation"
+      ],
+      "counterexamples": [
+        "Dropping constraints silently is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-076",
+      "name": "Boundary condition integration expansion",
+      "category": "auto_expansion_conditions",
+      "input_form": "model equation with boundary or endpoint constraints",
+      "output_form": "constraint-integrated model state",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Include boundary and endpoint constraints in the active model state before solving.",
+      "properties": [
+        "auto_generated",
+        "boundary_conditions"
+      ],
+      "examples": [
+        "Differential models require boundary or initial data to identify admissible solution families"
+      ],
+      "counterexamples": [
+        "Solving while ignoring required boundary conditions is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-077",
+      "name": "Conservation tracking expansion",
+      "category": "auto_expansion_invariants",
+      "input_form": "model evolution with candidate conserved quantity Q",
+      "output_form": "conservation status of Q",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Track whether declared conserved quantities remain invariant under model evolution.",
+      "properties": [
+        "auto_generated",
+        "conservation"
+      ],
+      "examples": [
+        "Energy-like quantities can be validated as conserved under symmetry assumptions"
+      ],
+      "counterexamples": [
+        "Declaring conservation without validation is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-078",
+      "name": "Approximation error budget expansion",
+      "category": "auto_expansion_numerics",
+      "input_form": "approximation method and tolerance epsilon",
+      "output_form": "bounded error certificate",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Attach explicit error bounds or estimates to approximation-driven outputs.",
+      "properties": [
+        "auto_generated",
+        "error_bounds"
+      ],
+      "examples": [
+        "Numerical approximations should report residual or tolerance-constrained error"
+      ],
+      "counterexamples": [
+        "Reporting approximations without any error control is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-079",
+      "name": "Parameter sensitivity expansion",
+      "category": "auto_expansion_analysis",
+      "input_form": "model output O(theta) with parameter vector theta",
+      "output_form": "local or global sensitivity profile",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Quantify how parameter perturbations affect outputs and derived conclusions.",
+      "properties": [
+        "auto_generated",
+        "sensitivity"
+      ],
+      "examples": [
+        "Small parameter shifts can cause large output changes near bifurcation or instability regions"
+      ],
+      "counterexamples": [
+        "Assuming robustness with no sensitivity analysis is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-080",
+      "name": "Symmetry detection expansion",
+      "category": "auto_expansion_structure",
+      "input_form": "equation or model M",
+      "output_form": "identified symmetry class of M",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Detect and record symmetry transformations that preserve model structure.",
+      "properties": [
+        "auto_generated",
+        "symmetry"
+      ],
+      "examples": [
+        "Translation or rotation symmetries can simplify derivations and reduce state dimensionality"
+      ],
+      "counterexamples": [
+        "Attributing symmetry to a model that breaks it under constraints is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-081",
+      "name": "Dimensionless reduction expansion",
+      "category": "auto_expansion_scaling",
+      "input_form": "dimensionful equation with characteristic scales",
+      "output_form": "dimensionless normalized equation",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Rescale equations by characteristic magnitudes to expose dimensionless groups.",
+      "properties": [
+        "auto_generated",
+        "nondimensionalization"
+      ],
+      "examples": [
+        "Dimensionless groups often reveal dominant mechanisms and asymptotic regimes"
+      ],
+      "counterexamples": [
+        "Mixing inconsistent scales yields invalid normalization"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-082",
+      "name": "Solver branch admissibility expansion",
+      "category": "auto_expansion_solver_routing",
+      "input_form": "problem state and candidate branch family",
+      "output_form": "admissible or rejected branch decision",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Choose solver branches by matching structural form, assumptions, and goal type.",
+      "properties": [
+        "auto_generated",
+        "branch_selection"
+      ],
+      "examples": [
+        "Optimization, proof, and simulation branches require different admissibility logic"
+      ],
+      "counterexamples": [
+        "Selecting branches on keywords alone is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-083",
+      "name": "Degenerate case handling expansion",
+      "category": "auto_expansion_edge_cases",
+      "input_form": "rule with potential degenerate parameter regimes",
+      "output_form": "explicit degenerate-case handling path",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Split and handle degenerate regimes explicitly instead of forcing generic formulas.",
+      "properties": [
+        "auto_generated",
+        "edge_case"
+      ],
+      "examples": [
+        "Singular, zero, or limiting parameter cases often require separate derivation paths"
+      ],
+      "counterexamples": [
+        "Applying generic rules to singular cases without modification is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-084",
+      "name": "Proof obligation expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "candidate theorem-level claim",
+      "output_form": "finite proof obligation checklist",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Convert claims into explicit proof obligations before acceptance.",
+      "properties": [
+        "auto_generated",
+        "proof_obligations"
+      ],
+      "examples": [
+        "Hypotheses, domain conditions, and intermediate lemmas should be listed explicitly"
+      ],
+      "counterexamples": [
+        "Accepting claims with missing obligations is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    },
+    {
+      "id": "MP-085",
+      "name": "Counterexample mining expansion",
+      "category": "auto_expansion_validation",
+      "input_form": "universal claim C",
+      "output_form": "counterexample search status",
+      "domains": [
+        "physical_field",
+        "pde_model",
+        "symbolic"
+      ],
+      "preconditions": [
+        "Auto-expansion rule requires explicit domain assumptions and validation metadata"
+      ],
+      "operation": "Systematically attempt to falsify broad claims before promoting them.",
+      "properties": [
+        "auto_generated",
+        "counterexample_search"
+      ],
+      "examples": [
+        "Boundary or low-dimensional cases can reveal hidden failures"
+      ],
+      "counterexamples": [
+        "Treating untested universality as proven is invalid"
+      ],
+      "common_errors": [
+        "Using auto-generated rules without confirming domain-specific assumptions"
+      ]
+    }
+  ]
+}

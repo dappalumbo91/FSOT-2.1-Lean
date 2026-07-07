@@ -401,6 +401,45 @@ extension_domains:
     lean_module: FSOT.Formal.ComputationalReasoningPriors
     note: "FIC intelligence-compression sweep + trinary-OS coding/reasoning invariants"
 
+  Math_Generator_Rules_Eval:
+    tier: 30
+    D_eff: 17
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, mathematical, consciousness]
+    build_script: scripts/build_math_generator_rules_eval_benchmark.py
+    manifest: data/math_generator_rules_eval_manifest.yaml
+    benchmark_data: data/math_generator_rules_eval_benchmark.json
+    lean_module: FSOT.Formal.MathGeneratorRulesEvalPriors
+    note: "Per-rule schema/domain eval across 1520 math-generator formal rules"
+
+  Trinary_OS_Portable:
+    tier: 30
+    D_eff: 12
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_trinary_os_portable_benchmark.py
+    manifest: data/trinary_os_portable_manifest.yaml
+    benchmark_data: data/trinary_os_portable_benchmark.json
+    lean_module: FSOT.Formal.TrinaryOSPortablePriors
+    note: "Vendor FSOTB oracles + derived ISA constants for portable coding rebuild"
+
+  Materials_Species_Bridge:
+    tier: 30
+    D_eff: 14
+    delta_psi: 0.65
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, energy]
+    build_script: scripts/build_materials_species_bridge_benchmark.py
+    manifest: data/materials_species_bridge_manifest.yaml
+    benchmark_data: data/materials_species_bridge_benchmark.json
+    lean_module: FSOT.Formal.MaterialsSpeciesBridgePriors
+    note: "SMILES engineering metals cross-validated against species-catalog machine properties"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0
