@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-04T17:20:06.997884+00:00",
+  "generated_at": "2026-07-07T16:27:06.259051+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 26,
-    "total_scientific_domains_covered": 62,
+    "extension_domains": 30,
+    "total_scientific_domains_covered": 66,
     "total_empirical_records": 305270,
     "domains_target_band_2pct": 34,
     "domains_sign_mismatch": 1,
@@ -14,7 +14,7 @@
       "D_needs_work": 0,
       "unverified": 1
     },
-    "lean_formal_modules": 81
+    "lean_formal_modules": 85
   },
   "neurolab_domains": [
     {
@@ -698,6 +698,38 @@
       "median_error_pct": 0.0,
       "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.NeuronMultiHeroPriors"
+    },
+    {
+      "domain": "Linguistics_Formal",
+      "tier": 29,
+      "record_count": 10,
+      "median_error_pct": 0.0013504254899468224,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.LinguisticsFormalPriors"
+    },
+    {
+      "domain": "Mathematics_Computational",
+      "tier": 29,
+      "record_count": 21,
+      "median_error_pct": 1.4090183367935627e-14,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.MathematicsComputationalPriors"
+    },
+    {
+      "domain": "Materials_Engineering",
+      "tier": 29,
+      "record_count": 87,
+      "median_error_pct": 0.819727,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.MaterialsEngineeringPriors"
+    },
+    {
+      "domain": "Computational_Reasoning",
+      "tier": 29,
+      "record_count": 577,
+      "median_error_pct": 0.0,
+      "coverage_tier": "A_strong",
+      "lean_module": "FSOT.Formal.ComputationalReasoningPriors"
     }
   ],
   "intelligence_compression": {
@@ -843,10 +875,10 @@
     }
   ],
   "recommended_next_waves": [
-    "NSIDC/GRACE direct cryosphere mass-balance ingest (beyond NCEI proxy)",
-    "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens",
+    "Math-generator per-rule FSOT numeric eval across 1520 formal rules",
+    "Materials engineering species-catalog machine/molecule bridge",
+    "Trinary-OS oracle bundle in vendor/ for portable coding rebuild",
     "iGEM parts-registry strict-empirical synthetic biology bridge",
-    "Econometrics real macro time-series (beyond linguistics proxy)",
-    "Climate scale to 40 stations \u00d7 60 years"
+    "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens"
   ]
 }

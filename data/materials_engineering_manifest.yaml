@@ -1,0 +1,20 @@
+# Tier 29 — Materials engineering SMILES mechanical/thermal observables.
+version: "1.0"
+updated: "2026-07-04"
+
+source:
+  smiles_dataset: "vendor/smiles/FSOT_SMILES_Lab_Dataset.json"
+
+build:
+  script: scripts/build_materials_engineering_benchmark.py
+  output: data/materials_engineering_benchmark.json
+
+lean:
+  generator: scripts/gen_materials_engineering_lean.py
+  module: FSOT.Formal.MaterialsEngineeringPriors
+  lean_domain: material
+  sign_theorem: material_raw_S_positive
+
+verification:
+  min_records: 50
+  max_median_error_pct: 5.0

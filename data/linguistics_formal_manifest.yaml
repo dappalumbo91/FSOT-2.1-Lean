@@ -1,0 +1,22 @@
+# Tier 29 — Linguistics formal anchors (consciousness / social-science proxy thickening).
+version: "1.0"
+updated: "2026-07-04"
+
+source:
+  linguistics_root: "vendor/linguistics"
+  targets_csv: "data/LINGUISTIC_TARGETS.csv"
+  derivations_json: "linguistics_derivations.json"
+
+build:
+  script: scripts/build_linguistics_formal_benchmark.py
+  output: data/linguistics_formal_benchmark.json
+
+lean:
+  generator: scripts/gen_linguistics_formal_lean.py
+  module: FSOT.Formal.LinguisticsFormalPriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 10
+  max_median_error_pct: 5.0

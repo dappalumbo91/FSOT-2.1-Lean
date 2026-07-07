@@ -113,6 +113,10 @@ LEAN_TARGETS = [
     "FSOT.Formal.SyntheticBiologyPriors",
     "FSOT.Formal.QuantumMaterialsPriors",
     "FSOT.Formal.NeuronMultiHeroPriors",
+    "FSOT.Formal.LinguisticsFormalPriors",
+    "FSOT.Formal.MathematicsComputationalPriors",
+    "FSOT.Formal.MaterialsEngineeringPriors",
+    "FSOT.Formal.ComputationalReasoningPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

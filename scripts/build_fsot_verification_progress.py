@@ -74,6 +74,10 @@ def build_progress() -> dict:
     synthetic_bio_bench = _load_json(ROOT / "data" / "synthetic_biology_benchmark.json")
     quantum_materials_bench = _load_json(ROOT / "data" / "quantum_materials_benchmark.json")
     multi_hero_bench = _load_json(ROOT / "data" / "multi_hero_benchmark.json")
+    linguistics_formal_bench = _load_json(ROOT / "data" / "linguistics_formal_benchmark.json")
+    mathematics_bench = _load_json(ROOT / "data" / "mathematics_computational_benchmark.json")
+    materials_eng_bench = _load_json(ROOT / "data" / "materials_engineering_benchmark.json")
+    computational_reasoning_bench = _load_json(ROOT / "data" / "computational_reasoning_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -673,13 +677,53 @@ def build_progress() -> dict:
                 "FSOT.Formal.NeuronMultiHeroPriors",
             ],
         },
+        {
+            "tier": 28,
+            "name": "Portable verification — vendor bundle + clone-and-verify",
+            "status": "complete",
+            "artifacts": [
+                "vendor/fsot_compute.py",
+                "CONTRIBUTING.md",
+                "data/external_data_manifest.yaml",
+                "scripts/fsot_paths.py",
+            ],
+        },
+        {
+            "tier": 29,
+            "name": "Practical application wave — linguistics, math, materials engineering, reasoning",
+            "status": "complete"
+            if linguistics_formal_bench.get("record_count", 0) >= 10
+            and mathematics_bench.get("record_count", 0) >= 15
+            and materials_eng_bench.get("record_count", 0) >= 50
+            and computational_reasoning_bench.get("record_count", 0) >= 100
+            else "pending",
+            "metrics": {
+                "linguistics_formal_records": linguistics_formal_bench.get("record_count"),
+                "mathematics_computational_records": mathematics_bench.get("record_count"),
+                "materials_engineering_records": materials_eng_bench.get("record_count"),
+                "computational_reasoning_records": computational_reasoning_bench.get("record_count"),
+                "computational_reasoning_median_error_pct": computational_reasoning_bench.get(
+                    "median_error_pct"
+                ),
+            },
+            "artifacts": [
+                "data/linguistics_formal_manifest.yaml",
+                "data/mathematics_computational_manifest.yaml",
+                "data/materials_engineering_manifest.yaml",
+                "data/computational_reasoning_manifest.yaml",
+                "FSOT.Formal.LinguisticsFormalPriors",
+                "FSOT.Formal.MathematicsComputationalPriors",
+                "FSOT.Formal.MaterialsEngineeringPriors",
+                "FSOT.Formal.ComputationalReasoningPriors",
+            ],
+        },
     ]
 
     next_steps = [
-        "Per-stratum hybrid FI sim (not just slope proxy) for multi-hero specimens",
-        "Tighten canonical bridge per-class using psi_con/eta_eff only",
-        "Wire remaining LLM experiment folders into Lean namespaces",
-        "Cohort train/holdout split with Lean regression gates",
+        "Math-generator per-rule FSOT numeric eval across 1520 formal rules",
+        "Trinary-OS oracle bundle in vendor/ for portable coding rebuild",
+        "Materials engineering species-catalog machine bridge",
+        "iGEM parts-registry strict-empirical synthetic biology bridge",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -698,7 +742,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 27 Synthetic Biology/Quantum Materials + multi-hero + climate scale-up",
+        "current_position": "Tier 29 Practical application — linguistics, math, materials engineering, reasoning",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

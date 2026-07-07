@@ -18,8 +18,10 @@ MANIFEST_PATH = ROOT / "data" / "linguistics_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import REPO_ROOT, linguistics_root  # noqa: E402
 from linguistics_targets import (  # noqa: E402
     load_derivations_db,
+    load_derivations_json,
     load_targets_csv,
     merge_targets,
     summarize_linguistics,
@@ -30,11 +32,12 @@ def ingest_linguistics(manifest_path: Path = MANIFEST_PATH) -> dict:
     if yaml is None:
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
-    root = Path(manifest["linguistics_root"])
+    root = linguistics_root() or (REPO_ROOT / manifest["linguistics_root"])
     csv_path = root / manifest["artifacts"]["targets_csv"]["path"]
+    json_path = root / "linguistics_derivations.json"
     db_path = root / manifest["artifacts"]["derivations_db"]["path"]
     targets = load_targets_csv(csv_path)
-    derivations = load_derivations_db(db_path)
+    derivations = load_derivations_json(json_path) if json_path.exists() else load_derivations_db(db_path)
     rows = merge_targets(targets, derivations)
     return {
         "present": csv_path.exists(),

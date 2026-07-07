@@ -182,6 +182,10 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.SyntheticBiologyPriors",
                 "FSOT.Formal.QuantumMaterialsPriors",
                 "FSOT.Formal.NeuronMultiHeroPriors",
+                "FSOT.Formal.LinguisticsFormalPriors",
+                "FSOT.Formal.MathematicsComputationalPriors",
+                "FSOT.Formal.MaterialsEngineeringPriors",
+                "FSOT.Formal.ComputationalReasoningPriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -770,6 +774,10 @@ def main() -> int:
                 "build_synthetic_biology_benchmark.py",
                 "build_quantum_materials_benchmark.py",
                 "build_multi_hero_benchmark.py",
+                "build_linguistics_formal_benchmark.py",
+                "build_mathematics_computational_benchmark.py",
+                "build_materials_engineering_benchmark.py",
+                "build_computational_reasoning_benchmark.py",
                 "ingest_climate_ncei_chunked.py",
                 "build_climate_observed_benchmark.py",
             ):
@@ -857,7 +865,11 @@ def main() -> int:
             (None, "gen_synthetic_biology_lean.py", "SyntheticBiologyPriors.lean generation failed", None),
             (None, "gen_quantum_materials_lean.py", "QuantumMaterialsPriors.lean generation failed", None),
             (None, "gen_multi_hero_lean.py", "NeuronMultiHeroPriors.lean generation failed", None),
-            ]
+            (None, "gen_linguistics_formal_lean.py", "LinguisticsFormalPriors.lean generation failed", None),
+            (None, "gen_mathematics_computational_lean.py", "MathematicsComputationalPriors.lean generation failed", None),
+            (None, "gen_materials_engineering_lean.py", "MaterialsEngineeringPriors.lean generation failed", None),
+            (None, "gen_computational_reasoning_lean.py", "ComputationalReasoningPriors.lean generation failed", None),
+        ]
             for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
                 if ingest_name:
                     ingest_script = ROOT / "scripts" / ingest_name

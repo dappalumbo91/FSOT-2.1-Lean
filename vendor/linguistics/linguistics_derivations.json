@@ -1,0 +1,424 @@
+{
+  "derivations": [
+    {
+      "name": "Zipf_exponent_English",
+      "computed": 1.0,
+      "error_pct": 0.0,
+      "formula": "FSOT: phi**2 - phi  (exact golden-ratio identity)",
+      "status": "hand"
+    },
+    {
+      "name": "Type_token_ratio_1M",
+      "computed": 0.0432139182637723,
+      "error_pct": 2.8902815804101154,
+      "formula": "FSOT: exp(-pi)",
+      "status": "hand"
+    },
+    {
+      "name": "Entropy_bits_per_char_EN",
+      "computed": 4.05755824776701,
+      "error_pct": -0.30569415805866884,
+      "formula": "FSOT: pi + G_catalan",
+      "status": "hand"
+    },
+    {
+      "name": "Mean_word_length_chars_EN",
+      "computed": 4.69995497391666,
+      "error_pct": -0.0009580017732482906,
+      "formula": "FSOT: (1/e)*(phi^3)+pi",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_syllables_per_word_EN",
+      "computed": 1.4100539498877,
+      "error_pct": 0.0038262331699859954,
+      "formula": "FSOT: (1/e)*(e/pi)+(1/G)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Phoneme_inventory_size_EN",
+      "computed": 38.9989678131335,
+      "error_pct": -0.002646632990942448,
+      "formula": "FSOT: ((e^phi)-(1/G))*(pi^2)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Consonant_vowel_ratio_EN",
+      "computed": 1.69002777642572,
+      "error_pct": 0.0016435754866365388,
+      "formula": "FSOT: ((phi^2)-(pi/e))*(pi/e)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_phonemes_per_word_EN",
+      "computed": 5.50083068534551,
+      "error_pct": 0.015103369918375879,
+      "formula": "FSOT: (pi+phi)*(pi/e)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_sentence_length_words_EN",
+      "computed": 17.5992242940162,
+      "error_pct": -0.004407420362410748,
+      "formula": "FSOT: G*(2*pi^2)-ln(phi)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_dependency_length_EN",
+      "computed": 2.40001358369048,
+      "error_pct": 0.0005659871035364658,
+      "formula": "FSOT: phi*(e/pi)+1",
+      "status": "search-loose"
+    },
+    {
+      "name": "Entropy_bits_per_phoneme_EN",
+      "computed": 5.19978843376326,
+      "error_pct": -0.004068581475707562,
+      "formula": "FSOT: (1/gamma)/(gamma*gamma)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Heaps_exponent",
+      "computed": 0.599997786040735,
+      "error_pct": -0.00036899321083823844,
+      "formula": "FSOT: ((e^3)-(2*pi^2))*(1/gamma)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_word_length_English",
+      "computed": 4.49971638840435,
+      "error_pct": -0.006302479903277616,
+      "formula": "FSOT: (1/gamma)*(sqrt(3)+(e/pi))",
+      "status": "search-loose"
+    },
+    {
+      "name": "Letter_entropy_English",
+      "computed": 4.18002506099209,
+      "error_pct": 0.0005995452654275573,
+      "formula": "FSOT: sqrt(5)*(2*pi)-(pi^2)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_phoneme_inventory_size",
+      "computed": 30.9995813680981,
+      "error_pct": -0.0013504254899468224,
+      "formula": "FSOT: ((1/gamma)-sqrt(2))*(pi^4)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Cross_linguistic_info_rate",
+      "computed": 39.1495279442755,
+      "error_pct": -0.001205761748405669,
+      "formula": "FSOT: (phi^3)*(phi^7)/pi",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_fixation_duration",
+      "computed": 224.988085867106,
+      "error_pct": -0.005295170175132726,
+      "formula": "FSOT: (phi^5)*(e^3)+sqrt(5)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Saccade_length_reading",
+      "computed": 8.00021360546018,
+      "error_pct": 0.002670068252275115,
+      "formula": "FSOT: ((e^2)-sqrt(3))*sqrt(2)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Sentence_length_mean_EN",
+      "computed": 16.9995632588799,
+      "error_pct": -0.0025690654122958196,
+      "formula": "FSOT: ((phi^3)-(e/pi))*(e^phi)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Heaps_beta_English",
+      "computed": 0.5,
+      "error_pct": 0.0,
+      "formula": "FSOT: (pi^2)/(2*pi^2)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Speech_rate_syllables_per_second",
+      "computed": 5.92014740160013,
+      "error_pct": 0.0024898918941655425,
+      "formula": "FSOT: ((phi^3)-gamma)*phi",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_syllable_duration_ms",
+      "computed": 179.981398167251,
+      "error_pct": -0.010334351527174275,
+      "formula": "FSOT: ((pi/e)+(e^phi))*(phi^7)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_word_duration_ms",
+      "computed": 249.977145496891,
+      "error_pct": -0.009141801243606551,
+      "formula": "FSOT: (phi^2)*(pi^4)-(e^phi)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Reading_rate_words_per_minute",
+      "computed": 249.977145496891,
+      "error_pct": -0.009141801243606551,
+      "formula": "FSOT: (phi^2)*(pi^4)-(e^phi)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Lexical_decision_RT_ms",
+      "computed": 600.004567455137,
+      "error_pct": 0.0007612425229126529,
+      "formula": "FSOT: ((pi^4)-(pi^2))*(phi^4)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Function_word_token_rate",
+      "computed": 0.5,
+      "error_pct": 0.0,
+      "formula": "FSOT: (pi^2)/(2*pi^2)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_morphemes_per_word_EN",
+      "computed": 1.5000614963907,
+      "error_pct": 0.004099759380293833,
+      "formula": "FSOT: ln(pi)*ln(pi)*ln(pi)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Open_to_closed_class_type_ratio",
+      "computed": 49.9957279685991,
+      "error_pct": -0.008544062801732366,
+      "formula": "FSOT: (gamma+ln(pi))*(phi^7)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Bigram_entropy_per_char_EN",
+      "computed": 3.32010238332257,
+      "error_pct": 0.003083835017187366,
+      "formula": "FSOT: (phi^3)-G",
+      "status": "search-tight"
+    },
+    {
+      "name": "Word_entropy_per_token_EN",
+      "computed": 9.80019288510272,
+      "error_pct": 0.0019682153338795635,
+      "formula": "FSOT: (e/pi)*((e^phi)+(2*pi))",
+      "status": "search-loose"
+    },
+    {
+      "name": "Bits_per_syllable_EN",
+      "computed": 6.61293128169307,
+      "error_pct": -0.10677822215902,
+      "formula": "FSOT: phi**9 / (pi * (phi**3 - gamma))   (channel-capacity identity)",
+      "status": "hand"
+    },
+    {
+      "name": "Shannon_entropy_rate_EN",
+      "computed": 1.1447298858494,
+      "error_pct": 4.0663532590363705,
+      "formula": "FSOT: ln(pi)",
+      "status": "hand"
+    },
+    {
+      "name": "Word_order_rigidity_EN",
+      "computed": 0.965558146251367,
+      "error_pct": 1.6376996054070503,
+      "formula": "FSOT: 1 - 1/phi**7",
+      "status": "hand"
+    },
+    {
+      "name": "Projectivity_rate_EN",
+      "computed": 0.986844382503575,
+      "error_pct": -0.31874924206311006,
+      "formula": "FSOT: 1 - 1/phi**9",
+      "status": "hand"
+    },
+    {
+      "name": "Mean_parse_depth_EN",
+      "computed": 4.49971638840435,
+      "error_pct": -0.006302479903277616,
+      "formula": "FSOT: (1/gamma)*(sqrt(3)+(e/pi))",
+      "status": "search-loose"
+    },
+    {
+      "name": "Polysemy_senses_per_lemma_WordNet",
+      "computed": 1.54954884560971,
+      "error_pct": -0.02910673485756823,
+      "formula": "FSOT: (1/e)*(1/e)+sqrt(2)",
+      "status": "search-loose"
+    },
+    {
+      "name": "CV_syllable_rate_EN",
+      "computed": 0.550014202336606,
+      "error_pct": 0.00258224301933038,
+      "formula": "FSOT: phi*(pi^2)/(phi^7)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Phonological_neighborhood_density_EN",
+      "computed": 8.00021360546018,
+      "error_pct": 0.002670068252275115,
+      "formula": "FSOT: ((e^2)-sqrt(3))*sqrt(2)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Turn_taking_gap_ms",
+      "computed": 200.005024998741,
+      "error_pct": 0.002512499370325827,
+      "formula": "FSOT: (phi^4)*(phi^7)+1",
+      "status": "search-loose"
+    },
+    {
+      "name": "UID_surprisal_variance",
+      "computed": 1.5000614963907,
+      "error_pct": 0.004099759380293833,
+      "formula": "FSOT: ln(pi)*ln(pi)*ln(pi)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Entropy_rate_constancy_slope",
+      "computed": 0.0,
+      "error_pct": 0.0,
+      "formula": "FSOT: 0  (Genzel-Charniak invariant)",
+      "status": "hand"
+    },
+    {
+      "name": "Entropy_rate_intercept",
+      "computed": 3.92699081698724,
+      "error_pct": -0.0002338429528558999,
+      "formula": "FSOT: 5*pi/4",
+      "status": "hand"
+    },
+    {
+      "name": "Mean_paragraph_len_sentences",
+      "computed": 4.73606797749979,
+      "error_pct": 0.5534602441568969,
+      "formula": "FSOT: phi**3 + 1/2",
+      "status": "hand"
+    },
+    {
+      "name": "Topic_drift_rate_EN",
+      "computed": 0.786151377757423,
+      "error_pct": -2.23213807269951,
+      "formula": "FSOT: 1/sqrt(phi)",
+      "status": "hand"
+    },
+    {
+      "name": "Semantic_network_path_length",
+      "computed": 3.14159265358979,
+      "error_pct": 4.719755119659771,
+      "formula": "FSOT: pi",
+      "status": "hand"
+    },
+    {
+      "name": "Embedding_intrinsic_dim_EN",
+      "computed": 97.4090910340024,
+      "error_pct": 0.42174333402313774,
+      "formula": "FSOT: pi**4",
+      "status": "hand"
+    },
+    {
+      "name": "Given_new_noun_ratio_EN",
+      "computed": 0.693147180559945,
+      "error_pct": -1.0920119064004985,
+      "formula": "FSOT: ln(2)",
+      "status": "hand"
+    },
+    {
+      "name": "Mean_paragraph_len_tokens",
+      "computed": 89.6641494224887,
+      "error_pct": -0.006524565084559689,
+      "formula": "FSOT: G*(ln(phi)+(pi^4))",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_document_len_paragraphs",
+      "computed": 31.3303000956149,
+      "error_pct": 0.0009578538616810069,
+      "formula": "FSOT: (1/G)*(phi^7)-(1/e)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_document_len_sentences",
+      "computed": 114.675803729097,
+      "error_pct": -0.003659113100198124,
+      "formula": "FSOT: ((phi^4)-ln(pi))*(e^3)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Mean_document_len_tokens",
+      "computed": 1963.36799658385,
+      "error_pct": -0.0031579132510795656,
+      "formula": "FSOT: (pi^4)*(e^3)+(phi^4)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Referential_cohesion_EN",
+      "computed": 0.227954889717741,
+      "error_pct": 0.024085001202857937,
+      "formula": "FSOT: ((1/G)-(1/phi))*ln(phi)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Semantic_network_clustering",
+      "computed": 0.700006791845242,
+      "error_pct": 0.0009702636060625127,
+      "formula": "FSOT: e*phi/(2*pi)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Idiom_rate_EN",
+      "computed": 0.300022878359191,
+      "error_pct": 0.0076261197303750805,
+      "formula": "FSOT: sqrt(3)/(ln(pi)*(e^phi))",
+      "status": "search-loose"
+    },
+    {
+      "name": "Selectional_preference_entropy",
+      "computed": 4.0,
+      "error_pct": 0.0,
+      "formula": "FSOT: sqrt(3)*sqrt(3)+1",
+      "status": "search-tight"
+    },
+    {
+      "name": "Spoken_written_entropy_gap_EN",
+      "computed": 0.300022878359191,
+      "error_pct": 0.0076261197303750805,
+      "formula": "FSOT: sqrt(3)/(ln(pi)*(e^phi))",
+      "status": "search-loose"
+    },
+    {
+      "name": "Formal_informal_TTR_ratio",
+      "computed": 1.30008579166734,
+      "error_pct": 0.0065993590259161294,
+      "formula": "FSOT: (G+(phi^2))*(1/e)",
+      "status": "search-loose"
+    },
+    {
+      "name": "Dialectal_phoneme_variation",
+      "computed": 1.0,
+      "error_pct": 0.0,
+      "formula": "FSOT: pi/pi",
+      "status": "search-tight"
+    },
+    {
+      "name": "Diachronic_phoneme_drift_rate",
+      "computed": 1.0,
+      "error_pct": 0.0,
+      "formula": "FSOT: pi/pi",
+      "status": "search-tight"
+    },
+    {
+      "name": "Register_perplexity_ratio",
+      "computed": 1.5000614963907,
+      "error_pct": 0.004099759380293833,
+      "formula": "FSOT: ln(pi)*ln(pi)*ln(pi)",
+      "status": "search-loose"
+    }
+  ]
+}

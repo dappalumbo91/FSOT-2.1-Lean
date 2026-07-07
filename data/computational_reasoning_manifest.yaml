@@ -1,0 +1,21 @@
+# Tier 29 — FIC intelligence-compression sweep + trinary-OS reasoning invariants.
+version: "1.0"
+updated: "2026-07-04"
+
+source:
+  fic_sweep_csv: "data/fic_sensitivity_sweep.csv"
+  trinary_os_manifest: "data/trinary_os_manifest.yaml"
+
+build:
+  script: scripts/build_computational_reasoning_benchmark.py
+  output: data/computational_reasoning_benchmark.json
+
+lean:
+  generator: scripts/gen_computational_reasoning_lean.py
+  module: FSOT.Formal.ComputationalReasoningPriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 100
+  max_median_error_pct: 5.0

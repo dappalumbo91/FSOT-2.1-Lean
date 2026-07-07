@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-07-07T16:26:14.248629+00:00",
+  "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\math_generator\\generated_formula_comparison_report.json",
+  "maps_to_lean": [
+    "particle",
+    "mathematical"
+  ],
+  "D_eff": 17,
+  "record_count": 21,
+  "observable_count": 21,
+  "median_error_pct": 1.4090183367935627e-14,
+  "records": [
+    {
+      "lab": "math_generator_lab",
+      "case_id": "engine_native_h0",
+      "property": "engine_native_h0",
+      "computed": 67.27021167735879,
+      "measured": 67.4,
+      "error_pct": 0.19256427691575398,
+      "unit": "km s^-1 Mpc^-1",
+      "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))"
+    },
+    {
+      "lab": "math_generator_lab",
+      "case_id": "external_rbc_scattering",
+      "property": "effective_rbc_radius_um",
+      "computed": 1843.9199770132166,
+      "measured": null,
+      "error_pct": 1.0863181124608665,
+      "unit": "um",
+      "formula": "C_eff * ((2 * pi * effective_rbc_radius_um / wavelength_um)^4) * ((relative_refractive_index - 1)^2) * aspect_ratio"
+    },
+    {
+      "lab": "math_generator_lab",
+      "case_id": "external_alma_chromosphere",
+      "property": "brightness_temperature_rms_k",
+      "computed": 100.55873127515892,
+      "measured": 100.0,
+      "error_pct": 0.5587312751589195,
+      "unit": "K",
+      "formula": "C_eff * observing_wavelength_mm * brightness_contrast_percent"
+    },
+    {
+      "lab": "math_generator_lab",
+      "case_id": "external_planck_h0",
+      "property": "hubble_constant_km_s_mpc",
+      "computed": 66.60048552649832,
+      "measured": 67.4,
+      "error_pct": 1.1862232544535427,
+      "unit": "km s^-1 Mpc^-1",
+      "formula": "P_base * sound_horizon_mpc * dark_energy_density_ratio / matter_density_ratio"
+    },
+    {
+      "lab": "math_generator_lab",
+      "case_id": "external_planck_sigma8",
+      "property": "matter_fluctuation_amplitude",
+      "computed": 0.8037536999421859,
+      "measured": 0.811,
+      "error_pct": 0.8935018566971794,
+      "unit": "dimensionless",
+      "formula": "B_in * sound_horizon_mpc * matter_density_ratio * baryon_density_physical"
+    },
+    {
+      "lab": "math_generator_lab",
+      "case_id": "external_wuhan_r0",
+      "property": "basic_reproduction_number",
+      "computed": 2.2027150660272903,
+      "measured": 2.2,
+      "error_pct": 0.12341209214955012,
+      "unit": "dimensionless",
+      "formula": "C_eff * (serial_interval_days - incubation_period_days)"
+    },
+    {
+      "lab": "math_generator_lab",
+      "case_id": "external_science_undocumented_re",
+      "property": "effective_reproductive_number",
+      "computed": 2.379237619595067,
+      "measured": 2.38,
+      "error_pct": 0.032032790123227586,
+      "unit": "dimensionless",
+      "formula": "C_factor * ((latency_period_days + undocumented_fraction) / relative_transmission_rate)"
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_phi",
+      "property": "phi",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_alpha",
+      "property": "alpha",
+      "computed": 0.0008082937414140402,
+      "measured": 0.0008082937414140405,
+      "error_pct": 4.024040210637234e-14
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_psi_con",
+      "property": "psi_con",
+      "computed": 0.6321205588285577,
+      "measured": 0.6321205588285577,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_eta_eff",
+      "property": "eta_eff",
+      "computed": 0.46694220692425986,
+      "measured": 0.46694220692425986,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_theta_s",
+      "property": "theta_s",
+      "computed": 0.29089654054517305,
+      "measured": 0.29089654054517305,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_poof",
+      "property": "poof",
+      "computed": 0.1534822148944508,
+      "measured": 0.1534822148944508,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_c_eff",
+      "property": "c_eff",
+      "computed": 0.9577022026205612,
+      "measured": 0.9577022026205613,
+      "error_pct": 1.1592570441910361e-14
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_a_bleed",
+      "property": "a_bleed",
+      "computed": 1.046973630587551,
+      "measured": 1.046973630587551,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_a_in",
+      "property": "a_in",
+      "computed": 1.6668538450045727,
+      "measured": 1.6668538450045731,
+      "error_pct": 2.6642360467353646e-14
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_p_base",
+      "property": "p_base",
+      "computed": 0.21234577623937845,
+      "measured": 0.21234577623937842,
+      "error_pct": 1.3070933694645246e-14
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_p_new",
+      "property": "p_new",
+      "computed": 0.3003022766703715,
+      "measured": 0.30030227667037146,
+      "error_pct": 1.8485091703846775e-14
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_c_cosm",
+      "property": "c_cosm",
+      "computed": 0.061803398874989486,
+      "measured": 0.061803398874989486,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_b_in",
+      "property": "b_in",
+      "computed": 0.7879407922764434,
+      "measured": 0.7879407922764435,
+      "error_pct": 1.4090183367935627e-14
+    },
+    {
+      "lab": "math_generator_constants",
+      "case_id": "constant_c_factor",
+      "property": "c_factor",
+      "computed": 0.28760015181918397,
+      "measured": 0.28760015181918397,
+      "error_pct": 0.0
+    }
+  ]
+}

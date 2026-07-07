@@ -179,11 +179,11 @@ def build_map() -> dict:
         "authority_dispersal_domains": sorted(set(sign_dispersal)),
         "expansion_candidates": EXPANSION_CANDIDATES,
         "recommended_next_waves": [
-            "NSIDC/GRACE direct cryosphere mass-balance ingest (beyond NCEI proxy)",
-            "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens",
+            "Math-generator per-rule FSOT numeric eval across 1520 formal rules",
+            "Materials engineering species-catalog machine/molecule bridge",
+            "Trinary-OS oracle bundle in vendor/ for portable coding rebuild",
             "iGEM parts-registry strict-empirical synthetic biology bridge",
-            "Econometrics real macro time-series (beyond linguistics proxy)",
-            "Climate scale to 40 stations × 60 years",
+            "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens",
         ],
     }
 

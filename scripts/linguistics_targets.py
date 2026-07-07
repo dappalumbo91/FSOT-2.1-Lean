@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import json
 import sqlite3
 from pathlib import Path
 from typing import Any
@@ -21,6 +22,24 @@ def load_targets_csv(path: Path) -> list[dict[str, Any]]:
                 "source": row.get("source"),
             })
     return rows
+
+
+def load_derivations_json(json_path: Path) -> dict[str, dict[str, Any]]:
+    if not json_path.exists():
+        return {}
+    payload = json.loads(json_path.read_text(encoding="utf-8"))
+    out: dict[str, dict[str, Any]] = {}
+    for row in payload.get("derivations") or []:
+        name = row.get("name")
+        if not name:
+            continue
+        out[name] = {
+            "computed": row.get("computed"),
+            "error_pct": row.get("error_pct"),
+            "formula": row.get("formula"),
+            "status": row.get("status"),
+        }
+    return out
 
 
 def load_derivations_db(db_path: Path) -> dict[str, dict[str, Any]]:

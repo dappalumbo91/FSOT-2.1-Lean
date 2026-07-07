@@ -42,6 +42,10 @@ DEDICATED_GENERATORS = {
     "Synthetic_Biology",
     "Quantum_Materials",
     "Neuron_Multi_Hero",
+    "Linguistics_Formal",
+    "Mathematics_Computational",
+    "Materials_Engineering",
+    "Computational_Reasoning",
 }
 
 LEAN_SIGN = {
@@ -71,6 +75,10 @@ LEAN_SIGN = {
     "Synthetic_Biology": ("biological", "biological_raw_S_positive"),
     "Quantum_Materials": ("material", "material_raw_S_positive"),
     "Neuron_Multi_Hero": ("neural", "neural_raw_S_positive"),
+    "Linguistics_Formal": ("consciousness", "consciousness_raw_S_positive"),
+    "Mathematics_Computational": ("particle", "particle_raw_S_positive"),
+    "Materials_Engineering": ("material", "material_raw_S_positive"),
+    "Computational_Reasoning": ("consciousness", "consciousness_raw_S_positive"),
 }
 
 

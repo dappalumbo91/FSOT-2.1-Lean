@@ -19,6 +19,20 @@ bundled:
     role: mitochondrial operon source for evolution and synthetic biology bridges
     env_override: FSOT_EVOLUTION_OPERONS
 
+  linguistics_targets:
+    path: vendor/linguistics/data/LINGUISTIC_TARGETS.csv
+    role: measured linguistic anchors for consciousness-domain bridge
+    env_override: FSOT_LINGUISTICS_ROOT
+
+  linguistics_derivations:
+    path: vendor/linguistics/linguistics_derivations.json
+    role: portable FSOT derivation snapshot (replaces 400MB SQLite for GitHub)
+
+  math_generator_comparison:
+    path: vendor/math_generator/generated_formula_comparison_report.json
+    role: cross-domain FSOT formula comparisons for mathematics computational tier
+    env_override: FSOT_MATH_GENERATOR_COMPARISON
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification

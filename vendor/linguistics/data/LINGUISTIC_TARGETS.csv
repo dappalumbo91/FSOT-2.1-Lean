@@ -1,0 +1,11 @@
+name,measured,sigma,unit,group,source,note
+Zipf_exponent_English,1.00,0.10,dimensionless,lexicon,Zipf 1949; Piantadosi 2014,s in f ~ 1/r^s for large English corpora
+Mean_dependency_length_EN,2.30,0.20,words,syntax,Liu 2008; Futrell Mahowald Gibson 2015,universal dependency-length minimization
+Mean_phoneme_inventory_size,31.0,3.0,phonemes,phonology,Maddieson 1984 UPSID,cross-linguistic mean
+Letter_entropy_English,4.18,0.05,bits/letter,orthography,Shannon 1951,unigram entropy of English letters
+Mean_word_length_English,4.50,0.30,characters,lexicon,Moby + COCA unigrams,mean chars per token (space-separated)
+Saccade_length_reading,8.00,1.00,characters,reading,Rayner 1998,typical fixation-to-fixation distance
+Mean_fixation_duration,225.0,25.0,ms,reading,Rayner 1998,normal-reading mean
+Heaps_exponent,0.60,0.10,dimensionless,lexicon,Heaps 1978; Gerlach Altmann 2013,V ~ N^alpha
+Cross_linguistic_info_rate,39.15,5.00,bits/s,pragmatics,Coupé et al. 2019 Science Advances,mean across 17 languages
+Sentence_length_mean_EN,17.0,3.0,words,syntax,Brown + COCA,mean sentence length in written English

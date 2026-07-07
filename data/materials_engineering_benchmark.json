@@ -1,0 +1,710 @@
+{
+  "generated_at": "2026-07-07T16:26:14.432478+00:00",
+  "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
+  "maps_to_lean": [
+    "material",
+    "energy"
+  ],
+  "D_eff": 14,
+  "record_count": 87,
+  "observable_count": 87,
+  "median_error_pct": 0.819727,
+  "records": [
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Pb",
+      "computed": 15.606641563575291,
+      "measured": 16.0,
+      "error_pct": 2.45849
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Mg",
+      "computed": 45.3606797749979,
+      "measured": 45.0,
+      "error_pct": 0.801511
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Al",
+      "computed": 70.20479159671953,
+      "measured": 70.0,
+      "error_pct": 0.292559
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Au",
+      "computed": 77.98499044404761,
+      "measured": 78.0,
+      "error_pct": 0.019243
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Ag",
+      "computed": 81.80244947042715,
+      "measured": 83.0,
+      "error_pct": 1.442832
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Cu",
+      "computed": 130.46888719257745,
+      "measured": 130.0,
+      "error_pct": 0.360682
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Si",
+      "computed": 130.46888719257745,
+      "measured": 130.0,
+      "error_pct": 0.360682
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Ni",
+      "computed": 198.23630361533583,
+      "measured": 200.0,
+      "error_pct": 0.881848
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Fe",
+      "computed": 203.01130913572084,
+      "measured": 211.0,
+      "error_pct": 3.786109
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Mo",
+      "computed": 321.99689437998484,
+      "measured": 329.0,
+      "error_pct": 2.128604
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "W",
+      "computed": 412.6315312464996,
+      "measured": 411.0,
+      "error_pct": 0.396966
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "diamond",
+      "computed": 1056.190293404343,
+      "measured": 1050.0,
+      "error_pct": 0.589552
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "He_gas",
+      "computed": 0.1534822148944508,
+      "measured": 0.152,
+      "error_pct": 0.975141
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "H\u2082O",
+      "computed": 0.6156633175068476,
+      "measured": 0.606,
+      "error_pct": 1.594607
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "glass",
+      "computed": 1.000286568515822,
+      "measured": 1.0,
+      "error_pct": 0.028657
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "ice",
+      "computed": 2.2501545475784526,
+      "measured": 2.22,
+      "error_pct": 1.358313
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Ti",
+      "computed": 21.70357091193756,
+      "measured": 21.9,
+      "error_pct": 0.896936
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Pb",
+      "computed": 35.24234465779961,
+      "measured": 35.3,
+      "error_pct": 0.16333
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Fe",
+      "computed": 79.46481912400328,
+      "measured": 80.4,
+      "error_pct": 1.16316
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Ni",
+      "computed": 90.55498906775276,
+      "measured": 90.9,
+      "error_pct": 0.37955
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Si",
+      "computed": 148.4131591025766,
+      "measured": 149.0,
+      "error_pct": 0.393853
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "W",
+      "computed": 172.73476400326405,
+      "measured": 173.0,
+      "error_pct": 0.153316
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Al",
+      "computed": 240.13753580571478,
+      "measured": 237.0,
+      "error_pct": 1.323855
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Au",
+      "computed": 317.1098547290309,
+      "measured": 317.0,
+      "error_pct": 0.034654
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Cu",
+      "computed": 403.4287934927351,
+      "measured": 401.0,
+      "error_pct": 0.605684
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Ag",
+      "computed": 430.3684323821725,
+      "measured": 429.0,
+      "error_pct": 0.318982
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "diamond",
+      "computed": 2206.999546896146,
+      "measured": 2200.0,
+      "error_pct": 0.318161
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "diamond",
+      "computed": 450.4075072564829,
+      "measured": 443.0,
+      "error_pct": 1.672124
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "W",
+      "computed": 309.16127743887125,
+      "measured": 310.0,
+      "error_pct": 0.270556
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Fe",
+      "computed": 169.97058314499202,
+      "measured": 170.0,
+      "error_pct": 0.017304
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Cu",
+      "computed": 141.02410300364596,
+      "measured": 140.0,
+      "error_pct": 0.731502
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Al",
+      "computed": 76.01315561749642,
+      "measured": 76.0,
+      "error_pct": 0.01731
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Au",
+      "computed": 169.97058314499202,
+      "measured": 171.0,
+      "error_pct": 0.601998
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Ag",
+      "computed": 104.79814713293308,
+      "measured": 104.0,
+      "error_pct": 0.767449
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Pt",
+      "computed": 230.00652916778503,
+      "measured": 228.0,
+      "error_pct": 0.880057
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Ti",
+      "computed": 107.27869543509179,
+      "measured": 110.0,
+      "error_pct": 2.473913
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Ni",
+      "computed": 179.41943578287643,
+      "measured": 180.0,
+      "error_pct": 0.322536
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Pb",
+      "computed": 46.97871376374779,
+      "measured": 46.0,
+      "error_pct": 2.127639
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Si",
+      "computed": 97.40910870745367,
+      "measured": 98.0,
+      "error_pct": 0.60295
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Fe",
+      "computed": 82.86725758374611,
+      "measured": 82.0,
+      "error_pct": 1.057631
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Cu",
+      "computed": 47.20909393421359,
+      "measured": 48.0,
+      "error_pct": 1.647721
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Al",
+      "computed": 25.89284920015884,
+      "measured": 26.0,
+      "error_pct": 0.412118
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Au",
+      "computed": 27.41640786499874,
+      "measured": 27.0,
+      "error_pct": 1.542251
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Ag",
+      "computed": 29.034441853748632,
+      "measured": 30.0,
+      "error_pct": 3.218527
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Pt",
+      "computed": 61.98720613207489,
+      "measured": 61.0,
+      "error_pct": 1.618371
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Ti",
+      "computed": 44.3606797749979,
+      "measured": 44.0,
+      "error_pct": 0.819727
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Ni",
+      "computed": 76.01315561749642,
+      "measured": 76.0,
+      "error_pct": 0.01731
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "W",
+      "computed": 155.80221520150727,
+      "measured": 161.0,
+      "error_pct": 3.228438
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Pb",
+      "computed": 5.859874482048839,
+      "measured": 5.6,
+      "error_pct": 4.640616
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "diamond",
+      "computed": 479.4419491102315,
+      "measured": 478.0,
+      "error_pct": 0.301663
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Si",
+      "computed": 61.98720613207489,
+      "measured": 65.0,
+      "error_pct": 4.635067
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "Al",
+      "computed": 22.803818751646713,
+      "measured": 23.1,
+      "error_pct": 1.28217
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "Cu",
+      "computed": 17.367255094728623,
+      "measured": 17.0,
+      "error_pct": 2.160324
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "Fe",
+      "computed": 11.667385608651006,
+      "measured": 11.8,
+      "error_pct": 1.123851
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "Au",
+      "computed": 13.70820393249937,
+      "measured": 14.0,
+      "error_pct": 2.084258
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "Ag",
+      "computed": 17.94427190999916,
+      "measured": 18.0,
+      "error_pct": 0.309601
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "Pt",
+      "computed": 9.007090087680545,
+      "measured": 9.0,
+      "error_pct": 0.078779
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "Ni",
+      "computed": 13.011197054679151,
+      "measured": 13.0,
+      "error_pct": 0.086131
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "Ti",
+      "computed": 8.683186676986617,
+      "measured": 8.6,
+      "error_pct": 0.967287
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "W",
+      "computed": 4.670774270471605,
+      "measured": 4.5,
+      "error_pct": 3.794984
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "Pb",
+      "computed": 29.034441853748632,
+      "measured": 29.0,
+      "error_pct": 0.118765
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "Diamond",
+      "computed": 0.9577022026205613,
+      "measured": 1.0,
+      "error_pct": 4.22978
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a773 Thermal Expansion",
+      "name": "Si",
+      "computed": 2.618033988749895,
+      "measured": 2.56,
+      "error_pct": 2.266953
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "Al",
+      "computed": 0.3435826833227941,
+      "measured": 0.345,
+      "error_pct": 0.410816
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "Cu",
+      "computed": 0.3435826833227941,
+      "measured": 0.343,
+      "error_pct": 0.169879
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "Fe",
+      "computed": 0.2915609040308188,
+      "measured": 0.293,
+      "error_pct": 0.491159
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "Au",
+      "computed": 0.44437875543962385,
+      "measured": 0.44,
+      "error_pct": 0.995172
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "Ag",
+      "computed": 0.3679228124712124,
+      "measured": 0.37,
+      "error_pct": 0.561402
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "W",
+      "computed": 0.2769133882311614,
+      "measured": 0.28,
+      "error_pct": 1.102361
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "Ti",
+      "computed": 0.32099858535218373,
+      "measured": 0.32,
+      "error_pct": 0.312058
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "Ni",
+      "computed": 0.3048460791141165,
+      "measured": 0.31,
+      "error_pct": 1.662555
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "Pt",
+      "computed": 0.39067199034362604,
+      "measured": 0.39,
+      "error_pct": 0.172305
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "Pb",
+      "computed": 0.44437875543962385,
+      "measured": 0.44,
+      "error_pct": 0.995172
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "Si",
+      "computed": 0.2769133882311614,
+      "measured": 0.28,
+      "error_pct": 1.102361
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a784 Poisson Ratio \u03bd",
+      "name": "Diamond",
+      "computed": 0.07166732414643837,
+      "measured": 0.07,
+      "error_pct": 2.381892
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "Al",
+      "computed": 97.40909103400244,
+      "measured": 97.5,
+      "error_pct": 0.09324
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "Cu",
+      "computed": 117.40688242227678,
+      "measured": 117.0,
+      "error_pct": 0.347763
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "Fe",
+      "computed": 23.213404357363387,
+      "measured": 23.1,
+      "error_pct": 0.490928
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "Au",
+      "computed": 128.32762217938892,
+      "measured": 127.0,
+      "error_pct": 1.045372
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "Ag",
+      "computed": 176.63935582629372,
+      "measured": 174.0,
+      "error_pct": 1.516871
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "W",
+      "computed": 70.65713546317933,
+      "measured": 68.3,
+      "error_pct": 3.45115
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "Ti",
+      "computed": 9.292388736187826,
+      "measured": 9.2,
+      "error_pct": 1.004225
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "Ni",
+      "computed": 22.943325467023268,
+      "measured": 23.0,
+      "error_pct": 0.246411
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "Pt",
+      "computed": 25.494180670458224,
+      "measured": 25.4,
+      "error_pct": 0.37079
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "Pb",
+      "computed": 24.43111021301806,
+      "measured": 24.1,
+      "error_pct": 1.373901
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "Si",
+      "computed": 88.34166247649358,
+      "measured": 88.0,
+      "error_pct": 0.388253
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "\u00a785 Thermal Diffusivity",
+      "name": "Diamond",
+      "computed": 521.0019193787255,
+      "measured": 530.0,
+      "error_pct": 1.697751
+    }
+  ]
+}

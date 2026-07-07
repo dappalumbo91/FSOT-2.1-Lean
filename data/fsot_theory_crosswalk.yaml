@@ -167,6 +167,35 @@ verified_extension_domains:
     labs: [multi_hero_lab, neuron_cohort_lab]
     lean_modules: [FSOT.Formal.NeuronMultiHeroPriors, FSOT.Formal.NeuronCohortPriors]
 
+  Linguistics_Formal:
+    tier: 29
+    D_eff: 12
+    maps_to_lean: [consciousness, neural]
+    labs: [linguistics_lab, linguistics_formal_lab]
+    lean_module: FSOT.Formal.LinguisticsFormalPriors
+    note: "Thickens Economics/Psychology/Sociology consciousness proxies"
+
+  Mathematics_Computational:
+    tier: 29
+    D_eff: 17
+    maps_to_lean: [particle, mathematical]
+    labs: [math_generator_lab, math_generator_rules]
+    lean_module: FSOT.Formal.MathematicsComputationalPriors
+
+  Materials_Engineering:
+    tier: 29
+    D_eff: 14
+    maps_to_lean: [material, energy]
+    labs: [materials_engineering_lab, smiles_lab, species_catalog]
+    lean_module: FSOT.Formal.MaterialsEngineeringPriors
+
+  Computational_Reasoning:
+    tier: 29
+    D_eff: 12
+    maps_to_lean: [consciousness, ai, neural]
+    labs: [fic_intelligence_compressor, trinary_os, knowledge_base]
+    lean_module: FSOT.Formal.ComputationalReasoningPriors
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

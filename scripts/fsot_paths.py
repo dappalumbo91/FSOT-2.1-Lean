@@ -150,6 +150,33 @@ def rel_repo_path(path: Path) -> str:
         return resolved.as_posix()
 
 
+def linguistics_root(*, require: bool = False) -> Path | None:
+    path = _resolve(
+        "FSOT_LINGUISTICS_ROOT",
+        VENDOR_ROOT / "linguistics",
+        _DESKTOP / "FSOT linguistics",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Linguistics root not found.")
+    return path
+
+
+def math_generator_comparison_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_MATH_GENERATOR_COMPARISON",
+        VENDOR_ROOT / "math_generator" / "generated_formula_comparison_report.json",
+        _DESKTOP
+        / "Math generator"
+        / "Unified"
+        / "ada_spark_formula_generator"
+        / "generated_formula_comparison_report.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Math generator comparison report not found.")
+    assert path is not None
+    return path
+
+
 def authority_path_for_export(path: Path) -> str:
     """Prefer repo-relative authority paths in generated artifacts."""
     rel = rel_repo_path(path)

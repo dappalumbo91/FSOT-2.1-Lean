@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-07-07T16:28:43.521411+00:00",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\linguistics\\data\\LINGUISTIC_TARGETS.csv",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\linguistics\\db\\linguistics.db"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "neural"
+  ],
+  "D_eff": 12,
+  "record_count": 10,
+  "observable_count": 10,
+  "median_error_pct": 0.0013504254899468224,
+  "records": [
+    {
+      "lab": "linguistics_formal_lab",
+      "name": "Zipf_exponent_English",
+      "group": "lexicon",
+      "measured": 1.0,
+      "computed": 1.0,
+      "error_pct": 0.0,
+      "unit": "dimensionless",
+      "formula": "FSOT: phi**2 - phi  (exact golden-ratio identity)"
+    },
+    {
+      "lab": "linguistics_formal_lab",
+      "name": "Mean_dependency_length_EN",
+      "group": "syntax",
+      "measured": 2.3,
+      "computed": 2.40001358369048,
+      "error_pct": 0.0005659871035364658,
+      "unit": "words",
+      "formula": "FSOT: phi*(e/pi)+1"
+    },
+    {
+      "lab": "linguistics_formal_lab",
+      "name": "Mean_phoneme_inventory_size",
+      "group": "phonology",
+      "measured": 31.0,
+      "computed": 30.9995813680981,
+      "error_pct": -0.0013504254899468224,
+      "unit": "phonemes",
+      "formula": "FSOT: ((1/gamma)-sqrt(2))*(pi^4)"
+    },
+    {
+      "lab": "linguistics_formal_lab",
+      "name": "Letter_entropy_English",
+      "group": "orthography",
+      "measured": 4.18,
+      "computed": 4.18002506099209,
+      "error_pct": 0.0005995452654275573,
+      "unit": "bits/letter",
+      "formula": "FSOT: sqrt(5)*(2*pi)-(pi^2)"
+    },
+    {
+      "lab": "linguistics_formal_lab",
+      "name": "Mean_word_length_English",
+      "group": "lexicon",
+      "measured": 4.5,
+      "computed": 4.49971638840435,
+      "error_pct": -0.006302479903277616,
+      "unit": "characters",
+      "formula": "FSOT: (1/gamma)*(sqrt(3)+(e/pi))"
+    },
+    {
+      "lab": "linguistics_formal_lab",
+      "name": "Saccade_length_reading",
+      "group": "reading",
+      "measured": 8.0,
+      "computed": 8.00021360546018,
+      "error_pct": 0.002670068252275115,
+      "unit": "characters",
+      "formula": "FSOT: ((e^2)-sqrt(3))*sqrt(2)"
+    },
+    {
+      "lab": "linguistics_formal_lab",
+      "name": "Mean_fixation_duration",
+      "group": "reading",
+      "measured": 225.0,
+      "computed": 224.988085867106,
+      "error_pct": -0.005295170175132726,
+      "unit": "ms",
+      "formula": "FSOT: (phi^5)*(e^3)+sqrt(5)"
+    },
+    {
+      "lab": "linguistics_formal_lab",
+      "name": "Heaps_exponent",
+      "group": "lexicon",
+      "measured": 0.6,
+      "computed": 0.599997786040735,
+      "error_pct": -0.00036899321083823844,
+      "unit": "dimensionless",
+      "formula": "FSOT: ((e^3)-(2*pi^2))*(1/gamma)"
+    },
+    {
+      "lab": "linguistics_formal_lab",
+      "name": "Cross_linguistic_info_rate",
+      "group": "pragmatics",
+      "measured": 39.15,
+      "computed": 39.1495279442755,
+      "error_pct": -0.001205761748405669,
+      "unit": "bits/s",
+      "formula": "FSOT: (phi^3)*(phi^7)/pi"
+    },
+    {
+      "lab": "linguistics_formal_lab",
+      "name": "Sentence_length_mean_EN",
+      "group": "syntax",
+      "measured": 17.0,
+      "computed": 16.9995632588799,
+      "error_pct": -0.0025690654122958196,
+      "unit": "words",
+      "formula": "FSOT: ((phi^3)-(e/pi))*(e^phi)"
+    }
+  ]
+}

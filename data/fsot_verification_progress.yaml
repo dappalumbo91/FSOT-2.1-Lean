@@ -1,16 +1,16 @@
-generated_at: '2026-07-04T17:20:06.252217+00:00'
+generated_at: '2026-07-07T16:27:27.507834+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 81
+  lean_formal_modules: 85
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: false
-  tiers_complete: 24
-  tiers_total: 25
-  percent_complete: 96.0
-current_position: Tier 27 Synthetic Biology/Quantum Materials + multi-hero + climate
-  scale-up
+  tiers_complete: 26
+  tiers_total: 27
+  percent_complete: 96.3
+current_position: "Tier 29 Practical application \u2014 linguistics, math, materials\
+  \ engineering, reasoning"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -31,6 +31,7 @@ tiers:
   - CellularPriors
   - ClimateSciencePriors
   - CodonPriors
+  - ComputationalReasoningPriors
   - CosmologyExtendedPriors
   - CosmologyHigherWavesPriors
   - CosmologyLab
@@ -58,12 +59,15 @@ tiers:
   - IntelligenceCompressionPriors
   - KnowledgeBasePriors
   - KronosPriors
+  - LinguisticsFormalPriors
   - LinguisticsPriors
   - MagicCirclePriors
   - MagneticStringPriors
   - MagnetosphereExtendedPriors
   - MagnetospherePriors
+  - MaterialsEngineeringPriors
   - MathGeneratorPriors
+  - MathematicsComputationalPriors
   - NeuroimmunologyPriors
   - NeuronCohortPriors
   - NeuronCohortStrataPriors
@@ -196,7 +200,7 @@ tiers:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 62
+    scientific_domains_covered: 66
     expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -471,11 +475,38 @@ tiers:
   - FSOT.Formal.SyntheticBiologyPriors
   - FSOT.Formal.QuantumMaterialsPriors
   - FSOT.Formal.NeuronMultiHeroPriors
+- tier: 28
+  name: "Portable verification \u2014 vendor bundle + clone-and-verify"
+  status: complete
+  artifacts:
+  - vendor/fsot_compute.py
+  - CONTRIBUTING.md
+  - data/external_data_manifest.yaml
+  - scripts/fsot_paths.py
+- tier: 29
+  name: "Practical application wave \u2014 linguistics, math, materials engineering,\
+    \ reasoning"
+  status: complete
+  metrics:
+    linguistics_formal_records: 10
+    mathematics_computational_records: 21
+    materials_engineering_records: 87
+    computational_reasoning_records: 577
+    computational_reasoning_median_error_pct: 0.0
+  artifacts:
+  - data/linguistics_formal_manifest.yaml
+  - data/mathematics_computational_manifest.yaml
+  - data/materials_engineering_manifest.yaml
+  - data/computational_reasoning_manifest.yaml
+  - FSOT.Formal.LinguisticsFormalPriors
+  - FSOT.Formal.MathematicsComputationalPriors
+  - FSOT.Formal.MaterialsEngineeringPriors
+  - FSOT.Formal.ComputationalReasoningPriors
 next_steps:
-- Per-stratum hybrid FI sim (not just slope proxy) for multi-hero specimens
-- Tighten canonical bridge per-class using psi_con/eta_eff only
-- Wire remaining LLM experiment folders into Lean namespaces
-- Cohort train/holdout split with Lean regression gates
+- Math-generator per-rule FSOT numeric eval across 1520 formal rules
+- Trinary-OS oracle bundle in vendor/ for portable coding rebuild
+- Materials engineering species-catalog machine bridge
+- iGEM parts-registry strict-empirical synthetic biology bridge
 key_metrics:
   strict_empirical_records: 7941
   smiles_mapped: 1470

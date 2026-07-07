@@ -1,4 +1,4 @@
-generated_at: '2026-07-04T17:20:07.185119+00:00'
+generated_at: '2026-07-07T16:27:06.487766+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,13 +6,13 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 81
+  lean_formal_modules: 85
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: false
-  tiers_complete: 24
-  tiers_total: 25
-  percent_complete: 96.0
+  tiers_complete: 26
+  tiers_total: 27
+  percent_complete: 96.3
 current_tier: Tier 27 Synthetic Biology/Quantum Materials + multi-hero + climate scale-up
 proved_claims:
 - id: cosmological_raw_S_negative
@@ -423,7 +423,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: false
-scientific_domains_covered: 62
+scientific_domains_covered: 66
 total_empirical_records: 305270
 tier_coverage:
 - tier: 1
@@ -445,6 +445,7 @@ tier_coverage:
   - CellularPriors
   - ClimateSciencePriors
   - CodonPriors
+  - ComputationalReasoningPriors
   - CosmologyExtendedPriors
   - CosmologyHigherWavesPriors
   - CosmologyLab
@@ -472,12 +473,15 @@ tier_coverage:
   - IntelligenceCompressionPriors
   - KnowledgeBasePriors
   - KronosPriors
+  - LinguisticsFormalPriors
   - LinguisticsPriors
   - MagicCirclePriors
   - MagneticStringPriors
   - MagnetosphereExtendedPriors
   - MagnetospherePriors
+  - MaterialsEngineeringPriors
   - MathGeneratorPriors
+  - MathematicsComputationalPriors
   - NeuroimmunologyPriors
   - NeuronCohortPriors
   - NeuronCohortStrataPriors
@@ -885,6 +889,32 @@ tier_coverage:
   - FSOT.Formal.SyntheticBiologyPriors
   - FSOT.Formal.QuantumMaterialsPriors
   - FSOT.Formal.NeuronMultiHeroPriors
+- tier: 28
+  name: Portable verification — vendor bundle + clone-and-verify
+  status: complete
+  artifacts:
+  - vendor/fsot_compute.py
+  - CONTRIBUTING.md
+  - data/external_data_manifest.yaml
+  - scripts/fsot_paths.py
+- tier: 29
+  name: Practical application wave — linguistics, math, materials engineering, reasoning
+  status: complete
+  metrics:
+    linguistics_formal_records: 10
+    mathematics_computational_records: 21
+    materials_engineering_records: 87
+    computational_reasoning_records: 577
+    computational_reasoning_median_error_pct: 0.0
+  artifacts:
+  - data/linguistics_formal_manifest.yaml
+  - data/mathematics_computational_manifest.yaml
+  - data/materials_engineering_manifest.yaml
+  - data/computational_reasoning_manifest.yaml
+  - FSOT.Formal.LinguisticsFormalPriors
+  - FSOT.Formal.MathematicsComputationalPriors
+  - FSOT.Formal.MaterialsEngineeringPriors
+  - FSOT.Formal.ComputationalReasoningPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -1042,6 +1072,30 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: C_thin
   lean_module: FSOT.Formal.NeuronMultiHeroPriors
+- domain: Linguistics_Formal
+  tier: 29
+  record_count: 10
+  median_error_pct: 0.0013504254899468224
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.LinguisticsFormalPriors
+- domain: Mathematics_Computational
+  tier: 29
+  record_count: 21
+  median_error_pct: 1.4090183367935627e-14
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.MathematicsComputationalPriors
+- domain: Materials_Engineering
+  tier: 29
+  record_count: 87
+  median_error_pct: 0.819727
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.MaterialsEngineeringPriors
+- domain: Computational_Reasoning
+  tier: 29
+  record_count: 577
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.ComputationalReasoningPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1307,6 +1361,7 @@ lean_formal_modules:
 - CellularPriors
 - ClimateSciencePriors
 - CodonPriors
+- ComputationalReasoningPriors
 - CosmologyExtendedPriors
 - CosmologyHigherWavesPriors
 - CosmologyLab
@@ -1334,12 +1389,15 @@ lean_formal_modules:
 - IntelligenceCompressionPriors
 - KnowledgeBasePriors
 - KronosPriors
+- LinguisticsFormalPriors
 - LinguisticsPriors
 - MagicCirclePriors
 - MagneticStringPriors
 - MagnetosphereExtendedPriors
 - MagnetospherePriors
+- MaterialsEngineeringPriors
 - MathGeneratorPriors
+- MathematicsComputationalPriors
 - NeuroimmunologyPriors
 - NeuronCohortPriors
 - NeuronCohortStrataPriors

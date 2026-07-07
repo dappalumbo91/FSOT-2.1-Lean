@@ -349,6 +349,58 @@ extension_domains:
     lean_module: FSOT.Formal.NeuronMultiHeroPriors
     note: "4 FI-proxy certified heroes per Sst/PV/VIP/L2-3 Allen class"
 
+  Linguistics_Formal:
+    tier: 29
+    D_eff: 12
+    delta_psi: 0.55
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [consciousness, neural]
+    build_script: scripts/build_linguistics_formal_benchmark.py
+    manifest: data/linguistics_formal_manifest.yaml
+    benchmark_data: data/linguistics_formal_benchmark.json
+    lean_module: FSOT.Formal.LinguisticsFormalPriors
+    note: "Linguistic anchor CSV+DB — thickens Economics/Psychology/Sociology proxies"
+
+  Mathematics_Computational:
+    tier: 29
+    D_eff: 17
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, mathematical]
+    build_script: scripts/build_mathematics_computational_benchmark.py
+    manifest: data/mathematics_computational_manifest.yaml
+    benchmark_data: data/mathematics_computational_benchmark.json
+    lean_module: FSOT.Formal.MathematicsComputationalPriors
+    note: "Math-generator formula comparisons + Layer-1/2 constant alignment"
+
+  Materials_Engineering:
+    tier: 29
+    D_eff: 14
+    delta_psi: 0.65
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, energy]
+    build_script: scripts/build_materials_engineering_benchmark.py
+    manifest: data/materials_engineering_manifest.yaml
+    benchmark_data: data/materials_engineering_benchmark.json
+    lean_module: FSOT.Formal.MaterialsEngineeringPriors
+    note: "Young's modulus, thermal κ, bulk/shear, Poisson — buildable engineering SMILES"
+
+  Computational_Reasoning:
+    tier: 29
+    D_eff: 12
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_computational_reasoning_benchmark.py
+    manifest: data/computational_reasoning_manifest.yaml
+    benchmark_data: data/computational_reasoning_benchmark.json
+    lean_module: FSOT.Formal.ComputationalReasoningPriors
+    note: "FIC intelligence-compression sweep + trinary-OS coding/reasoning invariants"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0
