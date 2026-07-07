@@ -1,0 +1,24 @@
+# Tier 31 — Trinary-OS full ISA rebuild from vendor bundle.
+version: "1.0"
+updated: "2026-07-07"
+
+source:
+  trinary_os_root: "vendor/trinary_os"
+  trinary_os_manifest: "data/trinary_os_manifest.yaml"
+  isa_registry: "vendor/trinary_os/isa/fsotb_opcode_registry.json"
+
+build:
+  script: scripts/build_trinary_os_isa_rebuild_benchmark.py
+  output: data/trinary_os_isa_rebuild_benchmark.json
+
+lean:
+  generator: scripts/gen_trinary_os_isa_rebuild_lean.py
+  module: FSOT.Formal.TrinaryOSISARebuildPriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 30
+  min_opcode_count: 27
+  min_oracle_count: 3
+  max_median_error_pct: 0.0

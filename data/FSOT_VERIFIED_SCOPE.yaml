@@ -1,4 +1,4 @@
-generated_at: '2026-07-07T23:15:08.366359+00:00'
+generated_at: '2026-07-07T23:58:48.228379+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -422,7 +422,7 @@ proved_claims:
   lean_module: FSOT.Formal.DomainPrecisionPriors
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
-lean_build_ok: false
+lean_build_ok: true
 scientific_domains_covered: 66
 total_empirical_records: 305270
 tier_coverage:
@@ -1133,6 +1133,18 @@ extension_domains:
   tier: 30
   record_count: 45
   lean_module: FSOT.Formal.MaterialsSpeciesBridgePriors
+- domain: IGEM_Synthetic_Biology
+  tier: 31
+  record_count: 60
+  lean_module: FSOT.Formal.IGEMSyntheticBiologyPriors
+- domain: Math_Generator_Benchmark_Formula_Eval
+  tier: 31
+  record_count: 9
+  lean_module: FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors
+- domain: Trinary_OS_ISA_Rebuild
+  tier: 31
+  record_count: 38
+  lean_module: FSOT.Formal.TrinaryOSISARebuildPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1466,6 +1478,40 @@ theory_crosswalk:
     - smiles_lab
     - species_catalog
     lean_module: FSOT.Formal.MaterialsSpeciesBridgePriors
+  IGEM_Synthetic_Biology:
+    tier: 31
+    D_eff: 14
+    maps_to_lean:
+    - biological
+    - medical
+    labs:
+    - igem_parts_registry
+    - synthetic_biology_lab
+    - biology_strict_lab
+    lean_module: FSOT.Formal.IGEMSyntheticBiologyPriors
+  Math_Generator_Benchmark_Formula_Eval:
+    tier: 31
+    D_eff: 17
+    maps_to_lean:
+    - particle
+    - mathematical
+    - consciousness
+    labs:
+    - math_generator_rules
+    - math_generator_lab
+    - fsot_read_write
+    lean_module: FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors
+  Trinary_OS_ISA_Rebuild:
+    tier: 31
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - trinary_os
+    - trinary_os_isa
+    lean_module: FSOT.Formal.TrinaryOSISARebuildPriors
 lean_formal_modules:
 - AetherPrimePriors
 - BiologyStrictEmpiricalPriors

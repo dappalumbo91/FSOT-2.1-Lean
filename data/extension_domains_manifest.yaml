@@ -440,6 +440,45 @@ extension_domains:
     lean_module: FSOT.Formal.MaterialsSpeciesBridgePriors
     note: "SMILES engineering metals cross-validated against species-catalog machine properties"
 
+  IGEM_Synthetic_Biology:
+    tier: 31
+    D_eff: 14
+    delta_psi: 0.65
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, medical]
+    build_script: scripts/build_igem_synthetic_biology_benchmark.py
+    manifest: data/igem_synthetic_biology_manifest.yaml
+    benchmark_data: data/igem_synthetic_biology_benchmark.json
+    lean_module: FSOT.Formal.IGEMSyntheticBiologyPriors
+    note: "iGEM parts-registry length/GC strict-empirical bridge to biology_strict operons"
+
+  Math_Generator_Benchmark_Formula_Eval:
+    tier: 31
+    D_eff: 17
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, mathematical, consciousness]
+    build_script: scripts/build_math_generator_benchmark_formula_eval_benchmark.py
+    manifest: data/math_generator_benchmark_formula_eval_manifest.yaml
+    benchmark_data: data/math_generator_benchmark_formula_eval_benchmark.json
+    lean_module: FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors
+    note: "Live benchmark_formula eval for FO-200/210/220 overlay rules"
+
+  Trinary_OS_ISA_Rebuild:
+    tier: 31
+    D_eff: 12
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_trinary_os_isa_rebuild_benchmark.py
+    manifest: data/trinary_os_isa_rebuild_manifest.yaml
+    benchmark_data: data/trinary_os_isa_rebuild_benchmark.json
+    lean_module: FSOT.Formal.TrinaryOSISARebuildPriors
+    note: "Full FSOTB v1/v1.1/v1.2 ISA opcode registry + oracle rebuild invariants"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

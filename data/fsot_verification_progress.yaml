@@ -1,16 +1,16 @@
-generated_at: '2026-07-07T23:15:09.323907+00:00'
+generated_at: '2026-07-07T23:58:49.005643+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 89
+  lean_formal_modules: 92
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 27
-  tiers_total: 28
-  percent_complete: 96.4
-current_position: "Tier 30 Portable bridges \u2014 math rules eval, trinary OS, materials\u2194\
-  species"
+  tiers_complete: 28
+  tiers_total: 29
+  percent_complete: 96.6
+current_position: "Tier 31 Strict bridges \u2014 iGEM synbio, benchmark_formula eval,\
+  \ trinary ISA rebuild"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -55,6 +55,7 @@ tiers:
   - GraceCryospherePriors
   - HiggsBranchingPriors
   - HydrologyPriors
+  - IGEMSyntheticBiologyPriors
   - ImmunologyPriors
   - IntelligenceCompressionPriors
   - KnowledgeBasePriors
@@ -67,6 +68,7 @@ tiers:
   - MagnetospherePriors
   - MaterialsEngineeringPriors
   - MaterialsSpeciesBridgePriors
+  - MathGeneratorBenchmarkFormulaEvalPriors
   - MathGeneratorPriors
   - MathGeneratorRulesEvalPriors
   - MathematicsComputationalPriors
@@ -97,6 +99,7 @@ tiers:
   - TectonicsPriors
   - ThesisSimulationPriors
   - TrinaryFluidPriors
+  - TrinaryOSISARebuildPriors
   - TrinaryOSPortablePriors
   - TrinaryOSPriors
   - UnifiedDBPriors
@@ -527,10 +530,30 @@ tiers:
   - FSOT.Formal.MathGeneratorRulesEvalPriors
   - FSOT.Formal.TrinaryOSPortablePriors
   - FSOT.Formal.MaterialsSpeciesBridgePriors
+- tier: 31
+  name: "Strict bridges \u2014 iGEM synbio, benchmark_formula eval, trinary ISA rebuild"
+  status: complete
+  metrics:
+    igem_synthetic_biology_records: 60
+    igem_synthetic_biology_parts: 20
+    math_generator_benchmark_formula_records: 9
+    math_generator_benchmark_formula_median_error_pct: 0.0
+    trinary_os_isa_rebuild_records: 38
+    trinary_os_isa_opcode_count: 27
+  artifacts:
+  - data/igem_synthetic_biology_manifest.yaml
+  - data/math_generator_benchmark_formula_eval_manifest.yaml
+  - data/trinary_os_isa_rebuild_manifest.yaml
+  - vendor/igem/igem_parts_registry.json
+  - vendor/math_generator/benchmark_reports
+  - vendor/trinary_os/isa/fsotb_opcode_registry.json
+  - FSOT.Formal.IGEMSyntheticBiologyPriors
+  - FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors
+  - FSOT.Formal.TrinaryOSISARebuildPriors
 next_steps:
-- iGEM parts-registry strict-empirical synthetic biology bridge
-- Math-generator benchmark_formula live eval (3 overlay rules)
-- Trinary-OS full ISA rebuild from vendor bundle
+- iGEM live FASTA ingest refresh when parts.igem.org API reachable
+- Airfoil benchmark_formula full dataset RMSE recompute
+- Trinary-OS round-trip FSOTB rebuild smoke from vendor ISA
 key_metrics:
   strict_empirical_records: 7941
   smiles_mapped: 1470

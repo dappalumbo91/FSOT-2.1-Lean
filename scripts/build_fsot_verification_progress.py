@@ -81,6 +81,9 @@ def build_progress() -> dict:
     mg_rules_eval_bench = _load_json(ROOT / "data" / "math_generator_rules_eval_benchmark.json")
     trinary_portable_bench = _load_json(ROOT / "data" / "trinary_os_portable_benchmark.json")
     materials_species_bench = _load_json(ROOT / "data" / "materials_species_bridge_benchmark.json")
+    igem_syn_bio_bench = _load_json(ROOT / "data" / "igem_synthetic_biology_benchmark.json")
+    mg_bench_formula_bench = _load_json(ROOT / "data" / "math_generator_benchmark_formula_eval_benchmark.json")
+    trinary_isa_bench = _load_json(ROOT / "data" / "trinary_os_isa_rebuild_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -751,12 +754,42 @@ def build_progress() -> dict:
                 "FSOT.Formal.MaterialsSpeciesBridgePriors",
             ],
         },
+        {
+            "tier": 31,
+            "name": "Strict bridges — iGEM synbio, benchmark_formula eval, trinary ISA rebuild",
+            "status": "complete"
+            if igem_syn_bio_bench.get("record_count", 0) >= 50
+            and mg_bench_formula_bench.get("record_count", 0) >= 3
+            and mg_bench_formula_bench.get("median_error_pct", 99) <= 1.0
+            and trinary_isa_bench.get("opcode_count", 0) >= 27
+            and trinary_isa_bench.get("median_error_pct", 99) == 0
+            else "pending",
+            "metrics": {
+                "igem_synthetic_biology_records": igem_syn_bio_bench.get("record_count"),
+                "igem_synthetic_biology_parts": igem_syn_bio_bench.get("part_count"),
+                "math_generator_benchmark_formula_records": mg_bench_formula_bench.get("record_count"),
+                "math_generator_benchmark_formula_median_error_pct": mg_bench_formula_bench.get("median_error_pct"),
+                "trinary_os_isa_rebuild_records": trinary_isa_bench.get("record_count"),
+                "trinary_os_isa_opcode_count": trinary_isa_bench.get("opcode_count"),
+            },
+            "artifacts": [
+                "data/igem_synthetic_biology_manifest.yaml",
+                "data/math_generator_benchmark_formula_eval_manifest.yaml",
+                "data/trinary_os_isa_rebuild_manifest.yaml",
+                "vendor/igem/igem_parts_registry.json",
+                "vendor/math_generator/benchmark_reports",
+                "vendor/trinary_os/isa/fsotb_opcode_registry.json",
+                "FSOT.Formal.IGEMSyntheticBiologyPriors",
+                "FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors",
+                "FSOT.Formal.TrinaryOSISARebuildPriors",
+            ],
+        },
     ]
 
     next_steps = [
-        "iGEM parts-registry strict-empirical synthetic biology bridge",
-        "Math-generator benchmark_formula live eval (3 overlay rules)",
-        "Trinary-OS full ISA rebuild from vendor bundle",
+        "iGEM live FASTA ingest refresh when parts.igem.org API reachable",
+        "Airfoil benchmark_formula full dataset RMSE recompute",
+        "Trinary-OS round-trip FSOTB rebuild smoke from vendor ISA",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -775,7 +808,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 30 Portable bridges — math rules eval, trinary OS, materials↔species",
+        "current_position": "Tier 31 Strict bridges — iGEM synbio, benchmark_formula eval, trinary ISA rebuild",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

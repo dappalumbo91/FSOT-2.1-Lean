@@ -48,6 +48,21 @@ bundled:
     role: Machine & Molecule metals/molecules/polymers for species bridge
     env_override: FSOT_SPECIES_CATALOG
 
+  igem_parts_registry:
+    path: vendor/igem/igem_parts_registry.json
+    role: iGEM Registry standard parts for synthetic biology strict-empirical bridge
+    env_override: FSOT_IGEM_PARTS_REGISTRY
+
+  math_generator_benchmark_reports:
+    path: vendor/math_generator/benchmark_reports
+    role: FSOT overlay benchmark reports (H0, airfoil, chemistry) for live formula eval
+    env_override: FSOT_MATH_GENERATOR_BENCHMARK_REPORTS
+
+  trinary_os_isa_registry:
+    path: vendor/trinary_os/isa/fsotb_opcode_registry.json
+    role: FSOTB v1/v1.1/v1.2 opcode table for portable ISA rebuild verification
+    env_override: FSOT_TRINARY_OS_ISA_REGISTRY
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification

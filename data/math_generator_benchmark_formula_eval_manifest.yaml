@@ -1,0 +1,21 @@
+# Tier 31 — benchmark_formula live eval for 3 FSOT overlay rules.
+version: "1.0"
+updated: "2026-07-07"
+
+source:
+  math_generator_rules: "vendor/math_generator/rules"
+  benchmark_reports: "vendor/math_generator/benchmark_reports"
+
+build:
+  script: scripts/build_math_generator_benchmark_formula_eval_benchmark.py
+  output: data/math_generator_benchmark_formula_eval_benchmark.json
+
+lean:
+  generator: scripts/gen_math_generator_benchmark_formula_eval_lean.py
+  module: FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors
+  lean_domain: particle
+  sign_theorem: particle_raw_S_positive
+
+verification:
+  min_records: 3
+  max_median_error_pct: 1.0

@@ -1,0 +1,185 @@
+{
+  "request": {
+    "observable": "H0",
+    "domain": "Cosmology",
+    "target_value": 67.4,
+    "unit": "km s^-1 Mpc^-1",
+    "context_terms": [
+      "Hubble",
+      "expansion",
+      "cosmology",
+      "global",
+      "benchmark"
+    ],
+    "seed_symbols": [
+      "S_COSM",
+      "A_BLEED",
+      "A_IN",
+      "C_COSM",
+      "P_BASE"
+    ],
+    "max_candidates": 12,
+    "max_basis_symbols": 6
+  },
+  "selected_basis_symbols": [
+    "a_bleed",
+    "a_in",
+    "c_cosm",
+    "p_base",
+    "p_new",
+    "s_cosm"
+  ],
+  "top_reference_hits": [
+    "H0 [Wave 1 benchmark] => 100 * (1 + s_cosm * a_bleed / a_in)",
+    "EuO_Tc [CSV database] => PHI⁹-E²",
+    "13C_CO2-CH4 [CSV database] => E^3+PI^3+PHI^6",
+    "C≡C [CSV database] => PHI⁹-PHI⁴",
+    "P_IE5 [CSV database] => PI^5·P_BASE"
+  ],
+  "hypotheses": [
+    {
+      "rank": 1,
+      "formula": "100 * (1 + s_cosm * a_bleed / a_in)",
+      "computed_value": 68.44005682979426,
+      "relative_error_percent": 1.5431110234336094,
+      "total_score": 0.992702749585846,
+      "semantic_score": 0.6666666666666666,
+      "numeric_score": 0.9933934715319658,
+      "simplicity_score": 0.2,
+      "provenance": "Wave 1 benchmark",
+      "rationale": "Known derivation ranked against H0"
+    },
+    {
+      "rank": 2,
+      "formula": "E⁴·OMEGA",
+      "computed_value": 70.65713546317932,
+      "relative_error_percent": 4.832545197595415,
+      "total_score": 0.8212826477350903,
+      "semantic_score": 0.3333333333333333,
+      "numeric_score": 0.9799155240029281,
+      "simplicity_score": 1.0,
+      "provenance": "CSV database",
+      "rationale": "Known derivation ranked against H0"
+    },
+    {
+      "rank": 3,
+      "formula": "PHI⁹-E²",
+      "computed_value": 68.6240995185658,
+      "relative_error_percent": 1.816171392530851,
+      "total_score": 0.7536796527437298,
+      "semantic_score": 0.3333333333333333,
+      "numeric_score": 0.9922438656839943,
+      "simplicity_score": 0.5,
+      "provenance": "CSV database",
+      "rationale": "Known derivation ranked against H0"
+    },
+    {
+      "rank": 4,
+      "formula": "PHI⁹-PHI⁴",
+      "computed_value": 69.15905365124677,
+      "relative_error_percent": 2.609871886122788,
+      "total_score": 0.7516941330876707,
+      "semantic_score": 0.3333333333333333,
+      "numeric_score": 0.988934666257229,
+      "simplicity_score": 0.5,
+      "provenance": "CSV database",
+      "rationale": "Known derivation ranked against H0"
+    },
+    {
+      "rank": 5,
+      "formula": "PI^5·P_BASE",
+      "computed_value": 64.9819875102605,
+      "relative_error_percent": 3.5875556227589174,
+      "total_score": 0.7489618855059841,
+      "semantic_score": 0.3333333333333333,
+      "numeric_score": 0.9843809202877514,
+      "simplicity_score": 0.5,
+      "provenance": "CSV database",
+      "rationale": "Known derivation ranked against H0"
+    },
+    {
+      "rank": 6,
+      "formula": "e⁴+γ⁻⁵",
+      "computed_value": 70.20479159671952,
+      "relative_error_percent": 4.161411864569007,
+      "total_score": 0.7478940652042095,
+      "semantic_score": 0.3333333333333333,
+      "numeric_score": 0.9826012197847936,
+      "simplicity_score": 0.5,
+      "provenance": "CSV database",
+      "rationale": "Known derivation ranked against H0"
+    },
+    {
+      "rank": 7,
+      "formula": "10 * (1 + abs(p_base) * a_in / abs(c_cosm))",
+      "computed_value": 67.27021167735879,
+      "relative_error_percent": 0.192564276915754,
+      "total_score": 0.7128314920652086,
+      "semantic_score": 0.3333333333333333,
+      "numeric_score": 0.9991635978864587,
+      "simplicity_score": 0.2,
+      "provenance": "generated",
+      "rationale": "Magnitude-stabilized three-symbol composite"
+    },
+    {
+      "rank": 8,
+      "formula": "10 * (1 + a_in * p_base / c_cosm)",
+      "computed_value": 67.27021167735879,
+      "relative_error_percent": 0.192564276915754,
+      "total_score": 0.7128314920652086,
+      "semantic_score": 0.3333333333333333,
+      "numeric_score": 0.9991635978864587,
+      "simplicity_score": 0.2,
+      "provenance": "generated",
+      "rationale": "Three-symbol normalized composite"
+    },
+    {
+      "rank": 9,
+      "formula": "10 * (1 + abs(a_in) * p_base / abs(c_cosm))",
+      "computed_value": 67.27021167735879,
+      "relative_error_percent": 0.192564276915754,
+      "total_score": 0.7128314920652086,
+      "semantic_score": 0.3333333333333333,
+      "numeric_score": 0.9991635978864587,
+      "simplicity_score": 0.2,
+      "provenance": "generated",
+      "rationale": "Magnitude-stabilized three-symbol composite"
+    },
+    {
+      "rank": 10,
+      "formula": "10 * (1 + a_bleed * a_in / p_new)",
+      "computed_value": 68.11317986372886,
+      "relative_error_percent": 1.0581303616155102,
+      "total_score": 0.7106030585723143,
+      "semantic_score": 0.3333333333333333,
+      "numeric_score": 0.9954495420649683,
+      "simplicity_score": 0.2,
+      "provenance": "generated",
+      "rationale": "Three-symbol normalized composite"
+    },
+    {
+      "rank": 11,
+      "formula": "10 * (1 + abs(a_in) * a_bleed / abs(p_new))",
+      "computed_value": 68.11317986372886,
+      "relative_error_percent": 1.0581303616155102,
+      "total_score": 0.7106030585723143,
+      "semantic_score": 0.3333333333333333,
+      "numeric_score": 0.9954495420649683,
+      "simplicity_score": 0.2,
+      "provenance": "generated",
+      "rationale": "Magnitude-stabilized three-symbol composite"
+    },
+    {
+      "rank": 12,
+      "formula": "10 * (1 + abs(a_bleed) * a_in / abs(p_new))",
+      "computed_value": 68.11317986372886,
+      "relative_error_percent": 1.0581303616155102,
+      "total_score": 0.7106030585723143,
+      "semantic_score": 0.3333333333333333,
+      "numeric_score": 0.9954495420649683,
+      "simplicity_score": 0.2,
+      "provenance": "generated",
+      "rationale": "Magnitude-stabilized three-symbol composite"
+    }
+  ]
+}

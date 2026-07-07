@@ -49,6 +49,9 @@ DEDICATED_GENERATORS = {
     "Math_Generator_Rules_Eval",
     "Trinary_OS_Portable",
     "Materials_Species_Bridge",
+    "IGEM_Synthetic_Biology",
+    "Math_Generator_Benchmark_Formula_Eval",
+    "Trinary_OS_ISA_Rebuild",
 }
 
 LEAN_SIGN = {
@@ -85,6 +88,9 @@ LEAN_SIGN = {
     "Math_Generator_Rules_Eval": ("particle", "particle_raw_S_positive"),
     "Trinary_OS_Portable": ("consciousness", "consciousness_raw_S_positive"),
     "Materials_Species_Bridge": ("material", "material_raw_S_positive"),
+    "IGEM_Synthetic_Biology": ("biological", "biological_raw_S_positive"),
+    "Math_Generator_Benchmark_Formula_Eval": ("particle", "particle_raw_S_positive"),
+    "Trinary_OS_ISA_Rebuild": ("consciousness", "consciousness_raw_S_positive"),
 }
 
 

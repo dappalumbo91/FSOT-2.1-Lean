@@ -120,6 +120,9 @@ LEAN_TARGETS = [
     "FSOT.Formal.MathGeneratorRulesEvalPriors",
     "FSOT.Formal.TrinaryOSPortablePriors",
     "FSOT.Formal.MaterialsSpeciesBridgePriors",
+    "FSOT.Formal.IGEMSyntheticBiologyPriors",
+    "FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors",
+    "FSOT.Formal.TrinaryOSISARebuildPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]

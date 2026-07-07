@@ -1,0 +1,347 @@
+{
+  "generated_at": "2026-07-07T23:58:08.003370+00:00",
+  "source": [
+    "vendor/trinary_os/isa/fsotb_opcode_registry.json",
+    "vendor/trinary_os"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai",
+    "neural"
+  ],
+  "D_eff": 12,
+  "opcode_count": 27,
+  "abi_tier_count": 3,
+  "oracle_count": 3,
+  "record_count": 38,
+  "observable_count": 38,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "hello_file_size",
+      "abi_tier": "v1_0",
+      "computed": 264,
+      "measured": 264,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "hello_instructions",
+      "abi_tier": "v1_0",
+      "computed": 2,
+      "measured": 2,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "call_ret_file_size",
+      "abi_tier": "v1_1",
+      "computed": 312,
+      "measured": 312,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "call_ret_instructions",
+      "abi_tier": "v1_1",
+      "computed": 10,
+      "measured": 10,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "spawn_join_file_size",
+      "abi_tier": "v1_2",
+      "computed": 440,
+      "measured": 440,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "spawn_join_instructions",
+      "abi_tier": "v1_2",
+      "computed": 31,
+      "measured": 31,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "HALT",
+      "computed": 0,
+      "measured": 0,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "IMM",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "MOVT",
+      "computed": 2,
+      "measured": 2,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "LOADT",
+      "computed": 3,
+      "measured": 3,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "STORET",
+      "computed": 4,
+      "measured": 4,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "ADDT",
+      "computed": 5,
+      "measured": 5,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "SUBT",
+      "computed": 6,
+      "measured": 6,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "MULT",
+      "computed": 7,
+      "measured": 7,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "NEGT",
+      "computed": 8,
+      "measured": 8,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "MIN3",
+      "computed": 9,
+      "measured": 9,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "MAX3",
+      "computed": 10,
+      "measured": 10,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "COLLAPSE",
+      "computed": 11,
+      "measured": 11,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "EVAL_PANEL",
+      "computed": 12,
+      "measured": 12,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "CONSENSUS",
+      "computed": 13,
+      "measured": 13,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "PHASE_ROT",
+      "computed": 14,
+      "measured": 14,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "BRANCHT",
+      "computed": 15,
+      "measured": 15,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "EMIT",
+      "computed": 16,
+      "measured": 16,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "LOAD_RULE",
+      "computed": 17,
+      "measured": 17,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "APPLY_OVR",
+      "computed": 18,
+      "measured": 18,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "MEASURE",
+      "computed": 19,
+      "measured": 19,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "CALL",
+      "computed": 20,
+      "measured": 20,
+      "error_pct": 0.0,
+      "abi_tier": "v1_1"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "RET",
+      "computed": 21,
+      "measured": 21,
+      "error_pct": 0.0,
+      "abi_tier": "v1_1"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "PUSH_T",
+      "computed": 22,
+      "measured": 22,
+      "error_pct": 0.0,
+      "abi_tier": "v1_1"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "POP_T",
+      "computed": 23,
+      "measured": 23,
+      "error_pct": 0.0,
+      "abi_tier": "v1_1"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "SYSCALL",
+      "computed": 24,
+      "measured": 24,
+      "error_pct": 0.0,
+      "abi_tier": "v1_1"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "SPAWN",
+      "computed": 25,
+      "measured": 25,
+      "error_pct": 0.0,
+      "abi_tier": "v1_2"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "JOIN",
+      "computed": 26,
+      "measured": 26,
+      "error_pct": 0.0,
+      "abi_tier": "v1_2"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "word_width_trits",
+      "computed": 27,
+      "measured": 27,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "num_task_slots",
+      "computed": 8,
+      "measured": 8,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "register_count",
+      "computed": 25,
+      "measured": 25,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "cortical_layers",
+      "computed": 6,
+      "measured": 6,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "seeds_hash_hex",
+      "computed": "0xc627292ec4eb3b90",
+      "measured": "0xc627292ec4eb3b90",
+      "error_pct": 0.0
+    }
+  ]
+}

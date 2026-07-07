@@ -1,0 +1,22 @@
+# Tier 31 — iGEM parts-registry strict-empirical synthetic biology bridge.
+version: "1.0"
+updated: "2026-07-07"
+
+source:
+  igem_parts_registry: "vendor/igem/igem_parts_registry.json"
+  biology_strict: "data/biology_strict_empirical.json"
+
+build:
+  script: scripts/build_igem_synthetic_biology_benchmark.py
+  output: data/igem_synthetic_biology_benchmark.json
+
+lean:
+  generator: scripts/gen_igem_synthetic_biology_lean.py
+  module: FSOT.Formal.IGEMSyntheticBiologyPriors
+  lean_domain: biological
+  sign_theorem: biological_raw_S_positive
+
+verification:
+  min_records: 50
+  min_parts: 15
+  max_median_error_pct: 5.0

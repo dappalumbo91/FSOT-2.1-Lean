@@ -1,0 +1,2093 @@
+{
+  "request": {
+    "input_path": ".\\examples\\airfoil_self_noise.csv",
+    "target_column": "scaled_sound_pressure_level_db",
+    "feature_columns": [
+      "frequency_hz",
+      "free_stream_velocity_ms",
+      "suction_side_displacement_thickness_m"
+    ],
+    "domain": "Aeroacoustics",
+    "context_terms": [
+      "airfoil",
+      "fluid mechanics",
+      "noise"
+    ],
+    "max_candidates": 12,
+    "train_fraction": 0.8,
+    "split_seed": 17,
+    "shuffle_rows": true,
+    "sandbox": {
+      "enabled": true,
+      "goal_rmse": null,
+      "goal_mode": "best_conventional_chosen_features",
+      "max_formulas": 256,
+      "combinatorial_budget": 4096,
+      "beam_width": 24,
+      "beam_depth": 2
+    }
+  },
+  "dataset_summary": {
+    "path": ".\\examples\\airfoil_self_noise.csv",
+    "row_count": 1503,
+    "columns": [
+      {
+        "name": "angle_of_attack_deg",
+        "numeric": true,
+        "non_null_count": 1503,
+        "mean": 6.782302062541517,
+        "min": 0.0,
+        "max": 22.2
+      },
+      {
+        "name": "chord_length_m",
+        "numeric": true,
+        "non_null_count": 1503,
+        "mean": 0.13654823685961226,
+        "min": 0.0254,
+        "max": 0.3048
+      },
+      {
+        "name": "free_stream_velocity_ms",
+        "numeric": true,
+        "non_null_count": 1503,
+        "mean": 50.860745176314175,
+        "min": 31.7,
+        "max": 71.3
+      },
+      {
+        "name": "frequency_hz",
+        "numeric": true,
+        "non_null_count": 1503,
+        "mean": 2886.3805721889553,
+        "min": 200.0,
+        "max": 20000.0
+      },
+      {
+        "name": "scaled_sound_pressure_level_db",
+        "numeric": true,
+        "non_null_count": 1503,
+        "mean": 124.83594278110434,
+        "min": 103.38,
+        "max": 140.987
+      },
+      {
+        "name": "suction_side_displacement_thickness_m",
+        "numeric": true,
+        "non_null_count": 1503,
+        "mean": 0.011139880391217556,
+        "min": 0.000400682,
+        "max": 0.0584113
+      }
+    ]
+  },
+  "chosen_features": [
+    "frequency_hz",
+    "free_stream_velocity_ms",
+    "suction_side_displacement_thickness_m"
+  ],
+  "reasoning_path": {
+    "domain": "Aeroacoustics",
+    "basis_symbols": [
+      "a_bleed",
+      "a_in",
+      "b_in",
+      "suction",
+      "c_eff",
+      "theta_s"
+    ],
+    "domain_parameters": {
+      "source_symbol": "DOMAIN_ACOUSTICS",
+      "d_eff": 10.0,
+      "c": 0.7403221539119567
+    },
+    "target_semantics": {
+      "target": "scaled_sound_pressure_level_db",
+      "role": "log_response_intensity",
+      "preferred_transforms": [
+        "linear_driver_then_log_review",
+        "pressure-weighted overlap accumulation"
+      ]
+    },
+    "thesis_cues": [
+      {
+        "label": "single_engine_architecture",
+        "excerpt": "This matters because the theory is not built from disconnected formulas. It is built from a single scalar architecture whose terms each play a different physical role. \\(T_1\\) is the main observer-modulated fluid response, \\(T_2\\) is the linear baseline modulation, and \\(T_3\\) is the valve-acoustic-phase correction. The final scalar \\(S\\) is the total interpreted response of the system after these three layers have been combined and globally scaled.",
+        "rationale": "Use multi-term cumulative structure instead of isolated one-shot formulas."
+      },
+      {
+        "label": "domain_landscape",
+        "excerpt": "The scalar engine does not produce only one universal number in the abstract. It produces domain-specific scalar states by evaluating the same engine under different canonical configurations. Each domain is assigned a structured position in the landscape through quantities such as \\(D_{\\text{eff}}\\), Hits, \\(\\Delta\\psi\\), the observer flag, and the interpretation constant \\(C\\).",
+        "rationale": "Treat the domain as a configured regime rather than a generic regression label."
+      },
+      {
+        "label": "observer_modulation",
+        "excerpt": "The observer effect is also more specific in FSOT 3.0: it is a conditional modulation applied to \\(T_1\\) when `Observed = True`, rather than a permanent standalone `quirk_mod`.",
+        "rationale": "Allow observer-sensitive modulation to reshape the primary response channel rather than bolt on a separate term."
+      },
+      {
+        "label": "perturbation_offset",
+        "excerpt": "Physical intuition: \\(\\Delta\\psi\\) controls how far the local system is displaced from its baseline coherence state. Small values correspond to gentler perturbation or lower observer offset; larger values correspond to stronger modulation and more aggressive phase displacement across the fluid medium.",
+        "rationale": "Interpret strongly phase-like features as perturbation offsets that alter cumulative response."
+      },
+      {
+        "label": "fluid_domain_delta_psi",
+        "excerpt": "In the 35-domain scalar landscape, \\(\\Delta\\psi\\) is not a loose narrative input. It is part of each domain's canonical configuration. Representative values in the current engine are Quantum Mechanics = 1.0, Chemistry = 0.5, Biology = 0.05, Neuroscience = 0.1, Fluid Dynamics = 0.9, and Cosmology = 1.0.",
+        "rationale": "Favor stronger perturbation-state coupling for fluid and aeroacoustic systems."
+      },
+      {
+        "label": "acoustic_routing",
+        "excerpt": "This means \\(\\Delta\\theta\\) governs how the system partitions between bleed-dominant and inflow-dominant behavior. In the current compute engine, the canonical presets use a baseline value of \\(\\Delta\\theta = 1\\).",
+        "rationale": "Split the response between bleed and inflow channels instead of forcing a single blended path."
+      },
+      {
+        "label": "boundary_routing_intelligence",
+        "excerpt": "Physical intuition: \\(T_3\\) is the boundary-and-routing intelligence of the scalar engine. It answers the question the first two terms do not fully answer: how does the system behave when perturbation is not just felt, but redirected through a structured channel? In explanatory language, \\(T_3\\) is where the engine stops being only a response field and starts behaving like a full transport mechanism.",
+        "rationale": "Model boundary-layer behavior as routing and moderation, not only as additive loss."
+      },
+      {
+        "label": "domain_reading_frame",
+        "excerpt": "Each domain carries its own interpretation constant \\(C\\). These constants do not replace the scalar engine and do not act like new free parameters. Instead, they provide domain-specific reading frames for the same engine output.",
+        "rationale": "Use domain-scaled reading frames and log-style accumulation for response-intensity targets."
+      },
+      {
+        "label": "homeostasis_regulation",
+        "excerpt": "The next chapter turns the neural and observer layers into regulation rules. Instead of listing only static architecture constants, the mathematical key defines how equilibrium, replay, forgetting, novelty, attention scaling, inhibition, and cross-column coupling are supposed to behave once the system is active.",
+        "rationale": "Treat reasoning as an iterative control process that revisits assumptions instead of a one-pass guess."
+      },
+      {
+        "label": "novelty_threshold",
+        "excerpt": "Novelty_Threshold 1 / PHI 0.6180339887 PHI",
+        "rationale": "Check whether a candidate only works by overreacting to noise rather than stable structure."
+      },
+      {
+        "label": "attention_inhibition",
+        "excerpt": "Attention_Inhibition B_IN 0.7879407923 Bleed_In_Factor",
+        "rationale": "Use inhibition to damp spurious overlap terms when one feature starts dominating the explanation."
+      },
+      {
+        "label": "attention_error_gain",
+        "excerpt": "Attention_Error_Gain E / PI 0.8652559794",
+        "rationale": "Use attention gain to focus search pressure on informative mismatches, not every mismatch equally."
+      }
+    ],
+    "critical_thinking": {
+      "observations": [
+        "The target scaled_sound_pressure_level_db is being treated as log_response_intensity.",
+        "Observed target range is min=Some(103.38), max=Some(140.987), mean=Some(124.83594278110434) across 1503 rows.",
+        "Chosen features and roles: frequency_hz=>oscillation_driver, free_stream_velocity_ms=>transport_rate, suction_side_displacement_thickness_m=>boundary_layer.",
+        "Domain metadata source DOMAIN_ACOUSTICS gives D_eff=Some(10.0) and C=Some(0.7403221539119567)."
+      ],
+      "assumption_checks": [
+        {
+          "title": "Single-Cause Bias",
+          "prompt": "Am I assuming one feature should explain the target by itself when the domain suggests multiple interacting channels?",
+          "purpose": "Prevent collapse into overly simple one-driver formulas."
+        },
+        {
+          "title": "Scale Mismatch",
+          "prompt": "Am I mixing raw feature magnitudes and target semantics without a transform that makes the comparison meaningful?",
+          "purpose": "Force transform selection before scoring formulas."
+        },
+        {
+          "title": "Log Target Check",
+          "prompt": "Is the target better treated as a compressed reading of an underlying linear response than as a directly linear quantity?",
+          "purpose": "Bias the search toward log-response formulas for decibel-like targets."
+        }
+      ],
+      "interaction_checks": [
+        {
+          "title": "Overlap Effects",
+          "prompt": "Could two or more roles be overlapping so that the observed response is cumulative rather than additive in a naive way?",
+          "purpose": "Force explicit interaction terms into the hypothesis set."
+        },
+        {
+          "title": "Boundary Moderation",
+          "prompt": "Is there a boundary-like or damping variable that should moderate every transport or geometry term?",
+          "purpose": "Prevent runaway formulas by routing them through inhibitory structure."
+        },
+        {
+          "title": "Attention Inhibition",
+          "prompt": "Which overlap term should be down-weighted because it is grabbing attention without improving held-out error?",
+          "purpose": "Use inhibition to suppress noisy interaction terms."
+        },
+        {
+          "title": "Novelty Threshold",
+          "prompt": "Is the candidate discovering stable structure, or is it just reacting to unusual rows?",
+          "purpose": "Favor formulas that generalize beyond rare cases."
+        }
+      ],
+      "falsification_checks": [
+        "Reject formulas whose held-out test RMSE does not beat the current best family.",
+        "Reject formulas whose test error improves only by magnifying one feature without role support from the reasoning path.",
+        "Reject formulas that ignore the chosen feature set frequency_hz, free_stream_velocity_ms, suction_side_displacement_thickness_m unless database anchors justify the omission."
+      ]
+    },
+    "anchors": [
+      {
+        "symbol": "A_BLEED",
+        "record_type": "Layer 2",
+        "formula": "Acoustic Bleed",
+        "value_text": "1.0469736305875510479944010893274985086379517243744",
+        "target_unit": "-",
+        "rationale": "Core FSOT anchor selected from the Aeroacoustics basis set."
+      },
+      {
+        "symbol": "A_IN",
+        "record_type": "Layer 2",
+        "formula": "Acoustic Inflow",
+        "value_text": "1.6668538450045730429519037608383471556533672886222",
+        "target_unit": "-",
+        "rationale": "Core FSOT anchor selected from the Aeroacoustics basis set."
+      },
+      {
+        "symbol": "B_IN",
+        "record_type": "Layer 2",
+        "formula": "Boundary Inflow",
+        "value_text": "0.78794079227644358538153094640794623032301509402471",
+        "target_unit": "-",
+        "rationale": "Core FSOT anchor selected from the Aeroacoustics basis set."
+      },
+      {
+        "symbol": "C_EFF",
+        "record_type": "Layer 2",
+        "formula": "Effective Coupling Constant",
+        "value_text": "0.95770220262056129840924162512013500710030977376188",
+        "target_unit": "-",
+        "rationale": "Core FSOT anchor selected from the Aeroacoustics basis set."
+      },
+      {
+        "symbol": "DOMAIN_ACOUSTICS",
+        "record_type": "Domain Metadata",
+        "formula": "Domain context for Acoustics",
+        "value_text": "D_eff: 10, C: 0.740322153911956699119569250618",
+        "target_unit": "-",
+        "rationale": "Domain metadata anchor for Aeroacoustics."
+      },
+      {
+        "symbol": "DOMAIN_FLUID_DYNAMICS",
+        "record_type": "Domain Metadata",
+        "formula": "Domain context for Fluid Dynamics",
+        "value_text": "D_eff: 15, C: 0.647065289027983089129215871483",
+        "target_unit": "-",
+        "rationale": "Domain metadata anchor for Aeroacoustics."
+      },
+      {
+        "symbol": "SUCTION",
+        "record_type": "Layer 2",
+        "formula": "Vacuum Entrainment",
+        "value_text": "0.14703398542810282486066079564381082923203891666308",
+        "target_unit": "-",
+        "rationale": "Core FSOT anchor selected from the Aeroacoustics basis set."
+      },
+      {
+        "symbol": "THETA_S",
+        "record_type": "Layer 1",
+        "formula": "Phase Shift Seed",
+        "value_text": "0.29089654054517306390407755572440326397870770721769",
+        "target_unit": "-",
+        "rationale": "Core FSOT anchor selected from the Aeroacoustics basis set."
+      }
+    ],
+    "feature_roles": [
+      {
+        "feature": "frequency_hz",
+        "role": "oscillation_driver",
+        "suggested_transforms": [
+          "ln(abs(frequency_hz) + 1) * a_bleed",
+          "sqrt(abs(frequency_hz)) * c_eff",
+          "sqrt(abs(frequency_hz)) * a_bleed"
+        ]
+      },
+      {
+        "feature": "free_stream_velocity_ms",
+        "role": "transport_rate",
+        "suggested_transforms": [
+          "free_stream_velocity_ms * a_in",
+          "free_stream_velocity_ms * c_eff",
+          "free_stream_velocity_ms * omega"
+        ]
+      },
+      {
+        "feature": "suction_side_displacement_thickness_m",
+        "role": "boundary_layer",
+        "suggested_transforms": [
+          "suction_side_displacement_thickness_m * 100 * b_in",
+          "suction_side_displacement_thickness_m * 100 * suction",
+          "suction_side_displacement_thickness_m / p_new"
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Ground Domain",
+        "detail": "Treat the problem as Aeroacoustics and start from FSOT basis symbols a_bleed, a_in, b_in, suction, c_eff, theta_s."
+      },
+      {
+        "title": "Read Domain Metadata",
+        "detail": "Inject domain metadata from DOMAIN_ACOUSTICS with D_eff=Some(10.0) and C=Some(0.7403221539119567) so cumulative multi-physics effects can be weighted by the workspace registry."
+      },
+      {
+        "title": "Assign Feature Roles",
+        "detail": "Map the 3 chosen numeric observables onto physical roles so each feature is transformed according to meaning rather than position."
+      },
+      {
+        "title": "Interpret Target",
+        "detail": "Treat scaled_sound_pressure_level_db as log_response_intensity and prefer transforms linear_driver_then_log_review, pressure-weighted overlap accumulation before composing the final response equation."
+      },
+      {
+        "title": "Apply Thesis Logic",
+        "detail": "Use 12 cues lifted from the thesis export so the solver follows scalar-engine and domain-landscape logic from the manuscript itself."
+      },
+      {
+        "title": "Run Critical-Thinking Checks",
+        "detail": "Force 3 assumption checks, 4 interaction checks, and 3 falsification checks before trusting any formula family."
+      },
+      {
+        "title": "Pull Database Anchors",
+        "detail": "Use 8 database-backed anchors from the unified FSOT registry to constrain transforms and composite equations."
+      },
+      {
+        "title": "Generate Domain Transforms",
+        "detail": "Apply role-guided transforms such as inflow scaling, acoustic bleed scaling, phase weighting, boundary damping, and cumulative overlap terms before composing formulas."
+      },
+      {
+        "title": "Score Out Of Sample",
+        "detail": "Rank formulas by held-out test R² and RMSE so the reported candidate reflects generalization rather than a single-pass fit."
+      }
+    ]
+  },
+  "staged_hypotheses": [
+    {
+      "stage": "db_acoustic_air_motif",
+      "causal_story": "database_backed_acoustic_motif",
+      "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (ln(abs(frequency_hz) + 1)) / pi + 0.740322153911957) * (phi^8 * e^2))) * (e^2 + pi^2)",
+      "train_metrics": {
+        "r2": -0.02113639996851191,
+        "mae": 5.474615752765252,
+        "rmse": 6.9117214293572315
+      },
+      "test_metrics": {
+        "r2": -0.030468176856804474,
+        "mae": 5.76021252536433,
+        "rmse": 7.222362717745352
+      },
+      "kept": true,
+      "comparison_note": "Kept: improved test RMSE from inf to 7.222363",
+      "rationale": "Database-backed acoustic motif: use the Air speed-of-sound derivation phi^8 * e^2 as a clean reading frame over transport and oscillation structure"
+    },
+    {
+      "stage": "db_acoustic_impedance_gate",
+      "causal_story": "database_backed_acoustic_impedance_gate",
+      "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+      "train_metrics": {
+        "r2": 0.06159074586449875,
+        "mae": 5.343351056614741,
+        "rmse": 6.62583303971729
+      },
+      "test_metrics": {
+        "r2": 0.05175680726097198,
+        "mae": 5.603845043768693,
+        "rmse": 6.928223195575535
+      },
+      "kept": true,
+      "comparison_note": "Kept: improved test RMSE from 7.222363 to 6.928223",
+      "rationale": "Database-backed acoustic motif: use Air speed-of-sound phi^8 * e^2 with Air acoustic-impedance K^9 as a boundary moderation gate"
+    },
+    {
+      "stage": "db_acoustic_impedance_blend",
+      "causal_story": "database_backed_acoustic_impedance_blend",
+      "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+      "train_metrics": {
+        "r2": 0.06062705277916447,
+        "mae": 5.34276967907383,
+        "rmse": 6.629234344089887
+      },
+      "test_metrics": {
+        "r2": 0.05083020322761511,
+        "mae": 5.60457035498072,
+        "rmse": 6.931607428685241
+      },
+      "kept": false,
+      "comparison_note": "Rejected: test RMSE 6.931607 not better than 6.928223",
+      "rationale": "Database-backed acoustic motif: blend Air speed-of-sound phi^8 * e^2 with Water acoustic impedance pi - a_in while keeping Air acoustic-impedance K^9 as the boundary gate"
+    },
+    {
+      "stage": "db_n2_impedance_gate",
+      "causal_story": "database_backed_n2_impedance_gate",
+      "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+      "train_metrics": {
+        "r2": 0.10753320673144373,
+        "mae": 5.175541841930446,
+        "rmse": 6.461604616716941
+      },
+      "test_metrics": {
+        "r2": 0.0956693857730967,
+        "mae": 5.4303214537866955,
+        "rmse": 6.765900706704174
+      },
+      "kept": true,
+      "comparison_note": "Kept: improved test RMSE from 6.928223 to 6.765901",
+      "rationale": "Database-backed acoustic motif: use the N2 speed-of-sound derivation e^6 - e^4 with Air acoustic-impedance K^9 as the boundary gate and a combined FSOT inverse-suction recovery correction"
+    },
+    {
+      "stage": "db_air_water_impedance_gate",
+      "causal_story": "database_backed_air_water_impedance_gate",
+      "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+      "train_metrics": {
+        "r2": 0.10809736000270675,
+        "mae": 5.174454157054467,
+        "rmse": 6.459562013187353
+      },
+      "test_metrics": {
+        "r2": 0.09618580081642514,
+        "mae": 5.4295227349871755,
+        "rmse": 6.763968608085996
+      },
+      "kept": true,
+      "comparison_note": "Kept: improved test RMSE from 6.765901 to 6.763969",
+      "rationale": "Database-backed acoustic motif: use the blended Air speed-of-sound and Water acoustic-impedance frame with Air acoustic-impedance K^9 gating and a combined FSOT inverse-suction recovery correction"
+    },
+    {
+      "stage": "db_n2_impedance_gate_ceff",
+      "causal_story": "database_backed_n2_impedance_gate_ceff",
+      "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+      "train_metrics": {
+        "r2": 0.09771746625407873,
+        "mae": 5.19620923898144,
+        "rmse": 6.4970412244345805
+      },
+      "test_metrics": {
+        "r2": 0.08631219997217154,
+        "mae": 5.447756867373528,
+        "rmse": 6.800814300750755
+      },
+      "kept": false,
+      "comparison_note": "Rejected: test RMSE 6.800814 not better than 6.763969",
+      "rationale": "Database-backed acoustic motif: use the N2 speed-of-sound derivation e^6 - e^4 with Air acoustic-impedance K^9 gating, a combined FSOT inverse-suction recovery correction, and C_EFF over PI as the oscillation weighting"
+    },
+    {
+      "stage": "db_air_water_impedance_gate_ceff",
+      "causal_story": "database_backed_air_water_impedance_gate_ceff",
+      "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+      "train_metrics": {
+        "r2": 0.09835954116848566,
+        "mae": 5.194875699167351,
+        "rmse": 6.494729127373024
+      },
+      "test_metrics": {
+        "r2": 0.08690240639160507,
+        "mae": 5.446882074339065,
+        "rmse": 6.79861741650327
+      },
+      "kept": false,
+      "comparison_note": "Rejected: test RMSE 6.798617 not better than 6.763969",
+      "rationale": "Database-backed acoustic motif: use the blended Air speed-of-sound and Water acoustic-impedance frame with Air acoustic-impedance K^9 gating, a combined FSOT inverse-suction recovery correction, and C_EFF over PI as the oscillation weighting"
+    },
+    {
+      "stage": "t2_geometry_baseline",
+      "causal_story": "geometry_acoustic_t2",
+      "formula": "ln(1 + abs(0)) * 25",
+      "train_metrics": {
+        "r2": -333.35530302263834,
+        "mae": 124.88147836938415,
+        "rmse": 125.06864797867546
+      },
+      "test_metrics": {
+        "r2": -306.96520409094813,
+        "mae": 124.65410299003318,
+        "rmse": 124.85698062077884
+      },
+      "kept": false,
+      "comparison_note": "Rejected: test RMSE 124.856981 not better than 6.763969",
+      "rationale": "Thesis T2: geometry-dominant baseline (chord × c_eff × D_eff) - empirically best for aeroacoustics"
+    },
+    {
+      "stage": "t1_observer_response",
+      "causal_story": "observer_fluid_t1",
+      "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) * a_in * cos(0)^2 + (ln(abs(frequency_hz) + 1)) * a_bleed * sin(0)^2) * exp(c_factor * p_var) * cos(0.9 + p_var))) * 25",
+      "train_metrics": {
+        "r2": -258.52435484649754,
+        "mae": 109.92458545125233,
+        "rmse": 110.18777340653155
+      },
+      "test_metrics": {
+        "r2": -240.49935363488504,
+        "mae": 110.29264982781504,
+        "rmse": 110.56559050692292
+      },
+      "kept": false,
+      "comparison_note": "Rejected: test RMSE 110.565591 not better than 6.763969",
+      "rationale": "Thesis T1: observer-modulated fluid response with trig routing on phase"
+    },
+    {
+      "stage": "t3_phase_correction",
+      "causal_story": "acoustic_phase_t3",
+      "formula": "ln(1 + abs(0)) * 25",
+      "train_metrics": {
+        "r2": -333.35530302263834,
+        "mae": 124.88147836938415,
+        "rmse": 125.06864797867546
+      },
+      "test_metrics": {
+        "r2": -306.96520409094813,
+        "mae": 124.65410299003318,
+        "rmse": 124.85698062077884
+      },
+      "kept": false,
+      "comparison_note": "Rejected: test RMSE 124.856981 not better than 6.763969",
+      "rationale": "Thesis T3: valve-acoustic-phase correction with b_in inhibition damping"
+    },
+    {
+      "stage": "s_thesis_composite",
+      "causal_story": "scalar_engine_s",
+      "formula": "ln(1 + abs(0.7 * ln(1 + abs(0)) + 0.2 * ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) * a_in * cos(0)^2 + (ln(abs(frequency_hz) + 1)) * a_bleed * sin(0)^2) * exp(c_factor * p_var) * cos(0.9 + p_var))) + 0.1 * ln(1 + abs(0)))) * 25",
+      "train_metrics": {
+        "r2": -318.4884754218358,
+        "mae": 122.0833151413593,
+        "rmse": 122.25649638441082
+      },
+      "test_metrics": {
+        "r2": -293.7583593896677,
+        "mae": 121.96066237871769,
+        "rmse": 122.1504492772418
+      },
+      "kept": false,
+      "comparison_note": "Rejected: test RMSE 122.150449 not better than 6.763969",
+      "rationale": "Living thesis embodiment: weighted composite S = 0.7*T2 + 0.2*T1 + 0.1*T3 from domain calibration"
+    }
+  ],
+  "train_row_count": 1202,
+  "test_row_count": 301,
+  "conventional_baselines": [
+    {
+      "name": "all-observable baseline quadratic",
+      "family": "quadratic",
+      "feature_columns": [
+        "angle_of_attack_deg",
+        "chord_length_m",
+        "free_stream_velocity_ms",
+        "frequency_hz",
+        "suction_side_displacement_thickness_m"
+      ],
+      "train_metrics": {
+        "r2": 0.6411091273525811,
+        "mae": 3.1826305588355353,
+        "rmse": 4.097562191949634
+      },
+      "test_metrics": {
+        "r2": 0.6538016187740319,
+        "mae": 3.2201640372880234,
+        "rmse": 4.186243823711089
+      },
+      "rationale": "Exact same-split quadratic regression baseline over angle_of_attack_deg, chord_length_m, free_stream_velocity_ms, frequency_hz, suction_side_displacement_thickness_m."
+    },
+    {
+      "name": "all-observable baseline linear",
+      "family": "linear",
+      "feature_columns": [
+        "angle_of_attack_deg",
+        "chord_length_m",
+        "free_stream_velocity_ms",
+        "frequency_hz",
+        "suction_side_displacement_thickness_m"
+      ],
+      "train_metrics": {
+        "r2": 0.5061789600776148,
+        "mae": 3.745973483187251,
+        "rmse": 4.806502162598527
+      },
+      "test_metrics": {
+        "r2": 0.5473338891537183,
+        "mae": 3.7298632113030243,
+        "rmse": 4.786862958176737
+      },
+      "rationale": "Exact same-split linear regression baseline over angle_of_attack_deg, chord_length_m, free_stream_velocity_ms, frequency_hz, suction_side_displacement_thickness_m."
+    },
+    {
+      "name": "chosen-feature baseline quadratic",
+      "family": "quadratic",
+      "feature_columns": [
+        "frequency_hz",
+        "free_stream_velocity_ms",
+        "suction_side_displacement_thickness_m"
+      ],
+      "train_metrics": {
+        "r2": 0.4651530882413216,
+        "mae": 4.078981248588337,
+        "rmse": 5.002177442879289
+      },
+      "test_metrics": {
+        "r2": 0.42122824105595325,
+        "mae": 4.381083801276714,
+        "rmse": 5.412721340832612
+      },
+      "rationale": "Exact same-split quadratic regression baseline over frequency_hz, free_stream_velocity_ms, suction_side_displacement_thickness_m."
+    },
+    {
+      "name": "chosen-feature baseline linear",
+      "family": "linear",
+      "feature_columns": [
+        "frequency_hz",
+        "free_stream_velocity_ms",
+        "suction_side_displacement_thickness_m"
+      ],
+      "train_metrics": {
+        "r2": 0.3640197742850487,
+        "mae": 4.406532040235271,
+        "rmse": 5.4546407601632785
+      },
+      "test_metrics": {
+        "r2": 0.3439417026950503,
+        "mae": 4.643485482720555,
+        "rmse": 5.7627956491799734
+      },
+      "rationale": "Exact same-split linear regression baseline over frequency_hz, free_stream_velocity_ms, suction_side_displacement_thickness_m."
+    }
+  ],
+  "sandbox": {
+    "enabled": true,
+    "goal_rmse": 5.412721340832612,
+    "goal_mode": "best_conventional_chosen_features",
+    "goal_source": "best conventional baseline: chosen-feature baseline quadratic",
+    "goal_hit": false,
+    "formulas_tested": 2967,
+    "best_formula": {
+      "rank": 0,
+      "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+      "train_metrics": {
+        "r2": 0.25919558686166344,
+        "mae": 4.77023587835941,
+        "rmse": 5.887028355404005
+      },
+      "test_metrics": {
+        "r2": 0.2289671841951959,
+        "mae": 4.987786711721413,
+        "rmse": 6.247387360026391
+      },
+      "provenance": "sandbox-combinatorial-search",
+      "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, n2 acoustic frame, and air impedance gate"
+    },
+    "oscillation_weight_search": [
+      {
+        "rank": 1,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -0.08528607618497785,
+          "mae": 5.837031288186972,
+          "rmse": 7.125518349494558
+        },
+        "test_metrics": {
+          "r2": -0.09330661064778156,
+          "mae": 6.118124620582939,
+          "rmse": 7.439315722011383
+        },
+        "provenance": "sandbox-oscillation-weight-search",
+        "rationale": "sandbox exact oscillation-weight search with c_eff over pi over phi"
+      },
+      {
+        "rank": 2,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -1.7570299294720884,
+          "mae": 9.336521004388421,
+          "rmse": 11.357038225903747
+        },
+        "test_metrics": {
+          "r2": -1.6856921690627367,
+          "mae": 9.544527852833447,
+          "rmse": 11.659773655738528
+        },
+        "provenance": "sandbox-oscillation-weight-search",
+        "rationale": "sandbox exact oscillation-weight search with c_eff over phi"
+      },
+      {
+        "rank": 3,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new + (c_eff / pi)) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -1.8757591573869332,
+          "mae": 9.59312308754845,
+          "rmse": 11.599001454750718
+        },
+        "test_metrics": {
+          "r2": -1.798900178200546,
+          "mae": 9.807727153278138,
+          "rmse": 11.902980120413678
+        },
+        "provenance": "sandbox-oscillation-weight-search",
+        "rationale": "sandbox exact oscillation-weight search with p_new plus c_eff over pi"
+      },
+      {
+        "rank": 4,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new + (c_eff / phi)) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -4.682862454014566,
+          "mae": 14.736289593594005,
+          "rmse": 16.305267177420845
+        },
+        "test_metrics": {
+          "r2": -4.469252776714617,
+          "mae": 14.972390204811878,
+          "rmse": 16.638953243899557
+        },
+        "provenance": "sandbox-oscillation-weight-search",
+        "rationale": "sandbox exact oscillation-weight search with p_new plus c_eff over phi"
+      }
+    ],
+    "transport_frame_gate_search": [
+      {
+        "rank": 1,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11162603334167476,
+          "mae": 5.167722163837167,
+          "rmse": 6.446771225911706
+        },
+        "test_metrics": {
+          "r2": 0.09941467973318496,
+          "mae": 5.42433369363624,
+          "rmse": 6.751875648896748
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with interpreted transport with gated convective correction, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 2,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.09928877544921288,
+          "mae": 5.197566654204654,
+          "rmse": 6.491381517664597
+        },
+        "test_metrics": {
+          "r2": 0.08852818005259455,
+          "mae": 5.457057143328799,
+          "rmse": 6.792562238189392
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with interpreted transport with gated convective correction, air acoustic frame, and softened air impedance gate"
+      },
+      {
+        "rank": 3,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.09889745235934289,
+          "mae": 5.198419174189201,
+          "rmse": 6.4927914876732045
+        },
+        "test_metrics": {
+          "r2": 0.0881620135751251,
+          "mae": 5.457815761499675,
+          "rmse": 6.793926492566924
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with interpreted transport with gated convective correction, air acoustic frame, and ungated transport frame"
+      },
+      {
+        "rank": 4,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.09552621065324163,
+          "mae": 5.205018386032003,
+          "rmse": 6.504925697551506
+        },
+        "test_metrics": {
+          "r2": 0.08508040856959576,
+          "mae": 5.462246294312068,
+          "rmse": 6.805397027506469
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with interpreted transport with gated convective correction, air-water impedance frame, and softened air impedance gate"
+      },
+      {
+        "rank": 5,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.09511677675703056,
+          "mae": 5.205920506652894,
+          "rmse": 6.5063978439890535
+        },
+        "test_metrics": {
+          "r2": 0.0846973421077507,
+          "mae": 5.463004915052783,
+          "rmse": 6.80682154971061
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with interpreted transport with gated convective correction, air-water impedance frame, and ungated transport frame"
+      },
+      {
+        "rank": 6,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.09492605572432922,
+          "mae": 5.20622455878355,
+          "rmse": 6.507083480270573
+        },
+        "test_metrics": {
+          "r2": 0.08453030056285515,
+          "mae": 5.463045029945442,
+          "rmse": 6.807442639415835
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with interpreted transport with gated convective correction, n2 acoustic frame, and softened air impedance gate"
+      },
+      {
+        "rank": 7,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.09451383412810788,
+          "mae": 5.207131950950148,
+          "rmse": 6.50856515754182
+        },
+        "test_metrics": {
+          "r2": 0.084144632776179,
+          "mae": 5.463803651080758,
+          "rmse": 6.808876403355872
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with interpreted transport with gated convective correction, n2 acoustic frame, and ungated transport frame"
+      },
+      {
+        "rank": 8,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.0031652699763384806,
+          "mae": 5.41412854578965,
+          "rmse": 6.828981362682649
+        },
+        "test_metrics": {
+          "r2": -0.00012818202523368072,
+          "mae": 5.558459938378749,
+          "rmse": 7.115244626133895
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with reduced-velocity transport with gated p_new convective correction, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 9,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -0.006837178704202085,
+          "mae": 5.439851810206968,
+          "rmse": 6.863157559284351
+        },
+        "test_metrics": {
+          "r2": -0.009264420532529627,
+          "mae": 5.5824316840396415,
+          "rmse": 7.147669862968376
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with reduced-velocity transport with gated p_new convective correction, air-water impedance frame, and air impedance gate"
+      },
+      {
+        "rank": 10,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -0.008397805377936995,
+          "mae": 5.443814584385017,
+          "rmse": 6.868474545819268
+        },
+        "test_metrics": {
+          "r2": -0.010690123664399032,
+          "mae": 5.586121513461747,
+          "rmse": 7.152716537973145
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with reduced-velocity transport with gated p_new convective correction, n2 acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 11,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -0.011177000508977741,
+          "mae": 5.4493743070531,
+          "rmse": 6.877932964194459
+        },
+        "test_metrics": {
+          "r2": -0.012953181161859062,
+          "mae": 5.595519481870574,
+          "rmse": 7.160719959285044
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with reduced-velocity transport with gated p_new convective correction, air acoustic frame, and softened air impedance gate"
+      },
+      {
+        "rank": 12,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -0.011978627876213732,
+          "mae": 5.4514086806669395,
+          "rmse": 6.880658721894049
+        },
+        "test_metrics": {
+          "r2": -0.013692575603776902,
+          "mae": 5.5974563891031845,
+          "rmse": 7.163332928376449
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with reduced-velocity transport with gated p_new convective correction, air acoustic frame, and ungated transport frame"
+      },
+      {
+        "rank": 13,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -0.02141335899654684,
+          "mae": 5.475491648597555,
+          "rmse": 6.91265868605826
+        },
+        "test_metrics": {
+          "r2": -0.022308330246499253,
+          "mae": 5.61953208988822,
+          "rmse": 7.193710448481913
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with reduced-velocity transport with gated p_new convective correction, air-water impedance frame, and softened air impedance gate"
+      },
+      {
+        "rank": 14,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -0.02223310082714569,
+          "mae": 5.477560301080231,
+          "rmse": 6.915432028971338
+        },
+        "test_metrics": {
+          "r2": -0.02306462801932807,
+          "mae": 5.621508950412486,
+          "rmse": 7.196370889159613
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with reduced-velocity transport with gated p_new convective correction, air-water impedance frame, and ungated transport frame"
+      },
+      {
+        "rank": 15,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -0.02300999014311289,
+          "mae": 5.4795496909902734,
+          "rmse": 6.918059367526736
+        },
+        "test_metrics": {
+          "r2": -0.023767729104970714,
+          "mae": 5.623298028874028,
+          "rmse": 7.198843317104146
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with reduced-velocity transport with gated p_new convective correction, n2 acoustic frame, and softened air impedance gate"
+      },
+      {
+        "rank": 16,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": -0.023832520234780885,
+          "mae": 5.481627197003709,
+          "rmse": 6.920839970221544
+        },
+        "test_metrics": {
+          "r2": -0.02452662871605349,
+          "mae": 5.625274890314957,
+          "rmse": 7.201511005863935
+        },
+        "provenance": "sandbox-transport-frame-gate-search",
+        "rationale": "sandbox discrete transport/frame/gate search with reduced-velocity transport with gated p_new convective correction, n2 acoustic frame, and ungated transport frame"
+      }
+    ],
+    "inverse_recovery_search": [
+      {
+        "rank": 1,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11575746231734152,
+          "mae": 5.149066639416148,
+          "rmse": 6.431763235586418
+        },
+        "test_metrics": {
+          "r2": 0.10364695271451241,
+          "mae": 5.395027101653942,
+          "rmse": 6.735991849711714
+        },
+        "provenance": "sandbox-inverse-recovery-search",
+        "rationale": "sandbox discrete inverse-recovery search with extended c_eff plus p_base plus p_new over phi recovery on interpreted transport, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 2,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11389388941246692,
+          "mae": 5.158169476944502,
+          "rmse": 6.438537254347748
+        },
+        "test_metrics": {
+          "r2": 0.10170258088973627,
+          "mae": 5.410014499317816,
+          "rmse": 6.743293759286319
+        },
+        "provenance": "sandbox-inverse-recovery-search",
+        "rationale": "sandbox discrete inverse-recovery search with c_eff over phi plus p_new recovery on interpreted transport, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 3,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.10811693158112246,
+          "mae": 5.167111142667051,
+          "rmse": 6.459491139690426
+        },
+        "test_metrics": {
+          "r2": 0.09538686240139693,
+          "mae": 5.413963595673194,
+          "rmse": 6.766957497095785
+        },
+        "provenance": "sandbox-inverse-recovery-search",
+        "rationale": "sandbox discrete inverse-recovery search with boundary-softened c_eff plus p_base recovery on interpreted transport, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 4,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.10313072483092,
+          "mae": 5.212505450956957,
+          "rmse": 6.4775223527716905
+        },
+        "test_metrics": {
+          "r2": 0.09308101533767299,
+          "mae": 5.473068382451349,
+          "rmse": 6.775576451296229
+        },
+        "provenance": "sandbox-inverse-recovery-search",
+        "rationale": "sandbox discrete inverse-recovery search with blended c_eff plus double-boundary recovery on interpreted transport, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 5,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.10373755005566099,
+          "mae": 5.199082790976252,
+          "rmse": 6.475330623621679
+        },
+        "test_metrics": {
+          "r2": 0.09169198262461442,
+          "mae": 5.460018287089141,
+          "rmse": 6.780763186057495
+        },
+        "provenance": "sandbox-inverse-recovery-search",
+        "rationale": "sandbox discrete inverse-recovery search with pure c_eff over phi recovery on interpreted transport, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 6,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.10011319115912143,
+          "mae": 5.2118691507788615,
+          "rmse": 6.488410075826004
+        },
+        "test_metrics": {
+          "r2": 0.08820067177459101,
+          "mae": 5.474249191947173,
+          "rmse": 6.7937824736988786
+        },
+        "provenance": "sandbox-inverse-recovery-search",
+        "rationale": "sandbox discrete inverse-recovery search with c_eff over pi plus p_base recovery on interpreted transport, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 7,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + ((p_new + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.09987795351932927,
+          "mae": 5.212693554150463,
+          "rmse": 6.489258081665359
+        },
+        "test_metrics": {
+          "r2": 0.08797481852528122,
+          "mae": 5.475123618469702,
+          "rmse": 6.7946238336304114
+        },
+        "provenance": "sandbox-inverse-recovery-search",
+        "rationale": "sandbox discrete inverse-recovery search with p_new plus p_base recovery on interpreted transport, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 8,
+        "formula": "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.08038781090897706,
+          "mae": 5.281447995695432,
+          "rmse": 6.559137070347329
+        },
+        "test_metrics": {
+          "r2": 0.06944612148810592,
+          "mae": 5.543040970080726,
+          "rmse": 6.863296563192104
+        },
+        "provenance": "sandbox-inverse-recovery-search",
+        "rationale": "sandbox discrete inverse-recovery search with baseline p_base recovery on interpreted transport, air acoustic frame, and air impedance gate"
+      }
+    ],
+    "combinatorial_search": [
+      {
+        "rank": 1,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25919558686166344,
+          "mae": 4.77023587835941,
+          "rmse": 5.887028355404005
+        },
+        "test_metrics": {
+          "r2": 0.2289671841951959,
+          "mae": 4.987786711721413,
+          "rmse": 6.247387360026391
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, n2 acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 2,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2589748674991771,
+          "mae": 4.77114755305741,
+          "rmse": 5.887905296976379
+        },
+        "test_metrics": {
+          "r2": 0.22869184075672333,
+          "mae": 4.9892700571147595,
+          "rmse": 6.248502762338897
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, air-water impedance frame, and air impedance gate"
+      },
+      {
+        "rank": 3,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25709374799907614,
+          "mae": 4.775974155594772,
+          "rmse": 5.8953738920185526
+        },
+        "test_metrics": {
+          "r2": 0.22809392661377303,
+          "mae": 4.993260929645129,
+          "rmse": 6.250924196861769
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, n2 acoustic frame, and ungated transport frame"
+      },
+      {
+        "rank": 4,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2570141728932809,
+          "mae": 4.776338066521337,
+          "rmse": 5.895689619903594
+        },
+        "test_metrics": {
+          "r2": 0.22798312480615102,
+          "mae": 4.993870417889095,
+          "rmse": 6.251372819350308
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, n2 acoustic frame, and softened air impedance gate"
+      },
+      {
+        "rank": 5,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * ((phi^8 * e^2) + (pi - a_in)) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2569117998193139,
+          "mae": 4.776793580251299,
+          "rmse": 5.896095777772578
+        },
+        "test_metrics": {
+          "r2": 0.22785485918693038,
+          "mae": 4.994744271958884,
+          "rmse": 6.251892110397697
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, air-water impedance frame, and ungated transport frame"
+      },
+      {
+        "rank": 6,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2568294378445385,
+          "mae": 4.7771854562919875,
+          "rmse": 5.896422522724453
+        },
+        "test_metrics": {
+          "r2": 0.22774145691103043,
+          "mae": 4.995353759844204,
+          "rmse": 6.252351190386111
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, air-water impedance frame, and softened air impedance gate"
+      },
+      {
+        "rank": 7,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2565879781347197,
+          "mae": 4.779134578075931,
+          "rmse": 5.897380333028638
+        },
+        "test_metrics": {
+          "r2": 0.22687281696739536,
+          "mae": 4.99757081692292,
+          "rmse": 6.255866538760874
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, n2 acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 8,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2574044765815645,
+          "mae": 4.777166465443049,
+          "rmse": 5.89414086109656
+        },
+        "test_metrics": {
+          "r2": 0.22677692101395253,
+          "mae": 4.998906916445973,
+          "rmse": 6.256254504478493
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 9,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25631670684355357,
+          "mae": 4.780106115290963,
+          "rmse": 5.898456212901467
+        },
+        "test_metrics": {
+          "r2": 0.22655075030675087,
+          "mae": 4.999282369219072,
+          "rmse": 6.2571694267612195
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, air-water impedance frame, and air impedance gate"
+      },
+      {
+        "rank": 10,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25475015824903413,
+          "mae": 4.784466898739919,
+          "rmse": 5.904665413394812
+        },
+        "test_metrics": {
+          "r2": 0.22625833405848716,
+          "mae": 5.002857994131436,
+          "rmse": 6.258352132093511
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, n2 acoustic frame, and ungated transport frame"
+      },
+      {
+        "rank": 11,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (phi^8 * e^2) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2555932926959894,
+          "mae": 4.7826248062984975,
+          "rmse": 5.901324362243208
+        },
+        "test_metrics": {
+          "r2": 0.22617561286443189,
+          "mae": 5.00438111123388,
+          "rmse": 6.258686665276775
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, air acoustic frame, and ungated transport frame"
+      },
+      {
+        "rank": 12,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25464357988073405,
+          "mae": 4.784919686000936,
+          "rmse": 5.9050876121475255
+        },
+        "test_metrics": {
+          "r2": 0.22612212758317607,
+          "mae": 5.003500272813714,
+          "rmse": 6.258902955844809
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, n2 acoustic frame, and softened air impedance gate"
+      },
+      {
+        "rank": 13,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25549282533162976,
+          "mae": 4.78305137778727,
+          "rmse": 5.901722579035096
+        },
+        "test_metrics": {
+          "r2": 0.22604531618723467,
+          "mae": 5.004990596783508,
+          "rmse": 6.259213562441448
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, air acoustic frame, and softened air impedance gate"
+      },
+      {
+        "rank": 14,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2545176576445468,
+          "mae": 4.785438431332494,
+          "rmse": 5.905586400655934
+        },
+        "test_metrics": {
+          "r2": 0.22597254290996305,
+          "mae": 5.00441740056242,
+          "rmse": 6.2595078256500125
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, air-water impedance frame, and ungated transport frame"
+      },
+      {
+        "rank": 15,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2544082924557358,
+          "mae": 4.7858912183588584,
+          "rmse": 5.906019571134318
+        },
+        "test_metrics": {
+          "r2": 0.2258337360129581,
+          "mae": 5.005059678865937,
+          "rmse": 6.260069061495163
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, air-water impedance frame, and softened air impedance gate"
+      },
+      {
+        "rank": 16,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25441789645098145,
+          "mae": 4.786672394129901,
+          "rmse": 5.905981533180055
+        },
+        "test_metrics": {
+          "r2": 0.2243322850050603,
+          "mae": 5.010732616646009,
+          "rmse": 6.26613664320017
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 17,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25287072781311726,
+          "mae": 4.791794990819693,
+          "rmse": 5.912106153061587
+        },
+        "test_metrics": {
+          "r2": 0.22398974777283165,
+          "mae": 5.015584736183529,
+          "rmse": 6.267520063027239
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, air acoustic frame, and ungated transport frame"
+      },
+      {
+        "rank": 18,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2527432575506112,
+          "mae": 4.792266000241391,
+          "rmse": 5.912610473806183
+        },
+        "test_metrics": {
+          "r2": 0.2238340467781491,
+          "mae": 5.01633865014957,
+          "rmse": 6.26814879838241
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, air acoustic frame, and softened air impedance gate"
+      },
+      {
+        "rank": 19,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2534303583099159,
+          "mae": 4.7900623176922545,
+          "rmse": 5.909891533164298
+        },
+        "test_metrics": {
+          "r2": 0.2237864391533917,
+          "mae": 5.0198995990751625,
+          "rmse": 6.268341029888382
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, c_eff over phi plus p_new recovery, n2 acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 20,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25311209437837123,
+          "mae": 4.791110043529329,
+          "rmse": 5.911151097439177
+        },
+        "test_metrics": {
+          "r2": 0.22342212491480062,
+          "mae": 5.021687212073905,
+          "rmse": 6.26981187381037
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, c_eff over phi plus p_new recovery, air-water impedance frame, and air impedance gate"
+      },
+      {
+        "rank": 21,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2517202000394425,
+          "mae": 4.795282868029021,
+          "rmse": 5.9166565206672725
+        },
+        "test_metrics": {
+          "r2": 0.22329387767823294,
+          "mae": 5.024751759452348,
+          "rmse": 6.270329563586013
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, c_eff over phi plus p_new recovery, n2 acoustic frame, and ungated transport frame"
+      },
+      {
+        "rank": 22,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25159362742098956,
+          "mae": 4.7957538768921495,
+          "rmse": 5.917156905043681
+        },
+        "test_metrics": {
+          "r2": 0.22313959996024657,
+          "mae": 5.025505672349492,
+          "rmse": 6.270952272790691
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, c_eff over phi plus p_new recovery, n2 acoustic frame, and softened air impedance gate"
+      },
+      {
+        "rank": 23,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25144070656222095,
+          "mae": 4.796298596802379,
+          "rmse": 5.9177613964879185
+        },
+        "test_metrics": {
+          "r2": 0.22296583872393028,
+          "mae": 5.026539369730734,
+          "rmse": 6.271653549040477
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, c_eff over phi plus p_new recovery, air-water impedance frame, and ungated transport frame"
+      },
+      {
+        "rank": 24,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2513113471566243,
+          "mae": 4.796778801646483,
+          "rmse": 5.918272702027615
+        },
+        "test_metrics": {
+          "r2": 0.22280896061495226,
+          "mae": 5.027293282187724,
+          "rmse": 6.27228661998059
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, c_eff over phi plus p_new recovery, air-water impedance frame, and softened air impedance gate"
+      }
+    ],
+    "beam_search": [
+      {
+        "rank": 1,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.19236673204933263,
+          "mae": 5.012324795693369,
+          "rmse": 6.146833467920592
+        },
+        "test_metrics": {
+          "r2": 0.1667569176259852,
+          "mae": 5.282545215006041,
+          "rmse": 6.494532011617215
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam seed from transport atom using reduced-velocity transport with gated p_new convective correction plus weighted oscillation atom using c_eff over pi over phi wrapped by air-water impedance frame and air impedance gate"
+      },
+      {
+        "rank": 2,
+        "formula": "ln(1 + abs((((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)))) - (p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.16841330277422295,
+          "mae": 5.096384780585501,
+          "rmse": 6.237321266438196
+        },
+        "test_metrics": {
+          "r2": 0.14479517681931708,
+          "mae": 5.365089799111122,
+          "rmse": 6.579563370464904
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam subtractive expansion of beam seed from transport atom using reduced-velocity transport with gated p_new convective correction plus weighted oscillation atom using c_eff over pi over phi with inverse-recovery atom using baseline p_base recovery wrapped by air-water impedance frame and air impedance gate"
+      },
+      {
+        "rank": 3,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (1 + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) / phi)) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.13370255280336119,
+          "mae": 5.0938877359468036,
+          "rmse": 6.366164617672493
+        },
+        "test_metrics": {
+          "r2": 0.12487681727438482,
+          "mae": 5.310849854922299,
+          "rmse": 6.655743823054399
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam gated multiplicative expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using pure c_eff over phi recovery with inverse-recovery atom using pure c_eff over phi recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 4,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + ((p_new + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (1 + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) / phi)) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.13301592088037462,
+          "mae": 5.099203511337434,
+          "rmse": 6.368687045765365
+        },
+        "test_metrics": {
+          "r2": 0.12407015008953703,
+          "mae": 5.323165174031959,
+          "rmse": 6.6588106675639915
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam gated multiplicative expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using p_new plus p_base recovery with inverse-recovery atom using pure c_eff over phi recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 5,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (1 + ((p_new + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) / phi)) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.13140712060777004,
+          "mae": 5.103389183145277,
+          "rmse": 6.374593265348939
+        },
+        "test_metrics": {
+          "r2": 0.12208210081642656,
+          "mae": 5.328459522450634,
+          "rmse": 6.666362950893477
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam gated multiplicative expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using pure c_eff over phi recovery with inverse-recovery atom using p_new plus p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 6,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + ((p_new + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (1 + ((p_new + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) / phi)) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.1303137092233958,
+          "mae": 5.110033956648342,
+          "rmse": 6.378604270310428
+        },
+        "test_metrics": {
+          "r2": 0.12090322546183274,
+          "mae": 5.342100571610056,
+          "rmse": 6.670837272778107
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam gated multiplicative expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using p_new plus p_base recovery with inverse-recovery atom using p_new plus p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 7,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (1 + (p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) / phi)) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.1239095970660189,
+          "mae": 5.122564910533483,
+          "rmse": 6.402046270412268
+        },
+        "test_metrics": {
+          "r2": 0.11309154105186758,
+          "mae": 5.3544217719930005,
+          "rmse": 6.700410366810649
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam gated multiplicative expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using c_eff over phi plus p_new recovery with inverse-recovery atom using baseline p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 8,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (1 + (p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) / phi)) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.12289372662353037,
+          "mae": 5.129074608230375,
+          "rmse": 6.405756940750443
+        },
+        "test_metrics": {
+          "r2": 0.11195275074760669,
+          "mae": 5.3680743359561705,
+          "rmse": 6.704710649725178
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam gated multiplicative expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using current c_eff over phi plus p_base recovery with inverse-recovery atom using baseline p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 9,
+        "formula": "ln(1 + abs((((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + (((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)))) - ((p_new + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.12726743822222042,
+          "mae": 5.234418615733102,
+          "rmse": 6.389765749936823
+        },
+        "test_metrics": {
+          "r2": 0.10724573278060678,
+          "mae": 5.493905365179077,
+          "rmse": 6.722456037025934
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam subtractive expansion of beam seed from transport atom using reduced-velocity transport with gated p_new convective correction plus weighted oscillation atom using c_eff over pi over phi with inverse-recovery atom using p_new plus p_base recovery wrapped by air-water impedance frame and air impedance gate"
+      },
+      {
+        "rank": 10,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (1 + (p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) / phi)) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11809136804649256,
+          "mae": 5.151977628021273,
+          "rmse": 6.423269498425007
+        },
+        "test_metrics": {
+          "r2": 0.10706433050055963,
+          "mae": 5.403628941985377,
+          "rmse": 6.723138983586103
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam gated multiplicative expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using pure c_eff over phi recovery with inverse-recovery atom using baseline p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 11,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) + ((p_new + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.1172747758756939,
+          "mae": 5.131647100114814,
+          "rmse": 6.426242583036838
+        },
+        "test_metrics": {
+          "r2": 0.10586225469147292,
+          "mae": 5.356358489838593,
+          "rmse": 6.727662828316227
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam additive expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using current c_eff over phi plus p_base recovery with inverse-recovery atom using p_new plus p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 12,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) + (((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11724705636225652,
+          "mae": 5.131532604662688,
+          "rmse": 6.426343481319989
+        },
+        "test_metrics": {
+          "r2": 0.1058486831312696,
+          "mae": 5.355991305817383,
+          "rmse": 6.727713885625415
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam additive expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using current c_eff over phi plus p_base recovery with inverse-recovery atom using c_eff over pi plus p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 13,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) + (p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11754212143347409,
+          "mae": 5.135631395586773,
+          "rmse": 6.42526937106632
+        },
+        "test_metrics": {
+          "r2": 0.10581204148689649,
+          "mae": 5.367780101783801,
+          "rmse": 6.7278517325253455
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam additive expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using extended c_eff plus p_base plus p_new over phi recovery with inverse-recovery atom using baseline p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 14,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11750638937735391,
+          "mae": 5.13641335492673,
+          "rmse": 6.425399454193959
+        },
+        "test_metrics": {
+          "r2": 0.10573256056353719,
+          "mae": 5.369995770200577,
+          "rmse": 6.728150732294192
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam additive expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using pure c_eff over phi recovery with inverse-recovery atom using pure c_eff over phi recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 15,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (1 + (p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) / phi)) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11674254377859794,
+          "mae": 5.136191753837291,
+          "rmse": 6.428179616824283
+        },
+        "test_metrics": {
+          "r2": 0.10559381894122333,
+          "mae": 5.362274573475653,
+          "rmse": 6.728672633407498
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam gated multiplicative expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using boundary-softened c_eff plus p_base recovery with inverse-recovery atom using baseline p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 16,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11660820632889624,
+          "mae": 5.130118129990253,
+          "rmse": 6.428668439430604
+        },
+        "test_metrics": {
+          "r2": 0.10545925575343484,
+          "mae": 5.350278798430393,
+          "rmse": 6.729178777934102
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam additive expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using current c_eff over phi plus p_base recovery with inverse-recovery atom using pure c_eff over phi recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 17,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) + ((p_new + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11651143503013317,
+          "mae": 5.1300190618862125,
+          "rmse": 6.429020544556716
+        },
+        "test_metrics": {
+          "r2": 0.10539362270140118,
+          "mae": 5.349624254233022,
+          "rmse": 6.729425635577454
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam additive expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using c_eff over phi plus p_new recovery with inverse-recovery atom using p_new plus p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 18,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) + (((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11645913595772261,
+          "mae": 5.129981176255133,
+          "rmse": 6.4292108281939715
+        },
+        "test_metrics": {
+          "r2": 0.10535773237010093,
+          "mae": 5.349283444923994,
+          "rmse": 6.729560621700584
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam additive expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using c_eff over phi plus p_new recovery with inverse-recovery atom using c_eff over pi plus p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 19,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) + (((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11713273914693456,
+          "mae": 5.140162480523351,
+          "rmse": 6.426759576170848
+        },
+        "test_metrics": {
+          "r2": 0.10520205553914763,
+          "mae": 5.379079126605011,
+          "rmse": 6.730146102142494
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam additive expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using pure c_eff over phi recovery with inverse-recovery atom using c_eff over pi plus p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 20,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) + (p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11709804561866965,
+          "mae": 5.140424704158608,
+          "rmse": 6.426885849272414
+        },
+        "test_metrics": {
+          "r2": 0.10515890774314018,
+          "mae": 5.379636149878168,
+          "rmse": 6.730308366412479
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam additive expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using c_eff over phi plus p_new recovery with inverse-recovery atom using baseline p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 21,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) + ((p_new + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11709804561866965,
+          "mae": 5.140424704158606,
+          "rmse": 6.426885849272414
+        },
+        "test_metrics": {
+          "r2": 0.10515890774313996,
+          "mae": 5.37963614987817,
+          "rmse": 6.730308366412481
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam additive expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using pure c_eff over phi recovery with inverse-recovery atom using p_new plus p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 22,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / phi) + p_new) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) + ((c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11542143655122361,
+          "mae": 5.1299460653541535,
+          "rmse": 6.432985203988582
+        },
+        "test_metrics": {
+          "r2": 0.10460621653237567,
+          "mae": 5.344852864526975,
+          "rmse": 6.7323865052664855
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam additive expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using c_eff over phi plus p_new recovery with inverse-recovery atom using pure c_eff over phi recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 23,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + (((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (1 + (p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) / phi)) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.1155748787844445,
+          "mae": 5.161628488182607,
+          "rmse": 6.432427235218701
+        },
+        "test_metrics": {
+          "r2": 0.10459109346234075,
+          "mae": 5.416481487702048,
+          "rmse": 6.732443359538091
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam gated multiplicative expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using c_eff over pi plus p_base recovery with inverse-recovery atom using baseline p_base recovery wrapped by air acoustic frame and air impedance gate"
+      },
+      {
+        "rank": 24,
+        "formula": "ln(1 + abs(((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + ((p_new) * (ln(abs(frequency_hz) + 1))) + ((p_new + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (1 + (p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) / phi)) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.11540741366523755,
+          "mae": 5.162271320006849,
+          "rmse": 6.433036193614763
+        },
+        "test_metrics": {
+          "r2": 0.10442753025521512,
+          "mae": 5.4172692516213505,
+          "rmse": 6.733058234896399
+        },
+        "provenance": "sandbox-beam-search",
+        "rationale": "role-constrained beam search using beam gated multiplicative expansion of beam seed from transport atom using interpreted transport with gated convective correction, weighted oscillation atom using p_new, and inverse-recovery atom using p_new plus p_base recovery with inverse-recovery atom using baseline p_base recovery wrapped by air acoustic frame and air impedance gate"
+      }
+    ],
+    "top_results": [
+      {
+        "rank": 1,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25919558686166344,
+          "mae": 4.77023587835941,
+          "rmse": 5.887028355404005
+        },
+        "test_metrics": {
+          "r2": 0.2289671841951959,
+          "mae": 4.987786711721413,
+          "rmse": 6.247387360026391
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, n2 acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 2,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2589748674991771,
+          "mae": 4.77114755305741,
+          "rmse": 5.887905296976379
+        },
+        "test_metrics": {
+          "r2": 0.22869184075672333,
+          "mae": 4.9892700571147595,
+          "rmse": 6.248502762338897
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, air-water impedance frame, and air impedance gate"
+      },
+      {
+        "rank": 3,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25709374799907614,
+          "mae": 4.775974155594772,
+          "rmse": 5.8953738920185526
+        },
+        "test_metrics": {
+          "r2": 0.22809392661377303,
+          "mae": 4.993260929645129,
+          "rmse": 6.250924196861769
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, n2 acoustic frame, and ungated transport frame"
+      },
+      {
+        "rank": 4,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2570141728932809,
+          "mae": 4.776338066521337,
+          "rmse": 5.895689619903594
+        },
+        "test_metrics": {
+          "r2": 0.22798312480615102,
+          "mae": 4.993870417889095,
+          "rmse": 6.251372819350308
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, n2 acoustic frame, and softened air impedance gate"
+      },
+      {
+        "rank": 5,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * ((phi^8 * e^2) + (pi - a_in)) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2569117998193139,
+          "mae": 4.776793580251299,
+          "rmse": 5.896095777772578
+        },
+        "test_metrics": {
+          "r2": 0.22785485918693038,
+          "mae": 4.994744271958884,
+          "rmse": 6.251892110397697
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, air-water impedance frame, and ungated transport frame"
+      },
+      {
+        "rank": 6,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2568294378445385,
+          "mae": 4.7771854562919875,
+          "rmse": 5.896422522724453
+        },
+        "test_metrics": {
+          "r2": 0.22774145691103043,
+          "mae": 4.995353759844204,
+          "rmse": 6.252351190386111
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, air-water impedance frame, and softened air impedance gate"
+      },
+      {
+        "rank": 7,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2565879781347197,
+          "mae": 4.779134578075931,
+          "rmse": 5.897380333028638
+        },
+        "test_metrics": {
+          "r2": 0.22687281696739536,
+          "mae": 4.99757081692292,
+          "rmse": 6.255866538760874
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, n2 acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 8,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (phi^8 * e^2) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2574044765815645,
+          "mae": 4.777166465443049,
+          "rmse": 5.89414086109656
+        },
+        "test_metrics": {
+          "r2": 0.22677692101395253,
+          "mae": 4.998906916445973,
+          "rmse": 6.256254504478493
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, air acoustic frame, and air impedance gate"
+      },
+      {
+        "rank": 9,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25631670684355357,
+          "mae": 4.780106115290963,
+          "rmse": 5.898456212901467
+        },
+        "test_metrics": {
+          "r2": 0.22655075030675087,
+          "mae": 4.999282369219072,
+          "rmse": 6.2571694267612195
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, air-water impedance frame, and air impedance gate"
+      },
+      {
+        "rank": 10,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25475015824903413,
+          "mae": 4.784466898739919,
+          "rmse": 5.904665413394812
+        },
+        "test_metrics": {
+          "r2": 0.22625833405848716,
+          "mae": 5.002857994131436,
+          "rmse": 6.258352132093511
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, n2 acoustic frame, and ungated transport frame"
+      },
+      {
+        "rank": 11,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (phi^8 * e^2) / (1))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.2555932926959894,
+          "mae": 4.7826248062984975,
+          "rmse": 5.901324362243208
+        },
+        "test_metrics": {
+          "r2": 0.22617561286443189,
+          "mae": 5.00438111123388,
+          "rmse": 6.258686665276775
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, boundary-softened c_eff plus p_base recovery, air acoustic frame, and ungated transport frame"
+      },
+      {
+        "rank": 12,
+        "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base + p_new / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)",
+        "train_metrics": {
+          "r2": 0.25464357988073405,
+          "mae": 4.784919686000936,
+          "rmse": 5.9050876121475255
+        },
+        "test_metrics": {
+          "r2": 0.22612212758317607,
+          "mae": 5.003500272813714,
+          "rmse": 6.258902955844809
+        },
+        "provenance": "sandbox-combinatorial-search",
+        "rationale": "sandbox combinatorial scaffold search with reduced-velocity transport with gated p_new convective correction, c_eff over pi over phi, extended c_eff plus p_base plus p_new over phi recovery, n2 acoustic frame, and softened air impedance gate"
+      }
+    ]
+  },
+  "candidates": []
+}

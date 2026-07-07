@@ -189,6 +189,9 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.MathGeneratorRulesEvalPriors",
                 "FSOT.Formal.TrinaryOSPortablePriors",
                 "FSOT.Formal.MaterialsSpeciesBridgePriors",
+                "FSOT.Formal.IGEMSyntheticBiologyPriors",
+                "FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors",
+                "FSOT.Formal.TrinaryOSISARebuildPriors",
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
@@ -784,6 +787,9 @@ def main() -> int:
                 "build_math_generator_rules_eval_benchmark.py",
                 "build_trinary_os_portable_benchmark.py",
                 "build_materials_species_bridge_benchmark.py",
+                "build_igem_synthetic_biology_benchmark.py",
+                "build_math_generator_benchmark_formula_eval_benchmark.py",
+                "build_trinary_os_isa_rebuild_benchmark.py",
                 "ingest_climate_ncei_chunked.py",
                 "build_climate_observed_benchmark.py",
             ):
@@ -878,6 +884,9 @@ def main() -> int:
             (None, "gen_math_generator_rules_eval_lean.py", "MathGeneratorRulesEvalPriors.lean generation failed", None),
             (None, "gen_trinary_os_portable_lean.py", "TrinaryOSPortablePriors.lean generation failed", None),
             (None, "gen_materials_species_bridge_lean.py", "MaterialsSpeciesBridgePriors.lean generation failed", None),
+            (None, "gen_igem_synthetic_biology_lean.py", "IGEMSyntheticBiologyPriors.lean generation failed", None),
+            (None, "gen_math_generator_benchmark_formula_eval_lean.py", "MathGeneratorBenchmarkFormulaEvalPriors.lean generation failed", None),
+            (None, "gen_trinary_os_isa_rebuild_lean.py", "TrinaryOSISARebuildPriors.lean generation failed", None),
         ]
             for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
                 if ingest_name:

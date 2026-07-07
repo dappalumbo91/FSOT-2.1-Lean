@@ -185,6 +185,41 @@ def trinary_os_root(*, require: bool = True) -> Path:
     return path
 
 
+def igem_parts_registry_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_IGEM_PARTS_REGISTRY",
+        VENDOR_ROOT / "igem" / "igem_parts_registry.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("iGEM parts registry not found.")
+    assert path is not None
+    return path
+
+
+def math_generator_benchmark_reports_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_MATH_GENERATOR_BENCHMARK_REPORTS",
+        VENDOR_ROOT / "math_generator" / "benchmark_reports",
+        _DESKTOP / "New folder" / "fsot-read-write",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Math generator benchmark reports not found.")
+    assert path is not None
+    return path
+
+
+def trinary_os_isa_registry_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_TRINARY_OS_ISA_REGISTRY",
+        VENDOR_ROOT / "trinary_os" / "isa" / "fsotb_opcode_registry.json",
+        _DESKTOP / "Fsot trinary" / "fsot_os" / "kernel" / "docs",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Trinary OS ISA registry not found.")
+    assert path is not None
+    return path
+
+
 def species_catalog_path(*, require: bool = True) -> Path:
     path = _resolve(
         "FSOT_SPECIES_CATALOG",

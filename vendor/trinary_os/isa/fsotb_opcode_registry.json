@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "source": "Fsot trinary/fsot_os/kernel/docs/FSOTB_ABI.md + TIER2 + TIER3",
+  "abi_tiers": {
+    "v1_0": {
+      "version_hex": "0x0100",
+      "opcode_range": [0, 19],
+      "programs": ["hello.fsotb"]
+    },
+    "v1_1": {
+      "version_hex": "0x0101",
+      "opcode_range": [20, 24],
+      "programs": ["call_ret.fsotb"]
+    },
+    "v1_2": {
+      "version_hex": "0x0102",
+      "opcode_range": [25, 26],
+      "programs": ["spawn_join.fsotb"]
+    }
+  },
+  "word_width_trits": 27,
+  "register_count": 25,
+  "num_task_slots": 8,
+  "cortical_layers": 6,
+  "instr_bytes": 6,
+  "magic": "FSOTB\\x01",
+  "opcodes": [
+    {"op": 0, "mnemonic": "HALT", "tier": "v1_0"},
+    {"op": 1, "mnemonic": "IMM", "tier": "v1_0"},
+    {"op": 2, "mnemonic": "MOVT", "tier": "v1_0"},
+    {"op": 3, "mnemonic": "LOADT", "tier": "v1_0"},
+    {"op": 4, "mnemonic": "STORET", "tier": "v1_0"},
+    {"op": 5, "mnemonic": "ADDT", "tier": "v1_0"},
+    {"op": 6, "mnemonic": "SUBT", "tier": "v1_0"},
+    {"op": 7, "mnemonic": "MULT", "tier": "v1_0"},
+    {"op": 8, "mnemonic": "NEGT", "tier": "v1_0"},
+    {"op": 9, "mnemonic": "MIN3", "tier": "v1_0"},
+    {"op": 10, "mnemonic": "MAX3", "tier": "v1_0"},
+    {"op": 11, "mnemonic": "COLLAPSE", "tier": "v1_0"},
+    {"op": 12, "mnemonic": "EVAL_PANEL", "tier": "v1_0"},
+    {"op": 13, "mnemonic": "CONSENSUS", "tier": "v1_0"},
+    {"op": 14, "mnemonic": "PHASE_ROT", "tier": "v1_0"},
+    {"op": 15, "mnemonic": "BRANCHT", "tier": "v1_0"},
+    {"op": 16, "mnemonic": "EMIT", "tier": "v1_0"},
+    {"op": 17, "mnemonic": "LOAD_RULE", "tier": "v1_0"},
+    {"op": 18, "mnemonic": "APPLY_OVR", "tier": "v1_0"},
+    {"op": 19, "mnemonic": "MEASURE", "tier": "v1_0"},
+    {"op": 20, "mnemonic": "CALL", "tier": "v1_1"},
+    {"op": 21, "mnemonic": "RET", "tier": "v1_1"},
+    {"op": 22, "mnemonic": "PUSH_T", "tier": "v1_1"},
+    {"op": 23, "mnemonic": "POP_T", "tier": "v1_1"},
+    {"op": 24, "mnemonic": "SYSCALL", "tier": "v1_1"},
+    {"op": 25, "mnemonic": "SPAWN", "tier": "v1_2"},
+    {"op": 26, "mnemonic": "JOIN", "tier": "v1_2"}
+  ],
+  "oracle_programs": {
+    "hello": {"file_size": 264, "n_instructions": 2, "abi_tier": "v1_0"},
+    "call_ret": {"file_size": 312, "n_instructions": 10, "abi_tier": "v1_1"},
+    "spawn_join": {"file_size": 440, "n_instructions": 31, "abi_tier": "v1_2"}
+  }
+}

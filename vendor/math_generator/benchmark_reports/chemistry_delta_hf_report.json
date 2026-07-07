@@ -1,0 +1,1028 @@
+{
+  "request": {
+    "input_path": "..\\database\\FSOT_Mathematical_Database_Unified.md",
+    "target_column": "target_value_numeric",
+    "feature_columns": [
+      "computed_value",
+      "symbol_class_code",
+      "symbol_complexity_score",
+      "formula_operator_count",
+      "formula_identifier_count"
+    ],
+    "row_filters": [
+      {
+        "column": "type",
+        "contains": "§4a ΔH°f",
+        "equals": null,
+        "min_numeric": null,
+        "max_numeric": null
+      }
+    ],
+    "domain": "Physical Chemistry",
+    "context_terms": [
+      "chemistry",
+      "thermodynamics",
+      "enthalpy of formation",
+      "molecular chemistry"
+    ],
+    "max_candidates": 12,
+    "train_fraction": 0.8,
+    "split_seed": 17,
+    "shuffle_rows": true,
+    "sandbox": {
+      "enabled": true,
+      "goal_rmse": null,
+      "goal_mode": "best_conventional_chosen_features",
+      "max_formulas": 64,
+      "combinatorial_budget": 192,
+      "beam_width": 8,
+      "beam_depth": 1
+    }
+  },
+  "dataset_summary": {
+    "path": "..\\database\\FSOT_Mathematical_Database_Unified.md",
+    "row_count": 11,
+    "columns": [
+      {
+        "name": "computed_value",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": -304.93352655604946,
+        "min": -1267.4089338833703,
+        "max": 32.62431066904971
+      },
+      {
+        "name": "error",
+        "numeric": false,
+        "non_null_count": 11,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      {
+        "name": "error_percent_numeric",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 0.6758056363636362,
+        "min": 0.006006,
+        "max": 2.242546
+      },
+      {
+        "name": "formula_description",
+        "numeric": false,
+        "non_null_count": 11,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      {
+        "name": "formula_identifier_count",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 0.9090909090909091,
+        "min": 0.0,
+        "max": 2.0
+      },
+      {
+        "name": "formula_operator_count",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 1.9090909090909092,
+        "min": 1.0,
+        "max": 2.0
+      },
+      {
+        "name": "index",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 160.0,
+        "min": 155.0,
+        "max": 165.0
+      },
+      {
+        "name": "section_family_code",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      {
+        "name": "section_numeric",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 4.1000000000000005,
+        "min": 4.1,
+        "max": 4.1
+      },
+      {
+        "name": "smiles_derivation_flag",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      {
+        "name": "symbol",
+        "numeric": false,
+        "non_null_count": 11,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      {
+        "name": "symbol_charge_hint",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      {
+        "name": "symbol_class_code",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 11.0,
+        "min": 11.0,
+        "max": 11.0
+      },
+      {
+        "name": "symbol_complexity_score",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 4.2727272727272725,
+        "min": 4.0,
+        "max": 6.0
+      },
+      {
+        "name": "symbol_length",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 6.7272727272727275,
+        "min": 6.0,
+        "max": 10.0
+      },
+      {
+        "name": "symbol_token_count",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 3.272727272727273,
+        "min": 3.0,
+        "max": 5.0
+      },
+      {
+        "name": "target_unit",
+        "numeric": false,
+        "non_null_count": 11,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      {
+        "name": "target_value_numeric",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": -305.43727272727267,
+        "min": -1273.3,
+        "max": 33.18
+      },
+      {
+        "name": "type",
+        "numeric": false,
+        "non_null_count": 11,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      {
+        "name": "unit_family_code",
+        "numeric": true,
+        "non_null_count": 11,
+        "mean": 1.0,
+        "min": 1.0,
+        "max": 1.0
+      }
+    ]
+  },
+  "chosen_features": [
+    "computed_value",
+    "symbol_class_code",
+    "symbol_complexity_score",
+    "formula_operator_count",
+    "formula_identifier_count"
+  ],
+  "reasoning_path": {
+    "domain": "Physical Chemistry",
+    "basis_symbols": [
+      "c_eff",
+      "a_in",
+      "a_bleed",
+      "p_new",
+      "theta_s"
+    ],
+    "domain_parameters": {
+      "source_symbol": "DOMAIN_PHYSICAL_CHEMISTRY",
+      "d_eff": 8.0,
+      "c": 0.8652559794322651
+    },
+    "target_semantics": {
+      "target": "target_value_numeric",
+      "role": "generic_numeric_response",
+      "preferred_transforms": [
+        "weighted additive accumulation",
+        "domain-scaled interaction blend"
+      ]
+    },
+    "thesis_cues": [
+      {
+        "label": "single_engine_architecture",
+        "excerpt": "This matters because the theory is not built from disconnected formulas. It is built from a single scalar architecture whose terms each play a different physical role. \\(T_1\\) is the main observer-modulated fluid response, \\(T_2\\) is the linear baseline modulation, and \\(T_3\\) is the valve-acoustic-phase correction. The final scalar \\(S\\) is the total interpreted response of the system after these three layers have been combined and globally scaled.",
+        "rationale": "Use multi-term cumulative structure instead of isolated one-shot formulas."
+      },
+      {
+        "label": "domain_landscape",
+        "excerpt": "The scalar engine does not produce only one universal number in the abstract. It produces domain-specific scalar states by evaluating the same engine under different canonical configurations. Each domain is assigned a structured position in the landscape through quantities such as \\(D_{\\text{eff}}\\), Hits, \\(\\Delta\\psi\\), the observer flag, and the interpretation constant \\(C\\).",
+        "rationale": "Treat the domain as a configured regime rather than a generic regression label."
+      },
+      {
+        "label": "observer_modulation",
+        "excerpt": "The observer effect is also more specific in FSOT 3.0: it is a conditional modulation applied to \\(T_1\\) when `Observed = True`, rather than a permanent standalone `quirk_mod`.",
+        "rationale": "Allow observer-sensitive modulation to reshape the primary response channel rather than bolt on a separate term."
+      },
+      {
+        "label": "perturbation_offset",
+        "excerpt": "Physical intuition: \\(\\Delta\\psi\\) controls how far the local system is displaced from its baseline coherence state. Small values correspond to gentler perturbation or lower observer offset; larger values correspond to stronger modulation and more aggressive phase displacement across the fluid medium.",
+        "rationale": "Interpret strongly phase-like features as perturbation offsets that alter cumulative response."
+      },
+      {
+        "label": "homeostasis_regulation",
+        "excerpt": "The next chapter turns the neural and observer layers into regulation rules. Instead of listing only static architecture constants, the mathematical key defines how equilibrium, replay, forgetting, novelty, attention scaling, inhibition, and cross-column coupling are supposed to behave once the system is active.",
+        "rationale": "Treat reasoning as an iterative control process that revisits assumptions instead of a one-pass guess."
+      },
+      {
+        "label": "novelty_threshold",
+        "excerpt": "Novelty_Threshold 1 / PHI 0.6180339887 PHI",
+        "rationale": "Check whether a candidate only works by overreacting to noise rather than stable structure."
+      },
+      {
+        "label": "attention_inhibition",
+        "excerpt": "Attention_Inhibition B_IN 0.7879407923 Bleed_In_Factor",
+        "rationale": "Use inhibition to damp spurious overlap terms when one feature starts dominating the explanation."
+      },
+      {
+        "label": "attention_error_gain",
+        "excerpt": "Attention_Error_Gain E / PI 0.8652559794",
+        "rationale": "Use attention gain to focus search pressure on informative mismatches, not every mismatch equally."
+      }
+    ],
+    "critical_thinking": {
+      "observations": [
+        "The target target_value_numeric is being treated as generic_numeric_response.",
+        "Observed target range is min=Some(-1273.3), max=Some(33.18), mean=Some(-305.43727272727267) across 11 rows.",
+        "Chosen features and roles: computed_value=>transport_rate, symbol_class_code=>boundary_layer, symbol_complexity_score=>geometry_scale, formula_operator_count=>phase_loading, formula_identifier_count=>phase_loading.",
+        "Domain metadata source DOMAIN_PHYSICAL_CHEMISTRY gives D_eff=Some(8.0) and C=Some(0.8652559794322651)."
+      ],
+      "assumption_checks": [
+        {
+          "title": "Single-Cause Bias",
+          "prompt": "Am I assuming one feature should explain the target by itself when the domain suggests multiple interacting channels?",
+          "purpose": "Prevent collapse into overly simple one-driver formulas."
+        },
+        {
+          "title": "Scale Mismatch",
+          "prompt": "Am I mixing raw feature magnitudes and target semantics without a transform that makes the comparison meaningful?",
+          "purpose": "Force transform selection before scoring formulas."
+        }
+      ],
+      "interaction_checks": [
+        {
+          "title": "Overlap Effects",
+          "prompt": "Could two or more roles be overlapping so that the observed response is cumulative rather than additive in a naive way?",
+          "purpose": "Force explicit interaction terms into the hypothesis set."
+        },
+        {
+          "title": "Boundary Moderation",
+          "prompt": "Is there a boundary-like or damping variable that should moderate every transport or geometry term?",
+          "purpose": "Prevent runaway formulas by routing them through inhibitory structure."
+        },
+        {
+          "title": "Attention Inhibition",
+          "prompt": "Which overlap term should be down-weighted because it is grabbing attention without improving held-out error?",
+          "purpose": "Use inhibition to suppress noisy interaction terms."
+        },
+        {
+          "title": "Novelty Threshold",
+          "prompt": "Is the candidate discovering stable structure, or is it just reacting to unusual rows?",
+          "purpose": "Favor formulas that generalize beyond rare cases."
+        }
+      ],
+      "falsification_checks": [
+        "Reject formulas whose held-out test RMSE does not beat the current best family.",
+        "Reject formulas whose test error improves only by magnifying one feature without role support from the reasoning path.",
+        "Reject formulas that ignore the chosen feature set computed_value, symbol_class_code, symbol_complexity_score, formula_operator_count, formula_identifier_count unless database anchors justify the omission."
+      ]
+    },
+    "anchors": [
+      {
+        "symbol": "A_BLEED",
+        "record_type": "Layer 2",
+        "formula": "Acoustic Bleed",
+        "value_text": "1.0469736305875510479944010893274985086379517243744",
+        "target_unit": "-",
+        "rationale": "Core FSOT anchor selected from the Physical Chemistry basis set."
+      },
+      {
+        "symbol": "A_IN",
+        "record_type": "Layer 2",
+        "formula": "Acoustic Inflow",
+        "value_text": "1.6668538450045730429519037608383471556533672886222",
+        "target_unit": "-",
+        "rationale": "Core FSOT anchor selected from the Physical Chemistry basis set."
+      },
+      {
+        "symbol": "C_EFF",
+        "record_type": "Layer 2",
+        "formula": "Effective Coupling Constant",
+        "value_text": "0.95770220262056129840924162512013500710030977376188",
+        "target_unit": "-",
+        "rationale": "Core FSOT anchor selected from the Physical Chemistry basis set."
+      },
+      {
+        "symbol": "DOMAIN_PHYSICAL_CHEMISTRY",
+        "record_type": "Domain Metadata",
+        "formula": "Domain context for Physical Chemistry",
+        "value_text": "D_eff: 8, C: 0.865255979432265087217774789646",
+        "target_unit": "-",
+        "rationale": "Domain metadata anchor for Physical Chemistry."
+      },
+      {
+        "symbol": "P_NEW",
+        "record_type": "Layer 2",
+        "formula": "New Pressure",
+        "value_text": "0.30030227667037148123499897419686964352723973036138",
+        "target_unit": "-",
+        "rationale": "Core FSOT anchor selected from the Physical Chemistry basis set."
+      },
+      {
+        "symbol": "THETA_S",
+        "record_type": "Layer 1",
+        "formula": "Phase Shift Seed",
+        "value_text": "0.29089654054517306390407755572440326397870770721769",
+        "target_unit": "-",
+        "rationale": "Core FSOT anchor selected from the Physical Chemistry basis set."
+      }
+    ],
+    "feature_roles": [
+      {
+        "feature": "computed_value",
+        "role": "transport_rate",
+        "suggested_transforms": [
+          "computed_value * a_in",
+          "computed_value * c_eff",
+          "computed_value * omega"
+        ]
+      },
+      {
+        "feature": "symbol_class_code",
+        "role": "boundary_layer",
+        "suggested_transforms": [
+          "symbol_class_code * 100 * b_in",
+          "symbol_class_code * 100 * suction",
+          "symbol_class_code / p_new"
+        ]
+      },
+      {
+        "feature": "symbol_complexity_score",
+        "role": "geometry_scale",
+        "suggested_transforms": [
+          "symbol_complexity_score * 10 * c_eff",
+          "symbol_complexity_score * 10 * a_in",
+          "sqrt(abs(symbol_complexity_score)) * a_bleed * 10"
+        ]
+      },
+      {
+        "feature": "formula_operator_count",
+        "role": "phase_loading",
+        "suggested_transforms": [
+          "abs(formula_operator_count) * theta_s",
+          "sin(formula_operator_count / deg) * a_bleed * 10",
+          "formula_operator_count / phi"
+        ]
+      },
+      {
+        "feature": "formula_identifier_count",
+        "role": "phase_loading",
+        "suggested_transforms": [
+          "abs(formula_identifier_count) * theta_s",
+          "sin(formula_identifier_count / deg) * a_bleed * 10",
+          "formula_identifier_count / phi"
+        ]
+      }
+    ],
+    "steps": [
+      {
+        "title": "Ground Domain",
+        "detail": "Treat the problem as Physical Chemistry and start from FSOT basis symbols c_eff, a_in, a_bleed, p_new, theta_s."
+      },
+      {
+        "title": "Read Domain Metadata",
+        "detail": "Inject domain metadata from DOMAIN_PHYSICAL_CHEMISTRY with D_eff=Some(8.0) and C=Some(0.8652559794322651) so cumulative multi-physics effects can be weighted by the workspace registry."
+      },
+      {
+        "title": "Assign Feature Roles",
+        "detail": "Map the 5 chosen numeric observables onto physical roles so each feature is transformed according to meaning rather than position."
+      },
+      {
+        "title": "Interpret Target",
+        "detail": "Treat target_value_numeric as generic_numeric_response and prefer transforms weighted additive accumulation, domain-scaled interaction blend before composing the final response equation."
+      },
+      {
+        "title": "Apply Thesis Logic",
+        "detail": "Use 8 cues lifted from the thesis export so the solver follows scalar-engine and domain-landscape logic from the manuscript itself."
+      },
+      {
+        "title": "Run Critical-Thinking Checks",
+        "detail": "Force 2 assumption checks, 4 interaction checks, and 3 falsification checks before trusting any formula family."
+      },
+      {
+        "title": "Pull Database Anchors",
+        "detail": "Use 6 database-backed anchors from the unified FSOT registry to constrain transforms and composite equations."
+      },
+      {
+        "title": "Generate Domain Transforms",
+        "detail": "Apply role-guided transforms such as inflow scaling, acoustic bleed scaling, phase weighting, boundary damping, and cumulative overlap terms before composing formulas."
+      },
+      {
+        "title": "Score Out Of Sample",
+        "detail": "Rank formulas by held-out test R² and RMSE so the reported candidate reflects generalization rather than a single-pass fit."
+      }
+    ]
+  },
+  "staged_hypotheses": [
+    {
+      "stage": "t2_geometry_baseline",
+      "causal_story": "geometry_acoustic_t2",
+      "formula": "(symbol_complexity_score) * 100 * c_eff * 8.000000000000000",
+      "train_metrics": {
+        "r2": -121.34261202123602,
+        "mae": 3688.7443024179456,
+        "rmse": 3755.801470924507
+      },
+      "test_metrics": {
+        "r2": -3277.8908769418263,
+        "mae": 3085.3570483857957,
+        "rmse": 3085.8276439431784
+      },
+      "kept": true,
+      "comparison_note": "Kept: improved test RMSE from inf to 3085.827644",
+      "rationale": "Thesis T2: geometry-dominant baseline (chord × c_eff × D_eff) - empirically best for aeroacoustics"
+    },
+    {
+      "stage": "t1_observer_response",
+      "causal_story": "observer_fluid_t1",
+      "formula": "((computed_value) * a_in) * exp(c_factor * p_var) * cos(0.9 + p_var)",
+      "train_metrics": {
+        "r2": -4.719388015783703,
+        "mae": 597.7138080785251,
+        "rmse": 812.0607763458883
+      },
+      "test_metrics": {
+        "r2": -1.9696036729567439,
+        "mae": 86.7124536604277,
+        "rmse": 92.8661474968763
+      },
+      "kept": true,
+      "comparison_note": "Kept: improved test RMSE from 3085.827644 to 92.866147",
+      "rationale": "Thesis T1: observer-modulated fluid response with trig routing on phase"
+    },
+    {
+      "stage": "t3_phase_correction",
+      "causal_story": "acoustic_phase_t3",
+      "formula": "(formula_operator_count) + ((symbol_class_code) * suction) * (1 / (1 + abs(symbol_class_code)))",
+      "train_metrics": {
+        "r2": -1.1927703540881969,
+        "mae": 370.8447811533091,
+        "rmse": 502.81743578645717
+      },
+      "test_metrics": {
+        "r2": -0.1905661401522598,
+        "mae": 54.39,
+        "rmse": 58.80103183439281
+      },
+      "kept": true,
+      "comparison_note": "Kept: improved test RMSE from 92.866147 to 58.801032",
+      "rationale": "Thesis T3: valve-acoustic-phase correction with b_in inhibition damping"
+    },
+    {
+      "stage": "s_thesis_composite",
+      "causal_story": "scalar_engine_s",
+      "formula": "0.7 * ((symbol_complexity_score) * 100 * c_eff * 8.000000000000000) + 0.2 * (((computed_value) * a_in) * exp(c_factor * p_var) * cos(0.9 + p_var)) + 0.1 * ((formula_operator_count) + ((symbol_class_code) * suction) * (1 / (1 + abs(symbol_class_code))))",
+      "train_metrics": {
+        "r2": -67.26589597890217,
+        "mae": 2738.7482514235976,
+        "rmse": 2805.534739900071
+      },
+      "test_metrics": {
+        "r2": -1619.666499207487,
+        "mae": 2168.632935824857,
+        "rmse": 2169.476804149583
+      },
+      "kept": false,
+      "comparison_note": "Rejected: test RMSE 2169.476804 not better than 58.801032",
+      "rationale": "Living thesis embodiment: weighted composite S = 0.7*T2 + 0.2*T1 + 0.1*T3 from domain calibration"
+    }
+  ],
+  "train_row_count": 9,
+  "test_row_count": 2,
+  "conventional_baselines": [
+    {
+      "name": "chosen-feature baseline linear",
+      "family": "linear",
+      "feature_columns": [
+        "computed_value",
+        "symbol_class_code",
+        "symbol_complexity_score",
+        "formula_operator_count",
+        "formula_identifier_count"
+      ],
+      "train_metrics": {
+        "r2": 0.9999828880520018,
+        "mae": 1.0938919077404816,
+        "rmse": 1.4046349792972415
+      },
+      "test_metrics": {
+        "r2": 0.9986562036024472,
+        "mae": 1.8789103905538234,
+        "rmse": 1.9754903831700807
+      },
+      "rationale": "Exact same-split linear regression baseline over computed_value, symbol_class_code, symbol_complexity_score, formula_operator_count, formula_identifier_count."
+    },
+    {
+      "name": "all-observable baseline linear",
+      "family": "linear",
+      "feature_columns": [
+        "computed_value",
+        "error_percent_numeric",
+        "formula_identifier_count",
+        "formula_operator_count",
+        "index",
+        "section_family_code",
+        "section_numeric",
+        "smiles_derivation_flag",
+        "symbol_charge_hint",
+        "symbol_class_code",
+        "symbol_complexity_score",
+        "symbol_length",
+        "symbol_token_count",
+        "unit_family_code"
+      ],
+      "train_metrics": {
+        "r2": 0.9999898004450163,
+        "mae": 0.900860303250483,
+        "rmse": 1.084437095670913
+      },
+      "test_metrics": {
+        "r2": 0.9965614658807909,
+        "mae": 2.394837889840222,
+        "rmse": 3.1600565362886144
+      },
+      "rationale": "Exact same-split linear regression baseline over computed_value, error_percent_numeric, formula_identifier_count, formula_operator_count, index, section_family_code, section_numeric, smiles_derivation_flag, symbol_charge_hint, symbol_class_code, symbol_complexity_score, symbol_length, symbol_token_count, unit_family_code."
+    },
+    {
+      "name": "chosen-feature baseline quadratic",
+      "family": "quadratic",
+      "feature_columns": [
+        "computed_value",
+        "symbol_class_code",
+        "symbol_complexity_score",
+        "formula_operator_count",
+        "formula_identifier_count"
+      ],
+      "train_metrics": {
+        "r2": 0.9999984896813666,
+        "mae": 0.2610771278978679,
+        "rmse": 0.4172996723340239
+      },
+      "test_metrics": {
+        "r2": 0.7561986373858185,
+        "mae": 19.604801177633558,
+        "rmse": 26.608858735232978
+      },
+      "rationale": "Exact same-split quadratic regression baseline over computed_value, symbol_class_code, symbol_complexity_score, formula_operator_count, formula_identifier_count."
+    },
+    {
+      "name": "all-observable baseline quadratic",
+      "family": "quadratic",
+      "feature_columns": [
+        "computed_value",
+        "error_percent_numeric",
+        "formula_identifier_count",
+        "formula_operator_count",
+        "index",
+        "section_family_code",
+        "section_numeric",
+        "smiles_derivation_flag",
+        "symbol_charge_hint",
+        "symbol_class_code",
+        "symbol_complexity_score",
+        "symbol_length",
+        "symbol_token_count",
+        "unit_family_code"
+      ],
+      "train_metrics": {
+        "r2": 1.0,
+        "mae": 2.3652136446925295e-7,
+        "rmse": 3.4828634824352906e-7
+      },
+      "test_metrics": {
+        "r2": -29.501908923464295,
+        "mae": 293.6026128933629,
+        "rmse": 297.6265660452862
+      },
+      "rationale": "Exact same-split quadratic regression baseline over computed_value, error_percent_numeric, formula_identifier_count, formula_operator_count, index, section_family_code, section_numeric, smiles_derivation_flag, symbol_charge_hint, symbol_class_code, symbol_complexity_score, symbol_length, symbol_token_count, unit_family_code."
+    }
+  ],
+  "sandbox": {
+    "enabled": true,
+    "goal_rmse": 1.9754903831700807,
+    "goal_mode": "best_conventional_chosen_features",
+    "goal_source": "best conventional baseline: chosen-feature baseline linear",
+    "goal_hit": true,
+    "formulas_tested": 68,
+    "best_formula": {
+      "rank": 0,
+      "formula": "computed_value",
+      "train_metrics": {
+        "r2": 0.9999518491470889,
+        "mae": 1.5612949713286695,
+        "rmse": 2.3562194986058476
+      },
+      "test_metrics": {
+        "r2": 0.9994649835506781,
+        "mae": 1.1143143685240844,
+        "rmse": 1.246498473526364
+      },
+      "provenance": "sandbox-formula-lab",
+      "rationale": "direct feature computed_value"
+    },
+    "oscillation_weight_search": [],
+    "transport_frame_gate_search": [],
+    "inverse_recovery_search": [],
+    "combinatorial_search": [],
+    "beam_search": [],
+    "top_results": [
+      {
+        "rank": 1,
+        "formula": "computed_value",
+        "train_metrics": {
+          "r2": 0.9999518491470889,
+          "mae": 1.5612949713286695,
+          "rmse": 2.3562194986058476
+        },
+        "test_metrics": {
+          "r2": 0.9994649835506781,
+          "mae": 1.1143143685240844,
+          "rmse": 1.246498473526364
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "direct feature computed_value"
+      },
+      {
+        "rank": 2,
+        "formula": "computed_value * c_eff",
+        "train_metrics": {
+          "r2": 0.9955355083318417,
+          "mae": 16.06638022036367,
+          "rmse": 22.688185370603005
+        },
+        "test_metrics": {
+          "r2": 0.9954579644266526,
+          "mae": 3.3466096259252183,
+          "rmse": 3.6318963790147123
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "reasoning-path transport_rate transform for computed_value"
+      },
+      {
+        "rank": 3,
+        "formula": "computed_value / phi",
+        "train_metrics": {
+          "r2": 0.6790180529154253,
+          "mae": 141.13848315139623,
+          "rmse": 192.37740271823424
+        },
+        "test_metrics": {
+          "r2": 0.8207068252346581,
+          "mae": 21.272832500168427,
+          "rmse": 22.818656054792957
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "feature computed_value scaled by phi"
+      },
+      {
+        "rank": 4,
+        "formula": "computed_value * c_eff / phi - p_base",
+        "train_metrics": {
+          "r2": 0.6344978414261448,
+          "mae": 150.55191128415066,
+          "rmse": 205.28571353519942
+        },
+        "test_metrics": {
+          "r2": 0.7980179036775958,
+          "mae": 22.65246684216752,
+          "rmse": 24.219469225298603
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "feature computed_value with c_eff over phi scaling"
+      },
+      {
+        "rank": 5,
+        "formula": "computed_value * (1 / e + c_cosm) - p_new",
+        "train_metrics": {
+          "r2": 0.2891602560399703,
+          "mae": 210.19254874262305,
+          "rmse": 286.2856662723271
+        },
+        "test_metrics": {
+          "r2": 0.6169769976509745,
+          "mae": 31.21319351246976,
+          "rmse": 33.35190243689527
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "feature computed_value with FSOT slope (1/e + c_cosm) and p_new offset"
+      },
+      {
+        "rank": 6,
+        "formula": "computed_value * (1 / e + c_cosm) - p_base",
+        "train_metrics": {
+          "r2": 0.2888394972223669,
+          "mae": 210.280505243054,
+          "rmse": 286.3502506570307
+        },
+        "test_metrics": {
+          "r2": 0.6162625364822634,
+          "mae": 31.21319351246976,
+          "rmse": 33.382993960614705
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "feature computed_value with FSOT slope (1/e + c_cosm) and p_base offset"
+      },
+      {
+        "rank": 7,
+        "formula": "computed_value * a_in",
+        "train_metrics": {
+          "r2": 0.04515965411737777,
+          "mae": 245.05633773797868,
+          "rmse": 331.80210289839886
+        },
+        "test_metrics": {
+          "r2": 0.5429680119399952,
+          "mae": 34.07935451757821,
+          "rmse": 36.431871585905064
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "reasoning-path transport_rate transform for computed_value"
+      },
+      {
+        "rank": 8,
+        "formula": "computed_value / e + c_cosm - p_base",
+        "train_metrics": {
+          "r2": 0.12689940467029315,
+          "mae": 233.09946032678934,
+          "rmse": 317.2823369159286
+        },
+        "test_metrics": {
+          "r2": 0.531239810291197,
+          "mae": 34.47491026245292,
+          "rmse": 36.89636180079852
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "feature computed_value with e scaling and FSOT offsets"
+      },
+      {
+        "rank": 9,
+        "formula": "computed_value / pi + p_new",
+        "train_metrics": {
+          "r2": -0.01673082508576207,
+          "mae": 251.80272964256093,
+          "rmse": 342.3865916732838
+        },
+        "test_metrics": {
+          "r2": 0.45292381658743464,
+          "mae": 37.09097751337338,
+          "rmse": 39.859522142066865
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "feature computed_value scaled by pi plus p_new"
+      },
+      {
+        "rank": 10,
+        "formula": "(computed_value / (1 + abs(computed_value) / phi)) * 10",
+        "train_metrics": {
+          "r2": -1.0782717753947701,
+          "mae": 352.68085214375037,
+          "rmse": 489.51378155808044
+        },
+        "test_metrics": {
+          "r2": 0.3509968624023423,
+          "mae": 38.26754098886489,
+          "rmse": 43.41417792493686
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "phi-saturated form of computed_value"
+      },
+      {
+        "rank": 11,
+        "formula": "computed_value * c_cosm + p_base",
+        "train_metrics": {
+          "r2": -0.9200736343474996,
+          "mae": 346.165194091379,
+          "rmse": 470.5141573722705
+        },
+        "test_metrics": {
+          "r2": -0.015933240949675964,
+          "mae": 50.62828325001684,
+          "rmse": 54.317624547645565
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "feature computed_value modulated by c_cosm and p_base"
+      },
+      {
+        "rank": 12,
+        "formula": "sin(formula_identifier_count / deg) * a_bleed * 10",
+        "train_metrics": {
+          "r2": -1.1801580571000412,
+          "mae": 368.8927159089769,
+          "rmse": 501.36930691510355
+        },
+        "test_metrics": {
+          "r2": -0.15238695989137963,
+          "mae": 53.98136104665066,
+          "rmse": 57.85053121486413
+        },
+        "provenance": "sandbox-formula-lab",
+        "rationale": "reasoning-path phase_loading transform for formula_identifier_count"
+      }
+    ],
+    "canonical_debug": [
+      {
+        "rank": 1,
+        "provenance": "sandbox-formula-lab",
+        "formula": "computed_value",
+        "normalized_formula": "computed_value",
+        "canonical_formula": "computed_value",
+        "normalized_changed": false,
+        "canonical_changed": false,
+        "raw_operator_count": 0,
+        "canonical_operator_count": 0,
+        "test_rmse": 1.246498473526364,
+        "test_r2": 0.9994649835506781
+      },
+      {
+        "rank": 2,
+        "provenance": "sandbox-formula-lab",
+        "formula": "computed_value * c_eff",
+        "normalized_formula": "computed_value * c_eff",
+        "canonical_formula": "mul(c_eff,computed_value)",
+        "normalized_changed": false,
+        "canonical_changed": true,
+        "raw_operator_count": 1,
+        "canonical_operator_count": 0,
+        "test_rmse": 3.6318963790147123,
+        "test_r2": 0.9954579644266526
+      },
+      {
+        "rank": 3,
+        "provenance": "sandbox-formula-lab",
+        "formula": "computed_value / phi",
+        "normalized_formula": "computed_value / phi",
+        "canonical_formula": "mul(computed_value)/div(phi)",
+        "normalized_changed": false,
+        "canonical_changed": true,
+        "raw_operator_count": 1,
+        "canonical_operator_count": 1,
+        "test_rmse": 22.818656054792957,
+        "test_r2": 0.8207068252346581
+      },
+      {
+        "rank": 4,
+        "provenance": "sandbox-formula-lab",
+        "formula": "computed_value * c_eff / phi - p_base",
+        "normalized_formula": "computed_value * c_eff / phi - p_base",
+        "canonical_formula": "add(mul(c_eff,computed_value)/div(phi),-(p_base))",
+        "normalized_changed": false,
+        "canonical_changed": true,
+        "raw_operator_count": 3,
+        "canonical_operator_count": 2,
+        "test_rmse": 24.219469225298603,
+        "test_r2": 0.7980179036775958
+      },
+      {
+        "rank": 5,
+        "provenance": "sandbox-formula-lab",
+        "formula": "computed_value * (1 / e + c_cosm) - p_new",
+        "normalized_formula": "computed_value * (1 / e + c_cosm) - p_new",
+        "canonical_formula": "add(mul(add(c_cosm,mul()/div(e)),computed_value),-(p_new))",
+        "normalized_changed": false,
+        "canonical_changed": true,
+        "raw_operator_count": 4,
+        "canonical_operator_count": 2,
+        "test_rmse": 33.35190243689527,
+        "test_r2": 0.6169769976509745
+      },
+      {
+        "rank": 6,
+        "provenance": "sandbox-formula-lab",
+        "formula": "computed_value * (1 / e + c_cosm) - p_base",
+        "normalized_formula": "computed_value * (1 / e + c_cosm) - p_base",
+        "canonical_formula": "add(mul(add(c_cosm,mul()/div(e)),computed_value),-(p_base))",
+        "normalized_changed": false,
+        "canonical_changed": true,
+        "raw_operator_count": 4,
+        "canonical_operator_count": 2,
+        "test_rmse": 33.382993960614705,
+        "test_r2": 0.6162625364822634
+      },
+      {
+        "rank": 7,
+        "provenance": "sandbox-formula-lab",
+        "formula": "computed_value * a_in",
+        "normalized_formula": "computed_value * a_in",
+        "canonical_formula": "mul(a_in,computed_value)",
+        "normalized_changed": false,
+        "canonical_changed": true,
+        "raw_operator_count": 1,
+        "canonical_operator_count": 0,
+        "test_rmse": 36.431871585905064,
+        "test_r2": 0.5429680119399952
+      },
+      {
+        "rank": 8,
+        "provenance": "sandbox-formula-lab",
+        "formula": "computed_value / e + c_cosm - p_base",
+        "normalized_formula": "computed_value / e + c_cosm - p_base",
+        "canonical_formula": "add(c_cosm,mul(computed_value)/div(e),-(p_base))",
+        "normalized_changed": false,
+        "canonical_changed": true,
+        "raw_operator_count": 3,
+        "canonical_operator_count": 2,
+        "test_rmse": 36.89636180079852,
+        "test_r2": 0.531239810291197
+      },
+      {
+        "rank": 9,
+        "provenance": "sandbox-formula-lab",
+        "formula": "computed_value / pi + p_new",
+        "normalized_formula": "computed_value / pi + p_new",
+        "canonical_formula": "add(mul(computed_value)/div(pi),p_new)",
+        "normalized_changed": false,
+        "canonical_changed": true,
+        "raw_operator_count": 2,
+        "canonical_operator_count": 1,
+        "test_rmse": 39.859522142066865,
+        "test_r2": 0.45292381658743464
+      },
+      {
+        "rank": 10,
+        "provenance": "sandbox-formula-lab",
+        "formula": "(computed_value / (1 + abs(computed_value) / phi)) * 10",
+        "normalized_formula": "(computed_value / (1 + abs(computed_value) / phi)) * 10",
+        "canonical_formula": "mul(10,computed_value)/div(add(1,mul(abs(computed_value))/div(phi)))",
+        "normalized_changed": false,
+        "canonical_changed": true,
+        "raw_operator_count": 4,
+        "canonical_operator_count": 2,
+        "test_rmse": 43.41417792493686,
+        "test_r2": 0.3509968624023423
+      },
+      {
+        "rank": 11,
+        "provenance": "sandbox-formula-lab",
+        "formula": "computed_value * c_cosm + p_base",
+        "normalized_formula": "computed_value * c_cosm + p_base",
+        "canonical_formula": "add(mul(c_cosm,computed_value),p_base)",
+        "normalized_changed": false,
+        "canonical_changed": true,
+        "raw_operator_count": 2,
+        "canonical_operator_count": 0,
+        "test_rmse": 54.317624547645565,
+        "test_r2": -0.015933240949675964
+      },
+      {
+        "rank": 12,
+        "provenance": "sandbox-formula-lab",
+        "formula": "sin(formula_identifier_count / deg) * a_bleed * 10",
+        "normalized_formula": "sin(formula_identifier_count / deg) * a_bleed * 10",
+        "canonical_formula": "mul(10,a_bleed,sin(mul(formula_identifier_count)/div(deg)))",
+        "normalized_changed": false,
+        "canonical_changed": true,
+        "raw_operator_count": 3,
+        "canonical_operator_count": 1,
+        "test_rmse": 57.85053121486413,
+        "test_r2": -0.15238695989137963
+      }
+    ]
+  },
+  "candidates": []
+}
