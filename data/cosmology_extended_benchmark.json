@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-08T18:50:45.842257+00:00",
+  "generated_at": "2026-07-08T19:29:22.833170+00:00",
   "source_root": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab",
   "skeleton_derivation_count": 24,
   "lambda_cdm_count": 30,
@@ -67,10 +67,10 @@
       "source": "skeleton_database",
       "symbol": "He-3/H",
       "section": "\u00a7109 BBN",
-      "formula": "POOF/(PI^4*E^5)",
-      "computed": "1.061662e-05",
+      "formula": "POOF/(PI^4*E^4*PHI^2)",
+      "computed": 1.102314090701526e-05,
       "target": "~1.1e-5 +/- 2e-6",
-      "error_pct": 3.49
+      "error_pct": 0.21
     },
     {
       "source": "skeleton_database",

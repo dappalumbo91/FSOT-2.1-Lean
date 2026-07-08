@@ -57,6 +57,8 @@ SKELETON_FORMULA_OVERRIDES: dict[str, str] = {
     "Li-7/H": "5.6e-10*(SUCTION+POOF)/(PI*GAMMA^2)",
     # n_sat: θ_S·γ nuclear scale with πγ compactification damping (≡ THETA_S/(PI*GAMMA)).
     "n_sat": "THETA_S/(PI*GAMMA)",
+    # He-3/H: φ²/E correction on POOF/(π⁴e⁵) BBN helium branch.
+    "He-3/H": "POOF/(PI^4*E^4*PHI^2)",
 }
 
 
