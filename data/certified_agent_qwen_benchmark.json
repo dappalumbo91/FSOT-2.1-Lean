@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-07-08T15:17:54.485874+00:00",
+  "source": [
+    "vendor/certified_agent/certified_agent_summary.json",
+    "vendor/certified_agent/fsot_workspace.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai",
+    "neural"
+  ],
+  "D_eff": 12,
+  "record_count": 8,
+  "observable_count": 8,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "certified_agent_qwen",
+      "property": "promotion_threshold_percent",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "certified_agent_qwen",
+      "property": "max_tool_iterations",
+      "computed": 10.0,
+      "measured": 10,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "certified_agent_qwen",
+      "property": "max_rag_results",
+      "computed": 8.0,
+      "measured": 8,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "certified_agent_qwen",
+      "property": "configured_path_count",
+      "computed": 9,
+      "measured": 9,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "certified_agent_qwen",
+      "property": "protocol_version_match",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "certified_agent_qwen",
+      "property": "requires_lean_bridge",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "certified_agent_qwen",
+      "property": "no_probabilistic_math",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "certified_agent_qwen",
+      "property": "certification_requires_compiler_verified",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    }
+  ]
+}

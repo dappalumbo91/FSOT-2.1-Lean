@@ -375,6 +375,96 @@ def formula_corpus_cnc_gauntlet_path(*, require: bool = True) -> Path:
     return path
 
 
+def binary_decoder_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_BINARY_DECODER_ROOT",
+        VENDOR_ROOT / "binary_decoder",
+        _DESKTOP / "fsot_rendlesham_page_decoder ailen code",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Binary decoder root not found.")
+    assert path is not None
+    return path
+
+
+def binary_decoder_trace_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_BINARY_DECODER_TRACE",
+        VENDOR_ROOT / "binary_decoder" / "rendlesham_page14_trace.json",
+        _DESKTOP
+        / "fsot_rendlesham_page_decoder ailen code"
+        / "files-c593e77d"
+        / "page14_test.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Rendlesham hidden state trace not found.")
+    assert path is not None
+    return path
+
+
+def certified_agent_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_CERTIFIED_AGENT_ROOT",
+        VENDOR_ROOT / "certified_agent",
+        _DESKTOP / "fsot QWEN 3VL_Formal_Env",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Certified agent root not found.")
+    assert path is not None
+    return path
+
+
+def certified_agent_summary_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_CERTIFIED_AGENT_SUMMARY",
+        VENDOR_ROOT / "certified_agent" / "certified_agent_summary.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Certified agent summary not found.")
+    assert path is not None
+    return path
+
+
+def certified_agent_workspace_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_CERTIFIED_AGENT_WORKSPACE",
+        VENDOR_ROOT / "certified_agent" / "fsot_workspace.json",
+        _DESKTOP / "fsot QWEN 3VL_Formal_Env" / "fsot_workspace.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Certified agent workspace not found.")
+    assert path is not None
+    return path
+
+
+def omni_theory_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_OMNI_THEORY_ROOT",
+        VENDOR_ROOT / "omni_theory",
+        _DESKTOP / "Fluid spacetime omni-theory, FSOT, and the Holy Bible",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Omni-theory root not found.")
+    assert path is not None
+    return path
+
+
+def omni_theory_genesis_summary_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_OMNI_THEORY_GENESIS_SUMMARY",
+        VENDOR_ROOT / "omni_theory" / "analysis" / "genesis" / "genesis_per_verse_summary.json",
+        _DESKTOP
+        / "Fluid spacetime omni-theory, FSOT, and the Holy Bible"
+        / "analysis"
+        / "genesis"
+        / "genesis_per_verse_summary.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Omni-theory Genesis summary not found.")
+    assert path is not None
+    return path
+
+
 def fsot_read_path(*, require: bool = False) -> Path | None:
     path = _resolve(
         "FSOT_READ_PATH",

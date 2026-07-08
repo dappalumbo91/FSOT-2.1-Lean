@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-08T14:02:46.083715+00:00",
+  "generated_at": "2026-07-08T15:19:18.243419+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -714,6 +714,11 @@
       "arxiv_primitives_v14_median_error_under_five_pct",
       "arxiv_primitives_v14_bundle"
     ],
+    "BinaryDecoderRendleshamPriors": [
+      "binary_decoder_rendlesham_observable_count_pos",
+      "binary_decoder_rendlesham_median_error_under_five_pct",
+      "binary_decoder_rendlesham_bundle"
+    ],
     "BiologicalCudaPhysarumPriors": [
       "biological_cuda_physarum_observable_count_pos",
       "biological_cuda_physarum_median_error_under_five_pct",
@@ -1054,6 +1059,11 @@
       "cellular_soul_records_pos",
       "cellular_operon_count_pos",
       "cellular_priors_bundle"
+    ],
+    "CertifiedAgentQwenPriors": [
+      "certified_agent_qwen_observable_count_pos",
+      "certified_agent_qwen_median_error_under_five_pct",
+      "certified_agent_qwen_bundle"
     ],
     "ClimateSciencePriors": [
       "climate_science_observable_count_pos",
@@ -1650,6 +1660,11 @@
       "neuron_multi_hero_median_fi_under_thirty_pct",
       "neuron_multi_hero_bundle"
     ],
+    "OmniTheoryGenesisPriors": [
+      "omni_theory_genesis_observable_count_pos",
+      "omni_theory_genesis_median_error_under_five_pct",
+      "omni_theory_genesis_bundle"
+    ],
     "OncologyPriors": [
       "oncology_observable_count_pos",
       "oncology_median_error_under_five_pct",
@@ -1920,7 +1935,7 @@
     "scripts/gen_protein_priors_lean.py": "9A5300DDD7D142A6C9FF596651F40AF2B4079FCD8A43E3DDD33695D43308294F",
     "scripts/gen_protein_formulas_lean.py": "9E8FD84D7A89A6000E0253F9BADCAA9F3F6720E7496DB6B53F90443E3FD0B6A4",
     "scripts/domain_scalar_oracle.py": "80DBF4F2592B73E468038D5E54532FA1FB26947DB5ABF4AF2794EFFD566906DA",
-    "scripts/fsot_verification_runner.py": "8A07363907E9088C638B93107EFE8DCDA4EA5C3CE11DCF8135BB9238585DC458",
+    "scripts/fsot_verification_runner.py": "2A23D243D5A87FE2BA5BD6DF1854FE163E04FA20387A5B72B0F63336DB288BB0",
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },

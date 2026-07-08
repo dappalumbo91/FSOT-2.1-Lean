@@ -301,6 +301,27 @@ verified_extension_domains:
     labs: [formula_corpus, fsot_cnc_controller]
     lean_module: FSOT.Formal.FormulaCorpusCncPriors
 
+  Binary_Decoder_Rendlesham:
+    tier: 35
+    D_eff: 12
+    maps_to_lean: [consciousness, ai, neural]
+    labs: [binary_decoder, rendlesham_trace]
+    lean_module: FSOT.Formal.BinaryDecoderRendleshamPriors
+
+  Certified_Agent_Qwen:
+    tier: 35
+    D_eff: 12
+    maps_to_lean: [consciousness, ai, neural]
+    labs: [certified_agent, lean_bridge]
+    lean_module: FSOT.Formal.CertifiedAgentQwenPriors
+
+  Omni_Theory_Genesis:
+    tier: 35
+    D_eff: 25
+    maps_to_lean: [consciousness, ai, neural]
+    labs: [omni_theory_humanities, genesis_per_verse]
+    lean_module: FSOT.Formal.OmniTheoryGenesisPriors
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

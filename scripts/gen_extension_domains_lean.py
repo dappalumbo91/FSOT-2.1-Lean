@@ -61,6 +61,9 @@ DEDICATED_GENERATORS = {
     "Biological_CUDA_Physarum",
     "Arxiv_Primitives_V14",
     "Formula_Corpus_CNC",
+    "Binary_Decoder_Rendlesham",
+    "Certified_Agent_Qwen",
+    "Omni_Theory_Genesis",
 }
 
 LEAN_SIGN = {
@@ -109,6 +112,9 @@ LEAN_SIGN = {
     "Biological_CUDA_Physarum": ("biological", "biological_raw_S_positive"),
     "Arxiv_Primitives_V14": ("consciousness", "consciousness_raw_S_positive"),
     "Formula_Corpus_CNC": ("particle", "particle_raw_S_positive"),
+    "Binary_Decoder_Rendlesham": ("consciousness", "consciousness_raw_S_positive"),
+    "Certified_Agent_Qwen": ("consciousness", "consciousness_raw_S_positive"),
+    "Omni_Theory_Genesis": ("consciousness", "consciousness_raw_S_positive"),
 }
 
 

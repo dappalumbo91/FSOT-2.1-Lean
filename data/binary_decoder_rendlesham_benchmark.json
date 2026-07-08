@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-07-08T15:18:19.367135+00:00",
+  "source": [
+    "vendor/binary_decoder/rendlesham_page14_trace.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai",
+    "neural"
+  ],
+  "D_eff": 12,
+  "record_count": 10,
+  "observable_count": 10,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "total_steps",
+      "computed": 52,
+      "measured": 52,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "time_in_core",
+      "computed": 14,
+      "measured": 14,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "time_in_burst",
+      "computed": 3,
+      "measured": 3,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "time_in_fragmented",
+      "computed": 35,
+      "measured": 35,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "branching_events",
+      "computed": 17,
+      "measured": 17,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "detected_loops",
+      "computed": 65,
+      "measured": 65,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "avg_scalar_positive",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "avg_scalar",
+      "computed": 12.618524970840754,
+      "measured": 12.618524970840754,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "branching_event_rows",
+      "computed": 17,
+      "measured": 17,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "core_to_fragmented_transitions",
+      "computed": 13,
+      "measured": 13,
+      "error_pct": 0.0
+    }
+  ]
+}

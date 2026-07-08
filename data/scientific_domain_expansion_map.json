@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T14:02:45.520822+00:00",
+  "generated_at": "2026-07-08T15:19:17.585818+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 45,
-    "total_scientific_domains_covered": 81,
+    "extension_domains": 48,
+    "total_scientific_domains_covered": 84,
     "total_empirical_records": 307820,
     "domains_target_band_2pct": 34,
     "domains_sign_mismatch": 1,
@@ -14,7 +14,7 @@
       "D_needs_work": 0,
       "unverified": 1
     },
-    "lean_formal_modules": 101
+    "lean_formal_modules": 104
   },
   "neurolab_domains": [
     {
@@ -856,6 +856,30 @@
       "median_error_pct": 0.0,
       "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.FormulaCorpusCncPriors"
+    },
+    {
+      "domain": "Binary_Decoder_Rendlesham",
+      "tier": 35,
+      "record_count": 10,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.BinaryDecoderRendleshamPriors"
+    },
+    {
+      "domain": "Certified_Agent_Qwen",
+      "tier": 35,
+      "record_count": 8,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.CertifiedAgentQwenPriors"
+    },
+    {
+      "domain": "Omni_Theory_Genesis",
+      "tier": 35,
+      "record_count": 27,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.OmniTheoryGenesisPriors"
     }
   ],
   "intelligence_compression": {

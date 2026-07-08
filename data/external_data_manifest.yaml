@@ -118,6 +118,21 @@ bundled:
     role: compiled formula corpus stats, validator delta, chem gauntlet report
     env_override: FSOT_FORMULA_CORPUS_CNC_ROOT
 
+  binary_decoder_rendlesham:
+    path: vendor/binary_decoder/rendlesham_page14_trace.json
+    role: Rendlesham hidden-state trace CORE/FRAGMENTED branching summary
+    env_override: FSOT_BINARY_DECODER_TRACE
+
+  certified_agent_qwen:
+    path: vendor/certified_agent
+    role: Qwen 3VL formal env workspace + certified protocol summary
+    env_override: FSOT_CERTIFIED_AGENT_ROOT
+
+  omni_theory_genesis:
+    path: vendor/omni_theory/analysis/genesis/genesis_per_verse_summary.json
+    role: Genesis ch.1 per-verse FSOT scalar humanities crosswalk
+    env_override: FSOT_OMNI_THEORY_GENESIS_SUMMARY
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification

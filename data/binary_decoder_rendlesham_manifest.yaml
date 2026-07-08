@@ -1,0 +1,20 @@
+# Tier 35 — Rendlesham binary decoder crosswalk.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  binary_decoder_root: "vendor/binary_decoder"
+
+build:
+  script: scripts/build_binary_decoder_rendlesham_benchmark.py
+  output: data/binary_decoder_rendlesham_benchmark.json
+
+lean:
+  generator: scripts/gen_binary_decoder_rendlesham_lean.py
+  module: FSOT.Formal.BinaryDecoderRendleshamPriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 1.0

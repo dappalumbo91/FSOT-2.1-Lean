@@ -93,6 +93,9 @@ def build_progress() -> dict:
     biological_cuda_physarum_bench = _load_json(ROOT / "data" / "biological_cuda_physarum_benchmark.json")
     arxiv_primitives_v14_bench = _load_json(ROOT / "data" / "arxiv_primitives_v14_benchmark.json")
     formula_corpus_cnc_bench = _load_json(ROOT / "data" / "formula_corpus_cnc_benchmark.json")
+    binary_decoder_rendlesham_bench = _load_json(ROOT / "data" / "binary_decoder_rendlesham_benchmark.json")
+    certified_agent_qwen_bench = _load_json(ROOT / "data" / "certified_agent_qwen_benchmark.json")
+    omni_theory_genesis_bench = _load_json(ROOT / "data" / "omni_theory_genesis_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -882,12 +885,40 @@ def build_progress() -> dict:
                 "FSOT.Formal.FormulaCorpusCncPriors",
             ],
         },
+        {
+            "tier": 35,
+            "name": "Crosswalk wave — Rendlesham decoder, Qwen certified agent, Genesis omni-theory",
+            "status": "complete"
+            if binary_decoder_rendlesham_bench.get("record_count", 0) >= 5
+            and certified_agent_qwen_bench.get("record_count", 0) >= 5
+            and omni_theory_genesis_bench.get("record_count", 0) >= 5
+            and binary_decoder_rendlesham_bench.get("median_error_pct", 99) <= 1.0
+            and certified_agent_qwen_bench.get("median_error_pct", 99) <= 1.0
+            and omni_theory_genesis_bench.get("median_error_pct", 99) <= 5.0
+            else "pending",
+            "metrics": {
+                "binary_decoder_rendlesham_records": binary_decoder_rendlesham_bench.get("record_count"),
+                "certified_agent_qwen_records": certified_agent_qwen_bench.get("record_count"),
+                "omni_theory_genesis_records": omni_theory_genesis_bench.get("record_count"),
+            },
+            "artifacts": [
+                "data/binary_decoder_rendlesham_manifest.yaml",
+                "data/certified_agent_qwen_manifest.yaml",
+                "data/omni_theory_genesis_manifest.yaml",
+                "vendor/binary_decoder",
+                "vendor/certified_agent",
+                "vendor/omni_theory",
+                "FSOT.Formal.BinaryDecoderRendleshamPriors",
+                "FSOT.Formal.CertifiedAgentQwenPriors",
+                "FSOT.Formal.OmniTheoryGenesisPriors",
+            ],
+        },
     ]
 
     next_steps = [
-        "Remaining desktop crosswalk themes without vendor bundles",
+        "FSOT 3.0 aggregate vendor bundle (unified mathematical database)",
         "Extension domain precision tightening (median error < 1% wave)",
-        "Portable vendor coverage audit for all 45 extension domains",
+        "Portable vendor coverage audit for all 48 extension domains",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -906,7 +937,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 34 Crosswalk wave — Physarum CUDA, arXiv V14 primitives, formula corpus CNC",
+        "current_position": "Tier 35 Crosswalk wave — Rendlesham decoder, Qwen certified agent, Genesis omni-theory",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

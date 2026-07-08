@@ -1,16 +1,16 @@
-generated_at: '2026-07-08T14:02:44.679338+00:00'
+generated_at: '2026-07-08T15:19:16.685694+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 101
+  lean_formal_modules: 104
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 32
-  tiers_total: 32
+  tiers_complete: 33
+  tiers_total: 33
   percent_complete: 100.0
-current_position: "Tier 34 Crosswalk wave \u2014 Physarum CUDA, arXiv V14 primitives,\
-  \ formula corpus CNC"
+current_position: "Tier 35 Crosswalk wave \u2014 Rendlesham decoder, Qwen certified\
+  \ agent, Genesis omni-theory"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -25,12 +25,14 @@ tiers:
   artifacts:
   - AetherPrimePriors
   - ArxivPrimitivesV14Priors
+  - BinaryDecoderRendleshamPriors
   - BiologicalCudaPhysarumPriors
   - BiologyStrictEmpiricalPriors
   - BlackHoleThesisPriors
   - BrainPriors
   - CameoPriors
   - CellularPriors
+  - CertifiedAgentQwenPriors
   - ClimateSciencePriors
   - CodonPriors
   - ComputationalReasoningPriors
@@ -84,6 +86,7 @@ tiers:
   - NeuronCohortTrainHoldoutPriors
   - NeuronHybridPriors
   - NeuronMultiHeroPriors
+  - OmniTheoryGenesisPriors
   - OncologyPriors
   - OrbitalMechanicsPriors
   - ParticlePhysicsPriors
@@ -615,10 +618,27 @@ tiers:
   - FSOT.Formal.BiologicalCudaPhysarumPriors
   - FSOT.Formal.ArxivPrimitivesV14Priors
   - FSOT.Formal.FormulaCorpusCncPriors
+- tier: 35
+  name: "Crosswalk wave \u2014 Rendlesham decoder, Qwen certified agent, Genesis omni-theory"
+  status: complete
+  metrics:
+    binary_decoder_rendlesham_records: 10
+    certified_agent_qwen_records: 8
+    omni_theory_genesis_records: 27
+  artifacts:
+  - data/binary_decoder_rendlesham_manifest.yaml
+  - data/certified_agent_qwen_manifest.yaml
+  - data/omni_theory_genesis_manifest.yaml
+  - vendor/binary_decoder
+  - vendor/certified_agent
+  - vendor/omni_theory
+  - FSOT.Formal.BinaryDecoderRendleshamPriors
+  - FSOT.Formal.CertifiedAgentQwenPriors
+  - FSOT.Formal.OmniTheoryGenesisPriors
 next_steps:
-- Remaining desktop crosswalk themes without vendor bundles
+- FSOT 3.0 aggregate vendor bundle (unified mathematical database)
 - Extension domain precision tightening (median error < 1% wave)
-- Portable vendor coverage audit for all 45 extension domains
+- Portable vendor coverage audit for all 48 extension domains
 key_metrics:
   strict_empirical_records: 7941
   smiles_mapped: 1470

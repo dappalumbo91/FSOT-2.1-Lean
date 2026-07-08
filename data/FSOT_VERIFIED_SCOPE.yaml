@@ -1,4 +1,4 @@
-generated_at: '2026-07-08T14:02:45.780240+00:00'
+generated_at: '2026-07-08T15:19:17.903216+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 101
+  lean_formal_modules: 104
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 32
-  tiers_total: 32
+  tiers_complete: 33
+  tiers_total: 33
   percent_complete: 100.0
-current_tier: Tier 34 Crosswalk wave — Physarum CUDA, arXiv V14 primitives, formula
-  corpus CNC
+current_tier: Tier 35 Crosswalk wave — Rendlesham decoder, Qwen certified agent, Genesis
+  omni-theory
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -424,7 +424,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: true
-scientific_domains_covered: 81
+scientific_domains_covered: 84
 total_empirical_records: 307820
 tier_coverage:
 - tier: 1
@@ -440,12 +440,14 @@ tier_coverage:
   artifacts:
   - AetherPrimePriors
   - ArxivPrimitivesV14Priors
+  - BinaryDecoderRendleshamPriors
   - BiologicalCudaPhysarumPriors
   - BiologyStrictEmpiricalPriors
   - BlackHoleThesisPriors
   - BrainPriors
   - CameoPriors
   - CellularPriors
+  - CertifiedAgentQwenPriors
   - ClimateSciencePriors
   - CodonPriors
   - ComputationalReasoningPriors
@@ -499,6 +501,7 @@ tier_coverage:
   - NeuronCohortTrainHoldoutPriors
   - NeuronHybridPriors
   - NeuronMultiHeroPriors
+  - OmniTheoryGenesisPriors
   - OncologyPriors
   - OrbitalMechanicsPriors
   - ParticlePhysicsPriors
@@ -1028,6 +1031,23 @@ tier_coverage:
   - FSOT.Formal.BiologicalCudaPhysarumPriors
   - FSOT.Formal.ArxivPrimitivesV14Priors
   - FSOT.Formal.FormulaCorpusCncPriors
+- tier: 35
+  name: Crosswalk wave — Rendlesham decoder, Qwen certified agent, Genesis omni-theory
+  status: complete
+  metrics:
+    binary_decoder_rendlesham_records: 10
+    certified_agent_qwen_records: 8
+    omni_theory_genesis_records: 27
+  artifacts:
+  - data/binary_decoder_rendlesham_manifest.yaml
+  - data/certified_agent_qwen_manifest.yaml
+  - data/omni_theory_genesis_manifest.yaml
+  - vendor/binary_decoder
+  - vendor/certified_agent
+  - vendor/omni_theory
+  - FSOT.Formal.BinaryDecoderRendleshamPriors
+  - FSOT.Formal.CertifiedAgentQwenPriors
+  - FSOT.Formal.OmniTheoryGenesisPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -1299,6 +1319,24 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: C_thin
   lean_module: FSOT.Formal.FormulaCorpusCncPriors
+- domain: Binary_Decoder_Rendlesham
+  tier: 35
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.BinaryDecoderRendleshamPriors
+- domain: Certified_Agent_Qwen
+  tier: 35
+  record_count: 8
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.CertifiedAgentQwenPriors
+- domain: Omni_Theory_Genesis
+  tier: 35
+  record_count: 27
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.OmniTheoryGenesisPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1765,15 +1803,50 @@ theory_crosswalk:
     - formula_corpus
     - fsot_cnc_controller
     lean_module: FSOT.Formal.FormulaCorpusCncPriors
+  Binary_Decoder_Rendlesham:
+    tier: 35
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - binary_decoder
+    - rendlesham_trace
+    lean_module: FSOT.Formal.BinaryDecoderRendleshamPriors
+  Certified_Agent_Qwen:
+    tier: 35
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - certified_agent
+    - lean_bridge
+    lean_module: FSOT.Formal.CertifiedAgentQwenPriors
+  Omni_Theory_Genesis:
+    tier: 35
+    D_eff: 25
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - omni_theory_humanities
+    - genesis_per_verse
+    lean_module: FSOT.Formal.OmniTheoryGenesisPriors
 lean_formal_modules:
 - AetherPrimePriors
 - ArxivPrimitivesV14Priors
+- BinaryDecoderRendleshamPriors
 - BiologicalCudaPhysarumPriors
 - BiologyStrictEmpiricalPriors
 - BlackHoleThesisPriors
 - BrainPriors
 - CameoPriors
 - CellularPriors
+- CertifiedAgentQwenPriors
 - ClimateSciencePriors
 - CodonPriors
 - ComputationalReasoningPriors
@@ -1827,6 +1900,7 @@ lean_formal_modules:
 - NeuronCohortTrainHoldoutPriors
 - NeuronHybridPriors
 - NeuronMultiHeroPriors
+- OmniTheoryGenesisPriors
 - OncologyPriors
 - OrbitalMechanicsPriors
 - ParticlePhysicsPriors

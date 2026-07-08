@@ -1,0 +1,13 @@
+{
+  "protocol_version": "1.1",
+  "project": "fsot QWEN 3VL_Formal_Env",
+  "promotion_threshold_percent": 2.0,
+  "max_tool_iterations": 10,
+  "max_rag_results": 8,
+  "configured_path_count": 9,
+  "requires_lean_bridge": true,
+  "no_probabilistic_math": true,
+  "certification_requires_compiler_verified": true,
+  "source_workspace": "vendor/certified_agent/fsot_workspace.json",
+  "source_protocol": "vendor/certified_agent/CERTIFIED_PROTOCOL.md"
+}

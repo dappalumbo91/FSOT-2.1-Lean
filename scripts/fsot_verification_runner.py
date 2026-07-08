@@ -195,6 +195,18 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.PlasmaPhysicsPriors",
                 "FSOT.Formal.ImmunologyPriors",
                 "FSOT.Formal.ClimateSciencePriors",
+                "FSOT.Formal.IGEMLiveFastaPriors",
+                "FSOT.Formal.MathGeneratorAirfoilRmsePriors",
+                "FSOT.Formal.TrinaryOSRoundTripPriors",
+                "FSOT.Formal.TokenizationSmokePriors",
+                "FSOT.Formal.TrinaryHardwareMotifPriors",
+                "FSOT.Formal.IntrinsicLLMValidatorsPriors",
+                "FSOT.Formal.BiologicalCudaPhysarumPriors",
+                "FSOT.Formal.ArxivPrimitivesV14Priors",
+                "FSOT.Formal.FormulaCorpusCncPriors",
+                "FSOT.Formal.BinaryDecoderRendleshamPriors",
+                "FSOT.Formal.CertifiedAgentQwenPriors",
+                "FSOT.Formal.OmniTheoryGenesisPriors",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -801,6 +813,9 @@ def main() -> int:
                 "build_biological_cuda_physarum_benchmark.py",
                 "build_arxiv_primitives_v14_benchmark.py",
                 "build_formula_corpus_cnc_benchmark.py",
+                "build_binary_decoder_rendlesham_benchmark.py",
+                "build_certified_agent_qwen_benchmark.py",
+                "build_omni_theory_genesis_benchmark.py",
                 "ingest_climate_ncei_chunked.py",
                 "build_climate_observed_benchmark.py",
             ):
@@ -907,6 +922,9 @@ def main() -> int:
             (None, "gen_biological_cuda_physarum_lean.py", "BiologicalCudaPhysarumPriors.lean generation failed", None),
             (None, "gen_arxiv_primitives_v14_lean.py", "ArxivPrimitivesV14Priors.lean generation failed", None),
             (None, "gen_formula_corpus_cnc_lean.py", "FormulaCorpusCncPriors.lean generation failed", None),
+            (None, "gen_binary_decoder_rendlesham_lean.py", "BinaryDecoderRendleshamPriors.lean generation failed", None),
+            (None, "gen_certified_agent_qwen_lean.py", "CertifiedAgentQwenPriors.lean generation failed", None),
+            (None, "gen_omni_theory_genesis_lean.py", "OmniTheoryGenesisPriors.lean generation failed", None),
         ]
             for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
                 if ingest_name:

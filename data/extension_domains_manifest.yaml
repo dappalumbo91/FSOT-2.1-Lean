@@ -596,6 +596,45 @@ extension_domains:
     lean_module: FSOT.Formal.FormulaCorpusCncPriors
     note: "Compiled formula corpus stats, validator delta, and chem gauntlet bundle"
 
+  Binary_Decoder_Rendlesham:
+    tier: 35
+    D_eff: 12
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_binary_decoder_rendlesham_benchmark.py
+    manifest: data/binary_decoder_rendlesham_manifest.yaml
+    benchmark_data: data/binary_decoder_rendlesham_benchmark.json
+    lean_module: FSOT.Formal.BinaryDecoderRendleshamPriors
+    note: "Rendlesham hidden-state trace CORE/FRAGMENTED branching invariants"
+
+  Certified_Agent_Qwen:
+    tier: 35
+    D_eff: 12
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_certified_agent_qwen_benchmark.py
+    manifest: data/certified_agent_qwen_manifest.yaml
+    benchmark_data: data/certified_agent_qwen_benchmark.json
+    lean_module: FSOT.Formal.CertifiedAgentQwenPriors
+    note: "Qwen 3VL formal env certified protocol + workspace path registry"
+
+  Omni_Theory_Genesis:
+    tier: 35
+    D_eff: 25
+    delta_psi: 0.5
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_omni_theory_genesis_benchmark.py
+    manifest: data/omni_theory_genesis_manifest.yaml
+    benchmark_data: data/omni_theory_genesis_benchmark.json
+    lean_module: FSOT.Formal.OmniTheoryGenesisPriors
+    note: "Genesis ch.1 per-verse FSOT scalar + D_eff humanities crosswalk"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

@@ -1,0 +1,20 @@
+# Tier 35 — Qwen certified formal agent crosswalk.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  certified_agent_root: "vendor/certified_agent"
+
+build:
+  script: scripts/build_certified_agent_qwen_benchmark.py
+  output: data/certified_agent_qwen_benchmark.json
+
+lean:
+  generator: scripts/gen_certified_agent_qwen_lean.py
+  module: FSOT.Formal.CertifiedAgentQwenPriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 1.0

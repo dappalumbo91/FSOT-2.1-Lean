@@ -1,0 +1,20 @@
+# Tier 35 — Omni-theory Genesis per-verse humanities crosswalk.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  omni_theory_root: "vendor/omni_theory"
+
+build:
+  script: scripts/build_omni_theory_genesis_benchmark.py
+  output: data/omni_theory_genesis_benchmark.json
+
+lean:
+  generator: scripts/gen_omni_theory_genesis_lean.py
+  module: FSOT.Formal.OmniTheoryGenesisPriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 5.0

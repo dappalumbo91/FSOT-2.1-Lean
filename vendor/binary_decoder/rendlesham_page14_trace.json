@@ -1,0 +1,1003 @@
+{
+  "summary": {
+    "total_steps": 52,
+    "time_in_core": 14,
+    "time_in_burst": 3,
+    "time_in_fragmented": 35,
+    "branching_events": 17,
+    "detected_loops": 65,
+    "avg_scalar": 12.618524970840754
+  },
+  "branching_events": [
+    {
+      "position": 0,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u00b7\u00b7\u00b7"
+    },
+    {
+      "position": 3,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u2014\u00b7"
+    },
+    {
+      "position": 7,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u2014\u00b7\u00b7"
+    },
+    {
+      "position": 11,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u2014\u00b7"
+    },
+    {
+      "position": 15,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u2014\u00b7\u00b7"
+    },
+    {
+      "position": 19,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u2014\u00b7\u2014"
+    },
+    {
+      "position": 20,
+      "from_state": "FRAGMENTED",
+      "to_state": "CORE",
+      "window": "\u00b7\u2014\u00b7\u2014\u00b7"
+    },
+    {
+      "position": 21,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u2014\u00b7\u00b7"
+    },
+    {
+      "position": 25,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u00b7\u00b7\u2014"
+    },
+    {
+      "position": 29,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u00b7\u00b7\u00b7"
+    },
+    {
+      "position": 33,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u00b7\u00b7"
+    },
+    {
+      "position": 37,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u2014\u00b7\u2014"
+    },
+    {
+      "position": 41,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u00b7\u00b7\u00b7"
+    },
+    {
+      "position": 45,
+      "from_state": "CORE",
+      "to_state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u00b7\u00b7\u2014"
+    },
+    {
+      "position": 47,
+      "from_state": "FRAGMENTED",
+      "to_state": "BURST",
+      "window": "\u00b7\u00b7\u2014\u2014\u2014"
+    },
+    {
+      "position": 49,
+      "from_state": "CORE",
+      "to_state": "BURST",
+      "window": "\u2014\u2014\u2014\u2014\u2014"
+    },
+    {
+      "position": 51,
+      "from_state": "CORE",
+      "to_state": "BURST",
+      "window": "\u2014\u2014\u2014\u2014\u2014"
+    }
+  ],
+  "detected_loops": [
+    {
+      "position": 9,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 10,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 11,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 12,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 13,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 14,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 15,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 16,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 17,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 18,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 19,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 20,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "FRAGMENTED"
+    },
+    {
+      "position": 21,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 21,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 22,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 22,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 23,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 23,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 24,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 24,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 25,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 25,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 26,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 26,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 27,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 27,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 28,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 28,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 29,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 29,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 30,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 30,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 31,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 32,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 33,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 34,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 35,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 36,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 37,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 38,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 38,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u2014\u2014\u00b7\u2014\u2014\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 39,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 39,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 40,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 40,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 41,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 41,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 42,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 42,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 43,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 43,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 44,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 44,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 45,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 45,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 46,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 46,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "FRAGMENTED",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 47,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "BURST",
+      "followed_branching": true,
+      "branch_from": "FRAGMENTED"
+    },
+    {
+      "position": 47,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "BURST",
+      "followed_branching": true,
+      "branch_from": "FRAGMENTED"
+    },
+    {
+      "position": 48,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u00b7\u2014\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "FRAGMENTED"
+    },
+    {
+      "position": 48,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "FRAGMENTED"
+    },
+    {
+      "position": 49,
+      "type": "burst_triggered",
+      "pattern": "\u2014\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "BURST",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 49,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014\u00b7\u2014",
+      "context_state": "BURST",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 50,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u2014\u2014\u00b7\u2014\u2014\u2014",
+      "context_state": "CORE",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    },
+    {
+      "position": 51,
+      "type": "fragmented_triggered",
+      "pattern": "\u00b7\u2014\u00b7\u00b7\u2014\u2014\u00b7\u2014\u2014\u2014",
+      "context_state": "BURST",
+      "followed_branching": true,
+      "branch_from": "CORE"
+    }
+  ],
+  "execution_log": [
+    {
+      "position": 0,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u00b7\u00b7\u00b7",
+      "branched": true,
+      "scalar": 12.62
+    },
+    {
+      "position": 1,
+      "state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u00b7\u00b7\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 2,
+      "state": "CORE",
+      "window": "\u00b7\u00b7\u00b7\u00b7\u2014",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 3,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u2014\u00b7",
+      "branched": true,
+      "scalar": 12.62
+    },
+    {
+      "position": 4,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u2014\u00b7\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 5,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u00b7\u00b7\u2014",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 6,
+      "state": "CORE",
+      "window": "\u2014\u00b7\u00b7\u2014\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 7,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u2014\u00b7\u00b7",
+      "branched": true,
+      "scalar": 12.62
+    },
+    {
+      "position": 8,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u00b7\u00b7\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 9,
+      "state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u00b7\u00b7\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 10,
+      "state": "CORE",
+      "window": "\u00b7\u00b7\u00b7\u00b7\u2014",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 11,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u2014\u00b7",
+      "branched": true,
+      "scalar": 12.62
+    },
+    {
+      "position": 12,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u2014\u00b7\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 13,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u00b7\u00b7\u2014",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 14,
+      "state": "CORE",
+      "window": "\u2014\u00b7\u00b7\u2014\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 15,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u2014\u00b7\u00b7",
+      "branched": true,
+      "scalar": 12.62
+    },
+    {
+      "position": 16,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u00b7\u00b7\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 17,
+      "state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u00b7\u00b7\u2014",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 18,
+      "state": "CORE",
+      "window": "\u00b7\u00b7\u00b7\u2014\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 19,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u2014\u00b7\u2014",
+      "branched": true,
+      "scalar": 12.62
+    },
+    {
+      "position": 20,
+      "state": "CORE",
+      "window": "\u00b7\u2014\u00b7\u2014\u00b7",
+      "branched": true,
+      "scalar": 12.62
+    },
+    {
+      "position": 21,
+      "state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u2014\u00b7\u00b7",
+      "branched": true,
+      "scalar": 12.62
+    },
+    {
+      "position": 22,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u00b7\u00b7\u2014",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 23,
+      "state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u00b7\u2014\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 24,
+      "state": "CORE",
+      "window": "\u00b7\u00b7\u2014\u00b7\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 25,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u00b7\u00b7\u2014",
+      "branched": true,
+      "scalar": 12.62
+    },
+    {
+      "position": 26,
+      "state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u00b7\u2014\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 27,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u2014\u00b7\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 28,
+      "state": "CORE",
+      "window": "\u00b7\u2014\u00b7\u00b7\u00b7",
+      "branched": false,
+      "scalar": 12.62
+    },
+    {
+      "position": 29,
+      "state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u00b7\u00b7\u00b7",
+      "branched": true,
+      "scalar": 12.62
+    },
+    {
+      "position": 30,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u00b7\u00b7",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 31,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u00b7\u00b7",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 32,
+      "state": "CORE",
+      "window": "\u00b7\u00b7\u00b7\u00b7\u00b7",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 33,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u00b7\u00b7",
+      "branched": true,
+      "scalar": null
+    },
+    {
+      "position": 34,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u00b7\u2014",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 35,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u2014\u2014",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 36,
+      "state": "CORE",
+      "window": "\u00b7\u00b7\u2014\u2014\u00b7",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 37,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u2014\u00b7\u2014",
+      "branched": true,
+      "scalar": null
+    },
+    {
+      "position": 38,
+      "state": "FRAGMENTED",
+      "window": "\u2014\u2014\u00b7\u2014\u00b7",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 39,
+      "state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u2014\u00b7\u00b7",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 40,
+      "state": "CORE",
+      "window": "\u00b7\u2014\u00b7\u00b7\u00b7",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 41,
+      "state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u00b7\u00b7\u00b7",
+      "branched": true,
+      "scalar": null
+    },
+    {
+      "position": 42,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u00b7\u2014",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 43,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u00b7\u00b7\u2014\u00b7",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 44,
+      "state": "CORE",
+      "window": "\u00b7\u00b7\u2014\u00b7\u00b7",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 45,
+      "state": "FRAGMENTED",
+      "window": "\u00b7\u2014\u00b7\u00b7\u2014",
+      "branched": true,
+      "scalar": null
+    },
+    {
+      "position": 46,
+      "state": "FRAGMENTED",
+      "window": "\u2014\u00b7\u00b7\u2014\u2014",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 47,
+      "state": "BURST",
+      "window": "\u00b7\u00b7\u2014\u2014\u2014",
+      "branched": true,
+      "scalar": null
+    },
+    {
+      "position": 48,
+      "state": "CORE",
+      "window": "\u00b7\u2014\u2014\u2014\u2014",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 49,
+      "state": "BURST",
+      "window": "\u2014\u2014\u2014\u2014\u2014",
+      "branched": true,
+      "scalar": null
+    },
+    {
+      "position": 50,
+      "state": "CORE",
+      "window": "\u2014\u2014\u2014\u2014\u2014",
+      "branched": false,
+      "scalar": null
+    },
+    {
+      "position": 51,
+      "state": "BURST",
+      "window": "\u2014\u2014\u2014\u2014\u2014",
+      "branched": true,
+      "scalar": null
+    }
+  ]
+}
