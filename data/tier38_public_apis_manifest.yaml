@@ -1,0 +1,27 @@
+# Tier 38 — public API extension domains (Game drive cache + vendor summaries).
+version: "1.0"
+updated: "2026-07-08"
+
+external_data_root: "D:/FSOT-2.1-Lean-PublicData"
+env_override: FSOT_EXTERNAL_DATA_ROOT
+
+ingest:
+  script: scripts/ingest_tier38_public_data.py
+
+build:
+  script: scripts/build_tier38_public_data_benchmarks.py
+
+lean:
+  generator: scripts/gen_tier38_public_data_lean.py
+
+domains:
+  - NIST_CODATA_Constants
+  - GBIF_Species_Occurrence
+  - NOAA_Coastal_Tides
+  - World_Bank_Development
+  - NASA_Exoplanet_Archive
+  - RCSB_PDB_Structures
+  - OpenAlex_Citation_Graph
+  - PubChem_Compound_Properties
+  - CERN_Open_Data_LHC
+  - UniProt_Protein_Annotations
