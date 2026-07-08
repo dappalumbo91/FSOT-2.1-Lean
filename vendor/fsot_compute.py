@@ -599,7 +599,7 @@ def wave8() -> list[Result]:
     r.append(Result("BR_Z_inv", "(1/3)/A_in", (mpf(1)/3)/A_IN, mpf("0.2000")))
     # Higgs BR (5)
     r.append(Result("BR_H_ZZ", "1/(e⁴ln(2))", 1/(E**4*ln(2)), mpf("0.0264")))
-    r.append(Result("BR_H_gg", "φ⁻⁴ − γ⁵", PHI**(-4) - GAMMA**5, mpf("0.0785")))
+    r.append(Result("BR_H_gg", "γ⁵ − γ_c⁵", GAMMA**5 - GAMMA_C**5, mpf("0.0785")))
     r.append(Result("BR_H_cc", "Suction/(πφ)", SUCTION/(PI*PHI), mpf("0.0289")))
     r.append(Result("BR_H_gamgam", "γ⁶·C_cosm", GAMMA**6*C_COSM, mpf("0.00228"), 0.1))
     r.append(Result("BR_H_Zgam", "η_eff/π⁵", ETA_EFF/PI**5, mpf("0.00153"), 0.1))

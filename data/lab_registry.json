@@ -48039,7 +48039,7 @@
     "median_error_pct": 0.022,
     "within_five_pct_count": 50,
     "source_root": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab",
-    "ingested_at": "2026-07-08T18:50:46.039201+00:00"
+    "ingested_at": "2026-07-08T19:29:23.031038+00:00"
   },
   "particle_physics_lab": {
     "smiles_particle_count": 36,
@@ -48055,8 +48055,8 @@
   "cosmology_higher_waves_lab": {
     "observable_count": 142,
     "measured_count": 142,
-    "max_error_pct": 4.232801452006084,
-    "mean_error_pct": 0.08133168472446134,
+    "max_error_pct": 2.3926561361968224,
+    "mean_error_pct": 0.05154761481499214,
     "wave5_count": 22,
     "wave6_count": 22,
     "wave7_count": 29,
@@ -48731,10 +48731,10 @@
       {
         "wave": "wave8",
         "name": "BR_H_gg",
-        "formula": "\u03c6\u207b\u2074 \u2212 \u03b3\u2075",
-        "computed": 0.08182274913982478,
+        "formula": "\u03b3\u2075 \u2212 \u03b3_c\u2075",
+        "computed": 0.07850271886701625,
         "measured": 0.0785,
-        "error_pct": 4.232801452006084
+        "error_pct": 0.0034635248614639973
       },
       {
         "wave": "wave8",
@@ -49210,15 +49210,15 @@
       }
     ],
     "compute_path": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab\\fsot_compute.py",
-    "ingested_at": "2026-07-03T15:26:11.529265+00:00"
+    "ingested_at": "2026-07-08T19:29:23.318987+00:00"
   },
   "higgs_branching_lab": {
     "compute_higgs_count": 9,
     "thesis_higgs_count": 5,
     "observable_count": 14,
-    "median_error_pct": 0.08808351263334355,
-    "max_error_pct": 4.232801452006084,
-    "ingested_at": "2026-07-03T15:26:11.792009+00:00"
+    "median_error_pct": 0.014721632079759569,
+    "max_error_pct": 0.27079952979037436,
+    "ingested_at": "2026-07-08T19:29:24.020811+00:00"
   },
   "space_weather_lab": {
     "kp_record_count": 43893,
@@ -49235,7 +49235,7 @@
     "max_error_pct": 0.09098602506082563,
     "mean_error_pct": 0.018367234034056677,
     "median_error_pct": 0.0020773615251059676,
-    "ingested_at": "2026-07-03T15:58:23.078995+00:00",
+    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave6_lab": {
@@ -49245,7 +49245,7 @@
     "max_error_pct": 0.031298130508454446,
     "mean_error_pct": 0.0030742870216562625,
     "median_error_pct": 0.0003441841587202251,
-    "ingested_at": "2026-07-03T15:58:23.078995+00:00",
+    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave7_lab": {
@@ -49255,17 +49255,17 @@
     "max_error_pct": 0.2980550885153489,
     "mean_error_pct": 0.026245344277916752,
     "median_error_pct": 0.003988029700396626,
-    "ingested_at": "2026-07-03T15:58:23.078995+00:00",
+    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave8_lab": {
     "wave": 8,
     "observable_count": 52,
     "measured_count": 52,
-    "max_error_pct": 4.232801452006084,
-    "mean_error_pct": 0.18958827252035676,
-    "median_error_pct": 0.014206603092685816,
-    "ingested_at": "2026-07-03T15:58:23.078995+00:00",
+    "max_error_pct": 2.3926561361968224,
+    "mean_error_pct": 0.10825485084449862,
+    "median_error_pct": 0.014145689288404753,
+    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave9_lab": {
@@ -49275,7 +49275,7 @@
     "max_error_pct": 0.19375824846825943,
     "mean_error_pct": 0.06422582634391334,
     "median_error_pct": 0.014278509753575246,
-    "ingested_at": "2026-07-03T15:58:23.078995+00:00",
+    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave10_lab": {
@@ -49285,7 +49285,7 @@
     "max_error_pct": 0.004079227596853056,
     "mean_error_pct": 0.0008099828122291297,
     "median_error_pct": 0.0006556117321513212,
-    "ingested_at": "2026-07-03T15:58:23.078995+00:00",
+    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave4_lab": {
@@ -49295,7 +49295,7 @@
     "max_error_pct": 0.23468225112121452,
     "mean_error_pct": 0.03162247159570792,
     "median_error_pct": 0.011586387979935279,
-    "ingested_at": "2026-07-03T15:58:23.078995+00:00",
+    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
     "parent_lab": "cosmology_wave4"
   },
   "hydrology_lab": {

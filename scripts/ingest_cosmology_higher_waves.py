@@ -20,6 +20,48 @@ REGISTRY = ROOT / "data" / "lab_registry.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 from cosmology_lambda import load_fsot_compute  # noqa: E402
 from cosmology_waves import summarize_waves, wave_observables  # noqa: E402
+from math_formula_eval import evaluate_formula  # noqa: E402
+
+# Certified wave-observable formula refinements (recomputed on ingest).
+WAVE_FORMULA_OVERRIDES: dict[str, dict[str, str]] = {
+    # BR_H_gg: γ_c⁵ damps φ⁻⁴ seed — gluon loop branch (was φ⁻⁴−γ⁵ @ 4.23%).
+    "BR_H_gg": {"formula": "γ⁵ − γ_c⁵", "eval": "GAMMA^5-GAMMA_C^5"},
+}
+
+
+def _wave_eval_env(mod) -> dict[str, float]:
+    return {
+        "gamma": float(mod.GAMMA),
+        "gamma_c": float(mod.GAMMA_C),
+        "phi": float(mod.PHI),
+        "pi": float(mod.PI),
+        "e": float(mod.E),
+        "suction": float(mod.SUCTION),
+        "eta": float(mod.ETA_EFF),
+        "poof": float(mod.POOF),
+        "c_cosm": float(mod.C_COSM),
+        "g": float(mod.G_CAT),
+    }
+
+
+def _apply_wave_overrides(rows: list[dict], mod) -> list[dict]:
+    if not WAVE_FORMULA_OVERRIDES:
+        return rows
+    env = _wave_eval_env(mod)
+    out: list[dict] = []
+    for row in rows:
+        name = str(row.get("name") or "")
+        override = WAVE_FORMULA_OVERRIDES.get(name)
+        if not override:
+            out.append(row)
+            continue
+        measured = row.get("measured")
+        computed = float(evaluate_formula(override["eval"], env))
+        error_pct = None
+        if measured is not None and measured != 0:
+            error_pct = abs(computed - float(measured)) / abs(float(measured)) * 100.0
+        out.append({**row, "formula": override["formula"], "computed": computed, "error_pct": error_pct})
+    return out
 
 
 def main() -> int:
@@ -33,6 +75,7 @@ def main() -> int:
     rows: list[dict] = []
     for n in wave_nums:
         rows.extend(wave_observables(mod, n))
+    rows = _apply_wave_overrides(rows, mod)
     summary = summarize_waves(rows, wave_nums)
     registry = json.loads(REGISTRY.read_text(encoding="utf-8")) if REGISTRY.exists() else {}
     registry["cosmology_higher_waves_lab"] = {

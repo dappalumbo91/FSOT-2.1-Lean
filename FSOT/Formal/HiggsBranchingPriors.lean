@@ -14,8 +14,8 @@ open Real
 def higgs_compute_branching_count : ℕ := 9
 def higgs_thesis_target_count : ℕ := 5
 def higgs_branching_observable_count : ℕ := 14
-def higgs_branching_median_error_pct : ℝ := (0.08808351263334355 : ℝ)
-def higgs_branching_max_error_pct : ℝ := (4.232801452006084 : ℝ)
+def higgs_branching_median_error_pct : ℝ := (0.014721632079759569 : ℝ)
+def higgs_branching_max_error_pct : ℝ := (0.27079952979037436 : ℝ)
 
 theorem higgs_compute_branching_count_pos : 0 < higgs_compute_branching_count := by
   unfold higgs_compute_branching_count; norm_num
