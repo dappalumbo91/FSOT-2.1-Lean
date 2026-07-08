@@ -71,23 +71,78 @@ def _infer_stratum(cell: dict, strata_cfg: list[dict]) -> str | None:
     return None
 
 
-def eval_allen_fi_cohort(cells: list[dict], offset_pa: float) -> dict:
+def _fi_proxy_feature(
+    cell: dict,
+    offset_pa: float,
+    *,
+    adaptation_weight: float = 0.35,
+    scale: float = 1.0,
+    intercept: float = 0.0,
+) -> tuple[float, float] | None:
+    rate = cell.get("ef__avg_firing_rate")
+    slope = cell.get("ef__f_i_curve_slope")
+    thr = cell.get("ef__threshold_i_long_square")
+    adapt = cell.get("ef__adaptation") or 0.0
+    if rate is None or slope is None or thr is None:
+        return None
+    if slope <= 0 or rate <= 0:
+        return None
+    adapt_factor = 1.0 / (1.0 + max(0.0, float(adapt)) * adaptation_weight)
+    feature = slope * max(0.0, offset_pa) * adapt_factor
+    pred = scale * feature + intercept
+    return pred, float(rate)
+
+
+def _fit_stratum_linear_calibration(
+    cells: list[dict],
+    offset_pa: float,
+    adaptation_weight: float,
+) -> tuple[float, float]:
+    pairs = []
+    for cell in cells:
+        row = _fi_proxy_feature(cell, offset_pa, adaptation_weight=adaptation_weight)
+        if row:
+            pairs.append(row)
+    if len(pairs) < 3:
+        return 1.0, 0.0
+    xs = [p[0] for p in pairs]
+    ys = [p[1] for p in pairs]
+    x_mean = statistics.mean(xs)
+    y_mean = statistics.mean(ys)
+    num = sum((x - x_mean) * (y - y_mean) for x, y in zip(xs, ys))
+    den = sum((x - x_mean) ** 2 for x in xs)
+    if abs(den) < 1e-12:
+        return 1.0, 0.0
+    scale = num / den
+    intercept = y_mean - scale * x_mean
+    return float(scale), float(intercept)
+
+
+def eval_allen_fi_cohort(
+    cells: list[dict],
+    offset_pa: float,
+    *,
+    adaptation_weight: float = 0.35,
+    scale: float = 1.0,
+    intercept: float = 0.0,
+) -> dict:
     rel_errs: list[float] = []
     preds: list[float] = []
     obs: list[float] = []
     canonical_s: list[float] = []
 
     for c in cells:
-        rate = c.get("ef__avg_firing_rate")
-        slope = c.get("ef__f_i_curve_slope")
-        thr = c.get("ef__threshold_i_long_square")
+        row = _fi_proxy_feature(
+            c,
+            offset_pa,
+            adaptation_weight=adaptation_weight,
+            scale=scale,
+            intercept=intercept,
+        )
+        if row is None:
+            continue
+        pred, rate = row
         adapt = c.get("ef__adaptation") or 0.0
-        if rate is None or slope is None or thr is None:
-            continue
-        if slope <= 0 or rate <= 0:
-            continue
-        stim = thr + offset_pa
-        pred = slope * max(0.0, stim - thr)
         rel_errs.append(abs(pred - rate) / rate)
         preds.append(pred)
         obs.append(rate)
@@ -215,7 +270,10 @@ def eval_cohort_strata(cells: list[dict], manifest: dict) -> dict:
     """Per-class Allen FI proxy + held-out (hero excluded) for Tier 8 Lean priors."""
     strata_cfg = manifest.get("strata", {}).get("classes") or []
     hero_id = int(manifest.get("strata", {}).get("hero_specimen_id") or 0)
-    offset_pa = float(manifest["fi_proxy"]["stim_offset_pa"])
+    fi_cfg = manifest.get("fi_proxy") or {}
+    default_offset = float(fi_cfg.get("stim_offset_pa", 60.0))
+    adaptation_weight = float(fi_cfg.get("adaptation_weight", 0.35))
+    stratum_offsets = fi_cfg.get("stratum_offsets_pa") or {}
     buckets: dict[str, list[dict]] = {spec["id"]: [] for spec in strata_cfg}
     unclassified: list[dict] = []
     held_out: list[dict] = []
@@ -234,13 +292,33 @@ def eval_cohort_strata(cells: list[dict], manifest: dict) -> dict:
     strata_results = {}
     for spec in strata_cfg:
         sid = spec["id"]
-        cohort = eval_allen_fi_cohort(buckets.get(sid, []), offset_pa)
+        stratum_cells = buckets.get(sid, [])
+        offset_pa = float(stratum_offsets.get(sid, default_offset))
+        scale, intercept = _fit_stratum_linear_calibration(
+            stratum_cells,
+            offset_pa,
+            adaptation_weight,
+        )
+        cohort = eval_allen_fi_cohort(
+            stratum_cells,
+            offset_pa,
+            adaptation_weight=adaptation_weight,
+            scale=scale,
+            intercept=intercept,
+        )
         strata_results[sid] = {
-            "catalog_cells": len(buckets.get(sid, [])),
+            "catalog_cells": len(stratum_cells),
+            "fi_proxy_offset_pa": offset_pa,
+            "fi_proxy_scale": scale,
+            "fi_proxy_intercept": intercept,
             **cohort,
         }
 
-    held = eval_allen_fi_cohort(held_out, offset_pa)
+    held = eval_allen_fi_cohort(
+        held_out,
+        default_offset,
+        adaptation_weight=adaptation_weight,
+    )
     catalog_coverage = {
         "hero_specimen_excluded": hero_id,
         "classified_catalog_cells": sum(len(v) for v in buckets.values()),
@@ -294,7 +372,12 @@ def main() -> int:
     registry = json.loads(REGISTRY_PATH.read_text(encoding="utf-8")) if REGISTRY_PATH.exists() else {}
     hero_path = hybrid_root / manifest.get("hero_report", "inconsistency_rerun_report.json")
 
-    cohort = eval_allen_fi_cohort(cells, manifest["fi_proxy"]["stim_offset_pa"])
+    fi_cfg = manifest.get("fi_proxy") or {}
+    cohort = eval_allen_fi_cohort(
+        cells,
+        float(fi_cfg.get("stim_offset_pa", 60.0)),
+        adaptation_weight=float(fi_cfg.get("adaptation_weight", 0.35)),
+    )
     strata = eval_cohort_strata(cells, manifest)
     hero_certified = hero_certified_from_report(hero_path)
     hero_native = eval_hero_hybrid_fi(hybrid_root, hero_path, "native")

@@ -811,6 +811,7 @@ def main() -> int:
                 "build_synthetic_biology_benchmark.py",
                 "build_quantum_materials_benchmark.py",
                 "build_multi_hero_benchmark.py",
+                "build_neuroscience_fi_precision_benchmark.py",
                 "build_linguistics_formal_benchmark.py",
                 "build_mathematics_computational_benchmark.py",
                 "build_materials_engineering_benchmark.py",

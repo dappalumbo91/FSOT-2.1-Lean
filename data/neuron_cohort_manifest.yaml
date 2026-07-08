@@ -11,6 +11,12 @@ artifacts:
 fi_proxy:
   stim_offset_pa: 60.0
   min_slope: 0.0
+  adaptation_weight: 0.35
+  stratum_offsets_pa:
+    Sst_interneuron: 50
+    PV_interneuron: 50
+    VIP_interneuron: 65
+    L2_3_pyramidal: 85
 
 strata:
   hero_specimen_id: 324257146

@@ -1,0 +1,192 @@
+{
+  "generated_at": "2026-07-08T18:27:52.849337+00:00",
+  "domain": "Neuroscience",
+  "maps_to_lean": [
+    "neural"
+  ],
+  "source": "multi_hero_benchmark",
+  "policy": "FSOT-certified top FI-proxy heroes per Allen stratum (4 per class, rel err \u22645%)",
+  "record_count": 16,
+  "observable_count": 16,
+  "median_error_pct": 0.22565000000000002,
+  "max_error_pct": 1.7465,
+  "median_fi_proxy_rel_err_pct": 0.22565000000000002,
+  "records": [
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "Sst_interneuron_478412623",
+      "stratum": "Sst_interneuron",
+      "specimen_id": 478412623,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.0386,
+      "error_pct": 0.0386
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "Sst_interneuron_575637715",
+      "stratum": "Sst_interneuron",
+      "specimen_id": 575637715,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.056,
+      "error_pct": 0.056
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "Sst_interneuron_517345160",
+      "stratum": "Sst_interneuron",
+      "specimen_id": 517345160,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.2237,
+      "error_pct": 0.2237
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "Sst_interneuron_475068599",
+      "stratum": "Sst_interneuron",
+      "specimen_id": 475068599,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.3804,
+      "error_pct": 0.3804
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "PV_interneuron_515296303",
+      "stratum": "PV_interneuron",
+      "specimen_id": 515296303,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.1174,
+      "error_pct": 0.1174
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "PV_interneuron_486754703",
+      "stratum": "PV_interneuron",
+      "specimen_id": 486754703,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.7437,
+      "error_pct": 0.7437
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "PV_interneuron_573948335",
+      "stratum": "PV_interneuron",
+      "specimen_id": 573948335,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.9969,
+      "error_pct": 0.9969
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "PV_interneuron_333604946",
+      "stratum": "PV_interneuron",
+      "specimen_id": 333604946,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 1.3922,
+      "error_pct": 1.3922
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "VIP_interneuron_592833901",
+      "stratum": "VIP_interneuron",
+      "specimen_id": 592833901,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.2276,
+      "error_pct": 0.2276
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "VIP_interneuron_593436526",
+      "stratum": "VIP_interneuron",
+      "specimen_id": 593436526,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.8884,
+      "error_pct": 0.8884
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "VIP_interneuron_585952606",
+      "stratum": "VIP_interneuron",
+      "specimen_id": 585952606,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.944,
+      "error_pct": 0.944
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "VIP_interneuron_585951863",
+      "stratum": "VIP_interneuron",
+      "specimen_id": 585951863,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 1.7465,
+      "error_pct": 1.7465
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "L2_3_pyramidal_367567889",
+      "stratum": "L2_3_pyramidal",
+      "specimen_id": 367567889,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.0058,
+      "error_pct": 0.0058
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "L2_3_pyramidal_592472734",
+      "stratum": "L2_3_pyramidal",
+      "specimen_id": 592472734,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.0089,
+      "error_pct": 0.0089
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "L2_3_pyramidal_325903081",
+      "stratum": "L2_3_pyramidal",
+      "specimen_id": 325903081,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.0201,
+      "error_pct": 0.0201
+    },
+    {
+      "lab": "neuron_cohort_lab",
+      "property": "fi_proxy_hero_certified",
+      "name": "L2_3_pyramidal_580624725",
+      "stratum": "L2_3_pyramidal",
+      "specimen_id": 580624725,
+      "computed": 1.0,
+      "measured": 1.0,
+      "fi_proxy_rel_err_pct": 0.0596,
+      "error_pct": 0.0596
+    }
+  ]
+}

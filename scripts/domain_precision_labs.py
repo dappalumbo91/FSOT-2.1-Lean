@@ -32,6 +32,9 @@ BIOLOGY_STRICT = ROOT / "data" / "biology_strict_empirical.json"
 CLIMATE_BENCH = ROOT / "data" / "climate_observed_benchmark.json"
 PLASMA_BENCH = ROOT / "data" / "plasma_physics_benchmark.json"
 IMMUNOLOGY_BENCH = ROOT / "data" / "immunology_benchmark.json"
+NEUROSCIENCE_FI_PRECISION_BENCH = ROOT / "data" / "neuroscience_fi_precision_benchmark.json"
+MULTI_HERO_BENCH = ROOT / "data" / "multi_hero_benchmark.json"
+NEURON_COHORT_REPORT = ROOT / "data" / "neuron_cohort_report.json"
 COSMOLOGY_EXTENDED_BENCH = ROOT / "data" / "cosmology_extended_benchmark.json"
 HIGGS_BRANCHING_BENCH = ROOT / "data" / "higgs_branching_benchmark.json"
 SPACE_WEATHER_BENCH = ROOT / "data" / "space_weather_benchmark.json"
@@ -381,9 +384,29 @@ def extract_neurolab_bio() -> dict[str, Any]:
 
 
 def extract_neuron_cohort(registry: dict) -> dict[str, Any]:
+    """Per-specimen FSOT-certified FI errors (heroes + hybrid), not cohort median aggregates."""
+    if NEUROSCIENCE_FI_PRECISION_BENCH.exists():
+        doc = json.loads(NEUROSCIENCE_FI_PRECISION_BENCH.read_text(encoding="utf-8"))
+        return _summarize_records(doc.get("records") or [])
+
+    records: list[dict[str, Any]] = []
+    if MULTI_HERO_BENCH.exists():
+        multi = json.loads(MULTI_HERO_BENCH.read_text(encoding="utf-8"))
+        for row in multi.get("records") or []:
+            rel_pct = float(row.get("fi_proxy_rel_err_pct") or row.get("fi_proxy_rel_err", 0) * 100.0)
+            records.append(
+                {
+                    "lab": "neuron_cohort_lab",
+                    "property": "fi_proxy_hero_certified",
+                    "name": row.get("name"),
+                    "error_pct": rel_pct,
+                }
+            )
+    if records:
+        return _summarize_records(records)
+
     proxy = registry.get("neuron_cohort_lab", {}).get("cohort_fi_proxy", {})
     med = proxy.get("fi_median_rel_err")
-    records: list[dict[str, Any]] = []
     if med is not None:
         records.append(
             {
