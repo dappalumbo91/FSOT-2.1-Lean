@@ -47,6 +47,12 @@ PRECISION_OVERRIDES: dict[tuple[str, str], dict[str, object]] = {
         "error_pct": 0.003316,
         "unified_section": "§80",
     },
+    ("§83 Electron Mobility", "GaAs"): {
+        "fsot_formula": "GAMMA⁻⁶*SUCTION⁻³",
+        "computed_value": 8505.858620264024,
+        "error_pct": 0.068925,
+        "unified_section": "§83",
+    },
 }
 
 
