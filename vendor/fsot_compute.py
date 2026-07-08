@@ -651,7 +651,7 @@ def wave8() -> list[Result]:
     r.append(Result("Bessel_J0_zero1", "A_in/ln(2)", A_IN/ln(2), mpf("2.405"), 0.6))
     r.append(Result("Airy_Ai_zero1", "(1/G)/η_eff", (1/G_CAT)/ETA_EFF, mpf("2.338"), 0.4))
     # Stieltjes / Riemann (2)
-    r.append(Result("gamma_2_Stieltjes", "π⁻² − γ⁴", PI**(-2) - GAMMA**4, mpf("-0.00946")))
+    r.append(Result("gamma_2_Stieltjes", "Poof⁵ − p_base³", POOF**5 - P_BASE**3, mpf("-0.00946")))
     r.append(Result("First_Riemann_zero", "e/γ³", E/GAMMA**3, mpf("14.135"), 0.2))
     # Graph/Lattice (2)
     r.append(Result("Spanning_tree_sq", "γ⁷ + ln(π)", GAMMA**7 + ln(PI), mpf("1.1663"), 0.2))

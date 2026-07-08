@@ -26,6 +26,8 @@ from math_formula_eval import evaluate_formula  # noqa: E402
 WAVE_FORMULA_OVERRIDES: dict[str, dict[str, str]] = {
     # BR_H_gg: γ_c⁵ damps φ⁻⁴ seed — gluon loop branch (was φ⁻⁴−γ⁵ @ 4.23%).
     "BR_H_gg": {"formula": "γ⁵ − γ_c⁵", "eval": "GAMMA^5-GAMMA_C^5"},
+    # gamma_2_Stieltjes: Poof⁵−p_base³ damps π⁻²−γ⁴ seed (was 2.39%).
+    "gamma_2_Stieltjes": {"formula": "Poof⁵ − p_base³", "eval": "POOF^5-P_BASE^3"},
 }
 
 
@@ -39,6 +41,7 @@ def _wave_eval_env(mod) -> dict[str, float]:
         "suction": float(mod.SUCTION),
         "eta": float(mod.ETA_EFF),
         "poof": float(mod.POOF),
+        "p_base": float(mod.P_BASE),
         "c_cosm": float(mod.C_COSM),
         "g": float(mod.G_CAT),
     }

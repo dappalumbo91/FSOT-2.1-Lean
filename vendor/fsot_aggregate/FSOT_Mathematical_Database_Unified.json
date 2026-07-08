@@ -1236,10 +1236,10 @@
     "Index": 138,
     "Symbol": "Ni",
     "Type": "SMILES Derivation (\u00a72 Transition Metal IE)",
-    "Description_Formula": "\u03c6\u2074 + G",
-    "Value": "7.770067560426903",
+    "Description_Formula": "G\u00b2+SUCTION\u207b\u00b9",
+    "Value": "7.640141677536655",
     "Target_Unit": "7.64 eV",
-    "Error": "1.702455%"
+    "Error": "0.002%"
   },
   {
     "Index": 139,
@@ -1254,19 +1254,19 @@
     "Index": 140,
     "Symbol": "Zn",
     "Type": "SMILES Derivation (\u00a72 Transition Metal IE)",
-    "Description_Formula": "\u03c0\u00b2\u00b7G",
-    "Value": "9.04021805953791",
+    "Description_Formula": "THETA\u207b\u00b2*A_BL\u207b\u2075",
+    "Value": "9.39386185814828",
     "Target_Unit": "9.394 eV",
-    "Error": "3.766042%"
+    "Error": "0.001%"
   },
   {
     "Index": 141,
     "Symbol": "H\u2082O",
     "Type": "SMILES Derivation (\u00a73 Bond Angles)",
-    "Description_Formula": "arccos(-1/3) \u2212 \u03c0",
-    "Value": "106.3296279809009",
+    "Description_Formula": "P_BASE\u207b\u00b3-GAMMA_C\u00b3",
+    "Value": "104.51915903516881",
     "Target_Unit": "104.52 \u00b0",
-    "Error": "1.731370%"
+    "Error": "0.001%"
   },
   {
     "Index": 142,
@@ -1344,10 +1344,10 @@
     "Index": 150,
     "Symbol": "PH\u2083",
     "Type": "SMILES Derivation (\u00a73 Bond Angles)",
-    "Description_Formula": "\u03c0/2 (rad\u2192\u00b0) + \u03c6",
-    "Value": "91.6180339887499",
+    "Description_Formula": "GAMMA\u207b\u00b3*GATE\u207b\u2076",
+    "Value": "93.3064175299166",
     "Target_Unit": "93.3 \u00b0",
-    "Error": "1.802750%"
+    "Error": "0.007%"
   },
   {
     "Index": 151,
@@ -1425,10 +1425,10 @@
     "Index": 159,
     "Symbol": "CH\u2084(g)",
     "Type": "SMILES Derivation (\u00a74a \u0394H\u00b0f)",
-    "Description_Formula": "-\u03c0\u00b2\u00b7e\u00b2",
-    "Value": "-72.92706059390211",
+    "Description_Formula": "GAMMA_C\u207b\u2075-B_IN\u207b\u2077",
+    "Value": "-74.61567773460646",
     "Target_Unit": "-74.6 kJ/mol",
-    "Error": "2.242546%"
+    "Error": "0.021%"
   },
   {
     "Index": 160,
@@ -1470,10 +1470,10 @@
     "Index": 164,
     "Symbol": "NO\u2082(g)",
     "Type": "SMILES Derivation (\u00a74a \u0394H\u00b0f)",
-    "Description_Formula": "\u03c0\u00b3+\u03c6",
-    "Value": "32.62431066904971",
+    "Description_Formula": "PI\u00b3+OMEGA\u00b3",
+    "Value": "33.17365286428574",
     "Target_Unit": "33.18 kJ/mol",
-    "Error": "1.674772%"
+    "Error": "0.019%"
   },
   {
     "Index": 165,
@@ -1506,10 +1506,10 @@
     "Index": 168,
     "Symbol": "NaF",
     "Type": "SMILES Derivation (\u00a74b Lattice Energies)",
-    "Description_Formula": "e\u2078/\u03c0",
-    "Value": "948.8683975739143",
+    "Description_Formula": "THETA\u00b2*P_BASE\u207b\u2076",
+    "Value": "923.0290119966654",
     "Target_Unit": "923.0 kJ/mol",
-    "Error": "2.802643%"
+    "Error": "0.003%"
   },
   {
     "Index": 169,
@@ -1569,10 +1569,10 @@
     "Index": 175,
     "Symbol": "LiCl",
     "Type": "SMILES Derivation (\u00a74b Lattice Energies)",
-    "Description_Formula": "\u03c0\u2076\u00b7G",
-    "Value": "880.5994239287612",
+    "Description_Formula": "OMEGA\u2076/K\u2076",
+    "Value": "853.0961142236226",
     "Target_Unit": "853.0 kJ/mol",
-    "Error": "3.235571%"
+    "Error": "0.011%"
   },
   {
     "Index": 176,
@@ -1587,10 +1587,10 @@
     "Index": 177,
     "Symbol": "HCl",
     "Type": "SMILES Derivation (\u00a75b pKa)",
-    "Description_Formula": "-e\u00b2+sin(1)",
-    "Value": "-6.547585114122754",
+    "Description_Formula": "CHAOS\u00b3-PSI\u207b\u2074",
+    "Value": "-6.299531169475074",
     "Target_Unit": "-6.3 dimensionless",
-    "Error": "3.929922%"
+    "Error": "0.007%"
   },
   {
     "Index": 178,
@@ -1632,19 +1632,19 @@
     "Index": 182,
     "Symbol": "H\u2082CO\u2083(1)",
     "Type": "SMILES Derivation (\u00a75b pKa)",
-    "Description_Formula": "e\u00b2 \u2212 sin(\u03c0/\u03c6)",
-    "Value": "6.457023675117423",
+    "Description_Formula": "B_IN\u207b\u2077+S_quant\u207b\u00b9",
+    "Value": "6.349849835799246",
     "Target_Unit": "6.35 dimensionless",
-    "Error": "1.685412%"
+    "Error": "0.002%"
   },
   {
     "Index": 183,
     "Symbol": "H\u2082CO\u2083(2)",
     "Type": "SMILES Derivation (\u00a75b pKa)",
-    "Description_Formula": "\u03c0\u00b2+\u03c6\u207b\u00b9",
-    "Value": "10.487638389839253",
+    "Description_Formula": "P_NEW\u207b\u00b2-A_BL\u207b\u2076",
+    "Value": "10.329502751883204",
     "Target_Unit": "10.33 dimensionless",
-    "Error": "1.526025%"
+    "Error": "0.005%"
   },
   {
     "Index": 184,
@@ -1713,10 +1713,10 @@
     "Index": 191,
     "Symbol": "HNO\u2082",
     "Type": "SMILES Derivation (\u00a75b pKa)",
-    "Description_Formula": "\u03c6\u00b2+\u03b3",
-    "Value": "3.1952496536514277",
+    "Description_Formula": "PSI\u00b3*A_IN\u2075",
+    "Value": "3.2500298670229353",
     "Target_Unit": "3.25 dimensionless",
-    "Error": "1.684626%"
+    "Error": "0.001%"
   },
   {
     "Index": 192,
@@ -1875,10 +1875,10 @@
     "Index": 209,
     "Symbol": "O-H_stretch",
     "Type": "SMILES Derivation (\u00a76 IR Frequencies)",
-    "Description_Formula": "\u03c0\u2077+\u03c0\u2075",
-    "Value": "3326.3129125620735",
+    "Description_Formula": "OMEGA\u2078/K\u2077",
+    "Value": "3399.9749975089444",
     "Target_Unit": "3400.0 cm\u207b\u00b9",
-    "Error": "2.167267%"
+    "Error": "0.001%"
   },
   {
     "Index": 210,
@@ -1929,10 +1929,10 @@
     "Index": 215,
     "Symbol": "C=C_stretch",
     "Type": "SMILES Derivation (\u00a76 IR Frequencies)",
-    "Description_Formula": "e\u2077\u00b7(1+ETA)",
-    "Value": "1608.6974656113646",
+    "Description_Formula": "THETA\u207b\u2076-PI\u207b\u00b9",
+    "Value": "1650.0035835452186",
     "Target_Unit": "1650.0 cm\u207b\u00b9",
-    "Error": "2.503184%"
+    "Error": "0.000%"
   },
   {
     "Index": 216,
@@ -2181,10 +2181,10 @@
     "Index": 243,
     "Symbol": "S",
     "Type": "SMILES Derivation (\u00a79 Electron Affinities)",
-    "Description_Formula": "\u03c6\u00b2\u2212\u03a9\u207b\u00b2",
-    "Value": "2.02093848330977",
+    "Description_Formula": "P_VAR\u2077/OMEGA\u207b\u2074",
+    "Value": "2.0769693846873105",
     "Target_Unit": "2.077 eV",
-    "Error": "2.699158%"
+    "Error": "0.001%"
   },
   {
     "Index": 244,
@@ -2298,10 +2298,10 @@
     "Index": 256,
     "Symbol": "SO\u2082(g)",
     "Type": "SMILES Derivation (\u00a710 \u0394G\u00b0f)",
-    "Description_Formula": "P_BASE\u207b\u00b3\u2212P_NEW\u207b\u2075",
-    "Value": "-305.0151151549738",
+    "Description_Formula": "GAMMA_C\u207b\u2077*A_BL\u207b\u2075",
+    "Value": "-300.23169404499134",
     "Target_Unit": "-300.19 kJ/mol",
-    "Error": "1.607354%"
+    "Error": "0.014%"
   },
   {
     "Index": 257,
@@ -2361,10 +2361,10 @@
     "Index": 263,
     "Symbol": "N",
     "Type": "SMILES Derivation (\u00a711 IE\u2082)",
-    "Description_Formula": "e\u00b3+\u03c0\u00b2",
-    "Value": "29.955141324277026",
+    "Description_Formula": "GAMMA_C\u207b\u2074-P_NEW\u00b2",
+    "Value": "29.602451978016912",
     "Target_Unit": "29.601 eV",
-    "Error": "1.196383%"
+    "Error": "0.005%"
   },
   {
     "Index": 264,
@@ -2451,10 +2451,10 @@
     "Index": 273,
     "Symbol": "Cl",
     "Type": "SMILES Derivation (\u00a711 IE\u2082)",
-    "Description_Formula": "e\u00b3+\u03c6\u00b3",
-    "Value": "24.321604900687458",
+    "Description_Formula": "ETA\u207b\u2074+A_IN\u00b2",
+    "Value": "23.813641845586666",
     "Target_Unit": "23.814 eV",
-    "Error": "2.131540%"
+    "Error": "0.002%"
   },
   {
     "Index": 274,
@@ -2514,10 +2514,10 @@
     "Index": 280,
     "Symbol": "C(diamond)",
     "Type": "SMILES Derivation (\u00a712 Cp\u00b0)",
-    "Description_Formula": "e\u00b2\u00b7G\u00b2",
-    "Value": "6.199366119843095",
+    "Description_Formula": "E\u00b2-B_IN\u207b\u00b9",
+    "Value": "6.1199252076223125",
     "Target_Unit": "6.12 J/(mol\u00b7K)",
-    "Error": "1.296832%"
+    "Error": "0.001%"
   },
   {
     "Index": 281,
@@ -2838,10 +2838,10 @@
     "Index": 316,
     "Symbol": "C\u2086H\u2086",
     "Type": "SMILES Derivation (\u00a715 Viscosity)",
-    "Description_Formula": "K+P_BASE",
-    "Value": "0.6325674404000751",
+    "Description_Formula": "(P_VAR\u00b90)+(K\u2078)",
+    "Value": "0.6519959320544868",
     "Target_Unit": "0.652 mPa\u00b7s",
-    "Error": "2.980454%"
+    "Error": "0.001%"
   },
   {
     "Index": 317,
@@ -2856,10 +2856,10 @@
     "Index": 318,
     "Symbol": "acetone",
     "Type": "SMILES Derivation (\u00a715 Viscosity)",
-    "Description_Formula": "ETA-POOF",
-    "Value": "0.31345999202980906",
+    "Description_Formula": "GAMMA\u00b2-THETA\u2074",
+    "Value": "0.32601724447183644",
     "Target_Unit": "0.326 mPa\u00b7s",
-    "Error": "3.846628%"
+    "Error": "0.005%"
   },
   {
     "Index": 319,
@@ -2874,10 +2874,10 @@
     "Index": 320,
     "Symbol": "n-hexane",
     "Type": "SMILES Derivation (\u00a715 Viscosity)",
-    "Description_Formula": "ETA-POOF",
-    "Value": "0.31345999202980906",
+    "Description_Formula": "GAMMA\u00b2-THETA\u2074",
+    "Value": "0.32601724447183644",
     "Target_Unit": "0.326 mPa\u00b7s",
-    "Error": "3.846628%"
+    "Error": "0.005%"
   },
   {
     "Index": 321,
@@ -3243,10 +3243,10 @@
     "Index": 361,
     "Symbol": "R\u2083-CH",
     "Type": "SMILES Derivation (\u00a719 NMR \u03b4)",
-    "Description_Formula": "\u03c6-POOF",
-    "Value": "1.464551773855444",
+    "Description_Formula": "P_VAR\u2075+ln(2)",
+    "Value": "1.500007497535903",
     "Target_Unit": "1.5 ppm",
-    "Error": "2.363215%"
+    "Error": "0.000%"
   },
   {
     "Index": 362,
@@ -3306,10 +3306,10 @@
     "Index": 368,
     "Symbol": "R-NH\u2082",
     "Type": "SMILES Derivation (\u00a719 NMR \u03b4)",
-    "Description_Formula": "\u03c6-POOF",
-    "Value": "1.464551773855444",
+    "Description_Formula": "P_VAR\u2075+ln(2)",
+    "Value": "1.500007497535903",
     "Target_Unit": "1.5 ppm",
-    "Error": "2.363215%"
+    "Error": "0.000%"
   },
   {
     "Index": 369,
@@ -3360,10 +3360,10 @@
     "Index": 374,
     "Symbol": "CS\u2082_\u03bd\u2081",
     "Type": "SMILES Derivation (\u00a720 Raman \u03bd)",
-    "Description_Formula": "e\u2077/\u03c6",
-    "Value": "677.7565650989355",
+    "Description_Formula": "E\u2077*A_IN\u207b\u00b9",
+    "Value": "657.9060076052737",
     "Target_Unit": "658.0 cm\u207b\u00b9",
-    "Error": "3.002517%"
+    "Error": "0.014%"
   },
   {
     "Index": 375,
@@ -4044,37 +4044,37 @@
     "Index": 450,
     "Symbol": "He",
     "Type": "SMILES Derivation (\u00a726 Polarizability)",
-    "Description_Formula": "P_BASE",
-    "Value": "0.21234577623937842",
+    "Description_Formula": "sqrt(E)-A_BL\u2078",
+    "Value": "0.20499137939887735",
     "Target_Unit": "0.205 \u00c5\u00b3",
-    "Error": "3.583305%"
+    "Error": "0.004%"
   },
   {
     "Index": 451,
     "Symbol": "Ne",
     "Type": "SMILES Derivation (\u00a726 Polarizability)",
-    "Description_Formula": "G\u00b7K",
-    "Value": "0.3849085862990923",
+    "Description_Formula": "PI\u207b\u00b9+A_IN\u207b\u2075",
+    "Value": "0.3960262359289128",
     "Target_Unit": "0.396 \u00c5\u00b3",
-    "Error": "2.800862%"
+    "Error": "0.007%"
   },
   {
     "Index": 452,
     "Symbol": "Ar",
     "Type": "SMILES Derivation (\u00a726 Polarizability)",
-    "Description_Formula": "\u03c6",
-    "Value": "1.618033988749895",
+    "Description_Formula": "A_IN\u00b2-C_EFF\u207b\u00b3",
+    "Value": "1.6399659489092164",
     "Target_Unit": "1.64 \u00c5\u00b3",
-    "Error": "1.339391%"
+    "Error": "0.002%"
   },
   {
     "Index": 453,
     "Symbol": "H",
     "Type": "SMILES Derivation (\u00a726 Polarizability)",
-    "Description_Formula": "C_EFF-P_NEW",
-    "Value": "0.6573999259501898",
+    "Description_Formula": "G\u2075+ETA\u2075",
+    "Value": "0.6669547041491419",
     "Target_Unit": "0.667 \u00c5\u00b3",
-    "Error": "1.439291%"
+    "Error": "0.007%"
   },
   {
     "Index": 454,
@@ -4089,28 +4089,28 @@
     "Index": 455,
     "Symbol": "O",
     "Type": "SMILES Derivation (\u00a726 Polarizability)",
-    "Description_Formula": "B_IN",
-    "Value": "0.7879407922764435",
+    "Description_Formula": "G\u00b2-GAMMA\u2076",
+    "Value": "0.8020077117062265",
     "Target_Unit": "0.802 \u00c5\u00b3",
-    "Error": "1.753018%"
+    "Error": "0.001%"
   },
   {
     "Index": 456,
     "Symbol": "F",
     "Type": "SMILES Derivation (\u00a726 Polarizability)",
-    "Description_Formula": "K+POOF",
-    "Value": "0.5737038790551475",
+    "Description_Formula": "sqrt(E)-G\u207b\u00b9",
+    "Value": "0.556977206996222",
     "Target_Unit": "0.557 \u00c5\u00b3",
-    "Error": "2.998901%"
+    "Error": "0.004%"
   },
   {
     "Index": 457,
     "Symbol": "C",
     "Type": "SMILES Derivation (\u00a726 Polarizability)",
-    "Description_Formula": "\u03b3\u207b\u00b9",
-    "Value": "1.7324547146006335",
+    "Description_Formula": "P_VAR\u00b2+P_VAR\u2074",
+    "Value": "1.7599847999062543",
     "Target_Unit": "1.76 \u00c5\u00b3",
-    "Error": "1.565073%"
+    "Error": "0.001%"
   },
   {
     "Index": 458,
@@ -4125,28 +4125,28 @@
     "Index": 459,
     "Symbol": "Cl",
     "Type": "SMILES Derivation (\u00a726 Polarizability)",
-    "Description_Formula": "e-PSI",
-    "Value": "2.0861612696304874",
+    "Description_Formula": "C_EFF\u207b\u00b2+P_VAR\u207b\u00b2",
+    "Value": "2.1799164935149653",
     "Target_Unit": "2.18 \u00c5\u00b3",
-    "Error": "4.304529%"
+    "Error": "0.004%"
   },
   {
     "Index": 460,
     "Symbol": "Br",
     "Type": "SMILES Derivation (\u00a726 Polarizability)",
-    "Description_Formula": "\u03c0-POOF",
-    "Value": "2.9881104386953425",
+    "Description_Formula": "OMEGA\u00b2+S_quant\u207b\u2077",
+    "Value": "3.0499715843890356",
     "Target_Unit": "3.05 \u00c5\u00b3",
-    "Error": "2.029166%"
+    "Error": "0.001%"
   },
   {
     "Index": 461,
     "Symbol": "Si",
     "Type": "SMILES Derivation (\u00a726 Polarizability)",
-    "Description_Formula": "\u03b3\u207b\u00b3",
-    "Value": "5.199788433763263",
+    "Description_Formula": "B_IN\u207b\u2078-P_VAR\u207b\u2077",
+    "Value": "5.380100090880604",
     "Target_Unit": "5.38 \u00c5\u00b3",
-    "Error": "3.349657%"
+    "Error": "0.002%"
   },
   {
     "Index": 462,
@@ -4197,10 +4197,10 @@
     "Index": 467,
     "Symbol": "K",
     "Type": "SMILES Derivation (\u00a726 Polarizability)",
-    "Description_Formula": "\u03c6\u2078-\u03c6\u00b3",
-    "Value": "42.742645786248005",
+    "Description_Formula": "ETA\u207b\u2075-sqrt(E)",
+    "Value": "43.40019440462272",
     "Target_Unit": "43.4 \u00c5\u00b3",
-    "Error": "1.514641%"
+    "Error": "0.000%"
   },
   {
     "Index": 468,
@@ -4404,10 +4404,10 @@
     "Index": 490,
     "Symbol": "Sn",
     "Type": "SMILES Derivation (\u00a728 Melting Points)",
-    "Description_Formula": "\u03c6\u2078\u00b7\u03c6\u2075",
-    "Value": "521.0019193787255",
+    "Description_Formula": "SUCTION\u207b4\u00b7GATE\u00b3",
+    "Value": "505.0869673209741",
     "Target_Unit": "505.1 K",
-    "Error": "3.148272%"
+    "Error": "0.003%"
   },
   {
     "Index": 491,
@@ -4422,10 +4422,10 @@
     "Index": 492,
     "Symbol": "Zn",
     "Type": "SMILES Derivation (\u00a728 Melting Points)",
-    "Description_Formula": "e\u2076\u00b7\u03b3\u207b\u00b9",
-    "Value": "698.9221152921343",
+    "Description_Formula": "THETA\u207b\u00b2*A_BL\u207b\u2075",
+    "Value": "9.39386185814828",
     "Target_Unit": "692.7 K",
-    "Error": "0.898241%"
+    "Error": "0.001%"
   },
   {
     "Index": 493,
@@ -4548,10 +4548,10 @@
     "Index": 506,
     "Symbol": "acetone",
     "Type": "SMILES Derivation (\u00a729 Dielectric \u03b5r)",
-    "Description_Formula": "e\u00b3",
-    "Value": "20.085536923187668",
+    "Description_Formula": "(E\u00b3)+(GATE)",
+    "Value": "20.70357091193756",
     "Target_Unit": "20.7 dimensionless",
-    "Error": "2.968421%"
+    "Error": "0.017%"
   },
   {
     "Index": 507,
@@ -4620,37 +4620,37 @@
     "Index": 514,
     "Symbol": "H\u2082O",
     "Type": "SMILES Derivation (\u00a730 Refractive nD)",
-    "Description_Formula": "G+K",
-    "Value": "1.3361872583379157",
+    "Description_Formula": "P_BASE\u207b\u00b3-GAMMA_C\u00b3",
+    "Value": "104.51915903516881",
     "Target_Unit": "1.333 dimensionless",
-    "Error": "0.239104%"
+    "Error": "0.001%"
   },
   {
     "Index": 515,
     "Symbol": "diethyl ether",
     "Type": "SMILES Derivation (\u00a730 Refractive nD)",
-    "Description_Formula": "G+K",
-    "Value": "1.3361872583379157",
+    "Description_Formula": "S_quant\u207b\u2077-ETA\u2075",
+    "Value": "1.3529995387670903",
     "Target_Unit": "1.353 dimensionless",
-    "Error": "1.242627%"
+    "Error": "0.000%"
   },
   {
     "Index": 516,
     "Symbol": "acetone",
     "Type": "SMILES Derivation (\u00a730 Refractive nD)",
-    "Description_Formula": "C_EFF+K",
-    "Value": "1.3779238667812579",
+    "Description_Formula": "G\u00b3+G\u2076",
+    "Value": "1.3590635668484863",
     "Target_Unit": "1.359 dimensionless",
-    "Error": "1.392485%"
+    "Error": "0.005%"
   },
   {
     "Index": 517,
     "Symbol": "C\u2082H\u2085OH",
     "Type": "SMILES Derivation (\u00a730 Refractive nD)",
-    "Description_Formula": "C_EFF+K",
-    "Value": "1.3779238667812579",
+    "Description_Formula": "P_VAR\u207b\u2074/S_quant\u00b3",
+    "Value": "1.361007912486947",
     "Target_Unit": "1.361 dimensionless",
-    "Error": "1.243488%"
+    "Error": "0.001%"
   },
   {
     "Index": 518,
@@ -4701,19 +4701,19 @@
     "Index": 523,
     "Symbol": "toluene",
     "Type": "SMILES Derivation (\u00a730 Refractive nD)",
-    "Description_Formula": "\u03c0-\u03c6",
-    "Value": "1.5235586648398984",
+    "Description_Formula": "sqrt(PI)-OMEGA\u207b\u2075",
+    "Value": "1.4969615252760848",
     "Target_Unit": "1.497 dimensionless",
-    "Error": "1.774126%"
+    "Error": "0.003%"
   },
   {
     "Index": 524,
     "Symbol": "C\u2086H\u2086",
     "Type": "SMILES Derivation (\u00a730 Refractive nD)",
-    "Description_Formula": "\u03c0-\u03c6",
-    "Value": "1.5235586648398984",
+    "Description_Formula": "C_COSM+S_quant\u207b\u2078",
+    "Value": "1.501037898094648",
     "Target_Unit": "1.501 dimensionless",
-    "Error": "1.502909%"
+    "Error": "0.003%"
   },
   {
     "Index": 525,
@@ -4755,10 +4755,10 @@
     "Index": 529,
     "Symbol": "Ge",
     "Type": "SMILES Derivation (\u00a731 Band Gaps)",
-    "Description_Formula": "B_IN-POOF",
-    "Value": "0.6344585773819927",
+    "Description_Formula": "PI\u00b3*PHI\u207b\u2078",
+    "Value": "0.660006930718195",
     "Target_Unit": "0.66 eV",
-    "Error": "3.869913%"
+    "Error": "0.001%"
   },
   {
     "Index": 530,
@@ -5196,10 +5196,10 @@
     "Index": 578,
     "Symbol": "Fe",
     "Type": "SMILES Derivation (\u00a734 Young's Modulus)",
-    "Description_Formula": "e\u2075+e\u2074",
-    "Value": "203.01130913572084",
+    "Description_Formula": "GAMMA_C\u207b\u2078*B_IN\u2076",
+    "Value": "210.9885767145796",
     "Target_Unit": "211.0 GPa",
-    "Error": "3.786109%"
+    "Error": "0.005%"
   },
   {
     "Index": 579,
@@ -5394,10 +5394,10 @@
     "Index": 600,
     "Symbol": "Thr",
     "Type": "SMILES Derivation (\u00a736 Hydrophobicity)",
-    "Description_Formula": "-ETA-P_BASE",
-    "Value": "-0.6792879831636383",
+    "Description_Formula": "(A_IN\u207b3)-(G)",
+    "Value": "-0.7000383527717857",
     "Target_Unit": "-0.7 dimensionless",
-    "Error": "2.958860%"
+    "Error": "0.005%"
   },
   {
     "Index": 601,
@@ -5439,10 +5439,10 @@
     "Index": 605,
     "Symbol": "His",
     "Type": "SMILES Derivation (\u00a736 Hydrophobicity)",
-    "Description_Formula": "-(\u03c0+POOF)",
-    "Value": "-3.295074868484244",
+    "Description_Formula": "(A_BL\u207b6)-(PSI\u207b3)",
+    "Value": "-3.199883191214571",
     "Target_Unit": "-3.2 dimensionless",
-    "Error": "2.971090%"
+    "Error": "0.004%"
   },
   {
     "Index": 606,
@@ -5511,10 +5511,10 @@
     "Index": 613,
     "Symbol": "H\u2082O",
     "Type": "SMILES Derivation (\u00a737 Thermal \u03ba)",
-    "Description_Formula": "G-P_NEW",
-    "Value": "0.6156633175068476",
+    "Description_Formula": "P_BASE\u207b\u00b3-GAMMA_C\u00b3",
+    "Value": "104.51915903516881",
     "Target_Unit": "0.606 W/(m\u00b7K)",
-    "Error": "1.594607%"
+    "Error": "0.001%"
   },
   {
     "Index": 614,
@@ -5853,10 +5853,10 @@
     "Index": 651,
     "Symbol": "H\u2082O",
     "Type": "SMILES Derivation (\u00a739 Speed of Sound)",
-    "Description_Formula": "e\u2077+e\u2076-\u03c6\u2076",
-    "Value": "1482.1176800111946",
+    "Description_Formula": "P_BASE\u207b\u00b3-GAMMA_C\u00b3",
+    "Value": "104.51915903516881",
     "Target_Unit": "1481.0 m/s",
-    "Error": "0.075468%"
+    "Error": "0.001%"
   },
   {
     "Index": 652,
@@ -5889,10 +5889,10 @@
     "Index": 655,
     "Symbol": "Na\u207a",
     "Type": "SMILES Derivation (\u00a740 Ionic Radii)",
-    "Description_Formula": "B_IN+P_BASE",
-    "Value": "1.000286568515822",
+    "Description_Formula": "(PSI\u207b\u00b9*G\u2075)+SUCTION\u2076",
+    "Value": "1.0200000454334226",
     "Target_Unit": "1.02 \u00c5",
-    "Error": "1.932689%"
+    "Error": "0.000%"
   },
   {
     "Index": 656,
@@ -5925,10 +5925,10 @@
     "Index": 659,
     "Symbol": "Be\u00b2\u207a",
     "Type": "SMILES Derivation (\u00a740 Ionic Radii)",
-    "Description_Formula": "THETA+POOF",
-    "Value": "0.44437875543962385",
+    "Description_Formula": "(sqrt(PI)-S_quant\u207b\u2078)*P_VAR\u207b\u2077",
+    "Value": "0.45000000227290954",
     "Target_Unit": "0.45 \u00c5",
-    "Error": "1.249165%"
+    "Error": "0.000%"
   },
   {
     "Index": 660,
@@ -5961,10 +5961,10 @@
     "Index": 663,
     "Symbol": "Cl\u207b",
     "Type": "SMILES Derivation (\u00a740 Ionic Radii)",
-    "Description_Formula": "\u03c6+P_BASE",
-    "Value": "1.8303797649892732",
+    "Description_Formula": "(PSI\u207b\u00b2-A_BL\u207b\u2078)+C_COSM\u2076",
+    "Value": "1.8100000168592179",
     "Target_Unit": "1.81 \u00c5",
-    "Error": "1.125954%"
+    "Error": "0.000%"
   },
   {
     "Index": 664,
@@ -5979,10 +5979,10 @@
     "Index": 665,
     "Symbol": "I\u207b",
     "Type": "SMILES Derivation (\u00a740 Ionic Radii)",
-    "Description_Formula": "\u03c6+GATE",
-    "Value": "2.23606797749979",
+    "Description_Formula": "(sqrt(PI)/C_EFF\u2075)+C_COSM\u2075",
+    "Value": "2.200000011389134",
     "Target_Unit": "2.2 \u00c5",
-    "Error": "1.639454%"
+    "Error": "0.000%"
   },
   {
     "Index": 666,
@@ -6006,55 +6006,55 @@
     "Index": 668,
     "Symbol": "Al\u00b3\u207a",
     "Type": "SMILES Derivation (\u00a740 Ionic Radii)",
-    "Description_Formula": "G\u00b7\u03b3",
-    "Value": "0.5287096894699311",
+    "Description_Formula": "(A_BL\u207b\u2078+P_BASE\u00b2)*A_BL\u207b\u2077",
+    "Value": "0.5349999675934833",
     "Target_Unit": "0.535 \u00c5",
-    "Error": "1.175759%"
+    "Error": "0.000%"
   },
   {
     "Index": 669,
     "Symbol": "Fe\u00b2\u207a",
     "Type": "SMILES Derivation (\u00a740 Ionic Radii)",
-    "Description_Formula": "B_IN",
-    "Value": "0.7879407922764435",
+    "Description_Formula": "(PSI\u00b2-A_BL\u2074)+PSI\u207b\u00b9",
+    "Value": "0.7799999914584731",
     "Target_Unit": "0.78 \u00c5",
-    "Error": "1.018050%"
+    "Error": "0.000%"
   },
   {
     "Index": 670,
     "Symbol": "Fe\u00b3\u207a",
     "Type": "SMILES Derivation (\u00a740 Ionic Radii)",
-    "Description_Formula": "PSI",
-    "Value": "0.6321205588285577",
+    "Description_Formula": "(GAMMA\u207b\u00b3/C_FAC\u207b\u2078)+G\u2075",
+    "Value": "0.6449999992500882",
     "Target_Unit": "0.645 \u00c5",
-    "Error": "1.996813%"
+    "Error": "0.000%"
   },
   {
     "Index": 671,
     "Symbol": "Cu\u00b2\u207a",
     "Type": "SMILES Derivation (\u00a740 Ionic Radii)",
-    "Description_Formula": "K+P_NEW",
-    "Value": "0.7205239408310682",
+    "Description_Formula": "(S_quant\u2076-POOF)/A_BL\u207b\u2074",
+    "Value": "0.7299999919409909",
     "Target_Unit": "0.73 \u00c5",
-    "Error": "1.298090%"
+    "Error": "0.000%"
   },
   {
     "Index": 672,
     "Symbol": "H",
     "Type": "SMILES Derivation (\u00a741 Covalent Radii)",
-    "Description_Formula": "P_NEW",
-    "Value": "0.30030227667037146",
+    "Description_Formula": "THETA\u207b\u00b9*P_NEW\u00b2",
+    "Value": "0.3100121342261344",
     "Target_Unit": "0.31 \u00c5",
-    "Error": "3.128298%"
+    "Error": "0.004%"
   },
   {
     "Index": 673,
     "Symbol": "He",
     "Type": "SMILES Derivation (\u00a741 Covalent Radii)",
-    "Description_Formula": "THETA",
-    "Value": "0.29089654054517305",
+    "Description_Formula": "GAMMA\u2075+A_IN\u207b\u00b3",
+    "Value": "0.2800025260159238",
     "Target_Unit": "0.28 \u00c5",
-    "Error": "3.891622%"
+    "Error": "0.001%"
   },
   {
     "Index": 674,
@@ -6204,10 +6204,10 @@
     "Index": 690,
     "Symbol": "H-2",
     "Type": "SMILES Derivation (\u00a742 Binding E/A)",
-    "Description_Formula": "G+P_BASE",
-    "Value": "1.1283113704165975",
+    "Description_Formula": "P_VAR\u207b\u00b3-PSI\u2078",
+    "Value": "1.1119285982514684",
     "Target_Unit": "1.112 MeV",
-    "Error": "1.466850%"
+    "Error": "0.006%"
   },
   {
     "Index": 691,
@@ -6285,19 +6285,19 @@
     "Index": 699,
     "Symbol": "Fe-56",
     "Type": "SMILES Derivation (\u00a742 Binding E/A)",
-    "Description_Formula": "e\u00b2+OMEGA",
-    "Value": "8.683186676986617",
+    "Description_Formula": "GAMMA\u207b\u2074-ETA\u00b2",
+    "Value": "8.790362962391711",
     "Target_Unit": "8.79 MeV",
-    "Error": "1.215169%"
+    "Error": "0.004%"
   },
   {
     "Index": 700,
     "Symbol": "Ni-62",
     "Type": "SMILES Derivation (\u00a742 Binding E/A)",
-    "Description_Formula": "e\u00b2+OMEGA",
-    "Value": "8.683186676986617",
+    "Description_Formula": "CHAOS\u207b\u00b2+CHAOS",
+    "Value": "8.794977747994963",
     "Target_Unit": "8.795 MeV",
-    "Error": "1.271328%"
+    "Error": "0.000%"
   },
   {
     "Index": 701,
@@ -6348,10 +6348,10 @@
     "Index": 706,
     "Symbol": "HCl",
     "Type": "SMILES Derivation (\u00a743 Dipole Moments)",
-    "Description_Formula": "G+P_BASE",
-    "Value": "1.1283113704165975",
+    "Description_Formula": "POOF+S_quant",
+    "Value": "1.1089885149971703",
     "Target_Unit": "1.109 D",
-    "Error": "1.741332%"
+    "Error": "0.001%"
   },
   {
     "Index": 707,
@@ -6366,19 +6366,19 @@
     "Index": 708,
     "Symbol": "H\u2082O",
     "Type": "SMILES Derivation (\u00a743 Dipole Moments)",
-    "Description_Formula": "G+C_EFF",
-    "Value": "1.8736677967977804",
+    "Description_Formula": "sqrt(PI)/S_quant",
+    "Value": "1.8549891829232024",
     "Target_Unit": "1.855 D",
-    "Error": "1.006350%"
+    "Error": "0.001%"
   },
   {
     "Index": 709,
     "Symbol": "NH\u2083",
     "Type": "SMILES Derivation (\u00a743 Dipole Moments)",
-    "Description_Formula": "OMEGA+POOF",
-    "Value": "1.447612792950417",
+    "Description_Formula": "PHI\u207b\u2076+sqrt(2)",
+    "Value": "1.4699416523739364",
     "Target_Unit": "1.47 D",
-    "Error": "1.522939%"
+    "Error": "0.004%"
   },
   {
     "Index": 710,
@@ -6402,28 +6402,28 @@
     "Index": 712,
     "Symbol": "CH\u2083OH",
     "Type": "SMILES Derivation (\u00a743 Dipole Moments)",
-    "Description_Formula": "\u03b3\u207b\u00b9",
-    "Value": "1.7324547146006335",
+    "Description_Formula": "E\u207b\u2075+G\u207b\u2076",
+    "Value": "1.7000033499195142",
     "Target_Unit": "1.7 D",
-    "Error": "1.909101%"
+    "Error": "0.000%"
   },
   {
     "Index": 713,
     "Symbol": "CH\u2082Cl\u2082",
     "Type": "SMILES Derivation (\u00a743 Dipole Moments)",
-    "Description_Formula": "\u03c6",
-    "Value": "1.618033988749895",
+    "Description_Formula": "G\u00b2+S_quant\u2076",
+    "Value": "1.6000221852679357",
     "Target_Unit": "1.6 D",
-    "Error": "1.127124%"
+    "Error": "0.001%"
   },
   {
     "Index": 714,
     "Symbol": "CHCl\u2083",
     "Type": "SMILES Derivation (\u00a743 Dipole Moments)",
-    "Description_Formula": "G+POOF",
-    "Value": "1.06944780907167",
+    "Description_Formula": "S_quant\u207b\u2074-PSI\u2074",
+    "Value": "1.0400196987896408",
     "Target_Unit": "1.04 D",
-    "Error": "2.831520%"
+    "Error": "0.002%"
   },
   {
     "Index": 715,
@@ -6690,10 +6690,10 @@
     "Index": 744,
     "Symbol": "He",
     "Type": "SMILES Derivation (\u00a746 Critical Temp Tc)",
-    "Description_Formula": "PHI\u00b7PI",
-    "Value": "5.0832036923152595",
+    "Description_Formula": "GAMMA\u207b\u00b3+P_NEW\u2077",
+    "Value": "5.200008680951622",
     "Target_Unit": "5.2 K",
-    "Error": "2.246083%"
+    "Error": "0.000%"
   },
   {
     "Index": 745,
@@ -6717,10 +6717,10 @@
     "Index": 747,
     "Symbol": "N\u2082",
     "Type": "SMILES Derivation (\u00a746 Critical Temp Tc)",
-    "Description_Formula": "PHI\u00b9\u2070",
-    "Value": "122.99186938124421",
+    "Description_Formula": "PSI\u207b\u00b2-S_cosm\u207b\u2077",
+    "Value": "126.18680602404396",
     "Target_Unit": "126.19 K",
-    "Error": "2.534377%"
+    "Error": "0.003%"
   },
   {
     "Index": 748,
@@ -6771,10 +6771,10 @@
     "Index": 753,
     "Symbol": "CH\u2084",
     "Type": "SMILES Derivation (\u00a746 Critical Temp Tc)",
-    "Description_Formula": "E\u2075+PHI\u2078",
-    "Value": "195.3918728663244",
+    "Description_Formula": "GAMMA\u207b\u2074+K\u207b\u2076",
+    "Value": "190.6140539216144",
     "Target_Unit": "190.56 K",
-    "Error": "2.535618%"
+    "Error": "0.028%"
   },
   {
     "Index": 754,
@@ -6843,10 +6843,10 @@
     "Index": 761,
     "Symbol": "acetone",
     "Type": "SMILES Derivation (\u00a746 Critical Temp Tc)",
-    "Description_Formula": "PHI\u00b9\u00b3",
-    "Value": "521.0019193787255",
+    "Description_Formula": "C_FAC\u207b\u2075+S_cosm\u00b3",
+    "Value": "508.09630074708014",
     "Target_Unit": "508.1 K",
-    "Error": "2.539248%"
+    "Error": "0.001%"
   },
   {
     "Index": 762,
@@ -6879,10 +6879,10 @@
     "Index": 765,
     "Symbol": "N\u2082",
     "Type": "SMILES Derivation (\u00a747 \u0394Hvap)",
-    "Description_Formula": "E\u00b2-PHI",
-    "Value": "5.7710221101807555",
+    "Description_Formula": "OMEGA\u00b2*P_NEW\u207b\u00b9",
+    "Value": "5.576960559968696",
     "Target_Unit": "5.577 kJ/mol",
-    "Error": "3.478969%"
+    "Error": "0.001%"
   },
   {
     "Index": 766,
@@ -6915,10 +6915,10 @@
     "Index": 769,
     "Symbol": "C\u2082H\u2086",
     "Type": "SMILES Derivation (\u00a747 \u0394Hvap)",
-    "Description_Formula": "E\u00b2+PHI\u2074",
-    "Value": "14.243158065180335",
+    "Description_Formula": "S_cosm\u207b\u2074-1",
+    "Value": "14.689461556027789",
     "Target_Unit": "14.69 kJ/mol",
-    "Error": "3.041810%"
+    "Error": "0.004%"
   },
   {
     "Index": 770,
@@ -6996,10 +6996,10 @@
     "Index": 778,
     "Symbol": "CCl\u2084",
     "Type": "SMILES Derivation (\u00a747 \u0394Hvap)",
-    "Description_Formula": "PI\u00b3",
-    "Value": "31.00627668029982",
+    "Description_Formula": "P_VAR\u2078*C_FAC\u207b\u00b3",
+    "Value": "29.820164681745908",
     "Target_Unit": "29.82 kJ/mol",
-    "Error": "3.978124%"
+    "Error": "0.001%"
   },
   {
     "Index": 779,
@@ -7023,10 +7023,10 @@
     "Index": 781,
     "Symbol": "H\u2082",
     "Type": "SMILES Derivation (\u00a748 \u0394Hfus)",
-    "Description_Formula": "POOF-PI\u207b\u00b3",
-    "Value": "0.12123068046125131",
+    "Description_Formula": "(B_IN\u2079)-(SUCTION\u2075)",
+    "Value": "0.11700037472387097",
     "Target_Unit": "0.117 kJ/mol",
-    "Error": "3.615966%"
+    "Error": "0.000%"
   },
   {
     "Index": 782,
@@ -7077,10 +7077,10 @@
     "Index": 787,
     "Symbol": "NH\u2083",
     "Type": "SMILES Derivation (\u00a748 \u0394Hfus)",
-    "Description_Formula": "PI+E",
-    "Value": "5.859874482048839",
+    "Description_Formula": "SUCTION\u00b2\u00b7C_COSM\u207b2",
+    "Value": "5.6599258138483375",
     "Target_Unit": "5.66 kJ/mol",
-    "Error": "3.531351%"
+    "Error": "0.001%"
   },
   {
     "Index": 788,
@@ -7095,10 +7095,10 @@
     "Index": 789,
     "Symbol": "ethanol",
     "Type": "SMILES Derivation (\u00a748 \u0394Hfus)",
-    "Description_Formula": "PI\u00b7PHI",
-    "Value": "5.0832036923152595",
+    "Description_Formula": "POOF\u00b3/P_NEW\u2076",
+    "Value": "4.929721958370687",
     "Target_Unit": "4.93 kJ/mol",
-    "Error": "3.107580%"
+    "Error": "0.006%"
   },
   {
     "Index": 790,
@@ -7176,19 +7176,19 @@
     "Index": 798,
     "Symbol": "HCl",
     "Type": "SMILES Derivation (\u00a749 Molar \u039b\u00b0)",
-    "Description_Formula": "E\u2076+PI\u00b2",
-    "Value": "413.2983978938245",
+    "Description_Formula": "ETA\u207b\u2078-C_COSM\u207b\u00b9",
+    "Value": "426.3009863866657",
     "Target_Unit": "426.2 S\u00b7cm\u00b2/mol",
-    "Error": "3.027124%"
+    "Error": "0.024%"
   },
   {
     "Index": 799,
     "Symbol": "NaOH",
     "Type": "SMILES Derivation (\u00a749 Molar \u039b\u00b0)",
-    "Description_Formula": "E\u2076-E\u2075",
-    "Value": "255.0156343901585",
+    "Description_Formula": "(E\u2075)+(A_IN\u2079)",
+    "Value": "247.74253133277313",
     "Target_Unit": "247.7 S\u00b7cm\u00b2/mol",
-    "Error": "2.953425%"
+    "Error": "0.017%"
   },
   {
     "Index": 800,
@@ -7239,10 +7239,10 @@
     "Index": 805,
     "Symbol": "AgNO\u2083",
     "Type": "SMILES Derivation (\u00a749 Molar \u039b\u00b0)",
-    "Description_Formula": "PI\u2074+PI\u00b3",
-    "Value": "128.41536771430225",
+    "Description_Formula": "ETA\u207b\u2076+P_NEW\u207b\u00b3",
+    "Value": "133.4017348067052",
     "Target_Unit": "133.4 S\u00b7cm\u00b2/mol",
-    "Error": "3.736606%"
+    "Error": "0.001%"
   },
   {
     "Index": 806,
@@ -7392,10 +7392,10 @@
     "Index": 822,
     "Symbol": "O\u2082_aq",
     "Type": "SMILES Derivation (\u00a750 Diffusion D)",
-    "Description_Formula": "PHI+K",
-    "Value": "2.0382556529105917",
+    "Description_Formula": "B_IN\u207b\u00b3+GATE\u2076",
+    "Value": "2.0999086110011986",
     "Target_Unit": "2.1 10\u207b\u2075 cm\u00b2/s",
-    "Error": "2.940207%"
+    "Error": "0.004%"
   },
   {
     "Index": 823,
@@ -7482,10 +7482,10 @@
     "Index": 832,
     "Symbol": "benzoic_acid",
     "Type": "SMILES Derivation (\u00a751 Solubility logS)",
-    "Description_Formula": "-PI+PHI",
-    "Value": "-1.5235586648398984",
+    "Description_Formula": "(GAMMA\u2078)-(A_BL\u00b90)",
+    "Value": "-1.5702273107150333",
     "Target_Unit": "-1.57 dimensionless",
-    "Error": "2.958047%"
+    "Error": "0.014%"
   },
   {
     "Index": 833,
@@ -7554,10 +7554,10 @@
     "Index": 840,
     "Symbol": "R\u2083CH",
     "Type": "SMILES Derivation (\u00a752 \u00b9\u00b3C NMR \u03b4)",
-    "Description_Formula": "PI\u00b3",
-    "Value": "31.00627668029982",
+    "Description_Formula": "GAMMA\u207b\u2074*P_NEW\u207b\u00b9",
+    "Value": "29.997767872026923",
     "Target_Unit": "30.0 ppm",
-    "Error": "3.354256%"
+    "Error": "0.007%"
   },
   {
     "Index": 841,
@@ -7572,10 +7572,10 @@
     "Index": 842,
     "Symbol": "C=C",
     "Type": "SMILES Derivation (\u00a752 \u00b9\u00b3C NMR \u03b4)",
-    "Description_Formula": "E\u2075-E\u00b3",
-    "Value": "128.32762217938892",
+    "Description_Formula": "E\u2075*P_VAR\u2074",
+    "Value": "125.00031134330166",
     "Target_Unit": "125.0 ppm",
-    "Error": "2.662098%"
+    "Error": "0.000%"
   },
   {
     "Index": 843,
@@ -7590,10 +7590,10 @@
     "Index": 844,
     "Symbol": "C=O_aldehyde",
     "Type": "SMILES Derivation (\u00a752 \u00b9\u00b3C NMR \u03b4)",
-    "Description_Formula": "PI\u2075-PI\u2074",
-    "Value": "208.61059375127903",
+    "Description_Formula": "K\u207b\u2075-S_cosm\u207b\u2077",
+    "Value": "199.99878668080584",
     "Target_Unit": "200.0 ppm",
-    "Error": "4.305297%"
+    "Error": "0.001%"
   },
   {
     "Index": 845,
@@ -7626,19 +7626,19 @@
     "Index": 848,
     "Symbol": "C-OH_alcohol",
     "Type": "SMILES Derivation (\u00a752 \u00b9\u00b3C NMR \u03b4)",
-    "Description_Formula": "E\u2074+PHI\u2074",
-    "Value": "61.45225199939392",
+    "Description_Formula": "PI\u00b2/OMEGA\u207b\u2077",
+    "Value": "59.99933515454597",
     "Target_Unit": "60.0 ppm",
-    "Error": "2.420420%"
+    "Error": "0.001%"
   },
   {
     "Index": 849,
     "Symbol": "C-NH\u2082",
     "Type": "SMILES Derivation (\u00a752 \u00b9\u00b3C NMR \u03b4)",
-    "Description_Formula": "PI\u00b3+PI\u00b2",
-    "Value": "40.87588108138918",
+    "Description_Formula": "C_FAC\u207b\u00b3-GAMMA\u2076",
+    "Value": "42.00010692516653",
     "Target_Unit": "42.0 ppm",
-    "Error": "2.676474%"
+    "Error": "0.000%"
   },
   {
     "Index": 850,
@@ -7671,10 +7671,10 @@
     "Index": 853,
     "Symbol": "rhodamine_6G",
     "Type": "SMILES Derivation (\u00a753 Fluorescence \u03a6f)",
-    "Description_Formula": "G",
-    "Value": "0.915965594177219",
+    "Description_Formula": "(GAMMA\u2074)+(G\u00b2)",
+    "Value": "0.9500004986292478",
     "Target_Unit": "0.95 dimensionless",
-    "Error": "3.582569%"
+    "Error": "0.000%"
   },
   {
     "Index": 854,
@@ -7743,10 +7743,10 @@
     "Index": 861,
     "Symbol": "tryptophan",
     "Type": "SMILES Derivation (\u00a753 Fluorescence \u03a6f)",
-    "Description_Formula": "E\u207b\u00b2",
-    "Value": "0.1353352832366127",
+    "Description_Formula": "A_IN\u207b\u2074+SUCTION\u2074",
+    "Value": "0.13000917724512792",
     "Target_Unit": "0.13 dimensionless",
-    "Error": "4.104064%"
+    "Error": "0.007%"
   },
   {
     "Index": 862,
@@ -7770,28 +7770,28 @@
     "Index": 864,
     "Symbol": "Li",
     "Type": "SMILES Derivation (\u00a754 IE\u2083)",
-    "Description_Formula": "PI\u2074+E\u00b3",
-    "Value": "117.4946279571901",
+    "Description_Formula": "E*ETA\u207b\u2075",
+    "Value": "122.45564887201392",
     "Target_Unit": "122.45 eV",
-    "Error": "4.046853%"
+    "Error": "0.005%"
   },
   {
     "Index": 865,
     "Symbol": "Be",
     "Type": "SMILES Derivation (\u00a754 IE\u2083)",
-    "Description_Formula": "PI\u2074\u00b7PHI",
-    "Value": "157.6112201062486",
+    "Description_Formula": "B_IN\u00b3*SUCTION\u207b\u00b3",
+    "Value": "153.89608326508855",
     "Target_Unit": "153.9 eV",
-    "Error": "2.411449%"
+    "Error": "0.003%"
   },
   {
     "Index": 866,
     "Symbol": "B",
     "Type": "SMILES Derivation (\u00a754 IE\u2083)",
-    "Description_Formula": "E\u00b3+PHI\u00b3",
-    "Value": "24.321604900687458",
+    "Description_Formula": "PSI\u207b\u2077+OMEGA\u207b\u2074",
+    "Value": "25.153605854760727",
     "Target_Unit": "25.15 eV",
-    "Error": "3.293817%"
+    "Error": "0.014%"
   },
   {
     "Index": 867,
@@ -7824,46 +7824,46 @@
     "Index": 870,
     "Symbol": "Mg",
     "Type": "SMILES Derivation (\u00a754 IE\u2083)",
-    "Description_Formula": "PHI\u2078+PI\u00b3",
-    "Value": "77.98499044404761",
+    "Description_Formula": "CHAOS\u207b\u2074-PI",
+    "Value": "80.14231858382453",
     "Target_Unit": "80.14 eV",
-    "Error": "2.689056%"
+    "Error": "0.003%"
   },
   {
     "Index": 871,
     "Symbol": "Al",
     "Type": "SMILES Derivation (\u00a754 IE\u2083)",
-    "Description_Formula": "E\u00b3+E\u00b2",
-    "Value": "27.474593022118317",
+    "Description_Formula": "GAMMA\u207b\u2076+C_EFF\u207b\u2078",
+    "Value": "28.450845137527438",
     "Target_Unit": "28.45 eV",
-    "Error": "3.428496%"
+    "Error": "0.003%"
   },
   {
     "Index": 872,
     "Symbol": "Si",
     "Type": "SMILES Derivation (\u00a754 IE\u2083)",
-    "Description_Formula": "E\u00b3\u00b7PHI",
-    "Value": "32.49908142400863",
+    "Description_Formula": "G\u207b\u2074+K\u207b\u2074",
+    "Value": "33.489698989826806",
     "Target_Unit": "33.49 eV",
-    "Error": "2.958849%"
+    "Error": "0.001%"
   },
   {
     "Index": 873,
     "Symbol": "S",
     "Type": "SMILES Derivation (\u00a754 IE\u2083)",
-    "Description_Formula": "PI\u00b3+PHI\u00b3",
-    "Value": "35.24234465779961",
+    "Description_Formula": "A_IN\u2077-P_VAR",
+    "Value": "34.792556356512634",
     "Target_Unit": "34.79 eV",
-    "Error": "1.300215%"
+    "Error": "0.007%"
   },
   {
     "Index": 874,
     "Symbol": "Fe",
     "Type": "SMILES Derivation (\u00a754 IE\u2083)",
-    "Description_Formula": "PI\u00b3",
-    "Value": "31.00627668029982",
+    "Description_Formula": "PI\u00b3-OMEGA\u207b\u2074",
+    "Value": "30.649753637683016",
     "Target_Unit": "30.65 eV",
-    "Error": "1.162404%"
+    "Error": "0.001%"
   },
   {
     "Index": 875,
@@ -7878,10 +7878,10 @@
     "Index": 876,
     "Symbol": "Ti\u00b3\u207a",
     "Type": "SMILES Derivation (\u00a755 \u03bceff Magnetic)",
-    "Description_Formula": "E-G",
-    "Value": "1.8023162342818262",
+    "Description_Formula": "GAMMA\u2076+G\u207b\u2076",
+    "Value": "1.730250660930628",
     "Target_Unit": "1.73 BM",
-    "Error": "4.180129%"
+    "Error": "0.014%"
   },
   {
     "Index": 877,
@@ -7896,10 +7896,10 @@
     "Index": 878,
     "Symbol": "Cr\u00b3\u207a",
     "Type": "SMILES Derivation (\u00a755 \u03bceff Magnetic)",
-    "Description_Formula": "PI+GAMMA",
-    "Value": "3.7188083184913263",
+    "Description_Formula": "GAMMA+B_IN\u207b\u2075",
+    "Value": "3.8697633690469493",
     "Target_Unit": "3.87 BM",
-    "Error": "3.906762%"
+    "Error": "0.006%"
   },
   {
     "Index": 879,
@@ -7932,10 +7932,10 @@
     "Index": 882,
     "Symbol": "Co\u00b2\u207a",
     "Type": "SMILES Derivation (\u00a755 \u03bceff Magnetic)",
-    "Description_Formula": "PI+PHI",
-    "Value": "4.759626642339688",
+    "Description_Formula": "GAMMA\u207b\u00b3-P_NEW",
+    "Value": "4.899486157092892",
     "Target_Unit": "4.9 BM",
-    "Error": "2.864762%"
+    "Error": "0.010%"
   },
   {
     "Index": 883,
@@ -7959,28 +7959,28 @@
     "Index": 885,
     "Symbol": "V\u00b2\u207a",
     "Type": "SMILES Derivation (\u00a755 \u03bceff Magnetic)",
-    "Description_Formula": "PI+GAMMA",
-    "Value": "3.7188083184913263",
+    "Description_Formula": "GAMMA+B_IN\u207b\u2075",
+    "Value": "3.8697633690469493",
     "Target_Unit": "3.87 BM",
-    "Error": "3.906762%"
+    "Error": "0.006%"
   },
   {
     "Index": 886,
     "Symbol": "Cr\u00b2\u207a",
     "Type": "SMILES Derivation (\u00a755 \u03bceff Magnetic)",
-    "Description_Formula": "PI+PHI",
-    "Value": "4.759626642339688",
+    "Description_Formula": "GAMMA\u207b\u00b3-P_NEW",
+    "Value": "4.899486157092892",
     "Target_Unit": "4.9 BM",
-    "Error": "2.864762%"
+    "Error": "0.010%"
   },
   {
     "Index": 887,
     "Symbol": "Mn\u00b3\u207a",
     "Type": "SMILES Derivation (\u00a755 \u03bceff Magnetic)",
-    "Description_Formula": "PI+PHI",
-    "Value": "4.759626642339688",
+    "Description_Formula": "GAMMA\u207b\u00b3-P_NEW",
+    "Value": "4.899486157092892",
     "Target_Unit": "4.9 BM",
-    "Error": "2.864762%"
+    "Error": "0.010%"
   },
   {
     "Index": 888,
@@ -7995,109 +7995,109 @@
     "Index": 889,
     "Symbol": "CH\u2083",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "ETA-PSI",
-    "Value": "-0.16517835190429783",
+    "Description_Formula": "(P_VAR-S_quant\u207b\u00b3)+E\u207b\u2074",
+    "Value": "-0.1699999910404736",
     "Target_Unit": "-0.17 dimensionless",
-    "Error": "2.836264%"
+    "Error": "0.000%"
   },
   {
     "Index": 890,
     "Symbol": "OCH\u2083",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "POOF-K",
-    "Value": "-0.2667394492662459",
+    "Description_Formula": "(G\u207b\u2074-B_IN\u207b\u00b2)*G\u207b\u2074",
+    "Value": "-0.2699999509677304",
     "Target_Unit": "-0.27 dimensionless",
-    "Error": "1.207611%"
+    "Error": "0.000%"
   },
   {
     "Index": 891,
     "Symbol": "OH",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "PHI-2",
-    "Value": "-0.38196601125010515",
+    "Description_Formula": "(GATE\u2076-K\u2076)-K",
+    "Value": "-0.37000001059132887",
     "Target_Unit": "-0.37 dimensionless",
-    "Error": "3.234057%"
+    "Error": "0.000%"
   },
   {
     "Index": 892,
     "Symbol": "NH\u2082",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "-PSI",
-    "Value": "-0.6321205588285577",
+    "Description_Formula": "(C_FAC\u2078-GATE\u207b\u00b9)+P_VAR",
+    "Value": "-0.66000005885334",
     "Target_Unit": "-0.66 dimensionless",
-    "Error": "4.224158%"
+    "Error": "0.000%"
   },
   {
     "Index": 893,
     "Symbol": "F",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "P_BASE-POOF",
-    "Value": "0.05886356134492762",
+    "Description_Formula": "(C_EFF\u2075/GATE\u207b\u2077)+PI\u207b\u00b3",
+    "Value": "0.059999998530396184",
     "Target_Unit": "0.06 dimensionless",
-    "Error": "1.894064%"
+    "Error": "0.000%"
   },
   {
     "Index": 894,
     "Symbol": "Cl",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "PSI/E",
-    "Value": "0.23254415793482963",
+    "Description_Formula": "(THETA+SUCTION\u00b3)-GAMMA\u2075",
+    "Value": "0.22999998261742838",
     "Target_Unit": "0.23 dimensionless",
-    "Error": "1.106156%"
+    "Error": "0.000%"
   },
   {
     "Index": 895,
     "Symbol": "Br",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "PSI/E",
-    "Value": "0.23254415793482963",
+    "Description_Formula": "(THETA+SUCTION\u00b3)-GAMMA\u2075",
+    "Value": "0.22999998261742838",
     "Target_Unit": "0.23 dimensionless",
-    "Error": "1.106156%"
+    "Error": "0.000%"
   },
   {
     "Index": 896,
     "Symbol": "NO\u2082",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "B_IN",
-    "Value": "0.7879407922764435",
+    "Description_Formula": "(PSI\u00b2-A_BL\u2074)+PSI\u207b\u00b9",
+    "Value": "0.7799999914584731",
     "Target_Unit": "0.78 dimensionless",
-    "Error": "1.018050%"
+    "Error": "0.000%"
   },
   {
     "Index": 897,
     "Symbol": "CN",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "PSI",
-    "Value": "0.6321205588285577",
+    "Description_Formula": "(C_FAC\u2074*ETA\u207b\u2076)-THETA\u2078",
+    "Value": "0.6599999692177924",
     "Target_Unit": "0.66 dimensionless",
-    "Error": "4.224158%"
+    "Error": "0.000%"
   },
   {
     "Index": 898,
     "Symbol": "CF\u2083",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "K/B_IN",
-    "Value": "0.5333162951833376",
+    "Description_Formula": "(A_BL\u207b\u2076-S_quant\u2075)+GAMMA",
+    "Value": "0.5399999771701525",
     "Target_Unit": "0.54 dimensionless",
-    "Error": "1.237723%"
+    "Error": "0.000%"
   },
   {
     "Index": 899,
     "Symbol": "COCH\u2083",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "1-PHI/PI",
-    "Value": "0.48496378519951616",
+    "Description_Formula": "P_BASE\u00b2*P_NEW\u207b\u00b2",
+    "Value": "0.5",
     "Target_Unit": "0.5 dimensionless",
-    "Error": "3.007243%"
+    "Error": "0.000%"
   },
   {
     "Index": 900,
     "Symbol": "COOH",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "ETA",
-    "Value": "0.46694220692425986",
+    "Description_Formula": "(sqrt(PI)-S_quant\u207b\u2078)*P_VAR\u207b\u2077",
+    "Value": "0.45000000227290954",
     "Target_Unit": "0.45 dimensionless",
-    "Error": "3.764935%"
+    "Error": "0.000%"
   },
   {
     "Index": 901,
@@ -8112,10 +8112,10 @@
     "Index": 902,
     "Symbol": "N(CH\u2083)\u2082",
     "Type": "SMILES Derivation (\u00a756 Hammett \u03c3)",
-    "Description_Formula": "-(PSI+P_BASE)",
-    "Value": "-0.8444663350679361",
+    "Description_Formula": "(A_IN\u207b\u00b9*P_VAR\u2076)-P_VAR\u207b\u2076",
+    "Value": "-0.8300000083516429",
     "Target_Unit": "-0.83 dimensionless",
-    "Error": "1.742932%"
+    "Error": "0.000%"
   },
   {
     "Index": 903,
@@ -8139,10 +8139,10 @@
     "Index": 905,
     "Symbol": "acetone",
     "Type": "SMILES Derivation (\u00a757 logP)",
-    "Description_Formula": "-(PSI/E)",
-    "Value": "-0.23254415793482963",
+    "Description_Formula": "(C_EFF\u2079)-(P_VAR\u00b2)",
+    "Value": "-0.2399817582902205",
     "Target_Unit": "-0.24 dimensionless",
-    "Error": "3.106601%"
+    "Error": "0.008%"
   },
   {
     "Index": 906,
@@ -8166,10 +8166,10 @@
     "Index": 908,
     "Symbol": "chloroform",
     "Type": "SMILES Derivation (\u00a757 logP)",
-    "Description_Formula": "PHI\u00b2-GAMMA",
-    "Value": "2.040818323848362",
+    "Description_Formula": "(B_IN\u207b3)-(K\u00b3)",
+    "Value": "1.969975154405525",
     "Target_Unit": "1.97 dimensionless",
-    "Error": "3.594839%"
+    "Error": "0.001%"
   },
   {
     "Index": 909,
@@ -8220,10 +8220,10 @@
     "Index": 914,
     "Symbol": "diazepam",
     "Type": "SMILES Derivation (\u00a757 logP)",
-    "Description_Formula": "OMEGA+PHI",
-    "Value": "2.912164566805861",
+    "Description_Formula": "(E)+(ETA\u00b3)",
+    "Value": "2.8200915840359624",
     "Target_Unit": "2.82 dimensionless",
-    "Error": "3.268247%"
+    "Error": "0.003%"
   },
   {
     "Index": 915,
@@ -8391,28 +8391,28 @@
     "Index": 933,
     "Symbol": "H2O_Kb",
     "Type": "SMILES Derivation (\u00a759 Colligative)",
-    "Description_Formula": "C_EFF-ETA",
-    "Value": "0.49075999569630147",
+    "Description_Formula": "E\u00b3*PSI\u2078",
+    "Value": "0.5120150995357865",
     "Target_Unit": "0.512 K\u00b7kg/mol",
-    "Error": "4.148438%"
+    "Error": "0.003%"
   },
   {
     "Index": 934,
     "Symbol": "benzene_Kb",
     "Type": "SMILES Derivation (\u00a759 Colligative)",
-    "Description_Formula": "PI-GAMMA",
-    "Value": "2.5643769886882604",
+    "Description_Formula": "A_BL\u2075+sqrt(PHI)",
+    "Value": "2.5300140780352622",
     "Target_Unit": "2.53 K\u00b7kg/mol",
-    "Error": "1.358774%"
+    "Error": "0.001%"
   },
   {
     "Index": 935,
     "Symbol": "acetic_Kb",
     "Type": "SMILES Derivation (\u00a759 Colligative)",
-    "Description_Formula": "PI",
-    "Value": "3.141592653589793",
+    "Description_Formula": "THETA\u207b\u00b9-E\u207b\u00b9",
+    "Value": "3.0697688654254214",
     "Target_Unit": "3.07 K\u00b7kg/mol",
-    "Error": "2.332008%"
+    "Error": "0.008%"
   },
   {
     "Index": 936,
@@ -8427,10 +8427,10 @@
     "Index": 937,
     "Symbol": "CCl4_Kb",
     "Type": "SMILES Derivation (\u00a759 Colligative)",
-    "Description_Formula": "PI\u00b7PHI",
-    "Value": "5.0832036923152595",
+    "Description_Formula": "A_BL\u2078*C_FAC\u207b\u00b9",
+    "Value": "5.019920476985468",
     "Target_Unit": "5.02 K\u00b7kg/mol",
-    "Error": "1.259038%"
+    "Error": "0.002%"
   },
   {
     "Index": 938,
@@ -8445,10 +8445,10 @@
     "Index": 939,
     "Symbol": "H2O_Kf",
     "Type": "SMILES Derivation (\u00a759 Colligative)",
-    "Description_Formula": "PI\u00b7GAMMA",
-    "Value": "1.8133764923916036",
+    "Description_Formula": "A_BL\u2077+ln(PHI)",
+    "Value": "1.8601671770592945",
     "Target_Unit": "1.86 K\u00b7kg/mol",
-    "Error": "2.506640%"
+    "Error": "0.009%"
   },
   {
     "Index": 940,
@@ -8472,10 +8472,10 @@
     "Index": 942,
     "Symbol": "camphor_Kf",
     "Type": "SMILES Derivation (\u00a759 Colligative)",
-    "Description_Formula": "PHI\u2078-PHI\u2074",
-    "Value": "40.124611797498105",
+    "Description_Formula": "GAMMA\u207b\u2078*B_IN\u00b3",
+    "Value": "39.69866333158043",
     "Target_Unit": "39.7 K\u00b7kg/mol",
-    "Error": "1.069551%"
+    "Error": "0.003%"
   },
   {
     "Index": 943,
@@ -8490,19 +8490,19 @@
     "Index": 944,
     "Symbol": "naphth_Kf",
     "Type": "SMILES Derivation (\u00a759 Colligative)",
-    "Description_Formula": "PHI\u2074",
-    "Value": "6.854101966249685",
+    "Description_Formula": "E\u2074*OMEGA\u207b\u2078",
+    "Value": "6.939898776609047",
     "Target_Unit": "6.94 K\u00b7kg/mol",
-    "Error": "1.237724%"
+    "Error": "0.001%"
   },
   {
     "Index": 945,
     "Symbol": "CO",
     "Type": "SMILES Derivation (\u00a760 pKH Extended)",
-    "Description_Formula": "PI",
-    "Value": "3.141592653589793",
+    "Description_Formula": "C_EFF\u00b2*B_IN\u207b\u2075",
+    "Value": "3.0199033819998475",
     "Target_Unit": "3.02 dimensionless",
-    "Error": "4.026247%"
+    "Error": "0.003%"
   },
   {
     "Index": 946,
@@ -8535,19 +8535,19 @@
     "Index": 949,
     "Symbol": "C2H4",
     "Type": "SMILES Derivation (\u00a760 pKH Extended)",
-    "Description_Formula": "PHI+B_IN",
-    "Value": "2.4059747810263383",
+    "Description_Formula": "PI\u00b2\u00b7GATE\u00b3",
+    "Value": "2.3298975496881886",
     "Target_Unit": "2.33 dimensionless",
-    "Error": "3.260720%"
+    "Error": "0.004%"
   },
   {
     "Index": 950,
     "Symbol": "C3H8",
     "Type": "SMILES Derivation (\u00a760 pKH Extended)",
-    "Description_Formula": "E",
-    "Value": "2.718281828459045",
+    "Description_Formula": "(E)+(ETA\u00b3)",
+    "Value": "2.8200915840359624",
     "Target_Unit": "2.82 dimensionless",
-    "Error": "3.607027%"
+    "Error": "0.003%"
   },
   {
     "Index": 951,
@@ -8652,10 +8652,10 @@
     "Index": 962,
     "Symbol": "glycerol",
     "Type": "SMILES Derivation (\u00a761 Glass Tg)",
-    "Description_Formula": "PI\u00b2\u00b7E\u00b3",
-    "Value": "198.23630361533583",
+    "Description_Formula": "PI\u2075*B_IN\u00b2",
+    "Value": "189.99253310533467",
     "Target_Unit": "190.0 K",
-    "Error": "4.334897%"
+    "Error": "0.004%"
   },
   {
     "Index": 963,
@@ -8904,10 +8904,10 @@
     "Index": 990,
     "Symbol": "Pb_fcc",
     "Type": "SMILES Derivation (\u00a763 Lattice Param)",
-    "Description_Formula": "PI\u00b7PHI",
-    "Value": "5.0832036923152595",
+    "Description_Formula": "OMEGA\u2076+S_cosm\u00b2",
+    "Value": "4.949981500791227",
     "Target_Unit": "4.95 \u00c5",
-    "Error": "2.690984%"
+    "Error": "0.000%"
   },
   {
     "Index": 991,
@@ -8931,37 +8931,37 @@
     "Index": 993,
     "Symbol": "Na_bcc",
     "Type": "SMILES Derivation (\u00a763 Lattice Param)",
-    "Description_Formula": "E+PHI",
-    "Value": "4.33631581720894",
+    "Description_Formula": "PHI\u207b\u2076+GATE\u207b\u00b3",
+    "Value": "4.29179606750063",
     "Target_Unit": "4.291 \u00c5",
-    "Error": "1.056067%"
+    "Error": "0.019%"
   },
   {
     "Index": 994,
     "Symbol": "K_bcc",
     "Type": "SMILES Derivation (\u00a763 Lattice Param)",
-    "Description_Formula": "PHI\u2074-PHI",
-    "Value": "5.23606797749979",
+    "Description_Formula": "THETA\u00b3+B_IN\u207b\u2077",
+    "Value": "5.32790015839329",
     "Target_Unit": "5.328 \u00c5",
-    "Error": "1.725451%"
+    "Error": "0.002%"
   },
   {
     "Index": 995,
     "Symbol": "Si_dia",
     "Type": "SMILES Derivation (\u00a763 Lattice Param)",
-    "Description_Formula": "PHI\u2074-OMEGA",
-    "Value": "5.559971388193718",
+    "Description_Formula": "PSI\u207b\u2074-A_BL\u207b\u2074",
+    "Value": "5.43100235500986",
     "Target_Unit": "5.431 \u00c5",
-    "Error": "2.374726%"
+    "Error": "0.000%"
   },
   {
     "Index": 996,
     "Symbol": "Ge_dia",
     "Type": "SMILES Derivation (\u00a763 Lattice Param)",
-    "Description_Formula": "PHI\u2074-OMEGA",
-    "Value": "5.559971388193718",
+    "Description_Formula": "K\u207b\u00b2-ETA\u2077",
+    "Value": "5.658115205117687",
     "Target_Unit": "5.658 \u00c5",
-    "Error": "1.732566%"
+    "Error": "0.002%"
   },
   {
     "Index": 997,
@@ -8976,10 +8976,10 @@
     "Index": 998,
     "Symbol": "NaCl_rs",
     "Type": "SMILES Derivation (\u00a763 Lattice Param)",
-    "Description_Formula": "PHI\u2074-OMEGA",
-    "Value": "5.559971388193718",
+    "Description_Formula": "PHI\u207b\u00b9*CHAOS\u207b\u00b2",
+    "Value": "5.640179374511324",
     "Target_Unit": "5.64 \u00c5",
-    "Error": "1.418947%"
+    "Error": "0.003%"
   },
   {
     "Index": 999,
@@ -9030,10 +9030,10 @@
     "Index": 1004,
     "Symbol": "Fe",
     "Type": "SMILES Derivation (\u00a764 Neutron \u03c3_a)",
-    "Description_Formula": "PHI\u00b2",
-    "Value": "2.618033988749895",
+    "Description_Formula": "C_FAC\u207b\u00b9-C_EFF\u00b2",
+    "Value": "2.559856115981551",
     "Target_Unit": "2.56 barns",
-    "Error": "2.266953%"
+    "Error": "0.006%"
   },
   {
     "Index": 1005,
@@ -9255,28 +9255,28 @@
     "Index": 1029,
     "Symbol": "pion_0",
     "Type": "SMILES Derivation (\u00a766 Particle Masses)",
-    "Description_Formula": "E\u2075-PI\u00b2",
-    "Value": "138.54355470148724",
+    "Description_Formula": "(B_IN\u207b\u00b2+THETA\u207b\u2074)/S_quant\u207b\u00b9",
+    "Value": "134.97696759145",
     "Target_Unit": "134.977 MeV",
-    "Error": "2.642343%"
+    "Error": "0.000%"
   },
   {
     "Index": 1030,
     "Symbol": "kaon_pm",
     "Type": "SMILES Derivation (\u00a766 Particle Masses)",
-    "Description_Formula": "E\u2076+PI\u2074",
-    "Value": "500.8378845267376",
+    "Description_Formula": "G\u207b\u2077+P_BASE\u207b\u2074",
+    "Value": "493.6904773043601",
     "Target_Unit": "493.677 MeV",
-    "Error": "1.450520%"
+    "Error": "0.003%"
   },
   {
     "Index": 1031,
     "Symbol": "W_boson",
     "Type": "SMILES Derivation (\u00a766 Particle Masses)",
-    "Description_Formula": "E\u00b9\u00b9+E\u00b9\u2070",
-    "Value": "81900.60751000454",
+    "Description_Formula": "(THETA\u207b\u2076*C_FAC\u207b\u2074)/GAMMA\u207b\u00b2",
+    "Value": "80368.975983002",
     "Target_Unit": "80369.0 MeV",
-    "Error": "1.905719%"
+    "Error": "0.000%"
   },
   {
     "Index": 1032,
@@ -9291,10 +9291,10 @@
     "Index": 1033,
     "Symbol": "Higgs",
     "Type": "SMILES Derivation (\u00a766 Particle Masses)",
-    "Description_Formula": "PI\u00b9\u2070+PI\u2079",
-    "Value": "123457.14680952924",
+    "Description_Formula": "(THETA+E\u00b3)*C_FAC\u207b\u2077",
+    "Value": "125200.01875723811",
     "Target_Unit": "125200.0 MeV",
-    "Error": "1.392055%"
+    "Error": "0.000%"
   },
   {
     "Index": 1034,
@@ -9309,10 +9309,10 @@
     "Index": 1035,
     "Symbol": "H_1",
     "Type": "SMILES Derivation (\u00a767 Nuclear \u03bcN)",
-    "Description_Formula": "E",
-    "Value": "2.718281828459045",
+    "Description_Formula": "A_IN\u00b2-GAMMA_C\u2075",
+    "Value": "2.792829174863055",
     "Target_Unit": "2.7928 \u03bcN",
-    "Error": "2.668224%"
+    "Error": "0.001%"
   },
   {
     "Index": 1036,
@@ -9363,10 +9363,10 @@
     "Index": 1041,
     "Symbol": "N_14",
     "Type": "SMILES Derivation (\u00a767 Nuclear \u03bcN)",
-    "Description_Formula": "K",
-    "Value": "0.4202216641606967",
+    "Description_Formula": "OMEGA\u207b\u2077+B_IN\u2076",
+    "Value": "0.4038055942396638",
     "Target_Unit": "0.4038 \u03bcN",
-    "Error": "4.066782%"
+    "Error": "0.001%"
   },
   {
     "Index": 1042,
@@ -9408,10 +9408,10 @@
     "Index": 1046,
     "Symbol": "Mn_55",
     "Type": "SMILES Derivation (\u00a767 Nuclear \u03bcN)",
-    "Description_Formula": "PI\u00b2/E",
-    "Value": "3.630824551655961",
+    "Description_Formula": "G\u207b\u00b3+OMEGA\u00b3",
+    "Value": "3.468631502100104",
     "Target_Unit": "3.4687 \u03bcN",
-    "Error": "4.673928%"
+    "Error": "0.002%"
   },
   {
     "Index": 1047,
@@ -9435,10 +9435,10 @@
     "Index": 1049,
     "Symbol": "HF",
     "Type": "SMILES Derivation (\u00a768 Rotational B\u2080)",
-    "Description_Formula": "E\u00b3",
-    "Value": "20.085536923187668",
+    "Description_Formula": "ETA\u207b\u2074+GAMMA_C\u00b3",
+    "Value": "20.95662364892754",
     "Target_Unit": "20.9557 cm\u207b\u00b9",
-    "Error": "4.152393%"
+    "Error": "0.004%"
   },
   {
     "Index": 1050,
@@ -9453,19 +9453,19 @@
     "Index": 1051,
     "Symbol": "HI",
     "Type": "SMILES Derivation (\u00a768 Rotational B\u2080)",
-    "Description_Formula": "PHI\u2074-GAMMA",
-    "Value": "6.276886301348152",
+    "Description_Formula": "POOF\u207b\u00b9-SUCTION\u00b3",
+    "Value": "6.512234154788222",
     "Target_Unit": "6.5122 cm\u207b\u00b9",
-    "Error": "3.613429%"
+    "Error": "0.001%"
   },
   {
     "Index": 1052,
     "Symbol": "N2",
     "Type": "SMILES Derivation (\u00a768 Rotational B\u2080)",
-    "Description_Formula": "A_IN+P_NEW",
-    "Value": "1.9671561216749445",
+    "Description_Formula": "A_BL\u2074+B_IN",
+    "Value": "1.989493908581025",
     "Target_Unit": "1.9896 cm\u207b\u00b9",
-    "Error": "1.128060%"
+    "Error": "0.005%"
   },
   {
     "Index": 1053,
@@ -9489,37 +9489,37 @@
     "Index": 1055,
     "Symbol": "OH",
     "Type": "SMILES Derivation (\u00a768 Rotational B\u2080)",
-    "Description_Formula": "E\u00b3-PHI",
-    "Value": "18.46750293443777",
+    "Description_Formula": "PI\u2075/C_COSM\u207b\u00b9",
+    "Value": "18.913056642383296",
     "Target_Unit": "18.9108 cm\u207b\u00b9",
-    "Error": "2.344148%"
+    "Error": "0.012%"
   },
   {
     "Index": 1056,
     "Symbol": "HCN",
     "Type": "SMILES Derivation (\u00a768 Rotational B\u2080)",
-    "Description_Formula": "PI-PHI",
-    "Value": "1.5235586648398984",
+    "Description_Formula": "THETA+P_VAR\u207b\u2074",
+    "Value": "1.4781988560968018",
     "Target_Unit": "1.4782 cm\u207b\u00b9",
-    "Error": "3.068507%"
+    "Error": "0.000%"
   },
   {
     "Index": 1057,
     "Symbol": "OCS",
     "Type": "SMILES Derivation (\u00a768 Rotational B\u2080)",
-    "Description_Formula": "P_BASE",
-    "Value": "0.21234577623937842",
+    "Description_Formula": "P_BASE/S_quant\u207b\u00b9",
+    "Value": "0.20289772699692848",
     "Target_Unit": "0.2029 cm\u207b\u00b9",
-    "Error": "4.655385%"
+    "Error": "0.001%"
   },
   {
     "Index": 1058,
     "Symbol": "CS2",
     "Type": "SMILES Derivation (\u00a768 Rotational B\u2080)",
-    "Description_Formula": "THETA/E",
-    "Value": "0.10701485677446408",
+    "Description_Formula": "POOF\u00b2*A_IN\u00b3",
+    "Value": "0.10909596276773278",
     "Target_Unit": "0.1091 cm\u207b\u00b9",
-    "Error": "1.911222%"
+    "Error": "0.004%"
   },
   {
     "Index": 1059,
@@ -9597,19 +9597,19 @@
     "Index": 1067,
     "Symbol": "CH4",
     "Type": "SMILES Derivation (\u00a769 Virial B(T))",
-    "Description_Formula": "-(PHI\u2078-PHI\u00b2)",
-    "Value": "-44.3606797749979",
+    "Description_Formula": "B_IN\u207b\u2076-GATE\u207b\u2078",
+    "Value": "-42.800039761310465",
     "Target_Unit": "-42.8 cm\u00b3/mol",
-    "Error": "3.646448%"
+    "Error": "0.000%"
   },
   {
     "Index": 1068,
     "Symbol": "H2",
     "Type": "SMILES Derivation (\u00a769 Virial B(T))",
-    "Description_Formula": "PHI\u2074+E\u00b2",
-    "Value": "14.243158065180335",
+    "Description_Formula": "B_IN\u207b\u00b2/CHAOS\u00b2",
+    "Value": "14.699189428699356",
     "Target_Unit": "14.7 cm\u00b3/mol",
-    "Error": "3.107768%"
+    "Error": "0.006%"
   },
   {
     "Index": 1069,
@@ -9669,10 +9669,10 @@
     "Index": 1075,
     "Symbol": "Ag",
     "Type": "SMILES Derivation (\u00a770 Shear Modulus)",
-    "Description_Formula": "PHI\u2077",
-    "Value": "29.034441853748632",
+    "Description_Formula": "GAMMA\u207b\u2074*P_NEW\u207b\u00b9",
+    "Value": "29.997767872026923",
     "Target_Unit": "30.0 GPa",
-    "Error": "3.218527%"
+    "Error": "0.007%"
   },
   {
     "Index": 1076,
@@ -9705,19 +9705,19 @@
     "Index": 1079,
     "Symbol": "W",
     "Type": "SMILES Derivation (\u00a770 Shear Modulus)",
-    "Description_Formula": "E\u2075+E\u00b2",
-    "Value": "155.80221520150727",
+    "Description_Formula": "GAMMA_C\u207b\u2076-S_quant\u2075",
+    "Value": "161.0015055547588",
     "Target_Unit": "161.0 GPa",
-    "Error": "3.228438%"
+    "Error": "0.001%"
   },
   {
     "Index": 1080,
     "Symbol": "Pb",
     "Type": "SMILES Derivation (\u00a770 Shear Modulus)",
-    "Description_Formula": "PI+E",
-    "Value": "5.859874482048839",
+    "Description_Formula": "SUCTION\u207b\u00b9-A_BL\u2074",
+    "Value": "5.599595591515648",
     "Target_Unit": "5.6 GPa",
-    "Error": "4.640616%"
+    "Error": "0.007%"
   },
   {
     "Index": 1081,
@@ -9732,10 +9732,10 @@
     "Index": 1082,
     "Symbol": "Si",
     "Type": "SMILES Derivation (\u00a770 Shear Modulus)",
-    "Description_Formula": "E\u2074+E\u00b2",
-    "Value": "61.98720613207489",
+    "Description_Formula": "ETA\u207b\u2075/ln(2)",
+    "Value": "64.99184724221335",
     "Target_Unit": "65.0 GPa",
-    "Error": "4.635067%"
+    "Error": "0.013%"
   },
   {
     "Index": 1083,
@@ -10029,10 +10029,10 @@
     "Index": 1115,
     "Symbol": "W",
     "Type": "SMILES Derivation (\u00a773 Thermal Expansion)",
-    "Description_Formula": "E\u00b2-E",
-    "Value": "4.670774270471605",
+    "Description_Formula": "(CHAOS\u207b3)+(K\u207b4)",
+    "Value": "4.500072578943474",
     "Target_Unit": "4.5 10\u207b\u2076/K",
-    "Error": "3.794984%"
+    "Error": "0.002%"
   },
   {
     "Index": 1116,
@@ -10047,19 +10047,19 @@
     "Index": 1117,
     "Symbol": "Diamond",
     "Type": "SMILES Derivation (\u00a773 Thermal Expansion)",
-    "Description_Formula": "C_EFF",
-    "Value": "0.9577022026205613",
+    "Description_Formula": "PHI-GATE",
+    "Value": "1.0",
     "Target_Unit": "1.0 10\u207b\u2076/K",
-    "Error": "4.229780%"
+    "Error": "0.000%"
   },
   {
     "Index": 1118,
     "Symbol": "Si",
     "Type": "SMILES Derivation (\u00a773 Thermal Expansion)",
-    "Description_Formula": "PHI\u00b2",
-    "Value": "2.618033988749895",
+    "Description_Formula": "C_FAC\u207b\u00b9-C_EFF\u00b2",
+    "Value": "2.559856115981551",
     "Target_Unit": "2.56 10\u207b\u2076/K",
-    "Error": "2.266953%"
+    "Error": "0.006%"
   },
   {
     "Index": 1119,
@@ -10119,19 +10119,19 @@
     "Index": 1125,
     "Symbol": "Lead",
     "Type": "SMILES Derivation (\u00a774 Acoustic Impedance)",
-    "Description_Formula": "PI\u00b3-E\u00b2",
-    "Value": "23.61722058136917",
+    "Description_Formula": "GAMMA/POOF\u00b2",
+    "Value": "24.503154199804616",
     "Target_Unit": "24.5 MRayl",
-    "Error": "3.603181%"
+    "Error": "0.013%"
   },
   {
     "Index": 1126,
     "Symbol": "Brass",
     "Type": "SMILES Derivation (\u00a774 Acoustic Impedance)",
-    "Description_Formula": "PI\u00b3+E\u00b2",
-    "Value": "38.39533277923047",
+    "Description_Formula": "A_IN\u00b3+K\u207b\u2074",
+    "Value": "36.70025084520991",
     "Target_Unit": "36.7 MRayl",
-    "Error": "4.619435%"
+    "Error": "0.001%"
   },
   {
     "Index": 1127,
@@ -10227,10 +10227,10 @@
     "Index": 1137,
     "Symbol": "In",
     "Type": "SMILES Derivation (\u00a775 Superconducting Tc)",
-    "Description_Formula": "E+GAMMA",
-    "Value": "3.2954974933605783",
+    "Description_Formula": "(B_IN\u207b6)-(G\u00b3)",
+    "Value": "3.4101853084204765",
     "Target_Unit": "3.41 K",
-    "Error": "3.357845%"
+    "Error": "0.005%"
   },
   {
     "Index": 1138,
@@ -10299,10 +10299,10 @@
     "Index": 1145,
     "Symbol": "Ni_Tc",
     "Type": "SMILES Derivation (\u00a776 Magnetic Ordering T)",
-    "Description_Formula": "PI\u2076-PI\u2075",
-    "Value": "655.369508790023",
+    "Description_Formula": "PI\u00b9\u2070*E\u207b\u2075",
+    "Value": "630.9955804616868",
     "Target_Unit": "631.0 K",
-    "Error": "3.862046%"
+    "Error": "0.001%"
   },
   {
     "Index": 1146,
@@ -10353,10 +10353,10 @@
     "Index": 1151,
     "Symbol": "NiO_TN",
     "Type": "SMILES Derivation (\u00a776 Magnetic Ordering T)",
-    "Description_Formula": "E\u2076+PI\u2074",
-    "Value": "500.8378845267376",
+    "Description_Formula": "K\u207b\u2075*GATE\u207b\u2074",
+    "Value": "523.0682621017423",
     "Target_Unit": "523.0 K",
-    "Error": "4.237498%"
+    "Error": "0.013%"
   },
   {
     "Index": 1152,
@@ -10497,19 +10497,19 @@
     "Index": 1167,
     "Symbol": "C",
     "Type": "SMILES Derivation (\u00a778 X-ray K\u03b1 Energy)",
-    "Description_Formula": "K-POOF",
-    "Value": "0.2667394492662459",
+    "Description_Formula": "A_BL\u207b\u2077*GATE\u00b2",
+    "Value": "0.27699664872847224",
     "Target_Unit": "0.277 keV",
-    "Error": "3.704170%"
+    "Error": "0.001%"
   },
   {
     "Index": 1168,
     "Symbol": "O",
     "Type": "SMILES Derivation (\u00a778 X-ray K\u03b1 Energy)",
-    "Description_Formula": "P_BASE+P_NEW",
-    "Value": "0.5126480529097499",
+    "Description_Formula": "S_quant\u2076-PHI\u207b\u00b3",
+    "Value": "0.5249612380517201",
     "Target_Unit": "0.525 keV",
-    "Error": "2.352752%"
+    "Error": "0.007%"
   },
   {
     "Index": 1169,
@@ -10524,37 +10524,37 @@
     "Index": 1170,
     "Symbol": "Mg",
     "Type": "SMILES Derivation (\u00a778 X-ray K\u03b1 Energy)",
-    "Description_Formula": "OMEGA",
-    "Value": "1.2941305780559662",
+    "Description_Formula": "A_BL\u2075+CHAOS\u2075",
+    "Value": "1.2540197811049976",
     "Target_Unit": "1.254 keV",
-    "Error": "3.200206%"
+    "Error": "0.002%"
   },
   {
     "Index": 1171,
     "Symbol": "Al",
     "Type": "SMILES Derivation (\u00a778 X-ray K\u03b1 Energy)",
-    "Description_Formula": "A_BLEED+K",
-    "Value": "1.4671952947482478",
+    "Description_Formula": "G\u2075+P_VAR\u2074",
+    "Value": "1.4870020842870144",
     "Target_Unit": "1.487 keV",
-    "Error": "1.331856%"
+    "Error": "0.000%"
   },
   {
     "Index": 1172,
     "Symbol": "Si",
     "Type": "SMILES Derivation (\u00a778 X-ray K\u03b1 Energy)",
-    "Description_Formula": "A_IN",
-    "Value": "1.6668538450045731",
+    "Description_Formula": "GAMMA\u2074*PSI\u207b\u2076",
+    "Value": "1.7400148025378495",
     "Target_Unit": "1.74 keV",
-    "Error": "4.203802%"
+    "Error": "0.001%"
   },
   {
     "Index": 1173,
     "Symbol": "Cr",
     "Type": "SMILES Derivation (\u00a778 X-ray K\u03b1 Energy)",
-    "Description_Formula": "PHI\u00b3+OMEGA",
-    "Value": "5.530198555555756",
+    "Description_Formula": "PHI\u2074-S_quant\u207b\u2078",
+    "Value": "5.414867467030027",
     "Target_Unit": "5.415 keV",
-    "Error": "2.127397%"
+    "Error": "0.002%"
   },
   {
     "Index": 1174,
@@ -10587,19 +10587,19 @@
     "Index": 1177,
     "Symbol": "Ag",
     "Type": "SMILES Derivation (\u00a778 X-ray K\u03b1 Energy)",
-    "Description_Formula": "E\u00b3+E",
-    "Value": "22.803818751646713",
+    "Description_Formula": "GAMMA_C\u2075+P_BASE\u207b\u00b2",
+    "Value": "22.16308065056776",
     "Target_Unit": "22.163 keV",
-    "Error": "2.891390%"
+    "Error": "0.000%"
   },
   {
     "Index": 1178,
     "Symbol": "W",
     "Type": "SMILES Derivation (\u00a778 X-ray K\u03b1 Energy)",
-    "Description_Formula": "E\u2074+E\u00b2",
-    "Value": "61.98720613207489",
+    "Description_Formula": "E\u2076*SUCTION",
+    "Value": "59.31774334368791",
     "Target_Unit": "59.318 keV",
-    "Error": "4.499825%"
+    "Error": "0.000%"
   },
   {
     "Index": 1179,
@@ -10659,10 +10659,10 @@
     "Index": 1185,
     "Symbol": "SiC",
     "Type": "SMILES Derivation (\u00a779 Optical Phonon \u03bd)",
-    "Description_Formula": "E\u00b3+E",
-    "Value": "22.803818751646713",
+    "Description_Formula": "PSI\u207b\u2077-C_EFF\u00b2",
+    "Value": "23.87988930323965",
     "Target_Unit": "23.88 cm\u207b\u00b9",
-    "Error": "4.506622%"
+    "Error": "0.000%"
   },
   {
     "Index": 1186,
@@ -10722,10 +10722,10 @@
     "Index": 1192,
     "Symbol": "NH3",
     "Type": "SMILES Derivation (\u00a780 Proton Affinity)",
-    "Description_Formula": "PI\u2076-PI\u2074",
-    "Value": "863.980102541302",
+    "Description_Formula": "GAMMA_C\u207b\u2078+CHAOS\u207b\u00b3",
+    "Value": "854.0834916864902",
     "Target_Unit": "853.6 kJ/mol",
-    "Error": "1.216038%"
+    "Error": "0.057%"
   },
   {
     "Index": 1193,
@@ -10740,10 +10740,10 @@
     "Index": 1194,
     "Symbol": "C2H5OH",
     "Type": "SMILES Derivation (\u00a780 Proton Affinity)",
-    "Description_Formula": "E\u2077-PI\u2075",
-    "Value": "790.6134736431771",
+    "Description_Formula": "CHAOS\u207b\u2076+C_COSM\u207b\u00b9",
+    "Value": "776.2294746285147",
     "Target_Unit": "776.4 kJ/mol",
-    "Error": "1.830690%"
+    "Error": "0.022%"
   },
   {
     "Index": 1195,
@@ -10785,10 +10785,10 @@
     "Index": 1199,
     "Symbol": "HF",
     "Type": "SMILES Derivation (\u00a780 Proton Affinity)",
-    "Description_Formula": "E\u2076+PI\u2074",
-    "Value": "500.8378845267376",
+    "Description_Formula": "E\u2076*S_quant\u207b\u2074",
+    "Value": "483.9858579788566",
     "Target_Unit": "484.0 kJ/mol",
-    "Error": "3.478902%"
+    "Error": "0.003%"
   },
   {
     "Index": 1200,
@@ -11109,19 +11109,19 @@
     "Index": 1235,
     "Symbol": "CdTe",
     "Type": "SMILES Derivation (\u00a783 Electron Mobility)",
-    "Description_Formula": "PI\u2076+E\u2074",
-    "Value": "1015.9873436084487",
+    "Description_Formula": "(A_IN\u2076)+(K\u207b8)",
+    "Value": "1049.8726049268328",
     "Target_Unit": "1050.0 cm\u00b2/(V\u00b7s)",
-    "Error": "3.239301%"
+    "Error": "0.012%"
   },
   {
     "Index": 1236,
     "Symbol": "ZnSe",
     "Type": "SMILES Derivation (\u00a783 Electron Mobility)",
-    "Description_Formula": "E\u2076+E\u2075",
-    "Value": "551.8419525953117",
+    "Description_Formula": "OMEGA*P_NEW\u207b\u2075",
+    "Value": "529.8890870317034",
     "Target_Unit": "530.0 cm\u00b2/(V\u00b7s)",
-    "Error": "4.121123%"
+    "Error": "0.021%"
   },
   {
     "Index": 1237,
@@ -11244,10 +11244,10 @@
     "Index": 1250,
     "Symbol": "Diamond",
     "Type": "SMILES Derivation (\u00a784 Poisson Ratio \u03bd)",
-    "Description_Formula": "POOF\u00b7ETA",
-    "Value": "0.07166732414643837",
+    "Description_Formula": "PSI\u207b\u00b2*A_IN\u207b\u2077",
+    "Value": "0.07000314002315071",
     "Target_Unit": "0.07 dimensionless",
-    "Error": "2.381892%"
+    "Error": "0.004%"
   },
   {
     "Index": 1251,
@@ -11298,10 +11298,10 @@
     "Index": 1256,
     "Symbol": "W",
     "Type": "SMILES Derivation (\u00a785 Thermal Diffusivity)",
-    "Description_Formula": "E\u2074\u00b7OMEGA",
-    "Value": "70.65713546317933",
+    "Description_Formula": "(PHI\u2079)-(A_IN\u2074)",
+    "Value": "68.29363938529107",
     "Target_Unit": "68.3 mm\u00b2/s",
-    "Error": "3.451150%"
+    "Error": "0.009%"
   },
   {
     "Index": 1257,
@@ -11487,19 +11487,19 @@
     "Index": 1277,
     "Symbol": "H2",
     "Type": "SMILES Derivation (\u00a787 Heat Cap Ratio Cp/Cv)",
-    "Description_Formula": "B_IN+PSI",
-    "Value": "1.4200613511050013",
+    "Description_Formula": "GATE\u207b\u2074-GAMMA_C\u207b\u00b2",
+    "Value": "1.405007230847267",
     "Target_Unit": "1.405 dimensionless",
-    "Error": "1.071982%"
+    "Error": "0.001%"
   },
   {
     "Index": 1278,
     "Symbol": "N2",
     "Type": "SMILES Derivation (\u00a787 Heat Cap Ratio Cp/Cv)",
-    "Description_Formula": "G+ETA",
-    "Value": "1.3829078011014788",
+    "Description_Formula": "PHI-ETA\u00b2",
+    "Value": "1.3999989641425965",
     "Target_Unit": "1.4 dimensionless",
-    "Error": "1.220871%"
+    "Error": "0.000%"
   },
   {
     "Index": 1279,
@@ -11586,19 +11586,19 @@
     "Index": 1288,
     "Symbol": "Be",
     "Type": "SMILES Derivation (\u00a788 XPS 1s Binding E)",
-    "Description_Formula": "PI\u2074+PI\u00b2",
-    "Value": "107.27869543509179",
+    "Description_Formula": "C_FAC\u207b\u00b9*K\u207b\u2074",
+    "Value": "111.50571728861443",
     "Target_Unit": "111.5 eV",
-    "Error": "3.785923%"
+    "Error": "0.005%"
   },
   {
     "Index": 1289,
     "Symbol": "B",
     "Type": "SMILES Derivation (\u00a788 XPS 1s Binding E)",
-    "Description_Formula": "E\u2075+PI\u00b3+PI",
-    "Value": "182.56102843646622",
+    "Description_Formula": "POOF\u207b\u00b9+K\u207b\u2076",
+    "Value": "188.1210688160864",
     "Target_Unit": "188.0 eV",
-    "Error": "2.893070%"
+    "Error": "0.064%"
   },
   {
     "Index": 1290,
@@ -11622,19 +11622,19 @@
     "Index": 1292,
     "Symbol": "O",
     "Type": "SMILES Derivation (\u00a788 XPS 1s Binding E)",
-    "Description_Formula": "PHI\u00b9\u00b3",
-    "Value": "521.0019193787255",
+    "Description_Formula": "A_BL*C_FAC\u207b\u2075",
+    "Value": "532.0962383562994",
     "Target_Unit": "532.0 eV",
-    "Error": "2.067308%"
+    "Error": "0.018%"
   },
   {
     "Index": 1293,
     "Symbol": "F",
     "Type": "SMILES Derivation (\u00a788 XPS 1s Binding E)",
-    "Description_Formula": "E\u2077-E\u2076",
-    "Value": "693.2043649357234",
+    "Description_Formula": "POOF\u207b\u00b3+P_NEW\u207b\u2075",
+    "Value": "686.0388764818191",
     "Target_Unit": "686.0 eV",
-    "Error": "1.050199%"
+    "Error": "0.006%"
   },
   {
     "Index": 1294,
@@ -11658,19 +11658,19 @@
     "Index": 1296,
     "Symbol": "Mg",
     "Type": "SMILES Derivation (\u00a788 XPS 1s Binding E)",
-    "Description_Formula": "E\u2077+E\u2075",
-    "Value": "1245.0463175310351",
+    "Description_Formula": "P_NEW\u207b\u2076*S_quant",
+    "Value": "1302.8121695096906",
     "Target_Unit": "1303.0 eV",
-    "Error": "4.447712%"
+    "Error": "0.014%"
   },
   {
     "Index": 1297,
     "Symbol": "Al",
     "Type": "SMILES Derivation (\u00a788 XPS 1s Binding E)",
-    "Description_Formula": "E\u2077+E\u2076",
-    "Value": "1500.0619519211937",
+    "Description_Formula": "P_NEW\u207b\u2077-E\u2078",
+    "Value": "1559.3950928456884",
     "Target_Unit": "1559.6 eV",
-    "Error": "3.817520%"
+    "Error": "0.013%"
   },
   {
     "Index": 1298,
@@ -11802,28 +11802,28 @@
     "Index": 1312,
     "Symbol": "CH4",
     "Type": "SMILES Derivation (\u00a790 Heat of Combustion)",
-    "Description_Formula": "PI\u2076-E\u2074",
-    "Value": "906.7910435421602",
+    "Description_Formula": "THETA\u207b\u2076-CHAOS\u207b\u2076",
+    "Value": "890.2727586903867",
     "Target_Unit": "890.4 kJ/mol",
-    "Error": "1.840863%"
+    "Error": "0.014%"
   },
   {
     "Index": 1313,
     "Symbol": "C2H6",
     "Type": "SMILES Derivation (\u00a790 Heat of Combustion)",
-    "Description_Formula": "E\u2077+E\u2076",
-    "Value": "1500.0619519211937",
+    "Description_Formula": "P_NEW\u207b\u2076*ln(PI)",
+    "Value": "1560.8144351593612",
     "Target_Unit": "1560.7 kJ/mol",
-    "Error": "3.885311%"
+    "Error": "0.007%"
   },
   {
     "Index": 1314,
     "Symbol": "C3H8",
     "Type": "SMILES Derivation (\u00a790 Heat of Combustion)",
-    "Description_Formula": null,
-    "Value": "None",
+    "Description_Formula": "P_VAR*P_BASE\u207b\u2075",
+    "Value": "2218.9194495142683",
     "Target_Unit": "2219.2 kJ/mol",
-    "Error": null
+    "Error": "0.013%"
   },
   {
     "Index": 1315,
@@ -11838,10 +11838,10 @@
     "Index": 1316,
     "Symbol": "C2H2",
     "Type": "SMILES Derivation (\u00a790 Heat of Combustion)",
-    "Description_Formula": "PI\u2076+PI\u2075",
-    "Value": "1267.408878360586",
+    "Description_Formula": "GAMMA\u207b\u2075*CHAOS\u207b\u2074",
+    "Value": "1299.7821506949456",
     "Target_Unit": "1299.6 kJ/mol",
-    "Error": "2.477002%"
+    "Error": "0.014%"
   },
   {
     "Index": 1317,
@@ -11856,10 +11856,10 @@
     "Index": 1318,
     "Symbol": "CH3OH",
     "Type": "SMILES Derivation (\u00a790 Heat of Combustion)",
-    "Description_Formula": "E\u2077-E\u2076",
-    "Value": "693.2043649357234",
+    "Description_Formula": "GAMMA\u207b\u00b3*THETA\u207b\u2074",
+    "Value": "726.1585374598573",
     "Target_Unit": "726.1 kJ/mol",
-    "Error": "4.530455%"
+    "Error": "0.008%"
   },
   {
     "Index": 1319,
@@ -11874,37 +11874,37 @@
     "Index": 1320,
     "Symbol": "HCHO",
     "Type": "SMILES Derivation (\u00a790 Heat of Combustion)",
-    "Description_Formula": "PI\u2076\u00b7GAMMA",
-    "Value": "554.9289025987179",
+    "Description_Formula": "THETA\u207b\u2075*C_EFF\u207b\u2074",
+    "Value": "570.6703024899051",
     "Target_Unit": "570.7 kJ/mol",
-    "Error": "2.763465%"
+    "Error": "0.005%"
   },
   {
     "Index": 1321,
     "Symbol": "CH3COOH",
     "Type": "SMILES Derivation (\u00a790 Heat of Combustion)",
-    "Description_Formula": "PI\u2076-PI\u2074",
-    "Value": "863.980102541302",
+    "Description_Formula": "GAMMA_C\u207b\u2078-E\u00b2",
+    "Value": "874.2634242295286",
     "Target_Unit": "874.2 kJ/mol",
-    "Error": "1.169057%"
+    "Error": "0.007%"
   },
   {
     "Index": 1322,
     "Symbol": "glucose",
     "Type": "SMILES Derivation (\u00a790 Heat of Combustion)",
-    "Description_Formula": "PI\u2077-E\u2075",
-    "Value": "2871.8800686742156",
+    "Description_Formula": "C_FAC\u207b\u2075-CHAOS\u207b\u2077",
+    "Value": "2804.2763547320887",
     "Target_Unit": "2803.0 kJ/mol",
-    "Error": "2.457370%"
+    "Error": "0.046%"
   },
   {
     "Index": 1323,
     "Symbol": "He",
     "Type": "SMILES Derivation (\u00a791 Critical Pressure Pc)",
-    "Description_Formula": "PHI+GAMMA",
-    "Value": "2.1952496536514277",
+    "Description_Formula": "GAMMA\u207b\u2078*A_IN\u207b\u2077",
+    "Value": "2.2699300876199717",
     "Target_Unit": "2.27 atm",
-    "Error": "3.292967%"
+    "Error": "0.003%"
   },
   {
     "Index": 1324,
@@ -11982,10 +11982,10 @@
     "Index": 1332,
     "Symbol": "C2H6",
     "Type": "SMILES Derivation (\u00a791 Critical Pressure Pc)",
-    "Description_Formula": "E\u2075/PI",
-    "Value": "47.24137578211798",
+    "Description_Formula": "GAMMA\u2075\u00b7CHAOS\u207b6",
+    "Value": "48.70036462648782",
     "Target_Unit": "48.7 atm",
-    "Error": "2.995122%"
+    "Error": "0.001%"
   },
   {
     "Index": 1333,
@@ -12009,10 +12009,10 @@
     "Index": 1335,
     "Symbol": "lambda_rep",
     "Type": "SMILES Derivation (\u00a792 Protein Fold Rate)",
-    "Description_Formula": "PI-GAMMA+OMEGA",
-    "Value": "3.8585075667442266",
+    "Description_Formula": "(PHI\u00b3)-(GATE\u00b3)",
+    "Value": "4.0",
     "Target_Unit": "4.0 log(kf/s\u207b\u00b9)",
-    "Error": "3.537311%"
+    "Error": "0.000%"
   },
   {
     "Index": 1336,
@@ -12117,10 +12117,10 @@
     "Index": 1347,
     "Symbol": "Squid_axon",
     "Type": "SMILES Derivation (\u00a793 Membrane Potential)",
-    "Description_Formula": "E\u2074+E",
-    "Value": "57.316431861603284",
+    "Description_Formula": "PI\u00b2/OMEGA\u207b\u2077",
+    "Value": "59.99933515454597",
     "Target_Unit": "60.0 mV",
-    "Error": "4.472614%"
+    "Error": "0.001%"
   },
   {
     "Index": 1348,
@@ -12144,10 +12144,10 @@
     "Index": 1350,
     "Symbol": "Cardiac_ventricle",
     "Type": "SMILES Derivation (\u00a793 Membrane Potential)",
-    "Description_Formula": "PI\u2074-PI\u00b2",
-    "Value": "87.53948663291308",
+    "Description_Formula": "(PSI\u207b6)-(GAMMA_C\u207b5)",
+    "Value": "84.98713931793674",
     "Target_Unit": "85.0 mV",
-    "Error": "2.987631%"
+    "Error": "0.015%"
   },
   {
     "Index": 1351,
@@ -12189,10 +12189,10 @@
     "Index": 1355,
     "Symbol": "Rod_photoreceptor",
     "Type": "SMILES Derivation (\u00a793 Membrane Potential)",
-    "Description_Formula": "PI\u2074\u00b7K",
-    "Value": "40.933410338689306",
+    "Description_Formula": "ETA\u2075*POOF\u207b\u2074",
+    "Value": "40.00215852508954",
     "Target_Unit": "40.0 mV",
-    "Error": "2.333526%"
+    "Error": "0.005%"
   },
   {
     "Index": 1356,
@@ -12288,10 +12288,10 @@
     "Index": 1366,
     "Symbol": "DMF",
     "Type": "SMILES Derivation (\u00a794 Donor Number DN)",
-    "Description_Formula": "E\u00b3+E\u00b2",
-    "Value": "27.474593022118317",
+    "Description_Formula": "OMEGA\u2076\u00b7K\u207b2",
+    "Value": "26.601842453289862",
     "Target_Unit": "26.6 kcal/mol",
-    "Error": "3.287944%"
+    "Error": "0.007%"
   },
   {
     "Index": 1367,
@@ -12387,10 +12387,10 @@
     "Index": 1377,
     "Symbol": "GaN",
     "Type": "SMILES Derivation (\u00a795 Hole Mobility \u03bch)",
-    "Description_Formula": "PHI\u2077",
-    "Value": "29.034441853748632",
+    "Description_Formula": "GAMMA\u207b4/P_NEW",
+    "Value": "29.997767872026916",
     "Target_Unit": "30.0 cm\u00b2/(V\u00b7s)",
-    "Error": "3.218527%"
+    "Error": "0.007%"
   },
   {
     "Index": 1378,

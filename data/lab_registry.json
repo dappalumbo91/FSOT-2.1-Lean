@@ -4,7 +4,7 @@
   "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
   "smiles_lab": {
     "source_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
-    "sha256": "DF11DFE247611B46FC34D49E29B6A75F25E86EF2D64522FE085C2CB296320F9D",
+    "sha256": "9ADDF157520625023F450A6E31B273D7679731796DC73C282DB438F2F271E899",
     "metadata": {
       "title": "FSOT SMILES Lab Dataset",
       "author": "Damian Arthur Palumbo",
@@ -43,8 +43,8 @@
         "record_count": 608,
         "matched_count": 608,
         "unmatched_count": 0,
-        "median_error_pct": 0.3989,
-        "max_error_pct": 4.655385,
+        "median_error_pct": 0.143476,
+        "max_error_pct": 2.927848,
         "catalog_gaps": [],
         "sample_names": [
           "IE_H",
@@ -58,8 +58,8 @@
         "record_count": 99,
         "matched_count": 99,
         "unmatched_count": 0,
-        "median_error_pct": 0.717702,
-        "max_error_pct": 4.304529,
+        "median_error_pct": 0.370628,
+        "max_error_pct": 1.932689,
         "catalog_gaps": [],
         "sample_names": [
           "H",
@@ -73,8 +73,8 @@
         "record_count": 485,
         "matched_count": 485,
         "unmatched_count": 0,
-        "median_error_pct": 0.651019,
-        "max_error_pct": 4.640616,
+        "median_error_pct": 0.483271,
+        "max_error_pct": 2.855489,
         "catalog_gaps": [],
         "sample_names": [
           "H\u2082O",
@@ -88,8 +88,8 @@
         "record_count": 39,
         "matched_count": 39,
         "unmatched_count": 0,
-        "median_error_pct": 1.025856,
-        "max_error_pct": 4.305297,
+        "median_error_pct": 0.438522,
+        "max_error_pct": 2.926885,
         "catalog_gaps": [],
         "sample_names": [
           "TMS",
@@ -103,8 +103,8 @@
         "record_count": 128,
         "matched_count": 128,
         "unmatched_count": 0,
-        "median_error_pct": 0.795617,
-        "max_error_pct": 4.472614,
+        "median_error_pct": 0.596444,
+        "max_error_pct": 2.321477,
         "catalog_gaps": [],
         "sample_names": [
           "CI2",
@@ -118,8 +118,8 @@
         "record_count": 24,
         "matched_count": 24,
         "unmatched_count": 0,
-        "median_error_pct": 1.232204,
-        "max_error_pct": 3.869913,
+        "median_error_pct": 1.229388,
+        "max_error_pct": 2.876083,
         "catalog_gaps": [],
         "sample_names": [
           "InAs",
@@ -133,8 +133,8 @@
         "record_count": 51,
         "matched_count": 51,
         "unmatched_count": 0,
-        "median_error_pct": 0.82106,
-        "max_error_pct": 4.673928,
+        "median_error_pct": 0.366496,
+        "max_error_pct": 2.187774,
         "catalog_gaps": [],
         "sample_names": [
           "H-2",
@@ -148,8 +148,8 @@
         "record_count": 36,
         "matched_count": 36,
         "unmatched_count": 0,
-        "median_error_pct": 1.050199,
-        "max_error_pct": 4.499825,
+        "median_error_pct": 0.089934,
+        "max_error_pct": 0.813808,
         "catalog_gaps": [],
         "sample_names": [
           "electron",
@@ -170,8 +170,8 @@
         "record_count": 128,
         "matched_count": 128,
         "unmatched_count": 0,
-        "median_error_pct": 0.795617,
-        "max_error_pct": 4.472614,
+        "median_error_pct": 0.596444,
+        "max_error_pct": 2.321477,
         "catalog_gaps": [],
         "sample_names": [
           "CI2",
@@ -185,8 +185,8 @@
         "record_count": 39,
         "matched_count": 39,
         "unmatched_count": 0,
-        "median_error_pct": 1.025856,
-        "max_error_pct": 4.305297,
+        "median_error_pct": 0.438522,
+        "max_error_pct": 2.926885,
         "catalog_gaps": [],
         "sample_names": [
           "TMS",
@@ -200,8 +200,8 @@
         "record_count": 608,
         "matched_count": 608,
         "unmatched_count": 0,
-        "median_error_pct": 0.3989,
-        "max_error_pct": 4.655385,
+        "median_error_pct": 0.143476,
+        "max_error_pct": 2.927848,
         "catalog_gaps": [],
         "sample_names": [
           "IE_H",
@@ -215,8 +215,8 @@
         "record_count": 99,
         "matched_count": 99,
         "unmatched_count": 0,
-        "median_error_pct": 0.717702,
-        "max_error_pct": 4.304529,
+        "median_error_pct": 0.370628,
+        "max_error_pct": 1.932689,
         "catalog_gaps": [],
         "sample_names": [
           "H",
@@ -228,7 +228,7 @@
       }
     },
     "unmapped_section_sample": [],
-    "precision_outliers_patched_at": "2026-07-08T19:32:02.937995+00:00"
+    "precision_outliers_patched_at": "2026-07-08T19:47:43.676389+00:00"
   },
   "neurolab": {
     "thalamic_gate": {
@@ -48055,8 +48055,8 @@
   "cosmology_higher_waves_lab": {
     "observable_count": 142,
     "measured_count": 142,
-    "max_error_pct": 2.3926561361968224,
-    "mean_error_pct": 0.05154761481499214,
+    "max_error_pct": 0.6313803900161674,
+    "mean_error_pct": 0.036905519070735776,
     "wave5_count": 22,
     "wave6_count": 22,
     "wave7_count": 29,
@@ -49043,10 +49043,10 @@
       {
         "wave": "wave8",
         "name": "gamma_2_Stieltjes",
-        "formula": "\u03c0\u207b\u00b2 \u2212 \u03b3\u2074",
-        "computed": -0.009686345270484219,
+        "formula": "Poof\u2075 \u2212 p_base\u00b3",
+        "computed": -0.009489655069932474,
         "measured": -0.00946,
-        "error_pct": 2.3926561361968224
+        "error_pct": 0.3134785405124176
       },
       {
         "wave": "wave8",
@@ -49210,7 +49210,7 @@
       }
     ],
     "compute_path": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab\\fsot_compute.py",
-    "ingested_at": "2026-07-08T19:29:23.318987+00:00"
+    "ingested_at": "2026-07-08T19:35:55.424242+00:00"
   },
   "higgs_branching_lab": {
     "compute_higgs_count": 9,
@@ -49235,7 +49235,7 @@
     "max_error_pct": 0.09098602506082563,
     "mean_error_pct": 0.018367234034056677,
     "median_error_pct": 0.0020773615251059676,
-    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
+    "ingested_at": "2026-07-08T19:35:55.664189+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave6_lab": {
@@ -49245,7 +49245,7 @@
     "max_error_pct": 0.031298130508454446,
     "mean_error_pct": 0.0030742870216562625,
     "median_error_pct": 0.0003441841587202251,
-    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
+    "ingested_at": "2026-07-08T19:35:55.664189+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave7_lab": {
@@ -49255,17 +49255,17 @@
     "max_error_pct": 0.2980550885153489,
     "mean_error_pct": 0.026245344277916752,
     "median_error_pct": 0.003988029700396626,
-    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
+    "ingested_at": "2026-07-08T19:35:55.664189+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave8_lab": {
     "wave": 8,
     "observable_count": 52,
     "measured_count": 52,
-    "max_error_pct": 2.3926561361968224,
-    "mean_error_pct": 0.10825485084449862,
+    "max_error_pct": 0.6313803900161674,
+    "mean_error_pct": 0.06827066631210622,
     "median_error_pct": 0.014145689288404753,
-    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
+    "ingested_at": "2026-07-08T19:35:55.664189+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave9_lab": {
@@ -49275,7 +49275,7 @@
     "max_error_pct": 0.19375824846825943,
     "mean_error_pct": 0.06422582634391334,
     "median_error_pct": 0.014278509753575246,
-    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
+    "ingested_at": "2026-07-08T19:35:55.664189+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave10_lab": {
@@ -49285,7 +49285,7 @@
     "max_error_pct": 0.004079227596853056,
     "mean_error_pct": 0.0008099828122291297,
     "median_error_pct": 0.0006556117321513212,
-    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
+    "ingested_at": "2026-07-08T19:35:55.664189+00:00",
     "parent_lab": "cosmology_higher_waves_lab"
   },
   "cosmology_wave4_lab": {
@@ -49295,7 +49295,7 @@
     "max_error_pct": 0.23468225112121452,
     "mean_error_pct": 0.03162247159570792,
     "median_error_pct": 0.011586387979935279,
-    "ingested_at": "2026-07-08T19:29:23.560193+00:00",
+    "ingested_at": "2026-07-08T19:35:55.664189+00:00",
     "parent_lab": "cosmology_wave4"
   },
   "hydrology_lab": {
