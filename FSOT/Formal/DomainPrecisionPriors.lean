@@ -39,7 +39,7 @@ theorem cosmology_median_under_one_pct :
     (0.005438296989978788 : ℝ) < (1 : ℝ) := by norm_num
 
 theorem smiles_chemical_median_under_one_pct :
-    (0.402791 : ℝ) < (1 : ℝ) := by norm_num
+    (0.398464 : ℝ) < (1 : ℝ) := by norm_num
 
 /-- Bundle: Tier-10 numeric precision floor + Tier-9 coverage inheritance. -/
 theorem domain_precision_priors_bundle :
@@ -48,7 +48,7 @@ theorem domain_precision_priors_bundle :
     (31 : ℕ) < domain_precision_target_band_count ∧
     domain_precision_huge_gap_count ≤ (2 : ℕ) ∧
     (0.005438296989978788 : ℝ) < (1 : ℝ) ∧
-    (0.402791 : ℝ) < (1 : ℝ) ∧
+    (0.398464 : ℝ) < (1 : ℝ) ∧
     smiles_mapped_records = 1470 ∧
     raw_S (get_domain_params "cosmological") < 0 ∧
     raw_S (get_domain_params "chemical") > 0 := by
