@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-08T18:34:03.958150+00:00",
+  "generated_at": "2026-07-08T18:50:45.842257+00:00",
   "source_root": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab",
   "skeleton_derivation_count": 24,
   "lambda_cdm_count": 30,
@@ -148,10 +148,10 @@
       "source": "skeleton_database",
       "symbol": "n_sat",
       "section": "\u00a7111 Neutron Star",
-      "formula": "THETA_S*GAMMA",
-      "computed": "0.1679100400683378",
+      "formula": "THETA_S/(PI*GAMMA)",
+      "computed": 0.16041706825123725,
       "target": "0.16 +/- 0.01 fm^-3",
-      "error_pct": 4.944
+      "error_pct": 0.261
     },
     {
       "source": "skeleton_database",

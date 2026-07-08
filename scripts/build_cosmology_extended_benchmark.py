@@ -52,9 +52,11 @@ TARGET_RE = re.compile(
     re.I,
 )
 
-# Refined BBN lithium damping: SBBN rate × (Suction+Poof) / (πγ²) radiative coupling.
+# Refined skeleton formulas: πγ radiative coupling on prior seed expressions.
 SKELETON_FORMULA_OVERRIDES: dict[str, str] = {
     "Li-7/H": "5.6e-10*(SUCTION+POOF)/(PI*GAMMA^2)",
+    # n_sat: θ_S·γ nuclear scale with πγ compactification damping (≡ THETA_S/(PI*GAMMA)).
+    "n_sat": "THETA_S/(PI*GAMMA)",
 }
 
 
