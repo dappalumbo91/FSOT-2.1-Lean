@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-07-08T14:02:04.547332+00:00",
+  "source": [
+    "vendor/arxiv_primitives/v14_run_summary.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai",
+    "neural"
+  ],
+  "D_eff": 12,
+  "primitive_count": 6,
+  "record_count": 14,
+  "observable_count": 14,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "exit_code_zero",
+      "computed": 0,
+      "measured": 1,
+      "error_pct": 100.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "arxiv_topics_loaded",
+      "computed": 2963163,
+      "measured": 2963163,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "converged_step",
+      "computed": 35,
+      "measured": 35,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "primitive_P1",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "primitive_P2",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "primitive_P3",
+      "computed": 0.6,
+      "measured": 0.6,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "primitive_P4",
+      "computed": 0.84,
+      "measured": 0.84,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "primitive_P5",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "primitive_P6",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "primitive_boost",
+      "computed": 0.896,
+      "measured": 0.896,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "final_global_stability",
+      "computed": 0.999975,
+      "measured": 0.999975,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "memory_traces_stored",
+      "computed": 5,
+      "measured": 5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "memory_retrievals",
+      "computed": 5,
+      "measured": 5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "arxiv_primitives_v14",
+      "property": "topic_curriculum_events",
+      "computed": 36,
+      "measured": 36,
+      "error_pct": 0.0
+    }
+  ]
+}

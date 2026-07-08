@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-07-08T14:02:04.729606+00:00",
+  "source": [
+    "vendor/formula_corpus_cnc/compiled_formulas/formula_summary.json",
+    "vendor/formula_corpus_cnc/compiled_formulas/validator_vs_corpus_delta.json",
+    "vendor/formula_corpus_cnc/real_world_gauntlet_report.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "mathematical",
+    "consciousness"
+  ],
+  "D_eff": 17,
+  "record_count": 10,
+  "observable_count": 10,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "formula_corpus_cnc",
+      "property": "document_count",
+      "computed": 61,
+      "measured": 61,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "formula_corpus_cnc",
+      "property": "rule_count",
+      "computed": 1520,
+      "measured": 1520,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "formula_corpus_cnc",
+      "property": "formula_candidate_count",
+      "computed": 2281,
+      "measured": 2281,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "formula_corpus_cnc",
+      "property": "current_corpus_rows",
+      "computed": 1444,
+      "measured": 1444,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "formula_corpus_cnc",
+      "property": "current_corpus_formula_token_index",
+      "computed": 1413,
+      "measured": 1413,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "formula_corpus_cnc",
+      "property": "validator_unique_formulas_scanned",
+      "computed": 1375,
+      "measured": 1375,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "formula_corpus_cnc",
+      "property": "validator_family_count",
+      "computed": 11,
+      "measured": 11,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "formula_corpus_cnc",
+      "property": "gauntlet_scenario_count",
+      "computed": 17,
+      "measured": 17,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "formula_corpus_cnc",
+      "property": "gauntlet_hit_count",
+      "computed": 15,
+      "measured": 15,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "formula_corpus_cnc",
+      "property": "gauntlet_pass_rate_pct",
+      "computed": 88.23529411764706,
+      "measured": 100.0,
+      "error_pct": 11.764705882352942
+    }
+  ]
+}

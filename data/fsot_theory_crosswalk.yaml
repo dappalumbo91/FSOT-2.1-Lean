@@ -280,6 +280,27 @@ verified_extension_domains:
     labs: [validators_intrinsic_llm, fic_intelligence_compressor]
     lean_module: FSOT.Formal.IntrinsicLLMValidatorsPriors
 
+  Biological_CUDA_Physarum:
+    tier: 34
+    D_eff: 22
+    maps_to_lean: [biological, medical, neural]
+    labs: [physarum_cuda, genomics_slime_mold]
+    lean_module: FSOT.Formal.BiologicalCudaPhysarumPriors
+
+  Arxiv_Primitives_V14:
+    tier: 34
+    D_eff: 12
+    maps_to_lean: [consciousness, ai, neural]
+    labs: [loop_v14, arxiv_topic_ingest]
+    lean_module: FSOT.Formal.ArxivPrimitivesV14Priors
+
+  Formula_Corpus_CNC:
+    tier: 34
+    D_eff: 17
+    maps_to_lean: [particle, mathematical, consciousness]
+    labs: [formula_corpus, fsot_cnc_controller]
+    lean_module: FSOT.Formal.FormulaCorpusCncPriors
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

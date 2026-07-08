@@ -798,6 +798,9 @@ def main() -> int:
                 "build_tokenization_smoke_benchmark.py",
                 "build_trinary_hardware_motif_benchmark.py",
                 "build_intrinsic_llm_validators_benchmark.py",
+                "build_biological_cuda_physarum_benchmark.py",
+                "build_arxiv_primitives_v14_benchmark.py",
+                "build_formula_corpus_cnc_benchmark.py",
                 "ingest_climate_ncei_chunked.py",
                 "build_climate_observed_benchmark.py",
             ):
@@ -901,6 +904,9 @@ def main() -> int:
             (None, "gen_tokenization_smoke_lean.py", "TokenizationSmokePriors.lean generation failed", None),
             (None, "gen_trinary_hardware_motif_lean.py", "TrinaryHardwareMotifPriors.lean generation failed", None),
             (None, "gen_intrinsic_llm_validators_lean.py", "IntrinsicLLMValidatorsPriors.lean generation failed", None),
+            (None, "gen_biological_cuda_physarum_lean.py", "BiologicalCudaPhysarumPriors.lean generation failed", None),
+            (None, "gen_arxiv_primitives_v14_lean.py", "ArxivPrimitivesV14Priors.lean generation failed", None),
+            (None, "gen_formula_corpus_cnc_lean.py", "FormulaCorpusCncPriors.lean generation failed", None),
         ]
             for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
                 if ingest_name:

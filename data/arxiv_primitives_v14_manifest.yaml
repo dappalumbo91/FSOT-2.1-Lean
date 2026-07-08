@@ -1,0 +1,20 @@
+# Tier 34 — arXiv V14 cognitive primitives loop ingest.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  arxiv_primitives_root: "vendor/arxiv_primitives"
+
+build:
+  script: scripts/build_arxiv_primitives_v14_benchmark.py
+  output: data/arxiv_primitives_v14_benchmark.json
+
+lean:
+  generator: scripts/gen_arxiv_primitives_v14_lean.py
+  module: FSOT.Formal.ArxivPrimitivesV14Priors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 1.0

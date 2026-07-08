@@ -1,0 +1,466 @@
+{
+  "steps": 80,
+  "phase": "PLASMODIUM",
+  "syncytial_coherence": 2.9400777116690997,
+  "global_coherence": 0.3221121700374861,
+  "editing_yield": 347,
+  "nuclei_count": 1,
+  "nuclei": [
+    {
+      "id": 0,
+      "local_S": 6.929491861535459,
+      "iit_integration": 0.11994209302101831,
+      "metatron_coupling": 0.481,
+      "condos": [
+        {
+          "codon": "AAA",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 2,
+          "repeat_load": 0.0,
+          "gene_family": "Kinase_Signal"
+        },
+        {
+          "codon": "AAC",
+          "fsot_scalar": 6.856174461852591,
+          "edit_count": 0,
+          "repeat_load": 0.6875732959227981,
+          "gene_family": ""
+        },
+        {
+          "codon": "AAG",
+          "fsot_scalar": 7.720294126428334,
+          "edit_count": 1,
+          "repeat_load": 1.841178035410031,
+          "gene_family": "Kinase_Signal"
+        },
+        {
+          "codon": "AAT",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 0,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "ACA",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 2,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "ACC",
+          "fsot_scalar": 6.985090119791608,
+          "edit_count": 2,
+          "repeat_load": 1.0548045492131761,
+          "gene_family": ""
+        },
+        {
+          "codon": "ACG",
+          "fsot_scalar": 6.741024719640663,
+          "edit_count": 2,
+          "repeat_load": 0.5465949370090084,
+          "gene_family": ""
+        },
+        {
+          "codon": "ACT",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 4,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "AGA",
+          "fsot_scalar": 7.0510134460218605,
+          "edit_count": 0,
+          "repeat_load": 0.49709412671662123,
+          "gene_family": "Editing_Regulator"
+        },
+        {
+          "codon": "AGC",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 6,
+          "repeat_load": 0.0,
+          "gene_family": "Network_Optimization"
+        },
+        {
+          "codon": "AGG",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 6,
+          "repeat_load": 0.0,
+          "gene_family": "Editing_Regulator"
+        },
+        {
+          "codon": "AGT",
+          "fsot_scalar": 7.812328662020123,
+          "edit_count": 1,
+          "repeat_load": 1.473164209689772,
+          "gene_family": ""
+        },
+        {
+          "codon": "ATA",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 1,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "ATC",
+          "fsot_scalar": 7.694063273606561,
+          "edit_count": 0,
+          "repeat_load": 2.01454812958202,
+          "gene_family": ""
+        },
+        {
+          "codon": "ATG",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 4,
+          "repeat_load": 0.0,
+          "gene_family": "Actin_Stream"
+        },
+        {
+          "codon": "ATT",
+          "fsot_scalar": 7.124665679035957,
+          "edit_count": 0,
+          "repeat_load": 0.3886987495294539,
+          "gene_family": ""
+        },
+        {
+          "codon": "CAA",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 1,
+          "repeat_load": 0.0,
+          "gene_family": "Kinase_Signal"
+        },
+        {
+          "codon": "CAC",
+          "fsot_scalar": 6.6747726797662565,
+          "edit_count": 1,
+          "repeat_load": 0.23186460845036977,
+          "gene_family": "Phototaxis_Response"
+        },
+        {
+          "codon": "CAG",
+          "fsot_scalar": 7.436784516574194,
+          "edit_count": 2,
+          "repeat_load": 2.1187359158686494,
+          "gene_family": "Kinase_Signal"
+        },
+        {
+          "codon": "CAT",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 3,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "CCA",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 3,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "CCC",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 2,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "CCG",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 3,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "CCT",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 0,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "CGA",
+          "fsot_scalar": 7.53273457109348,
+          "edit_count": 0,
+          "repeat_load": 1.3801015781830674,
+          "gene_family": "Editing_Regulator"
+        },
+        {
+          "codon": "CGC",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 0,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "CGG",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 0,
+          "repeat_load": 0.0,
+          "gene_family": "Editing_Regulator"
+        },
+        {
+          "codon": "CGT",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 0,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "CTA",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 1,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "CTC",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 2,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "CTG",
+          "fsot_scalar": 6.762161842601156,
+          "edit_count": 1,
+          "repeat_load": 0.5697456891288671,
+          "gene_family": ""
+        },
+        {
+          "codon": "CTT",
+          "fsot_scalar": 6.758525677655992,
+          "edit_count": 0,
+          "repeat_load": 0.19947994230906874,
+          "gene_family": ""
+        },
+        {
+          "codon": "GAA",
+          "fsot_scalar": 6.929681193563557,
+          "edit_count": 2,
+          "repeat_load": 0.2525035735243228,
+          "gene_family": "Actin_Stream"
+        },
+        {
+          "codon": "GAC",
+          "fsot_scalar": 7.231351013160128,
+          "edit_count": 1,
+          "repeat_load": 1.5892111106610005,
+          "gene_family": ""
+        },
+        {
+          "codon": "GAG",
+          "fsot_scalar": 7.196118783456598,
+          "edit_count": 2,
+          "repeat_load": 0.9254524177922065,
+          "gene_family": "Actin_Stream"
+        },
+        {
+          "codon": "GAT",
+          "fsot_scalar": 7.218998236270771,
+          "edit_count": 1,
+          "repeat_load": 0.6674445551227834,
+          "gene_family": ""
+        },
+        {
+          "codon": "GCA",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 5,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "GCC",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 2,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "GCG",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 2,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "GCT",
+          "fsot_scalar": 8.719573997274429,
+          "edit_count": 6,
+          "repeat_load": 1.822816994875873,
+          "gene_family": ""
+        },
+        {
+          "codon": "GGA",
+          "fsot_scalar": 7.385945363665937,
+          "edit_count": 3,
+          "repeat_load": 0.9486386043941195,
+          "gene_family": "Actin_Stream"
+        },
+        {
+          "codon": "GGC",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 4,
+          "repeat_load": 0.0,
+          "gene_family": "Actin_Stream"
+        },
+        {
+          "codon": "GGG",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 4,
+          "repeat_load": 0.0,
+          "gene_family": "Network_Optimization"
+        },
+        {
+          "codon": "GGT",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 2,
+          "repeat_load": 0.0,
+          "gene_family": "Actin_Stream"
+        },
+        {
+          "codon": "GTA",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 1,
+          "repeat_load": 0.0,
+          "gene_family": "Tubulin_Cytoskeleton"
+        },
+        {
+          "codon": "GTC",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 4,
+          "repeat_load": 0.0,
+          "gene_family": "Tubulin_Cytoskeleton"
+        },
+        {
+          "codon": "GTG",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 1,
+          "repeat_load": 0.0,
+          "gene_family": "Tubulin_Cytoskeleton"
+        },
+        {
+          "codon": "GTT",
+          "fsot_scalar": 6.714877828257067,
+          "edit_count": 1,
+          "repeat_load": 0.0802506097600944,
+          "gene_family": "Tubulin_Cytoskeleton"
+        },
+        {
+          "codon": "TAA",
+          "fsot_scalar": 7.635018734541417,
+          "edit_count": 3,
+          "repeat_load": 0.6693521899392568,
+          "gene_family": "Phototaxis_Response"
+        },
+        {
+          "codon": "TAC",
+          "fsot_scalar": 7.442319022664511,
+          "edit_count": 2,
+          "repeat_load": 2.357274285837636,
+          "gene_family": "Phototaxis_Response"
+        },
+        {
+          "codon": "TAG",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 2,
+          "repeat_load": 0.0,
+          "gene_family": "Phototaxis_Response"
+        },
+        {
+          "codon": "TAT",
+          "fsot_scalar": 8.204125318383262,
+          "edit_count": 2,
+          "repeat_load": 1.6385966632372,
+          "gene_family": "Phototaxis_Response"
+        },
+        {
+          "codon": "TCA",
+          "fsot_scalar": 8.262096662117491,
+          "edit_count": 1,
+          "repeat_load": 2.2863689743513587,
+          "gene_family": ""
+        },
+        {
+          "codon": "TCC",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 1,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "TCG",
+          "fsot_scalar": 6.7173365104083,
+          "edit_count": 3,
+          "repeat_load": 0.6165687692349586,
+          "gene_family": ""
+        },
+        {
+          "codon": "TCT",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 6,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "TGA",
+          "fsot_scalar": 7.667766202516157,
+          "edit_count": 5,
+          "repeat_load": 1.4614649755588514,
+          "gene_family": "Editing_Regulator"
+        },
+        {
+          "codon": "TGC",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 4,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "TGG",
+          "fsot_scalar": 6.84271847280416,
+          "edit_count": 1,
+          "repeat_load": 0.5483018978932084,
+          "gene_family": "Editing_Regulator"
+        },
+        {
+          "codon": "TGT",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 1,
+          "repeat_load": 0.0,
+          "gene_family": ""
+        },
+        {
+          "codon": "TTA",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 0,
+          "repeat_load": 0.0,
+          "gene_family": "Tubulin_Cytoskeleton"
+        },
+        {
+          "codon": "TTC",
+          "fsot_scalar": 6.660501455262794,
+          "edit_count": 0,
+          "repeat_load": 0.11779093856183642,
+          "gene_family": ""
+        },
+        {
+          "codon": "TTG",
+          "fsot_scalar": 7.991294353390625,
+          "edit_count": 1,
+          "repeat_load": 1.568615104257725,
+          "gene_family": ""
+        },
+        {
+          "codon": "TTT",
+          "fsot_scalar": 6.614803491841231,
+          "edit_count": 3,
+          "repeat_load": 0.0,
+          "gene_family": "Tubulin_Cytoskeleton"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 5070",
+  "vram_gb": 12.8,
+  "date": "2026-06-27",
+  "results": [
+    {
+      "nuclei": 8,
+      "elapsed_sec": 0.0709,
+      "steps_per_sec": 141.0,
+      "condo_ops_per_sec": 72.2,
+      "gpu_mem_mb": 0.0,
+      "gpu_mem_peak_mb": 0.0,
+      "avg_S": 6.932,
+      "variance_S": 0.007268
+    },
+    {
+      "nuclei": 32,
+      "elapsed_sec": 0.2811,
+      "steps_per_sec": 35.57,
+      "condo_ops_per_sec": 72.8,
+      "gpu_mem_mb": 0.0,
+      "gpu_mem_peak_mb": 0.0,
+      "avg_S": 6.9821,
+      "variance_S": 0.00426
+    },
+    {
+      "nuclei": 64,
+      "elapsed_sec": 0.5627,
+      "steps_per_sec": 17.77,
+      "condo_ops_per_sec": 72.8,
+      "gpu_mem_mb": 0.0,
+      "gpu_mem_peak_mb": 0.0,
+      "avg_S": 6.9478,
+      "variance_S": 0.005204
+    },
+    {
+      "nuclei": 128,
+      "elapsed_sec": 1.1317,
+      "steps_per_sec": 8.84,
+      "condo_ops_per_sec": 72.4,
+      "gpu_mem_mb": 0.0,
+      "gpu_mem_peak_mb": 0.0,
+      "avg_S": 6.9564,
+      "variance_S": 0.006183
+    },
+    {
+      "nuclei": 256,
+      "elapsed_sec": 2.1915,
+      "steps_per_sec": 4.56,
+      "condo_ops_per_sec": 74.8,
+      "gpu_mem_mb": 0.0,
+      "gpu_mem_peak_mb": 0.0,
+      "avg_S": 6.9608,
+      "variance_S": 0.005564
+    },
+    {
+      "nuclei": 512,
+      "elapsed_sec": 4.3731,
+      "steps_per_sec": 2.29,
+      "condo_ops_per_sec": 74.9,
+      "gpu_mem_mb": 0.0,
+      "gpu_mem_peak_mb": 0.0,
+      "avg_S": 6.9628,
+      "variance_S": 0.005111
+    },
+    {
+      "nuclei": 1000,
+      "elapsed_sec": 8.5055,
+      "steps_per_sec": 1.18,
+      "condo_ops_per_sec": 75.2,
+      "gpu_mem_mb": 0.0,
+      "gpu_mem_peak_mb": 0.0,
+      "avg_S": 6.9618,
+      "variance_S": 0.005353
+    },
+    {
+      "nuclei": 1500,
+      "elapsed_sec": 12.7591,
+      "steps_per_sec": 0.78,
+      "condo_ops_per_sec": 75.2,
+      "gpu_mem_mb": 0.0,
+      "gpu_mem_peak_mb": 0.0,
+      "avg_S": 6.962,
+      "variance_S": 0.005506
+    },
+    {
+      "nuclei": 2000,
+      "elapsed_sec": 16.8521,
+      "steps_per_sec": 0.59,
+      "condo_ops_per_sec": 76.0,
+      "gpu_mem_mb": 0.0,
+      "gpu_mem_peak_mb": 0.0,
+      "avg_S": 6.9651,
+      "variance_S": 0.005363
+    }
+  ]
+}

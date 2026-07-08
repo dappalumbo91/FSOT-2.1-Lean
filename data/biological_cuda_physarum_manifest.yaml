@@ -1,0 +1,20 @@
+# Tier 34 — Physarum CUDA biology crosswalk bridge.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  physarum_root: "vendor/physarum"
+
+build:
+  script: scripts/build_biological_cuda_physarum_benchmark.py
+  output: data/biological_cuda_physarum_benchmark.json
+
+lean:
+  generator: scripts/gen_biological_cuda_physarum_lean.py
+  module: FSOT.Formal.BiologicalCudaPhysarumPriors
+  lean_domain: biological
+  sign_theorem: biological_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 5.0

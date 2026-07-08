@@ -1,16 +1,16 @@
-generated_at: '2026-07-08T13:47:51.780425+00:00'
+generated_at: '2026-07-08T14:02:44.679338+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 98
+  lean_formal_modules: 101
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 31
-  tiers_total: 31
+  tiers_complete: 32
+  tiers_total: 32
   percent_complete: 100.0
-current_position: "Tier 33 Consolidation \u2014 Tier 9 coverage, linguistics portable,\
-  \ crosswalk wave"
+current_position: "Tier 34 Crosswalk wave \u2014 Physarum CUDA, arXiv V14 primitives,\
+  \ formula corpus CNC"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -24,6 +24,8 @@ tiers:
   status: complete
   artifacts:
   - AetherPrimePriors
+  - ArxivPrimitivesV14Priors
+  - BiologicalCudaPhysarumPriors
   - BiologyStrictEmpiricalPriors
   - BlackHoleThesisPriors
   - BrainPriors
@@ -48,6 +50,7 @@ tiers:
   - EmergentDomainPriors
   - EvolutionPriors
   - ExperimentSynthesisPriors
+  - FormulaCorpusCncPriors
   - FormulaCorpusPriors
   - FuelPriors
   - GeochemistryPriors
@@ -213,7 +216,7 @@ tiers:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 66
+    scientific_domains_covered: 81
     expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -594,10 +597,28 @@ tiers:
   - FSOT.Formal.TokenizationSmokePriors
   - FSOT.Formal.TrinaryHardwareMotifPriors
   - FSOT.Formal.IntrinsicLLMValidatorsPriors
+- tier: 34
+  name: "Crosswalk wave \u2014 Physarum CUDA, arXiv V14 primitives, formula corpus\
+    \ CNC"
+  status: complete
+  metrics:
+    biological_cuda_physarum_records: 35
+    arxiv_primitives_v14_records: 14
+    formula_corpus_cnc_records: 10
+  artifacts:
+  - data/biological_cuda_physarum_manifest.yaml
+  - data/arxiv_primitives_v14_manifest.yaml
+  - data/formula_corpus_cnc_manifest.yaml
+  - vendor/physarum
+  - vendor/arxiv_primitives
+  - vendor/formula_corpus_cnc
+  - FSOT.Formal.BiologicalCudaPhysarumPriors
+  - FSOT.Formal.ArxivPrimitivesV14Priors
+  - FSOT.Formal.FormulaCorpusCncPriors
 next_steps:
-- biological_cuda / Physarum crosswalk bridge
-- arxiv_primitives loop corpus ingest
-- formula_corpus_cnc desktop bundle
+- Remaining desktop crosswalk themes without vendor bundles
+- Extension domain precision tightening (median error < 1% wave)
+- Portable vendor coverage audit for all 45 extension domains
 key_metrics:
   strict_empirical_records: 7941
   smiles_mapped: 1470

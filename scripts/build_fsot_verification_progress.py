@@ -90,6 +90,9 @@ def build_progress() -> dict:
     tokenization_smoke_bench = _load_json(ROOT / "data" / "tokenization_smoke_benchmark.json")
     trinary_hw_motif_bench = _load_json(ROOT / "data" / "trinary_hardware_motif_benchmark.json")
     intrinsic_llm_bench = _load_json(ROOT / "data" / "intrinsic_llm_validators_benchmark.json")
+    biological_cuda_physarum_bench = _load_json(ROOT / "data" / "biological_cuda_physarum_benchmark.json")
+    arxiv_primitives_v14_bench = _load_json(ROOT / "data" / "arxiv_primitives_v14_benchmark.json")
+    formula_corpus_cnc_bench = _load_json(ROOT / "data" / "formula_corpus_cnc_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -851,12 +854,40 @@ def build_progress() -> dict:
                 "FSOT.Formal.IntrinsicLLMValidatorsPriors",
             ],
         },
+        {
+            "tier": 34,
+            "name": "Crosswalk wave — Physarum CUDA, arXiv V14 primitives, formula corpus CNC",
+            "status": "complete"
+            if biological_cuda_physarum_bench.get("record_count", 0) >= 5
+            and arxiv_primitives_v14_bench.get("record_count", 0) >= 5
+            and formula_corpus_cnc_bench.get("record_count", 0) >= 5
+            and biological_cuda_physarum_bench.get("median_error_pct", 99) <= 5.0
+            and arxiv_primitives_v14_bench.get("median_error_pct", 99) <= 1.0
+            and formula_corpus_cnc_bench.get("median_error_pct", 99) <= 5.0
+            else "pending",
+            "metrics": {
+                "biological_cuda_physarum_records": biological_cuda_physarum_bench.get("record_count"),
+                "arxiv_primitives_v14_records": arxiv_primitives_v14_bench.get("record_count"),
+                "formula_corpus_cnc_records": formula_corpus_cnc_bench.get("record_count"),
+            },
+            "artifacts": [
+                "data/biological_cuda_physarum_manifest.yaml",
+                "data/arxiv_primitives_v14_manifest.yaml",
+                "data/formula_corpus_cnc_manifest.yaml",
+                "vendor/physarum",
+                "vendor/arxiv_primitives",
+                "vendor/formula_corpus_cnc",
+                "FSOT.Formal.BiologicalCudaPhysarumPriors",
+                "FSOT.Formal.ArxivPrimitivesV14Priors",
+                "FSOT.Formal.FormulaCorpusCncPriors",
+            ],
+        },
     ]
 
     next_steps = [
-        "biological_cuda / Physarum crosswalk bridge",
-        "arxiv_primitives loop corpus ingest",
-        "formula_corpus_cnc desktop bundle",
+        "Remaining desktop crosswalk themes without vendor bundles",
+        "Extension domain precision tightening (median error < 1% wave)",
+        "Portable vendor coverage audit for all 45 extension domains",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -875,7 +906,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 33 Consolidation — Tier 9 coverage, linguistics portable, crosswalk wave",
+        "current_position": "Tier 34 Crosswalk wave — Physarum CUDA, arXiv V14 primitives, formula corpus CNC",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

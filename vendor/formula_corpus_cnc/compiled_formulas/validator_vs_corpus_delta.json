@@ -1,0 +1,28 @@
+{
+  "current_corpus_rows": 1444,
+  "current_corpus_formula_token_index": 1413,
+  "validator_unique_formulas_scanned": 1375,
+  "exact_overlap_count": 1,
+  "validator_only_count": 1374,
+  "exact_overlap_formulas": [
+    "1"
+  ],
+  "families": [
+    {"family": "GENERAL", "validator_total": 1287, "overlap_with_current": 1, "new_vs_current": 1286},
+    {"family": "ATOMIC", "validator_total": 70, "overlap_with_current": 0, "new_vs_current": 70},
+    {"family": "NUCLEAR", "validator_total": 65, "overlap_with_current": 0, "new_vs_current": 65},
+    {"family": "PHYSICS", "validator_total": 38, "overlap_with_current": 0, "new_vs_current": 38},
+    {"family": "THERMODYNAMICS", "validator_total": 34, "overlap_with_current": 0, "new_vs_current": 34},
+    {"family": "CHEMISTRY", "validator_total": 12, "overlap_with_current": 0, "new_vs_current": 12},
+    {"family": "PARTICLE", "validator_total": 12, "overlap_with_current": 0, "new_vs_current": 12},
+    {"family": "ASTROPHYSICS", "validator_total": 10, "overlap_with_current": 0, "new_vs_current": 10},
+    {"family": "MATERIAL", "validator_total": 7, "overlap_with_current": 0, "new_vs_current": 7},
+    {"family": "QUANTUM", "validator_total": 4, "overlap_with_current": 0, "new_vs_current": 4},
+    {"family": "UNSEEN_DOMAIN_PROBE", "validator_total": 1, "overlap_with_current": 0, "new_vs_current": 1}
+  ],
+  "notes": [
+    "Validator candidate artifacts were scanned from tools/**/*formula_candidates.json.",
+    "Family labels were normalized case-insensitively.",
+    "This is the candidate-artifact layer, not a flattened 2118-source-formula export."
+  ]
+}

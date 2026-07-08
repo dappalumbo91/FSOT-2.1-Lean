@@ -557,6 +557,45 @@ extension_domains:
     lean_module: FSOT.Formal.IntrinsicLLMValidatorsPriors
     note: "Intrinsic LLM validator multi-topic accuracy tiers from desktop QA lab"
 
+  Biological_CUDA_Physarum:
+    tier: 34
+    D_eff: 22
+    delta_psi: 0.9
+    recent_hits: 5
+    observed: true
+    maps_to_lean: [biological, medical, neural]
+    build_script: scripts/build_biological_cuda_physarum_benchmark.py
+    manifest: data/biological_cuda_physarum_manifest.yaml
+    benchmark_data: data/biological_cuda_physarum_benchmark.json
+    lean_module: FSOT.Formal.BiologicalCudaPhysarumPriors
+    note: "Physarum CUDA RTX 5070 benchmarks + v5 plasmodium state + genomics bridge"
+
+  Arxiv_Primitives_V14:
+    tier: 34
+    D_eff: 12
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_arxiv_primitives_v14_benchmark.py
+    manifest: data/arxiv_primitives_v14_manifest.yaml
+    benchmark_data: data/arxiv_primitives_v14_benchmark.json
+    lean_module: FSOT.Formal.ArxivPrimitivesV14Priors
+    note: "Loop V14 arXiv topic ingest with six cognitive primitive signatures"
+
+  Formula_Corpus_CNC:
+    tier: 34
+    D_eff: 17
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, mathematical, consciousness]
+    build_script: scripts/build_formula_corpus_cnc_benchmark.py
+    manifest: data/formula_corpus_cnc_manifest.yaml
+    benchmark_data: data/formula_corpus_cnc_benchmark.json
+    lean_module: FSOT.Formal.FormulaCorpusCncPriors
+    note: "Compiled formula corpus stats, validator delta, and chem gauntlet bundle"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

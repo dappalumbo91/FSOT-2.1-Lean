@@ -1,4 +1,4 @@
-generated_at: '2026-07-08T13:47:52.870415+00:00'
+generated_at: '2026-07-08T14:02:45.780240+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 98
+  lean_formal_modules: 101
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 31
-  tiers_total: 31
+  tiers_complete: 32
+  tiers_total: 32
   percent_complete: 100.0
-current_tier: Tier 33 Consolidation — Tier 9 coverage, linguistics portable, crosswalk
-  wave
+current_tier: Tier 34 Crosswalk wave — Physarum CUDA, arXiv V14 primitives, formula
+  corpus CNC
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -424,7 +424,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: true
-scientific_domains_covered: 78
+scientific_domains_covered: 81
 total_empirical_records: 307820
 tier_coverage:
 - tier: 1
@@ -439,6 +439,8 @@ tier_coverage:
   status: complete
   artifacts:
   - AetherPrimePriors
+  - ArxivPrimitivesV14Priors
+  - BiologicalCudaPhysarumPriors
   - BiologyStrictEmpiricalPriors
   - BlackHoleThesisPriors
   - BrainPriors
@@ -463,6 +465,7 @@ tier_coverage:
   - EmergentDomainPriors
   - EvolutionPriors
   - ExperimentSynthesisPriors
+  - FormulaCorpusCncPriors
   - FormulaCorpusPriors
   - FuelPriors
   - GeochemistryPriors
@@ -628,7 +631,7 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 66
+    scientific_domains_covered: 81
     expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -1008,6 +1011,23 @@ tier_coverage:
   - FSOT.Formal.TokenizationSmokePriors
   - FSOT.Formal.TrinaryHardwareMotifPriors
   - FSOT.Formal.IntrinsicLLMValidatorsPriors
+- tier: 34
+  name: Crosswalk wave — Physarum CUDA, arXiv V14 primitives, formula corpus CNC
+  status: complete
+  metrics:
+    biological_cuda_physarum_records: 35
+    arxiv_primitives_v14_records: 14
+    formula_corpus_cnc_records: 10
+  artifacts:
+  - data/biological_cuda_physarum_manifest.yaml
+  - data/arxiv_primitives_v14_manifest.yaml
+  - data/formula_corpus_cnc_manifest.yaml
+  - vendor/physarum
+  - vendor/arxiv_primitives
+  - vendor/formula_corpus_cnc
+  - FSOT.Formal.BiologicalCudaPhysarumPriors
+  - FSOT.Formal.ArxivPrimitivesV14Priors
+  - FSOT.Formal.FormulaCorpusCncPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -1261,6 +1281,24 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: C_thin
   lean_module: FSOT.Formal.IntrinsicLLMValidatorsPriors
+- domain: Biological_CUDA_Physarum
+  tier: 34
+  record_count: 35
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.BiologicalCudaPhysarumPriors
+- domain: Arxiv_Primitives_V14
+  tier: 34
+  record_count: 14
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.ArxivPrimitivesV14Priors
+- domain: Formula_Corpus_CNC
+  tier: 34
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.FormulaCorpusCncPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1694,8 +1732,43 @@ theory_crosswalk:
     - validators_intrinsic_llm
     - fic_intelligence_compressor
     lean_module: FSOT.Formal.IntrinsicLLMValidatorsPriors
+  Biological_CUDA_Physarum:
+    tier: 34
+    D_eff: 22
+    maps_to_lean:
+    - biological
+    - medical
+    - neural
+    labs:
+    - physarum_cuda
+    - genomics_slime_mold
+    lean_module: FSOT.Formal.BiologicalCudaPhysarumPriors
+  Arxiv_Primitives_V14:
+    tier: 34
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - loop_v14
+    - arxiv_topic_ingest
+    lean_module: FSOT.Formal.ArxivPrimitivesV14Priors
+  Formula_Corpus_CNC:
+    tier: 34
+    D_eff: 17
+    maps_to_lean:
+    - particle
+    - mathematical
+    - consciousness
+    labs:
+    - formula_corpus
+    - fsot_cnc_controller
+    lean_module: FSOT.Formal.FormulaCorpusCncPriors
 lean_formal_modules:
 - AetherPrimePriors
+- ArxivPrimitivesV14Priors
+- BiologicalCudaPhysarumPriors
 - BiologyStrictEmpiricalPriors
 - BlackHoleThesisPriors
 - BrainPriors
@@ -1720,6 +1793,7 @@ lean_formal_modules:
 - EmergentDomainPriors
 - EvolutionPriors
 - ExperimentSynthesisPriors
+- FormulaCorpusCncPriors
 - FormulaCorpusPriors
 - FuelPriors
 - GeochemistryPriors

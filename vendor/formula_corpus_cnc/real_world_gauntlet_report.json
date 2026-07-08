@@ -1,0 +1,523 @@
+{
+  "timestamp": "2026-05-12T18:14:41.964636Z",
+  "chem": {
+    "score": {
+      "total": 17,
+      "hits": 15,
+      "strict_ok": 2,
+      "strict_bad": 0,
+      "errors": 0,
+      "pass_rate": 100.0
+    },
+    "scenarios": [
+      {
+        "idx": 1,
+        "name": "Haber-Bosch NH3 synthesis (BASF)",
+        "expected": "AMBER",
+        "got": "AMBER",
+        "result": "HIT",
+        "notes": "BASF/Uhde ammonia plant: 450 C, 150-300 bar, Fe promoter; high-P high-T = AMBER edge.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      },
+      {
+        "idx": 2,
+        "name": "Methanol synthesis (ICI Cu/ZnO)",
+        "expected": "GREEN",
+        "got": "AMBER",
+        "result": "STRICT_OK",
+        "notes": "ICI low-pressure process: 250 C, 50-100 bar, Cu/ZnO/Al2O3.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      },
+      {
+        "idx": 3,
+        "name": "Contact Process SO2 -> SO3",
+        "expected": "AMBER",
+        "got": "AMBER",
+        "result": "HIT",
+        "notes": "BASF Contact Process: 400-450 C, 1-2 bar, V2O5; high-T edge.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      },
+      {
+        "idx": 4,
+        "name": "Sabatier CO2 methanation",
+        "expected": "GREEN",
+        "got": "REVIEW",
+        "result": "STRICT_OK",
+        "notes": "Sabatier 1913: Ru/Ni, 300-400 C, 5-30 bar; well within envelope.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": false
+        }
+      },
+      {
+        "idx": 5,
+        "name": "Fischer esterification EtOH+AcOH",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Fischer 1895: H2SO4 cat, reflux 80 C; classic undergrad prep.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      },
+      {
+        "idx": 6,
+        "name": "Saponification (NaOH + ester)",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Twitchell soap process: NaOH + triglyceride, 70 C; routine.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      },
+      {
+        "idx": 7,
+        "name": "Acid-base neutralization HCl+NaOH",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Strong acid + strong base, 1 M, glass flask; freshman lab.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      },
+      {
+        "idx": 8,
+        "name": "Hydrogenation of benzene (Pt/C)",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Sabatier-Senderens benzene -> cyclohexane, 150 C, 25-50 bar Pt/C.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      },
+      {
+        "idx": 9,
+        "name": "Vacuum distillation methanol",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Industrial fractional vacuum distillation; below Tflash, low P.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      },
+      {
+        "idx": 10,
+        "name": "Pyrolysis of polyethylene",
+        "expected": "AMBER",
+        "got": "AMBER",
+        "result": "HIT",
+        "notes": "Waste-to-fuel pyrolysis ~500 C, zeolite cracking; high-T edge.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      },
+      {
+        "idx": 11,
+        "name": "Chlor-alkali brine electrolysis",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Membrane chlor-alkali cell, 90 C, 5 bar; routine industrial.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      },
+      {
+        "idx": 12,
+        "name": "Glucose crystallization (sugar)",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Sugar refinery seeded crystallization; routine.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      },
+      {
+        "idx": 13,
+        "name": "Combustion in glass flask (HAZARD)",
+        "expected": "REVIEW",
+        "got": "REVIEW",
+        "result": "HIT",
+        "notes": "Methane combustion in glass = NFPA-704 hazard; engine MUST review.",
+        "verdict": null,
+        "gates": {
+          "thermal": false,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": false
+        }
+      },
+      {
+        "idx": 14,
+        "name": "Hydrogenation with no catalyst (HAZARD)",
+        "expected": "REVIEW",
+        "got": "REVIEW",
+        "result": "HIT",
+        "notes": "Hydrogenation requires catalyst; uncatalyzed H2 + ethylene at high P/T is unsafe.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": false
+        }
+      },
+      {
+        "idx": 15,
+        "name": "H2SO4 + Acetone (HAZARD)",
+        "expected": "REVIEW",
+        "got": "REVIEW",
+        "result": "HIT",
+        "notes": "Concentrated H2SO4 + acetone = oxidative decomposition + heat.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": false
+        }
+      },
+      {
+        "idx": 16,
+        "name": "Ether at 40 C (peroxide risk)",
+        "expected": "REVIEW",
+        "got": "REVIEW",
+        "result": "HIT",
+        "notes": "Diethyl ether bp=34.6 C; storage/heating above flashpoint -> peroxide hazard.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": true,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": false
+        }
+      },
+      {
+        "idx": 17,
+        "name": "Glass flask @ 50 bar (HAZARD)",
+        "expected": "REVIEW",
+        "got": "REVIEW",
+        "result": "HIT",
+        "notes": "Glass rated to ~1.5 bar; 50 bar = catastrophic burst, MUST flag.",
+        "verdict": null,
+        "gates": {
+          "thermal": true,
+          "pressure": false,
+          "flammability": true,
+          "conversion": true,
+          "compatibility": true
+        }
+      }
+    ]
+  },
+  "cnc": {
+    "score": {
+      "total": 14,
+      "hits": 12,
+      "strict_ok": 2,
+      "strict_bad": 0,
+      "errors": 0,
+      "pass_rate": 100.0
+    },
+    "scenarios": [
+      {
+        "idx": 1,
+        "name": "Al 6061 finishing end-mill (Sandvik)",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Sandvik Coromant CoroMill 390, Al 6061-T6: Vc 250-400 m/min, fz 0.04-0.12.",
+        "verdict": "PRODUCTION-READY \u2014 Ra 0.10\u00b5m, \u03b4 6.8\u00b5m",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": true,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 2,
+        "name": "Steel 1045 roughing (Kennametal)",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Kennametal Mill 1-14, 1045 carbon steel: Vc 140-220, fz 0.08-0.15.",
+        "verdict": "PRODUCTION-READY \u2014 Ra 0.43\u00b5m, \u03b4 17.3\u00b5m",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": true,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 3,
+        "name": "4140 turning (ASM Handbook)",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "ASM Vol 16, AISI 4140 turning: Vc 120-180 m/min.",
+        "verdict": "PRODUCTION-READY \u2014 Ra 1.75\u00b5m, \u03b4 9.9\u00b5m",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": true,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 4,
+        "name": "Inconel 718 milling (Sandvik HRSA)",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Sandvik HRSA tables: Inconel 718 Vc 35-60 m/min, HPC coolant essential.",
+        "verdict": "PRODUCTION-READY \u2014 Ra 0.28\u00b5m, \u03b4 10.3\u00b5m",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": true,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 5,
+        "name": "Ti-6Al-4V milling (Aerospace)",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Aerospace shop standard: Ti-6Al-4V Vc 50-80, low ap to manage chatter.",
+        "verdict": "PRODUCTION-READY \u2014 Ra 0.54\u00b5m, \u03b4 9.2\u00b5m",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": true,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 6,
+        "name": "PEEK precision finishing",
+        "expected": "GREEN",
+        "got": "REVIEW",
+        "result": "STRICT_OK",
+        "notes": "PEEK machining guide (Victrex): Vc 200-300, sharp edge, mist.",
+        "verdict": "REVIEW \u2014 deflection",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": false,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 7,
+        "name": "Brass C36000 free-machining",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Free-machining brass: easy Vc 250-400, mist OK.",
+        "verdict": "PRODUCTION-READY \u2014 Ra 0.82\u00b5m, \u03b4 15.4\u00b5m",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": true,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 8,
+        "name": "Cast iron rough turn (Sandvik)",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Sandvik CC6190 ceramic on grey iron, dry cut, Vc 500-800.",
+        "verdict": "PRODUCTION-READY \u2014 Ra 2.54\u00b5m, \u03b4 17.7\u00b5m",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": true,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 9,
+        "name": "304 SS finishing (Haas)",
+        "expected": "GREEN",
+        "got": "GREEN",
+        "result": "HIT",
+        "notes": "Haas Tooling 304 SS: Vc 100-150, fz 0.04-0.08.",
+        "verdict": "PRODUCTION-READY \u2014 Ra 0.20\u00b5m, \u03b4 1.9\u00b5m",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": true,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 10,
+        "name": "Magnesium AZ31 fast cut",
+        "expected": "GREEN",
+        "got": "AMBER",
+        "result": "STRICT_OK",
+        "notes": "Magnesium AZ31: very high Vc OK, MQL to avoid fire, sharp tool.",
+        "verdict": "PRODUCTION-READY \u2014 Ra 1.81\u00b5m, \u03b4 23.1\u00b5m",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": true,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 11,
+        "name": "Inconel with HSS dry (HAZARD)",
+        "expected": "REVIEW",
+        "got": "REVIEW",
+        "result": "HIT",
+        "notes": "HSS dry on Inconel = thermal failure; engine MUST flag.",
+        "verdict": "REVIEW \u2014 stickout, deflection",
+        "gates": {
+          "stickout_ok": false,
+          "deflection_ok": false,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 12,
+        "name": "Excessive stickout aluminum (chatter)",
+        "expected": "REVIEW",
+        "got": "REVIEW",
+        "result": "HIT",
+        "notes": "L/D = 13 on 6mm Al endmill - chatter inevitable, engine MUST flag.",
+        "verdict": "REVIEW \u2014 stickout, deflection",
+        "gates": {
+          "stickout_ok": false,
+          "deflection_ok": false,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 13,
+        "name": "Massive DOC titanium (overpower)",
+        "expected": "REVIEW",
+        "got": "REVIEW",
+        "result": "HIT",
+        "notes": "8mm DOC on Ti = power + deflection violations.",
+        "verdict": "REVIEW \u2014 deflection",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": false,
+          "thermal_ok": true,
+          "roughness_ok": true,
+          "power_ok": true
+        }
+      },
+      {
+        "idx": 14,
+        "name": "Steel 4140 super-fine finish (sub-Ra)",
+        "expected": "REVIEW",
+        "got": "REVIEW",
+        "result": "HIT",
+        "notes": "fz=0.30 with r_e=0.2 -> Ra > 6.3 um; engine MUST flag roughness.",
+        "verdict": "REVIEW \u2014 deflection, roughness",
+        "gates": {
+          "stickout_ok": true,
+          "deflection_ok": false,
+          "thermal_ok": true,
+          "roughness_ok": false,
+          "power_ok": true
+        }
+      }
+    ]
+  }
+}

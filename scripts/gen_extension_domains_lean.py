@@ -58,6 +58,9 @@ DEDICATED_GENERATORS = {
     "Tokenization_Smoke",
     "Trinary_Hardware_Motif",
     "Intrinsic_LLM_Validators",
+    "Biological_CUDA_Physarum",
+    "Arxiv_Primitives_V14",
+    "Formula_Corpus_CNC",
 }
 
 LEAN_SIGN = {
@@ -103,6 +106,9 @@ LEAN_SIGN = {
     "Tokenization_Smoke": ("consciousness", "consciousness_raw_S_positive"),
     "Trinary_Hardware_Motif": ("consciousness", "consciousness_raw_S_positive"),
     "Intrinsic_LLM_Validators": ("consciousness", "consciousness_raw_S_positive"),
+    "Biological_CUDA_Physarum": ("biological", "biological_raw_S_positive"),
+    "Arxiv_Primitives_V14": ("consciousness", "consciousness_raw_S_positive"),
+    "Formula_Corpus_CNC": ("particle", "particle_raw_S_positive"),
 }
 
 

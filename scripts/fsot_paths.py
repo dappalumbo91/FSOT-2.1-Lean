@@ -255,6 +255,126 @@ def intrinsic_llm_benchmark_path(*, require: bool = True) -> Path:
     return path
 
 
+def physarum_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_PHYSARUM_ROOT",
+        VENDOR_ROOT / "physarum",
+        _DESKTOP / "Physarum polycephalum,",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Physarum root not found.")
+    assert path is not None
+    return path
+
+
+def physarum_cuda_benchmark_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_PHYSARUM_CUDA_BENCHMARK",
+        VENDOR_ROOT / "physarum" / "genome_data" / "cuda_benchmark_results.json",
+        _DESKTOP / "Physarum polycephalum," / "genome_data" / "cuda_benchmark_results.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Physarum CUDA benchmark not found.")
+    assert path is not None
+    return path
+
+
+def physarum_genomics_refined_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_PHYSARUM_GENOMICS_REFINED",
+        VENDOR_ROOT / "physarum" / "genome_data" / "genomics_slime_mold_refined.json",
+        _DESKTOP / "Physarum polycephalum," / "genome_data" / "genomics_slime_mold_refined.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Physarum genomics refined JSON not found.")
+    assert path is not None
+    return path
+
+
+def physarum_codon_weights_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_PHYSARUM_CODON_WEIGHTS",
+        VENDOR_ROOT / "physarum" / "genome_data" / "physarum_codon_weights.json",
+        _DESKTOP / "Physarum polycephalum," / "genome_data" / "physarum_codon_weights.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Physarum codon weights not found.")
+    assert path is not None
+    return path
+
+
+def arxiv_primitives_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_ARXIV_PRIMITIVES_ROOT",
+        VENDOR_ROOT / "arxiv_primitives",
+        _DESKTOP / "loop",
+    )
+    if path is None and require:
+        raise FileNotFoundError("arXiv primitives root not found.")
+    assert path is not None
+    return path
+
+
+def arxiv_v14_summary_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_ARXIV_V14_SUMMARY",
+        VENDOR_ROOT / "arxiv_primitives" / "v14_run_summary.json",
+        _DESKTOP / "loop" / "v14_run_summary.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("arXiv V14 run summary not found.")
+    assert path is not None
+    return path
+
+
+def formula_corpus_cnc_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_FORMULA_CORPUS_CNC_ROOT",
+        VENDOR_ROOT / "formula_corpus_cnc",
+        _DESKTOP / "New folder (3)",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Formula corpus CNC root not found.")
+    assert path is not None
+    return path
+
+
+def formula_corpus_cnc_formula_summary_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_FORMULA_CORPUS_CNC_SUMMARY",
+        VENDOR_ROOT / "formula_corpus_cnc" / "compiled_formulas" / "formula_summary.json",
+        _DESKTOP / "New folder (3)" / "compiled_formulas" / "formula_summary.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Formula corpus CNC summary not found.")
+    assert path is not None
+    return path
+
+
+def formula_corpus_cnc_validator_delta_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_FORMULA_CORPUS_CNC_VALIDATOR_DELTA",
+        VENDOR_ROOT / "formula_corpus_cnc" / "compiled_formulas" / "validator_vs_corpus_delta.json",
+        _DESKTOP / "New folder (3)" / "compiled_formulas" / "validator_vs_corpus_delta.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Formula corpus CNC validator delta not found.")
+    assert path is not None
+    return path
+
+
+def formula_corpus_cnc_gauntlet_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_FORMULA_CORPUS_CNC_GAUNTLET",
+        VENDOR_ROOT / "formula_corpus_cnc" / "real_world_gauntlet_report.json",
+        _DESKTOP / "New folder (3)" / "real_world_gauntlet_report.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Formula corpus CNC gauntlet report not found.")
+    assert path is not None
+    return path
+
+
 def fsot_read_path(*, require: bool = False) -> Path | None:
     path = _resolve(
         "FSOT_READ_PATH",

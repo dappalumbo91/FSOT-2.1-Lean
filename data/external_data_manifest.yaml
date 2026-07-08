@@ -103,6 +103,21 @@ bundled:
     role: intrinsic LLM validator multi-topic accuracy tiers
     env_override: FSOT_INTRINSIC_LLM_BENCHMARK
 
+  biological_cuda_physarum:
+    path: vendor/physarum
+    role: Physarum CUDA benchmarks, v5 plasmodium state, genomics + codon weights
+    env_override: FSOT_PHYSARUM_ROOT
+
+  arxiv_primitives_v14:
+    path: vendor/arxiv_primitives/v14_run_summary.json
+    role: Loop V14 arXiv topic ingest and six-primitive signature summary
+    env_override: FSOT_ARXIV_V14_SUMMARY
+
+  formula_corpus_cnc:
+    path: vendor/formula_corpus_cnc
+    role: compiled formula corpus stats, validator delta, chem gauntlet report
+    env_override: FSOT_FORMULA_CORPUS_CNC_ROOT
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification

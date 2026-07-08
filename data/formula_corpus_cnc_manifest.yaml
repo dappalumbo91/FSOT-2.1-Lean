@@ -1,0 +1,20 @@
+# Tier 34 — Formula corpus + CNC controller desktop bundle.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  formula_corpus_cnc_root: "vendor/formula_corpus_cnc"
+
+build:
+  script: scripts/build_formula_corpus_cnc_benchmark.py
+  output: data/formula_corpus_cnc_benchmark.json
+
+lean:
+  generator: scripts/gen_formula_corpus_cnc_lean.py
+  module: FSOT.Formal.FormulaCorpusCncPriors
+  lean_domain: particle
+  sign_theorem: particle_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 5.0
