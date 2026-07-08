@@ -6,6 +6,8 @@ linguistics_root: "vendor/linguistics"
 artifacts:
   targets_csv:
     path: "data/LINGUISTIC_TARGETS.csv"
+  derivations_json:
+    path: "linguistics_derivations.json"
   derivations_db:
     path: "db/linguistics.db"
 

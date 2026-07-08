@@ -1,9 +1,9 @@
-generated_at: '2026-07-07T16:27:06.259051+00:00'
+generated_at: '2026-07-08T13:47:52.608765+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 30
-  total_scientific_domains_covered: 66
-  total_empirical_records: 305270
+  extension_domains: 42
+  total_scientific_domains_covered: 78
+  total_empirical_records: 307820
   domains_target_band_2pct: 34
   domains_sign_mismatch: 1
   tier_distribution:
@@ -12,7 +12,7 @@ summary:
     C_thin: 6
     D_needs_work: 0
     unverified: 1
-  lean_formal_modules: 85
+  lean_formal_modules: 98
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -154,6 +154,7 @@ neurolab_domains:
   coverage_tier: A_strong
   labs:
   - smiles_lab
+  - geomagnetism_lab
   - space_weather_lab
 - domain: Fluid_Dynamics
   lean_domain: energy
@@ -176,6 +177,8 @@ neurolab_domains:
   coverage_tier: B_verified
   labs:
   - weather_lab
+  - tectonics_lab
+  - geomagnetism_lab
 - domain: High_Energy_Physics
   lean_domain: higgs
   empirical_records: 151
@@ -355,13 +358,15 @@ neurolab_domains:
   - smiles_lab
 - domain: Seismology
   lean_domain: energy
-  empirical_records: 0
+  empirical_records: 1000
   median_error_pct: null
   precision_status: sign_mismatch
   sign_mismatch: true
   authority_scalar_negative: true
   coverage_tier: unverified
-  labs: []
+  labs:
+  - seismology_lab
+  - tectonics_lab
 - domain: Sociology
   lean_domain: consciousness
   empirical_records: 10
@@ -563,6 +568,78 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.ComputationalReasoningPriors
+- domain: Math_Generator_Rules_Eval
+  tier: 30
+  record_count: 1520
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.MathGeneratorRulesEvalPriors
+- domain: Trinary_OS_Portable
+  tier: 30
+  record_count: 8
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.TrinaryOSPortablePriors
+- domain: Materials_Species_Bridge
+  tier: 30
+  record_count: 45
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.MaterialsSpeciesBridgePriors
+- domain: IGEM_Synthetic_Biology
+  tier: 31
+  record_count: 60
+  median_error_pct: 0.04447250077037545
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.IGEMSyntheticBiologyPriors
+- domain: Math_Generator_Benchmark_Formula_Eval
+  tier: 31
+  record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors
+- domain: Trinary_OS_ISA_Rebuild
+  tier: 31
+  record_count: 38
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.TrinaryOSISARebuildPriors
+- domain: IGEM_Live_FASTA_Ingest
+  tier: 32
+  record_count: 42
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.IGEMLiveFastaPriors
+- domain: Math_Generator_Airfoil_RMSE
+  tier: 32
+  record_count: 5
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.MathGeneratorAirfoilRmsePriors
+- domain: Trinary_OS_Round_Trip
+  tier: 32
+  record_count: 22
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.TrinaryOSRoundTripPriors
+- domain: Tokenization_Smoke
+  tier: 33
+  record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.TokenizationSmokePriors
+- domain: Trinary_Hardware_Motif
+  tier: 33
+  record_count: 8
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.TrinaryHardwareMotifPriors
+- domain: Intrinsic_LLM_Validators
+  tier: 33
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.IntrinsicLLMValidatorsPriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572
@@ -675,7 +752,6 @@ thin_empirical_coverage:
 - Quantum_Gravity
 - Quantum_Mechanics
 - Quantum_Optics
-- Seismology
 - Sociology
 authority_dispersal_domains:
 - Seismology

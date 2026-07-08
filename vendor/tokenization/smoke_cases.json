@@ -1,0 +1,32 @@
+[
+  {
+    "name": "llm phrase and contraction",
+    "text": "The large language model doesn't need water.",
+    "expected_universal_ids": ["U:the", "U:large_language_model", "U:does_not", "U:need", "U:water"],
+    "expected_gates": {
+      "large language model": "english_phrase",
+      "doesn't": "english_contraction"
+    }
+  },
+  {
+    "name": "basic morphology",
+    "text": "Running models learned from children.",
+    "expected_universal_ids": ["U:run", "U:model", "U:learn", "U:from", "U:child"],
+    "expected_gates": {
+      "Running": "english_morphology",
+      "models": "english_morphology",
+      "learned": "english_morphology",
+      "children": "english_morphology"
+    }
+  },
+  {
+    "name": "proper phrase spans",
+    "text": "New York is in the United States.",
+    "expected_universal_ids": ["U:new_york", "U:be", "U:in", "U:the", "U:united_states"],
+    "expected_gates": {
+      "New York": "english_phrase",
+      "United States": "english_phrase",
+      "is": "english_morphology"
+    }
+  }
+]

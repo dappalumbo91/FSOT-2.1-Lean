@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-07T23:58:49.339135+00:00",
+  "generated_at": "2026-07-08T13:47:53.175479+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -1437,6 +1437,11 @@
       "hydrology_stability_match_rate_nonneg",
       "hydrology_bundle"
     ],
+    "IGEMLiveFastaPriors": [
+      "igem_live_fasta_observable_count_pos",
+      "igem_live_fasta_median_error_under_five_pct",
+      "igem_live_fasta_bundle"
+    ],
     "IGEMSyntheticBiologyPriors": [
       "igem_synthetic_biology_observable_count_pos",
       "igem_synthetic_biology_median_error_under_five_pct",
@@ -1452,6 +1457,11 @@
       "fic_fertile_rows_present",
       "fic_best_intelligence_score_positive",
       "intelligence_compression_priors_bundle"
+    ],
+    "IntrinsicLLMValidatorsPriors": [
+      "intrinsic_llm_validators_observable_count_pos",
+      "intrinsic_llm_validators_median_error_under_five_pct",
+      "intrinsic_llm_validators_bundle"
     ],
     "KnowledgeBasePriors": [
       "knowledge_base_source_count_pos",
@@ -1540,6 +1550,11 @@
       "mathematics_computational_observable_count_pos",
       "mathematics_computational_median_error_under_five_pct",
       "mathematics_computational_bundle"
+    ],
+    "MathGeneratorAirfoilRmsePriors": [
+      "math_generator_airfoil_rmse_observable_count_pos",
+      "math_generator_airfoil_rmse_median_error_under_five_pct",
+      "math_generator_airfoil_rmse_bundle"
     ],
     "MathGeneratorBenchmarkFormulaEvalPriors": [
       "math_generator_benchmark_formula_eval_observable_count_pos",
@@ -1819,11 +1834,21 @@
       "thesis_simulation_components_le_total",
       "thesis_simulation_bundle"
     ],
+    "TokenizationSmokePriors": [
+      "tokenization_smoke_observable_count_pos",
+      "tokenization_smoke_median_error_under_five_pct",
+      "tokenization_smoke_bundle"
+    ],
     "TrinaryFluidPriors": [
       "trinary_ignition_coherence_positive",
       "trinary_resonance_persist_positive",
       "trinary_metatron_pathways_pos",
       "trinary_fluid_priors_bundle"
+    ],
+    "TrinaryHardwareMotifPriors": [
+      "trinary_hardware_motif_observable_count_pos",
+      "trinary_hardware_motif_median_error_under_five_pct",
+      "trinary_hardware_motif_bundle"
     ],
     "TrinaryOSISARebuildPriors": [
       "trinary_os_isa_rebuild_observable_count_pos",
@@ -1839,6 +1864,11 @@
       "trinary_os_word_width_eq_27",
       "trinary_os_hello_smaller_than_spawn",
       "trinary_os_fsotb_bundle"
+    ],
+    "TrinaryOSRoundTripPriors": [
+      "trinary_os_round_trip_observable_count_pos",
+      "trinary_os_round_trip_median_error_under_five_pct",
+      "trinary_os_round_trip_bundle"
     ],
     "UnifiedDBPriors": [
       "unified_db_strict_le_total",
@@ -1875,7 +1905,7 @@
     "scripts/gen_protein_priors_lean.py": "9A5300DDD7D142A6C9FF596651F40AF2B4079FCD8A43E3DDD33695D43308294F",
     "scripts/gen_protein_formulas_lean.py": "9E8FD84D7A89A6000E0253F9BADCAA9F3F6720E7496DB6B53F90443E3FD0B6A4",
     "scripts/domain_scalar_oracle.py": "80DBF4F2592B73E468038D5E54532FA1FB26947DB5ABF4AF2794EFFD566906DA",
-    "scripts/fsot_verification_runner.py": "3C3331CE5391D249B282686D70F7185D60E6DEF13D933811C7D4D19734FA3C19",
+    "scripts/fsot_verification_runner.py": "0721001AD52C933400B68FCBDD7F3925E532BE95FDB9F67AEEE3168CF083AFB6",
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },

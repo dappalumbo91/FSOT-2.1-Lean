@@ -83,6 +83,26 @@ bundled:
     role: byte-identical FSOTB pass-1/pass-2 round-trip oracle pairs
     env_override: FSOT_TRINARY_OS_ROOT
 
+  linguistics_derivations_json:
+    path: vendor/linguistics/linguistics_derivations.json
+    role: portable linguistics derivation snapshot (replaces SQLite for GitHub)
+    env_override: FSOT_LINGUISTICS_ROOT
+
+  tokenization_smoke:
+    path: vendor/tokenization
+    role: Dictionary universal-tokenizer smoke cases and vocab registry
+    env_override: FSOT_TOKENIZATION_ROOT
+
+  trinary_hardware_motif:
+    path: vendor/trinary_hardware/motif_influence_profile_stable.json
+    role: cube-block trinary hardware motif tuning profile
+    env_override: FSOT_TRINARY_HARDWARE_MOTIF
+
+  intrinsic_llm_validators:
+    path: vendor/intrinsic_llm/benchmark_results_final.json
+    role: intrinsic LLM validator multi-topic accuracy tiers
+    env_override: FSOT_INTRINSIC_LLM_BENCHMARK
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification

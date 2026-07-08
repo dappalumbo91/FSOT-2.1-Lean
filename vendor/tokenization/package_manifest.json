@@ -1,0 +1,25 @@
+{
+  "name": "fsot_english_tokens",
+  "tokenizer_version": "fsot_english_tokenizer.v0.2-portable",
+  "source_workspace": "C:/Users/damia/Desktop/Dictionary",
+  "copy_root": "C:/Users/damia/Desktop/Dictionary/english_tokens",
+  "entrypoint": "english_tokenizer.py",
+  "smoke_test": "evaluate_english_tokenizer.py",
+  "token_store": "tokens",
+  "registry": "tokens/registry/vocab.json",
+  "database_env_var": "FSOT_DICTIONARY_DB",
+  "default_database_candidates": [
+    "data/dictionary.db",
+    "../data/dictionary.db"
+  ],
+  "stable_id_policy": "append_only_no_renumber",
+  "reserved_ids": {
+    "0": "<PAD>",
+    "1": "<UNK>",
+    "2": "<BOS>",
+    "3": "<EOS>",
+    "4": "<SEP>",
+    "5": "<MASK>",
+    "6": "<BYTE_FALLBACK>"
+  }
+}

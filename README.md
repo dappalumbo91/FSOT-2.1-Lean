@@ -27,14 +27,14 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-07 — Tier 32)
+## Verification status (2026-07-08 — Tier 33)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
 Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
 
-- **32/32 verification tiers complete** (portable vendor bundle + live-ingest bridge wave)
-- **75+ scientific domains** (35 NeuroLab + 39 extension bridges)
+- **33/33 verification tiers complete** (Tier 9 coverage closure + crosswalk consolidation)
+- **78+ scientific domains** (35 NeuroLab + 42 extension bridges)
 - **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
@@ -90,6 +90,9 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - iGEM live FASTA ingest (`FSOT.Formal.IGEMLiveFastaPriors`) — parts.igem.org FASTA refresh with bundled fallback cache
 - Airfoil RMSE recompute (`FSOT.Formal.MathGeneratorAirfoilRmsePriors`) — FO-210 full-dataset + held-out RMSE live eval
 - Trinary OS round-trip (`FSOT.Formal.TrinaryOSRoundTripPriors`) — vendor FSOTB byte-identical asm→dis→asm smoke
+- Tokenization smoke (`FSOT.Formal.TokenizationSmokePriors`) — Dictionary universal-tokenizer smoke + vocab registry
+- Trinary hardware motif (`FSOT.Formal.TrinaryHardwareMotifPriors`) — cube-block motif tier/weight invariants
+- Intrinsic LLM validators (`FSOT.Formal.IntrinsicLLMValidatorsPriors`) — multi-topic validator accuracy tiers
 - Kronos metrology (`FSOT.Formal.KronosPriors`) — 568 runs, best fractional error 1.64e-7
 - Knowledge base (`FSOT.Formal.KnowledgeBasePriors`) — 19,213 catalog formulas; 7,941 strict-empirical bridge (6,921 within 2%); per-formula pass on full catalog
 - Math generator (`FSOT.Formal.MathGeneratorPriors`) — 7 comparisons within 2%

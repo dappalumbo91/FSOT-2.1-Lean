@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-07-08T13:47:02.620703+00:00",
+  "source": [
+    "vendor/tokenization/smoke_cases.json",
+    "vendor/tokenization/vocab.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai",
+    "neural"
+  ],
+  "D_eff": 12,
+  "smoke_case_count": 3,
+  "vocab_token_count": 25,
+  "record_count": 9,
+  "observable_count": 9,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "tokenization_smoke",
+      "property": "expected_token_count",
+      "name": "llm phrase and contraction",
+      "computed": 5,
+      "measured": 5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "tokenization_smoke",
+      "property": "expected_gate_count",
+      "name": "llm phrase and contraction",
+      "computed": 2,
+      "measured": 2,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "tokenization_smoke",
+      "property": "expected_token_count",
+      "name": "basic morphology",
+      "computed": 5,
+      "measured": 5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "tokenization_smoke",
+      "property": "expected_gate_count",
+      "name": "basic morphology",
+      "computed": 4,
+      "measured": 4,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "tokenization_smoke",
+      "property": "expected_token_count",
+      "name": "proper phrase spans",
+      "computed": 5,
+      "measured": 5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "tokenization_smoke",
+      "property": "expected_gate_count",
+      "name": "proper phrase spans",
+      "computed": 3,
+      "measured": 3,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "tokenization_smoke",
+      "property": "reserved_token_slots",
+      "computed": 7,
+      "measured": 7,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "tokenization_smoke",
+      "property": "vocab_token_count",
+      "computed": 25,
+      "measured": 25,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "tokenization_smoke",
+      "property": "smoke_case_count",
+      "computed": 3,
+      "measured": 3,
+      "error_pct": 0.0
+    }
+  ]
+}

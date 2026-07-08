@@ -219,6 +219,42 @@ def airfoil_dataset_path(*, require: bool = True) -> Path:
     return path
 
 
+def tokenization_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_TOKENIZATION_ROOT",
+        VENDOR_ROOT / "tokenization",
+        _DESKTOP / "Dictionary" / "english_tokens",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Tokenization root not found.")
+    assert path is not None
+    return path
+
+
+def trinary_hardware_motif_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_TRINARY_HARDWARE_MOTIF",
+        VENDOR_ROOT / "trinary_hardware" / "motif_influence_profile_stable.json",
+        _DESKTOP / "FSOT, Cube Block Trinary Design" / "motif_influence_profile_stable.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Trinary hardware motif profile not found.")
+    assert path is not None
+    return path
+
+
+def intrinsic_llm_benchmark_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_INTRINSIC_LLM_BENCHMARK",
+        VENDOR_ROOT / "intrinsic_llm" / "benchmark_results_final.json",
+        _DESKTOP / "New folder (2)" / "benchmark_results_final.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Intrinsic LLM benchmark not found.")
+    assert path is not None
+    return path
+
+
 def fsot_read_path(*, require: bool = False) -> Path | None:
     path = _resolve(
         "FSOT_READ_PATH",

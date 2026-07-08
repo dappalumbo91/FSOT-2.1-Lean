@@ -794,6 +794,10 @@ def main() -> int:
                 "build_igem_live_fasta_benchmark.py",
                 "build_math_generator_airfoil_rmse_benchmark.py",
                 "build_trinary_os_round_trip_benchmark.py",
+                "ingest_geophysical_labs.py",
+                "build_tokenization_smoke_benchmark.py",
+                "build_trinary_hardware_motif_benchmark.py",
+                "build_intrinsic_llm_validators_benchmark.py",
                 "ingest_climate_ncei_chunked.py",
                 "build_climate_observed_benchmark.py",
             ):
@@ -894,6 +898,9 @@ def main() -> int:
             (None, "gen_igem_live_fasta_lean.py", "IGEMLiveFastaPriors.lean generation failed", None),
             (None, "gen_math_generator_airfoil_rmse_lean.py", "MathGeneratorAirfoilRmsePriors.lean generation failed", None),
             (None, "gen_trinary_os_round_trip_lean.py", "TrinaryOSRoundTripPriors.lean generation failed", None),
+            (None, "gen_tokenization_smoke_lean.py", "TokenizationSmokePriors.lean generation failed", None),
+            (None, "gen_trinary_hardware_motif_lean.py", "TrinaryHardwareMotifPriors.lean generation failed", None),
+            (None, "gen_intrinsic_llm_validators_lean.py", "IntrinsicLLMValidatorsPriors.lean generation failed", None),
         ]
             for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
                 if ingest_name:

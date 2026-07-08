@@ -1,8 +1,8 @@
 {
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "domain_count": 35,
-  "domains_with_empirical_data": 34,
-  "total_empirical_records": 305270,
+  "domains_with_empirical_data": 35,
+  "total_empirical_records": 307820,
   "lean_mapped_count": 17,
   "lean_param_aligned_count": 17,
   "negative_scalar_domains": [
@@ -369,12 +369,17 @@
       "lean_sign_theorem": "electron_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 45363,
+      "empirical_records": 45888,
       "empirical_sources": [
         {
           "lab": "smiles_lab",
           "records": 1470,
           "median_error_pct": 0.058
+        },
+        {
+          "lab": "geomagnetism_lab",
+          "records": 525,
+          "median_error_pct": 0.0
         },
         {
           "lab": "space_weather_lab",
@@ -427,15 +432,25 @@
       "lean_sign_theorem": "energy_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 24,
+      "empirical_records": 1049,
       "empirical_sources": [
         {
           "lab": "weather_lab",
           "records": 24,
           "median_error_pct": null
+        },
+        {
+          "lab": "tectonics_lab",
+          "records": 500,
+          "median_error_pct": 0.0
+        },
+        {
+          "lab": "geomagnetism_lab",
+          "records": 525,
+          "median_error_pct": 0.0
         }
       ],
-      "empirical_median_error_pct": null,
+      "empirical_median_error_pct": 0.0,
       "has_empirical_data": true
     },
     {
@@ -894,10 +909,21 @@
       "lean_sign_theorem": "energy_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 0,
-      "empirical_sources": [],
-      "empirical_median_error_pct": null,
-      "has_empirical_data": false
+      "empirical_records": 1000,
+      "empirical_sources": [
+        {
+          "lab": "seismology_lab",
+          "records": 500,
+          "median_error_pct": 0.0
+        },
+        {
+          "lab": "tectonics_lab",
+          "records": 500,
+          "median_error_pct": 0.0
+        }
+      ],
+      "empirical_median_error_pct": 0.0,
+      "has_empirical_data": true
     },
     {
       "neurolab_domain": "Sociology",

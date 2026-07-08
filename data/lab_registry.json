@@ -49304,5 +49304,35 @@
     "stability_match_rate": 0.996875,
     "median_error_pct": 0.0,
     "ingested_at": "2026-07-03T15:59:31.702750+00:00"
+  },
+  "seismology_lab": {
+    "present": true,
+    "record_count": 500,
+    "observable_count": 500,
+    "median_error_pct": 0.0,
+    "stability_match_rate": 0.986,
+    "D_eff": 18,
+    "source": "USGS_FDSN",
+    "ingested_at": "2026-07-08T13:47:01.519062+00:00"
+  },
+  "tectonics_lab": {
+    "present": true,
+    "record_count": 500,
+    "observable_count": 500,
+    "median_error_pct": 0.0,
+    "stability_match_rate": 0.988,
+    "D_eff": 17,
+    "source": "PB2002_plates_USGS_events",
+    "ingested_at": "2026-07-08T13:47:01.520063+00:00"
+  },
+  "geomagnetism_lab": {
+    "present": true,
+    "record_count": 525,
+    "observable_count": 525,
+    "median_error_pct": 0.0,
+    "stability_match_rate": 1.0,
+    "D_eff": 13,
+    "source": "NOAA_SWPC_geomag",
+    "ingested_at": "2026-07-08T13:47:01.521063+00:00"
   }
 }

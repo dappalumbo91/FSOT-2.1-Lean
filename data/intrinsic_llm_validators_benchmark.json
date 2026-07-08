@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-07-08T13:47:02.995301+00:00",
+  "source": [
+    "vendor/intrinsic_llm/benchmark_results_final.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai",
+    "neural"
+  ],
+  "D_eff": 12,
+  "eval_tier_count": 4,
+  "record_count": 10,
+  "observable_count": 10,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "intrinsic_llm_validators",
+      "property": "accuracy_pct",
+      "name": "Validation (3 topics)",
+      "topics": 3,
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "intrinsic_llm_validators",
+      "property": "hit_count",
+      "name": "Validation (3 topics)",
+      "topics": 3,
+      "computed": 15,
+      "measured": 15,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "intrinsic_llm_validators",
+      "property": "accuracy_pct",
+      "name": "Quarter Eval (12 topics)",
+      "topics": 12,
+      "computed": 71.66666666666667,
+      "measured": 71.67,
+      "error_pct": 0.004650946467601928
+    },
+    {
+      "lab": "intrinsic_llm_validators",
+      "property": "hit_count",
+      "name": "Quarter Eval (12 topics)",
+      "topics": 12,
+      "computed": 43,
+      "measured": 43,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "intrinsic_llm_validators",
+      "property": "accuracy_pct",
+      "name": "Half Eval (24 topics)",
+      "topics": 24,
+      "computed": 72.5,
+      "measured": 72.5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "intrinsic_llm_validators",
+      "property": "hit_count",
+      "name": "Half Eval (24 topics)",
+      "topics": 24,
+      "computed": 87,
+      "measured": 87,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "intrinsic_llm_validators",
+      "property": "accuracy_pct",
+      "name": "Full Eval (48 topics)",
+      "topics": 48,
+      "computed": 65.0,
+      "measured": 65.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "intrinsic_llm_validators",
+      "property": "hit_count",
+      "name": "Full Eval (48 topics)",
+      "topics": 48,
+      "computed": 156,
+      "measured": 156,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "intrinsic_llm_validators",
+      "property": "validation_suite_perfect",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "intrinsic_llm_validators",
+      "property": "eval_tier_count",
+      "computed": 4,
+      "measured": 4,
+      "error_pct": 0.0
+    }
+  ]
+}

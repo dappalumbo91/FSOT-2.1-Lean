@@ -1,15 +1,16 @@
-generated_at: '2026-07-08T00:13:12.668477+00:00'
+generated_at: '2026-07-08T13:47:51.780425+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 95
+  lean_formal_modules: 98
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 29
-  tiers_total: 30
-  percent_complete: 96.7
-current_position: "Tier 32 Live ingest \u2014 iGEM FASTA, airfoil RMSE, trinary round-trip"
+  tiers_complete: 31
+  tiers_total: 31
+  percent_complete: 100.0
+current_position: "Tier 33 Consolidation \u2014 Tier 9 coverage, linguistics portable,\
+  \ crosswalk wave"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -58,6 +59,7 @@ tiers:
   - IGEMSyntheticBiologyPriors
   - ImmunologyPriors
   - IntelligenceCompressionPriors
+  - IntrinsicLLMValidatorsPriors
   - KnowledgeBasePriors
   - KronosPriors
   - LinguisticsFormalPriors
@@ -99,7 +101,9 @@ tiers:
   - SyntheticBiologyPriors
   - TectonicsPriors
   - ThesisSimulationPriors
+  - TokenizationSmokePriors
   - TrinaryFluidPriors
+  - TrinaryHardwareMotifPriors
   - TrinaryOSISARebuildPriors
   - TrinaryOSPortablePriors
   - TrinaryOSPriors
@@ -129,11 +133,11 @@ tiers:
     strata_count: 4
 - tier: 9
   name: 35-domain NeuroLab coverage (Lean + empirical labs)
-  status: pending
+  status: complete
   metrics:
     domain_count: 35
-    empirical_domains: 34
-    total_empirical_records: 305270
+    empirical_domains: 35
+    total_empirical_records: 307820
     lean_override_aligned: 17/17
     negative_scalar_domains: 10
   artifacts:
@@ -573,10 +577,27 @@ tiers:
   - FSOT.Formal.IGEMLiveFastaPriors
   - FSOT.Formal.MathGeneratorAirfoilRmsePriors
   - FSOT.Formal.TrinaryOSRoundTripPriors
+- tier: 33
+  name: "Consolidation \u2014 Tier 9 coverage, linguistics portable, crosswalk wave"
+  status: complete
+  metrics:
+    domain_coverage_empirical_domains: 35
+    tokenization_smoke_records: 9
+    trinary_hardware_motif_records: 8
+    intrinsic_llm_validators_records: 10
+  artifacts:
+  - scripts/ingest_geophysical_labs.py
+  - vendor/linguistics/linguistics_derivations.json
+  - data/tokenization_smoke_manifest.yaml
+  - data/trinary_hardware_motif_manifest.yaml
+  - data/intrinsic_llm_validators_manifest.yaml
+  - FSOT.Formal.TokenizationSmokePriors
+  - FSOT.Formal.TrinaryHardwareMotifPriors
+  - FSOT.Formal.IntrinsicLLMValidatorsPriors
 next_steps:
-- Tier 9 domain-coverage gap closure (pre-existing)
-- Linguistics Lab portable derivations DB bundle
-- Next extension-domain wave from desktop crosswalk
+- biological_cuda / Physarum crosswalk bridge
+- arxiv_primitives loop corpus ingest
+- formula_corpus_cnc desktop bundle
 key_metrics:
   strict_empirical_records: 7941
   smiles_mapped: 1470
@@ -585,4 +606,4 @@ key_metrics:
   hero_fi_pct: 7.0
   canonical_bridge_fi_pct: 7.35
   neurolab_domain_count: 35
-  domains_with_empirical_data: 34
+  domains_with_empirical_data: 35

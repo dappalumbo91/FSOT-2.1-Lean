@@ -1,0 +1,20 @@
+# Tier 33 — trinary cube-block hardware motif profile.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  motif_profile: "vendor/trinary_hardware/motif_influence_profile_stable.json"
+
+build:
+  script: scripts/build_trinary_hardware_motif_benchmark.py
+  output: data/trinary_hardware_motif_benchmark.json
+
+lean:
+  generator: scripts/gen_trinary_hardware_motif_lean.py
+  module: FSOT.Formal.TrinaryHardwareMotifPriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 1.0

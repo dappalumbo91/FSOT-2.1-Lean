@@ -1,0 +1,20 @@
+# Tier 33 — Dictionary tokenization smoke crosswalk.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  tokenization_root: "vendor/tokenization"
+
+build:
+  script: scripts/build_tokenization_smoke_benchmark.py
+  output: data/tokenization_smoke_benchmark.json
+
+lean:
+  generator: scripts/gen_tokenization_smoke_lean.py
+  module: FSOT.Formal.TokenizationSmokePriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 1.0

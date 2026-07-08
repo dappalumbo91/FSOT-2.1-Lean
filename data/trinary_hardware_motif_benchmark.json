@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-07-08T13:47:02.808573+00:00",
+  "source": [
+    "vendor/trinary_hardware/motif_influence_profile_stable.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai",
+    "neural"
+  ],
+  "D_eff": 12,
+  "motif_version": 1,
+  "record_count": 8,
+  "observable_count": 8,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "trinary_hardware_motif",
+      "property": "tier_mild_intensity",
+      "computed": 1.05,
+      "measured": 1.05,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_hardware_motif",
+      "property": "tier_moderate_intensity",
+      "computed": 1.15,
+      "measured": 1.15,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_hardware_motif",
+      "property": "tier_severe_intensity",
+      "computed": 1.3,
+      "measured": 1.3,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_hardware_motif",
+      "property": "tier_intensity_ordering",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_hardware_motif",
+      "property": "interaction_weight_sum",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_hardware_motif",
+      "property": "abstraction_hysteresis_gap",
+      "computed": 0.04999999999999999,
+      "measured": 0.05,
+      "error_pct": 2.7755575615628914e-14
+    },
+    {
+      "lab": "trinary_hardware_motif",
+      "property": "collapse_threshold_bridge",
+      "computed": 0.9174663774653723,
+      "measured": 0.9174663774653723,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_hardware_motif",
+      "property": "conversion_gate_min_threshold",
+      "computed": 0.3,
+      "measured": 0.3,
+      "error_pct": 0.0
+    }
+  ]
+}

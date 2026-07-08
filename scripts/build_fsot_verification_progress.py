@@ -87,6 +87,9 @@ def build_progress() -> dict:
     igem_live_fasta_bench = _load_json(ROOT / "data" / "igem_live_fasta_benchmark.json")
     mg_airfoil_rmse_bench = _load_json(ROOT / "data" / "math_generator_airfoil_rmse_benchmark.json")
     trinary_round_trip_bench = _load_json(ROOT / "data" / "trinary_os_round_trip_benchmark.json")
+    tokenization_smoke_bench = _load_json(ROOT / "data" / "tokenization_smoke_benchmark.json")
+    trinary_hw_motif_bench = _load_json(ROOT / "data" / "trinary_hardware_motif_benchmark.json")
+    intrinsic_llm_bench = _load_json(ROOT / "data" / "intrinsic_llm_validators_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -819,12 +822,41 @@ def build_progress() -> dict:
                 "FSOT.Formal.TrinaryOSRoundTripPriors",
             ],
         },
+        {
+            "tier": 33,
+            "name": "Consolidation — Tier 9 coverage, linguistics portable, crosswalk wave",
+            "status": "complete"
+            if domain_cov.get("domains_with_empirical_data") == 35
+            and tokenization_smoke_bench.get("record_count", 0) >= 5
+            and trinary_hw_motif_bench.get("record_count", 0) >= 5
+            and intrinsic_llm_bench.get("record_count", 0) >= 5
+            and tokenization_smoke_bench.get("median_error_pct", 99) <= 1.0
+            and trinary_hw_motif_bench.get("median_error_pct", 99) <= 1.0
+            and intrinsic_llm_bench.get("median_error_pct", 99) <= 1.0
+            else "pending",
+            "metrics": {
+                "domain_coverage_empirical_domains": domain_cov.get("domains_with_empirical_data"),
+                "tokenization_smoke_records": tokenization_smoke_bench.get("record_count"),
+                "trinary_hardware_motif_records": trinary_hw_motif_bench.get("record_count"),
+                "intrinsic_llm_validators_records": intrinsic_llm_bench.get("record_count"),
+            },
+            "artifacts": [
+                "scripts/ingest_geophysical_labs.py",
+                "vendor/linguistics/linguistics_derivations.json",
+                "data/tokenization_smoke_manifest.yaml",
+                "data/trinary_hardware_motif_manifest.yaml",
+                "data/intrinsic_llm_validators_manifest.yaml",
+                "FSOT.Formal.TokenizationSmokePriors",
+                "FSOT.Formal.TrinaryHardwareMotifPriors",
+                "FSOT.Formal.IntrinsicLLMValidatorsPriors",
+            ],
+        },
     ]
 
     next_steps = [
-        "Tier 9 domain-coverage gap closure (pre-existing)",
-        "Linguistics Lab portable derivations DB bundle",
-        "Next extension-domain wave from desktop crosswalk",
+        "biological_cuda / Physarum crosswalk bridge",
+        "arxiv_primitives loop corpus ingest",
+        "formula_corpus_cnc desktop bundle",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -843,7 +875,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 32 Live ingest — iGEM FASTA, airfoil RMSE, trinary round-trip",
+        "current_position": "Tier 33 Consolidation — Tier 9 coverage, linguistics portable, crosswalk wave",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

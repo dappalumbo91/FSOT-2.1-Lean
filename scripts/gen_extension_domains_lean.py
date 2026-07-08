@@ -55,6 +55,9 @@ DEDICATED_GENERATORS = {
     "IGEM_Live_FASTA_Ingest",
     "Math_Generator_Airfoil_RMSE",
     "Trinary_OS_Round_Trip",
+    "Tokenization_Smoke",
+    "Trinary_Hardware_Motif",
+    "Intrinsic_LLM_Validators",
 }
 
 LEAN_SIGN = {
@@ -97,6 +100,9 @@ LEAN_SIGN = {
     "IGEM_Live_FASTA_Ingest": ("biological", "biological_raw_S_positive"),
     "Math_Generator_Airfoil_RMSE": ("particle", "particle_raw_S_positive"),
     "Trinary_OS_Round_Trip": ("consciousness", "consciousness_raw_S_positive"),
+    "Tokenization_Smoke": ("consciousness", "consciousness_raw_S_positive"),
+    "Trinary_Hardware_Motif": ("consciousness", "consciousness_raw_S_positive"),
+    "Intrinsic_LLM_Validators": ("consciousness", "consciousness_raw_S_positive"),
 }
 
 

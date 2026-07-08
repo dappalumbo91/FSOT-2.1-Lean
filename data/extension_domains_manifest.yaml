@@ -518,6 +518,45 @@ extension_domains:
     lean_module: FSOT.Formal.TrinaryOSRoundTripPriors
     note: "Vendor FSOTB round-trip byte-identical smoke from ISA + fixtures"
 
+  Tokenization_Smoke:
+    tier: 33
+    D_eff: 12
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_tokenization_smoke_benchmark.py
+    manifest: data/tokenization_smoke_manifest.yaml
+    benchmark_data: data/tokenization_smoke_benchmark.json
+    lean_module: FSOT.Formal.TokenizationSmokePriors
+    note: "Dictionary universal-tokenizer smoke cases + vocab registry crosswalk"
+
+  Trinary_Hardware_Motif:
+    tier: 33
+    D_eff: 12
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_trinary_hardware_motif_benchmark.py
+    manifest: data/trinary_hardware_motif_manifest.yaml
+    benchmark_data: data/trinary_hardware_motif_benchmark.json
+    lean_module: FSOT.Formal.TrinaryHardwareMotifPriors
+    note: "Cube-block trinary hardware motif profile tier/weight invariants"
+
+  Intrinsic_LLM_Validators:
+    tier: 33
+    D_eff: 12
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_intrinsic_llm_validators_benchmark.py
+    manifest: data/intrinsic_llm_validators_manifest.yaml
+    benchmark_data: data/intrinsic_llm_validators_benchmark.json
+    lean_module: FSOT.Formal.IntrinsicLLMValidatorsPriors
+    note: "Intrinsic LLM validator multi-topic accuracy tiers from desktop QA lab"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

@@ -1,4 +1,4 @@
-generated_at: '2026-07-07T23:58:48.228379+00:00'
+generated_at: '2026-07-08T13:47:52.870415+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,14 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 89
+  lean_formal_modules: 98
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 27
-  tiers_total: 28
-  percent_complete: 96.4
-current_tier: Tier 30 Portable bridges — math rules eval, trinary OS, materials↔species
+  tiers_complete: 31
+  tiers_total: 31
+  percent_complete: 100.0
+current_tier: Tier 33 Consolidation — Tier 9 coverage, linguistics portable, crosswalk
+  wave
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -423,8 +424,8 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: true
-scientific_domains_covered: 66
-total_empirical_records: 305270
+scientific_domains_covered: 78
+total_empirical_records: 307820
 tier_coverage:
 - tier: 1
   name: Core scalar + domains
@@ -469,8 +470,11 @@ tier_coverage:
   - GraceCryospherePriors
   - HiggsBranchingPriors
   - HydrologyPriors
+  - IGEMLiveFastaPriors
+  - IGEMSyntheticBiologyPriors
   - ImmunologyPriors
   - IntelligenceCompressionPriors
+  - IntrinsicLLMValidatorsPriors
   - KnowledgeBasePriors
   - KronosPriors
   - LinguisticsFormalPriors
@@ -481,6 +485,8 @@ tier_coverage:
   - MagnetospherePriors
   - MaterialsEngineeringPriors
   - MaterialsSpeciesBridgePriors
+  - MathGeneratorAirfoilRmsePriors
+  - MathGeneratorBenchmarkFormulaEvalPriors
   - MathGeneratorPriors
   - MathGeneratorRulesEvalPriors
   - MathematicsComputationalPriors
@@ -510,9 +516,13 @@ tier_coverage:
   - SyntheticBiologyPriors
   - TectonicsPriors
   - ThesisSimulationPriors
+  - TokenizationSmokePriors
   - TrinaryFluidPriors
+  - TrinaryHardwareMotifPriors
+  - TrinaryOSISARebuildPriors
   - TrinaryOSPortablePriors
   - TrinaryOSPriors
+  - TrinaryOSRoundTripPriors
   - UnifiedDBPriors
   - VibRegisterPriors
   - WeatherPriors
@@ -538,11 +548,11 @@ tier_coverage:
     strata_count: 4
 - tier: 9
   name: 35-domain NeuroLab coverage (Lean + empirical labs)
-  status: pending
+  status: complete
   metrics:
     domain_count: 35
-    empirical_domains: 34
-    total_empirical_records: 305270
+    empirical_domains: 35
+    total_empirical_records: 307820
     lean_override_aligned: 17/17
     negative_scalar_domains: 10
   artifacts:
@@ -940,6 +950,64 @@ tier_coverage:
   - FSOT.Formal.MathGeneratorRulesEvalPriors
   - FSOT.Formal.TrinaryOSPortablePriors
   - FSOT.Formal.MaterialsSpeciesBridgePriors
+- tier: 31
+  name: Strict bridges — iGEM synbio, benchmark_formula eval, trinary ISA rebuild
+  status: complete
+  metrics:
+    igem_synthetic_biology_records: 60
+    igem_synthetic_biology_parts: 20
+    math_generator_benchmark_formula_records: 9
+    math_generator_benchmark_formula_median_error_pct: 0.0
+    trinary_os_isa_rebuild_records: 38
+    trinary_os_isa_opcode_count: 27
+  artifacts:
+  - data/igem_synthetic_biology_manifest.yaml
+  - data/math_generator_benchmark_formula_eval_manifest.yaml
+  - data/trinary_os_isa_rebuild_manifest.yaml
+  - vendor/igem/igem_parts_registry.json
+  - vendor/math_generator/benchmark_reports
+  - vendor/trinary_os/isa/fsotb_opcode_registry.json
+  - FSOT.Formal.IGEMSyntheticBiologyPriors
+  - FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors
+  - FSOT.Formal.TrinaryOSISARebuildPriors
+- tier: 32
+  name: Live ingest — iGEM FASTA, airfoil RMSE, trinary round-trip
+  status: complete
+  metrics:
+    igem_live_fasta_records: 42
+    igem_live_fasta_parts: 20
+    math_generator_airfoil_rmse_records: 5
+    math_generator_airfoil_rmse_median_error_pct: 0.0
+    trinary_os_round_trip_records: 22
+    trinary_os_round_trip_program_count: 3
+  artifacts:
+  - data/igem_live_fasta_manifest.yaml
+  - data/math_generator_airfoil_rmse_manifest.yaml
+  - data/trinary_os_round_trip_manifest.yaml
+  - vendor/igem/fastas
+  - vendor/math_generator/datasets/airfoil_self_noise.csv
+  - vendor/trinary_os/fixtures
+  - vendor/trinary_os/round_trip
+  - FSOT.Formal.IGEMLiveFastaPriors
+  - FSOT.Formal.MathGeneratorAirfoilRmsePriors
+  - FSOT.Formal.TrinaryOSRoundTripPriors
+- tier: 33
+  name: Consolidation — Tier 9 coverage, linguistics portable, crosswalk wave
+  status: complete
+  metrics:
+    domain_coverage_empirical_domains: 35
+    tokenization_smoke_records: 9
+    trinary_hardware_motif_records: 8
+    intrinsic_llm_validators_records: 10
+  artifacts:
+  - scripts/ingest_geophysical_labs.py
+  - vendor/linguistics/linguistics_derivations.json
+  - data/tokenization_smoke_manifest.yaml
+  - data/trinary_hardware_motif_manifest.yaml
+  - data/intrinsic_llm_validators_manifest.yaml
+  - FSOT.Formal.TokenizationSmokePriors
+  - FSOT.Formal.TrinaryHardwareMotifPriors
+  - FSOT.Formal.IntrinsicLLMValidatorsPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -1124,27 +1192,75 @@ extension_domains:
 - domain: Math_Generator_Rules_Eval
   tier: 30
   record_count: 1520
+  median_error_pct: 0.0
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.MathGeneratorRulesEvalPriors
 - domain: Trinary_OS_Portable
   tier: 30
   record_count: 8
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.TrinaryOSPortablePriors
 - domain: Materials_Species_Bridge
   tier: 30
   record_count: 45
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.MaterialsSpeciesBridgePriors
 - domain: IGEM_Synthetic_Biology
   tier: 31
   record_count: 60
+  median_error_pct: 0.04447250077037545
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.IGEMSyntheticBiologyPriors
 - domain: Math_Generator_Benchmark_Formula_Eval
   tier: 31
   record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors
 - domain: Trinary_OS_ISA_Rebuild
   tier: 31
   record_count: 38
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.TrinaryOSISARebuildPriors
+- domain: IGEM_Live_FASTA_Ingest
+  tier: 32
+  record_count: 42
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.IGEMLiveFastaPriors
+- domain: Math_Generator_Airfoil_RMSE
+  tier: 32
+  record_count: 5
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.MathGeneratorAirfoilRmsePriors
+- domain: Trinary_OS_Round_Trip
+  tier: 32
+  record_count: 22
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.TrinaryOSRoundTripPriors
+- domain: Tokenization_Smoke
+  tier: 33
+  record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.TokenizationSmokePriors
+- domain: Trinary_Hardware_Motif
+  tier: 33
+  record_count: 8
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.TrinaryHardwareMotifPriors
+- domain: Intrinsic_LLM_Validators
+  tier: 33
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.IntrinsicLLMValidatorsPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1512,6 +1628,72 @@ theory_crosswalk:
     - trinary_os
     - trinary_os_isa
     lean_module: FSOT.Formal.TrinaryOSISARebuildPriors
+  IGEM_Live_FASTA_Ingest:
+    tier: 32
+    D_eff: 14
+    maps_to_lean:
+    - biological
+    - medical
+    labs:
+    - igem_parts_registry
+    - synthetic_biology_lab
+    lean_module: FSOT.Formal.IGEMLiveFastaPriors
+  Math_Generator_Airfoil_RMSE:
+    tier: 32
+    D_eff: 17
+    maps_to_lean:
+    - particle
+    - mathematical
+    - consciousness
+    labs:
+    - math_generator_rules
+    - fsot_read_write
+    lean_module: FSOT.Formal.MathGeneratorAirfoilRmsePriors
+  Trinary_OS_Round_Trip:
+    tier: 32
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - trinary_os
+    - trinary_os_isa
+    - fsotb_asm
+    lean_module: FSOT.Formal.TrinaryOSRoundTripPriors
+  Tokenization_Smoke:
+    tier: 33
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - tokenization
+    - linguistics_lab
+    lean_module: FSOT.Formal.TokenizationSmokePriors
+  Trinary_Hardware_Motif:
+    tier: 33
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - trinary_hardware
+    - trinary_os
+    lean_module: FSOT.Formal.TrinaryHardwareMotifPriors
+  Intrinsic_LLM_Validators:
+    tier: 33
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - validators_intrinsic_llm
+    - fic_intelligence_compressor
+    lean_module: FSOT.Formal.IntrinsicLLMValidatorsPriors
 lean_formal_modules:
 - AetherPrimePriors
 - BiologyStrictEmpiricalPriors
@@ -1545,8 +1727,11 @@ lean_formal_modules:
 - GraceCryospherePriors
 - HiggsBranchingPriors
 - HydrologyPriors
+- IGEMLiveFastaPriors
+- IGEMSyntheticBiologyPriors
 - ImmunologyPriors
 - IntelligenceCompressionPriors
+- IntrinsicLLMValidatorsPriors
 - KnowledgeBasePriors
 - KronosPriors
 - LinguisticsFormalPriors
@@ -1557,6 +1742,8 @@ lean_formal_modules:
 - MagnetospherePriors
 - MaterialsEngineeringPriors
 - MaterialsSpeciesBridgePriors
+- MathGeneratorAirfoilRmsePriors
+- MathGeneratorBenchmarkFormulaEvalPriors
 - MathGeneratorPriors
 - MathGeneratorRulesEvalPriors
 - MathematicsComputationalPriors
@@ -1585,9 +1772,13 @@ lean_formal_modules:
 - SyntheticBiologyPriors
 - TectonicsPriors
 - ThesisSimulationPriors
+- TokenizationSmokePriors
 - TrinaryFluidPriors
+- TrinaryHardwareMotifPriors
+- TrinaryOSISARebuildPriors
 - TrinaryOSPortablePriors
 - TrinaryOSPriors
+- TrinaryOSRoundTripPriors
 - UnifiedDBPriors
 - VibRegisterPriors
 - WeatherPriors

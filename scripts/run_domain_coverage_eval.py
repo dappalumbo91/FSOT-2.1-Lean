@@ -125,6 +125,11 @@ def _lab_record_count(registry: dict, lab_key: str) -> tuple[int, float | None]:
     if lab_key in ("trinary_os_lab", "trinary_os"):
         return int(lab.get("oracle_count") or 0), None
 
+    if lab_key in ("seismology_lab", "tectonics_lab", "geomagnetism_lab"):
+        n = int(lab.get("record_count") or lab.get("observable_count") or 0)
+        med = lab.get("median_error_pct")
+        return n, float(med) if med is not None else None
+
     return int(lab.get("count") or lab.get("record_count") or 0), None
 
 

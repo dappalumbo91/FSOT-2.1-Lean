@@ -19,6 +19,7 @@ REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 from linguistics_targets import (  # noqa: E402
     load_derivations_db,
+    load_derivations_json,
     load_targets_csv,
     merge_targets,
     summarize_linguistics,
@@ -35,6 +36,9 @@ def verify_linguistics(
     ver = manifest.get("verification", {})
     root = Path(manifest["linguistics_root"])
     csv_path = root / manifest["artifacts"]["targets_csv"]["path"]
+    json_path = root / manifest["artifacts"].get("derivations_json", {}).get(
+        "path", "linguistics_derivations.json"
+    )
     db_path = root / manifest["artifacts"]["derivations_db"]["path"]
     registry = json.loads(registry_path.read_text(encoding="utf-8")) if registry_path.exists() else {}
     issues: list[str] = []
@@ -42,7 +46,8 @@ def verify_linguistics(
     if not csv_path.exists():
         return [f"missing linguistics targets: {csv_path}"], {}
 
-    rows = merge_targets(load_targets_csv(csv_path), load_derivations_db(db_path))
+    derivations = load_derivations_json(json_path) if json_path.exists() else load_derivations_db(db_path)
+    rows = merge_targets(load_targets_csv(csv_path), derivations)
     live = summarize_linguistics(rows)
     if not registry.get("linguistics_lab"):
         issues.append("linguistics_lab: not ingested — run ingest_linguistics_lab.py")

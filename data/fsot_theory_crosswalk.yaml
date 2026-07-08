@@ -259,6 +259,27 @@ verified_extension_domains:
     labs: [trinary_os, trinary_os_isa, fsotb_asm]
     lean_module: FSOT.Formal.TrinaryOSRoundTripPriors
 
+  Tokenization_Smoke:
+    tier: 33
+    D_eff: 12
+    maps_to_lean: [consciousness, ai, neural]
+    labs: [tokenization, linguistics_lab]
+    lean_module: FSOT.Formal.TokenizationSmokePriors
+
+  Trinary_Hardware_Motif:
+    tier: 33
+    D_eff: 12
+    maps_to_lean: [consciousness, ai, neural]
+    labs: [trinary_hardware, trinary_os]
+    lean_module: FSOT.Formal.TrinaryHardwareMotifPriors
+
+  Intrinsic_LLM_Validators:
+    tier: 33
+    D_eff: 12
+    maps_to_lean: [consciousness, ai, neural]
+    labs: [validators_intrinsic_llm, fic_intelligence_compressor]
+    lean_module: FSOT.Formal.IntrinsicLLMValidatorsPriors
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json
