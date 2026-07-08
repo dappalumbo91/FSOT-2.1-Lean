@@ -1,16 +1,15 @@
-generated_at: '2026-07-07T23:58:49.005643+00:00'
+generated_at: '2026-07-08T00:13:12.668477+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 92
+  lean_formal_modules: 95
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 28
-  tiers_total: 29
-  percent_complete: 96.6
-current_position: "Tier 31 Strict bridges \u2014 iGEM synbio, benchmark_formula eval,\
-  \ trinary ISA rebuild"
+  tiers_complete: 29
+  tiers_total: 30
+  percent_complete: 96.7
+current_position: "Tier 32 Live ingest \u2014 iGEM FASTA, airfoil RMSE, trinary round-trip"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -55,6 +54,7 @@ tiers:
   - GraceCryospherePriors
   - HiggsBranchingPriors
   - HydrologyPriors
+  - IGEMLiveFastaPriors
   - IGEMSyntheticBiologyPriors
   - ImmunologyPriors
   - IntelligenceCompressionPriors
@@ -68,6 +68,7 @@ tiers:
   - MagnetospherePriors
   - MaterialsEngineeringPriors
   - MaterialsSpeciesBridgePriors
+  - MathGeneratorAirfoilRmsePriors
   - MathGeneratorBenchmarkFormulaEvalPriors
   - MathGeneratorPriors
   - MathGeneratorRulesEvalPriors
@@ -102,6 +103,7 @@ tiers:
   - TrinaryOSISARebuildPriors
   - TrinaryOSPortablePriors
   - TrinaryOSPriors
+  - TrinaryOSRoundTripPriors
   - UnifiedDBPriors
   - VibRegisterPriors
   - WeatherPriors
@@ -550,10 +552,31 @@ tiers:
   - FSOT.Formal.IGEMSyntheticBiologyPriors
   - FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors
   - FSOT.Formal.TrinaryOSISARebuildPriors
+- tier: 32
+  name: "Live ingest \u2014 iGEM FASTA, airfoil RMSE, trinary round-trip"
+  status: complete
+  metrics:
+    igem_live_fasta_records: 42
+    igem_live_fasta_parts: 20
+    math_generator_airfoil_rmse_records: 5
+    math_generator_airfoil_rmse_median_error_pct: 0.0
+    trinary_os_round_trip_records: 22
+    trinary_os_round_trip_program_count: 3
+  artifacts:
+  - data/igem_live_fasta_manifest.yaml
+  - data/math_generator_airfoil_rmse_manifest.yaml
+  - data/trinary_os_round_trip_manifest.yaml
+  - vendor/igem/fastas
+  - vendor/math_generator/datasets/airfoil_self_noise.csv
+  - vendor/trinary_os/fixtures
+  - vendor/trinary_os/round_trip
+  - FSOT.Formal.IGEMLiveFastaPriors
+  - FSOT.Formal.MathGeneratorAirfoilRmsePriors
+  - FSOT.Formal.TrinaryOSRoundTripPriors
 next_steps:
-- iGEM live FASTA ingest refresh when parts.igem.org API reachable
-- Airfoil benchmark_formula full dataset RMSE recompute
-- Trinary-OS round-trip FSOTB rebuild smoke from vendor ISA
+- Tier 9 domain-coverage gap closure (pre-existing)
+- Linguistics Lab portable derivations DB bundle
+- Next extension-domain wave from desktop crosswalk
 key_metrics:
   strict_empirical_records: 7941
   smiles_mapped: 1470

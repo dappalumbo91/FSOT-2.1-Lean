@@ -27,14 +27,14 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-07 — Tier 31)
+## Verification status (2026-07-07 — Tier 32)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
 Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
 
-- **31/31 verification tiers complete** (portable vendor bundle + strict-empirical bridge wave)
-- **72+ scientific domains** (35 NeuroLab + 36 extension bridges)
+- **32/32 verification tiers complete** (portable vendor bundle + live-ingest bridge wave)
+- **75+ scientific domains** (35 NeuroLab + 39 extension bridges)
 - **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
@@ -87,6 +87,9 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - iGEM synthetic biology (`FSOT.Formal.IGEMSyntheticBiologyPriors`) — 20 Registry parts strict-empirical + biology_strict operon bridge
 - Math benchmark_formula eval (`FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors`) — live FO-200/210/220 overlay rule eval
 - Trinary OS ISA rebuild (`FSOT.Formal.TrinaryOSISARebuildPriors`) — 27-opcode FSOTB v1/v1.1/v1.2 registry + oracle invariants
+- iGEM live FASTA ingest (`FSOT.Formal.IGEMLiveFastaPriors`) — parts.igem.org FASTA refresh with bundled fallback cache
+- Airfoil RMSE recompute (`FSOT.Formal.MathGeneratorAirfoilRmsePriors`) — FO-210 full-dataset + held-out RMSE live eval
+- Trinary OS round-trip (`FSOT.Formal.TrinaryOSRoundTripPriors`) — vendor FSOTB byte-identical asm→dis→asm smoke
 - Kronos metrology (`FSOT.Formal.KronosPriors`) — 568 runs, best fractional error 1.64e-7
 - Knowledge base (`FSOT.Formal.KnowledgeBasePriors`) — 19,213 catalog formulas; 7,941 strict-empirical bridge (6,921 within 2%); per-formula pass on full catalog
 - Math generator (`FSOT.Formal.MathGeneratorPriors`) — 7 comparisons within 2%

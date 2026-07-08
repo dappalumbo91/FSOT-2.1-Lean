@@ -63,6 +63,26 @@ bundled:
     role: FSOTB v1/v1.1/v1.2 opcode table for portable ISA rebuild verification
     env_override: FSOT_TRINARY_OS_ISA_REGISTRY
 
+  igem_fastas:
+    path: vendor/igem/fastas
+    role: bundled iGEM FASTA cache when parts.igem.org API is blocked
+    env_override: FSOT_IGEM_FASTAS_ROOT
+
+  airfoil_dataset:
+    path: vendor/math_generator/datasets/airfoil_self_noise.csv
+    role: airfoil aeroacoustics CSV for FO-210 benchmark_formula RMSE recompute
+    env_override: FSOT_AIRFOIL_DATASET
+
+  trinary_os_fixtures:
+    path: vendor/trinary_os/fixtures
+    role: canonical hello/call_ret/spawn_join .fsa fixtures for round-trip smoke
+    env_override: FSOT_TRINARY_OS_ROOT
+
+  trinary_os_round_trip:
+    path: vendor/trinary_os/round_trip
+    role: byte-identical FSOTB pass-1/pass-2 round-trip oracle pairs
+    env_override: FSOT_TRINARY_OS_ROOT
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification

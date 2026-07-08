@@ -1,0 +1,25 @@
+# Tier 32 — iGEM live FASTA ingest with bundled fallback.
+version: "1.0"
+updated: "2026-07-07"
+
+source:
+  igem_parts_registry: "vendor/igem/igem_parts_registry.json"
+  igem_fastas: "vendor/igem/fastas"
+
+ingest:
+  script: scripts/ingest_igem_parts_registry.py
+
+build:
+  script: scripts/build_igem_live_fasta_benchmark.py
+  output: data/igem_live_fasta_benchmark.json
+
+lean:
+  generator: scripts/gen_igem_live_fasta_lean.py
+  module: FSOT.Formal.IGEMLiveFastaPriors
+  lean_domain: biological
+  sign_theorem: biological_raw_S_positive
+
+verification:
+  min_records: 40
+  min_parts: 15
+  max_median_error_pct: 5.0

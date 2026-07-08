@@ -1,0 +1,26 @@
+# Tier 32 — FSOTB round-trip rebuild smoke from vendor ISA.
+version: "1.0"
+updated: "2026-07-07"
+
+source:
+  trinary_os_root: "vendor/trinary_os"
+  isa_registry: "vendor/trinary_os/isa/fsotb_opcode_registry.json"
+
+build:
+  script: scripts/build_trinary_os_round_trip_benchmark.py
+  output: data/trinary_os_round_trip_benchmark.json
+
+lean:
+  generator: scripts/gen_trinary_os_round_trip_lean.py
+  module: FSOT.Formal.TrinaryOSRoundTripPriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 20
+  max_median_error_pct: 0.0
+  seeds_hash_hex: "0xc627292ec4eb3b90"
+  panel_S_hex: "0x3fee69c97260701a"
+  trit_word_width: 27
+  num_task_slots: 8
+  opcode_count: 27

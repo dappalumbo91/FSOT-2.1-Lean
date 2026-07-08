@@ -84,6 +84,9 @@ def build_progress() -> dict:
     igem_syn_bio_bench = _load_json(ROOT / "data" / "igem_synthetic_biology_benchmark.json")
     mg_bench_formula_bench = _load_json(ROOT / "data" / "math_generator_benchmark_formula_eval_benchmark.json")
     trinary_isa_bench = _load_json(ROOT / "data" / "trinary_os_isa_rebuild_benchmark.json")
+    igem_live_fasta_bench = _load_json(ROOT / "data" / "igem_live_fasta_benchmark.json")
+    mg_airfoil_rmse_bench = _load_json(ROOT / "data" / "math_generator_airfoil_rmse_benchmark.json")
+    trinary_round_trip_bench = _load_json(ROOT / "data" / "trinary_os_round_trip_benchmark.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -784,12 +787,44 @@ def build_progress() -> dict:
                 "FSOT.Formal.TrinaryOSISARebuildPriors",
             ],
         },
+        {
+            "tier": 32,
+            "name": "Live ingest — iGEM FASTA, airfoil RMSE, trinary round-trip",
+            "status": "complete"
+            if igem_live_fasta_bench.get("record_count", 0) >= 40
+            and igem_live_fasta_bench.get("median_error_pct", 99) <= 1.0
+            and mg_airfoil_rmse_bench.get("record_count", 0) >= 5
+            and mg_airfoil_rmse_bench.get("median_error_pct", 99) <= 1.0
+            and trinary_round_trip_bench.get("record_count", 0) >= 20
+            and trinary_round_trip_bench.get("median_error_pct", 99) == 0
+            else "pending",
+            "metrics": {
+                "igem_live_fasta_records": igem_live_fasta_bench.get("record_count"),
+                "igem_live_fasta_parts": igem_live_fasta_bench.get("part_count"),
+                "math_generator_airfoil_rmse_records": mg_airfoil_rmse_bench.get("record_count"),
+                "math_generator_airfoil_rmse_median_error_pct": mg_airfoil_rmse_bench.get("median_error_pct"),
+                "trinary_os_round_trip_records": trinary_round_trip_bench.get("record_count"),
+                "trinary_os_round_trip_program_count": trinary_round_trip_bench.get("program_count"),
+            },
+            "artifacts": [
+                "data/igem_live_fasta_manifest.yaml",
+                "data/math_generator_airfoil_rmse_manifest.yaml",
+                "data/trinary_os_round_trip_manifest.yaml",
+                "vendor/igem/fastas",
+                "vendor/math_generator/datasets/airfoil_self_noise.csv",
+                "vendor/trinary_os/fixtures",
+                "vendor/trinary_os/round_trip",
+                "FSOT.Formal.IGEMLiveFastaPriors",
+                "FSOT.Formal.MathGeneratorAirfoilRmsePriors",
+                "FSOT.Formal.TrinaryOSRoundTripPriors",
+            ],
+        },
     ]
 
     next_steps = [
-        "iGEM live FASTA ingest refresh when parts.igem.org API reachable",
-        "Airfoil benchmark_formula full dataset RMSE recompute",
-        "Trinary-OS round-trip FSOTB rebuild smoke from vendor ISA",
+        "Tier 9 domain-coverage gap closure (pre-existing)",
+        "Linguistics Lab portable derivations DB bundle",
+        "Next extension-domain wave from desktop crosswalk",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -808,7 +843,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 31 Strict bridges — iGEM synbio, benchmark_formula eval, trinary ISA rebuild",
+        "current_position": "Tier 32 Live ingest — iGEM FASTA, airfoil RMSE, trinary round-trip",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

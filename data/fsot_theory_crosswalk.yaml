@@ -238,6 +238,27 @@ verified_extension_domains:
     labs: [trinary_os, trinary_os_isa]
     lean_module: FSOT.Formal.TrinaryOSISARebuildPriors
 
+  IGEM_Live_FASTA_Ingest:
+    tier: 32
+    D_eff: 14
+    maps_to_lean: [biological, medical]
+    labs: [igem_parts_registry, synthetic_biology_lab]
+    lean_module: FSOT.Formal.IGEMLiveFastaPriors
+
+  Math_Generator_Airfoil_RMSE:
+    tier: 32
+    D_eff: 17
+    maps_to_lean: [particle, mathematical, consciousness]
+    labs: [math_generator_rules, fsot_read_write]
+    lean_module: FSOT.Formal.MathGeneratorAirfoilRmsePriors
+
+  Trinary_OS_Round_Trip:
+    tier: 32
+    D_eff: 12
+    maps_to_lean: [consciousness, ai, neural]
+    labs: [trinary_os, trinary_os_isa, fsotb_asm]
+    lean_module: FSOT.Formal.TrinaryOSRoundTripPriors
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

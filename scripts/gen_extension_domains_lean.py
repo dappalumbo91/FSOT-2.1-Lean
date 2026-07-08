@@ -52,6 +52,9 @@ DEDICATED_GENERATORS = {
     "IGEM_Synthetic_Biology",
     "Math_Generator_Benchmark_Formula_Eval",
     "Trinary_OS_ISA_Rebuild",
+    "IGEM_Live_FASTA_Ingest",
+    "Math_Generator_Airfoil_RMSE",
+    "Trinary_OS_Round_Trip",
 }
 
 LEAN_SIGN = {
@@ -91,6 +94,9 @@ LEAN_SIGN = {
     "IGEM_Synthetic_Biology": ("biological", "biological_raw_S_positive"),
     "Math_Generator_Benchmark_Formula_Eval": ("particle", "particle_raw_S_positive"),
     "Trinary_OS_ISA_Rebuild": ("consciousness", "consciousness_raw_S_positive"),
+    "IGEM_Live_FASTA_Ingest": ("biological", "biological_raw_S_positive"),
+    "Math_Generator_Airfoil_RMSE": ("particle", "particle_raw_S_positive"),
+    "Trinary_OS_Round_Trip": ("consciousness", "consciousness_raw_S_positive"),
 }
 
 

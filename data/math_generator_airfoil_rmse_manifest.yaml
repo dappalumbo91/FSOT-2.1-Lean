@@ -1,0 +1,21 @@
+# Tier 32 — airfoil FO-210 benchmark_formula RMSE recompute.
+version: "1.0"
+updated: "2026-07-07"
+
+source:
+  airfoil_dataset: "vendor/math_generator/datasets/airfoil_self_noise.csv"
+  benchmark_report: "vendor/math_generator/benchmark_reports/airfoil_three_seed_report.json"
+
+build:
+  script: scripts/build_math_generator_airfoil_rmse_benchmark.py
+  output: data/math_generator_airfoil_rmse_benchmark.json
+
+lean:
+  generator: scripts/gen_math_generator_airfoil_rmse_lean.py
+  module: FSOT.Formal.MathGeneratorAirfoilRmsePriors
+  lean_domain: particle
+  sign_theorem: particle_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 1.0

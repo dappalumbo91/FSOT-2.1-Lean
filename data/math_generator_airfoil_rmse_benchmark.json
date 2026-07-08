@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-07-08T00:13:07.080859+00:00",
+  "source": [
+    "vendor/math_generator/datasets/airfoil_self_noise.csv",
+    "vendor/math_generator/benchmark_reports/airfoil_three_seed_report.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "mathematical",
+    "consciousness"
+  ],
+  "D_eff": 17,
+  "rule_id": "FO-210",
+  "held_out_source": "fsot_read",
+  "record_count": 5,
+  "observable_count": 5,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "math_generator_airfoil_rmse",
+      "property": "full_dataset_rmse",
+      "rule_id": "FO-210",
+      "computed": 5.96094084765346,
+      "measured": 5.96094084765346,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula_full_dataset"
+    },
+    {
+      "lab": "math_generator_airfoil_rmse",
+      "property": "held_out_test_rmse",
+      "rule_id": "FO-210",
+      "computed": 6.247387360026391,
+      "measured": 6.247387360026391,
+      "error_pct": 0.0,
+      "eval_kind": "fsot_read_live_recompute",
+      "train_row_count": 1202,
+      "test_row_count": 301
+    },
+    {
+      "lab": "math_generator_airfoil_rmse",
+      "property": "row_count",
+      "rule_id": "FO-210",
+      "computed": 1503,
+      "measured": 1503,
+      "error_pct": 0.0,
+      "eval_kind": "dataset_shape"
+    },
+    {
+      "lab": "math_generator_airfoil_rmse",
+      "property": "dataset_artifact",
+      "rule_id": "FO-210",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "eval_kind": "artifact_present"
+    },
+    {
+      "lab": "math_generator_airfoil_rmse",
+      "property": "report_artifact",
+      "rule_id": "FO-210",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "eval_kind": "artifact_present"
+    }
+  ]
+}

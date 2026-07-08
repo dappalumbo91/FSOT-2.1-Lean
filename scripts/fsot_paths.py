@@ -196,6 +196,40 @@ def igem_parts_registry_path(*, require: bool = True) -> Path:
     return path
 
 
+def igem_fastas_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_IGEM_FASTAS_ROOT",
+        VENDOR_ROOT / "igem" / "fastas",
+    )
+    if path is None and require:
+        raise FileNotFoundError("iGEM FASTA cache not found.")
+    assert path is not None
+    return path
+
+
+def airfoil_dataset_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_AIRFOIL_DATASET",
+        VENDOR_ROOT / "math_generator" / "datasets" / "airfoil_self_noise.csv",
+        _DESKTOP / "New folder" / "fsot-read-write" / "examples" / "airfoil_self_noise.csv",
+    )
+    if path is None and require:
+        raise FileNotFoundError("airfoil_self_noise.csv not found.")
+    assert path is not None
+    return path
+
+
+def fsot_read_path(*, require: bool = False) -> Path | None:
+    path = _resolve(
+        "FSOT_READ_PATH",
+        _DESKTOP / "New folder" / "fsot-read-write" / "target" / "release" / "fsot-read.exe",
+        _DESKTOP / "New folder" / "fsot-read-write" / "target" / "debug" / "fsot-read.exe",
+    )
+    if path is None and require:
+        raise FileNotFoundError("fsot-read not found. Set FSOT_READ_PATH.")
+    return path
+
+
 def math_generator_benchmark_reports_root(*, require: bool = True) -> Path:
     path = _resolve(
         "FSOT_MATH_GENERATOR_BENCHMARK_REPORTS",

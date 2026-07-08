@@ -479,6 +479,45 @@ extension_domains:
     lean_module: FSOT.Formal.TrinaryOSISARebuildPriors
     note: "Full FSOTB v1/v1.1/v1.2 ISA opcode registry + oracle rebuild invariants"
 
+  IGEM_Live_FASTA_Ingest:
+    tier: 32
+    D_eff: 14
+    delta_psi: 0.65
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, medical]
+    build_script: scripts/build_igem_live_fasta_benchmark.py
+    manifest: data/igem_live_fasta_manifest.yaml
+    benchmark_data: data/igem_live_fasta_benchmark.json
+    lean_module: FSOT.Formal.IGEMLiveFastaPriors
+    note: "Live parts.igem.org FASTA ingest with vendor bundled fallback cache"
+
+  Math_Generator_Airfoil_RMSE:
+    tier: 32
+    D_eff: 17
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, mathematical, consciousness]
+    build_script: scripts/build_math_generator_airfoil_rmse_benchmark.py
+    manifest: data/math_generator_airfoil_rmse_manifest.yaml
+    benchmark_data: data/math_generator_airfoil_rmse_benchmark.json
+    lean_module: FSOT.Formal.MathGeneratorAirfoilRmsePriors
+    note: "FO-210 airfoil benchmark_formula full-dataset and held-out RMSE recompute"
+
+  Trinary_OS_Round_Trip:
+    tier: 32
+    D_eff: 12
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_trinary_os_round_trip_benchmark.py
+    manifest: data/trinary_os_round_trip_manifest.yaml
+    benchmark_data: data/trinary_os_round_trip_benchmark.json
+    lean_module: FSOT.Formal.TrinaryOSRoundTripPriors
+    note: "Vendor FSOTB round-trip byte-identical smoke from ISA + fixtures"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

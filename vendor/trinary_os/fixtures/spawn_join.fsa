@@ -1,0 +1,65 @@
+; Tier-3 (v1.2) regression fixture: exercises SPAWN-label sugar, JOIN,
+; per-task HALT, and the Tier-2 EMIT_TAG syscall from inside spawned
+; tasks.
+;
+; Per FSOTB_TIER3_ABI.md §5, `SPAWN task_a` expands to:
+;     IMM   r24, lo, hi    ; lo/hi = signed_imm14 of `task_a` instr index
+;     SPAWN r24
+;
+; SPAWN pushes the assigned slot id onto the caller's value stack.
+; JOIN  pops the spawned task's top value (its emitted result word).
+;
+; Expected emission sequence (order across tasks may interleave, but
+; both task_a and task_b complete before main's final RESULT):
+;     RESULT tag=10 val=100
+;     RESULT tag=20 val=50
+;     RESULT tag=99 val=33
+
+.version 1
+.entry main
+.panel particle_physics
+
+.code
+main:
+    ; ---- spawn task_a ----------------------------------------------
+    SPAWN  task_a
+    POP_T  r1          ; r1 = slot id of task_a
+
+    ; ---- spawn task_b ----------------------------------------------
+    SPAWN  task_b
+    POP_T  r2          ; r2 = slot id of task_b
+
+    ; ---- join both -------------------------------------------------
+    JOIN   r1          ; blocks until task_a halts; pops its top word
+    POP_T  r3
+    JOIN   r2
+    POP_T  r4
+
+    ; ---- main's own RESULT tag=99 val=33 ---------------------------
+    IMM    r5, 33, 0
+    IMM    r6, 99, 0
+    PUSH_T r5
+    PUSH_T r6
+    IMM    r7, 1, 0
+    SYSCALL r7
+    HALT
+
+task_a:
+    ; RESULT tag=10 val=100
+    IMM    r0, 100, 0
+    IMM    r1, 10,  0
+    PUSH_T r0
+    PUSH_T r1
+    IMM    r2, 1,   0
+    SYSCALL r2
+    HALT
+
+task_b:
+    ; RESULT tag=20 val=50
+    IMM    r0, 50,  0
+    IMM    r1, 20,  0
+    PUSH_T r0
+    PUSH_T r1
+    IMM    r2, 1,   0
+    SYSCALL r2
+    HALT

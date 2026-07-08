@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-07-08T00:13:07.275621+00:00",
+  "source": [
+    "vendor/trinary_os/isa/fsotb_opcode_registry.json",
+    "vendor/trinary_os"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai",
+    "neural"
+  ],
+  "D_eff": 12,
+  "opcode_count": 27,
+  "program_count": 3,
+  "record_count": 22,
+  "observable_count": 22,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "hello_file_size",
+      "abi_tier": "v1_0",
+      "computed": 264,
+      "measured": 264,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "hello_instructions",
+      "abi_tier": "v1_0",
+      "computed": 2,
+      "measured": 2,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "hello_blob_size",
+      "abi_tier": "v1_0",
+      "computed": 264,
+      "measured": 264,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "hello_round_trip_byte_identical",
+      "abi_tier": "v1_0",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "hello_mnemonic_registry_coverage",
+      "abi_tier": "v1_0",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "hello_panel_S_hex",
+      "computed": "0x3fee69c97260701a",
+      "measured": "0x3fee69c97260701a",
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "call_ret_file_size",
+      "abi_tier": "v1_1",
+      "computed": 312,
+      "measured": 312,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "call_ret_instructions",
+      "abi_tier": "v1_1",
+      "computed": 10,
+      "measured": 10,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "call_ret_blob_size",
+      "abi_tier": "v1_1",
+      "computed": 312,
+      "measured": 312,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "call_ret_round_trip_byte_identical",
+      "abi_tier": "v1_1",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "call_ret_mnemonic_registry_coverage",
+      "abi_tier": "v1_1",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "call_ret_panel_S_hex",
+      "computed": "0x3fee69c97260701a",
+      "measured": "0x3fee69c97260701a",
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "spawn_join_file_size",
+      "abi_tier": "v1_2",
+      "computed": 440,
+      "measured": 440,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "spawn_join_instructions",
+      "abi_tier": "v1_2",
+      "computed": 31,
+      "measured": 31,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "spawn_join_blob_size",
+      "abi_tier": "v1_2",
+      "computed": 440,
+      "measured": 440,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "spawn_join_round_trip_byte_identical",
+      "abi_tier": "v1_2",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "spawn_join_mnemonic_registry_coverage",
+      "abi_tier": "v1_2",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "spawn_join_panel_S_hex",
+      "computed": "0x3fee69c97260701a",
+      "measured": "0x3fee69c97260701a",
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "seeds_hash_hex",
+      "computed": "0xc627292ec4eb3b90",
+      "measured": "0xc627292ec4eb3b90",
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "word_width_trits",
+      "computed": 27,
+      "measured": 27,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "num_task_slots",
+      "computed": 8,
+      "measured": 8,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_round_trip",
+      "property": "opcode_count",
+      "computed": 27,
+      "measured": 27,
+      "error_pct": 0.0
+    }
+  ]
+}

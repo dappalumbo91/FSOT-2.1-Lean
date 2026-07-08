@@ -1,0 +1,19 @@
+; tests/hello.fsa
+;
+; Canonical "hello" FSOTB program. Replicates the byte layout produced
+; by tools/build_hello_fsotb.py:
+;   - particle_physics_input panel (no overrides needed - the preset
+;     already encodes d_eff=5, recent_hits=0, delta_psi=1, delta_theta=1,
+;     observed=true)
+;   - one EVAL_PANEL r0, panel=0, tag=42
+;   - HALT
+;
+; Expected wire output: 264 bytes total, panel S = 0x3fee69c97260701a.
+.version 1
+.entry start
+.panel particle_physics
+
+.code
+start:
+    EVAL_PANEL r0, panel=0, tag=42
+    HALT

@@ -1,0 +1,29 @@
+; Tier-2 (v1.1) regression fixture: exercises CALL-label sugar, RET,
+; PUSH_T / POP_T, and SYSCALL EMIT_TAG (=1).
+;
+; Per FSOTB_TIER2_ABI.md §5.2, `CALL emit_42` expands to:
+;     IMM r24, lo, hi    ; lo/hi = signed_imm14 of `emit_42` instr index
+;     CALL r24
+;
+; CALL fires only on collapsed targets (trit != 0). Our IMM-loaded
+; register holds a definite, nonzero PC index, so the gate fires.
+
+.version 1
+.entry start
+.panel particle_physics
+
+.code
+start:
+    ; Push value=42 (low 7 trits, high=0), tag=7 onto the value stack.
+    IMM    r0, 42, 0
+    IMM    r1, 7,  0
+    PUSH_T r0
+    PUSH_T r1
+    CALL   emit_42
+    HALT
+
+emit_42:
+    ; SYSCALL 1 = EMIT_TAG: pops [val, tag], emits "RESULT tag=7 val=42".
+    IMM     r2, 1, 0
+    SYSCALL r2
+    RET
