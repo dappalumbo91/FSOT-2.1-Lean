@@ -1,8 +1,8 @@
-generated_at: '2026-07-08T16:35:48.807968+00:00'
+generated_at: '2026-07-08T16:41:20.283304+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 50
-  total_scientific_domains_covered: 86
+  extension_domains: 53
+  total_scientific_domains_covered: 89
   total_empirical_records: 307820
   domains_target_band_2pct: 34
   domains_sign_mismatch: 1
@@ -12,7 +12,7 @@ summary:
     C_thin: 6
     D_needs_work: 0
     unverified: 1
-  lean_formal_modules: 106
+  lean_formal_modules: 109
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -688,6 +688,24 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: C_thin
   lean_module: FSOT.Formal.PredictionRederivationPriors
+- domain: VL_Distill_Atlas
+  tier: 37
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.VlDistillAtlasPriors
+- domain: Rust_Lean_Bridge
+  tier: 37
+  record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.RustLeanBridgePriors
+- domain: Bibliography_Lean_Corpus
+  tier: 37
+  record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.BibliographyLeanCorpusPriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572

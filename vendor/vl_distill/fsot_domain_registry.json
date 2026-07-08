@@ -1,0 +1,296 @@
+{
+  "theory": "Fluid Space Time Omni Theory",
+  "architect": "Damian Arthur Palumbo",
+  "schema_version": "1.0",
+  "domain_count": 35,
+  "domains": [
+    {
+      "name": "Particle_Physics",
+      "D_eff": 5,
+      "hits": 0,
+      "delta_psi": "1",
+      "observed": true,
+      "C_tag": "gamma/phi"
+    },
+    {
+      "name": "Quantum_Mechanics",
+      "D_eff": 6,
+      "hits": 0,
+      "delta_psi": "1",
+      "observed": true,
+      "C_tag": "gamma/phi"
+    },
+    {
+      "name": "Atomic_Physics",
+      "D_eff": 7,
+      "hits": 0,
+      "delta_psi": "0.5",
+      "observed": true,
+      "C_tag": "e/pi"
+    },
+    {
+      "name": "Physical_Chemistry",
+      "D_eff": 8,
+      "hits": 0,
+      "delta_psi": "0.5",
+      "observed": true,
+      "C_tag": "e/pi"
+    },
+    {
+      "name": "Chemistry",
+      "D_eff": 8,
+      "hits": 0,
+      "delta_psi": "0.5",
+      "observed": true,
+      "C_tag": "e/pi"
+    },
+    {
+      "name": "Electromagnetism",
+      "D_eff": 9,
+      "hits": 0,
+      "delta_psi": "0.7",
+      "observed": true,
+      "C_tag": "e/pi"
+    },
+    {
+      "name": "Molecular_Chemistry",
+      "D_eff": 9,
+      "hits": 0,
+      "delta_psi": "0.4",
+      "observed": true,
+      "C_tag": "ln(pi)/e"
+    },
+    {
+      "name": "Optics",
+      "D_eff": 10,
+      "hits": 0,
+      "delta_psi": "0.6",
+      "observed": true,
+      "C_tag": "pi/e"
+    },
+    {
+      "name": "Acoustics",
+      "D_eff": 10,
+      "hits": 0,
+      "delta_psi": "0.3",
+      "observed": true,
+      "C_tag": "A_BLEED/sqrt2"
+    },
+    {
+      "name": "Quantum_Computing",
+      "D_eff": 11,
+      "hits": 0,
+      "delta_psi": "1",
+      "observed": true,
+      "C_tag": "sqrt2/e"
+    },
+    {
+      "name": "Quantum_Optics",
+      "D_eff": 11,
+      "hits": 0,
+      "delta_psi": "0.6",
+      "observed": true,
+      "C_tag": "pi/e"
+    },
+    {
+      "name": "Biology",
+      "D_eff": 12,
+      "hits": 0,
+      "delta_psi": "0.05",
+      "observed": false,
+      "C_tag": "ln(phi)/sqrt2"
+    },
+    {
+      "name": "Thermodynamics",
+      "D_eff": 13,
+      "hits": 0,
+      "delta_psi": "0.4",
+      "observed": true,
+      "C_tag": "gamma/e"
+    },
+    {
+      "name": "Biochemistry",
+      "D_eff": 13,
+      "hits": 0,
+      "delta_psi": "0.1",
+      "observed": false,
+      "C_tag": "ln(phi)/sqrt2"
+    },
+    {
+      "name": "Neuroscience",
+      "D_eff": 14,
+      "hits": 1,
+      "delta_psi": "0.1",
+      "observed": true,
+      "C_tag": "C_FACTOR"
+    },
+    {
+      "name": "Condensed_Matter",
+      "D_eff": 14,
+      "hits": 0,
+      "delta_psi": "0.5",
+      "observed": true,
+      "C_tag": "A_BLEED/e"
+    },
+    {
+      "name": "Fluid_Dynamics",
+      "D_eff": 15,
+      "hits": 1,
+      "delta_psi": "0.9",
+      "observed": false,
+      "C_tag": "A_BLEED/phi"
+    },
+    {
+      "name": "Nuclear_Physics",
+      "D_eff": 15,
+      "hits": 1,
+      "delta_psi": "1",
+      "observed": true,
+      "C_tag": "alpha/phi"
+    },
+    {
+      "name": "Ecology",
+      "D_eff": 15,
+      "hits": 1,
+      "delta_psi": "0.2",
+      "observed": false,
+      "C_tag": "ln(phi)/phi"
+    },
+    {
+      "name": "Meteorology",
+      "D_eff": 16,
+      "hits": 2,
+      "delta_psi": "0.8",
+      "observed": false,
+      "C_tag": "CHAOS"
+    },
+    {
+      "name": "Materials_Science",
+      "D_eff": 16,
+      "hits": 0,
+      "delta_psi": "0.5",
+      "observed": true,
+      "C_tag": "A_IN/e"
+    },
+    {
+      "name": "Psychology",
+      "D_eff": 16,
+      "hits": 1,
+      "delta_psi": "0.3",
+      "observed": true,
+      "C_tag": "P_BASE"
+    },
+    {
+      "name": "Atmospheric_Physics",
+      "D_eff": 17,
+      "hits": 2,
+      "delta_psi": "0.8",
+      "observed": false,
+      "C_tag": "CHAOS"
+    },
+    {
+      "name": "Oceanography",
+      "D_eff": 17,
+      "hits": 1,
+      "delta_psi": "0.7",
+      "observed": false,
+      "C_tag": "A_IN/phi"
+    },
+    {
+      "name": "Seismology",
+      "D_eff": 18,
+      "hits": 2,
+      "delta_psi": "1.2",
+      "observed": false,
+      "C_tag": "CHAOS/2"
+    },
+    {
+      "name": "Sociology",
+      "D_eff": 18,
+      "hits": 3,
+      "delta_psi": "1.5",
+      "observed": true,
+      "C_tag": "gamma/ln(pi)"
+    },
+    {
+      "name": "High_Energy_Physics",
+      "D_eff": 19,
+      "hits": 1,
+      "delta_psi": "1.2",
+      "observed": true,
+      "C_tag": "alpha/sqrt2"
+    },
+    {
+      "name": "Geophysics",
+      "D_eff": 19,
+      "hits": 2,
+      "delta_psi": "1",
+      "observed": false,
+      "C_tag": "CHAOS"
+    },
+    {
+      "name": "Astronomy",
+      "D_eff": 20,
+      "hits": 1,
+      "delta_psi": "1",
+      "observed": true,
+      "C_tag": "pi^2/phi"
+    },
+    {
+      "name": "Economics",
+      "D_eff": 20,
+      "hits": 3,
+      "delta_psi": "1.5",
+      "observed": true,
+      "C_tag": "gamma/ln(pi)"
+    },
+    {
+      "name": "Planetary_Science",
+      "D_eff": 21,
+      "hits": 1,
+      "delta_psi": "1",
+      "observed": true,
+      "C_tag": "pi^2/phi"
+    },
+    {
+      "name": "Quantum_Gravity",
+      "D_eff": 22,
+      "hits": 0,
+      "delta_psi": "1",
+      "observed": false,
+      "C_tag": "1/phi^2"
+    },
+    {
+      "name": "Particle_Astrophysics",
+      "D_eff": 23,
+      "hits": 1,
+      "delta_psi": "1",
+      "observed": true,
+      "C_tag": "pi^2/e"
+    },
+    {
+      "name": "Astrophysics",
+      "D_eff": 24,
+      "hits": 1,
+      "delta_psi": "1",
+      "observed": true,
+      "C_tag": "pi^2/phi"
+    },
+    {
+      "name": "Cosmology",
+      "D_eff": 25,
+      "hits": 1,
+      "delta_psi": "0.003",
+      "observed": false,
+      "C_tag": "C_COSM"
+    }
+  ],
+  "legacy_map": {
+    "General": "Chemistry",
+    "Genetics": "Biology",
+    "Chaos": "Fluid_Dynamics",
+    "Particle Physics": "Particle_Physics",
+    "Condensed Matter": "Condensed_Matter",
+    "Seismology": "Seismology"
+  }
+}

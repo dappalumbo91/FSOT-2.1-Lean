@@ -1,16 +1,16 @@
-generated_at: '2026-07-08T16:35:48.011169+00:00'
+generated_at: '2026-07-08T16:41:19.472233+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 106
+  lean_formal_modules: 109
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 34
-  tiers_total: 34
+  tiers_complete: 35
+  tiers_total: 35
   percent_complete: 100.0
-current_position: "Tier 36 Self-contained unit \u2014 portable formula corpus, aggregate\
-  \ DB, vendor audit"
+current_position: "Tier 37 Desktop crosswalk \u2014 VL distill atlas, Rust Lean bridge,\
+  \ Bibliography corpus"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -25,6 +25,7 @@ tiers:
   artifacts:
   - AetherPrimePriors
   - ArxivPrimitivesV14Priors
+  - BibliographyLeanCorpusPriors
   - BinaryDecoderRendleshamPriors
   - BiologicalCudaPhysarumPriors
   - BiologyStrictEmpiricalPriors
@@ -99,6 +100,7 @@ tiers:
   - PredictionRederivationPriors
   - ProteinPriors
   - QuantumMaterialsPriors
+  - RustLeanBridgePriors
   - SeismologyDeepPriors
   - SeismologyPriors
   - SmallBodyOrbitsPriors
@@ -118,6 +120,7 @@ tiers:
   - TrinaryOSRoundTripPriors
   - UnifiedDBPriors
   - VibRegisterPriors
+  - VlDistillAtlasPriors
   - WeatherPriors
 - tier: 7
   name: Experiment synthesis (neuron, Aether, magic circle, LLM inventory)
@@ -221,7 +224,7 @@ tiers:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 84
+    scientific_domains_covered: 86
     expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -644,7 +647,7 @@ tiers:
   metrics:
     formula_corpus_portable: true
     formula_corpus_records_hint: 7941
-    extension_domain_count: 50
+    extension_domain_count: 53
     fsot_aggregate_unified_db_records: 8
     prediction_rederivation_records: 10
     precision_candidates_over_1pct: 0
@@ -656,10 +659,29 @@ tiers:
   - data/portable_vendor_coverage_audit.json
   - FSOT.Formal.FsotAggregateUnifiedDbPriors
   - FSOT.Formal.PredictionRederivationPriors
+- tier: 37
+  name: "Desktop crosswalk \u2014 VL distill atlas, Rust Lean bridge, Bibliography\
+    \ corpus"
+  status: complete
+  metrics:
+    vl_distill_atlas_records: 10
+    rust_lean_bridge_records: 9
+    bibliography_lean_corpus_records: 9
+    extension_domain_count: 53
+  artifacts:
+  - data/vl_distill_atlas_manifest.yaml
+  - data/rust_lean_bridge_manifest.yaml
+  - data/bibliography_lean_corpus_manifest.yaml
+  - vendor/vl_distill
+  - vendor/rust_lean_bridge
+  - vendor/bibliography_corpus
+  - FSOT.Formal.VlDistillAtlasPriors
+  - FSOT.Formal.RustLeanBridgePriors
+  - FSOT.Formal.BibliographyLeanCorpusPriors
 next_steps:
 - Extension domain precision tightening (median error < 1% wave)
-- Remaining desktop crosswalk themes (fsot_20_code_vl_distill, rust_lean_bridge)
 - Knowledge-base per-formula portable bundle
+- Public API extension domains (NIST CODATA, GBIF, NOAA, Exoplanet Archive, OpenAlex)
 key_metrics:
   strict_empirical_records: 7941
   smiles_mapped: 1470

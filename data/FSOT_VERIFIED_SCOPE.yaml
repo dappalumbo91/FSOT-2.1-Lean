@@ -1,4 +1,4 @@
-generated_at: '2026-07-08T16:35:49.076912+00:00'
+generated_at: '2026-07-08T16:41:20.613272+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 106
+  lean_formal_modules: 109
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 34
-  tiers_total: 34
+  tiers_complete: 35
+  tiers_total: 35
   percent_complete: 100.0
-current_tier: Tier 36 Self-contained unit — portable formula corpus, aggregate DB,
-  vendor audit
+current_tier: Tier 37 Desktop crosswalk — VL distill atlas, Rust Lean bridge, Bibliography
+  corpus
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -424,7 +424,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: true
-scientific_domains_covered: 86
+scientific_domains_covered: 89
 total_empirical_records: 307820
 tier_coverage:
 - tier: 1
@@ -440,6 +440,7 @@ tier_coverage:
   artifacts:
   - AetherPrimePriors
   - ArxivPrimitivesV14Priors
+  - BibliographyLeanCorpusPriors
   - BinaryDecoderRendleshamPriors
   - BiologicalCudaPhysarumPriors
   - BiologyStrictEmpiricalPriors
@@ -514,6 +515,7 @@ tier_coverage:
   - PredictionRederivationPriors
   - ProteinPriors
   - QuantumMaterialsPriors
+  - RustLeanBridgePriors
   - SeismologyDeepPriors
   - SeismologyPriors
   - SmallBodyOrbitsPriors
@@ -533,6 +535,7 @@ tier_coverage:
   - TrinaryOSRoundTripPriors
   - UnifiedDBPriors
   - VibRegisterPriors
+  - VlDistillAtlasPriors
   - WeatherPriors
 - tier: 7
   name: Experiment synthesis (neuron, Aether, magic circle, LLM inventory)
@@ -636,7 +639,7 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 84
+    scientific_domains_covered: 86
     expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -1056,7 +1059,7 @@ tier_coverage:
   metrics:
     formula_corpus_portable: true
     formula_corpus_records_hint: 7941
-    extension_domain_count: 50
+    extension_domain_count: 53
     fsot_aggregate_unified_db_records: 8
     prediction_rederivation_records: 10
     precision_candidates_over_1pct: 0
@@ -1068,6 +1071,24 @@ tier_coverage:
   - data/portable_vendor_coverage_audit.json
   - FSOT.Formal.FsotAggregateUnifiedDbPriors
   - FSOT.Formal.PredictionRederivationPriors
+- tier: 37
+  name: Desktop crosswalk — VL distill atlas, Rust Lean bridge, Bibliography corpus
+  status: complete
+  metrics:
+    vl_distill_atlas_records: 10
+    rust_lean_bridge_records: 9
+    bibliography_lean_corpus_records: 9
+    extension_domain_count: 53
+  artifacts:
+  - data/vl_distill_atlas_manifest.yaml
+  - data/rust_lean_bridge_manifest.yaml
+  - data/bibliography_lean_corpus_manifest.yaml
+  - vendor/vl_distill
+  - vendor/rust_lean_bridge
+  - vendor/bibliography_corpus
+  - FSOT.Formal.VlDistillAtlasPriors
+  - FSOT.Formal.RustLeanBridgePriors
+  - FSOT.Formal.BibliographyLeanCorpusPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -1369,6 +1390,24 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: C_thin
   lean_module: FSOT.Formal.PredictionRederivationPriors
+- domain: VL_Distill_Atlas
+  tier: 37
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.VlDistillAtlasPriors
+- domain: Rust_Lean_Bridge
+  tier: 37
+  record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.RustLeanBridgePriors
+- domain: Bibliography_Lean_Corpus
+  tier: 37
+  record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.BibliographyLeanCorpusPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1890,9 +1929,42 @@ theory_crosswalk:
     - fsot_aggregate
     - fsot_compute
     lean_module: FSOT.Formal.PredictionRederivationPriors
+  VL_Distill_Atlas:
+    tier: 37
+    D_eff: 12
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - vl_distill
+    - math_generator
+    lean_module: FSOT.Formal.VlDistillAtlasPriors
+  Rust_Lean_Bridge:
+    tier: 37
+    D_eff: 8
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    labs:
+    - rust_lean_bridge
+    - lean_bridge
+    lean_module: FSOT.Formal.RustLeanBridgePriors
+  Bibliography_Lean_Corpus:
+    tier: 37
+    D_eff: 13
+    maps_to_lean:
+    - particle
+    - mathematical
+    labs:
+    - bibliography_corpus
+    - lean_bridge
+    lean_module: FSOT.Formal.BibliographyLeanCorpusPriors
 lean_formal_modules:
 - AetherPrimePriors
 - ArxivPrimitivesV14Priors
+- BibliographyLeanCorpusPriors
 - BinaryDecoderRendleshamPriors
 - BiologicalCudaPhysarumPriors
 - BiologyStrictEmpiricalPriors
@@ -1966,6 +2038,7 @@ lean_formal_modules:
 - PredictionRederivationPriors
 - ProteinPriors
 - QuantumMaterialsPriors
+- RustLeanBridgePriors
 - SeismologyDeepPriors
 - SeismologyPriors
 - SmallBodyOrbitsPriors
@@ -1985,6 +2058,7 @@ lean_formal_modules:
 - TrinaryOSRoundTripPriors
 - UnifiedDBPriors
 - VibRegisterPriors
+- VlDistillAtlasPriors
 - WeatherPriors
 certificate_path: data/certificate.json
 reproduce: python scripts/fsot_verification_runner.py

@@ -148,6 +148,21 @@ bundled:
     role: 66-prediction re-derivation arc summary (zero free parameters)
     env_override: FSOT_PREDICTION_REDERIVATION_SUMMARY
 
+  vl_distill_atlas:
+    path: vendor/vl_distill
+    role: VL distill atlas summary, domain registry, dataset meta, competitive report
+    env_override: FSOT_VL_DISTILL_ROOT
+
+  rust_lean_bridge:
+    path: vendor/rust_lean_bridge
+    role: Rust no_std bare-metal kernel + Lean bridge summary
+    env_override: FSOT_RUST_LEAN_BRIDGE_ROOT
+
+  bibliography_corpus:
+    path: vendor/bibliography_corpus
+    role: FSOT Bibliography axiomatic Lean corpus + parsed summary
+    env_override: FSOT_BIBLIOGRAPHY_CORPUS_ROOT
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification

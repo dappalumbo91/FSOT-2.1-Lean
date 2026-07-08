@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "source": "vendor/rust_lean_bridge/main.rs",
+  "kernel": "FSOT 2.0 Bare-Metal Observer Kernel POC",
+  "no_std": true,
+  "boot_domain": "KernelInit",
+  "boot_d_eff": 8,
+  "boot_delta_psi": 0.7,
+  "boot_observed": true,
+  "boot_recent_hits": 0.0,
+  "boot_scalar": 0.09928895626861721,
+  "boot_scalar_positive": true,
+  "K": 0.4202216641606967,
+  "atlas_K_FSOT": 0.4202216641606967,
+  "constant_count": 16,
+  "requires_lean_bridge": true,
+  "lean_bridge_module": "FSOT.Formal.LeanProofsBridge"
+}

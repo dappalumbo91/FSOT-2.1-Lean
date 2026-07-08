@@ -1,0 +1,20 @@
+# Tier 37 — Rust no_std bare-metal → Lean bridge crosswalk.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  rust_lean_bridge_root: "vendor/rust_lean_bridge"
+
+build:
+  script: scripts/build_rust_lean_bridge_benchmark.py
+  output: data/rust_lean_bridge_benchmark.json
+
+lean:
+  generator: scripts/gen_rust_lean_bridge_lean.py
+  module: FSOT.Formal.RustLeanBridgePriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 1.0

@@ -209,6 +209,9 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.OmniTheoryGenesisPriors",
                 "FSOT.Formal.FsotAggregateUnifiedDbPriors",
                 "FSOT.Formal.PredictionRederivationPriors",
+                "FSOT.Formal.VlDistillAtlasPriors",
+                "FSOT.Formal.RustLeanBridgePriors",
+                "FSOT.Formal.BibliographyLeanCorpusPriors",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -820,6 +823,9 @@ def main() -> int:
                 "build_omni_theory_genesis_benchmark.py",
                 "build_fsot_aggregate_unified_db_benchmark.py",
                 "build_prediction_rederivation_benchmark.py",
+                "build_vl_distill_atlas_benchmark.py",
+                "build_rust_lean_bridge_benchmark.py",
+                "build_bibliography_lean_corpus_benchmark.py",
                 "ingest_climate_ncei_chunked.py",
                 "build_climate_observed_benchmark.py",
             ):
@@ -931,6 +937,9 @@ def main() -> int:
             (None, "gen_omni_theory_genesis_lean.py", "OmniTheoryGenesisPriors.lean generation failed", None),
             (None, "gen_fsot_aggregate_unified_db_lean.py", "FsotAggregateUnifiedDbPriors.lean generation failed", None),
             (None, "gen_prediction_rederivation_lean.py", "PredictionRederivationPriors.lean generation failed", None),
+            (None, "gen_vl_distill_atlas_lean.py", "VlDistillAtlasPriors.lean generation failed", None),
+            (None, "gen_rust_lean_bridge_lean.py", "RustLeanBridgePriors.lean generation failed", None),
+            (None, "gen_bibliography_lean_corpus_lean.py", "BibliographyLeanCorpusPriors.lean generation failed", None),
         ]
             for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
                 if ingest_name:

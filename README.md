@@ -27,14 +27,14 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-08 — Tier 36)
+## Verification status (2026-07-08 — Tier 37)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
 Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
 
-- **36/36 verification tiers complete** (self-contained formula corpus + aggregate DB + vendor audit)
-- **86+ scientific domains** (35 NeuroLab + 50 extension bridges)
+- **37/37 verification tiers complete** (VL distill atlas + Rust Lean bridge + Bibliography corpus)
+- **89 scientific domains** (35 NeuroLab + 53 extension bridges; Seismology counted once in NeuroLab)
 - **Self-contained clone-and-verify**: `strict_empirical.jsonl` (7,941 formulas) bundled under `vendor/formula_corpus/`
 - **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)

@@ -1,0 +1,30 @@
+{
+  "count": 1584,
+  "min_coherence": 0.45,
+  "min_lean_score": 0.0,
+  "min_stage": 0.0,
+  "require_rigor": true,
+  "golden_only": false,
+  "max_golden_error_pct": 1.0,
+  "strict_golden_only": true,
+  "include_cot": false,
+  "golden_rows": 1500,
+  "cot_rows": 0,
+  "harness_trace_rows": 84,
+  "harness_aligned": true,
+  "max_golden_rows": 1500,
+  "theorem_count": 37,
+  "priority_theorems": [
+    "exact_S_eq",
+    "quirkMod_unobserved_identity",
+    "inter_domain_boundary_recurrence",
+    "chem_denormalize",
+    "bio_denormalize",
+    "cosmo_quirk_identity",
+    "psi_con_eq_one_minus_inv_e",
+    "neuro_chem_same_normalizer",
+    "measurement_chart_transition_limit",
+    "chart_denormalize_scale",
+    "fractal_shell_nonneg"
+  ]
+}

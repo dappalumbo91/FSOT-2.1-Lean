@@ -1,0 +1,20 @@
+# Tier 37 — FSOT Bibliography Lean corpus crosswalk.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  bibliography_root: "vendor/bibliography_corpus"
+
+build:
+  script: scripts/build_bibliography_lean_corpus_benchmark.py
+  output: data/bibliography_lean_corpus_benchmark.json
+
+lean:
+  generator: scripts/gen_bibliography_lean_corpus_lean.py
+  module: FSOT.Formal.BibliographyLeanCorpusPriors
+  lean_domain: particle
+  sign_theorem: particle_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 1.0

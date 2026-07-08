@@ -1,0 +1,20 @@
+# Tier 37 — VL distill atlas + domain registry crosswalk.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  vl_distill_root: "vendor/vl_distill"
+
+build:
+  script: scripts/build_vl_distill_atlas_benchmark.py
+  output: data/vl_distill_atlas_benchmark.json
+
+lean:
+  generator: scripts/gen_vl_distill_atlas_lean.py
+  module: FSOT.Formal.VlDistillAtlasPriors
+  lean_domain: consciousness
+  sign_theorem: consciousness_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 1.0

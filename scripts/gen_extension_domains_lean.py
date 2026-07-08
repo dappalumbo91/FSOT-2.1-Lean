@@ -66,6 +66,9 @@ DEDICATED_GENERATORS = {
     "Omni_Theory_Genesis",
     "FSOT_Aggregate_Unified_DB",
     "Prediction_Rederivation",
+    "VL_Distill_Atlas",
+    "Rust_Lean_Bridge",
+    "Bibliography_Lean_Corpus",
 }
 
 LEAN_SIGN = {
@@ -119,6 +122,9 @@ LEAN_SIGN = {
     "Omni_Theory_Genesis": ("consciousness", "consciousness_raw_S_positive"),
     "FSOT_Aggregate_Unified_DB": ("particle", "particle_raw_S_positive"),
     "Prediction_Rederivation": ("galactic", "galactic_raw_S_positive"),
+    "VL_Distill_Atlas": ("consciousness", "consciousness_raw_S_positive"),
+    "Rust_Lean_Bridge": ("consciousness", "consciousness_raw_S_positive"),
+    "Bibliography_Lean_Corpus": ("particle", "particle_raw_S_positive"),
 }
 
 

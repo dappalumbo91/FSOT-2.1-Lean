@@ -518,6 +518,112 @@ def prediction_rederivation_summary_path(*, require: bool = True) -> Path:
     return path
 
 
+def vl_distill_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_VL_DISTILL_ROOT",
+        VENDOR_ROOT / "vl_distill",
+        _DESKTOP / "New folder (4)" / "data",
+    )
+    if path is None and require:
+        raise FileNotFoundError("VL distill root not found.")
+    assert path is not None
+    return path
+
+
+def vl_distill_atlas_summary_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_VL_DISTILL_ATLAS_SUMMARY",
+        VENDOR_ROOT / "vl_distill" / "fsot_atlas_summary.json",
+        _DESKTOP / "New folder (4)" / "data" / "fsot_atlas_summary.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("VL distill atlas summary not found.")
+    assert path is not None
+    return path
+
+
+def vl_distill_domain_registry_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_VL_DISTILL_DOMAIN_REGISTRY",
+        VENDOR_ROOT / "vl_distill" / "fsot_domain_registry.json",
+        _DESKTOP / "New folder (4)" / "data" / "fsot_domain_registry.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("VL distill domain registry not found.")
+    assert path is not None
+    return path
+
+
+def vl_distill_dataset_meta_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_VL_DISTILL_DATASET_META",
+        VENDOR_ROOT / "vl_distill" / "distill_dataset.meta.json",
+        _DESKTOP / "New folder (4)" / "data" / "distill_dataset.meta.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("VL distill dataset meta not found.")
+    assert path is not None
+    return path
+
+
+def vl_distill_competitive_report_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_VL_DISTILL_COMPETITIVE_REPORT",
+        VENDOR_ROOT / "vl_distill" / "fsot_competitive_report.json",
+        _DESKTOP / "New folder (4)" / "data" / "fsot_competitive_report.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("VL distill competitive report not found.")
+    assert path is not None
+    return path
+
+
+def rust_lean_bridge_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_RUST_LEAN_BRIDGE_ROOT",
+        VENDOR_ROOT / "rust_lean_bridge",
+        _DESKTOP / "New folder (7)",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Rust Lean bridge root not found.")
+    assert path is not None
+    return path
+
+
+def rust_lean_bridge_summary_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_RUST_LEAN_BRIDGE_SUMMARY",
+        VENDOR_ROOT / "rust_lean_bridge" / "rust_lean_bridge_summary.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Rust Lean bridge summary not found.")
+    assert path is not None
+    return path
+
+
+def bibliography_corpus_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_BIBLIOGRAPHY_CORPUS_ROOT",
+        VENDOR_ROOT / "bibliography_corpus",
+        _DESKTOP / "New folder (6)",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Bibliography corpus root not found.")
+    assert path is not None
+    return path
+
+
+def bibliography_summary_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_BIBLIOGRAPHY_SUMMARY",
+        VENDOR_ROOT / "bibliography_corpus" / "bibliography_summary.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Bibliography summary not found.")
+    assert path is not None
+    return path
+
+
 def omni_theory_genesis_summary_path(*, require: bool = True) -> Path:
     path = _resolve(
         "FSOT_OMNI_THEORY_GENESIS_SUMMARY",

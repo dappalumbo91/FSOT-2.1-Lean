@@ -1,0 +1,113 @@
+{
+  "transition_limit": 0.6799329354210508,
+  "K_FSOT": 0.4202216641606967,
+  "unit_families": [
+    "length",
+    "mass",
+    "time",
+    "temperature",
+    "angle",
+    "energy",
+    "pressure",
+    "frequency",
+    "dimensionless"
+  ],
+  "statistical_symbols": [
+    "sigma",
+    "delta",
+    "epsilon",
+    "eta"
+  ],
+  "anchor_count": 10,
+  "sample_conversions": [
+    {
+      "family": "length",
+      "from_unit": "inch",
+      "to_unit": "m",
+      "value_in": 12,
+      "value_out": 0.30479999999999996,
+      "si_value": 0.30479999999999996,
+      "si_unit": "meter"
+    },
+    {
+      "family": "temperature",
+      "from_unit": "F",
+      "to_unit": "C",
+      "value_in": 98.6,
+      "value_out": 37.000000000000036,
+      "si_value": 310.15000000000003,
+      "si_unit": "kelvin"
+    },
+    {
+      "family": "length",
+      "from_unit": "mile",
+      "to_unit": "km",
+      "value_in": 1,
+      "value_out": 1.609344,
+      "si_value": 1609.344,
+      "si_unit": "meter"
+    }
+  ],
+  "sample_fractal_maps": [
+    {
+      "anchor_id": "alpha_em_inverse",
+      "measured": 137.036,
+      "measured_unit": "dimensionless",
+      "si_value": 137.036,
+      "fsot_anchor": 137.03619755957268,
+      "ratio": 0.9999985583402328,
+      "shell_index": 0,
+      "phase_rad": 1.882377266108141e-05,
+      "ring_x": 0.6799329353005891,
+      "ring_y": 1.2798903000391758e-05,
+      "transition_limit": 0.6799329354210508,
+      "delta_psi": 1.6180291412875851,
+      "delta_theta": 3.462439483648452e-06,
+      "scale": 1.6180321371840516,
+      "amplitude": 1.0,
+      "delta_lambda": 2.0370086787863363e-06,
+      "domain": "Particle_Physics",
+      "fsot_formula": "e^3 * phi^4 - psi_con"
+    },
+    {
+      "anchor_id": "T_CMB",
+      "measured": 2.72548,
+      "measured_unit": "K",
+      "si_value": 2.72548,
+      "fsot_anchor": 2.7271531552472226,
+      "ratio": 0.9993864828442058,
+      "shell_index": 0,
+      "phase_rad": 0.00801315505543775,
+      "ring_x": 0.6799111060686475,
+      "ring_y": 0.005448349731374502,
+      "transition_limit": 0.6799329354210508,
+      "delta_psi": 1.6159704562257138,
+      "delta_theta": 0.001473937501907279,
+      "scale": 1.6172457894625485,
+      "amplitude": 1.0,
+      "delta_lambda": 0.0008671410713610673,
+      "domain": "Cosmology",
+      "fsot_formula": "phi^2 + P_base*|S_cosm|"
+    },
+    {
+      "anchor_id": "sigma_8",
+      "measured": 0.8111,
+      "measured_unit": "dimensionless",
+      "si_value": 0.8111,
+      "fsot_anchor": 0.8220348958757021,
+      "ratio": 0.9866977716754308,
+      "shell_index": 0,
+      "phase_rad": 0.17485282628983226,
+      "ring_x": 0.6695654216304637,
+      "ring_y": 0.11828331592877453,
+      "transition_limit": 0.6799329354210508,
+      "delta_psi": 1.573006219850154,
+      "delta_theta": 0.032162380011375384,
+      "scale": 1.6008349114677694,
+      "amplitude": 1.0,
+      "delta_lambda": 0.018921643980492373,
+      "domain": "Cosmology",
+      "fsot_formula": "|S_cosm|*S_quant + |Chaos|"
+    }
+  ]
+}

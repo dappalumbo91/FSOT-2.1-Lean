@@ -336,6 +336,27 @@ verified_extension_domains:
     labs: [fsot_aggregate, fsot_compute]
     lean_module: FSOT.Formal.PredictionRederivationPriors
 
+  VL_Distill_Atlas:
+    tier: 37
+    D_eff: 12
+    maps_to_lean: [consciousness, ai, neural]
+    labs: [vl_distill, math_generator]
+    lean_module: FSOT.Formal.VlDistillAtlasPriors
+
+  Rust_Lean_Bridge:
+    tier: 37
+    D_eff: 8
+    maps_to_lean: [consciousness, ai, neural]
+    labs: [rust_lean_bridge, lean_bridge]
+    lean_module: FSOT.Formal.RustLeanBridgePriors
+
+  Bibliography_Lean_Corpus:
+    tier: 37
+    D_eff: 13
+    maps_to_lean: [particle, mathematical]
+    labs: [bibliography_corpus, lean_bridge]
+    lean_module: FSOT.Formal.BibliographyLeanCorpusPriors
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

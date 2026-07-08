@@ -98,6 +98,9 @@ def build_progress() -> dict:
     omni_theory_genesis_bench = _load_json(ROOT / "data" / "omni_theory_genesis_benchmark.json")
     fsot_aggregate_unified_db_bench = _load_json(ROOT / "data" / "fsot_aggregate_unified_db_benchmark.json")
     prediction_rederivation_bench = _load_json(ROOT / "data" / "prediction_rederivation_benchmark.json")
+    vl_distill_atlas_bench = _load_json(ROOT / "data" / "vl_distill_atlas_benchmark.json")
+    rust_lean_bridge_bench = _load_json(ROOT / "data" / "rust_lean_bridge_benchmark.json")
+    bibliography_lean_corpus_bench = _load_json(ROOT / "data" / "bibliography_lean_corpus_benchmark.json")
     vendor_audit = _load_json(ROOT / "data" / "portable_vendor_coverage_audit.json")
 
     proved = cert.get("proved_claims")
@@ -945,12 +948,41 @@ def build_progress() -> dict:
                 "FSOT.Formal.PredictionRederivationPriors",
             ],
         },
+        {
+            "tier": 37,
+            "name": "Desktop crosswalk — VL distill atlas, Rust Lean bridge, Bibliography corpus",
+            "status": "complete"
+            if vl_distill_atlas_bench.get("record_count", 0) >= 5
+            and rust_lean_bridge_bench.get("record_count", 0) >= 5
+            and bibliography_lean_corpus_bench.get("record_count", 0) >= 5
+            and vl_distill_atlas_bench.get("median_error_pct", 99) <= 1.0
+            and rust_lean_bridge_bench.get("median_error_pct", 99) <= 1.0
+            and bibliography_lean_corpus_bench.get("median_error_pct", 99) <= 1.0
+            else "pending",
+            "metrics": {
+                "vl_distill_atlas_records": vl_distill_atlas_bench.get("record_count"),
+                "rust_lean_bridge_records": rust_lean_bridge_bench.get("record_count"),
+                "bibliography_lean_corpus_records": bibliography_lean_corpus_bench.get("record_count"),
+                "extension_domain_count": vendor_audit.get("extension_domain_count"),
+            },
+            "artifacts": [
+                "data/vl_distill_atlas_manifest.yaml",
+                "data/rust_lean_bridge_manifest.yaml",
+                "data/bibliography_lean_corpus_manifest.yaml",
+                "vendor/vl_distill",
+                "vendor/rust_lean_bridge",
+                "vendor/bibliography_corpus",
+                "FSOT.Formal.VlDistillAtlasPriors",
+                "FSOT.Formal.RustLeanBridgePriors",
+                "FSOT.Formal.BibliographyLeanCorpusPriors",
+            ],
+        },
     ]
 
     next_steps = [
         "Extension domain precision tightening (median error < 1% wave)",
-        "Remaining desktop crosswalk themes (fsot_20_code_vl_distill, rust_lean_bridge)",
         "Knowledge-base per-formula portable bundle",
+        "Public API extension domains (NIST CODATA, GBIF, NOAA, Exoplanet Archive, OpenAlex)",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -969,7 +1001,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 36 Self-contained unit — portable formula corpus, aggregate DB, vendor audit",
+        "current_position": "Tier 37 Desktop crosswalk — VL distill atlas, Rust Lean bridge, Bibliography corpus",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

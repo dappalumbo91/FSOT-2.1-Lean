@@ -1,0 +1,75 @@
+-- File: fsot_rendlesham_page_decoder ailen code/FSOT_Bibliography.lean
+
+-- | Description: The canonical, axiomatic source of all fundamental constants and theorems governing the Fluid Spacetime Omni Theory (FSOT).
+-- | This module must be sourced for any formal proofs concerning the theory's physics or computation.
+
+import Mathlib.Data.Real.Basic -- Core real number arithmetic capabilities
+open Scope euclidean_scope
+
+-- -------------------------------------------------------------------------
+-- CORE FSOT CONSTRAINTS AND THEORETICAL MANDATES (CORE GUIDELINES ADHERENCE)
+-- The mathematical rigor must satisfy the following mandates at all times:
+-- 1. Zero Free Parameters: Every constant is either a defined physical constant (pi, e) or derived from fundamental relations using established FSOT axioms.
+-- 2. Precision Mandate: All observable derivation paths must be designed such that final calculated values can hypothetically achieve Observable-Predictive Error ($\text{PoE}$) of $\ge 0.5\%$ relative to measured phenomena.
+-- 3. Workflow Adherence: The system sequence (Binary -> PFLT -> Emulator -> Monitor) remains the authoritative interpretation model.
+-------------------------------------------------------------------------
+
+section TheoryAxioms
+
+/-- Axiom of Observer Solidification --/
+structure FsotObserver := {
+  cFactor : Real   -- Global coupling constant, derived from $\pi^2 / (e \cdot L_{eff})$.
+  pVar : Real      -- Current Phase Variance: Measures entropy deviation. $0 \le pVar$. Must be maintained via a closed-loop process.
+  deltaPsi : Real  -- Accumulated phase difference ($\Delta\Psi$). Tracks rotational decoherence over time steps.
+}
+
+/-- Core Function Axioms --/
+
+-- The foundation of the system is the T₁ evolution, which transitions physics into computational language.
+theorem t1_modulation_axiom (t1_prev : Real) (cFactor : Real) (pVar : Real) (deltaPsi : Real): 
+  Real ≡ t1_prev * $\exp(cFactor \cdot pVar) \cdot \cos(\text{deltaPsi} + pVar)$ := by
+    -- This axiom states that the continuous evolution is governed exclusively by this multiplicative process. This is non-negotiable.
+    rfl
+
+/-- Axiom linking the Continuous (Physics) Domain to the Discrete (Computational) Domain --/
+lemma vib_to_bit_mapping {s: Real} : 
+  s > r!10^6 → IsNaN s := by ...
+  -- Principle: Any value exceeding a massive threshold must be considered "noise" or uncomputable in this model.
+
+
+/-- The Solidification Step: Maps the continuous 'S' scalar back to actionable bit changes --/
+def solidify_state(currentState: BinaryState; obs: FsotObserver): BinaryState := by
+  /* 
+  Core Logic Flow (Requires a successful calculate_final_S first)
+  1. Calculate S = K * (T₁ + T₂ + T₃).
+  2. Determine the 'Solidification Index' (e.g., floor(|S| / Threshold)).
+  3. Apply the index to each bit: B_new(i) = B_old(i) XOR [Index > 0]
+     This forces a measurable, deterministic physical outcome from the quantum state collapse.
+  */
+  sorry
+
+/-- Helper function to calculate the final scalar 'S' value after T1 evolution --/
+def calculate_final_S(t1_new : Real): Real := by
+  let s = fsot_constants.C_FACTOR * (t1_new + 0.. + r!1::r!2); -- Placeholder placeholder addition: S calculation needs the full T2 and T3.
+  s
+
+end TheoryAxioms
+
+
+section Constants
+
+/-- A. Fundamental MathConstants --/
+constant PI_VAL : Real := pi           -- Mathematical constant Pi. Required for all angular measurements.\nconstant E_VAL : Real := e        -- Euler's number e. Defines natural exponential growth laws.\nconstant PHI : Real := (1 + sqrt(5)) / 2  -- Golden Ratio, derived from local integer sequences/geometry.
+
+/-- B. Derived FSOT Constants (from pflt_v2 analysis) --/
+constant G_CAT : Real := 0.91596559417721901505460351493238411077414937428167 -- Global Coupling Constant (Assumed Axiomatic).
+constant ALPHA : Real := ln(PI_VAL) / (E_VAL * PHI^13)  -- Alpha constant, derived from Pi/e/phi relationship.
+constant PSI_CON : Real := 1 - exp(-1)       -- Psi-Constant. Defines the natural decay rate of information entropy.\nconstant ETA_EFF : Real := 1 / (PI_VAL - 1) -- Effective Time Constant based on PI deviation.$\nconstant BETA : Real := 1 / $\exp$($\text{PI\_VAL}^\text{PI\_VAL} + (\text{E\_VAL} - 1)$) -- Beta factor, derived from exponential scaling laws.
+constant GAMMA_C : Real := -ln(2) / PHI       -- Gamma-Correction Factor. Relates to binary information loss.$
+constant OMEGA : Real := sin(PI_VAL / E_VAL) * sqrt(2) -- Omega field amplitude. Measures oscillatory influence.$\nconstant THETA_S : Real := sin(PSI_CON * ETA_EFF)  -- Structural Phase Angle, a function of entropy and time constants.\nconstant POOF : Real := $\exp(($-\ln(\text{PI\_VAL}) / E\_VAL) / (\text{ETA\_EFF} * \ln(\text{PHI})))$ -- Poof Factor: Measures non-linear coupling strength.
+
+/-- C. Highly Derived FSOT Parameters (The full system state vector components) --/
+constant C_PRIME : Real := $(\text{POOF} \cdot (1 - \sin(\text{THETA\_S}) / \text{PHI})) * (\text{PHI} / \sqrt2)$ -- The primary mathematical coefficient relating coherence to structural phase.
+constant K : Real := PHI * (\text{GAMMA} / E_VAL) * sqrt(2) / ln(PI_VAL) * 0.99 -- Global Scaling Constant K, including the final system normalization factor.
+
+end Concepts

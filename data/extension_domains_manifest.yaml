@@ -661,6 +661,45 @@ extension_domains:
     lean_module: FSOT.Formal.PredictionRederivationPriors
     note: "66-prediction re-derivation arc with zero free parameters"
 
+  VL_Distill_Atlas:
+    tier: 37
+    D_eff: 12
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_vl_distill_atlas_benchmark.py
+    manifest: data/vl_distill_atlas_manifest.yaml
+    benchmark_data: data/vl_distill_atlas_benchmark.json
+    lean_module: FSOT.Formal.VlDistillAtlasPriors
+    note: "VL distill atlas, 35-domain registry, golden corpus meta, competitive pass"
+
+  Rust_Lean_Bridge:
+    tier: 37
+    D_eff: 8
+    delta_psi: 0.7
+    recent_hits: 0
+    observed: true
+    maps_to_lean: [consciousness, ai, neural]
+    build_script: scripts/build_rust_lean_bridge_benchmark.py
+    manifest: data/rust_lean_bridge_manifest.yaml
+    benchmark_data: data/rust_lean_bridge_benchmark.json
+    lean_module: FSOT.Formal.RustLeanBridgePriors
+    note: "Rust no_std bare-metal scalar engine K-match + boot emergence crosswalk"
+
+  Bibliography_Lean_Corpus:
+    tier: 37
+    D_eff: 13
+    delta_psi: 0.5
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [particle, mathematical]
+    build_script: scripts/build_bibliography_lean_corpus_benchmark.py
+    manifest: data/bibliography_lean_corpus_manifest.yaml
+    benchmark_data: data/bibliography_lean_corpus_benchmark.json
+    lean_module: FSOT.Formal.BibliographyLeanCorpusPriors
+    note: "Canonical FSOT Bibliography axiomatic constants + workflow mandates"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

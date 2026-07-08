@@ -1,0 +1,31 @@
+[package]
+name = "fsot-observer-kernel"
+version = "0.1.0"
+edition = "2021"
+authors = ["Damian Arthur Palumbo <dappalumbo91> + Grok (FSOT 2.0 Native)"]
+description = "FSOT 2.0 Native Bare-Metal Proof-of-Concept Kernel - Boots in QEMU, computes core scalar at boot as observer"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/dappalumbo91/FSOT-2.0-code"
+
+[dependencies]
+# For math functions in no_std (sin, cos, exp, ln, sqrt, etc.)
+libm = "0.2"
+
+# VGA buffer writing (volatile writes to prevent optimization)
+volatile = "0.4"
+
+# Optional but recommended for x86_64 instructions if expanding later
+# x86_64 = { version = "0.14", default-features = false, features = ["instructions"] }
+
+[profile.dev]
+panic = "abort"
+opt-level = 1
+
+[profile.release]
+panic = "abort"
+opt-level = "z"  # Optimize for size, good for embedded-like
+
+# Note for user: To build the bootable image you will need the `bootloader` crate
+# and proper target setup on your machine. This POC is structured to be easily
+# integrated with https://crates.io/crates/bootloader (v0.9+ recommended).
+# See build instructions in the README below or in response.

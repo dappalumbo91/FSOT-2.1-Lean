@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-08T16:35:47.321425+00:00",
-  "extension_domain_count": 50,
-  "bundled_asset_count": 30,
+  "generated_at": "2026-07-08T16:41:18.790641+00:00",
+  "extension_domain_count": 53,
+  "bundled_asset_count": 33,
   "formula_corpus_portable": true,
   "formula_corpus_records_hint": 7941,
   "missing_benchmark_domains": [],
@@ -409,6 +409,30 @@
       "benchmark_present": true,
       "build_script": "scripts/build_prediction_rederivation_benchmark.py",
       "lean_module": "FSOT.Formal.PredictionRederivationPriors"
+    },
+    {
+      "domain": "VL_Distill_Atlas",
+      "tier": 37,
+      "benchmark_data": "data/vl_distill_atlas_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_vl_distill_atlas_benchmark.py",
+      "lean_module": "FSOT.Formal.VlDistillAtlasPriors"
+    },
+    {
+      "domain": "Rust_Lean_Bridge",
+      "tier": 37,
+      "benchmark_data": "data/rust_lean_bridge_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_rust_lean_bridge_benchmark.py",
+      "lean_module": "FSOT.Formal.RustLeanBridgePriors"
+    },
+    {
+      "domain": "Bibliography_Lean_Corpus",
+      "tier": 37,
+      "benchmark_data": "data/bibliography_lean_corpus_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_bibliography_lean_corpus_benchmark.py",
+      "lean_module": "FSOT.Formal.BibliographyLeanCorpusPriors"
     }
   ],
   "bundled_assets": [
@@ -555,6 +579,21 @@
     {
       "asset": "prediction_rederivation_summary",
       "path": "vendor/fsot_aggregate/prediction_rederivation_summary.json",
+      "present": true
+    },
+    {
+      "asset": "vl_distill_atlas",
+      "path": "vendor/vl_distill",
+      "present": true
+    },
+    {
+      "asset": "rust_lean_bridge",
+      "path": "vendor/rust_lean_bridge",
+      "present": true
+    },
+    {
+      "asset": "bibliography_corpus",
+      "path": "vendor/bibliography_corpus",
       "present": true
     },
     {
