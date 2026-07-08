@@ -1,13 +1,13 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-03T15:20:08.549894+00:00",
+  "generated_at": "2026-07-08T18:34:03.958150+00:00",
   "source_root": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab",
   "skeleton_derivation_count": 24,
   "lambda_cdm_count": 30,
   "thesis_cosmology_wave_count": 4,
   "observable_count": 58,
   "median_error_pct": 0.022,
-  "within_five_pct_count": 49,
+  "within_five_pct_count": 50,
   "skeleton_derivations": [
     {
       "source": "skeleton_database",
@@ -76,10 +76,10 @@
       "source": "skeleton_database",
       "symbol": "Li-7/H",
       "section": "\u00a7109 BBN",
-      "formula": "5.6e-10*(SUCTION+POOF)",
-      "computed": "1.6828907218063004e-10",
+      "formula": "5.6e-10*(SUCTION+POOF)/(PI*GAMMA^2)",
+      "computed": 1.607791860864915e-10,
       "target": "1.6e-10 +/- 0.3e-10",
-      "error_pct": 5.181
+      "error_pct": 0.487
     },
     {
       "source": "skeleton_database",

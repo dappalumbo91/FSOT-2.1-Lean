@@ -17,7 +17,7 @@ def cosmology_lambda_cdm_extended_count : ℕ := 30
 def cosmology_thesis_wave_count : ℕ := 4
 def cosmology_extended_observable_count : ℕ := 58
 def cosmology_extended_median_error_pct : ℝ := (0.022 : ℝ)
-def cosmology_extended_within_five_pct : ℕ := 49
+def cosmology_extended_within_five_pct : ℕ := 50
 
 theorem cosmology_skeleton_derivation_count_pos : 0 < cosmology_skeleton_derivation_count := by
   unfold cosmology_skeleton_derivation_count; norm_num

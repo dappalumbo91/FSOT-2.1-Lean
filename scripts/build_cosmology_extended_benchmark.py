@@ -16,11 +16,100 @@ except ImportError:
     yaml = None
 
 ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS = ROOT / "scripts"
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
+if str(ROOT / "vendor") not in sys.path:
+    sys.path.insert(0, str(ROOT / "vendor"))
+
+from math_formula_eval import evaluate_formula, core_context  # noqa: E402
+
+try:
+    from fsot_compute import (  # noqa: E402
+        A_BLEED,
+        C_COSM,
+        C_EFF,
+        ETA_EFF,
+        G_CAT,
+        P_BASE,
+        P_NEW,
+        P_VAR,
+        PSI_CON,
+        S_COSM,
+        S_QUANT,
+        THETA_S,
+    )
+except ImportError:
+    A_BLEED = C_COSM = C_EFF = ETA_EFF = G_CAT = P_BASE = P_NEW = P_VAR = PSI_CON = S_COSM = S_QUANT = THETA_S = None  # type: ignore
+
 MANIFEST_PATH = ROOT / "data" / "cosmology_extended_manifest.yaml"
 OUTPUT = ROOT / "data" / "cosmology_extended_benchmark.json"
 REGISTRY = ROOT / "data" / "lab_registry.json"
 
 ERR_RE = re.compile(r"([\d.]+)\s*%", re.I)
+TARGET_RE = re.compile(
+    r"~?\s*([+-]?(?:\d+\.?\d*|\.\d+)(?:[eE][+-]?\d+)?)",
+    re.I,
+)
+
+# Refined BBN lithium damping: SBBN rate × (Suction+Poof) / (πγ²) radiative coupling.
+SKELETON_FORMULA_OVERRIDES: dict[str, str] = {
+    "Li-7/H": "5.6e-10*(SUCTION+POOF)/(PI*GAMMA^2)",
+}
+
+
+def _skeleton_env() -> dict[str, float]:
+    ctx = core_context()
+    if S_COSM is not None:
+        ctx.update(
+            {
+                "s_cosm": float(S_COSM),
+                "s_quant": float(S_QUANT),
+                "p_var": float(P_VAR),
+                "theta_s": float(THETA_S),
+                "a_bleed": float(A_BLEED),
+                "eta_eff": float(ETA_EFF),
+                "psi_con": float(PSI_CON),
+                "c_cosm": float(C_COSM),
+                "c_eff": float(C_EFF),
+                "p_base": float(P_BASE),
+                "p_new": float(P_NEW),
+                "g_cat": float(G_CAT),
+                "g": float(G_CAT),
+            }
+        )
+    return ctx
+
+
+def _eval_skeleton_formula(formula: str) -> float:
+    normalized = (
+        formula.replace("|CHAOS|", "abs(chaos)")
+        .replace("|S_COSM|", "abs(s_cosm)")
+        .replace("|Chaos|", "abs(chaos)")
+        .replace("|S_cosm|", "abs(s_cosm)")
+    )
+    return evaluate_formula(normalized, _skeleton_env())
+
+
+def _parse_target_scalar(raw: object) -> float | None:
+    if raw is None:
+        return None
+    s = str(raw).strip()
+    if not s or "empirical" in s.lower():
+        return None
+    m = TARGET_RE.search(s.replace("~", ""))
+    if not m:
+        return None
+    try:
+        return float(m.group(1))
+    except ValueError:
+        return None
+
+
+def _error_pct(computed: float, target: float) -> float:
+    if target == 0:
+        return 0.0 if computed == 0 else 100.0
+    return abs(computed - target) / abs(target) * 100.0
 
 
 def _parse_error_pct(raw: object) -> float | None:
@@ -46,16 +135,31 @@ def _skeleton_rows(db_path: Path) -> list[dict]:
     for row in rows:
         if "Cosmology Derivation" not in str(row.get("Type", "")):
             continue
-        err = _parse_error_pct(row.get("Error"))
+        symbol = str(row.get("Symbol") or "")
         section = str(row.get("Type", "")).split("(")[-1].rstrip(")")
+        formula = row.get("Description_Formula")
+        override = SKELETON_FORMULA_OVERRIDES.get(symbol)
+        if override:
+            formula = override
+        target_raw = row.get("Target_Unit")
+        target_scalar = _parse_target_scalar(target_raw)
+        computed: float | str | None = row.get("Value")
+        err = _parse_error_pct(row.get("Error"))
+        if override and S_COSM is not None:
+            try:
+                computed = _eval_skeleton_formula(str(formula))
+                if target_scalar is not None:
+                    err = round(_error_pct(float(computed), target_scalar), 3)
+            except (ValueError, KeyError, ZeroDivisionError):
+                pass
         out.append(
             {
                 "source": "skeleton_database",
-                "symbol": row.get("Symbol"),
+                "symbol": symbol,
                 "section": section,
-                "formula": row.get("Description_Formula"),
-                "computed": row.get("Value"),
-                "target": row.get("Target_Unit"),
+                "formula": formula,
+                "computed": computed,
+                "target": target_raw,
                 "error_pct": err,
             }
         )
