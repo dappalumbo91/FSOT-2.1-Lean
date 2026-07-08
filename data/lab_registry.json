@@ -3,8 +3,8 @@
   "generated_at": "2026-07-01T04:33:31.507751+00:00",
   "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
   "smiles_lab": {
-    "source_path": "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\FSOT_SMILES_Lab_Dataset.json",
-    "sha256": "CC6BF2DAA41D0C5EFE3AD2F267C8FD7CBFB5761EDDA7D2D7AE0A463E99C2C8F4",
+    "source_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
+    "sha256": "EF363DA34E0EF9CA8443A7E9BA79DFCE408BD33DA60464D16C7A35EAC3D14D02",
     "metadata": {
       "title": "FSOT SMILES Lab Dataset",
       "author": "Damian Arthur Palumbo",
@@ -43,8 +43,8 @@
         "record_count": 608,
         "matched_count": 608,
         "unmatched_count": 0,
-        "median_error_pct": 0.415811,
-        "max_error_pct": 4.841504,
+        "median_error_pct": 0.406682,
+        "max_error_pct": 4.814195,
         "catalog_gaps": [],
         "sample_names": [
           "IE_H",
@@ -200,8 +200,8 @@
         "record_count": 608,
         "matched_count": 608,
         "unmatched_count": 0,
-        "median_error_pct": 0.415811,
-        "max_error_pct": 4.841504,
+        "median_error_pct": 0.406682,
+        "max_error_pct": 4.814195,
         "catalog_gaps": [],
         "sample_names": [
           "IE_H",
@@ -227,7 +227,8 @@
         ]
       }
     },
-    "unmapped_section_sample": []
+    "unmapped_section_sample": [],
+    "section51_logS_patched_at": "2026-07-08T18:45:09.752162+00:00"
   },
   "neurolab": {
     "thalamic_gate": {
