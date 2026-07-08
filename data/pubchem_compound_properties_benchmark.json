@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T16:57:28.708399+00:00",
+  "generated_at": "2026-07-08T18:14:18.365858+00:00",
   "domain": "PubChem_Compound_Properties",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "PubChem_PUG_REST",
@@ -8,9 +8,9 @@
     "chemical"
   ],
   "D_eff": 8,
-  "record_count": 12,
-  "observable_count": 12,
-  "median_error_pct": 0.0012801911752094832,
+  "record_count": 29,
+  "observable_count": 29,
+  "median_error_pct": 0.0024238898584426276,
   "records": [
     {
       "lab": "pubchem",
@@ -130,6 +130,176 @@
       "computed": 234.343,
       "measured": 234.34,
       "error_pct": 0.0012801911752094832,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "1983",
+      "formula": "C8H9NO2",
+      "computed": 151.165,
+      "measured": 151.16,
+      "error_pct": 0.003307753373905433,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "5280343",
+      "formula": "C15H10O7",
+      "computed": 302.238,
+      "measured": 302.23,
+      "error_pct": 0.0026469907024389886,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "446157",
+      "formula": "C22H28FN3O6S",
+      "computed": 481.539,
+      "measured": 481.5,
+      "error_pct": 0.0080996884735058,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "5284373",
+      "formula": "C62H111N11O12",
+      "computed": 1202.635,
+      "measured": 1202.6,
+      "error_pct": 0.0029103608847565157,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "3033",
+      "formula": "C14H11Cl2NO2",
+      "computed": 296.147,
+      "measured": 296.1,
+      "error_pct": 0.015873015873005276,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "5280961",
+      "formula": "C15H10O5",
+      "computed": 270.24,
+      "measured": 270.24,
+      "error_pct": 0.0,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "4091",
+      "formula": "C4H11N5",
+      "computed": 129.167,
+      "measured": 129.16,
+      "error_pct": 0.005419634561787707,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "31703",
+      "formula": "C27H29NO11",
+      "computed": 543.525,
+      "measured": 543.5,
+      "error_pct": 0.004599816007355522,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "2723949",
+      "formula": "C2H5NS",
+      "computed": 75.129,
+      "measured": 75.14,
+      "error_pct": 0.014639339898868634,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "5702160",
+      "formula": "C8H15N7O2S3",
+      "computed": 337.435,
+      "measured": 337.5,
+      "error_pct": 0.019259259259258584,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "65064",
+      "formula": "C22H18O11",
+      "computed": 458.375,
+      "measured": 458.4,
+      "error_pct": 0.005453752181495912,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "5288826",
+      "formula": "C17H19NO3",
+      "computed": 285.343,
+      "measured": 285.34,
+      "error_pct": 0.0010513773042835728,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "445858",
+      "formula": "C10H10O4",
+      "computed": 194.186,
+      "measured": 194.18,
+      "error_pct": 0.003089916572252666,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "5282379",
+      "formula": "C20H28O2",
+      "computed": 300.442,
+      "measured": 300.4,
+      "error_pct": 0.013981358189072294,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "5284616",
+      "formula": "C51H79NO13",
+      "computed": 914.187,
+      "measured": 914.2,
+      "error_pct": 0.0014220083132954866,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "5360515",
+      "formula": "C20H23NO4",
+      "computed": 341.407,
+      "measured": 341.4,
+      "error_pct": 0.0020503807850043945,
+      "within_band": true
+    },
+    {
+      "lab": "pubchem",
+      "property": "molecular_weight",
+      "name": "2724385",
+      "formula": "C41H64O14",
+      "computed": 780.949,
+      "measured": 780.9,
+      "error_pct": 0.006274811115376895,
       "within_band": true
     }
   ]

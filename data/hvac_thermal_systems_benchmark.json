@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-07-08T18:12:43.105108+00:00",
+  "domain": "HVAC_Thermal_Systems",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": "ASHRAE Standard 90.1, DOE SEER ratings, Carnot thermodynamics reference",
+  "maps_to_lean": [
+    "energy",
+    "material"
+  ],
+  "D_eff": 13,
+  "record_count": 7,
+  "observable_count": 7,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "hvac_thermal",
+      "property": "cop_rated",
+      "name": "Residential SEER 14 baseline",
+      "computed": 3.5,
+      "measured": 3.5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "hvac_thermal",
+      "property": "seer_to_cop",
+      "name": "Residential SEER 14 baseline",
+      "computed": 4.1032,
+      "measured": 4.1032,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "hvac_thermal",
+      "property": "cop_rated",
+      "name": "High-efficiency SEER 22",
+      "computed": 5.5,
+      "measured": 5.5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "hvac_thermal",
+      "property": "seer_to_cop",
+      "name": "High-efficiency SEER 22",
+      "computed": 6.4478,
+      "measured": 6.4478,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "hvac_thermal",
+      "property": "carnot_cop_formula",
+      "name": "Carnot COP (0C cold, 27C hot)",
+      "computed": 10.1167,
+      "measured": 11.0,
+      "error_pct": 8.030303030303042
+    },
+    {
+      "lab": "hvac_thermal",
+      "property": "carnot_cop_formula",
+      "name": "Carnot COP (5C cold, 35C hot)",
+      "computed": 9.2717,
+      "measured": 9.4,
+      "error_pct": 1.36524822695036
+    },
+    {
+      "lab": "hvac_thermal",
+      "property": "thermodynamics_scalar",
+      "name": "S_thermo",
+      "computed": 0.7869745016115727,
+      "measured": 0.7869745016115727,
+      "error_pct": 0.0
+    }
+  ]
+}

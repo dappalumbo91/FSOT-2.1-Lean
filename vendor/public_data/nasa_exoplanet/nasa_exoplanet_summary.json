@@ -1,6 +1,6 @@
 {
-  "source": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+120+pl_name%2Chostname%2Cpl_rade%2Cpl_bmasse%2Cpl_orbper%2Cdisc_year%2Csy_dist+from+pscomppars&format=csv",
-  "planet_count": 80,
+  "source": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+150+pl_name%2Chostname%2Cpl_rade%2Cpl_bmasse%2Cpl_orbper%2Cdisc_year%2Csy_dist+from+pscomppars&format=csv",
+  "planet_count": 148,
   "planets": [
     {
       "pl_name": "Kepler-1597 b",
@@ -721,8 +721,620 @@
       "pl_orbper": 359.51001,
       "disc_year": "2007",
       "sy_dist": 47.7332
+    },
+    {
+      "pl_name": "WASP-151 b",
+      "hostname": "WASP-151",
+      "pl_rade": 13.30506009,
+      "pl_bmasse": 100.43377661,
+      "pl_orbper": 4.5334775,
+      "disc_year": "2017",
+      "sy_dist": 453.099
+    },
+    {
+      "pl_name": "Kepler-80 g",
+      "hostname": "Kepler-80",
+      "pl_rade": 1.13,
+      "pl_bmasse": 0.065,
+      "pl_orbper": 14.64558,
+      "disc_year": "2017",
+      "sy_dist": 369.451
+    },
+    {
+      "pl_name": "Kepler-263 b",
+      "hostname": "Kepler-263",
+      "pl_rade": 2.67,
+      "pl_bmasse": 7.61,
+      "pl_orbper": 16.568087,
+      "disc_year": "2014",
+      "sy_dist": 754.747
+    },
+    {
+      "pl_name": "K2-10 b",
+      "hostname": "K2-10",
+      "pl_rade": 3.773,
+      "pl_bmasse": 25.2,
+      "pl_orbper": 19.30553,
+      "disc_year": "2015",
+      "sy_dist": 272.36
+    },
+    {
+      "pl_name": "TOI-411 b",
+      "hostname": "HD 22946",
+      "pl_rade": 1.362,
+      "pl_bmasse": 13.71,
+      "pl_orbper": 4.040295,
+      "disc_year": "2022",
+      "sy_dist": 62.7792
+    },
+    {
+      "pl_name": "WASP-120 b",
+      "hostname": "WASP-120",
+      "pl_rade": 15.58048317,
+      "pl_bmasse": 1541.4755,
+      "pl_orbper": 3.61126721,
+      "disc_year": "2016",
+      "sy_dist": 381.174
+    },
+    {
+      "pl_name": "Kepler-1006 b",
+      "hostname": "Kepler-1006",
+      "pl_rade": 1.54,
+      "pl_bmasse": 2.99,
+      "pl_orbper": 19.76172042,
+      "disc_year": "2016",
+      "sy_dist": 1081.738
+    },
+    {
+      "pl_name": "Kepler-398 d",
+      "hostname": "Kepler-398",
+      "pl_rade": 0.88,
+      "pl_bmasse": 0.615,
+      "pl_orbper": 6.83437001,
+      "disc_year": "2016",
+      "sy_dist": 177.355
+    },
+    {
+      "pl_name": "TOI-5335 b",
+      "hostname": "TOI-5335",
+      "pl_rade": 4.02422162,
+      "pl_bmasse": 15.3,
+      "pl_orbper": 3.61365988443,
+      "disc_year": "2026",
+      "sy_dist": 331.289
+    },
+    {
+      "pl_name": "Kepler-78 b",
+      "hostname": "Kepler-78",
+      "pl_rade": 1.201,
+      "pl_bmasse": 1.68,
+      "pl_orbper": 0.35500745,
+      "disc_year": "2013",
+      "sy_dist": 124.376
+    },
+    {
+      "pl_name": "Kepler-253 d",
+      "hostname": "Kepler-253",
+      "pl_rade": 3.17,
+      "pl_bmasse": 10.2,
+      "pl_orbper": 18.119869,
+      "disc_year": "2014",
+      "sy_dist": 838.595
+    },
+    {
+      "pl_name": "K2-62 b",
+      "hostname": "K2-62",
+      "pl_rade": 2.02,
+      "pl_bmasse": 4.74,
+      "pl_orbper": 6.67199,
+      "disc_year": "2016",
+      "sy_dist": 112.467
+    },
+    {
+      "pl_name": "Kepler-369 b",
+      "hostname": "Kepler-369",
+      "pl_rade": 1.13,
+      "pl_bmasse": 1.51,
+      "pl_orbper": 2.732756,
+      "disc_year": "2014",
+      "sy_dist": 214.0
+    },
+    {
+      "pl_name": "Kepler-657 b",
+      "hostname": "Kepler-657",
+      "pl_rade": 3.52,
+      "pl_bmasse": 12.2,
+      "pl_orbper": 24.54350418,
+      "disc_year": "2016",
+      "sy_dist": 1691.88
+    },
+    {
+      "pl_name": "Kepler-513 b",
+      "hostname": "Kepler-513",
+      "pl_rade": 2.2,
+      "pl_bmasse": 5.48,
+      "pl_orbper": 28.86235584,
+      "disc_year": "2016",
+      "sy_dist": 468.258
+    },
+    {
+      "pl_name": "TOI-1180 b",
+      "hostname": "TOI-1180",
+      "pl_rade": 3.072,
+      "pl_bmasse": 10.0,
+      "pl_orbper": 9.686760378,
+      "disc_year": "2024",
+      "sy_dist": 72.0238
+    },
+    {
+      "pl_name": "11 UMi b",
+      "hostname": "11 UMi",
+      "pl_rade": 12.3,
+      "pl_bmasse": 4684.8142,
+      "pl_orbper": 516.21997,
+      "disc_year": "2009",
+      "sy_dist": 125.321
+    },
+    {
+      "pl_name": "Kepler-1390 b",
+      "hostname": "Kepler-1390",
+      "pl_rade": 1.18,
+      "pl_bmasse": 1.76,
+      "pl_orbper": 6.48021673,
+      "disc_year": "2016",
+      "sy_dist": 723.431
+    },
+    {
+      "pl_name": "OGLE-2018-BLG-0298L b",
+      "hostname": "OGLE-2018-BLG-0298L",
+      "pl_rade": 7.56,
+      "pl_bmasse": 44.49597698,
+      "pl_orbper": null,
+      "disc_year": "2022",
+      "sy_dist": 6540.0
+    },
+    {
+      "pl_name": "WASP-60 b",
+      "hostname": "WASP-60",
+      "pl_rade": 9.86392,
+      "pl_bmasse": 174.8065,
+      "pl_orbper": 4.305,
+      "disc_year": "2012",
+      "sy_dist": 431.052
+    },
+    {
+      "pl_name": "Kepler-1762 b",
+      "hostname": "Kepler-1762",
+      "pl_rade": 2.76022913,
+      "pl_bmasse": 8.05,
+      "pl_orbper": 29.53910065,
+      "disc_year": "2021",
+      "sy_dist": 1663.74
+    },
+    {
+      "pl_name": "Kepler-98 b",
+      "hostname": "Kepler-98",
+      "pl_rade": 1.99,
+      "pl_bmasse": 3.55,
+      "pl_orbper": 1.54168,
+      "disc_year": "2014",
+      "sy_dist": 350.315
+    },
+    {
+      "pl_name": "Kepler-403 c",
+      "hostname": "Kepler-403",
+      "pl_rade": 1.75,
+      "pl_bmasse": 3.71,
+      "pl_orbper": 54.280749,
+      "disc_year": "2014",
+      "sy_dist": 840.269
+    },
+    {
+      "pl_name": "Kepler-292 b",
+      "hostname": "Kepler-292",
+      "pl_rade": 1.32,
+      "pl_bmasse": 2.3,
+      "pl_orbper": 2.580827,
+      "disc_year": "2014",
+      "sy_dist": 1056.48
+    },
+    {
+      "pl_name": "K2-49 b",
+      "hostname": "K2-49",
+      "pl_rade": 1.93,
+      "pl_bmasse": 4.38,
+      "pl_orbper": 2.77065,
+      "disc_year": "2016",
+      "sy_dist": 457.125
+    },
+    {
+      "pl_name": "HD 142245 b",
+      "hostname": "HD 142245",
+      "pl_rade": 13.1,
+      "pl_bmasse": 975.7381,
+      "pl_orbper": 1299.0,
+      "disc_year": "2011",
+      "sy_dist": 97.2305
+    },
+    {
+      "pl_name": "TOI-1452 b",
+      "hostname": "TOI-1452",
+      "pl_rade": 1.672,
+      "pl_bmasse": 4.82,
+      "pl_orbper": 11.06201,
+      "disc_year": "2022",
+      "sy_dist": 30.5212
+    },
+    {
+      "pl_name": "Kepler-110 b",
+      "hostname": "Kepler-110",
+      "pl_rade": 1.83,
+      "pl_bmasse": 4.01,
+      "pl_orbper": 12.691112,
+      "disc_year": "2014",
+      "sy_dist": 586.531
+    },
+    {
+      "pl_name": "Kepler-1296 b",
+      "hostname": "Kepler-1296",
+      "pl_rade": 0.91,
+      "pl_bmasse": 0.693,
+      "pl_orbper": 8.3839865,
+      "disc_year": "2016",
+      "sy_dist": 1551.54
+    },
+    {
+      "pl_name": "Kepler-1221 b",
+      "hostname": "Kepler-1221",
+      "pl_rade": 1.88,
+      "pl_bmasse": 4.19,
+      "pl_orbper": 12.00096042,
+      "disc_year": "2016",
+      "sy_dist": 913.65
+    },
+    {
+      "pl_name": "Kepler-158 d",
+      "hostname": "Kepler-158",
+      "pl_rade": 0.43,
+      "pl_bmasse": 0.0472,
+      "pl_orbper": 0.645088,
+      "disc_year": "2024",
+      "sy_dist": 315.177
+    },
+    {
+      "pl_name": "OGLE-2018-BLG-1700L b",
+      "hostname": "OGLE-2018-BLG-1700L",
+      "pl_rade": 12.9,
+      "pl_bmasse": 1400.0,
+      "pl_orbper": null,
+      "disc_year": "2020",
+      "sy_dist": 7600.0
+    },
+    {
+      "pl_name": "Kepler-49 b",
+      "hostname": "Kepler-49",
+      "pl_rade": 2.579,
+      "pl_bmasse": 9.77,
+      "pl_orbper": 7.2,
+      "disc_year": "2012",
+      "sy_dist": 311.222
+    },
+    {
+      "pl_name": "TOI-1295 b",
+      "hostname": "TOI-1295",
+      "pl_rade": 15.69257298,
+      "pl_bmasse": 451.31633794,
+      "pl_orbper": 3.1968838,
+      "disc_year": "2024",
+      "sy_dist": 388.227
+    },
+    {
+      "pl_name": "Kepler-1691 b",
+      "hostname": "Kepler-1691",
+      "pl_rade": 1.83470985,
+      "pl_bmasse": 4.02,
+      "pl_orbper": 3.8482,
+      "disc_year": "2020",
+      "sy_dist": 1267.67
+    },
+    {
+      "pl_name": "Kepler-180 c",
+      "hostname": "Kepler-180",
+      "pl_rade": 3.01,
+      "pl_bmasse": 9.32,
+      "pl_orbper": 41.885775,
+      "disc_year": "2014",
+      "sy_dist": 695.65
+    },
+    {
+      "pl_name": "HATS-33 b",
+      "hostname": "HATS-33",
+      "pl_rade": 13.78707,
+      "pl_bmasse": 378.85336,
+      "pl_orbper": 2.5495551,
+      "disc_year": "2016",
+      "sy_dist": 248.46
+    },
+    {
+      "pl_name": "K2-254 c",
+      "hostname": "K2-254",
+      "pl_rade": 2.19,
+      "pl_bmasse": 5.43,
+      "pl_orbper": 12.11839,
+      "disc_year": "2018",
+      "sy_dist": 227.775
+    },
+    {
+      "pl_name": "HD 38283 b",
+      "hostname": "HD 38283",
+      "pl_rade": 14.0,
+      "pl_bmasse": 127.132,
+      "pl_orbper": 363.20001,
+      "disc_year": "2010",
+      "sy_dist": 38.0615
+    },
+    {
+      "pl_name": "CoRoT-20 b",
+      "hostname": "CoRoT-20",
+      "pl_rade": 9.41556,
+      "pl_bmasse": 1366.669,
+      "pl_orbper": 9.24285,
+      "disc_year": "2011",
+      "sy_dist": 844.061
+    },
+    {
+      "pl_name": "Kepler-162 c",
+      "hostname": "Kepler-162",
+      "pl_rade": 3.03,
+      "pl_bmasse": 9.43,
+      "pl_orbper": 19.446355,
+      "disc_year": "2014",
+      "sy_dist": 855.641
+    },
+    {
+      "pl_name": "TOI-375 d",
+      "hostname": "TOI-375",
+      "pl_rade": 13.6,
+      "pl_bmasse": 445.59542661,
+      "pl_orbper": 297.9,
+      "disc_year": "2026",
+      "sy_dist": 396.213
+    },
+    {
+      "pl_name": "K2-248 b",
+      "hostname": "K2-248",
+      "pl_rade": 2.57,
+      "pl_bmasse": 7.13,
+      "pl_orbper": 7.17256,
+      "disc_year": "2018",
+      "sy_dist": 406.254
+    },
+    {
+      "pl_name": "Kepler-1252 b",
+      "hostname": "Kepler-1252",
+      "pl_rade": 1.67,
+      "pl_bmasse": 3.43,
+      "pl_orbper": 15.0540329,
+      "disc_year": "2016",
+      "sy_dist": 648.979
+    },
+    {
+      "pl_name": "WASP-35 b",
+      "hostname": "WASP-35",
+      "pl_rade": 14.5717,
+      "pl_bmasse": 225.6593,
+      "pl_orbper": 3.16158,
+      "disc_year": "2011",
+      "sy_dist": 202.218
+    },
+    {
+      "pl_name": "HD 155918 b",
+      "hostname": "HD 155918",
+      "pl_rade": 2.67,
+      "pl_bmasse": 7.62788177,
+      "pl_orbper": 1.87567,
+      "disc_year": "2022",
+      "sy_dist": 27.561
+    },
+    {
+      "pl_name": "Kepler-300 c",
+      "hostname": "Kepler-300",
+      "pl_rade": 2.25,
+      "pl_bmasse": 5.69,
+      "pl_orbper": 40.714955,
+      "disc_year": "2014",
+      "sy_dist": 1098.45
+    },
+    {
+      "pl_name": "HD 55696 b",
+      "hostname": "HD 55696",
+      "pl_rade": 12.9,
+      "pl_bmasse": 1357.12729789,
+      "pl_orbper": 1827.0,
+      "disc_year": "2018",
+      "sy_dist": 77.9693
+    },
+    {
+      "pl_name": "Kepler-787 b",
+      "hostname": "Kepler-787",
+      "pl_rade": 1.28,
+      "pl_bmasse": 2.18,
+      "pl_orbper": 0.928310498,
+      "disc_year": "2016",
+      "sy_dist": 503.568
+    },
+    {
+      "pl_name": "WASP-150 b",
+      "hostname": "WASP-150",
+      "pl_rade": 11.99363,
+      "pl_bmasse": 2688.8418,
+      "pl_orbper": 5.644207,
+      "disc_year": "2020",
+      "sy_dist": 527.995
+    },
+    {
+      "pl_name": "NGTS-12 b",
+      "hostname": "NGTS-12",
+      "pl_rade": 11.747032,
+      "pl_bmasse": 66.10864,
+      "pl_orbper": 7.532806,
+      "disc_year": "2020",
+      "sy_dist": 446.442
+    },
+    {
+      "pl_name": "TOI-4155 b",
+      "hostname": "TOI-4155",
+      "pl_rade": 3.21,
+      "pl_bmasse": 10.4,
+      "pl_orbper": 3.320729,
+      "disc_year": "2025",
+      "sy_dist": 240.737
+    },
+    {
+      "pl_name": "KMT-2018-BLG-0029L b",
+      "hostname": "KMT-2018-BLG-0029L",
+      "pl_rade": 2.67,
+      "pl_bmasse": 7.59,
+      "pl_orbper": null,
+      "disc_year": "2020",
+      "sy_dist": 3380.0
+    },
+    {
+      "pl_name": "KMT-2019-BLG-2974L b",
+      "hostname": "KMT-2019-BLG-2974L",
+      "pl_rade": 11.4,
+      "pl_bmasse": 88.99195396,
+      "pl_orbper": null,
+      "disc_year": "2022",
+      "sy_dist": 6100.0
+    },
+    {
+      "pl_name": "HATS-28 b",
+      "hostname": "HATS-28",
+      "pl_rade": 13.383546,
+      "pl_bmasse": 213.58176,
+      "pl_orbper": 3.1810781,
+      "disc_year": "2016",
+      "sy_dist": 535.383
+    },
+    {
+      "pl_name": "Kepler-214 c",
+      "hostname": "Kepler-214",
+      "pl_rade": 2.13,
+      "pl_bmasse": 5.18,
+      "pl_orbper": 28.7798,
+      "disc_year": "2014",
+      "sy_dist": 1208.44
+    },
+    {
+      "pl_name": "HD 33142 b",
+      "hostname": "HD 33142",
+      "pl_rade": 13.7,
+      "pl_bmasse": 400.46379282,
+      "pl_orbper": 330.0,
+      "disc_year": "2011",
+      "sy_dist": 121.375
+    },
+    {
+      "pl_name": "GJ 4274 b",
+      "hostname": "GJ 4274",
+      "pl_rade": 1.53,
+      "pl_bmasse": 2.97,
+      "pl_orbper": 1.6339,
+      "disc_year": "2026",
+      "sy_dist": 7.23556
+    },
+    {
+      "pl_name": "Kepler-385 b",
+      "hostname": "Kepler-385",
+      "pl_rade": 2.73,
+      "pl_bmasse": 12.8,
+      "pl_orbper": 10.043686,
+      "disc_year": "2014",
+      "sy_dist": 1432.61
+    },
+    {
+      "pl_name": "HD 27631 b",
+      "hostname": "HD 27631",
+      "pl_rade": 13.5,
+      "pl_bmasse": 495.81231492,
+      "pl_orbper": 2198.14,
+      "disc_year": "2012",
+      "sy_dist": 50.2862
+    },
+    {
+      "pl_name": "KIC 5479689 b",
+      "hostname": "KIC 5479689",
+      "pl_rade": 14.2,
+      "pl_bmasse": 158.9142035,
+      "pl_orbper": 1.701531,
+      "disc_year": "2021",
+      "sy_dist": 454.95
+    },
+    {
+      "pl_name": "TOI-2120 b",
+      "hostname": "TOI-2120",
+      "pl_rade": 2.122,
+      "pl_bmasse": 6.8,
+      "pl_orbper": 5.7998164,
+      "disc_year": "2024",
+      "sy_dist": 32.1755
+    },
+    {
+      "pl_name": "Kepler-1257 b",
+      "hostname": "Kepler-1257",
+      "pl_rade": 1.52,
+      "pl_bmasse": 2.92,
+      "pl_orbper": 2.668313762,
+      "disc_year": "2016",
+      "sy_dist": 1105.95
+    },
+    {
+      "pl_name": "Kepler-1744 b",
+      "hostname": "Kepler-1744",
+      "pl_rade": 3.76754004,
+      "pl_bmasse": 13.6,
+      "pl_orbper": 37.10110092,
+      "disc_year": "2021",
+      "sy_dist": 1091.63
+    },
+    {
+      "pl_name": "OGLE-2012-BLG-0026L b",
+      "hostname": "OGLE-2012-BLG-0026L",
+      "pl_rade": 7.72,
+      "pl_bmasse": 46.1,
+      "pl_orbper": null,
+      "disc_year": "2012",
+      "sy_dist": 4019.0
+    },
+    {
+      "pl_name": "OGLE-2017-BLG-0482L b",
+      "hostname": "OGLE-2017-BLG-0482L",
+      "pl_rade": 2.95,
+      "pl_bmasse": 9.0,
+      "pl_orbper": null,
+      "disc_year": "2018",
+      "sy_dist": 5800.0
+    },
+    {
+      "pl_name": "Kepler-901 b",
+      "hostname": "Kepler-901",
+      "pl_rade": 1.37,
+      "pl_bmasse": 2.45,
+      "pl_orbper": 3.517494394,
+      "disc_year": "2016",
+      "sy_dist": 253.867
+    },
+    {
+      "pl_name": "KELT-6 c",
+      "hostname": "KELT-6",
+      "pl_rade": 13.0,
+      "pl_bmasse": 1179.1493,
+      "pl_orbper": 1276.0,
+      "disc_year": "2015",
+      "sy_dist": 240.726
     }
   ],
-  "fetched_at": "2026-07-08T16:56:04.970432+00:00",
+  "fetched_at": "2026-07-08T18:13:11.328792+00:00",
   "external_cache": "D:\\FSOT-2.1-Lean-PublicData\\nasa_exoplanet\\nasa_exoplanet_cache.json"
 }

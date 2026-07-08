@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def nasa_exoplanet_archive_observable_count : ℕ := 160
+def nasa_exoplanet_archive_observable_count : ℕ := 296
 def nasa_exoplanet_archive_median_error_pct : ℝ := (0.0 : ℝ)
 def nasa_exoplanet_archive_D_eff : ℕ := 21
 
@@ -23,7 +23,7 @@ theorem nasa_exoplanet_archive_median_error_under_five_pct :
   unfold nasa_exoplanet_archive_median_error_pct; norm_num
 
 theorem nasa_exoplanet_archive_bundle :
-    nasa_exoplanet_archive_observable_count = 160 ∧
+    nasa_exoplanet_archive_observable_count = 296 ∧
     nasa_exoplanet_archive_D_eff = 21 ∧
     nasa_exoplanet_archive_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "astronomical") > 0 := by

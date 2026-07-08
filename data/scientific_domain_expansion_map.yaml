@@ -1,8 +1,8 @@
-generated_at: '2026-07-08T16:58:20.089933+00:00'
+generated_at: '2026-07-08T18:15:15.745171+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 63
-  total_scientific_domains_covered: 99
+  extension_domains: 67
+  total_scientific_domains_covered: 103
   total_empirical_records: 307820
   domains_target_band_2pct: 34
   domains_sign_mismatch: 1
@@ -12,7 +12,7 @@ summary:
     C_thin: 6
     D_needs_work: 0
     unverified: 1
-  lean_formal_modules: 119
+  lean_formal_modules: 123
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -714,13 +714,13 @@ extension_domains:
   lean_module: FSOT.Formal.NistCodataConstantsPriors
 - domain: GBIF_Species_Occurrence
   tier: 38
-  record_count: 240
+  record_count: 600
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.GbifSpeciesOccurrencePriors
 - domain: NOAA_Coastal_Tides
   tier: 38
-  record_count: 20
+  record_count: 40
   median_error_pct: 0.0
   coverage_tier: B_verified
   lean_module: FSOT.Formal.NoaaCoastalTidesPriors
@@ -732,27 +732,27 @@ extension_domains:
   lean_module: FSOT.Formal.WorldBankDevelopmentPriors
 - domain: NASA_Exoplanet_Archive
   tier: 38
-  record_count: 160
+  record_count: 296
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.NasaExoplanetArchivePriors
 - domain: RCSB_PDB_Structures
   tier: 38
-  record_count: 45
+  record_count: 86
   median_error_pct: 0.0
   coverage_tier: B_verified
   lean_module: FSOT.Formal.RcsbPdbStructuresPriors
 - domain: OpenAlex_Citation_Graph
   tier: 38
-  record_count: 80
+  record_count: 150
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.OpenalexCitationGraphPriors
 - domain: PubChem_Compound_Properties
   tier: 38
-  record_count: 12
-  median_error_pct: 0.0012801911752094832
-  coverage_tier: C_thin
+  record_count: 29
+  median_error_pct: 0.0024238898584426276
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.PubchemCompoundPropertiesPriors
 - domain: CERN_Open_Data_LHC
   tier: 38
@@ -762,10 +762,34 @@ extension_domains:
   lean_module: FSOT.Formal.CernOpenDataLhcPriors
 - domain: UniProt_Protein_Annotations
   tier: 38
-  record_count: 22
+  record_count: 62
   median_error_pct: 0.0
   coverage_tier: B_verified
   lean_module: FSOT.Formal.UniprotProteinAnnotationsPriors
+- domain: Space_Propulsion_Systems
+  tier: 39
+  record_count: 21
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.SpacePropulsionSystemsPriors
+- domain: Electrical_Power_Systems
+  tier: 39
+  record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.ElectricalPowerSystemsPriors
+- domain: HVAC_Thermal_Systems
+  tier: 39
+  record_count: 7
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.HvacThermalSystemsPriors
+- domain: Breakthrough_Discoveries_2024_2026
+  tier: 39
+  record_count: 21
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.BreakthroughDiscoveries20242026Priors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572

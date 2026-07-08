@@ -79,6 +79,10 @@ DEDICATED_GENERATORS = {
     "PubChem_Compound_Properties",
     "CERN_Open_Data_LHC",
     "UniProt_Protein_Annotations",
+    "Space_Propulsion_Systems",
+    "Electrical_Power_Systems",
+    "HVAC_Thermal_Systems",
+    "Breakthrough_Discoveries_2024_2026",
 }
 
 LEAN_SIGN = {
@@ -145,6 +149,10 @@ LEAN_SIGN = {
     "PubChem_Compound_Properties": ("electron", "electron_raw_S_positive"),
     "CERN_Open_Data_LHC": ("particle", "particle_raw_S_positive"),
     "UniProt_Protein_Annotations": ("biological", "biological_raw_S_positive"),
+    "Space_Propulsion_Systems": ("fusion", "fusion_raw_S_positive"),
+    "Electrical_Power_Systems": ("electron", "electron_raw_S_positive"),
+    "HVAC_Thermal_Systems": ("energy", "energy_raw_S_positive"),
+    "Breakthrough_Discoveries_2024_2026": ("particle", "particle_raw_S_positive"),
 }
 
 

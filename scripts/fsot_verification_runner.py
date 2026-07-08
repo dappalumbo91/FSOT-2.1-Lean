@@ -222,6 +222,10 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.PubchemCompoundPropertiesPriors",
                 "FSOT.Formal.CernOpenDataLhcPriors",
                 "FSOT.Formal.UniprotProteinAnnotationsPriors",
+                "FSOT.Formal.SpacePropulsionSystemsPriors",
+                "FSOT.Formal.ElectricalPowerSystemsPriors",
+                "FSOT.Formal.HvacThermalSystemsPriors",
+                "FSOT.Formal.BreakthroughDiscoveries20242026Priors",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -837,6 +841,7 @@ def main() -> int:
                 "build_rust_lean_bridge_benchmark.py",
                 "build_bibliography_lean_corpus_benchmark.py",
                 "build_tier38_public_data_benchmarks.py",
+                "build_tier39_propulsion_electrical_benchmarks.py",
                 "ingest_climate_ncei_chunked.py",
                 "build_climate_observed_benchmark.py",
             ):
@@ -953,6 +958,8 @@ def main() -> int:
             (None, "gen_bibliography_lean_corpus_lean.py", "BibliographyLeanCorpusPriors.lean generation failed", None),
             ("ingest_tier38_public_data.py", None, None, "Tier 38 public data ingest failed"),
             (None, "gen_tier38_public_data_lean.py", "Tier 38 public data Lean generation failed", None),
+            ("ingest_tier39_propulsion_electrical.py", None, None, "Tier 39 propulsion/electrical ingest failed"),
+            (None, "gen_tier39_propulsion_electrical_lean.py", "Tier 39 propulsion/electrical Lean generation failed", None),
         ]
             for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
                 if ingest_name:

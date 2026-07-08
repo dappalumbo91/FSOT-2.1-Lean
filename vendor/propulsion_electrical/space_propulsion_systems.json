@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "source": "NASA Small Spacecraft SoA 2026 Ch.4, JPL DESCANSO, IEPC 2025, NASA TechPort AEPS",
+  "updated": "2026-07-08",
+  "systems": [
+    {"name": "NASA NEXT-C ion", "type": "gridded_ion", "power_kw": 6.9, "thrust_mn": 236, "isp_s": 4190, "trl": 6, "year": 2020},
+    {"name": "NASA AEPS Hall", "type": "hall_effect", "power_kw": 12.5, "thrust_mn": 600, "isp_s": 2570, "trl": 6, "year": 2024},
+    {"name": "NASA X3 Hall", "type": "hall_effect", "power_kw": 102, "thrust_mn": 5400, "isp_s": 2650, "trl": 5, "year": 2017},
+    {"name": "Busek BHT-6000", "type": "hall_effect", "power_kw": 6, "thrust_mn": 375, "isp_s": 2000, "trl": 9, "year": 2024},
+    {"name": "Busek BHT-15000", "type": "hall_effect", "power_kw": 15, "thrust_mn": 1000, "isp_s": 2100, "trl": 8, "year": 2023},
+    {"name": "NSTAR ion (Deep Space 1)", "type": "gridded_ion", "power_kw": 2.3, "thrust_mn": 92, "isp_s": 3120, "trl": 9, "year": 1998},
+    {"name": "Dawn T5 ion", "type": "gridded_ion", "power_kw": 2.6, "thrust_mn": 90, "isp_s": 3100, "trl": 9, "year": 2007},
+    {"name": "SPT-100 Hall", "type": "hall_effect", "power_kw": 1.35, "thrust_mn": 83, "isp_s": 1600, "trl": 9, "year": 1999},
+    {"name": "DRACO NTP target", "type": "nuclear_thermal", "power_kw": 1000, "thrust_kn": 13, "isp_s": 900, "trl": 4, "year": 2025},
+    {"name": "Pulsar Sunbird fusion", "type": "fusion_plasma", "power_kw": 500, "isp_s": 100000, "trl": 3, "year": 2025},
+    {"name": "CAPSTONE water-electrolysis", "type": "chemical_cubesat", "delta_v_mps": 80, "mass_kg": 25, "trl": 9, "year": 2022},
+    {"name": "Green Propellant (AF-M315E)", "type": "chemical_green", "isp_s": 252, "density_g_cc": 1.24, "trl": 9, "year": 2020}
+  ]
+}

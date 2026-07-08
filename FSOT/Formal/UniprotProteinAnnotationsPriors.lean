@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def uniprot_protein_annotations_observable_count : ℕ := 22
+def uniprot_protein_annotations_observable_count : ℕ := 62
 def uniprot_protein_annotations_median_error_pct : ℝ := (0.0 : ℝ)
 def uniprot_protein_annotations_D_eff : ℕ := 12
 
@@ -23,7 +23,7 @@ theorem uniprot_protein_annotations_median_error_under_five_pct :
   unfold uniprot_protein_annotations_median_error_pct; norm_num
 
 theorem uniprot_protein_annotations_bundle :
-    uniprot_protein_annotations_observable_count = 22 ∧
+    uniprot_protein_annotations_observable_count = 62 ∧
     uniprot_protein_annotations_D_eff = 12 ∧
     uniprot_protein_annotations_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by

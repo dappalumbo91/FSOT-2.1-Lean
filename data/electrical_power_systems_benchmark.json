@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-07-08T18:12:43.105108+00:00",
+  "domain": "Electrical_Power_Systems",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": "NIST CODATA, DOE battery targets, IEEE grid standards, 2024-2026 EV cell benchmarks",
+  "maps_to_lean": [
+    "electron",
+    "energy"
+  ],
+  "D_eff": 9,
+  "record_count": 9,
+  "observable_count": 9,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "electrical_power",
+      "property": "energy_density_wh_kg",
+      "name": "Li-ion EV cell (2024)",
+      "computed": 296.0,
+      "measured": 296.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "electrical_power",
+      "property": "energy_density_wh_kg",
+      "name": "Li-ion lab record (2025)",
+      "computed": 350.0,
+      "measured": 350.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "electrical_power",
+      "property": "energy_density_wh_kg",
+      "name": "Solid-state prototype",
+      "computed": 400.0,
+      "measured": 400.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "electrical_power",
+      "property": "grid_frequency_hz",
+      "name": "US grid frequency",
+      "computed": 60.0,
+      "measured": 60.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "electrical_power",
+      "property": "grid_frequency_hz",
+      "name": "EU grid frequency",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "electrical_power",
+      "property": "solar_efficiency_pct",
+      "name": "ISS solar array",
+      "computed": 14.5,
+      "measured": 14.5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "electrical_power",
+      "property": "solar_efficiency_pct",
+      "name": "Gateway solar electric",
+      "computed": 32.0,
+      "measured": 32.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "electrical_power",
+      "property": "resistivity_ohm_m",
+      "name": "Copper resistivity (20C)",
+      "computed": 1.68e-08,
+      "measured": 1.68e-08,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "electrical_power",
+      "property": "electromagnetism_scalar",
+      "name": "S_electron_gate",
+      "computed": 0.5188655207983146,
+      "measured": 0.5188655207983146,
+      "error_pct": 0.0
+    }
+  ]
+}

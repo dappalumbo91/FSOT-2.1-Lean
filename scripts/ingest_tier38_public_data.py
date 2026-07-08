@@ -16,12 +16,21 @@ from tier38_public_data_lib import INGESTORS, external_data_root  # noqa: E402
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
+        "--deep",
+        action="store_true",
+        help="Expanded cohort limits (GBIF 300, PubChem 40, etc.)",
+    )
+    parser.add_argument(
         "--only",
         choices=sorted(INGESTORS.keys()),
         action="append",
         help="Ingest a single source (repeatable)",
     )
     args = parser.parse_args()
+    if args.deep:
+        import os
+
+        os.environ["FSOT_TIER38_DEEP"] = "1"
     keys = args.only or sorted(INGESTORS.keys())
     print(f"External data root: {external_data_root()}")
     failed: list[str] = []

@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def rcsb_pdb_structures_observable_count : ℕ := 45
+def rcsb_pdb_structures_observable_count : ℕ := 86
 def rcsb_pdb_structures_median_error_pct : ℝ := (0.0 : ℝ)
 def rcsb_pdb_structures_D_eff : ℕ := 13
 
@@ -23,7 +23,7 @@ theorem rcsb_pdb_structures_median_error_under_five_pct :
   unfold rcsb_pdb_structures_median_error_pct; norm_num
 
 theorem rcsb_pdb_structures_bundle :
-    rcsb_pdb_structures_observable_count = 45 ∧
+    rcsb_pdb_structures_observable_count = 86 ∧
     rcsb_pdb_structures_D_eff = 13 ∧
     rcsb_pdb_structures_median_error_pct < (5 : ℝ) ∧
     raw_S (get_domain_params "medical") > 0 := by

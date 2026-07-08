@@ -726,7 +726,7 @@ extension_domains:
     manifest: data/tier38_public_apis_manifest.yaml
     benchmark_data: data/gbif_species_occurrence_benchmark.json
     lean_module: FSOT.Formal.GbifSpeciesOccurrencePriors
-    note: "GBIF species occurrence coordinates (120 cohort)"
+    note: "GBIF species occurrence coordinates (300-ingest / 600 observables)"
 
   NOAA_Coastal_Tides:
     tier: 38
@@ -740,7 +740,7 @@ extension_domains:
     manifest: data/tier38_public_apis_manifest.yaml
     benchmark_data: data/noaa_coastal_tides_benchmark.json
     lean_module: FSOT.Formal.NoaaCoastalTidesPriors
-    note: "NOAA CO-OPS coastal tide predictions (5 stations)"
+    note: "NOAA CO-OPS coastal tide predictions (10 stations deep)"
 
   World_Bank_Development:
     tier: 38
@@ -782,7 +782,7 @@ extension_domains:
     manifest: data/tier38_public_apis_manifest.yaml
     benchmark_data: data/rcsb_pdb_structures_benchmark.json
     lean_module: FSOT.Formal.RcsbPdbStructuresPriors
-    note: "RCSB PDB structural biology metrics (15 structures)"
+    note: "RCSB PDB structural biology metrics (29 structures deep)"
 
   OpenAlex_Citation_Graph:
     tier: 38
@@ -796,7 +796,7 @@ extension_domains:
     manifest: data/tier38_public_apis_manifest.yaml
     benchmark_data: data/openalex_citation_graph_benchmark.json
     lean_module: FSOT.Formal.OpenalexCitationGraphPriors
-    note: "OpenAlex scholarly citation graph (80 works)"
+    note: "OpenAlex scholarly citation graph (150 works deep)"
 
   PubChem_Compound_Properties:
     tier: 38
@@ -810,7 +810,7 @@ extension_domains:
     manifest: data/tier38_public_apis_manifest.yaml
     benchmark_data: data/pubchem_compound_properties_benchmark.json
     lean_module: FSOT.Formal.PubchemCompoundPropertiesPriors
-    note: "PubChem molecular weight vs formula mass (12 compounds)"
+    note: "PubChem molecular weight vs formula mass (31 compounds deep)"
 
   CERN_Open_Data_LHC:
     tier: 38
@@ -839,6 +839,62 @@ extension_domains:
     benchmark_data: data/uniprot_protein_annotations_benchmark.json
     lean_module: FSOT.Formal.UniprotProteinAnnotationsPriors
     note: "UniProt protein sequence length + molecular weight annotations"
+
+  Space_Propulsion_Systems:
+    tier: 39
+    D_eff: 14
+    delta_psi: 0.8
+    recent_hits: 5
+    observed: true
+    maps_to_lean: [fusion, particle, astronomical]
+    ingest_script: scripts/ingest_tier39_propulsion_electrical.py
+    build_script: scripts/build_tier39_propulsion_electrical_benchmarks.py
+    manifest: data/tier39_propulsion_electrical_manifest.yaml
+    benchmark_data: data/space_propulsion_systems_benchmark.json
+    lean_module: FSOT.Formal.SpacePropulsionSystemsPriors
+    note: "State-of-the-art electric/chemical/NTP propulsion (12 systems + thrust-power gates)"
+
+  Electrical_Power_Systems:
+    tier: 39
+    D_eff: 9
+    delta_psi: 0.4
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [electron, energy]
+    ingest_script: scripts/ingest_tier39_propulsion_electrical.py
+    build_script: scripts/build_tier39_propulsion_electrical_benchmarks.py
+    manifest: data/tier39_propulsion_electrical_manifest.yaml
+    benchmark_data: data/electrical_power_systems_benchmark.json
+    lean_module: FSOT.Formal.ElectricalPowerSystemsPriors
+    note: "Grid, battery, solar, superconductor electrical power cohort (12 systems)"
+
+  HVAC_Thermal_Systems:
+    tier: 39
+    D_eff: 13
+    delta_psi: 0.6
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [energy, material]
+    ingest_script: scripts/ingest_tier39_propulsion_electrical.py
+    build_script: scripts/build_tier39_propulsion_electrical_benchmarks.py
+    manifest: data/tier39_propulsion_electrical_manifest.yaml
+    benchmark_data: data/hvac_thermal_systems_benchmark.json
+    lean_module: FSOT.Formal.HvacThermalSystemsPriors
+    note: "Heat pumps, SEER/COP, Carnot-limit HVAC thermal cohort (12 systems)"
+
+  Breakthrough_Discoveries_2024_2026:
+    tier: 39
+    D_eff: 22
+    delta_psi: 2.0
+    recent_hits: 20
+    observed: true
+    maps_to_lean: [particle, astronomical, cosmological]
+    ingest_script: scripts/ingest_tier39_propulsion_electrical.py
+    build_script: scripts/build_tier39_propulsion_electrical_benchmarks.py
+    manifest: data/tier39_propulsion_electrical_manifest.yaml
+    benchmark_data: data/breakthrough_discoveries_2024_2026_benchmark.json
+    lean_module: FSOT.Formal.BreakthroughDiscoveries20242026Priors
+    note: "World-shaking 2024-2026 breakthroughs (NIF, AEPS, DRACO, Webb, Euclid, Starship, etc.)"
 
 verification:
   min_records_per_domain: 5

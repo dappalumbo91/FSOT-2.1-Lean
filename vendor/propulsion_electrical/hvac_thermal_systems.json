@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "source": "ASHRAE Standard 90.1, DOE SEER ratings, Carnot thermodynamics reference",
+  "updated": "2026-07-08",
+  "systems": [
+    {"name": "Residential SEER 14 baseline", "type": "vapor_compression", "seer": 14, "cop_rated": 3.5, "refrigerant": "R410A", "year": 2023},
+    {"name": "High-efficiency SEER 22", "type": "vapor_compression", "seer": 22, "cop_rated": 5.5, "refrigerant": "R32", "year": 2024},
+    {"name": "Heat pump HSPF 10", "type": "heat_pump", "hspf": 10, "cop_heat": 3.0, "year": 2024},
+    {"name": "Heat pump HSPF 13", "type": "heat_pump", "hspf": 13, "cop_heat": 3.8, "year": 2025},
+    {"name": "Carnot COP (0C cold, 27C hot)", "type": "thermodynamic_limit", "cop_carnot": 11.0, "t_cold_k": 273.15, "t_hot_k": 300.15, "year": 2026},
+    {"name": "Carnot COP (5C cold, 35C hot)", "type": "thermodynamic_limit", "cop_carnot": 9.4, "t_cold_k": 278.15, "t_hot_k": 308.15, "year": 2026},
+    {"name": "Chiller centrifugal", "type": "commercial_hvac", "cop": 6.2, "capacity_tons": 500, "year": 2024},
+    {"name": "Geothermal heat pump", "type": "ground_source", "cop": 4.5, "eer": 20, "year": 2024},
+    {"name": "R410A critical temp", "type": "refrigerant", "tc_k": 344.5, "year": 2026},
+    {"name": "R32 GWP", "type": "refrigerant", "gwp": 675, "year": 2024},
+    {"name": "Data center PUE 1.1", "type": "cooling_infrastructure", "pue": 1.1, "year": 2025},
+    {"name": "Liquid cooling CDU", "type": "data_center", "delta_t_c": 12, "flow_lpm": 40, "year": 2025}
+  ]
+}

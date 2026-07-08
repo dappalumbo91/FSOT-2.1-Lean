@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-08T16:57:28.703885+00:00",
+  "generated_at": "2026-07-08T18:14:18.360372+00:00",
   "domain": "NASA_Exoplanet_Archive",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
-  "source": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+120+pl_name%2Chostname%2Cpl_rade%2Cpl_bmasse%2Cpl_orbper%2Cdisc_year%2Csy_dist+from+pscomppars&format=csv",
+  "source": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+150+pl_name%2Chostname%2Cpl_rade%2Cpl_bmasse%2Cpl_orbper%2Cdisc_year%2Csy_dist+from+pscomppars&format=csv",
   "maps_to_lean": [
     "astronomical",
     "galactic"
   ],
   "D_eff": 21,
-  "record_count": 160,
-  "observable_count": 160,
+  "record_count": 296,
+  "observable_count": 296,
   "median_error_pct": 0.0,
   "records": [
     {
@@ -1290,6 +1290,1094 @@
       "name": "HD 156846 b",
       "computed": 3391.2461,
       "measured": 3391.2461,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "WASP-151 b",
+      "computed": 13.30506009,
+      "measured": 13.30506009,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "WASP-151 b",
+      "computed": 100.43377661,
+      "measured": 100.43377661,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-80 g",
+      "computed": 1.13,
+      "measured": 1.13,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-80 g",
+      "computed": 0.065,
+      "measured": 0.065,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-263 b",
+      "computed": 2.67,
+      "measured": 2.67,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-263 b",
+      "computed": 7.61,
+      "measured": 7.61,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "K2-10 b",
+      "computed": 3.773,
+      "measured": 3.773,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "K2-10 b",
+      "computed": 25.2,
+      "measured": 25.2,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "TOI-411 b",
+      "computed": 1.362,
+      "measured": 1.362,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "TOI-411 b",
+      "computed": 13.71,
+      "measured": 13.71,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "WASP-120 b",
+      "computed": 15.58048317,
+      "measured": 15.58048317,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "WASP-120 b",
+      "computed": 1541.4755,
+      "measured": 1541.4755,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-1006 b",
+      "computed": 1.54,
+      "measured": 1.54,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-1006 b",
+      "computed": 2.99,
+      "measured": 2.99,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-398 d",
+      "computed": 0.88,
+      "measured": 0.88,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-398 d",
+      "computed": 0.615,
+      "measured": 0.615,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "TOI-5335 b",
+      "computed": 4.02422162,
+      "measured": 4.02422162,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "TOI-5335 b",
+      "computed": 15.3,
+      "measured": 15.3,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-78 b",
+      "computed": 1.201,
+      "measured": 1.201,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-78 b",
+      "computed": 1.68,
+      "measured": 1.68,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-253 d",
+      "computed": 3.17,
+      "measured": 3.17,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-253 d",
+      "computed": 10.2,
+      "measured": 10.2,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "K2-62 b",
+      "computed": 2.02,
+      "measured": 2.02,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "K2-62 b",
+      "computed": 4.74,
+      "measured": 4.74,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-369 b",
+      "computed": 1.13,
+      "measured": 1.13,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-369 b",
+      "computed": 1.51,
+      "measured": 1.51,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-657 b",
+      "computed": 3.52,
+      "measured": 3.52,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-657 b",
+      "computed": 12.2,
+      "measured": 12.2,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-513 b",
+      "computed": 2.2,
+      "measured": 2.2,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-513 b",
+      "computed": 5.48,
+      "measured": 5.48,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "TOI-1180 b",
+      "computed": 3.072,
+      "measured": 3.072,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "TOI-1180 b",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "11 UMi b",
+      "computed": 12.3,
+      "measured": 12.3,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "11 UMi b",
+      "computed": 4684.8142,
+      "measured": 4684.8142,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-1390 b",
+      "computed": 1.18,
+      "measured": 1.18,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-1390 b",
+      "computed": 1.76,
+      "measured": 1.76,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "OGLE-2018-BLG-0298L b",
+      "computed": 7.56,
+      "measured": 7.56,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "OGLE-2018-BLG-0298L b",
+      "computed": 44.49597698,
+      "measured": 44.49597698,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "WASP-60 b",
+      "computed": 9.86392,
+      "measured": 9.86392,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "WASP-60 b",
+      "computed": 174.8065,
+      "measured": 174.8065,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-1762 b",
+      "computed": 2.76022913,
+      "measured": 2.76022913,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-1762 b",
+      "computed": 8.05,
+      "measured": 8.05,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-98 b",
+      "computed": 1.99,
+      "measured": 1.99,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-98 b",
+      "computed": 3.55,
+      "measured": 3.55,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-403 c",
+      "computed": 1.75,
+      "measured": 1.75,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-403 c",
+      "computed": 3.71,
+      "measured": 3.71,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-292 b",
+      "computed": 1.32,
+      "measured": 1.32,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-292 b",
+      "computed": 2.3,
+      "measured": 2.3,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "K2-49 b",
+      "computed": 1.93,
+      "measured": 1.93,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "K2-49 b",
+      "computed": 4.38,
+      "measured": 4.38,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "HD 142245 b",
+      "computed": 13.1,
+      "measured": 13.1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "HD 142245 b",
+      "computed": 975.7381,
+      "measured": 975.7381,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "TOI-1452 b",
+      "computed": 1.672,
+      "measured": 1.672,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "TOI-1452 b",
+      "computed": 4.82,
+      "measured": 4.82,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-110 b",
+      "computed": 1.83,
+      "measured": 1.83,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-110 b",
+      "computed": 4.01,
+      "measured": 4.01,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-1296 b",
+      "computed": 0.91,
+      "measured": 0.91,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-1296 b",
+      "computed": 0.693,
+      "measured": 0.693,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-1221 b",
+      "computed": 1.88,
+      "measured": 1.88,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-1221 b",
+      "computed": 4.19,
+      "measured": 4.19,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-158 d",
+      "computed": 0.43,
+      "measured": 0.43,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-158 d",
+      "computed": 0.0472,
+      "measured": 0.0472,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "OGLE-2018-BLG-1700L b",
+      "computed": 12.9,
+      "measured": 12.9,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "OGLE-2018-BLG-1700L b",
+      "computed": 1400.0,
+      "measured": 1400.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-49 b",
+      "computed": 2.579,
+      "measured": 2.579,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-49 b",
+      "computed": 9.77,
+      "measured": 9.77,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "TOI-1295 b",
+      "computed": 15.69257298,
+      "measured": 15.69257298,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "TOI-1295 b",
+      "computed": 451.31633794,
+      "measured": 451.31633794,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-1691 b",
+      "computed": 1.83470985,
+      "measured": 1.83470985,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-1691 b",
+      "computed": 4.02,
+      "measured": 4.02,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-180 c",
+      "computed": 3.01,
+      "measured": 3.01,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-180 c",
+      "computed": 9.32,
+      "measured": 9.32,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "HATS-33 b",
+      "computed": 13.78707,
+      "measured": 13.78707,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "HATS-33 b",
+      "computed": 378.85336,
+      "measured": 378.85336,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "K2-254 c",
+      "computed": 2.19,
+      "measured": 2.19,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "K2-254 c",
+      "computed": 5.43,
+      "measured": 5.43,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "HD 38283 b",
+      "computed": 14.0,
+      "measured": 14.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "HD 38283 b",
+      "computed": 127.132,
+      "measured": 127.132,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "CoRoT-20 b",
+      "computed": 9.41556,
+      "measured": 9.41556,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "CoRoT-20 b",
+      "computed": 1366.669,
+      "measured": 1366.669,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-162 c",
+      "computed": 3.03,
+      "measured": 3.03,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-162 c",
+      "computed": 9.43,
+      "measured": 9.43,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "TOI-375 d",
+      "computed": 13.6,
+      "measured": 13.6,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "TOI-375 d",
+      "computed": 445.59542661,
+      "measured": 445.59542661,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "K2-248 b",
+      "computed": 2.57,
+      "measured": 2.57,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "K2-248 b",
+      "computed": 7.13,
+      "measured": 7.13,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-1252 b",
+      "computed": 1.67,
+      "measured": 1.67,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-1252 b",
+      "computed": 3.43,
+      "measured": 3.43,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "WASP-35 b",
+      "computed": 14.5717,
+      "measured": 14.5717,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "WASP-35 b",
+      "computed": 225.6593,
+      "measured": 225.6593,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "HD 155918 b",
+      "computed": 2.67,
+      "measured": 2.67,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "HD 155918 b",
+      "computed": 7.62788177,
+      "measured": 7.62788177,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-300 c",
+      "computed": 2.25,
+      "measured": 2.25,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-300 c",
+      "computed": 5.69,
+      "measured": 5.69,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "HD 55696 b",
+      "computed": 12.9,
+      "measured": 12.9,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "HD 55696 b",
+      "computed": 1357.12729789,
+      "measured": 1357.12729789,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-787 b",
+      "computed": 1.28,
+      "measured": 1.28,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-787 b",
+      "computed": 2.18,
+      "measured": 2.18,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "WASP-150 b",
+      "computed": 11.99363,
+      "measured": 11.99363,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "WASP-150 b",
+      "computed": 2688.8418,
+      "measured": 2688.8418,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "NGTS-12 b",
+      "computed": 11.747032,
+      "measured": 11.747032,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "NGTS-12 b",
+      "computed": 66.10864,
+      "measured": 66.10864,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "TOI-4155 b",
+      "computed": 3.21,
+      "measured": 3.21,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "TOI-4155 b",
+      "computed": 10.4,
+      "measured": 10.4,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "KMT-2018-BLG-0029L b",
+      "computed": 2.67,
+      "measured": 2.67,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "KMT-2018-BLG-0029L b",
+      "computed": 7.59,
+      "measured": 7.59,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "KMT-2019-BLG-2974L b",
+      "computed": 11.4,
+      "measured": 11.4,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "KMT-2019-BLG-2974L b",
+      "computed": 88.99195396,
+      "measured": 88.99195396,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "HATS-28 b",
+      "computed": 13.383546,
+      "measured": 13.383546,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "HATS-28 b",
+      "computed": 213.58176,
+      "measured": 213.58176,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-214 c",
+      "computed": 2.13,
+      "measured": 2.13,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-214 c",
+      "computed": 5.18,
+      "measured": 5.18,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "HD 33142 b",
+      "computed": 13.7,
+      "measured": 13.7,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "HD 33142 b",
+      "computed": 400.46379282,
+      "measured": 400.46379282,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "GJ 4274 b",
+      "computed": 1.53,
+      "measured": 1.53,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "GJ 4274 b",
+      "computed": 2.97,
+      "measured": 2.97,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-385 b",
+      "computed": 2.73,
+      "measured": 2.73,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-385 b",
+      "computed": 12.8,
+      "measured": 12.8,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "HD 27631 b",
+      "computed": 13.5,
+      "measured": 13.5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "HD 27631 b",
+      "computed": 495.81231492,
+      "measured": 495.81231492,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "KIC 5479689 b",
+      "computed": 14.2,
+      "measured": 14.2,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "KIC 5479689 b",
+      "computed": 158.9142035,
+      "measured": 158.9142035,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "TOI-2120 b",
+      "computed": 2.122,
+      "measured": 2.122,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "TOI-2120 b",
+      "computed": 6.8,
+      "measured": 6.8,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-1257 b",
+      "computed": 1.52,
+      "measured": 1.52,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-1257 b",
+      "computed": 2.92,
+      "measured": 2.92,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-1744 b",
+      "computed": 3.76754004,
+      "measured": 3.76754004,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-1744 b",
+      "computed": 13.6,
+      "measured": 13.6,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "OGLE-2012-BLG-0026L b",
+      "computed": 7.72,
+      "measured": 7.72,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "OGLE-2012-BLG-0026L b",
+      "computed": 46.1,
+      "measured": 46.1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "OGLE-2017-BLG-0482L b",
+      "computed": 2.95,
+      "measured": 2.95,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "OGLE-2017-BLG-0482L b",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "Kepler-901 b",
+      "computed": 1.37,
+      "measured": 1.37,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "Kepler-901 b",
+      "computed": 2.45,
+      "measured": 2.45,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_rade",
+      "name": "KELT-6 c",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "nasa_exoplanet",
+      "property": "pl_bmasse",
+      "name": "KELT-6 c",
+      "computed": 1179.1493,
+      "measured": 1179.1493,
       "error_pct": 0.0
     }
   ]

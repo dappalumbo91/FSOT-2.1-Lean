@@ -1,4 +1,4 @@
-generated_at: '2026-07-08T16:58:20.369815+00:00'
+generated_at: '2026-07-08T18:15:16.035146+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 119
+  lean_formal_modules: 123
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 36
-  tiers_total: 36
+  tiers_complete: 37
+  tiers_total: 37
   percent_complete: 100.0
-current_tier: Tier 38 Public API wave — NIST, GBIF, NOAA, World Bank, NASA, RCSB,
-  OpenAlex, PubChem, CERN, UniProt
+current_tier: Tier 39 Propulsion/electrical wave — space propulsion, electrical power,
+  HVAC, 2024-2026 breakthroughs
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -424,7 +424,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: true
-scientific_domains_covered: 99
+scientific_domains_covered: 103
 total_empirical_records: 307820
 tier_coverage:
 - tier: 1
@@ -446,6 +446,7 @@ tier_coverage:
   - BiologyStrictEmpiricalPriors
   - BlackHoleThesisPriors
   - BrainPriors
+  - BreakthroughDiscoveries20242026Priors
   - CameoPriors
   - CellularPriors
   - CernOpenDataLhcPriors
@@ -466,6 +467,7 @@ tier_coverage:
   - CryospherePriors
   - DomainCoveragePriors
   - DomainPrecisionPriors
+  - ElectricalPowerSystemsPriors
   - EmergentDomainPriors
   - EvolutionPriors
   - ExperimentSynthesisPriors
@@ -478,6 +480,7 @@ tier_coverage:
   - GeomagnetismPriors
   - GraceCryospherePriors
   - HiggsBranchingPriors
+  - HvacThermalSystemsPriors
   - HydrologyPriors
   - IGEMLiveFastaPriors
   - IGEMSyntheticBiologyPriors
@@ -528,6 +531,7 @@ tier_coverage:
   - SeismologyPriors
   - SmallBodyOrbitsPriors
   - SoulSiblingPriors
+  - SpacePropulsionSystemsPriors
   - SpaceWeatherPriors
   - SpeciesPriors
   - StructureCalibrationPriors
@@ -649,7 +653,7 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 89
+    scientific_domains_covered: 99
     expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -1069,7 +1073,7 @@ tier_coverage:
   metrics:
     formula_corpus_portable: true
     formula_corpus_records_hint: 7941
-    extension_domain_count: 63
+    extension_domain_count: 67
     fsot_aggregate_unified_db_records: 8
     prediction_rederivation_records: 10
     precision_candidates_over_1pct: 0
@@ -1088,7 +1092,7 @@ tier_coverage:
     vl_distill_atlas_records: 10
     rust_lean_bridge_records: 9
     bibliography_lean_corpus_records: 9
-    extension_domain_count: 63
+    extension_domain_count: 67
   artifacts:
   - data/vl_distill_atlas_manifest.yaml
   - data/rust_lean_bridge_manifest.yaml
@@ -1105,15 +1109,15 @@ tier_coverage:
   status: complete
   metrics:
     nist_codata_records: 6
-    gbif_records: 240
-    noaa_tides_records: 20
+    gbif_records: 600
+    noaa_tides_records: 40
     world_bank_records: 165
-    nasa_exoplanet_records: 160
-    rcsb_pdb_records: 45
-    openalex_records: 80
-    pubchem_records: 12
+    nasa_exoplanet_records: 296
+    rcsb_pdb_records: 86
+    openalex_records: 150
+    pubchem_records: 29
     cern_opendata_records: 83
-    uniprot_records: 22
+    uniprot_records: 62
     external_data_root: D:/FSOT-2.1-Lean-PublicData
   artifacts:
   - data/tier38_public_apis_manifest.yaml
@@ -1129,6 +1133,24 @@ tier_coverage:
   - FSOT.Formal.PubchemCompoundPropertiesPriors
   - FSOT.Formal.CernOpenDataLhcPriors
   - FSOT.Formal.UniprotProteinAnnotationsPriors
+- tier: 39
+  name: Propulsion/electrical wave — space propulsion, electrical power, HVAC, 2024-2026
+    breakthroughs
+  status: complete
+  metrics:
+    space_propulsion_records: 21
+    electrical_power_records: 9
+    hvac_thermal_records: 7
+    breakthroughs_records: 21
+    external_data_root: D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical
+  artifacts:
+  - data/tier39_propulsion_electrical_manifest.yaml
+  - vendor/propulsion_electrical
+  - D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical
+  - FSOT.Formal.SpacePropulsionSystemsPriors
+  - FSOT.Formal.ElectricalPowerSystemsPriors
+  - FSOT.Formal.HvacThermalSystemsPriors
+  - FSOT.Formal.BreakthroughDiscoveries20242026Priors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -1456,13 +1478,13 @@ extension_domains:
   lean_module: FSOT.Formal.NistCodataConstantsPriors
 - domain: GBIF_Species_Occurrence
   tier: 38
-  record_count: 240
+  record_count: 600
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.GbifSpeciesOccurrencePriors
 - domain: NOAA_Coastal_Tides
   tier: 38
-  record_count: 20
+  record_count: 40
   median_error_pct: 0.0
   coverage_tier: B_verified
   lean_module: FSOT.Formal.NoaaCoastalTidesPriors
@@ -1474,27 +1496,27 @@ extension_domains:
   lean_module: FSOT.Formal.WorldBankDevelopmentPriors
 - domain: NASA_Exoplanet_Archive
   tier: 38
-  record_count: 160
+  record_count: 296
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.NasaExoplanetArchivePriors
 - domain: RCSB_PDB_Structures
   tier: 38
-  record_count: 45
+  record_count: 86
   median_error_pct: 0.0
   coverage_tier: B_verified
   lean_module: FSOT.Formal.RcsbPdbStructuresPriors
 - domain: OpenAlex_Citation_Graph
   tier: 38
-  record_count: 80
+  record_count: 150
   median_error_pct: 0.0
-  coverage_tier: B_verified
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.OpenalexCitationGraphPriors
 - domain: PubChem_Compound_Properties
   tier: 38
-  record_count: 12
-  median_error_pct: 0.0012801911752094832
-  coverage_tier: C_thin
+  record_count: 29
+  median_error_pct: 0.0024238898584426276
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.PubchemCompoundPropertiesPriors
 - domain: CERN_Open_Data_LHC
   tier: 38
@@ -1504,10 +1526,34 @@ extension_domains:
   lean_module: FSOT.Formal.CernOpenDataLhcPriors
 - domain: UniProt_Protein_Annotations
   tier: 38
-  record_count: 22
+  record_count: 62
   median_error_pct: 0.0
   coverage_tier: B_verified
   lean_module: FSOT.Formal.UniprotProteinAnnotationsPriors
+- domain: Space_Propulsion_Systems
+  tier: 39
+  record_count: 21
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.SpacePropulsionSystemsPriors
+- domain: Electrical_Power_Systems
+  tier: 39
+  record_count: 9
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.ElectricalPowerSystemsPriors
+- domain: HVAC_Thermal_Systems
+  tier: 39
+  record_count: 7
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.HvacThermalSystemsPriors
+- domain: Breakthrough_Discoveries_2024_2026
+  tier: 39
+  record_count: 21
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.BreakthroughDiscoveries20242026Priors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -2161,6 +2207,48 @@ theory_crosswalk:
     - uniprot
     - protein_lab
     lean_module: FSOT.Formal.UniprotProteinAnnotationsPriors
+  Space_Propulsion_Systems:
+    tier: 39
+    D_eff: 14
+    maps_to_lean:
+    - fusion
+    - particle
+    - astronomical
+    labs:
+    - space_propulsion
+    - fuel_lab
+    lean_module: FSOT.Formal.SpacePropulsionSystemsPriors
+  Electrical_Power_Systems:
+    tier: 39
+    D_eff: 9
+    maps_to_lean:
+    - electron
+    - energy
+    labs:
+    - electrical_power
+    - geomagnetism_lab
+    lean_module: FSOT.Formal.ElectricalPowerSystemsPriors
+  HVAC_Thermal_Systems:
+    tier: 39
+    D_eff: 13
+    maps_to_lean:
+    - energy
+    - material
+    labs:
+    - hvac_thermal
+    - climate_lab
+    lean_module: FSOT.Formal.HvacThermalSystemsPriors
+  Breakthrough_Discoveries_2024_2026:
+    tier: 39
+    D_eff: 22
+    maps_to_lean:
+    - particle
+    - astronomical
+    - cosmological
+    labs:
+    - breakthroughs_2024_2026
+    - particle_physics_lab
+    lean_module: FSOT.Formal.BreakthroughDiscoveries20242026Priors
 lean_formal_modules:
 - AetherPrimePriors
 - ArxivPrimitivesV14Priors
@@ -2170,6 +2258,7 @@ lean_formal_modules:
 - BiologyStrictEmpiricalPriors
 - BlackHoleThesisPriors
 - BrainPriors
+- BreakthroughDiscoveries20242026Priors
 - CameoPriors
 - CellularPriors
 - CernOpenDataLhcPriors
@@ -2190,6 +2279,7 @@ lean_formal_modules:
 - CryospherePriors
 - DomainCoveragePriors
 - DomainPrecisionPriors
+- ElectricalPowerSystemsPriors
 - EmergentDomainPriors
 - EvolutionPriors
 - ExperimentSynthesisPriors
@@ -2202,6 +2292,7 @@ lean_formal_modules:
 - GeomagnetismPriors
 - GraceCryospherePriors
 - HiggsBranchingPriors
+- HvacThermalSystemsPriors
 - HydrologyPriors
 - IGEMLiveFastaPriors
 - IGEMSyntheticBiologyPriors
@@ -2251,6 +2342,7 @@ lean_formal_modules:
 - SeismologyPriors
 - SmallBodyOrbitsPriors
 - SoulSiblingPriors
+- SpacePropulsionSystemsPriors
 - SpaceWeatherPriors
 - SpeciesPriors
 - StructureCalibrationPriors

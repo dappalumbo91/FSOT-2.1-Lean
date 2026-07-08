@@ -16,6 +16,10 @@ ROOT = Path(__file__).resolve().parents[1]
 
 DEFAULT_EXTERNAL_ROOT = Path(r"D:\FSOT-2.1-Lean-PublicData")
 
+
+def _deep_mode() -> bool:
+    return os.environ.get("FSOT_TIER38_DEEP", "").strip().lower() in {"1", "true", "yes", "on"}
+
 ATOMIC_MASS = {
     "H": 1.008,
     "C": 12.011,
@@ -171,7 +175,7 @@ def ingest_gbif() -> dict:
                 "decimalLongitude": "-75,-70",
                 "year": "2020,2024",
                 "hasCoordinate": "true",
-                "limit": 120,
+                "limit": 300 if _deep_mode() else 120,
             }
         )
     )
@@ -211,6 +215,16 @@ def ingest_noaa_tides() -> dict:
         {"id": "9447130", "name": "Seattle", "ref_lat": 47.6062},
         {"id": "8638610", "name": "Sewells Point", "ref_lat": 36.9467},
     ]
+    if _deep_mode():
+        stations.extend(
+            [
+                {"id": "8518750", "name": "The Battery NY", "ref_lat": 40.7002},
+                {"id": "8720218", "name": "Miami Beach", "ref_lat": 25.7908},
+                {"id": "8771341", "name": "Galveston", "ref_lat": 29.3100},
+                {"id": "9410170", "name": "Los Angeles", "ref_lat": 33.7192},
+                {"id": "8447930", "name": "Portland", "ref_lat": 43.6566},
+            ]
+        )
     series: list[dict] = []
     for st in stations:
         params = {
@@ -289,7 +303,8 @@ def ingest_nasa_exoplanet() -> dict:
     import csv
     import io
 
-    query = "select top 120 pl_name,hostname,pl_rade,pl_bmasse,pl_orbper,disc_year,sy_dist from pscomppars"
+    limit = 150 if _deep_mode() else 80
+    query = f"select top {limit} pl_name,hostname,pl_rade,pl_bmasse,pl_orbper,disc_year,sy_dist from pscomppars"
     url = "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?" + urllib.parse.urlencode(
         {"query": query, "format": "csv"}
     )
@@ -312,7 +327,7 @@ def ingest_nasa_exoplanet() -> dict:
             )
         except ValueError:
             continue
-        if len(planets) >= 80:
+        if len(planets) >= limit:
             break
     doc = {"source": url, "planet_count": len(planets), "planets": planets}
     _write_bundle("nasa_exoplanet", "nasa_exoplanet_cache.json", "nasa_exoplanet_summary.json", doc)
@@ -321,22 +336,14 @@ def ingest_nasa_exoplanet() -> dict:
 
 def ingest_rcsb_pdb() -> dict:
     pdb_ids = [
-        "1CRN",
-        "1UBQ",
-        "4HHB",
-        "1BNA",
-        "2LYZ",
-        "1TIM",
-        "1AKE",
-        "1IGY",
-        "3CLN",
-        "5IRE",
-        "1MBN",
-        "2HMP",
-        "1GFL",
-        "1PGA",
-        "1CTF",
+        "1CRN", "1UBQ", "4HHB", "1BNA", "2LYZ", "1TIM", "1AKE", "1IGY", "3CLN", "5IRE",
+        "1MBN", "2HMP", "1GFL", "1PGA", "1CTF",
     ]
+    if _deep_mode():
+        pdb_ids.extend(
+            ["1HTM", "2DHB", "1CGD", "1HHO", "1INS", "1RNT", "2CBA", "1A2Z", "1CBS", "1FDH",
+             "1G6X", "1HIV", "1JNX", "1KTH", "1L2Y"]
+        )
     structures: list[dict] = []
     for pdb_id in pdb_ids:
         url = f"https://data.rcsb.org/rest/v1/core/entry/{pdb_id}"
@@ -366,7 +373,7 @@ def ingest_openalex() -> dict:
         + urllib.parse.urlencode(
             {
                 "search": "fluid dynamics",
-                "per-page": 80,
+                "per-page": 150 if _deep_mode() else 80,
                 "mailto": "fsot-verification@example.com",
             }
         )
@@ -394,7 +401,11 @@ def ingest_openalex() -> dict:
 
 
 def ingest_pubchem() -> dict:
-    cids = [2244, 702, 3672, 5360545, 2519, 5280453, 54670067, 962, 5957, 2249, 3386, 3676]
+    cids = [
+        2244, 702, 3672, 5360545, 2519, 5280453, 54670067, 962, 5957, 2249, 3386, 3676,
+        1983, 5280343, 446157, 5284373, 3033, 5280961, 4091, 31703, 2723949, 441244, 5702160,
+        65064, 5288826, 445858, 5282379, 5284616, 5360515, 2724385, 3007857,
+    ] if _deep_mode() else [2244, 702, 3672, 5360545, 2519, 5280453, 54670067, 962, 5957, 2249, 3386, 3676]
     compounds: list[dict] = []
     for cid in cids:
         url = (
@@ -467,19 +478,15 @@ def ingest_cern_opendata() -> dict:
 
 def ingest_uniprot() -> dict:
     accessions = [
-        "P69905",
-        "P68871",
-        "P04637",
-        "P01308",
-        "P00734",
-        "P68872",
-        "P62258",
-        "P62988",
-        "P04439",
-        "P02768",
-        "P01008",
-        "P02144",
+        "P69905", "P68871", "P04637", "P01308", "P00734", "P68872", "P62258", "P62988",
+        "P04439", "P02768", "P01008", "P02144",
     ]
+    if _deep_mode():
+        accessions.extend(
+            ["P00520", "P69905", "P68871", "P02787", "P00338", "P00488", "P00915", "P01024",
+             "P01112", "P01375", "P01579", "P04075", "P05067", "P05362", "P07355", "P07954",
+             "P09486", "P10636", "P12268", "P12345"]
+        )
     proteins: list[dict] = []
     for acc in accessions:
         url = f"https://rest.uniprot.org/uniprotkb/{acc}.json"

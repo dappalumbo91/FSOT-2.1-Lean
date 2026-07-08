@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T16:57:28.710395+00:00",
+  "generated_at": "2026-07-08T18:14:18.367601+00:00",
   "domain": "UniProt_Protein_Annotations",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "UniProt_REST",
@@ -8,8 +8,8 @@
     "medical"
   ],
   "D_eff": 12,
-  "record_count": 22,
-  "observable_count": 22,
+  "record_count": 62,
+  "observable_count": 62,
   "median_error_pct": 0.0,
   "records": [
     {
@@ -186,6 +186,326 @@
       "name": "P02144",
       "computed": 17184.0,
       "measured": 17184.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P00520",
+      "computed": 1123.0,
+      "measured": 1123.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P00520",
+      "computed": 122673.0,
+      "measured": 122673.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P69905",
+      "computed": 142.0,
+      "measured": 142.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P69905",
+      "computed": 15258.0,
+      "measured": 15258.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P68871",
+      "computed": 147.0,
+      "measured": 147.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P68871",
+      "computed": 15998.0,
+      "measured": 15998.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P02787",
+      "computed": 698.0,
+      "measured": 698.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P02787",
+      "computed": 77064.0,
+      "measured": 77064.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P00338",
+      "computed": 332.0,
+      "measured": 332.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P00338",
+      "computed": 36689.0,
+      "measured": 36689.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P00488",
+      "computed": 732.0,
+      "measured": 732.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P00488",
+      "computed": 83268.0,
+      "measured": 83268.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P00915",
+      "computed": 261.0,
+      "measured": 261.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P00915",
+      "computed": 28870.0,
+      "measured": 28870.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P01024",
+      "computed": 1663.0,
+      "measured": 1663.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P01024",
+      "computed": 187148.0,
+      "measured": 187148.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P01112",
+      "computed": 189.0,
+      "measured": 189.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P01112",
+      "computed": 21298.0,
+      "measured": 21298.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P01375",
+      "computed": 233.0,
+      "measured": 233.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P01375",
+      "computed": 25644.0,
+      "measured": 25644.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P01579",
+      "computed": 166.0,
+      "measured": 166.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P01579",
+      "computed": 19348.0,
+      "measured": 19348.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P04075",
+      "computed": 364.0,
+      "measured": 364.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P04075",
+      "computed": 39420.0,
+      "measured": 39420.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P05067",
+      "computed": 770.0,
+      "measured": 770.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P05067",
+      "computed": 86943.0,
+      "measured": 86943.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P05362",
+      "computed": 532.0,
+      "measured": 532.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P05362",
+      "computed": 57825.0,
+      "measured": 57825.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P07355",
+      "computed": 339.0,
+      "measured": 339.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P07355",
+      "computed": 38604.0,
+      "measured": 38604.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P07954",
+      "computed": 510.0,
+      "measured": 510.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P07954",
+      "computed": 54637.0,
+      "measured": 54637.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P09486",
+      "computed": 303.0,
+      "measured": 303.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P09486",
+      "computed": 34632.0,
+      "measured": 34632.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P10636",
+      "computed": 758.0,
+      "measured": 758.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P10636",
+      "computed": 78928.0,
+      "measured": 78928.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P12268",
+      "computed": 514.0,
+      "measured": 514.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P12268",
+      "computed": 55805.0,
+      "measured": 55805.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "sequence_length",
+      "name": "P12345",
+      "computed": 430.0,
+      "measured": 430.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "uniprot",
+      "property": "mol_weight",
+      "name": "P12345",
+      "computed": 47409.0,
+      "measured": 47409.0,
       "error_pct": 0.0
     }
   ]

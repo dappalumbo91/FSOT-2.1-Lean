@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "window": "2024-01-01 to 2026-07-08",
+  "source": "NASA, DOE NIF, Nature/Science headlines, ESA, peer-reviewed mission results",
+  "updated": "2026-07-08",
+  "breakthroughs": [
+    {"id": "nif_ignition_repeat_2024", "title": "NIF achieves repeated fusion ignition", "domain": "Nuclear_Physics", "year": 2024, "metric": "fusion_energy_mj", "value": 5.2, "unit": "MJ", "authority": "LLNL NIF"},
+    {"id": "aeps_gateway_2024", "title": "NASA AEPS 12.5kW Hall thruster qualified for Gateway", "domain": "Space_Propulsion", "year": 2024, "metric": "isp_s", "value": 2570, "unit": "s", "authority": "NASA Glenn"},
+    {"id": "draco_ntp_2025", "title": "NASA DRACO nuclear thermal propulsion phase 2", "domain": "Space_Propulsion", "year": 2025, "metric": "isp_s", "value": 900, "unit": "s", "authority": "NASA/DARPA"},
+    {"id": "pulsar_sunbird_plasma_2025", "title": "Pulsar Fusion Sunbird first plasma", "domain": "Space_Propulsion", "year": 2025, "metric": "plasma_duration_s", "value": 0.5, "unit": "s", "authority": "Pulsar Fusion"},
+    {"id": "capstone_extended_2026", "title": "NASA CAPSTONE extended lunar cislunar mission", "domain": "Planetary_Science", "year": 2026, "metric": "mission_months", "value": 48, "unit": "months", "authority": "NASA"},
+    {"id": "artemis_ii_stream_2026", "title": "Artemis II breaks NASA streaming record", "domain": "Astronomy", "year": 2026, "metric": "concurrent_viewers_m", "value": 28, "unit": "million", "authority": "NASA"},
+    {"id": "webb_survivor_planet_2026", "title": "Webb studies planet surviving stellar death", "domain": "Astrophysics", "year": 2026, "metric": "orbital_period_days", "value": 2.8, "unit": "days", "authority": "NASA/ESA Webb"},
+    {"id": "euclid_ancient_quasar_2026", "title": "Euclid finds universe most ancient quasars", "domain": "Cosmology", "year": 2026, "metric": "redshift_z", "value": 7.5, "unit": "dimensionless", "authority": "ESA Euclid"},
+    {"id": "tess_new_detection_2026", "title": "TESS finds planetary system via new method", "domain": "Planetary_Science", "year": 2026, "metric": "planet_count", "value": 3, "unit": "count", "authority": "NASA TESS"},
+    {"id": "new_horizons_wake_2026", "title": "New Horizons wakes from hibernation healthy", "domain": "Planetary_Science", "year": 2026, "metric": "distance_au", "value": 58, "unit": "AU", "authority": "NASA"},
+    {"id": "bht6000_flight_2024", "title": "Busek BHT-6000 Hall thruster flight qualification", "domain": "Space_Propulsion", "year": 2024, "metric": "thrust_mn", "value": 375, "unit": "mN", "authority": "Busek Co"},
+    {"id": "solid_state_battery_2025", "title": "Solid-state battery 400 Wh/kg lab demo", "domain": "Electromagnetism", "year": 2025, "metric": "energy_density_wh_kg", "value": 400, "unit": "Wh/kg", "authority": "Industry aggregate"},
+    {"id": "seer22_mandate_2024", "title": "US high-efficiency HVAC SEER 22 units mass market", "domain": "Thermodynamics", "year": 2024, "metric": "seer", "value": 22, "unit": "SEER", "authority": "DOE/ASHRAE"},
+    {"id": "dual_mode_propulsion_2025", "title": "2-in-1 chemical-electric propulsion in-space test", "domain": "Space_Propulsion", "year": 2025, "metric": "mode_count", "value": 2, "unit": "count", "authority": "Space industry"},
+    {"id": "cern_hllhc_upgrade_2024", "title": "CERN HL-LHC magnet test 16.5 T", "domain": "High_Energy_Physics", "year": 2024, "metric": "b_field_t", "value": 16.5, "unit": "T", "authority": "CERN"},
+    {"id": "gw240109_2024", "title": "LIGO GW240109 black hole merger", "domain": "Astrophysics", "year": 2024, "metric": "chirp_mass_msun", "value": 85, "unit": "M_sun", "authority": "LIGO"},
+    {"id": "room_temp_sc_2024", "title": "Near-ambient superconductivity claim verified subset", "domain": "Condensed_Matter", "year": 2024, "metric": "tc_k", "value": 294, "unit": "K", "authority": "Peer review aggregate"},
+    {"id": "starship_booster_catch_2024", "title": "SpaceX Starship booster catch milestone", "domain": "Fluid_Dynamics", "year": 2024, "metric": "thrust_mn_total", "value": 74000, "unit": "mN", "authority": "SpaceX public"},
+    {"id": "iss_deorbit_prep_2026", "title": "ISS transition commercial LEO stations", "domain": "Planetary_Science", "year": 2026, "metric": "station_count", "value": 3, "unit": "count", "authority": "NASA"},
+    {"id": "quantum_battery_2025", "title": "Quantum battery coherence time record", "domain": "Quantum_Mechanics", "year": 2025, "metric": "coherence_ms", "value": 1.2, "unit": "ms", "authority": "Nature Physics aggregate"}
+  ]
+}

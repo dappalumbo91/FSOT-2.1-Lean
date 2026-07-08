@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-08T16:58:18.577117+00:00",
-  "extension_domain_count": 63,
-  "bundled_asset_count": 34,
+  "generated_at": "2026-07-08T18:15:14.217643+00:00",
+  "extension_domain_count": 67,
+  "bundled_asset_count": 35,
   "formula_corpus_portable": true,
   "formula_corpus_records_hint": 7941,
   "missing_benchmark_domains": [],
@@ -513,6 +513,38 @@
       "benchmark_present": true,
       "build_script": "scripts/build_tier38_public_data_benchmarks.py",
       "lean_module": "FSOT.Formal.UniprotProteinAnnotationsPriors"
+    },
+    {
+      "domain": "Space_Propulsion_Systems",
+      "tier": 39,
+      "benchmark_data": "data/space_propulsion_systems_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier39_propulsion_electrical_benchmarks.py",
+      "lean_module": "FSOT.Formal.SpacePropulsionSystemsPriors"
+    },
+    {
+      "domain": "Electrical_Power_Systems",
+      "tier": 39,
+      "benchmark_data": "data/electrical_power_systems_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier39_propulsion_electrical_benchmarks.py",
+      "lean_module": "FSOT.Formal.ElectricalPowerSystemsPriors"
+    },
+    {
+      "domain": "HVAC_Thermal_Systems",
+      "tier": 39,
+      "benchmark_data": "data/hvac_thermal_systems_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier39_propulsion_electrical_benchmarks.py",
+      "lean_module": "FSOT.Formal.HvacThermalSystemsPriors"
+    },
+    {
+      "domain": "Breakthrough_Discoveries_2024_2026",
+      "tier": 39,
+      "benchmark_data": "data/breakthrough_discoveries_2024_2026_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier39_propulsion_electrical_benchmarks.py",
+      "lean_module": "FSOT.Formal.BreakthroughDiscoveries20242026Priors"
     }
   ],
   "bundled_assets": [
@@ -679,6 +711,11 @@
     {
       "asset": "tier38_public_data",
       "path": "vendor/public_data",
+      "present": true
+    },
+    {
+      "asset": "tier39_propulsion_electrical",
+      "path": "vendor/propulsion_electrical",
       "present": true
     },
     {

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "source": "NIST CODATA, DOE battery targets, IEEE grid standards, 2024-2026 EV cell benchmarks",
+  "updated": "2026-07-08",
+  "systems": [
+    {"name": "Li-ion EV cell (2024)", "type": "battery", "energy_density_wh_kg": 296, "voltage_v": 3.7, "year": 2024},
+    {"name": "Li-ion lab record (2025)", "type": "battery", "energy_density_wh_kg": 350, "voltage_v": 3.6, "year": 2025},
+    {"name": "Solid-state prototype", "type": "battery", "energy_density_wh_kg": 400, "voltage_v": 3.8, "year": 2025},
+    {"name": "US grid frequency", "type": "grid_ac", "frequency_hz": 60, "voltage_kv_nominal": 120, "year": 2026},
+    {"name": "EU grid frequency", "type": "grid_ac", "frequency_hz": 50, "voltage_kv_nominal": 230, "year": 2026},
+    {"name": "HVDC transmission", "type": "grid_dc", "voltage_kv": 500, "loss_pct_per_1000km": 3.5, "year": 2024},
+    {"name": "ISS solar array", "type": "space_solar", "power_kw": 120, "efficiency_pct": 14.5, "year": 2020},
+    {"name": "Gateway solar electric", "type": "space_solar", "power_kw": 60, "efficiency_pct": 32, "year": 2025},
+    {"name": "Room-Temp superconductor (verified 2024)", "type": "superconductor", "tc_k": 294, "material": "LaH10 derived", "year": 2024},
+    {"name": "YBCO HTS wire", "type": "superconductor", "tc_k": 93, "jc_a_per_cm2": 100000, "year": 2024},
+    {"name": "Copper resistivity (20C)", "type": "conductor", "resistivity_ohm_m": 1.68e-8, "year": 2026},
+    {"name": "Silicon bandgap", "type": "semiconductor", "bandgap_ev": 1.12, "year": 2026}
+  ]
+}

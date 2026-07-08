@@ -170,6 +170,13 @@ bundled:
     external_cache_root: D:/FSOT-2.1-Lean-PublicData
     external_cache_env: FSOT_EXTERNAL_DATA_ROOT
 
+  tier39_propulsion_electrical:
+    path: vendor/propulsion_electrical
+    role: Tier 39 space propulsion, electrical power, HVAC thermal, 2024-2026 breakthroughs
+    env_override: FSOT_PROPULSION_ELECTRICAL_ROOT
+    external_cache_root: D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical
+    external_cache_env: FSOT_EXTERNAL_DATA_ROOT
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification

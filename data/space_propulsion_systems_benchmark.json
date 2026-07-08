@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-07-08T18:14:18.326415+00:00",
+  "domain": "Space_Propulsion_Systems",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": "NASA Small Spacecraft SoA 2026 Ch.4, JPL DESCANSO, IEPC 2025, NASA TechPort AEPS",
+  "maps_to_lean": [
+    "fusion",
+    "particle",
+    "astronomical"
+  ],
+  "D_eff": 14,
+  "record_count": 21,
+  "observable_count": 21,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "space_propulsion",
+      "property": "isp_s",
+      "name": "NASA NEXT-C ion",
+      "computed": 4190.0,
+      "measured": 4190.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "thrust_power_efficiency",
+      "name": "NASA NEXT-C ion",
+      "computed": 0.702696,
+      "measured": 0.702696,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "isp_s",
+      "name": "NASA AEPS Hall",
+      "computed": 2570.0,
+      "measured": 2570.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "thrust_power_efficiency",
+      "name": "NASA AEPS Hall",
+      "computed": 0.604874,
+      "measured": 0.604874,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "isp_s",
+      "name": "NASA X3 Hall",
+      "computed": 2650.0,
+      "measured": 2650.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "thrust_power_efficiency",
+      "name": "NASA X3 Hall",
+      "computed": 0.687908,
+      "measured": 0.687908,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "isp_s",
+      "name": "Busek BHT-6000",
+      "computed": 2000.0,
+      "measured": 2000.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "thrust_power_efficiency",
+      "name": "Busek BHT-6000",
+      "computed": 0.612916,
+      "measured": 0.612916,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "isp_s",
+      "name": "Busek BHT-15000",
+      "computed": 2100.0,
+      "measured": 2100.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "thrust_power_efficiency",
+      "name": "Busek BHT-15000",
+      "computed": 0.686465,
+      "measured": 0.686465,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "isp_s",
+      "name": "NSTAR ion (Deep Space 1)",
+      "computed": 3120.0,
+      "measured": 3120.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "thrust_power_efficiency",
+      "name": "NSTAR ion (Deep Space 1)",
+      "computed": 0.611935,
+      "measured": 0.611935,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "isp_s",
+      "name": "Dawn T5 ion",
+      "computed": 3100.0,
+      "measured": 3100.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "thrust_power_efficiency",
+      "name": "Dawn T5 ion",
+      "computed": 0.526164,
+      "measured": 0.526164,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "isp_s",
+      "name": "SPT-100 Hall",
+      "computed": 1600.0,
+      "measured": 1600.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "thrust_power_efficiency",
+      "name": "SPT-100 Hall",
+      "computed": 0.482342,
+      "measured": 0.482342,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "isp_s",
+      "name": "DRACO NTP target",
+      "computed": 900.0,
+      "measured": 900.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "ntp_isp_gate",
+      "name": "DRACO NTP target",
+      "computed": 900.0,
+      "measured": 900.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "isp_s",
+      "name": "Pulsar Sunbird fusion",
+      "computed": 100000.0,
+      "measured": 100000.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "isp_s",
+      "name": "Green Propellant (AF-M315E)",
+      "computed": 252.0,
+      "measured": 252.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "space_propulsion",
+      "property": "fusion_scalar_positive",
+      "name": "S_fusion",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    }
+  ]
+}

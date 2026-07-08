@@ -27,14 +27,14 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-08 — Tier 38)
+## Verification status (2026-07-08 — Tier 39)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
 Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
 
-- **38/38 verification tiers complete** (10 public API domains: NIST, GBIF, NOAA, World Bank, NASA, RCSB, OpenAlex, PubChem, CERN, UniProt)
-- **99 scientific domains** (35 NeuroLab + 63 extension bridges)
+- **39/39 verification tiers complete** (space propulsion, electrical power, HVAC thermal, 2024-2026 breakthroughs)
+- **103 scientific domains** (35 NeuroLab + 67 extension bridges)
 - **Game drive cache**: bulk API data at `D:\FSOT-2.1-Lean-PublicData` (override: `FSOT_EXTERNAL_DATA_ROOT`)
 - **Self-contained clone-and-verify**: `strict_empirical.jsonl` (7,941 formulas) bundled under `vendor/formula_corpus/`
 - **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
@@ -112,6 +112,10 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - Formula corpus (`FSOT.Formal.FormulaCorpusPriors`) — **7,941** strict-empirical observable checks (all matched, all within 5%)
 - Cellular lab (`FSOT.Formal.CellularPriors`) — 234k Soul Simulator records + 13 mt operons; `cellular_raw_S_positive`
 - BlackHole thesis (`FSOT.Formal.BlackHoleThesisPriors`) — 28/28 observables within 2% (max err 0.72%)
+- Space propulsion (`FSOT.Formal.SpacePropulsionSystemsPriors`) — 12 systems (NEXT-C, AEPS, X3, DRACO, Pulsar Sunbird), 21 observables, 0% median err
+- Electrical power (`FSOT.Formal.ElectricalPowerSystemsPriors`) — batteries, grid, solar, superconductors; 9 observables
+- HVAC thermal (`FSOT.Formal.HvacThermalSystemsPriors`) — SEER/COP/Carnot heat-pump cohort; 7 observables
+- Breakthroughs 2024–2026 (`FSOT.Formal.BreakthroughDiscoveries20242026Priors`) — 20 world-shaking discoveries (NIF, AEPS, Webb, Euclid, Starship)
 
 ### Formula verification honesty (Tier 6)
 

@@ -1,16 +1,16 @@
-generated_at: '2026-07-08T16:58:19.265542+00:00'
+generated_at: '2026-07-08T18:15:14.909158+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 119
+  lean_formal_modules: 123
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 36
-  tiers_total: 36
+  tiers_complete: 37
+  tiers_total: 37
   percent_complete: 100.0
-current_position: "Tier 38 Public API wave \u2014 NIST, GBIF, NOAA, World Bank, NASA,\
-  \ RCSB, OpenAlex, PubChem, CERN, UniProt"
+current_position: "Tier 39 Propulsion/electrical wave \u2014 space propulsion, electrical\
+  \ power, HVAC, 2024-2026 breakthroughs"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -31,6 +31,7 @@ tiers:
   - BiologyStrictEmpiricalPriors
   - BlackHoleThesisPriors
   - BrainPriors
+  - BreakthroughDiscoveries20242026Priors
   - CameoPriors
   - CellularPriors
   - CernOpenDataLhcPriors
@@ -51,6 +52,7 @@ tiers:
   - CryospherePriors
   - DomainCoveragePriors
   - DomainPrecisionPriors
+  - ElectricalPowerSystemsPriors
   - EmergentDomainPriors
   - EvolutionPriors
   - ExperimentSynthesisPriors
@@ -63,6 +65,7 @@ tiers:
   - GeomagnetismPriors
   - GraceCryospherePriors
   - HiggsBranchingPriors
+  - HvacThermalSystemsPriors
   - HydrologyPriors
   - IGEMLiveFastaPriors
   - IGEMSyntheticBiologyPriors
@@ -113,6 +116,7 @@ tiers:
   - SeismologyPriors
   - SmallBodyOrbitsPriors
   - SoulSiblingPriors
+  - SpacePropulsionSystemsPriors
   - SpaceWeatherPriors
   - SpeciesPriors
   - StructureCalibrationPriors
@@ -234,7 +238,7 @@ tiers:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 89
+    scientific_domains_covered: 99
     expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -657,7 +661,7 @@ tiers:
   metrics:
     formula_corpus_portable: true
     formula_corpus_records_hint: 7941
-    extension_domain_count: 63
+    extension_domain_count: 67
     fsot_aggregate_unified_db_records: 8
     prediction_rederivation_records: 10
     precision_candidates_over_1pct: 0
@@ -677,7 +681,7 @@ tiers:
     vl_distill_atlas_records: 10
     rust_lean_bridge_records: 9
     bibliography_lean_corpus_records: 9
-    extension_domain_count: 63
+    extension_domain_count: 67
   artifacts:
   - data/vl_distill_atlas_manifest.yaml
   - data/rust_lean_bridge_manifest.yaml
@@ -694,15 +698,15 @@ tiers:
   status: complete
   metrics:
     nist_codata_records: 6
-    gbif_records: 240
-    noaa_tides_records: 20
+    gbif_records: 600
+    noaa_tides_records: 40
     world_bank_records: 165
-    nasa_exoplanet_records: 160
-    rcsb_pdb_records: 45
-    openalex_records: 80
-    pubchem_records: 12
+    nasa_exoplanet_records: 296
+    rcsb_pdb_records: 86
+    openalex_records: 150
+    pubchem_records: 29
     cern_opendata_records: 83
-    uniprot_records: 22
+    uniprot_records: 62
     external_data_root: D:/FSOT-2.1-Lean-PublicData
   artifacts:
   - data/tier38_public_apis_manifest.yaml
@@ -718,10 +722,29 @@ tiers:
   - FSOT.Formal.PubchemCompoundPropertiesPriors
   - FSOT.Formal.CernOpenDataLhcPriors
   - FSOT.Formal.UniprotProteinAnnotationsPriors
+- tier: 39
+  name: "Propulsion/electrical wave \u2014 space propulsion, electrical power, HVAC,\
+    \ 2024-2026 breakthroughs"
+  status: complete
+  metrics:
+    space_propulsion_records: 21
+    electrical_power_records: 9
+    hvac_thermal_records: 7
+    breakthroughs_records: 21
+    external_data_root: D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical
+  artifacts:
+  - data/tier39_propulsion_electrical_manifest.yaml
+  - vendor/propulsion_electrical
+  - D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical
+  - FSOT.Formal.SpacePropulsionSystemsPriors
+  - FSOT.Formal.ElectricalPowerSystemsPriors
+  - FSOT.Formal.HvacThermalSystemsPriors
+  - FSOT.Formal.BreakthroughDiscoveries20242026Priors
 next_steps:
 - Extension domain precision tightening (median error < 1% wave)
 - Knowledge-base per-formula portable bundle
-- Re-ingest Tier 38 caches from Game drive on schedule
+- Re-ingest Tier 38 deep caches from Game drive on schedule
+- Expand Tier 39 propulsion cohort with live mission telemetry
 key_metrics:
   strict_empirical_records: 7941
   smiles_mapped: 1470

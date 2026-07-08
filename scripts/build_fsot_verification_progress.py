@@ -111,6 +111,10 @@ def build_progress() -> dict:
     pubchem_bench = _load_json(ROOT / "data" / "pubchem_compound_properties_benchmark.json")
     cern_opendata_bench = _load_json(ROOT / "data" / "cern_open_data_lhc_benchmark.json")
     uniprot_bench = _load_json(ROOT / "data" / "uniprot_protein_annotations_benchmark.json")
+    space_propulsion_bench = _load_json(ROOT / "data" / "space_propulsion_systems_benchmark.json")
+    electrical_power_bench = _load_json(ROOT / "data" / "electrical_power_systems_benchmark.json")
+    hvac_thermal_bench = _load_json(ROOT / "data" / "hvac_thermal_systems_benchmark.json")
+    breakthroughs_bench = _load_json(ROOT / "data" / "breakthrough_discoveries_2024_2026_benchmark.json")
     vendor_audit = _load_json(ROOT / "data" / "portable_vendor_coverage_audit.json")
 
     proved = cert.get("proved_claims")
@@ -1036,12 +1040,44 @@ def build_progress() -> dict:
                 "FSOT.Formal.UniprotProteinAnnotationsPriors",
             ],
         },
+        {
+            "tier": 39,
+            "name": "Propulsion/electrical wave — space propulsion, electrical power, HVAC, 2024-2026 breakthroughs",
+            "status": "complete"
+            if all(
+                b.get("record_count", 0) >= 5 and b.get("median_error_pct", 99) <= 5.0
+                for b in (
+                    space_propulsion_bench,
+                    electrical_power_bench,
+                    hvac_thermal_bench,
+                    breakthroughs_bench,
+                )
+            )
+            else "pending",
+            "metrics": {
+                "space_propulsion_records": space_propulsion_bench.get("record_count"),
+                "electrical_power_records": electrical_power_bench.get("record_count"),
+                "hvac_thermal_records": hvac_thermal_bench.get("record_count"),
+                "breakthroughs_records": breakthroughs_bench.get("record_count"),
+                "external_data_root": "D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical",
+            },
+            "artifacts": [
+                "data/tier39_propulsion_electrical_manifest.yaml",
+                "vendor/propulsion_electrical",
+                "D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical",
+                "FSOT.Formal.SpacePropulsionSystemsPriors",
+                "FSOT.Formal.ElectricalPowerSystemsPriors",
+                "FSOT.Formal.HvacThermalSystemsPriors",
+                "FSOT.Formal.BreakthroughDiscoveries20242026Priors",
+            ],
+        },
     ]
 
     next_steps = [
         "Extension domain precision tightening (median error < 1% wave)",
         "Knowledge-base per-formula portable bundle",
-        "Re-ingest Tier 38 caches from Game drive on schedule",
+        "Re-ingest Tier 38 deep caches from Game drive on schedule",
+        "Expand Tier 39 propulsion cohort with live mission telemetry",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -1060,7 +1096,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 38 Public API wave — NIST, GBIF, NOAA, World Bank, NASA, RCSB, OpenAlex, PubChem, CERN, UniProt",
+        "current_position": "Tier 39 Propulsion/electrical wave — space propulsion, electrical power, HVAC, 2024-2026 breakthroughs",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

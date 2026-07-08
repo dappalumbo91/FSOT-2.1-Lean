@@ -1,0 +1,24 @@
+# Tier 39 — space propulsion, electrical, HVAC, 2024-2026 breakthroughs.
+version: "1.0"
+updated: "2026-07-08"
+
+external_data_root: "D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical"
+env_override: FSOT_EXTERNAL_DATA_ROOT
+
+source:
+  propulsion_electrical_root: "vendor/propulsion_electrical"
+
+ingest:
+  script: scripts/ingest_tier39_propulsion_electrical.py
+
+build:
+  script: scripts/build_tier39_propulsion_electrical_benchmarks.py
+
+lean:
+  generator: scripts/gen_tier39_propulsion_electrical_lean.py
+
+domains:
+  - Space_Propulsion_Systems
+  - Electrical_Power_Systems
+  - HVAC_Thermal_Systems
+  - Breakthrough_Discoveries_2024_2026

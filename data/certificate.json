@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-08T16:58:20.693153+00:00",
+  "generated_at": "2026-07-08T18:15:16.361533+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -1055,6 +1055,11 @@
       "microglial_surveillance_spin_counts_sum",
       "brain_component_priors_trinary_bundle"
     ],
+    "BreakthroughDiscoveries20242026Priors": [
+      "breakthrough_discoveries_2024_2026_observable_count_pos",
+      "breakthrough_discoveries_2024_2026_median_error_under_five_pct",
+      "breakthrough_discoveries_2024_2026_bundle"
+    ],
     "CameoPriors": [
       "cameo_benchmark_count_pos",
       "cameo_symbolic_mae_positive",
@@ -1385,6 +1390,11 @@
       "nuclear_raw_S_positive",
       "energy_raw_S_positive"
     ],
+    "ElectricalPowerSystemsPriors": [
+      "electrical_power_systems_observable_count_pos",
+      "electrical_power_systems_median_error_under_five_pct",
+      "electrical_power_systems_bundle"
+    ],
     "EmergentDomainPriors": [
       "emergent_domain_count_pos",
       "emergent_observed_le_total",
@@ -1475,6 +1485,11 @@
       "higgs_branching_median_error_under_five_pct",
       "higgs_branching_max_error_under_five_pct",
       "higgs_branching_bundle"
+    ],
+    "HvacThermalSystemsPriors": [
+      "hvac_thermal_systems_observable_count_pos",
+      "hvac_thermal_systems_median_error_under_five_pct",
+      "hvac_thermal_systems_bundle"
     ],
     "HydrologyPriors": [
       "hydrology_month_count_pos",
@@ -1832,6 +1847,11 @@
       "soul_sibling_fidelity_threshold_positive",
       "soul_sibling_priors_bundle"
     ],
+    "SpacePropulsionSystemsPriors": [
+      "space_propulsion_systems_observable_count_pos",
+      "space_propulsion_systems_median_error_under_five_pct",
+      "space_propulsion_systems_bundle"
+    ],
     "SpaceWeatherPriors": [
       "space_weather_kp_record_count_pos",
       "space_weather_stability_match_le_total",
@@ -2010,7 +2030,7 @@
     "scripts/gen_protein_priors_lean.py": "9A5300DDD7D142A6C9FF596651F40AF2B4079FCD8A43E3DDD33695D43308294F",
     "scripts/gen_protein_formulas_lean.py": "9E8FD84D7A89A6000E0253F9BADCAA9F3F6720E7496DB6B53F90443E3FD0B6A4",
     "scripts/domain_scalar_oracle.py": "80DBF4F2592B73E468038D5E54532FA1FB26947DB5ABF4AF2794EFFD566906DA",
-    "scripts/fsot_verification_runner.py": "CCFDDD9EAFB1FE3F0CC887D33352A2188F2745A54F8A1A084F8C94A09B2F4F0E",
+    "scripts/fsot_verification_runner.py": "8C281E09245B46374CBA88AEA675AAA54A385959B90C3250267B442B695A52CE",
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T16:57:28.706395+00:00",
+  "generated_at": "2026-07-08T18:14:18.362115+00:00",
   "domain": "RCSB_PDB_Structures",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "RCSB_PDB_REST",
@@ -8,8 +8,8 @@
     "biological"
   ],
   "D_eff": 13,
-  "record_count": 45,
-  "observable_count": 45,
+  "record_count": 86,
+  "observable_count": 86,
   "median_error_pct": 0.0,
   "records": [
     {
@@ -368,6 +368,334 @@
       "lab": "rcsb_pdb",
       "property": "polymer_entity_count",
       "name": "1CTF",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1HTM",
+      "computed": 57.13,
+      "measured": 57.13,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "1HTM",
+      "computed": 2.5,
+      "measured": 2.5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1HTM",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "2DHB",
+      "computed": 32.38,
+      "measured": 32.38,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "2DHB",
+      "computed": 2.8,
+      "measured": 2.8,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "2DHB",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1CGD",
+      "computed": 8.53,
+      "measured": 8.53,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "1CGD",
+      "computed": 1.85,
+      "measured": 1.85,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1CGD",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1HHO",
+      "computed": 32.43,
+      "measured": 32.43,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "1HHO",
+      "computed": 2.1,
+      "measured": 2.1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1HHO",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1RNT",
+      "computed": 11.46,
+      "measured": 11.46,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "1RNT",
+      "computed": 1.9,
+      "measured": 1.9,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1RNT",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "2CBA",
+      "computed": 29.25,
+      "measured": 29.25,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "2CBA",
+      "computed": 1.54,
+      "measured": 1.54,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "2CBA",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1A2Z",
+      "computed": 99.49,
+      "measured": 99.49,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "1A2Z",
+      "computed": 1.73,
+      "measured": 1.73,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1A2Z",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1CBS",
+      "computed": 15.88,
+      "measured": 15.88,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "1CBS",
+      "computed": 1.8,
+      "measured": 1.8,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1CBS",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1FDH",
+      "computed": 64.85,
+      "measured": 64.85,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "1FDH",
+      "computed": 2.5,
+      "measured": 2.5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1FDH",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1G6X",
+      "computed": 7.37,
+      "measured": 7.37,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "1G6X",
+      "computed": 0.86,
+      "measured": 0.86,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1G6X",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1HIV",
+      "computed": 22.42,
+      "measured": 22.42,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "1HIV",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1HIV",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1JNX",
+      "computed": 24.59,
+      "measured": 24.59,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "1JNX",
+      "computed": 2.5,
+      "measured": 2.5,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1JNX",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1KTH",
+      "computed": 6.83,
+      "measured": 6.83,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "resolution_combined",
+      "name": "1KTH",
+      "computed": 0.95,
+      "measured": 0.95,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1KTH",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "molecular_weight",
+      "name": "1L2Y",
+      "computed": 2.17,
+      "measured": 2.17,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rcsb_pdb",
+      "property": "polymer_entity_count",
+      "name": "1L2Y",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0

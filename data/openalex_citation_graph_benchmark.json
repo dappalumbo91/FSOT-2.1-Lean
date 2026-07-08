@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-08T16:57:28.707395+00:00",
+  "generated_at": "2026-07-08T18:14:18.363855+00:00",
   "domain": "OpenAlex_Citation_Graph",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
-  "source": "https://api.openalex.org/works?search=fluid+dynamics&per-page=80&mailto=fsot-verification%40example.com",
+  "source": "https://api.openalex.org/works?search=fluid+dynamics&per-page=150&mailto=fsot-verification%40example.com",
   "maps_to_lean": [
     "consciousness",
     "linguistic"
   ],
   "D_eff": 18,
-  "record_count": 80,
-  "observable_count": 80,
+  "record_count": 150,
+  "observable_count": 150,
   "median_error_pct": 0.0,
   "records": [
     {
@@ -650,6 +650,566 @@
       "name": "Introduction to Computational Fluid Dynamics",
       "computed": 494.0,
       "measured": 494.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics Applied to Cardiac Computed Tom",
+      "computed": 1200.0,
+      "measured": 1200.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational methods for fluid dynamics",
+      "computed": 563.0,
+      "measured": 563.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics of Bacterial Turbulence",
+      "computed": 568.0,
+      "measured": 568.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Multiquadrics\u2014A scattered data approximation scheme with app",
+      "computed": 2031.0,
+      "measured": 2031.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Numerical Methods for Wave Equations in Geophysical Fluid Dy",
+      "computed": 873.0,
+      "measured": 873.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics for Engineers",
+      "computed": 614.0,
+      "measured": 614.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Uncertainty Quantification and Polynomial Chaos Techniques i",
+      "computed": 772.0,
+      "measured": 772.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Enhancing computational fluid dynamics with machine learning",
+      "computed": 551.0,
+      "measured": 551.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Turbulence and predictability in geophysical fluid dynamics ",
+      "computed": 727.0,
+      "measured": 727.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "A new finite element formulation for computational fluid dyn",
+      "computed": 1112.0,
+      "measured": 1112.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The Fluid Dynamics of Taylor Cones",
+      "computed": 588.0,
+      "measured": 588.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fluid dynamics and noise in bacterial cell\u2013cell and cell\u2013sur",
+      "computed": 770.0,
+      "measured": 770.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Numerical Heat Transfer and Fluid Flow",
+      "computed": 15204.0,
+      "measured": 15204.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Galerkin Proper Orthogonal Decomposition Methods for a Gener",
+      "computed": 745.0,
+      "measured": 745.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics for Engineers",
+      "computed": 474.0,
+      "measured": 474.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Numerical simulation of the gas-solid flow in a fluidized be",
+      "computed": 947.0,
+      "measured": 947.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Numerical Methods for Fluid Dynamics",
+      "computed": 548.0,
+      "measured": 548.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Kinetic Theory and Fluid Dynamics",
+      "computed": 449.0,
+      "measured": 449.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics of dispersed two-phase flows at",
+      "computed": 1027.0,
+      "measured": 1027.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Effect of Corticosteroids on Intraocular Pressure and Fluid ",
+      "computed": 560.0,
+      "measured": 560.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics Modeling of Proton Exchange Mem",
+      "computed": 749.0,
+      "measured": 749.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Introduction to Geophysical Fluid Dynamics - Physical and Nu",
+      "computed": 560.0,
+      "measured": 560.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "A new finite element formulation for computational fluid dyn",
+      "computed": 1450.0,
+      "measured": 1450.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Review of computational fluid dynamics for wind turbine wake",
+      "computed": 592.0,
+      "measured": 592.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Derivation of transient relativistic fluid dynamics from the",
+      "computed": 639.0,
+      "measured": 639.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics for Physicists",
+      "computed": 348.0,
+      "measured": 348.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Relativistic Fluid Dynamics in and out of Equilibrium",
+      "computed": 415.0,
+      "measured": 415.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Modeling of glow discharge-induced fluid dynamics",
+      "computed": 497.0,
+      "measured": 497.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics for urban physics: Importance, ",
+      "computed": 1096.0,
+      "measured": 1096.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "COMPUTATIONAL FLUID DYNAMICS",
+      "computed": 407.0,
+      "measured": 407.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Cardiovascular Fluid Dynamics",
+      "computed": 406.0,
+      "measured": 406.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics modelling in cardiovascular med",
+      "computed": 481.0,
+      "measured": 481.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fluid dynamics of R-charged black holes",
+      "computed": 557.0,
+      "measured": 557.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "A numerical fluid dynamics calculation method for all flow s",
+      "computed": 546.0,
+      "measured": 546.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Collective fluid dynamics of a polariton condensate in a sem",
+      "computed": 596.0,
+      "measured": 596.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The handbook of fluid dynamics",
+      "computed": 398.0,
+      "measured": 398.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The Fluid Dynamics of Disease Transmission",
+      "computed": 375.0,
+      "measured": 375.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "<i>Fluid Dynamics and Heat Transfer</i>",
+      "computed": 555.0,
+      "measured": 555.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Introduction to fluid dynamics",
+      "computed": 374.0,
+      "measured": 374.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Dynamics of Fluids in Porous Media",
+      "computed": 2065.0,
+      "measured": 2065.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational vascular fluid dynamics: problems, models and ",
+      "computed": 477.0,
+      "measured": 477.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Blood circulation and fluid dynamics in the eye",
+      "computed": 464.0,
+      "measured": 464.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Numerical Calculation of the Fluid Dynamics of Drop-on-Deman",
+      "computed": 575.0,
+      "measured": 575.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The Mechanical Foundations of Elasticity and Fluid Dynamics",
+      "computed": 451.0,
+      "measured": 451.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics and Transport of Droplets and Sprays",
+      "computed": 373.0,
+      "measured": 373.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "<i>Introduction to Theoretical and Computational Fluid Dynam",
+      "computed": 552.0,
+      "measured": 552.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "<i>Fluid Dynamics for Physicists</i>",
+      "computed": 342.0,
+      "measured": 342.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The fluid dynamics and thermodynamics of eruption columns",
+      "computed": 434.0,
+      "measured": 434.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fluid dynamics and heat transfer of turbomachinery",
+      "computed": 434.0,
+      "measured": 434.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "PRECONDITIONING TECHNIQUES IN COMPUTATIONAL FLUID DYNAMICS",
+      "computed": 432.0,
+      "measured": 432.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Thermo-Fluid Dynamics of Two-Phase Flow",
+      "computed": 371.0,
+      "measured": 371.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 263.0,
+      "measured": 263.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Spectral methods for uncertainty quantification : with appli",
+      "computed": 594.0,
+      "measured": 594.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Techniques for Fluid Dynamics",
+      "computed": 377.0,
+      "measured": 377.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The fluid dynamics of river dunes: A review and some future ",
+      "computed": 546.0,
+      "measured": 546.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics",
+      "computed": 264.0,
+      "measured": 264.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics",
+      "computed": 324.0,
+      "measured": 324.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics",
+      "computed": 325.0,
+      "measured": 325.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Relativistic Fluid Dynamics",
+      "computed": 256.0,
+      "measured": 256.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The particle-in-cell computing method for fluid dynamics",
+      "computed": 463.0,
+      "measured": 463.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics",
+      "computed": 319.0,
+      "measured": 319.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 310.0,
+      "measured": 310.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Fundamentals of Computational Fluid Dynamics",
+      "computed": 351.0,
+      "measured": 351.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Handbook of mathematical fluid dynamics",
+      "computed": 272.0,
+      "measured": 272.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics: Principles and Applications",
+      "computed": 393.0,
+      "measured": 393.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Lagrangian Fluid Dynamics",
+      "computed": 235.0,
+      "measured": 235.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "The GNAT method for nonlinear model reduction: Effective imp",
+      "computed": 662.0,
+      "measured": 662.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Topics in Geophysical Fluid Dynamics: Atmospheric Dynamics, ",
+      "computed": 493.0,
+      "measured": 493.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "A review on fluid dynamics of flapping foils",
+      "computed": 284.0,
+      "measured": 284.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "openalex",
+      "property": "cited_by_count",
+      "name": "Green Algae as Model Organisms for Biological Fluid Dynamics",
+      "computed": 351.0,
+      "measured": 351.0,
       "error_pct": 0.0
     }
   ]

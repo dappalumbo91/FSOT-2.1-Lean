@@ -427,6 +427,34 @@ verified_extension_domains:
     labs: [uniprot, protein_lab]
     lean_module: FSOT.Formal.UniprotProteinAnnotationsPriors
 
+  Space_Propulsion_Systems:
+    tier: 39
+    D_eff: 14
+    maps_to_lean: [fusion, particle, astronomical]
+    labs: [space_propulsion, fuel_lab]
+    lean_module: FSOT.Formal.SpacePropulsionSystemsPriors
+
+  Electrical_Power_Systems:
+    tier: 39
+    D_eff: 9
+    maps_to_lean: [electron, energy]
+    labs: [electrical_power, geomagnetism_lab]
+    lean_module: FSOT.Formal.ElectricalPowerSystemsPriors
+
+  HVAC_Thermal_Systems:
+    tier: 39
+    D_eff: 13
+    maps_to_lean: [energy, material]
+    labs: [hvac_thermal, climate_lab]
+    lean_module: FSOT.Formal.HvacThermalSystemsPriors
+
+  Breakthrough_Discoveries_2024_2026:
+    tier: 39
+    D_eff: 22
+    maps_to_lean: [particle, astronomical, cosmological]
+    labs: [breakthroughs_2024_2026, particle_physics_lab]
+    lean_module: FSOT.Formal.BreakthroughDiscoveries20242026Priors
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json
