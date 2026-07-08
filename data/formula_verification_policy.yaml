@@ -31,7 +31,7 @@ bands:
   unacceptable: { min_error_pct: 5.0, label: "must re-derive or reject" }
 
 corpus:
-  strict_empirical_jsonl: "C:/Users/damia/Desktop/fsot code language/audits/reports/FSOT_UNIFIED_DATABASE/by_domain/strict_empirical.jsonl"
+  strict_empirical_jsonl: "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
   knowledge_base_json: "C:/Users/damia/Desktop/Knowledge base/transfer/FSOT_KNOWLEDGE_UNIFIED_TRANSFER.json"
   unified_db: "C:/Users/damia/Desktop/fsot code language/audits/reports/FSOT_UNIFIED_DATABASE/FSOT_UNIFIED.db"
   verification_table: verification_numeric

@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-07-08T16:34:07.497803+00:00",
+  "source": [
+    "vendor/fsot_aggregate/prediction_rederivation_summary.json"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "particle",
+    "galactic"
+  ],
+  "D_eff": 14,
+  "record_count": 10,
+  "observable_count": 10,
+  "median_error_pct": 0.0,
+  "records": [
+    {
+      "lab": "prediction_rederivation",
+      "property": "total_unique_predictions",
+      "computed": 66,
+      "measured": 66,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "prediction_rederivation",
+      "property": "category_a_direct_engine",
+      "computed": 15,
+      "measured": 15,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "prediction_rederivation",
+      "property": "category_b_derived",
+      "computed": 51,
+      "measured": 51,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "prediction_rederivation",
+      "property": "confirmed_by_observation",
+      "computed": 11,
+      "measured": 11,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "prediction_rederivation",
+      "property": "computable_error_pairs",
+      "computed": 18,
+      "measured": 18,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "prediction_rederivation",
+      "property": "stabilized_improved_or_matched",
+      "computed": 13,
+      "measured": 13,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "prediction_rederivation",
+      "property": "stabilized_improvement_rate_pct",
+      "computed": 72.2,
+      "measured": 72.2,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "prediction_rederivation",
+      "property": "free_parameters_zero",
+      "computed": 0,
+      "measured": 1,
+      "error_pct": 100.0
+    },
+    {
+      "lab": "prediction_rederivation",
+      "property": "dwarf_core_radius_resolved",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "prediction_rederivation",
+      "property": "dwarf_core_radius_error_pct",
+      "computed": 0.33,
+      "measured": 0.33,
+      "error_pct": 0.0
+    }
+  ]
+}

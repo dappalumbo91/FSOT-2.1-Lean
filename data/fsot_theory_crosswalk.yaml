@@ -322,6 +322,20 @@ verified_extension_domains:
     labs: [omni_theory_humanities, genesis_per_verse]
     lean_module: FSOT.Formal.OmniTheoryGenesisPriors
 
+  FSOT_Aggregate_Unified_DB:
+    tier: 36
+    D_eff: 17
+    maps_to_lean: [particle, mathematical, medical]
+    labs: [fsot_aggregate, formula_corpus]
+    lean_module: FSOT.Formal.FsotAggregateUnifiedDbPriors
+
+  Prediction_Rederivation:
+    tier: 36
+    D_eff: 14
+    maps_to_lean: [cosmological, particle, galactic]
+    labs: [fsot_aggregate, fsot_compute]
+    lean_module: FSOT.Formal.PredictionRederivationPriors
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

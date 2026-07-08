@@ -18,6 +18,7 @@ REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from formula_corpus import load_strict_empirical_jsonl, summarize_formula_corpus  # noqa: E402
+from fsot_paths import rel_repo_path, strict_empirical_jsonl_path  # noqa: E402
 
 
 def verify_formula_corpus(
@@ -28,7 +29,7 @@ def verify_formula_corpus(
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
     ver = manifest.get("verification", {})
-    corpus_path = Path(manifest["corpus_root"]) / manifest["artifacts"]["strict_empirical_jsonl"]["path"]
+    corpus_path = strict_empirical_jsonl_path()
     issues: list[str] = []
 
     if not corpus_path.exists():
@@ -36,7 +37,7 @@ def verify_formula_corpus(
 
     rows = load_strict_empirical_jsonl(corpus_path)
     live = summarize_formula_corpus(rows)
-    live["corpus_path"] = str(corpus_path)
+    live["corpus_path"] = rel_repo_path(corpus_path)
 
     registry = json.loads(registry_path.read_text(encoding="utf-8")) if registry_path.exists() else {}
     if not registry.get("formula_corpus"):

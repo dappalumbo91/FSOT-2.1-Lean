@@ -1,0 +1,20 @@
+# Tier 36 — FSOT aggregate unified mathematical database (FSOT 2.1 Lean).
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  fsot_aggregate_root: "vendor/fsot_aggregate"
+
+build:
+  script: scripts/build_fsot_aggregate_unified_db_benchmark.py
+  output: data/fsot_aggregate_unified_db_benchmark.json
+
+lean:
+  generator: scripts/gen_fsot_aggregate_unified_db_lean.py
+  module: FSOT.Formal.FsotAggregateUnifiedDbPriors
+  lean_domain: particle
+  sign_theorem: particle_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 5.0

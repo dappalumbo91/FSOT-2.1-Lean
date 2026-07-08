@@ -635,6 +635,32 @@ extension_domains:
     lean_module: FSOT.Formal.OmniTheoryGenesisPriors
     note: "Genesis ch.1 per-verse FSOT scalar + D_eff humanities crosswalk"
 
+  FSOT_Aggregate_Unified_DB:
+    tier: 36
+    D_eff: 17
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, mathematical, medical]
+    build_script: scripts/build_fsot_aggregate_unified_db_benchmark.py
+    manifest: data/fsot_aggregate_unified_db_manifest.yaml
+    benchmark_data: data/fsot_aggregate_unified_db_benchmark.json
+    lean_module: FSOT.Formal.FsotAggregateUnifiedDbPriors
+    note: "Portable aggregate unified mathematical database (1532 rows, 107 SMILES sections)"
+
+  Prediction_Rederivation:
+    tier: 36
+    D_eff: 14
+    delta_psi: 0.65
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [cosmological, particle, galactic]
+    build_script: scripts/build_prediction_rederivation_benchmark.py
+    manifest: data/prediction_rederivation_manifest.yaml
+    benchmark_data: data/prediction_rederivation_benchmark.json
+    lean_module: FSOT.Formal.PredictionRederivationPriors
+    note: "66-prediction re-derivation arc with zero free parameters"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

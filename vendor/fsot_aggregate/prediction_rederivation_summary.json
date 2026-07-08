@@ -1,0 +1,23 @@
+{
+  "report_title": "FSOT 2.0 Master Prediction Re-Derivation Report",
+  "engine": "fsot_compute.py",
+  "free_parameters": 0,
+  "seed_constants": ["pi", "e", "phi", "gamma", "G_Catalan"],
+  "total_unique_predictions": 66,
+  "category_a_direct_engine": 15,
+  "category_b_derived": 51,
+  "confirmed_by_observation": 11,
+  "computable_error_pairs": 18,
+  "stabilized_improved_or_matched": 13,
+  "stabilized_improvement_rate_pct": 72.2,
+  "top_improvements": [
+    {"prediction": "N_eff", "original_error_pct": 4.07, "stabilized_error_pct": 0.01},
+    {"prediction": "H0", "original_error_pct": 6.97, "stabilized_error_pct": 1.54},
+    {"prediction": "Higgs_mass", "original_error_pct": 2.8, "stabilized_error_pct": 0.24},
+    {"prediction": "z_reion", "original_error_pct": 2.6, "stabilized_error_pct": 0.36},
+    {"prediction": "Omega_Lambda", "original_error_pct": 2.19, "stabilized_error_pct": 0.05}
+  ],
+  "dwarf_core_radius_resolved": true,
+  "dwarf_core_radius_error_pct": 0.33,
+  "source_report": "vendor/fsot_aggregate/PREDICTION_REDERIVATION_REPORT.md"
+}

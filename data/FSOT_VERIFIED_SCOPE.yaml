@@ -1,4 +1,4 @@
-generated_at: '2026-07-08T15:19:17.903216+00:00'
+generated_at: '2026-07-08T16:35:49.076912+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 104
+  lean_formal_modules: 106
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 33
-  tiers_total: 33
+  tiers_complete: 34
+  tiers_total: 34
   percent_complete: 100.0
-current_tier: Tier 35 Crosswalk wave — Rendlesham decoder, Qwen certified agent, Genesis
-  omni-theory
+current_tier: Tier 36 Self-contained unit — portable formula corpus, aggregate DB,
+  vendor audit
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -424,7 +424,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: true
-scientific_domains_covered: 84
+scientific_domains_covered: 86
 total_empirical_records: 307820
 tier_coverage:
 - tier: 1
@@ -469,6 +469,7 @@ tier_coverage:
   - ExperimentSynthesisPriors
   - FormulaCorpusCncPriors
   - FormulaCorpusPriors
+  - FsotAggregateUnifiedDbPriors
   - FuelPriors
   - GeochemistryPriors
   - GeomagnetismPriors
@@ -510,6 +511,7 @@ tier_coverage:
   - PlanetaryAtmospheresPriors
   - PlanetaryStructurePriors
   - PlasmaPhysicsPriors
+  - PredictionRederivationPriors
   - ProteinPriors
   - QuantumMaterialsPriors
   - SeismologyDeepPriors
@@ -634,7 +636,7 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 81
+    scientific_domains_covered: 84
     expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -1048,6 +1050,24 @@ tier_coverage:
   - FSOT.Formal.BinaryDecoderRendleshamPriors
   - FSOT.Formal.CertifiedAgentQwenPriors
   - FSOT.Formal.OmniTheoryGenesisPriors
+- tier: 36
+  name: Self-contained unit — portable formula corpus, aggregate DB, vendor audit
+  status: complete
+  metrics:
+    formula_corpus_portable: true
+    formula_corpus_records_hint: 7941
+    extension_domain_count: 50
+    fsot_aggregate_unified_db_records: 8
+    prediction_rederivation_records: 10
+    precision_candidates_over_1pct: 0
+  artifacts:
+  - vendor/formula_corpus/by_domain/strict_empirical.jsonl
+  - vendor/fsot_aggregate
+  - data/fsot_aggregate_unified_db_manifest.yaml
+  - data/prediction_rederivation_manifest.yaml
+  - data/portable_vendor_coverage_audit.json
+  - FSOT.Formal.FsotAggregateUnifiedDbPriors
+  - FSOT.Formal.PredictionRederivationPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -1337,6 +1357,18 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: B_verified
   lean_module: FSOT.Formal.OmniTheoryGenesisPriors
+- domain: FSOT_Aggregate_Unified_DB
+  tier: 36
+  record_count: 8
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.FsotAggregateUnifiedDbPriors
+- domain: Prediction_Rederivation
+  tier: 36
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.PredictionRederivationPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1836,6 +1868,28 @@ theory_crosswalk:
     - omni_theory_humanities
     - genesis_per_verse
     lean_module: FSOT.Formal.OmniTheoryGenesisPriors
+  FSOT_Aggregate_Unified_DB:
+    tier: 36
+    D_eff: 17
+    maps_to_lean:
+    - particle
+    - mathematical
+    - medical
+    labs:
+    - fsot_aggregate
+    - formula_corpus
+    lean_module: FSOT.Formal.FsotAggregateUnifiedDbPriors
+  Prediction_Rederivation:
+    tier: 36
+    D_eff: 14
+    maps_to_lean:
+    - cosmological
+    - particle
+    - galactic
+    labs:
+    - fsot_aggregate
+    - fsot_compute
+    lean_module: FSOT.Formal.PredictionRederivationPriors
 lean_formal_modules:
 - AetherPrimePriors
 - ArxivPrimitivesV14Priors
@@ -1868,6 +1922,7 @@ lean_formal_modules:
 - ExperimentSynthesisPriors
 - FormulaCorpusCncPriors
 - FormulaCorpusPriors
+- FsotAggregateUnifiedDbPriors
 - FuelPriors
 - GeochemistryPriors
 - GeomagnetismPriors
@@ -1908,6 +1963,7 @@ lean_formal_modules:
 - PlanetaryAtmospheresPriors
 - PlanetaryStructurePriors
 - PlasmaPhysicsPriors
+- PredictionRederivationPriors
 - ProteinPriors
 - QuantumMaterialsPriors
 - SeismologyDeepPriors

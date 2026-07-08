@@ -14,8 +14,10 @@ python scripts/fsot_verification_runner.py --portable
 Portable mode uses:
 
 - `vendor/fsot_compute.py` — canonical numeric oracle
+- `vendor/formula_corpus/by_domain/strict_empirical.jsonl` — **7,941** per-formula strict-empirical verification corpus
 - `vendor/smiles/FSOT_SMILES_Lab_Dataset.json` — SMILES Lab catalog
 - `vendor/evolution/biological_mt_operons.json` — evolution operon source
+- `vendor/fsot_aggregate/` — unified mathematical database + prediction re-derivation summary
 - Pre-built benchmarks under `data/` (climate, space weather, pharmacology, etc.)
 
 See `data/external_data_manifest.yaml` for the full bundled vs cached vs optional breakdown.

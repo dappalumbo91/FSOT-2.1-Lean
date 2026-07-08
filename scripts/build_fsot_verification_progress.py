@@ -96,6 +96,9 @@ def build_progress() -> dict:
     binary_decoder_rendlesham_bench = _load_json(ROOT / "data" / "binary_decoder_rendlesham_benchmark.json")
     certified_agent_qwen_bench = _load_json(ROOT / "data" / "certified_agent_qwen_benchmark.json")
     omni_theory_genesis_bench = _load_json(ROOT / "data" / "omni_theory_genesis_benchmark.json")
+    fsot_aggregate_unified_db_bench = _load_json(ROOT / "data" / "fsot_aggregate_unified_db_benchmark.json")
+    prediction_rederivation_bench = _load_json(ROOT / "data" / "prediction_rederivation_benchmark.json")
+    vendor_audit = _load_json(ROOT / "data" / "portable_vendor_coverage_audit.json")
 
     proved = cert.get("proved_claims")
     proved_n = len(proved) if isinstance(proved, list) else proved
@@ -913,12 +916,41 @@ def build_progress() -> dict:
                 "FSOT.Formal.OmniTheoryGenesisPriors",
             ],
         },
+        {
+            "tier": 36,
+            "name": "Self-contained unit — portable formula corpus, aggregate DB, vendor audit",
+            "status": "complete"
+            if fsot_aggregate_unified_db_bench.get("record_count", 0) >= 5
+            and prediction_rederivation_bench.get("record_count", 0) >= 5
+            and vendor_audit.get("formula_corpus_portable")
+            and vendor_audit.get("all_extension_benchmarks_present")
+            and fsot_aggregate_unified_db_bench.get("median_error_pct", 99) <= 5.0
+            and prediction_rederivation_bench.get("median_error_pct", 99) <= 5.0
+            else "pending",
+            "metrics": {
+                "formula_corpus_portable": vendor_audit.get("formula_corpus_portable"),
+                "formula_corpus_records_hint": vendor_audit.get("formula_corpus_records_hint"),
+                "extension_domain_count": vendor_audit.get("extension_domain_count"),
+                "fsot_aggregate_unified_db_records": fsot_aggregate_unified_db_bench.get("record_count"),
+                "prediction_rederivation_records": prediction_rederivation_bench.get("record_count"),
+                "precision_candidates_over_1pct": len(vendor_audit.get("precision_tightening_candidates") or []),
+            },
+            "artifacts": [
+                "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+                "vendor/fsot_aggregate",
+                "data/fsot_aggregate_unified_db_manifest.yaml",
+                "data/prediction_rederivation_manifest.yaml",
+                "data/portable_vendor_coverage_audit.json",
+                "FSOT.Formal.FsotAggregateUnifiedDbPriors",
+                "FSOT.Formal.PredictionRederivationPriors",
+            ],
+        },
     ]
 
     next_steps = [
-        "FSOT 3.0 aggregate vendor bundle (unified mathematical database)",
         "Extension domain precision tightening (median error < 1% wave)",
-        "Portable vendor coverage audit for all 48 extension domains",
+        "Remaining desktop crosswalk themes (fsot_20_code_vl_distill, rust_lean_bridge)",
+        "Knowledge-base per-formula portable bundle",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -937,7 +969,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 35 Crosswalk wave — Rendlesham decoder, Qwen certified agent, Genesis omni-theory",
+        "current_position": "Tier 36 Self-contained unit — portable formula corpus, aggregate DB, vendor audit",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

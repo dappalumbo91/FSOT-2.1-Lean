@@ -1,0 +1,566 @@
+{
+  "generated_at": "2026-07-08T16:35:47.321425+00:00",
+  "extension_domain_count": 50,
+  "bundled_asset_count": 30,
+  "formula_corpus_portable": true,
+  "formula_corpus_records_hint": 7941,
+  "missing_benchmark_domains": [],
+  "missing_bundled_assets": [],
+  "precision_tightening_candidates": [],
+  "all_extension_benchmarks_present": true,
+  "all_bundled_assets_present": true,
+  "domains": [
+    {
+      "domain": "Plasma_Physics",
+      "tier": 12,
+      "benchmark_data": "data/plasma_physics_benchmark.json",
+      "benchmark_present": true,
+      "build_script": null,
+      "lean_module": "FSOT.Formal.PlasmaPhysicsPriors"
+    },
+    {
+      "domain": "Immunology",
+      "tier": 12,
+      "benchmark_data": "data/immunology_benchmark.json",
+      "benchmark_present": true,
+      "build_script": null,
+      "lean_module": "FSOT.Formal.ImmunologyPriors"
+    },
+    {
+      "domain": "Climate_Science",
+      "tier": 12,
+      "benchmark_data": "data/climate_observed_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_climate_observed_benchmark.py",
+      "lean_module": "FSOT.Formal.ClimateSciencePriors"
+    },
+    {
+      "domain": "Cosmology_Extended",
+      "tier": 16,
+      "benchmark_data": "data/cosmology_extended_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_cosmology_extended_benchmark.py",
+      "lean_module": "FSOT.Formal.CosmologyExtendedPriors"
+    },
+    {
+      "domain": "Particle_Physics",
+      "tier": 16,
+      "benchmark_data": "data/particle_physics_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_particle_physics_benchmark.py",
+      "lean_module": "FSOT.Formal.ParticlePhysicsPriors"
+    },
+    {
+      "domain": "Space_Weather",
+      "tier": 17,
+      "benchmark_data": "data/space_weather_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_space_weather_benchmark.py",
+      "lean_module": "FSOT.Formal.SpaceWeatherPriors"
+    },
+    {
+      "domain": "Hydrology",
+      "tier": 19,
+      "benchmark_data": "data/hydrology_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_hydrology_benchmark.py",
+      "lean_module": "FSOT.Formal.HydrologyPriors"
+    },
+    {
+      "domain": "Pharmacology",
+      "tier": 20,
+      "benchmark_data": "data/pharmacology_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_pharmacology_benchmark.py",
+      "lean_module": "FSOT.Formal.PharmacologyPriors"
+    },
+    {
+      "domain": "Cryosphere",
+      "tier": 20,
+      "benchmark_data": "data/cryosphere_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_cryosphere_benchmark.py",
+      "lean_module": "FSOT.Formal.CryospherePriors"
+    },
+    {
+      "domain": "Seismology",
+      "tier": 21,
+      "benchmark_data": "data/seismology_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_seismology_benchmark.py",
+      "lean_module": "FSOT.Formal.SeismologyPriors"
+    },
+    {
+      "domain": "Tectonics",
+      "tier": 21,
+      "benchmark_data": "data/tectonics_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tectonics_benchmark.py",
+      "lean_module": "FSOT.Formal.TectonicsPriors"
+    },
+    {
+      "domain": "Geomagnetism",
+      "tier": 21,
+      "benchmark_data": "data/geomagnetism_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_geomagnetism_benchmark.py",
+      "lean_module": "FSOT.Formal.GeomagnetismPriors"
+    },
+    {
+      "domain": "Planetary_Structure",
+      "tier": 21,
+      "benchmark_data": "data/planetary_structure_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_planetary_structure_benchmark.py",
+      "lean_module": "FSOT.Formal.PlanetaryStructurePriors"
+    },
+    {
+      "domain": "Orbital_Mechanics",
+      "tier": 21,
+      "benchmark_data": "data/orbital_mechanics_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_orbital_mechanics_benchmark.py",
+      "lean_module": "FSOT.Formal.OrbitalMechanicsPriors"
+    },
+    {
+      "domain": "Small_Body_Orbits",
+      "tier": 22,
+      "benchmark_data": "data/small_body_orbits_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_small_body_orbits_benchmark.py",
+      "lean_module": "FSOT.Formal.SmallBodyOrbitsPriors"
+    },
+    {
+      "domain": "Magnetosphere",
+      "tier": 22,
+      "benchmark_data": "data/magnetosphere_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_magnetosphere_benchmark.py",
+      "lean_module": "FSOT.Formal.MagnetospherePriors"
+    },
+    {
+      "domain": "Grace_Cryosphere",
+      "tier": 23,
+      "benchmark_data": "data/grace_cryosphere_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_grace_cryosphere_benchmark.py",
+      "lean_module": "FSOT.Formal.GraceCryospherePriors"
+    },
+    {
+      "domain": "Seismology_Deep",
+      "tier": 23,
+      "benchmark_data": "data/seismology_deep_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_seismology_deep_benchmark.py",
+      "lean_module": "FSOT.Formal.SeismologyDeepPriors"
+    },
+    {
+      "domain": "Planetary_Atmospheres",
+      "tier": 23,
+      "benchmark_data": "data/planetary_atmospheres_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_planetary_atmospheres_benchmark.py",
+      "lean_module": "FSOT.Formal.PlanetaryAtmospheresPriors"
+    },
+    {
+      "domain": "Magnetosphere_Extended",
+      "tier": 25,
+      "benchmark_data": "data/magnetosphere_extended_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_magnetosphere_extended_benchmark.py",
+      "lean_module": "FSOT.Formal.MagnetosphereExtendedPriors"
+    },
+    {
+      "domain": "Geochemistry",
+      "tier": 26,
+      "benchmark_data": "data/geochemistry_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_geochemistry_benchmark.py",
+      "lean_module": "FSOT.Formal.GeochemistryPriors"
+    },
+    {
+      "domain": "Oncology",
+      "tier": 26,
+      "benchmark_data": "data/oncology_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_oncology_benchmark.py",
+      "lean_module": "FSOT.Formal.OncologyPriors"
+    },
+    {
+      "domain": "Neuroimmunology",
+      "tier": 26,
+      "benchmark_data": "data/neuroimmunology_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_neuroimmunology_benchmark.py",
+      "lean_module": "FSOT.Formal.NeuroimmunologyPriors"
+    },
+    {
+      "domain": "Synthetic_Biology",
+      "tier": 27,
+      "benchmark_data": "data/synthetic_biology_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_synthetic_biology_benchmark.py",
+      "lean_module": "FSOT.Formal.SyntheticBiologyPriors"
+    },
+    {
+      "domain": "Quantum_Materials",
+      "tier": 27,
+      "benchmark_data": "data/quantum_materials_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_quantum_materials_benchmark.py",
+      "lean_module": "FSOT.Formal.QuantumMaterialsPriors"
+    },
+    {
+      "domain": "Neuron_Multi_Hero",
+      "tier": 27,
+      "benchmark_data": "data/multi_hero_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_multi_hero_benchmark.py",
+      "lean_module": "FSOT.Formal.NeuronMultiHeroPriors"
+    },
+    {
+      "domain": "Linguistics_Formal",
+      "tier": 29,
+      "benchmark_data": "data/linguistics_formal_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_linguistics_formal_benchmark.py",
+      "lean_module": "FSOT.Formal.LinguisticsFormalPriors"
+    },
+    {
+      "domain": "Mathematics_Computational",
+      "tier": 29,
+      "benchmark_data": "data/mathematics_computational_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_mathematics_computational_benchmark.py",
+      "lean_module": "FSOT.Formal.MathematicsComputationalPriors"
+    },
+    {
+      "domain": "Materials_Engineering",
+      "tier": 29,
+      "benchmark_data": "data/materials_engineering_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_materials_engineering_benchmark.py",
+      "lean_module": "FSOT.Formal.MaterialsEngineeringPriors"
+    },
+    {
+      "domain": "Computational_Reasoning",
+      "tier": 29,
+      "benchmark_data": "data/computational_reasoning_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_computational_reasoning_benchmark.py",
+      "lean_module": "FSOT.Formal.ComputationalReasoningPriors"
+    },
+    {
+      "domain": "Math_Generator_Rules_Eval",
+      "tier": 30,
+      "benchmark_data": "data/math_generator_rules_eval_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_math_generator_rules_eval_benchmark.py",
+      "lean_module": "FSOT.Formal.MathGeneratorRulesEvalPriors"
+    },
+    {
+      "domain": "Trinary_OS_Portable",
+      "tier": 30,
+      "benchmark_data": "data/trinary_os_portable_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_trinary_os_portable_benchmark.py",
+      "lean_module": "FSOT.Formal.TrinaryOSPortablePriors"
+    },
+    {
+      "domain": "Materials_Species_Bridge",
+      "tier": 30,
+      "benchmark_data": "data/materials_species_bridge_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_materials_species_bridge_benchmark.py",
+      "lean_module": "FSOT.Formal.MaterialsSpeciesBridgePriors"
+    },
+    {
+      "domain": "IGEM_Synthetic_Biology",
+      "tier": 31,
+      "benchmark_data": "data/igem_synthetic_biology_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_igem_synthetic_biology_benchmark.py",
+      "lean_module": "FSOT.Formal.IGEMSyntheticBiologyPriors"
+    },
+    {
+      "domain": "Math_Generator_Benchmark_Formula_Eval",
+      "tier": 31,
+      "benchmark_data": "data/math_generator_benchmark_formula_eval_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_math_generator_benchmark_formula_eval_benchmark.py",
+      "lean_module": "FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors"
+    },
+    {
+      "domain": "Trinary_OS_ISA_Rebuild",
+      "tier": 31,
+      "benchmark_data": "data/trinary_os_isa_rebuild_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_trinary_os_isa_rebuild_benchmark.py",
+      "lean_module": "FSOT.Formal.TrinaryOSISARebuildPriors"
+    },
+    {
+      "domain": "IGEM_Live_FASTA_Ingest",
+      "tier": 32,
+      "benchmark_data": "data/igem_live_fasta_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_igem_live_fasta_benchmark.py",
+      "lean_module": "FSOT.Formal.IGEMLiveFastaPriors"
+    },
+    {
+      "domain": "Math_Generator_Airfoil_RMSE",
+      "tier": 32,
+      "benchmark_data": "data/math_generator_airfoil_rmse_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_math_generator_airfoil_rmse_benchmark.py",
+      "lean_module": "FSOT.Formal.MathGeneratorAirfoilRmsePriors"
+    },
+    {
+      "domain": "Trinary_OS_Round_Trip",
+      "tier": 32,
+      "benchmark_data": "data/trinary_os_round_trip_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_trinary_os_round_trip_benchmark.py",
+      "lean_module": "FSOT.Formal.TrinaryOSRoundTripPriors"
+    },
+    {
+      "domain": "Tokenization_Smoke",
+      "tier": 33,
+      "benchmark_data": "data/tokenization_smoke_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tokenization_smoke_benchmark.py",
+      "lean_module": "FSOT.Formal.TokenizationSmokePriors"
+    },
+    {
+      "domain": "Trinary_Hardware_Motif",
+      "tier": 33,
+      "benchmark_data": "data/trinary_hardware_motif_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_trinary_hardware_motif_benchmark.py",
+      "lean_module": "FSOT.Formal.TrinaryHardwareMotifPriors"
+    },
+    {
+      "domain": "Intrinsic_LLM_Validators",
+      "tier": 33,
+      "benchmark_data": "data/intrinsic_llm_validators_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_intrinsic_llm_validators_benchmark.py",
+      "lean_module": "FSOT.Formal.IntrinsicLLMValidatorsPriors"
+    },
+    {
+      "domain": "Biological_CUDA_Physarum",
+      "tier": 34,
+      "benchmark_data": "data/biological_cuda_physarum_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_biological_cuda_physarum_benchmark.py",
+      "lean_module": "FSOT.Formal.BiologicalCudaPhysarumPriors"
+    },
+    {
+      "domain": "Arxiv_Primitives_V14",
+      "tier": 34,
+      "benchmark_data": "data/arxiv_primitives_v14_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_arxiv_primitives_v14_benchmark.py",
+      "lean_module": "FSOT.Formal.ArxivPrimitivesV14Priors"
+    },
+    {
+      "domain": "Formula_Corpus_CNC",
+      "tier": 34,
+      "benchmark_data": "data/formula_corpus_cnc_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_formula_corpus_cnc_benchmark.py",
+      "lean_module": "FSOT.Formal.FormulaCorpusCncPriors"
+    },
+    {
+      "domain": "Binary_Decoder_Rendlesham",
+      "tier": 35,
+      "benchmark_data": "data/binary_decoder_rendlesham_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_binary_decoder_rendlesham_benchmark.py",
+      "lean_module": "FSOT.Formal.BinaryDecoderRendleshamPriors"
+    },
+    {
+      "domain": "Certified_Agent_Qwen",
+      "tier": 35,
+      "benchmark_data": "data/certified_agent_qwen_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_certified_agent_qwen_benchmark.py",
+      "lean_module": "FSOT.Formal.CertifiedAgentQwenPriors"
+    },
+    {
+      "domain": "Omni_Theory_Genesis",
+      "tier": 35,
+      "benchmark_data": "data/omni_theory_genesis_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_omni_theory_genesis_benchmark.py",
+      "lean_module": "FSOT.Formal.OmniTheoryGenesisPriors"
+    },
+    {
+      "domain": "FSOT_Aggregate_Unified_DB",
+      "tier": 36,
+      "benchmark_data": "data/fsot_aggregate_unified_db_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_fsot_aggregate_unified_db_benchmark.py",
+      "lean_module": "FSOT.Formal.FsotAggregateUnifiedDbPriors"
+    },
+    {
+      "domain": "Prediction_Rederivation",
+      "tier": 36,
+      "benchmark_data": "data/prediction_rederivation_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_prediction_rederivation_benchmark.py",
+      "lean_module": "FSOT.Formal.PredictionRederivationPriors"
+    }
+  ],
+  "bundled_assets": [
+    {
+      "asset": "fsot_compute",
+      "path": "vendor/fsot_compute.py",
+      "present": true
+    },
+    {
+      "asset": "smiles_dataset",
+      "path": "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
+      "present": true
+    },
+    {
+      "asset": "evolution_operons",
+      "path": "vendor/evolution/biological_mt_operons.json",
+      "present": true
+    },
+    {
+      "asset": "linguistics_targets",
+      "path": "vendor/linguistics/data/LINGUISTIC_TARGETS.csv",
+      "present": true
+    },
+    {
+      "asset": "linguistics_derivations",
+      "path": "vendor/linguistics/linguistics_derivations.json",
+      "present": true
+    },
+    {
+      "asset": "math_generator_comparison",
+      "path": "vendor/math_generator/generated_formula_comparison_report.json",
+      "present": true
+    },
+    {
+      "asset": "math_generator_rules",
+      "path": "vendor/math_generator/rules",
+      "present": true
+    },
+    {
+      "asset": "trinary_os_oracles",
+      "path": "vendor/trinary_os/target",
+      "present": true
+    },
+    {
+      "asset": "species_catalog",
+      "path": "vendor/species/fsot_species_catalog.json",
+      "present": true
+    },
+    {
+      "asset": "igem_parts_registry",
+      "path": "vendor/igem/igem_parts_registry.json",
+      "present": true
+    },
+    {
+      "asset": "math_generator_benchmark_reports",
+      "path": "vendor/math_generator/benchmark_reports",
+      "present": true
+    },
+    {
+      "asset": "trinary_os_isa_registry",
+      "path": "vendor/trinary_os/isa/fsotb_opcode_registry.json",
+      "present": true
+    },
+    {
+      "asset": "igem_fastas",
+      "path": "vendor/igem/fastas",
+      "present": true
+    },
+    {
+      "asset": "airfoil_dataset",
+      "path": "vendor/math_generator/datasets/airfoil_self_noise.csv",
+      "present": true
+    },
+    {
+      "asset": "trinary_os_fixtures",
+      "path": "vendor/trinary_os/fixtures",
+      "present": true
+    },
+    {
+      "asset": "trinary_os_round_trip",
+      "path": "vendor/trinary_os/round_trip",
+      "present": true
+    },
+    {
+      "asset": "linguistics_derivations_json",
+      "path": "vendor/linguistics/linguistics_derivations.json",
+      "present": true
+    },
+    {
+      "asset": "tokenization_smoke",
+      "path": "vendor/tokenization",
+      "present": true
+    },
+    {
+      "asset": "trinary_hardware_motif",
+      "path": "vendor/trinary_hardware/motif_influence_profile_stable.json",
+      "present": true
+    },
+    {
+      "asset": "intrinsic_llm_validators",
+      "path": "vendor/intrinsic_llm/benchmark_results_final.json",
+      "present": true
+    },
+    {
+      "asset": "biological_cuda_physarum",
+      "path": "vendor/physarum",
+      "present": true
+    },
+    {
+      "asset": "arxiv_primitives_v14",
+      "path": "vendor/arxiv_primitives/v14_run_summary.json",
+      "present": true
+    },
+    {
+      "asset": "formula_corpus_cnc",
+      "path": "vendor/formula_corpus_cnc",
+      "present": true
+    },
+    {
+      "asset": "binary_decoder_rendlesham",
+      "path": "vendor/binary_decoder/rendlesham_page14_trace.json",
+      "present": true
+    },
+    {
+      "asset": "certified_agent_qwen",
+      "path": "vendor/certified_agent",
+      "present": true
+    },
+    {
+      "asset": "omni_theory_genesis",
+      "path": "vendor/omni_theory/analysis/genesis/genesis_per_verse_summary.json",
+      "present": true
+    },
+    {
+      "asset": "formula_corpus_strict_empirical",
+      "path": "vendor/formula_corpus/by_domain/strict_empirical.jsonl",
+      "present": true
+    },
+    {
+      "asset": "fsot_aggregate_unified_db",
+      "path": "vendor/fsot_aggregate/FSOT_Mathematical_Database_Unified.json",
+      "present": true
+    },
+    {
+      "asset": "prediction_rederivation_summary",
+      "path": "vendor/fsot_aggregate/prediction_rederivation_summary.json",
+      "present": true
+    },
+    {
+      "asset": "evolution_best_organism",
+      "path": "vendor/evolution/best_evolved_organism.json",
+      "present": true
+    }
+  ]
+}

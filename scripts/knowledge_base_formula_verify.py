@@ -9,9 +9,10 @@ from typing import Any
 from formula_corpus import load_strict_empirical_jsonl, summarize_formula_corpus
 
 ROOT = Path(__file__).resolve().parents[1]
-STRICT_EMPIRICAL_PATH = Path(
-    r"C:\Users\damia\Desktop\fsot code language\audits\reports\FSOT_UNIFIED_DATABASE\by_domain\strict_empirical.jsonl"
-)
+import sys
+
+sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import rel_repo_path, strict_empirical_jsonl_path  # noqa: E402
 KB_SUMMARY_PATH = ROOT / "data" / "knowledge_base_formula_verification_summary.json"
 KB_VALIDATION_PATH = Path(
     r"C:\Users\damia\Desktop\Knowledge base\export\full_corpus_math_validation.json"
@@ -46,13 +47,14 @@ def summarize_kb_per_formula(validation_path: Path = KB_VALIDATION_PATH) -> dict
 
 def summarize_knowledge_base_formulas(
     transfer: dict[str, Any],
-    strict_path: Path = STRICT_EMPIRICAL_PATH,
+    strict_path: Path | None = None,
     kb_summary_path: Path = KB_SUMMARY_PATH,
 ) -> dict[str, Any]:
     catalog = transfer.get("catalog_formulas") or []
+    resolved_strict = strict_path or strict_empirical_jsonl_path(require=False)
     strict_summary = (
-        summarize_formula_corpus(load_strict_empirical_jsonl(strict_path))
-        if strict_path.exists()
+        summarize_formula_corpus(load_strict_empirical_jsonl(resolved_strict))
+        if resolved_strict is not None and resolved_strict.exists()
         else {}
     )
     per_formula = summarize_kb_per_formula()
@@ -75,6 +77,6 @@ def summarize_knowledge_base_formulas(
         "observable_verified_matched": strict_summary.get("matched_count", 0),
         "within_target_2pct": strict_summary.get("within_target_2pct", 0),
         "within_tolerable_5pct": strict_summary.get("within_tolerable_5pct", 0),
-        "strict_empirical_corpus_path": str(strict_path),
+        "strict_empirical_corpus_path": rel_repo_path(resolved_strict) if resolved_strict else None,
         **per_formula,
     }

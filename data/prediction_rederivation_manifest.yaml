@@ -1,0 +1,20 @@
+# Tier 36 — FSOT prediction re-derivation arc (portable aggregate).
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  fsot_aggregate_root: "vendor/fsot_aggregate"
+
+build:
+  script: scripts/build_prediction_rederivation_benchmark.py
+  output: data/prediction_rederivation_benchmark.json
+
+lean:
+  generator: scripts/gen_prediction_rederivation_lean.py
+  module: FSOT.Formal.PredictionRederivationPriors
+  lean_domain: galactic
+  sign_theorem: galactic_raw_S_positive
+
+verification:
+  min_records: 5
+  max_median_error_pct: 5.0

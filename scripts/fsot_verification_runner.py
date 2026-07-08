@@ -207,6 +207,8 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.BinaryDecoderRendleshamPriors",
                 "FSOT.Formal.CertifiedAgentQwenPriors",
                 "FSOT.Formal.OmniTheoryGenesisPriors",
+                "FSOT.Formal.FsotAggregateUnifiedDbPriors",
+                "FSOT.Formal.PredictionRederivationPriors",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -816,6 +818,8 @@ def main() -> int:
                 "build_binary_decoder_rendlesham_benchmark.py",
                 "build_certified_agent_qwen_benchmark.py",
                 "build_omni_theory_genesis_benchmark.py",
+                "build_fsot_aggregate_unified_db_benchmark.py",
+                "build_prediction_rederivation_benchmark.py",
                 "ingest_climate_ncei_chunked.py",
                 "build_climate_observed_benchmark.py",
             ):
@@ -925,6 +929,8 @@ def main() -> int:
             (None, "gen_binary_decoder_rendlesham_lean.py", "BinaryDecoderRendleshamPriors.lean generation failed", None),
             (None, "gen_certified_agent_qwen_lean.py", "CertifiedAgentQwenPriors.lean generation failed", None),
             (None, "gen_omni_theory_genesis_lean.py", "OmniTheoryGenesisPriors.lean generation failed", None),
+            (None, "gen_fsot_aggregate_unified_db_lean.py", "FsotAggregateUnifiedDbPriors.lean generation failed", None),
+            (None, "gen_prediction_rederivation_lean.py", "PredictionRederivationPriors.lean generation failed", None),
         ]
             for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
                 if ingest_name:
@@ -1095,6 +1101,7 @@ def main() -> int:
     print("  All checks passed.")
 
     for meta_script in (
+        "audit_portable_vendor_coverage.py",
         "build_fsot_verification_progress.py",
         "build_scientific_domain_expansion_map.py",
         "build_fsot_verified_scope.py",

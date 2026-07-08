@@ -1,8 +1,8 @@
-generated_at: '2026-07-08T15:19:17.585818+00:00'
+generated_at: '2026-07-08T16:35:48.807968+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 48
-  total_scientific_domains_covered: 84
+  extension_domains: 50
+  total_scientific_domains_covered: 86
   total_empirical_records: 307820
   domains_target_band_2pct: 34
   domains_sign_mismatch: 1
@@ -12,7 +12,7 @@ summary:
     C_thin: 6
     D_needs_work: 0
     unverified: 1
-  lean_formal_modules: 104
+  lean_formal_modules: 106
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -676,6 +676,18 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: B_verified
   lean_module: FSOT.Formal.OmniTheoryGenesisPriors
+- domain: FSOT_Aggregate_Unified_DB
+  tier: 36
+  record_count: 8
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.FsotAggregateUnifiedDbPriors
+- domain: Prediction_Rederivation
+  tier: 36
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.PredictionRederivationPriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572

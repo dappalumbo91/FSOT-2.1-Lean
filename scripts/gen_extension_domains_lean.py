@@ -64,6 +64,8 @@ DEDICATED_GENERATORS = {
     "Binary_Decoder_Rendlesham",
     "Certified_Agent_Qwen",
     "Omni_Theory_Genesis",
+    "FSOT_Aggregate_Unified_DB",
+    "Prediction_Rederivation",
 }
 
 LEAN_SIGN = {
@@ -115,6 +117,8 @@ LEAN_SIGN = {
     "Binary_Decoder_Rendlesham": ("consciousness", "consciousness_raw_S_positive"),
     "Certified_Agent_Qwen": ("consciousness", "consciousness_raw_S_positive"),
     "Omni_Theory_Genesis": ("consciousness", "consciousness_raw_S_positive"),
+    "FSOT_Aggregate_Unified_DB": ("particle", "particle_raw_S_positive"),
+    "Prediction_Rederivation": ("galactic", "galactic_raw_S_positive"),
 }
 
 

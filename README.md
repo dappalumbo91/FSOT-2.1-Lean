@@ -27,14 +27,15 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-08 — Tier 35)
+## Verification status (2026-07-08 — Tier 36)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
 Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
 
-- **35/35 verification tiers complete** (Rendlesham decoder + Qwen agent + Genesis omni-theory crosswalk)
-- **84+ scientific domains** (35 NeuroLab + 48 extension bridges)
+- **36/36 verification tiers complete** (self-contained formula corpus + aggregate DB + vendor audit)
+- **86+ scientific domains** (35 NeuroLab + 50 extension bridges)
+- **Self-contained clone-and-verify**: `strict_empirical.jsonl` (7,941 formulas) bundled under `vendor/formula_corpus/`
 - **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
@@ -99,6 +100,8 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - Rendlesham decoder (`FSOT.Formal.BinaryDecoderRendleshamPriors`) — 52-step hidden-state trace, 17 branching events
 - Qwen certified agent (`FSOT.Formal.CertifiedAgentQwenPriors`) — lean-bridge protocol v1.1 + 9-path workspace registry
 - Genesis omni-theory (`FSOT.Formal.OmniTheoryGenesisPriors`) — 12 ch.1 verses, all S&gt;0 FSOT scalar crosswalk
+- Aggregate unified DB (`FSOT.Formal.FsotAggregateUnifiedDbPriors`) — 1,532 mathematical rows, 107 SMILES derivation sections
+- Prediction re-derivation (`FSOT.Formal.PredictionRederivationPriors`) — 66 predictions, zero free parameters, 72% stabilized improvement rate
 - Kronos metrology (`FSOT.Formal.KronosPriors`) — 568 runs, best fractional error 1.64e-7
 - Knowledge base (`FSOT.Formal.KnowledgeBasePriors`) — 19,213 catalog formulas; 7,941 strict-empirical bridge (6,921 within 2%); per-formula pass on full catalog
 - Math generator (`FSOT.Formal.MathGeneratorPriors`) — 7 comparisons within 2%

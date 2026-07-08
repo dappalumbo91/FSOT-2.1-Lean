@@ -449,6 +449,75 @@ def omni_theory_root(*, require: bool = True) -> Path:
     return path
 
 
+def formula_corpus_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_FORMULA_CORPUS_ROOT",
+        VENDOR_ROOT / "formula_corpus",
+        _DESKTOP
+        / "fsot code language"
+        / "audits"
+        / "reports"
+        / "FSOT_UNIFIED_DATABASE",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Formula corpus root not found.")
+    assert path is not None
+    return path
+
+
+def strict_empirical_jsonl_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_STRICT_EMPIRICAL_JSONL",
+        VENDOR_ROOT / "formula_corpus" / "by_domain" / "strict_empirical.jsonl",
+        _DESKTOP
+        / "fsot code language"
+        / "audits"
+        / "reports"
+        / "FSOT_UNIFIED_DATABASE"
+        / "by_domain"
+        / "strict_empirical.jsonl",
+    )
+    if path is None and require:
+        raise FileNotFoundError("strict_empirical.jsonl not found.")
+    assert path is not None
+    return path
+
+
+def fsot_aggregate_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_AGGREGATE_ROOT",
+        VENDOR_ROOT / "fsot_aggregate",
+        _DESKTOP / "Fsot3.0 code" / "database",
+    )
+    if path is None and require:
+        raise FileNotFoundError("FSOT aggregate root not found.")
+    assert path is not None
+    return path
+
+
+def fsot_aggregate_unified_db_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_AGGREGATE_UNIFIED_DB",
+        VENDOR_ROOT / "fsot_aggregate" / "FSOT_Mathematical_Database_Unified.json",
+        _DESKTOP / "Fsot3.0 code" / "database" / "FSOT_Mathematical_Database_Unified.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("FSOT aggregate unified DB not found.")
+    assert path is not None
+    return path
+
+
+def prediction_rederivation_summary_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_PREDICTION_REDERIVATION_SUMMARY",
+        VENDOR_ROOT / "fsot_aggregate" / "prediction_rederivation_summary.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Prediction rederivation summary not found.")
+    assert path is not None
+    return path
+
+
 def omni_theory_genesis_summary_path(*, require: bool = True) -> Path:
     path = _resolve(
         "FSOT_OMNI_THEORY_GENESIS_SUMMARY",

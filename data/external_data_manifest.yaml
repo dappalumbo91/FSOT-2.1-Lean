@@ -133,6 +133,21 @@ bundled:
     role: Genesis ch.1 per-verse FSOT scalar humanities crosswalk
     env_override: FSOT_OMNI_THEORY_GENESIS_SUMMARY
 
+  formula_corpus_strict_empirical:
+    path: vendor/formula_corpus/by_domain/strict_empirical.jsonl
+    role: 7,941 strict-empirical per-formula observable verification corpus
+    env_override: FSOT_STRICT_EMPIRICAL_JSONL
+
+  fsot_aggregate_unified_db:
+    path: vendor/fsot_aggregate/FSOT_Mathematical_Database_Unified.json
+    role: portable aggregate unified mathematical database (1532 rows)
+    env_override: FSOT_AGGREGATE_UNIFIED_DB
+
+  prediction_rederivation_summary:
+    path: vendor/fsot_aggregate/prediction_rederivation_summary.json
+    role: 66-prediction re-derivation arc summary (zero free parameters)
+    env_override: FSOT_PREDICTION_REDERIVATION_SUMMARY
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification
