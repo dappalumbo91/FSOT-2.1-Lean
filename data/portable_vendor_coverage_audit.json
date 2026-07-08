@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-08T16:41:18.790641+00:00",
-  "extension_domain_count": 53,
-  "bundled_asset_count": 33,
+  "generated_at": "2026-07-08T16:58:18.577117+00:00",
+  "extension_domain_count": 63,
+  "bundled_asset_count": 34,
   "formula_corpus_portable": true,
   "formula_corpus_records_hint": 7941,
   "missing_benchmark_domains": [],
@@ -433,6 +433,86 @@
       "benchmark_present": true,
       "build_script": "scripts/build_bibliography_lean_corpus_benchmark.py",
       "lean_module": "FSOT.Formal.BibliographyLeanCorpusPriors"
+    },
+    {
+      "domain": "NIST_CODATA_Constants",
+      "tier": 38,
+      "benchmark_data": "data/nist_codata_constants_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier38_public_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.NistCodataConstantsPriors"
+    },
+    {
+      "domain": "GBIF_Species_Occurrence",
+      "tier": 38,
+      "benchmark_data": "data/gbif_species_occurrence_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier38_public_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.GbifSpeciesOccurrencePriors"
+    },
+    {
+      "domain": "NOAA_Coastal_Tides",
+      "tier": 38,
+      "benchmark_data": "data/noaa_coastal_tides_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier38_public_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.NoaaCoastalTidesPriors"
+    },
+    {
+      "domain": "World_Bank_Development",
+      "tier": 38,
+      "benchmark_data": "data/world_bank_development_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier38_public_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.WorldBankDevelopmentPriors"
+    },
+    {
+      "domain": "NASA_Exoplanet_Archive",
+      "tier": 38,
+      "benchmark_data": "data/nasa_exoplanet_archive_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier38_public_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.NasaExoplanetArchivePriors"
+    },
+    {
+      "domain": "RCSB_PDB_Structures",
+      "tier": 38,
+      "benchmark_data": "data/rcsb_pdb_structures_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier38_public_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.RcsbPdbStructuresPriors"
+    },
+    {
+      "domain": "OpenAlex_Citation_Graph",
+      "tier": 38,
+      "benchmark_data": "data/openalex_citation_graph_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier38_public_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.OpenalexCitationGraphPriors"
+    },
+    {
+      "domain": "PubChem_Compound_Properties",
+      "tier": 38,
+      "benchmark_data": "data/pubchem_compound_properties_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier38_public_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.PubchemCompoundPropertiesPriors"
+    },
+    {
+      "domain": "CERN_Open_Data_LHC",
+      "tier": 38,
+      "benchmark_data": "data/cern_open_data_lhc_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier38_public_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.CernOpenDataLhcPriors"
+    },
+    {
+      "domain": "UniProt_Protein_Annotations",
+      "tier": 38,
+      "benchmark_data": "data/uniprot_protein_annotations_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_tier38_public_data_benchmarks.py",
+      "lean_module": "FSOT.Formal.UniprotProteinAnnotationsPriors"
     }
   ],
   "bundled_assets": [
@@ -594,6 +674,11 @@
     {
       "asset": "bibliography_corpus",
       "path": "vendor/bibliography_corpus",
+      "present": true
+    },
+    {
+      "asset": "tier38_public_data",
+      "path": "vendor/public_data",
       "present": true
     },
     {

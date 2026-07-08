@@ -163,6 +163,13 @@ bundled:
     role: FSOT Bibliography axiomatic Lean corpus + parsed summary
     env_override: FSOT_BIBLIOGRAPHY_CORPUS_ROOT
 
+  tier38_public_data:
+    path: vendor/public_data
+    role: Tier 38 public API summaries (NIST, GBIF, NOAA, World Bank, NASA, RCSB, OpenAlex, PubChem, CERN, UniProt)
+    env_override: FSOT_PUBLIC_DATA_VENDOR_ROOT
+    external_cache_root: D:/FSOT-2.1-Lean-PublicData
+    external_cache_env: FSOT_EXTERNAL_DATA_ROOT
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification

@@ -357,6 +357,76 @@ verified_extension_domains:
     labs: [bibliography_corpus, lean_bridge]
     lean_module: FSOT.Formal.BibliographyLeanCorpusPriors
 
+  NIST_CODATA_Constants:
+    tier: 38
+    D_eff: 7
+    maps_to_lean: [particle, atomic]
+    labs: [nist_codata, fsot_compute]
+    lean_module: FSOT.Formal.NistCodataConstantsPriors
+
+  GBIF_Species_Occurrence:
+    tier: 38
+    D_eff: 15
+    maps_to_lean: [biological, ecological]
+    labs: [gbif, evolution_lab]
+    lean_module: FSOT.Formal.GbifSpeciesOccurrencePriors
+
+  NOAA_Coastal_Tides:
+    tier: 38
+    D_eff: 17
+    maps_to_lean: [energy, galactic]
+    labs: [noaa_tides, oceanography_lab]
+    lean_module: FSOT.Formal.NoaaCoastalTidesPriors
+
+  World_Bank_Development:
+    tier: 38
+    D_eff: 20
+    maps_to_lean: [consciousness, economic]
+    labs: [world_bank, linguistics_lab]
+    lean_module: FSOT.Formal.WorldBankDevelopmentPriors
+
+  NASA_Exoplanet_Archive:
+    tier: 38
+    D_eff: 21
+    maps_to_lean: [astronomical, galactic]
+    labs: [nasa_exoplanet, planetary_structure_lab]
+    lean_module: FSOT.Formal.NasaExoplanetArchivePriors
+
+  RCSB_PDB_Structures:
+    tier: 38
+    D_eff: 13
+    maps_to_lean: [medical, biological]
+    labs: [rcsb_pdb, protein_lab]
+    lean_module: FSOT.Formal.RcsbPdbStructuresPriors
+
+  OpenAlex_Citation_Graph:
+    tier: 38
+    D_eff: 18
+    maps_to_lean: [consciousness, linguistic]
+    labs: [openalex, knowledge_base]
+    lean_module: FSOT.Formal.OpenalexCitationGraphPriors
+
+  PubChem_Compound_Properties:
+    tier: 38
+    D_eff: 8
+    maps_to_lean: [electron, chemical]
+    labs: [pubchem, smiles_lab]
+    lean_module: FSOT.Formal.PubchemCompoundPropertiesPriors
+
+  CERN_Open_Data_LHC:
+    tier: 38
+    D_eff: 19
+    maps_to_lean: [particle, high_energy]
+    labs: [cern_opendata, particle_physics_lab]
+    lean_module: FSOT.Formal.CernOpenDataLhcPriors
+
+  UniProt_Protein_Annotations:
+    tier: 38
+    D_eff: 12
+    maps_to_lean: [biological, medical]
+    labs: [uniprot, protein_lab]
+    lean_module: FSOT.Formal.UniprotProteinAnnotationsPriors
+
 pipeline:
   runner: scripts/fsot_verification_runner.py
   certificate: data/certificate.json

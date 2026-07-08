@@ -1,4 +1,4 @@
-generated_at: '2026-07-08T16:41:20.613272+00:00'
+generated_at: '2026-07-08T16:58:20.369815+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 109
+  lean_formal_modules: 119
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 35
-  tiers_total: 35
+  tiers_complete: 36
+  tiers_total: 36
   percent_complete: 100.0
-current_tier: Tier 37 Desktop crosswalk — VL distill atlas, Rust Lean bridge, Bibliography
-  corpus
+current_tier: Tier 38 Public API wave — NIST, GBIF, NOAA, World Bank, NASA, RCSB,
+  OpenAlex, PubChem, CERN, UniProt
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -424,7 +424,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: true
-scientific_domains_covered: 89
+scientific_domains_covered: 99
 total_empirical_records: 307820
 tier_coverage:
 - tier: 1
@@ -448,6 +448,7 @@ tier_coverage:
   - BrainPriors
   - CameoPriors
   - CellularPriors
+  - CernOpenDataLhcPriors
   - CertifiedAgentQwenPriors
   - ClimateSciencePriors
   - CodonPriors
@@ -472,6 +473,7 @@ tier_coverage:
   - FormulaCorpusPriors
   - FsotAggregateUnifiedDbPriors
   - FuelPriors
+  - GbifSpeciesOccurrencePriors
   - GeochemistryPriors
   - GeomagnetismPriors
   - GraceCryospherePriors
@@ -497,14 +499,18 @@ tier_coverage:
   - MathGeneratorPriors
   - MathGeneratorRulesEvalPriors
   - MathematicsComputationalPriors
+  - NasaExoplanetArchivePriors
   - NeuroimmunologyPriors
   - NeuronCohortPriors
   - NeuronCohortStrataPriors
   - NeuronCohortTrainHoldoutPriors
   - NeuronHybridPriors
   - NeuronMultiHeroPriors
+  - NistCodataConstantsPriors
+  - NoaaCoastalTidesPriors
   - OmniTheoryGenesisPriors
   - OncologyPriors
+  - OpenalexCitationGraphPriors
   - OrbitalMechanicsPriors
   - ParticlePhysicsPriors
   - PharmacologyPriors
@@ -514,7 +520,9 @@ tier_coverage:
   - PlasmaPhysicsPriors
   - PredictionRederivationPriors
   - ProteinPriors
+  - PubchemCompoundPropertiesPriors
   - QuantumMaterialsPriors
+  - RcsbPdbStructuresPriors
   - RustLeanBridgePriors
   - SeismologyDeepPriors
   - SeismologyPriors
@@ -534,9 +542,11 @@ tier_coverage:
   - TrinaryOSPriors
   - TrinaryOSRoundTripPriors
   - UnifiedDBPriors
+  - UniprotProteinAnnotationsPriors
   - VibRegisterPriors
   - VlDistillAtlasPriors
   - WeatherPriors
+  - WorldBankDevelopmentPriors
 - tier: 7
   name: Experiment synthesis (neuron, Aether, magic circle, LLM inventory)
   status: complete
@@ -639,7 +649,7 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 86
+    scientific_domains_covered: 89
     expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -1059,7 +1069,7 @@ tier_coverage:
   metrics:
     formula_corpus_portable: true
     formula_corpus_records_hint: 7941
-    extension_domain_count: 53
+    extension_domain_count: 63
     fsot_aggregate_unified_db_records: 8
     prediction_rederivation_records: 10
     precision_candidates_over_1pct: 0
@@ -1078,7 +1088,7 @@ tier_coverage:
     vl_distill_atlas_records: 10
     rust_lean_bridge_records: 9
     bibliography_lean_corpus_records: 9
-    extension_domain_count: 53
+    extension_domain_count: 63
   artifacts:
   - data/vl_distill_atlas_manifest.yaml
   - data/rust_lean_bridge_manifest.yaml
@@ -1089,6 +1099,36 @@ tier_coverage:
   - FSOT.Formal.VlDistillAtlasPriors
   - FSOT.Formal.RustLeanBridgePriors
   - FSOT.Formal.BibliographyLeanCorpusPriors
+- tier: 38
+  name: Public API wave — NIST, GBIF, NOAA, World Bank, NASA, RCSB, OpenAlex, PubChem,
+    CERN, UniProt
+  status: complete
+  metrics:
+    nist_codata_records: 6
+    gbif_records: 240
+    noaa_tides_records: 20
+    world_bank_records: 165
+    nasa_exoplanet_records: 160
+    rcsb_pdb_records: 45
+    openalex_records: 80
+    pubchem_records: 12
+    cern_opendata_records: 83
+    uniprot_records: 22
+    external_data_root: D:/FSOT-2.1-Lean-PublicData
+  artifacts:
+  - data/tier38_public_apis_manifest.yaml
+  - vendor/public_data
+  - D:/FSOT-2.1-Lean-PublicData
+  - FSOT.Formal.NistCodataConstantsPriors
+  - FSOT.Formal.GbifSpeciesOccurrencePriors
+  - FSOT.Formal.NoaaCoastalTidesPriors
+  - FSOT.Formal.WorldBankDevelopmentPriors
+  - FSOT.Formal.NasaExoplanetArchivePriors
+  - FSOT.Formal.RcsbPdbStructuresPriors
+  - FSOT.Formal.OpenalexCitationGraphPriors
+  - FSOT.Formal.PubchemCompoundPropertiesPriors
+  - FSOT.Formal.CernOpenDataLhcPriors
+  - FSOT.Formal.UniprotProteinAnnotationsPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -1408,6 +1448,66 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: C_thin
   lean_module: FSOT.Formal.BibliographyLeanCorpusPriors
+- domain: NIST_CODATA_Constants
+  tier: 38
+  record_count: 6
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.NistCodataConstantsPriors
+- domain: GBIF_Species_Occurrence
+  tier: 38
+  record_count: 240
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.GbifSpeciesOccurrencePriors
+- domain: NOAA_Coastal_Tides
+  tier: 38
+  record_count: 20
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.NoaaCoastalTidesPriors
+- domain: World_Bank_Development
+  tier: 38
+  record_count: 165
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.WorldBankDevelopmentPriors
+- domain: NASA_Exoplanet_Archive
+  tier: 38
+  record_count: 160
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.NasaExoplanetArchivePriors
+- domain: RCSB_PDB_Structures
+  tier: 38
+  record_count: 45
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.RcsbPdbStructuresPriors
+- domain: OpenAlex_Citation_Graph
+  tier: 38
+  record_count: 80
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.OpenalexCitationGraphPriors
+- domain: PubChem_Compound_Properties
+  tier: 38
+  record_count: 12
+  median_error_pct: 0.0012801911752094832
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.PubchemCompoundPropertiesPriors
+- domain: CERN_Open_Data_LHC
+  tier: 38
+  record_count: 83
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.CernOpenDataLhcPriors
+- domain: UniProt_Protein_Annotations
+  tier: 38
+  record_count: 22
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.UniprotProteinAnnotationsPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -1961,6 +2061,106 @@ theory_crosswalk:
     - bibliography_corpus
     - lean_bridge
     lean_module: FSOT.Formal.BibliographyLeanCorpusPriors
+  NIST_CODATA_Constants:
+    tier: 38
+    D_eff: 7
+    maps_to_lean:
+    - particle
+    - atomic
+    labs:
+    - nist_codata
+    - fsot_compute
+    lean_module: FSOT.Formal.NistCodataConstantsPriors
+  GBIF_Species_Occurrence:
+    tier: 38
+    D_eff: 15
+    maps_to_lean:
+    - biological
+    - ecological
+    labs:
+    - gbif
+    - evolution_lab
+    lean_module: FSOT.Formal.GbifSpeciesOccurrencePriors
+  NOAA_Coastal_Tides:
+    tier: 38
+    D_eff: 17
+    maps_to_lean:
+    - energy
+    - galactic
+    labs:
+    - noaa_tides
+    - oceanography_lab
+    lean_module: FSOT.Formal.NoaaCoastalTidesPriors
+  World_Bank_Development:
+    tier: 38
+    D_eff: 20
+    maps_to_lean:
+    - consciousness
+    - economic
+    labs:
+    - world_bank
+    - linguistics_lab
+    lean_module: FSOT.Formal.WorldBankDevelopmentPriors
+  NASA_Exoplanet_Archive:
+    tier: 38
+    D_eff: 21
+    maps_to_lean:
+    - astronomical
+    - galactic
+    labs:
+    - nasa_exoplanet
+    - planetary_structure_lab
+    lean_module: FSOT.Formal.NasaExoplanetArchivePriors
+  RCSB_PDB_Structures:
+    tier: 38
+    D_eff: 13
+    maps_to_lean:
+    - medical
+    - biological
+    labs:
+    - rcsb_pdb
+    - protein_lab
+    lean_module: FSOT.Formal.RcsbPdbStructuresPriors
+  OpenAlex_Citation_Graph:
+    tier: 38
+    D_eff: 18
+    maps_to_lean:
+    - consciousness
+    - linguistic
+    labs:
+    - openalex
+    - knowledge_base
+    lean_module: FSOT.Formal.OpenalexCitationGraphPriors
+  PubChem_Compound_Properties:
+    tier: 38
+    D_eff: 8
+    maps_to_lean:
+    - electron
+    - chemical
+    labs:
+    - pubchem
+    - smiles_lab
+    lean_module: FSOT.Formal.PubchemCompoundPropertiesPriors
+  CERN_Open_Data_LHC:
+    tier: 38
+    D_eff: 19
+    maps_to_lean:
+    - particle
+    - high_energy
+    labs:
+    - cern_opendata
+    - particle_physics_lab
+    lean_module: FSOT.Formal.CernOpenDataLhcPriors
+  UniProt_Protein_Annotations:
+    tier: 38
+    D_eff: 12
+    maps_to_lean:
+    - biological
+    - medical
+    labs:
+    - uniprot
+    - protein_lab
+    lean_module: FSOT.Formal.UniprotProteinAnnotationsPriors
 lean_formal_modules:
 - AetherPrimePriors
 - ArxivPrimitivesV14Priors
@@ -1972,6 +2172,7 @@ lean_formal_modules:
 - BrainPriors
 - CameoPriors
 - CellularPriors
+- CernOpenDataLhcPriors
 - CertifiedAgentQwenPriors
 - ClimateSciencePriors
 - CodonPriors
@@ -1996,6 +2197,7 @@ lean_formal_modules:
 - FormulaCorpusPriors
 - FsotAggregateUnifiedDbPriors
 - FuelPriors
+- GbifSpeciesOccurrencePriors
 - GeochemistryPriors
 - GeomagnetismPriors
 - GraceCryospherePriors
@@ -2021,14 +2223,18 @@ lean_formal_modules:
 - MathGeneratorPriors
 - MathGeneratorRulesEvalPriors
 - MathematicsComputationalPriors
+- NasaExoplanetArchivePriors
 - NeuroimmunologyPriors
 - NeuronCohortPriors
 - NeuronCohortStrataPriors
 - NeuronCohortTrainHoldoutPriors
 - NeuronHybridPriors
 - NeuronMultiHeroPriors
+- NistCodataConstantsPriors
+- NoaaCoastalTidesPriors
 - OmniTheoryGenesisPriors
 - OncologyPriors
+- OpenalexCitationGraphPriors
 - OrbitalMechanicsPriors
 - ParticlePhysicsPriors
 - PharmacologyPriors
@@ -2037,7 +2243,9 @@ lean_formal_modules:
 - PlasmaPhysicsPriors
 - PredictionRederivationPriors
 - ProteinPriors
+- PubchemCompoundPropertiesPriors
 - QuantumMaterialsPriors
+- RcsbPdbStructuresPriors
 - RustLeanBridgePriors
 - SeismologyDeepPriors
 - SeismologyPriors
@@ -2057,8 +2265,10 @@ lean_formal_modules:
 - TrinaryOSPriors
 - TrinaryOSRoundTripPriors
 - UnifiedDBPriors
+- UniprotProteinAnnotationsPriors
 - VibRegisterPriors
 - VlDistillAtlasPriors
 - WeatherPriors
+- WorldBankDevelopmentPriors
 certificate_path: data/certificate.json
 reproduce: python scripts/fsot_verification_runner.py

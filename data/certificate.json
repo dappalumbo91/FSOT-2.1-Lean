@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-08T16:41:20.922071+00:00",
+  "generated_at": "2026-07-08T16:58:20.693153+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -1065,6 +1065,11 @@
       "cellular_operon_count_pos",
       "cellular_priors_bundle"
     ],
+    "CernOpenDataLhcPriors": [
+      "cern_open_data_lhc_observable_count_pos",
+      "cern_open_data_lhc_median_error_under_five_pct",
+      "cern_open_data_lhc_bundle"
+    ],
     "CertifiedAgentQwenPriors": [
       "certified_agent_qwen_observable_count_pos",
       "certified_agent_qwen_median_error_under_five_pct",
@@ -1420,6 +1425,11 @@
       "fuel_lab_chemical_domain_positive",
       "fuel_lab_compound_bundle"
     ],
+    "GbifSpeciesOccurrencePriors": [
+      "gbif_species_occurrence_observable_count_pos",
+      "gbif_species_occurrence_median_error_under_five_pct",
+      "gbif_species_occurrence_bundle"
+    ],
     "Genomic": [
       "phi_sq_eq",
       "phi_ne_zero",
@@ -1609,6 +1619,11 @@
       "math_generator_rules_eval_median_error_under_five_pct",
       "math_generator_rules_eval_bundle"
     ],
+    "NasaExoplanetArchivePriors": [
+      "nasa_exoplanet_archive_observable_count_pos",
+      "nasa_exoplanet_archive_median_error_under_five_pct",
+      "nasa_exoplanet_archive_bundle"
+    ],
     "NeuroimmunologyPriors": [
       "neuroimmunology_observable_count_pos",
       "neuroimmunology_median_error_under_five_pct",
@@ -1670,6 +1685,16 @@
       "neuron_multi_hero_median_fi_under_thirty_pct",
       "neuron_multi_hero_bundle"
     ],
+    "NistCodataConstantsPriors": [
+      "nist_codata_constants_observable_count_pos",
+      "nist_codata_constants_median_error_under_five_pct",
+      "nist_codata_constants_bundle"
+    ],
+    "NoaaCoastalTidesPriors": [
+      "noaa_coastal_tides_observable_count_pos",
+      "noaa_coastal_tides_median_error_under_five_pct",
+      "noaa_coastal_tides_bundle"
+    ],
     "OmniTheoryGenesisPriors": [
       "omni_theory_genesis_observable_count_pos",
       "omni_theory_genesis_median_error_under_five_pct",
@@ -1679,6 +1704,11 @@
       "oncology_observable_count_pos",
       "oncology_median_error_under_five_pct",
       "oncology_bundle"
+    ],
+    "OpenalexCitationGraphPriors": [
+      "openalex_citation_graph_observable_count_pos",
+      "openalex_citation_graph_median_error_under_five_pct",
+      "openalex_citation_graph_bundle"
     ],
     "OrbitalMechanicsPriors": [
       "orbital_mechanics_body_count_pos",
@@ -1760,10 +1790,20 @@
       "tyrosine_trinary_phase",
       "protein_amino_acid_trinary_bundle"
     ],
+    "PubchemCompoundPropertiesPriors": [
+      "pubchem_compound_properties_observable_count_pos",
+      "pubchem_compound_properties_median_error_under_five_pct",
+      "pubchem_compound_properties_bundle"
+    ],
     "QuantumMaterialsPriors": [
       "quantum_materials_observable_count_pos",
       "quantum_materials_median_error_under_five_pct",
       "quantum_materials_bundle"
+    ],
+    "RcsbPdbStructuresPriors": [
+      "rcsb_pdb_structures_observable_count_pos",
+      "rcsb_pdb_structures_median_error_under_five_pct",
+      "rcsb_pdb_structures_bundle"
     ],
     "RustLeanBridgePriors": [
       "rust_lean_bridge_observable_count_pos",
@@ -1927,6 +1967,11 @@
       "unified_db_top_project_count_pos",
       "unified_db_meta_bundle"
     ],
+    "UniprotProteinAnnotationsPriors": [
+      "uniprot_protein_annotations_observable_count_pos",
+      "uniprot_protein_annotations_median_error_under_five_pct",
+      "uniprot_protein_annotations_bundle"
+    ],
     "VibRegisterPriors": [
       "vibra_pattern_stability_positive",
       "vibra_avg_S_mean_positive",
@@ -1942,6 +1987,11 @@
       "weather_S_min_positive",
       "weather_hour_count_pos",
       "weather_priors_bundle"
+    ],
+    "WorldBankDevelopmentPriors": [
+      "world_bank_development_observable_count_pos",
+      "world_bank_development_median_error_under_five_pct",
+      "world_bank_development_bundle"
     ]
   },
   "source_manifest_sha256": {
@@ -1960,7 +2010,7 @@
     "scripts/gen_protein_priors_lean.py": "9A5300DDD7D142A6C9FF596651F40AF2B4079FCD8A43E3DDD33695D43308294F",
     "scripts/gen_protein_formulas_lean.py": "9E8FD84D7A89A6000E0253F9BADCAA9F3F6720E7496DB6B53F90443E3FD0B6A4",
     "scripts/domain_scalar_oracle.py": "80DBF4F2592B73E468038D5E54532FA1FB26947DB5ABF4AF2794EFFD566906DA",
-    "scripts/fsot_verification_runner.py": "00D5C28008F2D632CEF65AD04AF7A68CAE509293FA716ED6EBD870B12A6E9D2B",
+    "scripts/fsot_verification_runner.py": "CCFDDD9EAFB1FE3F0CC887D33352A2188F2745A54F8A1A084F8C94A09B2F4F0E",
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },

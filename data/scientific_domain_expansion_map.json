@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-08T16:41:20.283304+00:00",
+  "generated_at": "2026-07-08T16:58:20.089933+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 53,
-    "total_scientific_domains_covered": 89,
+    "extension_domains": 63,
+    "total_scientific_domains_covered": 99,
     "total_empirical_records": 307820,
     "domains_target_band_2pct": 34,
     "domains_sign_mismatch": 1,
@@ -14,7 +14,7 @@
       "D_needs_work": 0,
       "unverified": 1
     },
-    "lean_formal_modules": 109
+    "lean_formal_modules": 119
   },
   "neurolab_domains": [
     {
@@ -920,6 +920,86 @@
       "median_error_pct": 0.0,
       "coverage_tier": "C_thin",
       "lean_module": "FSOT.Formal.BibliographyLeanCorpusPriors"
+    },
+    {
+      "domain": "NIST_CODATA_Constants",
+      "tier": 38,
+      "record_count": 6,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.NistCodataConstantsPriors"
+    },
+    {
+      "domain": "GBIF_Species_Occurrence",
+      "tier": 38,
+      "record_count": 240,
+      "median_error_pct": 0.0,
+      "coverage_tier": "A_strong",
+      "lean_module": "FSOT.Formal.GbifSpeciesOccurrencePriors"
+    },
+    {
+      "domain": "NOAA_Coastal_Tides",
+      "tier": 38,
+      "record_count": 20,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.NoaaCoastalTidesPriors"
+    },
+    {
+      "domain": "World_Bank_Development",
+      "tier": 38,
+      "record_count": 165,
+      "median_error_pct": 0.0,
+      "coverage_tier": "A_strong",
+      "lean_module": "FSOT.Formal.WorldBankDevelopmentPriors"
+    },
+    {
+      "domain": "NASA_Exoplanet_Archive",
+      "tier": 38,
+      "record_count": 160,
+      "median_error_pct": 0.0,
+      "coverage_tier": "A_strong",
+      "lean_module": "FSOT.Formal.NasaExoplanetArchivePriors"
+    },
+    {
+      "domain": "RCSB_PDB_Structures",
+      "tier": 38,
+      "record_count": 45,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.RcsbPdbStructuresPriors"
+    },
+    {
+      "domain": "OpenAlex_Citation_Graph",
+      "tier": 38,
+      "record_count": 80,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.OpenalexCitationGraphPriors"
+    },
+    {
+      "domain": "PubChem_Compound_Properties",
+      "tier": 38,
+      "record_count": 12,
+      "median_error_pct": 0.0012801911752094832,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.PubchemCompoundPropertiesPriors"
+    },
+    {
+      "domain": "CERN_Open_Data_LHC",
+      "tier": 38,
+      "record_count": 83,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.CernOpenDataLhcPriors"
+    },
+    {
+      "domain": "UniProt_Protein_Annotations",
+      "tier": 38,
+      "record_count": 22,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.UniprotProteinAnnotationsPriors"
     }
   ],
   "intelligence_compression": {

@@ -69,6 +69,16 @@ DEDICATED_GENERATORS = {
     "VL_Distill_Atlas",
     "Rust_Lean_Bridge",
     "Bibliography_Lean_Corpus",
+    "NIST_CODATA_Constants",
+    "GBIF_Species_Occurrence",
+    "NOAA_Coastal_Tides",
+    "World_Bank_Development",
+    "NASA_Exoplanet_Archive",
+    "RCSB_PDB_Structures",
+    "OpenAlex_Citation_Graph",
+    "PubChem_Compound_Properties",
+    "CERN_Open_Data_LHC",
+    "UniProt_Protein_Annotations",
 }
 
 LEAN_SIGN = {
@@ -125,6 +135,16 @@ LEAN_SIGN = {
     "VL_Distill_Atlas": ("consciousness", "consciousness_raw_S_positive"),
     "Rust_Lean_Bridge": ("consciousness", "consciousness_raw_S_positive"),
     "Bibliography_Lean_Corpus": ("particle", "particle_raw_S_positive"),
+    "NIST_CODATA_Constants": ("particle", "particle_raw_S_positive"),
+    "GBIF_Species_Occurrence": ("biological", "biological_raw_S_positive"),
+    "NOAA_Coastal_Tides": ("energy", "energy_raw_S_positive"),
+    "World_Bank_Development": ("consciousness", "consciousness_raw_S_positive"),
+    "NASA_Exoplanet_Archive": ("astronomical", "astronomical_raw_S_positive"),
+    "RCSB_PDB_Structures": ("medical", "medical_raw_S_positive"),
+    "OpenAlex_Citation_Graph": ("consciousness", "consciousness_raw_S_positive"),
+    "PubChem_Compound_Properties": ("electron", "electron_raw_S_positive"),
+    "CERN_Open_Data_LHC": ("particle", "particle_raw_S_positive"),
+    "UniProt_Protein_Annotations": ("biological", "biological_raw_S_positive"),
 }
 
 

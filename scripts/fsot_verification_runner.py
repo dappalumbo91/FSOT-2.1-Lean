@@ -212,6 +212,16 @@ def run_lean_build() -> tuple[bool, str]:
                 "FSOT.Formal.VlDistillAtlasPriors",
                 "FSOT.Formal.RustLeanBridgePriors",
                 "FSOT.Formal.BibliographyLeanCorpusPriors",
+                "FSOT.Formal.NistCodataConstantsPriors",
+                "FSOT.Formal.GbifSpeciesOccurrencePriors",
+                "FSOT.Formal.NoaaCoastalTidesPriors",
+                "FSOT.Formal.WorldBankDevelopmentPriors",
+                "FSOT.Formal.NasaExoplanetArchivePriors",
+                "FSOT.Formal.RcsbPdbStructuresPriors",
+                "FSOT.Formal.OpenalexCitationGraphPriors",
+                "FSOT.Formal.PubchemCompoundPropertiesPriors",
+                "FSOT.Formal.CernOpenDataLhcPriors",
+                "FSOT.Formal.UniprotProteinAnnotationsPriors",
                 "FSOT.Formal.Lab",
                 "FSOT",
             ],
@@ -826,6 +836,7 @@ def main() -> int:
                 "build_vl_distill_atlas_benchmark.py",
                 "build_rust_lean_bridge_benchmark.py",
                 "build_bibliography_lean_corpus_benchmark.py",
+                "build_tier38_public_data_benchmarks.py",
                 "ingest_climate_ncei_chunked.py",
                 "build_climate_observed_benchmark.py",
             ):
@@ -940,6 +951,8 @@ def main() -> int:
             (None, "gen_vl_distill_atlas_lean.py", "VlDistillAtlasPriors.lean generation failed", None),
             (None, "gen_rust_lean_bridge_lean.py", "RustLeanBridgePriors.lean generation failed", None),
             (None, "gen_bibliography_lean_corpus_lean.py", "BibliographyLeanCorpusPriors.lean generation failed", None),
+            ("ingest_tier38_public_data.py", None, None, "Tier 38 public data ingest failed"),
+            (None, "gen_tier38_public_data_lean.py", "Tier 38 public data Lean generation failed", None),
         ]
             for ingest_name, gen_name, gen_fail, ingest_fail in wave_a_steps:
                 if ingest_name:

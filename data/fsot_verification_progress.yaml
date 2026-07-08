@@ -1,16 +1,16 @@
-generated_at: '2026-07-08T16:41:19.472233+00:00'
+generated_at: '2026-07-08T16:58:19.265542+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 109
+  lean_formal_modules: 119
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 35
-  tiers_total: 35
+  tiers_complete: 36
+  tiers_total: 36
   percent_complete: 100.0
-current_position: "Tier 37 Desktop crosswalk \u2014 VL distill atlas, Rust Lean bridge,\
-  \ Bibliography corpus"
+current_position: "Tier 38 Public API wave \u2014 NIST, GBIF, NOAA, World Bank, NASA,\
+  \ RCSB, OpenAlex, PubChem, CERN, UniProt"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -33,6 +33,7 @@ tiers:
   - BrainPriors
   - CameoPriors
   - CellularPriors
+  - CernOpenDataLhcPriors
   - CertifiedAgentQwenPriors
   - ClimateSciencePriors
   - CodonPriors
@@ -57,6 +58,7 @@ tiers:
   - FormulaCorpusPriors
   - FsotAggregateUnifiedDbPriors
   - FuelPriors
+  - GbifSpeciesOccurrencePriors
   - GeochemistryPriors
   - GeomagnetismPriors
   - GraceCryospherePriors
@@ -82,14 +84,18 @@ tiers:
   - MathGeneratorPriors
   - MathGeneratorRulesEvalPriors
   - MathematicsComputationalPriors
+  - NasaExoplanetArchivePriors
   - NeuroimmunologyPriors
   - NeuronCohortPriors
   - NeuronCohortStrataPriors
   - NeuronCohortTrainHoldoutPriors
   - NeuronHybridPriors
   - NeuronMultiHeroPriors
+  - NistCodataConstantsPriors
+  - NoaaCoastalTidesPriors
   - OmniTheoryGenesisPriors
   - OncologyPriors
+  - OpenalexCitationGraphPriors
   - OrbitalMechanicsPriors
   - ParticlePhysicsPriors
   - PharmacologyPriors
@@ -99,7 +105,9 @@ tiers:
   - PlasmaPhysicsPriors
   - PredictionRederivationPriors
   - ProteinPriors
+  - PubchemCompoundPropertiesPriors
   - QuantumMaterialsPriors
+  - RcsbPdbStructuresPriors
   - RustLeanBridgePriors
   - SeismologyDeepPriors
   - SeismologyPriors
@@ -119,9 +127,11 @@ tiers:
   - TrinaryOSPriors
   - TrinaryOSRoundTripPriors
   - UnifiedDBPriors
+  - UniprotProteinAnnotationsPriors
   - VibRegisterPriors
   - VlDistillAtlasPriors
   - WeatherPriors
+  - WorldBankDevelopmentPriors
 - tier: 7
   name: Experiment synthesis (neuron, Aether, magic circle, LLM inventory)
   status: complete
@@ -224,7 +234,7 @@ tiers:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 86
+    scientific_domains_covered: 89
     expansion_candidates: 2
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -647,7 +657,7 @@ tiers:
   metrics:
     formula_corpus_portable: true
     formula_corpus_records_hint: 7941
-    extension_domain_count: 53
+    extension_domain_count: 63
     fsot_aggregate_unified_db_records: 8
     prediction_rederivation_records: 10
     precision_candidates_over_1pct: 0
@@ -667,7 +677,7 @@ tiers:
     vl_distill_atlas_records: 10
     rust_lean_bridge_records: 9
     bibliography_lean_corpus_records: 9
-    extension_domain_count: 53
+    extension_domain_count: 63
   artifacts:
   - data/vl_distill_atlas_manifest.yaml
   - data/rust_lean_bridge_manifest.yaml
@@ -678,10 +688,40 @@ tiers:
   - FSOT.Formal.VlDistillAtlasPriors
   - FSOT.Formal.RustLeanBridgePriors
   - FSOT.Formal.BibliographyLeanCorpusPriors
+- tier: 38
+  name: "Public API wave \u2014 NIST, GBIF, NOAA, World Bank, NASA, RCSB, OpenAlex,\
+    \ PubChem, CERN, UniProt"
+  status: complete
+  metrics:
+    nist_codata_records: 6
+    gbif_records: 240
+    noaa_tides_records: 20
+    world_bank_records: 165
+    nasa_exoplanet_records: 160
+    rcsb_pdb_records: 45
+    openalex_records: 80
+    pubchem_records: 12
+    cern_opendata_records: 83
+    uniprot_records: 22
+    external_data_root: D:/FSOT-2.1-Lean-PublicData
+  artifacts:
+  - data/tier38_public_apis_manifest.yaml
+  - vendor/public_data
+  - D:/FSOT-2.1-Lean-PublicData
+  - FSOT.Formal.NistCodataConstantsPriors
+  - FSOT.Formal.GbifSpeciesOccurrencePriors
+  - FSOT.Formal.NoaaCoastalTidesPriors
+  - FSOT.Formal.WorldBankDevelopmentPriors
+  - FSOT.Formal.NasaExoplanetArchivePriors
+  - FSOT.Formal.RcsbPdbStructuresPriors
+  - FSOT.Formal.OpenalexCitationGraphPriors
+  - FSOT.Formal.PubchemCompoundPropertiesPriors
+  - FSOT.Formal.CernOpenDataLhcPriors
+  - FSOT.Formal.UniprotProteinAnnotationsPriors
 next_steps:
 - Extension domain precision tightening (median error < 1% wave)
 - Knowledge-base per-formula portable bundle
-- Public API extension domains (NIST CODATA, GBIF, NOAA, Exoplanet Archive, OpenAlex)
+- Re-ingest Tier 38 caches from Game drive on schedule
 key_metrics:
   strict_empirical_records: 7941
   smiles_mapped: 1470

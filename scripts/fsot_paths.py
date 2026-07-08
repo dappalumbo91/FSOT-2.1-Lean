@@ -613,6 +613,27 @@ def bibliography_corpus_root(*, require: bool = True) -> Path:
     return path
 
 
+def external_data_root(*, require: bool = False) -> Path:
+    raw = os.environ.get("FSOT_EXTERNAL_DATA_ROOT", "").strip()
+    root = Path(raw).expanduser() if raw else Path(r"D:\FSOT-2.1-Lean-PublicData")
+    if require and not root.exists():
+        raise FileNotFoundError(
+            f"External data root not found: {root}. Set FSOT_EXTERNAL_DATA_ROOT."
+        )
+    return root
+
+
+def public_data_vendor_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_PUBLIC_DATA_VENDOR_ROOT",
+        VENDOR_ROOT / "public_data",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Public data vendor root not found.")
+    assert path is not None
+    return path
+
+
 def bibliography_summary_path(*, require: bool = True) -> Path:
     path = _resolve(
         "FSOT_BIBLIOGRAPHY_SUMMARY",

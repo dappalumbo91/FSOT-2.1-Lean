@@ -700,6 +700,146 @@ extension_domains:
     lean_module: FSOT.Formal.BibliographyLeanCorpusPriors
     note: "Canonical FSOT Bibliography axiomatic constants + workflow mandates"
 
+  NIST_CODATA_Constants:
+    tier: 38
+    D_eff: 7
+    delta_psi: 1.0
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [particle, atomic]
+    ingest_script: scripts/ingest_tier38_public_data.py
+    build_script: scripts/build_tier38_public_data_benchmarks.py
+    manifest: data/tier38_public_apis_manifest.yaml
+    benchmark_data: data/nist_codata_constants_benchmark.json
+    lean_module: FSOT.Formal.NistCodataConstantsPriors
+    note: "NIST CODATA 2022 fundamental constants (Game drive cache)"
+
+  GBIF_Species_Occurrence:
+    tier: 38
+    D_eff: 15
+    delta_psi: 0.2
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [biological, ecological]
+    ingest_script: scripts/ingest_tier38_public_data.py
+    build_script: scripts/build_tier38_public_data_benchmarks.py
+    manifest: data/tier38_public_apis_manifest.yaml
+    benchmark_data: data/gbif_species_occurrence_benchmark.json
+    lean_module: FSOT.Formal.GbifSpeciesOccurrencePriors
+    note: "GBIF species occurrence coordinates (120 cohort)"
+
+  NOAA_Coastal_Tides:
+    tier: 38
+    D_eff: 17
+    delta_psi: 0.7
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [energy, galactic]
+    ingest_script: scripts/ingest_tier38_public_data.py
+    build_script: scripts/build_tier38_public_data_benchmarks.py
+    manifest: data/tier38_public_apis_manifest.yaml
+    benchmark_data: data/noaa_coastal_tides_benchmark.json
+    lean_module: FSOT.Formal.NoaaCoastalTidesPriors
+    note: "NOAA CO-OPS coastal tide predictions (5 stations)"
+
+  World_Bank_Development:
+    tier: 38
+    D_eff: 20
+    delta_psi: 1.5
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, economic]
+    ingest_script: scripts/ingest_tier38_public_data.py
+    build_script: scripts/build_tier38_public_data_benchmarks.py
+    manifest: data/tier38_public_apis_manifest.yaml
+    benchmark_data: data/world_bank_development_benchmark.json
+    lean_module: FSOT.Formal.WorldBankDevelopmentPriors
+    note: "World Bank open development indicators (11 countries × 3 metrics)"
+
+  NASA_Exoplanet_Archive:
+    tier: 38
+    D_eff: 21
+    delta_psi: 1.0
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [astronomical, galactic]
+    ingest_script: scripts/ingest_tier38_public_data.py
+    build_script: scripts/build_tier38_public_data_benchmarks.py
+    manifest: data/tier38_public_apis_manifest.yaml
+    benchmark_data: data/nasa_exoplanet_archive_benchmark.json
+    lean_module: FSOT.Formal.NasaExoplanetArchivePriors
+    note: "NASA Exoplanet Archive pscomppars mass/radius cohort"
+
+  RCSB_PDB_Structures:
+    tier: 38
+    D_eff: 13
+    delta_psi: 0.1
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [medical, biological]
+    ingest_script: scripts/ingest_tier38_public_data.py
+    build_script: scripts/build_tier38_public_data_benchmarks.py
+    manifest: data/tier38_public_apis_manifest.yaml
+    benchmark_data: data/rcsb_pdb_structures_benchmark.json
+    lean_module: FSOT.Formal.RcsbPdbStructuresPriors
+    note: "RCSB PDB structural biology metrics (15 structures)"
+
+  OpenAlex_Citation_Graph:
+    tier: 38
+    D_eff: 18
+    delta_psi: 1.5
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, linguistic]
+    ingest_script: scripts/ingest_tier38_public_data.py
+    build_script: scripts/build_tier38_public_data_benchmarks.py
+    manifest: data/tier38_public_apis_manifest.yaml
+    benchmark_data: data/openalex_citation_graph_benchmark.json
+    lean_module: FSOT.Formal.OpenalexCitationGraphPriors
+    note: "OpenAlex scholarly citation graph (80 works)"
+
+  PubChem_Compound_Properties:
+    tier: 38
+    D_eff: 8
+    delta_psi: 0.5
+    recent_hits: 0
+    observed: true
+    maps_to_lean: [electron, chemical]
+    ingest_script: scripts/ingest_tier38_public_data.py
+    build_script: scripts/build_tier38_public_data_benchmarks.py
+    manifest: data/tier38_public_apis_manifest.yaml
+    benchmark_data: data/pubchem_compound_properties_benchmark.json
+    lean_module: FSOT.Formal.PubchemCompoundPropertiesPriors
+    note: "PubChem molecular weight vs formula mass (12 compounds)"
+
+  CERN_Open_Data_LHC:
+    tier: 38
+    D_eff: 19
+    delta_psi: 1.2
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [particle, high_energy]
+    ingest_script: scripts/ingest_tier38_public_data.py
+    build_script: scripts/build_tier38_public_data_benchmarks.py
+    manifest: data/tier38_public_apis_manifest.yaml
+    benchmark_data: data/cern_open_data_lhc_benchmark.json
+    lean_module: FSOT.Formal.CernOpenDataLhcPriors
+    note: "CERN Open Data LHC archival dataset catalog (post-shutdown metadata)"
+
+  UniProt_Protein_Annotations:
+    tier: 38
+    D_eff: 12
+    delta_psi: 0.05
+    recent_hits: 0
+    observed: true
+    maps_to_lean: [biological, medical]
+    ingest_script: scripts/ingest_tier38_public_data.py
+    build_script: scripts/build_tier38_public_data_benchmarks.py
+    manifest: data/tier38_public_apis_manifest.yaml
+    benchmark_data: data/uniprot_protein_annotations_benchmark.json
+    lean_module: FSOT.Formal.UniprotProteinAnnotationsPriors
+    note: "UniProt protein sequence length + molecular weight annotations"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

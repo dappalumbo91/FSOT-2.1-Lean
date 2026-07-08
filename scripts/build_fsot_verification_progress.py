@@ -101,6 +101,16 @@ def build_progress() -> dict:
     vl_distill_atlas_bench = _load_json(ROOT / "data" / "vl_distill_atlas_benchmark.json")
     rust_lean_bridge_bench = _load_json(ROOT / "data" / "rust_lean_bridge_benchmark.json")
     bibliography_lean_corpus_bench = _load_json(ROOT / "data" / "bibliography_lean_corpus_benchmark.json")
+    nist_codata_bench = _load_json(ROOT / "data" / "nist_codata_constants_benchmark.json")
+    gbif_bench = _load_json(ROOT / "data" / "gbif_species_occurrence_benchmark.json")
+    noaa_tides_bench = _load_json(ROOT / "data" / "noaa_coastal_tides_benchmark.json")
+    world_bank_bench = _load_json(ROOT / "data" / "world_bank_development_benchmark.json")
+    nasa_exoplanet_bench = _load_json(ROOT / "data" / "nasa_exoplanet_archive_benchmark.json")
+    rcsb_pdb_bench = _load_json(ROOT / "data" / "rcsb_pdb_structures_benchmark.json")
+    openalex_bench = _load_json(ROOT / "data" / "openalex_citation_graph_benchmark.json")
+    pubchem_bench = _load_json(ROOT / "data" / "pubchem_compound_properties_benchmark.json")
+    cern_opendata_bench = _load_json(ROOT / "data" / "cern_open_data_lhc_benchmark.json")
+    uniprot_bench = _load_json(ROOT / "data" / "uniprot_protein_annotations_benchmark.json")
     vendor_audit = _load_json(ROOT / "data" / "portable_vendor_coverage_audit.json")
 
     proved = cert.get("proved_claims")
@@ -977,12 +987,61 @@ def build_progress() -> dict:
                 "FSOT.Formal.BibliographyLeanCorpusPriors",
             ],
         },
+        {
+            "tier": 38,
+            "name": "Public API wave — NIST, GBIF, NOAA, World Bank, NASA, RCSB, OpenAlex, PubChem, CERN, UniProt",
+            "status": "complete"
+            if all(
+                b.get("record_count", 0) >= 5 and b.get("median_error_pct", 99) <= 5.0
+                for b in (
+                    nist_codata_bench,
+                    gbif_bench,
+                    noaa_tides_bench,
+                    world_bank_bench,
+                    nasa_exoplanet_bench,
+                    rcsb_pdb_bench,
+                    openalex_bench,
+                    pubchem_bench,
+                    cern_opendata_bench,
+                    uniprot_bench,
+                )
+            )
+            else "pending",
+            "metrics": {
+                "nist_codata_records": nist_codata_bench.get("record_count"),
+                "gbif_records": gbif_bench.get("record_count"),
+                "noaa_tides_records": noaa_tides_bench.get("record_count"),
+                "world_bank_records": world_bank_bench.get("record_count"),
+                "nasa_exoplanet_records": nasa_exoplanet_bench.get("record_count"),
+                "rcsb_pdb_records": rcsb_pdb_bench.get("record_count"),
+                "openalex_records": openalex_bench.get("record_count"),
+                "pubchem_records": pubchem_bench.get("record_count"),
+                "cern_opendata_records": cern_opendata_bench.get("record_count"),
+                "uniprot_records": uniprot_bench.get("record_count"),
+                "external_data_root": "D:/FSOT-2.1-Lean-PublicData",
+            },
+            "artifacts": [
+                "data/tier38_public_apis_manifest.yaml",
+                "vendor/public_data",
+                "D:/FSOT-2.1-Lean-PublicData",
+                "FSOT.Formal.NistCodataConstantsPriors",
+                "FSOT.Formal.GbifSpeciesOccurrencePriors",
+                "FSOT.Formal.NoaaCoastalTidesPriors",
+                "FSOT.Formal.WorldBankDevelopmentPriors",
+                "FSOT.Formal.NasaExoplanetArchivePriors",
+                "FSOT.Formal.RcsbPdbStructuresPriors",
+                "FSOT.Formal.OpenalexCitationGraphPriors",
+                "FSOT.Formal.PubchemCompoundPropertiesPriors",
+                "FSOT.Formal.CernOpenDataLhcPriors",
+                "FSOT.Formal.UniprotProteinAnnotationsPriors",
+            ],
+        },
     ]
 
     next_steps = [
         "Extension domain precision tightening (median error < 1% wave)",
         "Knowledge-base per-formula portable bundle",
-        "Public API extension domains (NIST CODATA, GBIF, NOAA, Exoplanet Archive, OpenAlex)",
+        "Re-ingest Tier 38 caches from Game drive on schedule",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -1001,7 +1060,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 37 Desktop crosswalk — VL distill atlas, Rust Lean bridge, Bibliography corpus",
+        "current_position": "Tier 38 Public API wave — NIST, GBIF, NOAA, World Bank, NASA, RCSB, OpenAlex, PubChem, CERN, UniProt",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {
