@@ -1,4 +1,4 @@
-generated_at: '2026-07-10T14:02:31.578606+00:00'
+generated_at: '2026-07-10T14:09:02.074664+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -13,8 +13,8 @@ verification_summary:
   tiers_complete: 42
   tiers_total: 42
   percent_complete: 100.0
-current_tier: Tier 44 programming — GitHub OSS code-genome cross-repo verification,
-  PROGRAMMING_LANGUAGE_RULES corpus
+current_tier: Tier 44 depth — 23-language OSS corpus, 30 PL laws, scheduled GitHub
+  refresh, linguistics/code-genome cross-bridges
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -1279,7 +1279,7 @@ tier_coverage:
   status: complete
   metrics:
     coupling_node_count: 151
-    coupling_edge_count: 3199
+    coupling_edge_count: 3202
     coupling_pooled_median_error_pct: 0.0
     formula_closure_records: 123
     formula_closure_strict_empirical: 7941
@@ -1327,23 +1327,31 @@ tier_coverage:
   name: Tier 44 — external OSS code-genome verification + programming language laws
   status: complete
   metrics:
-    external_oss_sample_count: 15
-    external_oss_high_affinity_pairs: 29
+    external_oss_sample_count: 23
+    external_oss_language_count: 9
+    external_oss_high_affinity_pairs: 34
     external_oss_pooled_median_error_pct: 0.0
-    programming_language_law_count: 15
-    programming_language_laws_records: 21
+    programming_language_law_count: 30
+    programming_language_laws_records: 77
+    linguistics_bridge_count: 25
+    code_genome_bridge_count: 13
+    oss_refresh_cadence_days: 7
     coupling_node_count: 151
     external_cache_root: G:/FSOT-PublicData/github_oss
   artifacts:
   - scripts/ingest_github_oss_code_genome.py
+  - scripts/schedule_github_oss_refresh.py
   - scripts/tier_i_programming_lib.py
   - scripts/build_tier_i_programming_benchmarks.py
   - data/github_oss_code_genome_manifest.yaml
+  - data/github_oss_refresh_schedule.yaml
+  - data/programming_language_crosswalk.yaml
   - vendor/math_generator/rules/PROGRAMMING_LANGUAGE_RULES.json
   - vendor/github_oss
   - G:/FSOT-PublicData/github_oss
   - FSOT.Formal.ExternalOSSCodeGenomePriors
   - FSOT.Formal.ProgrammingLanguageLawsPriors
+  - FSOT.Formal.LinguisticsFormalPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -2013,11 +2021,11 @@ extension_domains:
   lean_module: FSOT.Formal.ZeroDayRiskEvaluatorPriors
 - domain: External_OSS_Code_Genome
   tier: 44
-  record_count: 87
+  record_count: 169
   lean_module: FSOT.Formal.ExternalOSSCodeGenomePriors
 - domain: Programming_Language_Laws
   tier: 44
-  record_count: 21
+  record_count: 77
   lean_module: FSOT.Formal.ProgrammingLanguageLawsPriors
 theory_crosswalk:
   Aerospace_Engineering:

@@ -1,4 +1,4 @@
-generated_at: '2026-07-10T14:02:16.905424+00:00'
+generated_at: '2026-07-10T14:09:01.718803+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
@@ -9,8 +9,8 @@ summary:
   tiers_complete: 42
   tiers_total: 42
   percent_complete: 100.0
-current_position: "Tier 44 programming \u2014 GitHub OSS code-genome cross-repo verification,\
-  \ PROGRAMMING_LANGUAGE_RULES corpus"
+current_position: "Tier 44 depth \u2014 23-language OSS corpus, 30 PL laws, scheduled\
+  \ GitHub refresh, linguistics/code-genome cross-bridges"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -869,7 +869,7 @@ tiers:
   status: complete
   metrics:
     coupling_node_count: 151
-    coupling_edge_count: 3199
+    coupling_edge_count: 3202
     coupling_pooled_median_error_pct: 0.0
     formula_closure_records: 123
     formula_closure_strict_empirical: 7941
@@ -919,27 +919,36 @@ tiers:
     \ laws"
   status: complete
   metrics:
-    external_oss_sample_count: 15
-    external_oss_high_affinity_pairs: 29
+    external_oss_sample_count: 23
+    external_oss_language_count: 9
+    external_oss_high_affinity_pairs: 34
     external_oss_pooled_median_error_pct: 0.0
-    programming_language_law_count: 15
-    programming_language_laws_records: 21
+    programming_language_law_count: 30
+    programming_language_laws_records: 77
+    linguistics_bridge_count: 25
+    code_genome_bridge_count: 13
+    oss_refresh_cadence_days: 7
     coupling_node_count: 151
     external_cache_root: G:/FSOT-PublicData/github_oss
   artifacts:
   - scripts/ingest_github_oss_code_genome.py
+  - scripts/schedule_github_oss_refresh.py
   - scripts/tier_i_programming_lib.py
   - scripts/build_tier_i_programming_benchmarks.py
   - data/github_oss_code_genome_manifest.yaml
+  - data/github_oss_refresh_schedule.yaml
+  - data/programming_language_crosswalk.yaml
   - vendor/math_generator/rules/PROGRAMMING_LANGUAGE_RULES.json
   - vendor/github_oss
   - G:/FSOT-PublicData/github_oss
   - FSOT.Formal.ExternalOSSCodeGenomePriors
   - FSOT.Formal.ProgrammingLanguageLawsPriors
+  - FSOT.Formal.LinguisticsFormalPriors
 next_steps:
 - Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens
 - Knowledge-base per-formula portable bundle
 - Live MalwareBazaar + NVD CVE scheduled re-ingest
+- Expand OSS manifest with JVM/Android and WASM production repos
 - Culinary arts fermentation + Maillard kinetics extension
 key_metrics:
   strict_empirical_records: 7941

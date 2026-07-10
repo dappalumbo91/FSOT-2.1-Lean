@@ -1,0 +1,179 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\haskell_bytestring.hs",
+  "language": "Haskell",
+  "exists": true,
+  "codon_count": 12,
+  "hole_count": 10,
+  "mean_stability": 0.539329,
+  "codons": [
+    {
+      "token": "accursedUnutterablePerformIO",
+      "codon_index": 45,
+      "stability": 0.078923
+    },
+    {
+      "token": "unsafePerformIO",
+      "codon_index": 6,
+      "stability": 0.611702
+    },
+    {
+      "token": "foreign",
+      "codon_index": 1,
+      "stability": 0.533577
+    },
+    {
+      "token": "import",
+      "codon_index": 21,
+      "stability": 0.803923
+    },
+    {
+      "token": "module",
+      "codon_index": 41,
+      "stability": 0.491423
+    },
+    {
+      "token": "inline",
+      "codon_index": 1,
+      "stability": 0.533577
+    },
+    {
+      "token": "where",
+      "codon_index": 61,
+      "stability": 0.178923
+    },
+    {
+      "token": "type",
+      "codon_index": 19,
+      "stability": 0.835173
+    },
+    {
+      "token": "data",
+      "codon_index": 63,
+      "stability": 0.147673
+    },
+    {
+      "token": "let",
+      "codon_index": 4,
+      "stability": 0.930452
+    },
+    {
+      "token": "in",
+      "codon_index": 13,
+      "stability": 0.928923
+    },
+    {
+      "token": "do",
+      "codon_index": 47,
+      "stability": 0.397673
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "accursedUnutterablePerformIO",
+        "unsafePerformIO",
+        "foreign"
+      ],
+      "mean_stability": 0.408067,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "unsafePerformIO",
+        "foreign",
+        "import"
+      ],
+      "mean_stability": 0.649734,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "foreign",
+        "import",
+        "module"
+      ],
+      "mean_stability": 0.609641,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "import",
+        "module",
+        "inline"
+      ],
+      "mean_stability": 0.609641,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 4,
+      "tokens": [
+        "module",
+        "inline",
+        "where"
+      ],
+      "mean_stability": 0.401308,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 5,
+      "tokens": [
+        "inline",
+        "where",
+        "type"
+      ],
+      "mean_stability": 0.515891,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 6,
+      "tokens": [
+        "where",
+        "type",
+        "data"
+      ],
+      "mean_stability": 0.387256,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 7,
+      "tokens": [
+        "type",
+        "data",
+        "let"
+      ],
+      "mean_stability": 0.637766,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 8,
+      "tokens": [
+        "data",
+        "let",
+        "in"
+      ],
+      "mean_stability": 0.669016,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 9,
+      "tokens": [
+        "let",
+        "in",
+        "do"
+      ],
+      "mean_stability": 0.752349,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "haskell_bytestring",
+  "repo": "haskell/bytestring",
+  "category": "functional_stdlib",
+  "url": "https://raw.githubusercontent.com/haskell/bytestring/master/Data/ByteString.hs",
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:59.331884+00:00",
+  "content_sha256": "0af712c152ef9a5c074b7d7764dd96a5bd5413dc6adb3dc827f12c3d4e490c08"
+}

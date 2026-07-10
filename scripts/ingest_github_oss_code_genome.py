@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 import urllib.error
@@ -36,7 +37,24 @@ def _fetch_text(url: str, timeout: int = 45) -> str:
         return resp.read().decode("utf-8", errors="replace")
 
 
-def ingest(*, limit: int | None = None) -> dict:
+def _needs_refresh(meta_path: Path, *, force: bool, stale_days: int | None) -> bool:
+    if force:
+        return True
+    if stale_days is None or not meta_path.is_file():
+        return False
+    try:
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        fetched = meta.get("fetched_at") or meta.get("generated_at")
+        if not fetched:
+            return True
+        ts = datetime.fromisoformat(str(fetched).replace("Z", "+00:00"))
+        age = (datetime.now(timezone.utc) - ts).total_seconds() / 86400.0
+        return age >= stale_days
+    except (json.JSONDecodeError, ValueError, OSError):
+        return True
+
+
+def ingest(*, limit: int | None = None, force: bool = False, stale_days: int | None = None) -> dict:
     if yaml is None:
         raise RuntimeError("PyYAML required")
     _, _ = _load_fsot()
@@ -61,13 +79,14 @@ def ingest(*, limit: int | None = None) -> dict:
         out_vend = vend_dir / f"{sid}{Path(row['path']).suffix}"
         meta_path = vend_dir / f"{sid}.json"
         try:
-            if out_ext.exists():
+            refresh = _needs_refresh(meta_path, force=force, stale_days=stale_days)
+            if out_ext.exists() and not refresh:
                 text = out_ext.read_text(encoding="utf-8", errors="replace")
                 source = "cache"
             else:
                 text = _fetch_text(url)
                 out_ext.write_text(text, encoding="utf-8")
-                source = "live"
+                source = "live" if refresh or not out_vend.exists() else "refreshed"
             out_vend.write_text(text, encoding="utf-8")
         except (urllib.error.URLError, TimeoutError, OSError) as exc:
             if out_vend.exists():
@@ -83,6 +102,8 @@ def ingest(*, limit: int | None = None) -> dict:
         analysis["category"] = row.get("category")
         analysis["url"] = url
         analysis["source"] = source
+        analysis["fetched_at"] = datetime.now(timezone.utc).isoformat()
+        analysis["content_sha256"] = hashlib.sha256(text.encode("utf-8", errors="replace")).hexdigest()
         meta_path.write_text(json.dumps(analysis, indent=2), encoding="utf-8")
         analyses.append(analysis)
 
@@ -106,9 +127,15 @@ def ingest(*, limit: int | None = None) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument("--refresh", action="store_true", help="Force re-fetch all samples from GitHub")
+    parser.add_argument("--stale-days", type=int, default=None, help="Re-fetch samples older than N days")
     args = parser.parse_args()
+    stale_days = args.stale_days
+    if stale_days is None and yaml is not None and MANIFEST.exists():
+        spec = yaml.safe_load(MANIFEST.read_text(encoding="utf-8"))
+        stale_days = int((spec.get("refresh_schedule") or {}).get("cadence_days") or 0) or None
     print(f"External cache: {external_data_root()}")
-    summary = ingest(limit=args.limit)
+    summary = ingest(limit=args.limit, force=args.refresh, stale_days=stale_days)
     print(json.dumps({"sample_count": summary["sample_count"], "failure_count": summary["failure_count"]}, indent=2))
     return 0 if summary["sample_count"] > 0 else 1
 

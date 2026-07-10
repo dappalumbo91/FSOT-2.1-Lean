@@ -17,14 +17,14 @@
       "stability": 0.944548
     },
     {
-      "token": "return",
-      "codon_index": 42,
-      "stability": 0.475798
-    },
-    {
       "token": "struct",
       "codon_index": 28,
       "stability": 0.694548
+    },
+    {
+      "token": "return",
+      "codon_index": 42,
+      "stability": 0.475798
     },
     {
       "token": "static",
@@ -43,17 +43,17 @@
       "tokens": [
         "include",
         "pointer",
-        "return"
+        "struct"
       ],
-      "mean_stability": 0.731006,
+      "mean_stability": 0.803923,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 1,
       "tokens": [
         "pointer",
-        "return",
-        "struct"
+        "struct",
+        "return"
       ],
       "mean_stability": 0.704965,
       "hole_type": "connective_failure"
@@ -61,8 +61,8 @@
     {
       "window_start": 2,
       "tokens": [
-        "return",
         "struct",
+        "return",
         "static"
       ],
       "mean_stability": 0.710683,
@@ -71,11 +71,11 @@
     {
       "window_start": 3,
       "tokens": [
-        "struct",
+        "return",
         "static",
         "void"
       ],
-      "mean_stability": 0.835683,
+      "mean_stability": 0.762766,
       "hole_type": "connective_failure"
     }
   ],
@@ -83,5 +83,7 @@
   "repo": "torvalds/linux",
   "category": "systems_kernel",
   "url": "https://raw.githubusercontent.com/torvalds/linux/master/include/linux/list.h",
-  "source": "live"
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:56.293612+00:00",
+  "content_sha256": "4e42b088064659c59560d964c025a2f520707808967639d59c221eb037df94f5"
 }

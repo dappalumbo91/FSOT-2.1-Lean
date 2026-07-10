@@ -51,12 +51,20 @@ theorem {prefix}_oss_samples_pos : 0 < {prefix}_oss_sample_count := by
 """
     if domain == "Programming_Language_Laws":
         laws = int(bench.get("law_count") or 0)
+        ling = int(bench.get("linguistics_bridge_count") or 0)
+        cg = int(bench.get("code_genome_bridge_count") or 0)
         extra_defs = f"""
 def {prefix}_law_count : ℕ := {laws}
+def {prefix}_linguistics_bridge_count : ℕ := {ling}
+def {prefix}_code_genome_bridge_count : ℕ := {cg}
 """
         extra_thms = f"""
 theorem {prefix}_law_count_pos : 0 < {prefix}_law_count := by
   unfold {prefix}_law_count; norm_num
+
+theorem {prefix}_cross_domain_bridges_pos :
+    0 < {prefix}_linguistics_bridge_count + {prefix}_code_genome_bridge_count := by
+  unfold {prefix}_linguistics_bridge_count {prefix}_code_genome_bridge_count; norm_num
 """
     return f"""/-
   FSOT Formal {module_stem} — {domain} Tier I programming verification.

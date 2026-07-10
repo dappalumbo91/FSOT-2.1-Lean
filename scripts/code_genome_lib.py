@@ -25,6 +25,10 @@ LANG_KEYWORDS: dict[str, list[str]] = {
     "Zig": ["fn", "pub", "const", "struct", "return", "try", "comptime", "export"],
     "WebAssembly": ["func", "export", "memory", "module", "param", "result", "local.get", "i32.add", "i32.store"],
     "FSOTB_ISA": ["HALT", "IMM", "LOADT", "BRANCHT", "CALL", "RET", "MEASURE", "CONSENSUS"],
+    "Java": ["class", "public", "static", "void", "import", "interface", "extends", "implements", "return", "synchronized"],
+    "Kotlin": ["fun", "class", "object", "suspend", "lateinit", "inline", "override", "val", "var", "return"],
+    "Swift": ["func", "class", "struct", "enum", "var", "let", "import", "guard", "return", "async"],
+    "Haskell": ["data", "type", "class", "instance", "where", "let", "in", "module", "import", "do"],
 }
 
 

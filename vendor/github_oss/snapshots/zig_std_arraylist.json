@@ -12,14 +12,14 @@
       "stability": 0.632048
     },
     {
-      "token": "return",
-      "codon_index": 17,
-      "stability": 0.866423
-    },
-    {
       "token": "struct",
       "codon_index": 20,
       "stability": 0.819548
+    },
+    {
+      "token": "return",
+      "codon_index": 17,
+      "stability": 0.866423
     },
     {
       "token": "const",
@@ -27,14 +27,14 @@
       "stability": 0.335173
     },
     {
-      "token": "pub",
-      "codon_index": 61,
-      "stability": 0.178923
-    },
-    {
       "token": "try",
       "codon_index": 58,
       "stability": 0.225798
+    },
+    {
+      "token": "pub",
+      "codon_index": 61,
+      "stability": 0.178923
     },
     {
       "token": "fn",
@@ -47,8 +47,8 @@
       "window_start": 0,
       "tokens": [
         "comptime",
-        "return",
-        "struct"
+        "struct",
+        "return"
       ],
       "mean_stability": 0.772673,
       "hole_type": "connective_failure"
@@ -56,8 +56,8 @@
     {
       "window_start": 1,
       "tokens": [
-        "return",
         "struct",
+        "return",
         "const"
       ],
       "mean_stability": 0.673715,
@@ -66,19 +66,19 @@
     {
       "window_start": 2,
       "tokens": [
-        "struct",
+        "return",
         "const",
-        "pub"
+        "try"
       ],
-      "mean_stability": 0.444548,
+      "mean_stability": 0.475798,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 3,
       "tokens": [
         "const",
-        "pub",
-        "try"
+        "try",
+        "pub"
       ],
       "mean_stability": 0.246631,
       "hole_type": "connective_failure"
@@ -86,8 +86,8 @@
     {
       "window_start": 4,
       "tokens": [
-        "pub",
         "try",
+        "pub",
         "fn"
       ],
       "mean_stability": 0.225798,
@@ -98,5 +98,7 @@
   "repo": "ziglang/zig",
   "category": "memory_safe_std",
   "url": "https://raw.githubusercontent.com/ziglang/zig/master/lib/std/array_list.zig",
-  "source": "live"
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:57.748943+00:00",
+  "content_sha256": "47849a1423fd6446a777644200fdfacaa427461e58e849378d06edce174be1a4"
 }

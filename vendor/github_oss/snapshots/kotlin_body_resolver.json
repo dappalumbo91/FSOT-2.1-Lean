@@ -1,0 +1,104 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\kotlin_body_resolver.java",
+  "language": "Java",
+  "exists": true,
+  "codon_count": 7,
+  "hole_count": 5,
+  "mean_stability": 0.643209,
+  "codons": [
+    {
+      "token": "extends",
+      "codon_index": 17,
+      "stability": 0.866423
+    },
+    {
+      "token": "import",
+      "codon_index": 18,
+      "stability": 0.850798
+    },
+    {
+      "token": "return",
+      "codon_index": 22,
+      "stability": 0.788298
+    },
+    {
+      "token": "static",
+      "codon_index": 48,
+      "stability": 0.382048
+    },
+    {
+      "token": "public",
+      "codon_index": 49,
+      "stability": 0.366423
+    },
+    {
+      "token": "class",
+      "codon_index": 39,
+      "stability": 0.522673
+    },
+    {
+      "token": "void",
+      "codon_index": 26,
+      "stability": 0.725798
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "extends",
+        "import",
+        "return"
+      ],
+      "mean_stability": 0.835173,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "import",
+        "return",
+        "static"
+      ],
+      "mean_stability": 0.673715,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "return",
+        "static",
+        "public"
+      ],
+      "mean_stability": 0.512256,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "static",
+        "public",
+        "class"
+      ],
+      "mean_stability": 0.423715,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 4,
+      "tokens": [
+        "public",
+        "class",
+        "void"
+      ],
+      "mean_stability": 0.538298,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "kotlin_body_resolver",
+  "repo": "JetBrains/kotlin",
+  "category": "compiler_frontend",
+  "url": "https://raw.githubusercontent.com/JetBrains/kotlin/master/compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:59.124825+00:00",
+  "content_sha256": "d64eb0b7aa32659ac42c6293ad5117075e96930ce3603eef96a252398b81cbcb"
+}

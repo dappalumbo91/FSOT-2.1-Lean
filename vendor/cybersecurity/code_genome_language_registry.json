@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "updated": "2026-07-10",
-  "source": "FSOT code-genome crosswalk + Trinary-OS opcode registry + Tier 43 depth samples",
+  "source": "FSOT code-genome crosswalk + Trinary-OS opcode registry + Tier 44 OSS expansion",
   "languages": {
     "Lean": {
       "codon_unit_count": 9,
@@ -63,8 +63,37 @@
       "codon_unit_count": 27,
       "sample_paths": ["vendor/trinary_os/isa/fsotb_opcode_registry.json"],
       "risk_tokens": ["BRANCHT", "LOAD_RULE", "APPLY_OVR"]
+    },
+    "Java": {
+      "codon_unit_count": 10,
+      "sample_paths": [
+        "vendor/github_oss/snapshots/openjdk_string.java",
+        "vendor/github_oss/snapshots/openjdk_hashmap.java"
+      ],
+      "risk_tokens": ["Runtime.exec", "ObjectInputStream", "setAccessible", "doPrivileged"]
+    },
+    "Kotlin": {
+      "codon_unit_count": 10,
+      "sample_paths": ["vendor/github_oss/snapshots/kotlin_collections.kt"],
+      "risk_tokens": ["lateinit", "unsafe", "reflect", "JavaScript", "eval"]
+    },
+    "Swift": {
+      "codon_unit_count": 10,
+      "sample_paths": [
+        "vendor/github_oss/snapshots/swift_string.swift",
+        "vendor/github_oss/snapshots/swift_array.swift"
+      ],
+      "risk_tokens": ["unsafeBitCast", "withUnsafeBytes", "Unmanaged", "performSelector"]
+    },
+    "Haskell": {
+      "codon_unit_count": 10,
+      "sample_paths": [
+        "vendor/github_oss/snapshots/haskell_bytestring.hs",
+        "vendor/github_oss/snapshots/haskell_async.hs"
+      ],
+      "risk_tokens": ["unsafePerformIO", "accursedUnutterablePerformIO", "inline", "foreign"]
     }
   },
   "unified_triplet_count": 64,
-  "bridge_targets": ["Lean", "Rust", "Python", "C", "JavaScript", "Go", "Zig", "WebAssembly", "FSOTB_ISA"]
+  "bridge_targets": ["Lean", "Rust", "Python", "C", "JavaScript", "Go", "Zig", "WebAssembly", "FSOTB_ISA", "Java", "Kotlin", "Swift", "Haskell"]
 }

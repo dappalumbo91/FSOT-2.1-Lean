@@ -3,7 +3,7 @@
   "language": "Go",
   "exists": true,
   "codon_count": 9,
-  "hole_count": 6,
+  "hole_count": 7,
   "mean_stability": 0.578738,
   "codons": [
     {
@@ -17,14 +17,14 @@
       "stability": 0.930452
     },
     {
-      "token": "return",
-      "codon_index": 49,
-      "stability": 0.366423
-    },
-    {
       "token": "struct",
       "codon_index": 44,
       "stability": 0.444548
+    },
+    {
+      "token": "import",
+      "codon_index": 5,
+      "stability": 0.946077
     },
     {
       "token": "unsafe",
@@ -32,9 +32,9 @@
       "stability": 0.803923
     },
     {
-      "token": "import",
-      "codon_index": 5,
-      "stability": 0.946077
+      "token": "return",
+      "codon_index": 49,
+      "stability": 0.366423
     },
     {
       "token": "defer",
@@ -58,49 +58,59 @@
       "tokens": [
         "interface",
         "package",
-        "return"
+        "struct"
       ],
-      "mean_stability": 0.502349,
+      "mean_stability": 0.528391,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 1,
       "tokens": [
         "package",
-        "return",
-        "struct"
+        "struct",
+        "import"
       ],
-      "mean_stability": 0.580474,
+      "mean_stability": 0.773692,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 2,
       "tokens": [
-        "return",
         "struct",
+        "import",
         "unsafe"
-      ],
-      "mean_stability": 0.538298,
-      "hole_type": "connective_failure"
-    },
-    {
-      "window_start": 3,
-      "tokens": [
-        "struct",
-        "unsafe",
-        "import"
       ],
       "mean_stability": 0.731516,
       "hole_type": "connective_failure"
     },
     {
-      "window_start": 5,
+      "window_start": 3,
       "tokens": [
         "import",
+        "unsafe",
+        "return"
+      ],
+      "mean_stability": 0.705474,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 4,
+      "tokens": [
+        "unsafe",
+        "return",
+        "defer"
+      ],
+      "mean_stability": 0.700266,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 5,
+      "tokens": [
+        "return",
         "defer",
         "func"
       ],
-      "mean_stability": 0.732026,
+      "mean_stability": 0.538808,
       "hole_type": "connective_failure"
     },
     {
@@ -118,5 +128,7 @@
   "repo": "golang/go",
   "category": "stdlib_network",
   "url": "https://raw.githubusercontent.com/golang/go/master/src/net/http/server.go",
-  "source": "live"
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:57.555295+00:00",
+  "content_sha256": "cd9564eb213739b047bfa6e7197fddac79297e7b86f8070e8ac1a04926b55f46"
 }

@@ -1,0 +1,119 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\swift_array.swift",
+  "language": "Swift",
+  "exists": true,
+  "codon_count": 8,
+  "hole_count": 6,
+  "mean_stability": 0.559001,
+  "codons": [
+    {
+      "token": "withUnsafeBytes",
+      "codon_index": 26,
+      "stability": 0.375798
+    },
+    {
+      "token": "struct",
+      "codon_index": 14,
+      "stability": 0.913298
+    },
+    {
+      "token": "return",
+      "codon_index": 43,
+      "stability": 0.460173
+    },
+    {
+      "token": "class",
+      "codon_index": 41,
+      "stability": 0.491423
+    },
+    {
+      "token": "guard",
+      "codon_index": 42,
+      "stability": 0.475798
+    },
+    {
+      "token": "func",
+      "codon_index": 38,
+      "stability": 0.538298
+    },
+    {
+      "token": "let",
+      "codon_index": 11,
+      "stability": 0.960173
+    },
+    {
+      "token": "var",
+      "codon_index": 56,
+      "stability": 0.257048
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "withUnsafeBytes",
+        "struct",
+        "return"
+      ],
+      "mean_stability": 0.58309,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "struct",
+        "return",
+        "class"
+      ],
+      "mean_stability": 0.621631,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "return",
+        "class",
+        "guard"
+      ],
+      "mean_stability": 0.475798,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "class",
+        "guard",
+        "func"
+      ],
+      "mean_stability": 0.50184,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 4,
+      "tokens": [
+        "guard",
+        "func",
+        "let"
+      ],
+      "mean_stability": 0.65809,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 5,
+      "tokens": [
+        "func",
+        "let",
+        "var"
+      ],
+      "mean_stability": 0.585173,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "swift_array",
+  "repo": "apple/swift",
+  "category": "memory_safe_std",
+  "url": "https://raw.githubusercontent.com/apple/swift/main/stdlib/public/core/Array.swift",
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:59.283387+00:00",
+  "content_sha256": "e00ea926c4d75a7d2b6c83e3ac983ec3c529f7f496099bb6423e16ad41a981bb"
+}

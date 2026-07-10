@@ -1,0 +1,24 @@
+# Scheduled refresh for GitHub OSS code-genome snapshots (Tier 44).
+version: "1.0"
+updated: "2026-07-10"
+enabled: true
+cadence_days: 7
+stale_policy: refresh_if_older_than_cadence
+force_refresh_flag: --refresh
+
+ingest:
+  script: scripts/ingest_github_oss_code_genome.py
+  manifest: data/github_oss_code_genome_manifest.yaml
+  summary_vendor: vendor/github_oss/github_oss_code_genome_summary.json
+  summary_external: github_oss/github_oss_code_genome_summary.json
+
+rebuild_pipeline:
+  - scripts/build_tier_i_programming_benchmarks.py
+  - scripts/build_domain_coupling_simulation.py
+  - scripts/gen_tier_i_programming_lean.py
+  - scripts/build_fsot_verification_progress.py
+
+notes: >
+  Run manually: python scripts/schedule_github_oss_refresh.py
+  Force full re-fetch: python scripts/schedule_github_oss_refresh.py --refresh
+  Windows Task Scheduler: trigger weekly; action python with this script path.

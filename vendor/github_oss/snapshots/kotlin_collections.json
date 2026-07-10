@@ -1,0 +1,99 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\kotlin_collections.kt",
+  "language": "Kotlin",
+  "exists": true,
+  "codon_count": 8,
+  "hole_count": 4,
+  "mean_stability": 0.767196,
+  "codons": [
+    {
+      "token": "override",
+      "codon_index": 10,
+      "stability": 0.975798
+    },
+    {
+      "token": "return",
+      "codon_index": 4,
+      "stability": 0.930452
+    },
+    {
+      "token": "object",
+      "codon_index": 6,
+      "stability": 0.961702
+    },
+    {
+      "token": "inline",
+      "codon_index": 19,
+      "stability": 0.835173
+    },
+    {
+      "token": "class",
+      "codon_index": 36,
+      "stability": 0.569548
+    },
+    {
+      "token": "fun",
+      "codon_index": 9,
+      "stability": 0.991423
+    },
+    {
+      "token": "val",
+      "codon_index": 30,
+      "stability": 0.663298
+    },
+    {
+      "token": "var",
+      "codon_index": 59,
+      "stability": 0.210173
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 2,
+      "tokens": [
+        "object",
+        "inline",
+        "class"
+      ],
+      "mean_stability": 0.788808,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "inline",
+        "class",
+        "fun"
+      ],
+      "mean_stability": 0.798715,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 4,
+      "tokens": [
+        "class",
+        "fun",
+        "val"
+      ],
+      "mean_stability": 0.741423,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 5,
+      "tokens": [
+        "fun",
+        "val",
+        "var"
+      ],
+      "mean_stability": 0.621631,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "kotlin_collections",
+  "repo": "JetBrains/kotlin",
+  "category": "jvm_stdlib",
+  "url": "https://raw.githubusercontent.com/JetBrains/kotlin/master/libraries/stdlib/src/kotlin/collections/Collections.kt",
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:59.074020+00:00",
+  "content_sha256": "593761df94aa0729ab64a88d20638f6aebc59c2778b0d936cf16462dbd8e375a"
+}

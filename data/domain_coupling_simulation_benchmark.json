@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:02:16.226979+00:00",
+  "generated_at": "2026-07-10T14:09:01.060909+00:00",
   "domain": "Domain_Coupling_Simulation",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -18,9 +18,9 @@
   ],
   "D_eff": 17,
   "node_count": 151,
-  "edge_count": 3199,
-  "record_count": 3199,
-  "observable_count": 3199,
+  "edge_count": 3202,
+  "record_count": 3202,
+  "observable_count": 3202,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
@@ -1581,7 +1581,7 @@
         "fusion"
       ],
       "lean_module": "FSOT.Formal.DomainCouplingSimulationPriors",
-      "record_count": 3032,
+      "record_count": 3199,
       "median_error_pct": 0.0
     },
     {
@@ -1678,7 +1678,7 @@
         "consciousness"
       ],
       "lean_module": "FSOT.Formal.ExternalOSSCodeGenomePriors",
-      "record_count": 87,
+      "record_count": 169,
       "median_error_pct": 0.0
     },
     {
@@ -1690,8 +1690,8 @@
         "mathematical"
       ],
       "lean_module": "FSOT.Formal.ProgrammingLanguageLawsPriors",
-      "record_count": 21,
-      "median_error_pct": 0.007383655181691928
+      "record_count": 77,
+      "median_error_pct": 0.0
     },
     {
       "domain": "Intelligence_Compression",
@@ -39715,6 +39715,18 @@
       "lab": "domain_coupling_lab",
       "edge_type": "crosswalk_module",
       "source_domain": "External_OSS_Code_Genome",
+      "target_domain": "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+      "lean_tag": "crosswalk",
+      "property": "lean_module_link",
+      "name": "External_OSS_Code_Genome__FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "domain_coupling_lab",
+      "edge_type": "crosswalk_module",
+      "source_domain": "External_OSS_Code_Genome",
       "target_domain": "FSOT.Formal.ExternalOSSCodeGenomePriors",
       "lean_tag": "crosswalk",
       "property": "lean_module_link",
@@ -39978,6 +39990,30 @@
     {
       "lab": "domain_coupling_lab",
       "edge_type": "crosswalk_module",
+      "source_domain": "Programming_Language_Laws",
+      "target_domain": "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+      "lean_tag": "crosswalk",
+      "property": "lean_module_link",
+      "name": "Programming_Language_Laws__FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "domain_coupling_lab",
+      "edge_type": "crosswalk_module",
+      "source_domain": "Programming_Language_Laws",
+      "target_domain": "FSOT.Formal.LinguisticsFormalPriors",
+      "lean_tag": "crosswalk",
+      "property": "lean_module_link",
+      "name": "Programming_Language_Laws__FSOT.Formal.LinguisticsFormalPriors",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "domain_coupling_lab",
+      "edge_type": "crosswalk_module",
       "source_domain": "quantum_materials",
       "target_domain": "FSOT.Formal.QuantumMaterialsPriors",
       "lean_tag": "crosswalk",
@@ -40100,7 +40136,7 @@
     "maps_to_lean_overlap": 3143,
     "fsot_prediction_cross_ratio": 6,
     "magnetosphere_cluster": 10,
-    "crosswalk_module": 40
+    "crosswalk_module": 43
   },
   "sota_comparison": {
     "fsot_free_parameters": 0,
@@ -78126,6 +78162,18 @@
       "lab": "domain_coupling_lab",
       "edge_type": "crosswalk_module",
       "source_domain": "External_OSS_Code_Genome",
+      "target_domain": "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+      "lean_tag": "crosswalk",
+      "property": "lean_module_link",
+      "name": "External_OSS_Code_Genome__FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "domain_coupling_lab",
+      "edge_type": "crosswalk_module",
+      "source_domain": "External_OSS_Code_Genome",
       "target_domain": "FSOT.Formal.ExternalOSSCodeGenomePriors",
       "lean_tag": "crosswalk",
       "property": "lean_module_link",
@@ -78389,6 +78437,30 @@
     {
       "lab": "domain_coupling_lab",
       "edge_type": "crosswalk_module",
+      "source_domain": "Programming_Language_Laws",
+      "target_domain": "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+      "lean_tag": "crosswalk",
+      "property": "lean_module_link",
+      "name": "Programming_Language_Laws__FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "domain_coupling_lab",
+      "edge_type": "crosswalk_module",
+      "source_domain": "Programming_Language_Laws",
+      "target_domain": "FSOT.Formal.LinguisticsFormalPriors",
+      "lean_tag": "crosswalk",
+      "property": "lean_module_link",
+      "name": "Programming_Language_Laws__FSOT.Formal.LinguisticsFormalPriors",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "domain_coupling_lab",
+      "edge_type": "crosswalk_module",
       "source_domain": "quantum_materials",
       "target_domain": "FSOT.Formal.QuantumMaterialsPriors",
       "lean_tag": "crosswalk",
@@ -78528,8 +78600,8 @@
       "lab": "domain_coupling_lab",
       "property": "edge_count",
       "name": "simulation_edges",
-      "computed": 3199.0,
-      "measured": 3199.0,
+      "computed": 3202.0,
+      "measured": 3202.0,
       "error_pct": 0.0
     }
   ]

@@ -1,0 +1,52 @@
+# Cross-domain bridges: programming language laws ↔ linguistics ↔ code-genome cybersecurity.
+version: "1.0"
+updated: "2026-07-10"
+
+bridges:
+  linguistics_formal:
+    source_benchmark: data/linguistics_formal_benchmark.json
+    lean_module: FSOT.Formal.LinguisticsFormalPriors
+    mapping:
+      - pl_category: scoping
+        linguistics_group: syntax
+        rationale: "Lexical scope parallels syntactic binding domains"
+      - pl_category: operational_semantics
+        linguistics_group: semantics
+        rationale: "Evaluation steps mirror compositional meaning construction"
+      - pl_category: type_theory
+        linguistics_group: morphology
+        rationale: "Type formation rules parallel morpheme combination constraints"
+
+  code_genome_cybersecurity:
+    source_benchmark: data/code_genome_structure_cybersecurity_benchmark.json
+    lean_modules:
+      - FSOT.Formal.CodeGenomeStructurePriors
+      - FSOT.Formal.ZeroDayRiskEvaluatorPriors
+    mapping:
+      - pl_category: fsot_cyber
+        genome_property: codon_hole_detected
+        rationale: "PL-013 hole law certifies genomic connective-failure detection"
+      - pl_category: memory_safety
+        genome_property: mean_codon_stability
+        rationale: "Ownership/memory laws align with codon stability windows"
+      - pl_category: security
+        genome_property: codon_hole_detected
+        rationale: "Capability model holes surface as elevated zero-day risk"
+
+  external_oss:
+    source_benchmark: data/external_oss_code_genome_benchmark.json
+    lean_module: FSOT.Formal.ExternalOSSCodeGenomePriors
+    mapping:
+      - pl_category: operational_semantics
+        oss_category: interpreter_core
+      - pl_category: type_theory
+        oss_category: jvm_stdlib
+      - pl_category: effect_systems
+        oss_category: concurrency_lib
+
+crosswalk_modules:
+  - FSOT.Formal.ProgrammingLanguageLawsPriors
+  - FSOT.Formal.LinguisticsFormalPriors
+  - FSOT.Formal.CodeGenomeStructurePriors
+  - FSOT.Formal.ZeroDayRiskEvaluatorPriors
+  - FSOT.Formal.ExternalOSSCodeGenomePriors

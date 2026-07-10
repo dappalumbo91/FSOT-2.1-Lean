@@ -3,7 +3,7 @@
   "language": "C",
   "exists": true,
   "codon_count": 10,
-  "hole_count": 8,
+  "hole_count": 7,
   "mean_stability": 0.738916,
   "codons": [
     {
@@ -22,11 +22,6 @@
       "stability": 0.944548
     },
     {
-      "token": "return",
-      "codon_index": 42,
-      "stability": 0.475798
-    },
-    {
       "token": "struct",
       "codon_index": 28,
       "stability": 0.694548
@@ -37,14 +32,19 @@
       "stability": 0.678923
     },
     {
+      "token": "return",
+      "codon_index": 42,
+      "stability": 0.475798
+    },
+    {
       "token": "static",
       "codon_index": 6,
       "stability": 0.961702
     },
     {
-      "token": "void",
-      "codon_index": 18,
-      "stability": 0.850798
+      "token": "free",
+      "codon_index": 8,
+      "stability": 0.992952
     },
     {
       "token": "gets",
@@ -52,9 +52,9 @@
       "stability": 0.625798
     },
     {
-      "token": "free",
-      "codon_index": 8,
-      "stability": 0.992952
+      "token": "void",
+      "codon_index": 18,
+      "stability": 0.850798
     }
   ],
   "holes": [
@@ -73,27 +73,27 @@
       "tokens": [
         "sprintf",
         "pointer",
-        "return"
+        "struct"
       ],
-      "mean_stability": 0.603923,
+      "mean_stability": 0.67684,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 2,
       "tokens": [
         "pointer",
-        "return",
-        "struct"
+        "struct",
+        "memcpy"
       ],
-      "mean_stability": 0.704965,
+      "mean_stability": 0.772673,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 3,
       "tokens": [
-        "return",
         "struct",
-        "memcpy"
+        "memcpy",
+        "return"
       ],
       "mean_stability": 0.616423,
       "hole_type": "connective_failure"
@@ -101,39 +101,29 @@
     {
       "window_start": 4,
       "tokens": [
-        "struct",
         "memcpy",
+        "return",
         "static"
       ],
-      "mean_stability": 0.778391,
+      "mean_stability": 0.705474,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 5,
       "tokens": [
-        "memcpy",
+        "return",
         "static",
-        "void"
+        "free"
       ],
-      "mean_stability": 0.830474,
-      "hole_type": "connective_failure"
-    },
-    {
-      "window_start": 6,
-      "tokens": [
-        "static",
-        "void",
-        "gets"
-      ],
-      "mean_stability": 0.812766,
+      "mean_stability": 0.810151,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 7,
       "tokens": [
-        "void",
+        "free",
         "gets",
-        "free"
+        "void"
       ],
       "mean_stability": 0.823183,
       "hole_type": "connective_failure"
@@ -143,5 +133,7 @@
   "repo": "redis/redis",
   "category": "in_memory_store",
   "url": "https://raw.githubusercontent.com/redis/redis/unstable/src/sds.c",
-  "source": "live"
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:58.343792+00:00",
+  "content_sha256": "d62584846eb4782c7396ada37c6ebe7af5ae753fa4e36055b1d6c02a28f43042"
 }

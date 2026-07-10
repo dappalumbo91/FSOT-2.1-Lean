@@ -17,14 +17,14 @@
       "stability": 0.944548
     },
     {
-      "token": "return",
-      "codon_index": 42,
-      "stability": 0.475798
-    },
-    {
       "token": "struct",
       "codon_index": 28,
       "stability": 0.694548
+    },
+    {
+      "token": "return",
+      "codon_index": 42,
+      "stability": 0.475798
     },
     {
       "token": "static",
@@ -32,14 +32,14 @@
       "stability": 0.961702
     },
     {
-      "token": "void",
-      "codon_index": 18,
-      "stability": 0.850798
-    },
-    {
       "token": "free",
       "codon_index": 8,
       "stability": 0.992952
+    },
+    {
+      "token": "void",
+      "codon_index": 18,
+      "stability": 0.850798
     }
   ],
   "holes": [
@@ -48,17 +48,17 @@
       "tokens": [
         "include",
         "pointer",
-        "return"
+        "struct"
       ],
-      "mean_stability": 0.731006,
+      "mean_stability": 0.803923,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 1,
       "tokens": [
         "pointer",
-        "return",
-        "struct"
+        "struct",
+        "return"
       ],
       "mean_stability": 0.704965,
       "hole_type": "connective_failure"
@@ -66,8 +66,8 @@
     {
       "window_start": 2,
       "tokens": [
-        "return",
         "struct",
+        "return",
         "static"
       ],
       "mean_stability": 0.710683,
@@ -76,11 +76,11 @@
     {
       "window_start": 3,
       "tokens": [
-        "struct",
+        "return",
         "static",
-        "void"
+        "free"
       ],
-      "mean_stability": 0.835683,
+      "mean_stability": 0.810151,
       "hole_type": "connective_failure"
     }
   ],
@@ -88,5 +88,7 @@
   "repo": "python/cpython",
   "category": "interpreter_core",
   "url": "https://raw.githubusercontent.com/python/cpython/main/Python/ceval.c",
-  "source": "live"
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:56.819949+00:00",
+  "content_sha256": "f2761601589133d5c5f381ace8554cf449d2839d0f50f81a5649ec71bd942ca0"
 }

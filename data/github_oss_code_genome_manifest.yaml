@@ -1,9 +1,18 @@
 # Curated open-source GitHub files for external code-genome verification (Tier 44).
-version: "1.0"
+version: "1.1"
 updated: "2026-07-10"
 notes: >
   Portable vendor cache under vendor/github_oss; full ingest on FSOT_EXTERNAL_DATA_ROOT/github_oss.
   Raw URLs use stable refs — re-ingest refreshes third-party snapshots.
+  Scheduled refresh: data/github_oss_refresh_schedule.yaml (default 7-day cadence).
+
+refresh_schedule:
+  cadence_days: 7
+  stale_policy: refresh_if_older_than_cadence
+  rebuild_on_refresh:
+    - scripts/build_tier_i_programming_benchmarks.py
+    - scripts/build_domain_coupling_simulation.py
+    - scripts/gen_tier_i_programming_lean.py
 
 samples:
   - id: openssl_mem_clr
@@ -111,3 +120,59 @@ samples:
     path: packages/react/src/ReactHooks.js
     language: JavaScript
     category: ui_framework
+
+  - id: openjdk_string
+    repo: openjdk/jdk
+    ref: master
+    path: src/java.base/share/classes/java/lang/String.java
+    language: Java
+    category: jvm_stdlib
+
+  - id: openjdk_hashmap
+    repo: openjdk/jdk
+    ref: master
+    path: src/java.base/share/classes/java/util/HashMap.java
+    language: Java
+    category: jvm_stdlib
+
+  - id: kotlin_collections
+    repo: JetBrains/kotlin
+    ref: master
+    path: libraries/stdlib/src/kotlin/collections/Collections.kt
+    language: Kotlin
+    category: jvm_stdlib
+
+  - id: kotlin_body_resolver
+    repo: JetBrains/kotlin
+    ref: master
+    path: compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java
+    language: Java
+    category: compiler_frontend
+
+  - id: swift_string
+    repo: apple/swift
+    ref: main
+    path: stdlib/public/core/String.swift
+    language: Swift
+    category: memory_safe_std
+
+  - id: swift_array
+    repo: apple/swift
+    ref: main
+    path: stdlib/public/core/Array.swift
+    language: Swift
+    category: memory_safe_std
+
+  - id: haskell_bytestring
+    repo: haskell/bytestring
+    ref: master
+    path: Data/ByteString.hs
+    language: Haskell
+    category: functional_stdlib
+
+  - id: haskell_async
+    repo: simonmar/async
+    ref: master
+    path: Control/Concurrent/Async.hs
+    language: Haskell
+    category: concurrency_lib

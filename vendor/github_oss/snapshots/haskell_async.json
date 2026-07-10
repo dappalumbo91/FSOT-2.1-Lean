@@ -1,0 +1,104 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\haskell_async.hs",
+  "language": "Haskell",
+  "exists": true,
+  "codon_count": 7,
+  "hole_count": 5,
+  "mean_stability": 0.57178,
+  "codons": [
+    {
+      "token": "instance",
+      "codon_index": 49,
+      "stability": 0.366423
+    },
+    {
+      "token": "import",
+      "codon_index": 21,
+      "stability": 0.803923
+    },
+    {
+      "token": "module",
+      "codon_index": 41,
+      "stability": 0.491423
+    },
+    {
+      "token": "where",
+      "codon_index": 61,
+      "stability": 0.178923
+    },
+    {
+      "token": "type",
+      "codon_index": 19,
+      "stability": 0.835173
+    },
+    {
+      "token": "in",
+      "codon_index": 13,
+      "stability": 0.928923
+    },
+    {
+      "token": "do",
+      "codon_index": 47,
+      "stability": 0.397673
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "instance",
+        "import",
+        "module"
+      ],
+      "mean_stability": 0.553923,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "import",
+        "module",
+        "where"
+      ],
+      "mean_stability": 0.491423,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "module",
+        "where",
+        "type"
+      ],
+      "mean_stability": 0.50184,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "where",
+        "type",
+        "in"
+      ],
+      "mean_stability": 0.647673,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 4,
+      "tokens": [
+        "type",
+        "in",
+        "do"
+      ],
+      "mean_stability": 0.72059,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "haskell_async",
+  "repo": "simonmar/async",
+  "category": "concurrency_lib",
+  "url": "https://raw.githubusercontent.com/simonmar/async/master/Control/Concurrent/Async.hs",
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:59.397750+00:00",
+  "content_sha256": "13b6349943719c571885766946c1eff6440367870a60c4427ed736ccb863332a"
+}

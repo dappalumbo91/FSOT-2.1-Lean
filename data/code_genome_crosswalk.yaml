@@ -61,6 +61,30 @@ languages:
     codon_units: [func, export, memory, module, param, result, local.get, i32.add, i32.store]
     bridge_module: FSOT.Formal.CodeGenomeStructurePriors
     vendor_root: vendor/cybersecurity/samples
+  Java:
+    lean_domain: electron
+    file_extensions: [.java]
+    codon_units: [class, public, static, void, import, interface, extends, implements, return, synchronized]
+    bridge_module: FSOT.Formal.ExternalOSSCodeGenomePriors
+    vendor_root: vendor/github_oss/snapshots
+  Kotlin:
+    lean_domain: ai
+    file_extensions: [.kt, .kts]
+    codon_units: [fun, class, object, suspend, lateinit, inline, override, val, var, return]
+    bridge_module: FSOT.Formal.ExternalOSSCodeGenomePriors
+    vendor_root: vendor/github_oss/snapshots
+  Swift:
+    lean_domain: consciousness
+    file_extensions: [.swift]
+    codon_units: [func, class, struct, enum, var, let, import, guard, return, async]
+    bridge_module: FSOT.Formal.ExternalOSSCodeGenomePriors
+    vendor_root: vendor/github_oss/snapshots
+  Haskell:
+    lean_domain: mathematical
+    file_extensions: [.hs, .lhs]
+    codon_units: [data, type, class, instance, where, let, in, module, import, do]
+    bridge_module: FSOT.Formal.ProgrammingLanguageLawsPriors
+    vendor_root: vendor/github_oss/snapshots
 
 illness_analogs:
   genomic_illness: "low expression / malformed codon → pathology"
@@ -82,3 +106,6 @@ crosswalk_modules:
   - FSOT.Formal.TrinaryOSTierEPriors
   - FSOT.Formal.CryptographyTechnologyPriors
   - FSOT.Formal.ZeroDayRiskEvaluatorPriors
+  - FSOT.Formal.ExternalOSSCodeGenomePriors
+  - FSOT.Formal.ProgrammingLanguageLawsPriors
+  - FSOT.Formal.LinguisticsFormalPriors

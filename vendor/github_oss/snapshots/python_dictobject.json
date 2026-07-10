@@ -12,19 +12,9 @@
       "stability": 0.772673
     },
     {
-      "token": "return",
-      "codon_index": 42,
-      "stability": 0.475798
-    },
-    {
       "token": "struct",
       "codon_index": 28,
       "stability": 0.694548
-    },
-    {
-      "token": "malloc",
-      "codon_index": 17,
-      "stability": 0.516423
     },
     {
       "token": "memcpy",
@@ -32,14 +22,24 @@
       "stability": 0.678923
     },
     {
+      "token": "return",
+      "codon_index": 42,
+      "stability": 0.475798
+    },
+    {
       "token": "static",
       "codon_index": 6,
       "stability": 0.961702
     },
     {
-      "token": "void",
-      "codon_index": 18,
-      "stability": 0.850798
+      "token": "malloc",
+      "codon_index": 17,
+      "stability": 0.516423
+    },
+    {
+      "token": "free",
+      "codon_index": 8,
+      "stability": 0.992952
     },
     {
       "token": "gets",
@@ -47,9 +47,9 @@
       "stability": 0.625798
     },
     {
-      "token": "free",
-      "codon_index": 8,
-      "stability": 0.992952
+      "token": "void",
+      "codon_index": 18,
+      "stability": 0.850798
     }
   ],
   "holes": [
@@ -57,68 +57,68 @@
       "window_start": 0,
       "tokens": [
         "include",
-        "return",
-        "struct"
+        "struct",
+        "memcpy"
       ],
-      "mean_stability": 0.647673,
+      "mean_stability": 0.715381,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 1,
       "tokens": [
-        "return",
         "struct",
-        "malloc"
+        "memcpy",
+        "return"
       ],
-      "mean_stability": 0.562256,
+      "mean_stability": 0.616423,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 2,
       "tokens": [
-        "struct",
-        "malloc",
-        "memcpy"
+        "memcpy",
+        "return",
+        "static"
       ],
-      "mean_stability": 0.629965,
+      "mean_stability": 0.705474,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 3,
       "tokens": [
-        "malloc",
-        "memcpy",
-        "static"
+        "return",
+        "static",
+        "malloc"
       ],
-      "mean_stability": 0.719016,
+      "mean_stability": 0.651308,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 4,
       "tokens": [
-        "memcpy",
         "static",
-        "void"
+        "malloc",
+        "free"
       ],
-      "mean_stability": 0.830474,
+      "mean_stability": 0.823692,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 5,
       "tokens": [
-        "static",
-        "void",
+        "malloc",
+        "free",
         "gets"
       ],
-      "mean_stability": 0.812766,
+      "mean_stability": 0.711724,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 6,
       "tokens": [
-        "void",
+        "free",
         "gets",
-        "free"
+        "void"
       ],
       "mean_stability": 0.823183,
       "hole_type": "connective_failure"
@@ -128,5 +128,7 @@
   "repo": "python/cpython",
   "category": "interpreter_core",
   "url": "https://raw.githubusercontent.com/python/cpython/main/Objects/dictobject.c",
-  "source": "live"
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:56.625805+00:00",
+  "content_sha256": "c85dde45c84ce025ce2238a8497471d5087455d6c6c3c6d49e1962579a171522"
 }

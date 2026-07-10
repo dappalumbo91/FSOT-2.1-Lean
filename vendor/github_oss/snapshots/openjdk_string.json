@@ -1,0 +1,149 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\openjdk_string.java",
+  "language": "Java",
+  "exists": true,
+  "codon_count": 10,
+  "hole_count": 8,
+  "mean_stability": 0.653923,
+  "codons": [
+    {
+      "token": "synchronized",
+      "codon_index": 41,
+      "stability": 0.491423
+    },
+    {
+      "token": "implements",
+      "codon_index": 18,
+      "stability": 0.850798
+    },
+    {
+      "token": "interface",
+      "codon_index": 28,
+      "stability": 0.694548
+    },
+    {
+      "token": "extends",
+      "codon_index": 17,
+      "stability": 0.866423
+    },
+    {
+      "token": "import",
+      "codon_index": 18,
+      "stability": 0.850798
+    },
+    {
+      "token": "return",
+      "codon_index": 22,
+      "stability": 0.788298
+    },
+    {
+      "token": "static",
+      "codon_index": 48,
+      "stability": 0.382048
+    },
+    {
+      "token": "public",
+      "codon_index": 49,
+      "stability": 0.366423
+    },
+    {
+      "token": "class",
+      "codon_index": 39,
+      "stability": 0.522673
+    },
+    {
+      "token": "void",
+      "codon_index": 26,
+      "stability": 0.725798
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "synchronized",
+        "implements",
+        "interface"
+      ],
+      "mean_stability": 0.678923,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "implements",
+        "interface",
+        "extends"
+      ],
+      "mean_stability": 0.803923,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "interface",
+        "extends",
+        "import"
+      ],
+      "mean_stability": 0.803923,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "extends",
+        "import",
+        "return"
+      ],
+      "mean_stability": 0.835173,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 4,
+      "tokens": [
+        "import",
+        "return",
+        "static"
+      ],
+      "mean_stability": 0.673715,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 5,
+      "tokens": [
+        "return",
+        "static",
+        "public"
+      ],
+      "mean_stability": 0.512256,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 6,
+      "tokens": [
+        "static",
+        "public",
+        "class"
+      ],
+      "mean_stability": 0.423715,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 7,
+      "tokens": [
+        "public",
+        "class",
+        "void"
+      ],
+      "mean_stability": 0.538298,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "openjdk_string",
+  "repo": "openjdk/jdk",
+  "category": "jvm_stdlib",
+  "url": "https://raw.githubusercontent.com/openjdk/jdk/master/src/java.base/share/classes/java/lang/String.java",
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:58.950388+00:00",
+  "content_sha256": "2b7cb5c7fa9968c14a4f6e7cc91bc4332556cf2c3f9061b3a1333d03f3b1cde4"
+}

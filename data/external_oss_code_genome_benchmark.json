@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:02:14.986495+00:00",
+  "generated_at": "2026-07-10T14:08:59.859133+00:00",
   "domain": "External_OSS_Code_Genome",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -14,8 +14,8 @@
     "consciousness"
   ],
   "D_eff": 16,
-  "record_count": 87,
-  "observable_count": 87,
+  "record_count": 169,
+  "observable_count": 169,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
@@ -45,16 +45,16 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 87
+      "observable_count": 169
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "oss_file_stability",
       "name": "oss_stability_panel",
-      "computed": 27.0043,
+      "computed": 40.5525,
       "measured": 0.0,
-      "error_pct": 27.0043,
-      "observable_count": 17
+      "error_pct": 40.5525,
+      "observable_count": 26
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -63,7 +63,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 70
+      "observable_count": 133
     }
   ],
   "material_records": [
@@ -82,9 +82,9 @@
       "lab": "external_oss_code_genome_lab",
       "property": "mean_codon_stability",
       "name": "linux_kernel_list__stability",
-      "computed": 0.783345,
+      "computed": 0.783344,
       "measured": 1.0,
-      "error_pct": 21.6655,
+      "error_pct": 21.6656,
       "source": "torvalds/linux",
       "language": "C",
       "category": "systems_kernel"
@@ -92,18 +92,29 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "linux_kernel_list__pointer_static_return",
+      "name": "linux_kernel_list__pointer_include_return",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "torvalds/linux",
       "hole_type": "connective_failure",
-      "hole_severity": 0.794016
+      "hole_severity": 0.731006
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "linux_kernel_list__static_return_struct",
+      "name": "linux_kernel_list__include_return_static",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "torvalds/linux",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.736724
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "linux_kernel_list__return_static_struct",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -114,13 +125,13 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "linux_kernel_list__return_struct_void",
+      "name": "linux_kernel_list__static_struct_void",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "torvalds/linux",
       "hole_type": "connective_failure",
-      "hole_severity": 0.673715
+      "hole_severity": 0.835683
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -136,7 +147,7 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "rust_std_vec__from_raw_parts_unsafe_extern",
+      "name": "rust_std_vec__from_raw_parts_extern_unsafe",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -147,29 +158,29 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "rust_std_vec__unsafe_extern_match",
+      "name": "rust_std_vec__extern_unsafe_const",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "rust-lang/rust",
       "hole_type": "connective_failure",
-      "hole_severity": 0.541667
+      "hole_severity": 0.484375
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "rust_std_vec__extern_match_const",
+      "name": "rust_std_vec__unsafe_const_match",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "rust-lang/rust",
       "hole_type": "connective_failure",
-      "hole_severity": 0.731516
+      "hole_severity": 0.43699
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "rust_std_vec__match_const_trait",
+      "name": "rust_std_vec__const_match_trait",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -180,13 +191,13 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "rust_std_vec__const_trait_impl",
+      "name": "rust_std_vec__match_trait_impl",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "rust-lang/rust",
       "hole_type": "connective_failure",
-      "hole_severity": 0.788298
+      "hole_severity": 0.84559
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -246,73 +257,73 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "python_dictobject__include_static_memcpy",
+      "name": "python_dictobject__include_return_malloc",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "python/cpython",
       "hole_type": "connective_failure",
-      "hole_severity": 0.804433
+      "hole_severity": 0.588298
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "python_dictobject__static_memcpy_return",
+      "name": "python_dictobject__return_malloc_memcpy",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "python/cpython",
       "hole_type": "connective_failure",
-      "hole_severity": 0.705474
+      "hole_severity": 0.557048
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "python_dictobject__memcpy_return_struct",
+      "name": "python_dictobject__malloc_memcpy_static",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "python/cpython",
       "hole_type": "connective_failure",
-      "hole_severity": 0.616423
+      "hole_severity": 0.719016
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "python_dictobject__return_struct_malloc",
+      "name": "python_dictobject__memcpy_static_struct",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "python/cpython",
       "hole_type": "connective_failure",
-      "hole_severity": 0.562256
+      "hole_severity": 0.778391
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "python_dictobject__struct_malloc_free",
+      "name": "python_dictobject__static_struct_gets",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "python/cpython",
       "hole_type": "connective_failure",
-      "hole_severity": 0.734641
+      "hole_severity": 0.760683
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "python_dictobject__malloc_free_void",
+      "name": "python_dictobject__struct_gets_void",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "python/cpython",
       "hole_type": "connective_failure",
-      "hole_severity": 0.786724
+      "hole_severity": 0.723715
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "python_dictobject__free_void_gets",
+      "name": "python_dictobject__gets_void_free",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -334,18 +345,29 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "cpython_ceval__pointer_static_return",
+      "name": "cpython_ceval__pointer_include_return",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "python/cpython",
       "hole_type": "connective_failure",
-      "hole_severity": 0.794016
+      "hole_severity": 0.731006
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "cpython_ceval__static_return_struct",
+      "name": "cpython_ceval__include_return_static",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "python/cpython",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.736724
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "cpython_ceval__return_static_struct",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -356,18 +378,18 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "cpython_ceval__return_struct_free",
+      "name": "cpython_ceval__static_struct_void",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "python/cpython",
       "hole_type": "connective_failure",
-      "hole_severity": 0.721099
+      "hole_severity": 0.835683
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "cpython_ceval__struct_free_void",
+      "name": "cpython_ceval__struct_void_free",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -466,40 +488,29 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "golang_http_serve__interface_package_unsafe",
+      "name": "golang_http_serve__interface_package_return",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "golang/go",
       "hole_type": "connective_failure",
-      "hole_severity": 0.648183
+      "hole_severity": 0.502349
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "golang_http_serve__package_unsafe_return",
+      "name": "golang_http_serve__package_return_import",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "golang/go",
       "hole_type": "connective_failure",
-      "hole_severity": 0.700266
+      "hole_severity": 0.747651
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "golang_http_serve__unsafe_return_struct",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "golang/go",
-      "hole_type": "connective_failure",
-      "hole_severity": 0.538298
-    },
-    {
-      "lab": "external_oss_code_genome_lab",
-      "property": "codon_hole_detected",
-      "name": "golang_http_serve__return_struct_import",
+      "name": "golang_http_serve__return_import_struct",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -510,24 +521,35 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "golang_http_serve__struct_import_defer",
+      "name": "golang_http_serve__import_struct_unsafe",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "golang/go",
       "hole_type": "connective_failure",
-      "hole_severity": 0.773692
+      "hole_severity": 0.731516
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "golang_http_serve__import_defer_func",
+      "name": "golang_http_serve__struct_unsafe_defer",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "golang/go",
       "hole_type": "connective_failure",
-      "hole_severity": 0.732026
+      "hole_severity": 0.726308
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "golang_http_serve__unsafe_defer_func",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "golang/go",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.684641
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -631,18 +653,18 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "sqlite_mem__include_static_return",
+      "name": "sqlite_mem__include_return_malloc",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "sqlite/sqlite",
       "hole_type": "connective_failure",
-      "hole_severity": 0.736724
+      "hole_severity": 0.588298
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "sqlite_mem__static_return_malloc",
+      "name": "sqlite_mem__return_malloc_static",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -653,24 +675,13 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "sqlite_mem__return_malloc_free",
+      "name": "sqlite_mem__malloc_static_void",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "sqlite/sqlite",
       "hole_type": "connective_failure",
-      "hole_severity": 0.661724
-    },
-    {
-      "lab": "external_oss_code_genome_lab",
-      "property": "codon_hole_detected",
-      "name": "sqlite_mem__malloc_free_void",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "sqlite/sqlite",
-      "hole_type": "connective_failure",
-      "hole_severity": 0.786724
+      "hole_severity": 0.776308
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -686,7 +697,7 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "redis_sds__sprintf_include_pointer",
+      "name": "redis_sds__pointer_include_sprintf",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -697,7 +708,29 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "redis_sds__static_memcpy_return",
+      "name": "redis_sds__include_sprintf_return",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "redis/redis",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.546631
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "redis_sds__sprintf_return_memcpy",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "redis/redis",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.515381
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "redis_sds__return_memcpy_static",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -708,40 +741,40 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "redis_sds__memcpy_return_struct",
+      "name": "redis_sds__memcpy_static_struct",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "redis/redis",
       "hole_type": "connective_failure",
-      "hole_severity": 0.616423
+      "hole_severity": 0.778391
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "redis_sds__return_struct_free",
+      "name": "redis_sds__static_struct_gets",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "redis/redis",
       "hole_type": "connective_failure",
-      "hole_severity": 0.721099
+      "hole_severity": 0.760683
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "redis_sds__struct_free_void",
+      "name": "redis_sds__struct_gets_void",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "redis/redis",
       "hole_type": "connective_failure",
-      "hole_severity": 0.846099
+      "hole_severity": 0.723715
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "redis_sds__free_void_gets",
+      "name": "redis_sds__gets_void_free",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -763,18 +796,29 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "pytorch_tensor__pointer_static_return",
+      "name": "pytorch_tensor__pointer_include_return",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "pytorch/pytorch",
       "hole_type": "connective_failure",
-      "hole_severity": 0.794016
+      "hole_severity": 0.731006
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "pytorch_tensor__static_return_struct",
+      "name": "pytorch_tensor__include_return_static",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "pytorch/pytorch",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.736724
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "pytorch_tensor__return_static_struct",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -785,18 +829,18 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "pytorch_tensor__return_struct_free",
+      "name": "pytorch_tensor__static_struct_void",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "pytorch/pytorch",
       "hole_type": "connective_failure",
-      "hole_severity": 0.721099
+      "hole_severity": 0.835683
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "pytorch_tensor__struct_free_void",
+      "name": "pytorch_tensor__struct_void_free",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -829,18 +873,18 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "kubernetes_client_go__package_return_struct",
+      "name": "kubernetes_client_go__package_return_import",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "kubernetes/client-go",
       "hole_type": "connective_failure",
-      "hole_severity": 0.580474
+      "hole_severity": 0.747651
     },
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "kubernetes_client_go__return_struct_import",
+      "name": "kubernetes_client_go__return_import_struct",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -851,7 +895,7 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "kubernetes_client_go__struct_import_defer",
+      "name": "kubernetes_client_go__import_struct_defer",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -862,13 +906,13 @@
     {
       "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
-      "name": "kubernetes_client_go__import_defer_func",
+      "name": "kubernetes_client_go__struct_defer_func",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "kubernetes/client-go",
       "hole_type": "connective_failure",
-      "hole_severity": 0.732026
+      "hole_severity": 0.564849
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -894,14 +938,697 @@
     },
     {
       "lab": "external_oss_code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "openjdk_string__stability",
+      "computed": 0.653923,
+      "measured": 1.0,
+      "error_pct": 34.6077,
+      "source": "openjdk/jdk",
+      "language": "Java",
+      "category": "jvm_stdlib"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_string__synchronized_implements_interface",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.678923
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_string__implements_interface_extends",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.803923
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_string__interface_extends_return",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.78309
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_string__extends_return_import",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.835173
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_string__return_import_public",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.668506
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_string__import_public_static",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.53309
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_string__public_static_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.423715
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_string__static_class_void",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.543506
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "openjdk_hashmap__stability",
+      "computed": 0.594475,
+      "measured": 1.0,
+      "error_pct": 40.5525,
+      "source": "openjdk/jdk",
+      "language": "Java",
+      "category": "jvm_stdlib"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_hashmap__ObjectInputStream_synchronized_implements",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.447407
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_hashmap__synchronized_implements_interface",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.678923
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_hashmap__implements_interface_extends",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.803923
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_hashmap__interface_extends_return",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.78309
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_hashmap__extends_return_import",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.835173
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_hashmap__return_import_public",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.668506
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_hashmap__import_public_static",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.53309
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_hashmap__public_static_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.423715
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "openjdk_hashmap__static_class_void",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "openjdk/jdk",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.543506
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "kotlin_collections__stability",
+      "computed": 0.767196,
+      "measured": 1.0,
+      "error_pct": 23.2804,
+      "source": "JetBrains/kotlin",
+      "language": "Kotlin",
+      "category": "jvm_stdlib"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "kotlin_collections__object_inline_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "JetBrains/kotlin",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.788808
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "kotlin_collections__inline_class_var",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "JetBrains/kotlin",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.538298
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "kotlin_collections__class_var_fun",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "JetBrains/kotlin",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.590381
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "kotlin_collections__var_fun_val",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "JetBrains/kotlin",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.621631
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "kotlin_body_resolver__stability",
+      "computed": 0.643209,
+      "measured": 1.0,
+      "error_pct": 35.6791,
+      "source": "JetBrains/kotlin",
+      "language": "Java",
+      "category": "compiler_frontend"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "kotlin_body_resolver__extends_return_import",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "JetBrains/kotlin",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.835173
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "kotlin_body_resolver__return_import_public",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "JetBrains/kotlin",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.668506
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "kotlin_body_resolver__import_public_static",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "JetBrains/kotlin",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.53309
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "kotlin_body_resolver__public_static_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "JetBrains/kotlin",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.423715
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "kotlin_body_resolver__static_class_void",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "JetBrains/kotlin",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.543506
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "swift_string__stability",
+      "computed": 0.586215,
+      "measured": 1.0,
+      "error_pct": 41.3785,
+      "source": "apple/swift",
+      "language": "Swift",
+      "category": "memory_safe_std"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_string__withUnsafeBytes_return_import",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.546631
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_string__return_import_struct",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.725798
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_string__import_struct_guard",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.731006
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_string__struct_guard_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.62684
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_string__guard_class_func",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.50184
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_string__class_func_var",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.428923
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_string__func_var_let",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.585173
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "swift_array__stability",
+      "computed": 0.559001,
+      "measured": 1.0,
+      "error_pct": 44.0999,
+      "source": "apple/swift",
+      "language": "Swift",
+      "category": "memory_safe_std"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_array__withUnsafeBytes_return_struct",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.58309
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_array__return_struct_guard",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.616423
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_array__struct_guard_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.62684
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_array__guard_class_func",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.50184
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_array__class_func_var",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.428923
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "swift_array__func_var_let",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "apple/swift",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.585173
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "haskell_bytestring__stability",
+      "computed": 0.539329,
+      "measured": 1.0,
+      "error_pct": 46.0671,
+      "source": "haskell/bytestring",
+      "language": "Haskell",
+      "category": "functional_stdlib"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_bytestring__accursedUnutterablePerformIO_unsafePerformIO_foreign",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "haskell/bytestring",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.408067
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_bytestring__unsafePerformIO_foreign_import",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "haskell/bytestring",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.649734
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_bytestring__foreign_import_inline",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "haskell/bytestring",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.623692
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_bytestring__import_inline_module",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "haskell/bytestring",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.609641
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_bytestring__inline_module_where",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "haskell/bytestring",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.401308
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_bytestring__module_where_type",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "haskell/bytestring",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.50184
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_bytestring__where_type_data",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "haskell/bytestring",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.387256
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_bytestring__type_data_let",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "haskell/bytestring",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.637766
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_bytestring__data_let_do",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "haskell/bytestring",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.491933
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_bytestring__let_do_in",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "haskell/bytestring",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.752349
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "haskell_async__stability",
+      "computed": 0.57178,
+      "measured": 1.0,
+      "error_pct": 42.822,
+      "source": "simonmar/async",
+      "language": "Haskell",
+      "category": "concurrency_lib"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_async__instance_import_module",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "simonmar/async",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.553923
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_async__import_module_where",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "simonmar/async",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.491423
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_async__module_where_type",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "simonmar/async",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.50184
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_async__where_type_do",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "simonmar/async",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.47059
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "haskell_async__type_do_in",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "simonmar/async",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.72059
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
       "property": "codon_hole_detected",
       "name": "Lean__namespace_import_open",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "code_genome_bridge",
+      "source": "code_genome_structure_bridge",
       "hole_type": "connective_failure",
-      "hole_severity": 0.637256
+      "hole_severity": 0.637256,
+      "pl_category": "fsot_cyber"
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -910,9 +1637,10 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "code_genome_bridge",
+      "source": "code_genome_structure_bridge",
       "hole_type": "connective_failure",
-      "hole_severity": 0.517465
+      "hole_severity": 0.517465,
+      "pl_category": "fsot_cyber"
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -921,7 +1649,8 @@
       "computed": 0.522673,
       "measured": 1.0,
       "error_pct": 47.7327,
-      "source": "code_genome_bridge"
+      "source": "code_genome_structure_bridge",
+      "pl_category": "memory_safety"
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -930,9 +1659,10 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "code_genome_bridge",
+      "source": "code_genome_structure_bridge",
       "hole_type": "connective_failure",
-      "hole_severity": 0.491423
+      "hole_severity": 0.491423,
+      "pl_category": "fsot_cyber"
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -941,9 +1671,10 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "code_genome_bridge",
+      "source": "code_genome_structure_bridge",
       "hole_type": "connective_failure",
-      "hole_severity": 0.460173
+      "hole_severity": 0.460173,
+      "pl_category": "fsot_cyber"
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -952,9 +1683,10 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "code_genome_bridge",
+      "source": "code_genome_structure_bridge",
       "hole_type": "connective_failure",
-      "hole_severity": 0.606006
+      "hole_severity": 0.606006,
+      "pl_category": "fsot_cyber"
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -963,9 +1695,10 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "code_genome_bridge",
+      "source": "code_genome_structure_bridge",
       "hole_type": "connective_failure",
-      "hole_severity": 0.507048
+      "hole_severity": 0.507048,
+      "pl_category": "fsot_cyber"
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -974,9 +1707,10 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "code_genome_bridge",
+      "source": "code_genome_structure_bridge",
       "hole_type": "connective_failure",
-      "hole_severity": 0.486215
+      "hole_severity": 0.486215,
+      "pl_category": "fsot_cyber"
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -985,7 +1719,8 @@
       "computed": 0.482494,
       "measured": 1.0,
       "error_pct": 51.7506,
-      "source": "code_genome_bridge"
+      "source": "code_genome_structure_bridge",
+      "pl_category": "memory_safety"
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -994,9 +1729,10 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "code_genome_bridge",
+      "source": "code_genome_structure_bridge",
       "hole_type": "connective_failure",
-      "hole_severity": 0.491423
+      "hole_severity": 0.491423,
+      "pl_category": "fsot_cyber"
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -1005,9 +1741,10 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "code_genome_bridge",
+      "source": "code_genome_structure_bridge",
       "hole_type": "connective_failure",
-      "hole_severity": 0.611215
+      "hole_severity": 0.611215,
+      "pl_category": "fsot_cyber"
     },
     {
       "lab": "external_oss_code_genome_lab",
@@ -1016,20 +1753,208 @@
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "code_genome_bridge",
+      "source": "code_genome_structure_bridge",
       "hole_type": "connective_failure",
-      "hole_severity": 0.517465
+      "hole_severity": 0.517465,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__open_def_by",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.486215,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "Lean_file_stability",
+      "computed": 0.488819,
+      "measured": 1.0,
+      "error_pct": 51.1181,
+      "source": "code_genome_structure_bridge",
+      "pl_category": "memory_safety"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__unsafe_extern_match",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.541667,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__extern_match_const",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.731516,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__match_const_impl",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.731006,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__const_impl_pub",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.606006,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "zero_day_hole_rollup_bridge",
+      "name": "zero_day_evaluator_holes",
+      "computed": 82.0,
+      "measured": 82.0,
+      "error_pct": 0.0,
+      "source": "zero_day_risk_evaluator_cybersecurity_benchmark",
+      "risk_tier": "RED"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "language_bridge_certified",
+      "name": "Lean",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "language_bridge_certified",
+      "name": "Rust",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "language_bridge_certified",
+      "name": "Python",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "language_bridge_certified",
+      "name": "C",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "language_bridge_certified",
+      "name": "JavaScript",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "language_bridge_certified",
+      "name": "Go",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "language_bridge_certified",
+      "name": "Zig",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "language_bridge_certified",
+      "name": "WebAssembly",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "external_oss_code_genome_lab",
+      "property": "language_bridge_certified",
+      "name": "FSOTB_ISA",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
     }
   ],
-  "oss_sample_count": 15,
+  "oss_sample_count": 23,
   "language_distribution": {
     "C": 8,
     "Rust": 1,
     "JavaScript": 3,
     "Go": 2,
-    "Zig": 1
+    "Zig": 1,
+    "Java": 3,
+    "Kotlin": 1,
+    "Swift": 2,
+    "Haskell": 2
   },
   "cross_similarity": [
+    {
+      "a_id": "openjdk_string",
+      "b_id": "openjdk_hashmap",
+      "a_repo": "openjdk/jdk",
+      "b_repo": "openjdk/jdk",
+      "profile_distance": 0.095346,
+      "stability_delta": 0.059448,
+      "same_language": true,
+      "same_category": true,
+      "affinity_score": 0.946382
+    },
+    {
+      "a_id": "swift_string",
+      "b_id": "swift_array",
+      "a_repo": "apple/swift",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.117851,
+      "stability_delta": 0.027214,
+      "same_language": true,
+      "same_category": true,
+      "affinity_score": 0.938353
+    },
     {
       "a_id": "python_dictobject",
       "b_id": "cpython_ceval",
@@ -1069,7 +1994,7 @@
       "a_repo": "torvalds/linux",
       "b_repo": "python/cpython",
       "profile_distance": 0.154303,
-      "stability_delta": 0.029943,
+      "stability_delta": 0.029944,
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.769854
@@ -1080,7 +2005,7 @@
       "a_repo": "torvalds/linux",
       "b_repo": "pytorch/pytorch",
       "profile_distance": 0.154303,
-      "stability_delta": 0.029943,
+      "stability_delta": 0.029944,
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.769854
@@ -1095,6 +2020,17 @@
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.757817
+    },
+    {
+      "a_id": "openjdk_string",
+      "b_id": "kotlin_body_resolver",
+      "a_repo": "openjdk/jdk",
+      "b_repo": "JetBrains/kotlin",
+      "profile_distance": 0.20702,
+      "stability_delta": 0.010714,
+      "same_language": true,
+      "same_category": false,
+      "affinity_score": 0.745419
     },
     {
       "a_id": "cpython_ceval",
@@ -1117,6 +2053,17 @@
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.739053
+    },
+    {
+      "a_id": "openjdk_hashmap",
+      "b_id": "kotlin_body_resolver",
+      "a_repo": "openjdk/jdk",
+      "b_repo": "JetBrains/kotlin",
+      "profile_distance": 0.227921,
+      "stability_delta": 0.048734,
+      "same_language": true,
+      "same_category": false,
+      "affinity_score": 0.731166
     },
     {
       "a_id": "nodejs_buffer",
@@ -1146,7 +2093,7 @@
       "a_repo": "torvalds/linux",
       "b_repo": "redis/redis",
       "profile_distance": 0.258199,
-      "stability_delta": 0.044429,
+      "stability_delta": 0.044428,
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.716458
@@ -1185,12 +2132,23 @@
       "affinity_score": 0.711213
     },
     {
+      "a_id": "haskell_bytestring",
+      "b_id": "haskell_async",
+      "a_repo": "haskell/bytestring",
+      "b_repo": "simonmar/async",
+      "profile_distance": 0.288675,
+      "stability_delta": 0.032451,
+      "same_language": true,
+      "same_category": false,
+      "affinity_score": 0.702417
+    },
+    {
       "a_id": "openssl_mem_clr",
       "b_id": "linux_kernel_list",
       "a_repo": "openssl/openssl",
       "b_repo": "torvalds/linux",
       "profile_distance": 0.288675,
-      "stability_delta": 0.099085,
+      "stability_delta": 0.099086,
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.695754
@@ -1201,7 +2159,7 @@
       "a_repo": "torvalds/linux",
       "b_repo": "python/cpython",
       "profile_distance": 0.30429,
-      "stability_delta": 0.053388,
+      "stability_delta": 0.053387,
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.692516
@@ -1223,7 +2181,7 @@
       "a_repo": "torvalds/linux",
       "b_repo": "sqlite/sqlite",
       "profile_distance": 0.333333,
-      "stability_delta": 0.021621,
+      "stability_delta": 0.02162,
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.681171
@@ -1300,7 +2258,7 @@
       "a_repo": "torvalds/linux",
       "b_repo": "leanprover/lean4",
       "profile_distance": 0.57735,
-      "stability_delta": 0.028391,
+      "stability_delta": 0.028392,
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.558486
@@ -1372,6 +2330,17 @@
       "affinity_score": 0.530017
     },
     {
+      "a_id": "openjdk_string",
+      "b_id": "kotlin_collections",
+      "a_repo": "openjdk/jdk",
+      "b_repo": "JetBrains/kotlin",
+      "profile_distance": 0.41833,
+      "stability_delta": 0.113273,
+      "same_language": false,
+      "same_category": true,
+      "affinity_score": 0.529508
+    },
+    {
       "a_id": "lean4_core_init",
       "b_id": "redis_sds",
       "a_repo": "leanprover/lean4",
@@ -1381,6 +2350,61 @@
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.52649
+    },
+    {
+      "a_id": "openjdk_hashmap",
+      "b_id": "kotlin_collections",
+      "a_repo": "openjdk/jdk",
+      "b_repo": "JetBrains/kotlin",
+      "profile_distance": 0.412861,
+      "stability_delta": 0.172721,
+      "same_language": false,
+      "same_category": true,
+      "affinity_score": 0.526297
+    },
+    {
+      "a_id": "zig_std_arraylist",
+      "b_id": "swift_string",
+      "a_repo": "ziglang/zig",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.436436,
+      "stability_delta": 0.110417,
+      "same_language": false,
+      "same_category": true,
+      "affinity_score": 0.52074
+    },
+    {
+      "a_id": "zig_std_arraylist",
+      "b_id": "swift_array",
+      "a_repo": "ziglang/zig",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.443203,
+      "stability_delta": 0.083203,
+      "same_language": false,
+      "same_category": true,
+      "affinity_score": 0.520078
+    },
+    {
+      "a_id": "rust_std_vec",
+      "b_id": "swift_string",
+      "a_repo": "rust-lang/rust",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.449467,
+      "stability_delta": 0.061844,
+      "same_language": false,
+      "same_category": true,
+      "affinity_score": 0.519082
+    },
+    {
+      "a_id": "rust_std_vec",
+      "b_id": "swift_array",
+      "a_repo": "rust-lang/rust",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.46466,
+      "stability_delta": 0.03463,
+      "same_language": false,
+      "same_category": true,
+      "affinity_score": 0.514207
     },
     {
       "a_id": "express_router",
@@ -1394,305 +2418,206 @@
       "affinity_score": 0.461681
     },
     {
-      "a_id": "rust_std_vec",
-      "b_id": "golang_http_serve",
-      "a_repo": "rust-lang/rust",
-      "b_repo": "golang/go",
-      "profile_distance": 0.426401,
-      "stability_delta": 0.054367,
+      "a_id": "golang_http_serve",
+      "b_id": "swift_string",
+      "a_repo": "golang/go",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.351364,
+      "stability_delta": 0.007477,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.381363
+      "affinity_score": 0.42357
+    },
+    {
+      "a_id": "kubernetes_client_go",
+      "b_id": "swift_string",
+      "a_repo": "kubernetes/client-go",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.353553,
+      "stability_delta": 0.035625,
+      "same_language": false,
+      "same_category": false,
+      "affinity_score": 0.419661
+    },
+    {
+      "a_id": "openjdk_hashmap",
+      "b_id": "swift_string",
+      "a_repo": "openjdk/jdk",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.376051,
+      "stability_delta": 0.00826,
+      "same_language": false,
+      "same_category": false,
+      "affinity_score": 0.411149
     },
     {
       "a_id": "golang_http_serve",
-      "b_id": "redis_sds",
+      "b_id": "openjdk_hashmap",
       "a_repo": "golang/go",
-      "b_repo": "redis/redis",
-      "profile_distance": 0.408248,
-      "stability_delta": 0.160178,
+      "b_repo": "openjdk/jdk",
+      "profile_distance": 0.376051,
+      "stability_delta": 0.015737,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.379858
-    },
-    {
-      "a_id": "python_dictobject",
-      "b_id": "golang_http_serve",
-      "a_repo": "python/cpython",
-      "b_repo": "golang/go",
-      "profile_distance": 0.41574,
-      "stability_delta": 0.151219,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.377008
+      "affinity_score": 0.410401
     },
     {
       "a_id": "redis_sds",
-      "b_id": "kubernetes_client_go",
+      "b_id": "openjdk_string",
       "a_repo": "redis/redis",
-      "b_repo": "kubernetes/client-go",
-      "profile_distance": 0.41833,
-      "stability_delta": 0.188326,
+      "b_repo": "openjdk/jdk",
+      "profile_distance": 0.374166,
+      "stability_delta": 0.084993,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.372002
+      "affinity_score": 0.404418
+    },
+    {
+      "a_id": "kubernetes_client_go",
+      "b_id": "openjdk_hashmap",
+      "a_repo": "kubernetes/client-go",
+      "b_repo": "openjdk/jdk",
+      "profile_distance": 0.384353,
+      "stability_delta": 0.043885,
+      "same_language": false,
+      "same_category": false,
+      "affinity_score": 0.403435
+    },
+    {
+      "a_id": "openjdk_string",
+      "b_id": "swift_string",
+      "a_repo": "openjdk/jdk",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.380058,
+      "stability_delta": 0.067708,
+      "same_language": false,
+      "same_category": false,
+      "affinity_score": 0.4032
     },
     {
       "a_id": "golang_http_serve",
-      "b_id": "zig_std_arraylist",
+      "b_id": "swift_array",
       "a_repo": "golang/go",
-      "b_repo": "ziglang/zig",
-      "profile_distance": 0.436436,
-      "stability_delta": 0.10294,
+      "b_repo": "apple/swift",
+      "profile_distance": 0.390868,
+      "stability_delta": 0.019737,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.371488
+      "affinity_score": 0.402592
     },
     {
-      "a_id": "zig_std_arraylist",
-      "b_id": "kubernetes_client_go",
-      "a_repo": "ziglang/zig",
-      "b_repo": "kubernetes/client-go",
-      "profile_distance": 0.443203,
-      "stability_delta": 0.074792,
+      "a_id": "golang_http_serve",
+      "b_id": "openjdk_string",
+      "a_repo": "golang/go",
+      "b_repo": "openjdk/jdk",
+      "profile_distance": 0.380058,
+      "stability_delta": 0.075185,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.370919
+      "affinity_score": 0.402452
     },
     {
       "a_id": "python_dictobject",
-      "b_id": "kubernetes_client_go",
+      "b_id": "openjdk_string",
       "a_repo": "python/cpython",
-      "b_repo": "kubernetes/client-go",
-      "profile_distance": 0.424918,
-      "stability_delta": 0.179367,
+      "b_repo": "openjdk/jdk",
+      "profile_distance": 0.380058,
+      "stability_delta": 0.076034,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.369604
+      "affinity_score": 0.402367
     },
     {
-      "a_id": "rust_std_vec",
-      "b_id": "kubernetes_client_go",
-      "a_repo": "rust-lang/rust",
-      "b_repo": "kubernetes/client-go",
-      "profile_distance": 0.46466,
-      "stability_delta": 0.026219,
+      "a_id": "kubernetes_client_go",
+      "b_id": "swift_array",
+      "a_repo": "kubernetes/client-go",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.395285,
+      "stability_delta": 0.008411,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.365048
+      "affinity_score": 0.401517
     },
     {
-      "a_id": "rust_std_vec",
-      "b_id": "redis_sds",
-      "a_repo": "rust-lang/rust",
-      "b_repo": "redis/redis",
-      "profile_distance": 0.436931,
-      "stability_delta": 0.214545,
+      "a_id": "redis_sds",
+      "b_id": "openjdk_hashmap",
+      "a_repo": "redis/redis",
+      "b_repo": "openjdk/jdk",
+      "profile_distance": 0.369274,
+      "stability_delta": 0.144441,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.36008
-    },
-    {
-      "a_id": "cpython_ceval",
-      "b_id": "golang_http_serve",
-      "a_repo": "python/cpython",
-      "b_repo": "golang/go",
-      "profile_distance": 0.436436,
-      "stability_delta": 0.23455,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.358327
-    },
-    {
-      "a_id": "golang_http_serve",
-      "b_id": "pytorch_tensor",
-      "a_repo": "golang/go",
-      "b_repo": "pytorch/pytorch",
-      "profile_distance": 0.436436,
-      "stability_delta": 0.23455,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.358327
-    },
-    {
-      "a_id": "zig_std_arraylist",
-      "b_id": "redis_sds",
-      "a_repo": "ziglang/zig",
-      "b_repo": "redis/redis",
-      "profile_distance": 0.430946,
-      "stability_delta": 0.263118,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.358215
+      "affinity_score": 0.400919
     },
     {
       "a_id": "python_dictobject",
-      "b_id": "zig_std_arraylist",
+      "b_id": "openjdk_hashmap",
       "a_repo": "python/cpython",
-      "b_repo": "ziglang/zig",
-      "profile_distance": 0.436436,
-      "stability_delta": 0.254159,
+      "b_repo": "openjdk/jdk",
+      "profile_distance": 0.376051,
+      "stability_delta": 0.135482,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.356366
+      "affinity_score": 0.398426
     },
     {
-      "a_id": "rust_std_vec",
-      "b_id": "python_dictobject",
-      "a_repo": "rust-lang/rust",
-      "b_repo": "python/cpython",
-      "profile_distance": 0.449467,
-      "stability_delta": 0.205586,
+      "a_id": "swift_string",
+      "b_id": "haskell_bytestring",
+      "a_repo": "apple/swift",
+      "b_repo": "haskell/bytestring",
+      "profile_distance": 0.396746,
+      "stability_delta": 0.046886,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.354708
+      "affinity_score": 0.396938
     },
     {
-      "a_id": "linux_kernel_list",
-      "b_id": "golang_http_serve",
-      "a_repo": "torvalds/linux",
-      "b_repo": "golang/go",
-      "profile_distance": 0.451335,
-      "stability_delta": 0.204607,
+      "a_id": "kubernetes_client_go",
+      "b_id": "openjdk_string",
+      "a_repo": "kubernetes/client-go",
+      "b_repo": "openjdk/jdk",
+      "profile_distance": 0.387298,
+      "stability_delta": 0.103333,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.353872
+      "affinity_score": 0.396018
     },
     {
-      "a_id": "cpython_ceval",
-      "b_id": "kubernetes_client_go",
-      "a_repo": "python/cpython",
-      "b_repo": "kubernetes/client-go",
-      "profile_distance": 0.443203,
-      "stability_delta": 0.262698,
+      "a_id": "kotlin_body_resolver",
+      "b_id": "swift_string",
+      "a_repo": "JetBrains/kotlin",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.39841,
+      "stability_delta": 0.056994,
       "same_language": false,
       "same_category": false,
-      "affinity_score": 0.352129
-    },
-    {
-      "a_id": "pytorch_tensor",
-      "b_id": "kubernetes_client_go",
-      "a_repo": "pytorch/pytorch",
-      "b_repo": "kubernetes/client-go",
-      "profile_distance": 0.443203,
-      "stability_delta": 0.262698,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.352129
-    },
-    {
-      "a_id": "linux_kernel_list",
-      "b_id": "kubernetes_client_go",
-      "a_repo": "torvalds/linux",
-      "b_repo": "kubernetes/client-go",
-      "profile_distance": 0.456435,
-      "stability_delta": 0.232755,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.348507
-    },
-    {
-      "a_id": "cpython_ceval",
-      "b_id": "zig_std_arraylist",
-      "a_repo": "python/cpython",
-      "b_repo": "ziglang/zig",
-      "profile_distance": 0.451754,
-      "stability_delta": 0.33749,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.340374
-    },
-    {
-      "a_id": "zig_std_arraylist",
-      "b_id": "pytorch_tensor",
-      "a_repo": "ziglang/zig",
-      "b_repo": "pytorch/pytorch",
-      "profile_distance": 0.451754,
-      "stability_delta": 0.33749,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.340374
-    },
-    {
-      "a_id": "rust_std_vec",
-      "b_id": "nodejs_buffer",
-      "a_repo": "rust-lang/rust",
-      "b_repo": "nodejs/node",
-      "profile_distance": 0.504525,
-      "stability_delta": 0.076427,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.340095
-    },
-    {
-      "a_id": "linux_kernel_list",
-      "b_id": "zig_std_arraylist",
-      "a_repo": "torvalds/linux",
-      "b_repo": "ziglang/zig",
-      "profile_distance": 0.46291,
-      "stability_delta": 0.307547,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.33779
-    },
-    {
-      "a_id": "golang_http_serve",
-      "b_id": "sqlite_mem",
-      "a_repo": "golang/go",
-      "b_repo": "sqlite/sqlite",
-      "profile_distance": 0.490653,
-      "stability_delta": 0.182986,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.336375
-    },
-    {
-      "a_id": "rust_std_vec",
-      "b_id": "cpython_ceval",
-      "a_repo": "rust-lang/rust",
-      "b_repo": "python/cpython",
-      "profile_distance": 0.483494,
-      "stability_delta": 0.288917,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.329361
-    },
-    {
-      "a_id": "rust_std_vec",
-      "b_id": "pytorch_tensor",
-      "a_repo": "rust-lang/rust",
-      "b_repo": "pytorch/pytorch",
-      "profile_distance": 0.483494,
-      "stability_delta": 0.288917,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.329361
-    },
-    {
-      "a_id": "sqlite_mem",
-      "b_id": "kubernetes_client_go",
-      "a_repo": "sqlite/sqlite",
-      "b_repo": "kubernetes/client-go",
-      "profile_distance": 0.5,
-      "stability_delta": 0.211134,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.328887
-    },
-    {
-      "a_id": "rust_std_vec",
-      "b_id": "sqlite_mem",
-      "a_repo": "rust-lang/rust",
-      "b_repo": "sqlite/sqlite",
-      "profile_distance": 0.507519,
-      "stability_delta": 0.237353,
-      "same_language": false,
-      "same_category": false,
-      "affinity_score": 0.322505
+      "affinity_score": 0.395096
     }
   ],
-  "high_affinity_pair_count": 29,
+  "high_affinity_pair_count": 34,
   "top_affinity_pairs": [
+    {
+      "a_id": "openjdk_string",
+      "b_id": "openjdk_hashmap",
+      "a_repo": "openjdk/jdk",
+      "b_repo": "openjdk/jdk",
+      "profile_distance": 0.095346,
+      "stability_delta": 0.059448,
+      "same_language": true,
+      "same_category": true,
+      "affinity_score": 0.946382
+    },
+    {
+      "a_id": "swift_string",
+      "b_id": "swift_array",
+      "a_repo": "apple/swift",
+      "b_repo": "apple/swift",
+      "profile_distance": 0.117851,
+      "stability_delta": 0.027214,
+      "same_language": true,
+      "same_category": true,
+      "affinity_score": 0.938353
+    },
     {
       "a_id": "python_dictobject",
       "b_id": "cpython_ceval",
@@ -1732,7 +2657,7 @@
       "a_repo": "torvalds/linux",
       "b_repo": "python/cpython",
       "profile_distance": 0.154303,
-      "stability_delta": 0.029943,
+      "stability_delta": 0.029944,
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.769854
@@ -1743,7 +2668,7 @@
       "a_repo": "torvalds/linux",
       "b_repo": "pytorch/pytorch",
       "profile_distance": 0.154303,
-      "stability_delta": 0.029943,
+      "stability_delta": 0.029944,
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.769854
@@ -1758,33 +2683,20 @@
       "same_language": true,
       "same_category": false,
       "affinity_score": 0.757817
-    },
-    {
-      "a_id": "cpython_ceval",
-      "b_id": "redis_sds",
-      "a_repo": "python/cpython",
-      "b_repo": "redis/redis",
-      "profile_distance": 0.20702,
-      "stability_delta": 0.074372,
-      "same_language": true,
-      "same_category": false,
-      "affinity_score": 0.739053
-    },
-    {
-      "a_id": "redis_sds",
-      "b_id": "pytorch_tensor",
-      "a_repo": "redis/redis",
-      "b_repo": "pytorch/pytorch",
-      "profile_distance": 0.20702,
-      "stability_delta": 0.074372,
-      "same_language": true,
-      "same_category": false,
-      "affinity_score": 0.739053
     }
   ],
   "rollup_status": "GREEN",
+  "language_bridge_count": 30,
+  "cross_domain_bridges": [
+    "FSOT.Formal.ProgrammingLanguageLawsPriors",
+    "FSOT.Formal.LinguisticsFormalPriors",
+    "FSOT.Formal.CodeGenomeStructurePriors",
+    "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+    "FSOT.Formal.ExternalOSSCodeGenomePriors"
+  ],
   "crosswalk_modules": [
     "FSOT.Formal.CodeGenomeStructurePriors",
+    "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
     "FSOT.Formal.ExternalOSSCodeGenomePriors"
   ]
 }

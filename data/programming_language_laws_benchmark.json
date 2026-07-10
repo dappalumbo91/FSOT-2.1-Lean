@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:02:14.991499+00:00",
+  "generated_at": "2026-07-10T14:08:59.867476+00:00",
   "domain": "Programming_Language_Laws",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -14,11 +14,11 @@
     "mathematical"
   ],
   "D_eff": 15,
-  "record_count": 21,
-  "observable_count": 21,
-  "median_error_pct": 0.007383655181691928,
-  "pooled_median_error_pct": 0.007383655181691928,
-  "headline_median_error_pct": 0.007383655181691928,
+  "record_count": 77,
+  "observable_count": 77,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,19 +37,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.007384,
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.007383655181691928,
-      "observable_count": 21
+      "error_pct": 0.0,
+      "observable_count": 77
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "pl_rule_properties",
       "name": "programming_laws_panel",
-      "computed": 0.007384,
+      "computed": 0.0,
       "measured": 0.0,
-      "error_pct": 0.007383655181691928,
-      "observable_count": 21
+      "error_pct": 0.0,
+      "observable_count": 77
     }
   ],
   "material_records": [
@@ -205,12 +205,164 @@
     },
     {
       "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-016",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "operational_semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-017",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "operational_semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-018",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "type_theory"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-019",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "type_theory"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-020",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "type_theory"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-021",
+      "computed": 4.000295,
+      "measured": 4.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "effect_systems"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-022",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "effect_systems"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-023",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "type_theory"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-024",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "type_theory"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-025",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "type_theory"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-026",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "operational_semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-027",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "operational_semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-028",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "operational_semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-029",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "type_theory"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-030",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "operational_semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
       "property": "linguistics_formal_bridge",
       "name": "Zipf_exponent_English",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
-      "source": "linguistics_formal_benchmark"
+      "source": "linguistics_formal_benchmark",
+      "linguistics_group": "lexicon",
+      "pl_category": null
     },
     {
       "lab": "programming_language_laws_lab",
@@ -219,7 +371,9 @@
       "computed": 2.40001358369048,
       "measured": 2.3,
       "error_pct": 0.0005659871035364658,
-      "source": "linguistics_formal_benchmark"
+      "source": "linguistics_formal_benchmark",
+      "linguistics_group": "syntax",
+      "pl_category": "scoping"
     },
     {
       "lab": "programming_language_laws_lab",
@@ -228,7 +382,9 @@
       "computed": 30.9995813680981,
       "measured": 31.0,
       "error_pct": -0.0013504254899468224,
-      "source": "linguistics_formal_benchmark"
+      "source": "linguistics_formal_benchmark",
+      "linguistics_group": "phonology",
+      "pl_category": null
     },
     {
       "lab": "programming_language_laws_lab",
@@ -237,7 +393,9 @@
       "computed": 4.18002506099209,
       "measured": 4.18,
       "error_pct": 0.0005995452654275573,
-      "source": "linguistics_formal_benchmark"
+      "source": "linguistics_formal_benchmark",
+      "linguistics_group": "orthography",
+      "pl_category": null
     },
     {
       "lab": "programming_language_laws_lab",
@@ -246,7 +404,9 @@
       "computed": 4.49971638840435,
       "measured": 4.5,
       "error_pct": -0.006302479903277616,
-      "source": "linguistics_formal_benchmark"
+      "source": "linguistics_formal_benchmark",
+      "linguistics_group": "lexicon",
+      "pl_category": null
     },
     {
       "lab": "programming_language_laws_lab",
@@ -255,12 +415,483 @@
       "computed": 8.00021360546018,
       "measured": 8.0,
       "error_pct": 0.002670068252275115,
-      "source": "linguistics_formal_benchmark"
+      "source": "linguistics_formal_benchmark",
+      "linguistics_group": "reading",
+      "pl_category": null
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "linguistics_formal_bridge",
+      "name": "Mean_fixation_duration",
+      "computed": 224.988085867106,
+      "measured": 225.0,
+      "error_pct": -0.005295170175132726,
+      "source": "linguistics_formal_benchmark",
+      "linguistics_group": "reading",
+      "pl_category": null
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "linguistics_formal_bridge",
+      "name": "Heaps_exponent",
+      "computed": 0.599997786040735,
+      "measured": 0.6,
+      "error_pct": -0.00036899321083823844,
+      "source": "linguistics_formal_benchmark",
+      "linguistics_group": "lexicon",
+      "pl_category": null
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "linguistics_formal_bridge",
+      "name": "Cross_linguistic_info_rate",
+      "computed": 39.1495279442755,
+      "measured": 39.15,
+      "error_pct": -0.001205761748405669,
+      "source": "linguistics_formal_benchmark",
+      "linguistics_group": "pragmatics",
+      "pl_category": null
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "linguistics_formal_bridge",
+      "name": "Sentence_length_mean_EN",
+      "computed": 16.9995632588799,
+      "measured": 17.0,
+      "error_pct": -0.0025690654122958196,
+      "source": "linguistics_formal_benchmark",
+      "linguistics_group": "syntax",
+      "pl_category": "scoping"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-003",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "scoping",
+      "linguistics_group": "syntax"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-009",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "type_theory",
+      "linguistics_group": "morphology"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-016",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "operational_semantics",
+      "linguistics_group": "semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-017",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "operational_semantics",
+      "linguistics_group": "semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-018",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "type_theory",
+      "linguistics_group": "morphology"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-019",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "type_theory",
+      "linguistics_group": "morphology"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-020",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "type_theory",
+      "linguistics_group": "morphology"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-023",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "type_theory",
+      "linguistics_group": "morphology"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-024",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "type_theory",
+      "linguistics_group": "morphology"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-025",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "type_theory",
+      "linguistics_group": "morphology"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-026",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "operational_semantics",
+      "linguistics_group": "semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-027",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "operational_semantics",
+      "linguistics_group": "semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-028",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "operational_semantics",
+      "linguistics_group": "semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-029",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "type_theory",
+      "linguistics_group": "morphology"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_linguistics_category_bridge",
+      "name": "PL-030",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "programming_language_crosswalk",
+      "pl_category": "operational_semantics",
+      "linguistics_group": "semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__namespace_import_open",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.637256,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__import_open_def",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.517465,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "mean_codon_stability",
+      "name": "Lean_file_stability",
+      "computed": 0.522673,
+      "measured": 1.0,
+      "error_pct": 47.7327,
+      "source": "code_genome_structure_bridge",
+      "pl_category": "memory_safety"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__namespace_theorem_import",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.491423,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__theorem_import_lemma",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.460173,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__import_lemma_open",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.606006,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__lemma_open_def",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.507048,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__open_def_by",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.486215,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "mean_codon_stability",
+      "name": "Lean_file_stability",
+      "computed": 0.482494,
+      "measured": 1.0,
+      "error_pct": 51.7506,
+      "source": "code_genome_structure_bridge",
+      "pl_category": "memory_safety"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__namespace_theorem_import",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.491423,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__theorem_import_open",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.611215,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__import_open_def",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_bridge",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.517465,
+      "pl_category": "fsot_cyber"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "zero_day_hole_rollup_bridge",
+      "name": "zero_day_evaluator_holes",
+      "computed": 82.0,
+      "measured": 82.0,
+      "error_pct": 0.0,
+      "source": "zero_day_risk_evaluator_cybersecurity_benchmark",
+      "risk_tier": "RED"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "language_bridge_certified",
+      "name": "Lean",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "language_bridge_certified",
+      "name": "Rust",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "language_bridge_certified",
+      "name": "Python",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "language_bridge_certified",
+      "name": "C",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "language_bridge_certified",
+      "name": "JavaScript",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "language_bridge_certified",
+      "name": "Go",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "language_bridge_certified",
+      "name": "Zig",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "language_bridge_certified",
+      "name": "WebAssembly",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "language_bridge_certified",
+      "name": "FSOTB_ISA",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "zero_day_language_bridges"
     }
   ],
-  "law_count": 15,
+  "law_count": 30,
+  "law_categories": {
+    "functional_core": 2,
+    "memory_safety": 1,
+    "scoping": 1,
+    "object_model": 1,
+    "concurrency": 1,
+    "memory_unsafe": 1,
+    "metaprogramming": 1,
+    "wasm_semantics": 1,
+    "type_theory": 8,
+    "computability": 1,
+    "type_systems": 1,
+    "fsot_isa": 1,
+    "fsot_cyber": 1,
+    "security": 1,
+    "operational_semantics": 6,
+    "effect_systems": 2
+  },
+  "cross_domain_bridges": [
+    "FSOT.Formal.ProgrammingLanguageLawsPriors",
+    "FSOT.Formal.LinguisticsFormalPriors",
+    "FSOT.Formal.CodeGenomeStructurePriors",
+    "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+    "FSOT.Formal.ExternalOSSCodeGenomePriors"
+  ],
+  "linguistics_bridge_count": 25,
+  "code_genome_bridge_count": 13,
   "crosswalk_modules": [
     "FSOT.Formal.ProgrammingLanguageLawsPriors",
-    "FSOT.Formal.CodeGenomeStructurePriors"
+    "FSOT.Formal.CodeGenomeStructurePriors",
+    "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+    "FSOT.Formal.LinguisticsFormalPriors"
   ]
 }

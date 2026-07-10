@@ -1377,32 +1377,42 @@ def build_progress() -> dict:
             "tier": 44,
             "name": "Tier 44 — external OSS code-genome verification + programming language laws",
             "status": "complete"
-            if external_oss_bench.get("oss_sample_count", 0) >= 10
+            if external_oss_bench.get("oss_sample_count", 0) >= 20
             and external_oss_bench.get("pooled_median_error_pct") is not None
             and float(external_oss_bench.get("pooled_median_error_pct")) < 5.0
-            and pl_laws_bench.get("law_count", 0) >= 10
-            and pl_laws_bench.get("record_count", 0) >= 15
+            and pl_laws_bench.get("law_count", 0) >= 25
+            and pl_laws_bench.get("record_count", 0) >= 40
+            and int(pl_laws_bench.get("linguistics_bridge_count") or 0) >= 5
+            and int(pl_laws_bench.get("code_genome_bridge_count") or 0) >= 5
             and coupling_bench.get("node_count", 0) >= 151
             else "pending",
             "metrics": {
                 "external_oss_sample_count": external_oss_bench.get("oss_sample_count"),
+                "external_oss_language_count": len(external_oss_bench.get("language_distribution") or {}),
                 "external_oss_high_affinity_pairs": external_oss_bench.get("high_affinity_pair_count"),
                 "external_oss_pooled_median_error_pct": external_oss_bench.get("pooled_median_error_pct"),
                 "programming_language_law_count": pl_laws_bench.get("law_count"),
                 "programming_language_laws_records": pl_laws_bench.get("record_count"),
+                "linguistics_bridge_count": pl_laws_bench.get("linguistics_bridge_count"),
+                "code_genome_bridge_count": pl_laws_bench.get("code_genome_bridge_count"),
+                "oss_refresh_cadence_days": 7,
                 "coupling_node_count": coupling_bench.get("node_count"),
                 "external_cache_root": "G:/FSOT-PublicData/github_oss",
             },
             "artifacts": [
                 "scripts/ingest_github_oss_code_genome.py",
+                "scripts/schedule_github_oss_refresh.py",
                 "scripts/tier_i_programming_lib.py",
                 "scripts/build_tier_i_programming_benchmarks.py",
                 "data/github_oss_code_genome_manifest.yaml",
+                "data/github_oss_refresh_schedule.yaml",
+                "data/programming_language_crosswalk.yaml",
                 "vendor/math_generator/rules/PROGRAMMING_LANGUAGE_RULES.json",
                 "vendor/github_oss",
                 "G:/FSOT-PublicData/github_oss",
                 "FSOT.Formal.ExternalOSSCodeGenomePriors",
                 "FSOT.Formal.ProgrammingLanguageLawsPriors",
+                "FSOT.Formal.LinguisticsFormalPriors",
             ],
         },
     ]
@@ -1411,6 +1421,7 @@ def build_progress() -> dict:
         "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens",
         "Knowledge-base per-formula portable bundle",
         "Live MalwareBazaar + NVD CVE scheduled re-ingest",
+        "Expand OSS manifest with JVM/Android and WASM production repos",
         "Culinary arts fermentation + Maillard kinetics extension",
     ]
 
@@ -1430,7 +1441,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 44 programming — GitHub OSS code-genome cross-repo verification, PROGRAMMING_LANGUAGE_RULES corpus",
+        "current_position": "Tier 44 depth — 23-language OSS corpus, 30 PL laws, scheduled GitHub refresh, linguistics/code-genome cross-bridges",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

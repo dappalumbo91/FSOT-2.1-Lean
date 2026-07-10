@@ -12,24 +12,24 @@
       "stability": 0.0
     },
     {
-      "token": "extern",
-      "codon_index": 1,
-      "stability": 0.883577
-    },
-    {
       "token": "unsafe",
       "codon_index": 56,
       "stability": 0.0
     },
     {
-      "token": "match",
-      "codon_index": 25,
-      "stability": 0.741423
+      "token": "extern",
+      "codon_index": 1,
+      "stability": 0.883577
     },
     {
       "token": "trait",
       "codon_index": 14,
       "stability": 0.913298
+    },
+    {
+      "token": "match",
+      "codon_index": 25,
+      "stability": 0.741423
     },
     {
       "token": "const",
@@ -42,9 +42,9 @@
       "stability": 0.882048
     },
     {
-      "token": "pub",
-      "codon_index": 49,
-      "stability": 0.366423
+      "token": "mod",
+      "codon_index": 9,
+      "stability": 0.991423
     },
     {
       "token": "mut",
@@ -52,9 +52,9 @@
       "stability": 0.194548
     },
     {
-      "token": "mod",
-      "codon_index": 9,
-      "stability": 0.991423
+      "token": "pub",
+      "codon_index": 49,
+      "stability": 0.366423
     },
     {
       "token": "fn",
@@ -67,8 +67,8 @@
       "window_start": 0,
       "tokens": [
         "from_raw_parts",
-        "extern",
-        "unsafe"
+        "unsafe",
+        "extern"
       ],
       "mean_stability": 0.294526,
       "hole_type": "connective_failure"
@@ -76,28 +76,28 @@
     {
       "window_start": 1,
       "tokens": [
-        "extern",
         "unsafe",
-        "match"
+        "extern",
+        "trait"
       ],
-      "mean_stability": 0.541667,
+      "mean_stability": 0.598958,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 2,
       "tokens": [
-        "unsafe",
-        "match",
-        "trait"
+        "extern",
+        "trait",
+        "match"
       ],
-      "mean_stability": 0.551574,
+      "mean_stability": 0.846099,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 3,
       "tokens": [
-        "match",
         "trait",
+        "match",
         "const"
       ],
       "mean_stability": 0.741423,
@@ -106,11 +106,11 @@
     {
       "window_start": 4,
       "tokens": [
-        "trait",
+        "match",
         "const",
         "impl"
       ],
-      "mean_stability": 0.788298,
+      "mean_stability": 0.731006,
       "hole_type": "connective_failure"
     },
     {
@@ -118,27 +118,27 @@
       "tokens": [
         "const",
         "impl",
-        "pub"
+        "mod"
       ],
-      "mean_stability": 0.606006,
+      "mean_stability": 0.81434,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 6,
       "tokens": [
         "impl",
-        "pub",
+        "mod",
         "mut"
       ],
-      "mean_stability": 0.481006,
+      "mean_stability": 0.68934,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 7,
       "tokens": [
-        "pub",
+        "mod",
         "mut",
-        "mod"
+        "pub"
       ],
       "mean_stability": 0.517465,
       "hole_type": "connective_failure"
@@ -147,10 +147,10 @@
       "window_start": 8,
       "tokens": [
         "mut",
-        "mod",
+        "pub",
         "fn"
       ],
-      "mean_stability": 0.47059,
+      "mean_stability": 0.262256,
       "hole_type": "connective_failure"
     }
   ],
@@ -158,5 +158,7 @@
   "repo": "rust-lang/rust",
   "category": "memory_safe_std",
   "url": "https://raw.githubusercontent.com/rust-lang/rust/master/library/alloc/src/vec/mod.rs",
-  "source": "live"
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:56.465392+00:00",
+  "content_sha256": "b340400350f7aa8e614278b058a1eaee374841055c585c52beba9dea38701b0e"
 }

@@ -17,11 +17,6 @@
       "stability": 0.930452
     },
     {
-      "token": "return",
-      "codon_index": 49,
-      "stability": 0.366423
-    },
-    {
       "token": "struct",
       "codon_index": 44,
       "stability": 0.444548
@@ -30,6 +25,11 @@
       "token": "import",
       "codon_index": 5,
       "stability": 0.946077
+    },
+    {
+      "token": "return",
+      "codon_index": 49,
+      "stability": 0.366423
     },
     {
       "token": "defer",
@@ -53,27 +53,27 @@
       "tokens": [
         "interface",
         "package",
-        "return"
+        "struct"
       ],
-      "mean_stability": 0.502349,
+      "mean_stability": 0.528391,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 1,
       "tokens": [
         "package",
-        "return",
-        "struct"
+        "struct",
+        "import"
       ],
-      "mean_stability": 0.580474,
+      "mean_stability": 0.773692,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 2,
       "tokens": [
-        "return",
         "struct",
-        "import"
+        "import",
+        "return"
       ],
       "mean_stability": 0.585683,
       "hole_type": "connective_failure"
@@ -81,21 +81,21 @@
     {
       "window_start": 3,
       "tokens": [
-        "struct",
         "import",
+        "return",
         "defer"
       ],
-      "mean_stability": 0.773692,
+      "mean_stability": 0.747651,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 4,
       "tokens": [
-        "import",
+        "return",
         "defer",
         "func"
       ],
-      "mean_stability": 0.732026,
+      "mean_stability": 0.538808,
       "hole_type": "connective_failure"
     },
     {
@@ -113,5 +113,7 @@
   "repo": "kubernetes/client-go",
   "category": "cloud_native",
   "url": "https://raw.githubusercontent.com/kubernetes/client-go/master/rest/request.go",
-  "source": "live"
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:58.744680+00:00",
+  "content_sha256": "d6c270a6b408fe9266a5e828c9d6033019742d511fb7e4c1433beaa67e37e044"
 }

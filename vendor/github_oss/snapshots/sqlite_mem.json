@@ -3,7 +3,7 @@
   "language": "C",
   "exists": true,
   "codon_count": 6,
-  "hole_count": 3,
+  "hole_count": 4,
   "mean_stability": 0.761724,
   "codons": [
     {
@@ -17,24 +17,24 @@
       "stability": 0.475798
     },
     {
-      "token": "malloc",
-      "codon_index": 17,
-      "stability": 0.516423
-    },
-    {
       "token": "static",
       "codon_index": 6,
       "stability": 0.961702
     },
     {
-      "token": "void",
-      "codon_index": 18,
-      "stability": 0.850798
+      "token": "malloc",
+      "codon_index": 17,
+      "stability": 0.516423
     },
     {
       "token": "free",
       "codon_index": 8,
       "stability": 0.992952
+    },
+    {
+      "token": "void",
+      "codon_index": 18,
+      "stability": 0.850798
     }
   ],
   "holes": [
@@ -43,17 +43,17 @@
       "tokens": [
         "include",
         "return",
-        "malloc"
+        "static"
       ],
-      "mean_stability": 0.588298,
+      "mean_stability": 0.736724,
       "hole_type": "connective_failure"
     },
     {
       "window_start": 1,
       "tokens": [
         "return",
-        "malloc",
-        "static"
+        "static",
+        "malloc"
       ],
       "mean_stability": 0.651308,
       "hole_type": "connective_failure"
@@ -61,11 +61,21 @@
     {
       "window_start": 2,
       "tokens": [
-        "malloc",
         "static",
+        "malloc",
+        "free"
+      ],
+      "mean_stability": 0.823692,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "malloc",
+        "free",
         "void"
       ],
-      "mean_stability": 0.776308,
+      "mean_stability": 0.786724,
       "hole_type": "connective_failure"
     }
   ],
@@ -73,5 +83,7 @@
   "repo": "sqlite/sqlite",
   "category": "embedded_database",
   "url": "https://raw.githubusercontent.com/sqlite/sqlite/master/src/mem1.c",
-  "source": "live"
+  "source": "live",
+  "fetched_at": "2026-07-10T14:08:58.133786+00:00",
+  "content_sha256": "62e0fc49a1bf8b6e291952995a946065732ab014b6dba3d04b8fd904d824bdb7"
 }
