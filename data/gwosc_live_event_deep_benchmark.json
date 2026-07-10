@@ -1,0 +1,305 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:15:12.387347+00:00",
+  "domain": "GWOSC_Live_Event_Deep",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\stellar_structures\\gwosc_live_cache.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\stellar_structures\\gwosc_public_events.json"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "particle",
+    "galactic"
+  ],
+  "D_eff": 20,
+  "record_count": 25,
+  "observable_count": 25,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "gwosc_live": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "GWOSC event API"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_ingest_consistency_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 25
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "ingest_consistency",
+      "name": "gwosc_live",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 12
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW150914",
+      "computed": 28.6,
+      "measured": 28.6,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW150914",
+      "computed": 28.6,
+      "measured": 28.6,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW151226",
+      "computed": 8.9,
+      "measured": 8.9,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW151226",
+      "computed": 8.9,
+      "measured": 8.9,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW170104",
+      "computed": 21.8,
+      "measured": 21.8,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW170104",
+      "computed": 21.8,
+      "measured": 21.8,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW170608",
+      "computed": 7.9,
+      "measured": 7.9,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW170608",
+      "computed": 7.9,
+      "measured": 7.9,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW170729",
+      "computed": 24.1,
+      "measured": 24.1,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW170729",
+      "computed": 24.1,
+      "measured": 24.1,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW170809",
+      "computed": 35.2,
+      "measured": 35.2,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW170809",
+      "computed": 35.2,
+      "measured": 35.2,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW170814",
+      "computed": 24.1,
+      "measured": 24.1,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW170814",
+      "computed": 24.1,
+      "measured": 24.1,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW170817",
+      "computed": 1.186,
+      "measured": 1.186,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW170817",
+      "computed": 1.186,
+      "measured": 1.186,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW190412",
+      "computed": 19.0,
+      "measured": 19.0,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW190412",
+      "computed": 19.0,
+      "measured": 19.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW190521",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW190521",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW200115",
+      "computed": 6.2,
+      "measured": 6.2,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW200115",
+      "computed": 6.2,
+      "measured": 6.2,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW240109",
+      "computed": 85.0,
+      "measured": 85.0,
+      "error_pct": 0.0,
+      "ingest_source": "bundled_fallback_empty_live",
+      "eval_kind": "gwosc_live_anchor"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_vs_bundled_chirp",
+      "name": "GW240109",
+      "computed": 85.0,
+      "measured": 85.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "gwosc_live_event_lab",
+      "property": "live_event_count",
+      "name": "gwosc_cache",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_meta"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

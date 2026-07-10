@@ -1,0 +1,10 @@
+version: "1.0"
+tier: 58
+domains:
+  - GWOSC_Live_Event_Deep
+  - Stellar_Multiplicity_Live_Deep
+ingest: scripts/ingest_tier58_live_catalogs.py
+build: scripts/build_tier58_live_catalog_benchmarks.py
+lean: scripts/gen_tiers_57_58_lean.py
+live_api: https://www.gw-openscience.org/eventapi/json/
+bundled_fallback: vendor/stellar_structures/gwosc_public_events.json

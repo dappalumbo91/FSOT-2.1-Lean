@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T18:13:18.904695+00:00",
+  "generated_at": "2026-07-10T18:15:26.727687+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": false,
@@ -42,6 +42,7 @@
     "FSOT.Formal.CertifiedAgentQwenPriors",
     "FSOT.Formal.ChaosMediatedPhaseTransitionsPriors",
     "FSOT.Formal.ChemicalEngineeringExtensionPriors",
+    "FSOT.Formal.ChemicalStructureStabilityPanelPriors",
     "FSOT.Formal.CivilEngineeringExtensionPriors",
     "FSOT.Formal.ClimateSciencePriors",
     "FSOT.Formal.ClinicalMedicineExtensionPriors",
@@ -108,6 +109,7 @@
     "FSOT.Formal.GeologyStratigraphyExtensionPriors",
     "FSOT.Formal.GeomagnetismPriors",
     "FSOT.Formal.GraceCryospherePriors",
+    "FSOT.Formal.GWOSCLiveEventDeepPriors",
     "FSOT.Formal.HiggsBranchingPriors",
     "FSOT.Formal.HiggsMassPriors",
     "FSOT.Formal.HistoryExtensionPriors",
@@ -119,6 +121,7 @@
     "FSOT.Formal.IGEMSyntheticBiologyPriors",
     "FSOT.Formal.ImmunologyPriors",
     "FSOT.Formal.IntelligenceCompressionPriors",
+    "FSOT.Formal.InterdisciplinarySpineCrosswalkPriors",
     "FSOT.Formal.IntrinsicLLMValidatorsPriors",
     "FSOT.Formal.IonosphericChemistryCouplingPriors",
     "FSOT.Formal.KnowledgeBasePriors",
@@ -187,6 +190,7 @@
     "FSOT.Formal.PsychologyGapFillPriors",
     "FSOT.Formal.PubchemCompoundPropertiesPriors",
     "FSOT.Formal.PubChemStabilityPanelPriors",
+    "FSOT.Formal.PublishedFuelPropertyPanelPriors",
     "FSOT.Formal.PureMathematicsExtensionPriors",
     "FSOT.Formal.QuantumComputingGapFillPriors",
     "FSOT.Formal.QuantumMaterialsPriors",
@@ -211,6 +215,7 @@
     "FSOT.Formal.SpeleologyExtensionPriors",
     "FSOT.Formal.SportsBiomechanicsGapFillPriors",
     "FSOT.Formal.StellarMultiplicityCatalogPriors",
+    "FSOT.Formal.StellarMultiplicityLiveDeepPriors",
     "FSOT.Formal.StructureCalibrationPriors",
     "FSOT.Formal.StumpedObservablesPanelPriors",
     "FSOT.Formal.StumpedObservablesSpinePriors",
@@ -1340,6 +1345,13 @@
       "chemical_engineering_ext_beats_sota_headlines_pos",
       "chemical_engineering_ext_bundle"
     ],
+    "ChemicalStructureStabilityPanelPriors": [
+      "chemical_structure_stability_panel_observable_count_pos",
+      "chemical_structure_stability_panel_pooled_median_under_half_pct",
+      "chemical_structure_stability_panel_headline_median_under_half_pct",
+      "chemical_structure_stability_panel_beats_sota_headlines_pos",
+      "chemical_structure_stability_panel_bundle"
+    ],
     "CivilEngineeringExtensionPriors": [
       "civil_engineering_ext_observable_count_pos",
       "civil_engineering_ext_pooled_median_under_half_pct",
@@ -2020,6 +2032,13 @@
       "grace_cryosphere_match_le_total",
       "grace_cryosphere_bundle"
     ],
+    "GWOSCLiveEventDeepPriors": [
+      "gwosc_live_event_deep_observable_count_pos",
+      "gwosc_live_event_deep_pooled_median_under_half_pct",
+      "gwosc_live_event_deep_headline_median_under_half_pct",
+      "gwosc_live_event_deep_beats_sota_headlines_pos",
+      "gwosc_live_event_deep_bundle"
+    ],
     "HiggsBranchingPriors": [
       "higgs_compute_branching_count_pos",
       "higgs_branching_observable_count_pos",
@@ -2092,6 +2111,13 @@
       "fic_best_intelligence_score_positive",
       "fic_fertile_replay_match_rate_le_one",
       "intelligence_compression_priors_bundle"
+    ],
+    "InterdisciplinarySpineCrosswalkPriors": [
+      "interdisciplinary_spine_crosswalk_observable_count_pos",
+      "interdisciplinary_spine_crosswalk_pooled_median_under_half_pct",
+      "interdisciplinary_spine_crosswalk_headline_median_under_half_pct",
+      "interdisciplinary_spine_crosswalk_beats_sota_headlines_pos",
+      "interdisciplinary_spine_crosswalk_bundle"
     ],
     "IntrinsicLLMValidatorsPriors": [
       "intrinsic_llm_validators_observable_count_pos",
@@ -2606,6 +2632,13 @@
       "pubchem_stability_panel_beats_sota_headlines_pos",
       "pubchem_stability_panel_bundle"
     ],
+    "PublishedFuelPropertyPanelPriors": [
+      "published_fuel_property_panel_observable_count_pos",
+      "published_fuel_property_panel_pooled_median_under_half_pct",
+      "published_fuel_property_panel_headline_median_under_half_pct",
+      "published_fuel_property_panel_beats_sota_headlines_pos",
+      "published_fuel_property_panel_bundle"
+    ],
     "PureMathematicsExtensionPriors": [
       "pure_mathematics_ext_observable_count_pos",
       "pure_mathematics_ext_pooled_median_under_half_pct",
@@ -2760,6 +2793,13 @@
       "stellar_multiplicity_catalog_headline_median_under_half_pct",
       "stellar_multiplicity_catalog_beats_sota_headlines_pos",
       "stellar_multiplicity_catalog_bundle"
+    ],
+    "StellarMultiplicityLiveDeepPriors": [
+      "stellar_multiplicity_live_deep_observable_count_pos",
+      "stellar_multiplicity_live_deep_pooled_median_under_half_pct",
+      "stellar_multiplicity_live_deep_headline_median_under_half_pct",
+      "stellar_multiplicity_live_deep_beats_sota_headlines_pos",
+      "stellar_multiplicity_live_deep_bundle"
     ],
     "StructureCalibrationPriors": [
       "structure_calibration_residue_count_pos",
@@ -3041,8 +3081,8 @@
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
-  "formal_module_count": 236,
-  "lean_target_count": 237,
+  "formal_module_count": 241,
+  "lean_target_count": 242,
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",

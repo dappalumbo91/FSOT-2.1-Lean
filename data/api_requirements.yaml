@@ -171,6 +171,18 @@ api_sources:
       - scripts/build_tier56_genetics_benchmarks.py
     lean: scripts/gen_tiers_53_56_lean.py
 
+  tier57_58_expansion:
+    description: "Tiers 57–58 — interdisciplinary spine + live GWOSC ingest"
+    manifests:
+      - data/tier57_interdisciplinary_manifest.yaml
+      - data/tier58_live_catalog_manifest.yaml
+    build:
+      - scripts/build_tier57_interdisciplinary_benchmarks.py
+      - scripts/build_tier58_live_catalog_benchmarks.py
+    ingest: scripts/ingest_tier58_live_catalogs.py
+    lean: scripts/gen_tiers_57_58_lean.py
+    live_api: https://www.gw-openscience.org/eventapi/json/
+
   astrophysics_catalogs:
     description: "Tier 58 live ingest — public catalogs for stellar/planetary/galactic structures"
     sources:

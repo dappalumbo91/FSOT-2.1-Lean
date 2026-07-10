@@ -1,0 +1,406 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:15:21.387099+00:00",
+  "domain": "Published_Fuel_Property_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "vendor/fuel/public_fuel_property_catalog.json"
+  ],
+  "maps_to_lean": [
+    "energy",
+    "chemical",
+    "material"
+  ],
+  "D_eff": 16,
+  "record_count": 31,
+  "observable_count": 31,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "published_fuel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NIST/CRC fuel tables"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fuel_panel_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 31
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fuel_panel",
+      "name": "published_fuel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 31
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "lhv_mj_kg",
+      "name": "hydrogen",
+      "formula": "H2",
+      "computed": 120.0,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "density_kg_m3",
+      "name": "hydrogen",
+      "formula": "H2",
+      "computed": 0.0899,
+      "measured": 0.0899,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "formula_mass_g_mol",
+      "name": "hydrogen",
+      "computed": 2.016,
+      "measured": 2.016,
+      "error_pct": 0.0,
+      "eval_kind": "formula_anchor"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "lhv_mj_kg",
+      "name": "methane",
+      "formula": "CH4",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "density_kg_m3",
+      "name": "methane",
+      "formula": "CH4",
+      "computed": 0.668,
+      "measured": 0.668,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "formula_mass_g_mol",
+      "name": "methane",
+      "computed": 16.043,
+      "measured": 16.043,
+      "error_pct": 0.0,
+      "eval_kind": "formula_anchor"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "lhv_mj_kg",
+      "name": "ethanol",
+      "formula": "C2H6O",
+      "computed": 26.8,
+      "measured": 26.8,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "density_kg_m3",
+      "name": "ethanol",
+      "formula": "C2H6O",
+      "computed": 789.0,
+      "measured": 789.0,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "formula_mass_g_mol",
+      "name": "ethanol",
+      "computed": 46.069,
+      "measured": 46.069,
+      "error_pct": 0.0,
+      "eval_kind": "formula_anchor"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "lhv_mj_kg",
+      "name": "gasoline",
+      "formula": "C8H18",
+      "computed": 44.4,
+      "measured": 44.4,
+      "error_pct": 0.0,
+      "source": "CRC",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "density_kg_m3",
+      "name": "gasoline",
+      "formula": "C8H18",
+      "computed": 737.0,
+      "measured": 737.0,
+      "error_pct": 0.0,
+      "source": "CRC",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "formula_mass_g_mol",
+      "name": "gasoline",
+      "computed": 114.232,
+      "measured": 114.232,
+      "error_pct": 0.0,
+      "eval_kind": "formula_anchor"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "lhv_mj_kg",
+      "name": "diesel",
+      "formula": "C12H23",
+      "computed": 43.0,
+      "measured": 43.0,
+      "error_pct": 0.0,
+      "source": "CRC",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "density_kg_m3",
+      "name": "diesel",
+      "formula": "C12H23",
+      "computed": 832.0,
+      "measured": 832.0,
+      "error_pct": 0.0,
+      "source": "CRC",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "formula_mass_g_mol",
+      "name": "diesel",
+      "computed": 167.316,
+      "measured": 167.316,
+      "error_pct": 0.0,
+      "eval_kind": "formula_anchor"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "lhv_mj_kg",
+      "name": "lpg",
+      "formula": "C3H8",
+      "computed": 46.4,
+      "measured": 46.4,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "density_kg_m3",
+      "name": "lpg",
+      "formula": "C3H8",
+      "computed": 493.0,
+      "measured": 493.0,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "formula_mass_g_mol",
+      "name": "lpg",
+      "computed": 44.097,
+      "measured": 44.097,
+      "error_pct": 0.0,
+      "eval_kind": "formula_anchor"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "lhv_mj_kg",
+      "name": "methanol",
+      "formula": "CH4O",
+      "computed": 19.9,
+      "measured": 19.9,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "density_kg_m3",
+      "name": "methanol",
+      "formula": "CH4O",
+      "computed": 792.0,
+      "measured": 792.0,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "formula_mass_g_mol",
+      "name": "methanol",
+      "computed": 32.042,
+      "measured": 32.042,
+      "error_pct": 0.0,
+      "eval_kind": "formula_anchor"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "lhv_mj_kg",
+      "name": "biodiesel",
+      "formula": "C19H36O2",
+      "computed": 37.0,
+      "measured": 37.0,
+      "error_pct": 0.0,
+      "source": "literature",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "density_kg_m3",
+      "name": "biodiesel",
+      "formula": "C19H36O2",
+      "computed": 880.0,
+      "measured": 880.0,
+      "error_pct": 0.0,
+      "source": "literature",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "formula_mass_g_mol",
+      "name": "biodiesel",
+      "computed": 296.495,
+      "measured": 296.495,
+      "error_pct": 0.0,
+      "eval_kind": "formula_anchor"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "lhv_mj_kg",
+      "name": "kerosene",
+      "formula": "C12H26",
+      "computed": 43.1,
+      "measured": 43.1,
+      "error_pct": 0.0,
+      "source": "CRC",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "density_kg_m3",
+      "name": "kerosene",
+      "formula": "C12H26",
+      "computed": 810.0,
+      "measured": 810.0,
+      "error_pct": 0.0,
+      "source": "CRC",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "formula_mass_g_mol",
+      "name": "kerosene",
+      "computed": 170.34,
+      "measured": 170.34,
+      "error_pct": 0.0,
+      "eval_kind": "formula_anchor"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "lhv_mj_kg",
+      "name": "ammonia",
+      "formula": "H3N",
+      "computed": 18.6,
+      "measured": 18.6,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "density_kg_m3",
+      "name": "ammonia",
+      "formula": "H3N",
+      "computed": 682.0,
+      "measured": 682.0,
+      "error_pct": 0.0,
+      "source": "NIST",
+      "eval_kind": "published_handbook_anchor",
+      "note": "No novel fuel discovery \u2014 published property relay"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "formula_mass_g_mol",
+      "name": "ammonia",
+      "computed": 17.031,
+      "measured": 17.031,
+      "error_pct": 0.0,
+      "eval_kind": "formula_anchor"
+    },
+    {
+      "lab": "published_fuel_property_lab",
+      "property": "energy_scalar",
+      "name": "fsot_Thermodynamics",
+      "computed": 0.786975,
+      "measured": 0.786975,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

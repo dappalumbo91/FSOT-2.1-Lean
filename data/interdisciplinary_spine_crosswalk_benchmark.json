@@ -1,0 +1,225 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:15:12.088900+00:00",
+  "domain": "Interdisciplinary_Spine_Crosswalk",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier52-56_panels",
+    "domain_coupling_simulation_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "chemical",
+    "biological",
+    "material",
+    "particle"
+  ],
+  "D_eff": 17,
+  "record_count": 15,
+  "observable_count": 15,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "interdisciplinary": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "multi-domain baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_spine_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 15
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "spine",
+      "name": "interdisciplinary",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 15
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "astrophysical_structure_crosswalk",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 34,
+      "domain": "Astrophysical_Structure_Crosswalk",
+      "eval_kind": "spine_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "stellar_multiplicity_catalog",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 68,
+      "domain": "Stellar_Multiplicity_Catalog",
+      "eval_kind": "spine_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "compact_object_binary_events",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 40,
+      "domain": "Compact_Object_Binary_Events",
+      "eval_kind": "spine_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "galactic_structure_sample",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 101,
+      "domain": "Galactic_Structure_Sample",
+      "eval_kind": "spine_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "solar_system_structure_deep",
+      "computed": 0.009693,
+      "measured": 0.009693,
+      "error_pct": 0.0,
+      "record_count": 50,
+      "domain": "Solar_System_Structure_Deep",
+      "eval_kind": "spine_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "exoplanet_system_architecture",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 882,
+      "domain": "Exoplanet_System_Architecture",
+      "eval_kind": "spine_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "pubchem_stability_panel",
+      "computed": 0.002424,
+      "measured": 0.002424,
+      "error_pct": 0.0,
+      "record_count": 59,
+      "domain": "PubChem_Stability_Panel",
+      "eval_kind": "spine_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "materials_genome_crosswalk",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 38,
+      "domain": "Materials_Genome_Crosswalk",
+      "eval_kind": "spine_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "uniprot_structure_annotations_deep",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 121,
+      "domain": "UniProt_Structure_Annotations_Deep",
+      "eval_kind": "spine_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "igem_parts_expanded",
+      "computed": 7.2e-05,
+      "measured": 7.2e-05,
+      "error_pct": 0.0,
+      "record_count": 111,
+      "domain": "IGEM_Parts_Expanded",
+      "eval_kind": "spine_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "domain_scalar",
+      "name": "Astronomy",
+      "computed": 0.89846,
+      "measured": 0.89846,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "domain_scalar",
+      "name": "Chemistry",
+      "computed": 0.407884,
+      "measured": 0.407884,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "domain_scalar",
+      "name": "Biology",
+      "computed": 0.444725,
+      "measured": 0.444725,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "domain_scalar",
+      "name": "Planetary_Science",
+      "computed": 0.767179,
+      "measured": 0.767179,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "interdisciplinary_spine_lab",
+      "property": "coupling_node_count",
+      "name": "domain_coupling_simulation",
+      "computed": 183.0,
+      "measured": 183.0,
+      "error_pct": 0.0,
+      "eval_kind": "coupling_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 7,
+    "classifier_correct": 7,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

@@ -1,5 +1,5 @@
 # FSOT interdisciplinary expansion roadmap — public-data first, preregister before novel claims.
-version: "1.1"
+version: "1.2"
 updated: "2026-07-10"
 policy: >
   Ship verification against published observables in-repo. Reserve novel material,
@@ -25,25 +25,27 @@ completed_tiers:
   tier_56:
     - UniProt_Structure_Annotations_Deep
     - IGEM_Parts_Expanded
+  tier_57:
+    - Interdisciplinary_Spine_Crosswalk
+    - Chemical_Structure_Stability_Panel
+    - Published_Fuel_Property_Panel
+  tier_58:
+    - GWOSC_Live_Event_Deep
+    - Stellar_Multiplicity_Live_Deep
 
 priority_queue:
-  interdisciplinary_simulation:
-    tier: 57
-    status: research
+  tier_59_simulation_scaffold:
+    status: planned
     proprietary_gate: preregistered_predictions_manifest.yaml
     channels:
-      - material_emergence_scaffold
-      - fuel_candidate_screening
-      - chemical_structure_stability
-    note: >
-      FSOT can screen candidate structures in silico; public repo exports only
-      validation against NIST/PubChem/RCSB anchors until preregistered release.
+      - material_emergence_in_silico
+      - fuel_candidate_screening_prereg
+    note: "In-silico screens stay local until preregistered release"
 
-  live_ingest_depth:
-    tier: 58
+  tier_60_live_depth:
     status: planned
-    sources: [simbad_tap, vizier_wds, gwosc, gaia_dr3_tap]
-    note: "Optional live fetch scripts atop bundled vendor summaries"
+    sources: [simbad_tap, vizier_wds, gaia_dr3_tap]
+    note: "SIMBAD/WDS/Gaia live ingest atop bundled summaries"
 
 discoverability_principles:
   - "Public repo = reproducible verification against published data"

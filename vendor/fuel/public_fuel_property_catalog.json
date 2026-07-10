@@ -1,0 +1,17 @@
+{
+  "catalog_version": "1.0",
+  "disclaimer": "Published fuel properties from NIST WebBook / engineering handbooks — verification anchors only",
+  "authority": "NIST Chemistry WebBook, CRC Handbook summaries",
+  "fuels": [
+    {"id": "hydrogen", "formula": "H2", "lhv_mj_kg": 120.0, "density_kg_m3": 0.0899, "source": "NIST"},
+    {"id": "methane", "formula": "CH4", "lhv_mj_kg": 50.0, "density_kg_m3": 0.668, "source": "NIST"},
+    {"id": "ethanol", "formula": "C2H6O", "lhv_mj_kg": 26.8, "density_kg_m3": 789.0, "source": "NIST"},
+    {"id": "gasoline", "formula": "C8H18", "lhv_mj_kg": 44.4, "density_kg_m3": 737.0, "source": "CRC"},
+    {"id": "diesel", "formula": "C12H23", "lhv_mj_kg": 43.0, "density_kg_m3": 832.0, "source": "CRC"},
+    {"id": "lpg", "formula": "C3H8", "lhv_mj_kg": 46.4, "density_kg_m3": 493.0, "source": "NIST"},
+    {"id": "methanol", "formula": "CH4O", "lhv_mj_kg": 19.9, "density_kg_m3": 792.0, "source": "NIST"},
+    {"id": "biodiesel", "formula": "C19H36O2", "lhv_mj_kg": 37.0, "density_kg_m3": 880.0, "source": "literature"},
+    {"id": "kerosene", "formula": "C12H26", "lhv_mj_kg": 43.1, "density_kg_m3": 810.0, "source": "CRC"},
+    {"id": "ammonia", "formula": "H3N", "lhv_mj_kg": 18.6, "density_kg_m3": 682.0, "source": "NIST"}
+  ]
+}

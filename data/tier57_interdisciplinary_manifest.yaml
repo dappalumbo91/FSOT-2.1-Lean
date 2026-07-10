@@ -1,0 +1,12 @@
+version: "1.0"
+tier: 57
+domains:
+  - Interdisciplinary_Spine_Crosswalk
+  - Chemical_Structure_Stability_Panel
+  - Published_Fuel_Property_Panel
+build: scripts/build_tier57_interdisciplinary_benchmarks.py
+lean: scripts/gen_tiers_57_58_lean.py
+proprietary_gate: data/preregistered_predictions_manifest.yaml
+bundled:
+  - vendor/fuel/public_fuel_property_catalog.json
+  - vendor/public_data/pubchem/pubchem_summary.json

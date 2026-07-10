@@ -2143,6 +2143,73 @@ extension_domains:
     lean_module: FSOT.Formal.IGEMPartsExpandedPriors
     note: "iGEM synthetic biology + live FASTA + biology strict bridge expanded"
 
+  Interdisciplinary_Spine_Crosswalk:
+    tier: 57
+    D_eff: 17
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [astronomical, chemical, biological, material, particle]
+    build_script: scripts/build_tier57_interdisciplinary_benchmarks.py
+    manifest: data/tier57_interdisciplinary_manifest.yaml
+    benchmark_data: data/interdisciplinary_spine_crosswalk_benchmark.json
+    lean_module: FSOT.Formal.InterdisciplinarySpineCrosswalkPriors
+    note: "Tier 52–56 panel spine + domain scalars + coupling anchor"
+
+  Chemical_Structure_Stability_Panel:
+    tier: 57
+    D_eff: 14
+    delta_psi: 0.82
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [chemical, material, particle, electron]
+    build_script: scripts/build_tier57_interdisciplinary_benchmarks.py
+    manifest: data/tier57_interdisciplinary_manifest.yaml
+    benchmark_data: data/chemical_structure_stability_panel_benchmark.json
+    lean_module: FSOT.Formal.ChemicalStructureStabilityPanelPriors
+    note: "PubChem formula-mass + NIST + SMILES topology — no novel stability claims"
+
+  Published_Fuel_Property_Panel:
+    tier: 57
+    D_eff: 16
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, chemical, material]
+    build_script: scripts/build_tier57_interdisciplinary_benchmarks.py
+    manifest: data/tier57_interdisciplinary_manifest.yaml
+    benchmark_data: data/published_fuel_property_panel_benchmark.json
+    lean_module: FSOT.Formal.PublishedFuelPropertyPanelPriors
+    note: "NIST/CRC published LHV and density — novel fuel discovery preregistered separately"
+
+  GWOSC_Live_Event_Deep:
+    tier: 58
+    D_eff: 20
+    delta_psi: 0.92
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, particle, galactic]
+    ingest_script: scripts/ingest_tier58_live_catalogs.py
+    build_script: scripts/build_tier58_live_catalog_benchmarks.py
+    manifest: data/tier58_live_catalog_manifest.yaml
+    benchmark_data: data/gwosc_live_event_deep_benchmark.json
+    lean_module: FSOT.Formal.GWOSCLiveEventDeepPriors
+    note: "GWOSC live ingest with bundled fallback — live vs bundled consistency"
+
+  Stellar_Multiplicity_Live_Deep:
+    tier: 58
+    D_eff: 19
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic]
+    ingest_script: scripts/ingest_tier58_live_catalogs.py
+    build_script: scripts/build_tier58_live_catalog_benchmarks.py
+    manifest: data/tier58_live_catalog_manifest.yaml
+    benchmark_data: data/stellar_multiplicity_live_deep_benchmark.json
+    lean_module: FSOT.Formal.StellarMultiplicityLiveDeepPriors
+    note: "Tier 53 stellar catalog + live ingest metadata depth"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

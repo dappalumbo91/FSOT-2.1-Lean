@@ -1,0 +1,382 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:15:12.063819+00:00",
+  "domain": "Chemical_Structure_Stability_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "pubchem_summary.json",
+    "nist_codata_constants_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "chemical",
+    "material",
+    "particle",
+    "electron"
+  ],
+  "D_eff": 14,
+  "record_count": 32,
+  "observable_count": 32,
+  "median_error_pct": 0.00206,
+  "pooled_median_error_pct": 0.00206,
+  "headline_median_error_pct": 0.0024238898584426276,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "chemical_stability": {
+        "sota_typical_error_pct": 2.0,
+        "sota_model": "PubChem/NIST"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_formula_mass_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.00206,
+      "measured": 0.0,
+      "error_pct": 0.00206,
+      "observable_count": 32
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "formula_mass",
+      "name": "chemical_stability",
+      "computed": 0.002424,
+      "measured": 0.0,
+      "error_pct": 0.0024238898584426276,
+      "observable_count": 25
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "2244",
+      "formula": "C9H8O4",
+      "computed": 180.159,
+      "measured": 180.16,
+      "error_pct": 0.000555,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "702",
+      "formula": "C2H6O",
+      "computed": 46.069,
+      "measured": 46.07,
+      "error_pct": 0.002171,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "3672",
+      "formula": "C13H18O2",
+      "computed": 206.285,
+      "measured": 206.28,
+      "error_pct": 0.002424,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "2519",
+      "formula": "C8H10N4O2",
+      "computed": 194.194,
+      "measured": 194.19,
+      "error_pct": 0.00206,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "5280453",
+      "formula": "C27H44O3",
+      "computed": 416.646,
+      "measured": 416.6,
+      "error_pct": 0.011042,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "54670067",
+      "formula": "C6H8O6",
+      "computed": 176.124,
+      "measured": 176.12,
+      "error_pct": 0.002271,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "962",
+      "formula": "H2O",
+      "computed": 18.015,
+      "measured": 18.015,
+      "error_pct": 0.0,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "5957",
+      "formula": "C10H16N5O13P3",
+      "computed": 507.182,
+      "measured": 507.18,
+      "error_pct": 0.000394,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "2249",
+      "formula": "C14H22N2O3",
+      "computed": 266.341,
+      "measured": 266.34,
+      "error_pct": 0.000375,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "3676",
+      "formula": "C14H22N2O",
+      "computed": 234.343,
+      "measured": 234.34,
+      "error_pct": 0.00128,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "1983",
+      "formula": "C8H9NO2",
+      "computed": 151.165,
+      "measured": 151.16,
+      "error_pct": 0.003308,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "5280343",
+      "formula": "C15H10O7",
+      "computed": 302.238,
+      "measured": 302.23,
+      "error_pct": 0.002647,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "5284373",
+      "formula": "C62H111N11O12",
+      "computed": 1202.635,
+      "measured": 1202.6,
+      "error_pct": 0.00291,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "5280961",
+      "formula": "C15H10O5",
+      "computed": 270.24,
+      "measured": 270.24,
+      "error_pct": 0.0,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "4091",
+      "formula": "C4H11N5",
+      "computed": 129.167,
+      "measured": 129.16,
+      "error_pct": 0.00542,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "31703",
+      "formula": "C27H29NO11",
+      "computed": 543.525,
+      "measured": 543.5,
+      "error_pct": 0.0046,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "2723949",
+      "formula": "C2H5NS",
+      "computed": 75.129,
+      "measured": 75.14,
+      "error_pct": 0.014639,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "5702160",
+      "formula": "C8H15N7O2S3",
+      "computed": 337.435,
+      "measured": 337.5,
+      "error_pct": 0.019259,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "65064",
+      "formula": "C22H18O11",
+      "computed": 458.375,
+      "measured": 458.4,
+      "error_pct": 0.005454,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "5288826",
+      "formula": "C17H19NO3",
+      "computed": 285.343,
+      "measured": 285.34,
+      "error_pct": 0.001051,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "445858",
+      "formula": "C10H10O4",
+      "computed": 194.186,
+      "measured": 194.18,
+      "error_pct": 0.00309,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "5282379",
+      "formula": "C20H28O2",
+      "computed": 300.442,
+      "measured": 300.4,
+      "error_pct": 0.013981,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "5284616",
+      "formula": "C51H79NO13",
+      "computed": 914.187,
+      "measured": 914.2,
+      "error_pct": 0.001422,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "5360515",
+      "formula": "C20H23NO4",
+      "computed": 341.407,
+      "measured": 341.4,
+      "error_pct": 0.00205,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "formula_mass_closure",
+      "name": "2724385",
+      "formula": "C41H64O14",
+      "computed": 780.949,
+      "measured": 780.9,
+      "error_pct": 0.006275,
+      "eval_kind": "pubchem_anchor"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "speed of light in vacuum",
+      "computed": 299792458.0,
+      "measured": 299792458.0,
+      "error_pct": 0.0,
+      "within_band": true,
+      "eval_kind": "nist_relay"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "Planck constant",
+      "computed": 6.62607015e-34,
+      "measured": 6.62607015e-34,
+      "error_pct": 0.0,
+      "within_band": true,
+      "eval_kind": "nist_relay"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "atomic mass constant",
+      "computed": 1.66053906892e-27,
+      "measured": 1.6605390666e-27,
+      "error_pct": 1.3971366335632365e-07,
+      "within_band": true,
+      "eval_kind": "nist_relay"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "electron mass",
+      "computed": 9.1093837139e-31,
+      "measured": 9.1093837015e-31,
+      "error_pct": 1.361233584261938e-07,
+      "within_band": true,
+      "eval_kind": "nist_relay"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "fine-structure constant",
+      "computed": 0.0072973525643,
+      "measured": 0.0072973525643,
+      "error_pct": 0.0,
+      "within_band": true,
+      "eval_kind": "nist_relay"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "proton mass",
+      "computed": 1.67262192595e-27,
+      "measured": 1.67262192595e-27,
+      "error_pct": 0.0,
+      "within_band": true,
+      "eval_kind": "nist_relay"
+    },
+    {
+      "lab": "chemical_structure_stability_lab",
+      "property": "smiles_mapped_records",
+      "name": "FSOT_SMILES_Lab",
+      "computed": 1470.0,
+      "measured": 1470.0,
+      "error_pct": 0.0,
+      "eval_kind": "smiles_topology"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0020550000000000004,
+    "max_scalar_error_pct": 0.019259,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}
