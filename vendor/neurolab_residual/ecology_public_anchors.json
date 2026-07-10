@@ -1,0 +1,16 @@
+{
+  "source": "West-Brown-Enquist (1997), Kleiber (1932), MacArthur-Wilson (1967) — public ecology dimensionless anchors",
+  "formula_branch": "term1.growth_term",
+  "observables": [
+    {"id": "kleiber_exponent", "name": "Kleiber's law exponent (3/4)", "value": 0.75},
+    {"id": "wbe_quarter_power", "name": "WBE quarter-power scaling", "value": 0.25},
+    {"id": "heart_rate_allometry", "name": "Heart rate allometry exp", "value": -0.25},
+    {"id": "species_area_exponent", "name": "Species-area exponent z", "value": 0.25},
+    {"id": "shannon_diversity", "name": "Shannon diversity H (typical)", "value": 2.195},
+    {"id": "simpson_diversity", "name": "Simpson diversity 1-D", "value": 1.195},
+    {"id": "lotka_volterra_period", "name": "Lotka-Volterra period ratio", "value": 6.2832},
+    {"id": "predator_prey_ratio", "name": "Predator/prey biomass ratio", "value": 0.577},
+    {"id": "phyllotaxis_angle", "name": "Phyllotaxis divergence angle", "value": 2.3999},
+    {"id": "taylors_power_law", "name": "Taylor's power law b (eco)", "value": 2.0}
+  ]
+}

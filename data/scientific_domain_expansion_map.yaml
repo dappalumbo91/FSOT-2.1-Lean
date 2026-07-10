@@ -1,8 +1,8 @@
-generated_at: '2026-07-10T12:04:02.908427+00:00'
+generated_at: '2026-07-10T18:32:51.210979+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 107
-  total_scientific_domains_covered: 143
+  extension_domains: 195
+  total_scientific_domains_covered: 231
   total_empirical_records: 306680
   domains_target_band_2pct: 35
   domains_sign_mismatch: 0
@@ -12,7 +12,7 @@ summary:
     C_thin: 0
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 177
+  lean_formal_modules: 265
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -436,7 +436,7 @@ extension_domains:
   lean_module: FSOT.Formal.ParticlePhysicsPriors
 - domain: Higgs_Mass
   tier: 17
-  record_count: 2
+  record_count: 9
   median_error_pct: 0.03990518384182655
   coverage_tier: C_thin
   lean_module: FSOT.Formal.HiggsMassPriors
@@ -545,7 +545,7 @@ extension_domains:
 - domain: Neuroimmunology
   tier: 26
   record_count: 92
-  median_error_pct: 0.100759
+  median_error_pct: 0.07247823276673726
   coverage_tier: B_verified
   lean_module: FSOT.Formal.NeuroimmunologyPriors
 - domain: Synthetic_Biology
@@ -658,8 +658,8 @@ extension_domains:
   lean_module: FSOT.Formal.SportsBiomechanicsGapFillPriors
 - domain: Architecture_Building_Science
   tier: 34
-  record_count: 83
-  median_error_pct: 0.0
+  record_count: 43
+  median_error_pct: 0.07869745016115058
   coverage_tier: B_verified
   lean_module: FSOT.Formal.ArchitectureBuildingScienceGapFillPriors
 - domain: Geology_Stratigraphy
@@ -694,7 +694,7 @@ extension_domains:
   lean_module: FSOT.Formal.ChemicalEngineeringExtensionPriors
 - domain: Environmental_Engineering
   tier: 35
-  record_count: 18416
+  record_count: 1120
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.EnvironmentalEngineeringExtensionPriors
@@ -952,8 +952,8 @@ extension_domains:
   lean_module: FSOT.Formal.CardiologyExtensionPriors
 - domain: Civil_Engineering
   tier: 41
-  record_count: 181
-  median_error_pct: 0.033525988073647546
+  record_count: 201
+  median_error_pct: 0.021151317926568283
   coverage_tier: A_strong
   lean_module: FSOT.Formal.CivilEngineeringExtensionPriors
 - domain: Mechanical_Engineering
@@ -976,8 +976,8 @@ extension_domains:
   lean_module: FSOT.Formal.NeuroeconomicsExtensionPriors
 - domain: Paleoclimate
   tier: 41
-  record_count: 90
-  median_error_pct: 0.0
+  record_count: 40
+  median_error_pct: 0.015015854077432778
   coverage_tier: B_verified
   lean_module: FSOT.Formal.PaleoclimateExtensionPriors
 - domain: Speleology
@@ -1024,7 +1024,7 @@ extension_domains:
   lean_module: FSOT.Formal.SupplyChainLogisticsExtensionPriors
 - domain: Domain_Coupling_Simulation
   tier: 42
-  record_count: 2448
+  record_count: 6138
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.DomainCouplingSimulationPriors
@@ -1034,6 +1034,534 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.FormulaCorpusClosurePriors
+- domain: Cryptography_Technology
+  tier: 43
+  record_count: 44
+  median_error_pct: 0.047520672006218234
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.CryptographyTechnologyPriors
+- domain: Network_Internet_Protocols
+  tier: 43
+  record_count: 22
+  median_error_pct: 0.010337117254355377
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.NetworkInternetProtocolsPriors
+- domain: Malware_Threat_Intelligence
+  tier: 43
+  record_count: 301
+  median_error_pct: 0.03062212293865052
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.MalwareThreatIntelligencePriors
+- domain: Secure_Software_Engineering
+  tier: 43
+  record_count: 59
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.SecureSoftwareEngineeringPriors
+- domain: Code_Genome_Structure
+  tier: 43
+  record_count: 205
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.CodeGenomeStructurePriors
+- domain: Zero_Day_Risk_Evaluator
+  tier: 43
+  record_count: 26
+  median_error_pct: 0.010337117254355377
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ZeroDayRiskEvaluatorPriors
+- domain: External_OSS_Code_Genome
+  tier: 44
+  record_count: 166
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.ExternalOSSCodeGenomePriors
+- domain: Programming_Language_Laws
+  tier: 44
+  record_count: 77
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ProgrammingLanguageLawsPriors
+- domain: Formula_Branching_Fractal
+  tier: 45
+  record_count: 152
+  median_error_pct: 0.038016537604977536
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.FormulaBranchingFractalPriors
+- domain: Mechanistic_Coupling
+  tier: 45
+  record_count: 116
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.MechanisticCouplingPriors
+- domain: CVE_Codon_Hole_Falsification
+  tier: 45
+  record_count: 29
+  median_error_pct: 0.009186636881580057
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.CVECodonHoleFalsificationPriors
+- domain: Theory_Completeness_Spine
+  tier: 45
+  record_count: 6
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.TheoryCompletenessSpinePriors
+- domain: Fractal_Constant_Recursion
+  tier: 46
+  record_count: 21
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.FractalConstantRecursionPriors
+- domain: Preregistered_Predictions
+  tier: 46
+  record_count: 8
+  median_error_pct: 0.02009823784840936
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.PreregisteredPredictionsPriors
+- domain: Portable_Clone_Verify
+  tier: 46
+  record_count: 166
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.PortableCloneVerifyPriors
+- domain: Observer_Channel_Derivation
+  tier: 46
+  record_count: 126
+  median_error_pct: 0.052510282019891545
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.ObserverChannelDerivationPriors
+- domain: Adversarial_Fractal_Break_Tests
+  tier: 46
+  record_count: 13
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.AdversarialFractalBreakPriors
+- domain: ToE_Gap_Closure_Spine
+  tier: 46
+  record_count: 7
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.ToEGapClosureSpinePriors
+- domain: Acoustic_Resonance_Materials
+  tier: 47
+  record_count: 29
+  median_error_pct: 0.008381497018412922
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.AcousticResonanceMaterialsPriors
+- domain: Chaos_Mediated_Phase_Transitions
+  tier: 47
+  record_count: 21
+  median_error_pct: 0.03147898006445882
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ChaosMediatedPhaseTransitionsPriors
+- domain: Phi_Morphogenetic_Scaling
+  tier: 47
+  record_count: 327
+  median_error_pct: 0.0565
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.PhiMorphogeneticScalingPriors
+- domain: Ionospheric_Chemistry_Coupling
+  tier: 47
+  record_count: 85
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.IonosphericChemistryCouplingPriors
+- domain: Energy_AI_Orbital_Bridge
+  tier: 47
+  record_count: 48
+  median_error_pct: 0.02754410755640979
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.EnergyAIOrbitalBridgePriors
+- domain: Consciousness_Galactic_Orbital_Bridge
+  tier: 47
+  record_count: 47
+  median_error_pct: 0.036757197413939124
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ConsciousnessGalacticOrbitalBridgePriors
+- domain: Energy_Neural_Orbital_Bridge
+  tier: 47
+  record_count: 48
+  median_error_pct: 0.01800266870179516
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.EnergyNeuralOrbitalBridgePriors
+- domain: Particle_Neural_Orbital_Bridge
+  tier: 47
+  record_count: 48
+  median_error_pct: 0.03326447040434832
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ParticleNeuralOrbitalBridgePriors
+- domain: Proof_Carrying_Code_Genome
+  tier: 47
+  record_count: 25
+  median_error_pct: 0.0051685586271776884
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ProofCarryingCodeGenomePriors
+- domain: Domain_Orbital_Predictions
+  tier: 48
+  record_count: 12
+  median_error_pct: 0.02754410755640979
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.DomainOrbitalPredictionsPriors
+- domain: Medical_Galactic_Orbital_Bridge
+  tier: 48
+  record_count: 49
+  median_error_pct: 0.01071774302852102
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.MedicalGalacticOrbitalBridgePriors
+- domain: AI_Galactic_Orbital_Bridge
+  tier: 48
+  record_count: 45
+  median_error_pct: 0.0051685586271776884
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.AIGalacticOrbitalBridgePriors
+- domain: Neural_Galactic_Orbital_Bridge
+  tier: 48
+  record_count: 49
+  median_error_pct: 0.01800266870179577
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.NeuralGalacticOrbitalBridgePriors
+- domain: ToE_Unification_Spine
+  tier: 48
+  record_count: 8
+  median_error_pct: 0.019008268802500988
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.ToEUnificationSpinePriors
+- domain: Compactification_Ladder
+  tier: 49
+  record_count: 60
+  median_error_pct: 0.0220747159758794
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.CompactificationLadderPriors
+- domain: Adjacent_Rung_Coupling
+  tier: 49
+  record_count: 36
+  median_error_pct: 0.020098237848404983
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.AdjacentRungCouplingPriors
+- domain: Fold_Depth_Metrics
+  tier: 49
+  record_count: 51
+  median_error_pct: 0.025753835305195434
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.FoldDepthMetricsPriors
+- domain: Reality_Folding_Spine
+  tier: 49
+  record_count: 8
+  median_error_pct: 0.019008268802505057
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.RealityFoldingSpinePriors
+- domain: Time_Emergence_Simulation
+  tier: 50
+  record_count: 28
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.TimeEmergenceSimulationPriors
+- domain: Time_Domain_Crosswalk
+  tier: 50
+  record_count: 160
+  median_error_pct: 0.025013
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.TimeDomainCrosswalkPriors
+- domain: FPC_Temporal_Coupling
+  tier: 50
+  record_count: 6
+  median_error_pct: 0.031199
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.FPCTemporalCouplingPriors
+- domain: Fluid_Phase_Current_Spine
+  tier: 50
+  record_count: 7
+  median_error_pct: 0.009504
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.FluidPhaseCurrentSpinePriors
+- domain: Stumped_Observables_Panel
+  tier: 51
+  record_count: 13
+  median_error_pct: 0.042611
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.StumpedObservablesPanelPriors
+- domain: Hubble_Bubble_Tension
+  tier: 51
+  record_count: 6
+  median_error_pct: 0.462181
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.HubbleBubbleTensionPriors
+- domain: Dark_Sector_Open_Problems
+  tier: 51
+  record_count: 7
+  median_error_pct: 0.006335
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.DarkSectorOpenProblemsPriors
+- domain: Stumped_Observables_Spine
+  tier: 51
+  record_count: 5
+  median_error_pct: 0.042611
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.StumpedObservablesSpinePriors
+- domain: Consciousness_Econ
+  tier: 51
+  record_count: 37
+  median_error_pct: 0.008898
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ConsciousnessEconPriors
+- domain: Dark_Energy_CPL
+  tier: 51
+  record_count: 6
+  median_error_pct: 0.025535
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.DarkEnergyCPLPriors
+- domain: SH0ES_Refined
+  tier: 51
+  record_count: 7
+  median_error_pct: 0.462181
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.SH0ESRefinedPriors
+- domain: Consciousness_Soul_Bridge
+  tier: 51
+  record_count: 27
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ConsciousnessSoulBridgePriors
+- domain: Symbolic_Archetype_Panel
+  tier: 51
+  record_count: 28
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.SymbolicArchetypePanelPriors
+- domain: Astrophysical_Structure_Crosswalk
+  tier: 52
+  record_count: 34
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.AstrophysicalStructureCrosswalkPriors
+- domain: Stellar_Multiplicity_Catalog
+  tier: 53
+  record_count: 68
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.StellarMultiplicityCatalogPriors
+- domain: Compact_Object_Binary_Events
+  tier: 53
+  record_count: 40
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.CompactObjectBinaryEventsPriors
+- domain: Galactic_Structure_Sample
+  tier: 53
+  record_count: 101
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.GalacticStructureSamplePriors
+- domain: Solar_System_Structure_Deep
+  tier: 54
+  record_count: 50
+  median_error_pct: 0.009693
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.SolarSystemStructureDeepPriors
+- domain: Exoplanet_System_Architecture
+  tier: 54
+  record_count: 882
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.ExoplanetSystemArchitecturePriors
+- domain: PubChem_Stability_Panel
+  tier: 55
+  record_count: 59
+  median_error_pct: 0.0024238898584426276
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.PubChemStabilityPanelPriors
+- domain: Materials_Genome_Crosswalk
+  tier: 55
+  record_count: 38
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.MaterialsGenomeCrosswalkPriors
+- domain: UniProt_Structure_Annotations_Deep
+  tier: 56
+  record_count: 121
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.UniProtStructureAnnotationsDeepPriors
+- domain: IGEM_Parts_Expanded
+  tier: 56
+  record_count: 111
+  median_error_pct: 7.227106853889602e-05
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.IGEMPartsExpandedPriors
+- domain: Interdisciplinary_Spine_Crosswalk
+  tier: 57
+  record_count: 15
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.InterdisciplinarySpineCrosswalkPriors
+- domain: Chemical_Structure_Stability_Panel
+  tier: 57
+  record_count: 32
+  median_error_pct: 0.00206
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.ChemicalStructureStabilityPanelPriors
+- domain: Published_Fuel_Property_Panel
+  tier: 57
+  record_count: 31
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.PublishedFuelPropertyPanelPriors
+- domain: GWOSC_Live_Event_Deep
+  tier: 58
+  record_count: 25
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.GWOSCLiveEventDeepPriors
+- domain: Stellar_Multiplicity_Live_Deep
+  tier: 58
+  record_count: 69
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.StellarMultiplicityLiveDeepPriors
+- domain: Material_Property_Verification_Scaffold
+  tier: 59
+  record_count: 79
+  median_error_pct: 0.002271
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.MaterialPropertyVerificationScaffoldPriors
+- domain: Fuel_Thermochemistry_Public_Anchors
+  tier: 59
+  record_count: 14
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.FuelThermochemistryPublicAnchorsPriors
+- domain: SIMBAD_Stellar_Identity_Deep
+  tier: 60
+  record_count: 40
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.SIMBADStellarIdentityDeepPriors
+- domain: Gaia_Astrometry_Panel_Deep
+  tier: 60
+  record_count: 62
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.GaiaAstrometryPanelDeepPriors
+- domain: Music_Harmonics_Public_Panel
+  tier: 61
+  record_count: 18
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.MusicHarmonicsPublicPanelPriors
+- domain: XR_Interactive_Media_Math_Scaffold
+  tier: 61
+  record_count: 24
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.XRInteractiveMediaMathScaffoldPriors
+- domain: Creative_Arts_Math_Spine
+  tier: 61
+  record_count: 56
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.CreativeArtsMathSpinePriors
+- domain: WDS_Live_Multiplicity_Deep
+  tier: 62
+  record_count: 57
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.WDSLiveMultiplicityDeepPriors
+- domain: Gaia_DR3_TAP_Deep
+  tier: 62
+  record_count: 74
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.GaiaDR3TAPDeepPriors
+- domain: Preregistered_Predictions_Verification_Scaffold
+  tier: 63
+  record_count: 22
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.PreregisteredPredictionsVerificationScaffoldPriors
+- domain: Information_Theory_Public_Panel
+  tier: 64
+  record_count: 11
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.InformationTheoryPublicPanelPriors
+- domain: Network_Science_Public_Panel
+  tier: 64
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.NetworkSciencePublicPanelPriors
+- domain: Semiconductor_Physics_Public_Panel
+  tier: 64
+  record_count: 11
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.SemiconductorPhysicsPublicPanelPriors
+- domain: Statistical_Mechanics_Public_Panel
+  tier: 64
+  record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.StatisticalMechanicsPublicPanelPriors
+- domain: Biophysics_Public_Panel
+  tier: 64
+  record_count: 11
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.BiophysicsPublicPanelPriors
+- domain: Neurolab_Gaps_Math_Spine
+  tier: 64
+  record_count: 35
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.NeurolabGapsMathSpinePriors
+- domain: Material_In_Silico_Screening_Scaffold
+  tier: 65
+  record_count: 42
+  median_error_pct: 0.00206
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.MaterialInSilicoScreeningScaffoldPriors
+- domain: Fuel_Candidate_Prereg_Scaffold
+  tier: 65
+  record_count: 33
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.FuelCandidatePreregScaffoldPriors
+- domain: Interactive_Media_Prereg_Scaffold
+  tier: 65
+  record_count: 42
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.InteractiveMediaPreregScaffoldPriors
+- domain: Quantum_Information
+  tier: 66
+  record_count: 14
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.QuantumInformationPriors
+- domain: Econophysics
+  tier: 66
+  record_count: 12
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.EconophysicsPriors
+- domain: Ecology
+  tier: 66
+  record_count: 12
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.EcologyPublicPanelPriors
+- domain: Genomic_Sciences
+  tier: 66
+  record_count: 18
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.GenomicSciencesPriors
+- domain: Neurolab_Residual_Math_Spine
+  tier: 66
+  record_count: 28
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.NeurolabResidualMathSpinePriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572
@@ -1074,6 +1602,8 @@ specialized_bridges:
       station_count: 24
       record_count: 13700
       median_error_pct: 0.0
+      classifier_accuracy_pct: 0.0
+      classifier_misclass_rate_pct: 100.0
     holdout:
       stations:
       - USW00012839
@@ -1085,7 +1615,10 @@ specialized_bridges:
       station_count: 6
       record_count: 3596
       median_error_pct: 0.0
-    holdout_median_error_max_pct: 5.0
+      classifier_accuracy_pct: 0.0
+      classifier_misclass_rate_pct: 100.0
+    holdout_median_error_max_pct: 0.5
+    holdout_min_classifier_accuracy_pct: 99.5
     holdout_min_records: 200
     train_station_ids:
     - USC00053005

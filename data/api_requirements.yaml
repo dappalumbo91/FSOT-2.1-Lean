@@ -225,6 +225,14 @@ api_sources:
     proprietary_gate: data/preregistered_predictions_manifest.yaml
     bundled_only: true
 
+  tier66_neurolab_residual:
+    description: "Tier 66 — NeuroLab residual registry panels (quantum, econophysics, ecology, genomics)"
+    manifest: data/tier66_neurolab_residual_manifest.yaml
+    build: scripts/build_tier66_neurolab_residual_benchmarks.py
+    lean: scripts/gen_tiers_66_lean.py
+    bundled_only: true
+    note: "Literature anchors from NeuroLab fsot_translations + empirical gap-fill bridges"
+
   astrophysics_catalogs:
     description: "Tier 58 live ingest — public catalogs for stellar/planetary/galactic structures"
     sources:

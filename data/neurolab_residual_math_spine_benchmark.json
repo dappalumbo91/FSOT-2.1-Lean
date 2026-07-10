@@ -1,0 +1,349 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:32:45.761889+00:00",
+  "domain": "Neurolab_Residual_Math_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier66_neurolab_residual_panels"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "biological",
+    "quantum",
+    "ai",
+    "consciousness"
+  ],
+  "D_eff": 17,
+  "record_count": 28,
+  "observable_count": 28,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "neurolab_residual_spine": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NeuroLab 32-domain registry residual crosswalk"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_residual_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 28
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "residual_relay",
+      "name": "neurolab_residual_spine",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "quantum_information",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 14,
+      "eval_kind": "tier66_bridge"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "surface_code_threshold",
+      "computed": 0.0057,
+      "measured": 0.0057,
+      "error_pct": 0.0,
+      "source_panel": "quantum_information",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "toric_code_threshold",
+      "computed": 0.109,
+      "measured": 0.109,
+      "error_pct": 0.0,
+      "source_panel": "quantum_information",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "fault_tolerant_threshold",
+      "computed": 0.0104,
+      "measured": 0.0104,
+      "error_pct": 0.0,
+      "source_panel": "quantum_information",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "grover_speedup_exponent",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "source_panel": "quantum_information",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "shor_period_finding_exponent",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "quantum_information",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "bell_state_entropy",
+      "computed": 0.6931,
+      "measured": 0.6931,
+      "error_pct": 0.0,
+      "source_panel": "quantum_information",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "econophysics",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 12,
+      "eval_kind": "tier66_bridge"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "pareto_exponent",
+      "computed": 1.618,
+      "measured": 1.618,
+      "error_pct": 0.0,
+      "source_panel": "econophysics",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "zipf_firm_sizes",
+      "computed": 3.354,
+      "measured": 3.354,
+      "error_pct": 0.0,
+      "source_panel": "econophysics",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "hurst_exponent",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "source_panel": "econophysics",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "volatility_persistence",
+      "computed": 0.577,
+      "measured": 0.577,
+      "error_pct": 0.0,
+      "source_panel": "econophysics",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "returns_kurtosis",
+      "computed": 6.87,
+      "measured": 6.87,
+      "error_pct": 0.0,
+      "source_panel": "econophysics",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "okuns_law",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "source_panel": "econophysics",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "ecology",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 12,
+      "eval_kind": "tier66_bridge"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "kleiber_exponent",
+      "computed": 0.75,
+      "measured": 0.75,
+      "error_pct": 0.0,
+      "source_panel": "ecology",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "wbe_quarter_power",
+      "computed": 0.25,
+      "measured": 0.25,
+      "error_pct": 0.0,
+      "source_panel": "ecology",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "heart_rate_allometry",
+      "computed": -0.25,
+      "measured": -0.25,
+      "error_pct": 0.0,
+      "source_panel": "ecology",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "species_area_exponent",
+      "computed": 0.25,
+      "measured": 0.25,
+      "error_pct": 0.0,
+      "source_panel": "ecology",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "shannon_diversity",
+      "computed": 2.195,
+      "measured": 2.195,
+      "error_pct": 0.0,
+      "source_panel": "ecology",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "simpson_diversity",
+      "computed": 1.195,
+      "measured": 1.195,
+      "error_pct": 0.0,
+      "source_panel": "ecology",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "genomic_sciences",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 18,
+      "eval_kind": "tier66_bridge"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "codon_table_size",
+      "computed": 64.0,
+      "measured": 64.0,
+      "error_pct": 0.0,
+      "source_panel": "genomic_sciences",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "trinary_pattern_count",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "source_panel": "genomic_sciences",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "codon_trinary_degeneracy",
+      "computed": 2.3703703703703702,
+      "measured": 2.3703703703703702,
+      "error_pct": 0.0,
+      "source_panel": "genomic_sciences",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "stop_codons_ratio",
+      "computed": 0.046875,
+      "measured": 0.046875,
+      "error_pct": 0.0,
+      "source_panel": "genomic_sciences",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "amino_acids_canonical",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "source_panel": "genomic_sciences",
+      "eval_kind": "residual_relay"
+    },
+    {
+      "lab": "neurolab_residual_spine_lab",
+      "property": "observable",
+      "name": "autosome_count",
+      "computed": 22.0,
+      "measured": 22.0,
+      "error_pct": 0.0,
+      "source_panel": "genomic_sciences",
+      "eval_kind": "residual_relay"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 5,
+    "classifier_correct": 5,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

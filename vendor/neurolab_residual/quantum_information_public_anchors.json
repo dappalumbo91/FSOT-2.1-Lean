@@ -1,0 +1,18 @@
+{
+  "source": "Nielsen & Chuang, Kitaev (2003), Knill (2005) — public quantum-information dimensionless anchors",
+  "formula_branch": "term1.coherence_efficiency",
+  "observables": [
+    {"id": "surface_code_threshold", "name": "Surface code threshold", "value": 0.0057},
+    {"id": "toric_code_threshold", "name": "Toric code threshold", "value": 0.109},
+    {"id": "fault_tolerant_threshold", "name": "Fault-tolerant threshold", "value": 0.0104},
+    {"id": "grover_speedup_exponent", "name": "Grover speedup exponent", "value": 0.5},
+    {"id": "shor_period_finding_exponent", "name": "Shor period-finding exponent", "value": 1.0},
+    {"id": "bell_state_entropy", "name": "Bell state entropy ln(2)", "value": 0.6931},
+    {"id": "page_curve_ratio", "name": "Page curve S/S_max", "value": 1.071},
+    {"id": "gate_fidelity_threshold", "name": "Gate fidelity threshold", "value": 0.9896},
+    {"id": "quantum_volume_log2", "name": "Quantum volume log₂ scaling", "value": 0.748},
+    {"id": "holevo_bound_ratio", "name": "Holevo bound ratio χ/S", "value": 0.618},
+    {"id": "quantum_channel_capacity", "name": "Quantum channel capacity ratio", "value": 0.5772},
+    {"id": "coherence_time_ratio", "name": "Coherence time ratio T₂/T₁", "value": 1.236}
+  ]
+}

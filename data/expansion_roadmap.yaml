@@ -1,5 +1,5 @@
 # FSOT interdisciplinary expansion roadmap — public-data first, preregister before novel claims.
-version: "1.2"
+version: "1.3"
 updated: "2026-07-10"
 policy: >
   Ship verification against published observables in-repo. Reserve novel material,
@@ -58,12 +58,18 @@ completed_tiers:
     - Material_In_Silico_Screening_Scaffold
     - Fuel_Candidate_Prereg_Scaffold
     - Interactive_Media_Prereg_Scaffold
+  tier_66:
+    - Quantum_Information
+    - Econophysics
+    - Ecology
+    - Genomic_Sciences
+    - Neurolab_Residual_Math_Spine
 
 priority_queue:
   tier_66_neurolab_residual:
-    status: planned
-    domains: [Quantum_Information, Econophysics, Ecology, Genomic_Sciences]
-    note: "Remaining NeuroLab 32-domain registry entries not yet extension domains"
+    status: completed
+    domains: [Quantum_Information, Econophysics, Ecology, Genomic_Sciences, Neurolab_Residual_Math_Spine]
+    note: "Remaining NeuroLab 32-domain registry entries — literature anchors + gap-fill bridges"
 
   tier_67_formula_precision:
     status: planned

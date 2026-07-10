@@ -1,0 +1,22 @@
+{
+  "source": "NCBI GRCh38, Ensembl R112, ENCODE, 1000 Genomes — public genomic dimensionless anchors",
+  "formula_branch": "term3.codon_trinary_mirror",
+  "observables": [
+    {"id": "codon_table_size", "name": "Codon table size 4³", "value": 64.0},
+    {"id": "trinary_pattern_count", "name": "Trinary pattern count 3³", "value": 27.0},
+    {"id": "codon_trinary_degeneracy", "name": "Codon-trinary degeneracy (4/3)³", "value": 2.3703703703703703},
+    {"id": "stop_codons_ratio", "name": "Stop codons / total", "value": 0.046875},
+    {"id": "amino_acids_canonical", "name": "Amino acids canonical", "value": 20.0},
+    {"id": "autosome_count", "name": "Autosome count (haploid)", "value": 22.0},
+    {"id": "gc_content", "name": "GC content (human genome)", "value": 0.409},
+    {"id": "at_content", "name": "AT content (spin-collapsed)", "value": 0.591},
+    {"id": "repeat_element_coverage", "name": "Repeat element coverage", "value": 0.45},
+    {"id": "mt_coding_fraction", "name": "MT coding fraction", "value": 0.93},
+    {"id": "tga_stop_frequency", "name": "TGA stop codon frequency", "value": 0.52},
+    {"id": "gc_bias_chr19", "name": "GC bias chr19 (highest)", "value": 0.484},
+    {"id": "ti_tv_ratio", "name": "Ti/Tv ratio (human)", "value": 2.1},
+    {"id": "cpg_mutation_factor", "name": "CpG mutation rate factor", "value": 10.0},
+    {"id": "exonic_fraction", "name": "Exonic fraction of genome", "value": 0.015},
+    {"id": "codon_to_aa_degeneracy", "name": "Codon-to-AA degeneracy", "value": 3.2}
+  ]
+}

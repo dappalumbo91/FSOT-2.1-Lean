@@ -27,24 +27,25 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-10 — Tier 43)
+## Verification status (2026-07-10 — Tier 66)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
-Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml` | Domain map: `data/scientific_domain_expansion_map.json`
+Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml` | Domain map: `data/scientific_domain_expansion_map.json` | Expansion queue: `data/expansion_roadmap.yaml`
 
 | Metric | Value |
 |--------|-------|
-| Verification tiers | **41/41 complete** (100%) |
-| Scientific domains | **149** (35 NeuroLab + 113 extension + Intelligence Compression rollup) |
-| Coupling simulation | **149 nodes · 3,032 edges** (maps_to_lean + cross-ratios + magnetosphere + Tier 43 cyber) |
+| Verification tiers | **48/48 complete** (100%) |
+| Extension domains | **195/195** pass `verify_extension_domains.py` (≤0.5% pooled gate) |
+| Scientific domains | **231** (35 NeuroLab + 195 extension + Intelligence Compression rollup) |
+| Coupling simulation | **183 nodes · 6,138 edges** (maps_to_lean + cross-ratios + magnetosphere + cyber stack) |
 | Empirical records | **306,680+** |
 | Neurolab precision | **35/35** domains ≤2% median error |
-| Coverage tiers | A_strong: 25+ · B_verified: 10 · C_thin: **0** · D_needs_work: **0** · unverified: **0** |
-| Lean formal modules | **183** |
+| Coverage tiers | A_strong: 25 · B_verified: 10 · C_thin: **0** · D_needs_work: **0** · unverified: **0** |
+| Lean formal modules | **265** |
 | Proved claims | **65** · 0 active `sorry` |
 | SOTA ledger | **65/65** observables beat or meet baselines |
-| Expansion candidates | **0** (all identified science gaps filled) |
+| Expansion candidates | **0** (NeuroLab 32-domain registry gaps closed at Tier 66) |
 
 **External data cache** (bulk API ingest): `G:\FSOT-PublicData` — override with `FSOT_EXTERNAL_DATA_ROOT`. Space weather full arc: `G:\FSOT-PublicData\space_weather\space_weather_full_benchmark.json` (271,813 Kp records); portable summary in `data/space_weather_summary_benchmark.json`.
 
@@ -68,7 +69,7 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - Unified DB inventory (`FSOT.Formal.UnifiedDBPriors`) — 30,984 indexed records, 26 projects (inventory tier)
 - Cosmology Wave-4 (`FSOT.Formal.CosmologyWave4Priors`) — 16 observables (PMNS/CKM/nuclear/dark-energy); legacy `CosmologyWave4.lean` is a deprecation shim
 - GFZ Kp historical arc (`FSOT.Formal.SpaceWeatherPriors`) — **271,813** Kp records (1932–2024), 100% stability match; portable **501-record** summary in repo, full arc on `G:/FSOT-PublicData`
-- Cross-domain coupling simulation (`FSOT.Formal.DomainCouplingSimulationPriors`) — **149** nodes, **3,032** coupling edges, 0% pooled median
+- Cross-domain coupling simulation (`FSOT.Formal.DomainCouplingSimulationPriors`) — **183** nodes, **6,138** coupling edges, 0% pooled median
 - Tier 43 cybersecurity (`FSOT.Formal.ZeroDayRiskEvaluatorPriors`) — **9-language** code-genome bridges (Lean/Rust/Python/C/JS/Go/Zig/WASM/FSOTB_ISA), MalwareBazaar **200** samples + CISA KEV **1,635** CVEs on `G:/FSOT-PublicData/cybersecurity`
 - Malware threat intelligence depth (`FSOT.Formal.MalwareThreatIntelligencePriors`) — **301** records, virology structural bridge
 - Code genome structure (`FSOT.Formal.CodeGenomeStructurePriors`) — **205** records, genomic codon hole detection
@@ -185,7 +186,32 @@ python scripts/build_fsot_verified_scope.py
 lake build
 ```
 
-Registry: `data/extension_domains_manifest.yaml` (tier 41 entries) · Benchmarks: `data/*_extension_benchmark.json` · Reference anchors: `data/*_reference_observables.json`.
+Registry: `data/extension_domains_manifest.yaml` (195 extension entries through Tier 66) · Benchmarks: `data/*_benchmark.json` · Reference anchors: `vendor/neurolab_gaps/`, `vendor/neurolab_residual/`
+
+### Tiers 51–66 — Interdisciplinary expansion wave
+
+Public-data-first panels and preregistration scaffolds. Full tier list: `data/expansion_roadmap.yaml`.
+
+| Tier | Domains | Focus |
+|------|---------|-------|
+| 51 | Consciousness_Soul_Bridge, Symbolic_Archetype_Panel | Consciousness / archetype crosswalk |
+| 52 | Astrophysical_Structure_Crosswalk | Stellar/planetary structure relay |
+| 53–54 | Stellar multiplicity, compact binaries, galactic sample, solar/exoplanet architecture | Astrophysical catalogs |
+| 55–56 | PubChem stability, materials genome, UniProt deep, iGEM expanded | Chemical / structural genomics |
+| 57–58 | Interdisciplinary spine, chemical/fuel panels, GWOSC + live multiplicity | Cross-domain + live ingest |
+| 59–60 | Material/fuel verification scaffold, SIMBAD/Gaia astrometry | Public methodology gates |
+| 61 | Music harmonics, XR/game math, creative arts spine | Music / AR-VR / game math |
+| 62–63 | WDS/Gaia DR3 TAP, prereg predictions scaffold | Live astrometry + prereg manifest |
+| 64 | Information Theory, Network Science, Semiconductor, Statistical Mechanics, Biophysics, NeuroLab gaps spine | NeuroLab 32-domain registry gaps (wave 1) |
+| 65 | Material in-silico, fuel candidate, interactive-media prereg scaffolds | Novel discovery prereg gates |
+| 66 | Quantum_Information, Econophysics, Ecology, Genomic_Sciences, Neurolab residual spine | NeuroLab 32-domain registry gaps (final wave) |
+
+```bash
+# Tier 66 rebuild (bundled anchors — no live API)
+python scripts/build_tier66_neurolab_residual_benchmarks.py
+python scripts/gen_tiers_66_lean.py
+python scripts/verify_extension_domains.py
+```
 
 ### Formula verification honesty (Tier 6)
 
@@ -237,10 +263,18 @@ This project closely follows the structure and justification style of the attach
 
 ## Roadmap
 
+Queued in `data/expansion_roadmap.yaml`:
+
+- **Tier 67** — Formula precision pass (`term3_acoustic_bleed`, archetype, boundary_partition tightening)
+- **Tier 68** — Second live-ingest wave (Materials Project, PubChem live, OpenNeuro, VizieR WDS TAP)
+- **Tier 69** — Unified DB / desktop candidate crosswalk (~13k aggregate rows)
+- **Tier 70** — ToE claim hardening (lake build, certificate, prereg outcome tracking)
+
+Ongoing maintenance:
+
 - Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens
 - Knowledge-base per-formula portable bundle
 - Tighten r_d interval to ±0.01 Mpc
-- Extend `select_observable()` hooks for non-IE chemistry/cosmology rows in unified DB
 - Energy / fusion domain dedicated lab certificates (currently partial via fuel_lab proxy)
 
 ## License

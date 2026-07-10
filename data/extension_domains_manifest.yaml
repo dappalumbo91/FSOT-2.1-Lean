@@ -1,6 +1,6 @@
 # FSOT extension domains #37–#39 (beyond 35-domain NeuroLab table)
 version: "1.0"
-updated: "2026-07-01"
+updated: "2026-07-10"
 
 extension_domains:
   Plasma_Physics:
@@ -2459,6 +2459,71 @@ extension_domains:
     benchmark_data: data/interactive_media_prereg_scaffold_benchmark.json
     lean_module: FSOT.Formal.InteractiveMediaPreregScaffoldPriors
     note: "XR/game comfort-timing gates — novel mechanic predictions preregistered separately"
+
+  Quantum_Information:
+    tier: 66
+    D_eff: 11
+    delta_psi: 1.0
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [quantum, ai, mathematical]
+    build_script: scripts/build_tier66_neurolab_residual_benchmarks.py
+    manifest: data/tier66_neurolab_residual_manifest.yaml
+    benchmark_data: data/quantum_information_benchmark.json
+    lean_module: FSOT.Formal.QuantumInformationPriors
+    note: "Nielsen-Chuang quantum-info anchors + quantum computing gap-fill bridge"
+
+  Econophysics:
+    tier: 66
+    D_eff: 20
+    delta_psi: 1.5
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, mathematical, energy]
+    build_script: scripts/build_tier66_neurolab_residual_benchmarks.py
+    manifest: data/tier66_neurolab_residual_manifest.yaml
+    benchmark_data: data/econophysics_benchmark.json
+    lean_module: FSOT.Formal.EconophysicsPriors
+    note: "Pareto/Hurst/Kelly econophysics anchors + econometrics gap-fill bridge"
+
+  Ecology:
+    tier: 66
+    D_eff: 15
+    delta_psi: 0.2
+    recent_hits: 1
+    observed: true
+    maps_to_lean: [biological, energy]
+    build_script: scripts/build_tier66_neurolab_residual_benchmarks.py
+    manifest: data/tier66_neurolab_residual_manifest.yaml
+    benchmark_data: data/ecology_benchmark.json
+    lean_module: FSOT.Formal.EcologyPublicPanelPriors
+    note: "Kleiber/MacArthur-Wilson ecology anchors + GBIF gap-fill bridge"
+
+  Genomic_Sciences:
+    tier: 66
+    D_eff: 12
+    delta_psi: 0.05
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, medical, neural]
+    build_script: scripts/build_tier66_neurolab_residual_benchmarks.py
+    manifest: data/tier66_neurolab_residual_manifest.yaml
+    benchmark_data: data/genomic_sciences_benchmark.json
+    lean_module: FSOT.Formal.GenomicSciencesPriors
+    note: "Codon-trinary mirror anchors + synthetic biology bridge"
+
+  Neurolab_Residual_Math_Spine:
+    tier: 66
+    D_eff: 17
+    delta_psi: 0.88
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, biological, quantum, ai, consciousness]
+    build_script: scripts/build_tier66_neurolab_residual_benchmarks.py
+    manifest: data/tier66_neurolab_residual_manifest.yaml
+    benchmark_data: data/neurolab_residual_math_spine_benchmark.json
+    lean_module: FSOT.Formal.NeurolabResidualMathSpinePriors
+    note: "Crosswalk spine for tier 66 NeuroLab residual registry panels"
 
 verification:
   min_records_per_domain: 5

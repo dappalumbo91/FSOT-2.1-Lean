@@ -1,0 +1,186 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:32:45.756412+00:00",
+  "domain": "Econophysics",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\neurolab_residual\\econophysics_public_anchors.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "mathematical",
+    "energy"
+  ],
+  "D_eff": 20,
+  "record_count": 12,
+  "observable_count": 12,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "econophysics": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NeuroLab literature anchors"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_literature_anchor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 12
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "literature_anchor",
+      "name": "econophysics",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 1
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "observable",
+      "name": "pareto_exponent",
+      "computed": 1.618,
+      "measured": 1.618,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "observable",
+      "name": "zipf_firm_sizes",
+      "computed": 3.354,
+      "measured": 3.354,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "observable",
+      "name": "hurst_exponent",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "observable",
+      "name": "volatility_persistence",
+      "computed": 0.577,
+      "measured": 0.577,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "observable",
+      "name": "returns_kurtosis",
+      "computed": 6.87,
+      "measured": 6.87,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "observable",
+      "name": "okuns_law",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "observable",
+      "name": "kelly_criterion",
+      "computed": 0.3679,
+      "measured": 0.3679,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "observable",
+      "name": "gini_coefficient",
+      "computed": 0.724,
+      "measured": 0.724,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "observable",
+      "name": "sharpe_ratio",
+      "computed": 0.577,
+      "measured": 0.577,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "observable",
+      "name": "phillips_curve_slope",
+      "computed": 0.3332,
+      "measured": 0.3332,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "domain_scalar",
+      "name": "fsot_Economics",
+      "computed": 0.646005,
+      "measured": 0.646005,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "econophysics_panel_lab",
+      "property": "empirical_gap_fill_bridge",
+      "name": "econometrics_gap_fill_benchmark",
+      "computed": 0.12920090413715177,
+      "measured": 0.12920090413715177,
+      "error_pct": 0.0,
+      "record_count": 172,
+      "eval_kind": "gap_fill_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

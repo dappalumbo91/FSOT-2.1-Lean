@@ -1,0 +1,16 @@
+version: "1.0"
+tier: 66
+domains:
+  - Quantum_Information
+  - Econophysics
+  - Ecology
+  - Genomic_Sciences
+  - Neurolab_Residual_Math_Spine
+build: scripts/build_tier66_neurolab_residual_benchmarks.py
+lean: scripts/gen_tiers_66_lean.py
+bundled:
+  - vendor/neurolab_residual/quantum_information_public_anchors.json
+  - vendor/neurolab_residual/econophysics_public_anchors.json
+  - vendor/neurolab_residual/ecology_public_anchors.json
+  - vendor/neurolab_residual/genomic_sciences_public_anchors.json
+note: "Final NeuroLab 32-domain registry residual panels — literature anchors + empirical gap-fill bridges"

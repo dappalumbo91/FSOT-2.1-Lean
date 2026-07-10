@@ -59,6 +59,7 @@ GENERATOR_ORDER = [
     "gen_tiers_61_lean.py",
     "gen_tiers_62_64_lean.py",
     "gen_tiers_65_lean.py",
+    "gen_tiers_66_lean.py",
 ]
 
 

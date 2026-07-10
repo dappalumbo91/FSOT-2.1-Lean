@@ -1,11 +1,11 @@
-generated_at: '2026-07-10T17:56:45.308937+00:00'
+generated_at: '2026-07-10T18:32:50.100947+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 226
+  lean_formal_modules: 265
   proved_claims: 65
   sorry_count_formal: 0
-  lean_build_ok: true
+  lean_build_ok: false
   tiers_complete: 48
   tiers_total: 48
   percent_complete: 100.0
@@ -32,12 +32,14 @@ tiers:
   - AnthropologyExtensionPriors
   - ArchitectureBuildingScienceGapFillPriors
   - ArxivPrimitivesV14Priors
+  - AstrophysicalStructureCrosswalkPriors
   - AtmosphericPhysicsGapFillPriors
   - AtomicPhysicsGapFillPriors
   - BibliographyLeanCorpusPriors
   - BinaryDecoderRendleshamPriors
   - BiologicalCudaPhysarumPriors
   - BiologyStrictEmpiricalPriors
+  - BiophysicsPublicPanelPriors
   - BlackHoleThesisPriors
   - BotanyExtensionPriors
   - BrainPriors
@@ -51,11 +53,13 @@ tiers:
   - CertifiedAgentQwenPriors
   - ChaosMediatedPhaseTransitionsPriors
   - ChemicalEngineeringExtensionPriors
+  - ChemicalStructureStabilityPanelPriors
   - CivilEngineeringExtensionPriors
   - ClimateSciencePriors
   - ClinicalMedicineExtensionPriors
   - CodeGenomeStructurePriors
   - CodonPriors
+  - CompactObjectBinaryEventsPriors
   - CompactificationLadderPriors
   - ComputationalReasoningPriors
   - ConsciousnessEconPriors
@@ -72,6 +76,7 @@ tiers:
   - CosmologyWave7Priors
   - CosmologyWave8Priors
   - CosmologyWave9Priors
+  - CreativeArtsMathSpinePriors
   - CryospherePriors
   - CryptographyTechnologyPriors
   - CulinaryArtsPriors
@@ -82,8 +87,10 @@ tiers:
   - DomainOrbitalPredictionsPriors
   - DomainPrecisionPriors
   - EcologyGapFillPriors
+  - EcologyPublicPanelPriors
   - EconometricsGapFillPriors
   - EconomicsGapFillPriors
+  - EconophysicsPriors
   - ElectricalPowerSystemsPriors
   - EmergentDomainPriors
   - EnergyAIOrbitalBridgePriors
@@ -93,6 +100,7 @@ tiers:
   - EpidemiologyExtensionPriors
   - EvolutionPriors
   - ExogeologyExtensionPriors
+  - ExoplanetSystemArchitecturePriors
   - ExperimentSynthesisPriors
   - ExternalOSSCodeGenomePriors
   - FPCTemporalCouplingPriors
@@ -107,8 +115,15 @@ tiers:
   - FormulaCorpusPriors
   - FractalConstantRecursionPriors
   - FsotAggregateUnifiedDbPriors
+  - FuelCandidatePreregScaffoldPriors
   - FuelPriors
+  - FuelThermochemistryPublicAnchorsPriors
+  - GWOSCLiveEventDeepPriors
+  - GaiaAstrometryPanelDeepPriors
+  - GaiaDR3TAPDeepPriors
+  - GalacticStructureSamplePriors
   - GbifSpeciesOccurrencePriors
+  - GenomicSciencesPriors
   - GeochemistryPriors
   - GeologyStratigraphyExtensionPriors
   - GeomagnetismPriors
@@ -120,9 +135,13 @@ tiers:
   - HvacThermalSystemsPriors
   - HydrologyPriors
   - IGEMLiveFastaPriors
+  - IGEMPartsExpandedPriors
   - IGEMSyntheticBiologyPriors
   - ImmunologyPriors
+  - InformationTheoryPublicPanelPriors
   - IntelligenceCompressionPriors
+  - InteractiveMediaPreregScaffoldPriors
+  - InterdisciplinarySpineCrosswalkPriors
   - IntrinsicLLMValidatorsPriors
   - IonosphericChemistryCouplingPriors
   - KnowledgeBasePriors
@@ -137,7 +156,10 @@ tiers:
   - MaillardChemistryGapFillPriors
   - MalwareThreatIntelligencePriors
   - MarineBiologyExtensionPriors
+  - MaterialInSilicoScreeningScaffoldPriors
+  - MaterialPropertyVerificationScaffoldPriors
   - MaterialsEngineeringPriors
+  - MaterialsGenomeCrosswalkPriors
   - MaterialsSpeciesBridgePriors
   - MathGeneratorAirfoilRmsePriors
   - MathGeneratorBenchmarkFormulaEvalPriors
@@ -148,12 +170,16 @@ tiers:
   - MechanisticCouplingPriors
   - MedicalGalacticOrbitalBridgePriors
   - MeteorologyGapFillPriors
+  - MusicHarmonicsPublicPanelPriors
   - MycologyExtensionPriors
   - NasaExoplanetArchivePriors
   - NetworkInternetProtocolsPriors
+  - NetworkSciencePublicPanelPriors
   - NeuralGalacticOrbitalBridgePriors
   - NeuroeconomicsExtensionPriors
   - NeuroimmunologyPriors
+  - NeurolabGapsMathSpinePriors
+  - NeurolabResidualMathSpinePriors
   - NeuronCohortPriors
   - NeuronCohortStrataPriors
   - NeuronCohortTrainHoldoutPriors
@@ -182,13 +208,17 @@ tiers:
   - PortableCloneVerifyPriors
   - PredictionRederivationPriors
   - PreregisteredPredictionsPriors
+  - PreregisteredPredictionsVerificationScaffoldPriors
   - ProgrammingLanguageLawsPriors
   - ProofCarryingCodeGenomePriors
   - ProteinPriors
   - PsychologyGapFillPriors
+  - PubChemStabilityPanelPriors
   - PubchemCompoundPropertiesPriors
+  - PublishedFuelPropertyPanelPriors
   - PureMathematicsExtensionPriors
   - QuantumComputingGapFillPriors
+  - QuantumInformationPriors
   - QuantumMaterialsPriors
   - QuantumMechanicsGapFillPriors
   - QuantumOpticsGapFillPriors
@@ -197,11 +227,14 @@ tiers:
   - RoboticsControlSystemsExtensionPriors
   - RustLeanBridgePriors
   - SH0ESRefinedPriors
+  - SIMBADStellarIdentityDeepPriors
   - SecureSoftwareEngineeringPriors
   - SeismologyDeepPriors
   - SeismologyPriors
+  - SemiconductorPhysicsPublicPanelPriors
   - SmallBodyOrbitsPriors
   - SociologyGapFillPriors
+  - SolarSystemStructureDeepPriors
   - SotaCompetitivenessPriors
   - SoulSiblingPriors
   - SpacePropulsionSystemsPriors
@@ -209,6 +242,9 @@ tiers:
   - SpeciesPriors
   - SpeleologyExtensionPriors
   - SportsBiomechanicsGapFillPriors
+  - StatisticalMechanicsPublicPanelPriors
+  - StellarMultiplicityCatalogPriors
+  - StellarMultiplicityLiveDeepPriors
   - StructureCalibrationPriors
   - StumpedObservablesPanelPriors
   - StumpedObservablesSpinePriors
@@ -230,13 +266,16 @@ tiers:
   - TrinaryOSPriors
   - TrinaryOSRoundTripPriors
   - TrinaryOSTierEPriors
+  - UniProtStructureAnnotationsDeepPriors
   - UnifiedDBPriors
   - UniprotProteinAnnotationsPriors
   - VibRegisterPriors
   - VirologyExtensionPriors
   - VlDistillAtlasPriors
+  - WDSLiveMultiplicityDeepPriors
   - WeatherPriors
   - WorldBankDevelopmentPriors
+  - XRInteractiveMediaMathScaffoldPriors
   - ZeroDayRiskEvaluatorPriors
   - ZoologyExtensionPriors
 - tier: 7

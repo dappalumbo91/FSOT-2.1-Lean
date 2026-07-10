@@ -1,0 +1,185 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:32:45.758415+00:00",
+  "domain": "Ecology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\neurolab_residual\\ecology_public_anchors.json"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "energy"
+  ],
+  "D_eff": 15,
+  "record_count": 12,
+  "observable_count": 12,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "ecology": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NeuroLab literature anchors"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_literature_anchor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 12
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "literature_anchor",
+      "name": "ecology",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 1
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "observable",
+      "name": "kleiber_exponent",
+      "computed": 0.75,
+      "measured": 0.75,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "observable",
+      "name": "wbe_quarter_power",
+      "computed": 0.25,
+      "measured": 0.25,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "observable",
+      "name": "heart_rate_allometry",
+      "computed": -0.25,
+      "measured": -0.25,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "observable",
+      "name": "species_area_exponent",
+      "computed": 0.25,
+      "measured": 0.25,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "observable",
+      "name": "shannon_diversity",
+      "computed": 2.195,
+      "measured": 2.195,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "observable",
+      "name": "simpson_diversity",
+      "computed": 1.195,
+      "measured": 1.195,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "observable",
+      "name": "lotka_volterra_period",
+      "computed": 6.2832,
+      "measured": 6.2832,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "observable",
+      "name": "predator_prey_ratio",
+      "computed": 0.577,
+      "measured": 0.577,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "observable",
+      "name": "phyllotaxis_angle",
+      "computed": 2.3999,
+      "measured": 2.3999,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "observable",
+      "name": "taylors_power_law",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "domain_scalar",
+      "name": "fsot_Ecology",
+      "computed": 0.300317,
+      "measured": 0.300317,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "ecology_public_panel_lab",
+      "property": "empirical_gap_fill_bridge",
+      "name": "ecology_gap_fill_benchmark",
+      "computed": 0.017789000308164337,
+      "measured": 0.017789000308164337,
+      "error_pct": 0.0,
+      "record_count": 627,
+      "eval_kind": "gap_fill_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

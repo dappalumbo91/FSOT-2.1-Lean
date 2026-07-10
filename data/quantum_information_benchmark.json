@@ -1,0 +1,206 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:32:45.756412+00:00",
+  "domain": "Quantum_Information",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\neurolab_residual\\quantum_information_public_anchors.json"
+  ],
+  "maps_to_lean": [
+    "quantum",
+    "ai",
+    "mathematical"
+  ],
+  "D_eff": 11,
+  "record_count": 14,
+  "observable_count": 14,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "quantum_information": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NeuroLab literature anchors"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_literature_anchor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 14
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "literature_anchor",
+      "name": "quantum_information",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 1
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "surface_code_threshold",
+      "computed": 0.0057,
+      "measured": 0.0057,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "toric_code_threshold",
+      "computed": 0.109,
+      "measured": 0.109,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "fault_tolerant_threshold",
+      "computed": 0.0104,
+      "measured": 0.0104,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "grover_speedup_exponent",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "shor_period_finding_exponent",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "bell_state_entropy",
+      "computed": 0.6931,
+      "measured": 0.6931,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "page_curve_ratio",
+      "computed": 1.071,
+      "measured": 1.071,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "gate_fidelity_threshold",
+      "computed": 0.9896,
+      "measured": 0.9896,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "quantum_volume_log2",
+      "computed": 0.748,
+      "measured": 0.748,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "holevo_bound_ratio",
+      "computed": 0.618,
+      "measured": 0.618,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "quantum_channel_capacity",
+      "computed": 0.5772,
+      "measured": 0.5772,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "observable",
+      "name": "coherence_time_ratio",
+      "computed": 1.236,
+      "measured": 1.236,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "domain_scalar",
+      "name": "fsot_Quantum_Computing",
+      "computed": -0.147673,
+      "measured": -0.147673,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "quantum_information_panel_lab",
+      "property": "empirical_gap_fill_bridge",
+      "name": "quantum_computing_gap_fill_benchmark",
+      "computed": 0.0002953462072651492,
+      "measured": 0.0002953462072651492,
+      "error_pct": 0.0,
+      "record_count": 177,
+      "eval_kind": "gap_fill_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 1,
+    "classifier_correct": 1,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

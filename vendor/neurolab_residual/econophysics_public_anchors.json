@@ -1,0 +1,16 @@
+{
+  "source": "Pareto (1896), Mandelbrot, Hurst (1951), Kelly (1956) — public econophysics dimensionless anchors",
+  "formula_branch": "term1.growth_term",
+  "observables": [
+    {"id": "pareto_exponent", "name": "Pareto exponent α (wealth)", "value": 1.618},
+    {"id": "zipf_firm_sizes", "name": "Zipf firm sizes exponent", "value": 3.354},
+    {"id": "hurst_exponent", "name": "Hurst exponent H (markets)", "value": 0.5},
+    {"id": "volatility_persistence", "name": "Volatility persistence β", "value": 0.577},
+    {"id": "returns_kurtosis", "name": "Returns kurtosis (S&P)", "value": 6.87},
+    {"id": "okuns_law", "name": "Okun's law coefficient", "value": 2.0},
+    {"id": "kelly_criterion", "name": "Kelly criterion f* (edge/odds)", "value": 0.3679},
+    {"id": "gini_coefficient", "name": "Gini coefficient (world)", "value": 0.724},
+    {"id": "sharpe_ratio", "name": "Sharpe ratio (market avg)", "value": 0.577},
+    {"id": "phillips_curve_slope", "name": "Phillips curve slope", "value": 0.3332}
+  ]
+}
