@@ -2223,7 +2223,7 @@ lemma exp_0602_lt_1838 : exp (0.602 : ℝ) < (1.838 : ℝ) := by
     norm_num [Finset.range, Nat.factorial]
   exact lt_of_le_of_lt h h_sum_lt
 
-lemma exp_1602_lt_5 : exp (1.602 : ℝ) < (0.5 : ℝ) := by
+lemma exp_1602_lt_5 : exp (1.602 : ℝ) < (5 : ℝ) := by
   rw [show (1.602 : ℝ) = 1 + 0.602 by norm_num, Real.exp_add]
   have h_mul :=
     mul_lt_mul_of_pos exp_one_lt_d9 exp_0602_lt_1838 (exp_pos 1) (by norm_num : (0 : ℝ) < 1.838)
@@ -2258,7 +2258,7 @@ lemma exp_1331_lt_384 : exp (1.331 : ℝ) < (3.84 : ℝ) := by
     mul_lt_mul_of_pos exp_one_lt_d9 exp_0331_lt_1412 (exp_pos 1) (by norm_num : (0 : ℝ) < 1.412)
   nlinarith [h_mul, exp_one_lt_d9, exp_0331_lt_1412]
 
-lemma exp_1505_lt_5 : exp (1.505 : ℝ) < (0.5 : ℝ) := by
+lemma exp_1505_lt_5 : exp (1.505 : ℝ) < (5 : ℝ) := by
   rw [show (1.505 : ℝ) = 1 + 0.505 by norm_num, Real.exp_add]
   have h_mul :=
     mul_lt_mul_of_pos exp_one_lt_d9 exp_0505_lt_1838 (exp_pos 1) (by norm_num : (0 : ℝ) < 1.838)

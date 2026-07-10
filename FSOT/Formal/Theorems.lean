@@ -1167,7 +1167,7 @@ lemma domain_term1_gt_neg_08_chemical :
       linarith [hcos_neg, h.1, h.2]
     have h_bleed_hi : (1 + bleed_in_factor * (0.5 : ℝ)) < (1.505 : ℝ) := by
       nlinarith [bleed_in_factor_le_coherence, coherence_efficiency_lt_1002]
-    have h_exp_hi : exp (1 + bleed_in_factor * (0.5 : ℝ)) < (0.5 : ℝ) :=
+    have h_exp_hi : exp (1 + bleed_in_factor * (0.5 : ℝ)) < (5 : ℝ) :=
       lt_trans (Real.exp_lt_exp.mpr h_bleed_hi) exp_1505_lt_5
     have h_growth_hi : (1 + growth_term p * coherence_efficiency) < (2.2 : ℝ) := by
       have h_prod := growth_term_coherence_product_lt_11523 p
@@ -1298,7 +1298,7 @@ lemma domain_term1_gt_neg_08_electron :
       linarith [hcos_neg, h.1, h.2]
     have h_bleed_hi : (1 + bleed_in_factor * (0.6 : ℝ)) < (1.602 : ℝ) := by
       nlinarith [bleed_in_factor_le_coherence, coherence_efficiency_lt_1002]
-    have h_exp_hi : exp (1 + bleed_in_factor * (0.6 : ℝ)) < (0.5 : ℝ) :=
+    have h_exp_hi : exp (1 + bleed_in_factor * (0.6 : ℝ)) < (5 : ℝ) :=
       lt_trans (Real.exp_lt_exp.mpr h_bleed_hi) exp_1602_lt_5
     have h_growth_hi : (1 + growth_term p * coherence_efficiency) < (2.2 : ℝ) := by
       have h_prod := growth_term_coherence_product_lt_11523 p
@@ -1712,7 +1712,7 @@ lemma domain_term1_gt_neg_08_material :
       linarith [hcos_neg, h.1, h.2]
     have h_bleed_hi : (1 + bleed_in_factor * (0.5 : ℝ)) < (1.505 : ℝ) := by
       nlinarith [bleed_in_factor_le_coherence, coherence_efficiency_lt_1002]
-    have h_exp_hi : exp (1 + bleed_in_factor * (0.5 : ℝ)) < (0.5 : ℝ) :=
+    have h_exp_hi : exp (1 + bleed_in_factor * (0.5 : ℝ)) < (5 : ℝ) :=
       lt_trans (Real.exp_lt_exp.mpr h_bleed_hi) exp_1505_lt_5
     have h_growth_hi : (1 + growth_term p * coherence_efficiency) < (2.2 : ℝ) := by
       have h_prod := growth_term_coherence_product_lt_11523 p

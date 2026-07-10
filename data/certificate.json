@@ -1,9 +1,9 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T18:15:26.727687+00:00",
+  "generated_at": "2026-07-10T18:45:09.773231+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
-  "lean_build_ok": false,
+  "lean_build_ok": true,
   "lean_targets": [
     "FSOT.Formal.Bounds",
     "FSOT.Formal.Scalar",
@@ -30,8 +30,10 @@
     "FSOT.Formal.BinaryDecoderRendleshamPriors",
     "FSOT.Formal.BiologicalCudaPhysarumPriors",
     "FSOT.Formal.BiologyStrictEmpiricalPriors",
+    "FSOT.Formal.BiophysicsPublicPanelPriors",
     "FSOT.Formal.BlackHoleThesisPriors",
     "FSOT.Formal.BotanyExtensionPriors",
+    "FSOT.Formal.BoundaryPartitionTighteningPriors",
     "FSOT.Formal.BrainPriors",
     "FSOT.Formal.BreakthroughDiscoveries20242026Priors",
     "FSOT.Formal.BubbleBleedPriors",
@@ -65,6 +67,7 @@
     "FSOT.Formal.CosmologyWave7Priors",
     "FSOT.Formal.CosmologyWave8Priors",
     "FSOT.Formal.CosmologyWave9Priors",
+    "FSOT.Formal.CreativeArtsMathSpinePriors",
     "FSOT.Formal.CryospherePriors",
     "FSOT.Formal.CryptographyTechnologyPriors",
     "FSOT.Formal.CulinaryArtsPriors",
@@ -76,8 +79,10 @@
     "FSOT.Formal.DomainOrbitalPredictionsPriors",
     "FSOT.Formal.DomainPrecisionPriors",
     "FSOT.Formal.EcologyGapFillPriors",
+    "FSOT.Formal.EcologyPublicPanelPriors",
     "FSOT.Formal.EconometricsGapFillPriors",
     "FSOT.Formal.EconomicsGapFillPriors",
+    "FSOT.Formal.EconophysicsPriors",
     "FSOT.Formal.ElectricalPowerSystemsPriors",
     "FSOT.Formal.EmergentDomainPriors",
     "FSOT.Formal.EnergyAIOrbitalBridgePriors",
@@ -99,12 +104,19 @@
     "FSOT.Formal.FormulaCorpusClosurePriors",
     "FSOT.Formal.FormulaCorpusCncPriors",
     "FSOT.Formal.FormulaCorpusPriors",
+    "FSOT.Formal.FormulaPrecisionSpinePriors",
     "FSOT.Formal.FPCTemporalCouplingPriors",
     "FSOT.Formal.FractalConstantRecursionPriors",
+    "FSOT.Formal.FsotAggregateOrganizedPanelPriors",
     "FSOT.Formal.FsotAggregateUnifiedDbPriors",
+    "FSOT.Formal.FuelCandidatePreregScaffoldPriors",
     "FSOT.Formal.FuelPriors",
+    "FSOT.Formal.FuelThermochemistryPublicAnchorsPriors",
+    "FSOT.Formal.GaiaAstrometryPanelDeepPriors",
+    "FSOT.Formal.GaiaDR3TAPDeepPriors",
     "FSOT.Formal.GalacticStructureSamplePriors",
     "FSOT.Formal.GbifSpeciesOccurrencePriors",
+    "FSOT.Formal.GenomicSciencesPriors",
     "FSOT.Formal.GeochemistryPriors",
     "FSOT.Formal.GeologyStratigraphyExtensionPriors",
     "FSOT.Formal.GeomagnetismPriors",
@@ -120,7 +132,10 @@
     "FSOT.Formal.IGEMPartsExpandedPriors",
     "FSOT.Formal.IGEMSyntheticBiologyPriors",
     "FSOT.Formal.ImmunologyPriors",
+    "FSOT.Formal.InformationTheoryPublicPanelPriors",
+    "FSOT.Formal.InitiationTransformationArchetypePriors",
     "FSOT.Formal.IntelligenceCompressionPriors",
+    "FSOT.Formal.InteractiveMediaPreregScaffoldPriors",
     "FSOT.Formal.InterdisciplinarySpineCrosswalkPriors",
     "FSOT.Formal.IntrinsicLLMValidatorsPriors",
     "FSOT.Formal.IonosphericChemistryCouplingPriors",
@@ -130,6 +145,7 @@
     "FSOT.Formal.LeanProofsBridge",
     "FSOT.Formal.LinguisticsFormalPriors",
     "FSOT.Formal.LinguisticsPriors",
+    "FSOT.Formal.LiveIngestSpinePriors",
     "FSOT.Formal.MagicCirclePriors",
     "FSOT.Formal.MagneticStringPriors",
     "FSOT.Formal.MagnetosphereExtendedPriors",
@@ -137,8 +153,11 @@
     "FSOT.Formal.MaillardChemistryGapFillPriors",
     "FSOT.Formal.MalwareThreatIntelligencePriors",
     "FSOT.Formal.MarineBiologyExtensionPriors",
+    "FSOT.Formal.MaterialInSilicoScreeningScaffoldPriors",
+    "FSOT.Formal.MaterialPropertyVerificationScaffoldPriors",
     "FSOT.Formal.MaterialsEngineeringPriors",
     "FSOT.Formal.MaterialsGenomeCrosswalkPriors",
+    "FSOT.Formal.MaterialsProjectLivePanelPriors",
     "FSOT.Formal.MaterialsSpeciesBridgePriors",
     "FSOT.Formal.MathematicsComputationalPriors",
     "FSOT.Formal.MathGeneratorAirfoilRmsePriors",
@@ -149,12 +168,16 @@
     "FSOT.Formal.MechanisticCouplingPriors",
     "FSOT.Formal.MedicalGalacticOrbitalBridgePriors",
     "FSOT.Formal.MeteorologyGapFillPriors",
+    "FSOT.Formal.MusicHarmonicsPublicPanelPriors",
     "FSOT.Formal.MycologyExtensionPriors",
     "FSOT.Formal.NasaExoplanetArchivePriors",
     "FSOT.Formal.NetworkInternetProtocolsPriors",
+    "FSOT.Formal.NetworkSciencePublicPanelPriors",
     "FSOT.Formal.NeuralGalacticOrbitalBridgePriors",
     "FSOT.Formal.NeuroeconomicsExtensionPriors",
     "FSOT.Formal.NeuroimmunologyPriors",
+    "FSOT.Formal.NeurolabGapsMathSpinePriors",
+    "FSOT.Formal.NeurolabResidualMathSpinePriors",
     "FSOT.Formal.NeuronCohortPriors",
     "FSOT.Formal.NeuronCohortStrataPriors",
     "FSOT.Formal.NeuronCohortTrainHoldoutPriors",
@@ -167,6 +190,7 @@
     "FSOT.Formal.OmniTheoryGenesisPriors",
     "FSOT.Formal.OncologyPriors",
     "FSOT.Formal.OpenalexCitationGraphPriors",
+    "FSOT.Formal.OpenNeuroFullPanelPriors",
     "FSOT.Formal.OrbitalMechanicsPriors",
     "FSOT.Formal.PaleoclimateExtensionPriors",
     "FSOT.Formal.PaleontologyExtensionPriors",
@@ -182,17 +206,22 @@
     "FSOT.Formal.PlasmaPhysicsPriors",
     "FSOT.Formal.PortableCloneVerifyPriors",
     "FSOT.Formal.PredictionRederivationPriors",
+    "FSOT.Formal.PreregisteredOutcomeTrackingPriors",
     "FSOT.Formal.PreregisteredPredictionsPriors",
+    "FSOT.Formal.PreregisteredPredictionsVerificationScaffoldPriors",
     "FSOT.Formal.ProgrammingLanguageLawsPriors",
     "FSOT.Formal.ProofCarryingCodeGenomePriors",
+    "FSOT.Formal.ProofLedgerClosureSpinePriors",
     "FSOT.Formal.ProteinFormulas",
     "FSOT.Formal.ProteinPriors",
     "FSOT.Formal.PsychologyGapFillPriors",
     "FSOT.Formal.PubchemCompoundPropertiesPriors",
+    "FSOT.Formal.PubChemLiveDeepPriors",
     "FSOT.Formal.PubChemStabilityPanelPriors",
     "FSOT.Formal.PublishedFuelPropertyPanelPriors",
     "FSOT.Formal.PureMathematicsExtensionPriors",
     "FSOT.Formal.QuantumComputingGapFillPriors",
+    "FSOT.Formal.QuantumInformationPriors",
     "FSOT.Formal.QuantumMaterialsPriors",
     "FSOT.Formal.QuantumMechanicsGapFillPriors",
     "FSOT.Formal.QuantumOpticsGapFillPriors",
@@ -203,7 +232,9 @@
     "FSOT.Formal.SecureSoftwareEngineeringPriors",
     "FSOT.Formal.SeismologyDeepPriors",
     "FSOT.Formal.SeismologyPriors",
+    "FSOT.Formal.SemiconductorPhysicsPublicPanelPriors",
     "FSOT.Formal.SH0ESRefinedPriors",
+    "FSOT.Formal.SIMBADStellarIdentityDeepPriors",
     "FSOT.Formal.SmallBodyOrbitsPriors",
     "FSOT.Formal.SociologyGapFillPriors",
     "FSOT.Formal.SolarSystemStructureDeepPriors",
@@ -214,6 +245,7 @@
     "FSOT.Formal.SpeciesPriors",
     "FSOT.Formal.SpeleologyExtensionPriors",
     "FSOT.Formal.SportsBiomechanicsGapFillPriors",
+    "FSOT.Formal.StatisticalMechanicsPublicPanelPriors",
     "FSOT.Formal.StellarMultiplicityCatalogPriors",
     "FSOT.Formal.StellarMultiplicityLiveDeepPriors",
     "FSOT.Formal.StructureCalibrationPriors",
@@ -223,10 +255,12 @@
     "FSOT.Formal.SymbolicArchetypePanelPriors",
     "FSOT.Formal.SyntheticBiologyPriors",
     "FSOT.Formal.TectonicsPriors",
+    "FSOT.Formal.Term3AcousticBleedDepthPriors",
     "FSOT.Formal.TheoryCompletenessSpinePriors",
     "FSOT.Formal.ThesisSimulationPriors",
     "FSOT.Formal.TimeDomainCrosswalkPriors",
     "FSOT.Formal.TimeEmergenceSimulationPriors",
+    "FSOT.Formal.ToEClaimCertificateBundlePriors",
     "FSOT.Formal.ToEGapClosureSpinePriors",
     "FSOT.Formal.ToEUnificationSpinePriors",
     "FSOT.Formal.TokenizationSmokePriors",
@@ -237,14 +271,19 @@
     "FSOT.Formal.TrinaryOSPriors",
     "FSOT.Formal.TrinaryOSRoundTripPriors",
     "FSOT.Formal.TrinaryOSTierEPriors",
+    "FSOT.Formal.UnifiedDBCandidateCrosswalkPriors",
+    "FSOT.Formal.UnifiedDBCrosswalkSpinePriors",
     "FSOT.Formal.UnifiedDBPriors",
     "FSOT.Formal.UniprotProteinAnnotationsPriors",
     "FSOT.Formal.UniProtStructureAnnotationsDeepPriors",
     "FSOT.Formal.VibRegisterPriors",
     "FSOT.Formal.VirologyExtensionPriors",
+    "FSOT.Formal.VizieRWdsTapLiveDeepPriors",
     "FSOT.Formal.VlDistillAtlasPriors",
+    "FSOT.Formal.WDSLiveMultiplicityDeepPriors",
     "FSOT.Formal.WeatherPriors",
     "FSOT.Formal.WorldBankDevelopmentPriors",
+    "FSOT.Formal.XRInteractiveMediaMathScaffoldPriors",
     "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
     "FSOT.Formal.ZoologyExtensionPriors"
   ],
@@ -960,6 +999,13 @@
       "biology_strict_median_error_under_two_pct",
       "biology_strict_bundle"
     ],
+    "BiophysicsPublicPanelPriors": [
+      "biophysics_public_panel_observable_count_pos",
+      "biophysics_public_panel_pooled_median_under_half_pct",
+      "biophysics_public_panel_headline_median_under_half_pct",
+      "biophysics_public_panel_beats_sota_headlines_pos",
+      "biophysics_public_panel_bundle"
+    ],
     "BlackHoleThesisPriors": [
       "blackhole_thesis_observable_count_pos",
       "blackhole_thesis_within_le_total",
@@ -971,6 +1017,13 @@
       "botany_ext_headline_median_under_half_pct",
       "botany_ext_beats_sota_headlines_pos",
       "botany_ext_bundle"
+    ],
+    "BoundaryPartitionTighteningPriors": [
+      "boundary_partition_tightening_observable_count_pos",
+      "boundary_partition_tightening_pooled_median_under_half_pct",
+      "boundary_partition_tightening_headline_median_under_half_pct",
+      "boundary_partition_tightening_beats_sota_headlines_pos",
+      "boundary_partition_tightening_bundle"
     ],
     "Bounds": [
       "gamma_euler_pos",
@@ -1654,6 +1707,13 @@
       "cosmology_wave9_median_error_under_half_pct",
       "cosmology_wave9_bundle"
     ],
+    "CreativeArtsMathSpinePriors": [
+      "creative_arts_math_spine_observable_count_pos",
+      "creative_arts_math_spine_pooled_median_under_half_pct",
+      "creative_arts_math_spine_headline_median_under_half_pct",
+      "creative_arts_math_spine_beats_sota_headlines_pos",
+      "creative_arts_math_spine_bundle"
+    ],
     "CryospherePriors": [
       "cryosphere_month_count_pos",
       "cryosphere_match_le_total",
@@ -1789,6 +1849,13 @@
       "ecology_gap_fill_beats_sota_headlines_pos",
       "ecology_gap_fill_bundle"
     ],
+    "EcologyPublicPanelPriors": [
+      "ecology_observable_count_pos",
+      "ecology_pooled_median_under_half_pct",
+      "ecology_headline_median_under_half_pct",
+      "ecology_beats_sota_headlines_pos",
+      "ecology_bundle"
+    ],
     "EconometricsGapFillPriors": [
       "econometrics_gap_fill_observable_count_pos",
       "econometrics_gap_fill_pooled_median_under_half_pct",
@@ -1802,6 +1869,13 @@
       "economics_gap_fill_headline_median_under_half_pct",
       "economics_gap_fill_beats_sota_headlines_pos",
       "economics_gap_fill_bundle"
+    ],
+    "EconophysicsPriors": [
+      "econophysics_observable_count_pos",
+      "econophysics_pooled_median_under_half_pct",
+      "econophysics_headline_median_under_half_pct",
+      "econophysics_beats_sota_headlines_pos",
+      "econophysics_bundle"
     ],
     "ElectricalPowerSystemsPriors": [
       "electrical_power_systems_observable_count_pos",
@@ -1948,6 +2022,13 @@
       "formula_corpus_tolerable_le_total",
       "formula_corpus_strict_empirical_bundle"
     ],
+    "FormulaPrecisionSpinePriors": [
+      "formula_precision_spine_observable_count_pos",
+      "formula_precision_spine_pooled_median_under_half_pct",
+      "formula_precision_spine_headline_median_under_half_pct",
+      "formula_precision_spine_beats_sota_headlines_pos",
+      "formula_precision_spine_bundle"
+    ],
     "FPCTemporalCouplingPriors": [
       "fpc_link_observable_count_pos",
       "fpc_link_pooled_median_under_half_pct",
@@ -1964,16 +2045,51 @@
       "const_rec_families_pos",
       "const_rec_bundle"
     ],
+    "FsotAggregateOrganizedPanelPriors": [
+      "fsot_aggregate_organized_panel_observable_count_pos",
+      "fsot_aggregate_organized_panel_pooled_median_under_half_pct",
+      "fsot_aggregate_organized_panel_headline_median_under_half_pct",
+      "fsot_aggregate_organized_panel_beats_sota_headlines_pos",
+      "fsot_aggregate_organized_panel_bundle"
+    ],
     "FsotAggregateUnifiedDbPriors": [
       "fsot_aggregate_unified_db_observable_count_pos",
       "fsot_aggregate_unified_db_median_error_under_half_pct",
       "fsot_aggregate_unified_db_bundle"
+    ],
+    "FuelCandidatePreregScaffoldPriors": [
+      "fuel_candidate_prereg_scaffold_observable_count_pos",
+      "fuel_candidate_prereg_scaffold_pooled_median_under_half_pct",
+      "fuel_candidate_prereg_scaffold_headline_median_under_half_pct",
+      "fuel_candidate_prereg_scaffold_beats_sota_headlines_pos",
+      "fuel_candidate_prereg_scaffold_bundle"
     ],
     "FuelPriors": [
       "fuel_profile_count_pos",
       "fuel_resolved_le_entries",
       "fuel_lab_chemical_domain_positive",
       "fuel_lab_compound_bundle"
+    ],
+    "FuelThermochemistryPublicAnchorsPriors": [
+      "fuel_thermochemistry_public_anchors_observable_count_pos",
+      "fuel_thermochemistry_public_anchors_pooled_median_under_half_pct",
+      "fuel_thermochemistry_public_anchors_headline_median_under_half_pct",
+      "fuel_thermochemistry_public_anchors_beats_sota_headlines_pos",
+      "fuel_thermochemistry_public_anchors_bundle"
+    ],
+    "GaiaAstrometryPanelDeepPriors": [
+      "gaia_astrometry_panel_deep_observable_count_pos",
+      "gaia_astrometry_panel_deep_pooled_median_under_half_pct",
+      "gaia_astrometry_panel_deep_headline_median_under_half_pct",
+      "gaia_astrometry_panel_deep_beats_sota_headlines_pos",
+      "gaia_astrometry_panel_deep_bundle"
+    ],
+    "GaiaDR3TAPDeepPriors": [
+      "gaia_dr3_tap_deep_observable_count_pos",
+      "gaia_dr3_tap_deep_pooled_median_under_half_pct",
+      "gaia_dr3_tap_deep_headline_median_under_half_pct",
+      "gaia_dr3_tap_deep_beats_sota_headlines_pos",
+      "gaia_dr3_tap_deep_bundle"
     ],
     "GalacticStructureSamplePriors": [
       "galactic_structure_sample_observable_count_pos",
@@ -2009,6 +2125,13 @@
       "phi_pow_neg5_lt_09018",
       "autosome_haploid_count_eq_twenty_two",
       "genomic_exact_identity_bundle"
+    ],
+    "GenomicSciencesPriors": [
+      "genomic_sciences_observable_count_pos",
+      "genomic_sciences_pooled_median_under_half_pct",
+      "genomic_sciences_headline_median_under_half_pct",
+      "genomic_sciences_beats_sota_headlines_pos",
+      "genomic_sciences_bundle"
     ],
     "GeochemistryPriors": [
       "geochemistry_observable_count_pos",
@@ -2104,6 +2227,20 @@
       "immunology_median_error_under_half_pct",
       "immunology_bundle"
     ],
+    "InformationTheoryPublicPanelPriors": [
+      "information_theory_public_panel_observable_count_pos",
+      "information_theory_public_panel_pooled_median_under_half_pct",
+      "information_theory_public_panel_headline_median_under_half_pct",
+      "information_theory_public_panel_beats_sota_headlines_pos",
+      "information_theory_public_panel_bundle"
+    ],
+    "InitiationTransformationArchetypePriors": [
+      "initiation_transformation_archetype_observable_count_pos",
+      "initiation_transformation_archetype_pooled_median_under_half_pct",
+      "initiation_transformation_archetype_headline_median_under_half_pct",
+      "initiation_transformation_archetype_beats_sota_headlines_pos",
+      "initiation_transformation_archetype_bundle"
+    ],
     "IntelligenceCompressionPriors": [
       "fic_sweep_row_count_pos",
       "fic_fertile_rows_present",
@@ -2111,6 +2248,13 @@
       "fic_best_intelligence_score_positive",
       "fic_fertile_replay_match_rate_le_one",
       "intelligence_compression_priors_bundle"
+    ],
+    "InteractiveMediaPreregScaffoldPriors": [
+      "interactive_media_prereg_scaffold_observable_count_pos",
+      "interactive_media_prereg_scaffold_pooled_median_under_half_pct",
+      "interactive_media_prereg_scaffold_headline_median_under_half_pct",
+      "interactive_media_prereg_scaffold_beats_sota_headlines_pos",
+      "interactive_media_prereg_scaffold_bundle"
     ],
     "InterdisciplinarySpineCrosswalkPriors": [
       "interdisciplinary_spine_crosswalk_observable_count_pos",
@@ -2188,6 +2332,13 @@
       "linguistics_max_error_within_five_pct",
       "linguistics_priors_bundle"
     ],
+    "LiveIngestSpinePriors": [
+      "live_ingest_spine_observable_count_pos",
+      "live_ingest_spine_pooled_median_under_half_pct",
+      "live_ingest_spine_headline_median_under_half_pct",
+      "live_ingest_spine_beats_sota_headlines_pos",
+      "live_ingest_spine_bundle"
+    ],
     "MagicCirclePriors": [
       "magic_min_resonance_lt_internalized",
       "magic_imbalance_penalty_in_unit_interval",
@@ -2232,6 +2383,20 @@
       "marine_biology_ext_beats_sota_headlines_pos",
       "marine_biology_ext_bundle"
     ],
+    "MaterialInSilicoScreeningScaffoldPriors": [
+      "material_in_silico_screening_scaffold_observable_count_pos",
+      "material_in_silico_screening_scaffold_pooled_median_under_half_pct",
+      "material_in_silico_screening_scaffold_headline_median_under_half_pct",
+      "material_in_silico_screening_scaffold_beats_sota_headlines_pos",
+      "material_in_silico_screening_scaffold_bundle"
+    ],
+    "MaterialPropertyVerificationScaffoldPriors": [
+      "material_property_verification_scaffold_observable_count_pos",
+      "material_property_verification_scaffold_pooled_median_under_half_pct",
+      "material_property_verification_scaffold_headline_median_under_half_pct",
+      "material_property_verification_scaffold_beats_sota_headlines_pos",
+      "material_property_verification_scaffold_bundle"
+    ],
     "MaterialsEngineeringPriors": [
       "materials_engineering_observable_count_pos",
       "materials_engineering_section_count_pos",
@@ -2246,6 +2411,13 @@
       "materials_genome_crosswalk_headline_median_under_half_pct",
       "materials_genome_crosswalk_beats_sota_headlines_pos",
       "materials_genome_crosswalk_bundle"
+    ],
+    "MaterialsProjectLivePanelPriors": [
+      "materials_project_live_panel_observable_count_pos",
+      "materials_project_live_panel_pooled_median_under_half_pct",
+      "materials_project_live_panel_headline_median_under_half_pct",
+      "materials_project_live_panel_beats_sota_headlines_pos",
+      "materials_project_live_panel_bundle"
     ],
     "MaterialsSpeciesBridgePriors": [
       "materials_species_bridge_observable_count_pos",
@@ -2313,6 +2485,13 @@
       "meteorology_gap_fill_beats_sota_headlines_pos",
       "meteorology_gap_fill_bundle"
     ],
+    "MusicHarmonicsPublicPanelPriors": [
+      "music_harmonics_public_panel_observable_count_pos",
+      "music_harmonics_public_panel_pooled_median_under_half_pct",
+      "music_harmonics_public_panel_headline_median_under_half_pct",
+      "music_harmonics_public_panel_beats_sota_headlines_pos",
+      "music_harmonics_public_panel_bundle"
+    ],
     "MycologyExtensionPriors": [
       "mycology_ext_observable_count_pos",
       "mycology_ext_pooled_median_under_half_pct",
@@ -2331,6 +2510,13 @@
       "network_inet_headline_median_under_half_pct",
       "network_inet_beats_sota_headlines_pos",
       "network_inet_bundle"
+    ],
+    "NetworkSciencePublicPanelPriors": [
+      "network_science_public_panel_observable_count_pos",
+      "network_science_public_panel_pooled_median_under_half_pct",
+      "network_science_public_panel_headline_median_under_half_pct",
+      "network_science_public_panel_beats_sota_headlines_pos",
+      "network_science_public_panel_bundle"
     ],
     "NeuralGalacticOrbitalBridgePriors": [
       "neu_gal_br_observable_count_pos",
@@ -2354,6 +2540,20 @@
       "neuroimmunology_headline_median_under_half_pct",
       "neuroimmunology_beats_sota_headlines_pos",
       "neuroimmunology_bundle"
+    ],
+    "NeurolabGapsMathSpinePriors": [
+      "neurolab_gaps_math_spine_observable_count_pos",
+      "neurolab_gaps_math_spine_pooled_median_under_half_pct",
+      "neurolab_gaps_math_spine_headline_median_under_half_pct",
+      "neurolab_gaps_math_spine_beats_sota_headlines_pos",
+      "neurolab_gaps_math_spine_bundle"
+    ],
+    "NeurolabResidualMathSpinePriors": [
+      "neurolab_residual_math_spine_observable_count_pos",
+      "neurolab_residual_math_spine_pooled_median_under_half_pct",
+      "neurolab_residual_math_spine_headline_median_under_half_pct",
+      "neurolab_residual_math_spine_beats_sota_headlines_pos",
+      "neurolab_residual_math_spine_bundle"
     ],
     "NeuronCohortPriors": [
       "allen_cohort_cell_count_pos",
@@ -2454,6 +2654,13 @@
       "openalex_citation_graph_median_error_under_half_pct",
       "openalex_citation_graph_bundle"
     ],
+    "OpenNeuroFullPanelPriors": [
+      "openneuro_full_panel_observable_count_pos",
+      "openneuro_full_panel_pooled_median_under_half_pct",
+      "openneuro_full_panel_headline_median_under_half_pct",
+      "openneuro_full_panel_beats_sota_headlines_pos",
+      "openneuro_full_panel_bundle"
+    ],
     "OrbitalMechanicsPriors": [
       "orbital_mechanics_body_count_pos",
       "orbital_mechanics_median_error_under_half_pct",
@@ -2552,6 +2759,13 @@
       "prediction_rederivation_median_error_under_half_pct",
       "prediction_rederivation_bundle"
     ],
+    "PreregisteredOutcomeTrackingPriors": [
+      "preregistered_outcome_tracking_observable_count_pos",
+      "preregistered_outcome_tracking_pooled_median_under_half_pct",
+      "preregistered_outcome_tracking_headline_median_under_half_pct",
+      "preregistered_outcome_tracking_beats_sota_headlines_pos",
+      "preregistered_outcome_tracking_bundle"
+    ],
     "PreregisteredPredictionsPriors": [
       "prereg_observable_count_pos",
       "prereg_pooled_median_under_half_pct",
@@ -2559,6 +2773,13 @@
       "prereg_beats_sota_headlines_pos",
       "prereg_predictions_pos",
       "prereg_bundle"
+    ],
+    "PreregisteredPredictionsVerificationScaffoldPriors": [
+      "preregistered_predictions_verification_scaffold_observable_count_pos",
+      "preregistered_predictions_verification_scaffold_pooled_median_under_half_pct",
+      "preregistered_predictions_verification_scaffold_headline_median_under_half_pct",
+      "preregistered_predictions_verification_scaffold_beats_sota_headlines_pos",
+      "preregistered_predictions_verification_scaffold_bundle"
     ],
     "ProgrammingLanguageLawsPriors": [
       "pl_laws_observable_count_pos",
@@ -2576,6 +2797,13 @@
       "proof_cg_beats_sota_headlines_pos",
       "proof_cg_oss_pairs_pos",
       "proof_cg_bundle"
+    ],
+    "ProofLedgerClosureSpinePriors": [
+      "proof_ledger_closure_spine_observable_count_pos",
+      "proof_ledger_closure_spine_pooled_median_under_half_pct",
+      "proof_ledger_closure_spine_headline_median_under_half_pct",
+      "proof_ledger_closure_spine_beats_sota_headlines_pos",
+      "proof_ledger_closure_spine_bundle"
     ],
     "ProteinFormulas": [
       "protein_formula_catalog_count_eq_fifteen",
@@ -2625,6 +2853,13 @@
       "pubchem_compound_properties_median_error_under_half_pct",
       "pubchem_compound_properties_bundle"
     ],
+    "PubChemLiveDeepPriors": [
+      "pubchem_live_deep_observable_count_pos",
+      "pubchem_live_deep_pooled_median_under_half_pct",
+      "pubchem_live_deep_headline_median_under_half_pct",
+      "pubchem_live_deep_beats_sota_headlines_pos",
+      "pubchem_live_deep_bundle"
+    ],
     "PubChemStabilityPanelPriors": [
       "pubchem_stability_panel_observable_count_pos",
       "pubchem_stability_panel_pooled_median_under_half_pct",
@@ -2652,6 +2887,13 @@
       "quantum_computing_gap_fill_headline_median_under_half_pct",
       "quantum_computing_gap_fill_beats_sota_headlines_pos",
       "quantum_computing_gap_fill_bundle"
+    ],
+    "QuantumInformationPriors": [
+      "quantum_information_observable_count_pos",
+      "quantum_information_pooled_median_under_half_pct",
+      "quantum_information_headline_median_under_half_pct",
+      "quantum_information_beats_sota_headlines_pos",
+      "quantum_information_bundle"
     ],
     "QuantumMaterialsPriors": [
       "quantum_materials_observable_count_pos",
@@ -2719,6 +2961,13 @@
       "seismology_match_le_total",
       "seismology_bundle"
     ],
+    "SemiconductorPhysicsPublicPanelPriors": [
+      "semiconductor_physics_public_panel_observable_count_pos",
+      "semiconductor_physics_public_panel_pooled_median_under_half_pct",
+      "semiconductor_physics_public_panel_headline_median_under_half_pct",
+      "semiconductor_physics_public_panel_beats_sota_headlines_pos",
+      "semiconductor_physics_public_panel_bundle"
+    ],
     "SH0ESRefinedPriors": [
       "sh0es_refined_observable_count_pos",
       "sh0es_refined_pooled_median_under_half_pct",
@@ -2726,6 +2975,13 @@
       "sh0es_refined_beats_sota_headlines_pos",
       "sh0es_refined_hosts_pos",
       "sh0es_refined_bundle"
+    ],
+    "SIMBADStellarIdentityDeepPriors": [
+      "simbad_stellar_identity_deep_observable_count_pos",
+      "simbad_stellar_identity_deep_pooled_median_under_half_pct",
+      "simbad_stellar_identity_deep_headline_median_under_half_pct",
+      "simbad_stellar_identity_deep_beats_sota_headlines_pos",
+      "simbad_stellar_identity_deep_bundle"
     ],
     "SmallBodyOrbitsPriors": [
       "small_body_orbit_count_pos",
@@ -2786,6 +3042,13 @@
       "sports_biomechanics_gap_fill_headline_median_under_half_pct",
       "sports_biomechanics_gap_fill_beats_sota_headlines_pos",
       "sports_biomechanics_gap_fill_bundle"
+    ],
+    "StatisticalMechanicsPublicPanelPriors": [
+      "statistical_mechanics_public_panel_observable_count_pos",
+      "statistical_mechanics_public_panel_pooled_median_under_half_pct",
+      "statistical_mechanics_public_panel_headline_median_under_half_pct",
+      "statistical_mechanics_public_panel_beats_sota_headlines_pos",
+      "statistical_mechanics_public_panel_bundle"
     ],
     "StellarMultiplicityCatalogPriors": [
       "stellar_multiplicity_catalog_observable_count_pos",
@@ -2849,6 +3112,13 @@
       "tectonics_boundary_count_pos",
       "tectonics_match_le_total",
       "tectonics_bundle"
+    ],
+    "Term3AcousticBleedDepthPriors": [
+      "term3_acoustic_bleed_depth_observable_count_pos",
+      "term3_acoustic_bleed_depth_pooled_median_under_half_pct",
+      "term3_acoustic_bleed_depth_headline_median_under_half_pct",
+      "term3_acoustic_bleed_depth_beats_sota_headlines_pos",
+      "term3_acoustic_bleed_depth_bundle"
     ],
     "Theorems": [
       "coherence_efficiency_positive",
@@ -2938,6 +3208,13 @@
       "time_em_scales_complete",
       "time_em_bundle"
     ],
+    "ToEClaimCertificateBundlePriors": [
+      "toe_claim_certificate_bundle_observable_count_pos",
+      "toe_claim_certificate_bundle_pooled_median_under_half_pct",
+      "toe_claim_certificate_bundle_headline_median_under_half_pct",
+      "toe_claim_certificate_bundle_beats_sota_headlines_pos",
+      "toe_claim_certificate_bundle_bundle"
+    ],
     "ToEGapClosureSpinePriors": [
       "gap_spine_observable_count_pos",
       "gap_spine_pooled_median_under_half_pct",
@@ -2998,6 +3275,20 @@
       "trinary_os_tier_e_beats_sota_headlines_pos",
       "trinary_os_tier_e_bundle"
     ],
+    "UnifiedDBCandidateCrosswalkPriors": [
+      "unified_db_candidate_crosswalk_observable_count_pos",
+      "unified_db_candidate_crosswalk_pooled_median_under_half_pct",
+      "unified_db_candidate_crosswalk_headline_median_under_half_pct",
+      "unified_db_candidate_crosswalk_beats_sota_headlines_pos",
+      "unified_db_candidate_crosswalk_bundle"
+    ],
+    "UnifiedDBCrosswalkSpinePriors": [
+      "unified_db_crosswalk_spine_observable_count_pos",
+      "unified_db_crosswalk_spine_pooled_median_under_half_pct",
+      "unified_db_crosswalk_spine_headline_median_under_half_pct",
+      "unified_db_crosswalk_spine_beats_sota_headlines_pos",
+      "unified_db_crosswalk_spine_bundle"
+    ],
     "UnifiedDBPriors": [
       "unified_db_strict_le_total",
       "unified_db_evaluation_ok_pos",
@@ -3030,10 +3321,24 @@
       "virology_ext_beats_sota_headlines_pos",
       "virology_ext_bundle"
     ],
+    "VizieRWdsTapLiveDeepPriors": [
+      "vizier_wds_tap_live_deep_observable_count_pos",
+      "vizier_wds_tap_live_deep_pooled_median_under_half_pct",
+      "vizier_wds_tap_live_deep_headline_median_under_half_pct",
+      "vizier_wds_tap_live_deep_beats_sota_headlines_pos",
+      "vizier_wds_tap_live_deep_bundle"
+    ],
     "VlDistillAtlasPriors": [
       "vl_distill_atlas_observable_count_pos",
       "vl_distill_atlas_median_error_under_half_pct",
       "vl_distill_atlas_bundle"
+    ],
+    "WDSLiveMultiplicityDeepPriors": [
+      "wds_live_multiplicity_deep_observable_count_pos",
+      "wds_live_multiplicity_deep_pooled_median_under_half_pct",
+      "wds_live_multiplicity_deep_headline_median_under_half_pct",
+      "wds_live_multiplicity_deep_beats_sota_headlines_pos",
+      "wds_live_multiplicity_deep_bundle"
     ],
     "WeatherPriors": [
       "weather_S_min_positive",
@@ -3044,6 +3349,13 @@
       "world_bank_development_observable_count_pos",
       "world_bank_development_median_error_under_half_pct",
       "world_bank_development_bundle"
+    ],
+    "XRInteractiveMediaMathScaffoldPriors": [
+      "xr_interactive_media_math_scaffold_observable_count_pos",
+      "xr_interactive_media_math_scaffold_pooled_median_under_half_pct",
+      "xr_interactive_media_math_scaffold_headline_median_under_half_pct",
+      "xr_interactive_media_math_scaffold_beats_sota_headlines_pos",
+      "xr_interactive_media_math_scaffold_bundle"
     ],
     "ZeroDayRiskEvaluatorPriors": [
       "zero_day_eval_observable_count_pos",
@@ -3063,8 +3375,8 @@
   },
   "source_manifest_sha256": {
     "FSOT/Formal/Scalar.lean": "D406DBD020F8A22F635C13F2EB22AD02174D95F90813877118F054791B79F19E",
-    "FSOT/Formal/Bounds.lean": "0073CF4790D4E6B9BFA6B0D1C0AC9B8688736B06A7B6CFCA1576292870AC5EB1",
-    "FSOT/Formal/Theorems.lean": "1F598240C89B7EA5A9F4D3DF58BA4A47919E117C6FD186AA1CC09D0B4885A00C",
+    "FSOT/Formal/Bounds.lean": "E8942B390D2846DB98FF2976D228A83E7C9868B933ABF8EA0D2C66A5C8A97368",
+    "FSOT/Formal/Theorems.lean": "F89D7D11EA37FA447384BCDBD1233D430DB939AC17F1466711C9BF33D3FD7DDA",
     "FSOT/Formal/Cosmology.lean": "FBAA456C96AB8350193ECD1E373321A64F97119B0B58690EBCDE8EE5E3D33931",
     "FSOT/Formal/Domains.lean": "8788FFA993AD3C8F2A2FEFA04484FEE8F6C8637365EDFCB812154B068478543E",
     "FSOT/Formal/Genomic.lean": "36F4F7263922401FCF60CDDC24514A4AA1A6373B0EC528CFA2FF9C9EE9E7E47F",
@@ -3081,8 +3393,8 @@
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
-  "formal_module_count": 241,
-  "lean_target_count": 242,
+  "formal_module_count": 280,
+  "lean_target_count": 281,
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",

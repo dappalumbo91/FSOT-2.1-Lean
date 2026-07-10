@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Lean priors for 141-domain coupling simulation."""
+"""Generate Lean priors for full scientific-domain coupling simulation."""
 
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ def main() -> int:
     out = FORMAL / "DomainCouplingSimulationPriors.lean"
     out.write_text(
         f"""/-
-  FSOT Formal DomainCouplingSimulationPriors — 141-domain cross-domain coupling graph.
+  FSOT Formal DomainCouplingSimulationPriors — {n_nodes}-domain cross-domain coupling graph.
   Generator: scripts/gen_domain_coupling_simulation_lean.py
 -/
 

@@ -104,6 +104,18 @@ priority_queue:
     focus: [proof_ledger_closure, lake_build_certificate, preregistered_outcome_tracking]
     note: "Publication-facing ToE claim bundle — proof ledger + prereg outcomes + certificate"
 
+maintenance_tier:
+  tier_71:
+    status: ongoing
+    focus:
+      - domain_coupling_simulation_refresh
+      - lake_build_certificate
+      - hybrid_fi_sim_multi_hero
+      - knowledge_base_portable_bundle
+      - rd_interval_tightening
+      - fusion_lab_certificates
+    note: "Post–Tier 70 upkeep — coupling graph regen, certificate export, roadmap maintenance items"
+
 discoverability_principles:
   - "Public repo = reproducible verification against published data"
   - "Novel formulas with commercial or discovery value → preregister first"

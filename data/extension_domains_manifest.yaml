@@ -1372,7 +1372,7 @@ extension_domains:
     build_script: scripts/build_domain_coupling_simulation.py
     benchmark_data: data/domain_coupling_simulation_benchmark.json
     lean_module: FSOT.Formal.DomainCouplingSimulationPriors
-    note: "141-domain coupling graph — maps_to_lean overlaps + fsot_compute cross-ratios + magnetosphere cluster"
+    note: "246-domain coupling graph — maps_to_lean overlaps + fsot_compute cross-ratios + magnetosphere cluster"
 
   Formula_Corpus_Closure:
     tier: 42

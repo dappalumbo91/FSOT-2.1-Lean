@@ -38,7 +38,7 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 | Verification tiers | **48/48 complete** (100%) |
 | Extension domains | **210/210** pass `verify_extension_domains.py` (≤0.5% pooled gate) |
 | Scientific domains | **246** (35 NeuroLab + 210 extension + Intelligence Compression rollup) |
-| Coupling simulation | **183 nodes · 6,138 edges** (maps_to_lean + cross-ratios + magnetosphere + cyber stack) |
+| Coupling simulation | **246 nodes · 12,840 edges** (maps_to_lean + cross-ratios + magnetosphere + cyber stack) |
 | Empirical records | **306,680+** |
 | Neurolab precision | **35/35** domains ≤2% median error |
 | Coverage tiers | A_strong: 25 · B_verified: 10 · C_thin: **0** · D_needs_work: **0** · unverified: **0** |
@@ -69,7 +69,7 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - Unified DB inventory (`FSOT.Formal.UnifiedDBPriors`) — 30,984 indexed records, 26 projects (inventory tier)
 - Cosmology Wave-4 (`FSOT.Formal.CosmologyWave4Priors`) — 16 observables (PMNS/CKM/nuclear/dark-energy); legacy `CosmologyWave4.lean` is a deprecation shim
 - GFZ Kp historical arc (`FSOT.Formal.SpaceWeatherPriors`) — **271,813** Kp records (1932–2024), 100% stability match; portable **501-record** summary in repo, full arc on `G:/FSOT-PublicData`
-- Cross-domain coupling simulation (`FSOT.Formal.DomainCouplingSimulationPriors`) — **183** nodes, **6,138** coupling edges, 0% pooled median
+- Cross-domain coupling simulation (`FSOT.Formal.DomainCouplingSimulationPriors`) — **246** nodes, **12,840** coupling edges, 0% pooled median
 - Tier 43 cybersecurity (`FSOT.Formal.ZeroDayRiskEvaluatorPriors`) — **9-language** code-genome bridges (Lean/Rust/Python/C/JS/Go/Zig/WASM/FSOTB_ISA), MalwareBazaar **200** samples + CISA KEV **1,635** CVEs on `G:/FSOT-PublicData/cybersecurity`
 - Malware threat intelligence depth (`FSOT.Formal.MalwareThreatIntelligencePriors`) — **301** records, virology structural bridge
 - Code genome structure (`FSOT.Formal.CodeGenomeStructurePriors`) — **205** records, genomic codon hole detection
@@ -220,6 +220,18 @@ python scripts/build_tier70_toe_claim_hardening_benchmarks.py
 python scripts/gen_tiers_67_lean.py
 python scripts/gen_tiers_68_70_lean.py
 python scripts/verify_extension_domains.py
+```
+
+```bash
+# Post–Tier 70 maintenance (coupling sim + certificate refresh)
+python scripts/build_domain_coupling_simulation.py
+python scripts/gen_domain_coupling_simulation_lean.py
+python scripts/verify_extension_domains.py
+lake build
+python scripts/export_certificate.py --lean-ok
+python scripts/build_fsot_verification_progress.py
+python scripts/build_fsot_verified_scope.py
+python scripts/build_scientific_domain_expansion_map.py
 ```
 
 ### Formula verification honesty (Tier 6)

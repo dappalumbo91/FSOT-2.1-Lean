@@ -1,4 +1,4 @@
-generated_at: '2026-07-10T18:39:09.742189+00:00'
+generated_at: '2026-07-10T18:45:28.546540+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -9,12 +9,12 @@ verification_summary:
   lean_formal_modules: 280
   proved_claims: 65
   sorry_count_formal: 0
-  lean_build_ok: false
+  lean_build_ok: true
   tiers_complete: 48
   tiers_total: 48
   percent_complete: 100.0
-current_tier: Tier 50 Time emergence / FPC — emergent τ spine, multi-domain crosswalk,
-  FluidLink timing hub, Tier 49 fold spine linked
+current_tier: Tier 70 ToE claim hardening complete — 210/210 extension domains verified,
+  246-node coupling simulation refreshed, lake build certified
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -423,8 +423,8 @@ proved_claims:
   lean_module: FSOT.Formal.DomainPrecisionPriors
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
-lean_build_ok: false
-scientific_domains_covered: 231
+lean_build_ok: true
+scientific_domains_covered: 246
 total_empirical_records: 306680
 tier_coverage:
 - tier: 1
@@ -814,7 +814,7 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 231
+    scientific_domains_covered: 246
     expansion_candidates: 0
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -1373,8 +1373,8 @@ tier_coverage:
     weather split
   status: complete
   metrics:
-    coupling_node_count: 183
-    coupling_edge_count: 6138
+    coupling_node_count: 246
+    coupling_edge_count: 12840
     coupling_pooled_median_error_pct: 0.0
     formula_closure_records: 123
     formula_closure_strict_empirical: 7941
@@ -1404,7 +1404,7 @@ tier_coverage:
     tier_h_depth_code_genome_records: 205
     zero_day_risk_tier: RED
     zero_day_hole_count: 82
-    coupling_node_count: 183
+    coupling_node_count: 246
     external_cache_root: G:/FSOT-PublicData/cybersecurity
   artifacts:
   - scripts/ingest_cybersecurity_public_data.py
@@ -1431,7 +1431,7 @@ tier_coverage:
     linguistics_bridge_count: 25
     code_genome_bridge_count: 13
     oss_refresh_cadence_days: 7
-    coupling_node_count: 183
+    coupling_node_count: 246
     external_cache_root: G:/FSOT-PublicData/github_oss
   artifacts:
   - scripts/ingest_github_oss_code_genome.py
@@ -1459,7 +1459,7 @@ tier_coverage:
     kev_falsification_records: 1635
     cwe_codon_overlap_rate: 0.5
     theory_completeness_status: GREEN
-    coupling_node_count: 183
+    coupling_node_count: 246
   artifacts:
   - data/fsot_formula_spine.yaml
   - data/mechanistic_coupling_manifest.yaml
@@ -1481,7 +1481,7 @@ tier_coverage:
     quirkmod_derived_count: 67
     adversarial_detection_rate: 1.0
     gap_closure_status: GREEN
-    coupling_node_count: 183
+    coupling_node_count: 246
   artifacts:
   - data/fractal_constant_recursion.yaml
   - data/preregistered_predictions_manifest.yaml
@@ -1507,7 +1507,7 @@ tier_coverage:
     filled_orbital_predictions: 12
     orbital_gap_fill_status: GREEN
     mechanistic_channel_count: 39
-    coupling_node_count: 183
+    coupling_node_count: 246
   artifacts:
   - data/orbital_gap_fill_manifest.yaml
   - data/domain_orbital_prediction_report.json
@@ -1526,7 +1526,7 @@ tier_coverage:
     orbital_prediction_total: 12
     orbital_gap_fill_status: GREEN
     toe_unification_status: GREEN
-    coupling_node_count: 183
+    coupling_node_count: 246
     mechanistic_channel_count: 39
     external_cache_root: G:/FSOT-PublicData/cross_scale_bridges
   artifacts:
@@ -1552,7 +1552,7 @@ tier_coverage:
     fold_metrics_status: GREEN
     folding_spine_status: GREEN
     mechanistic_channel_count: 39
-    coupling_node_count: 183
+    coupling_node_count: 246
     external_cache_root: G:/FSOT-PublicData/compactification_ladder
   artifacts:
   - data/compactification_ladder_manifest.yaml
@@ -1576,7 +1576,7 @@ tier_coverage:
     fpc_spine_status: GREEN
     fold_spine_link_status: GREEN
     mechanistic_channel_count: 39
-    coupling_node_count: 183
+    coupling_node_count: 246
   artifacts:
   - data/time_emergence_manifest.yaml
   - scripts/time_emergence_lib.py
@@ -2219,7 +2219,7 @@ extension_domains:
   lean_module: FSOT.Formal.SupplyChainLogisticsExtensionPriors
 - domain: Domain_Coupling_Simulation
   tier: 42
-  record_count: 6138
+  record_count: 12840
   median_error_pct: 0.0
   coverage_tier: A_strong
   lean_module: FSOT.Formal.DomainCouplingSimulationPriors
@@ -2760,62 +2760,92 @@ extension_domains:
 - domain: Term3_Acoustic_Bleed_Depth
   tier: 67
   record_count: 23
+  median_error_pct: 0.008381497018408523
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.Term3AcousticBleedDepthPriors
 - domain: Initiation_Transformation_Archetype
   tier: 67
   record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.InitiationTransformationArchetypePriors
 - domain: Boundary_Partition_Tightening
   tier: 67
   record_count: 8
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.BoundaryPartitionTighteningPriors
 - domain: Formula_Precision_Spine
   tier: 67
   record_count: 27
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.FormulaPrecisionSpinePriors
 - domain: Materials_Project_Live_Panel
   tier: 68
   record_count: 51
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.MaterialsProjectLivePanelPriors
 - domain: PubChem_Live_Deep
   tier: 68
   record_count: 36
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.PubChemLiveDeepPriors
 - domain: OpenNeuro_Full_Panel
   tier: 68
   record_count: 15
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.OpenNeuroFullPanelPriors
 - domain: VizieR_WDS_TAP_Live_Deep
   tier: 68
   record_count: 25
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.VizieRWdsTapLiveDeepPriors
 - domain: Live_Ingest_Spine
   tier: 68
   record_count: 28
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.LiveIngestSpinePriors
 - domain: Unified_DB_Candidate_Crosswalk
   tier: 69
   record_count: 46
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.UnifiedDBCandidateCrosswalkPriors
 - domain: FSOT_Aggregate_Organized_Panel
   tier: 69
   record_count: 10
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.FsotAggregateOrganizedPanelPriors
 - domain: Unified_DB_Crosswalk_Spine
   tier: 69
   record_count: 18
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.UnifiedDBCrosswalkSpinePriors
 - domain: Proof_Ledger_Closure_Spine
   tier: 70
   record_count: 17
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.ProofLedgerClosureSpinePriors
 - domain: Preregistered_Outcome_Tracking
   tier: 70
   record_count: 18
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.PreregisteredOutcomeTrackingPriors
 - domain: ToE_Claim_Certificate_Bundle
   tier: 70
   record_count: 7
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.ToEClaimCertificateBundlePriors
 theory_crosswalk:
   Aerospace_Engineering:

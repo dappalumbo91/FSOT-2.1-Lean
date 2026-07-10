@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""141-domain cross-domain coupling simulation — lean-tag edges + scalar cross-ratios."""
+"""246-domain cross-domain coupling simulation — lean-tag edges + scalar cross-ratios."""
 
 from __future__ import annotations
 
