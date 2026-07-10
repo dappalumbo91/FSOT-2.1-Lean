@@ -1,0 +1,30 @@
+# Legacy tech connective promotion — E10D-WD warp energy bus
+version: '1.0'
+generated_at: '2026-07-10'
+tier: legacy_connective
+classification: connective_only
+
+design:
+  design_id: warp-drive-e10d-wd
+  display_name: Eldridge-Class Micro 10D Warp Drive (E10D-WD)
+  github_promote: connective_scalars_only
+
+lean_module: FSOT.Formal.E10dWdConnectivePriors
+legacy_bench: e10d_wd_bench_results.json
+dependencies: [qveh, WarpActuationDevelopmentPriors]
+prereg_links: [PRED-024, PRED-026-candidate, PRED-031-candidate]
+
+connective_scalars:
+  - qveh_warp_energy_bus_relay
+  - cryo_thermal_rejection_relay
+  - em_coil_actuation_coupling
+  - fluid_spacetime_consistency_proxy
+  - stabilization_margin_relay
+
+never_promote:
+  - warp_coil_toroid_bom
+  - 150_MW_burst_claim
+  - 20s_proxima_transit
+  - fsuft_10d_action
+  - 10^10_energy_reduction
+  - npsn_crew_system
