@@ -1,0 +1,166 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:26:38.171527+00:00",
+  "domain": "Network_Science_Public_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\neurolab_gaps\\network_science_public_anchors.json"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "ai",
+    "galactic"
+  ],
+  "D_eff": 17,
+  "record_count": 10,
+  "observable_count": 10,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "network_science": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NeuroLab literature anchors"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_literature_anchor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 10
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "literature_anchor",
+      "name": "network_science",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 1
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "network_science_panel_lab",
+      "property": "observable",
+      "name": "ba_exponent",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "network_science_panel_lab",
+      "property": "observable",
+      "name": "internet_as_exponent",
+      "computed": 3.236,
+      "measured": 3.236,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "network_science_panel_lab",
+      "property": "observable",
+      "name": "www_indegree_exponent",
+      "computed": 2.636,
+      "measured": 2.636,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "network_science_panel_lab",
+      "property": "observable",
+      "name": "six_degrees_path",
+      "computed": 3.236,
+      "measured": 3.236,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "network_science_panel_lab",
+      "property": "observable",
+      "name": "clustering_ratio",
+      "computed": 0.2274,
+      "measured": 0.2274,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "network_science_panel_lab",
+      "property": "observable",
+      "name": "er_percolation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "network_science_panel_lab",
+      "property": "observable",
+      "name": "bond_percolation_2d",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "network_science_panel_lab",
+      "property": "observable",
+      "name": "dunbar_over_100",
+      "computed": 1.5,
+      "measured": 1.5,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "network_science_panel_lab",
+      "property": "observable",
+      "name": "friendship_paradox",
+      "computed": 1.618,
+      "measured": 1.618,
+      "error_pct": 0.0,
+      "formula_branch": "term1.growth_term",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "network_science_panel_lab",
+      "property": "domain_scalar",
+      "name": "fsot_Sociology",
+      "computed": 0.650147,
+      "measured": 0.650147,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 1,
+    "classifier_correct": 1,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

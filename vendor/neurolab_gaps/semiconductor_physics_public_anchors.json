@@ -1,0 +1,16 @@
+{
+  "source": "Sze & Ng (2006), CODATA — public semiconductor dimensionless ratios",
+  "formula_branch": "term1.term1_base",
+  "observables": [
+    {"id": "gaas_si_bandgap", "name": "GaAs/Si bandgap ratio", "value": 1.304},
+    {"id": "gan_si_bandgap", "name": "GaN/Si bandgap ratio", "value": 3.036},
+    {"id": "si_bandgap_thermal_v", "name": "Si bandgap/thermal V at 300K", "value": 94.47},
+    {"id": "electron_hole_mobility_si", "name": "Electron/hole mobility Si", "value": 3.11},
+    {"id": "effective_mass_si", "name": "Effective mass m*/m_e (Si)", "value": 0.1226},
+    {"id": "gaas_si_mobility", "name": "GaAs/Si mobility ratio", "value": 4.565},
+    {"id": "si_dielectric", "name": "Si dielectric constant", "value": 12.19},
+    {"id": "sio2_dielectric", "name": "SiO2 dielectric constant", "value": 3.76},
+    {"id": "si_sio2_dielectric_ratio", "name": "Si/SiO2 dielectric ratio", "value": 3.0},
+    {"id": "debye_t_si_ge", "name": "Debye T ratio Si/Ge", "value": 4.619}
+  ]
+}

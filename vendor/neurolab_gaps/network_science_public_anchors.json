@@ -1,0 +1,15 @@
+{
+  "source": "Barabási (2002), Watts-Strogatz (1998), Erdős-Rényi — public network exponents",
+  "formula_branch": "term1.growth_term",
+  "observables": [
+    {"id": "ba_exponent", "name": "BA scale-free exponent γ", "value": 3.0},
+    {"id": "internet_as_exponent", "name": "Internet AS graph exponent", "value": 3.236},
+    {"id": "www_indegree_exponent", "name": "WWW in-degree exponent", "value": 2.636},
+    {"id": "six_degrees_path", "name": "Six degrees avg path proxy", "value": 3.236},
+    {"id": "clustering_ratio", "name": "Clustering coefficient ratio", "value": 0.2274},
+    {"id": "er_percolation", "name": "ER percolation threshold", "value": 1.0},
+    {"id": "bond_percolation_2d", "name": "Bond percolation 2D square", "value": 0.5},
+    {"id": "dunbar_over_100", "name": "Dunbar number / 100", "value": 1.5},
+    {"id": "friendship_paradox", "name": "Friendship paradox ratio φ", "value": 1.618}
+  ]
+}

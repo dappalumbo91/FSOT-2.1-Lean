@@ -203,6 +203,20 @@ api_sources:
     bundled_only: true
     note: "Public literature ratios and VR comfort guidelines — no live API required"
 
+  tier62_64_expansion:
+    description: "Tiers 62–64 — Gaia/WDS live depth, prereg scaffold, NeuroLab gap panels"
+    manifests:
+      - data/tier62_astrometry_manifest.yaml
+      - data/tier63_prereg_scaffold_manifest.yaml
+      - data/tier64_neurolab_gaps_manifest.yaml
+    build:
+      - scripts/build_tier62_astrometry_benchmarks.py
+      - scripts/build_tier63_prereg_scaffold_benchmarks.py
+      - scripts/build_tier64_neurolab_gaps_benchmarks.py
+    ingest: scripts/ingest_tier62_live_astrometry.py
+    lean: scripts/gen_tiers_62_64_lean.py
+    live_api: https://gea.esac.esa.int/tap-server/tap/sync
+
   astrophysics_catalogs:
     description: "Tier 58 live ingest — public catalogs for stellar/planetary/galactic structures"
     sources:
@@ -216,8 +230,15 @@ api_sources:
       - id: vizier_wds
         url: https://cdsarc.cds.unistra.fr/viz-bin/votable
         auth: none
-        status: roadmap
+        status: active
+        ingest: scripts/ingest_tier62_live_astrometry.py
         catalog: "Washington Double Star Catalog"
+      - id: gaia_dr3_tap
+        url: https://gea.esac.esa.int/tap-server/tap/sync
+        auth: none
+        status: active
+        ingest: scripts/ingest_tier62_live_astrometry.py
+        note: "Tier 62 Gaia DR3 astrometry depth"
       - id: gwosc
         url: https://www.gw-openscience.org/eventapi/json/
         auth: none

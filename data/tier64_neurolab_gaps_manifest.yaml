@@ -1,0 +1,18 @@
+version: "1.0"
+tier: 64
+domains:
+  - Information_Theory_Public_Panel
+  - Network_Science_Public_Panel
+  - Semiconductor_Physics_Public_Panel
+  - Statistical_Mechanics_Public_Panel
+  - Biophysics_Public_Panel
+  - Neurolab_Gaps_Math_Spine
+build: scripts/build_tier64_neurolab_gaps_benchmarks.py
+lean: scripts/gen_tiers_62_64_lean.py
+bundled:
+  - vendor/neurolab_gaps/information_theory_public_anchors.json
+  - vendor/neurolab_gaps/network_science_public_anchors.json
+  - vendor/neurolab_gaps/semiconductor_physics_public_anchors.json
+  - vendor/neurolab_gaps/statistical_mechanics_public_anchors.json
+  - vendor/neurolab_gaps/biophysics_public_anchors.json
+note: "NeuroLab 32-domain registry gaps — Information Theory priority + crosswalk spine"

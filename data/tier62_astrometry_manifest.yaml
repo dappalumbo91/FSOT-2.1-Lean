@@ -1,0 +1,13 @@
+version: "1.0"
+tier: 62
+domains:
+  - WDS_Live_Multiplicity_Deep
+  - Gaia_DR3_TAP_Deep
+ingest: scripts/ingest_tier62_live_astrometry.py
+build: scripts/build_tier62_astrometry_benchmarks.py
+lean: scripts/gen_tiers_62_64_lean.py
+live_api: https://gea.esac.esa.int/tap-server/tap/sync
+bundled_fallback:
+  - vendor/stellar_structures/wds_multiplicity_expanded.json
+  - vendor/stellar_structures/gaia_dr3_tap_sample.json
+note: "Gaia DR3 TAP live ingest + WDS multiplicity depth atop tier 53/60"

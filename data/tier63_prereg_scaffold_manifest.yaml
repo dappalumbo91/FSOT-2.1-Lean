@@ -1,0 +1,10 @@
+version: "1.0"
+tier: 63
+domains:
+  - Preregistered_Predictions_Verification_Scaffold
+build: scripts/build_tier63_prereg_scaffold_benchmarks.py
+lean: scripts/gen_tiers_62_64_lean.py
+proprietary_gate: data/preregistered_predictions_manifest.yaml
+bundled:
+  - data/preregistered_predictions_manifest.yaml
+note: "Public manifest verification scaffold — in-silico novel screens stay local until preregistered"

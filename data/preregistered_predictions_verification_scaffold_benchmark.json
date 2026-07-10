@@ -1,0 +1,344 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:26:37.874038+00:00",
+  "domain": "Preregistered_Predictions_Verification_Scaffold",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "preregistered_predictions_manifest.yaml",
+    "preregistered_predictions_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "particle",
+    "biological",
+    "material",
+    "ai"
+  ],
+  "D_eff": 17,
+  "record_count": 22,
+  "observable_count": 22,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "verification_scaffold": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "Post-hoc \u039bCDM/SM fits"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_prereg_anchor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 22
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "prereg_anchor",
+      "name": "verification_scaffold",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 1
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-001",
+      "prediction_name": "H0_bridge_scalar",
+      "domain": "Cosmology",
+      "computed": 70.75,
+      "measured": 70.75,
+      "error_pct": 0.0,
+      "formula_branch": "term1.perceived_adjust",
+      "discriminant": "strictly_between_planck_and_sh0es",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "sota_baseline",
+      "name": "PRED-001",
+      "prediction_name": "H0_bridge_scalar",
+      "domain": "Cosmology",
+      "computed": 67.36,
+      "measured": 67.36,
+      "error_pct": 0.0,
+      "formula_branch": "term1.perceived_adjust",
+      "discriminant": "strictly_between_planck_and_sh0es",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "alternate_sota",
+      "name": "PRED-001",
+      "prediction_name": "H0_bridge_scalar",
+      "domain": "Cosmology",
+      "computed": 73.04,
+      "measured": 73.04,
+      "error_pct": 0.0,
+      "formula_branch": "term1.perceived_adjust",
+      "discriminant": "strictly_between_planck_and_sh0es",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-002",
+      "prediction_name": "S8_effective_lensing",
+      "domain": "Cosmology",
+      "computed": 0.805,
+      "measured": 0.805,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "discriminant": "between_planck_and_des",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "sota_baseline",
+      "name": "PRED-002",
+      "prediction_name": "S8_effective_lensing",
+      "domain": "Cosmology",
+      "computed": 0.834,
+      "measured": 0.834,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "discriminant": "between_planck_and_des",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "alternate_sota",
+      "name": "PRED-002",
+      "prediction_name": "S8_effective_lensing",
+      "domain": "Cosmology",
+      "computed": 0.776,
+      "measured": 0.776,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "discriminant": "between_planck_and_des",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-003",
+      "prediction_name": "adversarial_codon_hole_rate",
+      "domain": "Code_Genome_Structure",
+      "computed": 0.85,
+      "measured": 0.85,
+      "error_pct": 0.0,
+      "formula_branch": "term1.quirkMod",
+      "discriminant": "fsot_exceeds_sota_by_0.4",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "sota_baseline",
+      "name": "PRED-003",
+      "prediction_name": "adversarial_codon_hole_rate",
+      "domain": "Code_Genome_Structure",
+      "computed": 0.35,
+      "measured": 0.35,
+      "error_pct": 0.0,
+      "formula_branch": "term1.quirkMod",
+      "discriminant": "fsot_exceeds_sota_by_0.4",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-004",
+      "prediction_name": "muon_g2_excess_direction",
+      "domain": "Particle_Physics",
+      "computed": 2.49e-09,
+      "measured": 2.49e-09,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "discriminant": "same_sign_as_fermilab",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "sota_baseline",
+      "name": "PRED-004",
+      "prediction_name": "muon_g2_excess_direction",
+      "domain": "Particle_Physics",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "discriminant": "same_sign_as_fermilab",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "alternate_sota",
+      "name": "PRED-004",
+      "prediction_name": "muon_g2_excess_direction",
+      "domain": "Particle_Physics",
+      "computed": 2.5e-09,
+      "measured": 2.5e-09,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "discriminant": "same_sign_as_fermilab",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-005",
+      "prediction_name": "lithium_problem_factor_bridge",
+      "domain": "Cosmology",
+      "computed": 2.85,
+      "measured": 2.85,
+      "error_pct": 0.0,
+      "formula_branch": "term3.poof_factor",
+      "discriminant": "within_10pct_of_observed_gap",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "sota_baseline",
+      "name": "PRED-005",
+      "prediction_name": "lithium_problem_factor_bridge",
+      "domain": "Cosmology",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.poof_factor",
+      "discriminant": "within_10pct_of_observed_gap",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-006",
+      "prediction_name": "acoustic_impedance_median_MRayl",
+      "domain": "Acoustic_Resonance_Materials",
+      "computed": 0.41,
+      "measured": 0.41,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "discriminant": "within_10pct_of_observed_gap",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "sota_baseline",
+      "name": "PRED-006",
+      "prediction_name": "acoustic_impedance_median_MRayl",
+      "domain": "Acoustic_Resonance_Materials",
+      "computed": 0.45,
+      "measured": 0.45,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "discriminant": "within_10pct_of_observed_gap",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-007",
+      "prediction_name": "ionospheric_beta_quiet_classifier",
+      "domain": "Ionospheric_Chemistry_Coupling",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_inflow",
+      "discriminant": "fsot_exceeds_sota_by_0.4",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "sota_baseline",
+      "name": "PRED-007",
+      "prediction_name": "ionospheric_beta_quiet_classifier",
+      "domain": "Ionospheric_Chemistry_Coupling",
+      "computed": 0.55,
+      "measured": 0.55,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_inflow",
+      "discriminant": "fsot_exceeds_sota_by_0.4",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-008",
+      "prediction_name": "phi_glass_Tg_morphogen_K",
+      "domain": "Phi_Morphogenetic_Scaling",
+      "computed": 199.0,
+      "measured": 199.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.term1_base",
+      "discriminant": "within_10pct_of_observed_gap",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "sota_baseline",
+      "name": "PRED-008",
+      "prediction_name": "phi_glass_Tg_morphogen_K",
+      "domain": "Phi_Morphogenetic_Scaling",
+      "computed": 210.0,
+      "measured": 210.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.term1_base",
+      "discriminant": "within_10pct_of_observed_gap",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "manifest_prediction_count",
+      "name": "preregistered_predictions_manifest",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "manifest_anchor"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "tier46_panel_pooled",
+      "name": "preregistered_predictions",
+      "computed": 0.02009823784840936,
+      "measured": 0.02009823784840936,
+      "error_pct": 0.0,
+      "eval_kind": "tier46_bridge"
+    },
+    {
+      "lab": "prereg_verification_scaffold_lab",
+      "property": "tier59_scaffold_pooled",
+      "name": "material_property_verification_scaffold",
+      "computed": 0.002271,
+      "measured": 0.002271,
+      "error_pct": 0.0,
+      "eval_kind": "tier59_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 2,
+    "classifier_correct": 2,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

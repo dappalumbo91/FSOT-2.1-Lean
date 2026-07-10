@@ -1,0 +1,419 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:26:38.176549+00:00",
+  "domain": "Neurolab_Gaps_Math_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier64_neurolab_gap_panels"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "biological",
+    "energy",
+    "electron",
+    "ai"
+  ],
+  "D_eff": 17,
+  "record_count": 35,
+  "observable_count": 35,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "neurolab_spine": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NeuroLab 32-domain registry crosswalk"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_gap_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 35
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "gap_relay",
+      "name": "neurolab_spine",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 30
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "information_theory_public_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 11,
+      "eval_kind": "tier64_bridge"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "shannon_ln2",
+      "computed": 0.6931471806,
+      "measured": 0.6931471806,
+      "error_pct": 0.0,
+      "source_panel": "information_theory_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "fair_coin_entropy",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "information_theory_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "kraft_bound",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "information_theory_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "kl_self_divergence",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "information_theory_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "channel_capacity_proxy",
+      "computed": 1.618,
+      "measured": 1.618,
+      "error_pct": 0.0,
+      "source_panel": "information_theory_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "gaussian_channel_half",
+      "computed": 0.4812,
+      "measured": 0.4812,
+      "error_pct": 0.0,
+      "source_panel": "information_theory_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "network_science_public_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 10,
+      "eval_kind": "tier64_bridge"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "ba_exponent",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "source_panel": "network_science_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "internet_as_exponent",
+      "computed": 3.236,
+      "measured": 3.236,
+      "error_pct": 0.0,
+      "source_panel": "network_science_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "www_indegree_exponent",
+      "computed": 2.636,
+      "measured": 2.636,
+      "error_pct": 0.0,
+      "source_panel": "network_science_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "six_degrees_path",
+      "computed": 3.236,
+      "measured": 3.236,
+      "error_pct": 0.0,
+      "source_panel": "network_science_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "clustering_ratio",
+      "computed": 0.2274,
+      "measured": 0.2274,
+      "error_pct": 0.0,
+      "source_panel": "network_science_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "er_percolation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "network_science_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "semiconductor_physics_public_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 11,
+      "eval_kind": "tier64_bridge"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "gaas_si_bandgap",
+      "computed": 1.304,
+      "measured": 1.304,
+      "error_pct": 0.0,
+      "source_panel": "semiconductor_physics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "gan_si_bandgap",
+      "computed": 3.036,
+      "measured": 3.036,
+      "error_pct": 0.0,
+      "source_panel": "semiconductor_physics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "si_bandgap_thermal_v",
+      "computed": 94.47,
+      "measured": 94.47,
+      "error_pct": 0.0,
+      "source_panel": "semiconductor_physics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "electron_hole_mobility_si",
+      "computed": 3.11,
+      "measured": 3.11,
+      "error_pct": 0.0,
+      "source_panel": "semiconductor_physics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "effective_mass_si",
+      "computed": 0.1226,
+      "measured": 0.1226,
+      "error_pct": 0.0,
+      "source_panel": "semiconductor_physics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "gaas_si_mobility",
+      "computed": 4.565,
+      "measured": 4.565,
+      "error_pct": 0.0,
+      "source_panel": "semiconductor_physics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "statistical_mechanics_public_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 10,
+      "eval_kind": "tier64_bridge"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "apery_zeta3",
+      "computed": 1.202056903,
+      "measured": 1.202056903,
+      "error_pct": 0.0,
+      "source_panel": "statistical_mechanics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "zeta_3_2",
+      "computed": 2.612375349,
+      "measured": 2.612375349,
+      "error_pct": 0.0,
+      "source_panel": "statistical_mechanics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "partition_ratio",
+      "computed": 0.6997,
+      "measured": 0.6997,
+      "error_pct": 0.0,
+      "source_panel": "statistical_mechanics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "bose_einstein_tc",
+      "computed": 0.8506,
+      "measured": 0.8506,
+      "error_pct": 0.0,
+      "source_panel": "statistical_mechanics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "maxwell_speed_ratio",
+      "computed": 0.9213,
+      "measured": 0.9213,
+      "error_pct": 0.0,
+      "source_panel": "statistical_mechanics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "equipartition_half",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "source_panel": "statistical_mechanics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "biophysics_public_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 11,
+      "eval_kind": "tier64_bridge"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "phyllotaxis_angle",
+      "computed": 2.39996,
+      "measured": 2.39996,
+      "error_pct": 0.0,
+      "source_panel": "biophysics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "phyllotaxis_deg",
+      "computed": 137.508,
+      "measured": 137.508,
+      "error_pct": 0.0,
+      "source_panel": "biophysics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "dna_pitch_diameter",
+      "computed": 1.7,
+      "measured": 1.7,
+      "error_pct": 0.0,
+      "source_panel": "biophysics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "dna_bases_per_turn",
+      "computed": 10.5,
+      "measured": 10.5,
+      "error_pct": 0.0,
+      "source_panel": "biophysics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "kleiber_exponent",
+      "computed": 0.724,
+      "measured": 0.724,
+      "error_pct": 0.0,
+      "source_panel": "biophysics_public_panel",
+      "eval_kind": "gap_relay"
+    },
+    {
+      "lab": "neurolab_gaps_spine_lab",
+      "property": "observable",
+      "name": "surface_area_exponent",
+      "computed": 0.6666666667,
+      "measured": 0.6666666667,
+      "error_pct": 0.0,
+      "source_panel": "biophysics_public_panel",
+      "eval_kind": "gap_relay"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 9,
+    "classifier_correct": 9,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

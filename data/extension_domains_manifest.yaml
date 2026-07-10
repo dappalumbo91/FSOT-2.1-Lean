@@ -2302,6 +2302,125 @@ extension_domains:
     lean_module: FSOT.Formal.CreativeArtsMathSpinePriors
     note: "Creative-domain crosswalk — culinary, linguistics, sports, acoustic, symbolic, tier 61 panels"
 
+  WDS_Live_Multiplicity_Deep:
+    tier: 62
+    D_eff: 19
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic]
+    ingest_script: scripts/ingest_tier62_live_astrometry.py
+    build_script: scripts/build_tier62_astrometry_benchmarks.py
+    manifest: data/tier62_astrometry_manifest.yaml
+    benchmark_data: data/wds_live_multiplicity_deep_benchmark.json
+    lean_module: FSOT.Formal.WDSLiveMultiplicityDeepPriors
+    note: "WDS multiplicity live ingest with bundled fallback — tier 53 bridge"
+
+  Gaia_DR3_TAP_Deep:
+    tier: 62
+    D_eff: 20
+    delta_psi: 0.92
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic]
+    ingest_script: scripts/ingest_tier62_live_astrometry.py
+    build_script: scripts/build_tier62_astrometry_benchmarks.py
+    manifest: data/tier62_astrometry_manifest.yaml
+    benchmark_data: data/gaia_dr3_tap_deep_benchmark.json
+    lean_module: FSOT.Formal.GaiaDR3TAPDeepPriors
+    note: "Gaia DR3 TAP live ingest atop tier 60 astrometry panel"
+
+  Preregistered_Predictions_Verification_Scaffold:
+    tier: 63
+    D_eff: 17
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, particle, biological, material, ai]
+    build_script: scripts/build_tier63_prereg_scaffold_benchmarks.py
+    manifest: data/tier63_prereg_scaffold_manifest.yaml
+    benchmark_data: data/preregistered_predictions_verification_scaffold_benchmark.json
+    lean_module: FSOT.Formal.PreregisteredPredictionsVerificationScaffoldPriors
+    note: "Public prereg manifest scaffold — novel in-silico screens gated separately"
+
+  Information_Theory_Public_Panel:
+    tier: 64
+    D_eff: 8
+    delta_psi: 0.6
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [mathematical, ai, consciousness, neural]
+    build_script: scripts/build_tier64_neurolab_gaps_benchmarks.py
+    manifest: data/tier64_neurolab_gaps_manifest.yaml
+    benchmark_data: data/information_theory_public_panel_benchmark.json
+    lean_module: FSOT.Formal.InformationTheoryPublicPanelPriors
+    note: "Shannon/Kraft/Rényi public anchors — NeuroLab Information Theory bridge"
+
+  Network_Science_Public_Panel:
+    tier: 64
+    D_eff: 17
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [mathematical, ai, galactic]
+    build_script: scripts/build_tier64_neurolab_gaps_benchmarks.py
+    manifest: data/tier64_neurolab_gaps_manifest.yaml
+    benchmark_data: data/network_science_public_panel_benchmark.json
+    lean_module: FSOT.Formal.NetworkSciencePublicPanelPriors
+    note: "Scale-free / percolation / Dunbar public network exponents"
+
+  Semiconductor_Physics_Public_Panel:
+    tier: 64
+    D_eff: 11
+    delta_psi: 0.7
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [electron, material, particle]
+    build_script: scripts/build_tier64_neurolab_gaps_benchmarks.py
+    manifest: data/tier64_neurolab_gaps_manifest.yaml
+    benchmark_data: data/semiconductor_physics_public_panel_benchmark.json
+    lean_module: FSOT.Formal.SemiconductorPhysicsPublicPanelPriors
+    note: "Bandgap, mobility, dielectric public semiconductor ratios"
+
+  Statistical_Mechanics_Public_Panel:
+    tier: 64
+    D_eff: 12
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, particle, thermodynamics]
+    build_script: scripts/build_tier64_neurolab_gaps_benchmarks.py
+    manifest: data/tier64_neurolab_gaps_manifest.yaml
+    benchmark_data: data/statistical_mechanics_public_panel_benchmark.json
+    lean_module: FSOT.Formal.StatisticalMechanicsPublicPanelPriors
+    note: "Apéry ζ(3), partition ratios, equipartition public anchors"
+
+  Biophysics_Public_Panel:
+    tier: 64
+    D_eff: 12
+    delta_psi: 0.65
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, medical, neural]
+    build_script: scripts/build_tier64_neurolab_gaps_benchmarks.py
+    manifest: data/tier64_neurolab_gaps_manifest.yaml
+    benchmark_data: data/biophysics_public_panel_benchmark.json
+    lean_module: FSOT.Formal.BiophysicsPublicPanelPriors
+    note: "Phyllotaxis, Kleiber, DNA pitch public biophysics anchors"
+
+  Neurolab_Gaps_Math_Spine:
+    tier: 64
+    D_eff: 17
+    delta_psi: 0.88
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, biological, energy, electron, ai]
+    build_script: scripts/build_tier64_neurolab_gaps_benchmarks.py
+    manifest: data/tier64_neurolab_gaps_manifest.yaml
+    benchmark_data: data/neurolab_gaps_math_spine_benchmark.json
+    lean_module: FSOT.Formal.NeurolabGapsMathSpinePriors
+    note: "Crosswalk spine for tier 64 NeuroLab registry gap panels"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

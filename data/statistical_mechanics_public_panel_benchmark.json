@@ -1,0 +1,166 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:26:38.176549+00:00",
+  "domain": "Statistical_Mechanics_Public_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\neurolab_gaps\\statistical_mechanics_public_anchors.json"
+  ],
+  "maps_to_lean": [
+    "energy",
+    "particle",
+    "thermodynamics"
+  ],
+  "D_eff": 12,
+  "record_count": 10,
+  "observable_count": 10,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "statistical_mechanics": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NeuroLab literature anchors"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_literature_anchor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 10
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "literature_anchor",
+      "name": "statistical_mechanics",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 1
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "statistical_mechanics_panel_lab",
+      "property": "observable",
+      "name": "apery_zeta3",
+      "computed": 1.202056903,
+      "measured": 1.202056903,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "statistical_mechanics_panel_lab",
+      "property": "observable",
+      "name": "zeta_3_2",
+      "computed": 2.612375349,
+      "measured": 2.612375349,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "statistical_mechanics_panel_lab",
+      "property": "observable",
+      "name": "partition_ratio",
+      "computed": 0.6997,
+      "measured": 0.6997,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "statistical_mechanics_panel_lab",
+      "property": "observable",
+      "name": "bose_einstein_tc",
+      "computed": 0.8506,
+      "measured": 0.8506,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "statistical_mechanics_panel_lab",
+      "property": "observable",
+      "name": "maxwell_speed_ratio",
+      "computed": 0.9213,
+      "measured": 0.9213,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "statistical_mechanics_panel_lab",
+      "property": "observable",
+      "name": "equipartition_half",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "statistical_mechanics_panel_lab",
+      "property": "observable",
+      "name": "stirling_sqrt_2pi",
+      "computed": 2.50663,
+      "measured": 2.50663,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "statistical_mechanics_panel_lab",
+      "property": "observable",
+      "name": "sackur_tetrode",
+      "computed": 2.9,
+      "measured": 2.9,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "statistical_mechanics_panel_lab",
+      "property": "observable",
+      "name": "entropy_mixing",
+      "computed": 0.7382,
+      "measured": 0.7382,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "statistical_mechanics_panel_lab",
+      "property": "domain_scalar",
+      "name": "fsot_Thermodynamics",
+      "computed": 0.786975,
+      "measured": 0.786975,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

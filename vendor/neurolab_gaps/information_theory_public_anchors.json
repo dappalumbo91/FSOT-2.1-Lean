@@ -1,0 +1,16 @@
+{
+  "source": "Shannon (1948), Cover & Thomas — public information-theoretic dimensionless anchors",
+  "formula_branch": "term1.coherence_efficiency",
+  "observables": [
+    {"id": "shannon_ln2", "name": "Shannon limit ln(2)", "value": 0.6931471806},
+    {"id": "fair_coin_entropy", "name": "Entropy of fair coin", "value": 1.0},
+    {"id": "kraft_bound", "name": "Kraft inequality bound", "value": 1.0},
+    {"id": "kl_self_divergence", "name": "KL divergence symmetry (self)", "value": 0.0},
+    {"id": "channel_capacity_proxy", "name": "Channel capacity C_max proxy", "value": 1.618},
+    {"id": "gaussian_channel_half", "name": "Gaussian channel ½ln(1+S/N) proxy", "value": 0.4812},
+    {"id": "renyi_alpha1", "name": "Rényi entropy α→1 (ln 2)", "value": 0.6931},
+    {"id": "coding_redundancy", "name": "Coding redundancy r", "value": 0.6431},
+    {"id": "aep_threshold", "name": "AEP typical-set threshold", "value": 0.5615},
+    {"id": "mutual_info_bound", "name": "Mutual information bound", "value": 0.03015}
+  ]
+}
