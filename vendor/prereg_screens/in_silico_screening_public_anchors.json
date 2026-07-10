@@ -1,0 +1,32 @@
+{
+  "source": "Published DFT/Materials Project/NIST/CRC/VR comfort methodology — public screening gates only",
+  "channels": {
+    "material_emergence_in_silico": {
+      "formula_branch": "term1.term1_base",
+      "anchors": [
+        {"id": "dft_energy_convergence_ev", "name": "DFT energy convergence threshold", "value": 1e-5},
+        {"id": "force_threshold_ev_ang", "name": "Ionic force threshold (eV/Å)", "value": 0.05},
+        {"id": "bandgap_tolerance_ev", "name": "Bandgap relay tolerance", "value": 0.1},
+        {"id": "formation_energy_window_ev", "name": "Formation energy screening window", "value": 0.5}
+      ]
+    },
+    "fuel_candidate_screening_prereg": {
+      "formula_branch": "term3.chaos_factor",
+      "anchors": [
+        {"id": "lhv_screening_tolerance_pct", "name": "LHV screening tolerance", "value": 5.0},
+        {"id": "density_tolerance_pct", "name": "Fuel density tolerance", "value": 3.0},
+        {"id": "flash_point_margin_c", "name": "Flash point safety margin (°C)", "value": 10.0},
+        {"id": "hf_relay_tolerance_kj_mol", "name": "ΔHf relay tolerance", "value": 2.0}
+      ]
+    },
+    "novel_game_mechanic_predictions": {
+      "formula_branch": "term1.coherence_efficiency",
+      "anchors": [
+        {"id": "frame_budget_90hz_ms", "name": "90 Hz frame budget", "value": 11.1111111111},
+        {"id": "mtp_latency_target_ms", "name": "Motion-to-photon latency target", "value": 20.0},
+        {"id": "comfort_angular_velocity_deg_s", "name": "Locomotion angular velocity cap", "value": 50.0},
+        {"id": "stereo_ipd_mm", "name": "Stereo IPD reference", "value": 63.0}
+      ]
+    }
+  }
+}

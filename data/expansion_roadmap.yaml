@@ -54,16 +54,35 @@ completed_tiers:
     - Statistical_Mechanics_Public_Panel
     - Biophysics_Public_Panel
     - Neurolab_Gaps_Math_Spine
+  tier_65:
+    - Material_In_Silico_Screening_Scaffold
+    - Fuel_Candidate_Prereg_Scaffold
+    - Interactive_Media_Prereg_Scaffold
 
 priority_queue:
-  tier_65_preregistered_screens_local:
+  tier_66_neurolab_residual:
     status: planned
-    proprietary_gate: preregistered_predictions_manifest.yaml
-    channels:
-      - material_emergence_in_silico
-      - fuel_candidate_screening_prereg
-      - novel_game_mechanic_predictions
-    note: "Undisclosed in-silico screens remain local-only until preregistered release"
+    domains: [Quantum_Information, Econophysics, Ecology, Genomic_Sciences]
+    note: "Remaining NeuroLab 32-domain registry entries not yet extension domains"
+
+  tier_67_formula_precision:
+    status: planned
+    focus: [term3_acoustic_bleed_depth, initiation_transformation_archetype, boundary_partition_tightening]
+    note: "Shift from catalog relay to per-channel FSOT formula error tightening"
+
+  tier_68_live_ingest_wave:
+    status: planned
+    sources: [materials_project_api, pubchem_live, openneuro_full, vizier_wds_tap_live]
+    note: "Second live-ingest wave beyond Gaia/SIMBAD/GWOSC"
+
+  tier_69_unified_db_crosswalk:
+    status: planned
+    note: "Organize desktop unidentified DB / FSOT aggregate candidates into verified extension panels"
+
+  tier_70_toe_claim_hardening:
+    status: planned
+    focus: [proof_ledger_closure, lake_build_certificate, preregistered_outcome_tracking]
+    note: "Publication-facing ToE claim bundle — proved Lean theorems + held-out prereg outcomes"
 
 discoverability_principles:
   - "Public repo = reproducible verification against published data"

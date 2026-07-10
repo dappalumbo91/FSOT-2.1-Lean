@@ -2421,6 +2421,45 @@ extension_domains:
     lean_module: FSOT.Formal.NeurolabGapsMathSpinePriors
     note: "Crosswalk spine for tier 64 NeuroLab registry gap panels"
 
+  Material_In_Silico_Screening_Scaffold:
+    tier: 65
+    D_eff: 15
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, chemical, particle, energy]
+    build_script: scripts/build_tier65_prereg_screens_benchmarks.py
+    manifest: data/tier65_prereg_channels_manifest.yaml
+    benchmark_data: data/material_in_silico_screening_scaffold_benchmark.json
+    lean_module: FSOT.Formal.MaterialInSilicoScreeningScaffoldPriors
+    note: "Public DFT/materials screening gates — novel emergence outputs preregistered separately"
+
+  Fuel_Candidate_Prereg_Scaffold:
+    tier: 65
+    D_eff: 16
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, chemical, material]
+    build_script: scripts/build_tier65_prereg_screens_benchmarks.py
+    manifest: data/tier65_prereg_channels_manifest.yaml
+    benchmark_data: data/fuel_candidate_prereg_scaffold_benchmark.json
+    lean_module: FSOT.Formal.FuelCandidatePreregScaffoldPriors
+    note: "NIST/CRC fuel screening methodology — novel fuel discovery preregistered separately"
+
+  Interactive_Media_Prereg_Scaffold:
+    tier: 65
+    D_eff: 14
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [ai, consciousness, neural, mathematical]
+    build_script: scripts/build_tier65_prereg_screens_benchmarks.py
+    manifest: data/tier65_prereg_channels_manifest.yaml
+    benchmark_data: data/interactive_media_prereg_scaffold_benchmark.json
+    lean_module: FSOT.Formal.InteractiveMediaPreregScaffoldPriors
+    note: "XR/game comfort-timing gates — novel mechanic predictions preregistered separately"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

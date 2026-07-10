@@ -1,0 +1,488 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:29:22.558448+00:00",
+  "domain": "Interactive_Media_Prereg_Scaffold",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\prereg_screens\\in_silico_screening_public_anchors.json",
+    "tier65_prereg_channels_manifest.yaml"
+  ],
+  "maps_to_lean": [
+    "ai",
+    "consciousness",
+    "neural",
+    "mathematical"
+  ],
+  "D_eff": 14,
+  "record_count": 42,
+  "observable_count": 42,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "novel_game_mechanic_predictions": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "Published screening methodology"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_panel_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 42
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "panel_relay",
+      "name": "novel_game_mechanic_predictions",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 32
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "frame_budget_90hz_ms",
+      "name": "90 Hz frame budget",
+      "computed": 11.1111111111,
+      "measured": 11.1111111111,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "methodology_anchor"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "mtp_latency_target_ms",
+      "name": "Motion-to-photon latency target",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "methodology_anchor"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "comfort_angular_velocity_deg_s",
+      "name": "Locomotion angular velocity cap",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "methodology_anchor"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "stereo_ipd_mm",
+      "name": "Stereo IPD reference",
+      "computed": 63.0,
+      "measured": 63.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "methodology_anchor"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "neuroscience_scalar",
+      "name": "fsot_Neuroscience",
+      "computed": 0.514362,
+      "measured": 0.514362,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "xr_interactive_media_math_scaffold",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 24,
+      "eval_kind": "scaffold_bridge"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "ipd_mean_mm",
+      "name": "Mean interpupillary distance",
+      "computed": 63.0,
+      "measured": 63.0,
+      "error_pct": 0.0,
+      "source_panel": "xr_interactive_media_math_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "hfov_deg",
+      "name": "Typical VR horizontal FOV",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "source_panel": "xr_interactive_media_math_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "vfov_deg",
+      "name": "Typical VR vertical FOV",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "source_panel": "xr_interactive_media_math_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "aspect_16_9",
+      "name": "16:9 display aspect ratio",
+      "computed": 1.7777777778,
+      "measured": 1.7777777778,
+      "error_pct": 0.0,
+      "source_panel": "xr_interactive_media_math_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "stereo_half_ipd_mm",
+      "name": "Monocular eye offset (IPD/2)",
+      "computed": 31.5,
+      "measured": 31.5,
+      "error_pct": 0.0,
+      "source_panel": "xr_interactive_media_math_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "target_mtp_latency_ms",
+      "name": "Motion-to-photon latency target",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "source_panel": "xr_interactive_media_math_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "frame_budget_60hz_ms",
+      "name": "60 Hz frame budget",
+      "computed": 16.6666666667,
+      "measured": 16.6666666667,
+      "error_pct": 0.0,
+      "source_panel": "xr_interactive_media_math_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "frame_budget_90hz_ms",
+      "name": "90 Hz frame budget",
+      "computed": 11.1111111111,
+      "measured": 11.1111111111,
+      "error_pct": 0.0,
+      "source_panel": "xr_interactive_media_math_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "music_harmonics_public_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 18,
+      "eval_kind": "scaffold_bridge"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "interval_ratio",
+      "name": "perfect_fifth",
+      "computed": 1.5,
+      "measured": 1.5,
+      "error_pct": 0.0,
+      "source_panel": "music_harmonics_public_panel",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "interval_ratio",
+      "name": "perfect_fourth",
+      "computed": 1.3333333333,
+      "measured": 1.3333333333,
+      "error_pct": 0.0,
+      "source_panel": "music_harmonics_public_panel",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "interval_ratio",
+      "name": "major_third",
+      "computed": 1.25,
+      "measured": 1.25,
+      "error_pct": 0.0,
+      "source_panel": "music_harmonics_public_panel",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "interval_ratio",
+      "name": "octave",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "source_panel": "music_harmonics_public_panel",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "interval_ratio",
+      "name": "semitone_12tet",
+      "computed": 1.0594630944,
+      "measured": 1.0594630944,
+      "error_pct": 0.0,
+      "source_panel": "music_harmonics_public_panel",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "interval_ratio",
+      "name": "tritone_sqrt2",
+      "computed": 1.4142135624,
+      "measured": 1.4142135624,
+      "error_pct": 0.0,
+      "source_panel": "music_harmonics_public_panel",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "interval_ratio",
+      "name": "pythagorean_comma",
+      "computed": 1.0136432648,
+      "measured": 1.0136432648,
+      "error_pct": 0.0,
+      "source_panel": "music_harmonics_public_panel",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "interval_ratio",
+      "name": "golden_tempo",
+      "computed": 1.6180339887,
+      "measured": 1.6180339887,
+      "error_pct": 0.0,
+      "source_panel": "music_harmonics_public_panel",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "preregistered_predictions_verification_scaffold",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 22,
+      "eval_kind": "scaffold_bridge"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-001",
+      "computed": 70.75,
+      "measured": 70.75,
+      "error_pct": 0.0,
+      "source_panel": "preregistered_predictions_verification_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "sota_baseline",
+      "name": "PRED-001",
+      "computed": 67.36,
+      "measured": 67.36,
+      "error_pct": 0.0,
+      "source_panel": "preregistered_predictions_verification_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "alternate_sota",
+      "name": "PRED-001",
+      "computed": 73.04,
+      "measured": 73.04,
+      "error_pct": 0.0,
+      "source_panel": "preregistered_predictions_verification_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-002",
+      "computed": 0.805,
+      "measured": 0.805,
+      "error_pct": 0.0,
+      "source_panel": "preregistered_predictions_verification_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "sota_baseline",
+      "name": "PRED-002",
+      "computed": 0.834,
+      "measured": 0.834,
+      "error_pct": 0.0,
+      "source_panel": "preregistered_predictions_verification_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "alternate_sota",
+      "name": "PRED-002",
+      "computed": 0.776,
+      "measured": 0.776,
+      "error_pct": 0.0,
+      "source_panel": "preregistered_predictions_verification_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-003",
+      "computed": 0.85,
+      "measured": 0.85,
+      "error_pct": 0.0,
+      "source_panel": "preregistered_predictions_verification_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "sota_baseline",
+      "name": "PRED-003",
+      "computed": 0.35,
+      "measured": 0.35,
+      "error_pct": 0.0,
+      "source_panel": "preregistered_predictions_verification_scaffold",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "creative_arts_math_spine",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 56,
+      "eval_kind": "scaffold_bridge"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "culinary_arts",
+      "computed": 0.047615,
+      "measured": 0.047615,
+      "error_pct": 0.0,
+      "source_panel": "creative_arts_math_spine",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "\u00a71 Foundation",
+      "name": "pH_water",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "source_panel": "creative_arts_math_spine",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "\u00a745 Activation Ea",
+      "name": "sucrose_hydrolysis",
+      "computed": 108.49926097775192,
+      "measured": 108.0,
+      "error_pct": 0.462279,
+      "source_panel": "creative_arts_math_spine",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "\u00a750 Diffusion D",
+      "name": "glucose",
+      "computed": 0.6792879831636383,
+      "measured": 0.673,
+      "error_pct": 0.934321,
+      "source_panel": "creative_arts_math_spine",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "\u00a750 Diffusion D",
+      "name": "sucrose",
+      "computed": 0.5229465399247466,
+      "measured": 0.523,
+      "error_pct": 0.01022181171193495,
+      "source_panel": "creative_arts_math_spine",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "\u00a751 Solubility logS",
+      "name": "caffeine",
+      "computed": 0.8099997612391344,
+      "measured": 0.81,
+      "error_pct": 2.947665007827326e-05,
+      "source_panel": "creative_arts_math_spine",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "\u00a751 Solubility logS",
+      "name": "glucose",
+      "computed": 0.9398680312151104,
+      "measured": 0.94,
+      "error_pct": 0.014039232435055806,
+      "source_panel": "creative_arts_math_spine",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "\u00a761 Glass Tg",
+      "name": "glucose_amorph",
+      "computed": 309.16127743887125,
+      "measured": 309.0,
+      "error_pct": 0.052193,
+      "source_panel": "creative_arts_math_spine",
+      "eval_kind": "panel_relay"
+    },
+    {
+      "lab": "novel_game_mechanic_predictions_scaffold_lab",
+      "property": "prereg_gate_status",
+      "name": "novel_game_mechanic_predictions",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "proprietary_gate_anchor",
+      "gate": "preregistered_predictions_manifest.yaml"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.934321,
+    "classifier_count": 5,
+    "classifier_correct": 5,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5
+}

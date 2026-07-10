@@ -217,6 +217,14 @@ api_sources:
     lean: scripts/gen_tiers_62_64_lean.py
     live_api: https://gea.esac.esa.int/tap-server/tap/sync
 
+  tier65_prereg_screens:
+    description: "Tier 65 — in-silico material/fuel/interactive-media screening scaffolds"
+    manifest: data/tier65_prereg_channels_manifest.yaml
+    build: scripts/build_tier65_prereg_screens_benchmarks.py
+    lean: scripts/gen_tiers_65_lean.py
+    proprietary_gate: data/preregistered_predictions_manifest.yaml
+    bundled_only: true
+
   astrophysics_catalogs:
     description: "Tier 58 live ingest — public catalogs for stellar/planetary/galactic structures"
     sources:

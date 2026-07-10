@@ -1,0 +1,14 @@
+version: "1.0"
+tier: 65
+domains:
+  - Material_In_Silico_Screening_Scaffold
+  - Fuel_Candidate_Prereg_Scaffold
+  - Interactive_Media_Prereg_Scaffold
+build: scripts/build_tier65_prereg_screens_benchmarks.py
+lean: scripts/gen_tiers_65_lean.py
+proprietary_gate: data/preregistered_predictions_manifest.yaml
+bundled:
+  - vendor/prereg_screens/in_silico_screening_public_anchors.json
+note: >
+  Public methodology gates for in-silico material/fuel/interactive-media screening.
+  Novel discovery outputs remain local until added to preregistered_predictions_manifest.yaml.
