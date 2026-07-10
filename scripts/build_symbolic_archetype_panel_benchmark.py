@@ -51,7 +51,12 @@ def main() -> int:
     doc["tier"] = 51
     doc["panel_meta"] = meta
     doc["archetype_channels"] = archetype_records
-    doc["panel_status"] = "GREEN" if (doc.get("pooled_median_error_pct") or 99) < 0.5 else "YELLOW"
+    arch_med = (meta.get("archetype_channel_median_error_pct") or 99)
+    doc["panel_status"] = (
+        "GREEN"
+        if (doc.get("pooled_median_error_pct") or 99) < 0.5 and arch_med < 1.0
+        else "YELLOW"
+    )
     args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  records={doc['record_count']}  pooled={doc['pooled_median_error_pct']:.4f}%")
