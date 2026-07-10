@@ -134,9 +134,9 @@ def main() -> int:
         ),
         "scan": scan,
         "other_frameworks": {
-            "implemented": ["lean4", "python_decimal", "rocq_coq", "coqchk", "isabelle"],
-            "artifacts_ready": ["isabelle_full_formal_spine"],
-            "planned_tier_84": ["rust_lean_bridge_full_replay", "fstar_executable_check"],
+            "implemented": ["lean4", "python_decimal", "rocq_coq", "coqchk", "isabelle", "rust_f64_replay"],
+            "artifacts_ready": ["isabelle_full_formal_spine", "rust_obligation_replay"],
+            "planned_tier_85": ["fstar_executable_check", "rust_lean_bridge_runtime_parity"],
             "deferred": ["metamath", "agda"],
             "all_free_no_account": True,
         },

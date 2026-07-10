@@ -1,7 +1,7 @@
 # Tier 79 — Multi-framework cross-proof verification (Lean → Coq / Isabelle / Python oracle)
 version: '1.0'
 updated: '2026-07-10'
-tier: 83
+tier: 84
 
 philosophy: >
   Same pattern as rust_lean_bridge: export obligations from Lean authority,
@@ -70,7 +70,9 @@ status_local:
   isabelle: passed
   transcendental_bounds_coq: passed
   transcendental_bounds_isabelle: passed
+  rust_f64_replay: passed
   full_triangulation: true
+  four_way_verification: true
   github_ready: true
 
 coverage_audit:
@@ -85,7 +87,8 @@ coverage_audit:
   full_priors_exportable: 1081
   full_priors_modules: 301
   tier_83_achieved: full_formal_spine (1241) + transcendental_bounds (68) in Coq + Isabelle
-  tier_84_goal: executable fourth check via rust_lean_bridge / F* (programming-language formal)
+  tier_84_achieved: rust f64 obligation replay (1309 obligations, cargo test)
+  tier_85_goal: rust_lean_bridge runtime parity + optional F*
 
 isabelle_install:
   script: scripts/install_isabelle_windows.ps1
@@ -97,10 +100,16 @@ other_frameworks:
   - name: isabelle
     status: implemented
     account_required: false
+  - name: rust_obligation_replay
+    status: implemented
+    role: executable_fourth_check
+    path: verification/rust/fsot_obligation_replay
+    note: cargo test replays 1241 formal + 68 transcendental obligations at f64
+    account_required: false
   - name: rust_lean_bridge
     status: partial
-    role: executable_fourth_check
-    note: Rust f64 replay vs Lean ℝ — already in spine via RustLeanBridgePriors
+    role: bare_metal_runtime_parity
+    note: vendor/rust_lean_bridge POC kernel — Tier 85 runtime cross-check
     account_required: false
   - name: fstar
     status: tier_84_candidate

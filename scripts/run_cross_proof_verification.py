@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Tier 82 wide cross-proof verification runner.
+Tier 84 wide cross-proof verification runner.
 
 Layers:
   1. Export obligations from full FSOT/Formal corpus
@@ -10,6 +10,7 @@ Layers:
   5. Isabelle full-scope cross-proof (connective + FullFormalSpine chunks)
   6. Lean ↔ Isabelle cross-refinement audit
   7. Transcendental bounds gap inventory (pi/e lemmas deferred from float export)
+  8. Rust f64 executable obligation replay (fourth check)
 """
 
 from __future__ import annotations
@@ -320,6 +321,42 @@ def run_isabelle() -> dict:
     }
 
 
+RUST_REPLAY_DIR = ROOT / "verification" / "rust" / "fsot_obligation_replay"
+
+
+def run_rust_replay() -> dict:
+    cargo = shutil.which("cargo")
+    if not cargo:
+        return {"status": "skipped", "reason": "cargo not on PATH"}
+    if not (RUST_REPLAY_DIR / "tests" / "replay_all_obligations.rs").exists():
+        return {"status": "failed", "reason": "missing generated Rust replay tests"}
+    try:
+        r = subprocess.run(
+            [cargo, "test", "--quiet"],
+            cwd=str(RUST_REPLAY_DIR),
+            capture_output=True,
+            text=True,
+            timeout=600,
+        )
+        meta_path = RUST_REPLAY_DIR / "obligation_meta.json"
+        meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
+        out = (r.stdout or "") + (r.stderr or "")
+        passed = r.returncode == 0
+        return {
+            "status": "passed" if passed else "failed",
+            "tool": cargo,
+            "crate": "fsot_obligation_replay",
+            "obligation_count": meta.get("total_count"),
+            "formal_count": meta.get("formal_count"),
+            "transcendental_count": meta.get("transcendental_count"),
+            "test_file": meta.get("test_file"),
+            "returncode": r.returncode,
+            "stderr_tail": out[-2000:],
+        }
+    except Exception as e:
+        return {"status": "failed", "reason": str(e)}
+
+
 def provable_formal_obligations() -> list[dict]:
     if not OBL_FORMAL.exists():
         return []
@@ -337,6 +374,7 @@ def main() -> int:
         "generate_transcendental_bounds_coq.py",
         "generate_full_formal_isabelle_artifacts.py",
         "generate_transcendental_bounds_isabelle.py",
+        "generate_rust_obligation_replay.py",
     ]
     for script in pipeline:
         r = subprocess.run([sys.executable, str(ROOT / "scripts" / script)], cwd=str(ROOT))
@@ -386,6 +424,16 @@ def main() -> int:
         (ROOT / "data" / "transcendental_bounds_gap_report.json").read_text(encoding="utf-8")
     )
 
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "cross_refinement_rust_audit.py")],
+        cwd=str(ROOT),
+    )
+    rust_refinement = json.loads(
+        (ROOT / "data" / "cross_refinement_rust_report.json").read_text(encoding="utf-8")
+    )
+    rust_refinement_ok = rust_refinement.get("overall_ok", False)
+    rust = run_rust_replay()
+
     lean_conn_ok = subprocess.run(
         [
             "lake",
@@ -402,7 +450,7 @@ def main() -> int:
 
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "83",
+        "tier": "84",
         "connective_spine": {
             "obligation_count": connective["obligation_count"],
             "python_decimal": {"status": "passed" if py_conn_ok else "failed"},
@@ -457,13 +505,22 @@ def main() -> int:
                 "transcendental_lemma_count": transcendental_gap.get("transcendental_lemma_count"),
                 "report": str(ROOT / "data" / "transcendental_bounds_gap_report.json"),
             },
+            "rust_replay": rust,
+            "rust_refinement": {
+                "status": "passed" if rust_refinement_ok else "failed",
+                "total_exported_to_rust": rust_refinement.get("total_exported_to_rust"),
+                "formal_python_f64_ok": rust_refinement.get("formal_python_f64_ok"),
+                "transcendental_python_f64_ok": rust_refinement.get("transcendental_python_f64_ok"),
+            },
         },
         "overall_ok": py_ok
             and lean_conn_ok
             and coq.get("status") == "passed"
             and refinement_ok
             and isa.get("status") in ("passed", "skipped")
-            and isa_refinement_ok,
+            and isa_refinement_ok
+            and rust.get("status") in ("passed", "skipped")
+            and rust_refinement_ok,
         "github_ready": len(margin_violations) == 0
             and py_ok
             and lean_conn_ok
@@ -479,10 +536,16 @@ def main() -> int:
             and coq.get("status") == "passed"
             and refinement_ok
             and isa.get("status") == "passed"
-            and isa_refinement_ok,
+            and isa_refinement_ok
+            and rust.get("status") == "passed"
+            and rust_refinement_ok,
+        "four_way_verification": py_ok
+            and coq.get("status") == "passed"
+            and isa.get("status") == "passed"
+            and rust.get("status") == "passed",
         "note": (
-            "Tier 83: Lean+Coq+Isabelle full-scope cross-proof plus transcendental Bounds.lean "
-            "certificates (68 lemmas) with Python decimal triangulation."
+            "Tier 84: Lean+Coq+Isabelle proof assistants plus Rust f64 executable replay "
+            "(1309 obligations) as fourth independent check."
         ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
@@ -492,7 +555,7 @@ def main() -> int:
         cwd=str(ROOT),
     )
 
-    print("CROSS-PROOF VERIFICATION (Tier 83 wide)")
+    print("CROSS-PROOF VERIFICATION (Tier 84 wide)")
     print(f"  connective obligations: {connective['obligation_count']}")
     print(f"  full formal obligations: {formal['obligation_count']} ({formal.get('modules_exported')} modules)")
     print(f"  provable: {len(provable_formal)} | margin violations: {len(margin_violations)}")
@@ -512,6 +575,12 @@ def main() -> int:
         f"pi/e intervals deferred, {transcendental_gap.get('transcendental_lemma_count', 0)} "
         f"structural lemmas in Bounds.lean"
     )
+    print(
+        f"  rust_replay: {rust.get('status')} "
+        f"({rust.get('obligation_count', 0)} obligations, test {rust.get('test_file', 'n/a')})"
+    )
+    print(f"  rust_refinement: {'PASS' if rust_refinement_ok else 'FAIL'}")
+    print(f"  four_way_verification: {report.get('four_way_verification')}")
     print(f"  overall_ok: {report['overall_ok']}")
     print(f"  github_ready: {report['github_ready']}")
     print(f"Wrote {REPORT}")
