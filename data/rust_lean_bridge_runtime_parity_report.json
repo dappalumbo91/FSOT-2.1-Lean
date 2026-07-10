@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-07-10T23:16:10.873889+00:00",
+  "tier": "85_rust_lean_bridge_runtime_parity",
+  "python_boot_scalar": 0.09928895626861721,
+  "canonical_boot_scalar": 0.09928895626861721,
+  "python_boot_ok": true,
+  "summary_boot_scalar": 0.09928895626861721,
+  "benchmark_median_error_pct": 0.0,
+  "benchmark_record_count": 9,
+  "cargo_runtime_parity": {
+    "status": "passed",
+    "tool": "C:\\Users\\damia\\.cargo\\bin\\cargo.EXE",
+    "crate": "fsot_scalar_kernel",
+    "test_file": "runtime_parity.rs",
+    "returncode": 0,
+    "stderr_tail": "\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 4 tests\n....\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
+  },
+  "overall_ok": true,
+  "note": "Host-runnable scalar kernel matches bare-metal POC summary; cargo test exercises boot + dynamic spot checks."
+}

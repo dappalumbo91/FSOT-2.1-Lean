@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Tier 84 wide cross-proof verification runner.
+Tier 85 wide cross-proof verification runner.
 
 Layers:
   1. Export obligations from full FSOT/Formal corpus
@@ -11,6 +11,8 @@ Layers:
   6. Lean ↔ Isabelle cross-refinement audit
   7. Transcendental bounds gap inventory (pi/e lemmas deferred from float export)
   8. Rust f64 executable obligation replay (fourth check)
+  9. rust_lean_bridge host runtime parity (bare-metal scalar kernel)
+  10. F* executable check (optional; skipped when fstar not installed)
 """
 
 from __future__ import annotations
@@ -322,6 +324,8 @@ def run_isabelle() -> dict:
 
 
 RUST_REPLAY_DIR = ROOT / "verification" / "rust" / "fsot_obligation_replay"
+SCALAR_KERNEL_DIR = ROOT / "verification" / "rust" / "fsot_scalar_kernel"
+FSTAR_DIR = ROOT / "verification" / "fstar"
 
 
 def run_rust_replay() -> dict:
@@ -350,6 +354,60 @@ def run_rust_replay() -> dict:
             "formal_count": meta.get("formal_count"),
             "transcendental_count": meta.get("transcendental_count"),
             "test_file": meta.get("test_file"),
+            "returncode": r.returncode,
+            "stderr_tail": out[-2000:],
+        }
+    except Exception as e:
+        return {"status": "failed", "reason": str(e)}
+
+
+def run_rust_lean_bridge_parity() -> dict:
+    try:
+        r = subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "rust_lean_bridge_runtime_parity.py")],
+            cwd=str(ROOT),
+            capture_output=True,
+            text=True,
+            timeout=300,
+        )
+        report_path = ROOT / "data" / "rust_lean_bridge_runtime_parity_report.json"
+        doc = json.loads(report_path.read_text(encoding="utf-8")) if report_path.exists() else {}
+        return {
+            "status": "passed" if r.returncode == 0 else "failed",
+            "crate": "fsot_scalar_kernel",
+            "python_boot_scalar": doc.get("python_boot_scalar"),
+            "benchmark_median_error_pct": doc.get("benchmark_median_error_pct"),
+            "returncode": r.returncode,
+            "stderr_tail": ((r.stdout or "") + (r.stderr or ""))[-2000:],
+        }
+    except Exception as e:
+        return {"status": "failed", "reason": str(e)}
+
+
+def run_fstar_check() -> dict:
+    fstar = shutil.which("fstar") or shutil.which("fstar.exe")
+    entry = FSTAR_DIR / "FSOTScalarBoot.fst"
+    if not fstar:
+        return {
+            "status": "skipped",
+            "reason": "fstar not on PATH",
+            "note": "Install F* to enable programming-language formal check (Tier 85 optional).",
+        }
+    if not entry.exists():
+        return {"status": "skipped", "reason": "no verification/fstar/FSOTScalarBoot.fst entry module"}
+    try:
+        r = subprocess.run(
+            [fstar, "--include", str(FSTAR_DIR), str(entry)],
+            cwd=str(ROOT),
+            capture_output=True,
+            text=True,
+            timeout=300,
+        )
+        out = (r.stdout or "") + (r.stderr or "")
+        return {
+            "status": "passed" if r.returncode == 0 else "failed",
+            "tool": fstar,
+            "entry": str(entry),
             "returncode": r.returncode,
             "stderr_tail": out[-2000:],
         }
@@ -434,6 +492,17 @@ def main() -> int:
     rust_refinement_ok = rust_refinement.get("overall_ok", False)
     rust = run_rust_replay()
 
+    bridge_parity = run_rust_lean_bridge_parity()
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "cross_refinement_rust_lean_bridge_audit.py")],
+        cwd=str(ROOT),
+    )
+    bridge_refinement = json.loads(
+        (ROOT / "data" / "cross_refinement_rust_lean_bridge_report.json").read_text(encoding="utf-8")
+    )
+    bridge_refinement_ok = bridge_refinement.get("overall_ok", False)
+    fstar = run_fstar_check()
+
     lean_conn_ok = subprocess.run(
         [
             "lake",
@@ -450,7 +519,7 @@ def main() -> int:
 
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "84",
+        "tier": "85",
         "connective_spine": {
             "obligation_count": connective["obligation_count"],
             "python_decimal": {"status": "passed" if py_conn_ok else "failed"},
@@ -512,6 +581,12 @@ def main() -> int:
                 "formal_python_f64_ok": rust_refinement.get("formal_python_f64_ok"),
                 "transcendental_python_f64_ok": rust_refinement.get("transcendental_python_f64_ok"),
             },
+            "rust_lean_bridge_parity": bridge_parity,
+            "rust_lean_bridge_refinement": {
+                "status": "passed" if bridge_refinement_ok else "failed",
+                "checks": bridge_refinement.get("checks"),
+            },
+            "fstar": fstar,
         },
         "overall_ok": py_ok
             and lean_conn_ok
@@ -520,7 +595,10 @@ def main() -> int:
             and isa.get("status") in ("passed", "skipped")
             and isa_refinement_ok
             and rust.get("status") in ("passed", "skipped")
-            and rust_refinement_ok,
+            and rust_refinement_ok
+            and bridge_parity.get("status") == "passed"
+            and bridge_refinement_ok
+            and fstar.get("status") in ("passed", "skipped"),
         "github_ready": len(margin_violations) == 0
             and py_ok
             and lean_conn_ok
@@ -543,9 +621,12 @@ def main() -> int:
             and coq.get("status") == "passed"
             and isa.get("status") == "passed"
             and rust.get("status") == "passed",
+        "five_way_runtime": py_ok
+            and rust.get("status") == "passed"
+            and bridge_parity.get("status") == "passed",
         "note": (
-            "Tier 84: Lean+Coq+Isabelle proof assistants plus Rust f64 executable replay "
-            "(1309 obligations) as fourth independent check."
+            "Tier 85: four-way proof assistants (Lean+Coq+Isabelle+Rust replay) plus "
+            "rust_lean_bridge bare-metal scalar runtime parity; F* optional when installed."
         ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
@@ -555,7 +636,7 @@ def main() -> int:
         cwd=str(ROOT),
     )
 
-    print("CROSS-PROOF VERIFICATION (Tier 84 wide)")
+    print("CROSS-PROOF VERIFICATION (Tier 85 wide)")
     print(f"  connective obligations: {connective['obligation_count']}")
     print(f"  full formal obligations: {formal['obligation_count']} ({formal.get('modules_exported')} modules)")
     print(f"  provable: {len(provable_formal)} | margin violations: {len(margin_violations)}")
@@ -580,7 +661,14 @@ def main() -> int:
         f"({rust.get('obligation_count', 0)} obligations, test {rust.get('test_file', 'n/a')})"
     )
     print(f"  rust_refinement: {'PASS' if rust_refinement_ok else 'FAIL'}")
+    print(
+        f"  rust_lean_bridge_parity: {bridge_parity.get('status')} "
+        f"(boot_scalar={bridge_parity.get('python_boot_scalar', 'n/a')})"
+    )
+    print(f"  rust_lean_bridge_refinement: {'PASS' if bridge_refinement_ok else 'FAIL'}")
+    print(f"  fstar: {fstar.get('status')}")
     print(f"  four_way_verification: {report.get('four_way_verification')}")
+    print(f"  five_way_runtime: {report.get('five_way_runtime')}")
     print(f"  overall_ok: {report['overall_ok']}")
     print(f"  github_ready: {report['github_ready']}")
     print(f"Wrote {REPORT}")
