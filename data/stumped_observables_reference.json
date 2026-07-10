@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "source": "Planck/SH0ES/PDG + FSOT prediction re-derivation report",
+  "updated": "2026-07-10",
+  "notes": "Open or contested observables — FSOT zero-parameter predictions vs literature anchors.",
+  "observables": [
+    {
+      "id": "h0_planck",
+      "name": "H0",
+      "property": "hubble_constant",
+      "measured": 67.4,
+      "unit": "km/s/Mpc",
+      "status": "hubble_tension_cmb",
+      "fsot_source": "wave1",
+      "reference": "Planck2018"
+    },
+    {
+      "id": "h0_sh0es",
+      "name": "H0_local_SH0ES",
+      "property": "hubble_constant",
+      "measured": 73.04,
+      "unit": "km/s/Mpc",
+      "status": "hubble_tension_local",
+      "fsot_source": "bubble_bleed_sector",
+      "sector": "sh0es_jwst",
+      "reference": "Riess2024"
+    },
+    {
+      "id": "h0_fsot_local",
+      "name": "H0_FSOT_local_anchor",
+      "property": "hubble_constant",
+      "measured": 72.1,
+      "unit": "km/s/Mpc",
+      "status": "fsot_dual_anchor",
+      "fsot_source": "bubble_bleed_sector",
+      "sector": "fsot_document_local",
+      "reference": "PREDICTION_REDERIVATION_REPORT"
+    },
+    {
+      "id": "w0",
+      "name": "w0",
+      "property": "dark_energy_eos",
+      "measured": -1.0,
+      "unit": "dimensionless",
+      "status": "dark_energy_open",
+      "fsot_source": "wave4",
+      "reference": "Planck2018_w0_prior"
+    },
+    {
+      "id": "n_eff",
+      "name": "N_eff",
+      "property": "neutrino_species",
+      "measured": 3.046,
+      "unit": "dimensionless",
+      "status": "cmb_open",
+      "fsot_source": "wave2",
+      "reference": "SM_N_eff"
+    },
+    {
+      "id": "omega_lambda",
+      "name": "Omega_Lambda",
+      "property": "dark_energy_density",
+      "measured": 0.685,
+      "unit": "dimensionless",
+      "status": "dark_energy_open",
+      "fsot_source": "wave2",
+      "reference": "Planck2018"
+    },
+    {
+      "id": "sigma_8",
+      "name": "sigma_8",
+      "property": "matter_clustering",
+      "measured": 0.8111,
+      "unit": "dimensionless",
+      "status": "s8_tension",
+      "fsot_source": "wave2",
+      "reference": "Euclid_Q1_2024"
+    },
+    {
+      "id": "r_c",
+      "name": "r_c",
+      "property": "dwarf_core_radius",
+      "measured": 0.6,
+      "unit": "kpc",
+      "status": "cusp_core_problem",
+      "fsot_source": "poof_softening",
+      "reference": "Fornax_dwarf"
+    },
+    {
+      "id": "m_h",
+      "name": "m_H",
+      "property": "higgs_mass",
+      "measured": 125.25,
+      "unit": "GeV",
+      "status": "hierarchy_problem",
+      "fsot_source": "FO-213",
+      "reference": "ATLAS_CMS_combined"
+    },
+    {
+      "id": "tau_reion",
+      "name": "tau_reion",
+      "property": "reionization_optical_depth",
+      "measured": 0.0561,
+      "unit": "dimensionless",
+      "status": "cmb_open",
+      "fsot_source": "wave2",
+      "reference": "Planck2018"
+    },
+    {
+      "id": "d_h",
+      "name": "D_H_ratio",
+      "property": "deuterium_abundance",
+      "measured": 2.527e-5,
+      "unit": "dimensionless",
+      "status": "bbn_open",
+      "fsot_source": "wave5",
+      "reference": "Cooke_2018"
+    },
+    {
+      "id": "e_con",
+      "name": "E_con",
+      "property": "brain_power",
+      "measured": 20.0,
+      "unit": "W",
+      "status": "consciousness_open",
+      "fsot_source": "stabilized_report",
+      "reference": "human_brain_metabolic"
+    },
+    {
+      "id": "w_a",
+      "name": "w_a",
+      "property": "dark_energy_eos_evolution",
+      "measured": null,
+      "unit": "dimensionless",
+      "status": "unconfirmed_prediction",
+      "fsot_source": "stabilized_report",
+      "fsot_predicted": -0.808,
+      "reference": "FSOT_P45c"
+    }
+  ]
+}

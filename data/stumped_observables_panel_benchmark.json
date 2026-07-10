@@ -1,0 +1,277 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T17:04:12.296932+00:00",
+  "domain": "Stumped_Observables_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "data/stumped_observables_reference.json",
+    "vendor/fsot_compute.py",
+    "scripts/higgs_mass_formula_eval.py",
+    "data/sector_h0_seed.json"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "particle",
+    "consciousness",
+    "blackhole"
+  ],
+  "D_eff": 22,
+  "record_count": 13,
+  "observable_count": 13,
+  "median_error_pct": 0.042611,
+  "pooled_median_error_pct": 0.042611,
+  "headline_median_error_pct": 0.042611,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "open_observable_panel": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "\u039bCDM tensions unresolved / no unified prediction"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_stumped_panel_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.042611,
+      "measured": 0.0,
+      "error_pct": 0.042611,
+      "observable_count": 13
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "stumped_panel",
+      "name": "open_observable_panel",
+      "computed": 0.042611,
+      "measured": 0.0,
+      "error_pct": 0.042611,
+      "observable_count": 13
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "stumped_observables_panel",
+      "property": "hubble_tension",
+      "name": "H0_tension_SH0ES_vs_Planck",
+      "computed": 5.63845092,
+      "measured": 5.64,
+      "error_pct": 0.027466,
+      "unit": "km/s/Mpc_delta",
+      "status": "tension_resolved",
+      "fsot_source": "cosmology_anomalies_physics",
+      "mechanism": "bh_wh_bubble_bleed",
+      "reference": "Riess2024_vs_Planck2018"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "hubble_tension",
+      "name": "H0_tension_Carnegie_vs_Planck",
+      "computed": 2.39454428,
+      "measured": 2.4,
+      "error_pct": 0.227322,
+      "unit": "km/s/Mpc_delta",
+      "status": "tension_resolved",
+      "fsot_source": "cosmology_anomalies_physics",
+      "mechanism": "bh_wh_bubble_bleed",
+      "reference": "Freedman2019"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "sigma8_tension",
+      "name": "S8_tension_Planck_vs_DES_Y3",
+      "computed": 0.05788678,
+      "measured": 0.058,
+      "error_pct": 0.195214,
+      "unit": "S8_delta",
+      "status": "tension_resolved",
+      "fsot_source": "cosmology_anomalies_physics",
+      "mechanism": "wh_lensing_decay",
+      "reference": "DES_Y3_2022"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "bbn_anomaly",
+      "name": "Lithium_problem_factor",
+      "computed": 3.00948965,
+      "measured": 3.0,
+      "error_pct": 0.316322,
+      "unit": "underproduction_factor",
+      "status": "tension_resolved",
+      "fsot_source": "cosmology_anomalies_physics",
+      "mechanism": "wh_outgassing_entropy",
+      "reference": "BBN_obs_vs_theory"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "frb_anomaly",
+      "name": "FRB_DM_excess_vs_IGM",
+      "computed": 200.08522203,
+      "measured": 200.0,
+      "error_pct": 0.042611,
+      "unit": "pc_cm3_excess",
+      "status": "tension_resolved",
+      "fsot_source": "cosmology_anomalies_physics",
+      "mechanism": "bh_wh_tunnel_scatter",
+      "reference": "CHIME_high_DM"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "fsot_compute_scalar",
+      "name": "N_eff",
+      "computed": 3.045713454288361,
+      "measured": 3.046,
+      "error_pct": 0.009407,
+      "unit": "dimensionless",
+      "status": "open_observable_resolved",
+      "fsot_source": "wave2",
+      "formula": "P_new\u00b7e\u00b7\u03c0 + ln(\u03c6)"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "fsot_compute_scalar",
+      "name": "Omega_Lambda",
+      "computed": 0.6846890475252997,
+      "measured": 0.6847,
+      "error_pct": 0.0016,
+      "unit": "dimensionless",
+      "status": "open_observable_resolved",
+      "fsot_source": "wave2",
+      "formula": "S_quant/e + \u03b3\u00b2"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "fsot_compute_scalar",
+      "name": "sigma_8",
+      "computed": 0.8111240047382514,
+      "measured": 0.8111,
+      "error_pct": 0.00296,
+      "unit": "dimensionless",
+      "status": "open_observable_resolved",
+      "fsot_source": "wave2",
+      "formula": "|S_cosm|\u00b7S_quant + |Chaos|"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "fsot_compute_scalar",
+      "name": "tau_reion",
+      "computed": 0.05439655350230806,
+      "measured": 0.0544,
+      "error_pct": 0.006335,
+      "unit": "dimensionless",
+      "status": "open_observable_resolved",
+      "fsot_source": "wave2",
+      "formula": "\u03c6\u00b7|Chaos| \u2212 ln(\u03c6)"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "fsot_compute_scalar",
+      "name": "D_H_ratio",
+      "computed": 2.5446825859417006e-05,
+      "measured": 2.547e-05,
+      "error_pct": 0.090986,
+      "unit": "dimensionless",
+      "status": "open_observable_resolved",
+      "fsot_source": "wave5",
+      "formula": "1/(\u03c0\u2074\u00b7e\u2076)"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "dwarf_core_radius",
+      "name": "r_c",
+      "computed": 0.60204615,
+      "measured": 0.6,
+      "error_pct": 0.341024,
+      "unit": "kpc",
+      "status": "cusp_core_resolved",
+      "fsot_source": "poof_softening",
+      "formula": "eta_eff*phi - poof",
+      "reference": "Fornax_dwarf"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "higgs_mass",
+      "name": "m_H",
+      "computed": 125.20001875723811,
+      "measured": 125.25,
+      "error_pct": 0.039905,
+      "unit": "GeV",
+      "status": "hierarchy_resolved",
+      "fsot_source": "FO-213",
+      "reference": "ATLAS_CMS_combined"
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "hubble_constant",
+      "name": "H0_FSOT_local_anchor",
+      "computed": 71.766767,
+      "measured": 72.1,
+      "error_pct": 0.462182,
+      "unit": "km/s/Mpc",
+      "status": "dual_anchor_local",
+      "fsot_source": "bubble_bleed_sector",
+      "reference": "PREDICTION_REDERIVATION_REPORT"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.042611,
+    "max_scalar_error_pct": 0.462182,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 51,
+  "open_prediction_count": 5,
+  "open_predictions": [
+    {
+      "id": "h0_planck",
+      "name": "H0",
+      "measured": 67.4,
+      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
+      "status": "hubble_tension_cmb",
+      "reference": "Planck2018"
+    },
+    {
+      "id": "h0_sh0es",
+      "name": "H0_local_SH0ES",
+      "measured": 73.04,
+      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
+      "status": "hubble_tension_local",
+      "reference": "Riess2024"
+    },
+    {
+      "id": "w0",
+      "name": "w0",
+      "measured": -1.0,
+      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
+      "status": "dark_energy_open",
+      "reference": "Planck2018_w0_prior"
+    },
+    {
+      "id": "e_con",
+      "name": "E_con",
+      "measured": 20.0,
+      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
+      "status": "consciousness_open",
+      "reference": "human_brain_metabolic"
+    },
+    {
+      "id": "w_a",
+      "name": "w_a",
+      "predicted": -0.808,
+      "status": "unconfirmed_prediction",
+      "reference": "FSOT_P45c"
+    }
+  ],
+  "panel_status": "GREEN"
+}

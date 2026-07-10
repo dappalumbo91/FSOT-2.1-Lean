@@ -1,0 +1,146 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T17:04:12.320480+00:00",
+  "domain": "Dark_Sector_Open_Problems",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "vendor/fsot_compute.py",
+    "data/stumped_observables_reference.json"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "particle"
+  ],
+  "D_eff": 24,
+  "record_count": 7,
+  "observable_count": 7,
+  "median_error_pct": 0.006335,
+  "pooled_median_error_pct": 0.006335,
+  "headline_median_error_pct": 0.006335,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "lambda_cdm_open_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "\u039bCDM fit parameters \u2014 not zero-parameter prediction"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_dark_sector_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.006335,
+      "measured": 0.0,
+      "error_pct": 0.006335,
+      "observable_count": 7
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "dark_sector",
+      "name": "lambda_cdm_open_panel",
+      "computed": 0.006335,
+      "measured": 0.0,
+      "error_pct": 0.006335,
+      "observable_count": 7
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "dark_sector_open_lab",
+      "property": "dark_energy_eos",
+      "name": "w0",
+      "computed": -1.0299812921372637,
+      "measured": -1.0,
+      "error_pct": 0.001816,
+      "wave": "wave4",
+      "formula": "\u2212P_new\u00b7\u03c0/G",
+      "status": "dark_sector_open"
+    },
+    {
+      "lab": "dark_sector_open_lab",
+      "property": "neutrino_species",
+      "name": "N_eff",
+      "computed": 3.045713454288361,
+      "measured": 3.046,
+      "error_pct": 0.009407,
+      "wave": "wave2",
+      "formula": "P_new\u00b7e\u00b7\u03c0 + ln(\u03c6)",
+      "status": "dark_sector_open"
+    },
+    {
+      "lab": "dark_sector_open_lab",
+      "property": "dark_energy_density",
+      "name": "Omega_Lambda",
+      "computed": 0.6846890475252997,
+      "measured": 0.685,
+      "error_pct": 0.0016,
+      "wave": "wave2",
+      "formula": "S_quant/e + \u03b3\u00b2",
+      "status": "dark_sector_open"
+    },
+    {
+      "lab": "dark_sector_open_lab",
+      "property": "matter_clustering",
+      "name": "sigma_8",
+      "computed": 0.8111240047382514,
+      "measured": 0.8111,
+      "error_pct": 0.00296,
+      "wave": "wave2",
+      "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
+      "status": "dark_sector_open"
+    },
+    {
+      "lab": "dark_sector_open_lab",
+      "property": "reionization_optical_depth",
+      "name": "tau_reion",
+      "computed": 0.05439655350230806,
+      "measured": 0.0561,
+      "error_pct": 0.006335,
+      "wave": "wave2",
+      "formula": "\u03c6\u00b7|Chaos| \u2212 ln(\u03c6)",
+      "status": "dark_sector_open"
+    },
+    {
+      "lab": "dark_sector_open_lab",
+      "property": "deuterium_abundance",
+      "name": "D_H_ratio",
+      "computed": 2.5446825859417006e-05,
+      "measured": 2.527e-05,
+      "error_pct": 0.090986,
+      "wave": "wave5",
+      "formula": "1/(\u03c0\u2074\u00b7e\u2076)",
+      "status": "dark_sector_open"
+    },
+    {
+      "lab": "dark_sector_open_lab",
+      "property": "primordial_helium",
+      "name": "Y_p_He4",
+      "computed": 0.24478099844975698,
+      "measured": 0.2449,
+      "error_pct": 0.048592,
+      "wave": "wave5",
+      "formula": "\u03b8_S\u00b7sin(1)",
+      "status": "dark_sector_open"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.006335,
+    "max_scalar_error_pct": 0.090986,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 51,
+  "dark_sector_status": "GREEN"
+}

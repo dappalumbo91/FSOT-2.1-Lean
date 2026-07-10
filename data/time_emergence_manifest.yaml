@@ -1,0 +1,66 @@
+# Tier 50 — Time emergence / Fluid Phase Current (FPC) official domain manifest
+version: "1.0"
+updated: "2026-07-10"
+physics:
+  name: Fluid_Phase_Current
+  long_name: Observer-Locked Emergent Phase Propagation Current
+  hypothesis: time_is_emergent_byproduct_not_fundamental
+  ontology:
+    liquid_state: unobserved superfluid possibility space
+    solid_state: quirk_mod + observed=True locks sequential now
+    null_island_anchor: { lat_deg: 0.0, lon_deg: 0.0, role: GPS_fail_UTC_prime_meridian_fluid_observer }
+
+fpc_anchors:
+  cs133_fpc_equilibrium:
+    value: 1.344
+    source: NIST Cs-133 hyperfine tick
+    validation: fpc_direct
+  iers_planetary_tau:
+    value: 1.79
+    source: IERS Earth sidereal NULL Island τ prior
+    validation: fsot_anchor_coupling
+  kepler_orbital_tau:
+    value: 1.80
+    source: IAU Kepler orbital-year τ prior
+    validation: fsot_anchor_coupling
+  lambda_cdm_damping:
+    value: 0.50
+    source: cosmology_extended_benchmark.json damping anchor
+    validation: fsot_anchor_coupling
+  molecular_recycle_tau:
+    value: 1.0
+    source: Poof-dominant molecular valve unity τ baseline
+    validation: fsot_anchor_coupling
+
+crosswalk:
+  scan: extension_domains_manifest.yaml
+  min_record_count: 5
+  max_median_error_pct: 5.0
+  priority_domains:
+    - Compactification_Ladder
+    - Reality_Folding_Spine
+    - Cosmology_Extended
+    - Magnetosphere_Extended
+    - Domain_Coupling_Simulation
+    - Planetary_Science
+    - Atomic_Physics
+    - Cosmology
+    - Particle_Astrophysics
+    - Orbital_Mechanics
+
+fluidlink:
+  hub: Time_Emergence_Simulation
+  edge_type: fluidlink_fpc_timing
+  spine_targets:
+    - Compactification_Ladder
+    - Reality_Folding_Spine
+    - Cosmology_Extended
+    - Magnetosphere_Extended
+    - Domain_Coupling_Simulation
+    - ToE_Unification_Spine
+
+tier_50_domains:
+  - Time_Emergence_Simulation
+  - Time_Domain_Crosswalk
+  - FPC_Temporal_Coupling
+  - Fluid_Phase_Current_Spine

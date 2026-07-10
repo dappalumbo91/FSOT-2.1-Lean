@@ -1,0 +1,137 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T17:04:12.321480+00:00",
+  "domain": "Stumped_Observables_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "stumped_observables_panel_benchmark.json",
+    "hubble_bubble_tension_benchmark.json",
+    "dark_sector_open_problems_benchmark.json",
+    "cosmology_anomalies_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "particle",
+    "consciousness",
+    "blackhole",
+    "cmb"
+  ],
+  "D_eff": 25,
+  "record_count": 5,
+  "observable_count": 5,
+  "median_error_pct": 0.042611,
+  "pooled_median_error_pct": 0.042611,
+  "headline_median_error_pct": 0.042611,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "open_problem_rollup": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "Disconnected anomaly catalogs \u2014 no zero-parameter spine"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_stumped_spine_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.042611,
+      "measured": 0.0,
+      "error_pct": 0.042611,
+      "observable_count": 5
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "stumped_spine",
+      "name": "open_problem_rollup",
+      "computed": 0.042611,
+      "measured": 0.0,
+      "error_pct": 0.042611,
+      "observable_count": 5
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "stumped_observables_spine_lab",
+      "property": "stumped_pillar",
+      "name": "stumped_observables_panel",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.042611,
+      "source": "Stumped_Observables_Panel",
+      "status": "GREEN"
+    },
+    {
+      "lab": "stumped_observables_spine_lab",
+      "property": "stumped_pillar",
+      "name": "hubble_bubble_tension",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.462181,
+      "source": "Hubble_Bubble_Tension",
+      "status": "GREEN"
+    },
+    {
+      "lab": "stumped_observables_spine_lab",
+      "property": "stumped_pillar",
+      "name": "dark_sector_open_problems",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.006335,
+      "source": "Dark_Sector_Open_Problems",
+      "status": "GREEN"
+    },
+    {
+      "lab": "stumped_observables_spine_lab",
+      "property": "cosmology_anomalies_link",
+      "name": "cosmology_anomalies_tier25",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.140126,
+      "source": "Cosmology_Anomalies",
+      "status": "GREEN"
+    },
+    {
+      "lab": "stumped_observables_spine_lab",
+      "property": "open_prediction_registry",
+      "name": "w_a_E_con_w0_tracked",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "source": "stumped_observables_reference",
+      "status": "OPEN"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.042611,
+    "max_scalar_error_pct": 0.462181,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 51,
+  "panel_status": "GREEN",
+  "tension_status": "GREEN",
+  "dark_sector_status": "GREEN",
+  "open_prediction_count": 5,
+  "h0_sector_count": 6,
+  "stumped_spine_status": "GREEN",
+  "crosswalk_modules": [
+    "FSOT.Formal.StumpedObservablesSpinePriors",
+    "FSOT.Formal.StumpedObservablesPanelPriors",
+    "FSOT.Formal.HubbleBubbleTensionPriors",
+    "FSOT.Formal.DarkSectorOpenProblemsPriors",
+    "FSOT.Formal.BubbleBleedPriors",
+    "FSOT.Formal.CosmologyAnomaliesPriors"
+  ]
+}

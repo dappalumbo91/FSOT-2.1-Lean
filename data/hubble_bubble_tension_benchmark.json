@@ -1,0 +1,163 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T17:04:12.315865+00:00",
+  "domain": "Hubble_Bubble_Tension",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "data/sector_h0_seed.json",
+    "scripts/build_cosmology_bubble_bleed_benchmark.py"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "blackhole",
+    "cmb"
+  ],
+  "D_eff": 25,
+  "record_count": 6,
+  "observable_count": 6,
+  "median_error_pct": 0.462181,
+  "pooled_median_error_pct": 0.462181,
+  "headline_median_error_pct": 0.462181,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "dual_anchor_h0_panel": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "Single H0 \u2014 Hubble tension unresolved"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_h0_sector_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.462181,
+      "measured": 0.0,
+      "error_pct": 0.462181,
+      "observable_count": 6
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "h0_sector",
+      "name": "dual_anchor_h0_panel",
+      "computed": 0.462181,
+      "measured": 0.0,
+      "error_pct": 0.462181,
+      "observable_count": 6
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "hubble_bubble_tension_lab",
+      "property": "sector_h0_overlay",
+      "name": "global_cmb_background",
+      "computed": 68.440057,
+      "measured": 68.44005682979427,
+      "error_pct": 0.0,
+      "bubble_density_proxy": 0.0,
+      "bubble_density_sky": 0.0,
+      "method": "FSOT_Wave1_CMB",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "status": "hubble_tension_resolution",
+      "mechanism": "bh_wh_outgassing_expansion"
+    },
+    {
+      "lab": "hubble_bubble_tension_lab",
+      "property": "sector_h0_overlay",
+      "name": "planck_cmb_local",
+      "computed": 67.383958,
+      "measured": 67.4,
+      "error_pct": 0.023801,
+      "bubble_density_proxy": -1.0,
+      "bubble_density_sky": -1.0,
+      "method": "Planck2018",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "status": "hubble_tension_resolution",
+      "mechanism": "bh_wh_outgassing_expansion"
+    },
+    {
+      "lab": "hubble_bubble_tension_lab",
+      "property": "sector_h0_overlay",
+      "name": "sh0es_jwst",
+      "computed": 73.826159,
+      "measured": 73.04,
+      "error_pct": 1.076341,
+      "bubble_density_proxy": 5.1,
+      "bubble_density_sky": -0.5862,
+      "method": "SH0ES_Cepheid_TRGB",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "status": "hubble_tension_resolution",
+      "mechanism": "bh_wh_outgassing_expansion"
+    },
+    {
+      "lab": "hubble_bubble_tension_lab",
+      "property": "sector_h0_overlay",
+      "name": "freedman_jwst",
+      "computed": 70.393839,
+      "measured": 70.39,
+      "error_pct": 0.005454,
+      "bubble_density_proxy": 1.85,
+      "bubble_density_sky": -0.2759,
+      "method": "JWST_TRGB",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "status": "hubble_tension_resolution",
+      "mechanism": "bh_wh_outgassing_expansion"
+    },
+    {
+      "lab": "hubble_bubble_tension_lab",
+      "property": "sector_h0_overlay",
+      "name": "fsot_document_local",
+      "computed": 71.766767,
+      "measured": 72.1,
+      "error_pct": 0.462181,
+      "bubble_density_proxy": 3.15,
+      "bubble_density_sky": -0.6379,
+      "method": "FSOT_local_bubble",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "status": "hubble_tension_resolution",
+      "mechanism": "bh_wh_outgassing_expansion"
+    },
+    {
+      "lab": "hubble_bubble_tension_lab",
+      "property": "sector_h0_overlay",
+      "name": "carnegie_h0",
+      "computed": 70.594498,
+      "measured": 69.8,
+      "error_pct": 1.138249,
+      "bubble_density_proxy": 2.04,
+      "bubble_density_sky": -0.6897,
+      "method": "Carnegie_distance_ladder",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28,
+      "status": "hubble_tension_resolution",
+      "mechanism": "bh_wh_outgassing_expansion"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.242991,
+    "max_scalar_error_pct": 1.138249,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 51,
+  "h0_global_fsot": 68.44005682979427,
+  "bubble_bleed_fraction": 0.015431,
+  "h0_sector_count": 6,
+  "tension_status": "GREEN"
+}

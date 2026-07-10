@@ -1,0 +1,61 @@
+# Tier 51 anomaly observables — public ingest + external cache on G:
+version: "1.1"
+updated: "2026-07-10"
+
+cache:
+  root: G:/FSOT-PublicData/anomaly_observables
+  env_override: FSOT_ANOMALY_CACHE_ROOT
+
+sources:
+  consciousness_anage:
+    url: https://genomics.senescence.info/species/dataset.zip
+    cache_dir: consciousness/anage
+    vendor_summary: vendor/public_data/consciousness/anage_summary.json
+
+  consciousness_species_panel:
+    cache_dir: consciousness
+    vendor_summary: vendor/public_data/consciousness/anage_species_panel.json
+    reference: data/consciousness_reference_observables.json
+
+  consciousness_openneuro:
+    api: https://openneuro.org/crn/graphql
+    cache_dir: consciousness/openneuro
+    vendor_summary: vendor/public_data/consciousness/openneuro_summary.json
+
+  sh0es_ceph:
+    repo: https://github.com/PantheonPlusSH0ES/DataRelease
+    files:
+      - SH0ES_Data/optical_wes_R22_for19fromR16.dat
+      - SH0ES_Data/R22_orig19_NIR.out
+      - SH0ES_Data/lstsq_results.txt
+      - SH0ES_Data/README.md
+      - SH0ES_Data/alll_shoes_ceph_topantheonwt6.0_112221.fits
+      - SH0ES_Data/ally_shoes_ceph_topantheonwt6.0_112221.fits
+      - SH0ES_Data/allc_shoes_ceph_topantheonwt6.0_112221.fits
+    cache_dir: sh0es
+    vendor_summary: vendor/public_data/sh0es/sh0es_summary.json
+
+  dark_energy_cpl:
+    cache_dir: dark_energy_cpl
+    reference: data/dark_energy_cpl_reference.json
+    vendor_summary: vendor/public_data/dark_energy_cpl/cpl_constraints_summary.json
+
+  consciousness_resonance:
+    reference: data/consciousness_resonance_reference.json
+    note: "Microtubule tunnel valves — esoteric practice frequencies → measurable EEG/therapy uplifts"
+
+build:
+  consciousness_econ: scripts/build_consciousness_econ_benchmark.py
+  dark_energy_cpl: scripts/build_dark_energy_cpl_benchmark.py
+  sh0es_refined: scripts/build_sh0es_refined_benchmark.py
+
+lean:
+  generator: scripts/gen_anomaly_observables_lean.py
+  modules:
+    - FSOT.Formal.ConsciousnessEconPriors
+    - FSOT.Formal.DarkEnergyCPLPriors
+    - FSOT.Formal.SH0ESRefinedPriors
+
+verification:
+  min_records: 5
+  max_median_error_pct: 0.5

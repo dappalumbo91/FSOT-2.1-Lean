@@ -1,0 +1,195 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T17:04:11.692330+00:00",
+  "domain": "Dark_Energy_CPL",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "data/dark_energy_cpl_reference.json",
+    "vendor/fsot_compute.py"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "particle"
+  ],
+  "D_eff": 24,
+  "record_count": 6,
+  "observable_count": 6,
+  "median_error_pct": 0.025535,
+  "pooled_median_error_pct": 0.025535,
+  "headline_median_error_pct": 0.025535,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "survey_constraint_panel": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No unified w0-wa prediction before measurement"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_cpl_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.025535,
+      "measured": 0.0,
+      "error_pct": 0.025535,
+      "observable_count": 6
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "cpl",
+      "name": "survey_constraint_panel",
+      "computed": 0.025535,
+      "measured": 0.0,
+      "error_pct": 0.025535,
+      "observable_count": 6
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "dark_energy_cpl_lab",
+      "property": "w0_engine_pair",
+      "name": "fsot_compute_wave4_w0",
+      "computed": -1.029981,
+      "measured": -1.03,
+      "error_pct": 0.001816,
+      "formula": "\u2212P_new\u00b7\u03c0/G",
+      "eval_kind": "fsot_compute"
+    },
+    {
+      "lab": "dark_energy_cpl_lab",
+      "property": "w0_constraint",
+      "name": "Planck2018_w0",
+      "computed": -1.029981,
+      "measured": -1.03,
+      "error_pct": 3.1e-05,
+      "sigma_distance": 0.0006,
+      "sigma": 0.03,
+      "survey": "Planck2018",
+      "status": "active_measurement",
+      "eval_kind": "w0_live"
+    },
+    {
+      "lab": "dark_energy_cpl_lab",
+      "property": "w0_constraint",
+      "name": "DES_Y3_w0",
+      "computed": -1.029981,
+      "measured": -0.978,
+      "error_pct": 0.034198,
+      "sigma_distance": 0.684,
+      "sigma": 0.076,
+      "survey": "DES_Y3",
+      "status": "active_measurement",
+      "eval_kind": "w0_live"
+    },
+    {
+      "lab": "dark_energy_cpl_lab",
+      "property": "w0_constraint",
+      "name": "PantheonPlus_w0",
+      "computed": -1.029981,
+      "measured": -1.007,
+      "error_pct": 0.025535,
+      "sigma_distance": 0.5107,
+      "sigma": 0.045,
+      "survey": "PantheonPlus",
+      "status": "active_measurement",
+      "eval_kind": "w0_live"
+    },
+    {
+      "lab": "dark_energy_cpl_lab",
+      "property": "w0_constraint",
+      "name": "DESI_2024_BAO_preview_w0",
+      "computed": -1.029981,
+      "measured": -1.02,
+      "error_pct": 0.012477,
+      "sigma_distance": 0.2495,
+      "sigma": 0.04,
+      "survey": "DESI_2024_BAO_preview",
+      "status": "active_measurement",
+      "eval_kind": "w0_live"
+    },
+    {
+      "lab": "dark_energy_cpl_lab",
+      "property": "w0_constraint",
+      "name": "DESI_DR2_w0",
+      "computed": -1.029981,
+      "measured": -0.727,
+      "error_pct": 0.15,
+      "sigma_distance": 9.7736,
+      "sigma": 0.031,
+      "survey": "DESI_DR2",
+      "status": "active_measurement",
+      "eval_kind": "w0_live"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.019006,
+    "max_scalar_error_pct": 0.15,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 51,
+  "fsot_w0": -1.0299812921372637,
+  "fsot_wa": -0.808129,
+  "preregistered": true,
+  "open_predictions": [
+    {
+      "survey": "Planck2018",
+      "fsot_wa": -0.808129,
+      "published_wa": -0.4,
+      "wa_sigma": 0.4,
+      "sigma_distance": 1.0203,
+      "status": "preregistered_vs_active_survey"
+    },
+    {
+      "survey": "DES_Y3",
+      "fsot_wa": -0.808129,
+      "published_wa": -0.28,
+      "wa_sigma": 0.31,
+      "sigma_distance": 1.7036,
+      "status": "preregistered_vs_active_survey"
+    },
+    {
+      "survey": "PantheonPlus",
+      "fsot_wa": -0.808129,
+      "published_wa": 0.0,
+      "wa_sigma": 0.5,
+      "sigma_distance": 1.6163,
+      "status": "preregistered_vs_active_survey"
+    },
+    {
+      "survey": "DESI_2024_BAO_preview",
+      "fsot_wa": -0.808129,
+      "published_wa": -0.1,
+      "wa_sigma": 0.35,
+      "sigma_distance": 2.0232,
+      "status": "preregistered_vs_active_survey"
+    },
+    {
+      "survey": "DESI_DR2",
+      "fsot_wa": -0.808129,
+      "published_wa": -1.018,
+      "wa_sigma": 0.24,
+      "sigma_distance": 0.8745,
+      "status": "preregistered_vs_active_survey"
+    },
+    {
+      "name": "FSOT_wa_master_prediction",
+      "fsot_wa": -0.808129,
+      "formula": "-gamma*e*phi/pi",
+      "status": "preregistered_awaiting_DESI_Rubin"
+    }
+  ],
+  "cpl_status": "GREEN"
+}

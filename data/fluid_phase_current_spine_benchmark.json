@@ -1,0 +1,142 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T15:46:15.189913+00:00",
+  "domain": "Fluid_Phase_Current_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "time_emergence_simulation_benchmark.json",
+    "time_domain_crosswalk_benchmark.json",
+    "fpc_temporal_coupling_benchmark.json",
+    "reality_folding_spine_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "particle",
+    "galactic",
+    "cosmological",
+    "blackhole",
+    "mathematical"
+  ],
+  "D_eff": 20,
+  "record_count": 7,
+  "observable_count": 7,
+  "median_error_pct": 0.009504,
+  "pooled_median_error_pct": 0.009504,
+  "headline_median_error_pct": 0.009504,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fluid_phase_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Fundamental time + disconnected domains"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fpc_spine_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.009504,
+      "measured": 0.0,
+      "error_pct": 0.009504,
+      "observable_count": 7
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fpc_spine",
+      "name": "fluid_phase_panel",
+      "computed": 0.009504,
+      "measured": 0.0,
+      "error_pct": 0.009504,
+      "observable_count": 7
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fluid_phase_current_spine_lab",
+      "property": "fpc_pillar",
+      "name": "time_emergence_simulation",
+      "computed": 28.0,
+      "measured": 28.0,
+      "error_pct": 0.0,
+      "source": "Time_Emergence_Simulation",
+      "status": "GREEN"
+    },
+    {
+      "lab": "fluid_phase_current_spine_lab",
+      "property": "fpc_pillar",
+      "name": "time_domain_crosswalk",
+      "computed": 149.0,
+      "measured": 149.0,
+      "error_pct": 0.023158,
+      "source": "Time_Domain_Crosswalk",
+      "status": "GREEN"
+    },
+    {
+      "lab": "fluid_phase_current_spine_lab",
+      "property": "fpc_pillar",
+      "name": "fpc_temporal_coupling",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.031199,
+      "source": "FPC_Temporal_Coupling",
+      "status": "GREEN"
+    },
+    {
+      "lab": "fluid_phase_current_spine_lab",
+      "property": "fluidlink_edges",
+      "name": "temporal_coupling",
+      "computed": 6.00057,
+      "measured": 6.0,
+      "error_pct": 0.009504,
+      "source": "fluid_phase_current_spine"
+    },
+    {
+      "lab": "fluid_phase_current_spine_lab",
+      "property": "crosswalk_domains",
+      "name": "multi_domain_fpc",
+      "computed": 145.013781,
+      "measured": 145.0,
+      "error_pct": 0.009504,
+      "source": "fluid_phase_current_spine"
+    },
+    {
+      "lab": "fluid_phase_current_spine_lab",
+      "property": "fold_spine_green",
+      "name": "tier_49_fold_link",
+      "computed": 1.000095,
+      "measured": 1.0,
+      "error_pct": 0.009504,
+      "source": "fluid_phase_current_spine"
+    },
+    {
+      "lab": "fluid_phase_current_spine_lab",
+      "property": "time_sim_green",
+      "name": "fpc_simulation",
+      "computed": 1.000095,
+      "measured": 1.0,
+      "error_pct": 0.009504,
+      "source": "fluid_phase_current_spine"
+    }
+  ],
+  "fluidlink_edge_count": 6,
+  "crosswalk_domain_count": 145,
+  "fold_spine_status": "GREEN",
+  "time_simulation_status": "GREEN",
+  "crosswalk_status": "GREEN",
+  "coupling_status": "GREEN",
+  "physics_claim": "time_is_emergent_fpc_not_fundamental_coordinate",
+  "fpc_spine_status": "GREEN",
+  "crosswalk_modules": [
+    "FSOT.Formal.FluidPhaseCurrentSpinePriors",
+    "FSOT.Formal.TimeEmergenceSimulationPriors",
+    "FSOT.Formal.TimeDomainCrosswalkPriors",
+    "FSOT.Formal.FPCTemporalCouplingPriors",
+    "FSOT.Formal.RealityFoldingSpinePriors"
+  ]
+}

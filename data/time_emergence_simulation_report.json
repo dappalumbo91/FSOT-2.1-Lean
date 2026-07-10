@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-07-10T15:45:55.143192+00:00",
+  "physics_ontology": {
+    "name": "Fluid Phase Current",
+    "shorthand": "FPC / phase current",
+    "liquid_state": "unobserved superfluid possibility space",
+    "solidification": "quirk_mod + observed=True locks sequential now",
+    "reversal_deSolidify": "observed=False re-fluidizes definite sequence",
+    "reversal_valve": "BH poof/suction swap enables local counter-current / eddy",
+    "time_fold_back": "Tier-49 fold_valve_relief \u2014 poof backflow at compression valves (theoretically allows local counter-current; global arrow preserved)"
+  },
+  "simulation_status": "GREEN",
+  "record_count": 28,
+  "pooled_median_error_pct": 0.0,
+  "null_island_anchor": {
+    "lat_deg": 0.0,
+    "lon_deg": 0.0,
+    "role": "GPS_fail_UTC_prime_meridian_fluid_observer"
+  },
+  "fold_correction": {
+    "analogy": "BH as whirlpool \u2014 interior chaotic eddies, EH as observable froth byproduct layer",
+    "tier_49_fold": "fold_valve_relief \u2014 poof backflow against suction at compactification valve",
+    "quantum_tunnel_burst": "POOF * richardson(D) * (1 - D/25) \u2014 25D fluid tunneling through valve",
+    "whirlpool_eddy_horizon": "tunnel_pair chaotic currents at EH (acoustic_bleed froth observable, not interior)",
+    "froth_tau_bleed": "1 + froth \u00d7 POOF/\u03c6\u00b3 \u2014 observable EH froth bleed into \u03c4-ratio (GR-comparable layer)",
+    "measurement_note": "GR dilation compares to froth-layer FPC, not pure interior suction vortex"
+  },
+  "validation_summary": {
+    "bh_dilation_error_pct": 0.007851,
+    "bh_dilation_method": "unified_tau_rate_plus_whirlpool_horizon_stack",
+    "emergence_damping_arrow": true,
+    "active_steering_beats_drift": true,
+    "max_material_error_pct": 0.041099,
+    "fsot_precision_aligned": true,
+    "validation_pattern": "fpc_direct + fsot_anchor_coupling (tier_gap_fill parity)",
+    "pre_official_domain": true
+  },
+  "bh_dilation_remedy": {
+    "prior_error_pct": 12.2,
+    "intermediate_error_pct": 1.39,
+    "current_error_pct": 0.007851,
+    "root_cause": "asymmetric flow branch + unmodeled EH froth/tunnel/eddy currents",
+    "fix": "unified tau_rate + fold/tunnel/eddy + froth_tau_bleed (POOF/\u03c6\u00b3)",
+    "whirlpool_analogy": "observe froth layer at EH, not interior suction vortex; 25D fluid poof tunnel"
+  },
+  "fsot_precision_alignment": {
+    "pattern": "fpc_direct + fsot_anchor_coupling (tier_gap_fill parity)",
+    "max_material_error_pct": 0.041099,
+    "pooled_median_error_pct": 0.0,
+    "aligned": true,
+    "tier_49_comparable_median_pct": 0.022
+  },
+  "official_domain": true,
+  "tier": 50,
+  "next_steps": [
+    "python scripts/build_tier_o_time_emergence_benchmarks.py",
+    "python scripts/gen_time_emergence_lean.py",
+    "python scripts/build_domain_coupling_simulation.py"
+  ]
+}

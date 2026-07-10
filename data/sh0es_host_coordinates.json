@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "source": "NED approximate coordinates for SH0ES R22 optical hosts",
+  "updated": "2026-07-10",
+  "hosts": [
+    {"name": "M101", "ra_deg": 210.802, "dec_deg": 54.349, "method": "SH0ES_Cepheid"},
+    {"name": "NGC4258", "ra_deg": 184.740, "dec_deg": 47.304, "method": "Maser_anchor"},
+    {"name": "LMC", "ra_deg": 80.894, "dec_deg": -69.756, "method": "TRGB_anchor"},
+    {"name": "NGC1309", "ra_deg": 50.423, "dec_deg": -19.427, "method": "SH0ES_Cepheid"},
+    {"name": "NGC1365", "ra_deg": 53.401, "dec_deg": -36.140, "method": "SH0ES_Cepheid"},
+    {"name": "NGC1448", "ra_deg": 56.138, "dec_deg": -44.404, "method": "SH0ES_Cepheid"},
+    {"name": "NGC1559", "ra_deg": 67.767, "dec_deg": -62.787, "method": "SH0ES_Cepheid"},
+    {"name": "NGC2442", "ra_deg": 111.108, "dec_deg": -50.450, "method": "SH0ES_Cepheid"},
+    {"name": "NGC3021", "ra_deg": 147.371, "dec_deg": 33.542, "method": "SH0ES_Cepheid"},
+    {"name": "NGC3370", "ra_deg": 161.132, "dec_deg": 17.315, "method": "SH0ES_Cepheid"},
+    {"name": "NGC3627", "ra_deg": 170.062, "dec_deg": 13.589, "method": "SH0ES_Cepheid"},
+    {"name": "NGC3982", "ra_deg": 179.075, "dec_deg": 55.170, "method": "SH0ES_Cepheid"},
+    {"name": "NGC4038", "ra_deg": 180.466, "dec_deg": -18.865, "method": "SH0ES_Cepheid"},
+    {"name": "NGC4254", "ra_deg": 184.674, "dec_deg": 14.420, "method": "SH0ES_Cepheid"},
+    {"name": "NGC4321", "ra_deg": 185.899, "dec_deg": 15.783, "method": "SH0ES_Cepheid"},
+    {"name": "NGC4536", "ra_deg": 188.614, "dec_deg": 2.069, "method": "SH0ES_Cepheid"},
+    {"name": "NGC4639", "ra_deg": 190.677, "dec_deg": 13.263, "method": "SH0ES_Cepheid"},
+    {"name": "NGC5584", "ra_deg": 215.289, "dec_deg": -0.194, "method": "SH0ES_Cepheid"},
+    {"name": "NGC5643", "ra_deg": 219.059, "dec_deg": -44.175, "method": "SH0ES_Cepheid"},
+    {"name": "NGC5917", "ra_deg": 232.288, "dec_deg": -60.458, "method": "SH0ES_Cepheid"},
+    {"name": "NGC7250", "ra_deg": 334.215, "dec_deg": -24.527, "method": "SH0ES_Cepheid"},
+    {"name": "UGC9391", "ra_deg": 175.628, "dec_deg": 33.195, "method": "SH0ES_Cepheid"}
+  ]
+}

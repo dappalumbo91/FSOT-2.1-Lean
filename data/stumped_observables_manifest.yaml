@@ -1,0 +1,28 @@
+# Tier 51 — Stumped observables / open-problem FSOT resolution spine
+version: "1.0"
+updated: "2026-07-10"
+
+physics:
+  name: Stumped_Observables
+  hypothesis: zero_parameter_fsot_resolves_open_tensions
+  dual_anchor_h0:
+    global_cmb: 68.44
+    local_bubble: 72.1
+  mechanism: bh_wh_bubble_bleed_phase_shift
+
+source:
+  reference: data/stumped_observables_reference.json
+  sector_h0_seed: data/sector_h0_seed.json
+  anomalies_seed: data/cosmology_anomalies_seed.json
+  prediction_report: vendor/fsot_aggregate/PREDICTION_REDERIVATION_REPORT.md
+
+build:
+  script: scripts/build_tier_p_stumped_observables_benchmark.py
+  lib: scripts/tier_p_stumped_observables_lib.py
+
+lean:
+  generator: scripts/gen_stumped_observables_lean.py
+
+verification:
+  min_records_per_domain: 5
+  max_median_error_pct: 0.5

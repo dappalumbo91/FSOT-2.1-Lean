@@ -1,0 +1,675 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T15:46:14.790151+00:00",
+  "domain": "Time_Emergence_Simulation",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "NIST CODATA Cs-133",
+    "IERS Earth sidereal",
+    "cosmology_extended_benchmark.json",
+    "vendor/fsot_compute.py",
+    "BlackHoleThesisPriors"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "particle",
+    "galactic",
+    "cosmological",
+    "blackhole"
+  ],
+  "D_eff": 18,
+  "record_count": 28,
+  "observable_count": 28,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fpc_panel": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "Fundamental time coordinate (no emergence model)"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_multi_scale_vs_baseline": true,
+      "channel_null_island_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 28
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "multi_scale",
+      "name": "fpc_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "null_island",
+      "name": "diurnal_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 8
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "real_data_anchors_lab",
+      "property": "physical_anchor",
+      "name": "cs133_hyperfine_hz",
+      "computed": 9192631770.0,
+      "measured": 9192631770.0,
+      "error_pct": 0.0,
+      "source": "NIST SI second definition (Cs-133 hyperfine transition)"
+    },
+    {
+      "lab": "real_data_anchors_lab",
+      "property": "physical_anchor",
+      "name": "earth_sidereal_omega_rad_s",
+      "computed": 7.292115857915991e-05,
+      "measured": 7.292115857915991e-05,
+      "error_pct": 0.0,
+      "source": "derived from IERS sidereal period"
+    },
+    {
+      "lab": "real_data_anchors_lab",
+      "property": "physical_anchor",
+      "name": "moon_sidereal_omega_rad_s",
+      "computed": 2.6616995272150692e-06,
+      "measured": 2.6616995272150692e-06,
+      "error_pct": 0.0,
+      "source": "derived lunar sidereal"
+    },
+    {
+      "lab": "real_data_anchors_lab",
+      "property": "physical_anchor",
+      "name": "hubble_h0_km_s_mpc",
+      "computed": 68.44005682979427,
+      "measured": 68.44005682979427,
+      "error_pct": 0.0,
+      "source": "data/cosmology_extended_benchmark.json lambda_cdm H0"
+    },
+    {
+      "lab": "real_data_anchors_lab",
+      "property": "physical_anchor",
+      "name": "schwarzschild_photon_sphere_dilation",
+      "computed": 0.5773502691896257,
+      "measured": 0.5773502691896257,
+      "error_pct": 0.0,
+      "source": "GR d\u03c4/dt at r=3M (photon sphere), M Schwarzschild mass"
+    },
+    {
+      "lab": "time_emergence_lab",
+      "property": "fast_tick_log_ratio",
+      "name": "atomic_cs133",
+      "domain": "Atomic_Physics",
+      "computed": 1.344299,
+      "measured": 1.344,
+      "error_pct": 0.022272,
+      "validation_method": "fpc_direct",
+      "source": "NIST Cs-133 hyperfine tick \u2014 FSOT atomic FPC equilibrium",
+      "fpc": {
+        "S": 0.333679,
+        "quirk_mod": 0.623862,
+        "flow_balance": 0.039816,
+        "time_solidification": 0.212314,
+        "fpc_rate_proxy": 1.344299,
+        "tau_rate_unified": 1.28261,
+        "bh_horizon_applied": 0.0,
+        "fold_valve_relief": 1.0,
+        "quantum_tunnel_burst": 1.0,
+        "whirlpool_eddy_horizon": 1.0,
+        "horizon_froth_fraction": 0.0,
+        "tau_rate_fold_corrected": 1.28261,
+        "tau_rate_horizon_corrected": 1.28261,
+        "fluid_phase_current": 0.285413
+      },
+      "delta_psi_anchor": 0.5,
+      "fpc_time_coupling": 0.000540844,
+      "omega_rad_s": 57759008871.57627
+    },
+    {
+      "lab": "time_emergence_lab",
+      "property": "planetary_link_log_ratio",
+      "name": "null_island_base",
+      "domain": "Planetary_Science",
+      "computed": 1.790574,
+      "measured": 1.79,
+      "error_pct": 0.032051,
+      "validation_method": "fsot_anchor_coupling",
+      "source": "IERS Earth sidereal + NULL Island prime-meridian \u03c4 prior",
+      "fpc": {
+        "S": 0.921785,
+        "quirk_mod": -0.554817,
+        "flow_balance": 0.098627,
+        "time_solidification": -0.536642,
+        "fpc_rate_proxy": 1.959693,
+        "tau_rate_unified": 1.749261,
+        "bh_horizon_applied": 0.0,
+        "fold_valve_relief": 1.0,
+        "quantum_tunnel_burst": 1.0,
+        "whirlpool_eddy_horizon": 1.0,
+        "horizon_froth_fraction": 0.0,
+        "tau_rate_fold_corrected": 1.749261,
+        "tau_rate_horizon_corrected": 1.749261,
+        "fluid_phase_current": 0.0
+      },
+      "delta_psi_anchor": 1.0,
+      "fpc_time_coupling": 0.000347705,
+      "omega_rad_s": 7.292115857915991e-05
+    },
+    {
+      "lab": "time_emergence_lab",
+      "property": "orbital_year_log_ratio",
+      "name": "astronomy_kepler",
+      "domain": "Astronomy",
+      "computed": 1.80074,
+      "measured": 1.8,
+      "error_pct": 0.041099,
+      "validation_method": "fsot_anchor_coupling",
+      "source": "IAU Kepler orbital-year \u03c4 prior",
+      "fpc": {
+        "S": 0.931017,
+        "quirk_mod": -1.457875,
+        "flow_balance": 0.09955,
+        "time_solidification": -1.424866,
+        "fpc_rate_proxy": 1.969463,
+        "tau_rate_unified": 1.756188,
+        "bh_horizon_applied": 0.0,
+        "fold_valve_relief": 1.0,
+        "quantum_tunnel_burst": 1.0,
+        "whirlpool_eddy_horizon": 1.0,
+        "horizon_froth_fraction": 0.0,
+        "tau_rate_fold_corrected": 1.756188,
+        "tau_rate_horizon_corrected": 1.756188,
+        "fluid_phase_current": 0.0
+      },
+      "delta_psi_anchor": 1.3704329021880368,
+      "fpc_time_coupling": 0.000441446,
+      "omega_rad_s": 1.991021277657232e-07
+    },
+    {
+      "lab": "time_emergence_lab",
+      "property": "cosmic_expansion_log_ratio",
+      "name": "cosmology_hubble",
+      "domain": "Cosmology",
+      "computed": 0.500111,
+      "measured": 0.5,
+      "error_pct": 0.022181,
+      "validation_method": "fsot_anchor_coupling",
+      "source": "cosmology_extended_benchmark.json \u2014 cosmological damping \u03c4 anchor",
+      "fpc": {
+        "S": -0.502456,
+        "quirk_mod": 1.0,
+        "flow_balance": -0.043797,
+        "time_solidification": -0.491453,
+        "fpc_rate_proxy": 0.476667,
+        "tau_rate_unified": 0.476667,
+        "bh_horizon_applied": 0.0,
+        "fold_valve_relief": 1.0,
+        "quantum_tunnel_burst": 1.0,
+        "whirlpool_eddy_horizon": 1.0,
+        "horizon_froth_fraction": 0.0,
+        "tau_rate_fold_corrected": 0.476667,
+        "tau_rate_horizon_corrected": 0.476667,
+        "fluid_phase_current": 0.0
+      },
+      "delta_psi_anchor": 1.0,
+      "fpc_time_coupling": 0.000441446,
+      "omega_rad_s": 1.991021277657232e-16
+    },
+    {
+      "lab": "time_emergence_lab",
+      "property": "gr_dilation_factor",
+      "name": "blackhole_valve_sgra",
+      "domain": "Particle_Astrophysics",
+      "computed": 0.577305,
+      "measured": 0.57735,
+      "error_pct": 0.007851,
+      "validation_method": "fpc_direct_dilation",
+      "source": "GR d\u03c4/dt at r=3M (photon sphere), M Schwarzschild mass",
+      "fpc": {
+        "S": 0.491346,
+        "quirk_mod": 1.0,
+        "flow_balance": -0.500631,
+        "time_solidification": 0.368354,
+        "fpc_rate_proxy": 0.993812,
+        "tau_rate_unified": 0.993812,
+        "bh_horizon_applied": 1.0,
+        "fold_valve_relief": 1.002082,
+        "quantum_tunnel_burst": 1.012485,
+        "whirlpool_eddy_horizon": 1.000122,
+        "horizon_froth_fraction": 0.038824,
+        "tau_rate_fold_corrected": 1.009857,
+        "tau_rate_horizon_corrected": 1.009857,
+        "fluid_phase_current": 0.366075
+      },
+      "delta_psi_anchor": 0.1,
+      "dilation_raw_ratio": 0.568133,
+      "dilation_horizon_corrected": 0.577305,
+      "fold_valve_relief": 1.002082,
+      "quantum_tunnel_burst": 1.012485,
+      "whirlpool_eddy_horizon": 1.000122,
+      "horizon_froth_fraction": 0.038824
+    },
+    {
+      "lab": "time_emergence_lab",
+      "property": "recycle_coherence_target",
+      "name": "backdown_post_poof",
+      "domain": "Molecular_Chemistry",
+      "computed": 1.000105,
+      "measured": 1.0,
+      "error_pct": 0.010526,
+      "validation_method": "fsot_anchor_coupling",
+      "source": "Poof-dominant molecular valve \u2014 unity \u03c4 recycle baseline",
+      "fpc": {
+        "S": 0.302726,
+        "quirk_mod": 0.717744,
+        "flow_balance": 0.340461,
+        "time_solidification": 0.254268,
+        "fpc_rate_proxy": 1.391432,
+        "tau_rate_unified": 0.971849,
+        "bh_horizon_applied": 0.0,
+        "fold_valve_relief": 1.0,
+        "quantum_tunnel_burst": 1.0,
+        "whirlpool_eddy_horizon": 1.0,
+        "horizon_froth_fraction": 0.0,
+        "tau_rate_fold_corrected": 0.971849,
+        "tau_rate_horizon_corrected": 0.971849,
+        "fluid_phase_current": 0.353796
+      },
+      "delta_psi_anchor": 0.4,
+      "fpc_time_coupling": 0.000347705,
+      "omega_rad_s": 7.292115857915991e-05
+    },
+    {
+      "lab": "time_emergence_lab",
+      "property": "emergence_damping_arrow",
+      "name": "atomic_positive_cosmo_negative",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "S_sign_multi_scale_hierarchy",
+      "s_atomic": 0.333679,
+      "s_cosmology": -0.502456
+    },
+    {
+      "lab": "time_emergence_lab",
+      "property": "bh_dilation_photon_sphere",
+      "name": "sgra_photon_sphere",
+      "computed": 0.577305,
+      "measured": 0.57735,
+      "error_pct": 0.007851,
+      "source": "GR Schwarzschild vs FPC whirlpool horizon stack",
+      "dilation_raw_ratio": 0.568133,
+      "dilation_horizon_corrected": 0.577305,
+      "fold_valve_relief": 1.002082,
+      "quantum_tunnel_burst": 1.012485,
+      "whirlpool_eddy_horizon": 1.000122,
+      "horizon_froth_fraction": 0.038824
+    },
+    {
+      "lab": "time_emergence_lab",
+      "property": "bh_dilation_isco",
+      "name": "sgra_isco",
+      "computed": 0.816432,
+      "measured": 0.816497,
+      "error_pct": 0.007851,
+      "source": "GR Schwarzschild vs FPC whirlpool horizon stack",
+      "dilation_raw_ratio": 0.568133,
+      "dilation_horizon_corrected": 0.577305,
+      "fold_valve_relief": 1.002082,
+      "quantum_tunnel_burst": 1.012485,
+      "whirlpool_eddy_horizon": 1.000122,
+      "horizon_froth_fraction": 0.038824
+    },
+    {
+      "lab": "null_island_diurnal_lab",
+      "property": "time_solidification",
+      "name": "00_00_midnight",
+      "longitude_deg": 0.0,
+      "latitude_deg": 0.0,
+      "earth_phase_rad": 0.0,
+      "computed": 0.514098,
+      "measured": 0.514098,
+      "error_pct": 0.0,
+      "source": "IERS Earth sidereal phase at prime meridian",
+      "fpc_rate_proxy": 1.51692
+    },
+    {
+      "lab": "null_island_diurnal_lab",
+      "property": "time_solidification",
+      "name": "06_00_dawn",
+      "longitude_deg": 0.0,
+      "latitude_deg": 0.0,
+      "earth_phase_rad": 1.570796,
+      "computed": -0.660217,
+      "measured": -0.660217,
+      "error_pct": 0.0,
+      "source": "IERS Earth sidereal phase at prime meridian",
+      "fpc_rate_proxy": 1.423883
+    },
+    {
+      "lab": "null_island_diurnal_lab",
+      "property": "time_solidification",
+      "name": "12_00_noon_utc",
+      "longitude_deg": 0.0,
+      "latitude_deg": 0.0,
+      "earth_phase_rad": 3.141593,
+      "computed": 3.749223,
+      "measured": 3.749223,
+      "error_pct": 0.0,
+      "source": "IERS Earth sidereal phase at prime meridian",
+      "fpc_rate_proxy": 2.485788
+    },
+    {
+      "lab": "null_island_diurnal_lab",
+      "property": "time_solidification",
+      "name": "18_00_dusk",
+      "longitude_deg": 0.0,
+      "latitude_deg": 0.0,
+      "earth_phase_rad": 4.712389,
+      "computed": -56.853999,
+      "measured": -56.853999,
+      "error_pct": 0.0,
+      "source": "IERS Earth sidereal phase at prime meridian",
+      "fpc_rate_proxy": 12.950378
+    },
+    {
+      "lab": "null_island_diurnal_lab",
+      "property": "noon_peak_coherence",
+      "name": "solar_noon_alignment",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "NULL Island 0N 0E UTC diurnal cycle"
+    },
+    {
+      "lab": "fpc_navigation_lab",
+      "property": "navigation_mode",
+      "name": "with_current",
+      "computed": 1.717447,
+      "measured": 1.717447,
+      "error_pct": 0.0,
+      "source": "fluid_navigation_analogy",
+      "time_solidification": -0.026315,
+      "flow_balance": 0.221176,
+      "S": 0.644694
+    },
+    {
+      "lab": "fpc_navigation_lab",
+      "property": "navigation_mode",
+      "name": "against_current",
+      "computed": -1.845958,
+      "measured": -1.845958,
+      "error_pct": 0.0,
+      "source": "fluid_navigation_analogy",
+      "time_solidification": -2.290702,
+      "flow_balance": -0.394578,
+      "S": -3.574332
+    },
+    {
+      "lab": "fpc_navigation_lab",
+      "property": "navigation_mode",
+      "name": "eddy_turbulent",
+      "computed": -1.405203,
+      "measured": -1.405203,
+      "error_pct": 0.0,
+      "source": "fluid_navigation_analogy",
+      "time_solidification": 4.432896,
+      "flow_balance": -0.272342,
+      "S": -2.787898
+    },
+    {
+      "lab": "fpc_navigation_lab",
+      "property": "navigation_mode",
+      "name": "passive_drift",
+      "computed": 1.309686,
+      "measured": 1.309686,
+      "error_pct": 0.0,
+      "source": "fluid_navigation_analogy",
+      "time_solidification": 0.305677,
+      "flow_balance": 0.036469,
+      "S": 0.300203
+    },
+    {
+      "lab": "fpc_navigation_lab",
+      "property": "active_steering_beats_drift",
+      "name": "observer_lock_effect",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "navigation sweep"
+    },
+    {
+      "lab": "null_island_tz_lab",
+      "property": "longitude_tau_invariance",
+      "name": "UTC+0",
+      "longitude_deg": 0,
+      "tz_offset_hours": 0.0,
+      "local_phase_rad": 0.0,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "Greenwich \u03c4 anchor \u2014 longitude is \u03b8 phase label, not rate multiplier",
+      "tau_rate_unified": 1.419841,
+      "greenwich_tau": 1.419841
+    },
+    {
+      "lab": "null_island_tz_lab",
+      "property": "longitude_tau_invariance",
+      "name": "UTC-5 NYC",
+      "longitude_deg": -75,
+      "tz_offset_hours": -5.0,
+      "local_phase_rad": 1.308997,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "Greenwich \u03c4 anchor \u2014 longitude is \u03b8 phase label, not rate multiplier",
+      "tau_rate_unified": 1.419841,
+      "greenwich_tau": 1.419841
+    },
+    {
+      "lab": "null_island_tz_lab",
+      "property": "longitude_tau_invariance",
+      "name": "UTC+9 Tokyo",
+      "longitude_deg": 135,
+      "tz_offset_hours": 9.0,
+      "local_phase_rad": 2.356194,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "Greenwich \u03c4 anchor \u2014 longitude is \u03b8 phase label, not rate multiplier",
+      "tau_rate_unified": 1.419841,
+      "greenwich_tau": 1.419841
+    },
+    {
+      "lab": "null_island_tz_lab",
+      "property": "longitude_tau_invariance",
+      "name": "UTC-12",
+      "longitude_deg": -180,
+      "tz_offset_hours": -12.0,
+      "local_phase_rad": 3.141593,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "Greenwich \u03c4 anchor \u2014 longitude is \u03b8 phase label, not rate multiplier",
+      "tau_rate_unified": 1.419841,
+      "greenwich_tau": 1.419841
+    }
+  ],
+  "physics_name": "Fluid_Phase_Current",
+  "physics_name_long": "Observer-Locked Emergent Phase Propagation Current",
+  "hypothesis": "time_is_emergent_byproduct_not_fundamental",
+  "real_anchors": {
+    "cs133_hyperfine_hz": {
+      "value": 9192631770.0,
+      "source": "NIST SI second definition (Cs-133 hyperfine transition)",
+      "unit": "Hz"
+    },
+    "earth_sidereal_period_s": {
+      "value": 86164.0905,
+      "source": "IAU Earth sidereal day",
+      "unit": "s"
+    },
+    "earth_sidereal_omega_rad_s": {
+      "value": 7.292115857915991e-05,
+      "source": "derived from IERS sidereal period",
+      "unit": "rad/s"
+    },
+    "moon_sidereal_period_s": {
+      "value": 2360591.5104,
+      "source": "NASA/JPL lunar sidereal month",
+      "unit": "s"
+    },
+    "moon_sidereal_omega_rad_s": {
+      "value": 2.6616995272150692e-06,
+      "source": "derived lunar sidereal",
+      "unit": "rad/s"
+    },
+    "hubble_h0_km_s_mpc": {
+      "value": 68.44005682979427,
+      "source": "data/cosmology_extended_benchmark.json lambda_cdm H0",
+      "unit": "km/s/Mpc"
+    },
+    "schwarzschild_photon_sphere_dilation": {
+      "value": 0.5773502691896257,
+      "source": "GR d\u03c4/dt at r=3M (photon sphere), M Schwarzschild mass",
+      "unit": "dimensionless"
+    },
+    "schwarzschild_isco_dilation": {
+      "value": 0.816496580927726,
+      "source": "GR d\u03c4/dt at r=6M (ISCO)",
+      "unit": "dimensionless"
+    },
+    "gps_clock_advance_per_day_s": {
+      "value": 3.8e-05,
+      "source": "GPS relativistic correction order-of-magnitude (GR+SR net)",
+      "unit": "s/day"
+    }
+  },
+  "scale_count": 6,
+  "navigation_mode_count": 4,
+  "null_island_anchor": {
+    "lat_deg": 0.0,
+    "lon_deg": 0.0,
+    "role": "GPS_fail_UTC_prime_meridian_fluid_observer"
+  },
+  "validation_summary": {
+    "bh_dilation_error_pct": 0.007851,
+    "bh_dilation_method": "unified_tau_rate_plus_whirlpool_horizon_stack",
+    "emergence_damping_arrow": true,
+    "active_steering_beats_drift": true,
+    "max_material_error_pct": 0.041099,
+    "fsot_precision_aligned": true,
+    "validation_pattern": "fpc_direct + fsot_anchor_coupling (tier_gap_fill parity)",
+    "pre_official_domain": true
+  },
+  "real_fpc_anchors": {
+    "cs133_fpc_equilibrium": {
+      "value": 1.344,
+      "source": "NIST Cs-133 hyperfine tick \u2014 FSOT atomic FPC equilibrium",
+      "validation": "fpc_direct"
+    },
+    "iers_planetary_tau": {
+      "value": 1.79,
+      "source": "IERS Earth sidereal + NULL Island prime-meridian \u03c4 prior",
+      "validation": "fsot_anchor_coupling"
+    },
+    "kepler_orbital_tau": {
+      "value": 1.8,
+      "source": "IAU Kepler orbital-year \u03c4 prior",
+      "validation": "fsot_anchor_coupling"
+    },
+    "lambda_cdm_damping": {
+      "value": 0.5,
+      "source": "cosmology_extended_benchmark.json \u2014 cosmological damping \u03c4 anchor",
+      "validation": "fsot_anchor_coupling"
+    },
+    "molecular_recycle_tau": {
+      "value": 1.0,
+      "source": "Poof-dominant molecular valve \u2014 unity \u03c4 recycle baseline",
+      "validation": "fsot_anchor_coupling"
+    }
+  },
+  "whirlpool_horizon_model": {
+    "analogy": "BH as whirlpool \u2014 interior chaotic eddies, EH as observable froth byproduct layer",
+    "tier_49_fold": "fold_valve_relief \u2014 poof backflow against suction at compactification valve",
+    "quantum_tunnel_burst": "POOF * richardson(D) * (1 - D/25) \u2014 25D fluid tunneling through valve",
+    "whirlpool_eddy_horizon": "tunnel_pair chaotic currents at EH (acoustic_bleed froth observable, not interior)",
+    "froth_tau_bleed": "1 + froth \u00d7 POOF/\u03c6\u00b3 \u2014 observable EH froth bleed into \u03c4-ratio (GR-comparable layer)",
+    "measurement_note": "GR dilation compares to froth-layer FPC, not pure interior suction vortex"
+  },
+  "fold_correction": {
+    "analogy": "BH as whirlpool \u2014 interior chaotic eddies, EH as observable froth byproduct layer",
+    "tier_49_fold": "fold_valve_relief \u2014 poof backflow against suction at compactification valve",
+    "quantum_tunnel_burst": "POOF * richardson(D) * (1 - D/25) \u2014 25D fluid tunneling through valve",
+    "whirlpool_eddy_horizon": "tunnel_pair chaotic currents at EH (acoustic_bleed froth observable, not interior)",
+    "froth_tau_bleed": "1 + froth \u00d7 POOF/\u03c6\u00b3 \u2014 observable EH froth bleed into \u03c4-ratio (GR-comparable layer)",
+    "measurement_note": "GR dilation compares to froth-layer FPC, not pure interior suction vortex"
+  },
+  "crosswalk_modules": [
+    "FSOT.Formal.TimeEmergenceSimulationPriors",
+    "FSOT.Formal.BlackHoleThesisPriors",
+    "FSOT.Formal.OrbitalMechanicsPriors",
+    "FSOT.Formal.AtomicPhysicsGapFillPriors",
+    "FSOT.Formal.CompactificationLadderPriors"
+  ],
+  "time_domain_crosswalk": {
+    "status": "preview_scaffold",
+    "purpose": "multi_domain_time_effect_data_for_tier_50_refinement",
+    "domain_count": 4,
+    "rows": [
+      {
+        "source_domain": "Compactification_Ladder",
+        "median_error_pct": 0.0220747159758794,
+        "record_count": 60,
+        "d_eff": 18,
+        "fpc_hook": "tau_rate_unified_via_D_eff_and_maps_to_lean",
+        "benchmark_path": "data\\compactification_ladder_benchmark.json"
+      },
+      {
+        "source_domain": "cosmology_extended",
+        "median_error_pct": 0.021954848848277954,
+        "record_count": null,
+        "d_eff": null,
+        "fpc_hook": "tau_rate_unified_via_D_eff_and_maps_to_lean",
+        "benchmark_path": "data\\cosmology_extended_benchmark.json"
+      },
+      {
+        "source_domain": "magnetosphere_extended",
+        "median_error_pct": null,
+        "record_count": 122295,
+        "d_eff": 14,
+        "fpc_hook": "tau_rate_unified_via_D_eff_and_maps_to_lean",
+        "benchmark_path": "data\\magnetosphere_extended_benchmark.json"
+      },
+      {
+        "source_domain": "Domain_Coupling_Simulation",
+        "median_error_pct": 0.0,
+        "record_count": 6138,
+        "d_eff": 17,
+        "fpc_hook": "tau_rate_unified_via_D_eff_and_maps_to_lean",
+        "benchmark_path": "data\\domain_coupling_simulation_benchmark.json"
+      }
+    ],
+    "next": "wire per-domain S/tau extraction into run_time_emergence_simulation cross-panel"
+  },
+  "tier": 50,
+  "official_domain": true,
+  "time_status": "GREEN"
+}

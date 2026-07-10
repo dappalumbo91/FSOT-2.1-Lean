@@ -1,0 +1,167 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T15:46:15.187679+00:00",
+  "domain": "FPC_Temporal_Coupling",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "time_emergence_manifest.yaml",
+    "fluidlink_fpc_timing"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "particle",
+    "galactic",
+    "cosmological",
+    "blackhole"
+  ],
+  "D_eff": 18,
+  "record_count": 6,
+  "observable_count": 6,
+  "median_error_pct": 0.031199,
+  "pooled_median_error_pct": 0.031199,
+  "headline_median_error_pct": 0.031199,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fpc_timing_panel": {
+        "sota_typical_error_pct": 20.0,
+        "sota_model": "No emergent-time cross-domain coupling"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fluidlink_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.031199,
+      "measured": 0.0,
+      "error_pct": 0.031199,
+      "observable_count": 6
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fluidlink",
+      "name": "fpc_timing_panel",
+      "computed": 0.031199,
+      "measured": 0.0,
+      "error_pct": 0.031199,
+      "observable_count": 6
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fpc_temporal_coupling_lab",
+      "property": "fluidlink_fpc_timing",
+      "name": "Time_Emergence_Simulation__Compactification_Ladder",
+      "source_domain": "Time_Emergence_Simulation",
+      "target_domain": "Compactification_Ladder",
+      "edge_type": "fluidlink_fpc_timing",
+      "computed": 1.00031,
+      "measured": 1.0,
+      "error_pct": 0.03097,
+      "S_time": 0.83027,
+      "S_target": 0.83027,
+      "S_blend": 0.83027,
+      "omega_blend_rad_s": 9.563520290074371e-05,
+      "time_median_error_pct": 0.0,
+      "target_median_error_pct": 0.0220747159758794
+    },
+    {
+      "lab": "fpc_temporal_coupling_lab",
+      "property": "fluidlink_fpc_timing",
+      "name": "Time_Emergence_Simulation__Reality_Folding_Spine",
+      "source_domain": "Time_Emergence_Simulation",
+      "target_domain": "Reality_Folding_Spine",
+      "edge_type": "fluidlink_fpc_timing",
+      "computed": 1.000324,
+      "measured": 1.0,
+      "error_pct": 0.032418,
+      "S_time": 0.83027,
+      "S_target": 0.893364,
+      "S_blend": 0.861817,
+      "omega_blend_rad_s": 9.891507204713373e-05,
+      "time_median_error_pct": 0.0,
+      "target_median_error_pct": 0.019008268802505057
+    },
+    {
+      "lab": "fpc_temporal_coupling_lab",
+      "property": "fluidlink_fpc_timing",
+      "name": "Time_Emergence_Simulation__Cosmology_Extended",
+      "source_domain": "Time_Emergence_Simulation",
+      "target_domain": "Cosmology_Extended",
+      "edge_type": "fluidlink_fpc_timing",
+      "computed": 1.000306,
+      "measured": 1.0,
+      "error_pct": 0.030617,
+      "S_time": 0.83027,
+      "S_target": 0.780918,
+      "S_blend": 0.805594,
+      "omega_blend_rad_s": 0.00010312609144660711,
+      "time_median_error_pct": 0.0,
+      "target_median_error_pct": 0.021954848848277954
+    },
+    {
+      "lab": "fpc_temporal_coupling_lab",
+      "property": "fluidlink_fpc_timing",
+      "name": "Time_Emergence_Simulation__Magnetosphere_Extended",
+      "source_domain": "Time_Emergence_Simulation",
+      "target_domain": "Magnetosphere_Extended",
+      "edge_type": "fluidlink_fpc_timing",
+      "computed": 1.000259,
+      "measured": 1.0,
+      "error_pct": 0.025939,
+      "S_time": 0.83027,
+      "S_target": 0.577713,
+      "S_blend": 0.703992,
+      "omega_blend_rad_s": 9.107849787354916e-05,
+      "time_median_error_pct": 0.0,
+      "target_median_error_pct": 0.0
+    },
+    {
+      "lab": "fpc_temporal_coupling_lab",
+      "property": "fluidlink_fpc_timing",
+      "name": "Time_Emergence_Simulation__Domain_Coupling_Simulation",
+      "source_domain": "Time_Emergence_Simulation",
+      "target_domain": "Domain_Coupling_Simulation",
+      "edge_type": "fluidlink_fpc_timing",
+      "computed": 1.000312,
+      "measured": 1.0,
+      "error_pct": 0.031199,
+      "S_time": 0.83027,
+      "S_target": 0.847463,
+      "S_blend": 0.838866,
+      "omega_blend_rad_s": 9.451662403580303e-05,
+      "time_median_error_pct": 0.0,
+      "target_median_error_pct": 0.0
+    },
+    {
+      "lab": "fpc_temporal_coupling_lab",
+      "property": "fluidlink_fpc_timing",
+      "name": "Time_Emergence_Simulation__ToE_Unification_Spine",
+      "source_domain": "Time_Emergence_Simulation",
+      "target_domain": "ToE_Unification_Spine",
+      "edge_type": "fluidlink_fpc_timing",
+      "computed": 1.000324,
+      "measured": 1.0,
+      "error_pct": 0.032408,
+      "S_time": 0.83027,
+      "S_target": 0.897552,
+      "S_blend": 0.863911,
+      "omega_blend_rad_s": 9.783400054862613e-05,
+      "time_median_error_pct": 0.0,
+      "target_median_error_pct": 0.019008268802500988
+    }
+  ],
+  "fluidlink_hub": "Time_Emergence_Simulation",
+  "fluidlink_edge_count": 6,
+  "coupling_status": "GREEN",
+  "crosswalk_modules": [
+    "FSOT.Formal.FPCTemporalCouplingPriors",
+    "FSOT.Formal.TimeEmergenceSimulationPriors"
+  ]
+}

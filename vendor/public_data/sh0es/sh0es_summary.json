@@ -1,0 +1,415 @@
+{
+  "ingested_at": "2026-07-10T17:03:37.823632+00:00",
+  "source_repo": "PantheonPlusSH0ES/DataRelease",
+  "cache_dir": "G:\\FSOT-PublicData\\anomaly_observables\\sh0es",
+  "optical_cepheid_row_count": 1594,
+  "nir_cepheid_row_count": 1803,
+  "host_count": 22,
+  "hosts": [
+    {
+      "host": "LMC",
+      "canonical_name": "LMC",
+      "optical_cepheid_count": 68,
+      "nir_cepheid_count": 69,
+      "ra_deg_mean": 77.59055576470588,
+      "dec_deg_mean": 25.175069558823537,
+      "cepheid_count": 137
+    },
+    {
+      "host": "M101",
+      "canonical_name": "M101",
+      "optical_cepheid_count": 259,
+      "nir_cepheid_count": 259,
+      "ra_deg_mean": 210.81102548262547,
+      "dec_deg_mean": 54.344419382239394,
+      "cepheid_count": 518
+    },
+    {
+      "host": "M31",
+      "canonical_name": "M31",
+      "optical_cepheid_count": 0,
+      "nir_cepheid_count": 55,
+      "ra_deg_mean": 11.18709272727273,
+      "dec_deg_mean": 41.51728618181819,
+      "cepheid_count": 55
+    },
+    {
+      "host": "N1015",
+      "canonical_name": "NGC1015",
+      "optical_cepheid_count": 21,
+      "nir_cepheid_count": 18,
+      "ra_deg_mean": 39.548491428571424,
+      "dec_deg_mean": -1.319572380952381,
+      "cepheid_count": 39
+    },
+    {
+      "host": "N1309",
+      "canonical_name": "NGC1309",
+      "optical_cepheid_count": 42,
+      "nir_cepheid_count": 53,
+      "ra_deg_mean": 50.529007380952386,
+      "dec_deg_mean": -15.402899285714284,
+      "cepheid_count": 95
+    },
+    {
+      "host": "N1365",
+      "canonical_name": "NGC1365",
+      "optical_cepheid_count": 47,
+      "nir_cepheid_count": 46,
+      "ra_deg_mean": 53.4429719148936,
+      "dec_deg_mean": -36.15447595744682,
+      "cepheid_count": 93
+    },
+    {
+      "host": "N1448",
+      "canonical_name": "NGC1448",
+      "optical_cepheid_count": 73,
+      "nir_cepheid_count": 73,
+      "ra_deg_mean": 56.166300547945184,
+      "dec_deg_mean": -44.61491150684934,
+      "cepheid_count": 146
+    },
+    {
+      "host": "N2442",
+      "canonical_name": "NGC2442",
+      "optical_cepheid_count": 126,
+      "nir_cepheid_count": 177,
+      "ra_deg_mean": 114.07512261904763,
+      "dec_deg_mean": -69.55402857142855,
+      "cepheid_count": 303
+    },
+    {
+      "host": "N3021",
+      "canonical_name": "NGC3021",
+      "optical_cepheid_count": 14,
+      "nir_cepheid_count": 16,
+      "ra_deg_mean": 147.73474214285716,
+      "dec_deg_mean": 33.55514357142857,
+      "cepheid_count": 30
+    },
+    {
+      "host": "N3370",
+      "canonical_name": "NGC3370",
+      "optical_cepheid_count": 60,
+      "nir_cepheid_count": 73,
+      "ra_deg_mean": 161.76760833333336,
+      "dec_deg_mean": 17.275381999999997,
+      "cepheid_count": 133
+    },
+    {
+      "host": "N3447",
+      "canonical_name": "NGC3447",
+      "optical_cepheid_count": 102,
+      "nir_cepheid_count": 101,
+      "ra_deg_mean": 163.36057892156856,
+      "dec_deg_mean": 16.779282450980386,
+      "cepheid_count": 203
+    },
+    {
+      "host": "N3972",
+      "canonical_name": "NGC3972",
+      "optical_cepheid_count": 47,
+      "nir_cepheid_count": 52,
+      "ra_deg_mean": 178.93806531914893,
+      "dec_deg_mean": 55.31991,
+      "cepheid_count": 99
+    },
+    {
+      "host": "N3982",
+      "canonical_name": "NGC3982",
+      "optical_cepheid_count": 20,
+      "nir_cepheid_count": 27,
+      "ra_deg_mean": 179.116002,
+      "dec_deg_mean": 55.122398,
+      "cepheid_count": 47
+    },
+    {
+      "host": "N4038",
+      "canonical_name": "NGC4038",
+      "optical_cepheid_count": 29,
+      "nir_cepheid_count": 29,
+      "ra_deg_mean": 180.4694344827586,
+      "dec_deg_mean": -18.869898965517244,
+      "cepheid_count": 58
+    },
+    {
+      "host": "N4258",
+      "canonical_name": "NGC4258",
+      "optical_cepheid_count": 398,
+      "nir_cepheid_count": 443,
+      "ra_deg_mean": 184.72849743718598,
+      "dec_deg_mean": 47.299366432160795,
+      "cepheid_count": 841
+    },
+    {
+      "host": "N4424",
+      "canonical_name": "NGC4424",
+      "optical_cepheid_count": 1,
+      "nir_cepheid_count": 9,
+      "ra_deg_mean": 186.80193,
+      "dec_deg_mean": 9.4287,
+      "cepheid_count": 10
+    },
+    {
+      "host": "N4536",
+      "canonical_name": "NGC4536",
+      "optical_cepheid_count": 41,
+      "nir_cepheid_count": 40,
+      "ra_deg_mean": 188.58084707317073,
+      "dec_deg_mean": 2.206348292682927,
+      "cepheid_count": 81
+    },
+    {
+      "host": "N4639",
+      "canonical_name": "NGC4639",
+      "optical_cepheid_count": 25,
+      "nir_cepheid_count": 30,
+      "ra_deg_mean": 190.71916080000003,
+      "dec_deg_mean": 13.258996799999998,
+      "cepheid_count": 55
+    },
+    {
+      "host": "N5584",
+      "canonical_name": "NGC5584",
+      "optical_cepheid_count": 163,
+      "nir_cepheid_count": 165,
+      "ra_deg_mean": 215.60052846625769,
+      "dec_deg_mean": -0.38612521472392636,
+      "cepheid_count": 328
+    },
+    {
+      "host": "N5917",
+      "canonical_name": "NGC5917",
+      "optical_cepheid_count": 13,
+      "nir_cepheid_count": 14,
+      "ra_deg_mean": 230.38888,
+      "dec_deg_mean": -7.3764523076923085,
+      "cepheid_count": 27
+    },
+    {
+      "host": "N7250",
+      "canonical_name": "NGC7250",
+      "optical_cepheid_count": 12,
+      "nir_cepheid_count": 21,
+      "ra_deg_mean": 334.572115,
+      "dec_deg_mean": 40.56240749999999,
+      "cepheid_count": 33
+    },
+    {
+      "host": "U9391",
+      "canonical_name": "UGC9391",
+      "optical_cepheid_count": 33,
+      "nir_cepheid_count": 33,
+      "ra_deg_mean": 218.6546793939394,
+      "dec_deg_mean": 59.3375896969697,
+      "cepheid_count": 66
+    }
+  ],
+  "lstsq_rows": [
+    {
+      "row": 1,
+      "value": 29.1493,
+      "sigma": 0.035
+    },
+    {
+      "row": 2,
+      "value": 32.8917,
+      "sigma": 0.07
+    },
+    {
+      "row": 3,
+      "value": 32.8077,
+      "sigma": 0.081
+    },
+    {
+      "row": 4,
+      "value": 32.6674,
+      "sigma": 0.059
+    },
+    {
+      "row": 5,
+      "value": 34.4927,
+      "sigma": 0.095
+    },
+    {
+      "row": 6,
+      "value": 32.5067,
+      "sigma": 0.045
+    },
+    {
+      "row": 7,
+      "value": 31.2958,
+      "sigma": 0.045
+    },
+    {
+      "row": 8,
+      "value": 31.277,
+      "sigma": 0.033
+    },
+    {
+      "row": 9,
+      "value": 31.4527,
+      "sigma": 0.046
+    },
+    {
+      "row": 10,
+      "value": 31.453,
+      "sigma": 0.051
+    },
+    {
+      "row": 11,
+      "value": 32.0024,
+      "sigma": 0.05
+    },
+    {
+      "row": 12,
+      "value": 32.6619,
+      "sigma": 0.103
+    },
+    {
+      "row": 13,
+      "value": 32.4061,
+      "sigma": 0.091
+    },
+    {
+      "row": 14,
+      "value": 33.1204,
+      "sigma": 0.079
+    },
+    {
+      "row": 15,
+      "value": 32.3973,
+      "sigma": 0.049
+    },
+    {
+      "row": 16,
+      "value": 32.1475,
+      "sigma": 0.043
+    },
+    {
+      "row": 17,
+      "value": 31.9496,
+      "sigma": 0.031
+    },
+    {
+      "row": 18,
+      "value": 32.7761,
+      "sigma": 0.059
+    },
+    {
+      "row": 19,
+      "value": 31.7006,
+      "sigma": 0.062
+    },
+    {
+      "row": 20,
+      "value": 31.6454,
+      "sigma": 0.054
+    },
+    {
+      "row": 21,
+      "value": 31.6383,
+      "sigma": 0.067
+    },
+    {
+      "row": 22,
+      "value": 30.8085,
+      "sigma": 0.095
+    },
+    {
+      "row": 23,
+      "value": 30.8243,
+      "sigma": 0.045
+    },
+    {
+      "row": 24,
+      "value": 31.7642,
+      "sigma": 0.065
+    },
+    {
+      "row": 25,
+      "value": 32.5307,
+      "sigma": 0.136
+    },
+    {
+      "row": 26,
+      "value": 33.165,
+      "sigma": 0.043
+    },
+    {
+      "row": 27,
+      "value": 31.8892,
+      "sigma": 0.04
+    },
+    {
+      "row": 28,
+      "value": 30.5088,
+      "sigma": 0.039
+    },
+    {
+      "row": 29,
+      "value": 32.9171,
+      "sigma": 0.09
+    },
+    {
+      "row": 30,
+      "value": 32.19,
+      "sigma": 0.064
+    },
+    {
+      "row": 31,
+      "value": 32.3208,
+      "sigma": 0.065
+    },
+    {
+      "row": 32,
+      "value": 31.625,
+      "sigma": 0.086
+    },
+    {
+      "row": 33,
+      "value": 33.2759,
+      "sigma": 0.069
+    },
+    {
+      "row": 34,
+      "value": 32.5753,
+      "sigma": 0.071
+    },
+    {
+      "row": 35,
+      "value": 33.2818,
+      "sigma": 0.073
+    },
+    {
+      "row": 36,
+      "value": 33.5518,
+      "sigma": 0.073
+    },
+    {
+      "row": 37,
+      "value": 32.8407,
+      "sigma": 0.048
+    },
+    {
+      "row": 38,
+      "value": -0.0152121,
+      "sigma": 0.022
+    },
+    {
+      "row": 39,
+      "value": -5.89656,
+      "sigma": 0.018
+    },
+    {
+      "row": 40,
+      "value": 0.00855839,
+      "sigma": 0.019
+    }
+  ],
+  "fits_file_bytes": {
+    "allc_shoes_ceph_topantheonwt6.0_112221.fits": 133,
+    "alll_shoes_ceph_topantheonwt6.0_112221.fits": 659520,
+    "ally_shoes_ceph_topantheonwt6.0_112221.fits": 17280
+  }
+}

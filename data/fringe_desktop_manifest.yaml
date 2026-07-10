@@ -1,0 +1,45 @@
+# Tier 51 fringe desktop trace ingest — portable vendor summaries + G: cache
+version: "1.0"
+updated: "2026-07-10"
+
+cache:
+  root: G:/FSOT-PublicData/fringe_desktop
+  env_override: FSOT_FRINGE_CACHE_ROOT
+
+sources:
+  soul_simulator_manifest:
+    desktop: "Soul Simulator/data/processed/manifest.json"
+    vendor_summary: vendor/fringe_desktop/soul_simulator_manifest_summary.json
+
+  intelligence_compressor_states:
+    desktop: "FSOT-2.0-code/IntelligenceCompressor/intelligence_states.json"
+    vendor_summary: vendor/fringe_desktop/intelligence_compressor_summary.json
+
+  intelligence_compressor_sweep:
+    desktop: "FSOT-2.0-code/IntelligenceCompressor/fic_sensitivity_sweep.csv"
+    vendor_summary: vendor/fringe_desktop/fic_sensitivity_sweep_summary.json
+
+  vibrafsot_progress:
+    desktop: "VibraFSOT/artifacts/vibrafsot_final_progress.json"
+    vendor_summary: vendor/fringe_desktop/vibrafsot_progress_summary.json
+
+  symbolic_encoding_graph:
+    desktop: "Fluid spacetime omni-theory, FSOT, and the Holy Bible/analysis/religious/fsot_mythology_graph.json"
+    vendor_summary: vendor/fringe_desktop/symbolic_encoding_graph_summary.json
+    cache_copy: symbolic_encoding/fsot_mythology_graph.json
+
+build:
+  consciousness_soul_bridge: scripts/build_consciousness_soul_bridge_benchmark.py
+  symbolic_archetype_panel: scripts/build_symbolic_archetype_panel_benchmark.py
+
+lean:
+  generator: scripts/gen_fringe_tier51_lean.py
+  modules:
+    - FSOT.Formal.ConsciousnessSoulBridgePriors
+    - FSOT.Formal.SymbolicArchetypePanelPriors
+
+verification:
+  min_records: 5
+  max_median_error_pct: 0.5
+  archetype_channel_max_error_pct: 3.0
+  note: "Neutral wording — symbolic encodings treated as cross-cultural information-flow tags, not doctrinal claims. Physical readings live in data/*_reference.json alongside formulas."

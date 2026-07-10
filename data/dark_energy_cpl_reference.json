@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "source": "Planck2018 + DES_Y3 + FSOT preregistered prediction",
+  "updated": "2026-07-10",
+  "parametrization": "w(a) = w0 + wa * (1 - a)",
+  "fsot_prediction": {
+    "w0": -1.02998129,
+    "w0_formula": "-P_new*pi/G",
+    "wa": -0.808129,
+    "wa_formula": "-gamma*e*phi/pi",
+    "free_parameters": 0,
+    "status": "preregistered_awaiting_DESI_Rubin"
+  },
+  "published_constraints": [
+    {
+      "survey": "Planck2018",
+      "w0": -1.03,
+      "w0_sigma": 0.03,
+      "wa": -0.4,
+      "wa_sigma": 0.4,
+      "reference": "Planck2018_table2_base_LCDM_ext",
+      "note": "CMB primary + lensing — wa weakly constrained"
+    },
+    {
+      "survey": "DES_Y3",
+      "w0": -0.978,
+      "w0_sigma": 0.076,
+      "wa": -0.28,
+      "wa_sigma": 0.31,
+      "reference": "DES_Y3_2022_SN_BAO_combined",
+      "note": "3x2pt + BAO + SN Ia"
+    },
+    {
+      "survey": "PantheonPlus",
+      "w0": -1.007,
+      "w0_sigma": 0.045,
+      "wa": 0.0,
+      "wa_sigma": 0.5,
+      "reference": "PantheonPlus_2022_flat_prior",
+      "note": "SN-only w0-wa contour center approx"
+    },
+    {
+      "survey": "DESI_2024_BAO_preview",
+      "w0": -1.02,
+      "w0_sigma": 0.04,
+      "wa": -0.1,
+      "wa_sigma": 0.35,
+      "reference": "DESI_2024_dr1_bao_preview",
+      "note": "Early DESI BAO — superseded by DR2"
+    },
+    {
+      "survey": "DESI_DR2",
+      "w0": -0.727,
+      "w0_sigma": 0.031,
+      "wa": -1.018,
+      "wa_sigma": 0.24,
+      "reference": "arxiv_2503.14738_DESI_DR2_BAO_Planck_w0waCDM",
+      "note": "DESI DR2 BAO + Planck CMB — dynamical DE favored at 3.1 sigma"
+    }
+  ]
+}

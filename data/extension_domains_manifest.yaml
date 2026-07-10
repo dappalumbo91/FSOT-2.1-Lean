@@ -40,7 +40,7 @@ extension_domains:
     manifest: data/climate_ncei_manifest.yaml
     benchmark_data: data/climate_observed_benchmark.json
     lean_module: FSOT.Formal.ClimateSciencePriors
-    note: "30-station × 50-year NOAA NCEI GHCND cohort (24 train / 6 holdout gates)"
+    note: "Post-glacial recovery frame — ice-core paleo anchors + NCEI cohort (not crisis narrative classifier)"
 
   Cosmology_Extended:
     tier: 16
@@ -1836,6 +1836,187 @@ extension_domains:
     lean_module: FSOT.Formal.RealityFoldingSpinePriors
     note: "Tier 49 rollup — ladder + adjacent couplings + fold metrics + ToE unity spine"
 
+  Time_Emergence_Simulation:
+    tier: 50
+    D_eff: 18
+    delta_psi: 0.94
+    recent_hits: 3
+    observed: true
+    formula_branch_override: term1.coherence_efficiency
+    maps_to_lean: [consciousness, particle, galactic, cosmological, blackhole]
+    build_script: scripts/build_tier_o_time_emergence_benchmarks.py
+    manifest: data/time_emergence_manifest.yaml
+    benchmark_data: data/time_emergence_simulation_benchmark.json
+    lean_module: FSOT.Formal.TimeEmergenceSimulationPriors
+    note: "Tier 50 — FPC six-scale panel + NULL Island + BH τ-dilation (time is emergent)"
+
+  Time_Domain_Crosswalk:
+    tier: 50
+    D_eff: 19
+    delta_psi: 0.95
+    recent_hits: 3
+    observed: true
+    formula_branch_override: scaled_S
+    maps_to_lean: [consciousness, particle, galactic, cosmological, blackhole, mathematical]
+    build_script: scripts/build_tier_o_time_emergence_benchmarks.py
+    manifest: data/time_emergence_manifest.yaml
+    benchmark_data: data/time_domain_crosswalk_benchmark.json
+    lean_module: FSOT.Formal.TimeDomainCrosswalkPriors
+    note: "Tier 50 — per-domain FPC τ coupling across all extension benchmarks"
+
+  FPC_Temporal_Coupling:
+    tier: 50
+    D_eff: 18
+    delta_psi: 0.93
+    recent_hits: 3
+    observed: true
+    formula_branch_override: term1.coherence_efficiency
+    maps_to_lean: [consciousness, particle, galactic, cosmological, blackhole]
+    build_script: scripts/build_tier_o_time_emergence_benchmarks.py
+    manifest: data/time_emergence_manifest.yaml
+    benchmark_data: data/fpc_temporal_coupling_benchmark.json
+    lean_module: FSOT.Formal.FPCTemporalCouplingPriors
+    note: "Tier 50 FluidLink — FPC timing edges from time hub to fold/cosmo/coupling spine"
+
+  Fluid_Phase_Current_Spine:
+    tier: 50
+    D_eff: 20
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, particle, galactic, cosmological, blackhole, mathematical]
+    build_script: scripts/build_tier_o_time_emergence_benchmarks.py
+    benchmark_data: data/fluid_phase_current_spine_benchmark.json
+    lean_module: FSOT.Formal.FluidPhaseCurrentSpinePriors
+    note: "Tier 50 rollup — FPC simulation + crosswalk + FluidLink + Tier 49 fold spine"
+
+  Stumped_Observables_Panel:
+    tier: 51
+    D_eff: 22
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, particle, consciousness, blackhole]
+    build_script: scripts/build_tier_p_stumped_observables_benchmark.py
+    manifest: data/stumped_observables_manifest.yaml
+    benchmark_data: data/stumped_observables_panel_benchmark.json
+    lean_module: FSOT.Formal.StumpedObservablesPanelPriors
+    note: "Tier 51 — zero-parameter FSOT vs literature on open observables (H0, w0, r_c, m_H, E_con, …)"
+
+  Hubble_Bubble_Tension:
+    tier: 51
+    D_eff: 25
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, blackhole, cmb]
+    build_script: scripts/build_tier_p_stumped_observables_benchmark.py
+    manifest: data/stumped_observables_manifest.yaml
+    benchmark_data: data/hubble_bubble_tension_benchmark.json
+    lean_module: FSOT.Formal.HubbleBubbleTensionPriors
+    note: "Tier 51 — dual-anchor H0: global CMB 68.44 vs local bubble-inflated 72–74 km/s/Mpc"
+
+  Dark_Sector_Open_Problems:
+    tier: 51
+    D_eff: 24
+    delta_psi: 0.98
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, particle]
+    build_script: scripts/build_tier_p_stumped_observables_benchmark.py
+    manifest: data/stumped_observables_manifest.yaml
+    benchmark_data: data/dark_sector_open_problems_benchmark.json
+    lean_module: FSOT.Formal.DarkSectorOpenProblemsPriors
+    note: "Tier 51 — w0, N_eff, Ω_Λ, σ₈, τ_reion, BBN abundances from fsot_compute"
+
+  Stumped_Observables_Spine:
+    tier: 51
+    D_eff: 25
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, particle, consciousness, blackhole, cmb]
+    build_script: scripts/build_tier_p_stumped_observables_benchmark.py
+    benchmark_data: data/stumped_observables_spine_benchmark.json
+    lean_module: FSOT.Formal.StumpedObservablesSpinePriors
+    note: "Tier 51 rollup — panel + Hubble bubble + dark sector + Cosmology_Anomalies link"
+
+  Consciousness_Econ:
+    tier: 51
+    D_eff: 17
+    delta_psi: 0.92
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, neural, medical]
+    ingest_script: scripts/ingest_anomaly_public_data.py
+    build_script: scripts/build_consciousness_econ_benchmark.py
+    manifest: data/anomaly_observables_manifest.yaml
+    benchmark_data: data/consciousness_econ_benchmark.json
+    lean_module: FSOT.Formal.ConsciousnessEconPriors
+    note: "E_con — information flow via microtubule tunnel valves; resting floor + resonant practice validation"
+
+  Dark_Energy_CPL:
+    tier: 51
+    D_eff: 24
+    delta_psi: 0.98
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, particle]
+    ingest_script: scripts/ingest_anomaly_public_data.py
+    build_script: scripts/build_dark_energy_cpl_benchmark.py
+    manifest: data/anomaly_observables_manifest.yaml
+    benchmark_data: data/dark_energy_cpl_benchmark.json
+    lean_module: FSOT.Formal.DarkEnergyCPLPriors
+    note: "Preregistered w0/wa — FSOT vs Planck/DES/DESI active constraints"
+
+  SH0ES_Refined:
+    tier: 51
+    D_eff: 25
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, blackhole, cmb]
+    ingest_script: scripts/ingest_anomaly_public_data.py
+    build_script: scripts/build_sh0es_refined_benchmark.py
+    manifest: data/anomaly_observables_manifest.yaml
+    benchmark_data: data/sh0es_refined_benchmark.json
+    lean_module: FSOT.Formal.SH0ESRefinedPriors
+    note: "Per-host SH0ES Cepheid sightlines × bubble-density H0 overlay"
+
+  Consciousness_Soul_Bridge:
+    tier: 51
+    D_eff: 17
+    delta_psi: 0.92
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, neural, ai, medical]
+    ingest_script: scripts/ingest_fringe_desktop_data.py
+    build_script: scripts/build_consciousness_soul_bridge_benchmark.py
+    manifest: data/fringe_desktop_manifest.yaml
+    benchmark_data: data/consciousness_soul_bridge_benchmark.json
+    lean_module: FSOT.Formal.ConsciousnessSoulBridgePriors
+    note: "Substrate + software-packet bridge — Soul Simulator scale, FIC valve, VibraFSOT observer stability, E_con resonance crosswalk"
+
+  Symbolic_Archetype_Panel:
+    tier: 51
+    D_eff: 17
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, linguistic, mathematical]
+    ingest_script: scripts/ingest_fringe_desktop_data.py
+    build_script: scripts/build_symbolic_archetype_panel_benchmark.py
+    manifest: data/fringe_desktop_manifest.yaml
+    benchmark_data: data/symbolic_archetype_panel_benchmark.json
+    lean_module: FSOT.Formal.SymbolicArchetypePanelPriors
+    note: "Cross-cultural narrative archetype tags → FSOT scalar proxies (symbolic encoding panel, not doctrinal claims)"
+
 verification:
   min_records_per_domain: 5
-  max_median_error_pct: 5.0
+  max_median_error_pct: 0.5
+  max_scalar_error_pct: 0.5
+  min_classifier_accuracy_pct: 99.5
+  tier_scalar_max_error_pct: 0.05
+  legacy_loose_gate_pct: 5.0
+  excluded_benchmarks:
+    - structure_calibration_benchmark.json

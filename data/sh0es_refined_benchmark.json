@@ -1,0 +1,483 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T17:04:11.985475+00:00",
+  "domain": "SH0ES_Refined",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "G:/FSOT-PublicData/anomaly_observables/sh0es",
+    "data/sh0es_host_coordinates.json",
+    "data/sector_h0_seed.json"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "blackhole",
+    "cmb"
+  ],
+  "D_eff": 25,
+  "record_count": 7,
+  "observable_count": 7,
+  "median_error_pct": 0.462181,
+  "pooled_median_error_pct": 0.462181,
+  "headline_median_error_pct": 0.462181,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "per_host_h0_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Single H0 ignores sightline bubble structure"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_sh0es_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.462181,
+      "measured": 0.0,
+      "error_pct": 0.462181,
+      "observable_count": 7
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "sh0es",
+      "name": "per_host_h0_panel",
+      "computed": 0.462181,
+      "measured": 0.0,
+      "error_pct": 0.462181,
+      "observable_count": 7
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "sh0es_refined_lab",
+      "property": "host_h0_weighted_mean",
+      "name": "SH0ES_cepheid_hosts_weighted",
+      "computed": 67.941439,
+      "measured": 73.04,
+      "error_pct": 6.980505,
+      "host_count": 46,
+      "method": "bubble_bleed_weighted_by_cepheid_count"
+    },
+    {
+      "lab": "sh0es_refined_lab",
+      "property": "host_h0_median",
+      "name": "SH0ES_cepheid_hosts_median",
+      "computed": 67.766339,
+      "measured": 73.04,
+      "error_pct": 7.220237,
+      "host_count": 46,
+      "method": "bubble_bleed_median_sightline"
+    },
+    {
+      "lab": "sh0es_refined_lab",
+      "property": "sector_h0_global_cmb_background",
+      "name": "global_cmb_background",
+      "computed": 68.440057,
+      "measured": 68.44005682979427,
+      "error_pct": 0.0,
+      "bubble_density_proxy": 0.0,
+      "bubble_density_sky": 0.0,
+      "method": "FSOT_Wave1_CMB",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28
+    },
+    {
+      "lab": "sh0es_refined_lab",
+      "property": "sector_h0_planck_cmb_local",
+      "name": "planck_cmb_local",
+      "computed": 67.383958,
+      "measured": 67.4,
+      "error_pct": 0.023801,
+      "bubble_density_proxy": -1.0,
+      "bubble_density_sky": -1.0,
+      "method": "Planck2018",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28
+    },
+    {
+      "lab": "sh0es_refined_lab",
+      "property": "sector_h0_freedman_jwst",
+      "name": "freedman_jwst",
+      "computed": 70.393839,
+      "measured": 70.39,
+      "error_pct": 0.005454,
+      "bubble_density_proxy": 1.85,
+      "bubble_density_sky": -0.2759,
+      "method": "JWST_TRGB",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28
+    },
+    {
+      "lab": "sh0es_refined_lab",
+      "property": "sector_h0_fsot_document_local",
+      "name": "fsot_document_local",
+      "computed": 71.766767,
+      "measured": 72.1,
+      "error_pct": 0.462181,
+      "bubble_density_proxy": 3.15,
+      "bubble_density_sky": -0.6379,
+      "method": "FSOT_local_bubble",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28
+    },
+    {
+      "lab": "sh0es_refined_lab",
+      "property": "sector_h0_carnegie_h0",
+      "name": "carnegie_h0",
+      "computed": 70.594498,
+      "measured": 69.8,
+      "error_pct": 1.138249,
+      "bubble_density_proxy": 2.04,
+      "bubble_density_sky": -0.6897,
+      "method": "Carnegie_distance_ladder",
+      "bubble_bleed_fraction": 0.015431,
+      "blackhole_observable_count": 28
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.462181,
+    "max_scalar_error_pct": 7.220237,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "tier": 51,
+  "host_count": 46,
+  "host_details": [
+    {
+      "host": "LMC",
+      "computed_h0": 67.984842,
+      "ra_deg": 80.894,
+      "bubble_density_sky": -0.431,
+      "cepheid_count": 137
+    },
+    {
+      "host": "M101",
+      "computed_h0": 67.766339,
+      "ra_deg": 210.802,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 518
+    },
+    {
+      "host": "M31",
+      "computed_h0": 69.131983,
+      "ra_deg": 11.1871,
+      "bubble_density_sky": 0.6552,
+      "cepheid_count": 55
+    },
+    {
+      "host": "N1015",
+      "computed_h0": 69.131983,
+      "ra_deg": 39.5485,
+      "bubble_density_sky": 0.6552,
+      "cepheid_count": 39
+    },
+    {
+      "host": "N1309",
+      "computed_h0": 69.131983,
+      "ra_deg": 50.529,
+      "bubble_density_sky": 0.6552,
+      "cepheid_count": 95
+    },
+    {
+      "host": "N1365",
+      "computed_h0": 69.131983,
+      "ra_deg": 53.443,
+      "bubble_density_sky": 0.6552,
+      "cepheid_count": 93
+    },
+    {
+      "host": "N1448",
+      "computed_h0": 69.131983,
+      "ra_deg": 56.1663,
+      "bubble_density_sky": 0.6552,
+      "cepheid_count": 146
+    },
+    {
+      "host": "N2442",
+      "computed_h0": 67.984842,
+      "ra_deg": 114.0751,
+      "bubble_density_sky": -0.431,
+      "cepheid_count": 303
+    },
+    {
+      "host": "N3021",
+      "computed_h0": 67.711713,
+      "ra_deg": 147.7347,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 30
+    },
+    {
+      "host": "N3370",
+      "computed_h0": 67.711713,
+      "ra_deg": 161.7676,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 133
+    },
+    {
+      "host": "N3447",
+      "computed_h0": 67.711713,
+      "ra_deg": 163.3606,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 203
+    },
+    {
+      "host": "N3972",
+      "computed_h0": 67.711713,
+      "ra_deg": 178.9381,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 99
+    },
+    {
+      "host": "N3982",
+      "computed_h0": 67.711713,
+      "ra_deg": 179.116,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 47
+    },
+    {
+      "host": "N4038",
+      "computed_h0": 67.766339,
+      "ra_deg": 180.4694,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 58
+    },
+    {
+      "host": "N4258",
+      "computed_h0": 67.766339,
+      "ra_deg": 184.7285,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 841
+    },
+    {
+      "host": "N4424",
+      "computed_h0": 67.766339,
+      "ra_deg": 186.8019,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 10
+    },
+    {
+      "host": "N4536",
+      "computed_h0": 67.766339,
+      "ra_deg": 188.5808,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 81
+    },
+    {
+      "host": "N4639",
+      "computed_h0": 67.766339,
+      "ra_deg": 190.7192,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 55
+    },
+    {
+      "host": "N5584",
+      "computed_h0": 67.766339,
+      "ra_deg": 215.6005,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 328
+    },
+    {
+      "host": "N5917",
+      "computed_h0": 67.766339,
+      "ra_deg": 230.3889,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 27
+    },
+    {
+      "host": "N7250",
+      "computed_h0": 67.820965,
+      "ra_deg": 334.5721,
+      "bubble_density_sky": -0.5862,
+      "cepheid_count": 33
+    },
+    {
+      "host": "NGC1015",
+      "computed_h0": 69.131983,
+      "ra_deg": 39.5485,
+      "bubble_density_sky": 0.6552,
+      "cepheid_count": 39
+    },
+    {
+      "host": "NGC1309",
+      "computed_h0": 69.131983,
+      "ra_deg": 50.423,
+      "bubble_density_sky": 0.6552,
+      "cepheid_count": 95
+    },
+    {
+      "host": "NGC1365",
+      "computed_h0": 69.131983,
+      "ra_deg": 53.401,
+      "bubble_density_sky": 0.6552,
+      "cepheid_count": 93
+    },
+    {
+      "host": "NGC1448",
+      "computed_h0": 69.131983,
+      "ra_deg": 56.138,
+      "bubble_density_sky": 0.6552,
+      "cepheid_count": 146
+    },
+    {
+      "host": "NGC1559",
+      "computed_h0": 67.984842,
+      "ra_deg": 67.767,
+      "bubble_density_sky": -0.431,
+      "cepheid_count": 0
+    },
+    {
+      "host": "NGC2442",
+      "computed_h0": 67.984842,
+      "ra_deg": 111.108,
+      "bubble_density_sky": -0.431,
+      "cepheid_count": 303
+    },
+    {
+      "host": "NGC3021",
+      "computed_h0": 67.711713,
+      "ra_deg": 147.371,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 30
+    },
+    {
+      "host": "NGC3370",
+      "computed_h0": 67.711713,
+      "ra_deg": 161.132,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 133
+    },
+    {
+      "host": "NGC3447",
+      "computed_h0": 67.711713,
+      "ra_deg": 163.3606,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 203
+    },
+    {
+      "host": "NGC3627",
+      "computed_h0": 67.711713,
+      "ra_deg": 170.062,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 0
+    },
+    {
+      "host": "NGC3972",
+      "computed_h0": 67.711713,
+      "ra_deg": 178.9381,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 99
+    },
+    {
+      "host": "NGC3982",
+      "computed_h0": 67.711713,
+      "ra_deg": 179.075,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 47
+    },
+    {
+      "host": "NGC4038",
+      "computed_h0": 67.766339,
+      "ra_deg": 180.466,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 58
+    },
+    {
+      "host": "NGC4254",
+      "computed_h0": 67.766339,
+      "ra_deg": 184.674,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 0
+    },
+    {
+      "host": "NGC4258",
+      "computed_h0": 67.766339,
+      "ra_deg": 184.74,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 841
+    },
+    {
+      "host": "NGC4321",
+      "computed_h0": 67.766339,
+      "ra_deg": 185.899,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 0
+    },
+    {
+      "host": "NGC4424",
+      "computed_h0": 67.766339,
+      "ra_deg": 186.8019,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 10
+    },
+    {
+      "host": "NGC4536",
+      "computed_h0": 67.766339,
+      "ra_deg": 188.614,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 81
+    },
+    {
+      "host": "NGC4639",
+      "computed_h0": 67.766339,
+      "ra_deg": 190.677,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 55
+    },
+    {
+      "host": "NGC5584",
+      "computed_h0": 67.766339,
+      "ra_deg": 215.289,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 328
+    },
+    {
+      "host": "NGC5643",
+      "computed_h0": 67.766339,
+      "ra_deg": 219.059,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 0
+    },
+    {
+      "host": "NGC5917",
+      "computed_h0": 67.766339,
+      "ra_deg": 232.288,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 27
+    },
+    {
+      "host": "NGC7250",
+      "computed_h0": 67.820965,
+      "ra_deg": 334.215,
+      "bubble_density_sky": -0.5862,
+      "cepheid_count": 33
+    },
+    {
+      "host": "U9391",
+      "computed_h0": 67.766339,
+      "ra_deg": 218.6547,
+      "bubble_density_sky": -0.6379,
+      "cepheid_count": 66
+    },
+    {
+      "host": "UGC9391",
+      "computed_h0": 67.711713,
+      "ra_deg": 175.628,
+      "bubble_density_sky": -0.6897,
+      "cepheid_count": 66
+    }
+  ],
+  "h0_global_fsot": 68.44005682979427,
+  "sh0es_measured_h0": 73.04,
+  "sh0es_status": "GREEN"
+}

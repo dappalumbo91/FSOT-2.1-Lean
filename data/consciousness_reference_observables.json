@@ -1,0 +1,651 @@
+{
+  "schema_version": "1.0",
+  "source": "AnAge HAGR + literature brain metabolic anchors",
+  "updated": "2026-07-10",
+  "brain_energy_fraction_default": 0.2416,
+  "notes": "brain_energy_fraction = 20W / 82.78W human AnAge total MR (Clarke & Sokoloff anchor).",
+  "species": [
+    {
+      "name": "Homo sapiens",
+      "anage_hagrid": "02789",
+      "brain_power_w": 20.0,
+      "total_metabolic_w": 82.78,
+      "brain_energy_fraction": 0.2416,
+      "reference": "Clarke_Sokoloff_1999_brain_20W"
+    },
+    {
+      "name": "Pan troglodytes",
+      "brain_energy_fraction": 0.22,
+      "reference": "primatology_brain_metabolic_fraction"
+    },
+    {
+      "name": "Macaca mulatta",
+      "brain_energy_fraction": 0.2,
+      "reference": "rhesus_neuroimaging_metabolic"
+    },
+    {
+      "name": "Mus musculus",
+      "brain_energy_fraction": 0.1,
+      "reference": "rodent_brain_body_metabolic"
+    },
+    {
+      "name": "Rattus norvegicus",
+      "brain_energy_fraction": 0.11,
+      "reference": "rodent_brain_body_metabolic"
+    },
+    {
+      "name": "Canis familiaris",
+      "brain_energy_fraction": 0.15,
+      "reference": "canine_brain_metabolic"
+    },
+    {
+      "name": "Heterocephalus glaber",
+      "brain_energy_fraction": 0.08,
+      "reference": "naked_mole_rat_hypometabolic_brain"
+    },
+    {
+      "name": "Elephas maximus",
+      "brain_energy_fraction": 0.12,
+      "reference": "elephant_encephalization_metabolic"
+    },
+    {
+      "name": "Balaena mysticetus",
+      "brain_energy_fraction": 0.09,
+      "reference": "cetacean_brain_metabolic"
+    },
+    {
+      "name": "Delphinus delphis",
+      "brain_energy_fraction": 0.14,
+      "reference": "dolphin_brain_metabolic"
+    },
+    {
+      "name": "Geogale aurita",
+      "anage_hagrid": "01889",
+      "total_metabolic_w": 0.043,
+      "brain_energy_fraction": 0.12,
+      "order": "Afrosoricida",
+      "family": "Tenrecidae",
+      "reference": "AnAge_HAGR_afrosoricida_taxon_fraction"
+    },
+    {
+      "name": "Hemicentetes semispinosus",
+      "anage_hagrid": "01890",
+      "total_metabolic_w": 0.38,
+      "brain_energy_fraction": 0.12,
+      "order": "Afrosoricida",
+      "family": "Tenrecidae",
+      "reference": "AnAge_HAGR_afrosoricida_taxon_fraction"
+    },
+    {
+      "name": "Echinops telfairi",
+      "anage_hagrid": "01888",
+      "total_metabolic_w": 0.75,
+      "brain_energy_fraction": 0.12,
+      "order": "Afrosoricida",
+      "family": "Tenrecidae",
+      "reference": "AnAge_HAGR_afrosoricida_taxon_fraction"
+    },
+    {
+      "name": "Tragulus javanicus",
+      "anage_hagrid": "02067",
+      "total_metabolic_w": 4.883,
+      "brain_energy_fraction": 0.12,
+      "order": "Artiodactyla",
+      "family": "Tragulidae",
+      "reference": "AnAge_HAGR_artiodactyla_taxon_fraction"
+    },
+    {
+      "name": "Ovis canadensis",
+      "anage_hagrid": "01979",
+      "total_metabolic_w": 114.674,
+      "brain_energy_fraction": 0.12,
+      "order": "Artiodactyla",
+      "family": "Bovidae",
+      "reference": "AnAge_HAGR_artiodactyla_taxon_fraction"
+    },
+    {
+      "name": "Bos taurus",
+      "anage_hagrid": "01910",
+      "total_metabolic_w": 306.77,
+      "brain_energy_fraction": 0.12,
+      "order": "Artiodactyla",
+      "family": "Bovidae",
+      "reference": "AnAge_HAGR_artiodactyla_taxon_fraction"
+    },
+    {
+      "name": "Mustela erminea",
+      "anage_hagrid": "02193",
+      "total_metabolic_w": 1.276,
+      "brain_energy_fraction": 0.15,
+      "order": "Carnivora",
+      "family": "Mustelidae",
+      "reference": "AnAge_HAGR_carnivora_taxon_fraction"
+    },
+    {
+      "name": "Vulpes lagopus",
+      "anage_hagrid": "02095",
+      "total_metabolic_w": 7.665,
+      "brain_energy_fraction": 0.15,
+      "order": "Carnivora",
+      "family": "Canidae",
+      "reference": "AnAge_HAGR_carnivora_taxon_fraction"
+    },
+    {
+      "name": "Panthera tigris",
+      "anage_hagrid": "02130",
+      "total_metabolic_w": 133.859,
+      "brain_energy_fraction": 0.15,
+      "order": "Carnivora",
+      "family": "Felidae",
+      "reference": "AnAge_HAGR_carnivora_taxon_fraction"
+    },
+    {
+      "name": "Phocoena phocoena",
+      "anage_hagrid": "02317",
+      "total_metabolic_w": 107.675,
+      "brain_energy_fraction": 0.1,
+      "order": "Cetacea",
+      "family": "Phocoenidae",
+      "reference": "AnAge_HAGR_cetacea_taxon_fraction"
+    },
+    {
+      "name": "Myotis nigricans",
+      "anage_hagrid": "02409",
+      "total_metabolic_w": 0.027,
+      "brain_energy_fraction": 0.08,
+      "order": "Chiroptera",
+      "family": "Vespertilionidae",
+      "reference": "AnAge_HAGR_chiroptera_taxon_fraction"
+    },
+    {
+      "name": "Platyrrhinus lineatus",
+      "anage_hagrid": "02349",
+      "total_metabolic_w": 0.25,
+      "brain_energy_fraction": 0.08,
+      "order": "Chiroptera",
+      "family": "Phyllostomidae",
+      "reference": "AnAge_HAGR_chiroptera_taxon_fraction"
+    },
+    {
+      "name": "Pteropus vampyrus",
+      "anage_hagrid": "02372",
+      "total_metabolic_w": 4.486,
+      "brain_energy_fraction": 0.08,
+      "order": "Chiroptera",
+      "family": "Pteropodidae",
+      "reference": "AnAge_HAGR_chiroptera_taxon_fraction"
+    },
+    {
+      "name": "Tolypeutes matacus",
+      "anage_hagrid": "02445",
+      "total_metabolic_w": 1.172,
+      "brain_energy_fraction": 0.12,
+      "order": "Cingulata",
+      "family": "Dasypodidae",
+      "reference": "AnAge_HAGR_cingulata_taxon_fraction"
+    },
+    {
+      "name": "Chaetophractus villosus",
+      "anage_hagrid": "02439",
+      "total_metabolic_w": 4.508,
+      "brain_energy_fraction": 0.12,
+      "order": "Cingulata",
+      "family": "Dasypodidae",
+      "reference": "AnAge_HAGR_cingulata_taxon_fraction"
+    },
+    {
+      "name": "Priodontes maximus",
+      "anage_hagrid": "02444",
+      "total_metabolic_w": 16.892,
+      "brain_energy_fraction": 0.12,
+      "order": "Cingulata",
+      "family": "Dasypodidae",
+      "reference": "AnAge_HAGR_cingulata_taxon_fraction"
+    },
+    {
+      "name": "Planigale gilesi",
+      "anage_hagrid": "02468",
+      "total_metabolic_w": 0.058,
+      "brain_energy_fraction": 0.12,
+      "order": "Dasyuromorphia",
+      "family": "Dasyuridae",
+      "reference": "AnAge_HAGR_dasyuromorphia_taxon_fraction"
+    },
+    {
+      "name": "Dasycercus cristicauda",
+      "anage_hagrid": "02456",
+      "total_metabolic_w": 0.26,
+      "brain_energy_fraction": 0.12,
+      "order": "Dasyuromorphia",
+      "family": "Dasyuridae",
+      "reference": "AnAge_HAGR_dasyuromorphia_taxon_fraction"
+    },
+    {
+      "name": "Sarcophilus harrisii",
+      "anage_hagrid": "02476",
+      "total_metabolic_w": 8.664,
+      "brain_energy_fraction": 0.12,
+      "order": "Dasyuromorphia",
+      "family": "Dasyuridae",
+      "reference": "AnAge_HAGR_dasyuromorphia_taxon_fraction"
+    },
+    {
+      "name": "Monodelphis domestica",
+      "anage_hagrid": "02504",
+      "total_metabolic_w": 0.335,
+      "brain_energy_fraction": 0.12,
+      "order": "Didelphimorphia",
+      "family": "Didelphidae",
+      "reference": "AnAge_HAGR_didelphimorphia_taxon_fraction"
+    },
+    {
+      "name": "Philander opossum",
+      "anage_hagrid": "02506",
+      "total_metabolic_w": 1.886,
+      "brain_energy_fraction": 0.12,
+      "order": "Didelphimorphia",
+      "family": "Didelphidae",
+      "reference": "AnAge_HAGR_didelphimorphia_taxon_fraction"
+    },
+    {
+      "name": "Didelphis virginiana",
+      "anage_hagrid": "02494",
+      "total_metabolic_w": 5.299,
+      "brain_energy_fraction": 0.12,
+      "order": "Didelphimorphia",
+      "family": "Didelphidae",
+      "reference": "AnAge_HAGR_didelphimorphia_taxon_fraction"
+    },
+    {
+      "name": "Acrobates pygmaeus",
+      "anage_hagrid": "02507",
+      "total_metabolic_w": 0.084,
+      "brain_energy_fraction": 0.09,
+      "order": "Diprotodontia",
+      "family": "Acrobatidae",
+      "reference": "AnAge_HAGR_diprotodontia_taxon_fraction"
+    },
+    {
+      "name": "Trichosurus vulpecula",
+      "anage_hagrid": "02562",
+      "total_metabolic_w": 3.8,
+      "brain_energy_fraction": 0.09,
+      "order": "Diprotodontia",
+      "family": "Phalangeridae",
+      "reference": "AnAge_HAGR_diprotodontia_taxon_fraction"
+    },
+    {
+      "name": "Macropus robustus",
+      "anage_hagrid": "02534",
+      "total_metabolic_w": 33.056,
+      "brain_energy_fraction": 0.09,
+      "order": "Diprotodontia",
+      "family": "Macropodidae",
+      "reference": "AnAge_HAGR_diprotodontia_taxon_fraction"
+    },
+    {
+      "name": "Paraechinus aethiopicus",
+      "anage_hagrid": "02587",
+      "total_metabolic_w": 0.63,
+      "brain_energy_fraction": 0.12,
+      "order": "Erinaceomorpha",
+      "family": "Erinaceidae",
+      "reference": "AnAge_HAGR_erinaceomorpha_taxon_fraction"
+    },
+    {
+      "name": "Erinaceus concolor",
+      "anage_hagrid": "02584",
+      "total_metabolic_w": 1.937,
+      "brain_energy_fraction": 0.12,
+      "order": "Erinaceomorpha",
+      "family": "Erinaceidae",
+      "reference": "AnAge_HAGR_erinaceomorpha_taxon_fraction"
+    },
+    {
+      "name": "Echinosorex gymnura",
+      "anage_hagrid": "02582",
+      "total_metabolic_w": 2.816,
+      "brain_energy_fraction": 0.12,
+      "order": "Erinaceomorpha",
+      "family": "Erinaceidae",
+      "reference": "AnAge_HAGR_erinaceomorpha_taxon_fraction"
+    },
+    {
+      "name": "Heterohyrax brucei",
+      "anage_hagrid": "02590",
+      "total_metabolic_w": 3.872,
+      "brain_energy_fraction": 0.12,
+      "order": "Hyracoidea",
+      "family": "Procaviidae",
+      "reference": "AnAge_HAGR_hyracoidea_taxon_fraction"
+    },
+    {
+      "name": "Procavia capensis",
+      "anage_hagrid": "02591",
+      "total_metabolic_w": 4.954,
+      "brain_energy_fraction": 0.12,
+      "order": "Hyracoidea",
+      "family": "Procaviidae",
+      "reference": "AnAge_HAGR_hyracoidea_taxon_fraction"
+    },
+    {
+      "name": "Ochotona princeps",
+      "anage_hagrid": "02610",
+      "total_metabolic_w": 0.932,
+      "brain_energy_fraction": 0.11,
+      "order": "Lagomorpha",
+      "family": "Ochotonidae",
+      "reference": "AnAge_HAGR_lagomorpha_taxon_fraction"
+    },
+    {
+      "name": "Lepus californicus",
+      "anage_hagrid": "02596",
+      "total_metabolic_w": 7.314,
+      "brain_energy_fraction": 0.11,
+      "order": "Lagomorpha",
+      "family": "Leporidae",
+      "reference": "AnAge_HAGR_lagomorpha_taxon_fraction"
+    },
+    {
+      "name": "Lepus timidus",
+      "anage_hagrid": "02599",
+      "total_metabolic_w": 8.443,
+      "brain_energy_fraction": 0.11,
+      "order": "Lagomorpha",
+      "family": "Leporidae",
+      "reference": "AnAge_HAGR_lagomorpha_taxon_fraction"
+    },
+    {
+      "name": "Elephantulus brachyrhynchus",
+      "anage_hagrid": "02612",
+      "total_metabolic_w": 0.244,
+      "brain_energy_fraction": 0.11,
+      "order": "Macroscelidea",
+      "family": "Macroscelididae",
+      "reference": "AnAge_HAGR_macroscelidea_taxon_fraction"
+    },
+    {
+      "name": "Macroscelides proboscideus",
+      "anage_hagrid": "02617",
+      "total_metabolic_w": 0.292,
+      "brain_energy_fraction": 0.11,
+      "order": "Macroscelidea",
+      "family": "Macroscelididae",
+      "reference": "AnAge_HAGR_macroscelidea_taxon_fraction"
+    },
+    {
+      "name": "Petrodromus tetradactylus",
+      "anage_hagrid": "02618",
+      "total_metabolic_w": 0.852,
+      "brain_energy_fraction": 0.11,
+      "order": "Macroscelidea",
+      "family": "Macroscelididae",
+      "reference": "AnAge_HAGR_macroscelidea_taxon_fraction"
+    },
+    {
+      "name": "Ornithorhynchus anatinus",
+      "anage_hagrid": "02622",
+      "total_metabolic_w": 1.931,
+      "brain_energy_fraction": 0.12,
+      "order": "Monotremata",
+      "family": "Ornithorhynchidae",
+      "reference": "AnAge_HAGR_monotremata_taxon_fraction"
+    },
+    {
+      "name": "Tachyglossus aculeatus",
+      "anage_hagrid": "02623",
+      "total_metabolic_w": 2.327,
+      "brain_energy_fraction": 0.12,
+      "order": "Monotremata",
+      "family": "Tachyglossidae",
+      "reference": "AnAge_HAGR_monotremata_taxon_fraction"
+    },
+    {
+      "name": "Zaglossus bruijni",
+      "anage_hagrid": "02624",
+      "total_metabolic_w": 6.493,
+      "brain_energy_fraction": 0.12,
+      "order": "Monotremata",
+      "family": "Tachyglossidae",
+      "reference": "AnAge_HAGR_monotremata_taxon_fraction"
+    },
+    {
+      "name": "Isoodon auratus",
+      "anage_hagrid": "02628",
+      "total_metabolic_w": 0.837,
+      "brain_energy_fraction": 0.12,
+      "order": "Peramelemorphia",
+      "family": "Peramelidae",
+      "reference": "AnAge_HAGR_peramelemorphia_taxon_fraction"
+    },
+    {
+      "name": "Perameles gunnii",
+      "anage_hagrid": "02632",
+      "total_metabolic_w": 1.902,
+      "brain_energy_fraction": 0.12,
+      "order": "Peramelemorphia",
+      "family": "Peramelidae",
+      "reference": "AnAge_HAGR_peramelemorphia_taxon_fraction"
+    },
+    {
+      "name": "Isoodon macrourus",
+      "anage_hagrid": "02629",
+      "total_metabolic_w": 3.202,
+      "brain_energy_fraction": 0.12,
+      "order": "Peramelemorphia",
+      "family": "Peramelidae",
+      "reference": "AnAge_HAGR_peramelemorphia_taxon_fraction"
+    },
+    {
+      "name": "Equus asinus",
+      "anage_hagrid": "02636",
+      "total_metabolic_w": 164.92,
+      "brain_energy_fraction": 0.11,
+      "order": "Perissodactyla",
+      "family": "Equidae",
+      "reference": "AnAge_HAGR_perissodactyla_taxon_fraction"
+    },
+    {
+      "name": "Manis pentadactyla",
+      "anage_hagrid": "02653",
+      "total_metabolic_w": 3.727,
+      "brain_energy_fraction": 0.1,
+      "order": "Pholidota",
+      "family": "Manidae",
+      "reference": "AnAge_HAGR_pholidota_taxon_fraction"
+    },
+    {
+      "name": "Manis crassicaudata",
+      "anage_hagrid": "02652",
+      "total_metabolic_w": 6.923,
+      "brain_energy_fraction": 0.1,
+      "order": "Pholidota",
+      "family": "Manidae",
+      "reference": "AnAge_HAGR_pholidota_taxon_fraction"
+    },
+    {
+      "name": "Cyclopes didactylus",
+      "anage_hagrid": "02656",
+      "total_metabolic_w": 0.636,
+      "brain_energy_fraction": 0.12,
+      "order": "Pilosa",
+      "family": "Cyclopedidae",
+      "reference": "AnAge_HAGR_pilosa_taxon_fraction"
+    },
+    {
+      "name": "Tamandua tetradactyla",
+      "anage_hagrid": "02661",
+      "total_metabolic_w": 5.015,
+      "brain_energy_fraction": 0.12,
+      "order": "Pilosa",
+      "family": "Myrmecophagidae",
+      "reference": "AnAge_HAGR_pilosa_taxon_fraction"
+    },
+    {
+      "name": "Myrmecophaga tridactyla",
+      "anage_hagrid": "02659",
+      "total_metabolic_w": 14.543,
+      "brain_energy_fraction": 0.12,
+      "order": "Pilosa",
+      "family": "Myrmecophagidae",
+      "reference": "AnAge_HAGR_pilosa_taxon_fraction"
+    },
+    {
+      "name": "Galago moholi",
+      "anage_hagrid": "02781",
+      "total_metabolic_w": 0.285,
+      "brain_energy_fraction": 0.22,
+      "order": "Primates",
+      "family": "Galagidae",
+      "reference": "AnAge_HAGR_primates_taxon_fraction"
+    },
+    {
+      "name": "Perodicticus potto",
+      "anage_hagrid": "02823",
+      "total_metabolic_w": 1.942,
+      "brain_energy_fraction": 0.22,
+      "order": "Primates",
+      "family": "Lorisidae",
+      "reference": "AnAge_HAGR_primates_taxon_fraction"
+    },
+    {
+      "name": "Perognathus longimembris",
+      "anage_hagrid": "03002",
+      "total_metabolic_w": 0.061,
+      "brain_energy_fraction": 0.1,
+      "order": "Rodentia",
+      "family": "Heteromyidae",
+      "reference": "AnAge_HAGR_rodentia_taxon_fraction"
+    },
+    {
+      "name": "Tamias amoenus",
+      "anage_hagrid": "03177",
+      "total_metabolic_w": 0.5,
+      "brain_energy_fraction": 0.1,
+      "order": "Rodentia",
+      "family": "Sciuridae",
+      "reference": "AnAge_HAGR_rodentia_taxon_fraction"
+    },
+    {
+      "name": "Hydrochoerus hydrochaeris",
+      "anage_hagrid": "02863",
+      "total_metabolic_w": 36.754,
+      "brain_energy_fraction": 0.1,
+      "order": "Rodentia",
+      "family": "Caviidae",
+      "reference": "AnAge_HAGR_rodentia_taxon_fraction"
+    },
+    {
+      "name": "Ptilocercus lowii",
+      "anage_hagrid": "03200",
+      "total_metabolic_w": 0.24,
+      "brain_energy_fraction": 0.12,
+      "order": "Scandentia",
+      "family": "Ptilocercidae",
+      "reference": "AnAge_HAGR_scandentia_taxon_fraction"
+    },
+    {
+      "name": "Tupaia glis",
+      "anage_hagrid": "03202",
+      "total_metabolic_w": 0.522,
+      "brain_energy_fraction": 0.12,
+      "order": "Scandentia",
+      "family": "Tupaiidae",
+      "reference": "AnAge_HAGR_scandentia_taxon_fraction"
+    },
+    {
+      "name": "Urogale everetti",
+      "anage_hagrid": "03205",
+      "total_metabolic_w": 1.25,
+      "brain_energy_fraction": 0.12,
+      "order": "Scandentia",
+      "family": "Tupaiidae",
+      "reference": "AnAge_HAGR_scandentia_taxon_fraction"
+    },
+    {
+      "name": "Trichechus inunguis",
+      "anage_hagrid": "03207",
+      "total_metabolic_w": 55.015,
+      "brain_energy_fraction": 0.09,
+      "order": "Sirenia",
+      "family": "Trichechidae",
+      "reference": "AnAge_HAGR_sirenia_taxon_fraction"
+    },
+    {
+      "name": "Trichechus manatus",
+      "anage_hagrid": "03208",
+      "total_metabolic_w": 70.0056,
+      "brain_energy_fraction": 0.09,
+      "order": "Sirenia",
+      "family": "Trichechidae",
+      "reference": "AnAge_HAGR_sirenia_taxon_fraction"
+    },
+    {
+      "name": "Suncus etruscus",
+      "anage_hagrid": "03234",
+      "total_metabolic_w": 0.063,
+      "brain_energy_fraction": 0.12,
+      "order": "Soricomorpha",
+      "family": "Soricidae",
+      "reference": "AnAge_HAGR_soricomorpha_taxon_fraction"
+    },
+    {
+      "name": "Sorex alpinus",
+      "anage_hagrid": "03221",
+      "total_metabolic_w": 0.267,
+      "brain_energy_fraction": 0.12,
+      "order": "Soricomorpha",
+      "family": "Soricidae",
+      "reference": "AnAge_HAGR_soricomorpha_taxon_fraction"
+    },
+    {
+      "name": "Condylura cristata",
+      "anage_hagrid": "03236",
+      "total_metabolic_w": 0.615,
+      "brain_energy_fraction": 0.12,
+      "order": "Soricomorpha",
+      "family": "Talpidae",
+      "reference": "AnAge_HAGR_soricomorpha_taxon_fraction"
+    },
+    {
+      "name": "Orycteropus afer",
+      "anage_hagrid": "03242",
+      "total_metabolic_w": 34.275,
+      "brain_energy_fraction": 0.12,
+      "order": "Tubulidentata",
+      "family": "Orycteropodidae",
+      "reference": "AnAge_HAGR_tubulidentata_taxon_fraction"
+    }
+  ],
+  "human_channels": [
+    {
+      "name": "resting_brain_metabolic",
+      "property": "brain_power_w",
+      "measured": 20.0,
+      "condition": "resting_awake",
+      "reference": "Clarke_Sokoloff_1999"
+    },
+    {
+      "name": "active_cognition_pet",
+      "property": "brain_power_w",
+      "measured": 23.0,
+      "condition": "cognitive_task_PET",
+      "reference": "Raichle_2001"
+    },
+    {
+      "name": "sleep_nrem",
+      "property": "brain_power_w",
+      "measured": 18.0,
+      "condition": "NREM_sleep",
+      "reference": "literature_sleep_metabolic"
+    },
+    {
+      "name": "anage_total_body_mr",
+      "property": "total_metabolic_w",
+      "measured": 82.78,
+      "condition": "resting_adult",
+      "reference": "AnAge_HAGR_build15"
+    }
+  ],
+  "anage_panel_count": 62
+}

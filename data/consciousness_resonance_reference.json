@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-07-10",
+  "framework": "consciousness_as_information_flow_through_microtubule_tunnel_valves",
+  "notes": [
+    "Resting metabolic brain_W is the valve-closed information floor.",
+    "Esoteric practices map to stimulus frequencies; measurable EEG/therapy uplifts validate tunnel opening.",
+    "Ignition coherence (Gate/Eq)/13*pi is the full open-valve information excess; resonant coupling selects the fraction."
+  ],
+  "microtubule_physics": {
+    "carrier_formula": "f_tunnel_hz = 40 * Consciousness_Gate / W_Phase_Sync",
+    "harmonic_formula": "f_n = f_tunnel_hz * (Gate/Eq)^n",
+    "coupling_formula": "eta(f) = max_n exp(-0.5 * ((f/f_n - 1) / (gamma/e))^2)",
+    "uplift_formula": "delta_info = (ignition_factor - 1) * eta(f)"
+  },
+  "practices": [
+    {
+      "name": "resting_valve_closed",
+      "symbolic": "ordinary_waking_baseline",
+      "stimulus_hz": 0.0,
+      "measured_info_uplift_fraction": 0.0,
+      "reference": "Clarke_Sokoloff_1999_resting_floor",
+      "condition": "no_entrainment"
+    },
+    {
+      "name": "gamma_40hz_auditory_entrainment",
+      "symbolic": "gamma_observer_lock",
+      "stimulus_hz": 40.0,
+      "measured_info_uplift_fraction": 0.095,
+      "reference": "Poil_2020_Iaccarino_40Hz_gamma_entrainment",
+      "condition": "auditory_40Hz_stimulation"
+    },
+    {
+      "name": "meditation_gamma_synchrony",
+      "symbolic": "compassion_meditation_gamma",
+      "stimulus_hz": 40.0,
+      "measured_info_uplift_fraction": 0.094,
+      "reference": "Lutz_2004_long_term_meditator_gamma",
+      "condition": "internal_gamma_coherence"
+    },
+    {
+      "name": "binaural_theta_6hz",
+      "symbolic": "theta_trance_entrainment",
+      "stimulus_hz": 6.0,
+      "measured_info_uplift_fraction": 0.094,
+      "reference": "Lane_1998_binaural_theta_attention",
+      "condition": "binaural_beats_6Hz"
+    },
+    {
+      "name": "schumann_783hz",
+      "symbolic": "earth_ionospheric_resonance",
+      "stimulus_hz": 7.83,
+      "measured_info_uplift_fraction": 0.042,
+      "reference": "HRV_coherence_Schumann_band_studies",
+      "condition": "ambient_ultra_low_frequency"
+    },
+    {
+      "name": "meditation_tm_alpha",
+      "symbolic": "transcending_alpha_coherence",
+      "stimulus_hz": 10.0,
+      "measured_info_uplift_fraction": 0.022,
+      "reference": "Travis_2009_TM_alpha_coherence",
+      "condition": "transcendental_meditation"
+    },
+    {
+      "name": "harmonic_alpha_theta_border",
+      "symbolic": "metatron_second_harmonic",
+      "stimulus_hz": 15.69,
+      "measured_info_uplift_fraction": 0.095,
+      "reference": "FSOT_harmonic_f1_microtubule_sideband",
+      "condition": "alpha_theta_border_entrainment"
+    },
+    {
+      "name": "openneuro_eeg_meditation_cohort",
+      "symbolic": "collective_meditation_EEG",
+      "stimulus_hz": 10.5,
+      "measured_info_uplift_fraction": 0.028,
+      "reference": "OpenNeuro_ds001787_meditation_EEG_meta",
+      "condition": "group_meditation_EEG"
+    },
+    {
+      "name": "focused_ultrasound_neuromodulation",
+      "symbolic": "mechanical_valve_opening",
+      "stimulus_hz": 40.0,
+      "effective_neural_hz": 40.0,
+      "measured_info_uplift_fraction": 0.093,
+      "reference": "FDA_trials_LIPUS_gamma_range_neuromodulation",
+      "condition": "transcranial_ultrasound_therapy"
+    },
+    {
+      "name": "pemf_oncology_adjunct",
+      "symbolic": "electromagnetic_harmonic_healing",
+      "stimulus_hz": 7.8,
+      "measured_info_uplift_fraction": 0.041,
+      "reference": "PEMF_FDA_cleared_tissue_repair_meta",
+      "condition": "pulsed_electromagnetic_field_therapy"
+    },
+    {
+      "name": "active_cognition_pet",
+      "symbolic": "attention_observer_load",
+      "stimulus_hz": 0.0,
+      "measured_info_uplift_fraction": 0.15,
+      "reference": "Raichle_2001_cognitive_task_PET",
+      "condition": "metabolic_attention_uplift",
+      "note": "metabolic_not_pure_resonance_cross_check"
+    }
+  ]
+}
