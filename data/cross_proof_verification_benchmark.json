@@ -1,0 +1,368 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T20:51:32.979020+00:00",
+  "domain": "Cross_Proof_Verification_Spine",
+  "tier": 79,
+  "obligation_count": 24,
+  "python_decimal_passed": 24,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "frameworks": {
+    "lean": {
+      "status": "passed"
+    },
+    "python_decimal": {
+      "status": "passed",
+      "records": [
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_psi_friction_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.082300635102"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_psi_node_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.059407798774"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_tunneling_bridge_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.053926299704"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_psi_stabilization_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 2.386649570184"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_psi_run_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.14178559741"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_delta_phi_stable_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.004581413686"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_y_exotic_byproduct_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.011637689406"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_actuation_core_bundle",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.082300635102"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_stabilization_margin_gt_one",
+          "kind": "gt_one",
+          "passed": true,
+          "statement": "1 < 1.722776467449"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_stable_run_band",
+          "kind": "gt_one",
+          "passed": true,
+          "statement": "1 < 1.722776467449"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_actuation_stabilized_bundle",
+          "kind": "gt_one",
+          "passed": true,
+          "statement": "1 < 1.722776467449"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_bridge_lt_node",
+          "kind": "lt",
+          "passed": true,
+          "statement": "0.053926299704 < 0.059407798774"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "warp_exotic_lt_friction",
+          "kind": "lt",
+          "passed": true,
+          "statement": "0.011637689406 < 0.082300635102"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "connective_plasma_confinement_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.131181176323"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "connective_seawater_acoustic_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.094115088176"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "connective_decay_chain_relay_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.029710640768"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "connective_dt_energy_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 17.6"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "connective_fusion_grid_bundle",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.131181176323"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "connective_energy_bus_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 6.5226644e-05"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "connective_cryo_rejection_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.040494897615"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "connective_em_coil_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.076350367522"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "connective_fluid_consistency_pos",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 0.075670330033"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "connective_e10d_wd_bundle",
+          "kind": "pos",
+          "passed": true,
+          "statement": "0 < 6.5226644e-05"
+        },
+        {
+          "framework": "python_decimal",
+          "obligation_id": "connective_stab_margin_gt_one",
+          "kind": "gt_one",
+          "passed": true,
+          "statement": "1 < 1.722776467449"
+        }
+      ]
+    },
+    "coq": {
+      "status": "skipped",
+      "reason": "coqc/rocqc not on PATH \u2014 install: winget install Coq.CoqPlatform"
+    },
+    "isabelle": {
+      "status": "skipped",
+      "reason": "isabelle not found \u2014 free install: https://isabelle.in.tum.de/ (no login)"
+    }
+  },
+  "overall_ok": true,
+  "github_ready": false,
+  "records": [
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_psi_friction_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.082300635102"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_psi_node_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.059407798774"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_tunneling_bridge_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.053926299704"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_psi_stabilization_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 2.386649570184"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_psi_run_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.14178559741"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_delta_phi_stable_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.004581413686"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_y_exotic_byproduct_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.011637689406"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_actuation_core_bundle",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.082300635102"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_stabilization_margin_gt_one",
+      "kind": "gt_one",
+      "passed": true,
+      "statement": "1 < 1.722776467449"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_stable_run_band",
+      "kind": "gt_one",
+      "passed": true,
+      "statement": "1 < 1.722776467449"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_actuation_stabilized_bundle",
+      "kind": "gt_one",
+      "passed": true,
+      "statement": "1 < 1.722776467449"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_bridge_lt_node",
+      "kind": "lt",
+      "passed": true,
+      "statement": "0.053926299704 < 0.059407798774"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "warp_exotic_lt_friction",
+      "kind": "lt",
+      "passed": true,
+      "statement": "0.011637689406 < 0.082300635102"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "connective_plasma_confinement_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.131181176323"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "connective_seawater_acoustic_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.094115088176"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "connective_decay_chain_relay_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.029710640768"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "connective_dt_energy_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 17.6"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "connective_fusion_grid_bundle",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.131181176323"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "connective_energy_bus_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 6.5226644e-05"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "connective_cryo_rejection_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.040494897615"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "connective_em_coil_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.076350367522"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "connective_fluid_consistency_pos",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 0.075670330033"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "connective_e10d_wd_bundle",
+      "kind": "pos",
+      "passed": true,
+      "statement": "0 < 6.5226644e-05"
+    },
+    {
+      "framework": "python_decimal",
+      "obligation_id": "connective_stab_margin_gt_one",
+      "kind": "gt_one",
+      "passed": true,
+      "statement": "1 < 1.722776467449"
+    }
+  ]
+}

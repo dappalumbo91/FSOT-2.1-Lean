@@ -1,0 +1,51 @@
+# Tier 79 — Multi-framework cross-proof verification (Lean → Coq / Isabelle / Python oracle)
+version: '1.0'
+updated: '2026-07-10'
+tier: 79
+
+philosophy: >
+  Same pattern as rust_lean_bridge: export obligations from Lean authority,
+  re-prove in independent proof assistants. No accounts or cloud gatekeeping required.
+
+frameworks:
+  lean:
+    role: primary_authority
+    modules:
+      - FSOT.Formal.WarpActuationDevelopmentPriors
+      - FSOT.Formal.FusionGridConnectivePriors
+      - FSOT.Formal.E10dWdConnectivePriors
+  python_oracle:
+    role: decimal_structural_check
+    authority: vendor/fsot_compute.py
+    script: scripts/run_cross_proof_verification.py
+  coq:
+    role: independent_reproof
+    path: verification/coq
+    entry: ConnectiveSpine.v
+    install: winget install Coq.CoqPlatform
+    cost: free
+    account_required: false
+  isabelle:
+    role: independent_reproof
+    path: verification/isabelle
+    entry: ConnectiveSpine.thy
+    install: https://isabelle.in.tum.de/ (Windows installer, no login)
+    cost: free
+    account_required: false
+
+disk_budget_gb:
+  coq_platform: 4
+  isabelle: 5
+  verification_tree: 0.05
+  note: '~225 GB free on C: — comfortable for both tools'
+
+build:
+  export: scripts/export_cross_proof_obligations.py
+  verify: scripts/run_cross_proof_verification.py
+  benchmark: scripts/build_cross_proof_benchmark.py
+  output: data/cross_proof_verification_benchmark.json
+
+github_promote_when:
+  - python_oracle_pass
+  - lean_literals_match_obligations
+  - coq_compile_pass_or_skipped_documented

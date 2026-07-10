@@ -1,0 +1,237 @@
+{
+  "generated_at": "2026-07-10T20:51:05.938113+00:00",
+  "version": "1.0",
+  "tier": 79,
+  "obligation_count": 24,
+  "lean_sources": [
+    "WarpActuationDevelopmentPriors.lean",
+    "FusionGridConnectivePriors.lean",
+    "E10dWdConnectivePriors.lean"
+  ],
+  "definitions": {
+    "WarpActuationDevelopmentPriors.lean": {
+      "warp_psi_friction": 0.082300635102,
+      "warp_psi_node_actuation": 0.059407798774,
+      "warp_delta_phi_fluid": 0.004581413686,
+      "warp_psi_tunneling_bridge": 0.053926299704,
+      "warp_y_exotic_byproduct": 0.011637689406,
+      "warp_psi_stabilization": 2.386649570184,
+      "warp_psi_run_sustained": 0.14178559741,
+      "warp_stabilization_margin": 1.722776467449,
+      "warp_delta_phi_stable": 0.004581413686
+    },
+    "FusionGridConnectivePriors.lean": {
+      "connective_plasma_confinement_coupling": 0.131181176323,
+      "connective_seawater_plasma_acoustic": 0.094115088176,
+      "connective_fusion_decay_chain_relay": 0.029710640768,
+      "connective_dt_fusion_energy_mev": 17.6,
+      "connective_lawson_triple_product_relay": 1.2078658957280072e+19,
+      "connective_iter_q_public_anchor": 10.0
+    },
+    "E10dWdConnectivePriors.lean": {
+      "connective_qveh_warp_energy_bus": 6.5226644e-05,
+      "connective_cryo_thermal_rejection": 0.040494897615,
+      "connective_em_coil_actuation": 0.076350367522,
+      "connective_fluid_spacetime_consistency": 0.075670330033,
+      "connective_warp_stabilization_margin": 1.722776467449
+    }
+  },
+  "obligations": [
+    {
+      "id": "warp_psi_friction_pos",
+      "kind": "pos",
+      "symbol": "warp_psi_friction",
+      "value": 0.082300635102,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "0 < 0.082300635102"
+    },
+    {
+      "id": "warp_psi_node_pos",
+      "kind": "pos",
+      "symbol": "warp_psi_node_actuation",
+      "value": 0.059407798774,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "0 < 0.059407798774"
+    },
+    {
+      "id": "warp_tunneling_bridge_pos",
+      "kind": "pos",
+      "symbol": "warp_psi_tunneling_bridge",
+      "value": 0.053926299704,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "0 < 0.053926299704"
+    },
+    {
+      "id": "warp_psi_stabilization_pos",
+      "kind": "pos",
+      "symbol": "warp_psi_stabilization",
+      "value": 2.386649570184,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "0 < 2.386649570184"
+    },
+    {
+      "id": "warp_psi_run_pos",
+      "kind": "pos",
+      "symbol": "warp_psi_run_sustained",
+      "value": 0.14178559741,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "0 < 0.14178559741"
+    },
+    {
+      "id": "warp_delta_phi_stable_pos",
+      "kind": "pos",
+      "symbol": "warp_delta_phi_stable",
+      "value": 0.004581413686,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "0 < 0.004581413686"
+    },
+    {
+      "id": "warp_y_exotic_byproduct_pos",
+      "kind": "pos",
+      "symbol": "warp_y_exotic_byproduct",
+      "value": 0.011637689406,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "0 < 0.011637689406"
+    },
+    {
+      "id": "warp_actuation_core_bundle",
+      "kind": "pos",
+      "symbol": "warp_psi_friction",
+      "value": 0.082300635102,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "0 < 0.082300635102"
+    },
+    {
+      "id": "warp_stabilization_margin_gt_one",
+      "kind": "gt_one",
+      "symbol": "warp_stabilization_margin",
+      "value": 1.722776467449,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "1 < 1.722776467449"
+    },
+    {
+      "id": "warp_stable_run_band",
+      "kind": "gt_one",
+      "symbol": "warp_stabilization_margin",
+      "value": 1.722776467449,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "1 < 1.722776467449"
+    },
+    {
+      "id": "warp_actuation_stabilized_bundle",
+      "kind": "gt_one",
+      "symbol": "warp_stabilization_margin",
+      "value": 1.722776467449,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "1 < 1.722776467449"
+    },
+    {
+      "id": "warp_bridge_lt_node",
+      "kind": "lt",
+      "left": "warp_psi_tunneling_bridge",
+      "right": "warp_psi_node_actuation",
+      "left_value": 0.053926299704,
+      "right_value": 0.059407798774,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "0.053926299704 < 0.059407798774"
+    },
+    {
+      "id": "warp_exotic_lt_friction",
+      "kind": "lt",
+      "left": "warp_y_exotic_byproduct",
+      "right": "warp_psi_friction",
+      "left_value": 0.011637689406,
+      "right_value": 0.082300635102,
+      "lean_module": "WarpActuationDevelopmentPriors",
+      "statement": "0.011637689406 < 0.082300635102"
+    },
+    {
+      "id": "connective_plasma_confinement_pos",
+      "kind": "pos",
+      "symbol": "connective_plasma_confinement_coupling",
+      "value": 0.131181176323,
+      "lean_module": "FusionGridConnectivePriors",
+      "statement": "0 < 0.131181176323"
+    },
+    {
+      "id": "connective_seawater_acoustic_pos",
+      "kind": "pos",
+      "symbol": "connective_seawater_plasma_acoustic",
+      "value": 0.094115088176,
+      "lean_module": "FusionGridConnectivePriors",
+      "statement": "0 < 0.094115088176"
+    },
+    {
+      "id": "connective_decay_chain_relay_pos",
+      "kind": "pos",
+      "symbol": "connective_fusion_decay_chain_relay",
+      "value": 0.029710640768,
+      "lean_module": "FusionGridConnectivePriors",
+      "statement": "0 < 0.029710640768"
+    },
+    {
+      "id": "connective_dt_energy_pos",
+      "kind": "pos",
+      "symbol": "connective_dt_fusion_energy_mev",
+      "value": 17.6,
+      "lean_module": "FusionGridConnectivePriors",
+      "statement": "0 < 17.6"
+    },
+    {
+      "id": "connective_fusion_grid_bundle",
+      "kind": "pos",
+      "symbol": "connective_plasma_confinement_coupling",
+      "value": 0.131181176323,
+      "lean_module": "FusionGridConnectivePriors",
+      "statement": "0 < 0.131181176323"
+    },
+    {
+      "id": "connective_energy_bus_pos",
+      "kind": "pos",
+      "symbol": "connective_qveh_warp_energy_bus",
+      "value": 6.5226644e-05,
+      "lean_module": "E10dWdConnectivePriors",
+      "statement": "0 < 6.5226644e-05"
+    },
+    {
+      "id": "connective_cryo_rejection_pos",
+      "kind": "pos",
+      "symbol": "connective_cryo_thermal_rejection",
+      "value": 0.040494897615,
+      "lean_module": "E10dWdConnectivePriors",
+      "statement": "0 < 0.040494897615"
+    },
+    {
+      "id": "connective_em_coil_pos",
+      "kind": "pos",
+      "symbol": "connective_em_coil_actuation",
+      "value": 0.076350367522,
+      "lean_module": "E10dWdConnectivePriors",
+      "statement": "0 < 0.076350367522"
+    },
+    {
+      "id": "connective_fluid_consistency_pos",
+      "kind": "pos",
+      "symbol": "connective_fluid_spacetime_consistency",
+      "value": 0.075670330033,
+      "lean_module": "E10dWdConnectivePriors",
+      "statement": "0 < 0.075670330033"
+    },
+    {
+      "id": "connective_e10d_wd_bundle",
+      "kind": "pos",
+      "symbol": "connective_qveh_warp_energy_bus",
+      "value": 6.5226644e-05,
+      "lean_module": "E10dWdConnectivePriors",
+      "statement": "0 < 6.5226644e-05"
+    },
+    {
+      "id": "connective_stab_margin_gt_one",
+      "kind": "gt_one",
+      "symbol": "connective_warp_stabilization_margin",
+      "value": 1.722776467449,
+      "lean_module": "E10dWdConnectivePriors",
+      "statement": "1 < 1.722776467449"
+    }
+  ]
+}
