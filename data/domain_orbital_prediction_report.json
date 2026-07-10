@@ -27,83 +27,83 @@
   "orbital_hubs": [
     [
       "Zero_Day_Risk_Evaluator",
-      123
+      133
+    ],
+    [
+      "Domain_Orbital_Predictions",
+      132
     ],
     [
       "Domain_Coupling_Simulation",
-      113
-    ],
-    [
-      "Theory_Completeness_Spine",
-      113
+      128
     ],
     [
       "ToE_Gap_Closure_Spine",
-      113
+      125
     ],
     [
-      "External_OSS_Code_Genome",
-      103
+      "Theory_Completeness_Spine",
+      124
     ],
     [
       "Mechanistic_Coupling",
-      98
+      111
+    ],
+    [
+      "External_OSS_Code_Genome",
+      109
+    ],
+    [
+      "Sports_Biomechanics",
+      100
     ],
     [
       "Computational_Reasoning",
-      93
+      100
     ],
     [
       "Trinary_OS_Portable",
-      93
+      100
     ],
     [
       "Trinary_OS_ISA_Rebuild",
-      93
+      100
     ],
     [
       "Trinary_OS_Round_Trip",
-      93
+      100
     ],
     [
       "Tokenization_Smoke",
-      93
+      100
     ],
     [
       "Trinary_Hardware_Motif",
-      93
+      100
     ],
     [
       "Intrinsic_LLM_Validators",
-      93
+      100
     ],
     [
       "Arxiv_Primitives_V14",
-      93
+      100
     ],
     [
       "Binary_Decoder_Rendlesham",
-      93
+      100
     ],
     [
       "Certified_Agent_Qwen",
-      93
+      100
     ],
     [
       "Omni_Theory_Genesis",
-      93
+      100
     ],
     [
       "VL_Distill_Atlas",
-      93
-    ],
-    [
-      "Rust_Lean_Bridge",
-      93
-    ],
-    [
-      "Trinary_OS_Tier_E",
-      93
+      100
     ]
   ],
   "lean_tag_mass": {
@@ -138,9 +138,10 @@
   },
   "mechanistic_gaps_in_hubs": [
     "Domain_Coupling_Simulation",
-    "Theory_Completeness_Spine",
     "ToE_Gap_Closure_Spine",
+    "Theory_Completeness_Spine",
     "Mechanistic_Coupling",
+    "Sports_Biomechanics",
     "Computational_Reasoning",
     "Trinary_OS_Portable",
     "Trinary_OS_ISA_Rebuild",
@@ -155,10 +156,9 @@
     "VL_Distill_Atlas",
     "Trinary_OS_Tier_E",
     "Robotics_Control_Systems",
-    "Sports_Biomechanics",
-    "CVE_Codon_Hole_Falsification",
-    "Adversarial_Fractal_Break_Tests",
-    "Math_Generator_Rules_Eval"
+    "Math_Generator_Rules_Eval",
+    "Math_Generator_Benchmark_Formula_Eval",
+    "Math_Generator_Airfoil_RMSE"
   ],
   "divergence_frontier": [
     [
@@ -330,6 +330,7 @@
   "predicted_new_domains": [
     {
       "predicted_domain": "Acoustic_Resonance_Materials",
+      "prediction_class": "physics_frontier",
       "lean_tags": [
         "particle",
         "material",
@@ -341,6 +342,7 @@
     },
     {
       "predicted_domain": "Chaos_Mediated_Phase_Transitions",
+      "prediction_class": "physics_frontier",
       "lean_tags": [
         "particle",
         "energy",
@@ -352,6 +354,7 @@
     },
     {
       "predicted_domain": "Phi_Morphogenetic_Scaling",
+      "prediction_class": "physics_frontier",
       "lean_tags": [
         "biological",
         "mathematical",
@@ -363,6 +366,7 @@
     },
     {
       "predicted_domain": "Proof_Carrying_Code_Genome",
+      "prediction_class": "tag_cluster_bridge",
       "lean_tags": [
         "ai",
         "consciousness",
@@ -374,6 +378,7 @@
     },
     {
       "predicted_domain": "Ionospheric_Chemistry_Coupling",
+      "prediction_class": "physics_frontier",
       "lean_tags": [
         "electron",
         "chemical",

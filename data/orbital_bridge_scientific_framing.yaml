@@ -1,0 +1,72 @@
+# Scientific framing for FSOT orbital bridges — read before interpreting tag-pair domain names.
+version: "1.0"
+updated: "2026-07-10"
+
+what_orbital_bridges_are:
+  summary: >
+    Orbital bridges are tag-cluster mediation domains in the FSOT extension registry.
+    They do NOT assert that two scientific fields physically interact at the same scale
+    (e.g. clinical medicine does not causally couple to galactic dynamics).
+  mechanism: >
+    When many certified extension domains carry lean tag A and many carry tag B,
+    but no domain carries both tags, the coupling graph has a topological gap.
+    A bridge domain closes that gap by measuring FSOT scalar coherence between
+    representative benchmarks on each side (term1.coherence_efficiency branch).
+  what_is_preserved: scalar_architecture_homology_across_domain_clusters
+  what_is_not_claimed:
+    - cross_scale_physical_causation
+    - unified_field_reduction_of_unrelated_disciplines
+    - metaphor_replacing_mechanism
+
+prediction_classes:
+  physics_frontier:
+    description: >
+      Corpus- or cluster-driven gaps where a formula branch (e.g. term3.acoustic_bleed)
+      is under-represented in extensions despite high strict-empirical mass.
+    examples:
+      - Acoustic_Resonance_Materials
+      - Ionospheric_Chemistry_Coupling
+      - Phi_Morphogenetic_Scaling
+    reviewer_framing: "Predicted domain from formula-spine statistics + external data anchors."
+
+  tag_cluster_bridge:
+    description: >
+      Graph-theoretic closure between high-mass lean-tag clusters in the extension registry.
+      Names like medical_galactic reflect formal tag overlap topology, not literal
+      medical-astronomy physics.
+    examples:
+      - Energy_AI_Orbital_Bridge
+      - Consciousness_Galactic_Orbital_Bridge
+      - medical_galactic_Orbital_Bridge  # predicted, not yet filled
+    reviewer_framing: >
+      Tag-cluster coherence mediator. Galactic tag here indexes planetary/climate/cosmology
+      extension domains; medical tag indexes biochemistry/immunology/oncology extensions.
+
+lean_tag_semantics:
+  galactic: >
+    Formal tag for planetary-scale, climate, and cosmology extension clusters —
+    not a claim that all tagged domains study galaxies.
+  medical: >
+    Formal tag for biochemical, immunological, and clinical extension clusters —
+    maps from Biochemistry in fsot_compute, not bedside-to-cosmos coupling.
+  consciousness: >
+    Observer-channel and symbolic-information cluster tag — psychology, AI, formal reasoning.
+  ai: >
+    Computation and symbolic-systems cluster tag.
+
+partial_bridges_tier_47:
+  status: intentionally_deferred
+  domains:
+    - medical_galactic_Orbital_Bridge
+    - ai_galactic_Orbital_Bridge
+    - neural_galactic_Orbital_Bridge
+  rationale: >
+    Medium-confidence tag-cluster bridges. Deferred until thesis-facing rename pass
+    (e.g. TagCluster_Medical_PlanetaryScale_Mediator) so public naming matches
+    graph-theoretic semantics and avoids reviewer misread.
+
+thesis_guidance:
+  - Lead physics frontiers with corpus branch histograms and measured benchmarks.
+  - Present tag bridges in a separate "coupling graph topology" section.
+  - State explicitly: bridges certify scalar coherence across clusters, not new physics at arbitrary scale crossings.
+  - Future rename pass: internal Lean IDs stable; display names and manifest notes updated for publication.

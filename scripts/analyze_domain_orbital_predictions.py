@@ -76,8 +76,13 @@ def main() -> int:
                 predictions.append(
                     {
                         "predicted_domain": f"{t1}_{t2}_Orbital_Bridge",
+                        "prediction_class": "tag_cluster_bridge",
                         "lean_tags": [t1, t2],
                         "rationale": f"High orbital mass ({len(d1)}, {len(d2)} domains) but no dedicated bridge domain",
+                        "scientific_framing": (
+                            "Tag-cluster graph closure — scalar coherence between extension clusters, "
+                            "not cross-scale physical causation. See orbital_bridge_scientific_framing.yaml."
+                        ),
                         "formula_branch_guess": "term1.coherence_efficiency",
                         "confidence": "medium",
                     }
@@ -91,6 +96,7 @@ def main() -> int:
         predictions.append(
             {
                 "predicted_domain": "Acoustic_Resonance_Materials",
+                "prediction_class": "physics_frontier",
                 "lean_tags": ["particle", "material", "energy"],
                 "rationale": f"Corpus has {term3_corpus} term3.acoustic_bleed formulas but only {term3_ext} extension domains on term3 branch",
                 "formula_branch_guess": "term3.acoustic_bleed",
@@ -100,6 +106,7 @@ def main() -> int:
         predictions.append(
             {
                 "predicted_domain": "Chaos_Mediated_Phase_Transitions",
+                "prediction_class": "physics_frontier",
                 "lean_tags": ["particle", "energy", "fusion"],
                 "rationale": "term3.chaos_factor dominates high-D_eff physics but lacks dedicated extension cluster",
                 "formula_branch_guess": "term3.chaos_factor",
@@ -111,6 +118,7 @@ def main() -> int:
     predictions.append(
         {
             "predicted_domain": "Phi_Morphogenetic_Scaling",
+            "prediction_class": "physics_frontier",
             "lean_tags": ["biological", "mathematical", "medical"],
             "rationale": "phi appears 3276x in strict corpus — highest constant; under-mapped to dedicated morphogenesis domain",
             "formula_branch_guess": "term1.term1_base",
@@ -122,6 +130,7 @@ def main() -> int:
     predictions.append(
         {
             "predicted_domain": "Proof_Carrying_Code_Genome",
+            "prediction_class": "tag_cluster_bridge",
             "lean_tags": ["ai", "consciousness", "mathematical"],
             "rationale": "OSS affinity clusters (cpython↔pytorch, go↔k8s) imply runtime-proof coupling not yet a domain",
             "formula_branch_guess": "term1.perceived_adjust",
@@ -135,6 +144,7 @@ def main() -> int:
         predictions.append(
             {
                 "predicted_domain": "Ionospheric_Chemistry_Coupling",
+                "prediction_class": "physics_frontier",
                 "lean_tags": ["electron", "chemical", "energy"],
                 "rationale": f"Magnetosphere orbital cluster ({len(mag_cluster)} domains) lacks ionospheric chemistry bridge",
                 "formula_branch_guess": "term3.acoustic_inflow",
