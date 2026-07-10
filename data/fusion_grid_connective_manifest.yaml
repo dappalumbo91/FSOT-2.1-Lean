@@ -1,0 +1,33 @@
+# Legacy tech connective promotion — NeutriFusion + SPFR
+# Physics/math only; reactor build paths stay in FSOT-Legacy-Physics-Connections (local)
+version: '1.0'
+generated_at: '2026-07-10'
+tier: legacy_connective
+classification: connective_only
+
+designs:
+  - design_id: neutrifusion-reactor
+    display_name: NeutriFusion Reactor (NFNB)
+    github_promote: connective_scalars_only
+  - design_id: seawater-plasma-fusion-reactor-spfr
+    display_name: Seawater Plasma Fusion Reactor (SPFR)
+    github_promote: connective_scalars_only
+
+lean_module: FSOT.Formal.FusionGridConnectivePriors
+legacy_bench: fusion_grid_bench_results.json
+prereg_links: [PRED-018, PRED-019, PRED-021]
+
+connective_scalars:
+  - plasma_confinement_coupling_scalar
+  - seawater_plasma_acoustic_scalar
+  - fusion_decay_chain_relay
+  - dt_fusion_energy_relay_mev
+  - lawson_triple_product_relay_m3_kev_s
+
+never_promote:
+  - reactor_geometry
+  - em_coil_layers
+  - grid_deployment_594_units
+  - spfr_accelerator_geometry
+  - q30_production_claim
+  - 751_gw_grid_claim
