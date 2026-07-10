@@ -1,0 +1,238 @@
+# FSOT 2.1 — external API and data requirements for full reproducibility.
+# Portable clone-and-verify works WITHOUT these (uses vendor/ + data/ caches).
+# Full rebuild from live sources requires network + optional API keys below.
+version: "1.0"
+updated: "2026-07-10"
+repo: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
+
+software_requirements:
+  lean:
+    toolchain: leanprover/lean4:v4.31.0
+    mathlib_pin: v4.31.0
+    install: "curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh"
+    verify: "lake build"
+  python:
+    min_version: "3.10"
+    packages:
+      required:
+        - PyYAML
+      optional:
+        - requests
+    install: "pip install PyYAML"
+
+environment_variables:
+  core:
+    FSOT_COMPUTE_PATH: "Override canonical oracle (default vendor/fsot_compute.py)"
+    FSOT_PORTABLE_MODE: "Set 1 for portable paths (no Desktop mirrors)"
+    FSOT_EXTERNAL_DATA_ROOT: "Root for large external caches (default G:/FSOT-PublicData or vendor/public_data/cache)"
+  lab_mirrors:
+    FSOT_NEUROLAB_ROOT: "NeuroLab Julia mirror (optional; vendor/neurolab bundled)"
+    FSOT_NEURON_COHORT_ROOT: "Allen cells.json mirror (optional; vendor/neuron_cohort bundled)"
+    FSOT_SMILES_DATASET: "SMILES lab JSON override"
+    FSOT_SYMBOLIC_GRAPH_PATH: "Override mythology graph for Tier 51 archetype panel"
+
+api_sources:
+  tier38_public_apis:
+    description: "Tier 38 — no API keys required; rate-limit politely"
+    ingest: scripts/ingest_tier38_public_data.py
+    build: scripts/build_tier38_public_data_benchmarks.py
+    sources:
+      - id: nist_codata
+        url: https://physics.nist.gov/cuu/Constants/Table/allascii.txt
+        auth: none
+        rate_limit: low
+      - id: gbif
+        url: https://api.gbif.org/v1/occurrence/search
+        auth: none
+        rate_limit: moderate
+        note: "Use --deep for expanded cohorts"
+      - id: noaa_tides
+        url: https://api.tidesandcurrents.noaa.gov/api/prod/datagetter
+        auth: none
+        rate_limit: moderate
+      - id: world_bank
+        url: https://api.worldbank.org/v2/country/{iso}/indicator/{id}
+        auth: none
+        rate_limit: moderate
+      - id: nasa_exoplanet
+        url: https://exoplanetarchive.ipac.caltech.edu/TAP/sync
+        auth: none
+        rate_limit: moderate
+        query_language: ADQL
+      - id: rcsb_pdb
+        url: https://data.rcsb.org/rest/v1/core/entry/{pdb_id}
+        auth: none
+        rate_limit: moderate
+      - id: openalex
+        url: https://api.openalex.org/works
+        auth: none
+        rate_limit: moderate
+        note: "mailto= parameter recommended by OpenAlex policy"
+      - id: pubchem
+        url: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/property/MolecularWeight,CanonicalSMILES/JSON
+        auth: none
+        rate_limit: moderate
+      - id: cern_opendata
+        url: https://opendata.cern.ch/api/records/
+        auth: none
+        rate_limit: low
+      - id: uniprot
+        url: https://rest.uniprot.org/uniprotkb/{accession}.json
+        auth: none
+        rate_limit: moderate
+
+  geophysics_space_weather:
+    description: "Space weather, seismology, hydrology — public government APIs"
+    sources:
+      - id: jpl_horizons
+        url: https://ssd.jpl.nasa.gov/api/horizons.api
+        auth: none
+        ingest: scripts/ingest_planetary_jpl.py
+        used_by: [Planetary_Structure, Orbital_Mechanics, Small_Body_Orbits]
+      - id: gfz_kp
+        url: https://www.gfz.de/en/sections/geomagnetism/data-products-and-services/indices/kp-index
+        auth: none
+        note: "Bundled summary in data/space_weather_summary_benchmark.json; full arc on external cache"
+        ingest: scripts/ingest_space_weather_gfz.py
+      - id: kyoto_dst
+        url: https://www.ngdc.noaa.gov/stp/space-weather/geomagnetic-data/INDICES/DST/
+        auth: none
+        ingest: scripts/ingest_kyoto_dst.py
+      - id: swpc_geomagnetism
+        ingest: scripts/ingest_geomagnetism_swpc.py
+        auth: none
+      - id: usgs_earthquakes
+        url: https://earthquake.usgs.gov/fdsnws/event/1/query
+        auth: none
+        ingest: scripts/ingest_seismology_usgs.py
+      - id: usgs_hydrology
+        ingest: scripts/ingest_hydrology_usgs.py
+        auth: none
+      - id: ncei_climate
+        url: https://www.ncei.noaa.gov/cdo-web/api/v2/data
+        auth: "API token via NCEI registration (optional for rebuild)"
+        env: NCEI_TOKEN
+        ingest: scripts/ingest_climate_ncei_chunked.py
+        note: "Portable verify uses data/climate_observed_benchmark.json"
+
+  biology_genomics:
+    sources:
+      - id: ncbi_gene
+        note: "Biology strict empirical uses bundled vendor/evolution operons"
+      - id: igem_parts
+        url: https://parts.igem.org/fasta/parts/{part_id}
+        auth: none
+        rate_limit: moderate
+        ingest: scripts/ingest_igem_parts_registry.py
+        fallback: vendor/igem/fastas
+      - id: openneuro
+        url: https://openneuro.org/crn/graphql
+        auth: none
+        ingest: scripts/ingest_anomaly_public_data.py
+      - id: anage
+        url: https://genomics.senescence.info/species/dataset.zip
+        auth: none
+
+  tier_f_gaps:
+    description: "Tier F science-gap extensions"
+    external_cache: G:/FSOT-PublicData/tier_f_gaps
+    sources:
+      - id: paleobiodb
+        url: https://paleobiodb.org/data1.2/occs/list.json
+        auth: none
+      - id: obis
+        url: https://api.obis.org/v3/occurrence
+        auth: none
+      - id: gbif_tier_f
+        url: https://api.gbif.org/v1/occurrence/search
+        auth: none
+
+  cybersecurity:
+    sources:
+      - id: malwarebazaar
+        url: https://bazaar.abuse.ch/export/csv/recent/
+        auth: none
+        ingest: scripts/ingest_cybersecurity_public_data.py
+      - id: cisa_kev
+        url: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+        auth: none
+
+  astrophysics_catalogs:
+    description: "Tier 52+ roadmap — public catalogs for stellar/planetary/galactic structures"
+    sources:
+      - id: simbad_tap
+        url: http://simbad.cds.unistra.fr/simbad/sim-tap/sync
+        auth: none
+        query_language: ADQL
+        status: roadmap
+        note: "Binary/trinary multiplicity queries"
+      - id: vizier_wds
+        url: https://cdsarc.cds.unistra.fr/viz-bin/votable
+        auth: none
+        status: roadmap
+        catalog: "Washington Double Star Catalog"
+      - id: gwosc
+        url: https://www.gw-openscience.org/eventapi/json/
+        auth: none
+        status: roadmap
+        note: "Public LIGO/Virgo/KAGRA events — verification only, not novel predictions"
+      - id: nasa_exoplanet_tap
+        url: https://exoplanetarchive.ipac.caltech.edu/TAP/sync
+        auth: none
+        status: active
+        ingest: scripts/ingest_cross_scale_bridge_cache.py
+
+  misc:
+    sources:
+      - id: open_meteo
+        url: https://archive-api.open-meteo.com/v1/archive
+        auth: none
+      - id: chime_frb
+        urls:
+          - https://www.chime-frb.ca/catalog/CHIME_FRB_catalog.csv
+          - https://cdsarc.cds.unistra.fr/ftp/cats/J/ApJS/257/59/chimefrb.dat
+        auth: none
+      - id: sh0es_github
+        url: https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/main
+        auth: none
+      - id: github_raw_oss
+        pattern: "https://raw.githubusercontent.com/{owner}/{repo}/{ref}/{path}"
+        auth: "Optional GITHUB_TOKEN for rate limits"
+        ingest: scripts/ingest_github_oss_code_genome.py
+
+rebuild_pipeline:
+  portable_verify:
+    - "lake build"
+    - "python scripts/fsot_verification_runner.py --portable"
+    - "python scripts/verify_extension_domains.py"
+  full_lean_regeneration:
+    - "python scripts/rebuild_all_lean.py"
+    - "lake build"
+    - "python scripts/export_certificate.py --lean-ok"
+  full_data_rebuild:
+    note: "Author machine or CI with FSOT_EXTERNAL_DATA_ROOT set"
+    ordered:
+      - "python scripts/sync_canonical_constants.py"
+      - "python scripts/ingest_tier38_public_data.py"
+      - "python scripts/ingest_planetary_jpl.py"
+      - "python scripts/build_*_benchmark.py  # per domain"
+      - "python scripts/rebuild_all_lean.py"
+      - "python scripts/build_fsot_verification_progress.py"
+
+bundled_without_network:
+  description: "These ship in-repo; clones verify without any API calls"
+  paths:
+    - vendor/fsot_compute.py
+    - vendor/formula_corpus/by_domain/strict_empirical.jsonl
+    - vendor/public_data/
+    - vendor/stellar_structures/
+    - data/*_benchmark.json
+    - FSOT/Formal/*.lean
+
+proprietary_boundary:
+  description: >
+    Novel material, fuel, and undisclosed formula predictions are NOT exported in
+    public benchmarks. Expansion tiers use published catalog observables only until
+    preregistered in data/preregistered_predictions_manifest.yaml.
+  preregistration: data/preregistered_predictions_manifest.yaml
+  roadmap: data/expansion_roadmap.yaml

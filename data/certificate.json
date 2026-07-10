@@ -1,9 +1,9 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T15:00:17.121456+00:00",
+  "generated_at": "2026-07-10T18:06:50.084793+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
-  "lean_build_ok": true,
+  "lean_build_ok": false,
   "lean_targets": [
     "FSOT.Formal.Bounds",
     "FSOT.Formal.Scalar",
@@ -11,92 +11,228 @@
     "FSOT.Formal.Cosmology",
     "FSOT.Formal.Domains",
     "FSOT.Formal.Genomic",
-    "FSOT.Formal.BrainPriors",
-    "FSOT.Formal.CodonPriors",
-    "FSOT.Formal.ProteinPriors",
-    "FSOT.Formal.ProteinFormulas",
     "FSOT.Formal.CosmologyLab",
-    "FSOT.Formal.FuelPriors",
-    "FSOT.Formal.SpeciesPriors",
-    "FSOT.Formal.CameoPriors",
-    "FSOT.Formal.TrinaryOSPriors",
-    "FSOT.Formal.PhotonicForge",
-    "FSOT.Formal.VibRegisterPriors",
-    "FSOT.Formal.MagneticStringPriors",
-    "FSOT.Formal.EvolutionPriors",
-    "FSOT.Formal.WeatherPriors",
-    "FSOT.Formal.LinguisticsPriors",
-    "FSOT.Formal.UnifiedDBPriors",
-    "FSOT.Formal.KronosPriors",
-    "FSOT.Formal.KnowledgeBasePriors",
-    "FSOT.Formal.MathGeneratorPriors",
-    "FSOT.Formal.TrinaryFluidPriors",
-    "FSOT.Formal.SoulSiblingPriors",
-    "FSOT.Formal.LeanProofsBridge",
-    "FSOT.Formal.FormulaCorpusPriors",
-    "FSOT.Formal.CellularPriors",
-    "FSOT.Formal.BlackHoleThesisPriors",
-    "FSOT.Formal.NeuronHybridPriors",
-    "FSOT.Formal.NeuronCohortPriors",
-    "FSOT.Formal.NeuronCohortStrataPriors",
+    "FSOT.Formal.Lab",
+    "FSOT",
+    "FSOT.Formal.AcousticResonanceMaterialsPriors",
+    "FSOT.Formal.AdjacentRungCouplingPriors",
+    "FSOT.Formal.AdversarialFractalBreakPriors",
     "FSOT.Formal.AetherPrimePriors",
-    "FSOT.Formal.MagicCirclePriors",
-    "FSOT.Formal.ExperimentSynthesisPriors",
-    "FSOT.Formal.DomainCoveragePriors",
-    "FSOT.Formal.DomainPrecisionPriors",
-    "FSOT.Formal.IntelligenceCompressionPriors",
-    "FSOT.Formal.PlasmaPhysicsPriors",
-    "FSOT.Formal.ImmunologyPriors",
-    "FSOT.Formal.ClimateSciencePriors",
+    "FSOT.Formal.AgricultureAgroecologyGapFillPriors",
+    "FSOT.Formal.AIGalacticOrbitalBridgePriors",
+    "FSOT.Formal.AnthropologyExtensionPriors",
+    "FSOT.Formal.ArchitectureBuildingScienceGapFillPriors",
+    "FSOT.Formal.ArxivPrimitivesV14Priors",
+    "FSOT.Formal.AstrophysicalStructureCrosswalkPriors",
+    "FSOT.Formal.AtmosphericPhysicsGapFillPriors",
+    "FSOT.Formal.AtomicPhysicsGapFillPriors",
+    "FSOT.Formal.BibliographyLeanCorpusPriors",
+    "FSOT.Formal.BinaryDecoderRendleshamPriors",
+    "FSOT.Formal.BiologicalCudaPhysarumPriors",
     "FSOT.Formal.BiologyStrictEmpiricalPriors",
-    "FSOT.Formal.NeuronCohortTrainHoldoutPriors",
-    "FSOT.Formal.ThesisSimulationPriors",
-    "FSOT.Formal.EmergentDomainPriors",
-    "FSOT.Formal.CosmologyExtendedPriors",
+    "FSOT.Formal.BlackHoleThesisPriors",
+    "FSOT.Formal.BotanyExtensionPriors",
+    "FSOT.Formal.BrainPriors",
+    "FSOT.Formal.BreakthroughDiscoveries20242026Priors",
     "FSOT.Formal.BubbleBleedPriors",
-    "FSOT.Formal.ParticlePhysicsPriors",
+    "FSOT.Formal.CameoPriors",
+    "FSOT.Formal.CardiologyExtensionPriors",
+    "FSOT.Formal.CellularPriors",
+    "FSOT.Formal.CernOpenDataLhcPriors",
+    "FSOT.Formal.CertifiedAgentQwenPriors",
+    "FSOT.Formal.ChaosMediatedPhaseTransitionsPriors",
+    "FSOT.Formal.ChemicalEngineeringExtensionPriors",
+    "FSOT.Formal.CivilEngineeringExtensionPriors",
+    "FSOT.Formal.ClimateSciencePriors",
+    "FSOT.Formal.ClinicalMedicineExtensionPriors",
+    "FSOT.Formal.CodeGenomeStructurePriors",
+    "FSOT.Formal.CodonPriors",
+    "FSOT.Formal.CompactificationLadderPriors",
+    "FSOT.Formal.ComputationalReasoningPriors",
+    "FSOT.Formal.ConsciousnessEconPriors",
+    "FSOT.Formal.ConsciousnessGalacticOrbitalBridgePriors",
+    "FSOT.Formal.ConsciousnessSoulBridgePriors",
+    "FSOT.Formal.CosmologyAnomaliesPriors",
+    "FSOT.Formal.CosmologyExtendedPriors",
     "FSOT.Formal.CosmologyHigherWavesPriors",
+    "FSOT.Formal.CosmologyWave10Priors",
+    "FSOT.Formal.CosmologyWave4",
     "FSOT.Formal.CosmologyWave4Priors",
     "FSOT.Formal.CosmologyWave5Priors",
     "FSOT.Formal.CosmologyWave6Priors",
     "FSOT.Formal.CosmologyWave7Priors",
     "FSOT.Formal.CosmologyWave8Priors",
     "FSOT.Formal.CosmologyWave9Priors",
-    "FSOT.Formal.CosmologyWave10Priors",
-    "FSOT.Formal.HiggsBranchingPriors",
-    "FSOT.Formal.SpaceWeatherPriors",
-    "FSOT.Formal.HydrologyPriors",
-    "FSOT.Formal.PharmacologyPriors",
     "FSOT.Formal.CryospherePriors",
-    "FSOT.Formal.SeismologyPriors",
-    "FSOT.Formal.TectonicsPriors",
-    "FSOT.Formal.GeomagnetismPriors",
-    "FSOT.Formal.PlanetaryStructurePriors",
-    "FSOT.Formal.OrbitalMechanicsPriors",
-    "FSOT.Formal.SmallBodyOrbitsPriors",
-    "FSOT.Formal.MagnetospherePriors",
-    "FSOT.Formal.GraceCryospherePriors",
-    "FSOT.Formal.SeismologyDeepPriors",
-    "FSOT.Formal.PlanetaryAtmospheresPriors",
-    "FSOT.Formal.MagnetosphereExtendedPriors",
+    "FSOT.Formal.CryptographyTechnologyPriors",
+    "FSOT.Formal.CulinaryArtsPriors",
+    "FSOT.Formal.CVECodonHoleFalsificationPriors",
+    "FSOT.Formal.DarkEnergyCPLPriors",
+    "FSOT.Formal.DarkSectorOpenProblemsPriors",
+    "FSOT.Formal.DomainCouplingSimulationPriors",
+    "FSOT.Formal.DomainCoveragePriors",
+    "FSOT.Formal.DomainOrbitalPredictionsPriors",
+    "FSOT.Formal.DomainPrecisionPriors",
+    "FSOT.Formal.EcologyGapFillPriors",
+    "FSOT.Formal.EconometricsGapFillPriors",
+    "FSOT.Formal.EconomicsGapFillPriors",
+    "FSOT.Formal.ElectricalPowerSystemsPriors",
+    "FSOT.Formal.EmergentDomainPriors",
+    "FSOT.Formal.EnergyAIOrbitalBridgePriors",
+    "FSOT.Formal.EnergyNeuralOrbitalBridgePriors",
+    "FSOT.Formal.EntomologyExtensionPriors",
+    "FSOT.Formal.EnvironmentalEngineeringExtensionPriors",
+    "FSOT.Formal.EpidemiologyExtensionPriors",
+    "FSOT.Formal.EvolutionPriors",
+    "FSOT.Formal.ExogeologyExtensionPriors",
+    "FSOT.Formal.ExperimentSynthesisPriors",
+    "FSOT.Formal.ExternalOSSCodeGenomePriors",
+    "FSOT.Formal.FinanceMarketsExtensionPriors",
+    "FSOT.Formal.FluidDynamicsGapFillPriors",
+    "FSOT.Formal.FluidPhaseCurrentSpinePriors",
+    "FSOT.Formal.FoldDepthMetricsPriors",
+    "FSOT.Formal.FoodMicrobiologyGapFillPriors",
+    "FSOT.Formal.FormulaBranchingFractalPriors",
+    "FSOT.Formal.FormulaCorpusClosurePriors",
+    "FSOT.Formal.FormulaCorpusCncPriors",
+    "FSOT.Formal.FormulaCorpusPriors",
+    "FSOT.Formal.FPCTemporalCouplingPriors",
+    "FSOT.Formal.FractalConstantRecursionPriors",
+    "FSOT.Formal.FsotAggregateUnifiedDbPriors",
+    "FSOT.Formal.FuelPriors",
+    "FSOT.Formal.GbifSpeciesOccurrencePriors",
     "FSOT.Formal.GeochemistryPriors",
-    "FSOT.Formal.OncologyPriors",
-    "FSOT.Formal.NeuroimmunologyPriors",
-    "FSOT.Formal.SyntheticBiologyPriors",
-    "FSOT.Formal.QuantumMaterialsPriors",
-    "FSOT.Formal.NeuronMultiHeroPriors",
-    "FSOT.Formal.LinguisticsFormalPriors",
-    "FSOT.Formal.MathematicsComputationalPriors",
-    "FSOT.Formal.MaterialsEngineeringPriors",
-    "FSOT.Formal.ComputationalReasoningPriors",
-    "FSOT.Formal.MathGeneratorRulesEvalPriors",
-    "FSOT.Formal.TrinaryOSPortablePriors",
-    "FSOT.Formal.MaterialsSpeciesBridgePriors",
+    "FSOT.Formal.GeologyStratigraphyExtensionPriors",
+    "FSOT.Formal.GeomagnetismPriors",
+    "FSOT.Formal.GraceCryospherePriors",
+    "FSOT.Formal.HiggsBranchingPriors",
+    "FSOT.Formal.HiggsMassPriors",
+    "FSOT.Formal.HistoryExtensionPriors",
+    "FSOT.Formal.HubbleBubbleTensionPriors",
+    "FSOT.Formal.HvacThermalSystemsPriors",
+    "FSOT.Formal.HydrologyPriors",
+    "FSOT.Formal.IGEMLiveFastaPriors",
     "FSOT.Formal.IGEMSyntheticBiologyPriors",
+    "FSOT.Formal.ImmunologyPriors",
+    "FSOT.Formal.IntelligenceCompressionPriors",
+    "FSOT.Formal.IntrinsicLLMValidatorsPriors",
+    "FSOT.Formal.IonosphericChemistryCouplingPriors",
+    "FSOT.Formal.KnowledgeBasePriors",
+    "FSOT.Formal.KronosPriors",
+    "FSOT.Formal.LawPolicyExtensionPriors",
+    "FSOT.Formal.LeanProofsBridge",
+    "FSOT.Formal.LinguisticsFormalPriors",
+    "FSOT.Formal.LinguisticsPriors",
+    "FSOT.Formal.MagicCirclePriors",
+    "FSOT.Formal.MagneticStringPriors",
+    "FSOT.Formal.MagnetosphereExtendedPriors",
+    "FSOT.Formal.MagnetospherePriors",
+    "FSOT.Formal.MaillardChemistryGapFillPriors",
+    "FSOT.Formal.MalwareThreatIntelligencePriors",
+    "FSOT.Formal.MarineBiologyExtensionPriors",
+    "FSOT.Formal.MaterialsEngineeringPriors",
+    "FSOT.Formal.MaterialsSpeciesBridgePriors",
+    "FSOT.Formal.MathematicsComputationalPriors",
+    "FSOT.Formal.MathGeneratorAirfoilRmsePriors",
     "FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors",
+    "FSOT.Formal.MathGeneratorPriors",
+    "FSOT.Formal.MathGeneratorRulesEvalPriors",
+    "FSOT.Formal.MechanicalEngineeringExtensionPriors",
+    "FSOT.Formal.MechanisticCouplingPriors",
+    "FSOT.Formal.MedicalGalacticOrbitalBridgePriors",
+    "FSOT.Formal.MeteorologyGapFillPriors",
+    "FSOT.Formal.MycologyExtensionPriors",
+    "FSOT.Formal.NasaExoplanetArchivePriors",
+    "FSOT.Formal.NetworkInternetProtocolsPriors",
+    "FSOT.Formal.NeuralGalacticOrbitalBridgePriors",
+    "FSOT.Formal.NeuroeconomicsExtensionPriors",
+    "FSOT.Formal.NeuroimmunologyPriors",
+    "FSOT.Formal.NeuronCohortPriors",
+    "FSOT.Formal.NeuronCohortStrataPriors",
+    "FSOT.Formal.NeuronCohortTrainHoldoutPriors",
+    "FSOT.Formal.NeuronHybridPriors",
+    "FSOT.Formal.NeuronMultiHeroPriors",
+    "FSOT.Formal.NistCodataConstantsPriors",
+    "FSOT.Formal.NoaaCoastalTidesPriors",
+    "FSOT.Formal.ObserverChannelDerivationPriors",
+    "FSOT.Formal.OceanographyGapFillPriors",
+    "FSOT.Formal.OmniTheoryGenesisPriors",
+    "FSOT.Formal.OncologyPriors",
+    "FSOT.Formal.OpenalexCitationGraphPriors",
+    "FSOT.Formal.OrbitalMechanicsPriors",
+    "FSOT.Formal.PaleoclimateExtensionPriors",
+    "FSOT.Formal.PaleontologyExtensionPriors",
+    "FSOT.Formal.ParticleNeuralOrbitalBridgePriors",
+    "FSOT.Formal.ParticlePhysicsGapFillPriors",
+    "FSOT.Formal.ParticlePhysicsPriors",
+    "FSOT.Formal.PharmacokineticsGapFillPriors",
+    "FSOT.Formal.PharmacologyPriors",
+    "FSOT.Formal.PhiMorphogeneticScalingPriors",
+    "FSOT.Formal.PhotonicForge",
+    "FSOT.Formal.PlanetaryAtmospheresPriors",
+    "FSOT.Formal.PlanetaryStructurePriors",
+    "FSOT.Formal.PlasmaPhysicsPriors",
+    "FSOT.Formal.PortableCloneVerifyPriors",
+    "FSOT.Formal.PredictionRederivationPriors",
+    "FSOT.Formal.PreregisteredPredictionsPriors",
+    "FSOT.Formal.ProgrammingLanguageLawsPriors",
+    "FSOT.Formal.ProofCarryingCodeGenomePriors",
+    "FSOT.Formal.ProteinFormulas",
+    "FSOT.Formal.ProteinPriors",
+    "FSOT.Formal.PsychologyGapFillPriors",
+    "FSOT.Formal.PubchemCompoundPropertiesPriors",
+    "FSOT.Formal.PureMathematicsExtensionPriors",
+    "FSOT.Formal.QuantumComputingGapFillPriors",
+    "FSOT.Formal.QuantumMaterialsPriors",
+    "FSOT.Formal.QuantumMechanicsGapFillPriors",
+    "FSOT.Formal.QuantumOpticsGapFillPriors",
+    "FSOT.Formal.RcsbPdbStructuresPriors",
+    "FSOT.Formal.RealityFoldingSpinePriors",
+    "FSOT.Formal.RoboticsControlSystemsExtensionPriors",
+    "FSOT.Formal.RustLeanBridgePriors",
+    "FSOT.Formal.SecureSoftwareEngineeringPriors",
+    "FSOT.Formal.SeismologyDeepPriors",
+    "FSOT.Formal.SeismologyPriors",
+    "FSOT.Formal.SH0ESRefinedPriors",
+    "FSOT.Formal.SmallBodyOrbitsPriors",
+    "FSOT.Formal.SociologyGapFillPriors",
+    "FSOT.Formal.SotaCompetitivenessPriors",
+    "FSOT.Formal.SoulSiblingPriors",
+    "FSOT.Formal.SpacePropulsionSystemsPriors",
+    "FSOT.Formal.SpaceWeatherPriors",
+    "FSOT.Formal.SpeciesPriors",
+    "FSOT.Formal.SpeleologyExtensionPriors",
+    "FSOT.Formal.SportsBiomechanicsGapFillPriors",
+    "FSOT.Formal.StructureCalibrationPriors",
+    "FSOT.Formal.StumpedObservablesPanelPriors",
+    "FSOT.Formal.StumpedObservablesSpinePriors",
+    "FSOT.Formal.SupplyChainLogisticsExtensionPriors",
+    "FSOT.Formal.SymbolicArchetypePanelPriors",
+    "FSOT.Formal.SyntheticBiologyPriors",
+    "FSOT.Formal.TectonicsPriors",
+    "FSOT.Formal.TheoryCompletenessSpinePriors",
+    "FSOT.Formal.ThesisSimulationPriors",
+    "FSOT.Formal.TimeDomainCrosswalkPriors",
+    "FSOT.Formal.TimeEmergenceSimulationPriors",
+    "FSOT.Formal.ToEGapClosureSpinePriors",
+    "FSOT.Formal.ToEUnificationSpinePriors",
+    "FSOT.Formal.TokenizationSmokePriors",
+    "FSOT.Formal.TrinaryFluidPriors",
+    "FSOT.Formal.TrinaryHardwareMotifPriors",
     "FSOT.Formal.TrinaryOSISARebuildPriors",
-    "FSOT.Formal.Lab",
-    "FSOT"
+    "FSOT.Formal.TrinaryOSPortablePriors",
+    "FSOT.Formal.TrinaryOSPriors",
+    "FSOT.Formal.TrinaryOSRoundTripPriors",
+    "FSOT.Formal.TrinaryOSTierEPriors",
+    "FSOT.Formal.UnifiedDBPriors",
+    "FSOT.Formal.UniprotProteinAnnotationsPriors",
+    "FSOT.Formal.VibRegisterPriors",
+    "FSOT.Formal.VirologyExtensionPriors",
+    "FSOT.Formal.VlDistillAtlasPriors",
+    "FSOT.Formal.WeatherPriors",
+    "FSOT.Formal.WorldBankDevelopmentPriors",
+    "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+    "FSOT.Formal.ZoologyExtensionPriors"
   ],
   "sorry_count_formal": 0,
   "authority": {
@@ -704,24 +840,24 @@
   "formal_theorem_inventory": {
     "AcousticResonanceMaterialsPriors": [
       "acoustic_rm_observable_count_pos",
-      "acoustic_rm_pooled_median_under_five_pct",
-      "acoustic_rm_headline_median_under_five_pct",
+      "acoustic_rm_pooled_median_under_half_pct",
+      "acoustic_rm_headline_median_under_half_pct",
       "acoustic_rm_beats_sota_headlines_pos",
       "acoustic_rm_acoustic_species_pos",
       "acoustic_rm_bundle"
     ],
     "AdjacentRungCouplingPriors": [
       "adj_rung_observable_count_pos",
-      "adj_rung_pooled_median_under_five_pct",
-      "adj_rung_headline_median_under_five_pct",
+      "adj_rung_pooled_median_under_half_pct",
+      "adj_rung_headline_median_under_half_pct",
       "adj_rung_beats_sota_headlines_pos",
       "adj_rung_pairs_complete",
       "adj_rung_bundle"
     ],
     "AdversarialFractalBreakPriors": [
       "adv_brk_observable_count_pos",
-      "adv_brk_pooled_median_under_five_pct",
-      "adv_brk_headline_median_under_five_pct",
+      "adv_brk_pooled_median_under_half_pct",
+      "adv_brk_headline_median_under_half_pct",
       "adv_brk_beats_sota_headlines_pos",
       "adv_brk_bundle"
     ],
@@ -735,65 +871,73 @@
     ],
     "AgricultureAgroecologyGapFillPriors": [
       "agriculture_agroecology_gap_fill_observable_count_pos",
-      "agriculture_agroecology_gap_fill_pooled_median_under_five_pct",
-      "agriculture_agroecology_gap_fill_headline_median_under_five_pct",
+      "agriculture_agroecology_gap_fill_pooled_median_under_half_pct",
+      "agriculture_agroecology_gap_fill_headline_median_under_half_pct",
       "agriculture_agroecology_gap_fill_beats_sota_headlines_pos",
       "agriculture_agroecology_gap_fill_bundle"
     ],
     "AIGalacticOrbitalBridgePriors": [
       "ai_gal_br_observable_count_pos",
-      "ai_gal_br_pooled_median_under_five_pct",
-      "ai_gal_br_headline_median_under_five_pct",
+      "ai_gal_br_pooled_median_under_half_pct",
+      "ai_gal_br_headline_median_under_half_pct",
       "ai_gal_br_beats_sota_headlines_pos",
       "ai_gal_br_bridge_pairs_pos",
       "ai_gal_br_bundle"
     ],
     "AnthropologyExtensionPriors": [
       "anthropology_ext_observable_count_pos",
-      "anthropology_ext_pooled_median_under_five_pct",
-      "anthropology_ext_headline_median_under_five_pct",
+      "anthropology_ext_pooled_median_under_half_pct",
+      "anthropology_ext_headline_median_under_half_pct",
       "anthropology_ext_beats_sota_headlines_pos",
       "anthropology_ext_bundle"
     ],
     "ArchitectureBuildingScienceGapFillPriors": [
       "architecture_building_science_gap_fill_observable_count_pos",
-      "architecture_building_science_gap_fill_pooled_median_under_five_pct",
-      "architecture_building_science_gap_fill_headline_median_under_five_pct",
+      "architecture_building_science_gap_fill_pooled_median_under_half_pct",
+      "architecture_building_science_gap_fill_headline_median_under_half_pct",
       "architecture_building_science_gap_fill_beats_sota_headlines_pos",
       "architecture_building_science_gap_fill_bundle"
     ],
     "ArxivPrimitivesV14Priors": [
       "arxiv_primitives_v14_observable_count_pos",
-      "arxiv_primitives_v14_median_error_under_five_pct",
+      "arxiv_primitives_v14_median_error_under_half_pct",
       "arxiv_primitives_v14_bundle"
+    ],
+    "AstrophysicalStructureCrosswalkPriors": [
+      "astrophysical_structure_crosswalk_observable_count_pos",
+      "astrophysical_structure_crosswalk_pooled_median_under_half_pct",
+      "astrophysical_structure_crosswalk_headline_median_under_half_pct",
+      "astrophysical_structure_crosswalk_beats_sota_headlines_pos",
+      "astrophysical_structure_crosswalk_catalog_systems_pos",
+      "astrophysical_structure_crosswalk_bundle"
     ],
     "AtmosphericPhysicsGapFillPriors": [
       "atmospheric_physics_gap_fill_observable_count_pos",
-      "atmospheric_physics_gap_fill_pooled_median_under_five_pct",
-      "atmospheric_physics_gap_fill_headline_median_under_five_pct",
+      "atmospheric_physics_gap_fill_pooled_median_under_half_pct",
+      "atmospheric_physics_gap_fill_headline_median_under_half_pct",
       "atmospheric_physics_gap_fill_beats_sota_headlines_pos",
       "atmospheric_physics_gap_fill_bundle"
     ],
     "AtomicPhysicsGapFillPriors": [
       "atomic_physics_gap_fill_observable_count_pos",
-      "atomic_physics_gap_fill_pooled_median_under_five_pct",
-      "atomic_physics_gap_fill_headline_median_under_five_pct",
+      "atomic_physics_gap_fill_pooled_median_under_half_pct",
+      "atomic_physics_gap_fill_headline_median_under_half_pct",
       "atomic_physics_gap_fill_beats_sota_headlines_pos",
       "atomic_physics_gap_fill_bundle"
     ],
     "BibliographyLeanCorpusPriors": [
       "bibliography_lean_corpus_observable_count_pos",
-      "bibliography_lean_corpus_median_error_under_five_pct",
+      "bibliography_lean_corpus_median_error_under_half_pct",
       "bibliography_lean_corpus_bundle"
     ],
     "BinaryDecoderRendleshamPriors": [
       "binary_decoder_rendlesham_observable_count_pos",
-      "binary_decoder_rendlesham_median_error_under_five_pct",
+      "binary_decoder_rendlesham_median_error_under_half_pct",
       "binary_decoder_rendlesham_bundle"
     ],
     "BiologicalCudaPhysarumPriors": [
       "biological_cuda_physarum_observable_count_pos",
-      "biological_cuda_physarum_median_error_under_five_pct",
+      "biological_cuda_physarum_median_error_under_half_pct",
       "biological_cuda_physarum_bundle"
     ],
     "BiologyStrictEmpiricalPriors": [
@@ -809,8 +953,8 @@
     ],
     "BotanyExtensionPriors": [
       "botany_ext_observable_count_pos",
-      "botany_ext_pooled_median_under_five_pct",
-      "botany_ext_headline_median_under_five_pct",
+      "botany_ext_pooled_median_under_half_pct",
+      "botany_ext_headline_median_under_half_pct",
       "botany_ext_beats_sota_headlines_pos",
       "botany_ext_bundle"
     ],
@@ -1131,7 +1275,7 @@
     ],
     "BreakthroughDiscoveries20242026Priors": [
       "breakthrough_discoveries_2024_2026_observable_count_pos",
-      "breakthrough_discoveries_2024_2026_median_error_under_five_pct",
+      "breakthrough_discoveries_2024_2026_median_error_under_half_pct",
       "breakthrough_discoveries_2024_2026_bundle"
     ],
     "BubbleBleedPriors": [
@@ -1153,8 +1297,8 @@
     ],
     "CardiologyExtensionPriors": [
       "cardiology_ext_observable_count_pos",
-      "cardiology_ext_pooled_median_under_five_pct",
-      "cardiology_ext_headline_median_under_five_pct",
+      "cardiology_ext_pooled_median_under_half_pct",
+      "cardiology_ext_headline_median_under_half_pct",
       "cardiology_ext_beats_sota_headlines_pos",
       "cardiology_ext_bundle"
     ],
@@ -1165,53 +1309,53 @@
     ],
     "CernOpenDataLhcPriors": [
       "cern_open_data_lhc_observable_count_pos",
-      "cern_open_data_lhc_median_error_under_five_pct",
+      "cern_open_data_lhc_median_error_under_half_pct",
       "cern_open_data_lhc_bundle"
     ],
     "CertifiedAgentQwenPriors": [
       "certified_agent_qwen_observable_count_pos",
-      "certified_agent_qwen_median_error_under_five_pct",
+      "certified_agent_qwen_median_error_under_half_pct",
       "certified_agent_qwen_bundle"
     ],
     "ChaosMediatedPhaseTransitionsPriors": [
       "chaos_pt_observable_count_pos",
-      "chaos_pt_pooled_median_under_five_pct",
-      "chaos_pt_headline_median_under_five_pct",
+      "chaos_pt_pooled_median_under_half_pct",
+      "chaos_pt_headline_median_under_half_pct",
       "chaos_pt_beats_sota_headlines_pos",
       "chaos_pt_bundle"
     ],
     "ChemicalEngineeringExtensionPriors": [
       "chemical_engineering_ext_observable_count_pos",
-      "chemical_engineering_ext_pooled_median_under_five_pct",
-      "chemical_engineering_ext_headline_median_under_five_pct",
+      "chemical_engineering_ext_pooled_median_under_half_pct",
+      "chemical_engineering_ext_headline_median_under_half_pct",
       "chemical_engineering_ext_beats_sota_headlines_pos",
       "chemical_engineering_ext_bundle"
     ],
     "CivilEngineeringExtensionPriors": [
       "civil_engineering_ext_observable_count_pos",
-      "civil_engineering_ext_pooled_median_under_five_pct",
-      "civil_engineering_ext_headline_median_under_five_pct",
+      "civil_engineering_ext_pooled_median_under_half_pct",
+      "civil_engineering_ext_headline_median_under_half_pct",
       "civil_engineering_ext_beats_sota_headlines_pos",
       "civil_engineering_ext_bundle"
     ],
     "ClimateSciencePriors": [
       "climate_science_observable_count_pos",
       "climate_science_holdout_month_count_pos",
-      "climate_science_median_error_under_five_pct",
-      "climate_science_holdout_median_error_under_five_pct",
+      "climate_science_median_error_under_half_pct",
+      "climate_science_holdout_median_error_under_half_pct",
       "climate_science_bundle"
     ],
     "ClinicalMedicineExtensionPriors": [
       "clinical_medicine_ext_observable_count_pos",
-      "clinical_medicine_ext_pooled_median_under_five_pct",
-      "clinical_medicine_ext_headline_median_under_five_pct",
+      "clinical_medicine_ext_pooled_median_under_half_pct",
+      "clinical_medicine_ext_headline_median_under_half_pct",
       "clinical_medicine_ext_beats_sota_headlines_pos",
       "clinical_medicine_ext_bundle"
     ],
     "CodeGenomeStructurePriors": [
       "code_genome_observable_count_pos",
-      "code_genome_pooled_median_under_five_pct",
-      "code_genome_headline_median_under_five_pct",
+      "code_genome_pooled_median_under_half_pct",
+      "code_genome_headline_median_under_half_pct",
       "code_genome_beats_sota_headlines_pos",
       "code_genome_language_bridges_pos",
       "code_genome_bundle"
@@ -1354,24 +1498,40 @@
     ],
     "CompactificationLadderPriors": [
       "comp_lad_observable_count_pos",
-      "comp_lad_pooled_median_under_five_pct",
-      "comp_lad_headline_median_under_five_pct",
+      "comp_lad_pooled_median_under_half_pct",
+      "comp_lad_headline_median_under_half_pct",
       "comp_lad_beats_sota_headlines_pos",
       "comp_lad_rungs_complete",
       "comp_lad_bundle"
     ],
     "ComputationalReasoningPriors": [
       "computational_reasoning_observable_count_pos",
-      "computational_reasoning_median_error_under_five_pct",
+      "computational_reasoning_median_error_under_half_pct",
       "computational_reasoning_bundle"
+    ],
+    "ConsciousnessEconPriors": [
+      "consciousness_econ_observable_count_pos",
+      "consciousness_econ_pooled_median_under_half_pct",
+      "consciousness_econ_headline_median_under_half_pct",
+      "consciousness_econ_beats_sota_headlines_pos",
+      "consciousness_econ_econ_anchors_pos",
+      "consciousness_econ_bundle"
     ],
     "ConsciousnessGalacticOrbitalBridgePriors": [
       "c_gal_br_observable_count_pos",
-      "c_gal_br_pooled_median_under_five_pct",
-      "c_gal_br_headline_median_under_five_pct",
+      "c_gal_br_pooled_median_under_half_pct",
+      "c_gal_br_headline_median_under_half_pct",
       "c_gal_br_beats_sota_headlines_pos",
       "c_gal_br_bridge_pairs_pos",
       "c_gal_br_bundle"
+    ],
+    "ConsciousnessSoulBridgePriors": [
+      "consciousness_soul_bridge_observable_count_pos",
+      "consciousness_soul_bridge_pooled_median_under_half_pct",
+      "consciousness_soul_bridge_headline_median_under_half_pct",
+      "consciousness_soul_bridge_beats_sota_headlines_pos",
+      "consciousness_soul_bridge_soul_records_pos",
+      "consciousness_soul_bridge_bundle"
     ],
     "Cosmology": [
       "c_cosm_pos",
@@ -1406,14 +1566,14 @@
       "cosmology_lambda_cdm_extended_count_pos",
       "cosmology_extended_observable_count_pos",
       "cosmology_extended_components_sum",
-      "cosmology_extended_median_error_under_five_pct",
+      "cosmology_extended_median_error_under_half_pct",
       "cosmology_extended_within_le_total",
       "cosmology_extended_bundle"
     ],
     "CosmologyHigherWavesPriors": [
       "cosmology_higher_waves_total_pos",
       "cosmology_higher_waves_partition",
-      "cosmology_higher_waves_max_error_under_five_pct",
+      "cosmology_higher_waves_max_error_under_half_pct",
       "cosmology_higher_waves_bundle"
     ],
     "CosmologyLab": [
@@ -1423,8 +1583,8 @@
     ],
     "CosmologyWave10Priors": [
       "cosmology_wave10_observable_count_pos",
-      "cosmology_wave10_max_error_under_five_pct",
-      "cosmology_wave10_median_error_under_five_pct",
+      "cosmology_wave10_max_error_under_half_pct",
+      "cosmology_wave10_median_error_under_half_pct",
       "cosmology_wave10_bundle"
     ],
     "CosmologyWave4": [
@@ -1432,38 +1592,38 @@
     ],
     "CosmologyWave4Priors": [
       "cosmology_wave4_observable_count_pos",
-      "cosmology_wave4_max_error_under_five_pct",
-      "cosmology_wave4_median_error_under_five_pct",
+      "cosmology_wave4_max_error_under_half_pct",
+      "cosmology_wave4_median_error_under_half_pct",
       "cosmology_wave4_bundle"
     ],
     "CosmologyWave5Priors": [
       "cosmology_wave5_observable_count_pos",
-      "cosmology_wave5_max_error_under_five_pct",
-      "cosmology_wave5_median_error_under_five_pct",
+      "cosmology_wave5_max_error_under_half_pct",
+      "cosmology_wave5_median_error_under_half_pct",
       "cosmology_wave5_bundle"
     ],
     "CosmologyWave6Priors": [
       "cosmology_wave6_observable_count_pos",
-      "cosmology_wave6_max_error_under_five_pct",
-      "cosmology_wave6_median_error_under_five_pct",
+      "cosmology_wave6_max_error_under_half_pct",
+      "cosmology_wave6_median_error_under_half_pct",
       "cosmology_wave6_bundle"
     ],
     "CosmologyWave7Priors": [
       "cosmology_wave7_observable_count_pos",
-      "cosmology_wave7_max_error_under_five_pct",
-      "cosmology_wave7_median_error_under_five_pct",
+      "cosmology_wave7_max_error_under_half_pct",
+      "cosmology_wave7_median_error_under_half_pct",
       "cosmology_wave7_bundle"
     ],
     "CosmologyWave8Priors": [
       "cosmology_wave8_observable_count_pos",
-      "cosmology_wave8_max_error_under_five_pct",
-      "cosmology_wave8_median_error_under_five_pct",
+      "cosmology_wave8_max_error_under_half_pct",
+      "cosmology_wave8_median_error_under_half_pct",
       "cosmology_wave8_bundle"
     ],
     "CosmologyWave9Priors": [
       "cosmology_wave9_observable_count_pos",
-      "cosmology_wave9_max_error_under_five_pct",
-      "cosmology_wave9_median_error_under_five_pct",
+      "cosmology_wave9_max_error_under_half_pct",
+      "cosmology_wave9_median_error_under_half_pct",
       "cosmology_wave9_bundle"
     ],
     "CryospherePriors": [
@@ -1473,32 +1633,47 @@
     ],
     "CryptographyTechnologyPriors": [
       "crypto_tech_observable_count_pos",
-      "crypto_tech_pooled_median_under_five_pct",
-      "crypto_tech_headline_median_under_five_pct",
+      "crypto_tech_pooled_median_under_half_pct",
+      "crypto_tech_headline_median_under_half_pct",
       "crypto_tech_beats_sota_headlines_pos",
       "crypto_tech_bundle"
     ],
     "CulinaryArtsPriors": [
       "culinary_arts_observable_count_pos",
       "culinary_arts_section_count_pos",
-      "culinary_arts_pooled_median_under_five_pct",
-      "culinary_arts_headline_median_under_five_pct",
+      "culinary_arts_pooled_median_under_half_pct",
+      "culinary_arts_headline_median_under_half_pct",
       "culinary_arts_beats_sota_headlines_pos",
       "culinary_arts_bundle"
     ],
     "CVECodonHoleFalsificationPriors": [
       "cve_hole_observable_count_pos",
-      "cve_hole_pooled_median_under_five_pct",
-      "cve_hole_headline_median_under_five_pct",
+      "cve_hole_pooled_median_under_half_pct",
+      "cve_hole_headline_median_under_half_pct",
       "cve_hole_beats_sota_headlines_pos",
       "cve_hole_kev_records_pos",
       "cve_hole_bundle"
     ],
+    "DarkEnergyCPLPriors": [
+      "dark_energy_cpl_observable_count_pos",
+      "dark_energy_cpl_pooled_median_under_half_pct",
+      "dark_energy_cpl_headline_median_under_half_pct",
+      "dark_energy_cpl_beats_sota_headlines_pos",
+      "dark_energy_cpl_wa_negative",
+      "dark_energy_cpl_bundle"
+    ],
+    "DarkSectorOpenProblemsPriors": [
+      "dark_sector_observable_count_pos",
+      "dark_sector_pooled_median_under_half_pct",
+      "dark_sector_headline_median_under_half_pct",
+      "dark_sector_beats_sota_headlines_pos",
+      "dark_sector_bundle"
+    ],
     "DomainCouplingSimulationPriors": [
       "domain_coupling_node_count_pos",
       "domain_coupling_edge_count_pos",
-      "domain_coupling_pooled_median_under_five_pct",
-      "domain_coupling_headline_median_under_five_pct",
+      "domain_coupling_pooled_median_under_half_pct",
+      "domain_coupling_headline_median_under_half_pct",
       "domain_coupling_beats_sota_headlines_pos",
       "domain_coupling_bundle"
     ],
@@ -1520,8 +1695,8 @@
     ],
     "DomainOrbitalPredictionsPriors": [
       "orb_pred_observable_count_pos",
-      "orb_pred_pooled_median_under_five_pct",
-      "orb_pred_headline_median_under_five_pct",
+      "orb_pred_pooled_median_under_half_pct",
+      "orb_pred_headline_median_under_half_pct",
       "orb_pred_beats_sota_headlines_pos",
       "orb_pred_filled_all_predictions",
       "orb_pred_bundle"
@@ -1581,28 +1756,28 @@
     ],
     "EcologyGapFillPriors": [
       "ecology_gap_fill_observable_count_pos",
-      "ecology_gap_fill_pooled_median_under_five_pct",
-      "ecology_gap_fill_headline_median_under_five_pct",
+      "ecology_gap_fill_pooled_median_under_half_pct",
+      "ecology_gap_fill_headline_median_under_half_pct",
       "ecology_gap_fill_beats_sota_headlines_pos",
       "ecology_gap_fill_bundle"
     ],
     "EconometricsGapFillPriors": [
       "econometrics_gap_fill_observable_count_pos",
-      "econometrics_gap_fill_pooled_median_under_five_pct",
-      "econometrics_gap_fill_headline_median_under_five_pct",
+      "econometrics_gap_fill_pooled_median_under_half_pct",
+      "econometrics_gap_fill_headline_median_under_half_pct",
       "econometrics_gap_fill_beats_sota_headlines_pos",
       "econometrics_gap_fill_bundle"
     ],
     "EconomicsGapFillPriors": [
       "economics_gap_fill_observable_count_pos",
-      "economics_gap_fill_pooled_median_under_five_pct",
-      "economics_gap_fill_headline_median_under_five_pct",
+      "economics_gap_fill_pooled_median_under_half_pct",
+      "economics_gap_fill_headline_median_under_half_pct",
       "economics_gap_fill_beats_sota_headlines_pos",
       "economics_gap_fill_bundle"
     ],
     "ElectricalPowerSystemsPriors": [
       "electrical_power_systems_observable_count_pos",
-      "electrical_power_systems_median_error_under_five_pct",
+      "electrical_power_systems_median_error_under_half_pct",
       "electrical_power_systems_bundle"
     ],
     "EmergentDomainPriors": [
@@ -1614,38 +1789,38 @@
     ],
     "EnergyAIOrbitalBridgePriors": [
       "e_ai_br_observable_count_pos",
-      "e_ai_br_pooled_median_under_five_pct",
-      "e_ai_br_headline_median_under_five_pct",
+      "e_ai_br_pooled_median_under_half_pct",
+      "e_ai_br_headline_median_under_half_pct",
       "e_ai_br_beats_sota_headlines_pos",
       "e_ai_br_bridge_pairs_pos",
       "e_ai_br_bundle"
     ],
     "EnergyNeuralOrbitalBridgePriors": [
       "e_neu_br_observable_count_pos",
-      "e_neu_br_pooled_median_under_five_pct",
-      "e_neu_br_headline_median_under_five_pct",
+      "e_neu_br_pooled_median_under_half_pct",
+      "e_neu_br_headline_median_under_half_pct",
       "e_neu_br_beats_sota_headlines_pos",
       "e_neu_br_bridge_pairs_pos",
       "e_neu_br_bundle"
     ],
     "EntomologyExtensionPriors": [
       "entomology_ext_observable_count_pos",
-      "entomology_ext_pooled_median_under_five_pct",
-      "entomology_ext_headline_median_under_five_pct",
+      "entomology_ext_pooled_median_under_half_pct",
+      "entomology_ext_headline_median_under_half_pct",
       "entomology_ext_beats_sota_headlines_pos",
       "entomology_ext_bundle"
     ],
     "EnvironmentalEngineeringExtensionPriors": [
       "environmental_engineering_ext_observable_count_pos",
-      "environmental_engineering_ext_pooled_median_under_five_pct",
-      "environmental_engineering_ext_headline_median_under_five_pct",
+      "environmental_engineering_ext_pooled_median_under_half_pct",
+      "environmental_engineering_ext_headline_median_under_half_pct",
       "environmental_engineering_ext_beats_sota_headlines_pos",
       "environmental_engineering_ext_bundle"
     ],
     "EpidemiologyExtensionPriors": [
       "epidemiology_ext_observable_count_pos",
-      "epidemiology_ext_pooled_median_under_five_pct",
-      "epidemiology_ext_headline_median_under_five_pct",
+      "epidemiology_ext_pooled_median_under_half_pct",
+      "epidemiology_ext_headline_median_under_half_pct",
       "epidemiology_ext_beats_sota_headlines_pos",
       "epidemiology_ext_bundle"
     ],
@@ -1656,8 +1831,8 @@
     ],
     "ExogeologyExtensionPriors": [
       "exogeology_ext_observable_count_pos",
-      "exogeology_ext_pooled_median_under_five_pct",
-      "exogeology_ext_headline_median_under_five_pct",
+      "exogeology_ext_pooled_median_under_half_pct",
+      "exogeology_ext_headline_median_under_half_pct",
       "exogeology_ext_beats_sota_headlines_pos",
       "exogeology_ext_bundle"
     ],
@@ -1668,45 +1843,53 @@
     ],
     "ExternalOSSCodeGenomePriors": [
       "external_oss_observable_count_pos",
-      "external_oss_pooled_median_under_five_pct",
-      "external_oss_headline_median_under_five_pct",
+      "external_oss_pooled_median_under_half_pct",
+      "external_oss_headline_median_under_half_pct",
       "external_oss_beats_sota_headlines_pos",
       "external_oss_oss_samples_pos",
       "external_oss_bundle"
     ],
     "FinanceMarketsExtensionPriors": [
       "finance_markets_ext_observable_count_pos",
-      "finance_markets_ext_pooled_median_under_five_pct",
-      "finance_markets_ext_headline_median_under_five_pct",
+      "finance_markets_ext_pooled_median_under_half_pct",
+      "finance_markets_ext_headline_median_under_half_pct",
       "finance_markets_ext_beats_sota_headlines_pos",
       "finance_markets_ext_bundle"
     ],
     "FluidDynamicsGapFillPriors": [
       "fluid_dynamics_gap_fill_observable_count_pos",
-      "fluid_dynamics_gap_fill_pooled_median_under_five_pct",
-      "fluid_dynamics_gap_fill_headline_median_under_five_pct",
+      "fluid_dynamics_gap_fill_pooled_median_under_half_pct",
+      "fluid_dynamics_gap_fill_headline_median_under_half_pct",
       "fluid_dynamics_gap_fill_beats_sota_headlines_pos",
       "fluid_dynamics_gap_fill_bundle"
     ],
+    "FluidPhaseCurrentSpinePriors": [
+      "fpc_spine_observable_count_pos",
+      "fpc_spine_pooled_median_under_half_pct",
+      "fpc_spine_headline_median_under_half_pct",
+      "fpc_spine_beats_sota_headlines_pos",
+      "fpc_spine_spine_edges_pos",
+      "fpc_spine_bundle"
+    ],
     "FoldDepthMetricsPriors": [
       "fold_dep_observable_count_pos",
-      "fold_dep_pooled_median_under_five_pct",
-      "fold_dep_headline_median_under_five_pct",
+      "fold_dep_pooled_median_under_half_pct",
+      "fold_dep_headline_median_under_half_pct",
       "fold_dep_beats_sota_headlines_pos",
       "fold_dep_fold_span_pos",
       "fold_dep_bundle"
     ],
     "FoodMicrobiologyGapFillPriors": [
       "food_microbiology_gap_fill_observable_count_pos",
-      "food_microbiology_gap_fill_pooled_median_under_five_pct",
-      "food_microbiology_gap_fill_headline_median_under_five_pct",
+      "food_microbiology_gap_fill_pooled_median_under_half_pct",
+      "food_microbiology_gap_fill_headline_median_under_half_pct",
       "food_microbiology_gap_fill_beats_sota_headlines_pos",
       "food_microbiology_gap_fill_bundle"
     ],
     "FormulaBranchingFractalPriors": [
       "fractal_observable_count_pos",
-      "fractal_pooled_median_under_five_pct",
-      "fractal_headline_median_under_five_pct",
+      "fractal_pooled_median_under_half_pct",
+      "fractal_headline_median_under_half_pct",
       "fractal_beats_sota_headlines_pos",
       "fractal_attachments_pos",
       "fractal_bundle"
@@ -1714,13 +1897,13 @@
     "FormulaCorpusClosurePriors": [
       "formula_corpus_closure_observable_count_pos",
       "formula_corpus_closure_strict_empirical_pos",
-      "formula_corpus_closure_pooled_median_under_five_pct",
+      "formula_corpus_closure_pooled_median_under_half_pct",
       "formula_corpus_closure_beats_sota_headlines_pos",
       "formula_corpus_closure_bundle"
     ],
     "FormulaCorpusCncPriors": [
       "formula_corpus_cnc_observable_count_pos",
-      "formula_corpus_cnc_median_error_under_five_pct",
+      "formula_corpus_cnc_median_error_under_half_pct",
       "formula_corpus_cnc_bundle"
     ],
     "FormulaCorpusPriors": [
@@ -1730,17 +1913,25 @@
       "formula_corpus_tolerable_le_total",
       "formula_corpus_strict_empirical_bundle"
     ],
+    "FPCTemporalCouplingPriors": [
+      "fpc_link_observable_count_pos",
+      "fpc_link_pooled_median_under_half_pct",
+      "fpc_link_headline_median_under_half_pct",
+      "fpc_link_beats_sota_headlines_pos",
+      "fpc_link_fluidlink_edges_pos",
+      "fpc_link_bundle"
+    ],
     "FractalConstantRecursionPriors": [
       "const_rec_observable_count_pos",
-      "const_rec_pooled_median_under_five_pct",
-      "const_rec_headline_median_under_five_pct",
+      "const_rec_pooled_median_under_half_pct",
+      "const_rec_headline_median_under_half_pct",
       "const_rec_beats_sota_headlines_pos",
       "const_rec_families_pos",
       "const_rec_bundle"
     ],
     "FsotAggregateUnifiedDbPriors": [
       "fsot_aggregate_unified_db_observable_count_pos",
-      "fsot_aggregate_unified_db_median_error_under_five_pct",
+      "fsot_aggregate_unified_db_median_error_under_half_pct",
       "fsot_aggregate_unified_db_bundle"
     ],
     "FuelPriors": [
@@ -1751,7 +1942,7 @@
     ],
     "GbifSpeciesOccurrencePriors": [
       "gbif_species_occurrence_observable_count_pos",
-      "gbif_species_occurrence_median_error_under_five_pct",
+      "gbif_species_occurrence_median_error_under_half_pct",
       "gbif_species_occurrence_bundle"
     ],
     "Genomic": [
@@ -1779,13 +1970,13 @@
     ],
     "GeochemistryPriors": [
       "geochemistry_observable_count_pos",
-      "geochemistry_median_error_under_five_pct",
+      "geochemistry_median_error_under_half_pct",
       "geochemistry_bundle"
     ],
     "GeologyStratigraphyExtensionPriors": [
       "geology_stratigraphy_ext_observable_count_pos",
-      "geology_stratigraphy_ext_pooled_median_under_five_pct",
-      "geology_stratigraphy_ext_headline_median_under_five_pct",
+      "geology_stratigraphy_ext_pooled_median_under_half_pct",
+      "geology_stratigraphy_ext_headline_median_under_half_pct",
       "geology_stratigraphy_ext_beats_sota_headlines_pos",
       "geology_stratigraphy_ext_bundle"
     ],
@@ -1803,8 +1994,8 @@
       "higgs_compute_branching_count_pos",
       "higgs_branching_observable_count_pos",
       "higgs_branching_components_sum",
-      "higgs_branching_median_error_under_five_pct",
-      "higgs_branching_max_error_under_five_pct",
+      "higgs_branching_median_error_under_half_pct",
+      "higgs_branching_max_error_under_half_pct",
       "higgs_branching_bundle"
     ],
     "HiggsMassPriors": [
@@ -1815,14 +2006,22 @@
     ],
     "HistoryExtensionPriors": [
       "history_ext_observable_count_pos",
-      "history_ext_pooled_median_under_five_pct",
-      "history_ext_headline_median_under_five_pct",
+      "history_ext_pooled_median_under_half_pct",
+      "history_ext_headline_median_under_half_pct",
       "history_ext_beats_sota_headlines_pos",
       "history_ext_bundle"
     ],
+    "HubbleBubbleTensionPriors": [
+      "hubble_tension_observable_count_pos",
+      "hubble_tension_pooled_median_under_half_pct",
+      "hubble_tension_headline_median_under_half_pct",
+      "hubble_tension_beats_sota_headlines_pos",
+      "hubble_tension_h0_sectors_pos",
+      "hubble_tension_bundle"
+    ],
     "HvacThermalSystemsPriors": [
       "hvac_thermal_systems_observable_count_pos",
-      "hvac_thermal_systems_median_error_under_five_pct",
+      "hvac_thermal_systems_median_error_under_half_pct",
       "hvac_thermal_systems_bundle"
     ],
     "HydrologyPriors": [
@@ -1833,20 +2032,20 @@
     ],
     "IGEMLiveFastaPriors": [
       "igem_live_fasta_observable_count_pos",
-      "igem_live_fasta_median_error_under_five_pct",
+      "igem_live_fasta_median_error_under_half_pct",
       "igem_live_fasta_bundle"
     ],
     "IGEMSyntheticBiologyPriors": [
       "igem_synthetic_biology_observable_count_pos",
       "igem_synthetic_biology_part_count_pos",
-      "igem_synthetic_biology_pooled_median_under_five_pct",
-      "igem_synthetic_biology_headline_median_under_five_pct",
+      "igem_synthetic_biology_pooled_median_under_half_pct",
+      "igem_synthetic_biology_headline_median_under_half_pct",
       "igem_synthetic_biology_beats_sota_headlines_pos",
       "igem_synthetic_biology_bundle"
     ],
     "ImmunologyPriors": [
       "immunology_observable_count_pos",
-      "immunology_median_error_under_five_pct",
+      "immunology_median_error_under_half_pct",
       "immunology_bundle"
     ],
     "IntelligenceCompressionPriors": [
@@ -1859,13 +2058,13 @@
     ],
     "IntrinsicLLMValidatorsPriors": [
       "intrinsic_llm_validators_observable_count_pos",
-      "intrinsic_llm_validators_median_error_under_five_pct",
+      "intrinsic_llm_validators_median_error_under_half_pct",
       "intrinsic_llm_validators_bundle"
     ],
     "IonosphericChemistryCouplingPriors": [
       "iono_chem_observable_count_pos",
-      "iono_chem_pooled_median_under_five_pct",
-      "iono_chem_headline_median_under_five_pct",
+      "iono_chem_pooled_median_under_half_pct",
+      "iono_chem_headline_median_under_half_pct",
       "iono_chem_beats_sota_headlines_pos",
       "iono_chem_bundle"
     ],
@@ -1905,8 +2104,8 @@
     ],
     "LawPolicyExtensionPriors": [
       "law_policy_ext_observable_count_pos",
-      "law_policy_ext_pooled_median_under_five_pct",
-      "law_policy_ext_headline_median_under_five_pct",
+      "law_policy_ext_pooled_median_under_half_pct",
+      "law_policy_ext_headline_median_under_half_pct",
       "law_policy_ext_beats_sota_headlines_pos",
       "law_policy_ext_bundle"
     ],
@@ -1918,7 +2117,7 @@
     ],
     "LinguisticsFormalPriors": [
       "linguistics_formal_observable_count_pos",
-      "linguistics_formal_median_error_under_five_pct",
+      "linguistics_formal_median_error_under_half_pct",
       "linguistics_formal_bundle"
     ],
     "LinguisticsPriors": [
@@ -1951,51 +2150,51 @@
     ],
     "MaillardChemistryGapFillPriors": [
       "maillard_chemistry_gap_fill_observable_count_pos",
-      "maillard_chemistry_gap_fill_pooled_median_under_five_pct",
-      "maillard_chemistry_gap_fill_headline_median_under_five_pct",
+      "maillard_chemistry_gap_fill_pooled_median_under_half_pct",
+      "maillard_chemistry_gap_fill_headline_median_under_half_pct",
       "maillard_chemistry_gap_fill_beats_sota_headlines_pos",
       "maillard_chemistry_gap_fill_bundle"
     ],
     "MalwareThreatIntelligencePriors": [
       "malware_threat_observable_count_pos",
-      "malware_threat_pooled_median_under_five_pct",
-      "malware_threat_headline_median_under_five_pct",
+      "malware_threat_pooled_median_under_half_pct",
+      "malware_threat_headline_median_under_half_pct",
       "malware_threat_beats_sota_headlines_pos",
       "malware_threat_bundle"
     ],
     "MarineBiologyExtensionPriors": [
       "marine_biology_ext_observable_count_pos",
-      "marine_biology_ext_pooled_median_under_five_pct",
-      "marine_biology_ext_headline_median_under_five_pct",
+      "marine_biology_ext_pooled_median_under_half_pct",
+      "marine_biology_ext_headline_median_under_half_pct",
       "marine_biology_ext_beats_sota_headlines_pos",
       "marine_biology_ext_bundle"
     ],
     "MaterialsEngineeringPriors": [
       "materials_engineering_observable_count_pos",
       "materials_engineering_section_count_pos",
-      "materials_engineering_pooled_median_under_five_pct",
-      "materials_engineering_headline_median_under_five_pct",
+      "materials_engineering_pooled_median_under_half_pct",
+      "materials_engineering_headline_median_under_half_pct",
       "materials_engineering_beats_sota_headlines_pos",
       "materials_engineering_bundle"
     ],
     "MaterialsSpeciesBridgePriors": [
       "materials_species_bridge_observable_count_pos",
-      "materials_species_bridge_median_error_under_five_pct",
+      "materials_species_bridge_median_error_under_half_pct",
       "materials_species_bridge_bundle"
     ],
     "MathematicsComputationalPriors": [
       "mathematics_computational_observable_count_pos",
-      "mathematics_computational_median_error_under_five_pct",
+      "mathematics_computational_median_error_under_half_pct",
       "mathematics_computational_bundle"
     ],
     "MathGeneratorAirfoilRmsePriors": [
       "math_generator_airfoil_rmse_observable_count_pos",
-      "math_generator_airfoil_rmse_median_error_under_five_pct",
+      "math_generator_airfoil_rmse_median_error_under_half_pct",
       "math_generator_airfoil_rmse_bundle"
     ],
     "MathGeneratorBenchmarkFormulaEvalPriors": [
       "math_generator_benchmark_formula_eval_observable_count_pos",
-      "math_generator_benchmark_formula_eval_median_error_under_five_pct",
+      "math_generator_benchmark_formula_eval_median_error_under_half_pct",
       "math_generator_benchmark_formula_eval_bundle"
     ],
     "MathGeneratorPriors": [
@@ -2009,80 +2208,80 @@
     "MathGeneratorRulesEvalPriors": [
       "math_generator_rules_eval_observable_count_pos",
       "math_generator_rules_eval_corpus_count_pos",
-      "math_generator_rules_eval_pooled_median_under_five_pct",
-      "math_generator_rules_eval_headline_median_under_five_pct",
+      "math_generator_rules_eval_pooled_median_under_half_pct",
+      "math_generator_rules_eval_headline_median_under_half_pct",
       "math_generator_rules_eval_beats_sota_headlines_pos",
       "math_generator_rules_eval_bundle"
     ],
     "MechanicalEngineeringExtensionPriors": [
       "mechanical_engineering_ext_observable_count_pos",
-      "mechanical_engineering_ext_pooled_median_under_five_pct",
-      "mechanical_engineering_ext_headline_median_under_five_pct",
+      "mechanical_engineering_ext_pooled_median_under_half_pct",
+      "mechanical_engineering_ext_headline_median_under_half_pct",
       "mechanical_engineering_ext_beats_sota_headlines_pos",
       "mechanical_engineering_ext_bundle"
     ],
     "MechanisticCouplingPriors": [
       "mech_cpl_observable_count_pos",
-      "mech_cpl_pooled_median_under_five_pct",
-      "mech_cpl_headline_median_under_five_pct",
+      "mech_cpl_pooled_median_under_half_pct",
+      "mech_cpl_headline_median_under_half_pct",
       "mech_cpl_beats_sota_headlines_pos",
       "mech_cpl_mechanisms_pos",
       "mech_cpl_bundle"
     ],
     "MedicalGalacticOrbitalBridgePriors": [
       "med_gal_br_observable_count_pos",
-      "med_gal_br_pooled_median_under_five_pct",
-      "med_gal_br_headline_median_under_five_pct",
+      "med_gal_br_pooled_median_under_half_pct",
+      "med_gal_br_headline_median_under_half_pct",
       "med_gal_br_beats_sota_headlines_pos",
       "med_gal_br_bridge_pairs_pos",
       "med_gal_br_bundle"
     ],
     "MeteorologyGapFillPriors": [
       "meteorology_gap_fill_observable_count_pos",
-      "meteorology_gap_fill_pooled_median_under_five_pct",
-      "meteorology_gap_fill_headline_median_under_five_pct",
+      "meteorology_gap_fill_pooled_median_under_half_pct",
+      "meteorology_gap_fill_headline_median_under_half_pct",
       "meteorology_gap_fill_beats_sota_headlines_pos",
       "meteorology_gap_fill_bundle"
     ],
     "MycologyExtensionPriors": [
       "mycology_ext_observable_count_pos",
-      "mycology_ext_pooled_median_under_five_pct",
-      "mycology_ext_headline_median_under_five_pct",
+      "mycology_ext_pooled_median_under_half_pct",
+      "mycology_ext_headline_median_under_half_pct",
       "mycology_ext_beats_sota_headlines_pos",
       "mycology_ext_bundle"
     ],
     "NasaExoplanetArchivePriors": [
       "nasa_exoplanet_archive_observable_count_pos",
-      "nasa_exoplanet_archive_median_error_under_five_pct",
+      "nasa_exoplanet_archive_median_error_under_half_pct",
       "nasa_exoplanet_archive_bundle"
     ],
     "NetworkInternetProtocolsPriors": [
       "network_inet_observable_count_pos",
-      "network_inet_pooled_median_under_five_pct",
-      "network_inet_headline_median_under_five_pct",
+      "network_inet_pooled_median_under_half_pct",
+      "network_inet_headline_median_under_half_pct",
       "network_inet_beats_sota_headlines_pos",
       "network_inet_bundle"
     ],
     "NeuralGalacticOrbitalBridgePriors": [
       "neu_gal_br_observable_count_pos",
-      "neu_gal_br_pooled_median_under_five_pct",
-      "neu_gal_br_headline_median_under_five_pct",
+      "neu_gal_br_pooled_median_under_half_pct",
+      "neu_gal_br_headline_median_under_half_pct",
       "neu_gal_br_beats_sota_headlines_pos",
       "neu_gal_br_bridge_pairs_pos",
       "neu_gal_br_bundle"
     ],
     "NeuroeconomicsExtensionPriors": [
       "neuroeconomics_ext_observable_count_pos",
-      "neuroeconomics_ext_pooled_median_under_five_pct",
-      "neuroeconomics_ext_headline_median_under_five_pct",
+      "neuroeconomics_ext_pooled_median_under_half_pct",
+      "neuroeconomics_ext_headline_median_under_half_pct",
       "neuroeconomics_ext_beats_sota_headlines_pos",
       "neuroeconomics_ext_bundle"
     ],
     "NeuroimmunologyPriors": [
       "neuroimmunology_observable_count_pos",
       "neuroimmunology_section_count_pos",
-      "neuroimmunology_pooled_median_under_five_pct",
-      "neuroimmunology_headline_median_under_five_pct",
+      "neuroimmunology_pooled_median_under_half_pct",
+      "neuroimmunology_headline_median_under_half_pct",
       "neuroimmunology_beats_sota_headlines_pos",
       "neuroimmunology_bundle"
     ],
@@ -2138,84 +2337,84 @@
     ],
     "NeuronMultiHeroPriors": [
       "neuron_multi_hero_count_pos",
-      "neuron_multi_hero_median_error_under_five_pct",
+      "neuron_multi_hero_median_error_under_half_pct",
       "neuron_multi_hero_median_fi_under_thirty_pct",
       "neuron_multi_hero_bundle"
     ],
     "NistCodataConstantsPriors": [
       "nist_codata_constants_observable_count_pos",
-      "nist_codata_constants_median_error_under_five_pct",
+      "nist_codata_constants_median_error_under_half_pct",
       "nist_codata_constants_bundle"
     ],
     "NoaaCoastalTidesPriors": [
       "noaa_coastal_tides_observable_count_pos",
-      "noaa_coastal_tides_median_error_under_five_pct",
+      "noaa_coastal_tides_median_error_under_half_pct",
       "noaa_coastal_tides_bundle"
     ],
     "ObserverChannelDerivationPriors": [
       "obs_ch_observable_count_pos",
-      "obs_ch_pooled_median_under_five_pct",
-      "obs_ch_headline_median_under_five_pct",
+      "obs_ch_pooled_median_under_half_pct",
+      "obs_ch_headline_median_under_half_pct",
       "obs_ch_beats_sota_headlines_pos",
       "obs_ch_quirkmod_derived_pos",
       "obs_ch_bundle"
     ],
     "OceanographyGapFillPriors": [
       "oceanography_gap_fill_observable_count_pos",
-      "oceanography_gap_fill_pooled_median_under_five_pct",
-      "oceanography_gap_fill_headline_median_under_five_pct",
+      "oceanography_gap_fill_pooled_median_under_half_pct",
+      "oceanography_gap_fill_headline_median_under_half_pct",
       "oceanography_gap_fill_beats_sota_headlines_pos",
       "oceanography_gap_fill_bundle"
     ],
     "OmniTheoryGenesisPriors": [
       "omni_theory_genesis_observable_count_pos",
-      "omni_theory_genesis_median_error_under_five_pct",
+      "omni_theory_genesis_median_error_under_half_pct",
       "omni_theory_genesis_bundle"
     ],
     "OncologyPriors": [
       "oncology_observable_count_pos",
       "oncology_section_count_pos",
-      "oncology_pooled_median_under_five_pct",
-      "oncology_headline_median_under_five_pct",
+      "oncology_pooled_median_under_half_pct",
+      "oncology_headline_median_under_half_pct",
       "oncology_beats_sota_headlines_pos",
       "oncology_bundle"
     ],
     "OpenalexCitationGraphPriors": [
       "openalex_citation_graph_observable_count_pos",
-      "openalex_citation_graph_median_error_under_five_pct",
+      "openalex_citation_graph_median_error_under_half_pct",
       "openalex_citation_graph_bundle"
     ],
     "OrbitalMechanicsPriors": [
       "orbital_mechanics_body_count_pos",
-      "orbital_mechanics_median_error_under_five_pct",
+      "orbital_mechanics_median_error_under_half_pct",
       "orbital_mechanics_bundle"
     ],
     "PaleoclimateExtensionPriors": [
       "paleoclimate_ext_observable_count_pos",
-      "paleoclimate_ext_pooled_median_under_five_pct",
-      "paleoclimate_ext_headline_median_under_five_pct",
+      "paleoclimate_ext_pooled_median_under_half_pct",
+      "paleoclimate_ext_headline_median_under_half_pct",
       "paleoclimate_ext_beats_sota_headlines_pos",
       "paleoclimate_ext_bundle"
     ],
     "PaleontologyExtensionPriors": [
       "paleontology_ext_observable_count_pos",
-      "paleontology_ext_pooled_median_under_five_pct",
-      "paleontology_ext_headline_median_under_five_pct",
+      "paleontology_ext_pooled_median_under_half_pct",
+      "paleontology_ext_headline_median_under_half_pct",
       "paleontology_ext_beats_sota_headlines_pos",
       "paleontology_ext_bundle"
     ],
     "ParticleNeuralOrbitalBridgePriors": [
       "p_neu_br_observable_count_pos",
-      "p_neu_br_pooled_median_under_five_pct",
-      "p_neu_br_headline_median_under_five_pct",
+      "p_neu_br_pooled_median_under_half_pct",
+      "p_neu_br_headline_median_under_half_pct",
       "p_neu_br_beats_sota_headlines_pos",
       "p_neu_br_bridge_pairs_pos",
       "p_neu_br_bundle"
     ],
     "ParticlePhysicsGapFillPriors": [
       "particle_physics_gap_fill_observable_count_pos",
-      "particle_physics_gap_fill_pooled_median_under_five_pct",
-      "particle_physics_gap_fill_headline_median_under_five_pct",
+      "particle_physics_gap_fill_pooled_median_under_half_pct",
+      "particle_physics_gap_fill_headline_median_under_half_pct",
       "particle_physics_gap_fill_beats_sota_headlines_pos",
       "particle_physics_gap_fill_bundle"
     ],
@@ -2224,26 +2423,26 @@
       "particle_wave4_count_pos",
       "particle_physics_observable_count_pos",
       "particle_physics_components_sum",
-      "particle_physics_median_error_under_five_pct",
-      "particle_physics_max_error_under_five_pct",
+      "particle_physics_median_error_under_half_pct",
+      "particle_physics_max_error_under_half_pct",
       "particle_physics_bundle"
     ],
     "PharmacokineticsGapFillPriors": [
       "pharmacokinetics_gap_fill_observable_count_pos",
-      "pharmacokinetics_gap_fill_pooled_median_under_five_pct",
-      "pharmacokinetics_gap_fill_headline_median_under_five_pct",
+      "pharmacokinetics_gap_fill_pooled_median_under_half_pct",
+      "pharmacokinetics_gap_fill_headline_median_under_half_pct",
       "pharmacokinetics_gap_fill_beats_sota_headlines_pos",
       "pharmacokinetics_gap_fill_bundle"
     ],
     "PharmacologyPriors": [
       "pharmacology_observable_count_pos",
-      "pharmacology_median_error_under_five_pct",
+      "pharmacology_median_error_under_half_pct",
       "pharmacology_bundle"
     ],
     "PhiMorphogeneticScalingPriors": [
       "phi_morph_observable_count_pos",
-      "phi_morph_pooled_median_under_five_pct",
-      "phi_morph_headline_median_under_five_pct",
+      "phi_morph_pooled_median_under_half_pct",
+      "phi_morph_headline_median_under_half_pct",
       "phi_morph_beats_sota_headlines_pos",
       "phi_morph_phi_species_pos",
       "phi_morph_bundle"
@@ -2256,45 +2455,45 @@
     "PlanetaryAtmospheresPriors": [
       "planetary_atmospheres_observable_count_pos",
       "planetary_atmospheres_body_count_pos",
-      "planetary_atmospheres_pooled_median_under_five_pct",
-      "planetary_atmospheres_headline_median_under_five_pct",
+      "planetary_atmospheres_pooled_median_under_half_pct",
+      "planetary_atmospheres_headline_median_under_half_pct",
       "planetary_atmospheres_beats_sota_headlines_pos",
       "planetary_atmospheres_bundle"
     ],
     "PlanetaryStructurePriors": [
       "planetary_structure_body_count_pos",
-      "planetary_structure_median_error_under_five_pct",
+      "planetary_structure_median_error_under_half_pct",
       "planetary_structure_bundle"
     ],
     "PlasmaPhysicsPriors": [
       "plasma_physics_observable_count_pos",
-      "plasma_physics_median_error_under_five_pct",
+      "plasma_physics_median_error_under_half_pct",
       "plasma_physics_bundle"
     ],
     "PortableCloneVerifyPriors": [
       "clone_vf_observable_count_pos",
-      "clone_vf_pooled_median_under_five_pct",
-      "clone_vf_headline_median_under_five_pct",
+      "clone_vf_pooled_median_under_half_pct",
+      "clone_vf_headline_median_under_half_pct",
       "clone_vf_beats_sota_headlines_pos",
       "clone_vf_bundle"
     ],
     "PredictionRederivationPriors": [
       "prediction_rederivation_observable_count_pos",
-      "prediction_rederivation_median_error_under_five_pct",
+      "prediction_rederivation_median_error_under_half_pct",
       "prediction_rederivation_bundle"
     ],
     "PreregisteredPredictionsPriors": [
       "prereg_observable_count_pos",
-      "prereg_pooled_median_under_five_pct",
-      "prereg_headline_median_under_five_pct",
+      "prereg_pooled_median_under_half_pct",
+      "prereg_headline_median_under_half_pct",
       "prereg_beats_sota_headlines_pos",
       "prereg_predictions_pos",
       "prereg_bundle"
     ],
     "ProgrammingLanguageLawsPriors": [
       "pl_laws_observable_count_pos",
-      "pl_laws_pooled_median_under_five_pct",
-      "pl_laws_headline_median_under_five_pct",
+      "pl_laws_pooled_median_under_half_pct",
+      "pl_laws_headline_median_under_half_pct",
       "pl_laws_beats_sota_headlines_pos",
       "pl_laws_law_count_pos",
       "pl_laws_cross_domain_bridges_pos",
@@ -2302,8 +2501,8 @@
     ],
     "ProofCarryingCodeGenomePriors": [
       "proof_cg_observable_count_pos",
-      "proof_cg_pooled_median_under_five_pct",
-      "proof_cg_headline_median_under_five_pct",
+      "proof_cg_pooled_median_under_half_pct",
+      "proof_cg_headline_median_under_half_pct",
       "proof_cg_beats_sota_headlines_pos",
       "proof_cg_oss_pairs_pos",
       "proof_cg_bundle"
@@ -2346,82 +2545,82 @@
     ],
     "PsychologyGapFillPriors": [
       "psychology_gap_fill_observable_count_pos",
-      "psychology_gap_fill_pooled_median_under_five_pct",
-      "psychology_gap_fill_headline_median_under_five_pct",
+      "psychology_gap_fill_pooled_median_under_half_pct",
+      "psychology_gap_fill_headline_median_under_half_pct",
       "psychology_gap_fill_beats_sota_headlines_pos",
       "psychology_gap_fill_bundle"
     ],
     "PubchemCompoundPropertiesPriors": [
       "pubchem_compound_properties_observable_count_pos",
-      "pubchem_compound_properties_median_error_under_five_pct",
+      "pubchem_compound_properties_median_error_under_half_pct",
       "pubchem_compound_properties_bundle"
     ],
     "PureMathematicsExtensionPriors": [
       "pure_mathematics_ext_observable_count_pos",
-      "pure_mathematics_ext_pooled_median_under_five_pct",
-      "pure_mathematics_ext_headline_median_under_five_pct",
+      "pure_mathematics_ext_pooled_median_under_half_pct",
+      "pure_mathematics_ext_headline_median_under_half_pct",
       "pure_mathematics_ext_beats_sota_headlines_pos",
       "pure_mathematics_ext_bundle"
     ],
     "QuantumComputingGapFillPriors": [
       "quantum_computing_gap_fill_observable_count_pos",
-      "quantum_computing_gap_fill_pooled_median_under_five_pct",
-      "quantum_computing_gap_fill_headline_median_under_five_pct",
+      "quantum_computing_gap_fill_pooled_median_under_half_pct",
+      "quantum_computing_gap_fill_headline_median_under_half_pct",
       "quantum_computing_gap_fill_beats_sota_headlines_pos",
       "quantum_computing_gap_fill_bundle"
     ],
     "QuantumMaterialsPriors": [
       "quantum_materials_observable_count_pos",
       "quantum_materials_section_count_pos",
-      "quantum_materials_pooled_median_under_five_pct",
-      "quantum_materials_headline_median_under_five_pct",
+      "quantum_materials_pooled_median_under_half_pct",
+      "quantum_materials_headline_median_under_half_pct",
       "quantum_materials_beats_sota_headlines_pos",
       "quantum_materials_bundle"
     ],
     "QuantumMechanicsGapFillPriors": [
       "quantum_mechanics_gap_fill_observable_count_pos",
-      "quantum_mechanics_gap_fill_pooled_median_under_five_pct",
-      "quantum_mechanics_gap_fill_headline_median_under_five_pct",
+      "quantum_mechanics_gap_fill_pooled_median_under_half_pct",
+      "quantum_mechanics_gap_fill_headline_median_under_half_pct",
       "quantum_mechanics_gap_fill_beats_sota_headlines_pos",
       "quantum_mechanics_gap_fill_bundle"
     ],
     "QuantumOpticsGapFillPriors": [
       "quantum_optics_gap_fill_observable_count_pos",
-      "quantum_optics_gap_fill_pooled_median_under_five_pct",
-      "quantum_optics_gap_fill_headline_median_under_five_pct",
+      "quantum_optics_gap_fill_pooled_median_under_half_pct",
+      "quantum_optics_gap_fill_headline_median_under_half_pct",
       "quantum_optics_gap_fill_beats_sota_headlines_pos",
       "quantum_optics_gap_fill_bundle"
     ],
     "RcsbPdbStructuresPriors": [
       "rcsb_pdb_structures_observable_count_pos",
-      "rcsb_pdb_structures_median_error_under_five_pct",
+      "rcsb_pdb_structures_median_error_under_half_pct",
       "rcsb_pdb_structures_bundle"
     ],
     "RealityFoldingSpinePriors": [
       "fold_spine_observable_count_pos",
-      "fold_spine_pooled_median_under_five_pct",
-      "fold_spine_headline_median_under_five_pct",
+      "fold_spine_pooled_median_under_half_pct",
+      "fold_spine_headline_median_under_half_pct",
       "fold_spine_beats_sota_headlines_pos",
       "fold_spine_ladder_rungs_pos",
       "fold_spine_bundle"
     ],
     "RoboticsControlSystemsExtensionPriors": [
       "robotics_control_ext_observable_count_pos",
-      "robotics_control_ext_pooled_median_under_five_pct",
-      "robotics_control_ext_headline_median_under_five_pct",
+      "robotics_control_ext_pooled_median_under_half_pct",
+      "robotics_control_ext_headline_median_under_half_pct",
       "robotics_control_ext_beats_sota_headlines_pos",
       "robotics_control_ext_bundle"
     ],
     "RustLeanBridgePriors": [
       "rust_lean_bridge_observable_count_pos",
-      "rust_lean_bridge_median_error_under_five_pct",
+      "rust_lean_bridge_median_error_under_half_pct",
       "rust_lean_bridge_bundle"
     ],
     "Scalar": [],
     "SecureSoftwareEngineeringPriors": [
       "secure_sw_observable_count_pos",
-      "secure_sw_pooled_median_under_five_pct",
-      "secure_sw_headline_median_under_five_pct",
+      "secure_sw_pooled_median_under_half_pct",
+      "secure_sw_headline_median_under_half_pct",
       "secure_sw_beats_sota_headlines_pos",
       "secure_sw_bundle"
     ],
@@ -2436,6 +2635,14 @@
       "seismology_match_le_total",
       "seismology_bundle"
     ],
+    "SH0ESRefinedPriors": [
+      "sh0es_refined_observable_count_pos",
+      "sh0es_refined_pooled_median_under_half_pct",
+      "sh0es_refined_headline_median_under_half_pct",
+      "sh0es_refined_beats_sota_headlines_pos",
+      "sh0es_refined_hosts_pos",
+      "sh0es_refined_bundle"
+    ],
     "SmallBodyOrbitsPriors": [
       "small_body_orbit_count_pos",
       "small_body_median_error_under_eight_pct",
@@ -2443,8 +2650,8 @@
     ],
     "SociologyGapFillPriors": [
       "sociology_gap_fill_observable_count_pos",
-      "sociology_gap_fill_pooled_median_under_five_pct",
-      "sociology_gap_fill_headline_median_under_five_pct",
+      "sociology_gap_fill_pooled_median_under_half_pct",
+      "sociology_gap_fill_headline_median_under_half_pct",
       "sociology_gap_fill_beats_sota_headlines_pos",
       "sociology_gap_fill_bundle"
     ],
@@ -2461,7 +2668,7 @@
     ],
     "SpacePropulsionSystemsPriors": [
       "space_propulsion_systems_observable_count_pos",
-      "space_propulsion_systems_median_error_under_five_pct",
+      "space_propulsion_systems_median_error_under_half_pct",
       "space_propulsion_systems_bundle"
     ],
     "SpaceWeatherPriors": [
@@ -2477,15 +2684,15 @@
     ],
     "SpeleologyExtensionPriors": [
       "speleology_ext_observable_count_pos",
-      "speleology_ext_pooled_median_under_five_pct",
-      "speleology_ext_headline_median_under_five_pct",
+      "speleology_ext_pooled_median_under_half_pct",
+      "speleology_ext_headline_median_under_half_pct",
       "speleology_ext_beats_sota_headlines_pos",
       "speleology_ext_bundle"
     ],
     "SportsBiomechanicsGapFillPriors": [
       "sports_biomechanics_gap_fill_observable_count_pos",
-      "sports_biomechanics_gap_fill_pooled_median_under_five_pct",
-      "sports_biomechanics_gap_fill_headline_median_under_five_pct",
+      "sports_biomechanics_gap_fill_pooled_median_under_half_pct",
+      "sports_biomechanics_gap_fill_headline_median_under_half_pct",
       "sports_biomechanics_gap_fill_beats_sota_headlines_pos",
       "sports_biomechanics_gap_fill_bundle"
     ],
@@ -2495,16 +2702,41 @@
       "structure_calibration_links_codon_map",
       "structure_calibration_bundle"
     ],
+    "StumpedObservablesPanelPriors": [
+      "stumped_panel_observable_count_pos",
+      "stumped_panel_pooled_median_under_half_pct",
+      "stumped_panel_headline_median_under_half_pct",
+      "stumped_panel_beats_sota_headlines_pos",
+      "stumped_panel_open_predictions_pos",
+      "stumped_panel_bundle"
+    ],
+    "StumpedObservablesSpinePriors": [
+      "stumped_spine_observable_count_pos",
+      "stumped_spine_pooled_median_under_half_pct",
+      "stumped_spine_headline_median_under_half_pct",
+      "stumped_spine_beats_sota_headlines_pos",
+      "stumped_spine_spine_sectors_pos",
+      "stumped_spine_bundle"
+    ],
     "SupplyChainLogisticsExtensionPriors": [
       "supply_chain_ext_observable_count_pos",
-      "supply_chain_ext_pooled_median_under_five_pct",
-      "supply_chain_ext_headline_median_under_five_pct",
+      "supply_chain_ext_pooled_median_under_half_pct",
+      "supply_chain_ext_headline_median_under_half_pct",
       "supply_chain_ext_beats_sota_headlines_pos",
       "supply_chain_ext_bundle"
     ],
+    "SymbolicArchetypePanelPriors": [
+      "symbolic_archetype_panel_observable_count_pos",
+      "symbolic_archetype_panel_pooled_median_under_half_pct",
+      "symbolic_archetype_panel_headline_median_under_half_pct",
+      "symbolic_archetype_panel_beats_sota_headlines_pos",
+      "symbolic_archetype_panel_archetypes_pos",
+      "symbolic_archetype_panel_nodes_pos",
+      "symbolic_archetype_panel_bundle"
+    ],
     "SyntheticBiologyPriors": [
       "synthetic_biology_observable_count_pos",
-      "synthetic_biology_median_error_under_five_pct",
+      "synthetic_biology_median_error_under_half_pct",
       "synthetic_biology_bundle"
     ],
     "TectonicsPriors": [
@@ -2571,8 +2803,8 @@
     ],
     "TheoryCompletenessSpinePriors": [
       "toe_spine_observable_count_pos",
-      "toe_spine_pooled_median_under_five_pct",
-      "toe_spine_headline_median_under_five_pct",
+      "toe_spine_pooled_median_under_half_pct",
+      "toe_spine_headline_median_under_half_pct",
       "toe_spine_beats_sota_headlines_pos",
       "toe_spine_spine_complete_attachments",
       "toe_spine_bundle"
@@ -2585,25 +2817,41 @@
       "thesis_simulation_components_le_total",
       "thesis_simulation_bundle"
     ],
+    "TimeDomainCrosswalkPriors": [
+      "time_xw_observable_count_pos",
+      "time_xw_pooled_median_under_half_pct",
+      "time_xw_headline_median_under_half_pct",
+      "time_xw_beats_sota_headlines_pos",
+      "time_xw_crosswalk_domains_pos",
+      "time_xw_bundle"
+    ],
+    "TimeEmergenceSimulationPriors": [
+      "time_em_observable_count_pos",
+      "time_em_pooled_median_under_half_pct",
+      "time_em_headline_median_under_half_pct",
+      "time_em_beats_sota_headlines_pos",
+      "time_em_scales_complete",
+      "time_em_bundle"
+    ],
     "ToEGapClosureSpinePriors": [
       "gap_spine_observable_count_pos",
-      "gap_spine_pooled_median_under_five_pct",
-      "gap_spine_headline_median_under_five_pct",
+      "gap_spine_pooled_median_under_half_pct",
+      "gap_spine_headline_median_under_half_pct",
       "gap_spine_beats_sota_headlines_pos",
       "gap_spine_pillars_pos",
       "gap_spine_bundle"
     ],
     "ToEUnificationSpinePriors": [
       "toe_unity_observable_count_pos",
-      "toe_unity_pooled_median_under_five_pct",
-      "toe_unity_headline_median_under_five_pct",
+      "toe_unity_pooled_median_under_half_pct",
+      "toe_unity_headline_median_under_half_pct",
       "toe_unity_beats_sota_headlines_pos",
       "toe_unity_coupling_nodes_pos",
       "toe_unity_bundle"
     ],
     "TokenizationSmokePriors": [
       "tokenization_smoke_observable_count_pos",
-      "tokenization_smoke_median_error_under_five_pct",
+      "tokenization_smoke_median_error_under_half_pct",
       "tokenization_smoke_bundle"
     ],
     "TrinaryFluidPriors": [
@@ -2614,17 +2862,17 @@
     ],
     "TrinaryHardwareMotifPriors": [
       "trinary_hardware_motif_observable_count_pos",
-      "trinary_hardware_motif_median_error_under_five_pct",
+      "trinary_hardware_motif_median_error_under_half_pct",
       "trinary_hardware_motif_bundle"
     ],
     "TrinaryOSISARebuildPriors": [
       "trinary_os_isa_rebuild_observable_count_pos",
-      "trinary_os_isa_rebuild_median_error_under_five_pct",
+      "trinary_os_isa_rebuild_median_error_under_half_pct",
       "trinary_os_isa_rebuild_bundle"
     ],
     "TrinaryOSPortablePriors": [
       "trinary_os_portable_observable_count_pos",
-      "trinary_os_portable_median_error_under_five_pct",
+      "trinary_os_portable_median_error_under_half_pct",
       "trinary_os_portable_bundle"
     ],
     "TrinaryOSPriors": [
@@ -2634,14 +2882,14 @@
     ],
     "TrinaryOSRoundTripPriors": [
       "trinary_os_round_trip_observable_count_pos",
-      "trinary_os_round_trip_median_error_under_five_pct",
+      "trinary_os_round_trip_median_error_under_half_pct",
       "trinary_os_round_trip_bundle"
     ],
     "TrinaryOSTierEPriors": [
       "trinary_os_tier_e_observable_count_pos",
       "trinary_os_tier_e_oracle_count_pos",
-      "trinary_os_tier_e_pooled_median_under_five_pct",
-      "trinary_os_tier_e_headline_median_under_five_pct",
+      "trinary_os_tier_e_pooled_median_under_half_pct",
+      "trinary_os_tier_e_headline_median_under_half_pct",
       "trinary_os_tier_e_beats_sota_headlines_pos",
       "trinary_os_tier_e_bundle"
     ],
@@ -2654,7 +2902,7 @@
     ],
     "UniprotProteinAnnotationsPriors": [
       "uniprot_protein_annotations_observable_count_pos",
-      "uniprot_protein_annotations_median_error_under_five_pct",
+      "uniprot_protein_annotations_median_error_under_half_pct",
       "uniprot_protein_annotations_bundle"
     ],
     "VibRegisterPriors": [
@@ -2665,14 +2913,14 @@
     ],
     "VirologyExtensionPriors": [
       "virology_ext_observable_count_pos",
-      "virology_ext_pooled_median_under_five_pct",
-      "virology_ext_headline_median_under_five_pct",
+      "virology_ext_pooled_median_under_half_pct",
+      "virology_ext_headline_median_under_half_pct",
       "virology_ext_beats_sota_headlines_pos",
       "virology_ext_bundle"
     ],
     "VlDistillAtlasPriors": [
       "vl_distill_atlas_observable_count_pos",
-      "vl_distill_atlas_median_error_under_five_pct",
+      "vl_distill_atlas_median_error_under_half_pct",
       "vl_distill_atlas_bundle"
     ],
     "WeatherPriors": [
@@ -2682,29 +2930,29 @@
     ],
     "WorldBankDevelopmentPriors": [
       "world_bank_development_observable_count_pos",
-      "world_bank_development_median_error_under_five_pct",
+      "world_bank_development_median_error_under_half_pct",
       "world_bank_development_bundle"
     ],
     "ZeroDayRiskEvaluatorPriors": [
       "zero_day_eval_observable_count_pos",
-      "zero_day_eval_pooled_median_under_five_pct",
-      "zero_day_eval_headline_median_under_five_pct",
+      "zero_day_eval_pooled_median_under_half_pct",
+      "zero_day_eval_headline_median_under_half_pct",
       "zero_day_eval_beats_sota_headlines_pos",
       "zero_day_eval_hole_count_certified",
       "zero_day_eval_bundle"
     ],
     "ZoologyExtensionPriors": [
       "zoology_ext_observable_count_pos",
-      "zoology_ext_pooled_median_under_five_pct",
-      "zoology_ext_headline_median_under_five_pct",
+      "zoology_ext_pooled_median_under_half_pct",
+      "zoology_ext_headline_median_under_half_pct",
       "zoology_ext_beats_sota_headlines_pos",
       "zoology_ext_bundle"
     ]
   },
   "source_manifest_sha256": {
     "FSOT/Formal/Scalar.lean": "D406DBD020F8A22F635C13F2EB22AD02174D95F90813877118F054791B79F19E",
-    "FSOT/Formal/Bounds.lean": "FC595D807C1F391AD08B98D627F98E9C80BD7A0670F8D0BEE898017FF4F58FFB",
-    "FSOT/Formal/Theorems.lean": "7BBCC598D31EFFDC9FFD5145A90C6D0F5D5892AF165EBE88BF9C7AEF1E213E23",
+    "FSOT/Formal/Bounds.lean": "0073CF4790D4E6B9BFA6B0D1C0AC9B8688736B06A7B6CFCA1576292870AC5EB1",
+    "FSOT/Formal/Theorems.lean": "1F598240C89B7EA5A9F4D3DF58BA4A47919E117C6FD186AA1CC09D0B4885A00C",
     "FSOT/Formal/Cosmology.lean": "FBAA456C96AB8350193ECD1E373321A64F97119B0B58690EBCDE8EE5E3D33931",
     "FSOT/Formal/Domains.lean": "8788FFA993AD3C8F2A2FEFA04484FEE8F6C8637365EDFCB812154B068478543E",
     "FSOT/Formal/Genomic.lean": "36F4F7263922401FCF60CDDC24514A4AA1A6373B0EC528CFA2FF9C9EE9E7E47F",
@@ -2721,13 +2969,18 @@
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
+  "formal_module_count": 227,
+  "lean_target_count": 228,
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",
     "verify_full": "python scripts/fsot_verification_runner.py",
-    "lean_build": "lake build FSOT.Formal.Bounds FSOT.Formal.Scalar FSOT.Formal.Theorems FSOT.Formal.Cosmology FSOT.Formal.Domains FSOT.Formal.Genomic FSOT.Formal.BrainPriors FSOT.Formal.CodonPriors FSOT.Formal.ProteinPriors FSOT.Formal.ProteinFormulas FSOT.Formal.CosmologyLab FSOT.Formal.FuelPriors FSOT.Formal.SpeciesPriors FSOT.Formal.CameoPriors FSOT.Formal.TrinaryOSPriors FSOT.Formal.PhotonicForge FSOT.Formal.VibRegisterPriors FSOT.Formal.MagneticStringPriors FSOT.Formal.EvolutionPriors FSOT.Formal.WeatherPriors FSOT.Formal.LinguisticsPriors FSOT.Formal.UnifiedDBPriors FSOT.Formal.KronosPriors FSOT.Formal.KnowledgeBasePriors FSOT.Formal.MathGeneratorPriors FSOT.Formal.TrinaryFluidPriors FSOT.Formal.SoulSiblingPriors FSOT.Formal.LeanProofsBridge FSOT.Formal.FormulaCorpusPriors FSOT.Formal.CellularPriors FSOT.Formal.BlackHoleThesisPriors FSOT.Formal.NeuronHybridPriors FSOT.Formal.NeuronCohortPriors FSOT.Formal.NeuronCohortStrataPriors FSOT.Formal.AetherPrimePriors FSOT.Formal.MagicCirclePriors FSOT.Formal.ExperimentSynthesisPriors FSOT.Formal.DomainCoveragePriors FSOT.Formal.DomainPrecisionPriors FSOT.Formal.IntelligenceCompressionPriors FSOT.Formal.PlasmaPhysicsPriors FSOT.Formal.ImmunologyPriors FSOT.Formal.ClimateSciencePriors FSOT.Formal.BiologyStrictEmpiricalPriors FSOT.Formal.NeuronCohortTrainHoldoutPriors FSOT.Formal.ThesisSimulationPriors FSOT.Formal.EmergentDomainPriors FSOT.Formal.CosmologyExtendedPriors FSOT.Formal.BubbleBleedPriors FSOT.Formal.ParticlePhysicsPriors FSOT.Formal.CosmologyHigherWavesPriors FSOT.Formal.CosmologyWave4Priors FSOT.Formal.CosmologyWave5Priors FSOT.Formal.CosmologyWave6Priors FSOT.Formal.CosmologyWave7Priors FSOT.Formal.CosmologyWave8Priors FSOT.Formal.CosmologyWave9Priors FSOT.Formal.CosmologyWave10Priors FSOT.Formal.HiggsBranchingPriors FSOT.Formal.SpaceWeatherPriors FSOT.Formal.HydrologyPriors FSOT.Formal.PharmacologyPriors FSOT.Formal.CryospherePriors FSOT.Formal.SeismologyPriors FSOT.Formal.TectonicsPriors FSOT.Formal.GeomagnetismPriors FSOT.Formal.PlanetaryStructurePriors FSOT.Formal.OrbitalMechanicsPriors FSOT.Formal.SmallBodyOrbitsPriors FSOT.Formal.MagnetospherePriors FSOT.Formal.GraceCryospherePriors FSOT.Formal.SeismologyDeepPriors FSOT.Formal.PlanetaryAtmospheresPriors FSOT.Formal.MagnetosphereExtendedPriors FSOT.Formal.GeochemistryPriors FSOT.Formal.OncologyPriors FSOT.Formal.NeuroimmunologyPriors FSOT.Formal.SyntheticBiologyPriors FSOT.Formal.QuantumMaterialsPriors FSOT.Formal.NeuronMultiHeroPriors FSOT.Formal.LinguisticsFormalPriors FSOT.Formal.MathematicsComputationalPriors FSOT.Formal.MaterialsEngineeringPriors FSOT.Formal.ComputationalReasoningPriors FSOT.Formal.MathGeneratorRulesEvalPriors FSOT.Formal.TrinaryOSPortablePriors FSOT.Formal.MaterialsSpeciesBridgePriors FSOT.Formal.IGEMSyntheticBiologyPriors FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors FSOT.Formal.TrinaryOSISARebuildPriors FSOT.Formal.Lab FSOT",
-    "export": "python scripts/export_certificate.py",
+    "rebuild_lean": "python scripts/rebuild_all_lean.py",
+    "lean_build": "lake build",
+    "export": "python scripts/export_certificate.py --lean-ok",
     "contributing": "CONTRIBUTING.md",
-    "external_data": "data/external_data_manifest.yaml"
+    "external_data": "data/external_data_manifest.yaml",
+    "api_requirements": "data/api_requirements.yaml",
+    "expansion_roadmap": "data/expansion_roadmap.yaml"
   }
 }

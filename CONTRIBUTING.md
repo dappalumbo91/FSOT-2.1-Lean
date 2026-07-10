@@ -22,10 +22,15 @@ Portable mode uses:
 
 See `data/external_data_manifest.yaml` for the full bundled vs cached vs optional breakdown.
 
+**API sources and full rebuild:** `data/api_requirements.yaml` lists every public ingest endpoint, optional API keys, and the ordered rebuild pipeline.
+
+**Expansion roadmap:** `data/expansion_roadmap.yaml` documents planned tiers (stellar multiplicity, materials, genetics) and the proprietary/discoverability boundary.
+
 ## Requirements
 
-- **Lean 4** + `lake` on `PATH`
+- **Lean 4** + `lake` on `PATH` (see `lean-toolchain`)
 - **Python 3.10+** with `PyYAML` (`pip install PyYAML`)
+- **Network** — only required for full data re-ingest; portable verify uses bundled `vendor/` + `data/` caches
 
 ## Verification modes
 
@@ -35,6 +40,29 @@ See `data/external_data_manifest.yaml` for the full bundled vs cached vs optiona
 | Full | `python scripts/fsot_verification_runner.py` | Author machine with optional Desktop lab mirrors |
 
 Portable mode skips Desktop-only rebuild steps (lab ingest, NOAA re-fetch, Lean regeneration) and verifies against bundled assets plus cached `data/` benchmarks.
+
+## Full reproducibility (clone → rebuild → verify)
+
+```bash
+# 1. Portable verify (no network, no Desktop mirrors)
+lake build
+python scripts/fsot_verification_runner.py --portable
+python scripts/verify_extension_domains.py
+
+# 2. Regenerate all Lean certificates from benchmark JSON
+python scripts/rebuild_all_lean.py
+lake build
+python scripts/export_certificate.py --lean-ok
+
+# 3. Full data rebuild (network + optional FSOT_EXTERNAL_DATA_ROOT)
+python scripts/sync_canonical_constants.py
+python scripts/ingest_tier38_public_data.py          # see data/api_requirements.yaml
+python scripts/build_astrophysical_structure_crosswalk_benchmark.py
+python scripts/rebuild_all_lean.py
+python scripts/build_fsot_verification_progress.py
+```
+
+Lean priors under `FSOT/Formal/*Priors.lean` are **generated** — edit benchmarks and `scripts/*_lib.py`, then run `rebuild_all_lean.py`. Hand-edit only core spine modules (`Domains.lean`, `Bounds.lean`, `Theorems.lean`).
 
 ## Path resolution
 

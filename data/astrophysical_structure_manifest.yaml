@@ -1,0 +1,32 @@
+# Tier 52 — astrophysical structure crosswalk (public catalogs only)
+version: "1.0"
+updated: "2026-07-10"
+domain: Astrophysical_Structure_Crosswalk
+tier: 52
+
+disclaimer: >
+  Published observables from WDS, literature, JPL/NASA panels, and public GW releases.
+  No undisclosed material, fuel, or mass-prediction formulas in this tier.
+
+bundled:
+  catalog: vendor/stellar_structures/public_multiplicity_catalog.json
+  crosswalk_benchmarks:
+    - data/orbital_mechanics_benchmark.json
+    - data/planetary_structure_benchmark.json
+    - data/small_body_orbits_benchmark.json
+    - data/nasa_exoplanet_archive_benchmark.json
+
+optional_live_ingest:
+  roadmap: data/expansion_roadmap.yaml
+  apis: data/api_requirements.yaml#astrophysics_catalogs
+
+pipeline:
+  build: scripts/build_astrophysical_structure_crosswalk_benchmark.py
+  lean: scripts/gen_tier52_astrophysical_lean.py
+  verify: scripts/verify_extension_domains.py
+
+structure_classes:
+  - binary_star
+  - trinary_star
+  - binary_black_hole
+  - binary_neutron_star

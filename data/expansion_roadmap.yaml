@@ -1,0 +1,85 @@
+# FSOT interdisciplinary expansion roadmap — public-data first, preregister before novel claims.
+version: "1.0"
+updated: "2026-07-10"
+policy: >
+  Ship verification against published observables in-repo. Reserve novel material,
+  fuel, and undisclosed formula channels for preregistered_predictions_manifest.yaml
+  so independent researchers can reproduce discoveries on their own.
+
+completed_tiers:
+  tier_51:
+    - Consciousness_Soul_Bridge
+    - Symbolic_Archetype_Panel
+  tier_52:
+    - Astrophysical_Structure_Crosswalk
+
+priority_queue:
+  stellar_galactic_public:
+    tier: 53
+    status: planned
+    domains:
+      - name: Stellar_Multiplicity_Catalog
+        public_sources: [vizier_wds, simbad_tap]
+        observables: [orbital_period, separation_au, multiplicity_class]
+        maps_to_lean: [astronomical, galactic]
+        note: "Binary/trinary stars — Kepler closure vs published masses only"
+      - name: Compact_Object_Binary_Events
+        public_sources: [gwosc]
+        observables: [chirp_mass_msun, mass_ratio, spin]
+        note: "LIGO/Virgo public events — no undisclosed mass predictions"
+      - name: Galactic_Structure_Sample
+        public_sources: [gaia_dr3_tap, nasa_exoplanet_tap]
+        observables: [parallax, pm_total, metallicity]
+        crosswalk: [Orbital_Mechanics, NASA_Exoplanet_Archive]
+
+  planetary_solar_public:
+    tier: 54
+    status: planned
+    domains:
+      - name: Solar_System_Structure_Deep
+        build_on: [Planetary_Structure, Planetary_Atmospheres, Small_Body_Orbits]
+        ingest: scripts/ingest_planetary_jpl.py
+        note: "JPL Horizons — already partially covered; deepen moon/planet ring metrics"
+      - name: Exoplanet_System_Architecture
+        build_on: [NASA_Exoplanet_Archive]
+        observables: [period, semi_major, eccentricity, multiplicity]
+
+  chemistry_materials_public:
+    tier: 55
+    status: planned
+    proprietary_gate: preregistered_predictions_manifest.yaml
+    domains:
+      - name: PubChem_Stability_Panel
+        public_sources: [pubchem]
+        observables: [molecular_weight, smiles, xlogp]
+        note: "Catalog verification — novel stability claims require prereg"
+      - name: Materials_Genome_Crosswalk
+        build_on: [Materials_Engineering, Quantum_Materials, Materials_Species_Bridge]
+        note: "Interdisciplinary simulation scaffold; export only published properties"
+
+  genetics_public:
+    tier: 56
+    status: planned
+    domains:
+      - name: UniProt_Structure_Annotations_Deep
+        build_on: [UniProt_Protein_Annotations, RCSB_PDB_Structures]
+      - name: IGEM_Parts_Expanded
+        build_on: [IGEM_Synthetic_Biology, IGEM_Live_FASTA_Ingest]
+
+  interdisciplinary_simulation:
+    tier: 57
+    status: research
+    proprietary_gate: preregistered_predictions_manifest.yaml
+    channels:
+      - material_emergence_scaffold
+      - fuel_candidate_screening
+      - chemical_structure_stability
+    note: >
+      FSOT can screen candidate structures in silico; public repo exports only
+      validation against NIST/PubChem/RCSB anchors until preregistered release.
+
+discoverability_principles:
+  - "Public repo = reproducible verification against published data"
+  - "Novel formulas with commercial or discovery value → preregister first"
+  - "Bundled vendor summaries let anyone verify without API keys"
+  - "Full rebuild documented in data/api_requirements.yaml"

@@ -2011,6 +2011,20 @@ extension_domains:
     lean_module: FSOT.Formal.SymbolicArchetypePanelPriors
     note: "Cross-cultural narrative archetype tags → FSOT scalar proxies (symbolic encoding panel, not doctrinal claims)"
 
+  Astrophysical_Structure_Crosswalk:
+    tier: 52
+    D_eff: 18
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic, particle]
+    ingest_script: null
+    build_script: scripts/build_astrophysical_structure_crosswalk_benchmark.py
+    manifest: data/astrophysical_structure_manifest.yaml
+    benchmark_data: data/astrophysical_structure_crosswalk_benchmark.json
+    lean_module: FSOT.Formal.AstrophysicalStructureCrosswalkPriors
+    note: "Public stellar/planetary/GW catalog crosswalk — published observables only; novel formulas require preregistration"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

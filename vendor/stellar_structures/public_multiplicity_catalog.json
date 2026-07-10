@@ -1,0 +1,122 @@
+{
+  "catalog_version": "1.0",
+  "disclaimer": "Published observables from WDS, literature, and GWOSC-style public releases. Verification anchors only — no undisclosed FSOT predictions.",
+  "authority_notes": [
+    "Washington Double Star Catalog (WDS) separations/periods where cited",
+    "NASA/IPAC Exoplanet Archive for hierarchical multiples",
+    "LIGO/Virgo/KAGRA public event summaries for compact-object binaries"
+  ],
+  "systems": [
+    {
+      "id": "Sirius_AB",
+      "structure_class": "binary_star",
+      "multiplicity": 2,
+      "period_years": 50.128,
+      "separation_au": 20.0,
+      "total_mass_msun": 2.02,
+      "source": "WDS/literature"
+    },
+    {
+      "id": "Alpha_Cen_AB",
+      "structure_class": "binary_star",
+      "multiplicity": 2,
+      "period_years": 79.91,
+      "separation_au": 23.4,
+      "total_mass_msun": 2.1,
+      "source": "WDS/literature"
+    },
+    {
+      "id": "Alpha_Cen_ABC",
+      "structure_class": "trinary_star",
+      "multiplicity": 3,
+      "period_years": 79.91,
+      "outer_period_years": 550000,
+      "separation_au": 23.4,
+      "total_mass_msun": 2.1,
+      "source": "literature hierarchical"
+    },
+    {
+      "id": "Procyon_AaAb",
+      "structure_class": "binary_star",
+      "multiplicity": 2,
+      "period_years": 40.84,
+      "separation_au": 8.9,
+      "total_mass_msun": 1.49,
+      "source": "WDS/literature"
+    },
+    {
+      "id": "61_Cyg_A",
+      "structure_class": "binary_star",
+      "multiplicity": 2,
+      "period_years": 722.0,
+      "separation_au": 86.0,
+      "total_mass_msun": 0.7,
+      "source": "WDS"
+    },
+    {
+      "id": "70_Oph_Ab",
+      "structure_class": "binary_star",
+      "multiplicity": 2,
+      "period_years": 88.38,
+      "separation_au": 23.5,
+      "total_mass_msun": 1.5,
+      "source": "WDS"
+    },
+    {
+      "id": "Gliese_667C",
+      "structure_class": "trinary_star",
+      "multiplicity": 3,
+      "period_years": 30.0,
+      "outer_period_years": 197.0,
+      "separation_au": 1.8,
+      "total_mass_msun": 0.9,
+      "source": "literature"
+    },
+    {
+      "id": "Castor_AaBa",
+      "structure_class": "trinary_star",
+      "multiplicity": 6,
+      "period_years": 445.0,
+      "separation_au": 100.0,
+      "total_mass_msun": 5.8,
+      "source": "WDS/literature sextuple"
+    },
+    {
+      "id": "Mizar_A",
+      "structure_class": "binary_star",
+      "multiplicity": 4,
+      "period_years": 5000.0,
+      "separation_au": 380.0,
+      "total_mass_msun": 5.0,
+      "source": "WDS"
+    },
+    {
+      "id": "GW150914",
+      "structure_class": "binary_black_hole",
+      "multiplicity": 2,
+      "chirp_mass_msun": 28.6,
+      "source": "LIGO public GW150914"
+    },
+    {
+      "id": "GW170817",
+      "structure_class": "binary_neutron_star",
+      "multiplicity": 2,
+      "chirp_mass_msun": 1.186,
+      "source": "LIGO/Virgo public GW170817"
+    },
+    {
+      "id": "GW190521",
+      "structure_class": "binary_black_hole",
+      "multiplicity": 2,
+      "chirp_mass_msun": 72.0,
+      "source": "LIGO/Virgo public GW190521"
+    },
+    {
+      "id": "GW240109",
+      "structure_class": "binary_black_hole",
+      "multiplicity": 2,
+      "chirp_mass_msun": 85.0,
+      "source": "LIGO public summary 2024"
+    }
+  ]
+}

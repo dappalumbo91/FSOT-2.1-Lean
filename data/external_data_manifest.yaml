@@ -1,6 +1,8 @@
 # Bundled vs optional external data for portable FSOT verification.
-version: "1.0"
-updated: "2026-07-04"
+version: "1.1"
+updated: "2026-07-10"
+api_requirements: data/api_requirements.yaml
+expansion_roadmap: data/expansion_roadmap.yaml
 
 bundled:
   fsot_compute:
@@ -229,6 +231,11 @@ bundled:
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification
+
+  stellar_structures_catalog:
+    path: vendor/stellar_structures/public_multiplicity_catalog.json
+    role: Tier 52 public binary/trinary star and GW event anchors (WDS/literature/LIGO public)
+    env_override: FSOT_STELLAR_STRUCTURES_CATALOG
 
 cached_in_repo:
   description: >

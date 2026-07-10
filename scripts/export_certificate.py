@@ -32,101 +32,33 @@ REGISTRY_PATH = DATA / "lab_registry.json"
 TOOLCHAIN_PATH = ROOT / "lean-toolchain"
 FORMAL_DIR = ROOT / "FSOT" / "Formal"
 
-LEAN_TARGETS = [
+LEAN_CORE_TARGETS = [
     "FSOT.Formal.Bounds",
     "FSOT.Formal.Scalar",
     "FSOT.Formal.Theorems",
     "FSOT.Formal.Cosmology",
     "FSOT.Formal.Domains",
     "FSOT.Formal.Genomic",
-    "FSOT.Formal.BrainPriors",
-    "FSOT.Formal.CodonPriors",
-    "FSOT.Formal.ProteinPriors",
-    "FSOT.Formal.ProteinFormulas",
     "FSOT.Formal.CosmologyLab",
-    "FSOT.Formal.FuelPriors",
-    "FSOT.Formal.SpeciesPriors",
-    "FSOT.Formal.CameoPriors",
-    "FSOT.Formal.TrinaryOSPriors",
-    "FSOT.Formal.PhotonicForge",
-    "FSOT.Formal.VibRegisterPriors",
-    "FSOT.Formal.MagneticStringPriors",
-    "FSOT.Formal.EvolutionPriors",
-    "FSOT.Formal.WeatherPriors",
-    "FSOT.Formal.LinguisticsPriors",
-    "FSOT.Formal.UnifiedDBPriors",
-
-    "FSOT.Formal.KronosPriors",
-    "FSOT.Formal.KnowledgeBasePriors",
-    "FSOT.Formal.MathGeneratorPriors",
-    "FSOT.Formal.TrinaryFluidPriors",
-    "FSOT.Formal.SoulSiblingPriors",
-    "FSOT.Formal.LeanProofsBridge",
-    "FSOT.Formal.FormulaCorpusPriors",
-    "FSOT.Formal.CellularPriors",
-    "FSOT.Formal.BlackHoleThesisPriors",
-    "FSOT.Formal.NeuronHybridPriors",
-    "FSOT.Formal.NeuronCohortPriors",
-    "FSOT.Formal.NeuronCohortStrataPriors",
-    "FSOT.Formal.AetherPrimePriors",
-    "FSOT.Formal.MagicCirclePriors",
-    "FSOT.Formal.ExperimentSynthesisPriors",
-    "FSOT.Formal.DomainCoveragePriors",
-    "FSOT.Formal.DomainPrecisionPriors",
-    "FSOT.Formal.IntelligenceCompressionPriors",
-    "FSOT.Formal.PlasmaPhysicsPriors",
-    "FSOT.Formal.ImmunologyPriors",
-    "FSOT.Formal.ClimateSciencePriors",
-    "FSOT.Formal.BiologyStrictEmpiricalPriors",
-    "FSOT.Formal.NeuronCohortTrainHoldoutPriors",
-    "FSOT.Formal.ThesisSimulationPriors",
-    "FSOT.Formal.EmergentDomainPriors",
-    "FSOT.Formal.CosmologyExtendedPriors",
-    "FSOT.Formal.BubbleBleedPriors",
-    "FSOT.Formal.ParticlePhysicsPriors",
-    "FSOT.Formal.CosmologyHigherWavesPriors",
-    "FSOT.Formal.CosmologyWave4Priors",
-    "FSOT.Formal.CosmologyWave5Priors",
-    "FSOT.Formal.CosmologyWave6Priors",
-    "FSOT.Formal.CosmologyWave7Priors",
-    "FSOT.Formal.CosmologyWave8Priors",
-    "FSOT.Formal.CosmologyWave9Priors",
-    "FSOT.Formal.CosmologyWave10Priors",
-    "FSOT.Formal.HiggsBranchingPriors",
-    "FSOT.Formal.SpaceWeatherPriors",
-    "FSOT.Formal.HydrologyPriors",
-    "FSOT.Formal.PharmacologyPriors",
-    "FSOT.Formal.CryospherePriors",
-    "FSOT.Formal.SeismologyPriors",
-    "FSOT.Formal.TectonicsPriors",
-    "FSOT.Formal.GeomagnetismPriors",
-    "FSOT.Formal.PlanetaryStructurePriors",
-    "FSOT.Formal.OrbitalMechanicsPriors",
-    "FSOT.Formal.SmallBodyOrbitsPriors",
-    "FSOT.Formal.MagnetospherePriors",
-    "FSOT.Formal.GraceCryospherePriors",
-    "FSOT.Formal.SeismologyDeepPriors",
-    "FSOT.Formal.PlanetaryAtmospheresPriors",
-    "FSOT.Formal.MagnetosphereExtendedPriors",
-    "FSOT.Formal.GeochemistryPriors",
-    "FSOT.Formal.OncologyPriors",
-    "FSOT.Formal.NeuroimmunologyPriors",
-    "FSOT.Formal.SyntheticBiologyPriors",
-    "FSOT.Formal.QuantumMaterialsPriors",
-    "FSOT.Formal.NeuronMultiHeroPriors",
-    "FSOT.Formal.LinguisticsFormalPriors",
-    "FSOT.Formal.MathematicsComputationalPriors",
-    "FSOT.Formal.MaterialsEngineeringPriors",
-    "FSOT.Formal.ComputationalReasoningPriors",
-    "FSOT.Formal.MathGeneratorRulesEvalPriors",
-    "FSOT.Formal.TrinaryOSPortablePriors",
-    "FSOT.Formal.MaterialsSpeciesBridgePriors",
-    "FSOT.Formal.IGEMSyntheticBiologyPriors",
-    "FSOT.Formal.MathGeneratorBenchmarkFormulaEvalPriors",
-    "FSOT.Formal.TrinaryOSISARebuildPriors",
     "FSOT.Formal.Lab",
     "FSOT",
 ]
+
+
+def discover_lean_targets() -> list[str]:
+    """Merge core spine modules with every FSOT.Formal.* file on disk."""
+    seen: set[str] = set(LEAN_CORE_TARGETS)
+    ordered = list(LEAN_CORE_TARGETS)
+    if FORMAL_DIR.exists():
+        for path in sorted(FORMAL_DIR.glob("*.lean")):
+            mod = f"FSOT.Formal.{path.stem}"
+            if mod not in seen:
+                seen.add(mod)
+                ordered.append(mod)
+    return ordered
+
+
+LEAN_TARGETS = discover_lean_targets()
 
 THEOREM_RE = re.compile(r"^\s*(theorem|lemma)\s+([A-Za-z0-9_']+)")
 
@@ -201,6 +133,7 @@ def build_certificate(*, lean_build_ok: bool, authority_path: str | None = None)
     cache = json.loads(CACHE_PATH.read_text(encoding="utf-8")) if CACHE_PATH.exists() else {}
     ledger = load_ledger()
     formal = scan_formal_theorems()
+    lean_targets = discover_lean_targets()
 
     sorry_count = sum(count_sorry(p) for p in FORMAL_DIR.glob("*.lean"))
 
@@ -243,7 +176,7 @@ def build_certificate(*, lean_build_ok: bool, authority_path: str | None = None)
         "lean_toolchain": read_toolchain(),
         "mathlib_pin": "v4.31.0",
         "lean_build_ok": lean_build_ok,
-        "lean_targets": LEAN_TARGETS,
+        "lean_targets": lean_targets,
         "sorry_count_formal": sorry_count,
         "authority": {
             "path": authority_path or hash_gate.get("authority_path"),
@@ -274,14 +207,19 @@ def build_certificate(*, lean_build_ok: bool, authority_path: str | None = None)
         },
         "formal_theorem_inventory": formal,
         "source_manifest_sha256": source_manifest,
+        "formal_module_count": len(formal),
+        "lean_target_count": len(lean_targets),
         "reproduce": {
             "sync_constants": "python scripts/sync_canonical_constants.py",
             "verify_portable": "python scripts/fsot_verification_runner.py --portable",
             "verify_full": "python scripts/fsot_verification_runner.py",
-            "lean_build": "lake build " + " ".join(LEAN_TARGETS),
-            "export": "python scripts/export_certificate.py",
+            "rebuild_lean": "python scripts/rebuild_all_lean.py",
+            "lean_build": "lake build",
+            "export": "python scripts/export_certificate.py --lean-ok",
             "contributing": "CONTRIBUTING.md",
             "external_data": "data/external_data_manifest.yaml",
+            "api_requirements": "data/api_requirements.yaml",
+            "expansion_roadmap": "data/expansion_roadmap.yaml",
         },
     }
     return cert

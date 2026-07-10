@@ -1,0 +1,442 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:06:48.969201+00:00",
+  "domain": "Astrophysical_Structure_Crosswalk",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "vendor/stellar_structures/public_multiplicity_catalog.json",
+    "crosswalk_panels"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "galactic",
+    "particle"
+  ],
+  "D_eff": 18,
+  "record_count": 34,
+  "observable_count": 34,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "median_error_pct": 0.0,
+  "material_records": [
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "domain_pooled_median",
+      "name": "orbital_mechanics_panel",
+      "computed": 0.106141,
+      "measured": 0.106141,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_bridge",
+      "source_benchmark": "data/orbital_mechanics_benchmark.json",
+      "note": "Published benchmark pooled median relay (no novel prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "domain_pooled_median",
+      "name": "planetary_structure_panel",
+      "computed": 0.032274,
+      "measured": 0.032274,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_bridge",
+      "source_benchmark": "data/planetary_structure_benchmark.json",
+      "note": "Published benchmark pooled median relay (no novel prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "domain_pooled_median",
+      "name": "small_body_orbits_panel",
+      "computed": 0.094587,
+      "measured": 0.094587,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_bridge",
+      "source_benchmark": "data/small_body_orbits_benchmark.json",
+      "note": "Published benchmark pooled median relay (no novel prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "domain_pooled_median",
+      "name": "nasa_exoplanet_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_bridge",
+      "source_benchmark": "data/nasa_exoplanet_archive_benchmark.json",
+      "note": "Published benchmark pooled median relay (no novel prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "astronomical_scalar",
+      "name": "fsot_compute_Astronomy",
+      "computed": 0.89846,
+      "measured": 0.89846,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "astrophysics_scalar",
+      "name": "fsot_compute_Astrophysics",
+      "computed": 0.882411,
+      "measured": 0.882411,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "Sirius_AB",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_star",
+      "eval_kind": "public_catalog_anchor",
+      "source": "WDS/literature",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "kepler_mass_closure",
+      "name": "Sirius_AB",
+      "computed": 0.634486,
+      "measured": 1.0,
+      "error_pct": 36.551386,
+      "structure_class": "binary_star",
+      "eval_kind": "catalog_consistency",
+      "source": "WDS/literature",
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "Alpha_Cen_AB",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_star",
+      "eval_kind": "public_catalog_anchor",
+      "source": "WDS/literature",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "kepler_mass_closure",
+      "name": "Alpha_Cen_AB",
+      "computed": 1.046584,
+      "measured": 1.0,
+      "error_pct": 4.658374,
+      "structure_class": "binary_star",
+      "eval_kind": "catalog_consistency",
+      "source": "WDS/literature",
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "Alpha_Cen_ABC",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "structure_class": "trinary_star",
+      "eval_kind": "public_catalog_anchor",
+      "source": "literature hierarchical",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "kepler_mass_closure",
+      "name": "Alpha_Cen_ABC",
+      "computed": 1.046584,
+      "measured": 1.0,
+      "error_pct": 4.658374,
+      "structure_class": "trinary_star",
+      "eval_kind": "catalog_consistency",
+      "source": "literature hierarchical",
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "hierarchy_period_ratio",
+      "name": "Alpha_Cen_ABC",
+      "computed": 6882.743086,
+      "measured": 6882.743086,
+      "error_pct": 0.0,
+      "structure_class": "trinary_star",
+      "eval_kind": "catalog_anchor",
+      "source": "literature hierarchical"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "Procyon_AaAb",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_star",
+      "eval_kind": "public_catalog_anchor",
+      "source": "WDS/literature",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "kepler_mass_closure",
+      "name": "Procyon_AaAb",
+      "computed": 3.525232,
+      "measured": 1.0,
+      "error_pct": 252.523209,
+      "structure_class": "binary_star",
+      "eval_kind": "catalog_consistency",
+      "source": "WDS/literature",
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "61_Cyg_A",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_star",
+      "eval_kind": "public_catalog_anchor",
+      "source": "WDS",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "kepler_mass_closure",
+      "name": "61_Cyg_A",
+      "computed": 0.57369,
+      "measured": 1.0,
+      "error_pct": 42.631026,
+      "structure_class": "binary_star",
+      "eval_kind": "catalog_consistency",
+      "source": "WDS",
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "70_Oph_Ab",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_star",
+      "eval_kind": "public_catalog_anchor",
+      "source": "WDS",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "kepler_mass_closure",
+      "name": "70_Oph_Ab",
+      "computed": 0.902809,
+      "measured": 1.0,
+      "error_pct": 9.719144,
+      "structure_class": "binary_star",
+      "eval_kind": "catalog_consistency",
+      "source": "WDS",
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "Gliese_667C",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "structure_class": "trinary_star",
+      "eval_kind": "public_catalog_anchor",
+      "source": "literature",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "kepler_mass_closure",
+      "name": "Gliese_667C",
+      "computed": 138.888889,
+      "measured": 1.0,
+      "error_pct": 13788.888889,
+      "structure_class": "trinary_star",
+      "eval_kind": "catalog_consistency",
+      "source": "literature",
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "hierarchy_period_ratio",
+      "name": "Gliese_667C",
+      "computed": 6.566667,
+      "measured": 6.566667,
+      "error_pct": 0.0,
+      "structure_class": "trinary_star",
+      "eval_kind": "catalog_anchor",
+      "source": "literature"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "Castor_AaBa",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "structure_class": "trinary_star",
+      "eval_kind": "public_catalog_anchor",
+      "source": "WDS/literature sextuple",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "kepler_mass_closure",
+      "name": "Castor_AaBa",
+      "computed": 1.148545,
+      "measured": 1.0,
+      "error_pct": 14.8545,
+      "structure_class": "trinary_star",
+      "eval_kind": "catalog_consistency",
+      "source": "WDS/literature sextuple",
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "Mizar_A",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_star",
+      "eval_kind": "public_catalog_anchor",
+      "source": "WDS",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "kepler_mass_closure",
+      "name": "Mizar_A",
+      "computed": 2.278029,
+      "measured": 1.0,
+      "error_pct": 127.802887,
+      "structure_class": "binary_star",
+      "eval_kind": "catalog_consistency",
+      "source": "WDS",
+      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "GW150914",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_black_hole",
+      "eval_kind": "public_catalog_anchor",
+      "source": "LIGO public GW150914",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW150914",
+      "computed": 28.6,
+      "measured": 28.6,
+      "error_pct": 0.0,
+      "structure_class": "binary_black_hole",
+      "eval_kind": "public_gw_anchor",
+      "source": "LIGO public GW150914",
+      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "GW170817",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_neutron_star",
+      "eval_kind": "public_catalog_anchor",
+      "source": "LIGO/Virgo public GW170817",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW170817",
+      "computed": 1.186,
+      "measured": 1.186,
+      "error_pct": 0.0,
+      "structure_class": "binary_neutron_star",
+      "eval_kind": "public_gw_anchor",
+      "source": "LIGO/Virgo public GW170817",
+      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "GW190521",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_black_hole",
+      "eval_kind": "public_catalog_anchor",
+      "source": "LIGO/Virgo public GW190521",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW190521",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_black_hole",
+      "eval_kind": "public_gw_anchor",
+      "source": "LIGO/Virgo public GW190521",
+      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "catalog_multiplicity",
+      "name": "GW240109",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_black_hole",
+      "eval_kind": "public_catalog_anchor",
+      "source": "LIGO public summary 2024",
+      "note": "Published catalog anchor \u2014 formula tier requires preregistration"
+    },
+    {
+      "lab": "astrophysical_structure_crosswalk_lab",
+      "property": "chirp_mass_msun",
+      "name": "GW240109",
+      "computed": 85.0,
+      "measured": 85.0,
+      "error_pct": 0.0,
+      "structure_class": "binary_black_hole",
+      "eval_kind": "public_gw_anchor",
+      "source": "LIGO public summary 2024",
+      "note": "LIGO/Virgo public event \u2014 no undisclosed mass formula"
+    }
+  ],
+  "crosswalk_meta": {
+    "disclaimer": "Public catalog crosswalk \u2014 verification against published observables only",
+    "catalog_systems": 13,
+    "structure_classes": [
+      "binary_black_hole",
+      "binary_neutron_star",
+      "binary_star",
+      "trinary_star"
+    ],
+    "crosswalk_panels": [
+      "orbital_mechanics",
+      "planetary_structure",
+      "small_body_orbits",
+      "nasa_exoplanet"
+    ],
+    "catalog_consistency_median_error_pct": 36.551386,
+    "proprietary_boundary": "data/expansion_roadmap.yaml"
+  },
+  "sota_comparison": {
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true
+    }
+  }
+}
