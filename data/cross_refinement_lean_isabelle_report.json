@@ -1,16 +1,14 @@
 {
-  "generated_at": "2026-07-10T22:35:24.477617+00:00",
-  "tier": "79b_cross_refinement",
+  "generated_at": "2026-07-10T22:36:22.677875+00:00",
+  "tier": "82_cross_refinement_lean_isabelle",
   "obligation_count_total": 1241,
   "obligation_count_provable": 1241,
   "obligation_count_margin_violations": 0,
-  "coq_chunks_found": 13,
-  "coq_lemmas_indexed": 1241,
+  "isabelle_chunks_found": 14,
+  "isabelle_lemmas_indexed": 1241,
   "triangulation": {
     "provable_triangulated_ok": 1241,
     "provable_triangulated_fail": 0,
-    "margin_violations_confirmed_ok": 0,
-    "margin_violations_confirmed_fail": 0,
     "pct_provable_triangulated": 100.0
   },
   "margin_summary_by_kind": {
@@ -70,9 +68,9 @@
     }
   },
   "lt_half_pooled_median_margin_to_bound": "0.499966",
-  "margin_violations": [],
+  "margin_violations_excluded": [],
   "issue_counts": {},
   "failures_sample": [],
   "overall_ok": true,
-  "note": "Provable obligations must triangulate Lean/JSON/Coq literals. Margin violations are excluded from Coq proofs; Lean build failure confirms refutation."
+  "note": "Provable obligations must triangulate Lean/JSON/Isabelle literals. Margin violations are excluded from Isabelle proofs."
 }

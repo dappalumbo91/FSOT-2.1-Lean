@@ -243,10 +243,10 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma cross_proof_lean_modules_pos : (0 < 3)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma cross_proof_full_formal_obligation_count_pos : (0 < 1242)%nat.
+Lemma cross_proof_full_formal_obligation_count_pos : (0 < 1241)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma cross_proof_full_formal_provable_count_pos : (0 < 1237)%nat.
+Lemma cross_proof_full_formal_provable_count_pos : (0 < 1241)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma DomainCoveragePriors_negative_scalar_domain_count_pos : (0 < 10)%nat.

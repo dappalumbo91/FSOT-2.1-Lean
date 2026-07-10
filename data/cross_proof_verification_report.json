@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-10T22:20:32.173580+00:00",
-  "tier": "81",
+  "generated_at": "2026-07-10T22:37:02.427545+00:00",
+  "tier": "82",
   "connective_spine": {
     "obligation_count": 24,
     "python_decimal": {
@@ -429,17 +429,132 @@
       "formal_theory_count": 13,
       "obligation_scope": "connective_and_full_formal",
       "provable_obligations": 1241,
+      "chunk_count": 14,
+      "chunks_passed": 14,
+      "chunks": [
+        {
+          "theory": "ConnectiveSpine",
+          "file": "ConnectiveSpine.thy",
+          "scope": "connective",
+          "obligation_count": 18,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_00",
+          "file": "FullFormalSpine_00.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_01",
+          "file": "FullFormalSpine_01.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_02",
+          "file": "FullFormalSpine_02.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_03",
+          "file": "FullFormalSpine_03.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_04",
+          "file": "FullFormalSpine_04.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_05",
+          "file": "FullFormalSpine_05.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_06",
+          "file": "FullFormalSpine_06.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_07",
+          "file": "FullFormalSpine_07.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_08",
+          "file": "FullFormalSpine_08.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_09",
+          "file": "FullFormalSpine_09.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_10",
+          "file": "FullFormalSpine_10.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_11",
+          "file": "FullFormalSpine_11.thy",
+          "scope": "full_formal",
+          "obligation_count": 100,
+          "status": "passed"
+        },
+        {
+          "theory": "FullFormalSpine_12",
+          "file": "FullFormalSpine_12.thy",
+          "scope": "full_formal",
+          "obligation_count": 41,
+          "status": "passed"
+        }
+      ],
       "build": {
         "session": "FSOT_CrossProof",
         "status": "passed",
         "returncode": 0,
-        "stderr": "0:00:03 elapsed time\n"
+        "stdout_tail": "0:00:09 elapsed time\n",
+        "stderr": "0:00:09 elapsed time\n"
       }
+    },
+    "isabelle_refinement": {
+      "status": "passed",
+      "provable_triangulated_ok": 1241,
+      "provable_total": 1241,
+      "isabelle_lemmas_indexed": 1241
+    },
+    "transcendental_bounds_gap": {
+      "exported_float_obligations_from_bounds": 24,
+      "excluded_pi_e_interval_count": 2,
+      "transcendental_lemma_count": 68,
+      "report": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\transcendental_bounds_gap_report.json"
     }
   },
   "overall_ok": true,
   "github_ready": true,
   "github_ready_note": "All provable obligations triangulated; margin violations cleared.",
   "full_triangulation": true,
-  "note": "Tier 81: wide FSOT/Formal Lean+Coq+Isabelle cross-proof when Isabelle installed."
+  "note": "Tier 82: Lean+Coq+Isabelle full-scope cross-proof with literal triangulation and transcendental bounds gap inventory."
 }

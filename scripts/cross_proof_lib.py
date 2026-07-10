@@ -50,6 +50,11 @@ THM_NAT_SUM3_EQ = re.compile(
     r"(?:theorem|lemma)\s+(\w+)\s*:\s*(\w+)\s*\+\s*(\w+)\s*\+\s*(\w+)\s*=\s*(\w+)\s*:=", re.M
 )
 
+ISA_LEMMA_RE = re.compile(
+    r'lemma\s+(\w+)\s*:\s*"([^"]+)"',
+    re.M,
+)
+
 COQ_LEMMA_RE = re.compile(
     r"Lemma\s+(\w+)\s*:\s*(.+?)\.\s*\nProof\.\s*(.+?)\.\s*Qed\.",
     re.M,
@@ -647,14 +652,32 @@ def gen_isabelle_connective(obligations: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def gen_isabelle_root(theory_names: list[str], *, session_name: str = "FSOT_CrossProof") -> str:
+def gen_isabelle_root(
+    theory_names: list[str],
+    *,
+    session_name: str = "FSOT_CrossProof",
+    description: str | None = None,
+) -> str:
+    desc = description or f"FSOT full-scope cross-proof ({len(theory_names)} theories)"
     lines = [
         "(* FSOT cross-proof Isabelle session (generated). *)",
         "",
         f"session {session_name} = HOL +",
-        f'  description "FSOT Tier 81 full-scope cross-proof ({len(theory_names)} theories)"',
+        f'  description "{desc}"',
         "  theories",
     ]
     lines.extend(f"    {name}" for name in theory_names)
     lines.append("")
     return "\n".join(lines) + "\n"
+
+
+def isabelle_chunk_session_name(theory: str) -> str:
+    return f"FSOT_Diag_{theory}"
+
+
+def parse_isabelle_theory_lemmas(path: Path) -> list[dict]:
+    text = path.read_text(encoding="utf-8")
+    return [
+        {"id": m.group(1), "statement": m.group(2).strip()}
+        for m in ISA_LEMMA_RE.finditer(text)
+    ]

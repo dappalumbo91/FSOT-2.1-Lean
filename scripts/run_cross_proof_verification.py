@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Tier 80 wide cross-proof verification runner.
+Tier 82 wide cross-proof verification runner.
 
 Layers:
   1. Export obligations from full FSOT/Formal corpus
@@ -8,6 +8,8 @@ Layers:
   3. Coq/Rocq compile all chunks + coqchk
   4. Lean ↔ Coq cross-refinement audit
   5. Isabelle full-scope cross-proof (connective + FullFormalSpine chunks)
+  6. Lean ↔ Isabelle cross-refinement audit
+  7. Transcendental bounds gap inventory (pi/e lemmas deferred from float export)
 """
 
 from __future__ import annotations
@@ -23,7 +25,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from cross_proof_lib import obligation_provable, python_verify_obligation  # noqa: E402
+from cross_proof_lib import (  # noqa: E402
+    gen_isabelle_root,
+    isabelle_chunk_session_name,
+    obligation_provable,
+    parse_isabelle_theory_lemmas,
+    python_verify_obligation,
+)
 
 OBL_CONNECTIVE = ROOT / "verification" / "obligations" / "connective_spine.json"
 OBL_FORMAL = ROOT / "verification" / "obligations" / "full_formal_spine.json"
@@ -190,6 +198,47 @@ def _isabelle_theory_chunks(thy_dir: Path) -> list[dict]:
     return chunks
 
 
+def _isabelle_chunk_metadata(thy_dir: Path, chunks: list[dict], session_passed: bool) -> list[dict]:
+    results: list[dict] = []
+    for chunk in chunks:
+        path = thy_dir / chunk["file"]
+        lemmas = parse_isabelle_theory_lemmas(path) if path.exists() else []
+        results.append(
+            {
+                "theory": chunk["theory"],
+                "file": chunk["file"],
+                "scope": chunk["scope"],
+                "obligation_count": len(lemmas),
+                "status": "passed" if session_passed else "pending_diagnosis",
+            }
+        )
+    return results
+
+
+def _diagnose_isabelle_chunk(isa: dict, thy_dir: Path, chunk: dict, timeout: int = 900) -> dict:
+    theory = chunk["theory"]
+    src = thy_dir / chunk["file"]
+    if not src.exists():
+        return {"theory": theory, "file": chunk["file"], "status": "failed", "reason": "missing theory file"}
+    diag_dir = thy_dir / "diagnostic" / theory
+    diag_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, diag_dir / chunk["file"])
+    session = isabelle_chunk_session_name(theory)
+    (diag_dir / "ROOT").write_text(
+        gen_isabelle_root([theory], session_name=session, description=f"FSOT diagnostic chunk {theory}"),
+        encoding="utf-8",
+    )
+    build = _run_isabelle_session(isa, diag_dir, session, timeout=timeout)
+    return {
+        "theory": theory,
+        "file": chunk["file"],
+        "scope": chunk["scope"],
+        "status": build.get("status", "failed"),
+        "session": session,
+        "build": build,
+    }
+
+
 def _run_isabelle_session(isa: dict, thy_dir: Path, session: str, timeout: int = 1800) -> dict:
     try:
         if isa["mode"] == "cygwin":
@@ -220,7 +269,8 @@ def _run_isabelle_session(isa: dict, thy_dir: Path, session: str, timeout: int =
             "session": session,
             "status": "passed" if r.returncode == 0 else "failed",
             "returncode": r.returncode,
-            "stderr": out[-2000:],
+            "stdout_tail": (r.stdout or "")[-1500:],
+            "stderr": out[-4000:],
         }
     except Exception as e:
         return {"session": session, "status": "failed", "reason": str(e)}
@@ -238,7 +288,17 @@ def run_isabelle() -> dict:
     if not theories:
         return {"status": "failed", "reason": "no Isabelle theories found"}
     build = _run_isabelle_session(isa, thy_dir, ISABELLE_SESSION, timeout=3600)
+    session_passed = build.get("status") == "passed"
+    chunk_rows = _isabelle_chunk_metadata(thy_dir, theories, session_passed)
+    if not session_passed:
+        print("  isabelle session failed — running per-chunk diagnostics...", file=sys.stderr)
+        chunk_rows = [_diagnose_isabelle_chunk(isa, thy_dir, chunk) for chunk in theories]
+        for row in chunk_rows:
+            row["obligation_count"] = len(
+                parse_isabelle_theory_lemmas(thy_dir / row["file"])
+            ) if (thy_dir / row["file"]).exists() else 0
     formal = [t for t in theories if t["scope"] == "full_formal"]
+    chunks_passed = sum(1 for c in chunk_rows if c.get("status") == "passed")
     return {
         "status": build.get("status", "failed"),
         "tool": isa["tool"],
@@ -248,6 +308,9 @@ def run_isabelle() -> dict:
         "formal_theory_count": len(formal),
         "obligation_scope": "connective_and_full_formal",
         "provable_obligations": len(provable_formal_obligations()),
+        "chunk_count": len(chunk_rows),
+        "chunks_passed": chunks_passed,
+        "chunks": chunk_rows,
         "build": build,
     }
 
@@ -284,7 +347,7 @@ def main() -> int:
 
     coq = run_coq_full()
 
-    refinement_r = subprocess.run(
+    subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "cross_refinement_lean_coq_audit.py")],
         cwd=str(ROOT),
     )
@@ -292,6 +355,23 @@ def main() -> int:
     refinement_ok = refinement.get("overall_ok", False)
 
     isa = run_isabelle()
+
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "cross_refinement_lean_isabelle_audit.py")],
+        cwd=str(ROOT),
+    )
+    isa_refinement = json.loads(
+        (ROOT / "data" / "cross_refinement_lean_isabelle_report.json").read_text(encoding="utf-8")
+    )
+    isa_refinement_ok = isa_refinement.get("overall_ok", False)
+
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "audit_transcendental_bounds_gap.py")],
+        cwd=str(ROOT),
+    )
+    transcendental_gap = json.loads(
+        (ROOT / "data" / "transcendental_bounds_gap_report.json").read_text(encoding="utf-8")
+    )
 
     lean_conn_ok = subprocess.run(
         [
@@ -309,7 +389,7 @@ def main() -> int:
 
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "81",
+        "tier": "82",
         "connective_spine": {
             "obligation_count": connective["obligation_count"],
             "python_decimal": {"status": "passed" if py_conn_ok else "failed"},
@@ -340,12 +420,29 @@ def main() -> int:
                 "margin_violations_confirmed": refinement.get("obligation_count_margin_violations"),
             },
             "isabelle": isa,
+            "isabelle_refinement": {
+                "status": "passed" if isa_refinement_ok else "failed",
+                "provable_triangulated_ok": isa_refinement.get("triangulation", {}).get(
+                    "provable_triangulated_ok"
+                ),
+                "provable_total": len(provable_formal),
+                "isabelle_lemmas_indexed": isa_refinement.get("isabelle_lemmas_indexed"),
+            },
+            "transcendental_bounds_gap": {
+                "exported_float_obligations_from_bounds": transcendental_gap.get(
+                    "exported_float_obligations_from_bounds"
+                ),
+                "excluded_pi_e_interval_count": transcendental_gap.get("excluded_pi_e_interval_count"),
+                "transcendental_lemma_count": transcendental_gap.get("transcendental_lemma_count"),
+                "report": str(ROOT / "data" / "transcendental_bounds_gap_report.json"),
+            },
         },
         "overall_ok": py_ok
             and lean_conn_ok
             and coq.get("status") == "passed"
             and refinement_ok
-            and isa.get("status") in ("passed", "skipped"),
+            and isa.get("status") in ("passed", "skipped")
+            and isa_refinement_ok,
         "github_ready": len(margin_violations) == 0
             and py_ok
             and lean_conn_ok
@@ -360,9 +457,11 @@ def main() -> int:
             and lean_conn_ok
             and coq.get("status") == "passed"
             and refinement_ok
-            and isa.get("status") == "passed",
+            and isa.get("status") == "passed"
+            and isa_refinement_ok,
         "note": (
-            "Tier 81: wide FSOT/Formal Lean+Coq+Isabelle cross-proof when Isabelle installed."
+            "Tier 82: Lean+Coq+Isabelle full-scope cross-proof with literal triangulation "
+            "and transcendental bounds gap inventory."
         ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
@@ -372,7 +471,7 @@ def main() -> int:
         cwd=str(ROOT),
     )
 
-    print("CROSS-PROOF VERIFICATION (Tier 81 wide)")
+    print("CROSS-PROOF VERIFICATION (Tier 82 wide)")
     print(f"  connective obligations: {connective['obligation_count']}")
     print(f"  full formal obligations: {formal['obligation_count']} ({formal.get('modules_exported')} modules)")
     print(f"  provable: {len(provable_formal)} | margin violations: {len(margin_violations)}")
@@ -383,7 +482,14 @@ def main() -> int:
     print(f"  cross_refinement: {'PASS' if refinement_ok else 'FAIL'}")
     print(
         f"  isabelle: {isa.get('status')} "
-        f"(session {isa.get('session', 'n/a')}, {isa.get('theory_count', 0)} theories)"
+        f"(session {isa.get('session', 'n/a')}, "
+        f"{isa.get('chunks_passed', 0)}/{isa.get('chunk_count', 0)} chunks)"
+    )
+    print(f"  isabelle_refinement: {'PASS' if isa_refinement_ok else 'FAIL'}")
+    print(
+        f"  transcendental_gap: {transcendental_gap.get('excluded_pi_e_interval_count', 0)} "
+        f"pi/e intervals deferred, {transcendental_gap.get('transcendental_lemma_count', 0)} "
+        f"structural lemmas in Bounds.lean"
     )
     print(f"  overall_ok: {report['overall_ok']}")
     print(f"  github_ready: {report['github_ready']}")

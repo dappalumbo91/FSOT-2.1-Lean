@@ -128,15 +128,15 @@ def main() -> int:
             "cross_refinement_triangulated_pct": (refinement.get("triangulation") or {}).get("pct_provable_triangulated"),
         },
         "interpretation": (
-            "Tier 80: wide FSOT/Formal export (priors + Bounds + genomic/neuron extended modules). "
-            "Numeric certificates cross-proved in Coq; margin violations flagged for refinement. "
-            "Transcendental pi/e interval lemmas deferred to Tier 81 Coq Real port."
+            "Tier 82: wide FSOT/Formal export (priors + Bounds + genomic/neuron extended modules). "
+            "Numeric certificates cross-proved in Lean+Coq+Isabelle with literal triangulation. "
+            "Transcendental pi/e interval lemmas inventoried in transcendental_bounds_gap_report.json."
         ),
         "scan": scan,
         "other_frameworks": {
-            "implemented": ["lean4", "python_decimal", "rocq_coq", "coqchk"],
-            "artifacts_ready": ["isabelle"],
-            "planned_tier_80": ["agda", "metamath"],
+            "implemented": ["lean4", "python_decimal", "rocq_coq", "coqchk", "isabelle"],
+            "artifacts_ready": ["isabelle_full_formal_spine"],
+            "planned_tier_83": ["transcendental_bounds_coq_isabelle", "agda", "metamath"],
             "all_free_no_account": True,
         },
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T22:20:32.269273+00:00",
+  "generated_at": "2026-07-10T22:37:02.555469+00:00",
   "fsot_scale": {
     "extension_domains": 245,
     "priors_lean_modules": 308,
@@ -53,7 +53,7 @@
     "pct_of_lean_theorems": 68.4679,
     "cross_refinement_triangulated_pct": 100.0
   },
-  "interpretation": "Tier 80: wide FSOT/Formal export (priors + Bounds + genomic/neuron extended modules). Numeric certificates cross-proved in Coq; margin violations flagged for refinement. Transcendental pi/e interval lemmas deferred to Tier 81 Coq Real port.",
+  "interpretation": "Tier 82: wide FSOT/Formal export (priors + Bounds + genomic/neuron extended modules). Numeric certificates cross-proved in Lean+Coq+Isabelle with literal triangulation. Transcendental pi/e interval lemmas inventoried in transcendental_bounds_gap_report.json.",
   "scan": {
     "priors_modules": 308,
     "total_theorems": 1684,
@@ -143,12 +143,14 @@
       "lean4",
       "python_decimal",
       "rocq_coq",
-      "coqchk"
-    ],
-    "artifacts_ready": [
+      "coqchk",
       "isabelle"
     ],
-    "planned_tier_80": [
+    "artifacts_ready": [
+      "isabelle_full_formal_spine"
+    ],
+    "planned_tier_83": [
+      "transcendental_bounds_coq_isabelle",
       "agda",
       "metamath"
     ],
