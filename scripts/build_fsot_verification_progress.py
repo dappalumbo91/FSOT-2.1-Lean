@@ -188,6 +188,8 @@ def build_progress() -> dict:
     iono_chem_bench = _load_json(ROOT / "data" / "ionospheric_chemistry_coupling_benchmark.json")
     energy_ai_bridge_bench = _load_json(ROOT / "data" / "energy_ai_orbital_bridge_benchmark.json")
     orbital_pred_bench = _load_json(ROOT / "data" / "domain_orbital_predictions_benchmark.json")
+    med_gal_bridge_bench = _load_json(ROOT / "data" / "medical_galactic_orbital_bridge_benchmark.json")
+    toe_unity_bench = _load_json(ROOT / "data" / "toe_unification_spine_benchmark.json")
     tokenization_smoke_bench = _load_json(ROOT / "data" / "tokenization_smoke_benchmark.json")
     trinary_hw_motif_bench = _load_json(ROOT / "data" / "trinary_hardware_motif_benchmark.json")
     intrinsic_llm_bench = _load_json(ROOT / "data" / "intrinsic_llm_validators_benchmark.json")
@@ -1536,6 +1538,40 @@ def build_progress() -> dict:
                 "FSOT.Formal.DomainOrbitalPredictionsPriors",
             ],
         },
+        {
+            "tier": 48,
+            "name": "Tier 48 — ToE unity (cross-scale bridges complete, 12/12 orbital, unification spine)",
+            "status": "complete"
+            if med_gal_bridge_bench.get("record_count", 0) >= 40
+            and int(orbital_pred_bench.get("filled_prediction_count") or 0) >= 12
+            and orbital_pred_bench.get("gap_fill_status") == "GREEN"
+            and toe_unity_bench.get("unification_status") == "GREEN"
+            and float(toe_unity_bench.get("orbital_prediction_fill_ratio") or 0) >= 1.0
+            and mech_bench.get("mechanism_count", 0) >= 29
+            and coupling_bench.get("node_count", 0) >= 174
+            else "pending",
+            "metrics": {
+                "medical_galactic_bridge_records": med_gal_bridge_bench.get("record_count"),
+                "filled_orbital_predictions": orbital_pred_bench.get("filled_prediction_count"),
+                "orbital_prediction_total": orbital_pred_bench.get("prediction_count"),
+                "orbital_gap_fill_status": orbital_pred_bench.get("gap_fill_status"),
+                "toe_unification_status": toe_unity_bench.get("unification_status"),
+                "coupling_node_count": coupling_bench.get("node_count"),
+                "mechanistic_channel_count": mech_bench.get("mechanism_count"),
+                "external_cache_root": "G:/FSOT-PublicData/cross_scale_bridges",
+            },
+            "artifacts": [
+                "data/orbital_bridge_scientific_framing.yaml",
+                "data/orbital_predictions_registry.yaml",
+                "data/domain_rename_evaluation_backlog.yaml",
+                "scripts/tier_m_toe_unity_lib.py",
+                "scripts/ingest_cross_scale_bridge_cache.py",
+                "scripts/build_tier_m_toe_unity_benchmarks.py",
+                "G:/FSOT-PublicData/cross_scale_bridges",
+                "FSOT.Formal.ToEUnificationSpinePriors",
+                "FSOT.Formal.MedicalGalacticOrbitalBridgePriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -1562,7 +1598,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 47 orbital gap fill — acoustic/chaos/phi/ionospheric physics frontiers, tag-pair orbital bridges, 12-prediction rollup for thesis accumulation",
+        "current_position": "Tier 48 ToE unity — cross-scale bridges complete (12/12 orbital), unification spine, external cache on G:/FSOT-PublicData",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

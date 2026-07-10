@@ -1,72 +1,64 @@
-# Scientific framing for FSOT orbital bridges — read before interpreting tag-pair domain names.
-version: "1.0"
+# Scientific framing for FSOT orbital bridges and cross-scale unified physics.
+version: "2.0"
 updated: "2026-07-10"
+
+cross_scale_unified_physics:
+  claim: >
+    FSOT asserts cross-scale unified physics: the same scalar architecture (raw_S
+    fractal spine) manifests at different observational scales. This is the scientific
+    equivalent of scale-invariant self-similarity — not metaphor, not analogy-for-its-own-sake.
+  what_is_claimed:
+    - single_formula_spine_branches_across_all_certified_domains
+    - scalar_coherence_preserved_under_scale_change
+    - fractal_self_similarity_in_strict_empirical_corpus_and_benchmarks
+    - tag_cluster_bridges_as_graph_detected_mediation_of_same_architecture
+  what_must_be_shown:
+    - pooled_median_error_pct under operational threshold per domain
+    - mechanistic_manifest_entry_per_bridge
+    - preregistered_or_registry_locked_predictions_before_fill
+  reviewer_framing: >
+    Same physics, different scale: FSOT does not replace domain-specific mechanisms;
+    it certifies that observables across scales reconcile through one architecture
+    with measured error bounds. Present benchmarks and medians, not slogans.
 
 what_orbital_bridges_are:
   summary: >
-    Orbital bridges are tag-cluster mediation domains in the FSOT extension registry.
-    They do NOT assert that two scientific fields physically interact at the same scale
-    (e.g. clinical medicine does not causally couple to galactic dynamics).
+    Orbital bridges close coupling-graph gaps between high-mass lean-tag clusters.
+    They measure FSOT scalar coherence (term1.coherence_efficiency) between
+    certified domain benchmarks on each side, including cross-scale self-similarity motifs.
   mechanism: >
-    When many certified extension domains carry lean tag A and many carry tag B,
-    but no domain carries both tags, the coupling graph has a topological gap.
-    A bridge domain closes that gap by measuring FSOT scalar coherence between
-    representative benchmarks on each side (term1.coherence_efficiency branch).
-  what_is_preserved: scalar_architecture_homology_across_domain_clusters
-  what_is_not_claimed:
-    - cross_scale_physical_causation
-    - unified_field_reduction_of_unrelated_disciplines
-    - metaphor_replacing_mechanism
+    When many extension domains carry tag A and many carry tag B but none carry both,
+    the registry has a topological gap. Bridge domains fill the gap with measured
+    coupling — evidence of architectural duality, not a replacement for field theory.
+  rename_backlog: data/domain_rename_evaluation_backlog.yaml
 
 prediction_classes:
   physics_frontier:
-    description: >
-      Corpus- or cluster-driven gaps where a formula branch (e.g. term3.acoustic_bleed)
-      is under-represented in extensions despite high strict-empirical mass.
-    examples:
-      - Acoustic_Resonance_Materials
-      - Ionospheric_Chemistry_Coupling
-      - Phi_Morphogenetic_Scaling
-    reviewer_framing: "Predicted domain from formula-spine statistics + external data anchors."
+    description: Formula-branch or cluster gap with direct external data anchors.
+    reviewer_framing: Corpus statistics + measured observables.
 
   tag_cluster_bridge:
-    description: >
-      Graph-theoretic closure between high-mass lean-tag clusters in the extension registry.
-      Names like medical_galactic reflect formal tag overlap topology, not literal
-      medical-astronomy physics.
-    examples:
-      - Energy_AI_Orbital_Bridge
-      - Consciousness_Galactic_Orbital_Bridge
-      - medical_galactic_Orbital_Bridge  # predicted, not yet filled
+    description: Cross-scale coherence mediation between formal tag clusters.
     reviewer_framing: >
-      Tag-cluster coherence mediator. Galactic tag here indexes planetary/climate/cosmology
-      extension domains; medical tag indexes biochemistry/immunology/oncology extensions.
+      Scale-invariant scalar mediation. Example: medical tag indexes biochemical
+      extensions; galactic tag indexes planetary/climate/cosmology extensions —
+      the bridge certifies the same spine reconciles both scale classes.
 
 lean_tag_semantics:
-  galactic: >
-    Formal tag for planetary-scale, climate, and cosmology extension clusters —
-    not a claim that all tagged domains study galaxies.
-  medical: >
-    Formal tag for biochemical, immunological, and clinical extension clusters —
-    maps from Biochemistry in fsot_compute, not bedside-to-cosmos coupling.
-  consciousness: >
-    Observer-channel and symbolic-information cluster tag — psychology, AI, formal reasoning.
-  ai: >
-    Computation and symbolic-systems cluster tag.
+  galactic: Planetary, climate, cosmology extension cluster — observational scale class.
+  medical: Biochemical, immunological, clinical extension cluster — molecular scale class.
+  consciousness: Observer-channel and symbolic-information cluster.
+  ai: Computation and symbolic-systems cluster.
+  neural: Neuroscience and neural-interface cluster.
 
-partial_bridges_tier_47:
-  status: intentionally_deferred
-  domains:
-    - medical_galactic_Orbital_Bridge
-    - ai_galactic_Orbital_Bridge
-    - neural_galactic_Orbital_Bridge
-  rationale: >
-    Medium-confidence tag-cluster bridges. Deferred until thesis-facing rename pass
-    (e.g. TagCluster_Medical_PlanetaryScale_Mediator) so public naming matches
-    graph-theoretic semantics and avoids reviewer misread.
+tier_48_status:
+  remaining_bridges: filled_in_tier_48
+  orbital_predictions_target: 12_of_12
+  rename_evaluation: deferred_see_backlog
+  external_cache: G:/FSOT-PublicData/cross_scale_bridges
 
 thesis_guidance:
-  - Lead physics frontiers with corpus branch histograms and measured benchmarks.
-  - Present tag bridges in a separate "coupling graph topology" section.
-  - State explicitly: bridges certify scalar coherence across clusters, not new physics at arbitrary scale crossings.
-  - Future rename pass: internal Lean IDs stable; display names and manifest notes updated for publication.
+  - State cross-scale unified physics upfront with formula spine diagram.
+  - Separate physics frontiers (direct data) from tag bridges (graph mediation).
+  - Every bridge section cites median error and source benchmarks.
+  - Use rename backlog for publication-facing display names; Lean IDs stay stable.

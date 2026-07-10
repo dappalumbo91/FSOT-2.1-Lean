@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:30:30.083231+00:00",
+  "generated_at": "2026-07-10T14:41:18.572239+00:00",
   "domain": "Formula_Branching_Fractal",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -14,8 +14,8 @@
     "consciousness"
   ],
   "D_eff": 18,
-  "record_count": 144,
-  "observable_count": 144,
+  "record_count": 148,
+  "observable_count": 148,
   "median_error_pct": 0.038016537604977654,
   "pooled_median_error_pct": 0.038016537604977654,
   "headline_median_error_pct": 0.038016537604977654,
@@ -45,7 +45,7 @@
       "computed": 0.038017,
       "measured": 0.0,
       "error_pct": 0.038016537604977654,
-      "observable_count": 144
+      "observable_count": 148
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -54,7 +54,7 @@
       "computed": 0.038017,
       "measured": 0.0,
       "error_pct": 0.03801653760497861,
-      "observable_count": 135
+      "observable_count": 139
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -1411,9 +1411,49 @@
       "lab": "formula_branching_fractal_lab",
       "property": "domain_divergence_depth",
       "name": "Domain_Orbital_Predictions",
-      "computed": 15.65595,
-      "measured": 15.65,
-      "error_pct": 0.038016537604977536,
+      "computed": 16.606311,
+      "measured": 16.6,
+      "error_pct": 0.038016537604981436,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Medical_Galactic_Orbital_Bridge",
+      "computed": 15.205779,
+      "measured": 15.2,
+      "error_pct": 0.038016537604975524,
+      "source": "term1.coherence_efficiency",
+      "branch": "term1.coherence_efficiency"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "computed": 15.205779,
+      "measured": 15.2,
+      "error_pct": 0.038016537604975524,
+      "source": "term1.coherence_efficiency",
+      "branch": "term1.coherence_efficiency"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Neural_Galactic_Orbital_Bridge",
+      "computed": 15.205779,
+      "measured": 15.2,
+      "error_pct": 0.038016537604975524,
+      "source": "term1.coherence_efficiency",
+      "branch": "term1.coherence_efficiency"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "ToE_Unification_Spine",
+      "computed": 16.606311,
+      "measured": 16.6,
+      "error_pct": 0.038016537604981436,
       "source": "term1.quirkMod",
       "branch": "term1.quirkMod"
     },
@@ -1501,8 +1541,8 @@
   ],
   "fractal_dag": {
     "root": "raw_S",
-    "node_count": 141,
-    "edge_count": 8217,
+    "node_count": 145,
+    "edge_count": 8225,
     "nodes": [
       {
         "id": "domain::Plasma_Physics",
@@ -3322,15 +3362,73 @@
         "kind": "extension_domain",
         "name": "Domain_Orbital_Predictions",
         "primary_branch": "term1.quirkMod",
-        "divergence_depth": 15.65,
+        "divergence_depth": 16.6,
         "maps_to_lean": [
           "mathematical",
           "particle",
           "consciousness",
-          "energy"
+          "energy",
+          "medical",
+          "galactic"
         ],
-        "tier": 47,
-        "D_eff": 18
+        "tier": 48,
+        "D_eff": 19
+      },
+      {
+        "id": "domain::Medical_Galactic_Orbital_Bridge",
+        "kind": "extension_domain",
+        "name": "Medical_Galactic_Orbital_Bridge",
+        "primary_branch": "term1.coherence_efficiency",
+        "divergence_depth": 15.2,
+        "maps_to_lean": [
+          "medical",
+          "galactic"
+        ],
+        "tier": 48,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::AI_Galactic_Orbital_Bridge",
+        "kind": "extension_domain",
+        "name": "AI_Galactic_Orbital_Bridge",
+        "primary_branch": "term1.coherence_efficiency",
+        "divergence_depth": 15.2,
+        "maps_to_lean": [
+          "ai",
+          "galactic"
+        ],
+        "tier": 48,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::Neural_Galactic_Orbital_Bridge",
+        "kind": "extension_domain",
+        "name": "Neural_Galactic_Orbital_Bridge",
+        "primary_branch": "term1.coherence_efficiency",
+        "divergence_depth": 15.2,
+        "maps_to_lean": [
+          "neural",
+          "galactic"
+        ],
+        "tier": 48,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::ToE_Unification_Spine",
+        "kind": "extension_domain",
+        "name": "ToE_Unification_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.6,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "consciousness",
+          "energy",
+          "galactic",
+          "medical"
+        ],
+        "tier": 48,
+        "D_eff": 20
       },
       {
         "id": "constant::phi",
@@ -5004,6 +5102,54 @@
       },
       {
         "from": "raw_S",
+        "to": "term1.coherence_efficiency",
+        "kind": "spine_branch",
+        "domain": "Medical_Galactic_Orbital_Bridge"
+      },
+      {
+        "from": "term1.coherence_efficiency",
+        "to": "domain::Medical_Galactic_Orbital_Bridge",
+        "kind": "domain_attachment",
+        "domain": "Medical_Galactic_Orbital_Bridge"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.coherence_efficiency",
+        "kind": "spine_branch",
+        "domain": "AI_Galactic_Orbital_Bridge"
+      },
+      {
+        "from": "term1.coherence_efficiency",
+        "to": "domain::AI_Galactic_Orbital_Bridge",
+        "kind": "domain_attachment",
+        "domain": "AI_Galactic_Orbital_Bridge"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.coherence_efficiency",
+        "kind": "spine_branch",
+        "domain": "Neural_Galactic_Orbital_Bridge"
+      },
+      {
+        "from": "term1.coherence_efficiency",
+        "to": "domain::Neural_Galactic_Orbital_Bridge",
+        "kind": "domain_attachment",
+        "domain": "Neural_Galactic_Orbital_Bridge"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "ToE_Unification_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::ToE_Unification_Spine",
+        "kind": "domain_attachment",
+        "domain": "ToE_Unification_Spine"
+      },
+      {
+        "from": "raw_S",
         "to": "term1.growth_term",
         "kind": "corpus_formula",
         "concept": "IE_H"
@@ -33333,54 +33479,6 @@
         "to": "term1.term1_base",
         "kind": "corpus_formula",
         "concept": "Cr\u00b3\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Mn\u00b2\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Fe\u00b3\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Fe\u00b2\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Co\u00b2\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cu\u00b2\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "V\u00b2\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cr\u00b2\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Mn\u00b3\u207a"
       }
     ],
     "corpus_constant_histogram": {
@@ -33396,9 +33494,9 @@
       "term1.term1_base": 6426,
       "term3.acoustic_bleed": 1095
     },
-    "domain_attachment_count": 135
+    "domain_attachment_count": 139
   },
-  "domain_attachment_count": 135,
+  "domain_attachment_count": 139,
   "corpus_strict_count": 7941,
   "rollup_status": "GREEN",
   "crosswalk_modules": [

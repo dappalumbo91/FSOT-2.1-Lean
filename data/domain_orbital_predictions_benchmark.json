@@ -1,24 +1,27 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:30:03.997688+00:00",
+  "generated_at": "2026-07-10T14:40:57.115186+00:00",
   "domain": "Domain_Orbital_Predictions",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
-    "domain_orbital_prediction_report.json",
-    "tier_l_orbital_gap_fill"
+    "orbital_predictions_registry.yaml",
+    "tier_l_orbital_gap_fill",
+    "tier_m_toe_unity"
   ],
   "maps_to_lean": [
     "mathematical",
     "particle",
     "consciousness",
-    "energy"
+    "energy",
+    "medical",
+    "galactic"
   ],
-  "D_eff": 18,
-  "record_count": 17,
-  "observable_count": 17,
-  "median_error_pct": 0.03147898006445882,
-  "pooled_median_error_pct": 0.03147898006445882,
-  "headline_median_error_pct": 0.03147898006445882,
+  "D_eff": 19,
+  "record_count": 12,
+  "observable_count": 12,
+  "median_error_pct": 0.02754410755640979,
+  "pooled_median_error_pct": 0.02754410755640979,
+  "headline_median_error_pct": 0.02754410755640979,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,279 +40,187 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.031479,
+      "computed": 0.027544,
       "measured": 0.0,
-      "error_pct": 0.03147898006445882,
-      "observable_count": 17
+      "error_pct": 0.02754410755640979,
+      "observable_count": 12
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "orbital_predictions",
       "name": "prediction_rollup_panel",
-      "computed": 0.031479,
+      "computed": 0.027544,
       "measured": 0.0,
-      "error_pct": 0.03147898006445882,
-      "observable_count": 14
+      "error_pct": 0.02754410755640979,
+      "observable_count": 12
     }
   ],
   "material_records": [
     {
       "lab": "domain_orbital_predictions_lab",
       "property": "prediction_gap_fill",
-      "name": "consciousness_galactic_Orbital_Bridge",
-      "computed": 47.0,
-      "measured": 47.0,
-      "error_pct": 0.036757197413939124,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "medium",
-      "formula_branch_guess": "term1.coherence_efficiency",
-      "gap_fill_status": "FILLED",
-      "lean_tags": [
-        "consciousness",
-        "galactic"
-      ]
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "prediction_gap_fill",
-      "name": "energy_ai_Orbital_Bridge",
-      "computed": 48.0,
-      "measured": 48.0,
-      "error_pct": 0.02754410755640979,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "medium",
-      "formula_branch_guess": "term1.coherence_efficiency",
-      "gap_fill_status": "FILLED",
-      "lean_tags": [
-        "energy",
-        "ai"
-      ]
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "prediction_gap_fill",
-      "name": "energy_neural_Orbital_Bridge",
-      "computed": 48.0,
-      "measured": 48.0,
-      "error_pct": 0.01800266870179516,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "medium",
-      "formula_branch_guess": "term1.coherence_efficiency",
-      "gap_fill_status": "FILLED",
-      "lean_tags": [
-        "energy",
-        "neural"
-      ]
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "prediction_gap_fill",
-      "name": "medical_galactic_Orbital_Bridge",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 99.0,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "medium",
-      "formula_branch_guess": "term1.coherence_efficiency",
-      "gap_fill_status": "PARTIAL",
-      "lean_tags": [
-        "medical",
-        "galactic"
-      ]
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "prediction_gap_fill",
-      "name": "ai_galactic_Orbital_Bridge",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 99.0,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "medium",
-      "formula_branch_guess": "term1.coherence_efficiency",
-      "gap_fill_status": "PARTIAL",
-      "lean_tags": [
-        "ai",
-        "galactic"
-      ]
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "prediction_gap_fill",
-      "name": "particle_neural_Orbital_Bridge",
-      "computed": 48.0,
-      "measured": 48.0,
-      "error_pct": 0.03326447040434832,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "medium",
-      "formula_branch_guess": "term1.coherence_efficiency",
-      "gap_fill_status": "FILLED",
-      "lean_tags": [
-        "particle",
-        "neural"
-      ]
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "prediction_gap_fill",
-      "name": "neural_galactic_Orbital_Bridge",
-      "computed": 0.0,
-      "measured": 0.0,
-      "error_pct": 99.0,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "medium",
-      "formula_branch_guess": "term1.coherence_efficiency",
-      "gap_fill_status": "PARTIAL",
-      "lean_tags": [
-        "neural",
-        "galactic"
-      ]
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "prediction_gap_fill",
       "name": "Acoustic_Resonance_Materials",
+      "resolved_domain": "Acoustic_Resonance_Materials",
       "computed": 29.0,
       "measured": 29.0,
       "error_pct": 0.008381497018412922,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "high",
-      "formula_branch_guess": "term3.acoustic_bleed",
-      "gap_fill_status": "FILLED",
-      "lean_tags": [
-        "particle",
-        "material",
-        "energy"
-      ]
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "physics_frontier",
+      "formula_branch": "term3.acoustic_bleed",
+      "gap_fill_status": "FILLED"
     },
     {
       "lab": "domain_orbital_predictions_lab",
       "property": "prediction_gap_fill",
       "name": "Chaos_Mediated_Phase_Transitions",
+      "resolved_domain": "Chaos_Mediated_Phase_Transitions",
       "computed": 21.0,
       "measured": 21.0,
       "error_pct": 0.03147898006445882,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "high",
-      "formula_branch_guess": "term3.chaos_factor",
-      "gap_fill_status": "FILLED",
-      "lean_tags": [
-        "particle",
-        "energy",
-        "fusion"
-      ]
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "physics_frontier",
+      "formula_branch": "term3.chaos_factor",
+      "gap_fill_status": "FILLED"
     },
     {
       "lab": "domain_orbital_predictions_lab",
       "property": "prediction_gap_fill",
       "name": "Phi_Morphogenetic_Scaling",
+      "resolved_domain": "Phi_Morphogenetic_Scaling",
       "computed": 327.0,
       "measured": 327.0,
       "error_pct": 0.0565,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "high",
-      "formula_branch_guess": "term1.term1_base",
-      "gap_fill_status": "FILLED",
-      "lean_tags": [
-        "biological",
-        "mathematical",
-        "medical"
-      ]
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "prediction_gap_fill",
-      "name": "Proof_Carrying_Code_Genome",
-      "computed": 25.0,
-      "measured": 25.0,
-      "error_pct": 0.0051685586271776884,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "medium",
-      "formula_branch_guess": "term1.perceived_adjust",
-      "gap_fill_status": "FILLED",
-      "lean_tags": [
-        "ai",
-        "consciousness",
-        "mathematical"
-      ]
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "physics_frontier",
+      "formula_branch": "term1.term1_base",
+      "gap_fill_status": "FILLED"
     },
     {
       "lab": "domain_orbital_predictions_lab",
       "property": "prediction_gap_fill",
       "name": "Ionospheric_Chemistry_Coupling",
+      "resolved_domain": "Ionospheric_Chemistry_Coupling",
       "computed": 85.0,
       "measured": 85.0,
       "error_pct": 99.0,
-      "source": "domain_orbital_prediction_report.json",
-      "confidence": "high",
-      "formula_branch_guess": "term3.acoustic_inflow",
-      "gap_fill_status": "FILLED",
-      "lean_tags": [
-        "electron",
-        "chemical",
-        "energy"
-      ]
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "physics_frontier_pillar",
-      "name": "acoustic",
-      "computed": 29.0,
-      "measured": 29.0,
-      "error_pct": 0.008381497018412922,
-      "source": "Acoustic_Resonance_Materials",
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "physics_frontier",
+      "formula_branch": "term3.acoustic_inflow",
       "gap_fill_status": "FILLED"
     },
     {
       "lab": "domain_orbital_predictions_lab",
-      "property": "physics_frontier_pillar",
-      "name": "chaos",
-      "computed": 21.0,
-      "measured": 21.0,
-      "error_pct": 0.03147898006445882,
-      "source": "Chaos_Mediated_Phase_Transitions",
-      "gap_fill_status": "FILLED"
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "physics_frontier_pillar",
-      "name": "phi",
-      "computed": 327.0,
-      "measured": 327.0,
-      "error_pct": 0.0565,
-      "source": "Phi_Morphogenetic_Scaling",
-      "gap_fill_status": "FILLED"
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "physics_frontier_pillar",
-      "name": "ionospheric",
-      "computed": 85.0,
-      "measured": 85.0,
-      "error_pct": 0.0,
-      "source": "Ionospheric_Chemistry_Coupling",
-      "gap_fill_status": "FILLED"
-    },
-    {
-      "lab": "domain_orbital_predictions_lab",
-      "property": "physics_frontier_pillar",
-      "name": "proof_genome",
+      "property": "prediction_gap_fill",
+      "name": "Proof_Carrying_Code_Genome",
+      "resolved_domain": "Proof_Carrying_Code_Genome",
       "computed": 25.0,
       "measured": 25.0,
       "error_pct": 0.0051685586271776884,
-      "source": "Proof_Carrying_Code_Genome",
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "tag_cluster_bridge",
+      "formula_branch": "term1.perceived_adjust",
+      "gap_fill_status": "FILLED"
+    },
+    {
+      "lab": "domain_orbital_predictions_lab",
+      "property": "prediction_gap_fill",
+      "name": "consciousness_galactic_Orbital_Bridge",
+      "resolved_domain": "Consciousness_Galactic_Orbital_Bridge",
+      "computed": 47.0,
+      "measured": 47.0,
+      "error_pct": 0.03675719741393745,
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "tag_cluster_bridge",
+      "formula_branch": "term1.coherence_efficiency",
+      "gap_fill_status": "FILLED"
+    },
+    {
+      "lab": "domain_orbital_predictions_lab",
+      "property": "prediction_gap_fill",
+      "name": "energy_ai_Orbital_Bridge",
+      "resolved_domain": "Energy_AI_Orbital_Bridge",
+      "computed": 48.0,
+      "measured": 48.0,
+      "error_pct": 0.02754410755640979,
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "tag_cluster_bridge",
+      "formula_branch": "term1.coherence_efficiency",
+      "gap_fill_status": "FILLED"
+    },
+    {
+      "lab": "domain_orbital_predictions_lab",
+      "property": "prediction_gap_fill",
+      "name": "energy_neural_Orbital_Bridge",
+      "resolved_domain": "Energy_Neural_Orbital_Bridge",
+      "computed": 48.0,
+      "measured": 48.0,
+      "error_pct": 0.01800266870179516,
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "tag_cluster_bridge",
+      "formula_branch": "term1.coherence_efficiency",
+      "gap_fill_status": "FILLED"
+    },
+    {
+      "lab": "domain_orbital_predictions_lab",
+      "property": "prediction_gap_fill",
+      "name": "particle_neural_Orbital_Bridge",
+      "resolved_domain": "Particle_Neural_Orbital_Bridge",
+      "computed": 48.0,
+      "measured": 48.0,
+      "error_pct": 0.03326447040434832,
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "tag_cluster_bridge",
+      "formula_branch": "term1.coherence_efficiency",
+      "gap_fill_status": "FILLED"
+    },
+    {
+      "lab": "domain_orbital_predictions_lab",
+      "property": "prediction_gap_fill",
+      "name": "medical_galactic_Orbital_Bridge",
+      "resolved_domain": "Medical_Galactic_Orbital_Bridge",
+      "computed": 49.0,
+      "measured": 49.0,
+      "error_pct": 0.01071774302852102,
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "tag_cluster_bridge",
+      "formula_branch": "term1.coherence_efficiency",
+      "gap_fill_status": "FILLED"
+    },
+    {
+      "lab": "domain_orbital_predictions_lab",
+      "property": "prediction_gap_fill",
+      "name": "ai_galactic_Orbital_Bridge",
+      "resolved_domain": "AI_Galactic_Orbital_Bridge",
+      "computed": 48.0,
+      "measured": 48.0,
+      "error_pct": 0.005168558627176231,
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "tag_cluster_bridge",
+      "formula_branch": "term1.coherence_efficiency",
+      "gap_fill_status": "FILLED"
+    },
+    {
+      "lab": "domain_orbital_predictions_lab",
+      "property": "prediction_gap_fill",
+      "name": "neural_galactic_Orbital_Bridge",
+      "resolved_domain": "Neural_Galactic_Orbital_Bridge",
+      "computed": 49.0,
+      "measured": 49.0,
+      "error_pct": 0.01800266870179577,
+      "source": "orbital_predictions_registry.yaml",
+      "prediction_class": "tag_cluster_bridge",
+      "formula_branch": "term1.coherence_efficiency",
       "gap_fill_status": "FILLED"
     }
   ],
   "prediction_count": 12,
-  "filled_prediction_count": 9,
+  "filled_prediction_count": 12,
+  "orbital_bridge_count": 7,
   "physics_frontier_count": 4,
-  "orbital_bridge_count": 4,
   "gap_fill_status": "GREEN",
-  "orbital_report_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\domain_orbital_prediction_report.json",
+  "cross_scale_unified_physics": true,
   "crosswalk_modules": [
-    "FSOT.Formal.FormulaBranchingFractalPriors",
-    "FSOT.Formal.DomainCouplingSimulationPriors",
-    "FSOT.Formal.MechanisticCouplingPriors"
+    "FSOT.Formal.DomainOrbitalPredictionsPriors",
+    "FSOT.Formal.ToEUnificationSpinePriors"
   ]
 }

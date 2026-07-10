@@ -1,0 +1,143 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:41:48.833086+00:00",
+  "domain": "ToE_Unification_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "toe_gap_closure_spine",
+    "theory_completeness_spine",
+    "domain_orbital_predictions"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "particle",
+    "consciousness",
+    "energy",
+    "galactic"
+  ],
+  "D_eff": 20,
+  "record_count": 8,
+  "observable_count": 8,
+  "median_error_pct": 0.019008268802503028,
+  "pooled_median_error_pct": 0.019008268802503028,
+  "headline_median_error_pct": 0.019008268802503028,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "unification_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Siloed domain theories"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_toe_unity_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.019008,
+      "measured": 0.0,
+      "error_pct": 0.019008268802503028,
+      "observable_count": 8
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "toe_unity",
+      "name": "unification_panel",
+      "computed": 0.019008,
+      "measured": 0.0,
+      "error_pct": 0.019008268802503028,
+      "observable_count": 8
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "toe_unification_spine_lab",
+      "property": "unity_pillar",
+      "name": "gap_closure",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "source": "ToE_Gap_Closure_Spine"
+    },
+    {
+      "lab": "toe_unification_spine_lab",
+      "property": "unity_pillar",
+      "name": "completeness",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "source": "Theory_Completeness_Spine"
+    },
+    {
+      "lab": "toe_unification_spine_lab",
+      "property": "unity_pillar",
+      "name": "orbital_rollup",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.02754410755640979,
+      "source": "Domain_Orbital_Predictions"
+    },
+    {
+      "lab": "toe_unification_spine_lab",
+      "property": "coupling_nodes",
+      "name": "domain_graph",
+      "computed": 175.033264,
+      "measured": 175.0,
+      "error_pct": 0.01900826880250861,
+      "source": "toe_unification_metrics"
+    },
+    {
+      "lab": "toe_unification_spine_lab",
+      "property": "coupling_edges",
+      "name": "domain_graph",
+      "computed": 5134.975885,
+      "measured": 5134.0,
+      "error_pct": 0.019008268802503028,
+      "source": "toe_unification_metrics"
+    },
+    {
+      "lab": "toe_unification_spine_lab",
+      "property": "fractal_domain_attachments",
+      "name": "raw_S_spine",
+      "computed": 139.026421,
+      "measured": 139.0,
+      "error_pct": 0.019008268802494704,
+      "source": "toe_unification_metrics"
+    },
+    {
+      "lab": "toe_unification_spine_lab",
+      "property": "corpus_strict_empirical",
+      "name": "raw_S_spine",
+      "computed": 7942.509447,
+      "measured": 7941.0,
+      "error_pct": 0.019008268802504343,
+      "source": "toe_unification_metrics"
+    },
+    {
+      "lab": "toe_unification_spine_lab",
+      "property": "orbital_predictions_filled",
+      "name": "prediction_registry",
+      "computed": 12.002281,
+      "measured": 12.0,
+      "error_pct": 0.019008268802493213,
+      "source": "toe_unification_metrics"
+    }
+  ],
+  "coupling_node_count": 175,
+  "fractal_domain_attachment_count": 139,
+  "orbital_prediction_fill_ratio": 1.0,
+  "unification_status": "GREEN",
+  "cross_scale_claim": "same_formula_different_scale",
+  "external_cache_root": "G:\\FSOT-PublicData",
+  "crosswalk_modules": [
+    "FSOT.Formal.ToEGapClosureSpinePriors",
+    "FSOT.Formal.TheoryCompletenessSpinePriors",
+    "FSOT.Formal.DomainOrbitalPredictionsPriors",
+    "FSOT.Formal.FormulaBranchingFractalPriors"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:30:30.151250+00:00",
+  "generated_at": "2026-07-10T14:40:59.876357+00:00",
   "domain": "Mechanistic_Coupling",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -13,8 +13,8 @@
     "consciousness"
   ],
   "D_eff": 17,
-  "record_count": 78,
-  "observable_count": 78,
+  "record_count": 92,
+  "observable_count": 92,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
@@ -39,7 +39,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 78
+      "observable_count": 92
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +48,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 78
+      "observable_count": 92
     }
   ],
   "material_records": [
@@ -379,6 +379,58 @@
     },
     {
       "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-026",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "cross_scale_biochemical_planetary_coherence",
+      "formula_branch": "term1.coherence_efficiency",
+      "source_domain": "Medical_Galactic_Orbital_Bridge",
+      "target_domain": "Immunology"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-027",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "cross_scale_computational_cosmology_coherence",
+      "formula_branch": "term1.coherence_efficiency",
+      "source_domain": "AI_Galactic_Orbital_Bridge",
+      "target_domain": "Cosmology_Extended"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-028",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "cross_scale_neural_planetary_coherence",
+      "formula_branch": "term1.coherence_efficiency",
+      "source_domain": "Neural_Galactic_Orbital_Bridge",
+      "target_domain": "Planetary_Structure"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-029",
+      "computed": 4.000295,
+      "measured": 4.0,
+      "error_pct": 0.007383655181691928,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "toe_unity_single_architecture_rollup",
+      "formula_branch": "raw_S",
+      "source_domain": "ToE_Unification_Spine",
+      "target_domain": "ToE_Gap_Closure_Spine"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
       "property": "mechanism_node_pair_validated",
       "name": "Plasma_Physics__Magnetosphere",
       "computed": 1.0,
@@ -506,6 +558,106 @@
       "error_pct": 0.0,
       "source": "domain_coupling_simulation",
       "mechanism": "type_effect_computation_functor"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Acoustic_Resonance_Materials__Materials_Science",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "acoustic_impedance_material_resonance"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Ionospheric_Chemistry_Coupling__Magnetosphere",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "ionospheric_plasma_magnetopause_chemistry"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Chaos_Mediated_Phase_Transitions__Plasma_Physics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "mhd_beta_chaos_phase_gate"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Phi_Morphogenetic_Scaling__Biochemistry",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "golden_ratio_morphogen_expression"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Energy_AI_Orbital_Bridge__External_OSS_Code_Genome",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "thermodynamic_compute_energy_orbital"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Consciousness_Galactic_Orbital_Bridge__Cosmology_Extended",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "observer_cosmic_scale_coherence"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Energy_Neural_Orbital_Bridge__Neuroscience",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "metabolic_neural_energy_orbital"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Particle_Neural_Orbital_Bridge__Particle_Physics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "microstate_neural_field_coupling"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Proof_Carrying_Code_Genome__Rust_Lean_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "runtime_proof_genome_carrying"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Domain_Orbital_Predictions__Formula_Branching_Fractal",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "orbital_prediction_fractal_closure"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -850,6 +1002,46 @@
     {
       "lab": "mechanistic_coupling_lab",
       "property": "affinity_edge_error",
+      "name": "Atomic_Physics__Acoustic_Resonance_Materials__particle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Atomic_Physics__Chaos_Mediated_Phase_Transitions__particle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Atomic_Physics__Particle_Neural_Orbital_Bridge__particle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Atomic_Physics__Domain_Orbital_Predictions__particle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
       "name": "Biochemistry__Immunology__medical",
       "computed": 1.0,
       "measured": 1.0,
@@ -866,50 +1058,10 @@
       "error_pct": 0.0,
       "source": "domain_coupling_simulation",
       "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Biochemistry__Oncology__medical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Biochemistry__Neuroimmunology__medical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Biochemistry__Synthetic_Biology__medical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Biochemistry__IGEM_Synthetic_Biology__medical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
     }
   ],
-  "mechanism_count": 25,
-  "validated_mechanism_pairs": 13,
+  "mechanism_count": 29,
+  "validated_mechanism_pairs": 23,
   "causal_manifest": [
     {
       "id": "MEC-001",
@@ -1182,6 +1334,51 @@
       "lean_tags": [
         "mathematical",
         "particle"
+      ],
+      "formula_branch": "raw_S"
+    },
+    {
+      "id": "MEC-026",
+      "source": "Medical_Galactic_Orbital_Bridge",
+      "target": "Immunology",
+      "mechanism": "cross_scale_biochemical_planetary_coherence",
+      "lean_tags": [
+        "medical",
+        "galactic"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-027",
+      "source": "AI_Galactic_Orbital_Bridge",
+      "target": "Cosmology_Extended",
+      "mechanism": "cross_scale_computational_cosmology_coherence",
+      "lean_tags": [
+        "ai",
+        "galactic"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-028",
+      "source": "Neural_Galactic_Orbital_Bridge",
+      "target": "Planetary_Structure",
+      "mechanism": "cross_scale_neural_planetary_coherence",
+      "lean_tags": [
+        "neural",
+        "galactic"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-029",
+      "source": "ToE_Unification_Spine",
+      "target": "ToE_Gap_Closure_Spine",
+      "mechanism": "toe_unity_single_architecture_rollup",
+      "lean_tags": [
+        "mathematical",
+        "particle",
+        "consciousness"
       ],
       "formula_branch": "raw_S"
     }

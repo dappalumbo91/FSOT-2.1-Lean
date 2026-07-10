@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T14:31:26.177184+00:00",
+  "generated_at": "2026-07-10T14:41:54.243342+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -731,6 +731,14 @@
       "agriculture_agroecology_gap_fill_headline_median_under_five_pct",
       "agriculture_agroecology_gap_fill_beats_sota_headlines_pos",
       "agriculture_agroecology_gap_fill_bundle"
+    ],
+    "AIGalacticOrbitalBridgePriors": [
+      "ai_gal_br_observable_count_pos",
+      "ai_gal_br_pooled_median_under_five_pct",
+      "ai_gal_br_headline_median_under_five_pct",
+      "ai_gal_br_beats_sota_headlines_pos",
+      "ai_gal_br_bridge_pairs_pos",
+      "ai_gal_br_bundle"
     ],
     "AnthropologyExtensionPriors": [
       "anthropology_ext_observable_count_pos",
@@ -1499,7 +1507,7 @@
       "orb_pred_pooled_median_under_five_pct",
       "orb_pred_headline_median_under_five_pct",
       "orb_pred_beats_sota_headlines_pos",
-      "orb_pred_filled_predictions_pos",
+      "orb_pred_filled_all_predictions",
       "orb_pred_bundle"
     ],
     "DomainPrecisionPriors": [
@@ -1997,6 +2005,14 @@
       "mech_cpl_mechanisms_pos",
       "mech_cpl_bundle"
     ],
+    "MedicalGalacticOrbitalBridgePriors": [
+      "med_gal_br_observable_count_pos",
+      "med_gal_br_pooled_median_under_five_pct",
+      "med_gal_br_headline_median_under_five_pct",
+      "med_gal_br_beats_sota_headlines_pos",
+      "med_gal_br_bridge_pairs_pos",
+      "med_gal_br_bundle"
+    ],
     "MeteorologyGapFillPriors": [
       "meteorology_gap_fill_observable_count_pos",
       "meteorology_gap_fill_pooled_median_under_five_pct",
@@ -2022,6 +2038,14 @@
       "network_inet_headline_median_under_five_pct",
       "network_inet_beats_sota_headlines_pos",
       "network_inet_bundle"
+    ],
+    "NeuralGalacticOrbitalBridgePriors": [
+      "neu_gal_br_observable_count_pos",
+      "neu_gal_br_pooled_median_under_five_pct",
+      "neu_gal_br_headline_median_under_five_pct",
+      "neu_gal_br_beats_sota_headlines_pos",
+      "neu_gal_br_bridge_pairs_pos",
+      "neu_gal_br_bundle"
     ],
     "NeuroeconomicsExtensionPriors": [
       "neuroeconomics_ext_observable_count_pos",
@@ -2536,6 +2560,14 @@
       "gap_spine_beats_sota_headlines_pos",
       "gap_spine_pillars_pos",
       "gap_spine_bundle"
+    ],
+    "ToEUnificationSpinePriors": [
+      "toe_unity_observable_count_pos",
+      "toe_unity_pooled_median_under_five_pct",
+      "toe_unity_headline_median_under_five_pct",
+      "toe_unity_beats_sota_headlines_pos",
+      "toe_unity_coupling_nodes_pos",
+      "toe_unity_bundle"
     ],
     "TokenizationSmokePriors": [
       "tokenization_smoke_observable_count_pos",

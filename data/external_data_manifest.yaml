@@ -203,6 +203,17 @@ bundled:
     external_cache_root: G:/FSOT-PublicData/space_weather
     external_full_benchmark: G:/FSOT-PublicData/space_weather/space_weather_full_benchmark.json
 
+  cross_scale_bridges:
+    path: data/orbital_bridge_scientific_framing.yaml
+    role: Cross-scale self-similarity index + NASA exoplanet sample on external cache only
+    ingest_script: scripts/ingest_cross_scale_bridge_cache.py
+    env_override: FSOT_EXTERNAL_DATA_ROOT
+    external_cache_root: G:/FSOT-PublicData/cross_scale_bridges
+    external_files:
+      - cross_scale_self_similarity_index.json
+      - nasa_exoplanet_sample.json
+      - manifest.json
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification

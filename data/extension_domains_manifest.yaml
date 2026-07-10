@@ -1720,16 +1720,67 @@ extension_domains:
     note: "OSS runtime affinity + Rust-Lean proof bridge — formal methods genome"
 
   Domain_Orbital_Predictions:
-    tier: 47
-    D_eff: 18
-    delta_psi: 0.95
+    tier: 48
+    D_eff: 19
+    delta_psi: 0.96
     recent_hits: 3
     observed: true
-    maps_to_lean: [mathematical, particle, consciousness, energy]
-    build_script: scripts/build_tier_l_orbital_gap_fill_benchmarks.py
+    maps_to_lean: [mathematical, particle, consciousness, energy, medical, galactic]
+    build_script: scripts/build_tier_m_toe_unity_benchmarks.py
     benchmark_data: data/domain_orbital_predictions_benchmark.json
     lean_module: FSOT.Formal.DomainOrbitalPredictionsPriors
-    note: "Tier 47 rollup — 12 orbital predictions gap-fill status from coupling/fractal analysis"
+    note: "Tier 48 rollup — 12/12 orbital predictions via frozen registry + cross-scale bridges"
+
+  Medical_Galactic_Orbital_Bridge:
+    tier: 48
+    D_eff: 17
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    formula_branch_override: term1.coherence_efficiency
+    maps_to_lean: [medical, galactic]
+    build_script: scripts/build_tier_m_toe_unity_benchmarks.py
+    benchmark_data: data/medical_galactic_orbital_bridge_benchmark.json
+    lean_module: FSOT.Formal.MedicalGalacticOrbitalBridgePriors
+    note: "Cross-scale bridge — biochemical cluster × planetary/cosmology cluster (same spine, different scale)"
+
+  AI_Galactic_Orbital_Bridge:
+    tier: 48
+    D_eff: 16
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    formula_branch_override: term1.coherence_efficiency
+    maps_to_lean: [ai, galactic]
+    build_script: scripts/build_tier_m_toe_unity_benchmarks.py
+    benchmark_data: data/ai_galactic_orbital_bridge_benchmark.json
+    lean_module: FSOT.Formal.AIGalacticOrbitalBridgePriors
+    note: "Cross-scale bridge — computational systems × planetary/cosmology cluster"
+
+  Neural_Galactic_Orbital_Bridge:
+    tier: 48
+    D_eff: 17
+    delta_psi: 0.89
+    recent_hits: 2
+    observed: true
+    formula_branch_override: term1.coherence_efficiency
+    maps_to_lean: [neural, galactic]
+    build_script: scripts/build_tier_m_toe_unity_benchmarks.py
+    benchmark_data: data/neural_galactic_orbital_bridge_benchmark.json
+    lean_module: FSOT.Formal.NeuralGalacticOrbitalBridgePriors
+    note: "Cross-scale bridge — neural cluster × planetary/cosmology cluster"
+
+  ToE_Unification_Spine:
+    tier: 48
+    D_eff: 20
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, particle, consciousness, energy, galactic, medical]
+    build_script: scripts/build_tier_m_toe_unity_benchmarks.py
+    benchmark_data: data/toe_unification_spine_benchmark.json
+    lean_module: FSOT.Formal.ToEUnificationSpinePriors
+    note: "Tier 48 ToE unity rollup — gap closure + completeness + 12/12 orbital + coupling graph"
 
 verification:
   min_records_per_domain: 5
