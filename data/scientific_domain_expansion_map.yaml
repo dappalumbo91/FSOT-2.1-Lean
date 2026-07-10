@@ -1,8 +1,8 @@
-generated_at: '2026-07-10T18:45:15.031499+00:00'
+generated_at: '2026-07-10T18:51:00.691554+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 210
-  total_scientific_domains_covered: 246
+  extension_domains: 215
+  total_scientific_domains_covered: 251
   total_empirical_records: 306680
   domains_target_band_2pct: 35
   domains_sign_mismatch: 0
@@ -12,7 +12,7 @@ summary:
     C_thin: 0
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 280
+  lean_formal_modules: 285
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -1652,6 +1652,36 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: C_thin
   lean_module: FSOT.Formal.ToEClaimCertificateBundlePriors
+- domain: Fusion_Physics_Public_Panel
+  tier: 71
+  record_count: 19
+  median_error_pct: 9.5e-05
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.FusionPhysicsPublicPanelPriors
+- domain: Magnetic_Confinement_Fusion_Panel
+  tier: 71
+  record_count: 22
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.MagneticConfinementFusionPanelPriors
+- domain: Inertial_Confinement_Fusion_Panel
+  tier: 71
+  record_count: 15
+  median_error_pct: 7.9e-05
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.InertialConfinementFusionPanelPriors
+- domain: Cold_Fusion_Candidate_Prereg_Scaffold
+  tier: 71
+  record_count: 19
+  median_error_pct: 0.0
+  coverage_tier: C_thin
+  lean_module: FSOT.Formal.ColdFusionCandidatePreregScaffoldPriors
+- domain: Fusion_Lab_Certificate_Spine
+  tier: 71
+  record_count: 50
+  median_error_pct: 0.0
+  coverage_tier: B_verified
+  lean_module: FSOT.Formal.FusionLabCertificateSpinePriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572

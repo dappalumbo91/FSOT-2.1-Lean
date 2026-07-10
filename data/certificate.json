@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T18:45:09.773231+00:00",
+  "generated_at": "2026-07-10T18:50:58.986547+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -50,6 +50,7 @@
     "FSOT.Formal.ClinicalMedicineExtensionPriors",
     "FSOT.Formal.CodeGenomeStructurePriors",
     "FSOT.Formal.CodonPriors",
+    "FSOT.Formal.ColdFusionCandidatePreregScaffoldPriors",
     "FSOT.Formal.CompactificationLadderPriors",
     "FSOT.Formal.CompactObjectBinaryEventsPriors",
     "FSOT.Formal.ComputationalReasoningPriors",
@@ -112,6 +113,8 @@
     "FSOT.Formal.FuelCandidatePreregScaffoldPriors",
     "FSOT.Formal.FuelPriors",
     "FSOT.Formal.FuelThermochemistryPublicAnchorsPriors",
+    "FSOT.Formal.FusionLabCertificateSpinePriors",
+    "FSOT.Formal.FusionPhysicsPublicPanelPriors",
     "FSOT.Formal.GaiaAstrometryPanelDeepPriors",
     "FSOT.Formal.GaiaDR3TAPDeepPriors",
     "FSOT.Formal.GalacticStructureSamplePriors",
@@ -132,6 +135,7 @@
     "FSOT.Formal.IGEMPartsExpandedPriors",
     "FSOT.Formal.IGEMSyntheticBiologyPriors",
     "FSOT.Formal.ImmunologyPriors",
+    "FSOT.Formal.InertialConfinementFusionPanelPriors",
     "FSOT.Formal.InformationTheoryPublicPanelPriors",
     "FSOT.Formal.InitiationTransformationArchetypePriors",
     "FSOT.Formal.IntelligenceCompressionPriors",
@@ -147,6 +151,7 @@
     "FSOT.Formal.LinguisticsPriors",
     "FSOT.Formal.LiveIngestSpinePriors",
     "FSOT.Formal.MagicCirclePriors",
+    "FSOT.Formal.MagneticConfinementFusionPanelPriors",
     "FSOT.Formal.MagneticStringPriors",
     "FSOT.Formal.MagnetosphereExtendedPriors",
     "FSOT.Formal.MagnetospherePriors",
@@ -1570,6 +1575,13 @@
       "codon_ttt_secondary_phase",
       "codon_trinary_map_bundle"
     ],
+    "ColdFusionCandidatePreregScaffoldPriors": [
+      "cold_fusion_candidate_prereg_scaffold_observable_count_pos",
+      "cold_fusion_candidate_prereg_scaffold_pooled_median_under_half_pct",
+      "cold_fusion_candidate_prereg_scaffold_headline_median_under_half_pct",
+      "cold_fusion_candidate_prereg_scaffold_beats_sota_headlines_pos",
+      "cold_fusion_candidate_prereg_scaffold_bundle"
+    ],
     "CompactificationLadderPriors": [
       "comp_lad_observable_count_pos",
       "comp_lad_pooled_median_under_half_pct",
@@ -2077,6 +2089,20 @@
       "fuel_thermochemistry_public_anchors_beats_sota_headlines_pos",
       "fuel_thermochemistry_public_anchors_bundle"
     ],
+    "FusionLabCertificateSpinePriors": [
+      "fusion_lab_certificate_spine_observable_count_pos",
+      "fusion_lab_certificate_spine_pooled_median_under_half_pct",
+      "fusion_lab_certificate_spine_headline_median_under_half_pct",
+      "fusion_lab_certificate_spine_beats_sota_headlines_pos",
+      "fusion_lab_certificate_spine_bundle"
+    ],
+    "FusionPhysicsPublicPanelPriors": [
+      "fusion_physics_public_panel_observable_count_pos",
+      "fusion_physics_public_panel_pooled_median_under_half_pct",
+      "fusion_physics_public_panel_headline_median_under_half_pct",
+      "fusion_physics_public_panel_beats_sota_headlines_pos",
+      "fusion_physics_public_panel_bundle"
+    ],
     "GaiaAstrometryPanelDeepPriors": [
       "gaia_astrometry_panel_deep_observable_count_pos",
       "gaia_astrometry_panel_deep_pooled_median_under_half_pct",
@@ -2227,6 +2253,13 @@
       "immunology_median_error_under_half_pct",
       "immunology_bundle"
     ],
+    "InertialConfinementFusionPanelPriors": [
+      "inertial_confinement_fusion_panel_observable_count_pos",
+      "inertial_confinement_fusion_panel_pooled_median_under_half_pct",
+      "inertial_confinement_fusion_panel_headline_median_under_half_pct",
+      "inertial_confinement_fusion_panel_beats_sota_headlines_pos",
+      "inertial_confinement_fusion_panel_bundle"
+    ],
     "InformationTheoryPublicPanelPriors": [
       "information_theory_public_panel_observable_count_pos",
       "information_theory_public_panel_pooled_median_under_half_pct",
@@ -2344,6 +2377,13 @@
       "magic_imbalance_penalty_in_unit_interval",
       "magic_backlash_threshold_in_unit_interval",
       "magic_circle_priors_bundle"
+    ],
+    "MagneticConfinementFusionPanelPriors": [
+      "magnetic_confinement_fusion_panel_observable_count_pos",
+      "magnetic_confinement_fusion_panel_pooled_median_under_half_pct",
+      "magnetic_confinement_fusion_panel_headline_median_under_half_pct",
+      "magnetic_confinement_fusion_panel_beats_sota_headlines_pos",
+      "magnetic_confinement_fusion_panel_bundle"
     ],
     "MagneticStringPriors": [
       "magnetic_S_em_positive",
@@ -3393,8 +3433,8 @@
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
-  "formal_module_count": 280,
-  "lean_target_count": 281,
+  "formal_module_count": 285,
+  "lean_target_count": 286,
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",

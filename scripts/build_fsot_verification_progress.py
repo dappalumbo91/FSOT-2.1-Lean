@@ -1680,7 +1680,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 70 ToE claim hardening complete — 210/210 extension domains verified, 246-node coupling simulation refreshed, lake build certified",
+        "current_position": "Tier 71 Fusion lab certificates complete — 215/215 extension domains verified, public D-T/ICF fusion + cold-fusion prereg scaffold",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

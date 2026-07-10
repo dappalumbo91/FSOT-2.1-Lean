@@ -2724,6 +2724,71 @@ extension_domains:
     lean_module: FSOT.Formal.ToEClaimCertificateBundlePriors
     note: "Publication-facing ToE claim bundle — progress + scope + unification spine"
 
+  Fusion_Physics_Public_Panel:
+    tier: 71
+    D_eff: 18
+    delta_psi: 0.95
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [fusion, energy, particle, plasma]
+    build_script: scripts/build_tier71_fusion_lab_benchmarks.py
+    manifest: data/tier71_fusion_lab_manifest.yaml
+    benchmark_data: data/fusion_physics_public_panel_benchmark.json
+    lean_module: FSOT.Formal.FusionPhysicsPublicPanelPriors
+    note: "IAEA/NIF/ITER published reaction energetics, Lawson thresholds, power-balance temps"
+
+  Magnetic_Confinement_Fusion_Panel:
+    tier: 71
+    D_eff: 16
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [fusion, energy, plasma, particle]
+    build_script: scripts/build_tier71_fusion_lab_benchmarks.py
+    manifest: data/tier71_fusion_lab_manifest.yaml
+    benchmark_data: data/magnetic_confinement_fusion_panel_benchmark.json
+    lean_module: FSOT.Formal.MagneticConfinementFusionPanelPriors
+    note: "Tokamak/stellarator MHD relay + JET/ITER/EAST facility triple-product anchors"
+
+  Inertial_Confinement_Fusion_Panel:
+    tier: 71
+    D_eff: 17
+    delta_psi: 0.92
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [fusion, energy, plasma, particle]
+    build_script: scripts/build_tier71_fusion_lab_benchmarks.py
+    manifest: data/tier71_fusion_lab_manifest.yaml
+    benchmark_data: data/inertial_confinement_fusion_panel_benchmark.json
+    lean_module: FSOT.Formal.InertialConfinementFusionPanelPriors
+    note: "NIF/Omega ICF ignition + yield/Q relays from published milestones"
+
+  Cold_Fusion_Candidate_Prereg_Scaffold:
+    tier: 71
+    D_eff: 14
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [fusion, energy, particle, material]
+    build_script: scripts/build_tier71_fusion_lab_benchmarks.py
+    manifest: data/tier71_fusion_lab_manifest.yaml
+    benchmark_data: data/cold_fusion_candidate_prereg_scaffold_benchmark.json
+    lean_module: FSOT.Formal.ColdFusionCandidatePreregScaffoldPriors
+    note: "Low-temperature fusion candidate screening via term3 acoustic bleed + boundary partition — preregistered, not claimed discovered"
+
+  Fusion_Lab_Certificate_Spine:
+    tier: 71
+    D_eff: 20
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [fusion, energy, plasma, particle, material]
+    build_script: scripts/build_tier71_fusion_lab_benchmarks.py
+    manifest: data/tier71_fusion_lab_manifest.yaml
+    benchmark_data: data/fusion_lab_certificate_spine_benchmark.json
+    lean_module: FSOT.Formal.FusionLabCertificateSpinePriors
+    note: "Fusion lab certificate rollup — public panels + plasma + fuel thermochemistry + energy bridges"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

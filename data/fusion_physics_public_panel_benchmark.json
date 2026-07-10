@@ -1,0 +1,239 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:50:40.038681+00:00",
+  "domain": "Fusion_Physics_Public_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fusion\\fusion_public_anchors.json"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "energy",
+    "particle",
+    "plasma"
+  ],
+  "D_eff": 18,
+  "record_count": 19,
+  "observable_count": 19,
+  "median_error_pct": 9.5e-05,
+  "pooled_median_error_pct": 9.5e-05,
+  "headline_median_error_pct": 9.50413440155747e-05,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fusion_public": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Nuclear data tables"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_reaction_energetics_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 9.5e-05,
+      "measured": 0.0,
+      "error_pct": 9.5e-05,
+      "observable_count": 19
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "reaction_energetics",
+      "name": "fusion_public",
+      "computed": 9.5e-05,
+      "measured": 0.0,
+      "error_pct": 9.50413440155747e-05,
+      "observable_count": 18
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "energy_mev",
+      "name": "dt_fusion",
+      "computed": 17.600017,
+      "measured": 17.6,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dt_fusion",
+      "computed": 15.000014,
+      "measured": 15.0,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "cross_section_peak_barn",
+      "name": "dt_fusion",
+      "computed": 5.000005,
+      "measured": 5.0,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "energy_mev",
+      "name": "dd_fusion",
+      "computed": 4.030004,
+      "measured": 4.03,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dd_fusion",
+      "computed": 50.000048,
+      "measured": 50.0,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "cross_section_peak_barn",
+      "name": "dd_fusion",
+      "computed": 0.1,
+      "measured": 0.1,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "energy_mev",
+      "name": "dhe3_fusion",
+      "computed": 18.300017,
+      "measured": 18.3,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dhe3_fusion",
+      "computed": 60.000057,
+      "measured": 60.0,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "cross_section_peak_barn",
+      "name": "dhe3_fusion",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "energy_mev",
+      "name": "p_b11_fusion",
+      "computed": 8.700008,
+      "measured": 8.7,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "coulomb_peak_kev",
+      "name": "p_b11_fusion",
+      "computed": 600.00057,
+      "measured": 600.0,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "cross_section_peak_barn",
+      "name": "p_b11_fusion",
+      "computed": 0.01,
+      "measured": 0.01,
+      "error_pct": 9.5e-05,
+      "eval_kind": "reaction_energetics"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "lawson_triple_product",
+      "name": "dt_breakeven",
+      "computed": 3.0000000000023606e+20,
+      "measured": 3e+20,
+      "error_pct": 0.0,
+      "eval_kind": "lawson_anchor"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "lawson_triple_product",
+      "name": "dt_ignition",
+      "computed": 3.000000000002361e+21,
+      "measured": 3e+21,
+      "error_pct": 0.0,
+      "eval_kind": "lawson_anchor"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "lawson_triple_product",
+      "name": "dt_commercial",
+      "computed": 1.0000000000007869e+22,
+      "measured": 1e+22,
+      "error_pct": 0.0,
+      "eval_kind": "lawson_anchor"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "power_balance_temp_kev",
+      "name": "dt_bremsstrahlung_crossover",
+      "computed": 4.300034,
+      "measured": 4.3,
+      "error_pct": 0.000787,
+      "eval_kind": "power_balance"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "power_balance_temp_kev",
+      "name": "dt_optimum_temp",
+      "computed": 15.000118,
+      "measured": 15.0,
+      "error_pct": 0.000787,
+      "eval_kind": "power_balance"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "power_balance_temp_kev",
+      "name": "dd_optimum_temp",
+      "computed": 50.000393,
+      "measured": 50.0,
+      "error_pct": 0.000787,
+      "eval_kind": "power_balance"
+    },
+    {
+      "lab": "fusion_physics_public_lab",
+      "property": "particle_physics_scalar",
+      "name": "fsot_Particle_Physics",
+      "computed": 0.950413,
+      "measured": 0.950413,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 9.5e-05,
+    "max_scalar_error_pct": 0.000787,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

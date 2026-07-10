@@ -1,0 +1,16 @@
+version: "1.0"
+tier: 71
+domains:
+  - Fusion_Physics_Public_Panel
+  - Magnetic_Confinement_Fusion_Panel
+  - Inertial_Confinement_Fusion_Panel
+  - Cold_Fusion_Candidate_Prereg_Scaffold
+  - Fusion_Lab_Certificate_Spine
+build: scripts/build_tier71_fusion_lab_benchmarks.py
+lean: scripts/gen_tiers_71_lean.py
+artifacts:
+  - vendor/fusion/fusion_public_anchors.json
+  - vendor/fusion/cold_fusion_prereg_anchors.json
+  - data/plasma_physics_benchmark.json
+  - data/fuel_thermochemistry_public_anchors_benchmark.json
+note: "Fusion lab certificates — public D-T/ICF/magnetic confinement + cold-fusion prereg scaffold"

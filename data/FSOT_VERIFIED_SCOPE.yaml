@@ -1,4 +1,4 @@
-generated_at: '2026-07-10T18:45:28.546540+00:00'
+generated_at: '2026-07-10T18:51:00.007859+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 280
+  lean_formal_modules: 285
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
   tiers_complete: 48
   tiers_total: 48
   percent_complete: 100.0
-current_tier: Tier 70 ToE claim hardening complete — 210/210 extension domains verified,
-  246-node coupling simulation refreshed, lake build certified
+current_tier: Tier 71 Fusion lab certificates complete — 215/215 extension domains
+  verified, public D-T/ICF fusion + cold-fusion prereg scaffold
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -475,6 +475,7 @@ tier_coverage:
   - ClinicalMedicineExtensionPriors
   - CodeGenomeStructurePriors
   - CodonPriors
+  - ColdFusionCandidatePreregScaffoldPriors
   - CompactObjectBinaryEventsPriors
   - CompactificationLadderPriors
   - ComputationalReasoningPriors
@@ -536,6 +537,8 @@ tier_coverage:
   - FuelCandidatePreregScaffoldPriors
   - FuelPriors
   - FuelThermochemistryPublicAnchorsPriors
+  - FusionLabCertificateSpinePriors
+  - FusionPhysicsPublicPanelPriors
   - GWOSCLiveEventDeepPriors
   - GaiaAstrometryPanelDeepPriors
   - GaiaDR3TAPDeepPriors
@@ -556,6 +559,7 @@ tier_coverage:
   - IGEMPartsExpandedPriors
   - IGEMSyntheticBiologyPriors
   - ImmunologyPriors
+  - InertialConfinementFusionPanelPriors
   - InformationTheoryPublicPanelPriors
   - InitiationTransformationArchetypePriors
   - IntelligenceCompressionPriors
@@ -570,6 +574,7 @@ tier_coverage:
   - LinguisticsPriors
   - LiveIngestSpinePriors
   - MagicCirclePriors
+  - MagneticConfinementFusionPanelPriors
   - MagneticStringPriors
   - MagnetosphereExtendedPriors
   - MagnetospherePriors
@@ -2847,6 +2852,26 @@ extension_domains:
   median_error_pct: 0.0
   coverage_tier: C_thin
   lean_module: FSOT.Formal.ToEClaimCertificateBundlePriors
+- domain: Fusion_Physics_Public_Panel
+  tier: 71
+  record_count: 19
+  lean_module: FSOT.Formal.FusionPhysicsPublicPanelPriors
+- domain: Magnetic_Confinement_Fusion_Panel
+  tier: 71
+  record_count: 22
+  lean_module: FSOT.Formal.MagneticConfinementFusionPanelPriors
+- domain: Inertial_Confinement_Fusion_Panel
+  tier: 71
+  record_count: 15
+  lean_module: FSOT.Formal.InertialConfinementFusionPanelPriors
+- domain: Cold_Fusion_Candidate_Prereg_Scaffold
+  tier: 71
+  record_count: 19
+  lean_module: FSOT.Formal.ColdFusionCandidatePreregScaffoldPriors
+- domain: Fusion_Lab_Certificate_Spine
+  tier: 71
+  record_count: 50
+  lean_module: FSOT.Formal.FusionLabCertificateSpinePriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -3580,6 +3605,7 @@ lean_formal_modules:
 - ClinicalMedicineExtensionPriors
 - CodeGenomeStructurePriors
 - CodonPriors
+- ColdFusionCandidatePreregScaffoldPriors
 - CompactObjectBinaryEventsPriors
 - CompactificationLadderPriors
 - ComputationalReasoningPriors
@@ -3641,6 +3667,8 @@ lean_formal_modules:
 - FuelCandidatePreregScaffoldPriors
 - FuelPriors
 - FuelThermochemistryPublicAnchorsPriors
+- FusionLabCertificateSpinePriors
+- FusionPhysicsPublicPanelPriors
 - GWOSCLiveEventDeepPriors
 - GaiaAstrometryPanelDeepPriors
 - GaiaDR3TAPDeepPriors
@@ -3661,6 +3689,7 @@ lean_formal_modules:
 - IGEMPartsExpandedPriors
 - IGEMSyntheticBiologyPriors
 - ImmunologyPriors
+- InertialConfinementFusionPanelPriors
 - InformationTheoryPublicPanelPriors
 - InitiationTransformationArchetypePriors
 - IntelligenceCompressionPriors
@@ -3675,6 +3704,7 @@ lean_formal_modules:
 - LinguisticsPriors
 - LiveIngestSpinePriors
 - MagicCirclePriors
+- MagneticConfinementFusionPanelPriors
 - MagneticStringPriors
 - MagnetosphereExtendedPriors
 - MagnetospherePriors

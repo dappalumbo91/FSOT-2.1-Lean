@@ -1,0 +1,34 @@
+{
+  "source": "IAEA/NIF/ITER/JET/EAST published fusion milestones and reaction energetics (public literature)",
+  "reactions": [
+    {"id": "dt_fusion", "name": "D-T fusion", "energy_mev": 17.6, "coulomb_peak_kev": 15.0, "cross_section_peak_barn": 5.0},
+    {"id": "dd_fusion", "name": "D-D fusion", "energy_mev": 4.03, "coulomb_peak_kev": 50.0, "cross_section_peak_barn": 0.1},
+    {"id": "dhe3_fusion", "name": "D-He3 fusion", "energy_mev": 18.3, "coulomb_peak_kev": 60.0, "cross_section_peak_barn": 0.5},
+    {"id": "p_b11_fusion", "name": "p-B11 aneutronic", "energy_mev": 8.7, "coulomb_peak_kev": 600.0, "cross_section_peak_barn": 0.01}
+  ],
+  "lawson_thresholds": [
+    {"id": "dt_breakeven", "name": "D-T breakeven triple product", "triple_product_m3_kev_s": 3.0e20},
+    {"id": "dt_ignition", "name": "D-T ignition triple product", "triple_product_m3_kev_s": 3.0e21},
+    {"id": "dt_commercial", "name": "D-T commercial triple product", "triple_product_m3_kev_s": 1.0e22}
+  ],
+  "magnetic_facilities": [
+    {"id": "JET_1997", "name": "JET D-T Q record", "q_factor": 0.67, "temp_kev": 30.0, "n_m3": 1.0e19, "tau_s": 1.0, "ignited": false},
+    {"id": "TFTR_1994", "name": "TFTR D-T Q", "q_factor": 0.28, "temp_kev": 25.0, "n_m3": 8.0e19, "tau_s": 0.8, "ignited": false},
+    {"id": "EAST_2023", "name": "EAST long-pulse H-mode", "q_factor": 0.0, "temp_kev": 15.0, "n_m3": 5.0e19, "tau_s": 400.0, "ignited": false},
+    {"id": "ITER_design", "name": "ITER design Q", "q_factor": 10.0, "temp_kev": 150.0, "n_m3": 1.0e20, "tau_s": 3.7, "ignited": true},
+    {"id": "SPARC_design", "name": "SPARC design Q", "q_factor": 2.0, "temp_kev": 20.0, "n_m3": 3.0e20, "tau_s": 0.5, "ignited": true},
+    {"id": "W7X_steady", "name": "Wendelstein 7-X steady", "q_factor": 0.0, "temp_kev": 8.0, "n_m3": 3.0e19, "tau_s": 0.2, "ignited": false},
+    {"id": "JT60SA_design", "name": "JT-60SA design", "q_factor": 1.0, "temp_kev": 40.0, "n_m3": 8.0e19, "tau_s": 1.5, "ignited": false}
+  ],
+  "inertial_facilities": [
+    {"id": "NIF_2022", "name": "NIF ignition 2022", "q_factor": 1.5, "yield_mj": 3.15, "driver_mj": 2.05, "ignited": true},
+    {"id": "NIF_2021", "name": "NIF near-ignition 2021", "q_factor": 0.7, "yield_mj": 1.3, "driver_mj": 1.9, "ignited": false},
+    {"id": "OMEGA_direct", "name": "OMEGA direct drive", "q_factor": 0.01, "yield_mj": 0.025, "driver_mj": 30.0, "ignited": false},
+    {"id": "NIF_hohlraum_baseline", "name": "NIF hohlraum baseline", "q_factor": 0.05, "yield_mj": 0.05, "driver_mj": 1.8, "ignited": false}
+  ],
+  "power_balance": [
+    {"id": "dt_bremsstrahlung_crossover", "name": "D-T bremsstrahlung crossover", "temp_kev": 4.3},
+    {"id": "dt_optimum_temp", "name": "D-T optimum reactivity temp", "temp_kev": 15.0},
+    {"id": "dd_optimum_temp", "name": "D-D optimum reactivity temp", "temp_kev": 50.0}
+  ]
+}

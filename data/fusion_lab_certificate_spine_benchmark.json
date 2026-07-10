@@ -1,0 +1,575 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:50:40.047347+00:00",
+  "domain": "Fusion_Lab_Certificate_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fusion\\fusion_public_anchors.json",
+    "plasma_physics_benchmark.json",
+    "fuel_thermochemistry_public_anchors_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "energy",
+    "plasma",
+    "particle",
+    "material"
+  ],
+  "D_eff": 20,
+  "record_count": 50,
+  "observable_count": 50,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fusion_lab_spine": {
+        "sota_typical_error_pct": 25.0,
+        "sota_model": "No unified fusion lab certificate artifact"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fusion_certificate_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 50
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fusion_certificate",
+      "name": "fusion_lab_spine",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 42
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "panel_pooled_median",
+      "name": "fusion_physics_public",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "record_count": 19,
+      "eval_kind": "fusion_panel_bridge"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "energy_mev",
+      "name": "dt_fusion",
+      "computed": 17.600017,
+      "measured": 17.6,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics_public",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dt_fusion",
+      "computed": 15.000014,
+      "measured": 15.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics_public",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "cross_section_peak_barn",
+      "name": "dt_fusion",
+      "computed": 5.000005,
+      "measured": 5.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics_public",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "energy_mev",
+      "name": "dd_fusion",
+      "computed": 4.030004,
+      "measured": 4.03,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics_public",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dd_fusion",
+      "computed": 50.000048,
+      "measured": 50.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics_public",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "cross_section_peak_barn",
+      "name": "dd_fusion",
+      "computed": 0.1,
+      "measured": 0.1,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics_public",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "panel_pooled_median",
+      "name": "magnetic_confinement",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 22,
+      "eval_kind": "fusion_panel_bridge"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "tokamak_H_mode",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "magnetic_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "tokamak_high_beta",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "magnetic_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "theta_pinch",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "magnetic_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "FRC_laboratory",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "magnetic_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "stellarator_W7X",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "magnetic_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "Wendelstein_edge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "magnetic_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "panel_pooled_median",
+      "name": "inertial_confinement",
+      "computed": 7.9e-05,
+      "measured": 7.9e-05,
+      "error_pct": 0.0,
+      "record_count": 15,
+      "eval_kind": "fusion_panel_bridge"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "z_pinch",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "inertial_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "ICF_hohlraum",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "inertial_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "ignition_classifier",
+      "name": "NIF_2022",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "inertial_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "fusion_yield_mj",
+      "name": "NIF_2022",
+      "computed": 3.150002,
+      "measured": 3.15,
+      "error_pct": 7.9e-05,
+      "source_panel": "inertial_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "q_factor_derived",
+      "name": "NIF_2022",
+      "computed": 1.536587,
+      "measured": 1.536585,
+      "error_pct": 9.5e-05,
+      "source_panel": "inertial_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "ignition_classifier",
+      "name": "NIF_2021",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "inertial_confinement",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "panel_pooled_median",
+      "name": "cold_fusion_prereg",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 19,
+      "eval_kind": "fusion_panel_bridge"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "acoustic_bleed_panel_bridge",
+      "name": "term3_acoustic_bleed_depth",
+      "computed": 0.008381497018408523,
+      "measured": 0.008381497018408523,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "boundary_partition_panel_bridge",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "pd_deuterium_lattice",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "pd_deuterium_lattice",
+      "computed": 1.850001,
+      "measured": 1.85,
+      "error_pct": 7.9e-05,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "ni_hydrogen_lattice",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "ni_hydrogen_lattice",
+      "computed": 1.620001,
+      "measured": 1.62,
+      "error_pct": 7.9e-05,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "panel_pooled_median",
+      "name": "plasma_physics",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 20,
+      "eval_kind": "fusion_panel_bridge"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "ionosphere",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "plasma_physics",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "solar_wind",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "plasma_physics",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "tokamak_H_mode",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "plasma_physics",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "tokamak_high_beta",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "plasma_physics",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "laboratory_Q_machine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "plasma_physics",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "mhd_beta_stability",
+      "name": "magnetosphere",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "plasma_physics",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "panel_pooled_median",
+      "name": "fuel_thermochemistry",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 14,
+      "eval_kind": "fusion_panel_bridge"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "hf_kj_mol",
+      "name": "hydrogen",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "fuel_thermochemistry",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "lhv_mj_kg",
+      "name": "hydrogen",
+      "computed": 120.0,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "source_panel": "fuel_thermochemistry",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "hf_kj_mol",
+      "name": "methane",
+      "computed": -74.6,
+      "measured": -74.6,
+      "error_pct": 0.0,
+      "source_panel": "fuel_thermochemistry",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "lhv_mj_kg",
+      "name": "methane",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0,
+      "source_panel": "fuel_thermochemistry",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "hf_kj_mol",
+      "name": "ethanol",
+      "computed": -234.8,
+      "measured": -234.8,
+      "error_pct": 0.0,
+      "source_panel": "fuel_thermochemistry",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "lhv_mj_kg",
+      "name": "ethanol",
+      "computed": 26.8,
+      "measured": 26.8,
+      "error_pct": 0.0,
+      "source_panel": "fuel_thermochemistry",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "panel_pooled_median",
+      "name": "energy_ai_orbital",
+      "computed": 0.027544,
+      "measured": 0.027544,
+      "error_pct": 0.0,
+      "record_count": 48,
+      "eval_kind": "fusion_panel_bridge"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Acoustic_Resonance_Materials__Adversarial_Fractal_Break_Tests",
+      "computed": 0.008384,
+      "measured": 0.008381,
+      "error_pct": 0.027544107556409878,
+      "source_panel": "energy_ai_orbital",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Acoustic_Resonance_Materials__Arxiv_Primitives_V14",
+      "computed": 0.008384,
+      "measured": 0.008381,
+      "error_pct": 0.027544107556409878,
+      "source_panel": "energy_ai_orbital",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Acoustic_Resonance_Materials__Binary_Decoder_Rendlesham",
+      "computed": 0.008384,
+      "measured": 0.008381,
+      "error_pct": 0.027544107556409878,
+      "source_panel": "energy_ai_orbital",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Acoustic_Resonance_Materials__CVE_Codon_Hole_Falsification",
+      "computed": 0.000805,
+      "measured": 0.000805,
+      "error_pct": 0.02754410755641274,
+      "source_panel": "energy_ai_orbital",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Acoustic_Resonance_Materials__Certified_Agent_Qwen",
+      "computed": 0.008384,
+      "measured": 0.008381,
+      "error_pct": 0.027544107556409878,
+      "source_panel": "energy_ai_orbital",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "orbital_bridge_coupling",
+      "name": "Acoustic_Resonance_Materials__Code_Genome_Structure",
+      "computed": 0.008384,
+      "measured": 0.008381,
+      "error_pct": 0.027544107556409878,
+      "source_panel": "energy_ai_orbital",
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "fusion_lab_certificate_lab",
+      "property": "fusion_lab_certificate_ready",
+      "name": "fusion_lab_certificate_spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_gate",
+      "artifacts": [
+        "fusion_public_anchors.json",
+        "cold_fusion_prereg_anchors.json",
+        "plasma_physics_benchmark.json"
+      ]
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 9.5e-05,
+    "max_scalar_error_pct": 0.02754410755641274,
+    "classifier_count": 25,
+    "classifier_correct": 25,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

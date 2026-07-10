@@ -1,0 +1,77 @@
+{
+  "source": "Cold / low-temperature fusion candidate screening — preregister before novel claims",
+  "channel": "cold_fusion_candidate_screening_prereg",
+  "formula_branches": {
+    "acoustic_bleed_enhancement": "term3.acoustic_bleed",
+    "boundary_lattice_confinement": "term3.boundary_partition",
+    "initiation_transformation_catalyst": "term1.initiation_transformation"
+  },
+  "candidates": [
+    {
+      "id": "pd_deuterium_lattice",
+      "name": "Palladium-deuterium lattice loading",
+      "mechanism": "lattice_acoustic_bleed_confinement",
+      "formula_branch": "term3.acoustic_bleed",
+      "sota_excess_heat_w": 0.0,
+      "sota_label": "Null baseline (no reproducible excess heat)",
+      "fsot_predicted_enhancement_factor": 1.85,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "ni_hydrogen_lattice",
+      "name": "Nickel-hydrogen lattice candidate",
+      "mechanism": "boundary_partition_catalyst",
+      "formula_branch": "term3.boundary_partition",
+      "sota_excess_heat_w": 0.0,
+      "sota_label": "Null baseline",
+      "fsot_predicted_enhancement_factor": 1.62,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "titanium_deuterium_absorption",
+      "name": "Titanium-deuterium absorption channel",
+      "mechanism": "acoustic_bleed_enhancement",
+      "formula_branch": "term3.acoustic_bleed",
+      "sota_excess_heat_w": 0.0,
+      "sota_label": "Null baseline",
+      "fsot_predicted_enhancement_factor": 1.41,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "muon_catalyzed_dd",
+      "name": "Muon-catalyzed D-D (published low-temp fusion)",
+      "mechanism": "initiation_transformation_catalyst",
+      "formula_branch": "term1.initiation_transformation",
+      "sota_fusion_rate_per_mol_s": 1.0e8,
+      "sota_label": "Published muon-catalyzed D-D rate",
+      "fsot_predicted_rate_per_mol_s": 1.08e8,
+      "discriminant": "within_10pct_of_observed_gap"
+    },
+    {
+      "id": "sonofusion_bubble_collapse",
+      "name": "Acoustic bubble-collapse fusion candidate",
+      "mechanism": "acoustic_bleed_enhancement",
+      "formula_branch": "term3.acoustic_bleed",
+      "sota_neutron_rate_per_s": 0.0,
+      "sota_label": "Null baseline (no reproducible neutrons)",
+      "fsot_predicted_neutron_rate_per_s": 0.42,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "electrolytic_dd_palladium",
+      "name": "Electrolytic Pd-D Fleischmann-Pons class",
+      "mechanism": "boundary_lattice_confinement",
+      "formula_branch": "term3.boundary_partition",
+      "sota_excess_heat_w": 0.0,
+      "sota_label": "Null baseline",
+      "fsot_predicted_enhancement_factor": 2.1,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    }
+  ],
+  "screening_gates": [
+    {"id": "lattice_loading_ratio_min", "name": "Minimum D/Pd loading ratio", "value": 0.9},
+    {"id": "acoustic_bleed_coupling_min", "name": "Acoustic bleed coupling threshold", "value": 0.35},
+    {"id": "boundary_partition_margin", "name": "Boundary partition margin", "value": 0.15},
+    {"id": "excess_heat_detection_w", "name": "Excess heat detection floor (W)", "value": 0.1}
+  ]
+}

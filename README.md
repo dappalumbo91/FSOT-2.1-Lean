@@ -27,7 +27,7 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-10 — Tier 70)
+## Verification status (2026-07-10 — Tier 71)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
@@ -36,16 +36,16 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 | Metric | Value |
 |--------|-------|
 | Verification tiers | **48/48 complete** (100%) |
-| Extension domains | **210/210** pass `verify_extension_domains.py` (≤0.5% pooled gate) |
-| Scientific domains | **246** (35 NeuroLab + 210 extension + Intelligence Compression rollup) |
+| Extension domains | **215/215** pass `verify_extension_domains.py` (≤0.5% pooled gate) |
+| Scientific domains | **251** (35 NeuroLab + 215 extension + Intelligence Compression rollup) |
 | Coupling simulation | **246 nodes · 12,840 edges** (maps_to_lean + cross-ratios + magnetosphere + cyber stack) |
 | Empirical records | **306,680+** |
 | Neurolab precision | **35/35** domains ≤2% median error |
 | Coverage tiers | A_strong: 25 · B_verified: 10 · C_thin: **0** · D_needs_work: **0** · unverified: **0** |
-| Lean formal modules | **280** |
+| Lean formal modules | **285** |
 | Proved claims | **65** · 0 active `sorry` |
 | SOTA ledger | **65/65** observables beat or meet baselines |
-| Expansion candidates | **0** (roadmap tiers 51–70 complete) |
+| Expansion candidates | **0** (roadmap tiers 51–71 complete) |
 
 **External data cache** (bulk API ingest): `G:\FSOT-PublicData` — override with `FSOT_EXTERNAL_DATA_ROOT`. Space weather full arc: `G:\FSOT-PublicData\space_weather\space_weather_full_benchmark.json` (271,813 Kp records); portable summary in `data/space_weather_summary_benchmark.json`.
 
@@ -209,6 +209,14 @@ Public-data-first panels and preregistration scaffolds. Full tier list: `data/ex
 | 68 | Materials Project, PubChem live, OpenNeuro full, VizieR WDS TAP, live ingest spine | Second live-ingest wave (bundled fallback) |
 | 69 | Unified DB candidate crosswalk, aggregate organized panel, crosswalk spine | Desktop aggregate DB → verified extension panels |
 | 70 | Proof ledger closure, prereg outcome tracking, ToE certificate bundle | Publication-facing ToE claim hardening |
+| 71 | Fusion physics public panel, magnetic/ICF confinement, cold-fusion prereg scaffold, fusion lab spine | Dedicated fusion lab certificates — D-T/ICF public anchors + term3 acoustic-bleed cold-fusion prereg |
+
+```bash
+# Tier 71 fusion lab rebuild
+python scripts/build_tier71_fusion_lab_benchmarks.py
+python scripts/gen_tiers_71_lean.py
+python scripts/verify_extension_domains.py
+```
 
 ```bash
 # Tiers 67–70 rebuild
@@ -284,12 +292,12 @@ This project closely follows the structure and justification style of the attach
 
 ## Roadmap
 
-Tiers **51–70** are complete per `data/expansion_roadmap.yaml`. Ongoing maintenance:
+Tiers **51–71** are complete per `data/expansion_roadmap.yaml`. Ongoing maintenance:
 
 - Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens
 - Knowledge-base per-formula portable bundle
 - Tighten r_d interval to ±0.01 Mpc
-- Energy / fusion domain dedicated lab certificates (currently partial via fuel_lab proxy)
+- Cold-fusion candidate experimental validation (preregistered via PRED-009–011 — not claimed discovered)
 
 ## License
 

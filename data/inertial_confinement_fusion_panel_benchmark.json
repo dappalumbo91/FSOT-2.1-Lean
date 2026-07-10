@@ -1,0 +1,208 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:50:40.042573+00:00",
+  "domain": "Inertial_Confinement_Fusion_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fusion\\fusion_public_anchors.json",
+    "plasma_physics_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "energy",
+    "plasma",
+    "particle"
+  ],
+  "D_eff": 17,
+  "record_count": 15,
+  "observable_count": 15,
+  "median_error_pct": 7.9e-05,
+  "pooled_median_error_pct": 7.9e-05,
+  "headline_median_error_pct": 7.9e-05,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "icf_nif": {
+        "sota_typical_error_pct": 20.0,
+        "sota_model": "Radiation-hydrodynamics ICF models"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_inertial_confinement_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 7.9e-05,
+      "measured": 0.0,
+      "error_pct": 7.9e-05,
+      "observable_count": 15
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "inertial_confinement",
+      "name": "icf_nif",
+      "computed": 7.9e-05,
+      "measured": 0.0,
+      "error_pct": 7.869745015376406e-05,
+      "observable_count": 14
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "mhd_beta_stability",
+      "name": "z_pinch",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "plasma_relay"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "mhd_beta_stability",
+      "name": "ICF_hohlraum",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "plasma_relay"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "ignition_classifier",
+      "name": "NIF_2022",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "q_factor": 1.5,
+      "eval_kind": "icf_facility_gate"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "fusion_yield_mj",
+      "name": "NIF_2022",
+      "computed": 3.150002,
+      "measured": 3.15,
+      "error_pct": 7.9e-05,
+      "eval_kind": "icf_yield"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "q_factor_derived",
+      "name": "NIF_2022",
+      "computed": 1.536587,
+      "measured": 1.536585,
+      "error_pct": 9.5e-05,
+      "eval_kind": "icf_q_relay"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "ignition_classifier",
+      "name": "NIF_2021",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "q_factor": 0.7,
+      "eval_kind": "icf_facility_gate"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "fusion_yield_mj",
+      "name": "NIF_2021",
+      "computed": 1.300001,
+      "measured": 1.3,
+      "error_pct": 7.9e-05,
+      "eval_kind": "icf_yield"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "q_factor_derived",
+      "name": "NIF_2021",
+      "computed": 0.684211,
+      "measured": 0.684211,
+      "error_pct": 9.5e-05,
+      "eval_kind": "icf_q_relay"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "ignition_classifier",
+      "name": "OMEGA_direct",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "q_factor": 0.01,
+      "eval_kind": "icf_facility_gate"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "fusion_yield_mj",
+      "name": "OMEGA_direct",
+      "computed": 0.025,
+      "measured": 0.025,
+      "error_pct": 7.9e-05,
+      "eval_kind": "icf_yield"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "q_factor_derived",
+      "name": "OMEGA_direct",
+      "computed": 0.000833,
+      "measured": 0.000833,
+      "error_pct": 9.5e-05,
+      "eval_kind": "icf_q_relay"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "ignition_classifier",
+      "name": "NIF_hohlraum_baseline",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "q_factor": 0.05,
+      "eval_kind": "icf_facility_gate"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "fusion_yield_mj",
+      "name": "NIF_hohlraum_baseline",
+      "computed": 0.05,
+      "measured": 0.05,
+      "error_pct": 7.9e-05,
+      "eval_kind": "icf_yield"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "q_factor_derived",
+      "name": "NIF_hohlraum_baseline",
+      "computed": 0.027778,
+      "measured": 0.027778,
+      "error_pct": 9.5e-05,
+      "eval_kind": "icf_q_relay"
+    },
+    {
+      "lab": "inertial_confinement_fusion_lab",
+      "property": "thermodynamics_scalar",
+      "name": "fsot_Thermodynamics",
+      "computed": 0.786975,
+      "measured": 0.786975,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 7.9e-05,
+    "max_scalar_error_pct": 9.5e-05,
+    "classifier_count": 6,
+    "classifier_correct": 6,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

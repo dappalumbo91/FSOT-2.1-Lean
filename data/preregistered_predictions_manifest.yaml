@@ -99,3 +99,36 @@ predictions:
     sota_label: "Polymer Tg phenomenology"
     discriminant: "within_10pct_of_observed_gap"
     registered_at: "2026-07-10"
+
+  - id: PRED-009
+    name: pd_deuterium_lattice_excess_heat
+    domain: Cold_Fusion_Candidate_Prereg_Scaffold
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 1.85
+    unit: enhancement_factor
+    sota_baseline: 0.0
+    sota_label: "Null baseline (no reproducible excess heat)"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-010
+    name: lattice_boundary_cold_fusion_channel
+    domain: Cold_Fusion_Candidate_Prereg_Scaffold
+    fsot_formula_branch: term3.boundary_partition
+    fsot_predicted: 1.62
+    unit: enhancement_factor
+    sota_baseline: 0.0
+    sota_label: "Null baseline"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-011
+    name: muon_catalyzed_dd_rate_bridge
+    domain: Cold_Fusion_Candidate_Prereg_Scaffold
+    fsot_formula_branch: term1.initiation_transformation
+    fsot_predicted: 1.08e8
+    unit: "fusions/mol/s"
+    sota_baseline: 1.0e8
+    sota_label: "Published muon-catalyzed D-D rate"
+    discriminant: "within_10pct_of_observed_gap"
+    registered_at: "2026-07-10"
