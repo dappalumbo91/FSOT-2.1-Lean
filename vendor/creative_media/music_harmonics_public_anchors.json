@@ -1,0 +1,21 @@
+{
+  "source": "Helmholtz (1877), Sethares (2004), Loy (2007) — public interval and psychoacoustic ratios",
+  "formula_branch": "term3.acoustic_bleed",
+  "intervals": [
+    {"id": "perfect_fifth", "name": "Perfect fifth (3/2)", "ratio": 1.5},
+    {"id": "perfect_fourth", "name": "Perfect fourth (4/3)", "ratio": 1.3333333333},
+    {"id": "major_third", "name": "Major third (5/4)", "ratio": 1.25},
+    {"id": "octave", "name": "Octave (2/1)", "ratio": 2.0},
+    {"id": "semitone_12tet", "name": "Equal-temperament semitone 2^(1/12)", "ratio": 1.0594630944},
+    {"id": "tritone_sqrt2", "name": "Tritone √2", "ratio": 1.4142135624},
+    {"id": "pythagorean_comma", "name": "Pythagorean comma", "ratio": 1.0136432648},
+    {"id": "golden_tempo", "name": "Golden ratio tempo proxy φ", "ratio": 1.6180339887},
+    {"id": "concert_a_c_ratio", "name": "A4/C4 frequency ratio", "ratio": 1.6817931765},
+    {"id": "critical_bandwidth_bark", "name": "Critical bandwidth (Bark scale)", "ratio": 2.843},
+    {"id": "octave_stretch_piano", "name": "Piano octave stretch factor", "ratio": 1.1098}
+  ],
+  "reference_frequencies_hz": [
+    {"note": "A4", "hz": 440.0},
+    {"note": "C4", "hz": 261.63}
+  ]
+}

@@ -2263,6 +2263,45 @@ extension_domains:
     lean_module: FSOT.Formal.GaiaAstrometryPanelDeepPriors
     note: "Gaia literature parallax/pm panel + tier 53 galactic bridge"
 
+  Music_Harmonics_Public_Panel:
+    tier: 61
+    D_eff: 10
+    delta_psi: 0.3
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [acoustical, mathematical, consciousness, neural]
+    build_script: scripts/build_tier61_creative_media_benchmarks.py
+    manifest: data/tier61_creative_media_manifest.yaml
+    benchmark_data: data/music_harmonics_public_panel_benchmark.json
+    lean_module: FSOT.Formal.MusicHarmonicsPublicPanelPriors
+    note: "Public just-intonation / 12-TET / psychoacoustic ratios — NeuroLab Music Theory bridge"
+
+  XR_Interactive_Media_Math_Scaffold:
+    tier: 61
+    D_eff: 14
+    delta_psi: 0.7
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [ai, consciousness, neural, mathematical, acoustical]
+    build_script: scripts/build_tier61_creative_media_benchmarks.py
+    manifest: data/tier61_creative_media_manifest.yaml
+    benchmark_data: data/xr_interactive_media_math_scaffold_benchmark.json
+    lean_module: FSOT.Formal.XRInteractiveMediaMathScaffoldPriors
+    note: "AR/VR/game projection, timing, comfort math + OpenNeuro interactive EEG catalog"
+
+  Creative_Arts_Math_Spine:
+    tier: 61
+    D_eff: 16
+    delta_psi: 0.85
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, neural, mathematical, acoustical, ai]
+    build_script: scripts/build_tier61_creative_media_benchmarks.py
+    manifest: data/tier61_creative_media_manifest.yaml
+    benchmark_data: data/creative_arts_math_spine_benchmark.json
+    lean_module: FSOT.Formal.CreativeArtsMathSpinePriors
+    note: "Creative-domain crosswalk — culinary, linguistics, sports, acoustic, symbolic, tier 61 panels"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

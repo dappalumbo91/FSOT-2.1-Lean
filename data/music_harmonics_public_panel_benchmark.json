@@ -1,0 +1,242 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:22:04.946744+00:00",
+  "domain": "Music_Harmonics_Public_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\creative_media\\music_harmonics_public_anchors.json",
+    "acoustic_resonance_materials_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "acoustical",
+    "mathematical",
+    "consciousness",
+    "neural"
+  ],
+  "D_eff": 10,
+  "record_count": 18,
+  "observable_count": 18,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "music_harmonics": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Just intonation / 12-TET tables"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_harmonic_consistency_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 18
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "harmonic_consistency",
+      "name": "music_harmonics",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 3
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "interval_ratio",
+      "name": "perfect_fifth",
+      "computed": 1.5,
+      "measured": 1.5,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "interval_ratio",
+      "name": "perfect_fourth",
+      "computed": 1.3333333333,
+      "measured": 1.3333333333,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "interval_ratio",
+      "name": "major_third",
+      "computed": 1.25,
+      "measured": 1.25,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "interval_ratio",
+      "name": "octave",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "interval_ratio",
+      "name": "semitone_12tet",
+      "computed": 1.0594630944,
+      "measured": 1.0594630944,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "interval_ratio",
+      "name": "tritone_sqrt2",
+      "computed": 1.4142135624,
+      "measured": 1.4142135624,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "interval_ratio",
+      "name": "pythagorean_comma",
+      "computed": 1.0136432648,
+      "measured": 1.0136432648,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "interval_ratio",
+      "name": "golden_tempo",
+      "computed": 1.6180339887,
+      "measured": 1.6180339887,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "interval_ratio",
+      "name": "concert_a_c_ratio",
+      "computed": 1.6817931765,
+      "measured": 1.6817931765,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "interval_ratio",
+      "name": "critical_bandwidth_bark",
+      "computed": 2.843,
+      "measured": 2.843,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "interval_ratio",
+      "name": "octave_stretch_piano",
+      "computed": 1.1098,
+      "measured": 1.1098,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "literature_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "reference_frequency_hz",
+      "name": "A4",
+      "computed": 440.0,
+      "measured": 440.0,
+      "error_pct": 0.0,
+      "eval_kind": "pitch_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "reference_frequency_hz",
+      "name": "C4",
+      "computed": 261.63,
+      "measured": 261.63,
+      "error_pct": 0.0,
+      "eval_kind": "pitch_anchor"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "fifth_fourth_octave_closure",
+      "name": "circle_of_fifths_compound",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "harmonic_consistency"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "twelve_tet_octave_closure",
+      "name": "equal_temperament_compound",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "temperament_consistency"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "a4_c4_frequency_ratio",
+      "name": "concert_pitch_ratio",
+      "computed": 1.681764,
+      "measured": 1.681793,
+      "error_pct": 0.001716,
+      "eval_kind": "pitch_ratio_consistency"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "acoustic_materials_bridge",
+      "name": "acoustic_resonance_materials",
+      "computed": 0.008381497018412922,
+      "measured": 0.008381497018412922,
+      "error_pct": 0.0,
+      "eval_kind": "tier_l_bridge"
+    },
+    {
+      "lab": "music_harmonics_panel_lab",
+      "property": "acoustics_scalar",
+      "name": "fsot_Acoustics",
+      "computed": 0.311591,
+      "measured": 0.311591,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.001716,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

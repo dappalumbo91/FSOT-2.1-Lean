@@ -1,0 +1,308 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:22:04.946744+00:00",
+  "domain": "XR_Interactive_Media_Math_Scaffold",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\creative_media\\xr_game_design_public_anchors.json",
+    "openneuro_summary.json"
+  ],
+  "maps_to_lean": [
+    "ai",
+    "consciousness",
+    "neural",
+    "mathematical",
+    "acoustical"
+  ],
+  "D_eff": 14,
+  "record_count": 24,
+  "observable_count": 24,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "interactive_media": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "VR comfort / engine timing guidelines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_xr_math_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "xr_math",
+      "name": "interactive_media",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 4
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "ipd_mean_mm",
+      "name": "Mean interpupillary distance",
+      "computed": 63.0,
+      "measured": 63.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "hfov_deg",
+      "name": "Typical VR horizontal FOV",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "vfov_deg",
+      "name": "Typical VR vertical FOV",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "aspect_16_9",
+      "name": "16:9 display aspect ratio",
+      "computed": 1.7777777778,
+      "measured": 1.7777777778,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "stereo_half_ipd_mm",
+      "name": "Monocular eye offset (IPD/2)",
+      "computed": 31.5,
+      "measured": 31.5,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "target_mtp_latency_ms",
+      "name": "Motion-to-photon latency target",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "frame_budget_60hz_ms",
+      "name": "60 Hz frame budget",
+      "computed": 16.6666666667,
+      "measured": 16.6666666667,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "frame_budget_90hz_ms",
+      "name": "90 Hz frame budget",
+      "computed": 11.1111111111,
+      "measured": 11.1111111111,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "frame_budget_120hz_ms",
+      "name": "120 Hz frame budget",
+      "computed": 8.3333333333,
+      "measured": 8.3333333333,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "max_angular_velocity_deg_s",
+      "name": "Comfortable artificial locomotion angular velocity",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "min_fps_vr",
+      "name": "Minimum comfortable VR refresh",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "target_fps_vr",
+      "name": "Target VR refresh (Quest-class)",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "eval_kind": "design_standard_anchor"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "stereo_ipd_half_closure",
+      "name": "binocular_offset_consistency",
+      "computed": 31.5,
+      "measured": 31.5,
+      "error_pct": 0.0,
+      "eval_kind": "projection_consistency"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "frame_budget_60hz_closure",
+      "name": "fps_60_budget",
+      "computed": 16.666667,
+      "measured": 16.6666666667,
+      "error_pct": 0.0,
+      "eval_kind": "timing_consistency"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "frame_budget_90hz_closure",
+      "name": "fps_90_budget",
+      "computed": 11.111111,
+      "measured": 11.1111111111,
+      "error_pct": 0.0,
+      "eval_kind": "timing_consistency"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "frame_budget_120hz_closure",
+      "name": "fps_120_budget",
+      "computed": 8.333333,
+      "measured": 8.3333333333,
+      "error_pct": 0.0,
+      "eval_kind": "timing_consistency"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "projection_tan_half_hfov",
+      "name": "perspective_projection_slope",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "projection_math"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "openneuro_dataset_anchor",
+      "name": "ds003517",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "modality": "EEG",
+      "dataset_title": "ContinuousVideoGamePlay",
+      "eval_kind": "neuroscience_catalog_bridge"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "openneuro_dataset_anchor",
+      "name": "ds003570",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "modality": "EEG",
+      "dataset_title": "EEG Improvisation and Musical Structures",
+      "eval_kind": "neuroscience_catalog_bridge"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "openneuro_dataset_anchor",
+      "name": "ds002725",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "modality": "EEG",
+      "dataset_title": "EEG-fMRI affective music listening",
+      "eval_kind": "neuroscience_catalog_bridge"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "openneuro_dataset_anchor",
+      "name": "ds003505",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "modality": "EEG",
+      "dataset_title": "VEPCON visual evoked potentials",
+      "eval_kind": "neuroscience_catalog_bridge"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "openneuro_dataset_anchor",
+      "name": "ds002893",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "modality": "EEG",
+      "dataset_title": "Auditory-Visual Shift Study",
+      "eval_kind": "neuroscience_catalog_bridge"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "optics_scalar",
+      "name": "fsot_Optics",
+      "computed": 0.408062,
+      "measured": 0.408062,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    },
+    {
+      "lab": "xr_game_math_scaffold_lab",
+      "property": "neuroscience_scalar",
+      "name": "fsot_Neuroscience",
+      "computed": 0.514362,
+      "measured": 0.514362,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 6,
+    "classifier_correct": 6,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

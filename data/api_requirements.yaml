@@ -195,6 +195,14 @@ api_sources:
     lean: scripts/gen_tiers_59_60_lean.py
     live_api: https://simbad.cds.unistra.fr/simbad/sim-tap/sync
 
+  tier61_creative_media:
+    description: "Tier 61 — music harmonics, XR/game math scaffold, creative arts spine"
+    manifest: data/tier61_creative_media_manifest.yaml
+    build: scripts/build_tier61_creative_media_benchmarks.py
+    lean: scripts/gen_tiers_61_lean.py
+    bundled_only: true
+    note: "Public literature ratios and VR comfort guidelines — no live API required"
+
   astrophysics_catalogs:
     description: "Tier 58 live ingest — public catalogs for stellar/planetary/galactic structures"
     sources:

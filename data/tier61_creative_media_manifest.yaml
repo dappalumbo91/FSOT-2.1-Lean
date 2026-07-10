@@ -1,0 +1,17 @@
+version: "1.0"
+tier: 61
+domains:
+  - Music_Harmonics_Public_Panel
+  - XR_Interactive_Media_Math_Scaffold
+  - Creative_Arts_Math_Spine
+build: scripts/build_tier61_creative_media_benchmarks.py
+lean: scripts/gen_tiers_61_lean.py
+proprietary_gate: data/preregistered_predictions_manifest.yaml
+bundled:
+  - vendor/creative_media/music_harmonics_public_anchors.json
+  - vendor/creative_media/xr_game_design_public_anchors.json
+  - vendor/public_data/consciousness/openneuro_summary.json
+note: >
+  Public music-harmonic ratios, XR/game projection-timing math, and creative-arts
+  spine crosswalk. NeuroLab Music Theory translations inform anchors; no novel
+  game-design predictions until preregistered.

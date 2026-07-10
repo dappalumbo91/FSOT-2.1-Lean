@@ -1,0 +1,29 @@
+{
+  "source": "Oculus/Valve VR guidelines, IEEE VR comfort literature, standard game-engine timing budgets",
+  "formula_branch": "term1.coherence_efficiency",
+  "display": [
+    {"id": "ipd_mean_mm", "name": "Mean interpupillary distance", "value": 63.0, "unit": "mm"},
+    {"id": "hfov_deg", "name": "Typical VR horizontal FOV", "value": 90.0, "unit": "deg"},
+    {"id": "vfov_deg", "name": "Typical VR vertical FOV", "value": 90.0, "unit": "deg"},
+    {"id": "aspect_16_9", "name": "16:9 display aspect ratio", "value": 1.7777777778, "unit": "ratio"},
+    {"id": "stereo_half_ipd_mm", "name": "Monocular eye offset (IPD/2)", "value": 31.5, "unit": "mm"}
+  ],
+  "timing": [
+    {"id": "target_mtp_latency_ms", "name": "Motion-to-photon latency target", "value": 20.0, "unit": "ms"},
+    {"id": "frame_budget_60hz_ms", "name": "60 Hz frame budget", "value": 16.6666666667, "unit": "ms", "fps": 60},
+    {"id": "frame_budget_90hz_ms", "name": "90 Hz frame budget", "value": 11.1111111111, "unit": "ms", "fps": 90},
+    {"id": "frame_budget_120hz_ms", "name": "120 Hz frame budget", "value": 8.3333333333, "unit": "ms", "fps": 120}
+  ],
+  "comfort": [
+    {"id": "max_angular_velocity_deg_s", "name": "Comfortable artificial locomotion angular velocity", "value": 50.0, "unit": "deg/s"},
+    {"id": "min_fps_vr", "name": "Minimum comfortable VR refresh", "value": 72.0, "unit": "Hz"},
+    {"id": "target_fps_vr", "name": "Target VR refresh (Quest-class)", "value": 90.0, "unit": "Hz"}
+  ],
+  "openneuro_interactive_datasets": [
+    {"id": "ds003517", "name": "ContinuousVideoGamePlay", "modality": "EEG"},
+    {"id": "ds003570", "name": "EEG Improvisation and Musical Structures", "modality": "EEG"},
+    {"id": "ds002725", "name": "EEG-fMRI affective music listening", "modality": "EEG"},
+    {"id": "ds003505", "name": "VEPCON visual evoked potentials", "modality": "EEG"},
+    {"id": "ds002893", "name": "Auditory-Visual Shift Study", "modality": "EEG"}
+  ]
+}

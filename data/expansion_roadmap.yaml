@@ -38,20 +38,30 @@ completed_tiers:
   tier_60:
     - SIMBAD_Stellar_Identity_Deep
     - Gaia_Astrometry_Panel_Deep
+  tier_61:
+    - Music_Harmonics_Public_Panel
+    - XR_Interactive_Media_Math_Scaffold
+    - Creative_Arts_Math_Spine
 
 priority_queue:
-  tier_61_preregistered_screens:
+  tier_62_live_depth:
+    status: planned
+    sources: [vizier_wds, gaia_dr3_tap]
+    note: "VizieR WDS + full Gaia DR3 TAP atop tier 60 SIMBAD depth"
+
+  tier_63_preregistered_screens:
     status: planned
     proprietary_gate: preregistered_predictions_manifest.yaml
     channels:
       - material_emergence_in_silico
       - fuel_candidate_screening_prereg
-    note: "In-silico screens stay local until preregistered release"
+      - novel_game_mechanic_predictions
+    note: "In-silico and undisclosed interactive-media screens stay local until preregistered"
 
-  tier_62_live_depth:
+  tier_64_neurolab_gaps:
     status: planned
-    sources: [vizier_wds, gaia_dr3_tap]
-    note: "VizieR WDS + full Gaia DR3 TAP atop tier 60 SIMBAD depth"
+    domains: [Network_Science, Information_Theory, Semiconductor_Physics, Statistical_Mechanics, Biophysics]
+    note: "NeuroLab 32-domain registry entries not yet in extension manifest"
 
 discoverability_principles:
   - "Public repo = reproducible verification against published data"

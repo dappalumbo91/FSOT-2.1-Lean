@@ -1,0 +1,629 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:22:04.952313+00:00",
+  "domain": "Creative_Arts_Math_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier61_creative_panels",
+    "culinary_arts_benchmark.json",
+    "linguistics_formal_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "neural",
+    "mathematical",
+    "acoustical",
+    "ai"
+  ],
+  "D_eff": 16,
+  "record_count": 56,
+  "observable_count": 56,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 2.947665007827326e-05,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "arts_spine": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Creative-domain crosswalk relay"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_creative_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 56
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "creative_relay",
+      "name": "arts_spine",
+      "computed": 2.9e-05,
+      "measured": 0.0,
+      "error_pct": 2.947665007827326e-05,
+      "observable_count": 48
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "culinary_arts",
+      "computed": 0.047615,
+      "measured": 0.047615,
+      "error_pct": 0.0,
+      "record_count": 26,
+      "eval_kind": "creative_spine_bridge"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "\u00a71 Foundation",
+      "name": "pH_water",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "source_panel": "culinary_arts",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "\u00a745 Activation Ea",
+      "name": "sucrose_hydrolysis",
+      "computed": 108.49926097775192,
+      "measured": 108.0,
+      "error_pct": 0.462279,
+      "source_panel": "culinary_arts",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "\u00a750 Diffusion D",
+      "name": "glucose",
+      "computed": 0.6792879831636383,
+      "measured": 0.673,
+      "error_pct": 0.934321,
+      "source_panel": "culinary_arts",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "\u00a750 Diffusion D",
+      "name": "sucrose",
+      "computed": 0.5229465399247466,
+      "measured": 0.523,
+      "error_pct": 0.01022181171193495,
+      "source_panel": "culinary_arts",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "\u00a751 Solubility logS",
+      "name": "caffeine",
+      "computed": 0.8099997612391344,
+      "measured": 0.81,
+      "error_pct": 2.947665007827326e-05,
+      "source_panel": "culinary_arts",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "\u00a751 Solubility logS",
+      "name": "glucose",
+      "computed": 0.9398680312151104,
+      "measured": 0.94,
+      "error_pct": 0.014039232435055806,
+      "source_panel": "culinary_arts",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "\u00a761 Glass Tg",
+      "name": "glucose_amorph",
+      "computed": 309.16127743887125,
+      "measured": 309.0,
+      "error_pct": 0.052193,
+      "source_panel": "culinary_arts",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "\u00a774 Acoustic Impedance",
+      "name": "Water_20C",
+      "computed": 1.4747388085852202,
+      "measured": 1.48,
+      "error_pct": 0.355486,
+      "source_panel": "culinary_arts",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "linguistics_formal",
+      "computed": 0.00135,
+      "measured": 0.00135,
+      "error_pct": 0.0,
+      "record_count": 10,
+      "eval_kind": "creative_spine_bridge"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "observable",
+      "name": "Zipf_exponent_English",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "linguistics_formal",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "observable",
+      "name": "Mean_dependency_length_EN",
+      "computed": 2.40001358369048,
+      "measured": 2.3,
+      "error_pct": 0.0005659871035364658,
+      "source_panel": "linguistics_formal",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "observable",
+      "name": "Mean_phoneme_inventory_size",
+      "computed": 30.9995813680981,
+      "measured": 31.0,
+      "error_pct": -0.0013504254899468224,
+      "source_panel": "linguistics_formal",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "observable",
+      "name": "Letter_entropy_English",
+      "computed": 4.18002506099209,
+      "measured": 4.18,
+      "error_pct": 0.0005995452654275573,
+      "source_panel": "linguistics_formal",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "observable",
+      "name": "Mean_word_length_English",
+      "computed": 4.49971638840435,
+      "measured": 4.5,
+      "error_pct": -0.006302479903277616,
+      "source_panel": "linguistics_formal",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "observable",
+      "name": "Saccade_length_reading",
+      "computed": 8.00021360546018,
+      "measured": 8.0,
+      "error_pct": 0.002670068252275115,
+      "source_panel": "linguistics_formal",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "observable",
+      "name": "Mean_fixation_duration",
+      "computed": 224.988085867106,
+      "measured": 225.0,
+      "error_pct": -0.005295170175132726,
+      "source_panel": "linguistics_formal",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "observable",
+      "name": "Heaps_exponent",
+      "computed": 0.599997786040735,
+      "measured": 0.6,
+      "error_pct": -0.00036899321083823844,
+      "source_panel": "linguistics_formal",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "sports_biomechanics",
+      "computed": 0.044473,
+      "measured": 0.044473,
+      "error_pct": 0.0,
+      "record_count": 35,
+      "eval_kind": "creative_spine_bridge"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "race_time_s",
+      "name": "men_100m_wr",
+      "computed": 9.58426,
+      "measured": 9.58,
+      "error_pct": 0.044472500770376906,
+      "source_panel": "sports_biomechanics",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "race_time_s",
+      "name": "women_100m_wr",
+      "computed": 10.494665,
+      "measured": 10.49,
+      "error_pct": 0.04447250077038305,
+      "source_panel": "sports_biomechanics",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "race_time_s",
+      "name": "men_200m_wr",
+      "computed": 19.198534,
+      "measured": 19.19,
+      "error_pct": 0.04447250077038465,
+      "source_panel": "sports_biomechanics",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "race_time_s",
+      "name": "women_200m_wr",
+      "computed": 21.34949,
+      "measured": 21.34,
+      "error_pct": 0.04447250077038322,
+      "source_panel": "sports_biomechanics",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "race_time_s",
+      "name": "men_400m_wr",
+      "computed": 43.049137,
+      "measured": 43.03,
+      "error_pct": 0.0444725007703739,
+      "source_panel": "sports_biomechanics",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "race_time_s",
+      "name": "women_400m_wr",
+      "computed": 47.621169,
+      "measured": 47.6,
+      "error_pct": 0.04447250077037183,
+      "source_panel": "sports_biomechanics",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "race_time_min",
+      "name": "men_marathon_wr",
+      "computed": 120.633625,
+      "measured": 120.58,
+      "error_pct": 0.04447250077037784,
+      "source_panel": "sports_biomechanics",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "race_time_min",
+      "name": "women_marathon_wr",
+      "computed": 130.237894,
+      "measured": 130.18,
+      "error_pct": 0.04447250077037171,
+      "source_panel": "sports_biomechanics",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "acoustic_resonance_materials",
+      "computed": 0.008381,
+      "measured": 0.008381,
+      "error_pct": 0.0,
+      "record_count": 29,
+      "eval_kind": "creative_spine_bridge"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Air_20C",
+      "computed": 0.000412766290514644,
+      "measured": 0.000413,
+      "error_pct": 0.05658825311283946,
+      "source_panel": "acoustic_resonance_materials",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Water_20C",
+      "computed": 1.4747388085852202,
+      "measured": 1.48,
+      "error_pct": 0.3555,
+      "source_panel": "acoustic_resonance_materials",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Aluminum",
+      "computed": 16.943944269597875,
+      "measured": 17.0,
+      "error_pct": 0.3297,
+      "source_panel": "acoustic_resonance_materials",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Steel",
+      "computed": 45.0,
+      "measured": 45.0,
+      "error_pct": 0.0,
+      "source_panel": "acoustic_resonance_materials",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Copper",
+      "computed": 41.60108808814756,
+      "measured": 41.6,
+      "error_pct": 0.002615596508561178,
+      "source_panel": "acoustic_resonance_materials",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Titanium",
+      "computed": 27.474593022118317,
+      "measured": 27.3,
+      "error_pct": 0.6395,
+      "source_panel": "acoustic_resonance_materials",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Glass",
+      "computed": 14.5,
+      "measured": 14.5,
+      "error_pct": 0.0,
+      "source_panel": "acoustic_resonance_materials",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Nickel",
+      "computed": 49.596747752497684,
+      "measured": 49.5,
+      "error_pct": 0.1955,
+      "source_panel": "acoustic_resonance_materials",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "symbolic_archetype_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 28,
+      "eval_kind": "creative_spine_bridge"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Metatron_Spheres",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "source_panel": "symbolic_archetype_panel",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Metatron_Pathways",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "source_panel": "symbolic_archetype_panel",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Consciousness_Gate",
+      "computed": 0.6180339887498949,
+      "measured": 0.6180339887498949,
+      "error_pct": 0.0,
+      "source_panel": "symbolic_archetype_panel",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Resonance_Persistence",
+      "computed": 0.8652559794322651,
+      "measured": 0.8652559794322651,
+      "error_pct": 0.0,
+      "source_panel": "symbolic_archetype_panel",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Resonance_Rate",
+      "computed": 0.21234577623937842,
+      "measured": 0.21234577623937842,
+      "error_pct": 0.0,
+      "source_panel": "symbolic_archetype_panel",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Resonance_Eq_Factor",
+      "computed": 1.575919846718791,
+      "measured": 1.575919846718791,
+      "error_pct": 0.0,
+      "source_panel": "symbolic_archetype_panel",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Ignition_Coherence",
+      "computed": 0.3921734915875944,
+      "measured": 0.3921734915875944,
+      "error_pct": 0.0,
+      "source_panel": "symbolic_archetype_panel",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "W_Integration",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "source_panel": "symbolic_archetype_panel",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "consciousness_soul_bridge",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 27,
+      "eval_kind": "creative_spine_bridge"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Metatron_Spheres",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "source_panel": "consciousness_soul_bridge",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Metatron_Pathways",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "source_panel": "consciousness_soul_bridge",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Consciousness_Gate",
+      "computed": 0.6180339887498949,
+      "measured": 0.6180339887498949,
+      "error_pct": 0.0,
+      "source_panel": "consciousness_soul_bridge",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Resonance_Persistence",
+      "computed": 0.8652559794322651,
+      "measured": 0.8652559794322651,
+      "error_pct": 0.0,
+      "source_panel": "consciousness_soul_bridge",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Resonance_Rate",
+      "computed": 0.21234577623937842,
+      "measured": 0.21234577623937842,
+      "error_pct": 0.0,
+      "source_panel": "consciousness_soul_bridge",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Resonance_Eq_Factor",
+      "computed": 1.575919846718791,
+      "measured": 1.575919846718791,
+      "error_pct": 0.0,
+      "source_panel": "consciousness_soul_bridge",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Ignition_Coherence",
+      "computed": 0.3921734915875944,
+      "measured": 0.3921734915875944,
+      "error_pct": 0.0,
+      "source_panel": "consciousness_soul_bridge",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "W_Integration",
+      "computed": 1.618033988749895,
+      "measured": 1.618033988749895,
+      "error_pct": 0.0,
+      "source_panel": "consciousness_soul_bridge",
+      "eval_kind": "creative_relay"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "tier61_panel_pooled",
+      "name": "music_harmonics_public_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "tier61_bridge"
+    },
+    {
+      "lab": "creative_arts_spine_lab",
+      "property": "tier61_panel_pooled",
+      "name": "xr_interactive_media_math_scaffold",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "tier61_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.934321,
+    "classifier_count": 5,
+    "classifier_correct": 5,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5
+}
