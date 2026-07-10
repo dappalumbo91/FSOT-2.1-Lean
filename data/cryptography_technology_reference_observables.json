@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "NIST SP 800-series + NIST PQC + math-generator CRYPTOGRAPHY_RULES",
+  "updated": "2026-07-10",
+  "metrics": [
+    {"name": "AES_128_key_bits", "property": "symmetric_key_bits", "measured": 128.0, "standard": "FIPS 197"},
+    {"name": "AES_256_key_bits", "property": "symmetric_key_bits", "measured": 256.0, "standard": "FIPS 197"},
+    {"name": "AES_rounds_128", "property": "block_cipher_rounds", "measured": 10.0, "standard": "FIPS 197"},
+    {"name": "RSA_modulus_bits", "property": "asymmetric_modulus_bits", "measured": 2048.0, "standard": "NIST SP 800-57"},
+    {"name": "RSA_public_exponent", "property": "public_exponent", "measured": 65537.0, "standard": "PKCS#1"},
+    {"name": "ECDSA_P256_order_bits", "property": "curve_order_bits", "measured": 256.0, "standard": "FIPS 186-5"},
+    {"name": "Curve25519_key_bits", "property": "ecc_key_bits", "measured": 256.0, "standard": "RFC 7748"},
+    {"name": "SHA256_digest_bits", "property": "hash_output_bits", "measured": 256.0, "standard": "FIPS 180-4"},
+    {"name": "SHA256_collision_work_exp", "property": "collision_work_exponent", "measured": 128.0, "standard": "birthday_bound"},
+    {"name": "TLS13_min_version", "property": "protocol_version", "measured": 1.3, "standard": "RFC 8446"},
+    {"name": "Kyber768_security_category", "property": "pqc_security_level", "measured": 3.0, "standard": "NIST PQC ML-KEM"},
+    {"name": "Dilithium3_security_category", "property": "pqc_signature_level", "measured": 3.0, "standard": "NIST PQC ML-DSA"},
+    {"name": "SPHINCS_plus_128f_security", "property": "hash_signature_level", "measured": 1.0, "standard": "NIST PQC SLH-DSA"},
+    {"name": "DH_group_min_bits", "property": "dh_modulus_bits", "measured": 2048.0, "standard": "NIST SP 800-57"},
+    {"name": "GCM_nonce_bits", "property": "aead_nonce_bits", "measured": 96.0, "standard": "NIST SP 800-38D"},
+    {"name": "PBKDF2_min_iterations", "property": "kdf_iterations", "measured": 600000.0, "standard": "OWASP 2023"},
+    {"name": "Argon2_memory_kb", "property": "memory_hard_kdf_kb", "measured": 19456.0, "standard": "OWASP 2023"},
+    {"name": "HMAC_SHA256_block_bits", "property": "hmac_block_bits", "measured": 512.0, "standard": "RFC 2104"},
+    {"name": "Ed25519_key_bits", "property": "signature_key_bits", "measured": 256.0, "standard": "RFC 8032"},
+    {"name": "ChaCha20_key_bits", "property": "stream_cipher_key_bits", "measured": 256.0, "standard": "RFC 8439"}
+  ]
+}

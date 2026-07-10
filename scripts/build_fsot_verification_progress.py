@@ -150,6 +150,26 @@ def build_progress() -> dict:
     coupling_bench = _load_json(ROOT / "data" / "domain_coupling_simulation_benchmark.json")
     formula_closure_bench = _load_json(ROOT / "data" / "formula_corpus_closure_benchmark.json")
     space_weather_summary_bench = _load_json(ROOT / "data" / "space_weather_summary_benchmark.json")
+    tier_h_depth_names = {
+        "malware_threat_intelligence_cybersecurity_benchmark.json",
+        "code_genome_structure_cybersecurity_benchmark.json",
+    }
+    tier_h_depth_benches = [
+        _load_json(p)
+        for p in sorted((ROOT / "data").glob("*_cybersecurity_benchmark.json"))
+        if p.name in tier_h_depth_names
+    ]
+    tier_h_all_benches = [_load_json(p) for p in sorted((ROOT / "data").glob("*_cybersecurity_benchmark.json"))]
+    tier_h_records = sum(int(b.get("record_count") or 0) for b in tier_h_all_benches)
+    tier_h_depth_ok = all(
+        b.get("benchmark_version") == "1.1"
+        and b.get("depth_pass") == "tier_h_depth"
+        and int(b.get("record_count") or 0) >= 100
+        and b.get("pooled_median_error_pct") is not None
+        and float(b.get("pooled_median_error_pct")) < 5.0
+        for b in tier_h_depth_benches
+    )
+    zero_day_bench = _load_json(ROOT / "data" / "zero_day_risk_evaluator_cybersecurity_benchmark.json")
     tokenization_smoke_bench = _load_json(ROOT / "data" / "tokenization_smoke_benchmark.json")
     trinary_hw_motif_bench = _load_json(ROOT / "data" / "trinary_hardware_motif_benchmark.json")
     intrinsic_llm_bench = _load_json(ROOT / "data" / "intrinsic_llm_validators_benchmark.json")
@@ -1296,12 +1316,67 @@ def build_progress() -> dict:
                 "FSOT.Formal.FormulaCorpusClosurePriors",
             ],
         },
+        {
+            "tier": 43,
+            "name": "Tier 43 — cybersecurity engineering + code-genome zero-day evaluator depth",
+            "status": "complete"
+            if len(tier_h_all_benches) >= 6
+            and tier_h_depth_ok
+            and zero_day_bench.get("risk_tier") in ("GREEN", "AMBER", "RED")
+            and zero_day_bench.get("detected_hole_count") is not None
+            and len(zero_day_bench.get("language_bridges") or []) >= 6
+            and coupling_bench.get("node_count", 0) >= 149
+            else "pending",
+            "metrics": {
+                "tier_h_domain_count": len(tier_h_all_benches),
+                "tier_h_total_records": tier_h_records,
+                "tier_h_depth_malware_records": next(
+                    (
+                        int(b.get("record_count") or 0)
+                        for b in tier_h_depth_benches
+                        if b.get("domain") == "Malware_Threat_Intelligence" and b.get("depth_pass")
+                    ),
+                    next(
+                        (int(b.get("record_count") or 0) for b in tier_h_depth_benches if b.get("domain") == "Malware_Threat_Intelligence"),
+                        0,
+                    ),
+                ),
+                "tier_h_depth_code_genome_records": next(
+                    (
+                        int(b.get("record_count") or 0)
+                        for b in tier_h_depth_benches
+                        if b.get("domain") == "Code_Genome_Structure" and b.get("depth_pass")
+                    ),
+                    next(
+                        (int(b.get("record_count") or 0) for b in tier_h_depth_benches if b.get("domain") == "Code_Genome_Structure"),
+                        0,
+                    ),
+                ),
+                "zero_day_risk_tier": zero_day_bench.get("risk_tier"),
+                "zero_day_hole_count": zero_day_bench.get("detected_hole_count"),
+                "coupling_node_count": coupling_bench.get("node_count"),
+                "external_cache_root": "G:/FSOT-PublicData/cybersecurity",
+            },
+            "artifacts": [
+                "scripts/ingest_cybersecurity_public_data.py",
+                "scripts/tier_h_cybersecurity_lib.py",
+                "scripts/build_tier_h_depth_benchmarks.py",
+                "scripts/code_genome_lib.py",
+                "data/code_genome_crosswalk.yaml",
+                "vendor/cybersecurity",
+                "G:/FSOT-PublicData/cybersecurity",
+                "FSOT.Formal.CryptographyTechnologyPriors",
+                "FSOT.Formal.MalwareThreatIntelligencePriors",
+                "FSOT.Formal.CodeGenomeStructurePriors",
+                "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+            ],
+        },
     ]
 
     next_steps = [
         "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens",
         "Knowledge-base per-formula portable bundle",
-        "Re-ingest Tier 38 deep caches from Game drive on schedule",
+        "Live MalwareBazaar + NVD CVE scheduled re-ingest",
         "Culinary arts fermentation + Maillard kinetics extension",
     ]
 
@@ -1321,7 +1396,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 42 complete — 141-domain coupling simulation, Tier G A_strong depth, formula corpus closure",
+        "current_position": "Tier 43 cybersecurity depth — code-genome 9-language bridges, MalwareBazaar/CISA KEV ingest, zero-day evaluator",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

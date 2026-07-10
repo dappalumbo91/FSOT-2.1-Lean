@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.1",
+  "updated": "2026-07-10",
+  "source": "FSOT code-genome crosswalk + Trinary-OS opcode registry + Tier 43 depth samples",
+  "languages": {
+    "Lean": {
+      "codon_unit_count": 9,
+      "sample_paths": [
+        "FSOT/Formal/Scalar.lean",
+        "FSOT/Formal/Domains.lean",
+        "FSOT/Formal/CodeGenomeStructurePriors.lean"
+      ],
+      "risk_tokens": ["sorry", "axiom", "opaque"]
+    },
+    "Rust": {
+      "codon_unit_count": 10,
+      "sample_paths": [
+        "vendor/rust_lean_bridge/main.rs"
+      ],
+      "risk_tokens": ["unsafe", "transmute", "from_raw_parts"]
+    },
+    "Python": {
+      "codon_unit_count": 10,
+      "sample_paths": [
+        "scripts/fsot_verification_runner.py",
+        "vendor/fsot_compute.py",
+        "scripts/code_genome_lib.py"
+      ],
+      "risk_tokens": ["eval", "exec", "pickle.loads", "__import__"]
+    },
+    "C": {
+      "codon_unit_count": 10,
+      "sample_paths": [
+        "vendor/cybersecurity/samples/secure_buffer.c",
+        "vendor/cybersecurity/samples/vulnerable_legacy.c"
+      ],
+      "risk_tokens": ["strcpy", "gets", "sprintf", "malloc"]
+    },
+    "JavaScript": {
+      "codon_unit_count": 10,
+      "sample_paths": [
+        "vendor/cybersecurity/samples/csp_safe_dom.js",
+        "vendor/cybersecurity/samples/xss_sink_legacy.js"
+      ],
+      "risk_tokens": ["eval", "innerHTML", "document.write", "Function("]
+    },
+    "Go": {
+      "codon_unit_count": 8,
+      "sample_paths": ["vendor/cybersecurity/samples/fsot_oracle.go"],
+      "risk_tokens": ["unsafe.Pointer", "syscall", "exec.Command"]
+    },
+    "Zig": {
+      "codon_unit_count": 8,
+      "sample_paths": ["vendor/cybersecurity/samples/bare_metal.zig"],
+      "risk_tokens": ["@ptrCast", "@intCast", "asm"]
+    },
+    "WebAssembly": {
+      "codon_unit_count": 6,
+      "sample_paths": ["vendor/cybersecurity/samples/trit_export.wat"],
+      "risk_tokens": ["memory.grow", "unreachable", "call_indirect"]
+    },
+    "FSOTB_ISA": {
+      "codon_unit_count": 27,
+      "sample_paths": ["vendor/trinary_os/isa/fsotb_opcode_registry.json"],
+      "risk_tokens": ["BRANCHT", "LOAD_RULE", "APPLY_OVR"]
+    }
+  },
+  "unified_triplet_count": 64,
+  "bridge_targets": ["Lean", "Rust", "Python", "C", "JavaScript", "Go", "Zig", "WebAssembly", "FSOTB_ISA"]
+}

@@ -1386,6 +1386,78 @@ extension_domains:
     lean_module: FSOT.Formal.FormulaCorpusClosurePriors
     note: "strict_empirical.jsonl + extension benchmark bridge + Lean priors module count"
 
+  Cryptography_Technology:
+    tier: 43
+    D_eff: 16
+    delta_psi: 0.88
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, mathematical, ai]
+    build_script: scripts/build_tier_h_cybersecurity_benchmarks.py
+    benchmark_data: data/cryptography_technology_cybersecurity_benchmark.json
+    lean_module: FSOT.Formal.CryptographyTechnologyPriors
+    note: "NIST/PQC primitives + math-generator CRYPTOGRAPHY_RULES"
+
+  Network_Internet_Protocols:
+    tier: 43
+    D_eff: 15
+    delta_psi: 0.82
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [ai, consciousness, electron]
+    build_script: scripts/build_tier_h_cybersecurity_benchmarks.py
+    benchmark_data: data/network_internet_protocols_cybersecurity_benchmark.json
+    lean_module: FSOT.Formal.NetworkInternetProtocolsPriors
+    note: "RFC/IANA protocol anchors + MITRE ATT&CK shape + robotics control bridge"
+
+  Malware_Threat_Intelligence:
+    tier: 43
+    D_eff: 15
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [medical, biological, ai]
+    build_script: scripts/build_tier_h_cybersecurity_benchmarks.py
+    benchmark_data: data/malware_threat_intelligence_cybersecurity_benchmark.json
+    lean_module: FSOT.Formal.MalwareThreatIntelligencePriors
+    note: "Malware taxonomy + virology/immunology structural bridge"
+
+  Secure_Software_Engineering:
+    tier: 43
+    D_eff: 14
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [ai, consciousness, neural]
+    build_script: scripts/build_tier_h_cybersecurity_benchmarks.py
+    benchmark_data: data/secure_software_engineering_cybersecurity_benchmark.json
+    lean_module: FSOT.Formal.SecureSoftwareEngineeringPriors
+    note: "CVE/CWE shape + Rust-Lean + Trinary-OS security oracles"
+
+  Code_Genome_Structure:
+    tier: 43
+    D_eff: 17
+    delta_psi: 0.92
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [biological, medical, ai]
+    build_script: scripts/build_tier_h_cybersecurity_benchmarks.py
+    benchmark_data: data/code_genome_structure_cybersecurity_benchmark.json
+    lean_module: FSOT.Formal.CodeGenomeStructurePriors
+    note: "Program-as-genome codon mapping — Lean, Rust, Python, C, JavaScript, FSOTB_ISA"
+
+  Zero_Day_Risk_Evaluator:
+    tier: 43
+    D_eff: 18
+    delta_psi: 0.95
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [ai, medical, particle, consciousness]
+    build_script: scripts/build_tier_h_cybersecurity_benchmarks.py
+    benchmark_data: data/zero_day_risk_evaluator_cybersecurity_benchmark.json
+    lean_module: FSOT.Formal.ZeroDayRiskEvaluatorPriors
+    note: "FSOT code-genome gap detector rollup — connective stability holes → risk tier"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

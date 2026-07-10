@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T12:04:23.971580+00:00",
+  "generated_at": "2026-07-10T13:12:59.529215+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -1170,6 +1170,14 @@
       "clinical_medicine_ext_beats_sota_headlines_pos",
       "clinical_medicine_ext_bundle"
     ],
+    "CodeGenomeStructurePriors": [
+      "code_genome_observable_count_pos",
+      "code_genome_pooled_median_under_five_pct",
+      "code_genome_headline_median_under_five_pct",
+      "code_genome_beats_sota_headlines_pos",
+      "code_genome_language_bridges_pos",
+      "code_genome_bundle"
+    ],
     "CodonPriors": [
       "codon_table_count_eq_sixty_four",
       "codon_primary_pattern_space_eq_eight",
@@ -1408,6 +1416,13 @@
       "cryosphere_month_count_pos",
       "cryosphere_match_le_total",
       "cryosphere_bundle"
+    ],
+    "CryptographyTechnologyPriors": [
+      "crypto_tech_observable_count_pos",
+      "crypto_tech_pooled_median_under_five_pct",
+      "crypto_tech_headline_median_under_five_pct",
+      "crypto_tech_beats_sota_headlines_pos",
+      "crypto_tech_bundle"
     ],
     "CulinaryArtsPriors": [
       "culinary_arts_observable_count_pos",
@@ -1816,6 +1831,13 @@
       "maillard_chemistry_gap_fill_beats_sota_headlines_pos",
       "maillard_chemistry_gap_fill_bundle"
     ],
+    "MalwareThreatIntelligencePriors": [
+      "malware_threat_observable_count_pos",
+      "malware_threat_pooled_median_under_five_pct",
+      "malware_threat_headline_median_under_five_pct",
+      "malware_threat_beats_sota_headlines_pos",
+      "malware_threat_bundle"
+    ],
     "MarineBiologyExtensionPriors": [
       "marine_biology_ext_observable_count_pos",
       "marine_biology_ext_pooled_median_under_five_pct",
@@ -1892,6 +1914,13 @@
       "nasa_exoplanet_archive_observable_count_pos",
       "nasa_exoplanet_archive_median_error_under_five_pct",
       "nasa_exoplanet_archive_bundle"
+    ],
+    "NetworkInternetProtocolsPriors": [
+      "network_inet_observable_count_pos",
+      "network_inet_pooled_median_under_five_pct",
+      "network_inet_headline_median_under_five_pct",
+      "network_inet_beats_sota_headlines_pos",
+      "network_inet_bundle"
     ],
     "NeuroeconomicsExtensionPriors": [
       "neuroeconomics_ext_observable_count_pos",
@@ -2176,6 +2205,13 @@
       "rust_lean_bridge_bundle"
     ],
     "Scalar": [],
+    "SecureSoftwareEngineeringPriors": [
+      "secure_sw_observable_count_pos",
+      "secure_sw_pooled_median_under_five_pct",
+      "secure_sw_headline_median_under_five_pct",
+      "secure_sw_beats_sota_headlines_pos",
+      "secure_sw_bundle"
+    ],
     "SeismologyDeepPriors": [
       "seismology_deep_observable_count_pos",
       "seismology_deep_match_le_total",
@@ -2411,6 +2447,14 @@
       "world_bank_development_observable_count_pos",
       "world_bank_development_median_error_under_five_pct",
       "world_bank_development_bundle"
+    ],
+    "ZeroDayRiskEvaluatorPriors": [
+      "zero_day_eval_observable_count_pos",
+      "zero_day_eval_pooled_median_under_five_pct",
+      "zero_day_eval_headline_median_under_five_pct",
+      "zero_day_eval_beats_sota_headlines_pos",
+      "zero_day_eval_hole_count_certified",
+      "zero_day_eval_bundle"
     ],
     "ZoologyExtensionPriors": [
       "zoology_ext_observable_count_pos",

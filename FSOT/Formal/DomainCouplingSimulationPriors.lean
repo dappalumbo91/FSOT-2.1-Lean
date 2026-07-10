@@ -11,8 +11,8 @@ noncomputable section
 
 open Real
 
-def domain_coupling_node_count : ℕ := 141
-def domain_coupling_edge_count : ℕ := 2448
+def domain_coupling_node_count : ℕ := 149
+def domain_coupling_edge_count : ℕ := 3032
 def domain_coupling_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def domain_coupling_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def domain_coupling_beats_sota_headlines : ℕ := 4
@@ -36,8 +36,8 @@ theorem domain_coupling_beats_sota_headlines_pos : 0 < domain_coupling_beats_sot
   unfold domain_coupling_beats_sota_headlines; norm_num
 
 theorem domain_coupling_bundle :
-    domain_coupling_node_count = 141 ∧
-    domain_coupling_edge_count = 2448 ∧
+    domain_coupling_node_count = 149 ∧
+    domain_coupling_edge_count = 3032 ∧
     domain_coupling_pooled_median_error_pct < (5 : ℝ) ∧
     domain_coupling_headline_median_error_pct < (5 : ℝ) ∧
     0 < domain_coupling_beats_sota_headlines ∧

@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "NVD/CVE shape + CWE prevalence + Trinary-OS security oracles",
+  "updated": "2026-07-10",
+  "metrics": [
+    {"name": "CVSS_v3_max_score", "property": "cvss_base_score", "measured": 10.0, "source": "NVD"},
+    {"name": "CVSS_v3_critical_threshold", "property": "cvss_critical_cutoff", "measured": 9.0, "source": "NVD"},
+    {"name": "CWE_787_buffer_overflow_rank", "property": "cwe_prevalence_rank", "measured": 1.0, "source": "MITRE CWE 2023"},
+    {"name": "CWE_79_xss_rank", "property": "cwe_prevalence_rank", "measured": 2.0, "source": "MITRE CWE 2023"},
+    {"name": "CWE_89_sql_injection_rank", "property": "cwe_prevalence_rank", "measured": 3.0, "source": "MITRE CWE 2023"},
+    {"name": "CWE_20_input_validation_rank", "property": "cwe_prevalence_rank", "measured": 4.0, "source": "MITRE CWE 2023"},
+    {"name": "CWE_125_oob_read_rank", "property": "cwe_prevalence_rank", "measured": 5.0, "source": "MITRE CWE 2023"},
+    {"name": "SAST_false_positive_rate_pct", "property": "sast_fp_rate", "measured": 35.0, "baseline": "industry"},
+    {"name": "dependency_cve_per_1k_loc", "property": "cve_density", "measured": 2.5, "baseline": "OSS audit"},
+    {"name": "trinary_os_opcode_count", "property": "isa_opcode_count", "measured": 27.0, "source": "FSOTB_ISA"},
+    {"name": "trinary_os_oracle_pass_rate", "property": "oracle_pass_rate", "measured": 1.0, "source": "Trinary-OS Tier E"},
+    {"name": "rust_unsafe_block_density", "property": "unsafe_per_1k_loc", "measured": 0.5, "baseline": "memory-safe audit"},
+    {"name": "lean_sorry_count_target", "property": "formal_sorry_count", "measured": 0.0, "source": "FSOT certificate"},
+    {"name": "python_eval_usage_target", "property": "dynamic_exec_count", "measured": 0.0, "baseline": "secure_python"},
+    {"name": "js_innerHTML_usage_target", "property": "dom_xss_sink_count", "measured": 0.0, "baseline": "CSP_hardened"},
+    {"name": "code_review_coverage_pct", "property": "review_coverage", "measured": 100.0, "baseline": "secure_sdlc"},
+    {"name": "sbom_component_count_median", "property": "sbom_components", "measured": 150.0, "baseline": "enterprise_app"},
+    {"name": "patch_latency_critical_days", "property": "patch_sla_days", "measured": 7.0, "baseline": "CISA BOD"},
+    {"name": "fuzz_crash_unique_count", "property": "fuzz_unique_crashes", "measured": 0.0, "baseline": "release_gate"},
+    {"name": "ASLR_entropy_bits", "property": "aslr_entropy_bits", "measured": 28.0, "baseline": "OS_hardening"}
+  ]
+}

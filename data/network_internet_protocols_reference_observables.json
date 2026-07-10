@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "IANA / RFC anchors + MITRE ATT&CK tactic counts + CISA KEV shape",
+  "updated": "2026-07-10",
+  "metrics": [
+    {"name": "IPv4_header_bytes", "property": "ip_header_size", "measured": 20.0, "protocol": "RFC 791"},
+    {"name": "IPv6_header_bytes", "property": "ip_header_size", "measured": 40.0, "protocol": "RFC 8200"},
+    {"name": "TCP_header_min_bytes", "property": "tcp_header_size", "measured": 20.0, "protocol": "RFC 9293"},
+    {"name": "UDP_header_bytes", "property": "udp_header_size", "measured": 8.0, "protocol": "RFC 768"},
+    {"name": "DNS_UDP_port", "property": "service_port", "measured": 53.0, "protocol": "IANA"},
+    {"name": "HTTPS_TCP_port", "property": "service_port", "measured": 443.0, "protocol": "IANA"},
+    {"name": "HTTP2_max_frame_size", "property": "frame_size_bytes", "measured": 16384.0, "protocol": "RFC 7540"},
+    {"name": "TLS_record_max_plaintext", "property": "tls_record_bytes", "measured": 16384.0, "protocol": "RFC 8446"},
+    {"name": "BGP_AS_path_max_hops", "property": "routing_hops", "measured": 255.0, "protocol": "RFC 4271"},
+    {"name": "ICMP_echo_type", "property": "icmp_type", "measured": 8.0, "protocol": "RFC 792"},
+    {"name": "MITRE_attack_tactics", "property": "attack_tactic_count", "measured": 14.0, "source": "MITRE ATT&CK Enterprise"},
+    {"name": "MITRE_attack_techniques_enterprise", "property": "attack_technique_count", "measured": 600.0, "source": "MITRE ATT&CK Enterprise"},
+    {"name": "CWE_top_weakness_slots", "property": "cwe_category_count", "measured": 25.0, "source": "MITRE CWE"},
+    {"name": "OWASP_top10_categories", "property": "owasp_category_count", "measured": 10.0, "source": "OWASP Top 10 2021"},
+    {"name": "DNSSEC_key_algorithm_rsa", "property": "dnssec_algorithm_id", "measured": 8.0, "protocol": "RFC 4034"},
+    {"name": "QUIC_udp_port", "property": "service_port", "measured": 443.0, "protocol": "RFC 9000"},
+    {"name": "SMTP_tcp_port", "property": "service_port", "measured": 25.0, "protocol": "IANA"},
+    {"name": "NTP_udp_port", "property": "service_port", "measured": 123.0, "protocol": "IANA"},
+    {"name": "SSH_tcp_port", "property": "service_port", "measured": 22.0, "protocol": "IANA"},
+    {"name": "ARP_hardware_type_ethernet", "property": "arp_hw_type", "measured": 1.0, "protocol": "RFC 826"}
+  ]
+}

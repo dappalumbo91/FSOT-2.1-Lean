@@ -187,6 +187,15 @@ bundled:
     external_cache_root: D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical
     external_cache_env: FSOT_EXTERNAL_DATA_ROOT
 
+  cybersecurity_public_data:
+    path: vendor/cybersecurity
+    role: MalwareBazaar + CISA KEV portable summaries; full ingest on external cache
+    env_override: FSOT_EXTERNAL_DATA_ROOT
+    external_cache_root: G:/FSOT-PublicData/cybersecurity
+    external_files:
+      - malwarebazaar_recent.json
+      - cisa_kev_catalog.json
+
   space_weather_full_arc:
     path: data/space_weather_summary_benchmark.json
     role: Portable Kp summary (501 records); full 271813-record arc on external cache

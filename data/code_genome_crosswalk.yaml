@@ -1,0 +1,84 @@
+# Code genome crosswalk — program structures as FSOT codon/genomic analogs.
+version: "1.0"
+updated: "2026-07-10"
+notes: >
+  Each supported language maps lexical/structural units to unified codon triplets.
+  Gap detection (stability holes) mirrors genomic illness panels: low FSOT stability
+  match across adjacent codons flags connective-system failure points.
+
+unified_codon_alphabet:
+  size: 64
+  analogy: "64-codon genetic code (FSOT.Formal.CodonPriors)"
+  triplet_bases: [A, T, G, C]
+  mapping_rule: "hash(language, token_class, arity) mod 64 -> triplet index"
+
+languages:
+  Lean:
+    lean_domain: ai
+    file_extensions: [.lean]
+    codon_units: [theorem, lemma, def, instance, namespace, import, open, by, sorry]
+    bridge_module: FSOT.Formal.LeanProofsBridge
+    vendor_root: FSOT/Formal
+  Rust:
+    lean_domain: ai
+    file_extensions: [.rs]
+    codon_units: [fn, unsafe, impl, match, pub, mut, const, extern, trait, mod]
+    bridge_module: FSOT.Formal.RustLeanBridge
+    vendor_root: vendor/rust_lean_bridge
+  Python:
+    lean_domain: ai
+    file_extensions: [.py]
+    codon_units: [def, class, import, lambda, async, yield, exec, eval, setattr, getattr]
+    bridge_module: FSOT.Formal.CybersecurityEngineeringPriors
+    vendor_root: scripts
+  C:
+    lean_domain: electron
+    file_extensions: [.c, .h]
+    codon_units: [malloc, free, strcpy, memcpy, pointer, struct, include, void, static, return]
+    bridge_module: FSOT.Formal.CybersecurityEngineeringPriors
+    vendor_root: vendor/rust_lean_bridge
+  JavaScript:
+    lean_domain: consciousness
+    file_extensions: [.js, .mjs, .ts]
+    codon_units: [function, const, eval, prototype, fetch, document, innerHTML, require, module, async]
+    bridge_module: FSOT.Formal.CodeGenomeStructurePriors
+    vendor_root: vendor/cybersecurity/samples
+  Go:
+    lean_domain: ai
+    file_extensions: [.go]
+    codon_units: [func, package, import, struct, interface, return, go, defer, unsafe]
+    bridge_module: FSOT.Formal.CodeGenomeStructurePriors
+    vendor_root: vendor/cybersecurity/samples
+  Zig:
+    lean_domain: electron
+    file_extensions: [.zig]
+    codon_units: [fn, pub, const, struct, return, try, comptime, export]
+    bridge_module: FSOT.Formal.CodeGenomeStructurePriors
+    vendor_root: vendor/cybersecurity/samples
+  WebAssembly:
+    lean_domain: particle
+    file_extensions: [.wat, .wasm]
+    codon_units: [func, export, memory, module, param, result, local.get, i32.add, i32.store]
+    bridge_module: FSOT.Formal.CodeGenomeStructurePriors
+    vendor_root: vendor/cybersecurity/samples
+
+illness_analogs:
+  genomic_illness: "low expression / malformed codon → pathology"
+  code_illness: "low stability match / arity mismatch → vulnerability hole"
+  virology_bridge: Virology
+  malware_bridge: Malware_Threat_Intelligence
+
+gap_detection:
+  window_codon_count: 3
+  stability_threshold: 0.85
+  hole_definition: "adjacent codon window with mean stability < threshold"
+  fsot_scalar_domains: [Computer_Science, Quantum_Computing, Biochemistry]
+
+crosswalk_modules:
+  - FSOT.Formal.Genomic
+  - FSOT.Formal.CodonPriors
+  - FSOT.Formal.VirologyExtensionPriors
+  - FSOT.Formal.RustLeanBridge
+  - FSOT.Formal.TrinaryOSTierEPriors
+  - FSOT.Formal.CryptographyTechnologyPriors
+  - FSOT.Formal.ZeroDayRiskEvaluatorPriors

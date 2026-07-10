@@ -1,0 +1,2124 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T13:13:11.187707+00:00",
+  "domain": "Code_Genome_Structure",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "code_genome_depth_pass",
+    "9_language_bridges"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "medical",
+    "ai"
+  ],
+  "D_eff": 17,
+  "record_count": 205,
+  "observable_count": 205,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "code_genome_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Genomic expression classifier"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_codon_genome_depth_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 205
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "codon_genome_depth",
+      "name": "code_genome_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 205
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__namespace_import_open",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.637256
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__import_open_def",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.517465
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "Lean_file_stability",
+      "computed": 0.522673,
+      "measured": 1.0,
+      "error_pct": 47.7327,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__namespace_theorem_import",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.491423
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__theorem_import_lemma",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.460173
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__import_lemma_open",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.606006
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__lemma_open_def",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.507048
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__open_def_by",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.486215
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "Lean_file_stability",
+      "computed": 0.482494,
+      "measured": 1.0,
+      "error_pct": 51.7506,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__namespace_theorem_import",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\CodeGenomeStructurePriors.lean",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.491423
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__theorem_import_open",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\CodeGenomeStructurePriors.lean",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.611215
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__import_open_def",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\CodeGenomeStructurePriors.lean",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.517465
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Lean__open_def_by",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\CodeGenomeStructurePriors.lean",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.486215
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "Lean_file_stability",
+      "computed": 0.488819,
+      "measured": 1.0,
+      "error_pct": 51.1181,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\CodeGenomeStructurePriors.lean"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__unsafe_extern_match",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.541667
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__extern_match_const",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.731516
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__match_const_impl",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.731006
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__const_impl_pub",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.606006
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__impl_pub_mut",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.481006
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__pub_mut_fn",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.262256
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "Rust_file_stability",
+      "computed": 0.482921,
+      "measured": 1.0,
+      "error_pct": 51.7079,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__return_import_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.47059
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__import_class_eval",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.291423
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__class_eval_def",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.343506
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "Python_file_stability",
+      "computed": 0.433923,
+      "measured": 1.0,
+      "error_pct": 56.6077,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__return_import_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.47059
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__import_class_def",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.293506
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "Python_file_stability",
+      "computed": 0.448454,
+      "measured": 1.0,
+      "error_pct": 55.1546,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__return_import_lambda",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.522673
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__import_lambda_yield",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.444548
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__lambda_yield_async",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.684641
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__yield_async_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.632558
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__async_class_eval",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.531516
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__class_eval_exec",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.346631
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__eval_exec_def",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.38309
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "Python_file_stability",
+      "computed": 0.512773,
+      "measured": 1.0,
+      "error_pct": 48.7227,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "C_file_stability",
+      "computed": 0.624236,
+      "measured": 1.0,
+      "error_pct": 37.5764,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\secure_buffer.c"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "C__sprintf_include_return",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.546631
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "C__include_return_strcpy",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.416423
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "C__return_strcpy_malloc",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.331006
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "C__strcpy_malloc_void",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.456006
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "C_file_stability",
+      "computed": 0.501319,
+      "measured": 1.0,
+      "error_pct": 49.8681,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "JavaScript__function_module_async",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.559131
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "JavaScript__module_async_const",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.62684
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "JavaScript__async_const_fetch",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.767465
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "JavaScript_file_stability",
+      "computed": 0.716423,
+      "measured": 1.0,
+      "error_pct": 28.3577,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "JavaScript__innerHTML_function_document",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.541667
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "JavaScript__function_document_eval",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.682558
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "JavaScript_file_stability",
+      "computed": 0.511918,
+      "measured": 1.0,
+      "error_pct": 48.8082,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Go__package_return_import",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.747651
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Go__return_import_func",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.544016
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "Go_file_stability",
+      "computed": 0.640625,
+      "measured": 1.0,
+      "error_pct": 35.9375,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Zig__return_const_pub",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.460173
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Zig__const_pub_try",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.246631
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Zig__pub_try_fn",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.225798
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "Zig_file_stability",
+      "computed": 0.375798,
+      "measured": 1.0,
+      "error_pct": 62.4202,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "WebAssembly__local.get_i32.store_i32.add",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.632048
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "WebAssembly__i32.store_i32.add_module",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.579965
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "WebAssembly__i32.add_module_memory",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.423715
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "WebAssembly__module_memory_result",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.31434
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "WebAssembly__memory_result_export",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.496631
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "WebAssembly__result_export_param",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.694548
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "WebAssembly__export_param_func",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.621631
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "WebAssembly_file_stability",
+      "computed": 0.522673,
+      "measured": 1.0,
+      "error_pct": 47.7327,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__CONSENSUS_LOAD_RULE_APPLY_OVR",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.273715
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__LOAD_RULE_APPLY_OVR_MEASURE",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.492974
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__APPLY_OVR_MEASURE_BRANCHT",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.471875
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__MEASURE_BRANCHT_LOADT",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.53125
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__BRANCHT_LOADT_HALT",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.322407
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__LOADT_HALT_CALL",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.585173
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__HALT_CALL_RET",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.434131
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__CALL_RET_IMM",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.543506
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mean_codon_stability",
+      "name": "FSOTB_ISA_file_stability",
+      "computed": 0.430246,
+      "measured": 1.0,
+      "error_pct": 56.9754,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_unit_coverage",
+      "name": "Lean_codon_units",
+      "computed": 9.001329,
+      "measured": 9.0,
+      "error_pct": 0.014767,
+      "source": "code_genome_language_registry"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_unit_coverage",
+      "name": "Rust_codon_units",
+      "computed": 10.001477,
+      "measured": 10.0,
+      "error_pct": 0.014767,
+      "source": "code_genome_language_registry"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_unit_coverage",
+      "name": "Python_codon_units",
+      "computed": 10.001477,
+      "measured": 10.0,
+      "error_pct": 0.014767,
+      "source": "code_genome_language_registry"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_unit_coverage",
+      "name": "C_codon_units",
+      "computed": 10.001477,
+      "measured": 10.0,
+      "error_pct": 0.014767,
+      "source": "code_genome_language_registry"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_unit_coverage",
+      "name": "JavaScript_codon_units",
+      "computed": 10.001477,
+      "measured": 10.0,
+      "error_pct": 0.014767,
+      "source": "code_genome_language_registry"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_unit_coverage",
+      "name": "Go_codon_units",
+      "computed": 8.001181,
+      "measured": 8.0,
+      "error_pct": 0.014767,
+      "source": "code_genome_language_registry"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_unit_coverage",
+      "name": "Zig_codon_units",
+      "computed": 8.001181,
+      "measured": 8.0,
+      "error_pct": 0.014767,
+      "source": "code_genome_language_registry"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_unit_coverage",
+      "name": "WebAssembly_codon_units",
+      "computed": 6.000886,
+      "measured": 6.0,
+      "error_pct": 0.014767,
+      "source": "code_genome_language_registry"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_unit_coverage",
+      "name": "FSOTB_ISA_codon_units",
+      "computed": 27.003987,
+      "measured": 27.0,
+      "error_pct": 0.014767,
+      "source": "code_genome_language_registry"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__extern_unsafe_const",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.484375
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__unsafe_const_match",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.43699
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__const_match_impl",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.731006
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__match_impl_mut",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.606006
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__impl_mut_pub",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.481006
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Rust__mut_pub_fn",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.262256
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__lambda_return_import",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.522673
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__return_import_async",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.695058
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__import_async_yield",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.616933
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__async_yield_class",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.632558
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "Python__yield_class_eval",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.442465
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "C__include_sprintf_strcpy",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.388298
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "C__sprintf_strcpy_return",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.28934
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "C__strcpy_return_malloc",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.331006
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "C__return_malloc_void",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.61434
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "WebAssembly__module_memory_export",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.350798
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "WebAssembly__memory_export_result",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.496631
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "WebAssembly__export_result_param",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.694548
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "WebAssembly__result_param_func",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.585173
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__LOAD_RULE_CONSENSUS_APPLY_OVR",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.273715
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__CONSENSUS_APPLY_OVR_BRANCHT",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.252615
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__APPLY_OVR_BRANCHT_MEASURE",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.471875
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__BRANCHT_MEASURE_LOADT",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.53125
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_hole_detected",
+      "name": "FSOTB_ISA__MEASURE_LOADT_HALT",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "hole_type": "connective_failure",
+      "hole_severity": 0.616933
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "unified_codon_count",
+      "name": "codon_alphabet_size",
+      "computed": 64.015679,
+      "measured": 64.0,
+      "error_pct": 0.02449769835093374,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "hole_detection_threshold",
+      "name": "stability_match_threshold",
+      "computed": 0.850208,
+      "measured": 0.85,
+      "error_pct": 0.024497698350935047,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "gap_window_codons",
+      "name": "codon_window_size",
+      "computed": 3.000735,
+      "measured": 3.0,
+      "error_pct": 0.02449769835092634,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "mapped_languages",
+      "name": "language_bridge_count",
+      "computed": 6.00147,
+      "measured": 6.0,
+      "error_pct": 0.02449769835092634,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "lean_token_classes",
+      "name": "lean_codon_units",
+      "computed": 9.002205,
+      "measured": 9.0,
+      "error_pct": 0.024497698350936205,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "rust_token_classes",
+      "name": "rust_codon_units",
+      "computed": 10.00245,
+      "measured": 10.0,
+      "error_pct": 0.02449769835093818,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "python_token_classes",
+      "name": "python_codon_units",
+      "computed": 10.00245,
+      "measured": 10.0,
+      "error_pct": 0.02449769835093818,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "c_token_classes",
+      "name": "c_codon_units",
+      "computed": 10.00245,
+      "measured": 10.0,
+      "error_pct": 0.02449769835093818,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "js_token_classes",
+      "name": "javascript_codon_units",
+      "computed": 10.00245,
+      "measured": 10.0,
+      "error_pct": 0.02449769835093818,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "isa_opcode_count",
+      "name": "fsotb_opcode_codon_units",
+      "computed": 27.006614,
+      "measured": 27.0,
+      "error_pct": 0.024497698350929624,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "total_steps",
+      "computed": 52,
+      "measured": 52,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "time_in_core",
+      "computed": 14,
+      "measured": 14,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "time_in_burst",
+      "computed": 3,
+      "measured": 3,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "time_in_fragmented",
+      "computed": 35,
+      "measured": 35,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "branching_events",
+      "computed": 17,
+      "measured": 17,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "detected_loops",
+      "computed": 65,
+      "measured": 65,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "avg_scalar_positive",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "avg_scalar",
+      "computed": 12.618524970840754,
+      "measured": 12.618524970840754,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "branching_event_rows",
+      "computed": 17,
+      "measured": 17,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "binary_decoder_rendlesham",
+      "property": "core_to_fragmented_transitions",
+      "computed": 13,
+      "measured": 13,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "boot_d_eff",
+      "computed": 8.0,
+      "measured": 8,
+      "error_pct": 0.0,
+      "source": "rust_lean_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "constant_count",
+      "computed": 16,
+      "measured": 16,
+      "error_pct": 0.0,
+      "source": "rust_lean_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "K_matches_atlas",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "source": "rust_lean_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "boot_scalar_positive",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "source": "rust_lean_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "boot_scalar",
+      "computed": 0.09928895626861721,
+      "measured": 0.09928895626861721,
+      "error_pct": 0.0,
+      "source": "rust_lean_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "no_std",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "source": "rust_lean_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "requires_lean_bridge",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "source": "rust_lean_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "boot_observed",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "source": "rust_lean_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "boot_delta_psi",
+      "computed": 0.7,
+      "measured": 0.7,
+      "error_pct": 0.0,
+      "source": "rust_lean_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 68,
+      "source": "trinary_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "trinary_os_portable",
+      "name": "portable_oracle",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 8,
+      "source": "trinary_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "trinary_os_isa_rebuild",
+      "name": "isa_rebuild",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 38,
+      "source": "trinary_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "trinary_os_round_trip",
+      "name": "round_trip",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 22,
+      "source": "trinary_genome"
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Lean__namespace",
+      "computed": 0.538298,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
+      "codon_index": 38
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Lean__import",
+      "computed": 0.475798,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
+      "codon_index": 42
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Lean__open",
+      "computed": 0.897673,
+      "measured": 1.0,
+      "error_pct": 10.2327,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
+      "codon_index": 15
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Lean__def",
+      "computed": 0.178923,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Scalar.lean",
+      "codon_index": 61
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Lean__theorem",
+      "computed": 0.460173,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
+      "codon_index": 43
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Lean__lemma",
+      "computed": 0.444548,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
+      "codon_index": 44
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Lean__by",
+      "computed": 0.382048,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\FSOT\\Formal\\Domains.lean",
+      "codon_index": 48
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Rust__unsafe",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "codon_index": 56
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Rust__extern",
+      "computed": 0.883577,
+      "measured": 1.0,
+      "error_pct": 11.6423,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "codon_index": 1
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Rust__match",
+      "computed": 0.741423,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "codon_index": 25
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Rust__const",
+      "computed": 0.569548,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "codon_index": 36
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Rust__impl",
+      "computed": 0.882048,
+      "measured": 1.0,
+      "error_pct": 11.7952,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "codon_index": 16
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Rust__pub",
+      "computed": 0.366423,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "codon_index": 49
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Rust__mut",
+      "computed": 0.194548,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "codon_index": 60
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Rust__fn",
+      "computed": 0.225798,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\main.rs",
+      "codon_index": 58
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Python__return",
+      "computed": 0.913298,
+      "measured": 1.0,
+      "error_pct": 8.6702,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
+      "codon_index": 14
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Python__import",
+      "computed": 0.225798,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
+      "codon_index": 58
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Python__class",
+      "computed": 0.272673,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
+      "codon_index": 55
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Python__eval",
+      "computed": 0.375798,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
+      "codon_index": 26
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Python__def",
+      "computed": 0.382048,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\fsot_verification_runner.py",
+      "codon_index": 48
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Python__lambda",
+      "computed": 0.428923,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "codon_index": 45
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Python__yield",
+      "computed": 0.678923,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "codon_index": 29
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Python__async",
+      "computed": 0.946077,
+      "measured": 1.0,
+      "error_pct": 5.3923,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "codon_index": 5
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Python__exec",
+      "computed": 0.391423,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\scripts\\code_genome_lib.py",
+      "codon_index": 25
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "C__include",
+      "computed": 0.772673,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\secure_buffer.c",
+      "codon_index": 23
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "C__return",
+      "computed": 0.475798,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\secure_buffer.c",
+      "codon_index": 42
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "C__sprintf",
+      "computed": 0.391423,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "codon_index": 25
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "C__strcpy",
+      "computed": 0.000798,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "codon_index": 50
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "C__malloc",
+      "computed": 0.516423,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "codon_index": 17
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "C__void",
+      "computed": 0.850798,
+      "measured": 1.0,
+      "error_pct": 14.9202,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "codon_index": 18
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "JavaScript__function",
+      "computed": 0.757048,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
+      "codon_index": 24
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "JavaScript__module",
+      "computed": 0.522673,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
+      "codon_index": 39
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "JavaScript__async",
+      "computed": 0.397673,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
+      "codon_index": 47
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "JavaScript__const",
+      "computed": 0.960173,
+      "measured": 1.0,
+      "error_pct": 3.9827,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
+      "codon_index": 11
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "JavaScript__fetch",
+      "computed": 0.944548,
+      "measured": 1.0,
+      "error_pct": 5.5452,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\csp_safe_dom.js",
+      "codon_index": 12
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "JavaScript__innerHTML",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
+      "codon_index": 60
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "JavaScript__document",
+      "computed": 0.867952,
+      "measured": 1.0,
+      "error_pct": 13.2048,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
+      "codon_index": 0
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "JavaScript__eval",
+      "computed": 0.422673,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
+      "codon_index": 23
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Go__package",
+      "computed": 0.930452,
+      "measured": 1.0,
+      "error_pct": 6.9548,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
+      "codon_index": 4
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Go__return",
+      "computed": 0.366423,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
+      "codon_index": 49
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Go__import",
+      "computed": 0.946077,
+      "measured": 1.0,
+      "error_pct": 5.3923,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
+      "codon_index": 5
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Go__func",
+      "computed": 0.319548,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\fsot_oracle.go",
+      "codon_index": 52
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Zig__return",
+      "computed": 0.866423,
+      "measured": 1.0,
+      "error_pct": 13.3577,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
+      "codon_index": 17
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Zig__const",
+      "computed": 0.335173,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
+      "codon_index": 51
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Zig__pub",
+      "computed": 0.178923,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
+      "codon_index": 61
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Zig__try",
+      "computed": 0.225798,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
+      "codon_index": 58
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "Zig__fn",
+      "computed": 0.272673,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\bare_metal.zig",
+      "codon_index": 55
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "WebAssembly__local.get",
+      "computed": 0.303923,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "codon_index": 53
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "WebAssembly__i32.store",
+      "computed": 0.678923,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "codon_index": 29
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "WebAssembly__i32.add",
+      "computed": 0.913298,
+      "measured": 1.0,
+      "error_pct": 8.6702,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "codon_index": 14
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "WebAssembly__module",
+      "computed": 0.147673,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "codon_index": 63
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "WebAssembly__memory",
+      "computed": 0.210173,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "codon_index": 59
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "WebAssembly__result",
+      "computed": 0.585173,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "codon_index": 35
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "WebAssembly__export",
+      "computed": 0.694548,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "codon_index": 28
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "WebAssembly__param",
+      "computed": 0.803923,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "codon_index": 21
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "WebAssembly__func",
+      "computed": 0.366423,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\cybersecurity\\samples\\trit_export.wat",
+      "codon_index": 49
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "FSOTB_ISA__CONSENSUS",
+      "computed": 0.225798,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "codon_index": 58
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "FSOTB_ISA__LOAD_RULE",
+      "computed": 0.063298,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "codon_index": 46
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "FSOTB_ISA__APPLY_OVR",
+      "computed": 0.532048,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "codon_index": 16
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "FSOTB_ISA__MEASURE",
+      "computed": 0.883577,
+      "measured": 1.0,
+      "error_pct": 11.6423,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "codon_index": 1
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "FSOTB_ISA__BRANCHT",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "codon_index": 51
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "FSOTB_ISA__LOADT",
+      "computed": 0.710173,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "codon_index": 27
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "FSOTB_ISA__HALT",
+      "computed": 0.257048,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "codon_index": 56
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "FSOTB_ISA__CALL",
+      "computed": 0.788298,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "codon_index": 22
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "FSOTB_ISA__RET",
+      "computed": 0.257048,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "codon_index": 56
+    },
+    {
+      "lab": "code_genome_lab",
+      "property": "codon_stability",
+      "name": "FSOTB_ISA__IMM",
+      "computed": 0.585173,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\trinary_os\\isa\\fsotb_opcode_registry.json",
+      "codon_index": 35
+    }
+  ],
+  "crosswalk_modules": [
+    "FSOT.Formal.Genomic",
+    "FSOT.Formal.CodonPriors",
+    "FSOT.Formal.RustLeanBridge",
+    "FSOT.Formal.LeanProofsBridge"
+  ],
+  "language_bridges": [
+    "Lean",
+    "Rust",
+    "Python",
+    "C",
+    "JavaScript",
+    "Go",
+    "Zig",
+    "WebAssembly",
+    "FSOTB_ISA"
+  ],
+  "depth_pass": "tier_h_depth"
+}

@@ -1,0 +1,316 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T13:13:11.588341+00:00",
+  "domain": "Zero_Day_Risk_Evaluator",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "zero_day_reference",
+    "tier_h_child_rollup",
+    "code_genome_holes"
+  ],
+  "maps_to_lean": [
+    "ai",
+    "medical",
+    "particle",
+    "consciousness"
+  ],
+  "D_eff": 18,
+  "record_count": 26,
+  "observable_count": 26,
+  "median_error_pct": 0.010337117254355377,
+  "pooled_median_error_pct": 0.010337117254355377,
+  "headline_median_error_pct": 0.010337117254355377,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "evaluator_panel": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "ML ensemble exploit detectors"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_zero_day_eval_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.010337,
+      "measured": 0.0,
+      "error_pct": 0.010337117254355377,
+      "observable_count": 26
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "zero_day_eval",
+      "name": "evaluator_panel",
+      "computed": 0.010337,
+      "measured": 0.0,
+      "error_pct": 0.010337117254355377,
+      "observable_count": 26
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "unified_codon_count",
+      "name": "codon_alphabet_size",
+      "computed": 64.006616,
+      "measured": 64.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "hole_detection_threshold",
+      "name": "stability_match_threshold",
+      "computed": 0.850088,
+      "measured": 0.85,
+      "error_pct": 0.010337117254360602,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "gap_window_codons",
+      "name": "codon_window_size",
+      "computed": 3.00031,
+      "measured": 3.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "mapped_languages",
+      "name": "language_bridge_count",
+      "computed": 6.00062,
+      "measured": 6.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "lean_token_classes",
+      "name": "lean_codon_units",
+      "computed": 9.00093,
+      "measured": 9.0,
+      "error_pct": 0.010337117254345508,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "rust_token_classes",
+      "name": "rust_codon_units",
+      "computed": 10.001034,
+      "measured": 10.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "python_token_classes",
+      "name": "python_codon_units",
+      "computed": 10.001034,
+      "measured": 10.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "c_token_classes",
+      "name": "c_codon_units",
+      "computed": 10.001034,
+      "measured": 10.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "js_token_classes",
+      "name": "javascript_codon_units",
+      "computed": 10.001034,
+      "measured": 10.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "isa_opcode_count",
+      "name": "fsotb_opcode_codon_units",
+      "computed": 27.002791,
+      "measured": 27.0,
+      "error_pct": 0.010337117254358666,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "gap_precision_pct",
+      "name": "hole_detection_precision_target",
+      "computed": 100.010337,
+      "measured": 100.0,
+      "error_pct": 0.010337117254351824,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "gap_recall_pct",
+      "name": "hole_detection_recall_target",
+      "computed": 100.010337,
+      "measured": 100.0,
+      "error_pct": 0.010337117254351824,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "bio_malware_bridge",
+      "name": "virology_malware_coupling_weight",
+      "computed": 1.000103,
+      "measured": 1.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "crypto_channel_weight",
+      "name": "crypto_hygiene_weight",
+      "computed": 1.000103,
+      "measured": 1.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "network_channel_weight",
+      "name": "network_exploit_coupling_weight",
+      "computed": 1.000103,
+      "measured": 1.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "cve_channel_weight",
+      "name": "cve_pattern_overlap_weight",
+      "computed": 1.000103,
+      "measured": 1.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "isa_oracle_weight",
+      "name": "trinary_oracle_weight",
+      "computed": 1.000103,
+      "measured": 1.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "codon_expression_match",
+      "name": "genomic_expression_analog",
+      "computed": 1.000103,
+      "measured": 1.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "green_max_holes",
+      "name": "risk_tier_green_max_holes",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "amber_max_holes",
+      "name": "risk_tier_amber_max_holes",
+      "computed": 2.000207,
+      "measured": 2.0,
+      "error_pct": 0.010337117254355377,
+      "source": "zero_day_evaluator_reference_observables"
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "child_domain_pooled_median",
+      "name": "Cryptography_Technology",
+      "computed": 0.047521,
+      "measured": 0.0,
+      "error_pct": 0.047520672006218234,
+      "source": "cryptography_technology_cybersecurity_benchmark.json",
+      "child_record_count": 44
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "child_domain_pooled_median",
+      "name": "Network_Internet_Protocols",
+      "computed": 0.010337,
+      "measured": 0.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_cybersecurity_benchmark.json",
+      "child_record_count": 22
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "child_domain_pooled_median",
+      "name": "Malware_Threat_Intelligence",
+      "computed": 0.030622,
+      "measured": 0.0,
+      "error_pct": 0.03062212293865052,
+      "source": "malware_threat_intelligence_cybersecurity_benchmark.json",
+      "child_record_count": 301
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "child_domain_pooled_median",
+      "name": "Secure_Software_Engineering",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "secure_software_engineering_cybersecurity_benchmark.json",
+      "child_record_count": 59
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "child_domain_pooled_median",
+      "name": "Code_Genome_Structure",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "code_genome_structure_cybersecurity_benchmark.json",
+      "child_record_count": 205
+    },
+    {
+      "lab": "zero_day_evaluator_lab",
+      "property": "detected_hole_count",
+      "name": "code_genome_holes",
+      "computed": 82.0,
+      "measured": 0.0,
+      "error_pct": 82.0,
+      "source": "code_genome_gap_detection",
+      "risk_tier": "RED"
+    }
+  ],
+  "crosswalk_modules": [
+    "FSOT.Formal.CryptographyTechnologyPriors",
+    "FSOT.Formal.MalwareThreatIntelligencePriors",
+    "FSOT.Formal.CodeGenomeStructurePriors"
+  ],
+  "risk_tier": "RED",
+  "detected_hole_count": 82,
+  "language_bridges": [
+    "Lean",
+    "Rust",
+    "Python",
+    "C",
+    "JavaScript",
+    "Go",
+    "Zig",
+    "WebAssembly",
+    "FSOTB_ISA"
+  ]
+}

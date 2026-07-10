@@ -27,7 +27,7 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-10 — Tier 42)
+## Verification status (2026-07-10 — Tier 43)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
@@ -35,13 +35,13 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 
 | Metric | Value |
 |--------|-------|
-| Verification tiers | **40/40 complete** (100%) |
-| Scientific domains | **141** (35 NeuroLab + 105 extension + Intelligence Compression rollup) |
-| Coupling simulation | **141 nodes · 2,448 edges** (maps_to_lean + cross-ratios + magnetosphere cluster) |
+| Verification tiers | **41/41 complete** (100%) |
+| Scientific domains | **149** (35 NeuroLab + 113 extension + Intelligence Compression rollup) |
+| Coupling simulation | **149 nodes · 3,032 edges** (maps_to_lean + cross-ratios + magnetosphere + Tier 43 cyber) |
 | Empirical records | **306,680+** |
 | Neurolab precision | **35/35** domains ≤2% median error |
 | Coverage tiers | A_strong: 25+ · B_verified: 10 · C_thin: **0** · D_needs_work: **0** · unverified: **0** |
-| Lean formal modules | **177** |
+| Lean formal modules | **183** |
 | Proved claims | **65** · 0 active `sorry` |
 | SOTA ledger | **65/65** observables beat or meet baselines |
 | Expansion candidates | **0** (all identified science gaps filled) |
@@ -68,7 +68,10 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - Unified DB inventory (`FSOT.Formal.UnifiedDBPriors`) — 30,984 indexed records, 26 projects (inventory tier)
 - Cosmology Wave-4 (`FSOT.Formal.CosmologyWave4Priors`) — 16 observables (PMNS/CKM/nuclear/dark-energy); legacy `CosmologyWave4.lean` is a deprecation shim
 - GFZ Kp historical arc (`FSOT.Formal.SpaceWeatherPriors`) — **271,813** Kp records (1932–2024), 100% stability match; portable **501-record** summary in repo, full arc on `G:/FSOT-PublicData`
-- Cross-domain coupling simulation (`FSOT.Formal.DomainCouplingSimulationPriors`) — **141** nodes, **2,448** coupling edges, 0% pooled median
+- Cross-domain coupling simulation (`FSOT.Formal.DomainCouplingSimulationPriors`) — **149** nodes, **3,032** coupling edges, 0% pooled median
+- Tier 43 cybersecurity (`FSOT.Formal.ZeroDayRiskEvaluatorPriors`) — **9-language** code-genome bridges (Lean/Rust/Python/C/JS/Go/Zig/WASM/FSOTB_ISA), MalwareBazaar **200** samples + CISA KEV **1,635** CVEs on `G:/FSOT-PublicData/cybersecurity`
+- Malware threat intelligence depth (`FSOT.Formal.MalwareThreatIntelligencePriors`) — **301** records, virology structural bridge
+- Code genome structure (`FSOT.Formal.CodeGenomeStructurePriors`) — **205** records, genomic codon hole detection
 - Formula corpus closure (`FSOT.Formal.FormulaCorpusClosurePriors`) — **7,941** strict-empirical formulas + **127** extension bridges
 - Tier G depth wave — 8 Tier F domains deepened to **100+** records (Epidemiology 220, Finance_Markets 245, Supply_Chain 220, …)
 - USGS hydrology (`FSOT.Formal.HydrologyPriors`) — monthly streamflow cohort with train/holdout gates

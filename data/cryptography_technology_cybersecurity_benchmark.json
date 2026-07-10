@@ -1,0 +1,481 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T13:13:11.583824+00:00",
+  "domain": "Cryptography_Technology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "NIST_PQC",
+    "CRYPTOGRAPHY_RULES",
+    "cryptography_reference"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "mathematical",
+    "ai"
+  ],
+  "D_eff": 16,
+  "record_count": 44,
+  "observable_count": 44,
+  "median_error_pct": 0.047520672006218234,
+  "pooled_median_error_pct": 0.047520672006218234,
+  "headline_median_error_pct": 0.047520672006218234,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "cryptography_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NIST parameter tables"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_crypto_primitives_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.047521,
+      "measured": 0.0,
+      "error_pct": 0.047520672006218234,
+      "observable_count": 44
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "crypto_primitives",
+      "name": "cryptography_panel",
+      "computed": 0.047521,
+      "measured": 0.0,
+      "error_pct": 0.047520672006218234,
+      "observable_count": 44
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "cryptography_lab",
+      "property": "symmetric_key_bits",
+      "name": "AES_128_key_bits",
+      "computed": 128.072992,
+      "measured": 128.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "symmetric_key_bits",
+      "name": "AES_256_key_bits",
+      "computed": 256.145984,
+      "measured": 256.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "block_cipher_rounds",
+      "name": "AES_rounds_128",
+      "computed": 10.005702,
+      "measured": 10.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "asymmetric_modulus_bits",
+      "name": "RSA_modulus_bits",
+      "computed": 2049.167868,
+      "measured": 2048.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "public_exponent",
+      "name": "RSA_public_exponent",
+      "computed": 65574.372347,
+      "measured": 65537.0,
+      "error_pct": 0.05702480640748913,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "curve_order_bits",
+      "name": "ECDSA_P256_order_bits",
+      "computed": 256.145984,
+      "measured": 256.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "ecc_key_bits",
+      "name": "Curve25519_key_bits",
+      "computed": 256.145984,
+      "measured": 256.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "hash_output_bits",
+      "name": "SHA256_digest_bits",
+      "computed": 256.145984,
+      "measured": 256.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "collision_work_exponent",
+      "name": "SHA256_collision_work_exp",
+      "computed": 128.072992,
+      "measured": 128.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "protocol_version",
+      "name": "TLS13_min_version",
+      "computed": 1.300741,
+      "measured": 1.3,
+      "error_pct": 0.05702480640748306,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "pqc_security_level",
+      "name": "Kyber768_security_category",
+      "computed": 3.001711,
+      "measured": 3.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "pqc_signature_level",
+      "name": "Dilithium3_security_category",
+      "computed": 3.001711,
+      "measured": 3.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "hash_signature_level",
+      "name": "SPHINCS_plus_128f_security",
+      "computed": 1.00057,
+      "measured": 1.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "dh_modulus_bits",
+      "name": "DH_group_min_bits",
+      "computed": 2049.167868,
+      "measured": 2048.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "aead_nonce_bits",
+      "name": "GCM_nonce_bits",
+      "computed": 96.054744,
+      "measured": 96.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "kdf_iterations",
+      "name": "PBKDF2_min_iterations",
+      "computed": 600342.148838,
+      "measured": 600000.0,
+      "error_pct": 0.05702480640747429,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "memory_hard_kdf_kb",
+      "name": "Argon2_memory_kb",
+      "computed": 19467.094746,
+      "measured": 19456.0,
+      "error_pct": 0.057024806407474975,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "hmac_block_bits",
+      "name": "HMAC_SHA256_block_bits",
+      "computed": 512.291967,
+      "measured": 512.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "signature_key_bits",
+      "name": "Ed25519_key_bits",
+      "computed": 256.145984,
+      "measured": 256.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "stream_cipher_key_bits",
+      "name": "ChaCha20_key_bits",
+      "computed": 256.145984,
+      "measured": 256.0,
+      "error_pct": 0.057024806407479645,
+      "source": "cryptography_technology_reference_observables"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-001",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "public_key"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-002",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "hardness"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-003",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "ecc"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-004",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "key_exchange"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-005",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "symmetric"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-006",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "hash_functions"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-007",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "post_quantum"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-008",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "secret_sharing"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-009",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "signatures"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-010",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "proof_systems"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-011",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "primitives"
+    },
+    {
+      "lab": "cryptography_lab",
+      "property": "crypto_rule_property_count",
+      "name": "CR-012",
+      "computed": 2.00095,
+      "measured": 2.0,
+      "error_pct": 0.047520672006218234,
+      "source": "CRYPTOGRAPHY_RULES.json",
+      "category": "post_quantum"
+    },
+    {
+      "rule_id": "CR-001",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    },
+    {
+      "rule_id": "CR-002",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    },
+    {
+      "rule_id": "CR-003",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    },
+    {
+      "rule_id": "CR-004",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    },
+    {
+      "rule_id": "CR-005",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    },
+    {
+      "rule_id": "CR-006",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    },
+    {
+      "rule_id": "CR-007",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    },
+    {
+      "rule_id": "CR-008",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    },
+    {
+      "rule_id": "CR-009",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    },
+    {
+      "rule_id": "CR-010",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    },
+    {
+      "rule_id": "CR-011",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    },
+    {
+      "rule_id": "CR-012",
+      "corpus": "CRYPTOGRAPHY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "particle",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "lab": "cryptography_lab",
+      "source": "math_generator_rules_eval"
+    }
+  ],
+  "crosswalk_modules": [
+    "FSOT.Formal.CodonPriors",
+    "FSOT.Formal.FormulaCorpusClosurePriors"
+  ]
+}

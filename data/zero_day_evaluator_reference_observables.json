@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "source": "FSOT code-genome gap detection + multi-language bridge invariants",
+  "updated": "2026-07-10",
+  "notes": "Zero-day holes = codon windows where connective stability falls below genomic-illness threshold",
+  "metrics": [
+    {"name": "codon_alphabet_size", "property": "unified_codon_count", "measured": 64.0, "analog": "genetic_code"},
+    {"name": "stability_match_threshold", "property": "hole_detection_threshold", "measured": 0.85, "analog": "clinical_cutoff"},
+    {"name": "codon_window_size", "property": "gap_window_codons", "measured": 3.0, "analog": "reading_frame"},
+    {"name": "language_bridge_count", "property": "mapped_languages", "measured": 6.0, "source": "code_genome_crosswalk"},
+    {"name": "lean_codon_units", "property": "lean_token_classes", "measured": 9.0, "language": "Lean"},
+    {"name": "rust_codon_units", "property": "rust_token_classes", "measured": 10.0, "language": "Rust"},
+    {"name": "python_codon_units", "property": "python_token_classes", "measured": 10.0, "language": "Python"},
+    {"name": "c_codon_units", "property": "c_token_classes", "measured": 10.0, "language": "C"},
+    {"name": "javascript_codon_units", "property": "js_token_classes", "measured": 10.0, "language": "JavaScript"},
+    {"name": "fsotb_opcode_codon_units", "property": "isa_opcode_count", "measured": 27.0, "language": "FSOTB_ISA"},
+    {"name": "hole_detection_precision_target", "property": "gap_precision_pct", "measured": 100.0, "evaluator": "FSOT"},
+    {"name": "hole_detection_recall_target", "property": "gap_recall_pct", "measured": 100.0, "evaluator": "FSOT"},
+    {"name": "virology_malware_coupling_weight", "property": "bio_malware_bridge", "measured": 1.0, "bridge": "Virology"},
+    {"name": "crypto_hygiene_weight", "property": "crypto_channel_weight", "measured": 1.0, "bridge": "Cryptography_Technology"},
+    {"name": "network_exploit_coupling_weight", "property": "network_channel_weight", "measured": 1.0, "bridge": "Network_Internet_Protocols"},
+    {"name": "cve_pattern_overlap_weight", "property": "cve_channel_weight", "measured": 1.0, "bridge": "Secure_Software_Engineering"},
+    {"name": "trinary_oracle_weight", "property": "isa_oracle_weight", "measured": 1.0, "bridge": "Trinary_OS"},
+    {"name": "genomic_expression_analog", "property": "codon_expression_match", "measured": 1.0, "bridge": "Genomic"},
+    {"name": "risk_tier_green_max_holes", "property": "green_max_holes", "measured": 0.0, "tier": "GREEN"},
+    {"name": "risk_tier_amber_max_holes", "property": "amber_max_holes", "measured": 2.0, "tier": "AMBER"}
+  ]
+}

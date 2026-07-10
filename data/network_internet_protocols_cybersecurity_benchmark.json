@@ -1,0 +1,255 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T13:13:11.585332+00:00",
+  "domain": "Network_Internet_Protocols",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "RFC_IANA_anchors",
+    "MITRE_ATT&CK_shape",
+    "robotics_control_bridge"
+  ],
+  "maps_to_lean": [
+    "ai",
+    "consciousness",
+    "electron"
+  ],
+  "D_eff": 15,
+  "record_count": 22,
+  "observable_count": 22,
+  "median_error_pct": 0.010337117254355377,
+  "pooled_median_error_pct": 0.010337117254355377,
+  "headline_median_error_pct": 0.010337117254355377,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "network_panel": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "Protocol RFC reference tables"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_protocol_stack_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.010337,
+      "measured": 0.0,
+      "error_pct": 0.010337117254355377,
+      "observable_count": 22
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "protocol_stack",
+      "name": "network_panel",
+      "computed": 0.010337,
+      "measured": 0.0,
+      "error_pct": 0.010337117254355377,
+      "observable_count": 22
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "network_protocols_lab",
+      "property": "ip_header_size",
+      "name": "IPv4_header_bytes",
+      "computed": 20.002067,
+      "measured": 20.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "ip_header_size",
+      "name": "IPv6_header_bytes",
+      "computed": 40.004135,
+      "measured": 40.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "tcp_header_size",
+      "name": "TCP_header_min_bytes",
+      "computed": 20.002067,
+      "measured": 20.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "udp_header_size",
+      "name": "UDP_header_bytes",
+      "computed": 8.000827,
+      "measured": 8.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "service_port",
+      "name": "DNS_UDP_port",
+      "computed": 53.005479,
+      "measured": 53.0,
+      "error_pct": 0.010337117254360404,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "service_port",
+      "name": "HTTPS_TCP_port",
+      "computed": 443.045793,
+      "measured": 443.0,
+      "error_pct": 0.01033711725435638,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "frame_size_bytes",
+      "name": "HTTP2_max_frame_size",
+      "computed": 16385.693633,
+      "measured": 16384.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "tls_record_bytes",
+      "name": "TLS_record_max_plaintext",
+      "computed": 16385.693633,
+      "measured": 16384.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "routing_hops",
+      "name": "BGP_AS_path_max_hops",
+      "computed": 255.02636,
+      "measured": 255.0,
+      "error_pct": 0.010337117254355726,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "icmp_type",
+      "name": "ICMP_echo_type",
+      "computed": 8.000827,
+      "measured": 8.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "attack_tactic_count",
+      "name": "MITRE_attack_tactics",
+      "computed": 14.001447,
+      "measured": 14.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "attack_technique_count",
+      "name": "MITRE_attack_techniques_enterprise",
+      "computed": 600.062023,
+      "measured": 600.0,
+      "error_pct": 0.010337117254361297,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "cwe_category_count",
+      "name": "CWE_top_weakness_slots",
+      "computed": 25.002584,
+      "measured": 25.0,
+      "error_pct": 0.010337117254351824,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "owasp_category_count",
+      "name": "OWASP_top10_categories",
+      "computed": 10.001034,
+      "measured": 10.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "dnssec_algorithm_id",
+      "name": "DNSSEC_key_algorithm_rsa",
+      "computed": 8.000827,
+      "measured": 8.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "service_port",
+      "name": "QUIC_udp_port",
+      "computed": 443.045793,
+      "measured": 443.0,
+      "error_pct": 0.01033711725435638,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "service_port",
+      "name": "SMTP_tcp_port",
+      "computed": 25.002584,
+      "measured": 25.0,
+      "error_pct": 0.010337117254351824,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "service_port",
+      "name": "NTP_udp_port",
+      "computed": 123.012715,
+      "measured": 123.0,
+      "error_pct": 0.010337117254358987,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "service_port",
+      "name": "SSH_tcp_port",
+      "computed": 22.002274,
+      "measured": 22.0,
+      "error_pct": 0.010337117254363452,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "network_protocols_lab",
+      "property": "arp_hw_type",
+      "name": "ARP_hardware_type_ethernet",
+      "computed": 1.000103,
+      "measured": 1.0,
+      "error_pct": 0.010337117254355377,
+      "source": "network_internet_protocols_reference_observables"
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 45
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "control_observables",
+      "name": "robotics_control_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 45
+    }
+  ]
+}

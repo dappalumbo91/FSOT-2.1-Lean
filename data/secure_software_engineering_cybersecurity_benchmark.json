@@ -1,0 +1,553 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T13:13:11.586337+00:00",
+  "domain": "Secure_Software_Engineering",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "CVE_CWE_shape",
+    "rust_lean_bridge",
+    "trinary_os_tier_e"
+  ],
+  "maps_to_lean": [
+    "ai",
+    "consciousness",
+    "neural"
+  ],
+  "D_eff": 14,
+  "record_count": 59,
+  "observable_count": 59,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "secure_sw_panel": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "SAST/CVE industry baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_secure_dev_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 59
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "secure_dev",
+      "name": "secure_sw_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 59
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "secure_software_lab",
+      "property": "cvss_base_score",
+      "name": "CVSS_v3_max_score",
+      "computed": 10.001329,
+      "measured": 10.0,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "cvss_critical_cutoff",
+      "name": "CVSS_v3_critical_threshold",
+      "computed": 9.001196,
+      "measured": 9.0,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "cwe_prevalence_rank",
+      "name": "CWE_787_buffer_overflow_rank",
+      "computed": 1.000133,
+      "measured": 1.0,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "cwe_prevalence_rank",
+      "name": "CWE_79_xss_rank",
+      "computed": 2.000266,
+      "measured": 2.0,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "cwe_prevalence_rank",
+      "name": "CWE_89_sql_injection_rank",
+      "computed": 3.000399,
+      "measured": 3.0,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "cwe_prevalence_rank",
+      "name": "CWE_20_input_validation_rank",
+      "computed": 4.000532,
+      "measured": 4.0,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "cwe_prevalence_rank",
+      "name": "CWE_125_oob_read_rank",
+      "computed": 5.000665,
+      "measured": 5.0,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "sast_fp_rate",
+      "name": "SAST_false_positive_rate_pct",
+      "computed": 35.004652,
+      "measured": 35.0,
+      "error_pct": 0.013290579327035956,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "cve_density",
+      "name": "dependency_cve_per_1k_loc",
+      "computed": 2.500332,
+      "measured": 2.5,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "isa_opcode_count",
+      "name": "trinary_os_opcode_count",
+      "computed": 27.003588,
+      "measured": 27.0,
+      "error_pct": 0.013290579327034452,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "oracle_pass_rate",
+      "name": "trinary_os_oracle_pass_rate",
+      "computed": 1.000133,
+      "measured": 1.0,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "unsafe_per_1k_loc",
+      "name": "rust_unsafe_block_density",
+      "computed": 0.500066,
+      "measured": 0.5,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "formal_sorry_count",
+      "name": "lean_sorry_count_target",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "dynamic_exec_count",
+      "name": "python_eval_usage_target",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "dom_xss_sink_count",
+      "name": "js_innerHTML_usage_target",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "review_coverage",
+      "name": "code_review_coverage_pct",
+      "computed": 100.013291,
+      "measured": 100.0,
+      "error_pct": 0.013290579327048134,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "sbom_components",
+      "name": "sbom_component_count_median",
+      "computed": 150.019936,
+      "measured": 150.0,
+      "error_pct": 0.01329057932703866,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "patch_sla_days",
+      "name": "patch_latency_critical_days",
+      "computed": 7.00093,
+      "measured": 7.0,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "fuzz_unique_crashes",
+      "name": "fuzz_crash_unique_count",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "secure_software_lab",
+      "property": "aslr_entropy_bits",
+      "name": "ASLR_entropy_bits",
+      "computed": 28.003721,
+      "measured": 28.0,
+      "error_pct": 0.01329057932704103,
+      "source": "secure_software_engineering_reference_observables"
+    },
+    {
+      "lab": "rust_lean_bridge",
+      "property": "boot_d_eff",
+      "computed": 8.0,
+      "measured": 8,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rust_lean_bridge",
+      "property": "constant_count",
+      "computed": 16,
+      "measured": 16,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rust_lean_bridge",
+      "property": "K_matches_atlas",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rust_lean_bridge",
+      "property": "boot_scalar_positive",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rust_lean_bridge",
+      "property": "boot_scalar",
+      "computed": 0.09928895626861721,
+      "measured": 0.09928895626861721,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rust_lean_bridge",
+      "property": "no_std",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rust_lean_bridge",
+      "property": "requires_lean_bridge",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rust_lean_bridge",
+      "property": "boot_observed",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "rust_lean_bridge",
+      "property": "boot_delta_psi",
+      "computed": 0.7,
+      "measured": 0.7,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "seeds_hash_hex",
+      "computed": "0xc627292ec4eb3b90",
+      "measured": "0xc627292ec4eb3b90",
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "panel_S_hex",
+      "computed": "0x3fee69c97260701a",
+      "measured": "0x3fee69c97260701a",
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "hello_file_size",
+      "computed": 264,
+      "measured": 264,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "call_ret_file_size",
+      "computed": 312,
+      "measured": 312,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "spawn_join_file_size",
+      "computed": 440,
+      "measured": 440,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "num_task_slots",
+      "computed": 8,
+      "measured": 8,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "trit_word_width",
+      "computed": 27,
+      "measured": 27,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_portable",
+      "property": "cortical_layers",
+      "computed": 6,
+      "measured": 6,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "hello_file_size",
+      "abi_tier": "v1_0",
+      "computed": 264,
+      "measured": 264,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "hello_instructions",
+      "abi_tier": "v1_0",
+      "computed": 2,
+      "measured": 2,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "call_ret_file_size",
+      "abi_tier": "v1_1",
+      "computed": 312,
+      "measured": 312,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "call_ret_instructions",
+      "abi_tier": "v1_1",
+      "computed": 10,
+      "measured": 10,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "spawn_join_file_size",
+      "abi_tier": "v1_2",
+      "computed": 440,
+      "measured": 440,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "spawn_join_instructions",
+      "abi_tier": "v1_2",
+      "computed": 31,
+      "measured": 31,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "HALT",
+      "computed": 0,
+      "measured": 0,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "IMM",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "MOVT",
+      "computed": 2,
+      "measured": 2,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "LOADT",
+      "computed": 3,
+      "measured": 3,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "STORET",
+      "computed": 4,
+      "measured": 4,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "ADDT",
+      "computed": 5,
+      "measured": 5,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "SUBT",
+      "computed": 6,
+      "measured": 6,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "MULT",
+      "computed": 7,
+      "measured": 7,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "NEGT",
+      "computed": 8,
+      "measured": 8,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "MIN3",
+      "computed": 9,
+      "measured": 9,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "MAX3",
+      "computed": 10,
+      "measured": 10,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "COLLAPSE",
+      "computed": 11,
+      "measured": 11,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "EVAL_PANEL",
+      "computed": 12,
+      "measured": 12,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "CONSENSUS",
+      "computed": 13,
+      "measured": 13,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "PHASE_ROT",
+      "computed": 14,
+      "measured": 14,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    },
+    {
+      "lab": "trinary_os_isa_rebuild",
+      "property": "opcode_present",
+      "name": "BRANCHT",
+      "computed": 15,
+      "measured": 15,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0"
+    }
+  ],
+  "crosswalk_modules": [
+    "FSOT.Formal.RustLeanBridge",
+    "FSOT.Formal.TrinaryOSTierEPriors",
+    "FSOT.Formal.LeanProofsBridge"
+  ]
+}
