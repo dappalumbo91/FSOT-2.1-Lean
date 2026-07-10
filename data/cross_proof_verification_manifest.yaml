@@ -22,9 +22,14 @@ frameworks:
     role: independent_reproof
     path: verification/coq
     entry: ConnectiveSpine.v
+    full_priors_chunks: FullPriorsSpine_*.v
     install: winget install Coq.CoqPlatform
     cost: free
     account_required: false
+  cross_refinement:
+    role: lean_coq_literal_margin_triangulation
+    script: scripts/cross_refinement_lean_coq_audit.py
+    output: data/cross_refinement_lean_coq_report.json
   isabelle:
     role: independent_reproof
     path: verification/isabelle
@@ -41,6 +46,9 @@ disk_budget_gb:
 
 build:
   export: scripts/export_cross_proof_obligations.py
+  export_full: scripts/export_full_priors_obligations.py
+  generate_coq_full: scripts/generate_full_priors_coq_artifacts.py
+  cross_refinement: scripts/cross_refinement_lean_coq_audit.py
   verify: scripts/run_cross_proof_verification.py
   benchmark: scripts/build_cross_proof_benchmark.py
   output: data/cross_proof_verification_benchmark.json
@@ -51,8 +59,9 @@ path_setup_script: scripts/setup_rocq_path.ps1
 github_promote_when:
   - python_oracle_pass
   - lean_literals_match_obligations
-  - coq_compile_pass
-  - coqchk_pass
+  - coq_compile_pass_all_chunks
+  - coqchk_pass_all_chunks
+  - cross_refinement_lean_coq_pass
 
 status_local:
   lean: passed

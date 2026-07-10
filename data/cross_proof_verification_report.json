@@ -1,16 +1,56 @@
 {
-  "generated_at": "2026-07-10T20:58:31.967028+00:00",
-  "tier": 79,
-  "obligation_count": 24,
+  "generated_at": "2026-07-10T21:35:29.359772+00:00",
+  "tier": "80",
+  "connective_spine": {
+    "obligation_count": 24,
+    "python_decimal": {
+      "status": "passed"
+    }
+  },
+  "full_formal_spine": {
+    "obligation_count": 1242,
+    "provable_count": 1237,
+    "margin_violation_count": 5,
+    "margin_violation_ids": [
+      "cosmology_higher_waves_max_error_under_half_pct",
+      "cosmology_wave8_max_error_under_half_pct",
+      "geochemistry_median_error_under_half_pct",
+      "initiation_transformation_archetype_headline_median_under_half_pct",
+      "particle_physics_max_error_under_half_pct"
+    ],
+    "modules_exported": 317,
+    "by_tier": {
+      "priors": 1153,
+      "bounds": 24,
+      "extended": 65
+    },
+    "by_kind": {
+      "lt_half": 458,
+      "nat_pos": 580,
+      "eq_nat": 20,
+      "gt_lit": 24,
+      "lt_lit": 31,
+      "eq_nat_arith": 46,
+      "pos": 45,
+      "nat_gt_lit": 25,
+      "nat_le_lit": 4,
+      "gt_one": 6,
+      "lt": 3
+    },
+    "python_decimal": {
+      "status": "passed"
+    }
+  },
   "frameworks": {
-    "lean": {
+    "lean_connective": {
       "status": "passed"
     },
     "python_decimal": {
       "status": "passed",
-      "records": [
+      "connective_records": [
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_psi_friction_pos",
           "kind": "pos",
           "passed": true,
@@ -18,6 +58,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_psi_node_pos",
           "kind": "pos",
           "passed": true,
@@ -25,6 +66,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_tunneling_bridge_pos",
           "kind": "pos",
           "passed": true,
@@ -32,6 +74,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_psi_stabilization_pos",
           "kind": "pos",
           "passed": true,
@@ -39,6 +82,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_psi_run_pos",
           "kind": "pos",
           "passed": true,
@@ -46,6 +90,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_delta_phi_stable_pos",
           "kind": "pos",
           "passed": true,
@@ -53,6 +98,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_y_exotic_byproduct_pos",
           "kind": "pos",
           "passed": true,
@@ -60,6 +106,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_actuation_core_bundle",
           "kind": "pos",
           "passed": true,
@@ -67,6 +114,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_stabilization_margin_gt_one",
           "kind": "gt_one",
           "passed": true,
@@ -74,6 +122,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_stable_run_band",
           "kind": "gt_one",
           "passed": true,
@@ -81,6 +130,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_actuation_stabilized_bundle",
           "kind": "gt_one",
           "passed": true,
@@ -88,6 +138,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_bridge_lt_node",
           "kind": "lt",
           "passed": true,
@@ -95,6 +146,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "warp_exotic_lt_friction",
           "kind": "lt",
           "passed": true,
@@ -102,6 +154,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_plasma_confinement_pos",
           "kind": "pos",
           "passed": true,
@@ -109,6 +162,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_seawater_acoustic_pos",
           "kind": "pos",
           "passed": true,
@@ -116,6 +170,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_decay_chain_relay_pos",
           "kind": "pos",
           "passed": true,
@@ -123,6 +178,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_dt_energy_pos",
           "kind": "pos",
           "passed": true,
@@ -130,6 +186,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_fusion_grid_bundle",
           "kind": "pos",
           "passed": true,
@@ -137,6 +194,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_energy_bus_pos",
           "kind": "pos",
           "passed": true,
@@ -144,6 +202,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_cryo_rejection_pos",
           "kind": "pos",
           "passed": true,
@@ -151,6 +210,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_em_coil_pos",
           "kind": "pos",
           "passed": true,
@@ -158,6 +218,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_fluid_consistency_pos",
           "kind": "pos",
           "passed": true,
@@ -165,6 +226,7 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_e10d_wd_bundle",
           "kind": "pos",
           "passed": true,
@@ -172,32 +234,206 @@
         },
         {
           "framework": "python_decimal",
+          "spine": "connective",
           "obligation_id": "connective_stab_margin_gt_one",
           "kind": "gt_one",
           "passed": true,
           "statement": "1 < 1.722776467449"
         }
-      ]
+      ],
+      "full_formal_passed": 1237,
+      "full_formal_total": 1237
     },
     "coq": {
       "status": "passed",
       "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqc.exe",
-      "returncode": 0,
-      "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\ConnectiveSpine.vo",
-      "coqchk": {
-        "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
-        "returncode": 0,
-        "status": "passed"
-      },
-      "stderr": ""
+      "chunk_count": 14,
+      "chunks_passed": 14,
+      "chunks": [
+        {
+          "file": "ConnectiveSpine.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\ConnectiveSpine.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_00.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_00.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_01.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_01.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_01.v\", line 18, characters 0-51:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_01.v\", line 90, characters 0-60:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_01.v\", line 225, characters 0-68:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_02.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_02.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_02.v\", line 138, characters 0-55:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_03.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_03.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_03.v\", line 69, characters 0-75:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_03.v\", line 213, characters 0-47:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_03.v\", line 249, characters 0-67:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_03.v\", line 261, characters 0-56:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_04.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_04.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_05.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_05.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_05.v\", line 141, characters 0-60:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_05.v\", line 222, characters 0-69:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_06.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_06.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_06.v\", line 306, characters 0-66:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_06.v\", line 306, characters 0-66:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_07.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_07.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_08.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_08.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_09.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_09.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_09.v\", line 144, characters 0-59:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\nFile \".\\FullFormalSpine_09.v\", line 213, characters 0-64:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_10.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_10.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": "File \".\\FullFormalSpine_10.v\", line 249, characters 0-53:\nWarning: To avoid stack overflow, large numbers in nat are interpreted as\napplications of Init.Nat.of_num_uint. [abstract-large-number,numbers,default]\n"
+        },
+        {
+          "file": "FullFormalSpine_11.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_11.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "FullFormalSpine_12.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\FullFormalSpine_12.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        }
+      ]
+    },
+    "cross_refinement": {
+      "status": "passed",
+      "provable_triangulated_ok": 1237,
+      "provable_total": 1237,
+      "margin_violations_confirmed": 5
     },
     "isabelle": {
       "status": "skipped",
-      "reason": "isabelle not found \u2014 free install: https://isabelle.in.tum.de/ (no login)"
+      "reason": "isabelle not found \u2014 deferred"
     }
   },
   "overall_ok": true,
-  "github_ready": true,
+  "github_ready": false,
+  "github_ready_note": "Blocked until margin violations refined and wide verification stable.",
   "full_triangulation": false,
-  "note": "full_triangulation requires Coq + Isabelle; github_ready requires Coq pass"
+  "note": "Tier 80: wide FSOT/Formal Coq cross-proof. Isabelle deferred."
 }

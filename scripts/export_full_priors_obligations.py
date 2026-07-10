@@ -76,6 +76,8 @@ def main() -> int:
     all_ob: list[dict] = []
     modules_hit = 0
     for path in sorted(FORMAL.glob("*Priors.lean")):
+        if path.stem.startswith("CrossProof"):
+            continue
         ob = parse_module(path)
         if ob:
             modules_hit += 1

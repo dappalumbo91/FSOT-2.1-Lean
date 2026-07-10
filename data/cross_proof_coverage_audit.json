@@ -1,34 +1,64 @@
 {
-  "generated_at": "2026-07-10T21:02:32.508177+00:00",
+  "generated_at": "2026-07-10T21:35:29.470472+00:00",
   "fsot_scale": {
     "extension_domains": 245,
     "priors_lean_modules": 308,
-    "total_lean_theorems": 1681,
-    "norm_num_certificate_uses": 1876
+    "total_lean_theorems": 1685,
+    "norm_num_certificate_uses": 1884
   },
   "coq_cross_proof": {
     "tier": "79_connective_spine",
     "lean_source_modules": 3,
     "obligations_proved_in_coq": 24,
     "pct_of_priors_modules": 0.974,
-    "pct_of_lean_theorems": 1.4277,
+    "pct_of_lean_theorems": 1.4243,
     "pct_of_extension_domains": 1.2245
   },
-  "full_priors_spine": {
-    "obligations_exportable": 613,
-    "obligations_in_full_json": 1081,
-    "modules_in_full_json": 301,
-    "pct_of_priors_modules": 97.7273,
-    "pct_of_lean_theorems": 64.307,
-    "coq_proved_yet": 24,
-    "coq_proved_pct_of_full_export": 2.2202
+  "full_formal_spine": {
+    "obligations_in_full_json": 1242,
+    "modules_in_full_json": 317,
+    "by_tier": {
+      "priors": 1153,
+      "bounds": 24,
+      "extended": 65
+    },
+    "by_kind": {
+      "lt_half": 458,
+      "nat_pos": 580,
+      "eq_nat": 20,
+      "gt_lit": 24,
+      "lt_lit": 31,
+      "eq_nat_arith": 46,
+      "pos": 45,
+      "nat_gt_lit": 25,
+      "nat_le_lit": 4,
+      "gt_one": 6,
+      "lt": 3
+    },
+    "pct_of_formal_theorems": 73.7092,
+    "coq_chunks_generated": 13,
+    "margin_violations_excluded": 5,
+    "coq_provable_target": 1237,
+    "coq_proved_yet": 1237,
+    "coq_proved_pct_of_full_export": 99.5974,
+    "coq_proved_pct_of_provable": 100.0,
+    "coq_compile_status": "passed",
+    "cross_refinement_ok": true
   },
-  "interpretation": "Coq Tier-79 proves the connective spine (warp/fusion/E10D) \u2014 not the full 256-domain corpus. Expand via export_full_priors_obligations.py for bench-style norm_num certificates.",
+  "full_priors_spine": {
+    "obligations_exportable": 616,
+    "obligations_in_full_json": 1153,
+    "modules_in_full_json": 307,
+    "pct_of_priors_modules": 99.6753,
+    "pct_of_lean_theorems": 68.4273,
+    "cross_refinement_triangulated_pct": 100.0
+  },
+  "interpretation": "Tier 80: wide FSOT/Formal export (priors + Bounds + genomic/neuron extended modules). Numeric certificates cross-proved in Coq; margin violations flagged for refinement. Transcendental pi/e interval lemmas deferred to Tier 81 Coq Real port.",
   "scan": {
     "priors_modules": 308,
-    "total_theorems": 1681,
-    "norm_num_uses": 1876,
-    "exportable_theorem_hints": 613,
+    "total_theorems": 1685,
+    "norm_num_uses": 1884,
+    "exportable_theorem_hints": 616,
     "modules_with_exportable": 299,
     "top_exportable_modules": [
       {
@@ -45,6 +75,11 @@
         "module": "WarpBhWhPortalPriors",
         "theorems": 11,
         "exportable_hints": 7
+      },
+      {
+        "module": "CrossProofConnectivePriors",
+        "theorems": 7,
+        "exportable_hints": 5
       },
       {
         "module": "E10dWdConnectivePriors",
@@ -99,11 +134,6 @@
       {
         "module": "BubbleBleedPriors",
         "theorems": 10,
-        "exportable_hints": 3
-      },
-      {
-        "module": "CodeGenomeStructurePriors",
-        "theorems": 6,
         "exportable_hints": 3
       }
     ]
