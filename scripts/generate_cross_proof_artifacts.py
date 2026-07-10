@@ -28,10 +28,14 @@ def _isa_lit(v: float) -> str:
     if v == 0.0:
         return "0"
     av = abs(v)
-    if av >= 1e15 or (av < 1e-6 and av > 0):
+    # Isabelle parses bare "6.5e-05" as multiplication by variable e — use decimal expansion.
+    if av < 1e-3 or "e" in f"{v:.12g}".lower():
+        digits = max(6, int(-math.floor(math.log10(av))) + 6) if av > 0 else 6
+        return f"{v:.{digits}f}".rstrip("0").rstrip(".") or "0"
+    if av >= 1e15:
         exp = int(math.floor(math.log10(av)))
         mant = v / (10**exp)
-        return f"({mant} * 10^{exp})"
+        return f"({mant} * 10 ^ ({exp} :: real))"
     return str(v)
 
 

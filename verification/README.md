@@ -34,7 +34,7 @@ Isabelle (no sign-in, ~600 MB):
 powershell -ExecutionPolicy Bypass -File scripts/install_isabelle_windows.ps1
 ```
 
-If auto-download fails, use your browser: https://isabelle.in.tum.de/ → save `Isabelle2024-1_windows.exe` to Downloads → re-run the script.
+If auto-download fails, use your browser: https://isabelle.in.tum.de/ → save `Isabelle2025-2.exe` to Downloads → re-run the script.
 
 Delete any corrupt tiny file in Downloads (281 bytes) before retrying.
 

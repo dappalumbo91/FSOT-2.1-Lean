@@ -45,7 +45,7 @@ lemma connective_decay_chain_relay_pos: "0 < (0.029710640768 :: real)"
 lemma connective_dt_energy_pos: "0 < (17.6 :: real)"
   by eval
 
-lemma connective_energy_bus_pos: "0 < (6.5226644e-05 :: real)"
+lemma connective_energy_bus_pos: "0 < (0.00006522664 :: real)"
   by eval
 
 lemma connective_cryo_rejection_pos: "0 < (0.040494897615 :: real)"

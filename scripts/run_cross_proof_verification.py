@@ -51,17 +51,47 @@ def _find_exe(names: tuple[str, ...]) -> str | None:
     return None
 
 
-def _find_isabelle() -> str | None:
+def _isabelle_roots() -> list[Path]:
+    home = Path(os.environ.get("USERPROFILE", ""))
+    roots: list[Path] = [
+        Path(r"C:\Isabelle"),
+        Path(r"C:\Program Files\Isabelle"),
+        home / "Isabelle",
+        home / "Desktop" / "Isabelle2025-2",
+        home / "Desktop" / "Isabelle2024-1",
+    ]
+    for pattern in ("Isabelle*", "Isabelle202*"):
+        for base in (home / "Desktop", Path(r"C:\Program Files")):
+            if base.exists():
+                roots.extend(sorted(base.glob(pattern), reverse=True))
+    seen: set[str] = set()
+    out: list[Path] = []
+    for root in roots:
+        key = str(root)
+        if key in seen or not root.exists():
+            continue
+        seen.add(key)
+        out.append(root)
+    return out
+
+
+def _resolve_isabelle() -> dict[str, str] | None:
+    """Return launch metadata for POSIX isabelle or Windows Cygwin wrapper."""
     p = shutil.which("isabelle")
     if p:
-        return p
-    for base in (
-        Path(r"C:\Program Files\Isabelle"),
-        Path(os.environ.get("USERPROFILE", "")) / "Isabelle",
-    ):
-        if base.exists():
-            for exe in base.rglob("isabelle.exe"):
-                return str(exe)
+        return {"mode": "posix", "tool": p}
+    for root in _isabelle_roots():
+        bash = root / "contrib" / "cygwin" / "bin" / "bash.exe"
+        isabelle_sh = root / "bin" / "isabelle"
+        if bash.exists() and isabelle_sh.exists():
+            return {
+                "mode": "cygwin",
+                "tool": str(isabelle_sh),
+                "bash": str(bash),
+                "home": str(root),
+            }
+        for exe in root.rglob("isabelle.exe"):
+            return {"mode": "posix", "tool": str(exe)}
     return None
 
 
@@ -148,24 +178,49 @@ def run_coq_full() -> dict:
 
 
 def run_isabelle() -> dict:
-    isabelle = _find_isabelle()
-    thy = ROOT / "verification" / "isabelle" / "ConnectiveSpine.thy"
-    if not isabelle:
-        return {"status": "skipped", "reason": "isabelle not found — deferred"}
+    isa = _resolve_isabelle()
+    thy_dir = ROOT / "verification" / "isabelle"
+    thy = thy_dir / "ConnectiveSpine.thy"
+    root_file = thy_dir / "ROOT"
+    if not isa:
+        return {"status": "skipped", "reason": "isabelle not found — run scripts/install_isabelle_windows.ps1"}
     if not thy.exists():
         return {"status": "failed", "reason": f"missing {thy}"}
+    if not root_file.exists():
+        return {"status": "failed", "reason": f"missing {root_file}"}
     try:
-        r = subprocess.run(
-            [isabelle, "build", "-D", str(thy.parent), "ConnectiveSpine"],
-            capture_output=True,
-            text=True,
-            timeout=300,
-        )
+        if isa["mode"] == "cygwin":
+            def _cygpath(win_path: Path) -> str:
+                resolved = win_path.resolve()
+                drive = resolved.drive.rstrip(":").lower()
+                tail = resolved.as_posix().split(":", 1)[-1]
+                return f"/cygdrive/{drive}{tail}"
+
+            home_cyg = _cygpath(Path(isa["home"]))
+            thy_cyg = _cygpath(thy_dir)
+            cmd = f"cd '{home_cyg}' && bin/isabelle build -D '{thy_cyg}' ConnectiveSpine"
+            r = subprocess.run(
+                [isa["bash"], "--login", "-c", cmd],
+                capture_output=True,
+                text=True,
+                timeout=300,
+            )
+            tool = isa["tool"]
+        else:
+            r = subprocess.run(
+                [isa["tool"], "build", "-D", str(thy_dir), "ConnectiveSpine"],
+                capture_output=True,
+                text=True,
+                timeout=300,
+            )
+            tool = isa["tool"]
         return {
             "status": "passed" if r.returncode == 0 else "failed",
-            "tool": isabelle,
+            "tool": tool,
             "returncode": r.returncode,
-            "stderr": (r.stderr or "")[-2000:],
+            "session": "ConnectiveSpine",
+            "obligation_scope": "connective_spine",
+            "stderr": (r.stderr or r.stdout or "")[-2000:],
         }
     except Exception as e:
         return {"status": "failed", "reason": str(e)}
@@ -272,7 +327,9 @@ def main() -> int:
             and coq.get("status") == "passed"
             and refinement_ok
             and isa.get("status") == "passed",
-        "note": "Tier 80: wide FSOT/Formal Coq cross-proof. Isabelle deferred.",
+        "note": (
+            "Tier 80: wide FSOT/Formal Coq cross-proof; Isabelle connective spine when installed."
+        ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
 

@@ -4,9 +4,9 @@
 $ErrorActionPreference = "Stop"
 $InstallRoot = "C:\Isabelle"
 $Downloads = Join-Path $env:USERPROFILE "Downloads"
-$InstallerName = "Isabelle2024-1_windows.exe"
+$InstallerName = "Isabelle2025-2.exe"
 
-$existing = Get-ChildItem -Path $InstallRoot, "$env:USERPROFILE\Isabelle*" -ErrorAction SilentlyContinue |
+$existing = Get-ChildItem -Path $InstallRoot, "$env:USERPROFILE\Isabelle*", "$env:USERPROFILE\Desktop\Isabelle*" -ErrorAction SilentlyContinue |
     Where-Object { $_.PSIsContainer } | Select-Object -First 1
 if ($existing) {
     $bin = Get-ChildItem -Path $existing.FullName -Recurse -Filter "isabelle.exe" -ErrorAction SilentlyContinue | Select-Object -First 1
@@ -24,7 +24,7 @@ if ($existing) {
 
 $urls = @(
     "https://isabelle.in.tum.de/dist/$InstallerName",
-    "https://isabelle.sketis.net/dist/$InstallerName"
+    "https://mirror.clarkson.edu/isabelle/dist/$InstallerName"
 )
 
 $dest = Join-Path $Downloads $InstallerName
@@ -64,9 +64,22 @@ if ($proc.ExitCode -ne 0) {
     throw "Isabelle installer exit code $($proc.ExitCode)"
 }
 
-$bin = Get-ChildItem -Path $InstallRoot -Recurse -Filter "isabelle.exe" -ErrorAction SilentlyContinue | Select-Object -First 1
+$searchRoots = @($InstallRoot, "$env:USERPROFILE\Desktop")
+$bin = $null
+foreach ($root in $searchRoots) {
+    if (-not (Test-Path $root)) { continue }
+    $bin = Get-ChildItem -Path $root -Recurse -Filter "isabelle.exe" -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($bin) { break }
+    $sh = Get-ChildItem -Path $root -Recurse -Filter "isabelle" -ErrorAction SilentlyContinue |
+        Where-Object { $_.FullName -like "*\bin\isabelle" } | Select-Object -First 1
+    if ($sh) {
+        Write-Host "Installed (Cygwin wrapper): $($sh.FullName)"
+        Write-Host "Isabelle home: $($sh.Directory.Parent.FullName)"
+        exit 0
+    }
+}
 if (-not $bin) {
-    throw "isabelle.exe not found under $InstallRoot"
+    throw "isabelle not found under $InstallRoot or Desktop"
 }
 
 $binDir = $bin.Directory.FullName
