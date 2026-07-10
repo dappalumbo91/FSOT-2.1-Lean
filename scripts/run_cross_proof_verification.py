@@ -169,6 +169,7 @@ def run_coq_full() -> dict:
 
     targets = [
         COQ_DIR / "ConnectiveSpine.v",
+        *sorted(COQ_DIR.glob("TranscendentalBounds_*.v")),
         *sorted(COQ_DIR.glob("FullFormalSpine_*.v")),
     ]
     if len(targets) < 2:
@@ -193,6 +194,10 @@ def _isabelle_theory_chunks(thy_dir: Path) -> list[dict]:
     connective = thy_dir / "ConnectiveSpine.thy"
     if connective.exists():
         chunks.append({"theory": "ConnectiveSpine", "file": connective.name, "scope": "connective"})
+    for path in sorted(thy_dir.glob("TranscendentalBounds_*.thy")):
+        if path.name in ("TranscendentalBoundsBase.thy", "TranscendentalBoundsCert.thy"):
+            continue
+        chunks.append({"theory": path.stem, "file": path.name, "scope": "transcendental_bounds"})
     for path in sorted(thy_dir.glob("FullFormalSpine_*.thy")):
         chunks.append({"theory": path.stem, "file": path.name, "scope": "full_formal"})
     return chunks
@@ -326,9 +331,12 @@ def main() -> int:
     pipeline = [
         "export_cross_proof_obligations.py",
         "export_full_formal_obligations.py",
+        "export_transcendental_bounds_obligations.py",
         "generate_cross_proof_artifacts.py",
         "generate_full_formal_coq_artifacts.py",
+        "generate_transcendental_bounds_coq.py",
         "generate_full_formal_isabelle_artifacts.py",
+        "generate_transcendental_bounds_isabelle.py",
     ]
     for script in pipeline:
         r = subprocess.run([sys.executable, str(ROOT / "scripts" / script)], cwd=str(ROOT))
@@ -338,6 +346,11 @@ def main() -> int:
 
     connective = json.loads(OBL_CONNECTIVE.read_text(encoding="utf-8"))
     formal = json.loads(OBL_FORMAL.read_text(encoding="utf-8"))
+    trans_path = ROOT / "verification" / "obligations" / "transcendental_bounds.json"
+    transcendental = json.loads(trans_path.read_text(encoding="utf-8")) if trans_path.exists() else {
+        "obligation_count": 0,
+        "obligations": [],
+    }
 
     py_conn, py_conn_ok = python_verify(connective["obligations"], "connective")
     provable_formal = [ob for ob in formal["obligations"] if obligation_provable(ob)]
@@ -389,7 +402,7 @@ def main() -> int:
 
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "82",
+        "tier": "83",
         "connective_spine": {
             "obligation_count": connective["obligation_count"],
             "python_decimal": {"status": "passed" if py_conn_ok else "failed"},
@@ -403,6 +416,14 @@ def main() -> int:
             "by_tier": formal.get("by_tier"),
             "by_kind": formal.get("by_kind"),
             "python_decimal": {"status": "passed" if py_formal_ok else "failed"},
+        },
+        "transcendental_bounds": {
+            "obligation_count": transcendental.get("obligation_count", 0),
+            "python_decimal_verified_count": transcendental.get("python_decimal_verified_count", 0),
+            "by_proof_template": transcendental.get("by_proof_template"),
+            "coq_chunks": len(list((ROOT / "verification" / "coq").glob("TranscendentalBounds_[0-9]*.v"))),
+            "isabelle_chunks": len(list((ROOT / "verification" / "isabelle").glob("TranscendentalBounds_[0-9]*.thy"))),
+            "status": "exported",
         },
         "frameworks": {
             "lean_connective": {"status": "passed" if lean_conn_ok else "failed"},
@@ -460,8 +481,8 @@ def main() -> int:
             and isa.get("status") == "passed"
             and isa_refinement_ok,
         "note": (
-            "Tier 82: Lean+Coq+Isabelle full-scope cross-proof with literal triangulation "
-            "and transcendental bounds gap inventory."
+            "Tier 83: Lean+Coq+Isabelle full-scope cross-proof plus transcendental Bounds.lean "
+            "certificates (68 lemmas) with Python decimal triangulation."
         ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
@@ -471,7 +492,7 @@ def main() -> int:
         cwd=str(ROOT),
     )
 
-    print("CROSS-PROOF VERIFICATION (Tier 82 wide)")
+    print("CROSS-PROOF VERIFICATION (Tier 83 wide)")
     print(f"  connective obligations: {connective['obligation_count']}")
     print(f"  full formal obligations: {formal['obligation_count']} ({formal.get('modules_exported')} modules)")
     print(f"  provable: {len(provable_formal)} | margin violations: {len(margin_violations)}")

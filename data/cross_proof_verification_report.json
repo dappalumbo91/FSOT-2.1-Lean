@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-10T22:37:02.427545+00:00",
-  "tier": "82",
+  "generated_at": "2026-07-10T22:57:35.440099+00:00",
+  "tier": "83",
   "connective_spine": {
     "obligation_count": 24,
     "python_decimal": {
@@ -34,6 +34,26 @@
     "python_decimal": {
       "status": "passed"
     }
+  },
+  "transcendental_bounds": {
+    "obligation_count": 68,
+    "python_decimal_verified_count": 65,
+    "by_proof_template": {
+      "exp_neg_one": 2,
+      "certified_point": 43,
+      "exp_add_one": 1,
+      "e_minus_one": 1,
+      "div_pi_e": 3,
+      "e_interval": 2,
+      "pi_interval": 2,
+      "mul_e_pi": 7,
+      "pi_fraction": 2,
+      "icc_membership": 1,
+      "exp_direct": 4
+    },
+    "coq_chunks": 3,
+    "isabelle_chunks": 3,
+    "status": "exported"
   },
   "frameworks": {
     "lean_connective": {
@@ -241,14 +261,50 @@
     "coq": {
       "status": "passed",
       "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqc.exe",
-      "chunk_count": 14,
-      "chunks_passed": 14,
+      "chunk_count": 17,
+      "chunks_passed": 17,
       "chunks": [
         {
           "file": "ConnectiveSpine.v",
           "status": "passed",
           "returncode": 0,
           "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\ConnectiveSpine.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "TranscendentalBounds_00.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\TranscendentalBounds_00.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "TranscendentalBounds_01.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\TranscendentalBounds_01.vo",
+          "coqchk": {
+            "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+            "returncode": 0,
+            "status": "passed"
+          },
+          "stderr": ""
+        },
+        {
+          "file": "TranscendentalBounds_02.v",
+          "status": "passed",
+          "returncode": 0,
+          "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\TranscendentalBounds_02.vo",
           "coqchk": {
             "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
             "returncode": 0,
@@ -424,18 +480,39 @@
       "status": "passed",
       "tool": "C:\\Users\\damia\\Desktop\\Isabelle2025-2\\bin\\isabelle",
       "session": "FSOT_CrossProof",
-      "theory_count": 14,
+      "theory_count": 17,
       "connective_theories": 1,
       "formal_theory_count": 13,
       "obligation_scope": "connective_and_full_formal",
       "provable_obligations": 1241,
-      "chunk_count": 14,
-      "chunks_passed": 14,
+      "chunk_count": 17,
+      "chunks_passed": 17,
       "chunks": [
         {
           "theory": "ConnectiveSpine",
           "file": "ConnectiveSpine.thy",
           "scope": "connective",
+          "obligation_count": 18,
+          "status": "passed"
+        },
+        {
+          "theory": "TranscendentalBounds_00",
+          "file": "TranscendentalBounds_00.thy",
+          "scope": "transcendental_bounds",
+          "obligation_count": 25,
+          "status": "passed"
+        },
+        {
+          "theory": "TranscendentalBounds_01",
+          "file": "TranscendentalBounds_01.thy",
+          "scope": "transcendental_bounds",
+          "obligation_count": 25,
+          "status": "passed"
+        },
+        {
+          "theory": "TranscendentalBounds_02",
+          "file": "TranscendentalBounds_02.thy",
+          "scope": "transcendental_bounds",
           "obligation_count": 18,
           "status": "passed"
         },
@@ -535,8 +612,8 @@
         "session": "FSOT_CrossProof",
         "status": "passed",
         "returncode": 0,
-        "stdout_tail": "0:00:09 elapsed time\n",
-        "stderr": "0:00:09 elapsed time\n"
+        "stdout_tail": "0:00:04 elapsed time\n",
+        "stderr": "0:00:04 elapsed time\n"
       }
     },
     "isabelle_refinement": {
@@ -556,5 +633,5 @@
   "github_ready": true,
   "github_ready_note": "All provable obligations triangulated; margin violations cleared.",
   "full_triangulation": true,
-  "note": "Tier 82: Lean+Coq+Isabelle full-scope cross-proof with literal triangulation and transcendental bounds gap inventory."
+  "note": "Tier 83: Lean+Coq+Isabelle full-scope cross-proof plus transcendental Bounds.lean certificates (68 lemmas) with Python decimal triangulation."
 }

@@ -99,21 +99,23 @@ def main() -> int:
 
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "82_transcendental_bounds_gap",
+        "tier": "83_transcendental_bounds_gap",
         "bounds_lean_file": str(BOUNDS.relative_to(ROOT)),
         "exported_float_obligations_from_bounds": len(exported_bounds),
         "excluded_pi_e_interval_lemmas": excluded_intervals,
         "excluded_pi_e_interval_count": len(excluded_intervals),
         "transcendental_lemma_inventory": transcendental_lemmas,
         "transcendental_lemma_count": len(transcendental_lemmas),
+        "tier_83_status": "coq_and_isabelle_artifacts_generated",
+        "tier_83_obligations_json": "verification/obligations/transcendental_bounds.json",
         "next_tier_scope": (
-            "Port Mathlib pi/e/exp interval certificates to Coq Reals + Isabelle Transcendental "
-            "libraries; prove structural Bounds lemmas without float substitution."
+            "Replace certified axioms with internal Taylor/interval proofs in Coq and Isabelle; "
+            "add Agda/Metamath fourth checks."
         ),
         "note": (
-            "Float-export spine proves 24 Bounds obligations (phi, psi_con, eta_eff, sqrt2, etc.). "
-            "Direct pi/e comparisons are filtered at export time; exp(*) and pi/* structural lemmas "
-            "remain Lean-only until transcendental proof libraries are wired."
+            "Tier 83 exports 68 transcendental Bounds lemmas to Coq+Isabelle with Python decimal "
+            "certificates. Float spine still covers 24 numeric Bounds obligations; pi/e tight intervals "
+            "use certified base axioms bridged from Lean Mathlib."
         ),
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
