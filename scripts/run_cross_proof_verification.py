@@ -7,7 +7,7 @@ Layers:
   2. Python decimal structural proofs
   3. Coq/Rocq compile all chunks + coqchk
   4. Lean ↔ Coq cross-refinement audit
-  5. Isabelle (optional, deferred)
+  5. Isabelle full-scope cross-proof (connective + FullFormalSpine chunks)
 """
 
 from __future__ import annotations
@@ -177,17 +177,20 @@ def run_coq_full() -> dict:
     }
 
 
-def run_isabelle() -> dict:
-    isa = _resolve_isabelle()
-    thy_dir = ROOT / "verification" / "isabelle"
-    thy = thy_dir / "ConnectiveSpine.thy"
-    root_file = thy_dir / "ROOT"
-    if not isa:
-        return {"status": "skipped", "reason": "isabelle not found — run scripts/install_isabelle_windows.ps1"}
-    if not thy.exists():
-        return {"status": "failed", "reason": f"missing {thy}"}
-    if not root_file.exists():
-        return {"status": "failed", "reason": f"missing {root_file}"}
+ISABELLE_SESSION = "FSOT_CrossProof"
+
+
+def _isabelle_theory_chunks(thy_dir: Path) -> list[dict]:
+    chunks: list[dict] = []
+    connective = thy_dir / "ConnectiveSpine.thy"
+    if connective.exists():
+        chunks.append({"theory": "ConnectiveSpine", "file": connective.name, "scope": "connective"})
+    for path in sorted(thy_dir.glob("FullFormalSpine_*.thy")):
+        chunks.append({"theory": path.stem, "file": path.name, "scope": "full_formal"})
+    return chunks
+
+
+def _run_isabelle_session(isa: dict, thy_dir: Path, session: str, timeout: int = 1800) -> dict:
     try:
         if isa["mode"] == "cygwin":
             def _cygpath(win_path: Path) -> str:
@@ -198,32 +201,62 @@ def run_isabelle() -> dict:
 
             home_cyg = _cygpath(Path(isa["home"]))
             thy_cyg = _cygpath(thy_dir)
-            cmd = f"cd '{home_cyg}' && bin/isabelle build -D '{thy_cyg}' ConnectiveSpine"
+            cmd = f"cd '{home_cyg}' && bin/isabelle build -D '{thy_cyg}' {session}"
             r = subprocess.run(
                 [isa["bash"], "--login", "-c", cmd],
                 capture_output=True,
                 text=True,
-                timeout=300,
+                timeout=timeout,
             )
-            tool = isa["tool"]
         else:
             r = subprocess.run(
-                [isa["tool"], "build", "-D", str(thy_dir), "ConnectiveSpine"],
+                [isa["tool"], "build", "-D", str(thy_dir), session],
                 capture_output=True,
                 text=True,
-                timeout=300,
+                timeout=timeout,
             )
-            tool = isa["tool"]
+        out = (r.stdout or "") + (r.stderr or "")
         return {
+            "session": session,
             "status": "passed" if r.returncode == 0 else "failed",
-            "tool": tool,
             "returncode": r.returncode,
-            "session": "ConnectiveSpine",
-            "obligation_scope": "connective_spine",
-            "stderr": (r.stderr or r.stdout or "")[-2000:],
+            "stderr": out[-2000:],
         }
     except Exception as e:
-        return {"status": "failed", "reason": str(e)}
+        return {"session": session, "status": "failed", "reason": str(e)}
+
+
+def run_isabelle() -> dict:
+    isa = _resolve_isabelle()
+    thy_dir = ROOT / "verification" / "isabelle"
+    root_file = thy_dir / "ROOT"
+    if not isa:
+        return {"status": "skipped", "reason": "isabelle not found — run scripts/install_isabelle_windows.ps1"}
+    if not root_file.exists():
+        return {"status": "failed", "reason": f"missing {root_file}"}
+    theories = _isabelle_theory_chunks(thy_dir)
+    if not theories:
+        return {"status": "failed", "reason": "no Isabelle theories found"}
+    build = _run_isabelle_session(isa, thy_dir, ISABELLE_SESSION, timeout=3600)
+    formal = [t for t in theories if t["scope"] == "full_formal"]
+    return {
+        "status": build.get("status", "failed"),
+        "tool": isa["tool"],
+        "session": ISABELLE_SESSION,
+        "theory_count": len(theories),
+        "connective_theories": 1 if any(t["scope"] == "connective" for t in theories) else 0,
+        "formal_theory_count": len(formal),
+        "obligation_scope": "connective_and_full_formal",
+        "provable_obligations": len(provable_formal_obligations()),
+        "build": build,
+    }
+
+
+def provable_formal_obligations() -> list[dict]:
+    if not OBL_FORMAL.exists():
+        return []
+    formal = json.loads(OBL_FORMAL.read_text(encoding="utf-8"))
+    return [ob for ob in formal["obligations"] if obligation_provable(ob)]
 
 
 def main() -> int:
@@ -232,6 +265,7 @@ def main() -> int:
         "export_full_formal_obligations.py",
         "generate_cross_proof_artifacts.py",
         "generate_full_formal_coq_artifacts.py",
+        "generate_full_formal_isabelle_artifacts.py",
     ]
     for script in pipeline:
         r = subprocess.run([sys.executable, str(ROOT / "scripts" / script)], cwd=str(ROOT))
@@ -275,7 +309,7 @@ def main() -> int:
 
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "80",
+        "tier": "81",
         "connective_spine": {
             "obligation_count": connective["obligation_count"],
             "python_decimal": {"status": "passed" if py_conn_ok else "failed"},
@@ -328,7 +362,7 @@ def main() -> int:
             and refinement_ok
             and isa.get("status") == "passed",
         "note": (
-            "Tier 80: wide FSOT/Formal Coq cross-proof; Isabelle connective spine when installed."
+            "Tier 81: wide FSOT/Formal Lean+Coq+Isabelle cross-proof when Isabelle installed."
         ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
@@ -338,7 +372,7 @@ def main() -> int:
         cwd=str(ROOT),
     )
 
-    print("CROSS-PROOF VERIFICATION (Tier 80 wide)")
+    print("CROSS-PROOF VERIFICATION (Tier 81 wide)")
     print(f"  connective obligations: {connective['obligation_count']}")
     print(f"  full formal obligations: {formal['obligation_count']} ({formal.get('modules_exported')} modules)")
     print(f"  provable: {len(provable_formal)} | margin violations: {len(margin_violations)}")
@@ -347,6 +381,10 @@ def main() -> int:
     print(f"  lean connective: {'PASS' if lean_conn_ok else 'FAIL'}")
     print(f"  coq: {coq.get('status')} ({coq.get('chunks_passed', 0)}/{coq.get('chunk_count', 0)} chunks)")
     print(f"  cross_refinement: {'PASS' if refinement_ok else 'FAIL'}")
+    print(
+        f"  isabelle: {isa.get('status')} "
+        f"(session {isa.get('session', 'n/a')}, {isa.get('theory_count', 0)} theories)"
+    )
     print(f"  overall_ok: {report['overall_ok']}")
     print(f"  github_ready: {report['github_ready']}")
     print(f"Wrote {REPORT}")

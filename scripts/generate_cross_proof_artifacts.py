@@ -5,9 +5,14 @@ from __future__ import annotations
 
 import json
 import math
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from cross_proof_lib import gen_isabelle_connective  # noqa: E402
+
 OBL = ROOT / "verification" / "obligations" / "connective_spine.json"
 COQ_OUT = ROOT / "verification" / "coq" / "ConnectiveSpine.v"
 ISA_OUT = ROOT / "verification" / "isabelle" / "ConnectiveSpine.thy"
@@ -75,37 +80,13 @@ def gen_coq(obligations: list[dict]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def gen_isabelle(obligations: list[dict]) -> str:
-    lines = [
-        "(* FSOT Tier 79 — connective spine cross-proof (generated). *)",
-        "theory ConnectiveSpine",
-        "imports Complex_Main",
-        "begin",
-        "",
-    ]
-    for ob in obligations:
-        oid = ob["id"]
-        if ob["kind"] == "pos":
-            lit = _isa_lit(float(ob["value"]))
-            lines += [f"lemma {oid}: \"0 < ({lit} :: real)\"", "  by eval", ""]
-        elif ob["kind"] == "gt_one":
-            lit = _isa_lit(float(ob["value"]))
-            lines += [f"lemma {oid}: \"1 < ({lit} :: real)\"", "  by eval", ""]
-        elif ob["kind"] == "lt":
-            l = _isa_lit(float(ob["left_value"]))
-            r = _isa_lit(float(ob["right_value"]))
-            lines += [f"lemma {oid}: \"({l} :: real) < ({r} :: real)\"", "  by eval", ""]
-    lines += ["end", ""]
-    return "\n".join(lines)
-
-
 def main() -> int:
     doc = json.loads(OBL.read_text(encoding="utf-8"))
     obligations = _unique_obligations(doc["obligations"])
     COQ_OUT.parent.mkdir(parents=True, exist_ok=True)
     ISA_OUT.parent.mkdir(parents=True, exist_ok=True)
     COQ_OUT.write_text(gen_coq(obligations), encoding="utf-8")
-    ISA_OUT.write_text(gen_isabelle(obligations), encoding="utf-8")
+    ISA_OUT.write_text(gen_isabelle_connective(doc["obligations"]), encoding="utf-8")
     print(f"Wrote {COQ_OUT}")
     print(f"Wrote {ISA_OUT} ({len(obligations)} unique obligations)")
     return 0

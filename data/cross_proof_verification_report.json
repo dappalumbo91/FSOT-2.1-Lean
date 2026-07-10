@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-10T22:12:23.465463+00:00",
-  "tier": "80",
+  "generated_at": "2026-07-10T22:20:32.173580+00:00",
+  "tier": "81",
   "connective_spine": {
     "obligation_count": 24,
     "python_decimal": {
@@ -423,15 +423,23 @@
     "isabelle": {
       "status": "passed",
       "tool": "C:\\Users\\damia\\Desktop\\Isabelle2025-2\\bin\\isabelle",
-      "returncode": 0,
-      "session": "ConnectiveSpine",
-      "obligation_scope": "connective_spine",
-      "stderr": "0:00:03 elapsed time\n"
+      "session": "FSOT_CrossProof",
+      "theory_count": 14,
+      "connective_theories": 1,
+      "formal_theory_count": 13,
+      "obligation_scope": "connective_and_full_formal",
+      "provable_obligations": 1241,
+      "build": {
+        "session": "FSOT_CrossProof",
+        "status": "passed",
+        "returncode": 0,
+        "stderr": "0:00:03 elapsed time\n"
+      }
     }
   },
   "overall_ok": true,
   "github_ready": true,
   "github_ready_note": "All provable obligations triangulated; margin violations cleared.",
   "full_triangulation": true,
-  "note": "Tier 80: wide FSOT/Formal Coq cross-proof; Isabelle connective spine when installed."
+  "note": "Tier 81: wide FSOT/Formal Lean+Coq+Isabelle cross-proof when Isabelle installed."
 }

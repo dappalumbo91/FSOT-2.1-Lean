@@ -538,3 +538,123 @@ def gen_coq_chunk(
         oid, stmt, tac = gen_coq_lemma(ob)
         lines += [f"Lemma {oid} : {stmt}.", f"Proof. {tac}. Qed.", ""]
     return "\n".join(lines) + "\n"
+
+
+def isa_lit_real(v: float) -> str:
+    if v == 0.0:
+        return "0"
+    av = abs(v)
+    if av < 1e-3 or "e" in f"{v:.12g}".lower():
+        digits = max(6, int(-math.floor(math.log10(av))) + 6) if av > 0 else 6
+        return f"{v:.{digits}f}".rstrip("0").rstrip(".") or "0"
+    if av >= 1e15:
+        exp = int(math.floor(math.log10(av)))
+        mant = v / (10**exp)
+        return f"({mant} * 10 ^ ({exp} :: real))"
+    plain = _decimal_plain(v)
+    return plain if "." in plain else f"{plain}.0"
+
+
+def isa_lit_nat(v: int) -> str:
+    return str(int(v))
+
+
+def gen_isabelle_lemma(ob: dict) -> tuple[str, str]:
+    oid = ob.get("coq_id", ob["id"])
+    kind = ob["kind"]
+    if kind == "pos":
+        lit = isa_lit_real(float(ob["value"]))
+        return oid, f"0 < ({lit} :: real)"
+    if kind == "gt_one":
+        lit = isa_lit_real(float(ob["value"]))
+        return oid, f"1 < ({lit} :: real)"
+    if kind == "lt":
+        l = isa_lit_real(float(ob["left_value"]))
+        r = isa_lit_real(float(ob["right_value"]))
+        return oid, f"({l} :: real) < ({r} :: real)"
+    if kind == "lt_half":
+        lit = isa_lit_real(float(ob["value"]))
+        return oid, f"({lit} :: real) < (0.5 :: real)"
+    if kind == "lt_lit":
+        lit = isa_lit_real(float(ob["value"]))
+        b = isa_lit_real(float(ob["bound"]))
+        return oid, f"({lit} :: real) < ({b} :: real)"
+    if kind == "gt_lit":
+        b = isa_lit_real(float(ob["bound"]))
+        lit = isa_lit_real(float(ob["value"]))
+        return oid, f"({b} :: real) < ({lit} :: real)"
+    if kind == "nat_pos":
+        lit = isa_lit_nat(int(ob["value"]))
+        return oid, f"0 < ({lit} :: nat)"
+    if kind == "nat_gt_lit":
+        lit = isa_lit_nat(int(ob["value"]))
+        b = isa_lit_nat(int(ob["bound"]))
+        return oid, f"({b} :: nat) < ({lit} :: nat)"
+    if kind == "nat_le_lit":
+        lit = isa_lit_nat(int(ob["value"]))
+        b = isa_lit_nat(int(ob["bound"]))
+        return oid, f"({lit} :: nat) <= ({b} :: nat)"
+    if kind in ("eq_nat", "eq_nat_arith"):
+        l = isa_lit_nat(int(ob["value"]))
+        r = isa_lit_nat(int(ob["right_value"]))
+        return oid, f"({l} :: nat) = ({r} :: nat)"
+    raise ValueError(f"unsupported obligation kind: {kind}")
+
+
+def gen_isabelle_chunk(
+    obligations: list[dict],
+    chunk_idx: int,
+    chunk_total: int,
+    *,
+    theory_name: str | None = None,
+    spine_name: str = "FullFormalSpine",
+) -> str:
+    theory = theory_name or f"{spine_name}_{chunk_idx:02d}"
+    lines = [
+        f"(* FSOT Tier 81 — {spine_name} chunk {chunk_idx + 1}/{chunk_total} (generated). *)",
+        f"theory {theory}",
+        "imports Complex_Main",
+        "begin",
+        "",
+    ]
+    for ob in obligations:
+        oid, stmt = gen_isabelle_lemma(ob)
+        lines += [f"lemma {oid}: \"{stmt}\"", "  by eval", ""]
+    lines += ["end", ""]
+    return "\n".join(lines)
+
+
+def gen_isabelle_connective(obligations: list[dict]) -> str:
+    seen: set[str] = set()
+    unique: list[dict] = []
+    for ob in obligations:
+        key = f"{ob['kind']}:{ob.get('statement')}"
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(ob)
+    lines = [
+        "(* FSOT Tier 79 — connective spine cross-proof (generated). *)",
+        "theory ConnectiveSpine",
+        "imports Complex_Main",
+        "begin",
+        "",
+    ]
+    for ob in unique:
+        oid, stmt = gen_isabelle_lemma(ob)
+        lines += [f"lemma {oid}: \"{stmt}\"", "  by eval", ""]
+    lines += ["end", ""]
+    return "\n".join(lines)
+
+
+def gen_isabelle_root(theory_names: list[str], *, session_name: str = "FSOT_CrossProof") -> str:
+    lines = [
+        "(* FSOT cross-proof Isabelle session (generated). *)",
+        "",
+        f"session {session_name} = HOL +",
+        f'  description "FSOT Tier 81 full-scope cross-proof ({len(theory_names)} theories)"',
+        "  theories",
+    ]
+    lines.extend(f"    {name}" for name in theory_names)
+    lines.append("")
+    return "\n".join(lines) + "\n"

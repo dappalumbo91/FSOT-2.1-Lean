@@ -1,3 +1,20 @@
-session ConnectiveSpine = HOL +
-  description "FSOT Tier 79 connective spine cross-proof (generated)."
-  theories ConnectiveSpine
+(* FSOT cross-proof Isabelle session (generated). *)
+
+session FSOT_CrossProof = HOL +
+  description "FSOT Tier 81 full-scope cross-proof (14 theories)"
+  theories
+    ConnectiveSpine
+    FullFormalSpine_00
+    FullFormalSpine_01
+    FullFormalSpine_02
+    FullFormalSpine_03
+    FullFormalSpine_04
+    FullFormalSpine_05
+    FullFormalSpine_06
+    FullFormalSpine_07
+    FullFormalSpine_08
+    FullFormalSpine_09
+    FullFormalSpine_10
+    FullFormalSpine_11
+    FullFormalSpine_12
+
