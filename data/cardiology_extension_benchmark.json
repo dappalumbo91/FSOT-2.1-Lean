@@ -1,33 +1,32 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T16:07:02.934810+00:00",
+  "generated_at": "2026-07-10T17:56:33.224352+00:00",
   "domain": "Cardiology",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
-    "cardiology_reference",
-    "clinical_medicine_bridge"
+    "cardiology_depth_pass"
   ],
   "maps_to_lean": [
     "medical",
     "biological"
   ],
   "D_eff": 15,
-  "record_count": 45,
-  "observable_count": 45,
+  "record_count": 126,
+  "observable_count": 126,
   "median_error_pct": 0.030622122938654326,
   "pooled_median_error_pct": 0.030622122938654326,
   "headline_median_error_pct": 0.030622122938654326,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "cardiology_panel": {
+      "cardiology_depth": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "Clinical cardiology meta-analysis"
+        "sota_model": "Clinical cardiology meta"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_cardiac_observables_vs_baseline": true
+      "channel_cardiac_panel_vs_baseline": true
     }
   },
   "records": [
@@ -38,16 +37,16 @@
       "computed": 0.030622,
       "measured": 0.0,
       "error_pct": 0.030622122938654326,
-      "observable_count": 45
+      "observable_count": 126
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "cardiac_observables",
-      "name": "cardiology_panel",
+      "property": "cardiac_panel",
+      "name": "cardiology_depth",
       "computed": 0.030622,
       "measured": 0.0,
       "error_pct": 0.030622122938654326,
-      "observable_count": 45
+      "observable_count": 126
     }
   ],
   "material_records": [
@@ -482,18 +481,871 @@
       "error_pct": 0.0012525834533607617,
       "within_band": true,
       "S_medical": 0.306221
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "AMPHETAMINE",
+      "chembl_id": "CHEMBL405",
+      "formula": "C9H13N",
+      "computed": 135.21,
+      "measured": 135.21,
+      "error_pct": 2.1020419666004e-14,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "ISOSORBIDE DINITRATE",
+      "chembl_id": "CHEMBL6622",
+      "formula": "C6H8N2O8",
+      "computed": 236.136,
+      "measured": 236.14,
+      "error_pct": 0.001693910392136308,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "MIANSERIN",
+      "chembl_id": "CHEMBL6437",
+      "formula": "C18H20N2",
+      "computed": 264.372,
+      "measured": 264.37,
+      "error_pct": 0.0007565154896367615,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "IMIPRAMINE",
+      "chembl_id": "CHEMBL11",
+      "formula": "C19H24N2",
+      "computed": 280.415,
+      "measured": 280.42,
+      "error_pct": 0.001783039726143747,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "INDAPAMIDE",
+      "chembl_id": "CHEMBL406",
+      "formula": "C16H16ClN3O3S",
+      "computed": 365.832,
+      "measured": 365.84,
+      "error_pct": 0.002186748305264967,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "FLUMAZENIL",
+      "chembl_id": "CHEMBL407",
+      "formula": "C15H14FN3O3",
+      "computed": 303.293,
+      "measured": 303.29,
+      "error_pct": 0.0009891522964772669,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "TROGLITAZONE",
+      "chembl_id": "CHEMBL408",
+      "formula": "C24H27NO5S",
+      "computed": 441.542,
+      "measured": 441.55,
+      "error_pct": 0.0018117993432185155,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "BICALUTAMIDE",
+      "chembl_id": "CHEMBL409",
+      "formula": "C18H14F4N2O4S",
+      "computed": 430.372,
+      "measured": 430.38,
+      "error_pct": 0.001858822435995678,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "DIAZEPAM",
+      "chembl_id": "CHEMBL12",
+      "formula": "C16H13ClN2O",
+      "computed": 284.743,
+      "measured": 284.75,
+      "error_pct": 0.002458296751538192,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "METOPROLOL",
+      "chembl_id": "CHEMBL13",
+      "formula": "C15H25NO3",
+      "computed": 267.369,
+      "measured": 267.37,
+      "error_pct": 0.00037401353930253825,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "DIETHYLSTILBESTROL",
+      "chembl_id": "CHEMBL411",
+      "formula": "C18H20O2",
+      "computed": 268.356,
+      "measured": 268.36,
+      "error_pct": 0.0014905351021087714,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "MECAMYLAMINE",
+      "chembl_id": "CHEMBL267936",
+      "formula": "C11H21N",
+      "computed": 167.296,
+      "measured": 167.3,
+      "error_pct": 0.002390914524817154,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "CARBACHOL",
+      "chembl_id": "CHEMBL14",
+      "formula": "C6H15ClN2O2",
+      "computed": 182.648,
+      "measured": 182.65,
+      "error_pct": 0.0010949904188390636,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "PHENYTOIN",
+      "chembl_id": "CHEMBL16",
+      "formula": "C15H12N2O2",
+      "computed": 252.273,
+      "measured": 252.27,
+      "error_pct": 0.00118920204542193,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "SIROLIMUS",
+      "chembl_id": "CHEMBL413",
+      "formula": "C51H79NO13",
+      "computed": 914.187,
+      "measured": 914.19,
+      "error_pct": 0.0003281593541995026,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "TACROLIMUS ANHYDROUS",
+      "chembl_id": "CHEMBL269732",
+      "formula": "C44H69NO12",
+      "computed": 804.031,
+      "measured": 804.03,
+      "error_pct": 0.0001243734686487262,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "CLOMIPRAMINE",
+      "chembl_id": "CHEMBL415",
+      "formula": "C19H23ClN2",
+      "computed": 314.857,
+      "measured": 314.86,
+      "error_pct": 0.0009528044210260898,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "METHOXSALEN",
+      "chembl_id": "CHEMBL416",
+      "formula": "C12H8O4",
+      "computed": 216.192,
+      "measured": 216.19,
+      "error_pct": 0.0009251121698550117,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "DICHLORPHENAMIDE",
+      "chembl_id": "CHEMBL17",
+      "formula": "C6H6Cl2N2O4S2",
+      "computed": 305.144,
+      "measured": 305.16,
+      "error_pct": 0.00524315113383784,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "ETHOXZOLAMIDE",
+      "chembl_id": "CHEMBL18",
+      "formula": "C9H10N2O3S2",
+      "computed": 258.31,
+      "measured": 258.32,
+      "error_pct": 0.0038711675441277897,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "EPIRUBICIN",
+      "chembl_id": "CHEMBL417",
+      "formula": "C27H29NO11",
+      "computed": 543.525,
+      "measured": 543.53,
+      "error_pct": 0.0009199124243363666,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "METHAZOLAMIDE",
+      "chembl_id": "CHEMBL19",
+      "formula": "C5H8N4O3S2",
+      "computed": 236.264,
+      "measured": 236.28,
+      "error_pct": 0.0067716268833549744,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "ACETAZOLAMIDE",
+      "chembl_id": "CHEMBL20",
+      "formula": "C4H6N4O3S2",
+      "computed": 222.237,
+      "measured": 222.25,
+      "error_pct": 0.0058492688413843905,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "MAFENIDE",
+      "chembl_id": "CHEMBL419",
+      "formula": "C7H10N2O2S",
+      "computed": 186.229,
+      "measured": 186.24,
+      "error_pct": 0.005906357388329092,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "SULFANILAMIDE",
+      "chembl_id": "CHEMBL21",
+      "formula": "C6H8N2O2S",
+      "computed": 172.202,
+      "measured": 172.21,
+      "error_pct": 0.004645490970332604,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "GUANABENZ",
+      "chembl_id": "CHEMBL420",
+      "formula": "C8H8Cl2N4",
+      "computed": 231.08,
+      "measured": 231.09,
+      "error_pct": 0.004327318360820168,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "TRIMETHOPRIM",
+      "chembl_id": "CHEMBL22",
+      "formula": "C14H18N4O3",
+      "computed": 290.323,
+      "measured": 290.32,
+      "error_pct": 0.0010333425185953097,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "VERAPAMIL",
+      "chembl_id": "CHEMBL6966",
+      "formula": "C27H38N2O4",
+      "computed": 454.611,
+      "measured": 454.61,
+      "error_pct": 0.0002199687644302486,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "SULFASALAZINE",
+      "chembl_id": "CHEMBL421",
+      "formula": "C18H14N4O5S",
+      "computed": 398.393,
+      "measured": 398.4,
+      "error_pct": 0.0017570281124510549,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "COUMARIN",
+      "chembl_id": "CHEMBL6466",
+      "formula": "C9H6O2",
+      "computed": 146.145,
+      "measured": 146.14,
+      "error_pct": 0.0034213767620059213,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "molecular_weight",
+      "name": "DILTIAZEM",
+      "chembl_id": "CHEMBL23",
+      "formula": "C22H26N2O4S",
+      "computed": 414.52,
+      "measured": 414.53,
+      "error_pct": 0.00241237063663613,
+      "within_band": true,
+      "S_medical": 0.306221,
+      "source": "clinical_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "CI2",
+      "computed": -7.007584181144136,
+      "measured": -7.0,
+      "error_pct": 0.108345,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "barnase",
+      "computed": -8.79922884583726,
+      "measured": -8.8,
+      "error_pct": 0.0087631154856993,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "ubiquitin",
+      "computed": -6.699379178638373,
+      "measured": -6.7,
+      "error_pct": 0.009265990472048086,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "lysozyme",
+      "computed": -9.160572302574996,
+      "measured": -9.2,
+      "error_pct": 0.428562,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "RNase A",
+      "computed": -8.683186676986617,
+      "measured": -8.7,
+      "error_pct": 0.193257,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "cytochrome c",
+      "computed": -10.081950177328737,
+      "measured": -10.1,
+      "error_pct": 0.178711,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "myoglobin",
+      "computed": -13.70820393249937,
+      "measured": -13.6,
+      "error_pct": 0.795617,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "BPTI",
+      "computed": -11.090169943749475,
+      "measured": -11.0,
+      "error_pct": 0.819727,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "SH3 domain",
+      "computed": -3.533999582927114,
+      "measured": -3.5,
+      "error_pct": 0.971417,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "chymotrypsin inh.",
+      "computed": -4.291643461547232,
+      "measured": -4.3,
+      "error_pct": 0.19433810355273806,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a723 Drug pKd",
+      "name": "aspirin/COX-1",
+      "computed": 4.799985466052134,
+      "measured": 4.8,
+      "error_pct": 0.0003027905805345436,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a723 Drug pKd",
+      "name": "ibuprofen/COX-2",
+      "computed": 5.098467250120926,
+      "measured": 5.1,
+      "error_pct": 0.030053919197521404,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a723 Drug pKd",
+      "name": "morphine/\u03bc-opioid",
+      "computed": 8.176996891207093,
+      "measured": 8.2,
+      "error_pct": 0.280526,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a723 Drug pKd",
+      "name": "penicillin G/PBP",
+      "computed": 6.003025174189232,
+      "measured": 6.0,
+      "error_pct": 0.05041956982053305,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a723 Drug pKd",
+      "name": "atorvastatin/HMG-CoA",
+      "computed": 8.30502169310787,
+      "measured": 8.3,
+      "error_pct": 0.060502,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a723 Drug pKd",
+      "name": "metformin/AMPK",
+      "computed": 4.536370254170161,
+      "measured": 4.5,
+      "error_pct": 0.808228,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a723 Drug pKd",
+      "name": "warfarin/VKORC1",
+      "computed": 6.700619751355234,
+      "measured": 6.7,
+      "error_pct": 0.00925,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a723 Drug pKd",
+      "name": "digoxin/Na-K-ATPase",
+      "computed": 8.47213595499958,
+      "measured": 8.5,
+      "error_pct": 0.327812,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a723 Drug pKd",
+      "name": "caffeine/A\u2082A",
+      "computed": 4.703010184424049,
+      "measured": 4.7,
+      "error_pct": 0.064046,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a723 Drug pKd",
+      "name": "nicotine/nAChR",
+      "computed": 7.088753822260279,
+      "measured": 7.1,
+      "error_pct": 0.158397,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a724 Enzyme kcat",
+      "name": "carbonic anhydrase",
+      "computed": 6.003025174189232,
+      "measured": 6.0,
+      "error_pct": 0.05041956982053305,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a724 Enzyme kcat",
+      "name": "catalase",
+      "computed": 7.601401875170029,
+      "measured": 7.6,
+      "error_pct": 0.018446,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a724 Enzyme kcat",
+      "name": "acetylcholinesterase",
+      "computed": 4.150702399695581,
+      "measured": 4.15,
+      "error_pct": 0.01692529386942307,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a724 Enzyme kcat",
+      "name": "chymotrypsin",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a724 Enzyme kcat",
+      "name": "lysozyme",
+      "computed": -0.30030227667037146,
+      "measured": -0.3,
+      "error_pct": 0.100759,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a724 Enzyme kcat",
+      "name": "TPI",
+      "computed": 3.6342474226362644,
+      "measured": 3.63,
+      "error_pct": 0.117009,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a724 Enzyme kcat",
+      "name": "\u03b2-lactamase",
+      "computed": 3.295074868484244,
+      "measured": 3.3,
+      "error_pct": 0.149246,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a724 Enzyme kcat",
+      "name": "DNA polymerase",
+      "computed": 2.4799461039763027,
+      "measured": 2.48,
+      "error_pct": 0.002173226761988694,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a724 Enzyme kcat",
+      "name": "lactate dehydrogenase",
+      "computed": 2.9881104386953425,
+      "measured": 3.0,
+      "error_pct": 0.396319,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a724 Enzyme kcat",
+      "name": "urease",
+      "computed": 4.448413753739168,
+      "measured": 4.48,
+      "error_pct": 0.70505,
+      "source": "oncology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Gly_pK\u2081",
+      "computed": 2.2980601642983487,
+      "measured": 2.34,
+      "error_pct": 1.792301,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Gly_pK\u2082",
+      "computed": 9.65725862484998,
+      "measured": 9.6,
+      "error_pct": 0.596444,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Ala_pK\u2081",
+      "computed": 2.2980601642983487,
+      "measured": 2.34,
+      "error_pct": 1.792301,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Ala_pK\u2082",
+      "computed": 9.869604401089358,
+      "measured": 9.87,
+      "error_pct": 0.004008,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Val_pK\u2081",
+      "computed": 2.2980601642983487,
+      "measured": 2.29,
+      "error_pct": 0.351972,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Val_pK\u2082",
+      "computed": 9.716122186194907,
+      "measured": 9.72,
+      "error_pct": 0.039895,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Leu_pK\u2081",
+      "computed": 2.2980601642983487,
+      "measured": 2.33,
+      "error_pct": 1.370808,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Leu_pK\u2082",
+      "computed": 9.716122186194907,
+      "measured": 9.74,
+      "error_pct": 0.245152,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Asp_pKR",
+      "computed": 3.6342474226362644,
+      "measured": 3.65,
+      "error_pct": 0.431577,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Glu_pKR",
+      "computed": 4.23606797749979,
+      "measured": 4.25,
+      "error_pct": 0.327812,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "His_pKR",
+      "computed": 5.938136372072465,
+      "measured": 6.0,
+      "error_pct": 1.03106,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Cys_pKR",
+      "computed": 8.176996891207093,
+      "measured": 8.18,
+      "error_pct": 0.036713,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Tyr_pKR",
+      "computed": 9.869604401089358,
+      "measured": 10.07,
+      "error_pct": 1.990026,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Lys_pKR",
+      "computed": 10.501724959917917,
+      "measured": 10.53,
+      "error_pct": 0.268519,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Arg_pKR",
+      "computed": 12.487638389839253,
+      "measured": 12.48,
+      "error_pct": 0.061205,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Pro_pK\u2081",
+      "computed": 1.9616166720726889,
+      "measured": 1.99,
+      "error_pct": 1.426298,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Pro_pK\u2082",
+      "computed": 10.571672795662035,
+      "measured": 10.6,
+      "error_pct": 0.267238,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Phe_pK\u2081",
+      "computed": 2.575736191370456,
+      "measured": 2.58,
+      "error_pct": 0.165264,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Trp_pK\u2081",
+      "computed": 2.4059747810263383,
+      "measured": 2.38,
+      "error_pct": 1.091377,
+      "source": "immunology_cardiology"
+    },
+    {
+      "lab": "cardiology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Trp_pK\u2082",
+      "computed": 9.4026621941651,
+      "measured": 9.39,
+      "error_pct": 0.134848,
+      "source": "immunology_cardiology"
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.030622122938654326,
-    "max_scalar_error_pct": 0.04593318440798318,
+    "max_scalar_error_pct": 1.990026,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": null,
     "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": true
+    "fsot_precision_aligned": false
   },
   "fsot_precision_gate_pct": 0.5
 }

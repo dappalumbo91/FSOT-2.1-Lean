@@ -11,9 +11,9 @@ noncomputable section
 
 open Real
 
-def paleoclimate_ext_observable_count : ℕ := 90
-def paleoclimate_ext_pooled_median_error_pct : ℝ := (0.0 : ℝ)
-def paleoclimate_ext_headline_median_error_pct : ℝ := (0.0 : ℝ)
+def paleoclimate_ext_observable_count : ℕ := 40
+def paleoclimate_ext_pooled_median_error_pct : ℝ := (0.015015854077432778 : ℝ)
+def paleoclimate_ext_headline_median_error_pct : ℝ := (0.015015854077432778 : ℝ)
 def paleoclimate_ext_beats_sota_headlines : ℕ := 2
 def paleoclimate_ext_D_eff : ℕ := 17
 
@@ -32,7 +32,7 @@ theorem paleoclimate_ext_beats_sota_headlines_pos : 0 < paleoclimate_ext_beats_s
   unfold paleoclimate_ext_beats_sota_headlines; norm_num
 
 theorem paleoclimate_ext_bundle :
-    paleoclimate_ext_observable_count = 90 ∧
+    paleoclimate_ext_observable_count = 40 ∧
     paleoclimate_ext_pooled_median_error_pct < (0.5 : ℝ) ∧
     paleoclimate_ext_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < paleoclimate_ext_beats_sota_headlines ∧

@@ -11,9 +11,9 @@ noncomputable section
 
 open Real
 
-def civil_engineering_ext_observable_count : ℕ := 181
-def civil_engineering_ext_pooled_median_error_pct : ℝ := (0.033525988073647546 : ℝ)
-def civil_engineering_ext_headline_median_error_pct : ℝ := (0.033525988073647546 : ℝ)
+def civil_engineering_ext_observable_count : ℕ := 201
+def civil_engineering_ext_pooled_median_error_pct : ℝ := (0.021151317926568283 : ℝ)
+def civil_engineering_ext_headline_median_error_pct : ℝ := (0.021151317926568283 : ℝ)
 def civil_engineering_ext_beats_sota_headlines : ℕ := 2
 def civil_engineering_ext_D_eff : ℕ := 16
 
@@ -32,7 +32,7 @@ theorem civil_engineering_ext_beats_sota_headlines_pos : 0 < civil_engineering_e
   unfold civil_engineering_ext_beats_sota_headlines; norm_num
 
 theorem civil_engineering_ext_bundle :
-    civil_engineering_ext_observable_count = 181 ∧
+    civil_engineering_ext_observable_count = 201 ∧
     civil_engineering_ext_pooled_median_error_pct < (0.5 : ℝ) ∧
     civil_engineering_ext_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < civil_engineering_ext_beats_sota_headlines ∧

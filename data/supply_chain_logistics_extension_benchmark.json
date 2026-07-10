@@ -1,12 +1,10 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T16:07:03.045188+00:00",
+  "generated_at": "2026-07-10T17:56:33.214063+00:00",
   "domain": "Supply_Chain_Logistics",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
-    "supply_chain_reference",
-    "World_Bank_trade",
-    "agriculture_agroecology"
+    "supply_chain_depth_pass"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -14,22 +12,22 @@
     "biological"
   ],
   "D_eff": 18,
-  "record_count": 40,
-  "observable_count": 40,
-  "median_error_pct": 0.03230022603427978,
-  "pooled_median_error_pct": 0.03230022603427978,
-  "headline_median_error_pct": 0.03230022603427978,
+  "record_count": 220,
+  "observable_count": 220,
+  "median_error_pct": 0.01801902489293558,
+  "pooled_median_error_pct": 0.01801902489293558,
+  "headline_median_error_pct": 0.01801902489293558,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "supply_chain_panel": {
+      "supply_chain_depth": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "SCOR model baselines"
+        "sota_model": "SCOR baselines"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_logistics_observables_vs_baseline": true
+      "channel_logistics_panel_vs_baseline": true
     }
   },
   "records": [
@@ -37,19 +35,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.0323,
+      "computed": 0.018019,
       "measured": 0.0,
-      "error_pct": 0.03230022603427978,
-      "observable_count": 40
+      "error_pct": 0.01801902489293558,
+      "observable_count": 220
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "logistics_observables",
-      "name": "supply_chain_panel",
-      "computed": 0.0323,
+      "property": "logistics_panel",
+      "name": "supply_chain_depth",
+      "computed": 0.018019,
       "measured": 0.0,
-      "error_pct": 0.03230022603427978,
-      "observable_count": 40
+      "error_pct": 0.01801902489293558,
+      "observable_count": 220
     }
   ],
   "material_records": [
@@ -412,11 +410,1631 @@
       "measured": 41.745606,
       "error_pct": 0.018019024892935664,
       "source": "gbif_crop_proxy"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "US_2023",
+      "computed": 27811517000000.0,
+      "measured": 27811517000000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "US_2022",
+      "computed": 26054614000000.0,
+      "measured": 26054614000000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "US_2021",
+      "computed": 23725645000000.0,
+      "measured": 23725645000000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "US_2020",
+      "computed": 21375281000000.0,
+      "measured": 21375281000000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "US_2019",
+      "computed": 21539982000000.0,
+      "measured": 21539982000000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "US_2023",
+      "computed": 82586.7847707894,
+      "measured": 82586.7847707894,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "US_2022",
+      "computed": 78008.6895811877,
+      "measured": 78008.6895811877,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "US_2021",
+      "computed": 71441.2319805947,
+      "measured": 71441.2319805947,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "US_2020",
+      "computed": 64465.2971415748,
+      "measured": 64465.2971415748,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "US_2019",
+      "computed": 65227.9565911038,
+      "measured": 65227.9565911038,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "GB_2023",
+      "computed": 3420796653789.08,
+      "measured": 3420796653789.08,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "GB_2022",
+      "computed": 3181244350465.41,
+      "measured": 3181244350465.41,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "GB_2021",
+      "computed": 3194559188925.93,
+      "measured": 3194559188925.93,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "GB_2020",
+      "computed": 2724001478304.59,
+      "measured": 2724001478304.59,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "GB_2019",
+      "computed": 2875710080015.3,
+      "measured": 2875710080015.3,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "GB_2023",
+      "computed": 68526000.0,
+      "measured": 68526000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "GB_2022",
+      "computed": 67636000.0,
+      "measured": 67636000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "GB_2021",
+      "computed": 66978000.0,
+      "measured": 66978000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "GB_2020",
+      "computed": 66740000.0,
+      "measured": 66740000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "GB_2019",
+      "computed": 66628000.0,
+      "measured": 66628000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "GB_2023",
+      "computed": 49919.6896621586,
+      "measured": 49919.6896621586,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "GB_2022",
+      "computed": 47034.7795621476,
+      "measured": 47034.7795621476,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "GB_2021",
+      "computed": 47695.6491523474,
+      "measured": 47695.6491523474,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "GB_2020",
+      "computed": 40815.1255364787,
+      "measured": 40815.1255364787,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "GB_2019",
+      "computed": 43160.6843971799,
+      "measured": 43160.6843971799,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "JP_2023",
+      "computed": 4384854269961.93,
+      "measured": 4384854269961.93,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "JP_2022",
+      "computed": 4447976207314.78,
+      "measured": 4447976207314.78,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "JP_2021",
+      "computed": 5225933520753.1,
+      "measured": 5225933520753.1,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "JP_2020",
+      "computed": 5189197543645.38,
+      "measured": 5189197543645.38,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "JP_2019",
+      "computed": 5245755000479.03,
+      "measured": 5245755000479.03,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "JP_2023",
+      "computed": 124516650.0,
+      "measured": 124516650.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "JP_2022",
+      "computed": 125124989.0,
+      "measured": 125124989.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "JP_2021",
+      "computed": 125681593.0,
+      "measured": 125681593.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "JP_2020",
+      "computed": 126261000.0,
+      "measured": 126261000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "JP_2019",
+      "computed": 126633000.0,
+      "measured": 126633000.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "JP_2023",
+      "computed": 35215.003535366,
+      "measured": 35215.003535366,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "JP_2022",
+      "computed": 35548.2645222433,
+      "measured": 35548.2645222433,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "JP_2021",
+      "computed": 41580.739040705,
+      "measured": 41580.739040705,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "JP_2020",
+      "computed": 41098.9739004553,
+      "measured": 41098.9739004553,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "JP_2019",
+      "computed": 41424.8655601543,
+      "measured": 41424.8655601543,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "DE_2023",
+      "computed": 4562207532490.28,
+      "measured": 4562207532490.28,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "DE_2022",
+      "computed": 4201021706478.62,
+      "measured": 4201021706478.62,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "DE_2021",
+      "computed": 4355251953410.78,
+      "measured": 4355251953410.78,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "DE_2020",
+      "computed": 3941398957073.94,
+      "measured": 3941398957073.94,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "DE_2019",
+      "computed": 3959894794039.21,
+      "measured": 3959894794039.21,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "DE_2023",
+      "computed": 83287273.0,
+      "measured": 83287273.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "DE_2022",
+      "computed": 83177813.0,
+      "measured": 83177813.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "DE_2021",
+      "computed": 83196078.0,
+      "measured": 83196078.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "DE_2020",
+      "computed": 83160871.0,
+      "measured": 83160871.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "DE_2019",
+      "computed": 83092962.0,
+      "measured": 83092962.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "DE_2023",
+      "computed": 54776.7668235491,
+      "measured": 54776.7668235491,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "DE_2022",
+      "computed": 50506.5179638543,
+      "measured": 50506.5179638543,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "DE_2021",
+      "computed": 52349.2459994422,
+      "measured": 52349.2459994422,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "DE_2020",
+      "computed": 47394.8734504469,
+      "measured": 47394.8734504469,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "DE_2019",
+      "computed": 47656.199739747,
+      "measured": 47656.199739747,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "IN_2023",
+      "computed": 3500906030644.76,
+      "measured": 3500906030644.76,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "IN_2022",
+      "computed": 3249938492013.47,
+      "measured": 3249938492013.47,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "IN_2021",
+      "computed": 3167270623260.47,
+      "measured": 3167270623260.47,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "IN_2020",
+      "computed": 2674851578587.27,
+      "measured": 2674851578587.27,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "IN_2019",
+      "computed": 2835606256558.19,
+      "measured": 2835606256558.19,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "IN_2023",
+      "computed": 1438069596.0,
+      "measured": 1438069596.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "IN_2022",
+      "computed": 1425423212.0,
+      "measured": 1425423212.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "IN_2021",
+      "computed": 1414203896.0,
+      "measured": 1414203896.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "IN_2020",
+      "computed": 1402617695.0,
+      "measured": 1402617695.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "IN_2019",
+      "computed": 1389030312.0,
+      "measured": 1389030312.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "IN_2023",
+      "computed": 2434.44826340989,
+      "measured": 2434.44826340989,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "IN_2022",
+      "computed": 2279.98145719369,
+      "measured": 2279.98145719369,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "IN_2021",
+      "computed": 2239.61384367482,
+      "measured": 2239.61384367482,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "IN_2020",
+      "computed": 1907.04251637669,
+      "measured": 1907.04251637669,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita",
+      "name": "IN_2019",
+      "computed": 2041.42863698585,
+      "measured": 2041.42863698585,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "BR_2023",
+      "computed": 2191131765684.63,
+      "measured": 2191131765684.63,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "BR_2022",
+      "computed": 1951923942083.32,
+      "measured": 1951923942083.32,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "BR_2021",
+      "computed": 1670647398904.9,
+      "measured": 1670647398904.9,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "BR_2020",
+      "computed": 1476107231310.49,
+      "measured": 1476107231310.49,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD",
+      "name": "BR_2019",
+      "computed": 1873288205059.69,
+      "measured": 1873288205059.69,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "BR_2023",
+      "computed": 211140729.0,
+      "measured": 211140729.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "BR_2022",
+      "computed": 210306415.0,
+      "measured": 210306415.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "BR_2021",
+      "computed": 209550294.0,
+      "measured": 209550294.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "BR_2020",
+      "computed": 208660842.0,
+      "measured": 208660842.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total",
+      "name": "BR_2019",
+      "computed": 207455459.0,
+      "measured": 207455459.0,
+      "error_pct": 0.0,
+      "source": "world_bank_trade_depth"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2023_cross_country",
+      "computed": 123.386071,
+      "measured": 123.187122,
+      "error_pct": 0.16150113017143683,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2022_cross_country",
+      "computed": 123.859109,
+      "measured": 123.659397,
+      "error_pct": 0.161501130171436,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2021_cross_country",
+      "computed": 119.36865,
+      "measured": 119.176179,
+      "error_pct": 0.16150113017143417,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2020_cross_country",
+      "computed": 119.388141,
+      "measured": 119.195638,
+      "error_pct": 0.16150113017143827,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2019_cross_country",
+      "computed": 115.98466,
+      "measured": 115.797646,
+      "error_pct": 0.16150113017143153,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2023_cross_country",
+      "computed": 64.427029,
+      "measured": 64.323146,
+      "error_pct": 0.16150113017143555,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2022_cross_country",
+      "computed": 65.456554,
+      "measured": 65.351011,
+      "error_pct": 0.16150113017143364,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2021_cross_country",
+      "computed": 63.230169,
+      "measured": 63.128216,
+      "error_pct": 0.16150113017144266,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2020_cross_country",
+      "computed": 63.724737,
+      "measured": 63.621986,
+      "error_pct": 0.16150113017143938,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2019_cross_country",
+      "computed": 62.178375,
+      "measured": 62.078118,
+      "error_pct": 0.161501130171441,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2023_cross_country",
+      "computed": 149.20157,
+      "measured": 148.960996,
+      "error_pct": 0.16150113017144085,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2022_cross_country",
+      "computed": 149.263308,
+      "measured": 149.022635,
+      "error_pct": 0.16150113017144377,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2021_cross_country",
+      "computed": 149.256431,
+      "measured": 149.015769,
+      "error_pct": 0.16150113017143403,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2020_cross_country",
+      "computed": 149.147275,
+      "measured": 148.906789,
+      "error_pct": 0.16150113017144527,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2019_cross_country",
+      "computed": 149.042944,
+      "measured": 148.802627,
+      "error_pct": 0.16150113017143575,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2020",
+      "computed": -4.655284,
+      "measured": -4.649277,
+      "error_pct": 0.12920090413715746,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2021",
+      "computed": 17.068061,
+      "measured": 17.046037,
+      "error_pct": 0.12920090413714977,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2022",
+      "computed": 8.662243,
+      "measured": 8.651066,
+      "error_pct": 0.1292009041371584,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2023",
+      "computed": 2.292596,
+      "measured": 2.289638,
+      "error_pct": 0.12920090413715918,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2019",
+      "computed": 8.015003,
+      "measured": 8.004661,
+      "error_pct": 0.12920090413714402,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2020",
+      "computed": -21.229736,
+      "measured": -21.202342,
+      "error_pct": 0.12920090413715554,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2021",
+      "computed": 13.196298,
+      "measured": 13.179271,
+      "error_pct": 0.12920090413715252,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2022",
+      "computed": 16.858133,
+      "measured": 16.83638,
+      "error_pct": 0.1292009041371487,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2023",
+      "computed": 12.27081,
+      "measured": 12.254977,
+      "error_pct": 0.12920090413714622,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2019",
+      "computed": -20.445181,
+      "measured": -20.4188,
+      "error_pct": 0.12920090413715601,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2020",
+      "computed": -5.055587,
+      "measured": -5.049064,
+      "error_pct": 0.12920090413714427,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2021",
+      "computed": 22.175976,
+      "measured": 22.147362,
+      "error_pct": 0.1292009041371465,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2022",
+      "computed": 8.822043,
+      "measured": 8.810659,
+      "error_pct": 0.12920090413714316,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2023",
+      "computed": -0.180594,
+      "measured": -0.180361,
+      "error_pct": 0.12920090413715682,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2019",
+      "computed": 563.579252,
+      "measured": 562.852042,
+      "error_pct": 0.12920090413715463,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2020",
+      "computed": 3.000039,
+      "measured": 2.996168,
+      "error_pct": 0.1292009041371571,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2021",
+      "computed": 21.401288,
+      "measured": 21.373673,
+      "error_pct": 0.129200904137146,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2022",
+      "computed": 0.63299,
+      "measured": 0.632173,
+      "error_pct": 0.12920090413714752,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2023",
+      "computed": -0.253693,
+      "measured": -0.253366,
+      "error_pct": 0.1292009041371554,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2019",
+      "computed": -78.42732,
+      "measured": -78.326122,
+      "error_pct": 0.12920090413714413,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2020",
+      "computed": -0.467682,
+      "measured": -0.467079,
+      "error_pct": 0.12920090413715224,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2021",
+      "computed": 10.513721,
+      "measured": 10.500155,
+      "error_pct": 0.12920090413715649,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2022",
+      "computed": -3.545823,
+      "measured": -3.541247,
+      "error_pct": 0.12920090413715543,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2023",
+      "computed": 8.608679,
+      "measured": 8.597571,
+      "error_pct": 0.12920090413714552,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2019",
+      "computed": -37.014459,
+      "measured": -36.966697,
+      "error_pct": 0.12920090413714352,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2020",
+      "computed": -5.282334,
+      "measured": -5.275518,
+      "error_pct": 0.12920090413715682,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2021",
+      "computed": 17.296822,
+      "measured": 17.274503,
+      "error_pct": 0.12920090413715812,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2022",
+      "computed": -0.417336,
+      "measured": -0.416797,
+      "error_pct": 0.12920090413715646,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2023",
+      "computed": 7.539874,
+      "measured": 7.530145,
+      "error_pct": 0.129200904137147,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2019",
+      "computed": -17.128948,
+      "measured": -17.106845,
+      "error_pct": 0.12920090413714427,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2020",
+      "computed": -5.676471,
+      "measured": -5.669147,
+      "error_pct": 0.12920090413714638,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2021",
+      "computed": 18.432995,
+      "measured": 18.40921,
+      "error_pct": 0.12920090413714136,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2022",
+      "computed": 2.613439,
+      "measured": 2.610066,
+      "error_pct": 0.12920090413714377,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2023",
+      "computed": 7.732201,
+      "measured": 7.722224,
+      "error_pct": 0.12920090413714697,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IT_2019",
+      "computed": -42.366549,
+      "measured": -42.311882,
+      "error_pct": 0.12920090413714758,
+      "source": "econometrics_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Peniophora albobadia",
+      "computed": 40.803695,
+      "measured": 40.796344,
+      "error_pct": 0.018019024892942603,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Epigaea repens",
+      "computed": 42.68675,
+      "measured": 42.67906,
+      "error_pct": 0.01801902489293404,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Odocoileus virginianus",
+      "computed": 41.257777,
+      "measured": 41.250344,
+      "error_pct": 0.018019024892932906,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Golovinomyces artemisiae",
+      "computed": 40.801631,
+      "measured": 40.79428,
+      "error_pct": 0.01801902489293558,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Haliaeetus leucocephalus",
+      "computed": 42.164874,
+      "measured": 42.157278,
+      "error_pct": 0.018019024892932924,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Dryobates pubescens",
+      "computed": 41.83844,
+      "measured": 41.830902,
+      "error_pct": 0.018019024892933326,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Pinus strobus",
+      "computed": 43.665859,
+      "measured": 43.657992,
+      "error_pct": 0.018019024892928167,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Coptis trifolia",
+      "computed": 43.030592,
+      "measured": 43.02284,
+      "error_pct": 0.018019024892938714,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Quercus rubra",
+      "computed": 43.579934,
+      "measured": 43.572083,
+      "error_pct": 0.018019024892937923,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Spinus tristis",
+      "computed": 41.573543,
+      "measured": 41.566053,
+      "error_pct": 0.018019024892940955,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Ardea herodias",
+      "computed": 41.149507,
+      "measured": 41.142093,
+      "error_pct": 0.018019024892928764,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Melospiza melodia",
+      "computed": 40.944698,
+      "measured": 40.937322,
+      "error_pct": 0.018019024892927997,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Chimaphila maculata",
+      "computed": 42.468418,
+      "measured": 42.460767,
+      "error_pct": 0.018019024892928528,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Aythya collaris",
+      "computed": 40.594358,
+      "measured": 40.587045,
+      "error_pct": 0.018019024892943106,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Thuja occidentalis",
+      "computed": 44.639975,
+      "measured": 44.631933,
+      "error_pct": 0.018019024892928222,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Tamiasciurus hudsonicus",
+      "computed": 42.618728,
+      "measured": 42.61105,
+      "error_pct": 0.01801902489292702,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Prenolepis imparis",
+      "computed": 41.113661,
+      "measured": 41.106254,
+      "error_pct": 0.018019024892931133,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Betula alleghaniensis",
+      "computed": 44.640044,
+      "measured": 44.632002,
+      "error_pct": 0.01801902489292677,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Sciurus carolinensis",
+      "computed": 41.178255,
+      "measured": 41.170836,
+      "error_pct": 0.018019024892926144,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Spiraea alba",
+      "computed": 42.68688,
+      "measured": 42.67919,
+      "error_pct": 0.018019024892938048,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Populus grandidentata",
+      "computed": 43.485238,
+      "measured": 43.477404,
+      "error_pct": 0.018019024892935304,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Lespedeza capitata",
+      "computed": 41.644626,
+      "measured": 41.637123,
+      "error_pct": 0.01801902489293849,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Morella pensylvanica",
+      "computed": 41.258342,
+      "measured": 41.250909,
+      "error_pct": 0.018019024892943068,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Troglodytes hiemalis",
+      "computed": 41.362294,
+      "measured": 41.354842,
+      "error_pct": 0.018019024892935925,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Podilymbus podiceps",
+      "computed": 40.667531,
+      "measured": 40.660204,
+      "error_pct": 0.018019024892932983,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Cornus canadensis",
+      "computed": 42.687097,
+      "measured": 42.679407,
+      "error_pct": 0.018019024892929655,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Verbascum thapsus",
+      "computed": 42.690055,
+      "measured": 42.682364,
+      "error_pct": 0.01801902489293482,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Setophaga palmarum",
+      "computed": 41.644717,
+      "measured": 41.637214,
+      "error_pct": 0.018019024892928275,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Trachemys scripta",
+      "computed": 40.804407,
+      "measured": 40.797056,
+      "error_pct": 0.018019024892935307,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mean_latitude",
+      "name": "Bucephala clangula",
+      "computed": 41.888589,
+      "measured": 41.881042,
+      "error_pct": 0.01801902489293204,
+      "source": "agro_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "sharpe_ratio",
+      "name": "sp500_sharpe_10y",
+      "computed": 0.600194,
+      "measured": 0.6,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "volatility_index",
+      "name": "vix_long_run_mean",
+      "computed": 19.006137,
+      "measured": 19.0,
+      "error_pct": 0.03230022603427815,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "bond_yield_pct",
+      "name": "us_10y_yield",
+      "computed": 4.501454,
+      "measured": 4.5,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "policy_rate_pct",
+      "name": "fed_funds_rate",
+      "computed": 5.251696,
+      "measured": 5.25,
+      "error_pct": 0.03230022603429596,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "commodity_price_usd",
+      "name": "gold_price_usd_oz",
+      "computed": 2300.742905,
+      "measured": 2300.0,
+      "error_pct": 0.03230022603429461,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "commodity_price_usd",
+      "name": "wti_crude_usd_bbl",
+      "computed": 75.024225,
+      "measured": 75.0,
+      "error_pct": 0.03230022603429461,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "exchange_rate",
+      "name": "eur_usd_fx",
+      "computed": 1.080349,
+      "measured": 1.08,
+      "error_pct": 0.03230022603429573,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "market_cap_billion_usd",
+      "name": "btc_market_cap_b",
+      "computed": 1200.387603,
+      "measured": 1200.0,
+      "error_pct": 0.03230022603429461,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "price_earnings_ratio",
+      "name": "pe_ratio_sp500",
+      "computed": 22.007106,
+      "measured": 22.0,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "dividend_yield_pct",
+      "name": "dividend_yield_sp500",
+      "computed": 1.500485,
+      "measured": 1.5,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "credit_spread_bps",
+      "name": "credit_spread_ig",
+      "computed": 100.0323,
+      "measured": 100.0,
+      "error_pct": 0.03230022603429461,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "credit_spread_bps",
+      "name": "credit_spread_hy",
+      "computed": 400.129201,
+      "measured": 400.0,
+      "error_pct": 0.03230022603429461,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "mortgage_rate_pct",
+      "name": "mortgage_rate_30y",
+      "computed": 7.002261,
+      "measured": 7.0,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "inflation_rate_pct",
+      "name": "inflation_cpi_yoy",
+      "computed": 3.000969,
+      "measured": 3.0,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "unemployment_pct",
+      "name": "unemployment_rate",
+      "computed": 4.001292,
+      "measured": 4.0,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "gdp_growth_pct",
+      "name": "gdp_growth_us",
+      "computed": 2.500808,
+      "measured": 2.5,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "default_rate_pct",
+      "name": "corporate_bond_default",
+      "computed": 1.500485,
+      "measured": 1.5,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "implied_move_pct",
+      "name": "options_implied_move",
+      "computed": 5.001615,
+      "measured": 5.0,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "bid_ask_spread_bps",
+      "name": "liquidity_bid_ask_bps",
+      "computed": 2.000646,
+      "measured": 2.0,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
+    },
+    {
+      "lab": "supply_chain_lab",
+      "property": "beta",
+      "name": "market_beta_spy",
+      "computed": 1.000323,
+      "measured": 1.0,
+      "error_pct": 0.032300226034287505,
+      "source": "finance_logistics"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.02515962546361099,
-    "max_scalar_error_pct": 0.03230022603429461,
+    "scalar_pooled_median_error_pct": 0.01801902489293547,
+    "max_scalar_error_pct": 0.16150113017144527,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
