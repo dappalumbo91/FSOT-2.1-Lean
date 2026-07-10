@@ -6,6 +6,21 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma pharmacokinetics_gap_fill_pooled_median_under_half_pct : (0.00241237063663613%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma pharmacokinetics_gap_fill_headline_median_under_half_pct : (0.04593318440797578%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma pharmacokinetics_gap_fill_observable_count_pos : (0 < 56)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma pharmacokinetics_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma pharmacology_median_error_under_half_pct : (0.0011715432153059484%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma pharmacology_observable_count_pos : (0 < 120)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -290,19 +305,4 @@ Proof. lra. Qed.
 
 Lemma rd_interval_tightening_panel_headline_median_under_half_pct : (0.005024559462094211%R) < (0.5%R).
 Proof. lra. Qed.
-
-Lemma rd_interval_tightening_panel_observable_count_pos : (0 < 12)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma rd_interval_tightening_panel_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma fold_spine_pooled_median_under_half_pct : (0.019008268802505057%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fold_spine_headline_median_under_half_pct : (0.019008268802505057%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma fold_spine_observable_count_pos : (0 < 8)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

@@ -255,6 +255,9 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma cosmology_extended_components_sum : (58 = 58)%nat.
 Proof. reflexivity. Qed.
 
+Lemma cosmology_higher_waves_max_error_under_half_pct : (0.35683948712437213%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma cosmology_higher_waves_total_pos : (0 < 142)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -302,7 +305,4 @@ Proof. lra. Qed.
 
 Lemma cosmology_wave7_observable_count_pos : (0 < 29)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cosmology_wave8_median_error_under_half_pct : (0.014206603092685816%R) < (0.5%R).
-Proof. lra. Qed.
 

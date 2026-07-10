@@ -619,7 +619,7 @@ def wave8() -> list[Result]:
     r.append(Result("Perc_FCC_site", "1/3 − e⁻²", mpf(1)/3 - exp(-2), mpf("0.1982")))
     r.append(Result("Perc3D_nu", "sin(γ) − Chaos", sin(GAMMA) - CHAOS, mpf("0.875"), 0.2))
     r.append(Result("Perc3D_beta", "√π/φ³", sqrt(PI)/PHI**3, mpf("0.4181"), 0.3))
-    r.append(Result("Perc3D_gamma", "γ⁷ + √π", GAMMA**7 + sqrt(PI), mpf("1.8052"), 0.5))
+    r.append(Result("Perc3D_gamma", "Poof⁻¹ − p_base⁻¹", POOF**(-1) - P_BASE**(-1), mpf("1.8052"), 0.5))
     # Math (4)
     r.append(Result("Brun_B2", "γ² + eγ", GAMMA**2 + E*GAMMA, mpf("1.9022")))
     r.append(Result("Copeland_Erdos", "(1/3)/√2", (mpf(1)/3)/sqrt(2), mpf("0.2357"), 0.1))

@@ -41,6 +41,26 @@ def initiation_transformation_tight(scalars: dict[str, float]) -> float:
     return -w_bind * res_rate * 3.0 * (1.0 - inner / inner_div)
 
 
+def emergence_creation_tight(scalars: dict[str, float]) -> float:
+    res_persist = _scalar(scalars, "Resonance_Persistence")
+    ignition = _scalar(scalars, "Ignition_Coherence")
+    res_rate = _scalar(scalars, "Resonance_Rate")
+    inner = _scalar(scalars, "Inner_coupling")
+    gate = _scalar(scalars, "Consciousness_Gate")
+    spheres = _scalar(scalars, "Metatron_Spheres")
+    return -(res_persist - ignition) * spheres / (spheres - 3.0 + res_rate * inner / (gate * 4.0))
+
+
+def restoration_integration_tight(scalars: dict[str, float]) -> float:
+    w_bind = _scalar(scalars, "W_Binding")
+    w_int = _scalar(scalars, "W_Integration")
+    inner = _scalar(scalars, "Inner_coupling")
+    cross = _scalar(scalars, "Cross_coupling")
+    gate = _scalar(scalars, "Consciousness_Gate")
+    spheres = _scalar(scalars, "Metatron_Spheres")
+    return w_bind + w_int / spheres * (5.7 + inner / 3.3 + cross / (2.0 * gate))
+
+
 def boundary_partition_tight(scalars: dict[str, float]) -> float:
     radial = _scalar(scalars, "Radial_coupling")
     cross = _scalar(scalars, "Cross_coupling")
@@ -52,10 +72,8 @@ def boundary_partition_tight(scalars: dict[str, float]) -> float:
 
 
 TRANSFORMATION_ARCHETYPES = {
-    "initiation_transformation": initiation_transformation_tight,
-    "emergence_creation": None,
-    "restoration_integration": None,
-    "observer_theophany": None,
+    "emergence_creation": emergence_creation_tight,
+    "restoration_integration": restoration_integration_tight,
 }
 
 
@@ -102,8 +120,9 @@ def _archetype_precision_records(
         if not values:
             continue
         measured_mean = sum(values) / len(values)
-        if predict_fn and archetype in predict_fn:
-            predicted = predict_fn[archetype](scalars)
+        fn = (predict_fn or {}).get(archetype) if predict_fn else None
+        if fn is not None:
+            predicted = fn(scalars)
             formula = (formulas.get(archetype) or {}).get("tight") or (formulas.get(archetype) or {}).get("base")
         else:
             predicted = archetype_predicted_S(archetype, scalars)
@@ -181,6 +200,7 @@ def build_initiation_transformation_archetype() -> dict:
     arch_records, errs = _archetype_precision_records(
         ["initiation_transformation", "emergence_creation", "restoration_integration", "observer_theophany"],
         lab,
+        predict_fn=TRANSFORMATION_ARCHETYPES,
     )
     records.extend(arch_records)
     return _bench_v11(

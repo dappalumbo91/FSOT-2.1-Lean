@@ -6,6 +6,21 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma vizier_wds_tap_live_deep_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma vizier_wds_tap_live_deep_observable_count_pos : (0 < 25)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma vizier_wds_tap_live_deep_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma vl_distill_atlas_median_error_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma vl_distill_atlas_observable_count_pos : (0 < 10)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma warp_psi_friction_pos : 0 < (0.082300635102%R).
 Proof. lra. Qed.
 
@@ -228,13 +243,10 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma cross_proof_lean_modules_pos : (0 < 3)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma cross_proof_full_priors_obligation_count_pos : (0 < 1079)%nat.
+Lemma cross_proof_full_formal_obligation_count_pos : (0 < 1242)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma cross_proof_full_priors_lean_modules_pos : (0 < 300)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma cross_proof_full_priors_provable_count_pos : (0 < 1074)%nat.
+Lemma cross_proof_full_formal_provable_count_pos : (0 < 1237)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma DomainCoveragePriors_negative_scalar_domain_count_pos : (0 < 10)%nat.
@@ -292,17 +304,5 @@ Lemma NeuronCohortStrataPriors_stratum_l23_pyramidal_fi_median_lt_bound : (0.221
 Proof. lra. Qed.
 
 Lemma NeuronCohortStrataPriors_held_out_fi_pearson_r_gt_fifty_five : (0.55%R) < (0.6068416819088323%R).
-Proof. lra. Qed.
-
-Lemma NeuronCohortStrataPriors_stratum_sst_fi_pearson_gt_bound : (0.5%R) < (0.5196512945807779%R).
-Proof. lra. Qed.
-
-Lemma NeuronCohortStrataPriors_stratum_pv_fi_pearson_gt_bound : (0.35%R) < (0.3915167429133035%R).
-Proof. lra. Qed.
-
-Lemma NeuronCohortStrataPriors_stratum_vip_fi_pearson_gt_bound : (0.4%R) < (0.42970594991301575%R).
-Proof. lra. Qed.
-
-Lemma NeuronCohortStrataPriors_stratum_l23_pyramidal_fi_pearson_gt_bound : (0.2%R) < (0.22516239104042488%R).
 Proof. lra. Qed.
 

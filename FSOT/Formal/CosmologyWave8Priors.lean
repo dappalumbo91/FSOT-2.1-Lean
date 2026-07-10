@@ -12,8 +12,8 @@ noncomputable section
 open Real
 
 def cosmology_wave8_observable_count : ℕ := 52
-def cosmology_wave8_max_error_pct : ℝ := (4.232801452006084 : ℝ)
-def cosmology_wave8_median_error_pct : ℝ := (0.014206603092685816 : ℝ)
+def cosmology_wave8_max_error_pct : ℝ := (0.35683948712437213 : ℝ)
+def cosmology_wave8_median_error_pct : ℝ := (0.014145689288404753 : ℝ)
 
 theorem cosmology_wave8_observable_count_pos : 0 < cosmology_wave8_observable_count := by
   unfold cosmology_wave8_observable_count; norm_num

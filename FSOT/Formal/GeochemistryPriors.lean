@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def geochemistry_observable_count : ℕ := 153
-def geochemistry_median_error_pct : ℝ := (0.617258 : ℝ)
+def geochemistry_median_error_pct : ℝ := (0.015388964340886185 : ℝ)
 def geochemistry_D_eff : ℕ := 15
 
 theorem geochemistry_observable_count_pos : 0 < geochemistry_observable_count := by

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T18:37:39.772844+00:00",
+  "generated_at": "2026-07-10T21:44:48.408168+00:00",
   "domain": "Initiation_Transformation_Archetype",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -17,7 +17,7 @@
   "observable_count": 10,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.7800073875207238,
+  "headline_median_error_pct": 0.19339831498352392,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -45,9 +45,9 @@
       "lab": "tier_gap_fill_lab",
       "property": "archetype_precision",
       "name": "transformation_cluster",
-      "computed": 0.780007,
+      "computed": 0.193398,
       "measured": 0.0,
-      "error_pct": 0.7800073875207238,
+      "error_pct": 0.19339831498352392,
       "observable_count": 4
     }
   ],
@@ -121,22 +121,22 @@
       "lab": "initiation_transformation_archetype_lab",
       "property": "archetype_mean_S",
       "name": "emergence_creation",
-      "computed": -0.607041,
+      "computed": -0.612996,
       "measured": -0.611813,
-      "error_pct": 0.780007,
+      "error_pct": 0.193398,
       "node_count": 6,
-      "formula": null,
+      "formula": "-(Resonance_Persistence - Ignition_Coherence) * Metatron_Spheres / (Metatron_Spheres - 3 + Resonance_Rate * Inner_coupling / (Consciousness_Gate * 4))",
       "eval_kind": "archetype_precision"
     },
     {
       "lab": "initiation_transformation_archetype_lab",
       "property": "archetype_mean_S",
       "name": "restoration_integration",
-      "computed": 1.635811,
+      "computed": 1.64723,
       "measured": 1.647313,
-      "error_pct": 0.69818,
+      "error_pct": 0.005018,
       "node_count": 1,
-      "formula": null,
+      "formula": "W_Binding + W_Integration / Metatron_Spheres * (5.7 + Inner_coupling / 3.3 + Cross_coupling / (2 * Consciousness_Gate))",
       "eval_kind": "archetype_precision"
     },
     {

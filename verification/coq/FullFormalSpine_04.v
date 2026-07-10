@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma const_rec_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma const_rec_headline_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
 Lemma const_rec_observable_count_pos : (0 < 21)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -162,6 +168,9 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma genomic_sciences_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
+Lemma geochemistry_median_error_under_half_pct : (0.015388964340886185%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma geochemistry_observable_count_pos : (0 < 153)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -295,14 +304,5 @@ Lemma igem_live_fasta_median_error_under_half_pct : 0%R < (0.5%R).
 Proof. lra. Qed.
 
 Lemma igem_live_fasta_observable_count_pos : (0 < 42)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma igem_parts_expanded_pooled_median_under_half_pct : (0.00007227106853889602%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma igem_parts_expanded_headline_median_under_half_pct : (0.00007227106853889602%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma igem_parts_expanded_observable_count_pos : (0 < 111)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma element_synthesis_condition_scaffold_headline_median_under_half_pct : (0.000787%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma element_synthesis_condition_scaffold_observable_count_pos : (0 < 45)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma element_synthesis_condition_scaffold_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -299,10 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma fpc_link_fluidlink_edges_pos : (0 < 6)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma const_rec_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma const_rec_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
 

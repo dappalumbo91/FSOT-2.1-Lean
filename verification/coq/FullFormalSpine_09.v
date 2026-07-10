@@ -6,6 +6,21 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma rd_interval_tightening_panel_observable_count_pos : (0 < 12)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma rd_interval_tightening_panel_beats_sota_headlines_pos : (0 < 2)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma fold_spine_pooled_median_under_half_pct : (0.019008268802505057%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fold_spine_headline_median_under_half_pct : (0.019008268802505057%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma fold_spine_observable_count_pos : (0 < 8)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma fold_spine_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -289,20 +304,5 @@ Lemma supply_chain_ext_headline_median_under_half_pct : (0.01801902489293558%R) 
 Proof. lra. Qed.
 
 Lemma supply_chain_ext_observable_count_pos : (0 < 220)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma supply_chain_ext_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma symbolic_archetype_panel_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma symbolic_archetype_panel_headline_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma symbolic_archetype_panel_observable_count_pos : (0 < 28)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma symbolic_archetype_panel_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

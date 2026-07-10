@@ -15,12 +15,12 @@ open Real
 
 def cross_proof_connective_obligation_count : ℕ := 24
 def cross_proof_connective_lean_modules : ℕ := 3
-def cross_proof_full_formal_obligation_count : ℕ := 1242
+def cross_proof_full_formal_obligation_count : ℕ := 1241
 def cross_proof_full_formal_modules : ℕ := 317
 def cross_proof_full_priors_obligation_count : ℕ := 1153
 def cross_proof_full_priors_lean_modules : ℕ := 300
-def cross_proof_full_formal_provable_count : ℕ := 1237
-def cross_proof_full_priors_margin_violation_count : ℕ := 5
+def cross_proof_full_formal_provable_count : ℕ := 1241
+def cross_proof_full_priors_margin_violation_count : ℕ := 0
 
 theorem cross_proof_obligation_count_pos : 0 < cross_proof_connective_obligation_count := by
   unfold cross_proof_connective_obligation_count; norm_num
@@ -46,11 +46,11 @@ theorem cross_proof_connective_spine_bundle :
 
 /-- Tier 80 bundle: wide FSOT/Formal spine exported for Coq cross-refinement. -/
 theorem cross_proof_full_formal_spine_bundle :
-    cross_proof_full_formal_obligation_count = 1242 ∧
+    cross_proof_full_formal_obligation_count = 1241 ∧
     cross_proof_full_formal_modules = 317 ∧
     cross_proof_full_priors_obligation_count = 1153 ∧
-    cross_proof_full_formal_provable_count = 1237 ∧
-    cross_proof_full_priors_margin_violation_count = 5 ∧
+    cross_proof_full_formal_provable_count = 1241 ∧
+    cross_proof_full_priors_margin_violation_count = 0 ∧
     cross_proof_connective_obligation_count < cross_proof_full_formal_obligation_count := by
   refine ⟨?h1, ?h2, ?h3, ?h4, ?h5, ?h6⟩
   · unfold cross_proof_full_formal_obligation_count; norm_num

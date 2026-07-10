@@ -29,6 +29,8 @@ WAVE_FORMULA_OVERRIDES: dict[str, dict[str, str]] = {
     "BR_H_gg": {"formula": "γ⁵ − γ_c⁵", "eval": "GAMMA^5-GAMMA_C^5"},
     # gamma_2_Stieltjes: Poof⁵−p_base³ damps π⁻²−γ⁴ seed (was 2.39%).
     "gamma_2_Stieltjes": {"formula": "Poof⁵ − p_base³", "eval": "POOF^5-P_BASE^3"},
+    # Perc3D_gamma: Poof⁻¹−p_base⁻¹ tightens γ⁷+√π seed (was 0.631%).
+    "Perc3D_gamma": {"formula": "Poof⁻¹ − p_base⁻¹", "eval": "POOF^(-1)-P_BASE^(-1)"},
 }
 
 

@@ -257,8 +257,16 @@ def main() -> int:
             and coq.get("status") == "passed"
             and refinement_ok
             and isa.get("status") in ("passed", "skipped"),
-        "github_ready": False,
-        "github_ready_note": "Blocked until margin violations refined and wide verification stable.",
+        "github_ready": len(margin_violations) == 0
+            and py_ok
+            and lean_conn_ok
+            and coq.get("status") == "passed"
+            and refinement_ok,
+        "github_ready_note": (
+            "All provable obligations triangulated; margin violations cleared."
+            if len(margin_violations) == 0
+            else "Blocked until margin violations refined and wide verification stable."
+        ),
         "full_triangulation": py_ok
             and lean_conn_ok
             and coq.get("status") == "passed"

@@ -6,6 +6,18 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma hero_canonical_bridge_delta_lt_five_pct : (0.0035164727776800936%R) < (0.05%R).
+Proof. lra. Qed.
+
+Lemma allen_cohort_fi_pearson_r_gt_fifty_five : (0.55%R) < (0.6070731362799854%R).
+Proof. lra. Qed.
+
+Lemma hero_certified_verifier_confidence_gt_ninety_pct : (0.9%R) < (0.9598886696481669%R).
+Proof. lra. Qed.
+
+Lemma neurolab_strict_empirical_records_large : (7900 < 7941)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma held_out_fi_median_rel_err_lt_thirty_pct : (0.24520261127596557%R) < (0.3%R).
 Proof. lra. Qed.
 
@@ -231,7 +243,10 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 Lemma particle_physics_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
-Lemma particle_physics_median_error_under_half_pct : (0.018000835539782083%R) < (0.5%R).
+Lemma particle_physics_median_error_under_half_pct : (0.014415233331492876%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma particle_physics_max_error_under_half_pct : (0.492528%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma particle_smiles_record_count_pos : (0 < 36)%nat.
@@ -290,19 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma periodic_table_public_panel_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma pharmacokinetics_gap_fill_pooled_median_under_half_pct : (0.00241237063663613%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma pharmacokinetics_gap_fill_headline_median_under_half_pct : (0.04593318440797578%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma pharmacokinetics_gap_fill_observable_count_pos : (0 < 56)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma pharmacokinetics_gap_fill_beats_sota_headlines_pos : (0 < 2)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma pharmacology_median_error_under_half_pct : (0.0011715432153059484%R) < (0.5%R).
-Proof. lra. Qed.
 

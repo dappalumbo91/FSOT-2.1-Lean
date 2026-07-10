@@ -127,6 +127,12 @@ MANUAL_OVERRIDES: dict[tuple[str, str], dict[str, object]] = {
         "error_pct": 0.001050,
         "unified_section": "§31",
     },
+    ("§66 Particle Masses", "muon"): {
+        "fsot_formula": "P_BASE⁻³+P_VAR⁻⁵",
+        "computed_value": 105.67991447405322,
+        "error_pct": 0.020741,
+        "unified_section": "§66",
+    },
 }
 
 

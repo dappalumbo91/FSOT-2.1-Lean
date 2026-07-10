@@ -3339,5 +3339,2255 @@
     "computed_value": 2.869248432631802,
     "error_pct": 0.026187016313516553,
     "old_error": 1.000335
+  },
+  {
+    "section": "\u00a784 Poisson Ratio \u03bd",
+    "name": "Au",
+    "unified_section": "\u00a784",
+    "fsot_formula": "OMEGA\u207b\u2077+OMEGA\u207b\u2075",
+    "computed_value": 0.43998755504601206,
+    "error_pct": 0.002828398633623759,
+    "old_error": 0.995172
+  },
+  {
+    "section": "\u00a784 Poisson Ratio \u03bd",
+    "name": "Pb",
+    "unified_section": "\u00a784",
+    "fsot_formula": "OMEGA\u207b\u2077+OMEGA\u207b\u2075",
+    "computed_value": 0.43998755504601206,
+    "error_pct": 0.002828398633623759,
+    "old_error": 0.995172
+  },
+  {
+    "section": "\u00a749 Molar \u039b\u00b0",
+    "name": "KCl",
+    "unified_section": "\u00a749",
+    "fsot_formula": "SUCTION\u00b2\u00b7CHAOS\u207b\u2078",
+    "computed_value": 149.95387175205067,
+    "error_pct": 0.035938460340672426,
+    "old_error": 0.991889
+  },
+  {
+    "section": "\u00a765 Enzyme pKi",
+    "name": "captopril_ACE",
+    "unified_section": "\u00a765",
+    "fsot_formula": "OMEGA\u2079-C_EFF\u207b\u2078",
+    "computed_value": 8.768246556133533,
+    "error_pct": 0.0199936586826242,
+    "old_error": 0.98989
+  },
+  {
+    "section": "\u00a760 pKH Extended",
+    "name": "HF",
+    "unified_section": "\u00a760",
+    "fsot_formula": "P_BASE\u00b3-P_VAR\u207b\u00b2",
+    "computed_value": -1.080059202480188,
+    "error_pct": 0.00548171112851675,
+    "old_error": 0.977055
+  },
+  {
+    "section": "\u00a775 Superconducting Tc",
+    "name": "Ga",
+    "unified_section": "\u00a775",
+    "fsot_formula": "P_VAR\u207b\u00b2-P_BASE\u00b3",
+    "computed_value": 1.080059202480188,
+    "error_pct": 0.00548171112851675,
+    "old_error": 0.977055
+  },
+  {
+    "section": "\u00a730 Refractive nD",
+    "name": "DMSO",
+    "unified_section": "\u00a730",
+    "fsot_formula": "C_EFF\u2076+C_EFF\u2078",
+    "computed_value": 1.4792748289800337,
+    "error_pct": 0.018582081138175423,
+    "old_error": 0.976892
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "C",
+    "unified_section": "\u00a741",
+    "fsot_formula": "S_quant\u2074-S_cosm\u2074",
+    "computed_value": 0.7698178704761607,
+    "error_pct": 0.023653184914199495,
+    "old_error": 0.976185
+  },
+  {
+    "section": "\u00a737 Thermal \u03ba",
+    "name": "He_gas",
+    "unified_section": "\u00a737",
+    "fsot_formula": "S_quant\u00b2-S_quant\u2076",
+    "computed_value": 0.15196307398447872,
+    "error_pct": 0.024293431263994338,
+    "old_error": 0.975141
+  },
+  {
+    "section": "\u00a721 Protein \u0394G",
+    "name": "SH3 domain",
+    "unified_section": "\u00a721",
+    "fsot_formula": "OMEGA\u207b\u2078-OMEGA\u2075",
+    "computed_value": -3.502756499504318,
+    "error_pct": 0.07875712869480316,
+    "old_error": 0.971417
+  },
+  {
+    "section": "\u00a773 Thermal Expansion",
+    "name": "Ti",
+    "unified_section": "\u00a773",
+    "fsot_formula": "PSI\u207b\u2074-GAMMA_C\u207b\u00b9",
+    "computed_value": 8.597588141040656,
+    "error_pct": 0.028044871620269182,
+    "old_error": 0.967287
+  },
+  {
+    "section": "\u00a772 Electronegativity Ext",
+    "name": "Si",
+    "unified_section": "\u00a772",
+    "fsot_formula": "G\u2075+S_quant\u207b\u2075",
+    "computed_value": 1.9003014455787146,
+    "error_pct": 0.01586555677445782,
+    "old_error": 0.965067
+  },
+  {
+    "section": "\u00a716 pKsp",
+    "name": "AgI",
+    "unified_section": "\u00a716",
+    "fsot_formula": "B_IN\u207b\u2074+K\u207b\u00b3",
+    "computed_value": 16.070446920935435,
+    "error_pct": 0.0027810885839125513,
+    "old_error": 0.962511
+  },
+  {
+    "section": "\u00a761 Glass Tg",
+    "name": "nylon6",
+    "unified_section": "\u00a761",
+    "fsot_formula": "K\u207b\u2075\u00b7GATE\u207b\u00b3",
+    "computed_value": 323.27396441521535,
+    "error_pct": 0.08481870440103591,
+    "old_error": 0.961369
+  },
+  {
+    "section": "\u00a772 Electronegativity Ext",
+    "name": "Be",
+    "unified_section": "\u00a772",
+    "fsot_formula": "C_EFF\u207b\u00b3/A_BLEED\u207b\u2077",
+    "computed_value": 1.569852127869016,
+    "error_pct": 0.009418607069044252,
+    "old_error": 0.957141
+  },
+  {
+    "section": "\u00a718 Crystal Field \u0394o",
+    "name": "[Cr(CN)\u2086]\u00b3\u207b",
+    "unified_section": "\u00a718",
+    "fsot_formula": "OMEGA\u2076\u00b7THETA\u207b\u2077",
+    "computed_value": 26650.091125009265,
+    "error_pct": 0.1883125000348306,
+    "old_error": 0.953594
+  },
+  {
+    "section": "\u00a716 pKsp",
+    "name": "AgCl",
+    "unified_section": "\u00a716",
+    "fsot_formula": "P_NEW\u207b\u00b2/P_VAR\u207b\u00b3",
+    "computed_value": 9.749038028879971,
+    "error_pct": 0.009866370461836391,
+    "old_error": 0.951194
+  },
+  {
+    "section": "\u00a732 Work Functions",
+    "name": "Cu",
+    "unified_section": "\u00a732",
+    "fsot_formula": "OMEGA\u2076-ETA\u2074",
+    "computed_value": 4.649980250953893,
+    "error_pct": 0.0004247106689848945,
+    "old_error": 0.943131
+  },
+  {
+    "section": "\u00a768 Rotational B\u2080",
+    "name": "O2",
+    "unified_section": "\u00a768",
+    "fsot_formula": "P_NEW+P_VAR\u207b\u00b3",
+    "computed_value": 1.4377226056878063,
+    "error_pct": 0.001572350824672795,
+    "old_error": 0.942391
+  },
+  {
+    "section": "\u00a74a \u0394H\u00b0f",
+    "name": "C\u2082H\u2085OH(l)",
+    "unified_section": "\u00a74a",
+    "fsot_formula": "S_cosm\u207b\u2075-S_cosm\u207b\u2078",
+    "computed_value": -277.3847505045384,
+    "error_pct": 0.10992455452541453,
+    "old_error": 0.941158
+  },
+  {
+    "section": "\u00a793 Membrane Potential",
+    "name": "Mammalian_neuron",
+    "unified_section": "\u00a793",
+    "fsot_formula": "B_IN\u2074\u00b7K\u207b\u2076",
+    "computed_value": 70.00091378865987,
+    "error_pct": 0.0013054123712460555,
+    "old_error": 0.938765
+  },
+  {
+    "section": "\u00a747 \u0394Hvap",
+    "name": "acetone",
+    "unified_section": "\u00a747",
+    "fsot_formula": "E\u00b2\u00b7PHI\u00b3",
+    "computed_value": 31.300543924629643,
+    "error_pct": 0.0017377783694651414,
+    "old_error": 0.938413
+  },
+  {
+    "section": "\u00a740 Ionic Radii",
+    "name": "Br\u207b",
+    "unified_section": "\u00a740",
+    "fsot_formula": "G\u207b\u00b3/S_quant\u2079",
+    "computed_value": 1.9600200918838973,
+    "error_pct": 0.0010250961172085997,
+    "old_error": 0.938212
+  },
+  {
+    "section": "\u00a750 Diffusion D",
+    "name": "glucose",
+    "unified_section": "\u00a750",
+    "fsot_formula": "P_VAR\u2079-C_FAC\u2074",
+    "computed_value": 0.6727328685350314,
+    "error_pct": 0.039692639668439104,
+    "old_error": 0.934321
+  },
+  {
+    "section": "\u00a747 \u0394Hvap",
+    "name": "benzene",
+    "unified_section": "\u00a747",
+    "fsot_formula": "S_cosm-S_cosm\u207b\u2075",
+    "computed_value": 30.723090640254416,
+    "error_pct": 0.010060677911513199,
+    "old_error": 0.93189
+  },
+  {
+    "section": "\u00a751 Solubility logS",
+    "name": "phenol",
+    "unified_section": "\u00a751",
+    "fsot_formula": "CHAOS\u2077-CHAOS\u00b2",
+    "computed_value": -0.11001253945051367,
+    "error_pct": 0.011399500466976261,
+    "old_error": 0.931448
+  },
+  {
+    "section": "\u00a760 pKH Extended",
+    "name": "HBr",
+    "unified_section": "\u00a760",
+    "fsot_formula": "CHAOS\u2077-CHAOS\u00b2",
+    "computed_value": -0.11001253945051367,
+    "error_pct": 0.011399500466976261,
+    "old_error": 0.931448
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "C\u2082H\u2085OH",
+    "unified_section": "\u00a729",
+    "fsot_formula": "CHAOS\u207b\u00b9-CHAOS\u207b\u00b3",
+    "computed_value": 24.54806131238867,
+    "error_pct": 0.007896894547178462,
+    "old_error": 0.930326
+  },
+  {
+    "section": "\u00a712 Cp\u00b0",
+    "name": "Fe(s)",
+    "unified_section": "\u00a712",
+    "fsot_formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
+    "computed_value": 25.093495803120952,
+    "error_pct": 0.02591313497629312,
+    "old_error": 0.929594
+  },
+  {
+    "section": "\u00a752 \u00b9\u00b3C NMR \u03b4",
+    "name": "R-CH\u2082-R",
+    "unified_section": "\u00a752",
+    "fsot_formula": "PI\u2074/PHI\u00b3",
+    "computed_value": 22.99516711048985,
+    "error_pct": 0.02101256308761418,
+    "old_error": 0.927845
+  },
+  {
+    "section": "\u00a739 Speed of Sound",
+    "name": "C\u2082H\u2085OH",
+    "unified_section": "\u00a739",
+    "fsot_formula": "PI\u2076+PHI\u00b9\u00b9",
+    "computed_value": 1160.394218574045,
+    "error_pct": 0.1381911726295182,
+    "old_error": 0.926738
+  },
+  {
+    "section": "\u00a743 Dipole Moments",
+    "name": "SO\u2082",
+    "unified_section": "\u00a743",
+    "fsot_formula": "C_EFF\u2079+A_BLEED\u207b\u00b9",
+    "computed_value": 1.6328914622486153,
+    "error_pct": 0.0066465248857778235,
+    "old_error": 0.916473
+  },
+  {
+    "section": "\u00a767 Nuclear \u03bcN",
+    "name": "H_2",
+    "unified_section": "\u00a767",
+    "fsot_formula": "C_EFF\u207b\u2076/A_BLEED\u2079",
+    "computed_value": 0.857423516359112,
+    "error_pct": 0.002742752404001409,
+    "old_error": 0.916256
+  },
+  {
+    "section": "\u00a794 Donor Number DN",
+    "name": "ethyl_acetate",
+    "unified_section": "\u00a794",
+    "fsot_formula": "PI\u00b2\u00b7GAMMA\u207b\u00b9",
+    "computed_value": 17.09864267591042,
+    "error_pct": 0.00793756777533529,
+    "old_error": 0.912607
+  },
+  {
+    "section": "\u00a714 Surface Tension",
+    "name": "CH\u2083OH",
+    "unified_section": "\u00a714",
+    "fsot_formula": "A_BLEED+A_IN\u2076",
+    "computed_value": 22.494890966787338,
+    "error_pct": 0.022706814278497706,
+    "old_error": 0.90476
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "CdS",
+    "unified_section": "\u00a777",
+    "fsot_formula": "PHI\u207b\u2074+GAMMA\u2075",
+    "computed_value": 0.20997331836080613,
+    "error_pct": 0.012705542473269106,
+    "old_error": 0.904236
+  },
+  {
+    "section": "\u00a738 Resistivity \u03c1",
+    "name": "Au",
+    "unified_section": "\u00a738",
+    "fsot_formula": "P_VAR\u207b\u2077+P_VAR\u207b\u00b2",
+    "computed_value": 2.44009581866226,
+    "error_pct": 0.003926994354924627,
+    "old_error": 0.902477
+  },
+  {
+    "section": "\u00a7105 Autoignition T",
+    "name": "Benzene",
+    "unified_section": "\u00a7105",
+    "fsot_formula": "C_FAC\u207b\u00b2+CHAOS\u207b\u2076",
+    "computed_value": 772.1390088349352,
+    "error_pct": 0.14773136639886192,
+    "old_error": 0.901864
+  },
+  {
+    "section": "\u00a752 \u00b9\u00b3C NMR \u03b4",
+    "name": "C=O_acid",
+    "unified_section": "\u00a752",
+    "fsot_formula": "K\u207b\u2076-B_IN\u207b\u2078",
+    "computed_value": 174.87509405333662,
+    "error_pct": 0.07137482666478588,
+    "old_error": 0.901573
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "F",
+    "unified_section": "\u00a741",
+    "fsot_formula": "P_VAR\u2078+C_FAC\u2076",
+    "computed_value": 0.7099433297324532,
+    "error_pct": 0.00798172782348499,
+    "old_error": 0.898617
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "Zn",
+    "unified_section": "\u00a728",
+    "fsot_formula": "E\u2077-E\u2076",
+    "computed_value": 693.2043649357233,
+    "error_pct": 0.07281145311437678,
+    "old_error": 0.898241
+  },
+  {
+    "section": "\u00a737 Thermal \u03ba",
+    "name": "Ti",
+    "unified_section": "\u00a737",
+    "fsot_formula": "K\u207b\u2078/GATE\u207b\u2078",
+    "computed_value": 21.89129086765763,
+    "error_pct": 0.03976772759072059,
+    "old_error": 0.896936
+  },
+  {
+    "section": "\u00a765 Enzyme pKi",
+    "name": "allopurinol_XO",
+    "unified_section": "\u00a765",
+    "fsot_formula": "B_IN\u00b3+K\u207b\u00b2",
+    "computed_value": 6.152148753020613,
+    "error_pct": 0.03493907350590267,
+    "old_error": 0.89552
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "Na",
+    "unified_section": "\u00a728",
+    "fsot_formula": "OMEGA\u207b\u00b9\u00b7THETA\u207b\u2075",
+    "computed_value": 370.961738889067,
+    "error_pct": 0.016645696701818296,
+    "old_error": 0.895467
+  },
+  {
+    "section": "\u00a75b pKa",
+    "name": "HCN",
+    "unified_section": "\u00a75b",
+    "fsot_formula": "C_FAC\u00b2+CHAOS\u207b\u00b2",
+    "computed_value": 9.208715777931866,
+    "error_pct": 0.013943779241418137,
+    "old_error": 0.894557
+  },
+  {
+    "section": "\u00a715 Viscosity",
+    "name": "toluene",
+    "unified_section": "\u00a715",
+    "fsot_formula": "ETA\u207b\u00b9\u00b7OMEGA\u207b\u2075",
+    "computed_value": 0.589992340688357,
+    "error_pct": 0.0012981884140554035,
+    "old_error": 0.88838
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "GaAs",
+    "unified_section": "\u00a777",
+    "fsot_formula": "PI/GAMMA\u207b\u2077",
+    "computed_value": 0.06706819744073372,
+    "error_pct": 0.10178722497570054,
+    "old_error": 0.883224
+  },
+  {
+    "section": "\u00a752 \u00b9\u00b3C NMR \u03b4",
+    "name": "C=O_ester",
+    "unified_section": "\u00a752",
+    "fsot_formula": "PHI\u00b9\u00b9-PHI\u2077",
+    "computed_value": 169.97058314499208,
+    "error_pct": 0.017304032357602035,
+    "old_error": 0.88312
+  },
+  {
+    "section": "\u00a752 \u00b9\u00b3C NMR \u03b4",
+    "name": "C=O_amide",
+    "unified_section": "\u00a752",
+    "fsot_formula": "PHI\u00b9\u00b9-PHI\u2077",
+    "computed_value": 169.97058314499208,
+    "error_pct": 0.017304032357602035,
+    "old_error": 0.88312
+  },
+  {
+    "section": "\u00a780 Proton Affinity",
+    "name": "AcOH",
+    "unified_section": "\u00a780",
+    "fsot_formula": "PHI\u2077\u00b7GAMMA\u207b\u2076",
+    "computed_value": 785.0274248659258,
+    "error_pct": 0.16937920963707587,
+    "old_error": 0.882158
+  },
+  {
+    "section": "\u00a734 Young's Modulus",
+    "name": "Ni",
+    "unified_section": "\u00a734",
+    "fsot_formula": "K\u207b\u2075\u00b7GATE\u207b\u00b2",
+    "computed_value": 199.79429768652713,
+    "error_pct": 0.10285115673643475,
+    "old_error": 0.881848
+  },
+  {
+    "section": "\u00a762 Bulk Modulus",
+    "name": "Pt",
+    "unified_section": "\u00a762",
+    "fsot_formula": "PHI\u2077+PHI\u00b9\u00b9",
+    "computed_value": 228.03946685248934,
+    "error_pct": 0.017310023021640548,
+    "old_error": 0.880057
+  },
+  {
+    "section": "\u00a72 Transition Metal IE",
+    "name": "Co",
+    "unified_section": "\u00a72",
+    "fsot_formula": "S_cosm\u2079-S_cosm\u207b\u00b3",
+    "computed_value": 7.881222068806779,
+    "error_pct": 0.0028177744801279737,
+    "old_error": 0.878008
+  },
+  {
+    "section": "\u00a726 Polarizability",
+    "name": "Na",
+    "unified_section": "\u00a726",
+    "fsot_formula": "K\u207b\u2077/GATE\u207b\u2076",
+    "computed_value": 24.083804338835442,
+    "error_pct": 0.10865060624038694,
+    "old_error": 0.877664
+  },
+  {
+    "section": "\u00a772 Electronegativity Ext",
+    "name": "K",
+    "unified_section": "\u00a772",
+    "fsot_formula": "ETA\u2074+OMEGA\u207b\u00b9",
+    "computed_value": 0.8202588235653535,
+    "error_pct": 0.03156384943336109,
+    "old_error": 0.876631
+  },
+  {
+    "section": "\u00a746 Critical Temp Tc",
+    "name": "H\u2082O",
+    "unified_section": "\u00a746",
+    "fsot_formula": "ETA\u207b\u2078+ETA\u207b\u2077",
+    "computed_value": 649.0945332873966,
+    "error_pct": 0.30822643909698977,
+    "old_error": 0.874903
+  },
+  {
+    "section": "\u00a787 Heat Cap Ratio Cp/Cv",
+    "name": "O2",
+    "unified_section": "\u00a787",
+    "fsot_formula": "A_BLEED\u207b\u2075+A_IN\u207b\u00b9",
+    "computed_value": 1.394848703538587,
+    "error_pct": 0.0108456244740492,
+    "old_error": 0.866824
+  },
+  {
+    "section": "\u00a758 log\u03b2 Stability",
+    "name": "Ni(en)3_2+",
+    "unified_section": "\u00a758",
+    "fsot_formula": "A_IN\u2078/B_IN\u207b\u2075",
+    "computed_value": 18.098729681047793,
+    "error_pct": 0.007018336752533296,
+    "old_error": 0.860376
+  },
+  {
+    "section": "\u00a749 Molar \u039b\u00b0",
+    "name": "NH\u2084Cl",
+    "unified_section": "\u00a749",
+    "fsot_formula": "C_FAC\u207b\u2074+C_FAC\u207b\u00b9",
+    "computed_value": 149.64210523169132,
+    "error_pct": 0.038673859925631944,
+    "old_error": 0.859613
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Val",
+    "unified_section": "\u00a736",
+    "fsot_formula": "A_BLEED\u2079/A_IN\u207b\u00b2",
+    "computed_value": 4.199685165563348,
+    "error_pct": 0.007496058015537834,
+    "old_error": 0.858761
+  },
+  {
+    "section": "\u00a733 Debye Temps",
+    "name": "W",
+    "unified_section": "\u00a733",
+    "fsot_formula": "K\u207b\u2077-K\u207b\u2074",
+    "computed_value": 400.097272462368,
+    "error_pct": 0.024318115591995593,
+    "old_error": 0.857198
+  },
+  {
+    "section": "\u00a751 Solubility logS",
+    "name": "aniline",
+    "unified_section": "\u00a751",
+    "fsot_formula": "S_cosm-S_cosm\u2079",
+    "computed_value": -0.5004147633567819,
+    "error_pct": 0.0829526713563844,
+    "old_error": 0.851214
+  },
+  {
+    "section": "\u00a758 log\u03b2 Stability",
+    "name": "Ni(NH3)6_2+",
+    "unified_section": "\u00a758",
+    "fsot_formula": "S_quant\u2077-S_cosm\u207b\u00b3",
+    "computed_value": 8.610431461681738,
+    "error_pct": 0.005011169358175487,
+    "old_error": 0.850019
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "Ar",
+    "unified_section": "\u00a748",
+    "fsot_formula": "G\u207b\u00b2-CHAOS\u2074",
+    "computed_value": 1.1798979796276863,
+    "error_pct": 0.008645794263869522,
+    "old_error": 0.843392
+  },
+  {
+    "section": "\u00a775 Superconducting Tc",
+    "name": "Al",
+    "unified_section": "\u00a775",
+    "fsot_formula": "G\u207b\u00b2-CHAOS\u2074",
+    "computed_value": 1.1798979796276863,
+    "error_pct": 0.008645794263869522,
+    "old_error": 0.843392
+  },
+  {
+    "section": "\u00a712 Cp\u00b0",
+    "name": "H\u2082O(l)",
+    "unified_section": "\u00a712",
+    "fsot_formula": "PHI\u2079-PHI\u207b\u00b9",
+    "computed_value": 75.39512162874655,
+    "error_pct": 0.020060531635123204,
+    "old_error": 0.839952
+  },
+  {
+    "section": "\u00a718 Crystal Field \u0394o",
+    "name": "[Fe(H\u2082O)\u2086]\u00b2\u207a",
+    "unified_section": "\u00a718",
+    "fsot_formula": "P_BASE\u207b\u2076-P_BASE\u207b\u2074",
+    "computed_value": 10415.98506936773,
+    "error_pct": 0.1537025900743349,
+    "old_error": 0.831237
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "Ag",
+    "unified_section": "\u00a728",
+    "fsot_formula": "GAMMA_C\u207b\u00b9+ALPHA\u207b\u00b9",
+    "computed_value": 1234.83966885413,
+    "error_pct": 0.00488550861366287,
+    "old_error": 0.821631
+  },
+  {
+    "section": "\u00a742 Binding E/A",
+    "name": "Li-7",
+    "unified_section": "\u00a742",
+    "fsot_formula": "OMEGA\u00b3+THETA\u207b\u00b9",
+    "computed_value": 5.605024490582791,
+    "error_pct": 0.01740116691418574,
+    "old_error": 0.82106
+  },
+  {
+    "section": "\u00a719 NMR \u03b4",
+    "name": "RCOOH",
+    "unified_section": "\u00a719",
+    "fsot_formula": "PHI\u2075-PHI\u207b\u2075",
+    "computed_value": 11.000000000000002,
+    "error_pct": 1.6148698540002278e-14,
+    "old_error": 0.819727
+  },
+  {
+    "section": "\u00a721 Protein \u0394G",
+    "name": "BPTI",
+    "unified_section": "\u00a721",
+    "fsot_formula": "PHI\u207b\u2075-PHI\u2075",
+    "computed_value": -11.000000000000002,
+    "error_pct": 1.6148698540002278e-14,
+    "old_error": 0.819727
+  },
+  {
+    "section": "\u00a770 Shear Modulus",
+    "name": "Ti",
+    "unified_section": "\u00a770",
+    "fsot_formula": "ETA\u207b\u2077\u00b7OMEGA\u207b\u2076",
+    "computed_value": 43.983469574867584,
+    "error_pct": 0.03756914802821789,
+    "old_error": 0.819727
+  },
+  {
+    "section": "\u00a746 Critical Temp Tc",
+    "name": "HCl",
+    "unified_section": "\u00a746",
+    "fsot_formula": "C_COSM\u207b\u00b9\u00b7E\u00b3",
+    "computed_value": 324.9908142400863,
+    "error_pct": 0.10497897430658593,
+    "old_error": 0.81722
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "Pb",
+    "unified_section": "\u00a728",
+    "fsot_formula": "OMEGA\u00b3\u00b7POOF\u207b\u00b3",
+    "computed_value": 599.4598812039975,
+    "error_pct": 0.18982996936438984,
+    "old_error": 0.816311
+  },
+  {
+    "section": "\u00a766 Particle Masses",
+    "name": "muon",
+    "unified_section": "\u00a766",
+    "fsot_formula": "P_BASE\u207b\u00b3+P_VAR\u207b\u2075",
+    "computed_value": 105.67991447405322,
+    "error_pct": 0.020740951043194712,
+    "old_error": 0.813808
+  },
+  {
+    "section": "\u00a72 Transition Metal IE",
+    "name": "Fe",
+    "unified_section": "\u00a72",
+    "fsot_formula": "S_cosm\u2076-S_cosm\u207b\u00b3",
+    "computed_value": 7.899354433437074,
+    "error_pct": 0.03347970846527074,
+    "old_error": 0.813361
+  },
+  {
+    "section": "\u00a769 Virial B(T)",
+    "name": "O2",
+    "unified_section": "\u00a769",
+    "fsot_formula": "GAMMA_C-PSI\u207b\u2076",
+    "computed_value": -16.10313436132265,
+    "error_pct": 0.01946808274936366,
+    "old_error": 0.811457
+  },
+  {
+    "section": "\u00a714 Surface Tension",
+    "name": "CHCl\u2083",
+    "unified_section": "\u00a714",
+    "fsot_formula": "GAMMA\u207b\u2076+GAMMA\u2074",
+    "computed_value": 27.148807284811035,
+    "error_pct": 0.04121029156467324,
+    "old_error": 0.811344
+  },
+  {
+    "section": "\u00a74b Lattice Energies",
+    "name": "MgF\u2082",
+    "unified_section": "\u00a74b",
+    "fsot_formula": "E\u2078-GAMMA\u207b\u2076",
+    "computed_value": 2953.920187285829,
+    "error_pct": 0.10415328759455908,
+    "old_error": 0.810213
+  },
+  {
+    "section": "\u00a743 Dipole Moments",
+    "name": "HI",
+    "unified_section": "\u00a743",
+    "fsot_formula": "G\u2075/S_quant\u207b\u2078",
+    "computed_value": 0.4479857951822637,
+    "error_pct": 0.0031707182447065253,
+    "old_error": 0.808314
+  },
+  {
+    "section": "\u00a723 Drug pKd",
+    "name": "metformin/AMPK",
+    "unified_section": "\u00a723",
+    "fsot_formula": "OMEGA/C_FAC",
+    "computed_value": 4.499756240982774,
+    "error_pct": 0.005416867049470556,
+    "old_error": 0.808228
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Ile",
+    "unified_section": "\u00a736",
+    "fsot_formula": "OMEGA/C_FAC",
+    "computed_value": 4.499756240982774,
+    "error_pct": 0.005416867049470556,
+    "old_error": 0.808228
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Arg",
+    "unified_section": "\u00a736",
+    "fsot_formula": "A_IN\u207b\u2074-A_IN\u00b3",
+    "computed_value": -4.501647827905011,
+    "error_pct": 0.03661839788914199,
+    "old_error": 0.808228
+  },
+  {
+    "section": "\u00a727 Boiling Points",
+    "name": "N\u2082",
+    "unified_section": "\u00a727",
+    "fsot_formula": "P_BASE\u207b\u00b3/P_VAR\u207b\u2077",
+    "computed_value": 77.33691047145008,
+    "error_pct": 0.029846856967318126,
+    "old_error": 0.807899
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "CH\u2083COOH",
+    "unified_section": "\u00a729",
+    "fsot_formula": "B_IN\u00b3+K\u207b\u00b2",
+    "computed_value": 6.152148753020613,
+    "error_pct": 0.03493907350590267,
+    "old_error": 0.802701
+  },
+  {
+    "section": "\u00a734 Young's Modulus",
+    "name": "Mg",
+    "unified_section": "\u00a734",
+    "fsot_formula": "ETA\u207b\u2075-ETA\u2074",
+    "computed_value": 45.00137640336734,
+    "error_pct": 0.003058674149640537,
+    "old_error": 0.801511
+  },
+  {
+    "section": "\u00a75b pKa",
+    "name": "HF",
+    "unified_section": "\u00a75b",
+    "fsot_formula": "OMEGA\u2078-OMEGA\u2076",
+    "computed_value": 3.1697638180476053,
+    "error_pct": 0.007450534775855193,
+    "old_error": 0.796519
+  },
+  {
+    "section": "\u00a721 Protein \u0394G",
+    "name": "myoglobin",
+    "unified_section": "\u00a721",
+    "fsot_formula": "PHI\u00b2-C_COSM\u207b\u00b9",
+    "computed_value": -13.562305898749054,
+    "error_pct": 0.27716250919812885,
+    "old_error": 0.795617
+  },
+  {
+    "section": "\u00a726 Polarizability",
+    "name": "Al",
+    "unified_section": "\u00a726",
+    "fsot_formula": "SUCTION\u207b\u00b9-CHAOS\u2076",
+    "computed_value": 6.79983300340812,
+    "error_pct": 0.0024558322335329684,
+    "old_error": 0.795617
+  },
+  {
+    "section": "\u00a727 Boiling Points",
+    "name": "CCl\u2084",
+    "unified_section": "\u00a727",
+    "fsot_formula": "G\u207b\u2074\u00b7S_cosm\u207b\u2078",
+    "computed_value": 349.7030622518906,
+    "error_pct": 0.05628400917673783,
+    "old_error": 0.792126
+  },
+  {
+    "section": "\u00a713 \u03c7m Magnetic",
+    "name": "C\u2086H\u2086",
+    "unified_section": "\u00a713",
+    "fsot_formula": "E\u00b2-S_cosm\u207b\u2076",
+    "computed_value": -54.75678339604299,
+    "error_pct": 0.07886241597993855,
+    "old_error": 0.788741
+  },
+  {
+    "section": "\u00a766 Particle Masses",
+    "name": "D_meson",
+    "unified_section": "\u00a766",
+    "fsot_formula": "P_BASE\u207b\u2075/P_VAR\u207b\u2075",
+    "computed_value": 1868.874860640142,
+    "error_pct": 0.04199369724217353,
+    "old_error": 0.784358
+  },
+  {
+    "section": "\u00a711 IE\u2082",
+    "name": "Be",
+    "unified_section": "\u00a711",
+    "fsot_formula": "PHI\u00b2+GAMMA\u207b\u2075",
+    "computed_value": 18.224675552325184,
+    "error_pct": 0.07509501029699463,
+    "old_error": 0.7802
+  },
+  {
+    "section": "\u00a74b Lattice Energies",
+    "name": "KCl",
+    "unified_section": "\u00a74b",
+    "fsot_formula": "GATE\u207b\u2074\u00b7P_BASE\u207b\u00b3",
+    "computed_value": 715.8461282477037,
+    "error_pct": 0.11833961506346094,
+    "old_error": 0.776437
+  },
+  {
+    "section": "\u00a711 IE\u2082",
+    "name": "F",
+    "unified_section": "\u00a711",
+    "fsot_formula": "A_IN\u2077-B_IN",
+    "computed_value": 34.962602686908404,
+    "error_pct": 0.02401221895739955,
+    "old_error": 0.775913
+  },
+  {
+    "section": "\u00a764 Neutron \u03c3_a",
+    "name": "Al",
+    "unified_section": "\u00a764",
+    "fsot_formula": "C_EFF\u207b\u2074-C_EFF",
+    "computed_value": 0.23101365141236363,
+    "error_pct": 0.0059097023219129375,
+    "old_error": 0.775216
+  },
+  {
+    "section": "\u00a743 Dipole Moments",
+    "name": "DMSO",
+    "unified_section": "\u00a743",
+    "fsot_formula": "ALPHA+PSI\u207b\u00b3",
+    "computed_value": 3.959942775484923,
+    "error_pct": 0.0014450635120497467,
+    "old_error": 0.769357
+  },
+  {
+    "section": "\u00a762 Bulk Modulus",
+    "name": "Ag",
+    "unified_section": "\u00a762",
+    "fsot_formula": "A_BL\u00b7A_IN\u2079",
+    "computed_value": 103.99523346783114,
+    "error_pct": 0.004583204008517656,
+    "old_error": 0.767449
+  },
+  {
+    "section": "\u00a717 pKH Henry's Law",
+    "name": "Ar",
+    "unified_section": "\u00a717",
+    "fsot_formula": "PI-THETA",
+    "computed_value": 2.85069611304462,
+    "error_pct": 0.024425019109470772,
+    "old_error": 0.763651
+  },
+  {
+    "section": "\u00a717 pKH Henry's Law",
+    "name": "CH\u2084",
+    "unified_section": "\u00a717",
+    "fsot_formula": "PI-THETA",
+    "computed_value": 2.85069611304462,
+    "error_pct": 0.024425019109470772,
+    "old_error": 0.763651
+  },
+  {
+    "section": "\u00a779 Optical Phonon \u03bd",
+    "name": "GaAs",
+    "unified_section": "\u00a779",
+    "fsot_formula": "GAMMA\u207b\u2075-PHI\u2074",
+    "computed_value": 8.752539597325605,
+    "error_pct": 0.02902396943548118,
+    "old_error": 0.763581
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Lys",
+    "unified_section": "\u00a736",
+    "fsot_formula": "C_COSM-S_cosm\u207b\u00b2",
+    "computed_value": -3.8991890974607193,
+    "error_pct": 0.020792372802067242,
+    "old_error": 0.757268
+  },
+  {
+    "section": "\u00a757 logP",
+    "name": "hexane",
+    "unified_section": "\u00a757",
+    "fsot_formula": "S_cosm\u207b\u00b2-C_COSM",
+    "computed_value": 3.8991890974607193,
+    "error_pct": 0.020792372802067242,
+    "old_error": 0.757268
+  },
+  {
+    "section": "\u00a759 Colligative",
+    "name": "acetic_Kf",
+    "unified_section": "\u00a759",
+    "fsot_formula": "S_cosm\u207b\u00b2-C_COSM",
+    "computed_value": 3.8991890974607193,
+    "error_pct": 0.020792372802067242,
+    "old_error": 0.757268
+  },
+  {
+    "section": "\u00a787 Heat Cap Ratio Cp/Cv",
+    "name": "CH4",
+    "unified_section": "\u00a787",
+    "fsot_formula": "GAMMA\u207b\u00b9+GAMMA_C",
+    "computed_value": 1.304066197808427,
+    "error_pct": 0.005076519051140418,
+    "old_error": 0.756858
+  },
+  {
+    "section": "\u00a783 Electron Mobility",
+    "name": "SiC",
+    "unified_section": "\u00a783",
+    "fsot_formula": "PHI\u2075\u00b7GAMMA\u207b\u2078",
+    "computed_value": 899.9809794451713,
+    "error_pct": 0.002113394980963474,
+    "old_error": 0.75456
+  },
+  {
+    "section": "\u00a738 Resistivity \u03c1",
+    "name": "SS304",
+    "unified_section": "\u00a738",
+    "fsot_formula": "E\u00b9\u2070/PI\u2075",
+    "computed_value": 71.97728410922835,
+    "error_pct": 0.03154984829395839,
+    "old_error": 0.753364
+  },
+  {
+    "section": "\u00a789 Surface Energy \u03b3s",
+    "name": "Zn",
+    "unified_section": "\u00a789",
+    "fsot_formula": "A_BLEED\u207b\u00b2+A_IN\u207b\u2075",
+    "computed_value": 0.9899971039384424,
+    "error_pct": 0.0002925314704612961,
+    "old_error": 0.751245
+  },
+  {
+    "section": "\u00a726 Polarizability",
+    "name": "N",
+    "unified_section": "\u00a726",
+    "fsot_formula": "K\u00b7GATE\u207b\u00b2",
+    "computed_value": 1.1001545995817477,
+    "error_pct": 0.014054507431597458,
+    "old_error": 0.75054
+  },
+  {
+    "section": "\u00a731 Band Gaps",
+    "name": "Si",
+    "unified_section": "\u00a731",
+    "fsot_formula": "POOF\u00b2+A_BLEED\u00b2",
+    "computed_value": 1.1197105734345842,
+    "error_pct": 0.025841657626416277,
+    "old_error": 0.742087
+  },
+  {
+    "section": "\u00a714 Surface Tension",
+    "name": "Hg",
+    "unified_section": "\u00a714",
+    "fsot_formula": "GAMMA\u207b\u00b2\u00b7GAMMA_C\u207b\u2076",
+    "computed_value": 485.620327673315,
+    "error_pct": 0.024784278746650706,
+    "old_error": 0.740514
+  },
+  {
+    "section": "\u00a766 Particle Masses",
+    "name": "pion_pm",
+    "unified_section": "\u00a766",
+    "fsot_formula": "THETA\u207b\u2074-THETA\u00b2",
+    "computed_value": 139.56693362840684,
+    "error_pct": 0.0021970133933865424,
+    "old_error": 0.735434
+  },
+  {
+    "section": "\u00a793 Membrane Potential",
+    "name": "E_coli",
+    "unified_section": "\u00a793",
+    "fsot_formula": "OMEGA\u207b\u2074+THETA\u207b\u2074",
+    "computed_value": 140.00807746832479,
+    "error_pct": 0.005769620231989491,
+    "old_error": 0.7315021454614014
+  },
+  {
+    "section": "\u00a762 Bulk Modulus",
+    "name": "Cu",
+    "unified_section": "\u00a762",
+    "fsot_formula": "OMEGA\u207b\u2074+THETA\u207b\u2074",
+    "computed_value": 140.00807746832479,
+    "error_pct": 0.005769620231989491,
+    "old_error": 0.731502
+  },
+  {
+    "section": "\u00a793 Membrane Potential",
+    "name": "Smooth_muscle",
+    "unified_section": "\u00a793",
+    "fsot_formula": "POOF\u207b\u00b2\u00b7C_EFF\u207b\u2076",
+    "computed_value": 55.017514522249364,
+    "error_pct": 0.031844585907934556,
+    "old_error": 0.730636
+  },
+  {
+    "section": "\u00a750 Diffusion D",
+    "name": "Mg\u00b2\u207a",
+    "unified_section": "\u00a750",
+    "fsot_formula": "G\u2074-S_cosm\u2079",
+    "computed_value": 0.7059503860868489,
+    "error_pct": 0.007027466451991315,
+    "old_error": 0.724958
+  },
+  {
+    "section": "\u00a759 Colligative",
+    "name": "benzene_Kf",
+    "unified_section": "\u00a759",
+    "fsot_formula": "B_IN\u207b\u2078-B_IN\u207b\u00b2",
+    "computed_value": 5.1198686620054135,
+    "error_pct": 0.0025651952067703987,
+    "old_error": 0.718678
+  },
+  {
+    "section": "\u00a726 Polarizability",
+    "name": "P",
+    "unified_section": "\u00a726",
+    "fsot_formula": "OMEGA\u2075+THETA\u2077",
+    "computed_value": 3.6300414459674224,
+    "error_pct": 0.0011417621879477764,
+    "old_error": 0.717702
+  },
+  {
+    "section": "\u00a780 Proton Affinity",
+    "name": "PH3",
+    "unified_section": "\u00a780",
+    "fsot_formula": "PHI\u2077\u00b7GAMMA\u207b\u2076",
+    "computed_value": 785.0274248659258,
+    "error_pct": 0.0034936134937336525,
+    "old_error": 0.715092
+  },
+  {
+    "section": "\u00a788 XPS 1s Binding E",
+    "name": "Ne",
+    "unified_section": "\u00a788",
+    "fsot_formula": "GAMMA_C\u207b\u2078-PHI\u2075",
+    "computed_value": 870.5623103847097,
+    "error_pct": 0.04163530047226436,
+    "old_error": 0.714766
+  },
+  {
+    "section": "\u00a789 Surface Energy \u03b3s",
+    "name": "Pb",
+    "unified_section": "\u00a789",
+    "fsot_formula": "C_EFF\u2079-A_IN\u207b\u2075",
+    "computed_value": 0.6000412191705633,
+    "error_pct": 0.0068698617605537455,
+    "old_error": 0.714031
+  },
+  {
+    "section": "\u00a7103 Thermoelectric ZT",
+    "name": "Cu2Se",
+    "unified_section": "\u00a7103",
+    "fsot_formula": "C_EFF\u2079-A_IN\u207b\u2075",
+    "computed_value": 0.6000412191705633,
+    "error_pct": 0.0068698617605537455,
+    "old_error": 0.714031
+  },
+  {
+    "section": "\u00a718 Crystal Field \u0394o",
+    "name": "[Mn(H\u2082O)\u2086]\u00b2\u207a",
+    "unified_section": "\u00a718",
+    "fsot_formula": "E\u2076+E\u2079",
+    "computed_value": 8506.512721068115,
+    "error_pct": 0.07662024786017463,
+    "old_error": 0.713035
+  },
+  {
+    "section": "\u00a711 IE\u2082",
+    "name": "B",
+    "unified_section": "\u00a711",
+    "fsot_formula": "PSI\u207b\u2077+PSI\u00b2",
+    "computed_value": 25.196659213037655,
+    "error_pct": 0.16561006971836334,
+    "old_error": 0.708917
+  },
+  {
+    "section": "\u00a76 IR Frequencies",
+    "name": "C-H_sp3",
+    "unified_section": "\u00a76",
+    "fsot_formula": "E\u2078-E\u00b3",
+    "computed_value": 2960.8724501185393,
+    "error_pct": 0.02947466616686794,
+    "old_error": 0.70804
+  },
+  {
+    "section": "\u00a76 IR Frequencies",
+    "name": "N-H_stretch",
+    "unified_section": "\u00a76",
+    "fsot_formula": "K\u207b\u2074\u00b7P_BASE\u207b\u00b3",
+    "computed_value": 3349.310153914994,
+    "error_pct": 0.020592420447944428,
+    "old_error": 0.707077
+  },
+  {
+    "section": "\u00a744 UV-Vis \u03bbmax",
+    "name": "crystal_violet",
+    "unified_section": "\u00a744",
+    "fsot_formula": "P_BASE\u207b\u2078/P_NEW\u207b\u2075",
+    "computed_value": 590.8049271079632,
+    "error_pct": 0.13642832338358996,
+    "old_error": 0.706983
+  },
+  {
+    "section": "\u00a724 Enzyme kcat",
+    "name": "urease",
+    "unified_section": "\u00a724",
+    "fsot_formula": "OMEGA\u00b2+OMEGA\u2074",
+    "computed_value": 4.47964174690591,
+    "error_pct": 0.007996720850222959,
+    "old_error": 0.70505
+  },
+  {
+    "section": "\u00a75c E\u00b0",
+    "name": "Li\u207a/Li",
+    "unified_section": "\u00a75c",
+    "fsot_formula": "PI\u207b\u00b2-PI",
+    "computed_value": -3.0402714699474553,
+    "error_pct": 0.008929932482082403,
+    "old_error": 0.70447
+  },
+  {
+    "section": "\u00a74a \u0394H\u00b0f",
+    "name": "H\u2082O(g)",
+    "unified_section": "\u00a74a",
+    "fsot_formula": "E\u00b3-C_COSM\u207b\u00b2",
+    "computed_value": -241.71786195180178,
+    "error_pct": 0.046370610841596493,
+    "old_error": 0.699857
+  },
+  {
+    "section": "\u00a772 Electronegativity Ext",
+    "name": "As",
+    "unified_section": "\u00a772",
+    "fsot_formula": "G\u207b\u2077-CHAOS",
+    "computed_value": 2.1796366345240625,
+    "error_pct": 0.016668141098056286,
+    "old_error": 0.699525
+  },
+  {
+    "section": "\u00a787 Heat Cap Ratio Cp/Cv",
+    "name": "C2H6",
+    "unified_section": "\u00a787",
+    "fsot_formula": "P_VAR\u207b\u2074-P_NEW\u2077",
+    "computed_value": 1.1870820683632695,
+    "error_pct": 0.006913931193715691,
+    "old_error": 0.695
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "Na",
+    "unified_section": "\u00a748",
+    "fsot_formula": "B_IN\u207b\u2075-A_BL\u207b\u2078",
+    "computed_value": 2.5998973641994256,
+    "error_pct": 0.003947530791325294,
+    "old_error": 0.693615
+  },
+  {
+    "section": "\u00a760 pKH Extended",
+    "name": "Kr",
+    "unified_section": "\u00a760",
+    "fsot_formula": "B_IN\u207b\u2075-A_BL\u207b\u2078",
+    "computed_value": 2.5998973641994256,
+    "error_pct": 0.003947530791325294,
+    "old_error": 0.693615
+  },
+  {
+    "section": "\u00a738 Resistivity \u03c1",
+    "name": "Ag",
+    "unified_section": "\u00a738",
+    "fsot_formula": "C_EFF\u2079+A_BLEED\u207b\u00b2",
+    "computed_value": 1.5900383231090056,
+    "error_pct": 0.002410258428020981,
+    "old_error": 0.693553
+  },
+  {
+    "section": "\u00a739 Speed of Sound",
+    "name": "steel",
+    "unified_section": "\u00a739",
+    "fsot_formula": "THETA\u207b\u2077+POOF\u207b\u00b3",
+    "computed_value": 5949.809481041919,
+    "error_pct": 0.17098186171277108,
+    "old_error": 0.692134
+  },
+  {
+    "section": "\u00a713 \u03c7m Magnetic",
+    "name": "Si",
+    "unified_section": "\u00a713",
+    "fsot_formula": "PHI\u207b\u2078-PI",
+    "computed_value": -3.1203064173375847,
+    "error_pct": 0.00982106851232789,
+    "old_error": 0.692072
+  },
+  {
+    "section": "\u00a713 \u03c7m Magnetic",
+    "name": "NaCl",
+    "unified_section": "\u00a713",
+    "fsot_formula": "G+S_cosm\u207b\u2075",
+    "computed_value": -30.30958099228724,
+    "error_pct": 0.031620436591552864,
+    "old_error": 0.692043
+  },
+  {
+    "section": "\u00a747 \u0394Hvap",
+    "name": "C\u2083H\u2088",
+    "unified_section": "\u00a747",
+    "fsot_formula": "A_IN\u2076-K\u207b\u00b9",
+    "computed_value": 19.068220891949853,
+    "error_pct": 0.1482189703248617,
+    "old_error": 0.680522
+  },
+  {
+    "section": "\u00a715 Viscosity",
+    "name": "C\u2082H\u2085OH",
+    "unified_section": "\u00a715",
+    "fsot_formula": "A_BL\u2076-B_IN\u2079",
+    "computed_value": 1.2000178984943817,
+    "error_pct": 0.0014915411984765352,
+    "old_error": 0.680205
+  },
+  {
+    "section": "\u00a725 vdW Radii",
+    "name": "H",
+    "unified_section": "\u00a725",
+    "fsot_formula": "A_BL\u2076-B_IN\u2079",
+    "computed_value": 1.2000178984943817,
+    "error_pct": 0.0014915411984765352,
+    "old_error": 0.680205
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "Ge",
+    "unified_section": "\u00a741",
+    "fsot_formula": "A_BL\u2076-B_IN\u2079",
+    "computed_value": 1.2000178984943817,
+    "error_pct": 0.0014915411984765352,
+    "old_error": 0.680205
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "Se",
+    "unified_section": "\u00a741",
+    "fsot_formula": "A_BL\u2076-B_IN\u2079",
+    "computed_value": 1.2000178984943817,
+    "error_pct": 0.0014915411984765352,
+    "old_error": 0.680205
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "Br",
+    "unified_section": "\u00a741",
+    "fsot_formula": "A_BL\u2076-B_IN\u2079",
+    "computed_value": 1.2000178984943817,
+    "error_pct": 0.0014915411984765352,
+    "old_error": 0.680205
+  },
+  {
+    "section": "\u00a74b Lattice Energies",
+    "name": "MgO",
+    "unified_section": "\u00a74b",
+    "fsot_formula": "C_FAC\u207b\u2077+CHAOS\u207b\u2077",
+    "computed_value": 3848.3007135394014,
+    "error_pct": 0.04413731066489907,
+    "old_error": 0.679129
+  },
+  {
+    "section": "\u00a712 Cp\u00b0",
+    "name": "C(graphite)",
+    "unified_section": "\u00a712",
+    "fsot_formula": "ETA\u207b\u00b3-OMEGA",
+    "computed_value": 8.528110859745157,
+    "error_pct": 0.02214701353860092,
+    "old_error": 0.678359
+  },
+  {
+    "section": "\u00a794 Donor Number DN",
+    "name": "nitromethane",
+    "unified_section": "\u00a794",
+    "fsot_formula": "E-E\u207b\u2074",
+    "computed_value": 2.699966189570311,
+    "error_pct": 0.001252238136641005,
+    "old_error": 0.677105
+  },
+  {
+    "section": "\u00a712 Cp\u00b0",
+    "name": "H\u2082(g)",
+    "unified_section": "\u00a712",
+    "fsot_formula": "PHI\u2077-GAMMA\u00b3",
+    "computed_value": 28.842126336927453,
+    "error_pct": 0.007372874228341071,
+    "old_error": 0.674209
+  },
+  {
+    "section": "\u00a782 M\u00f6ssbauer IS",
+    "name": "FeTiO3",
+    "unified_section": "\u00a782",
+    "fsot_formula": "S_quant\u00b2-S_cosm\u00b3",
+    "computed_value": 1.0398433115146624,
+    "error_pct": 0.015066200513237968,
+    "old_error": 0.670541
+  },
+  {
+    "section": "\u00a747 \u0394Hvap",
+    "name": "Ar",
+    "unified_section": "\u00a747",
+    "fsot_formula": "POOF\u207b\u00b9-THETA\u00b2",
+    "computed_value": 6.430792084169818,
+    "error_pct": 0.012318571847874842,
+    "old_error": 0.670148
+  },
+  {
+    "section": "\u00a776 Magnetic Ordering T",
+    "name": "Fe2O3_TN",
+    "unified_section": "\u00a776",
+    "fsot_formula": "PI\u2076-PHI\u2074",
+    "computed_value": 954.5350916090546,
+    "error_pct": 0.048681506905280086,
+    "old_error": 0.669026
+  },
+  {
+    "section": "\u00a725 vdW Radii",
+    "name": "Si",
+    "unified_section": "\u00a725",
+    "fsot_formula": "PSI\u207b\u00b9+ETA\u00b2",
+    "computed_value": 1.8000117314766249,
+    "error_pct": 0.0006517487013783333,
+    "old_error": 0.65951
+  },
+  {
+    "section": "\u00a725 vdW Radii",
+    "name": "P",
+    "unified_section": "\u00a725",
+    "fsot_formula": "PSI\u207b\u00b9+ETA\u00b2",
+    "computed_value": 1.8000117314766249,
+    "error_pct": 0.0006517487013783333,
+    "old_error": 0.65951
+  },
+  {
+    "section": "\u00a725 vdW Radii",
+    "name": "S",
+    "unified_section": "\u00a725",
+    "fsot_formula": "PSI\u207b\u00b9+ETA\u00b2",
+    "computed_value": 1.8000117314766249,
+    "error_pct": 0.0006517487013783333,
+    "old_error": 0.65951
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "PTFE",
+    "unified_section": "\u00a729",
+    "fsot_formula": "B_IN\u207b\u00b2+B_IN\u00b3",
+    "computed_value": 2.0998868055179294,
+    "error_pct": 0.0053902134319380865,
+    "old_error": 0.658987
+  },
+  {
+    "section": "\u00a757 logP",
+    "name": "aspirin",
+    "unified_section": "\u00a757",
+    "fsot_formula": "P_NEW\u2075+P_VAR\u207b\u2074",
+    "computed_value": 1.1897445824518682,
+    "error_pct": 0.021463659506869095,
+    "old_error": 0.656498
+  },
+  {
+    "section": "\u00a717 pKH Henry's Law",
+    "name": "NH\u2083",
+    "unified_section": "\u00a717",
+    "fsot_formula": "B_IN\u00b2-K\u207b\u00b9",
+    "computed_value": -1.7588457521167045,
+    "error_pct": 0.06558226609633779,
+    "old_error": 0.65433
+  },
+  {
+    "section": "\u00a75c E\u00b0",
+    "name": "Ag\u207a/Ag",
+    "unified_section": "\u00a75c",
+    "fsot_formula": "G/S_quant\u207b\u00b3",
+    "computed_value": 0.7990607996870596,
+    "error_pct": 0.007609472723344262,
+    "old_error": 0.653315
+  },
+  {
+    "section": "\u00a775 Superconducting Tc",
+    "name": "Zn",
+    "unified_section": "\u00a775",
+    "fsot_formula": "G\u2076\u00b7S_quant\u207b\u2078",
+    "computed_value": 0.8499757313516031,
+    "error_pct": 0.002855135105515964,
+    "old_error": 0.651019
+  },
+  {
+    "section": "\u00a74b Lattice Energies",
+    "name": "CaO",
+    "unified_section": "\u00a74b",
+    "fsot_formula": "ALPHA\u207b\u00b2/ETA\u207b\u2078",
+    "computed_value": 3459.1279034704635,
+    "error_pct": 0.05409120281816008,
+    "old_error": 0.650621
+  },
+  {
+    "section": "\u00a711 IE\u2082",
+    "name": "Na",
+    "unified_section": "\u00a711",
+    "fsot_formula": "B_IN\u2075+GATE\u207b\u2078",
+    "computed_value": 47.282429940355,
+    "error_pct": 0.007549929461151082,
+    "old_error": 0.649846
+  },
+  {
+    "section": "\u00a718 Crystal Field \u0394o",
+    "name": "[Ti(H\u2082O)\u2086]\u00b3\u207a",
+    "unified_section": "\u00a718",
+    "fsot_formula": "K\u207b\u2077\u00b7GATE\u207b\u2078",
+    "computed_value": 20302.618488435135,
+    "error_pct": 0.012898957808547181,
+    "old_error": 0.649212
+  },
+  {
+    "section": "\u00a730 Refractive nD",
+    "name": "NaCl",
+    "unified_section": "\u00a730",
+    "fsot_formula": "GATE\u207b\u00b9-K\u00b3",
+    "computed_value": 1.5438286221550623,
+    "error_pct": 0.011099601356068878,
+    "old_error": 0.647695
+  },
+  {
+    "section": "\u00a713 \u03c7m Magnetic",
+    "name": "C(diamond)",
+    "unified_section": "\u00a713",
+    "fsot_formula": "A_BL\u207b\u2074-B_IN\u207b\u2078",
+    "computed_value": -5.898305706806974,
+    "error_pct": 0.028716833780100707,
+    "old_error": 0.646379
+  },
+  {
+    "section": "\u00a74b Lattice Energies",
+    "name": "CsCl",
+    "unified_section": "\u00a74b",
+    "fsot_formula": "P_VAR\u207b\u2076/C_FAC\u2075",
+    "computed_value": 657.5009994934722,
+    "error_pct": 0.07625563066548705,
+    "old_error": 0.645129
+  },
+  {
+    "section": "\u00a730 Refractive nD",
+    "name": "glycerol",
+    "unified_section": "\u00a730",
+    "fsot_formula": "A_BLEED\u2075+A_IN\u207b\u00b3",
+    "computed_value": 1.4739216699266267,
+    "error_pct": 0.005314116239709821,
+    "old_error": 0.640992
+  },
+  {
+    "section": "\u00a764 Neutron \u03c3_a",
+    "name": "N",
+    "unified_section": "\u00a764",
+    "fsot_formula": "G\u2075+S_quant\u207b\u2075",
+    "computed_value": 1.9003014455787146,
+    "error_pct": 0.01586555677445782,
+    "old_error": 0.64024
+  },
+  {
+    "section": "\u00a786 Gr\u00fcneisen \u03b3",
+    "name": "Al",
+    "unified_section": "\u00a786",
+    "fsot_formula": "A_BLEED\u207b\u00b2+A_BLEED\u2075",
+    "computed_value": 2.170275182714514,
+    "error_pct": 0.012681231083593938,
+    "old_error": 0.640113
+  },
+  {
+    "section": "\u00a789 Surface Energy \u03b3s",
+    "name": "Pt",
+    "unified_section": "\u00a789",
+    "fsot_formula": "E\u00b7G",
+    "computed_value": 2.4898526301456267,
+    "error_pct": 0.005918468047127276,
+    "old_error": 0.640002
+  },
+  {
+    "section": "\u00a774 Acoustic Impedance",
+    "name": "Titanium",
+    "unified_section": "\u00a774",
+    "fsot_formula": "PSI\u207b\u2077+PSI\u207b\u00b2",
+    "computed_value": 27.299733113221045,
+    "error_pct": 0.0009776072489227894,
+    "old_error": 0.639535
+  },
+  {
+    "section": "\u00a778 X-ray K\u03b1 Energy",
+    "name": "Mo",
+    "unified_section": "\u00a778",
+    "fsot_formula": "A_IN\u2077/B_IN\u207b\u00b3",
+    "computed_value": 17.488936574784336,
+    "error_pct": 0.05684864571392633,
+    "old_error": 0.639309
+  },
+  {
+    "section": "\u00a763 Lattice Param",
+    "name": "W_bcc",
+    "unified_section": "\u00a763",
+    "fsot_formula": "S_cosm\u207b\u00b2-S_quant\u2075",
+    "computed_value": 3.1645255180753904,
+    "error_pct": 0.014991530003464067,
+    "old_error": 0.63899
+  },
+  {
+    "section": "\u00a767 Nuclear \u03bcN",
+    "name": "He_3",
+    "unified_section": "\u00a767",
+    "fsot_formula": "P_VAR\u207b\u2077-C_FAC\u207b\u00b9",
+    "computed_value": -2.1265878344879305,
+    "error_pct": 0.047573111114383254,
+    "old_error": 0.632927
+  },
+  {
+    "section": "\u00a726 Polarizability",
+    "name": "S",
+    "unified_section": "\u00a726",
+    "fsot_formula": "GAMMA\u207b\u00b2-PI\u207b\u00b2",
+    "computed_value": 2.9000781544996244,
+    "error_pct": 0.002694982745670685,
+    "old_error": 0.632285
+  },
+  {
+    "section": "\u00a79 Electron Affinities",
+    "name": "N",
+    "unified_section": "\u00a79",
+    "fsot_formula": "S_cosm\u2077-C_COSM",
+    "computed_value": -0.06988850884040691,
+    "error_pct": 0.15927308513299138,
+    "old_error": 0.631113
+  },
+  {
+    "section": "\u00a717 pKH Henry's Law",
+    "name": "O\u2082",
+    "unified_section": "\u00a717",
+    "fsot_formula": "GAMMA\u207b\u00b2-GAMMA\u2074",
+    "computed_value": 2.8903918092291403,
+    "error_pct": 0.013557412773016333,
+    "old_error": 0.631002
+  },
+  {
+    "section": "\u00a780 Proton Affinity",
+    "name": "H2S",
+    "unified_section": "\u00a780",
+    "fsot_formula": "PSI\u207b\u2076\u00b7ETA\u207b\u2075",
+    "computed_value": 706.1303037823691,
+    "error_pct": 0.16032677764100467,
+    "old_error": 0.63099
+  },
+  {
+    "section": "\u00a783 Electron Mobility",
+    "name": "InSb",
+    "unified_section": "\u00a783",
+    "fsot_formula": "THETA\u207b\u2075+POOF\u207b\u2076",
+    "computed_value": 76978.34982243921,
+    "error_pct": 0.028117113715312107,
+    "old_error": 0.629815
+  },
+  {
+    "section": "\u00a754 IE\u2083",
+    "name": "O",
+    "unified_section": "\u00a754",
+    "fsot_formula": "OMEGA\u00b7POOF\u207b\u00b2",
+    "computed_value": 54.93662600823053,
+    "error_pct": 0.006141230013586866,
+    "old_error": 0.622224
+  },
+  {
+    "section": "\u00a74b Lattice Energies",
+    "name": "KBr",
+    "unified_section": "\u00a74b",
+    "fsot_formula": "P_BASE\u00b2\u00b7P_NEW\u207b\u2078",
+    "computed_value": 681.7391833887611,
+    "error_pct": 0.03824290487373192,
+    "old_error": 0.622205
+  },
+  {
+    "section": "\u00a746 Critical Temp Tc",
+    "name": "CO\u2082",
+    "unified_section": "\u00a746",
+    "fsot_formula": "GATE\u00b7P_BASE\u207b\u2074",
+    "computed_value": 303.97498956894407,
+    "error_pct": 0.05096847764308937,
+    "old_error": 0.621341
+  },
+  {
+    "section": "\u00a758 log\u03b2 Stability",
+    "name": "Cu(NH3)4_2+",
+    "unified_section": "\u00a758",
+    "fsot_formula": "OMEGA\u207b\u2076+THETA\u207b\u00b2",
+    "computed_value": 12.030304186180611,
+    "error_pct": 0.002528563429859688,
+    "old_error": 0.617258
+  },
+  {
+    "section": "\u00a766 Particle Masses",
+    "name": "Z_boson",
+    "unified_section": "\u00a766",
+    "fsot_formula": "ETA\u207b\u2078/ETA\u2077",
+    "computed_value": 91422.48586497341,
+    "error_pct": 0.257145528987815,
+    "old_error": 0.614385
+  },
+  {
+    "section": "\u00a711 IE\u2082",
+    "name": "Mg",
+    "unified_section": "\u00a711",
+    "fsot_formula": "C_COSM\u207b\u00b9-S_quant\u207b\u00b3",
+    "computed_value": 15.034037134897465,
+    "error_pct": 0.0064041576490512075,
+    "old_error": 0.612753
+  },
+  {
+    "section": "\u00a791 Critical Pressure Pc",
+    "name": "SO2",
+    "unified_section": "\u00a791",
+    "fsot_formula": "A_BL\u2079+K\u207b\u2075",
+    "computed_value": 77.82617808372233,
+    "error_pct": 0.03364792252227306,
+    "old_error": 0.612398
+  },
+  {
+    "section": "\u00a730 Refractive nD",
+    "name": "CS\u2082",
+    "unified_section": "\u00a730",
+    "fsot_formula": "PI\u207b\u2074+PHI",
+    "computed_value": 1.6282999710045791,
+    "error_pct": 0.018425737382016947,
+    "old_error": 0.612163
+  },
+  {
+    "section": "\u00a725 vdW Radii",
+    "name": "Kr",
+    "unified_section": "\u00a725",
+    "fsot_formula": "G\u2075+S_quant\u207b\u2077",
+    "computed_value": 2.0199542429162323,
+    "error_pct": 0.002265202166720303,
+    "old_error": 0.608433
+  },
+  {
+    "section": "\u00a737 Thermal \u03ba",
+    "name": "Cu",
+    "unified_section": "\u00a737",
+    "fsot_formula": "A_IN\u2078\u00b7B_IN\u207b\u2078",
+    "computed_value": 401.08044771138935,
+    "error_pct": 0.020061773413803996,
+    "old_error": 0.605684
+  },
+  {
+    "section": "\u00a790 Heat of Combustion",
+    "name": "C2H4",
+    "unified_section": "\u00a790",
+    "fsot_formula": "GATE\u207b\u2078+P_NEW\u207b\u2076",
+    "computed_value": 1410.4570805412698,
+    "error_pct": 0.05264451946784896,
+    "old_error": 0.605666
+  },
+  {
+    "section": "\u00a745 Activation Ea",
+    "name": "NH\u2083_synthesis",
+    "unified_section": "\u00a745",
+    "fsot_formula": "PI\u2075+PHI\u2077",
+    "computed_value": 335.0541266390301,
+    "error_pct": 0.01615720568061893,
+    "old_error": 0.604765
+  },
+  {
+    "section": "\u00a793 Membrane Potential",
+    "name": "Hair_cell",
+    "unified_section": "\u00a793",
+    "fsot_formula": "ETA\u207b\u2075-ETA\u2074",
+    "computed_value": 45.00137640336734,
+    "error_pct": 0.003058674149640537,
+    "old_error": 0.603232
+  },
+  {
+    "section": "\u00a762 Bulk Modulus",
+    "name": "Si",
+    "unified_section": "\u00a762",
+    "fsot_formula": "A_IN\u2079-A_BLEED\u2076",
+    "computed_value": 98.0122852361088,
+    "error_pct": 0.012535955213056185,
+    "old_error": 0.60295
+  },
+  {
+    "section": "\u00a762 Bulk Modulus",
+    "name": "Au",
+    "unified_section": "\u00a762",
+    "fsot_formula": "S_quant\u2078\u00b7S_cosm\u207b\u2078",
+    "computed_value": 171.03481333412972,
+    "error_pct": 0.020358674929662434,
+    "old_error": 0.601998
+  },
+  {
+    "section": "\u00a740 Ionic Radii",
+    "name": "Cs\u207a",
+    "unified_section": "\u00a740",
+    "fsot_formula": "OMEGA\u00b2-ETA\u2077",
+    "computed_value": 1.6699339914013747,
+    "error_pct": 0.003952610696123758,
+    "old_error": 0.598237
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "DMSO",
+    "unified_section": "\u00a729",
+    "fsot_formula": "OMEGA\u2077+THETA\u207b\u00b3",
+    "computed_value": 46.70335771980633,
+    "error_pct": 0.007189978172000333,
+    "old_error": 0.596817
+  },
+  {
+    "section": "\u00a722 Amino Acid pKa",
+    "name": "Gly_pK\u2082",
+    "unified_section": "\u00a722",
+    "fsot_formula": "ETA\u207b\u00b3-ETA\u00b2",
+    "computed_value": 9.604206413193825,
+    "error_pct": 0.0438168041023516,
+    "old_error": 0.596444
+  },
+  {
+    "section": "\u00a790 Heat of Combustion",
+    "name": "C6H6",
+    "unified_section": "\u00a790",
+    "fsot_formula": "THETA\u207b\u00b2/POOF\u00b3",
+    "computed_value": 3268.5016871611506,
+    "error_pct": 0.030656072261685843,
+    "old_error": 0.5961031928694581
+  },
+  {
+    "section": "\u00a768 Rotational B\u2080",
+    "name": "HCl",
+    "unified_section": "\u00a768",
+    "fsot_formula": "ETA\u207b\u00b3+OMEGA\u207b\u00b9",
+    "computed_value": 10.594960989410971,
+    "error_pct": 0.014735490125648915,
+    "old_error": 0.592362
+  },
+  {
+    "section": "\u00a732 Work Functions",
+    "name": "Cs",
+    "unified_section": "\u00a732",
+    "fsot_formula": "G\u207b\u2074/S_quant\u2079",
+    "computed_value": 2.1398403000546296,
+    "error_pct": 0.007462614269652931,
+    "old_error": 0.592354
+  },
+  {
+    "section": "\u00a787 Heat Cap Ratio Cp/Cv",
+    "name": "NH3",
+    "unified_section": "\u00a787",
+    "fsot_formula": "C_EFF\u207b\u00b2/A_BLEED\u207b\u2074",
+    "computed_value": 1.3100322937740994,
+    "error_pct": 0.002465173595366506,
+    "old_error": 0.590207
+  },
+  {
+    "section": "\u00a734 Young's Modulus",
+    "name": "diamond",
+    "unified_section": "\u00a734",
+    "fsot_formula": "A_IN\u2076+K\u207b\u2078",
+    "computed_value": 1049.8726049268328,
+    "error_pct": 0.01213286411116531,
+    "old_error": 0.589552
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "n-butanol",
+    "unified_section": "\u00a729",
+    "fsot_formula": "PHI\u2076-PI\u207b\u00b2",
+    "computed_value": 17.842950726356825,
+    "error_pct": 0.01653994594633175,
+    "old_error": 0.584484
+  },
+  {
+    "section": "\u00a731 Band Gaps",
+    "name": "CdS",
+    "unified_section": "\u00a731",
+    "fsot_formula": "G\u207b\u2076+S_quant\u2077",
+    "computed_value": 2.420433612942127,
+    "error_pct": 0.017917890170535522,
+    "old_error": 0.579555
+  },
+  {
+    "section": "\u00a791 Critical Pressure Pc",
+    "name": "N2",
+    "unified_section": "\u00a791",
+    "fsot_formula": "E-S_cosm\u207b\u2075",
+    "computed_value": 33.94382841492351,
+    "error_pct": 0.011279949686243513,
+    "old_error": 0.578926
+  },
+  {
+    "section": "\u00a739 Speed of Sound",
+    "name": "CH\u2083OH",
+    "unified_section": "\u00a739",
+    "fsot_formula": "S_cosm\u2076\u00b7C_COSM\u207b\u2074",
+    "computed_value": 1102.9060065724984,
+    "error_pct": 0.008521616273941343,
+    "old_error": 0.57723
+  },
+  {
+    "section": "\u00a727 Boiling Points",
+    "name": "n-hexane",
+    "unified_section": "\u00a727",
+    "fsot_formula": "SUCTION\u207b\u00b3-CHAOS\u207b\u00b3",
+    "computed_value": 342.1603643107121,
+    "error_pct": 0.07615218213282665,
+    "old_error": 0.574694
+  },
+  {
+    "section": "\u00a778 X-ray K\u03b1 Energy",
+    "name": "Na",
+    "unified_section": "\u00a778",
+    "fsot_formula": "B_IN\u00b2+K",
+    "computed_value": 1.0410723562939261,
+    "error_pct": 0.006950652634602531,
+    "old_error": 0.573836
+  },
+  {
+    "section": "\u00a744 UV-Vis \u03bbmax",
+    "name": "\u03b2-carotene",
+    "unified_section": "\u00a744",
+    "fsot_formula": "PHI\u2077\u00b7GAMMA\u207b\u2075",
+    "computed_value": 453.13012700992346,
+    "error_pct": 0.02872560925462599,
+    "old_error": 0.572294
+  },
+  {
+    "section": "\u00a71 Foundation",
+    "name": "BE_O=O",
+    "unified_section": "\u00a71",
+    "fsot_formula": "K\u207b\u00b2+P_BASE\u207b\u2074",
+    "computed_value": 497.504820019222,
+    "error_pct": 0.09943373107992065,
+    "old_error": 0.572239
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "formic acid",
+    "unified_section": "\u00a729",
+    "fsot_formula": "A_IN\u2078-A_BL\u00b2",
+    "computed_value": 58.494777076136735,
+    "error_pct": 0.008928074979939896,
+    "old_error": 0.571313
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "glycerol",
+    "unified_section": "\u00a729",
+    "fsot_formula": "K\u207b\u00b3+GATE\u207b\u2077",
+    "computed_value": 42.51055612807173,
+    "error_pct": 0.024837948404063035,
+    "old_error": 0.570931
+  },
+  {
+    "section": "\u00a72 Transition Metal IE",
+    "name": "Cu",
+    "unified_section": "\u00a72",
+    "fsot_formula": "A_IN\u2074+K\u2076",
+    "computed_value": 7.725022668636858,
+    "error_pct": 0.012649901153792935,
+    "old_error": 0.57038
+  },
+  {
+    "section": "\u00a732 Work Functions",
+    "name": "Ag",
+    "unified_section": "\u00a732",
+    "fsot_formula": "GATE\u207b\u2074-B_IN\u207b\u2074",
+    "computed_value": 4.259769319637358,
+    "error_pct": 0.0054150319869003555,
+    "old_error": 0.561785
+  },
+  {
+    "section": "\u00a784 Poisson Ratio \u03bd",
+    "name": "Ag",
+    "unified_section": "\u00a784",
+    "fsot_formula": "S_quant\u00b3+S_cosm",
+    "computed_value": 0.3699139383868001,
+    "error_pct": 0.023259895459434028,
+    "old_error": 0.561402
+  },
+  {
+    "section": "\u00a725 vdW Radii",
+    "name": "N",
+    "unified_section": "\u00a725",
+    "fsot_formula": "PHI\u00b7P_VAR",
+    "computed_value": 1.5500557252684573,
+    "error_pct": 0.0035951786101424115,
+    "old_error": 0.560405
+  },
+  {
+    "section": "\u00a710 \u0394G\u00b0f",
+    "name": "CH\u2084(g)",
+    "unified_section": "\u00a710",
+    "fsot_formula": "S_cosm\u207b\u00b2-E\u2074",
+    "computed_value": -50.63715753680852,
+    "error_pct": 0.16333293215984956,
+    "old_error": 0.560071
+  },
+  {
+    "section": "\u00a761 Glass Tg",
+    "name": "SiO2",
+    "unified_section": "\u00a761",
+    "fsot_formula": "E\u00b2\u00b7PHI\u00b9\u00b9",
+    "computed_value": 1470.4592936847914,
+    "error_pct": 0.17248515378198107,
+    "old_error": 0.558101
+  },
+  {
+    "section": "\u00a732 Work Functions",
+    "name": "Ba",
+    "unified_section": "\u00a732",
+    "fsot_formula": "B_IN\u207b\u2074-K\u00b3",
+    "computed_value": 2.520127280017492,
+    "error_pct": 0.005050794344914631,
+    "old_error": 0.558093
+  },
+  {
+    "section": "\u00a747 \u0394Hvap",
+    "name": "H\u2082O",
+    "unified_section": "\u00a747",
+    "fsot_formula": "THETA\u207b\u00b3+THETA\u00b3",
+    "computed_value": 40.64876996138748,
+    "error_pct": 0.0030259252460492604,
+    "old_error": 0.555673
+  },
+  {
+    "section": "\u00a731 Band Gaps",
+    "name": "diamond",
+    "unified_section": "\u00a731",
+    "fsot_formula": "OMEGA\u207b\u00b9+OMEGA\u2076",
+    "computed_value": 5.470239074519245,
+    "error_pct": 0.004370649346353588,
+    "old_error": 0.554793
+  },
+  {
+    "section": "\u00a776 Magnetic Ordering T",
+    "name": "EuO_Tc",
+    "unified_section": "\u00a776",
+    "fsot_formula": "GAMMA_C\u207b\u2074+PSI\u207b\u2078",
+    "computed_value": 68.92104084251176,
+    "error_pct": 0.11443356157716264,
+    "old_error": 0.544783
+  },
+  {
+    "section": "\u00a76 IR Frequencies",
+    "name": "N-H_bend",
+    "unified_section": "\u00a76",
+    "fsot_formula": "K\u2074\u00b7P_BASE\u207b\u2077",
+    "computed_value": 1601.8002795422083,
+    "error_pct": 0.11251747138801706,
+    "old_error": 0.543592
+  },
+  {
+    "section": "\u00a726 Polarizability",
+    "name": "Mg",
+    "unified_section": "\u00a726",
+    "fsot_formula": "GATE\u207b\u2075-B_IN\u00b3",
+    "computed_value": 10.600976357504635,
+    "error_pct": 0.009210919855050159,
+    "old_error": 0.542879
+  },
+  {
+    "section": "\u00a738 Resistivity \u03c1",
+    "name": "Pt",
+    "unified_section": "\u00a738",
+    "fsot_formula": "GATE\u207b\u2075-B_IN\u00b3",
+    "computed_value": 10.600976357504635,
+    "error_pct": 0.009210919855050159,
+    "old_error": 0.542879
+  },
+  {
+    "section": "\u00a730 Refractive nD",
+    "name": "CH\u2083OH",
+    "unified_section": "\u00a730",
+    "fsot_formula": "G\u2078+S_quant\u2074",
+    "computed_value": 1.3290430871491103,
+    "error_pct": 0.003242072920269971,
+    "old_error": 0.540802
+  },
+  {
+    "section": "\u00a760 pKH Extended",
+    "name": "O3",
+    "unified_section": "\u00a760",
+    "fsot_formula": "P_NEW\u207b\u00b9-P_VAR\u207b\u2078",
+    "computed_value": 1.920291295859893,
+    "error_pct": 0.01517165936943075,
+    "old_error": 0.538596
+  },
+  {
+    "section": "\u00a775 Superconducting Tc",
+    "name": "Pb",
+    "unified_section": "\u00a775",
+    "fsot_formula": "PSI\u2074\u00b7ETA\u207b\u2075",
+    "computed_value": 7.192568447123156,
+    "error_pct": 0.03572249128171787,
+    "old_error": 0.537934
+  },
+  {
+    "section": "\u00a746 Critical Temp Tc",
+    "name": "Ne",
+    "unified_section": "\u00a746",
+    "fsot_formula": "GAMMA\u207b\u2077+GAMMA_C\u207b\u00b9",
+    "computed_value": 44.507434047974456,
+    "error_pct": 0.039186441839636675,
+    "old_error": 0.536178
+  },
+  {
+    "section": "\u00a714 Surface Tension",
+    "name": "C\u2086H\u2086",
+    "unified_section": "\u00a714",
+    "fsot_formula": "S_quant\u207b\u2076-CHAOS\u207b\u00b3",
+    "computed_value": 28.882998642590753,
+    "error_pct": 0.010383111463828861,
+    "old_error": 0.534771
+  },
+  {
+    "section": "\u00a758 log\u03b2 Stability",
+    "name": "Pb_EDTA",
+    "unified_section": "\u00a758",
+    "fsot_formula": "PHI\u207b\u2075+PHI\u2076",
+    "computed_value": 18.034441853748636,
+    "error_pct": 0.030810123344587794,
+    "old_error": 0.530644
+  },
+  {
+    "section": "\u00a7102 Piezoelectric d\u2083\u2083",
+    "name": "LiNbO3",
+    "unified_section": "\u00a7102",
+    "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076",
+    "computed_value": 6.003025174189232,
+    "error_pct": 0.05041956982053305,
+    "old_error": 0.528874
+  },
+  {
+    "section": "\u00a711 IE\u2082",
+    "name": "P",
+    "unified_section": "\u00a711",
+    "fsot_formula": "E\u00b3-PI\u207b\u00b9",
+    "computed_value": 19.767227037003874,
+    "error_pct": 0.008968400000629801,
+    "old_error": 0.527043
+  },
+  {
+    "section": "\u00a743 Dipole Moments",
+    "name": "NaCl_gas",
+    "unified_section": "\u00a743",
+    "fsot_formula": "GAMMA\u207b\u2074-GAMMA\u2079",
+    "computed_value": 9.001285147990012,
+    "error_pct": 0.003167959004699496,
+    "old_error": 0.526177
+  },
+  {
+    "section": "\u00a776 Magnetic Ordering T",
+    "name": "Dy_Tc",
+    "unified_section": "\u00a776",
+    "fsot_formula": "PHI\u2074+GAMMA\u207b\u2078",
+    "computed_value": 88.0053362584175,
+    "error_pct": 0.006063930019886951,
+    "old_error": 0.523311
+  },
+  {
+    "section": "\u00a73 Bond Angles",
+    "name": "H\u2082S",
+    "unified_section": "\u00a73",
+    "fsot_formula": "OMEGA\u00b3\u00b7POOF\u207b\u00b2",
+    "computed_value": 92.0064303075539,
+    "error_pct": 0.10159575727046209,
+    "old_error": 0.523307
+  },
+  {
+    "section": "\u00a740 Ionic Radii",
+    "name": "S\u00b2\u207b",
+    "unified_section": "\u00a740",
+    "fsot_formula": "A_BLEED\u207b\u2078+A_BLEED\u00b3",
+    "computed_value": 1.8402944459683002,
+    "error_pct": 0.01600249827717844,
+    "old_error": 0.522839
+  },
+  {
+    "section": "\u00a74a \u0394H\u00b0f",
+    "name": "NaCl(s)",
+    "unified_section": "\u00a74a",
+    "fsot_formula": "S_cosm\u207b\u00b3-E\u2076",
+    "computed_value": -411.312056744395,
+    "error_pct": 0.03941547960477804,
+    "old_error": 0.522534
+  },
+  {
+    "section": "\u00a794 Donor Number DN",
+    "name": "DMSO",
+    "unified_section": "\u00a794",
+    "fsot_formula": "GAMMA\u2074+GAMMA_C\u207b\u2074",
+    "computed_value": 29.803640964303142,
+    "error_pct": 0.01221800101725236,
+    "old_error": 0.520608
+  },
+  {
+    "section": "\u00a712 Cp\u00b0",
+    "name": "NH\u2083(g)",
+    "unified_section": "\u00a712",
+    "fsot_formula": "A_IN\u2077-A_BL\u207b\u2078",
+    "computed_value": 35.05789313923886,
+    "error_pct": 0.006009300516672597,
+    "old_error": 0.520093
+  },
+  {
+    "section": "\u00a753 Fluorescence \u03a6f",
+    "name": "coumarin_153",
+    "unified_section": "\u00a753",
+    "fsot_formula": "B_IN\u2074-K\u2076",
+    "computed_value": 0.37994914549083647,
+    "error_pct": 0.013382765569350981,
+    "old_error": 0.517371
+  },
+  {
+    "section": "\u00a791 Critical Pressure Pc",
+    "name": "O2",
+    "unified_section": "\u00a791",
+    "fsot_formula": "PI\u2074-PHI\u2078",
+    "computed_value": 50.43037727025461,
+    "error_pct": 0.0007481067908191472,
+    "old_error": 0.517134
+  },
+  {
+    "section": "\u00a727 Boiling Points",
+    "name": "diethyl ether",
+    "unified_section": "\u00a727",
+    "fsot_formula": "PI\u2075+PHI",
+    "computed_value": 307.6377187740313,
+    "error_pct": 0.012262280244247317,
+    "old_error": 0.513757
+  },
+  {
+    "section": "\u00a750 Diffusion D",
+    "name": "Ca\u00b2\u207a",
+    "unified_section": "\u00a750",
+    "fsot_formula": "PI\u2074/PHI\u00b9\u2070",
+    "computed_value": 0.7919961825448674,
+    "error_pct": 0.00048200191069076306,
+    "old_error": 0.512526
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "I",
+    "unified_section": "\u00a741",
+    "fsot_formula": "P_NEW+P_VAR\u207b\u00b2",
+    "computed_value": 1.389936304934737,
+    "error_pct": 0.004582378795886721,
+    "old_error": 0.51023
+  },
+  {
+    "section": "\u00a749 Molar \u039b\u00b0",
+    "name": "H\u2082SO\u2084",
+    "unified_section": "\u00a749",
+    "fsot_formula": "GAMMA_C\u207b\u2077+ALPHA\u207b\u00b9",
+    "computed_value": 859.4842000916105,
+    "error_pct": 0.013471371380813927,
+    "old_error": 0.509551
+  },
+  {
+    "section": "\u00a715 Viscosity",
+    "name": "glycerol",
+    "unified_section": "\u00a715",
+    "fsot_formula": "GATE\u207b\u2078+P_NEW\u207b\u2076",
+    "computed_value": 1410.4570805412698,
+    "error_pct": 0.10927191634066849,
+    "old_error": 0.508959
+  },
+  {
+    "section": "\u00a754 IE\u2083",
+    "name": "N",
+    "unified_section": "\u00a754",
+    "fsot_formula": "SUCTION\u207b\u00b2+G\u207b\u00b2",
+    "computed_value": 47.44752884651751,
+    "error_pct": 0.005207910395144227,
+    "old_error": 0.507705
+  },
+  {
+    "section": "\u00a712 Cp\u00b0",
+    "name": "Al(s)",
+    "unified_section": "\u00a712",
+    "fsot_formula": "PI\u207b\u00b9\u00b7PHI\u2079",
+    "computed_value": 24.195738913076067,
+    "error_pct": 0.01760779720633292,
+    "old_error": 0.5025
+  },
+  {
+    "section": "\u00a763 Lattice Param",
+    "name": "Au_fcc",
+    "unified_section": "\u00a763",
+    "fsot_formula": "E\u207b\u00b9/PHI\u207b\u2075",
+    "computed_value": 4.079845521402883,
+    "error_pct": 0.045255551811745114,
+    "old_error": 0.501269
+  },
+  {
+    "section": "\u00a747 \u0394Hvap",
+    "name": "O\u2082",
+    "unified_section": "\u00a747",
+    "fsot_formula": "PHI\u2074-PHI\u207b\u2077",
+    "computed_value": 6.819660112501053,
+    "error_pct": 0.004983687667852391,
+    "old_error": 0.500029
   }
 ]

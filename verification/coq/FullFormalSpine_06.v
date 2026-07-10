@@ -6,6 +6,18 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma materials_engineering_section_count_pos : (0 < 7)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma materials_engineering_beats_sota_headlines_pos : (0 < 6)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
+Lemma materials_genome_crosswalk_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma materials_genome_crosswalk_headline_median_under_half_pct : (0.013419257571482188%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma materials_genome_crosswalk_observable_count_pos : (0 < 38)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -293,16 +305,4 @@ Proof. lra. Qed.
 
 Lemma hero_canonical_bridge_mean_rel_err_lt_twelve_pct : (0.07354375821147667%R) < (0.12%R).
 Proof. lra. Qed.
-
-Lemma hero_canonical_bridge_delta_lt_five_pct : (0.0035164727776800936%R) < (0.05%R).
-Proof. lra. Qed.
-
-Lemma allen_cohort_fi_pearson_r_gt_fifty_five : (0.55%R) < (0.6070731362799854%R).
-Proof. lra. Qed.
-
-Lemma hero_certified_verifier_confidence_gt_ninety_pct : (0.9%R) < (0.9598886696481669%R).
-Proof. lra. Qed.
-
-Lemma neurolab_strict_empirical_records_large : (7900 < 7941)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 

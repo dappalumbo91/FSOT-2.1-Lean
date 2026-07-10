@@ -18,7 +18,7 @@ def cosmology_wave7_count : ℕ := 29
 def cosmology_wave8_count : ℕ := 52
 def cosmology_wave9_count : ℕ := 7
 def cosmology_wave10_count : ℕ := 10
-def cosmology_higher_waves_max_error_pct : ℝ := (0.6313803900161674 : ℝ)
+def cosmology_higher_waves_max_error_pct : ℝ := (0.35683948712437213 : ℝ)
 
 theorem cosmology_higher_waves_total_pos : 0 < cosmology_higher_waves_total := by
   unfold cosmology_higher_waves_total; norm_num

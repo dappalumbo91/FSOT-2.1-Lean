@@ -6,6 +6,15 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma igem_parts_expanded_pooled_median_under_half_pct : (0.00007227106853889602%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma igem_parts_expanded_headline_median_under_half_pct : (0.00007227106853889602%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma igem_parts_expanded_observable_count_pos : (0 < 111)%nat.
+Proof. apply Nat.ltb_lt; reflexivity. Qed.
+
 Lemma igem_parts_expanded_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -52,6 +61,9 @@ Lemma information_theory_public_panel_beats_sota_headlines_pos : (0 < 2)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma initiation_transformation_archetype_pooled_median_under_half_pct : 0%R < (0.5%R).
+Proof. lra. Qed.
+
+Lemma initiation_transformation_archetype_headline_median_under_half_pct : (0.19339831498352392%R) < (0.5%R).
 Proof. lra. Qed.
 
 Lemma initiation_transformation_archetype_observable_count_pos : (0 < 10)%nat.
@@ -293,16 +305,4 @@ Proof. lra. Qed.
 
 Lemma materials_engineering_observable_count_pos : (0 < 87)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma materials_engineering_section_count_pos : (0 < 7)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma materials_engineering_beats_sota_headlines_pos : (0 < 6)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
-
-Lemma materials_genome_crosswalk_pooled_median_under_half_pct : 0%R < (0.5%R).
-Proof. lra. Qed.
-
-Lemma materials_genome_crosswalk_headline_median_under_half_pct : (0.013419257571482188%R) < (0.5%R).
-Proof. lra. Qed.
 

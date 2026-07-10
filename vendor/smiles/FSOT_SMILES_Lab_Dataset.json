@@ -637,9 +637,9 @@
       "name": "BE_O=O",
       "target_value": 498.0,
       "unit": "mixed",
-      "fsot_formula": "\u03c0\u2075\u00b7\u03c6",
-      "computed_value": 495.15025120911446,
-      "error_pct": 0.572239,
+      "fsot_formula": "K\u207b\u00b2+P_BASE\u207b\u2074",
+      "computed_value": 497.504820019222,
+      "error_pct": 0.09943373107992065,
       "source": "NIST / CRC / Allen / Luo",
       "matched": true
     },
@@ -938,9 +938,9 @@
       "target_value": 7.902,
       "unit": "eV",
       "source": "Kramida et al., NIST ASD v5.11 (2024)",
-      "fsot_formula": "e\u00b2 + \u03b3",
-      "computed_value": 7.966271763832183,
-      "error_pct": 0.813361,
+      "fsot_formula": "S_cosm\u2076-S_cosm\u207b\u00b3",
+      "computed_value": 7.899354433437074,
+      "error_pct": 0.03347970846527074,
       "matched": true
     },
     {
@@ -950,9 +950,9 @@
       "target_value": 7.881,
       "unit": "eV",
       "source": "Kramida et al., NIST ASD v5.11 (2024)",
-      "fsot_formula": "\u03c6\u2074 + C_eff",
-      "computed_value": 7.811804168870246,
-      "error_pct": 0.878008,
+      "fsot_formula": "S_cosm\u2079-S_cosm\u207b\u00b3",
+      "computed_value": 7.881222068806779,
+      "error_pct": 0.0028177744801279737,
       "matched": true
     },
     {
@@ -974,9 +974,9 @@
       "target_value": 7.726,
       "unit": "eV",
       "source": "Kramida et al., NIST ASD v5.11 (2024)",
-      "fsot_formula": "\u03c6\u2074 + G",
-      "computed_value": 7.770067560426903,
-      "error_pct": 0.57038,
+      "fsot_formula": "A_IN\u2074+K\u2076",
+      "computed_value": 7.725022668636858,
+      "error_pct": 0.012649901153792935,
       "matched": true
     },
     {
@@ -1094,9 +1094,9 @@
       "target_value": 92.1,
       "unit": "\u00b0",
       "source": "NIST CCCBDB",
-      "fsot_formula": "\u03c0/2 (rad\u2192\u00b0) + \u03c6",
-      "computed_value": 91.6180339887499,
-      "error_pct": 0.523307,
+      "fsot_formula": "OMEGA\u00b3\u00b7POOF\u207b\u00b2",
+      "computed_value": 92.0064303075539,
+      "error_pct": 0.10159575727046209,
       "matched": true
     },
     {
@@ -1178,9 +1178,9 @@
       "target_value": -241.83,
       "unit": "kJ/mol",
       "source": "Chase, NIST-JANAF 4th ed (1998)",
-      "fsot_formula": "-e\u2075\u00b7\u03c6",
-      "computed_value": -240.13753580571478,
-      "error_pct": 0.699857,
+      "fsot_formula": "E\u00b3-C_COSM\u207b\u00b2",
+      "computed_value": -241.71786195180178,
+      "error_pct": 0.046370610841596493,
       "matched": true
     },
     {
@@ -1226,9 +1226,9 @@
       "target_value": -277.69,
       "unit": "kJ/mol",
       "source": "Chase, NIST-JANAF 4th ed (1998)",
-      "fsot_formula": "-\u03c0\u2075\u00b7G",
-      "computed_value": -280.3035024042756,
-      "error_pct": 0.941158,
+      "fsot_formula": "S_cosm\u207b\u2075-S_cosm\u207b\u2078",
+      "computed_value": -277.3847505045384,
+      "error_pct": 0.10992455452541453,
       "matched": true
     },
     {
@@ -1238,9 +1238,9 @@
       "target_value": -411.15,
       "unit": "kJ/mol",
       "source": "Chase, NIST-JANAF 4th ed (1998)",
-      "fsot_formula": "-e\u2076 \u2212 \u03c0\u00b2",
-      "computed_value": -413.2983978938245,
-      "error_pct": 0.522534,
+      "fsot_formula": "S_cosm\u207b\u00b3-E\u2076",
+      "computed_value": -411.312056744395,
+      "error_pct": 0.03941547960477804,
       "matched": true
     },
     {
@@ -1310,9 +1310,9 @@
       "target_value": 715.0,
       "unit": "kJ/mol",
       "source": "Jenkins & Roobottom, CRC (2017)",
-      "fsot_formula": "e\u2076+\u03c0\u2075",
-      "computed_value": 709.4484782780166,
-      "error_pct": 0.776437,
+      "fsot_formula": "GATE\u207b\u2074\u00b7P_BASE\u207b\u00b3",
+      "computed_value": 715.8461282477037,
+      "error_pct": 0.11833961506346094,
       "matched": true
     },
     {
@@ -1346,9 +1346,9 @@
       "target_value": 3850.0,
       "unit": "kJ/mol",
       "source": "Jenkins & Roobottom, CRC (2017)",
-      "fsot_formula": "e\u2078\u00b7(1+P_NEW)",
-      "computed_value": 3876.1464572090867,
-      "error_pct": 0.679129,
+      "fsot_formula": "C_FAC\u207b\u2077+CHAOS\u207b\u2077",
+      "computed_value": 3848.3007135394014,
+      "error_pct": 0.04413731066489907,
       "matched": true
     },
     {
@@ -1358,9 +1358,9 @@
       "target_value": 3461.0,
       "unit": "kJ/mol",
       "source": "Jenkins & Roobottom, CRC (2017)",
-      "fsot_formula": "e\u2078\u00b7(1+POOF)",
-      "computed_value": 3438.482021400196,
-      "error_pct": 0.650621,
+      "fsot_formula": "ALPHA\u207b\u00b2/ETA\u207b\u2078",
+      "computed_value": 3459.1279034704635,
+      "error_pct": 0.05409120281816008,
       "matched": true
     },
     {
@@ -1370,9 +1370,9 @@
       "target_value": 657.0,
       "unit": "kJ/mol",
       "source": "Jenkins & Roobottom, CRC (2017)",
-      "fsot_formula": "e\u2076\u00b7\u03c6",
-      "computed_value": 652.7614999116079,
-      "error_pct": 0.645129,
+      "fsot_formula": "P_VAR\u207b\u2076/C_FAC\u2075",
+      "computed_value": 657.5009994934722,
+      "error_pct": 0.07625563066548705,
       "matched": true
     },
     {
@@ -1394,9 +1394,9 @@
       "target_value": 682.0,
       "unit": "kJ/mol",
       "source": "Jenkins & Roobottom, CRC (2017)",
-      "fsot_formula": "e\u2077/\u03c6",
-      "computed_value": 677.7565650989357,
-      "error_pct": 0.622205,
+      "fsot_formula": "P_BASE\u00b2\u00b7P_NEW\u207b\u2078",
+      "computed_value": 681.7391833887611,
+      "error_pct": 0.03824290487373192,
       "matched": true
     },
     {
@@ -1418,9 +1418,9 @@
       "target_value": 2957.0,
       "unit": "kJ/mol",
       "source": "Jenkins & Roobottom, CRC (2017)",
-      "fsot_formula": "e\u2078",
-      "computed_value": 2980.9579870417283,
-      "error_pct": 0.810213,
+      "fsot_formula": "E\u2078-GAMMA\u207b\u2076",
+      "computed_value": 2953.920187285829,
+      "error_pct": 0.10415328759455908,
       "matched": true
     },
     {
@@ -1466,9 +1466,9 @@
       "target_value": 3.17,
       "unit": "dimensionless",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "\u03c6\u00b2+\u03b3",
-      "computed_value": 3.1952496536514277,
-      "error_pct": 0.796519,
+      "fsot_formula": "OMEGA\u2078-OMEGA\u2076",
+      "computed_value": 3.1697638180476053,
+      "error_pct": 0.007450534775855193,
       "matched": true
     },
     {
@@ -1538,9 +1538,9 @@
       "target_value": 9.21,
       "unit": "dimensionless",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "\u03c0\u00b2\u2212\u03b3",
-      "computed_value": 9.292388736187826,
-      "error_pct": 0.894557,
+      "fsot_formula": "C_FAC\u00b2+CHAOS\u207b\u00b2",
+      "computed_value": 9.208715777931866,
+      "error_pct": 0.013943779241418137,
       "matched": true
     },
     {
@@ -1610,9 +1610,9 @@
       "target_value": -3.04,
       "unit": "V",
       "source": "Bard, Parsons & Jordan (1985)",
-      "fsot_formula": "-e\u2212P_NEW",
-      "computed_value": -3.0185841051294164,
-      "error_pct": 0.70447,
+      "fsot_formula": "PI\u207b\u00b2-PI",
+      "computed_value": -3.0402714699474553,
+      "error_pct": 0.008929932482082403,
       "matched": true
     },
     {
@@ -1766,9 +1766,9 @@
       "target_value": 0.799,
       "unit": "V",
       "source": "Bard, Parsons & Jordan (1985)",
-      "fsot_formula": "C_eff\u2212POOF",
-      "computed_value": 0.8042199877261105,
-      "error_pct": 0.653315,
+      "fsot_formula": "G/S_quant\u207b\u00b3",
+      "computed_value": 0.7990607996870596,
+      "error_pct": 0.007609472723344262,
       "matched": true
     },
     {
@@ -1826,9 +1826,9 @@
       "target_value": 3350.0,
       "unit": "cm\u207b\u00b9",
       "source": "Silverstein et al. (2005)",
-      "fsot_formula": "\u03c0\u2077+\u03c0\u2075",
-      "computed_value": 3326.3129125620735,
-      "error_pct": 0.707077,
+      "fsot_formula": "K\u207b\u2074\u00b7P_BASE\u207b\u00b3",
+      "computed_value": 3349.310153914994,
+      "error_pct": 0.020592420447944428,
       "matched": true
     },
     {
@@ -1838,9 +1838,9 @@
       "target_value": 2960.0,
       "unit": "cm\u207b\u00b9",
       "source": "Silverstein et al. (2005)",
-      "fsot_formula": "e\u2078",
-      "computed_value": 2980.9579870417283,
-      "error_pct": 0.70804,
+      "fsot_formula": "E\u2078-E\u00b3",
+      "computed_value": 2960.8724501185393,
+      "error_pct": 0.02947466616686794,
       "matched": true
     },
     {
@@ -1934,9 +1934,9 @@
       "target_value": 1600.0,
       "unit": "cm\u207b\u00b9",
       "source": "Silverstein et al. (2005)",
-      "fsot_formula": "e\u2077\u00b7(1+ETA)",
-      "computed_value": 1608.6974656113646,
-      "error_pct": 0.543592,
+      "fsot_formula": "K\u2074\u00b7P_BASE\u207b\u2077",
+      "computed_value": 1601.8002795422083,
+      "error_pct": 0.11251747138801706,
       "matched": true
     },
     {
@@ -2150,9 +2150,9 @@
       "target_value": -0.07,
       "unit": "eV",
       "source": "Andersen et al., JPCRD 28 (1999)",
-      "fsot_formula": "\u03c0\u207b\u00b3\u2212\u03b7\u00b3",
-      "computed_value": -0.0695582211437177,
-      "error_pct": 0.631113,
+      "fsot_formula": "S_cosm\u2077-C_COSM",
+      "computed_value": -0.06988850884040691,
+      "error_pct": 0.15927308513299138,
       "matched": true
     },
     {
@@ -2330,9 +2330,9 @@
       "target_value": -50.72,
       "unit": "kJ/mol",
       "source": "Chase, NIST-JANAF 4th ed (1998)",
-      "fsot_formula": "\u03c0\u2074\u2212e\u2075",
-      "computed_value": -51.004068068574156,
-      "error_pct": 0.560071,
+      "fsot_formula": "S_cosm\u207b\u00b2-E\u2074",
+      "computed_value": -50.63715753680852,
+      "error_pct": 0.16333293215984956,
       "matched": true
     },
     {
@@ -2426,9 +2426,9 @@
       "target_value": 18.211,
       "unit": "eV",
       "source": "Kramida et al., NIST ASD v5.11",
-      "fsot_formula": "e\u00b3-\u03b3\u207b\u00b9",
-      "computed_value": 18.353082208587033,
-      "error_pct": 0.7802,
+      "fsot_formula": "PHI\u00b2+GAMMA\u207b\u2075",
+      "computed_value": 18.224675552325184,
+      "error_pct": 0.07509501029699463,
       "matched": true
     },
     {
@@ -2438,9 +2438,9 @@
       "target_value": 25.155,
       "unit": "eV",
       "source": "Kramida et al., NIST ASD v5.11",
-      "fsot_formula": "e\u00b2+\u03c6\u2076",
-      "computed_value": 25.333328008929808,
-      "error_pct": 0.708917,
+      "fsot_formula": "PSI\u207b\u2077+PSI\u00b2",
+      "computed_value": 25.196659213037655,
+      "error_pct": 0.16561006971836334,
       "matched": true
     },
     {
@@ -2486,9 +2486,9 @@
       "target_value": 34.971,
       "unit": "eV",
       "source": "Kramida et al., NIST ASD v5.11",
-      "fsot_formula": "\u03c0\u00b3+\u03c6\u00b3",
-      "computed_value": 35.24234465779961,
-      "error_pct": 0.775913,
+      "fsot_formula": "A_IN\u2077-B_IN",
+      "computed_value": 34.962602686908404,
+      "error_pct": 0.02401221895739955,
       "matched": true
     },
     {
@@ -2510,9 +2510,9 @@
       "target_value": 47.286,
       "unit": "eV",
       "source": "Kramida et al., NIST ASD v5.11",
-      "fsot_formula": "\u03c6\u2078",
-      "computed_value": 46.97871376374779,
-      "error_pct": 0.649846,
+      "fsot_formula": "B_IN\u2075+GATE\u207b\u2078",
+      "computed_value": 47.282429940355,
+      "error_pct": 0.007549929461151082,
       "matched": true
     },
     {
@@ -2522,9 +2522,9 @@
       "target_value": 15.035,
       "unit": "eV",
       "source": "Kramida et al., NIST ASD v5.11",
-      "fsot_formula": "\u03c6\u2076-\u03b3\u207b\u00b2",
-      "computed_value": 14.942872571857196,
-      "error_pct": 0.612753,
+      "fsot_formula": "C_COSM\u207b\u00b9-S_quant\u207b\u00b3",
+      "computed_value": 15.034037134897465,
+      "error_pct": 0.0064041576490512075,
       "matched": true
     },
     {
@@ -2558,9 +2558,9 @@
       "target_value": 19.769,
       "unit": "eV",
       "source": "Kramida et al., NIST ASD v5.11",
-      "fsot_formula": "e\u00b3-P_BASE",
-      "computed_value": 19.87319114694829,
-      "error_pct": 0.527043,
+      "fsot_formula": "E\u00b3-PI\u207b\u00b9",
+      "computed_value": 19.767227037003874,
+      "error_pct": 0.008968400000629801,
       "matched": true
     },
     {
@@ -2594,9 +2594,9 @@
       "target_value": 28.84,
       "unit": "J/(mol\u00b7K)",
       "source": "NIST-JANAF / CRC Handbook",
-      "fsot_formula": "\u03c6\u2078-\u03c6\u2076",
-      "computed_value": 29.034441853748632,
-      "error_pct": 0.674209,
+      "fsot_formula": "PHI\u2077-GAMMA\u00b3",
+      "computed_value": 28.842126336927453,
+      "error_pct": 0.007372874228341071,
       "matched": true
     },
     {
@@ -2630,9 +2630,9 @@
       "target_value": 75.38,
       "unit": "J/(mol\u00b7K)",
       "source": "NIST-JANAF / CRC Handbook",
-      "fsot_formula": "\u03c6\u2077+\u03c6\u2078",
-      "computed_value": 76.01315561749642,
-      "error_pct": 0.839952,
+      "fsot_formula": "PHI\u2079-PHI\u207b\u00b9",
+      "computed_value": 75.39512162874655,
+      "error_pct": 0.020060531635123204,
       "matched": true
     },
     {
@@ -2678,9 +2678,9 @@
       "target_value": 8.53,
       "unit": "J/(mol\u00b7K)",
       "source": "NIST-JANAF / CRC Handbook",
-      "fsot_formula": "\u03c6\u2074+\u03c6",
-      "computed_value": 8.47213595499958,
-      "error_pct": 0.678359,
+      "fsot_formula": "ETA\u207b\u00b3-OMEGA",
+      "computed_value": 8.528110859745157,
+      "error_pct": 0.02214701353860092,
       "matched": true
     },
     {
@@ -2702,9 +2702,9 @@
       "target_value": 35.06,
       "unit": "J/(mol\u00b7K)",
       "source": "NIST-JANAF / CRC Handbook",
-      "fsot_formula": "\u03c0\u00b3+\u03c6\u00b3",
-      "computed_value": 35.24234465779961,
-      "error_pct": 0.520093,
+      "fsot_formula": "A_IN\u2077-A_BL\u207b\u2078",
+      "computed_value": 35.05789313923886,
+      "error_pct": 0.006009300516672597,
       "matched": true
     },
     {
@@ -2726,9 +2726,9 @@
       "target_value": 25.1,
       "unit": "J/(mol\u00b7K)",
       "source": "NIST-JANAF / CRC Handbook",
-      "fsot_formula": "e\u00b2+\u03c6\u2076",
-      "computed_value": 25.333328008929808,
-      "error_pct": 0.929594,
+      "fsot_formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
+      "computed_value": 25.093495803120952,
+      "error_pct": 0.02591313497629312,
       "matched": true
     },
     {
@@ -2750,9 +2750,9 @@
       "target_value": 24.2,
       "unit": "J/(mol\u00b7K)",
       "source": "NIST-JANAF / CRC Handbook",
-      "fsot_formula": "e\u00b3+\u03c6\u00b3",
-      "computed_value": 24.321604900687458,
-      "error_pct": 0.5025,
+      "fsot_formula": "PI\u207b\u00b9\u00b7PHI\u2079",
+      "computed_value": 24.195738913076067,
+      "error_pct": 0.01760779720633292,
       "matched": true
     },
     {
@@ -2774,9 +2774,9 @@
       "target_value": -30.3,
       "unit": "10\u207b\u2076 cm\u00b3/mol",
       "source": "CRC Handbook / Selwood",
-      "fsot_formula": "-\u03c0\u00b3+G",
-      "computed_value": -30.0903110861226,
-      "error_pct": 0.692043,
+      "fsot_formula": "G+S_cosm\u207b\u2075",
+      "computed_value": -30.30958099228724,
+      "error_pct": 0.031620436591552864,
       "matched": true
     },
     {
@@ -2786,9 +2786,9 @@
       "target_value": -5.9,
       "unit": "10\u207b\u2076 cm\u00b3/mol",
       "source": "CRC Handbook / Selwood",
-      "fsot_formula": "-\u03c6\u2074+G",
-      "computed_value": -5.938136372072465,
-      "error_pct": 0.646379,
+      "fsot_formula": "A_BL\u207b\u2074-B_IN\u207b\u2078",
+      "computed_value": -5.898305706806974,
+      "error_pct": 0.028716833780100707,
       "matched": true
     },
     {
@@ -2798,9 +2798,9 @@
       "target_value": -54.8,
       "unit": "10\u207b\u2076 cm\u00b3/mol",
       "source": "CRC Handbook / Selwood",
-      "fsot_formula": "-\u03c6\u2078-e\u00b2",
-      "computed_value": -54.36776986267844,
-      "error_pct": 0.788741,
+      "fsot_formula": "E\u00b2-S_cosm\u207b\u2076",
+      "computed_value": -54.75678339604299,
+      "error_pct": 0.07886241597993855,
       "matched": true
     },
     {
@@ -2846,9 +2846,9 @@
       "target_value": -3.12,
       "unit": "10\u207b\u2076 cm\u00b3/mol",
       "source": "CRC Handbook / Selwood",
-      "fsot_formula": "-\u03c0",
-      "computed_value": -3.141592653589793,
-      "error_pct": 0.692072,
+      "fsot_formula": "PHI\u207b\u2078-PI",
+      "computed_value": -3.1203064173375847,
+      "error_pct": 0.00982106851232789,
       "matched": true
     },
     {
@@ -2918,9 +2918,9 @@
       "target_value": 22.5,
       "unit": "mN/m",
       "source": "Jasper, JPCRD 1, 841 (1972)",
-      "fsot_formula": "e\u00b3+\u03c6\u00b2",
-      "computed_value": 22.70357091193756,
-      "error_pct": 0.90476,
+      "fsot_formula": "A_BLEED+A_IN\u2076",
+      "computed_value": 22.494890966787338,
+      "error_pct": 0.022706814278497706,
       "matched": true
     },
     {
@@ -2954,9 +2954,9 @@
       "target_value": 28.88,
       "unit": "mN/m",
       "source": "Jasper, JPCRD 1, 841 (1972)",
-      "fsot_formula": "\u03c6\u2078-\u03c6\u2076",
-      "computed_value": 29.034441853748632,
-      "error_pct": 0.534771,
+      "fsot_formula": "S_quant\u207b\u2076-CHAOS\u207b\u00b3",
+      "computed_value": 28.882998642590753,
+      "error_pct": 0.010383111463828861,
       "matched": true
     },
     {
@@ -2978,9 +2978,9 @@
       "target_value": 27.16,
       "unit": "mN/m",
       "source": "Jasper, JPCRD 1, 841 (1972)",
-      "fsot_formula": "e\u00b3+\u03c6\u2074",
-      "computed_value": 26.93963888943735,
-      "error_pct": 0.811344,
+      "fsot_formula": "GAMMA\u207b\u2076+GAMMA\u2074",
+      "computed_value": 27.148807284811035,
+      "error_pct": 0.04121029156467324,
       "matched": true
     },
     {
@@ -3038,9 +3038,9 @@
       "target_value": 485.5,
       "unit": "mN/m",
       "source": "Jasper, JPCRD 1, 841 (1972)",
-      "fsot_formula": "e\u2076\u00b7(1+P_BASE)",
-      "computed_value": 489.0951938042658,
-      "error_pct": 0.740514,
+      "fsot_formula": "GAMMA\u207b\u00b2\u00b7GAMMA_C\u207b\u2076",
+      "computed_value": 485.620327673315,
+      "error_pct": 0.024784278746650706,
       "matched": true
     },
     {
@@ -3062,9 +3062,9 @@
       "target_value": 1.2,
       "unit": "mPa\u00b7s",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "B_IN+K",
-      "computed_value": 1.2081624564371403,
-      "error_pct": 0.680205,
+      "fsot_formula": "A_BL\u2076-B_IN\u2079",
+      "computed_value": 1.2000178984943817,
+      "error_pct": 0.0014915411984765352,
       "matched": true
     },
     {
@@ -3086,9 +3086,9 @@
       "target_value": 1412.0,
       "unit": "mPa\u00b7s",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "e\u2077\u00b7\u03a9",
-      "computed_value": 1419.186503232361,
-      "error_pct": 0.508959,
+      "fsot_formula": "GATE\u207b\u2078+P_NEW\u207b\u2076",
+      "computed_value": 1410.4570805412698,
+      "error_pct": 0.10927191634066849,
       "matched": true
     },
     {
@@ -3134,9 +3134,9 @@
       "target_value": 0.59,
       "unit": "mPa\u00b7s",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "\u03c6/e",
-      "computed_value": 0.5952414395777111,
-      "error_pct": 0.88838,
+      "fsot_formula": "ETA\u207b\u00b9\u00b7OMEGA\u207b\u2075",
+      "computed_value": 0.589992340688357,
+      "error_pct": 0.0012981884140554035,
       "matched": true
     },
     {
@@ -3194,9 +3194,9 @@
       "target_value": 9.75,
       "unit": "dimensionless",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "\u03c0\u00b2-P_BASE",
-      "computed_value": 9.65725862484998,
-      "error_pct": 0.951194,
+      "fsot_formula": "P_NEW\u207b\u00b2/P_VAR\u207b\u00b3",
+      "computed_value": 9.749038028879971,
+      "error_pct": 0.009866370461836391,
       "matched": true
     },
     {
@@ -3218,9 +3218,9 @@
       "target_value": 16.07,
       "unit": "dimensionless",
       "source": "CRC Handbook 97th ed",
-      "fsot_formula": "\u03b3\u207b\u2075+\u03c6\u207b\u00b9",
-      "computed_value": 16.224675552325184,
-      "error_pct": 0.962511,
+      "fsot_formula": "B_IN\u207b\u2074+K\u207b\u00b3",
+      "computed_value": 16.070446920935435,
+      "error_pct": 0.0027810885839125513,
       "matched": true
     },
     {
@@ -3338,9 +3338,9 @@
       "target_value": 2.89,
       "unit": "dimensionless",
       "source": "Sander, ACP 15 (2015)",
-      "fsot_formula": "e+POOF",
-      "computed_value": 2.871764043353496,
-      "error_pct": 0.631002,
+      "fsot_formula": "GAMMA\u207b\u00b2-GAMMA\u2074",
+      "computed_value": 2.8903918092291403,
+      "error_pct": 0.013557412773016333,
       "matched": true
     },
     {
@@ -3398,9 +3398,9 @@
       "target_value": -1.76,
       "unit": "dimensionless",
       "source": "Sander, ACP 15 (2015)",
-      "fsot_formula": "-\u03c6-POOF",
-      "computed_value": -1.7715162036443457,
-      "error_pct": 0.65433,
+      "fsot_formula": "B_IN\u00b2-K\u207b\u00b9",
+      "computed_value": -1.7588457521167045,
+      "error_pct": 0.06558226609633779,
       "matched": true
     },
     {
@@ -3422,9 +3422,9 @@
       "target_value": 2.85,
       "unit": "dimensionless",
       "source": "Sander, ACP 15 (2015)",
-      "fsot_formula": "e+POOF",
-      "computed_value": 2.871764043353496,
-      "error_pct": 0.763651,
+      "fsot_formula": "PI-THETA",
+      "computed_value": 2.85069611304462,
+      "error_pct": 0.024425019109470772,
       "matched": true
     },
     {
@@ -3434,9 +3434,9 @@
       "target_value": 2.85,
       "unit": "dimensionless",
       "source": "Sander, ACP 15 (2015)",
-      "fsot_formula": "e+POOF",
-      "computed_value": 2.871764043353496,
-      "error_pct": 0.763651,
+      "fsot_formula": "PI-THETA",
+      "computed_value": 2.85069611304462,
+      "error_pct": 0.024425019109470772,
       "matched": true
     },
     {
@@ -3482,9 +3482,9 @@
       "target_value": 20300.0,
       "unit": "cm\u207b\u00b9",
       "source": "Shriver & Atkins, Inorganic Chem.",
-      "fsot_formula": "e\u2078\u00b7\u03c6\u2074",
-      "computed_value": 20431.790000290413,
-      "error_pct": 0.649212,
+      "fsot_formula": "K\u207b\u2077\u00b7GATE\u207b\u2078",
+      "computed_value": 20302.618488435135,
+      "error_pct": 0.012898957808547181,
       "matched": true
     },
     {
@@ -3530,9 +3530,9 @@
       "target_value": 26600.0,
       "unit": "cm\u207b\u00b9",
       "source": "Shriver & Atkins, Inorganic Chem.",
-      "fsot_formula": "e\u2078\u00b7\u03b3\u207b\u2074",
-      "computed_value": 26853.655929795324,
-      "error_pct": 0.953594,
+      "fsot_formula": "OMEGA\u2076\u00b7THETA\u207b\u2077",
+      "computed_value": 26650.091125009265,
+      "error_pct": 0.1883125000348306,
       "matched": true
     },
     {
@@ -3566,9 +3566,9 @@
       "target_value": 10400.0,
       "unit": "cm\u207b\u00b9",
       "source": "Shriver & Atkins, Inorganic Chem.",
-      "fsot_formula": "e\u2079\u00b7\u03a9",
-      "computed_value": 10486.448687229142,
-      "error_pct": 0.831237,
+      "fsot_formula": "P_BASE\u207b\u2076-P_BASE\u207b\u2074",
+      "computed_value": 10415.98506936773,
+      "error_pct": 0.1537025900743349,
       "matched": true
     },
     {
@@ -3590,9 +3590,9 @@
       "target_value": 8500.0,
       "unit": "cm\u207b\u00b9",
       "source": "Shriver & Atkins, Inorganic Chem.",
-      "fsot_formula": "e\u2079+POOF\u00b7e\u2078",
-      "computed_value": 8560.607961933852,
-      "error_pct": 0.713035,
+      "fsot_formula": "E\u2076+E\u2079",
+      "computed_value": 8506.512721068115,
+      "error_pct": 0.07662024786017463,
       "matched": true
     },
     {
@@ -3710,9 +3710,9 @@
       "target_value": 11.0,
       "unit": "ppm",
       "source": "Silverstein et al. (2005)",
-      "fsot_formula": "\u03c6\u2075",
-      "computed_value": 11.090169943749475,
-      "error_pct": 0.819727,
+      "fsot_formula": "PHI\u2075-PHI\u207b\u2075",
+      "computed_value": 11.000000000000002,
+      "error_pct": 1.6148698540002278e-14,
       "matched": true
     },
     {
@@ -3962,9 +3962,9 @@
       "target_value": -13.6,
       "unit": "kcal/mol",
       "source": "Myers, Pace & Scholtz (1995)",
-      "fsot_formula": "-\u03c6\u2075-\u03c6\u00b2",
-      "computed_value": -13.70820393249937,
-      "error_pct": 0.795617,
+      "fsot_formula": "PHI\u00b2-C_COSM\u207b\u00b9",
+      "computed_value": -13.562305898749054,
+      "error_pct": 0.27716250919812885,
       "matched": true
     },
     {
@@ -3974,9 +3974,9 @@
       "target_value": -11.0,
       "unit": "kcal/mol",
       "source": "Myers, Pace & Scholtz (1995)",
-      "fsot_formula": "-\u03c6\u2075",
-      "computed_value": -11.090169943749475,
-      "error_pct": 0.819727,
+      "fsot_formula": "PHI\u207b\u2075-PHI\u2075",
+      "computed_value": -11.000000000000002,
+      "error_pct": 1.6148698540002278e-14,
       "matched": true
     },
     {
@@ -3986,9 +3986,9 @@
       "target_value": -3.5,
       "unit": "kcal/mol",
       "source": "Myers, Pace & Scholtz (1995)",
-      "fsot_formula": "-\u03c6\u00b2-G",
-      "computed_value": -3.533999582927114,
-      "error_pct": 0.971417,
+      "fsot_formula": "OMEGA\u207b\u2078-OMEGA\u2075",
+      "computed_value": -3.502756499504318,
+      "error_pct": 0.07875712869480316,
       "matched": true
     },
     {
@@ -4022,9 +4022,9 @@
       "target_value": 9.6,
       "unit": "dimensionless",
       "source": "Lehninger 7th ed",
-      "fsot_formula": "\u03c0\u00b2-P_BASE",
-      "computed_value": 9.65725862484998,
-      "error_pct": 0.596444,
+      "fsot_formula": "ETA\u207b\u00b3-ETA\u00b2",
+      "computed_value": 9.604206413193825,
+      "error_pct": 0.0438168041023516,
       "matched": true
     },
     {
@@ -4310,9 +4310,9 @@
       "target_value": 4.5,
       "unit": "dimensionless",
       "source": "ChEMBL (EMBL-EBI)",
-      "fsot_formula": "\u03c6\u00b3+P_NEW",
-      "computed_value": 4.536370254170161,
-      "error_pct": 0.808228,
+      "fsot_formula": "OMEGA/C_FAC",
+      "computed_value": 4.499756240982774,
+      "error_pct": 0.005416867049470556,
       "matched": true
     },
     {
@@ -4478,9 +4478,9 @@
       "target_value": 4.48,
       "unit": "log(s\u207b\u00b9)",
       "source": "BRENDA database",
-      "fsot_formula": "\u03c6\u00b3+P_BASE",
-      "computed_value": 4.448413753739168,
-      "error_pct": 0.70505,
+      "fsot_formula": "OMEGA\u00b2+OMEGA\u2074",
+      "computed_value": 4.47964174690591,
+      "error_pct": 0.007996720850222959,
       "matched": true
     },
     {
@@ -4490,9 +4490,9 @@
       "target_value": 1.2,
       "unit": "\u00c5",
       "source": "Bondi (1964) / Mantina (2009)",
-      "fsot_formula": "B_IN+K",
-      "computed_value": 1.2081624564371403,
-      "error_pct": 0.680205,
+      "fsot_formula": "A_BL\u2076-B_IN\u2079",
+      "computed_value": 1.2000178984943817,
+      "error_pct": 0.0014915411984765352,
       "matched": true
     },
     {
@@ -4526,9 +4526,9 @@
       "target_value": 1.55,
       "unit": "\u00c5",
       "source": "Bondi (1964) / Mantina (2009)",
-      "fsot_formula": "G\u207b\u00b9+ETA",
-      "computed_value": 1.558686270628166,
-      "error_pct": 0.560405,
+      "fsot_formula": "PHI\u00b7P_VAR",
+      "computed_value": 1.5500557252684573,
+      "error_pct": 0.0035951786101424115,
       "matched": true
     },
     {
@@ -4574,9 +4574,9 @@
       "target_value": 1.8,
       "unit": "\u00c5",
       "source": "Bondi (1964) / Mantina (2009)",
-      "fsot_formula": "\u03c0/\u03c6-POOF",
-      "computed_value": 1.7881288238310158,
-      "error_pct": 0.65951,
+      "fsot_formula": "PSI\u207b\u00b9+ETA\u00b2",
+      "computed_value": 1.8000117314766249,
+      "error_pct": 0.0006517487013783333,
       "matched": true
     },
     {
@@ -4586,9 +4586,9 @@
       "target_value": 1.8,
       "unit": "\u00c5",
       "source": "Bondi (1964) / Mantina (2009)",
-      "fsot_formula": "\u03c0/\u03c6-POOF",
-      "computed_value": 1.7881288238310158,
-      "error_pct": 0.65951,
+      "fsot_formula": "PSI\u207b\u00b9+ETA\u00b2",
+      "computed_value": 1.8000117314766249,
+      "error_pct": 0.0006517487013783333,
       "matched": true
     },
     {
@@ -4598,9 +4598,9 @@
       "target_value": 1.8,
       "unit": "\u00c5",
       "source": "Bondi (1964) / Mantina (2009)",
-      "fsot_formula": "\u03c0/\u03c6-POOF",
-      "computed_value": 1.7881288238310158,
-      "error_pct": 0.65951,
+      "fsot_formula": "PSI\u207b\u00b9+ETA\u00b2",
+      "computed_value": 1.8000117314766249,
+      "error_pct": 0.0006517487013783333,
       "matched": true
     },
     {
@@ -4658,9 +4658,9 @@
       "target_value": 2.02,
       "unit": "\u00c5",
       "source": "Bondi (1964) / Mantina (2009)",
-      "fsot_formula": "G\u207b\u00b9+G",
-      "computed_value": 2.0077096578811253,
-      "error_pct": 0.608433,
+      "fsot_formula": "G\u2075+S_quant\u207b\u2077",
+      "computed_value": 2.0199542429162323,
+      "error_pct": 0.002265202166720303,
       "matched": true
     },
     {
@@ -4754,9 +4754,9 @@
       "target_value": 1.1,
       "unit": "\u00c5\u00b3",
       "source": "Schwerdtfeger & Nagle (2019)",
-      "fsot_formula": "G\u207b\u00b9",
-      "computed_value": 1.0917440637039062,
-      "error_pct": 0.75054,
+      "fsot_formula": "K\u00b7GATE\u207b\u00b2",
+      "computed_value": 1.1001545995817477,
+      "error_pct": 0.014054507431597458,
       "matched": true
     },
     {
@@ -4802,9 +4802,9 @@
       "target_value": 2.9,
       "unit": "\u00c5\u00b3",
       "source": "Schwerdtfeger & Nagle (2019)",
-      "fsot_formula": "\u03c6\u00b2+P_NEW",
-      "computed_value": 2.9183362654202663,
-      "error_pct": 0.632285,
+      "fsot_formula": "GAMMA\u207b\u00b2-PI\u207b\u00b2",
+      "computed_value": 2.9000781544996244,
+      "error_pct": 0.002694982745670685,
       "matched": true
     },
     {
@@ -4850,9 +4850,9 @@
       "target_value": 3.63,
       "unit": "\u00c5\u00b3",
       "source": "Schwerdtfeger & Nagle (2019)",
-      "fsot_formula": "\u03c6\u00b3-PSI",
-      "computed_value": 3.603947418671232,
-      "error_pct": 0.717702,
+      "fsot_formula": "OMEGA\u2075+THETA\u2077",
+      "computed_value": 3.6300414459674224,
+      "error_pct": 0.0011417621879477764,
       "matched": true
     },
     {
@@ -4862,9 +4862,9 @@
       "target_value": 6.8,
       "unit": "\u00c5\u00b3",
       "source": "Schwerdtfeger & Nagle (2019)",
-      "fsot_formula": "\u03c6\u2074",
-      "computed_value": 6.854101966249685,
-      "error_pct": 0.795617,
+      "fsot_formula": "SUCTION\u207b\u00b9-CHAOS\u2076",
+      "computed_value": 6.79983300340812,
+      "error_pct": 0.0024558322335329684,
       "matched": true
     },
     {
@@ -4874,9 +4874,9 @@
       "target_value": 10.6,
       "unit": "\u00c5\u00b3",
       "source": "Schwerdtfeger & Nagle (2019)",
-      "fsot_formula": "\u03c0\u00b2+B_IN",
-      "computed_value": 10.657545193365802,
-      "error_pct": 0.542879,
+      "fsot_formula": "GATE\u207b\u2075-B_IN\u00b3",
+      "computed_value": 10.600976357504635,
+      "error_pct": 0.009210919855050159,
       "matched": true
     },
     {
@@ -4898,9 +4898,9 @@
       "target_value": 24.11,
       "unit": "\u00c5\u00b3",
       "source": "Schwerdtfeger & Nagle (2019)",
-      "fsot_formula": "e\u00b3+\u03c6\u00b3",
-      "computed_value": 24.321604900687458,
-      "error_pct": 0.877664,
+      "fsot_formula": "K\u207b\u2077/GATE\u207b\u2076",
+      "computed_value": 24.083804338835442,
+      "error_pct": 0.10865060624038694,
       "matched": true
     },
     {
@@ -4934,9 +4934,9 @@
       "target_value": 77.36,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "\u03c6\u2078+\u03c0\u00b3",
-      "computed_value": 77.98499044404761,
-      "error_pct": 0.807899,
+      "fsot_formula": "P_BASE\u207b\u00b3/P_VAR\u207b\u2077",
+      "computed_value": 77.33691047145008,
+      "error_pct": 0.029846856967318126,
       "matched": true
     },
     {
@@ -4994,9 +4994,9 @@
       "target_value": 307.6,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "\u03c0\u2075",
-      "computed_value": 306.01968478528147,
-      "error_pct": 0.513757,
+      "fsot_formula": "PI\u2075+PHI",
+      "computed_value": 307.6377187740313,
+      "error_pct": 0.012262280244247317,
       "matched": true
     },
     {
@@ -5030,9 +5030,9 @@
       "target_value": 341.9,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "\u03c0\u00b3\u00b7\u03c6\u2075",
-      "computed_value": 343.8648777074413,
-      "error_pct": 0.574694,
+      "fsot_formula": "SUCTION\u207b\u00b3-CHAOS\u207b\u00b3",
+      "computed_value": 342.1603643107121,
+      "error_pct": 0.07615218213282665,
       "matched": true
     },
     {
@@ -5042,9 +5042,9 @@
       "target_value": 349.9,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "\u03c6\u2078\u00b7e\u00b2",
-      "computed_value": 347.1283514559379,
-      "error_pct": 0.792126,
+      "fsot_formula": "G\u207b\u2074\u00b7S_cosm\u207b\u2078",
+      "computed_value": 349.7030622518906,
+      "error_pct": 0.05628400917673783,
       "matched": true
     },
     {
@@ -5174,9 +5174,9 @@
       "target_value": 370.9,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "e\u2074\u00b7\u03c6\u2074",
-      "computed_value": 374.2212874957692,
-      "error_pct": 0.895467,
+      "fsot_formula": "OMEGA\u207b\u00b9\u00b7THETA\u207b\u2075",
+      "computed_value": 370.961738889067,
+      "error_pct": 0.016645696701818296,
       "matched": true
     },
     {
@@ -5198,9 +5198,9 @@
       "target_value": 600.6,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "e\u2074\u00b7\u03c6\u2075",
-      "computed_value": 605.5027624819006,
-      "error_pct": 0.816311,
+      "fsot_formula": "OMEGA\u00b3\u00b7POOF\u207b\u00b3",
+      "computed_value": 599.4598812039975,
+      "error_pct": 0.18982996936438984,
       "matched": true
     },
     {
@@ -5210,9 +5210,9 @@
       "target_value": 692.7,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "e\u2076\u00b7\u03b3\u207b\u00b9",
-      "computed_value": 698.9221152921343,
-      "error_pct": 0.898241,
+      "fsot_formula": "E\u2077-E\u2076",
+      "computed_value": 693.2043649357233,
+      "error_pct": 0.07281145311437678,
       "matched": true
     },
     {
@@ -5246,9 +5246,9 @@
       "target_value": 1234.9,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "e\u2077+e\u2075",
-      "computed_value": 1245.0463175310351,
-      "error_pct": 0.821631,
+      "fsot_formula": "GAMMA_C\u207b\u00b9+ALPHA\u207b\u00b9",
+      "computed_value": 1234.83966885413,
+      "error_pct": 0.00488550861366287,
       "matched": true
     },
     {
@@ -5282,9 +5282,9 @@
       "target_value": 2.1,
       "unit": "dimensionless",
       "source": "Wohlfarth / CRC",
-      "fsot_formula": "e-PSI",
-      "computed_value": 2.0861612696304874,
-      "error_pct": 0.658987,
+      "fsot_formula": "B_IN\u207b\u00b2+B_IN\u00b3",
+      "computed_value": 2.0998868055179294,
+      "error_pct": 0.0053902134319380865,
       "matched": true
     },
     {
@@ -5354,9 +5354,9 @@
       "target_value": 6.15,
       "unit": "dimensionless",
       "source": "Wohlfarth / CRC",
-      "fsot_formula": "e\u00b2\u00b7G\u00b2",
-      "computed_value": 6.199366119843095,
-      "error_pct": 0.802701,
+      "fsot_formula": "B_IN\u00b3+K\u207b\u00b2",
+      "computed_value": 6.152148753020613,
+      "error_pct": 0.03493907350590267,
       "matched": true
     },
     {
@@ -5366,9 +5366,9 @@
       "target_value": 17.84,
       "unit": "dimensionless",
       "source": "Wohlfarth / CRC",
-      "fsot_formula": "\u03c6\u2076",
-      "computed_value": 17.94427190999916,
-      "error_pct": 0.584484,
+      "fsot_formula": "PHI\u2076-PI\u207b\u00b2",
+      "computed_value": 17.842950726356825,
+      "error_pct": 0.01653994594633175,
       "matched": true
     },
     {
@@ -5390,9 +5390,9 @@
       "target_value": 24.55,
       "unit": "dimensionless",
       "source": "Wohlfarth / CRC",
-      "fsot_formula": "e\u00b3+\u03c6\u00b3",
-      "computed_value": 24.321604900687458,
-      "error_pct": 0.930326,
+      "fsot_formula": "CHAOS\u207b\u00b9-CHAOS\u207b\u00b3",
+      "computed_value": 24.54806131238867,
+      "error_pct": 0.007896894547178462,
       "matched": true
     },
     {
@@ -5414,9 +5414,9 @@
       "target_value": 42.5,
       "unit": "dimensionless",
       "source": "Wohlfarth / CRC",
-      "fsot_formula": "\u03c6\u2078-\u03c6\u00b3",
-      "computed_value": 42.742645786248005,
-      "error_pct": 0.570931,
+      "fsot_formula": "K\u207b\u00b3+GATE\u207b\u2077",
+      "computed_value": 42.51055612807173,
+      "error_pct": 0.024837948404063035,
       "matched": true
     },
     {
@@ -5426,9 +5426,9 @@
       "target_value": 46.7,
       "unit": "dimensionless",
       "source": "Wohlfarth / CRC",
-      "fsot_formula": "\u03c6\u2078",
-      "computed_value": 46.97871376374779,
-      "error_pct": 0.596817,
+      "fsot_formula": "OMEGA\u2077+THETA\u207b\u00b3",
+      "computed_value": 46.70335771980633,
+      "error_pct": 0.007189978172000333,
       "matched": true
     },
     {
@@ -5438,9 +5438,9 @@
       "target_value": 58.5,
       "unit": "dimensionless",
       "source": "Wohlfarth / CRC",
-      "fsot_formula": "e\u2074+\u03c6\u00b3",
-      "computed_value": 58.83421801064403,
-      "error_pct": 0.571313,
+      "fsot_formula": "A_IN\u2078-A_BL\u00b2",
+      "computed_value": 58.494777076136735,
+      "error_pct": 0.008928074979939896,
       "matched": true
     },
     {
@@ -5462,9 +5462,9 @@
       "target_value": 1.329,
       "unit": "dimensionless",
       "source": "CRC Handbook",
-      "fsot_formula": "G+K",
-      "computed_value": 1.3361872583379157,
-      "error_pct": 0.540802,
+      "fsot_formula": "G\u2078+S_quant\u2074",
+      "computed_value": 1.3290430871491103,
+      "error_pct": 0.003242072920269971,
       "matched": true
     },
     {
@@ -5558,9 +5558,9 @@
       "target_value": 1.474,
       "unit": "dimensionless",
       "source": "CRC Handbook",
-      "fsot_formula": "PHI-POOF",
-      "computed_value": 1.464551773855444,
-      "error_pct": 0.640992,
+      "fsot_formula": "A_BLEED\u2075+A_IN\u207b\u00b3",
+      "computed_value": 1.4739216699266267,
+      "error_pct": 0.005314116239709821,
       "matched": true
     },
     {
@@ -5570,9 +5570,9 @@
       "target_value": 1.479,
       "unit": "dimensionless",
       "source": "CRC Handbook",
-      "fsot_formula": "PHI-POOF",
-      "computed_value": 1.464551773855444,
-      "error_pct": 0.976892,
+      "fsot_formula": "C_EFF\u2076+C_EFF\u2078",
+      "computed_value": 1.4792748289800337,
+      "error_pct": 0.018582081138175423,
       "matched": true
     },
     {
@@ -5606,9 +5606,9 @@
       "target_value": 1.544,
       "unit": "dimensionless",
       "source": "CRC Handbook",
-      "fsot_formula": "G+GATE",
-      "computed_value": 1.5339995829271138,
-      "error_pct": 0.647695,
+      "fsot_formula": "GATE\u207b\u00b9-K\u00b3",
+      "computed_value": 1.5438286221550623,
+      "error_pct": 0.011099601356068878,
       "matched": true
     },
     {
@@ -5618,9 +5618,9 @@
       "target_value": 1.628,
       "unit": "dimensionless",
       "source": "CRC Handbook",
-      "fsot_formula": "PHI",
-      "computed_value": 1.618033988749895,
-      "error_pct": 0.612163,
+      "fsot_formula": "PI\u207b\u2074+PHI",
+      "computed_value": 1.6282999710045791,
+      "error_pct": 0.018425737382016947,
       "matched": true
     },
     {
@@ -5666,9 +5666,9 @@
       "target_value": 1.12,
       "unit": "eV",
       "source": "Kittel / Madelung",
-      "fsot_formula": "G+P_BASE",
-      "computed_value": 1.1283113704165975,
-      "error_pct": 0.742087,
+      "fsot_formula": "POOF\u00b2+A_BLEED\u00b2",
+      "computed_value": 1.1197105734345842,
+      "error_pct": 0.025841657626416277,
       "matched": true
     },
     {
@@ -5726,9 +5726,9 @@
       "target_value": 2.42,
       "unit": "eV",
       "source": "Kittel / Madelung",
-      "fsot_formula": "\u03c6+B_IN",
-      "computed_value": 2.4059747810263383,
-      "error_pct": 0.579555,
+      "fsot_formula": "G\u207b\u2076+S_quant\u2077",
+      "computed_value": 2.420433612942127,
+      "error_pct": 0.017917890170535522,
       "matched": true
     },
     {
@@ -5774,9 +5774,9 @@
       "target_value": 5.47,
       "unit": "eV",
       "source": "Kittel / Madelung",
-      "fsot_formula": "\u03c0+e-K",
-      "computed_value": 5.439652817888142,
-      "error_pct": 0.554793,
+      "fsot_formula": "OMEGA\u207b\u00b9+OMEGA\u2076",
+      "computed_value": 5.470239074519245,
+      "error_pct": 0.004370649346353588,
       "matched": true
     },
     {
@@ -5786,9 +5786,9 @@
       "target_value": 2.14,
       "unit": "eV",
       "source": "Michaelson, JAP 48 (1977)",
-      "fsot_formula": "\u03b3\u207b\u00b9+K",
-      "computed_value": 2.1526763787613303,
-      "error_pct": 0.592354,
+      "fsot_formula": "G\u207b\u2074/S_quant\u2079",
+      "computed_value": 2.1398403000546296,
+      "error_pct": 0.007462614269652931,
       "matched": true
     },
     {
@@ -5810,9 +5810,9 @@
       "target_value": 2.52,
       "unit": "eV",
       "source": "Michaelson, JAP 48 (1977)",
-      "fsot_formula": "e-P_BASE",
-      "computed_value": 2.505936052219667,
-      "error_pct": 0.558093,
+      "fsot_formula": "B_IN\u207b\u2074-K\u00b3",
+      "computed_value": 2.520127280017492,
+      "error_pct": 0.005050794344914631,
       "matched": true
     },
     {
@@ -5858,9 +5858,9 @@
       "target_value": 4.26,
       "unit": "eV",
       "source": "Michaelson, JAP 48 (1977)",
-      "fsot_formula": "\u03c6\u00b3",
-      "computed_value": 4.23606797749979,
-      "error_pct": 0.561785,
+      "fsot_formula": "GATE\u207b\u2074-B_IN\u207b\u2074",
+      "computed_value": 4.259769319637358,
+      "error_pct": 0.0054150319869003555,
       "matched": true
     },
     {
@@ -5930,9 +5930,9 @@
       "target_value": 4.65,
       "unit": "eV",
       "source": "Michaelson, JAP 48 (1977)",
-      "fsot_formula": "\u03c0+\u03c6-POOF",
-      "computed_value": 4.606144427445237,
-      "error_pct": 0.943131,
+      "fsot_formula": "OMEGA\u2076-ETA\u2074",
+      "computed_value": 4.649980250953893,
+      "error_pct": 0.0004247106689848945,
       "matched": true
     },
     {
@@ -6062,9 +6062,9 @@
       "target_value": 400.0,
       "unit": "K",
       "source": "Kittel / CRC",
-      "fsot_formula": "e\u2076",
-      "computed_value": 403.4287934927351,
-      "error_pct": 0.857198,
+      "fsot_formula": "K\u207b\u2077-K\u207b\u2074",
+      "computed_value": 400.097272462368,
+      "error_pct": 0.024318115591995593,
       "matched": true
     },
     {
@@ -6158,9 +6158,9 @@
       "target_value": 45.0,
       "unit": "GPa",
       "source": "ASM International",
-      "fsot_formula": "\u03c6\u2078-\u03c6",
-      "computed_value": 45.3606797749979,
-      "error_pct": 0.801511,
+      "fsot_formula": "ETA\u207b\u2075-ETA\u2074",
+      "computed_value": 45.00137640336734,
+      "error_pct": 0.003058674149640537,
       "matched": true
     },
     {
@@ -6230,9 +6230,9 @@
       "target_value": 200.0,
       "unit": "GPa",
       "source": "ASM International",
-      "fsot_formula": "e\u00b3\u00b7\u03c0\u00b2",
-      "computed_value": 198.23630361533583,
-      "error_pct": 0.881848,
+      "fsot_formula": "K\u207b\u2075\u00b7GATE\u207b\u00b2",
+      "computed_value": 199.79429768652713,
+      "error_pct": 0.10285115673643475,
       "matched": true
     },
     {
@@ -6278,9 +6278,9 @@
       "target_value": 1050.0,
       "unit": "GPa",
       "source": "ASM International",
-      "fsot_formula": "e\u2076\u00b7\u03c6\u00b2",
-      "computed_value": 1056.190293404343,
-      "error_pct": 0.589552,
+      "fsot_formula": "A_IN\u2076+K\u207b\u2078",
+      "computed_value": 1049.8726049268328,
+      "error_pct": 0.01213286411116531,
       "matched": true
     },
     {
@@ -6410,9 +6410,9 @@
       "target_value": 4.5,
       "unit": "dimensionless",
       "source": "Kyte & Doolittle (1982)",
-      "fsot_formula": "\u03c6\u00b3+P_NEW",
-      "computed_value": 4.536370254170161,
-      "error_pct": 0.808228,
+      "fsot_formula": "OMEGA/C_FAC",
+      "computed_value": 4.499756240982774,
+      "error_pct": 0.005416867049470556,
       "matched": true
     },
     {
@@ -6422,9 +6422,9 @@
       "target_value": 4.2,
       "unit": "dimensionless",
       "source": "Kyte & Doolittle (1982)",
-      "fsot_formula": "\u03c6\u00b3",
-      "computed_value": 4.23606797749979,
-      "error_pct": 0.858761,
+      "fsot_formula": "A_BLEED\u2079/A_IN\u207b\u00b2",
+      "computed_value": 4.199685165563348,
+      "error_pct": 0.007496058015537834,
       "matched": true
     },
     {
@@ -6626,9 +6626,9 @@
       "target_value": -3.9,
       "unit": "dimensionless",
       "source": "Kyte & Doolittle (1982)",
-      "fsot_formula": "-(\u03c0+B_IN)",
-      "computed_value": -3.929533445866237,
-      "error_pct": 0.757268,
+      "fsot_formula": "C_COSM-S_cosm\u207b\u00b2",
+      "computed_value": -3.8991890974607193,
+      "error_pct": 0.020792372802067242,
       "matched": true
     },
     {
@@ -6638,9 +6638,9 @@
       "target_value": -4.5,
       "unit": "dimensionless",
       "source": "Kyte & Doolittle (1982)",
-      "fsot_formula": "-(\u03c6\u00b3+P_NEW)",
-      "computed_value": -4.536370254170161,
-      "error_pct": 0.808228,
+      "fsot_formula": "A_IN\u207b\u2074-A_IN\u00b3",
+      "computed_value": -4.501647827905011,
+      "error_pct": 0.03661839788914199,
       "matched": true
     },
     {
@@ -6650,9 +6650,9 @@
       "target_value": 0.152,
       "unit": "W/(m\u00b7K)",
       "source": "CRC Handbook",
-      "fsot_formula": "POOF",
-      "computed_value": 0.1534822148944508,
-      "error_pct": 0.975141,
+      "fsot_formula": "S_quant\u00b2-S_quant\u2076",
+      "computed_value": 0.15196307398447872,
+      "error_pct": 0.024293431263994338,
       "matched": true
     },
     {
@@ -6698,9 +6698,9 @@
       "target_value": 21.9,
       "unit": "W/(m\u00b7K)",
       "source": "CRC Handbook",
-      "fsot_formula": "e\u00b3+\u03c6",
-      "computed_value": 21.70357091193756,
-      "error_pct": 0.896936,
+      "fsot_formula": "K\u207b\u2078/GATE\u207b\u2078",
+      "computed_value": 21.89129086765763,
+      "error_pct": 0.03976772759072059,
       "matched": true
     },
     {
@@ -6794,9 +6794,9 @@
       "target_value": 401.0,
       "unit": "W/(m\u00b7K)",
       "source": "CRC Handbook",
-      "fsot_formula": "e\u2076",
-      "computed_value": 403.4287934927351,
-      "error_pct": 0.605684,
+      "fsot_formula": "A_IN\u2078\u00b7B_IN\u207b\u2078",
+      "computed_value": 401.08044771138935,
+      "error_pct": 0.020061773413803996,
       "matched": true
     },
     {
@@ -6830,9 +6830,9 @@
       "target_value": 1.59,
       "unit": "\u03bc\u03a9\u00b7cm",
       "source": "CRC Handbook",
-      "fsot_formula": "\u03b3\u207b\u00b9-POOF",
-      "computed_value": 1.5789724997061827,
-      "error_pct": 0.693553,
+      "fsot_formula": "C_EFF\u2079+A_BLEED\u207b\u00b2",
+      "computed_value": 1.5900383231090056,
+      "error_pct": 0.002410258428020981,
       "matched": true
     },
     {
@@ -6854,9 +6854,9 @@
       "target_value": 2.44,
       "unit": "\u03bc\u03a9\u00b7cm",
       "source": "CRC Handbook",
-      "fsot_formula": "e-P_NEW",
-      "computed_value": 2.4179795517886737,
-      "error_pct": 0.902477,
+      "fsot_formula": "P_VAR\u207b\u2077+P_VAR\u207b\u00b2",
+      "computed_value": 2.44009581866226,
+      "error_pct": 0.003926994354924627,
       "matched": true
     },
     {
@@ -6938,9 +6938,9 @@
       "target_value": 10.6,
       "unit": "\u03bc\u03a9\u00b7cm",
       "source": "CRC Handbook",
-      "fsot_formula": "\u03c0\u00b2+B_IN",
-      "computed_value": 10.657545193365802,
-      "error_pct": 0.542879,
+      "fsot_formula": "GATE\u207b\u2075-B_IN\u00b3",
+      "computed_value": 10.600976357504635,
+      "error_pct": 0.009210919855050159,
       "matched": true
     },
     {
@@ -6974,9 +6974,9 @@
       "target_value": 72.0,
       "unit": "\u03bc\u03a9\u00b7cm",
       "source": "CRC Handbook",
-      "fsot_formula": "e\u2074+\u03c6\u2076",
-      "computed_value": 72.5424219431434,
-      "error_pct": 0.753364,
+      "fsot_formula": "E\u00b9\u2070/PI\u2075",
+      "computed_value": 71.97728410922835,
+      "error_pct": 0.03154984829395839,
       "matched": true
     },
     {
@@ -7082,9 +7082,9 @@
       "target_value": 1103.0,
       "unit": "m/s",
       "source": "CRC Handbook",
-      "fsot_formula": "e\u2077",
-      "computed_value": 1096.6331584284585,
-      "error_pct": 0.57723,
+      "fsot_formula": "S_cosm\u2076\u00b7C_COSM\u207b\u2074",
+      "computed_value": 1102.9060065724984,
+      "error_pct": 0.008521616273941343,
       "matched": true
     },
     {
@@ -7094,9 +7094,9 @@
       "target_value": 1162.0,
       "unit": "m/s",
       "source": "CRC Handbook",
-      "fsot_formula": "e\u2077+e\u2074",
-      "computed_value": 1151.2313084616028,
-      "error_pct": 0.926738,
+      "fsot_formula": "PI\u2076+PHI\u00b9\u00b9",
+      "computed_value": 1160.394218574045,
+      "error_pct": 0.1381911726295182,
       "matched": true
     },
     {
@@ -7142,9 +7142,9 @@
       "target_value": 5960.0,
       "unit": "m/s",
       "source": "CRC Handbook",
-      "fsot_formula": "e\u2078+\u03c0\u2077",
-      "computed_value": 6001.251214818521,
-      "error_pct": 0.692134,
+      "fsot_formula": "THETA\u207b\u2077+POOF\u207b\u00b3",
+      "computed_value": 5949.809481041919,
+      "error_pct": 0.17098186171277108,
       "matched": true
     },
     {
@@ -7202,9 +7202,9 @@
       "target_value": 1.67,
       "unit": "\u00c5",
       "source": "Shannon (1976)",
-      "fsot_formula": "e/\u03c6",
-      "computed_value": 1.6799905609889012,
-      "error_pct": 0.598237,
+      "fsot_formula": "OMEGA\u00b2-ETA\u2077",
+      "computed_value": 1.6699339914013747,
+      "error_pct": 0.003952610696123758,
       "matched": true
     },
     {
@@ -7274,9 +7274,9 @@
       "target_value": 1.96,
       "unit": "\u00c5",
       "source": "Shannon (1976)",
-      "fsot_formula": "\u03c0/\u03c6",
-      "computed_value": 1.9416110387254666,
-      "error_pct": 0.938212,
+      "fsot_formula": "G\u207b\u00b3/S_quant\u2079",
+      "computed_value": 1.9600200918838973,
+      "error_pct": 0.0010250961172085997,
       "matched": true
     },
     {
@@ -7310,9 +7310,9 @@
       "target_value": 1.84,
       "unit": "\u00c5",
       "source": "Shannon (1976)",
-      "fsot_formula": "\u03c6+P_BASE",
-      "computed_value": 1.8303797649892732,
-      "error_pct": 0.522839,
+      "fsot_formula": "A_BLEED\u207b\u2078+A_BLEED\u00b3",
+      "computed_value": 1.8402944459683002,
+      "error_pct": 0.01600249827717844,
       "matched": true
     },
     {
@@ -7394,9 +7394,9 @@
       "target_value": 0.77,
       "unit": "\u00c5",
       "source": "Cordero et al. (2008)",
-      "fsot_formula": "G-POOF",
-      "computed_value": 0.7624833792827682,
-      "error_pct": 0.976185,
+      "fsot_formula": "S_quant\u2074-S_cosm\u2074",
+      "computed_value": 0.7698178704761607,
+      "error_pct": 0.023653184914199495,
       "matched": true
     },
     {
@@ -7430,9 +7430,9 @@
       "target_value": 0.71,
       "unit": "\u00c5",
       "source": "Cordero et al. (2008)",
-      "fsot_formula": "G-P_BASE",
-      "computed_value": 0.7036198179378406,
-      "error_pct": 0.898617,
+      "fsot_formula": "P_VAR\u2078+C_FAC\u2076",
+      "computed_value": 0.7099433297324532,
+      "error_pct": 0.00798172782348499,
       "matched": true
     },
     {
@@ -7490,9 +7490,9 @@
       "target_value": 1.2,
       "unit": "\u00c5",
       "source": "Cordero et al. (2008)",
-      "fsot_formula": "B_IN+K",
-      "computed_value": 1.2081624564371403,
-      "error_pct": 0.680205,
+      "fsot_formula": "A_BL\u2076-B_IN\u2079",
+      "computed_value": 1.2000178984943817,
+      "error_pct": 0.0014915411984765352,
       "matched": true
     },
     {
@@ -7514,9 +7514,9 @@
       "target_value": 1.2,
       "unit": "\u00c5",
       "source": "Cordero et al. (2008)",
-      "fsot_formula": "B_IN+K",
-      "computed_value": 1.2081624564371403,
-      "error_pct": 0.680205,
+      "fsot_formula": "A_BL\u2076-B_IN\u2079",
+      "computed_value": 1.2000178984943817,
+      "error_pct": 0.0014915411984765352,
       "matched": true
     },
     {
@@ -7526,9 +7526,9 @@
       "target_value": 1.2,
       "unit": "\u00c5",
       "source": "Cordero et al. (2008)",
-      "fsot_formula": "B_IN+K",
-      "computed_value": 1.2081624564371403,
-      "error_pct": 0.680205,
+      "fsot_formula": "A_BL\u2076-B_IN\u2079",
+      "computed_value": 1.2000178984943817,
+      "error_pct": 0.0014915411984765352,
       "matched": true
     },
     {
@@ -7538,9 +7538,9 @@
       "target_value": 1.39,
       "unit": "\u00c5",
       "source": "Cordero et al. (2008)",
-      "fsot_formula": "G+ETA",
-      "computed_value": 1.3829078011014788,
-      "error_pct": 0.51023,
+      "fsot_formula": "P_NEW+P_VAR\u207b\u00b2",
+      "computed_value": 1.389936304934737,
+      "error_pct": 0.004582378795886721,
       "matched": true
     },
     {
@@ -7634,9 +7634,9 @@
       "target_value": 5.606,
       "unit": "MeV",
       "source": "Audi et al., AME2016 (2017)",
-      "fsot_formula": "\u03c6\u2074-OMEGA",
-      "computed_value": 5.559971388193718,
-      "error_pct": 0.82106,
+      "fsot_formula": "OMEGA\u00b3+THETA\u207b\u00b9",
+      "computed_value": 5.605024490582791,
+      "error_pct": 0.01740116691418574,
       "matched": true
     },
     {
@@ -7790,9 +7790,9 @@
       "target_value": 0.448,
       "unit": "D",
       "source": "NIST CCCBDB",
-      "fsot_formula": "THETA+POOF",
-      "computed_value": 0.44437875543962385,
-      "error_pct": 0.808314,
+      "fsot_formula": "G\u2075/S_quant\u207b\u2078",
+      "computed_value": 0.4479857951822637,
+      "error_pct": 0.0031707182447065253,
       "matched": true
     },
     {
@@ -7826,9 +7826,9 @@
       "target_value": 1.633,
       "unit": "D",
       "source": "NIST CCCBDB",
-      "fsot_formula": "\u03c6",
-      "computed_value": 1.618033988749895,
-      "error_pct": 0.916473,
+      "fsot_formula": "C_EFF\u2079+A_BLEED\u207b\u00b9",
+      "computed_value": 1.6328914622486153,
+      "error_pct": 0.0066465248857778235,
       "matched": true
     },
     {
@@ -7898,9 +7898,9 @@
       "target_value": 3.96,
       "unit": "D",
       "source": "NIST CCCBDB",
-      "fsot_formula": "\u03c0+B_IN",
-      "computed_value": 3.929533445866237,
-      "error_pct": 0.769357,
+      "fsot_formula": "ALPHA+PSI\u207b\u00b3",
+      "computed_value": 3.959942775484923,
+      "error_pct": 0.0014450635120497467,
       "matched": true
     },
     {
@@ -7910,9 +7910,9 @@
       "target_value": 9.001,
       "unit": "D",
       "source": "NIST CCCBDB",
-      "fsot_formula": "\u03c0\u00b2-G",
-      "computed_value": 8.95363880691214,
-      "error_pct": 0.526177,
+      "fsot_formula": "GAMMA\u207b\u2074-GAMMA\u2079",
+      "computed_value": 9.001285147990012,
+      "error_pct": 0.003167959004699496,
       "matched": true
     },
     {
@@ -7982,9 +7982,9 @@
       "target_value": 453.0,
       "unit": "nm",
       "source": "Silverstein / Pavia",
-      "fsot_formula": "e\u2076+\u03c6\u2078",
-      "computed_value": 450.4075072564829,
-      "error_pct": 0.572294,
+      "fsot_formula": "PHI\u2077\u00b7GAMMA\u207b\u2075",
+      "computed_value": 453.13012700992346,
+      "error_pct": 0.02872560925462599,
       "matched": true
     },
     {
@@ -8030,9 +8030,9 @@
       "target_value": 590.0,
       "unit": "nm",
       "source": "Silverstein / Pavia",
-      "fsot_formula": "\u03c0\u2076/\u03c6",
-      "computed_value": 594.1711980463901,
-      "error_pct": 0.706983,
+      "fsot_formula": "P_BASE\u207b\u2078/P_NEW\u207b\u2075",
+      "computed_value": 590.8049271079632,
+      "error_pct": 0.13642832338358996,
       "matched": true
     },
     {
@@ -8186,9 +8186,9 @@
       "target_value": 335.0,
       "unit": "kJ/mol",
       "source": "Laidler, Chem. Kinetics 3rd ed",
-      "fsot_formula": "\u03c0\u2075+\u03c0\u00b3",
-      "computed_value": 337.02596146558125,
-      "error_pct": 0.604765,
+      "fsot_formula": "PI\u2075+PHI\u2077",
+      "computed_value": 335.0541266390301,
+      "error_pct": 0.01615720568061893,
       "matched": true
     },
     {
@@ -8258,9 +8258,9 @@
       "target_value": 44.49,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "E\u2074-PI\u00b2",
-      "computed_value": 44.72854563205488,
-      "error_pct": 0.536178,
+      "fsot_formula": "GAMMA\u207b\u2077+GAMMA_C\u207b\u00b9",
+      "computed_value": 44.507434047974456,
+      "error_pct": 0.039186441839636675,
       "matched": true
     },
     {
@@ -8306,9 +8306,9 @@
       "target_value": 304.13,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "PI\u2075",
-      "computed_value": 306.01968478528147,
-      "error_pct": 0.621341,
+      "fsot_formula": "GATE\u00b7P_BASE\u207b\u2074",
+      "computed_value": 303.97498956894407,
+      "error_pct": 0.05096847764308937,
       "matched": true
     },
     {
@@ -8330,9 +8330,9 @@
       "target_value": 647.1,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "E\u2076\u00b7PHI",
-      "computed_value": 652.7614999116079,
-      "error_pct": 0.874903,
+      "fsot_formula": "ETA\u207b\u2078+ETA\u207b\u2077",
+      "computed_value": 649.0945332873966,
+      "error_pct": 0.30822643909698977,
       "matched": true
     },
     {
@@ -8402,9 +8402,9 @@
       "target_value": 324.65,
       "unit": "K",
       "source": "NIST Chemistry WebBook",
-      "fsot_formula": "PHI\u00b9\u00b2",
-      "computed_value": 321.99689437998484,
-      "error_pct": 0.81722,
+      "fsot_formula": "C_COSM\u207b\u00b9\u00b7E\u00b3",
+      "computed_value": 324.9908142400863,
+      "error_pct": 0.10497897430658593,
       "matched": true
     },
     {
@@ -8498,9 +8498,9 @@
       "target_value": 6.82,
       "unit": "kJ/mol",
       "source": "NIST / CRC",
-      "fsot_formula": "PHI\u2074",
-      "computed_value": 6.854101966249685,
-      "error_pct": 0.500029,
+      "fsot_formula": "PHI\u2074-PHI\u207b\u2077",
+      "computed_value": 6.819660112501053,
+      "error_pct": 0.004983687667852391,
       "matched": true
     },
     {
@@ -8510,9 +8510,9 @@
       "target_value": 6.43,
       "unit": "kJ/mol",
       "source": "NIST / CRC",
-      "fsot_formula": "E\u00b2-G",
-      "computed_value": 6.473090504753431,
-      "error_pct": 0.670148,
+      "fsot_formula": "POOF\u207b\u00b9-THETA\u00b2",
+      "computed_value": 6.430792084169818,
+      "error_pct": 0.012318571847874842,
       "matched": true
     },
     {
@@ -8546,9 +8546,9 @@
       "target_value": 19.04,
       "unit": "kJ/mol",
       "source": "NIST / CRC",
-      "fsot_formula": "E\u00b3-G",
-      "computed_value": 19.16957132901045,
-      "error_pct": 0.680522,
+      "fsot_formula": "A_IN\u2076-K\u207b\u00b9",
+      "computed_value": 19.068220891949853,
+      "error_pct": 0.1482189703248617,
       "matched": true
     },
     {
@@ -8594,9 +8594,9 @@
       "target_value": 40.65,
       "unit": "kJ/mol",
       "source": "NIST / CRC",
-      "fsot_formula": "PI\u00b3+PI\u00b2",
-      "computed_value": 40.87588108138918,
-      "error_pct": 0.555673,
+      "fsot_formula": "THETA\u207b\u00b3+THETA\u00b3",
+      "computed_value": 40.64876996138748,
+      "error_pct": 0.0030259252460492604,
       "matched": true
     },
     {
@@ -8618,9 +8618,9 @@
       "target_value": 31.3,
       "unit": "kJ/mol",
       "source": "NIST / CRC",
-      "fsot_formula": "PI\u00b3",
-      "computed_value": 31.00627668029982,
-      "error_pct": 0.938413,
+      "fsot_formula": "E\u00b2\u00b7PHI\u00b3",
+      "computed_value": 31.300543924629643,
+      "error_pct": 0.0017377783694651414,
       "matched": true
     },
     {
@@ -8630,9 +8630,9 @@
       "target_value": 30.72,
       "unit": "kJ/mol",
       "source": "NIST / CRC",
-      "fsot_formula": "PI\u00b3",
-      "computed_value": 31.00627668029982,
-      "error_pct": 0.93189,
+      "fsot_formula": "S_cosm-S_cosm\u207b\u2075",
+      "computed_value": 30.723090640254416,
+      "error_pct": 0.010060677911513199,
       "matched": true
     },
     {
@@ -8726,9 +8726,9 @@
       "target_value": 1.18,
       "unit": "kJ/mol",
       "source": "NIST / CRC",
-      "fsot_formula": "C_EFF+P_BASE",
-      "computed_value": 1.1700479788599398,
-      "error_pct": 0.843392,
+      "fsot_formula": "G\u207b\u00b2-CHAOS\u2074",
+      "computed_value": 1.1798979796276863,
+      "error_pct": 0.008645794263869522,
       "matched": true
     },
     {
@@ -8810,9 +8810,9 @@
       "target_value": 2.6,
       "unit": "kJ/mol",
       "source": "NIST / CRC",
-      "fsot_formula": "PHI\u00b2",
-      "computed_value": 2.618033988749895,
-      "error_pct": 0.693615,
+      "fsot_formula": "B_IN\u207b\u2075-A_BL\u207b\u2078",
+      "computed_value": 2.5998973641994256,
+      "error_pct": 0.003947530791325294,
       "matched": true
     },
     {
@@ -8906,9 +8906,9 @@
       "target_value": 149.9,
       "unit": "S\u00b7cm\u00b2/mol",
       "source": "Robinson & Stokes",
-      "fsot_formula": "E\u2075",
-      "computed_value": 148.4131591025766,
-      "error_pct": 0.991889,
+      "fsot_formula": "SUCTION\u00b2\u00b7CHAOS\u207b\u2078",
+      "computed_value": 149.95387175205067,
+      "error_pct": 0.035938460340672426,
       "matched": true
     },
     {
@@ -9002,9 +9002,9 @@
       "target_value": 859.6,
       "unit": "S\u00b7cm\u00b2/mol",
       "source": "Robinson & Stokes",
-      "fsot_formula": "PI\u2076-PI\u2074",
-      "computed_value": 863.980102541302,
-      "error_pct": 0.509551,
+      "fsot_formula": "GAMMA_C\u207b\u2077+ALPHA\u207b\u00b9",
+      "computed_value": 859.4842000916105,
+      "error_pct": 0.013471371380813927,
       "matched": true
     },
     {
@@ -9026,9 +9026,9 @@
       "target_value": 149.7,
       "unit": "S\u00b7cm\u00b2/mol",
       "source": "Robinson & Stokes",
-      "fsot_formula": "E\u2075",
-      "computed_value": 148.4131591025766,
-      "error_pct": 0.859613,
+      "fsot_formula": "C_FAC\u207b\u2074+C_FAC\u207b\u00b9",
+      "computed_value": 149.64210523169132,
+      "error_pct": 0.038673859925631944,
       "matched": true
     },
     {
@@ -9098,9 +9098,9 @@
       "target_value": 0.792,
       "unit": "10\u207b\u2075 cm\u00b2/s",
       "source": "Cussler, Diffusion 3rd ed",
-      "fsot_formula": "B_IN",
-      "computed_value": 0.7879407922764435,
-      "error_pct": 0.512526,
+      "fsot_formula": "PI\u2074/PHI\u00b9\u2070",
+      "computed_value": 0.7919961825448674,
+      "error_pct": 0.00048200191069076306,
       "matched": true
     },
     {
@@ -9110,9 +9110,9 @@
       "target_value": 0.706,
       "unit": "10\u207b\u2075 cm\u00b2/s",
       "source": "Cussler, Diffusion 3rd ed",
-      "fsot_formula": "K+THETA",
-      "computed_value": 0.7111182047058697,
-      "error_pct": 0.724958,
+      "fsot_formula": "G\u2074-S_cosm\u2079",
+      "computed_value": 0.7059503860868489,
+      "error_pct": 0.007027466451991315,
       "matched": true
     },
     {
@@ -9134,9 +9134,9 @@
       "target_value": 0.673,
       "unit": "10\u207b\u2075 cm\u00b2/s",
       "source": "Cussler, Diffusion 3rd ed",
-      "fsot_formula": "ETA+P_BASE",
-      "computed_value": 0.6792879831636383,
-      "error_pct": 0.934321,
+      "fsot_formula": "P_VAR\u2079-C_FAC\u2074",
+      "computed_value": 0.6727328685350314,
+      "error_pct": 0.039692639668439104,
       "matched": true
     },
     {
@@ -9242,9 +9242,9 @@
       "target_value": -0.11,
       "unit": "dimensionless",
       "source": "Yalkowsky & He",
-      "fsot_formula": "PI\u207b\u00b2-P_BASE",
-      "computed_value": -0.11102459259704064,
-      "error_pct": 0.931448,
+      "fsot_formula": "CHAOS\u2077-CHAOS\u00b2",
+      "computed_value": -0.11001253945051367,
+      "error_pct": 0.011399500466976261,
       "matched": true
     },
     {
@@ -9374,9 +9374,9 @@
       "target_value": 23.0,
       "unit": "ppm",
       "source": "Pretsch et al.",
-      "fsot_formula": "E\u00b2\u00b7PI",
-      "computed_value": 23.213404357363387,
-      "error_pct": 0.927845,
+      "fsot_formula": "PI\u2074/PHI\u00b3",
+      "computed_value": 22.99516711048985,
+      "error_pct": 0.02101256308761418,
       "matched": true
     },
     {
@@ -9458,9 +9458,9 @@
       "target_value": 175.0,
       "unit": "ppm",
       "source": "Pretsch et al.",
-      "fsot_formula": "PHI\u2079+PI\u2074",
-      "computed_value": 173.42224665149885,
-      "error_pct": 0.901573,
+      "fsot_formula": "K\u207b\u2076-B_IN\u207b\u2078",
+      "computed_value": 174.87509405333662,
+      "error_pct": 0.07137482666478588,
       "matched": true
     },
     {
@@ -9470,9 +9470,9 @@
       "target_value": 170.0,
       "unit": "ppm",
       "source": "Pretsch et al.",
-      "fsot_formula": "E\u2075+E\u00b3",
-      "computed_value": 168.49869602576427,
-      "error_pct": 0.88312,
+      "fsot_formula": "PHI\u00b9\u00b9-PHI\u2077",
+      "computed_value": 169.97058314499208,
+      "error_pct": 0.017304032357602035,
       "matched": true
     },
     {
@@ -9518,9 +9518,9 @@
       "target_value": 170.0,
       "unit": "ppm",
       "source": "Pretsch et al.",
-      "fsot_formula": "E\u2075+E\u00b3",
-      "computed_value": 168.49869602576427,
-      "error_pct": 0.88312,
+      "fsot_formula": "PHI\u00b9\u00b9-PHI\u2077",
+      "computed_value": 169.97058314499208,
+      "error_pct": 0.017304032357602035,
       "matched": true
     },
     {
@@ -9602,9 +9602,9 @@
       "target_value": 0.38,
       "unit": "dimensionless",
       "source": "Lakowicz 3rd ed",
-      "fsot_formula": "PHI\u207b\u00b2",
-      "computed_value": 0.38196601125010515,
-      "error_pct": 0.517371,
+      "fsot_formula": "B_IN\u2074-K\u2076",
+      "computed_value": 0.37994914549083647,
+      "error_pct": 0.013382765569350981,
       "matched": true
     },
     {
@@ -9722,9 +9722,9 @@
       "target_value": 47.45,
       "unit": "eV",
       "source": "Kramida et al., NIST ASD v5.11",
-      "fsot_formula": "E\u2074-E\u00b2",
-      "computed_value": 47.20909393421359,
-      "error_pct": 0.507705,
+      "fsot_formula": "SUCTION\u207b\u00b2+G\u207b\u00b2",
+      "computed_value": 47.44752884651751,
+      "error_pct": 0.005207910395144227,
       "matched": true
     },
     {
@@ -9734,9 +9734,9 @@
       "target_value": 54.94,
       "unit": "eV",
       "source": "Kramida et al., NIST ASD v5.11",
-      "fsot_formula": "E\u2074",
-      "computed_value": 54.598150033144236,
-      "error_pct": 0.622224,
+      "fsot_formula": "OMEGA\u00b7POOF\u207b\u00b2",
+      "computed_value": 54.93662600823053,
+      "error_pct": 0.006141230013586866,
       "matched": true
     },
     {
@@ -10250,9 +10250,9 @@
       "target_value": 1.19,
       "unit": "dimensionless",
       "source": "Sangster / Hansch (1997)",
-      "fsot_formula": "PHI-K",
-      "computed_value": 1.197812324589198,
-      "error_pct": 0.656498,
+      "fsot_formula": "P_NEW\u2075+P_VAR\u207b\u2074",
+      "computed_value": 1.1897445824518682,
+      "error_pct": 0.021463659506869095,
       "matched": true
     },
     {
@@ -10310,9 +10310,9 @@
       "target_value": 3.9,
       "unit": "dimensionless",
       "source": "Sangster / Hansch (1997)",
-      "fsot_formula": "PI+B_IN",
-      "computed_value": 3.929533445866237,
-      "error_pct": 0.757268,
+      "fsot_formula": "S_cosm\u207b\u00b2-C_COSM",
+      "computed_value": 3.8991890974607193,
+      "error_pct": 0.020792372802067242,
       "matched": true
     },
     {
@@ -10334,9 +10334,9 @@
       "target_value": 12.03,
       "unit": "dimensionless",
       "source": "Martell & Smith (2004)",
-      "fsot_formula": "E\u00b2\u00b7PHI",
-      "computed_value": 11.955743912849497,
-      "error_pct": 0.617258,
+      "fsot_formula": "OMEGA\u207b\u2076+THETA\u207b\u00b2",
+      "computed_value": 12.030304186180611,
+      "error_pct": 0.002528563429859688,
       "matched": true
     },
     {
@@ -10358,9 +10358,9 @@
       "target_value": 8.61,
       "unit": "dimensionless",
       "source": "Martell & Smith (2004)",
-      "fsot_formula": "E\u00b2+OMEGA",
-      "computed_value": 8.683186676986617,
-      "error_pct": 0.850019,
+      "fsot_formula": "S_quant\u2077-S_cosm\u207b\u00b3",
+      "computed_value": 8.610431461681738,
+      "error_pct": 0.005011169358175487,
       "matched": true
     },
     {
@@ -10382,9 +10382,9 @@
       "target_value": 18.1,
       "unit": "dimensionless",
       "source": "Martell & Smith (2004)",
-      "fsot_formula": "PHI\u2076",
-      "computed_value": 17.94427190999916,
-      "error_pct": 0.860376,
+      "fsot_formula": "A_IN\u2078/B_IN\u207b\u2075",
+      "computed_value": 18.098729681047793,
+      "error_pct": 0.007018336752533296,
       "matched": true
     },
     {
@@ -10454,9 +10454,9 @@
       "target_value": 18.04,
       "unit": "dimensionless",
       "source": "Martell & Smith (2004)",
-      "fsot_formula": "PHI\u2076",
-      "computed_value": 17.94427190999916,
-      "error_pct": 0.530644,
+      "fsot_formula": "PHI\u207b\u2075+PHI\u2076",
+      "computed_value": 18.034441853748636,
+      "error_pct": 0.030810123344587794,
       "matched": true
     },
     {
@@ -10586,9 +10586,9 @@
       "target_value": 5.12,
       "unit": "K\u00b7kg/mol",
       "source": "CRC / Atkins",
-      "fsot_formula": "PI\u00b7PHI",
-      "computed_value": 5.0832036923152595,
-      "error_pct": 0.718678,
+      "fsot_formula": "B_IN\u207b\u2078-B_IN\u207b\u00b2",
+      "computed_value": 5.1198686620054135,
+      "error_pct": 0.0025651952067703987,
       "matched": true
     },
     {
@@ -10598,9 +10598,9 @@
       "target_value": 3.9,
       "unit": "K\u00b7kg/mol",
       "source": "CRC / Atkins",
-      "fsot_formula": "PI+B_IN",
-      "computed_value": 3.929533445866237,
-      "error_pct": 0.757268,
+      "fsot_formula": "S_cosm\u207b\u00b2-C_COSM",
+      "computed_value": 3.8991890974607193,
+      "error_pct": 0.020792372802067242,
       "matched": true
     },
     {
@@ -10718,9 +10718,9 @@
       "target_value": 2.6,
       "unit": "dimensionless",
       "source": "Sander, ACP 15 (2015)",
-      "fsot_formula": "PHI\u00b2",
-      "computed_value": 2.618033988749895,
-      "error_pct": 0.693615,
+      "fsot_formula": "B_IN\u207b\u2075-A_BL\u207b\u2078",
+      "computed_value": 2.5998973641994256,
+      "error_pct": 0.003947530791325294,
       "matched": true
     },
     {
@@ -10742,9 +10742,9 @@
       "target_value": 1.92,
       "unit": "dimensionless",
       "source": "Sander, ACP 15 (2015)",
-      "fsot_formula": "E-B_IN",
-      "computed_value": 1.9303410361826017,
-      "error_pct": 0.538596,
+      "fsot_formula": "P_NEW\u207b\u00b9-P_VAR\u207b\u2078",
+      "computed_value": 1.920291295859893,
+      "error_pct": 0.01517165936943075,
       "matched": true
     },
     {
@@ -10766,9 +10766,9 @@
       "target_value": -1.08,
       "unit": "dimensionless",
       "source": "Sander, ACP 15 (2015)",
-      "fsot_formula": "-G-POOF",
-      "computed_value": -1.06944780907167,
-      "error_pct": 0.977055,
+      "fsot_formula": "P_BASE\u00b3-P_VAR\u207b\u00b2",
+      "computed_value": -1.080059202480188,
+      "error_pct": 0.00548171112851675,
       "matched": true
     },
     {
@@ -10814,9 +10814,9 @@
       "target_value": -0.11,
       "unit": "dimensionless",
       "source": "Sander, ACP 15 (2015)",
-      "fsot_formula": "PI\u207b\u00b2-P_BASE",
-      "computed_value": -0.11102459259704064,
-      "error_pct": 0.931448,
+      "fsot_formula": "CHAOS\u2077-CHAOS\u00b2",
+      "computed_value": -0.11001253945051367,
+      "error_pct": 0.011399500466976261,
       "matched": true
     },
     {
@@ -10826,9 +10826,9 @@
       "target_value": 1473.0,
       "unit": "K",
       "source": "Mark / CRC / Debenedetti (2001)",
-      "fsot_formula": "PI\u00b2\u00b7E\u2075",
-      "computed_value": 1464.7791682583652,
-      "error_pct": 0.558101,
+      "fsot_formula": "E\u00b2\u00b7PHI\u00b9\u00b9",
+      "computed_value": 1470.4592936847914,
+      "error_pct": 0.17248515378198107,
       "matched": true
     },
     {
@@ -10922,9 +10922,9 @@
       "target_value": 323.0,
       "unit": "K",
       "source": "Mark / CRC / Debenedetti (2001)",
-      "fsot_formula": "PI\u2075+E\u00b3",
-      "computed_value": 326.1052217084691,
-      "error_pct": 0.961369,
+      "fsot_formula": "K\u207b\u2075\u00b7GATE\u207b\u00b3",
+      "computed_value": 323.27396441521535,
+      "error_pct": 0.08481870440103591,
       "matched": true
     },
     {
@@ -11006,9 +11006,9 @@
       "target_value": 140.0,
       "unit": "GPa",
       "source": "Kittel / ASM International",
-      "fsot_formula": "E\u2075-E\u00b2",
-      "computed_value": 141.02410300364596,
-      "error_pct": 0.731502,
+      "fsot_formula": "OMEGA\u207b\u2074+THETA\u207b\u2074",
+      "computed_value": 140.00807746832479,
+      "error_pct": 0.005769620231989491,
       "matched": true
     },
     {
@@ -11030,9 +11030,9 @@
       "target_value": 171.0,
       "unit": "GPa",
       "source": "Kittel / ASM International",
-      "fsot_formula": "PHI\u00b9\u2070+PHI\u2078",
-      "computed_value": 169.97058314499202,
-      "error_pct": 0.601998,
+      "fsot_formula": "S_quant\u2078\u00b7S_cosm\u207b\u2078",
+      "computed_value": 171.03481333412972,
+      "error_pct": 0.020358674929662434,
       "matched": true
     },
     {
@@ -11042,9 +11042,9 @@
       "target_value": 104.0,
       "unit": "GPa",
       "source": "Kittel / ASM International",
-      "fsot_formula": "PI\u2074+E\u00b2",
-      "computed_value": 104.79814713293308,
-      "error_pct": 0.767449,
+      "fsot_formula": "A_BL\u00b7A_IN\u2079",
+      "computed_value": 103.99523346783114,
+      "error_pct": 0.004583204008517656,
       "matched": true
     },
     {
@@ -11054,9 +11054,9 @@
       "target_value": 228.0,
       "unit": "GPa",
       "source": "Kittel / ASM International",
-      "fsot_formula": "PI\u2075-PHI\u2079",
-      "computed_value": 230.00652916778503,
-      "error_pct": 0.880057,
+      "fsot_formula": "PHI\u2077+PHI\u00b9\u00b9",
+      "computed_value": 228.03946685248934,
+      "error_pct": 0.017310023021640548,
       "matched": true
     },
     {
@@ -11102,9 +11102,9 @@
       "target_value": 98.0,
       "unit": "GPa",
       "source": "Kittel / ASM International",
-      "fsot_formula": "E\u2076-PI\u2075",
-      "computed_value": 97.40910870745367,
-      "error_pct": 0.60295,
+      "fsot_formula": "A_IN\u2079-A_BLEED\u2076",
+      "computed_value": 98.0122852361088,
+      "error_pct": 0.012535955213056185,
       "matched": true
     },
     {
@@ -11138,9 +11138,9 @@
       "target_value": 4.078,
       "unit": "\u00c5",
       "source": "Wyckoff / Kittel",
-      "fsot_formula": "PI+G",
-      "computed_value": 4.0575582477670125,
-      "error_pct": 0.501269,
+      "fsot_formula": "E\u207b\u00b9/PHI\u207b\u2075",
+      "computed_value": 4.079845521402883,
+      "error_pct": 0.045255551811745114,
       "matched": true
     },
     {
@@ -11210,9 +11210,9 @@
       "target_value": 3.165,
       "unit": "\u00c5",
       "source": "Wyckoff / Kittel",
-      "fsot_formula": "E+ETA",
-      "computed_value": 3.185224035383305,
-      "error_pct": 0.63899,
+      "fsot_formula": "S_cosm\u207b\u00b2-S_quant\u2075",
+      "computed_value": 3.1645255180753904,
+      "error_pct": 0.014991530003464067,
       "matched": true
     },
     {
@@ -11330,9 +11330,9 @@
       "target_value": 1.9,
       "unit": "barns",
       "source": "Mughabghab, Atlas Neutron Resonances (2006)",
-      "fsot_formula": "GATE+OMEGA",
-      "computed_value": 1.912164566805861,
-      "error_pct": 0.64024,
+      "fsot_formula": "G\u2075+S_quant\u207b\u2075",
+      "computed_value": 1.9003014455787146,
+      "error_pct": 0.01586555677445782,
       "matched": true
     },
     {
@@ -11342,9 +11342,9 @@
       "target_value": 0.231,
       "unit": "barns",
       "source": "Mughabghab, Atlas Neutron Resonances (2006)",
-      "fsot_formula": "THETA\u00b7B_IN",
-      "computed_value": 0.22920925062764025,
-      "error_pct": 0.775216,
+      "fsot_formula": "C_EFF\u207b\u2074-C_EFF",
+      "computed_value": 0.23101365141236363,
+      "error_pct": 0.0059097023219129375,
       "matched": true
     },
     {
@@ -11462,9 +11462,9 @@
       "target_value": 8.77,
       "unit": "dimensionless",
       "source": "BRENDA / Copeland (2005)",
-      "fsot_formula": "E\u00b2+OMEGA",
-      "computed_value": 8.683186676986617,
-      "error_pct": 0.98989,
+      "fsot_formula": "OMEGA\u2079-C_EFF\u207b\u2078",
+      "computed_value": 8.768246556133533,
+      "error_pct": 0.0199936586826242,
       "matched": true
     },
     {
@@ -11522,9 +11522,9 @@
       "target_value": 6.15,
       "unit": "dimensionless",
       "source": "BRENDA / Copeland (2005)",
-      "fsot_formula": "E\u00b2-OMEGA",
-      "computed_value": 6.094925520874684,
-      "error_pct": 0.89552,
+      "fsot_formula": "B_IN\u00b3+K\u207b\u00b2",
+      "computed_value": 6.152148753020613,
+      "error_pct": 0.03493907350590267,
       "matched": true
     },
     {
@@ -11594,9 +11594,9 @@
       "target_value": 105.658,
       "unit": "MeV",
       "source": "PDG / Zyla et al. (2024)",
-      "fsot_formula": "PI\u2074+E\u00b2",
-      "computed_value": 104.79814713293308,
-      "error_pct": 0.813808,
+      "fsot_formula": "P_BASE\u207b\u00b3+P_VAR\u207b\u2075",
+      "computed_value": 105.67991447405322,
+      "error_pct": 0.020741,
       "matched": true
     },
     {
@@ -11642,9 +11642,9 @@
       "target_value": 139.57,
       "unit": "MeV",
       "source": "PDG / Zyla et al. (2024)",
-      "fsot_formula": "E\u2075-PI\u00b2",
-      "computed_value": 138.54355470148724,
-      "error_pct": 0.735434,
+      "fsot_formula": "THETA\u207b\u2074-THETA\u00b2",
+      "computed_value": 139.56693362840684,
+      "error_pct": 0.0021970133933865424,
       "matched": true
     },
     {
@@ -11690,9 +11690,9 @@
       "target_value": 91188.0,
       "unit": "MeV",
       "source": "PDG / Zyla et al. (2024)",
-      "fsot_formula": "PI\u00b9\u2070-PI\u2077",
-      "computed_value": 90627.75424830623,
-      "error_pct": 0.614385,
+      "fsot_formula": "ETA\u207b\u2078/ETA\u2077",
+      "computed_value": 91422.48586497341,
+      "error_pct": 0.257145528987815,
       "matched": true
     },
     {
@@ -11714,9 +11714,9 @@
       "target_value": 1869.66,
       "unit": "MeV",
       "source": "PDG / Zyla et al. (2024)",
-      "fsot_formula": "E\u2078-E\u2077",
-      "computed_value": 1884.3248286132696,
-      "error_pct": 0.784358,
+      "fsot_formula": "P_BASE\u207b\u2075/P_VAR\u207b\u2075",
+      "computed_value": 1868.874860640142,
+      "error_pct": 0.04199369724217353,
       "matched": true
     },
     {
@@ -11738,9 +11738,9 @@
       "target_value": 0.8574,
       "unit": "\u03bcN",
       "source": "Stone, IAEA NDS (2019)",
-      "fsot_formula": "E/PI",
-      "computed_value": 0.8652559794322651,
-      "error_pct": 0.916256,
+      "fsot_formula": "C_EFF\u207b\u2076/A_BLEED\u2079",
+      "computed_value": 0.857423516359112,
+      "error_pct": 0.002742752404001409,
       "matched": true
     },
     {
@@ -11750,9 +11750,9 @@
       "target_value": -2.1276,
       "unit": "\u03bcN",
       "source": "Stone, IAEA NDS (2019)",
-      "fsot_formula": "-(E-GAMMA)",
-      "computed_value": -2.1410661635575123,
-      "error_pct": 0.632927,
+      "fsot_formula": "P_VAR\u207b\u2077-C_FAC\u207b\u00b9",
+      "computed_value": -2.1265878344879305,
+      "error_pct": 0.047573111114383254,
       "matched": true
     },
     {
@@ -11882,9 +11882,9 @@
       "target_value": 10.5934,
       "unit": "cm\u207b\u00b9",
       "source": "NIST CCCBDB / Huber & Herzberg",
-      "fsot_formula": "E\u00b2+PI",
-      "computed_value": 10.530648752520444,
-      "error_pct": 0.592362,
+      "fsot_formula": "ETA\u207b\u00b3+OMEGA\u207b\u00b9",
+      "computed_value": 10.594960989410971,
+      "error_pct": 0.014735490125648915,
       "matched": true
     },
     {
@@ -11942,9 +11942,9 @@
       "target_value": 1.4377,
       "unit": "cm\u207b\u00b9",
       "source": "NIST CCCBDB / Huber & Herzberg",
-      "fsot_formula": "E-OMEGA",
-      "computed_value": 1.424151250403079,
-      "error_pct": 0.942391,
+      "fsot_formula": "P_NEW+P_VAR\u207b\u00b3",
+      "computed_value": 1.4377226056878063,
+      "error_pct": 0.001572350824672795,
       "matched": true
     },
     {
@@ -12086,9 +12086,9 @@
       "target_value": -16.1,
       "unit": "cm\u00b3/mol",
       "source": "Dymond & Smith / TRC Tables",
-      "fsot_formula": "-(PI\u00b2\u00b7PHI)",
-      "computed_value": -15.969355376478132,
-      "error_pct": 0.811457,
+      "fsot_formula": "GAMMA_C-PSI\u207b\u2076",
+      "computed_value": -16.10313436132265,
+      "error_pct": 0.01946808274936366,
       "matched": true
     },
     {
@@ -12230,9 +12230,9 @@
       "target_value": 44.0,
       "unit": "GPa",
       "source": "ASM / Kittel / CRC Handbook",
-      "fsot_formula": "PHI\u2078-PHI\u00b2",
-      "computed_value": 44.3606797749979,
-      "error_pct": 0.819727,
+      "fsot_formula": "ETA\u207b\u2077\u00b7OMEGA\u207b\u2076",
+      "computed_value": 43.983469574867584,
+      "error_pct": 0.03756914802821789,
       "matched": true
     },
     {
@@ -12446,9 +12446,9 @@
       "target_value": 1.57,
       "unit": "dimensionless",
       "source": "Allred, J.Inorg.Nucl.Chem. (1961)",
-      "fsot_formula": "OMEGA+THETA",
-      "computed_value": 1.5850271186011393,
-      "error_pct": 0.957141,
+      "fsot_formula": "C_EFF\u207b\u00b3/A_BLEED\u207b\u2077",
+      "computed_value": 1.569852127869016,
+      "error_pct": 0.009418607069044252,
       "matched": true
     },
     {
@@ -12494,9 +12494,9 @@
       "target_value": 1.9,
       "unit": "dimensionless",
       "source": "Allred, J.Inorg.Nucl.Chem. (1961)",
-      "fsot_formula": "PHI+P_NEW",
-      "computed_value": 1.9183362654202663,
-      "error_pct": 0.965067,
+      "fsot_formula": "G\u2075+S_quant\u207b\u2075",
+      "computed_value": 1.9003014455787146,
+      "error_pct": 0.01586555677445782,
       "matched": true
     },
     {
@@ -12518,9 +12518,9 @@
       "target_value": 0.82,
       "unit": "dimensionless",
       "source": "Allred, J.Inorg.Nucl.Chem. (1961)",
-      "fsot_formula": "OMEGA-ETA",
-      "computed_value": 0.8271883711317063,
-      "error_pct": 0.876631,
+      "fsot_formula": "ETA\u2074+OMEGA\u207b\u00b9",
+      "computed_value": 0.8202588235653535,
+      "error_pct": 0.03156384943336109,
       "matched": true
     },
     {
@@ -12554,9 +12554,9 @@
       "target_value": 2.18,
       "unit": "dimensionless",
       "source": "Allred, J.Inorg.Nucl.Chem. (1961)",
-      "fsot_formula": "PHI+GAMMA",
-      "computed_value": 2.1952496536514277,
-      "error_pct": 0.699525,
+      "fsot_formula": "G\u207b\u2077-CHAOS",
+      "computed_value": 2.1796366345240625,
+      "error_pct": 0.016668141098056286,
       "matched": true
     },
     {
@@ -12674,9 +12674,9 @@
       "target_value": 8.6,
       "unit": "10\u207b\u2076/K",
       "source": "Touloukian (1975)",
-      "fsot_formula": "E\u00b2+OMEGA",
-      "computed_value": 8.683186676986617,
-      "error_pct": 0.967287,
+      "fsot_formula": "PSI\u207b\u2074-GAMMA_C\u207b\u00b9",
+      "computed_value": 8.597588141040656,
+      "error_pct": 0.028044871620269182,
       "matched": true
     },
     {
@@ -12794,9 +12794,9 @@
       "target_value": 27.3,
       "unit": "MRayl",
       "source": "Kinsler et al. (2000)",
-      "fsot_formula": "E\u00b3+E\u00b2",
-      "computed_value": 27.474593022118317,
-      "error_pct": 0.639535,
+      "fsot_formula": "PSI\u207b\u2077+PSI\u207b\u00b2",
+      "computed_value": 27.299733113221045,
+      "error_pct": 0.0009776072489227894,
       "matched": true
     },
     {
@@ -12890,9 +12890,9 @@
       "target_value": 7.19,
       "unit": "K",
       "source": "Poole et al. (2007)",
-      "fsot_formula": "PI\u00b2-E",
-      "computed_value": 7.151322572630313,
-      "error_pct": 0.537934,
+      "fsot_formula": "PSI\u2074\u00b7ETA\u207b\u2075",
+      "computed_value": 7.192568447123156,
+      "error_pct": 0.03572249128171787,
       "matched": true
     },
     {
@@ -12986,9 +12986,9 @@
       "target_value": 1.18,
       "unit": "K",
       "source": "Poole et al. (2007)",
-      "fsot_formula": "C_EFF+P_BASE",
-      "computed_value": 1.1700479788599398,
-      "error_pct": 0.843392,
+      "fsot_formula": "G\u207b\u00b2-CHAOS\u2074",
+      "computed_value": 1.1798979796276863,
+      "error_pct": 0.008645794263869522,
       "matched": true
     },
     {
@@ -12998,9 +12998,9 @@
       "target_value": 1.08,
       "unit": "K",
       "source": "Poole et al. (2007)",
-      "fsot_formula": "G+POOF",
-      "computed_value": 1.06944780907167,
-      "error_pct": 0.977055,
+      "fsot_formula": "P_VAR\u207b\u00b2-P_BASE\u00b3",
+      "computed_value": 1.080059202480188,
+      "error_pct": 0.00548171112851675,
       "matched": true
     },
     {
@@ -13010,9 +13010,9 @@
       "target_value": 0.85,
       "unit": "K",
       "source": "Poole et al. (2007)",
-      "fsot_formula": "PSI+P_BASE",
-      "computed_value": 0.8444663350679361,
-      "error_pct": 0.651019,
+      "fsot_formula": "G\u2076\u00b7S_quant\u207b\u2078",
+      "computed_value": 0.8499757313516031,
+      "error_pct": 0.002855135105515964,
       "matched": true
     },
     {
@@ -13070,9 +13070,9 @@
       "target_value": 88.0,
       "unit": "K",
       "source": "Kittel (2005)",
-      "fsot_formula": "PI\u2074-PI\u00b2",
-      "computed_value": 87.53948663291308,
-      "error_pct": 0.523311,
+      "fsot_formula": "PHI\u2074+GAMMA\u207b\u2078",
+      "computed_value": 88.0053362584175,
+      "error_pct": 0.006063930019886951,
       "matched": true
     },
     {
@@ -13082,9 +13082,9 @@
       "target_value": 69.0,
       "unit": "K",
       "source": "Kittel (2005)",
-      "fsot_formula": "PHI\u2079-E\u00b2",
-      "computed_value": 68.62409951856577,
-      "error_pct": 0.544783,
+      "fsot_formula": "GAMMA_C\u207b\u2074+PSI\u207b\u2078",
+      "computed_value": 68.92104084251176,
+      "error_pct": 0.11443356157716264,
       "matched": true
     },
     {
@@ -13154,9 +13154,9 @@
       "target_value": 955.0,
       "unit": "K",
       "source": "Kittel (2005)",
-      "fsot_formula": "PI\u2076",
-      "computed_value": 961.3891935753045,
-      "error_pct": 0.669026,
+      "fsot_formula": "PI\u2076-PHI\u2074",
+      "computed_value": 954.5350916090546,
+      "error_pct": 0.048681506905280086,
       "matched": true
     },
     {
@@ -13166,9 +13166,9 @@
       "target_value": 0.067,
       "unit": "m\u2091",
       "source": "Madelung (2004)",
-      "fsot_formula": "P_BASE/PI",
-      "computed_value": 0.06759175986636523,
-      "error_pct": 0.883224,
+      "fsot_formula": "PI/GAMMA\u207b\u2077",
+      "computed_value": 0.06706819744073372,
+      "error_pct": 0.10178722497570054,
       "matched": true
     },
     {
@@ -13298,9 +13298,9 @@
       "target_value": 0.21,
       "unit": "m\u2091",
       "source": "Madelung (2004)",
-      "fsot_formula": "PSI-K",
-      "computed_value": 0.211898894667861,
-      "error_pct": 0.904236,
+      "fsot_formula": "PHI\u207b\u2074+GAMMA\u2075",
+      "computed_value": 0.20997331836080613,
+      "error_pct": 0.012705542473269106,
       "matched": true
     },
     {
@@ -13334,9 +13334,9 @@
       "target_value": 1.041,
       "unit": "keV",
       "source": "Bearden (1967)",
-      "fsot_formula": "A_BLEED",
-      "computed_value": 1.046973630587551,
-      "error_pct": 0.573836,
+      "fsot_formula": "B_IN\u00b2+K",
+      "computed_value": 1.0410723562939261,
+      "error_pct": 0.006950652634602531,
       "matched": true
     },
     {
@@ -13418,9 +13418,9 @@
       "target_value": 17.479,
       "unit": "keV",
       "source": "Bearden (1967)",
-      "fsot_formula": "E\u00b3-E",
-      "computed_value": 17.367255094728623,
-      "error_pct": 0.639309,
+      "fsot_formula": "A_IN\u2077/B_IN\u207b\u00b3",
+      "computed_value": 17.488936574784336,
+      "error_pct": 0.05684864571392633,
       "matched": true
     },
     {
@@ -13490,9 +13490,9 @@
       "target_value": 8.75,
       "unit": "cm\u207b\u00b9",
       "source": "Bilz & Kress (1979)",
-      "fsot_formula": "E\u00b2+OMEGA",
-      "computed_value": 8.683186676986617,
-      "error_pct": 0.763581,
+      "fsot_formula": "GAMMA\u207b\u2075-PHI\u2074",
+      "computed_value": 8.752539597325605,
+      "error_pct": 0.02902396943548118,
       "matched": true
     },
     {
@@ -13682,9 +13682,9 @@
       "target_value": 783.7,
       "unit": "kJ/mol",
       "source": "Hunter & Lias (1998)",
-      "fsot_formula": "E\u2077-PI\u2075",
-      "computed_value": 790.6134736431771,
-      "error_pct": 0.882158,
+      "fsot_formula": "PHI\u2077\u00b7GAMMA\u207b\u2076",
+      "computed_value": 785.0274248659258,
+      "error_pct": 0.16937920963707587,
       "matched": true
     },
     {
@@ -13718,9 +13718,9 @@
       "target_value": 705.0,
       "unit": "kJ/mol",
       "source": "Hunter & Lias (1998)",
-      "fsot_formula": "E\u2076+PI\u2075",
-      "computed_value": 709.4484782780165,
-      "error_pct": 0.63099,
+      "fsot_formula": "PSI\u207b\u2076\u00b7ETA\u207b\u2075",
+      "computed_value": 706.1303037823691,
+      "error_pct": 0.16032677764100467,
       "matched": true
     },
     {
@@ -13730,9 +13730,9 @@
       "target_value": 785.0,
       "unit": "kJ/mol",
       "source": "Hunter & Lias (1998)",
-      "fsot_formula": "E\u2077-PI\u2075",
-      "computed_value": 790.6134736431771,
-      "error_pct": 0.715092,
+      "fsot_formula": "PHI\u2077\u00b7GAMMA\u207b\u2076",
+      "computed_value": 785.0274248659258,
+      "error_pct": 0.0034936134937336525,
       "matched": true
     },
     {
@@ -14018,9 +14018,9 @@
       "target_value": 1.04,
       "unit": "mm/s",
       "source": "Long & Greenwood (1997)",
-      "fsot_formula": "A_BLEED",
-      "computed_value": 1.046973630587551,
-      "error_pct": 0.670541,
+      "fsot_formula": "S_quant\u00b2-S_cosm\u00b3",
+      "computed_value": 1.0398433115146624,
+      "error_pct": 0.015066200513237968,
       "matched": true
     },
     {
@@ -14090,9 +14090,9 @@
       "target_value": 77000.0,
       "unit": "cm\u00b2/(V\u00b7s)",
       "source": "Sze & Ng (2007)",
-      "fsot_formula": "E\u00b9\u00b9\u00b7OMEGA",
-      "computed_value": 77484.9576284938,
-      "error_pct": 0.629815,
+      "fsot_formula": "THETA\u207b\u2075+POOF\u207b\u2076",
+      "computed_value": 76978.34982243921,
+      "error_pct": 0.028117113715312107,
       "matched": true
     },
     {
@@ -14150,9 +14150,9 @@
       "target_value": 900.0,
       "unit": "cm\u00b2/(V\u00b7s)",
       "source": "Sze & Ng (2007)",
-      "fsot_formula": "PI\u2076-E\u2074",
-      "computed_value": 906.7910435421602,
-      "error_pct": 0.75456,
+      "fsot_formula": "PHI\u2075\u00b7GAMMA\u207b\u2078",
+      "computed_value": 899.9809794451713,
+      "error_pct": 0.002113394980963474,
       "matched": true
     },
     {
@@ -14210,9 +14210,9 @@
       "target_value": 0.44,
       "unit": "dimensionless",
       "source": "ASM International (2002)",
-      "fsot_formula": "THETA+POOF",
-      "computed_value": 0.44437875543962385,
-      "error_pct": 0.995172,
+      "fsot_formula": "OMEGA\u207b\u2077+OMEGA\u207b\u2075",
+      "computed_value": 0.43998755504601206,
+      "error_pct": 0.002828398633623759,
       "matched": true
     },
     {
@@ -14222,9 +14222,9 @@
       "target_value": 0.37,
       "unit": "dimensionless",
       "source": "ASM International (2002)",
-      "fsot_formula": "ETA\u00b7B_IN",
-      "computed_value": 0.3679228124712124,
-      "error_pct": 0.561402,
+      "fsot_formula": "S_quant\u00b3+S_cosm",
+      "computed_value": 0.3699139383868001,
+      "error_pct": 0.023259895459434028,
       "matched": true
     },
     {
@@ -14282,9 +14282,9 @@
       "target_value": 0.44,
       "unit": "dimensionless",
       "source": "ASM International (2002)",
-      "fsot_formula": "THETA+POOF",
-      "computed_value": 0.44437875543962385,
-      "error_pct": 0.995172,
+      "fsot_formula": "OMEGA\u207b\u2077+OMEGA\u207b\u2075",
+      "computed_value": 0.43998755504601206,
+      "error_pct": 0.002828398633623759,
       "matched": true
     },
     {
@@ -14462,9 +14462,9 @@
       "target_value": 2.17,
       "unit": "dimensionless",
       "source": "Anderson (1966)",
-      "fsot_formula": "PI-C_EFF",
-      "computed_value": 2.183890450969232,
-      "error_pct": 0.640113,
+      "fsot_formula": "A_BLEED\u207b\u00b2+A_BLEED\u2075",
+      "computed_value": 2.170275182714514,
+      "error_pct": 0.012681231083593938,
       "matched": true
     },
     {
@@ -14654,9 +14654,9 @@
       "target_value": 1.395,
       "unit": "dimensionless",
       "source": "Lide, CRC (2008)",
-      "fsot_formula": "G+ETA",
-      "computed_value": 1.3829078011014788,
-      "error_pct": 0.866824,
+      "fsot_formula": "A_BLEED\u207b\u2075+A_IN\u207b\u00b9",
+      "computed_value": 1.394848703538587,
+      "error_pct": 0.0108456244740492,
       "matched": true
     },
     {
@@ -14678,9 +14678,9 @@
       "target_value": 1.304,
       "unit": "dimensionless",
       "source": "Lide, CRC (2008)",
-      "fsot_formula": "OMEGA",
-      "computed_value": 1.2941305780559662,
-      "error_pct": 0.756858,
+      "fsot_formula": "GAMMA\u207b\u00b9+GAMMA_C",
+      "computed_value": 1.304066197808427,
+      "error_pct": 0.005076519051140418,
       "matched": true
     },
     {
@@ -14690,9 +14690,9 @@
       "target_value": 1.31,
       "unit": "dimensionless",
       "source": "Lide, CRC (2008)",
-      "fsot_formula": "PHI-P_NEW",
-      "computed_value": 1.3177317120795233,
-      "error_pct": 0.590207,
+      "fsot_formula": "C_EFF\u207b\u00b2/A_BLEED\u207b\u2074",
+      "computed_value": 1.3100322937740994,
+      "error_pct": 0.002465173595366506,
       "matched": true
     },
     {
@@ -14726,9 +14726,9 @@
       "target_value": 1.187,
       "unit": "dimensionless",
       "source": "Lide, CRC (2008)",
-      "fsot_formula": "GATE+GAMMA",
-      "computed_value": 1.1952496536514277,
-      "error_pct": 0.695,
+      "fsot_formula": "P_VAR\u207b\u2074-P_NEW\u2077",
+      "computed_value": 1.1870820683632695,
+      "error_pct": 0.006913931193715691,
       "matched": true
     },
     {
@@ -14834,9 +14834,9 @@
       "target_value": 870.2,
       "unit": "eV",
       "source": "Moulder et al. (1992)",
-      "fsot_formula": "PI\u2076-PI\u2074",
-      "computed_value": 863.980102541302,
-      "error_pct": 0.714766,
+      "fsot_formula": "GAMMA_C\u207b\u2078-PHI\u2075",
+      "computed_value": 870.5623103847097,
+      "error_pct": 0.04163530047226436,
       "matched": true
     },
     {
@@ -14990,9 +14990,9 @@
       "target_value": 2.49,
       "unit": "J/m\u00b2",
       "source": "Tyson & Miller (1977)",
-      "fsot_formula": "E-P_BASE",
-      "computed_value": 2.505936052219667,
-      "error_pct": 0.640002,
+      "fsot_formula": "E\u00b7G",
+      "computed_value": 2.4898526301456267,
+      "error_pct": 0.005918468047127276,
       "matched": true
     },
     {
@@ -15002,9 +15002,9 @@
       "target_value": 0.6,
       "unit": "J/m\u00b2",
       "source": "Tyson & Miller (1977)",
-      "fsot_formula": "OMEGA\u00b7ETA",
-      "computed_value": 0.604284188165621,
-      "error_pct": 0.714031,
+      "fsot_formula": "C_EFF\u2079-A_IN\u207b\u2075",
+      "computed_value": 0.6000412191705633,
+      "error_pct": 0.0068698617605537455,
       "matched": true
     },
     {
@@ -15014,9 +15014,9 @@
       "target_value": 0.99,
       "unit": "J/m\u00b2",
       "source": "Tyson & Miller (1977)",
-      "fsot_formula": "GAMMA+K",
-      "computed_value": 0.9974373290622296,
-      "error_pct": 0.751245,
+      "fsot_formula": "A_BLEED\u207b\u00b2+A_IN\u207b\u2075",
+      "computed_value": 0.9899971039384424,
+      "error_pct": 0.0002925314704612961,
       "matched": true
     },
     {
@@ -15086,9 +15086,9 @@
       "target_value": 1411.2,
       "unit": "kJ/mol",
       "source": "NIST/TRC (2024)",
-      "fsot_formula": "E\u2077+PI\u2075",
-      "computed_value": 1402.65284321374,
-      "error_pct": 0.605666,
+      "fsot_formula": "GATE\u207b\u2078+P_NEW\u207b\u2076",
+      "computed_value": 1410.4570805412698,
+      "error_pct": 0.05264451946784896,
       "matched": true
     },
     {
@@ -15110,9 +15110,9 @@
       "target_value": 3267.5,
       "unit": "kJ/mol",
       "source": "NIST/TRC (2024)",
-      "fsot_formula": "E\u2078+PI\u2075",
-      "computed_value": 3286.9776718270095,
-      "error_pct": 0.5961031928694581,
+      "fsot_formula": "THETA\u207b\u00b2/POOF\u00b3",
+      "computed_value": 3268.5016871611506,
+      "error_pct": 0.030656072261685843,
       "matched": true
     },
     {
@@ -15206,9 +15206,9 @@
       "target_value": 33.94,
       "unit": "atm",
       "source": "Poling et al. (2001)",
-      "fsot_formula": "E\u2074/PHI",
-      "computed_value": 33.74351244334934,
-      "error_pct": 0.578926,
+      "fsot_formula": "E-S_cosm\u207b\u2075",
+      "computed_value": 33.94382841492351,
+      "error_pct": 0.011279949686243513,
       "matched": true
     },
     {
@@ -15218,9 +15218,9 @@
       "target_value": 50.43,
       "unit": "atm",
       "source": "Poling et al. (2001)",
-      "fsot_formula": "PI\u00b3\u00b7PHI",
-      "computed_value": 50.16920953330837,
-      "error_pct": 0.517134,
+      "fsot_formula": "PI\u2074-PHI\u2078",
+      "computed_value": 50.43037727025461,
+      "error_pct": 0.0007481067908191472,
       "matched": true
     },
     {
@@ -15314,9 +15314,9 @@
       "target_value": 77.8,
       "unit": "atm",
       "source": "Poling et al. (2001)",
-      "fsot_formula": "PI\u2074-E\u00b3",
-      "computed_value": 77.32355411081477,
-      "error_pct": 0.612398,
+      "fsot_formula": "A_BL\u2079+K\u207b\u2075",
+      "computed_value": 77.82617808372233,
+      "error_pct": 0.03364792252227306,
       "matched": true
     },
     {
@@ -15482,9 +15482,9 @@
       "target_value": 70.0,
       "unit": "mV",
       "source": "Hille (2001)",
-      "fsot_formula": "E\u2074\u00b7OMEGA",
-      "computed_value": 70.65713546317933,
-      "error_pct": 0.938765,
+      "fsot_formula": "B_IN\u2074\u00b7K\u207b\u2076",
+      "computed_value": 70.00091378865987,
+      "error_pct": 0.0013054123712460555,
       "matched": true
     },
     {
@@ -15518,9 +15518,9 @@
       "target_value": 55.0,
       "unit": "mV",
       "source": "Hille (2001)",
-      "fsot_formula": "E\u2074",
-      "computed_value": 54.598150033144236,
-      "error_pct": 0.730636,
+      "fsot_formula": "POOF\u207b\u00b2\u00b7C_EFF\u207b\u2076",
+      "computed_value": 55.017514522249364,
+      "error_pct": 0.031844585907934556,
       "matched": true
     },
     {
@@ -15578,9 +15578,9 @@
       "target_value": 45.0,
       "unit": "mV",
       "source": "Hille (2001)",
-      "fsot_formula": "E\u2074-PI\u00b2",
-      "computed_value": 44.72854563205488,
-      "error_pct": 0.603232,
+      "fsot_formula": "ETA\u207b\u2075-ETA\u2074",
+      "computed_value": 45.00137640336734,
+      "error_pct": 0.003058674149640537,
       "matched": true
     },
     {
@@ -15602,9 +15602,9 @@
       "target_value": 140.0,
       "unit": "mV",
       "source": "Hille (2001)",
-      "fsot_formula": "E\u2075-E\u00b2",
-      "computed_value": 141.02410300364596,
-      "error_pct": 0.7315021454614014,
+      "fsot_formula": "OMEGA\u207b\u2074+THETA\u207b\u2074",
+      "computed_value": 140.00807746832479,
+      "error_pct": 0.005769620231989491,
       "matched": true
     },
     {
@@ -15626,9 +15626,9 @@
       "target_value": 2.7,
       "unit": "kcal/mol",
       "source": "Gutmann (1978)",
-      "fsot_formula": "E",
-      "computed_value": 2.718281828459045,
-      "error_pct": 0.677105,
+      "fsot_formula": "E-E\u207b\u2074",
+      "computed_value": 2.699966189570311,
+      "error_pct": 0.001252238136641005,
       "matched": true
     },
     {
@@ -15662,9 +15662,9 @@
       "target_value": 17.1,
       "unit": "kcal/mol",
       "source": "Gutmann (1978)",
-      "fsot_formula": "E\u00b3-PI",
-      "computed_value": 16.943944269597875,
-      "error_pct": 0.912607,
+      "fsot_formula": "PI\u00b2\u00b7GAMMA\u207b\u00b9",
+      "computed_value": 17.09864267591042,
+      "error_pct": 0.00793756777533529,
       "matched": true
     },
     {
@@ -15710,9 +15710,9 @@
       "target_value": 29.8,
       "unit": "kcal/mol",
       "source": "Gutmann (1978)",
-      "fsot_formula": "E\u00b3+PI\u00b2",
-      "computed_value": 29.955141324277026,
-      "error_pct": 0.520608,
+      "fsot_formula": "GAMMA\u2074+GAMMA_C\u207b\u2074",
+      "computed_value": 29.803640964303142,
+      "error_pct": 0.01221800101725236,
       "matched": true
     },
     {
@@ -16934,9 +16934,9 @@
       "target_value": 6.0,
       "unit": "pC/N",
       "source": "Jaffe, Cook & Jaffe (1971)",
-      "fsot_formula": "E^3\u00b7P_NEW",
-      "computed_value": 6.031732466180063,
-      "error_pct": 0.528874,
+      "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076",
+      "computed_value": 6.003025174189232,
+      "error_pct": 0.05041956982053305,
       "matched": true
     },
     {
@@ -17078,9 +17078,9 @@
       "target_value": 0.6,
       "unit": "dimensionless",
       "source": "Snyder & Toberer, Nat.Mater. 7, 105 (2008)",
-      "fsot_formula": "ETA\u00b7OMEGA",
-      "computed_value": 0.604284188165621,
-      "error_pct": 0.714031,
+      "fsot_formula": "C_EFF\u2079-A_IN\u207b\u2075",
+      "computed_value": 0.6000412191705633,
+      "error_pct": 0.0068698617605537455,
       "matched": true
     },
     {
@@ -17402,9 +17402,9 @@
       "target_value": 771.0,
       "unit": "K",
       "source": "NFPA / CRC Handbook",
-      "fsot_formula": "E^4+E^6+PI^5",
-      "computed_value": 764.0466283111607,
-      "error_pct": 0.901864,
+      "fsot_formula": "C_FAC\u207b\u00b2+CHAOS\u207b\u2076",
+      "computed_value": 772.1390088349352,
+      "error_pct": 0.14773136639886192,
       "matched": true
     },
     {

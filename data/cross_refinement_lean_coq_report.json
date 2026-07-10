@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-07-10T21:35:23.003123+00:00",
+  "generated_at": "2026-07-10T21:48:16.407075+00:00",
   "tier": "79b_cross_refinement",
-  "obligation_count_total": 1242,
-  "obligation_count_provable": 1237,
-  "obligation_count_margin_violations": 5,
+  "obligation_count_total": 1241,
+  "obligation_count_provable": 1241,
+  "obligation_count_margin_violations": 0,
   "coq_chunks_found": 13,
-  "coq_lemmas_indexed": 1237,
+  "coq_lemmas_indexed": 1241,
   "triangulation": {
-    "provable_triangulated_ok": 1237,
+    "provable_triangulated_ok": 1241,
     "provable_triangulated_fail": 0,
-    "margin_violations_confirmed_ok": 5,
+    "margin_violations_confirmed_ok": 0,
     "margin_violations_confirmed_fail": 0,
     "pct_provable_triangulated": 100.0
   },
   "margin_summary_by_kind": {
     "lt_half": {
-      "count": 453,
-      "min_margin": "0.037819",
-      "median_margin": "0.499999",
+      "count": 458,
+      "min_margin": "0.007472",
+      "median_margin": "0.499966",
       "max_margin": "0.5"
     },
     "nat_pos": {
-      "count": 580,
+      "count": 579,
       "min_margin": "1",
-      "median_margin": "15",
+      "median_margin": "14",
       "max_margin": "352276"
     },
     "gt_lit": {
@@ -69,69 +69,8 @@
       "max_margin": "0.47"
     }
   },
-  "lt_half_pooled_median_margin_to_bound": "0.499999",
-  "margin_violations": [
-    {
-      "id": "cosmology_higher_waves_max_error_under_half_pct",
-      "module": "CosmologyHigherWavesPriors",
-      "violation": {
-        "violation_kind": "exceeds_bound",
-        "bound": "0.5",
-        "actual": "0.6313803900161674",
-        "overrun": "0.1313803900161674",
-        "margin_to_bound": "-0.1313803900161674"
-      },
-      "lean_build_fails": true
-    },
-    {
-      "id": "cosmology_wave8_max_error_under_half_pct",
-      "module": "CosmologyWave8Priors",
-      "violation": {
-        "violation_kind": "exceeds_bound",
-        "bound": "0.5",
-        "actual": "4.232801452006084",
-        "overrun": "3.732801452006084",
-        "margin_to_bound": "-3.732801452006084"
-      },
-      "lean_build_fails": true
-    },
-    {
-      "id": "geochemistry_median_error_under_half_pct",
-      "module": "GeochemistryPriors",
-      "violation": {
-        "violation_kind": "exceeds_bound",
-        "bound": "0.5",
-        "actual": "0.617258",
-        "overrun": "0.117258",
-        "margin_to_bound": "-0.117258"
-      },
-      "lean_build_fails": true
-    },
-    {
-      "id": "initiation_transformation_archetype_headline_median_under_half_pct",
-      "module": "InitiationTransformationArchetypePriors",
-      "violation": {
-        "violation_kind": "exceeds_bound",
-        "bound": "0.5",
-        "actual": "0.7800073875207238",
-        "overrun": "0.2800073875207238",
-        "margin_to_bound": "-0.2800073875207238"
-      },
-      "lean_build_fails": true
-    },
-    {
-      "id": "particle_physics_max_error_under_half_pct",
-      "module": "ParticlePhysicsPriors",
-      "violation": {
-        "violation_kind": "exceeds_bound",
-        "bound": "0.5",
-        "actual": "0.813808",
-        "overrun": "0.313808",
-        "margin_to_bound": "-0.313808"
-      },
-      "lean_build_fails": true
-    }
-  ],
+  "lt_half_pooled_median_margin_to_bound": "0.499966",
+  "margin_violations": [],
   "issue_counts": {},
   "failures_sample": [],
   "overall_ok": true,

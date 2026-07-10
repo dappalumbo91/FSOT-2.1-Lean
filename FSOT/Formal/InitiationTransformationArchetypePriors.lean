@@ -13,7 +13,7 @@ open Real
 
 def initiation_transformation_archetype_observable_count : ℕ := 10
 def initiation_transformation_archetype_pooled_median_error_pct : ℝ := (0.0 : ℝ)
-def initiation_transformation_archetype_headline_median_error_pct : ℝ := (0.7800073875207238 : ℝ)
+def initiation_transformation_archetype_headline_median_error_pct : ℝ := (0.19339831498352392 : ℝ)
 def initiation_transformation_archetype_beats_sota_headlines : ℕ := 2
 def initiation_transformation_archetype_D_eff : ℕ := 17
 

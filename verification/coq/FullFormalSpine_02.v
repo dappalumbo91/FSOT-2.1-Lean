@@ -6,6 +6,12 @@ From Stdlib Require Import Lia.
 From Stdlib Require Import Arith.
 Local Open Scope R_scope.
 
+Lemma cosmology_wave8_max_error_under_half_pct : (0.35683948712437213%R) < (0.5%R).
+Proof. lra. Qed.
+
+Lemma cosmology_wave8_median_error_under_half_pct : (0.014145689288404753%R) < (0.5%R).
+Proof. lra. Qed.
+
 Lemma cosmology_wave8_observable_count_pos : (0 < 52)%nat.
 Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
@@ -299,10 +305,4 @@ Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
 Lemma element_synthesis_condition_scaffold_pooled_median_under_half_pct : (0.000787%R) < (0.5%R).
 Proof. lra. Qed.
-
-Lemma element_synthesis_condition_scaffold_headline_median_under_half_pct : (0.000787%R) < (0.5%R).
-Proof. lra. Qed.
-
-Lemma element_synthesis_condition_scaffold_observable_count_pos : (0 < 45)%nat.
-Proof. apply Nat.ltb_lt; reflexivity. Qed.
 
