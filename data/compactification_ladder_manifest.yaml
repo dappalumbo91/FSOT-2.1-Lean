@@ -1,0 +1,203 @@
+# Compactification / folding ladder — 10 rungs from string scale to cosmological scale.
+version: "1.0"
+updated: "2026-07-10"
+notes: >
+  Each rung anchors FSOT scalar architecture to an empirical benchmark pair.
+  Adjacent-rung couplings (MEC-030–038) connect neighbor scales only.
+  Fold-depth metric combines divergence_depth, D_eff ceiling (25), and Richardson scale.
+
+ladder:
+  rung_count: 10
+  D_eff_ceiling: 25
+  richardson_exponent: 0.2
+  chaos_threshold_D: 25
+
+  rungs:
+    - id: R01
+      name: string_quantum
+      rung_index: 1
+      D_eff_ladder: 3
+      scalar_domain: High_Energy_Physics
+      formula_branch: scaled_S
+      anchor_domain: Higgs_Mass
+      benchmark_primary: data/higgs_mass_benchmark.json
+      benchmark_secondary: data/particle_physics_benchmark.json
+      maps_to_lean: [particle, higgs]
+
+    - id: R02
+      name: nuclear
+      rung_index: 2
+      D_eff_ladder: 5
+      scalar_domain: Particle_Physics
+      formula_branch: term3.chaos_factor
+      anchor_domain: Particle_Physics
+      benchmark_primary: data/particle_physics_gap_fill_benchmark.json
+      benchmark_secondary: data/higgs_branching_benchmark.json
+      maps_to_lean: [particle, nuclear]
+
+    - id: R03
+      name: atomic
+      rung_index: 3
+      D_eff_ladder: 7
+      scalar_domain: Atomic_Physics
+      formula_branch: term3.chaos_factor
+      anchor_domain: Atomic_Physics
+      benchmark_primary: data/atomic_physics_gap_fill_benchmark.json
+      benchmark_secondary: data/nist_codata_constants_benchmark.json
+      maps_to_lean: [particle]
+
+    - id: R04
+      name: molecular
+      rung_index: 4
+      D_eff_ladder: 9
+      scalar_domain: Materials_Science
+      formula_branch: term2.trend_bias
+      anchor_domain: Materials_Species_Bridge
+      benchmark_primary: data/materials_species_bridge_benchmark.json
+      benchmark_secondary: data/pubchem_compound_properties_benchmark.json
+      maps_to_lean: [material, biological]
+
+    - id: R05
+      name: cellular
+      rung_index: 5
+      D_eff_ladder: 11
+      scalar_domain: Biology
+      formula_branch: term1.growth_term
+      anchor_domain: Synthetic_Biology
+      benchmark_primary: data/synthetic_biology_benchmark.json
+      benchmark_secondary: data/biology_strict_empirical.json
+      maps_to_lean: [biological, medical]
+
+    - id: R06
+      name: organismic
+      rung_index: 6
+      D_eff_ladder: 13
+      scalar_domain: Biochemistry
+      formula_branch: term1.growth_term
+      anchor_domain: Immunology
+      benchmark_primary: data/immunology_benchmark.json
+      benchmark_secondary: data/neuroimmunology_benchmark.json
+      maps_to_lean: [medical, biological]
+
+    - id: R07
+      name: planetary
+      rung_index: 7
+      D_eff_ladder: 16
+      scalar_domain: Planetary_Science
+      formula_branch: term2.scale
+      anchor_domain: Planetary_Structure
+      benchmark_primary: data/planetary_structure_benchmark.json
+      benchmark_secondary: data/exogeology_extension_benchmark.json
+      maps_to_lean: [galactic, energy]
+
+    - id: R08
+      name: stellar
+      rung_index: 8
+      D_eff_ladder: 20
+      scalar_domain: Astrophysics
+      formula_branch: term3.chaos_factor
+      anchor_domain: Breakthrough_Discoveries_2024_2026
+      benchmark_primary: data/breakthrough_discoveries_2024_2026_benchmark.json
+      benchmark_secondary: data/space_weather_benchmark.json
+      maps_to_lean: [energy, fusion]
+
+    - id: R09
+      name: galactic
+      rung_index: 9
+      D_eff_ladder: 22
+      scalar_domain: Astronomy
+      formula_branch: term1.coherence_efficiency
+      anchor_domain: Climate_Science
+      benchmark_primary: data/climate_observed_benchmark.json
+      benchmark_secondary: data/magnetosphere_benchmark.json
+      maps_to_lean: [galactic, energy]
+
+    - id: R10
+      name: cosmological
+      rung_index: 10
+      D_eff_ladder: 25
+      scalar_domain: Cosmology
+      formula_branch: scaled_S
+      anchor_domain: Cosmology_Extended
+      benchmark_primary: data/cosmology_extended_benchmark.json
+      benchmark_secondary: data/cosmology_bubble_bleed_benchmark.json
+      maps_to_lean: [cosmological, astronomical]
+
+  adjacent_pairs:
+    - id: AR01
+      lower_rung: R01
+      upper_rung: R02
+      mechanism: string_to_nuclear_adjacent_fold
+      mec_id: MEC-030
+      source_domain: Higgs_Mass
+      target_domain: Particle_Physics
+
+    - id: AR02
+      lower_rung: R02
+      upper_rung: R03
+      mechanism: nuclear_to_atomic_adjacent_fold
+      mec_id: MEC-031
+      source_domain: Particle_Physics
+      target_domain: Atomic_Physics
+
+    - id: AR03
+      lower_rung: R03
+      upper_rung: R04
+      mechanism: atomic_to_molecular_adjacent_fold
+      mec_id: MEC-032
+      source_domain: Atomic_Physics
+      target_domain: Materials_Species_Bridge
+
+    - id: AR04
+      lower_rung: R04
+      upper_rung: R05
+      mechanism: molecular_to_cellular_adjacent_fold
+      mec_id: MEC-033
+      source_domain: Materials_Species_Bridge
+      target_domain: Synthetic_Biology
+
+    - id: AR05
+      lower_rung: R05
+      upper_rung: R06
+      mechanism: cellular_to_organismic_adjacent_fold
+      mec_id: MEC-034
+      source_domain: Synthetic_Biology
+      target_domain: Immunology
+
+    - id: AR06
+      lower_rung: R06
+      upper_rung: R07
+      mechanism: organismic_to_planetary_adjacent_fold
+      mec_id: MEC-035
+      source_domain: Immunology
+      target_domain: Planetary_Structure
+
+    - id: AR07
+      lower_rung: R07
+      upper_rung: R08
+      mechanism: planetary_to_stellar_adjacent_fold
+      mec_id: MEC-036
+      source_domain: Planetary_Structure
+      target_domain: Breakthrough_Discoveries_2024_2026
+
+    - id: AR08
+      lower_rung: R08
+      upper_rung: R09
+      mechanism: stellar_to_galactic_adjacent_fold
+      mec_id: MEC-037
+      source_domain: Breakthrough_Discoveries_2024_2026
+      target_domain: Climate_Science
+
+    - id: AR09
+      lower_rung: R09
+      upper_rung: R10
+      mechanism: galactic_to_cosmological_adjacent_fold
+      mec_id: MEC-038
+      source_domain: Climate_Science
+      target_domain: Cosmology_Extended
+
+  rollup:
+    mec_id: MEC-039
+    source_domain: Reality_Folding_Spine
+    target_domain: ToE_Unification_Spine
+    mechanism: folding_ladder_toe_unity_rollup

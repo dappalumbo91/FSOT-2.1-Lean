@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T14:41:54.243342+00:00",
+  "generated_at": "2026-07-10T15:00:17.121456+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -710,6 +710,14 @@
       "acoustic_rm_acoustic_species_pos",
       "acoustic_rm_bundle"
     ],
+    "AdjacentRungCouplingPriors": [
+      "adj_rung_observable_count_pos",
+      "adj_rung_pooled_median_under_five_pct",
+      "adj_rung_headline_median_under_five_pct",
+      "adj_rung_beats_sota_headlines_pos",
+      "adj_rung_pairs_complete",
+      "adj_rung_bundle"
+    ],
     "AdversarialFractalBreakPriors": [
       "adv_brk_observable_count_pos",
       "adv_brk_pooled_median_under_five_pct",
@@ -1344,6 +1352,14 @@
       "codon_ttt_secondary_phase",
       "codon_trinary_map_bundle"
     ],
+    "CompactificationLadderPriors": [
+      "comp_lad_observable_count_pos",
+      "comp_lad_pooled_median_under_five_pct",
+      "comp_lad_headline_median_under_five_pct",
+      "comp_lad_beats_sota_headlines_pos",
+      "comp_lad_rungs_complete",
+      "comp_lad_bundle"
+    ],
     "ComputationalReasoningPriors": [
       "computational_reasoning_observable_count_pos",
       "computational_reasoning_median_error_under_five_pct",
@@ -1671,6 +1687,14 @@
       "fluid_dynamics_gap_fill_headline_median_under_five_pct",
       "fluid_dynamics_gap_fill_beats_sota_headlines_pos",
       "fluid_dynamics_gap_fill_bundle"
+    ],
+    "FoldDepthMetricsPriors": [
+      "fold_dep_observable_count_pos",
+      "fold_dep_pooled_median_under_five_pct",
+      "fold_dep_headline_median_under_five_pct",
+      "fold_dep_beats_sota_headlines_pos",
+      "fold_dep_fold_span_pos",
+      "fold_dep_bundle"
     ],
     "FoodMicrobiologyGapFillPriors": [
       "food_microbiology_gap_fill_observable_count_pos",
@@ -2372,6 +2396,14 @@
       "rcsb_pdb_structures_observable_count_pos",
       "rcsb_pdb_structures_median_error_under_five_pct",
       "rcsb_pdb_structures_bundle"
+    ],
+    "RealityFoldingSpinePriors": [
+      "fold_spine_observable_count_pos",
+      "fold_spine_pooled_median_under_five_pct",
+      "fold_spine_headline_median_under_five_pct",
+      "fold_spine_beats_sota_headlines_pos",
+      "fold_spine_ladder_rungs_pos",
+      "fold_spine_bundle"
     ],
     "RoboticsControlSystemsExtensionPriors": [
       "robotics_control_ext_observable_count_pos",

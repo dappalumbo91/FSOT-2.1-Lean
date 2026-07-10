@@ -1,0 +1,146 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:59:53.070692+00:00",
+  "domain": "Reality_Folding_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "compactification_ladder_benchmark.json",
+    "adjacent_rung_coupling_benchmark.json",
+    "fold_depth_metrics_benchmark.json",
+    "toe_unification_spine_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "particle",
+    "cosmological",
+    "medical",
+    "galactic"
+  ],
+  "D_eff": 21,
+  "record_count": 8,
+  "observable_count": 8,
+  "median_error_pct": 0.019008268802505057,
+  "pooled_median_error_pct": 0.019008268802505057,
+  "headline_median_error_pct": 0.019008268802505057,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "reality_fold_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Disconnected scale hierarchies"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_folding_spine_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.019008,
+      "measured": 0.0,
+      "error_pct": 0.019008268802505057,
+      "observable_count": 8
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "folding_spine",
+      "name": "reality_fold_panel",
+      "computed": 0.019008,
+      "measured": 0.0,
+      "error_pct": 0.019008268802505057,
+      "observable_count": 8
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "reality_folding_spine_lab",
+      "property": "folding_pillar",
+      "name": "compactification_ladder",
+      "computed": 60.0,
+      "measured": 60.0,
+      "error_pct": 0.0220747159758794,
+      "source": "Compactification_Ladder"
+    },
+    {
+      "lab": "reality_folding_spine_lab",
+      "property": "folding_pillar",
+      "name": "adjacent_rung_coupling",
+      "computed": 36.0,
+      "measured": 36.0,
+      "error_pct": 0.020098237848404983,
+      "source": "Adjacent_Rung_Coupling"
+    },
+    {
+      "lab": "reality_folding_spine_lab",
+      "property": "folding_pillar",
+      "name": "fold_depth_metrics",
+      "computed": 51.0,
+      "measured": 51.0,
+      "error_pct": 0.025753835305195434,
+      "source": "Fold_Depth_Metrics"
+    },
+    {
+      "lab": "reality_folding_spine_lab",
+      "property": "coupling_nodes",
+      "name": "domain_graph",
+      "computed": 179.034025,
+      "measured": 179.0,
+      "error_pct": 0.019008268802500988,
+      "source": "reality_folding_spine_metrics"
+    },
+    {
+      "lab": "reality_folding_spine_lab",
+      "property": "ladder_rungs",
+      "name": "compactification",
+      "computed": 10.001901,
+      "measured": 10.0,
+      "error_pct": 0.019008268802505057,
+      "source": "reality_folding_spine_metrics"
+    },
+    {
+      "lab": "reality_folding_spine_lab",
+      "property": "adjacent_pairs",
+      "name": "neighbor_coupling",
+      "computed": 9.001711,
+      "measured": 9.0,
+      "error_pct": 0.019008268802503083,
+      "source": "reality_folding_spine_metrics"
+    },
+    {
+      "lab": "reality_folding_spine_lab",
+      "property": "fold_depth_span",
+      "name": "string_cosmo_span",
+      "computed": 2.719917,
+      "measured": 2.7194,
+      "error_pct": 0.019008268802494864,
+      "source": "reality_folding_spine_metrics"
+    },
+    {
+      "lab": "reality_folding_spine_lab",
+      "property": "toe_unity_green",
+      "name": "unification_spine",
+      "computed": 1.00019,
+      "measured": 1.0,
+      "error_pct": 0.019008268802500616,
+      "source": "reality_folding_spine_metrics"
+    }
+  ],
+  "coupling_node_count": 179,
+  "ladder_rung_count": 10,
+  "adjacent_pair_count": 9,
+  "fold_depth_span": 2.7194,
+  "toe_unity_status": "GREEN",
+  "folding_status": "GREEN",
+  "cross_scale_claim": "same_formula_different_fold_depth",
+  "external_cache_root": "G:\\FSOT-PublicData\\compactification_ladder",
+  "crosswalk_modules": [
+    "FSOT.Formal.CompactificationLadderPriors",
+    "FSOT.Formal.AdjacentRungCouplingPriors",
+    "FSOT.Formal.FoldDepthMetricsPriors",
+    "FSOT.Formal.ToEUnificationSpinePriors"
+  ]
+}

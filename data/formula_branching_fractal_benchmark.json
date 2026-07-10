@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:41:18.572239+00:00",
+  "generated_at": "2026-07-10T14:59:21.098545+00:00",
   "domain": "Formula_Branching_Fractal",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -14,11 +14,11 @@
     "consciousness"
   ],
   "D_eff": 18,
-  "record_count": 148,
-  "observable_count": 148,
-  "median_error_pct": 0.038016537604977654,
-  "pooled_median_error_pct": 0.038016537604977654,
-  "headline_median_error_pct": 0.038016537604977654,
+  "record_count": 152,
+  "observable_count": 152,
+  "median_error_pct": 0.038016537604977536,
+  "pooled_median_error_pct": 0.038016537604977536,
+  "headline_median_error_pct": 0.038016537604977536,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -44,8 +44,8 @@
       "name": "all_channels",
       "computed": 0.038017,
       "measured": 0.0,
-      "error_pct": 0.038016537604977654,
-      "observable_count": 148
+      "error_pct": 0.038016537604977536,
+      "observable_count": 152
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -53,8 +53,8 @@
       "name": "fractal_branch_panel",
       "computed": 0.038017,
       "measured": 0.0,
-      "error_pct": 0.03801653760497861,
-      "observable_count": 139
+      "error_pct": 0.03801653760497784,
+      "observable_count": 143
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -1459,6 +1459,46 @@
     },
     {
       "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Compactification_Ladder",
+      "computed": 15.505893,
+      "measured": 15.5,
+      "error_pct": 0.038016537604976884,
+      "source": "scaled_S",
+      "branch": "scaled_S"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Adjacent_Rung_Coupling",
+      "computed": 16.15614,
+      "measured": 16.15,
+      "error_pct": 0.038016537604968655,
+      "source": "term1.coherence_efficiency",
+      "branch": "term1.coherence_efficiency"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Fold_Depth_Metrics",
+      "computed": 14.805626,
+      "measured": 14.8,
+      "error_pct": 0.03801653760497362,
+      "source": "raw_S",
+      "branch": "raw_S"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Reality_Folding_Spine",
+      "computed": 16.506273,
+      "measured": 16.5,
+      "error_pct": 0.03801653760498105,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
       "property": "corpus_branch_attachment_count",
       "name": "term1.growth_term",
       "computed": 420.119752,
@@ -1541,8 +1581,8 @@
   ],
   "fractal_dag": {
     "root": "raw_S",
-    "node_count": 145,
-    "edge_count": 8225,
+    "node_count": 149,
+    "edge_count": 8233,
     "nodes": [
       {
         "id": "domain::Plasma_Physics",
@@ -3431,6 +3471,67 @@
         "D_eff": 20
       },
       {
+        "id": "domain::Compactification_Ladder",
+        "kind": "extension_domain",
+        "name": "Compactification_Ladder",
+        "primary_branch": "scaled_S",
+        "divergence_depth": 15.5,
+        "maps_to_lean": [
+          "particle",
+          "medical",
+          "galactic",
+          "cosmological",
+          "mathematical"
+        ],
+        "tier": 49,
+        "D_eff": 18
+      },
+      {
+        "id": "domain::Adjacent_Rung_Coupling",
+        "kind": "extension_domain",
+        "name": "Adjacent_Rung_Coupling",
+        "primary_branch": "term1.coherence_efficiency",
+        "divergence_depth": 16.15,
+        "maps_to_lean": [
+          "particle",
+          "medical",
+          "galactic",
+          "cosmological"
+        ],
+        "tier": 49,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Fold_Depth_Metrics",
+        "kind": "extension_domain",
+        "name": "Fold_Depth_Metrics",
+        "primary_branch": "raw_S",
+        "divergence_depth": 14.8,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "cosmological"
+        ],
+        "tier": 49,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Reality_Folding_Spine",
+        "kind": "extension_domain",
+        "name": "Reality_Folding_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.5,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "cosmological",
+          "medical",
+          "galactic"
+        ],
+        "tier": 49,
+        "D_eff": 21
+      },
+      {
         "id": "constant::phi",
         "kind": "constant_primitive",
         "name": "phi",
@@ -5150,6 +5251,54 @@
       },
       {
         "from": "raw_S",
+        "to": "scaled_S",
+        "kind": "spine_branch",
+        "domain": "Compactification_Ladder"
+      },
+      {
+        "from": "scaled_S",
+        "to": "domain::Compactification_Ladder",
+        "kind": "domain_attachment",
+        "domain": "Compactification_Ladder"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.coherence_efficiency",
+        "kind": "spine_branch",
+        "domain": "Adjacent_Rung_Coupling"
+      },
+      {
+        "from": "term1.coherence_efficiency",
+        "to": "domain::Adjacent_Rung_Coupling",
+        "kind": "domain_attachment",
+        "domain": "Adjacent_Rung_Coupling"
+      },
+      {
+        "from": "raw_S",
+        "to": "raw_S",
+        "kind": "spine_branch",
+        "domain": "Fold_Depth_Metrics"
+      },
+      {
+        "from": "raw_S",
+        "to": "domain::Fold_Depth_Metrics",
+        "kind": "domain_attachment",
+        "domain": "Fold_Depth_Metrics"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Reality_Folding_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Reality_Folding_Spine",
+        "kind": "domain_attachment",
+        "domain": "Reality_Folding_Spine"
+      },
+      {
+        "from": "raw_S",
         "to": "term1.growth_term",
         "kind": "corpus_formula",
         "concept": "IE_H"
@@ -33431,54 +33580,6 @@
         "to": "term1.term1_base",
         "kind": "corpus_formula",
         "concept": "N"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Mg"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Al"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Si"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "S"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ti"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ti\u00b3\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "V\u00b3\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cr\u00b3\u207a"
       }
     ],
     "corpus_constant_histogram": {
@@ -33494,9 +33595,9 @@
       "term1.term1_base": 6426,
       "term3.acoustic_bleed": 1095
     },
-    "domain_attachment_count": 139
+    "domain_attachment_count": 143
   },
-  "domain_attachment_count": 139,
+  "domain_attachment_count": 143,
   "corpus_strict_count": 7941,
   "rollup_status": "GREEN",
   "crosswalk_modules": [

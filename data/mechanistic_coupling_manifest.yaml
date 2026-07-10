@@ -205,3 +205,73 @@ mechanisms:
     mechanism: toe_unity_single_architecture_rollup
     lean_tags: [mathematical, particle, consciousness]
     formula_branch: raw_S
+
+  - id: MEC-030
+    source: Higgs_Mass
+    target: Particle_Physics
+    mechanism: string_to_nuclear_adjacent_fold
+    lean_tags: [particle, higgs]
+    formula_branch: scaled_S
+
+  - id: MEC-031
+    source: Particle_Physics
+    target: Atomic_Physics
+    mechanism: nuclear_to_atomic_adjacent_fold
+    lean_tags: [particle]
+    formula_branch: term3.chaos_factor
+
+  - id: MEC-032
+    source: Atomic_Physics
+    target: Materials_Species_Bridge
+    mechanism: atomic_to_molecular_adjacent_fold
+    lean_tags: [particle, material]
+    formula_branch: term2.trend_bias
+
+  - id: MEC-033
+    source: Materials_Species_Bridge
+    target: Synthetic_Biology
+    mechanism: molecular_to_cellular_adjacent_fold
+    lean_tags: [biological, medical]
+    formula_branch: term1.growth_term
+
+  - id: MEC-034
+    source: Synthetic_Biology
+    target: Immunology
+    mechanism: cellular_to_organismic_adjacent_fold
+    lean_tags: [biological, medical]
+    formula_branch: term1.growth_term
+
+  - id: MEC-035
+    source: Immunology
+    target: Planetary_Structure
+    mechanism: organismic_to_planetary_adjacent_fold
+    lean_tags: [medical, galactic]
+    formula_branch: term2.scale
+
+  - id: MEC-036
+    source: Planetary_Structure
+    target: Breakthrough_Discoveries_2024_2026
+    mechanism: planetary_to_stellar_adjacent_fold
+    lean_tags: [galactic, energy]
+    formula_branch: term3.chaos_factor
+
+  - id: MEC-037
+    source: Breakthrough_Discoveries_2024_2026
+    target: Climate_Science
+    mechanism: stellar_to_galactic_adjacent_fold
+    lean_tags: [energy, galactic]
+    formula_branch: term1.coherence_efficiency
+
+  - id: MEC-038
+    source: Climate_Science
+    target: Cosmology_Extended
+    mechanism: galactic_to_cosmological_adjacent_fold
+    lean_tags: [galactic, cosmological]
+    formula_branch: scaled_S
+
+  - id: MEC-039
+    source: Reality_Folding_Spine
+    target: ToE_Unification_Spine
+    mechanism: folding_ladder_toe_unity_rollup
+    lean_tags: [mathematical, particle, cosmological]
+    formula_branch: raw_S

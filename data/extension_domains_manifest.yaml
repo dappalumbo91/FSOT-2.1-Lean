@@ -1782,6 +1782,60 @@ extension_domains:
     lean_module: FSOT.Formal.ToEUnificationSpinePriors
     note: "Tier 48 ToE unity rollup — gap closure + completeness + 12/12 orbital + coupling graph"
 
+  Compactification_Ladder:
+    tier: 49
+    D_eff: 18
+    delta_psi: 0.94
+    recent_hits: 3
+    observed: true
+    formula_branch_override: scaled_S
+    maps_to_lean: [particle, medical, galactic, cosmological, mathematical]
+    build_script: scripts/build_tier_n_compactification_ladder_benchmarks.py
+    manifest: data/compactification_ladder_manifest.yaml
+    benchmark_data: data/compactification_ladder_benchmark.json
+    lean_module: FSOT.Formal.CompactificationLadderPriors
+    note: "Tier 49 — 10 rungs string_quantum→cosmological with empirical benchmark anchors"
+
+  Adjacent_Rung_Coupling:
+    tier: 49
+    D_eff: 17
+    delta_psi: 0.91
+    recent_hits: 3
+    observed: true
+    formula_branch_override: term1.coherence_efficiency
+    maps_to_lean: [particle, medical, galactic, cosmological]
+    build_script: scripts/build_tier_n_compactification_ladder_benchmarks.py
+    manifest: data/compactification_ladder_manifest.yaml
+    benchmark_data: data/adjacent_rung_coupling_benchmark.json
+    lean_module: FSOT.Formal.AdjacentRungCouplingPriors
+    note: "Tier 49 — 9 neighbor-only adjacent-rung fold couplings (MEC-030–038)"
+
+  Fold_Depth_Metrics:
+    tier: 49
+    D_eff: 20
+    delta_psi: 0.96
+    recent_hits: 3
+    observed: true
+    formula_branch_override: raw_S
+    maps_to_lean: [mathematical, particle, cosmological]
+    build_script: scripts/build_tier_n_compactification_ladder_benchmarks.py
+    manifest: data/compactification_ladder_manifest.yaml
+    benchmark_data: data/fold_depth_metrics_benchmark.json
+    lean_module: FSOT.Formal.FoldDepthMetricsPriors
+    note: "Tier 49 — fold depth = divergence_depth + D_eff/Richardson + chaos ceiling"
+
+  Reality_Folding_Spine:
+    tier: 49
+    D_eff: 21
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, particle, cosmological, medical, galactic]
+    build_script: scripts/build_tier_n_compactification_ladder_benchmarks.py
+    benchmark_data: data/reality_folding_spine_benchmark.json
+    lean_module: FSOT.Formal.RealityFoldingSpinePriors
+    note: "Tier 49 rollup — ladder + adjacent couplings + fold metrics + ToE unity spine"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

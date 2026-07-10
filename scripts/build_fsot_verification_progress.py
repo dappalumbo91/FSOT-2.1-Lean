@@ -190,6 +190,10 @@ def build_progress() -> dict:
     orbital_pred_bench = _load_json(ROOT / "data" / "domain_orbital_predictions_benchmark.json")
     med_gal_bridge_bench = _load_json(ROOT / "data" / "medical_galactic_orbital_bridge_benchmark.json")
     toe_unity_bench = _load_json(ROOT / "data" / "toe_unification_spine_benchmark.json")
+    comp_ladder_bench = _load_json(ROOT / "data" / "compactification_ladder_benchmark.json")
+    adjacent_rung_bench = _load_json(ROOT / "data" / "adjacent_rung_coupling_benchmark.json")
+    fold_depth_bench = _load_json(ROOT / "data" / "fold_depth_metrics_benchmark.json")
+    folding_spine_bench = _load_json(ROOT / "data" / "reality_folding_spine_benchmark.json")
     tokenization_smoke_bench = _load_json(ROOT / "data" / "tokenization_smoke_benchmark.json")
     trinary_hw_motif_bench = _load_json(ROOT / "data" / "trinary_hardware_motif_benchmark.json")
     intrinsic_llm_bench = _load_json(ROOT / "data" / "intrinsic_llm_validators_benchmark.json")
@@ -1572,6 +1576,41 @@ def build_progress() -> dict:
                 "FSOT.Formal.MedicalGalacticOrbitalBridgePriors",
             ],
         },
+        {
+            "tier": 49,
+            "name": "Tier 49 — Compactification/folding ladder (10 rungs, adjacent couplings, fold-depth spine)",
+            "status": "complete"
+            if int(comp_ladder_bench.get("rung_count") or 0) >= 10
+            and comp_ladder_bench.get("ladder_status") == "GREEN"
+            and int(adjacent_rung_bench.get("adjacent_pair_count") or 0) >= 9
+            and adjacent_rung_bench.get("coupling_status") == "GREEN"
+            and fold_depth_bench.get("metrics_status") == "GREEN"
+            and folding_spine_bench.get("folding_status") == "GREEN"
+            and mech_bench.get("mechanism_count", 0) >= 39
+            and coupling_bench.get("node_count", 0) >= 178
+            else "pending",
+            "metrics": {
+                "ladder_rung_count": comp_ladder_bench.get("rung_count"),
+                "ladder_status": comp_ladder_bench.get("ladder_status"),
+                "adjacent_pair_count": adjacent_rung_bench.get("adjacent_pair_count"),
+                "adjacent_coupling_status": adjacent_rung_bench.get("coupling_status"),
+                "fold_depth_span": fold_depth_bench.get("fold_depth_span"),
+                "fold_metrics_status": fold_depth_bench.get("metrics_status"),
+                "folding_spine_status": folding_spine_bench.get("folding_status"),
+                "mechanistic_channel_count": mech_bench.get("mechanism_count"),
+                "coupling_node_count": coupling_bench.get("node_count"),
+                "external_cache_root": "G:/FSOT-PublicData/compactification_ladder",
+            },
+            "artifacts": [
+                "data/compactification_ladder_manifest.yaml",
+                "scripts/tier_n_compactification_ladder_lib.py",
+                "scripts/build_tier_n_compactification_ladder_benchmarks.py",
+                "scripts/ingest_compactification_ladder_cache.py",
+                "G:/FSOT-PublicData/compactification_ladder",
+                "FSOT.Formal.RealityFoldingSpinePriors",
+                "FSOT.Formal.CompactificationLadderPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -1598,7 +1637,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 48 ToE unity — cross-scale bridges complete (12/12 orbital), unification spine, external cache on G:/FSOT-PublicData",
+        "current_position": "Tier 49 Compactification ladder — 10 rungs string→cosmo, adjacent couplings, fold-depth spine, external cache on G:/FSOT-PublicData",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

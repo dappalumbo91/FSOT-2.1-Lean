@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:30:48.995283+00:00",
+  "generated_at": "2026-07-10T14:59:39.760103+00:00",
   "domain": "Theory_Completeness_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -58,17 +58,17 @@
       "lab": "theory_completeness_spine_lab",
       "property": "pillar_record_count",
       "name": "fractal",
-      "computed": 144.0,
-      "measured": 144.0,
-      "error_pct": 0.038016537604977654,
+      "computed": 152.0,
+      "measured": 152.0,
+      "error_pct": 0.038016537604977536,
       "source": "Formula_Branching_Fractal"
     },
     {
       "lab": "theory_completeness_spine_lab",
       "property": "pillar_record_count",
       "name": "mechanistic",
-      "computed": 78.0,
-      "measured": 78.0,
+      "computed": 116.0,
+      "measured": 116.0,
       "error_pct": 0.0,
       "source": "Mechanistic_Coupling"
     },
@@ -85,8 +85,8 @@
       "lab": "theory_completeness_spine_lab",
       "property": "domain_spine_attachment_count",
       "name": "all_domains_to_raw_S",
-      "computed": 135.0,
-      "measured": 135.0,
+      "computed": 143.0,
+      "measured": 143.0,
       "error_pct": 0.0,
       "source": "formula_branching_fractal"
     },
@@ -94,8 +94,8 @@
       "lab": "theory_completeness_spine_lab",
       "property": "mechanistic_pair_count",
       "name": "causal_channels",
-      "computed": 13.0,
-      "measured": 13.0,
+      "computed": 37.0,
+      "measured": 37.0,
       "error_pct": 0.0,
       "source": "mechanistic_coupling"
     },
@@ -114,8 +114,8 @@
     "Mechanistic_Coupling",
     "CVE_Codon_Hole_Falsification"
   ],
-  "domain_attachment_count": 135,
-  "mechanism_count": 25,
+  "domain_attachment_count": 143,
+  "mechanism_count": 39,
   "kev_falsification_rate": 0.5,
   "completeness_status": "GREEN",
   "crosswalk_modules": [

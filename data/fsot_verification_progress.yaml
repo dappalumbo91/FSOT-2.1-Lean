@@ -1,16 +1,16 @@
-generated_at: '2026-07-10T14:41:49.213633+00:00'
+generated_at: '2026-07-10T14:59:42.313381+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 209
+  lean_formal_modules: 213
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 46
-  tiers_total: 46
+  tiers_complete: 47
+  tiers_total: 47
   percent_complete: 100.0
-current_position: "Tier 48 ToE unity \u2014 cross-scale bridges complete (12/12 orbital),\
-  \ unification spine, external cache on G:/FSOT-PublicData"
+current_position: "Tier 49 Compactification ladder \u2014 10 rungs string\u2192cosmo,\
+  \ adjacent couplings, fold-depth spine, external cache on G:/FSOT-PublicData"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -25,6 +25,7 @@ tiers:
   artifacts:
   - AIGalacticOrbitalBridgePriors
   - AcousticResonanceMaterialsPriors
+  - AdjacentRungCouplingPriors
   - AdversarialFractalBreakPriors
   - AetherPrimePriors
   - AgricultureAgroecologyGapFillPriors
@@ -55,6 +56,7 @@ tiers:
   - ClinicalMedicineExtensionPriors
   - CodeGenomeStructurePriors
   - CodonPriors
+  - CompactificationLadderPriors
   - ComputationalReasoningPriors
   - ConsciousnessGalacticOrbitalBridgePriors
   - CosmologyAnomaliesPriors
@@ -91,6 +93,7 @@ tiers:
   - ExternalOSSCodeGenomePriors
   - FinanceMarketsExtensionPriors
   - FluidDynamicsGapFillPriors
+  - FoldDepthMetricsPriors
   - FoodMicrobiologyGapFillPriors
   - FormulaBranchingFractalPriors
   - FormulaCorpusClosurePriors
@@ -183,6 +186,7 @@ tiers:
   - QuantumMechanicsGapFillPriors
   - QuantumOpticsGapFillPriors
   - RcsbPdbStructuresPriors
+  - RealityFoldingSpinePriors
   - RoboticsControlSystemsExtensionPriors
   - RustLeanBridgePriors
   - SecureSoftwareEngineeringPriors
@@ -892,8 +896,8 @@ tiers:
     \ + space weather split"
   status: complete
   metrics:
-    coupling_node_count: 175
-    coupling_edge_count: 5134
+    coupling_node_count: 179
+    coupling_edge_count: 5551
     coupling_pooled_median_error_pct: 0.0
     formula_closure_records: 123
     formula_closure_strict_empirical: 7941
@@ -924,7 +928,7 @@ tiers:
     tier_h_depth_code_genome_records: 205
     zero_day_risk_tier: RED
     zero_day_hole_count: 82
-    coupling_node_count: 175
+    coupling_node_count: 179
     external_cache_root: G:/FSOT-PublicData/cybersecurity
   artifacts:
   - scripts/ingest_cybersecurity_public_data.py
@@ -952,7 +956,7 @@ tiers:
     linguistics_bridge_count: 25
     code_genome_bridge_count: 13
     oss_refresh_cadence_days: 7
-    coupling_node_count: 175
+    coupling_node_count: 179
     external_cache_root: G:/FSOT-PublicData/github_oss
   artifacts:
   - scripts/ingest_github_oss_code_genome.py
@@ -973,14 +977,14 @@ tiers:
     \ coupling + CVE falsification)"
   status: complete
   metrics:
-    formula_spine_domain_attachments: 139
+    formula_spine_domain_attachments: 143
     corpus_strict_empirical_count: 7941
-    mechanistic_channel_count: 29
-    validated_mechanism_pairs: 23
+    mechanistic_channel_count: 39
+    validated_mechanism_pairs: 37
     kev_falsification_records: 1635
     cwe_codon_overlap_rate: 0.5
     theory_completeness_status: GREEN
-    coupling_node_count: 175
+    coupling_node_count: 179
   artifacts:
   - data/fsot_formula_spine.yaml
   - data/mechanistic_coupling_manifest.yaml
@@ -1002,7 +1006,7 @@ tiers:
     quirkmod_derived_count: 67
     adversarial_detection_rate: 1.0
     gap_closure_status: GREEN
-    coupling_node_count: 175
+    coupling_node_count: 179
   artifacts:
   - data/fractal_constant_recursion.yaml
   - data/preregistered_predictions_manifest.yaml
@@ -1027,8 +1031,8 @@ tiers:
     orbital_bridge_pair_count: 36
     filled_orbital_predictions: 12
     orbital_gap_fill_status: GREEN
-    mechanistic_channel_count: 29
-    coupling_node_count: 175
+    mechanistic_channel_count: 39
+    coupling_node_count: 179
   artifacts:
   - data/orbital_gap_fill_manifest.yaml
   - data/domain_orbital_prediction_report.json
@@ -1047,8 +1051,8 @@ tiers:
     orbital_prediction_total: 12
     orbital_gap_fill_status: GREEN
     toe_unification_status: GREEN
-    coupling_node_count: 175
-    mechanistic_channel_count: 29
+    coupling_node_count: 179
+    mechanistic_channel_count: 39
     external_cache_root: G:/FSOT-PublicData/cross_scale_bridges
   artifacts:
   - data/orbital_bridge_scientific_framing.yaml
@@ -1060,6 +1064,29 @@ tiers:
   - G:/FSOT-PublicData/cross_scale_bridges
   - FSOT.Formal.ToEUnificationSpinePriors
   - FSOT.Formal.MedicalGalacticOrbitalBridgePriors
+- tier: 49
+  name: "Tier 49 \u2014 Compactification/folding ladder (10 rungs, adjacent couplings,\
+    \ fold-depth spine)"
+  status: complete
+  metrics:
+    ladder_rung_count: 10
+    ladder_status: GREEN
+    adjacent_pair_count: 9
+    adjacent_coupling_status: GREEN
+    fold_depth_span: 2.7194
+    fold_metrics_status: GREEN
+    folding_spine_status: GREEN
+    mechanistic_channel_count: 39
+    coupling_node_count: 179
+    external_cache_root: G:/FSOT-PublicData/compactification_ladder
+  artifacts:
+  - data/compactification_ladder_manifest.yaml
+  - scripts/tier_n_compactification_ladder_lib.py
+  - scripts/build_tier_n_compactification_ladder_benchmarks.py
+  - scripts/ingest_compactification_ladder_cache.py
+  - G:/FSOT-PublicData/compactification_ladder
+  - FSOT.Formal.RealityFoldingSpinePriors
+  - FSOT.Formal.CompactificationLadderPriors
 next_steps:
 - Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens
 - Knowledge-base per-formula portable bundle

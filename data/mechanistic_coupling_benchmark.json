@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:40:59.876357+00:00",
+  "generated_at": "2026-07-10T14:59:21.175459+00:00",
   "domain": "Mechanistic_Coupling",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -13,8 +13,8 @@
     "consciousness"
   ],
   "D_eff": 17,
-  "record_count": 92,
-  "observable_count": 92,
+  "record_count": 116,
+  "observable_count": 116,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
@@ -39,7 +39,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 92
+      "observable_count": 116
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +48,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 92
+      "observable_count": 116
     }
   ],
   "material_records": [
@@ -431,6 +431,136 @@
     },
     {
       "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-030",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "string_to_nuclear_adjacent_fold",
+      "formula_branch": "scaled_S",
+      "source_domain": "Higgs_Mass",
+      "target_domain": "Particle_Physics"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-031",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "nuclear_to_atomic_adjacent_fold",
+      "formula_branch": "term3.chaos_factor",
+      "source_domain": "Particle_Physics",
+      "target_domain": "Atomic_Physics"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-032",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "atomic_to_molecular_adjacent_fold",
+      "formula_branch": "term2.trend_bias",
+      "source_domain": "Atomic_Physics",
+      "target_domain": "Materials_Species_Bridge"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-033",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "molecular_to_cellular_adjacent_fold",
+      "formula_branch": "term1.growth_term",
+      "source_domain": "Materials_Species_Bridge",
+      "target_domain": "Synthetic_Biology"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-034",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "cellular_to_organismic_adjacent_fold",
+      "formula_branch": "term1.growth_term",
+      "source_domain": "Synthetic_Biology",
+      "target_domain": "Immunology"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-035",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "organismic_to_planetary_adjacent_fold",
+      "formula_branch": "term2.scale",
+      "source_domain": "Immunology",
+      "target_domain": "Planetary_Structure"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-036",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "planetary_to_stellar_adjacent_fold",
+      "formula_branch": "term3.chaos_factor",
+      "source_domain": "Planetary_Structure",
+      "target_domain": "Breakthrough_Discoveries_2024_2026"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-037",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "stellar_to_galactic_adjacent_fold",
+      "formula_branch": "term1.coherence_efficiency",
+      "source_domain": "Breakthrough_Discoveries_2024_2026",
+      "target_domain": "Climate_Science"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-038",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "galactic_to_cosmological_adjacent_fold",
+      "formula_branch": "scaled_S",
+      "source_domain": "Climate_Science",
+      "target_domain": "Cosmology_Extended"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-039",
+      "computed": 4.000295,
+      "measured": 4.0,
+      "error_pct": 0.007383655181691928,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "folding_ladder_toe_unity_rollup",
+      "formula_branch": "raw_S",
+      "source_domain": "Reality_Folding_Spine",
+      "target_domain": "ToE_Unification_Spine"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
       "property": "mechanism_node_pair_validated",
       "name": "Plasma_Physics__Magnetosphere",
       "computed": 1.0,
@@ -658,6 +788,146 @@
       "error_pct": 0.0,
       "source": "domain_coupling_simulation",
       "mechanism": "orbital_prediction_fractal_closure"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Medical_Galactic_Orbital_Bridge__Immunology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "cross_scale_biochemical_planetary_coherence"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "AI_Galactic_Orbital_Bridge__Cosmology_Extended",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "cross_scale_computational_cosmology_coherence"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Neural_Galactic_Orbital_Bridge__Planetary_Structure",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "cross_scale_neural_planetary_coherence"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "ToE_Unification_Spine__ToE_Gap_Closure_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "toe_unity_single_architecture_rollup"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Higgs_Mass__Particle_Physics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "string_to_nuclear_adjacent_fold"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Particle_Physics__Atomic_Physics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "nuclear_to_atomic_adjacent_fold"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Atomic_Physics__Materials_Species_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "atomic_to_molecular_adjacent_fold"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Materials_Species_Bridge__Synthetic_Biology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "molecular_to_cellular_adjacent_fold"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Synthetic_Biology__Immunology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "cellular_to_organismic_adjacent_fold"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Immunology__Planetary_Structure",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "organismic_to_planetary_adjacent_fold"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Planetary_Structure__Breakthrough_Discoveries_2024_2026",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "planetary_to_stellar_adjacent_fold"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Breakthrough_Discoveries_2024_2026__Climate_Science",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "stellar_to_galactic_adjacent_fold"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Climate_Science__Cosmology_Extended",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "galactic_to_cosmological_adjacent_fold"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Reality_Folding_Spine__ToE_Unification_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "folding_ladder_toe_unity_rollup"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -1042,7 +1312,7 @@
     {
       "lab": "mechanistic_coupling_lab",
       "property": "affinity_edge_error",
-      "name": "Biochemistry__Immunology__medical",
+      "name": "Atomic_Physics__ToE_Unification_Spine__particle",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -1052,7 +1322,7 @@
     {
       "lab": "mechanistic_coupling_lab",
       "property": "affinity_edge_error",
-      "name": "Biochemistry__Pharmacology__medical",
+      "name": "Atomic_Physics__Compactification_Ladder__particle",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
@@ -1060,8 +1330,8 @@
       "edge_type": "maps_to_lean_overlap"
     }
   ],
-  "mechanism_count": 29,
-  "validated_mechanism_pairs": 23,
+  "mechanism_count": 39,
+  "validated_mechanism_pairs": 37,
   "causal_manifest": [
     {
       "id": "MEC-001",
@@ -1379,6 +1649,116 @@
         "mathematical",
         "particle",
         "consciousness"
+      ],
+      "formula_branch": "raw_S"
+    },
+    {
+      "id": "MEC-030",
+      "source": "Higgs_Mass",
+      "target": "Particle_Physics",
+      "mechanism": "string_to_nuclear_adjacent_fold",
+      "lean_tags": [
+        "particle",
+        "higgs"
+      ],
+      "formula_branch": "scaled_S"
+    },
+    {
+      "id": "MEC-031",
+      "source": "Particle_Physics",
+      "target": "Atomic_Physics",
+      "mechanism": "nuclear_to_atomic_adjacent_fold",
+      "lean_tags": [
+        "particle"
+      ],
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "id": "MEC-032",
+      "source": "Atomic_Physics",
+      "target": "Materials_Species_Bridge",
+      "mechanism": "atomic_to_molecular_adjacent_fold",
+      "lean_tags": [
+        "particle",
+        "material"
+      ],
+      "formula_branch": "term2.trend_bias"
+    },
+    {
+      "id": "MEC-033",
+      "source": "Materials_Species_Bridge",
+      "target": "Synthetic_Biology",
+      "mechanism": "molecular_to_cellular_adjacent_fold",
+      "lean_tags": [
+        "biological",
+        "medical"
+      ],
+      "formula_branch": "term1.growth_term"
+    },
+    {
+      "id": "MEC-034",
+      "source": "Synthetic_Biology",
+      "target": "Immunology",
+      "mechanism": "cellular_to_organismic_adjacent_fold",
+      "lean_tags": [
+        "biological",
+        "medical"
+      ],
+      "formula_branch": "term1.growth_term"
+    },
+    {
+      "id": "MEC-035",
+      "source": "Immunology",
+      "target": "Planetary_Structure",
+      "mechanism": "organismic_to_planetary_adjacent_fold",
+      "lean_tags": [
+        "medical",
+        "galactic"
+      ],
+      "formula_branch": "term2.scale"
+    },
+    {
+      "id": "MEC-036",
+      "source": "Planetary_Structure",
+      "target": "Breakthrough_Discoveries_2024_2026",
+      "mechanism": "planetary_to_stellar_adjacent_fold",
+      "lean_tags": [
+        "galactic",
+        "energy"
+      ],
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "id": "MEC-037",
+      "source": "Breakthrough_Discoveries_2024_2026",
+      "target": "Climate_Science",
+      "mechanism": "stellar_to_galactic_adjacent_fold",
+      "lean_tags": [
+        "energy",
+        "galactic"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-038",
+      "source": "Climate_Science",
+      "target": "Cosmology_Extended",
+      "mechanism": "galactic_to_cosmological_adjacent_fold",
+      "lean_tags": [
+        "galactic",
+        "cosmological"
+      ],
+      "formula_branch": "scaled_S"
+    },
+    {
+      "id": "MEC-039",
+      "source": "Reality_Folding_Spine",
+      "target": "ToE_Unification_Spine",
+      "mechanism": "folding_ladder_toe_unity_rollup",
+      "lean_tags": [
+        "mathematical",
+        "particle",
+        "cosmological"
       ],
       "formula_branch": "raw_S"
     }

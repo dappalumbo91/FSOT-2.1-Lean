@@ -214,6 +214,18 @@ bundled:
       - nasa_exoplanet_sample.json
       - manifest.json
 
+  compactification_ladder:
+    path: data/compactification_ladder_manifest.yaml
+    role: 10-rung folding ladder index + adjacent coupling + fold-depth summary on external cache
+    ingest_script: scripts/ingest_compactification_ladder_cache.py
+    env_override: FSOT_EXTERNAL_DATA_ROOT
+    external_cache_root: G:/FSOT-PublicData/compactification_ladder
+    external_files:
+      - compactification_ladder_index.json
+      - adjacent_rung_coupling_index.json
+      - fold_depth_metrics_summary.json
+      - manifest.json
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification
