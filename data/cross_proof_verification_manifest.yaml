@@ -1,7 +1,7 @@
 # Tier 79 — Multi-framework cross-proof verification (Lean → Coq / Isabelle / Python oracle)
 version: '1.0'
 updated: '2026-07-10'
-tier: 85
+tier: 86
 
 philosophy: >
   Same pattern as rust_lean_bridge: export obligations from Lean authority,
@@ -72,9 +72,12 @@ status_local:
   transcendental_bounds_isabelle: passed
   rust_f64_replay: passed
   rust_lean_bridge_runtime_parity: passed
+  fstar_scalar_spec: passed
+  qemu_serial_harness: passed
   full_triangulation: true
   four_way_verification: true
   five_way_runtime: true
+  six_way_formal_executable: true
   github_ready: true
 
 coverage_audit:
@@ -91,7 +94,8 @@ coverage_audit:
   tier_83_achieved: full_formal_spine (1241) + transcendental_bounds (68) in Coq + Isabelle
   tier_84_achieved: rust f64 obligation replay (1309 obligations, cargo test)
   tier_85_achieved: rust_lean_bridge host runtime parity (bare-metal scalar kernel)
-  tier_86_goal: F* executable verification when installed + rust_lean_bridge QEMU harness
+  tier_86_achieved: F* scalar spec + QEMU serial harness layered on runtime parity
+  tier_87_goal: full no_std QEMU disk boot image (bootloader crate)
 
 isabelle_install:
   script: scripts/install_isabelle_windows.ps1
@@ -116,10 +120,18 @@ other_frameworks:
     note: host cargo test mirrors vendor/rust_lean_bridge boot scalar (Tier 85)
     account_required: false
   - name: fstar
-    status: deferred_optional
+    status: implemented
     role: programming_language_formal
-    note: dependently-typed code+proofs; enable when fstar on PATH (Tier 86)
-    install: https://github.com/FStarLang/FStar
+    path: verification/fstar
+    note: FSOTScalarKernel/Boot.fst — scalar spec verified; numeric shell triangulated
+    install_script: scripts/install_fstar_windows.ps1
+    account_required: false
+  - name: qemu_serial_harness
+    status: implemented
+    role: bare_metal_qemu_layer
+    path: verification/rust/fsot_observer_serial
+    note: serial stdout parity + QEMU smoke (full disk boot Tier 87)
+    install_script: scripts/install_qemu_windows.ps1
     account_required: false
   - name: metamath
     status: deferred

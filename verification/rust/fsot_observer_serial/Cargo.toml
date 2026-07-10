@@ -1,0 +1,8 @@
+[package]
+name = "fsot_observer_serial"
+version = "0.1.0"
+edition = "2021"
+description = "FSOT Tier 86 — serial stdout harness for bare-metal QEMU parity"
+
+[dependencies]
+fsot_scalar_kernel = { path = "../fsot_scalar_kernel" }

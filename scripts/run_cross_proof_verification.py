@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Tier 85 wide cross-proof verification runner.
+Tier 86 wide cross-proof verification runner.
 
 Layers:
   1. Export obligations from full FSOT/Formal corpus
@@ -12,7 +12,8 @@ Layers:
   7. Transcendental bounds gap inventory (pi/e lemmas deferred from float export)
   8. Rust f64 executable obligation replay (fourth check)
   9. rust_lean_bridge host runtime parity (bare-metal scalar kernel)
-  10. F* executable check (optional; skipped when fstar not installed)
+  10. F* programming-language formal verification (scalar spec)
+  11. QEMU bare-metal serial harness (stdout parity + QEMU smoke)
 """
 
 from __future__ import annotations
@@ -28,6 +29,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
+from fstar_verification_lib import run_fstar_verify  # noqa: E402
 from cross_proof_lib import (  # noqa: E402
     gen_isabelle_root,
     isabelle_chunk_session_name,
@@ -385,31 +387,26 @@ def run_rust_lean_bridge_parity() -> dict:
 
 
 def run_fstar_check() -> dict:
-    fstar = shutil.which("fstar") or shutil.which("fstar.exe")
-    entry = FSTAR_DIR / "FSOTScalarBoot.fst"
-    if not fstar:
-        return {
-            "status": "skipped",
-            "reason": "fstar not on PATH",
-            "note": "Install F* to enable programming-language formal check (Tier 85 optional).",
-        }
-    if not entry.exists():
-        return {"status": "skipped", "reason": "no verification/fstar/FSOTScalarBoot.fst entry module"}
+    return run_fstar_verify()
+
+
+def run_qemu_harness() -> dict:
     try:
         r = subprocess.run(
-            [fstar, "--include", str(FSTAR_DIR), str(entry)],
+            [sys.executable, str(ROOT / "scripts" / "run_rust_lean_bridge_qemu_harness.py")],
             cwd=str(ROOT),
             capture_output=True,
             text=True,
-            timeout=300,
+            timeout=600,
         )
-        out = (r.stdout or "") + (r.stderr or "")
+        report_path = ROOT / "data" / "rust_lean_bridge_qemu_harness_report.json"
+        doc = json.loads(report_path.read_text(encoding="utf-8")) if report_path.exists() else {}
         return {
             "status": "passed" if r.returncode == 0 else "failed",
-            "tool": fstar,
-            "entry": str(entry),
+            "serial_status": (doc.get("serial_harness") or {}).get("status"),
+            "qemu_status": (doc.get("qemu") or {}).get("status"),
             "returncode": r.returncode,
-            "stderr_tail": out[-2000:],
+            "stderr_tail": ((r.stdout or "") + (r.stderr or ""))[-2000:],
         }
     except Exception as e:
         return {"status": "failed", "reason": str(e)}
@@ -501,7 +498,22 @@ def main() -> int:
         (ROOT / "data" / "cross_refinement_rust_lean_bridge_report.json").read_text(encoding="utf-8")
     )
     bridge_refinement_ok = bridge_refinement.get("overall_ok", False)
+
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "run_fstar_verification.py")],
+        cwd=str(ROOT),
+    )
     fstar = run_fstar_check()
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "cross_refinement_fstar_audit.py")],
+        cwd=str(ROOT),
+    )
+    fstar_refinement = json.loads(
+        (ROOT / "data" / "cross_refinement_fstar_report.json").read_text(encoding="utf-8")
+    )
+    fstar_refinement_ok = fstar_refinement.get("overall_ok", False)
+
+    qemu_harness = run_qemu_harness()
 
     lean_conn_ok = subprocess.run(
         [
@@ -519,7 +531,7 @@ def main() -> int:
 
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "85",
+        "tier": "86",
         "connective_spine": {
             "obligation_count": connective["obligation_count"],
             "python_decimal": {"status": "passed" if py_conn_ok else "failed"},
@@ -587,6 +599,11 @@ def main() -> int:
                 "checks": bridge_refinement.get("checks"),
             },
             "fstar": fstar,
+            "fstar_refinement": {
+                "status": "passed" if fstar_refinement_ok else "failed",
+                "checks": fstar_refinement.get("checks"),
+            },
+            "qemu_harness": qemu_harness,
         },
         "overall_ok": py_ok
             and lean_conn_ok
@@ -598,7 +615,9 @@ def main() -> int:
             and rust_refinement_ok
             and bridge_parity.get("status") == "passed"
             and bridge_refinement_ok
-            and fstar.get("status") in ("passed", "skipped"),
+            and fstar.get("status") == "passed"
+            and fstar_refinement_ok
+            and qemu_harness.get("status") == "passed",
         "github_ready": len(margin_violations) == 0
             and py_ok
             and lean_conn_ok
@@ -624,9 +643,14 @@ def main() -> int:
         "five_way_runtime": py_ok
             and rust.get("status") == "passed"
             and bridge_parity.get("status") == "passed",
+        "six_way_formal_executable": py_ok
+            and rust.get("status") == "passed"
+            and bridge_parity.get("status") == "passed"
+            and fstar.get("status") == "passed"
+            and qemu_harness.get("status") == "passed",
         "note": (
-            "Tier 85: four-way proof assistants (Lean+Coq+Isabelle+Rust replay) plus "
-            "rust_lean_bridge bare-metal scalar runtime parity; F* optional when installed."
+            "Tier 86: Lean+Coq+Isabelle+Rust replay+rust_lean_bridge parity+F* scalar spec "
+            "+ QEMU serial harness."
         ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
@@ -636,7 +660,7 @@ def main() -> int:
         cwd=str(ROOT),
     )
 
-    print("CROSS-PROOF VERIFICATION (Tier 85 wide)")
+    print("CROSS-PROOF VERIFICATION (Tier 86 wide)")
     print(f"  connective obligations: {connective['obligation_count']}")
     print(f"  full formal obligations: {formal['obligation_count']} ({formal.get('modules_exported')} modules)")
     print(f"  provable: {len(provable_formal)} | margin violations: {len(margin_violations)}")
@@ -667,8 +691,14 @@ def main() -> int:
     )
     print(f"  rust_lean_bridge_refinement: {'PASS' if bridge_refinement_ok else 'FAIL'}")
     print(f"  fstar: {fstar.get('status')}")
+    print(f"  fstar_refinement: {'PASS' if fstar_refinement_ok else 'FAIL'}")
+    print(
+        f"  qemu_harness: {qemu_harness.get('status')} "
+        f"(serial={qemu_harness.get('serial_status')}, qemu={qemu_harness.get('qemu_status')})"
+    )
     print(f"  four_way_verification: {report.get('four_way_verification')}")
     print(f"  five_way_runtime: {report.get('five_way_runtime')}")
+    print(f"  six_way_formal_executable: {report.get('six_way_formal_executable')}")
     print(f"  overall_ok: {report['overall_ok']}")
     print(f"  github_ready: {report['github_ready']}")
     print(f"Wrote {REPORT}")

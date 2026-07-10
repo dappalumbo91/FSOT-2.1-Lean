@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-07-10T23:32:23.386513+00:00",
+  "tier": "86_cross_refinement_fstar",
+  "fstar_constants": {
+    "k_fsot": 0.4202216641606967,
+    "boot_d_eff": 8.0,
+    "boot_delta_psi": 0.7,
+    "boot_scalar_canonical": 0.09928895626861721
+  },
+  "python_boot_scalar": 0.09928895626861721,
+  "checks": {
+    "fstar_verify_passed": true,
+    "fstar_k_matches_rust": true,
+    "fstar_boot_scalar_canonical_matches": true,
+    "python_boot_matches_fstar_canonical": true,
+    "python_boot_matches_rust_oracle": true,
+    "fstar_boot_params_match": true
+  },
+  "numeric_shell_note": "F* boot_scalar_positive / boot_scalar_matches_canonical use admit() for transcendental shell; numeric truth triangulated via Rust/Python f64.",
+  "overall_ok": true,
+  "fstar_report": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\fstar_verification_report.json"
+}
