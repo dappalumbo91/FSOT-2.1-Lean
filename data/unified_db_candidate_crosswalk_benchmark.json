@@ -1,0 +1,515 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:38:30.496677+00:00",
+  "domain": "Unified_DB_Candidate_Crosswalk",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "fsot_aggregate_unified_db_benchmark.json",
+    "formula_corpus_closure_benchmark.json",
+    "prediction_rederivation_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "particle",
+    "medical",
+    "ai"
+  ],
+  "D_eff": 17,
+  "record_count": 46,
+  "observable_count": 46,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "unified_db_crosswalk": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Desktop aggregate DB inventory"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_candidate_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 46
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "candidate_relay",
+      "name": "unified_db_crosswalk",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 28
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "panel_pooled_median",
+      "name": "fsot_aggregate_unified_db",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 8,
+      "eval_kind": "aggregate_bridge"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "row_count",
+      "name": "fsot_aggregate_unified_db",
+      "computed": 1532.0,
+      "measured": 1532.0,
+      "error_pct": 0.0,
+      "source_panel": "fsot_aggregate_unified_db",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "type_count_seed",
+      "name": "fsot_aggregate_unified_db",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "source_panel": "fsot_aggregate_unified_db",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "type_count_layer_1",
+      "name": "fsot_aggregate_unified_db",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "source_panel": "fsot_aggregate_unified_db",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "type_count_layer_2",
+      "name": "fsot_aggregate_unified_db",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "source_panel": "fsot_aggregate_unified_db",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "type_count_threshold",
+      "name": "fsot_aggregate_unified_db",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "source_panel": "fsot_aggregate_unified_db",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "type_count_domain_metadata",
+      "name": "fsot_aggregate_unified_db",
+      "computed": 35.0,
+      "measured": 35.0,
+      "error_pct": 0.0,
+      "source_panel": "fsot_aggregate_unified_db",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "smiles_derivation_section_count",
+      "name": "fsot_aggregate_unified_db",
+      "computed": 108.0,
+      "measured": 107.0,
+      "error_pct": 0.9345794392523363,
+      "source_panel": "fsot_aggregate_unified_db",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "distinct_type_count",
+      "name": "fsot_aggregate_unified_db",
+      "computed": 113.0,
+      "measured": 113.0,
+      "error_pct": 0.0,
+      "source_panel": "fsot_aggregate_unified_db",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "panel_pooled_median",
+      "name": "formula_corpus_closure",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 123,
+      "eval_kind": "aggregate_bridge"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "strict_empirical_count",
+      "name": "strict_empirical_jsonl",
+      "computed": 7941.0,
+      "measured": 7941.0,
+      "error_pct": 0.0,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "lean_priors_modules",
+      "name": "formal_priors_count",
+      "computed": 163.0,
+      "measured": 163.0,
+      "error_pct": 0.0,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "extension_bridge_domains",
+      "name": "benchmark_json_domains",
+      "computed": 127.0,
+      "measured": 127.0,
+      "error_pct": 0.0,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "domain_benchmark_records",
+      "name": "Agriculture_Agroecology",
+      "computed": 276.0,
+      "measured": 276.0,
+      "error_pct": 0.018019024892929635,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "domain_benchmark_records",
+      "name": "Anthropology",
+      "computed": 160.0,
+      "measured": 160.0,
+      "error_pct": 0.019504399572476606,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "domain_benchmark_records",
+      "name": "Architecture_Building_Science",
+      "computed": 83.0,
+      "measured": 83.0,
+      "error_pct": 0.0,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "domain_benchmark_records",
+      "name": "arxiv_primitives_v14_benchmark",
+      "computed": 14.0,
+      "measured": 14.0,
+      "error_pct": 0.0,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "domain_benchmark_records",
+      "name": "Atmospheric_Physics",
+      "computed": 107.0,
+      "measured": 107.0,
+      "error_pct": 0.0,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "domain_benchmark_records",
+      "name": "Atomic_Physics",
+      "computed": 80.0,
+      "measured": 80.0,
+      "error_pct": 0.0009504134401195552,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "domain_benchmark_records",
+      "name": "bibliography_lean_corpus_benchmark",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "panel_pooled_median",
+      "name": "prediction_rederivation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 10,
+      "eval_kind": "aggregate_bridge"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "total_unique_predictions",
+      "name": "prediction_rederivation",
+      "computed": 66.0,
+      "measured": 66.0,
+      "error_pct": 0.0,
+      "source_panel": "prediction_rederivation",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "category_a_direct_engine",
+      "name": "prediction_rederivation",
+      "computed": 15.0,
+      "measured": 15.0,
+      "error_pct": 0.0,
+      "source_panel": "prediction_rederivation",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "category_b_derived",
+      "name": "prediction_rederivation",
+      "computed": 51.0,
+      "measured": 51.0,
+      "error_pct": 0.0,
+      "source_panel": "prediction_rederivation",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "confirmed_by_observation",
+      "name": "prediction_rederivation",
+      "computed": 11.0,
+      "measured": 11.0,
+      "error_pct": 0.0,
+      "source_panel": "prediction_rederivation",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "computable_error_pairs",
+      "name": "prediction_rederivation",
+      "computed": 18.0,
+      "measured": 18.0,
+      "error_pct": 0.0,
+      "source_panel": "prediction_rederivation",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "stabilized_improved_or_matched",
+      "name": "prediction_rederivation",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "source_panel": "prediction_rederivation",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "stabilized_improvement_rate_pct",
+      "name": "prediction_rederivation",
+      "computed": 72.2,
+      "measured": 72.2,
+      "error_pct": 0.0,
+      "source_panel": "prediction_rederivation",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "free_parameters_zero",
+      "name": "prediction_rederivation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "prediction_rederivation",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "dwarf_core_radius_resolved",
+      "name": "prediction_rederivation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "prediction_rederivation",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "dwarf_core_radius_error_pct",
+      "name": "prediction_rederivation",
+      "computed": 0.33,
+      "measured": 0.33,
+      "error_pct": 0.0,
+      "source_panel": "prediction_rederivation",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "Domain Metadata",
+      "computed": 35.0,
+      "measured": 35.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "Layer 1",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "Layer 2",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a71 Foundation)",
+      "computed": 68.0,
+      "measured": 68.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a710 \u0394G\u00b0f)",
+      "computed": 11.0,
+      "measured": 11.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a7100 Solvatochromic E_T(30))",
+      "computed": 14.0,
+      "measured": 14.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a7101 Atomization \u0394H_at)",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a7102 Piezoelectric d\u2083\u2083)",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a7103 Thermoelectric ZT)",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a7104 Molar Volume V_m)",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a7105 Autoignition T)",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a7106 Isotope Frac \u2030)",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a7107 Electrode Ext E\u00b0)",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a711 IE\u2082)",
+      "computed": 15.0,
+      "measured": 15.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "aggregate_type_count",
+      "name": "SMILES Derivation (\u00a712 Cp\u00b0)",
+      "computed": 14.0,
+      "measured": 14.0,
+      "error_pct": 0.0,
+      "eval_kind": "inventory_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.9345794392523363,
+    "classifier_count": 5,
+    "classifier_correct": 5,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5
+}

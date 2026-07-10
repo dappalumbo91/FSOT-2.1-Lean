@@ -1,0 +1,215 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:38:30.192103+00:00",
+  "domain": "OpenNeuro_Full_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\live_cache\\tier68\\openneuro_full_cache.json",
+    "vendor/public_data/consciousness/openneuro_summary.json"
+  ],
+  "maps_to_lean": [
+    "neural",
+    "consciousness",
+    "ai"
+  ],
+  "D_eff": 14,
+  "record_count": 15,
+  "observable_count": 15,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "openneuro_full": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "OpenNeuro EEG/MRI catalog"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_dataset_anchor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 15
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "dataset_anchor",
+      "name": "openneuro_full",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 1
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_count",
+      "name": "openneuro_eeg_index",
+      "computed": 55.0,
+      "measured": 55.0,
+      "error_pct": 0.0,
+      "eval_kind": "catalog_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "mri_dataset_count",
+      "name": "openneuro_mri_index",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "eval_kind": "catalog_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds001785",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Perithreshold Tactile detection task with confidence",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds001787",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "EEG meditation study",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds001810",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "EEG study of the attentional blink; before, during, and after transcranial Direct Current Stimulation (tDCS)",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds001849",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "RS_TMSEEG_Data",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds001971",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Audiocue walking study",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002034",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Real-time EEG feedback on alpha power lateralization leads to behavioral improvements in a covert attention task",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002094",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Single-pulse open-loop TMS-EEG dataset",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002158",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Simultaneous eeg-fmri for a speeded discrimination task with confidence",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002181",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "CRYPTO and PROVIDE EEG Baseline Data",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002218",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "Auditory and Visual Rhythm Omission EEG",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002336",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "An open access, multi-modal human neuroimaging dataset for data integration: simultaneous EEG and MRI acquisition during a motor imagery neurofeedback task: XP1",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "eeg_dataset_id",
+      "name": "ds002338",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "dataset_name": "An open access, multi-modal human neuroimaging dataset for data integration: simultaneous EEG and MRI acquisition during a motor imagery neurofeedback task: XP2",
+      "eval_kind": "dataset_anchor"
+    },
+    {
+      "lab": "openneuro_full_panel_lab",
+      "property": "neuroscience_scalar",
+      "name": "fsot_Neuroscience",
+      "computed": 0.514362,
+      "measured": 0.514362,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 12,
+    "classifier_correct": 12,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

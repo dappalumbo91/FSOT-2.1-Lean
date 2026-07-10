@@ -1,8 +1,8 @@
-generated_at: '2026-07-10T18:32:50.100947+00:00'
+generated_at: '2026-07-10T18:39:09.182861+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 265
+  lean_formal_modules: 280
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: false
@@ -42,6 +42,7 @@ tiers:
   - BiophysicsPublicPanelPriors
   - BlackHoleThesisPriors
   - BotanyExtensionPriors
+  - BoundaryPartitionTighteningPriors
   - BrainPriors
   - BreakthroughDiscoveries20242026Priors
   - BubbleBleedPriors
@@ -113,7 +114,9 @@ tiers:
   - FormulaCorpusClosurePriors
   - FormulaCorpusCncPriors
   - FormulaCorpusPriors
+  - FormulaPrecisionSpinePriors
   - FractalConstantRecursionPriors
+  - FsotAggregateOrganizedPanelPriors
   - FsotAggregateUnifiedDbPriors
   - FuelCandidatePreregScaffoldPriors
   - FuelPriors
@@ -139,6 +142,7 @@ tiers:
   - IGEMSyntheticBiologyPriors
   - ImmunologyPriors
   - InformationTheoryPublicPanelPriors
+  - InitiationTransformationArchetypePriors
   - IntelligenceCompressionPriors
   - InteractiveMediaPreregScaffoldPriors
   - InterdisciplinarySpineCrosswalkPriors
@@ -149,6 +153,7 @@ tiers:
   - LawPolicyExtensionPriors
   - LinguisticsFormalPriors
   - LinguisticsPriors
+  - LiveIngestSpinePriors
   - MagicCirclePriors
   - MagneticStringPriors
   - MagnetosphereExtendedPriors
@@ -160,6 +165,7 @@ tiers:
   - MaterialPropertyVerificationScaffoldPriors
   - MaterialsEngineeringPriors
   - MaterialsGenomeCrosswalkPriors
+  - MaterialsProjectLivePanelPriors
   - MaterialsSpeciesBridgePriors
   - MathGeneratorAirfoilRmsePriors
   - MathGeneratorBenchmarkFormulaEvalPriors
@@ -191,6 +197,7 @@ tiers:
   - OceanographyGapFillPriors
   - OmniTheoryGenesisPriors
   - OncologyPriors
+  - OpenNeuroFullPanelPriors
   - OpenalexCitationGraphPriors
   - OrbitalMechanicsPriors
   - PaleoclimateExtensionPriors
@@ -207,12 +214,15 @@ tiers:
   - PlasmaPhysicsPriors
   - PortableCloneVerifyPriors
   - PredictionRederivationPriors
+  - PreregisteredOutcomeTrackingPriors
   - PreregisteredPredictionsPriors
   - PreregisteredPredictionsVerificationScaffoldPriors
   - ProgrammingLanguageLawsPriors
   - ProofCarryingCodeGenomePriors
+  - ProofLedgerClosureSpinePriors
   - ProteinPriors
   - PsychologyGapFillPriors
+  - PubChemLiveDeepPriors
   - PubChemStabilityPanelPriors
   - PubchemCompoundPropertiesPriors
   - PublishedFuelPropertyPanelPriors
@@ -252,10 +262,12 @@ tiers:
   - SymbolicArchetypePanelPriors
   - SyntheticBiologyPriors
   - TectonicsPriors
+  - Term3AcousticBleedDepthPriors
   - TheoryCompletenessSpinePriors
   - ThesisSimulationPriors
   - TimeDomainCrosswalkPriors
   - TimeEmergenceSimulationPriors
+  - ToEClaimCertificateBundlePriors
   - ToEGapClosureSpinePriors
   - ToEUnificationSpinePriors
   - TokenizationSmokePriors
@@ -267,10 +279,13 @@ tiers:
   - TrinaryOSRoundTripPriors
   - TrinaryOSTierEPriors
   - UniProtStructureAnnotationsDeepPriors
+  - UnifiedDBCandidateCrosswalkPriors
+  - UnifiedDBCrosswalkSpinePriors
   - UnifiedDBPriors
   - UniprotProteinAnnotationsPriors
   - VibRegisterPriors
   - VirologyExtensionPriors
+  - VizieRWdsTapLiveDeepPriors
   - VlDistillAtlasPriors
   - WDSLiveMultiplicityDeepPriors
   - WeatherPriors
@@ -384,7 +399,7 @@ tiers:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 143
+    scientific_domains_covered: 231
     expansion_candidates: 0
   artifacts:
   - data/climate_ncei_manifest.yaml

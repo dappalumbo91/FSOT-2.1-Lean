@@ -1,0 +1,17 @@
+version: "1.0"
+tier: 68
+domains:
+  - Materials_Project_Live_Panel
+  - PubChem_Live_Deep
+  - OpenNeuro_Full_Panel
+  - VizieR_WDS_TAP_Live_Deep
+  - Live_Ingest_Spine
+ingest: scripts/ingest_tier68_live_ingest.py
+build: scripts/build_tier68_live_ingest_benchmarks.py
+lean: scripts/gen_tiers_68_70_lean.py
+bundled:
+  - vendor/materials_live/materials_project_bundled.json
+  - vendor/public_data/pubchem/pubchem_summary.json
+  - vendor/public_data/consciousness/openneuro_summary.json
+  - vendor/stellar_structures/wds_multiplicity_expanded.json
+note: "Second live-ingest wave — Materials Project, PubChem, OpenNeuro, VizieR WDS TAP"

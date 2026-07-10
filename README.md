@@ -27,7 +27,7 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-10 — Tier 66)
+## Verification status (2026-07-10 — Tier 70)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
@@ -36,16 +36,16 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 | Metric | Value |
 |--------|-------|
 | Verification tiers | **48/48 complete** (100%) |
-| Extension domains | **195/195** pass `verify_extension_domains.py` (≤0.5% pooled gate) |
-| Scientific domains | **231** (35 NeuroLab + 195 extension + Intelligence Compression rollup) |
+| Extension domains | **210/210** pass `verify_extension_domains.py` (≤0.5% pooled gate) |
+| Scientific domains | **246** (35 NeuroLab + 210 extension + Intelligence Compression rollup) |
 | Coupling simulation | **183 nodes · 6,138 edges** (maps_to_lean + cross-ratios + magnetosphere + cyber stack) |
 | Empirical records | **306,680+** |
 | Neurolab precision | **35/35** domains ≤2% median error |
 | Coverage tiers | A_strong: 25 · B_verified: 10 · C_thin: **0** · D_needs_work: **0** · unverified: **0** |
-| Lean formal modules | **265** |
+| Lean formal modules | **280** |
 | Proved claims | **65** · 0 active `sorry` |
 | SOTA ledger | **65/65** observables beat or meet baselines |
-| Expansion candidates | **0** (NeuroLab 32-domain registry gaps closed at Tier 66) |
+| Expansion candidates | **0** (roadmap tiers 51–70 complete) |
 
 **External data cache** (bulk API ingest): `G:\FSOT-PublicData` — override with `FSOT_EXTERNAL_DATA_ROOT`. Space weather full arc: `G:\FSOT-PublicData\space_weather\space_weather_full_benchmark.json` (271,813 Kp records); portable summary in `data/space_weather_summary_benchmark.json`.
 
@@ -205,11 +205,20 @@ Public-data-first panels and preregistration scaffolds. Full tier list: `data/ex
 | 64 | Information Theory, Network Science, Semiconductor, Statistical Mechanics, Biophysics, NeuroLab gaps spine | NeuroLab 32-domain registry gaps (wave 1) |
 | 65 | Material in-silico, fuel candidate, interactive-media prereg scaffolds | Novel discovery prereg gates |
 | 66 | Quantum_Information, Econophysics, Ecology, Genomic_Sciences, Neurolab residual spine | NeuroLab 32-domain registry gaps (final wave) |
+| 67 | Acoustic bleed depth, initiation/boundary archetype precision, formula precision spine | Per-channel FSOT formula error (acoustic pooled **0.008%**) |
+| 68 | Materials Project, PubChem live, OpenNeuro full, VizieR WDS TAP, live ingest spine | Second live-ingest wave (bundled fallback) |
+| 69 | Unified DB candidate crosswalk, aggregate organized panel, crosswalk spine | Desktop aggregate DB → verified extension panels |
+| 70 | Proof ledger closure, prereg outcome tracking, ToE certificate bundle | Publication-facing ToE claim hardening |
 
 ```bash
-# Tier 66 rebuild (bundled anchors — no live API)
-python scripts/build_tier66_neurolab_residual_benchmarks.py
-python scripts/gen_tiers_66_lean.py
+# Tiers 67–70 rebuild
+python scripts/build_tier67_formula_precision_benchmarks.py
+python scripts/ingest_tier68_live_ingest.py
+python scripts/build_tier68_live_ingest_benchmarks.py
+python scripts/build_tier69_unified_db_crosswalk_benchmarks.py
+python scripts/build_tier70_toe_claim_hardening_benchmarks.py
+python scripts/gen_tiers_67_lean.py
+python scripts/gen_tiers_68_70_lean.py
 python scripts/verify_extension_domains.py
 ```
 
@@ -263,14 +272,7 @@ This project closely follows the structure and justification style of the attach
 
 ## Roadmap
 
-Queued in `data/expansion_roadmap.yaml`:
-
-- **Tier 67** — Formula precision pass (`term3_acoustic_bleed`, archetype, boundary_partition tightening)
-- **Tier 68** — Second live-ingest wave (Materials Project, PubChem live, OpenNeuro, VizieR WDS TAP)
-- **Tier 69** — Unified DB / desktop candidate crosswalk (~13k aggregate rows)
-- **Tier 70** — ToE claim hardening (lake build, certificate, prereg outcome tracking)
-
-Ongoing maintenance:
+Tiers **51–70** are complete per `data/expansion_roadmap.yaml`. Ongoing maintenance:
 
 - Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens
 - Knowledge-base per-formula portable bundle

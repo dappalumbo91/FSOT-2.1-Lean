@@ -1,0 +1,11 @@
+version: "1.0"
+tier: 69
+domains:
+  - Unified_DB_Candidate_Crosswalk
+  - FSOT_Aggregate_Organized_Panel
+  - Unified_DB_Crosswalk_Spine
+build: scripts/build_tier69_unified_db_crosswalk_benchmarks.py
+lean: scripts/gen_tiers_68_70_lean.py
+bundled:
+  - vendor/fsot_aggregate/FSOT_Mathematical_Database_Unified.json
+note: "Organize desktop aggregate DB / verification candidates into extension crosswalk panels"

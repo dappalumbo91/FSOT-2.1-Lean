@@ -1,0 +1,235 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:39:02.733544+00:00",
+  "domain": "Proof_Ledger_Closure_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "proof_ledger.yaml",
+    "fsot_verification_progress.yaml",
+    "certificate.json"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "cosmological",
+    "particle",
+    "consciousness"
+  ],
+  "D_eff": 25,
+  "record_count": 17,
+  "observable_count": 17,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "proof_ledger": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No formal ToE proof bundle"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_ledger_anchor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 17
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "ledger_anchor",
+      "name": "proof_ledger",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 1
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_entry_count",
+      "name": "proof_ledger",
+      "computed": 29.0,
+      "measured": 29.0,
+      "error_pct": 0.0,
+      "eval_kind": "ledger_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "sorry_count_formal",
+      "name": "formal_layer",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formal_gate"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claims",
+      "name": "verification_progress",
+      "computed": 65.0,
+      "measured": 65.0,
+      "error_pct": 0.0,
+      "eval_kind": "progress_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "zero_sorry_gate",
+      "name": "formal_closure",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "ledger_gate"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "cosmological_raw_S_negative",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "cosmological",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "dark_energy_raw_S_negative",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "dark_energy",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "cmb_raw_S_negative",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "cmb",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "ai_raw_S_non_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "ai",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "medical_raw_S_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "medical",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "chemical_raw_S_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "chemical",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "electron_raw_S_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "electron",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "neural_raw_S_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "neural",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "quantum_raw_S_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "quantum",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "particle_raw_S_positive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "particle",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "term3_negligible_default",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "*",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "proved_claim_id",
+      "name": "raw_S_positive_template",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "domain": "*",
+      "eval_kind": "claim_anchor"
+    },
+    {
+      "lab": "proof_ledger_closure_lab",
+      "property": "certificate_module_count",
+      "name": "certificate_json",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 15,
+    "classifier_correct": 15,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

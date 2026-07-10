@@ -1,0 +1,143 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:37:39.773797+00:00",
+  "domain": "Boundary_Partition_Tightening",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\formula_precision\\archetype_refinements.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "linguistic",
+    "mathematical"
+  ],
+  "D_eff": 17,
+  "record_count": 8,
+  "observable_count": 8,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.2544322492332041,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "boundary_partition": {
+        "sota_typical_error_pct": 25.0,
+        "sota_model": "No partition scalar mapping"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_archetype_precision_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 8
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "archetype_precision",
+      "name": "boundary_partition",
+      "computed": 0.254432,
+      "measured": 0.0,
+      "error_pct": 0.2544322492332041,
+      "observable_count": 2
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "boundary_partition_tightening_lab",
+      "property": "consciousness_model_scalar",
+      "name": "W_Complexity",
+      "computed": 0.618034,
+      "measured": 0.618034,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_consistency"
+    },
+    {
+      "lab": "boundary_partition_tightening_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Radial_coupling",
+      "computed": 0.865256,
+      "measured": 0.865256,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_consistency"
+    },
+    {
+      "lab": "boundary_partition_tightening_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Cross_coupling",
+      "computed": 0.577216,
+      "measured": 0.577216,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_consistency"
+    },
+    {
+      "lab": "boundary_partition_tightening_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Metatron_Spheres",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_consistency"
+    },
+    {
+      "lab": "boundary_partition_tightening_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Resonance_Rate",
+      "computed": 0.212346,
+      "measured": 0.212346,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_consistency"
+    },
+    {
+      "lab": "boundary_partition_tightening_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Consciousness_Gate",
+      "computed": 0.618034,
+      "measured": 0.618034,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_consistency"
+    },
+    {
+      "lab": "boundary_partition_tightening_lab",
+      "property": "archetype_mean_S",
+      "name": "boundary_partition",
+      "computed": -0.651091,
+      "measured": -0.649438,
+      "error_pct": 0.254432,
+      "node_count": 2,
+      "formula": "(W_Complexity - Radial_coupling) * Metatron_Spheres / 6 - Cross_coupling / 5",
+      "eval_kind": "archetype_precision"
+    },
+    {
+      "lab": "boundary_partition_tightening_lab",
+      "property": "archetype_mean_S",
+      "name": "judgmental_reset",
+      "computed": -3.305753,
+      "measured": -3.30584,
+      "error_pct": 0.002646,
+      "node_count": 4,
+      "formula": null,
+      "eval_kind": "archetype_precision"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.254432,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

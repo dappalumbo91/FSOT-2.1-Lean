@@ -31,7 +31,7 @@ On success this:
 10. Runs `lake build` on all `FSOT.Formal.*` targets in `certificate.json`
 11. Writes `data/certificate.json` and appends a line to `data/verification_runs.jsonl`
 
-**Expected:** 65 proved claims, 0 `sorry`, `lean_build_ok: true`, 195/195 extension domains pass `verify_extension_domains.py`.
+**Expected:** 65 proved claims, 0 `sorry`, `lean_build_ok: true`, 210/210 extension domains pass `verify_extension_domains.py`.
 
 ## Step-by-step
 

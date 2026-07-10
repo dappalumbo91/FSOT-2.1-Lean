@@ -1,0 +1,16 @@
+{
+  "source": "Tier 67 — FSOT consciousness-scalar refinements (zero free parameters)",
+  "formula_branch": "term1.coherence_efficiency",
+  "refinements": {
+    "initiation_transformation": {
+      "base": "-W_Binding * Resonance_Rate * 3 * (1 - Inner_coupling / 10)",
+      "tight": "-W_Binding * Resonance_Rate * 3 * (1 - Inner_coupling / (10 - Cross_coupling / (5 * Consciousness_Gate)))",
+      "note": "Trial-gate inner leak attenuation via cross-coupling tunnel"
+    },
+    "boundary_partition": {
+      "base": "(W_Complexity - Radial_coupling) * Metatron_Spheres / 6 - Cross_coupling / 5",
+      "tight": "(W_Complexity - Radial_coupling) * Metatron_Spheres / 6 - Cross_coupling / (5 + Resonance_Rate / Consciousness_Gate)",
+      "note": "Phase-boundary cross leak scaled by rate/gate dissipation"
+    }
+  }
+}

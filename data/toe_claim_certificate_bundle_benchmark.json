@@ -1,0 +1,138 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:38:34.037851+00:00",
+  "domain": "ToE_Claim_Certificate_Bundle",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "fsot_verification_progress.yaml",
+    "FSOT_VERIFIED_SCOPE.yaml",
+    "scientific_domain_expansion_map.json"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "mathematical",
+    "particle",
+    "consciousness"
+  ],
+  "D_eff": 25,
+  "record_count": 7,
+  "observable_count": 7,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "toe_bundle": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No unified ToE certificate artifact"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_certificate_anchor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 7
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "certificate_anchor",
+      "name": "toe_bundle",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 1
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "toe_claim_certificate_lab",
+      "property": "proved_claims",
+      "name": "verification_progress",
+      "computed": 65.0,
+      "measured": 65.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_anchor"
+    },
+    {
+      "lab": "toe_claim_certificate_lab",
+      "property": "sorry_count_formal",
+      "name": "verification_progress",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_anchor"
+    },
+    {
+      "lab": "toe_claim_certificate_lab",
+      "property": "tiers_complete",
+      "name": "verification_progress",
+      "computed": 48.0,
+      "measured": 48.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_anchor"
+    },
+    {
+      "lab": "toe_claim_certificate_lab",
+      "property": "percent_complete",
+      "name": "verification_progress",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_anchor"
+    },
+    {
+      "lab": "toe_claim_certificate_lab",
+      "property": "total_scientific_domains",
+      "name": "expansion_map",
+      "computed": 231.0,
+      "measured": 231.0,
+      "error_pct": 0.0,
+      "eval_kind": "coverage_anchor"
+    },
+    {
+      "lab": "toe_claim_certificate_lab",
+      "property": "toe_unification_spine_bridge",
+      "name": "toe_unification_spine",
+      "computed": 0.019008268802500988,
+      "measured": 0.019008268802500988,
+      "error_pct": 0.0,
+      "eval_kind": "toe_bridge"
+    },
+    {
+      "lab": "toe_claim_certificate_lab",
+      "property": "publication_bundle_ready",
+      "name": "toe_claim_certificate",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "bundle_gate",
+      "artifacts": [
+        "proof_ledger.yaml",
+        "certificate.json",
+        "FSOT_VERIFIED_SCOPE.yaml"
+      ]
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 2,
+    "classifier_correct": 2,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

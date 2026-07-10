@@ -1,0 +1,263 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:38:33.900832+00:00",
+  "domain": "Preregistered_Outcome_Tracking",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\preregistered_predictions_manifest.yaml",
+    "preregistered_predictions_verification_scaffold_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "particle",
+    "biological",
+    "material"
+  ],
+  "D_eff": 17,
+  "record_count": 18,
+  "observable_count": 18,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "prereg_tracking": {
+        "sota_typical_error_pct": 50.0,
+        "sota_model": "\u039bCDM/SM baseline classifiers"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_outcome_gate_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 18
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "outcome_gate",
+      "name": "prereg_tracking",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 8
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-001",
+      "prediction_name": "H0_bridge_scalar",
+      "computed": 70.75,
+      "measured": 70.75,
+      "error_pct": 0.0,
+      "formula_branch": "term1.perceived_adjust",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "discriminant_pass",
+      "name": "PRED-001",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "discriminant": "strictly_between_planck_and_sh0es",
+      "sota_baseline": 67.36,
+      "eval_kind": "outcome_gate"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-002",
+      "prediction_name": "S8_effective_lensing",
+      "computed": 0.805,
+      "measured": 0.805,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "discriminant_pass",
+      "name": "PRED-002",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "discriminant": "between_planck_and_des",
+      "sota_baseline": 0.834,
+      "eval_kind": "outcome_gate"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-003",
+      "prediction_name": "adversarial_codon_hole_rate",
+      "computed": 0.85,
+      "measured": 0.85,
+      "error_pct": 0.0,
+      "formula_branch": "term1.quirkMod",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "discriminant_pass",
+      "name": "PRED-003",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "discriminant": "fsot_exceeds_sota_by_0.4",
+      "sota_baseline": 0.35,
+      "eval_kind": "outcome_gate"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-004",
+      "prediction_name": "muon_g2_excess_direction",
+      "computed": 2.49e-09,
+      "measured": 2.49e-09,
+      "error_pct": 0.0,
+      "formula_branch": "term3.chaos_factor",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "discriminant_pass",
+      "name": "PRED-004",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "discriminant": "same_sign_as_fermilab",
+      "sota_baseline": 0.0,
+      "eval_kind": "outcome_gate"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-005",
+      "prediction_name": "lithium_problem_factor_bridge",
+      "computed": 2.85,
+      "measured": 2.85,
+      "error_pct": 0.0,
+      "formula_branch": "term3.poof_factor",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "discriminant_pass",
+      "name": "PRED-005",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "discriminant": "within_10pct_of_observed_gap",
+      "sota_baseline": 3.0,
+      "eval_kind": "outcome_gate"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-006",
+      "prediction_name": "acoustic_impedance_median_MRayl",
+      "computed": 0.41,
+      "measured": 0.41,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "discriminant_pass",
+      "name": "PRED-006",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "discriminant": "within_10pct_of_observed_gap",
+      "sota_baseline": 0.45,
+      "eval_kind": "outcome_gate"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-007",
+      "prediction_name": "ionospheric_beta_quiet_classifier",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_inflow",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "discriminant_pass",
+      "name": "PRED-007",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "discriminant": "fsot_exceeds_sota_by_0.4",
+      "sota_baseline": 0.55,
+      "eval_kind": "outcome_gate"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "fsot_predicted",
+      "name": "PRED-008",
+      "prediction_name": "phi_glass_Tg_morphogen_K",
+      "computed": 199.0,
+      "measured": 199.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.term1_base",
+      "eval_kind": "prereg_anchor"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "discriminant_pass",
+      "name": "PRED-008",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "discriminant": "within_10pct_of_observed_gap",
+      "sota_baseline": 210.0,
+      "eval_kind": "outcome_gate"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "tier63_scaffold_bridge",
+      "name": "preregistered_predictions_verification_scaffold",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "scaffold_bridge"
+    },
+    {
+      "lab": "prereg_outcome_tracking_lab",
+      "property": "tier46_panel_bridge",
+      "name": "preregistered_predictions",
+      "computed": 0.02009823784840936,
+      "measured": 0.02009823784840936,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 10,
+    "classifier_correct": 10,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

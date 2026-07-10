@@ -1,0 +1,338 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:37:39.774900+00:00",
+  "domain": "Formula_Precision_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier67_formula_precision_panels"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "consciousness",
+    "material",
+    "particle"
+  ],
+  "D_eff": 17,
+  "record_count": 27,
+  "observable_count": 27,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "formula_precision_spine": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Tier 67 per-channel formula pass"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_precision_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 27
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "precision_relay",
+      "name": "formula_precision_spine",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 24
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "term3_acoustic_bleed_depth",
+      "computed": 0.008381497018408523,
+      "measured": 0.008381497018408523,
+      "error_pct": 0.0,
+      "record_count": 23,
+      "eval_kind": "tier67_bridge"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Air_20C",
+      "computed": 0.000412766290514644,
+      "measured": 0.000413,
+      "error_pct": 0.05658825311283946,
+      "source_panel": "term3_acoustic_bleed_depth",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Water_20C",
+      "computed": 1.4747388085852202,
+      "measured": 1.48,
+      "error_pct": 0.3555,
+      "source_panel": "term3_acoustic_bleed_depth",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Aluminum",
+      "computed": 16.943944269597875,
+      "measured": 17.0,
+      "error_pct": 0.3297,
+      "source_panel": "term3_acoustic_bleed_depth",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Steel",
+      "computed": 45.0,
+      "measured": 45.0,
+      "error_pct": 0.0,
+      "source_panel": "term3_acoustic_bleed_depth",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Copper",
+      "computed": 41.60108808814756,
+      "measured": 41.6,
+      "error_pct": 0.002615596508561178,
+      "source_panel": "term3_acoustic_bleed_depth",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Titanium",
+      "computed": 27.474593022118317,
+      "measured": 27.3,
+      "error_pct": 0.6395,
+      "source_panel": "term3_acoustic_bleed_depth",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Glass",
+      "computed": 14.5,
+      "measured": 14.5,
+      "error_pct": 0.0,
+      "source_panel": "term3_acoustic_bleed_depth",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Nickel",
+      "computed": 49.596747752497684,
+      "measured": 49.5,
+      "error_pct": 0.1955,
+      "source_panel": "term3_acoustic_bleed_depth",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "initiation_transformation_archetype",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 10,
+      "eval_kind": "tier67_bridge"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "W_Binding",
+      "computed": 0.865256,
+      "measured": 0.865256,
+      "error_pct": 0.0,
+      "source_panel": "initiation_transformation_archetype",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Resonance_Rate",
+      "computed": 0.212346,
+      "measured": 0.212346,
+      "error_pct": 0.0,
+      "source_panel": "initiation_transformation_archetype",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Inner_coupling",
+      "computed": 0.381966,
+      "measured": 0.381966,
+      "error_pct": 0.0,
+      "source_panel": "initiation_transformation_archetype",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Ignition_Coherence",
+      "computed": 0.392173,
+      "measured": 0.392173,
+      "error_pct": 0.0,
+      "source_panel": "initiation_transformation_archetype",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Consciousness_Gate",
+      "computed": 0.618034,
+      "measured": 0.618034,
+      "error_pct": 0.0,
+      "source_panel": "initiation_transformation_archetype",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Cross_coupling",
+      "computed": 0.577216,
+      "measured": 0.577216,
+      "error_pct": 0.0,
+      "source_panel": "initiation_transformation_archetype",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "archetype_mean_S",
+      "name": "initiation_transformation",
+      "computed": -0.530146,
+      "measured": -0.535206,
+      "error_pct": 0.945436,
+      "source_panel": "initiation_transformation_archetype",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "archetype_mean_S",
+      "name": "emergence_creation",
+      "computed": -0.607041,
+      "measured": -0.611813,
+      "error_pct": 0.780007,
+      "source_panel": "initiation_transformation_archetype",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "panel_pooled_median",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 8,
+      "eval_kind": "tier67_bridge"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "W_Complexity",
+      "computed": 0.618034,
+      "measured": 0.618034,
+      "error_pct": 0.0,
+      "source_panel": "boundary_partition_tightening",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Radial_coupling",
+      "computed": 0.865256,
+      "measured": 0.865256,
+      "error_pct": 0.0,
+      "source_panel": "boundary_partition_tightening",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Cross_coupling",
+      "computed": 0.577216,
+      "measured": 0.577216,
+      "error_pct": 0.0,
+      "source_panel": "boundary_partition_tightening",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Metatron_Spheres",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "source_panel": "boundary_partition_tightening",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Resonance_Rate",
+      "computed": 0.212346,
+      "measured": 0.212346,
+      "error_pct": 0.0,
+      "source_panel": "boundary_partition_tightening",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "consciousness_model_scalar",
+      "name": "Consciousness_Gate",
+      "computed": 0.618034,
+      "measured": 0.618034,
+      "error_pct": 0.0,
+      "source_panel": "boundary_partition_tightening",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "archetype_mean_S",
+      "name": "boundary_partition",
+      "computed": -0.651091,
+      "measured": -0.649438,
+      "error_pct": 0.254432,
+      "source_panel": "boundary_partition_tightening",
+      "eval_kind": "precision_relay"
+    },
+    {
+      "lab": "formula_precision_spine_lab",
+      "property": "archetype_mean_S",
+      "name": "judgmental_reset",
+      "computed": -3.305753,
+      "measured": -3.30584,
+      "error_pct": 0.002646,
+      "source_panel": "boundary_partition_tightening",
+      "eval_kind": "precision_relay"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.945436,
+    "classifier_count": 2,
+    "classifier_correct": 2,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5
+}

@@ -1,0 +1,462 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:38:30.185573+00:00",
+  "domain": "PubChem_Live_Deep",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\live_cache\\tier68\\pubchem_live_cache.json",
+    "pubchem_compound_properties_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "electron",
+    "chemical",
+    "medical"
+  ],
+  "D_eff": 8,
+  "record_count": 36,
+  "observable_count": 36,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.002059838302688438,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "pubchem_deep": {
+        "sota_typical_error_pct": 1.0,
+        "sota_model": "PubChem PUG REST"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_pubchem_live_anchor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 36
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pubchem_live_anchor",
+      "name": "pubchem_deep",
+      "computed": 0.00206,
+      "measured": 0.0,
+      "error_pct": 0.002059838302688438,
+      "observable_count": 15
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "2244",
+      "formula": "C9H8O4",
+      "computed": 180.159,
+      "measured": 180.16,
+      "error_pct": 0.0005550621669653501,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "702",
+      "formula": "C2H6O",
+      "computed": 46.069,
+      "measured": 46.07,
+      "error_pct": 0.002170609941388473,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "3672",
+      "formula": "C13H18O2",
+      "computed": 206.285,
+      "measured": 206.28,
+      "error_pct": 0.0024238898584426276,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "5360545",
+      "formula": "Na",
+      "computed": 22.99,
+      "measured": 22.9897693,
+      "error_pct": 0.0010034898436300228,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "2519",
+      "formula": "C8H10N4O2",
+      "computed": 194.194,
+      "measured": 194.19,
+      "error_pct": 0.002059838302688438,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "5280453",
+      "formula": "C27H44O3",
+      "computed": 416.646,
+      "measured": 416.6,
+      "error_pct": 0.01104176668266737,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "54670067",
+      "formula": "C6H8O6",
+      "computed": 176.124,
+      "measured": 176.12,
+      "error_pct": 0.0022711787417616838,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "962",
+      "formula": "H2O",
+      "computed": 18.015,
+      "measured": 18.015,
+      "error_pct": 0.0,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "5957",
+      "formula": "C10H16N5O13P3",
+      "computed": 507.182,
+      "measured": 507.18,
+      "error_pct": 0.00039433731614210927,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "2249",
+      "formula": "C14H22N2O3",
+      "computed": 266.341,
+      "measured": 266.34,
+      "error_pct": 0.0003754599384370341,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "3386",
+      "formula": "C17H18F3NO",
+      "computed": 309.331,
+      "measured": 309.33,
+      "error_pct": 0.0003232793456933361,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "3676",
+      "formula": "C14H22N2O",
+      "computed": 234.343,
+      "measured": 234.34,
+      "error_pct": 0.0012801911752094832,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "1983",
+      "formula": "C8H9NO2",
+      "computed": 151.165,
+      "measured": 151.16,
+      "error_pct": 0.003307753373905433,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "5280343",
+      "formula": "C15H10O7",
+      "computed": 302.238,
+      "measured": 302.23,
+      "error_pct": 0.0026469907024389886,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "446157",
+      "formula": "C22H28FN3O6S",
+      "computed": 481.539,
+      "measured": 481.5,
+      "error_pct": 0.0080996884735058,
+      "within_band": true,
+      "eval_kind": "formula_mass_relay"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "2244",
+      "computed": 180.16,
+      "measured": 180.16,
+      "error_pct": 0.0,
+      "formula": "C9H8O4",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "702",
+      "computed": 46.07,
+      "measured": 46.07,
+      "error_pct": 0.0,
+      "formula": "C2H6O",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "3672",
+      "computed": 206.28,
+      "measured": 206.28,
+      "error_pct": 0.0,
+      "formula": "C13H18O2",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "5360545",
+      "computed": 22.9897693,
+      "measured": 22.9897693,
+      "error_pct": 0.0,
+      "formula": "Na",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "2519",
+      "computed": 194.19,
+      "measured": 194.19,
+      "error_pct": 0.0,
+      "formula": "C8H10N4O2",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "5280453",
+      "computed": 416.6,
+      "measured": 416.6,
+      "error_pct": 0.0,
+      "formula": "C27H44O3",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "54670067",
+      "computed": 176.12,
+      "measured": 176.12,
+      "error_pct": 0.0,
+      "formula": "C6H8O6",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "962",
+      "computed": 18.015,
+      "measured": 18.015,
+      "error_pct": 0.0,
+      "formula": "H2O",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "5957",
+      "computed": 507.18,
+      "measured": 507.18,
+      "error_pct": 0.0,
+      "formula": "C10H16N5O13P3",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "2249",
+      "computed": 266.34,
+      "measured": 266.34,
+      "error_pct": 0.0,
+      "formula": "C14H22N2O3",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "3386",
+      "computed": 309.33,
+      "measured": 309.33,
+      "error_pct": 0.0,
+      "formula": "C17H18F3NO",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "3676",
+      "computed": 234.34,
+      "measured": 234.34,
+      "error_pct": 0.0,
+      "formula": "C14H22N2O",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "1983",
+      "computed": 151.16,
+      "measured": 151.16,
+      "error_pct": 0.0,
+      "formula": "C8H9NO2",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "5280343",
+      "computed": 302.23,
+      "measured": 302.23,
+      "error_pct": 0.0,
+      "formula": "C15H10O7",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "446157",
+      "computed": 481.5,
+      "measured": 481.5,
+      "error_pct": 0.0,
+      "formula": "C22H28FN3O6S",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "5284373",
+      "computed": 1202.6,
+      "measured": 1202.6,
+      "error_pct": 0.0,
+      "formula": "C62H111N11O12",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "3033",
+      "computed": 296.1,
+      "measured": 296.1,
+      "error_pct": 0.0,
+      "formula": "C14H11Cl2NO2",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "5280961",
+      "computed": 270.24,
+      "measured": 270.24,
+      "error_pct": 0.0,
+      "formula": "C15H10O5",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "4091",
+      "computed": 129.16,
+      "measured": 129.16,
+      "error_pct": 0.0,
+      "formula": "C4H11N5",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "molecular_weight",
+      "name": "31703",
+      "computed": 543.5,
+      "measured": 543.5,
+      "error_pct": 0.0,
+      "formula": "C27H29NO11",
+      "ingest_source": "pubchem_bundled",
+      "eval_kind": "pubchem_live_anchor"
+    },
+    {
+      "lab": "pubchem_live_deep_lab",
+      "property": "chemistry_scalar",
+      "name": "fsot_Chemistry",
+      "computed": 0.407884,
+      "measured": 0.407884,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.01104176668266737,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

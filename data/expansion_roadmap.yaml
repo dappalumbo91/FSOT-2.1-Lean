@@ -1,5 +1,5 @@
 # FSOT interdisciplinary expansion roadmap — public-data first, preregister before novel claims.
-version: "1.3"
+version: "1.4"
 updated: "2026-07-10"
 policy: >
   Ship verification against published observables in-repo. Reserve novel material,
@@ -64,31 +64,45 @@ completed_tiers:
     - Ecology
     - Genomic_Sciences
     - Neurolab_Residual_Math_Spine
+  tier_67:
+    - Term3_Acoustic_Bleed_Depth
+    - Initiation_Transformation_Archetype
+    - Boundary_Partition_Tightening
+    - Formula_Precision_Spine
+  tier_68:
+    - Materials_Project_Live_Panel
+    - PubChem_Live_Deep
+    - OpenNeuro_Full_Panel
+    - VizieR_WDS_TAP_Live_Deep
+    - Live_Ingest_Spine
+  tier_69:
+    - Unified_DB_Candidate_Crosswalk
+    - FSOT_Aggregate_Organized_Panel
+    - Unified_DB_Crosswalk_Spine
+  tier_70:
+    - Proof_Ledger_Closure_Spine
+    - Preregistered_Outcome_Tracking
+    - ToE_Claim_Certificate_Bundle
 
 priority_queue:
-  tier_66_neurolab_residual:
-    status: completed
-    domains: [Quantum_Information, Econophysics, Ecology, Genomic_Sciences, Neurolab_Residual_Math_Spine]
-    note: "Remaining NeuroLab 32-domain registry entries — literature anchors + gap-fill bridges"
-
   tier_67_formula_precision:
-    status: planned
+    status: completed
     focus: [term3_acoustic_bleed_depth, initiation_transformation_archetype, boundary_partition_tightening]
-    note: "Shift from catalog relay to per-channel FSOT formula error tightening"
+    note: "Per-channel FSOT formula error — acoustic bleed 0.008%, archetype channels tracked"
 
   tier_68_live_ingest_wave:
-    status: planned
+    status: completed
     sources: [materials_project_api, pubchem_live, openneuro_full, vizier_wds_tap_live]
-    note: "Second live-ingest wave beyond Gaia/SIMBAD/GWOSC"
+    note: "Second live-ingest wave — bundled fallback when API unavailable"
 
   tier_69_unified_db_crosswalk:
-    status: planned
-    note: "Organize desktop unidentified DB / FSOT aggregate candidates into verified extension panels"
+    status: completed
+    note: "Desktop aggregate DB candidates organized into verified extension crosswalk panels"
 
   tier_70_toe_claim_hardening:
-    status: planned
+    status: completed
     focus: [proof_ledger_closure, lake_build_certificate, preregistered_outcome_tracking]
-    note: "Publication-facing ToE claim bundle — proved Lean theorems + held-out prereg outcomes"
+    note: "Publication-facing ToE claim bundle — proof ledger + prereg outcomes + certificate"
 
 discoverability_principles:
   - "Public repo = reproducible verification against published data"

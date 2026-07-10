@@ -1,0 +1,12 @@
+version: "1.0"
+tier: 67
+domains:
+  - Term3_Acoustic_Bleed_Depth
+  - Initiation_Transformation_Archetype
+  - Boundary_Partition_Tightening
+  - Formula_Precision_Spine
+build: scripts/build_tier67_formula_precision_benchmarks.py
+lean: scripts/gen_tiers_67_lean.py
+bundled:
+  - vendor/formula_precision/archetype_refinements.json
+note: "Per-channel FSOT formula precision — acoustic bleed depth, archetype, boundary partition"

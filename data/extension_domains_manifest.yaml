@@ -2525,6 +2525,205 @@ extension_domains:
     lean_module: FSOT.Formal.NeurolabResidualMathSpinePriors
     note: "Crosswalk spine for tier 66 NeuroLab residual registry panels"
 
+  Term3_Acoustic_Bleed_Depth:
+    tier: 67
+    D_eff: 15
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, particle, energy, acoustical]
+    build_script: scripts/build_tier67_formula_precision_benchmarks.py
+    manifest: data/tier67_formula_precision_manifest.yaml
+    benchmark_data: data/term3_acoustic_bleed_depth_benchmark.json
+    lean_module: FSOT.Formal.Term3AcousticBleedDepthPriors
+    note: "Per-channel term3.acoustic_bleed formula error — acoustic + music harmonics depth"
+
+  Initiation_Transformation_Archetype:
+    tier: 67
+    D_eff: 17
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, linguistic, mathematical]
+    build_script: scripts/build_tier67_formula_precision_benchmarks.py
+    manifest: data/tier67_formula_precision_manifest.yaml
+    benchmark_data: data/initiation_transformation_archetype_benchmark.json
+    lean_module: FSOT.Formal.InitiationTransformationArchetypePriors
+    note: "Transformation archetype cluster — scalar consistency + per-archetype formula error"
+
+  Boundary_Partition_Tightening:
+    tier: 67
+    D_eff: 17
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [consciousness, linguistic, mathematical]
+    build_script: scripts/build_tier67_formula_precision_benchmarks.py
+    manifest: data/tier67_formula_precision_manifest.yaml
+    benchmark_data: data/boundary_partition_tightening_benchmark.json
+    lean_module: FSOT.Formal.BoundaryPartitionTighteningPriors
+    note: "Boundary-partition archetype precision — sky/earth phase separation motifs"
+
+  Formula_Precision_Spine:
+    tier: 67
+    D_eff: 17
+    delta_psi: 0.88
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, consciousness, material, particle]
+    build_script: scripts/build_tier67_formula_precision_benchmarks.py
+    manifest: data/tier67_formula_precision_manifest.yaml
+    benchmark_data: data/formula_precision_spine_benchmark.json
+    lean_module: FSOT.Formal.FormulaPrecisionSpinePriors
+    note: "Crosswalk spine for tier 67 formula precision panels"
+
+  Materials_Project_Live_Panel:
+    tier: 68
+    D_eff: 16
+    delta_psi: 0.5
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, particle, energy]
+    ingest_script: scripts/ingest_tier68_live_ingest.py
+    build_script: scripts/build_tier68_live_ingest_benchmarks.py
+    manifest: data/tier68_live_ingest_manifest.yaml
+    benchmark_data: data/materials_project_live_panel_benchmark.json
+    lean_module: FSOT.Formal.MaterialsProjectLivePanelPriors
+    note: "Materials Project API + bundled fallback — band gap / formation energy"
+
+  PubChem_Live_Deep:
+    tier: 68
+    D_eff: 8
+    delta_psi: 0.5
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [electron, chemical, medical]
+    ingest_script: scripts/ingest_tier68_live_ingest.py
+    build_script: scripts/build_tier68_live_ingest_benchmarks.py
+    manifest: data/tier68_live_ingest_manifest.yaml
+    benchmark_data: data/pubchem_live_deep_benchmark.json
+    lean_module: FSOT.Formal.PubChemLiveDeepPriors
+    note: "PubChem PUG REST live + formula-mass relay depth"
+
+  OpenNeuro_Full_Panel:
+    tier: 68
+    D_eff: 14
+    delta_psi: 0.1
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [neural, consciousness, ai]
+    ingest_script: scripts/ingest_tier68_live_ingest.py
+    build_script: scripts/build_tier68_live_ingest_benchmarks.py
+    manifest: data/tier68_live_ingest_manifest.yaml
+    benchmark_data: data/openneuro_full_panel_benchmark.json
+    lean_module: FSOT.Formal.OpenNeuroFullPanelPriors
+    note: "Full OpenNeuro EEG/MRI dataset catalog — consciousness channel proxies"
+
+  VizieR_WDS_TAP_Live_Deep:
+    tier: 68
+    D_eff: 21
+    delta_psi: 1.0
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic, cmb]
+    ingest_script: scripts/ingest_tier68_live_ingest.py
+    build_script: scripts/build_tier68_live_ingest_benchmarks.py
+    manifest: data/tier68_live_ingest_manifest.yaml
+    benchmark_data: data/vizier_wds_tap_live_deep_benchmark.json
+    lean_module: FSOT.Formal.VizieRWdsTapLiveDeepPriors
+    note: "VizieR WDS TAP live + tier 62 multiplicity bridge"
+
+  Live_Ingest_Spine:
+    tier: 68
+    D_eff: 17
+    delta_psi: 0.88
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [material, chemical, neural, astronomical]
+    build_script: scripts/build_tier68_live_ingest_benchmarks.py
+    manifest: data/tier68_live_ingest_manifest.yaml
+    benchmark_data: data/live_ingest_spine_benchmark.json
+    lean_module: FSOT.Formal.LiveIngestSpinePriors
+    note: "Crosswalk spine for tier 68 live ingest wave"
+
+  Unified_DB_Candidate_Crosswalk:
+    tier: 69
+    D_eff: 17
+    delta_psi: 0.88
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, particle, medical, ai]
+    build_script: scripts/build_tier69_unified_db_crosswalk_benchmarks.py
+    manifest: data/tier69_unified_db_manifest.yaml
+    benchmark_data: data/unified_db_candidate_crosswalk_benchmark.json
+    lean_module: FSOT.Formal.UnifiedDBCandidateCrosswalkPriors
+    note: "Desktop aggregate DB candidates → verified extension panel relays"
+
+  FSOT_Aggregate_Organized_Panel:
+    tier: 69
+    D_eff: 17
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [mathematical, particle, medical]
+    build_script: scripts/build_tier69_unified_db_crosswalk_benchmarks.py
+    manifest: data/tier69_unified_db_manifest.yaml
+    benchmark_data: data/fsot_aggregate_organized_panel_benchmark.json
+    lean_module: FSOT.Formal.FsotAggregateOrganizedPanelPriors
+    note: "FSOT aggregate mathematical DB layer/type inventory organization"
+
+  Unified_DB_Crosswalk_Spine:
+    tier: 69
+    D_eff: 17
+    delta_psi: 0.88
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, particle, medical, ai]
+    build_script: scripts/build_tier69_unified_db_crosswalk_benchmarks.py
+    manifest: data/tier69_unified_db_manifest.yaml
+    benchmark_data: data/unified_db_crosswalk_spine_benchmark.json
+    lean_module: FSOT.Formal.UnifiedDBCrosswalkSpinePriors
+    note: "Crosswalk spine for tier 69 unified DB organization"
+
+  Proof_Ledger_Closure_Spine:
+    tier: 70
+    D_eff: 25
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, cosmological, particle, consciousness]
+    build_script: scripts/build_tier70_toe_claim_hardening_benchmarks.py
+    manifest: data/tier70_toe_claim_hardening_manifest.yaml
+    benchmark_data: data/proof_ledger_closure_spine_benchmark.json
+    lean_module: FSOT.Formal.ProofLedgerClosureSpinePriors
+    note: "Proof ledger + certificate closure — 0 sorry formal gate"
+
+  Preregistered_Outcome_Tracking:
+    tier: 70
+    D_eff: 17
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, particle, biological, material]
+    build_script: scripts/build_tier70_toe_claim_hardening_benchmarks.py
+    manifest: data/tier70_toe_claim_hardening_manifest.yaml
+    benchmark_data: data/preregistered_outcome_tracking_benchmark.json
+    lean_module: FSOT.Formal.PreregisteredOutcomeTrackingPriors
+    note: "Preregistered prediction discriminant outcome tracking vs ΛCDM/SM baselines"
+
+  ToE_Claim_Certificate_Bundle:
+    tier: 70
+    D_eff: 25
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, mathematical, particle, consciousness]
+    build_script: scripts/build_tier70_toe_claim_hardening_benchmarks.py
+    manifest: data/tier70_toe_claim_hardening_manifest.yaml
+    benchmark_data: data/toe_claim_certificate_bundle_benchmark.json
+    lean_module: FSOT.Formal.ToEClaimCertificateBundlePriors
+    note: "Publication-facing ToE claim bundle — progress + scope + unification spine"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

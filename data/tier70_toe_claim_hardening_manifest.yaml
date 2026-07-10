@@ -1,0 +1,14 @@
+version: "1.0"
+tier: 70
+domains:
+  - Proof_Ledger_Closure_Spine
+  - Preregistered_Outcome_Tracking
+  - ToE_Claim_Certificate_Bundle
+build: scripts/build_tier70_toe_claim_hardening_benchmarks.py
+lean: scripts/gen_tiers_68_70_lean.py
+artifacts:
+  - data/proof_ledger.yaml
+  - data/certificate.json
+  - data/FSOT_VERIFIED_SCOPE.yaml
+  - data/preregistered_predictions_manifest.yaml
+note: "ToE claim hardening — proof ledger closure, prereg outcome tracking, certificate bundle"

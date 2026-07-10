@@ -24,7 +24,7 @@ See `data/external_data_manifest.yaml` for the full bundled vs cached vs optiona
 
 **API sources and full rebuild:** `data/api_requirements.yaml` lists every public ingest endpoint, optional API keys, and the ordered rebuild pipeline.
 
-**Expansion roadmap:** `data/expansion_roadmap.yaml` documents completed tiers 51–66 and the priority queue (67–70: formula precision, live ingest wave 2, unified DB crosswalk, ToE hardening). Novel material/fuel/formula claims stay behind `data/preregistered_predictions_manifest.yaml`.
+**Expansion roadmap:** `data/expansion_roadmap.yaml` documents completed tiers 51–70 (NeuroLab residual, formula precision, live ingest wave 2, unified DB crosswalk, ToE hardening). Novel material/fuel/formula claims stay behind `data/preregistered_predictions_manifest.yaml`.
 
 ## Requirements
 

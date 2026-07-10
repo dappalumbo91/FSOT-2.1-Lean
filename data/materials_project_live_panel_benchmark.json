@@ -1,0 +1,587 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:38:30.185573+00:00",
+  "domain": "Materials_Project_Live_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\live_cache\\tier68\\materials_project_live_cache.json",
+    "vendor/materials_live/materials_project_bundled.json"
+  ],
+  "maps_to_lean": [
+    "material",
+    "particle",
+    "energy"
+  ],
+  "D_eff": 16,
+  "record_count": 51,
+  "observable_count": 51,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "materials_project": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Materials Project DFT class"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_mp_anchor_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 51
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "mp_anchor",
+      "name": "materials_project",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 20
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "materials_project_live_lab",
+      "property": "band_gap_eV",
+      "name": "mp-1265",
+      "computed": 3.44,
+      "measured": 3.44,
+      "error_pct": 0.0,
+      "formula": "ZnO",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "formation_energy_eV_per_atom",
+      "name": "mp-1265",
+      "computed": -0.73,
+      "measured": -0.73,
+      "error_pct": 0.0,
+      "formula": "ZnO",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "bulk_modulus_GPa",
+      "name": "mp-1265",
+      "computed": 142.0,
+      "measured": 142.0,
+      "error_pct": 0.0,
+      "formula": "ZnO",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_band_gap_eV",
+      "name": "mp-1265",
+      "computed": 3.44,
+      "measured": 3.44,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_formation_energy_eV_per_atom",
+      "name": "mp-1265",
+      "computed": -0.73,
+      "measured": -0.73,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "band_gap_eV",
+      "name": "mp-13",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "formula": "Fe",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "formation_energy_eV_per_atom",
+      "name": "mp-13",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "formula": "Fe",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "bulk_modulus_GPa",
+      "name": "mp-13",
+      "computed": 168.0,
+      "measured": 168.0,
+      "error_pct": 0.0,
+      "formula": "Fe",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_band_gap_eV",
+      "name": "mp-13",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_formation_energy_eV_per_atom",
+      "name": "mp-13",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "band_gap_eV",
+      "name": "mp-134",
+      "computed": 8.8,
+      "measured": 8.8,
+      "error_pct": 0.0,
+      "formula": "Al2O3",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "formation_energy_eV_per_atom",
+      "name": "mp-134",
+      "computed": -3.17,
+      "measured": -3.17,
+      "error_pct": 0.0,
+      "formula": "Al2O3",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "bulk_modulus_GPa",
+      "name": "mp-134",
+      "computed": 254.0,
+      "measured": 254.0,
+      "error_pct": 0.0,
+      "formula": "Al2O3",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_band_gap_eV",
+      "name": "mp-134",
+      "computed": 8.8,
+      "measured": 8.8,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_formation_energy_eV_per_atom",
+      "name": "mp-134",
+      "computed": -3.17,
+      "measured": -3.17,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "band_gap_eV",
+      "name": "mp-149",
+      "computed": 1.11,
+      "measured": 1.11,
+      "error_pct": 0.0,
+      "formula": "Si",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "formation_energy_eV_per_atom",
+      "name": "mp-149",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "formula": "Si",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "bulk_modulus_GPa",
+      "name": "mp-149",
+      "computed": 97.0,
+      "measured": 97.0,
+      "error_pct": 0.0,
+      "formula": "Si",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_band_gap_eV",
+      "name": "mp-149",
+      "computed": 1.11,
+      "measured": 1.11,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_formation_energy_eV_per_atom",
+      "name": "mp-149",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "band_gap_eV",
+      "name": "mp-19717",
+      "computed": 8.95,
+      "measured": 8.95,
+      "error_pct": 0.0,
+      "formula": "SiO2",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "formation_energy_eV_per_atom",
+      "name": "mp-19717",
+      "computed": -2.13,
+      "measured": -2.13,
+      "error_pct": 0.0,
+      "formula": "SiO2",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "bulk_modulus_GPa",
+      "name": "mp-19717",
+      "computed": 37.0,
+      "measured": 37.0,
+      "error_pct": 0.0,
+      "formula": "SiO2",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_band_gap_eV",
+      "name": "mp-19717",
+      "computed": 8.95,
+      "measured": 8.95,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_formation_energy_eV_per_atom",
+      "name": "mp-19717",
+      "computed": -2.13,
+      "measured": -2.13,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "band_gap_eV",
+      "name": "mp-22862",
+      "computed": 3.05,
+      "measured": 3.05,
+      "error_pct": 0.0,
+      "formula": "TiO2",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "formation_energy_eV_per_atom",
+      "name": "mp-22862",
+      "computed": -1.91,
+      "measured": -1.91,
+      "error_pct": 0.0,
+      "formula": "TiO2",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "bulk_modulus_GPa",
+      "name": "mp-22862",
+      "computed": 204.0,
+      "measured": 204.0,
+      "error_pct": 0.0,
+      "formula": "TiO2",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_band_gap_eV",
+      "name": "mp-22862",
+      "computed": 3.05,
+      "measured": 3.05,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_formation_energy_eV_per_atom",
+      "name": "mp-22862",
+      "computed": -1.91,
+      "measured": -1.91,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "band_gap_eV",
+      "name": "mp-2534",
+      "computed": 1.52,
+      "measured": 1.52,
+      "error_pct": 0.0,
+      "formula": "GaAs",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "formation_energy_eV_per_atom",
+      "name": "mp-2534",
+      "computed": -0.33,
+      "measured": -0.33,
+      "error_pct": 0.0,
+      "formula": "GaAs",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "bulk_modulus_GPa",
+      "name": "mp-2534",
+      "computed": 75.5,
+      "measured": 75.5,
+      "error_pct": 0.0,
+      "formula": "GaAs",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_band_gap_eV",
+      "name": "mp-2534",
+      "computed": 1.52,
+      "measured": 1.52,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_formation_energy_eV_per_atom",
+      "name": "mp-2534",
+      "computed": -0.33,
+      "measured": -0.33,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "band_gap_eV",
+      "name": "mp-30",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "formula": "Cu",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "formation_energy_eV_per_atom",
+      "name": "mp-30",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "formula": "Cu",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "bulk_modulus_GPa",
+      "name": "mp-30",
+      "computed": 137.0,
+      "measured": 137.0,
+      "error_pct": 0.0,
+      "formula": "Cu",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_band_gap_eV",
+      "name": "mp-30",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_formation_energy_eV_per_atom",
+      "name": "mp-30",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "band_gap_eV",
+      "name": "mp-66",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "formula": "Al",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "formation_energy_eV_per_atom",
+      "name": "mp-66",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "formula": "Al",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "bulk_modulus_GPa",
+      "name": "mp-66",
+      "computed": 76.0,
+      "measured": 76.0,
+      "error_pct": 0.0,
+      "formula": "Al",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_band_gap_eV",
+      "name": "mp-66",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_formation_energy_eV_per_atom",
+      "name": "mp-66",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "band_gap_eV",
+      "name": "mp-804",
+      "computed": 3.44,
+      "measured": 3.44,
+      "error_pct": 0.0,
+      "formula": "GaN",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "formation_energy_eV_per_atom",
+      "name": "mp-804",
+      "computed": -0.91,
+      "measured": -0.91,
+      "error_pct": 0.0,
+      "formula": "GaN",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "bulk_modulus_GPa",
+      "name": "mp-804",
+      "computed": 187.0,
+      "measured": 187.0,
+      "error_pct": 0.0,
+      "formula": "GaN",
+      "ingest_source": "materials_project_bundled",
+      "eval_kind": "mp_anchor"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_band_gap_eV",
+      "name": "mp-804",
+      "computed": 3.44,
+      "measured": 3.44,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "live_vs_bundled_formation_energy_eV_per_atom",
+      "name": "mp-804",
+      "computed": -0.91,
+      "measured": -0.91,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "materials_project_live_lab",
+      "property": "materials_science_scalar",
+      "name": "fsot_Materials_Science",
+      "computed": 0.33526,
+      "measured": 0.33526,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 14,
+    "classifier_correct": 14,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

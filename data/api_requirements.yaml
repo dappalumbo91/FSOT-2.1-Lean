@@ -233,6 +233,35 @@ api_sources:
     bundled_only: true
     note: "Literature anchors from NeuroLab fsot_translations + empirical gap-fill bridges"
 
+  tier67_formula_precision:
+    description: "Tier 67 — per-channel formula precision (acoustic bleed, archetype, boundary)"
+    manifest: data/tier67_formula_precision_manifest.yaml
+    build: scripts/build_tier67_formula_precision_benchmarks.py
+    lean: scripts/gen_tiers_67_lean.py
+    bundled_only: true
+
+  tier68_live_ingest:
+    description: "Tier 68 — Materials Project, PubChem live, OpenNeuro, VizieR WDS TAP"
+    manifest: data/tier68_live_ingest_manifest.yaml
+    ingest: scripts/ingest_tier68_live_ingest.py
+    build: scripts/build_tier68_live_ingest_benchmarks.py
+    lean: scripts/gen_tiers_68_70_lean.py
+    optional_api_key: MP_API_KEY
+
+  tier69_unified_db:
+    description: "Tier 69 — unified DB / aggregate candidate crosswalk"
+    manifest: data/tier69_unified_db_manifest.yaml
+    build: scripts/build_tier69_unified_db_crosswalk_benchmarks.py
+    lean: scripts/gen_tiers_68_70_lean.py
+    bundled_only: true
+
+  tier70_toe_hardening:
+    description: "Tier 70 — ToE claim hardening (proof ledger, prereg outcomes, certificate)"
+    manifest: data/tier70_toe_claim_hardening_manifest.yaml
+    build: scripts/build_tier70_toe_claim_hardening_benchmarks.py
+    lean: scripts/gen_tiers_68_70_lean.py
+    bundled_only: true
+
   astrophysics_catalogs:
     description: "Tier 58 live ingest — public catalogs for stellar/planetary/galactic structures"
     sources:

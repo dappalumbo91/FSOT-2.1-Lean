@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-10T18:32:51.210979+00:00",
+  "generated_at": "2026-07-10T18:39:10.483693+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 195,
-    "total_scientific_domains_covered": 231,
+    "extension_domains": 210,
+    "total_scientific_domains_covered": 246,
     "total_empirical_records": 306680,
     "domains_target_band_2pct": 35,
     "domains_sign_mismatch": 0,
@@ -14,7 +14,7 @@
       "D_needs_work": 0,
       "unverified": 0
     },
-    "lean_formal_modules": 265
+    "lean_formal_modules": 280
   },
   "neurolab_domains": [
     {
@@ -2060,6 +2060,126 @@
       "median_error_pct": 0.0,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.NeurolabResidualMathSpinePriors"
+    },
+    {
+      "domain": "Term3_Acoustic_Bleed_Depth",
+      "tier": 67,
+      "record_count": 23,
+      "median_error_pct": 0.008381497018408523,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.Term3AcousticBleedDepthPriors"
+    },
+    {
+      "domain": "Initiation_Transformation_Archetype",
+      "tier": 67,
+      "record_count": 10,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.InitiationTransformationArchetypePriors"
+    },
+    {
+      "domain": "Boundary_Partition_Tightening",
+      "tier": 67,
+      "record_count": 8,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.BoundaryPartitionTighteningPriors"
+    },
+    {
+      "domain": "Formula_Precision_Spine",
+      "tier": 67,
+      "record_count": 27,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.FormulaPrecisionSpinePriors"
+    },
+    {
+      "domain": "Materials_Project_Live_Panel",
+      "tier": 68,
+      "record_count": 51,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.MaterialsProjectLivePanelPriors"
+    },
+    {
+      "domain": "PubChem_Live_Deep",
+      "tier": 68,
+      "record_count": 36,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.PubChemLiveDeepPriors"
+    },
+    {
+      "domain": "OpenNeuro_Full_Panel",
+      "tier": 68,
+      "record_count": 15,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.OpenNeuroFullPanelPriors"
+    },
+    {
+      "domain": "VizieR_WDS_TAP_Live_Deep",
+      "tier": 68,
+      "record_count": 25,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.VizieRWdsTapLiveDeepPriors"
+    },
+    {
+      "domain": "Live_Ingest_Spine",
+      "tier": 68,
+      "record_count": 28,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.LiveIngestSpinePriors"
+    },
+    {
+      "domain": "Unified_DB_Candidate_Crosswalk",
+      "tier": 69,
+      "record_count": 46,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.UnifiedDBCandidateCrosswalkPriors"
+    },
+    {
+      "domain": "FSOT_Aggregate_Organized_Panel",
+      "tier": 69,
+      "record_count": 10,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.FsotAggregateOrganizedPanelPriors"
+    },
+    {
+      "domain": "Unified_DB_Crosswalk_Spine",
+      "tier": 69,
+      "record_count": 18,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.UnifiedDBCrosswalkSpinePriors"
+    },
+    {
+      "domain": "Proof_Ledger_Closure_Spine",
+      "tier": 70,
+      "record_count": 17,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.ProofLedgerClosureSpinePriors"
+    },
+    {
+      "domain": "Preregistered_Outcome_Tracking",
+      "tier": 70,
+      "record_count": 18,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.PreregisteredOutcomeTrackingPriors"
+    },
+    {
+      "domain": "ToE_Claim_Certificate_Bundle",
+      "tier": 70,
+      "record_count": 7,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.ToEClaimCertificateBundlePriors"
     }
   ],
   "intelligence_compression": {

@@ -1,0 +1,337 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:37:39.770841+00:00",
+  "domain": "Term3_Acoustic_Bleed_Depth",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "acoustic_resonance_materials_benchmark.json",
+    "music_harmonics_public_panel_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "material",
+    "particle",
+    "energy",
+    "acoustical"
+  ],
+  "D_eff": 15,
+  "record_count": 23,
+  "observable_count": 23,
+  "median_error_pct": 0.008381497018408523,
+  "pooled_median_error_pct": 0.008381497018408523,
+  "headline_median_error_pct": 0.008381497018409132,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "term3_depth": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Empirical impedance / ASHRAE"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_acoustic_formula_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.008381,
+      "measured": 0.0,
+      "error_pct": 0.008381497018408523,
+      "observable_count": 23
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "acoustic_formula",
+      "name": "term3_depth",
+      "computed": 0.008381,
+      "measured": 0.0,
+      "error_pct": 0.008381497018409132,
+      "observable_count": 22
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Air_20C",
+      "computed": 0.000412766290514644,
+      "measured": 0.000413,
+      "error_pct": 0.05658825311283946,
+      "source": "fsot_species_catalog.json",
+      "section": "molecules",
+      "formula": "(e*((((\u03b3)^2)^2)^2)^2)",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Water_20C",
+      "computed": 1.4747388085852202,
+      "measured": 1.48,
+      "error_pct": 0.3555,
+      "source": "fsot_species_catalog.json",
+      "section": "molecules",
+      "formula": "PI-A_IN",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Aluminum",
+      "computed": 16.943944269597875,
+      "measured": 17.0,
+      "error_pct": 0.3297,
+      "source": "fsot_species_catalog.json",
+      "section": "molecules",
+      "formula": "E\u00b3-PI",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Steel",
+      "computed": 45.0,
+      "measured": 45.0,
+      "error_pct": 0.0,
+      "source": "fsot_species_catalog.json",
+      "section": "molecules",
+      "formula": "((3)^2*(2+3))",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Copper",
+      "computed": 41.60108808814756,
+      "measured": 41.6,
+      "error_pct": 0.002615596508561178,
+      "source": "fsot_species_catalog.json",
+      "section": "molecules",
+      "formula": "((\u03c6+3)/((\u03b3)^2)^2)",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Titanium",
+      "computed": 27.474593022118317,
+      "measured": 27.3,
+      "error_pct": 0.6395,
+      "source": "fsot_species_catalog.json",
+      "section": "molecules",
+      "formula": "E\u00b3+E\u00b2",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Glass",
+      "computed": 14.5,
+      "measured": 14.5,
+      "error_pct": 0.0,
+      "source": "fsot_species_catalog.json",
+      "section": "molecules",
+      "formula": "(((2)^2)^2-(3/2))",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Nickel",
+      "computed": 49.596747752497684,
+      "measured": 49.5,
+      "error_pct": 0.1955,
+      "source": "fsot_species_catalog.json",
+      "section": "molecules",
+      "formula": "PHI\u2078+PHI\u00b2",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "acoustic_impedance_MRayl",
+      "name": "Glycerin",
+      "computed": 2.4179795517886737,
+      "measured": 2.42,
+      "error_pct": 0.0835,
+      "source": "fsot_species_catalog.json",
+      "section": "molecules",
+      "formula": "E-P_NEW",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "building_acoustical_coupling",
+      "name": "Residential SEER 14 baseline",
+      "computed": 14.001173,
+      "measured": 14.0,
+      "error_pct": 0.008381497018409132,
+      "source": "architecture_building_science_gap_fill_benchmark.json",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "building_acoustical_coupling",
+      "name": "Residential SEER 14 baseline",
+      "computed": 3.500293,
+      "measured": 3.5,
+      "error_pct": 0.008381497018409132,
+      "source": "architecture_building_science_gap_fill_benchmark.json",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "building_acoustical_coupling",
+      "name": "High-efficiency SEER 22",
+      "computed": 22.001844,
+      "measured": 22.0,
+      "error_pct": 0.008381497018399903,
+      "source": "architecture_building_science_gap_fill_benchmark.json",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "building_acoustical_coupling",
+      "name": "High-efficiency SEER 22",
+      "computed": 5.500461,
+      "measured": 5.5,
+      "error_pct": 0.008381497018399903,
+      "source": "architecture_building_science_gap_fill_benchmark.json",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "building_acoustical_coupling",
+      "name": "Heat pump HSPF 10",
+      "computed": 10.000838,
+      "measured": 10.0,
+      "error_pct": 0.008381497018401518,
+      "source": "architecture_building_science_gap_fill_benchmark.json",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "building_acoustical_coupling",
+      "name": "Heat pump HSPF 10",
+      "computed": 3.000251,
+      "measured": 3.0,
+      "error_pct": 0.00838149701841336,
+      "source": "architecture_building_science_gap_fill_benchmark.json",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "building_acoustical_coupling",
+      "name": "Heat pump HSPF 13",
+      "computed": 13.00109,
+      "measured": 13.0,
+      "error_pct": 0.008381497018411083,
+      "source": "architecture_building_science_gap_fill_benchmark.json",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "building_acoustical_coupling",
+      "name": "Heat pump HSPF 13",
+      "computed": 3.800318,
+      "measured": 3.8,
+      "error_pct": 0.008381497018404791,
+      "source": "architecture_building_science_gap_fill_benchmark.json",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "building_acoustical_coupling",
+      "name": "Carnot COP (0C cold, 27C hot)",
+      "computed": 11.000922,
+      "measured": 11.0,
+      "error_pct": 0.008381497018399903,
+      "source": "architecture_building_science_gap_fill_benchmark.json",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "building_acoustical_coupling",
+      "name": "Carnot COP (0C cold, 27C hot)",
+      "computed": 273.172894,
+      "measured": 273.15,
+      "error_pct": 0.008381497018412922,
+      "source": "architecture_building_science_gap_fill_benchmark.json",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "building_acoustical_coupling",
+      "name": "Carnot COP (0C cold, 27C hot)",
+      "computed": 300.175157,
+      "measured": 300.15,
+      "error_pct": 0.008381497018408523,
+      "source": "architecture_building_science_gap_fill_benchmark.json",
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "acoustic_formula"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "fifth_fourth_octave_closure",
+      "name": "circle_of_fifths_compound",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "harmonic_consistency",
+      "source_panel": "music_harmonics"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "twelve_tet_octave_closure",
+      "name": "equal_temperament_compound",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "temperament_consistency",
+      "source_panel": "music_harmonics"
+    },
+    {
+      "lab": "term3_acoustic_bleed_depth_lab",
+      "property": "acoustic_bleed_constant",
+      "name": "A_BLEED",
+      "computed": 1.046973630587551,
+      "measured": 1.046973630587551,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "eval_kind": "canonical_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.008381497018408523,
+    "max_scalar_error_pct": 0.6395,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5
+}
