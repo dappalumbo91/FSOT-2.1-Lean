@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-07-10T21:02:32.508177+00:00",
+  "fsot_scale": {
+    "extension_domains": 245,
+    "priors_lean_modules": 308,
+    "total_lean_theorems": 1681,
+    "norm_num_certificate_uses": 1876
+  },
+  "coq_cross_proof": {
+    "tier": "79_connective_spine",
+    "lean_source_modules": 3,
+    "obligations_proved_in_coq": 24,
+    "pct_of_priors_modules": 0.974,
+    "pct_of_lean_theorems": 1.4277,
+    "pct_of_extension_domains": 1.2245
+  },
+  "full_priors_spine": {
+    "obligations_exportable": 613,
+    "obligations_in_full_json": 1081,
+    "modules_in_full_json": 301,
+    "pct_of_priors_modules": 97.7273,
+    "pct_of_lean_theorems": 64.307,
+    "coq_proved_yet": 24,
+    "coq_proved_pct_of_full_export": 2.2202
+  },
+  "interpretation": "Coq Tier-79 proves the connective spine (warp/fusion/E10D) \u2014 not the full 256-domain corpus. Expand via export_full_priors_obligations.py for bench-style norm_num certificates.",
+  "scan": {
+    "priors_modules": 308,
+    "total_theorems": 1681,
+    "norm_num_uses": 1876,
+    "exportable_theorem_hints": 613,
+    "modules_with_exportable": 299,
+    "top_exportable_modules": [
+      {
+        "module": "DomainCoveragePriors",
+        "theorems": 14,
+        "exportable_hints": 9
+      },
+      {
+        "module": "WarpActuationDevelopmentPriors",
+        "theorems": 14,
+        "exportable_hints": 9
+      },
+      {
+        "module": "WarpBhWhPortalPriors",
+        "theorems": 11,
+        "exportable_hints": 7
+      },
+      {
+        "module": "E10dWdConnectivePriors",
+        "theorems": 6,
+        "exportable_hints": 5
+      },
+      {
+        "module": "ClimateSciencePriors",
+        "theorems": 5,
+        "exportable_hints": 4
+      },
+      {
+        "module": "FusionGridConnectivePriors",
+        "theorems": 5,
+        "exportable_hints": 4
+      },
+      {
+        "module": "MathGeneratorPriors",
+        "theorems": 6,
+        "exportable_hints": 4
+      },
+      {
+        "module": "NeuronCohortPriors",
+        "theorems": 12,
+        "exportable_hints": 4
+      },
+      {
+        "module": "SymbolicArchetypePanelPriors",
+        "theorems": 7,
+        "exportable_hints": 4
+      },
+      {
+        "module": "ThesisSimulationPriors",
+        "theorems": 6,
+        "exportable_hints": 4
+      },
+      {
+        "module": "AcousticResonanceMaterialsPriors",
+        "theorems": 6,
+        "exportable_hints": 3
+      },
+      {
+        "module": "AIGalacticOrbitalBridgePriors",
+        "theorems": 6,
+        "exportable_hints": 3
+      },
+      {
+        "module": "AstrophysicalStructureCrosswalkPriors",
+        "theorems": 6,
+        "exportable_hints": 3
+      },
+      {
+        "module": "BubbleBleedPriors",
+        "theorems": 10,
+        "exportable_hints": 3
+      },
+      {
+        "module": "CodeGenomeStructurePriors",
+        "theorems": 6,
+        "exportable_hints": 3
+      }
+    ]
+  },
+  "other_frameworks": {
+    "implemented": [
+      "lean4",
+      "python_decimal",
+      "rocq_coq",
+      "coqchk"
+    ],
+    "artifacts_ready": [
+      "isabelle"
+    ],
+    "planned_tier_80": [
+      "agda",
+      "metamath"
+    ],
+    "all_free_no_account": true
+  }
+}

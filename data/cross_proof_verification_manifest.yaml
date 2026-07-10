@@ -60,3 +60,37 @@ status_local:
   coq: passed
   isabelle: pending_manual_install
   github_ready: true
+
+coverage_audit:
+  script: scripts/audit_cross_proof_coverage.py
+  output: data/cross_proof_coverage_audit.json
+  fsot_extension_domains: 245
+  priors_lean_modules: 308
+  lean_theorems_total: 1681
+  coq_tier79_obligations: 24
+  coq_tier79_modules: 3
+  coq_pct_of_corpus_theorems: 1.43
+  full_priors_exportable: 1081
+  full_priors_modules: 301
+  tier_80_goal: prove full_priors_spine in Coq + Isabelle + Agda/Metamath
+
+isabelle_install:
+  script: scripts/install_isabelle_windows.ps1
+  manual_url: https://isabelle.in.tum.de/
+  installer_name: Isabelle2024-1_windows.exe
+  note: Delete corrupt tiny download in Downloads if present (281 bytes)
+
+other_frameworks_tier_80:
+  - name: isabelle
+    status: artifacts_ready
+    account_required: false
+  - name: agda
+    status: planned
+    account_required: false
+  - name: metamath
+    status: planned
+    account_required: false
+    note: ultra-minimal third check, tiny download
+  - name: fstar
+    status: optional
+    account_required: false
