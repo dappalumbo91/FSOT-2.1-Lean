@@ -52,7 +52,8 @@ def main() -> int:
     doc["tier"] = 51
     doc["bridge_meta"] = meta
     doc["bridge_observables"] = bridge_records
-    doc["bridge_status"] = "GREEN" if (doc.get("pooled_median_error_pct") or 99) < 0.5 else "YELLOW"
+    pooled = float(doc.get("pooled_median_error_pct") if doc.get("pooled_median_error_pct") is not None else 99)
+    doc["bridge_status"] = "GREEN" if pooled < 0.5 else "YELLOW"
     args.output.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     print(f"Wrote {args.output}")
     print(f"  records={doc['record_count']}  pooled={doc['pooled_median_error_pct']:.4f}%")
