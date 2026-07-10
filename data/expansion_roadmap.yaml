@@ -1,5 +1,5 @@
 # FSOT interdisciplinary expansion roadmap — public-data first, preregister before novel claims.
-version: "1.7"
+version: "1.8"
 updated: "2026-07-10"
 policy: >
   Ship verification against published observables in-repo. Reserve novel material,
@@ -101,8 +101,18 @@ completed_tiers:
     - Cold_Fusion_Lab_Synthesis_Crosswalk
     - Metamaterial_Fluid_Design_Prereg_Scaffold
     - Lab_Synthesis_Metamaterial_Spine
+  tier_74:
+    - Island_Of_Stability_Deep_Panel
+    - Z120_Z126_Beam_Synthesis_Panel
+    - Fusion_Decay_Chain_Prereg_Scaffold
+    - Superheavy_Island_Emergence_Simulation
+    - Superheavy_Island_Completion_Spine
 
 priority_queue:
+  tier_74_superheavy_island_deepening:
+    status: completed
+    focus: [island_z120_z126, beam_synthesis, fusion_decay_chains, island_emergence_sim]
+    note: "Island-of-stability deepening — Z=120-126 half-lives, beam targets, Pd-D/muon decay chain prereg"
   tier_73_lab_synthesis_metamaterial:
     status: completed
     focus: [heavy_ion_lab_synthesis, synthesis_conditions, cold_fusion_crosswalk, metamaterial_fluid_prereg]
@@ -135,15 +145,18 @@ priority_queue:
     note: "Publication-facing ToE claim bundle — proof ledger + prereg outcomes + certificate"
 
 maintenance_queue:
-  post_tier_73:
+  post_tier_74:
     status: ongoing
     focus:
       - hybrid_fi_sim_multi_hero
       - knowledge_base_portable_bundle
       - rd_interval_tightening
       - domain_coupling_simulation_refresh
-      - metamaterial_fluid_experimental_validation
-    note: "Ongoing upkeep after Tier 73 lab synthesis — FI sim, KB bundle, r_d tightening, metamaterial fluid-effect prereg validation"
+      - island_decay_chain_experimental_validation
+    note: "Ongoing upkeep after Tier 74 island deepening — FI sim, KB bundle, r_d tightening, Z=120-126 prereg validation"
+  post_tier_73:
+    status: completed
+    note: "Superseded by post_tier_74 maintenance queue"
   post_tier_72:
     status: completed
     note: "Superseded by post_tier_73 maintenance queue"

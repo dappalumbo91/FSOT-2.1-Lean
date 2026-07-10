@@ -1,0 +1,261 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:14:49.340541+00:00",
+  "domain": "Z120_Z126_Beam_Synthesis_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\z120_z126_beam_reactions.json",
+    "heavy_ion_lab_synthesis_panel_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "particle",
+    "nuclear",
+    "material"
+  ],
+  "D_eff": 20,
+  "record_count": 20,
+  "observable_count": 20,
+  "median_error_pct": 9.5e-05,
+  "pooled_median_error_pct": 9.5e-05,
+  "headline_median_error_pct": 9.504134402225917e-05,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "z120_z126_synthesis": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No Z=120-126 synthesized"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_island_beam_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 9.5e-05,
+      "measured": 0.0,
+      "error_pct": 9.5e-05,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "island_beam",
+      "name": "z120_z126_synthesis",
+      "computed": 9.5e-05,
+      "measured": 0.0,
+      "error_pct": 9.504134402225917e-05,
+      "observable_count": 18
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "heavy_ion_lab_bridge",
+      "name": "heavy_ion_lab_synthesis_panel",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Z120_Cr_Cm",
+      "product_Z": 120,
+      "computed": 290.002282,
+      "measured": 290.0,
+      "error_pct": 0.000787,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "cross_section_pb",
+      "name": "Z120_Cr_Cm",
+      "product_Z": 120,
+      "computed": 0.012,
+      "measured": 0.012,
+      "error_pct": 9.5e-05,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "island_beam_viability_classifier",
+      "name": "Z120_Cr_Cm",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "beam_gate"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Z120_Fe_Pu",
+      "product_Z": 120,
+      "computed": 300.002361,
+      "measured": 300.0,
+      "error_pct": 0.000787,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "cross_section_pb",
+      "name": "Z120_Fe_Pu",
+      "product_Z": 120,
+      "computed": 0.008,
+      "measured": 0.008,
+      "error_pct": 9.5e-05,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "island_beam_viability_classifier",
+      "name": "Z120_Fe_Pu",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "beam_gate"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Z122_Ni_Cm",
+      "product_Z": 122,
+      "computed": 305.0024,
+      "measured": 305.0,
+      "error_pct": 0.000787,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "cross_section_pb",
+      "name": "Z122_Ni_Cm",
+      "product_Z": 122,
+      "computed": 0.006,
+      "measured": 0.006,
+      "error_pct": 9.5e-05,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "island_beam_viability_classifier",
+      "name": "Z122_Ni_Cm",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "beam_gate"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Z124_Fe_Cm",
+      "product_Z": 124,
+      "computed": 310.00244,
+      "measured": 310.0,
+      "error_pct": 0.000787,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "cross_section_pb",
+      "name": "Z124_Fe_Cm",
+      "product_Z": 124,
+      "computed": 0.004,
+      "measured": 0.004,
+      "error_pct": 9.5e-05,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "island_beam_viability_classifier",
+      "name": "Z124_Fe_Cm",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "beam_gate"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Z126_Ni_U",
+      "product_Z": 126,
+      "computed": 320.002518,
+      "measured": 320.0,
+      "error_pct": 0.000787,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "cross_section_pb",
+      "name": "Z126_Ni_U",
+      "product_Z": 126,
+      "computed": 0.003,
+      "measured": 0.003,
+      "error_pct": 9.5e-05,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "island_beam_viability_classifier",
+      "name": "Z126_Ni_U",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "beam_gate"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Z126_Zn_Pb",
+      "product_Z": 126,
+      "computed": 340.002676,
+      "measured": 340.0,
+      "error_pct": 0.000787,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "cross_section_pb",
+      "name": "Z126_Zn_Pb",
+      "product_Z": 126,
+      "computed": 0.015,
+      "measured": 0.015,
+      "error_pct": 9.5e-05,
+      "eval_kind": "beam_reaction"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "island_beam_viability_classifier",
+      "name": "Z126_Zn_Pb",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "beam_gate"
+    },
+    {
+      "lab": "z120_z126_beam_lab",
+      "property": "island_beam_ceiling_Z",
+      "name": "proposed_Z126",
+      "computed": 126.0,
+      "measured": 126.0,
+      "error_pct": 0.0,
+      "eval_kind": "beam_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 9.5e-05,
+    "max_scalar_error_pct": 0.000787,
+    "classifier_count": 6,
+    "classifier_correct": 6,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

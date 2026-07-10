@@ -1,4 +1,4 @@
-generated_at: '2026-07-10T19:05:11.171272+00:00'
+generated_at: '2026-07-10T19:15:00.383429+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,16 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 295
+  lean_formal_modules: 300
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
   tiers_complete: 48
   tiers_total: 48
   percent_complete: 100.0
-current_tier: Tier 73 Lab synthesis + metamaterial fluid design — 225/225 extension
-  domains verified, heavy-ion lab conditions + cold-fusion crosswalk + fluid-like
-  metamaterial prereg
+current_tier: Tier 74 Superheavy island deepening — 230/230 extension domains verified,
+  Z=120-126 island anchors + beam synthesis + fusion decay chain prereg
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -540,6 +539,7 @@ tier_coverage:
   - FuelCandidatePreregScaffoldPriors
   - FuelPriors
   - FuelThermochemistryPublicAnchorsPriors
+  - FusionDecayChainPreregScaffoldPriors
   - FusionLabCertificateSpinePriors
   - FusionPhysicsPublicPanelPriors
   - GWOSCLiveEventDeepPriors
@@ -571,6 +571,7 @@ tier_coverage:
   - InterdisciplinarySpineCrosswalkPriors
   - IntrinsicLLMValidatorsPriors
   - IonosphericChemistryCouplingPriors
+  - IslandOfStabilityDeepPanelPriors
   - KnowledgeBasePriors
   - KronosPriors
   - LabSynthesisMetamaterialSpinePriors
@@ -688,6 +689,8 @@ tier_coverage:
   - StumpedObservablesPanelPriors
   - StumpedObservablesSpinePriors
   - SuperheavyElementStabilityPanelPriors
+  - SuperheavyIslandCompletionSpinePriors
+  - SuperheavyIslandEmergenceSimulationPriors
   - SupplyChainLogisticsExtensionPriors
   - SymbolicArchetypePanelPriors
   - SyntheticBiologyPriors
@@ -722,6 +725,7 @@ tier_coverage:
   - WeatherPriors
   - WorldBankDevelopmentPriors
   - XRInteractiveMediaMathScaffoldPriors
+  - Z120Z126BeamSynthesisPanelPriors
   - ZeroDayRiskEvaluatorPriors
   - ZoologyExtensionPriors
 - tier: 7
@@ -2943,6 +2947,26 @@ extension_domains:
   tier: 73
   record_count: 43
   lean_module: FSOT.Formal.LabSynthesisMetamaterialSpinePriors
+- domain: Island_Of_Stability_Deep_Panel
+  tier: 74
+  record_count: 23
+  lean_module: FSOT.Formal.IslandOfStabilityDeepPanelPriors
+- domain: Z120_Z126_Beam_Synthesis_Panel
+  tier: 74
+  record_count: 20
+  lean_module: FSOT.Formal.Z120Z126BeamSynthesisPanelPriors
+- domain: Fusion_Decay_Chain_Prereg_Scaffold
+  tier: 74
+  record_count: 18
+  lean_module: FSOT.Formal.FusionDecayChainPreregScaffoldPriors
+- domain: Superheavy_Island_Emergence_Simulation
+  tier: 74
+  record_count: 44
+  lean_module: FSOT.Formal.SuperheavyIslandEmergenceSimulationPriors
+- domain: Superheavy_Island_Completion_Spine
+  tier: 74
+  record_count: 43
+  lean_module: FSOT.Formal.SuperheavyIslandCompletionSpinePriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -3740,6 +3764,7 @@ lean_formal_modules:
 - FuelCandidatePreregScaffoldPriors
 - FuelPriors
 - FuelThermochemistryPublicAnchorsPriors
+- FusionDecayChainPreregScaffoldPriors
 - FusionLabCertificateSpinePriors
 - FusionPhysicsPublicPanelPriors
 - GWOSCLiveEventDeepPriors
@@ -3771,6 +3796,7 @@ lean_formal_modules:
 - InterdisciplinarySpineCrosswalkPriors
 - IntrinsicLLMValidatorsPriors
 - IonosphericChemistryCouplingPriors
+- IslandOfStabilityDeepPanelPriors
 - KnowledgeBasePriors
 - KronosPriors
 - LabSynthesisMetamaterialSpinePriors
@@ -3887,6 +3913,8 @@ lean_formal_modules:
 - StumpedObservablesPanelPriors
 - StumpedObservablesSpinePriors
 - SuperheavyElementStabilityPanelPriors
+- SuperheavyIslandCompletionSpinePriors
+- SuperheavyIslandEmergenceSimulationPriors
 - SupplyChainLogisticsExtensionPriors
 - SymbolicArchetypePanelPriors
 - SyntheticBiologyPriors
@@ -3921,6 +3949,7 @@ lean_formal_modules:
 - WeatherPriors
 - WorldBankDevelopmentPriors
 - XRInteractiveMediaMathScaffoldPriors
+- Z120Z126BeamSynthesisPanelPriors
 - ZeroDayRiskEvaluatorPriors
 - ZoologyExtensionPriors
 certificate_path: data/certificate.json

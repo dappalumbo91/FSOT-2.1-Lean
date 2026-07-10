@@ -1,0 +1,11 @@
+{
+  "source": "Proposed heavy-ion reactions targeting island-of-stability Z=120-126",
+  "reactions": [
+    {"id": "Z120_Cr_Cm", "beam": "Cr-54", "target": "Cm-248", "product_Z": 120, "product_A": 302, "beam_energy_mev_u": 290, "cross_section_pb": 0.012, "facility": "JINR_Dubna", "fsot_viability_score": 0.55},
+    {"id": "Z120_Fe_Pu", "beam": "Fe-58", "target": "Pu-244", "product_Z": 120, "product_A": 302, "beam_energy_mev_u": 300, "cross_section_pb": 0.008, "facility": "GSI_Darmstadt", "fsot_viability_score": 0.48},
+    {"id": "Z122_Ni_Cm", "beam": "Ni-64", "target": "Cm-248", "product_Z": 122, "product_A": 306, "beam_energy_mev_u": 305, "cross_section_pb": 0.006, "facility": "RIKEN", "fsot_viability_score": 0.41},
+    {"id": "Z124_Fe_Cm", "beam": "Fe-58", "target": "Cm-250", "product_Z": 124, "product_A": 308, "beam_energy_mev_u": 310, "cross_section_pb": 0.004, "facility": "GSI_Darmstadt", "fsot_viability_score": 0.38},
+    {"id": "Z126_Ni_U", "beam": "Ni-64", "target": "U-238", "product_Z": 126, "product_A": 310, "beam_energy_mev_u": 320, "cross_section_pb": 0.003, "facility": "GSI_Darmstadt", "fsot_viability_score": 0.48},
+    {"id": "Z126_Zn_Pb", "beam": "Zn-70", "target": "Pb-208", "product_Z": 126, "product_A": 278, "beam_energy_mev_u": 340, "cross_section_pb": 0.015, "facility": "GSI_Darmstadt", "fsot_viability_score": 0.35, "note": "non_island_A_evaporation_channel"}
+  ]
+}

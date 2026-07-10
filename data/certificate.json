@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T19:05:10.286056+00:00",
+  "generated_at": "2026-07-10T19:14:59.498284+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -115,6 +115,7 @@
     "FSOT.Formal.FuelCandidatePreregScaffoldPriors",
     "FSOT.Formal.FuelPriors",
     "FSOT.Formal.FuelThermochemistryPublicAnchorsPriors",
+    "FSOT.Formal.FusionDecayChainPreregScaffoldPriors",
     "FSOT.Formal.FusionLabCertificateSpinePriors",
     "FSOT.Formal.FusionPhysicsPublicPanelPriors",
     "FSOT.Formal.GaiaAstrometryPanelDeepPriors",
@@ -146,6 +147,7 @@
     "FSOT.Formal.InterdisciplinarySpineCrosswalkPriors",
     "FSOT.Formal.IntrinsicLLMValidatorsPriors",
     "FSOT.Formal.IonosphericChemistryCouplingPriors",
+    "FSOT.Formal.IslandOfStabilityDeepPanelPriors",
     "FSOT.Formal.KnowledgeBasePriors",
     "FSOT.Formal.KronosPriors",
     "FSOT.Formal.LabSynthesisMetamaterialSpinePriors",
@@ -265,6 +267,8 @@
     "FSOT.Formal.StumpedObservablesPanelPriors",
     "FSOT.Formal.StumpedObservablesSpinePriors",
     "FSOT.Formal.SuperheavyElementStabilityPanelPriors",
+    "FSOT.Formal.SuperheavyIslandCompletionSpinePriors",
+    "FSOT.Formal.SuperheavyIslandEmergenceSimulationPriors",
     "FSOT.Formal.SupplyChainLogisticsExtensionPriors",
     "FSOT.Formal.SymbolicArchetypePanelPriors",
     "FSOT.Formal.SyntheticBiologyPriors",
@@ -299,6 +303,7 @@
     "FSOT.Formal.WeatherPriors",
     "FSOT.Formal.WorldBankDevelopmentPriors",
     "FSOT.Formal.XRInteractiveMediaMathScaffoldPriors",
+    "FSOT.Formal.Z120Z126BeamSynthesisPanelPriors",
     "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
     "FSOT.Formal.ZoologyExtensionPriors"
   ],
@@ -2113,6 +2118,13 @@
       "fuel_thermochemistry_public_anchors_beats_sota_headlines_pos",
       "fuel_thermochemistry_public_anchors_bundle"
     ],
+    "FusionDecayChainPreregScaffoldPriors": [
+      "fusion_decay_chain_prereg_scaffold_observable_count_pos",
+      "fusion_decay_chain_prereg_scaffold_pooled_median_under_half_pct",
+      "fusion_decay_chain_prereg_scaffold_headline_median_under_half_pct",
+      "fusion_decay_chain_prereg_scaffold_beats_sota_headlines_pos",
+      "fusion_decay_chain_prereg_scaffold_bundle"
+    ],
     "FusionLabCertificateSpinePriors": [
       "fusion_lab_certificate_spine_observable_count_pos",
       "fusion_lab_certificate_spine_pooled_median_under_half_pct",
@@ -2338,6 +2350,13 @@
       "iono_chem_headline_median_under_half_pct",
       "iono_chem_beats_sota_headlines_pos",
       "iono_chem_bundle"
+    ],
+    "IslandOfStabilityDeepPanelPriors": [
+      "island_of_stability_deep_panel_observable_count_pos",
+      "island_of_stability_deep_panel_pooled_median_under_half_pct",
+      "island_of_stability_deep_panel_headline_median_under_half_pct",
+      "island_of_stability_deep_panel_beats_sota_headlines_pos",
+      "island_of_stability_deep_panel_bundle"
     ],
     "KnowledgeBasePriors": [
       "knowledge_base_source_count_pos",
@@ -3199,6 +3218,20 @@
       "superheavy_element_stability_panel_beats_sota_headlines_pos",
       "superheavy_element_stability_panel_bundle"
     ],
+    "SuperheavyIslandCompletionSpinePriors": [
+      "superheavy_island_completion_spine_observable_count_pos",
+      "superheavy_island_completion_spine_pooled_median_under_half_pct",
+      "superheavy_island_completion_spine_headline_median_under_half_pct",
+      "superheavy_island_completion_spine_beats_sota_headlines_pos",
+      "superheavy_island_completion_spine_bundle"
+    ],
+    "SuperheavyIslandEmergenceSimulationPriors": [
+      "superheavy_island_emergence_simulation_observable_count_pos",
+      "superheavy_island_emergence_simulation_pooled_median_under_half_pct",
+      "superheavy_island_emergence_simulation_headline_median_under_half_pct",
+      "superheavy_island_emergence_simulation_beats_sota_headlines_pos",
+      "superheavy_island_emergence_simulation_bundle"
+    ],
     "SupplyChainLogisticsExtensionPriors": [
       "supply_chain_ext_observable_count_pos",
       "supply_chain_ext_pooled_median_under_half_pct",
@@ -3477,6 +3510,13 @@
       "xr_interactive_media_math_scaffold_beats_sota_headlines_pos",
       "xr_interactive_media_math_scaffold_bundle"
     ],
+    "Z120Z126BeamSynthesisPanelPriors": [
+      "z120_z126_beam_synthesis_panel_observable_count_pos",
+      "z120_z126_beam_synthesis_panel_pooled_median_under_half_pct",
+      "z120_z126_beam_synthesis_panel_headline_median_under_half_pct",
+      "z120_z126_beam_synthesis_panel_beats_sota_headlines_pos",
+      "z120_z126_beam_synthesis_panel_bundle"
+    ],
     "ZeroDayRiskEvaluatorPriors": [
       "zero_day_eval_observable_count_pos",
       "zero_day_eval_pooled_median_under_half_pct",
@@ -3513,8 +3553,8 @@
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
-  "formal_module_count": 295,
-  "lean_target_count": 296,
+  "formal_module_count": 300,
+  "lean_target_count": 301,
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",

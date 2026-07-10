@@ -1,0 +1,18 @@
+{
+  "source": "Island-of-stability deep anchors Z=119-126 — theoretical + FSOT prereg crosswalk",
+  "magic_numbers": {"proton": [114, 120, 126, 132], "neutron": [184, 228]},
+  "island_candidates": [
+    {"id": "Z119_N177", "Z": 119, "N": 177, "A": 296, "name": "Ununennium", "predicted_half_life_s": 0.8, "binding_energy_per_nucleon_mev": 7.45, "magic_proximity": 7, "status": "not_synthesized"},
+    {"id": "Z120_N184", "Z": 120, "N": 184, "A": 304, "name": "Unbinilium", "predicted_half_life_s": 2.5e6, "binding_energy_per_nucleon_mev": 7.62, "magic_proximity": 0, "status": "island_peak_candidate"},
+    {"id": "Z122_N184", "Z": 122, "N": 184, "A": 306, "name": "Z=122 island shoulder", "predicted_half_life_s": 8.5e4, "binding_energy_per_nucleon_mev": 7.58, "magic_proximity": 2, "status": "theoretical"},
+    {"id": "Z124_N184", "Z": 124, "N": 184, "A": 308, "name": "Z=124 island candidate", "predicted_half_life_s": 4.5e4, "binding_energy_per_nucleon_mev": 7.55, "magic_proximity": 4, "status": "theoretical"},
+    {"id": "Z126_N184", "Z": 126, "N": 184, "A": 310, "name": "Unbihexium", "predicted_half_life_s": 1.2e9, "binding_energy_per_nucleon_mev": 7.68, "magic_proximity": 0, "status": "island_peak_candidate"},
+    {"id": "Z126_N190", "Z": 126, "N": 190, "A": 316, "name": "Unbihexium-316 isomer", "predicted_half_life_s": 3.2e7, "binding_energy_per_nucleon_mev": 7.61, "magic_proximity": 6, "status": "theoretical_isomer"}
+  ],
+  "discovered_superheavy_decay_trend": [
+    {"Z": 114, "half_life_s": 1.5, "N_nearest_magic": 175},
+    {"Z": 116, "half_life_s": 0.053, "N_nearest_magic": 177},
+    {"Z": 118, "half_life_s": 0.0007, "N_nearest_magic": 176},
+    {"Z": 120, "half_life_s": 0.0, "N_nearest_magic": 184, "note": "extrapolated_pre_synthesis"}
+  ]
+}

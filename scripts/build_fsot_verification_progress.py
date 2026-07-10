@@ -1680,7 +1680,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 73 Lab synthesis + metamaterial fluid design — 225/225 extension domains verified, heavy-ion lab conditions + cold-fusion crosswalk + fluid-like metamaterial prereg",
+        "current_position": "Tier 74 Superheavy island deepening — 230/230 extension domains verified, Z=120-126 island anchors + beam synthesis + fusion decay chain prereg",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

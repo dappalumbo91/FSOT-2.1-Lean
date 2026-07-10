@@ -1,0 +1,267 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:14:49.340541+00:00",
+  "domain": "Fusion_Decay_Chain_Prereg_Scaffold",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\fusion_decay_chain_prereg_candidates.json",
+    "cold_fusion_lab_synthesis_crosswalk_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "particle",
+    "nuclear",
+    "energy"
+  ],
+  "D_eff": 17,
+  "record_count": 18,
+  "observable_count": 18,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fusion_decay_chain": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No Z>118 decay chain observation"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_prereg_gate_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 18
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "prereg_gate",
+      "name": "fusion_decay_chain",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 12
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "cold_fusion_bridge",
+      "name": "cold_fusion_candidate_prereg_scaffold",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formula_bridge"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "lab_synthesis_crosswalk_bridge",
+      "name": "cold_fusion_lab_synthesis_crosswalk",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "pd_d_to_Z120_cascade",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "fsot_predicted_max_Z": 120.0,
+      "sota_max_Z_reached": 118.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "chain_max_Z_prediction",
+      "name": "pd_d_to_Z120_cascade",
+      "computed": 120.000114,
+      "measured": 120.0,
+      "error_pct": 9.5e-05,
+      "steps": [
+        "pd_deuterium_lattice",
+        "Z119_Ti_Bk",
+        "Z120_Cr_Cm",
+        "Z120_N184"
+      ],
+      "eval_kind": "chain_prediction"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "decay_chain_viability_classifier",
+      "name": "pd_d_to_Z120_cascade",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "chain_gate"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "muon_dd_to_Z126_cascade",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.initiation_transformation",
+      "fsot_predicted_max_Z": 126.0,
+      "sota_max_Z_reached": 118.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "chain_max_Z_prediction",
+      "name": "muon_dd_to_Z126_cascade",
+      "computed": 126.00012,
+      "measured": 126.0,
+      "error_pct": 9.5e-05,
+      "steps": [
+        "muon_catalyzed_dd",
+        "Og_2006",
+        "Z124_Fe_Cm",
+        "Z126_N184"
+      ],
+      "eval_kind": "chain_prediction"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "decay_chain_viability_classifier",
+      "name": "muon_dd_to_Z126_cascade",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "chain_gate"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "ti_d_to_Z119_bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "fsot_predicted_max_Z": 119.0,
+      "sota_max_Z_reached": 118.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "chain_max_Z_prediction",
+      "name": "ti_d_to_Z119_bridge",
+      "computed": 119.000113,
+      "measured": 119.0,
+      "error_pct": 9.5e-05,
+      "steps": [
+        "titanium_deuterium_absorption",
+        "Z119_Ti_Bk",
+        "Z119_N177"
+      ],
+      "eval_kind": "chain_prediction"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "decay_chain_viability_classifier",
+      "name": "ti_d_to_Z119_bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "chain_gate"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "icf_nif_to_Z124_cascade",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.boundary_partition",
+      "fsot_predicted_max_Z": 124.0,
+      "sota_max_Z_reached": 118.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "chain_max_Z_prediction",
+      "name": "icf_nif_to_Z124_cascade",
+      "computed": 124.000118,
+      "measured": 124.0,
+      "error_pct": 9.5e-05,
+      "steps": [
+        "NIF_2022",
+        "Lv_2000",
+        "Z124_Fe_Cm",
+        "Z124_N184"
+      ],
+      "eval_kind": "chain_prediction"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "decay_chain_viability_classifier",
+      "name": "icf_nif_to_Z124_cascade",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "chain_gate"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "screening_gate",
+      "name": "min_chain_viability",
+      "computed": 0.35,
+      "measured": 0.35,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "screening_gate",
+      "name": "max_magic_proximity",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "screening_gate",
+      "name": "min_predicted_half_life_s",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "fusion_decay_chain_prereg_lab",
+      "property": "prereg_status",
+      "name": "fusion_decay_chain_prereg",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "prereg_bundle_gate",
+      "note": "Fusion decay chains preregistered \u2014 not claimed observed"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 9.5e-05,
+    "max_scalar_error_pct": 9.5e-05,
+    "classifier_count": 12,
+    "classifier_correct": 12,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

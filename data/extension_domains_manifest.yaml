@@ -2919,6 +2919,71 @@ extension_domains:
     lean_module: FSOT.Formal.LabSynthesisMetamaterialSpinePriors
     note: "Lab synthesis + metamaterial certificate rollup — heavy-ion + conditions + cold-fusion crosswalk + periodic/fusion bridges"
 
+  Island_Of_Stability_Deep_Panel:
+    tier: 74
+    D_eff: 19
+    delta_psi: 0.94
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, nuclear, fusion, atomic]
+    build_script: scripts/build_tier74_superheavy_island_benchmarks.py
+    manifest: data/tier74_superheavy_island_manifest.yaml
+    benchmark_data: data/island_of_stability_deep_panel_benchmark.json
+    lean_module: FSOT.Formal.IslandOfStabilityDeepPanelPriors
+    note: "Z=119-126 island deep anchors — half-lives, binding energy, magic-number proximity, decay trend"
+
+  Z120_Z126_Beam_Synthesis_Panel:
+    tier: 74
+    D_eff: 20
+    delta_psi: 0.91
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [fusion, particle, nuclear, material]
+    build_script: scripts/build_tier74_superheavy_island_benchmarks.py
+    manifest: data/tier74_superheavy_island_manifest.yaml
+    benchmark_data: data/z120_z126_beam_synthesis_panel_benchmark.json
+    lean_module: FSOT.Formal.Z120Z126BeamSynthesisPanelPriors
+    note: "Proposed Cr/Fe/Ni/Zn beams targeting Z=120-126 island — cross-section + facility viability"
+
+  Fusion_Decay_Chain_Prereg_Scaffold:
+    tier: 74
+    D_eff: 17
+    delta_psi: 0.93
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [fusion, particle, nuclear, energy]
+    build_script: scripts/build_tier74_superheavy_island_benchmarks.py
+    manifest: data/tier74_superheavy_island_manifest.yaml
+    benchmark_data: data/fusion_decay_chain_prereg_scaffold_benchmark.json
+    lean_module: FSOT.Formal.FusionDecayChainPreregScaffoldPriors
+    note: "Pd-D / muon-catalyzed / ICF → Z=119-126 decay chain prereg — not claimed observed"
+
+  Superheavy_Island_Emergence_Simulation:
+    tier: 74
+    D_eff: 21
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, nuclear, fusion, astronomical]
+    build_script: scripts/build_tier74_superheavy_island_benchmarks.py
+    manifest: data/tier74_superheavy_island_manifest.yaml
+    benchmark_data: data/superheavy_island_emergence_simulation_benchmark.json
+    lean_module: FSOT.Formal.SuperheavyIslandEmergenceSimulationPriors
+    note: "Island emergence pathway simulation for Z=120-126 — lab + fusion-decay-chain viability"
+
+  Superheavy_Island_Completion_Spine:
+    tier: 74
+    D_eff: 22
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, nuclear, fusion, atomic, material]
+    build_script: scripts/build_tier74_superheavy_island_benchmarks.py
+    manifest: data/tier74_superheavy_island_manifest.yaml
+    benchmark_data: data/superheavy_island_completion_spine_benchmark.json
+    lean_module: FSOT.Formal.SuperheavyIslandCompletionSpinePriors
+    note: "Superheavy island completion rollup — deep panel + beams + decay chains + emergence + Tier 72-73 bridges"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

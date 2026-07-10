@@ -198,3 +198,36 @@ predictions:
     sota_label: "Z=119 not yet synthesized"
     discriminant: "fsot_exceeds_sota_by_0.4"
     registered_at: "2026-07-10"
+
+  - id: PRED-018
+    name: pd_d_to_Z120_fusion_decay_cascade
+    domain: Fusion_Decay_Chain_Prereg_Scaffold
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 120
+    unit: atomic_number
+    sota_baseline: 118
+    sota_label: "IUPAC confirmed ceiling"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-019
+    name: muon_dd_to_Z126_fusion_decay_cascade
+    domain: Fusion_Decay_Chain_Prereg_Scaffold
+    fsot_formula_branch: term1.initiation_transformation
+    fsot_predicted: 126
+    unit: atomic_number
+    sota_baseline: 118
+    sota_label: "IUPAC confirmed ceiling"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-020
+    name: Z126_N184_unbihexium_beam_synthesis
+    domain: Z120_Z126_Beam_Synthesis_Panel
+    fsot_formula_branch: term3.boundary_partition
+    fsot_predicted: 0.48
+    unit: viability_score
+    sota_baseline: 0.0
+    sota_label: "Z=126 not yet synthesized"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"

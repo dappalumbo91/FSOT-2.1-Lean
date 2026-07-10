@@ -1,0 +1,303 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:14:49.340541+00:00",
+  "domain": "Island_Of_Stability_Deep_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\island_z120_z126_anchors.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "nuclear",
+    "fusion",
+    "atomic"
+  ],
+  "D_eff": 19,
+  "record_count": 23,
+  "observable_count": 23,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 9.504139423370362e-09,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "z120_z126_stability": {
+        "sota_typical_error_pct": 50.0,
+        "sota_model": "Shell-model island extrapolation"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_island_deep_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 23
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "island_deep",
+      "name": "z120_z126_stability",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 9.504139423370362e-09,
+      "observable_count": 22
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "superheavy_relay",
+      "name": "Rf",
+      "computed": 8100.000076983489,
+      "measured": 8100.0,
+      "error_pct": 1e-06,
+      "eval_kind": "superheavy_relay"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_half_life_s",
+      "name": "Z119_N177",
+      "Z": 119,
+      "computed": 0.8000000000760331,
+      "measured": 0.8,
+      "error_pct": 0.0,
+      "eval_kind": "island_half_life"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Z119_N177",
+      "Z": 119,
+      "computed": 7.450007,
+      "measured": 7.45,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_anchor"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_peak_classifier",
+      "name": "Z119_N177",
+      "Z": 119,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "magic_proximity": 7,
+      "eval_kind": "island_gate"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_half_life_s",
+      "name": "Z120_N184",
+      "Z": 120,
+      "computed": 2500000.000237603,
+      "measured": 2500000.0,
+      "error_pct": 0.0,
+      "eval_kind": "island_half_life"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Z120_N184",
+      "Z": 120,
+      "computed": 7.620007,
+      "measured": 7.62,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_anchor"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_peak_classifier",
+      "name": "Z120_N184",
+      "Z": 120,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 0,
+      "eval_kind": "island_gate"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_half_life_s",
+      "name": "Z122_N184",
+      "Z": 122,
+      "computed": 85000.00000807851,
+      "measured": 85000.0,
+      "error_pct": 0.0,
+      "eval_kind": "island_half_life"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Z122_N184",
+      "Z": 122,
+      "computed": 7.580007,
+      "measured": 7.58,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_anchor"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_peak_classifier",
+      "name": "Z122_N184",
+      "Z": 122,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 2,
+      "eval_kind": "island_gate"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_half_life_s",
+      "name": "Z124_N184",
+      "Z": 124,
+      "computed": 45000.00000427686,
+      "measured": 45000.0,
+      "error_pct": 0.0,
+      "eval_kind": "island_half_life"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Z124_N184",
+      "Z": 124,
+      "computed": 7.550007,
+      "measured": 7.55,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_anchor"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_peak_classifier",
+      "name": "Z124_N184",
+      "Z": 124,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 4,
+      "eval_kind": "island_gate"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_half_life_s",
+      "name": "Z126_N184",
+      "Z": 126,
+      "computed": 1200000000.1140497,
+      "measured": 1200000000.0,
+      "error_pct": 0.0,
+      "eval_kind": "island_half_life"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Z126_N184",
+      "Z": 126,
+      "computed": 7.680007,
+      "measured": 7.68,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_anchor"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_peak_classifier",
+      "name": "Z126_N184",
+      "Z": 126,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 0,
+      "eval_kind": "island_gate"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_half_life_s",
+      "name": "Z126_N190",
+      "Z": 126,
+      "computed": 32000000.003041323,
+      "measured": 32000000.0,
+      "error_pct": 0.0,
+      "eval_kind": "island_half_life"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Z126_N190",
+      "Z": 126,
+      "computed": 7.610007,
+      "measured": 7.61,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_anchor"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_peak_classifier",
+      "name": "Z126_N190",
+      "Z": 126,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "magic_proximity": 6,
+      "eval_kind": "island_gate"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "decay_trend_half_life_s",
+      "name": "Z114_discovered",
+      "Z": 114,
+      "computed": 1.5000000142562016,
+      "measured": 1.5,
+      "error_pct": 1e-06,
+      "eval_kind": "decay_trend"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "decay_trend_half_life_s",
+      "name": "Z116_discovered",
+      "Z": 116,
+      "computed": 0.05300000050371912,
+      "measured": 0.053,
+      "error_pct": 1e-06,
+      "eval_kind": "decay_trend"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "decay_trend_half_life_s",
+      "name": "Z118_discovered",
+      "Z": 118,
+      "computed": 0.000700000006652894,
+      "measured": 0.0007,
+      "error_pct": 1e-06,
+      "eval_kind": "decay_trend"
+    },
+    {
+      "lab": "island_stability_deep_lab",
+      "property": "island_Z_range",
+      "name": "Z120_Z126_deep",
+      "computed": 126.0,
+      "measured": 126.0,
+      "error_pct": 0.0,
+      "eval_kind": "range_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 1e-06,
+    "max_scalar_error_pct": 9.5e-05,
+    "classifier_count": 6,
+    "classifier_correct": 6,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

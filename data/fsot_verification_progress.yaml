@@ -1,17 +1,16 @@
-generated_at: '2026-07-10T19:05:10.737003+00:00'
+generated_at: '2026-07-10T19:14:59.938645+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 295
+  lean_formal_modules: 300
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
   tiers_complete: 48
   tiers_total: 48
   percent_complete: 100.0
-current_position: "Tier 73 Lab synthesis + metamaterial fluid design \u2014 225/225\
-  \ extension domains verified, heavy-ion lab conditions + cold-fusion crosswalk +\
-  \ fluid-like metamaterial prereg"
+current_position: "Tier 74 Superheavy island deepening \u2014 230/230 extension domains\
+  \ verified, Z=120-126 island anchors + beam synthesis + fusion decay chain prereg"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -125,6 +124,7 @@ tiers:
   - FuelCandidatePreregScaffoldPriors
   - FuelPriors
   - FuelThermochemistryPublicAnchorsPriors
+  - FusionDecayChainPreregScaffoldPriors
   - FusionLabCertificateSpinePriors
   - FusionPhysicsPublicPanelPriors
   - GWOSCLiveEventDeepPriors
@@ -156,6 +156,7 @@ tiers:
   - InterdisciplinarySpineCrosswalkPriors
   - IntrinsicLLMValidatorsPriors
   - IonosphericChemistryCouplingPriors
+  - IslandOfStabilityDeepPanelPriors
   - KnowledgeBasePriors
   - KronosPriors
   - LabSynthesisMetamaterialSpinePriors
@@ -273,6 +274,8 @@ tiers:
   - StumpedObservablesPanelPriors
   - StumpedObservablesSpinePriors
   - SuperheavyElementStabilityPanelPriors
+  - SuperheavyIslandCompletionSpinePriors
+  - SuperheavyIslandEmergenceSimulationPriors
   - SupplyChainLogisticsExtensionPriors
   - SymbolicArchetypePanelPriors
   - SyntheticBiologyPriors
@@ -307,6 +310,7 @@ tiers:
   - WeatherPriors
   - WorldBankDevelopmentPriors
   - XRInteractiveMediaMathScaffoldPriors
+  - Z120Z126BeamSynthesisPanelPriors
   - ZeroDayRiskEvaluatorPriors
   - ZoologyExtensionPriors
 - tier: 7

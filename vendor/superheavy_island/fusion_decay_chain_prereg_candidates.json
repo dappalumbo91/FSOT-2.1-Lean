@@ -1,0 +1,52 @@
+{
+  "source": "Fusion decay chain prereg — cold-fusion lattice to superheavy island (not claimed observed)",
+  "channel": "fusion_decay_chain_prereg",
+  "formula_branches": {
+    "acoustic_bleed_decay": "term3.acoustic_bleed",
+    "boundary_partition_cascade": "term3.boundary_partition",
+    "initiation_transformation_decay": "term1.initiation_transformation"
+  },
+  "chains": [
+    {
+      "id": "pd_d_to_Z120_cascade",
+      "name": "Pd-D lattice → Z=120 island decay cascade",
+      "steps": ["pd_deuterium_lattice", "Z119_Ti_Bk", "Z120_Cr_Cm", "Z120_N184"],
+      "formula_branch": "term3.acoustic_bleed",
+      "sota_max_Z_reached": 118,
+      "fsot_predicted_max_Z": 120,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "muon_dd_to_Z126_cascade",
+      "name": "Muon-catalyzed D-D → Z=126 island decay chain",
+      "steps": ["muon_catalyzed_dd", "Og_2006", "Z124_Fe_Cm", "Z126_N184"],
+      "formula_branch": "term1.initiation_transformation",
+      "sota_max_Z_reached": 118,
+      "fsot_predicted_max_Z": 126,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "ti_d_to_Z119_bridge",
+      "name": "Ti-D absorption → Z=119 heavy-ion bridge",
+      "steps": ["titanium_deuterium_absorption", "Z119_Ti_Bk", "Z119_N177"],
+      "formula_branch": "term3.acoustic_bleed",
+      "sota_max_Z_reached": 118,
+      "fsot_predicted_max_Z": 119,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "icf_nif_to_Z124_cascade",
+      "name": "ICF NIF ignition → Z=124 lab decay extension",
+      "steps": ["NIF_2022", "Lv_2000", "Z124_Fe_Cm", "Z124_N184"],
+      "formula_branch": "term3.boundary_partition",
+      "sota_max_Z_reached": 118,
+      "fsot_predicted_max_Z": 124,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    }
+  ],
+  "screening_gates": [
+    {"id": "min_chain_viability", "name": "Minimum chain step viability", "value": 0.35},
+    {"id": "max_magic_proximity", "name": "Maximum magic proximity for island peak", "value": 4},
+    {"id": "min_predicted_half_life_s", "name": "Minimum island half-life (s)", "value": 1.0}
+  ]
+}

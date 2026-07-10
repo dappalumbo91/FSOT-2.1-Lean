@@ -1,0 +1,506 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:14:49.348191+00:00",
+  "domain": "Superheavy_Island_Completion_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\island_z120_z126_anchors.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\z120_z126_beam_reactions.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\fusion_decay_chain_prereg_candidates.json",
+    "lab_synthesis_metamaterial_spine_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "nuclear",
+    "fusion",
+    "atomic",
+    "material"
+  ],
+  "D_eff": 22,
+  "record_count": 43,
+  "observable_count": 43,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "superheavy_island_spine": {
+        "sota_typical_error_pct": 50.0,
+        "sota_model": "No unified Z=120-126 island certificate"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_island_certificate_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 43
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "island_certificate",
+      "name": "superheavy_island_spine",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 35
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "island_deep",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 23,
+      "eval_kind": "island_panel_bridge"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "superheavy_relay",
+      "name": "Rf",
+      "computed": 8100.000076983489,
+      "measured": 8100.0,
+      "error_pct": 1e-06,
+      "source_panel": "island_deep",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "island_half_life_s",
+      "name": "Z119_N177",
+      "computed": 0.8000000000760331,
+      "measured": 0.8,
+      "error_pct": 0.0,
+      "source_panel": "island_deep",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Z119_N177",
+      "computed": 7.450007,
+      "measured": 7.45,
+      "error_pct": 9.5e-05,
+      "source_panel": "island_deep",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "island_peak_classifier",
+      "name": "Z119_N177",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "island_deep",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "island_half_life_s",
+      "name": "Z120_N184",
+      "computed": 2500000.000237603,
+      "measured": 2500000.0,
+      "error_pct": 0.0,
+      "source_panel": "island_deep",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "z120_z126_beam",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "record_count": 20,
+      "eval_kind": "island_panel_bridge"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "heavy_ion_lab_bridge",
+      "name": "heavy_ion_lab_synthesis_panel",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "source_panel": "z120_z126_beam",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Z120_Cr_Cm",
+      "computed": 290.002282,
+      "measured": 290.0,
+      "error_pct": 0.000787,
+      "source_panel": "z120_z126_beam",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "cross_section_pb",
+      "name": "Z120_Cr_Cm",
+      "computed": 0.012,
+      "measured": 0.012,
+      "error_pct": 9.5e-05,
+      "source_panel": "z120_z126_beam",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "island_beam_viability_classifier",
+      "name": "Z120_Cr_Cm",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "z120_z126_beam",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Z120_Fe_Pu",
+      "computed": 300.002361,
+      "measured": 300.0,
+      "error_pct": 0.000787,
+      "source_panel": "z120_z126_beam",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "fusion_decay_chain",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 18,
+      "eval_kind": "island_panel_bridge"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "cold_fusion_bridge",
+      "name": "cold_fusion_candidate_prereg_scaffold",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "fusion_decay_chain",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "lab_synthesis_crosswalk_bridge",
+      "name": "cold_fusion_lab_synthesis_crosswalk",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "fusion_decay_chain",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "pd_d_to_Z120_cascade",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "fusion_decay_chain",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "chain_max_Z_prediction",
+      "name": "pd_d_to_Z120_cascade",
+      "computed": 120.000114,
+      "measured": 120.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_decay_chain",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "decay_chain_viability_classifier",
+      "name": "pd_d_to_Z120_cascade",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "fusion_decay_chain",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "island_emergence",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 44,
+      "eval_kind": "island_panel_bridge"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z119_N177__r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "island_emergence",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z119_N177__s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "island_emergence",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z119_N177__cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "island_emergence",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z119_N177__heavy_ion_fusion_lab",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "island_emergence",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z119_N177__fsot_fusion_decay_chain",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "island_emergence",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "periodic_completion",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 38,
+      "eval_kind": "island_panel_bridge"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "periodic_table_public",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "source_panel": "periodic_completion",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "atomic_weight",
+      "name": "H",
+      "computed": 1.008001,
+      "measured": 1.008,
+      "error_pct": 9.5e-05,
+      "source_panel": "periodic_completion",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "ionization_ev",
+      "name": "H",
+      "computed": 13.598013,
+      "measured": 13.598,
+      "error_pct": 9.5e-05,
+      "source_panel": "periodic_completion",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "magic_number_proximity",
+      "name": "H",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "source_panel": "periodic_completion",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "atomic_weight",
+      "name": "He",
+      "computed": 4.002604,
+      "measured": 4.0026,
+      "error_pct": 9.5e-05,
+      "source_panel": "periodic_completion",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "lab_synthesis_spine",
+      "computed": 3.4e-05,
+      "measured": 3.4e-05,
+      "error_pct": 0.0,
+      "record_count": 43,
+      "eval_kind": "island_panel_bridge"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "heavy_ion_lab_synthesis",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "source_panel": "lab_synthesis_spine",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dt_fusion",
+      "computed": 17.600017,
+      "measured": 17.6,
+      "error_pct": 9.5e-05,
+      "source_panel": "lab_synthesis_spine",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dt_fusion",
+      "computed": 15.000014,
+      "measured": 15.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "lab_synthesis_spine",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dd_fusion",
+      "computed": 4.030004,
+      "measured": 4.03,
+      "error_pct": 9.5e-05,
+      "source_panel": "lab_synthesis_spine",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Og_2006",
+      "computed": 245.001928,
+      "measured": 245.0,
+      "error_pct": 0.000787,
+      "source_panel": "lab_synthesis_spine",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "undiscovered_prereg",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 25,
+      "eval_kind": "island_panel_bridge"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "boundary_partition_panel_bridge",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_prereg",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "phi_morphogenetic_panel_bridge",
+      "name": "phi_morphogenetic_scaling",
+      "computed": 0.0565,
+      "measured": 0.0565,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_prereg",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "Z120_N184_unbinilium",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_prereg",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "candidate_predicted_half_life_s",
+      "name": "Z120_N184_unbinilium",
+      "computed": 2500000.000237603,
+      "measured": 2500000.0,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_prereg",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "predicted_binding_energy_per_nucleon_mev",
+      "name": "Z120_N184_unbinilium",
+      "computed": 6.838741,
+      "measured": 6.838735,
+      "error_pct": 9.5e-05,
+      "source_panel": "undiscovered_prereg",
+      "eval_kind": "island_relay"
+    },
+    {
+      "lab": "superheavy_island_completion_lab",
+      "property": "superheavy_island_completion_ready",
+      "name": "superheavy_island_completion_spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_gate",
+      "artifacts": [
+        "island_z120_z126_anchors.json",
+        "z120_z126_beam_reactions.json",
+        "fusion_decay_chain_prereg_candidates.json"
+      ]
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 9.5e-05,
+    "max_scalar_error_pct": 0.000787,
+    "classifier_count": 19,
+    "classifier_correct": 19,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

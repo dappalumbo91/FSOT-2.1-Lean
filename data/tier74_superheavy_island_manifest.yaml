@@ -1,0 +1,15 @@
+version: "1.0"
+tier: 74
+domains:
+  - Island_Of_Stability_Deep_Panel
+  - Z120_Z126_Beam_Synthesis_Panel
+  - Fusion_Decay_Chain_Prereg_Scaffold
+  - Superheavy_Island_Emergence_Simulation
+  - Superheavy_Island_Completion_Spine
+build: scripts/build_tier74_superheavy_island_benchmarks.py
+lean: scripts/gen_tiers_74_lean.py
+artifacts:
+  - vendor/superheavy_island/island_z120_z126_anchors.json
+  - vendor/superheavy_island/z120_z126_beam_reactions.json
+  - vendor/superheavy_island/fusion_decay_chain_prereg_candidates.json
+note: "Superheavy island deepening — Z=120-126 half-lives, beam synthesis, fusion decay chains, emergence sim"

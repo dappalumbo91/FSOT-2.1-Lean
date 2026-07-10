@@ -27,7 +27,7 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-10 — Tier 73)
+## Verification status (2026-07-10 — Tier 74)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
@@ -36,16 +36,16 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 | Metric | Value |
 |--------|-------|
 | Verification tiers | **48/48 complete** (100%) |
-| Extension domains | **225/225** pass `verify_extension_domains.py` (≤0.5% pooled gate) |
-| Scientific domains | **261** (35 NeuroLab + 225 extension + Intelligence Compression rollup) |
+| Extension domains | **230/230** pass `verify_extension_domains.py` (≤0.5% pooled gate) |
+| Scientific domains | **266** (35 NeuroLab + 230 extension + Intelligence Compression rollup) |
 | Coupling simulation | **246 nodes · 12,840 edges** (maps_to_lean + cross-ratios + magnetosphere + cyber stack) |
 | Empirical records | **306,680+** |
 | Neurolab precision | **35/35** domains ≤2% median error |
 | Coverage tiers | A_strong: 25 · B_verified: 10 · C_thin: **0** · D_needs_work: **0** · unverified: **0** |
-| Lean formal modules | **295** |
+| Lean formal modules | **300** |
 | Proved claims | **65** · 0 active `sorry` |
 | SOTA ledger | **65/65** observables beat or meet baselines |
-| Expansion candidates | **0** (roadmap tiers 51–73 complete) |
+| Expansion candidates | **0** (roadmap tiers 51–74 complete) |
 
 **External data cache** (bulk API ingest): `G:\FSOT-PublicData` — override with `FSOT_EXTERNAL_DATA_ROOT`. Space weather full arc: `G:\FSOT-PublicData\space_weather\space_weather_full_benchmark.json` (271,813 Kp records); portable summary in `data/space_weather_summary_benchmark.json`.
 
@@ -212,6 +212,14 @@ Public-data-first panels and preregistration scaffolds. Full tier list: `data/ex
 | 71 | Fusion physics public panel, magnetic/ICF confinement, cold-fusion prereg scaffold, fusion lab spine | Dedicated fusion lab certificates — D-T/ICF public anchors + term3 acoustic-bleed cold-fusion prereg |
 | 72 | Periodic table public panel, superheavy stability, undiscovered-element prereg, natural formation sim, completion spine | Z=1-118 IUPAC anchors + island-of-stability + Z>118 prereg candidates + natural emergence pathways |
 | 73 | Heavy-ion lab synthesis, element synthesis conditions, cold-fusion lab crosswalk, metamaterial fluid prereg, lab synthesis spine | Lab synthesis under facility constraints + fluid-like metamaterial prereg + Tier 71↔72 cold-fusion bridge |
+| 74 | Island-of-stability deep panel, Z120-126 beam synthesis, fusion decay chain prereg, island emergence sim, island completion spine | Z=120-126 half-lives + heavy-ion beam targets + Pd-D/muon decay chain prereg |
+
+```bash
+# Tier 74 superheavy island rebuild
+python scripts/build_tier74_superheavy_island_benchmarks.py
+python scripts/gen_tiers_74_lean.py
+python scripts/verify_extension_domains.py
+```
 
 ```bash
 # Tier 73 lab synthesis + metamaterial rebuild
