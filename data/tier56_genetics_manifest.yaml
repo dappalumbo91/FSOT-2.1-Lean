@@ -1,0 +1,5 @@
+version: "1.0"
+tier: 56
+domains: [UniProt_Structure_Annotations_Deep, IGEM_Parts_Expanded]
+build: scripts/build_tier56_genetics_benchmarks.py
+lean: scripts/gen_tiers_53_56_lean.py

@@ -53,6 +53,7 @@ GENERATOR_ORDER = [
     "gen_stumped_observables_lean.py",
     "gen_fringe_tier51_lean.py",
     "gen_tier52_astrophysical_lean.py",
+    "gen_tiers_53_56_lean.py",
 ]
 
 

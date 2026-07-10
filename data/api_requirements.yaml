@@ -157,8 +157,22 @@ api_sources:
         url: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
         auth: none
 
+  tier53_56_expansion:
+    description: "Tiers 53–56 — bundled vendor summaries (portable verify without network)"
+    manifests:
+      - data/tier53_stellar_galactic_manifest.yaml
+      - data/tier54_planetary_solar_manifest.yaml
+      - data/tier55_chemistry_materials_manifest.yaml
+      - data/tier56_genetics_manifest.yaml
+    build:
+      - scripts/build_tier53_stellar_galactic_benchmarks.py
+      - scripts/build_tier54_planetary_solar_benchmarks.py
+      - scripts/build_tier55_chemistry_materials_benchmarks.py
+      - scripts/build_tier56_genetics_benchmarks.py
+    lean: scripts/gen_tiers_53_56_lean.py
+
   astrophysics_catalogs:
-    description: "Tier 52+ roadmap — public catalogs for stellar/planetary/galactic structures"
+    description: "Tier 58 live ingest — public catalogs for stellar/planetary/galactic structures"
     sources:
       - id: simbad_tap
         url: http://simbad.cds.unistra.fr/simbad/sim-tap/sync

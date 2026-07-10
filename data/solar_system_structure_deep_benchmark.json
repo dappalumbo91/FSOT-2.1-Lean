@@ -1,0 +1,527 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:12:45.810660+00:00",
+  "domain": "Solar_System_Structure_Deep",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "data/planetary_jpl_cache.json",
+    "JPL_Horizons"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "galactic"
+  ],
+  "D_eff": 18,
+  "record_count": 50,
+  "observable_count": 50,
+  "median_error_pct": 0.009693,
+  "pooled_median_error_pct": 0.009693,
+  "headline_median_error_pct": 0.032274,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "solar_structure": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "JPL Horizons"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_density_vs_baseline": true,
+      "channel_kepler_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.009693,
+      "measured": 0.0,
+      "error_pct": 0.009693,
+      "observable_count": 50
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "density",
+      "name": "solar_structure",
+      "computed": 0.032274,
+      "measured": 0.0,
+      "error_pct": 0.032274,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "kepler",
+      "name": "solar_structure",
+      "computed": 0.102859,
+      "measured": 0.0,
+      "error_pct": 0.102859,
+      "observable_count": 9
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Mercury",
+      "computed": 5.4305,
+      "measured": 5.427,
+      "error_pct": 0.064396,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Mercury",
+      "computed": 1.000803,
+      "measured": 1.0,
+      "error_pct": 0.080278,
+      "eval_kind": "jpl_kepler"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Mercury",
+      "computed": 0.2056312346466444,
+      "measured": 0.2056312346466444,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Venus",
+      "computed": 5.2438,
+      "measured": 5.204,
+      "error_pct": 0.764363,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Venus",
+      "computed": 1.001415,
+      "measured": 1.0,
+      "error_pct": 0.141454,
+      "eval_kind": "jpl_kepler"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Venus",
+      "computed": 0.006742703661329679,
+      "measured": 0.006742703661329679,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Earth",
+      "computed": 5.5134,
+      "measured": 5.51,
+      "error_pct": 0.061854,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Earth",
+      "computed": 1.000068,
+      "measured": 1.0,
+      "error_pct": 0.006766,
+      "eval_kind": "jpl_kepler"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Earth",
+      "computed": 0.01620828506603996,
+      "measured": 0.01620828506603996,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Mars",
+      "computed": 3.9326,
+      "measured": 3.933,
+      "error_pct": 0.009693,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Mars",
+      "computed": 0.999431,
+      "measured": 1.0,
+      "error_pct": 0.056895,
+      "eval_kind": "jpl_kepler"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Mars",
+      "computed": 0.09329516809023837,
+      "measured": 0.09329516809023837,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Jupiter",
+      "computed": 1.3262,
+      "measured": 1.3262,
+      "error_pct": 0.001268,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Jupiter",
+      "computed": 0.998971,
+      "measured": 1.0,
+      "error_pct": 0.102859,
+      "eval_kind": "jpl_kepler"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Jupiter",
+      "computed": 0.04840760493209816,
+      "measured": 0.04840760493209816,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Saturn",
+      "computed": 0.6871,
+      "measured": 0.687,
+      "error_pct": 0.017906,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Saturn",
+      "computed": 0.999681,
+      "measured": 1.0,
+      "error_pct": 0.031908,
+      "eval_kind": "jpl_kepler"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Saturn",
+      "computed": 0.05457209580697619,
+      "measured": 0.05457209580697619,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Uranus",
+      "computed": 1.2704,
+      "measured": 1.271,
+      "error_pct": 0.046016,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Uranus",
+      "computed": 0.998597,
+      "measured": 1.0,
+      "error_pct": 0.140287,
+      "eval_kind": "jpl_kepler"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Uranus",
+      "computed": 0.04449172151499439,
+      "measured": 0.04449172151499439,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Neptune",
+      "computed": 1.6375,
+      "measured": 1.638,
+      "error_pct": 0.032274,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Neptune",
+      "computed": 0.998842,
+      "measured": 1.0,
+      "error_pct": 0.115787,
+      "eval_kind": "jpl_kepler"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Neptune",
+      "computed": 0.01426807406232125,
+      "measured": 0.01426807406232125,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Pluto",
+      "computed": 1.8596,
+      "measured": 1.86,
+      "error_pct": 0.024003,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "kepler_third_law_ratio",
+      "name": "Pluto",
+      "computed": 1.012206,
+      "measured": 1.0,
+      "error_pct": 1.220582,
+      "eval_kind": "jpl_kepler"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Pluto",
+      "computed": 0.2453609208640384,
+      "measured": 0.2453609208640384,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Eris",
+      "computed": 2.499,
+      "measured": 2.43,
+      "error_pct": 2.838109,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Eris",
+      "computed": 0.4328389057827545,
+      "measured": 0.4328389057827545,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Makemake",
+      "computed": 2.0247,
+      "measured": 1.7,
+      "error_pct": 19.09843,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Makemake",
+      "computed": 0.1651981256410704,
+      "measured": 0.1651981256410704,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Haumea",
+      "computed": 1.7602,
+      "measured": 2.018,
+      "error_pct": 12.777065,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Haumea",
+      "computed": 0.1995500845975406,
+      "measured": 0.1995500845975406,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Io",
+      "computed": 3.5275,
+      "measured": 3.528,
+      "error_pct": 0.014547,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Io",
+      "computed": 0.003679853466009897,
+      "measured": 0.003679853466009897,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Europa",
+      "computed": 3.0129,
+      "measured": 3.013,
+      "error_pct": 0.003991,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Europa",
+      "computed": 0.00921183619366259,
+      "measured": 0.00921183619366259,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Ganymede",
+      "computed": 1.9415,
+      "measured": 1.942,
+      "error_pct": 0.02395,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Ganymede",
+      "computed": 0.002580606612561662,
+      "measured": 0.002580606612561662,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Callisto",
+      "computed": 1.8339,
+      "measured": 1.834,
+      "error_pct": 0.005956,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Callisto",
+      "computed": 0.00721143720598484,
+      "measured": 0.00721143720598484,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Titan",
+      "computed": 1.8803,
+      "measured": 1.88,
+      "error_pct": 0.014338,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Titan",
+      "computed": 0.02880172977784155,
+      "measured": 0.02880172977784155,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Triton",
+      "computed": 2.0648,
+      "measured": 2.065,
+      "error_pct": 0.010088,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Triton",
+      "computed": 2.954303849706853e-05,
+      "measured": 2.954303849706853e-05,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Phobos",
+      "computed": 1.9066,
+      "measured": 1.9,
+      "error_pct": 0.346984,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Phobos",
+      "computed": 0.01518004661000645,
+      "measured": 0.01518004661000645,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "mean_density",
+      "name": "Deimos",
+      "computed": 1.8004,
+      "measured": 1.76,
+      "error_pct": 2.295187,
+      "eval_kind": "jpl_physical"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "orbital_eccentricity",
+      "name": "Deimos",
+      "computed": 0.0003314231653575421,
+      "measured": 0.0003314231653575421,
+      "error_pct": 0.0,
+      "eval_kind": "jpl_elements"
+    },
+    {
+      "lab": "solar_system_structure_deep_lab",
+      "property": "planetary_science_scalar",
+      "name": "fsot_Planetary_Science",
+      "computed": 0.767179,
+      "measured": 0.767179,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0082295,
+    "max_scalar_error_pct": 19.09843,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5
+}

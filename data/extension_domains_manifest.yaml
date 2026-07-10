@@ -2025,6 +2025,124 @@ extension_domains:
     lean_module: FSOT.Formal.AstrophysicalStructureCrosswalkPriors
     note: "Public stellar/planetary/GW catalog crosswalk — published observables only; novel formulas require preregistration"
 
+  Stellar_Multiplicity_Catalog:
+    tier: 53
+    D_eff: 19
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic]
+    build_script: scripts/build_tier53_stellar_galactic_benchmarks.py
+    manifest: data/tier53_stellar_galactic_manifest.yaml
+    benchmark_data: data/stellar_multiplicity_catalog_benchmark.json
+    lean_module: FSOT.Formal.StellarMultiplicityCatalogPriors
+    note: "WDS/literature binary-trinary Kepler-mass closure — public catalogs only"
+
+  Compact_Object_Binary_Events:
+    tier: 53
+    D_eff: 20
+    delta_psi: 0.92
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, particle, galactic]
+    build_script: scripts/build_tier53_stellar_galactic_benchmarks.py
+    manifest: data/tier53_stellar_galactic_manifest.yaml
+    benchmark_data: data/compact_object_binary_events_benchmark.json
+    lean_module: FSOT.Formal.CompactObjectBinaryEventsPriors
+    note: "GWOSC public LIGO/Virgo/KAGRA events — no undisclosed chirp-mass formulas"
+
+  Galactic_Structure_Sample:
+    tier: 53
+    D_eff: 20
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic]
+    build_script: scripts/build_tier53_stellar_galactic_benchmarks.py
+    manifest: data/tier53_stellar_galactic_manifest.yaml
+    benchmark_data: data/galactic_structure_sample_benchmark.json
+    lean_module: FSOT.Formal.GalacticStructureSamplePriors
+    note: "Gaia/literature bright-star panel + exoplanet host multiplicity"
+
+  Solar_System_Structure_Deep:
+    tier: 54
+    D_eff: 18
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic]
+    ingest_script: scripts/ingest_planetary_jpl.py
+    build_script: scripts/build_tier54_planetary_solar_benchmarks.py
+    manifest: data/tier54_planetary_solar_manifest.yaml
+    benchmark_data: data/solar_system_structure_deep_benchmark.json
+    lean_module: FSOT.Formal.SolarSystemStructureDeepPriors
+    note: "JPL Horizons deep pass — density, Kepler, eccentricity, major moons"
+
+  Exoplanet_System_Architecture:
+    tier: 54
+    D_eff: 21
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic]
+    build_script: scripts/build_tier54_planetary_solar_benchmarks.py
+    manifest: data/tier54_planetary_solar_manifest.yaml
+    benchmark_data: data/exoplanet_system_architecture_benchmark.json
+    lean_module: FSOT.Formal.ExoplanetSystemArchitecturePriors
+    note: "NASA Exoplanet Archive system architecture — period, mass, radius, multiplicity"
+
+  PubChem_Stability_Panel:
+    tier: 55
+    D_eff: 14
+    delta_psi: 0.8
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [electron, chemical, material]
+    build_script: scripts/build_tier55_chemistry_materials_benchmarks.py
+    manifest: data/tier55_chemistry_materials_manifest.yaml
+    benchmark_data: data/pubchem_stability_panel_benchmark.json
+    lean_module: FSOT.Formal.PubChemStabilityPanelPriors
+    note: "PubChem formula-mass closure — novel stability claims require preregistration"
+
+  Materials_Genome_Crosswalk:
+    tier: 55
+    D_eff: 15
+    delta_psi: 0.82
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, energy, particle]
+    build_script: scripts/build_tier55_chemistry_materials_benchmarks.py
+    manifest: data/tier55_chemistry_materials_manifest.yaml
+    benchmark_data: data/materials_genome_crosswalk_benchmark.json
+    lean_module: FSOT.Formal.MaterialsGenomeCrosswalkPriors
+    note: "Materials engineering + quantum materials + species bridge crosswalk"
+
+  UniProt_Structure_Annotations_Deep:
+    tier: 56
+    D_eff: 13
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, medical, material]
+    build_script: scripts/build_tier56_genetics_benchmarks.py
+    manifest: data/tier56_genetics_manifest.yaml
+    benchmark_data: data/uniprot_structure_annotations_deep_benchmark.json
+    lean_module: FSOT.Formal.UniProtStructureAnnotationsDeepPriors
+    note: "UniProt + RCSB PDB public structure annotation depth"
+
+  IGEM_Parts_Expanded:
+    tier: 56
+    D_eff: 14
+    delta_psi: 0.83
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [biological, medical]
+    build_script: scripts/build_tier56_genetics_benchmarks.py
+    manifest: data/tier56_genetics_manifest.yaml
+    benchmark_data: data/igem_parts_expanded_benchmark.json
+    lean_module: FSOT.Formal.IGEMPartsExpandedPriors
+    note: "iGEM synthetic biology + live FASTA + biology strict bridge expanded"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

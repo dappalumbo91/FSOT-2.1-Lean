@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T18:06:50.084793+00:00",
+  "generated_at": "2026-07-10T18:13:18.904695+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": false,
@@ -48,6 +48,7 @@
     "FSOT.Formal.CodeGenomeStructurePriors",
     "FSOT.Formal.CodonPriors",
     "FSOT.Formal.CompactificationLadderPriors",
+    "FSOT.Formal.CompactObjectBinaryEventsPriors",
     "FSOT.Formal.ComputationalReasoningPriors",
     "FSOT.Formal.ConsciousnessEconPriors",
     "FSOT.Formal.ConsciousnessGalacticOrbitalBridgePriors",
@@ -85,6 +86,7 @@
     "FSOT.Formal.EpidemiologyExtensionPriors",
     "FSOT.Formal.EvolutionPriors",
     "FSOT.Formal.ExogeologyExtensionPriors",
+    "FSOT.Formal.ExoplanetSystemArchitecturePriors",
     "FSOT.Formal.ExperimentSynthesisPriors",
     "FSOT.Formal.ExternalOSSCodeGenomePriors",
     "FSOT.Formal.FinanceMarketsExtensionPriors",
@@ -100,6 +102,7 @@
     "FSOT.Formal.FractalConstantRecursionPriors",
     "FSOT.Formal.FsotAggregateUnifiedDbPriors",
     "FSOT.Formal.FuelPriors",
+    "FSOT.Formal.GalacticStructureSamplePriors",
     "FSOT.Formal.GbifSpeciesOccurrencePriors",
     "FSOT.Formal.GeochemistryPriors",
     "FSOT.Formal.GeologyStratigraphyExtensionPriors",
@@ -112,6 +115,7 @@
     "FSOT.Formal.HvacThermalSystemsPriors",
     "FSOT.Formal.HydrologyPriors",
     "FSOT.Formal.IGEMLiveFastaPriors",
+    "FSOT.Formal.IGEMPartsExpandedPriors",
     "FSOT.Formal.IGEMSyntheticBiologyPriors",
     "FSOT.Formal.ImmunologyPriors",
     "FSOT.Formal.IntelligenceCompressionPriors",
@@ -131,6 +135,7 @@
     "FSOT.Formal.MalwareThreatIntelligencePriors",
     "FSOT.Formal.MarineBiologyExtensionPriors",
     "FSOT.Formal.MaterialsEngineeringPriors",
+    "FSOT.Formal.MaterialsGenomeCrosswalkPriors",
     "FSOT.Formal.MaterialsSpeciesBridgePriors",
     "FSOT.Formal.MathematicsComputationalPriors",
     "FSOT.Formal.MathGeneratorAirfoilRmsePriors",
@@ -181,6 +186,7 @@
     "FSOT.Formal.ProteinPriors",
     "FSOT.Formal.PsychologyGapFillPriors",
     "FSOT.Formal.PubchemCompoundPropertiesPriors",
+    "FSOT.Formal.PubChemStabilityPanelPriors",
     "FSOT.Formal.PureMathematicsExtensionPriors",
     "FSOT.Formal.QuantumComputingGapFillPriors",
     "FSOT.Formal.QuantumMaterialsPriors",
@@ -196,6 +202,7 @@
     "FSOT.Formal.SH0ESRefinedPriors",
     "FSOT.Formal.SmallBodyOrbitsPriors",
     "FSOT.Formal.SociologyGapFillPriors",
+    "FSOT.Formal.SolarSystemStructureDeepPriors",
     "FSOT.Formal.SotaCompetitivenessPriors",
     "FSOT.Formal.SoulSiblingPriors",
     "FSOT.Formal.SpacePropulsionSystemsPriors",
@@ -203,6 +210,7 @@
     "FSOT.Formal.SpeciesPriors",
     "FSOT.Formal.SpeleologyExtensionPriors",
     "FSOT.Formal.SportsBiomechanicsGapFillPriors",
+    "FSOT.Formal.StellarMultiplicityCatalogPriors",
     "FSOT.Formal.StructureCalibrationPriors",
     "FSOT.Formal.StumpedObservablesPanelPriors",
     "FSOT.Formal.StumpedObservablesSpinePriors",
@@ -226,6 +234,7 @@
     "FSOT.Formal.TrinaryOSTierEPriors",
     "FSOT.Formal.UnifiedDBPriors",
     "FSOT.Formal.UniprotProteinAnnotationsPriors",
+    "FSOT.Formal.UniProtStructureAnnotationsDeepPriors",
     "FSOT.Formal.VibRegisterPriors",
     "FSOT.Formal.VirologyExtensionPriors",
     "FSOT.Formal.VlDistillAtlasPriors",
@@ -1504,6 +1513,13 @@
       "comp_lad_rungs_complete",
       "comp_lad_bundle"
     ],
+    "CompactObjectBinaryEventsPriors": [
+      "compact_object_binary_events_observable_count_pos",
+      "compact_object_binary_events_pooled_median_under_half_pct",
+      "compact_object_binary_events_headline_median_under_half_pct",
+      "compact_object_binary_events_beats_sota_headlines_pos",
+      "compact_object_binary_events_bundle"
+    ],
     "ComputationalReasoningPriors": [
       "computational_reasoning_observable_count_pos",
       "computational_reasoning_median_error_under_half_pct",
@@ -1836,6 +1852,13 @@
       "exogeology_ext_beats_sota_headlines_pos",
       "exogeology_ext_bundle"
     ],
+    "ExoplanetSystemArchitecturePriors": [
+      "exoplanet_system_architecture_observable_count_pos",
+      "exoplanet_system_architecture_pooled_median_under_half_pct",
+      "exoplanet_system_architecture_headline_median_under_half_pct",
+      "exoplanet_system_architecture_beats_sota_headlines_pos",
+      "exoplanet_system_architecture_bundle"
+    ],
     "ExperimentSynthesisPriors": [
       "experiment_synthesis_approach_count_pos",
       "experiment_llm_project_count_pos",
@@ -1940,6 +1963,13 @@
       "fuel_lab_chemical_domain_positive",
       "fuel_lab_compound_bundle"
     ],
+    "GalacticStructureSamplePriors": [
+      "galactic_structure_sample_observable_count_pos",
+      "galactic_structure_sample_pooled_median_under_half_pct",
+      "galactic_structure_sample_headline_median_under_half_pct",
+      "galactic_structure_sample_beats_sota_headlines_pos",
+      "galactic_structure_sample_bundle"
+    ],
     "GbifSpeciesOccurrencePriors": [
       "gbif_species_occurrence_observable_count_pos",
       "gbif_species_occurrence_median_error_under_half_pct",
@@ -2034,6 +2064,13 @@
       "igem_live_fasta_observable_count_pos",
       "igem_live_fasta_median_error_under_half_pct",
       "igem_live_fasta_bundle"
+    ],
+    "IGEMPartsExpandedPriors": [
+      "igem_parts_expanded_observable_count_pos",
+      "igem_parts_expanded_pooled_median_under_half_pct",
+      "igem_parts_expanded_headline_median_under_half_pct",
+      "igem_parts_expanded_beats_sota_headlines_pos",
+      "igem_parts_expanded_bundle"
     ],
     "IGEMSyntheticBiologyPriors": [
       "igem_synthetic_biology_observable_count_pos",
@@ -2176,6 +2213,13 @@
       "materials_engineering_headline_median_under_half_pct",
       "materials_engineering_beats_sota_headlines_pos",
       "materials_engineering_bundle"
+    ],
+    "MaterialsGenomeCrosswalkPriors": [
+      "materials_genome_crosswalk_observable_count_pos",
+      "materials_genome_crosswalk_pooled_median_under_half_pct",
+      "materials_genome_crosswalk_headline_median_under_half_pct",
+      "materials_genome_crosswalk_beats_sota_headlines_pos",
+      "materials_genome_crosswalk_bundle"
     ],
     "MaterialsSpeciesBridgePriors": [
       "materials_species_bridge_observable_count_pos",
@@ -2555,6 +2599,13 @@
       "pubchem_compound_properties_median_error_under_half_pct",
       "pubchem_compound_properties_bundle"
     ],
+    "PubChemStabilityPanelPriors": [
+      "pubchem_stability_panel_observable_count_pos",
+      "pubchem_stability_panel_pooled_median_under_half_pct",
+      "pubchem_stability_panel_headline_median_under_half_pct",
+      "pubchem_stability_panel_beats_sota_headlines_pos",
+      "pubchem_stability_panel_bundle"
+    ],
     "PureMathematicsExtensionPriors": [
       "pure_mathematics_ext_observable_count_pos",
       "pure_mathematics_ext_pooled_median_under_half_pct",
@@ -2655,6 +2706,13 @@
       "sociology_gap_fill_beats_sota_headlines_pos",
       "sociology_gap_fill_bundle"
     ],
+    "SolarSystemStructureDeepPriors": [
+      "solar_system_structure_deep_observable_count_pos",
+      "solar_system_structure_deep_pooled_median_under_half_pct",
+      "solar_system_structure_deep_headline_median_under_half_pct",
+      "solar_system_structure_deep_beats_sota_headlines_pos",
+      "solar_system_structure_deep_bundle"
+    ],
     "SotaCompetitivenessPriors": [
       "sota_beats_majority",
       "sota_meets_or_beats_large",
@@ -2695,6 +2753,13 @@
       "sports_biomechanics_gap_fill_headline_median_under_half_pct",
       "sports_biomechanics_gap_fill_beats_sota_headlines_pos",
       "sports_biomechanics_gap_fill_bundle"
+    ],
+    "StellarMultiplicityCatalogPriors": [
+      "stellar_multiplicity_catalog_observable_count_pos",
+      "stellar_multiplicity_catalog_pooled_median_under_half_pct",
+      "stellar_multiplicity_catalog_headline_median_under_half_pct",
+      "stellar_multiplicity_catalog_beats_sota_headlines_pos",
+      "stellar_multiplicity_catalog_bundle"
     ],
     "StructureCalibrationPriors": [
       "structure_calibration_residue_count_pos",
@@ -2905,6 +2970,13 @@
       "uniprot_protein_annotations_median_error_under_half_pct",
       "uniprot_protein_annotations_bundle"
     ],
+    "UniProtStructureAnnotationsDeepPriors": [
+      "uniprot_structure_annotations_deep_observable_count_pos",
+      "uniprot_structure_annotations_deep_pooled_median_under_half_pct",
+      "uniprot_structure_annotations_deep_headline_median_under_half_pct",
+      "uniprot_structure_annotations_deep_beats_sota_headlines_pos",
+      "uniprot_structure_annotations_deep_bundle"
+    ],
     "VibRegisterPriors": [
       "vibra_pattern_stability_positive",
       "vibra_avg_S_mean_positive",
@@ -2969,8 +3041,8 @@
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
-  "formal_module_count": 227,
-  "lean_target_count": 228,
+  "formal_module_count": 236,
+  "lean_target_count": 237,
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",

@@ -1,0 +1,10 @@
+version: "1.0"
+tier: 53
+domains: [Stellar_Multiplicity_Catalog, Compact_Object_Binary_Events, Galactic_Structure_Sample]
+build: scripts/build_tier53_stellar_galactic_benchmarks.py
+lean: scripts/gen_tiers_53_56_lean.py
+bundled:
+  - vendor/stellar_structures/public_multiplicity_catalog.json
+  - vendor/stellar_structures/wds_multiplicity_expanded.json
+  - vendor/stellar_structures/gwosc_public_events.json
+  - vendor/stellar_structures/galactic_structure_sample.json

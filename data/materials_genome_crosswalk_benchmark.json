@@ -1,0 +1,449 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:13:13.571955+00:00",
+  "domain": "Materials_Genome_Crosswalk",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "materials_engineering_benchmark.json",
+    "quantum_materials_benchmark.json",
+    "materials_species_bridge_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "material",
+    "energy",
+    "particle"
+  ],
+  "D_eff": 15,
+  "record_count": 38,
+  "observable_count": 38,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.013419257571482188,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "materials_genome": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Materials Project baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_materials_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 38
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "materials_relay",
+      "name": "materials_genome",
+      "computed": 0.013419,
+      "measured": 0.0,
+      "error_pct": 0.013419257571482188,
+      "observable_count": 35
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "panel_pooled_median",
+      "name": "materials_engineering",
+      "computed": 0.118765,
+      "measured": 0.118765,
+      "error_pct": 0.0,
+      "record_count": 87,
+      "eval_kind": "crosswalk_bridge"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "pooled_engineering_median",
+      "name": "all_sections",
+      "computed": 0.118765,
+      "measured": 0.0,
+      "error_pct": 0.118765,
+      "source_panel": "materials_engineering",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "section_median_sec34_youngs_modulus",
+      "name": "\u00a734 Young's Modulus",
+      "computed": 0.360682,
+      "measured": 0.0,
+      "error_pct": 0.360682,
+      "source_panel": "materials_engineering",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "section_median_sec37_thermal_kappa",
+      "name": "\u00a737 Thermal \u03ba",
+      "computed": 0.264239,
+      "measured": 0.0,
+      "error_pct": 0.26423885832201555,
+      "source_panel": "materials_engineering",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "section_median_sec62_bulk_modulus",
+      "name": "\u00a762 Bulk Modulus",
+      "computed": 0.322536,
+      "measured": 0.0,
+      "error_pct": 0.322536,
+      "source_panel": "materials_engineering",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "section_median_sec84_poisson_ratio_nu",
+      "name": "\u00a784 Poisson Ratio \u03bd",
+      "computed": 0.312058,
+      "measured": 0.0,
+      "error_pct": 0.312058,
+      "source_panel": "materials_engineering",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "panel_pooled_median",
+      "name": "quantum_materials",
+      "computed": 0.082478,
+      "measured": 0.082478,
+      "error_pct": 0.0,
+      "record_count": 168,
+      "eval_kind": "crosswalk_bridge"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "pooled_condensed_matter_median",
+      "name": "all_sections",
+      "computed": 0.082478,
+      "measured": 0.0,
+      "error_pct": 0.08247836447365957,
+      "source_panel": "quantum_materials",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "section_median_sec31_band_gaps",
+      "name": "\u00a731 Band Gaps",
+      "computed": 0.022458,
+      "measured": 0.0,
+      "error_pct": 0.022457617256372974,
+      "source_panel": "quantum_materials",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "section_median_sec18_crystal_field_deltao",
+      "name": "\u00a718 Crystal Field \u0394o",
+      "computed": 0.458047,
+      "measured": 0.0,
+      "error_pct": 0.458047,
+      "source_panel": "quantum_materials",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "section_median_sec55_mueff_magnetic",
+      "name": "\u00a755 \u03bceff Magnetic",
+      "computed": 0.013419,
+      "measured": 0.0,
+      "error_pct": 0.013419257571482188,
+      "source_panel": "quantum_materials",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "section_median_sec75_superconducting_tc",
+      "name": "\u00a775 Superconducting Tc",
+      "computed": 0.11911,
+      "measured": 0.0,
+      "error_pct": 0.11911,
+      "source_panel": "quantum_materials",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "panel_pooled_median",
+      "name": "materials_species_bridge",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 45,
+      "eval_kind": "crosswalk_bridge"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Ti",
+      "computed": 21.70357091193756,
+      "measured": 21.70357091193756,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Pb",
+      "computed": 35.24234465779961,
+      "measured": 35.24234465779961,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Fe",
+      "computed": 79.46481912400328,
+      "measured": 80.4047585604223,
+      "error_pct": 1.1690097119222957,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Ni",
+      "computed": 90.55498906775276,
+      "measured": 90.55498906775276,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "W",
+      "computed": 172.73476400326405,
+      "measured": 172.73476400326405,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Al",
+      "computed": 240.13753580571478,
+      "measured": 237.0,
+      "error_pct": 1.3238547703437875,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Au",
+      "computed": 317.1098547290309,
+      "measured": 317.1098547290309,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Cu",
+      "computed": 403.4287934927351,
+      "measured": 403.4287934927351,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a737 Thermal \u03ba",
+      "name": "Ag",
+      "computed": 430.3684323821725,
+      "measured": 430.3684323821725,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "W",
+      "computed": 309.16127743887125,
+      "measured": 309.16127743887125,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Fe",
+      "computed": 169.97058314499202,
+      "measured": 169.97058314499202,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Cu",
+      "computed": 141.02410300364596,
+      "measured": 141.02410300364596,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Al",
+      "computed": 76.01315561749642,
+      "measured": 76.01315561749642,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Au",
+      "computed": 169.97058314499202,
+      "measured": 169.97058314499202,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Ag",
+      "computed": 104.79814713293308,
+      "measured": 104.79814713293308,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Pt",
+      "computed": 230.00652916778503,
+      "measured": 230.00652916778503,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Ti",
+      "computed": 107.27869543509179,
+      "measured": 109.99055899603007,
+      "error_pct": 2.4655421207888977,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Ni",
+      "computed": 179.41943578287643,
+      "measured": 179.41943578287643,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a762 Bulk Modulus",
+      "name": "Pb",
+      "computed": 46.97871376374779,
+      "measured": 46.0,
+      "error_pct": 2.1276386168430244,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Fe",
+      "computed": 82.86725758374611,
+      "measured": 82.0,
+      "error_pct": 1.0576311996903776,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Cu",
+      "computed": 47.20909393421359,
+      "measured": 48.0,
+      "error_pct": 1.6477209703883517,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Al",
+      "computed": 25.89284920015884,
+      "measured": 25.89284920015884,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Au",
+      "computed": 27.41640786499874,
+      "measured": 27.0,
+      "error_pct": 1.5422513518471808,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Pt",
+      "computed": 61.98720613207489,
+      "measured": 61.0,
+      "error_pct": 1.6183707083194891,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    },
+    {
+      "lab": "materials_genome_crosswalk_lab",
+      "property": "\u00a770 Shear Modulus",
+      "name": "Ti",
+      "computed": 44.3606797749979,
+      "measured": 44.3606797749979,
+      "error_pct": 0.0,
+      "source_panel": "materials_species_bridge",
+      "eval_kind": "materials_relay"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 2.4655421207888977,
+    "classifier_count": 1,
+    "classifier_correct": 1,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5
+}

@@ -1,0 +1,7 @@
+version: "1.0"
+tier: 54
+domains: [Solar_System_Structure_Deep, Exoplanet_System_Architecture]
+build: scripts/build_tier54_planetary_solar_benchmarks.py
+lean: scripts/gen_tiers_53_56_lean.py
+ingest: scripts/ingest_planetary_jpl.py
+cache: data/planetary_jpl_cache.json

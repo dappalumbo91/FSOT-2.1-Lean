@@ -1,0 +1,976 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:12:45.482503+00:00",
+  "domain": "Galactic_Structure_Sample",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "vendor/stellar_structures/galactic_structure_sample.json",
+    "nasa_exoplanet_summary"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "galactic"
+  ],
+  "D_eff": 20,
+  "record_count": 101,
+  "observable_count": 101,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.111276,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "galactic_structure": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "Gaia DR3 astrometry"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_parallax_distance_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 101
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "parallax_distance",
+      "name": "galactic_structure",
+      "computed": 0.111276,
+      "measured": 0.0,
+      "error_pct": 0.111276,
+      "observable_count": 12
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "Sirius",
+      "computed": 379.21,
+      "measured": 379.21,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "Sirius",
+      "computed": 1318.7,
+      "measured": 1318.7,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "Sirius",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "Sirius",
+      "computed": 2.64,
+      "measured": 2.64,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "Sirius",
+      "computed": 2.6371,
+      "measured": 2.64,
+      "error_pct": 0.111316,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "Alpha_Cen",
+      "computed": 747.1,
+      "measured": 747.1,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "Alpha_Cen",
+      "computed": 3688.0,
+      "measured": 3688.0,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "Alpha_Cen",
+      "computed": 0.24,
+      "measured": 0.24,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "Alpha_Cen",
+      "computed": 1.34,
+      "measured": 1.34,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "Alpha_Cen",
+      "computed": 1.3385,
+      "measured": 1.34,
+      "error_pct": 0.111276,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "Vega",
+      "computed": 130.23,
+      "measured": 130.23,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "Vega",
+      "computed": 327.8,
+      "measured": 327.8,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "Vega",
+      "computed": -0.5,
+      "measured": -0.5,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "Vega",
+      "computed": 7.68,
+      "measured": 7.68,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "Vega",
+      "computed": 7.6787,
+      "measured": 7.68,
+      "error_pct": 0.016637,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "Betelgeuse",
+      "computed": 4.51,
+      "measured": 4.51,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "Betelgeuse",
+      "computed": 27.5,
+      "measured": 27.5,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "Betelgeuse",
+      "computed": 0.05,
+      "measured": 0.05,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "Betelgeuse",
+      "computed": 222.0,
+      "measured": 222.0,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "Betelgeuse",
+      "computed": 221.7295,
+      "measured": 222.0,
+      "error_pct": 0.121851,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "Rigel",
+      "computed": 2.78,
+      "measured": 2.78,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "Rigel",
+      "computed": 1.87,
+      "measured": 1.87,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "Rigel",
+      "computed": -0.06,
+      "measured": -0.06,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "Rigel",
+      "computed": 360.0,
+      "measured": 360.0,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "Rigel",
+      "computed": 359.7122,
+      "measured": 360.0,
+      "error_pct": 0.079936,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "Procyon",
+      "computed": 286.05,
+      "measured": 286.05,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "Procyon",
+      "computed": 3230.0,
+      "measured": 3230.0,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "Procyon",
+      "computed": -0.05,
+      "measured": -0.05,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "Procyon",
+      "computed": 3.5,
+      "measured": 3.5,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "Procyon",
+      "computed": 3.4959,
+      "measured": 3.5,
+      "error_pct": 0.117362,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "Altair",
+      "computed": 53.95,
+      "measured": 53.95,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "Altair",
+      "computed": 536.8,
+      "measured": 536.8,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "Altair",
+      "computed": -0.2,
+      "measured": -0.2,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "Altair",
+      "computed": 18.5,
+      "measured": 18.5,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "Altair",
+      "computed": 18.5357,
+      "measured": 18.5,
+      "error_pct": 0.192871,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "Pollux",
+      "computed": 96.54,
+      "measured": 96.54,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "Pollux",
+      "computed": 622.0,
+      "measured": 622.0,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "Pollux",
+      "computed": 0.08,
+      "measured": 0.08,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "Pollux",
+      "computed": 10.36,
+      "measured": 10.36,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "Pollux",
+      "computed": 10.3584,
+      "measured": 10.36,
+      "error_pct": 0.015438,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "Fomalhaut",
+      "computed": 129.81,
+      "measured": 129.81,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "Fomalhaut",
+      "computed": 374.2,
+      "measured": 374.2,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "Fomalhaut",
+      "computed": -0.03,
+      "measured": -0.03,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "Fomalhaut",
+      "computed": 7.7,
+      "measured": 7.7,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "Fomalhaut",
+      "computed": 7.7036,
+      "measured": 7.7,
+      "error_pct": 0.046321,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "Tau_Ceti",
+      "computed": 273.96,
+      "measured": 273.96,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "Tau_Ceti",
+      "computed": 1709.0,
+      "measured": 1709.0,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "Tau_Ceti",
+      "computed": -0.52,
+      "measured": -0.52,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "Tau_Ceti",
+      "computed": 3.65,
+      "measured": 3.65,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "Tau_Ceti",
+      "computed": 3.6502,
+      "measured": 3.65,
+      "error_pct": 0.0046,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "Epsilon_Eri",
+      "computed": 310.94,
+      "measured": 310.94,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "Epsilon_Eri",
+      "computed": 4650.0,
+      "measured": 4650.0,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "Epsilon_Eri",
+      "computed": -0.06,
+      "measured": -0.06,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "Epsilon_Eri",
+      "computed": 3.22,
+      "measured": 3.22,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "Epsilon_Eri",
+      "computed": 3.2161,
+      "measured": 3.22,
+      "error_pct": 0.12253,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "parallax_mas",
+      "name": "61_Cyg_A",
+      "computed": 287.18,
+      "measured": 287.18,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "pm_total_masyr",
+      "name": "61_Cyg_A",
+      "computed": 5293.0,
+      "measured": 5293.0,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "metallicity_dex",
+      "name": "61_Cyg_A",
+      "computed": -0.26,
+      "measured": -0.26,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_pc",
+      "name": "61_Cyg_A",
+      "computed": 3.48,
+      "measured": 3.48,
+      "error_pct": 0.0,
+      "eval_kind": "gaia_literature_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "distance_plx_consistency",
+      "name": "61_Cyg_A",
+      "computed": 3.4821,
+      "measured": 3.48,
+      "error_pct": 0.061398,
+      "eval_kind": "catalog_consistency"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "11 UMi",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "CoRoT-20",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "GJ 4274",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HATS-28",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HATS-33",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HD 102117",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HD 137388",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HD 142245",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HD 155918",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HD 156846",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HD 22946",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HD 27631",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HD 33142",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HD 38283",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HD 50554",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "HD 55696",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "K2-10",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "K2-187",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "K2-248",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "K2-254",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "K2-49",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "K2-62",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "KELT-6",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "KIC 5479689",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "KMT-2018-BLG-0029L",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "KMT-2019-BLG-2974L",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "KOI-1599",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-100",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-1006",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-1060",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-1085",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-110",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-1126",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-114",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-1176",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-1178",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-1207",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-1221",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-1225",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "exoplanet_host_multiplicity",
+      "name": "Kepler-1229",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "nasa_exoplanet_anchor"
+    },
+    {
+      "lab": "galactic_structure_lab",
+      "property": "astronomical_scalar",
+      "name": "fsot_Astronomy",
+      "computed": 0.89846,
+      "measured": 0.89846,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.192871,
+    "classifier_count": 41,
+    "classifier_correct": 41,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

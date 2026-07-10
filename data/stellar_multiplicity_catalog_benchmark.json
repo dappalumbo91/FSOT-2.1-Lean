@@ -1,0 +1,730 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:13:13.266581+00:00",
+  "domain": "Stellar_Multiplicity_Catalog",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "vendor/stellar_structures/public_multiplicity_catalog.json",
+    "wds_multiplicity_expanded.json"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "galactic"
+  ],
+  "D_eff": 19,
+  "record_count": 68,
+  "observable_count": 68,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "stellar_multiplicity": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "WDS orbital fits"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_kepler_closure_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 68
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "kepler_closure",
+      "name": "stellar_multiplicity",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 0
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Sirius_AB",
+      "computed": 50.128,
+      "measured": 50.128,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Sirius_AB",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Sirius_AB",
+      "computed": 2.02,
+      "measured": 2.02,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Sirius_AB",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Alpha_Cen_AB",
+      "computed": 79.91,
+      "measured": 79.91,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Alpha_Cen_AB",
+      "computed": 23.4,
+      "measured": 23.4,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Alpha_Cen_AB",
+      "computed": 2.1,
+      "measured": 2.1,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Alpha_Cen_AB",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Alpha_Cen_ABC",
+      "computed": 79.91,
+      "measured": 79.91,
+      "error_pct": 0.0,
+      "multiplicity": 3,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Alpha_Cen_ABC",
+      "computed": 23.4,
+      "measured": 23.4,
+      "error_pct": 0.0,
+      "multiplicity": 3,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Alpha_Cen_ABC",
+      "computed": 2.1,
+      "measured": 2.1,
+      "error_pct": 0.0,
+      "multiplicity": 3,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Alpha_Cen_ABC",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Procyon_AaAb",
+      "computed": 40.84,
+      "measured": 40.84,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Procyon_AaAb",
+      "computed": 8.9,
+      "measured": 8.9,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Procyon_AaAb",
+      "computed": 1.49,
+      "measured": 1.49,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Procyon_AaAb",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "61_Cyg_A",
+      "computed": 722.0,
+      "measured": 722.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "61_Cyg_A",
+      "computed": 86.0,
+      "measured": 86.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "61_Cyg_A",
+      "computed": 0.7,
+      "measured": 0.7,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "61_Cyg_A",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "70_Oph_Ab",
+      "computed": 88.38,
+      "measured": 88.38,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "70_Oph_Ab",
+      "computed": 23.5,
+      "measured": 23.5,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "70_Oph_Ab",
+      "computed": 1.5,
+      "measured": 1.5,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "70_Oph_Ab",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Gliese_667C",
+      "computed": 30.0,
+      "measured": 30.0,
+      "error_pct": 0.0,
+      "multiplicity": 3,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Gliese_667C",
+      "computed": 1.8,
+      "measured": 1.8,
+      "error_pct": 0.0,
+      "multiplicity": 3,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Gliese_667C",
+      "computed": 0.9,
+      "measured": 0.9,
+      "error_pct": 0.0,
+      "multiplicity": 3,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Gliese_667C",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Castor_AaBa",
+      "computed": 445.0,
+      "measured": 445.0,
+      "error_pct": 0.0,
+      "multiplicity": 6,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Castor_AaBa",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "multiplicity": 6,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Castor_AaBa",
+      "computed": 5.8,
+      "measured": 5.8,
+      "error_pct": 0.0,
+      "multiplicity": 6,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Castor_AaBa",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Mizar_A",
+      "computed": 5000.0,
+      "measured": 5000.0,
+      "error_pct": 0.0,
+      "multiplicity": 4,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Mizar_A",
+      "computed": 380.0,
+      "measured": 380.0,
+      "error_pct": 0.0,
+      "multiplicity": 4,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Mizar_A",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "multiplicity": 4,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Mizar_A",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Epsilon_Lyr",
+      "computed": 2300.0,
+      "measured": 2300.0,
+      "error_pct": 0.0,
+      "multiplicity": 5,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Epsilon_Lyr",
+      "computed": 230.0,
+      "measured": 230.0,
+      "error_pct": 0.0,
+      "multiplicity": 5,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Epsilon_Lyr",
+      "computed": 4.5,
+      "measured": 4.5,
+      "error_pct": 0.0,
+      "multiplicity": 5,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Epsilon_Lyr",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Zeta_Cas",
+      "computed": 830.0,
+      "measured": 830.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Zeta_Cas",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Zeta_Cas",
+      "computed": 2.2,
+      "measured": 2.2,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Zeta_Cas",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Xi_Cep",
+      "computed": 360.0,
+      "measured": 360.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Xi_Cep",
+      "computed": 18.0,
+      "measured": 18.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Xi_Cep",
+      "computed": 2.8,
+      "measured": 2.8,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Xi_Cep",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Delta_Ori",
+      "computed": 1200.0,
+      "measured": 1200.0,
+      "error_pct": 0.0,
+      "multiplicity": 4,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Delta_Ori",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0,
+      "multiplicity": 4,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Delta_Ori",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "multiplicity": 4,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Delta_Ori",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Beta_Cyg",
+      "computed": 7500.0,
+      "measured": 7500.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Beta_Cyg",
+      "computed": 300.0,
+      "measured": 300.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Beta_Cyg",
+      "computed": 3.5,
+      "measured": 3.5,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Beta_Cyg",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Gamma_Vir",
+      "computed": 169.0,
+      "measured": 169.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Gamma_Vir",
+      "computed": 9.5,
+      "measured": 9.5,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Gamma_Vir",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Gamma_Vir",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "Lambda_Cyg",
+      "computed": 12.5,
+      "measured": 12.5,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "Lambda_Cyg",
+      "computed": 0.8,
+      "measured": 0.8,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "Lambda_Cyg",
+      "computed": 1.8,
+      "measured": 1.8,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "Lambda_Cyg",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "orbital_period_years",
+      "name": "HR_2896",
+      "computed": 59.2,
+      "measured": 59.2,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "separation_au",
+      "name": "HR_2896",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "total_mass_msun",
+      "name": "HR_2896",
+      "computed": 1.6,
+      "measured": 1.6,
+      "error_pct": 0.0,
+      "multiplicity": 2,
+      "eval_kind": "public_catalog_anchor"
+    },
+    {
+      "lab": "stellar_multiplicity_lab",
+      "property": "multiplicity_class",
+      "name": "HR_2896",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "public_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

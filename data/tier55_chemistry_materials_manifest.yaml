@@ -1,0 +1,6 @@
+version: "1.0"
+tier: 55
+domains: [PubChem_Stability_Panel, Materials_Genome_Crosswalk]
+build: scripts/build_tier55_chemistry_materials_benchmarks.py
+lean: scripts/gen_tiers_53_56_lean.py
+proprietary_gate: data/preregistered_predictions_manifest.yaml
