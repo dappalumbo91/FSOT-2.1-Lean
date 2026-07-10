@@ -23,9 +23,22 @@ python scripts/build_cross_proof_benchmark.py
 
 ```powershell
 winget install Coq.CoqPlatform
+powershell -File scripts/setup_rocq_path.ps1   # if coqc not found after install
 ```
 
+Default install path: `C:\Rocq-Platform~9.0~2025.08\bin`
+
 Isabelle: download Windows installer from https://isabelle.in.tum.de/ (no sign-in).
+After install, re-run `python scripts/run_cross_proof_verification.py` for `full_triangulation: true`.
+
+## Current status (local)
+
+Run `python scripts/run_cross_proof_verification.py` — expect:
+
+- `python_decimal`: passed
+- `lean`: passed
+- `coq`: passed (+ `coqchk` when available)
+- `github_ready`: true when Coq passes
 
 ## Layout
 

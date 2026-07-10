@@ -45,7 +45,18 @@ build:
   benchmark: scripts/build_cross_proof_benchmark.py
   output: data/cross_proof_verification_benchmark.json
 
+rocq_install_path: C:\Rocq-Platform~9.0~2025.08\bin
+path_setup_script: scripts/setup_rocq_path.ps1
+
 github_promote_when:
   - python_oracle_pass
   - lean_literals_match_obligations
-  - coq_compile_pass_or_skipped_documented
+  - coq_compile_pass
+  - coqchk_pass
+
+status_local:
+  lean: passed
+  python_decimal: passed
+  coq: passed
+  isabelle: pending_manual_install
+  github_ready: true

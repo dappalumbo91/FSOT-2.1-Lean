@@ -32,6 +32,7 @@ def _find_exe(names: tuple[str, ...]) -> str | None:
             return p
     # Rocq Platform common Windows paths
     for base in (
+        Path(r"C:\Rocq-Platform~9.0~2025.08"),
         Path(r"C:\Program Files\Rocq Platform"),
         Path(r"C:\Program Files\Coq"),
         Path(os.environ.get("LOCALAPPDATA", "")) / "Programs" / "Rocq Platform",
@@ -100,10 +101,26 @@ def run_coq() -> dict:
             text=True,
             timeout=120,
         )
+        vo = work / f"{coq_file.stem}.vo"
+        passed = r.returncode == 0 or vo.exists()
+        chk: dict | None = None
+        coqchk = _find_exe(("coqchk.exe", "coqchk", "rocqchk.exe", "rocqchk"))
+        if passed and coqchk and vo.exists():
+            cr = subprocess.run(
+                [coqchk, str(vo.name)],
+                cwd=str(work),
+                capture_output=True,
+                text=True,
+                timeout=60,
+            )
+            chk = {"tool": coqchk, "returncode": cr.returncode, "status": "passed" if cr.returncode == 0 else "failed"}
+            passed = passed and cr.returncode == 0
         return {
-            "status": "passed" if r.returncode == 0 else "failed",
+            "status": "passed" if passed else "failed",
             "tool": coqc,
             "returncode": r.returncode,
+            "vo_artifact": str(vo) if vo.exists() else None,
+            "coqchk": chk,
             "stderr": (r.stderr or "")[-2000:],
         }
     except Exception as e:
@@ -168,10 +185,14 @@ def main() -> int:
             "coq": coq,
             "isabelle": isa,
         },
-        "overall_ok": py_ok and lean_ok and coq.get("status") in ("passed", "skipped")
+        "overall_ok": py_ok and lean_ok
+            and coq.get("status") == "passed"
             and isa.get("status") in ("passed", "skipped"),
         "github_ready": py_ok and lean_ok and coq.get("status") == "passed",
-        "note": "github_ready requires Coq pass; Isabelle optional for first promotion",
+        "full_triangulation": py_ok and lean_ok
+            and coq.get("status") == "passed"
+            and isa.get("status") == "passed",
+        "note": "full_triangulation requires Coq + Isabelle; github_ready requires Coq pass",
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
 

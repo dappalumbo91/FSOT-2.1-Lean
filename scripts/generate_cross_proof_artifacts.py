@@ -51,8 +51,8 @@ def gen_coq(obligations: list[dict]) -> str:
     lines = [
         "(* FSOT Tier 79 — connective spine cross-proof (generated). *)",
         "(* Independent of Lean proof terms — same decimal obligations. *)",
-        "From Coq Require Import Reals.",
-        "From Coq Require Import Psatz.",
+        "From Stdlib Require Import Reals.",
+        "From Stdlib Require Import Psatz.",
         "Local Open Scope R_scope.",
         "",
     ]

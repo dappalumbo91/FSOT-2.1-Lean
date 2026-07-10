@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T20:51:12.627699+00:00",
+  "generated_at": "2026-07-10T20:58:31.967028+00:00",
   "tier": 79,
   "obligation_count": 24,
   "frameworks": {
@@ -180,8 +180,16 @@
       ]
     },
     "coq": {
-      "status": "skipped",
-      "reason": "coqc/rocqc not on PATH \u2014 install: winget install Coq.CoqPlatform"
+      "status": "passed",
+      "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqc.exe",
+      "returncode": 0,
+      "vo_artifact": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\coq\\ConnectiveSpine.vo",
+      "coqchk": {
+        "tool": "C:\\Rocq-Platform~9.0~2025.08\\bin\\coqchk.exe",
+        "returncode": 0,
+        "status": "passed"
+      },
+      "stderr": ""
     },
     "isabelle": {
       "status": "skipped",
@@ -189,6 +197,7 @@
     }
   },
   "overall_ok": true,
-  "github_ready": false,
-  "note": "github_ready requires Coq pass; Isabelle optional for first promotion"
+  "github_ready": true,
+  "full_triangulation": false,
+  "note": "full_triangulation requires Coq + Isabelle; github_ready requires Coq pass"
 }
