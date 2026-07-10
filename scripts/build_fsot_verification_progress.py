@@ -1680,7 +1680,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 72 Periodic table completion — 220/220 extension domains verified, Z=1-118 anchors + Z>118 prereg + natural formation simulation",
+        "current_position": "Tier 73 Lab synthesis + metamaterial fluid design — 225/225 extension domains verified, heavy-ion lab conditions + cold-fusion crosswalk + fluid-like metamaterial prereg",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

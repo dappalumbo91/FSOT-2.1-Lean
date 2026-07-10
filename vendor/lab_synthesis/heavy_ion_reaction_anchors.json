@@ -1,0 +1,26 @@
+{
+  "source": "Published heavy-ion fusion-evaporation reactions for superheavy element synthesis (GSI/JINR/RIKEN/LBNL)",
+  "facilities": [
+    {"id": "JINR_Dubna", "name": "JINR U400 cyclotron", "max_beam_energy_mev_u": 280},
+    {"id": "GSI_Darmstadt", "name": "GSI UNILAC", "max_beam_energy_mev_u": 1200},
+    {"id": "RIKEN", "name": "RIKEN Linear Accelerator", "max_beam_energy_mev_u": 345},
+    {"id": "LBNL", "name": "LBNL 88-Inch Cyclotron", "max_beam_energy_mev_u": 200}
+  ],
+  "published_reactions": [
+    {"id": "Og_2006", "beam": "Ca-48", "target": "Cf-249", "product_Z": 118, "product": "Og-294", "beam_energy_mev_u": 245, "cross_section_pb": 0.5, "facility": "JINR_Dubna", "year": 2006},
+    {"id": "Ts_2010", "beam": "Ca-48", "target": "Bk-249", "product_Z": 117, "product": "Ts-294", "beam_energy_mev_u": 249, "cross_section_pb": 0.08, "facility": "JINR_Dubna", "year": 2010},
+    {"id": "Lv_2000", "beam": "Ca-48", "target": "Cm-248", "product_Z": 116, "product": "Lv-293", "beam_energy_mev_u": 236, "cross_section_pb": 0.05, "facility": "JINR_Dubna", "year": 2000},
+    {"id": "Mc_2010", "beam": "Ca-48", "target": "Am-243", "product_Z": 115, "product": "Mc-288", "beam_energy_mev_u": 248, "cross_section_pb": 0.03, "facility": "JINR_Dubna", "year": 2010},
+    {"id": "Nh_2004", "beam": "Ca-48", "target": "Am-243", "product_Z": 113, "product": "Nh-286", "beam_energy_mev_u": 250, "cross_section_pb": 0.02, "facility": "RIKEN", "year": 2004},
+    {"id": "Fl_1999", "beam": "Ca-48", "target": "Pu-242", "product_Z": 114, "product": "Fl-289", "beam_energy_mev_u": 244, "cross_section_pb": 0.12, "facility": "JINR_Dubna", "year": 1999},
+    {"id": "Cn_1996", "beam": "Zn-70", "target": "Pb-208", "product_Z": 112, "product": "Cn-277", "beam_energy_mev_u": 354, "cross_section_pb": 0.5, "facility": "GSI_Darmstadt", "year": 1996},
+    {"id": "Hs_1984", "beam": "Fe-58", "target": "Pb-208", "product_Z": 108, "product": "Hs-265", "beam_energy_mev_u": 265, "cross_section_pb": 2.0, "facility": "GSI_Darmstadt", "year": 1984},
+    {"id": "Rf_1969", "beam": "Ne-22", "target": "Pu-242", "product_Z": 104, "product": "Rf-260", "beam_energy_mev_u": 121, "cross_section_pb": 10.0, "facility": "LBNL", "year": 1969}
+  ],
+  "proposed_z119_plus": [
+    {"id": "Z119_Ti_Bk", "beam": "Ti-50", "target": "Bk-249", "product_Z": 119, "beam_energy_mev_u": 280, "fsot_viability_score": 0.42, "status": "proposed"},
+    {"id": "Z120_Cr_Cm", "beam": "Cr-54", "target": "Cm-248", "product_Z": 120, "beam_energy_mev_u": 290, "fsot_viability_score": 0.55, "status": "proposed"},
+    {"id": "Z124_Fe_Cm", "beam": "Fe-58", "target": "Cm-250", "product_Z": 124, "beam_energy_mev_u": 310, "fsot_viability_score": 0.38, "status": "proposed"},
+    {"id": "Z126_Ni_U", "beam": "Ni-64", "target": "U-238", "product_Z": 126, "beam_energy_mev_u": 320, "fsot_viability_score": 0.48, "status": "proposed"}
+  ]
+}

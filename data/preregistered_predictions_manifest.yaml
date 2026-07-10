@@ -165,3 +165,36 @@ predictions:
     sota_label: "IUPAC confirmed ceiling"
     discriminant: "fsot_exceeds_sota_by_0.4"
     registered_at: "2026-07-10"
+
+  - id: PRED-015
+    name: pd_lattice_cold_fusion_metamaterial_heat_transfer
+    domain: Metamaterial_Fluid_Design_Prereg_Scaffold
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 1850
+    unit: "W/m2/K"
+    sota_baseline: 500
+    sota_label: "Conventional Pd heat exchanger baseline"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-016
+    name: acoustic_bleed_phononic_negative_index
+    domain: Metamaterial_Fluid_Design_Prereg_Scaffold
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: -1.35
+    unit: refractive_index
+    sota_baseline: 0.0
+    sota_label: "No negative-index phononic crystal demonstrated"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-017
+    name: Z119_Ti_Bk_heavy_ion_lab_synthesis
+    domain: Heavy_Ion_Lab_Synthesis_Panel
+    fsot_formula_branch: term3.boundary_partition
+    fsot_predicted: 0.42
+    unit: viability_score
+    sota_baseline: 0.0
+    sota_label: "Z=119 not yet synthesized"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"

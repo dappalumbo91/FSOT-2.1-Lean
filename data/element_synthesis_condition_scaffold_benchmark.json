@@ -1,0 +1,488 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:04:53.618318+00:00",
+  "domain": "Element_Synthesis_Condition_Scaffold",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\lab_synthesis\\heavy_ion_reaction_anchors.json",
+    "superheavy_element_stability_panel_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "particle",
+    "nuclear",
+    "material",
+    "thermodynamics"
+  ],
+  "D_eff": 14,
+  "record_count": 45,
+  "observable_count": 45,
+  "median_error_pct": 0.000787,
+  "pooled_median_error_pct": 0.000787,
+  "headline_median_error_pct": 0.000787,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "lab_condition_scaffold": {
+        "sota_typical_error_pct": 30.0,
+        "sota_model": "No unified lab synthesis condition certificate"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_synthesis_conditions_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.000787,
+      "measured": 0.0,
+      "error_pct": 0.000787,
+      "observable_count": 45
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "synthesis_conditions",
+      "name": "lab_condition_scaffold",
+      "computed": 0.000787,
+      "measured": 0.0,
+      "error_pct": 0.0007869745016117704,
+      "observable_count": 39
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "superheavy_stability_bridge",
+      "name": "superheavy_element_stability_panel",
+      "computed": 1e-06,
+      "measured": 1e-06,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Og_2006",
+      "product_Z": 118,
+      "computed": 246.930031,
+      "measured": 246.928088,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Og_2006",
+      "computed": 35.000333,
+      "measured": 35.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Og_2006",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Ts_2010",
+      "product_Z": 117,
+      "computed": 250.961541,
+      "measured": 250.959567,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Ts_2010",
+      "computed": 31.000295,
+      "measured": 31.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Ts_2010",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Lv_2000",
+      "product_Z": 116,
+      "computed": 237.859132,
+      "measured": 237.85726,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Lv_2000",
+      "computed": 44.000418,
+      "measured": 44.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Lv_2000",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Mc_2010",
+      "product_Z": 115,
+      "computed": 249.953664,
+      "measured": 249.951697,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Mc_2010",
+      "computed": 32.000304,
+      "measured": 32.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Mc_2010",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Nh_2004",
+      "product_Z": 113,
+      "computed": 251.969419,
+      "measured": 251.967436,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Nh_2004",
+      "computed": 95.000903,
+      "measured": 95.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Nh_2004",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Fl_1999",
+      "product_Z": 114,
+      "computed": 245.922153,
+      "measured": 245.920218,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Fl_1999",
+      "computed": 36.000342,
+      "measured": 36.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Fl_1999",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Cn_1996",
+      "product_Z": 112,
+      "computed": 356.788698,
+      "measured": 356.78589,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Cn_1996",
+      "computed": 846.00804,
+      "measured": 846.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Cn_1996",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Hs_1984",
+      "product_Z": 108,
+      "computed": 267.087584,
+      "measured": 267.085482,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Hs_1984",
+      "computed": 935.008886,
+      "measured": 935.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Hs_1984",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Rf_1969",
+      "product_Z": 104,
+      "computed": 121.953199,
+      "measured": 121.952239,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Rf_1969",
+      "computed": 79.000751,
+      "measured": 79.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Rf_1969",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Z119_Ti_Bk",
+      "product_Z": 119,
+      "computed": 282.205749,
+      "measured": 282.203529,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Z119_Ti_Bk",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Z119_Ti_Bk",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Z120_Cr_Cm",
+      "product_Z": 120,
+      "computed": 292.284526,
+      "measured": 292.282226,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Z120_Cr_Cm",
+      "computed": -10.000095,
+      "measured": -10.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Z120_Cr_Cm",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Z124_Fe_Cm",
+      "product_Z": 124,
+      "computed": 312.44208,
+      "measured": 312.439621,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Z124_Fe_Cm",
+      "computed": -30.000285,
+      "measured": -30.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Z124_Fe_Cm",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Z126_Ni_U",
+      "product_Z": 126,
+      "computed": 322.520857,
+      "measured": 322.518318,
+      "error_pct": 0.000787,
+      "eval_kind": "condition_proxy"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Z126_Ni_U",
+      "computed": -40.00038,
+      "measured": -40.0,
+      "error_pct": 0.00095,
+      "eval_kind": "facility_margin"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Z126_Ni_U",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "condition_gate"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_screening_gate",
+      "name": "min_beam_energy_mev_u",
+      "computed": 200.0,
+      "measured": 200.0,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_screening_gate",
+      "name": "min_cross_section_pb",
+      "computed": 0.01,
+      "measured": 0.01,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_screening_gate",
+      "name": "max_product_Z_lab",
+      "computed": 126.0,
+      "measured": 126.0,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_screening_gate",
+      "name": "facility_margin_mev_u",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "element_synthesis_condition_lab",
+      "property": "synthesis_condition_ready",
+      "name": "element_synthesis_condition_scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "scaffold_gate"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.000787,
+    "max_scalar_error_pct": 0.00095,
+    "classifier_count": 15,
+    "classifier_correct": 15,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

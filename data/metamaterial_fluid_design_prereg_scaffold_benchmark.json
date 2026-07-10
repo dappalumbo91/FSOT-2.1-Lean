@@ -1,0 +1,325 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:04:53.622246+00:00",
+  "domain": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\lab_synthesis\\metamaterial_fluid_prereg_candidates.json",
+    "term3_acoustic_bleed_depth_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "material",
+    "fusion",
+    "energy",
+    "particle"
+  ],
+  "D_eff": 16,
+  "record_count": 25,
+  "observable_count": 25,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "metamaterial_fluid_design": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No reproducible fluid-metamaterial baseline"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_prereg_gate_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 25
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "prereg_gate",
+      "name": "metamaterial_fluid_design",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 18
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "acoustic_bleed_panel_bridge",
+      "name": "term3_acoustic_bleed_depth",
+      "computed": 0.008381497018408523,
+      "measured": 0.008381497018408523,
+      "error_pct": 0.0,
+      "eval_kind": "formula_bridge"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "boundary_partition_panel_bridge",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formula_bridge"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "acoustic_bleed_phononic_crystal",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "fluid_like_effect": "directional_acoustic_superfluid_analog",
+      "fsot_predicted": -1.35,
+      "sota_baseline": -2.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "acoustic_bleed_phononic_crystal",
+      "computed": -1.35,
+      "measured": -1.35,
+      "error_pct": 3.4e-05,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "fluid_like_response_classifier",
+      "name": "acoustic_bleed_phononic_crystal",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "fluid_coefficient": 0.325,
+      "eval_kind": "fluid_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "boundary_partition_mechanical_metamaterial",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.boundary_partition",
+      "fluid_like_effect": "negative_poisson_fluid_conformal",
+      "fsot_predicted": -0.62,
+      "sota_baseline": -1.02,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "boundary_partition_mechanical_metamaterial",
+      "computed": -0.62,
+      "measured": -0.62,
+      "error_pct": 3.4e-05,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "fluid_like_response_classifier",
+      "name": "boundary_partition_mechanical_metamaterial",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "fluid_coefficient": 0.392157,
+      "eval_kind": "fluid_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "superheavy_doped_graphene_composite",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.term1_base",
+      "fluid_like_effect": "electron_fluid_superballistic",
+      "fsot_predicted": 210000.0,
+      "sota_baseline": 200000.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "superheavy_doped_graphene_composite",
+      "computed": 210000.070405,
+      "measured": 210000.0,
+      "error_pct": 3.4e-05,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "fluid_like_response_classifier",
+      "name": "superheavy_doped_graphene_composite",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "fluid_coefficient": 0.05,
+      "eval_kind": "fluid_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "fpc_coupled_active_metamaterial",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.fluidlink_timing",
+      "fluid_like_effect": "emergent_tau_switching_superfluid_gate",
+      "fsot_predicted": 2.8,
+      "sota_baseline": 2.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "fpc_coupled_active_metamaterial",
+      "computed": 2.800001,
+      "measured": 2.8,
+      "error_pct": 3.4e-05,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "fluid_like_response_classifier",
+      "name": "fpc_coupled_active_metamaterial",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "fluid_coefficient": 0.4,
+      "eval_kind": "fluid_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "pd_lattice_cold_fusion_metamaterial",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "fluid_like_effect": "lattice_acoustic_bleed_thermal_superfluid",
+      "fsot_predicted": 1850.0,
+      "sota_baseline": 500.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "pd_lattice_cold_fusion_metamaterial",
+      "computed": 1850.00062,
+      "measured": 1850.0,
+      "error_pct": 3.4e-05,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "fluid_like_response_classifier",
+      "name": "pd_lattice_cold_fusion_metamaterial",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "fluid_coefficient": 2.7,
+      "eval_kind": "fluid_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "coherence_efficiency_optical_metamaterial",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.coherence_efficiency",
+      "fluid_like_effect": "refractive_index_fluid_modulation",
+      "fsot_predicted": 0.5,
+      "sota_baseline": 0.05,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "coherence_efficiency_optical_metamaterial",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 3.4e-05,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "fluid_like_response_classifier",
+      "name": "coherence_efficiency_optical_metamaterial",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "fluid_coefficient": 4.5,
+      "eval_kind": "fluid_gate"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "screening_gate",
+      "name": "acoustic_bleed_coupling_min",
+      "computed": 0.35,
+      "measured": 0.35,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "screening_gate",
+      "name": "boundary_partition_margin",
+      "computed": 0.15,
+      "measured": 0.15,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "screening_gate",
+      "name": "fluid_like_response_min",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "screening_gate",
+      "name": "metamaterial_bandgap_tolerance_ev",
+      "computed": 0.1,
+      "measured": 0.1,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "metamaterial_fluid_prereg_lab",
+      "property": "prereg_status",
+      "name": "metamaterial_fluid_design_prereg",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "prereg_bundle_gate",
+      "note": "Novel metamaterial fluid-like claims preregistered \u2014 not verified as synthesized"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 3.4e-05,
+    "max_scalar_error_pct": 3.4e-05,
+    "classifier_count": 14,
+    "classifier_correct": 14,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

@@ -1,0 +1,16 @@
+version: "1.0"
+tier: 73
+domains:
+  - Heavy_Ion_Lab_Synthesis_Panel
+  - Element_Synthesis_Condition_Scaffold
+  - Cold_Fusion_Lab_Synthesis_Crosswalk
+  - Metamaterial_Fluid_Design_Prereg_Scaffold
+  - Lab_Synthesis_Metamaterial_Spine
+build: scripts/build_tier73_lab_synthesis_benchmarks.py
+lean: scripts/gen_tiers_73_lean.py
+artifacts:
+  - vendor/lab_synthesis/heavy_ion_reaction_anchors.json
+  - vendor/lab_synthesis/metamaterial_fluid_prereg_candidates.json
+  - data/cold_fusion_candidate_prereg_scaffold_benchmark.json
+  - data/undiscovered_element_candidate_prereg_scaffold_benchmark.json
+note: "Lab synthesis conditions under facility constraints + metamaterial fluid-like prereg + Tier 71 cold-fusion crosswalk"

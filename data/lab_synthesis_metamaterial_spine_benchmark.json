@@ -1,0 +1,506 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:04:53.622246+00:00",
+  "domain": "Lab_Synthesis_Metamaterial_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\lab_synthesis\\heavy_ion_reaction_anchors.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\lab_synthesis\\metamaterial_fluid_prereg_candidates.json",
+    "fusion_lab_certificate_spine_benchmark.json",
+    "periodic_table_completion_spine_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "particle",
+    "nuclear",
+    "material",
+    "energy"
+  ],
+  "D_eff": 18,
+  "record_count": 43,
+  "observable_count": 43,
+  "median_error_pct": 3.4e-05,
+  "pooled_median_error_pct": 3.4e-05,
+  "headline_median_error_pct": 9.5e-05,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "lab_metamaterial_spine": {
+        "sota_typical_error_pct": 50.0,
+        "sota_model": "No unified lab synthesis + metamaterial certificate"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_synthesis_certificate_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 3.4e-05,
+      "measured": 0.0,
+      "error_pct": 3.4e-05,
+      "observable_count": 43
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "synthesis_certificate",
+      "name": "lab_metamaterial_spine",
+      "computed": 9.5e-05,
+      "measured": 0.0,
+      "error_pct": 9.5e-05,
+      "observable_count": 35
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "panel_pooled_median",
+      "name": "heavy_ion_lab_synthesis",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "record_count": 39,
+      "eval_kind": "synthesis_panel_bridge"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dt_fusion",
+      "computed": 17.600017,
+      "measured": 17.6,
+      "error_pct": 9.5e-05,
+      "source_panel": "heavy_ion_lab_synthesis",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dt_fusion",
+      "computed": 15.000014,
+      "measured": 15.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "heavy_ion_lab_synthesis",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dd_fusion",
+      "computed": 4.030004,
+      "measured": 4.03,
+      "error_pct": 9.5e-05,
+      "source_panel": "heavy_ion_lab_synthesis",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Og_2006",
+      "computed": 245.001928,
+      "measured": 245.0,
+      "error_pct": 0.000787,
+      "source_panel": "heavy_ion_lab_synthesis",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "cross_section_pb",
+      "name": "Og_2006",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 9.5e-05,
+      "source_panel": "heavy_ion_lab_synthesis",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "panel_pooled_median",
+      "name": "element_synthesis_conditions",
+      "computed": 0.000787,
+      "measured": 0.000787,
+      "error_pct": 0.0,
+      "record_count": 45,
+      "eval_kind": "synthesis_panel_bridge"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "superheavy_stability_bridge",
+      "name": "superheavy_element_stability_panel",
+      "computed": 1e-06,
+      "measured": 1e-06,
+      "error_pct": 0.0,
+      "source_panel": "element_synthesis_conditions",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Og_2006",
+      "computed": 246.930031,
+      "measured": 246.928088,
+      "error_pct": 0.000787,
+      "source_panel": "element_synthesis_conditions",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "beam_energy_margin_mev_u",
+      "name": "Og_2006",
+      "computed": 35.000333,
+      "measured": 35.0,
+      "error_pct": 0.00095,
+      "source_panel": "element_synthesis_conditions",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "synthesis_condition_classifier",
+      "name": "Og_2006",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "element_synthesis_conditions",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "synthesis_temperature_proxy_kev",
+      "name": "Ts_2010",
+      "computed": 250.961541,
+      "measured": 250.959567,
+      "error_pct": 0.000787,
+      "source_panel": "element_synthesis_conditions",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "panel_pooled_median",
+      "name": "cold_fusion_crosswalk",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 22,
+      "eval_kind": "synthesis_panel_bridge"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "panel_pooled_median",
+      "name": "cold_fusion_prereg",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_crosswalk",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "acoustic_bleed_panel_bridge",
+      "name": "term3_acoustic_bleed_depth",
+      "computed": 0.008381497018408523,
+      "measured": 0.008381497018408523,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_crosswalk",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "boundary_partition_panel_bridge",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_crosswalk",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "pd_deuterium_lattice",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_crosswalk",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "pd_deuterium_lattice",
+      "computed": 1.850001,
+      "measured": 1.85,
+      "error_pct": 7.9e-05,
+      "source_panel": "cold_fusion_crosswalk",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "panel_pooled_median",
+      "name": "metamaterial_fluid_prereg",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 25,
+      "eval_kind": "synthesis_panel_bridge"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "acoustic_bleed_panel_bridge",
+      "name": "term3_acoustic_bleed_depth",
+      "computed": 0.008381497018408523,
+      "measured": 0.008381497018408523,
+      "error_pct": 0.0,
+      "source_panel": "metamaterial_fluid_prereg",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "boundary_partition_panel_bridge",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "metamaterial_fluid_prereg",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "acoustic_bleed_phononic_crystal",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "metamaterial_fluid_prereg",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "acoustic_bleed_phononic_crystal",
+      "computed": -1.35,
+      "measured": -1.35,
+      "error_pct": 3.4e-05,
+      "source_panel": "metamaterial_fluid_prereg",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "fluid_like_response_classifier",
+      "name": "acoustic_bleed_phononic_crystal",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "metamaterial_fluid_prereg",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "panel_pooled_median",
+      "name": "periodic_table_completion",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 38,
+      "eval_kind": "synthesis_panel_bridge"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "panel_pooled_median",
+      "name": "periodic_table_public",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "source_panel": "periodic_table_completion",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "atomic_weight",
+      "name": "H",
+      "computed": 1.008001,
+      "measured": 1.008,
+      "error_pct": 9.5e-05,
+      "source_panel": "periodic_table_completion",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "ionization_ev",
+      "name": "H",
+      "computed": 13.598013,
+      "measured": 13.598,
+      "error_pct": 9.5e-05,
+      "source_panel": "periodic_table_completion",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "magic_number_proximity",
+      "name": "H",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "source_panel": "periodic_table_completion",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "atomic_weight",
+      "name": "He",
+      "computed": 4.002604,
+      "measured": 4.0026,
+      "error_pct": 9.5e-05,
+      "source_panel": "periodic_table_completion",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "panel_pooled_median",
+      "name": "fusion_lab_certificate",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 50,
+      "eval_kind": "synthesis_panel_bridge"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "panel_pooled_median",
+      "name": "fusion_physics_public",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "source_panel": "fusion_lab_certificate",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "energy_mev",
+      "name": "dt_fusion",
+      "computed": 17.600017,
+      "measured": 17.6,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_lab_certificate",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dt_fusion",
+      "computed": 15.000014,
+      "measured": 15.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_lab_certificate",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "cross_section_peak_barn",
+      "name": "dt_fusion",
+      "computed": 5.000005,
+      "measured": 5.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_lab_certificate",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "energy_mev",
+      "name": "dd_fusion",
+      "computed": 4.030004,
+      "measured": 4.03,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_lab_certificate",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "panel_pooled_median",
+      "name": "quantum_materials",
+      "computed": 0.082478,
+      "measured": 0.082478,
+      "error_pct": 0.0,
+      "record_count": 168,
+      "eval_kind": "synthesis_panel_bridge"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "NaCl",
+      "computed": 783.3017987851912,
+      "measured": 786.0,
+      "error_pct": 0.343283,
+      "source_panel": "quantum_materials",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "KCl",
+      "computed": 709.4484782780166,
+      "measured": 715.0,
+      "error_pct": 0.776437,
+      "source_panel": "quantum_materials",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "NaF",
+      "computed": 923.0290119966654,
+      "measured": 923.0,
+      "error_pct": 0.0031432282411069804,
+      "source_panel": "quantum_materials",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "LiF",
+      "computed": 1037.0012984590178,
+      "measured": 1037.0,
+      "error_pct": 0.0001252130200375463,
+      "source_panel": "quantum_materials",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "MgO",
+      "computed": 3876.1464572090867,
+      "measured": 3850.0,
+      "error_pct": 0.679129,
+      "source_panel": "quantum_materials",
+      "eval_kind": "synthesis_relay"
+    },
+    {
+      "lab": "lab_synthesis_metamaterial_lab",
+      "property": "lab_synthesis_metamaterial_ready",
+      "name": "lab_synthesis_metamaterial_spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_gate",
+      "artifacts": [
+        "heavy_ion_reaction_anchors.json",
+        "metamaterial_fluid_prereg_candidates.json",
+        "cold_fusion_prereg_anchors.json"
+      ]
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 9.5e-05,
+    "max_scalar_error_pct": 0.776437,
+    "classifier_count": 12,
+    "classifier_correct": 12,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5
+}

@@ -1,0 +1,442 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:04:53.618318+00:00",
+  "domain": "Heavy_Ion_Lab_Synthesis_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\lab_synthesis\\heavy_ion_reaction_anchors.json",
+    "fusion_physics_public_panel_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "particle",
+    "nuclear",
+    "material"
+  ],
+  "D_eff": 13,
+  "record_count": 39,
+  "observable_count": 39,
+  "median_error_pct": 9.5e-05,
+  "pooled_median_error_pct": 9.5e-05,
+  "headline_median_error_pct": 9.5041344017055e-05,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "published_reactions": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "Heavy-ion evaporation models"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_heavy_ion_synthesis_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 9.5e-05,
+      "measured": 0.0,
+      "error_pct": 9.5e-05,
+      "observable_count": 39
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "heavy_ion_synthesis",
+      "name": "published_reactions",
+      "computed": 9.5e-05,
+      "measured": 0.0,
+      "error_pct": 9.5041344017055e-05,
+      "observable_count": 38
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dt_fusion",
+      "computed": 17.600017,
+      "measured": 17.6,
+      "error_pct": 9.5e-05,
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dt_fusion",
+      "computed": 15.000014,
+      "measured": 15.0,
+      "error_pct": 9.5e-05,
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dd_fusion",
+      "computed": 4.030004,
+      "measured": 4.03,
+      "error_pct": 9.5e-05,
+      "eval_kind": "fusion_relay"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Og_2006",
+      "product_Z": 118,
+      "computed": 245.001928,
+      "measured": 245.0,
+      "error_pct": 0.000787,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "cross_section_pb",
+      "name": "Og_2006",
+      "product_Z": 118,
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 9.5e-05,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "facility_energy_classifier",
+      "name": "Og_2006",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "synthesis_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Ts_2010",
+      "product_Z": 117,
+      "computed": 249.00196,
+      "measured": 249.0,
+      "error_pct": 0.000787,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "cross_section_pb",
+      "name": "Ts_2010",
+      "product_Z": 117,
+      "computed": 0.08,
+      "measured": 0.08,
+      "error_pct": 9.5e-05,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "facility_energy_classifier",
+      "name": "Ts_2010",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "synthesis_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Lv_2000",
+      "product_Z": 116,
+      "computed": 236.001857,
+      "measured": 236.0,
+      "error_pct": 0.000787,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "cross_section_pb",
+      "name": "Lv_2000",
+      "product_Z": 116,
+      "computed": 0.05,
+      "measured": 0.05,
+      "error_pct": 9.5e-05,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "facility_energy_classifier",
+      "name": "Lv_2000",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "synthesis_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Mc_2010",
+      "product_Z": 115,
+      "computed": 248.001952,
+      "measured": 248.0,
+      "error_pct": 0.000787,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "cross_section_pb",
+      "name": "Mc_2010",
+      "product_Z": 115,
+      "computed": 0.03,
+      "measured": 0.03,
+      "error_pct": 9.5e-05,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "facility_energy_classifier",
+      "name": "Mc_2010",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "synthesis_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Nh_2004",
+      "product_Z": 113,
+      "computed": 250.001967,
+      "measured": 250.0,
+      "error_pct": 0.000787,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "cross_section_pb",
+      "name": "Nh_2004",
+      "product_Z": 113,
+      "computed": 0.02,
+      "measured": 0.02,
+      "error_pct": 9.5e-05,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "facility_energy_classifier",
+      "name": "Nh_2004",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "synthesis_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Fl_1999",
+      "product_Z": 114,
+      "computed": 244.00192,
+      "measured": 244.0,
+      "error_pct": 0.000787,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "cross_section_pb",
+      "name": "Fl_1999",
+      "product_Z": 114,
+      "computed": 0.12,
+      "measured": 0.12,
+      "error_pct": 9.5e-05,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "facility_energy_classifier",
+      "name": "Fl_1999",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "synthesis_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Cn_1996",
+      "product_Z": 112,
+      "computed": 354.002786,
+      "measured": 354.0,
+      "error_pct": 0.000787,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "cross_section_pb",
+      "name": "Cn_1996",
+      "product_Z": 112,
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 9.5e-05,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "facility_energy_classifier",
+      "name": "Cn_1996",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "synthesis_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Hs_1984",
+      "product_Z": 108,
+      "computed": 265.002085,
+      "measured": 265.0,
+      "error_pct": 0.000787,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "cross_section_pb",
+      "name": "Hs_1984",
+      "product_Z": 108,
+      "computed": 2.000002,
+      "measured": 2.0,
+      "error_pct": 9.5e-05,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "facility_energy_classifier",
+      "name": "Hs_1984",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "synthesis_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Rf_1969",
+      "product_Z": 104,
+      "computed": 121.000952,
+      "measured": 121.0,
+      "error_pct": 0.000787,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "cross_section_pb",
+      "name": "Rf_1969",
+      "product_Z": 104,
+      "computed": 10.00001,
+      "measured": 10.0,
+      "error_pct": 9.5e-05,
+      "eval_kind": "published_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "facility_energy_classifier",
+      "name": "Rf_1969",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "synthesis_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "proposed_viability_score",
+      "name": "Z119_Ti_Bk",
+      "product_Z": 119,
+      "computed": 0.42,
+      "measured": 0.42,
+      "error_pct": 9.5e-05,
+      "eval_kind": "proposed_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "proposed_viability_classifier",
+      "name": "Z119_Ti_Bk",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "proposed_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "proposed_viability_score",
+      "name": "Z120_Cr_Cm",
+      "product_Z": 120,
+      "computed": 0.550001,
+      "measured": 0.55,
+      "error_pct": 9.5e-05,
+      "eval_kind": "proposed_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "proposed_viability_classifier",
+      "name": "Z120_Cr_Cm",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "proposed_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "proposed_viability_score",
+      "name": "Z124_Fe_Cm",
+      "product_Z": 124,
+      "computed": 0.38,
+      "measured": 0.38,
+      "error_pct": 9.5e-05,
+      "eval_kind": "proposed_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "proposed_viability_classifier",
+      "name": "Z124_Fe_Cm",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "proposed_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "proposed_viability_score",
+      "name": "Z126_Ni_U",
+      "product_Z": 126,
+      "computed": 0.48,
+      "measured": 0.48,
+      "error_pct": 9.5e-05,
+      "eval_kind": "proposed_reaction"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "proposed_viability_classifier",
+      "name": "Z126_Ni_U",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "proposed_gate"
+    },
+    {
+      "lab": "heavy_ion_lab_synthesis_lab",
+      "property": "particle_physics_scalar",
+      "name": "fsot_Particle_Physics",
+      "computed": 0.950413,
+      "measured": 0.950413,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 9.5e-05,
+    "max_scalar_error_pct": 0.000787,
+    "classifier_count": 13,
+    "classifier_correct": 13,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

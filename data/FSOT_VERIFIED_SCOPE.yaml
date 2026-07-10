@@ -1,4 +1,4 @@
-generated_at: '2026-07-10T18:58:29.116310+00:00'
+generated_at: '2026-07-10T19:05:11.171272+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,16 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 290
+  lean_formal_modules: 295
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
   tiers_complete: 48
   tiers_total: 48
   percent_complete: 100.0
-current_tier: Tier 72 Periodic table completion — 220/220 extension domains verified,
-  Z=1-118 anchors + Z>118 prereg + natural formation simulation
+current_tier: Tier 73 Lab synthesis + metamaterial fluid design — 225/225 extension
+  domains verified, heavy-ion lab conditions + cold-fusion crosswalk + fluid-like
+  metamaterial prereg
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -424,7 +425,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: true
-scientific_domains_covered: 251
+scientific_domains_covered: 256
 total_empirical_records: 306680
 tier_coverage:
 - tier: 1
@@ -476,6 +477,7 @@ tier_coverage:
   - CodeGenomeStructurePriors
   - CodonPriors
   - ColdFusionCandidatePreregScaffoldPriors
+  - ColdFusionLabSynthesisCrosswalkPriors
   - CompactObjectBinaryEventsPriors
   - CompactificationLadderPriors
   - ComputationalReasoningPriors
@@ -509,6 +511,7 @@ tier_coverage:
   - EconomicsGapFillPriors
   - EconophysicsPriors
   - ElectricalPowerSystemsPriors
+  - ElementSynthesisConditionScaffoldPriors
   - EmergentDomainPriors
   - EnergyAIOrbitalBridgePriors
   - EnergyNeuralOrbitalBridgePriors
@@ -549,6 +552,7 @@ tier_coverage:
   - GeologyStratigraphyExtensionPriors
   - GeomagnetismPriors
   - GraceCryospherePriors
+  - HeavyIonLabSynthesisPanelPriors
   - HiggsBranchingPriors
   - HiggsMassPriors
   - HistoryExtensionPriors
@@ -569,6 +573,7 @@ tier_coverage:
   - IonosphericChemistryCouplingPriors
   - KnowledgeBasePriors
   - KronosPriors
+  - LabSynthesisMetamaterialSpinePriors
   - LawPolicyExtensionPriors
   - LinguisticsFormalPriors
   - LinguisticsPriors
@@ -595,6 +600,7 @@ tier_coverage:
   - MechanicalEngineeringExtensionPriors
   - MechanisticCouplingPriors
   - MedicalGalacticOrbitalBridgePriors
+  - MetamaterialFluidDesignPreregScaffoldPriors
   - MeteorologyGapFillPriors
   - MusicHarmonicsPublicPanelPriors
   - MycologyExtensionPriors
@@ -824,7 +830,7 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 251
+    scientific_domains_covered: 256
     expansion_candidates: 0
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -2890,23 +2896,53 @@ extension_domains:
 - domain: Periodic_Table_Public_Panel
   tier: 72
   record_count: 52
+  median_error_pct: 9.5e-05
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.PeriodicTablePublicPanelPriors
 - domain: Superheavy_Element_Stability_Panel
   tier: 72
   record_count: 50
+  median_error_pct: 1.0e-06
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.SuperheavyElementStabilityPanelPriors
 - domain: Undiscovered_Element_Candidate_Prereg_Scaffold
   tier: 72
   record_count: 25
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.UndiscoveredElementCandidatePreregScaffoldPriors
 - domain: Natural_Formation_Element_Simulation
   tier: 72
   record_count: 44
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.NaturalFormationElementSimulationPriors
 - domain: Periodic_Table_Completion_Spine
   tier: 72
   record_count: 38
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.PeriodicTableCompletionSpinePriors
+- domain: Heavy_Ion_Lab_Synthesis_Panel
+  tier: 73
+  record_count: 39
+  lean_module: FSOT.Formal.HeavyIonLabSynthesisPanelPriors
+- domain: Element_Synthesis_Condition_Scaffold
+  tier: 73
+  record_count: 45
+  lean_module: FSOT.Formal.ElementSynthesisConditionScaffoldPriors
+- domain: Cold_Fusion_Lab_Synthesis_Crosswalk
+  tier: 73
+  record_count: 22
+  lean_module: FSOT.Formal.ColdFusionLabSynthesisCrosswalkPriors
+- domain: Metamaterial_Fluid_Design_Prereg_Scaffold
+  tier: 73
+  record_count: 25
+  lean_module: FSOT.Formal.MetamaterialFluidDesignPreregScaffoldPriors
+- domain: Lab_Synthesis_Metamaterial_Spine
+  tier: 73
+  record_count: 43
+  lean_module: FSOT.Formal.LabSynthesisMetamaterialSpinePriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -3641,6 +3677,7 @@ lean_formal_modules:
 - CodeGenomeStructurePriors
 - CodonPriors
 - ColdFusionCandidatePreregScaffoldPriors
+- ColdFusionLabSynthesisCrosswalkPriors
 - CompactObjectBinaryEventsPriors
 - CompactificationLadderPriors
 - ComputationalReasoningPriors
@@ -3674,6 +3711,7 @@ lean_formal_modules:
 - EconomicsGapFillPriors
 - EconophysicsPriors
 - ElectricalPowerSystemsPriors
+- ElementSynthesisConditionScaffoldPriors
 - EmergentDomainPriors
 - EnergyAIOrbitalBridgePriors
 - EnergyNeuralOrbitalBridgePriors
@@ -3714,6 +3752,7 @@ lean_formal_modules:
 - GeologyStratigraphyExtensionPriors
 - GeomagnetismPriors
 - GraceCryospherePriors
+- HeavyIonLabSynthesisPanelPriors
 - HiggsBranchingPriors
 - HiggsMassPriors
 - HistoryExtensionPriors
@@ -3734,6 +3773,7 @@ lean_formal_modules:
 - IonosphericChemistryCouplingPriors
 - KnowledgeBasePriors
 - KronosPriors
+- LabSynthesisMetamaterialSpinePriors
 - LawPolicyExtensionPriors
 - LinguisticsFormalPriors
 - LinguisticsPriors
@@ -3760,6 +3800,7 @@ lean_formal_modules:
 - MechanicalEngineeringExtensionPriors
 - MechanisticCouplingPriors
 - MedicalGalacticOrbitalBridgePriors
+- MetamaterialFluidDesignPreregScaffoldPriors
 - MeteorologyGapFillPriors
 - MusicHarmonicsPublicPanelPriors
 - MycologyExtensionPriors

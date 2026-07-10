@@ -2854,6 +2854,71 @@ extension_domains:
     lean_module: FSOT.Formal.PeriodicTableCompletionSpinePriors
     note: "Periodic table completion rollup — public table + superheavy + prereg + natural formation + fusion bridge"
 
+  Heavy_Ion_Lab_Synthesis_Panel:
+    tier: 73
+    D_eff: 13
+    delta_psi: 0.93
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [fusion, particle, nuclear, material]
+    build_script: scripts/build_tier73_lab_synthesis_benchmarks.py
+    manifest: data/tier73_lab_synthesis_manifest.yaml
+    benchmark_data: data/heavy_ion_lab_synthesis_panel_benchmark.json
+    lean_module: FSOT.Formal.HeavyIonLabSynthesisPanelPriors
+    note: "Published heavy-ion fusion-evaporation reactions + proposed Z119+ beam targets — GSI/JINR/RIKEN/LBNL anchors"
+
+  Element_Synthesis_Condition_Scaffold:
+    tier: 73
+    D_eff: 14
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [fusion, particle, nuclear, material, thermodynamics]
+    build_script: scripts/build_tier73_lab_synthesis_benchmarks.py
+    manifest: data/tier73_lab_synthesis_manifest.yaml
+    benchmark_data: data/element_synthesis_condition_scaffold_benchmark.json
+    lean_module: FSOT.Formal.ElementSynthesisConditionScaffoldPriors
+    note: "Lab synthesis condition gates — beam energy margin, temperature proxy, facility capacity under published + proposed reactions"
+
+  Cold_Fusion_Lab_Synthesis_Crosswalk:
+    tier: 73
+    D_eff: 15
+    delta_psi: 0.95
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [fusion, particle, nuclear, material, energy]
+    build_script: scripts/build_tier73_lab_synthesis_benchmarks.py
+    manifest: data/tier73_lab_synthesis_manifest.yaml
+    benchmark_data: data/cold_fusion_lab_synthesis_crosswalk_benchmark.json
+    lean_module: FSOT.Formal.ColdFusionLabSynthesisCrosswalkPriors
+    note: "Tier 71↔72↔73 bridge — Ti-D absorption → Z119 Ti beam, Pd-D lattice → metamaterial heat exchanger, muon-catalyzed → fusion decay chain"
+
+  Metamaterial_Fluid_Design_Prereg_Scaffold:
+    tier: 73
+    D_eff: 16
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, fusion, energy, particle]
+    build_script: scripts/build_tier73_lab_synthesis_benchmarks.py
+    manifest: data/tier73_lab_synthesis_manifest.yaml
+    benchmark_data: data/metamaterial_fluid_design_prereg_scaffold_benchmark.json
+    lean_module: FSOT.Formal.MetamaterialFluidDesignPreregScaffoldPriors
+    note: "Fluid-like metamaterial candidates preregistered via term3 acoustic_bleed + boundary_partition — not claimed synthesized"
+
+  Lab_Synthesis_Metamaterial_Spine:
+    tier: 73
+    D_eff: 18
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [fusion, particle, nuclear, material, energy]
+    build_script: scripts/build_tier73_lab_synthesis_benchmarks.py
+    manifest: data/tier73_lab_synthesis_manifest.yaml
+    benchmark_data: data/lab_synthesis_metamaterial_spine_benchmark.json
+    lean_module: FSOT.Formal.LabSynthesisMetamaterialSpinePriors
+    note: "Lab synthesis + metamaterial certificate rollup — heavy-ion + conditions + cold-fusion crosswalk + periodic/fusion bridges"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T18:58:28.238928+00:00",
+  "generated_at": "2026-07-10T19:05:10.286056+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -51,6 +51,7 @@
     "FSOT.Formal.CodeGenomeStructurePriors",
     "FSOT.Formal.CodonPriors",
     "FSOT.Formal.ColdFusionCandidatePreregScaffoldPriors",
+    "FSOT.Formal.ColdFusionLabSynthesisCrosswalkPriors",
     "FSOT.Formal.CompactificationLadderPriors",
     "FSOT.Formal.CompactObjectBinaryEventsPriors",
     "FSOT.Formal.ComputationalReasoningPriors",
@@ -85,6 +86,7 @@
     "FSOT.Formal.EconomicsGapFillPriors",
     "FSOT.Formal.EconophysicsPriors",
     "FSOT.Formal.ElectricalPowerSystemsPriors",
+    "FSOT.Formal.ElementSynthesisConditionScaffoldPriors",
     "FSOT.Formal.EmergentDomainPriors",
     "FSOT.Formal.EnergyAIOrbitalBridgePriors",
     "FSOT.Formal.EnergyNeuralOrbitalBridgePriors",
@@ -125,6 +127,7 @@
     "FSOT.Formal.GeomagnetismPriors",
     "FSOT.Formal.GraceCryospherePriors",
     "FSOT.Formal.GWOSCLiveEventDeepPriors",
+    "FSOT.Formal.HeavyIonLabSynthesisPanelPriors",
     "FSOT.Formal.HiggsBranchingPriors",
     "FSOT.Formal.HiggsMassPriors",
     "FSOT.Formal.HistoryExtensionPriors",
@@ -145,6 +148,7 @@
     "FSOT.Formal.IonosphericChemistryCouplingPriors",
     "FSOT.Formal.KnowledgeBasePriors",
     "FSOT.Formal.KronosPriors",
+    "FSOT.Formal.LabSynthesisMetamaterialSpinePriors",
     "FSOT.Formal.LawPolicyExtensionPriors",
     "FSOT.Formal.LeanProofsBridge",
     "FSOT.Formal.LinguisticsFormalPriors",
@@ -172,6 +176,7 @@
     "FSOT.Formal.MechanicalEngineeringExtensionPriors",
     "FSOT.Formal.MechanisticCouplingPriors",
     "FSOT.Formal.MedicalGalacticOrbitalBridgePriors",
+    "FSOT.Formal.MetamaterialFluidDesignPreregScaffoldPriors",
     "FSOT.Formal.MeteorologyGapFillPriors",
     "FSOT.Formal.MusicHarmonicsPublicPanelPriors",
     "FSOT.Formal.MycologyExtensionPriors",
@@ -1587,6 +1592,13 @@
       "cold_fusion_candidate_prereg_scaffold_beats_sota_headlines_pos",
       "cold_fusion_candidate_prereg_scaffold_bundle"
     ],
+    "ColdFusionLabSynthesisCrosswalkPriors": [
+      "cold_fusion_lab_synthesis_crosswalk_observable_count_pos",
+      "cold_fusion_lab_synthesis_crosswalk_pooled_median_under_half_pct",
+      "cold_fusion_lab_synthesis_crosswalk_headline_median_under_half_pct",
+      "cold_fusion_lab_synthesis_crosswalk_beats_sota_headlines_pos",
+      "cold_fusion_lab_synthesis_crosswalk_bundle"
+    ],
     "CompactificationLadderPriors": [
       "comp_lad_observable_count_pos",
       "comp_lad_pooled_median_under_half_pct",
@@ -1899,6 +1911,13 @@
       "electrical_power_systems_median_error_under_half_pct",
       "electrical_power_systems_bundle"
     ],
+    "ElementSynthesisConditionScaffoldPriors": [
+      "element_synthesis_condition_scaffold_observable_count_pos",
+      "element_synthesis_condition_scaffold_pooled_median_under_half_pct",
+      "element_synthesis_condition_scaffold_headline_median_under_half_pct",
+      "element_synthesis_condition_scaffold_beats_sota_headlines_pos",
+      "element_synthesis_condition_scaffold_bundle"
+    ],
     "EmergentDomainPriors": [
       "emergent_domain_count_pos",
       "emergent_observed_le_total",
@@ -2193,6 +2212,13 @@
       "gwosc_live_event_deep_beats_sota_headlines_pos",
       "gwosc_live_event_deep_bundle"
     ],
+    "HeavyIonLabSynthesisPanelPriors": [
+      "heavy_ion_lab_synthesis_panel_observable_count_pos",
+      "heavy_ion_lab_synthesis_panel_pooled_median_under_half_pct",
+      "heavy_ion_lab_synthesis_panel_headline_median_under_half_pct",
+      "heavy_ion_lab_synthesis_panel_beats_sota_headlines_pos",
+      "heavy_ion_lab_synthesis_panel_bundle"
+    ],
     "HiggsBranchingPriors": [
       "higgs_compute_branching_count_pos",
       "higgs_branching_observable_count_pos",
@@ -2346,6 +2372,13 @@
       "neurolab_genomic_exact_bundle",
       "neurolab_bio_sign_bundle",
       "lab_smiles_domain_sign_bundle"
+    ],
+    "LabSynthesisMetamaterialSpinePriors": [
+      "lab_synthesis_metamaterial_spine_observable_count_pos",
+      "lab_synthesis_metamaterial_spine_pooled_median_under_half_pct",
+      "lab_synthesis_metamaterial_spine_headline_median_under_half_pct",
+      "lab_synthesis_metamaterial_spine_beats_sota_headlines_pos",
+      "lab_synthesis_metamaterial_spine_bundle"
     ],
     "LawPolicyExtensionPriors": [
       "law_policy_ext_observable_count_pos",
@@ -2522,6 +2555,13 @@
       "med_gal_br_beats_sota_headlines_pos",
       "med_gal_br_bridge_pairs_pos",
       "med_gal_br_bundle"
+    ],
+    "MetamaterialFluidDesignPreregScaffoldPriors": [
+      "metamaterial_fluid_design_prereg_scaffold_observable_count_pos",
+      "metamaterial_fluid_design_prereg_scaffold_pooled_median_under_half_pct",
+      "metamaterial_fluid_design_prereg_scaffold_headline_median_under_half_pct",
+      "metamaterial_fluid_design_prereg_scaffold_beats_sota_headlines_pos",
+      "metamaterial_fluid_design_prereg_scaffold_bundle"
     ],
     "MeteorologyGapFillPriors": [
       "meteorology_gap_fill_observable_count_pos",
@@ -3473,8 +3513,8 @@
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
-  "formal_module_count": 290,
-  "lean_target_count": 291,
+  "formal_module_count": 295,
+  "lean_target_count": 296,
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",

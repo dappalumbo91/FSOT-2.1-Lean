@@ -1,5 +1,5 @@
 # FSOT interdisciplinary expansion roadmap — public-data first, preregister before novel claims.
-version: "1.6"
+version: "1.7"
 updated: "2026-07-10"
 policy: >
   Ship verification against published observables in-repo. Reserve novel material,
@@ -95,8 +95,18 @@ completed_tiers:
     - Undiscovered_Element_Candidate_Prereg_Scaffold
     - Natural_Formation_Element_Simulation
     - Periodic_Table_Completion_Spine
+  tier_73:
+    - Heavy_Ion_Lab_Synthesis_Panel
+    - Element_Synthesis_Condition_Scaffold
+    - Cold_Fusion_Lab_Synthesis_Crosswalk
+    - Metamaterial_Fluid_Design_Prereg_Scaffold
+    - Lab_Synthesis_Metamaterial_Spine
 
 priority_queue:
+  tier_73_lab_synthesis_metamaterial:
+    status: completed
+    focus: [heavy_ion_lab_synthesis, synthesis_conditions, cold_fusion_crosswalk, metamaterial_fluid_prereg]
+    note: "Lab synthesis under facility constraints + fluid-like metamaterial prereg + Tier 71 cold-fusion crosswalk to Z119+ beams"
   tier_72_periodic_table_completion:
     status: completed
     focus: [periodic_table_public, superheavy_stability, undiscovered_prereg, natural_formation_sim]
@@ -125,14 +135,18 @@ priority_queue:
     note: "Publication-facing ToE claim bundle — proof ledger + prereg outcomes + certificate"
 
 maintenance_queue:
-  post_tier_72:
+  post_tier_73:
     status: ongoing
     focus:
       - hybrid_fi_sim_multi_hero
       - knowledge_base_portable_bundle
       - rd_interval_tightening
       - domain_coupling_simulation_refresh
-    note: "Ongoing upkeep after Tier 72 periodic table — FI sim, KB bundle, r_d tightening, cold-fusion experimental validation"
+      - metamaterial_fluid_experimental_validation
+    note: "Ongoing upkeep after Tier 73 lab synthesis — FI sim, KB bundle, r_d tightening, metamaterial fluid-effect prereg validation"
+  post_tier_72:
+    status: completed
+    note: "Superseded by post_tier_73 maintenance queue"
 
 discoverability_principles:
   - "Public repo = reproducible verification against published data"

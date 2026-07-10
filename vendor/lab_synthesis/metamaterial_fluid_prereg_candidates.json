@@ -1,0 +1,72 @@
+{
+  "source": "Metamaterial fluid-like design candidates — preregister before novel material claims",
+  "channel": "metamaterial_fluid_design_prereg",
+  "formula_branches": {
+    "acoustic_bleed_phononic": "term3.acoustic_bleed",
+    "boundary_partition_lattice": "term3.boundary_partition",
+    "fluid_phase_current_coupling": "term1.coherence_efficiency",
+    "fpc_temporal_metamaterial": "term3.fluidlink_timing"
+  },
+  "candidates": [
+    {
+      "id": "acoustic_bleed_phononic_crystal",
+      "name": "Acoustic-bleed phononic bandgap metamaterial",
+      "formula_branch": "term3.acoustic_bleed",
+      "sota_negative_index": -2.0,
+      "fsot_predicted_negative_index": -1.35,
+      "fluid_like_effect": "directional_acoustic_superfluid_analog",
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "boundary_partition_mechanical_metamaterial",
+      "name": "Boundary-partition auxetic fluid-responsive lattice",
+      "formula_branch": "term3.boundary_partition",
+      "sota_poisson_ratio": -1.02,
+      "fsot_predicted_poisson_ratio": -0.62,
+      "fluid_like_effect": "negative_poisson_fluid_conformal",
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "superheavy_doped_graphene_composite",
+      "name": "Superheavy-island dopant graphene fluid electron gas",
+      "formula_branch": "term1.term1_base",
+      "sota_mobility_cm2_vs": 200000,
+      "fsot_predicted_mobility_cm2_vs": 210000,
+      "fluid_like_effect": "electron_fluid_superballistic",
+      "discriminant": "within_10pct_of_observed_gap"
+    },
+    {
+      "id": "fpc_coupled_active_metamaterial",
+      "name": "FPC temporal-coupling active fluid metamaterial",
+      "formula_branch": "term3.fluidlink_timing",
+      "sota_switching_ms": 2.0,
+      "fsot_predicted_switching_ms": 2.8,
+      "fluid_like_effect": "emergent_tau_switching_superfluid_gate",
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "pd_lattice_cold_fusion_metamaterial",
+      "name": "Pd-D lattice cold-fusion metamaterial heat exchanger",
+      "formula_branch": "term3.acoustic_bleed",
+      "sota_heat_transfer_w_m2k": 500,
+      "fsot_predicted_heat_transfer_w_m2k": 1850,
+      "fluid_like_effect": "lattice_acoustic_bleed_thermal_superfluid",
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "coherence_efficiency_optical_metamaterial",
+      "name": "Coherence-efficiency tunable optical fluid lens",
+      "formula_branch": "term1.coherence_efficiency",
+      "sota_refractive_index_tuning": 0.05,
+      "fsot_predicted_refractive_index_tuning": 0.5,
+      "fluid_like_effect": "refractive_index_fluid_modulation",
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    }
+  ],
+  "screening_gates": [
+    {"id": "acoustic_bleed_coupling_min", "name": "Acoustic bleed coupling threshold", "value": 0.35},
+    {"id": "boundary_partition_margin", "name": "Boundary partition design margin", "value": 0.15},
+    {"id": "fluid_like_response_min", "name": "Minimum fluid-like response coefficient", "value": 0.5},
+    {"id": "metamaterial_bandgap_tolerance_ev", "name": "Bandgap tolerance (eV)", "value": 0.1}
+  ]
+}

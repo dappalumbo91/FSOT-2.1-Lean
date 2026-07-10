@@ -1,0 +1,290 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:04:53.618318+00:00",
+  "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "cold_fusion_candidate_prereg_scaffold_benchmark.json",
+    "undiscovered_element_candidate_prereg_scaffold_benchmark.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\lab_synthesis\\heavy_ion_reaction_anchors.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\lab_synthesis\\metamaterial_fluid_prereg_candidates.json"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "particle",
+    "nuclear",
+    "material",
+    "energy"
+  ],
+  "D_eff": 15,
+  "record_count": 22,
+  "observable_count": 22,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "lab_synthesis_bridge": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No cold-fusion-to-lab-synthesis crosswalk"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_cold_fusion_crosswalk_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 22
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "cold_fusion_crosswalk",
+      "name": "lab_synthesis_bridge",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 15
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "panel_pooled_median",
+      "name": "cold_fusion_prereg",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_bridge"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "acoustic_bleed_panel_bridge",
+      "name": "term3_acoustic_bleed_depth",
+      "computed": 0.008381497018408523,
+      "measured": 0.008381497018408523,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "boundary_partition_panel_bridge",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "pd_deuterium_lattice",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "pd_deuterium_lattice",
+      "computed": 1.850001,
+      "measured": 1.85,
+      "error_pct": 7.9e-05,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "panel_pooled_median",
+      "name": "undiscovered_element_prereg",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_bridge"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "boundary_partition_panel_bridge",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_element_prereg",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "phi_morphogenetic_panel_bridge",
+      "name": "phi_morphogenetic_scaling",
+      "computed": 0.0565,
+      "measured": 0.0565,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_element_prereg",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "Z120_N184_unbinilium",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_element_prereg",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "candidate_predicted_half_life_s",
+      "name": "Z120_N184_unbinilium",
+      "computed": 2500000.000237603,
+      "measured": 2500000.0,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_element_prereg",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "panel_pooled_median",
+      "name": "heavy_ion_lab_synthesis",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_bridge"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dt_fusion",
+      "computed": 17.600017,
+      "measured": 17.6,
+      "error_pct": 9.5e-05,
+      "source_panel": "heavy_ion_lab_synthesis",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dt_fusion",
+      "computed": 15.000014,
+      "measured": 15.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "heavy_ion_lab_synthesis",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "fusion_energetics_relay",
+      "name": "dd_fusion",
+      "computed": 4.030004,
+      "measured": 4.03,
+      "error_pct": 9.5e-05,
+      "source_panel": "heavy_ion_lab_synthesis",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "beam_energy_mev_u",
+      "name": "Og_2006",
+      "computed": 245.001928,
+      "measured": 245.0,
+      "error_pct": 0.000787,
+      "source_panel": "heavy_ion_lab_synthesis",
+      "eval_kind": "crosswalk_relay"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "cold_fusion_synthesis_crosswalk_gate",
+      "name": "titanium_deuterium_absorption",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "mechanism": "Ti_beam_heavy_ion_synthesis",
+      "eval_kind": "crosswalk_gate"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "crosswalk_bridge_score",
+      "name": "titanium_deuterium_absorption",
+      "computed": 1.46922,
+      "measured": 1.46922,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_score"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "cold_fusion_synthesis_crosswalk_gate",
+      "name": "pd_deuterium_lattice",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "mechanism": "Pd_lattice_acoustic_bleed_thermal",
+      "eval_kind": "crosswalk_gate"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "crosswalk_bridge_score",
+      "name": "pd_deuterium_lattice",
+      "computed": 2.19225,
+      "measured": 2.19225,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_score"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "cold_fusion_synthesis_crosswalk_gate",
+      "name": "muon_catalyzed_dd",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "mechanism": "published_fusion_decay_chain",
+      "eval_kind": "crosswalk_gate"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "crosswalk_bridge_score",
+      "name": "muon_catalyzed_dd",
+      "computed": 113400000.0,
+      "measured": 113400000.0,
+      "error_pct": 0.0,
+      "eval_kind": "crosswalk_score"
+    },
+    {
+      "lab": "cold_fusion_lab_synthesis_lab",
+      "property": "tier71_tier72_tier73_bridge",
+      "name": "cold_fusion_lab_synthesis_crosswalk",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_gate",
+      "artifacts": [
+        "cold_fusion_prereg_anchors.json",
+        "heavy_ion_reaction_anchors.json",
+        "metamaterial_fluid_prereg_candidates.json"
+      ]
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.000787,
+    "classifier_count": 10,
+    "classifier_correct": 10,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}
