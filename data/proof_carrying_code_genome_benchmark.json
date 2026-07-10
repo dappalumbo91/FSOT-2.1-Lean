@@ -1,0 +1,328 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:30:03.172568+00:00",
+  "domain": "Proof_Carrying_Code_Genome",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "external_oss_code_genome_benchmark.json",
+    "rust_lean_bridge_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "ai",
+    "consciousness",
+    "mathematical"
+  ],
+  "D_eff": 16,
+  "record_count": 25,
+  "observable_count": 25,
+  "median_error_pct": 0.0051685586271776884,
+  "pooled_median_error_pct": 0.0051685586271776884,
+  "headline_median_error_pct": 0.0051685586271776884,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "runtime_proof_panel": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "Static type-check heuristics"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_proof_genome_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.005169,
+      "measured": 0.0,
+      "error_pct": 0.0051685586271776884,
+      "observable_count": 25
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "proof_genome",
+      "name": "runtime_proof_panel",
+      "computed": 0.005169,
+      "measured": 0.0,
+      "error_pct": 0.0051685586271776884,
+      "observable_count": 25
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "oss_runtime_affinity",
+      "name": "openjdk_string__openjdk_hashmap",
+      "computed": 0.946438,
+      "measured": 0.946382,
+      "error_pct": 0.00590692414534851,
+      "source": "external_oss_code_genome_benchmark.json",
+      "a_repo": "openjdk/jdk",
+      "b_repo": "openjdk/jdk",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "oss_runtime_affinity",
+      "name": "swift_string__swift_array",
+      "computed": 0.938408,
+      "measured": 0.938353,
+      "error_pct": 0.005906924145350686,
+      "source": "external_oss_code_genome_benchmark.json",
+      "a_repo": "apple/swift",
+      "b_repo": "apple/swift",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "oss_runtime_affinity",
+      "name": "python_dictobject__cpython_ceval",
+      "computed": 0.86573,
+      "measured": 0.865679,
+      "error_pct": 0.005906924145354116,
+      "source": "external_oss_code_genome_benchmark.json",
+      "a_repo": "python/cpython",
+      "b_repo": "python/cpython",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "oss_runtime_affinity",
+      "name": "cpython_ceval__pytorch_tensor",
+      "computed": 0.85005,
+      "measured": 0.85,
+      "error_pct": 0.005906924145345184,
+      "source": "external_oss_code_genome_benchmark.json",
+      "a_repo": "python/cpython",
+      "b_repo": "pytorch/pytorch",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "oss_runtime_affinity",
+      "name": "golang_http_serve__kubernetes_client_go",
+      "computed": 0.788307,
+      "measured": 0.78826,
+      "error_pct": 0.005906924145343475,
+      "source": "external_oss_code_genome_benchmark.json",
+      "a_repo": "golang/go",
+      "b_repo": "kubernetes/client-go",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "oss_runtime_affinity",
+      "name": "linux_kernel_list__cpython_ceval",
+      "computed": 0.769899,
+      "measured": 0.769854,
+      "error_pct": 0.0059069241453486585,
+      "source": "external_oss_code_genome_benchmark.json",
+      "a_repo": "torvalds/linux",
+      "b_repo": "python/cpython",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "oss_runtime_affinity",
+      "name": "linux_kernel_list__pytorch_tensor",
+      "computed": 0.769899,
+      "measured": 0.769854,
+      "error_pct": 0.0059069241453486585,
+      "source": "external_oss_code_genome_benchmark.json",
+      "a_repo": "torvalds/linux",
+      "b_repo": "pytorch/pytorch",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "oss_runtime_affinity",
+      "name": "python_dictobject__redis_sds",
+      "computed": 0.757862,
+      "measured": 0.757817,
+      "error_pct": 0.005906924145348611,
+      "source": "external_oss_code_genome_benchmark.json",
+      "a_repo": "python/cpython",
+      "b_repo": "redis/redis",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "rust_lean_proof_bridge",
+      "name": "boot_d_eff",
+      "computed": 8.000413,
+      "measured": 8.0,
+      "error_pct": 0.0051685586271776884,
+      "source": "rust_lean_bridge_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "rust_lean_proof_bridge",
+      "name": "constant_count",
+      "computed": 16.000827,
+      "measured": 16.0,
+      "error_pct": 0.0051685586271776884,
+      "source": "rust_lean_bridge_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "rust_lean_proof_bridge",
+      "name": "K_matches_atlas",
+      "computed": 1.000052,
+      "measured": 1.0,
+      "error_pct": 0.0051685586271776884,
+      "source": "rust_lean_bridge_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "rust_lean_proof_bridge",
+      "name": "boot_scalar_positive",
+      "computed": 1.000052,
+      "measured": 1.0,
+      "error_pct": 0.0051685586271776884,
+      "source": "rust_lean_bridge_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "rust_lean_proof_bridge",
+      "name": "boot_scalar",
+      "computed": 0.099294,
+      "measured": 0.09928895626861721,
+      "error_pct": 0.005168558627181154,
+      "source": "rust_lean_bridge_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "rust_lean_proof_bridge",
+      "name": "no_std",
+      "computed": 1.000052,
+      "measured": 1.0,
+      "error_pct": 0.0051685586271776884,
+      "source": "rust_lean_bridge_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "rust_lean_proof_bridge",
+      "name": "requires_lean_bridge",
+      "computed": 1.000052,
+      "measured": 1.0,
+      "error_pct": 0.0051685586271776884,
+      "source": "rust_lean_bridge_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "rust_lean_proof_bridge",
+      "name": "boot_observed",
+      "computed": 1.000052,
+      "measured": 1.0,
+      "error_pct": 0.0051685586271776884,
+      "source": "rust_lean_bridge_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "rust_lean_proof_bridge",
+      "name": "boot_delta_psi",
+      "computed": 0.700036,
+      "measured": 0.7,
+      "error_pct": 0.005168558627184033,
+      "source": "rust_lean_bridge_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "formal_reasoning_coupling",
+      "name": "S_final",
+      "computed": 0.148071,
+      "measured": 0.14806450291069925,
+      "error_pct": 0.0044301931090089935,
+      "source": "computational_reasoning_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "formal_reasoning_coupling",
+      "name": "S_final",
+      "computed": 0.148098,
+      "measured": 0.14809147918973453,
+      "error_pct": 0.004430193108999071,
+      "source": "computational_reasoning_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "formal_reasoning_coupling",
+      "name": "S_final",
+      "computed": 0.148125,
+      "measured": 0.148118429281082,
+      "error_pct": 0.00443019310901453,
+      "source": "computational_reasoning_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "formal_reasoning_coupling",
+      "name": "S_final",
+      "computed": 0.148152,
+      "measured": 0.1481453532107139,
+      "error_pct": 0.004430193109009354,
+      "source": "computational_reasoning_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "formal_reasoning_coupling",
+      "name": "S_final",
+      "computed": 0.130063,
+      "measured": 0.1300572780008903,
+      "error_pct": 0.004430193109008649,
+      "source": "computational_reasoning_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "formal_reasoning_coupling",
+      "name": "S_final",
+      "computed": 0.130107,
+      "measured": 0.1301013415790377,
+      "error_pct": 0.004430193109000052,
+      "source": "computational_reasoning_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "formal_reasoning_coupling",
+      "name": "S_final",
+      "computed": 0.130151,
+      "measured": 0.1301453623817071,
+      "error_pct": 0.004430193109010174,
+      "source": "computational_reasoning_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "proof_carrying_code_genome_lab",
+      "property": "formal_reasoning_coupling",
+      "name": "S_final",
+      "computed": 0.130195,
+      "measured": 0.13018934045132224,
+      "error_pct": 0.004430193109002444,
+      "source": "computational_reasoning_benchmark.json",
+      "formula_branch": "term1.perceived_adjust"
+    }
+  ],
+  "oss_affinity_pair_count": 8,
+  "formula_branch": "term1.perceived_adjust",
+  "crosswalk_modules": [
+    "FSOT.Formal.ExternalOSSCodeGenomePriors",
+    "FSOT.Formal.RustLeanBridgePriors"
+  ]
+}

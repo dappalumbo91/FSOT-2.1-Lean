@@ -1602,6 +1602,135 @@ extension_domains:
     lean_module: FSOT.Formal.ToEGapClosureSpinePriors
     note: "Tier 46 rollup — all five ToE gap pillars certified"
 
+  Acoustic_Resonance_Materials:
+    tier: 47
+    D_eff: 15
+    delta_psi: 0.82
+    recent_hits: 0
+    observed: false
+    formula_branch_override: term3.acoustic_bleed
+    maps_to_lean: [particle, material, energy, acoustical]
+    build_script: scripts/build_tier_l_orbital_gap_fill_benchmarks.py
+    benchmark_data: data/acoustic_resonance_materials_benchmark.json
+    lean_module: FSOT.Formal.AcousticResonanceMaterialsPriors
+    note: "term3.acoustic_bleed gap — species acoustic impedance + building aeroacoustics"
+
+  Chaos_Mediated_Phase_Transitions:
+    tier: 47
+    D_eff: 17
+    delta_psi: 0.9
+    recent_hits: 0
+    observed: false
+    formula_branch_override: term3.chaos_factor
+    maps_to_lean: [particle, energy, fusion, plasma]
+    build_script: scripts/build_tier_l_orbital_gap_fill_benchmarks.py
+    benchmark_data: data/chaos_mediated_phase_transitions_benchmark.json
+    lean_module: FSOT.Formal.ChaosMediatedPhaseTransitionsPriors
+    note: "term3.chaos_factor high-D_eff physics — plasma/particle/higgs phase transitions"
+
+  Phi_Morphogenetic_Scaling:
+    tier: 47
+    D_eff: 16
+    delta_psi: 0.78
+    recent_hits: 2
+    observed: false
+    formula_branch_override: term1.term1_base
+    maps_to_lean: [biological, mathematical, medical]
+    build_script: scripts/build_tier_l_orbital_gap_fill_benchmarks.py
+    benchmark_data: data/phi_morphogenetic_scaling_benchmark.json
+    lean_module: FSOT.Formal.PhiMorphogeneticScalingPriors
+    note: "phi-dominant corpus (3276) — species + strict-empirical morphogenetic observables"
+
+  Ionospheric_Chemistry_Coupling:
+    tier: 47
+    D_eff: 15
+    delta_psi: 0.88
+    recent_hits: 1
+    observed: false
+    formula_branch_override: term3.acoustic_inflow
+    maps_to_lean: [electron, chemical, energy, plasma]
+    build_script: scripts/build_tier_l_orbital_gap_fill_benchmarks.py
+    benchmark_data: data/ionospheric_chemistry_coupling_benchmark.json
+    lean_module: FSOT.Formal.IonosphericChemistryCouplingPriors
+    note: "Magnetosphere cluster gap — ionosphere MHD + Dst/Kp/Bz coupling"
+
+  Energy_AI_Orbital_Bridge:
+    tier: 47
+    D_eff: 16
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    formula_branch_override: term1.coherence_efficiency
+    maps_to_lean: [energy, ai]
+    build_script: scripts/build_tier_l_orbital_gap_fill_benchmarks.py
+    benchmark_data: data/energy_ai_orbital_bridge_benchmark.json
+    lean_module: FSOT.Formal.EnergyAIOrbitalBridgePriors
+    note: "Orbital bridge — energy×ai tag clusters (31+24 domain mass)"
+
+  Consciousness_Galactic_Orbital_Bridge:
+    tier: 47
+    D_eff: 17
+    delta_psi: 0.92
+    recent_hits: 2
+    observed: true
+    formula_branch_override: term1.coherence_efficiency
+    maps_to_lean: [consciousness, galactic]
+    build_script: scripts/build_tier_l_orbital_gap_fill_benchmarks.py
+    benchmark_data: data/consciousness_galactic_orbital_bridge_benchmark.json
+    lean_module: FSOT.Formal.ConsciousnessGalacticOrbitalBridgePriors
+    note: "Orbital bridge — consciousness×galactic tag clusters (39+16 domain mass)"
+
+  Energy_Neural_Orbital_Bridge:
+    tier: 47
+    D_eff: 16
+    delta_psi: 0.86
+    recent_hits: 2
+    observed: true
+    formula_branch_override: term1.coherence_efficiency
+    maps_to_lean: [energy, neural]
+    build_script: scripts/build_tier_l_orbital_gap_fill_benchmarks.py
+    benchmark_data: data/energy_neural_orbital_bridge_benchmark.json
+    lean_module: FSOT.Formal.EnergyNeuralOrbitalBridgePriors
+    note: "Orbital bridge — energy×neural tag clusters (31+21 domain mass)"
+
+  Particle_Neural_Orbital_Bridge:
+    tier: 47
+    D_eff: 17
+    delta_psi: 0.84
+    recent_hits: 2
+    observed: true
+    formula_branch_override: term1.coherence_efficiency
+    maps_to_lean: [particle, neural]
+    build_script: scripts/build_tier_l_orbital_gap_fill_benchmarks.py
+    benchmark_data: data/particle_neural_orbital_bridge_benchmark.json
+    lean_module: FSOT.Formal.ParticleNeuralOrbitalBridgePriors
+    note: "Orbital bridge — particle×neural tag clusters (22+21 domain mass)"
+
+  Proof_Carrying_Code_Genome:
+    tier: 47
+    D_eff: 16
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    formula_branch_override: term1.perceived_adjust
+    maps_to_lean: [ai, consciousness, mathematical]
+    build_script: scripts/build_tier_l_orbital_gap_fill_benchmarks.py
+    benchmark_data: data/proof_carrying_code_genome_benchmark.json
+    lean_module: FSOT.Formal.ProofCarryingCodeGenomePriors
+    note: "OSS runtime affinity + Rust-Lean proof bridge — formal methods genome"
+
+  Domain_Orbital_Predictions:
+    tier: 47
+    D_eff: 18
+    delta_psi: 0.95
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, particle, consciousness, energy]
+    build_script: scripts/build_tier_l_orbital_gap_fill_benchmarks.py
+    benchmark_data: data/domain_orbital_predictions_benchmark.json
+    lean_module: FSOT.Formal.DomainOrbitalPredictionsPriors
+    note: "Tier 47 rollup — 12 orbital predictions gap-fill status from coupling/fractal analysis"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

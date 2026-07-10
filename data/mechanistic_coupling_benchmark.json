@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:14:47.796518+00:00",
+  "generated_at": "2026-07-10T14:30:30.151250+00:00",
   "domain": "Mechanistic_Coupling",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -13,8 +13,8 @@
     "consciousness"
   ],
   "D_eff": 17,
-  "record_count": 67,
-  "observable_count": 67,
+  "record_count": 78,
+  "observable_count": 78,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
@@ -39,7 +39,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 67
+      "observable_count": 78
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -48,7 +48,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 67
+      "observable_count": 78
     }
   ],
   "material_records": [
@@ -249,6 +249,136 @@
     },
     {
       "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-016",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "acoustic_impedance_material_resonance",
+      "formula_branch": "term3.acoustic_bleed",
+      "source_domain": "Acoustic_Resonance_Materials",
+      "target_domain": "Materials_Science"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-017",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "ionospheric_plasma_magnetopause_chemistry",
+      "formula_branch": "term3.acoustic_inflow",
+      "source_domain": "Ionospheric_Chemistry_Coupling",
+      "target_domain": "Magnetosphere"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-018",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "mhd_beta_chaos_phase_gate",
+      "formula_branch": "term3.chaos_factor",
+      "source_domain": "Chaos_Mediated_Phase_Transitions",
+      "target_domain": "Plasma_Physics"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-019",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "golden_ratio_morphogen_expression",
+      "formula_branch": "term1.term1_base",
+      "source_domain": "Phi_Morphogenetic_Scaling",
+      "target_domain": "Biochemistry"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-020",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "thermodynamic_compute_energy_orbital",
+      "formula_branch": "term1.coherence_efficiency",
+      "source_domain": "Energy_AI_Orbital_Bridge",
+      "target_domain": "External_OSS_Code_Genome"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-021",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "observer_cosmic_scale_coherence",
+      "formula_branch": "term1.coherence_efficiency",
+      "source_domain": "Consciousness_Galactic_Orbital_Bridge",
+      "target_domain": "Cosmology_Extended"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-022",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "metabolic_neural_energy_orbital",
+      "formula_branch": "term1.coherence_efficiency",
+      "source_domain": "Energy_Neural_Orbital_Bridge",
+      "target_domain": "Neuroscience"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-023",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "microstate_neural_field_coupling",
+      "formula_branch": "term1.coherence_efficiency",
+      "source_domain": "Particle_Neural_Orbital_Bridge",
+      "target_domain": "Particle_Physics"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-024",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "runtime_proof_genome_carrying",
+      "formula_branch": "term1.perceived_adjust",
+      "source_domain": "Proof_Carrying_Code_Genome",
+      "target_domain": "Rust_Lean_Bridge"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_channel_weight",
+      "name": "MEC-025",
+      "computed": 3.000222,
+      "measured": 3.0,
+      "error_pct": 0.0073836551816993294,
+      "source": "mechanistic_coupling_manifest.yaml",
+      "mechanism": "orbital_prediction_fractal_closure",
+      "formula_branch": "raw_S",
+      "source_domain": "Domain_Orbital_Predictions",
+      "target_domain": "Formula_Branching_Fractal"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
       "property": "mechanism_node_pair_validated",
       "name": "Plasma_Physics__Magnetosphere",
       "computed": 1.0,
@@ -336,6 +466,16 @@
       "error_pct": 0.0,
       "source": "domain_coupling_simulation",
       "mechanism": "neural_consciousness_observer_channel"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "mechanism_node_pair_validated",
+      "name": "Formula_Corpus_Closure__Formula_Branching_Fractal",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "mechanism": "strict_empirical_spine_reduction"
     },
     {
       "lab": "mechanistic_coupling_lab",
@@ -650,6 +790,66 @@
     {
       "lab": "mechanistic_coupling_lab",
       "property": "affinity_edge_error",
+      "name": "Atomic_Physics__Formula_Branching_Fractal__particle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Atomic_Physics__Mechanistic_Coupling__particle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Atomic_Physics__Theory_Completeness_Spine__particle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Atomic_Physics__Fractal_Constant_Recursion__particle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Atomic_Physics__Preregistered_Predictions__particle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Atomic_Physics__ToE_Gap_Closure_Spine__particle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
       "name": "Biochemistry__Immunology__medical",
       "computed": 1.0,
       "measured": 1.0,
@@ -706,70 +906,10 @@
       "error_pct": 0.0,
       "source": "domain_coupling_simulation",
       "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Biochemistry__Culinary_Arts__medical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Biochemistry__Pharmacokinetics__medical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Biochemistry__Food_Microbiology__medical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Biochemistry__Maillard_Chemistry__medical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Biochemistry__Sports_Biomechanics__medical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Biochemistry__Zoology__medical",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
     }
   ],
-  "mechanism_count": 15,
-  "validated_mechanism_pairs": 12,
+  "mechanism_count": 25,
+  "validated_mechanism_pairs": 13,
   "causal_manifest": [
     {
       "id": "MEC-001",
@@ -934,6 +1074,116 @@
         "particle"
       ],
       "formula_branch": "term2.scale"
+    },
+    {
+      "id": "MEC-016",
+      "source": "Acoustic_Resonance_Materials",
+      "target": "Materials_Science",
+      "mechanism": "acoustic_impedance_material_resonance",
+      "lean_tags": [
+        "material",
+        "acoustical"
+      ],
+      "formula_branch": "term3.acoustic_bleed"
+    },
+    {
+      "id": "MEC-017",
+      "source": "Ionospheric_Chemistry_Coupling",
+      "target": "Magnetosphere",
+      "mechanism": "ionospheric_plasma_magnetopause_chemistry",
+      "lean_tags": [
+        "electron",
+        "chemical"
+      ],
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "id": "MEC-018",
+      "source": "Chaos_Mediated_Phase_Transitions",
+      "target": "Plasma_Physics",
+      "mechanism": "mhd_beta_chaos_phase_gate",
+      "lean_tags": [
+        "particle",
+        "fusion"
+      ],
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "id": "MEC-019",
+      "source": "Phi_Morphogenetic_Scaling",
+      "target": "Biochemistry",
+      "mechanism": "golden_ratio_morphogen_expression",
+      "lean_tags": [
+        "biological",
+        "medical"
+      ],
+      "formula_branch": "term1.term1_base"
+    },
+    {
+      "id": "MEC-020",
+      "source": "Energy_AI_Orbital_Bridge",
+      "target": "External_OSS_Code_Genome",
+      "mechanism": "thermodynamic_compute_energy_orbital",
+      "lean_tags": [
+        "energy",
+        "ai"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-021",
+      "source": "Consciousness_Galactic_Orbital_Bridge",
+      "target": "Cosmology_Extended",
+      "mechanism": "observer_cosmic_scale_coherence",
+      "lean_tags": [
+        "consciousness",
+        "galactic"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-022",
+      "source": "Energy_Neural_Orbital_Bridge",
+      "target": "Neuroscience",
+      "mechanism": "metabolic_neural_energy_orbital",
+      "lean_tags": [
+        "energy",
+        "neural"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-023",
+      "source": "Particle_Neural_Orbital_Bridge",
+      "target": "Particle_Physics",
+      "mechanism": "microstate_neural_field_coupling",
+      "lean_tags": [
+        "particle",
+        "neural"
+      ],
+      "formula_branch": "term1.coherence_efficiency"
+    },
+    {
+      "id": "MEC-024",
+      "source": "Proof_Carrying_Code_Genome",
+      "target": "Rust_Lean_Bridge",
+      "mechanism": "runtime_proof_genome_carrying",
+      "lean_tags": [
+        "ai",
+        "mathematical"
+      ],
+      "formula_branch": "term1.perceived_adjust"
+    },
+    {
+      "id": "MEC-025",
+      "source": "Domain_Orbital_Predictions",
+      "target": "Formula_Branching_Fractal",
+      "mechanism": "orbital_prediction_fractal_closure",
+      "lean_tags": [
+        "mathematical",
+        "particle"
+      ],
+      "formula_branch": "raw_S"
     }
   ],
   "crosswalk_modules": [

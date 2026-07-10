@@ -182,6 +182,12 @@ def build_progress() -> dict:
     observer_bench = _load_json(ROOT / "data" / "observer_channel_derivation_benchmark.json")
     adversarial_bench = _load_json(ROOT / "data" / "adversarial_fractal_break_benchmark.json")
     gap_spine_bench = _load_json(ROOT / "data" / "toe_gap_closure_spine_benchmark.json")
+    acoustic_rm_bench = _load_json(ROOT / "data" / "acoustic_resonance_materials_benchmark.json")
+    chaos_pt_bench = _load_json(ROOT / "data" / "chaos_mediated_phase_transitions_benchmark.json")
+    phi_morph_bench = _load_json(ROOT / "data" / "phi_morphogenetic_scaling_benchmark.json")
+    iono_chem_bench = _load_json(ROOT / "data" / "ionospheric_chemistry_coupling_benchmark.json")
+    energy_ai_bridge_bench = _load_json(ROOT / "data" / "energy_ai_orbital_bridge_benchmark.json")
+    orbital_pred_bench = _load_json(ROOT / "data" / "domain_orbital_predictions_benchmark.json")
     tokenization_smoke_bench = _load_json(ROOT / "data" / "tokenization_smoke_benchmark.json")
     trinary_hw_motif_bench = _load_json(ROOT / "data" / "trinary_hardware_motif_benchmark.json")
     intrinsic_llm_bench = _load_json(ROOT / "data" / "intrinsic_llm_validators_benchmark.json")
@@ -1495,6 +1501,41 @@ def build_progress() -> dict:
                 "FSOT.Formal.ToEGapClosureSpinePriors",
             ],
         },
+        {
+            "tier": 47,
+            "name": "Tier 47 — Orbital gap fill (physics frontiers, tag-pair bridges, prediction rollup)",
+            "status": "complete"
+            if acoustic_rm_bench.get("record_count", 0) >= 10
+            and chaos_pt_bench.get("record_count", 0) >= 15
+            and phi_morph_bench.get("record_count", 0) >= 20
+            and iono_chem_bench.get("record_count", 0) >= 30
+            and energy_ai_bridge_bench.get("bridge_pair_count", 0) >= 5
+            and int(orbital_pred_bench.get("filled_prediction_count") or 0) >= 9
+            and orbital_pred_bench.get("gap_fill_status") == "GREEN"
+            and mech_bench.get("mechanism_count", 0) >= 25
+            and coupling_bench.get("node_count", 0) >= 171
+            else "pending",
+            "metrics": {
+                "acoustic_resonance_records": acoustic_rm_bench.get("record_count"),
+                "chaos_phase_records": chaos_pt_bench.get("record_count"),
+                "phi_morphogen_records": phi_morph_bench.get("record_count"),
+                "ionospheric_chemistry_records": iono_chem_bench.get("record_count"),
+                "orbital_bridge_pair_count": energy_ai_bridge_bench.get("bridge_pair_count"),
+                "filled_orbital_predictions": orbital_pred_bench.get("filled_prediction_count"),
+                "orbital_gap_fill_status": orbital_pred_bench.get("gap_fill_status"),
+                "mechanistic_channel_count": mech_bench.get("mechanism_count"),
+                "coupling_node_count": coupling_bench.get("node_count"),
+            },
+            "artifacts": [
+                "data/orbital_gap_fill_manifest.yaml",
+                "data/domain_orbital_prediction_report.json",
+                "scripts/tier_l_orbital_gap_fill_lib.py",
+                "scripts/build_tier_l_orbital_gap_fill_benchmarks.py",
+                "scripts/analyze_domain_orbital_predictions.py",
+                "FSOT.Formal.AcousticResonanceMaterialsPriors",
+                "FSOT.Formal.DomainOrbitalPredictionsPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -1521,7 +1562,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 46 ToE gap closure — constant fractal recursion, preregistered predictions, portable clone-verify, observer derive, adversarial break tests",
+        "current_position": "Tier 47 orbital gap fill — acoustic/chaos/phi/ionospheric physics frontiers, tag-pair orbital bridges, 12-prediction rollup for thesis accumulation",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

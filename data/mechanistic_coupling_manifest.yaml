@@ -107,3 +107,73 @@ mechanisms:
     mechanism: opcode_scalar_register_evolution
     lean_tags: [ai, particle]
     formula_branch: term2.scale
+
+  - id: MEC-016
+    source: Acoustic_Resonance_Materials
+    target: Materials_Science
+    mechanism: acoustic_impedance_material_resonance
+    lean_tags: [material, acoustical]
+    formula_branch: term3.acoustic_bleed
+
+  - id: MEC-017
+    source: Ionospheric_Chemistry_Coupling
+    target: Magnetosphere
+    mechanism: ionospheric_plasma_magnetopause_chemistry
+    lean_tags: [electron, chemical]
+    formula_branch: term3.acoustic_inflow
+
+  - id: MEC-018
+    source: Chaos_Mediated_Phase_Transitions
+    target: Plasma_Physics
+    mechanism: mhd_beta_chaos_phase_gate
+    lean_tags: [particle, fusion]
+    formula_branch: term3.chaos_factor
+
+  - id: MEC-019
+    source: Phi_Morphogenetic_Scaling
+    target: Biochemistry
+    mechanism: golden_ratio_morphogen_expression
+    lean_tags: [biological, medical]
+    formula_branch: term1.term1_base
+
+  - id: MEC-020
+    source: Energy_AI_Orbital_Bridge
+    target: External_OSS_Code_Genome
+    mechanism: thermodynamic_compute_energy_orbital
+    lean_tags: [energy, ai]
+    formula_branch: term1.coherence_efficiency
+
+  - id: MEC-021
+    source: Consciousness_Galactic_Orbital_Bridge
+    target: Cosmology_Extended
+    mechanism: observer_cosmic_scale_coherence
+    lean_tags: [consciousness, galactic]
+    formula_branch: term1.coherence_efficiency
+
+  - id: MEC-022
+    source: Energy_Neural_Orbital_Bridge
+    target: Neuroscience
+    mechanism: metabolic_neural_energy_orbital
+    lean_tags: [energy, neural]
+    formula_branch: term1.coherence_efficiency
+
+  - id: MEC-023
+    source: Particle_Neural_Orbital_Bridge
+    target: Particle_Physics
+    mechanism: microstate_neural_field_coupling
+    lean_tags: [particle, neural]
+    formula_branch: term1.coherence_efficiency
+
+  - id: MEC-024
+    source: Proof_Carrying_Code_Genome
+    target: Rust_Lean_Bridge
+    mechanism: runtime_proof_genome_carrying
+    lean_tags: [ai, mathematical]
+    formula_branch: term1.perceived_adjust
+
+  - id: MEC-025
+    source: Domain_Orbital_Predictions
+    target: Formula_Branching_Fractal
+    mechanism: orbital_prediction_fractal_closure
+    lean_tags: [mathematical, particle]
+    formula_branch: raw_S

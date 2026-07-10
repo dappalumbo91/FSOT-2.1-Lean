@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:18:42.003137+00:00",
+  "generated_at": "2026-07-10T14:30:49.304661+00:00",
   "domain": "Preregistered_Predictions",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -12,11 +12,11 @@
     "biological"
   ],
   "D_eff": 17,
-  "record_count": 5,
-  "observable_count": 5,
-  "median_error_pct": 0.02009823784840666,
-  "pooled_median_error_pct": 0.02009823784840666,
-  "headline_median_error_pct": 0.02009823784840666,
+  "record_count": 8,
+  "observable_count": 8,
+  "median_error_pct": 0.02009823784840936,
+  "pooled_median_error_pct": 0.02009823784840936,
+  "headline_median_error_pct": 0.02009823784840936,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,8 +37,8 @@
       "name": "all_channels",
       "computed": 0.020098,
       "measured": 0.0,
-      "error_pct": 0.02009823784840666,
-      "observable_count": 5
+      "error_pct": 0.02009823784840936,
+      "observable_count": 8
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -46,8 +46,8 @@
       "name": "prediction_panel",
       "computed": 0.020098,
       "measured": 0.0,
-      "error_pct": 0.02009823784840666,
-      "observable_count": 5
+      "error_pct": 0.02009823784840936,
+      "observable_count": 8
     }
   ],
   "material_records": [
@@ -115,10 +115,49 @@
       "discriminant_pass": true,
       "sota_baseline": 3.0,
       "registered_at": "2026-07-10"
+    },
+    {
+      "lab": "preregistered_predictions_lab",
+      "property": "prediction_discriminant",
+      "name": "PRED-006",
+      "computed": 0.410082,
+      "measured": 0.41,
+      "error_pct": 0.020098237848404487,
+      "source": "preregistered_predictions_manifest.yaml",
+      "discriminant": "within_10pct_of_observed_gap",
+      "discriminant_pass": true,
+      "sota_baseline": 0.45,
+      "registered_at": "2026-07-10"
+    },
+    {
+      "lab": "preregistered_predictions_lab",
+      "property": "prediction_discriminant",
+      "name": "PRED-007",
+      "computed": 1.000201,
+      "measured": 1.0,
+      "error_pct": 0.02009823784840936,
+      "source": "preregistered_predictions_manifest.yaml",
+      "discriminant": "fsot_exceeds_sota_by_0.4",
+      "discriminant_pass": true,
+      "sota_baseline": 0.55,
+      "registered_at": "2026-07-10"
+    },
+    {
+      "lab": "preregistered_predictions_lab",
+      "property": "prediction_discriminant",
+      "name": "PRED-008",
+      "computed": 199.039995,
+      "measured": 199.0,
+      "error_pct": 0.020098237848413938,
+      "source": "preregistered_predictions_manifest.yaml",
+      "discriminant": "within_10pct_of_observed_gap",
+      "discriminant_pass": true,
+      "sota_baseline": 210.0,
+      "registered_at": "2026-07-10"
     }
   ],
-  "prediction_count": 5,
-  "discriminant_pass_count": 5,
+  "prediction_count": 8,
+  "discriminant_pass_count": 8,
   "preregistration_date": "2026-07-10",
   "crosswalk_modules": [
     "FSOT.Formal.CosmologyAnomaliesPriors",

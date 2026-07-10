@@ -1,0 +1,68 @@
+# Tier 47 orbital gap-fill — data sources and bridge targets for thesis accumulation.
+version: "1.0"
+updated: "2026-07-10"
+
+physics_frontiers:
+  - domain: Acoustic_Resonance_Materials
+    formula_branch: term3.acoustic_bleed
+    corpus_gap_count: 1095
+    data_sources:
+      - vendor/species/fsot_species_catalog.json
+      - data/architecture_building_science_gap_fill_benchmark.json
+      - data/math_generator_airfoil_rmse_benchmark.json
+
+  - domain: Chaos_Mediated_Phase_Transitions
+    formula_branch: term3.chaos_factor
+    data_sources:
+      - data/plasma_physics_benchmark.json
+      - data/particle_physics_benchmark.json
+      - data/higgs_branching_benchmark.json
+
+  - domain: Phi_Morphogenetic_Scaling
+    formula_branch: term1.term1_base
+    corpus_phi_count: 3276
+    data_sources:
+      - vendor/species/fsot_species_catalog.json
+      - vendor/formula_corpus/by_domain/strict_empirical.jsonl
+
+  - domain: Ionospheric_Chemistry_Coupling
+    formula_branch: term3.acoustic_inflow
+    magnetosphere_cluster:
+      - Plasma_Physics
+      - Geomagnetism
+      - Space_Weather
+      - Magnetosphere
+      - Magnetosphere_Extended
+    data_sources:
+      - data/plasma_physics_benchmark.json
+      - data/geomagnetism_benchmark.json
+      - data/magnetosphere_benchmark.json
+      - data/space_weather_benchmark.json
+
+orbital_bridges:
+  - domain: Energy_AI_Orbital_Bridge
+    tags: [energy, ai]
+    tag_domain_mass: [31, 24]
+  - domain: Consciousness_Galactic_Orbital_Bridge
+    tags: [consciousness, galactic]
+    tag_domain_mass: [39, 16]
+  - domain: Energy_Neural_Orbital_Bridge
+    tags: [energy, neural]
+    tag_domain_mass: [31, 21]
+  - domain: Particle_Neural_Orbital_Bridge
+    tags: [particle, neural]
+    tag_domain_mass: [22, 21]
+
+code_genome:
+  - domain: Proof_Carrying_Code_Genome
+    formula_branch: term1.perceived_adjust
+    data_sources:
+      - data/external_oss_code_genome_benchmark.json
+      - data/rust_lean_bridge_benchmark.json
+      - data/computational_reasoning_benchmark.json
+
+rollup:
+  domain: Domain_Orbital_Predictions
+  report: data/domain_orbital_prediction_report.json
+  predicted_count: 12
+  thesis_note: "Accumulate benchmarks + manifests as thesis inputs; no thesis doc yet"

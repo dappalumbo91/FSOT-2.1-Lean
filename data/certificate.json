@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T14:19:45.813434+00:00",
+  "generated_at": "2026-07-10T14:31:26.177184+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -702,6 +702,14 @@
     "translation_total": 38
   },
   "formal_theorem_inventory": {
+    "AcousticResonanceMaterialsPriors": [
+      "acoustic_rm_observable_count_pos",
+      "acoustic_rm_pooled_median_under_five_pct",
+      "acoustic_rm_headline_median_under_five_pct",
+      "acoustic_rm_beats_sota_headlines_pos",
+      "acoustic_rm_acoustic_species_pos",
+      "acoustic_rm_bundle"
+    ],
     "AdversarialFractalBreakPriors": [
       "adv_brk_observable_count_pos",
       "adv_brk_pooled_median_under_five_pct",
@@ -1149,6 +1157,13 @@
       "certified_agent_qwen_median_error_under_five_pct",
       "certified_agent_qwen_bundle"
     ],
+    "ChaosMediatedPhaseTransitionsPriors": [
+      "chaos_pt_observable_count_pos",
+      "chaos_pt_pooled_median_under_five_pct",
+      "chaos_pt_headline_median_under_five_pct",
+      "chaos_pt_beats_sota_headlines_pos",
+      "chaos_pt_bundle"
+    ],
     "ChemicalEngineeringExtensionPriors": [
       "chemical_engineering_ext_observable_count_pos",
       "chemical_engineering_ext_pooled_median_under_five_pct",
@@ -1326,6 +1341,14 @@
       "computational_reasoning_median_error_under_five_pct",
       "computational_reasoning_bundle"
     ],
+    "ConsciousnessGalacticOrbitalBridgePriors": [
+      "c_gal_br_observable_count_pos",
+      "c_gal_br_pooled_median_under_five_pct",
+      "c_gal_br_headline_median_under_five_pct",
+      "c_gal_br_beats_sota_headlines_pos",
+      "c_gal_br_bridge_pairs_pos",
+      "c_gal_br_bundle"
+    ],
     "Cosmology": [
       "c_cosm_pos",
       "c_cosm_gt_061800",
@@ -1471,6 +1494,14 @@
       "smiles_quantum_records_pos",
       "domain_coverage_priors_bundle"
     ],
+    "DomainOrbitalPredictionsPriors": [
+      "orb_pred_observable_count_pos",
+      "orb_pred_pooled_median_under_five_pct",
+      "orb_pred_headline_median_under_five_pct",
+      "orb_pred_beats_sota_headlines_pos",
+      "orb_pred_filled_predictions_pos",
+      "orb_pred_bundle"
+    ],
     "DomainPrecisionPriors": [
       "domain_precision_numeric_majority",
       "domain_precision_target_band_large",
@@ -1556,6 +1587,22 @@
       "emergent_final_emergence_health_positive",
       "emergent_final_meta_S_positive",
       "emergent_domain_priors_bundle"
+    ],
+    "EnergyAIOrbitalBridgePriors": [
+      "e_ai_br_observable_count_pos",
+      "e_ai_br_pooled_median_under_five_pct",
+      "e_ai_br_headline_median_under_five_pct",
+      "e_ai_br_beats_sota_headlines_pos",
+      "e_ai_br_bridge_pairs_pos",
+      "e_ai_br_bundle"
+    ],
+    "EnergyNeuralOrbitalBridgePriors": [
+      "e_neu_br_observable_count_pos",
+      "e_neu_br_pooled_median_under_five_pct",
+      "e_neu_br_headline_median_under_five_pct",
+      "e_neu_br_beats_sota_headlines_pos",
+      "e_neu_br_bridge_pairs_pos",
+      "e_neu_br_bundle"
     ],
     "EntomologyExtensionPriors": [
       "entomology_ext_observable_count_pos",
@@ -1782,6 +1829,13 @@
       "intrinsic_llm_validators_observable_count_pos",
       "intrinsic_llm_validators_median_error_under_five_pct",
       "intrinsic_llm_validators_bundle"
+    ],
+    "IonosphericChemistryCouplingPriors": [
+      "iono_chem_observable_count_pos",
+      "iono_chem_pooled_median_under_five_pct",
+      "iono_chem_headline_median_under_five_pct",
+      "iono_chem_beats_sota_headlines_pos",
+      "iono_chem_bundle"
     ],
     "KnowledgeBasePriors": [
       "knowledge_base_source_count_pos",
@@ -2102,6 +2156,14 @@
       "paleontology_ext_beats_sota_headlines_pos",
       "paleontology_ext_bundle"
     ],
+    "ParticleNeuralOrbitalBridgePriors": [
+      "p_neu_br_observable_count_pos",
+      "p_neu_br_pooled_median_under_five_pct",
+      "p_neu_br_headline_median_under_five_pct",
+      "p_neu_br_beats_sota_headlines_pos",
+      "p_neu_br_bridge_pairs_pos",
+      "p_neu_br_bundle"
+    ],
     "ParticlePhysicsGapFillPriors": [
       "particle_physics_gap_fill_observable_count_pos",
       "particle_physics_gap_fill_pooled_median_under_five_pct",
@@ -2129,6 +2191,14 @@
       "pharmacology_observable_count_pos",
       "pharmacology_median_error_under_five_pct",
       "pharmacology_bundle"
+    ],
+    "PhiMorphogeneticScalingPriors": [
+      "phi_morph_observable_count_pos",
+      "phi_morph_pooled_median_under_five_pct",
+      "phi_morph_headline_median_under_five_pct",
+      "phi_morph_beats_sota_headlines_pos",
+      "phi_morph_phi_species_pos",
+      "phi_morph_bundle"
     ],
     "PhotonicForge": [
       "photonic_trinary_partition",
@@ -2181,6 +2251,14 @@
       "pl_laws_law_count_pos",
       "pl_laws_cross_domain_bridges_pos",
       "pl_laws_bundle"
+    ],
+    "ProofCarryingCodeGenomePriors": [
+      "proof_cg_observable_count_pos",
+      "proof_cg_pooled_median_under_five_pct",
+      "proof_cg_headline_median_under_five_pct",
+      "proof_cg_beats_sota_headlines_pos",
+      "proof_cg_oss_pairs_pos",
+      "proof_cg_bundle"
     ],
     "ProteinFormulas": [
       "protein_formula_catalog_count_eq_fifteen",

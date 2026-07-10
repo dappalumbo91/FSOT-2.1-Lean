@@ -1,0 +1,916 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:30:02.410669+00:00",
+  "domain": "Ionospheric_Chemistry_Coupling",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "plasma_physics_benchmark.json",
+    "geomagnetism_benchmark.json",
+    "magnetosphere_benchmark.json",
+    "space_weather_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "electron",
+    "chemical",
+    "energy",
+    "plasma"
+  ],
+  "D_eff": 15,
+  "record_count": 85,
+  "observable_count": 85,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "magnetosphere_cluster_panel": {
+        "sota_typical_error_pct": 7.0,
+        "sota_model": "Empirical Dst-Kp decoupling"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_ionospheric_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 85
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "ionospheric",
+      "name": "magnetosphere_cluster_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 85
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "ionosphere_mhd_beta",
+      "name": "ionosphere",
+      "computed": 1.000236,
+      "measured": 1.0,
+      "error_pct": 0.02360923504833856,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 1e-06,
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-26T17:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-26T18:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-26T19:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-26T20:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-26T21:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-26T22:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-26T23:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T00:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T01:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T02:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T03:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T04:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T05:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T06:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T07:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T08:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T09:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T10:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T11:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T12:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T13:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T14:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T15:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T16:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T17:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T18:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T19:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T20:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T21:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T22:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-27T23:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-28T00:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-28T01:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-28T02:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-28T03:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-28T04:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-28T05:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-28T06:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-28T07:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "dst_storm_classifier",
+      "name": "2026-06-28T08:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-01T00:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-01T03:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-01T06:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-01T09:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-01T12:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-01T15:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-01T18:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-01T21:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-02T00:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-02T03:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-02T06:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-02T09:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-02T12:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-02T15:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-02T18:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-02T21:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-03T00:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-03T03:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-03T06:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-03T09:00:00",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019674362540289536,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-03T12:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-03T15:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-03T18:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-03T21:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-04T00:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-04T03:00:00",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019674362540289536,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-04T06:00:00",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019674362540289536,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-04T09:00:00",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019674362540289536,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-04T12:00:00",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019674362540289536,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-04T15:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-04T18:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-04T21:00:00",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019674362540289536,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-05T00:00:00",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019674362540289536,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-05T03:00:00",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019674362540289536,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-05T06:00:00",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019674362540289536,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-05T09:00:00",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019674362540289536,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-05T12:00:00",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019674362540289536,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-05T15:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-05T18:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "kp_storm_classifier",
+      "name": "1932-01-05T21:00:00",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "magnetosphere_extended_coupling",
+      "name": "historical_coupled_dst_kp_storm_classifier",
+      "computed": 100.023609,
+      "measured": 100.0,
+      "error_pct": 0.023609235048340338,
+      "source": "magnetosphere_extended_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "magnetosphere_extended_coupling",
+      "name": "storm_holdout_g_scale_classifier",
+      "computed": 100.023609,
+      "measured": 100.0,
+      "error_pct": 0.023609235048340338,
+      "source": "magnetosphere_extended_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "magnetosphere_extended_coupling",
+      "name": "solar_wind_bz_southward_classifier",
+      "computed": 100.023609,
+      "measured": 100.0,
+      "error_pct": 0.023609235048340338,
+      "source": "magnetosphere_extended_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "ionospheric_chemistry_lab",
+      "property": "magnetosphere_extended_coupling",
+      "name": "pooled_magnetosphere_extended_classifier",
+      "computed": 100.023609,
+      "measured": 100.0,
+      "error_pct": 0.023609235048340338,
+      "source": "magnetosphere_extended_benchmark.json",
+      "formula_branch": "term3.acoustic_inflow"
+    }
+  ],
+  "magnetosphere_cluster_sources": 5,
+  "formula_branch": "term3.acoustic_inflow",
+  "crosswalk_modules": [
+    "FSOT.Formal.MagnetospherePriors",
+    "FSOT.Formal.SpaceWeatherPriors"
+  ]
+}

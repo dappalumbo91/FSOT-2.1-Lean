@@ -110,7 +110,7 @@ def build_fractal_dag() -> dict[str, Any]:
     edges: list[dict] = []
     for name, cfg in ext.items():
         tags = list(cfg.get("maps_to_lean") or [])
-        branch = _lean_branch_for_tags(
+        branch = cfg.get("formula_branch_override") or _lean_branch_for_tags(
             tags,
             observed=bool(cfg.get("observed")),
             recent_hits=int(cfg.get("recent_hits") or 0),

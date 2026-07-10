@@ -16,8 +16,8 @@ def toe_spine_pooled_median_error_pct : ℝ := (0.0 : ℝ)
 def toe_spine_headline_median_error_pct : ℝ := (0.0 : ℝ)
 def toe_spine_beats_sota_headlines : ℕ := 2
 def toe_spine_D_eff : ℕ := 19
-def toe_spine_domain_attachment_count : ℕ := 119
-def toe_spine_mechanism_count : ℕ := 15
+def toe_spine_domain_attachment_count : ℕ := 135
+def toe_spine_mechanism_count : ℕ := 25
 
 theorem toe_spine_observable_count_pos : 0 < toe_spine_observable_count := by
   unfold toe_spine_observable_count; norm_num

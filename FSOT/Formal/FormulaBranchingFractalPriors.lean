@@ -11,12 +11,12 @@ noncomputable section
 
 open Real
 
-def fractal_observable_count : ℕ := 128
-def fractal_pooled_median_error_pct : ℝ := (0.03801653760497961 : ℝ)
-def fractal_headline_median_error_pct : ℝ := (0.03801653760497961 : ℝ)
+def fractal_observable_count : ℕ := 144
+def fractal_pooled_median_error_pct : ℝ := (0.038016537604977654 : ℝ)
+def fractal_headline_median_error_pct : ℝ := (0.038016537604977654 : ℝ)
 def fractal_beats_sota_headlines : ℕ := 3
 def fractal_D_eff : ℕ := 18
-def fractal_domain_attachment_count : ℕ := 119
+def fractal_domain_attachment_count : ℕ := 135
 
 theorem fractal_observable_count_pos : 0 < fractal_observable_count := by
   unfold fractal_observable_count; norm_num
@@ -35,7 +35,7 @@ theorem fractal_attachments_pos : 0 < fractal_domain_attachment_count := by
   unfold fractal_domain_attachment_count; norm_num
 
 theorem fractal_bundle :
-    fractal_observable_count = 128 ∧
+    fractal_observable_count = 144 ∧
     fractal_pooled_median_error_pct < (5 : ℝ) ∧
     fractal_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩

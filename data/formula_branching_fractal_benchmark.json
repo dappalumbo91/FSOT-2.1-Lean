@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:14:47.736465+00:00",
+  "generated_at": "2026-07-10T14:30:30.083231+00:00",
   "domain": "Formula_Branching_Fractal",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -14,11 +14,11 @@
     "consciousness"
   ],
   "D_eff": 18,
-  "record_count": 128,
-  "observable_count": 128,
-  "median_error_pct": 0.03801653760497961,
-  "pooled_median_error_pct": 0.03801653760497961,
-  "headline_median_error_pct": 0.03801653760497961,
+  "record_count": 144,
+  "observable_count": 144,
+  "median_error_pct": 0.038016537604977654,
+  "pooled_median_error_pct": 0.038016537604977654,
+  "headline_median_error_pct": 0.038016537604977654,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -44,8 +44,8 @@
       "name": "all_channels",
       "computed": 0.038017,
       "measured": 0.0,
-      "error_pct": 0.03801653760497961,
-      "observable_count": 128
+      "error_pct": 0.038016537604977654,
+      "observable_count": 144
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -53,8 +53,8 @@
       "name": "fractal_branch_panel",
       "computed": 0.038017,
       "measured": 0.0,
-      "error_pct": 0.03801653760497961,
-      "observable_count": 119
+      "error_pct": 0.03801653760497861,
+      "observable_count": 135
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -1259,6 +1259,166 @@
     },
     {
       "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Fractal_Constant_Recursion",
+      "computed": 14.705588,
+      "measured": 14.7,
+      "error_pct": 0.038016537604973144,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Preregistered_Predictions",
+      "computed": 15.055721,
+      "measured": 15.05,
+      "error_pct": 0.03801653760497482,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Portable_Clone_Verify",
+      "computed": 14.705588,
+      "measured": 14.7,
+      "error_pct": 0.038016537604973144,
+      "source": "term1.growth_term",
+      "branch": "term1.growth_term"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Observer_Channel_Derivation",
+      "computed": 15.055721,
+      "measured": 15.05,
+      "error_pct": 0.03801653760497482,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "computed": 15.055721,
+      "measured": 15.05,
+      "error_pct": 0.03801653760497482,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "ToE_Gap_Closure_Spine",
+      "computed": 15.405855,
+      "measured": 15.4,
+      "error_pct": 0.03801653760497643,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Acoustic_Resonance_Materials",
+      "computed": 15.65595,
+      "measured": 15.65,
+      "error_pct": 0.038016537604977536,
+      "source": "term3.acoustic_bleed",
+      "branch": "term3.acoustic_bleed"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Chaos_Mediated_Phase_Transitions",
+      "computed": 15.65595,
+      "measured": 15.65,
+      "error_pct": 0.038016537604977536,
+      "source": "term3.chaos_factor",
+      "branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Phi_Morphogenetic_Scaling",
+      "computed": 15.305817,
+      "measured": 15.3,
+      "error_pct": 0.038016537604975975,
+      "source": "term1.term1_base",
+      "branch": "term1.term1_base"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Ionospheric_Chemistry_Coupling",
+      "computed": 15.65595,
+      "measured": 15.65,
+      "error_pct": 0.038016537604977536,
+      "source": "term3.acoustic_inflow",
+      "branch": "term3.acoustic_inflow"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Energy_AI_Orbital_Bridge",
+      "computed": 14.955683,
+      "measured": 14.95,
+      "error_pct": 0.03801653760497435,
+      "source": "term1.coherence_efficiency",
+      "branch": "term1.coherence_efficiency"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Consciousness_Galactic_Orbital_Bridge",
+      "computed": 14.955683,
+      "measured": 14.95,
+      "error_pct": 0.03801653760497435,
+      "source": "term1.coherence_efficiency",
+      "branch": "term1.coherence_efficiency"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Energy_Neural_Orbital_Bridge",
+      "computed": 14.955683,
+      "measured": 14.95,
+      "error_pct": 0.03801653760497435,
+      "source": "term1.coherence_efficiency",
+      "branch": "term1.coherence_efficiency"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Particle_Neural_Orbital_Bridge",
+      "computed": 14.955683,
+      "measured": 14.95,
+      "error_pct": 0.03801653760497435,
+      "source": "term1.coherence_efficiency",
+      "branch": "term1.coherence_efficiency"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Proof_Carrying_Code_Genome",
+      "computed": 15.305817,
+      "measured": 15.3,
+      "error_pct": 0.038016537604975975,
+      "source": "term1.perceived_adjust",
+      "branch": "term1.perceived_adjust"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Domain_Orbital_Predictions",
+      "computed": 15.65595,
+      "measured": 15.65,
+      "error_pct": 0.038016537604977536,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
       "property": "corpus_branch_attachment_count",
       "name": "term1.growth_term",
       "computed": 420.119752,
@@ -1341,8 +1501,8 @@
   ],
   "fractal_dag": {
     "root": "raw_S",
-    "node_count": 125,
-    "edge_count": 8185,
+    "node_count": 141,
+    "edge_count": 8217,
     "nodes": [
       {
         "id": "domain::Plasma_Physics",
@@ -2950,6 +3110,229 @@
         "D_eff": 19
       },
       {
+        "id": "domain::Fractal_Constant_Recursion",
+        "kind": "extension_domain",
+        "name": "Fractal_Constant_Recursion",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 14.7,
+        "maps_to_lean": [
+          "mathematical",
+          "particle"
+        ],
+        "tier": 46,
+        "D_eff": 18
+      },
+      {
+        "id": "domain::Preregistered_Predictions",
+        "kind": "extension_domain",
+        "name": "Preregistered_Predictions",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 15.05,
+        "maps_to_lean": [
+          "cosmological",
+          "particle",
+          "biological"
+        ],
+        "tier": 46,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Portable_Clone_Verify",
+        "kind": "extension_domain",
+        "name": "Portable_Clone_Verify",
+        "primary_branch": "term1.growth_term",
+        "divergence_depth": 14.7,
+        "maps_to_lean": [
+          "ai",
+          "mathematical"
+        ],
+        "tier": 46,
+        "D_eff": 14
+      },
+      {
+        "id": "domain::Observer_Channel_Derivation",
+        "kind": "extension_domain",
+        "name": "Observer_Channel_Derivation",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 15.05,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "perceived"
+        ],
+        "tier": 46,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::Adversarial_Fractal_Break_Tests",
+        "kind": "extension_domain",
+        "name": "Adversarial_Fractal_Break_Tests",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 15.05,
+        "maps_to_lean": [
+          "ai",
+          "biological",
+          "medical"
+        ],
+        "tier": 46,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::ToE_Gap_Closure_Spine",
+        "kind": "extension_domain",
+        "name": "ToE_Gap_Closure_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 15.4,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "consciousness",
+          "ai"
+        ],
+        "tier": 46,
+        "D_eff": 19
+      },
+      {
+        "id": "domain::Acoustic_Resonance_Materials",
+        "kind": "extension_domain",
+        "name": "Acoustic_Resonance_Materials",
+        "primary_branch": "term3.acoustic_bleed",
+        "divergence_depth": 15.65,
+        "maps_to_lean": [
+          "particle",
+          "material",
+          "energy",
+          "acoustical"
+        ],
+        "tier": 47,
+        "D_eff": 15
+      },
+      {
+        "id": "domain::Chaos_Mediated_Phase_Transitions",
+        "kind": "extension_domain",
+        "name": "Chaos_Mediated_Phase_Transitions",
+        "primary_branch": "term3.chaos_factor",
+        "divergence_depth": 15.65,
+        "maps_to_lean": [
+          "particle",
+          "energy",
+          "fusion",
+          "plasma"
+        ],
+        "tier": 47,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Phi_Morphogenetic_Scaling",
+        "kind": "extension_domain",
+        "name": "Phi_Morphogenetic_Scaling",
+        "primary_branch": "term1.term1_base",
+        "divergence_depth": 15.3,
+        "maps_to_lean": [
+          "biological",
+          "mathematical",
+          "medical"
+        ],
+        "tier": 47,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::Ionospheric_Chemistry_Coupling",
+        "kind": "extension_domain",
+        "name": "Ionospheric_Chemistry_Coupling",
+        "primary_branch": "term3.acoustic_inflow",
+        "divergence_depth": 15.65,
+        "maps_to_lean": [
+          "electron",
+          "chemical",
+          "energy",
+          "plasma"
+        ],
+        "tier": 47,
+        "D_eff": 15
+      },
+      {
+        "id": "domain::Energy_AI_Orbital_Bridge",
+        "kind": "extension_domain",
+        "name": "Energy_AI_Orbital_Bridge",
+        "primary_branch": "term1.coherence_efficiency",
+        "divergence_depth": 14.95,
+        "maps_to_lean": [
+          "energy",
+          "ai"
+        ],
+        "tier": 47,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::Consciousness_Galactic_Orbital_Bridge",
+        "kind": "extension_domain",
+        "name": "Consciousness_Galactic_Orbital_Bridge",
+        "primary_branch": "term1.coherence_efficiency",
+        "divergence_depth": 14.95,
+        "maps_to_lean": [
+          "consciousness",
+          "galactic"
+        ],
+        "tier": 47,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Energy_Neural_Orbital_Bridge",
+        "kind": "extension_domain",
+        "name": "Energy_Neural_Orbital_Bridge",
+        "primary_branch": "term1.coherence_efficiency",
+        "divergence_depth": 14.95,
+        "maps_to_lean": [
+          "energy",
+          "neural"
+        ],
+        "tier": 47,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::Particle_Neural_Orbital_Bridge",
+        "kind": "extension_domain",
+        "name": "Particle_Neural_Orbital_Bridge",
+        "primary_branch": "term1.coherence_efficiency",
+        "divergence_depth": 14.95,
+        "maps_to_lean": [
+          "particle",
+          "neural"
+        ],
+        "tier": 47,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Proof_Carrying_Code_Genome",
+        "kind": "extension_domain",
+        "name": "Proof_Carrying_Code_Genome",
+        "primary_branch": "term1.perceived_adjust",
+        "divergence_depth": 15.3,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "mathematical"
+        ],
+        "tier": 47,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::Domain_Orbital_Predictions",
+        "kind": "extension_domain",
+        "name": "Domain_Orbital_Predictions",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 15.65,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "consciousness",
+          "energy"
+        ],
+        "tier": 47,
+        "D_eff": 18
+      },
+      {
         "id": "constant::phi",
         "kind": "constant_primitive",
         "name": "phi",
@@ -4429,6 +4812,198 @@
       },
       {
         "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Fractal_Constant_Recursion"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Fractal_Constant_Recursion",
+        "kind": "domain_attachment",
+        "domain": "Fractal_Constant_Recursion"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Preregistered_Predictions"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Preregistered_Predictions",
+        "kind": "domain_attachment",
+        "domain": "Preregistered_Predictions"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.growth_term",
+        "kind": "spine_branch",
+        "domain": "Portable_Clone_Verify"
+      },
+      {
+        "from": "term1.growth_term",
+        "to": "domain::Portable_Clone_Verify",
+        "kind": "domain_attachment",
+        "domain": "Portable_Clone_Verify"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Observer_Channel_Derivation"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Observer_Channel_Derivation",
+        "kind": "domain_attachment",
+        "domain": "Observer_Channel_Derivation"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Adversarial_Fractal_Break_Tests"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Adversarial_Fractal_Break_Tests",
+        "kind": "domain_attachment",
+        "domain": "Adversarial_Fractal_Break_Tests"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "ToE_Gap_Closure_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::ToE_Gap_Closure_Spine",
+        "kind": "domain_attachment",
+        "domain": "ToE_Gap_Closure_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term3.acoustic_bleed",
+        "kind": "spine_branch",
+        "domain": "Acoustic_Resonance_Materials"
+      },
+      {
+        "from": "term3.acoustic_bleed",
+        "to": "domain::Acoustic_Resonance_Materials",
+        "kind": "domain_attachment",
+        "domain": "Acoustic_Resonance_Materials"
+      },
+      {
+        "from": "raw_S",
+        "to": "term3.chaos_factor",
+        "kind": "spine_branch",
+        "domain": "Chaos_Mediated_Phase_Transitions"
+      },
+      {
+        "from": "term3.chaos_factor",
+        "to": "domain::Chaos_Mediated_Phase_Transitions",
+        "kind": "domain_attachment",
+        "domain": "Chaos_Mediated_Phase_Transitions"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.term1_base",
+        "kind": "spine_branch",
+        "domain": "Phi_Morphogenetic_Scaling"
+      },
+      {
+        "from": "term1.term1_base",
+        "to": "domain::Phi_Morphogenetic_Scaling",
+        "kind": "domain_attachment",
+        "domain": "Phi_Morphogenetic_Scaling"
+      },
+      {
+        "from": "raw_S",
+        "to": "term3.acoustic_inflow",
+        "kind": "spine_branch",
+        "domain": "Ionospheric_Chemistry_Coupling"
+      },
+      {
+        "from": "term3.acoustic_inflow",
+        "to": "domain::Ionospheric_Chemistry_Coupling",
+        "kind": "domain_attachment",
+        "domain": "Ionospheric_Chemistry_Coupling"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.coherence_efficiency",
+        "kind": "spine_branch",
+        "domain": "Energy_AI_Orbital_Bridge"
+      },
+      {
+        "from": "term1.coherence_efficiency",
+        "to": "domain::Energy_AI_Orbital_Bridge",
+        "kind": "domain_attachment",
+        "domain": "Energy_AI_Orbital_Bridge"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.coherence_efficiency",
+        "kind": "spine_branch",
+        "domain": "Consciousness_Galactic_Orbital_Bridge"
+      },
+      {
+        "from": "term1.coherence_efficiency",
+        "to": "domain::Consciousness_Galactic_Orbital_Bridge",
+        "kind": "domain_attachment",
+        "domain": "Consciousness_Galactic_Orbital_Bridge"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.coherence_efficiency",
+        "kind": "spine_branch",
+        "domain": "Energy_Neural_Orbital_Bridge"
+      },
+      {
+        "from": "term1.coherence_efficiency",
+        "to": "domain::Energy_Neural_Orbital_Bridge",
+        "kind": "domain_attachment",
+        "domain": "Energy_Neural_Orbital_Bridge"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.coherence_efficiency",
+        "kind": "spine_branch",
+        "domain": "Particle_Neural_Orbital_Bridge"
+      },
+      {
+        "from": "term1.coherence_efficiency",
+        "to": "domain::Particle_Neural_Orbital_Bridge",
+        "kind": "domain_attachment",
+        "domain": "Particle_Neural_Orbital_Bridge"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.perceived_adjust",
+        "kind": "spine_branch",
+        "domain": "Proof_Carrying_Code_Genome"
+      },
+      {
+        "from": "term1.perceived_adjust",
+        "to": "domain::Proof_Carrying_Code_Genome",
+        "kind": "domain_attachment",
+        "domain": "Proof_Carrying_Code_Genome"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Domain_Orbital_Predictions"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Domain_Orbital_Predictions",
+        "kind": "domain_attachment",
+        "domain": "Domain_Orbital_Predictions"
+      },
+      {
+        "from": "raw_S",
         "to": "term1.growth_term",
         "kind": "corpus_formula",
         "concept": "IE_H"
@@ -32806,198 +33381,6 @@
         "to": "term1.term1_base",
         "kind": "corpus_formula",
         "concept": "Mn\u00b3\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CH\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "OCH\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "OH"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "NH\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "F"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cl"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Br"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CF\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "COCH\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "SO\u2082CH\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "N(CH\u2083)\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "methanol"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "ethanol"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "acetone"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "benzene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "chloroform"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "phenol"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "naphthalene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "aspirin"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "caffeine"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "diazepam"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "ibuprofen"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "octanol"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "hexane"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cu(NH3)4_2+"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Zn(NH3)4_2+"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ni(NH3)6_2+"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cu(en)2_2+"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ca_EDTA"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Mg_EDTA"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Fe3_EDTA"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cu_EDTA"
       }
     ],
     "corpus_constant_histogram": {
@@ -33013,9 +33396,9 @@
       "term1.term1_base": 6426,
       "term3.acoustic_bleed": 1095
     },
-    "domain_attachment_count": 119
+    "domain_attachment_count": 135
   },
-  "domain_attachment_count": 119,
+  "domain_attachment_count": 135,
   "corpus_strict_count": 7941,
   "rollup_status": "GREEN",
   "crosswalk_modules": [

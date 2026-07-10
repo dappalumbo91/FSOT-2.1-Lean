@@ -66,3 +66,36 @@ predictions:
     sota_label: "BBN theory gap"
     discriminant: "within_10pct_of_observed_gap"
     registered_at: "2026-07-10"
+
+  - id: PRED-006
+    name: acoustic_impedance_median_MRayl
+    domain: Acoustic_Resonance_Materials
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.41
+    unit: MRayl
+    sota_baseline: 0.45
+    sota_label: "Empirical air-water impedance mean"
+    discriminant: "within_10pct_of_observed_gap"
+    registered_at: "2026-07-10"
+
+  - id: PRED-007
+    name: ionospheric_beta_quiet_classifier
+    domain: Ionospheric_Chemistry_Coupling
+    fsot_formula_branch: term3.acoustic_inflow
+    fsot_predicted: 1.0
+    unit: stability_score
+    sota_baseline: 0.55
+    sota_label: "Dst-Kp decoupled heuristic"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-008
+    name: phi_glass_Tg_morphogen_K
+    domain: Phi_Morphogenetic_Scaling
+    fsot_formula_branch: term1.term1_base
+    fsot_predicted: 199.0
+    unit: K
+    sota_baseline: 210.0
+    sota_label: "Polymer Tg phenomenology"
+    discriminant: "within_10pct_of_observed_gap"
+    registered_at: "2026-07-10"

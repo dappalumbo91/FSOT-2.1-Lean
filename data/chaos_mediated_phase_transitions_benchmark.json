@@ -1,0 +1,294 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:30:02.295386+00:00",
+  "domain": "Chaos_Mediated_Phase_Transitions",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "plasma_physics_benchmark.json",
+    "particle_physics_benchmark.json",
+    "higgs_branching_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "energy",
+    "fusion",
+    "plasma"
+  ],
+  "D_eff": 17,
+  "record_count": 21,
+  "observable_count": 21,
+  "median_error_pct": 0.03147898006445882,
+  "pooled_median_error_pct": 0.03147898006445882,
+  "headline_median_error_pct": 0.03147898006445882,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "chaos_panel": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "Phenomenological phase diagrams"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_phase_transition_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.031479,
+      "measured": 0.0,
+      "error_pct": 0.03147898006445882,
+      "observable_count": 21
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "phase_transition",
+      "name": "chaos_panel",
+      "computed": 0.031479,
+      "measured": 0.0,
+      "error_pct": 0.03147898006445882,
+      "observable_count": 21
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "ionosphere",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 1e-06,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "solar_wind",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.05,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "tokamak_H_mode",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.03,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "tokamak_high_beta",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.15,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "laboratory_Q_machine",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.001,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "magnetosphere",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.08,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "stellar_corona",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.0001,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "magnetosheath",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.02,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "auroral_arc",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.01,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "magnetotail_lobe",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.04,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "solar_prominence",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.002,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "theta_pinch",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.008,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "spheromak",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.06,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "FRC_laboratory",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.07,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "z_pinch",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.12,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "stellarator_W7X",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.025,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "ICF_hohlraum",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.09,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "reverse_field_pinch",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.11,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "Wendelstein_edge",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.035,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "mhd_beta_phase",
+      "name": "fusion_ignition_edge",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.03147898006445882,
+      "source": "plasma_physics_benchmark.json",
+      "beta": 0.14,
+      "formula_branch": "term3.chaos_factor"
+    },
+    {
+      "lab": "chaos_phase_transition_lab",
+      "property": "higgs_branching_transition",
+      "name": "median_error_pct",
+      "computed": 0.500118,
+      "measured": 0.5,
+      "error_pct": 0.02360923504833856,
+      "source": "higgs_branching_benchmark.json",
+      "formula_branch": "term3.chaos_factor"
+    }
+  ],
+  "formula_branch": "term3.chaos_factor",
+  "plasma_phase_count": 20,
+  "crosswalk_modules": [
+    "FSOT.Formal.PlasmaPhysicsPriors",
+    "FSOT.Formal.ParticlePhysicsGapFillPriors"
+  ]
+}

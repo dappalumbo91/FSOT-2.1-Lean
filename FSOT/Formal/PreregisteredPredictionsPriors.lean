@@ -11,13 +11,13 @@ noncomputable section
 
 open Real
 
-def prereg_observable_count : ℕ := 5
-def prereg_pooled_median_error_pct : ℝ := (0.02009823784840666 : ℝ)
-def prereg_headline_median_error_pct : ℝ := (0.02009823784840666 : ℝ)
+def prereg_observable_count : ℕ := 8
+def prereg_pooled_median_error_pct : ℝ := (0.02009823784840936 : ℝ)
+def prereg_headline_median_error_pct : ℝ := (0.02009823784840936 : ℝ)
 def prereg_beats_sota_headlines : ℕ := 2
 def prereg_D_eff : ℕ := 17
-def prereg_prediction_count : ℕ := 5
-def prereg_discriminant_pass_count : ℕ := 5
+def prereg_prediction_count : ℕ := 8
+def prereg_discriminant_pass_count : ℕ := 8
 
 theorem prereg_observable_count_pos : 0 < prereg_observable_count := by
   unfold prereg_observable_count; norm_num
@@ -35,7 +35,7 @@ theorem prereg_beats_sota_headlines_pos : 0 < prereg_beats_sota_headlines := by
 theorem prereg_predictions_pos : 0 < prereg_prediction_count := by unfold prereg_prediction_count; norm_num
 
 theorem prereg_bundle :
-    prereg_observable_count = 5 ∧
+    prereg_observable_count = 8 ∧
     prereg_pooled_median_error_pct < (5 : ℝ) ∧
     prereg_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
