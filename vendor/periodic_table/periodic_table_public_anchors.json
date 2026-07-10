@@ -1,0 +1,27 @@
+{
+  "source": "NIST/IUPAC published atomic weights and ionization energies — elements Z=1 through Z=118",
+  "elements": [
+    {"Z": 1, "symbol": "H", "name": "Hydrogen", "atomic_weight": 1.008, "ionization_ev": 13.598},
+    {"Z": 2, "symbol": "He", "name": "Helium", "atomic_weight": 4.0026, "ionization_ev": 24.587},
+    {"Z": 6, "symbol": "C", "name": "Carbon", "atomic_weight": 12.011, "ionization_ev": 11.260},
+    {"Z": 8, "symbol": "O", "name": "Oxygen", "atomic_weight": 15.999, "ionization_ev": 13.618},
+    {"Z": 14, "symbol": "Si", "name": "Silicon", "atomic_weight": 28.085, "ionization_ev": 8.152},
+    {"Z": 20, "symbol": "Ca", "name": "Calcium", "atomic_weight": 40.078, "ionization_ev": 6.113},
+    {"Z": 26, "symbol": "Fe", "name": "Iron", "atomic_weight": 55.845, "ionization_ev": 7.902},
+    {"Z": 29, "symbol": "Cu", "name": "Copper", "atomic_weight": 63.546, "ionization_ev": 7.726},
+    {"Z": 47, "symbol": "Ag", "name": "Silver", "atomic_weight": 107.868, "ionization_ev": 7.576},
+    {"Z": 50, "symbol": "Sn", "name": "Tin", "atomic_weight": 118.71, "ionization_ev": 7.344},
+    {"Z": 79, "symbol": "Au", "name": "Gold", "atomic_weight": 196.967, "ionization_ev": 9.226},
+    {"Z": 82, "symbol": "Pb", "name": "Lead", "atomic_weight": 207.2, "ionization_ev": 7.417},
+    {"Z": 92, "symbol": "U", "name": "Uranium", "atomic_weight": 238.029, "ionization_ev": 6.194},
+    {"Z": 94, "symbol": "Pu", "name": "Plutonium", "atomic_weight": 244.0, "ionization_ev": 6.026},
+    {"Z": 104, "symbol": "Rf", "name": "Rutherfordium", "atomic_weight": 267.0, "ionization_ev": null},
+    {"Z": 110, "symbol": "Ds", "name": "Darmstadtium", "atomic_weight": 281.0, "ionization_ev": null},
+    {"Z": 114, "symbol": "Fl", "name": "Flerovium", "atomic_weight": 289.0, "ionization_ev": null},
+    {"Z": 118, "symbol": "Og", "name": "Oganesson", "atomic_weight": 294.0, "ionization_ev": null}
+  ],
+  "magic_numbers": {
+    "proton": [2, 8, 20, 28, 50, 82, 114, 126],
+    "neutron": [2, 8, 20, 28, 50, 82, 126, 184]
+  }
+}

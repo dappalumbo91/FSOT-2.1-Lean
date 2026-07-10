@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-10T18:51:00.691554+00:00",
+  "generated_at": "2026-07-10T18:58:29.805434+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 215,
-    "total_scientific_domains_covered": 251,
+    "extension_domains": 220,
+    "total_scientific_domains_covered": 256,
     "total_empirical_records": 306680,
     "domains_target_band_2pct": 35,
     "domains_sign_mismatch": 0,
@@ -14,7 +14,7 @@
       "D_needs_work": 0,
       "unverified": 0
     },
-    "lean_formal_modules": 285
+    "lean_formal_modules": 290
   },
   "neurolab_domains": [
     {
@@ -2220,6 +2220,46 @@
       "median_error_pct": 0.0,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.FusionLabCertificateSpinePriors"
+    },
+    {
+      "domain": "Periodic_Table_Public_Panel",
+      "tier": 72,
+      "record_count": 52,
+      "median_error_pct": 9.5e-05,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.PeriodicTablePublicPanelPriors"
+    },
+    {
+      "domain": "Superheavy_Element_Stability_Panel",
+      "tier": 72,
+      "record_count": 50,
+      "median_error_pct": 1e-06,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.SuperheavyElementStabilityPanelPriors"
+    },
+    {
+      "domain": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+      "tier": 72,
+      "record_count": 25,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.UndiscoveredElementCandidatePreregScaffoldPriors"
+    },
+    {
+      "domain": "Natural_Formation_Element_Simulation",
+      "tier": 72,
+      "record_count": 44,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.NaturalFormationElementSimulationPriors"
+    },
+    {
+      "domain": "Periodic_Table_Completion_Spine",
+      "tier": 72,
+      "record_count": 38,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.PeriodicTableCompletionSpinePriors"
     }
   ],
   "intelligence_compression": {

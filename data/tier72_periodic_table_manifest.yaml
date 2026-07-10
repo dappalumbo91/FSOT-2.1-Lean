@@ -1,0 +1,16 @@
+version: "1.0"
+tier: 72
+domains:
+  - Periodic_Table_Public_Panel
+  - Superheavy_Element_Stability_Panel
+  - Undiscovered_Element_Candidate_Prereg_Scaffold
+  - Natural_Formation_Element_Simulation
+  - Periodic_Table_Completion_Spine
+build: scripts/build_tier72_periodic_table_benchmarks.py
+lean: scripts/gen_tiers_72_lean.py
+artifacts:
+  - vendor/periodic_table/periodic_table_public_anchors.json
+  - vendor/periodic_table/superheavy_stability_anchors.json
+  - vendor/periodic_table/undiscovered_element_prereg_candidates.json
+  - data/fusion_physics_public_panel_benchmark.json
+note: "Periodic table completion — Z=1-118 public anchors, superheavy island stability, Z>118 prereg + natural formation sim"

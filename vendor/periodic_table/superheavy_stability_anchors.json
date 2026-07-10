@@ -1,0 +1,25 @@
+{
+  "source": "IUPAC/IUPAP discovered superheavy elements Z=104-118 with published half-lives and formation context",
+  "superheavy_elements": [
+    {"Z": 104, "symbol": "Rf", "name": "Rutherfordium", "A": 267, "half_life_s": 8100, "discovery_year": 1969, "formation": "heavy_ion_fusion"},
+    {"Z": 105, "symbol": "Db", "name": "Dubnium", "A": 268, "half_life_s": 86400, "discovery_year": 1970, "formation": "heavy_ion_fusion"},
+    {"Z": 106, "symbol": "Sg", "name": "Seaborgium", "A": 271, "half_life_s": 120, "discovery_year": 1974, "formation": "heavy_ion_fusion"},
+    {"Z": 107, "symbol": "Bh", "name": "Bohrium", "A": 270, "half_life_s": 61, "discovery_year": 1981, "formation": "heavy_ion_fusion"},
+    {"Z": 108, "symbol": "Hs", "name": "Hassium", "A": 277, "half_life_s": 9, "discovery_year": 1984, "formation": "heavy_ion_fusion"},
+    {"Z": 109, "symbol": "Mt", "name": "Meitnerium", "A": 278, "half_life_s": 4, "discovery_year": 1982, "formation": "heavy_ion_fusion"},
+    {"Z": 110, "symbol": "Ds", "name": "Darmstadtium", "A": 281, "half_life_s": 11, "discovery_year": 1994, "formation": "heavy_ion_fusion"},
+    {"Z": 111, "symbol": "Rg", "name": "Roentgenium", "A": 282, "half_life_s": 100, "discovery_year": 1994, "formation": "heavy_ion_fusion"},
+    {"Z": 112, "symbol": "Cn", "name": "Copernicium", "A": 285, "half_life_s": 29, "discovery_year": 1996, "formation": "heavy_ion_fusion"},
+    {"Z": 113, "symbol": "Nh", "name": "Nihonium", "A": 286, "half_life_s": 2000, "discovery_year": 2004, "formation": "heavy_ion_fusion"},
+    {"Z": 114, "symbol": "Fl", "name": "Flerovium", "A": 289, "half_life_s": 1.5, "discovery_year": 1999, "formation": "heavy_ion_fusion"},
+    {"Z": 115, "symbol": "Mc", "name": "Moscovium", "A": 290, "half_life_s": 0.65, "discovery_year": 2010, "formation": "heavy_ion_fusion"},
+    {"Z": 116, "symbol": "Lv", "name": "Livermorium", "A": 293, "half_life_s": 0.053, "discovery_year": 2000, "formation": "heavy_ion_fusion"},
+    {"Z": 117, "symbol": "Ts", "name": "Tennessine", "A": 294, "half_life_s": 0.051, "discovery_year": 2010, "formation": "heavy_ion_fusion"},
+    {"Z": 118, "symbol": "Og", "name": "Oganesson", "A": 294, "half_life_s": 0.0007, "discovery_year": 2006, "formation": "heavy_ion_fusion"}
+  ],
+  "island_of_stability_anchors": [
+    {"Z": 114, "N": 184, "name": "Fl-298 island proxy", "predicted_half_life_s": 3600, "status": "theoretical_extended"},
+    {"Z": 120, "N": 184, "name": "Unbinilium island candidate", "predicted_half_life_s": 1e6, "status": "theoretical"},
+    {"Z": 126, "N": 184, "name": "Unbihexium magic shell", "predicted_half_life_s": 1e9, "status": "theoretical"}
+  ]
+}

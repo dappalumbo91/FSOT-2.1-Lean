@@ -1,5 +1,5 @@
 # FSOT interdisciplinary expansion roadmap — public-data first, preregister before novel claims.
-version: "1.5"
+version: "1.6"
 updated: "2026-07-10"
 policy: >
   Ship verification against published observables in-repo. Reserve novel material,
@@ -89,8 +89,18 @@ completed_tiers:
     - Inertial_Confinement_Fusion_Panel
     - Cold_Fusion_Candidate_Prereg_Scaffold
     - Fusion_Lab_Certificate_Spine
+  tier_72:
+    - Periodic_Table_Public_Panel
+    - Superheavy_Element_Stability_Panel
+    - Undiscovered_Element_Candidate_Prereg_Scaffold
+    - Natural_Formation_Element_Simulation
+    - Periodic_Table_Completion_Spine
 
 priority_queue:
+  tier_72_periodic_table_completion:
+    status: completed
+    focus: [periodic_table_public, superheavy_stability, undiscovered_prereg, natural_formation_sim]
+    note: "Periodic table gap-fill — Z=1-118 anchors, island-of-stability superheavies, Z>119 prereg candidates, natural emergence pathways"
   tier_71_fusion_lab:
     status: completed
     focus: [fusion_physics_public, magnetic_confinement, inertial_confinement, cold_fusion_prereg]
@@ -115,14 +125,14 @@ priority_queue:
     note: "Publication-facing ToE claim bundle — proof ledger + prereg outcomes + certificate"
 
 maintenance_queue:
-  post_tier_71:
+  post_tier_72:
     status: ongoing
     focus:
       - hybrid_fi_sim_multi_hero
       - knowledge_base_portable_bundle
       - rd_interval_tightening
       - domain_coupling_simulation_refresh
-    note: "Ongoing upkeep after Tier 71 fusion lab — FI sim, KB bundle, r_d tightening"
+    note: "Ongoing upkeep after Tier 72 periodic table — FI sim, KB bundle, r_d tightening, cold-fusion experimental validation"
 
 discoverability_principles:
   - "Public repo = reproducible verification against published data"

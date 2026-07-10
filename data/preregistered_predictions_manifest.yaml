@@ -132,3 +132,36 @@ predictions:
     sota_label: "Published muon-catalyzed D-D rate"
     discriminant: "within_10pct_of_observed_gap"
     registered_at: "2026-07-10"
+
+  - id: PRED-012
+    name: unbinilium_Z120_N184_half_life
+    domain: Undiscovered_Element_Candidate_Prereg_Scaffold
+    fsot_formula_branch: term3.boundary_partition
+    fsot_predicted: 2.5e6
+    unit: half_life_s
+    sota_baseline: 0.0
+    sota_label: "Not yet synthesized"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-013
+    name: unbihexium_Z126_island_stability
+    domain: Undiscovered_Element_Candidate_Prereg_Scaffold
+    fsot_formula_branch: term1.term1_base
+    fsot_predicted: 1.2e9
+    unit: half_life_s
+    sota_baseline: 0.0
+    sota_label: "Not yet synthesized"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-014
+    name: natural_formation_Z132_fusion_decay
+    domain: Natural_Formation_Element_Simulation
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 132
+    unit: atomic_number
+    sota_baseline: 118
+    sota_label: "IUPAC confirmed ceiling"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"

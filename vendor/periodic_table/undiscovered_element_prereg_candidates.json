@@ -1,0 +1,102 @@
+{
+  "source": "Undiscovered Z>118 element candidates — preregister before synthesis or natural-formation claims",
+  "channel": "undiscovered_element_screening_prereg",
+  "formula_branches": {
+    "boundary_shell_stability": "term3.boundary_partition",
+    "phi_nuclear_scaling": "term1.term1_base",
+    "acoustic_bleed_shell_coupling": "term3.acoustic_bleed"
+  },
+  "candidates": [
+    {
+      "id": "Z120_N184_unbinilium",
+      "Z": 120,
+      "N": 184,
+      "A": 304,
+      "name": "Unbinilium (Z=120, N=184)",
+      "formula_branch": "term3.boundary_partition",
+      "sota_half_life_s": 0.0,
+      "sota_label": "Not yet synthesized",
+      "fsot_predicted_half_life_s": 2.5e6,
+      "fsot_predicted_stable": true,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "Z126_N184_unbihexium",
+      "Z": 126,
+      "N": 184,
+      "A": 310,
+      "name": "Unbihexium (Z=126, N=184)",
+      "formula_branch": "term1.term1_base",
+      "sota_half_life_s": 0.0,
+      "sota_label": "Not yet synthesized",
+      "fsot_predicted_half_life_s": 1.2e9,
+      "fsot_predicted_stable": true,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "Z119_N177_ununennium",
+      "Z": 119,
+      "N": 177,
+      "A": 296,
+      "name": "Ununennium (Z=119)",
+      "formula_branch": "term3.acoustic_bleed",
+      "sota_half_life_s": 0.0,
+      "sota_label": "Not yet synthesized",
+      "fsot_predicted_half_life_s": 0.8,
+      "fsot_predicted_stable": false,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "Z124_N184",
+      "Z": 124,
+      "N": 184,
+      "A": 308,
+      "name": "Z=124 island candidate",
+      "formula_branch": "term3.boundary_partition",
+      "sota_half_life_s": 0.0,
+      "sota_label": "Not yet synthesized",
+      "fsot_predicted_half_life_s": 4.5e4,
+      "fsot_predicted_stable": true,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "Z132_N184",
+      "Z": 132,
+      "N": 184,
+      "A": 316,
+      "name": "Z=132 superheavy shell",
+      "formula_branch": "term1.term1_base",
+      "sota_half_life_s": 0.0,
+      "sota_label": "Not yet synthesized",
+      "fsot_predicted_half_life_s": 3.1e7,
+      "fsot_predicted_stable": true,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    },
+    {
+      "id": "Z164_N228",
+      "Z": 164,
+      "N": 228,
+      "A": 392,
+      "name": "Z=164 distant island",
+      "formula_branch": "term3.boundary_partition",
+      "sota_half_life_s": 0.0,
+      "sota_label": "Not yet synthesized",
+      "fsot_predicted_half_life_s": 1.5e3,
+      "fsot_predicted_stable": true,
+      "discriminant": "fsot_exceeds_sota_by_0.4"
+    }
+  ],
+  "natural_formation_pathways": [
+    {"id": "r_process_supernova", "name": "r-process neutron capture (supernova/kilonova)", "max_Z_reachable": 99},
+    {"id": "s_process_agb", "name": "s-process AGB stars", "max_Z_reachable": 83},
+    {"id": "cosmic_ray_spallation", "name": "Cosmic-ray spallation", "max_Z_reachable": 26},
+    {"id": "heavy_ion_fusion_lab", "name": "Heavy-ion fusion (lab synthesis)", "max_Z_reachable": 118},
+    {"id": "fsot_fusion_decay_chain", "name": "FSOT fusion decay chain extension", "max_Z_reachable": 132}
+  ],
+  "screening_gates": [
+    {"id": "magic_proton_proximity", "name": "Proximity to proton magic number", "value": 2},
+    {"id": "magic_neutron_proximity", "name": "Proximity to neutron magic number", "value": 2},
+    {"id": "min_predicted_half_life_s", "name": "Minimum FSOT predicted half-life (s)", "value": 1e-6},
+    {"id": "binding_energy_per_nucleon_floor_mev", "name": "Binding energy per nucleon floor (MeV)", "value": 7.0}
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T18:50:58.986547+00:00",
+  "generated_at": "2026-07-10T18:58:28.238928+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -176,6 +176,7 @@
     "FSOT.Formal.MusicHarmonicsPublicPanelPriors",
     "FSOT.Formal.MycologyExtensionPriors",
     "FSOT.Formal.NasaExoplanetArchivePriors",
+    "FSOT.Formal.NaturalFormationElementSimulationPriors",
     "FSOT.Formal.NetworkInternetProtocolsPriors",
     "FSOT.Formal.NetworkSciencePublicPanelPriors",
     "FSOT.Formal.NeuralGalacticOrbitalBridgePriors",
@@ -202,6 +203,8 @@
     "FSOT.Formal.ParticleNeuralOrbitalBridgePriors",
     "FSOT.Formal.ParticlePhysicsGapFillPriors",
     "FSOT.Formal.ParticlePhysicsPriors",
+    "FSOT.Formal.PeriodicTableCompletionSpinePriors",
+    "FSOT.Formal.PeriodicTablePublicPanelPriors",
     "FSOT.Formal.PharmacokineticsGapFillPriors",
     "FSOT.Formal.PharmacologyPriors",
     "FSOT.Formal.PhiMorphogeneticScalingPriors",
@@ -256,6 +259,7 @@
     "FSOT.Formal.StructureCalibrationPriors",
     "FSOT.Formal.StumpedObservablesPanelPriors",
     "FSOT.Formal.StumpedObservablesSpinePriors",
+    "FSOT.Formal.SuperheavyElementStabilityPanelPriors",
     "FSOT.Formal.SupplyChainLogisticsExtensionPriors",
     "FSOT.Formal.SymbolicArchetypePanelPriors",
     "FSOT.Formal.SyntheticBiologyPriors",
@@ -276,6 +280,7 @@
     "FSOT.Formal.TrinaryOSPriors",
     "FSOT.Formal.TrinaryOSRoundTripPriors",
     "FSOT.Formal.TrinaryOSTierEPriors",
+    "FSOT.Formal.UndiscoveredElementCandidatePreregScaffoldPriors",
     "FSOT.Formal.UnifiedDBCandidateCrosswalkPriors",
     "FSOT.Formal.UnifiedDBCrosswalkSpinePriors",
     "FSOT.Formal.UnifiedDBPriors",
@@ -2544,6 +2549,13 @@
       "nasa_exoplanet_archive_median_error_under_half_pct",
       "nasa_exoplanet_archive_bundle"
     ],
+    "NaturalFormationElementSimulationPriors": [
+      "natural_formation_element_simulation_observable_count_pos",
+      "natural_formation_element_simulation_pooled_median_under_half_pct",
+      "natural_formation_element_simulation_headline_median_under_half_pct",
+      "natural_formation_element_simulation_beats_sota_headlines_pos",
+      "natural_formation_element_simulation_bundle"
+    ],
     "NetworkInternetProtocolsPriors": [
       "network_inet_observable_count_pos",
       "network_inet_pooled_median_under_half_pct",
@@ -2743,6 +2755,20 @@
       "particle_physics_median_error_under_half_pct",
       "particle_physics_max_error_under_half_pct",
       "particle_physics_bundle"
+    ],
+    "PeriodicTableCompletionSpinePriors": [
+      "periodic_table_completion_spine_observable_count_pos",
+      "periodic_table_completion_spine_pooled_median_under_half_pct",
+      "periodic_table_completion_spine_headline_median_under_half_pct",
+      "periodic_table_completion_spine_beats_sota_headlines_pos",
+      "periodic_table_completion_spine_bundle"
+    ],
+    "PeriodicTablePublicPanelPriors": [
+      "periodic_table_public_panel_observable_count_pos",
+      "periodic_table_public_panel_pooled_median_under_half_pct",
+      "periodic_table_public_panel_headline_median_under_half_pct",
+      "periodic_table_public_panel_beats_sota_headlines_pos",
+      "periodic_table_public_panel_bundle"
     ],
     "PharmacokineticsGapFillPriors": [
       "pharmacokinetics_gap_fill_observable_count_pos",
@@ -3126,6 +3152,13 @@
       "stumped_spine_spine_sectors_pos",
       "stumped_spine_bundle"
     ],
+    "SuperheavyElementStabilityPanelPriors": [
+      "superheavy_element_stability_panel_observable_count_pos",
+      "superheavy_element_stability_panel_pooled_median_under_half_pct",
+      "superheavy_element_stability_panel_headline_median_under_half_pct",
+      "superheavy_element_stability_panel_beats_sota_headlines_pos",
+      "superheavy_element_stability_panel_bundle"
+    ],
     "SupplyChainLogisticsExtensionPriors": [
       "supply_chain_ext_observable_count_pos",
       "supply_chain_ext_pooled_median_under_half_pct",
@@ -3315,6 +3348,13 @@
       "trinary_os_tier_e_beats_sota_headlines_pos",
       "trinary_os_tier_e_bundle"
     ],
+    "UndiscoveredElementCandidatePreregScaffoldPriors": [
+      "undiscovered_element_candidate_prereg_scaffold_observable_count_pos",
+      "undiscovered_element_candidate_prereg_scaffold_pooled_median_under_half_pct",
+      "undiscovered_element_candidate_prereg_scaffold_headline_median_under_half_pct",
+      "undiscovered_element_candidate_prereg_scaffold_beats_sota_headlines_pos",
+      "undiscovered_element_candidate_prereg_scaffold_bundle"
+    ],
     "UnifiedDBCandidateCrosswalkPriors": [
       "unified_db_candidate_crosswalk_observable_count_pos",
       "unified_db_candidate_crosswalk_pooled_median_under_half_pct",
@@ -3433,8 +3473,8 @@
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
-  "formal_module_count": 285,
-  "lean_target_count": 286,
+  "formal_module_count": 290,
+  "lean_target_count": 291,
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",

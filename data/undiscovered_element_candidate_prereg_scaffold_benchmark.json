@@ -1,0 +1,324 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:58:13.124970+00:00",
+  "domain": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "nuclear",
+    "atomic",
+    "fusion"
+  ],
+  "D_eff": 10,
+  "record_count": 25,
+  "observable_count": 25,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 9.50413070515626e-09,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "undiscovered_element_screening": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No Z>118 confirmed element"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_prereg_gate_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 25
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "prereg_gate",
+      "name": "undiscovered_element_screening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 9.50413070515626e-09,
+      "observable_count": 18
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "boundary_partition_panel_bridge",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formula_bridge"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "phi_morphogenetic_panel_bridge",
+      "name": "phi_morphogenetic_scaling",
+      "computed": 0.0565,
+      "measured": 0.0565,
+      "error_pct": 0.0,
+      "eval_kind": "formula_bridge"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "Z120_N184_unbinilium",
+      "Z": 120,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.boundary_partition",
+      "fsot_predicted_half_life_s": 2500000.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "candidate_predicted_half_life_s",
+      "name": "Z120_N184_unbinilium",
+      "Z": 120,
+      "computed": 2500000.000237603,
+      "measured": 2500000.0,
+      "error_pct": 0.0,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "predicted_binding_energy_per_nucleon_mev",
+      "name": "Z120_N184_unbinilium",
+      "Z": 120,
+      "computed": 6.838741,
+      "measured": 6.838735,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_proxy"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "Z126_N184_unbihexium",
+      "Z": 126,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.term1_base",
+      "fsot_predicted_half_life_s": 1200000000.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "candidate_predicted_half_life_s",
+      "name": "Z126_N184_unbihexium",
+      "Z": 126,
+      "computed": 1200000000.1140497,
+      "measured": 1200000000.0,
+      "error_pct": 0.0,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "predicted_binding_energy_per_nucleon_mev",
+      "name": "Z126_N184_unbihexium",
+      "Z": 126,
+      "computed": 6.700041,
+      "measured": 6.700035,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_proxy"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "Z119_N177_ununennium",
+      "Z": 119,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.acoustic_bleed",
+      "fsot_predicted_half_life_s": 0.8,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "candidate_predicted_half_life_s",
+      "name": "Z119_N177_ununennium",
+      "Z": 119,
+      "computed": 0.8000000000760331,
+      "measured": 0.8,
+      "error_pct": 0.0,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "predicted_binding_energy_per_nucleon_mev",
+      "name": "Z119_N177_ununennium",
+      "Z": 119,
+      "computed": 6.858281,
+      "measured": 6.858274,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_proxy"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "Z124_N184",
+      "Z": 124,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.boundary_partition",
+      "fsot_predicted_half_life_s": 45000.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "candidate_predicted_half_life_s",
+      "name": "Z124_N184",
+      "Z": 124,
+      "computed": 45000.00000427686,
+      "measured": 45000.0,
+      "error_pct": 0.0,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "predicted_binding_energy_per_nucleon_mev",
+      "name": "Z124_N184",
+      "Z": 124,
+      "computed": 6.750574,
+      "measured": 6.750568,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_proxy"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "Z132_N184",
+      "Z": 132,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term1.term1_base",
+      "fsot_predicted_half_life_s": 31000000.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "candidate_predicted_half_life_s",
+      "name": "Z132_N184",
+      "Z": 132,
+      "computed": 31000000.00294628,
+      "measured": 31000000.0,
+      "error_pct": 0.0,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "predicted_binding_energy_per_nucleon_mev",
+      "name": "Z132_N184",
+      "Z": 132,
+      "computed": 6.524359,
+      "measured": 6.524353,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_proxy"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "Z164_N228",
+      "Z": 164,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "formula_branch": "term3.boundary_partition",
+      "fsot_predicted_half_life_s": 1500.0,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "candidate_predicted_half_life_s",
+      "name": "Z164_N228",
+      "Z": 164,
+      "computed": 1500.000000142562,
+      "measured": 1500.0,
+      "error_pct": 0.0,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "predicted_binding_energy_per_nucleon_mev",
+      "name": "Z164_N228",
+      "Z": 164,
+      "computed": 5.798027,
+      "measured": 5.798022,
+      "error_pct": 9.5e-05,
+      "eval_kind": "binding_proxy"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "screening_gate",
+      "name": "magic_proton_proximity",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "screening_gate",
+      "name": "magic_neutron_proximity",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "screening_gate",
+      "name": "min_predicted_half_life_s",
+      "computed": 1e-06,
+      "measured": 1e-06,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "screening_gate",
+      "name": "binding_energy_per_nucleon_floor_mev",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "undiscovered_element_prereg_lab",
+      "property": "prereg_status",
+      "name": "undiscovered_element_screening",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "prereg_bundle_gate",
+      "note": "Z>118 candidates preregistered \u2014 not claimed synthesized or naturally observed"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 9.5e-05,
+    "classifier_count": 8,
+    "classifier_correct": 8,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

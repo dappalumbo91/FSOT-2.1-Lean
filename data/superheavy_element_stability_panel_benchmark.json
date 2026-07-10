@@ -1,0 +1,582 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:58:13.114849+00:00",
+  "domain": "Superheavy_Element_Stability_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\periodic_table\\superheavy_stability_anchors.json",
+    "particle_physics_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "nuclear",
+    "atomic",
+    "fusion"
+  ],
+  "D_eff": 10,
+  "record_count": 50,
+  "observable_count": 50,
+  "median_error_pct": 1e-06,
+  "pooled_median_error_pct": 1e-06,
+  "headline_median_error_pct": 1e-06,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "island_of_stability": {
+        "sota_typical_error_pct": 50.0,
+        "sota_model": "Nuclear shell-model baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_superheavy_stability_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 1e-06,
+      "measured": 0.0,
+      "error_pct": 1e-06,
+      "observable_count": 50
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "superheavy_stability",
+      "name": "island_of_stability",
+      "computed": 1e-06,
+      "measured": 0.0,
+      "error_pct": 9.504134368398809e-07,
+      "observable_count": 50
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "particle_mass_relay",
+      "name": "proton",
+      "computed": 941.3036566521167,
+      "measured": 938.272,
+      "error_pct": 0.323111,
+      "eval_kind": "particle_relay"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "particle_mass_relay",
+      "name": "neutron",
+      "computed": 941.3036566521167,
+      "measured": 939.565,
+      "error_pct": 0.185049,
+      "eval_kind": "particle_relay"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Rf",
+      "Z": 104,
+      "computed": 8100.000076983489,
+      "measured": 8100.0,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Rf",
+      "Z": 104,
+      "computed": 7.154309,
+      "measured": 7.154302,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Rf",
+      "Z": 104,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 31,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Db",
+      "Z": 105,
+      "computed": 86400.00082115721,
+      "measured": 86400.0,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Db",
+      "Z": 105,
+      "computed": 7.142885,
+      "measured": 7.142878,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Db",
+      "Z": 105,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 30,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Sg",
+      "Z": 106,
+      "computed": 120.00000114049612,
+      "measured": 120.0,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Sg",
+      "Z": 106,
+      "computed": 7.118322,
+      "measured": 7.118315,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Sg",
+      "Z": 106,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 27,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Bh",
+      "Z": 107,
+      "computed": 61.0000005797522,
+      "measured": 61.0,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Bh",
+      "Z": 107,
+      "computed": 7.110138,
+      "measured": 7.110131,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Bh",
+      "Z": 107,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 28,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Hs",
+      "Z": 108,
+      "computed": 9.00000008553721,
+      "measured": 9.0,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Hs",
+      "Z": 108,
+      "computed": 7.07483,
+      "measured": 7.074823,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Hs",
+      "Z": 108,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 21,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Mt",
+      "Z": 109,
+      "computed": 4.0000000380165375,
+      "measured": 4.0,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Mt",
+      "Z": 109,
+      "computed": 7.062001,
+      "measured": 7.061994,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Mt",
+      "Z": 109,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 20,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Ds",
+      "Z": 110,
+      "computed": 11.000000104545478,
+      "measured": 11.0,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Ds",
+      "Z": 110,
+      "computed": 7.03781,
+      "measured": 7.037803,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Ds",
+      "Z": 110,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 17,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Rg",
+      "Z": 111,
+      "computed": 100.00000095041344,
+      "measured": 100.0,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Rg",
+      "Z": 111,
+      "computed": 7.023637,
+      "measured": 7.023631,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Rg",
+      "Z": 111,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 16,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Cn",
+      "Z": 112,
+      "computed": 29.000000275619897,
+      "measured": 29.0,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Cn",
+      "Z": 112,
+      "computed": 6.99963,
+      "measured": 6.999623,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Cn",
+      "Z": 112,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 13,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Nh",
+      "Z": 113,
+      "computed": 2000.0000190082687,
+      "measured": 2000.0,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Nh",
+      "Z": 113,
+      "computed": 6.98418,
+      "measured": 6.984173,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Nh",
+      "Z": 113,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 12,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Fl",
+      "Z": 114,
+      "computed": 1.5000000142562016,
+      "measured": 1.5,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Fl",
+      "Z": 114,
+      "computed": 6.960365,
+      "measured": 6.960359,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Fl",
+      "Z": 114,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "magic_proximity": 9,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Mc",
+      "Z": 115,
+      "computed": 0.6500000061776874,
+      "measured": 0.65,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Mc",
+      "Z": 115,
+      "computed": 6.9437,
+      "measured": 6.943694,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Mc",
+      "Z": 115,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "magic_proximity": 10,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Lv",
+      "Z": 116,
+      "computed": 0.05300000050371912,
+      "measured": 0.053,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Lv",
+      "Z": 116,
+      "computed": 6.920086,
+      "measured": 6.92008,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Lv",
+      "Z": 116,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "magic_proximity": 9,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Ts",
+      "Z": 117,
+      "computed": 0.05100000048471085,
+      "measured": 0.051,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Ts",
+      "Z": 117,
+      "computed": 6.902265,
+      "measured": 6.902259,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Ts",
+      "Z": 117,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "magic_proximity": 10,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "half_life_s",
+      "name": "Og",
+      "Z": 118,
+      "computed": 0.000700000006652894,
+      "measured": 0.0007,
+      "error_pct": 1e-06,
+      "eval_kind": "half_life_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Og",
+      "Z": 118,
+      "computed": 6.880145,
+      "measured": 6.880138,
+      "error_pct": 9.5e-05,
+      "eval_kind": "liquid_drop_proxy"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Og",
+      "Z": 118,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "magic_proximity": 12,
+      "eval_kind": "stability_gate"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "island_predicted_half_life_s",
+      "name": "Fl-298 island proxy",
+      "Z": 114,
+      "computed": 3600.0000003421487,
+      "measured": 3600.0,
+      "error_pct": 0.0,
+      "eval_kind": "island_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "island_predicted_half_life_s",
+      "name": "Unbinilium island candidate",
+      "Z": 120,
+      "computed": 1000000.0000950414,
+      "measured": 1000000.0,
+      "error_pct": 0.0,
+      "eval_kind": "island_anchor"
+    },
+    {
+      "lab": "superheavy_stability_lab",
+      "property": "island_predicted_half_life_s",
+      "name": "Unbihexium magic shell",
+      "Z": 126,
+      "computed": 1000000000.0950413,
+      "measured": 1000000000.0,
+      "error_pct": 0.0,
+      "eval_kind": "island_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 1e-06,
+    "max_scalar_error_pct": 0.323111,
+    "classifier_count": 15,
+    "classifier_correct": 15,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

@@ -1,0 +1,456 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:58:13.124970+00:00",
+  "domain": "Periodic_Table_Completion_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\periodic_table\\periodic_table_public_anchors.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\periodic_table\\superheavy_stability_anchors.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json",
+    "fusion_physics_public_panel_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "nuclear",
+    "atomic",
+    "fusion",
+    "material"
+  ],
+  "D_eff": 12,
+  "record_count": 38,
+  "observable_count": 38,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 1e-06,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "table_completion_spine": {
+        "sota_typical_error_pct": 50.0,
+        "sota_model": "No unified periodic completion certificate"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_periodic_certificate_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 38
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "periodic_certificate",
+      "name": "table_completion_spine",
+      "computed": 1e-06,
+      "measured": 0.0,
+      "error_pct": 1e-06,
+      "observable_count": 30
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "periodic_table_public",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "record_count": 52,
+      "eval_kind": "periodic_panel_bridge"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "atomic_weight",
+      "name": "H",
+      "computed": 1.008001,
+      "measured": 1.008,
+      "error_pct": 9.5e-05,
+      "source_panel": "periodic_table_public",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "ionization_ev",
+      "name": "H",
+      "computed": 13.598013,
+      "measured": 13.598,
+      "error_pct": 9.5e-05,
+      "source_panel": "periodic_table_public",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "magic_number_proximity",
+      "name": "H",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "source_panel": "periodic_table_public",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "atomic_weight",
+      "name": "He",
+      "computed": 4.002604,
+      "measured": 4.0026,
+      "error_pct": 9.5e-05,
+      "source_panel": "periodic_table_public",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "ionization_ev",
+      "name": "He",
+      "computed": 24.587023,
+      "measured": 24.587,
+      "error_pct": 9.5e-05,
+      "source_panel": "periodic_table_public",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "superheavy_stability",
+      "computed": 1e-06,
+      "measured": 1e-06,
+      "error_pct": 0.0,
+      "record_count": 50,
+      "eval_kind": "periodic_panel_bridge"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "particle_mass_relay",
+      "name": "proton",
+      "computed": 941.3036566521167,
+      "measured": 938.272,
+      "error_pct": 0.323111,
+      "source_panel": "superheavy_stability",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "particle_mass_relay",
+      "name": "neutron",
+      "computed": 941.3036566521167,
+      "measured": 939.565,
+      "error_pct": 0.185049,
+      "source_panel": "superheavy_stability",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "half_life_s",
+      "name": "Rf",
+      "computed": 8100.000076983489,
+      "measured": 8100.0,
+      "error_pct": 1e-06,
+      "source_panel": "superheavy_stability",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "binding_energy_per_nucleon_mev",
+      "name": "Rf",
+      "computed": 7.154309,
+      "measured": 7.154302,
+      "error_pct": 9.5e-05,
+      "source_panel": "superheavy_stability",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "macroscopic_stability_classifier",
+      "name": "Rf",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "superheavy_stability",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "undiscovered_prereg",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 25,
+      "eval_kind": "periodic_panel_bridge"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "boundary_partition_panel_bridge",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_prereg",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "phi_morphogenetic_panel_bridge",
+      "name": "phi_morphogenetic_scaling",
+      "computed": 0.0565,
+      "measured": 0.0565,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_prereg",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "Z120_N184_unbinilium",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_prereg",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "candidate_predicted_half_life_s",
+      "name": "Z120_N184_unbinilium",
+      "computed": 2500000.000237603,
+      "measured": 2500000.0,
+      "error_pct": 0.0,
+      "source_panel": "undiscovered_prereg",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "predicted_binding_energy_per_nucleon_mev",
+      "name": "Z120_N184_unbinilium",
+      "computed": 6.838741,
+      "measured": 6.838735,
+      "error_pct": 9.5e-05,
+      "source_panel": "undiscovered_prereg",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "natural_formation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 44,
+      "eval_kind": "periodic_panel_bridge"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "fusion_physics_panel_bridge",
+      "name": "fusion_physics_public_panel",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "source_panel": "natural_formation",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z120_N184_unbinilium__r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "natural_formation",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z120_N184_unbinilium__s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "natural_formation",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z120_N184_unbinilium__cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "natural_formation",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z120_N184_unbinilium__heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "natural_formation",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "fusion_physics",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "record_count": 19,
+      "eval_kind": "periodic_panel_bridge"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "energy_mev",
+      "name": "dt_fusion",
+      "computed": 17.600017,
+      "measured": 17.6,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dt_fusion",
+      "computed": 15.000014,
+      "measured": 15.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "cross_section_peak_barn",
+      "name": "dt_fusion",
+      "computed": 5.000005,
+      "measured": 5.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "energy_mev",
+      "name": "dd_fusion",
+      "computed": 4.030004,
+      "measured": 4.03,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "coulomb_peak_kev",
+      "name": "dd_fusion",
+      "computed": 50.000048,
+      "measured": 50.0,
+      "error_pct": 9.5e-05,
+      "source_panel": "fusion_physics",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "cold_fusion_prereg",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 19,
+      "eval_kind": "periodic_panel_bridge"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "acoustic_bleed_panel_bridge",
+      "name": "term3_acoustic_bleed_depth",
+      "computed": 0.008381497018408523,
+      "measured": 0.008381497018408523,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "boundary_partition_panel_bridge",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "pd_deuterium_lattice",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "candidate_fsot_prediction",
+      "name": "pd_deuterium_lattice",
+      "computed": 1.850001,
+      "measured": 1.85,
+      "error_pct": 7.9e-05,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "ni_hydrogen_lattice",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "cold_fusion_prereg",
+      "eval_kind": "periodic_relay"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "panel_pooled_median",
+      "name": "particle_physics",
+      "computed": 0.018001,
+      "measured": 0.018001,
+      "error_pct": 0.0,
+      "record_count": 0,
+      "eval_kind": "periodic_panel_bridge"
+    },
+    {
+      "lab": "periodic_table_completion_lab",
+      "property": "periodic_table_completion_ready",
+      "name": "periodic_table_completion_spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_gate",
+      "artifacts": [
+        "periodic_table_public_anchors.json",
+        "superheavy_stability_anchors.json",
+        "undiscovered_element_prereg_candidates.json"
+      ]
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 9.5e-05,
+    "max_scalar_error_pct": 0.323111,
+    "classifier_count": 14,
+    "classifier_correct": 14,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

@@ -1,4 +1,4 @@
-generated_at: '2026-07-10T18:51:00.007859+00:00'
+generated_at: '2026-07-10T18:58:29.116310+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 285
+  lean_formal_modules: 290
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
   tiers_complete: 48
   tiers_total: 48
   percent_complete: 100.0
-current_tier: Tier 71 Fusion lab certificates complete — 215/215 extension domains
-  verified, public D-T/ICF fusion + cold-fusion prereg scaffold
+current_tier: Tier 72 Periodic table completion — 220/220 extension domains verified,
+  Z=1-118 anchors + Z>118 prereg + natural formation simulation
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -424,7 +424,7 @@ proved_claims:
   lean_theorem: domain_precision_priors_bundle
 sorry_count: 0
 lean_build_ok: true
-scientific_domains_covered: 246
+scientific_domains_covered: 251
 total_empirical_records: 306680
 tier_coverage:
 - tier: 1
@@ -599,6 +599,7 @@ tier_coverage:
   - MusicHarmonicsPublicPanelPriors
   - MycologyExtensionPriors
   - NasaExoplanetArchivePriors
+  - NaturalFormationElementSimulationPriors
   - NetworkInternetProtocolsPriors
   - NetworkSciencePublicPanelPriors
   - NeuralGalacticOrbitalBridgePriors
@@ -625,6 +626,8 @@ tier_coverage:
   - ParticleNeuralOrbitalBridgePriors
   - ParticlePhysicsGapFillPriors
   - ParticlePhysicsPriors
+  - PeriodicTableCompletionSpinePriors
+  - PeriodicTablePublicPanelPriors
   - PharmacokineticsGapFillPriors
   - PharmacologyPriors
   - PhiMorphogeneticScalingPriors
@@ -678,6 +681,7 @@ tier_coverage:
   - StructureCalibrationPriors
   - StumpedObservablesPanelPriors
   - StumpedObservablesSpinePriors
+  - SuperheavyElementStabilityPanelPriors
   - SupplyChainLogisticsExtensionPriors
   - SymbolicArchetypePanelPriors
   - SyntheticBiologyPriors
@@ -698,6 +702,7 @@ tier_coverage:
   - TrinaryOSPriors
   - TrinaryOSRoundTripPriors
   - TrinaryOSTierEPriors
+  - UndiscoveredElementCandidatePreregScaffoldPriors
   - UniProtStructureAnnotationsDeepPriors
   - UnifiedDBCandidateCrosswalkPriors
   - UnifiedDBCrosswalkSpinePriors
@@ -819,7 +824,7 @@ tier_coverage:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 246
+    scientific_domains_covered: 251
     expansion_candidates: 0
   artifacts:
   - data/climate_ncei_manifest.yaml
@@ -2855,23 +2860,53 @@ extension_domains:
 - domain: Fusion_Physics_Public_Panel
   tier: 71
   record_count: 19
+  median_error_pct: 9.5e-05
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.FusionPhysicsPublicPanelPriors
 - domain: Magnetic_Confinement_Fusion_Panel
   tier: 71
   record_count: 22
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.MagneticConfinementFusionPanelPriors
 - domain: Inertial_Confinement_Fusion_Panel
   tier: 71
   record_count: 15
+  median_error_pct: 7.9e-05
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.InertialConfinementFusionPanelPriors
 - domain: Cold_Fusion_Candidate_Prereg_Scaffold
   tier: 71
   record_count: 19
+  median_error_pct: 0.0
+  coverage_tier: C_thin
   lean_module: FSOT.Formal.ColdFusionCandidatePreregScaffoldPriors
 - domain: Fusion_Lab_Certificate_Spine
   tier: 71
   record_count: 50
+  median_error_pct: 0.0
+  coverage_tier: B_verified
   lean_module: FSOT.Formal.FusionLabCertificateSpinePriors
+- domain: Periodic_Table_Public_Panel
+  tier: 72
+  record_count: 52
+  lean_module: FSOT.Formal.PeriodicTablePublicPanelPriors
+- domain: Superheavy_Element_Stability_Panel
+  tier: 72
+  record_count: 50
+  lean_module: FSOT.Formal.SuperheavyElementStabilityPanelPriors
+- domain: Undiscovered_Element_Candidate_Prereg_Scaffold
+  tier: 72
+  record_count: 25
+  lean_module: FSOT.Formal.UndiscoveredElementCandidatePreregScaffoldPriors
+- domain: Natural_Formation_Element_Simulation
+  tier: 72
+  record_count: 44
+  lean_module: FSOT.Formal.NaturalFormationElementSimulationPriors
+- domain: Periodic_Table_Completion_Spine
+  tier: 72
+  record_count: 38
+  lean_module: FSOT.Formal.PeriodicTableCompletionSpinePriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -3729,6 +3764,7 @@ lean_formal_modules:
 - MusicHarmonicsPublicPanelPriors
 - MycologyExtensionPriors
 - NasaExoplanetArchivePriors
+- NaturalFormationElementSimulationPriors
 - NetworkInternetProtocolsPriors
 - NetworkSciencePublicPanelPriors
 - NeuralGalacticOrbitalBridgePriors
@@ -3755,6 +3791,8 @@ lean_formal_modules:
 - ParticleNeuralOrbitalBridgePriors
 - ParticlePhysicsGapFillPriors
 - ParticlePhysicsPriors
+- PeriodicTableCompletionSpinePriors
+- PeriodicTablePublicPanelPriors
 - PharmacokineticsGapFillPriors
 - PharmacologyPriors
 - PhiMorphogeneticScalingPriors
@@ -3807,6 +3845,7 @@ lean_formal_modules:
 - StructureCalibrationPriors
 - StumpedObservablesPanelPriors
 - StumpedObservablesSpinePriors
+- SuperheavyElementStabilityPanelPriors
 - SupplyChainLogisticsExtensionPriors
 - SymbolicArchetypePanelPriors
 - SyntheticBiologyPriors
@@ -3827,6 +3866,7 @@ lean_formal_modules:
 - TrinaryOSPriors
 - TrinaryOSRoundTripPriors
 - TrinaryOSTierEPriors
+- UndiscoveredElementCandidatePreregScaffoldPriors
 - UniProtStructureAnnotationsDeepPriors
 - UnifiedDBCandidateCrosswalkPriors
 - UnifiedDBCrosswalkSpinePriors

@@ -1,0 +1,537 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:58:13.124970+00:00",
+  "domain": "Natural_Formation_Element_Simulation",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json",
+    "fusion_physics_public_panel_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "nuclear",
+    "fusion",
+    "astronomical"
+  ],
+  "D_eff": 11,
+  "record_count": 44,
+  "observable_count": 44,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "natural_emergence": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No natural Z>118 observation"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_formation_sim_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 44
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "formation_sim",
+      "name": "natural_emergence",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 42
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "fusion_physics_panel_bridge",
+      "name": "fusion_physics_public_panel",
+      "computed": 9.5e-05,
+      "measured": 9.5e-05,
+      "error_pct": 0.0,
+      "eval_kind": "fusion_bridge"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z120_N184_unbinilium__r_process_supernova",
+      "Z": 120,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z120_N184_unbinilium__s_process_agb",
+      "Z": 120,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z120_N184_unbinilium__cosmic_ray_spallation",
+      "Z": 120,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z120_N184_unbinilium__heavy_ion_fusion_lab",
+      "Z": 120,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z120_N184_unbinilium__fsot_fusion_decay_chain",
+      "Z": 120,
+      "pathway": "fsot_fusion_decay_chain",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z126_N184_unbihexium__r_process_supernova",
+      "Z": 126,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z126_N184_unbihexium__s_process_agb",
+      "Z": 126,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z126_N184_unbihexium__cosmic_ray_spallation",
+      "Z": 126,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z126_N184_unbihexium__heavy_ion_fusion_lab",
+      "Z": 126,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z126_N184_unbihexium__fsot_fusion_decay_chain",
+      "Z": 126,
+      "pathway": "fsot_fusion_decay_chain",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z119_N177_ununennium__r_process_supernova",
+      "Z": 119,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z119_N177_ununennium__s_process_agb",
+      "Z": 119,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z119_N177_ununennium__cosmic_ray_spallation",
+      "Z": 119,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z119_N177_ununennium__heavy_ion_fusion_lab",
+      "Z": 119,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z119_N177_ununennium__fsot_fusion_decay_chain",
+      "Z": 119,
+      "pathway": "fsot_fusion_decay_chain",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z124_N184__r_process_supernova",
+      "Z": 124,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z124_N184__s_process_agb",
+      "Z": 124,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z124_N184__cosmic_ray_spallation",
+      "Z": 124,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z124_N184__heavy_ion_fusion_lab",
+      "Z": 124,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z124_N184__fsot_fusion_decay_chain",
+      "Z": 124,
+      "pathway": "fsot_fusion_decay_chain",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z132_N184__r_process_supernova",
+      "Z": 132,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z132_N184__s_process_agb",
+      "Z": 132,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z132_N184__cosmic_ray_spallation",
+      "Z": 132,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z132_N184__heavy_ion_fusion_lab",
+      "Z": 132,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z132_N184__fsot_fusion_decay_chain",
+      "Z": 132,
+      "pathway": "fsot_fusion_decay_chain",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z164_N228__r_process_supernova",
+      "Z": 164,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z164_N228__s_process_agb",
+      "Z": 164,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z164_N228__cosmic_ray_spallation",
+      "Z": 164,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z164_N228__heavy_ion_fusion_lab",
+      "Z": 164,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "formation_pathway_viable",
+      "name": "Z164_N228__fsot_fusion_decay_chain",
+      "Z": 164,
+      "pathway": "fsot_fusion_decay_chain",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formation_sim"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_score",
+      "name": "Z120_N184_unbinilium",
+      "Z": 120,
+      "computed": 2849472.765768,
+      "measured": 2849472.738686,
+      "error_pct": 1e-06,
+      "eval_kind": "emergence_score"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_classifier",
+      "name": "Z120_N184_unbinilium",
+      "Z": 120,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_score",
+      "name": "Z126_N184_unbihexium",
+      "Z": 126,
+      "computed": 8040042112.691663,
+      "measured": 8040042036.278023,
+      "error_pct": 1e-06,
+      "eval_kind": "emergence_score"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_classifier",
+      "name": "Z126_N184_unbihexium",
+      "Z": 126,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_score",
+      "name": "Z119_N177_ununennium",
+      "Z": 119,
+      "computed": 0.457218,
+      "measured": 0.457218,
+      "error_pct": 1e-06,
+      "eval_kind": "emergence_score"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_classifier",
+      "name": "Z119_N177_ununennium",
+      "Z": 119,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_score",
+      "name": "Z124_N184",
+      "Z": 124,
+      "computed": 151887.778951,
+      "measured": 151887.777507,
+      "error_pct": 1e-06,
+      "eval_kind": "emergence_score"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_classifier",
+      "name": "Z124_N184",
+      "Z": 124,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_score",
+      "name": "Z132_N184",
+      "Z": 132,
+      "computed": 33709158.126514,
+      "measured": 33709157.806137,
+      "error_pct": 1e-06,
+      "eval_kind": "emergence_score"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_classifier",
+      "name": "Z132_N184",
+      "Z": 132,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_score",
+      "name": "Z164_N228",
+      "Z": 164,
+      "computed": 106.061376,
+      "measured": 106.061375,
+      "error_pct": 1e-06,
+      "eval_kind": "emergence_score"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "natural_emergence_classifier",
+      "name": "Z164_N228",
+      "Z": 164,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "natural_formation_element_lab",
+      "property": "fsot_natural_Z_ceiling",
+      "name": "fusion_decay_chain_extension",
+      "computed": 132.0,
+      "measured": 132.0,
+      "error_pct": 0.0,
+      "eval_kind": "simulation_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 1e-06,
+    "max_scalar_error_pct": 1e-06,
+    "classifier_count": 36,
+    "classifier_correct": 36,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

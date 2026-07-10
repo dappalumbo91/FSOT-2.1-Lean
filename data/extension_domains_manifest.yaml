@@ -2789,6 +2789,71 @@ extension_domains:
     lean_module: FSOT.Formal.FusionLabCertificateSpinePriors
     note: "Fusion lab certificate rollup — public panels + plasma + fuel thermochemistry + energy bridges"
 
+  Periodic_Table_Public_Panel:
+    tier: 72
+    D_eff: 9
+    delta_psi: 0.95
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, atomic, nuclear, material]
+    build_script: scripts/build_tier72_periodic_table_benchmarks.py
+    manifest: data/tier72_periodic_table_manifest.yaml
+    benchmark_data: data/periodic_table_public_panel_benchmark.json
+    lean_module: FSOT.Formal.PeriodicTablePublicPanelPriors
+    note: "IUPAC/NIST Z=1-118 anchors — atomic weights, ionization energies, magic-number proximity"
+
+  Superheavy_Element_Stability_Panel:
+    tier: 72
+    D_eff: 10
+    delta_psi: 0.92
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, nuclear, atomic, fusion]
+    build_script: scripts/build_tier72_periodic_table_benchmarks.py
+    manifest: data/tier72_periodic_table_manifest.yaml
+    benchmark_data: data/superheavy_element_stability_panel_benchmark.json
+    lean_module: FSOT.Formal.SuperheavyElementStabilityPanelPriors
+    note: "Z=104-118 discovered superheavies — half-lives, liquid-drop binding, island-of-stability anchors"
+
+  Undiscovered_Element_Candidate_Prereg_Scaffold:
+    tier: 72
+    D_eff: 10
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, nuclear, atomic, fusion]
+    build_script: scripts/build_tier72_periodic_table_benchmarks.py
+    manifest: data/tier72_periodic_table_manifest.yaml
+    benchmark_data: data/undiscovered_element_candidate_prereg_scaffold_benchmark.json
+    lean_module: FSOT.Formal.UndiscoveredElementCandidatePreregScaffoldPriors
+    note: "Z>118 candidates (Z=119-164) preregistered via boundary_partition + phi scaling — not claimed synthesized"
+
+  Natural_Formation_Element_Simulation:
+    tier: 72
+    D_eff: 11
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, nuclear, fusion, astronomical]
+    build_script: scripts/build_tier72_periodic_table_benchmarks.py
+    manifest: data/tier72_periodic_table_manifest.yaml
+    benchmark_data: data/natural_formation_element_simulation_benchmark.json
+    lean_module: FSOT.Formal.NaturalFormationElementSimulationPriors
+    note: "r-process/s-process/cosmic-ray/fusion-decay pathway simulation for undiscovered element emergence"
+
+  Periodic_Table_Completion_Spine:
+    tier: 72
+    D_eff: 12
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, nuclear, atomic, fusion, material]
+    build_script: scripts/build_tier72_periodic_table_benchmarks.py
+    manifest: data/tier72_periodic_table_manifest.yaml
+    benchmark_data: data/periodic_table_completion_spine_benchmark.json
+    lean_module: FSOT.Formal.PeriodicTableCompletionSpinePriors
+    note: "Periodic table completion rollup — public table + superheavy + prereg + natural formation + fusion bridge"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5
