@@ -172,6 +172,10 @@ def build_progress() -> dict:
     zero_day_bench = _load_json(ROOT / "data" / "zero_day_risk_evaluator_cybersecurity_benchmark.json")
     external_oss_bench = _load_json(ROOT / "data" / "external_oss_code_genome_benchmark.json")
     pl_laws_bench = _load_json(ROOT / "data" / "programming_language_laws_benchmark.json")
+    fractal_bench = _load_json(ROOT / "data" / "formula_branching_fractal_benchmark.json")
+    mech_bench = _load_json(ROOT / "data" / "mechanistic_coupling_benchmark.json")
+    fals_bench = _load_json(ROOT / "data" / "cve_codon_hole_falsification_benchmark.json")
+    spine_bench = _load_json(ROOT / "data" / "theory_completeness_spine_benchmark.json")
     tokenization_smoke_bench = _load_json(ROOT / "data" / "tokenization_smoke_benchmark.json")
     trinary_hw_motif_bench = _load_json(ROOT / "data" / "trinary_hardware_motif_benchmark.json")
     intrinsic_llm_bench = _load_json(ROOT / "data" / "intrinsic_llm_validators_benchmark.json")
@@ -1415,6 +1419,39 @@ def build_progress() -> dict:
                 "FSOT.Formal.LinguisticsFormalPriors",
             ],
         },
+        {
+            "tier": 45,
+            "name": "Tier 45 — ToE completeness spine (formula branching fractal + mechanistic coupling + CVE falsification)",
+            "status": "complete"
+            if fractal_bench.get("domain_attachment_count", 0) >= 100
+            and spine_bench.get("domain_attachment_count", 0) >= 100
+            and mech_bench.get("mechanism_count", 0) >= 10
+            and mech_bench.get("validated_mechanism_pairs", 0) >= 10
+            and fals_bench.get("kev_record_count", 0) >= 1000
+            and float(fals_bench.get("cwe_codon_overlap_rate") or 0) >= 0.2
+            and coupling_bench.get("node_count", 0) >= 155
+            else "pending",
+            "metrics": {
+                "formula_spine_domain_attachments": fractal_bench.get("domain_attachment_count"),
+                "corpus_strict_empirical_count": fractal_bench.get("corpus_strict_count"),
+                "mechanistic_channel_count": mech_bench.get("mechanism_count"),
+                "validated_mechanism_pairs": mech_bench.get("validated_mechanism_pairs"),
+                "kev_falsification_records": fals_bench.get("kev_record_count"),
+                "cwe_codon_overlap_rate": fals_bench.get("cwe_codon_overlap_rate"),
+                "theory_completeness_status": spine_bench.get("completeness_status"),
+                "coupling_node_count": coupling_bench.get("node_count"),
+            },
+            "artifacts": [
+                "data/fsot_formula_spine.yaml",
+                "data/mechanistic_coupling_manifest.yaml",
+                "scripts/tier_j_toe_completeness_lib.py",
+                "scripts/build_tier_j_toe_completeness_benchmarks.py",
+                "FSOT.Formal.FormulaBranchingFractalPriors",
+                "FSOT.Formal.MechanisticCouplingPriors",
+                "FSOT.Formal.CVECodonHoleFalsificationPriors",
+                "FSOT.Formal.TheoryCompletenessSpinePriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -1441,7 +1478,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 44 depth — 23-language OSS corpus, 30 PL laws, scheduled GitHub refresh, linguistics/code-genome cross-bridges",
+        "current_position": "Tier 45 ToE completeness — formula branching fractal DAG, mechanistic coupling, CISA KEV codon-hole falsification",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

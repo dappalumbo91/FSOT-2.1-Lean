@@ -1,0 +1,126 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:15:11.777660+00:00",
+  "domain": "Theory_Completeness_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "formula_branching_fractal",
+    "mechanistic_coupling",
+    "cve_codon_hole_falsification"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "particle",
+    "consciousness",
+    "medical"
+  ],
+  "D_eff": 19,
+  "record_count": 6,
+  "observable_count": 6,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "completeness_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Siloed domain theories"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_spine_pillars_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 6
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "spine_pillars",
+      "name": "completeness_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 6
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "theory_completeness_spine_lab",
+      "property": "pillar_record_count",
+      "name": "fractal",
+      "computed": 128.0,
+      "measured": 128.0,
+      "error_pct": 0.03801653760497961,
+      "source": "Formula_Branching_Fractal"
+    },
+    {
+      "lab": "theory_completeness_spine_lab",
+      "property": "pillar_record_count",
+      "name": "mechanistic",
+      "computed": 68.0,
+      "measured": 68.0,
+      "error_pct": 0.0,
+      "source": "Mechanistic_Coupling"
+    },
+    {
+      "lab": "theory_completeness_spine_lab",
+      "property": "pillar_record_count",
+      "name": "falsification",
+      "computed": 29.0,
+      "measured": 29.0,
+      "error_pct": 0.009186636881580057,
+      "source": "CVE_Codon_Hole_Falsification"
+    },
+    {
+      "lab": "theory_completeness_spine_lab",
+      "property": "domain_spine_attachment_count",
+      "name": "all_domains_to_raw_S",
+      "computed": 119.0,
+      "measured": 119.0,
+      "error_pct": 0.0,
+      "source": "formula_branching_fractal"
+    },
+    {
+      "lab": "theory_completeness_spine_lab",
+      "property": "mechanistic_pair_count",
+      "name": "causal_channels",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "source": "mechanistic_coupling"
+    },
+    {
+      "lab": "theory_completeness_spine_lab",
+      "property": "external_falsification_overlap",
+      "name": "cwe_codon_overlap_rate",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "source": "cve_codon_hole_falsification"
+    }
+  ],
+  "pillar_domains": [
+    "Formula_Branching_Fractal",
+    "Mechanistic_Coupling",
+    "CVE_Codon_Hole_Falsification"
+  ],
+  "domain_attachment_count": 119,
+  "mechanism_count": 15,
+  "kev_falsification_rate": 0.5,
+  "completeness_status": "GREEN",
+  "crosswalk_modules": [
+    "FSOT.Formal.TheoryCompletenessSpinePriors",
+    "FSOT.Formal.FormulaCorpusClosurePriors",
+    "FSOT.Formal.DomainCouplingSimulationPriors"
+  ]
+}

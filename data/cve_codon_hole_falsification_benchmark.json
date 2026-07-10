@@ -1,0 +1,435 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:14:55.047546+00:00",
+  "domain": "CVE_Codon_Hole_Falsification",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "cisa_kev_summary.json",
+    "code_genome_lib",
+    "external_oss_code_genome"
+  ],
+  "maps_to_lean": [
+    "medical",
+    "ai",
+    "biological"
+  ],
+  "D_eff": 17,
+  "record_count": 29,
+  "observable_count": 29,
+  "median_error_pct": 0.009186636881580057,
+  "pooled_median_error_pct": 0.009186636881580057,
+  "headline_median_error_pct": 0.009186636881580057,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "kev_panel": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "CVE count without structure"
+      },
+      "hole_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Random token matching"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_kev_cwe_vs_baseline": true,
+      "channel_hole_falsification_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.009187,
+      "measured": 0.0,
+      "error_pct": 0.009186636881580057,
+      "observable_count": 29
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "kev_cwe",
+      "name": "kev_panel",
+      "computed": 0.009187,
+      "measured": 0.0,
+      "error_pct": 0.009186636881585558,
+      "observable_count": 15
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "hole_falsification",
+      "name": "hole_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 13
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-20",
+      "computed": 118.01084,
+      "measured": 118.0,
+      "error_pct": 0.009186636881590415,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": [
+        "void",
+        "static"
+      ]
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-78",
+      "computed": 104.009554,
+      "measured": 104.0,
+      "error_pct": 0.00918663688158115,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": [
+        "eval",
+        "exec"
+      ]
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-787",
+      "computed": 100.009187,
+      "measured": 100.0,
+      "error_pct": 0.009186636881580057,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": [
+        "strcpy",
+        "memcpy",
+        "malloc"
+      ]
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-416",
+      "computed": 92.008452,
+      "measured": 92.0,
+      "error_pct": 0.009186636881593031,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": [
+        "free",
+        "malloc"
+      ]
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-119",
+      "computed": 84.007717,
+      "measured": 84.0,
+      "error_pct": 0.009186636881591562,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": [
+        "strcpy",
+        "memcpy",
+        "malloc"
+      ]
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-22",
+      "computed": 76.006982,
+      "measured": 76.0,
+      "error_pct": 0.00918663688158978,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": []
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-502",
+      "computed": 67.006155,
+      "measured": 67.0,
+      "error_pct": 0.009186636881581965,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": [
+        "eval",
+        "pickle"
+      ]
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-94",
+      "computed": 65.005971,
+      "measured": 65.0,
+      "error_pct": 0.009186636881592082,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": [
+        "eval",
+        "exec"
+      ]
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-287",
+      "computed": 39.003583,
+      "measured": 39.0,
+      "error_pct": 0.00918663688158115,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": []
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-843",
+      "computed": 37.003399,
+      "measured": 37.0,
+      "error_pct": 0.009186636881579674,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": []
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-306",
+      "computed": 36.003307,
+      "measured": 36.0,
+      "error_pct": 0.009186636881588741,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": []
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-284",
+      "computed": 34.003123,
+      "measured": 34.0,
+      "error_pct": 0.00918663688158758,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": []
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-79",
+      "computed": 33.003032,
+      "measured": 33.0,
+      "error_pct": 0.009186636881576182,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": [
+        "innerHTML",
+        "document"
+      ]
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-264",
+      "computed": 31.002848,
+      "measured": 31.0,
+      "error_pct": 0.009186636881585558,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": []
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "kev_cwe_frequency",
+      "name": "CWE-122",
+      "computed": 30.002756,
+      "measured": 30.0,
+      "error_pct": 0.009186636881584795,
+      "source": "cisa_kev_summary.json",
+      "risk_tokens": [
+        "strcpy",
+        "malloc"
+      ]
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "vulnerable_legacy",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "source": "vendor\\cybersecurity\\samples\\vulnerable_legacy.c",
+      "cwe_token_overlap": [
+        "malloc",
+        "strcpy",
+        "void"
+      ],
+      "hole_count": 4
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "secure_buffer",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "vendor\\cybersecurity\\samples\\secure_buffer.c",
+      "cwe_token_overlap": [],
+      "hole_count": 0
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "xss_sink_legacy",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "source": "vendor\\cybersecurity\\samples\\xss_sink_legacy.js",
+      "cwe_token_overlap": [
+        "eval"
+      ],
+      "hole_count": 2
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "csp_safe_dom",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "source": "vendor\\cybersecurity\\samples\\csp_safe_dom.js",
+      "cwe_token_overlap": [],
+      "hole_count": 3
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "cpython_ceval",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "source": "vendor\\github_oss\\snapshots\\cpython_ceval.c",
+      "cwe_token_overlap": [
+        "free",
+        "static",
+        "void"
+      ],
+      "hole_count": 5
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "openssl_mem_clr",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "vendor\\github_oss\\snapshots\\openssl_mem_clr.c",
+      "cwe_token_overlap": [],
+      "hole_count": 0
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "python_dictobject",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "source": "vendor\\github_oss\\snapshots\\python_dictobject.c",
+      "cwe_token_overlap": [
+        "free",
+        "malloc",
+        "memcpy",
+        "static",
+        "void"
+      ],
+      "hole_count": 7
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "redis_sds",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "source": "vendor\\github_oss\\snapshots\\redis_sds.c",
+      "cwe_token_overlap": [
+        "free",
+        "memcpy",
+        "static",
+        "void"
+      ],
+      "hole_count": 8
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "sqlite_mem",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "source": "vendor\\github_oss\\snapshots\\sqlite_mem.c",
+      "cwe_token_overlap": [
+        "malloc",
+        "static",
+        "void"
+      ],
+      "hole_count": 3
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "express_router",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.0,
+      "source": "vendor\\github_oss\\snapshots\\express_router.js",
+      "cwe_token_overlap": [],
+      "hole_count": 2
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "nodejs_buffer",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "source": "vendor\\github_oss\\snapshots\\nodejs_buffer.js",
+      "cwe_token_overlap": [],
+      "hole_count": 3
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "sample_hole_detected",
+      "name": "react_hooks",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "vendor\\github_oss\\snapshots\\react_hooks.js",
+      "cwe_token_overlap": [],
+      "hole_count": 0
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "hole_detection_rate",
+      "name": "aggregate_sample_hole_rate",
+      "computed": 0.750111,
+      "measured": 0.75,
+      "error_pct": 0.014767310363369054,
+      "source": "code_genome_lib"
+    },
+    {
+      "lab": "cve_codon_falsification_lab",
+      "property": "cwe_codon_overlap_rate",
+      "name": "kev_top_cwe_token_overlap_rate",
+      "computed": 0.500153,
+      "measured": 0.5,
+      "error_pct": 0.03062212293865052,
+      "source": "cwe_codon_map"
+    }
+  ],
+  "kev_record_count": 1635,
+  "sample_analyzed_count": 12,
+  "hole_detection_rate": 0.75,
+  "cwe_codon_overlap_rate": 0.5,
+  "falsification_status": "GREEN",
+  "crosswalk_modules": [
+    "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
+    "FSOT.Formal.ExternalOSSCodeGenomePriors",
+    "FSOT.Formal.TheoryCompletenessSpinePriors"
+  ]
+}

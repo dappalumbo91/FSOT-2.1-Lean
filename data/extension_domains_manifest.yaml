@@ -1482,6 +1482,54 @@ extension_domains:
     lean_module: FSOT.Formal.ProgrammingLanguageLawsPriors
     note: "PROGRAMMING_LANGUAGE_RULES.json — semantics/safety laws parallel to math/crypto rules"
 
+  Formula_Branching_Fractal:
+    tier: 45
+    D_eff: 18
+    delta_psi: 0.95
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, particle, consciousness]
+    build_script: scripts/build_tier_j_toe_completeness_benchmarks.py
+    benchmark_data: data/formula_branching_fractal_benchmark.json
+    lean_module: FSOT.Formal.FormulaBranchingFractalPriors
+    note: "All extension domains + 7941 strict-empirical formulas trace to raw_S fractal branches"
+
+  Mechanistic_Coupling:
+    tier: 45
+    D_eff: 17
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, energy, consciousness]
+    build_script: scripts/build_tier_j_toe_completeness_benchmarks.py
+    benchmark_data: data/mechanistic_coupling_benchmark.json
+    lean_module: FSOT.Formal.MechanisticCouplingPriors
+    note: "Causal mechanism manifest — why domains connect, mapped to formula branches"
+
+  CVE_Codon_Hole_Falsification:
+    tier: 45
+    D_eff: 17
+    delta_psi: 0.88
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [medical, ai, biological]
+    build_script: scripts/build_tier_j_toe_completeness_benchmarks.py
+    benchmark_data: data/cve_codon_hole_falsification_benchmark.json
+    lean_module: FSOT.Formal.CVECodonHoleFalsificationPriors
+    note: "CISA KEV CWE histogram ↔ code-genome hole token overlap — external falsification"
+
+  Theory_Completeness_Spine:
+    tier: 45
+    D_eff: 19
+    delta_psi: 0.98
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, particle, consciousness, medical]
+    build_script: scripts/build_tier_j_toe_completeness_benchmarks.py
+    benchmark_data: data/theory_completeness_spine_benchmark.json
+    lean_module: FSOT.Formal.TheoryCompletenessSpinePriors
+    note: "ToE completeness rollup — fractal spine + mechanistic coupling + CVE falsification"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

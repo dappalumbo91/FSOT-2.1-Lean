@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T14:09:13.202079+00:00",
+  "generated_at": "2026-07-10T14:15:18.938021+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -1432,6 +1432,14 @@
       "culinary_arts_beats_sota_headlines_pos",
       "culinary_arts_bundle"
     ],
+    "CVECodonHoleFalsificationPriors": [
+      "cve_hole_observable_count_pos",
+      "cve_hole_pooled_median_under_five_pct",
+      "cve_hole_headline_median_under_five_pct",
+      "cve_hole_beats_sota_headlines_pos",
+      "cve_hole_kev_records_pos",
+      "cve_hole_bundle"
+    ],
     "DomainCouplingSimulationPriors": [
       "domain_coupling_node_count_pos",
       "domain_coupling_edge_count_pos",
@@ -1608,6 +1616,14 @@
       "food_microbiology_gap_fill_headline_median_under_five_pct",
       "food_microbiology_gap_fill_beats_sota_headlines_pos",
       "food_microbiology_gap_fill_bundle"
+    ],
+    "FormulaBranchingFractalPriors": [
+      "fractal_observable_count_pos",
+      "fractal_pooled_median_under_five_pct",
+      "fractal_headline_median_under_five_pct",
+      "fractal_beats_sota_headlines_pos",
+      "fractal_attachments_pos",
+      "fractal_bundle"
     ],
     "FormulaCorpusClosurePriors": [
       "formula_corpus_closure_observable_count_pos",
@@ -1903,6 +1919,14 @@
       "mechanical_engineering_ext_headline_median_under_five_pct",
       "mechanical_engineering_ext_beats_sota_headlines_pos",
       "mechanical_engineering_ext_bundle"
+    ],
+    "MechanisticCouplingPriors": [
+      "mech_cpl_observable_count_pos",
+      "mech_cpl_pooled_median_under_five_pct",
+      "mech_cpl_headline_median_under_five_pct",
+      "mech_cpl_beats_sota_headlines_pos",
+      "mech_cpl_mechanisms_pos",
+      "mech_cpl_bundle"
     ],
     "MeteorologyGapFillPriors": [
       "meteorology_gap_fill_observable_count_pos",
@@ -2372,6 +2396,14 @@
       "domain_term1_gt_neg_08_molecular",
       "domain_term1_gt_neg_08_material",
       "domain_term1_positive_biological"
+    ],
+    "TheoryCompletenessSpinePriors": [
+      "toe_spine_observable_count_pos",
+      "toe_spine_pooled_median_under_five_pct",
+      "toe_spine_headline_median_under_five_pct",
+      "toe_spine_beats_sota_headlines_pos",
+      "toe_spine_spine_complete_attachments",
+      "toe_spine_bundle"
     ],
     "ThesisSimulationPriors": [
       "thesis_wave_target_count_pos",

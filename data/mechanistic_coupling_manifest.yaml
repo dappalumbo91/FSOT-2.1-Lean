@@ -1,0 +1,109 @@
+# Causal mechanistic coupling — why domains connect, not only that they correlate.
+version: "1.0"
+updated: "2026-07-10"
+
+mechanisms:
+  - id: MEC-001
+    source: Plasma_Physics
+    target: Magnetosphere
+    mechanism: magnetic_reconnection_energy_transfer
+    lean_tags: [particle, electron]
+    formula_branch: term3.chaos_factor
+
+  - id: MEC-002
+    source: Geomagnetism
+    target: Space_Weather
+    mechanism: solar_wind_magnetopause_coupling
+    lean_tags: [electron, energy]
+    formula_branch: term1.term1_base
+
+  - id: MEC-003
+    source: Seismology
+    target: Tectonics
+    mechanism: plate_boundary_stress_accumulation
+    lean_tags: [energy]
+    formula_branch: term2.trend_bias
+
+  - id: MEC-004
+    source: Biochemistry
+    target: Genomic
+    mechanism: codon_expression_chemistry_bridge
+    lean_tags: [medical, biological]
+    formula_branch: term1.growth_term
+
+  - id: MEC-005
+    source: Code_Genome_Structure
+    target: Malware_Threat_Intelligence
+    mechanism: genomic_illness_vulnerability_analog
+    lean_tags: [biological, medical]
+    formula_branch: term1.quirkMod
+
+  - id: MEC-006
+    source: Programming_Language_Laws
+    target: Linguistics_Formal
+    mechanism: symbolic_semantics_morphism
+    lean_tags: [consciousness, ai]
+    formula_branch: term1.perceived_adjust
+
+  - id: MEC-007
+    source: External_OSS_Code_Genome
+    target: Zero_Day_Risk_Evaluator
+    mechanism: extrinsic_code_structure_risk_projection
+    lean_tags: [ai, biological]
+    formula_branch: term3.acoustic_bleed
+
+  - id: MEC-008
+    source: Cryptography_Technology
+    target: Secure_Software_Engineering
+    mechanism: primitive_to_implementation_security_chain
+    lean_tags: [particle, ai]
+    formula_branch: term1.term1_base
+
+  - id: MEC-009
+    source: Particle_Physics
+    target: Cosmology
+    mechanism: effective_field_cosmological_scaling
+    lean_tags: [particle, cosmological]
+    formula_branch: scaled_S
+
+  - id: MEC-010
+    source: Neuroscience
+    target: Psychology
+    mechanism: neural_consciousness_observer_channel
+    lean_tags: [neural, consciousness]
+    formula_branch: term1.quirkMod
+
+  - id: MEC-011
+    source: Formula_Corpus_Closure
+    target: Formula_Branching_Fractal
+    mechanism: strict_empirical_spine_reduction
+    lean_tags: [mathematical, particle]
+    formula_branch: raw_S
+
+  - id: MEC-012
+    source: Programming_Language_Laws
+    target: Code_Genome_Structure
+    mechanism: pl_law_codon_stability_constraint
+    lean_tags: [consciousness, biological]
+    formula_branch: term1.coherence_efficiency
+
+  - id: MEC-013
+    source: Immunology
+    target: Virology
+    mechanism: host_pathogen_immune_dynamics
+    lean_tags: [medical, biological]
+    formula_branch: term1.growth_term
+
+  - id: MEC-014
+    source: Quantum_Computing
+    target: Programming_Language_Laws
+    mechanism: type_effect_computation_functor
+    lean_tags: [ai, consciousness]
+    formula_branch: term1.perceived_adjust
+
+  - id: MEC-015
+    source: Trinary_OS
+    target: FSOTB_ISA
+    mechanism: opcode_scalar_register_evolution
+    lean_tags: [ai, particle]
+    formula_branch: term2.scale
