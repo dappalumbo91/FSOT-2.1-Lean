@@ -136,7 +136,8 @@ def main() -> int:
         "other_frameworks": {
             "implemented": ["lean4", "python_decimal", "rocq_coq", "coqchk", "isabelle"],
             "artifacts_ready": ["isabelle_full_formal_spine"],
-            "planned_tier_83": ["transcendental_bounds_coq_isabelle", "agda", "metamath"],
+            "planned_tier_84": ["rust_lean_bridge_full_replay", "fstar_executable_check"],
+            "deferred": ["metamath", "agda"],
             "all_free_no_account": True,
         },
     }
