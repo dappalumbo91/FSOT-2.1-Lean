@@ -183,6 +183,18 @@ api_sources:
     lean: scripts/gen_tiers_57_58_lean.py
     live_api: https://www.gw-openscience.org/eventapi/json/
 
+  tier59_60_expansion:
+    description: "Tiers 59–60 — material/fuel verification scaffold + SIMBAD/Gaia astrometry"
+    manifests:
+      - data/tier59_material_fuel_manifest.yaml
+      - data/tier60_astrometry_manifest.yaml
+    build:
+      - scripts/build_tier59_material_fuel_benchmarks.py
+      - scripts/build_tier60_astrometry_benchmarks.py
+    ingest: scripts/ingest_tier60_live_astrometry.py
+    lean: scripts/gen_tiers_59_60_lean.py
+    live_api: https://simbad.cds.unistra.fr/simbad/sim-tap/sync
+
   astrophysics_catalogs:
     description: "Tier 58 live ingest — public catalogs for stellar/planetary/galactic structures"
     sources:
@@ -190,8 +202,9 @@ api_sources:
         url: http://simbad.cds.unistra.fr/simbad/sim-tap/sync
         auth: none
         query_language: ADQL
-        status: roadmap
-        note: "Binary/trinary multiplicity queries"
+        status: active
+        ingest: scripts/ingest_tier60_live_astrometry.py
+        note: "Tier 60 stellar identity — parallax/pm with bundled fallback"
       - id: vizier_wds
         url: https://cdsarc.cds.unistra.fr/viz-bin/votable
         auth: none

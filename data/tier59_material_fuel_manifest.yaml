@@ -1,0 +1,12 @@
+version: "1.0"
+tier: 59
+domains:
+  - Material_Property_Verification_Scaffold
+  - Fuel_Thermochemistry_Public_Anchors
+build: scripts/build_tier59_material_fuel_benchmarks.py
+lean: scripts/gen_tiers_59_60_lean.py
+proprietary_gate: data/preregistered_predictions_manifest.yaml
+bundled:
+  - vendor/fuel/thermochemistry_public_anchors.json
+  - vendor/fuel/public_fuel_property_catalog.json
+note: "Public verification scaffold — relays tier 55–57 panels; no in-silico novel claims"

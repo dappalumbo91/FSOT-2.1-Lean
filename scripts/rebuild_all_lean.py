@@ -55,6 +55,7 @@ GENERATOR_ORDER = [
     "gen_tier52_astrophysical_lean.py",
     "gen_tiers_53_56_lean.py",
     "gen_tiers_57_58_lean.py",
+    "gen_tiers_59_60_lean.py",
 ]
 
 

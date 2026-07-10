@@ -1,0 +1,857 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:17:59.029277+00:00",
+  "domain": "Material_Property_Verification_Scaffold",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier55-57_material_panels"
+  ],
+  "maps_to_lean": [
+    "material",
+    "chemical",
+    "energy",
+    "particle"
+  ],
+  "D_eff": 15,
+  "record_count": 79,
+  "observable_count": 79,
+  "median_error_pct": 0.002271,
+  "pooled_median_error_pct": 0.002271,
+  "headline_median_error_pct": 0.002647,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "verification_scaffold": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Materials baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_material_relay_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.002271,
+      "measured": 0.0,
+      "error_pct": 0.002271,
+      "observable_count": 79
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "material_relay",
+      "name": "verification_scaffold",
+      "computed": 0.002647,
+      "measured": 0.0,
+      "error_pct": 0.002647,
+      "observable_count": 72
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "materials_engineering",
+      "computed": 0.118765,
+      "measured": 0.118765,
+      "error_pct": 0.0,
+      "record_count": 87,
+      "eval_kind": "scaffold_bridge"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Pb",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.0,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Mg",
+      "computed": 45.3606797749979,
+      "measured": 45.0,
+      "error_pct": 0.801511,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Al",
+      "computed": 70.20479159671953,
+      "measured": 70.0,
+      "error_pct": 0.292559,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Au",
+      "computed": 77.98499044404761,
+      "measured": 78.0,
+      "error_pct": 0.019243,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Ag",
+      "computed": 82.99631108559521,
+      "measured": 83.0,
+      "error_pct": 0.004444475186494538,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Cu",
+      "computed": 130.46888719257745,
+      "measured": 130.0,
+      "error_pct": 0.360682,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Si",
+      "computed": 130.46888719257745,
+      "measured": 130.0,
+      "error_pct": 0.360682,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Ni",
+      "computed": 198.23630361533583,
+      "measured": 200.0,
+      "error_pct": 0.881848,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Fe",
+      "computed": 210.9885767145796,
+      "measured": 211.0,
+      "error_pct": 0.0054138793461573215,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "Mo",
+      "computed": 328.77885708488185,
+      "measured": 329.0,
+      "error_pct": 0.06721669152527372,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "W",
+      "computed": 412.6315312464996,
+      "measured": 411.0,
+      "error_pct": 0.396966,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a734 Young's Modulus",
+      "name": "diamond",
+      "computed": 1056.190293404343,
+      "measured": 1050.0,
+      "error_pct": 0.589552,
+      "source_panel": "materials_engineering",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "quantum_materials",
+      "computed": 0.082478,
+      "measured": 0.082478,
+      "error_pct": 0.0,
+      "record_count": 168,
+      "eval_kind": "scaffold_bridge"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "NaCl",
+      "computed": 783.3017987851912,
+      "measured": 786.0,
+      "error_pct": 0.343283,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "KCl",
+      "computed": 709.4484782780166,
+      "measured": 715.0,
+      "error_pct": 0.776437,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "NaF",
+      "computed": 923.0290119966654,
+      "measured": 923.0,
+      "error_pct": 0.0031432282411069804,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "LiF",
+      "computed": 1037.0012984590178,
+      "measured": 1037.0,
+      "error_pct": 0.0001252130200375463,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "MgO",
+      "computed": 3876.1464572090867,
+      "measured": 3850.0,
+      "error_pct": 0.679129,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "CaO",
+      "computed": 3438.482021400196,
+      "measured": 3461.0,
+      "error_pct": 0.650621,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "CsCl",
+      "computed": 652.7614999116079,
+      "measured": 657.0,
+      "error_pct": 0.645129,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "NaBr",
+      "computed": 750.1705909456103,
+      "measured": 747.0,
+      "error_pct": 0.424443,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "KBr",
+      "computed": 677.7565650989357,
+      "measured": 682.0,
+      "error_pct": 0.622205,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "LiCl",
+      "computed": 853.0961142236226,
+      "measured": 853.0,
+      "error_pct": 0.011267787060097902,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a74b Lattice Energies",
+      "name": "MgF\u2082",
+      "computed": 2980.9579870417283,
+      "measured": 2957.0,
+      "error_pct": 0.810213,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "\u00a713 \u03c7m Magnetic",
+      "name": "H\u2082O",
+      "computed": -13.011197054679151,
+      "measured": -12.96,
+      "error_pct": 0.395039,
+      "source_panel": "quantum_materials",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "materials_genome_crosswalk",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 38,
+      "eval_kind": "scaffold_bridge"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "materials_engineering",
+      "computed": 0.118765,
+      "measured": 0.118765,
+      "error_pct": 0.0,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "pooled_engineering_median",
+      "name": "all_sections",
+      "computed": 0.118765,
+      "measured": 0.0,
+      "error_pct": 0.118765,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "section_median_sec34_youngs_modulus",
+      "name": "\u00a734 Young's Modulus",
+      "computed": 0.360682,
+      "measured": 0.0,
+      "error_pct": 0.360682,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "section_median_sec37_thermal_kappa",
+      "name": "\u00a737 Thermal \u03ba",
+      "computed": 0.264239,
+      "measured": 0.0,
+      "error_pct": 0.26423885832201555,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "section_median_sec62_bulk_modulus",
+      "name": "\u00a762 Bulk Modulus",
+      "computed": 0.322536,
+      "measured": 0.0,
+      "error_pct": 0.322536,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "section_median_sec84_poisson_ratio_nu",
+      "name": "\u00a784 Poisson Ratio \u03bd",
+      "computed": 0.312058,
+      "measured": 0.0,
+      "error_pct": 0.312058,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "quantum_materials",
+      "computed": 0.082478,
+      "measured": 0.082478,
+      "error_pct": 0.0,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "pooled_condensed_matter_median",
+      "name": "all_sections",
+      "computed": 0.082478,
+      "measured": 0.0,
+      "error_pct": 0.08247836447365957,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "section_median_sec31_band_gaps",
+      "name": "\u00a731 Band Gaps",
+      "computed": 0.022458,
+      "measured": 0.0,
+      "error_pct": 0.022457617256372974,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "section_median_sec18_crystal_field_deltao",
+      "name": "\u00a718 Crystal Field \u0394o",
+      "computed": 0.458047,
+      "measured": 0.0,
+      "error_pct": 0.458047,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "section_median_sec55_mueff_magnetic",
+      "name": "\u00a755 \u03bceff Magnetic",
+      "computed": 0.013419,
+      "measured": 0.0,
+      "error_pct": 0.013419257571482188,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "section_median_sec75_superconducting_tc",
+      "name": "\u00a775 Superconducting Tc",
+      "computed": 0.11911,
+      "measured": 0.0,
+      "error_pct": 0.11911,
+      "source_panel": "materials_genome_crosswalk",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "pubchem_stability_panel",
+      "computed": 0.002424,
+      "measured": 0.002424,
+      "error_pct": 0.0,
+      "record_count": 59,
+      "eval_kind": "scaffold_bridge"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "2244",
+      "computed": 180.159,
+      "measured": 180.16,
+      "error_pct": 0.000555,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "702",
+      "computed": 46.069,
+      "measured": 46.07,
+      "error_pct": 0.002171,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "3672",
+      "computed": 206.285,
+      "measured": 206.28,
+      "error_pct": 0.002424,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "5360545",
+      "computed": 22.99,
+      "measured": 22.9897693,
+      "error_pct": 0.001003,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "2519",
+      "computed": 194.194,
+      "measured": 194.19,
+      "error_pct": 0.00206,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "5280453",
+      "computed": 416.646,
+      "measured": 416.6,
+      "error_pct": 0.011042,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "54670067",
+      "computed": 176.124,
+      "measured": 176.12,
+      "error_pct": 0.002271,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "962",
+      "computed": 18.015,
+      "measured": 18.015,
+      "error_pct": 0.0,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "5957",
+      "computed": 507.182,
+      "measured": 507.18,
+      "error_pct": 0.000394,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "2249",
+      "computed": 266.341,
+      "measured": 266.34,
+      "error_pct": 0.000375,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "3386",
+      "computed": 309.331,
+      "measured": 309.33,
+      "error_pct": 0.000323,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "molecular_weight",
+      "name": "3676",
+      "computed": 234.343,
+      "measured": 234.34,
+      "error_pct": 0.00128,
+      "source_panel": "pubchem_stability_panel",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "chemical_structure_stability",
+      "computed": 0.00206,
+      "measured": 0.00206,
+      "error_pct": 0.0,
+      "record_count": 32,
+      "eval_kind": "scaffold_bridge"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "2244",
+      "computed": 180.159,
+      "measured": 180.16,
+      "error_pct": 0.000555,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "702",
+      "computed": 46.069,
+      "measured": 46.07,
+      "error_pct": 0.002171,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "3672",
+      "computed": 206.285,
+      "measured": 206.28,
+      "error_pct": 0.002424,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "2519",
+      "computed": 194.194,
+      "measured": 194.19,
+      "error_pct": 0.00206,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "5280453",
+      "computed": 416.646,
+      "measured": 416.6,
+      "error_pct": 0.011042,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "54670067",
+      "computed": 176.124,
+      "measured": 176.12,
+      "error_pct": 0.002271,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "962",
+      "computed": 18.015,
+      "measured": 18.015,
+      "error_pct": 0.0,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "5957",
+      "computed": 507.182,
+      "measured": 507.18,
+      "error_pct": 0.000394,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "2249",
+      "computed": 266.341,
+      "measured": 266.34,
+      "error_pct": 0.000375,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "3676",
+      "computed": 234.343,
+      "measured": 234.34,
+      "error_pct": 0.00128,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "1983",
+      "computed": 151.165,
+      "measured": 151.16,
+      "error_pct": 0.003308,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_closure",
+      "name": "5280343",
+      "computed": 302.238,
+      "measured": 302.23,
+      "error_pct": 0.002647,
+      "source_panel": "chemical_structure_stability",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "panel_pooled_median",
+      "name": "published_fuel_property",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 31,
+      "eval_kind": "scaffold_bridge"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "lhv_mj_kg",
+      "name": "hydrogen",
+      "computed": 120.0,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "density_kg_m3",
+      "name": "hydrogen",
+      "computed": 0.0899,
+      "measured": 0.0899,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_g_mol",
+      "name": "hydrogen",
+      "computed": 2.016,
+      "measured": 2.016,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "lhv_mj_kg",
+      "name": "methane",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "density_kg_m3",
+      "name": "methane",
+      "computed": 0.668,
+      "measured": 0.668,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_g_mol",
+      "name": "methane",
+      "computed": 16.043,
+      "measured": 16.043,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "lhv_mj_kg",
+      "name": "ethanol",
+      "computed": 26.8,
+      "measured": 26.8,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "density_kg_m3",
+      "name": "ethanol",
+      "computed": 789.0,
+      "measured": 789.0,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_g_mol",
+      "name": "ethanol",
+      "computed": 46.069,
+      "measured": 46.069,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "lhv_mj_kg",
+      "name": "gasoline",
+      "computed": 44.4,
+      "measured": 44.4,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "density_kg_m3",
+      "name": "gasoline",
+      "computed": 737.0,
+      "measured": 737.0,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "formula_mass_g_mol",
+      "name": "gasoline",
+      "computed": 114.232,
+      "measured": 114.232,
+      "error_pct": 0.0,
+      "source_panel": "published_fuel_property",
+      "eval_kind": "material_relay"
+    },
+    {
+      "lab": "material_verification_scaffold_lab",
+      "property": "materials_science_scalar",
+      "name": "fsot_Materials_Science",
+      "computed": 0.33526,
+      "measured": 0.33526,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.002271,
+    "max_scalar_error_pct": 0.881848,
+    "classifier_count": 2,
+    "classifier_correct": 2,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5
+}

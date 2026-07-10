@@ -32,9 +32,15 @@ completed_tiers:
   tier_58:
     - GWOSC_Live_Event_Deep
     - Stellar_Multiplicity_Live_Deep
+  tier_59:
+    - Material_Property_Verification_Scaffold
+    - Fuel_Thermochemistry_Public_Anchors
+  tier_60:
+    - SIMBAD_Stellar_Identity_Deep
+    - Gaia_Astrometry_Panel_Deep
 
 priority_queue:
-  tier_59_simulation_scaffold:
+  tier_61_preregistered_screens:
     status: planned
     proprietary_gate: preregistered_predictions_manifest.yaml
     channels:
@@ -42,10 +48,10 @@ priority_queue:
       - fuel_candidate_screening_prereg
     note: "In-silico screens stay local until preregistered release"
 
-  tier_60_live_depth:
+  tier_62_live_depth:
     status: planned
-    sources: [simbad_tap, vizier_wds, gaia_dr3_tap]
-    note: "SIMBAD/WDS/Gaia live ingest atop bundled summaries"
+    sources: [vizier_wds, gaia_dr3_tap]
+    note: "VizieR WDS + full Gaia DR3 TAP atop tier 60 SIMBAD depth"
 
 discoverability_principles:
   - "Public repo = reproducible verification against published data"

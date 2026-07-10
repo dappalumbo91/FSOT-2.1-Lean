@@ -1,0 +1,467 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:17:59.330730+00:00",
+  "domain": "SIMBAD_Stellar_Identity_Deep",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\stellar_structures\\simbad_live_cache.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\stellar_structures\\simbad_stellar_identity_sample.json"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "galactic"
+  ],
+  "D_eff": 20,
+  "record_count": 40,
+  "observable_count": 40,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "stellar_identity": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "SIMBAD TAP"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_simbad_consistency_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 40
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "simbad_consistency",
+      "name": "stellar_identity",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 20
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "plx_mas",
+      "name": "Gliese 667C",
+      "otype": "SB*",
+      "computed": 144.0,
+      "measured": 144.0,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "pm_total_masyr",
+      "name": "Gliese 667C",
+      "otype": "SB*",
+      "computed": 1050.0,
+      "measured": 1050.0,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_plx_mas",
+      "name": "Gliese 667C",
+      "computed": 144.0,
+      "measured": 144.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_pm_total_masyr",
+      "name": "Gliese 667C",
+      "computed": 1050.0,
+      "measured": 1050.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "plx_mas",
+      "name": "HD 188753",
+      "otype": "SB*",
+      "computed": 7.4,
+      "measured": 7.4,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "pm_total_masyr",
+      "name": "HD 188753",
+      "otype": "SB*",
+      "computed": 45.0,
+      "measured": 45.0,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_plx_mas",
+      "name": "HD 188753",
+      "computed": 7.4,
+      "measured": 7.4,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_pm_total_masyr",
+      "name": "HD 188753",
+      "computed": 45.0,
+      "measured": 45.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "plx_mas",
+      "name": "V* CMa",
+      "otype": "LP*",
+      "computed": 5.2,
+      "measured": 5.2,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "pm_total_masyr",
+      "name": "V* CMa",
+      "otype": "LP*",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_plx_mas",
+      "name": "V* CMa",
+      "computed": 5.2,
+      "measured": 5.2,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_pm_total_masyr",
+      "name": "V* CMa",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "plx_mas",
+      "name": "alf CMa",
+      "otype": "SB*",
+      "computed": 379.21,
+      "measured": 379.21,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "pm_total_masyr",
+      "name": "alf CMa",
+      "otype": "SB*",
+      "computed": 1318.7,
+      "measured": 1318.7,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_plx_mas",
+      "name": "alf CMa",
+      "computed": 379.21,
+      "measured": 379.21,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_pm_total_masyr",
+      "name": "alf CMa",
+      "computed": 1318.7,
+      "measured": 1318.7,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "plx_mas",
+      "name": "alf Cen",
+      "otype": "SB*",
+      "computed": 747.1,
+      "measured": 747.1,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "pm_total_masyr",
+      "name": "alf Cen",
+      "otype": "SB*",
+      "computed": 3688.0,
+      "measured": 3688.0,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_plx_mas",
+      "name": "alf Cen",
+      "computed": 747.1,
+      "measured": 747.1,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_pm_total_masyr",
+      "name": "alf Cen",
+      "computed": 3688.0,
+      "measured": 3688.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "plx_mas",
+      "name": "bet Ori",
+      "otype": "SB*",
+      "computed": 4.51,
+      "measured": 4.51,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "pm_total_masyr",
+      "name": "bet Ori",
+      "otype": "SB*",
+      "computed": 27.5,
+      "measured": 27.5,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_plx_mas",
+      "name": "bet Ori",
+      "computed": 4.51,
+      "measured": 4.51,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_pm_total_masyr",
+      "name": "bet Ori",
+      "computed": 27.5,
+      "measured": 27.5,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "plx_mas",
+      "name": "del Ori",
+      "otype": "SB*",
+      "computed": 2.41,
+      "measured": 2.41,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "pm_total_masyr",
+      "name": "del Ori",
+      "otype": "SB*",
+      "computed": 1.2,
+      "measured": 1.2,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_plx_mas",
+      "name": "del Ori",
+      "computed": 2.41,
+      "measured": 2.41,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_pm_total_masyr",
+      "name": "del Ori",
+      "computed": 1.2,
+      "measured": 1.2,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "plx_mas",
+      "name": "gam Vir",
+      "otype": "SB*",
+      "computed": 38.4,
+      "measured": 38.4,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "pm_total_masyr",
+      "name": "gam Vir",
+      "otype": "SB*",
+      "computed": 315.0,
+      "measured": 315.0,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_plx_mas",
+      "name": "gam Vir",
+      "computed": 38.4,
+      "measured": 38.4,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_pm_total_masyr",
+      "name": "gam Vir",
+      "computed": 315.0,
+      "measured": 315.0,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "plx_mas",
+      "name": "kap Cru",
+      "otype": "SB*",
+      "computed": 2.5,
+      "measured": 2.5,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "pm_total_masyr",
+      "name": "kap Cru",
+      "otype": "SB*",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_plx_mas",
+      "name": "kap Cru",
+      "computed": 2.5,
+      "measured": 2.5,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_pm_total_masyr",
+      "name": "kap Cru",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "plx_mas",
+      "name": "zet Cas",
+      "otype": "SB*",
+      "computed": 6.9,
+      "measured": 6.9,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "pm_total_masyr",
+      "name": "zet Cas",
+      "otype": "SB*",
+      "computed": 4.8,
+      "measured": 4.8,
+      "error_pct": 0.0,
+      "ingest_source": "bundled",
+      "eval_kind": "simbad_anchor"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_plx_mas",
+      "name": "zet Cas",
+      "computed": 6.9,
+      "measured": 6.9,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    },
+    {
+      "lab": "simbad_stellar_identity_lab",
+      "property": "live_vs_bundled_pm_total_masyr",
+      "name": "zet Cas",
+      "computed": 4.8,
+      "measured": 4.8,
+      "error_pct": 0.0,
+      "eval_kind": "ingest_consistency"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

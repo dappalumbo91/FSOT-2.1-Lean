@@ -2210,6 +2210,59 @@ extension_domains:
     lean_module: FSOT.Formal.StellarMultiplicityLiveDeepPriors
     note: "Tier 53 stellar catalog + live ingest metadata depth"
 
+  Material_Property_Verification_Scaffold:
+    tier: 59
+    D_eff: 15
+    delta_psi: 0.85
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [material, chemical, energy, particle]
+    build_script: scripts/build_tier59_material_fuel_benchmarks.py
+    manifest: data/tier59_material_fuel_manifest.yaml
+    benchmark_data: data/material_property_verification_scaffold_benchmark.json
+    lean_module: FSOT.Formal.MaterialPropertyVerificationScaffoldPriors
+    note: "Crosswalk relay from tier 55–57 material/chemistry/fuel panels — no novel in-silico claims"
+
+  Fuel_Thermochemistry_Public_Anchors:
+    tier: 59
+    D_eff: 16
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [energy, chemical, material]
+    build_script: scripts/build_tier59_material_fuel_benchmarks.py
+    manifest: data/tier59_material_fuel_manifest.yaml
+    benchmark_data: data/fuel_thermochemistry_public_anchors_benchmark.json
+    lean_module: FSOT.Formal.FuelThermochemistryPublicAnchorsPriors
+    note: "NIST ΔHf + published fuel catalog bridge — novel fuel discovery preregistered separately"
+
+  SIMBAD_Stellar_Identity_Deep:
+    tier: 60
+    D_eff: 20
+    delta_psi: 0.92
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic]
+    ingest_script: scripts/ingest_tier60_live_astrometry.py
+    build_script: scripts/build_tier60_astrometry_benchmarks.py
+    manifest: data/tier60_astrometry_manifest.yaml
+    benchmark_data: data/simbad_stellar_identity_deep_benchmark.json
+    lean_module: FSOT.Formal.SIMBADStellarIdentityDeepPriors
+    note: "SIMBAD TAP live ingest with bundled fallback — live vs bundled parallax/pm consistency"
+
+  Gaia_Astrometry_Panel_Deep:
+    tier: 60
+    D_eff: 20
+    delta_psi: 0.9
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [astronomical, galactic]
+    build_script: scripts/build_tier60_astrometry_benchmarks.py
+    manifest: data/tier60_astrometry_manifest.yaml
+    benchmark_data: data/gaia_astrometry_panel_deep_benchmark.json
+    lean_module: FSOT.Formal.GaiaAstrometryPanelDeepPriors
+    note: "Gaia literature parallax/pm panel + tier 53 galactic bridge"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

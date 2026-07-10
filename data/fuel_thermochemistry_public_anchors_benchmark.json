@@ -1,0 +1,202 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T18:17:59.024225+00:00",
+  "domain": "Fuel_Thermochemistry_Public_Anchors",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "thermochemistry_public_anchors.json",
+    "public_fuel_property_catalog.json"
+  ],
+  "maps_to_lean": [
+    "energy",
+    "chemical",
+    "material"
+  ],
+  "D_eff": 16,
+  "record_count": 14,
+  "observable_count": 14,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fuel_public": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NIST thermochemistry"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_thermochemistry_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 14
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "thermochemistry",
+      "name": "fuel_public",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 14
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "hf_kj_mol",
+      "name": "hydrogen",
+      "formula": "H2",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "nist_enthalpy_anchor"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "lhv_mj_kg",
+      "name": "hydrogen",
+      "computed": 120.0,
+      "measured": 120.0,
+      "error_pct": 0.0,
+      "eval_kind": "fuel_catalog_bridge"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "hf_kj_mol",
+      "name": "methane",
+      "formula": "CH4",
+      "computed": -74.6,
+      "measured": -74.6,
+      "error_pct": 0.0,
+      "eval_kind": "nist_enthalpy_anchor"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "lhv_mj_kg",
+      "name": "methane",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0,
+      "eval_kind": "fuel_catalog_bridge"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "hf_kj_mol",
+      "name": "ethanol",
+      "formula": "C2H6O",
+      "computed": -234.8,
+      "measured": -234.8,
+      "error_pct": 0.0,
+      "eval_kind": "nist_enthalpy_anchor"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "lhv_mj_kg",
+      "name": "ethanol",
+      "computed": 26.8,
+      "measured": 26.8,
+      "error_pct": 0.0,
+      "eval_kind": "fuel_catalog_bridge"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "hf_kj_mol",
+      "name": "methanol",
+      "formula": "CH4O",
+      "computed": -200.7,
+      "measured": -200.7,
+      "error_pct": 0.0,
+      "eval_kind": "nist_enthalpy_anchor"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "lhv_mj_kg",
+      "name": "methanol",
+      "computed": 19.9,
+      "measured": 19.9,
+      "error_pct": 0.0,
+      "eval_kind": "fuel_catalog_bridge"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "hf_kj_mol",
+      "name": "propane",
+      "formula": "C3H8",
+      "computed": -103.8,
+      "measured": -103.8,
+      "error_pct": 0.0,
+      "eval_kind": "nist_enthalpy_anchor"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "hf_kj_mol",
+      "name": "water",
+      "formula": "H2O",
+      "computed": -241.8,
+      "measured": -241.8,
+      "error_pct": 0.0,
+      "eval_kind": "nist_enthalpy_anchor"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "hf_kj_mol",
+      "name": "carbon_dioxide",
+      "formula": "CO2",
+      "computed": -393.5,
+      "measured": -393.5,
+      "error_pct": 0.0,
+      "eval_kind": "nist_enthalpy_anchor"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "hf_kj_mol",
+      "name": "ammonia",
+      "formula": "H3N",
+      "computed": -45.9,
+      "measured": -45.9,
+      "error_pct": 0.0,
+      "eval_kind": "nist_enthalpy_anchor"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "lhv_mj_kg",
+      "name": "ammonia",
+      "computed": 18.6,
+      "measured": 18.6,
+      "error_pct": 0.0,
+      "eval_kind": "fuel_catalog_bridge"
+    },
+    {
+      "lab": "fuel_thermochemistry_lab",
+      "property": "thermodynamics_scalar",
+      "name": "fsot_Thermodynamics",
+      "computed": 0.786975,
+      "measured": 0.786975,
+      "error_pct": 0.0,
+      "eval_kind": "scalar_bridge"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 1,
+    "classifier_correct": 1,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

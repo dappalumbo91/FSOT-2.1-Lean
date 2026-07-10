@@ -1,0 +1,11 @@
+version: "1.0"
+tier: 60
+domains:
+  - SIMBAD_Stellar_Identity_Deep
+  - Gaia_Astrometry_Panel_Deep
+ingest: scripts/ingest_tier60_live_astrometry.py
+build: scripts/build_tier60_astrometry_benchmarks.py
+lean: scripts/gen_tiers_59_60_lean.py
+live_api: https://simbad.cds.unistra.fr/simbad/sim-tap/sync
+bundled_fallback: vendor/stellar_structures/simbad_stellar_identity_sample.json
+note: "SIMBAD TAP live ingest + Gaia literature panel; bundled fallback for offline clones"
