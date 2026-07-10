@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "CDC/WHO virology + PubChem antiviral anchors",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "hiv_viral_load_suppressed", "property": "viral_load_copies_ml", "measured": 50.0, "virus": "HIV-1"},
+    {"name": "influenza_replication_h", "property": "replication_doubling_h", "measured": 6.0, "virus": "influenza A"},
+    {"name": "sars_cov2_incubation_days", "property": "incubation_period_days", "measured": 5.0, "virus": "SARS-CoV-2"},
+    {"name": "hcv_viral_load_log", "property": "viral_load_log10_iu_ml", "measured": 6.0, "virus": "HCV"},
+    {"name": "hbv_viral_load_log", "property": "viral_load_log10_iu_ml", "measured": 5.0, "virus": "HBV"},
+    {"name": "rsv_replication_h", "property": "replication_doubling_h", "measured": 12.0, "virus": "RSV"},
+    {"name": "ebola_viral_load_peak", "property": "viral_load_log10_copies_ml", "measured": 8.0, "virus": "Ebola"},
+    {"name": "zika_viral_load_peak", "property": "viral_load_log10_copies_ml", "measured": 5.0, "virus": "Zika"},
+    {"name": "remdesivir_mw", "property": "molecular_weight_da", "measured": 602.6, "compound": "remdesivir"},
+    {"name": "oseltamivir_mw", "property": "molecular_weight_da", "measured": 312.4, "compound": "oseltamivir"},
+    {"name": "acyclovir_mw", "property": "molecular_weight_da", "measured": 225.2, "compound": "acyclovir"},
+    {"name": "ritonavir_mw", "property": "molecular_weight_da", "measured": 720.9, "compound": "ritonavir"},
+    {"name": "sofosbuvir_mw", "property": "molecular_weight_da", "measured": 529.5, "compound": "sofosbuvir"},
+    {"name": "viral_particle_diameter_nm", "property": "particle_diameter_nm", "measured": 100.0, "virus": "SARS-CoV-2"},
+    {"name": "phage_t4_genome_kb", "property": "genome_size_kb", "measured": 169.0, "virus": "T4 phage"},
+    {"name": "influenza_genome_kb", "property": "genome_size_kb", "measured": 13.5, "virus": "influenza A"},
+    {"name": "morbillivirus_r0", "property": "basic_reproduction_R0", "measured": 15.0, "virus": "measles"},
+    {"name": "herpes_latency_years", "property": "latency_period_years", "measured": 40.0, "virus": "HSV-1"},
+    {"name": "norovirus_shed_days", "property": "shedding_duration_days", "measured": 14.0, "virus": "norovirus"},
+    {"name": "poxvirus_particle_nm", "property": "particle_diameter_nm", "measured": 300.0, "virus": "mpox"}
+  ]
+}

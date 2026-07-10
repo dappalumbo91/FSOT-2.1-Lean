@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-07-09T03:54:09.679635+00:00",
+  "source": [
+    "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
+    "scripts/higgs_mass_formula_eval.py"
+  ],
+  "maps_to_lean": [
+    "particle"
+  ],
+  "rule_id": "FO-213",
+  "record_count": 2,
+  "observable_count": 2,
+  "median_error_pct": 0.03990518384182655,
+  "records": [
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.25,
+      "error_pct": 0.03990518384182655,
+      "eval_kind": "live_formula",
+      "formula": "(theta_s + e^3) / c_factor^7"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_MeV",
+      "rule_id": "FO-213",
+      "computed": 125200.01875723811,
+      "measured": 125250.0,
+      "error_pct": 0.03990518384182655,
+      "eval_kind": "live_formula"
+    }
+  ]
+}

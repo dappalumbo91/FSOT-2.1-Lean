@@ -1,0 +1,235 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.513396+00:00",
+  "domain": "Epidemiology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "epidemiology_reference",
+    "World_Bank_health"
+  ],
+  "maps_to_lean": [
+    "medical",
+    "biological"
+  ],
+  "D_eff": 15,
+  "record_count": 20,
+  "observable_count": 20,
+  "median_error_pct": 0.03062212293865052,
+  "pooled_median_error_pct": 0.03062212293865052,
+  "headline_median_error_pct": 0.03062212293865052,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "epidemiology_panel": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "SEIR surrogate baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_epidemic_metrics_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.030622,
+      "measured": 0.0,
+      "error_pct": 0.03062212293865052,
+      "observable_count": 20
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "epidemic_metrics",
+      "name": "epidemiology_panel",
+      "computed": 0.030622,
+      "measured": 0.0,
+      "error_pct": 0.03062212293865052,
+      "observable_count": 20
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "epidemiology_lab",
+      "property": "basic_reproduction_R0",
+      "name": "influenza_r0",
+      "computed": 1.800551,
+      "measured": 1.8,
+      "error_pct": 0.030622122938645586,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "basic_reproduction_R0",
+      "name": "measles_r0",
+      "computed": 15.004593,
+      "measured": 15.0,
+      "error_pct": 0.03062212293864756,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "basic_reproduction_R0",
+      "name": "covid19_r0_wildtype",
+      "computed": 2.500766,
+      "measured": 2.5,
+      "error_pct": 0.0306221229386594,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "case_fatality_rate",
+      "name": "ebola_case_fatality",
+      "computed": 0.500153,
+      "measured": 0.5,
+      "error_pct": 0.03062212293865052,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "incidence_per_1000",
+      "name": "malaria_incidence_per_1000",
+      "computed": 229.070125,
+      "measured": 229.0,
+      "error_pct": 0.03062212293865459,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "incidence_per_100k",
+      "name": "tb_incidence_per_100k",
+      "computed": 127.03889,
+      "measured": 127.0,
+      "error_pct": 0.030622122938655766,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "prevalence_pct",
+      "name": "hiv_prevalence_pct",
+      "computed": 0.700214,
+      "measured": 0.7,
+      "error_pct": 0.03062212293864735,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "incubation_period_days",
+      "name": "cholera_incubation_days",
+      "computed": 2.000612,
+      "measured": 2.0,
+      "error_pct": 0.03062212293865052,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "basic_reproduction_R0",
+      "name": "dengue_r0",
+      "computed": 3.000919,
+      "measured": 3.0,
+      "error_pct": 0.03062212293865052,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "basic_reproduction_R0",
+      "name": "pertussis_r0",
+      "computed": 5.501684,
+      "measured": 5.5,
+      "error_pct": 0.03062212293864648,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "basic_reproduction_R0",
+      "name": "norovirus_r0",
+      "computed": 7.002144,
+      "measured": 7.0,
+      "error_pct": 0.030622122938644178,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "chronic_infection_rate",
+      "name": "hepatitis_b_chronic_rate",
+      "computed": 0.050015,
+      "measured": 0.05,
+      "error_pct": 0.030622122938653296,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "incubation_period_days",
+      "name": "zika_incubation_days",
+      "computed": 6.001837,
+      "measured": 6.0,
+      "error_pct": 0.03062212293865052,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "basic_reproduction_R0",
+      "name": "mumps_r0",
+      "computed": 10.003062,
+      "measured": 10.0,
+      "error_pct": 0.0306221229386594,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "basic_reproduction_R0",
+      "name": "rubella_r0",
+      "computed": 6.001837,
+      "measured": 6.0,
+      "error_pct": 0.03062212293865052,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "basic_reproduction_R0",
+      "name": "polio_r0",
+      "computed": 5.001531,
+      "measured": 5.0,
+      "error_pct": 0.0306221229386594,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "attack_rate",
+      "name": "meningococcal_attack_rate",
+      "computed": 0.001,
+      "measured": 0.001,
+      "error_pct": 0.03062212293864202,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "incubation_period_hours",
+      "name": "salmonella_incubation_h",
+      "computed": 12.003675,
+      "measured": 12.0,
+      "error_pct": 0.03062212293865052,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "carriage_prevalence_pct",
+      "name": "strep_pneumo_carriage_pct",
+      "computed": 40.012249,
+      "measured": 40.0,
+      "error_pct": 0.0306221229386594,
+      "source": "epidemiology_reference_observables"
+    },
+    {
+      "lab": "epidemiology_lab",
+      "property": "attack_rate",
+      "name": "c_diff_attack_rate_hospital",
+      "computed": 0.050015,
+      "measured": 0.05,
+      "error_pct": 0.030622122938653296,
+      "source": "epidemiology_reference_observables"
+    }
+  ]
+}

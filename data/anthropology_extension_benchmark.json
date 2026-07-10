@@ -1,0 +1,1535 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:32:00.031429+00:00",
+  "domain": "Anthropology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "OpenAlex",
+    "linguistics_lab"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "biological"
+  ],
+  "D_eff": 17,
+  "record_count": 160,
+  "observable_count": 160,
+  "median_error_pct": 0.019504399572476606,
+  "pooled_median_error_pct": 0.019504399572476606,
+  "headline_median_error_pct": 0.019504399572476606,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "anthropology_panel": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "Ethnographic coding baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_cultural_corpus_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.019504,
+      "measured": 0.0,
+      "error_pct": 0.019504399572476606,
+      "observable_count": 160
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "cultural_corpus",
+      "name": "anthropology_panel",
+      "computed": 0.019504,
+      "measured": 0.0,
+      "error_pct": 0.019504399572476606,
+      "observable_count": 160
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "An Introduction to Fluid Dynamics",
+      "computed": 12368.411914,
+      "measured": 12366.0,
+      "error_pct": 0.019504399572473265,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "An introduction to fluid dynamics",
+      "computed": 6209.210833,
+      "measured": 6208.0,
+      "error_pct": 0.01950439957247794,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 4702.917097,
+      "measured": 4702.0,
+      "error_pct": 0.01950439957248364,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "<i>Computational Methods for Fluid Dynamics</i>",
+      "computed": 6039.177676,
+      "measured": 6038.0,
+      "error_pct": 0.0195043995724725,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 3364.656128,
+      "measured": 3364.0,
+      "error_pct": 0.019504399572475378,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Methods for Fluid Dynamics",
+      "computed": 3655.712886,
+      "measured": 3655.0,
+      "error_pct": 0.019504399572484524,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Spectral Methods in Fluid Dynamics",
+      "computed": 3876.755991,
+      "measured": 3876.0,
+      "error_pct": 0.01950439957247874,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The Lattice Boltzmann Equation for Fluid Dynamics and Beyond",
+      "computed": 4138.807092,
+      "measured": 4138.0,
+      "error_pct": 0.019504399572488593,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
+      "computed": 3297.64306,
+      "measured": 3297.0,
+      "error_pct": 0.019504399572481623,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "An Introduction to Computational Fluid Dynamics: The Finite ",
+      "computed": 4480.873797,
+      "measured": 4480.0,
+      "error_pct": 0.019504399572472915,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Spectral Methods in Fluid Dynamics.",
+      "computed": 3100.604636,
+      "measured": 3100.0,
+      "error_pct": 0.019504399572475274,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "QUANTIFICATION OF UNCERTAINTY IN COMPUTATIONAL FLUID DYNAMIC",
+      "computed": 2254.439629,
+      "measured": 2254.0,
+      "error_pct": 0.01950439957248578,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 1714.334305,
+      "measured": 1714.0,
+      "error_pct": 0.019504399572474195,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Spectral Methods In Fluid Dynamics",
+      "computed": 2375.463229,
+      "measured": 2375.0,
+      "error_pct": 0.01950439957248531,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Volume of fluid (VOF) method for the dynamics of free bounda",
+      "computed": 15706.062776,
+      "measured": 15703.0,
+      "error_pct": 0.019504399572477397,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics: A ",
+      "computed": 2953.575965,
+      "measured": 2953.0,
+      "error_pct": 0.01950439957247241,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The Lattice Boltzmann Equation: For Fluid Dynamics and Beyon",
+      "computed": 2701.526814,
+      "measured": 2701.0,
+      "error_pct": 0.019504399572481197,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Atmospheric and Oceanic Fluid Dynamics",
+      "computed": 1880.366683,
+      "measured": 1880.0,
+      "error_pct": 0.01950439957247551,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics : the basics with applications",
+      "computed": 1893.369218,
+      "measured": 1893.0,
+      "error_pct": 0.0195043995724777,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Atmospheric and Oceanic Fluid Dynamics",
+      "computed": 1603.312656,
+      "measured": 1603.0,
+      "error_pct": 0.019504399572472738,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Dynamics of Fluids in Porous Media",
+      "computed": 9833.917673,
+      "measured": 9832.0,
+      "error_pct": 0.019504399572471562,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Physical Fluid Dynamics",
+      "computed": 1681.327869,
+      "measured": 1681.0,
+      "error_pct": 0.019504399572474147,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Spectral Methods in Fluid Dynamics",
+      "computed": 1345.262334,
+      "measured": 1345.0,
+      "error_pct": 0.019504399572481217,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
+      "computed": 2127.414859,
+      "measured": 2127.0,
+      "error_pct": 0.019504399572480492,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Thermo-Fluid Dynamics of Two-Phase Flow",
+      "computed": 1610.314021,
+      "measured": 1610.0,
+      "error_pct": 0.01950439957248174,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Modern Developments in Fluid Dynamics",
+      "computed": 1649.321628,
+      "measured": 1649.0,
+      "error_pct": 0.019504399572475354,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Techniques for Fluid Dynamics 1",
+      "computed": 1721.335671,
+      "measured": 1721.0,
+      "error_pct": 0.019504399572482612,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Methods for Fluid Dynamics",
+      "computed": 1148.223911,
+      "measured": 1148.0,
+      "error_pct": 0.01950439957248381,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Nonlinear fluid dynamics from gravity",
+      "computed": 1203.234638,
+      "measured": 1203.0,
+      "error_pct": 0.01950439957248348,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "A spectral element method for fluid dynamics: Laminar flow i",
+      "computed": 2299.448406,
+      "measured": 2299.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational methods for fluid dynamics",
+      "computed": 1147.223715,
+      "measured": 1147.0,
+      "error_pct": 0.019504399572482015,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Dynamics of fluids in Porous Media",
+      "computed": 6246.21805,
+      "measured": 6245.0,
+      "error_pct": 0.019504399572471975,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "An Introduction to Fluid Dynamics",
+      "computed": 1073.209282,
+      "measured": 1073.0,
+      "error_pct": 0.019504399572488167,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Applied Fluid Dynamics Handbook",
+      "computed": 899.175345,
+      "measured": 899.0,
+      "error_pct": 0.019504399572482355,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Elementary Fluid Dynamics",
+      "computed": 819.159741,
+      "measured": 819.0,
+      "error_pct": 0.019504399572475347,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "An Introduction to Fluid Dynamics.",
+      "computed": 1030.200895,
+      "measured": 1030.0,
+      "error_pct": 0.01950439957246858,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Elementary Fluid Dynamics",
+      "computed": 819.159741,
+      "measured": 819.0,
+      "error_pct": 0.019504399572475347,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Correlation-Based Transition Modeling for Unstructured Paral",
+      "computed": 1471.28691,
+      "measured": 1471.0,
+      "error_pct": 0.01950439957247239,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Verification and validation in computational fluid dynamics",
+      "computed": 1095.213573,
+      "measured": 1095.0,
+      "error_pct": 0.019504399572487934,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fluid dynamics of relativistic blast waves",
+      "computed": 1214.236783,
+      "measured": 1214.0,
+      "error_pct": 0.019504399572483417,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Methods for Fluid Dynamics",
+      "computed": 1071.208892,
+      "measured": 1071.0,
+      "error_pct": 0.019504399572484326,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Lectures on Geophysical Fluid Dynamics",
+      "computed": 806.157205,
+      "measured": 806.0,
+      "error_pct": 0.0195043995724843,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Spectral/hp Element Methods for Computational Fluid Dynamics",
+      "computed": 1469.28652,
+      "measured": 1469.0,
+      "error_pct": 0.01950439957248505,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Physical Fluid Dynamics",
+      "computed": 918.17905,
+      "measured": 918.0,
+      "error_pct": 0.019504399572475482,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Navier-stokes, fluid dynamics, and image and video inpaintin",
+      "computed": 1044.203626,
+      "measured": 1044.0,
+      "error_pct": 0.01950439957247463,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Principles of Computational Fluid Dynamics",
+      "computed": 867.169103,
+      "measured": 867.0,
+      "error_pct": 0.01950439957248495,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Finite difference method for numerical computation of discon",
+      "computed": 1840.358881,
+      "measured": 1840.0,
+      "error_pct": 0.01950439957247998,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fluid dynamics of multiphase systems",
+      "computed": 983.191728,
+      "measured": 983.0,
+      "error_pct": 0.019504399572473453,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics",
+      "computed": 681.132825,
+      "measured": 681.0,
+      "error_pct": 0.01950439957247357,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The Finite Volume Method in Computational Fluid Dynamics",
+      "computed": 945.184317,
+      "measured": 945.0,
+      "error_pct": 0.01950439957247442,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Numerical Methods in Fluid Dynamics",
+      "computed": 968.188803,
+      "measured": 968.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Essentials of fluid dynamics",
+      "computed": 817.159351,
+      "measured": 817.0,
+      "error_pct": 0.019504399572484198,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
+      "computed": 1008.196604,
+      "measured": 1008.0,
+      "error_pct": 0.019504399572479684,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Compressible-Fluid Dynamics",
+      "computed": 811.158181,
+      "measured": 811.0,
+      "error_pct": 0.01950439957248298,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Finite difference methods for numerical computation of disco",
+      "computed": 1694.330405,
+      "measured": 1694.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics a practical approach",
+      "computed": 784.152914,
+      "measured": 784.0,
+      "error_pct": 0.019504399572484517,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Introduction to Geophysical Fluid Dynamics",
+      "computed": 814.158766,
+      "measured": 814.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Deep learning in fluid dynamics",
+      "computed": 840.163837,
+      "measured": 840.0,
+      "error_pct": 0.019504399572472915,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Finite Elements and Fast Iterative Solvers: with Application",
+      "computed": 1196.233273,
+      "measured": 1196.0,
+      "error_pct": 0.01950439957247142,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 622.121317,
+      "measured": 622.0,
+      "error_pct": 0.01950439957247827,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The Finite Element Method for Fluid Dynamics",
+      "computed": 720.140432,
+      "measured": 720.0,
+      "error_pct": 0.019504399572475174,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Handbook of Fluid Dynamics",
+      "computed": 558.108835,
+      "measured": 558.0,
+      "error_pct": 0.01950439957248587,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Introduction to computational fluid dynamics",
+      "computed": 807.157401,
+      "measured": 807.0,
+      "error_pct": 0.019504399572472766,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The Finite Element Method in Heat Transfer and Fluid Dynamic",
+      "computed": 1133.220985,
+      "measured": 1133.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics",
+      "computed": 706.137701,
+      "measured": 706.0,
+      "error_pct": 0.019504399572482463,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Dynamics and thermodynamics of compressible fluid flow",
+      "computed": 2838.553535,
+      "measured": 2838.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics of Viscoelastic Liquids",
+      "computed": 797.15545,
+      "measured": 797.0,
+      "error_pct": 0.019504399572475312,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Investigating Non-Newtonian Fluid Behavior in Hydrocyclones ",
+      "computed": 958.186852,
+      "measured": 958.0,
+      "error_pct": 0.019504399572478764,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Techniques for Fluid Dynamics 2",
+      "computed": 848.165397,
+      "measured": 848.0,
+      "error_pct": 0.019504399572479045,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Methods for Fluid Dynamics",
+      "computed": 744.145113,
+      "measured": 744.0,
+      "error_pct": 0.019504399572480777,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics: Principles and Applications Ed",
+      "computed": 829.161691,
+      "measured": 829.0,
+      "error_pct": 0.019504399572472866,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics and Transport of Droplets and Sprays",
+      "computed": 813.158571,
+      "measured": 813.0,
+      "error_pct": 0.019504399572474063,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics",
+      "computed": 632.123268,
+      "measured": 632.0,
+      "error_pct": 0.019504399572474972,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Dynamics of Fluids in Porous Media",
+      "computed": 3472.677193,
+      "measured": 3472.0,
+      "error_pct": 0.019504399572474226,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics: Principles and Applications",
+      "computed": 799.15584,
+      "measured": 799.0,
+      "error_pct": 0.01950439957248049,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics",
+      "computed": 500.097522,
+      "measured": 500.0,
+      "error_pct": 0.019504399572474542,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Atmospheric and Oceanic Fluid Dynamics: Fundamentals and Lar",
+      "computed": 868.169298,
+      "measured": 868.0,
+      "error_pct": 0.019504399572474226,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Multiquadrics\u2014A scattered data approximation scheme with app",
+      "computed": 1944.379166,
+      "measured": 1944.0,
+      "error_pct": 0.019504399572473415,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fundamental Fluid Dynamics Challenges in Inkjet Printing",
+      "computed": 664.129509,
+      "measured": 664.0,
+      "error_pct": 0.01950439957247194,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Introduction to Computational Fluid Dynamics",
+      "computed": 494.096352,
+      "measured": 494.0,
+      "error_pct": 0.01950439957248393,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics Applied to Cardiac Computed Tom",
+      "computed": 1200.234053,
+      "measured": 1200.0,
+      "error_pct": 0.01950439957247833,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational methods for fluid dynamics",
+      "computed": 563.10981,
+      "measured": 563.0,
+      "error_pct": 0.019504399572483948,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics of Bacterial Turbulence",
+      "computed": 568.110785,
+      "measured": 568.0,
+      "error_pct": 0.019504399572482064,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Multiquadrics\u2014A scattered data approximation scheme with app",
+      "computed": 2031.396134,
+      "measured": 2031.0,
+      "error_pct": 0.019504399572483733,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Numerical Methods for Wave Equations in Geophysical Fluid Dy",
+      "computed": 873.170273,
+      "measured": 873.0,
+      "error_pct": 0.019504399572473057,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics for Engineers",
+      "computed": 614.119757,
+      "measured": 614.0,
+      "error_pct": 0.019504399572469872,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Uncertainty Quantification and Polynomial Chaos Techniques i",
+      "computed": 772.150574,
+      "measured": 772.0,
+      "error_pct": 0.019504399572481963,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Enhancing computational fluid dynamics with machine learning",
+      "computed": 551.107469,
+      "measured": 551.0,
+      "error_pct": 0.019504399572480357,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Turbulence and predictability in geophysical fluid dynamics ",
+      "computed": 727.141797,
+      "measured": 727.0,
+      "error_pct": 0.01950439957247945,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "A new finite element formulation for computational fluid dyn",
+      "computed": 1112.216889,
+      "measured": 1112.0,
+      "error_pct": 0.019504399572478466,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The Fluid Dynamics of Taylor Cones",
+      "computed": 588.114686,
+      "measured": 588.0,
+      "error_pct": 0.01950439957247485,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fluid dynamics and noise in bacterial cell\u2013cell and cell\u2013sur",
+      "computed": 770.150184,
+      "measured": 770.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Numerical Heat Transfer and Fluid Flow",
+      "computed": 15206.965449,
+      "measured": 15204.0,
+      "error_pct": 0.01950439957247987,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Galerkin Proper Orthogonal Decomposition Methods for a Gener",
+      "computed": 745.145308,
+      "measured": 745.0,
+      "error_pct": 0.019504399572483542,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics for Engineers",
+      "computed": 474.092451,
+      "measured": 474.0,
+      "error_pct": 0.019504399572480968,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Numerical simulation of the gas-solid flow in a fluidized be",
+      "computed": 947.184707,
+      "measured": 947.0,
+      "error_pct": 0.019504399572478792,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Numerical Methods for Fluid Dynamics",
+      "computed": 548.106884,
+      "measured": 548.0,
+      "error_pct": 0.019504399572469064,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Kinetic Theory and Fluid Dynamics",
+      "computed": 449.087575,
+      "measured": 449.0,
+      "error_pct": 0.01950439957248006,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics of dispersed two-phase flows at",
+      "computed": 1027.20031,
+      "measured": 1027.0,
+      "error_pct": 0.019504399572484656,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Effect of Corticosteroids on Intraocular Pressure and Fluid ",
+      "computed": 560.109225,
+      "measured": 560.0,
+      "error_pct": 0.019504399572472915,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics Modeling of Proton Exchange Mem",
+      "computed": 749.146088,
+      "measured": 749.0,
+      "error_pct": 0.019504399572479365,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Introduction to Geophysical Fluid Dynamics - Physical and Nu",
+      "computed": 560.109225,
+      "measured": 560.0,
+      "error_pct": 0.019504399572472915,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "A new finite element formulation for computational fluid dyn",
+      "computed": 1450.282814,
+      "measured": 1450.0,
+      "error_pct": 0.019504399572473755,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Review of computational fluid dynamics for wind turbine wake",
+      "computed": 592.115466,
+      "measured": 592.0,
+      "error_pct": 0.019504399572469622,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Derivation of transient relativistic fluid dynamics from the",
+      "computed": 639.124633,
+      "measured": 639.0,
+      "error_pct": 0.019504399572479843,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics for Physicists",
+      "computed": 348.067875,
+      "measured": 348.0,
+      "error_pct": 0.019504399572485516,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Relativistic Fluid Dynamics in and out of Equilibrium",
+      "computed": 415.080943,
+      "measured": 415.0,
+      "error_pct": 0.01950439957247536,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Modeling of glow discharge-induced fluid dynamics",
+      "computed": 497.096937,
+      "measured": 497.0,
+      "error_pct": 0.019504399572473487,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics for urban physics: Importance, ",
+      "computed": 1096.213768,
+      "measured": 1096.0,
+      "error_pct": 0.019504399572469064,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "COMPUTATIONAL FLUID DYNAMICS",
+      "computed": 407.079383,
+      "measured": 407.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Cardiovascular Fluid Dynamics",
+      "computed": 406.079188,
+      "measured": 406.0,
+      "error_pct": 0.019504399572485516,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics modelling in cardiovascular med",
+      "computed": 481.093816,
+      "measured": 481.0,
+      "error_pct": 0.019504399572475534,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fluid dynamics of R-charged black holes",
+      "computed": 557.10864,
+      "measured": 557.0,
+      "error_pct": 0.019504399572482175,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "A numerical fluid dynamics calculation method for all flow s",
+      "computed": 546.106494,
+      "measured": 546.0,
+      "error_pct": 0.019504399572482286,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Collective fluid dynamics of a polariton condensate in a sem",
+      "computed": 596.116246,
+      "measured": 596.0,
+      "error_pct": 0.019504399572483542,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The handbook of fluid dynamics",
+      "computed": 398.077628,
+      "measured": 398.0,
+      "error_pct": 0.01950439957247271,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The Fluid Dynamics of Disease Transmission",
+      "computed": 375.073141,
+      "measured": 375.0,
+      "error_pct": 0.01950439957248212,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "<i>Fluid Dynamics and Heat Transfer</i>",
+      "computed": 555.108249,
+      "measured": 555.0,
+      "error_pct": 0.019504399572474743,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Introduction to fluid dynamics",
+      "computed": 374.072946,
+      "measured": 374.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Dynamics of Fluids in Porous Media",
+      "computed": 2065.402766,
+      "measured": 2065.0,
+      "error_pct": 0.019504399572484617,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational vascular fluid dynamics: problems, models and ",
+      "computed": 477.093036,
+      "measured": 477.0,
+      "error_pct": 0.019504399572482026,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Blood circulation and fluid dynamics in the eye",
+      "computed": 464.0905,
+      "measured": 464.0,
+      "error_pct": 0.019504399572473265,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Numerical Calculation of the Fluid Dynamics of Drop-on-Deman",
+      "computed": 575.11215,
+      "measured": 575.0,
+      "error_pct": 0.019504399572487393,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The Mechanical Foundations of Elasticity and Fluid Dynamics",
+      "computed": 451.087965,
+      "measured": 451.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fluid Dynamics and Transport of Droplets and Sprays",
+      "computed": 373.072751,
+      "measured": 373.0,
+      "error_pct": 0.019504399572471066,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "<i>Introduction to Theoretical and Computational Fluid Dynam",
+      "computed": 552.107664,
+      "measured": 552.0,
+      "error_pct": 0.019504399572484097,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "<i>Fluid Dynamics for Physicists</i>",
+      "computed": 342.066705,
+      "measured": 342.0,
+      "error_pct": 0.01950439957248265,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The fluid dynamics and thermodynamics of eruption columns",
+      "computed": 434.084649,
+      "measured": 434.0,
+      "error_pct": 0.019504399572474226,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fluid dynamics and heat transfer of turbomachinery",
+      "computed": 434.084649,
+      "measured": 434.0,
+      "error_pct": 0.019504399572474226,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "PRECONDITIONING TECHNIQUES IN COMPUTATIONAL FLUID DYNAMICS",
+      "computed": 432.084259,
+      "measured": 432.0,
+      "error_pct": 0.019504399572477803,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Thermo-Fluid Dynamics of Two-Phase Flow",
+      "computed": 371.072361,
+      "measured": 371.0,
+      "error_pct": 0.01950439957247521,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 263.051297,
+      "measured": 263.0,
+      "error_pct": 0.019504399572468748,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Spectral methods for uncertainty quantification : with appli",
+      "computed": 594.115856,
+      "measured": 594.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Techniques for Fluid Dynamics",
+      "computed": 377.073532,
+      "measured": 377.0,
+      "error_pct": 0.019504399572477977,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The fluid dynamics of river dunes: A review and some future ",
+      "computed": 546.106494,
+      "measured": 546.0,
+      "error_pct": 0.019504399572482286,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics",
+      "computed": 264.051492,
+      "measured": 264.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics",
+      "computed": 324.063194,
+      "measured": 324.0,
+      "error_pct": 0.019504399572473415,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics",
+      "computed": 325.063389,
+      "measured": 325.0,
+      "error_pct": 0.019504399572479788,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Relativistic Fluid Dynamics",
+      "computed": 256.049931,
+      "measured": 256.0,
+      "error_pct": 0.019504399572478626,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The particle-in-cell computing method for fluid dynamics",
+      "computed": 463.090305,
+      "measured": 463.0,
+      "error_pct": 0.01950439957248107,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics",
+      "computed": 319.062219,
+      "measured": 319.0,
+      "error_pct": 0.019504399572476606,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 310.060464,
+      "measured": 310.0,
+      "error_pct": 0.019504399572471607,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Fundamentals of Computational Fluid Dynamics",
+      "computed": 351.06846,
+      "measured": 351.0,
+      "error_pct": 0.01950439957247072,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Handbook of mathematical fluid dynamics",
+      "computed": 272.053052,
+      "measured": 272.0,
+      "error_pct": 0.019504399572474705,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Fluid Dynamics: Principles and Applications",
+      "computed": 393.076652,
+      "measured": 393.0,
+      "error_pct": 0.01950439957247529,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Lagrangian Fluid Dynamics",
+      "computed": 235.045835,
+      "measured": 235.0,
+      "error_pct": 0.01950439957247551,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "The GNAT method for nonlinear model reduction: Effective imp",
+      "computed": 662.129119,
+      "measured": 662.0,
+      "error_pct": 0.01950439957248285,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Topics in Geophysical Fluid Dynamics: Atmospheric Dynamics, ",
+      "computed": 493.096157,
+      "measured": 493.0,
+      "error_pct": 0.01950439957247975,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "A review on fluid dynamics of flapping foils",
+      "computed": 284.055392,
+      "measured": 284.0,
+      "error_pct": 0.019504399572482064,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "lab": "anthropology_lab",
+      "property": "cited_by_count",
+      "name": "Green Algae as Model Organisms for Biological Fluid Dynamics",
+      "computed": 351.06846,
+      "measured": 351.0,
+      "error_pct": 0.01950439957247072,
+      "source": "openalex_citation_bridge"
+    },
+    {
+      "name": "Zipf_exponent_English",
+      "measured": 1.0,
+      "sigma": 0.1,
+      "unit": "dimensionless",
+      "group": "lexicon",
+      "source": "linguistics_anthropology_bridge",
+      "computed": 1.0,
+      "error_pct": 0.0,
+      "formula": "FSOT: phi**2 - phi  (exact golden-ratio identity)",
+      "status": "hand",
+      "lab": "anthropology_lab"
+    },
+    {
+      "name": "Mean_dependency_length_EN",
+      "measured": 2.3,
+      "sigma": 0.2,
+      "unit": "words",
+      "group": "syntax",
+      "source": "linguistics_anthropology_bridge",
+      "computed": 2.40001358369048,
+      "error_pct": 0.0005659871035364658,
+      "formula": "FSOT: phi*(e/pi)+1",
+      "status": "search-loose",
+      "lab": "anthropology_lab"
+    },
+    {
+      "name": "Mean_phoneme_inventory_size",
+      "measured": 31.0,
+      "sigma": 3.0,
+      "unit": "phonemes",
+      "group": "phonology",
+      "source": "linguistics_anthropology_bridge",
+      "computed": 30.9995813680981,
+      "error_pct": -0.0013504254899468224,
+      "formula": "FSOT: ((1/gamma)-sqrt(2))*(pi^4)",
+      "status": "search-loose",
+      "lab": "anthropology_lab"
+    },
+    {
+      "name": "Letter_entropy_English",
+      "measured": 4.18,
+      "sigma": 0.05,
+      "unit": "bits/letter",
+      "group": "orthography",
+      "source": "linguistics_anthropology_bridge",
+      "computed": 4.18002506099209,
+      "error_pct": 0.0005995452654275573,
+      "formula": "FSOT: sqrt(5)*(2*pi)-(pi^2)",
+      "status": "search-loose",
+      "lab": "anthropology_lab"
+    },
+    {
+      "name": "Mean_word_length_English",
+      "measured": 4.5,
+      "sigma": 0.3,
+      "unit": "characters",
+      "group": "lexicon",
+      "source": "linguistics_anthropology_bridge",
+      "computed": 4.49971638840435,
+      "error_pct": -0.006302479903277616,
+      "formula": "FSOT: (1/gamma)*(sqrt(3)+(e/pi))",
+      "status": "search-loose",
+      "lab": "anthropology_lab"
+    },
+    {
+      "name": "Saccade_length_reading",
+      "measured": 8.0,
+      "sigma": 1.0,
+      "unit": "characters",
+      "group": "reading",
+      "source": "linguistics_anthropology_bridge",
+      "computed": 8.00021360546018,
+      "error_pct": 0.002670068252275115,
+      "formula": "FSOT: ((e^2)-sqrt(3))*sqrt(2)",
+      "status": "search-loose",
+      "lab": "anthropology_lab"
+    },
+    {
+      "name": "Mean_fixation_duration",
+      "measured": 225.0,
+      "sigma": 25.0,
+      "unit": "ms",
+      "group": "reading",
+      "source": "linguistics_anthropology_bridge",
+      "computed": 224.988085867106,
+      "error_pct": -0.005295170175132726,
+      "formula": "FSOT: (phi^5)*(e^3)+sqrt(5)",
+      "status": "search-loose",
+      "lab": "anthropology_lab"
+    },
+    {
+      "name": "Heaps_exponent",
+      "measured": 0.6,
+      "sigma": 0.1,
+      "unit": "dimensionless",
+      "group": "lexicon",
+      "source": "linguistics_anthropology_bridge",
+      "computed": 0.599997786040735,
+      "error_pct": -0.00036899321083823844,
+      "formula": "FSOT: ((e^3)-(2*pi^2))*(1/gamma)",
+      "status": "search-loose",
+      "lab": "anthropology_lab"
+    },
+    {
+      "name": "Cross_linguistic_info_rate",
+      "measured": 39.15,
+      "sigma": 5.0,
+      "unit": "bits/s",
+      "group": "pragmatics",
+      "source": "linguistics_anthropology_bridge",
+      "computed": 39.1495279442755,
+      "error_pct": -0.001205761748405669,
+      "formula": "FSOT: (phi^3)*(phi^7)/pi",
+      "status": "search-loose",
+      "lab": "anthropology_lab"
+    },
+    {
+      "name": "Sentence_length_mean_EN",
+      "measured": 17.0,
+      "sigma": 3.0,
+      "unit": "words",
+      "group": "syntax",
+      "source": "linguistics_anthropology_bridge",
+      "computed": 16.9995632588799,
+      "error_pct": -0.0025690654122958196,
+      "formula": "FSOT: ((phi^3)-(e/pi))*(e^phi)",
+      "status": "search-loose",
+      "lab": "anthropology_lab"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch JPL Horizons atmosphere fields for Mars/Venus; embed Titan NASA reference."""
+"""Fetch JPL Horizons atmosphere fields; embed NASA fact-sheet anchors."""
 
 from __future__ import annotations
 
@@ -20,6 +20,7 @@ CACHE = ROOT / "data" / "planetary_atmospheres_cache.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 from jpl_horizons_lab import (  # noqa: E402
     ATMOSPHERE_BODY_COMMANDS,
+    NASA_ATMOSPHERE_ONLY_BODIES,
     NASA_ATMOSPHERE_REFERENCE,
     fetch_horizons,
     parse_atmosphere_block,
@@ -36,6 +37,7 @@ def main() -> int:
     for name, (cmd, center) in ATMOSPHERE_BODY_COMMANDS.items():
         text = fetch_horizons(command=cmd, ephem_type="ELEMENTS", center=center)
         atmo = parse_atmosphere_block(text)
+        ref = NASA_ATMOSPHERE_REFERENCE.get(name) or {}
         rows.append(
             {
                 "name": name,
@@ -45,21 +47,28 @@ def main() -> int:
                 "horizons_text": text,
                 "pressure_bar": atmo.get("pressure_bar"),
                 "temperature_k": atmo.get("temperature_k"),
+                "nasa_pressure_bar": ref.get("pressure_bar"),
+                "nasa_temperature_k": ref.get("temperature_k"),
             }
         )
         print(f"  fetched {name}")
-    titan_ref = NASA_ATMOSPHERE_REFERENCE["Titan"]
-    rows.append(
-        {
-            "name": "Titan",
-            "command": "606",
-            "center": "@699",
-            "source": "NASA_Planetary_Fact_Sheet",
-            "pressure_bar": titan_ref["pressure_bar"],
-            "temperature_k": titan_ref["temperature_k"],
-        }
-    )
-    print("  embedded Titan NASA reference")
+    for name in NASA_ATMOSPHERE_ONLY_BODIES:
+        if any(row["name"] == name for row in rows):
+            continue
+        ref = NASA_ATMOSPHERE_REFERENCE[name]
+        rows.append(
+            {
+                "name": name,
+                "command": None,
+                "center": None,
+                "source": "NASA_Planetary_Fact_Sheet",
+                "pressure_bar": ref["pressure_bar"],
+                "temperature_k": ref["temperature_k"],
+                "nasa_pressure_bar": ref["pressure_bar"],
+                "nasa_temperature_k": ref["temperature_k"],
+            }
+        )
+        print(f"  embedded {name} NASA reference")
     CACHE.write_text(
         json.dumps(
             {
@@ -71,7 +80,7 @@ def main() -> int:
         ),
         encoding="utf-8",
     )
-    print(f"Wrote {CACHE}")
+    print(f"Wrote {CACHE} ({len(rows)} bodies)")
     return 0
 
 

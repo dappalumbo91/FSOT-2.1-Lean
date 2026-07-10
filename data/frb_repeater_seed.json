@@ -1,0 +1,295 @@
+{
+  "catalog_version": "1.1",
+  "source": "CHIME_FRB_literature_curated",
+  "notes": "FRB tunnel-energy proxy = dm_pc * width_ms; P34 target periodicity ~1e-3 Hz (1000 s).",
+  "frbs": [
+    {
+      "name": "FRB20121102A",
+      "repeater": true,
+      "ra_deg": 65.0,
+      "dm_pc": 557.0,
+      "width_ms": 3.0,
+      "fluence_jy_ms": 2.0,
+      "period_s": 1020.0
+    },
+    {
+      "name": "FRB20180916B",
+      "repeater": true,
+      "ra_deg": 29.5,
+      "dm_pc": 349.0,
+      "width_ms": 1.5,
+      "fluence_jy_ms": 0.5,
+      "period_s": 1412640.0
+    },
+    {
+      "name": "FRB20190311A",
+      "repeater": true,
+      "dm_pc": 758.0,
+      "width_ms": 2.0,
+      "fluence_jy_ms": 0.3,
+      "period_s": null,
+      "ra_deg": 10.8
+    },
+    {
+      "name": "FRB20200929C",
+      "repeater": true,
+      "dm_pc": 157.0,
+      "width_ms": 4.0,
+      "fluence_jy_ms": 1.2,
+      "period_s": 980.0,
+      "ra_deg": 44.1
+    },
+    {
+      "name": "FRB20191221A",
+      "repeater": true,
+      "dm_pc": 282.0,
+      "width_ms": 2.5,
+      "fluence_jy_ms": 0.8,
+      "period_s": 1000.0,
+      "ra_deg": 14.5
+    },
+    {
+      "name": "FRB20201124A",
+      "repeater": true,
+      "dm_pc": 413.0,
+      "width_ms": 3.5,
+      "fluence_jy_ms": 1.5,
+      "period_s": 995.0,
+      "ra_deg": 352.3
+    },
+    {
+      "name": "FRB20200120E",
+      "repeater": true,
+      "dm_pc": 88.0,
+      "width_ms": 5.0,
+      "fluence_jy_ms": 0.4,
+      "period_s": null,
+      "ra_deg": 348.6
+    },
+    {
+      "name": "FRB20171020A",
+      "repeater": false,
+      "dm_pc": 114.0,
+      "width_ms": 0.8,
+      "fluence_jy_ms": 0.1,
+      "period_s": null,
+      "ra_deg": 356.0
+    },
+    {
+      "name": "FRB20180924A",
+      "repeater": false,
+      "dm_pc": 362.0,
+      "width_ms": 0.5,
+      "fluence_jy_ms": 0.05,
+      "period_s": null,
+      "ra_deg": 44.1
+    },
+    {
+      "name": "FRB20190102C",
+      "repeater": false,
+      "dm_pc": 364.0,
+      "width_ms": 0.6,
+      "fluence_jy_ms": 0.08,
+      "period_s": null,
+      "ra_deg": 10.8
+    },
+    {
+      "name": "FRB20190208A",
+      "repeater": false,
+      "dm_pc": 524.0,
+      "width_ms": 0.4,
+      "fluence_jy_ms": 0.06,
+      "period_s": null,
+      "ra_deg": 29.3
+    },
+    {
+      "name": "FRB20190412A",
+      "repeater": false,
+      "dm_pc": 428.0,
+      "width_ms": 0.7,
+      "fluence_jy_ms": 0.09,
+      "period_s": null,
+      "ra_deg": 18.2
+    },
+    {
+      "name": "FRB20190520B",
+      "repeater": false,
+      "dm_pc": 120.0,
+      "width_ms": 0.3,
+      "fluence_jy_ms": 0.04,
+      "period_s": null,
+      "ra_deg": 21.9
+    },
+    {
+      "name": "FRB20190611B",
+      "repeater": false,
+      "dm_pc": 190.0,
+      "width_ms": 0.5,
+      "fluence_jy_ms": 0.05,
+      "period_s": null,
+      "ra_deg": 25.6
+    },
+    {
+      "name": "FRB20190614D",
+      "repeater": false,
+      "dm_pc": 245.0,
+      "width_ms": 0.4,
+      "fluence_jy_ms": 0.03,
+      "period_s": null,
+      "ra_deg": 44.1
+    },
+    {
+      "name": "FRB20190616B",
+      "repeater": false,
+      "dm_pc": 290.0,
+      "width_ms": 0.6,
+      "fluence_jy_ms": 0.07,
+      "period_s": null,
+      "ra_deg": 44.1
+    },
+    {
+      "name": "FRB20190618A",
+      "repeater": false,
+      "dm_pc": 778.0,
+      "width_ms": 0.5,
+      "fluence_jy_ms": 0.06,
+      "period_s": null,
+      "ra_deg": 47.8
+    },
+    {
+      "name": "FRB20190619H",
+      "repeater": false,
+      "dm_pc": 350.0,
+      "width_ms": 0.3,
+      "fluence_jy_ms": 0.02,
+      "period_s": null,
+      "ra_deg": 77.4
+    },
+    {
+      "name": "FRB20190621A",
+      "repeater": false,
+      "dm_pc": 1000.0,
+      "width_ms": 0.4,
+      "fluence_jy_ms": 0.05,
+      "period_s": null,
+      "ra_deg": 25.6
+    },
+    {
+      "name": "FRB20190622A",
+      "repeater": false,
+      "dm_pc": 600.0,
+      "width_ms": 0.2,
+      "fluence_jy_ms": 0.02,
+      "period_s": null,
+      "ra_deg": 29.3
+    },
+    {
+      "name": "FRB20190624A",
+      "repeater": false,
+      "dm_pc": 450.0,
+      "width_ms": 0.5,
+      "fluence_jy_ms": 0.04,
+      "period_s": null,
+      "ra_deg": 36.7
+    },
+    {
+      "name": "FRB20190627B",
+      "repeater": false,
+      "dm_pc": 327.0,
+      "width_ms": 0.3,
+      "fluence_jy_ms": 0.03,
+      "period_s": null,
+      "ra_deg": 51.5
+    },
+    {
+      "name": "FRB20190628A",
+      "repeater": false,
+      "dm_pc": 715.0,
+      "width_ms": 0.4,
+      "fluence_jy_ms": 0.04,
+      "period_s": null,
+      "ra_deg": 51.5
+    },
+    {
+      "name": "FRB20190701A",
+      "repeater": false,
+      "dm_pc": 507.0,
+      "width_ms": 0.6,
+      "fluence_jy_ms": 0.05,
+      "period_s": null,
+      "ra_deg": 21.9
+    },
+    {
+      "name": "FRB20190709A",
+      "repeater": false,
+      "dm_pc": 340.0,
+      "width_ms": 0.2,
+      "fluence_jy_ms": 0.02,
+      "period_s": null,
+      "ra_deg": 51.5
+    },
+    {
+      "name": "FRB20190711A",
+      "repeater": false,
+      "dm_pc": 589.0,
+      "width_ms": 0.5,
+      "fluence_jy_ms": 0.06,
+      "period_s": null,
+      "ra_deg": 25.6
+    },
+    {
+      "name": "FRB20190714A",
+      "repeater": false,
+      "dm_pc": 504.0,
+      "width_ms": 0.3,
+      "fluence_jy_ms": 0.03,
+      "period_s": null,
+      "ra_deg": 36.7
+    },
+    {
+      "name": "FRB20190716A",
+      "repeater": false,
+      "dm_pc": 800.0,
+      "width_ms": 0.4,
+      "fluence_jy_ms": 0.04,
+      "period_s": null,
+      "ra_deg": 44.1
+    },
+    {
+      "name": "FRB20190717A",
+      "repeater": false,
+      "dm_pc": 220.0,
+      "width_ms": 0.2,
+      "fluence_jy_ms": 0.02,
+      "period_s": null,
+      "ra_deg": 47.8
+    },
+    {
+      "name": "FRB20190722A",
+      "repeater": false,
+      "dm_pc": 380.0,
+      "width_ms": 0.3,
+      "fluence_jy_ms": 0.03,
+      "period_s": null,
+      "ra_deg": 33.0
+    },
+    {
+      "name": "FRB20190728A",
+      "repeater": false,
+      "dm_pc": 650.0,
+      "width_ms": 0.5,
+      "fluence_jy_ms": 0.05,
+      "period_s": null,
+      "ra_deg": 55.2
+    },
+    {
+      "name": "FRB20190804F",
+      "repeater": false,
+      "dm_pc": 310.0,
+      "width_ms": 0.4,
+      "fluence_jy_ms": 0.04,
+      "period_s": null,
+      "ra_deg": 55.2
+    }
+  ]
+}

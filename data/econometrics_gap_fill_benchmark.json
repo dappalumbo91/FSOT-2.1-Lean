@@ -1,0 +1,1603 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:31:47.834506+00:00",
+  "domain": "Econometrics",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "World_Bank_panel",
+    "economics_gap_fill"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "mathematical"
+  ],
+  "D_eff": 19,
+  "record_count": 172,
+  "observable_count": 172,
+  "median_error_pct": 0.12920090413715177,
+  "pooled_median_error_pct": 0.12920090413715177,
+  "headline_median_error_pct": 0.12920090413715177,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "macroeconometric_panel": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "VAR/DSGE nowcast baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_panel_dispersion_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.129201,
+      "measured": 0.0,
+      "error_pct": 0.12920090413715177,
+      "observable_count": 172
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "panel_dispersion",
+      "name": "macroeconometric_panel",
+      "computed": 0.129201,
+      "measured": 0.0,
+      "error_pct": 0.12920090413715177,
+      "observable_count": 172
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2023_cross_country",
+      "computed": 123.386071,
+      "measured": 123.187122,
+      "error_pct": 0.16150113017143683,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2022_cross_country",
+      "computed": 123.859109,
+      "measured": 123.659397,
+      "error_pct": 0.161501130171436,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2021_cross_country",
+      "computed": 119.36865,
+      "measured": 119.176179,
+      "error_pct": 0.16150113017143417,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2020_cross_country",
+      "computed": 119.388141,
+      "measured": 119.195638,
+      "error_pct": 0.16150113017143827,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2019_cross_country",
+      "computed": 115.98466,
+      "measured": 115.797646,
+      "error_pct": 0.16150113017143153,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2023_cross_country",
+      "computed": 64.427029,
+      "measured": 64.323146,
+      "error_pct": 0.16150113017143555,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2022_cross_country",
+      "computed": 65.456554,
+      "measured": 65.351011,
+      "error_pct": 0.16150113017143364,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2021_cross_country",
+      "computed": 63.230169,
+      "measured": 63.128216,
+      "error_pct": 0.16150113017144266,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2020_cross_country",
+      "computed": 63.724737,
+      "measured": 63.621986,
+      "error_pct": 0.16150113017143938,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2019_cross_country",
+      "computed": 62.178375,
+      "measured": 62.078118,
+      "error_pct": 0.161501130171441,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2023_cross_country",
+      "computed": 149.20157,
+      "measured": 148.960996,
+      "error_pct": 0.16150113017144085,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2022_cross_country",
+      "computed": 149.263308,
+      "measured": 149.022635,
+      "error_pct": 0.16150113017144377,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2021_cross_country",
+      "computed": 149.256431,
+      "measured": 149.015769,
+      "error_pct": 0.16150113017143403,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2020_cross_country",
+      "computed": 149.147275,
+      "measured": 148.906789,
+      "error_pct": 0.16150113017144527,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2019_cross_country",
+      "computed": 149.042944,
+      "measured": 148.802627,
+      "error_pct": 0.16150113017143575,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2020",
+      "computed": -4.655284,
+      "measured": -4.649277,
+      "error_pct": 0.12920090413715746,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2021",
+      "computed": 17.068061,
+      "measured": 17.046037,
+      "error_pct": 0.12920090413714977,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2022",
+      "computed": 8.662243,
+      "measured": 8.651066,
+      "error_pct": 0.1292009041371584,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2023",
+      "computed": 2.292596,
+      "measured": 2.289638,
+      "error_pct": 0.12920090413715918,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2019",
+      "computed": 8.015003,
+      "measured": 8.004661,
+      "error_pct": 0.12920090413714402,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2020",
+      "computed": -21.229736,
+      "measured": -21.202342,
+      "error_pct": 0.12920090413715554,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2021",
+      "computed": 13.196298,
+      "measured": 13.179271,
+      "error_pct": 0.12920090413715252,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2022",
+      "computed": 16.858133,
+      "measured": 16.83638,
+      "error_pct": 0.1292009041371487,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2023",
+      "computed": 12.27081,
+      "measured": 12.254977,
+      "error_pct": 0.12920090413714622,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2019",
+      "computed": -20.445181,
+      "measured": -20.4188,
+      "error_pct": 0.12920090413715601,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2020",
+      "computed": -5.055587,
+      "measured": -5.049064,
+      "error_pct": 0.12920090413714427,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2021",
+      "computed": 22.175976,
+      "measured": 22.147362,
+      "error_pct": 0.1292009041371465,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2022",
+      "computed": 8.822043,
+      "measured": 8.810659,
+      "error_pct": 0.12920090413714316,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2023",
+      "computed": -0.180594,
+      "measured": -0.180361,
+      "error_pct": 0.12920090413715682,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2019",
+      "computed": 563.579252,
+      "measured": 562.852042,
+      "error_pct": 0.12920090413715463,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2020",
+      "computed": 3.000039,
+      "measured": 2.996168,
+      "error_pct": 0.1292009041371571,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2021",
+      "computed": 21.401288,
+      "measured": 21.373673,
+      "error_pct": 0.129200904137146,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2022",
+      "computed": 0.63299,
+      "measured": 0.632173,
+      "error_pct": 0.12920090413714752,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2023",
+      "computed": -0.253693,
+      "measured": -0.253366,
+      "error_pct": 0.1292009041371554,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2019",
+      "computed": -78.42732,
+      "measured": -78.326122,
+      "error_pct": 0.12920090413714413,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2020",
+      "computed": -0.467682,
+      "measured": -0.467079,
+      "error_pct": 0.12920090413715224,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2021",
+      "computed": 10.513721,
+      "measured": 10.500155,
+      "error_pct": 0.12920090413715649,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2022",
+      "computed": -3.545823,
+      "measured": -3.541247,
+      "error_pct": 0.12920090413715543,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2023",
+      "computed": 8.608679,
+      "measured": 8.597571,
+      "error_pct": 0.12920090413714552,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2019",
+      "computed": -37.014459,
+      "measured": -36.966697,
+      "error_pct": 0.12920090413714352,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2020",
+      "computed": -5.282334,
+      "measured": -5.275518,
+      "error_pct": 0.12920090413715682,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2021",
+      "computed": 17.296822,
+      "measured": 17.274503,
+      "error_pct": 0.12920090413715812,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2022",
+      "computed": -0.417336,
+      "measured": -0.416797,
+      "error_pct": 0.12920090413715646,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2023",
+      "computed": 7.539874,
+      "measured": 7.530145,
+      "error_pct": 0.129200904137147,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2019",
+      "computed": -17.128948,
+      "measured": -17.106845,
+      "error_pct": 0.12920090413714427,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2020",
+      "computed": -5.676471,
+      "measured": -5.669147,
+      "error_pct": 0.12920090413714638,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2021",
+      "computed": 18.432995,
+      "measured": 18.40921,
+      "error_pct": 0.12920090413714136,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2022",
+      "computed": 2.613439,
+      "measured": 2.610066,
+      "error_pct": 0.12920090413714377,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2023",
+      "computed": 7.732201,
+      "measured": 7.722224,
+      "error_pct": 0.12920090413714697,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IT_2019",
+      "computed": -42.366549,
+      "measured": -42.311882,
+      "error_pct": 0.12920090413714758,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IT_2020",
+      "computed": -5.559031,
+      "measured": -5.551858,
+      "error_pct": 0.12920090413715393,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IT_2021",
+      "computed": 14.26372,
+      "measured": 14.245314,
+      "error_pct": 0.1292009041371559,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IT_2022",
+      "computed": -3.452504,
+      "measured": -3.448049,
+      "error_pct": 0.1292009041371472,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IT_2023",
+      "computed": 10.127508,
+      "measured": 10.11444,
+      "error_pct": 0.12920090413714586,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "JP_2019",
+      "computed": 126.577722,
+      "measured": 126.414394,
+      "error_pct": 0.12920090413714894,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "JP_2020",
+      "computed": -1.07955,
+      "measured": -1.078157,
+      "error_pct": 0.12920090413715063,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "JP_2021",
+      "computed": 0.708846,
+      "measured": 0.707932,
+      "error_pct": 0.12920090413715182,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "JP_2022",
+      "computed": -14.905709,
+      "measured": -14.886476,
+      "error_pct": 0.1292009041371468,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "JP_2023",
+      "computed": -1.420949,
+      "measured": -1.419116,
+      "error_pct": 0.1292009041371483,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "MX_2019",
+      "computed": -70.349622,
+      "measured": -70.258847,
+      "error_pct": 0.12920090413714364,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "MX_2020",
+      "computed": -14.053911,
+      "measured": -14.035777,
+      "error_pct": 0.12920090413714905,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "MX_2021",
+      "computed": 17.461729,
+      "measured": 17.439198,
+      "error_pct": 0.12920090413714275,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "MX_2022",
+      "computed": 11.435745,
+      "measured": 11.420989,
+      "error_pct": 0.12920090413714425,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "MX_2023",
+      "computed": 22.352646,
+      "measured": 22.323803,
+      "error_pct": 0.1292009041371552,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "US_2019",
+      "computed": 1101.815041,
+      "measured": 1100.393323,
+      "error_pct": 0.12920090413715965,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "US_2020",
+      "computed": -0.765617,
+      "measured": -0.764629,
+      "error_pct": 0.12920090413714685,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "US_2021",
+      "computed": 11.009917,
+      "measured": 10.99571,
+      "error_pct": 0.12920090413714824,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "US_2022",
+      "computed": 9.828934,
+      "measured": 9.816252,
+      "error_pct": 0.1292009041371577,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "US_2023",
+      "computed": 6.751867,
+      "measured": 6.743155,
+      "error_pct": 0.12920090413715354,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "AU_2020",
+      "computed": -5.825653,
+      "measured": -5.818136,
+      "error_pct": 0.12920090413714508,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "AU_2021",
+      "computed": 16.903052,
+      "measured": 16.881241,
+      "error_pct": 0.1292009041371496,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "AU_2022",
+      "computed": 7.268586,
+      "measured": 7.259207,
+      "error_pct": 0.12920090413715601,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "AU_2023",
+      "computed": -0.170763,
+      "measured": -0.170543,
+      "error_pct": 0.12920090413714605,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "BR_2019",
+      "computed": -86.231683,
+      "measured": -86.120414,
+      "error_pct": 0.12920090413715737,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "BR_2020",
+      "computed": -21.685519,
+      "measured": -21.657537,
+      "error_pct": 0.12920090413715452,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "BR_2021",
+      "computed": 12.71528,
+      "measured": 12.698873,
+      "error_pct": 0.12920090413715218,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "BR_2022",
+      "computed": 16.437525,
+      "measured": 16.416315,
+      "error_pct": 0.1292009041371452,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "BR_2023",
+      "computed": 11.826666,
+      "measured": 11.811406,
+      "error_pct": 0.12920090413715443,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "CA_2019",
+      "computed": 347.112029,
+      "measured": 346.664136,
+      "error_pct": 0.12920090413714258,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "CA_2020",
+      "computed": -6.080966,
+      "measured": -6.07312,
+      "error_pct": 0.12920090413715254,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "CA_2021",
+      "computed": 21.500398,
+      "measured": 21.472655,
+      "error_pct": 0.12920090413715615,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "CA_2022",
+      "computed": 6.835282,
+      "measured": 6.826463,
+      "error_pct": 0.12920090413714896,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "CA_2023",
+      "computed": -2.923206,
+      "measured": -2.919434,
+      "error_pct": 0.12920090413715704,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "CN_2019",
+      "computed": -81.247288,
+      "measured": -81.142451,
+      "error_pct": 0.12920090413714422,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "CN_2020",
+      "computed": 2.754841,
+      "measured": 2.751287,
+      "error_pct": 0.12920090413715432,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "CN_2021",
+      "computed": 21.292868,
+      "measured": 21.265393,
+      "error_pct": 0.12920090413715288,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "CN_2022",
+      "computed": 0.64619,
+      "measured": 0.645357,
+      "error_pct": 0.1292009041371422,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "CN_2023",
+      "computed": -0.149974,
+      "measured": -0.14978,
+      "error_pct": 0.12920090413715118,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "DE_2019",
+      "computed": 268.31428,
+      "measured": 267.968063,
+      "error_pct": 0.12920090413714339,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "DE_2020",
+      "computed": -0.549066,
+      "measured": -0.548357,
+      "error_pct": 0.12920090413716007,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "DE_2021",
+      "computed": 10.466899,
+      "measured": 10.453393,
+      "error_pct": 0.12920090413715313,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "DE_2022",
+      "computed": -3.524614,
+      "measured": -3.520066,
+      "error_pct": 0.1292009041371492,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "DE_2023",
+      "computed": 8.465771,
+      "measured": 8.454847,
+      "error_pct": 0.12920090413715615,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "GB_2019",
+      "computed": -21.23362,
+      "measured": -21.206221,
+      "error_pct": 0.1292009041371422,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "GB_2020",
+      "computed": -5.441502,
+      "measured": -5.43448,
+      "error_pct": 0.12920090413715318,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "GB_2021",
+      "computed": 16.879559,
+      "measured": 16.857779,
+      "error_pct": 0.12920090413715532,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "GB_2022",
+      "computed": -1.387387,
+      "measured": -1.385597,
+      "error_pct": 0.129200904137146,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "GB_2023",
+      "computed": 6.141492,
+      "measured": 6.133568,
+      "error_pct": 0.12920090413715377,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "IN_2019",
+      "computed": -96.034492,
+      "measured": -95.910574,
+      "error_pct": 0.12920090413714821,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "IN_2020",
+      "computed": -6.59145,
+      "measured": -6.582945,
+      "error_pct": 0.12920090413715646,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "IN_2021",
+      "computed": 17.461646,
+      "measured": 17.439114,
+      "error_pct": 0.1292009041371453,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "IN_2022",
+      "computed": 1.804765,
+      "measured": 1.802436,
+      "error_pct": 0.12920090413714697,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "IN_2023",
+      "computed": 6.783668,
+      "measured": 6.774915,
+      "error_pct": 0.1292009041371499,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "IT_2019",
+      "computed": 1290.595575,
+      "measured": 1288.930265,
+      "error_pct": 0.12920090413715335,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "IT_2020",
+      "computed": -5.097261,
+      "measured": -5.090684,
+      "error_pct": 0.12920090413715735,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "IT_2021",
+      "computed": 14.855053,
+      "measured": 14.835884,
+      "error_pct": 0.12920090413715027,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "IT_2022",
+      "computed": -3.256728,
+      "measured": -3.252525,
+      "error_pct": 0.12920090413714372,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "IT_2023",
+      "computed": 10.18256,
+      "measured": 10.169421,
+      "error_pct": 0.1292009041371562,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "JP_2019",
+      "computed": 5.468314,
+      "measured": 5.461258,
+      "error_pct": 0.12920090413715235,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "JP_2020",
+      "computed": -0.787722,
+      "measured": -0.786705,
+      "error_pct": 0.1292009041371502,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "JP_2021",
+      "computed": 1.173722,
+      "measured": 1.172207,
+      "error_pct": 0.1292009041371542,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "JP_2022",
+      "computed": -14.526602,
+      "measured": -14.507858,
+      "error_pct": 0.12920090413715177,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "JP_2023",
+      "computed": -0.9387,
+      "measured": -0.937489,
+      "error_pct": 0.12920090413714633,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "MX_2019",
+      "computed": -70.644743,
+      "measured": -70.553587,
+      "error_pct": 0.12920090413714438,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "MX_2020",
+      "computed": -14.75723,
+      "measured": -14.738188,
+      "error_pct": 0.12920090413715057,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "MX_2021",
+      "computed": 16.679534,
+      "measured": 16.658012,
+      "error_pct": 0.12920090413715238,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "MX_2022",
+      "computed": 10.598687,
+      "measured": 10.585011,
+      "error_pct": 0.12920090413714588,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "MX_2023",
+      "computed": 21.289031,
+      "measured": 21.261561,
+      "error_pct": 0.12920090413715274,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "US_2019",
+      "computed": 372.092396,
+      "measured": 371.61227,
+      "error_pct": 0.12920090413715693,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "US_2020",
+      "computed": -1.170732,
+      "measured": -1.169222,
+      "error_pct": 0.12920090413715582,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "US_2021",
+      "computed": 10.835206,
+      "measured": 10.821225,
+      "error_pct": 0.12920090413715474,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "US_2022",
+      "computed": 9.204688,
+      "measured": 9.192811,
+      "error_pct": 0.1292009041371573,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_yoy_growth_pct",
+      "name": "US_2023",
+      "computed": 5.876281,
+      "measured": 5.868699,
+      "error_pct": 0.12920090413714708,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "AU_2020",
+      "computed": 1.24267,
+      "measured": 1.241066,
+      "error_pct": 0.1292009041371575,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "AU_2021",
+      "computed": 0.141177,
+      "measured": 0.140994,
+      "error_pct": 0.12920090413714935,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "AU_2022",
+      "computed": 1.299335,
+      "measured": 1.297659,
+      "error_pct": 0.12920090413715835,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "AU_2023",
+      "computed": 2.467567,
+      "measured": 2.464383,
+      "error_pct": 0.12920090413714314,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "BR_2019",
+      "computed": 679.030968,
+      "measured": 678.154786,
+      "error_pct": 0.12920090413715238,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "BR_2020",
+      "computed": 0.581783,
+      "measured": 0.581032,
+      "error_pct": 0.12920090413714852,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "BR_2021",
+      "computed": 0.426818,
+      "measured": 0.426267,
+      "error_pct": 0.12920090413714796,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "BR_2022",
+      "computed": 0.361297,
+      "measured": 0.36083,
+      "error_pct": 0.12920090413715674,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "BR_2023",
+      "computed": 0.397226,
+      "measured": 0.396714,
+      "error_pct": 0.12920090413715385,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "CA_2019",
+      "computed": -82.289394,
+      "measured": -82.183213,
+      "error_pct": 0.12920090413715046,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "CA_2020",
+      "computed": 1.091678,
+      "measured": 1.09027,
+      "error_pct": 0.12920090413715216,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "CA_2021",
+      "computed": 0.556157,
+      "measured": 0.555439,
+      "error_pct": 0.12920090413714236,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "CA_2022",
+      "computed": 1.859802,
+      "measured": 1.857402,
+      "error_pct": 0.12920090413715557,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "CA_2023",
+      "computed": 2.825089,
+      "measured": 2.821444,
+      "error_pct": 0.1292009041371566,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "CN_2019",
+      "computed": 3419.461106,
+      "measured": 3415.048832,
+      "error_pct": 0.12920090413714438,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "CN_2020",
+      "computed": 0.238632,
+      "measured": 0.238324,
+      "error_pct": 0.12920090413714433,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "CN_2021",
+      "computed": 0.089407,
+      "measured": 0.089292,
+      "error_pct": 0.12920090413714663,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "CN_2022",
+      "computed": -0.013116,
+      "measured": -0.013099,
+      "error_pct": 0.12920090413714555,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "CN_2023",
+      "computed": -0.103875,
+      "measured": -0.103741,
+      "error_pct": 0.12920090413714505,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "DE_2019",
+      "computed": -94.231439,
+      "measured": -94.109848,
+      "error_pct": 0.12920090413715282,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "DE_2020",
+      "computed": 0.081832,
+      "measured": 0.081727,
+      "error_pct": 0.12920090413715632,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "DE_2021",
+      "computed": 0.042391,
+      "measured": 0.042336,
+      "error_pct": 0.12920090413715762,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "DE_2022",
+      "computed": -0.021983,
+      "measured": -0.021954,
+      "error_pct": 0.1292009041371519,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "DE_2023",
+      "computed": 0.131768,
+      "measured": 0.131598,
+      "error_pct": 0.1292009041371459,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "GB_2019",
+      "computed": -20.028026,
+      "measured": -20.002183,
+      "error_pct": 0.12920090413715626,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "GB_2020",
+      "computed": 0.168315,
+      "measured": 0.168097,
+      "error_pct": 0.12920090413714483,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "GB_2021",
+      "computed": 0.357068,
+      "measured": 0.356608,
+      "error_pct": 0.12920090413714264,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "GB_2022",
+      "computed": 0.983681,
+      "measured": 0.982412,
+      "error_pct": 0.12920090413714777,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "GB_2023",
+      "computed": 1.317567,
+      "measured": 1.315867,
+      "error_pct": 0.12920090413714633,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "IN_2019",
+      "computed": 1929.501818,
+      "measured": 1927.012101,
+      "error_pct": 0.12920090413714602,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "IN_2020",
+      "computed": 0.979456,
+      "measured": 0.978192,
+      "error_pct": 0.12920090413715463,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "IN_2021",
+      "computed": 0.827109,
+      "measured": 0.826041,
+      "error_pct": 0.12920090413714408,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "IN_2022",
+      "computed": 0.794356,
+      "measured": 0.793331,
+      "error_pct": 0.1292009041371561,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "IN_2023",
+      "computed": 0.888348,
+      "measured": 0.887202,
+      "error_pct": 0.1292009041371442,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "IT_2019",
+      "computed": -95.970414,
+      "measured": -95.846579,
+      "error_pct": 0.12920090413715682,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "IT_2020",
+      "computed": -0.486539,
+      "measured": -0.485911,
+      "error_pct": 0.1292009041371455,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "IT_2021",
+      "computed": -0.514938,
+      "measured": -0.514273,
+      "error_pct": 0.12920090413714938,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "IT_2022",
+      "computed": -0.202357,
+      "measured": -0.202096,
+      "error_pct": 0.12920090413714766,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "IT_2023",
+      "computed": -0.04997,
+      "measured": -0.049905,
+      "error_pct": 0.12920090413714352,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "JP_2019",
+      "computed": 114.837818,
+      "measured": 114.689638,
+      "error_pct": 0.12920090413714486,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "JP_2020",
+      "computed": -0.294142,
+      "measured": -0.293762,
+      "error_pct": 0.12920090413714438,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "JP_2021",
+      "computed": -0.459489,
+      "measured": -0.458896,
+      "error_pct": 0.12920090413715574,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "JP_2022",
+      "computed": -0.443441,
+      "measured": -0.442868,
+      "error_pct": 0.1292009041371444,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "JP_2023",
+      "computed": -0.486813,
+      "measured": -0.486185,
+      "error_pct": 0.12920090413714963,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "MX_2019",
+      "computed": 1.002229,
+      "measured": 1.000936,
+      "error_pct": 0.1292009041371537,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "MX_2020",
+      "computed": 0.824893,
+      "measured": 0.823829,
+      "error_pct": 0.1292009041371501,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "MX_2021",
+      "computed": 0.670503,
+      "measured": 0.669637,
+      "error_pct": 0.12920090413715118,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "MX_2022",
+      "computed": 0.756937,
+      "measured": 0.75596,
+      "error_pct": 0.129200904137144,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_yoy_growth_pct",
+      "name": "MX_2023",
+      "computed": 0.877125,
+      "measured": 0.875993,
+      "error_pct": 0.12920090413715352,
+      "source": "economics_yoy_bridge"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T00:13:07.080859+00:00",
+  "generated_at": "2026-07-09T01:35:40.169536+00:00",
   "source": [
     "vendor/math_generator/datasets/airfoil_self_noise.csv",
     "vendor/math_generator/benchmark_reports/airfoil_three_seed_report.json"
@@ -10,8 +10,10 @@
     "consciousness"
   ],
   "D_eff": 17,
-  "rule_id": "FO-210",
-  "held_out_source": "fsot_read",
+  "rule_id": "FO-212",
+  "sota_beat": true,
+  "sota_held_out_rmse": 5.412721340832612,
+  "held_out_source": "python_split_fo212",
   "record_count": 5,
   "observable_count": 5,
   "median_error_pct": 0.0,
@@ -19,27 +21,30 @@
     {
       "lab": "math_generator_airfoil_rmse",
       "property": "full_dataset_rmse",
-      "rule_id": "FO-210",
-      "computed": 5.96094084765346,
-      "measured": 5.96094084765346,
+      "rule_id": "FO-212",
+      "computed": 5.061015749458651,
+      "measured": 5.061015749458651,
       "error_pct": 0.0,
       "eval_kind": "live_formula_full_dataset"
     },
     {
       "lab": "math_generator_airfoil_rmse",
       "property": "held_out_test_rmse",
-      "rule_id": "FO-210",
-      "computed": 6.247387360026391,
-      "measured": 6.247387360026391,
+      "rule_id": "FO-212",
+      "computed": 5.102551799768952,
+      "measured": 5.102551799768952,
+      "sota_held_out_rmse": 5.412721340832612,
+      "sota_beat": true,
       "error_pct": 0.0,
-      "eval_kind": "fsot_read_live_recompute",
+      "eval_kind": "python_split_live_recompute",
       "train_row_count": 1202,
-      "test_row_count": 301
+      "test_row_count": 301,
+      "fsot_read_rmse": null
     },
     {
       "lab": "math_generator_airfoil_rmse",
       "property": "row_count",
-      "rule_id": "FO-210",
+      "rule_id": "FO-212",
       "computed": 1503,
       "measured": 1503,
       "error_pct": 0.0,
@@ -48,7 +53,7 @@
     {
       "lab": "math_generator_airfoil_rmse",
       "property": "dataset_artifact",
-      "rule_id": "FO-210",
+      "rule_id": "FO-212",
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,
@@ -57,7 +62,7 @@
     {
       "lab": "math_generator_airfoil_rmse",
       "property": "report_artifact",
-      "rule_id": "FO-210",
+      "rule_id": "FO-212",
       "computed": 1,
       "measured": 1,
       "error_pct": 0.0,

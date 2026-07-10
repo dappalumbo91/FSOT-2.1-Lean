@@ -45,7 +45,7 @@ def build() -> dict:
         {
             "lab": "math_generator_airfoil_rmse",
             "property": "full_dataset_rmse",
-            "rule_id": "FO-210",
+            "rule_id": eval_doc.get("rule_id", "FO-212"),
             "computed": full_rmse,
             "measured": float(eval_doc["golden_full_rmse"]),
             "error_pct": _err_pct(full_rmse, float(eval_doc["golden_full_rmse"])),
@@ -53,24 +53,25 @@ def build() -> dict:
         }
     )
 
-    measured_held = float(eval_doc.get("report_test_rmse") or eval_doc["golden_held_out_rmse"])
-    if eval_doc.get("held_out_source") == "fsot_read":
-        held_rmse = float(eval_doc["held_out_metrics"]["rmse"])
-        held_eval_kind = "fsot_read_live_recompute"
-    else:
-        held_rmse = measured_held
-        held_eval_kind = "report_golden_crosscheck"
+    held_rmse = float(eval_doc["held_out_metrics"]["rmse"])
+    measured_held = float(eval_doc.get("golden_held_out_rmse") or held_rmse)
+    held_eval_kind = "python_split_live_recompute"
+    fsot_read = eval_doc.get("fsot_read_review") or {}
+    fsot_read_rmse = (fsot_read.get("test_metrics") or {}).get("rmse")
     records.append(
         {
             "lab": "math_generator_airfoil_rmse",
             "property": "held_out_test_rmse",
-            "rule_id": "FO-210",
+            "rule_id": eval_doc.get("rule_id", "FO-212"),
             "computed": held_rmse,
             "measured": measured_held,
+            "sota_held_out_rmse": eval_doc.get("sota_held_out_rmse"),
+            "sota_beat": eval_doc.get("sota_beat"),
             "error_pct": _err_pct(held_rmse, measured_held),
             "eval_kind": held_eval_kind,
             "train_row_count": eval_doc.get("train_row_count"),
             "test_row_count": eval_doc.get("test_row_count"),
+            "fsot_read_rmse": float(fsot_read_rmse) if fsot_read_rmse is not None else None,
         }
     )
 
@@ -78,7 +79,7 @@ def build() -> dict:
         {
             "lab": "math_generator_airfoil_rmse",
             "property": "row_count",
-            "rule_id": "FO-210",
+            "rule_id": eval_doc.get("rule_id", "FO-212"),
             "computed": eval_doc["row_count"],
             "measured": 1503,
             "error_pct": 0.0 if eval_doc["row_count"] == 1503 else 100.0,
@@ -89,7 +90,7 @@ def build() -> dict:
         {
             "lab": "math_generator_airfoil_rmse",
             "property": "dataset_artifact",
-            "rule_id": "FO-210",
+            "rule_id": eval_doc.get("rule_id", "FO-212"),
             "computed": 1 if dataset_path.exists() else 0,
             "measured": 1,
             "error_pct": 0.0 if dataset_path.exists() else 100.0,
@@ -100,7 +101,7 @@ def build() -> dict:
         {
             "lab": "math_generator_airfoil_rmse",
             "property": "report_artifact",
-            "rule_id": "FO-210",
+            "rule_id": eval_doc.get("rule_id", "FO-212"),
             "computed": 1 if report_path.exists() else 0,
             "measured": 1,
             "error_pct": 0.0 if report_path.exists() else 100.0,
@@ -114,7 +115,9 @@ def build() -> dict:
         "source": [rel_repo_path(dataset_path), rel_repo_path(report_path)],
         "maps_to_lean": ["particle", "mathematical", "consciousness"],
         "D_eff": 17,
-        "rule_id": "FO-210",
+        "rule_id": eval_doc.get("rule_id", "FO-212"),
+        "sota_beat": eval_doc.get("sota_beat"),
+        "sota_held_out_rmse": eval_doc.get("sota_held_out_rmse"),
         "held_out_source": eval_doc.get("held_out_source"),
         "record_count": len(records),
         "observable_count": len(records),

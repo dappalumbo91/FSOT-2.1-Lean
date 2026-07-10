@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-DEFAULT_EXTERNAL_ROOT = Path(r"D:\FSOT-2.1-Lean-PublicData")
+DEFAULT_EXTERNAL_ROOT = Path(r"G:\FSOT-PublicData")
 
 
 def _deep_mode() -> bool:

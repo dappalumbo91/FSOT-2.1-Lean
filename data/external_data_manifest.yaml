@@ -143,6 +143,16 @@ bundled:
     role: portable aggregate unified mathematical database (1532 rows)
     env_override: FSOT_AGGREGATE_UNIFIED_DB
 
+  thesis_waves:
+    path: vendor/thesis
+    role: bundled wave7–10 observations + intrinsic screens for particle/cosmology thesis labs
+    env_override: FSOT_THESIS_ROOT
+
+  cosmology_skeleton_database:
+    path: vendor/cosmology/database/FSOT_Mathematical_Database_Unified.json
+    role: Cosmic Skeleton Key DB with 24 cosmology derivations for extended cosmology tier
+    env_override: FSOT_COSMOLOGY_SKELETON_DB
+
   prediction_rederivation_summary:
     path: vendor/fsot_aggregate/prediction_rederivation_summary.json
     role: 66-prediction re-derivation arc summary (zero free parameters)

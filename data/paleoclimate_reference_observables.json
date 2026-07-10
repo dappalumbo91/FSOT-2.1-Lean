@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "IPCC/NOAA paleoclimate ice-core and proxy anchors",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "vostok_co2_lgm", "property": "co2_ppm", "measured": 180.0, "epoch": "Last Glacial Maximum"},
+    {"name": "vostok_co2_preindustrial", "property": "co2_ppm", "measured": 280.0, "epoch": "pre-industrial"},
+    {"name": "epica_dome_c_co2_holocene", "property": "co2_ppm", "measured": 260.0, "epoch": "early Holocene"},
+    {"name": "eemian_temp_anomaly", "property": "temp_anomaly_c", "measured": 1.5, "epoch": "Eemian"},
+    {"name": "lgm_temp_anomaly", "property": "temp_anomaly_c", "measured": -5.0, "epoch": "LGM"},
+    {"name": "holocene_optimum_anomaly", "property": "temp_anomaly_c", "measured": 0.5, "epoch": "Holocene Thermal Maximum"},
+    {"name": "younger_dryas_anomaly", "property": "temp_anomaly_c", "measured": -3.0, "epoch": "Younger Dryas"},
+    {"name": "petm_co2_spike", "property": "co2_ppm", "measured": 1000.0, "epoch": "PETM"},
+    {"name": "petm_temp_spike", "property": "temp_anomaly_c", "measured": 5.0, "epoch": "PETM"},
+    {"name": "mwp_temp_anomaly", "property": "temp_anomaly_c", "measured": 0.3, "epoch": "Medieval Warm Period"},
+    {"name": "littl_age_anomaly", "property": "temp_anomaly_c", "measured": -0.5, "epoch": "Little Ice Age"},
+    {"name": "greenland_ice_core_d18o", "property": "delta_o18_permil", "measured": -35.0, "epoch": "GRIP Holocene"},
+    {"name": "antarctic_ice_core_d18o", "property": "delta_o18_permil", "measured": -40.0, "epoch": "EPICA Holocene"},
+    {"name": "sea_level_lgm", "property": "sea_level_m", "measured": -120.0, "epoch": "LGM"},
+    {"name": "sea_level_eemian", "property": "sea_level_m", "measured": 6.0, "epoch": "Eemian highstand"},
+    {"name": "methane_lgm_ppb", "property": "ch4_ppb", "measured": 350.0, "epoch": "LGM"},
+    {"name": "methane_preindustrial_ppb", "property": "ch4_ppb", "measured": 700.0, "epoch": "pre-industrial"},
+    {"name": "dust_lgm_factor", "property": "dust_flux_factor", "measured": 25.0, "epoch": "LGM"},
+    {"name": "ocean_sst_lgm_anomaly", "property": "sst_anomaly_c", "measured": -2.5, "epoch": "LGM tropical"},
+    {"name": "orbital_forcing_insolation", "property": "insolation_w_m2", "measured": 450.0, "epoch": "July 65N LGM"}
+  ]
+}

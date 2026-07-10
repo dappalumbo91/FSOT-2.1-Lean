@@ -1,0 +1,323 @@
+{
+  "targets": {
+    "Apery_zeta_3": {
+      "name": "Apery zeta(3)",
+      "category": "Number Theory",
+      "description": "The special zeta value zeta(3), a standard transcendental constant from number theory.",
+      "benchmark_purpose": "Used to check whether the FSOT constant stack can reproduce a pure-math target that is not tied to any laboratory unit.",
+      "measured": "1.2020569031595942854",
+      "unit": "dimensionless",
+      "citation": "Apéry 1979; Weisstein, MathWorld 'Apery's Constant' (2026)",
+      "sigma_percent": "0.2",
+      "notes": ""
+    },
+    "Soldner": {
+      "name": "Soldner constant",
+      "category": "Number Theory",
+      "description": "The positive zero of the logarithmic integral, a classic constant from analytic number theory.",
+      "benchmark_purpose": "Shows whether Wave 7 can reach a named analytic constant outside the usual physics benchmark set.",
+      "measured": "1.4513692348833810503",
+      "unit": "dimensionless",
+      "citation": "Soldner 1812; Weisstein, MathWorld 'Soldner's Constant' (2026)",
+      "sigma_percent": "0.2",
+      "notes": ""
+    },
+    "Mills": {
+      "name": "Mills constant",
+      "category": "Number Theory",
+      "description": "A specialist constant associated with a prime-generating floor formula.",
+      "benchmark_purpose": "Tests whether the FSOT basis can hit a more obscure prime-related benchmark rather than only famous constants.",
+      "measured": "1.306377883863080690",
+      "unit": "dimensionless",
+      "citation": "Caldwell and Cheng, J. Integer Sequences 8 (2005); Weisstein, MathWorld 'Mills' Constant' (2026)",
+      "sigma_percent": "0.1",
+      "notes": ""
+    },
+    "Sierpinski_constant": {
+      "name": "Sierpinski constant",
+      "category": "Number Theory",
+      "description": "A named constant from number theory and asymptotic combinatorics.",
+      "benchmark_purpose": "Extends the benchmark layer into specialist pure mathematics rather than only standard physics observables.",
+      "measured": "2.584981759579253217",
+      "unit": "dimensionless",
+      "citation": "Finch, Mathematical Constants (2003), Sierpinski constant entry",
+      "sigma_percent": "0.6",
+      "notes": "Accepted literature value entered from standard mathematical-constants references."
+    },
+    "Niven": {
+      "name": "Niven constant",
+      "category": "Number Theory",
+      "description": "A named number-theory constant used in the thesis as a compact analytic benchmark.",
+      "benchmark_purpose": "Checks whether the FSOT constants remain coherent on a specialist mathematical target with no physical unit attached to it.",
+      "measured": "1.7052111401053677643",
+      "unit": "dimensionless",
+      "citation": "Niven, Proc. Amer. Math. Soc. 22, 356-360 (1969); Weisstein, MathWorld 'Niven's Constant' (2026)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "Artin": {
+      "name": "Artin constant",
+      "category": "Number Theory",
+      "description": "The Artin constant from primitive-root statistics in number theory.",
+      "benchmark_purpose": "This is one of the two Wave 7 targets that explicitly reuses mathcal C, so it checks the resolved observer-coupling constant inside a pure-math context.",
+      "measured": "0.373955813619202288",
+      "unit": "dimensionless",
+      "citation": "Finch, Mathematical Constants (2003); Weisstein, MathWorld 'Artin's Constant' (2026)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "Hafner_Sarnak": {
+      "name": "Hafner-Sarnak constant",
+      "category": "Number Theory",
+      "description": "A specialist analytic number-theory constant used in the thesis benchmark list.",
+      "benchmark_purpose": "Adds another non-physical pure-math target so the wave is not only fitting familiar constants.",
+      "measured": "0.6079271018540266286632767793",
+      "unit": "dimensionless",
+      "citation": "Hafner, Sarnak, and McCurley, A Tribute to Emil Grosswald (1993); Vardi, Computational Recreations in Mathematica (1991); Weisstein, MathWorld 'Hafner-Sarnak-McCurley Constant' (2026)",
+      "sigma_percent": "1.0",
+      "notes": "Resolved to the n = 1 Hafner-Sarnak-McCurley benchmark, D(1) = 6/pi^2, because it is the only member of the family consistent with the thesis formula and the stated 1% tolerance."
+    },
+    "Porter": {
+      "name": "Porter constant",
+      "category": "Number Theory",
+      "description": "A named mathematical constant from number-theory style asymptotics.",
+      "benchmark_purpose": "Widens the benchmark set beyond the most famous constants into more specialized analytic terrain.",
+      "measured": "1.467078079433975472",
+      "unit": "dimensionless",
+      "citation": "Knuth, The Art of Computer Programming Vol. 2, 3rd ed. (1998), p. 357; Weisstein, MathWorld 'Porter's Constant' (2026)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "Thue_Morse": {
+      "name": "Thue-Morse constant",
+      "category": "Number Theory",
+      "description": "A constant associated with the Thue-Morse sequence, a standard object in combinatorics and dynamics.",
+      "benchmark_purpose": "Checks whether the FSOT constants can encode a target tied to sequence structure rather than to direct measurement.",
+      "measured": "0.4124540336401075977",
+      "unit": "dimensionless",
+      "citation": "Dekking, C. R. Acad. Sci. Paris 285, 157-160 (1977); Weisstein, MathWorld 'Thue-Morse Constant' (2026)",
+      "sigma_percent": "0.5",
+      "notes": ""
+    },
+    "MRB": {
+      "name": "MRB constant",
+      "category": "Number Theory",
+      "description": "A specialist number-theory benchmark constant included in the thesis Wave 7 list.",
+      "benchmark_purpose": "This is the second Wave 7 target that directly depends on mathcal C, so it helps test the resolved observer-coupling term in a mathematical setting.",
+      "measured": "0.1878596424620671202485179341",
+      "unit": "dimensionless",
+      "citation": "Burns, unpublished note (1999); Finch, Mathematical Constants (2003), p. 450; Weisstein, MathWorld 'MRB Constant' (2026); OEIS A037077 (2026)",
+      "sigma_percent": "0.1",
+      "notes": "Resolved to the standard MRB constant of Marvin Ray Burns, defined by the convergent alternating series sum_{n>=1} (-1)^n (n^(1/n) - 1)."
+    },
+    "Gauss_Kuzmin": {
+      "name": "Gauss-Kuzmin constant",
+      "category": "Number Theory",
+      "description": "The Gauss-Kuzmin constant from continued-fraction statistics.",
+      "benchmark_purpose": "Checks whether Wave 7 captures a probabilistic number-theory target tied to continued fractions.",
+      "measured": "0.3036630028987326586",
+      "unit": "dimensionless",
+      "citation": "Wirsing, Acta Arith. 24, 507-528 (1974); Briggs (2003); Weisstein, MathWorld 'Gauss-Kuzmin-Wirsing Constant' (2026)",
+      "sigma_percent": "0.3",
+      "notes": ""
+    },
+    "Universal_parabolic": {
+      "name": "Universal parabolic constant",
+      "category": "Geometry / Analysis",
+      "description": "A geometry constant associated with parabolic arc-length normalization.",
+      "benchmark_purpose": "Moves Wave 7 from pure number theory into analytic geometry to test the same constant stack on shape-based targets.",
+      "measured": "2.295587149392638074",
+      "unit": "dimensionless",
+      "citation": "Finch, Mathematical Constants (2003), p. 479; Weisstein, MathWorld 'Universal Parabolic Constant' (2026)",
+      "sigma_percent": "0.3",
+      "notes": ""
+    },
+    "Lieb_square_ice": {
+      "name": "Lieb square-ice constant",
+      "category": "Geometry / Analysis",
+      "description": "The entropy-style constant from the square-ice model.",
+      "benchmark_purpose": "Bridges analytic mathematics and lattice statistical mechanics inside the same wave.",
+      "measured": "1.539600717839002039",
+      "unit": "dimensionless",
+      "citation": "Lieb, Phys. Rev. Lett. 18, 692-694 (1967)",
+      "sigma_percent": "0.1",
+      "notes": ""
+    },
+    "Komornik_Loreti": {
+      "name": "Komornik-Loreti constant",
+      "category": "Geometry / Analysis",
+      "description": "A constant from beta expansions and symbolic dynamics.",
+      "benchmark_purpose": "Checks a non-physical analytic target tied to unique expansions and dynamical structure.",
+      "measured": "1.787231650182965933",
+      "unit": "dimensionless",
+      "citation": "Komornik and Loreti, Amer. Math. Monthly 105, 636-639 (1998); Weisstein, MathWorld 'Komornik-Loreti Constant' (2026)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "Bloch_Landau": {
+      "name": "Bloch-Landau constant",
+      "category": "Geometry / Analysis",
+      "description": "A complex-analysis benchmark constant related to analytic function bounds.",
+      "benchmark_purpose": "Pushes the wave into function-theory territory rather than only algebraic or physical benchmarks.",
+      "measured": "0.5432589653429767069527282953",
+      "unit": "dimensionless",
+      "citation": "Rademacher, Amer. J. Math. 65, 387-390 (1943); Finch, Mathematical Constants (2003), pp. 456-459; Weisstein, MathWorld 'Landau Constant' (2026)",
+      "sigma_percent": "0.0",
+      "notes": "Using the standard tabulated Bloch-Landau benchmark as the Landau constant value commonly cited in references; mathematically this is the classical upper bound conjectured to be exact."
+    },
+    "Golden_angle_deg": {
+      "name": "Golden angle",
+      "category": "Geometry / Analysis",
+      "description": "The standard golden-angle separation used in spiral phyllotaxis and packing geometry.",
+      "benchmark_purpose": "Provides a geometrically intuitive target that readers can recognize without specialist background.",
+      "measured": "137.50776405003785465",
+      "unit": "deg",
+      "citation": "Livio, The Golden Ratio (2002), p. 112; Weisstein, MathWorld 'Golden Angle' (2026)",
+      "sigma_percent": "0.2",
+      "notes": ""
+    },
+    "Ising3D_eta": {
+      "name": "Ising 3D eta",
+      "category": "Ising 3D",
+      "description": "The anomalous-dimension critical exponent eta for the three-dimensional Ising universality class.",
+      "benchmark_purpose": "Tests whether FSOT can reproduce a standard condensed-matter critical exponent rather than a simple fixed constant.",
+      "measured": "0.036298",
+      "unit": "dimensionless",
+      "citation": "Pelissetto and Vicari, Phys. Rep. 368, 549-727 (2002); later conformal-bootstrap consensus",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "Ising3D_alpha": {
+      "name": "Ising 3D alpha",
+      "category": "Ising 3D",
+      "description": "The specific-heat exponent alpha for the three-dimensional Ising universality class.",
+      "benchmark_purpose": "Checks the wave on a delicate near-zero critical exponent from statistical mechanics.",
+      "measured": "0.11008",
+      "unit": "dimensionless",
+      "citation": "Pelissetto and Vicari, Phys. Rep. 368, 549-727 (2002); later conformal-bootstrap consensus",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "Ising3D_delta": {
+      "name": "Ising 3D delta",
+      "category": "Ising 3D",
+      "description": "The field-response exponent delta for the three-dimensional Ising universality class.",
+      "benchmark_purpose": "Completes the Ising 3D subgroup so Wave 7 tests more than one critical exponent in the same system.",
+      "measured": "4.78982",
+      "unit": "dimensionless",
+      "citation": "Pelissetto and Vicari, Phys. Rep. 368, 549-727 (2002); later conformal-bootstrap consensus",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "XY_nu": {
+      "name": "XY nu",
+      "category": "XY Model",
+      "description": "The correlation-length exponent nu for the three-dimensional XY universality class.",
+      "benchmark_purpose": "Extends the critical-phenomena tests beyond Ising behavior into a different symmetry class.",
+      "measured": "0.67175",
+      "unit": "dimensionless",
+      "citation": "Campostrini et al., Phys. Rev. B 63, 214503 (2001)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "XY_eta": {
+      "name": "XY eta",
+      "category": "XY Model",
+      "description": "The anomalous-dimension exponent eta for the three-dimensional XY universality class.",
+      "benchmark_purpose": "Provides the second XY critical benchmark so the wave tests both scaling length and field behavior.",
+      "measured": "0.03852",
+      "unit": "dimensionless",
+      "citation": "Campostrini et al., Phys. Rev. B 63, 214503 (2001)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "Heisenberg_nu": {
+      "name": "Heisenberg nu",
+      "category": "Heisenberg Model",
+      "description": "The correlation-length exponent nu for the three-dimensional Heisenberg universality class.",
+      "benchmark_purpose": "Checks a third major universality class so Wave 7 is not confined to one symmetry pattern.",
+      "measured": "0.7116",
+      "unit": "dimensionless",
+      "citation": "Campostrini et al., Phys. Rev. B 65, 144520 (2002)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "Heisenberg_eta": {
+      "name": "Heisenberg eta",
+      "category": "Heisenberg Model",
+      "description": "The anomalous-dimension exponent eta for the three-dimensional Heisenberg universality class.",
+      "benchmark_purpose": "Pairs with Heisenberg nu to check the same class on two independent scaling observables.",
+      "measured": "0.0378",
+      "unit": "dimensionless",
+      "citation": "Campostrini et al., Phys. Rev. B 65, 144520 (2002)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "Honeycomb_site": {
+      "name": "Honeycomb site threshold",
+      "category": "Percolation",
+      "description": "The critical site-occupation threshold for percolation on the honeycomb lattice.",
+      "benchmark_purpose": "Moves from critical exponents to connectivity thresholds in a standard lattice system.",
+      "measured": "0.697040230",
+      "unit": "dimensionless",
+      "citation": "Mertens and Moore, Phys. Rev. E 86, 061109 (2012)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "SC_bond": {
+      "name": "Simple-cubic bond threshold",
+      "category": "Percolation",
+      "description": "The bond-percolation threshold for the simple-cubic lattice.",
+      "benchmark_purpose": "Checks whether the same constants can capture the onset of system-wide connectivity in 3D bond percolation.",
+      "measured": "0.24881182",
+      "unit": "dimensionless",
+      "citation": "Lorenz and Ziff, J. Phys. A 31, 8147-8157 (1998)",
+      "sigma_percent": "0.2",
+      "notes": ""
+    },
+    "SC_site": {
+      "name": "Simple-cubic site threshold",
+      "category": "Percolation",
+      "description": "The site-percolation threshold for the simple-cubic lattice.",
+      "benchmark_purpose": "Complements the bond threshold so the percolation subgroup covers two standard 3D connectivity transitions.",
+      "measured": "0.31160768",
+      "unit": "dimensionless",
+      "citation": "Lorenz and Ziff, J. Phys. A 31, 8147-8157 (1998)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "m_u_over_m_d": {
+      "name": "m_u / m_d",
+      "category": "Mass Ratios",
+      "description": "The up-to-down quark mass ratio.",
+      "benchmark_purpose": "Starts the particle-mass subgroup with a light-quark ratio that is standard in hadron phenomenology.",
+      "measured": "0.46",
+      "unit": "dimensionless",
+      "citation": "Aoki et al. (FLAG), Eur. Phys. J. C 82, 869 (2022)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "m_s_over_m_d": {
+      "name": "m_s / m_d",
+      "category": "Mass Ratios",
+      "description": "The strange-to-down quark mass ratio.",
+      "benchmark_purpose": "Extends the mass-ratio checks further into hadronic flavor structure.",
+      "measured": "19.66",
+      "unit": "dimensionless",
+      "citation": "Aoki et al. (FLAG), Eur. Phys. J. C 82, 869 (2022)",
+      "sigma_percent": "0.0",
+      "notes": ""
+    },
+    "m_tau_over_m_mu": {
+      "name": "m_tau / m_mu",
+      "category": "Mass Ratios",
+      "description": "The tau-to-muon lepton mass ratio.",
+      "benchmark_purpose": "Closes Wave 7 with a clean charged-lepton ratio that readers can interpret without lattice or critical-phenomena background.",
+      "measured": "16.817029332426183289",
+      "unit": "dimensionless",
+      "citation": "PDG 2024 masses using m_tau = 1776.86 MeV and m_mu = 105.6583755 MeV",
+      "sigma_percent": "0.1",
+      "notes": ""
+    }
+  }
+}

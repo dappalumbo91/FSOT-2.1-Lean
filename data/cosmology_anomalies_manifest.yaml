@@ -1,0 +1,21 @@
+# Tier 25 — Cosmology anomalies (H0, S8, lithium, CMB, JWST, FRB).
+version: "1.1"
+updated: "2026-07-08"
+
+source:
+  anomalies_seed: data/cosmology_anomalies_seed.json
+  bubble_bleed_benchmark: data/cosmology_bubble_bleed_benchmark.json
+  extended_benchmark: data/cosmology_extended_benchmark.json
+
+build:
+  script: scripts/build_cosmology_anomalies_benchmark.py
+  output: data/cosmology_anomalies_benchmark.json
+
+lean:
+  generator: scripts/gen_cosmology_anomalies_lean.py
+  module: FSOT.Formal.CosmologyAnomaliesPriors
+
+verification:
+  min_anomaly_records: 10
+  max_median_error_pct: 15.0
+  min_resolved_fraction: 0.65

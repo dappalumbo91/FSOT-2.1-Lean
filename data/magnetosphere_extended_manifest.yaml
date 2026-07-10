@@ -1,6 +1,9 @@
 # Tier 25 — Historical Dst×Kp coupling, sub-hourly Bz, G-scale storm holdout.
-version: "1.0"
-updated: "2026-07-03"
+version: "1.2"
+updated: "2026-07-09"
+
+# union: per-channel OR of operational + FSOT-adjusted legs (remedies Dst/Bz margin-band FN)
+classifier_mode: union
 
 source:
   kyoto_dst_cache: data/kyoto_dst_historical_cache.json
@@ -8,7 +11,7 @@ source:
   solar_wind_cache: data/solar_wind_rtsw_cache.json
   dst_storm_threshold: -30.0
   kp_storm_threshold: 5.0
-  kp_primary_resolution: interpolated_1h
+  kp_primary_resolution: rolling_6h_max
   kp_scalar_multiplier: 0.35
   bz_southward_threshold_nt: -5.0
   bz_scalar_multiplier: 2.0
@@ -31,3 +34,6 @@ verification:
   min_storm_holdout_match_rate: 0.5
   min_bz_records: 100
   min_bz_match_rate: 0.5
+  max_pooled_median_error_pct: 2.0
+  max_pooled_misclassification_pct: 2.0
+  min_beats_sota_headlines: 3

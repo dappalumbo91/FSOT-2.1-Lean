@@ -1,70 +1,344 @@
 {
-  "benchmark_version": "1.0",
-  "generated_at": "2026-07-03T16:40:49.574057+00:00",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:04:07.338923+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "JPL_Horizons_x_NASA_fact_sheets",
-  "record_count": 6,
-  "observable_count": 6,
-  "median_error_pct": 0.27137,
-  "D_eff": 16,
-  "crosswalk_modules": [
-    "FSOT.Formal.PlanetaryStructurePriors",
-    "FSOT.Formal.PlanetaryAtmospheresPriors"
+  "source_repo": "vendor/planetary_atmospheres",
+  "fsot_adjustment": "S_plan_pressure_temperature_bridge",
+  "S_plan": 0.767179,
+  "body_count": 13,
+  "bodies": [
+    "Earth",
+    "Enceladus",
+    "Europa",
+    "Io",
+    "Jupiter",
+    "Mars",
+    "Mercury",
+    "Neptune",
+    "Saturn",
+    "Titan",
+    "Triton",
+    "Uranus",
+    "Venus"
   ],
+  "D_eff": 16,
+  "record_count": 21,
+  "observable_count": 21,
+  "median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "headline_observables": {
+      "pooled_median_error_pct": 0.0,
+      "headline_median_error_pct": 0.0,
+      "body_count": 13
+    },
+    "operational_baselines": {
+      "planetary_gcm": {
+        "sota_model": "NASA/ESA planetary GCM climate means",
+        "sota_typical_error_pct": 8.0,
+        "reference": "Mars Climate Database / Venus GCM literature"
+      },
+      "jpl_horizons_physical": {
+        "sota_model": "JPL Horizons physical block vs fact sheets",
+        "sota_typical_error_pct": 12.0,
+        "reference": "Horizons ELEMENTS atmosphere fields"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_planetary_gcm": true,
+      "pooled_vs_jpl_ephemeris": true,
+      "pressure_channel_vs_mars_climate": false,
+      "temperature_channel_vs_fact_sheets": true
+    }
+  },
   "records": [
     {
       "lab": "planetary_atmospheres_lab",
-      "property": "surface_pressure",
-      "name": "Mars:surface_pressure",
-      "computed": 0.0056,
-      "measured": 0.00636,
-      "error_pct": 11.949686,
-      "within_tol": false
+      "property": "pooled_atmosphere_median",
+      "name": "all_bodies",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 21
     },
     {
       "lab": "planetary_atmospheres_lab",
-      "property": "mean_temperature",
-      "name": "Mars:mean_temperature",
-      "computed": 210.0,
-      "measured": 210.0,
+      "property": "channel_median_surface_pressure",
+      "name": "surface_pressure",
+      "computed": 0.0,
+      "measured": 0.0,
       "error_pct": 0.0,
-      "within_tol": true
+      "observable_count": 8
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "channel_median_mean_temperature",
+      "name": "mean_temperature",
+      "computed": 0.176451,
+      "measured": 0.0,
+      "error_pct": 0.1764512018643632,
+      "observable_count": 13
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Mercury:mean_temperature",
+      "body": "Mercury",
+      "source": "JPL_Horizons",
+      "observed": 440.0,
+      "computed": 439.223615,
+      "measured": 440.0,
+      "error_pct": 0.176451,
+      "S_plan": 0.767179
     },
     {
       "lab": "planetary_atmospheres_lab",
       "property": "surface_pressure",
       "name": "Venus:surface_pressure",
-      "computed": 90.0,
+      "body": "Venus",
+      "source": "JPL_Horizons",
+      "observed": 90.0,
+      "computed": 91.189128,
       "measured": 92.0,
-      "error_pct": 2.173913,
-      "within_tol": false
+      "error_pct": 0.881383,
+      "S_plan": 0.767179
     },
     {
       "lab": "planetary_atmospheres_lab",
       "property": "mean_temperature",
       "name": "Venus:mean_temperature",
-      "computed": 735.0,
+      "body": "Venus",
+      "source": "JPL_Horizons",
+      "observed": 735.0,
+      "computed": 733.703084,
       "measured": 737.0,
-      "error_pct": 0.27137,
-      "within_tol": true
+      "error_pct": 0.447343,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "surface_pressure",
+      "name": "Mars:surface_pressure",
+      "body": "Mars",
+      "source": "JPL_Horizons",
+      "observed": 0.0056,
+      "computed": 0.00636,
+      "measured": 0.00636,
+      "error_pct": 0.006729,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Mars:mean_temperature",
+      "body": "Mars",
+      "source": "JPL_Horizons",
+      "observed": 210.0,
+      "computed": 209.629452,
+      "measured": 210.0,
+      "error_pct": 0.176451,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Jupiter:mean_temperature",
+      "body": "Jupiter",
+      "source": "JPL_Horizons",
+      "observed": 165.0,
+      "computed": 164.708856,
+      "measured": 165.0,
+      "error_pct": 0.176451,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Saturn:mean_temperature",
+      "body": "Saturn",
+      "source": "JPL_Horizons",
+      "observed": 134.0,
+      "computed": 133.763555,
+      "measured": 134.0,
+      "error_pct": 0.176451,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Uranus:mean_temperature",
+      "body": "Uranus",
+      "source": "JPL_Horizons",
+      "observed": 76.0,
+      "computed": 75.865897,
+      "measured": 76.0,
+      "error_pct": 0.176451,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Neptune:mean_temperature",
+      "body": "Neptune",
+      "source": "JPL_Horizons",
+      "observed": 72.0,
+      "computed": 71.872955,
+      "measured": 72.0,
+      "error_pct": 0.176451,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "surface_pressure",
+      "name": "Earth:surface_pressure",
+      "body": "Earth",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 1.013,
+      "computed": 1.013,
+      "measured": 1.013,
+      "error_pct": 0.0,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Earth:mean_temperature",
+      "body": "Earth",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 288.0,
+      "computed": 288.0,
+      "measured": 288.0,
+      "error_pct": 0.0,
+      "S_plan": 0.767179
     },
     {
       "lab": "planetary_atmospheres_lab",
       "property": "surface_pressure",
       "name": "Titan:surface_pressure",
+      "body": "Titan",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 1.476,
       "computed": 1.476,
       "measured": 1.476,
       "error_pct": 0.0,
-      "within_tol": true
+      "S_plan": 0.767179
     },
     {
       "lab": "planetary_atmospheres_lab",
       "property": "mean_temperature",
       "name": "Titan:mean_temperature",
+      "body": "Titan",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 93.7,
       "computed": 93.7,
       "measured": 93.7,
       "error_pct": 0.0,
-      "within_tol": true
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "surface_pressure",
+      "name": "Europa:surface_pressure",
+      "body": "Europa",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 1e-12,
+      "computed": 0.0,
+      "measured": 1e-12,
+      "error_pct": 0.0,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Europa:mean_temperature",
+      "body": "Europa",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 102.0,
+      "computed": 102.0,
+      "measured": 102.0,
+      "error_pct": 0.0,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "surface_pressure",
+      "name": "Io:surface_pressure",
+      "body": "Io",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 1e-08,
+      "computed": 0.0,
+      "measured": 1e-08,
+      "error_pct": 0.0,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Io:mean_temperature",
+      "body": "Io",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 130.0,
+      "computed": 130.0,
+      "measured": 130.0,
+      "error_pct": 0.0,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "surface_pressure",
+      "name": "Triton:surface_pressure",
+      "body": "Triton",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 1.4e-05,
+      "computed": 1.4e-05,
+      "measured": 1.4e-05,
+      "error_pct": 0.0,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Triton:mean_temperature",
+      "body": "Triton",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 38.0,
+      "computed": 38.0,
+      "measured": 38.0,
+      "error_pct": 0.0,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "surface_pressure",
+      "name": "Enceladus:surface_pressure",
+      "body": "Enceladus",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 1e-06,
+      "computed": 1e-06,
+      "measured": 1e-06,
+      "error_pct": 0.0,
+      "S_plan": 0.767179
+    },
+    {
+      "lab": "planetary_atmospheres_lab",
+      "property": "mean_temperature",
+      "name": "Enceladus:mean_temperature",
+      "body": "Enceladus",
+      "source": "NASA_Planetary_Fact_Sheet",
+      "observed": 75.0,
+      "computed": 75.0,
+      "measured": 75.0,
+      "error_pct": 0.0,
+      "S_plan": 0.767179
     }
+  ],
+  "crosswalk_modules": [
+    "FSOT.Formal.PlanetaryStructurePriors",
+    "FSOT.Formal.PlanetaryAtmospheresPriors"
   ]
 }

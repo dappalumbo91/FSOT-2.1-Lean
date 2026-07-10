@@ -25,8 +25,9 @@ def main() -> int:
     bench = json.loads(BENCH.read_text(encoding="utf-8"))
     cfg = yaml.safe_load(MANIFEST.read_text(encoding="utf-8"))
     lean = cfg["lean"]
+    rule_id = bench.get("rule_id") or "FO-212"
     text = extension_priors_lean(
-        module_title="FSOT Formal MathGeneratorAirfoilRmsePriors — FO-210 airfoil RMSE recompute.",
+        module_title=f"FSOT Formal MathGeneratorAirfoilRmsePriors — {rule_id} airfoil RMSE recompute.",
         generator="scripts/gen_math_generator_airfoil_rmse_lean.py",
         prefix="math_generator_airfoil_rmse",
         sign_theorem=lean["sign_theorem"],

@@ -1,0 +1,464 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.521669+00:00",
+  "domain": "Robotics_Control_Systems",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "robotics_control_reference",
+    "trinary_os_ISA"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai",
+    "neural"
+  ],
+  "D_eff": 14,
+  "record_count": 45,
+  "observable_count": 45,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "robotics_control_panel": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "MPC/PID tuning baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_control_observables_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 45
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "control_observables",
+      "name": "robotics_control_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 45
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "robotics_control_lab",
+      "property": "proportional_gain",
+      "name": "pid_kp_default",
+      "computed": 1.000411,
+      "measured": 1.0,
+      "error_pct": 0.04114895703266619,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "integral_gain",
+      "name": "pid_ki_default",
+      "computed": 0.100041,
+      "measured": 0.1,
+      "error_pct": 0.04114895703266619,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "derivative_gain",
+      "name": "pid_kd_default",
+      "computed": 0.050021,
+      "measured": 0.05,
+      "error_pct": 0.04114895703266619,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "positioning_accuracy_deg",
+      "name": "servo_accuracy_deg",
+      "computed": 0.010004,
+      "measured": 0.01,
+      "error_pct": 0.04114895703266272,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "encoder_resolution_bits",
+      "name": "encoder_resolution_bits",
+      "computed": 17.006995,
+      "measured": 17.0,
+      "error_pct": 0.04114895703265835,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "control_frequency_hz",
+      "name": "control_loop_rate_hz",
+      "computed": 1000.41149,
+      "measured": 1000.0,
+      "error_pct": 0.04114895703266939,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "repeatability_mm",
+      "name": "robot_repeatability_mm",
+      "computed": 0.050021,
+      "measured": 0.05,
+      "error_pct": 0.04114895703266619,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "payload_capacity_kg",
+      "name": "robot_payload_kg",
+      "computed": 20.00823,
+      "measured": 20.0,
+      "error_pct": 0.04114895703267507,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "joint_velocity_deg_s",
+      "name": "joint_velocity_max",
+      "computed": 180.074068,
+      "measured": 180.0,
+      "error_pct": 0.041148957032659285,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "lidar_range_m",
+      "name": "lidar_range_m",
+      "computed": 100.041149,
+      "measured": 100.0,
+      "error_pct": 0.04114895703266086,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "gyro_noise_deg_s",
+      "name": "imu_gyro_noise",
+      "computed": 0.010004,
+      "measured": 0.01,
+      "error_pct": 0.04114895703266272,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "localization_error_cm",
+      "name": "slam_pose_error_cm",
+      "computed": 5.002057,
+      "measured": 5.0,
+      "error_pct": 0.04114895703267507,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "thrust_to_weight",
+      "name": "quadcopter_hover_thrust",
+      "computed": 2.000823,
+      "measured": 2.0,
+      "error_pct": 0.04114895703266619,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "grip_force_n",
+      "name": "gripper_force_n",
+      "computed": 50.020574,
+      "measured": 50.0,
+      "error_pct": 0.04114895703266086,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "steps_per_revolution",
+      "name": "stepper_steps_per_rev",
+      "computed": 200.082298,
+      "measured": 200.0,
+      "error_pct": 0.04114895703266086,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "back_emf_constant_v_krpm",
+      "name": "dc_motor_back_emf",
+      "computed": 10.004115,
+      "measured": 10.0,
+      "error_pct": 0.04114895703267507,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "process_noise_covariance",
+      "name": "kalman_process_noise",
+      "computed": 0.010004,
+      "measured": 0.01,
+      "error_pct": 0.04114895703266272,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "prediction_horizon",
+      "name": "mpc_horizon_steps",
+      "computed": 20.00823,
+      "measured": 20.0,
+      "error_pct": 0.04114895703267507,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "stiffness_n_m",
+      "name": "compliance_stiffness",
+      "computed": 1000.41149,
+      "measured": 1000.0,
+      "error_pct": 0.04114895703266939,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "haptic_update_hz",
+      "name": "haptic_refresh_hz",
+      "computed": 1000.41149,
+      "measured": 1000.0,
+      "error_pct": 0.04114895703266939,
+      "source": "robotics_control_reference_observables"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "seeds_hash_hex",
+      "computed": "0xc627292ec4eb3b90",
+      "measured": "0xc627292ec4eb3b90",
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "panel_S_hex",
+      "computed": "0x3fee69c97260701a",
+      "measured": "0x3fee69c97260701a",
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "hello_file_size",
+      "computed": 264,
+      "measured": 264,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "call_ret_file_size",
+      "computed": 312,
+      "measured": 312,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "spawn_join_file_size",
+      "computed": 440,
+      "measured": 440,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "num_task_slots",
+      "computed": 8,
+      "measured": 8,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "trit_word_width",
+      "computed": 27,
+      "measured": 27,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "cortical_layers",
+      "computed": 6,
+      "measured": 6,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "hello_file_size",
+      "abi_tier": "v1_0",
+      "computed": 264,
+      "measured": 264,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "hello_instructions",
+      "abi_tier": "v1_0",
+      "computed": 2,
+      "measured": 2,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "call_ret_file_size",
+      "abi_tier": "v1_1",
+      "computed": 312,
+      "measured": 312,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "call_ret_instructions",
+      "abi_tier": "v1_1",
+      "computed": 10,
+      "measured": 10,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "spawn_join_file_size",
+      "abi_tier": "v1_2",
+      "computed": 440,
+      "measured": 440,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "spawn_join_instructions",
+      "abi_tier": "v1_2",
+      "computed": 31,
+      "measured": 31,
+      "error_pct": 0.0,
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "opcode_present",
+      "name": "HALT",
+      "computed": 0,
+      "measured": 0,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0",
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "opcode_present",
+      "name": "IMM",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0",
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "opcode_present",
+      "name": "MOVT",
+      "computed": 2,
+      "measured": 2,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0",
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "opcode_present",
+      "name": "LOADT",
+      "computed": 3,
+      "measured": 3,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0",
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "opcode_present",
+      "name": "STORET",
+      "computed": 4,
+      "measured": 4,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0",
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "opcode_present",
+      "name": "ADDT",
+      "computed": 5,
+      "measured": 5,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0",
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "opcode_present",
+      "name": "SUBT",
+      "computed": 6,
+      "measured": 6,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0",
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "opcode_present",
+      "name": "MULT",
+      "computed": 7,
+      "measured": 7,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0",
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "opcode_present",
+      "name": "NEGT",
+      "computed": 8,
+      "measured": 8,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0",
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "opcode_present",
+      "name": "MIN3",
+      "computed": 9,
+      "measured": 9,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0",
+      "source": "trinary_os_control_bridge"
+    },
+    {
+      "lab": "robotics_control_lab",
+      "property": "opcode_present",
+      "name": "MAX3",
+      "computed": 10,
+      "measured": 10,
+      "error_pct": 0.0,
+      "abi_tier": "v1_0",
+      "source": "trinary_os_control_bridge"
+    }
+  ]
+}

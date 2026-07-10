@@ -1,9 +1,9 @@
 # Tier 11: Intelligence_Compression (FSOT-2.0-code extension domain 36)
-version: "1.0"
-updated: "2026-07-01"
+version: "1.1"
+updated: "2026-07-09"
 
-source_repo: "C:/Users/damia/Desktop/FSOT-2.0-code/IntelligenceCompressor"
-domain_doc: "Intelligence_Compression_Domain.md"
+source_repo: vendor/intelligence_compression
+domain_doc: vendor/intelligence_compression/Intelligence_Compression_Domain.md
 
 artifacts:
   fic_simulation:
@@ -13,6 +13,16 @@ artifacts:
     path: data/fic_sensitivity_sweep.csv
   fic_report:
     path: data/fic_sensitivity_report.json
+
+build:
+  benchmark: scripts/build_intelligence_compression_benchmark.py
+  output: data/intelligence_compression_benchmark.json
+
+lean:
+  generator: scripts/gen_intelligence_compression_lean.py
+  module: FSOT.Formal.IntelligenceCompressionPriors
+  lean_domains: [neural, consciousness, ai]
+  sign_theorems: [neural_raw_S_positive, consciousness_raw_S_positive]
 
 optimal_params:
   D_eff: 12
@@ -27,3 +37,6 @@ verification:
   min_fertile_rows: 5
   min_best_intelligence_score: 0.5
   optimal_must_be_fertile: true
+  min_fertile_replay_match_rate: 0.99
+  max_headline_median_error_pct: 2.0
+  min_beats_sota_headlines: 3

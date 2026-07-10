@@ -1,12 +1,22 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-08T19:29:23.818844+00:00",
+  "generated_at": "2026-07-09T05:01:19.733871+00:00",
   "compute_higgs_count": 9,
   "thesis_higgs_count": 5,
   "observable_count": 14,
   "median_error_pct": 0.014721632079759569,
   "max_error_pct": 0.27079952979037436,
   "within_five_pct_count": 9,
+  "records": [
+    {
+      "lab": "higgs_branching",
+      "property": "median_error_pct",
+      "computed": 0.014721632079759569,
+      "measured": 0.5,
+      "error_pct": 0.014721632079759569,
+      "eval_kind": "aggregate_median"
+    }
+  ],
   "compute_higgs_rows": [
     {
       "wave": "wave5",

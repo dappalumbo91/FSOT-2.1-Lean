@@ -1,5 +1,5 @@
 /-
-  FSOT Formal MathGeneratorAirfoilRmsePriors — FO-210 airfoil RMSE recompute.
+  FSOT Formal MathGeneratorAirfoilRmsePriors — FO-212 airfoil RMSE recompute.
   Generator: scripts/gen_math_generator_airfoil_rmse_lean.py
 -/
 

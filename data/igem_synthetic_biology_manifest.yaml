@@ -1,6 +1,10 @@
 # Tier 31 — iGEM parts-registry strict-empirical synthetic biology bridge.
-version: "1.0"
-updated: "2026-07-07"
+version: "1.1"
+updated: "2026-07-09"
+
+source_repo: vendor/igem
+maps_to_lean: [biological, medical]
+D_eff: 14
 
 source:
   igem_parts_registry: "vendor/igem/igem_parts_registry.json"

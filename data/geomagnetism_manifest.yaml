@@ -9,6 +9,8 @@ source:
   dst_storm_threshold: -30.0
   hp_storm_threshold: 80.0
 
+classifier_mode: union
+
 build:
   ingest: scripts/ingest_geomagnetism_swpc.py
   benchmark: scripts/build_geomagnetism_benchmark.py

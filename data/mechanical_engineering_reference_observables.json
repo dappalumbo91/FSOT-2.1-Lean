@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "ASME/ME published mechanical engineering anchors",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "steam_turbine_efficiency", "property": "thermal_efficiency_pct", "measured": 45.0, "system": "Rankine cycle"},
+    {"name": "gas_turbine_efficiency", "property": "thermal_efficiency_pct", "measured": 40.0, "system": "Brayton cycle"},
+    {"name": "carnot_limit_steam", "property": "carnot_efficiency_pct", "measured": 55.0, "system": "600C/300K"},
+    {"name": "bearing_l10_life_h", "property": "bearing_life_hours", "measured": 20000.0, "component": "ball bearing"},
+    {"name": "gear_ratio_standard", "property": "gear_ratio", "measured": 3.0, "component": "spur gear stage"},
+    {"name": "shaft_torsional_stress", "property": "shear_stress_mpa", "measured": 80.0, "component": "drive shaft"},
+    {"name": "pump_head_m", "property": "pump_head_m", "measured": 50.0, "system": "centrifugal pump"},
+    {"name": "compressor_pressure_ratio", "property": "pressure_ratio", "measured": 10.0, "system": "axial compressor"},
+    {"name": "engine_torque_nm", "property": "torque_nm", "measured": 400.0, "system": "automotive ICE"},
+    {"name": "engine_rpm_redline", "property": "max_rpm", "measured": 7000.0, "system": "automotive ICE"},
+    {"name": "heat_exchanger_ua", "property": "overall_htc_w_m2k", "measured": 500.0, "system": "shell-tube HX"},
+    {"name": "reynolds_turbulent", "property": "reynolds_number", "measured": 10000.0, "flow": "pipe flow"},
+    {"name": "mach_critical", "property": "mach_number", "measured": 1.0, "flow": "choked nozzle"},
+    {"name": "youngs_modulus_steel", "property": "youngs_modulus_gpa", "measured": 200.0, "material": "carbon steel"},
+    {"name": "poisson_steel", "property": "poisson_ratio", "measured": 0.3, "material": "carbon steel"},
+    {"name": "thermal_expansion_steel", "property": "cte_um_m_k", "measured": 12.0, "material": "carbon steel"},
+    {"name": "friction_coefficient_bearing", "property": "friction_coefficient", "measured": 0.001, "component": "hydrodynamic bearing"},
+    {"name": "vibration_natural_freq_hz", "property": "natural_frequency_hz", "measured": 50.0, "system": "rotor first mode"},
+    {"name": "bolt_preload_kn", "property": "bolt_preload_kn", "measured": 100.0, "component": "M24 high-strength"},
+    {"name": "hydraulic_cylinder_force_kn", "property": "actuator_force_kn", "measured": 500.0, "system": "double-acting cylinder"}
+  ]
+}

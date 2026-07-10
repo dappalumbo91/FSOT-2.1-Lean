@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "AHA/ESC clinical cardiology reference anchors",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "resting_hr_adult", "property": "heart_rate_bpm", "measured": 72.0, "cohort": "healthy adult"},
+    {"name": "max_hr_40yo", "property": "max_heart_rate_bpm", "measured": 180.0, "cohort": "age 40"},
+    {"name": "normal_ejection_fraction", "property": "ejection_fraction_pct", "measured": 60.0, "cohort": "healthy"},
+    {"name": "heart_failure_ef_threshold", "property": "ejection_fraction_pct", "measured": 40.0, "cohort": "HFrEF"},
+    {"name": "systolic_bp_normal", "property": "systolic_bp_mmhg", "measured": 120.0, "cohort": "normotensive"},
+    {"name": "diastolic_bp_normal", "property": "diastolic_bp_mmhg", "measured": 80.0, "cohort": "normotensive"},
+    {"name": "cardiac_output_rest", "property": "cardiac_output_l_min", "measured": 5.0, "cohort": "resting adult"},
+    {"name": "stroke_volume_rest", "property": "stroke_volume_ml", "measured": 70.0, "cohort": "resting adult"},
+    {"name": "lv_mass_index_normal", "property": "lv_mass_index_g_m2", "measured": 95.0, "cohort": "male reference"},
+    {"name": "qt_interval_normal", "property": "qt_interval_ms", "measured": 400.0, "cohort": "adult male"},
+    {"name": "pr_interval_normal", "property": "pr_interval_ms", "measured": 160.0, "cohort": "adult"},
+    {"name": "troponin_uln", "property": "troponin_ng_ml", "measured": 0.04, "cohort": "99th percentile"},
+    {"name": "ldl_target_high_risk", "property": "ldl_cholesterol_mg_dl", "measured": 70.0, "cohort": "ASCVD high risk"},
+    {"name": "hdl_male_reference", "property": "hdl_cholesterol_mg_dl", "measured": 50.0, "cohort": "male"},
+    {"name": "triglycerides_normal", "property": "triglycerides_mg_dl", "measured": 150.0, "cohort": "fasting adult"},
+    {"name": "coronary_flow_reserve", "property": "coronary_flow_reserve", "measured": 3.0, "cohort": "healthy"},
+    {"name": "aortic_valve_area_severe", "property": "valve_area_cm2", "measured": 1.0, "cohort": "severe AS"},
+    {"name": "pacemaker_lower_rate", "property": "paced_rate_bpm", "measured": 60.0, "cohort": "DDDR default"},
+    {"name": "vo2max_cardiac_rehab", "property": "vo2max_ml_kg_min", "measured": 25.0, "cohort": "post-MI rehab"},
+    {"name": "bnp_hf_threshold", "property": "bnp_pg_ml", "measured": 100.0, "cohort": "acute dyspnea rule-out"}
+  ]
+}

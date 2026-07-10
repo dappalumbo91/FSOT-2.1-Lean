@@ -1,0 +1,5715 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:31:47.707437+00:00",
+  "domain": "Ecology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "GBIF",
+    "biology_strict",
+    "evolution_operon"
+  ],
+  "maps_to_lean": [
+    "biological"
+  ],
+  "D_eff": 14,
+  "record_count": 627,
+  "observable_count": 627,
+  "median_error_pct": 0.017789000308164337,
+  "pooled_median_error_pct": 0.017789000308164337,
+  "headline_median_error_pct": 0.017789000308164337,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "gbif_occurrence": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "GBIF coordinate QA"
+      },
+      "ncbi_operons": {
+        "sota_typical_error_pct": 1.0,
+        "sota_model": "NCBI gene lengths"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_gbif_latitude_vs_baseline": true,
+      "channel_operon_strict_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.017789,
+      "measured": 0.0,
+      "error_pct": 0.017789000308164337,
+      "observable_count": 627
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "gbif_latitude",
+      "name": "gbif_occurrence",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236250385199493,
+      "observable_count": 300
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "operon_strict",
+      "name": "ncbi_operons",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 15
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Spinus pinus",
+      "computed": 42.622579,
+      "measured": 42.613103,
+      "error_pct": 0.022236250385193546,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Spinus pinus",
+      "computed": -71.9824,
+      "measured": -71.969597,
+      "error_pct": 0.01778900030815132,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zonotrichia albicollis",
+      "computed": 40.217974,
+      "measured": 40.209033,
+      "error_pct": 0.022236250385205266,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zonotrichia albicollis",
+      "computed": -74.94491,
+      "measured": -74.93158,
+      "error_pct": 0.01778900030814981,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Larix laricina",
+      "computed": 44.641562,
+      "measured": 44.631638,
+      "error_pct": 0.022236250385202418,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Larix laricina",
+      "computed": -72.38316,
+      "measured": -72.370286,
+      "error_pct": 0.017789000308153904,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Buteo jamaicensis",
+      "computed": 40.668591,
+      "measured": 40.65955,
+      "error_pct": 0.02223625038520218,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Buteo jamaicensis",
+      "computed": -73.97997,
+      "measured": -73.966812,
+      "error_pct": 0.017789000308160472,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Picea rubens",
+      "computed": 42.68942,
+      "measured": 42.67993,
+      "error_pct": 0.02223625038519695,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Picea rubens",
+      "computed": -72.023002,
+      "measured": -72.010192,
+      "error_pct": 0.017789000308152603,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Polystichum acrostichoides",
+      "computed": 40.803245,
+      "measured": 40.794174,
+      "error_pct": 0.022236250385207743,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Polystichum acrostichoides",
+      "computed": -73.974358,
+      "measured": -73.961201,
+      "error_pct": 0.01778900030816281,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Gaultheria procumbens",
+      "computed": 42.685089,
+      "measured": 42.6756,
+      "error_pct": 0.022236250385205006,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Gaultheria procumbens",
+      "computed": -72.01387,
+      "measured": -72.001062,
+      "error_pct": 0.017789000308163713,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Castor canadensis",
+      "computed": 43.493488,
+      "measured": 43.483819,
+      "error_pct": 0.0222362503851931,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Castor canadensis",
+      "computed": -72.403925,
+      "measured": -72.391047,
+      "error_pct": 0.01778900030814765,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Alsophila pometaria",
+      "computed": 41.003896,
+      "measured": 40.99478,
+      "error_pct": 0.022236250385191652,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Alsophila pometaria",
+      "computed": -73.819517,
+      "measured": -73.806388,
+      "error_pct": 0.01778900030815917,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Castor canadensis",
+      "computed": 42.154073,
+      "measured": 42.144702,
+      "error_pct": 0.0222362503852042,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Castor canadensis",
+      "computed": -71.882632,
+      "measured": -71.869847,
+      "error_pct": 0.01778900030814798,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Gaultheria hispidula",
+      "computed": 42.689844,
+      "measured": 42.680353,
+      "error_pct": 0.02223625038519453,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Gaultheria hispidula",
+      "computed": -72.013168,
+      "measured": -72.00036,
+      "error_pct": 0.01778900030814546,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Lamium purpureum",
+      "computed": 40.665899,
+      "measured": 40.656858,
+      "error_pct": 0.022236250385200055,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Lamium purpureum",
+      "computed": -73.983645,
+      "measured": -73.970486,
+      "error_pct": 0.017789000308153946,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Melanerpes carolinus",
+      "computed": 41.402668,
+      "measured": 41.393464,
+      "error_pct": 0.022236250385202327,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Melanerpes carolinus",
+      "computed": -73.645753,
+      "measured": -73.632654,
+      "error_pct": 0.017789000308164403,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Smilax glauca",
+      "computed": 41.837829,
+      "measured": 41.828528,
+      "error_pct": 0.02223625038519601,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Smilax glauca",
+      "computed": -71.12882,
+      "measured": -71.116169,
+      "error_pct": 0.01778900030814553,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Spatula clypeata",
+      "computed": 40.805847,
+      "measured": 40.796775,
+      "error_pct": 0.02223625038519884,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Spatula clypeata",
+      "computed": -73.963438,
+      "measured": -73.950283,
+      "error_pct": 0.017789000308159407,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Biscogniauxia marginata",
+      "computed": 40.805569,
+      "measured": 40.796497,
+      "error_pct": 0.022236250385195395,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Biscogniauxia marginata",
+      "computed": -73.970301,
+      "measured": -73.957145,
+      "error_pct": 0.017789000308156222,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Rhus typhina",
+      "computed": 42.332832,
+      "measured": 42.323421,
+      "error_pct": 0.022236250385203243,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Rhus typhina",
+      "computed": -71.819824,
+      "measured": -71.80705,
+      "error_pct": 0.01778900030815906,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Passer domesticus",
+      "computed": 40.21798,
+      "measured": 40.209039,
+      "error_pct": 0.02223625038519746,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Passer domesticus",
+      "computed": -74.944873,
+      "measured": -74.931543,
+      "error_pct": 0.017789000308152777,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Abies balsamea",
+      "computed": 44.641876,
+      "measured": 44.631952,
+      "error_pct": 0.022236250385195208,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Abies balsamea",
+      "computed": -72.382895,
+      "measured": -72.370021,
+      "error_pct": 0.01778900030816316,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Sialia sialis",
+      "computed": 42.07127,
+      "measured": 42.061917,
+      "error_pct": 0.022236250385194892,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Sialia sialis",
+      "computed": -71.16372,
+      "measured": -71.151063,
+      "error_pct": 0.01778900030816226,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Aythya affinis",
+      "computed": 41.754889,
+      "measured": 41.745606,
+      "error_pct": 0.022236250385193772,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Aythya affinis",
+      "computed": -70.193149,
+      "measured": -70.180665,
+      "error_pct": 0.01778900030815641,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Peniophora albobadia",
+      "computed": 40.805416,
+      "measured": 40.796344,
+      "error_pct": 0.02223625038520002,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Peniophora albobadia",
+      "computed": -73.970274,
+      "measured": -73.957118,
+      "error_pct": 0.017789000308159972,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Epigaea repens",
+      "computed": 42.69201,
+      "measured": 42.682519,
+      "error_pct": 0.022236250385203146,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Epigaea repens",
+      "computed": -72.026818,
+      "measured": -72.014007,
+      "error_pct": 0.01778900030815867,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Odocoileus virginianus",
+      "computed": 42.376129,
+      "measured": 42.366708,
+      "error_pct": 0.022236250385199614,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Odocoileus virginianus",
+      "computed": -71.514826,
+      "measured": -71.502106,
+      "error_pct": 0.017789000308158942,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Golovinomyces artemisiae",
+      "computed": 40.803351,
+      "measured": 40.79428,
+      "error_pct": 0.02223625038519953,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Golovinomyces artemisiae",
+      "computed": -73.974637,
+      "measured": -73.96148,
+      "error_pct": 0.01778900030816248,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haliaeetus leucocephalus",
+      "computed": 40.520533,
+      "measured": 40.511525,
+      "error_pct": 0.022236250385191565,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haliaeetus leucocephalus",
+      "computed": -74.234037,
+      "measured": -74.220834,
+      "error_pct": 0.017789000308163494,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Dryobates pubescens",
+      "computed": 41.274048,
+      "measured": 41.264872,
+      "error_pct": 0.022236250385205984,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Dryobates pubescens",
+      "computed": -72.756849,
+      "measured": -72.743909,
+      "error_pct": 0.01778900030816322,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus strobus",
+      "computed": 44.64179,
+      "measured": 44.631866,
+      "error_pct": 0.0222362503852058,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus strobus",
+      "computed": -72.382721,
+      "measured": -72.369847,
+      "error_pct": 0.01778900030816168,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Coptis trifolia",
+      "computed": 43.372968,
+      "measured": 43.363326,
+      "error_pct": 0.02223625038520209,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Coptis trifolia",
+      "computed": -71.511196,
+      "measured": -71.498477,
+      "error_pct": 0.017789000308159233,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Quercus rubra",
+      "computed": 43.581772,
+      "measured": 43.572083,
+      "error_pct": 0.022236250385200725,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Quercus rubra",
+      "computed": -71.401896,
+      "measured": -71.389197,
+      "error_pct": 0.017789000308156087,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Epigaea repens",
+      "computed": 42.685089,
+      "measured": 42.6756,
+      "error_pct": 0.022236250385205006,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Epigaea repens",
+      "computed": -72.01387,
+      "measured": -72.001062,
+      "error_pct": 0.017789000308163713,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Spinus tristis",
+      "computed": 42.346942,
+      "measured": 42.337528,
+      "error_pct": 0.02223625038519715,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Spinus tristis",
+      "computed": -71.967817,
+      "measured": -71.955017,
+      "error_pct": 0.0177890003081594,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Ardea herodias",
+      "computed": 40.883161,
+      "measured": 40.874072,
+      "error_pct": 0.022236250385204038,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Ardea herodias",
+      "computed": -73.933501,
+      "measured": -73.920351,
+      "error_pct": 0.01778900030815215,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Melospiza melodia",
+      "computed": 40.217966,
+      "measured": 40.209025,
+      "error_pct": 0.022236250385203892,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Melospiza melodia",
+      "computed": -74.944916,
+      "measured": -74.931586,
+      "error_pct": 0.01778900030816163,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Chimaphila maculata",
+      "computed": 42.470209,
+      "measured": 42.460767,
+      "error_pct": 0.022236250385207126,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Chimaphila maculata",
+      "computed": -71.095089,
+      "measured": -71.082444,
+      "error_pct": 0.017789000308157523,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Aythya collaris",
+      "computed": 40.431114,
+      "measured": 40.422126,
+      "error_pct": 0.02223625038520508,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Aythya collaris",
+      "computed": -74.497185,
+      "measured": -74.483935,
+      "error_pct": 0.017789000308150064,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Thuja occidentalis",
+      "computed": 44.641857,
+      "measured": 44.631933,
+      "error_pct": 0.022236250385196252,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Thuja occidentalis",
+      "computed": -72.382909,
+      "measured": -72.370035,
+      "error_pct": 0.017789000308152444,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Sialia sialis",
+      "computed": 42.071789,
+      "measured": 42.062436,
+      "error_pct": 0.02223625038519128,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Sialia sialis",
+      "computed": -71.162675,
+      "measured": -71.150018,
+      "error_pct": 0.017789000308151153,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Dryobates pubescens",
+      "computed": 40.949619,
+      "measured": 40.940515,
+      "error_pct": 0.022236250385194962,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Dryobates pubescens",
+      "computed": -73.981998,
+      "measured": -73.96884,
+      "error_pct": 0.01778900030815416,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Tamiasciurus hudsonicus",
+      "computed": 42.620525,
+      "measured": 42.61105,
+      "error_pct": 0.022236250385207372,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Tamiasciurus hudsonicus",
+      "computed": -71.978699,
+      "measured": -71.965897,
+      "error_pct": 0.01778900030816393,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Prenolepis imparis",
+      "computed": 41.115394,
+      "measured": 41.106254,
+      "error_pct": 0.02223625038519486,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Prenolepis imparis",
+      "computed": -74.083776,
+      "measured": -74.0706,
+      "error_pct": 0.017789000308153596,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Passer domesticus",
+      "computed": 40.21797,
+      "measured": 40.209029,
+      "error_pct": 0.022236250385204576,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Passer domesticus",
+      "computed": -74.944874,
+      "measured": -74.931544,
+      "error_pct": 0.017789000308154748,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Betula alleghaniensis",
+      "computed": 44.641926,
+      "measured": 44.632002,
+      "error_pct": 0.02223625038519497,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Betula alleghaniensis",
+      "computed": -72.382224,
+      "measured": -72.36935,
+      "error_pct": 0.017789000308149325,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Sciurus carolinensis",
+      "computed": 40.804324,
+      "measured": 40.795253,
+      "error_pct": 0.022236250385194157,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Sciurus carolinensis",
+      "computed": -73.963952,
+      "measured": -73.950797,
+      "error_pct": 0.017789000308147784,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Passer domesticus",
+      "computed": 40.669369,
+      "measured": 40.660328,
+      "error_pct": 0.022236250385203046,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Passer domesticus",
+      "computed": -73.978368,
+      "measured": -73.96521,
+      "error_pct": 0.017789000308152444,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Spiraea alba",
+      "computed": 42.68868,
+      "measured": 42.67919,
+      "error_pct": 0.022236250385193942,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Spiraea alba",
+      "computed": -72.021965,
+      "measured": -72.009155,
+      "error_pct": 0.01778900030815803,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Populus grandidentata",
+      "computed": 42.332216,
+      "measured": 42.322805,
+      "error_pct": 0.02223625038520362,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Populus grandidentata",
+      "computed": -71.819798,
+      "measured": -71.807024,
+      "error_pct": 0.01778900030814519,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Gaultheria procumbens",
+      "computed": 42.688366,
+      "measured": 42.678876,
+      "error_pct": 0.022236250385201488,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Gaultheria procumbens",
+      "computed": -72.017641,
+      "measured": -72.004832,
+      "error_pct": 0.01778900030815647,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Lespedeza capitata",
+      "computed": 41.646382,
+      "measured": 41.637123,
+      "error_pct": 0.022236250385203802,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Lespedeza capitata",
+      "computed": -70.51874,
+      "measured": -70.506198,
+      "error_pct": 0.01778900030815279,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Morella pensylvanica",
+      "computed": 41.260082,
+      "measured": 41.250909,
+      "error_pct": 0.02223625038520186,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Morella pensylvanica",
+      "computed": -72.557062,
+      "measured": -72.544157,
+      "error_pct": 0.017789000308153145,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Troglodytes hiemalis",
+      "computed": 40.204198,
+      "measured": 40.19526,
+      "error_pct": 0.02223625038520711,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Troglodytes hiemalis",
+      "computed": -74.745714,
+      "measured": -74.73242,
+      "error_pct": 0.017789000308149457,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Podilymbus podiceps",
+      "computed": 40.669245,
+      "measured": 40.660204,
+      "error_pct": 0.022236250385199493,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Podilymbus podiceps",
+      "computed": -73.982114,
+      "measured": -73.968956,
+      "error_pct": 0.017789000308155126,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Cornus canadensis",
+      "computed": 42.688897,
+      "measured": 42.679407,
+      "error_pct": 0.022236250385199864,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Cornus canadensis",
+      "computed": -72.017476,
+      "measured": -72.004667,
+      "error_pct": 0.017789000308153693,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Verbascum thapsus",
+      "computed": 42.691855,
+      "measured": 42.682364,
+      "error_pct": 0.022236250385198917,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Verbascum thapsus",
+      "computed": -72.014942,
+      "measured": -72.002134,
+      "error_pct": 0.017789000308151098,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Sialia sialis",
+      "computed": 43.142073,
+      "measured": 43.132482,
+      "error_pct": 0.02223625038520231,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Sialia sialis",
+      "computed": -72.538336,
+      "measured": -72.525434,
+      "error_pct": 0.017789000308153707,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zonotrichia albicollis",
+      "computed": 40.217964,
+      "measured": 40.209023,
+      "error_pct": 0.022236250385194712,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zonotrichia albicollis",
+      "computed": -74.944901,
+      "measured": -74.931571,
+      "error_pct": 0.017789000308151042,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Setophaga palmarum",
+      "computed": 41.646473,
+      "measured": 41.637214,
+      "error_pct": 0.02223625038519754,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Setophaga palmarum",
+      "computed": -70.518209,
+      "measured": -70.505667,
+      "error_pct": 0.017789000308149543,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Trachemys scripta",
+      "computed": 40.806128,
+      "measured": 40.797056,
+      "error_pct": 0.02223625038519843,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Trachemys scripta",
+      "computed": -73.963308,
+      "measured": -73.950153,
+      "error_pct": 0.017789000308149713,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Bucephala clangula",
+      "computed": 41.890355,
+      "measured": 41.881042,
+      "error_pct": 0.022236250385197165,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Bucephala clangula",
+      "computed": -73.967386,
+      "measured": -73.95423,
+      "error_pct": 0.01778900030815979,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Gymnosporangium juniperi-virginianae",
+      "computed": 40.8065,
+      "measured": 40.797428,
+      "error_pct": 0.022236250385191635,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Gymnosporangium juniperi-virginianae",
+      "computed": -73.973179,
+      "measured": -73.960022,
+      "error_pct": 0.01778900030815366,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Leucauge venusta",
+      "computed": 40.805405,
+      "measured": 40.796333,
+      "error_pct": 0.022236250385202515,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Leucauge venusta",
+      "computed": -73.970318,
+      "measured": -73.957162,
+      "error_pct": 0.017789000308151726,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haemorhous purpureus",
+      "computed": 43.142073,
+      "measured": 43.132482,
+      "error_pct": 0.02223625038520231,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haemorhous purpureus",
+      "computed": -72.538336,
+      "measured": -72.525434,
+      "error_pct": 0.017789000308153707,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Melospiza melodia",
+      "computed": 40.217968,
+      "measured": 40.209027,
+      "error_pct": 0.0222362503851954,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Melospiza melodia",
+      "computed": -74.944923,
+      "measured": -74.931593,
+      "error_pct": 0.017789000308156454,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Spizella pusilla",
+      "computed": 41.840781,
+      "measured": 41.831479,
+      "error_pct": 0.022236250385202546,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Spizella pusilla",
+      "computed": -71.126956,
+      "measured": -71.114305,
+      "error_pct": 0.017789000308152825,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Vulpes vulpes",
+      "computed": 40.436298,
+      "measured": 40.427308,
+      "error_pct": 0.022236250385201273,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Vulpes vulpes",
+      "computed": -74.000606,
+      "measured": -73.987444,
+      "error_pct": 0.01778900030814666,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Celastrus orbiculatus",
+      "computed": 42.271352,
+      "measured": 42.261955,
+      "error_pct": 0.02223625038520437,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Celastrus orbiculatus",
+      "computed": -71.269306,
+      "measured": -71.25663,
+      "error_pct": 0.017789000308151212,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zonotrichia albicollis",
+      "computed": 40.668488,
+      "measured": 40.659447,
+      "error_pct": 0.02223625038520656,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zonotrichia albicollis",
+      "computed": -73.980291,
+      "measured": -73.967133,
+      "error_pct": 0.01778900030814791,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Graphopsocus cruciatus",
+      "computed": 41.115394,
+      "measured": 41.106254,
+      "error_pct": 0.02223625038519486,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Graphopsocus cruciatus",
+      "computed": -74.083776,
+      "measured": -74.0706,
+      "error_pct": 0.017789000308153596,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Hamamelis virginiana",
+      "computed": 42.693171,
+      "measured": 42.68368,
+      "error_pct": 0.022236250385195083,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Hamamelis virginiana",
+      "computed": -72.027751,
+      "measured": -72.01494,
+      "error_pct": 0.01778900030815712,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Dryobates pubescens",
+      "computed": 42.370842,
+      "measured": 42.361422,
+      "error_pct": 0.022236250385203098,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Dryobates pubescens",
+      "computed": -71.144729,
+      "measured": -71.132075,
+      "error_pct": 0.017789000308152274,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Agrilus planipennis",
+      "computed": 40.378483,
+      "measured": 40.369506,
+      "error_pct": 0.022236250385194584,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Agrilus planipennis",
+      "computed": -74.628335,
+      "measured": -74.615062,
+      "error_pct": 0.01778900030816255,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Cardamine impatiens",
+      "computed": 40.803223,
+      "measured": 40.794152,
+      "error_pct": 0.022236250385195316,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Cardamine impatiens",
+      "computed": -73.976135,
+      "measured": -73.962978,
+      "error_pct": 0.01778900030815507,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Fagus grandifolia",
+      "computed": 40.592799,
+      "measured": 40.583775,
+      "error_pct": 0.022236250385201658,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Fagus grandifolia",
+      "computed": -74.138286,
+      "measured": -74.1251,
+      "error_pct": 0.017789000308163865,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Rhodotypos scandens",
+      "computed": 40.805112,
+      "measured": 40.79604,
+      "error_pct": 0.02223625038520089,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Rhodotypos scandens",
+      "computed": -73.965047,
+      "measured": -73.951892,
+      "error_pct": 0.017789000308162196,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Ardea herodias",
+      "computed": 40.814888,
+      "measured": 40.805814,
+      "error_pct": 0.02223625038520684,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Ardea herodias",
+      "computed": -73.045971,
+      "measured": -73.032979,
+      "error_pct": 0.01778900030816306,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Fagus grandifolia",
+      "computed": 42.693812,
+      "measured": 42.684321,
+      "error_pct": 0.02223625038520291,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Fagus grandifolia",
+      "computed": -72.027265,
+      "measured": -72.014454,
+      "error_pct": 0.017789000308147524,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Phyllotopsis nidulans",
+      "computed": 40.178574,
+      "measured": 40.169642,
+      "error_pct": 0.022236250385205634,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Phyllotopsis nidulans",
+      "computed": -74.215033,
+      "measured": -74.201833,
+      "error_pct": 0.017789000308147212,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haemorhous mexicanus",
+      "computed": 40.479962,
+      "measured": 40.470963,
+      "error_pct": 0.0222362503852075,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haemorhous mexicanus",
+      "computed": -74.01749,
+      "measured": -74.004325,
+      "error_pct": 0.017789000308158602,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Hericium erinaceus",
+      "computed": 40.760384,
+      "measured": 40.751322,
+      "error_pct": 0.022236250385193574,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Hericium erinaceus",
+      "computed": -74.400588,
+      "measured": -74.387355,
+      "error_pct": 0.01778900030815264,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zenaida macroura",
+      "computed": 42.481077,
+      "measured": 42.471633,
+      "error_pct": 0.022236250385206085,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zenaida macroura",
+      "computed": -71.178402,
+      "measured": -71.165742,
+      "error_pct": 0.01778900030815976,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Odocoileus virginianus",
+      "computed": 40.682005,
+      "measured": 40.672961,
+      "error_pct": 0.02223625038520014,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Odocoileus virginianus",
+      "computed": -74.865523,
+      "measured": -74.852208,
+      "error_pct": 0.01778900030816359,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haemorhous mexicanus",
+      "computed": 40.217959,
+      "measured": 40.209018,
+      "error_pct": 0.02223625038520711,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haemorhous mexicanus",
+      "computed": -74.944882,
+      "measured": -74.931552,
+      "error_pct": 0.017789000308151542,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Quiscalus quiscula",
+      "computed": 40.744169,
+      "measured": 40.735111,
+      "error_pct": 0.022236250385192648,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Quiscalus quiscula",
+      "computed": -73.786595,
+      "measured": -73.773471,
+      "error_pct": 0.01778900030815024,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Acer saccharum",
+      "computed": 43.585282,
+      "measured": 43.575592,
+      "error_pct": 0.02223625038520561,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Acer saccharum",
+      "computed": -71.397016,
+      "measured": -71.384317,
+      "error_pct": 0.017789000308157256,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haliaeetus leucocephalus",
+      "computed": 41.841366,
+      "measured": 41.832064,
+      "error_pct": 0.0222362503852013,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haliaeetus leucocephalus",
+      "computed": -71.129228,
+      "measured": -71.116577,
+      "error_pct": 0.017789000308153197,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Poecile atricapillus",
+      "computed": 44.64218,
+      "measured": 44.632255,
+      "error_pct": 0.022236250385206196,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Poecile atricapillus",
+      "computed": -72.381954,
+      "measured": -72.36908,
+      "error_pct": 0.017789000308148385,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Lenzites betulinus",
+      "computed": 40.806127,
+      "measured": 40.797055,
+      "error_pct": 0.022236250385193907,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Lenzites betulinus",
+      "computed": -73.970714,
+      "measured": -73.957558,
+      "error_pct": 0.017789000308154355,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Ficaria verna",
+      "computed": 40.804125,
+      "measured": 40.795054,
+      "error_pct": 0.022236250385199715,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Ficaria verna",
+      "computed": -73.975291,
+      "measured": -73.962134,
+      "error_pct": 0.017789000308161298,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Larix laricina",
+      "computed": 42.68777,
+      "measured": 42.67828,
+      "error_pct": 0.022236250385205093,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Larix laricina",
+      "computed": -72.01714,
+      "measured": -72.004331,
+      "error_pct": 0.01778900030815559,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Solidago sempervirens",
+      "computed": 40.837262,
+      "measured": 40.828183,
+      "error_pct": 0.022236250385194774,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Solidago sempervirens",
+      "computed": -73.96261,
+      "measured": -73.949455,
+      "error_pct": 0.017789000308159143,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Eptesicus fuscus",
+      "computed": 41.11658,
+      "measured": 41.107439,
+      "error_pct": 0.022236250385207802,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Eptesicus fuscus",
+      "computed": -73.907491,
+      "measured": -73.894346,
+      "error_pct": 0.017789000308163,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Lophodytes cucullatus",
+      "computed": 41.752318,
+      "measured": 41.743036,
+      "error_pct": 0.022236250385203344,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Lophodytes cucullatus",
+      "computed": -70.157213,
+      "measured": -70.144735,
+      "error_pct": 0.017789000308147125,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus rigida",
+      "computed": 42.690043,
+      "measured": 42.680552,
+      "error_pct": 0.022236250385205866,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus rigida",
+      "computed": -72.018276,
+      "measured": -72.005467,
+      "error_pct": 0.01778900030815577,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Passer domesticus",
+      "computed": 40.217979,
+      "measured": 40.209038,
+      "error_pct": 0.022236250385192866,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Passer domesticus",
+      "computed": -74.944866,
+      "measured": -74.931536,
+      "error_pct": 0.01778900030815795,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Solidago sempervirens",
+      "computed": 41.385219,
+      "measured": 41.376019,
+      "error_pct": 0.02223625038519328,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Solidago sempervirens",
+      "computed": -71.525801,
+      "measured": -71.51308,
+      "error_pct": 0.017789000308158828,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Paulownia tomentosa",
+      "computed": 40.697372,
+      "measured": 40.688324,
+      "error_pct": 0.022236250385197075,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Paulownia tomentosa",
+      "computed": -73.896519,
+      "measured": -73.883376,
+      "error_pct": 0.01778900030815187,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Branta canadensis",
+      "computed": 40.806003,
+      "measured": 40.796931,
+      "error_pct": 0.022236250385207785,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Branta canadensis",
+      "computed": -73.963886,
+      "measured": -73.950731,
+      "error_pct": 0.017789000308150546,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Mitchella repens",
+      "computed": 42.329752,
+      "measured": 42.320342,
+      "error_pct": 0.02223625038519272,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Mitchella repens",
+      "computed": -72.836376,
+      "measured": -72.823421,
+      "error_pct": 0.017789000308159643,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zonotrichia albicollis",
+      "computed": 40.217968,
+      "measured": 40.209027,
+      "error_pct": 0.0222362503851954,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zonotrichia albicollis",
+      "computed": -74.944915,
+      "measured": -74.931585,
+      "error_pct": 0.01778900030815966,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Gymnosporangium juniperi-virginianae",
+      "computed": 41.696739,
+      "measured": 41.687469,
+      "error_pct": 0.022236250385204326,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Gymnosporangium juniperi-virginianae",
+      "computed": -73.875749,
+      "measured": -73.86261,
+      "error_pct": 0.017789000308148,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Hedeoma pulegioides",
+      "computed": 41.269563,
+      "measured": 41.260388,
+      "error_pct": 0.022236250385197193,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Hedeoma pulegioides",
+      "computed": -74.161475,
+      "measured": -74.148285,
+      "error_pct": 0.017789000308154092,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Pyrola elliptica",
+      "computed": 41.970664,
+      "measured": 41.961333,
+      "error_pct": 0.022236250385194646,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Pyrola elliptica",
+      "computed": -71.924795,
+      "measured": -71.912003,
+      "error_pct": 0.017789000308152406,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Somateria mollissima",
+      "computed": 41.761586,
+      "measured": 41.752302,
+      "error_pct": 0.022236250385193338,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Somateria mollissima",
+      "computed": -70.200214,
+      "measured": -70.187728,
+      "error_pct": 0.017789000308150626,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Artemisia vulgaris",
+      "computed": 40.665774,
+      "measured": 40.656733,
+      "error_pct": 0.022236250385191964,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Artemisia vulgaris",
+      "computed": -73.983631,
+      "measured": -73.970472,
+      "error_pct": 0.017789000308164427,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Passer domesticus",
+      "computed": 40.21799,
+      "measured": 40.209049,
+      "error_pct": 0.022236250385190334,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Passer domesticus",
+      "computed": -74.944866,
+      "measured": -74.931536,
+      "error_pct": 0.01778900030815795,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Callicladium imponens",
+      "computed": 41.215706,
+      "measured": 41.206543,
+      "error_pct": 0.022236250385201786,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Callicladium imponens",
+      "computed": -73.858191,
+      "measured": -73.845055,
+      "error_pct": 0.01778900030815497,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Maclura pomifera",
+      "computed": 40.246175,
+      "measured": 40.237228,
+      "error_pct": 0.02223625038519359,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Maclura pomifera",
+      "computed": -74.976722,
+      "measured": -74.963387,
+      "error_pct": 0.01778900030815276,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Populus grandidentata",
+      "computed": 44.641927,
+      "measured": 44.632003,
+      "error_pct": 0.022236250385199108,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Populus grandidentata",
+      "computed": -72.382389,
+      "measured": -72.369515,
+      "error_pct": 0.017789000308152083,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zenaida macroura",
+      "computed": 40.667576,
+      "measured": 40.658535,
+      "error_pct": 0.022236250385191714,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zenaida macroura",
+      "computed": -73.980641,
+      "measured": -73.967483,
+      "error_pct": 0.017789000308154796,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Leuconotopicus villosus",
+      "computed": 44.357856,
+      "measured": 44.347995,
+      "error_pct": 0.022236250385201304,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Leuconotopicus villosus",
+      "computed": -72.603268,
+      "measured": -72.590355,
+      "error_pct": 0.017789000308155348,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Tsuga canadensis",
+      "computed": 42.363568,
+      "measured": 42.35415,
+      "error_pct": 0.022236250385193643,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Tsuga canadensis",
+      "computed": -71.401599,
+      "measured": -71.3889,
+      "error_pct": 0.01778900030815901,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Kalmia angustifolia",
+      "computed": 41.387933,
+      "measured": 41.378732,
+      "error_pct": 0.02223625038520316,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Kalmia angustifolia",
+      "computed": -70.649044,
+      "measured": -70.636478,
+      "error_pct": 0.01778900030814611,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Inonotus obliquus",
+      "computed": 44.641933,
+      "measured": 44.632009,
+      "error_pct": 0.022236250385192072,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Inonotus obliquus",
+      "computed": -72.382212,
+      "measured": -72.369338,
+      "error_pct": 0.01778900030816412,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Anas platyrhynchos",
+      "computed": 40.668819,
+      "measured": 40.659778,
+      "error_pct": 0.022236250385205894,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Anas platyrhynchos",
+      "computed": -73.979558,
+      "measured": -73.9664,
+      "error_pct": 0.017789000308164337,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Melospiza melodia",
+      "computed": 40.217983,
+      "measured": 40.209042,
+      "error_pct": 0.022236250385193557,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Melospiza melodia",
+      "computed": -74.944889,
+      "measured": -74.931559,
+      "error_pct": 0.01778900030814637,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Echinarachnius parma",
+      "computed": 42.845237,
+      "measured": 42.835712,
+      "error_pct": 0.022236250385199045,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Echinarachnius parma",
+      "computed": -70.827584,
+      "measured": -70.814987,
+      "error_pct": 0.017789000308161444,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Coptis trifolia",
+      "computed": 42.691844,
+      "measured": 42.682353,
+      "error_pct": 0.0222362503852013,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Coptis trifolia",
+      "computed": -72.026541,
+      "measured": -72.01373,
+      "error_pct": 0.017789000308163112,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Kalmia latifolia",
+      "computed": 40.759959,
+      "measured": 40.750898,
+      "error_pct": 0.022236250385191586,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Kalmia latifolia",
+      "computed": -74.74963,
+      "measured": -74.736335,
+      "error_pct": 0.01778900030816269,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Petricolaria pholadiformis",
+      "computed": 42.841102,
+      "measured": 42.831578,
+      "error_pct": 0.022236250385205443,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Petricolaria pholadiformis",
+      "computed": -70.827019,
+      "measured": -70.814422,
+      "error_pct": 0.017789000308147538,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Troglodytes hiemalis",
+      "computed": 41.274243,
+      "measured": 41.265067,
+      "error_pct": 0.02223625038519982,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Troglodytes hiemalis",
+      "computed": -72.758052,
+      "measured": -72.745111,
+      "error_pct": 0.017789000308160594,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haemorhous mexicanus",
+      "computed": 40.667691,
+      "measured": 40.65865,
+      "error_pct": 0.022236250385206848,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haemorhous mexicanus",
+      "computed": -73.980816,
+      "measured": -73.967658,
+      "error_pct": 0.01778900030815824,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Anas rubripes",
+      "computed": 41.761759,
+      "measured": 41.752475,
+      "error_pct": 0.022236250385192127,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Anas rubripes",
+      "computed": -70.164887,
+      "measured": -70.152408,
+      "error_pct": 0.017789000308148787,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Histrionicus histrionicus",
+      "computed": 42.702058,
+      "measured": 42.692565,
+      "error_pct": 0.02223625038520283,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Histrionicus histrionicus",
+      "computed": -70.644835,
+      "measured": -70.63227,
+      "error_pct": 0.017789000308163553,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Anas platyrhynchos",
+      "computed": 41.754511,
+      "measured": 41.745228,
+      "error_pct": 0.022236250385190916,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Anas platyrhynchos",
+      "computed": -70.193475,
+      "measured": -70.180991,
+      "error_pct": 0.017789000308153682,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Ardea herodias",
+      "computed": 41.755677,
+      "measured": 41.746394,
+      "error_pct": 0.02223625038520477,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Ardea herodias",
+      "computed": -70.193304,
+      "measured": -70.18082,
+      "error_pct": 0.01778900030815847,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Oxyura jamaicensis",
+      "computed": 42.473442,
+      "measured": 42.464,
+      "error_pct": 0.022236250385200787,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Oxyura jamaicensis",
+      "computed": -71.112397,
+      "measured": -71.099749,
+      "error_pct": 0.017789000308150876,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Solanum carolinense",
+      "computed": 40.691509,
+      "measured": 40.682463,
+      "error_pct": 0.022236250385194944,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Solanum carolinense",
+      "computed": -73.889512,
+      "measured": -73.87637,
+      "error_pct": 0.01778900030815585,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Symphoricarpos orbiculatus",
+      "computed": 42.311652,
+      "measured": 42.302246,
+      "error_pct": 0.022236250385199538,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Symphoricarpos orbiculatus",
+      "computed": -71.137683,
+      "measured": -71.125031,
+      "error_pct": 0.017789000308157457,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Fulica americana",
+      "computed": 42.330186,
+      "measured": 42.320775,
+      "error_pct": 0.0222362503852003,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Fulica americana",
+      "computed": -71.134332,
+      "measured": -71.12168,
+      "error_pct": 0.01778900030815533,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Melospiza melodia",
+      "computed": 42.4627,
+      "measured": 42.45326,
+      "error_pct": 0.022236250385197186,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Melospiza melodia",
+      "computed": -71.092662,
+      "measured": -71.080018,
+      "error_pct": 0.0177890003081572,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Solanum carolinense",
+      "computed": 41.008195,
+      "measured": 40.999078,
+      "error_pct": 0.022236250385195215,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Solanum carolinense",
+      "computed": -73.816779,
+      "measured": -73.80365,
+      "error_pct": 0.017789000308150945,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Buteo jamaicensis",
+      "computed": 40.669245,
+      "measured": 40.660204,
+      "error_pct": 0.022236250385199493,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Buteo jamaicensis",
+      "computed": -73.982114,
+      "measured": -73.968956,
+      "error_pct": 0.017789000308155126,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Stereum complicatum",
+      "computed": 42.47157,
+      "measured": 42.462128,
+      "error_pct": 0.02223625038519803,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Stereum complicatum",
+      "computed": -71.098589,
+      "measured": -71.085944,
+      "error_pct": 0.017789000308149224,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Anas carolinensis",
+      "computed": 40.804126,
+      "measured": 40.795055,
+      "error_pct": 0.02223625038520424,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Anas carolinensis",
+      "computed": -73.975139,
+      "measured": -73.961982,
+      "error_pct": 0.01778900030814612,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Schizachyrium scoparium",
+      "computed": 41.646667,
+      "measured": 41.637408,
+      "error_pct": 0.022236250385204066,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Schizachyrium scoparium",
+      "computed": -70.518083,
+      "measured": -70.505541,
+      "error_pct": 0.017789000308147753,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Dryocopus pileatus",
+      "computed": 41.207848,
+      "measured": 41.198687,
+      "error_pct": 0.022236250385197817,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Dryocopus pileatus",
+      "computed": -73.797917,
+      "measured": -73.784791,
+      "error_pct": 0.017789000308149033,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Adelges abietis",
+      "computed": 43.370379,
+      "measured": 43.360737,
+      "error_pct": 0.022236250385195992,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Adelges abietis",
+      "computed": -72.008926,
+      "measured": -71.996119,
+      "error_pct": 0.017789000308154126,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Trametes versicolor",
+      "computed": 41.838095,
+      "measured": 41.828794,
+      "error_pct": 0.022236250385197387,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Trametes versicolor",
+      "computed": -71.128954,
+      "measured": -71.116303,
+      "error_pct": 0.017789000308163917,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Bucephala islandica",
+      "computed": 41.89061,
+      "measured": 41.881297,
+      "error_pct": 0.02223625038520097,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Bucephala islandica",
+      "computed": -73.967621,
+      "measured": -73.954465,
+      "error_pct": 0.017789000308148492,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Phoca vitulina",
+      "computed": 41.853389,
+      "measured": 41.844084,
+      "error_pct": 0.02223625038519511,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Phoca vitulina",
+      "computed": -70.543925,
+      "measured": -70.531378,
+      "error_pct": 0.01778900030814742,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zonotrichia albicollis",
+      "computed": 40.217965,
+      "measured": 40.209024,
+      "error_pct": 0.022236250385199302,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zonotrichia albicollis",
+      "computed": -74.94491,
+      "measured": -74.93158,
+      "error_pct": 0.01778900030814981,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Passer domesticus",
+      "computed": 41.29175,
+      "measured": 41.28257,
+      "error_pct": 0.02223625038519276,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Passer domesticus",
+      "computed": -73.716546,
+      "measured": -73.703435,
+      "error_pct": 0.017789000308161093,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Poronidulus conchifer",
+      "computed": 40.806109,
+      "measured": 40.797037,
+      "error_pct": 0.022236250385199573,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Poronidulus conchifer",
+      "computed": -73.970676,
+      "measured": -73.95752,
+      "error_pct": 0.017789000308155365,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Mergus merganser",
+      "computed": 44.540939,
+      "measured": 44.531037,
+      "error_pct": 0.02223625038519559,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Mergus merganser",
+      "computed": -73.286357,
+      "measured": -73.273322,
+      "error_pct": 0.017789000308146844,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Dryobates pubescens",
+      "computed": 42.481539,
+      "measured": 42.472095,
+      "error_pct": 0.022236250385205797,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Dryobates pubescens",
+      "computed": -71.180363,
+      "measured": -71.167703,
+      "error_pct": 0.017789000308153995,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Sturnus vulgaris",
+      "computed": 42.075204,
+      "measured": 42.06585,
+      "error_pct": 0.022236250385201883,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Sturnus vulgaris",
+      "computed": -73.432249,
+      "measured": -73.419188,
+      "error_pct": 0.017789000308161624,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Melanerpes carolinus",
+      "computed": 40.669245,
+      "measured": 40.660204,
+      "error_pct": 0.022236250385199493,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Melanerpes carolinus",
+      "computed": -73.982114,
+      "measured": -73.968956,
+      "error_pct": 0.017789000308155126,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Calyptospora columnaris",
+      "computed": 42.689269,
+      "measured": 42.679779,
+      "error_pct": 0.022236250385193366,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Calyptospora columnaris",
+      "computed": -72.016934,
+      "measured": -72.004125,
+      "error_pct": 0.017789000308147698,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Mimus polyglottos",
+      "computed": 40.803102,
+      "measured": 40.794031,
+      "error_pct": 0.02223625038520535,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Mimus polyglottos",
+      "computed": -73.965736,
+      "measured": -73.952581,
+      "error_pct": 0.017789000308154015,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 42.465369,
+      "measured": 42.455928,
+      "error_pct": 0.022236250385195326,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": -71.120146,
+      "measured": -71.107497,
+      "error_pct": 0.01778900030814834,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Anas rubripes",
+      "computed": 40.668248,
+      "measured": 40.659207,
+      "error_pct": 0.022236250385200815,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Anas rubripes",
+      "computed": -73.980703,
+      "measured": -73.967545,
+      "error_pct": 0.017789000308163258,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Chauliodes pectinicornis",
+      "computed": 42.347076,
+      "measured": 42.337662,
+      "error_pct": 0.022236250385193793,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Chauliodes pectinicornis",
+      "computed": -71.966537,
+      "measured": -71.953737,
+      "error_pct": 0.017789000308160028,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Buteo lineatus",
+      "computed": 42.613674,
+      "measured": 42.6042,
+      "error_pct": 0.022236250385191215,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Buteo lineatus",
+      "computed": -71.62956,
+      "measured": -71.61682,
+      "error_pct": 0.017789000308151986,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zonotrichia albicollis",
+      "computed": 40.217962,
+      "measured": 40.209021,
+      "error_pct": 0.022236250385203205,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zonotrichia albicollis",
+      "computed": -74.944902,
+      "measured": -74.931572,
+      "error_pct": 0.017789000308153013,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haemorhous mexicanus",
+      "computed": 40.217964,
+      "measured": 40.209023,
+      "error_pct": 0.022236250385194712,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haemorhous mexicanus",
+      "computed": -74.944902,
+      "measured": -74.931572,
+      "error_pct": 0.017789000308153013,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Porpidia albocaerulescens",
+      "computed": 42.468257,
+      "measured": 42.458816,
+      "error_pct": 0.02223625038519572,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Porpidia albocaerulescens",
+      "computed": -71.334213,
+      "measured": -71.321526,
+      "error_pct": 0.017789000308160913,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haemorhous mexicanus",
+      "computed": 40.217963,
+      "measured": 40.209022,
+      "error_pct": 0.022236250385207795,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haemorhous mexicanus",
+      "computed": -74.944874,
+      "measured": -74.931544,
+      "error_pct": 0.017789000308154748,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Buteo jamaicensis",
+      "computed": 41.508944,
+      "measured": 41.499716,
+      "error_pct": 0.022236250385202543,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Buteo jamaicensis",
+      "computed": -71.264446,
+      "measured": -71.251771,
+      "error_pct": 0.017789000308156003,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Clangula hyemalis",
+      "computed": 42.702276,
+      "measured": 42.692783,
+      "error_pct": 0.02223625038519643,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Clangula hyemalis",
+      "computed": -70.643663,
+      "measured": -70.631098,
+      "error_pct": 0.017789000308148485,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Prunus serotina",
+      "computed": 44.64192,
+      "measured": 44.631996,
+      "error_pct": 0.022236250385202005,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Prunus serotina",
+      "computed": -72.382619,
+      "measured": -72.369745,
+      "error_pct": 0.017789000308149977,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Lophodytes cucullatus",
+      "computed": 40.796706,
+      "measured": 40.787636,
+      "error_pct": 0.022236250385191347,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Lophodytes cucullatus",
+      "computed": -73.9756,
+      "measured": -73.962443,
+      "error_pct": 0.01778900030816321,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Callicladium imponens",
+      "computed": 43.299382,
+      "measured": 43.289756,
+      "error_pct": 0.02223625038519579,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Callicladium imponens",
+      "computed": -73.712306,
+      "measured": -73.699196,
+      "error_pct": 0.01778900030815428,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Buteo jamaicensis",
+      "computed": 40.588258,
+      "measured": 40.579235,
+      "error_pct": 0.022236250385200718,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Buteo jamaicensis",
+      "computed": -74.10375,
+      "measured": -74.09057,
+      "error_pct": 0.0177890003081634,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Equisetum scirpoides",
+      "computed": 44.642308,
+      "measured": 44.632383,
+      "error_pct": 0.02223625038519413,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Equisetum scirpoides",
+      "computed": -72.380222,
+      "measured": -72.367349,
+      "error_pct": 0.017789000308151944,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Anas platyrhynchos",
+      "computed": 40.669245,
+      "measured": 40.660204,
+      "error_pct": 0.022236250385199493,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Anas platyrhynchos",
+      "computed": -73.982114,
+      "measured": -73.968956,
+      "error_pct": 0.017789000308155126,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Artemisia vulgaris",
+      "computed": 42.69064,
+      "measured": 42.681149,
+      "error_pct": 0.02223625038520658,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Artemisia vulgaris",
+      "computed": -72.017909,
+      "measured": -72.0051,
+      "error_pct": 0.01778900030815331,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Poecile atricapillus",
+      "computed": 41.508938,
+      "measured": 41.49971,
+      "error_pct": 0.022236250385192984,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Poecile atricapillus",
+      "computed": -71.263887,
+      "measured": -71.251212,
+      "error_pct": 0.017789000308154616,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Gymnosporangium juniperi-virginianae",
+      "computed": 41.841069,
+      "measured": 41.831767,
+      "error_pct": 0.02223625038519906,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Gymnosporangium juniperi-virginianae",
+      "computed": -71.130954,
+      "measured": -71.118303,
+      "error_pct": 0.017789000308159178,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Calidris alba",
+      "computed": 41.285986,
+      "measured": 41.276808,
+      "error_pct": 0.02223625038520289,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Calidris alba",
+      "computed": -70.232019,
+      "measured": -70.219528,
+      "error_pct": 0.017789000308159296,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haemorhous mexicanus",
+      "computed": 40.669245,
+      "measured": 40.660204,
+      "error_pct": 0.022236250385199493,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haemorhous mexicanus",
+      "computed": -73.982114,
+      "measured": -73.968956,
+      "error_pct": 0.017789000308155126,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Anas platyrhynchos",
+      "computed": 40.803771,
+      "measured": 40.7947,
+      "error_pct": 0.022236250385200846,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Anas platyrhynchos",
+      "computed": -73.974775,
+      "measured": -73.961618,
+      "error_pct": 0.017789000308149717,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Juncus tenuis",
+      "computed": 40.803491,
+      "measured": 40.79442,
+      "error_pct": 0.022236250385205773,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Juncus tenuis",
+      "computed": -73.974516,
+      "measured": -73.961359,
+      "error_pct": 0.017789000308151535,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Troglodytes hiemalis",
+      "computed": 42.613674,
+      "measured": 42.6042,
+      "error_pct": 0.022236250385191215,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Troglodytes hiemalis",
+      "computed": -71.62956,
+      "measured": -71.61682,
+      "error_pct": 0.017789000308151986,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Dryobates pubescens",
+      "computed": 41.483602,
+      "measured": 41.47438,
+      "error_pct": 0.022236250385205165,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Dryobates pubescens",
+      "computed": -71.312358,
+      "measured": -71.299675,
+      "error_pct": 0.017789000308162665,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Somateria mollissima",
+      "computed": 41.758405,
+      "measured": 41.749122,
+      "error_pct": 0.02223625038519577,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Somateria mollissima",
+      "computed": -70.167083,
+      "measured": -70.154603,
+      "error_pct": 0.017789000308149186,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 40.804916,
+      "measured": 40.795845,
+      "error_pct": 0.022236250385207126,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": -73.972119,
+      "measured": -73.958962,
+      "error_pct": 0.017789000308151462,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Sciurus carolinensis",
+      "computed": 42.366522,
+      "measured": 42.357103,
+      "error_pct": 0.022236250385192037,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Sciurus carolinensis",
+      "computed": -71.076371,
+      "measured": -71.063729,
+      "error_pct": 0.017789000308154723,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Castanea dentata",
+      "computed": 42.690271,
+      "measured": 42.68078,
+      "error_pct": 0.022236250385192752,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Castanea dentata",
+      "computed": -72.012298,
+      "measured": -71.99949,
+      "error_pct": 0.017789000308157762,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Buteo jamaicensis",
+      "computed": 41.542138,
+      "measured": 41.532903,
+      "error_pct": 0.02223625038519876,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Buteo jamaicensis",
+      "computed": -71.031631,
+      "measured": -71.018997,
+      "error_pct": 0.017789000308158276,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Calidris maritima",
+      "computed": 42.70204,
+      "measured": 42.692547,
+      "error_pct": 0.022236250385191603,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Calidris maritima",
+      "computed": -70.643881,
+      "measured": -70.631316,
+      "error_pct": 0.017789000308161485,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Mitchella repens",
+      "computed": 41.848118,
+      "measured": 41.838815,
+      "error_pct": 0.022236250385205686,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Mitchella repens",
+      "computed": -73.228008,
+      "measured": -73.214984,
+      "error_pct": 0.01778900030816173,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Melospiza melodia",
+      "computed": 40.203824,
+      "measured": 40.194886,
+      "error_pct": 0.022236250385204825,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Melospiza melodia",
+      "computed": -74.74511,
+      "measured": -74.731816,
+      "error_pct": 0.01778900030815432,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Phoca vitulina",
+      "computed": 41.865137,
+      "measured": 41.85583,
+      "error_pct": 0.022236250385203212,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Phoca vitulina",
+      "computed": -70.53955,
+      "measured": -70.527004,
+      "error_pct": 0.01778900030815997,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Cirsium vulgare",
+      "computed": 42.692068,
+      "measured": 42.682577,
+      "error_pct": 0.02223625038520419,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Cirsium vulgare",
+      "computed": -72.014539,
+      "measured": -72.001731,
+      "error_pct": 0.017789000308153776,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Dimelaena oreina",
+      "computed": 42.450154,
+      "measured": 42.440717,
+      "error_pct": 0.022236250385206213,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Dimelaena oreina",
+      "computed": -71.097416,
+      "measured": -71.084771,
+      "error_pct": 0.017789000308152166,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Sitta carolinensis",
+      "computed": 41.770566,
+      "measured": 41.76128,
+      "error_pct": 0.02223625038520385,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Sitta carolinensis",
+      "computed": -70.102931,
+      "measured": -70.090463,
+      "error_pct": 0.017789000308150147,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Tsuga canadensis",
+      "computed": 42.440505,
+      "measured": 42.43107,
+      "error_pct": 0.022236250385200197,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Tsuga canadensis",
+      "computed": -71.406963,
+      "measured": -71.394263,
+      "error_pct": 0.017789000308161322,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Lyonia ligustrina",
+      "computed": 42.688399,
+      "measured": 42.678909,
+      "error_pct": 0.022236250385194334,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Lyonia ligustrina",
+      "computed": -72.021766,
+      "measured": -72.008956,
+      "error_pct": 0.017789000308164497,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zonotrichia albicollis",
+      "computed": 40.217985,
+      "measured": 40.209044,
+      "error_pct": 0.022236250385202733,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zonotrichia albicollis",
+      "computed": -74.944882,
+      "measured": -74.931552,
+      "error_pct": 0.017789000308151542,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haemorhous mexicanus",
+      "computed": 40.217965,
+      "measured": 40.209024,
+      "error_pct": 0.022236250385199302,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haemorhous mexicanus",
+      "computed": -74.944903,
+      "measured": -74.931573,
+      "error_pct": 0.017789000308154983,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Regulus calendula",
+      "computed": 41.645986,
+      "measured": 41.636728,
+      "error_pct": 0.022236250385193855,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Regulus calendula",
+      "computed": -70.521135,
+      "measured": -70.508592,
+      "error_pct": 0.017789000308146587,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Buteo jamaicensis",
+      "computed": 40.814992,
+      "measured": 40.805918,
+      "error_pct": 0.022236250385207,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Buteo jamaicensis",
+      "computed": -73.981769,
+      "measured": -73.968611,
+      "error_pct": 0.01778900030815822,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Hamamelis virginiana",
+      "computed": 40.805227,
+      "measured": 40.796155,
+      "error_pct": 0.022236250385198556,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Hamamelis virginiana",
+      "computed": -73.971674,
+      "measured": -73.958518,
+      "error_pct": 0.017789000308149096,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zonotrichia albicollis",
+      "computed": 40.217981,
+      "measured": 40.20904,
+      "error_pct": 0.022236250385202043,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zonotrichia albicollis",
+      "computed": -74.944883,
+      "measured": -74.931553,
+      "error_pct": 0.017789000308153512,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Icterus galbula",
+      "computed": 40.668819,
+      "measured": 40.659778,
+      "error_pct": 0.022236250385205894,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Icterus galbula",
+      "computed": -73.979558,
+      "measured": -73.9664,
+      "error_pct": 0.017789000308164337,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Abies balsamea",
+      "computed": 42.691995,
+      "measured": 42.682504,
+      "error_pct": 0.022236250385204884,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Abies balsamea",
+      "computed": -72.026825,
+      "measured": -72.014014,
+      "error_pct": 0.017789000308153287,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Mitchella repens",
+      "computed": 40.759959,
+      "measured": 40.750898,
+      "error_pct": 0.022236250385191586,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Mitchella repens",
+      "computed": -74.74963,
+      "measured": -74.736335,
+      "error_pct": 0.01778900030816269,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zonotrichia albicollis",
+      "computed": 40.217982,
+      "measured": 40.209041,
+      "error_pct": 0.022236250385206636,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zonotrichia albicollis",
+      "computed": -74.94487,
+      "measured": -74.93154,
+      "error_pct": 0.01778900030814687,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Alliaria petiolata",
+      "computed": 41.694328,
+      "measured": 41.685059,
+      "error_pct": 0.022236250385206276,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Alliaria petiolata",
+      "computed": -73.878283,
+      "measured": -73.865143,
+      "error_pct": 0.017789000308150532,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus rigida",
+      "computed": 42.690064,
+      "measured": 42.680573,
+      "error_pct": 0.02223625038519677,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus rigida",
+      "computed": -72.018221,
+      "measured": -72.005412,
+      "error_pct": 0.017789000308161423,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Catharus guttatus",
+      "computed": 41.456462,
+      "measured": 41.447246,
+      "error_pct": 0.02223625038519156,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Catharus guttatus",
+      "computed": -70.634432,
+      "measured": -70.621869,
+      "error_pct": 0.017789000308154092,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Passerina ciris",
+      "computed": 41.29312,
+      "measured": 41.28394,
+      "error_pct": 0.022236250385206418,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Passerina ciris",
+      "computed": -70.112459,
+      "measured": -70.099989,
+      "error_pct": 0.017789000308161787,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haemorhous mexicanus",
+      "computed": 41.770616,
+      "measured": 41.76133,
+      "error_pct": 0.022236250385203597,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haemorhous mexicanus",
+      "computed": -70.103272,
+      "measured": -70.090804,
+      "error_pct": 0.01778900030815873,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Goodyera pubescens",
+      "computed": 40.759959,
+      "measured": 40.750898,
+      "error_pct": 0.022236250385191586,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Goodyera pubescens",
+      "computed": -74.74963,
+      "measured": -74.736335,
+      "error_pct": 0.01778900030816269,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Kalmia latifolia",
+      "computed": 41.847761,
+      "measured": 41.838458,
+      "error_pct": 0.022236250385193553,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Kalmia latifolia",
+      "computed": -73.228931,
+      "measured": -73.215907,
+      "error_pct": 0.017789000308159452,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Carya ovata",
+      "computed": 42.249613,
+      "measured": 42.24022,
+      "error_pct": 0.022236250385193355,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Carya ovata",
+      "computed": -71.718539,
+      "measured": -71.705783,
+      "error_pct": 0.017789000308163886,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zapatella quercusphellos",
+      "computed": 42.689213,
+      "measured": 42.679723,
+      "error_pct": 0.022236250385200967,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zapatella quercusphellos",
+      "computed": -72.016747,
+      "measured": -72.003938,
+      "error_pct": 0.017789000308159032,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Falco peregrinus",
+      "computed": 40.659973,
+      "measured": 40.650934,
+      "error_pct": 0.02223625038519161,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Falco peregrinus",
+      "computed": -74.021466,
+      "measured": -74.008301,
+      "error_pct": 0.01778900030815922,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Passer domesticus",
+      "computed": 40.217965,
+      "measured": 40.209024,
+      "error_pct": 0.022236250385199302,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Passer domesticus",
+      "computed": -74.94487,
+      "measured": -74.93154,
+      "error_pct": 0.01778900030814687,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haliaeetus leucocephalus",
+      "computed": 44.138056,
+      "measured": 44.128244,
+      "error_pct": 0.022236250385199753,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haliaeetus leucocephalus",
+      "computed": -73.444421,
+      "measured": -73.431358,
+      "error_pct": 0.017789000308146848,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Spatula clypeata",
+      "computed": 40.665626,
+      "measured": 40.656585,
+      "error_pct": 0.02223625038520182,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Spatula clypeata",
+      "computed": -73.983694,
+      "measured": -73.970535,
+      "error_pct": 0.017789000308155677,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 42.347106,
+      "measured": 42.337692,
+      "error_pct": 0.022236250385207074,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": -71.966537,
+      "measured": -71.953737,
+      "error_pct": 0.017789000308160028,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Juniperus communis",
+      "computed": 42.688673,
+      "measured": 42.679183,
+      "error_pct": 0.022236250385196974,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Juniperus communis",
+      "computed": -72.022045,
+      "measured": -72.009235,
+      "error_pct": 0.017789000308164157,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Kalmia angustifolia",
+      "computed": 42.69372,
+      "measured": 42.684229,
+      "error_pct": 0.022236250385204694,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Kalmia angustifolia",
+      "computed": -72.027473,
+      "measured": -72.014662,
+      "error_pct": 0.017789000308159504,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Gavia stellata",
+      "computed": 42.749826,
+      "measured": 42.740322,
+      "error_pct": 0.02223625038519715,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Gavia stellata",
+      "computed": -70.809757,
+      "measured": -70.797163,
+      "error_pct": 0.017789000308149765,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 42.347072,
+      "measured": 42.337658,
+      "error_pct": 0.022236250385193147,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": -71.966597,
+      "measured": -71.953797,
+      "error_pct": 0.017789000308164632,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Dalibarda repens",
+      "computed": 42.692323,
+      "measured": 42.682832,
+      "error_pct": 0.02223625038519128,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Dalibarda repens",
+      "computed": -72.013506,
+      "measured": -72.000698,
+      "error_pct": 0.01778900030814767,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Turdus migratorius",
+      "computed": 40.804771,
+      "measured": 40.7957,
+      "error_pct": 0.022236250385195683,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Turdus migratorius",
+      "computed": -73.967352,
+      "measured": -73.954196,
+      "error_pct": 0.017789000308149568,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Viburnum dilatatum",
+      "computed": 40.764646,
+      "measured": 40.755583,
+      "error_pct": 0.022236250385203975,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Viburnum dilatatum",
+      "computed": -73.477507,
+      "measured": -73.464438,
+      "error_pct": 0.017789000308154522,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Larus delawarensis",
+      "computed": 40.62611,
+      "measured": 40.617078,
+      "error_pct": 0.02223625038519999,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Larus delawarensis",
+      "computed": -74.120229,
+      "measured": -74.107046,
+      "error_pct": 0.01778900030815477,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Cardinalis cardinalis",
+      "computed": 41.840836,
+      "measured": 41.831534,
+      "error_pct": 0.02223625038520737,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Cardinalis cardinalis",
+      "computed": -71.127325,
+      "measured": -71.114674,
+      "error_pct": 0.01778900030815947,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus strobus",
+      "computed": 42.693609,
+      "measured": 42.684118,
+      "error_pct": 0.022236250385190927,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus strobus",
+      "computed": -72.027556,
+      "measured": -72.014745,
+      "error_pct": 0.01778900030815205,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Artemisia vulgaris",
+      "computed": 40.803765,
+      "measured": 40.794694,
+      "error_pct": 0.022236250385191125,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Artemisia vulgaris",
+      "computed": -73.97495,
+      "measured": -73.961793,
+      "error_pct": 0.017789000308153162,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Dryobates pubescens",
+      "computed": 42.481574,
+      "measured": 42.47213,
+      "error_pct": 0.0222362503852073,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Dryobates pubescens",
+      "computed": -71.182513,
+      "measured": -71.169853,
+      "error_pct": 0.01778900030816088,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Paulownia tomentosa",
+      "computed": 40.697477,
+      "measured": 40.688429,
+      "error_pct": 0.022236250385201772,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Paulownia tomentosa",
+      "computed": -73.899573,
+      "measured": -73.886429,
+      "error_pct": 0.01778900030815475,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haemorhous mexicanus",
+      "computed": 40.631782,
+      "measured": 40.622749,
+      "error_pct": 0.02223625038519611,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haemorhous mexicanus",
+      "computed": -73.697284,
+      "measured": -73.684176,
+      "error_pct": 0.017789000308148527,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Canis latrans",
+      "computed": 42.608893,
+      "measured": 42.59942,
+      "error_pct": 0.022236250385201512,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Canis latrans",
+      "computed": -71.138159,
+      "measured": -71.125506,
+      "error_pct": 0.017789000308164327,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Leuconotopicus villosus",
+      "computed": 41.770475,
+      "measured": 41.761189,
+      "error_pct": 0.022236250385193078,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Leuconotopicus villosus",
+      "computed": -70.10287,
+      "measured": -70.090402,
+      "error_pct": 0.017789000308163595,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Passer domesticus",
+      "computed": 40.217978,
+      "measured": 40.209037,
+      "error_pct": 0.022236250385205946,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Passer domesticus",
+      "computed": -74.944894,
+      "measured": -74.931564,
+      "error_pct": 0.01778900030815622,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Puccinia malvacearum",
+      "computed": 40.803245,
+      "measured": 40.794174,
+      "error_pct": 0.022236250385207743,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Puccinia malvacearum",
+      "computed": -73.975579,
+      "measured": -73.962422,
+      "error_pct": 0.017789000308159716,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Betula populifolia",
+      "computed": 42.689722,
+      "measured": 42.680232,
+      "error_pct": 0.022236250385204118,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Betula populifolia",
+      "computed": -72.022778,
+      "measured": -72.009968,
+      "error_pct": 0.017789000308147288,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Juniperus communis",
+      "computed": 42.69037,
+      "measured": 42.680879,
+      "error_pct": 0.022236250385204583,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Juniperus communis",
+      "computed": -72.018786,
+      "measured": -72.005977,
+      "error_pct": 0.017789000308155365,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Lonicera japonica",
+      "computed": 40.764087,
+      "measured": 40.755025,
+      "error_pct": 0.022236250385205464,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Lonicera japonica",
+      "computed": -73.478447,
+      "measured": -73.465378,
+      "error_pct": 0.017789000308147722,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Tsuga canadensis",
+      "computed": 40.990062,
+      "measured": 40.980949,
+      "error_pct": 0.022236250385192367,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Tsuga canadensis",
+      "computed": -74.142269,
+      "measured": -74.129082,
+      "error_pct": 0.017789000308157266,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Mareca penelope",
+      "computed": 40.761015,
+      "measured": 40.751953,
+      "error_pct": 0.02223625038519136,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Mareca penelope",
+      "computed": -73.16004,
+      "measured": -73.147028,
+      "error_pct": 0.01778900030815467,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Mitchella repens",
+      "computed": 42.692834,
+      "measured": 42.683343,
+      "error_pct": 0.022236250385203073,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Mitchella repens",
+      "computed": -72.027536,
+      "measured": -72.014725,
+      "error_pct": 0.017789000308150518,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Poecile atricapillus",
+      "computed": 43.443159,
+      "measured": 43.433501,
+      "error_pct": 0.02223625038519703,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Poecile atricapillus",
+      "computed": -73.187821,
+      "measured": -73.174804,
+      "error_pct": 0.017789000308162627,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Euonymus alatus",
+      "computed": 40.712471,
+      "measured": 40.70342,
+      "error_pct": 0.022236250385205516,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Euonymus alatus",
+      "computed": -73.867021,
+      "measured": -73.853883,
+      "error_pct": 0.017789000308156222,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Leratiomyces ceres",
+      "computed": 40.805414,
+      "measured": 40.796342,
+      "error_pct": 0.022236250385190972,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Leratiomyces ceres",
+      "computed": -73.970248,
+      "measured": -73.957092,
+      "error_pct": 0.017789000308146504,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Mareca strepera",
+      "computed": 41.753559,
+      "measured": 41.744277,
+      "error_pct": 0.022236250385191288,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Mareca strepera",
+      "computed": -71.360012,
+      "measured": -71.34732,
+      "error_pct": 0.017789000308151285,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Bucephala albeola",
+      "computed": 41.641494,
+      "measured": 41.632237,
+      "error_pct": 0.022236250385205318,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Bucephala albeola",
+      "computed": -70.290029,
+      "measured": -70.277527,
+      "error_pct": 0.01778900030815963,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Rosa multiflora",
+      "computed": 41.645747,
+      "measured": 41.636489,
+      "error_pct": 0.022236250385192675,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Rosa multiflora",
+      "computed": -70.293468,
+      "measured": -70.280966,
+      "error_pct": 0.017789000308164646,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Branta canadensis",
+      "computed": 41.645591,
+      "measured": 41.636333,
+      "error_pct": 0.022236250385200974,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Branta canadensis",
+      "computed": -70.293997,
+      "measured": -70.281495,
+      "error_pct": 0.0177890003081637,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Larus delawarensis",
+      "computed": 42.473114,
+      "measured": 42.463672,
+      "error_pct": 0.022236250385197727,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Larus delawarensis",
+      "computed": -71.111431,
+      "measured": -71.098783,
+      "error_pct": 0.01778900030816388,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Columba livia",
+      "computed": 40.739067,
+      "measured": 40.73001,
+      "error_pct": 0.022236250385197057,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Columba livia",
+      "computed": -74.009715,
+      "measured": -73.996552,
+      "error_pct": 0.017789000308149575,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Baeolophus bicolor",
+      "computed": 43.59675,
+      "measured": 43.587058,
+      "error_pct": 0.022236250385201696,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Baeolophus bicolor",
+      "computed": -73.091132,
+      "measured": -73.078132,
+      "error_pct": 0.017789000308154432,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Clethra alnifolia",
+      "computed": 42.283714,
+      "measured": 42.274314,
+      "error_pct": 0.02223625038519891,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Clethra alnifolia",
+      "computed": -71.31314,
+      "measured": -71.300456,
+      "error_pct": 0.017789000308145356,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Aythya collaris",
+      "computed": 40.761026,
+      "measured": 40.751964,
+      "error_pct": 0.022236250385206296,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Aythya collaris",
+      "computed": -73.160795,
+      "measured": -73.147783,
+      "error_pct": 0.017789000308163033,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Phalacrocorax auritus",
+      "computed": 40.667417,
+      "measured": 40.658376,
+      "error_pct": 0.022236250385204076,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Phalacrocorax auritus",
+      "computed": -73.980929,
+      "measured": -73.967771,
+      "error_pct": 0.017789000308153217,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Echinocystis lobata",
+      "computed": 44.670239,
+      "measured": 44.660308,
+      "error_pct": 0.02223625038519762,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Echinocystis lobata",
+      "computed": -72.395378,
+      "measured": -72.382502,
+      "error_pct": 0.017789000308154196,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Sciurus carolinensis",
+      "computed": 40.810155,
+      "measured": 40.801082,
+      "error_pct": 0.022236250385190878,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Sciurus carolinensis",
+      "computed": -73.729172,
+      "measured": -73.716059,
+      "error_pct": 0.017789000308149498,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Cryptops hortensis",
+      "computed": 40.846965,
+      "measured": 40.837884,
+      "error_pct": 0.022236250385201446,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Cryptops hortensis",
+      "computed": -73.546715,
+      "measured": -73.533634,
+      "error_pct": 0.017789000308157932,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Trametes versicolor",
+      "computed": 40.675613,
+      "measured": 40.66657,
+      "error_pct": 0.02223625038520425,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Trametes versicolor",
+      "computed": -73.979567,
+      "measured": -73.966409,
+      "error_pct": 0.017789000308163085,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Anas platyrhynchos",
+      "computed": 40.667417,
+      "measured": 40.658376,
+      "error_pct": 0.022236250385204076,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Anas platyrhynchos",
+      "computed": -73.980929,
+      "measured": -73.967771,
+      "error_pct": 0.017789000308153217,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Poecile atricapillus",
+      "computed": 42.481052,
+      "measured": 42.471608,
+      "error_pct": 0.02223625038519784,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Poecile atricapillus",
+      "computed": -71.178477,
+      "measured": -71.165817,
+      "error_pct": 0.017789000308155587,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Baeolophus bicolor",
+      "computed": 43.471439,
+      "measured": 43.461775,
+      "error_pct": 0.022236250385194674,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Baeolophus bicolor",
+      "computed": -73.152227,
+      "measured": -73.139216,
+      "error_pct": 0.017789000308163966,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Malus domestica",
+      "computed": 44.665993,
+      "measured": 44.656063,
+      "error_pct": 0.022236250385206508,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Malus domestica",
+      "computed": -72.391499,
+      "measured": -72.378624,
+      "error_pct": 0.017789000308157103,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Poronidulus conchifer",
+      "computed": 40.803393,
+      "measured": 40.794322,
+      "error_pct": 0.02223625038519792,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Poronidulus conchifer",
+      "computed": -73.974835,
+      "measured": -73.961678,
+      "error_pct": 0.01778900030815419,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Melanerpes carolinus",
+      "computed": 43.47207,
+      "measured": 43.462406,
+      "error_pct": 0.0222362503851926,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Melanerpes carolinus",
+      "computed": -73.075655,
+      "measured": -73.062658,
+      "error_pct": 0.017789000308145474,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Ischnoderma resinosum",
+      "computed": 40.914932,
+      "measured": 40.905836,
+      "error_pct": 0.0222362503851905,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Ischnoderma resinosum",
+      "computed": -73.907098,
+      "measured": -73.893953,
+      "error_pct": 0.01778900030814713,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Odocoileus virginianus",
+      "computed": 40.9899,
+      "measured": 40.980787,
+      "error_pct": 0.022236250385191118,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Odocoileus virginianus",
+      "computed": -74.143423,
+      "measured": -74.130236,
+      "error_pct": 0.01778900030815495,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Betula populifolia",
+      "computed": 44.667613,
+      "measured": 44.657683,
+      "error_pct": 0.02223625038520205,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Betula populifolia",
+      "computed": -72.393682,
+      "measured": -72.380806,
+      "error_pct": 0.017789000308150605,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Lyonia ligustrina",
+      "computed": 42.688532,
+      "measured": 42.679042,
+      "error_pct": 0.02223625038520333,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Lyonia ligustrina",
+      "computed": -72.021713,
+      "measured": -72.008903,
+      "error_pct": 0.01778900030815451,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Leptoglossus occidentalis",
+      "computed": 42.573893,
+      "measured": 42.564428,
+      "error_pct": 0.022236250385192436,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Leptoglossus occidentalis",
+      "computed": -71.315884,
+      "measured": -71.3032,
+      "error_pct": 0.01778900030814636,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Dibaeis baeomyces",
+      "computed": 44.262721,
+      "measured": 44.252881,
+      "error_pct": 0.022236250385194313,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Dibaeis baeomyces",
+      "computed": -72.859017,
+      "measured": -72.846058,
+      "error_pct": 0.017789000308151115,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Gaultheria procumbens",
+      "computed": 41.541974,
+      "measured": 41.532739,
+      "error_pct": 0.02223625038520575,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Gaultheria procumbens",
+      "computed": -71.81444,
+      "measured": -71.801667,
+      "error_pct": 0.01778900030815523,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Zonotrichia albicollis",
+      "computed": 42.481557,
+      "measured": 42.472113,
+      "error_pct": 0.022236250385200357,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Zonotrichia albicollis",
+      "computed": -71.182505,
+      "measured": -71.169845,
+      "error_pct": 0.01778900030816426,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Gaultheria procumbens",
+      "computed": 41.542629,
+      "measured": 41.533394,
+      "error_pct": 0.02223625038520756,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Gaultheria procumbens",
+      "computed": -71.815262,
+      "measured": -71.802489,
+      "error_pct": 0.01778900030816296,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Sciurus carolinensis",
+      "computed": 40.738963,
+      "measured": 40.729906,
+      "error_pct": 0.022236250385196898,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Sciurus carolinensis",
+      "computed": -74.009728,
+      "measured": -73.996565,
+      "error_pct": 0.017789000308156305,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Cardinalis cardinalis",
+      "computed": 40.803806,
+      "measured": 40.794735,
+      "error_pct": 0.022236250385202404,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Cardinalis cardinalis",
+      "computed": -73.970179,
+      "measured": -73.957023,
+      "error_pct": 0.01778900030816249,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Tipularia discolor",
+      "computed": 41.354228,
+      "measured": 41.345034,
+      "error_pct": 0.02223625038519479,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Tipularia discolor",
+      "computed": -72.371144,
+      "measured": -72.358272,
+      "error_pct": 0.01778900030815329,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Rhus typhina",
+      "computed": 43.513866,
+      "measured": 43.504192,
+      "error_pct": 0.0222362503851921,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Rhus typhina",
+      "computed": -73.062044,
+      "measured": -73.049049,
+      "error_pct": 0.017789000308150883,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Graphopsocus cruciatus",
+      "computed": 42.314307,
+      "measured": 42.3049,
+      "error_pct": 0.02223625038520378,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Graphopsocus cruciatus",
+      "computed": -71.098012,
+      "measured": -71.085367,
+      "error_pct": 0.01778900030815043,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Odocoileus virginianus",
+      "computed": 40.990032,
+      "measured": 40.980919,
+      "error_pct": 0.02223625038519599,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Odocoileus virginianus",
+      "computed": -74.143146,
+      "measured": -74.129959,
+      "error_pct": 0.017789000308159258,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Cyanocitta cristata",
+      "computed": 43.574121,
+      "measured": 43.564434,
+      "error_pct": 0.02223625038519303,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Cyanocitta cristata",
+      "computed": -73.068236,
+      "measured": -73.05524,
+      "error_pct": 0.017789000308153405,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Mitchella repens",
+      "computed": 43.561251,
+      "measured": 43.551567,
+      "error_pct": 0.02223625038519948,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Mitchella repens",
+      "computed": -73.099731,
+      "measured": -73.08673,
+      "error_pct": 0.01778900030815778,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Haemorhous mexicanus",
+      "computed": 40.667417,
+      "measured": 40.658376,
+      "error_pct": 0.022236250385204076,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Haemorhous mexicanus",
+      "computed": -73.980929,
+      "measured": -73.967771,
+      "error_pct": 0.017789000308153217,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Baeolophus bicolor",
+      "computed": 43.452506,
+      "measured": 43.442846,
+      "error_pct": 0.022236250385195867,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Baeolophus bicolor",
+      "computed": -73.055803,
+      "measured": -73.042809,
+      "error_pct": 0.0177890003081466,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Clogmia albipunctatus",
+      "computed": 42.347472,
+      "measured": 42.338058,
+      "error_pct": 0.022236250385191156,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Clogmia albipunctatus",
+      "computed": -71.382859,
+      "measured": -71.370163,
+      "error_pct": 0.01778900030815054,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Clangula hyemalis",
+      "computed": 40.582252,
+      "measured": 40.57323,
+      "error_pct": 0.02223625038519162,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Clangula hyemalis",
+      "computed": -73.588726,
+      "measured": -73.575638,
+      "error_pct": 0.017789000308147004,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Geum canadense",
+      "computed": 42.282644,
+      "measured": 42.273244,
+      "error_pct": 0.02223625038520088,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Geum canadense",
+      "computed": -71.311825,
+      "measured": -71.299142,
+      "error_pct": 0.017789000308155316,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Melospiza melodia",
+      "computed": 42.358107,
+      "measured": 42.34869,
+      "error_pct": 0.022236250385193966,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Melospiza melodia",
+      "computed": -72.613279,
+      "measured": -72.600364,
+      "error_pct": 0.01778900030815043,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Calidris maritima",
+      "computed": 42.985275,
+      "measured": 42.975719,
+      "error_pct": 0.022236250385204062,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Calidris maritima",
+      "computed": -70.625819,
+      "measured": -70.613258,
+      "error_pct": 0.017789000308163695,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Sphyrapicus varius",
+      "computed": 40.80317,
+      "measured": 40.794099,
+      "error_pct": 0.02223625038519942,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Sphyrapicus varius",
+      "computed": -73.968385,
+      "measured": -73.955229,
+      "error_pct": 0.017789000308155514,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Melospiza lincolnii",
+      "computed": 40.802768,
+      "measured": 40.793697,
+      "error_pct": 0.02223625038519244,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Melospiza lincolnii",
+      "computed": -73.966939,
+      "measured": -73.953783,
+      "error_pct": 0.01778900030815143,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Spizella pusilla",
+      "computed": 42.348841,
+      "measured": 42.339426,
+      "error_pct": 0.022236250385195756,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Spizella pusilla",
+      "computed": -72.245446,
+      "measured": -72.232597,
+      "error_pct": 0.01778900030814751,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Clangula hyemalis",
+      "computed": 41.715798,
+      "measured": 41.706524,
+      "error_pct": 0.02223625038519835,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Clangula hyemalis",
+      "computed": -70.312112,
+      "measured": -70.299606,
+      "error_pct": 0.01778900030815149,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Sphyrapicus varius",
+      "computed": 40.710627,
+      "measured": 40.701576,
+      "error_pct": 0.022236250385207382,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Sphyrapicus varius",
+      "computed": -73.845416,
+      "measured": -73.832282,
+      "error_pct": 0.017789000308157336,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Spinus tristis",
+      "computed": 40.80365,
+      "measured": 40.794579,
+      "error_pct": 0.02223625038519346,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Spinus tristis",
+      "computed": -73.972751,
+      "measured": -73.959594,
+      "error_pct": 0.017789000308164014,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Leiothlypis celata",
+      "computed": 42.523124,
+      "measured": 42.513671,
+      "error_pct": 0.022236250385196287,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Leiothlypis celata",
+      "computed": -71.049153,
+      "measured": -71.036516,
+      "error_pct": 0.017789000308156236,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Glechoma hederacea",
+      "computed": 44.670258,
+      "measured": 44.660327,
+      "error_pct": 0.022236250385196575,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Glechoma hederacea",
+      "computed": -72.395431,
+      "measured": -72.382555,
+      "error_pct": 0.017789000308164125,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Cyanocitta cristata",
+      "computed": 43.413876,
+      "measured": 43.404225,
+      "error_pct": 0.022236250385195742,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Cyanocitta cristata",
+      "computed": -73.020417,
+      "measured": -73.00743,
+      "error_pct": 0.017789000308161787,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Cardinalis cardinalis",
+      "computed": 40.667462,
+      "measured": 40.658421,
+      "error_pct": 0.0222362503851986,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Cardinalis cardinalis",
+      "computed": -73.624544,
+      "measured": -73.611449,
+      "error_pct": 0.01778900030814887,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Ischnoderma resinosum",
+      "computed": 40.914885,
+      "measured": 40.905789,
+      "error_pct": 0.02223625038520429,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Ischnoderma resinosum",
+      "computed": -73.907151,
+      "measured": -73.894006,
+      "error_pct": 0.017789000308156853,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Puccinia malvacearum",
+      "computed": 40.803371,
+      "measured": 40.7943,
+      "error_pct": 0.02223625038520291,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Puccinia malvacearum",
+      "computed": -73.97552,
+      "measured": -73.962363,
+      "error_pct": 0.017789000308157242,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Baeolophus bicolor",
+      "computed": 43.461504,
+      "measured": 43.451842,
+      "error_pct": 0.02223625038520065,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Baeolophus bicolor",
+      "computed": -73.165597,
+      "measured": -73.152584,
+      "error_pct": 0.017789000308157873,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Polystichum acrostichoides",
+      "computed": 43.531625,
+      "measured": 43.521947,
+      "error_pct": 0.022236250385192675,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Polystichum acrostichoides",
+      "computed": -71.413556,
+      "measured": -71.400855,
+      "error_pct": 0.01778900030815706,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Geothlypis tolmiei",
+      "computed": 41.913263,
+      "measured": 41.903945,
+      "error_pct": 0.022236250385196974,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Geothlypis tolmiei",
+      "computed": -71.068411,
+      "measured": -71.055771,
+      "error_pct": 0.017789000308160958,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Leiothlypis celata",
+      "computed": 41.761763,
+      "measured": 41.752479,
+      "error_pct": 0.022236250385192786,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Leiothlypis celata",
+      "computed": -70.165321,
+      "measured": -70.152842,
+      "error_pct": 0.017789000308150497,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLatitude",
+      "name": "Oxyura jamaicensis",
+      "computed": 40.624714,
+      "measured": 40.615683,
+      "error_pct": 0.02223625038519498,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "gbif_ecology_lab",
+      "property": "decimalLongitude",
+      "name": "Oxyura jamaicensis",
+      "computed": -73.843854,
+      "measured": -73.83072,
+      "error_pct": 0.01778900030815228,
+      "source": "gbif_api"
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND1",
+      "computed": 956,
+      "measured": 956,
+      "error_pct": 0.0,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND2",
+      "computed": 1042,
+      "measured": 1044,
+      "error_pct": 0.19157088122605362,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-CO1",
+      "computed": 1542,
+      "measured": 1542,
+      "error_pct": 0.0,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-CO2",
+      "computed": 684,
+      "measured": 684,
+      "error_pct": 0.0,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ATP8",
+      "computed": 207,
+      "measured": 207,
+      "error_pct": 0.0,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ATP6",
+      "computed": 681,
+      "measured": 681,
+      "error_pct": 0.0,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-CO3",
+      "computed": 784,
+      "measured": 780,
+      "error_pct": 0.5128205128205128,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND3",
+      "computed": 346,
+      "measured": 349,
+      "error_pct": 0.8595988538681949,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND4L",
+      "computed": 297,
+      "measured": 297,
+      "error_pct": 0.0,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND4",
+      "computed": 1378,
+      "measured": 1378,
+      "error_pct": 0.0,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND5",
+      "computed": 1812,
+      "measured": 1812,
+      "error_pct": 0.0,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND6",
+      "computed": 525,
+      "measured": 525,
+      "error_pct": 0.0,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_length",
+      "name": "MT-CYTB",
+      "computed": 1141,
+      "measured": 1140,
+      "error_pct": 0.08771929824561403,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_operon_count",
+      "name": "human_mt_protein_genes",
+      "computed": 13,
+      "measured": 13,
+      "error_pct": 0.0,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "biology_strict_lab",
+      "property": "mt_coding_bp_sum",
+      "name": "human_mt_coding_bp",
+      "computed": 11395,
+      "measured": 11395,
+      "error_pct": 0.0,
+      "source": "ncbi_mt_operons",
+      "strict": true
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND1",
+      "computed": 956,
+      "measured": 956,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND2",
+      "computed": 1042,
+      "measured": 1044,
+      "error_pct": 0.19157088122605362
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-CO1",
+      "computed": 1542,
+      "measured": 1542,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-CO2",
+      "computed": 684,
+      "measured": 684,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ATP8",
+      "computed": 207,
+      "measured": 207,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ATP6",
+      "computed": 681,
+      "measured": 681,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-CO3",
+      "computed": 784,
+      "measured": 780,
+      "error_pct": 0.5128205128205128
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND3",
+      "computed": 346,
+      "measured": 349,
+      "error_pct": 0.8595988538681949
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND4L",
+      "computed": 297,
+      "measured": 297,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND4",
+      "computed": 1378,
+      "measured": 1378,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND5",
+      "computed": 1812,
+      "measured": 1812,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "evolution_lab",
+      "property": "mt_operon_length",
+      "name": "MT-ND6",
+      "computed": 525,
+      "measured": 525,
+      "error_pct": 0.0
+    }
+  ]
+}

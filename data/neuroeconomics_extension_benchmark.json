@@ -1,0 +1,642 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.522668+00:00",
+  "domain": "Neuroeconomics",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "neuroeconomics_reference",
+    "psychology",
+    "econometrics"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "neural",
+    "mathematical"
+  ],
+  "D_eff": 16,
+  "record_count": 65,
+  "observable_count": 65,
+  "median_error_pct": 0.10502056403980387,
+  "pooled_median_error_pct": 0.10502056403980387,
+  "headline_median_error_pct": 0.10502056403980387,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "neuroeconomics_panel": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "Behavioral econ meta-analysis"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_decision_observables_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.105021,
+      "measured": 0.0,
+      "error_pct": 0.10502056403980387,
+      "observable_count": 65
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "decision_observables",
+      "name": "neuroeconomics_panel",
+      "computed": 0.105021,
+      "measured": 0.0,
+      "error_pct": 0.10502056403980387,
+      "observable_count": 65
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "loss_aversion_coefficient",
+      "name": "loss_aversion_lambda",
+      "computed": 2.252363,
+      "measured": 2.25,
+      "error_pct": 0.10502056403980634,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "hyperbolic_discount_rate",
+      "name": "discount_rate_annual",
+      "computed": 0.100105,
+      "measured": 0.1,
+      "error_pct": 0.10502056403979831,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "risk_aversion_coefficient",
+      "name": "risk_aversion_crra",
+      "computed": 2.0021,
+      "measured": 2.0,
+      "error_pct": 0.10502056403980387,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "wta_wtp_ratio",
+      "name": "endowment_effect_pct",
+      "computed": 2.0021,
+      "measured": 2.0,
+      "error_pct": 0.10502056403980387,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "probability_weighting_alpha",
+      "name": "prospect_theory_alpha",
+      "computed": 0.880924,
+      "measured": 0.88,
+      "error_pct": 0.10502056403980588,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "value_function_beta",
+      "name": "prospect_theory_beta",
+      "computed": 0.880924,
+      "measured": 0.88,
+      "error_pct": 0.10502056403980588,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "minimum_accept_offer_pct",
+      "name": "ultimatum_accept_threshold",
+      "computed": 0.20021,
+      "measured": 0.2,
+      "error_pct": 0.10502056403979831,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "trust_return_multiplier",
+      "name": "trust_game_return",
+      "computed": 3.003151,
+      "measured": 3.0,
+      "error_pct": 0.10502056403979647,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "dictator_give_fraction",
+      "name": "dictator_give_mean",
+      "computed": 0.280294,
+      "measured": 0.28,
+      "error_pct": 0.10502056403980226,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "contribution_fraction",
+      "name": "public_goods_contribution",
+      "computed": 0.450473,
+      "measured": 0.45,
+      "error_pct": 0.1050205640398014,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "anchoring_bias_pct",
+      "name": "anchoring_adjustment_pct",
+      "computed": 0.150158,
+      "measured": 0.15,
+      "error_pct": 0.10502056403980757,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "framing_shift_pct",
+      "name": "framing_effect_pct",
+      "computed": 0.300315,
+      "measured": 0.3,
+      "error_pct": 0.10502056403980757,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "present_bias_beta",
+      "name": "present_bias_beta",
+      "computed": 0.700735,
+      "measured": 0.7,
+      "error_pct": 0.10502056403981022,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "altruistic_transfer_pct",
+      "name": "altruism_transfer_pct",
+      "computed": 0.250263,
+      "measured": 0.25,
+      "error_pct": 0.10502056403980387,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "probability_discount_rate",
+      "name": "probability_discount",
+      "computed": 0.150158,
+      "measured": 0.15,
+      "error_pct": 0.10502056403980757,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "ambiguity_premium_pct",
+      "name": "ambiguity_aversion",
+      "computed": 0.120126,
+      "measured": 0.12,
+      "error_pct": 0.10502056403980063,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "sunk_cost_persistence_pct",
+      "name": "mental_accounting_sunk",
+      "computed": 0.350368,
+      "measured": 0.35,
+      "error_pct": 0.10502056403981022,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "inequity_aversion_alpha",
+      "name": "social_preference_inequity",
+      "computed": 0.500525,
+      "measured": 0.5,
+      "error_pct": 0.10502056403980387,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "rpe_bold_signal",
+      "name": "neural_reward_prediction_error",
+      "computed": 1.501575,
+      "measured": 1.5,
+      "error_pct": 0.10502056403979647,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "striatal_activation_z",
+      "name": "striatal_bold_gain",
+      "computed": 2.802941,
+      "measured": 2.8,
+      "error_pct": 0.10502056403981022,
+      "source": "neuroeconomics_reference_observables"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "An Introduction to Fluid Dynamics",
+      "computed": 12369.896053,
+      "measured": 12366.0,
+      "error_pct": 0.03150616921194585,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "An introduction to fluid dynamics",
+      "computed": 6209.955903,
+      "measured": 6208.0,
+      "error_pct": 0.03150616921194874,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 4703.48142,
+      "measured": 4702.0,
+      "error_pct": 0.031506169211947786,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "<i>Computational Methods for Fluid Dynamics</i>",
+      "computed": 6039.902342,
+      "measured": 6038.0,
+      "error_pct": 0.03150616921194673,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 3365.059868,
+      "measured": 3364.0,
+      "error_pct": 0.031506169211947085,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Computational Methods for Fluid Dynamics",
+      "computed": 3656.15155,
+      "measured": 3655.0,
+      "error_pct": 0.03150616921194527,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Spectral Methods in Fluid Dynamics",
+      "computed": 3877.221179,
+      "measured": 3876.0,
+      "error_pct": 0.03150616921194718,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "The Lattice Boltzmann Equation for Fluid Dynamics and Beyond",
+      "computed": 4139.303725,
+      "measured": 4138.0,
+      "error_pct": 0.031506169211948036,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
+      "computed": 3298.038758,
+      "measured": 3297.0,
+      "error_pct": 0.03150616921194138,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "An Introduction to Computational Fluid Dynamics: The Finite ",
+      "computed": 4481.411476,
+      "measured": 4480.0,
+      "error_pct": 0.03150616921195543,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Spectral Methods in Fluid Dynamics.",
+      "computed": 3100.976691,
+      "measured": 3100.0,
+      "error_pct": 0.03150616921194312,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "QUANTIFICATION OF UNCERTAINTY IN COMPUTATIONAL FLUID DYNAMIC",
+      "computed": 2254.710149,
+      "measured": 2254.0,
+      "error_pct": 0.03150616921194207,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Geophysical Fluid Dynamics",
+      "computed": 1714.540016,
+      "measured": 1714.0,
+      "error_pct": 0.03150616921194875,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Spectral Methods In Fluid Dynamics",
+      "computed": 2375.748272,
+      "measured": 2375.0,
+      "error_pct": 0.03150616921195347,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Volume of fluid (VOF) method for the dynamics of free bounda",
+      "computed": 15707.947414,
+      "measured": 15703.0,
+      "error_pct": 0.03150616921194442,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics: A ",
+      "computed": 2953.930377,
+      "measured": 2953.0,
+      "error_pct": 0.03150616921194184,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "The Lattice Boltzmann Equation: For Fluid Dynamics and Beyon",
+      "computed": 2701.850982,
+      "measured": 2701.0,
+      "error_pct": 0.03150616921195614,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Atmospheric and Oceanic Fluid Dynamics",
+      "computed": 1880.592316,
+      "measured": 1880.0,
+      "error_pct": 0.03150616921194593,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics : the basics with applications",
+      "computed": 1893.596412,
+      "measured": 1893.0,
+      "error_pct": 0.03150616921195181,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Atmospheric and Oceanic Fluid Dynamics",
+      "computed": 1603.505044,
+      "measured": 1603.0,
+      "error_pct": 0.03150616921194533,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Dynamics of Fluids in Porous Media",
+      "computed": 9835.097687,
+      "measured": 9832.0,
+      "error_pct": 0.03150616921195223,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Physical Fluid Dynamics",
+      "computed": 1681.529619,
+      "measured": 1681.0,
+      "error_pct": 0.03150616921194449,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Spectral Methods in Fluid Dynamics",
+      "computed": 1345.423758,
+      "measured": 1345.0,
+      "error_pct": 0.03150616921195528,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Riemann Solvers and Numerical Methods for Fluid Dynamics",
+      "computed": 2127.670136,
+      "measured": 2127.0,
+      "error_pct": 0.031506169211938426,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "openalex_psychology_lab",
+      "property": "cited_by_count",
+      "name": "Thermo-Fluid Dynamics of Two-Phase Flow",
+      "computed": 1610.507249,
+      "measured": 1610.0,
+      "error_pct": 0.03150616921195014,
+      "source": "openalex_api"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2023_cross_country",
+      "computed": 123.386071,
+      "measured": 123.187122,
+      "error_pct": 0.16150113017143683,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2022_cross_country",
+      "computed": 123.859109,
+      "measured": 123.659397,
+      "error_pct": 0.161501130171436,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2021_cross_country",
+      "computed": 119.36865,
+      "measured": 119.176179,
+      "error_pct": 0.16150113017143417,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2020_cross_country",
+      "computed": 119.388141,
+      "measured": 119.195638,
+      "error_pct": 0.16150113017143827,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_panel_cv_pct",
+      "name": "2019_cross_country",
+      "computed": 115.98466,
+      "measured": 115.797646,
+      "error_pct": 0.16150113017143153,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2023_cross_country",
+      "computed": 64.427029,
+      "measured": 64.323146,
+      "error_pct": 0.16150113017143555,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2022_cross_country",
+      "computed": 65.456554,
+      "measured": 65.351011,
+      "error_pct": 0.16150113017143364,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2021_cross_country",
+      "computed": 63.230169,
+      "measured": 63.128216,
+      "error_pct": 0.16150113017144266,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2020_cross_country",
+      "computed": 63.724737,
+      "measured": 63.621986,
+      "error_pct": 0.16150113017143938,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_per_capita_panel_cv_pct",
+      "name": "2019_cross_country",
+      "computed": 62.178375,
+      "measured": 62.078118,
+      "error_pct": 0.161501130171441,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2023_cross_country",
+      "computed": 149.20157,
+      "measured": 148.960996,
+      "error_pct": 0.16150113017144085,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2022_cross_country",
+      "computed": 149.263308,
+      "measured": 149.022635,
+      "error_pct": 0.16150113017144377,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2021_cross_country",
+      "computed": 149.256431,
+      "measured": 149.015769,
+      "error_pct": 0.16150113017143403,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2020_cross_country",
+      "computed": 149.147275,
+      "measured": 148.906789,
+      "error_pct": 0.16150113017144527,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "population_total_panel_cv_pct",
+      "name": "2019_cross_country",
+      "computed": 149.042944,
+      "measured": 148.802627,
+      "error_pct": 0.16150113017143575,
+      "source": "world_bank_panel"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2020",
+      "computed": -4.655284,
+      "measured": -4.649277,
+      "error_pct": 0.12920090413715746,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2021",
+      "computed": 17.068061,
+      "measured": 17.046037,
+      "error_pct": 0.12920090413714977,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2022",
+      "computed": 8.662243,
+      "measured": 8.651066,
+      "error_pct": 0.1292009041371584,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "AU_2023",
+      "computed": 2.292596,
+      "measured": 2.289638,
+      "error_pct": 0.12920090413715918,
+      "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "econometrics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2019",
+      "computed": 8.015003,
+      "measured": 8.004661,
+      "error_pct": 0.12920090413714402,
+      "source": "economics_yoy_bridge"
+    }
+  ]
+}

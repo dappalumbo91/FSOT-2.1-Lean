@@ -1,10 +1,12 @@
-# Tier 23 — Planetary atmospheres (Mars/Venus JPL Horizons + Titan NASA fact sheet).
-version: "1.0"
-updated: "2026-07-03"
+# Tier 23 — Planetary atmospheres (JPL Horizons + NASA fact sheets).
+version: "1.1"
+updated: "2026-07-09"
 
-source:
-  name: JPL_Horizons_atmosphere
-  bodies: [Mars, Venus, Titan]
+source_repo: vendor/planetary_atmospheres
+domain_doc: vendor/planetary_atmospheres/Planetary_Atmospheres_Domain.md
+
+D_eff: 16
+maps_to_lean: [galactic, astronomical]
 
 build:
   ingest: scripts/ingest_planetary_atmospheres_jpl.py
@@ -14,9 +16,12 @@ build:
 lean:
   generator: scripts/gen_planetary_atmospheres_lean.py
   module: FSOT.Formal.PlanetaryAtmospheresPriors
-  lean_domain: galactic
-  sign_theorem: galactic_raw_S_positive
+  lean_domains: [galactic, astronomical]
+  sign_theorems: [galactic_raw_S_positive]
 
 verification:
-  min_records: 4
-  max_median_error_pct: 5.0
+  min_records: 20
+  min_body_count: 8
+  max_pooled_median_error_pct: 5.0
+  max_headline_median_error_pct: 5.0
+  min_beats_sota_headlines: 3

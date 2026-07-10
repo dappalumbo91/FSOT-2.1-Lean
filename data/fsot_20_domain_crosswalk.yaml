@@ -1,7 +1,7 @@
-generated_at: '2026-07-01T05:39:47.682304+00:00'
+generated_at: '2026-07-09T03:56:46.176800+00:00'
 fsot_20_repo: C:\Users\damia\Desktop\FSOT-2.0-code
 fsot_20_remote: https://github.com/dappalumbo91/FSOT-2.0-code.git
-authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
 domain_count_fsot20_doc: 35
 domain_count_matched_neurolab: 35
 param_drift_count: 0
@@ -31,6 +31,7 @@ extra_domains:
     maps_to_lean:
     - energy
     - fusion
+    - plasma
     benchmark_data: data/plasma_physics_benchmark.json
   Immunology:
     status: fsot21_extension_domain
@@ -49,16 +50,774 @@ extra_domains:
       D_eff: 16
       observed: true
       delta_psi: 0.75
-      recent_hits: 2
+      recent_hits: 3
     maps_to_lean:
     - energy
     - galactic
     benchmark_data: data/climate_observed_benchmark.json
+  Cosmology_Extended:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 25
+      observed: true
+      delta_psi: 0.92
+      recent_hits: 3
+    maps_to_lean:
+    - cosmological
+    - astronomical
+    benchmark_data: data/cosmology_extended_benchmark.json
+  Cosmology_Bubble_Bleed:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 25
+      observed: true
+      delta_psi: 1.0
+      recent_hits: 3
+    maps_to_lean:
+    - cosmological
+    - blackhole
+    - cmb
+    benchmark_data: data/cosmology_bubble_bleed_benchmark.json
+  Cosmology_Anomalies:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 25
+      observed: true
+      delta_psi: 1.0
+      recent_hits: 3
+    maps_to_lean:
+    - cosmological
+    - cmb
+    - blackhole
+    benchmark_data: data/cosmology_anomalies_benchmark.json
+  Particle_Physics:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 18
+      observed: true
+      delta_psi: 0.88
+      recent_hits: 3
+    maps_to_lean:
+    - particle
+    - higgs
+    - nuclear
+    benchmark_data: data/particle_physics_benchmark.json
+  Higgs_Mass:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 19
+      observed: true
+      delta_psi: 0.95
+      recent_hits: 1
+    maps_to_lean:
+    - particle
+    - higgs
+    benchmark_data: data/higgs_mass_benchmark.json
+  Space_Weather:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.82
+      recent_hits: 2
+    maps_to_lean:
+    - fusion
+    - energy
+    - plasma
+    benchmark_data: data/space_weather_benchmark.json
+  Hydrology:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 15
+      observed: true
+      delta_psi: 0.78
+      recent_hits: 2
+    maps_to_lean:
+    - energy
+    - galactic
+    benchmark_data: data/hydrology_benchmark.json
+  Pharmacology:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.72
+      recent_hits: 2
+    maps_to_lean:
+    - medical
+    - chemical
+    benchmark_data: data/pharmacology_benchmark.json
+  Cryosphere:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 16
+      observed: true
+      delta_psi: 0.74
+      recent_hits: 2
+    maps_to_lean:
+    - energy
+    - galactic
+    benchmark_data: data/cryosphere_benchmark.json
+  Seismology:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 18
+      observed: true
+      delta_psi: 1.2
+      recent_hits: 2
+    maps_to_lean:
+    - energy
+    benchmark_data: data/seismology_benchmark.json
+  Tectonics:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 17
+      observed: true
+      delta_psi: 0.88
+      recent_hits: 2
+    maps_to_lean:
+    - energy
+    benchmark_data: data/tectonics_benchmark.json
+  Geomagnetism:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 13
+      observed: true
+      delta_psi: 0.65
+      recent_hits: 2
+    maps_to_lean:
+    - electron
+    - fusion
+    benchmark_data: data/geomagnetism_benchmark.json
+  Planetary_Structure:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 16
+      observed: true
+      delta_psi: 0.8
+      recent_hits: 2
+    maps_to_lean:
+    - galactic
+    - astronomical
+    benchmark_data: data/planetary_structure_benchmark.json
+  Orbital_Mechanics:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 18
+      observed: true
+      delta_psi: 0.9
+      recent_hits: 2
+    maps_to_lean:
+    - astronomical
+    benchmark_data: data/orbital_mechanics_benchmark.json
+  Small_Body_Orbits:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 18
+      observed: true
+      delta_psi: 0.85
+      recent_hits: 2
+    maps_to_lean:
+    - astronomical
+    benchmark_data: data/small_body_orbits_benchmark.json
+  Magnetosphere:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.7
+      recent_hits: 2
+    maps_to_lean:
+    - electron
+    - fusion
+    benchmark_data: data/magnetosphere_benchmark.json
+  Grace_Cryosphere:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 16
+      observed: true
+      delta_psi: 0.76
+      recent_hits: 2
+    maps_to_lean:
+    - galactic
+    - energy
+    benchmark_data: data/grace_cryosphere_benchmark.json
+  Seismology_Deep:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 18
+      observed: true
+      delta_psi: 1.0
+      recent_hits: 2
+    maps_to_lean:
+    - energy
+    benchmark_data: data/seismology_deep_benchmark.json
+  Planetary_Atmospheres:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 16
+      observed: true
+      delta_psi: 0.82
+      recent_hits: 2
+    maps_to_lean:
+    - galactic
+    - astronomical
+    benchmark_data: data/planetary_atmospheres_benchmark.json
+  Magnetosphere_Extended:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.75
+      recent_hits: 3
+    maps_to_lean:
+    - electron
+    - fusion
+    - plasma
+    benchmark_data: data/magnetosphere_extended_benchmark.json
+  Geochemistry:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 15
+      observed: true
+      delta_psi: 0.72
+      recent_hits: 2
+    maps_to_lean:
+    - chemical
+    - galactic
+    benchmark_data: data/geochemistry_benchmark.json
+  Oncology:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.68
+      recent_hits: 2
+    maps_to_lean:
+    - medical
+    - biological
+    benchmark_data: data/oncology_benchmark.json
+  Neuroimmunology:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.7
+      recent_hits: 2
+    maps_to_lean:
+    - medical
+    - neural
+    benchmark_data: data/neuroimmunology_benchmark.json
+  Synthetic_Biology:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.65
+      recent_hits: 2
+    maps_to_lean:
+    - biological
+    - medical
+    benchmark_data: data/synthetic_biology_benchmark.json
+  Quantum_Materials:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 16
+      observed: true
+      delta_psi: 0.7
+      recent_hits: 2
+    maps_to_lean:
+    - material
+    - quantum
+    benchmark_data: data/quantum_materials_benchmark.json
+  Neuron_Multi_Hero:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.72
+      recent_hits: 2
+    maps_to_lean:
+    - neural
+    benchmark_data: data/multi_hero_benchmark.json
+  Linguistics_Formal:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.55
+      recent_hits: 1
+    maps_to_lean:
+    - consciousness
+    - neural
+    benchmark_data: data/linguistics_formal_benchmark.json
+  Mathematics_Computational:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 17
+      observed: true
+      delta_psi: 0.75
+      recent_hits: 2
+    maps_to_lean:
+    - particle
+    - mathematical
+    benchmark_data: data/mathematics_computational_benchmark.json
+  Materials_Engineering:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.65
+      recent_hits: 2
+    maps_to_lean:
+    - material
+    - energy
+    benchmark_data: data/materials_engineering_benchmark.json
+  Computational_Reasoning:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.8
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/computational_reasoning_benchmark.json
+  Math_Generator_Rules_Eval:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 17
+      observed: true
+      delta_psi: 0.75
+      recent_hits: 2
+    maps_to_lean:
+    - particle
+    - mathematical
+    - consciousness
+    benchmark_data: data/math_generator_rules_eval_benchmark.json
+  Trinary_OS_Portable:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.8
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/trinary_os_portable_benchmark.json
+  Materials_Species_Bridge:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.65
+      recent_hits: 2
+    maps_to_lean:
+    - material
+    - energy
+    benchmark_data: data/materials_species_bridge_benchmark.json
+  IGEM_Synthetic_Biology:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.65
+      recent_hits: 2
+    maps_to_lean:
+    - biological
+    - medical
+    benchmark_data: data/igem_synthetic_biology_benchmark.json
+  Math_Generator_Benchmark_Formula_Eval:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 17
+      observed: true
+      delta_psi: 0.75
+      recent_hits: 2
+    maps_to_lean:
+    - particle
+    - mathematical
+    - consciousness
+    benchmark_data: data/math_generator_benchmark_formula_eval_benchmark.json
+  Trinary_OS_ISA_Rebuild:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.8
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/trinary_os_isa_rebuild_benchmark.json
+  IGEM_Live_FASTA_Ingest:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.65
+      recent_hits: 2
+    maps_to_lean:
+    - biological
+    - medical
+    benchmark_data: data/igem_live_fasta_benchmark.json
+  Math_Generator_Airfoil_RMSE:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 17
+      observed: true
+      delta_psi: 0.75
+      recent_hits: 2
+    maps_to_lean:
+    - particle
+    - mathematical
+    - consciousness
+    benchmark_data: data/math_generator_airfoil_rmse_benchmark.json
+  Trinary_OS_Round_Trip:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.8
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/trinary_os_round_trip_benchmark.json
+  Tokenization_Smoke:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.75
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/tokenization_smoke_benchmark.json
+  Trinary_Hardware_Motif:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.8
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/trinary_hardware_motif_benchmark.json
+  Intrinsic_LLM_Validators:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.75
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/intrinsic_llm_validators_benchmark.json
+  Biological_CUDA_Physarum:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 22
+      observed: true
+      delta_psi: 0.9
+      recent_hits: 5
+    maps_to_lean:
+    - biological
+    - medical
+    - neural
+    benchmark_data: data/biological_cuda_physarum_benchmark.json
+  Arxiv_Primitives_V14:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.8
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/arxiv_primitives_v14_benchmark.json
+  Formula_Corpus_CNC:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 17
+      observed: true
+      delta_psi: 0.75
+      recent_hits: 2
+    maps_to_lean:
+    - particle
+    - mathematical
+    - consciousness
+    benchmark_data: data/formula_corpus_cnc_benchmark.json
+  Binary_Decoder_Rendlesham:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.8
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/binary_decoder_rendlesham_benchmark.json
+  Certified_Agent_Qwen:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.75
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/certified_agent_qwen_benchmark.json
+  Omni_Theory_Genesis:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 25
+      observed: true
+      delta_psi: 0.5
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/omni_theory_genesis_benchmark.json
+  FSOT_Aggregate_Unified_DB:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 17
+      observed: true
+      delta_psi: 0.75
+      recent_hits: 2
+    maps_to_lean:
+    - particle
+    - mathematical
+    - medical
+    benchmark_data: data/fsot_aggregate_unified_db_benchmark.json
+  Prediction_Rederivation:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.65
+      recent_hits: 2
+    maps_to_lean:
+    - cosmological
+    - particle
+    - galactic
+    benchmark_data: data/prediction_rederivation_benchmark.json
+  VL_Distill_Atlas:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.75
+      recent_hits: 2
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/vl_distill_atlas_benchmark.json
+  Rust_Lean_Bridge:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 8
+      observed: true
+      delta_psi: 0.7
+      recent_hits: 0
+    maps_to_lean:
+    - consciousness
+    - ai
+    - neural
+    benchmark_data: data/rust_lean_bridge_benchmark.json
+  Bibliography_Lean_Corpus:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 13
+      observed: true
+      delta_psi: 0.5
+      recent_hits: 1
+    maps_to_lean:
+    - particle
+    - mathematical
+    benchmark_data: data/bibliography_lean_corpus_benchmark.json
+  NIST_CODATA_Constants:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 7
+      observed: true
+      delta_psi: 1.0
+      recent_hits: 1
+    maps_to_lean:
+    - particle
+    - atomic
+    benchmark_data: data/nist_codata_constants_benchmark.json
+  GBIF_Species_Occurrence:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 15
+      observed: true
+      delta_psi: 0.2
+      recent_hits: 1
+    maps_to_lean:
+    - biological
+    - ecological
+    benchmark_data: data/gbif_species_occurrence_benchmark.json
+  NOAA_Coastal_Tides:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 17
+      observed: true
+      delta_psi: 0.7
+      recent_hits: 1
+    maps_to_lean:
+    - energy
+    - galactic
+    benchmark_data: data/noaa_coastal_tides_benchmark.json
+  World_Bank_Development:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 20
+      observed: true
+      delta_psi: 1.5
+      recent_hits: 3
+    maps_to_lean:
+    - consciousness
+    - economic
+    benchmark_data: data/world_bank_development_benchmark.json
+  NASA_Exoplanet_Archive:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 21
+      observed: true
+      delta_psi: 1.0
+      recent_hits: 1
+    maps_to_lean:
+    - astronomical
+    - galactic
+    benchmark_data: data/nasa_exoplanet_archive_benchmark.json
+  RCSB_PDB_Structures:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 13
+      observed: true
+      delta_psi: 0.1
+      recent_hits: 1
+    maps_to_lean:
+    - medical
+    - biological
+    benchmark_data: data/rcsb_pdb_structures_benchmark.json
+  OpenAlex_Citation_Graph:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 18
+      observed: true
+      delta_psi: 1.5
+      recent_hits: 3
+    maps_to_lean:
+    - consciousness
+    - linguistic
+    benchmark_data: data/openalex_citation_graph_benchmark.json
+  PubChem_Compound_Properties:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 8
+      observed: true
+      delta_psi: 0.5
+      recent_hits: 0
+    maps_to_lean:
+    - electron
+    - chemical
+    benchmark_data: data/pubchem_compound_properties_benchmark.json
+  CERN_Open_Data_LHC:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 19
+      observed: true
+      delta_psi: 1.2
+      recent_hits: 1
+    maps_to_lean:
+    - particle
+    - high_energy
+    benchmark_data: data/cern_open_data_lhc_benchmark.json
+  UniProt_Protein_Annotations:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 12
+      observed: true
+      delta_psi: 0.05
+      recent_hits: 0
+    maps_to_lean:
+    - biological
+    - medical
+    benchmark_data: data/uniprot_protein_annotations_benchmark.json
+  Space_Propulsion_Systems:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 14
+      observed: true
+      delta_psi: 0.8
+      recent_hits: 5
+    maps_to_lean:
+    - fusion
+    - particle
+    - astronomical
+    benchmark_data: data/space_propulsion_systems_benchmark.json
+  Electrical_Power_Systems:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 9
+      observed: true
+      delta_psi: 0.4
+      recent_hits: 2
+    maps_to_lean:
+    - electron
+    - energy
+    benchmark_data: data/electrical_power_systems_benchmark.json
+  HVAC_Thermal_Systems:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 13
+      observed: true
+      delta_psi: 0.6
+      recent_hits: 1
+    maps_to_lean:
+    - energy
+    - material
+    benchmark_data: data/hvac_thermal_systems_benchmark.json
+  Breakthrough_Discoveries_2024_2026:
+    status: fsot21_extension_domain
+    params:
+      D_eff: 22
+      observed: true
+      delta_psi: 2.0
+      recent_hits: 20
+    maps_to_lean:
+    - particle
+    - astronomical
+    - cosmological
+    benchmark_data: data/breakthrough_discoveries_2024_2026_benchmark.json
 domains:
 - fsot20_name: Acoustics
   neurolab_domain: Acoustics
   lean_domain: material
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 10
     hits: 0
@@ -77,12 +836,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 0.658987
+  median_error_pct: 0.344711
   sign_mismatch: false
 - fsot20_name: Astronomy
   neurolab_domain: Astronomy
   lean_domain: astronomical
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 20
     hits: 1
@@ -101,12 +860,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 0.008528684416521978
+  median_error_pct: 0.0
   sign_mismatch: false
 - fsot20_name: Astrophysics
   neurolab_domain: Astrophysics
   lean_domain: astronomical
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 24
     hits: 1
@@ -125,12 +884,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 0.010466357473454788
+  median_error_pct: 0.0007352339307450013
   sign_mismatch: false
 - fsot20_name: Atmospheric Physics
   neurolab_domain: Atmospheric_Physics
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 17
     hits: 2
@@ -154,7 +913,7 @@ domains:
 - fsot20_name: Atomic Physics
   neurolab_domain: Atomic_Physics
   lean_domain: particle
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 7
     hits: 0
@@ -174,12 +933,12 @@ domains:
   canonical_source: authority
   drift_rationale: Lean particle rollup aligned to authority D_eff=7 observed=true
   precision_status: target_band
-  median_error_pct: 0.9320035
+  median_error_pct: 0.07716615321446607
   sign_mismatch: false
 - fsot20_name: Biochemistry
   neurolab_domain: Biochemistry
   lean_domain: medical
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 13
     hits: 1
@@ -201,12 +960,12 @@ domains:
   canonical_source: authority
   drift_rationale: Medical rollup uses authority hits=1 observed=true
   precision_status: target_band
-  median_error_pct: 0.319061
+  median_error_pct: 0.238193
   sign_mismatch: false
 - fsot20_name: Biology
   neurolab_domain: Biology
   lean_domain: biological
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 12
     hits: 0
@@ -225,12 +984,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 4.602204765150334e-06
+  median_error_pct: 0.0
   sign_mismatch: false
 - fsot20_name: Chemistry
   neurolab_domain: Chemistry
   lean_domain: electron
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 8
     hits: 0
@@ -250,12 +1009,12 @@ domains:
   canonical_source: authority
   drift_rationale: Electron rollup; authority delta_psi=0.6
   precision_status: target_band
-  median_error_pct: 0.717702
+  median_error_pct: 0.370628
   sign_mismatch: false
 - fsot20_name: Condensed Matter Physics
   neurolab_domain: Condensed_Matter
   lean_domain: material
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 14
     hits: 0
@@ -274,12 +1033,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 0.272464
+  median_error_pct: 0.1834
   sign_mismatch: false
 - fsot20_name: Cosmology
   neurolab_domain: Cosmology
   lean_domain: cosmological
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 25
     hits: 0
@@ -298,12 +1057,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 0.004296638039763263
+  median_error_pct: 0.0008593004744053731
   sign_mismatch: false
 - fsot20_name: Ecology
   neurolab_domain: Ecology
   lean_domain: biological
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 15
     hits: 1
@@ -327,7 +1086,7 @@ domains:
 - fsot20_name: Economics
   neurolab_domain: Economics
   lean_domain: consciousness
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 20
     hits: 3
@@ -350,8 +1109,8 @@ domains:
   sign_mismatch: false
 - fsot20_name: Electromagnetism
   neurolab_domain: Electromagnetism
-  lean_domain: material
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  lean_domain: electron
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 9
     hits: 0
@@ -370,12 +1129,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 0.658987
+  median_error_pct: 0.0
   sign_mismatch: false
 - fsot20_name: Fluid Dynamics
   neurolab_domain: Fluid_Dynamics
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 15
     hits: 1
@@ -399,7 +1158,7 @@ domains:
 - fsot20_name: Geophysics
   neurolab_domain: Geophysics
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 19
     hits: 2
@@ -423,7 +1182,7 @@ domains:
 - fsot20_name: High-Energy Physics
   neurolab_domain: High_Energy_Physics
   lean_domain: higgs
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 7
     hits: 1
@@ -445,12 +1204,12 @@ domains:
   drift_rationale: "Higgs\u2192particle SMILES fallback; authority D_eff=7 not fsot20\
     \ D_eff=19"
   precision_status: target_band
-  median_error_pct: 0.9320035
+  median_error_pct: 0.003531579785510005
   sign_mismatch: false
 - fsot20_name: Materials Science
   neurolab_domain: Materials_Science
   lean_domain: material
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 10
     hits: 0
@@ -470,12 +1229,12 @@ domains:
   canonical_source: authority
   drift_rationale: Material rollup D_eff=10 per neurolab_ledger_alignment
   precision_status: target_band
-  median_error_pct: 0.272464
+  median_error_pct: 0.1834
   sign_mismatch: false
 - fsot20_name: Meteorology
   neurolab_domain: Meteorology
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 16
     hits: 2
@@ -499,7 +1258,7 @@ domains:
 - fsot20_name: Molecular Chemistry
   neurolab_domain: Molecular_Chemistry
   lean_domain: chemical
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 9
     hits: 0
@@ -518,12 +1277,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 0.41124649999999996
+  median_error_pct: 0.110313
   sign_mismatch: false
 - fsot20_name: Neuroscience
   neurolab_domain: Neuroscience
   lean_domain: neural
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 14
     hits: 1
@@ -543,12 +1302,12 @@ domains:
   canonical_source: authority
   drift_rationale: Neural rollup uses authority delta_psi=0.7 hits=1
   precision_status: target_band
-  median_error_pct: 1.2044815
+  median_error_pct: 0.237442
   sign_mismatch: false
 - fsot20_name: Nuclear Physics
   neurolab_domain: Nuclear_Physics
   lean_domain: nuclear
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 15
     hits: 1
@@ -567,12 +1326,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 0.288226
+  median_error_pct: 0.106761
   sign_mismatch: false
 - fsot20_name: Oceanography
   neurolab_domain: Oceanography
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 17
     hits: 1
@@ -596,7 +1355,7 @@ domains:
 - fsot20_name: Optics
   neurolab_domain: Optics
   lean_domain: material
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 10
     hits: 0
@@ -615,12 +1374,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 0.658987
+  median_error_pct: 0.344711
   sign_mismatch: false
 - fsot20_name: Particle Astrophysics
   neurolab_domain: Particle_Astrophysics
   lean_domain: cmb
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 24
     hits: 0
@@ -643,12 +1402,12 @@ domains:
   canonical_source: authority
   drift_rationale: CMB rollup; authority observed=false matches dispersal class
   precision_status: target_band
-  median_error_pct: 0.010466357473454788
+  median_error_pct: 0.005577753040363415
   sign_mismatch: false
 - fsot20_name: Particle Physics
   neurolab_domain: Particle_Physics
   lean_domain: particle
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 5
     hits: 0
@@ -667,12 +1426,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 0.9320035
+  median_error_pct: 0.07716615321446607
   sign_mismatch: false
 - fsot20_name: Physical Chemistry
   neurolab_domain: Physical_Chemistry
   lean_domain: chemical
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 8
     hits: 0
@@ -691,12 +1450,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 0.41124649999999996
+  median_error_pct: 0.110313
   sign_mismatch: false
 - fsot20_name: Planetary Science
   neurolab_domain: Planetary_Science
   lean_domain: galactic
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 21
     hits: 1
@@ -716,12 +1475,12 @@ domains:
   canonical_source: authority
   drift_rationale: Galactic rollup uses authority D_eff=21
   precision_status: target_band
-  median_error_pct: 0.010466357473454788
+  median_error_pct: 0.017721515188881255
   sign_mismatch: false
 - fsot20_name: Psychology
   neurolab_domain: Psychology
   lean_domain: consciousness
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 16
     hits: 1
@@ -746,7 +1505,7 @@ domains:
 - fsot20_name: Quantum Computing
   neurolab_domain: Quantum_Computing
   lean_domain: ai
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 11
     hits: 0
@@ -772,7 +1531,7 @@ domains:
 - fsot20_name: Quantum Gravity
   neurolab_domain: Quantum_Gravity
   lean_domain: blackhole
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 22
     hits: 0
@@ -796,7 +1555,7 @@ domains:
 - fsot20_name: Quantum Mechanics
   neurolab_domain: Quantum_Mechanics
   lean_domain: quantum
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 6
     hits: 0
@@ -815,12 +1574,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 1.230796
+  median_error_pct: 0.963701
   sign_mismatch: false
 - fsot20_name: Quantum Optics
   neurolab_domain: Quantum_Optics
   lean_domain: quantum
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 11
     hits: 0
@@ -839,12 +1598,12 @@ domains:
   canonical_source: authority
   drift_rationale: null
   precision_status: target_band
-  median_error_pct: 1.230796
+  median_error_pct: 0.963701
   sign_mismatch: false
 - fsot20_name: Seismology
   neurolab_domain: Seismology
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 18
     hits: 2
@@ -868,7 +1627,7 @@ domains:
 - fsot20_name: Sociology
   neurolab_domain: Sociology
   lean_domain: consciousness
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 18
     hits: 3
@@ -892,7 +1651,7 @@ domains:
 - fsot20_name: Thermodynamics
   neurolab_domain: Thermodynamics
   lean_domain: energy
-  authority_path: C:\Users\damia\Desktop\FSOT document update\fsot_compute.py
+  authority_path: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main\vendor\fsot_compute.py
   authority:
     D_eff: 15
     hits: 1
@@ -914,5 +1673,5 @@ domains:
   canonical_source: authority
   drift_rationale: Energy rollup D_eff=15 hits=1 per alignment override
   precision_status: target_band
-  median_error_pct: 0.452599
+  median_error_pct: 0.191604
   sign_mismatch: false

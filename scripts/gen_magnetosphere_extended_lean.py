@@ -31,6 +31,11 @@ def build_lean(bench: dict, cfg: dict) -> str:
     hist_rate = float(hc.get("stability_match_rate") or 0.0)
     storm_rate = float(sh.get("stability_match_rate") or 0.0)
     bz_rate = float(bz.get("stability_match_rate") or 0.0)
+    pooled_rate = float(bench.get("stability_match_rate") or 0.0)
+    pooled_misclass = float(bench.get("misclassification_pct") or 0.0)
+    hist_misclass = float(hc.get("misclassification_pct") or 0.0)
+    storm_misclass = float(sh.get("misclassification_pct") or 0.0)
+    bz_misclass = float(bz.get("misclassification_pct") or 0.0)
     d_eff = int(bench.get("D_eff") or 14)
     sign = cfg.get("lean", {}).get("sign_theorem", "electron_raw_S_positive")
     return f"""/-
@@ -56,6 +61,11 @@ def magnetosphere_extended_D_eff : ℕ := {d_eff}
 def magnetosphere_extended_historical_match_rate : ℝ := ({hist_rate} : ℝ)
 def magnetosphere_extended_storm_holdout_match_rate : ℝ := ({storm_rate} : ℝ)
 def magnetosphere_extended_bz_match_rate : ℝ := ({bz_rate} : ℝ)
+def magnetosphere_extended_pooled_match_rate : ℝ := ({pooled_rate} : ℝ)
+def magnetosphere_extended_pooled_misclassification_pct : ℝ := ({pooled_misclass} : ℝ)
+def magnetosphere_extended_historical_misclassification_pct : ℝ := ({hist_misclass} : ℝ)
+def magnetosphere_extended_storm_holdout_misclassification_pct : ℝ := ({storm_misclass} : ℝ)
+def magnetosphere_extended_bz_misclassification_pct : ℝ := ({bz_misclass} : ℝ)
 
 theorem magnetosphere_extended_historical_hours_pos : 0 < magnetosphere_extended_historical_hours := by
   unfold magnetosphere_extended_historical_hours; norm_num

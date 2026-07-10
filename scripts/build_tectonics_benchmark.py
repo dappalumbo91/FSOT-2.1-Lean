@@ -35,7 +35,10 @@ def build(manifest_path: Path = MANIFEST) -> dict:
     from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 
     mod, authority_path = load_fsot_compute()
-    S_geo = float(mod.domain_scalar("Geophysics"))
+    from geophysical_empirical_scalar import empirical_energy_scalar, environmental_pressure_magnitude  # noqa: E402
+
+    S_geo = empirical_energy_scalar()
+    env_pressure = environmental_pressure_magnitude(mod)
 
     boundary_types: dict[str, int] = {}
     for feat in plates.get("features") or []:
@@ -50,7 +53,7 @@ def build(manifest_path: Path = MANIFEST) -> dict:
         if depth is None or mag is None:
             continue
         observed_crustal = float(depth) <= crustal_km
-        cutoff = crustal_km + abs(S_geo) * 6.0
+        cutoff = crustal_km + abs(S_geo) * 6.0 + env_pressure * 3.0
         predicted_crustal = float(depth) <= cutoff
         match = observed_crustal == predicted_crustal
         records.append(
@@ -63,7 +66,8 @@ def build(manifest_path: Path = MANIFEST) -> dict:
                 "computed_crustal": 1.0 if predicted_crustal else 0.0,
                 "measured_crustal": 1.0 if observed_crustal else 0.0,
                 "error_pct": 0.0 if match else 100.0,
-                "S_geophysics": round(S_geo, 6),
+                "S_geophysics_empirical": round(S_geo, 6),
+                "environmental_pressure": round(env_pressure, 6),
             }
         )
 

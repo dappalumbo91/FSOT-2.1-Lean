@@ -1,14 +1,15 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-03T16:20:44.620296+00:00",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "generated_at": "2026-07-08T19:56:22.600479+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "USGS_FDSN",
   "record_count": 500,
   "observable_count": 500,
-  "stability_match_count": 493,
-  "stability_match_rate": 0.986,
+  "stability_match_count": 481,
+  "stability_match_rate": 0.962,
   "median_error_pct": 0.0,
-  "D_eff": 18,
+  "D_eff": 15,
+  "empirical_mode": "weather_observed",
   "records": [
     {
       "lab": "seismology_lab",
@@ -19,7 +20,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -30,7 +33,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -41,7 +46,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -52,7 +59,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -63,7 +72,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -74,7 +85,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -85,7 +98,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -96,7 +111,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -107,7 +124,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -118,7 +137,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -129,7 +150,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -140,7 +163,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -151,7 +176,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -162,7 +189,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -173,7 +202,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -184,7 +215,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -195,7 +228,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -206,7 +241,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -217,7 +254,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -228,7 +267,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -239,7 +280,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -250,7 +293,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -261,7 +306,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -272,7 +319,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -283,7 +332,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -294,7 +345,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -305,7 +358,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -316,7 +371,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -327,7 +384,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -338,7 +397,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -349,7 +410,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -360,7 +423,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -371,7 +436,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -382,7 +449,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -393,7 +462,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -404,7 +475,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -415,7 +488,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -426,7 +501,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -437,7 +514,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -448,7 +527,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -459,7 +540,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -470,7 +553,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -481,7 +566,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -492,7 +579,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -503,7 +592,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -514,7 +605,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -525,7 +618,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -536,7 +631,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -547,7 +644,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -558,7 +657,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -569,7 +670,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -580,7 +683,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -591,7 +696,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -602,7 +709,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -613,7 +722,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -624,7 +735,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -635,7 +748,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -646,7 +761,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -657,7 +774,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -668,7 +787,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -679,7 +800,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -690,7 +813,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -701,7 +826,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -712,7 +839,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -723,7 +852,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -734,7 +865,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -745,7 +878,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 0.0,
       "error_pct": 100.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -756,7 +891,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -767,7 +904,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -778,7 +917,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -789,7 +930,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -800,7 +943,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -811,7 +956,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -822,7 +969,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -833,7 +982,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -844,7 +995,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -855,7 +1008,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -866,7 +1021,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -877,7 +1034,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -888,7 +1047,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -899,7 +1060,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -910,7 +1073,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -921,7 +1086,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -932,7 +1099,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -943,7 +1112,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -954,7 +1125,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -965,7 +1138,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -976,7 +1151,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -984,10 +1161,12 @@
       "name": "us6000pilr",
       "mag": 4.5,
       "depth_km": 74.565,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -998,7 +1177,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1009,7 +1190,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1020,7 +1203,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1031,7 +1216,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1042,7 +1229,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1053,7 +1242,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1064,7 +1255,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1075,7 +1268,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1086,7 +1281,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1097,7 +1294,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1108,7 +1307,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1119,7 +1320,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1130,7 +1333,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1141,7 +1346,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1149,10 +1356,12 @@
       "name": "us6000pfjq",
       "mag": 4.5,
       "depth_km": 74.272,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1163,7 +1372,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1174,7 +1385,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1185,7 +1398,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1196,7 +1411,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1207,7 +1424,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1218,7 +1437,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1229,7 +1450,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1240,7 +1463,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1248,10 +1473,12 @@
       "name": "us6000pfhr",
       "mag": 4.9,
       "depth_km": 73.999,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1262,7 +1489,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1273,7 +1502,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1284,7 +1515,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1295,7 +1528,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1306,7 +1541,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1317,7 +1554,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 0.0,
       "error_pct": 100.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1328,7 +1567,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1339,7 +1580,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1350,7 +1593,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1361,7 +1606,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1372,7 +1619,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1383,7 +1632,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1394,7 +1645,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1405,7 +1658,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1416,7 +1671,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1427,7 +1684,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1435,10 +1694,12 @@
       "name": "us6000pfbh",
       "mag": 4.9,
       "depth_km": 85.383,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1449,7 +1710,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1460,7 +1723,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1471,7 +1736,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1482,7 +1749,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1493,7 +1762,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1504,7 +1775,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1515,7 +1788,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 0.0,
       "error_pct": 100.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1526,7 +1801,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1537,7 +1814,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1548,7 +1827,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1559,7 +1840,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1570,7 +1853,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1581,7 +1866,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1592,7 +1879,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1603,7 +1892,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1614,7 +1905,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1625,7 +1918,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1636,7 +1931,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1647,7 +1944,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1658,7 +1957,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1669,7 +1970,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1680,7 +1983,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1691,7 +1996,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1702,7 +2009,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1713,7 +2022,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1724,7 +2035,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1735,7 +2048,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1746,7 +2061,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1757,7 +2074,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1768,7 +2087,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1779,7 +2100,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1790,7 +2113,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1801,7 +2126,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1812,7 +2139,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1823,7 +2152,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1834,7 +2165,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1845,7 +2178,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1856,7 +2191,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1867,7 +2204,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1878,7 +2217,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1889,7 +2230,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1900,7 +2243,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1911,7 +2256,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1922,7 +2269,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1933,7 +2282,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1944,7 +2295,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1955,7 +2308,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1966,7 +2321,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 0.0,
       "error_pct": 100.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1977,7 +2334,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1988,7 +2347,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -1999,7 +2360,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2010,7 +2373,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2021,7 +2386,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2032,7 +2399,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2043,7 +2412,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2054,7 +2425,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2065,7 +2438,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2076,7 +2451,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2087,7 +2464,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2098,7 +2477,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2109,7 +2490,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2120,7 +2503,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2131,7 +2516,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2142,7 +2529,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2153,7 +2542,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2164,7 +2555,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2175,7 +2568,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2186,7 +2581,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2197,7 +2594,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2208,7 +2607,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2219,7 +2620,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2230,7 +2633,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2241,7 +2646,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2252,7 +2659,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2263,7 +2672,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2271,10 +2682,12 @@
       "name": "ak024gb66mji",
       "mag": 4.5,
       "depth_km": 83.8,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2285,7 +2698,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2296,7 +2711,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2307,7 +2724,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2318,7 +2737,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2329,7 +2750,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2340,7 +2763,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2351,7 +2776,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2359,10 +2786,12 @@
       "name": "us7000p03u",
       "mag": 4.8,
       "depth_km": 74.798,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2373,7 +2802,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2384,7 +2815,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2395,7 +2828,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2406,7 +2841,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2417,7 +2854,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2428,7 +2867,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2439,7 +2880,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2450,7 +2893,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2458,10 +2903,12 @@
       "name": "us6000phii",
       "mag": 4.5,
       "depth_km": 80.428,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2472,7 +2919,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2483,7 +2932,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2494,7 +2945,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2505,7 +2958,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2516,7 +2971,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2527,7 +2984,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2538,7 +2997,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2549,7 +3010,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2560,7 +3023,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2571,7 +3036,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2582,7 +3049,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2593,7 +3062,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2604,7 +3075,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2615,7 +3088,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2626,7 +3101,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2637,7 +3114,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2648,7 +3127,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2659,7 +3140,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2670,7 +3153,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2681,7 +3166,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2692,7 +3179,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2703,7 +3192,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2714,7 +3205,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2725,7 +3218,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2736,7 +3231,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2747,7 +3244,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2758,7 +3257,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2769,7 +3270,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2780,7 +3283,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 0.0,
       "error_pct": 100.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2791,7 +3296,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2802,7 +3309,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2813,7 +3322,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2824,7 +3335,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2835,7 +3348,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2846,7 +3361,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2857,7 +3374,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2868,7 +3387,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2879,7 +3400,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2890,7 +3413,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2901,7 +3426,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2912,7 +3439,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2923,7 +3452,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2934,7 +3465,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2945,7 +3478,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2956,7 +3491,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2967,7 +3504,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 0.0,
       "error_pct": 100.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2978,7 +3517,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -2986,10 +3527,12 @@
       "name": "us7000nzj3",
       "mag": 4.5,
       "depth_km": 76.086,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3000,7 +3543,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3011,7 +3556,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3022,7 +3569,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3033,7 +3582,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3044,7 +3595,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3055,7 +3608,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3066,7 +3621,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3077,7 +3634,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3088,7 +3647,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3099,7 +3660,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3110,7 +3673,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3121,7 +3686,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3132,7 +3699,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3143,7 +3712,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3154,7 +3725,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3165,7 +3738,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3176,7 +3751,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3187,7 +3764,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3198,7 +3777,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3209,7 +3790,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3220,7 +3803,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3231,7 +3816,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3242,7 +3829,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3253,7 +3842,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3264,7 +3855,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3275,7 +3868,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3286,7 +3881,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3297,7 +3894,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3308,7 +3907,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3319,7 +3920,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3330,7 +3933,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3341,7 +3946,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3352,7 +3959,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3363,7 +3972,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3374,7 +3985,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3385,7 +3998,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3396,7 +4011,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3407,7 +4024,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3418,7 +4037,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3429,7 +4050,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3440,7 +4063,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3451,7 +4076,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3462,7 +4089,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3473,7 +4102,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3484,7 +4115,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3495,7 +4128,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3506,7 +4141,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3517,7 +4154,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3528,7 +4167,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3539,7 +4180,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3550,7 +4193,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3561,7 +4206,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3572,7 +4219,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3583,7 +4232,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3594,7 +4245,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3605,7 +4258,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3616,7 +4271,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3627,7 +4284,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3638,7 +4297,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3649,7 +4310,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3660,7 +4323,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3671,7 +4336,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3682,7 +4349,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3693,7 +4362,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3704,7 +4375,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3715,7 +4388,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3726,7 +4401,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3737,7 +4414,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3748,7 +4427,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3759,7 +4440,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3770,7 +4453,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3781,7 +4466,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3792,7 +4479,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3803,7 +4492,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3814,7 +4505,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3825,7 +4518,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3836,7 +4531,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3847,7 +4544,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3858,7 +4557,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3869,7 +4570,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3880,7 +4583,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3891,7 +4596,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3902,7 +4609,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3913,7 +4622,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3924,7 +4635,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3935,7 +4648,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3946,7 +4661,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3957,7 +4674,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3968,7 +4687,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3979,7 +4700,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -3990,7 +4713,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4001,7 +4726,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4012,7 +4739,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4023,7 +4752,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4034,7 +4765,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4045,7 +4778,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4056,7 +4791,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4067,7 +4804,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4078,7 +4817,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4089,7 +4830,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4100,7 +4843,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4111,7 +4856,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4122,7 +4869,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4133,7 +4882,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4144,7 +4895,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4155,7 +4908,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4166,7 +4921,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4177,7 +4934,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4188,7 +4947,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4199,7 +4960,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4210,7 +4973,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4221,7 +4986,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4232,7 +4999,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4243,7 +5012,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4254,7 +5025,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4265,7 +5038,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4273,10 +5048,12 @@
       "name": "us7000nxxb",
       "mag": 4.6,
       "depth_km": 74.824,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4287,7 +5064,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4298,7 +5077,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4309,7 +5090,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4320,7 +5103,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4331,7 +5116,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4342,7 +5129,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4353,7 +5142,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4364,7 +5155,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4375,7 +5168,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4386,7 +5181,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4397,7 +5194,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4408,7 +5207,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4419,7 +5220,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4430,7 +5233,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4438,10 +5243,12 @@
       "name": "us7000nxk3",
       "mag": 4.7,
       "depth_km": 83.199,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4452,7 +5259,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4463,7 +5272,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4474,7 +5285,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4485,7 +5298,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4496,7 +5311,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4507,7 +5324,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 0.0,
       "error_pct": 100.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4518,7 +5337,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4529,7 +5350,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4540,7 +5363,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4551,7 +5376,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4562,7 +5389,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4573,7 +5402,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4584,7 +5415,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4595,7 +5428,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4606,7 +5441,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4617,7 +5454,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4628,7 +5467,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4639,7 +5480,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4650,7 +5493,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4658,10 +5503,12 @@
       "name": "us7000nx9p",
       "mag": 4.8,
       "depth_km": 74.538,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4672,7 +5519,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4683,7 +5532,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4694,7 +5545,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4705,7 +5558,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4716,7 +5571,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4727,7 +5584,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4738,7 +5597,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4749,7 +5610,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4760,7 +5623,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4771,7 +5636,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4782,7 +5649,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4793,7 +5662,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4804,7 +5675,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4815,7 +5688,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4826,7 +5701,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4837,7 +5714,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4848,7 +5727,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4859,7 +5740,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4870,7 +5753,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4881,7 +5766,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4892,7 +5779,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4903,7 +5792,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4914,7 +5805,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4925,7 +5818,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4936,7 +5831,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4947,7 +5844,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4958,7 +5857,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4969,7 +5870,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4980,7 +5883,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -4991,7 +5896,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5002,7 +5909,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5013,7 +5922,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5024,7 +5935,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5035,7 +5948,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5046,7 +5961,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5057,7 +5974,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5068,7 +5987,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5079,7 +6000,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5090,7 +6013,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5101,7 +6026,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5112,7 +6039,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5123,7 +6052,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5131,10 +6062,12 @@
       "name": "us7000nwyq",
       "mag": 4.5,
       "depth_km": 74.306,
-      "computed_shallow": 0.0,
+      "computed_shallow": 1.0,
       "measured_shallow": 0.0,
-      "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "error_pct": 100.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5145,7 +6078,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5156,7 +6091,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5167,7 +6104,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5178,7 +6117,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5189,7 +6130,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5200,7 +6143,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5211,7 +6156,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5222,7 +6169,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5233,7 +6182,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5244,7 +6195,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5255,7 +6208,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5266,7 +6221,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5277,7 +6234,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5288,7 +6247,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5299,7 +6260,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5310,7 +6273,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5321,7 +6286,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5332,7 +6299,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5343,7 +6312,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5354,7 +6325,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5365,7 +6338,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5376,7 +6351,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5387,7 +6364,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5398,7 +6377,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5409,7 +6390,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5420,7 +6403,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5431,7 +6416,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5442,7 +6429,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5453,7 +6442,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5464,7 +6455,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5475,7 +6468,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5486,7 +6481,9 @@
       "computed_shallow": 1.0,
       "measured_shallow": 1.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5497,7 +6494,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     },
     {
       "lab": "seismology_lab",
@@ -5508,7 +6507,9 @@
       "computed_shallow": 0.0,
       "measured_shallow": 0.0,
       "error_pct": 0.0,
-      "S_seismology": -0.445902
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
     }
   ]
 }

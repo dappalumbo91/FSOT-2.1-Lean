@@ -72,14 +72,43 @@ EXTENDED_BODY_COMMANDS = {
 }
 
 ATMOSPHERE_BODY_COMMANDS = {
-    "Mars": ("499", "@10"),
+    "Mercury": ("199", "@10"),
     "Venus": ("299", "@10"),
+    "Mars": ("499", "@10"),
+    "Jupiter": ("599", "@10"),
+    "Saturn": ("699", "@10"),
+    "Uranus": ("799", "@10"),
+    "Neptune": ("899", "@10"),
+    "Pluto": ("999", "@10"),
 }
 
-# NASA Planetary Fact Sheet — Titan (Horizons lacks 1-bar atmosphere block for 606).
+# NASA Planetary Fact Sheets — authoritative pressure/temperature anchors.
 NASA_ATMOSPHERE_REFERENCE = {
+    "Mercury": {"pressure_bar": 1.0e-15, "temperature_k": 440.0},
+    "Venus": {"pressure_bar": 92.0, "temperature_k": 737.0},
+    "Earth": {"pressure_bar": 1.013, "temperature_k": 288.0},
+    "Mars": {"pressure_bar": 0.00636, "temperature_k": 210.0},
+    "Jupiter": {"pressure_bar": 1.0, "temperature_k": 165.0},
+    "Saturn": {"pressure_bar": 1.0, "temperature_k": 134.0},
+    "Uranus": {"pressure_bar": 1.0, "temperature_k": 76.0},
+    "Neptune": {"pressure_bar": 1.0, "temperature_k": 72.0},
+    "Pluto": {"pressure_bar": 1.1e-5, "temperature_k": 44.0},
     "Titan": {"pressure_bar": 1.476, "temperature_k": 93.7},
+    "Europa": {"pressure_bar": 1.0e-12, "temperature_k": 102.0},
+    "Io": {"pressure_bar": 1.0e-8, "temperature_k": 130.0},
+    "Triton": {"pressure_bar": 1.4e-5, "temperature_k": 38.0},
+    "Enceladus": {"pressure_bar": 1.0e-6, "temperature_k": 75.0},
 }
+
+# Bodies without Horizons atmosphere blocks — NASA fact-sheet ingest only.
+NASA_ATMOSPHERE_ONLY_BODIES = [
+    "Earth",
+    "Titan",
+    "Europa",
+    "Io",
+    "Triton",
+    "Enceladus",
+]
 
 # NASA/JPL fact-sheet fallback when Horizons ELEMENTS block lacks mass/radius.
 NASA_EXTENDED_PHYSICAL_REFERENCE = {
@@ -126,6 +155,26 @@ def fetch_horizons(*, command: str, ephem_type: str = "ELEMENTS", center: str = 
     )
     doc = __import__("json").loads(urllib.request.urlopen(req, timeout=60).read())
     return str(doc.get("result") or "")
+
+
+def _horizons_supplementary_exponent(text: str, value_end: int) -> int:
+    """Parse Horizons parenthetical supplementary exponent e.g. ``1.08 (10^-4)`` → -4."""
+    tail = text[value_end : value_end + 32]
+    m = re.search(r"\(\s*10\s*\^\s*([+-]?\d+)\s*\)", tail, re.IGNORECASE)
+    return int(m.group(1)) if m else 0
+
+
+def _triaxial_radius_km(text: str) -> float | None:
+    """Equivalent-sphere radius from Horizons ``a x b x c`` triaxial notation."""
+    m = re.search(
+        r"Radius\s*\(km\)\s*=\s*([0-9.]+)\s*x\s*([0-9.]+)\s*x\s*([0-9.]+)",
+        text,
+        re.IGNORECASE,
+    )
+    if not m:
+        return None
+    a, b, c = (float(m.group(i)) for i in range(1, 4))
+    return (a * b * c) ** (1.0 / 3.0)
 
 
 def _first_float(pattern: str, text: str) -> float | None:
@@ -189,10 +238,19 @@ def parse_physical_block(text: str) -> dict[str, Any]:
         mass = _first_float(r"Mass\s*x\s*10\^26\s*\(kg\)\s*=\s*([0-9.]+)", text)
         if mass is not None:
             mass_unit = 26
+    mass_supp = 0
     if mass is None:
-        mass = _first_float(r"Mass\s*\(10\^20\s*kg\s*\)\s*=\s*([0-9.]+)", text)
-        if mass is not None:
+        m20 = re.search(
+            r"Mass\s*\(10\^20\s*kg\s*\)\s*=\s*([0-9.]+)",
+            text,
+            re.IGNORECASE,
+        )
+        if m20:
+            mass = float(m20.group(1))
             mass_unit = 20
+            mass_supp = _horizons_supplementary_exponent(text, m20.end())
+    if radius_km is None:
+        radius_km = _triaxial_radius_km(text)
     if radius_km is None:
         radius_km = _first_float(r"Radius\s*\(km\)\s*=\s*([0-9.]+)", text)
     gm_km3 = _first_float(r"GM\s*\(km\^3/s\^2\)\s*=\s*([0-9.Ee+-]+)", text)
@@ -200,7 +258,7 @@ def parse_physical_block(text: str) -> dict[str, Any]:
         gm_km3 = _first_float(r"GM\s*\(km\^3/s\^2\)\s*=\s*([0-9.]+)", text)
     mass_kg = None
     if mass is not None:
-        mass_kg = float(mass) * (10.0 ** int(mass_unit))
+        mass_kg = float(mass) * (10.0 ** int(mass_supp)) * (10.0 ** int(mass_unit))
     elif gm_km3 is not None:
         mass_kg = float(gm_km3) * 1.0e9 / G_SI
     period_days = _first_float(r"Orbit\s+period\s*=\s*([0-9.]+)\s*d", text)

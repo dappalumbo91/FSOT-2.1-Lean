@@ -1,0 +1,4876 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.498875+00:00",
+  "domain": "Marine_Biology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "OBIS",
+    "NOAA_tides"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "ecological",
+    "energy"
+  ],
+  "D_eff": 15,
+  "record_count": 540,
+  "observable_count": 540,
+  "median_error_pct": 0.022236250385192644,
+  "pooled_median_error_pct": 0.022236250385192644,
+  "headline_median_error_pct": 0.022236250385194948,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "marine_biology_obis": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "OBIS occurrence QA"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_marine_occurrence_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236250385192644,
+      "observable_count": 540
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "marine_occurrence",
+      "name": "marine_biology_obis",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236250385194948,
+      "observable_count": 500
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Prymnesiales",
+      "computed": -32.007116,
+      "measured": -32.0,
+      "error_pct": 0.022236250385199163,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Prymnesiales",
+      "computed": 115.437201,
+      "measured": 115.41667,
+      "error_pct": 0.017789000308157117,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Prymnesiales",
+      "computed": 20.008895,
+      "measured": 20.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pelecanus conspicillatus",
+      "computed": -38.423642,
+      "measured": -38.4151,
+      "error_pct": 0.02223625038519403,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pelecanus conspicillatus",
+      "computed": 145.110409,
+      "measured": 145.0846,
+      "error_pct": 0.017789000308154952,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Thaleichthys pacificus",
+      "computed": 49.290708,
+      "measured": 49.27975,
+      "error_pct": 0.022236250385199368,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Thaleichthys pacificus",
+      "computed": -126.974003,
+      "measured": -126.95142,
+      "error_pct": 0.017789000308155466,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Plectropomus leopardus",
+      "computed": -18.604136,
+      "measured": -18.6,
+      "error_pct": 0.022236250385199878,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Plectropomus leopardus",
+      "computed": 146.516059,
+      "measured": 146.49,
+      "error_pct": 0.017789000308163744,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Clupea harengus",
+      "computed": 58.234146,
+      "measured": 58.2212,
+      "error_pct": 0.022236250385194216,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Clupea harengus",
+      "computed": -0.536095,
+      "measured": -0.536,
+      "error_pct": 0.017789000308164167,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Clupea harengus",
+      "computed": 109.048475,
+      "measured": 109.0,
+      "error_pct": 0.04447250077037347,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Bacteria",
+      "computed": -32.008346,
+      "measured": -32.00123,
+      "error_pct": 0.02223625038520883,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Bacteria",
+      "computed": -170.02394,
+      "measured": -169.9937,
+      "error_pct": 0.0177890003081545,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Bacteria",
+      "computed": 3.80169,
+      "measured": 3.8,
+      "error_pct": 0.04447250077037262,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Myoxocephalus octodecemspinosus",
+      "computed": 43.778232,
+      "measured": 43.7685,
+      "error_pct": 0.022236250385203576,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Myoxocephalus octodecemspinosus",
+      "computed": -59.173858,
+      "measured": -59.163333,
+      "error_pct": 0.01778900030815023,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Larus argentatus",
+      "computed": 51.595149,
+      "measured": 51.58367919921875,
+      "error_pct": 0.02223625038519735,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Larus argentatus",
+      "computed": 3.471861,
+      "measured": 3.471243381500244,
+      "error_pct": 0.017789000308155244,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Clupea harengus",
+      "computed": 53.93216,
+      "measured": 53.92017,
+      "error_pct": 0.0222362503852016,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Clupea harengus",
+      "computed": 6.701522,
+      "measured": 6.70033,
+      "error_pct": 0.017789000308149172,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Clupea harengus",
+      "computed": 24.010673,
+      "measured": 24.0,
+      "error_pct": 0.04447250077038352,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Eurytemora affinis",
+      "computed": 54.018676,
+      "measured": 54.00666667,
+      "error_pct": 0.022236250385199424,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Eurytemora affinis",
+      "computed": 14.235865,
+      "measured": 14.23333333,
+      "error_pct": 0.01778900030815684,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Rissa tridactyla",
+      "computed": 56.512563,
+      "measured": 56.5,
+      "error_pct": 0.02223625038519897,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Rissa tridactyla",
+      "computed": -1.636991,
+      "measured": -1.6367,
+      "error_pct": 0.01778900030815503,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Erythrobacteraceae",
+      "computed": -34.080877,
+      "measured": -34.0733,
+      "error_pct": 0.02223625038520337,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Erythrobacteraceae",
+      "computed": 151.179789,
+      "measured": 151.1529,
+      "error_pct": 0.01778900030814971,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Erythrobacteraceae",
+      "computed": 3.501557,
+      "measured": 3.5,
+      "error_pct": 0.04447250077037929,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Thermoplasmata",
+      "computed": -32.305832,
+      "measured": -32.29865,
+      "error_pct": 0.02223625038520886,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Thermoplasmata",
+      "computed": 154.416074,
+      "measured": 154.38861,
+      "error_pct": 0.01778900030815032,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Thermoplasmata",
+      "computed": 55.02446,
+      "measured": 55.0,
+      "error_pct": 0.04447250077037975,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Clupea harengus",
+      "computed": 55.895226,
+      "measured": 55.8828,
+      "error_pct": 0.022236250385199205,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Clupea harengus",
+      "computed": 15.569969,
+      "measured": 15.5672,
+      "error_pct": 0.017789000308155726,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Clupea harengus",
+      "computed": 50.022236,
+      "measured": 50.0,
+      "error_pct": 0.04447250077038234,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Thyrsites atun",
+      "computed": -33.433031,
+      "measured": -33.4255981445,
+      "error_pct": 0.022236250385191843,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Thyrsites atun",
+      "computed": 18.091818,
+      "measured": 18.0886001587,
+      "error_pct": 0.01778900030816136,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Thalassospira",
+      "computed": -34.080477,
+      "measured": -34.0729,
+      "error_pct": 0.02223625038520585,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Thalassospira",
+      "computed": 151.178988,
+      "measured": 151.1521,
+      "error_pct": 0.017789000308158123,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Thalassospira",
+      "computed": 3.001334,
+      "measured": 3.0,
+      "error_pct": 0.04447250077038352,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Gari",
+      "computed": 36.319244,
+      "measured": 36.31117,
+      "error_pct": 0.022236250385195316,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Gari",
+      "computed": 140.574062,
+      "measured": 140.54906,
+      "error_pct": 0.017789000308152905,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Bacteria",
+      "computed": -19.158368,
+      "measured": -19.154109,
+      "error_pct": 0.02223625038520095,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Bacteria",
+      "computed": 146.668686,
+      "measured": 146.6426,
+      "error_pct": 0.017789000308147264,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Leucosolenia",
+      "computed": 33.01345,
+      "measured": 33.006111145,
+      "error_pct": 0.022236250385194414,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Leucosolenia",
+      "computed": -76.13465,
+      "measured": -76.1211090088,
+      "error_pct": 0.017789000308145578,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Leucosolenia",
+      "computed": 2004.891229,
+      "measured": 2004.0,
+      "error_pct": 0.04447250077038087,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Phalacrocorax sulcirostris",
+      "computed": -38.283511,
+      "measured": -38.275,
+      "error_pct": 0.02223625038520411,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Phalacrocorax sulcirostris",
+      "computed": 144.650727,
+      "measured": 144.625,
+      "error_pct": 0.017789000308156062,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Metridia longa",
+      "computed": 48.719159,
+      "measured": 48.7083282471,
+      "error_pct": 0.022236250385196367,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Metridia longa",
+      "computed": -68.639375,
+      "measured": -68.627166748,
+      "error_pct": 0.017789000308155976,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Metridia longa",
+      "computed": 335.679219,
+      "measured": 335.53,
+      "error_pct": 0.04447250077036813,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Fregata magnificens",
+      "computed": 18.286202,
+      "measured": 18.282137,
+      "error_pct": 0.022236250385195087,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Fregata magnificens",
+      "computed": -63.247138,
+      "measured": -63.235889,
+      "error_pct": 0.01778900030815684,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Chelonia mydas",
+      "computed": 26.951112,
+      "measured": 26.94512,
+      "error_pct": 0.02223625038520259,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Chelonia mydas",
+      "computed": -80.093695,
+      "measured": -80.07945,
+      "error_pct": 0.017789000308148263,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Gyrosigma",
+      "computed": 60.280068,
+      "measured": 60.2666666666667,
+      "error_pct": 0.02223625038519974,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Gyrosigma",
+      "computed": -146.817779,
+      "measured": -146.791666666667,
+      "error_pct": 0.01778900030814645,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Gyrosigma",
+      "computed": 10.004447,
+      "measured": 10.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pirellula",
+      "computed": 56.074466,
+      "measured": 56.062,
+      "error_pct": 0.022236250385197453,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pirellula",
+      "computed": 10.276528,
+      "measured": 10.2747,
+      "error_pct": 0.017789000308154786,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Hippoglossoides platessoides",
+      "computed": 46.443655,
+      "measured": 46.43333,
+      "error_pct": 0.022236250385197123,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Hippoglossoides platessoides",
+      "computed": -59.443903,
+      "measured": -59.43333,
+      "error_pct": 0.017789000308154168,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Porifera",
+      "computed": 44.653437,
+      "measured": 44.64351,
+      "error_pct": 0.022236250385205596,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Porifera",
+      "computed": -124.776443,
+      "measured": -124.75425,
+      "error_pct": 0.017789000308154623,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Porifera",
+      "computed": 157.069822,
+      "measured": 157.0,
+      "error_pct": 0.0444725007703675,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Aratus pisonii",
+      "computed": -8.362159,
+      "measured": -8.3603,
+      "error_pct": 0.022236250385191496,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Aratus pisonii",
+      "computed": -34.967919,
+      "measured": -34.9617,
+      "error_pct": 0.017789000308155483,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Copepoda",
+      "computed": 19.771095,
+      "measured": 19.7667,
+      "error_pct": 0.022236250385201165,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Copepoda",
+      "computed": 69.679093,
+      "measured": 69.6667,
+      "error_pct": 0.017789000308148284,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Copepoda",
+      "computed": 106.047141,
+      "measured": 106.0,
+      "error_pct": 0.04447250077038073,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pandalus dispar",
+      "computed": 49.587354,
+      "measured": 49.57633,
+      "error_pct": 0.022236250385197286,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pandalus dispar",
+      "computed": -124.669123,
+      "measured": -124.64695,
+      "error_pct": 0.017789000308149224,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Candidatus Pelagibacter",
+      "computed": -34.126787,
+      "measured": -34.1192,
+      "error_pct": 0.022236250385190646,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Candidatus Pelagibacter",
+      "computed": 151.253602,
+      "measured": 151.2267,
+      "error_pct": 0.017789000308153908,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Lewinella",
+      "computed": -33.832895,
+      "measured": -33.825374,
+      "error_pct": 0.022236250385198313,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Lewinella",
+      "computed": 151.290085,
+      "measured": 151.263177,
+      "error_pct": 0.017789000308147156,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Anthomastus",
+      "computed": 36.744519,
+      "measured": 36.73635,
+      "error_pct": 0.022236250385189962,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Anthomastus",
+      "computed": -122.051688,
+      "measured": -122.02998,
+      "error_pct": 0.01778900030815513,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Anthomastus",
+      "computed": 993.441612,
+      "measured": 993.0,
+      "error_pct": 0.0444725007703761,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Patiria miniata",
+      "computed": 33.90267,
+      "measured": 33.895133,
+      "error_pct": 0.022236250385191066,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Patiria miniata",
+      "computed": -120.125682,
+      "measured": -120.104317,
+      "error_pct": 0.01778900030816045,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Patiria miniata",
+      "computed": 16.807471,
+      "measured": 16.8,
+      "error_pct": 0.04447250077037929,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Oncaea",
+      "computed": 59.079734,
+      "measured": 59.0666,
+      "error_pct": 0.022236250385198046,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Oncaea",
+      "computed": -19.00338,
+      "measured": -19.0,
+      "error_pct": 0.017789000308149047,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Oncaea",
+      "computed": 243.108068,
+      "measured": 243.0,
+      "error_pct": 0.04447250077038024,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Bacteria",
+      "computed": -2.001575,
+      "measured": -2.00113,
+      "error_pct": 0.022236250385208902,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Bacteria",
+      "computed": -168.780119,
+      "measured": -168.7501,
+      "error_pct": 0.01778900030814694,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Syndiniales",
+      "computed": -32.479241,
+      "measured": -32.47202,
+      "error_pct": 0.022236250385204225,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Syndiniales",
+      "computed": 154.130063,
+      "measured": 154.10265,
+      "error_pct": 0.017789000308151025,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Syndiniales",
+      "computed": 250.111181,
+      "measured": 250.0,
+      "error_pct": 0.044472500770370973,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Dinophyceae",
+      "computed": -34.126787,
+      "measured": -34.1192,
+      "error_pct": 0.022236250385190646,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Dinophyceae",
+      "computed": 151.253602,
+      "measured": 151.2267,
+      "error_pct": 0.017789000308153908,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Clangula hyemalis",
+      "computed": 54.230856,
+      "measured": 54.2188,
+      "error_pct": 0.02223625038520482,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Clangula hyemalis",
+      "computed": 13.632725,
+      "measured": 13.6303,
+      "error_pct": 0.017789000308156833,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Crisularia plumosa",
+      "computed": 50.55859,
+      "measured": 50.54735,
+      "error_pct": 0.022236250385201006,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Crisularia plumosa",
+      "computed": -4.999834,
+      "measured": -4.998945,
+      "error_pct": 0.01778900030815013,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Crisularia plumosa",
+      "computed": 11.004892,
+      "measured": 11.0,
+      "error_pct": 0.044472500770370064,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Dinophyceae",
+      "computed": -27.351081,
+      "measured": -27.345,
+      "error_pct": 0.022236250385195343,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Dinophyceae",
+      "computed": 153.589317,
+      "measured": 153.562,
+      "error_pct": 0.01778900030815588,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Balaenoptera acutorostrata",
+      "computed": 59.834835,
+      "measured": 59.821533,
+      "error_pct": 0.022236250385194722,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Balaenoptera acutorostrata",
+      "computed": -1.277127,
+      "measured": -1.2769,
+      "error_pct": 0.01778900030816275,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Balaenoptera acutorostrata",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Cnidaria",
+      "computed": 53.898982,
+      "measured": 53.887,
+      "error_pct": 0.022236250385196797,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Cnidaria",
+      "computed": 2.723484,
+      "measured": 2.723,
+      "error_pct": 0.017789000308152503,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Cnidaria",
+      "computed": 10.004447,
+      "measured": 10.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Nototropis swammerdamei",
+      "computed": 51.945295,
+      "measured": 51.933746789999994,
+      "error_pct": 0.022236250385201033,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Nototropis swammerdamei",
+      "computed": 3.966196,
+      "measured": 3.96549085,
+      "error_pct": 0.017789000308154085,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Nototropis swammerdamei",
+      "computed": 11.405069,
+      "measured": 11.3999996185303,
+      "error_pct": 0.04447250077037202,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Portieria",
+      "computed": 13.635631,
+      "measured": 13.6325998306,
+      "error_pct": 0.0222362503852037,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Portieria",
+      "computed": 144.918551,
+      "measured": 144.892776489,
+      "error_pct": 0.017789000308153037,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Portieria",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Moerella tulipa",
+      "computed": -28.730037,
+      "measured": -28.72365,
+      "error_pct": 0.02223625038520016,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Moerella tulipa",
+      "computed": 15.902945,
+      "measured": 15.900117,
+      "error_pct": 0.017789000308156236,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Moerella tulipa",
+      "computed": 145.064485,
+      "measured": 145.0,
+      "error_pct": 0.04447250077036862,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Alcidae",
+      "computed": 57.629512,
+      "measured": 57.6167,
+      "error_pct": 0.022236250385197286,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Alcidae",
+      "computed": 11.285307,
+      "measured": 11.2833,
+      "error_pct": 0.017789000308157388,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Phocoena phocoena",
+      "computed": 54.862197,
+      "measured": 54.85,
+      "error_pct": 0.022236250385202543,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Phocoena phocoena",
+      "computed": -5.721018,
+      "measured": -5.72,
+      "error_pct": 0.017789000308152874,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Phocoena phocoena",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Thermoplasmata",
+      "computed": -27.351081,
+      "measured": -27.345,
+      "error_pct": 0.022236250385195343,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Thermoplasmata",
+      "computed": 153.589317,
+      "measured": 153.562,
+      "error_pct": 0.01778900030815588,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Thermoplasmata",
+      "computed": 10.004447,
+      "measured": 10.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Aythya",
+      "computed": 47.427344,
+      "measured": 47.4168,
+      "error_pct": 0.022236250385205714,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Aythya",
+      "computed": -122.90916,
+      "measured": -122.8873,
+      "error_pct": 0.017789000308150428,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Tripos fusus",
+      "computed": 51.437435,
+      "measured": 51.426,
+      "error_pct": 0.022236250385193414,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Tripos fusus",
+      "computed": -12.883491,
+      "measured": -12.8812,
+      "error_pct": 0.017789000308151462,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Tripos fusus",
+      "computed": 10.004447,
+      "measured": 10.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Cryomorphaceae",
+      "computed": 35.354481,
+      "measured": 35.346621,
+      "error_pct": 0.022236250385200818,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Cryomorphaceae",
+      "computed": 25.283258,
+      "measured": 25.278761,
+      "error_pct": 0.017789000308160285,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Cryomorphaceae",
+      "computed": 21.009339,
+      "measured": 21.0,
+      "error_pct": 0.044472500770370835,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Tursiops truncatus",
+      "computed": 27.179842,
+      "measured": 27.1738,
+      "error_pct": 0.02223625038520228,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Tursiops truncatus",
+      "computed": -82.513976,
+      "measured": -82.4993,
+      "error_pct": 0.017789000308155056,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Biota incertae sedis",
+      "computed": -49.509837,
+      "measured": -49.49883,
+      "error_pct": 0.022236250385197012,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Biota incertae sedis",
+      "computed": 70.172481,
+      "measured": 70.16,
+      "error_pct": 0.017789000308162307,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Sepiola rondeletii",
+      "computed": 45.658761,
+      "measured": 45.64861,
+      "error_pct": 0.022236250385204777,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Sepiola rondeletii",
+      "computed": 13.782451,
+      "measured": 13.78,
+      "error_pct": 0.017789000308148478,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Gyrodinium",
+      "computed": -27.351081,
+      "measured": -27.345,
+      "error_pct": 0.022236250385195343,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Gyrodinium",
+      "computed": 153.589317,
+      "measured": 153.562,
+      "error_pct": 0.01778900030815588,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Opitutales",
+      "computed": -27.351081,
+      "measured": -27.345,
+      "error_pct": 0.022236250385195343,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Opitutales",
+      "computed": 153.589317,
+      "measured": 153.562,
+      "error_pct": 0.01778900030815588,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Cyanobacteria",
+      "computed": -34.126817,
+      "measured": -34.11923,
+      "error_pct": 0.02223625038520712,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Cyanobacteria",
+      "computed": 151.253572,
+      "measured": 151.22667,
+      "error_pct": 0.01778900030816221,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Cyanobacteria",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pygoscelis adeliae",
+      "computed": -74.797627,
+      "measured": -74.78099823,
+      "error_pct": 0.02223625038520664,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pygoscelis adeliae",
+      "computed": 169.565162,
+      "measured": 169.535003662,
+      "error_pct": 0.017789000308146705,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Pygoscelis adeliae",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Merluccius hubbsi",
+      "computed": -50.978,
+      "measured": -50.9666666666667,
+      "error_pct": 0.02223625038519623,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Merluccius hubbsi",
+      "computed": -62.44444,
+      "measured": -62.4333333333333,
+      "error_pct": 0.01778900030815083,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Merluccius hubbsi",
+      "computed": 180.080051,
+      "measured": 180.0,
+      "error_pct": 0.04447250077036971,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Illex argentinus",
+      "computed": -49.894426,
+      "measured": -49.8833333333333,
+      "error_pct": 0.022236250385199646,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Illex argentinus",
+      "computed": -59.010496,
+      "measured": -59.0,
+      "error_pct": 0.01778900030815602,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Illex argentinus",
+      "computed": 234.104066,
+      "measured": 234.0,
+      "error_pct": 0.04447250077037214,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pandalus dispar",
+      "computed": 51.524735,
+      "measured": 51.51328,
+      "error_pct": 0.022236250385192304,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pandalus dispar",
+      "computed": -128.341597,
+      "measured": -128.31877,
+      "error_pct": 0.01778900030815789,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Myoxocephalus scorpius",
+      "computed": 45.019068,
+      "measured": 45.00906,
+      "error_pct": 0.022236250385199278,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Myoxocephalus scorpius",
+      "computed": -66.939996,
+      "measured": -66.92809,
+      "error_pct": 0.017789000308156187,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Dinophysis",
+      "computed": 61.043571,
+      "measured": 61.03,
+      "error_pct": 0.022236250385195645,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Dinophysis",
+      "computed": -17.199759,
+      "measured": -17.1967,
+      "error_pct": 0.017789000308163994,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Dinophysis",
+      "computed": 10.004447,
+      "measured": 10.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Acanthurus achilles",
+      "computed": -14.554706,
+      "measured": -14.55147,
+      "error_pct": 0.0222362503851984,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Acanthurus achilles",
+      "computed": -168.16973,
+      "measured": -168.13982,
+      "error_pct": 0.017789000308157606,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Acanthurus achilles",
+      "computed": 18.008005,
+      "measured": 18.0,
+      "error_pct": 0.04447250077037366,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Perca flavescens",
+      "computed": 44.25984,
+      "measured": 44.25,
+      "error_pct": 0.022236250385207067,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Perca flavescens",
+      "computed": -79.530812,
+      "measured": -79.5166666667,
+      "error_pct": 0.01778900030815776,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Mirounga leonina",
+      "computed": -47.229382,
+      "measured": -47.2188826647025,
+      "error_pct": 0.022236250385195458,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Mirounga leonina",
+      "computed": 37.34356,
+      "measured": 37.3369178802116,
+      "error_pct": 0.017789000308153453,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pseudomonadales",
+      "computed": -19.312763,
+      "measured": -19.30847,
+      "error_pct": 0.02223625038520414,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pseudomonadales",
+      "computed": 147.64468,
+      "measured": 147.61842,
+      "error_pct": 0.017789000308162127,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Pseudomonadales",
+      "computed": 10.004447,
+      "measured": 10.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Portunidae",
+      "computed": -3.580026,
+      "measured": -3.57923,
+      "error_pct": 0.02223625038520094,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Portunidae",
+      "computed": -171.553912,
+      "measured": -171.5234,
+      "error_pct": 0.017789000308149228,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Chlorurus microrhinos",
+      "computed": -16.393865,
+      "measured": -16.39022,
+      "error_pct": 0.022236250385198626,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Chlorurus microrhinos",
+      "computed": 145.599346,
+      "measured": 145.57345,
+      "error_pct": 0.01778900030815903,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Chlorurus microrhinos",
+      "computed": 10.004447,
+      "measured": 10.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Squalus acanthias",
+      "computed": 42.68799,
+      "measured": 42.6785,
+      "error_pct": 0.022236250385207337,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Squalus acanthias",
+      "computed": -67.505506,
+      "measured": -67.4935,
+      "error_pct": 0.01778900030814727,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Argyrozona argyrozona",
+      "computed": -34.059871,
+      "measured": -34.0522994995,
+      "error_pct": 0.022236250385208475,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Argyrozona argyrozona",
+      "computed": 24.930133,
+      "measured": 24.925699234,
+      "error_pct": 0.017789000308159834,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Anchoa mitchilli",
+      "computed": 30.649814,
+      "measured": 30.643,
+      "error_pct": 0.02223625038519668,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Anchoa mitchilli",
+      "computed": -87.966646,
+      "measured": -87.951,
+      "error_pct": 0.017789000308157908,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Oleibacter",
+      "computed": -34.126787,
+      "measured": -34.1192,
+      "error_pct": 0.022236250385190646,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Oleibacter",
+      "computed": 151.253602,
+      "measured": 151.2267,
+      "error_pct": 0.017789000308153908,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Thermoplasmata",
+      "computed": -34.126817,
+      "measured": -34.11923,
+      "error_pct": 0.02223625038520712,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Thermoplasmata",
+      "computed": 151.253572,
+      "measured": 151.22667,
+      "error_pct": 0.01778900030816221,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Thermoplasmata",
+      "computed": 75.033354,
+      "measured": 75.0,
+      "error_pct": 0.04447250077038234,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Calanus",
+      "computed": 62.48059,
+      "measured": 62.4667,
+      "error_pct": 0.022236250385195423,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Calanus",
+      "computed": -9.758436,
+      "measured": -9.7567,
+      "error_pct": 0.01778900030814599,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Calanus",
+      "computed": 10.004447,
+      "measured": 10.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Melanogrammus aeglefinus",
+      "computed": 58.230175,
+      "measured": 58.21723,
+      "error_pct": 0.022236250385193942,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Melanogrammus aeglefinus",
+      "computed": -2.791276,
+      "measured": -2.79078,
+      "error_pct": 0.017789000308161804,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Scarus iseri",
+      "computed": 24.960866,
+      "measured": 24.955317,
+      "error_pct": 0.022236250385195992,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Scarus iseri",
+      "computed": -80.47213,
+      "measured": -80.457817,
+      "error_pct": 0.017789000308153415,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Scarus iseri",
+      "computed": 6.903069,
+      "measured": 6.9,
+      "error_pct": 0.04447250077037194,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Nitrosopumilaceae",
+      "computed": -32.729676,
+      "measured": -32.7224,
+      "error_pct": 0.02223625038519451,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Nitrosopumilaceae",
+      "computed": 153.24854,
+      "measured": 153.2212833,
+      "error_pct": 0.01778900030816029,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Nitrosopumilaceae",
+      "computed": 79.035133,
+      "measured": 79.0,
+      "error_pct": 0.044472500770380896,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Alphaproteobacteria",
+      "computed": -32.007116,
+      "measured": -32.0,
+      "error_pct": 0.022236250385199163,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Alphaproteobacteria",
+      "computed": 115.437201,
+      "measured": 115.41667,
+      "error_pct": 0.017789000308157117,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Alphaproteobacteria",
+      "computed": 40.017789,
+      "measured": 40.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Flavobacteriaceae",
+      "computed": -34.014367,
+      "measured": -34.006805,
+      "error_pct": 0.022236250385203753,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Flavobacteriaceae",
+      "computed": 151.218999,
+      "measured": 151.192103,
+      "error_pct": 0.017789000308154054,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Ennucula tenuis",
+      "computed": 40.676043,
+      "measured": 40.6669998169,
+      "error_pct": 0.022236250385199698,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Ennucula tenuis",
+      "computed": -70.762586,
+      "measured": -70.75,
+      "error_pct": 0.017789000308162658,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Ennucula tenuis",
+      "computed": 66.029352,
+      "measured": 66.0,
+      "error_pct": 0.04447250077037545,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Petrolisthes pubescens",
+      "computed": -23.455214,
+      "measured": -23.45,
+      "error_pct": 0.022236250385194382,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Petrolisthes pubescens",
+      "computed": 151.943684,
+      "measured": 151.91666,
+      "error_pct": 0.017789000308153953,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pinnixa",
+      "computed": 29.083966,
+      "measured": 29.0775,
+      "error_pct": 0.022236250385201915,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pinnixa",
+      "computed": -91.730515,
+      "measured": -91.7142,
+      "error_pct": 0.01778900030814925,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Pinnixa",
+      "computed": 1.000445,
+      "measured": 1.0,
+      "error_pct": 0.04447250077037612,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Thalassionema nitzschioides",
+      "computed": 53.70899,
+      "measured": 53.69705,
+      "error_pct": 0.022236250385201103,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Thalassionema nitzschioides",
+      "computed": 7.166325,
+      "measured": 7.16505,
+      "error_pct": 0.0177890003081515,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Thalassionema nitzschioides",
+      "computed": 0.500222,
+      "measured": 0.5,
+      "error_pct": 0.04447250077037612,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Nitrosopumilaceae",
+      "computed": -42.606142,
+      "measured": -42.59667,
+      "error_pct": 0.02223625038519843,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Nitrosopumilaceae",
+      "computed": 148.259699,
+      "measured": 148.23333,
+      "error_pct": 0.017789000308159275,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Nitrosopumilaceae",
+      "computed": 85.037802,
+      "measured": 85.0,
+      "error_pct": 0.044472500770378995,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pugettia producta",
+      "computed": 36.530346,
+      "measured": 36.522225,
+      "error_pct": 0.022236250385189806,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pugettia producta",
+      "computed": -121.965235,
+      "measured": -121.943542,
+      "error_pct": 0.017789000308151635,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Pugettia producta",
+      "computed": 17.407738,
+      "measured": 17.4,
+      "error_pct": 0.04447250077036617,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Phacus",
+      "computed": 14.58296,
+      "measured": 14.5797176,
+      "error_pct": 0.02223625038519839,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Phacus",
+      "computed": -61.052073,
+      "measured": -61.041214,
+      "error_pct": 0.01778900030815945,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Syndiniales",
+      "computed": -19.005425,
+      "measured": -19.0012,
+      "error_pct": 0.022236250385201047,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Syndiniales",
+      "computed": -170.089172,
+      "measured": -170.05892,
+      "error_pct": 0.01778900030814735,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Arctocephalus gazella",
+      "computed": -53.602916,
+      "measured": -53.5909996033,
+      "error_pct": 0.022236250385202043,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Arctocephalus gazella",
+      "computed": -37.466663,
+      "measured": -37.4599990845,
+      "error_pct": 0.017789000308155903,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Granulosicoccus",
+      "computed": -34.126787,
+      "measured": -34.1192,
+      "error_pct": 0.022236250385190646,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Granulosicoccus",
+      "computed": 151.253602,
+      "measured": 151.2267,
+      "error_pct": 0.017789000308153908,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Granulosicoccus",
+      "computed": 75.033354,
+      "measured": 75.0,
+      "error_pct": 0.04447250077038234,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Carcharhinus limbatus",
+      "computed": 27.566128,
+      "measured": 27.56,
+      "error_pct": 0.02223625038520171,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Carcharhinus limbatus",
+      "computed": -82.584688,
+      "measured": -82.57,
+      "error_pct": 0.017789000308162186,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Ophiacantha antarctica",
+      "computed": -66.335827,
+      "measured": -66.32108,
+      "error_pct": 0.022236250385204815,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Ophiacantha antarctica",
+      "computed": 144.002092,
+      "measured": 143.97648,
+      "error_pct": 0.01778900030816436,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Ophiacantha antarctica",
+      "computed": 513.228144,
+      "measured": 513.0,
+      "error_pct": 0.0444725007703747,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Thermoplasmata",
+      "computed": -34.126817,
+      "measured": -34.11923,
+      "error_pct": 0.02223625038520712,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Thermoplasmata",
+      "computed": 151.253572,
+      "measured": 151.22667,
+      "error_pct": 0.01778900030816221,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Thermoplasmata",
+      "computed": 100.044473,
+      "measured": 100.0,
+      "error_pct": 0.04447250077038234,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Doryteuthis gahi",
+      "computed": -52.878422,
+      "measured": -52.8666666666667,
+      "error_pct": 0.022236250385204274,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Doryteuthis gahi",
+      "computed": -60.260718,
+      "measured": -60.25,
+      "error_pct": 0.01778900030814982,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Doryteuthis gahi",
+      "computed": 222.098729,
+      "measured": 222.0,
+      "error_pct": 0.04447250077037312,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pollachius virens",
+      "computed": 60.045349,
+      "measured": 60.032,
+      "error_pct": 0.022236250385194858,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pollachius virens",
+      "computed": -4.708838,
+      "measured": -4.708,
+      "error_pct": 0.017789000308162304,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Pollachius virens",
+      "computed": 154.068488,
+      "measured": 154.0,
+      "error_pct": 0.044472500770381604,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Biota incertae sedis",
+      "computed": -31.546763,
+      "measured": -31.53975,
+      "error_pct": 0.022236250385198678,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Biota incertae sedis",
+      "computed": 159.094336,
+      "measured": 159.06604,
+      "error_pct": 0.017789000308149856,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Oikopleura",
+      "computed": 33.952548,
+      "measured": 33.945,
+      "error_pct": 0.022236250385204326,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Oikopleura",
+      "computed": 130.790262,
+      "measured": 130.767,
+      "error_pct": 0.0177890003081528,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Turritellinella tricarinata",
+      "computed": 49.142505,
+      "measured": 49.13158,
+      "error_pct": 0.022236250385195562,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Turritellinella tricarinata",
+      "computed": -9.102853,
+      "measured": -9.101234,
+      "error_pct": 0.017789000308150102,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Turritellinella tricarinata",
+      "computed": 144.06404,
+      "measured": 144.0,
+      "error_pct": 0.04447250077037366,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Morus bassanus",
+      "computed": 51.628478,
+      "measured": 51.617,
+      "error_pct": 0.022236250385198428,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Morus bassanus",
+      "computed": -8.034429,
+      "measured": -8.033,
+      "error_pct": 0.01778900030814797,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Megaptera novaeangliae",
+      "computed": -22.070907,
+      "measured": -22.066,
+      "error_pct": 0.02223625038520694,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Megaptera novaeangliae",
+      "computed": 114.195611,
+      "measured": 114.1753,
+      "error_pct": 0.01778900030815413,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Ichthyosporea",
+      "computed": -34.126787,
+      "measured": -34.1192,
+      "error_pct": 0.022236250385190646,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Ichthyosporea",
+      "computed": 151.253602,
+      "measured": 151.2267,
+      "error_pct": 0.017789000308153908,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Rhodobacteraceae",
+      "computed": -16.790433,
+      "measured": -16.7867,
+      "error_pct": 0.022236250385208427,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Rhodobacteraceae",
+      "computed": 145.774227,
+      "measured": 145.7483,
+      "error_pct": 0.017789000308155722,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Balaenoptera physalus",
+      "computed": 22.533265,
+      "measured": 22.528256,
+      "error_pct": 0.022236250385206355,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Balaenoptera physalus",
+      "computed": -159.924663,
+      "measured": -159.896219,
+      "error_pct": 0.017789000308151205,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Thalassiosiraceae",
+      "computed": 46.065386,
+      "measured": 46.0551453,
+      "error_pct": 0.022236250385206695,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Thalassiosiraceae",
+      "computed": -1.130809,
+      "measured": -1.130608,
+      "error_pct": 0.017789000308162797,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pomacanthus imperator",
+      "computed": 18.100674,
+      "measured": 18.09665,
+      "error_pct": 0.022236250385190434,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pomacanthus imperator",
+      "computed": 145.79083,
+      "measured": 145.7649,
+      "error_pct": 0.017789000308159924,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Pomacanthus imperator",
+      "computed": 14.006226,
+      "measured": 14.0,
+      "error_pct": 0.04447250077037929,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Dinophyceae",
+      "computed": -27.351081,
+      "measured": -27.345,
+      "error_pct": 0.022236250385195343,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Dinophyceae",
+      "computed": 153.589317,
+      "measured": 153.562,
+      "error_pct": 0.01778900030815588,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Cryomorphaceae",
+      "computed": -32.007116,
+      "measured": -32.0,
+      "error_pct": 0.022236250385199163,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Cryomorphaceae",
+      "computed": 115.437201,
+      "measured": 115.41667,
+      "error_pct": 0.017789000308157117,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Cryomorphaceae",
+      "computed": 47.020902,
+      "measured": 47.0,
+      "error_pct": 0.04447250077036904,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Illex illecebrosus",
+      "computed": 44.565074,
+      "measured": 44.555167,
+      "error_pct": 0.022236250385205873,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Illex illecebrosus",
+      "computed": -60.139029,
+      "measured": -60.128333,
+      "error_pct": 0.0177890003081513,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Gadus morhua",
+      "computed": 48.253847,
+      "measured": 48.24312,
+      "error_pct": 0.022236250385193383,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Gadus morhua",
+      "computed": -53.380094,
+      "measured": -53.3706,
+      "error_pct": 0.01778900030815879,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Larus argentatus",
+      "computed": 49.440717,
+      "measured": 49.4297258,
+      "error_pct": 0.02223625038520275,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Larus argentatus",
+      "computed": 0.13409,
+      "measured": 0.1340665,
+      "error_pct": 0.017789000308163203,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Doryteuthis gahi",
+      "computed": -52.871754,
+      "measured": -52.8599999666667,
+      "error_pct": 0.022236250385192644,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Doryteuthis gahi",
+      "computed": -60.185705,
+      "measured": -60.175,
+      "error_pct": 0.01778900030815916,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Doryteuthis gahi",
+      "computed": 194.086277,
+      "measured": 194.0,
+      "error_pct": 0.04447250077037589,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Cirripedia",
+      "computed": 34.69043,
+      "measured": 34.682718,
+      "error_pct": 0.02223625038520265,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Cirripedia",
+      "computed": 139.469585,
+      "measured": 139.444779,
+      "error_pct": 0.017789000308150383,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Cirripedia",
+      "computed": 20.008895,
+      "measured": 20.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Chamelea striatula",
+      "computed": 54.680456,
+      "measured": 54.6683,
+      "error_pct": 0.02223625038520099,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Chamelea striatula",
+      "computed": -5.807733,
+      "measured": -5.8067,
+      "error_pct": 0.017789000308156954,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Chamelea striatula",
+      "computed": 0.020009,
+      "measured": 0.02,
+      "error_pct": 0.044472500770383755,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Merlangius merlangus",
+      "computed": 54.4271,
+      "measured": 54.415,
+      "error_pct": 0.022236250385202452,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Merlangius merlangus",
+      "computed": -3.866388,
+      "measured": -3.8657,
+      "error_pct": 0.017789000308158748,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Merlangius merlangus",
+      "computed": 37.016455,
+      "measured": 37.0,
+      "error_pct": 0.04447250077037312,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Oikopleura (Vexillaria) dioica",
+      "computed": 44.519897,
+      "measured": 44.51,
+      "error_pct": 0.022236250385205453,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Oikopleura (Vexillaria) dioica",
+      "computed": 29.906919,
+      "measured": 29.9016,
+      "error_pct": 0.017789000308156788,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Oikopleura (Vexillaria) dioica",
+      "computed": 20.008895,
+      "measured": 20.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Phocoena phocoena",
+      "computed": 51.467742,
+      "measured": 51.4563,
+      "error_pct": 0.02223625038519363,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Phocoena phocoena",
+      "computed": 2.779894,
+      "measured": 2.7794,
+      "error_pct": 0.017789000308154685,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pandalus montagui",
+      "computed": 43.626699,
+      "measured": 43.6170005798,
+      "error_pct": 0.022236250385191114,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pandalus montagui",
+      "computed": -66.811886,
+      "measured": -66.8000030518,
+      "error_pct": 0.017789000308150175,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Pandalus montagui",
+      "computed": 128.056925,
+      "measured": 128.0,
+      "error_pct": 0.04447250077037612,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Larus argentatus",
+      "computed": 50.55428,
+      "measured": 50.5430408,
+      "error_pct": 0.022236250385199403,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Larus argentatus",
+      "computed": 1.585291,
+      "measured": 1.5850091,
+      "error_pct": 0.017789000308148804,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Aestuariimicrobium",
+      "computed": -33.854726,
+      "measured": -33.8472,
+      "error_pct": 0.022236250385204357,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Aestuariimicrobium",
+      "computed": 151.225297,
+      "measured": 151.1984,
+      "error_pct": 0.017789000308155382,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Aestuariimicrobium",
+      "computed": 2.000889,
+      "measured": 2.0,
+      "error_pct": 0.04447250077037612,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Bacteria",
+      "computed": -34.126817,
+      "measured": -34.11923,
+      "error_pct": 0.02223625038520712,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Bacteria",
+      "computed": 151.253572,
+      "measured": 151.22667,
+      "error_pct": 0.01778900030816221,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Bacteria",
+      "computed": 25.011118,
+      "measured": 25.0,
+      "error_pct": 0.04447250077038234,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Nemipteridae",
+      "computed": -18.53412,
+      "measured": -18.53,
+      "error_pct": 0.02223625038519057,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Nemipteridae",
+      "computed": 120.3214,
+      "measured": 120.3,
+      "error_pct": 0.017789000308158342,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Nemipteridae",
+      "computed": 80.035578,
+      "measured": 80.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Eunice vittata",
+      "computed": 50.28926,
+      "measured": 50.27808,
+      "error_pct": 0.022236250385196027,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Eunice vittata",
+      "computed": -0.116781,
+      "measured": -0.11676,
+      "error_pct": 0.017789000308152007,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Eunice vittata",
+      "computed": 48.421525,
+      "measured": 48.4,
+      "error_pct": 0.04447250077038035,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Euphausiacea",
+      "computed": 60.658485,
+      "measured": 60.645,
+      "error_pct": 0.02223625038519755,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Euphausiacea",
+      "computed": -30.742168,
+      "measured": -30.7367,
+      "error_pct": 0.01778900030814977,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Euphausiacea",
+      "computed": 10.004447,
+      "measured": 10.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Chrysochromulina",
+      "computed": -42.860729,
+      "measured": -42.8512,
+      "error_pct": 0.02223625038520381,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Chrysochromulina",
+      "computed": 147.36311,
+      "measured": 147.3369,
+      "error_pct": 0.01778900030815549,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Alphaproteobacteria",
+      "computed": -27.351081,
+      "measured": -27.345,
+      "error_pct": 0.022236250385195343,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Alphaproteobacteria",
+      "computed": 153.589317,
+      "measured": 153.562,
+      "error_pct": 0.01778900030815588,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Alphaproteobacteria",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Ictalurus furcatus",
+      "computed": 38.743753,
+      "measured": 38.73514,
+      "error_pct": 0.02223625038520321,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Ictalurus furcatus",
+      "computed": -76.708353,
+      "measured": -76.69471,
+      "error_pct": 0.01778900030815727,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pontocrates altamarinus",
+      "computed": 53.885013,
+      "measured": 53.87303333,
+      "error_pct": 0.022236250385202827,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pontocrates altamarinus",
+      "computed": 7.002245,
+      "measured": 7.001,
+      "error_pct": 0.017789000308153013,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Doryteuthis gahi",
+      "computed": -52.961274,
+      "measured": -52.9495,
+      "error_pct": 0.022236250385196728,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Doryteuthis gahi",
+      "computed": -59.84231,
+      "measured": -59.8316666666667,
+      "error_pct": 0.017789000308152586,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Doryteuthis gahi",
+      "computed": 244.108513,
+      "measured": 244.0,
+      "error_pct": 0.04447250077037721,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Gadus morhua",
+      "computed": 48.190533,
+      "measured": 48.17982,
+      "error_pct": 0.022236250385204732,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Gadus morhua",
+      "computed": -53.854779,
+      "measured": -53.8452,
+      "error_pct": 0.017789000308148412,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Plaxiphora albida",
+      "computed": -33.998558,
+      "measured": -33.991,
+      "error_pct": 0.022236250385190934,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Plaxiphora albida",
+      "computed": 151.258803,
+      "measured": 151.2319,
+      "error_pct": 0.017789000308155632,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Trachipterus trachypterus",
+      "computed": 1.184986,
+      "measured": 1.184722222222222,
+      "error_pct": 0.02223625038519612,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Trachipterus trachypterus",
+      "computed": 9.286374,
+      "measured": 9.28472222222222,
+      "error_pct": 0.017789000308147736,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Hippoglossoides platessoides",
+      "computed": 80.776888,
+      "measured": 80.75893,
+      "error_pct": 0.02223625038520139,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Hippoglossoides platessoides",
+      "computed": 15.533953,
+      "measured": 15.53119,
+      "error_pct": 0.017789000308153998,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Hippoglossoides platessoides",
+      "computed": 1632.895907,
+      "measured": 1632.17004,
+      "error_pct": 0.0444725007703748,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Dumontia contorta",
+      "computed": 55.681029,
+      "measured": 55.66865,
+      "error_pct": 0.022236250385192852,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Dumontia contorta",
+      "computed": -1.806356,
+      "measured": -1.806035,
+      "error_pct": 0.01778900030815917,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Delius nudus",
+      "computed": 16.503669,
+      "measured": 16.5,
+      "error_pct": 0.022236250385209256,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Delius nudus",
+      "computed": 91.416259,
+      "measured": 91.4,
+      "error_pct": 0.017789000308156493,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Delius nudus",
+      "computed": 50.022236,
+      "measured": 50.0,
+      "error_pct": 0.04447250077038234,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Thunnus albacares",
+      "computed": -31.045701,
+      "measured": -31.0387992859,
+      "error_pct": 0.02223625038520145,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Thunnus albacares",
+      "computed": 30.237678,
+      "measured": 30.2322998047,
+      "error_pct": 0.017789000308160104,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Hydrobates pelagicus",
+      "computed": 49.077581,
+      "measured": 49.06667,
+      "error_pct": 0.02223625038520494,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Hydrobates pelagicus",
+      "computed": -10.901939,
+      "measured": -10.9,
+      "error_pct": 0.017789000308159168,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Megaptera novaeangliae",
+      "computed": -42.009339,
+      "measured": -42.0,
+      "error_pct": 0.02223625038519388,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Megaptera novaeangliae",
+      "computed": 175.031131,
+      "measured": 175.0,
+      "error_pct": 0.01778900030814969,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Megaptera novaeangliae",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Melanogrammus aeglefinus",
+      "computed": 57.346049,
+      "measured": 57.3333,
+      "error_pct": 0.022236250385197734,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Melanogrammus aeglefinus",
+      "computed": 1.717005,
+      "measured": 1.7167,
+      "error_pct": 0.017789000308151403,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Melanogrammus aeglefinus",
+      "computed": 88.039136,
+      "measured": 88.0,
+      "error_pct": 0.044472500770370064,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Phocoena phocoena",
+      "computed": 40.723453,
+      "measured": 40.7144,
+      "error_pct": 0.02223625038519756,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Phocoena phocoena",
+      "computed": -70.557349,
+      "measured": -70.5448,
+      "error_pct": 0.017789000308153387,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Bacteria",
+      "computed": -31.98173,
+      "measured": -31.97462,
+      "error_pct": 0.022236250385204184,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Bacteria",
+      "computed": 153.32704,
+      "measured": 153.29977,
+      "error_pct": 0.017789000308148308,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Bacteria",
+      "computed": 500.222363,
+      "measured": 500.0,
+      "error_pct": 0.044472500770370973,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Hippoglossoides platessoides",
+      "computed": 44.699237,
+      "measured": 44.6893,
+      "error_pct": 0.022236250385202754,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Hippoglossoides platessoides",
+      "computed": -60.113992,
+      "measured": -60.1033,
+      "error_pct": 0.017789000308152173,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Hippoglossoides platessoides",
+      "computed": 91.04047,
+      "measured": 91.0,
+      "error_pct": 0.04447250077037734,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Lutjanus kasmira",
+      "computed": 28.223021,
+      "measured": 28.21674664,
+      "error_pct": 0.022236250385203677,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Lutjanus kasmira",
+      "computed": -177.341154,
+      "measured": -177.3096128,
+      "error_pct": 0.017789000308160892,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Lutjanus kasmira",
+      "computed": 25.111163,
+      "measured": 25.1,
+      "error_pct": 0.04447250077037373,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Syndiniales",
+      "computed": -42.606172,
+      "measured": -42.5967,
+      "error_pct": 0.022236250385194948,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Syndiniales",
+      "computed": 148.259669,
+      "measured": 148.2333,
+      "error_pct": 0.01778900030814857,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Larus argentatus",
+      "computed": 51.232249,
+      "measured": 51.2208592,
+      "error_pct": 0.02223625038519648,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Larus argentatus",
+      "computed": 2.944117,
+      "measured": 2.9435933,
+      "error_pct": 0.017789000308159327,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Rhomboplites aurorubens",
+      "computed": 32.257171,
+      "measured": 32.25,
+      "error_pct": 0.022236250385196235,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Rhomboplites aurorubens",
+      "computed": -79.044057,
+      "measured": -79.0299987793,
+      "error_pct": 0.017789000308153037,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Rhomboplites aurorubens",
+      "computed": 100.044473,
+      "measured": 100.0,
+      "error_pct": 0.04447250077038234,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Calanus glacialis",
+      "computed": 47.191491,
+      "measured": 47.181,
+      "error_pct": 0.022236250385204572,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Calanus glacialis",
+      "computed": -51.788211,
+      "measured": -51.779,
+      "error_pct": 0.017789000308155577,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Calanus glacialis",
+      "computed": 10.004447,
+      "measured": 10.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Laevipilina",
+      "computed": -64.467937,
+      "measured": -64.453605,
+      "error_pct": 0.02223625038519687,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Laevipilina",
+      "computed": 101.018944,
+      "measured": 101.0009766667,
+      "error_pct": 0.01778900030815714,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Laevipilina",
+      "computed": 412.183227,
+      "measured": 412.0,
+      "error_pct": 0.044472500770374616,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Phocoena phocoena",
+      "computed": 1.992036,
+      "measured": 1.991593,
+      "error_pct": 0.02223625038519397,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Phocoena phocoena",
+      "computed": 51.307994,
+      "measured": 51.298868,
+      "error_pct": 0.017789000308161686,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Phacelocarpus peperocarpos",
+      "computed": -38.668597,
+      "measured": -38.66,
+      "error_pct": 0.02223625038520104,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Phacelocarpus peperocarpos",
+      "computed": 145.713916,
+      "measured": 145.688,
+      "error_pct": 0.017789000308155254,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Vermiliopsis striaticeps",
+      "computed": 40.047352,
+      "measured": 40.038449,
+      "error_pct": 0.02223625038520074,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Vermiliopsis striaticeps",
+      "computed": 24.00003,
+      "measured": 23.995761,
+      "error_pct": 0.01778900030815618,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Vermiliopsis striaticeps",
+      "computed": 17.00756,
+      "measured": 17.0,
+      "error_pct": 0.04447250077037482,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Plumarella longispina",
+      "computed": 33.713925,
+      "measured": 33.70643,
+      "error_pct": 0.022236250385194743,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Plumarella longispina",
+      "computed": -119.153833,
+      "measured": -119.13264,
+      "error_pct": 0.017789000308158612,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Plumarella longispina",
+      "computed": 188.083608,
+      "measured": 188.0,
+      "error_pct": 0.04447250077036904,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Cyttus australis",
+      "computed": -37.835911,
+      "measured": -37.8275,
+      "error_pct": 0.022236250385198487,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Cyttus australis",
+      "computed": 149.100689,
+      "measured": 149.07417,
+      "error_pct": 0.01778900030815571,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Cyttus australis",
+      "computed": 40.017789,
+      "measured": 40.0,
+      "error_pct": 0.04447250077037168,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pisaster giganteus",
+      "computed": 36.567859,
+      "measured": 36.559729,
+      "error_pct": 0.022236250385207674,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pisaster giganteus",
+      "computed": -121.965707,
+      "measured": -121.944014,
+      "error_pct": 0.01778900030815201,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Pisaster giganteus",
+      "computed": 15.006671,
+      "measured": 15.0,
+      "error_pct": 0.0444725007703776,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pusa hispida botnica",
+      "computed": 65.344587,
+      "measured": 65.33006,
+      "error_pct": 0.022236250385190413,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pusa hispida botnica",
+      "computed": 24.789479,
+      "measured": 24.78507,
+      "error_pct": 0.01778900030815709,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Cancer productus",
+      "computed": 49.042736,
+      "measured": 49.0318333333333,
+      "error_pct": 0.022236250385192356,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Cancer productus",
+      "computed": -125.347294,
+      "measured": -125.325,
+      "error_pct": 0.017789000308158068,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Syndiniales",
+      "computed": -6.000634,
+      "measured": -5.9993,
+      "error_pct": 0.02223625038520154,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Syndiniales",
+      "computed": -168.781349,
+      "measured": -168.75133,
+      "error_pct": 0.017789000308161884,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Philocheras trispinosus",
+      "computed": 50.761285,
+      "measured": 50.75,
+      "error_pct": 0.02223625038519971,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Philocheras trispinosus",
+      "computed": 4.500801,
+      "measured": 4.5,
+      "error_pct": 0.017789000308157357,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Copepoda",
+      "computed": -32.173853,
+      "measured": -32.1667,
+      "error_pct": 0.02223625038518963,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Copepoda",
+      "computed": 57.74357,
+      "measured": 57.7333,
+      "error_pct": 0.017789000308154626,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Copepoda",
+      "computed": 26.011563,
+      "measured": 26.0,
+      "error_pct": 0.04447250077038124,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Neomysis integer",
+      "computed": 55.938436,
+      "measured": 55.926,
+      "error_pct": 0.02223625038520162,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Neomysis integer",
+      "computed": 8.363488,
+      "measured": 8.362,
+      "error_pct": 0.017789000308144422,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Neomysis integer",
+      "computed": 0.400178,
+      "measured": 0.4,
+      "error_pct": 0.04447250077037335,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Bathyporeia sarsi",
+      "computed": 56.054462,
+      "measured": 56.042,
+      "error_pct": 0.02223625038519657,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Bathyporeia sarsi",
+      "computed": 10.474063,
+      "measured": 10.4722,
+      "error_pct": 0.017789000308147954,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Merlangius merlangus",
+      "computed": 58.426189,
+      "measured": 58.4132,
+      "error_pct": 0.022236250385195035,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Merlangius merlangus",
+      "computed": -6.01737,
+      "measured": -6.0163,
+      "error_pct": 0.017789000308151445,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Merlangius merlangus",
+      "computed": 98.043583,
+      "measured": 98.0,
+      "error_pct": 0.04447250077038292,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Syllidae",
+      "computed": 29.589979,
+      "measured": 29.5834007263,
+      "error_pct": 0.02223625038520463,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Syllidae",
+      "computed": -87.349436,
+      "measured": -87.3339004517,
+      "error_pct": 0.017789000308149148,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Syllidae",
+      "computed": 98.043583,
+      "measured": 98.0,
+      "error_pct": 0.04447250077038292,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Doryteuthis gahi",
+      "computed": -52.7784,
+      "measured": -52.7666666666667,
+      "error_pct": 0.02223625038519961,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Doryteuthis gahi",
+      "computed": -58.760451,
+      "measured": -58.75,
+      "error_pct": 0.01778900030815971,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Doryteuthis gahi",
+      "computed": 157.069822,
+      "measured": 157.0,
+      "error_pct": 0.0444725007703675,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Merlangius merlangus",
+      "computed": 58.158229,
+      "measured": 58.1453,
+      "error_pct": 0.022236250385200405,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Merlangius merlangus",
+      "computed": -2.686448,
+      "measured": -2.68597,
+      "error_pct": 0.017789000308147628,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Spirotrichea",
+      "computed": 78.848529,
+      "measured": 78.831,
+      "error_pct": 0.02223625038520047,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Spirotrichea",
+      "computed": -2.794297,
+      "measured": -2.7938,
+      "error_pct": 0.01778900030814745,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Syndiniales",
+      "computed": -36.263212,
+      "measured": -36.25515,
+      "error_pct": 0.02223625038520338,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Syndiniales",
+      "computed": 150.317855,
+      "measured": 150.29112,
+      "error_pct": 0.017789000308160035,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Uria aalge",
+      "computed": 53.93339,
+      "measured": 53.9214,
+      "error_pct": 0.022236250385194153,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Uria aalge",
+      "computed": 5.134013,
+      "measured": 5.1331,
+      "error_pct": 0.01778900030815592,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Morus bassanus",
+      "computed": 48.500944,
+      "measured": 48.490162,
+      "error_pct": 0.022236250385203146,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Morus bassanus",
+      "computed": -64.159086,
+      "measured": -64.147675,
+      "error_pct": 0.017789000308147895,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Maribacter",
+      "computed": -1.500884,
+      "measured": -1.50055,
+      "error_pct": 0.02223625038520332,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Maribacter",
+      "computed": -168.779699,
+      "measured": -168.74968,
+      "error_pct": 0.017789000308150053,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Maribacter",
+      "computed": 2062.016623,
+      "measured": 2061.1,
+      "error_pct": 0.044472500770378634,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Gadus morhua",
+      "computed": 56.645893,
+      "measured": 56.6333,
+      "error_pct": 0.022236250385204895,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Gadus morhua",
+      "computed": 1.51697,
+      "measured": 1.5167,
+      "error_pct": 0.01778900030815387,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Gadus morhua",
+      "computed": 92.040915,
+      "measured": 92.0,
+      "error_pct": 0.044472500770369364,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Alphaproteobacteria",
+      "computed": -29.169105,
+      "measured": -29.16262,
+      "error_pct": 0.022236250385200915,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Alphaproteobacteria",
+      "computed": 154.50403,
+      "measured": 154.47655,
+      "error_pct": 0.017789000308162554,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Alphaproteobacteria",
+      "computed": 250.111181,
+      "measured": 250.0,
+      "error_pct": 0.044472500770370973,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Candidatus Pelagibacter",
+      "computed": -42.606172,
+      "measured": -42.5967,
+      "error_pct": 0.022236250385194948,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Candidatus Pelagibacter",
+      "computed": 148.259669,
+      "measured": 148.2333,
+      "error_pct": 0.01778900030814857,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Nemipteridae",
+      "computed": -32.967329,
+      "measured": -32.96,
+      "error_pct": 0.022236250385206276,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Nemipteridae",
+      "computed": 152.967206,
+      "measured": 152.94,
+      "error_pct": 0.017789000308153793,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Nemipteridae",
+      "computed": 100.044473,
+      "measured": 100.0,
+      "error_pct": 0.04447250077038234,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Mirounga leonina",
+      "computed": -57.801418,
+      "measured": -57.7885678005488,
+      "error_pct": 0.02223625038520331,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Mirounga leonina",
+      "computed": -41.354838,
+      "measured": -41.3474830322189,
+      "error_pct": 0.017789000308162453,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Metridia longa",
+      "computed": 66.344749,
+      "measured": 66.33,
+      "error_pct": 0.02223625038518933,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Metridia longa",
+      "computed": 33.525963,
+      "measured": 33.52,
+      "error_pct": 0.017789000308163952,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Metridia longa",
+      "computed": 65.028907,
+      "measured": 65.0,
+      "error_pct": 0.04447250077038671,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Syndiniales",
+      "computed": -34.126787,
+      "measured": -34.1192,
+      "error_pct": 0.022236250385190646,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Syndiniales",
+      "computed": 151.253602,
+      "measured": 151.2267,
+      "error_pct": 0.017789000308153908,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Flavobacteriaceae",
+      "computed": -42.606142,
+      "measured": -42.59667,
+      "error_pct": 0.02223625038519843,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Flavobacteriaceae",
+      "computed": 148.259699,
+      "measured": 148.23333,
+      "error_pct": 0.017789000308159275,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Flavobacteriaceae",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Lithodesmium undulatum",
+      "computed": -8.658925,
+      "measured": -8.657,
+      "error_pct": 0.022236250385193335,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Lithodesmium undulatum",
+      "computed": -80.841378,
+      "measured": -80.827,
+      "error_pct": 0.017789000308157703,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Lithodesmium undulatum",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Blastococcus",
+      "computed": -27.351081,
+      "measured": -27.345,
+      "error_pct": 0.022236250385195343,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Blastococcus",
+      "computed": 153.589317,
+      "measured": 153.562,
+      "error_pct": 0.01778900030815588,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Phocoena phocoena",
+      "computed": 43.654639,
+      "measured": 43.644934,
+      "error_pct": 0.022236250385195146,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Phocoena phocoena",
+      "computed": -70.187158,
+      "measured": -70.174675,
+      "error_pct": 0.01778900030815136,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Ictalurus furcatus",
+      "computed": 38.743753,
+      "measured": 38.73514,
+      "error_pct": 0.02223625038520321,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Ictalurus furcatus",
+      "computed": -76.708353,
+      "measured": -76.69471,
+      "error_pct": 0.01778900030815727,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pleuronectes platessa",
+      "computed": 55.399316,
+      "measured": 55.387,
+      "error_pct": 0.02223625038519947,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pleuronectes platessa",
+      "computed": -0.419175,
+      "measured": -0.4191,
+      "error_pct": 0.017789000308152874,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Pleuronectes platessa",
+      "computed": 67.029797,
+      "measured": 67.0,
+      "error_pct": 0.04447250077038573,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Mugil incilis",
+      "computed": 10.782557,
+      "measured": 10.7801594383305,
+      "error_pct": 0.02223625038519895,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Mugil incilis",
+      "computed": -74.615245,
+      "measured": -74.6019738953328,
+      "error_pct": 0.017789000308155185,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Sternula nereis",
+      "computed": -32.006215,
+      "measured": -31.9991,
+      "error_pct": 0.022236250385205093,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Sternula nereis",
+      "computed": 115.563554,
+      "measured": 115.543,
+      "error_pct": 0.01778900030814895,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Sternula nereis",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Lethrinus lentjan",
+      "computed": -20.346723,
+      "measured": -20.3422,
+      "error_pct": 0.022236250385195742,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Lethrinus lentjan",
+      "computed": 117.249554,
+      "measured": 117.2287,
+      "error_pct": 0.017789000308159462,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Lethrinus lentjan",
+      "computed": 32.014231,
+      "measured": 32.0,
+      "error_pct": 0.04447250077037612,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Copepoda",
+      "computed": 14.553235,
+      "measured": 14.55,
+      "error_pct": 0.022236250385197713,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Copepoda",
+      "computed": 72.69623,
+      "measured": 72.6833,
+      "error_pct": 0.017789000308160347,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Copepoda",
+      "computed": 25.011118,
+      "measured": 25.0,
+      "error_pct": 0.04447250077038234,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Pegusa lascaris",
+      "computed": 51.601772,
+      "measured": 51.5903,
+      "error_pct": 0.022236250385197286,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Pegusa lascaris",
+      "computed": -4.534006,
+      "measured": -4.5332,
+      "error_pct": 0.017789000308153318,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Pegusa lascaris",
+      "computed": 33.014676,
+      "measured": 33.0,
+      "error_pct": 0.04447250077037545,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Larus fuscus",
+      "computed": 37.193979,
+      "measured": 37.1857102,
+      "error_pct": 0.022236250385197765,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Larus fuscus",
+      "computed": -6.135208,
+      "measured": -6.1341164,
+      "error_pct": 0.017789000308161697,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Ariopsis felis",
+      "computed": 30.511783,
+      "measured": 30.505,
+      "error_pct": 0.022236250385194837,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Ariopsis felis",
+      "computed": -88.035658,
+      "measured": -88.02,
+      "error_pct": 0.017789000308154935,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Larus argentatus",
+      "computed": 51.243261,
+      "measured": 51.2318688,
+      "error_pct": 0.02223625038519969,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Larus argentatus",
+      "computed": 2.929333,
+      "measured": 2.9288118,
+      "error_pct": 0.017789000308148298,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Candidatus Pelagibacter",
+      "computed": -34.014189,
+      "measured": -34.006627,
+      "error_pct": 0.022236250385199004,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Candidatus Pelagibacter",
+      "computed": 151.217269,
+      "measured": 151.190374,
+      "error_pct": 0.017789000308157714,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Sediminitomix",
+      "computed": -32.007116,
+      "measured": -32.0,
+      "error_pct": 0.022236250385199163,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Sediminitomix",
+      "computed": 115.437231,
+      "measured": 115.4167,
+      "error_pct": 0.01778900030815855,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Anser anser",
+      "computed": 63.068721,
+      "measured": 63.0547,
+      "error_pct": 0.022236250385202667,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Anser anser",
+      "computed": 7.723574,
+      "measured": 7.7222,
+      "error_pct": 0.017789000308154834,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Clupea pallasii",
+      "computed": 52.671149,
+      "measured": 52.6594394862667,
+      "error_pct": 0.022236250385204298,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Clupea pallasii",
+      "computed": -128.841921,
+      "measured": -128.819005171125,
+      "error_pct": 0.017789000308146653,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Melanogrammus aeglefinus",
+      "computed": 42.185711,
+      "measured": 42.176333,
+      "error_pct": 0.022236250385198813,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Melanogrammus aeglefinus",
+      "computed": -67.142775,
+      "measured": -67.130833,
+      "error_pct": 0.017789000308160944,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Apedinella radians",
+      "computed": 58.016787,
+      "measured": 58.00388905,
+      "error_pct": 0.022236250385204524,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Apedinella radians",
+      "computed": 11.70515,
+      "measured": 11.70306843,
+      "error_pct": 0.017789000308158907,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Apedinella radians",
+      "computed": 4.001779,
+      "measured": 4.0,
+      "error_pct": 0.04447250077037612,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Carcharhinus amblyrhynchos",
+      "computed": -18.614138,
+      "measured": -18.61,
+      "error_pct": 0.022236250385201203,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Carcharhinus amblyrhynchos",
+      "computed": 146.516059,
+      "measured": 146.49,
+      "error_pct": 0.017789000308163744,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Carcharhinus amblyrhynchos",
+      "computed": 1.000445,
+      "measured": 1.0,
+      "error_pct": 0.04447250077037612,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Gadus morhua",
+      "computed": 48.04211,
+      "measured": 48.03143,
+      "error_pct": 0.02223625038519887,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Gadus morhua",
+      "computed": -53.742779,
+      "measured": -53.73322,
+      "error_pct": 0.017789000308157967,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLatitude",
+      "name": "Micromesistius australis",
+      "computed": -52.461663,
+      "measured": -52.45,
+      "error_pct": 0.022236250385198292,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "decimalLongitude",
+      "name": "Micromesistius australis",
+      "computed": -62.561127,
+      "measured": -62.55,
+      "error_pct": 0.01778900030815452,
+      "source": "obis_api"
+    },
+    {
+      "lab": "marine_biology_lab",
+      "property": "depth_m",
+      "name": "Micromesistius australis",
+      "computed": 328.14587,
+      "measured": 328.0,
+      "error_pct": 0.04447250077037125,
+      "source": "obis_depth"
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "mean_height_m",
+      "name": "San Francisco",
+      "computed": 0.9183333333333334,
+      "measured": 0.9183333333333334,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "max_height_m",
+      "name": "San Francisco",
+      "computed": 1.541,
+      "measured": 1.541,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "min_height_m",
+      "name": "San Francisco",
+      "computed": 0.041,
+      "measured": 0.041,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "prediction_count",
+      "name": "San Francisco",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "mean_height_m",
+      "name": "Boston",
+      "computed": 1.528986111111111,
+      "measured": 1.528986111111111,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "max_height_m",
+      "name": "Boston",
+      "computed": 2.76,
+      "measured": 2.76,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "min_height_m",
+      "name": "Boston",
+      "computed": 0.204,
+      "measured": 0.204,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "prediction_count",
+      "name": "Boston",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "mean_height_m",
+      "name": "Key West",
+      "computed": 0.24254166666666668,
+      "measured": 0.24254166666666668,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "max_height_m",
+      "name": "Key West",
+      "computed": 0.453,
+      "measured": 0.453,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "min_height_m",
+      "name": "Key West",
+      "computed": 0.027,
+      "measured": 0.027,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "prediction_count",
+      "name": "Key West",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "mean_height_m",
+      "name": "Seattle",
+      "computed": 2.110527777777777,
+      "measured": 2.110527777777777,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "max_height_m",
+      "name": "Seattle",
+      "computed": 3.638,
+      "measured": 3.638,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "min_height_m",
+      "name": "Seattle",
+      "computed": 0.232,
+      "measured": 0.232,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "prediction_count",
+      "name": "Seattle",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "mean_height_m",
+      "name": "Sewells Point",
+      "computed": 0.30304166666666654,
+      "measured": 0.30304166666666654,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "max_height_m",
+      "name": "Sewells Point",
+      "computed": 0.601,
+      "measured": 0.601,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "min_height_m",
+      "name": "Sewells Point",
+      "computed": 0.012,
+      "measured": 0.012,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "prediction_count",
+      "name": "Sewells Point",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "mean_height_m",
+      "name": "The Battery NY",
+      "computed": 0.6985555555555556,
+      "measured": 0.6985555555555556,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "max_height_m",
+      "name": "The Battery NY",
+      "computed": 1.227,
+      "measured": 1.227,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "min_height_m",
+      "name": "The Battery NY",
+      "computed": 0.108,
+      "measured": 0.108,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "prediction_count",
+      "name": "The Battery NY",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "mean_height_m",
+      "name": "Miami Beach",
+      "computed": 0.6756666666666666,
+      "measured": 0.6756666666666666,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "max_height_m",
+      "name": "Miami Beach",
+      "computed": 1.255,
+      "measured": 1.255,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "min_height_m",
+      "name": "Miami Beach",
+      "computed": 0.139,
+      "measured": 0.139,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "prediction_count",
+      "name": "Miami Beach",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "mean_height_m",
+      "name": "Galveston",
+      "computed": 0.2105833333333334,
+      "measured": 0.2105833333333334,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "max_height_m",
+      "name": "Galveston",
+      "computed": 0.365,
+      "measured": 0.365,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "min_height_m",
+      "name": "Galveston",
+      "computed": 0.004,
+      "measured": 0.004,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "prediction_count",
+      "name": "Galveston",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "mean_height_m",
+      "name": "Los Angeles",
+      "computed": 0.8594583333333333,
+      "measured": 0.8594583333333333,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "max_height_m",
+      "name": "Los Angeles",
+      "computed": 1.379,
+      "measured": 1.379,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "min_height_m",
+      "name": "Los Angeles",
+      "computed": 0.089,
+      "measured": 0.089,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "prediction_count",
+      "name": "Los Angeles",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "mean_height_m",
+      "name": "Portland",
+      "computed": 0.25279166666666675,
+      "measured": 0.25279166666666675,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "max_height_m",
+      "name": "Portland",
+      "computed": 0.474,
+      "measured": 0.474,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "min_height_m",
+      "name": "Portland",
+      "computed": 0.067,
+      "measured": 0.067,
+      "error_pct": 0.0
+    },
+    {
+      "lab": "noaa_tides",
+      "property": "prediction_count",
+      "name": "Portland",
+      "computed": 72.0,
+      "measured": 72.0,
+      "error_pct": 0.0
+    }
+  ]
+}

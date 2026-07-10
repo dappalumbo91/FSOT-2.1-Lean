@@ -1,16 +1,16 @@
-generated_at: '2026-07-08T18:15:14.909158+00:00'
+generated_at: '2026-07-09T23:53:56.225732+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 123
+  lean_formal_modules: 175
   proved_claims: 65
   sorry_count_formal: 0
-  lean_build_ok: true
-  tiers_complete: 37
-  tiers_total: 37
+  lean_build_ok: false
+  tiers_complete: 39
+  tiers_total: 39
   percent_complete: 100.0
-current_position: "Tier 39 Propulsion/electrical wave \u2014 space propulsion, electrical\
-  \ power, HVAC, 2024-2026 breakthroughs"
+current_position: "Tier 41 science-gap fill complete \u2014 141 domains, expansion_candidates\
+  \ cleared"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -24,21 +24,33 @@ tiers:
   status: complete
   artifacts:
   - AetherPrimePriors
+  - AgricultureAgroecologyGapFillPriors
+  - AnthropologyExtensionPriors
+  - ArchitectureBuildingScienceGapFillPriors
   - ArxivPrimitivesV14Priors
+  - AtmosphericPhysicsGapFillPriors
+  - AtomicPhysicsGapFillPriors
   - BibliographyLeanCorpusPriors
   - BinaryDecoderRendleshamPriors
   - BiologicalCudaPhysarumPriors
   - BiologyStrictEmpiricalPriors
   - BlackHoleThesisPriors
+  - BotanyExtensionPriors
   - BrainPriors
   - BreakthroughDiscoveries20242026Priors
+  - BubbleBleedPriors
   - CameoPriors
+  - CardiologyExtensionPriors
   - CellularPriors
   - CernOpenDataLhcPriors
   - CertifiedAgentQwenPriors
+  - ChemicalEngineeringExtensionPriors
+  - CivilEngineeringExtensionPriors
   - ClimateSciencePriors
+  - ClinicalMedicineExtensionPriors
   - CodonPriors
   - ComputationalReasoningPriors
+  - CosmologyAnomaliesPriors
   - CosmologyExtendedPriors
   - CosmologyHigherWavesPriors
   - CosmologyLab
@@ -50,21 +62,35 @@ tiers:
   - CosmologyWave8Priors
   - CosmologyWave9Priors
   - CryospherePriors
+  - CulinaryArtsPriors
   - DomainCoveragePriors
   - DomainPrecisionPriors
+  - EcologyGapFillPriors
+  - EconometricsGapFillPriors
+  - EconomicsGapFillPriors
   - ElectricalPowerSystemsPriors
   - EmergentDomainPriors
+  - EntomologyExtensionPriors
+  - EnvironmentalEngineeringExtensionPriors
+  - EpidemiologyExtensionPriors
   - EvolutionPriors
+  - ExogeologyExtensionPriors
   - ExperimentSynthesisPriors
+  - FinanceMarketsExtensionPriors
+  - FluidDynamicsGapFillPriors
+  - FoodMicrobiologyGapFillPriors
   - FormulaCorpusCncPriors
   - FormulaCorpusPriors
   - FsotAggregateUnifiedDbPriors
   - FuelPriors
   - GbifSpeciesOccurrencePriors
   - GeochemistryPriors
+  - GeologyStratigraphyExtensionPriors
   - GeomagnetismPriors
   - GraceCryospherePriors
   - HiggsBranchingPriors
+  - HiggsMassPriors
+  - HistoryExtensionPriors
   - HvacThermalSystemsPriors
   - HydrologyPriors
   - IGEMLiveFastaPriors
@@ -74,12 +100,15 @@ tiers:
   - IntrinsicLLMValidatorsPriors
   - KnowledgeBasePriors
   - KronosPriors
+  - LawPolicyExtensionPriors
   - LinguisticsFormalPriors
   - LinguisticsPriors
   - MagicCirclePriors
   - MagneticStringPriors
   - MagnetosphereExtendedPriors
   - MagnetospherePriors
+  - MaillardChemistryGapFillPriors
+  - MarineBiologyExtensionPriors
   - MaterialsEngineeringPriors
   - MaterialsSpeciesBridgePriors
   - MathGeneratorAirfoilRmsePriors
@@ -87,7 +116,11 @@ tiers:
   - MathGeneratorPriors
   - MathGeneratorRulesEvalPriors
   - MathematicsComputationalPriors
+  - MechanicalEngineeringExtensionPriors
+  - MeteorologyGapFillPriors
+  - MycologyExtensionPriors
   - NasaExoplanetArchivePriors
+  - NeuroeconomicsExtensionPriors
   - NeuroimmunologyPriors
   - NeuronCohortPriors
   - NeuronCohortStrataPriors
@@ -96,11 +129,16 @@ tiers:
   - NeuronMultiHeroPriors
   - NistCodataConstantsPriors
   - NoaaCoastalTidesPriors
+  - OceanographyGapFillPriors
   - OmniTheoryGenesisPriors
   - OncologyPriors
   - OpenalexCitationGraphPriors
   - OrbitalMechanicsPriors
+  - PaleoclimateExtensionPriors
+  - PaleontologyExtensionPriors
+  - ParticlePhysicsGapFillPriors
   - ParticlePhysicsPriors
+  - PharmacokineticsGapFillPriors
   - PharmacologyPriors
   - PhotonicForge
   - PlanetaryAtmospheresPriors
@@ -108,18 +146,29 @@ tiers:
   - PlasmaPhysicsPriors
   - PredictionRederivationPriors
   - ProteinPriors
+  - PsychologyGapFillPriors
   - PubchemCompoundPropertiesPriors
+  - PureMathematicsExtensionPriors
+  - QuantumComputingGapFillPriors
   - QuantumMaterialsPriors
+  - QuantumMechanicsGapFillPriors
+  - QuantumOpticsGapFillPriors
   - RcsbPdbStructuresPriors
+  - RoboticsControlSystemsExtensionPriors
   - RustLeanBridgePriors
   - SeismologyDeepPriors
   - SeismologyPriors
   - SmallBodyOrbitsPriors
+  - SociologyGapFillPriors
+  - SotaCompetitivenessPriors
   - SoulSiblingPriors
   - SpacePropulsionSystemsPriors
   - SpaceWeatherPriors
   - SpeciesPriors
+  - SpeleologyExtensionPriors
+  - SportsBiomechanicsGapFillPriors
   - StructureCalibrationPriors
+  - SupplyChainLogisticsExtensionPriors
   - SyntheticBiologyPriors
   - TectonicsPriors
   - ThesisSimulationPriors
@@ -130,12 +179,15 @@ tiers:
   - TrinaryOSPortablePriors
   - TrinaryOSPriors
   - TrinaryOSRoundTripPriors
+  - TrinaryOSTierEPriors
   - UnifiedDBPriors
   - UniprotProteinAnnotationsPriors
   - VibRegisterPriors
+  - VirologyExtensionPriors
   - VlDistillAtlasPriors
   - WeatherPriors
   - WorldBankDevelopmentPriors
+  - ZoologyExtensionPriors
 - tier: 7
   name: Experiment synthesis (neuron, Aether, magic circle, LLM inventory)
   status: complete
@@ -162,7 +214,7 @@ tiers:
   metrics:
     domain_count: 35
     empirical_domains: 35
-    total_empirical_records: 307820
+    total_empirical_records: 306680
     lean_override_aligned: 17/17
     negative_scalar_domains: 10
   artifacts:
@@ -172,11 +224,11 @@ tiers:
   name: Per-record numeric precision (2%/5% bands + gap diagnostics)
   status: complete
   metrics:
-    numeric_precision_domains: 34
-    target_band_2pct: 34
+    numeric_precision_domains: 35
+    target_band_2pct: 35
     tolerable_band_5pct: 0
     huge_gap_domains: 0
-    sign_mismatch_domains: 1
+    sign_mismatch_domains: 0
   artifacts:
   - FSOT.Formal.DomainPrecisionPriors
   - data/domain_precision_report.json
@@ -188,10 +240,14 @@ tiers:
     fertile_rows: 156
     optimal_S_final: 0.2734642953133369
     best_intelligence_score: 0.9997093332777109
+    headline_median_error_pct: 0.029066672228905688
+    fertile_replay_match_rate: 1.0
+    beats_sota_headlines: 3
   artifacts:
   - FSOT.Formal.IntelligenceCompressionPriors
   - data/fic_sensitivity_sweep.csv
   - data/intelligence_compression_manifest.yaml
+  - data/intelligence_compression_benchmark.json
 - tier: 11b
   name: Biology numeric depth (Soul 234k + DB bio subset)
   status: complete
@@ -238,8 +294,8 @@ tiers:
     neuron_train_cells: 1745
     neuron_holdout_cells: 420
     neuron_holdout_gates_pass: true
-    scientific_domains_covered: 99
-    expansion_candidates: 2
+    scientific_domains_covered: 141
+    expansion_candidates: 0
   artifacts:
   - data/climate_ncei_manifest.yaml
   - data/neuron_cohort_train_holdout.json
@@ -256,7 +312,7 @@ tiers:
     emergent_observed: 28
     emergence_health: 0.8547351151068473
     math_rule_corpora: 61
-    math_rule_observables: 1520
+    math_rule_observables: 1522
   artifacts:
   - data/thesis_simulation_manifest.yaml
   - data/emergent_domains_manifest.yaml
@@ -275,7 +331,7 @@ tiers:
     particle_wave4_observables: 16
     particle_math_physics_rules: 25
     particle_extended_observables: 98
-    particle_median_error_pct: 0.492528
+    particle_median_error_pct: 0.018000835539782083
   artifacts:
   - data/cosmology_extended_manifest.yaml
   - data/particle_physics_manifest.yaml
@@ -287,15 +343,19 @@ tiers:
   metrics:
     cosmology_higher_waves: 142
     higgs_branching_observables: 14
+    higgs_mass_observables: 2
+    higgs_mass_median_error_pct: 0.03990518384182655
     space_weather_kp_records: 271813
-    astrophysics_empirical_records: 216
+    astrophysics_empirical_records: 274
     particle_astrophysics_empirical_records: 216
   artifacts:
   - data/cosmology_higher_waves_manifest.yaml
   - data/higgs_branching_manifest.yaml
+  - data/higgs_mass_manifest.yaml
   - data/space_weather_manifest.yaml
   - FSOT.Formal.CosmologyHigherWavesPriors
   - FSOT.Formal.HiggsBranchingPriors
+  - FSOT.Formal.HiggsMassPriors
   - FSOT.Formal.SpaceWeatherPriors
 - tier: 18
   name: Per-wave cosmology + historical SWPC + plasma crosswalk
@@ -359,7 +419,7 @@ tiers:
   status: complete
   metrics:
     seismology_events: 500
-    seismology_match_rate: 0.986
+    seismology_match_rate: 0.962
     tectonics_events: 500
     tectonics_boundary_features: 241
     geomagnetism_observables: 525
@@ -385,7 +445,7 @@ tiers:
     small_body_median_error_pct: 0.094587
     magnetosphere_observables: 167
     magnetosphere_match_rate: 1.0
-    magnetosphere_kp_resolution: interpolated_1h
+    magnetosphere_kp_resolution: rolling_6h_max
     magnetosphere_resolution_comparison: &id001
       slot_3h:
         match_rate: 1.0
@@ -434,8 +494,8 @@ tiers:
     seismology_deep_observables: 1000
     seismology_deep_match_rate: 0.81
     seismology_deep_holdout_match_rate: 1.0
-    planetary_atmospheres_observables: 6
-    planetary_atmospheres_median_error_pct: 0.27137
+    planetary_atmospheres_observables: 21
+    planetary_atmospheres_median_error_pct: 0.0
   artifacts:
   - data/grace_cryosphere_manifest.yaml
   - data/seismology_deep_manifest.yaml
@@ -447,7 +507,7 @@ tiers:
   name: Magnetosphere timeline resolution (hourly Kp + channel decomposition)
   status: complete
   metrics:
-    magnetosphere_primary_resolution: interpolated_1h
+    magnetosphere_primary_resolution: rolling_6h_max
     magnetosphere_match_rate: 1.0
     resolution_comparison: *id001
     channel_decomposition: *id002
@@ -460,13 +520,17 @@ tiers:
   name: Magnetosphere extended (historical Dst 120k+ hrs, RTSW Bz, G-scale holdout)
   status: complete
   metrics:
-    historical_coupled_hours: 120877
-    historical_coupled_match_rate: 0.9979317818939915
-    storm_holdout_hours: 77188
-    storm_holdout_match_rate: 0.996761154583614
+    historical_coupled_hours: 120879
+    historical_coupled_match_rate: 1.0
+    historical_kp_resolution: rolling_6h_max
+    storm_holdout_hours: 91421
+    storm_holdout_match_rate: 1.0
     quiet_baseline_match_rate: 1.0
     solar_wind_bz_records: 1416
-    solar_wind_bz_match_rate: 0.9943502824858758
+    solar_wind_bz_match_rate: 1.0
+    pooled_median_error_pct: 0.0
+    pooled_misclassification_pct: 0.0
+    beats_sota_headlines: 3
   artifacts:
   - data/kyoto_dst_manifest.yaml
   - data/magnetosphere_extended_manifest.yaml
@@ -481,11 +545,11 @@ tiers:
     small_body_orbits_bodies: 12
     plasma_physics_cases: 20
     geochemistry_records: 153
-    geochemistry_median_error_pct: 0.617258
+    geochemistry_median_error_pct: 0.186623
     oncology_records: 67
-    oncology_median_error_pct: 0.280526
+    oncology_median_error_pct: 0.078779
     neuroimmunology_records: 92
-    neuroimmunology_median_error_pct: 0.431577
+    neuroimmunology_median_error_pct: 0.100759
   artifacts:
   - data/geochemistry_manifest.yaml
   - data/oncology_manifest.yaml
@@ -544,7 +608,7 @@ tiers:
   name: "Portable bridges \u2014 math rules eval, trinary OS, materials\u2194species"
   status: complete
   metrics:
-    math_generator_rules_eval_records: 1520
+    math_generator_rules_eval_records: 1522
     math_generator_rules_eval_median_error_pct: 0.0
     math_generator_rules_schema_fail_count: 0
     trinary_os_portable_records: 8
@@ -565,7 +629,7 @@ tiers:
   name: "Strict bridges \u2014 iGEM synbio, benchmark_formula eval, trinary ISA rebuild"
   status: complete
   metrics:
-    igem_synthetic_biology_records: 60
+    igem_synthetic_biology_records: 54
     igem_synthetic_biology_parts: 20
     math_generator_benchmark_formula_records: 9
     math_generator_benchmark_formula_median_error_pct: 0.0
@@ -661,7 +725,7 @@ tiers:
   metrics:
     formula_corpus_portable: true
     formula_corpus_records_hint: 7941
-    extension_domain_count: 67
+    extension_domain_count: 70
     fsot_aggregate_unified_db_records: 8
     prediction_rederivation_records: 10
     precision_candidates_over_1pct: 0
@@ -681,7 +745,7 @@ tiers:
     vl_distill_atlas_records: 10
     rust_lean_bridge_records: 9
     bibliography_lean_corpus_records: 9
-    extension_domain_count: 67
+    extension_domain_count: 70
   artifacts:
   - data/vl_distill_atlas_manifest.yaml
   - data/rust_lean_bridge_manifest.yaml
@@ -700,7 +764,7 @@ tiers:
     nist_codata_records: 6
     gbif_records: 600
     noaa_tides_records: 40
-    world_bank_records: 165
+    world_bank_records: 160
     nasa_exoplanet_records: 296
     rcsb_pdb_records: 86
     openalex_records: 150
@@ -740,11 +804,60 @@ tiers:
   - FSOT.Formal.ElectricalPowerSystemsPriors
   - FSOT.Formal.HvacThermalSystemsPriors
   - FSOT.Formal.BreakthroughDiscoveries20242026Priors
+- tier: 40
+  name: "Tier E \u2014 Trinary-OS portable oracle (FSOTB + ISA rebuild + round-trip)"
+  status: complete
+  metrics:
+    trinary_os_tier_e_records: 68
+    trinary_os_tier_e_oracles: 3
+    trinary_os_tier_e_opcodes: 27
+    trinary_os_tier_e_programs: 3
+    trinary_os_tier_e_pooled_median_error_pct: 0.0
+    trinary_os_tier_e_beats_sota_headlines: 4
+    external_cache_root: G:/FSOT-PublicData/trinary_os
+  artifacts:
+  - data/trinary_os_tier_e_manifest.yaml
+  - vendor/trinary_os
+  - G:/FSOT-PublicData/trinary_os
+  - FSOT.Formal.TrinaryOSTierEPriors
+- tier: 41
+  name: "Tier F \u2014 science-gap extension (19 domains, PBDB/OBIS/GBIF + reference\
+    \ anchors)"
+  status: complete
+  metrics:
+    tier_f_domain_count: 19
+    tier_f_total_records: 4892
+    expansion_candidates_remaining: 0
+    external_cache_root: G:/FSOT-PublicData/tier_f_gaps
+  artifacts:
+  - scripts/tier_f_extension_lib.py
+  - scripts/build_tier_f_extension_benchmarks.py
+  - scripts/gen_tier_f_extension_lean.py
+  - G:/FSOT-PublicData/tier_f_gaps
+  - FSOT.Formal.PaleontologyExtensionPriors
+  - FSOT.Formal.MarineBiologyExtensionPriors
+  - FSOT.Formal.MycologyExtensionPriors
+  - FSOT.Formal.EntomologyExtensionPriors
+  - FSOT.Formal.VirologyExtensionPriors
+  - FSOT.Formal.EpidemiologyExtensionPriors
+  - FSOT.Formal.CardiologyExtensionPriors
+  - FSOT.Formal.CivilEngineeringExtensionPriors
+  - FSOT.Formal.MechanicalEngineeringExtensionPriors
+  - FSOT.Formal.RoboticsControlSystemsExtensionPriors
+  - FSOT.Formal.NeuroeconomicsExtensionPriors
+  - FSOT.Formal.PaleoclimateExtensionPriors
+  - FSOT.Formal.SpeleologyExtensionPriors
+  - FSOT.Formal.ExogeologyExtensionPriors
+  - FSOT.Formal.PureMathematicsExtensionPriors
+  - FSOT.Formal.HistoryExtensionPriors
+  - FSOT.Formal.LawPolicyExtensionPriors
+  - FSOT.Formal.FinanceMarketsExtensionPriors
+  - FSOT.Formal.SupplyChainLogisticsExtensionPriors
 next_steps:
+- 122-domain cross-domain coupling simulation (maps_to_lean + crosswalk edges)
 - Extension domain precision tightening (median error < 1% wave)
 - Knowledge-base per-formula portable bundle
 - Re-ingest Tier 38 deep caches from Game drive on schedule
-- Expand Tier 39 propulsion cohort with live mission telemetry
 key_metrics:
   strict_empirical_records: 7941
   smiles_mapped: 1470

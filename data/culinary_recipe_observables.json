@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "source": "FSOT household recipe calibration (banana/zucchini/pumpkin quick breads + coffee roasting)",
+  "updated": "2026-07-09",
+  "recipes": [
+    {
+      "recipe_id": "banana_bread",
+      "name": "Banana Bread",
+      "category": "quick_bread",
+      "process_observables": [
+        {"property": "bake_temperature_C", "measured": 175.0, "unit": "C"},
+        {"property": "bake_time_min", "measured": 58.0, "unit": "min"},
+        {"property": "banana_mass_fraction", "measured": 0.34, "unit": "mass_fraction"},
+        {"property": "final_moisture_pct", "measured": 28.5, "unit": "pct"}
+      ]
+    },
+    {
+      "recipe_id": "zucchini_bread",
+      "name": "Zucchini Bread",
+      "category": "quick_bread",
+      "process_observables": [
+        {"property": "bake_temperature_C", "measured": 175.0, "unit": "C"},
+        {"property": "bake_time_min", "measured": 52.0, "unit": "min"},
+        {"property": "zucchini_mass_fraction", "measured": 0.29, "unit": "mass_fraction"},
+        {"property": "final_moisture_pct", "measured": 26.0, "unit": "pct"}
+      ]
+    },
+    {
+      "recipe_id": "pumpkin_bread",
+      "name": "Pumpkin Bread",
+      "category": "quick_bread",
+      "process_observables": [
+        {"property": "bake_temperature_C", "measured": 175.0, "unit": "C"},
+        {"property": "bake_time_min", "measured": 60.0, "unit": "min"},
+        {"property": "pumpkin_mass_fraction", "measured": 0.31, "unit": "mass_fraction"},
+        {"property": "final_moisture_pct", "measured": 27.2, "unit": "pct"}
+      ]
+    }
+  ],
+  "coffee_roasting": [
+    {"property": "first_crack_temperature_C", "measured": 196.0, "unit": "C", "bean_origin": "mixed_arabica"},
+    {"property": "development_time_ratio", "measured": 0.24, "unit": "ratio", "roast_level": "medium"},
+    {"property": "weight_loss_pct", "measured": 14.8, "unit": "pct", "roast_level": "medium"},
+    {"property": "end_temperature_C", "measured": 205.0, "unit": "C", "roast_level": "medium"}
+  ]
+}

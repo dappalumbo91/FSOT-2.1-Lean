@@ -1,23 +1,563 @@
 {
-  "generated_at": "2026-07-07T23:13:36.089494+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:15:21.350920+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "vendor/math_generator/rules",
+  "source_repo": "vendor/math_generator/rules",
   "maps_to_lean": [
     "particle",
     "mathematical",
     "consciousness"
   ],
   "D_eff": 17,
-  "record_count": 1520,
-  "observable_count": 1520,
+  "record_count": 1522,
+  "observable_count": 1522,
   "median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
   "schema_fail_count": 0,
+  "corpus_decomposition": {
+    "ABSTRACT_ALGEBRA": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "ADVANCED_ALGEBRA": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "ADVANCED_ANALYSIS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "ADVANCED_FOUNDATIONS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "ADVANCED_GEOMETRY_TOPOLOGY": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "AI_ML": {
+      "rule_count": 12,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 12,
+      "eval_kind_counts": {
+        "symbolic_schema": 12
+      }
+    },
+    "ALGEBRA": {
+      "rule_count": 36,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 36,
+      "eval_kind_counts": {
+        "symbolic_schema": 36
+      }
+    },
+    "ALGEBRAIC_TOPOLOGY": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "ANALYTIC_EXTENSIONS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "ARITHMETIC": {
+      "rule_count": 83,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 83,
+      "eval_kind_counts": {
+        "symbolic_schema": 83
+      }
+    },
+    "CAD": {
+      "rule_count": 12,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 12,
+      "eval_kind_counts": {
+        "symbolic_schema": 12
+      }
+    },
+    "CALCULUS": {
+      "rule_count": 44,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 44,
+      "eval_kind_counts": {
+        "symbolic_schema": 44
+      }
+    },
+    "CATEGORY_THEORY": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "CIVIL_STRUCTURAL": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "COMPLEX_ANALYSIS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "COMPUTATIONAL_APPLIED": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "COMPUTATIONAL_SHAPE": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "CONTROL_THEORY": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "CRYPTOGRAPHY": {
+      "rule_count": 12,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 12,
+      "eval_kind_counts": {
+        "symbolic_schema": 12
+      }
+    },
+    "DIFFERENTIAL_EQUATIONS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "DIFFERENTIAL_GEOMETRY": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "DISCRETE_MATH": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "ELECTRICAL_CIRCUITS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "ENGINEERING_DYNAMICS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "ENGINEERING_STATICS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "EUCLIDEAN_PROOF": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "FINANCE_ECON_MATH": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "FLUID_MECHANICS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "FSOT_OVERLAY": {
+      "rule_count": 27,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 27,
+      "eval_kind_counts": {
+        "symbolic_schema": 21,
+        "live_benchmark": 6
+      }
+    },
+    "GENERAL_MATHEMATICS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "GEOMETRY": {
+      "rule_count": 27,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 27,
+      "eval_kind_counts": {
+        "symbolic_schema": 27
+      }
+    },
+    "HEAT_TRANSFER": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "INFORMATION_THEORY": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "LINEAR_ALGEBRA": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "LINEAR_SYSTEM": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "LOGIC_FOUNDATIONS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "MACHINING_MATH": {
+      "rule_count": 13,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 13,
+      "eval_kind_counts": {
+        "symbolic_schema": 13
+      }
+    },
+    "MANUFACTURING_PROCESSES": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "MATERIALS_SCIENCE": {
+      "rule_count": 12,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 12,
+      "eval_kind_counts": {
+        "symbolic_schema": 12
+      }
+    },
+    "MATHEMATICAL_PHYSICS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "MEASURE_THEORY": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "META_MATHEMATICS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "NUMBER_THEORY": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "NUMERICAL_ANALYSIS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "OPEN_PROBLEMS": {
+      "rule_count": 16,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 16,
+      "eval_kind_counts": {
+        "symbolic_schema": 16
+      }
+    },
+    "OPERATIONS_RESEARCH": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "OPTIMIZATION": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "PROBABILITY": {
+      "rule_count": 26,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 26,
+      "eval_kind_counts": {
+        "symbolic_schema": 26
+      }
+    },
+    "PROBABILITY_APPLICATIONS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "QUANTUM_COMPUTING": {
+      "rule_count": 12,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 12,
+      "eval_kind_counts": {
+        "symbolic_schema": 12
+      }
+    },
+    "REAL_ANALYSIS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "ROBOTICS": {
+      "rule_count": 12,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 12,
+      "eval_kind_counts": {
+        "symbolic_schema": 12
+      }
+    },
+    "SCIENCE_SIDE": {
+      "rule_count": 28,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 28,
+      "eval_kind_counts": {
+        "symbolic_schema": 28
+      }
+    },
+    "SIGNALS_SYSTEMS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "STATISTICS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "STOCHASTIC_PROCESSES": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "STRENGTH_OF_MATERIALS": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "STRUCTURAL_ALGEBRA": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "THERMODYNAMICS_ENGINEERING": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "TOPOLOGY": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    },
+    "WOODWORKING_MATH": {
+      "rule_count": 25,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 25,
+      "eval_kind_counts": {
+        "symbolic_schema": 25
+      }
+    }
+  },
+  "eval_kind_decomposition": {
+    "live_benchmark": {
+      "record_count": 6,
+      "median_error_pct": 0.0,
+      "max_error_pct": 0.03990518384182655,
+      "min_error_pct": 0.0
+    },
+    "symbolic_schema": {
+      "record_count": 1516,
+      "median_error_pct": 0.0,
+      "max_error_pct": 0.0,
+      "min_error_pct": 0.0
+    }
+  },
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "headline_observables": {
+      "pooled_median_error_pct": 0.0,
+      "headline_median_error_pct": 0.0,
+      "schema_pass_rate_pct": 100.0,
+      "numeric_eval_median_error_pct": 0.0
+    },
+    "operational_baselines": {
+      "schema_pass_rate": {
+        "sota_model": "Hand-maintained rule corpus QA",
+        "sota_typical_error_pct": 5.0,
+        "reference": "Schema completeness for formal rule objects"
+      },
+      "numeric_eval_median": {
+        "sota_model": "Overlay prediction vs Planck/PDG references",
+        "sota_typical_error_pct": 2.0,
+        "reference": "FO-100..FO-213 numeric overlay literals"
+      },
+      "live_benchmark_median": {
+        "sota_model": "Held-out benchmark_formula recomputation",
+        "sota_typical_error_pct": 1.0,
+        "reference": "FO-200/210/213 live formula eval benches"
+      }
+    },
+    "beats_sota_summary": {
+      "schema_pass_vs_qa_baseline": true,
+      "pooled_rules_vs_corpus_qa": true,
+      "numeric_eval_vs_overlay_refs": true,
+      "live_benchmark_vs_formula_eval": true
+    }
+  },
   "rule_corpus_count": 61,
-  "total_rule_count": 1520,
+  "total_rule_count": 1522,
   "eval_kind_counts": {
     "symbolic_schema": 1516,
-    "numeric_literal": 1,
-    "numeric_formula": 2,
-    "benchmark_report": 1
+    "live_benchmark": 6
   },
   "corpora": {
     "ABSTRACT_ALGEBRA": 25,
@@ -48,7 +588,7 @@
     "EUCLIDEAN_PROOF": 25,
     "FINANCE_ECON_MATH": 25,
     "FLUID_MECHANICS": 25,
-    "FSOT_OVERLAY": 25,
+    "FSOT_OVERLAY": 27,
     "GENERAL_MATHEMATICS": 25,
     "GEOMETRY": 27,
     "HEAT_TRANSFER": 25,
@@ -82,7 +622,99 @@
     "TOPOLOGY": 25,
     "WOODWORKING_MATH": 25
   },
+  "numeric_eval_count": 6,
+  "numeric_eval_median_error_pct": 0.0,
+  "schema_pass_count": 1522,
+  "schema_pass_rate_pct": 100.0,
   "records": [
+    {
+      "lab": "math_generator_rules_eval_lab",
+      "property": "pooled_rules_median",
+      "name": "all_rules",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 1522
+    },
+    {
+      "lab": "math_generator_rules_eval_lab",
+      "property": "schema_pass_rate_pct",
+      "name": "schema_completeness",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "observable_count": 1522
+    },
+    {
+      "lab": "math_generator_rules_eval_lab",
+      "property": "numeric_eval_median",
+      "name": "overlay_numeric_subset",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 6
+    },
+    {
+      "lab": "math_generator_rules_eval_lab",
+      "property": "live_benchmark_median",
+      "name": "formula_live_eval",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 6
+    },
+    {
+      "lab": "math_generator_rules_eval_lab",
+      "property": "corpus_median_fsot_overlay",
+      "name": "FSOT_OVERLAY",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 27,
+      "corpus": "FSOT_OVERLAY"
+    },
+    {
+      "lab": "math_generator_rules_eval_lab",
+      "property": "corpus_median_mathematical_physics",
+      "name": "MATHEMATICAL_PHYSICS",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 25,
+      "corpus": "MATHEMATICAL_PHYSICS"
+    },
+    {
+      "lab": "math_generator_rules_eval_lab",
+      "property": "corpus_median_thermodynamics_engineering",
+      "name": "THERMODYNAMICS_ENGINEERING",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 25,
+      "corpus": "THERMODYNAMICS_ENGINEERING"
+    },
+    {
+      "lab": "math_generator_rules_eval_lab",
+      "property": "corpus_median_materials_science",
+      "name": "MATERIALS_SCIENCE",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 12,
+      "corpus": "MATERIALS_SCIENCE"
+    },
+    {
+      "lab": "math_generator_rules_eval_lab",
+      "property": "corpus_median_science_side",
+      "name": "SCIENCE_SIDE",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 28,
+      "corpus": "SCIENCE_SIDE"
+    }
+  ],
+  "material_records": [
     {
       "rule_id": "AA-001",
       "corpus": "ABSTRACT_ALGEBRA",
@@ -6126,12 +6758,11 @@
     {
       "rule_id": "FO-100",
       "corpus": "FSOT_OVERLAY",
-      "eval_kind": "numeric_literal",
+      "eval_kind": "live_benchmark",
       "lean_domain": "consciousness",
-      "computed": 68.44,
-      "measured": 68.44005682979427,
-      "error_pct": 8.303586657772055e-05,
-      "schema_valid": true
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "benchmark_formula": null
     },
     {
       "rule_id": "FO-110",
@@ -6200,7 +6831,7 @@
     {
       "rule_id": "FO-200",
       "corpus": "FSOT_OVERLAY",
-      "eval_kind": "numeric_formula",
+      "eval_kind": "live_benchmark",
       "lean_domain": "consciousness",
       "error_pct": 0.0,
       "schema_valid": true,
@@ -6209,20 +6840,38 @@
     {
       "rule_id": "FO-210",
       "corpus": "FSOT_OVERLAY",
-      "eval_kind": "numeric_formula",
+      "eval_kind": "live_benchmark",
       "lean_domain": "consciousness",
       "error_pct": 0.0,
       "schema_valid": true,
-      "benchmark_formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+      "benchmark_formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^7) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+      "rule_id": "FO-212",
+      "corpus": "FSOT_OVERLAY",
+      "eval_kind": "live_benchmark",
+      "lean_domain": "consciousness",
+      "error_pct": 0.0,
+      "schema_valid": true,
+      "benchmark_formula": "FO-210_transport + p_new/phi*(log_re - st/phi - log(delta)) + p_base/phi*(-st/phi) + ab/phi*cos(pi/phi*aoa) + bi/phi*cos(pi/phi*aoa) - 3*ai/phi*log_st*M + p_new/phi*log1p(f/c0)"
+    },
+    {
+      "rule_id": "FO-213",
+      "corpus": "FSOT_OVERLAY",
+      "eval_kind": "live_benchmark",
+      "lean_domain": "consciousness",
+      "error_pct": 0.03990518384182655,
+      "schema_valid": true,
+      "benchmark_formula": "(theta_s + e^3) / c_factor^7"
     },
     {
       "rule_id": "FO-220",
       "corpus": "FSOT_OVERLAY",
-      "eval_kind": "benchmark_report",
+      "eval_kind": "live_benchmark",
       "lean_domain": "consciousness",
       "error_pct": 0.0,
       "schema_valid": true,
-      "prediction_value": "held_out_test_rmse=1.246498473526364"
+      "benchmark_formula": "computed_value"
     },
     {
       "rule_id": "FO-230",
@@ -12248,5 +12897,8 @@
       "error_pct": 0.0,
       "schema_valid": true
     }
+  ],
+  "crosswalk_modules": [
+    "FSOT.Formal.MathGeneratorRulesEvalPriors"
   ]
 }

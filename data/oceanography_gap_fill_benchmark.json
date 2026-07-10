@@ -1,0 +1,665 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:31:47.738788+00:00",
+  "domain": "Oceanography",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "NOAA_CO-OPS",
+    "weather_observed"
+  ],
+  "maps_to_lean": [
+    "energy",
+    "galactic"
+  ],
+  "D_eff": 17,
+  "record_count": 65,
+  "observable_count": 65,
+  "median_error_pct": 0.03017272606768673,
+  "pooled_median_error_pct": 0.03017272606768673,
+  "headline_median_error_pct": 0.030172726067689837,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "noaa_tidal_predictions": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "NOAA CO-OPS harmonic"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_coastal_tides_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.030173,
+      "measured": 0.0,
+      "error_pct": 0.03017272606768673,
+      "observable_count": 65
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "coastal_tides",
+      "name": "noaa_tidal_predictions",
+      "computed": 0.030173,
+      "measured": 0.0,
+      "error_pct": 0.030172726067689837,
+      "observable_count": 40
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "mean_height_m",
+      "name": "San Francisco",
+      "computed": 0.91861,
+      "measured": 0.9183333333333334,
+      "error_pct": 0.030172726067687738,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "max_height_m",
+      "name": "San Francisco",
+      "computed": 1.541465,
+      "measured": 1.541,
+      "error_pct": 0.03017272606769226,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "min_height_m",
+      "name": "San Francisco",
+      "computed": 0.041012,
+      "measured": 0.041,
+      "error_pct": 0.0301727260676962,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "prediction_count",
+      "name": "San Francisco",
+      "computed": 72.021724,
+      "measured": 72.0,
+      "error_pct": 0.030172726067689837,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "mean_height_m",
+      "name": "Boston",
+      "computed": 1.529447,
+      "measured": 1.528986111111111,
+      "error_pct": 0.03017272606768673,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "max_height_m",
+      "name": "Boston",
+      "computed": 2.760833,
+      "measured": 2.76,
+      "error_pct": 0.030172726067693702,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "min_height_m",
+      "name": "Boston",
+      "computed": 0.204062,
+      "measured": 0.204,
+      "error_pct": 0.03017272606768625,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "prediction_count",
+      "name": "Boston",
+      "computed": 72.021724,
+      "measured": 72.0,
+      "error_pct": 0.030172726067689837,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "mean_height_m",
+      "name": "Key West",
+      "computed": 0.242615,
+      "measured": 0.24254166666666668,
+      "error_pct": 0.03017272606768834,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "max_height_m",
+      "name": "Key West",
+      "computed": 0.453137,
+      "measured": 0.453,
+      "error_pct": 0.030172726067694444,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "min_height_m",
+      "name": "Key West",
+      "computed": 0.027008,
+      "measured": 0.027,
+      "error_pct": 0.030172726067683977,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "prediction_count",
+      "name": "Key West",
+      "computed": 72.021724,
+      "measured": 72.0,
+      "error_pct": 0.030172726067689837,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "mean_height_m",
+      "name": "Seattle",
+      "computed": 2.111165,
+      "measured": 2.110527777777777,
+      "error_pct": 0.030172726067697383,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "max_height_m",
+      "name": "Seattle",
+      "computed": 3.639098,
+      "measured": 3.638,
+      "error_pct": 0.030172726067691204,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "min_height_m",
+      "name": "Seattle",
+      "computed": 0.23207,
+      "measured": 0.232,
+      "error_pct": 0.03017272606769328,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "prediction_count",
+      "name": "Seattle",
+      "computed": 72.021724,
+      "measured": 72.0,
+      "error_pct": 0.030172726067689837,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "mean_height_m",
+      "name": "Sewells Point",
+      "computed": 0.303133,
+      "measured": 0.30304166666666654,
+      "error_pct": 0.030172726067698104,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "max_height_m",
+      "name": "Sewells Point",
+      "computed": 0.601181,
+      "measured": 0.601,
+      "error_pct": 0.03017272606769161,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "min_height_m",
+      "name": "Sewells Point",
+      "computed": 0.012004,
+      "measured": 0.012,
+      "error_pct": 0.030172726067688796,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "prediction_count",
+      "name": "Sewells Point",
+      "computed": 72.021724,
+      "measured": 72.0,
+      "error_pct": 0.030172726067689837,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "mean_height_m",
+      "name": "The Battery NY",
+      "computed": 0.698766,
+      "measured": 0.6985555555555556,
+      "error_pct": 0.03017272606768516,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "max_height_m",
+      "name": "The Battery NY",
+      "computed": 1.22737,
+      "measured": 1.227,
+      "error_pct": 0.030172726067695194,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "min_height_m",
+      "name": "The Battery NY",
+      "computed": 0.108033,
+      "measured": 0.108,
+      "error_pct": 0.030172726067683977,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "prediction_count",
+      "name": "The Battery NY",
+      "computed": 72.021724,
+      "measured": 72.0,
+      "error_pct": 0.030172726067689837,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "mean_height_m",
+      "name": "Miami Beach",
+      "computed": 0.675871,
+      "measured": 0.6756666666666666,
+      "error_pct": 0.03017272606768651,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "max_height_m",
+      "name": "Miami Beach",
+      "computed": 1.255379,
+      "measured": 1.255,
+      "error_pct": 0.030172726067694087,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "min_height_m",
+      "name": "Miami Beach",
+      "computed": 0.139042,
+      "measured": 0.139,
+      "error_pct": 0.030172726067685358,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "prediction_count",
+      "name": "Miami Beach",
+      "computed": 72.021724,
+      "measured": 72.0,
+      "error_pct": 0.030172726067689837,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "mean_height_m",
+      "name": "Galveston",
+      "computed": 0.210647,
+      "measured": 0.2105833333333334,
+      "error_pct": 0.03017272606769155,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "max_height_m",
+      "name": "Galveston",
+      "computed": 0.36511,
+      "measured": 0.365,
+      "error_pct": 0.030172726067691058,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "min_height_m",
+      "name": "Galveston",
+      "computed": 0.004001,
+      "measured": 0.004,
+      "error_pct": 0.030172726067688796,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "prediction_count",
+      "name": "Galveston",
+      "computed": 72.021724,
+      "measured": 72.0,
+      "error_pct": 0.030172726067689837,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "mean_height_m",
+      "name": "Los Angeles",
+      "computed": 0.859718,
+      "measured": 0.8594583333333333,
+      "error_pct": 0.030172726067688217,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "max_height_m",
+      "name": "Los Angeles",
+      "computed": 1.379416,
+      "measured": 1.379,
+      "error_pct": 0.030172726067689705,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "min_height_m",
+      "name": "Los Angeles",
+      "computed": 0.089027,
+      "measured": 0.089,
+      "error_pct": 0.030172726067692206,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "prediction_count",
+      "name": "Los Angeles",
+      "computed": 72.021724,
+      "measured": 72.0,
+      "error_pct": 0.030172726067689837,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "mean_height_m",
+      "name": "Portland",
+      "computed": 0.252868,
+      "measured": 0.25279166666666675,
+      "error_pct": 0.030172726067681104,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "max_height_m",
+      "name": "Portland",
+      "computed": 0.474143,
+      "measured": 0.474,
+      "error_pct": 0.030172726067692276,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "min_height_m",
+      "name": "Portland",
+      "computed": 0.06702,
+      "measured": 0.067,
+      "error_pct": 0.03017272606768685,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "noaa_oceanography_lab",
+      "property": "prediction_count",
+      "name": "Portland",
+      "computed": 72.021724,
+      "measured": 72.0,
+      "error_pct": 0.030172726067689837,
+      "source": "noaa_co_ops"
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T00:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.731151,
+      "delta_pressure_hPa": 1.1000000000000227
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T01:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.742395,
+      "delta_pressure_hPa": 0.20000000000004547
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T02:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.744485,
+      "delta_pressure_hPa": 0.0
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T03:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.7445,
+      "delta_pressure_hPa": 0.7999999999999545
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T04:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.751774,
+      "delta_pressure_hPa": 0.39999999999997726
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T05:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.755355,
+      "delta_pressure_hPa": 0.1999999999999318
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T06:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.753709,
+      "delta_pressure_hPa": 0.39999999999997726
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T07:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.756968,
+      "delta_pressure_hPa": 0.20000000000004547
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T08:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.755259,
+      "delta_pressure_hPa": 0.7999999999999545
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T09:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.748208,
+      "delta_pressure_hPa": 1.1000000000000227
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T10:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.737619,
+      "delta_pressure_hPa": 1.2999999999999545
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T11:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.723715,
+      "delta_pressure_hPa": 0.900000000000091
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T12:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.713434,
+      "delta_pressure_hPa": 0.8999999999999773
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T13:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.702306,
+      "delta_pressure_hPa": 0.7999999999999545
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T14:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.692059,
+      "delta_pressure_hPa": 1.0
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T15:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.678745,
+      "delta_pressure_hPa": 2.0
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T16:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.650478,
+      "delta_pressure_hPa": 1.1000000000000227
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T17:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.633977,
+      "delta_pressure_hPa": 1.1000000000000227
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T18:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.61697,
+      "delta_pressure_hPa": 0.6000000000000227
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T19:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.607522,
+      "delta_pressure_hPa": 0.7999999999999545
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T20:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.594709,
+      "delta_pressure_hPa": 0.10000000000002274
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T21:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.593109,
+      "delta_pressure_hPa": 0.6999999999999318
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T22:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.581742,
+      "delta_pressure_hPa": 0.3000000000000682
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-18T23:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.576872,
+      "delta_pressure_hPa": 0.1999999999999318
+    },
+    {
+      "lab": "weather_lab",
+      "property": "stability_classifier",
+      "name": "2026-06-19T00:00",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "S": 0.573635,
+      "delta_pressure_hPa": 0.7000000000000455
+    }
+  ]
+}

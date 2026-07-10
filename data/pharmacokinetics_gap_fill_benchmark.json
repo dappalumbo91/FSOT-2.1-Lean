@@ -1,0 +1,679 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:31:47.830458+00:00",
+  "domain": "Pharmacokinetics",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "pk_reference",
+    "ChEMBL_pharmacology"
+  ],
+  "maps_to_lean": [
+    "medical",
+    "biological"
+  ],
+  "D_eff": 14,
+  "record_count": 56,
+  "observable_count": 56,
+  "median_error_pct": 0.00241237063663613,
+  "pooled_median_error_pct": 0.00241237063663613,
+  "headline_median_error_pct": 0.04593318440797578,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "clinical_pk": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "PopPK NLME baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_pk_parameters_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.002412,
+      "measured": 0.0,
+      "error_pct": 0.00241237063663613,
+      "observable_count": 56
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pk_parameters",
+      "name": "clinical_pk",
+      "computed": 0.045933,
+      "measured": 0.0,
+      "error_pct": 0.04593318440797578,
+      "observable_count": 16
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "half_life_h",
+      "name": "caffeine",
+      "computed": 5.002297,
+      "measured": 5.0,
+      "error_pct": 0.04593318440797134,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "oral_bioavailability",
+      "name": "caffeine",
+      "computed": 0.990455,
+      "measured": 0.99,
+      "error_pct": 0.045933184407972866,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "half_life_h",
+      "name": "acetaminophen",
+      "computed": 2.501148,
+      "measured": 2.5,
+      "error_pct": 0.04593318440797134,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "oral_bioavailability",
+      "name": "acetaminophen",
+      "computed": 0.880404,
+      "measured": 0.88,
+      "error_pct": 0.04593318440797427,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "half_life_h",
+      "name": "ibuprofen",
+      "computed": 2.100965,
+      "measured": 2.1,
+      "error_pct": 0.04593318440797895,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "oral_bioavailability",
+      "name": "ibuprofen",
+      "computed": 0.800367,
+      "measured": 0.8,
+      "error_pct": 0.045933184407973005,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "half_life_h",
+      "name": "morphine",
+      "computed": 2.000919,
+      "measured": 2.0,
+      "error_pct": 0.04593318440797578,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "oral_bioavailability",
+      "name": "morphine",
+      "computed": 0.250115,
+      "measured": 0.25,
+      "error_pct": 0.04593318440797578,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "half_life_h",
+      "name": "warfarin",
+      "computed": 40.018373,
+      "measured": 40.0,
+      "error_pct": 0.04593318440797134,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "oral_bioavailability",
+      "name": "warfarin",
+      "computed": 0.930427,
+      "measured": 0.93,
+      "error_pct": 0.045933184407977924,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "half_life_h",
+      "name": "digoxin",
+      "computed": 36.016536,
+      "measured": 36.0,
+      "error_pct": 0.04593318440798318,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "oral_bioavailability",
+      "name": "digoxin",
+      "computed": 0.700322,
+      "measured": 0.7,
+      "error_pct": 0.04593318440797896,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "half_life_h",
+      "name": "metformin",
+      "computed": 6.202848,
+      "measured": 6.2,
+      "error_pct": 0.04593318440797076,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "oral_bioavailability",
+      "name": "metformin",
+      "computed": 0.550253,
+      "measured": 0.55,
+      "error_pct": 0.04593318440798183,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "half_life_h",
+      "name": "amoxicillin",
+      "computed": 1.300597,
+      "measured": 1.3,
+      "error_pct": 0.04593318440797407,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacokinetics_lab",
+      "property": "oral_bioavailability",
+      "name": "amoxicillin",
+      "computed": 0.74034,
+      "measured": 0.74,
+      "error_pct": 0.04593318440797938,
+      "source": "pk_reference"
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "PRAZOSIN",
+      "chembl_id": "CHEMBL2",
+      "formula": "C19H21N5O4",
+      "computed": 383.408,
+      "measured": 383.41,
+      "error_pct": 0.0005216348034914043,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "NICOTINE",
+      "chembl_id": "CHEMBL3",
+      "formula": "C10H14N2",
+      "computed": 162.236,
+      "measured": 162.24,
+      "error_pct": 0.0024654832347257762,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "OFLOXACIN",
+      "chembl_id": "CHEMBL4",
+      "formula": "C18H20FN3O4",
+      "computed": 361.373,
+      "measured": 361.37,
+      "error_pct": 0.0008301740598082463,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "NALIDIXIC ACID",
+      "chembl_id": "CHEMBL5",
+      "formula": "C12H12N2O3",
+      "computed": 232.239,
+      "measured": 232.24,
+      "error_pct": 0.00043058904580449235,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "INDOMETHACIN",
+      "chembl_id": "CHEMBL6",
+      "formula": "C19H16ClNO4",
+      "computed": 357.79,
+      "measured": 357.79,
+      "error_pct": 1.5887369367731912e-14,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "SULBACTAM",
+      "chembl_id": "CHEMBL403",
+      "formula": "C8H11NO5S",
+      "computed": 233.238,
+      "measured": 233.24,
+      "error_pct": 0.0008574858514875448,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "TAZOBACTAM",
+      "chembl_id": "CHEMBL404",
+      "formula": "C10H12N4O5S",
+      "computed": 300.289,
+      "measured": 300.3,
+      "error_pct": 0.0036630036630116887,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "CIPROFLOXACIN",
+      "chembl_id": "CHEMBL8",
+      "formula": "C17H18FN3O3",
+      "computed": 331.347,
+      "measured": 331.35,
+      "error_pct": 0.0009053870529780433,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "NORFLOXACIN",
+      "chembl_id": "CHEMBL9",
+      "formula": "C16H18FN3O3",
+      "computed": 319.336,
+      "measured": 319.34,
+      "error_pct": 0.0012525834533607617,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "AMPHETAMINE",
+      "chembl_id": "CHEMBL405",
+      "formula": "C9H13N",
+      "computed": 135.21,
+      "measured": 135.21,
+      "error_pct": 2.1020419666004e-14,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "ISOSORBIDE DINITRATE",
+      "chembl_id": "CHEMBL6622",
+      "formula": "C6H8N2O8",
+      "computed": 236.136,
+      "measured": 236.14,
+      "error_pct": 0.001693910392136308,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "MIANSERIN",
+      "chembl_id": "CHEMBL6437",
+      "formula": "C18H20N2",
+      "computed": 264.372,
+      "measured": 264.37,
+      "error_pct": 0.0007565154896367615,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "IMIPRAMINE",
+      "chembl_id": "CHEMBL11",
+      "formula": "C19H24N2",
+      "computed": 280.415,
+      "measured": 280.42,
+      "error_pct": 0.001783039726143747,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "INDAPAMIDE",
+      "chembl_id": "CHEMBL406",
+      "formula": "C16H16ClN3O3S",
+      "computed": 365.832,
+      "measured": 365.84,
+      "error_pct": 0.002186748305264967,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "FLUMAZENIL",
+      "chembl_id": "CHEMBL407",
+      "formula": "C15H14FN3O3",
+      "computed": 303.293,
+      "measured": 303.29,
+      "error_pct": 0.0009891522964772669,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "TROGLITAZONE",
+      "chembl_id": "CHEMBL408",
+      "formula": "C24H27NO5S",
+      "computed": 441.542,
+      "measured": 441.55,
+      "error_pct": 0.0018117993432185155,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "BICALUTAMIDE",
+      "chembl_id": "CHEMBL409",
+      "formula": "C18H14F4N2O4S",
+      "computed": 430.372,
+      "measured": 430.38,
+      "error_pct": 0.001858822435995678,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "DIAZEPAM",
+      "chembl_id": "CHEMBL12",
+      "formula": "C16H13ClN2O",
+      "computed": 284.743,
+      "measured": 284.75,
+      "error_pct": 0.002458296751538192,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "METOPROLOL",
+      "chembl_id": "CHEMBL13",
+      "formula": "C15H25NO3",
+      "computed": 267.369,
+      "measured": 267.37,
+      "error_pct": 0.00037401353930253825,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "DIETHYLSTILBESTROL",
+      "chembl_id": "CHEMBL411",
+      "formula": "C18H20O2",
+      "computed": 268.356,
+      "measured": 268.36,
+      "error_pct": 0.0014905351021087714,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "MECAMYLAMINE",
+      "chembl_id": "CHEMBL267936",
+      "formula": "C11H21N",
+      "computed": 167.296,
+      "measured": 167.3,
+      "error_pct": 0.002390914524817154,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "CARBACHOL",
+      "chembl_id": "CHEMBL14",
+      "formula": "C6H15ClN2O2",
+      "computed": 182.648,
+      "measured": 182.65,
+      "error_pct": 0.0010949904188390636,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "PHENYTOIN",
+      "chembl_id": "CHEMBL16",
+      "formula": "C15H12N2O2",
+      "computed": 252.273,
+      "measured": 252.27,
+      "error_pct": 0.00118920204542193,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "SIROLIMUS",
+      "chembl_id": "CHEMBL413",
+      "formula": "C51H79NO13",
+      "computed": 914.187,
+      "measured": 914.19,
+      "error_pct": 0.0003281593541995026,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "TACROLIMUS ANHYDROUS",
+      "chembl_id": "CHEMBL269732",
+      "formula": "C44H69NO12",
+      "computed": 804.031,
+      "measured": 804.03,
+      "error_pct": 0.0001243734686487262,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "CLOMIPRAMINE",
+      "chembl_id": "CHEMBL415",
+      "formula": "C19H23ClN2",
+      "computed": 314.857,
+      "measured": 314.86,
+      "error_pct": 0.0009528044210260898,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "METHOXSALEN",
+      "chembl_id": "CHEMBL416",
+      "formula": "C12H8O4",
+      "computed": 216.192,
+      "measured": 216.19,
+      "error_pct": 0.0009251121698550117,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "DICHLORPHENAMIDE",
+      "chembl_id": "CHEMBL17",
+      "formula": "C6H6Cl2N2O4S2",
+      "computed": 305.144,
+      "measured": 305.16,
+      "error_pct": 0.00524315113383784,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "ETHOXZOLAMIDE",
+      "chembl_id": "CHEMBL18",
+      "formula": "C9H10N2O3S2",
+      "computed": 258.31,
+      "measured": 258.32,
+      "error_pct": 0.0038711675441277897,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "EPIRUBICIN",
+      "chembl_id": "CHEMBL417",
+      "formula": "C27H29NO11",
+      "computed": 543.525,
+      "measured": 543.53,
+      "error_pct": 0.0009199124243363666,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "METHAZOLAMIDE",
+      "chembl_id": "CHEMBL19",
+      "formula": "C5H8N4O3S2",
+      "computed": 236.264,
+      "measured": 236.28,
+      "error_pct": 0.0067716268833549744,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "ACETAZOLAMIDE",
+      "chembl_id": "CHEMBL20",
+      "formula": "C4H6N4O3S2",
+      "computed": 222.237,
+      "measured": 222.25,
+      "error_pct": 0.0058492688413843905,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "MAFENIDE",
+      "chembl_id": "CHEMBL419",
+      "formula": "C7H10N2O2S",
+      "computed": 186.229,
+      "measured": 186.24,
+      "error_pct": 0.005906357388329092,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "SULFANILAMIDE",
+      "chembl_id": "CHEMBL21",
+      "formula": "C6H8N2O2S",
+      "computed": 172.202,
+      "measured": 172.21,
+      "error_pct": 0.004645490970332604,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "GUANABENZ",
+      "chembl_id": "CHEMBL420",
+      "formula": "C8H8Cl2N4",
+      "computed": 231.08,
+      "measured": 231.09,
+      "error_pct": 0.004327318360820168,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "TRIMETHOPRIM",
+      "chembl_id": "CHEMBL22",
+      "formula": "C14H18N4O3",
+      "computed": 290.323,
+      "measured": 290.32,
+      "error_pct": 0.0010333425185953097,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "VERAPAMIL",
+      "chembl_id": "CHEMBL6966",
+      "formula": "C27H38N2O4",
+      "computed": 454.611,
+      "measured": 454.61,
+      "error_pct": 0.0002199687644302486,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "SULFASALAZINE",
+      "chembl_id": "CHEMBL421",
+      "formula": "C18H14N4O5S",
+      "computed": 398.393,
+      "measured": 398.4,
+      "error_pct": 0.0017570281124510549,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "COUMARIN",
+      "chembl_id": "CHEMBL6466",
+      "formula": "C9H6O2",
+      "computed": 146.145,
+      "measured": 146.14,
+      "error_pct": 0.0034213767620059213,
+      "within_band": true,
+      "S_medical": 0.306221
+    },
+    {
+      "lab": "pharmacology_lab",
+      "property": "molecular_weight",
+      "name": "DILTIAZEM",
+      "chembl_id": "CHEMBL23",
+      "formula": "C22H26N2O4S",
+      "computed": 414.52,
+      "measured": 414.53,
+      "error_pct": 0.00241237063663613,
+      "within_band": true,
+      "S_medical": 0.306221
+    }
+  ]
+}

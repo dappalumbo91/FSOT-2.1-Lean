@@ -20,6 +20,7 @@ REGISTRY = ROOT / "data" / "lab_registry.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 from cosmology_lambda import load_fsot_compute  # noqa: E402
 from cosmology_waves import summarize_waves, wave_observables  # noqa: E402
+from fsot_paths import authority_path_for_export, fsot_compute_path  # noqa: E402
 from math_formula_eval import evaluate_formula  # noqa: E402
 
 # Certified wave-observable formula refinements (recomputed on ingest).
@@ -72,7 +73,7 @@ def main() -> int:
         raise RuntimeError("PyYAML required")
     spec = yaml.safe_load(MANIFEST.read_text(encoding="utf-8"))
     src = spec["source"]
-    compute_path = Path(src["cosmology_root"]) / src["fsot_compute"]
+    compute_path = fsot_compute_path()
     mod = load_fsot_compute(compute_path)
     wave_nums = [int(w) for w in src["waves"]]
     rows: list[dict] = []
@@ -85,7 +86,7 @@ def main() -> int:
         **summary,
         "waves": wave_nums,
         "rows": rows,
-        "compute_path": str(compute_path),
+        "compute_path": authority_path_for_export(compute_path),
         "ingested_at": datetime.now(timezone.utc).isoformat(),
     }
     REGISTRY.write_text(json.dumps(registry, indent=2), encoding="utf-8")

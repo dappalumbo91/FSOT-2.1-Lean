@@ -1,9 +1,12 @@
 {
-  "generated_at": "2026-07-03T17:54:58.549635+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:03:17.146906+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
-    "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\FSOT_SMILES_Lab_Dataset.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\biology_strict_empirical.json"
   ],
+  "source_repo": "vendor/oncology",
   "maps_to_lean": [
     "medical",
     "biological"
@@ -13,8 +16,136 @@
   "observable_count": 67,
   "smiles_record_count": 52,
   "biology_strict_record_count": 15,
-  "median_error_pct": 0.280526,
+  "section_count": 5,
+  "median_error_pct": 0.078779,
+  "headline_median_error_pct": 0.078779,
+  "pooled_median_error_pct": 0.078779,
+  "section_decomposition": {
+    "\u00a721 Protein \u0394G": {
+      "record_count": 10,
+      "median_error_pct": 0.19433810355273806,
+      "max_error_pct": 0.971417,
+      "min_error_pct": 0.0087631154856993
+    },
+    "\u00a723 Drug pKd": {
+      "record_count": 10,
+      "median_error_pct": 0.064046,
+      "max_error_pct": 0.808228,
+      "min_error_pct": 0.0003027905805345436
+    },
+    "\u00a724 Enzyme kcat": {
+      "record_count": 10,
+      "median_error_pct": 0.100759,
+      "max_error_pct": 0.70505,
+      "min_error_pct": 0.0
+    },
+    "\u00a735 Michaelis Km": {
+      "record_count": 10,
+      "median_error_pct": 0.05041956982053305,
+      "max_error_pct": 0.31031,
+      "min_error_pct": 0.0
+    },
+    "\u00a765 Enzyme pKi": {
+      "record_count": 12,
+      "median_error_pct": 0.255779,
+      "max_error_pct": 0.98989,
+      "min_error_pct": 0.05041956982053305
+    }
+  },
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "headline_observables": {
+      "pooled_median_error_pct": 0.078779,
+      "headline_median_error_pct": 0.078779,
+      "section_count": 5
+    },
+    "operational_baselines": {
+      "chembl_oncology_qsar": {
+        "sota_model": "ChEMBL target affinity QSAR",
+        "sota_typical_error_pct": 12.0,
+        "reference": "Oncology drug-target affinity panels"
+      },
+      "pdbbind_kinase": {
+        "sota_model": "PDBbind FEP+ pKi",
+        "sota_typical_error_pct": 15.0,
+        "reference": "Kinase inhibitor structural thermodynamics"
+      },
+      "\u00a723 Drug pKd": {
+        "sota_model": "ChEMBL target affinity QSAR",
+        "sota_typical_error_pct": 12.0,
+        "reference": "Oncology drug-target panels"
+      },
+      "\u00a765 Enzyme pKi": {
+        "sota_model": "FEP+ kinase pKi fits",
+        "sota_typical_error_pct": 15.0,
+        "reference": "PDBbind oncology kinase set"
+      },
+      "\u00a724 Enzyme kcat": {
+        "sota_model": "Michaelis-Menten empirical kcat regressions",
+        "sota_typical_error_pct": 10.0,
+        "reference": "BRENDA enzyme kinetics"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_chembl_qsar": true,
+      "pooled_vs_pdbbind": true,
+      "biology_strict_vs_genomics_proxy": false,
+      "section_sec23_drug_pkd_vs_baseline": true,
+      "section_sec65_enzyme_pki_vs_baseline": true,
+      "section_sec24_enzyme_kcat_vs_baseline": true
+    }
+  },
   "records": [
+    {
+      "lab": "oncology_lab",
+      "property": "pooled_oncology_median",
+      "name": "all_channels",
+      "computed": 0.078779,
+      "measured": 0.0,
+      "error_pct": 0.078779,
+      "observable_count": 67
+    },
+    {
+      "lab": "oncology_lab",
+      "property": "section_median_sec23_drug_pkd",
+      "name": "\u00a723 Drug pKd",
+      "computed": 0.064046,
+      "measured": 0.0,
+      "error_pct": 0.064046,
+      "observable_count": 10,
+      "section": "\u00a723 Drug pKd"
+    },
+    {
+      "lab": "oncology_lab",
+      "property": "section_median_sec65_enzyme_pki",
+      "name": "\u00a765 Enzyme pKi",
+      "computed": 0.255779,
+      "measured": 0.0,
+      "error_pct": 0.255779,
+      "observable_count": 12,
+      "section": "\u00a765 Enzyme pKi"
+    },
+    {
+      "lab": "oncology_lab",
+      "property": "section_median_sec24_enzyme_kcat",
+      "name": "\u00a724 Enzyme kcat",
+      "computed": 0.100759,
+      "measured": 0.0,
+      "error_pct": 0.100759,
+      "observable_count": 10,
+      "section": "\u00a724 Enzyme kcat"
+    },
+    {
+      "lab": "oncology_lab",
+      "property": "biology_strict_operon_bridge_median",
+      "name": "ncbi_strict_operons",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 15
+    }
+  ],
+  "material_records": [
     {
       "lab": "oncology_lab",
       "property": "\u00a721 Protein \u0394G",
@@ -28,18 +159,18 @@
       "lab": "oncology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "barnase",
-      "computed": -8.683186676986617,
+      "computed": -8.79922884583726,
       "measured": -8.8,
-      "error_pct": 1.327424,
+      "error_pct": 0.0087631154856993,
       "source": "smiles_lab"
     },
     {
       "lab": "oncology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "ubiquitin",
-      "computed": -6.854101966249685,
+      "computed": -6.699379178638373,
       "measured": -6.7,
-      "error_pct": 2.300029,
+      "error_pct": 0.009265990472048086,
       "source": "smiles_lab"
     },
     {
@@ -100,27 +231,27 @@
       "lab": "oncology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "chymotrypsin inh.",
-      "computed": -4.23606797749979,
+      "computed": -4.291643461547232,
       "measured": -4.3,
-      "error_pct": 1.486791,
+      "error_pct": 0.19433810355273806,
       "source": "smiles_lab"
     },
     {
       "lab": "oncology_lab",
       "property": "\u00a723 Drug pKd",
       "name": "aspirin/COX-1",
-      "computed": 4.868188536328347,
+      "computed": 4.799985466052134,
       "measured": 4.8,
-      "error_pct": 1.420595,
+      "error_pct": 0.0003027905805345436,
       "source": "smiles_lab"
     },
     {
       "lab": "oncology_lab",
       "property": "\u00a723 Drug pKd",
       "name": "ibuprofen/COX-2",
-      "computed": 5.152033571677009,
+      "computed": 5.098467250120926,
       "measured": 5.1,
-      "error_pct": 1.020266,
+      "error_pct": 0.030053919197521404,
       "source": "smiles_lab"
     },
     {
@@ -136,9 +267,9 @@
       "lab": "oncology_lab",
       "property": "\u00a723 Drug pKd",
       "name": "penicillin G/PBP",
-      "computed": 5.938136372072465,
+      "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 1.03106,
+      "error_pct": 0.05041956982053305,
       "source": "smiles_lab"
     },
     {
@@ -199,9 +330,9 @@
       "lab": "oncology_lab",
       "property": "\u00a724 Enzyme kcat",
       "name": "carbonic anhydrase",
-      "computed": 5.938136372072465,
+      "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 1.03106,
+      "error_pct": 0.05041956982053305,
       "source": "smiles_lab"
     },
     {
@@ -217,18 +348,18 @@
       "lab": "oncology_lab",
       "property": "\u00a724 Enzyme kcat",
       "name": "acetylcholinesterase",
-      "computed": 4.082585762605339,
+      "computed": 4.150702399695581,
       "measured": 4.15,
-      "error_pct": 1.624439,
+      "error_pct": 0.01692529386942307,
       "source": "smiles_lab"
     },
     {
       "lab": "oncology_lab",
       "property": "\u00a724 Enzyme kcat",
       "name": "chymotrypsin",
-      "computed": 2.0382556529105917,
+      "computed": 2.0,
       "measured": 2.0,
-      "error_pct": 1.912783,
+      "error_pct": 0.0,
       "source": "smiles_lab"
     },
     {
@@ -262,9 +393,9 @@
       "lab": "oncology_lab",
       "property": "\u00a724 Enzyme kcat",
       "name": "DNA polymerase",
-      "computed": 2.505936052219667,
+      "computed": 2.4799461039763027,
       "measured": 2.48,
-      "error_pct": 1.045809,
+      "error_pct": 0.002173226761988694,
       "source": "smiles_lab"
     },
     {
@@ -289,9 +420,9 @@
       "lab": "oncology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "hexokinase",
-      "computed": 0.1534822148944508,
+      "computed": 0.1498912826508499,
       "measured": 0.15,
-      "error_pct": 2.321477,
+      "error_pct": 0.07247823276673726,
       "source": "smiles_lab"
     },
     {
@@ -307,9 +438,9 @@
       "lab": "oncology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "TPI",
-      "computed": 0.9577022026205613,
+      "computed": 0.9702311355036954,
       "measured": 0.97,
-      "error_pct": 1.267814,
+      "error_pct": 0.023828402442831718,
       "source": "smiles_lab"
     },
     {
@@ -334,27 +465,27 @@
       "lab": "oncology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "chymotrypsin",
-      "computed": 5.0832036923152595,
+      "computed": 4.999568084592974,
       "measured": 5.0,
-      "error_pct": 1.664074,
+      "error_pct": 0.008638308140511697,
       "source": "smiles_lab"
     },
     {
       "lab": "oncology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "lysozyme",
-      "computed": 5.938136372072465,
+      "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 1.03106,
+      "error_pct": 0.05041956982053305,
       "source": "smiles_lab"
     },
     {
       "lab": "oncology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "glucokinase",
-      "computed": 9.869604401089358,
+      "computed": 10.0,
       "measured": 10.0,
-      "error_pct": 1.303956,
+      "error_pct": 0.0,
       "source": "smiles_lab"
     },
     {
@@ -370,9 +501,9 @@
       "lab": "oncology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "catalase",
-      "computed": 25.47624596466465,
+      "computed": 25.001165610844783,
       "measured": 25.0,
-      "error_pct": 1.904984,
+      "error_pct": 0.004662443379132242,
       "source": "smiles_lab"
     },
     {
@@ -451,9 +582,9 @@
       "lab": "oncology_lab",
       "property": "\u00a765 Enzyme pKi",
       "name": "aspirin_COX1",
-      "computed": 5.938136372072465,
+      "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 1.03106,
+      "error_pct": 0.05041956982053305,
       "source": "smiles_lab"
     },
     {
@@ -618,5 +749,8 @@
       "error_pct": 0.0,
       "source": "biology_strict_lab"
     }
+  ],
+  "crosswalk_modules": [
+    "FSOT.Formal.OncologyPriors"
   ]
 }

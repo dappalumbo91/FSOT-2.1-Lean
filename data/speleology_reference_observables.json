@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "UIS/speleological survey published cave metrics",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "krubera_voronya_depth", "property": "cave_depth_m", "measured": 2197.0, "cave": "Krubera-Voronya"},
+    {"name": "veryovkina_depth", "property": "cave_depth_m", "measured": 2212.0, "cave": "Veryovkina"},
+    {"name": "mammoth_cave_length", "property": "cave_length_km", "measured": 676.0, "cave": "Mammoth Cave"},
+    {"name": "sistema_huautla_depth", "property": "cave_depth_m", "measured": 1545.0, "cave": "Sistema Huautla"},
+    {"name": "goebbels_schacht_depth", "property": "cave_depth_m", "measured": 1543.0, "cave": "Gouffre Berger"},
+    {"name": "cave_air_temp_mean", "property": "air_temperature_c", "measured": 12.0, "cave": "temperate karst mean"},
+    {"name": "cave_humidity", "property": "relative_humidity_pct", "measured": 98.0, "cave": "near-saturation"},
+    {"name": "stalactite_growth_rate", "property": "calcite_growth_mm_yr", "measured": 0.1, "cave": "active speleothem"},
+    {"name": "cave_co2_ppm", "property": "co2_ppm", "measured": 2000.0, "cave": "soil-derived CO2"},
+    {"name": "phreatic_zone_depth", "property": "water_table_depth_m", "measured": 50.0, "cave": "karst aquifer"},
+    {"name": "cave_drip_rate", "property": "drip_rate_ml_min", "measured": 2.0, "cave": "active stalactite"},
+    {"name": "bat_colony_density", "property": "bats_per_m2", "measured": 0.5, "cave": "hibernacula"},
+    {"name": "cave_passage_width", "property": "passage_width_m", "measured": 5.0, "cave": "typical vadose"},
+    {"name": "cave_passage_height", "property": "passage_height_m", "measured": 3.0, "cave": "typical vadose"},
+    {"name": "karst_spring_discharge", "property": "discharge_l_s", "measured": 500.0, "cave": "major resurgence"},
+    {"name": "cave_sediment_thickness", "property": "sediment_thickness_m", "measured": 2.0, "cave": "floored chamber"},
+    {"name": "cave_radon_bq_m3", "property": "radon_bq_m3", "measured": 500.0, "cave": "uranium-rich karst"},
+    {"name": "cave_pco2_pa", "property": "partial_pressure_co2_pa", "measured": 500.0, "cave": "soil CO2 enriched"},
+    {"name": "cave_entrance_altitude", "property": "entrance_altitude_m", "measured": 1500.0, "cave": "alpine karst"},
+    {"name": "cave_ventilation_rate", "property": "air_exchange_per_day", "measured": 0.5, "cave": "single entrance"}
+  ]
+}

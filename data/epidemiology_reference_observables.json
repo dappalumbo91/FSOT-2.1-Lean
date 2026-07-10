@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "WHO/CDC published epidemiology anchors (2024-2026)",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "influenza_r0", "property": "basic_reproduction_R0", "measured": 1.8, "pathogen": "influenza"},
+    {"name": "measles_r0", "property": "basic_reproduction_R0", "measured": 15.0, "pathogen": "measles"},
+    {"name": "covid19_r0_wildtype", "property": "basic_reproduction_R0", "measured": 2.5, "pathogen": "SARS-CoV-2"},
+    {"name": "ebola_case_fatality", "property": "case_fatality_rate", "measured": 0.5, "pathogen": "Ebola"},
+    {"name": "malaria_incidence_per_1000", "property": "incidence_per_1000", "measured": 229.0, "region": "sub-Saharan Africa"},
+    {"name": "tb_incidence_per_100k", "property": "incidence_per_100k", "measured": 127.0, "region": "global"},
+    {"name": "hiv_prevalence_pct", "property": "prevalence_pct", "measured": 0.7, "region": "global"},
+    {"name": "cholera_incubation_days", "property": "incubation_period_days", "measured": 2.0, "pathogen": "Vibrio cholerae"},
+    {"name": "dengue_r0", "property": "basic_reproduction_R0", "measured": 3.0, "pathogen": "dengue"},
+    {"name": "pertussis_r0", "property": "basic_reproduction_R0", "measured": 5.5, "pathogen": "Bordetella pertussis"},
+    {"name": "norovirus_r0", "property": "basic_reproduction_R0", "measured": 7.0, "pathogen": "norovirus"},
+    {"name": "hepatitis_b_chronic_rate", "property": "chronic_infection_rate", "measured": 0.05, "pathogen": "HBV"},
+    {"name": "zika_incubation_days", "property": "incubation_period_days", "measured": 6.0, "pathogen": "Zika"},
+    {"name": "mumps_r0", "property": "basic_reproduction_R0", "measured": 10.0, "pathogen": "mumps"},
+    {"name": "rubella_r0", "property": "basic_reproduction_R0", "measured": 6.0, "pathogen": "rubella"},
+    {"name": "polio_r0", "property": "basic_reproduction_R0", "measured": 5.0, "pathogen": "poliovirus"},
+    {"name": "meningococcal_attack_rate", "property": "attack_rate", "measured": 0.001, "pathogen": "Neisseria meningitidis"},
+    {"name": "salmonella_incubation_h", "property": "incubation_period_hours", "measured": 12.0, "pathogen": "Salmonella"},
+    {"name": "strep_pneumo_carriage_pct", "property": "carriage_prevalence_pct", "measured": 40.0, "pathogen": "S. pneumoniae"},
+    {"name": "c_diff_attack_rate_hospital", "property": "attack_rate", "measured": 0.05, "pathogen": "C. difficile"}
+  ]
+}

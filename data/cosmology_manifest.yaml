@@ -1,13 +1,14 @@
 # FSOT Cosmology Lab ΛCDM observable verification (Phase 2 — full Wave-3).
-version: "1.1"
-updated: "2026-06-20"
-cosmology_root: "C:/Users/damia/Desktop/FSOT Cosmology Lab"
+version: "1.2"
+updated: "2026-07-09"
+cosmology_root: vendor
+fsot_compute: vendor/fsot_compute.py
 
 artifacts:
   fsot_compute:
-    path: "fsot_compute.py"
+    path: fsot_compute.py
   verify_script:
-    path: "verify_lambda_cdm.py"
+    path: verify_lambda_cdm.py
 
 verification:
   observable_count: 30

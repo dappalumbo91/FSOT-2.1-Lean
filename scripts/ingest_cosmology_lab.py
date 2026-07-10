@@ -20,6 +20,7 @@ REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from cosmology_lambda import lambda_cdm_observables, load_fsot_compute, summarize_lambda  # noqa: E402
+from fsot_paths import authority_path_for_export, fsot_compute_path  # noqa: E402
 
 
 def sha256_file(path: Path) -> str:
@@ -34,14 +35,13 @@ def ingest_cosmology(manifest_path: Path = MANIFEST_PATH) -> dict:
     if yaml is None:
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
-    root = Path(manifest["cosmology_root"])
-    compute_path = root / manifest["artifacts"]["fsot_compute"]["path"]
+    compute_path = fsot_compute_path()
     mod = load_fsot_compute(compute_path)
     rows = lambda_cdm_observables(mod)
     summary = summarize_lambda(rows)
     return {
         "present": compute_path.exists(),
-        "compute_path": str(compute_path),
+        "compute_path": authority_path_for_export(compute_path),
         "compute_sha256": sha256_file(compute_path) if compute_path.exists() else None,
         "rows": rows,
         **summary,

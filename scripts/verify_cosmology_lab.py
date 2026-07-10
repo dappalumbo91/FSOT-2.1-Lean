@@ -18,6 +18,7 @@ REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from cosmology_lambda import lambda_cdm_observables, load_fsot_compute, summarize_lambda  # noqa: E402
+from fsot_paths import fsot_compute_path  # noqa: E402
 
 
 def load_manifest() -> dict:
@@ -35,8 +36,7 @@ def verify_cosmology(
     registry = json.loads(registry_path.read_text(encoding="utf-8")) if registry_path.exists() else {}
     issues: list[str] = []
 
-    root = Path(manifest["cosmology_root"])
-    compute_path = root / manifest["artifacts"]["fsot_compute"]["path"]
+    compute_path = fsot_compute_path()
     if not compute_path.exists():
         return [f"missing cosmology compute: {compute_path}"], {}
 

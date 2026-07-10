@@ -1,0 +1,51 @@
+{
+  "catalog_version": "1.0",
+  "source": "FSOT_dual_anchor_literature",
+  "notes": "Sector H₀ measurements tagged by bubble-density proxy (BH→WH outgassing sightline).",
+  "h0_global_fsot": 68.440056829794272,
+  "bubble_bleed_fraction": 0.015431,
+  "sectors": [
+    {
+      "name": "global_cmb_background",
+      "measured_h0": 68.440056829794272,
+      "bubble_density_proxy": 0.0,
+      "method": "FSOT_Wave1_CMB",
+      "reference": "h0_fsot_canonical"
+    },
+    {
+      "name": "planck_cmb_local",
+      "measured_h0": 67.4,
+      "bubble_density_proxy": -1.0,
+      "method": "Planck2018",
+      "reference": "measured_planck_local"
+    },
+    {
+      "name": "sh0es_jwst",
+      "measured_h0": 73.04,
+      "bubble_density_proxy": 5.1,
+      "method": "SH0ES_Cepheid_TRGB",
+      "reference": "Riess2024"
+    },
+    {
+      "name": "freedman_jwst",
+      "measured_h0": 70.39,
+      "bubble_density_proxy": 1.85,
+      "method": "JWST_TRGB",
+      "reference": "Freedman2024"
+    },
+    {
+      "name": "fsot_document_local",
+      "measured_h0": 72.1,
+      "bubble_density_proxy": 3.15,
+      "method": "FSOT_local_bubble",
+      "reference": "PREDICTION_REDERIVATION_REPORT"
+    },
+    {
+      "name": "carnegie_h0",
+      "measured_h0": 69.8,
+      "bubble_density_proxy": 2.04,
+      "method": "Carnegie_distance_ladder",
+      "reference": "Freedman2019"
+    }
+  ]
+}

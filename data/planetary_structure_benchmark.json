@@ -1,7 +1,7 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-03T17:56:13.014231+00:00",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "generated_at": "2026-07-08T23:27:09.939871+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "JPL_Horizons_physical",
   "record_count": 20,
   "observable_count": 20,
@@ -174,18 +174,18 @@
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Phobos",
-      "computed": 11468.8866,
+      "computed": 1.9066,
       "measured": 1.9,
-      "error_pct": 603525.611355,
-      "within_tol": false
+      "error_pct": 0.346984,
+      "within_tol": true
     },
     {
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Deimos",
-      "computed": 90552.4255,
+      "computed": 1.8004,
       "measured": 1.76,
-      "error_pct": 5144924.177206,
+      "error_pct": 2.295187,
       "within_tol": false
     }
   ]

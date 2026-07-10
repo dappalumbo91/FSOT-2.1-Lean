@@ -1,0 +1,3888 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:31:59.732123+00:00",
+  "domain": "Botany",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "GBIF_Plantae"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "ecological"
+  ],
+  "D_eff": 14,
+  "record_count": 426,
+  "observable_count": 426,
+  "median_error_pct": 0.022236250385193387,
+  "pooled_median_error_pct": 0.022236250385193387,
+  "headline_median_error_pct": 0.022236250385193387,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "botany_gbif": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "GBIF plant occurrence QA"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_plant_occurrence_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236250385193387,
+      "observable_count": 426
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "plant_occurrence",
+      "name": "botany_gbif",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236250385193387,
+      "observable_count": 426
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Schwenckia paniculata",
+      "computed": -25.12753,
+      "measured": -25.121944,
+      "error_pct": 0.02223625038519912,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Schwenckia paniculata",
+      "computed": -45.702296,
+      "measured": -45.694167,
+      "error_pct": 0.017789000308158352,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Solanum succosum",
+      "computed": -14.719105,
+      "measured": -14.715833,
+      "error_pct": 0.02223625038519316,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Solanum succosum",
+      "computed": 132.080436,
+      "measured": 132.056944,
+      "error_pct": 0.017789000308165485,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": -20.585141,
+      "measured": -20.580565,
+      "error_pct": 0.022236250385203285,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 130.392128,
+      "measured": 130.368937,
+      "error_pct": 0.017789000308160014,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": -13.367416,
+      "measured": -13.364444,
+      "error_pct": 0.022236250385197286,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": -48.036044,
+      "measured": -48.0275,
+      "error_pct": 0.01778900030815454,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Fridericia cinnamomea",
+      "computed": -14.17454,
+      "measured": -14.171389,
+      "error_pct": 0.02223625038519316,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Fridericia cinnamomea",
+      "computed": -47.830729,
+      "measured": -47.822222,
+      "error_pct": 0.017789000308152638,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": -13.367416,
+      "measured": -13.364444,
+      "error_pct": 0.022236250385197286,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": -48.036877,
+      "measured": -48.028333,
+      "error_pct": 0.017789000308155525,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": -13.367416,
+      "measured": -13.364444,
+      "error_pct": 0.022236250385197286,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": -48.036877,
+      "measured": -48.028333,
+      "error_pct": 0.017789000308155525,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Palicourea colorata",
+      "computed": -13.366861,
+      "measured": -13.363889,
+      "error_pct": 0.02223625038520338,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Palicourea colorata",
+      "computed": -48.034932,
+      "measured": -48.026389,
+      "error_pct": 0.017789000308157138,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Viscum album",
+      "computed": 59.55466,
+      "measured": 59.54142,
+      "error_pct": 0.02223625038520284,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Viscum album",
+      "computed": 16.671295,
+      "measured": 16.66833,
+      "error_pct": 0.017789000308159133,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pyrola minor",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pyrola minor",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Prunus padus",
+      "computed": 57.534201,
+      "measured": 57.52141,
+      "error_pct": 0.02223625038519551,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Prunus padus",
+      "computed": 12.559484,
+      "measured": 12.55725,
+      "error_pct": 0.017789000308151205,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Juniperus communis",
+      "computed": 59.359526,
+      "measured": 59.34633,
+      "error_pct": 0.02223625038519627,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Juniperus communis",
+      "computed": 16.497554,
+      "measured": 16.49462,
+      "error_pct": 0.017789000308160354,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Lamium purpureum",
+      "computed": 55.534436,
+      "measured": 55.52209,
+      "error_pct": 0.02223625038520384,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Lamium purpureum",
+      "computed": 13.249367,
+      "measured": 13.24701,
+      "error_pct": 0.017789000308149033,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Nasturtium officinale",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Nasturtium officinale",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Phragmites australis",
+      "computed": 56.621948,
+      "measured": 56.60936,
+      "error_pct": 0.022236250385201117,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Phragmites australis",
+      "computed": 12.924979,
+      "measured": 12.92268,
+      "error_pct": 0.017789000308151483,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Juniperus communis",
+      "computed": 57.534201,
+      "measured": 57.52141,
+      "error_pct": 0.02223625038519551,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Juniperus communis",
+      "computed": 12.559484,
+      "measured": 12.55725,
+      "error_pct": 0.017789000308151205,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Vaccinium myrtillus",
+      "computed": 57.363813,
+      "measured": 57.35106,
+      "error_pct": 0.02223625038520187,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Vaccinium myrtillus",
+      "computed": 12.002675,
+      "measured": 12.00054,
+      "error_pct": 0.01778900030815885,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Geranium robertianum",
+      "computed": 56.589741,
+      "measured": 56.57716,
+      "error_pct": 0.022236250385195448,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Geranium robertianum",
+      "computed": 16.463918,
+      "measured": 16.46099,
+      "error_pct": 0.017789000308157676,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Fraxinus excelsior",
+      "computed": 58.010106,
+      "measured": 57.99721,
+      "error_pct": 0.022236250385194445,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Fraxinus excelsior",
+      "computed": 13.430219,
+      "measured": 13.42783,
+      "error_pct": 0.017789000308157905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Angelica sylvestris",
+      "computed": 58.010106,
+      "measured": 57.99721,
+      "error_pct": 0.022236250385194445,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Angelica sylvestris",
+      "computed": 13.430219,
+      "measured": 13.42783,
+      "error_pct": 0.017789000308157905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Prunus padus",
+      "computed": 59.813797,
+      "measured": 59.8005,
+      "error_pct": 0.02223625038520253,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Prunus padus",
+      "computed": 17.663532,
+      "measured": 17.66039,
+      "error_pct": 0.017789000308164722,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Picea abies",
+      "computed": 57.363813,
+      "measured": 57.35106,
+      "error_pct": 0.02223625038520187,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Picea abies",
+      "computed": 12.002675,
+      "measured": 12.00054,
+      "error_pct": 0.01778900030815885,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Angelica archangelica",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Angelica archangelica",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus sylvestris",
+      "computed": 59.866329,
+      "measured": 59.85302,
+      "error_pct": 0.022236250385198084,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus sylvestris",
+      "computed": 17.560343,
+      "measured": 17.55722,
+      "error_pct": 0.01778900030814915,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Moehringia trinervia",
+      "computed": 59.053628,
+      "measured": 59.0405,
+      "error_pct": 0.02223625038519491,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Moehringia trinervia",
+      "computed": 16.8103,
+      "measured": 16.80731,
+      "error_pct": 0.017789000308153658,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Prunus spinosa",
+      "computed": 57.477308,
+      "measured": 57.46453,
+      "error_pct": 0.022236250385196332,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Prunus spinosa",
+      "computed": 12.066156,
+      "measured": 12.06401,
+      "error_pct": 0.017789000308156104,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Struthiopteris spicant",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Struthiopteris spicant",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Fraxinus excelsior",
+      "computed": 56.754387,
+      "measured": 56.74177,
+      "error_pct": 0.022236250385205325,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Fraxinus excelsior",
+      "computed": 15.91101,
+      "measured": 15.90818,
+      "error_pct": 0.017789000308153613,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Hedera helix",
+      "computed": 56.595382,
+      "measured": 56.5828,
+      "error_pct": 0.022236250385204583,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Hedera helix",
+      "computed": 16.41838,
+      "measured": 16.41546,
+      "error_pct": 0.017789000308160306,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pyrola minor",
+      "computed": 56.933467,
+      "measured": 56.92081,
+      "error_pct": 0.02223625038519668,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pyrola minor",
+      "computed": 13.339052,
+      "measured": 13.33668,
+      "error_pct": 0.017789000308153793,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Helichrysum italicum",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Helichrysum italicum",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Scandosorbus intermedia",
+      "computed": 58.010106,
+      "measured": 57.99721,
+      "error_pct": 0.022236250385194445,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Scandosorbus intermedia",
+      "computed": 13.430219,
+      "measured": 13.42783,
+      "error_pct": 0.017789000308157905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Angelica sylvestris",
+      "computed": 65.857391,
+      "measured": 65.84275,
+      "error_pct": 0.022236250385205283,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Angelica sylvestris",
+      "computed": 21.70224,
+      "measured": 21.69838,
+      "error_pct": 0.0177890003081476,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Polypodium vulgare",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Polypodium vulgare",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Carex nigra",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Carex nigra",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Rubus plicatus",
+      "computed": 56.615956,
+      "measured": 56.60337,
+      "error_pct": 0.02223625038519329,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Rubus plicatus",
+      "computed": 12.916627,
+      "measured": 12.91433,
+      "error_pct": 0.017789000308161426,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 57.630582,
+      "measured": 57.61777,
+      "error_pct": 0.02223625038519584,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 13.011264,
+      "measured": 13.00895,
+      "error_pct": 0.017789000308148506,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Hippophae rhamnoides",
+      "computed": 59.86913,
+      "measured": 59.85582,
+      "error_pct": 0.0222362503852001,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Hippophae rhamnoides",
+      "computed": 17.551442,
+      "measured": 17.54832,
+      "error_pct": 0.017789000308145553,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Calluna vulgaris",
+      "computed": 57.534201,
+      "measured": 57.52141,
+      "error_pct": 0.02223625038519551,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Calluna vulgaris",
+      "computed": 12.559484,
+      "measured": 12.55725,
+      "error_pct": 0.017789000308151205,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Erica tetralix",
+      "computed": 57.363813,
+      "measured": 57.35106,
+      "error_pct": 0.02223625038520187,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Erica tetralix",
+      "computed": 12.002675,
+      "measured": 12.00054,
+      "error_pct": 0.01778900030815885,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Cirsium palustre",
+      "computed": 58.033132,
+      "measured": 58.02023,
+      "error_pct": 0.022236250385199025,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Cirsium palustre",
+      "computed": 14.959221,
+      "measured": 14.95656,
+      "error_pct": 0.017789000308155056,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Juncus effusus",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Juncus effusus",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Rumex acetosella",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Rumex acetosella",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Quercus robur",
+      "computed": 57.534201,
+      "measured": 57.52141,
+      "error_pct": 0.02223625038519551,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Quercus robur",
+      "computed": 12.559484,
+      "measured": 12.55725,
+      "error_pct": 0.017789000308151205,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Veronica officinalis",
+      "computed": 56.597192,
+      "measured": 56.58461,
+      "error_pct": 0.022236250385205377,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Veronica officinalis",
+      "computed": 16.41977,
+      "measured": 16.41685,
+      "error_pct": 0.017789000308151226,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Prunus cerasifera",
+      "computed": 59.86913,
+      "measured": 59.85582,
+      "error_pct": 0.0222362503852001,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Prunus cerasifera",
+      "computed": 17.551442,
+      "measured": 17.54832,
+      "error_pct": 0.017789000308145553,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Senecio sylvaticus",
+      "computed": 59.053628,
+      "measured": 59.0405,
+      "error_pct": 0.02223625038519491,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Senecio sylvaticus",
+      "computed": 16.8103,
+      "measured": 16.80731,
+      "error_pct": 0.017789000308153658,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Hypericum maculatum",
+      "computed": 59.053628,
+      "measured": 59.0405,
+      "error_pct": 0.02223625038519491,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Hypericum maculatum",
+      "computed": 16.8103,
+      "measured": 16.80731,
+      "error_pct": 0.017789000308153658,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Plantago lanceolata",
+      "computed": 55.535756,
+      "measured": 55.52341,
+      "error_pct": 0.022236250385201387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Plantago lanceolata",
+      "computed": 13.247986,
+      "measured": 13.24563,
+      "error_pct": 0.01778900030815104,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Vaccinium myrtillus",
+      "computed": 58.041193,
+      "measured": 58.02829,
+      "error_pct": 0.0222362503852016,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Vaccinium myrtillus",
+      "computed": 14.959531,
+      "measured": 14.95687,
+      "error_pct": 0.017789000308150612,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Prunus spinosa",
+      "computed": 59.403776,
+      "measured": 59.39057,
+      "error_pct": 0.022236250385199642,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Prunus spinosa",
+      "computed": 16.52752,
+      "measured": 16.52458,
+      "error_pct": 0.01778900030816348,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Alnus glutinosa",
+      "computed": 57.477308,
+      "measured": 57.46453,
+      "error_pct": 0.022236250385196332,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Alnus glutinosa",
+      "computed": 12.066156,
+      "measured": 12.06401,
+      "error_pct": 0.017789000308156104,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Carex panicea",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Carex panicea",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Bunias orientalis",
+      "computed": 59.867919,
+      "measured": 59.85461,
+      "error_pct": 0.022236250385197238,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Bunias orientalis",
+      "computed": 17.601221,
+      "measured": 17.59809,
+      "error_pct": 0.01778900030815986,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Salix caprea",
+      "computed": 57.477308,
+      "measured": 57.46453,
+      "error_pct": 0.022236250385196332,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Salix caprea",
+      "computed": 12.066156,
+      "measured": 12.06401,
+      "error_pct": 0.017789000308156104,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Berteroa incana",
+      "computed": 56.589741,
+      "measured": 56.57716,
+      "error_pct": 0.022236250385195448,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Berteroa incana",
+      "computed": 16.463918,
+      "measured": 16.46099,
+      "error_pct": 0.017789000308157676,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Juniperus communis",
+      "computed": 57.630102,
+      "measured": 57.61729,
+      "error_pct": 0.022236250385200062,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Juniperus communis",
+      "computed": 13.012484,
+      "measured": 13.01017,
+      "error_pct": 0.017789000308160555,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Grimmia pulvinata",
+      "computed": 55.59604,
+      "measured": 55.58368,
+      "error_pct": 0.022236250385192797,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Grimmia pulvinata",
+      "computed": 13.012344,
+      "measured": 13.01003,
+      "error_pct": 0.017789000308155813,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Corylus avellana",
+      "computed": 59.866329,
+      "measured": 59.85302,
+      "error_pct": 0.022236250385198084,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Corylus avellana",
+      "computed": 17.560343,
+      "measured": 17.55722,
+      "error_pct": 0.01778900030814915,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Polypodium vulgare",
+      "computed": 57.534201,
+      "measured": 57.52141,
+      "error_pct": 0.02223625038519551,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Polypodium vulgare",
+      "computed": 12.559484,
+      "measured": 12.55725,
+      "error_pct": 0.017789000308151205,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Filipendula ulmaria",
+      "computed": 59.873941,
+      "measured": 59.86063,
+      "error_pct": 0.02223625038520216,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Filipendula ulmaria",
+      "computed": 17.578556,
+      "measured": 17.57543,
+      "error_pct": 0.01778900030816372,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Cymbalaria muralis",
+      "computed": 57.499313,
+      "measured": 57.48653,
+      "error_pct": 0.02223625038520222,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Cymbalaria muralis",
+      "computed": 12.078368,
+      "measured": 12.07622,
+      "error_pct": 0.01778900030815808,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Viscum album",
+      "computed": 59.515181,
+      "measured": 59.50195,
+      "error_pct": 0.022236250385196922,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Viscum album",
+      "computed": 16.157754,
+      "measured": 16.15488,
+      "error_pct": 0.017789000308146074,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Corylus avellana",
+      "computed": 58.07214,
+      "measured": 58.05923,
+      "error_pct": 0.02223625038520435,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Corylus avellana",
+      "computed": 11.829374,
+      "measured": 11.82727,
+      "error_pct": 0.01778900030815548,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Sedum acre",
+      "computed": 56.595232,
+      "measured": 56.58265,
+      "error_pct": 0.02223625038520514,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Sedum acre",
+      "computed": 16.41935,
+      "measured": 16.41643,
+      "error_pct": 0.0177890003081616,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus sylvestris",
+      "computed": 59.482464,
+      "measured": 59.46924,
+      "error_pct": 0.022236250385198112,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus sylvestris",
+      "computed": 17.800096,
+      "measured": 17.79693,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Iris pseudacorus",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Iris pseudacorus",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Juniperus communis",
+      "computed": 59.053628,
+      "measured": 59.0405,
+      "error_pct": 0.02223625038519491,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Juniperus communis",
+      "computed": 16.8103,
+      "measured": 16.80731,
+      "error_pct": 0.017789000308153658,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Typha latifolia",
+      "computed": 59.873661,
+      "measured": 59.86035,
+      "error_pct": 0.022236250385193654,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Typha latifolia",
+      "computed": 17.580657,
+      "measured": 17.57753,
+      "error_pct": 0.017789000308155712,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Thinopyrum junceum",
+      "computed": 56.615956,
+      "measured": 56.60337,
+      "error_pct": 0.02223625038519329,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Thinopyrum junceum",
+      "computed": 12.916627,
+      "measured": 12.91433,
+      "error_pct": 0.017789000308161426,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Ceratodon purpureus",
+      "computed": 57.363813,
+      "measured": 57.35106,
+      "error_pct": 0.02223625038520187,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Ceratodon purpureus",
+      "computed": 12.002675,
+      "measured": 12.00054,
+      "error_pct": 0.01778900030815885,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Picea abies",
+      "computed": 58.010106,
+      "measured": 57.99721,
+      "error_pct": 0.022236250385194445,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Picea abies",
+      "computed": 13.430219,
+      "measured": 13.42783,
+      "error_pct": 0.017789000308157905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Huperzia europaea",
+      "computed": 57.705809,
+      "measured": 57.69298,
+      "error_pct": 0.022236250385199517,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Huperzia europaea",
+      "computed": 12.400215,
+      "measured": 12.39801,
+      "error_pct": 0.01778900030815716,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Geum urbanum",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Geum urbanum",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Chimaphila umbellata",
+      "computed": 56.6318,
+      "measured": 56.61921,
+      "error_pct": 0.02223625038520211,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Chimaphila umbellata",
+      "computed": 16.647781,
+      "measured": 16.64482,
+      "error_pct": 0.017789000308159015,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Corylus avellana",
+      "computed": 59.854586,
+      "measured": 59.84128,
+      "error_pct": 0.02223625038519905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Corylus avellana",
+      "computed": 17.569175,
+      "measured": 17.56605,
+      "error_pct": 0.01778900030815099,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pleurozium schreberi",
+      "computed": 57.534201,
+      "measured": 57.52141,
+      "error_pct": 0.02223625038519551,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pleurozium schreberi",
+      "computed": 12.559484,
+      "measured": 12.55725,
+      "error_pct": 0.017789000308151205,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Hylocomiadelphus triquetrus",
+      "computed": 56.58765,
+      "measured": 56.57507,
+      "error_pct": 0.022236250385198206,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Hylocomiadelphus triquetrus",
+      "computed": 16.476,
+      "measured": 16.47307,
+      "error_pct": 0.017789000308147944,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Picea abies",
+      "computed": 65.840977,
+      "measured": 65.82634,
+      "error_pct": 0.022236250385208156,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Picea abies",
+      "computed": 21.670874,
+      "measured": 21.66702,
+      "error_pct": 0.01778900030814953,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Salix caprea",
+      "computed": 65.840977,
+      "measured": 65.82634,
+      "error_pct": 0.022236250385208156,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Salix caprea",
+      "computed": 21.670874,
+      "measured": 21.66702,
+      "error_pct": 0.01778900030814953,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus sylvestris",
+      "computed": 57.630582,
+      "measured": 57.61777,
+      "error_pct": 0.02223625038519584,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus sylvestris",
+      "computed": 13.011264,
+      "measured": 13.00895,
+      "error_pct": 0.017789000308148506,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Tripleurospermum inodorum",
+      "computed": 59.86913,
+      "measured": 59.85582,
+      "error_pct": 0.0222362503852001,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Tripleurospermum inodorum",
+      "computed": 17.551442,
+      "measured": 17.54832,
+      "error_pct": 0.017789000308145553,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Molinia caerulea",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Molinia caerulea",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus sylvestris",
+      "computed": 56.76779,
+      "measured": 56.75517,
+      "error_pct": 0.022236250385193133,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus sylvestris",
+      "computed": 15.875744,
+      "measured": 15.87292,
+      "error_pct": 0.017789000308155146,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Betula pendula",
+      "computed": 59.854586,
+      "measured": 59.84128,
+      "error_pct": 0.02223625038519905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Betula pendula",
+      "computed": 17.569175,
+      "measured": 17.56605,
+      "error_pct": 0.01778900030815099,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Polytrichum commune",
+      "computed": 57.534201,
+      "measured": 57.52141,
+      "error_pct": 0.02223625038519551,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Polytrichum commune",
+      "computed": 12.559484,
+      "measured": 12.55725,
+      "error_pct": 0.017789000308151205,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Juniperus communis",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Juniperus communis",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Juncus bulbosus",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Juncus bulbosus",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Stellaria media",
+      "computed": 55.535626,
+      "measured": 55.52328,
+      "error_pct": 0.02223625038520444,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Stellaria media",
+      "computed": 13.250317,
+      "measured": 13.24796,
+      "error_pct": 0.01778900030815572,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Symphoricarpos albus",
+      "computed": 56.594192,
+      "measured": 56.58161,
+      "error_pct": 0.022236250385203993,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Symphoricarpos albus",
+      "computed": 16.41802,
+      "measured": 16.4151,
+      "error_pct": 0.017789000308147555,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Alliaria petiolata",
+      "computed": 56.597312,
+      "measured": 56.58473,
+      "error_pct": 0.022236250385194882,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Alliaria petiolata",
+      "computed": 16.42,
+      "measured": 16.41708,
+      "error_pct": 0.01778900030816358,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Hypericum perforatum",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Hypericum perforatum",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus sylvestris",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus sylvestris",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Dactylis glomerata",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Dactylis glomerata",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus sylvestris",
+      "computed": 59.812727,
+      "measured": 59.79943,
+      "error_pct": 0.02223625038520392,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus sylvestris",
+      "computed": 17.664072,
+      "measured": 17.66093,
+      "error_pct": 0.017789000308152326,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Calluna vulgaris",
+      "computed": 56.589821,
+      "measured": 56.57724,
+      "error_pct": 0.022236250385205193,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Calluna vulgaris",
+      "computed": 16.47364,
+      "measured": 16.47071,
+      "error_pct": 0.017789000308155698,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Hypnum cupressiforme",
+      "computed": 59.053628,
+      "measured": 59.0405,
+      "error_pct": 0.02223625038519491,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Hypnum cupressiforme",
+      "computed": 16.8103,
+      "measured": 16.80731,
+      "error_pct": 0.017789000308153658,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Chamaenerion angustifolium",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Chamaenerion angustifolium",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Geranium robertianum",
+      "computed": 55.535756,
+      "measured": 55.52341,
+      "error_pct": 0.022236250385201387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Geranium robertianum",
+      "computed": 13.247986,
+      "measured": 13.24563,
+      "error_pct": 0.01778900030815104,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Lonicera tatarica",
+      "computed": 59.86913,
+      "measured": 59.85582,
+      "error_pct": 0.0222362503852001,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Lonicera tatarica",
+      "computed": 17.551442,
+      "measured": 17.54832,
+      "error_pct": 0.017789000308145553,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Prunus spinosa",
+      "computed": 59.854586,
+      "measured": 59.84128,
+      "error_pct": 0.02223625038519905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Prunus spinosa",
+      "computed": 17.569175,
+      "measured": 17.56605,
+      "error_pct": 0.01778900030815099,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Malus domestica",
+      "computed": 59.855787,
+      "measured": 59.84248,
+      "error_pct": 0.022236250385194823,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Malus domestica",
+      "computed": 17.569135,
+      "measured": 17.56601,
+      "error_pct": 0.017789000308158654,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Prunus spinosa",
+      "computed": 56.589891,
+      "measured": 56.57731,
+      "error_pct": 0.02223625038519489,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Prunus spinosa",
+      "computed": 16.463858,
+      "measured": 16.46093,
+      "error_pct": 0.01778900030815915,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Linum catharticum",
+      "computed": 56.58871,
+      "measured": 56.57613,
+      "error_pct": 0.022236250385201797,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Linum catharticum",
+      "computed": 16.47296,
+      "measured": 16.47003,
+      "error_pct": 0.017789000308165246,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Rumex crispus",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Rumex crispus",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Malus domestica",
+      "computed": 59.86913,
+      "measured": 59.85582,
+      "error_pct": 0.0222362503852001,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Malus domestica",
+      "computed": 17.551442,
+      "measured": 17.54832,
+      "error_pct": 0.017789000308145553,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Rubus onsalaensis",
+      "computed": 57.448682,
+      "measured": 57.43591,
+      "error_pct": 0.022236250385199878,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Rubus onsalaensis",
+      "computed": 11.938223,
+      "measured": 11.9361,
+      "error_pct": 0.017789000308159848,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Cirsium vulgare",
+      "computed": 56.589741,
+      "measured": 56.57716,
+      "error_pct": 0.022236250385195448,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Cirsium vulgare",
+      "computed": 16.463918,
+      "measured": 16.46099,
+      "error_pct": 0.017789000308157676,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Picea abies",
+      "computed": 57.630582,
+      "measured": 57.61777,
+      "error_pct": 0.02223625038519584,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Picea abies",
+      "computed": 13.011264,
+      "measured": 13.00895,
+      "error_pct": 0.017789000308148506,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Populus tremula",
+      "computed": 57.477308,
+      "measured": 57.46453,
+      "error_pct": 0.022236250385196332,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Populus tremula",
+      "computed": 12.066156,
+      "measured": 12.06401,
+      "error_pct": 0.017789000308156104,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Tilia cordata",
+      "computed": 56.76487,
+      "measured": 56.75225,
+      "error_pct": 0.022236250385201474,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Tilia cordata",
+      "computed": 15.877044,
+      "measured": 15.87422,
+      "error_pct": 0.017789000308159247,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Tanacetum vulgare",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Tanacetum vulgare",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Succisa pratensis",
+      "computed": 56.58871,
+      "measured": 56.57613,
+      "error_pct": 0.022236250385201797,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Succisa pratensis",
+      "computed": 16.47296,
+      "measured": 16.47003,
+      "error_pct": 0.017789000308165246,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Hedera helix",
+      "computed": 56.757188,
+      "measured": 56.74457,
+      "error_pct": 0.022236250385194927,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Hedera helix",
+      "computed": 15.881765,
+      "measured": 15.87894,
+      "error_pct": 0.017789000308154338,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Acer platanoides",
+      "computed": 58.010106,
+      "measured": 57.99721,
+      "error_pct": 0.022236250385194445,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Acer platanoides",
+      "computed": 13.430219,
+      "measured": 13.42783,
+      "error_pct": 0.017789000308157905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Solidago canadensis",
+      "computed": 58.033132,
+      "measured": 58.02023,
+      "error_pct": 0.022236250385199025,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Solidago canadensis",
+      "computed": 14.959221,
+      "measured": 14.95656,
+      "error_pct": 0.017789000308155056,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Quercus robur",
+      "computed": 56.752697,
+      "measured": 56.74008,
+      "error_pct": 0.022236250385194067,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Quercus robur",
+      "computed": 15.883405,
+      "measured": 15.88058,
+      "error_pct": 0.017789000308153488,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Achillea millefolium",
+      "computed": 56.595232,
+      "measured": 56.58265,
+      "error_pct": 0.02223625038520514,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Achillea millefolium",
+      "computed": 16.41935,
+      "measured": 16.41643,
+      "error_pct": 0.0177890003081616,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Acer platanoides",
+      "computed": 58.033132,
+      "measured": 58.02023,
+      "error_pct": 0.022236250385199025,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Acer platanoides",
+      "computed": 14.959221,
+      "measured": 14.95656,
+      "error_pct": 0.017789000308155056,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Mnium hornum",
+      "computed": 57.375655,
+      "measured": 57.3629,
+      "error_pct": 0.022236250385200496,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Mnium hornum",
+      "computed": 11.959727,
+      "measured": 11.9576,
+      "error_pct": 0.017789000308153884,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Salix caprea",
+      "computed": 58.010106,
+      "measured": 57.99721,
+      "error_pct": 0.022236250385194445,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Salix caprea",
+      "computed": 13.430219,
+      "measured": 13.42783,
+      "error_pct": 0.017789000308157905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Ranunculus flammula",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Ranunculus flammula",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Spinulum annotinum",
+      "computed": 57.534201,
+      "measured": 57.52141,
+      "error_pct": 0.02223625038519551,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Spinulum annotinum",
+      "computed": 12.559484,
+      "measured": 12.55725,
+      "error_pct": 0.017789000308151205,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 57.727664,
+      "measured": 57.71483,
+      "error_pct": 0.022236250385193616,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 11.937573,
+      "measured": 11.93545,
+      "error_pct": 0.01778900030815712,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Rubus idaeus",
+      "computed": 58.033132,
+      "measured": 58.02023,
+      "error_pct": 0.022236250385199025,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Rubus idaeus",
+      "computed": 14.959221,
+      "measured": 14.95656,
+      "error_pct": 0.017789000308155056,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Arenaria serpyllifolia",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Arenaria serpyllifolia",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Thymus serpyllum",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Thymus serpyllum",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Alnus glutinosa",
+      "computed": 59.053198,
+      "measured": 59.04007,
+      "error_pct": 0.022236250385198855,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Alnus glutinosa",
+      "computed": 16.81268,
+      "measured": 16.80969,
+      "error_pct": 0.01778900030815262,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Hypochaeris radicata",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Hypochaeris radicata",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Clinopodium acinos",
+      "computed": 56.58871,
+      "measured": 56.57613,
+      "error_pct": 0.022236250385201797,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Clinopodium acinos",
+      "computed": 16.47296,
+      "measured": 16.47003,
+      "error_pct": 0.017789000308165246,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Cardamine hirsuta",
+      "computed": 56.597192,
+      "measured": 56.58461,
+      "error_pct": 0.022236250385205377,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Cardamine hirsuta",
+      "computed": 16.41977,
+      "measured": 16.41685,
+      "error_pct": 0.017789000308151226,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Salix caprea",
+      "computed": 59.867069,
+      "measured": 59.85376,
+      "error_pct": 0.02223625038520023,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Salix caprea",
+      "computed": 17.558013,
+      "measured": 17.55489,
+      "error_pct": 0.017789000308145616,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Avenella flexuosa",
+      "computed": 59.053628,
+      "measured": 59.0405,
+      "error_pct": 0.02223625038519491,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Avenella flexuosa",
+      "computed": 16.8103,
+      "measured": 16.80731,
+      "error_pct": 0.017789000308153658,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Rubus armeniacus",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Rubus armeniacus",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Carpinus betulus",
+      "computed": 59.87034,
+      "measured": 59.85703,
+      "error_pct": 0.022236250385202962,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Carpinus betulus",
+      "computed": 17.581227,
+      "measured": 17.5781,
+      "error_pct": 0.01778900030815267,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Rhytidiadelphus squarrosus",
+      "computed": 55.534436,
+      "measured": 55.52209,
+      "error_pct": 0.02223625038520384,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Rhytidiadelphus squarrosus",
+      "computed": 13.249367,
+      "measured": 13.24701,
+      "error_pct": 0.017789000308149033,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Salix cinerea",
+      "computed": 56.639572,
+      "measured": 56.62698,
+      "error_pct": 0.022236250385200804,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Salix cinerea",
+      "computed": 12.921138,
+      "measured": 12.91884,
+      "error_pct": 0.01778900030814823,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Lactuca macrophylla",
+      "computed": 59.393814,
+      "measured": 59.38061,
+      "error_pct": 0.022236250385203875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Lactuca macrophylla",
+      "computed": 17.997181,
+      "measured": 17.99398,
+      "error_pct": 0.017789000308148197,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Betula pendula",
+      "computed": 59.403776,
+      "measured": 59.39057,
+      "error_pct": 0.022236250385199642,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Betula pendula",
+      "computed": 16.52752,
+      "measured": 16.52458,
+      "error_pct": 0.01778900030816348,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Desmococcus olivaceus",
+      "computed": 59.854586,
+      "measured": 59.84128,
+      "error_pct": 0.02223625038519905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Desmococcus olivaceus",
+      "computed": 17.569175,
+      "measured": 17.56605,
+      "error_pct": 0.01778900030815099,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Hypnum cupressiforme",
+      "computed": 57.727664,
+      "measured": 57.71483,
+      "error_pct": 0.022236250385193616,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Hypnum cupressiforme",
+      "computed": 11.937573,
+      "measured": 11.93545,
+      "error_pct": 0.01778900030815712,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Filipendula ulmaria",
+      "computed": 58.033132,
+      "measured": 58.02023,
+      "error_pct": 0.022236250385199025,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Filipendula ulmaria",
+      "computed": 14.959221,
+      "measured": 14.95656,
+      "error_pct": 0.017789000308155056,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Artemisia vulgaris",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Artemisia vulgaris",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Vaccinium myrtillus",
+      "computed": 59.873941,
+      "measured": 59.86063,
+      "error_pct": 0.02223625038520216,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Vaccinium myrtillus",
+      "computed": 17.578556,
+      "measured": 17.57543,
+      "error_pct": 0.01778900030816372,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Acer platanoides",
+      "computed": 59.854586,
+      "measured": 59.84128,
+      "error_pct": 0.02223625038519905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Acer platanoides",
+      "computed": 17.569175,
+      "measured": 17.56605,
+      "error_pct": 0.01778900030815099,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Cirsium arvense",
+      "computed": 55.535756,
+      "measured": 55.52341,
+      "error_pct": 0.022236250385201387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Cirsium arvense",
+      "computed": 13.247986,
+      "measured": 13.24563,
+      "error_pct": 0.01778900030815104,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Populus tremula",
+      "computed": 59.403776,
+      "measured": 59.39057,
+      "error_pct": 0.022236250385199642,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Populus tremula",
+      "computed": 16.52752,
+      "measured": 16.52458,
+      "error_pct": 0.01778900030816348,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Vinca minor",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Vinca minor",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Rosa spinosissima",
+      "computed": 59.86913,
+      "measured": 59.85582,
+      "error_pct": 0.0222362503852001,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Rosa spinosissima",
+      "computed": 17.551442,
+      "measured": 17.54832,
+      "error_pct": 0.017789000308145553,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Phragmites australis",
+      "computed": 57.477308,
+      "measured": 57.46453,
+      "error_pct": 0.022236250385196332,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Phragmites australis",
+      "computed": 12.066156,
+      "measured": 12.06401,
+      "error_pct": 0.017789000308156104,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Viscum album",
+      "computed": 59.55503,
+      "measured": 59.54179,
+      "error_pct": 0.02223625038520392,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Viscum album",
+      "computed": 16.670685,
+      "measured": 16.66772,
+      "error_pct": 0.017789000308149106,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Syntrichia ruralis",
+      "computed": 56.589521,
+      "measured": 56.57694,
+      "error_pct": 0.022236250385193754,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Syntrichia ruralis",
+      "computed": 16.469039,
+      "measured": 16.46611,
+      "error_pct": 0.017789000308146688,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Ranunculus repens",
+      "computed": 58.033132,
+      "measured": 58.02023,
+      "error_pct": 0.022236250385199025,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Ranunculus repens",
+      "computed": 14.959221,
+      "measured": 14.95656,
+      "error_pct": 0.017789000308155056,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Plantago lanceolata",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Plantago lanceolata",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Sedum acre",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Sedum acre",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Polypodium vulgare",
+      "computed": 57.363813,
+      "measured": 57.35106,
+      "error_pct": 0.02223625038520187,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Polypodium vulgare",
+      "computed": 12.002675,
+      "measured": 12.00054,
+      "error_pct": 0.01778900030815885,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Lamium purpureum",
+      "computed": 56.597312,
+      "measured": 56.58473,
+      "error_pct": 0.022236250385194882,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Lamium purpureum",
+      "computed": 16.42,
+      "measured": 16.41708,
+      "error_pct": 0.01778900030816358,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Vaccinium myrtillus",
+      "computed": 59.355986,
+      "measured": 59.34279,
+      "error_pct": 0.022236250385204052,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Vaccinium myrtillus",
+      "computed": 17.942671,
+      "measured": 17.93948,
+      "error_pct": 0.017789000308145342,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Jacobaea vulgaris",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Jacobaea vulgaris",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Syringa vulgaris",
+      "computed": 59.86913,
+      "measured": 59.85582,
+      "error_pct": 0.0222362503852001,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Syringa vulgaris",
+      "computed": 17.551442,
+      "measured": 17.54832,
+      "error_pct": 0.017789000308145553,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Ilex aquifolium",
+      "computed": 57.387718,
+      "measured": 57.37496,
+      "error_pct": 0.02223625038520079,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Ilex aquifolium",
+      "computed": 11.995413,
+      "measured": 11.99328,
+      "error_pct": 0.017789000308152468,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Populus tremula",
+      "computed": 61.528929,
+      "measured": 61.51525,
+      "error_pct": 0.022236250385196922,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Populus tremula",
+      "computed": 15.161877,
+      "measured": 15.15918,
+      "error_pct": 0.017789000308150123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Sphagnum girgensohnii",
+      "computed": 57.778945,
+      "measured": 57.7661,
+      "error_pct": 0.02223625038519358,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Sphagnum girgensohnii",
+      "computed": 11.981491,
+      "measured": 11.97936,
+      "error_pct": 0.01778900030814903,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Lamium galeobdolon",
+      "computed": 55.543568,
+      "measured": 55.53122,
+      "error_pct": 0.022236250385205023,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Lamium galeobdolon",
+      "computed": 13.264589,
+      "measured": 13.26223,
+      "error_pct": 0.01778900030815705,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Lathyrus linifolius",
+      "computed": 59.053628,
+      "measured": 59.0405,
+      "error_pct": 0.02223625038519491,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Lathyrus linifolius",
+      "computed": 16.8103,
+      "measured": 16.80731,
+      "error_pct": 0.017789000308153658,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Sorbus aucuparia",
+      "computed": 57.534201,
+      "measured": 57.52141,
+      "error_pct": 0.02223625038519551,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Sorbus aucuparia",
+      "computed": 12.559484,
+      "measured": 12.55725,
+      "error_pct": 0.017789000308151205,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Filipendula ulmaria",
+      "computed": 59.813797,
+      "measured": 59.8005,
+      "error_pct": 0.02223625038520253,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Filipendula ulmaria",
+      "computed": 17.663532,
+      "measured": 17.66039,
+      "error_pct": 0.017789000308164722,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Stellaria media",
+      "computed": 56.589741,
+      "measured": 56.57716,
+      "error_pct": 0.022236250385195448,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Stellaria media",
+      "computed": 16.463918,
+      "measured": 16.46099,
+      "error_pct": 0.017789000308157676,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus sylvestris",
+      "computed": 61.528929,
+      "measured": 61.51525,
+      "error_pct": 0.022236250385196922,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus sylvestris",
+      "computed": 15.161877,
+      "measured": 15.15918,
+      "error_pct": 0.017789000308150123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Cerastium fontanum",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Cerastium fontanum",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Carex distans",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Carex distans",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Cirsium palustre",
+      "computed": 56.612496,
+      "measured": 56.59991,
+      "error_pct": 0.022236250385198636,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Cirsium palustre",
+      "computed": 12.918778,
+      "measured": 12.91648,
+      "error_pct": 0.017789000308158123,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Scandosorbus intermedia",
+      "computed": 59.87269,
+      "measured": 59.85938,
+      "error_pct": 0.02223625038519469,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Scandosorbus intermedia",
+      "computed": 17.581567,
+      "measured": 17.57844,
+      "error_pct": 0.017789000308158304,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Empetrum nigrum",
+      "computed": 57.363813,
+      "measured": 57.35106,
+      "error_pct": 0.02223625038520187,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Empetrum nigrum",
+      "computed": 12.002675,
+      "measured": 12.00054,
+      "error_pct": 0.01778900030815885,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Tanacetum vulgare",
+      "computed": 56.589891,
+      "measured": 56.57731,
+      "error_pct": 0.02223625038519489,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Tanacetum vulgare",
+      "computed": 16.463858,
+      "measured": 16.46093,
+      "error_pct": 0.01778900030815915,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Carex hirta",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Carex hirta",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Funaria hygrometrica",
+      "computed": 57.363813,
+      "measured": 57.35106,
+      "error_pct": 0.02223625038520187,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Funaria hygrometrica",
+      "computed": 12.002675,
+      "measured": 12.00054,
+      "error_pct": 0.01778900030815885,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Alnus glutinosa",
+      "computed": 59.812727,
+      "measured": 59.79943,
+      "error_pct": 0.02223625038520392,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Alnus glutinosa",
+      "computed": 17.664072,
+      "measured": 17.66093,
+      "error_pct": 0.017789000308152326,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Lonicera caprifolium",
+      "computed": 59.855617,
+      "measured": 59.84231,
+      "error_pct": 0.022236250385204923,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Lonicera caprifolium",
+      "computed": 17.569355,
+      "measured": 17.56623,
+      "error_pct": 0.017789000308146834,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Fraxinus excelsior",
+      "computed": 57.439259,
+      "measured": 57.42649,
+      "error_pct": 0.022236250385194844,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Fraxinus excelsior",
+      "computed": 12.119165,
+      "measured": 12.11701,
+      "error_pct": 0.01778900030815184,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Hepatica nobilis",
+      "computed": 55.563162,
+      "measured": 55.55081,
+      "error_pct": 0.022236250385199788,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Hepatica nobilis",
+      "computed": 12.915187,
+      "measured": 12.91289,
+      "error_pct": 0.017789000308151608,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Ranunculus bulbosus",
+      "computed": 56.619977,
+      "measured": 56.60739,
+      "error_pct": 0.022236250385193387,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Ranunculus bulbosus",
+      "computed": 12.916347,
+      "measured": 12.91405,
+      "error_pct": 0.017789000308151875,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Picea abies",
+      "computed": 59.866329,
+      "measured": 59.85302,
+      "error_pct": 0.022236250385198084,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Picea abies",
+      "computed": 17.560343,
+      "measured": 17.55722,
+      "error_pct": 0.01778900030814915,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Filipendula ulmaria",
+      "computed": 58.010106,
+      "measured": 57.99721,
+      "error_pct": 0.022236250385194445,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Filipendula ulmaria",
+      "computed": 13.430219,
+      "measured": 13.42783,
+      "error_pct": 0.017789000308157905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Spinulum annotinum",
+      "computed": 57.707789,
+      "measured": 57.69496,
+      "error_pct": 0.022236250385202137,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Spinulum annotinum",
+      "computed": 12.403466,
+      "measured": 12.40126,
+      "error_pct": 0.017789000308155955,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Mnium hornum",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Mnium hornum",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus sylvestris",
+      "computed": 58.043234,
+      "measured": 58.03033,
+      "error_pct": 0.022236250385199087,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus sylvestris",
+      "computed": 14.962621,
+      "measured": 14.95996,
+      "error_pct": 0.017789000308149998,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Corylus avellana",
+      "computed": 57.630102,
+      "measured": 57.61729,
+      "error_pct": 0.022236250385200062,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Corylus avellana",
+      "computed": 13.012484,
+      "measured": 13.01017,
+      "error_pct": 0.017789000308160555,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Betula pendula",
+      "computed": 59.053628,
+      "measured": 59.0405,
+      "error_pct": 0.02223625038519491,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Betula pendula",
+      "computed": 16.8103,
+      "measured": 16.80731,
+      "error_pct": 0.017789000308153658,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Cirsium arvense",
+      "computed": 56.621948,
+      "measured": 56.60936,
+      "error_pct": 0.022236250385201117,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Cirsium arvense",
+      "computed": 12.924979,
+      "measured": 12.92268,
+      "error_pct": 0.017789000308151483,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus sylvestris",
+      "computed": 59.403776,
+      "measured": 59.39057,
+      "error_pct": 0.022236250385199642,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus sylvestris",
+      "computed": 16.52752,
+      "measured": 16.52458,
+      "error_pct": 0.01778900030816348,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Reynoutria japonica",
+      "computed": 59.86913,
+      "measured": 59.85582,
+      "error_pct": 0.0222362503852001,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Reynoutria japonica",
+      "computed": 17.551442,
+      "measured": 17.54832,
+      "error_pct": 0.017789000308145553,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pleurozium schreberi",
+      "computed": 56.58765,
+      "measured": 56.57507,
+      "error_pct": 0.022236250385198206,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pleurozium schreberi",
+      "computed": 16.476,
+      "measured": 16.47307,
+      "error_pct": 0.017789000308147944,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Quercus robur",
+      "computed": 59.359526,
+      "measured": 59.34633,
+      "error_pct": 0.02223625038519627,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Quercus robur",
+      "computed": 16.497554,
+      "measured": 16.49462,
+      "error_pct": 0.017789000308160354,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Polytrichum piliferum",
+      "computed": 57.363813,
+      "measured": 57.35106,
+      "error_pct": 0.02223625038520187,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Polytrichum piliferum",
+      "computed": 12.002675,
+      "measured": 12.00054,
+      "error_pct": 0.01778900030815885,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Artemisia vulgaris",
+      "computed": 59.852226,
+      "measured": 59.83892,
+      "error_pct": 0.022236250385200235,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Artemisia vulgaris",
+      "computed": 17.579337,
+      "measured": 17.57621,
+      "error_pct": 0.01778900030814573,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Populus tremula",
+      "computed": 59.867069,
+      "measured": 59.85376,
+      "error_pct": 0.02223625038520023,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Populus tremula",
+      "computed": 17.558013,
+      "measured": 17.55489,
+      "error_pct": 0.017789000308145616,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Juniperus communis",
+      "computed": 57.363813,
+      "measured": 57.35106,
+      "error_pct": 0.02223625038520187,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Juniperus communis",
+      "computed": 12.002675,
+      "measured": 12.00054,
+      "error_pct": 0.01778900030815885,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Nyholmiella gymnostoma",
+      "computed": 59.854586,
+      "measured": 59.84128,
+      "error_pct": 0.02223625038519905,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Nyholmiella gymnostoma",
+      "computed": 17.569175,
+      "measured": 17.56605,
+      "error_pct": 0.01778900030815099,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Agrostis gigantea",
+      "computed": 58.033132,
+      "measured": 58.02023,
+      "error_pct": 0.022236250385199025,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Agrostis gigantea",
+      "computed": 14.959221,
+      "measured": 14.95656,
+      "error_pct": 0.017789000308155056,
+      "source": "gbif_plantae_api"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Spinus pinus",
+      "computed": 42.622579,
+      "measured": 42.613103,
+      "error_pct": 0.022236250385193546,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Spinus pinus",
+      "computed": -71.9856,
+      "measured": -71.969597,
+      "error_pct": 0.022236250385208895,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus strobus",
+      "computed": 44.64179,
+      "measured": 44.631866,
+      "error_pct": 0.0222362503852058,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus strobus",
+      "computed": -72.385939,
+      "measured": -72.369847,
+      "error_pct": 0.02223625038519228,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Quercus rubra",
+      "computed": 43.581772,
+      "measured": 43.572083,
+      "error_pct": 0.022236250385200725,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Quercus rubra",
+      "computed": -71.405071,
+      "measured": -71.389197,
+      "error_pct": 0.02223625038519013,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Spinus tristis",
+      "computed": 42.346942,
+      "measured": 42.337528,
+      "error_pct": 0.02223625038519715,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Spinus tristis",
+      "computed": -71.971017,
+      "measured": -71.955017,
+      "error_pct": 0.022236250385204187,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Betula alleghaniensis",
+      "computed": 44.641926,
+      "measured": 44.632002,
+      "error_pct": 0.02223625038519497,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Betula alleghaniensis",
+      "computed": -72.385442,
+      "measured": -72.36935,
+      "error_pct": 0.022236250385191565,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Acer saccharum",
+      "computed": 43.585282,
+      "measured": 43.575592,
+      "error_pct": 0.02223625038520561,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Acer saccharum",
+      "computed": -71.40019,
+      "measured": -71.384317,
+      "error_pct": 0.022236250385196568,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus rigida",
+      "computed": 42.690043,
+      "measured": 42.680552,
+      "error_pct": 0.022236250385205866,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus rigida",
+      "computed": -72.021478,
+      "measured": -72.005467,
+      "error_pct": 0.022236250385204583,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus rigida",
+      "computed": 42.690064,
+      "measured": 42.680573,
+      "error_pct": 0.02223625038519677,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus rigida",
+      "computed": -72.021423,
+      "measured": -72.005412,
+      "error_pct": 0.02223625038519191,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Zapatella quercusphellos",
+      "computed": 42.689213,
+      "measured": 42.679723,
+      "error_pct": 0.022236250385200967,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Zapatella quercusphellos",
+      "computed": -72.019949,
+      "measured": -72.003938,
+      "error_pct": 0.022236250385203722,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Pinus strobus",
+      "computed": 42.693609,
+      "measured": 42.684118,
+      "error_pct": 0.022236250385190927,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Pinus strobus",
+      "computed": -72.030758,
+      "measured": -72.014745,
+      "error_pct": 0.022236250385199927,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Betula populifolia",
+      "computed": 42.689722,
+      "measured": 42.680232,
+      "error_pct": 0.022236250385204118,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Betula populifolia",
+      "computed": -72.02598,
+      "measured": -72.009968,
+      "error_pct": 0.02223625038520384,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Betula populifolia",
+      "computed": 44.667613,
+      "measured": 44.657683,
+      "error_pct": 0.02223625038520205,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Betula populifolia",
+      "computed": -72.396901,
+      "measured": -72.380806,
+      "error_pct": 0.022236250385202983,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLatitude",
+      "name": "Spinus tristis",
+      "computed": 40.80365,
+      "measured": 40.794579,
+      "error_pct": 0.02223625038519346,
+      "source": "gbif_plant_proxy"
+    },
+    {
+      "lab": "botany_lab",
+      "property": "decimalLongitude",
+      "name": "Spinus tristis",
+      "computed": -73.97604,
+      "measured": -73.959594,
+      "error_pct": 0.022236250385190608,
+      "source": "gbif_plant_proxy"
+    }
+  ]
+}

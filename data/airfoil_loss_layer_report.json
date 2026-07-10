@@ -1,0 +1,472 @@
+{
+  "goal_rmse": 5.412721340832612,
+  "goal_hit": false,
+  "physics_frame": {
+    "scaffold": "FO-210 coherent ln-transport (balanced cell, not sin2/cos2 split)",
+    "observed_system": "chaotic \u2014 friction, entropy, poof/suction flyaway on readout",
+    "D_eff": 10.0,
+    "delta_psi_fluid": 0.9,
+    "phase_realized": 0.9559795795336434,
+    "phase_shadow": 0.04402042046635653,
+    "outgassing_split": {
+      "outgassing_visible_fraction": 0.9525704491574546,
+      "outgassing_shadow_fraction": 0.04742955084254535,
+      "phase_realized": 0.9559795795336434,
+      "phase_shadow": 0.04402042046635653,
+      "phase_bleed_cross": 0.08130033204097566
+    }
+  },
+  "baseline": {
+    "id": "L0_coherent_only",
+    "train_metrics": {
+      "rmse": 5.974529380734599,
+      "mae": 4.827429217295357,
+      "r2": 0.24663112667879272,
+      "bias": -0.8280883163773297,
+      "mean_flyaway_fraction": 0.03712195745589592,
+      "overpredict_rate": 0.43427620632279534
+    },
+    "test_metrics": {
+      "rmse": 5.9072145068053645,
+      "mae": 4.765682735496909,
+      "r2": 0.2768186918628135,
+      "bias": -0.8697720942535851,
+      "mean_flyaway_fraction": 0.037544911445730376,
+      "overpredict_rate": 0.4186046511627907
+    },
+    "loss_accounting": {
+      "train_survival_mean": 1.0,
+      "test_survival_mean": 1.0
+    }
+  },
+  "best": {
+    "id": "L11_highf_flyaway_only",
+    "train_metrics": {
+      "rmse": 5.97425725633462,
+      "mae": 4.827230291232082,
+      "r2": 0.24669975313309933,
+      "bias": -0.828466041040891,
+      "mean_flyaway_fraction": 0.037116770919201326,
+      "overpredict_rate": 0.43427620632279534
+    },
+    "test_metrics": {
+      "rmse": 5.906933285805747,
+      "mae": 4.765458161298311,
+      "r2": 0.2768875462879242,
+      "bias": -0.8701652212347604,
+      "mean_flyaway_fraction": 0.037539134236069964,
+      "overpredict_rate": 0.4186046511627907
+    },
+    "loss_accounting": {
+      "train_survival_mean": null,
+      "test_survival_mean": null
+    }
+  },
+  "ranked": [
+    {
+      "id": "L11_highf_flyaway_only",
+      "train_metrics": {
+        "rmse": 5.97425725633462,
+        "mae": 4.827230291232082,
+        "r2": 0.24669975313309933,
+        "bias": -0.828466041040891,
+        "mean_flyaway_fraction": 0.037116770919201326,
+        "overpredict_rate": 0.43427620632279534
+      },
+      "test_metrics": {
+        "rmse": 5.906933285805747,
+        "mae": 4.765458161298311,
+        "r2": 0.2768875462879242,
+        "bias": -0.8701652212347604,
+        "mean_flyaway_fraction": 0.037539134236069964,
+        "overpredict_rate": 0.4186046511627907
+      },
+      "loss_accounting": {
+        "train_survival_mean": null,
+        "test_survival_mean": null
+      }
+    },
+    {
+      "id": "L0_coherent_only",
+      "train_metrics": {
+        "rmse": 5.974529380734599,
+        "mae": 4.827429217295357,
+        "r2": 0.24663112667879272,
+        "bias": -0.8280883163773297,
+        "mean_flyaway_fraction": 0.03712195745589592,
+        "overpredict_rate": 0.43427620632279534
+      },
+      "test_metrics": {
+        "rmse": 5.9072145068053645,
+        "mae": 4.765682735496909,
+        "r2": 0.2768186918628135,
+        "bias": -0.8697720942535851,
+        "mean_flyaway_fraction": 0.037544911445730376,
+        "overpredict_rate": 0.4186046511627907
+      },
+      "loss_accounting": {
+        "train_survival_mean": 1.0,
+        "test_survival_mean": 1.0
+      }
+    },
+    {
+      "id": "L9_regime_signed_loss",
+      "train_metrics": {
+        "rmse": 6.135967661040845,
+        "mae": 4.957232386479929,
+        "r2": 0.20536737028682384,
+        "bias": -1.352623191310153,
+        "mean_flyaway_fraction": 0.03600533823491825,
+        "overpredict_rate": 0.4043261231281198
+      },
+      "test_metrics": {
+        "rmse": 6.049564955616817,
+        "mae": 4.8828513614709745,
+        "r2": 0.24154468710553634,
+        "bias": -1.425585164717589,
+        "mean_flyaway_fraction": 0.03505950043267851,
+        "overpredict_rate": 0.39867109634551495
+      },
+      "loss_accounting": {
+        "train_survival_mean": 0.9999896565768828,
+        "test_survival_mean": 0.9999889412915756
+      }
+    },
+    {
+      "id": "L1_coherence_survival",
+      "train_metrics": {
+        "rmse": 6.125804820360156,
+        "mae": 4.955923229911196,
+        "r2": 0.20799744836306633,
+        "bias": -1.5862786969526008,
+        "mean_flyaway_fraction": 0.03539975664353241,
+        "overpredict_rate": 0.3860232945091514
+      },
+      "test_metrics": {
+        "rmse": 6.065380948232896,
+        "mae": 4.915239799098386,
+        "r2": 0.23757368934410206,
+        "bias": -1.6279521717680039,
+        "mean_flyaway_fraction": 0.03521260032712517,
+        "overpredict_rate": 0.3787375415282392
+      },
+      "loss_accounting": {
+        "train_survival_mean": 0.9577022026205612,
+        "test_survival_mean": 0.9577022026205614
+      }
+    },
+    {
+      "id": "L6_golden_weak_only",
+      "train_metrics": {
+        "rmse": 6.190001140130912,
+        "mae": 4.99496714763557,
+        "r2": 0.1913106414836646,
+        "bias": -1.4578157769311304,
+        "mean_flyaway_fraction": 0.03544802709645745,
+        "overpredict_rate": 0.4034941763727121
+      },
+      "test_metrics": {
+        "rmse": 6.141366141039678,
+        "mae": 4.9527258979065145,
+        "r2": 0.2183511558730472,
+        "bias": -1.5061034013428465,
+        "mean_flyaway_fraction": 0.03442847412840098,
+        "overpredict_rate": 0.4053156146179402
+      },
+      "loss_accounting": {
+        "train_survival_mean": 0.9657155352094325,
+        "test_survival_mean": 0.9652752185162418
+      }
+    },
+    {
+      "id": "L10_chaos_reallocation",
+      "train_metrics": {
+        "rmse": 6.3544696806417456,
+        "mae": 5.079370145576081,
+        "r2": 0.1477659262830474,
+        "bias": 2.3335330317885443,
+        "mean_flyaway_fraction": 0.04638834661911884,
+        "overpredict_rate": 0.6281198003327787
+      },
+      "test_metrics": {
+        "rmse": 6.267526915647571,
+        "mae": 4.970328859143658,
+        "r2": 0.18590680436502194,
+        "bias": 2.288587190737958,
+        "mean_flyaway_fraction": 0.043886315810979244,
+        "overpredict_rate": 0.6511627906976745
+      },
+      "loss_accounting": {
+        "train_survival_mean": 1.1974613575164754,
+        "test_survival_mean": 1.1972420245112183
+      }
+    },
+    {
+      "id": "L7_subtractive_db_loss",
+      "train_metrics": {
+        "rmse": 6.723191841602378,
+        "mae": 5.460474592633333,
+        "r2": 0.04599362302364818,
+        "bias": -2.8828779595170198,
+        "mean_flyaway_fraction": 0.03405848314178721,
+        "overpredict_rate": 0.3069883527454243
+      },
+      "test_metrics": {
+        "rmse": 6.65593312968878,
+        "mae": 5.346745269952455,
+        "r2": 0.08187965843794343,
+        "bias": -3.028102133717055,
+        "mean_flyaway_fraction": 0.03285425440204571,
+        "overpredict_rate": 0.2857142857142857
+      },
+      "loss_accounting": {
+        "train_survival_mean": 0.9832298124565922,
+        "test_survival_mean": 0.98233967693124
+      }
+    },
+    {
+      "id": "L3_chaos_friction",
+      "train_metrics": {
+        "rmse": 17.544764204539344,
+        "mae": 13.908439259372862,
+        "r2": -5.496737835516604,
+        "bias": -13.144722882918998,
+        "mean_flyaway_fraction": 0.029899475250165414,
+        "overpredict_rate": 0.1048252911813644
+      },
+      "test_metrics": {
+        "rmse": 17.9740879728802,
+        "mae": 14.372773239194224,
+        "r2": -5.695383156359113,
+        "bias": -13.807121596300883,
+        "mean_flyaway_fraction": 0.024051215188238936,
+        "overpredict_rate": 0.09634551495016612
+      },
+      "loss_accounting": {
+        "train_survival_mean": 0.5681413702388215,
+        "test_survival_mean": 0.5522493329596992
+      }
+    },
+    {
+      "id": "L2_entropy_flyaway",
+      "train_metrics": {
+        "rmse": 19.22133034203484,
+        "mae": 10.895535786060892,
+        "r2": -6.797711364991686,
+        "bias": -8.99862690977752,
+        "mean_flyaway_fraction": 0.032132210308795046,
+        "overpredict_rate": 0.23876871880199668
+      },
+      "test_metrics": {
+        "rmse": 21.77346226530192,
+        "mae": 11.938472478044806,
+        "r2": -8.825093579291163,
+        "bias": -10.300883458046513,
+        "mean_flyaway_fraction": 0.03160708573395958,
+        "overpredict_rate": 0.20930232558139536
+      },
+      "loss_accounting": {
+        "train_survival_mean": 0.7475890438416841,
+        "test_survival_mean": 0.7314173753945276
+      }
+    },
+    {
+      "id": "L4_full_stack",
+      "train_metrics": {
+        "rmse": 29.567735633927573,
+        "mae": 20.65118436891481,
+        "r2": -17.451700780133233,
+        "bias": -20.159090724430108,
+        "mean_flyaway_fraction": 0.027474640891755272,
+        "overpredict_rate": 0.0740432612312812
+      },
+      "test_metrics": {
+        "rmse": 31.627701051343628,
+        "mae": 22.102756015528392,
+        "r2": -19.730842861792066,
+        "bias": -21.762493956176847,
+        "mean_flyaway_fraction": 0.02350702457873517,
+        "overpredict_rate": 0.059800664451827246
+      },
+      "loss_accounting": {
+        "train_survival_mean": 0.482819055965049,
+        "test_survival_mean": 0.46473336995842696
+      }
+    },
+    {
+      "id": "L8_bbn_depletion_readout",
+      "train_metrics": {
+        "rmse": 30.970306846997527,
+        "mae": 25.931445194869823,
+        "r2": -19.24376498443339,
+        "bias": -25.926314375575693,
+        "mean_flyaway_fraction": 0.009424674046454947,
+        "overpredict_rate": 0.0024958402662229617
+      },
+      "test_metrics": {
+        "rmse": 32.19750177553056,
+        "mae": 27.09797538040737,
+        "r2": -20.48454007576275,
+        "bias": -27.09797538040737,
+        "mean_flyaway_fraction": 0.0,
+        "overpredict_rate": 0.0
+      },
+      "loss_accounting": {
+        "train_survival_mean": 0.874437482515383,
+        "test_survival_mean": 0.8637075505022
+      }
+    },
+    {
+      "id": "L5_golden_gate_stack",
+      "train_metrics": {
+        "rmse": 30.290045777267846,
+        "mae": 21.23991006825424,
+        "r2": -18.36422541969984,
+        "bias": -20.755615910291603,
+        "mean_flyaway_fraction": 0.027355954235294497,
+        "overpredict_rate": 0.07321131447587355
+      },
+      "test_metrics": {
+        "rmse": 32.29869493558287,
+        "mae": 22.693563877253975,
+        "r2": -20.619799325170444,
+        "bias": -22.35819284941119,
+        "mean_flyaway_fraction": 0.023174874958994788,
+        "overpredict_rate": 0.059800664451827246
+      },
+      "loss_accounting": {
+        "train_survival_mean": 0.47576372981587883,
+        "test_survival_mean": 0.45758975355042925
+      }
+    }
+  ],
+  "regime_analysis": {
+    "baseline_coherent": {
+      "aoa_bins": {
+        "aoa_0_5": {
+          "count": 142,
+          "rmse": 4.8423438009569795,
+          "bias": 0.4028757888604356
+        },
+        "aoa_5_10": {
+          "count": 84,
+          "rmse": 6.144321261908566,
+          "bias": -3.3203893198945758
+        },
+        "aoa_10_15": {
+          "count": 35,
+          "rmse": 6.445685740854513,
+          "bias": 0.18605721553439633
+        },
+        "aoa_15_22": {
+          "count": 40,
+          "rmse": 7.981896354970824,
+          "bias": -1.165226551526765
+        }
+      },
+      "freq_bins": {
+        "f_0_1k": {
+          "count": 92,
+          "rmse": 6.366818260547209,
+          "bias": -0.631454809677768
+        },
+        "f_1k_4k": {
+          "count": 132,
+          "rmse": 5.5438433310112405,
+          "bias": -3.1273321393098086
+        },
+        "f_4k_8k": {
+          "count": 55,
+          "rmse": 4.978965382944943,
+          "bias": 1.1239187269346604
+        },
+        "f_8k_20k": {
+          "count": 22,
+          "rmse": 7.844320835713972,
+          "bias": 6.694761569432453
+        }
+      },
+      "delta_bins": {
+        "d_thin": {
+          "count": 152,
+          "rmse": 5.222107453642328,
+          "bias": -0.2078123073290911
+        },
+        "d_mid": {
+          "count": 59,
+          "rmse": 6.2723342124376895,
+          "bias": -3.3084895667811884
+        },
+        "d_thick": {
+          "count": 57,
+          "rmse": 7.075859534318872,
+          "bias": -2.041276101353817
+        },
+        "d_very_thick": {
+          "count": 33,
+          "rmse": 5.988109593274649,
+          "bias": 2.4648391685136484
+        }
+      }
+    },
+    "best_loss_layer": {
+      "variant": "L11_highf_flyaway_only",
+      "aoa_bins": {
+        "aoa_0_5": {
+          "count": 142,
+          "rmse": 4.8421005015902665,
+          "bias": 0.40268326961588324
+        },
+        "aoa_5_10": {
+          "count": 84,
+          "rmse": 6.144065257047486,
+          "bias": -3.3205998217378143
+        },
+        "aoa_10_15": {
+          "count": 35,
+          "rmse": 6.444874329265688,
+          "bias": 0.18409032077039253
+        },
+        "aoa_15_22": {
+          "count": 40,
+          "rmse": 7.981841360840206,
+          "bias": -1.1653383019526422
+        }
+      },
+      "freq_bins": {
+        "f_0_1k": {
+          "count": 92,
+          "rmse": 6.366818260547209,
+          "bias": -0.631454809677768
+        },
+        "f_1k_4k": {
+          "count": 132,
+          "rmse": 5.5438433310112405,
+          "bias": -3.1273321393098086
+        },
+        "f_4k_8k": {
+          "count": 55,
+          "rmse": 4.9788224164047525,
+          "bias": 1.1236303472142297
+        },
+        "f_8k_20k": {
+          "count": 22,
+          "rmse": 7.841649836764347,
+          "bias": 6.690103826854723
+        }
+      }
+    },
+    "loss_interpretation": {
+      "global_shadow_fraction": 0.04742955084254535,
+      "overpredict_regimes": [
+        "high_frequency_8k_20k (+6.7 dB bias \u2014 radiated coherence flies to entropy)",
+        "very_thick_boundary_layer (+2.5 dB \u2014 separation adds excess scaffold)"
+      ],
+      "underpredict_regimes": [
+        "mid_aoa_5_10 (-3.3 dB \u2014 turbulent bleed-back not captured)",
+        "mid_frequency_1k_4k (-3.1 dB \u2014 cascade reinjection)",
+        "mid_thick_boundary_layer (-3.3 dB \u2014 viscous routing loss)"
+      ]
+    }
+  }
+}

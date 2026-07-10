@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "Published behavioral economics / neuroeconomics anchors",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "loss_aversion_lambda", "property": "loss_aversion_coefficient", "measured": 2.25, "study": "Kahneman-Tversky"},
+    {"name": "discount_rate_annual", "property": "hyperbolic_discount_rate", "measured": 0.10, "study": "intertemporal choice"},
+    {"name": "risk_aversion_crra", "property": "risk_aversion_coefficient", "measured": 2.0, "study": "CRRA utility"},
+    {"name": "endowment_effect_pct", "property": "wta_wtp_ratio", "measured": 2.0, "study": "mug experiment"},
+    {"name": "prospect_theory_alpha", "property": "probability_weighting_alpha", "measured": 0.88, "study": "PT parameter"},
+    {"name": "prospect_theory_beta", "property": "value_function_beta", "measured": 0.88, "study": "PT parameter"},
+    {"name": "ultimatum_accept_threshold", "property": "minimum_accept_offer_pct", "measured": 0.20, "study": "ultimatum game"},
+    {"name": "trust_game_return", "property": "trust_return_multiplier", "measured": 3.0, "study": "trust game"},
+    {"name": "dictator_give_mean", "property": "dictator_give_fraction", "measured": 0.28, "study": "dictator game"},
+    {"name": "public_goods_contribution", "property": "contribution_fraction", "measured": 0.45, "study": "PGG meta"},
+    {"name": "anchoring_adjustment_pct", "property": "anchoring_bias_pct", "measured": 0.15, "study": "anchoring meta"},
+    {"name": "framing_effect_pct", "property": "framing_shift_pct", "measured": 0.30, "study": "Asian disease"},
+    {"name": "present_bias_beta", "property": "present_bias_beta", "measured": 0.7, "study": "quasi-hyperbolic"},
+    {"name": "altruism_transfer_pct", "property": "altruistic_transfer_pct", "measured": 0.25, "study": "charitable giving"},
+    {"name": "probability_discount", "property": "probability_discount_rate", "measured": 0.15, "study": "probability weighting"},
+    {"name": "ambiguity_aversion", "property": "ambiguity_premium_pct", "measured": 0.12, "study": "Ellsberg"},
+    {"name": "mental_accounting_sunk", "property": "sunk_cost_persistence_pct", "measured": 0.35, "study": "sunk cost"},
+    {"name": "social_preference_inequity", "property": "inequity_aversion_alpha", "measured": 0.5, "study": "Fehr-Schmidt"},
+    {"name": "neural_reward_prediction_error", "property": "rpe_bold_signal", "measured": 1.5, "study": "fMRI RPE"},
+    {"name": "striatal_bold_gain", "property": "striatal_activation_z", "measured": 2.8, "study": "gain anticipation fMRI"}
+  ]
+}

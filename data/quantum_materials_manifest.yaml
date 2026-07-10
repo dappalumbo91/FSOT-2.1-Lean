@@ -1,8 +1,27 @@
 # Tier 27 — condensed-matter SMILES depth lab.
-version: "1.0"
-updated: "2026-07-03"
+version: "1.1"
+updated: "2026-07-09"
+
+source_repo: vendor/smiles
+domain_doc: vendor/quantum_materials/Quantum_Materials_Domain.md
 
 D_eff: 16
+maps_to_lean: [material, quantum]
+
+sections:
+  - "§29 Dielectric εr"
+  - "§33 Debye Temps"
+  - "§38 Resistivity ρ"
+  - "§52 ¹³C NMR δ"
+  - "§63 Lattice Param"
+  - "§13 χm Magnetic"
+  - "§19 NMR δ"
+  - "§31 Band Gaps"
+  - "§55 μeff Magnetic"
+  - "§75 Superconducting Tc"
+  - "§76 Magnetic Ordering T"
+  - "§4b Lattice Energies"
+  - "§18 Crystal Field Δo"
 
 build:
   benchmark: scripts/build_quantum_materials_benchmark.py
@@ -11,9 +30,12 @@ build:
 lean:
   generator: scripts/gen_quantum_materials_lean.py
   module: FSOT.Formal.QuantumMaterialsPriors
-  lean_domain: material
-  sign_theorem: material_raw_S_positive
+  lean_domains: [material, quantum]
+  sign_theorems: [material_raw_S_positive]
 
 verification:
   min_records: 50
-  max_median_error_pct: 5.0
+  min_section_count: 10
+  max_pooled_median_error_pct: 2.0
+  max_headline_median_error_pct: 5.0
+  min_beats_sota_headlines: 4

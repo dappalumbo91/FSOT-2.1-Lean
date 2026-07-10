@@ -42,6 +42,8 @@ try:
 except ImportError:
     A_BLEED = C_COSM = C_EFF = ETA_EFF = G_CAT = P_BASE = P_NEW = P_VAR = PSI_CON = S_COSM = S_QUANT = THETA_S = None  # type: ignore
 
+from fsot_paths import manifest_path as repo_path, rel_repo_path, thesis_root  # noqa: E402
+
 MANIFEST_PATH = ROOT / "data" / "cosmology_extended_manifest.yaml"
 OUTPUT = ROOT / "data" / "cosmology_extended_benchmark.json"
 REGISTRY = ROOT / "data" / "lab_registry.json"
@@ -225,13 +227,12 @@ def build_benchmark(manifest_path: Path = MANIFEST_PATH) -> dict:
         raise RuntimeError("PyYAML required")
     spec = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
     src = spec["source"]
-    cos_root = Path(src["cosmology_root"])
-    db_path = cos_root / src["skeleton_database"]
+    db_path = repo_path(src["skeleton_database"])
     if not db_path.exists():
         raise FileNotFoundError(f"Skeleton database missing: {db_path}")
 
     skeleton = _skeleton_rows(db_path)
-    thesis = _thesis_cosmo_rows(Path(src["thesis_root"]), list(src["thesis_cosmology_categories"]))
+    thesis = _thesis_cosmo_rows(thesis_root(), list(src["thesis_cosmology_categories"]))
     registry = json.loads(REGISTRY.read_text(encoding="utf-8")) if REGISTRY.exists() else {}
     lambda_rows = _lambda_cdm_rows(registry)
 
@@ -243,7 +244,7 @@ def build_benchmark(manifest_path: Path = MANIFEST_PATH) -> dict:
     return {
         "benchmark_version": "1.0",
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "source_root": str(cos_root),
+        "source_root": rel_repo_path(db_path.parent),
         "skeleton_derivation_count": len(skeleton),
         "lambda_cdm_count": len(lambda_rows),
         "thesis_cosmology_wave_count": len(thesis),

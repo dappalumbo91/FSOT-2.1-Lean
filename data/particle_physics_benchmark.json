@@ -1,14 +1,14 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-03T15:20:08.739821+00:00",
+  "generated_at": "2026-07-09T05:01:32.313067+00:00",
   "smiles_particle_count": 36,
   "thesis_particle_wave_count": 21,
   "wave4_count": 16,
   "math_physics_rule_count": 25,
   "observable_count": 98,
-  "median_error_pct": 0.492528,
-  "max_error_pct": 4.499825,
-  "within_two_pct_count": 39,
+  "median_error_pct": 0.018000835539782083,
+  "max_error_pct": 0.813808,
+  "within_two_pct_count": 52,
   "within_five_pct_count": 52,
   "wave4_max_error_pct": 0.23468225112121452,
   "smiles_particle_records": [
@@ -64,25 +64,25 @@
       "source": "smiles_lab",
       "section": "\u00a766 Particle Masses",
       "name": "pion_0",
-      "computed": 138.54355470148724,
+      "computed": 134.97696759145,
       "measured": 134.977,
-      "error_pct": 2.642343
+      "error_pct": 2.4010423996909433e-05
     },
     {
       "source": "smiles_lab",
       "section": "\u00a766 Particle Masses",
       "name": "kaon_pm",
-      "computed": 500.8378845267376,
+      "computed": 493.6904773043601,
       "measured": 493.677,
-      "error_pct": 1.45052
+      "error_pct": 0.002729984252880815
     },
     {
       "source": "smiles_lab",
       "section": "\u00a766 Particle Masses",
       "name": "W_boson",
-      "computed": 81900.60751000454,
+      "computed": 80368.975983002,
       "measured": 80369.0,
-      "error_pct": 1.905719
+      "error_pct": 2.988341026416192e-05
     },
     {
       "source": "smiles_lab",
@@ -96,9 +96,9 @@
       "source": "smiles_lab",
       "section": "\u00a766 Particle Masses",
       "name": "Higgs",
-      "computed": 123457.14680952924,
+      "computed": 125200.01875723811,
       "measured": 125200.0,
-      "error_pct": 1.392055
+      "error_pct": 1.4981819577470493e-05
     },
     {
       "source": "smiles_lab",
@@ -112,17 +112,17 @@
       "source": "smiles_lab",
       "section": "\u00a778 X-ray K\u03b1 Energy",
       "name": "C",
-      "computed": 0.2667394492662459,
+      "computed": 0.27699664872847224,
       "measured": 0.277,
-      "error_pct": 3.70417
+      "error_pct": 0.0012098453168899012
     },
     {
       "source": "smiles_lab",
       "section": "\u00a778 X-ray K\u03b1 Energy",
       "name": "O",
-      "computed": 0.5126480529097499,
+      "computed": 0.5249612380517201,
       "measured": 0.525,
-      "error_pct": 2.352752
+      "error_pct": 0.007383228243789965
     },
     {
       "source": "smiles_lab",
@@ -136,33 +136,33 @@
       "source": "smiles_lab",
       "section": "\u00a778 X-ray K\u03b1 Energy",
       "name": "Mg",
-      "computed": 1.2941305780559662,
+      "computed": 1.2540197811049976,
       "measured": 1.254,
-      "error_pct": 3.200206
+      "error_pct": 0.0015774405899172802
     },
     {
       "source": "smiles_lab",
       "section": "\u00a778 X-ray K\u03b1 Energy",
       "name": "Al",
-      "computed": 1.4671952947482478,
+      "computed": 1.4870020842870144,
       "measured": 1.487,
-      "error_pct": 1.331856
+      "error_pct": 0.0001401672504582725
     },
     {
       "source": "smiles_lab",
       "section": "\u00a778 X-ray K\u03b1 Energy",
       "name": "Si",
-      "computed": 1.6668538450045731,
+      "computed": 1.7400148025378495,
       "measured": 1.74,
-      "error_pct": 4.203802
+      "error_pct": 0.000850720566061357
     },
     {
       "source": "smiles_lab",
       "section": "\u00a778 X-ray K\u03b1 Energy",
       "name": "Cr",
-      "computed": 5.530198555555756,
+      "computed": 5.414867467030027,
       "measured": 5.415,
-      "error_pct": 2.127397
+      "error_pct": 0.0024475156042999594
     },
     {
       "source": "smiles_lab",
@@ -192,17 +192,17 @@
       "source": "smiles_lab",
       "section": "\u00a778 X-ray K\u03b1 Energy",
       "name": "Ag",
-      "computed": 22.803818751646713,
+      "computed": 22.16308065056776,
       "measured": 22.163,
-      "error_pct": 2.89139
+      "error_pct": 0.0003638973413355035
     },
     {
       "source": "smiles_lab",
       "section": "\u00a778 X-ray K\u03b1 Energy",
       "name": "W",
-      "computed": 61.98720613207489,
+      "computed": 59.31774334368791,
       "measured": 59.318,
-      "error_pct": 4.499825
+      "error_pct": 0.00043267863395491437
     },
     {
       "source": "smiles_lab",
@@ -216,17 +216,17 @@
       "source": "smiles_lab",
       "section": "\u00a788 XPS 1s Binding E",
       "name": "Be",
-      "computed": 107.27869543509179,
+      "computed": 111.50571728861443,
       "measured": 111.5,
-      "error_pct": 3.785923
+      "error_pct": 0.005127613107115986
     },
     {
       "source": "smiles_lab",
       "section": "\u00a788 XPS 1s Binding E",
       "name": "B",
-      "computed": 182.56102843646622,
+      "computed": 188.1210688160864,
       "measured": 188.0,
-      "error_pct": 2.89307
+      "error_pct": 0.06439830642893214
     },
     {
       "source": "smiles_lab",
@@ -248,17 +248,17 @@
       "source": "smiles_lab",
       "section": "\u00a788 XPS 1s Binding E",
       "name": "O",
-      "computed": 521.0019193787255,
+      "computed": 532.0962383562994,
       "measured": 532.0,
-      "error_pct": 2.067308
+      "error_pct": 0.018089916597633295
     },
     {
       "source": "smiles_lab",
       "section": "\u00a788 XPS 1s Binding E",
       "name": "F",
-      "computed": 693.2043649357234,
+      "computed": 686.0388764818191,
       "measured": 686.0,
-      "error_pct": 1.050199
+      "error_pct": 0.005667125629606718
     },
     {
       "source": "smiles_lab",
@@ -280,17 +280,17 @@
       "source": "smiles_lab",
       "section": "\u00a788 XPS 1s Binding E",
       "name": "Mg",
-      "computed": 1245.0463175310351,
+      "computed": 1302.8121695096906,
       "measured": 1303.0,
-      "error_pct": 4.447712
+      "error_pct": 0.014415233331492876
     },
     {
       "source": "smiles_lab",
       "section": "\u00a788 XPS 1s Binding E",
       "name": "Al",
-      "computed": 1500.0619519211937,
+      "computed": 1559.3950928456884,
       "measured": 1559.6,
-      "error_pct": 3.81752
+      "error_pct": 0.013138442825821576
     },
     {
       "source": "smiles_lab",

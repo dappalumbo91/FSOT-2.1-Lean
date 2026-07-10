@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "source": "Food microbiology literature anchors",
+  "updated": "2026-07-09",
+  "fermentations": [
+    {
+      "name": "yogurt_lactobacillus",
+      "optimal_temp_C": 42.0,
+      "optimal_ph": 4.5,
+      "lag_phase_h": 2.0
+    },
+    {
+      "name": "sourdough_starter",
+      "optimal_temp_C": 27.0,
+      "optimal_ph": 4.2,
+      "lag_phase_h": 8.0
+    },
+    {
+      "name": "kimchi_lacto",
+      "optimal_temp_C": 18.0,
+      "optimal_ph": 4.4,
+      "lag_phase_h": 12.0
+    },
+    {
+      "name": "kombucha",
+      "optimal_temp_C": 26.0,
+      "optimal_ph": 3.2,
+      "lag_phase_h": 3.0
+    },
+    {
+      "name": "beer_ale_fermentation",
+      "optimal_temp_C": 20.0,
+      "optimal_ph": 4.3,
+      "lag_phase_h": 6.0
+    },
+    {
+      "name": "wine_primary",
+      "optimal_temp_C": 22.0,
+      "optimal_ph": 3.4,
+      "lag_phase_h": 24.0
+    }
+  ]
+}

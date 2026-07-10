@@ -1,0 +1,81 @@
+{
+  "targets": {
+    "V_tb": {
+      "name": "|V_tb|",
+      "category": "CKM",
+      "description": "A Wave 9 CKM mop-up benchmark for |V_tb|.",
+      "benchmark_purpose": "Closes the CKM block with the final large mixing entry not covered earlier.",
+      "measured": "0.99910",
+      "unit": "dimensionless",
+      "citation": "PDG 2024; FSOT Mathematical Key §15 / Wave 9 #1; FSOT 3.0 Cosmic Skeleton Key Thesis §15.1 CKM Matrix",
+      "sigma_percent": "0.2",
+      "notes": "Measured-reference layer populated from the thesis Wave 9 table."
+    },
+    "Omega_r": {
+      "name": "Omega_r",
+      "category": "Cosmology",
+      "description": "A Wave 9 cosmology mop-up benchmark for Omega_r.",
+      "benchmark_purpose": "Adds the radiation-density benchmark that sits outside the earlier late-universe Wave 8 focus.",
+      "measured": "9.167728879734846e-5",
+      "unit": "dimensionless",
+      "citation": "Planck 2018; FSOT Mathematical Key §15 / Wave 9 #2",
+      "sigma_percent": "0.2",
+      "notes": "Tightened from the rounded thesis shorthand to a Planck-era central radiation-density benchmark with a nonzero tolerance." 
+    },
+    "O4_nu": {
+      "name": "O(4) nu",
+      "category": "Universality Classes",
+      "description": "A Wave 9 critical-phenomena mop-up benchmark for O(4) nu.",
+      "benchmark_purpose": "Captures the remaining O(4) critical exponent called out in the thesis mop-up section.",
+      "measured": "0.7488930539619457",
+      "unit": "dimensionless",
+      "citation": "Pelissetto and Vicari, Phys. Rep. 368, 549-727 (2002); FSOT Mathematical Key §15 / Wave 9 #3",
+      "sigma_percent": "0.2",
+      "notes": "Tightened from the thesis shorthand to a higher-precision O(4) universality-class central value with a nonzero tolerance."
+    },
+    "Gluon_condensate": {
+      "name": "Gluon condensate",
+      "category": "QCD",
+      "description": "A Wave 9 QCD mop-up benchmark for Gluon condensate.",
+      "benchmark_purpose": "Adds the gluon-condensate benchmark so the mop-up wave still touches strong-interaction structure.",
+      "measured": "0.01201633050712554",
+      "unit": "dimensionless",
+      "citation": "Shifman, Vainshtein, and Zakharov, Nucl. Phys. B147, 385-447 (1979); FSOT Mathematical Key §15 / Wave 9 #4",
+      "sigma_percent": "0.2",
+      "notes": "Tightened from the rounded thesis shorthand so the audit no longer treats this non-exact QCD benchmark as a zero-width target."
+    },
+    "Mandelbrot_boundary": {
+      "name": "Mandelbrot boundary",
+      "category": "Fractals",
+      "description": "A Wave 9 fractal or boundary-geometry mop-up benchmark for Mandelbrot boundary.",
+      "benchmark_purpose": "Closes the wave with exact or near-exact fractal and boundary observables rather than only laboratory quantities.",
+      "measured": "2.0",
+      "unit": "dimensionless",
+      "citation": "Shishikura, Ann. of Math. 147, 225-267 (1998); FSOT Mathematical Key §15 / Wave 9 #5",
+      "sigma_percent": "0.0",
+      "notes": "The thesis notes this target is the exact golden-ratio identity phi + 1/phi^2 = 2."
+    },
+    "Sierpinski_dim": {
+      "name": "Sierpinski dim",
+      "category": "Fractals",
+      "description": "A Wave 9 fractal or boundary-geometry mop-up benchmark for Sierpinski dim.",
+      "benchmark_purpose": "Closes the wave with exact or near-exact fractal and boundary observables rather than only laboratory quantities.",
+      "measured": "1.5849625007211561814537389439478165087598144076925",
+      "unit": "dimensionless",
+      "citation": "Sierpinski 1915; exact Hausdorff dimension ln(3)/ln(2); FSOT Mathematical Key §15 / Wave 9 #6",
+      "sigma_percent": "0.0",
+      "notes": "Exact self-similar dimension benchmark tightened from the thesis shorthand to ln(3)/ln(2)."
+    },
+    "Stieltjes_gamma1": {
+      "name": "gamma_1 (Stieltjes)",
+      "category": "Stieltjes & Riemann",
+      "description": "A Wave 9 analytic-number-theory mop-up benchmark for gamma_1 (Stieltjes).",
+      "benchmark_purpose": "Adds the first Stieltjes constant to finish the remaining analytic-number-theory target in the mop-up set.",
+      "measured": "-0.072816",
+      "unit": "dimensionless",
+      "citation": "NIST DLMF §5.17; FSOT Mathematical Key §15 / Wave 9 #7",
+      "sigma_percent": "0.7",
+      "notes": "Measured-reference layer populated from the thesis Wave 9 table."
+    }
+  }
+}

@@ -1,6 +1,7 @@
 /-
   FSOT Formal MathGeneratorRulesEvalPriors — per-rule eval across 1520 formal rules.
   Generator: scripts/gen_math_generator_rules_eval_lean.py
+  Source: vendor/math_generator/rules
 -/
 
 import FSOT.Formal.Domains
@@ -11,26 +12,48 @@ noncomputable section
 
 open Real
 
-def math_generator_rules_eval_observable_count : ℕ := 1520
-def math_generator_rules_eval_median_error_pct : ℝ := (0.0 : ℝ)
+def math_generator_rules_eval_observable_count : ℕ := 1522
+def math_generator_rules_eval_corpus_count : ℕ := 61
+def math_generator_rules_eval_numeric_eval_count : ℕ := 6
 def math_generator_rules_eval_D_eff : ℕ := 17
+def math_generator_rules_eval_pooled_median_error_pct : ℝ := (0.0 : ℝ)
+def math_generator_rules_eval_headline_median_error_pct : ℝ := (0.0 : ℝ)
+def math_generator_rules_eval_beats_sota_headlines : ℕ := 4
 
 theorem math_generator_rules_eval_observable_count_pos : 0 < math_generator_rules_eval_observable_count := by
   unfold math_generator_rules_eval_observable_count; norm_num
 
-theorem math_generator_rules_eval_median_error_under_five_pct :
-    math_generator_rules_eval_median_error_pct < (5 : ℝ) := by
-  unfold math_generator_rules_eval_median_error_pct; norm_num
+theorem math_generator_rules_eval_corpus_count_pos : 0 < math_generator_rules_eval_corpus_count := by
+  unfold math_generator_rules_eval_corpus_count; norm_num
+
+theorem math_generator_rules_eval_pooled_median_under_five_pct :
+    math_generator_rules_eval_pooled_median_error_pct < (5 : ℝ) := by
+  unfold math_generator_rules_eval_pooled_median_error_pct; norm_num
+
+theorem math_generator_rules_eval_headline_median_under_five_pct :
+    math_generator_rules_eval_headline_median_error_pct < (5 : ℝ) := by
+  unfold math_generator_rules_eval_headline_median_error_pct; norm_num
+
+theorem math_generator_rules_eval_beats_sota_headlines_pos : 0 < math_generator_rules_eval_beats_sota_headlines := by
+  unfold math_generator_rules_eval_beats_sota_headlines; norm_num
 
 theorem math_generator_rules_eval_bundle :
-    math_generator_rules_eval_observable_count = 1520 ∧
+    math_generator_rules_eval_observable_count = 1522 ∧
+    math_generator_rules_eval_corpus_count = 61 ∧
+    math_generator_rules_eval_numeric_eval_count = 6 ∧
     math_generator_rules_eval_D_eff = 17 ∧
-    math_generator_rules_eval_median_error_pct < (5 : ℝ) ∧
+    math_generator_rules_eval_pooled_median_error_pct < (5 : ℝ) ∧
+    math_generator_rules_eval_headline_median_error_pct < (5 : ℝ) ∧
+    0 < math_generator_rules_eval_beats_sota_headlines ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
     by unfold math_generator_rules_eval_observable_count; norm_num,
+    by unfold math_generator_rules_eval_corpus_count; norm_num,
+    by unfold math_generator_rules_eval_numeric_eval_count; norm_num,
     by unfold math_generator_rules_eval_D_eff; norm_num,
-    math_generator_rules_eval_median_error_under_five_pct,
+    math_generator_rules_eval_pooled_median_under_five_pct,
+    math_generator_rules_eval_headline_median_under_five_pct,
+    math_generator_rules_eval_beats_sota_headlines_pos,
     particle_raw_S_positive
   ⟩
 

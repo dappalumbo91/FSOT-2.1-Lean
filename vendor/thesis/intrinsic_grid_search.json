@@ -1,0 +1,302 @@
+[
+    {
+        "osc":  "p_new",
+        "recovery":  "(c_eff / phi) + p_base",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.763968608085996,
+        "mae":  5.4295227349871755,
+        "r2":  0.096185800816425138,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + ((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "(c_eff / phi) + p_base",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.7659007067041737,
+        "mae":  5.4303214537866955,
+        "r2":  0.0956693857730967,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + ((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "(c_eff / phi) + p_base",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.7800412631668383,
+        "mae":  5.4422482844607991,
+        "r2":  0.09188538074958276,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + ((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "(c_eff / phi) + p_base",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.7820203565300057,
+        "mae":  5.4430470098409467,
+        "r2":  0.0913551462410307,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + ((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "c_eff / phi",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.7906041594371533,
+        "mae":  5.4650759593601821,
+        "r2":  0.08905360074083557,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "c_eff / phi",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.7921899939444161,
+        "mae":  5.4658746956341053,
+        "r2":  0.0886280778027192,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "(c_eff / phi) + p_base",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.79861741650327,
+        "mae":  5.4468820743390651,
+        "r2":  0.086902406391605069,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + ((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "(c_eff / phi) + p_base",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.8008143007507549,
+        "mae":  5.4477568673735277,
+        "r2":  0.086312199972171544,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + ((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "(c_eff / pi) + p_base",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.8028212525775063,
+        "mae":  5.4784499429330751,
+        "r2":  0.085772853391315129,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + ((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "(c_eff / pi) + p_base",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.804283680853322,
+        "mae":  5.4790965399373128,
+        "r2":  0.0853797413899402,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + ((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "c_eff / phi",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.8062867395905373,
+        "mae":  5.477801494590949,
+        "r2":  0.084841166619775366,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "c_eff / phi",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.8079202979138076,
+        "mae":  5.4786002374547813,
+        "r2":  0.084401824350528343,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "(c_eff / phi) + p_base",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.8153158005482579,
+        "mae":  5.4596753867752756,
+        "r2":  0.0824114994673858,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + ((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "(c_eff / phi) + p_base",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.8175586097211553,
+        "mae":  5.4605631582632022,
+        "r2":  0.0818074733035764,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + ((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "(c_eff / pi) + p_base",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.8183600926360466,
+        "mae":  5.4910891858486872,
+        "r2":  0.081591572297788684,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + ((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "c_eff / phi",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.8198341669583131,
+        "mae":  5.4811878299100938,
+        "r2":  0.0811944244197691,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "(c_eff / pi) + p_base",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.8198704755281465,
+        "mae":  5.4917357894018179,
+        "r2":  0.081184641013195558,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + ((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "c_eff / phi",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.8216903150771211,
+        "mae":  5.4819865755980057,
+        "r2":  0.080694215387456247,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "(c_eff / pi) + p_base",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.8300595129677273,
+        "mae":  5.4939328883968166,
+        "r2":  0.078437129157203689,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + ((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "(c_eff / pi) + p_base",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.8317940084799584,
+        "mae":  5.4947316404779274,
+        "r2":  0.077969007430396364,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + ((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "c_eff / phi",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.8361580515904707,
+        "mae":  5.4939134665101266,
+        "r2":  0.076790673259133468,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "c_eff / phi",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.8380609201849083,
+        "mae":  5.4947122187219293,
+        "r2":  0.076276644613540223,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "c_eff / pi",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.846075948410455,
+        "mae":  5.5235957149639976,
+        "r2":  0.074109946233182122,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "(c_eff / pi) + p_base",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.8462449417763942,
+        "mae":  5.50665852014502,
+        "r2":  0.074064235023124314,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + ((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "c_eff / pi",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.8471838068260427,
+        "mae":  5.5241662643010718,
+        "r2":  0.073810259787537191,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "(c_eff / pi) + p_base",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.848026414659885,
+        "mae":  5.5074572787531828,
+        "r2":  0.0735822937298739,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + ((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "c_eff / pi",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.8611880067960991,
+        "mae":  5.5362271506147946,
+        "r2":  0.0700178070943347,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "p_new",
+        "recovery":  "c_eff / pi",
+        "gate":  "1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.8623443942850129,
+        "mae":  5.5367977065048839,
+        "r2":  0.069704301503882626,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new) * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "c_eff / pi",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "((phi^8 * e^2) + (pi - a_in))",
+        "rmse":  6.8674065086128309,
+        "mae":  5.5356064233011013,
+        "r2":  0.068331301303324765,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "osc":  "c_eff / pi",
+        "recovery":  "c_eff / pi",
+        "gate":  "1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))",
+        "frame":  "(e^6 - e^4)",
+        "rmse":  6.8687908169980343,
+        "mae":  5.5361769796671627,
+        "r2":  0.067955658248388118,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    }
+]

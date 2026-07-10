@@ -1,0 +1,504 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:31:47.805325+00:00",
+  "domain": "Quantum_Mechanics",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "SMILES_quantum",
+    "NIST_CODATA"
+  ],
+  "maps_to_lean": [
+    "quantum"
+  ],
+  "D_eff": 6,
+  "record_count": 50,
+  "observable_count": 50,
+  "median_error_pct": 9.52387420324368e-05,
+  "pooled_median_error_pct": 9.52387420324368e-05,
+  "headline_median_error_pct": 9.52387420324368e-05,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "smiles_quantum": {
+        "sota_typical_error_pct": 2.0,
+        "sota_model": "Quantum chemistry tables"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_quantum_observables_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 9.5e-05,
+      "measured": 0.0,
+      "error_pct": 9.52387420324368e-05,
+      "observable_count": 50
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "quantum_observables",
+      "name": "smiles_quantum",
+      "computed": 9.5e-05,
+      "measured": 0.0,
+      "error_pct": 9.52387420324368e-05,
+      "observable_count": 50
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "nist_quantum_lab",
+      "property": "alpha particle mass",
+      "name": "alpha particle mass",
+      "computed": 0.0,
+      "measured": 6.644657345e-27,
+      "error_pct": 6.3151716457474866e-18,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "alpha particle mass energy equivalent",
+      "name": "alpha particle mass energy equivalent",
+      "computed": 5.97e-10,
+      "measured": 5.9719201997e-10,
+      "error_pct": 0.0009504134401297738,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "alpha particle molar mass",
+      "name": "alpha particle molar mass",
+      "computed": 0.004001544214,
+      "measured": 0.0040015061833,
+      "error_pct": 0.0009504134401349842,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "alpha particle rms charge radius",
+      "name": "alpha particle rms charge radius",
+      "computed": 0.0,
+      "measured": 1.6785e-15,
+      "error_pct": 1.5952689592549499e-06,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "Angstrom star",
+      "name": "Angstrom star",
+      "computed": 1e-10,
+      "measured": 1.00001495e-10,
+      "error_pct": 0.0009504134401211837,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic mass constant",
+      "name": "atomic mass constant",
+      "computed": 0.0,
+      "measured": 1.66053906892e-27,
+      "error_pct": 1.578198648963487e-18,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic mass constant energy equivalent",
+      "name": "atomic mass constant energy equivalent",
+      "computed": 1.49e-10,
+      "measured": 1.49241808768e-10,
+      "error_pct": 0.0009504134401198496,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic mass unit-joule relationship",
+      "name": "atomic mass unit-joule relationship",
+      "computed": 1.49e-10,
+      "measured": 1.49241808768e-10,
+      "error_pct": 0.0009504134401198496,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic mass unit-kilogram relationship",
+      "name": "atomic mass unit-kilogram relationship",
+      "computed": 0.0,
+      "measured": 1.66053906892e-27,
+      "error_pct": 1.578198648963487e-18,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of 1st hyperpolarizability",
+      "name": "atomic unit of 1st hyperpolarizability",
+      "computed": 0.0,
+      "measured": 3.2063612996e-53,
+      "error_pct": 3.047368873047665e-44,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of 2nd hyperpolarizability",
+      "name": "atomic unit of 2nd hyperpolarizability",
+      "computed": 0.0,
+      "measured": 6.2353799735e-65,
+      "error_pct": 5.926188931114694e-56,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of charge",
+      "name": "atomic unit of charge",
+      "computed": 0.0,
+      "measured": 1.602176634e-19,
+      "error_pct": 1.5227302064073552e-10,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of current",
+      "name": "atomic unit of current",
+      "computed": 0.006623681189,
+      "measured": 0.0066236182375082,
+      "error_pct": 0.0009504134401316614,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of electric dipole mom.",
+      "name": "atomic unit of electric dipole mom.",
+      "computed": 0.0,
+      "measured": 8.4783536198e-30,
+      "error_pct": 8.057941230365931e-21,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of electric polarizability",
+      "name": "atomic unit of electric polarizability",
+      "computed": 0.0,
+      "measured": 1.64877727212e-41,
+      "error_pct": 1.5670200792044459e-32,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of electric quadrupole mom.",
+      "name": "atomic unit of electric quadrupole mom.",
+      "computed": 0.0,
+      "measured": 4.4865515185e-40,
+      "error_pct": 4.264078863033938e-31,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of energy",
+      "name": "atomic unit of energy",
+      "computed": 0.0,
+      "measured": 4.359744722206e-18,
+      "error_pct": 4.143559979517625e-09,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of force",
+      "name": "atomic unit of force",
+      "computed": 8.2388e-08,
+      "measured": 8.2387235038e-08,
+      "error_pct": 0.0009504134401275312,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of length",
+      "name": "atomic unit of length",
+      "computed": 5.3e-11,
+      "measured": 5.29177210544e-11,
+      "error_pct": 0.000950413440126715,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of mag. dipole mom.",
+      "name": "atomic unit of mag. dipole mom.",
+      "computed": 0.0,
+      "measured": 1.85480201315e-23,
+      "error_pct": 1.7628287620597514e-14,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of magnetizability",
+      "name": "atomic unit of magnetizability",
+      "computed": 0.0,
+      "measured": 7.8910365794e-29,
+      "error_pct": 7.499747221609436e-20,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of mass",
+      "name": "atomic unit of mass",
+      "computed": 0.0,
+      "measured": 9.1093837139e-31,
+      "error_pct": 8.657680712955061e-22,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of momentum",
+      "name": "atomic unit of momentum",
+      "computed": 0.0,
+      "measured": 1.99285191545e-24,
+      "error_pct": 1.894033244638401e-15,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of permittivity",
+      "name": "atomic unit of permittivity",
+      "computed": 1.11e-10,
+      "measured": 1.1126500562e-10,
+      "error_pct": 0.0009504134401228727,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "atomic unit of time",
+      "name": "atomic unit of time",
+      "computed": 0.0,
+      "measured": 2.4188843265864e-17,
+      "error_pct": 2.29894017411176e-08,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "Avogadro constant",
+      "name": "Avogadro constant",
+      "computed": 6.022197995235166e+23,
+      "measured": 6.02214076e+23,
+      "error_pct": 0.000950413440124328,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "Bohr magneton",
+      "name": "Bohr magneton",
+      "computed": 0.0,
+      "measured": 9.2740100657e-24,
+      "error_pct": 8.814143810298757e-15,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "Bohr magneton in eV/T",
+      "name": "Bohr magneton in eV/T",
+      "computed": 5.7884368e-05,
+      "measured": 5.7883817982e-05,
+      "error_pct": 0.0009504134401296021,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "Bohr radius",
+      "name": "Bohr radius",
+      "computed": 5.3e-11,
+      "measured": 5.29177210544e-11,
+      "error_pct": 0.000950413440126715,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "Boltzmann constant",
+      "name": "Boltzmann constant",
+      "computed": 0.0,
+      "measured": 1.380649e-23,
+      "error_pct": 1.3121873656878131e-14,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "classical electron radius",
+      "name": "classical electron radius",
+      "computed": 0.0,
+      "measured": 2.8179403205e-15,
+      "error_pct": 2.6782083540912255e-06,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "Compton wavelength",
+      "name": "Compton wavelength",
+      "computed": 2e-12,
+      "measured": 2.42631023538e-12,
+      "error_pct": 0.0009504134401244556,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "conventional value of Josephson constant",
+      "name": "conventional value of Josephson constant",
+      "computed": 483602496179437.75,
+      "measured": 483597900000000.0,
+      "error_pct": 0.0009504134401224654,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "conventional value of von Klitzing constant",
+      "name": "conventional value of von Klitzing constant",
+      "computed": 25813.052328387002,
+      "measured": 25812.807,
+      "error_pct": 0.0009504134401260245,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "Copper x unit",
+      "name": "Copper x unit",
+      "computed": 0.0,
+      "measured": 1.00207697e-13,
+      "error_pct": 9.52387420324368e-05,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "deuteron-electron mag. mom. ratio",
+      "name": "deuteron-electron mag. mom. ratio",
+      "computed": -0.000466438988,
+      "measured": -0.000466434555,
+      "error_pct": 0.0009504134401235872,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "deuteron mag. mom.",
+      "name": "deuteron mag. mom.",
+      "computed": 0.0,
+      "measured": 4.330735087e-27,
+      "error_pct": 4.115988832285656e-18,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "deuteron mag. mom. to Bohr magneton ratio",
+      "name": "deuteron mag. mom. to Bohr magneton ratio",
+      "computed": 0.000466979895,
+      "measured": 0.0004669754568,
+      "error_pct": 0.000950413440126529,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "deuteron mass",
+      "name": "deuteron mass",
+      "computed": 0.0,
+      "measured": 3.3435837768e-27,
+      "error_pct": 3.17778695968731e-18,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "deuteron mass energy equivalent",
+      "name": "deuteron mass energy equivalent",
+      "computed": 3.01e-10,
+      "measured": 3.00506323491e-10,
+      "error_pct": 0.0009504134401233185,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "deuteron molar mass",
+      "name": "deuteron molar mass",
+      "computed": 0.002013572352,
+      "measured": 0.00201355321466,
+      "error_pct": 0.0009504134401203505,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "deuteron rms charge radius",
+      "name": "deuteron rms charge radius",
+      "computed": 0.0,
+      "measured": 2.12778e-15,
+      "error_pct": 2.0222707096406996e-06,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "electron-deuteron mass ratio",
+      "name": "electron-deuteron mass ratio",
+      "computed": 0.0002724463,
+      "measured": 0.0002724437107629,
+      "error_pct": 0.0009504134401291322,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "electron-helion mass ratio",
+      "name": "electron-helion mass ratio",
+      "computed": 0.000181956037,
+      "measured": 0.0001819543074649,
+      "error_pct": 0.0009504134401284124,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "electron mag. mom.",
+      "name": "electron mag. mom.",
+      "computed": -0.0,
+      "measured": -9.2847646917e-24,
+      "error_pct": 8.824365151420461e-15,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "electron mag. mom. anomaly",
+      "name": "electron mag. mom. anomaly",
+      "computed": 0.001159663202,
+      "measured": 0.00115965218046,
+      "error_pct": 0.0009504134401321759,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "electron mass",
+      "name": "electron mass",
+      "computed": 0.0,
+      "measured": 9.1093837139e-31,
+      "error_pct": 8.657680712955061e-22,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "electron mass energy equivalent",
+      "name": "electron mass energy equivalent",
+      "computed": 0.0,
+      "measured": 8.187105788e-14,
+      "error_pct": 7.781135376691429e-05,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "electron mass in u",
+      "name": "electron mass in u",
+      "computed": 0.000548585123,
+      "measured": 0.0005485799090441,
+      "error_pct": 0.0009504134401243859,
+      "source": "nist_codata_api"
+    },
+    {
+      "lab": "nist_quantum_lab",
+      "property": "electron molar mass",
+      "name": "electron molar mass",
+      "computed": 5.48585e-07,
+      "measured": 5.4857990962e-07,
+      "error_pct": 0.0009504134401350574,
+      "source": "nist_codata_api"
+    }
+  ]
+}

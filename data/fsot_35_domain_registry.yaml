@@ -54,29 +54,29 @@ empirical_sources:
     labs: [smiles_lab]
     lean_domain: material
   Quantum_Mechanics:
-    labs: [smiles_lab]
+    labs: [smiles_lab, nist_quantum_lab]
     lean_domain: quantum
   Quantum_Optics:
-    labs: [smiles_lab]
+    labs: [smiles_lab, nist_quantum_lab]
     lean_domain: quantum
   Particle_Physics:
-    labs: [smiles_lab]
+    labs: [particle_physics_lab]
     lean_domain: particle
   Atomic_Physics:
-    labs: [smiles_lab]
+    labs: [smiles_lab, nist_atomic_lab]
     lean_domain: particle
   Nuclear_Physics:
     labs: [smiles_lab, blackhole_thesis]
     lean_domain: nuclear
   High_Energy_Physics:
-    labs: [higgs_branching_lab, cosmology_higher_waves_lab]
+    labs: [higgs_branching_lab, higgs_mass_lab, cosmology_higher_waves_lab]
     lean_domain: higgs
     smiles_lean_fallback: particle
   Biochemistry:
     labs: [smiles_lab, neurolab_bio]
     lean_domain: medical
   Psychology:
-    labs: [linguistics_lab]
+    labs: [openalex_psychology_lab, linguistics_lab]
     lean_domain: consciousness
   Thermodynamics:
     labs: [fuel_lab, thermodynamics_smiles]
@@ -85,13 +85,13 @@ empirical_sources:
     labs: [evolution_lab, cellular_lab, neurolab_bio, biology_strict_lab]
     lean_domain: biological
   Cosmology:
-    labs: [cosmology_lambda_cdm, cosmology_extended_lab, cosmology_higher_waves_lab]
+    labs: [cosmology_lambda_cdm, cosmology_extended_lab, cosmology_higher_waves_lab, cosmology_bubble_bleed_lab, cosmology_anomalies_lab]
     lean_domain: cosmological
   Astronomy:
-    labs: [cosmology_lambda_cdm, cosmology_wave4, cosmology_extended_lab]
+    labs: [cosmology_lambda_cdm, cosmology_wave4, cosmology_extended_lab, cosmology_bubble_bleed_lab]
     lean_domain: astronomical
   Astrophysics:
-    labs: [cosmology_wave4, cosmology_extended_lab, cosmology_higher_waves_lab]
+    labs: [cosmology_wave4, cosmology_extended_lab, cosmology_higher_waves_lab, cosmology_bubble_bleed_lab]
     lean_domain: astronomical
   Planetary_Science:
     labs: [planetary_structure_lab, orbital_mechanics_lab, cosmology_wave4, cosmology_extended_lab]
@@ -100,19 +100,19 @@ empirical_sources:
     labs: [cosmology_wave4, cosmology_extended_lab, cosmology_higher_waves_lab]
     lean_domain: cmb
   Meteorology:
-    labs: [weather_lab]
+    labs: [weather_lab, climate_lab, meteorology_gap_fill_lab]
     lean_domain: energy
   Atmospheric_Physics:
-    labs: [weather_lab]
+    labs: [weather_lab, climate_lab, atmospheric_physics_gap_fill_lab]
     lean_domain: energy
   Fluid_Dynamics:
-    labs: [trinary_fluid_computer, vibra_register]
+    labs: [fluid_dynamics_lab, trinary_fluid_computer]
     lean_domain: energy
   Ecology:
-    labs: [evolution_lab]
+    labs: [gbif_ecology_lab, evolution_lab, biology_strict_lab]
     lean_domain: biological
   Oceanography:
-    labs: [weather_lab]
+    labs: [noaa_oceanography_lab, weather_lab]
     lean_domain: energy
   Geophysics:
     labs: [weather_lab, tectonics_lab, geomagnetism_lab]
@@ -121,16 +121,16 @@ empirical_sources:
     labs: [seismology_lab, tectonics_lab]
     lean_domain: energy
   Economics:
-    labs: [linguistics_lab]
+    labs: [world_bank_economics_lab, linguistics_lab]
     lean_domain: consciousness
   Sociology:
-    labs: [linguistics_lab]
+    labs: [openalex_sociology_lab, world_bank_sociology_lab, linguistics_lab]
     lean_domain: consciousness
   Quantum_Computing:
-    labs: [trinary_os]
+    labs: [quantum_computing_lab, trinary_os]
     lean_domain: ai
   Quantum_Gravity:
-    labs: [blackhole_thesis]
+    labs: [blackhole_thesis, cosmology_bubble_bleed_lab]
     lean_domain: blackhole
 
 # Extension domain empirical crosswalk (beyond 35-domain NeuroLab table)

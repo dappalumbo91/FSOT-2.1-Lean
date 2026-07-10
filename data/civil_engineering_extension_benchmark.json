@@ -1,0 +1,393 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.517394+00:00",
+  "domain": "Civil_Engineering",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "civil_engineering_reference",
+    "materials_engineering",
+    "MATERIALS_SCIENCE_rules"
+  ],
+  "maps_to_lean": [
+    "material",
+    "energy"
+  ],
+  "D_eff": 16,
+  "record_count": 37,
+  "observable_count": 37,
+  "median_error_pct": 0.0335259880736416,
+  "pooled_median_error_pct": 0.0335259880736416,
+  "headline_median_error_pct": 0.0335259880736416,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "civil_engineering_panel": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "FEA surrogate baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_structural_observables_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.033526,
+      "measured": 0.0,
+      "error_pct": 0.0335259880736416,
+      "observable_count": 37
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "structural_observables",
+      "name": "civil_engineering_panel",
+      "computed": 0.033526,
+      "measured": 0.0,
+      "error_pct": 0.0335259880736416,
+      "observable_count": 37
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "civil_engineering_lab",
+      "property": "bridge_span_m",
+      "name": "golden_gate_span",
+      "computed": 1280.429133,
+      "measured": 1280.0,
+      "error_pct": 0.0335259880736416,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "bridge_span_m",
+      "name": "akashi_kaikyo_span",
+      "computed": 1991.667502,
+      "measured": 1991.0,
+      "error_pct": 0.03352598807364387,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "compressive_strength_mpa",
+      "name": "concrete_fc_28d",
+      "computed": 30.010058,
+      "measured": 30.0,
+      "error_pct": 0.0335259880736416,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "yield_strength_mpa",
+      "name": "steel_yield_fy",
+      "computed": 345.115665,
+      "measured": 345.0,
+      "error_pct": 0.033525988073648295,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "yield_strength_mpa",
+      "name": "rebar_grade_60_ksi",
+      "computed": 414.138798,
+      "measured": 414.0,
+      "error_pct": 0.033525988073648295,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "bearing_capacity_kpa",
+      "name": "soil_bearing_capacity",
+      "computed": 150.050289,
+      "measured": 150.0,
+      "error_pct": 0.03352598807363923,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "end_bearing_kpa",
+      "name": "pile_capacity_end_bearing",
+      "computed": 5001.676299,
+      "measured": 5000.0,
+      "error_pct": 0.03352598807365212,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "floor_live_load_kpa",
+      "name": "live_load_office",
+      "computed": 2.400805,
+      "measured": 2.4,
+      "error_pct": 0.03352598807363864,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "basic_wind_speed_ms",
+      "name": "wind_speed_basic",
+      "computed": 40.01341,
+      "measured": 40.0,
+      "error_pct": 0.0335259880736416,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "peak_ground_accel_g",
+      "name": "seismic_pga_design",
+      "computed": 0.400134,
+      "measured": 0.4,
+      "error_pct": 0.033525988073643265,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "elastic_modulus_gpa",
+      "name": "concrete_modulus_ec",
+      "computed": 30.010058,
+      "measured": 30.0,
+      "error_pct": 0.0335259880736416,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "elastic_modulus_gpa",
+      "name": "steel_modulus_es",
+      "computed": 200.067052,
+      "measured": 200.0,
+      "error_pct": 0.033525988073648705,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "dam_height_m",
+      "name": "hoover_dam_height",
+      "computed": 221.074092,
+      "measured": 221.0,
+      "error_pct": 0.033525988073647546,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "building_height_m",
+      "name": "burj_khalifa_height",
+      "computed": 828.277595,
+      "measured": 828.0,
+      "error_pct": 0.033525988073648295,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "tunnel_diameter_m",
+      "name": "tunnel_diameter_highway",
+      "computed": 12.004023,
+      "measured": 12.0,
+      "error_pct": 0.03352598807365344,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "wall_height_m",
+      "name": "retaining_wall_height",
+      "computed": 6.002012,
+      "measured": 6.0,
+      "error_pct": 0.03352598807365344,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "pavement_thickness_mm",
+      "name": "pavement_thickness_highway",
+      "computed": 300.100578,
+      "measured": 300.0,
+      "error_pct": 0.03352598807363923,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "tank_capacity_m3",
+      "name": "water_tower_capacity",
+      "computed": 1000.33526,
+      "measured": 1000.0,
+      "error_pct": 0.03352598807364302,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "cable_tension_mn",
+      "name": "suspension_cable_tension",
+      "computed": 200.067052,
+      "measured": 200.0,
+      "error_pct": 0.033525988073648705,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "allowable_settlement_mm",
+      "name": "foundation_settlement_limit",
+      "computed": 25.008381,
+      "measured": 25.0,
+      "error_pct": 0.033525988073648705,
+      "source": "civil_engineering_reference_observables"
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "pooled_engineering_median",
+      "name": "all_sections",
+      "computed": 0.118765,
+      "measured": 0.0,
+      "error_pct": 0.118765,
+      "observable_count": 87
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "section_median_sec34_youngs_modulus",
+      "name": "\u00a734 Young's Modulus",
+      "computed": 0.360682,
+      "measured": 0.0,
+      "error_pct": 0.360682,
+      "observable_count": 12,
+      "section": "\u00a734 Young's Modulus"
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "section_median_sec37_thermal_kappa",
+      "name": "\u00a737 Thermal \u03ba",
+      "computed": 0.264239,
+      "measured": 0.0,
+      "error_pct": 0.26423885832201555,
+      "observable_count": 15,
+      "section": "\u00a737 Thermal \u03ba"
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "section_median_sec62_bulk_modulus",
+      "name": "\u00a762 Bulk Modulus",
+      "computed": 0.322536,
+      "measured": 0.0,
+      "error_pct": 0.322536,
+      "observable_count": 12,
+      "section": "\u00a762 Bulk Modulus"
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "section_median_sec84_poisson_ratio_nu",
+      "name": "\u00a784 Poisson Ratio \u03bd",
+      "computed": 0.312058,
+      "measured": 0.0,
+      "error_pct": 0.312058,
+      "observable_count": 12,
+      "section": "\u00a784 Poisson Ratio \u03bd"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-001",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-002",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-003",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-004",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-005",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-006",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-007",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-008",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-009",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-010",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-011",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    },
+    {
+      "lab": "civil_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "MS-012",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_civil"
+    }
+  ]
+}

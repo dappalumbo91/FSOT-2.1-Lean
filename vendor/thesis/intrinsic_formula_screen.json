@@ -1,0 +1,79 @@
+[
+    {
+        "name":  "ceff_additive",
+        "rmse":  6.846075948410455,
+        "mae":  5.5235957149639976,
+        "r2":  0.074109946233182122,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "frame_in_gate",
+        "rmse":  6.8684880517457643,
+        "mae":  5.544752739501229,
+        "r2":  0.068037822468706044,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))) + p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "baseline",
+        "rmse":  6.8690192111667185,
+        "mae":  5.5452641350219913,
+        "r2":  0.067893674403658788,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "novelty_threshold",
+        "rmse":  6.8839371182470694,
+        "mae":  5.5578315464412436,
+        "r2":  0.063840643129108532,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "sqrt_gate",
+        "rmse":  6.8887003007968719,
+        "mae":  5.5618104919161269,
+        "r2":  0.062544686899069668,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / sqrt(1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "transport_plus_domain",
+        "rmse":  7.8452027983503871,
+        "mae":  6.2046838599561749,
+        "r2":  -0.21586215946545551,
+        "formula":  "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + 0.740322153911957) + p_new * (ln(abs(frequency_hz) + 1)) + p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "overlap_gate",
+        "rmse":  8.5117985419024489,
+        "mae":  6.9140743820801038,
+        "r2":  -0.4312604333533625,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) + ((e / pi) * (free_stream_velocity_ms / sqrt(abs(frequency_hz))) * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "transport_gated",
+        "rmse":  9.7133481979958631,
+        "mae":  8.1603937079080886,
+        "r2":  -0.86386265998117273,
+        "formula":  "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + p_new * (ln(abs(frequency_hz) + 1)) + p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "osc_gated",
+        "rmse":  14.244838192075363,
+        "mae":  12.984088878963435,
+        "r2":  -3.0085844192112887,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m))) + p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "n2_air_blend",
+        "rmse":  14.458373493326793,
+        "mae":  12.7683665400442,
+        "r2":  -3.1296654666329298,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (((phi^8 * e^2) + (pi - a_in)) + (e^6 - e^4)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "attention_damped",
+        "rmse":  35.140801581449061,
+        "mae":  31.723768053079379,
+        "r2":  -23.394915649780675,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + p_base * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / ((1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))) * (1 + b_in * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)"
+    }
+]

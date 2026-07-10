@@ -1,0 +1,46 @@
+# Tier 33 — Culinary arts: SMILES food chemistry + recipe process observables.
+version: "1.1"
+updated: "2026-07-09"
+
+source_repo: vendor/culinary_arts
+maps_to_lean: [medical, material, energy]
+D_eff: 15
+
+source:
+  smiles_dataset: vendor/smiles/FSOT_SMILES_Lab_Dataset.json
+  recipe_observables: data/culinary_recipe_observables.json
+
+sections:
+  - "§1 Foundation"
+  - "§23 Drug pKd"
+  - "§45 Activation Ea"
+  - "§50 Diffusion D"
+  - "§51 Solubility logS"
+  - "§61 Glass Tg"
+  - "§74 Acoustic Impedance"
+  - "§90 Heat of Combustion"
+  - "§98 Vapor Pressure"
+
+compound_filter:
+  - glucose
+  - sucrose
+  - caffeine
+  - glucose_amorph
+  - Water
+  - Water_20C
+  - pH_water
+  - sucrose_hydrolysis
+
+build:
+  script: scripts/build_culinary_arts_benchmark.py
+  output: data/culinary_arts_benchmark.json
+
+lean:
+  generator: scripts/gen_culinary_arts_lean.py
+  module: FSOT.Formal.CulinaryArtsPriors
+  lean_domain: medical
+  sign_theorem: medical_raw_S_positive
+
+verification:
+  min_records: 20
+  max_median_error_pct: 5.0

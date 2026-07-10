@@ -1,0 +1,114 @@
+{
+  "catalog_version": "1.0",
+  "notes": "Open cosmology tensions/anomalies — BH→WH bubble bleed, phase-shift shadow sector (DM/DE), literature anchors.",
+  "anomalies": [
+    {
+      "id": "h0_tension_sh0es",
+      "name": "H0_tension_SH0ES_vs_Planck",
+      "category": "hubble_tension",
+      "measured": 5.64,
+      "unit": "km/s/Mpc_delta",
+      "reference": "Riess2024_vs_Planck2018",
+      "mechanism": "bh_wh_bubble_bleed"
+    },
+    {
+      "id": "h0_tension_carnegie",
+      "name": "H0_tension_Carnegie_vs_Planck",
+      "category": "hubble_tension",
+      "measured": 2.4,
+      "unit": "km/s/Mpc_delta",
+      "reference": "Freedman2019",
+      "mechanism": "bh_wh_bubble_bleed"
+    },
+    {
+      "id": "s8_tension_des",
+      "name": "S8_tension_Planck_vs_DES_Y3",
+      "category": "sigma8_tension",
+      "measured": 0.058,
+      "unit": "S8_delta",
+      "reference": "DES_Y3_2022",
+      "mechanism": "wh_lensing_decay"
+    },
+    {
+      "id": "s8_planck",
+      "name": "S8_Planck2018",
+      "category": "sigma8_tension",
+      "measured": 0.834,
+      "unit": "S8",
+      "reference": "Planck2018",
+      "mechanism": "cmb_global"
+    },
+    {
+      "id": "s8_des_y3",
+      "name": "S8_DES_Y3",
+      "category": "sigma8_tension",
+      "measured": 0.776,
+      "unit": "S8",
+      "reference": "DES_Y3_2022",
+      "mechanism": "local_lensing_depleted"
+    },
+    {
+      "id": "lithium_factor",
+      "name": "Lithium_problem_factor",
+      "category": "bbn_anomaly",
+      "measured": 3.0,
+      "unit": "underproduction_factor",
+      "reference": "BBN_obs_vs_theory",
+      "mechanism": "wh_outgassing_entropy"
+    },
+    {
+      "id": "li7_over_h",
+      "name": "Li7_over_H_observed",
+      "category": "bbn_anomaly",
+      "measured": 1.6e-10,
+      "unit": "abundance",
+      "reference": "Cooke_2018",
+      "mechanism": "skeleton_bbn"
+    },
+    {
+      "id": "axis_of_evil_p",
+      "name": "CMB_axis_of_evil_alignment",
+      "category": "cmb_anomaly",
+      "measured": 0.0004,
+      "unit": "probability",
+      "reference": "Planck2016_low_ell",
+      "mechanism": "wh_pole_preference"
+    },
+    {
+      "id": "cold_spot_sigma",
+      "name": "CMB_cold_spot_significance",
+      "category": "cmb_anomaly",
+      "measured": 5.0,
+      "unit": "sigma",
+      "reference": "Planck2015_cold_spot",
+      "mechanism": "wh_suction_void"
+    },
+    {
+      "id": "low_ell_power_deficit",
+      "name": "CMB_low_ell_power_deficit",
+      "category": "cmb_anomaly",
+      "measured": 0.1,
+      "unit": "fractional_deficit",
+      "reference": "WMAP_Planck_low_ell",
+      "mechanism": "wh_orifice_anisotropy"
+    },
+    {
+      "id": "jwst_early_massive_z",
+      "name": "JWST_early_massive_galaxy_z",
+      "category": "structure_formation",
+      "measured": 14.0,
+      "unit": "redshift",
+      "reference": "JWST_2023_2024",
+      "mechanism": "recompactification_fast_track"
+    },
+    {
+      "id": "frb_dm_excess",
+      "name": "FRB_DM_excess_vs_IGM",
+      "category": "frb_anomaly",
+      "measured": 200.0,
+      "unit": "pc_cm3_excess",
+      "reference": "CHIME_high_DM",
+      "mechanism": "bh_wh_tunnel_scatter"
+    }
+  ]
+}

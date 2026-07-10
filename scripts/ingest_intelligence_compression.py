@@ -53,16 +53,29 @@ def main() -> int:
 
     summary = summarize_sweep(rows)
     registry = json.loads(REGISTRY.read_text(encoding="utf-8")) if REGISTRY.exists() else {}
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from fsot_paths import intelligence_compression_root, rel_repo_path  # noqa: E402
+
+    src_root = intelligence_compression_root()
     registry["intelligence_compression"] = {
         **summary,
         "sweep_rows": rows[:32],
         "sweep_row_count_full": len(rows),
-        "source_repo": manifest["source_repo"],
+        "source_repo": manifest.get("source_repo"),
+        "source_repo_resolved": rel_repo_path(src_root) if src_root else None,
         "ingested_at": datetime.now(timezone.utc).isoformat(),
     }
     REGISTRY.write_text(json.dumps(registry, indent=2), encoding="utf-8")
     print(f"Updated {REGISTRY}")
     print(f"  sweep_rows: {len(rows)}  fertile: {summary['fertile_count']}")
+
+    build_script = ROOT / "scripts" / "build_intelligence_compression_benchmark.py"
+    if build_script.exists():
+        import subprocess
+
+        proc = subprocess.run([sys.executable, str(build_script)], check=False)
+        if proc.returncode != 0:
+            return proc.returncode
     return 0
 
 

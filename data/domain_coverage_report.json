@@ -2,7 +2,7 @@
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "domain_count": 35,
   "domains_with_empirical_data": 35,
-  "total_empirical_records": 307820,
+  "total_empirical_records": 306680,
   "lean_mapped_count": 17,
   "lean_param_aligned_count": 17,
   "negative_scalar_domains": [
@@ -55,12 +55,12 @@
       "lean_sign_theorem": "astronomical_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 104,
+      "empirical_records": 162,
       "empirical_sources": [
         {
           "lab": "cosmology_lambda_cdm",
           "records": 30,
-          "median_error_pct": 0.005633747260469587
+          "median_error_pct": 0.00295952881905694
         },
         {
           "lab": "cosmology_wave4",
@@ -71,6 +71,11 @@
           "lab": "cosmology_extended_lab",
           "records": 58,
           "median_error_pct": 0.022
+        },
+        {
+          "lab": "cosmology_bubble_bleed_lab",
+          "records": 58,
+          "median_error_pct": 0.0
         }
       ],
       "empirical_median_error_pct": 0.022,
@@ -89,7 +94,7 @@
       "lean_sign_theorem": "astronomical_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 216,
+      "empirical_records": 274,
       "empirical_sources": [
         {
           "lab": "cosmology_wave4",
@@ -104,7 +109,12 @@
         {
           "lab": "cosmology_higher_waves_lab",
           "records": 142,
-          "median_error_pct": 0.08133168472446134
+          "median_error_pct": 0.036905519070735776
+        },
+        {
+          "lab": "cosmology_bubble_bleed_lab",
+          "records": 58,
+          "median_error_pct": 0.0
         }
       ],
       "empirical_median_error_pct": 0.03162247159570792,
@@ -287,12 +297,12 @@
       "lean_sign_theorem": "cosmological_raw_S_negative",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 230,
+      "empirical_records": 288,
       "empirical_sources": [
         {
           "lab": "cosmology_lambda_cdm",
           "records": 30,
-          "median_error_pct": 0.005633747260469587
+          "median_error_pct": 0.00295952881905694
         },
         {
           "lab": "cosmology_extended_lab",
@@ -302,7 +312,12 @@
         {
           "lab": "cosmology_higher_waves_lab",
           "records": 142,
-          "median_error_pct": 0.08133168472446134
+          "median_error_pct": 0.036905519070735776
+        },
+        {
+          "lab": "cosmology_bubble_bleed_lab",
+          "records": 58,
+          "median_error_pct": 0.0
         }
       ],
       "empirical_median_error_pct": 0.022,
@@ -403,17 +418,12 @@
       "lean_sign_theorem": "energy_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 29,
+      "empirical_records": 27,
       "empirical_sources": [
         {
           "lab": "trinary_fluid_computer",
           "records": 27,
           "median_error_pct": 99.3
-        },
-        {
-          "lab": "vibra_register",
-          "records": 2,
-          "median_error_pct": null
         }
       ],
       "empirical_median_error_pct": 99.3,
@@ -466,20 +476,25 @@
       "lean_sign_theorem": "higgs_raw_S_positive",
       "lean_param_aligned": true,
       "lean_override": true,
-      "empirical_records": 156,
+      "empirical_records": 158,
       "empirical_sources": [
         {
           "lab": "higgs_branching_lab",
           "records": 14,
-          "median_error_pct": 0.08808351263334355
+          "median_error_pct": 0.014721632079759569
+        },
+        {
+          "lab": "higgs_mass_lab",
+          "records": 2,
+          "median_error_pct": 0.03990518384182655
         },
         {
           "lab": "cosmology_higher_waves_lab",
           "records": 142,
-          "median_error_pct": 0.08133168472446134
+          "median_error_pct": 0.036905519070735776
         }
       ],
-      "empirical_median_error_pct": 0.08808351263334355,
+      "empirical_median_error_pct": 0.036905519070735776,
       "has_empirical_data": true
     },
     {
@@ -693,7 +708,7 @@
         {
           "lab": "cosmology_higher_waves_lab",
           "records": 142,
-          "median_error_pct": 0.08133168472446134
+          "median_error_pct": 0.036905519070735776
         }
       ],
       "empirical_median_error_pct": 0.03162247159570792,
@@ -712,15 +727,15 @@
       "lean_sign_theorem": "particle_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 1470,
+      "empirical_records": 98,
       "empirical_sources": [
         {
-          "lab": "smiles_lab",
-          "records": 1470,
-          "median_error_pct": 0.058
+          "lab": "particle_physics_lab",
+          "records": 98,
+          "median_error_pct": 0.018000835539782083
         }
       ],
-      "empirical_median_error_pct": 0.058,
+      "empirical_median_error_pct": 0.018000835539782083,
       "has_empirical_data": true
     },
     {
@@ -837,12 +852,17 @@
       "lean_sign_theorem": "blackhole_raw_S_positive",
       "lean_param_aligned": null,
       "lean_override": false,
-      "empirical_records": 28,
+      "empirical_records": 86,
       "empirical_sources": [
         {
           "lab": "blackhole_thesis",
           "records": 28,
           "median_error_pct": 0.718
+        },
+        {
+          "lab": "cosmology_bubble_bleed_lab",
+          "records": 58,
+          "median_error_pct": 0.0
         }
       ],
       "empirical_median_error_pct": 0.718,

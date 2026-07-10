@@ -1,21 +1,147 @@
 {
-  "generated_at": "2026-07-07T23:58:07.621978+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:16:07.726610+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "vendor/igem/igem_parts_registry.json",
-    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\biology_strict_empirical.json"
+    "data/biology_strict_empirical.json"
   ],
+  "source_repo": "vendor/igem",
   "maps_to_lean": [
     "biological",
     "medical"
   ],
   "D_eff": 14,
   "part_count": 20,
-  "strict_record_count": 60,
-  "biology_strict_bridge_count": 20,
-  "record_count": 60,
-  "observable_count": 60,
-  "median_error_pct": 0.04447250077037545,
+  "strict_record_count": 54,
+  "biology_strict_bridge_count": 14,
+  "record_count": 54,
+  "observable_count": 54,
+  "median_error_pct": 0.02223625038520417,
+  "headline_median_error_pct": 0.02223625038520417,
+  "pooled_median_error_pct": 0.02223625038520417,
+  "section_decomposition": {
+    "biology_strict_operon_replication": {
+      "record_count": 13,
+      "median_error_pct": 0.0,
+      "max_error_pct": 0.8595988538681949,
+      "min_error_pct": 0.0
+    },
+    "coding_bp_sum_bridge": {
+      "record_count": 1,
+      "median_error_pct": 0.044472500770382666,
+      "max_error_pct": 0.044472500770382666,
+      "min_error_pct": 0.044472500770382666
+    },
+    "gc_percent": {
+      "record_count": 20,
+      "median_error_pct": 0.022236250385199694,
+      "max_error_pct": 0.022236250385205058,
+      "min_error_pct": 0.022236250385191003
+    },
+    "length_bp": {
+      "record_count": 20,
+      "median_error_pct": 0.04447250077037545,
+      "max_error_pct": 0.04447250077038355,
+      "min_error_pct": 0.04447250077036701
+    }
+  },
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "headline_observables": {
+      "pooled_median_error_pct": 0.02223625038520417,
+      "headline_median_error_pct": 0.02223625038520417,
+      "channel_count": 4
+    },
+    "operational_baselines": {
+      "length_bp": {
+        "sota_model": "Registry metadata lookup (no generative model)",
+        "sota_typical_error_pct": 2.0,
+        "reference": "iGEM parts.igem.org length_bp field"
+      },
+      "gc_percent": {
+        "sota_model": "GC% from sequenced part FASTA",
+        "sota_typical_error_pct": 1.5,
+        "reference": "iGEM Registry GC annotations"
+      },
+      "biology_strict_operon_replication": {
+        "sota_model": "NCBI NC_012920.1 mitochondrial gene lengths",
+        "sota_typical_error_pct": 1.0,
+        "reference": "biology_strict_lab mt_operon_length"
+      },
+      "coding_bp_sum_bridge": {
+        "sota_model": "Sum of mitochondrial protein-coding lengths",
+        "sota_typical_error_pct": 2.0,
+        "reference": "human_mt_coding_bp aggregate"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_registry_metadata": true,
+      "bridge_vs_ncbi_operons": true,
+      "channel_length_bp_vs_baseline": true,
+      "channel_gc_percent_vs_baseline": true,
+      "channel_biology_strict_operon_replication_vs_baseline": true,
+      "channel_coding_bp_sum_bridge_vs_baseline": true
+    }
+  },
   "records": [
+    {
+      "lab": "igem_synthetic_biology_lab",
+      "property": "pooled_igem_median",
+      "name": "all_channels",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.02223625038520417,
+      "observable_count": 54,
+      "part_count": 20
+    },
+    {
+      "lab": "igem_synthetic_biology_lab",
+      "property": "channel_median_length_bp",
+      "name": "length_bp",
+      "computed": 0.044473,
+      "measured": 0.0,
+      "error_pct": 0.04447250077037545,
+      "observable_count": 20
+    },
+    {
+      "lab": "igem_synthetic_biology_lab",
+      "property": "channel_median_gc_percent",
+      "name": "gc_percent",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236250385199694,
+      "observable_count": 20
+    },
+    {
+      "lab": "igem_synthetic_biology_lab",
+      "property": "channel_median_biology_strict_operon_replication",
+      "name": "biology_strict_operon_replication",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 13
+    },
+    {
+      "lab": "igem_synthetic_biology_lab",
+      "property": "channel_median_coding_bp_sum_bridge",
+      "name": "coding_bp_sum_bridge",
+      "computed": 0.044473,
+      "measured": 0.0,
+      "error_pct": 0.044472500770382666,
+      "observable_count": 1
+    },
+    {
+      "lab": "igem_synthetic_biology_lab",
+      "property": "biology_strict_bridge_median",
+      "name": "ncbi_mt_operon_replication",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "observable_count": 13
+    }
+  ],
+  "material_records": [
     {
       "lab": "igem_parts_registry",
       "property": "length_bp",
@@ -35,16 +161,6 @@
       "measured": 41.6667,
       "error_pct": 0.022236250385191003,
       "strict": true
-    },
-    {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_B0034:MT-ATP8",
-      "computed": 12,
-      "measured": 207,
-      "error_pct": 94.20289855072464,
-      "strict": true,
-      "bridge_operon": "MT-ATP8"
     },
     {
       "lab": "igem_parts_registry",
@@ -67,16 +183,6 @@
       "strict": true
     },
     {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_B0032:MT-ATP8",
-      "computed": 22,
-      "measured": 207,
-      "error_pct": 89.3719806763285,
-      "strict": true,
-      "bridge_operon": "MT-ATP8"
-    },
-    {
       "lab": "igem_parts_registry",
       "property": "length_bp",
       "name": "BBa_B1002",
@@ -95,16 +201,6 @@
       "measured": 46.6667,
       "error_pct": 0.022236250385197113,
       "strict": true
-    },
-    {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_B1002:MT-ATP8",
-      "computed": 15,
-      "measured": 207,
-      "error_pct": 92.7536231884058,
-      "strict": true,
-      "bridge_operon": "MT-ATP8"
     },
     {
       "lab": "igem_parts_registry",
@@ -127,16 +223,6 @@
       "strict": true
     },
     {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_J23100:MT-ATP8",
-      "computed": 35,
-      "measured": 207,
-      "error_pct": 83.09178743961353,
-      "strict": true,
-      "bridge_operon": "MT-ATP8"
-    },
-    {
       "lab": "igem_parts_registry",
       "property": "length_bp",
       "name": "BBa_R0010",
@@ -155,16 +241,6 @@
       "measured": 47.1698,
       "error_pct": 0.022236250385194348,
       "strict": true
-    },
-    {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_R0010:MT-ATP8",
-      "computed": 53,
-      "measured": 207,
-      "error_pct": 74.39613526570048,
-      "strict": true,
-      "bridge_operon": "MT-ATP8"
     },
     {
       "lab": "igem_parts_registry",
@@ -187,16 +263,6 @@
       "strict": true
     },
     {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_R0051:MT-ATP8",
-      "computed": 51,
-      "measured": 207,
-      "error_pct": 75.36231884057972,
-      "strict": true,
-      "bridge_operon": "MT-ATP8"
-    },
-    {
       "lab": "igem_parts_registry",
       "property": "length_bp",
       "name": "BBa_R0040",
@@ -215,16 +281,6 @@
       "measured": 47.2727,
       "error_pct": 0.022236250385201675,
       "strict": true
-    },
-    {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_R0040:MT-ATP8",
-      "computed": 55,
-      "measured": 207,
-      "error_pct": 73.42995169082126,
-      "strict": true,
-      "bridge_operon": "MT-ATP8"
     },
     {
       "lab": "igem_parts_registry",
@@ -247,16 +303,6 @@
       "strict": true
     },
     {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_I52002:MT-ATP8",
-      "computed": 45,
-      "measured": 207,
-      "error_pct": 78.26086956521739,
-      "strict": true,
-      "bridge_operon": "MT-ATP8"
-    },
-    {
       "lab": "igem_parts_registry",
       "property": "length_bp",
       "name": "BBa_B0010",
@@ -275,16 +321,6 @@
       "measured": 52.9412,
       "error_pct": 0.022236250385202917,
       "strict": true
-    },
-    {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_B0010:MT-ATP8",
-      "computed": 119,
-      "measured": 207,
-      "error_pct": 42.51207729468599,
-      "strict": true,
-      "bridge_operon": "MT-ATP8"
     },
     {
       "lab": "igem_parts_registry",
@@ -307,16 +343,6 @@
       "strict": true
     },
     {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_B0012:MT-ATP8",
-      "computed": 41,
-      "measured": 207,
-      "error_pct": 80.19323671497585,
-      "strict": true,
-      "bridge_operon": "MT-ATP8"
-    },
-    {
       "lab": "igem_parts_registry",
       "property": "length_bp",
       "name": "BBa_B0015",
@@ -335,16 +361,6 @@
       "measured": 52.7132,
       "error_pct": 0.022236250385197665,
       "strict": true
-    },
-    {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_B0015:MT-ATP8",
-      "computed": 129,
-      "measured": 207,
-      "error_pct": 37.68115942028986,
-      "strict": true,
-      "bridge_operon": "MT-ATP8"
     },
     {
       "lab": "igem_parts_registry",
@@ -367,16 +383,6 @@
       "strict": true
     },
     {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_C0040:MT-CO2",
-      "computed": 720,
-      "measured": 684,
-      "error_pct": 5.263157894736842,
-      "strict": true,
-      "bridge_operon": "MT-CO2"
-    },
-    {
       "lab": "igem_parts_registry",
       "property": "length_bp",
       "name": "BBa_C0062",
@@ -395,16 +401,6 @@
       "measured": 48.3826,
       "error_pct": 0.022236250385199857,
       "strict": true
-    },
-    {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_C0062:MT-CO2",
-      "computed": 711,
-      "measured": 684,
-      "error_pct": 3.9473684210526314,
-      "strict": true,
-      "bridge_operon": "MT-CO2"
     },
     {
       "lab": "igem_parts_registry",
@@ -427,16 +423,6 @@
       "strict": true
     },
     {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_C0012:MT-CO3",
-      "computed": 792,
-      "measured": 780,
-      "error_pct": 1.5384615384615385,
-      "strict": true,
-      "bridge_operon": "MT-CO3"
-    },
-    {
       "lab": "igem_parts_registry",
       "property": "length_bp",
       "name": "BBa_C0261",
@@ -455,16 +441,6 @@
       "measured": 49.7487,
       "error_pct": 0.022236250385198532,
       "strict": true
-    },
-    {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_C0261:MT-CYTB",
-      "computed": 1194,
-      "measured": 1140,
-      "error_pct": 4.736842105263158,
-      "strict": true,
-      "bridge_operon": "MT-CYTB"
     },
     {
       "lab": "igem_parts_registry",
@@ -487,16 +463,6 @@
       "strict": true
     },
     {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_E0040:MT-ND1",
-      "computed": 948,
-      "measured": 956,
-      "error_pct": 0.8368200836820083,
-      "strict": true,
-      "bridge_operon": "MT-ND1"
-    },
-    {
       "lab": "igem_parts_registry",
       "property": "length_bp",
       "name": "BBa_C0051",
@@ -515,16 +481,6 @@
       "measured": 48.0916,
       "error_pct": 0.022236250385204152,
       "strict": true
-    },
-    {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_C0051:MT-CO3",
-      "computed": 786,
-      "measured": 780,
-      "error_pct": 0.7692307692307693,
-      "strict": true,
-      "bridge_operon": "MT-CO3"
     },
     {
       "lab": "igem_parts_registry",
@@ -547,16 +503,6 @@
       "strict": true
     },
     {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_I13504:MT-ND5",
-      "computed": 3328,
-      "measured": 1812,
-      "error_pct": 83.6644591611479,
-      "strict": true,
-      "bridge_operon": "MT-ND5"
-    },
-    {
       "lab": "igem_parts_registry",
       "property": "length_bp",
       "name": "BBa_K608000",
@@ -575,16 +521,6 @@
       "measured": 52.3775,
       "error_pct": 0.022236250385205058,
       "strict": true
-    },
-    {
-      "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_K608000:MT-ND5",
-      "computed": 4101,
-      "measured": 1812,
-      "error_pct": 126.32450331125828,
-      "strict": true,
-      "bridge_operon": "MT-ND5"
     },
     {
       "lab": "igem_parts_registry",
@@ -608,13 +544,147 @@
     },
     {
       "lab": "igem_biology_strict_bridge",
-      "property": "operon_length_proximity",
-      "name": "BBa_P10001:MT-ND5",
-      "computed": 2071,
-      "measured": 1812,
-      "error_pct": 14.293598233995585,
+      "property": "biology_strict_operon_replication",
+      "name": "MT-ND1",
+      "computed": 956.0,
+      "measured": 956,
+      "error_pct": 0.0,
       "strict": true,
-      "bridge_operon": "MT-ND5"
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-ND2",
+      "computed": 1042.0,
+      "measured": 1044,
+      "error_pct": 0.19157088122605362,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-CO1",
+      "computed": 1542.0,
+      "measured": 1542,
+      "error_pct": 0.0,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-CO2",
+      "computed": 684.0,
+      "measured": 684,
+      "error_pct": 0.0,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-ATP8",
+      "computed": 207.0,
+      "measured": 207,
+      "error_pct": 0.0,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-ATP6",
+      "computed": 681.0,
+      "measured": 681,
+      "error_pct": 0.0,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-CO3",
+      "computed": 784.0,
+      "measured": 780,
+      "error_pct": 0.5128205128205128,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-ND3",
+      "computed": 346.0,
+      "measured": 349,
+      "error_pct": 0.8595988538681949,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-ND4L",
+      "computed": 297.0,
+      "measured": 297,
+      "error_pct": 0.0,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-ND4",
+      "computed": 1378.0,
+      "measured": 1378,
+      "error_pct": 0.0,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-ND5",
+      "computed": 1812.0,
+      "measured": 1812,
+      "error_pct": 0.0,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-ND6",
+      "computed": 525.0,
+      "measured": 525,
+      "error_pct": 0.0,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "biology_strict_operon_replication",
+      "name": "MT-CYTB",
+      "computed": 1141.0,
+      "measured": 1140,
+      "error_pct": 0.08771929824561403,
+      "strict": true,
+      "source": "evolution_sim+NCBI_NC_012920.1"
+    },
+    {
+      "lab": "igem_biology_strict_bridge",
+      "property": "coding_bp_sum_bridge",
+      "name": "human_mt_coding_bp",
+      "computed": 11400.067641,
+      "measured": 11395,
+      "error_pct": 0.044472500770382666,
+      "strict": true,
+      "operon_count": 13,
+      "operon_length_sum": 11395
     }
+  ],
+  "crosswalk_modules": [
+    "FSOT.Formal.IGEMSyntheticBiologyPriors"
   ]
 }

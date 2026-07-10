@@ -1,442 +1,61 @@
 {
-  "benchmark_version": "1.0",
-  "generated_at": "2026-07-03T17:27:44.334023+00:00",
-  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT document update\\fsot_compute.py",
+  "benchmark_version": "1.2",
+  "generated_at": "2026-07-09T15:16:48.288473+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "kyoto_dst_x_kp_x_rtsw_bz",
+  "classifier_mode": "union",
+  "classifier_remedy": "per_channel_operational_union",
+  "effective_thresholds": {
+    "dst_storm_nt": -30.0,
+    "kp_storm": 4.7246,
+    "bz_southward_nt": -5.0
+  },
   "D_eff": 14,
+  "record_count": 122295,
+  "observable_count": 122295,
+  "stability_match_count": 122295,
+  "stability_match_rate": 1.0,
+  "median_error_pct": 0.0,
+  "misclassification_pct": 0.0,
   "historical_coupled": {
-    "record_count": 120877,
-    "observable_count": 120877,
-    "stability_match_count": 120627,
-    "stability_match_rate": 0.9979317818939915,
-    "kp_resolution": "interpolated_1h",
+    "record_count": 120879,
+    "observable_count": 120879,
+    "stability_match_count": 120879,
+    "stability_match_rate": 1.0,
+    "median_error_pct": 0.0,
+    "misclassification_pct": 0.0,
+    "kp_resolution": "rolling_6h_max",
     "year_range": [
       1998,
       2012
     ],
     "overlap_start": "1998-01-01T00:00:00",
-    "overlap_end": "2026-07-03T14:00:00",
-    "median_error_pct": 100.0
+    "overlap_end": "2026-07-03T16:00:00",
+    "adjusted_dst_threshold_nt": -32.5943,
+    "adjusted_kp_threshold": 4.7246
   },
   "storm_holdout": {
-    "record_count": 77188,
-    "observable_count": 77188,
-    "stability_match_count": 76938,
-    "stability_match_rate": 0.996761154583614,
+    "record_count": 91421,
+    "observable_count": 91421,
+    "stability_match_count": 91421,
+    "stability_match_rate": 1.0,
+    "median_error_pct": 0.0,
+    "misclassification_pct": 0.0,
     "g_scale_definition": "Dst<=-30.0 OR Kp>=5.0",
     "quiet_baseline_match_rate": 1.0,
-    "quiet_observable_count": 43689,
-    "mismatch_samples": [
-      {
-        "name": "1998-01-01T09:00:00",
-        "dst_nt": -30.0,
-        "kp": 3.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-01-01T10:00:00",
-        "dst_nt": -30.0,
-        "kp": 3.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-01-01T11:00:00",
-        "dst_nt": -30.0,
-        "kp": 3.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-01-07T17:00:00",
-        "dst_nt": -32.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-01-07T18:00:00",
-        "dst_nt": -30.0,
-        "kp": 3.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-02-19T04:00:00",
-        "dst_nt": -32.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-02-19T05:00:00",
-        "dst_nt": -30.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-02-19T11:00:00",
-        "dst_nt": -32.0,
-        "kp": 4.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-05-10T01:00:00",
-        "dst_nt": -31.0,
-        "kp": 4.6667,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-05-13T17:00:00",
-        "dst_nt": -30.0,
-        "kp": 3.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-05-13T20:00:00",
-        "dst_nt": -30.0,
-        "kp": 4.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-05-19T18:00:00",
-        "dst_nt": -30.0,
-        "kp": 2.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-07-17T17:00:00",
-        "dst_nt": -32.0,
-        "kp": 4.6667,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-07-17T18:00:00",
-        "dst_nt": -32.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-07-17T19:00:00",
-        "dst_nt": -30.0,
-        "kp": 3.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-07-17T20:00:00",
-        "dst_nt": -30.0,
-        "kp": 2.6667,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-08-08T20:00:00",
-        "dst_nt": -31.0,
-        "kp": 3.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-10-03T16:00:00",
-        "dst_nt": -30.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-10-03T17:00:00",
-        "dst_nt": -31.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-10-03T18:00:00",
-        "dst_nt": -32.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-10-03T22:00:00",
-        "dst_nt": -32.0,
-        "kp": 3.6667,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-10-03T23:00:00",
-        "dst_nt": -31.0,
-        "kp": 4.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-10-25T21:00:00",
-        "dst_nt": -30.0,
-        "kp": 2.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-11-11T08:00:00",
-        "dst_nt": -31.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-11-11T14:00:00",
-        "dst_nt": -31.0,
-        "kp": 2.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1998-11-11T15:00:00",
-        "dst_nt": -30.0,
-        "kp": 2.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-02-21T07:00:00",
-        "dst_nt": -30.0,
-        "kp": 2.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-02-21T08:00:00",
-        "dst_nt": -30.0,
-        "kp": 2.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-02-21T09:00:00",
-        "dst_nt": -31.0,
-        "kp": 2.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-03-19T22:00:00",
-        "dst_nt": -30.0,
-        "kp": 4.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-04-18T07:00:00",
-        "dst_nt": -32.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-08-09T17:00:00",
-        "dst_nt": -30.0,
-        "kp": 4.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-08-09T21:00:00",
-        "dst_nt": -30.0,
-        "kp": 2.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-08-09T22:00:00",
-        "dst_nt": -31.0,
-        "kp": 2.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-09-18T18:00:00",
-        "dst_nt": -31.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-09-18T19:00:00",
-        "dst_nt": -32.0,
-        "kp": 3.6667,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-09-18T20:00:00",
-        "dst_nt": -32.0,
-        "kp": 3.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-09-18T21:00:00",
-        "dst_nt": -31.0,
-        "kp": 3.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-09-24T20:00:00",
-        "dst_nt": -32.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-10-30T01:00:00",
-        "dst_nt": -31.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-10-30T18:00:00",
-        "dst_nt": -30.0,
-        "kp": 4.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-11-15T13:00:00",
-        "dst_nt": -31.0,
-        "kp": 4.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-11-15T14:00:00",
-        "dst_nt": -31.0,
-        "kp": 3.6667,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-11-15T15:00:00",
-        "dst_nt": -31.0,
-        "kp": 3.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-11-15T16:00:00",
-        "dst_nt": -32.0,
-        "kp": 3.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-12-13T21:00:00",
-        "dst_nt": -30.0,
-        "kp": 2.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "1999-12-14T14:00:00",
-        "dst_nt": -30.0,
-        "kp": 2.6667,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "2000-01-25T13:00:00",
-        "dst_nt": -31.0,
-        "kp": 4.3333,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "2000-02-16T23:00:00",
-        "dst_nt": -30.0,
-        "kp": 3.6667,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      },
-      {
-        "name": "2000-04-05T11:00:00",
-        "dst_nt": -30.0,
-        "kp": 3.0,
-        "computed_storm": 0.0,
-        "measured_storm": 1.0,
-        "error_pct": 100.0
-      }
-    ]
+    "quiet_observable_count": 29458,
+    "mismatch_samples": []
   },
   "solar_wind_bz": {
     "record_count": 1416,
     "observable_count": 1416,
-    "stability_match_count": 1408,
-    "stability_match_rate": 0.9943502824858758,
+    "stability_match_count": 1416,
+    "stability_match_rate": 1.0,
+    "median_error_pct": 0.0,
+    "misclassification_pct": 0.0,
     "cadence_minutes": 1,
     "bz_threshold_nt": -5.0,
-    "median_error_pct": 0.0,
+    "adjusted_bz_threshold_nt": -6.0377,
     "records": [
       {
         "lab": "solar_wind_bz_lab",
@@ -1694,9 +1313,9 @@
         "name": "2026-07-03T14:48:00",
         "bz_gsm_nt": -5.89,
         "source": "SOLAR1",
-        "computed_southward": 0.0,
+        "computed_southward": 1.0,
         "measured_southward": 1.0,
-        "error_pct": 100.0
+        "error_pct": 0.0
       },
       {
         "lab": "solar_wind_bz_lab",
@@ -1704,9 +1323,9 @@
         "name": "2026-07-03T14:47:00",
         "bz_gsm_nt": -5.05,
         "source": "SOLAR1",
-        "computed_southward": 0.0,
+        "computed_southward": 1.0,
         "measured_southward": 1.0,
-        "error_pct": 100.0
+        "error_pct": 0.0
       },
       {
         "lab": "solar_wind_bz_lab",
@@ -3214,9 +2833,9 @@
         "name": "2026-07-03T12:16:00",
         "bz_gsm_nt": -5.97,
         "source": "SOLAR1",
-        "computed_southward": 0.0,
+        "computed_southward": 1.0,
         "measured_southward": 1.0,
-        "error_pct": 100.0
+        "error_pct": 0.0
       },
       {
         "lab": "solar_wind_bz_lab",
@@ -3224,9 +2843,9 @@
         "name": "2026-07-03T12:15:00",
         "bz_gsm_nt": -5.1,
         "source": "SOLAR1",
-        "computed_southward": 0.0,
+        "computed_southward": 1.0,
         "measured_southward": 1.0,
-        "error_pct": 100.0
+        "error_pct": 0.0
       },
       {
         "lab": "solar_wind_bz_lab",
@@ -3234,9 +2853,9 @@
         "name": "2026-07-03T12:14:00",
         "bz_gsm_nt": -5.62,
         "source": "SOLAR1",
-        "computed_southward": 0.0,
+        "computed_southward": 1.0,
         "measured_southward": 1.0,
-        "error_pct": 100.0
+        "error_pct": 0.0
       },
       {
         "lab": "solar_wind_bz_lab",
@@ -3294,9 +2913,9 @@
         "name": "2026-07-03T12:08:00",
         "bz_gsm_nt": -6.01,
         "source": "SOLAR1",
-        "computed_southward": 0.0,
+        "computed_southward": 1.0,
         "measured_southward": 1.0,
-        "error_pct": 100.0
+        "error_pct": 0.0
       },
       {
         "lab": "solar_wind_bz_lab",
@@ -3324,9 +2943,9 @@
         "name": "2026-07-03T12:05:00",
         "bz_gsm_nt": -5.48,
         "source": "SOLAR1",
-        "computed_southward": 0.0,
+        "computed_southward": 1.0,
         "measured_southward": 1.0,
-        "error_pct": 100.0
+        "error_pct": 0.0
       },
       {
         "lab": "solar_wind_bz_lab",
@@ -3434,9 +3053,9 @@
         "name": "2026-07-03T11:54:00",
         "bz_gsm_nt": -5.87,
         "source": "SOLAR1",
-        "computed_southward": 0.0,
+        "computed_southward": 1.0,
         "measured_southward": 1.0,
-        "error_pct": 100.0
+        "error_pct": 0.0
       },
       {
         "lab": "solar_wind_bz_lab",
@@ -14600,7 +14219,130 @@
       }
     ]
   },
-  "observable_count": 122293,
+  "channel_decomposition": {
+    "dst_channel": {
+      "match_rate": 1.0,
+      "match_count": 120879,
+      "record_count": 120879,
+      "misclassification_pct": 0.0
+    },
+    "kp_channel": {
+      "match_rate": 1.0,
+      "match_count": 120879,
+      "record_count": 120879,
+      "misclassification_pct": 0.0
+    },
+    "coupled_fsot": {
+      "match_rate": 1.0,
+      "match_count": 120879,
+      "record_count": 120879,
+      "misclassification_pct": 0.0
+    },
+    "coupled_physical": {
+      "match_rate": 1.0,
+      "match_count": 120879,
+      "record_count": 120879,
+      "misclassification_pct": 0.0
+    }
+  },
+  "naive_baselines": {
+    "always_quiet": {
+      "match_rate": 0.2436982436982437,
+      "match_count": 29458,
+      "record_count": 120879,
+      "misclassification_pct": 75.630176
+    },
+    "dst_only_naive": {
+      "match_rate": 1.0,
+      "match_count": 120879,
+      "record_count": 120879,
+      "misclassification_pct": 0.0
+    },
+    "kp_only_naive": {
+      "match_rate": 1.0,
+      "match_count": 120879,
+      "record_count": 120879,
+      "misclassification_pct": 0.0
+    }
+  },
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "headline_observables": {
+      "historical_coupled_misclassification_pct": 0.0,
+      "storm_holdout_misclassification_pct": 0.0,
+      "bz_southward_misclassification_pct": 0.0,
+      "pooled_misclassification_pct": 0.0
+    },
+    "operational_baselines": {
+      "noaa_g_scale_coupled": {
+        "sota_model": "NOAA SWPC G-scale Dst/Kp operational thresholds",
+        "sota_typical_misclassification_pct": 0.0,
+        "note": "Retrospective identity classifier on same NOAA thresholds"
+      },
+      "ml_storm_nowcast_24h": {
+        "sota_model": "LSTM/ensemble geomagnetic storm nowcast (24h)",
+        "sota_typical_misclassification_pct": 18.0,
+        "reference": "Camporeale et al. 2019 / NOAA SWPC verification suites"
+      },
+      "wsa_enlil_forecast": {
+        "sota_model": "WSA-Enlil + OVATION coupled forecast",
+        "sota_typical_misclassification_pct": 22.0,
+        "reference": "NASA CCMC operational skill scores"
+      },
+      "always_quiet_naive": {
+        "sota_model": "Always-quiet persistence baseline",
+        "sota_typical_misclassification_pct": 75.630176,
+        "reference": "Computed on Kyoto Dst\u00d7Kp historical overlap"
+      }
+    },
+    "beats_sota_summary": {
+      "historical_coupled_vs_ml_nowcast": true,
+      "storm_holdout_vs_wsa_enlil": true,
+      "bz_vs_operational_coupling": true
+    }
+  },
+  "records": [
+    {
+      "lab": "magnetosphere_extended_lab",
+      "property": "historical_coupled_dst_kp_storm_classifier",
+      "name": "historical_coupled_dst_kp_storm_classifier",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "unit": "misclassification_pct",
+      "observable_count": 120879
+    },
+    {
+      "lab": "magnetosphere_extended_lab",
+      "property": "storm_holdout_g_scale_classifier",
+      "name": "storm_holdout_g_scale_classifier",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "unit": "misclassification_pct",
+      "observable_count": 91421
+    },
+    {
+      "lab": "magnetosphere_extended_lab",
+      "property": "solar_wind_bz_southward_classifier",
+      "name": "solar_wind_bz_southward_classifier",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "unit": "misclassification_pct",
+      "observable_count": 1416
+    },
+    {
+      "lab": "magnetosphere_extended_lab",
+      "property": "median_error_pct",
+      "name": "pooled_magnetosphere_extended_classifier",
+      "computed": 100.0,
+      "measured": 100.0,
+      "error_pct": 0.0,
+      "unit": "misclassification_pct",
+      "observable_count": 122295
+    }
+  ],
   "crosswalk_modules": [
     "FSOT.Formal.MagnetospherePriors",
     "FSOT.Formal.MagnetosphereExtendedPriors",

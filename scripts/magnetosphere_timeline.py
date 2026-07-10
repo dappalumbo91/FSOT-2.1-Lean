@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import bisect
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Iterable
 
 
@@ -66,13 +66,74 @@ def kp_rolling_max(
     kp_series: list[tuple[datetime, float]],
     *,
     window_hours: int,
+    kp_times: list[datetime] | None = None,
 ) -> float:
-    target = parse_time_tag(dst_tag)
-    vals: list[float] = []
-    for ts, kp in kp_series:
-        delta_h = (target - ts).total_seconds() / 3600.0
-        if 0.0 <= delta_h <= float(window_hours):
-            vals.append(kp)
-    if not vals:
+    if not kp_series:
         return 0.0
-    return max(vals)
+    target = parse_time_tag(dst_tag)
+    times = kp_times or [ts for ts, _ in kp_series]
+    end = bisect.bisect_right(times, target)
+    if end == 0:
+        return 0.0
+    start = bisect.bisect_left(times, target - timedelta(hours=window_hours))
+    window = kp_series[start:end]
+    if not window:
+        return 0.0
+    return max(kp for _, kp in window)
+
+
+def dst_storm_predicted(
+    dst_nt: float,
+    *,
+    dst_thr: float,
+    adj_dst: float,
+    union_classifier: bool = True,
+) -> bool:
+    """Storm when Dst crosses operational G-scale or FSOT-adjusted threshold."""
+    if union_classifier:
+        return dst_nt <= dst_thr or dst_nt <= adj_dst
+    return dst_nt <= adj_dst
+
+
+def kp_storm_predicted(
+    kp: float,
+    *,
+    kp_thr: float,
+    adj_kp: float,
+    union_classifier: bool = True,
+) -> bool:
+    """Storm when Kp crosses NOAA G-scale or FSOT fusion-adjusted threshold."""
+    if union_classifier:
+        return kp >= kp_thr or kp >= adj_kp
+    return kp >= adj_kp
+
+
+def coupled_dst_kp_storm_predicted(
+    dst_nt: float,
+    kp: float,
+    *,
+    dst_thr: float,
+    adj_dst: float,
+    kp_thr: float,
+    adj_kp: float,
+    union_classifier: bool = True,
+) -> bool:
+    """Coupled Dst×Kp storm leg — union mode fixes Dst margin-band false negatives."""
+    return dst_storm_predicted(
+        dst_nt, dst_thr=dst_thr, adj_dst=adj_dst, union_classifier=union_classifier
+    ) or kp_storm_predicted(
+        kp, kp_thr=kp_thr, adj_kp=adj_kp, union_classifier=union_classifier
+    )
+
+
+def southward_bz_predicted(
+    bz_gsm_nt: float,
+    *,
+    bz_thr: float,
+    adj_bz: float,
+    union_classifier: bool = True,
+) -> bool:
+    """Southward Bz when crossing operational or FSOT electron-adjusted threshold."""
+    if union_classifier:
+        return bz_gsm_nt < bz_thr or bz_gsm_nt < adj_bz
+    return bz_gsm_nt < adj_bz

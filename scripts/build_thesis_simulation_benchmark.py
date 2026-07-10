@@ -15,6 +15,12 @@ except ImportError:
     yaml = None
 
 ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS = ROOT / "scripts"
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
+
+from fsot_paths import rel_repo_path, thesis_root  # noqa: E402
+
 MANIFEST_PATH = ROOT / "data" / "thesis_simulation_manifest.yaml"
 OUTPUT = ROOT / "data" / "thesis_simulation_benchmark.json"
 
@@ -70,12 +76,12 @@ def build_benchmark(manifest_path: Path = MANIFEST_PATH) -> dict:
     if yaml is None:
         raise RuntimeError("PyYAML required")
     spec = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
-    thesis_root = Path(spec["source"]["thesis_root"])
+    thesis_dir = thesis_root()
 
     wave_records: list[dict] = []
     wave_by_file: dict[str, int] = {}
     for rel in spec["source"]["wave_observations"]:
-        path = thesis_root / rel
+        path = thesis_dir / rel
         if not path.exists():
             print(f"WARN: missing wave file {path}", file=sys.stderr)
             continue
@@ -88,7 +94,7 @@ def build_benchmark(manifest_path: Path = MANIFEST_PATH) -> dict:
     intrinsic_records: list[dict] = []
     intrinsic_by_file: dict[str, int] = {}
     for rel in spec["source"]["intrinsic_screens"]:
-        path = thesis_root / rel
+        path = thesis_dir / rel
         if not path.exists():
             print(f"WARN: missing intrinsic file {path}", file=sys.stderr)
             continue
@@ -101,13 +107,13 @@ def build_benchmark(manifest_path: Path = MANIFEST_PATH) -> dict:
     best_rmse = min(rmses) if rmses else None
     best_r2 = max(r2s) if r2s else None
 
-    lab_cfg_path = thesis_root / spec["source"].get("lab_config", "wave7_lab_config.json")
+    lab_cfg_path = thesis_dir / spec["source"].get("lab_config", "wave7_lab_config.json")
     lab_config_present = lab_cfg_path.exists()
 
     return {
         "benchmark_version": "1.0",
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "source_root": str(thesis_root),
+        "source_root": rel_repo_path(thesis_dir),
         "wave_file_count": len(wave_by_file),
         "wave_target_count": len(wave_records),
         "wave_by_file": wave_by_file,

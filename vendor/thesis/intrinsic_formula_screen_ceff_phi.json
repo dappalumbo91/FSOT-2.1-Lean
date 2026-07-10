@@ -1,0 +1,58 @@
+[
+    {
+        "name":  "ceff_phi_plus_pbase",
+        "rmse":  6.763968608085996,
+        "mae":  5.4295227349871755,
+        "r2":  0.096185800816425138,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + ((c_eff / phi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_phi_frame_in_gate",
+        "rmse":  6.7896732808638589,
+        "mae":  5.4640031628350378,
+        "r2":  0.0893033347387514,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_phi_additive",
+        "rmse":  6.7906041594371533,
+        "mae":  5.4650759593601821,
+        "r2":  0.08905360074083557,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_phi_n2_frame",
+        "rmse":  6.7921899939444161,
+        "mae":  5.4658746956341053,
+        "r2":  0.0886280778027192,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_phi_novelty",
+        "rmse":  6.8062867395905373,
+        "mae":  5.477801494590949,
+        "r2":  0.084841166619775366,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + ((k^9) / phi) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_phi_sqrt_gate",
+        "rmse":  6.8112885202266922,
+        "mae":  5.481816977212616,
+        "r2":  0.083495614829871556,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / sqrt(1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_phi_output_scale",
+        "rmse":  7.3747261830256674,
+        "mae":  5.8169953185231416,
+        "r2":  -0.074404437076652341,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + (c_eff / phi))"
+    },
+    {
+        "name":  "ceff_phi_log_weight",
+        "rmse":  12.915537670935231,
+        "mae":  10.900450140979631,
+        "r2":  -2.2953456466237947,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new + (c_eff / phi^2)) * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    }
+]

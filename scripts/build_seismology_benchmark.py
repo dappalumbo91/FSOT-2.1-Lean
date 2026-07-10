@@ -33,7 +33,9 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
     from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
 
     mod, authority_path = load_fsot_compute()
-    S_seis = float(mod.domain_scalar("Seismology"))
+    from geophysical_empirical_scalar import seismology_depth_cutoff_km  # noqa: E402
+
+    cutoff, scalar_meta = seismology_depth_cutoff_km(threshold, mod=mod)
 
     records: list[dict] = []
     for row in doc.get("events") or []:
@@ -42,7 +44,6 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
         if depth is None or mag is None:
             continue
         observed_shallow = float(depth) <= threshold
-        cutoff = threshold + abs(S_seis) * 8.0
         predicted_shallow = float(depth) <= cutoff
         match = observed_shallow == predicted_shallow
         records.append(
@@ -55,7 +56,7 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
                 "computed_shallow": 1.0 if predicted_shallow else 0.0,
                 "measured_shallow": 1.0 if observed_shallow else 0.0,
                 "error_pct": 0.0 if match else 100.0,
-                "S_seismology": round(S_seis, 6),
+                **scalar_meta,
             }
         )
 
@@ -71,7 +72,8 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
         "stability_match_count": matches,
         "stability_match_rate": matches / len(records) if records else 0.0,
         "median_error_pct": sorted(errs)[len(errs) // 2] if errs else None,
-        "D_eff": 18,
+        "D_eff": 15,
+        "empirical_mode": "weather_observed",
         "records": records,
     }
 

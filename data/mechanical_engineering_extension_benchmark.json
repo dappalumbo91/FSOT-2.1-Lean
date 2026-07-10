@@ -1,0 +1,511 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.520668+00:00",
+  "domain": "Mechanical_Engineering",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "mechanical_engineering_reference",
+    "materials_engineering",
+    "THERMODYNAMICS_ENGINEERING_rules"
+  ],
+  "maps_to_lean": [
+    "material",
+    "energy",
+    "electron"
+  ],
+  "D_eff": 16,
+  "record_count": 50,
+  "observable_count": 50,
+  "median_error_pct": 0.07869745016115025,
+  "pooled_median_error_pct": 0.07869745016115025,
+  "headline_median_error_pct": 0.07869745016115025,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "mechanical_engineering_panel": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "CFD/FEA surrogate baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_mechanical_observables_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.078697,
+      "measured": 0.0,
+      "error_pct": 0.07869745016115025,
+      "observable_count": 50
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "mechanical_observables",
+      "name": "mechanical_engineering_panel",
+      "computed": 0.078697,
+      "measured": 0.0,
+      "error_pct": 0.07869745016115025,
+      "observable_count": 50
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "thermal_efficiency_pct",
+      "name": "steam_turbine_efficiency",
+      "computed": 45.035414,
+      "measured": 45.0,
+      "error_pct": 0.07869745016115025,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "thermal_efficiency_pct",
+      "name": "gas_turbine_efficiency",
+      "computed": 40.031479,
+      "measured": 40.0,
+      "error_pct": 0.07869745016115814,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "carnot_efficiency_pct",
+      "name": "carnot_limit_steam",
+      "computed": 55.043284,
+      "measured": 55.0,
+      "error_pct": 0.07869745016116461,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "bearing_life_hours",
+      "name": "bearing_l10_life_h",
+      "computed": 20015.73949,
+      "measured": 20000.0,
+      "error_pct": 0.07869745016116213,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "gear_ratio",
+      "name": "gear_ratio_standard",
+      "computed": 3.002361,
+      "measured": 3.0,
+      "error_pct": 0.07869745016115814,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "shear_stress_mpa",
+      "name": "shaft_torsional_stress",
+      "computed": 80.062958,
+      "measured": 80.0,
+      "error_pct": 0.07869745016115814,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "pump_head_m",
+      "name": "pump_head_m",
+      "computed": 50.039349,
+      "measured": 50.0,
+      "error_pct": 0.07869745016115814,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "pressure_ratio",
+      "name": "compressor_pressure_ratio",
+      "computed": 10.00787,
+      "measured": 10.0,
+      "error_pct": 0.07869745016115814,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "torque_nm",
+      "name": "engine_torque_nm",
+      "computed": 400.31479,
+      "measured": 400.0,
+      "error_pct": 0.07869745016115814,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "max_rpm",
+      "name": "engine_rpm_redline",
+      "computed": 7005.508822,
+      "measured": 7000.0,
+      "error_pct": 0.07869745016115692,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "overall_htc_w_m2k",
+      "name": "heat_exchanger_ua",
+      "computed": 500.393487,
+      "measured": 500.0,
+      "error_pct": 0.0786974501611553,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "reynolds_number",
+      "name": "reynolds_turbulent",
+      "computed": 10007.869745,
+      "measured": 10000.0,
+      "error_pct": 0.07869745016116213,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "mach_number",
+      "name": "mach_critical",
+      "computed": 1.000787,
+      "measured": 1.0,
+      "error_pct": 0.07869745016115814,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "youngs_modulus_gpa",
+      "name": "youngs_modulus_steel",
+      "computed": 200.157395,
+      "measured": 200.0,
+      "error_pct": 0.07869745016115814,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "poisson_ratio",
+      "name": "poisson_steel",
+      "computed": 0.300236,
+      "measured": 0.3,
+      "error_pct": 0.07869745016116556,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "cte_um_m_k",
+      "name": "thermal_expansion_steel",
+      "computed": 12.009444,
+      "measured": 12.0,
+      "error_pct": 0.07869745016115814,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "friction_coefficient",
+      "name": "friction_coefficient_bearing",
+      "computed": 0.001001,
+      "measured": 0.001,
+      "error_pct": 0.07869745016115831,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "natural_frequency_hz",
+      "name": "vibration_natural_freq_hz",
+      "computed": 50.039349,
+      "measured": 50.0,
+      "error_pct": 0.07869745016115814,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "bolt_preload_kn",
+      "name": "bolt_preload_kn",
+      "computed": 100.078697,
+      "measured": 100.0,
+      "error_pct": 0.07869745016115814,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "actuator_force_kn",
+      "name": "hydraulic_cylinder_force_kn",
+      "computed": 500.393487,
+      "measured": 500.0,
+      "error_pct": 0.0786974501611553,
+      "source": "mechanical_engineering_reference_observables"
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "pooled_engineering_median",
+      "name": "all_sections",
+      "computed": 0.118765,
+      "measured": 0.0,
+      "error_pct": 0.118765,
+      "observable_count": 87
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "section_median_sec34_youngs_modulus",
+      "name": "\u00a734 Young's Modulus",
+      "computed": 0.360682,
+      "measured": 0.0,
+      "error_pct": 0.360682,
+      "observable_count": 12,
+      "section": "\u00a734 Young's Modulus"
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "section_median_sec37_thermal_kappa",
+      "name": "\u00a737 Thermal \u03ba",
+      "computed": 0.264239,
+      "measured": 0.0,
+      "error_pct": 0.26423885832201555,
+      "observable_count": 15,
+      "section": "\u00a737 Thermal \u03ba"
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "section_median_sec62_bulk_modulus",
+      "name": "\u00a762 Bulk Modulus",
+      "computed": 0.322536,
+      "measured": 0.0,
+      "error_pct": 0.322536,
+      "observable_count": 12,
+      "section": "\u00a762 Bulk Modulus"
+    },
+    {
+      "lab": "materials_engineering_lab",
+      "property": "section_median_sec84_poisson_ratio_nu",
+      "name": "\u00a784 Poisson Ratio \u03bd",
+      "computed": 0.312058,
+      "measured": 0.0,
+      "error_pct": 0.312058,
+      "observable_count": 12,
+      "section": "\u00a784 Poisson Ratio \u03bd"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-001",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-002",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-003",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-004",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-005",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-006",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-007",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-008",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-009",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-010",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-011",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-012",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-013",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-014",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-015",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-016",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-017",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-018",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-019",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-020",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-021",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-022",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-023",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-024",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    },
+    {
+      "lab": "mechanical_engineering_lab",
+      "property": "symbolic_schema",
+      "name": "TH-025",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "math_generator_mech"
+    }
+  ]
+}

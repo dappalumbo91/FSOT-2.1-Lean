@@ -1,0 +1,5846 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.493366+00:00",
+  "domain": "Paleontology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "PBDB",
+    "USGS_seismology_bridge"
+  ],
+  "maps_to_lean": [
+    "energy",
+    "galactic",
+    "biological"
+  ],
+  "D_eff": 18,
+  "record_count": 630,
+  "observable_count": 630,
+  "median_error_pct": 0.017836062884406152,
+  "pooled_median_error_pct": 0.017836062884406152,
+  "headline_median_error_pct": 0.017836062884406152,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "paleontology_pbdb": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "PBDB stratigraphic QA"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fossil_occurrence_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.017836,
+      "measured": 0.0,
+      "error_pct": 0.017836062884406152,
+      "observable_count": 630
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fossil_occurrence",
+      "name": "paleontology_pbdb",
+      "computed": 0.017836,
+      "measured": 0.0,
+      "error_pct": 0.017836062884406152,
+      "observable_count": 630
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.769058,
+      "measured": 36.762501,
+      "error_pct": 0.017836062884406634,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -95.560376,
+      "measured": -95.543335,
+      "error_pct": 0.017836062884411003,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 312.841843,
+      "measured": 312.8,
+      "error_pct": 0.01337704716331671,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 35.623575,
+      "measured": 35.617222,
+      "error_pct": 0.017836062884419135,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -96.041015,
+      "measured": -96.023888,
+      "error_pct": 0.017836062884419232,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 312.841843,
+      "measured": 312.8,
+      "error_pct": 0.01337704716331671,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 39.769314,
+      "measured": 39.762222,
+      "error_pct": 0.01783606288441628,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -93.8209,
+      "measured": -93.804169,
+      "error_pct": 0.017836062884418875,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 306.040934,
+      "measured": 306.0,
+      "error_pct": 0.013377047163311057,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.566522,
+      "measured": 36.560001,
+      "error_pct": 0.01783606288441267,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -95.940998,
+      "measured": -95.923889,
+      "error_pct": 0.017836062884407925,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 306.040934,
+      "measured": 306.0,
+      "error_pct": 0.013377047163311057,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 43.266047,
+      "measured": 43.258331,
+      "error_pct": 0.017836062884420387,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -93.649474,
+      "measured": -93.632774,
+      "error_pct": 0.017836062884409858,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 306.040934,
+      "measured": 306.0,
+      "error_pct": 0.013377047163311057,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 37.009934,
+      "measured": 37.003334,
+      "error_pct": 0.01783606288441765,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -95.845148,
+      "measured": -95.828056,
+      "error_pct": 0.01783606288441017,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 306.040934,
+      "measured": 306.0,
+      "error_pct": 0.013377047163311057,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.552073,
+      "measured": 36.545555,
+      "error_pct": 0.017836062884411863,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -96.10158,
+      "measured": -96.084442,
+      "error_pct": 0.017836062884416148,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 306.040934,
+      "measured": 306.0,
+      "error_pct": 0.013377047163311057,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoida indet.",
+      "computed": 47.425125,
+      "measured": 47.416668,
+      "error_pct": 0.0178360628844164,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoida indet.",
+      "computed": -105.6105,
+      "measured": -105.591667,
+      "error_pct": 0.01783606288441566,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoida indet.",
+      "computed": 358.908005,
+      "measured": 358.86,
+      "error_pct": 0.013377047163307669,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 51.009096,
+      "measured": 51.0,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": 7.83473,
+      "measured": 7.833333,
+      "error_pct": 0.01783606288441401,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 393.522635,
+      "measured": 393.47,
+      "error_pct": 0.013377047163304817,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 161.521604,
+      "measured": 161.5,
+      "error_pct": 0.013377047163315947,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 161.521604,
+      "measured": 161.5,
+      "error_pct": 0.013377047163315947,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 161.521604,
+      "measured": 161.5,
+      "error_pct": 0.013377047163315947,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.492574,
+      "measured": 70.480003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -21.973918,
+      "measured": -21.969999,
+      "error_pct": 0.01783606288440598,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 37.226082,
+      "measured": 37.219444,
+      "error_pct": 0.017836062884422174,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -99.91476,
+      "measured": -99.896942,
+      "error_pct": 0.01783606288441915,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 38.609664,
+      "measured": 38.602779,
+      "error_pct": 0.017836062884416425,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -98.007476,
+      "measured": -97.989998,
+      "error_pct": 0.017836062884408147,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 51.992606,
+      "measured": 51.983334,
+      "error_pct": 0.017836062884409535,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": 19.020058,
+      "measured": 19.016666,
+      "error_pct": 0.017836062884404525,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 125.786824,
+      "measured": 125.77,
+      "error_pct": 0.013377047163310249,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 43.311614,
+      "measured": 43.30389,
+      "error_pct": 0.017836062884409285,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": 40.266905,
+      "measured": 40.259724,
+      "error_pct": 0.017836062884411984,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea varians",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea varians",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea varians",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea coupei",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea coupei",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea coupei",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea rothomagensis",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea rothomagensis",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea rothomagensis",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea mantelli",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea mantelli",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea mantelli",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea cenomanensis",
+      "computed": 47.308435,
+      "measured": 47.299999,
+      "error_pct": 0.01783606288440609,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea cenomanensis",
+      "computed": 5.417633,
+      "measured": 5.416667,
+      "error_pct": 0.017836062884412016,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea cenomanensis",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea mantelli",
+      "computed": 47.308435,
+      "measured": 47.299999,
+      "error_pct": 0.01783606288440609,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea mantelli",
+      "computed": 5.417633,
+      "measured": 5.416667,
+      "error_pct": 0.017836062884412016,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea mantelli",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea varians",
+      "computed": 46.591641,
+      "measured": 46.583332,
+      "error_pct": 0.01783606288440993,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea varians",
+      "computed": 6.717865,
+      "measured": 6.716667,
+      "error_pct": 0.017836062884412248,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea varians",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea roissyanus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea roissyanus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea roissyanus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea lyelli",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea lyelli",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea lyelli",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea interruptus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea interruptus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea interruptus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea subalpinus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea subalpinus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea subalpinus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea quercifolius",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea quercifolius",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea quercifolius",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea beudanti",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea beudanti",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea beudanti",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea parandieri",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea parandieri",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea parandieri",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea ladidorsatus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea ladidorsatus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea ladidorsatus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea cleon",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea cleon",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea cleon",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea mammillatus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea mammillatus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea mammillatus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea regularis",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea regularis",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea regularis",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea tardefurcatus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea tardefurcatus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea tardefurcatus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea interruptus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea interruptus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea interruptus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea milletianus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea milletianus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea milletianus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea subalpinus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea subalpinus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea subalpinus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea beudati",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea beudati",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea beudati",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea mammillatus",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea mammillatus",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea mammillatus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea milletianus",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea milletianus",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea milletianus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea campichii",
+      "computed": 46.69166,
+      "measured": 46.683334,
+      "error_pct": 0.017836062884416727,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea campichii",
+      "computed": 6.334463,
+      "measured": 6.333333,
+      "error_pct": 0.017836062884414205,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea campichii",
+      "computed": 121.41624,
+      "measured": 121.4,
+      "error_pct": 0.013377047163314285,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea campichii",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea campichii",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea campichii",
+      "computed": 121.41624,
+      "measured": 121.4,
+      "error_pct": 0.013377047163314285,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea furcatus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea furcatus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea furcatus",
+      "computed": 121.41624,
+      "measured": 121.4,
+      "error_pct": 0.013377047163314285,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea martinii",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea martinii",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea martinii",
+      "computed": 121.41624,
+      "measured": 121.4,
+      "error_pct": 0.013377047163314285,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea gargasensis",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea gargasensis",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea gargasensis",
+      "computed": 121.41624,
+      "measured": 121.4,
+      "error_pct": 0.013377047163314285,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea campichei",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea campichei",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea campichei",
+      "computed": 121.41624,
+      "measured": 121.4,
+      "error_pct": 0.013377047163314285,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea campichei",
+      "computed": 46.69166,
+      "measured": 46.683334,
+      "error_pct": 0.017836062884416727,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea campichei",
+      "computed": 6.334463,
+      "measured": 6.333333,
+      "error_pct": 0.017836062884414205,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea campichei",
+      "computed": 121.41624,
+      "measured": 121.4,
+      "error_pct": 0.013377047163314285,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea castellanensis",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea castellanensis",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea castellanensis",
+      "computed": 125.786824,
+      "measured": 125.77,
+      "error_pct": 0.013377047163310249,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea radiatus",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea radiatus",
+      "computed": 6.751204,
+      "measured": 6.75,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea radiatus",
+      "computed": 125.786824,
+      "measured": 125.77,
+      "error_pct": 0.013377047163310249,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 6.751204,
+      "measured": 6.75,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 125.786824,
+      "measured": 125.77,
+      "error_pct": 0.013377047163310249,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea castellanensis",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea castellanensis",
+      "computed": 6.751204,
+      "measured": 6.75,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea castellanensis",
+      "computed": 125.786824,
+      "measured": 125.77,
+      "error_pct": 0.013377047163310249,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea sueurii",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea sueurii",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea sueurii",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea radiatus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea radiatus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea radiatus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea castellanensis",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea castellanensis",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea castellanensis",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea arnoldi",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea arnoldi",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea arnoldi",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea subfimbriatus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea subfimbriatus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea subfimbriatus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea carteroni",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea carteroni",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea carteroni",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea astierianus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea astierianus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea astierianus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea radiatus",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea radiatus",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea radiatus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea castellanensis",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea castellanensis",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea castellanensis",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea carteroni",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea carteroni",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea carteroni",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea astierianus",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea astierianus",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea astierianus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea castellanensis",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea castellanensis",
+      "computed": 6.751204,
+      "measured": 6.75,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea castellanensis",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea astierianus",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea astierianus",
+      "computed": 6.751204,
+      "measured": 6.75,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea astierianus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea castellanensis",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea castellanensis",
+      "computed": 7.084596,
+      "measured": 7.083333,
+      "error_pct": 0.017836062884414094,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea castellanensis",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea radiatus",
+      "computed": 46.791677,
+      "measured": 46.783333,
+      "error_pct": 0.017836062884409535,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea radiatus",
+      "computed": 6.051079,
+      "measured": 6.05,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea radiatus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 46.791677,
+      "measured": 46.783333,
+      "error_pct": 0.017836062884409535,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 6.051079,
+      "measured": 6.05,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea castellanensis",
+      "computed": 46.791677,
+      "measured": 46.783333,
+      "error_pct": 0.017836062884409535,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea castellanensis",
+      "computed": 6.051079,
+      "measured": 6.05,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea castellanensis",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea arnoldi",
+      "computed": 46.791677,
+      "measured": 46.783333,
+      "error_pct": 0.017836062884409535,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea arnoldi",
+      "computed": 6.051079,
+      "measured": 6.05,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea arnoldi",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 46.791677,
+      "measured": 46.783333,
+      "error_pct": 0.017836062884409535,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 6.051079,
+      "measured": 6.05,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea astierianus",
+      "computed": 46.791677,
+      "measured": 46.783333,
+      "error_pct": 0.017836062884409535,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea astierianus",
+      "computed": 6.051079,
+      "measured": 6.05,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea astierianus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea castellanensis",
+      "computed": 46.791677,
+      "measured": 46.783333,
+      "error_pct": 0.017836062884409535,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea castellanensis",
+      "computed": 6.051079,
+      "measured": 6.05,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea castellanensis",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea radiatus",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea radiatus",
+      "computed": 6.667856,
+      "measured": 6.666667,
+      "error_pct": 0.017836062884412238,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea radiatus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 6.667856,
+      "measured": 6.666667,
+      "error_pct": 0.017836062884412238,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea castellanensis",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea castellanensis",
+      "computed": 6.667856,
+      "measured": 6.666667,
+      "error_pct": 0.017836062884412238,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea castellanensis",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea arnoldi",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea arnoldi",
+      "computed": 6.667856,
+      "measured": 6.666667,
+      "error_pct": 0.017836062884412238,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea arnoldi",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 6.667856,
+      "measured": 6.666667,
+      "error_pct": 0.017836062884412238,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea carteroni",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea carteroni",
+      "computed": 6.667856,
+      "measured": 6.666667,
+      "error_pct": 0.017836062884412238,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea carteroni",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea astierianus",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea astierianus",
+      "computed": 6.667856,
+      "measured": 6.666667,
+      "error_pct": 0.017836062884412238,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea astierianus",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea mammillatus",
+      "computed": 47.308435,
+      "measured": 47.299999,
+      "error_pct": 0.01783606288440609,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea mammillatus",
+      "computed": 5.417633,
+      "measured": 5.416667,
+      "error_pct": 0.017836062884412016,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea mammillatus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea milletianus",
+      "computed": 47.308435,
+      "measured": 47.299999,
+      "error_pct": 0.01783606288440609,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea milletianus",
+      "computed": 5.417633,
+      "measured": 5.416667,
+      "error_pct": 0.017836062884412016,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea milletianus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea radiatus",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea radiatus",
+      "computed": 6.667856,
+      "measured": 6.666667,
+      "error_pct": 0.017836062884412238,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea radiatus",
+      "computed": 125.786824,
+      "measured": 125.77,
+      "error_pct": 0.013377047163310249,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 6.667856,
+      "measured": 6.666667,
+      "error_pct": 0.017836062884412238,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea leopoldinus",
+      "computed": 125.786824,
+      "measured": 125.77,
+      "error_pct": 0.013377047163310249,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea castellanensis",
+      "computed": 47.075061,
+      "measured": 47.066666,
+      "error_pct": 0.017836062884413466,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea castellanensis",
+      "computed": 6.667856,
+      "measured": 6.666667,
+      "error_pct": 0.017836062884412238,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea castellanensis",
+      "computed": 125.786824,
+      "measured": 125.77,
+      "error_pct": 0.013377047163310249,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea gevrillianus",
+      "computed": 46.791677,
+      "measured": 46.783333,
+      "error_pct": 0.017836062884409535,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea gevrillianus",
+      "computed": 6.051079,
+      "measured": 6.05,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea gevrillianus",
+      "computed": 137.068333,
+      "measured": 137.05,
+      "error_pct": 0.013377047163302442,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea marcousanus",
+      "computed": 46.791677,
+      "measured": 46.783333,
+      "error_pct": 0.017836062884409535,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea marcousanus",
+      "computed": 6.051079,
+      "measured": 6.05,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea marcousanus",
+      "computed": 137.068333,
+      "measured": 137.05,
+      "error_pct": 0.013377047163302442,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea gevrillianus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea gevrillianus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea gevrillianus",
+      "computed": 137.068333,
+      "measured": 137.05,
+      "error_pct": 0.013377047163302442,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea marcousanus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea marcousanus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea marcousanus",
+      "computed": 137.068333,
+      "measured": 137.05,
+      "error_pct": 0.013377047163302442,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea desori",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea desori",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea desori",
+      "computed": 137.068333,
+      "measured": 137.05,
+      "error_pct": 0.013377047163302442,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea neocomiensis",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea neocomiensis",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea neocomiensis",
+      "computed": 137.068333,
+      "measured": 137.05,
+      "error_pct": 0.013377047163302442,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea thurmanni",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea thurmanni",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea thurmanni",
+      "computed": 137.068333,
+      "measured": 137.05,
+      "error_pct": 0.013377047163302442,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea celestini",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea celestini",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea celestini",
+      "computed": 137.068333,
+      "measured": 137.05,
+      "error_pct": 0.013377047163302442,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 46.841685,
+      "measured": 46.833332,
+      "error_pct": 0.017836062884406152,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 6.517829,
+      "measured": 6.516667,
+      "error_pct": 0.017836062884412217,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea bidichotomus",
+      "computed": 137.068333,
+      "measured": 137.05,
+      "error_pct": 0.013377047163302442,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea martinii",
+      "computed": 46.724999,
+      "measured": 46.716667,
+      "error_pct": 0.017836062884409257,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea martinii",
+      "computed": 6.301124,
+      "measured": 6.3,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea martinii",
+      "computed": 121.41624,
+      "measured": 121.4,
+      "error_pct": 0.013377047163314285,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea furcatus",
+      "computed": 46.724999,
+      "measured": 46.716667,
+      "error_pct": 0.017836062884409257,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea furcatus",
+      "computed": 6.301124,
+      "measured": 6.3,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea furcatus",
+      "computed": 121.41624,
+      "measured": 121.4,
+      "error_pct": 0.013377047163314285,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea mammillatus",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea mammillatus",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea mammillatus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea regularis",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea regularis",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea regularis",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea tardefurcatus",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea tardefurcatus",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea tardefurcatus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea interruptus",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea interruptus",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea interruptus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea milletianus",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea milletianus",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea milletianus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea subalpinus",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea subalpinus",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea subalpinus",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea beudanti",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea beudanti",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea beudanti",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea parandieri",
+      "computed": 47.058391,
+      "measured": 47.049999,
+      "error_pct": 0.017836062884409826,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea parandieri",
+      "computed": 6.584507,
+      "measured": 6.583333,
+      "error_pct": 0.017836062884414167,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea parandieri",
+      "computed": 113.215143,
+      "measured": 113.2,
+      "error_pct": 0.013377047163306758,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea leopoldi",
+      "computed": 47.025052,
+      "measured": 47.016666,
+      "error_pct": 0.017836062884417244,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea leopoldi",
+      "computed": 6.917901,
+      "measured": 6.916667,
+      "error_pct": 0.017836062884412272,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea leopoldi",
+      "computed": 132.617738,
+      "measured": 132.6,
+      "error_pct": 0.013377047163313916,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 70.812631,
+      "measured": 70.800003,
+      "error_pct": 0.017836062884412383,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": 97.650745,
+      "measured": 97.633331,
+      "error_pct": 0.01783606288441729,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 73.01302,
+      "measured": 73.0,
+      "error_pct": 0.017836062884403463,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": 113.020155,
+      "measured": 113.0,
+      "error_pct": 0.01783606288440691,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 149.219959,
+      "measured": 149.2,
+      "error_pct": 0.013377047163312278,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 64.511504,
+      "measured": 64.5,
+      "error_pct": 0.017836062884407686,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": 57.010167,
+      "measured": 57.0,
+      "error_pct": 0.017836062884413195,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 143.119143,
+      "measured": 143.1,
+      "error_pct": 0.013377047163301826,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 14.555096,
+      "measured": 14.5525,
+      "error_pct": 0.017836062884410142,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": 48.051625,
+      "measured": 48.043056,
+      "error_pct": 0.017836062884409015,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 143.119143,
+      "measured": 143.1,
+      "error_pct": 0.013377047163301826,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 14.555096,
+      "measured": 14.5525,
+      "error_pct": 0.017836062884410142,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": 48.051625,
+      "measured": 48.043056,
+      "error_pct": 0.017836062884409015,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 143.119143,
+      "measured": 143.1,
+      "error_pct": 0.013377047163301826,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 38.290161,
+      "measured": 38.283333,
+      "error_pct": 0.017836062884418004,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -104.735344,
+      "measured": -104.716667,
+      "error_pct": 0.01783606288441144,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 38.290161,
+      "measured": 38.283333,
+      "error_pct": 0.017836062884418004,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -104.735344,
+      "measured": -104.716667,
+      "error_pct": 0.01783606288441144,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 38.290161,
+      "measured": 38.283333,
+      "error_pct": 0.017836062884418004,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -104.735344,
+      "measured": -104.716667,
+      "error_pct": 0.01783606288441144,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 38.290161,
+      "measured": 38.283333,
+      "error_pct": 0.017836062884418004,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -104.735344,
+      "measured": -104.716667,
+      "error_pct": 0.01783606288441144,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 93.912561,
+      "measured": 93.9,
+      "error_pct": 0.013377047163316516,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.356481,
+      "measured": 36.349998,
+      "error_pct": 0.017836062884419135,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -109.836253,
+      "measured": -109.816666,
+      "error_pct": 0.01783606288441493,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea <indet. 1>",
+      "computed": 36.356481,
+      "measured": 36.349998,
+      "error_pct": 0.017836062884419135,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea <indet. 1>",
+      "computed": -109.836253,
+      "measured": -109.816666,
+      "error_pct": 0.01783606288441493,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea <indet. 1>",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea <indet. 2>",
+      "computed": 36.356481,
+      "measured": 36.349998,
+      "error_pct": 0.017836062884419135,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea <indet. 2>",
+      "computed": -109.836253,
+      "measured": -109.816666,
+      "error_pct": 0.01783606288441493,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea <indet. 2>",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.356481,
+      "measured": 36.349998,
+      "error_pct": 0.017836062884419135,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -109.836253,
+      "measured": -109.816666,
+      "error_pct": 0.01783606288441493,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.356481,
+      "measured": 36.349998,
+      "error_pct": 0.017836062884419135,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -109.836253,
+      "measured": -109.816666,
+      "error_pct": 0.01783606288441493,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.356481,
+      "measured": 36.349998,
+      "error_pct": 0.017836062884419135,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -109.836253,
+      "measured": -109.816666,
+      "error_pct": 0.01783606288441493,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.356481,
+      "measured": 36.349998,
+      "error_pct": 0.017836062884419135,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -109.836253,
+      "measured": -109.816666,
+      "error_pct": 0.01783606288441493,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.356481,
+      "measured": 36.349998,
+      "error_pct": 0.017836062884419135,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -109.836253,
+      "measured": -109.816666,
+      "error_pct": 0.01783606288441493,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.356481,
+      "measured": 36.349998,
+      "error_pct": 0.017836062884419135,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -109.836253,
+      "measured": -109.816666,
+      "error_pct": 0.01783606288441493,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lat",
+      "name": "Ammonoidea indet.",
+      "computed": 36.356481,
+      "measured": 36.349998,
+      "error_pct": 0.017836062884419135,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "lng",
+      "name": "Ammonoidea indet.",
+      "computed": -109.836253,
+      "measured": -109.816666,
+      "error_pct": 0.01783606288441493,
+      "source": "pbdb_api"
+    },
+    {
+      "lab": "paleontology_lab",
+      "property": "geologic_age_ma",
+      "name": "Ammonoidea indet.",
+      "computed": 100.513444,
+      "measured": 100.5,
+      "error_pct": 0.01337704716331078,
+      "source": "pbdb_age"
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgkh",
+      "mag": 4.6,
+      "depth_km": 127.013,
+      "computed_shallow": 0.0,
+      "measured_shallow": 0.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgkd",
+      "mag": 4.6,
+      "depth_km": 573.817,
+      "computed_shallow": 0.0,
+      "measured_shallow": 0.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgkb",
+      "mag": 4.7,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pj77",
+      "mag": 4.6,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgjz",
+      "mag": 4.8,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgjf",
+      "mag": 4.6,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgj9",
+      "mag": 4.7,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgir",
+      "mag": 4.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pghx",
+      "mag": 4.8,
+      "depth_km": 68.889,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pghw",
+      "mag": 4.5,
+      "depth_km": 92.136,
+      "computed_shallow": 0.0,
+      "measured_shallow": 0.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pghr",
+      "mag": 4.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pghq",
+      "mag": 4.6,
+      "depth_km": 557.681,
+      "computed_shallow": 0.0,
+      "measured_shallow": 0.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pghc",
+      "mag": 4.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pj7b",
+      "mag": 4.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgh3",
+      "mag": 4.9,
+      "depth_km": 507.609,
+      "computed_shallow": 0.0,
+      "measured_shallow": 0.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pggx",
+      "mag": 4.6,
+      "depth_km": 48.507,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pggd",
+      "mag": 4.8,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgg7",
+      "mag": 4.8,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgg2",
+      "mag": 4.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgfs",
+      "mag": 4.6,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgf9",
+      "mag": 5.1,
+      "depth_km": 66.612,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgfd",
+      "mag": 4.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgf5",
+      "mag": 5.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pget",
+      "mag": 5.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pj6j",
+      "mag": 4.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pge2",
+      "mag": 5.5,
+      "depth_km": 34.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pj6e",
+      "mag": 4.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgep",
+      "mag": 4.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgd5",
+      "mag": 4.5,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    },
+    {
+      "lab": "seismology_lab",
+      "property": "shallow_earthquake_classifier",
+      "name": "us6000pgcu",
+      "mag": 4.9,
+      "depth_km": 10.0,
+      "computed_shallow": 1.0,
+      "measured_shallow": 1.0,
+      "error_pct": 0.0,
+      "S_seismology_empirical": 1.87276,
+      "environmental_pressure": 0.471921,
+      "depth_cutoff_km": 86.8698
+    }
+  ]
+}

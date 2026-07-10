@@ -1,0 +1,742 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.575618+00:00",
+  "domain": "Speleology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "speleology_reference",
+    "USGS_hydrology",
+    "geochemistry"
+  ],
+  "maps_to_lean": [
+    "energy",
+    "galactic",
+    "biological"
+  ],
+  "D_eff": 16,
+  "record_count": 65,
+  "observable_count": 65,
+  "median_error_pct": 0.04459015721103015,
+  "pooled_median_error_pct": 0.04459015721103015,
+  "headline_median_error_pct": 0.04459015721103015,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "speleology_panel": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "Karst hydrogeology surrogates"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_cave_observables_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.04459,
+      "measured": 0.0,
+      "error_pct": 0.04459015721103015,
+      "observable_count": 65
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "cave_observables",
+      "name": "speleology_panel",
+      "computed": 0.04459,
+      "measured": 0.0,
+      "error_pct": 0.04459015721103015,
+      "observable_count": 65
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "speleology_lab",
+      "property": "cave_depth_m",
+      "name": "krubera_voronya_depth",
+      "computed": 2197.979646,
+      "measured": 2197.0,
+      "error_pct": 0.044590157211034764,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "cave_depth_m",
+      "name": "veryovkina_depth",
+      "computed": 2212.986334,
+      "measured": 2212.0,
+      "error_pct": 0.0445901572110272,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "cave_length_km",
+      "name": "mammoth_cave_length",
+      "computed": 676.301429,
+      "measured": 676.0,
+      "error_pct": 0.044590157211030886,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "cave_depth_m",
+      "name": "sistema_huautla_depth",
+      "computed": 1545.688918,
+      "measured": 1545.0,
+      "error_pct": 0.044590157211038275,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "cave_depth_m",
+      "name": "goebbels_schacht_depth",
+      "computed": 1543.688026,
+      "measured": 1543.0,
+      "error_pct": 0.04459015721103875,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "air_temperature_c",
+      "name": "cave_air_temp_mean",
+      "computed": 12.005351,
+      "measured": 12.0,
+      "error_pct": 0.04459015721103299,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "relative_humidity_pct",
+      "name": "cave_humidity",
+      "computed": 98.043698,
+      "measured": 98.0,
+      "error_pct": 0.04459015721102574,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "calcite_growth_mm_yr",
+      "name": "stalactite_growth_rate",
+      "computed": 0.100045,
+      "measured": 0.1,
+      "error_pct": 0.04459015721103299,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "co2_ppm",
+      "name": "cave_co2_ppm",
+      "computed": 2000.891803,
+      "measured": 2000.0,
+      "error_pct": 0.04459015721103015,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "water_table_depth_m",
+      "name": "phreatic_zone_depth",
+      "computed": 50.022295,
+      "measured": 50.0,
+      "error_pct": 0.04459015721103299,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "drip_rate_ml_min",
+      "name": "cave_drip_rate",
+      "computed": 2.000892,
+      "measured": 2.0,
+      "error_pct": 0.04459015721103299,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "bats_per_m2",
+      "name": "bat_colony_density",
+      "computed": 0.500223,
+      "measured": 0.5,
+      "error_pct": 0.04459015721103299,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "passage_width_m",
+      "name": "cave_passage_width",
+      "computed": 5.00223,
+      "measured": 5.0,
+      "error_pct": 0.04459015721103299,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "passage_height_m",
+      "name": "cave_passage_height",
+      "computed": 3.001338,
+      "measured": 3.0,
+      "error_pct": 0.04459015721103299,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "discharge_l_s",
+      "name": "karst_spring_discharge",
+      "computed": 500.222951,
+      "measured": 500.0,
+      "error_pct": 0.04459015721103015,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "sediment_thickness_m",
+      "name": "cave_sediment_thickness",
+      "computed": 2.000892,
+      "measured": 2.0,
+      "error_pct": 0.04459015721103299,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "radon_bq_m3",
+      "name": "cave_radon_bq_m3",
+      "computed": 500.222951,
+      "measured": 500.0,
+      "error_pct": 0.04459015721103015,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "partial_pressure_co2_pa",
+      "name": "cave_pco2_pa",
+      "computed": 500.222951,
+      "measured": 500.0,
+      "error_pct": 0.04459015721103015,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "entrance_altitude_m",
+      "name": "cave_entrance_altitude",
+      "computed": 1500.668852,
+      "measured": 1500.0,
+      "error_pct": 0.04459015721102636,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "speleology_lab",
+      "property": "air_exchange_per_day",
+      "name": "cave_ventilation_rate",
+      "computed": 0.500223,
+      "measured": 0.5,
+      "error_pct": 0.04459015721103299,
+      "source": "speleology_reference_observables"
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-01",
+      "station": "01646500",
+      "month": "2015-01",
+      "mean_cfs": 7970.97,
+      "anomaly_pct": -41.1483,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-02",
+      "station": "01646500",
+      "month": "2015-02",
+      "mean_cfs": 6148.57,
+      "anomaly_pct": -64.567,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-03",
+      "station": "01646500",
+      "month": "2015-03",
+      "mean_cfs": 23816.13,
+      "anomaly_pct": 46.1506,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-04",
+      "station": "01646500",
+      "month": "2015-04",
+      "mean_cfs": 18146.33,
+      "anomaly_pct": 10.2042,
+      "computed_quiet": 1.0,
+      "measured_quiet": 1.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-05",
+      "station": "01646500",
+      "month": "2015-05",
+      "mean_cfs": 8526.45,
+      "anomaly_pct": -54.0762,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-06",
+      "station": "01646500",
+      "month": "2015-06",
+      "mean_cfs": 10105.33,
+      "anomaly_pct": -1.7479,
+      "computed_quiet": 1.0,
+      "measured_quiet": 1.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-07",
+      "station": "01646500",
+      "month": "2015-07",
+      "mean_cfs": 8019.68,
+      "anomaly_pct": 44.2899,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-08",
+      "station": "01646500",
+      "month": "2015-08",
+      "mean_cfs": 2245.16,
+      "anomaly_pct": -60.5661,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-09",
+      "station": "01646500",
+      "month": "2015-09",
+      "mean_cfs": 1983.33,
+      "anomaly_pct": -75.9122,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-10",
+      "station": "01646500",
+      "month": "2015-10",
+      "mean_cfs": 7504.84,
+      "anomaly_pct": 35.6473,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-11",
+      "station": "01646500",
+      "month": "2015-11",
+      "mean_cfs": 5322.33,
+      "anomaly_pct": -34.1325,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2015-12",
+      "station": "01646500",
+      "month": "2015-12",
+      "mean_cfs": 11028.71,
+      "anomaly_pct": 0.7915,
+      "computed_quiet": 1.0,
+      "measured_quiet": 1.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-01",
+      "station": "01646500",
+      "month": "2016-01",
+      "mean_cfs": 13000.0,
+      "anomaly_pct": -4.0177,
+      "computed_quiet": 1.0,
+      "measured_quiet": 1.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-02",
+      "station": "01646500",
+      "month": "2016-02",
+      "mean_cfs": 39041.38,
+      "anomaly_pct": 124.9881,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-03",
+      "station": "01646500",
+      "month": "2016-03",
+      "mean_cfs": 13347.42,
+      "anomaly_pct": -18.0919,
+      "computed_quiet": 1.0,
+      "measured_quiet": 1.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-04",
+      "station": "01646500",
+      "month": "2016-04",
+      "mean_cfs": 6727.67,
+      "anomaly_pct": -59.1423,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-05",
+      "station": "01646500",
+      "month": "2016-05",
+      "mean_cfs": 19434.52,
+      "anomaly_pct": 4.6751,
+      "computed_quiet": 1.0,
+      "measured_quiet": 1.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-06",
+      "station": "01646500",
+      "month": "2016-06",
+      "mean_cfs": 10587.67,
+      "anomaly_pct": 2.9418,
+      "computed_quiet": 1.0,
+      "measured_quiet": 1.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-07",
+      "station": "01646500",
+      "month": "2016-07",
+      "mean_cfs": 4174.19,
+      "anomaly_pct": -24.8981,
+      "computed_quiet": 1.0,
+      "measured_quiet": 1.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-08",
+      "station": "01646500",
+      "month": "2016-08",
+      "mean_cfs": 3407.42,
+      "anomaly_pct": -40.1523,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-09",
+      "station": "01646500",
+      "month": "2016-09",
+      "mean_cfs": 1652.33,
+      "anomaly_pct": -79.9322,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-10",
+      "station": "01646500",
+      "month": "2016-10",
+      "mean_cfs": 4016.13,
+      "anomaly_pct": -27.4099,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-11",
+      "station": "01646500",
+      "month": "2016-11",
+      "mean_cfs": 1782.33,
+      "anomaly_pct": -77.9424,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2016-12",
+      "station": "01646500",
+      "month": "2016-12",
+      "mean_cfs": 4350.32,
+      "anomaly_pct": -60.2424,
+      "computed_quiet": 0.0,
+      "measured_quiet": 0.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "hydrology_lab",
+      "property": "streamflow_anomaly_classifier",
+      "name": "01646500:2017-01",
+      "station": "01646500",
+      "month": "2017-01",
+      "mean_cfs": 14349.35,
+      "anomaly_pct": 5.9449,
+      "computed_quiet": 1.0,
+      "measured_quiet": 1.0,
+      "error_pct": 0.0,
+      "S_energy": -0.549094
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "H",
+      "computed": 1.2081624564371403,
+      "measured": 1.2,
+      "error_pct": 0.680205,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "He",
+      "computed": 1.4056882125105163,
+      "measured": 1.4,
+      "error_pct": 0.406301,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "C",
+      "computed": 1.7039063864536625,
+      "measured": 1.7,
+      "error_pct": 0.229787,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "N",
+      "computed": 1.558686270628166,
+      "measured": 1.55,
+      "error_pct": 0.560405,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "O",
+      "computed": 1.5235586648398984,
+      "measured": 1.52,
+      "error_pct": 0.234123,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "F",
+      "computed": 1.464551773855444,
+      "measured": 1.47,
+      "error_pct": 0.370628,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Ne",
+      "computed": 1.5235586648398984,
+      "measured": 1.54,
+      "error_pct": 1.067619,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Si",
+      "computed": 1.7881288238310158,
+      "measured": 1.8,
+      "error_pct": 0.65951,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "P",
+      "computed": 1.7881288238310158,
+      "measured": 1.8,
+      "error_pct": 0.65951,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "S",
+      "computed": 1.7881288238310158,
+      "measured": 1.8,
+      "error_pct": 0.65951,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Cl",
+      "computed": 1.745642994897005,
+      "measured": 1.75,
+      "error_pct": 0.248972,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Ar",
+      "computed": 1.8736677967977804,
+      "measured": 1.88,
+      "error_pct": 0.336819,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Se",
+      "computed": 1.8736677967977804,
+      "measured": 1.9,
+      "error_pct": 1.385905,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Br",
+      "computed": 1.8736677967977804,
+      "measured": 1.85,
+      "error_pct": 1.27934,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Kr",
+      "computed": 2.0077096578811253,
+      "measured": 2.02,
+      "error_pct": 0.608433,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "I",
+      "computed": 2.0077096578811253,
+      "measured": 1.98,
+      "error_pct": 1.399478,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Xe",
+      "computed": 2.1526763787613303,
+      "measured": 2.16,
+      "error_pct": 0.339057,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a725 vdW Radii",
+      "name": "Te",
+      "computed": 2.032756991271005,
+      "measured": 2.06,
+      "error_pct": 1.322476,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "He",
+      "computed": 0.20499137939887735,
+      "measured": 0.205,
+      "error_pct": 0.004205171279335916,
+      "source": "smiles_lab"
+    },
+    {
+      "lab": "geochemistry_lab",
+      "property": "\u00a726 Polarizability",
+      "name": "Ne",
+      "computed": 0.3960262359289128,
+      "measured": 0.396,
+      "error_pct": 0.006625234573930708,
+      "source": "smiles_lab"
+    }
+  ]
+}

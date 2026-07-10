@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "APICS/World Bank logistics published anchors",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "inventory_turnover_retail", "property": "inventory_turnover_ratio", "measured": 8.0, "sector": "retail"},
+    {"name": "inventory_turnover_auto", "property": "inventory_turnover_ratio", "measured": 12.0, "sector": "automotive"},
+    {"name": "order_fill_rate", "property": "fill_rate_pct", "measured": 95.0, "metric": "OTIF"},
+    {"name": "lead_time_domestic_days", "property": "lead_time_days", "measured": 5.0, "lane": "domestic ground"},
+    {"name": "lead_time_ocean_days", "property": "lead_time_days", "measured": 30.0, "lane": "Asia-US ocean"},
+    {"name": "lead_time_air_days", "property": "lead_time_days", "measured": 3.0, "lane": "international air"},
+    {"name": "safety_stock_days", "property": "safety_stock_days", "measured": 14.0, "policy": "standard SKU"},
+    {"name": "warehouse_utilization_pct", "property": "utilization_pct", "measured": 85.0, "facility": "DC"},
+    {"name": "freight_cost_per_km", "property": "cost_per_km_usd", "measured": 1.5, "mode": "truck LTL"},
+    {"name": "container_teus_year", "property": "throughput_teus", "measured": 40.0, "port": "major hub M TEU"},
+    {"name": "bullwhip_amplification", "property": "demand_amplification_factor", "measured": 2.0, "phenomenon": "bullwhip effect"},
+    {"name": "carrying_cost_pct", "property": "inventory_carrying_cost_pct", "measured": 25.0, "metric": "annual carrying"},
+    {"name": "stockout_rate_pct", "property": "stockout_rate_pct", "measured": 2.0, "metric": "retail SKU"},
+    {"name": "perfect_order_rate", "property": "perfect_order_pct", "measured": 90.0, "metric": "SCOR perfect order"},
+    {"name": "cash_to_cash_cycle_days", "property": "cash_cycle_days", "measured": 60.0, "metric": "C2C cycle"},
+    {"name": "supplier_otd_pct", "property": "on_time_delivery_pct", "measured": 92.0, "metric": "supplier OTD"},
+    {"name": "dock_to_stock_hours", "property": "receiving_hours", "measured": 4.0, "process": "warehouse receiving"},
+    {"name": "pick_accuracy_pct", "property": "pick_accuracy_pct", "measured": 99.5, "process": "order picking"},
+    {"name": "last_mile_cost_usd", "property": "last_mile_cost_usd", "measured": 8.0, "mode": "parcel last mile"},
+    {"name": "reverse_logistics_pct", "property": "return_rate_pct", "measured": 10.0, "metric": "e-commerce returns"}
+  ]
+}

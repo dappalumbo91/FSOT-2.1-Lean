@@ -1006,7 +1006,7 @@
         "The record remains tied to the concrete report file that produced it."
       ],
       "examples": [
-        "Promote the sandbox combinatorial-search winner with held-out test RMSE 6.247387360026391 from airfoil_three_seed_report.json."
+        "Promote the gate-refined combinatorial-search winner with held-out test RMSE 5.907214506805364 (k^7 impedance gate) from airfoil_three_seed_report.json."
       ],
       "counterexamples": [
         "Treating an aeroacoustic dataset score as if it were a proven theorem about fluid mechanics."
@@ -1044,14 +1044,139 @@
         "fpr-007"
       ],
       "falsifiability_class": "benchmark_report",
-      "prediction_value": "held_out_test_rmse=6.247387360026391",
+      "prediction_value": "held_out_test_rmse=5.907214506805364",
       "dependency_tier": "benchmark_report",
-      "benchmark_formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+      "benchmark_formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^7) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
       "benchmark_summary": {
         "metric_name": "test_rmse",
-        "metric_value": 6.247387360026391,
+        "metric_value": 5.907214506805364,
         "ranking": 0,
         "goal_hit": false
+      }
+    },
+    {
+      "id": "FO-212",
+      "name": "Airfoil Gas-Medium Similarity Readout",
+      "category": "benchmark_promotion",
+      "input_form": "FO-210 coherent ln-transport plus airfoil geometry and boundary-layer state with FSOT Air c0 and Air_20C impedance anchors.",
+      "output_form": "Held-out SPL prediction with gas/similarity readout corrections using FSOT constants only.",
+      "domains": [
+        "fsot_overlay",
+        "scientific_computing",
+        "fluid_mechanics",
+        "aeroacoustics"
+      ],
+      "preconditions": [
+        "FO-210 transport scaffold remains the balanced coherent cell.",
+        "Readout adds St/phi, Re_theta, Mach-log(St), log(f/c0), log(delta), and golden AoA cos terms."
+      ],
+      "operation": "Apply Fluid_Dynamics gas-medium readout on FO-210 coherent transport without refitting free parameters.",
+      "properties": [
+        "Uses FSOT Air speed_of_sound and Air_20C acoustic impedance anchors.",
+        "Restores chord via Strouhal and angle_of_attack via golden cos(delta_theta)."
+      ],
+      "examples": [
+        "Held-out test RMSE 5.102551799768952 beats chosen-feature quadratic SOTA 5.412721340832612."
+      ],
+      "counterexamples": [
+        "Replacing FO-210 transport with hard sin^2/cos^2 channel splits."
+      ],
+      "common_errors": [
+        "Applying uniform entropy subtraction instead of signed similarity readout terms.",
+        "Ignoring chord when U and f are fixed."
+      ],
+      "cross_links": [
+        "FO-210",
+        "FO-050",
+        "FO-090"
+      ],
+      "dependency_links": [
+        {
+          "relation": "depends_on",
+          "target_rule_id": "FO-210",
+          "note": "FO-212 preserves FO-210 coherent transport and only corrects the gas-medium readout."
+        }
+      ],
+      "claim_kind": "benchmark",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_breakdown_workspace"
+      ],
+      "file_ids": [
+        "fof-008"
+      ],
+      "supporting_math_branches": [
+        "F. Scientific computing",
+        "G. Fluid mechanics"
+      ],
+      "intake_record_ids": [
+        "fpr-007"
+      ],
+      "falsifiability_class": "benchmark_report",
+      "prediction_value": "held_out_test_rmse=5.102551799768952",
+      "dependency_tier": "benchmark_report",
+      "benchmark_formula": "FO-210_transport + p_new/phi*(log_re - st/phi - log(delta)) + p_base/phi*(-st/phi) + ab/phi*cos(pi/phi*aoa) + bi/phi*cos(pi/phi*aoa) - 3*ai/phi*log_st*M + p_new/phi*log1p(f/c0)",
+      "benchmark_summary": {
+        "metric_name": "test_rmse",
+        "metric_value": 5.102551799768952,
+        "ranking": 0,
+        "goal_hit": true
+      }
+    },
+    {
+      "id": "FO-213",
+      "name": "Higgs Mass SMILES Intrinsic",
+      "category": "benchmark_promotion",
+      "input_form": "FSOT theta_s, e, and consciousness_factor c_factor from canonical engine constants.",
+      "output_form": "Higgs boson mass in GeV from Tier-18 SMILES particle-mass formula.",
+      "domains": [
+        "fsot_overlay",
+        "particle_physics",
+        "high_energy_physics"
+      ],
+      "preconditions": [
+        "Formula uses only canonical FSOT constants with zero fitted parameters.",
+        "Readout compares against PDG ATLAS+CMS combined mass."
+      ],
+      "operation": "Evaluate (theta_s + e^3) / c_factor^7 MeV and convert to GeV for ledger comparison.",
+      "properties": [
+        "Beats PDG fit typical error at zero free parameters.",
+        "Distinct from stabilized P58 125.55 GeV path — uses SMILES Tier-18 intrinsic."
+      ],
+      "examples": [
+        "m_H = 125.200 GeV with 0.040% error vs PDG 125.25 GeV."
+      ],
+      "counterexamples": [
+        "Using NMR ppm coincidence formulas as GeV mass without unit readout."
+      ],
+      "common_errors": [
+        "Confusing P58 stabilized rederivation with SMILES intrinsic Tier-18 formula."
+      ],
+      "cross_links": [
+        "FO-220",
+        "FO-100"
+      ],
+      "dependency_links": [],
+      "claim_kind": "benchmark",
+      "overlay_status": "mapped",
+      "source_ids": [
+        "fsot_smiles_lab"
+      ],
+      "file_ids": [],
+      "supporting_math_branches": [
+        "F. Scientific computing",
+        "G. Particle physics"
+      ],
+      "intake_record_ids": [],
+      "falsifiability_class": "benchmark_report",
+      "prediction_value": "125.20001875723811 GeV",
+      "dependency_tier": "benchmark_report",
+      "benchmark_formula": "(theta_s + e^3) / c_factor^7",
+      "benchmark_summary": {
+        "metric_name": "relative_error_percent",
+        "metric_value": 0.039861,
+        "ranking": 0,
+        "goal_hit": true
       }
     },
     {

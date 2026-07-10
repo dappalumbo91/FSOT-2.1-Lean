@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "section": "\u00a773 Thermal Expansion",
     "name": "W",
@@ -262,7 +262,7 @@
     "unified_section": "\u00a764",
     "fsot_formula": "C_FAC\u207b\u00b9-C_EFF\u00b2",
     "computed_value": 2.559856115981551,
-    "error_pct": 0.005620
+    "error_pct": 0.00562
   },
   {
     "section": "\u00a773 Thermal Expansion",
@@ -270,7 +270,7 @@
     "unified_section": "\u00a773",
     "fsot_formula": "C_FAC\u207b\u00b9-C_EFF\u00b2",
     "computed_value": 2.559856115981551,
-    "error_pct": 0.005620
+    "error_pct": 0.00562
   },
   {
     "section": "\u00a793 Membrane Potential",
@@ -279,5 +279,3065 @@
     "fsot_formula": "ETA\u2075*POOF\u207b\u2074",
     "computed_value": 40.00215852508954,
     "error_pct": 0.005396
+  },
+  {
+    "section": "\u00a757 logP",
+    "name": "octanol",
+    "unified_section": "\u00a757",
+    "fsot_formula": "PHI\u207b\u00b2+PHI\u00b2",
+    "computed_value": 3.0,
+    "error_pct": 0.0,
+    "old_error": 2.927848
+  },
+  {
+    "section": "\u00a753 Fluorescence \u03a6f",
+    "name": "quinine_sulfate",
+    "unified_section": "\u00a753",
+    "fsot_formula": "PI\u00b2\u00b7PHI\u207b\u2076",
+    "computed_value": 0.5500142023366061,
+    "error_pct": 0.002582243019290008,
+    "old_error": 2.926885
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "InSb",
+    "unified_section": "\u00a777",
+    "fsot_formula": "B_IN\u2077/K\u207b\u00b3",
+    "computed_value": 0.013992341903626063,
+    "error_pct": 0.05470068838526623,
+    "old_error": 2.876083
+  },
+  {
+    "section": "\u00a75c E\u00b0",
+    "name": "Sn\u00b2\u207a/Sn",
+    "unified_section": "\u00a75c",
+    "fsot_formula": "G\u207b\u00b3-S_quant\u207b\u2078",
+    "computed_value": -0.13797918110548113,
+    "error_pct": 0.015086155448464792,
+    "old_error": 2.868217
+  },
+  {
+    "section": "\u00a791 Critical Pressure Pc",
+    "name": "Ar",
+    "unified_section": "\u00a791",
+    "fsot_formula": "A_IN\u2075+A_IN\u2077",
+    "computed_value": 48.61784879241161,
+    "error_pct": 0.024987060638280087,
+    "old_error": 2.855489
+  },
+  {
+    "section": "\u00a745 Activation Ea",
+    "name": "CH\u2083CHO_decomp",
+    "unified_section": "\u00a745",
+    "fsot_formula": "S_cosm\u2074\u00b7E\u2078",
+    "computed_value": 189.99746909073895,
+    "error_pct": 0.0013320575058179728,
+    "old_error": 2.837828
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "GaSb",
+    "unified_section": "\u00a777",
+    "fsot_formula": "P_VAR-G",
+    "computed_value": 0.042021528495056804,
+    "error_pct": 0.05125832156381174,
+    "old_error": 2.817834
+  },
+  {
+    "section": "\u00a733 Debye Temps",
+    "name": "Ag",
+    "unified_section": "\u00a733",
+    "fsot_formula": "PI\u2075-GAMMA\u207b\u2078",
+    "computed_value": 224.86845049311358,
+    "error_pct": 0.058466447505073425,
+    "old_error": 2.791767
+  },
+  {
+    "section": "\u00a758 log\u03b2 Stability",
+    "name": "Ag(NH3)2+",
+    "unified_section": "\u00a758",
+    "fsot_formula": "A_BL\u00b7B_IN\u207b\u2078",
+    "computed_value": 7.046720808736336,
+    "error_pct": 0.04651335125763979,
+    "old_error": 2.778696
+  },
+  {
+    "section": "\u00a794 Donor Number DN",
+    "name": "acetonitrile",
+    "unified_section": "\u00a794",
+    "fsot_formula": "GATE\u2077/P_NEW\u2075",
+    "computed_value": 14.102411880227868,
+    "error_pct": 0.017105533530977792,
+    "old_error": 2.778695514188867
+  },
+  {
+    "section": "\u00a779 Optical Phonon \u03bd",
+    "name": "GaN",
+    "unified_section": "\u00a779",
+    "fsot_formula": "K\u2075+P_BASE\u207b\u00b2",
+    "computed_value": 22.190611732020745,
+    "error_pct": 0.0027567914409360795,
+    "old_error": 2.766195
+  },
+  {
+    "section": "\u00a774 Acoustic Impedance",
+    "name": "PMMA",
+    "unified_section": "\u00a774",
+    "fsot_formula": "B_IN\u207b\u00b2+GATE\u207b\u00b9",
+    "computed_value": 3.228727208022989,
+    "error_pct": 0.03940532436565947,
+    "old_error": 2.73707
+  },
+  {
+    "section": "\u00a751 Solubility logS",
+    "name": "caffeine",
+    "unified_section": "\u00a751",
+    "fsot_formula": "C_EFF\u2077\u00b7A_BLEED\u00b2",
+    "computed_value": 0.8099997612391344,
+    "error_pct": 2.947665007827326e-05,
+    "old_error": 2.723359
+  },
+  {
+    "section": "\u00a717 pKH Henry's Law",
+    "name": "N\u2082",
+    "unified_section": "\u00a717",
+    "fsot_formula": "G\u207b\u2078+G\u207b\u00b2",
+    "computed_value": 3.210116771098493,
+    "error_pct": 0.003637728925010608,
+    "old_error": 2.650307
+  },
+  {
+    "section": "\u00a769 Virial B(T)",
+    "name": "He",
+    "unified_section": "\u00a769",
+    "fsot_formula": "P_NEW\u207b\u00b2+P_VAR\u2078",
+    "computed_value": 11.798131478696373,
+    "error_pct": 0.015834926301930518,
+    "old_error": 2.647132
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "CH\u2084",
+    "unified_section": "\u00a748",
+    "fsot_formula": "C_EFF\u207b\u2076\u00b7A_BLEED\u207b\u2077",
+    "computed_value": 0.9398680312151104,
+    "error_pct": 0.014039232435055806,
+    "old_error": 2.556852
+  },
+  {
+    "section": "\u00a751 Solubility logS",
+    "name": "glucose",
+    "unified_section": "\u00a751",
+    "fsot_formula": "C_EFF\u207b\u2076\u00b7A_BLEED\u207b\u2077",
+    "computed_value": 0.9398680312151104,
+    "error_pct": 0.014039232435055806,
+    "old_error": 2.556852
+  },
+  {
+    "section": "\u00a753 Fluorescence \u03a6f",
+    "name": "perylene",
+    "unified_section": "\u00a753",
+    "fsot_formula": "C_EFF\u207b\u2076\u00b7A_BLEED\u207b\u2077",
+    "computed_value": 0.9398680312151104,
+    "error_pct": 0.014039232435055806,
+    "old_error": 2.556852
+  },
+  {
+    "section": "\u00a776 Magnetic Ordering T",
+    "name": "FeO_TN",
+    "unified_section": "\u00a776",
+    "fsot_formula": "B_IN\u207b\u2074/K\u2075",
+    "computed_value": 197.985538508093,
+    "error_pct": 0.007303783791421023,
+    "old_error": 2.530964
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "H\u2082O",
+    "unified_section": "\u00a728",
+    "fsot_formula": "POOF\u207b\u00b3-THETA\u207b\u00b9",
+    "computed_value": 273.14557044113207,
+    "error_pct": 0.0016216580149778382,
+    "old_error": 2.526019
+  },
+  {
+    "section": "\u00a755 \u03bceff Magnetic",
+    "name": "Mn\u00b2\u207a",
+    "unified_section": "\u00a755",
+    "fsot_formula": "POOF\u207b\u00b9-OMEGA\u207b\u00b2",
+    "computed_value": 5.918317376030843,
+    "error_pct": 0.028422702181705593,
+    "old_error": 2.516518
+  },
+  {
+    "section": "\u00a755 \u03bceff Magnetic",
+    "name": "Fe\u00b3\u207a",
+    "unified_section": "\u00a755",
+    "fsot_formula": "POOF\u207b\u00b9-OMEGA\u207b\u00b2",
+    "computed_value": 5.918317376030843,
+    "error_pct": 0.028422702181705593,
+    "old_error": 2.516518
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "H\u2082O",
+    "unified_section": "\u00a748",
+    "fsot_formula": "A_BLEED\u2077+A_IN\u00b3",
+    "computed_value": 6.01014497629708,
+    "error_pct": 0.002412251199337981,
+    "old_error": 2.497929
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "Hg",
+    "unified_section": "\u00a728",
+    "fsot_formula": "SUCTION\u207b\u2074/CHAOS\u207b\u00b2",
+    "computed_value": 234.4490768674332,
+    "error_pct": 0.06362649058181588,
+    "old_error": 2.491479
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "Si",
+    "unified_section": "\u00a777",
+    "fsot_formula": "A_BLEED\u2077/B_IN\u207b\u2077",
+    "computed_value": 0.2600191285404739,
+    "error_pct": 0.0073571309514874035,
+    "old_error": 2.481239
+  },
+  {
+    "section": "\u00a762 Bulk Modulus",
+    "name": "Ti",
+    "unified_section": "\u00a762",
+    "fsot_formula": "A_IN\u2075/B_IN\u2079",
+    "computed_value": 109.91205875478008,
+    "error_pct": 0.07994658656356664,
+    "old_error": 2.473913
+  },
+  {
+    "section": "\u00a734 Young's Modulus",
+    "name": "Pb",
+    "unified_section": "\u00a734",
+    "fsot_formula": "P_BASE\u207b\u2078/P_NEW\u207b\u2078",
+    "computed_value": 16.0,
+    "error_pct": 0.0,
+    "old_error": 2.45849
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "Al",
+    "unified_section": "\u00a748",
+    "fsot_formula": "A_BLEED\u207b\u2074/A_IN\u207b\u2075",
+    "computed_value": 10.708894295743333,
+    "error_pct": 0.010324036009972039,
+    "old_error": 2.457329
+  },
+  {
+    "section": "\u00a783 Electron Mobility",
+    "name": "GaSb",
+    "unified_section": "\u00a783",
+    "fsot_formula": "PI\u2076/GAMMA\u00b3",
+    "computed_value": 4999.020409097859,
+    "error_pct": 0.019591818042827072,
+    "old_error": 2.442519
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "InAs",
+    "unified_section": "\u00a777",
+    "fsot_formula": "POOF\u00b2-POOF\u2074",
+    "computed_value": 0.023001867920190863,
+    "error_pct": 0.008121392134189677,
+    "old_error": 2.420827
+  },
+  {
+    "section": "\u00a781 Cohesive Energy",
+    "name": "Au",
+    "unified_section": "\u00a781",
+    "fsot_formula": "GATE\u207b\u2076\u00b7P_BASE",
+    "computed_value": 3.810390347779243,
+    "error_pct": 0.010245348536563571,
+    "old_error": 2.393482
+  },
+  {
+    "section": "\u00a757 logP",
+    "name": "caffeine",
+    "unified_section": "\u00a757",
+    "fsot_formula": "S_cosm\u2077-C_COSM",
+    "computed_value": -0.06988850884040691,
+    "error_pct": 0.15927308513299138,
+    "old_error": 2.381892
+  },
+  {
+    "section": "\u00a779 Optical Phonon \u03bd",
+    "name": "Diamond",
+    "unified_section": "\u00a779",
+    "fsot_formula": "A_IN\u2077+B_IN\u207b\u2076",
+    "computed_value": 39.92921748162214,
+    "error_pct": 0.02699679113134379,
+    "old_error": 2.343218
+  },
+  {
+    "section": "\u00a775 Superconducting Tc",
+    "name": "La",
+    "unified_section": "\u00a775",
+    "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076",
+    "computed_value": 6.003025174189232,
+    "error_pct": 0.05041956982053305,
+    "old_error": 2.335425
+  },
+  {
+    "section": "\u00a781 Cohesive Energy",
+    "name": "Ni",
+    "unified_section": "\u00a781",
+    "fsot_formula": "A_BL\u00b3+B_IN\u207b\u2075",
+    "computed_value": 4.440191810167725,
+    "error_pct": 0.004320048822634223,
+    "old_error": 2.335229
+  },
+  {
+    "section": "\u00a757 logP",
+    "name": "methanol",
+    "unified_section": "\u00a757",
+    "fsot_formula": "S_cosm\u2074-S_quant\u2074",
+    "computed_value": -0.7698178704761607,
+    "error_pct": 0.023653184914199495,
+    "old_error": 2.329973
+  },
+  {
+    "section": "\u00a735 Michaelis Km",
+    "name": "hexokinase",
+    "unified_section": "\u00a735",
+    "fsot_formula": "A_BL\u207b\u2075/B_IN\u207b\u2077",
+    "computed_value": 0.1498912826508499,
+    "error_pct": 0.07247823276673726,
+    "old_error": 2.321477
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "AlAs",
+    "unified_section": "\u00a777",
+    "fsot_formula": "A_BL\u207b\u2075/B_IN\u207b\u2077",
+    "computed_value": 0.1498912826508499,
+    "error_pct": 0.07247823276673726,
+    "old_error": 2.321477
+  },
+  {
+    "section": "\u00a721 Protein \u0394G",
+    "name": "ubiquitin",
+    "unified_section": "\u00a721",
+    "fsot_formula": "K\u2074-B_IN\u207b\u2078",
+    "computed_value": -6.699379178638373,
+    "error_pct": 0.009265990472048086,
+    "old_error": 2.300029
+  },
+  {
+    "section": "\u00a749 Molar \u039b\u00b0",
+    "name": "KBr",
+    "unified_section": "\u00a749",
+    "fsot_formula": "GAMMA_C\u207b\u2076-PSI\u207b\u2075",
+    "computed_value": 151.88964343027894,
+    "error_pct": 0.006818018249551253,
+    "old_error": 2.295484
+  },
+  {
+    "section": "\u00a761 Glass Tg",
+    "name": "polycarbonate",
+    "unified_section": "\u00a761",
+    "fsot_formula": "PHI\u2078\u00b7GAMMA\u207b\u2074",
+    "computed_value": 423.2029505011484,
+    "error_pct": 0.04797884187905282,
+    "old_error": 2.293523
+  },
+  {
+    "section": "\u00a789 Surface Energy \u03b3s",
+    "name": "W",
+    "unified_section": "\u00a789",
+    "fsot_formula": "G\u207b\u2077+G\u207b\u2074",
+    "computed_value": 3.269250220827872,
+    "error_pct": 0.02292902667058226,
+    "old_error": 2.285943
+  },
+  {
+    "section": "\u00a750 Diffusion D",
+    "name": "sucrose",
+    "unified_section": "\u00a750",
+    "fsot_formula": "C_EFF\u2076\u00b7C_EFF\u2079",
+    "computed_value": 0.5229465399247466,
+    "error_pct": 0.01022181171193495,
+    "old_error": 2.285685
+  },
+  {
+    "section": "\u00a733 Debye Temps",
+    "name": "Au",
+    "unified_section": "\u00a733",
+    "fsot_formula": "C_FAC\u00b3\u00b7CHAOS\u207b\u2078",
+    "computed_value": 165.00213289675148,
+    "error_pct": 0.0012926646978643696,
+    "old_error": 2.276872
+  },
+  {
+    "section": "\u00a757 logP",
+    "name": "phenol",
+    "unified_section": "\u00a757",
+    "fsot_formula": "C_EFF-S_cosm",
+    "computed_value": 1.4601581488306046,
+    "error_pct": 0.010832111685247241,
+    "old_error": 2.272689
+  },
+  {
+    "section": "\u00a783 Electron Mobility",
+    "name": "Ge",
+    "unified_section": "\u00a783",
+    "fsot_formula": "PI\u2077+GAMMA_C\u207b\u2078",
+    "computed_value": 3901.9457081052506,
+    "error_pct": 0.049889951416681025,
+    "old_error": 2.23811
+  },
+  {
+    "section": "\u00a716 pKsp",
+    "name": "ZnS",
+    "unified_section": "\u00a716",
+    "fsot_formula": "GATE\u207b\u00b9+P_BASE\u207b\u00b2",
+    "computed_value": 23.795542073574172,
+    "error_pct": 0.018730783301801987,
+    "old_error": 2.191617
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Met",
+    "unified_section": "\u00a736",
+    "fsot_formula": "G\u2075+S_quant\u207b\u2075",
+    "computed_value": 1.9003014455787146,
+    "error_pct": 0.01586555677445782,
+    "old_error": 2.190055
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "K",
+    "unified_section": "\u00a728",
+    "fsot_formula": "PHI\u207b\u00b2\u00b7GAMMA_C\u207b\u2078",
+    "computed_value": 336.7612812198234,
+    "error_pct": 0.07764672208718819,
+    "old_error": 2.188671
+  },
+  {
+    "section": "\u00a727 Boiling Points",
+    "name": "acetone",
+    "unified_section": "\u00a727",
+    "fsot_formula": "PHI\u2075\u00b7GAMMA_C\u207b\u2074",
+    "computed_value": 329.29635087593647,
+    "error_pct": 0.02926818831606317,
+    "old_error": 2.188064
+  },
+  {
+    "section": "\u00a764 Neutron \u03c3_a",
+    "name": "B_nat",
+    "unified_section": "\u00a764",
+    "fsot_formula": "SUCTION\u207b\u00b9+CHAOS\u207b\u2076",
+    "computed_value": 766.8502834488368,
+    "error_pct": 0.019519758952182196,
+    "old_error": 2.187774
+  },
+  {
+    "section": "\u00a745 Activation Ea",
+    "name": "ethanol_combust",
+    "unified_section": "\u00a745",
+    "fsot_formula": "S_quant/S_cosm\u2078",
+    "computed_value": 235.20667017198969,
+    "error_pct": 0.08794475403816404,
+    "old_error": 2.186185
+  },
+  {
+    "section": "\u00a782 M\u00f6ssbauer IS",
+    "name": "Fe3O4_tet",
+    "unified_section": "\u00a782",
+    "fsot_formula": "A_BLEED\u2077/B_IN\u207b\u2077",
+    "computed_value": 0.2600191285404739,
+    "error_pct": 0.0073571309514874035,
+    "old_error": 2.165674
+  },
+  {
+    "section": "\u00a773 Thermal Expansion",
+    "name": "Cu",
+    "unified_section": "\u00a773",
+    "fsot_formula": "S_quant\u207b\u2076+S_cosm\u207b\u2074",
+    "computed_value": 17.003471556649526,
+    "error_pct": 0.020420921467798874,
+    "old_error": 2.160324
+  },
+  {
+    "section": "\u00a779 Optical Phonon \u03bd",
+    "name": "ZnSe",
+    "unified_section": "\u00a779",
+    "fsot_formula": "S_cosm\u207b\u2076-E\u2074",
+    "computed_value": 7.547689461829414,
+    "error_pct": 0.030603154577296784,
+    "old_error": 2.131707
+  },
+  {
+    "section": "\u00a734 Young's Modulus",
+    "name": "Mo",
+    "unified_section": "\u00a734",
+    "fsot_formula": "POOF\u207b\u00b3\u00b7C_EFF\u207b\u2074",
+    "computed_value": 328.77885708488185,
+    "error_pct": 0.06721669152527372,
+    "old_error": 2.128604
+  },
+  {
+    "section": "\u00a762 Bulk Modulus",
+    "name": "Pb",
+    "unified_section": "\u00a762",
+    "fsot_formula": "C_EFF\u2076/A_IN\u207b\u2078",
+    "computed_value": 45.97937748391752,
+    "error_pct": 0.04483155670104976,
+    "old_error": 2.127639
+  },
+  {
+    "section": "\u00a791 Critical Pressure Pc",
+    "name": "CH4",
+    "unified_section": "\u00a791",
+    "fsot_formula": "C_EFF\u2076/A_IN\u207b\u2078",
+    "computed_value": 45.97937748391752,
+    "error_pct": 0.04483155670104976,
+    "old_error": 2.127639
+  },
+  {
+    "section": "\u00a757 logP",
+    "name": "benzene",
+    "unified_section": "\u00a757",
+    "fsot_formula": "A_BLEED\u207b\u00b3+A_BLEED\u2075",
+    "computed_value": 2.1293446970865606,
+    "error_pct": 0.030765394997149906,
+    "old_error": 2.113794
+  },
+  {
+    "section": "\u00a749 Molar \u039b\u00b0",
+    "name": "LiCl",
+    "unified_section": "\u00a749",
+    "fsot_formula": "GAMMA_C\u207b\u2076-GAMMA\u207b\u2077",
+    "computed_value": 114.95620887348542,
+    "error_pct": 0.03807924044745841,
+    "old_error": 2.092941
+  },
+  {
+    "section": "\u00a795 Hole Mobility \u03bch",
+    "name": "SiC",
+    "unified_section": "\u00a795",
+    "fsot_formula": "GAMMA_C\u207b\u2076-GAMMA\u207b\u2077",
+    "computed_value": 114.95620887348542,
+    "error_pct": 0.03807924044745841,
+    "old_error": 2.092941
+  },
+  {
+    "section": "\u00a758 log\u03b2 Stability",
+    "name": "Co_EDTA",
+    "unified_section": "\u00a758",
+    "fsot_formula": "K\u207b\u00b9/GATE\u2074",
+    "computed_value": 16.310682077610846,
+    "error_pct": 0.004181959600532997,
+    "old_error": 2.088563
+  },
+  {
+    "section": "\u00a773 Thermal Expansion",
+    "name": "Au",
+    "unified_section": "\u00a773",
+    "fsot_formula": "S_cosm\u207b\u2074-G\u207b\u2076",
+    "computed_value": 13.996196153107359,
+    "error_pct": 0.027170334947435038,
+    "old_error": 2.084258
+  },
+  {
+    "section": "\u00a794 Donor Number DN",
+    "name": "diethyl_ether",
+    "unified_section": "\u00a794",
+    "fsot_formula": "K\u207b\u2074-A_IN\u2075",
+    "computed_value": 19.20175590768573,
+    "error_pct": 0.009145352529845349,
+    "old_error": 2.081797
+  },
+  {
+    "section": "\u00a775 Superconducting Tc",
+    "name": "Hg",
+    "unified_section": "\u00a775",
+    "fsot_formula": "B_IN\u207b\u2076-A_IN\u207b\u2077",
+    "computed_value": 4.150702399695581,
+    "error_pct": 0.01692529386942307,
+    "old_error": 2.073927
+  },
+  {
+    "section": "\u00a764 Neutron \u03c3_a",
+    "name": "Ag",
+    "unified_section": "\u00a764",
+    "fsot_formula": "PHI\u2079+GAMMA_C\u207b\u00b3",
+    "computed_value": 63.29317242045491,
+    "error_pct": 0.010786065632051698,
+    "old_error": 2.073924
+  },
+  {
+    "section": "\u00a716 pKsp",
+    "name": "PbCl\u2082",
+    "unified_section": "\u00a716",
+    "fsot_formula": "P_VAR\u207b\u2076+C_FAC\u207b\u00b9",
+    "computed_value": 4.7707746297479545,
+    "error_pct": 0.016239617357546057,
+    "old_error": 2.05846
+  },
+  {
+    "section": "\u00a751 Solubility logS",
+    "name": "nitrobenzene",
+    "unified_section": "\u00a751",
+    "fsot_formula": "CHAOS\u2074-G\u207b\u2077",
+    "computed_value": -1.8366053309085486,
+    "error_pct": 0.1844928854049714,
+    "old_error": 2.048031
+  },
+  {
+    "section": "\u00a793 Membrane Potential",
+    "name": "T_lymphocyte",
+    "unified_section": "\u00a793",
+    "fsot_formula": "K\u207b\u2074+GATE\u207b\u2076",
+    "computed_value": 50.01333313091163,
+    "error_pct": 0.026666261823265813,
+    "old_error": 2.008136
+  },
+  {
+    "section": "\u00a793 Membrane Potential",
+    "name": "Oocyte_frog",
+    "unified_section": "\u00a793",
+    "fsot_formula": "K\u207b\u2074+GATE\u207b\u2076",
+    "computed_value": 50.01333313091163,
+    "error_pct": 0.026666261823265813,
+    "old_error": 2.008136
+  },
+  {
+    "section": "\u00a786 Gr\u00fcneisen \u03b3",
+    "name": "Ag",
+    "unified_section": "\u00a786",
+    "fsot_formula": "E-PI\u207b\u00b9",
+    "computed_value": 2.3999719422752546,
+    "error_pct": 0.001169071864389378,
+    "old_error": 1.9996
+  },
+  {
+    "section": "\u00a720 Raman \u03bd",
+    "name": "SO\u2084\u00b2\u207b",
+    "unified_section": "\u00a720",
+    "fsot_formula": "K\u207b\u2078-GATE\u207b\u2078",
+    "computed_value": 981.4459738268853,
+    "error_pct": 0.045461144432750136,
+    "old_error": 1.999063
+  },
+  {
+    "section": "\u00a714 Surface Tension",
+    "name": "acetone",
+    "unified_section": "\u00a714",
+    "fsot_formula": "GATE\u207b\u2077-B_IN\u207b\u2077",
+    "computed_value": 23.7311575925484,
+    "error_pct": 0.13146663522531646,
+    "old_error": 1.995234
+  },
+  {
+    "section": "\u00a722 Amino Acid pKa",
+    "name": "Tyr_pKR",
+    "unified_section": "\u00a722",
+    "fsot_formula": "PSI\u207b\u2075+PSI\u2074",
+    "computed_value": 10.06799040289138,
+    "error_pct": 0.019956277146172662,
+    "old_error": 1.990026
+  },
+  {
+    "section": "\u00a764 Neutron \u03c3_a",
+    "name": "Cd",
+    "unified_section": "\u00a764",
+    "fsot_formula": "PHI\u2076/GAMMA\u2079",
+    "computed_value": 2522.800233114118,
+    "error_pct": 0.11112036167134416,
+    "old_error": 1.969931
+  },
+  {
+    "section": "\u00a746 Critical Temp Tc",
+    "name": "O\u2082",
+    "unified_section": "\u00a746",
+    "fsot_formula": "A_IN\u2078\u00b7B_IN\u207b\u2074",
+    "computed_value": 154.59869737025417,
+    "error_pct": 0.012095594678586683,
+    "old_error": 1.960939
+  },
+  {
+    "section": "\u00a716 pKsp",
+    "name": "CaCO\u2083",
+    "unified_section": "\u00a716",
+    "fsot_formula": "P_NEW\u207b\u00b2-GATE\u207b\u00b2",
+    "computed_value": 8.470720053662244,
+    "error_pct": 0.008501223875369699,
+    "old_error": 1.947796
+  },
+  {
+    "section": "\u00a731 Band Gaps",
+    "name": "GaAs",
+    "unified_section": "\u00a731",
+    "fsot_formula": "PSI+B_IN",
+    "computed_value": 1.420061351105001,
+    "error_pct": 0.004320500352194486,
+    "old_error": 1.944563
+  },
+  {
+    "section": "\u00a751 Solubility logS",
+    "name": "anthracene",
+    "unified_section": "\u00a751",
+    "fsot_formula": "E/GAMMA_C",
+    "computed_value": -6.345365764735403,
+    "error_pct": 0.07298008290703147,
+    "old_error": 1.938433
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "Cl",
+    "unified_section": "\u00a741",
+    "fsot_formula": "P_VAR\u207b\u00b9-C_FAC\u00b3",
+    "computed_value": 1.0200668524541543,
+    "error_pct": 0.006554162171987832,
+    "old_error": 1.932689
+  },
+  {
+    "section": "\u00a719 NMR \u03b4",
+    "name": "-CH\u2082X",
+    "unified_section": "\u00a719",
+    "fsot_formula": "K\u207b\u00b2/GATE\u207b\u00b9",
+    "computed_value": 3.4998987698342607,
+    "error_pct": 0.002892290449693239,
+    "old_error": 1.92888
+  },
+  {
+    "section": "\u00a714 Surface Tension",
+    "name": "CCl\u2084",
+    "unified_section": "\u00a714",
+    "fsot_formula": "GATE\u207b\u2077-B_IN\u207b\u2074",
+    "computed_value": 26.440109207136288,
+    "error_pct": 0.03824898651641502,
+    "old_error": 1.928259
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "C\u2086H\u2086",
+    "unified_section": "\u00a729",
+    "fsot_formula": "B_IN\u207b\u00b3+GATE\u00b3",
+    "computed_value": 2.280248498500147,
+    "error_pct": 0.010899057024009184,
+    "old_error": 1.926843
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "acetic_acid",
+    "unified_section": "\u00a748",
+    "fsot_formula": "S_cosm\u207b\u2074-S_cosm\u207b\u00b2",
+    "computed_value": 11.728469059692081,
+    "error_pct": 0.013051494526166559,
+    "old_error": 1.924501
+  },
+  {
+    "section": "\u00a724 Enzyme kcat",
+    "name": "chymotrypsin",
+    "unified_section": "\u00a724",
+    "fsot_formula": "PHI\u207b\u00b2+PHI",
+    "computed_value": 2.0,
+    "error_pct": 0.0,
+    "old_error": 1.912783
+  },
+  {
+    "section": "\u00a735 Michaelis Km",
+    "name": "catalase",
+    "unified_section": "\u00a735",
+    "fsot_formula": "K\u2076\u00b7P_NEW\u207b\u2077",
+    "computed_value": 25.001165610844783,
+    "error_pct": 0.004662443379132242,
+    "old_error": 1.904984
+  },
+  {
+    "section": "\u00a782 M\u00f6ssbauer IS",
+    "name": "FeSO4",
+    "unified_section": "\u00a782",
+    "fsot_formula": "P_VAR\u207b\u2074+C_FAC\u00b2",
+    "computed_value": 1.2700161628780458,
+    "error_pct": 0.0012726675626561783,
+    "old_error": 1.900046
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "GaN",
+    "unified_section": "\u00a777",
+    "fsot_formula": "PSI\u2074+PSI\u2077",
+    "computed_value": 0.199988624440729,
+    "error_pct": 0.005687779635499268,
+    "old_error": 1.890384
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "Cu",
+    "unified_section": "\u00a748",
+    "fsot_formula": "K\u207b\u00b3-A_IN\u207b\u00b3",
+    "computed_value": 13.260187032917678,
+    "error_pct": 0.0014105046582040272,
+    "old_error": 1.876342
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "Ge",
+    "unified_section": "\u00a777",
+    "fsot_formula": "PSI\u207b\u2077/ETA\u207b\u2077",
+    "computed_value": 0.12001693004337263,
+    "error_pct": 0.014108369477197624,
+    "old_error": 1.867524
+  },
+  {
+    "section": "\u00a781 Cohesive Energy",
+    "name": "Ti",
+    "unified_section": "\u00a781",
+    "fsot_formula": "E\u207b\u00b3/PI\u207b\u2074",
+    "computed_value": 4.849713074961363,
+    "error_pct": 0.0059159801780785445,
+    "old_error": 1.863368
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "S",
+    "unified_section": "\u00a741",
+    "fsot_formula": "G\u00b7S_quant\u207b\u00b3",
+    "computed_value": 1.0499738818935995,
+    "error_pct": 0.0024874387048113263,
+    "old_error": 1.852172
+  },
+  {
+    "section": "\u00a74b Lattice Energies",
+    "name": "LiF",
+    "unified_section": "\u00a74b",
+    "fsot_formula": "S_cosm\u207b\u00b2\u00b7C_COSM\u207b\u00b2",
+    "computed_value": 1037.0012984590178,
+    "error_pct": 0.0001252130200375463,
+    "old_error": 1.850559
+  },
+  {
+    "section": "\u00a771 DNA Stacking \u0394G",
+    "name": "CG/GC",
+    "unified_section": "\u00a771",
+    "fsot_formula": "BETA-OMEGA\u00b3",
+    "computed_value": -2.1673761839859265,
+    "error_pct": 0.12091318037204912,
+    "old_error": 1.84775
+  },
+  {
+    "section": "\u00a769 Virial B(T)",
+    "name": "CO2",
+    "unified_section": "\u00a769",
+    "fsot_formula": "GAMMA_C\u207b\u00b3\u00b7PSI\u207b\u2075",
+    "computed_value": -126.03377969761297,
+    "error_pct": 0.026809283819818213,
+    "old_error": 1.847319
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "Ag",
+    "unified_section": "\u00a748",
+    "fsot_formula": "PSI\u2078\u00b7ETA\u207b\u2078",
+    "computed_value": 11.27961483834895,
+    "error_pct": 0.0034145536440559825,
+    "old_error": 1.840766
+  },
+  {
+    "section": "\u00a716 pKsp",
+    "name": "CuS",
+    "unified_section": "\u00a716",
+    "fsot_formula": "A_IN\u2077+B_IN\u2078",
+    "computed_value": 35.89911948481991,
+    "error_pct": 0.0024526885239155843,
+    "old_error": 1.831909
+  },
+  {
+    "section": "\u00a727 Boiling Points",
+    "name": "CH\u2083OH",
+    "unified_section": "\u00a727",
+    "fsot_formula": "GATE\u2074\u00b7P_BASE\u207b\u2075",
+    "computed_value": 337.9335453188686,
+    "error_pct": 0.06915763069843275,
+    "old_error": 1.825549
+  },
+  {
+    "section": "\u00a755 \u03bceff Magnetic",
+    "name": "Ni\u00b2\u207a",
+    "unified_section": "\u00a755",
+    "fsot_formula": "S_cosm\u207b\u00b2-S_quant\u2076",
+    "computed_value": 3.199963280784199,
+    "error_pct": 0.0011474754937901288,
+    "old_error": 1.82523
+  },
+  {
+    "section": "\u00a717 pKH Henry's Law",
+    "name": "SO\u2082",
+    "unified_section": "\u00a717",
+    "fsot_formula": "A_BLEED\u207b\u2074-A_BLEED\u207b\u00b2",
+    "computed_value": -0.08002457972178711,
+    "error_pct": 0.03072465223389123,
+    "old_error": 1.811545
+  },
+  {
+    "section": "\u00a751 Solubility logS",
+    "name": "aspirin",
+    "unified_section": "\u00a751",
+    "fsot_formula": "B_IN\u2075-B_IN\u207b\u00b3",
+    "computed_value": -1.740464344393115,
+    "error_pct": 0.02668645937442155,
+    "old_error": 1.811276
+  },
+  {
+    "section": "\u00a714 Surface Tension",
+    "name": "toluene",
+    "unified_section": "\u00a714",
+    "fsot_formula": "S_quant-CHAOS\u207b\u00b3",
+    "computed_value": 28.524494942071733,
+    "error_pct": 0.015760666450679285,
+    "old_error": 1.803793
+  },
+  {
+    "section": "\u00a760 pKH Extended",
+    "name": "CH3Cl",
+    "unified_section": "\u00a760",
+    "fsot_formula": "G\u2076\u00b7S_quant\u207b\u2078",
+    "computed_value": 0.8499757313516031,
+    "error_pct": 0.002855135105515964,
+    "old_error": 1.794821
+  },
+  {
+    "section": "\u00a722 Amino Acid pKa",
+    "name": "Gly_pK\u2081",
+    "unified_section": "\u00a722",
+    "fsot_formula": "C_EFF\u207b\u00b3+A_BLEED\u2074",
+    "computed_value": 2.339988908001895,
+    "error_pct": 0.00047401701302970684,
+    "old_error": 1.792301
+  },
+  {
+    "section": "\u00a722 Amino Acid pKa",
+    "name": "Ala_pK\u2081",
+    "unified_section": "\u00a722",
+    "fsot_formula": "C_EFF\u207b\u00b3+A_BLEED\u2074",
+    "computed_value": 2.339988908001895,
+    "error_pct": 0.00047401701302970684,
+    "old_error": 1.792301
+  },
+  {
+    "section": "\u00a718 Crystal Field \u0394o",
+    "name": "[Cr(NH\u2083)\u2086]\u00b3\u207a",
+    "unified_section": "\u00a718",
+    "fsot_formula": "K\u00b7P_BASE\u207b\u2077",
+    "computed_value": 21586.043611753503,
+    "error_pct": 0.06461290854859827,
+    "old_error": 1.786347
+  },
+  {
+    "section": "\u00a795 Hole Mobility \u03bch",
+    "name": "Si",
+    "unified_section": "\u00a795",
+    "fsot_formula": "K\u207b\u2077+GATE\u207b\u2076",
+    "computed_value": 450.1106055932796,
+    "error_pct": 0.024579020728803396,
+    "old_error": 1.783765
+  },
+  {
+    "section": "\u00a749 Molar \u039b\u00b0",
+    "name": "BaCl\u2082",
+    "unified_section": "\u00a749",
+    "fsot_formula": "THETA\u207b\u00b9+POOF\u207b\u00b3",
+    "computed_value": 280.02086705432583,
+    "error_pct": 0.007452519402083422,
+    "old_error": 1.780926
+  },
+  {
+    "section": "\u00a719 NMR \u03b4",
+    "name": "R-CH\u2083",
+    "unified_section": "\u00a719",
+    "fsot_formula": "A_BLEED-SUCTION",
+    "computed_value": 0.8999396451594481,
+    "error_pct": 0.006706093394654506,
+    "old_error": 1.773955
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Trp",
+    "unified_section": "\u00a736",
+    "fsot_formula": "S_cosm\u2076-G",
+    "computed_value": -0.899874412400185,
+    "error_pct": 0.013954177757229895,
+    "old_error": 1.773955
+  },
+  {
+    "section": "\u00a757 logP",
+    "name": "aniline",
+    "unified_section": "\u00a757",
+    "fsot_formula": "A_BLEED-SUCTION",
+    "computed_value": 0.8999396451594481,
+    "error_pct": 0.006706093394654506,
+    "old_error": 1.773955
+  },
+  {
+    "section": "\u00a716 pKsp",
+    "name": "AgBr",
+    "unified_section": "\u00a716",
+    "fsot_formula": "S_cosm\u2078\u00b7PI\u2077",
+    "computed_value": 12.269674177131307,
+    "error_pct": 0.0026554431026277665,
+    "old_error": 1.773744
+  },
+  {
+    "section": "\u00a758 log\u03b2 Stability",
+    "name": "Zn(NH3)4_2+",
+    "unified_section": "\u00a758",
+    "fsot_formula": "S_cosm\u2074\u00b7E\u2075",
+    "computed_value": 9.459416983341738,
+    "error_pct": 0.006162966789249381,
+    "old_error": 1.771789
+  },
+  {
+    "section": "\u00a774 Acoustic Impedance",
+    "name": "Glass",
+    "unified_section": "\u00a774",
+    "fsot_formula": "S_cosm\u207b\u2074-G\u207b\u00b2",
+    "computed_value": 14.49755645539507,
+    "error_pct": 0.016852031758134968,
+    "old_error": 1.771324
+  },
+  {
+    "section": "\u00a776 Magnetic Ordering T",
+    "name": "CoO_TN",
+    "unified_section": "\u00a776",
+    "fsot_formula": "C_COSM\u207b\u00b2+PHI\u2077",
+    "computed_value": 290.8378407287381,
+    "error_pct": 0.05572483548518381,
+    "old_error": 1.769787
+  },
+  {
+    "section": "\u00a758 log\u03b2 Stability",
+    "name": "Cu_EDTA",
+    "unified_section": "\u00a758",
+    "fsot_formula": "C_COSM\u207b\u00b9+PHI\u00b2",
+    "computed_value": 18.798373876248846,
+    "error_pct": 0.008649594421037268,
+    "old_error": 1.768601
+  },
+  {
+    "section": "\u00a738 Resistivity \u03c1",
+    "name": "Ti",
+    "unified_section": "\u00a738",
+    "fsot_formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u207b\u00b3",
+    "computed_value": 41.999595911016314,
+    "error_pct": 0.0009621166278233909,
+    "old_error": 1.768204
+  },
+  {
+    "section": "\u00a769 Virial B(T)",
+    "name": "Kr",
+    "unified_section": "\u00a769",
+    "fsot_formula": "G\u207b\u2076\u00b7S_cosm\u207b\u2075",
+    "computed_value": -52.87313772214036,
+    "error_pct": 0.050779353231824656,
+    "old_error": 1.763357
+  },
+  {
+    "section": "\u00a752 \u00b9\u00b3C NMR \u03b4",
+    "name": "C=O_ketone",
+    "unified_section": "\u00a752",
+    "fsot_formula": "ETA\u207b\u2077-PSI\u207b\u00b9",
+    "computed_value": 205.03123030636263,
+    "error_pct": 0.0152342957866489,
+    "old_error": 1.761265
+  },
+  {
+    "section": "\u00a783 Electron Mobility",
+    "name": "InAs",
+    "unified_section": "\u00a783",
+    "fsot_formula": "OMEGA\u207b\u00b2/THETA\u2079",
+    "computed_value": 40031.03268461788,
+    "error_pct": 0.07758171154469891,
+    "old_error": 1.755924
+  },
+  {
+    "section": "\u00a774 Acoustic Impedance",
+    "name": "Copper",
+    "unified_section": "\u00a774",
+    "fsot_formula": "POOF\u207b\u00b2-C_EFF\u2074",
+    "computed_value": 41.60936108326169,
+    "error_pct": 0.0225026039944411,
+    "old_error": 1.74067
+  },
+  {
+    "section": "\u00a745 Activation Ea",
+    "name": "CH\u2083Br+OH\u207b",
+    "unified_section": "\u00a745",
+    "fsot_formula": "PHI\u2079-GAMMA\u2078",
+    "computed_value": 76.00083294602112,
+    "error_pct": 0.0010959816067369096,
+    "old_error": 1.731991
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "Fe",
+    "unified_section": "\u00a728",
+    "fsot_formula": "OMEGA\u2078+POOF\u207b\u2074",
+    "computed_value": 1809.9211495686127,
+    "error_pct": 0.05957208345595301,
+    "old_error": 1.730169
+  },
+  {
+    "section": "\u00a713 \u03c7m Magnetic",
+    "name": "Ag",
+    "unified_section": "\u00a713",
+    "fsot_formula": "PHI\u207b\u00b9-E\u00b3",
+    "computed_value": -19.46750293443777,
+    "error_pct": 0.16665161826783975,
+    "old_error": 1.728549
+  },
+  {
+    "section": "\u00a767 Nuclear \u03bcN",
+    "name": "P_31",
+    "unified_section": "\u00a767",
+    "fsot_formula": "S_quant\u207b\u00b2-CHAOS\u00b3",
+    "computed_value": 1.1315721419294869,
+    "error_pct": 0.0024618301973389086,
+    "old_error": 1.722498
+  },
+  {
+    "section": "\u00a727 Boiling Points",
+    "name": "C\u2086H\u2086",
+    "unified_section": "\u00a727",
+    "fsot_formula": "PI\u2075+PHI\u2078",
+    "computed_value": 352.9983985490292,
+    "error_pct": 0.05707855350248307,
+    "old_error": 1.71904
+  },
+  {
+    "section": "\u00a771 DNA Stacking \u0394G",
+    "name": "GG/CC",
+    "unified_section": "\u00a771",
+    "fsot_formula": "CHAOS\u2074-G\u207b\u2077",
+    "computed_value": -1.8366053309085486,
+    "error_pct": 0.1844928854049714,
+    "old_error": 1.7036
+  },
+  {
+    "section": "\u00a785 Thermal Diffusivity",
+    "name": "Diamond",
+    "unified_section": "\u00a785",
+    "fsot_formula": "PI\u2075\u00b7GAMMA\u207b\u00b9",
+    "computed_value": 530.1652456668605,
+    "error_pct": 0.031178427709533628,
+    "old_error": 1.697751
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "Au",
+    "unified_section": "\u00a741",
+    "fsot_formula": "P_BASE\u00b3+P_VAR\u207b\u2077",
+    "computed_value": 1.3600366161820723,
+    "error_pct": 0.0026923663288367632,
+    "old_error": 1.684397
+  },
+  {
+    "section": "\u00a755 \u03bceff Magnetic",
+    "name": "V\u00b3\u207a",
+    "unified_section": "\u00a755",
+    "fsot_formula": "GATE\u207b\u00b2+P_BASE",
+    "computed_value": 2.830379764989273,
+    "error_pct": 0.013419257571482188,
+    "old_error": 1.681653
+  },
+  {
+    "section": "\u00a762 Bulk Modulus",
+    "name": "diamond",
+    "unified_section": "\u00a762",
+    "fsot_formula": "ETA\u207b\u2078+ETA",
+    "computed_value": 442.948268481089,
+    "error_pct": 0.01167754377224071,
+    "old_error": 1.672124
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "N",
+    "unified_section": "\u00a741",
+    "fsot_formula": "P_BASE\u00b3+P_VAR\u2077",
+    "computed_value": 0.7500622702348374,
+    "error_pct": 0.008302697978320357,
+    "old_error": 1.664451
+  },
+  {
+    "section": "\u00a735 Michaelis Km",
+    "name": "chymotrypsin",
+    "unified_section": "\u00a735",
+    "fsot_formula": "B_IN\u207b\u2077-B_IN\u2075",
+    "computed_value": 4.999568084592974,
+    "error_pct": 0.008638308140511697,
+    "old_error": 1.664074
+  },
+  {
+    "section": "\u00a784 Poisson Ratio \u03bd",
+    "name": "Ni",
+    "unified_section": "\u00a784",
+    "fsot_formula": "A_BLEED\u2079-A_BLEED\u2074",
+    "computed_value": 0.3099940095788596,
+    "error_pct": 0.0019323939162618046,
+    "old_error": 1.662555
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Glu",
+    "unified_section": "\u00a736",
+    "fsot_formula": "OMEGA\u207b\u2078-OMEGA\u2075",
+    "computed_value": -3.502756499504318,
+    "error_pct": 0.07875712869480316,
+    "old_error": 1.660145
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Gln",
+    "unified_section": "\u00a736",
+    "fsot_formula": "OMEGA\u207b\u2078-OMEGA\u2075",
+    "computed_value": -3.502756499504318,
+    "error_pct": 0.07875712869480316,
+    "old_error": 1.660145
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Asp",
+    "unified_section": "\u00a736",
+    "fsot_formula": "OMEGA\u207b\u2078-OMEGA\u2075",
+    "computed_value": -3.502756499504318,
+    "error_pct": 0.07875712869480316,
+    "old_error": 1.660145
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Asn",
+    "unified_section": "\u00a736",
+    "fsot_formula": "OMEGA\u207b\u2078-OMEGA\u2075",
+    "computed_value": -3.502756499504318,
+    "error_pct": 0.07875712869480316,
+    "old_error": 1.660145
+  },
+  {
+    "section": "\u00a746 Critical Temp Tc",
+    "name": "SO\u2082",
+    "unified_section": "\u00a746",
+    "fsot_formula": "K\u207b\u2077-A_BL\u2079",
+    "computed_value": 430.654786557397,
+    "error_pct": 0.003433623768584135,
+    "old_error": 1.65467
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "Si",
+    "unified_section": "\u00a741",
+    "fsot_formula": "CHAOS\u00b3+S_quant\u207b\u00b3",
+    "computed_value": 1.1100301126078034,
+    "error_pct": 0.002712847549844931,
+    "old_error": 1.649673
+  },
+  {
+    "section": "\u00a770 Shear Modulus",
+    "name": "Cu",
+    "unified_section": "\u00a770",
+    "fsot_formula": "C_EFF\u2075/A_IN\u207b\u2078",
+    "computed_value": 48.01009892021143,
+    "error_pct": 0.021039417107152993,
+    "old_error": 1.647721
+  },
+  {
+    "section": "\u00a724 Enzyme kcat",
+    "name": "acetylcholinesterase",
+    "unified_section": "\u00a724",
+    "fsot_formula": "B_IN\u207b\u2076-A_IN\u207b\u2077",
+    "computed_value": 4.150702399695581,
+    "error_pct": 0.01692529386942307,
+    "old_error": 1.624439
+  },
+  {
+    "section": "\u00a731 Band Gaps",
+    "name": "InAs",
+    "unified_section": "\u00a731",
+    "fsot_formula": "A_IN\u207b\u2075/A_IN\u207b\u00b3",
+    "computed_value": 0.35991915257787704,
+    "error_pct": 0.022457617256372974,
+    "old_error": 1.618886
+  },
+  {
+    "section": "\u00a782 M\u00f6ssbauer IS",
+    "name": "K4FeCN6",
+    "unified_section": "\u00a782",
+    "fsot_formula": "S_cosm\u2075-S_cosm\u2079",
+    "computed_value": -0.02998387705180611,
+    "error_pct": 0.053743160646294495,
+    "old_error": 1.618542
+  },
+  {
+    "section": "\u00a770 Shear Modulus",
+    "name": "Pt",
+    "unified_section": "\u00a770",
+    "fsot_formula": "S_cosm\u207b\u2076-S_quant\u207b\u00b3",
+    "computed_value": 60.99953674237216,
+    "error_pct": 0.0007594387341680245,
+    "old_error": 1.618371
+  },
+  {
+    "section": "\u00a794 Donor Number DN",
+    "name": "triethylamine",
+    "unified_section": "\u00a794",
+    "fsot_formula": "S_cosm\u207b\u2076-S_quant\u207b\u00b3",
+    "computed_value": 60.99953674237216,
+    "error_pct": 0.0007594387341680245,
+    "old_error": 1.618371
+  },
+  {
+    "section": "\u00a720 Raman \u03bd",
+    "name": "S\u2088",
+    "unified_section": "\u00a720",
+    "fsot_formula": "THETA\u207b\u2075-POOF\u207b\u00b9",
+    "computed_value": 473.55751670368375,
+    "error_pct": 0.11786822488028448,
+    "old_error": 1.617772
+  },
+  {
+    "section": "\u00a746 Critical Temp Tc",
+    "name": "H\u2082",
+    "unified_section": "\u00a746",
+    "fsot_formula": "PHI\u207b\u00b3/GAMMA\u2079",
+    "computed_value": 33.18899488674074,
+    "error_pct": 0.0030283617332352557,
+    "old_error": 1.610601
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "H\u2082O",
+    "unified_section": "\u00a729",
+    "fsot_formula": "OMEGA\u2078\u00b7OMEGA\u2079",
+    "computed_value": 80.0991084513808,
+    "error_pct": 0.0011130444684067755,
+    "old_error": 1.608607
+  },
+  {
+    "section": "\u00a776 Magnetic Ordering T",
+    "name": "Cr_TN",
+    "unified_section": "\u00a776",
+    "fsot_formula": "SUCTION\u207b\u00b3-C_FAC\u207b\u00b9",
+    "computed_value": 311.11432604385726,
+    "error_pct": 0.036760785806193276,
+    "old_error": 1.601382
+  },
+  {
+    "section": "\u00a783 Electron Mobility",
+    "name": "GaN",
+    "unified_section": "\u00a783",
+    "fsot_formula": "C_COSM\u207b\u00b3/PHI\u00b3",
+    "computed_value": 1000.0,
+    "error_pct": 0.0,
+    "old_error": 1.598734
+  },
+  {
+    "section": "\u00a769 Virial B(T)",
+    "name": "C2H6",
+    "unified_section": "\u00a769",
+    "fsot_formula": "S_cosm\u207b\u2077-S_cosm\u207b\u2076",
+    "computed_value": -185.82999521794048,
+    "error_pct": 0.0914004204621084,
+    "old_error": 1.597949
+  },
+  {
+    "section": "\u00a737 Thermal \u03ba",
+    "name": "H\u2082O",
+    "unified_section": "\u00a737",
+    "fsot_formula": "S_quant\u00b2\u00b7S_quant\u2079",
+    "computed_value": 0.6061346396781313,
+    "error_pct": 0.02221776866853479,
+    "old_error": 1.594607
+  },
+  {
+    "section": "\u00a747 \u0394Hvap",
+    "name": "Cl\u2082",
+    "unified_section": "\u00a747",
+    "fsot_formula": "G\u207b\u00b3\u00b7S_cosm\u207b\u2074",
+    "computed_value": 20.415995288129096,
+    "error_pct": 0.02937426814843758,
+    "old_error": 1.589726
+  },
+  {
+    "section": "\u00a769 Virial B(T)",
+    "name": "NH3",
+    "unified_section": "\u00a769",
+    "fsot_formula": "E\u2075-E\u2076",
+    "computed_value": -255.01563439015843,
+    "error_pct": 0.006131133395460803,
+    "old_error": 1.584695
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Ala",
+    "unified_section": "\u00a736",
+    "fsot_formula": "PSI\u207b\u00b9+ETA\u00b2",
+    "computed_value": 1.8000117314766249,
+    "error_pct": 0.0006517487013783333,
+    "old_error": 1.582433
+  },
+  {
+    "section": "\u00a747 \u0394Hvap",
+    "name": "diethyl_ether",
+    "unified_section": "\u00a747",
+    "fsot_formula": "C_COSM\u207b\u00b2/PI\u00b2",
+    "computed_value": 26.526230255601014,
+    "error_pct": 0.023492668178787833,
+    "old_error": 1.582349
+  },
+  {
+    "section": "\u00a772 Electronegativity Ext",
+    "name": "I",
+    "unified_section": "\u00a772",
+    "fsot_formula": "S_cosm\u207b\u00b2-G\u207b\u00b3",
+    "computed_value": 2.6597371782215316,
+    "error_pct": 0.009880517987541035,
+    "old_error": 1.57767
+  },
+  {
+    "section": "\u00a770 Shear Modulus",
+    "name": "Au",
+    "unified_section": "\u00a770",
+    "fsot_formula": "GAMMA\u207b\u2076-GAMMA\u2076",
+    "computed_value": 27.000814497888015,
+    "error_pct": 0.0030166588445013076,
+    "old_error": 1.542251
+  },
+  {
+    "section": "\u00a732 Work Functions",
+    "name": "Mg",
+    "unified_section": "\u00a732",
+    "fsot_formula": "A_BLEED\u2076/A_IN\u207b\u00b2",
+    "computed_value": 3.659396796903612,
+    "error_pct": 0.016480958917706578,
+    "old_error": 1.531491
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "As",
+    "unified_section": "\u00a741",
+    "fsot_formula": "P_NEW\u2075+P_VAR\u207b\u2074",
+    "computed_value": 1.1897445824518682,
+    "error_pct": 0.021463659506869095,
+    "old_error": 1.526257
+  },
+  {
+    "section": "\u00a751 Solubility logS",
+    "name": "chlorobenzene",
+    "unified_section": "\u00a751",
+    "fsot_formula": "P_BASE\u00b3-K\u207b\u00b9",
+    "computed_value": -2.3701216184657565,
+    "error_pct": 0.0051315808336043645,
+    "old_error": 1.517923
+  },
+  {
+    "section": "\u00a760 pKH Extended",
+    "name": "Xe",
+    "unified_section": "\u00a760",
+    "fsot_formula": "A_BL\u207b\u2076+B_IN\u207b\u00b2",
+    "computed_value": 2.369944509802032,
+    "error_pct": 0.0023413585640562557,
+    "old_error": 1.517923
+  },
+  {
+    "section": "\u00a785 Thermal Diffusivity",
+    "name": "Ag",
+    "unified_section": "\u00a785",
+    "fsot_formula": "P_BASE\u207b\u00b9\u00b7P_NEW\u207b\u00b3",
+    "computed_value": 173.89235895430107,
+    "error_pct": 0.061862669941911794,
+    "old_error": 1.516871
+  },
+  {
+    "section": "\u00a746 Critical Temp Tc",
+    "name": "Ar",
+    "unified_section": "\u00a746",
+    "fsot_formula": "GAMMA_C\u207b\u2076-PHI\u2075",
+    "computed_value": 150.70780258926965,
+    "error_pct": 0.011814048224599917,
+    "old_error": 1.510944
+  },
+  {
+    "section": "\u00a753 Fluorescence \u03a6f",
+    "name": "acridine_orange",
+    "unified_section": "\u00a753",
+    "fsot_formula": "S_quant-G\u2078",
+    "computed_value": 0.46001813370577566,
+    "error_pct": 0.003942109951225192,
+    "old_error": 1.509175
+  },
+  {
+    "section": "\u00a753 Fluorescence \u03a6f",
+    "name": "FITC",
+    "unified_section": "\u00a753",
+    "fsot_formula": "C_EFF\u2077/A_BLEED\u207b\u2075",
+    "computed_value": 0.9295914518655702,
+    "error_pct": 0.043929906927936475,
+    "old_error": 1.509076
+  },
+  {
+    "section": "\u00a782 M\u00f6ssbauer IS",
+    "name": "FeO",
+    "unified_section": "\u00a782",
+    "fsot_formula": "C_EFF\u2077/A_BLEED\u207b\u2075",
+    "computed_value": 0.9295914518655702,
+    "error_pct": 0.043929906927936475,
+    "old_error": 1.509076
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Ser",
+    "unified_section": "\u00a736",
+    "fsot_formula": "C_FAC\u2074-P_VAR\u2075",
+    "computed_value": -0.8000187364364202,
+    "error_pct": 0.0023420545525176806,
+    "old_error": 1.507401
+  },
+  {
+    "section": "\u00a745 Activation Ea",
+    "name": "CO+O\u2082\u2192CO\u2082",
+    "unified_section": "\u00a745",
+    "fsot_formula": "K\u207b\u2075\u00b7GATE\u207b\u00b2",
+    "computed_value": 199.79429768652713,
+    "error_pct": 0.10285115673643475,
+    "old_error": 1.505655
+  },
+  {
+    "section": "\u00a783 Electron Mobility",
+    "name": "ZnO",
+    "unified_section": "\u00a783",
+    "fsot_formula": "K\u207b\u2075\u00b7GATE\u207b\u00b2",
+    "computed_value": 199.79429768652713,
+    "error_pct": 0.10285115673643475,
+    "old_error": 1.505655
+  },
+  {
+    "section": "\u00a779 Optical Phonon \u03bd",
+    "name": "Si",
+    "unified_section": "\u00a779",
+    "fsot_formula": "GATE\u207b\u2077-K\u207b\u00b3",
+    "computed_value": 15.558327579425503,
+    "error_pct": 0.010748204206279718,
+    "old_error": 1.502327
+  },
+  {
+    "section": "\u00a758 log\u03b2 Stability",
+    "name": "Ca_EDTA",
+    "unified_section": "\u00a758",
+    "fsot_formula": "K\u207b\u00b3-A_IN\u00b2",
+    "computed_value": 10.697712533716583,
+    "error_pct": 0.07214718163314815,
+    "old_error": 1.490657
+  },
+  {
+    "section": "\u00a721 Protein \u0394G",
+    "name": "chymotrypsin inh.",
+    "unified_section": "\u00a721",
+    "fsot_formula": "CHAOS\u207b\u00b9\u00b7G\u207b\u2074",
+    "computed_value": -4.291643461547232,
+    "error_pct": 0.19433810355273806,
+    "old_error": 1.486791
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "N\u2082",
+    "unified_section": "\u00a748",
+    "fsot_formula": "G\u2074+S_cosm\u2076",
+    "computed_value": 0.7200003850106216,
+    "error_pct": 5.347369744532513e-05,
+    "old_error": 1.485817
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Phe",
+    "unified_section": "\u00a736",
+    "fsot_formula": "OMEGA\u2074-ETA\u2077",
+    "computed_value": 2.8000278321883467,
+    "error_pct": 0.000994006726674966,
+    "old_error": 1.474656
+  },
+  {
+    "section": "\u00a792 Protein Fold Rate",
+    "name": "AcP",
+    "unified_section": "\u00a792",
+    "fsot_formula": "C_EFF\u2079-A_IN\u207b\u2075",
+    "computed_value": 0.6000412191705633,
+    "error_pct": 0.0068698617605537455,
+    "old_error": 1.466864
+  },
+  {
+    "section": "\u00a738 Resistivity \u03c1",
+    "name": "Pb",
+    "unified_section": "\u00a738",
+    "fsot_formula": "E\u00b3-S_cosm",
+    "computed_value": 20.58799286939771,
+    "error_pct": 0.058287041758699955,
+    "old_error": 1.466589
+  },
+  {
+    "section": "\u00a761 Glass Tg",
+    "name": "PVC",
+    "unified_section": "\u00a761",
+    "fsot_formula": "S_quant\u207b\u2078/S_cosm\u2078",
+    "computed_value": 354.28081857933887,
+    "error_pct": 0.07932728229911588,
+    "old_error": 1.46027
+  },
+  {
+    "section": "\u00a782 M\u00f6ssbauer IS",
+    "name": "FePO4",
+    "unified_section": "\u00a782",
+    "fsot_formula": "CHAOS+S_quant\u2076",
+    "computed_value": 0.43000503294102804,
+    "error_pct": 0.001170451401871904,
+    "old_error": 1.457337
+  },
+  {
+    "section": "\u00a761 Glass Tg",
+    "name": "PET",
+    "unified_section": "\u00a761",
+    "fsot_formula": "SUCTION\u207b\u00b3-CHAOS\u207b\u00b3",
+    "computed_value": 342.1603643107121,
+    "error_pct": 0.04689014933102677,
+    "old_error": 1.454397
+  },
+  {
+    "section": "\u00a779 Optical Phonon \u03bd",
+    "name": "CdS",
+    "unified_section": "\u00a779",
+    "fsot_formula": "S_quant\u207b\u2075-S_cosm\u207b\u00b3",
+    "computed_value": 9.138808085652089,
+    "error_pct": 0.013040638379776245,
+    "old_error": 1.454157
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "InP",
+    "unified_section": "\u00a777",
+    "fsot_formula": "PHI\u207b\u2078+PHI\u207b\u2076",
+    "computed_value": 0.07701432625304938,
+    "error_pct": 0.01860552344075593,
+    "old_error": 1.451488
+  },
+  {
+    "section": "\u00a718 Crystal Field \u0394o",
+    "name": "[V(H\u2082O)\u2086]\u00b3\u207a",
+    "unified_section": "\u00a718",
+    "fsot_formula": "THETA\u207b\u2078-THETA\u207b\u2076",
+    "computed_value": 17852.234760085074,
+    "error_pct": 0.01251966434214848,
+    "old_error": 1.447535
+  },
+  {
+    "section": "\u00a749 Molar \u039b\u00b0",
+    "name": "NaCl",
+    "unified_section": "\u00a749",
+    "fsot_formula": "PI\u2074+PHI\u2077",
+    "computed_value": 126.44353288775105,
+    "error_pct": 0.044638033398381696,
+    "old_error": 1.444761
+  },
+  {
+    "section": "\u00a734 Young's Modulus",
+    "name": "Ag",
+    "unified_section": "\u00a734",
+    "fsot_formula": "CHAOS\u207b\u2074-C_FAC",
+    "computed_value": 82.99631108559521,
+    "error_pct": 0.004444475186494538,
+    "old_error": 1.442832
+  },
+  {
+    "section": "\u00a794 Donor Number DN",
+    "name": "pyridine",
+    "unified_section": "\u00a794",
+    "fsot_formula": "PI\u2076\u00b7PHI\u207b\u2077",
+    "computed_value": 33.11202600063687,
+    "error_pct": 0.03633232820805232,
+    "old_error": 1.437128
+  },
+  {
+    "section": "\u00a769 Virial B(T)",
+    "name": "N2",
+    "unified_section": "\u00a769",
+    "fsot_formula": "A_IN\u207b\u2074-A_IN\u00b3",
+    "computed_value": -4.501647827905011,
+    "error_pct": 0.03661839788914199,
+    "old_error": 1.428373
+  },
+  {
+    "section": "\u00a722 Amino Acid pKa",
+    "name": "Pro_pK\u2081",
+    "unified_section": "\u00a722",
+    "fsot_formula": "C_COSM\u2079-S_cosm\u207b\u00b9",
+    "computed_value": 1.9902242326903956,
+    "error_pct": 0.01126797439173972,
+    "old_error": 1.426298
+  },
+  {
+    "section": "\u00a783 Electron Mobility",
+    "name": "InP",
+    "unified_section": "\u00a783",
+    "fsot_formula": "E\u00b9\u00b9/PHI\u2075",
+    "computed_value": 5398.847990507432,
+    "error_pct": 0.021333509121632233,
+    "old_error": 1.424606
+  },
+  {
+    "section": "\u00a738 Resistivity \u03c1",
+    "name": "Cu",
+    "unified_section": "\u00a738",
+    "fsot_formula": "E\u00b7GATE",
+    "computed_value": 1.6799905609889012,
+    "error_pct": 0.0005618458987341083,
+    "old_error": 1.422999
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Gly",
+    "unified_section": "\u00a736",
+    "fsot_formula": "C_EFF\u2074-C_EFF\u207b\u2075",
+    "computed_value": -0.3999726487251297,
+    "error_pct": 0.0068378187175754945,
+    "old_error": 1.422053
+  },
+  {
+    "section": "\u00a716 pKsp",
+    "name": "Mg(OH)\u2082",
+    "unified_section": "\u00a716",
+    "fsot_formula": "A_BL\u2076/B_IN\u2079",
+    "computed_value": 11.250509687566145,
+    "error_pct": 0.004530556143515064,
+    "old_error": 1.420712
+  },
+  {
+    "section": "\u00a774 Acoustic Impedance",
+    "name": "Steel",
+    "unified_section": "\u00a774",
+    "fsot_formula": "ETA\u207b\u2075-ETA\u2074",
+    "computed_value": 45.00137640336734,
+    "error_pct": 0.003058674149640537,
+    "old_error": 1.420712
+  },
+  {
+    "section": "\u00a723 Drug pKd",
+    "name": "aspirin/COX-1",
+    "unified_section": "\u00a723",
+    "fsot_formula": "G\u00b2+S_cosm\u207b\u00b2",
+    "computed_value": 4.799985466052134,
+    "error_pct": 0.0003027905805345436,
+    "old_error": 1.420595
+  },
+  {
+    "section": "\u00a75c E\u00b0",
+    "name": "Mg\u00b2\u207a/Mg",
+    "unified_section": "\u00a75c",
+    "fsot_formula": "P_VAR-P_NEW\u207b\u00b9",
+    "computed_value": -2.371990961701875,
+    "error_pct": 0.00038104123630022856,
+    "old_error": 1.420245
+  },
+  {
+    "section": "\u00a761 Glass Tg",
+    "name": "PMMA",
+    "unified_section": "\u00a761",
+    "fsot_formula": "GAMMA\u00b2-GAMMA_C\u207b\u2077",
+    "computed_value": 378.02297629788643,
+    "error_pct": 0.006078385684240761,
+    "old_error": 1.41356
+  },
+  {
+    "section": "\u00a751 Solubility logS",
+    "name": "paracetamol",
+    "unified_section": "\u00a751",
+    "fsot_formula": "PHI\u207b\u00b9-PHI",
+    "computed_value": -1.0,
+    "error_pct": 0.0,
+    "old_error": 1.408657
+  },
+  {
+    "section": "\u00a772 Electronegativity Ext",
+    "name": "Ca",
+    "unified_section": "\u00a772",
+    "fsot_formula": "E\u207b\u2077\u00b7E\u2077",
+    "computed_value": 1.0,
+    "error_pct": 0.0,
+    "old_error": 1.408657
+  },
+  {
+    "section": "\u00a772 Electronegativity Ext",
+    "name": "Ge",
+    "unified_section": "\u00a772",
+    "fsot_formula": "C_EFF\u207b\u00b3+A_BLEED\u207b\u00b3",
+    "computed_value": 2.0097860602626807,
+    "error_pct": 0.010643768025825423,
+    "old_error": 1.405754
+  },
+  {
+    "section": "\u00a714 Surface Tension",
+    "name": "C\u2082H\u2085OH",
+    "unified_section": "\u00a714",
+    "fsot_formula": "P_BASE\u207b\u00b2+P_BASE",
+    "computed_value": 22.389853861063656,
+    "error_pct": 0.0006526973485671583,
+    "old_error": 1.400495
+  },
+  {
+    "section": "\u00a725 vdW Radii",
+    "name": "I",
+    "unified_section": "\u00a725",
+    "fsot_formula": "A_BLEED\u207b\u2074+A_BLEED\u00b3",
+    "computed_value": 1.9799002804938424,
+    "error_pct": 0.005036338694828987,
+    "old_error": 1.399478
+  },
+  {
+    "section": "\u00a782 M\u00f6ssbauer IS",
+    "name": "Fe2O3",
+    "unified_section": "\u00a782",
+    "fsot_formula": "S_quant\u00b3+S_cosm",
+    "computed_value": 0.3699139383868001,
+    "error_pct": 0.023259895459434028,
+    "old_error": 1.386517
+  },
+  {
+    "section": "\u00a725 vdW Radii",
+    "name": "Se",
+    "unified_section": "\u00a725",
+    "fsot_formula": "G\u2075+S_quant\u207b\u2075",
+    "computed_value": 1.9003014455787146,
+    "error_pct": 0.01586555677445782,
+    "old_error": 1.385905
+  },
+  {
+    "section": "\u00a718 Crystal Field \u0394o",
+    "name": "[Co(NH\u2083)\u2086]\u00b3\u207a",
+    "unified_section": "\u00a718",
+    "fsot_formula": "E\u00b9\u2070+PI\u2076",
+    "computed_value": 22987.85498838201,
+    "error_pct": 0.05280439833909243,
+    "old_error": 1.379824
+  },
+  {
+    "section": "\u00a746 Critical Temp Tc",
+    "name": "ethanol",
+    "unified_section": "\u00a746",
+    "fsot_formula": "P_BASE\u207b\u00b3+P_NEW\u207b\u2075",
+    "computed_value": 513.8962003132059,
+    "error_pct": 0.004631010039318133,
+    "old_error": 1.37802
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "Cu",
+    "unified_section": "\u00a728",
+    "fsot_formula": "C_FAC\u207b\u2076-P_NEW\u207b\u2075",
+    "computed_value": 1357.661461482808,
+    "error_pct": 0.02492919861502884,
+    "old_error": 1.375772
+  },
+  {
+    "section": "\u00a785 Thermal Diffusivity",
+    "name": "Pb",
+    "unified_section": "\u00a785",
+    "fsot_formula": "K\u207b\u2077/GATE\u207b\u2076",
+    "computed_value": 24.083804338835442,
+    "error_pct": 0.06720191354588913,
+    "old_error": 1.373901
+  },
+  {
+    "section": "\u00a722 Amino Acid pKa",
+    "name": "Leu_pK\u2081",
+    "unified_section": "\u00a722",
+    "fsot_formula": "PI\u00b2\u00b7PHI\u207b\u00b3",
+    "computed_value": 2.3298975496881877,
+    "error_pct": 0.004397009090657935,
+    "old_error": 1.370808
+  },
+  {
+    "section": "\u00a769 Virial B(T)",
+    "name": "Xe",
+    "unified_section": "\u00a769",
+    "fsot_formula": "PHI\u2076-E\u2075",
+    "computed_value": -130.4688871925774,
+    "error_pct": 0.20651858108864016,
+    "old_error": 1.370685
+  },
+  {
+    "section": "\u00a738 Resistivity \u03c1",
+    "name": "nichrome",
+    "unified_section": "\u00a738",
+    "fsot_formula": "A_IN\u2075/B_IN\u2079",
+    "computed_value": 109.91205875478008,
+    "error_pct": 0.07994658656356664,
+    "old_error": 1.364308
+  },
+  {
+    "section": "\u00a750 Diffusion D",
+    "name": "K\u207a",
+    "unified_section": "\u00a750",
+    "fsot_formula": "E-S_quant\u2076",
+    "computed_value": 1.9572526129075354,
+    "error_pct": 0.012908171054435875,
+    "old_error": 1.362236
+  },
+  {
+    "section": "\u00a737 Thermal \u03ba",
+    "name": "ice",
+    "unified_section": "\u00a737",
+    "fsot_formula": "C_EFF\u2074+A_BLEED\u2077",
+    "computed_value": 2.2201992847758265,
+    "error_pct": 0.008976791703888012,
+    "old_error": 1.358313
+  },
+  {
+    "section": "\u00a758 log\u03b2 Stability",
+    "name": "Zn_EDTA",
+    "unified_section": "\u00a758",
+    "fsot_formula": "S_quant\u2075+S_cosm\u207b\u2074",
+    "computed_value": 16.485928534288107,
+    "error_pct": 0.08528161037511174,
+    "old_error": 1.355796
+  },
+  {
+    "section": "\u00a716 pKsp",
+    "name": "Fe(OH)\u2083",
+    "unified_section": "\u00a716",
+    "fsot_formula": "PSI\u00b2\u00b7ETA\u207b\u2076",
+    "computed_value": 38.54970341678774,
+    "error_pct": 0.0007693468540962908,
+    "old_error": 1.349393
+  },
+  {
+    "section": "\u00a733 Debye Temps",
+    "name": "Fe",
+    "unified_section": "\u00a733",
+    "fsot_formula": "THETA\u207b\u2075-OMEGA\u2079",
+    "computed_value": 469.891637647392,
+    "error_pct": 0.023055819703835308,
+    "old_error": 1.348655
+  },
+  {
+    "section": "\u00a779 Optical Phonon \u03bd",
+    "name": "AlN",
+    "unified_section": "\u00a779",
+    "fsot_formula": "K\u207b\u2074/GATE\u207b\u00b9",
+    "computed_value": 19.81976982182512,
+    "error_pct": 0.0011613429610557312,
+    "old_error": 1.339742
+  },
+  {
+    "section": "\u00a751 Solubility logS",
+    "name": "benzene",
+    "unified_section": "\u00a751",
+    "fsot_formula": "A_BL\u207b\u00b9-B_IN\u207b\u2074",
+    "computed_value": -1.6391987532793946,
+    "error_pct": 0.04885650735398359,
+    "old_error": 1.339391
+  },
+  {
+    "section": "\u00a771 DNA Stacking \u0394G",
+    "name": "GC/CG",
+    "unified_section": "\u00a771",
+    "fsot_formula": "P_VAR\u207b\u00b2-P_NEW\u207b\u00b9",
+    "computed_value": -2.2403440561097856,
+    "error_pct": 0.015359647758276092,
+    "old_error": 1.334992
+  },
+  {
+    "section": "\u00a721 Protein \u0394G",
+    "name": "barnase",
+    "unified_section": "\u00a721",
+    "fsot_formula": "S_cosm\u207b\u00b3-G",
+    "computed_value": -8.79922884583726,
+    "error_pct": 0.0087631154856993,
+    "old_error": 1.327424
+  },
+  {
+    "section": "\u00a737 Thermal \u03ba",
+    "name": "Al",
+    "unified_section": "\u00a737",
+    "fsot_formula": "A_IN\u2079\u00b7K\u207b\u00b9",
+    "computed_value": 236.37375390577682,
+    "error_pct": 0.26423885832201555,
+    "old_error": 1.323855
+  },
+  {
+    "section": "\u00a747 \u0394Hvap",
+    "name": "H\u2082",
+    "unified_section": "\u00a747",
+    "fsot_formula": "G-CHAOS\u2074",
+    "computed_value": 0.9039584731721868,
+    "error_pct": 0.004593675643055399,
+    "old_error": 1.323628
+  },
+  {
+    "section": "\u00a725 vdW Radii",
+    "name": "Te",
+    "unified_section": "\u00a725",
+    "fsot_formula": "C_EFF\u207b\u2074+A_BLEED\u207b\u00b3",
+    "computed_value": 2.060066122598292,
+    "error_pct": 0.0032098348685370044,
+    "old_error": 1.322476
+  },
+  {
+    "section": "\u00a781 Cohesive Energy",
+    "name": "Fe",
+    "unified_section": "\u00a781",
+    "fsot_formula": "THETA\u207b\u00b9+C_EFF\u2074",
+    "computed_value": 4.278892239372999,
+    "error_pct": 0.02588225764022371,
+    "old_error": 1.31579
+  },
+  {
+    "section": "\u00a718 Crystal Field \u0394o",
+    "name": "[Co(CN)\u2086]\u00b3\u207b",
+    "unified_section": "\u00a718",
+    "fsot_formula": "PI\u2077/PHI\u207b\u2075",
+    "computed_value": 33495.565176000266,
+    "error_pct": 0.013238280596221976,
+    "old_error": 1.315431
+  },
+  {
+    "section": "\u00a792 Protein Fold Rate",
+    "name": "barnase",
+    "unified_section": "\u00a792",
+    "fsot_formula": "CHAOS\u2075+G\u2074",
+    "computed_value": 0.6999345558173916,
+    "error_pct": 0.009349168944048993,
+    "old_error": 1.307377
+  },
+  {
+    "section": "\u00a75b pKa",
+    "name": "HI",
+    "unified_section": "\u00a75b",
+    "fsot_formula": "P_VAR\u207b\u00b2-P_NEW\u207b\u00b2",
+    "computed_value": -9.999120014147774,
+    "error_pct": 0.008799858522259285,
+    "old_error": 1.303956
+  },
+  {
+    "section": "\u00a735 Michaelis Km",
+    "name": "glucokinase",
+    "unified_section": "\u00a735",
+    "fsot_formula": "C_COSM\u207b\u00b9/PHI",
+    "computed_value": 10.0,
+    "error_pct": 0.0,
+    "old_error": 1.303956
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "O",
+    "unified_section": "\u00a741",
+    "fsot_formula": "P_VAR\u207b\u2078-P_VAR\u2079",
+    "computed_value": 0.7301123394396885,
+    "error_pct": 0.015388964340886185,
+    "old_error": 1.29809
+  },
+  {
+    "section": "\u00a773 Thermal Expansion",
+    "name": "Al",
+    "unified_section": "\u00a773",
+    "fsot_formula": "P_BASE\u207b\u00b2+P_VAR\u00b2",
+    "computed_value": 23.095247412030183,
+    "error_pct": 0.020573973895318086,
+    "old_error": 1.28217
+  },
+  {
+    "section": "\u00a725 vdW Radii",
+    "name": "Br",
+    "unified_section": "\u00a725",
+    "fsot_formula": "B_IN\u207b\u00b2+B_IN\u2076",
+    "computed_value": 1.850003584096177,
+    "error_pct": 0.00019373492848411935,
+    "old_error": 1.27934
+  },
+  {
+    "section": "\u00a735 Michaelis Km",
+    "name": "TPI",
+    "unified_section": "\u00a735",
+    "fsot_formula": "CHAOS+G\u207b\u00b3",
+    "computed_value": 0.9702311355036954,
+    "error_pct": 0.023828402442831718,
+    "old_error": 1.267814
+  },
+  {
+    "section": "\u00a764 Neutron \u03c3_a",
+    "name": "Gd",
+    "unified_section": "\u00a764",
+    "fsot_formula": "SUCTION\u207b\u2076/G\u207b\u2078",
+    "computed_value": 49037.34087629763,
+    "error_pct": 0.07620586999516807,
+    "old_error": 1.262166
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "Au",
+    "unified_section": "\u00a748",
+    "fsot_formula": "CHAOS\u207b\u00b2\u00b7S_quant\u207b\u2077",
+    "computed_value": 12.550056238477664,
+    "error_pct": 0.00044811535986636285,
+    "old_error": 1.260589
+  },
+  {
+    "section": "\u00a720 Raman \u03bd",
+    "name": "C\u2086H\u2086_\u03bd\u2081",
+    "unified_section": "\u00a720",
+    "fsot_formula": "PI\u00b3+PI\u2076",
+    "computed_value": 992.3954702556041,
+    "error_pct": 0.03986595318589674,
+    "old_error": 1.257887
+  },
+  {
+    "section": "\u00a749 Molar \u039b\u00b0",
+    "name": "CaCl\u2082",
+    "unified_section": "\u00a749",
+    "fsot_formula": "C_COSM\u207b\u00b2+PI\u00b2",
+    "computed_value": 271.6730032760788,
+    "error_pct": 0.026878967628421773,
+    "old_error": 1.256778
+  },
+  {
+    "section": "\u00a781 Cohesive Energy",
+    "name": "Al",
+    "unified_section": "\u00a781",
+    "fsot_formula": "B_IN\u207b\u2076-B_IN",
+    "computed_value": 3.3907332101608487,
+    "error_pct": 0.021628618314117887,
+    "old_error": 1.253369
+  },
+  {
+    "section": "\u00a760 pKH Extended",
+    "name": "COS",
+    "unified_section": "\u00a760",
+    "fsot_formula": "A_IN/P_VAR",
+    "computed_value": 1.7399543329506715,
+    "error_pct": 0.0026245430648570538,
+    "old_error": 1.248171
+  },
+  {
+    "section": "\u00a731 Band Gaps",
+    "name": "GaN",
+    "unified_section": "\u00a731",
+    "fsot_formula": "G\u207b\u2077+G\u207b\u2075",
+    "computed_value": 3.39958530279932,
+    "error_pct": 0.012196976490588003,
+    "old_error": 1.232204
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "ZnSe",
+    "unified_section": "\u00a777",
+    "fsot_formula": "PSI\u2074+ETA\u2076",
+    "computed_value": 0.17002652648181688,
+    "error_pct": 0.015603812833448895,
+    "old_error": 1.229388
+  },
+  {
+    "section": "\u00a745 Activation Ea",
+    "name": "N\u2082O\u2085_decomp",
+    "unified_section": "\u00a745",
+    "fsot_formula": "P_BASE\u207b\u00b3-P_VAR\u207b\u2078",
+    "computed_value": 103.0308557906019,
+    "error_pct": 0.029957078254276397,
+    "old_error": 1.226401
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "Fe",
+    "unified_section": "\u00a741",
+    "fsot_formula": "PI\u00b7K",
+    "computed_value": 1.3201652930065222,
+    "error_pct": 0.012522197463797497,
+    "old_error": 1.226307
+  },
+  {
+    "section": "\u00a741 Covalent Radii",
+    "name": "Cu",
+    "unified_section": "\u00a741",
+    "fsot_formula": "PI\u00b7K",
+    "computed_value": 1.3201652930065222,
+    "error_pct": 0.012522197463797497,
+    "old_error": 1.226307
+  },
+  {
+    "section": "\u00a791 Critical Pressure Pc",
+    "name": "C3H8",
+    "unified_section": "\u00a791",
+    "fsot_formula": "K\u207b\u00b3+GATE\u207b\u2077",
+    "computed_value": 42.51055612807173,
+    "error_pct": 0.024837948404063035,
+    "old_error": 1.223787
+  },
+  {
+    "section": "\u00a781 Cohesive Energy",
+    "name": "Co",
+    "unified_section": "\u00a781",
+    "fsot_formula": "A_IN\u00b2+B_IN\u207b\u00b2",
+    "computed_value": 4.389094959879622,
+    "error_pct": 0.020615948072383154,
+    "old_error": 1.222874
+  },
+  {
+    "section": "\u00a782 M\u00f6ssbauer IS",
+    "name": "Fe3O4_oct",
+    "unified_section": "\u00a782",
+    "fsot_formula": "C_EFF-C_FAC",
+    "computed_value": 0.6701020508013772,
+    "error_pct": 0.015231462892112163,
+    "old_error": 1.221857
+  },
+  {
+    "section": "\u00a727 Boiling Points",
+    "name": "C\u2082H\u2085OH",
+    "unified_section": "\u00a727",
+    "fsot_formula": "OMEGA\u207b\u2076/THETA\u2076",
+    "computed_value": 351.3177295768385,
+    "error_pct": 0.023412186443228077,
+    "old_error": 1.215609
+  },
+  {
+    "section": "\u00a772 Electronegativity Ext",
+    "name": "Mg",
+    "unified_section": "\u00a772",
+    "fsot_formula": "C_EFF\u207b\u00b2/A_BLEED\u207b\u2074",
+    "computed_value": 1.3100322937740994,
+    "error_pct": 0.002465173595366506,
+    "old_error": 1.211406
+  },
+  {
+    "section": "\u00a764 Neutron \u03c3_a",
+    "name": "Ni",
+    "unified_section": "\u00a764",
+    "fsot_formula": "OMEGA\u2077/C_EFF\u207b\u2077",
+    "computed_value": 4.492210477473959,
+    "error_pct": 0.049231124141622735,
+    "old_error": 1.208837
+  },
+  {
+    "section": "\u00a753 Fluorescence \u03a6f",
+    "name": "anthracene",
+    "unified_section": "\u00a753",
+    "fsot_formula": "A_BLEED\u2076-A_BLEED",
+    "computed_value": 0.27011336350019444,
+    "error_pct": 0.04198648155348847,
+    "old_error": 1.207611
+  },
+  {
+    "section": "\u00a738 Resistivity \u03c1",
+    "name": "Al",
+    "unified_section": "\u00a738",
+    "fsot_formula": "C_EFF\u207b\u00b3+A_BLEED\u2079",
+    "computed_value": 2.6499829175807545,
+    "error_pct": 0.000644619594164613,
+    "old_error": 1.206265
+  },
+  {
+    "section": "\u00a769 Virial B(T)",
+    "name": "Ne",
+    "unified_section": "\u00a769",
+    "fsot_formula": "P_BASE+P_NEW\u207b\u00b2",
+    "computed_value": 11.301099818651517,
+    "error_pct": 0.009732908420498367,
+    "old_error": 1.205885
+  },
+  {
+    "section": "\u00a76 IR Frequencies",
+    "name": "C\u2261N_stretch",
+    "unified_section": "\u00a76",
+    "fsot_formula": "P_BASE\u207b\u2075/P_VAR\u207b\u00b9",
+    "computed_value": 2218.919449514267,
+    "error_pct": 0.04867344530329082,
+    "old_error": 1.20422
+  },
+  {
+    "section": "\u00a739 Speed of Sound",
+    "name": "Air",
+    "unified_section": "\u00a739",
+    "fsot_formula": "P_VAR\u207b\u00b2/SUCTION\u00b3",
+    "computed_value": 342.78946792716084,
+    "error_pct": 0.06137961307264068,
+    "old_error": 1.203601
+  },
+  {
+    "section": "\u00a733 Debye Temps",
+    "name": "Si",
+    "unified_section": "\u00a733",
+    "fsot_formula": "GATE\u207b\u2077\u00b7P_BASE\u207b\u00b2",
+    "computed_value": 643.9115689498703,
+    "error_pct": 0.16874900002010182,
+    "old_error": 1.203333
+  },
+  {
+    "section": "\u00a745 Activation Ea",
+    "name": "C\u2082H\u2086\u21922CH\u2083",
+    "unified_section": "\u00a745",
+    "fsot_formula": "PHI\u00b2/GAMMA\u2079",
+    "computed_value": 368.07159355618717,
+    "error_pct": 0.019454770703034634,
+    "old_error": 1.201771
+  },
+  {
+    "section": "\u00a758 log\u03b2 Stability",
+    "name": "Fe3_EDTA",
+    "unified_section": "\u00a758",
+    "fsot_formula": "P_NEW\u207b\u00b3\u00b7P_VAR\u2079",
+    "computed_value": 25.093495803120952,
+    "error_pct": 0.02591313497629312,
+    "old_error": 1.201698
+  },
+  {
+    "section": "\u00a752 \u00b9\u00b3C NMR \u03b4",
+    "name": "C\u2261C",
+    "unified_section": "\u00a752",
+    "fsot_formula": "B_IN\u2074\u00b7K\u207b\u2076",
+    "computed_value": 70.00091378865987,
+    "error_pct": 0.0013054123712460555,
+    "old_error": 1.201352
+  },
+  {
+    "section": "\u00a767 Nuclear \u03bcN",
+    "name": "Li_7",
+    "unified_section": "\u00a767",
+    "fsot_formula": "K\u2074/P_BASE\u00b3",
+    "computed_value": 3.256738382818942,
+    "error_pct": 0.010391316144871857,
+    "old_error": 1.200635
+  },
+  {
+    "section": "\u00a731 Band Gaps",
+    "name": "CdTe",
+    "unified_section": "\u00a731",
+    "fsot_formula": "P_NEW\u00b2+P_VAR\u207b\u2078",
+    "computed_value": 1.4998682458876662,
+    "error_pct": 0.008783607488919525,
+    "old_error": 1.195769
+  },
+  {
+    "section": "\u00a777 Effective Mass m*",
+    "name": "CdTe",
+    "unified_section": "\u00a777",
+    "fsot_formula": "C_EFF\u207b\u2078-A_BLEED\u2076",
+    "computed_value": 0.09595838754148045,
+    "error_pct": 0.04334631095786676,
+    "old_error": 1.19039
+  },
+  {
+    "section": "\u00a746 Critical Temp Tc",
+    "name": "C\u2083H\u2088",
+    "unified_section": "\u00a746",
+    "fsot_formula": "S_cosm\u207b\u2078-S_cosm\u207b\u2077",
+    "computed_value": 369.84335964104076,
+    "error_pct": 0.0036123735339964377,
+    "old_error": 1.18738
+  },
+  {
+    "section": "\u00a745 Activation Ea",
+    "name": "2NO\u2082\u21922NO+O\u2082",
+    "unified_section": "\u00a745",
+    "fsot_formula": "A_BL\u00b3\u00b7A_IN\u2079",
+    "computed_value": 113.9947685948811,
+    "error_pct": 0.004588951858689246,
+    "old_error": 1.18716
+  },
+  {
+    "section": "\u00a764 Neutron \u03c3_a",
+    "name": "H",
+    "unified_section": "\u00a764",
+    "fsot_formula": "OMEGA\u00b3/POOF\u207b\u00b9",
+    "computed_value": 0.3326536972276427,
+    "error_pct": 0.01614468660333785,
+    "old_error": 1.184364
+  },
+  {
+    "section": "\u00a744 UV-Vis \u03bbmax",
+    "name": "KMnO\u2084",
+    "unified_section": "\u00a744",
+    "fsot_formula": "THETA/POOF\u2074",
+    "computed_value": 524.2112355616791,
+    "error_pct": 0.15024084539445107,
+    "old_error": 1.184351
+  },
+  {
+    "section": "\u00a727 Boiling Points",
+    "name": "CH\u2084",
+    "unified_section": "\u00a727",
+    "fsot_formula": "PI\u2077/GAMMA\u207b\u2076",
+    "computed_value": 111.70632429578238,
+    "error_pct": 0.005661858354858976,
+    "old_error": 1.177916
+  },
+  {
+    "section": "\u00a789 Surface Energy \u03b3s",
+    "name": "Ni",
+    "unified_section": "\u00a789",
+    "fsot_formula": "K\u207b\u00b9+K\u2079",
+    "computed_value": 2.3801050513839623,
+    "error_pct": 0.004413923695900844,
+    "old_error": 1.176067
+  },
+  {
+    "section": "\u00a775 Superconducting Tc",
+    "name": "Tl",
+    "unified_section": "\u00a775",
+    "fsot_formula": "G\u207b\u2075+G\u00b2",
+    "computed_value": 2.3899658206021646,
+    "error_pct": 0.0014301003278479221,
+    "old_error": 1.170693
+  },
+  {
+    "section": "\u00a715 Viscosity",
+    "name": "CCl\u2084",
+    "unified_section": "\u00a715",
+    "fsot_formula": "A_BLEED-A_IN\u207b\u2075",
+    "computed_value": 0.9692572808424288,
+    "error_pct": 0.02655117052928997,
+    "old_error": 1.165923
+  },
+  {
+    "section": "\u00a737 Thermal \u03ba",
+    "name": "Fe",
+    "unified_section": "\u00a737",
+    "fsot_formula": "PHI\u2075-GAMMA_C\u207b\u2075",
+    "computed_value": 80.40256341715572,
+    "error_pct": 0.003188329795662879,
+    "old_error": 1.16316
+  },
+  {
+    "section": "\u00a747 \u0394Hvap",
+    "name": "He",
+    "unified_section": "\u00a747",
+    "fsot_formula": "PI\u207b\u00b2-E\u207b\u2074",
+    "computed_value": 0.08300554475360358,
+    "error_pct": 0.006680426028407872,
+    "old_error": 1.15831
+  },
+  {
+    "section": "\u00a7105 Autoignition T",
+    "name": "Hydrogen",
+    "unified_section": "\u00a7105",
+    "fsot_formula": "C_FAC\u207b\u00b2+CHAOS\u207b\u2076",
+    "computed_value": 772.1390088349352,
+    "error_pct": 0.11138307439389063,
+    "old_error": 1.158263
+  },
+  {
+    "section": "\u00a732 Work Functions",
+    "name": "Na",
+    "unified_section": "\u00a732",
+    "fsot_formula": "E-S_cosm\u2075",
+    "computed_value": 2.7503068883641126,
+    "error_pct": 0.011159576876823058,
+    "old_error": 1.153388
+  },
+  {
+    "section": "\u00a781 Cohesive Energy",
+    "name": "Na",
+    "unified_section": "\u00a781",
+    "fsot_formula": "A_BLEED\u00b2+A_IN\u207b\u2078",
+    "computed_value": 1.1129348601582418,
+    "error_pct": 0.005852636276563793,
+    "old_error": 1.145747
+  },
+  {
+    "section": "\u00a749 Molar \u039b\u00b0",
+    "name": "NaNO\u2083",
+    "unified_section": "\u00a749",
+    "fsot_formula": "P_NEW\u207b\u2074-P_VAR\u207b\u2077",
+    "computed_value": 121.61000442271366,
+    "error_pct": 0.00822732131057856,
+    "old_error": 1.144629
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "diethyl ether",
+    "unified_section": "\u00a729",
+    "fsot_formula": "A_BL+B_IN\u207b\u2075",
+    "computed_value": 4.339521334732968,
+    "error_pct": 0.011029153618246218,
+    "old_error": 1.14171
+  },
+  {
+    "section": "\u00a779 Optical Phonon \u03bd",
+    "name": "ZnO",
+    "unified_section": "\u00a779",
+    "fsot_formula": "G\u00b2\u00b7S_cosm\u207b\u2074",
+    "computed_value": 13.163347944143451,
+    "error_pct": 0.025440305041422397,
+    "old_error": 1.130721
+  },
+  {
+    "section": "\u00a727 Boiling Points",
+    "name": "Hg",
+    "unified_section": "\u00a727",
+    "fsot_formula": "P_VAR\u207b\u2075\u00b7C_FAC\u207b\u2075",
+    "computed_value": 629.877490658897,
+    "error_pct": 0.0035734785049900005,
+    "old_error": 1.130701
+  },
+  {
+    "section": "\u00a736 Hydrophobicity",
+    "name": "Pro",
+    "unified_section": "\u00a736",
+    "fsot_formula": "E\u207b\u2074-PHI",
+    "computed_value": -1.5997183498611607,
+    "error_pct": 0.017603133677462912,
+    "old_error": 1.127124
+  },
+  {
+    "section": "\u00a760 pKH Extended",
+    "name": "N2O",
+    "unified_section": "\u00a760",
+    "fsot_formula": "G\u00b2+S_quant\u2076",
+    "computed_value": 1.6000221852679357,
+    "error_pct": 0.0013865792459766269,
+    "old_error": 1.127124
+  },
+  {
+    "section": "\u00a773 Thermal Expansion",
+    "name": "Fe",
+    "unified_section": "\u00a773",
+    "fsot_formula": "P_NEW\u207b\u00b2+P_VAR\u2078",
+    "computed_value": 11.798131478696373,
+    "error_pct": 0.015834926301930518,
+    "old_error": 1.123851
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "Ne",
+    "unified_section": "\u00a748",
+    "fsot_formula": "B_IN\u2075+K\u2074",
+    "computed_value": 0.3348988792473775,
+    "error_pct": 0.030185299290307444,
+    "old_error": 1.119382
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "CH\u2083COOH",
+    "unified_section": "\u00a728",
+    "fsot_formula": "E\u00b9\u2070/PHI\u2079",
+    "computed_value": 289.77175879456223,
+    "error_pct": 0.009745067438847508,
+    "old_error": 1.118546
+  },
+  {
+    "section": "\u00a753 Fluorescence \u03a6f",
+    "name": "rhodamine_B",
+    "unified_section": "\u00a753",
+    "fsot_formula": "A_BLEED\u2079-A_BLEED\u2074",
+    "computed_value": 0.3099940095788596,
+    "error_pct": 0.0019323939162618046,
+    "old_error": 1.116126
+  },
+  {
+    "section": "\u00a757 logP",
+    "name": "ethanol",
+    "unified_section": "\u00a757",
+    "fsot_formula": "A_BLEED\u2074-A_BLEED\u2079",
+    "computed_value": -0.3099940095788596,
+    "error_pct": 0.0019323939162618046,
+    "old_error": 1.116126
+  },
+  {
+    "section": "\u00a782 M\u00f6ssbauer IS",
+    "name": "FeS2",
+    "unified_section": "\u00a782",
+    "fsot_formula": "A_BLEED\u2079-A_BLEED\u2074",
+    "computed_value": 0.3099940095788596,
+    "error_pct": 0.0019323939162618046,
+    "old_error": 1.116126
+  },
+  {
+    "section": "\u00a767 Nuclear \u03bcN",
+    "name": "B_11",
+    "unified_section": "\u00a767",
+    "fsot_formula": "S_quant\u207b\u2077+S_quant\u207b\u2076",
+    "computed_value": 2.6892076319513043,
+    "error_pct": 0.022600310619065662,
+    "old_error": 1.103988
+  },
+  {
+    "section": "\u00a771 DNA Stacking \u0394G",
+    "name": "CT/GA",
+    "unified_section": "\u00a771",
+    "fsot_formula": "SUCTION\u00b2-G\u207b\u00b3",
+    "computed_value": -1.2796363252433056,
+    "error_pct": 0.02841209036675077,
+    "old_error": 1.103951
+  },
+  {
+    "section": "\u00a784 Poisson Ratio \u03bd",
+    "name": "W",
+    "unified_section": "\u00a784",
+    "fsot_formula": "S_quant\u2076/E",
+    "computed_value": 0.27996700253223056,
+    "error_pct": 0.011784809917667456,
+    "old_error": 1.102361
+  },
+  {
+    "section": "\u00a784 Poisson Ratio \u03bd",
+    "name": "Si",
+    "unified_section": "\u00a784",
+    "fsot_formula": "S_quant\u2076/E",
+    "computed_value": 0.27996700253223056,
+    "error_pct": 0.011784809917667456,
+    "old_error": 1.102361
+  },
+  {
+    "section": "\u00a718 Crystal Field \u0394o",
+    "name": "[Cr(H\u2082O)\u2086]\u00b3\u207a",
+    "unified_section": "\u00a718",
+    "fsot_formula": "THETA\u207b\u2077+POOF\u207b\u2075",
+    "computed_value": 17414.351235418417,
+    "error_pct": 0.08247836447365957,
+    "old_error": 1.101235
+  },
+  {
+    "section": "\u00a771 DNA Stacking \u0394G",
+    "name": "GT/CA",
+    "unified_section": "\u00a771",
+    "fsot_formula": "SUCTION\u2075/CHAOS\u2079",
+    "computed_value": -1.4399623905429433,
+    "error_pct": 0.002611767851157243,
+    "old_error": 1.100608
+  },
+  {
+    "section": "\u00a771 DNA Stacking \u0394G",
+    "name": "AC/TG",
+    "unified_section": "\u00a771",
+    "fsot_formula": "SUCTION\u2075/CHAOS\u2079",
+    "computed_value": -1.4399623905429433,
+    "error_pct": 0.002611767851157243,
+    "old_error": 1.100608
+  },
+  {
+    "section": "\u00a739 Speed of Sound",
+    "name": "He",
+    "unified_section": "\u00a739",
+    "fsot_formula": "PI\u2076+PHI\u2075",
+    "computed_value": 972.4793635190538,
+    "error_pct": 0.049317234470553195,
+    "old_error": 1.091647
+  },
+  {
+    "section": "\u00a722 Amino Acid pKa",
+    "name": "Trp_pK\u2081",
+    "unified_section": "\u00a722",
+    "fsot_formula": "K\u207b\u00b9+K\u2079",
+    "computed_value": 2.3801050513839623,
+    "error_pct": 0.004413923695900844,
+    "old_error": 1.091377
+  },
+  {
+    "section": "\u00a747 \u0394Hvap",
+    "name": "HCl",
+    "unified_section": "\u00a747",
+    "fsot_formula": "OMEGA\u2076\u00b7THETA\u207b\u00b9",
+    "computed_value": 16.148420033135196,
+    "error_pct": 0.00978307656224696,
+    "old_error": 1.091256
+  },
+  {
+    "section": "\u00a748 \u0394Hfus",
+    "name": "He",
+    "unified_section": "\u00a748",
+    "fsot_formula": "THETA\u00b3-POOF\u00b3",
+    "computed_value": 0.02100034884373327,
+    "error_pct": 0.0016611606346094733,
+    "old_error": 1.087814
+  },
+  {
+    "section": "\u00a746 Critical Temp Tc",
+    "name": "Cl\u2082",
+    "unified_section": "\u00a746",
+    "fsot_formula": "PSI\u207b\u2078-GAMMA_C\u207b\u2077",
+    "computed_value": 416.91820578120013,
+    "error_pct": 0.05556615577126892,
+    "old_error": 1.083176
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "Al",
+    "unified_section": "\u00a728",
+    "fsot_formula": "OMEGA\u207b\u2077/THETA\u2077",
+    "computed_value": 933.2186555482539,
+    "error_pct": 0.03013866649663868,
+    "old_error": 1.081167
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "toluene",
+    "unified_section": "\u00a729",
+    "fsot_formula": "K\u207b\u00b9+K\u2079",
+    "computed_value": 2.3801050513839623,
+    "error_pct": 0.004413923695900844,
+    "old_error": 1.079337
+  },
+  {
+    "section": "\u00a731 Band Gaps",
+    "name": "SiC_4H",
+    "unified_section": "\u00a731",
+    "fsot_formula": "B_IN\u207b\u2077-B_IN\u207b\u00b3",
+    "computed_value": 3.2591037401998593,
+    "error_pct": 0.027492631906150915,
+    "old_error": 1.075916
+  },
+  {
+    "section": "\u00a776 Magnetic Ordering T",
+    "name": "Gd_Tc",
+    "unified_section": "\u00a776",
+    "fsot_formula": "C_COSM\u207b\u00b2-S_cosm\u207b\u2075",
+    "computed_value": 293.02894546145393,
+    "error_pct": 0.009878997083252393,
+    "old_error": 1.075113
+  },
+  {
+    "section": "\u00a793 Membrane Potential",
+    "name": "RBC",
+    "unified_section": "\u00a793",
+    "fsot_formula": "C_COSM\u207b\u00b9/PHI",
+    "computed_value": 10.0,
+    "error_pct": 0.0,
+    "old_error": 1.073379
+  },
+  {
+    "section": "\u00a720 Raman \u03bd",
+    "name": "CO\u2083\u00b2\u207b",
+    "unified_section": "\u00a720",
+    "fsot_formula": "THETA\u2078/POOF\u2079",
+    "computed_value": 1084.8905621748625,
+    "error_pct": 0.010086435496548148,
+    "old_error": 1.072181
+  },
+  {
+    "section": "\u00a769 Virial B(T)",
+    "name": "Ar",
+    "unified_section": "\u00a769",
+    "fsot_formula": "K\u207b\u00b2-A_IN\u2076",
+    "computed_value": -15.78496216942401,
+    "error_pct": 0.09517614288602219,
+    "old_error": 1.071869
+  },
+  {
+    "section": "\u00a725 vdW Radii",
+    "name": "Ne",
+    "unified_section": "\u00a725",
+    "fsot_formula": "C_EFF\u2078+A_BLEED\u207b\u2074",
+    "computed_value": 1.5399475289041917,
+    "error_pct": 0.0034072140135262413,
+    "old_error": 1.067619
+  },
+  {
+    "section": "\u00a738 Resistivity \u03c1",
+    "name": "W",
+    "unified_section": "\u00a738",
+    "fsot_formula": "K\u207b\u00b2-GATE\u00b2",
+    "computed_value": 5.280989155525673,
+    "error_pct": 0.0187340061680476,
+    "old_error": 1.066587
+  },
+  {
+    "section": "\u00a774 Acoustic Impedance",
+    "name": "Air_20C",
+    "unified_section": "\u00a774",
+    "fsot_formula": "K\u2079+P_BASE\u2078",
+    "computed_value": 0.00041274092978452296,
+    "error_pct": 0.06272886573294283,
+    "old_error": 1.063648
+  },
+  {
+    "section": "\u00a720 Raman \u03bd",
+    "name": "H\u2082",
+    "unified_section": "\u00a720",
+    "fsot_formula": "GATE\u00b2\u00b7P_BASE\u207b\u2076",
+    "computed_value": 4166.419145470544,
+    "error_pct": 0.13023661308685913,
+    "old_error": 1.059207
+  },
+  {
+    "section": "\u00a731 Band Gaps",
+    "name": "GaP",
+    "unified_section": "\u00a731",
+    "fsot_formula": "A_IN\u207b\u00b3+B_IN\u207b\u00b3",
+    "computed_value": 2.2601077624057906,
+    "error_pct": 0.0047682480438407575,
+    "old_error": 1.058939
+  },
+  {
+    "section": "\u00a770 Shear Modulus",
+    "name": "Fe",
+    "unified_section": "\u00a770",
+    "fsot_formula": "CHAOS\u207b\u2074-G\u207b\u00b3",
+    "computed_value": 81.98265591930021,
+    "error_pct": 0.021151317926568283,
+    "old_error": 1.057631
+  },
+  {
+    "section": "\u00a792 Protein Fold Rate",
+    "name": "ubiquitin",
+    "unified_section": "\u00a792",
+    "fsot_formula": "OMEGA\u207b\u00b9+OMEGA\u00b3",
+    "computed_value": 2.940095735595775,
+    "error_pct": 0.003256312781459697,
+    "old_error": 1.056785
+  },
+  {
+    "section": "\u00a720 Raman \u03bd",
+    "name": "CO\u2082_\u03bd\u2081",
+    "unified_section": "\u00a720",
+    "fsot_formula": "THETA\u207b\u2076/C_EFF\u207b\u2074",
+    "computed_value": 1388.3232799767911,
+    "error_pct": 0.023291064610311774,
+    "old_error": 1.05568
+  },
+  {
+    "section": "\u00a776 Magnetic Ordering T",
+    "name": "Co_Tc",
+    "unified_section": "\u00a776",
+    "fsot_formula": "THETA\u207b\u2076/C_EFF\u207b\u2074",
+    "computed_value": 1388.3232799767911,
+    "error_pct": 0.023291064610311774,
+    "old_error": 1.05568
+  },
+  {
+    "section": "\u00a775 Superconducting Tc",
+    "name": "Ta",
+    "unified_section": "\u00a775",
+    "fsot_formula": "OMEGA\u00b2+OMEGA\u2074",
+    "computed_value": 4.47964174690591,
+    "error_pct": 0.007996720850222959,
+    "old_error": 1.048315
+  },
+  {
+    "section": "\u00a733 Debye Temps",
+    "name": "Al",
+    "unified_section": "\u00a733",
+    "fsot_formula": "K\u207b\u2077-B_IN\u207b\u2076",
+    "computed_value": 427.9876596808432,
+    "error_pct": 0.0028832521394406285,
+    "old_error": 1.048054
+  },
+  {
+    "section": "\u00a729 Dielectric \u03b5r",
+    "name": "CHCl\u2083",
+    "unified_section": "\u00a729",
+    "fsot_formula": "GATE\u207b\u2074-B_IN\u207b\u00b3",
+    "computed_value": 4.809921445249325,
+    "error_pct": 0.0016331548996876316,
+    "old_error": 1.047263
+  },
+  {
+    "section": "\u00a724 Enzyme kcat",
+    "name": "DNA polymerase",
+    "unified_section": "\u00a724",
+    "fsot_formula": "THETA\u207b\u00b9-C_EFF",
+    "computed_value": 2.4799461039763027,
+    "error_pct": 0.002173226761988694,
+    "old_error": 1.045809
+  },
+  {
+    "section": "\u00a785 Thermal Diffusivity",
+    "name": "Au",
+    "unified_section": "\u00a785",
+    "fsot_formula": "GATE\u207b\u00b3+P_NEW\u207b\u2074",
+    "computed_value": 127.19653419061135,
+    "error_pct": 0.15475133119003556,
+    "old_error": 1.045372
+  },
+  {
+    "section": "\u00a794 Donor Number DN",
+    "name": "HMPA",
+    "unified_section": "\u00a794",
+    "fsot_formula": "GAMMA_C+PSI\u207b\u2078",
+    "computed_value": 38.80001889032923,
+    "error_pct": 4.868641554058816e-05,
+    "old_error": 1.042957
+  },
+  {
+    "section": "\u00a739 Speed of Sound",
+    "name": "glycerol",
+    "unified_section": "\u00a739",
+    "fsot_formula": "P_BASE\u207b\u2075-P_NEW\u207b\u2075",
+    "computed_value": 1906.7753196976935,
+    "error_pct": 0.1457625891645733,
+    "old_error": 1.03336
+  },
+  {
+    "section": "\u00a779 Optical Phonon \u03bd",
+    "name": "InP",
+    "unified_section": "\u00a779",
+    "fsot_formula": "PSI\u207b\u2075-GAMMA_C",
+    "computed_value": 10.336717619532402,
+    "error_pct": 0.03174449194968505,
+    "old_error": 1.033076
+  },
+  {
+    "section": "\u00a789 Surface Energy \u03b3s",
+    "name": "Cu",
+    "unified_section": "\u00a789",
+    "fsot_formula": "C_EFF+A_BLEED\u207b\u2074",
+    "computed_value": 1.7899583770920944,
+    "error_pct": 0.002325302117634552,
+    "old_error": 1.032614
+  },
+  {
+    "section": "\u00a733 Debye Temps",
+    "name": "diamond",
+    "unified_section": "\u00a733",
+    "fsot_formula": "E\u00b9\u2070/PI\u00b2",
+    "computed_value": 2231.7475857872814,
+    "error_pct": 0.0783670756628441,
+    "old_error": 1.03141
+  },
+  {
+    "section": "\u00a722 Amino Acid pKa",
+    "name": "His_pKR",
+    "unified_section": "\u00a722",
+    "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076",
+    "computed_value": 6.003025174189232,
+    "error_pct": 0.05041956982053305,
+    "old_error": 1.03106
+  },
+  {
+    "section": "\u00a723 Drug pKd",
+    "name": "penicillin G/PBP",
+    "unified_section": "\u00a723",
+    "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076",
+    "computed_value": 6.003025174189232,
+    "error_pct": 0.05041956982053305,
+    "old_error": 1.03106
+  },
+  {
+    "section": "\u00a724 Enzyme kcat",
+    "name": "carbonic anhydrase",
+    "unified_section": "\u00a724",
+    "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076",
+    "computed_value": 6.003025174189232,
+    "error_pct": 0.05041956982053305,
+    "old_error": 1.03106
+  },
+  {
+    "section": "\u00a735 Michaelis Km",
+    "name": "lysozyme",
+    "unified_section": "\u00a735",
+    "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076",
+    "computed_value": 6.003025174189232,
+    "error_pct": 0.05041956982053305,
+    "old_error": 1.03106
+  },
+  {
+    "section": "\u00a765 Enzyme pKi",
+    "name": "aspirin_COX1",
+    "unified_section": "\u00a765",
+    "fsot_formula": "P_BASE\u207b\u00b9+P_VAR\u207b\u2076",
+    "computed_value": 6.003025174189232,
+    "error_pct": 0.05041956982053305,
+    "old_error": 1.03106
+  },
+  {
+    "section": "\u00a728 Melting Points",
+    "name": "Ga",
+    "unified_section": "\u00a728",
+    "fsot_formula": "PI\u2075-PI",
+    "computed_value": 302.87809213169163,
+    "error_pct": 0.007232706605594811,
+    "old_error": 1.029939
+  },
+  {
+    "section": "\u00a732 Work Functions",
+    "name": "Al",
+    "unified_section": "\u00a732",
+    "fsot_formula": "THETA\u207b\u00b9+C_EFF\u2074",
+    "computed_value": 4.278892239372999,
+    "error_pct": 0.02588225764022371,
+    "old_error": 1.026449
+  },
+  {
+    "section": "\u00a752 \u00b9\u00b3C NMR \u03b4",
+    "name": "C-Cl",
+    "unified_section": "\u00a752",
+    "fsot_formula": "GAMMA\u207b\u2077-PHI\u2074",
+    "computed_value": 39.98766169328403,
+    "error_pct": 0.03084576678991979,
+    "old_error": 1.025856
+  },
+  {
+    "section": "\u00a731 Band Gaps",
+    "name": "InP",
+    "unified_section": "\u00a731",
+    "fsot_formula": "P_VAR\u207b\u2077-P_BASE\u2075",
+    "computed_value": 1.350030054526238,
+    "error_pct": 0.0022262612028106435,
+    "old_error": 1.023166
+  },
+  {
+    "section": "\u00a723 Drug pKd",
+    "name": "ibuprofen/COX-2",
+    "unified_section": "\u00a723",
+    "fsot_formula": "GAMMA\u207b\u00b3-PI\u207b\u00b2",
+    "computed_value": 5.098467250120926,
+    "error_pct": 0.030053919197521404,
+    "old_error": 1.020266
+  },
+  {
+    "section": "\u00a757 logP",
+    "name": "ibuprofen",
+    "unified_section": "\u00a757",
+    "fsot_formula": "PSI\u207b\u00b3+ETA\u2076",
+    "computed_value": 3.9694997080741405,
+    "error_pct": 0.01260181173450007,
+    "old_error": 1.019309
+  },
+  {
+    "section": "\u00a717 pKH Henry's Law",
+    "name": "Cl\u2082",
+    "unified_section": "\u00a717",
+    "fsot_formula": "S_quant\u207b\u00b3+S_cosm\u2074",
+    "computed_value": 1.210039802877489,
+    "error_pct": 0.003289494007360255,
+    "old_error": 1.007246
+  },
+  {
+    "section": "\u00a716 pKsp",
+    "name": "BaSO\u2084",
+    "unified_section": "\u00a716",
+    "fsot_formula": "PI\u207b\u00b2+PI\u00b2",
+    "computed_value": 9.970925584731695,
+    "error_pct": 0.009283698412183392,
+    "old_error": 1.006977
+  },
+  {
+    "section": "\u00a785 Thermal Diffusivity",
+    "name": "Ti",
+    "unified_section": "\u00a785",
+    "fsot_formula": "GAMMA\u207b\u2074+GAMMA\u00b3",
+    "computed_value": 9.200713503820193,
+    "error_pct": 0.007755476306453811,
+    "old_error": 1.004225
+  },
+  {
+    "section": "\u00a771 DNA Stacking \u0394G",
+    "name": "CA/GT",
+    "unified_section": "\u00a771",
+    "fsot_formula": "G\u2077+S_cosm\u207b\u00b9",
+    "computed_value": -1.4492779683778432,
+    "error_pct": 0.04979528428667465,
+    "old_error": 1.003571
+  },
+  {
+    "section": "\u00a732 Work Functions",
+    "name": "Ca",
+    "unified_section": "\u00a732",
+    "fsot_formula": "S_cosm\u207b\u00b2-G\u207b\u00b9",
+    "computed_value": 2.869248432631802,
+    "error_pct": 0.026187016313516553,
+    "old_error": 1.000335
   }
 ]

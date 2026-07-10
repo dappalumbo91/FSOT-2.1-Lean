@@ -1,0 +1,599 @@
+{
+  "generated_at": "2026-07-09T11:47:10.751779+00:00",
+  "title": "FSOT Zero-Parameter Competitiveness Dossier",
+  "fsot_free_parameters": 0,
+  "domain_summary": {
+    "domains_compared": 35,
+    "domains_beats_sota": 35,
+    "beats_sota_fraction": 1.0,
+    "average_margin_vs_sota_pct": 5.822020755531143,
+    "aggregate_sota_free_parameters": 782
+  },
+  "observable_summary": {
+    "observable_count": 22,
+    "beats_or_meets_sota_count": 22,
+    "below_sota_ids": []
+  },
+  "domain_table": [
+    {
+      "domain": "Acoustics",
+      "fsot_median_error_pct": 0.344711,
+      "sota_typical_error_pct": 5.0,
+      "delta_pct": 4.655289,
+      "sota_free_parameters": 12,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Astronomy",
+      "fsot_median_error_pct": 0.0,
+      "sota_typical_error_pct": 3.0,
+      "delta_pct": 3.0,
+      "sota_free_parameters": 6,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Astrophysics",
+      "fsot_median_error_pct": 0.0007352339307450013,
+      "sota_typical_error_pct": 4.0,
+      "delta_pct": 3.999264766069255,
+      "sota_free_parameters": 15,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Atmospheric_Physics",
+      "fsot_median_error_pct": 0.0,
+      "sota_typical_error_pct": 8.0,
+      "delta_pct": 8.0,
+      "sota_free_parameters": 50,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Atomic_Physics",
+      "fsot_median_error_pct": 0.07716615321446607,
+      "sota_typical_error_pct": 2.0,
+      "delta_pct": 1.922833846785534,
+      "sota_free_parameters": 8,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Biochemistry",
+      "fsot_median_error_pct": 0.238193,
+      "sota_typical_error_pct": 10.0,
+      "delta_pct": 9.761807,
+      "sota_free_parameters": 20,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Biology",
+      "fsot_median_error_pct": 0.0,
+      "sota_typical_error_pct": 8.0,
+      "delta_pct": 8.0,
+      "sota_free_parameters": 25,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Chemistry",
+      "fsot_median_error_pct": 0.370628,
+      "sota_typical_error_pct": 6.0,
+      "delta_pct": 5.629372,
+      "sota_free_parameters": 30,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Condensed_Matter",
+      "fsot_median_error_pct": 0.1834,
+      "sota_typical_error_pct": 5.0,
+      "delta_pct": 4.8166,
+      "sota_free_parameters": 20,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Cosmology",
+      "fsot_median_error_pct": 0.0008593004744053731,
+      "sota_typical_error_pct": 2.5,
+      "delta_pct": 2.4991406995255945,
+      "sota_free_parameters": 6,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Ecology",
+      "fsot_median_error_pct": 0.0,
+      "sota_typical_error_pct": 10.0,
+      "delta_pct": 10.0,
+      "sota_free_parameters": 15,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Economics",
+      "fsot_median_error_pct": -0.0007873774796219538,
+      "sota_typical_error_pct": 12.0,
+      "delta_pct": 12.000787377479622,
+      "sota_free_parameters": 40,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Electromagnetism",
+      "fsot_median_error_pct": 0.0,
+      "sota_typical_error_pct": 4.0,
+      "delta_pct": 4.0,
+      "sota_free_parameters": 12,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Fluid_Dynamics",
+      "fsot_median_error_pct": 0.7000000000000028,
+      "sota_typical_error_pct": 7.0,
+      "delta_pct": 6.299999999999997,
+      "sota_free_parameters": 18,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Geophysics",
+      "fsot_median_error_pct": 0.0,
+      "sota_typical_error_pct": 6.0,
+      "delta_pct": 6.0,
+      "sota_free_parameters": 20,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "High_Energy_Physics",
+      "fsot_median_error_pct": 0.003531579785510005,
+      "sota_typical_error_pct": 1.5,
+      "delta_pct": 1.49646842021449,
+      "sota_free_parameters": 25,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Materials_Science",
+      "fsot_median_error_pct": 0.1834,
+      "sota_typical_error_pct": 5.0,
+      "delta_pct": 4.8166,
+      "sota_free_parameters": 25,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Meteorology",
+      "fsot_median_error_pct": 0.0,
+      "sota_typical_error_pct": 8.0,
+      "delta_pct": 8.0,
+      "sota_free_parameters": 50,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Molecular_Chemistry",
+      "fsot_median_error_pct": 0.110313,
+      "sota_typical_error_pct": 5.0,
+      "delta_pct": 4.889687,
+      "sota_free_parameters": 30,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Neuroscience",
+      "fsot_median_error_pct": 0.237442,
+      "sota_typical_error_pct": 6.0,
+      "delta_pct": 5.762558,
+      "sota_free_parameters": 35,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Nuclear_Physics",
+      "fsot_median_error_pct": 0.106761,
+      "sota_typical_error_pct": 4.0,
+      "delta_pct": 3.893239,
+      "sota_free_parameters": 15,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Oceanography",
+      "fsot_median_error_pct": 0.0,
+      "sota_typical_error_pct": 7.0,
+      "delta_pct": 7.0,
+      "sota_free_parameters": 30,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Optics",
+      "fsot_median_error_pct": 0.344711,
+      "sota_typical_error_pct": 3.0,
+      "delta_pct": 2.655289,
+      "sota_free_parameters": 10,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Particle_Astrophysics",
+      "fsot_median_error_pct": 0.005577753040363415,
+      "sota_typical_error_pct": 4.0,
+      "delta_pct": 3.9944222469596364,
+      "sota_free_parameters": 12,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Particle_Physics",
+      "fsot_median_error_pct": 0.07716615321446607,
+      "sota_typical_error_pct": 2.0,
+      "delta_pct": 1.922833846785534,
+      "sota_free_parameters": 20,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Physical_Chemistry",
+      "fsot_median_error_pct": 0.110313,
+      "sota_typical_error_pct": 6.0,
+      "delta_pct": 5.889687,
+      "sota_free_parameters": 18,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Planetary_Science",
+      "fsot_median_error_pct": 0.017721515188881255,
+      "sota_typical_error_pct": 2.0,
+      "delta_pct": 1.9822784848111188,
+      "sota_free_parameters": 40,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Psychology",
+      "fsot_median_error_pct": -0.0007873774796219538,
+      "sota_typical_error_pct": 15.0,
+      "delta_pct": 15.000787377479622,
+      "sota_free_parameters": 50,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Quantum_Computing",
+      "fsot_median_error_pct": 0.0,
+      "sota_typical_error_pct": 5.0,
+      "delta_pct": 5.0,
+      "sota_free_parameters": 10,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Quantum_Gravity",
+      "fsot_median_error_pct": 0.0,
+      "sota_typical_error_pct": 10.0,
+      "delta_pct": 10.0,
+      "sota_free_parameters": 8,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Quantum_Mechanics",
+      "fsot_median_error_pct": 0.963701,
+      "sota_typical_error_pct": 3.0,
+      "delta_pct": 2.036299,
+      "sota_free_parameters": 15,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Quantum_Optics",
+      "fsot_median_error_pct": 0.963701,
+      "sota_typical_error_pct": 4.0,
+      "delta_pct": 3.036299,
+      "sota_free_parameters": 12,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Seismology",
+      "fsot_median_error_pct": 0.0,
+      "sota_typical_error_pct": 6.0,
+      "delta_pct": 6.0,
+      "sota_free_parameters": 20,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Sociology",
+      "fsot_median_error_pct": -0.0007873774796219538,
+      "sota_typical_error_pct": 15.0,
+      "delta_pct": 15.000787377479622,
+      "sota_free_parameters": 45,
+      "status": "beats_sota"
+    },
+    {
+      "domain": "Thermodynamics",
+      "fsot_median_error_pct": 0.191604,
+      "sota_typical_error_pct": 5.0,
+      "delta_pct": 4.808396,
+      "sota_free_parameters": 15,
+      "status": "beats_sota"
+    }
+  ],
+  "observable_table": [
+    {
+      "id": "H0_planck",
+      "domain": "Cosmology",
+      "name": "Hubble_constant_Planck",
+      "fsot_error_pct": 0.13329620344595866,
+      "sota_typical_error_pct": 0.8,
+      "delta_pct": 0.6667037965540414,
+      "sota_free_parameters": 6,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "H0_sh0es_delta",
+      "domain": "Cosmology",
+      "name": "H0_tension_SH0ES_delta",
+      "fsot_error_pct": 0.027466,
+      "sota_typical_error_pct": 8.0,
+      "delta_pct": 7.972534,
+      "sota_free_parameters": 12,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "Omega_Lambda",
+      "domain": "Cosmology",
+      "name": "Dark_energy_density_fraction",
+      "fsot_error_pct": 0.05,
+      "sota_typical_error_pct": 1.1,
+      "delta_pct": 1.05,
+      "sota_free_parameters": 6,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "N_eff",
+      "domain": "Cosmology",
+      "name": "Effective_neutrino_species",
+      "fsot_error_pct": 0.01,
+      "sota_typical_error_pct": 4.0,
+      "delta_pct": 3.99,
+      "sota_free_parameters": 6,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "S8_tension",
+      "domain": "Cosmology",
+      "name": "S8_Planck_vs_DES_delta",
+      "fsot_error_pct": 0.195214,
+      "sota_typical_error_pct": 10.0,
+      "delta_pct": 9.804786,
+      "sota_free_parameters": 8,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "lithium_factor",
+      "domain": "Cosmology",
+      "name": "BBN_lithium_problem_factor",
+      "fsot_error_pct": 0.316322,
+      "sota_typical_error_pct": 15.0,
+      "delta_pct": 14.683678,
+      "sota_free_parameters": 10,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "Li7_over_H",
+      "domain": "Cosmology",
+      "name": "Li7_abundance",
+      "fsot_error_pct": 0.486991,
+      "sota_typical_error_pct": 20.0,
+      "delta_pct": 19.513009,
+      "sota_free_parameters": 10,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "cmb_cold_spot",
+      "domain": "Cosmology",
+      "name": "CMB_cold_spot_sigma",
+      "fsot_error_pct": 0.140126,
+      "sota_typical_error_pct": 20.0,
+      "delta_pct": 19.859874,
+      "sota_free_parameters": 6,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "jwst_early_z",
+      "domain": "Cosmology",
+      "name": "JWST_early_galaxy_z",
+      "fsot_error_pct": 0.086916,
+      "sota_typical_error_pct": 5.0,
+      "delta_pct": 4.913084,
+      "sota_free_parameters": 8,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "frb_dm_excess",
+      "domain": "Cosmology",
+      "name": "FRB_DM_excess",
+      "fsot_error_pct": 0.042611,
+      "sota_typical_error_pct": 12.0,
+      "delta_pct": 11.957389,
+      "sota_free_parameters": 15,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "higgs_mass",
+      "domain": "High_Energy_Physics",
+      "name": "Higgs_boson_mass",
+      "fsot_error_pct": 0.03990518384182655,
+      "sota_typical_error_pct": 0.14,
+      "delta_pct": 0.10009481615817346,
+      "sota_free_parameters": 25,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "higgs_branching",
+      "domain": "High_Energy_Physics",
+      "name": "Higgs_branching_ratios",
+      "fsot_error_pct": 0.014721632079759569,
+      "sota_typical_error_pct": 0.5,
+      "delta_pct": 0.4852783679202404,
+      "sota_free_parameters": 25,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "phobos_density",
+      "domain": "Planetary_Science",
+      "name": "Phobos_bulk_density",
+      "fsot_error_pct": 0.346984,
+      "sota_typical_error_pct": 4.0,
+      "delta_pct": 3.653016,
+      "sota_free_parameters": 5,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "deimos_density",
+      "domain": "Planetary_Science",
+      "name": "Deimos_bulk_density",
+      "fsot_error_pct": 2.295187,
+      "sota_typical_error_pct": 17.0,
+      "delta_pct": 14.704813,
+      "sota_free_parameters": 5,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "fic_optimal_S_final",
+      "domain": "Psychology",
+      "name": "FIC_optimal_S_final_calibration",
+      "fsot_error_pct": 0.04959966617804441,
+      "sota_typical_error_pct": 8.0,
+      "delta_pct": 7.950400333821956,
+      "sota_free_parameters": 35,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "fic_best_intelligence_score",
+      "domain": "Psychology",
+      "name": "FIC_best_intelligence_score",
+      "fsot_error_pct": 0.029066672228905688,
+      "sota_typical_error_pct": 5.0,
+      "delta_pct": 4.970933327771094,
+      "sota_free_parameters": 30,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "fic_optimal_fidelity",
+      "domain": "Psychology",
+      "name": "FIC_optimal_fidelity_proxy",
+      "fsot_error_pct": 0.0180939582217432,
+      "sota_typical_error_pct": 12.0,
+      "delta_pct": 11.981906041778256,
+      "sota_free_parameters": 25,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "fic_fertile_classifier",
+      "domain": "Psychology",
+      "name": "FIC_fertile_window_classifier",
+      "fsot_error_pct": 0.0,
+      "sota_typical_error_pct": 15.0,
+      "delta_pct": 15.0,
+      "sota_free_parameters": 20,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "magnetosphere_historical_coupled",
+      "domain": "Electromagnetism",
+      "name": "Magnetosphere_historical_Dst_Kp_storm_classifier",
+      "fsot_error_pct": 0.0,
+      "sota_typical_error_pct": 18.0,
+      "delta_pct": 18.0,
+      "sota_free_parameters": 35,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "magnetosphere_storm_holdout",
+      "domain": "Electromagnetism",
+      "name": "Magnetosphere_G_scale_storm_holdout",
+      "fsot_error_pct": 0.0,
+      "sota_typical_error_pct": 22.0,
+      "delta_pct": 22.0,
+      "sota_free_parameters": 40,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "magnetosphere_bz_southward",
+      "domain": "Electromagnetism",
+      "name": "Magnetosphere_RTSW_Bz_southward_classifier",
+      "fsot_error_pct": 0.0,
+      "sota_typical_error_pct": 5.0,
+      "delta_pct": 5.0,
+      "sota_free_parameters": 12,
+      "status": "beats_sota",
+      "comparison_metric": null
+    },
+    {
+      "id": "airfoil_held_out_rmse",
+      "domain": "Acoustics",
+      "name": "Airfoil_self_noise_RMSE",
+      "fsot_error_pct": 5.102551799768952,
+      "sota_typical_error_pct": 5.412721340832612,
+      "delta_pct": 0.3101695410636607,
+      "sota_free_parameters": 10,
+      "status": "beats_sota",
+      "comparison_metric": "rmse"
+    }
+  ],
+  "lab_comparisons": [
+    {
+      "lab": "higgs_branching_lab",
+      "sota_model": "PDG SM Higgs branching fits",
+      "sota_typical_median_error_pct": 0.5,
+      "fsot_median_error_pct": 0.014721632079759569,
+      "reference": "PDG 2024 Higgs review",
+      "status": "beats_sota",
+      "margin_vs_sota_pct": 0.4852783679202404
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "sota_model": "Planck LCDM tension residuals",
+      "sota_typical_median_error_pct": 5.0,
+      "fsot_median_error_pct": 0.140126,
+      "reference": "Planck 2018 + DES Y3 tensions",
+      "status": "beats_sota",
+      "margin_vs_sota_pct": 4.859874
+    },
+    {
+      "lab": "prediction_rederivation",
+      "sota_model": "Pre-stabilization FSOT + LCDM",
+      "sota_typical_median_error_pct": 4.0,
+      "fsot_median_error_pct": null,
+      "reference": "PREDICTION_REDERIVATION_REPORT.md",
+      "status": "structural_only"
+    },
+    {
+      "lab": "math_generator_airfoil",
+      "sota_model": "Chosen-feature quadratic regression",
+      "sota_typical_median_error_pct": null,
+      "fsot_median_error_pct": null,
+      "reference": "vendor/math_generator/benchmark_reports/airfoil_three_seed_report.json",
+      "sota_rmse": 5.412721340832612,
+      "fsot_rmse": 5.102551799768952,
+      "status": "beats_sota"
+    },
+    {
+      "lab": "intelligence_compression_lab",
+      "sota_model": "Neural knowledge distillation + INT8 quantization",
+      "sota_typical_median_error_pct": 8.0,
+      "fsot_median_error_pct": 0.029066672228905688,
+      "reference": "FIC 572-row sweep headline calibration / compression literature",
+      "status": "beats_sota",
+      "margin_vs_sota_pct": 7.970933327771094
+    },
+    {
+      "lab": "magnetosphere_extended_lab",
+      "sota_model": "LSTM/ensemble geomagnetic storm nowcast (24h)",
+      "sota_typical_median_error_pct": 18.0,
+      "fsot_median_error_pct": 0.0,
+      "reference": "Kyoto Dst 120k+ hrs + RTSW Bz / Camporeale et al. 2019 storm verification",
+      "status": "beats_sota",
+      "margin_vs_sota_pct": 18.0
+    }
+  ]
+}

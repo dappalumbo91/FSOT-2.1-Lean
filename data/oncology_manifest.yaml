@@ -1,8 +1,19 @@
 # Tier 26 — SMILES drug/enzyme affinity + biology strict operon bridge.
-version: "1.0"
-updated: "2026-07-03"
+version: "1.1"
+updated: "2026-07-09"
+
+source_repo: vendor/oncology
+domain_doc: vendor/oncology/Oncology_Domain.md
 
 D_eff: 14
+maps_to_lean: [medical, biological]
+
+sections:
+  - "§23 Drug pKd"
+  - "§65 Enzyme pKi"
+  - "§24 Enzyme kcat"
+  - "§35 Michaelis Km"
+  - "§21 Protein ΔG"
 
 build:
   benchmark: scripts/build_oncology_benchmark.py
@@ -11,9 +22,12 @@ build:
 lean:
   generator: scripts/gen_oncology_lean.py
   module: FSOT.Formal.OncologyPriors
-  lean_domain: medical
-  sign_theorem: medical_raw_S_positive
+  lean_domains: [medical, biological]
+  sign_theorems: [medical_raw_S_positive]
 
 verification:
   min_records: 20
-  max_median_error_pct: 5.0
+  min_section_count: 4
+  max_pooled_median_error_pct: 2.0
+  max_headline_median_error_pct: 5.0
+  min_beats_sota_headlines: 4

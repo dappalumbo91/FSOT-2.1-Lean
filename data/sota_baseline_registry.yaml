@@ -1,0 +1,242 @@
+# Mainstream science baseline accuracies — FSOT zero-parameter competitiveness anchors.
+# Stored on external G: drive; canonical copy in repo data/sota_baseline_registry.yaml
+catalog_version: "1.0"
+updated: "2026-07-08"
+notes: >
+  Typical median error (%) achieved by standard models with fitted free parameters.
+  FSOT competes when median_error_pct <= sota_typical_median_error_pct at free_parameters=0.
+
+fsot_engine:
+  free_parameters: 0
+  seed_constants: [pi, e, phi, gamma, G_Catalan]
+
+domain_baselines:
+  Acoustics:
+    sota_model: "Finite-element + empirical QSPR"
+    sota_typical_median_error_pct: 5.0
+    sota_free_parameters: 12
+    reference: "NIST material acoustic databases / ANSYS-class solvers"
+  Astronomy:
+    sota_model: "Lambda-CDM + distance ladder"
+    sota_typical_median_error_pct: 3.0
+    sota_free_parameters: 6
+    reference: "Planck 2018 + SH0ES tension literature"
+  Astrophysics:
+    sota_model: "Stellar evolution + population synthesis"
+    sota_typical_median_error_pct: 4.0
+    sota_free_parameters: 15
+    reference: "MIST/BASTI-class tracks"
+  Atmospheric_Physics:
+    sota_model: "NWP (GFS/ECMWF) stability classifiers"
+    sota_typical_median_error_pct: 8.0
+    sota_free_parameters: 50
+    reference: "NOAA GFS operational skill scores"
+  Atomic_Physics:
+    sota_model: "NIST ASD + Hartree-Fock"
+    sota_typical_median_error_pct: 2.0
+    sota_free_parameters: 8
+    reference: "NIST Atomic Spectra Database"
+  Biochemistry:
+    sota_model: "MD + empirical binding models"
+    sota_typical_median_error_pct: 10.0
+    sota_free_parameters: 20
+    reference: "PDBbind / molecular mechanics force fields"
+  Biology:
+    sota_model: "Allometric + comparative genomics"
+    sota_typical_median_error_pct: 8.0
+    sota_free_parameters: 25
+    reference: "GBIF / trait-database regressions"
+  Chemistry:
+    sota_model: "DFT B3LYP/6-31G* + QSPR"
+    sota_typical_median_error_pct: 6.0
+    sota_free_parameters: 30
+    reference: "QM9/GDB benchmark typical errors"
+  Condensed_Matter:
+    sota_model: "DFT + tight-binding fits"
+    sota_typical_median_error_pct: 5.0
+    sota_free_parameters: 20
+    reference: "Materials Project DFT bands"
+  Cosmology:
+    sota_model: "Planck Lambda-CDM MCMC"
+    sota_typical_median_error_pct: 2.5
+    sota_free_parameters: 6
+    reference: "Planck 2018 TT,TE,EE+lowE"
+  Economics:
+    sota_model: "Econometric VAR / DSGE"
+    sota_typical_median_error_pct: 12.0
+    sota_free_parameters: 40
+    reference: "Central-bank forecasting suites"
+  Ecology:
+    sota_model: "Species distribution + Lotka-Volterra fits"
+    sota_typical_median_error_pct: 10.0
+    sota_free_parameters: 15
+    reference: "GBIF niche models"
+  Electromagnetism:
+    sota_model: "Maxwell FEA + IGRF geomagnetic"
+    sota_typical_median_error_pct: 4.0
+    sota_free_parameters: 12
+    reference: "IGRF-13 / COMSOL-class"
+  Fluid_Dynamics:
+    sota_model: "RANS/LES CFD tuned"
+    sota_typical_median_error_pct: 7.0
+    sota_free_parameters: 18
+    reference: "NASA TMR CFD benchmarks"
+  Geophysics:
+    sota_model: "USGS geomagnetic + thermal models"
+    sota_typical_median_error_pct: 6.0
+    sota_free_parameters: 20
+    reference: "USGS/NASA geophysical catalogs"
+  High_Energy_Physics:
+    sota_model: "Standard Model fits (PDG)"
+    sota_typical_median_error_pct: 1.5
+    sota_free_parameters: 25
+    reference: "PDG 2024 + ATLAS/CMS combined"
+  Materials_Engineering:
+    sota_model: "FEA + empirical elastic/thermal QSPR"
+    sota_typical_median_error_pct: 8.0
+    sota_free_parameters: 20
+    reference: "NIST/ANSYS-class mechanical-thermal property fits"
+  Materials_Science:
+    sota_model: "DFT + CALPHAD"
+    sota_typical_median_error_pct: 5.0
+    sota_free_parameters: 25
+    reference: "Materials Project"
+  Meteorology:
+    sota_model: "NOAA GFS/HRRR precipitation/stability"
+    sota_typical_median_error_pct: 8.0
+    sota_free_parameters: 50
+    reference: "NWS verification statistics"
+  Molecular_Chemistry:
+    sota_model: "DFT + ML QSPR (Chemprop-class)"
+    sota_typical_median_error_pct: 5.0
+    sota_free_parameters: 30
+    reference: "QM9 benchmark medians"
+  Neuroimmunology:
+    sota_model: "AutoDock + Allen FI slope proxy"
+    sota_typical_median_error_pct: 10.0
+    sota_free_parameters: 25
+    reference: "PDBbind docking + neuron cohort FI strata"
+  Neuroscience:
+    sota_model: "Allen SDK + GLM encoding models"
+    sota_typical_median_error_pct: 6.0
+    sota_free_parameters: 35
+    reference: "Allen Brain Observatory"
+  Oncology:
+    sota_model: "ChEMBL target QSAR + PDBbind FEP+"
+    sota_typical_median_error_pct: 12.0
+    sota_free_parameters: 30
+    reference: "Oncology kinase/drug-target affinity panels"
+  Nuclear_Physics:
+    sota_model: "DFRM + shell-model fits"
+    sota_typical_median_error_pct: 4.0
+    sota_free_parameters: 15
+    reference: "AME2020 nuclear masses"
+  Oceanography:
+    sota_model: "HYCOM/ROMS assimilative"
+    sota_typical_median_error_pct: 7.0
+    sota_free_parameters: 30
+    reference: "NOAA ocean model verification"
+  Optics:
+    sota_model: "Sellmeier + thin-film optimization"
+    sota_typical_median_error_pct: 3.0
+    sota_free_parameters: 10
+    reference: "RefractiveIndex.INFO fits"
+  Particle_Astrophysics:
+    sota_model: "Fermi/LAT + CMB foreground templates"
+    sota_typical_median_error_pct: 4.0
+    sota_free_parameters: 12
+    reference: "Fermi 4FGL / Planck component separation"
+  Particle_Physics:
+    sota_model: "SM RG-improved couplings"
+    sota_typical_median_error_pct: 2.0
+    sota_free_parameters: 20
+    reference: "PDG 2024"
+  Physical_Chemistry:
+    sota_model: "Transition-state theory + QSPR"
+    sota_typical_median_error_pct: 6.0
+    sota_free_parameters: 18
+    reference: "NIST WebBook kinetics"
+  Planetary_Science:
+    sota_model: "JPL DE440 ephemeris + GRAIL"
+    sota_typical_median_error_pct: 2.0
+    sota_free_parameters: 40
+    reference: "JPL Horizons / GRAIL gravity"
+  Psychology:
+    sota_model: "Psychometric IRT / regression"
+    sota_typical_median_error_pct: 15.0
+    sota_free_parameters: 50
+    reference: "APA psychometric meta-analyses"
+  Quantum_Computing:
+    sota_model: "Calibrated gate-error models"
+    sota_typical_median_error_pct: 5.0
+    sota_free_parameters: 10
+    reference: "IBM/Google quantum benchmarks"
+  Quantum_Gravity:
+    sota_model: "GR + effective BH thermodynamics"
+    sota_typical_median_error_pct: 10.0
+    sota_free_parameters: 8
+    reference: "EHT/LIGO phenomenology fits"
+  Quantum_Materials:
+    sota_model: "Materials Project DFT + tight-binding"
+    sota_typical_median_error_pct: 5.0
+    sota_free_parameters: 20
+    reference: "MP band-gap/lattice/Tc phenomenology medians"
+  Quantum_Mechanics:
+    sota_model: "Hartree-Fock + DFT"
+    sota_typical_median_error_pct: 3.0
+    sota_free_parameters: 15
+    reference: "NIST computational chemistry"
+  Quantum_Optics:
+    sota_model: "Jaynes-Cummings + cavity QED fits"
+    sota_typical_median_error_pct: 4.0
+    sota_free_parameters: 12
+    reference: "Cavity QED experiment fits"
+  Seismology:
+    sota_model: "USGS Prelim + travel-time tomography"
+    sota_typical_median_error_pct: 6.0
+    sota_free_parameters: 20
+    reference: "USGS earthquake catalogs"
+  Sociology:
+    sota_model: "Social-network regression"
+    sota_typical_median_error_pct: 15.0
+    sota_free_parameters: 45
+    reference: "Demographic survey regressions"
+  Thermodynamics:
+    sota_model: "NASA CEA + empirical fuel models"
+    sota_typical_median_error_pct: 5.0
+    sota_free_parameters: 15
+    reference: "NASA CEA / fuel chemistry"
+
+lab_measured_baselines:
+  higgs_branching_lab:
+    sota_model: "PDG SM Higgs branching fits"
+    sota_typical_median_error_pct: 0.5
+    fsot_median_error_pct_source: data/higgs_branching_benchmark.json
+    reference: "PDG 2024 Higgs review"
+  cosmology_anomalies_lab:
+    sota_model: "Planck LCDM tension residuals"
+    sota_typical_median_error_pct: 5.0
+    fsot_median_error_pct_source: data/cosmology_anomalies_benchmark.json
+    reference: "Planck 2018 + DES Y3 tensions"
+  prediction_rederivation:
+    sota_model: "Pre-stabilization FSOT + LCDM"
+    sota_typical_median_error_pct: 4.0
+    fsot_median_error_pct_source: vendor/fsot_aggregate/prediction_rederivation_summary.json
+    reference: "PREDICTION_REDERIVATION_REPORT.md"
+  math_generator_airfoil:
+    sota_model: "Chosen-feature quadratic regression"
+    sota_rmse: 5.412721340832612
+    fsot_rmse: 5.102551799768952
+    fsot_rule_id: FO-212
+    sota_beats_fsot: false
+    reference: "vendor/math_generator/benchmark_reports/airfoil_three_seed_report.json"
+  intelligence_compression_lab:
+    sota_model: "Neural knowledge distillation + INT8 quantization"
+    sota_typical_median_error_pct: 8.0
+    fsot_median_error_pct_source: data/intelligence_compression_benchmark.json
+    reference: "FIC 572-row sweep headline calibration / compression literature"
+  magnetosphere_extended_lab:
+    sota_model: "LSTM/ensemble geomagnetic storm nowcast (24h)"
+    sota_typical_median_error_pct: 18.0
+    fsot_median_error_pct_source: data/magnetosphere_extended_benchmark.json
+    reference: "Kyoto Dst 120k+ hrs + RTSW Bz / Camporeale et al. 2019 storm verification"

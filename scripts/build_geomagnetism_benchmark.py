@@ -35,6 +35,10 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
 
     mod, authority_path = load_fsot_compute()
     S_em = float(mod.domain_scalar("Electromagnetism"))
+    union_classifier = str(spec.get("classifier_mode") or "union") == "union"
+
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from magnetosphere_timeline import dst_storm_predicted, kp_storm_predicted  # noqa: E402
 
     records: list[dict] = []
     for row in doc.get("dst") or []:
@@ -43,7 +47,9 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
             continue
         observed_storm = float(dst) <= dst_thr
         adj_thr = dst_thr - abs(S_em) * 5.0
-        predicted_storm = float(dst) <= adj_thr
+        predicted_storm = dst_storm_predicted(
+            float(dst), dst_thr=dst_thr, adj_dst=adj_thr, union_classifier=union_classifier
+        )
         match = observed_storm == predicted_storm
         records.append(
             {
@@ -63,7 +69,9 @@ def build(manifest_path: Path = MANIFEST, cache_path: Path = CACHE) -> dict:
             continue
         observed_storm = float(hp) >= hp_thr
         adj_thr = hp_thr - abs(S_em) * 10.0
-        predicted_storm = float(hp) >= adj_thr
+        predicted_storm = kp_storm_predicted(
+            float(hp), kp_thr=hp_thr, adj_kp=adj_thr, union_classifier=union_classifier
+        )
         match = observed_storm == predicted_storm
         records.append(
             {

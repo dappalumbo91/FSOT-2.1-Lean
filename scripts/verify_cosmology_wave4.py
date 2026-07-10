@@ -19,6 +19,7 @@ REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 from cosmology_lambda import load_fsot_compute  # noqa: E402
 from cosmology_wave4 import summarize_wave4, wave4_observables  # noqa: E402
+from fsot_paths import fsot_compute_path  # noqa: E402
 
 
 def verify_wave4(manifest_path: Path = MANIFEST_PATH, registry_path: Path = REGISTRY_PATH) -> tuple[list[str], dict]:
@@ -26,8 +27,7 @@ def verify_wave4(manifest_path: Path = MANIFEST_PATH, registry_path: Path = REGI
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
     ver = manifest.get("verification", {})
-    root = Path(manifest["cosmology_root"])
-    compute_path = root / manifest["artifacts"]["fsot_compute"]["path"]
+    compute_path = fsot_compute_path()
     issues: list[str] = []
     if not compute_path.exists():
         return [f"missing compute: {compute_path}"], {}

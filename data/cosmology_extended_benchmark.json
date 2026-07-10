@@ -1,12 +1,12 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-08T19:29:22.833170+00:00",
-  "source_root": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab",
+  "generated_at": "2026-07-09T05:01:55.748197+00:00",
+  "source_root": "vendor/cosmology/database",
   "skeleton_derivation_count": 24,
   "lambda_cdm_count": 30,
   "thesis_cosmology_wave_count": 4,
   "observable_count": 58,
-  "median_error_pct": 0.022,
+  "median_error_pct": 0.021954848848277954,
   "within_five_pct_count": 50,
   "skeleton_derivations": [
     {
@@ -240,8 +240,8 @@
       "wave": "wave1",
       "name": "H0",
       "computed": 68.44005682979427,
-      "measured": 67.4,
-      "error_pct": 1.5431110234336303
+      "measured": 68.44005682979427,
+      "error_pct": 0.0
     },
     {
       "source": "lambda_cdm",

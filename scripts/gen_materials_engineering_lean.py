@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
@@ -12,31 +13,102 @@ except ImportError:
     yaml = None
 
 ROOT = Path(__file__).resolve().parents[1]
-from _gen_extension_priors_lean import extension_priors_lean  # noqa: E402
-
 MANIFEST = ROOT / "data" / "materials_engineering_manifest.yaml"
 BENCH = ROOT / "data" / "materials_engineering_benchmark.json"
 OUTPUT = ROOT / "FSOT" / "Formal" / "MaterialsEngineeringPriors.lean"
 
 
+def build_lean(bench: dict, cfg: dict) -> str:
+    n = int(bench.get("observable_count") or bench.get("record_count") or 0)
+    sections = int(bench.get("section_count") or 0)
+    pooled = float(bench.get("pooled_median_error_pct") or bench.get("median_error_pct") or 0.0)
+    headline = float(bench.get("headline_median_error_pct") or pooled)
+    d_eff = int(bench.get("D_eff") or cfg.get("D_eff") or 14)
+    source = cfg.get("source_repo", "vendor/smiles")
+    sign = (cfg.get("lean") or {}).get("sign_theorems", ["material_raw_S_positive"])[0]
+    beats = sum(
+        1
+        for v in ((bench.get("sota_comparison") or {}).get("beats_sota_summary") or {}).values()
+        if v
+    )
+    return f"""/-
+  FSOT Formal MaterialsEngineeringPriors — mechanical/thermal SMILES engineering.
+  Generator: scripts/gen_materials_engineering_lean.py
+  Source: {source}
+-/
+
+import FSOT.Formal.Domains
+
+namespace FSOT.Formal
+
+noncomputable section
+
+open Real
+
+def materials_engineering_observable_count : ℕ := {n}
+def materials_engineering_section_count : ℕ := {sections}
+def materials_engineering_D_eff : ℕ := {d_eff}
+def materials_engineering_pooled_median_error_pct : ℝ := ({pooled} : ℝ)
+def materials_engineering_headline_median_error_pct : ℝ := ({headline} : ℝ)
+def materials_engineering_beats_sota_headlines : ℕ := {beats}
+
+theorem materials_engineering_observable_count_pos : 0 < materials_engineering_observable_count := by
+  unfold materials_engineering_observable_count; norm_num
+
+theorem materials_engineering_section_count_pos : 0 < materials_engineering_section_count := by
+  unfold materials_engineering_section_count; norm_num
+
+theorem materials_engineering_pooled_median_under_five_pct :
+    materials_engineering_pooled_median_error_pct < (5 : ℝ) := by
+  unfold materials_engineering_pooled_median_error_pct; norm_num
+
+theorem materials_engineering_headline_median_under_five_pct :
+    materials_engineering_headline_median_error_pct < (5 : ℝ) := by
+  unfold materials_engineering_headline_median_error_pct; norm_num
+
+theorem materials_engineering_beats_sota_headlines_pos : 0 < materials_engineering_beats_sota_headlines := by
+  unfold materials_engineering_beats_sota_headlines; norm_num
+
+/-- Bundle: Materials Engineering mechanical/thermal SMILES with material/energy maps. -/
+theorem materials_engineering_bundle :
+    materials_engineering_observable_count = {n} ∧
+    materials_engineering_section_count = {sections} ∧
+    materials_engineering_D_eff = {d_eff} ∧
+    materials_engineering_pooled_median_error_pct < (5 : ℝ) ∧
+    materials_engineering_headline_median_error_pct < (5 : ℝ) ∧
+    0 < materials_engineering_beats_sota_headlines ∧
+    raw_S (get_domain_params "material") > 0 := by
+  refine ⟨
+    by unfold materials_engineering_observable_count; norm_num,
+    by unfold materials_engineering_section_count; norm_num,
+    by unfold materials_engineering_D_eff; norm_num,
+    materials_engineering_pooled_median_under_five_pct,
+    materials_engineering_headline_median_under_five_pct,
+    materials_engineering_beats_sota_headlines_pos,
+    {sign}
+  ⟩
+
+end
+
+end FSOT.Formal
+"""
+
+
 def main() -> int:
     if yaml is None:
         raise RuntimeError("PyYAML required")
-    bench = json.loads(BENCH.read_text(encoding="utf-8"))
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--bench", type=Path, default=BENCH)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    args = parser.parse_args()
+    if not args.bench.exists():
+        raise FileNotFoundError(
+            f"Run build_materials_engineering_benchmark.py first: {args.bench}"
+        )
+    bench = json.loads(args.bench.read_text(encoding="utf-8"))
     cfg = yaml.safe_load(MANIFEST.read_text(encoding="utf-8"))
-    lean = cfg["lean"]
-    text = extension_priors_lean(
-        module_title="FSOT Formal MaterialsEngineeringPriors — mechanical/thermal SMILES engineering.",
-        generator="scripts/gen_materials_engineering_lean.py",
-        prefix="materials_engineering",
-        sign_theorem=lean["sign_theorem"],
-        lean_domain=lean["lean_domain"],
-        n=int(bench.get("record_count") or 0),
-        med=float(bench.get("median_error_pct") or 0.0),
-        d_eff=int(bench.get("D_eff", 14)),
-    )
-    OUTPUT.write_text(text, encoding="utf-8")
-    print(f"Wrote {OUTPUT}")
+    args.output.write_text(build_lean(bench, cfg), encoding="utf-8")
+    print(f"Wrote {args.output}")
     return 0
 
 

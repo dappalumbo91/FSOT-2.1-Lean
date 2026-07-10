@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "Bloomberg/Fed/World Bank finance market anchors",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "sp500_sharpe_10y", "property": "sharpe_ratio", "measured": 0.6, "market": "S&P 500"},
+    {"name": "vix_long_run_mean", "property": "volatility_index", "measured": 19.0, "market": "VIX"},
+    {"name": "us_10y_yield", "property": "bond_yield_pct", "measured": 4.5, "market": "US Treasury 10Y"},
+    {"name": "fed_funds_rate", "property": "policy_rate_pct", "measured": 5.25, "market": "Fed funds"},
+    {"name": "gold_price_usd_oz", "property": "commodity_price_usd", "measured": 2300.0, "market": "gold spot"},
+    {"name": "wti_crude_usd_bbl", "property": "commodity_price_usd", "measured": 75.0, "market": "WTI crude"},
+    {"name": "eur_usd_fx", "property": "exchange_rate", "measured": 1.08, "market": "EUR/USD"},
+    {"name": "btc_market_cap_b", "property": "market_cap_billion_usd", "measured": 1200.0, "market": "Bitcoin"},
+    {"name": "pe_ratio_sp500", "property": "price_earnings_ratio", "measured": 22.0, "market": "S&P 500 trailing"},
+    {"name": "dividend_yield_sp500", "property": "dividend_yield_pct", "measured": 1.5, "market": "S&P 500"},
+    {"name": "credit_spread_ig", "property": "credit_spread_bps", "measured": 100.0, "market": "IG corporate"},
+    {"name": "credit_spread_hy", "property": "credit_spread_bps", "measured": 400.0, "market": "HY corporate"},
+    {"name": "mortgage_rate_30y", "property": "mortgage_rate_pct", "measured": 7.0, "market": "US 30Y fixed"},
+    {"name": "inflation_cpi_yoy", "property": "inflation_rate_pct", "measured": 3.0, "market": "US CPI YoY"},
+    {"name": "unemployment_rate", "property": "unemployment_pct", "measured": 4.0, "market": "US U3"},
+    {"name": "gdp_growth_us", "property": "gdp_growth_pct", "measured": 2.5, "market": "US real GDP"},
+    {"name": "corporate_bond_default", "property": "default_rate_pct", "measured": 1.5, "market": "global HY default"},
+    {"name": "options_implied_move", "property": "implied_move_pct", "measured": 5.0, "market": "earnings straddle"},
+    {"name": "liquidity_bid_ask_bps", "property": "bid_ask_spread_bps", "measured": 2.0, "market": "large-cap equity"},
+    {"name": "market_beta_spy", "property": "beta", "measured": 1.0, "market": "SPY benchmark"}
+  ]
+}

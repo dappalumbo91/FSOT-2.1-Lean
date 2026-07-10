@@ -1,0 +1,44 @@
+# Tier 24 — Cosmology bubble bleed (BH→WH outgassing, nebula+lensing, FRB, sector H₀).
+version: "1.1"
+updated: "2026-07-08"
+
+source:
+  nebula_seed: data/nebula_lensing_seed.json
+  frb_seed: data/frb_repeater_seed.json
+  frb_literature_seed: data/frb_literature_seed.json
+  h0_sectors_seed: data/sector_h0_seed.json
+  bh_wh_mechanics_seed: data/bh_wh_mechanics_seed.json
+  nebula_cache: data/nebula_lensing_cache.json
+  frb_cache: data/frb_repeater_cache.json
+  chime_catalog_url: "https://www.chime-frb.ca/catalog/CHIME_FRB_catalog.csv"
+  chime_catalog_mirror: "https://storage.googleapis.com/chimefrb-dev.appspot.com/catalog1/chimefrbcat1.csv"
+  chime_catalog_iop_excerpt: "https://iopscience.iop.org/0067-0049/283/1/34/suppdata/apjsae3828t1_ascii.txt?doi=10.3847/1538-4365/ae3828"
+  chime_catalog_iop_cat1: "https://iopscience.iop.org/0067-0049/257/1/59/suppdata/apjsabebfbt1_ascii.txt?doi=10.3847/1538-4365/abebfb"
+  fetch_chime: true
+  outgassing_ref_kms: 10.0
+  repeater_energy_ref: 1.0e4
+
+build:
+  ingest_nebula_lensing: scripts/ingest_nebula_lensing.py
+  ingest_frb: scripts/ingest_frb_repeaters.py
+  benchmark: scripts/build_cosmology_bubble_bleed_benchmark.py
+  output: data/cosmology_bubble_bleed_benchmark.json
+
+lean:
+  generator: scripts/gen_bubble_bleed_priors_lean.py
+  module: FSOT.Formal.BubbleBleedPriors
+  lean_domain: cosmological
+  sign_theorem: h0_fsot_cached_approx_value
+
+verification:
+  min_nebula_records: 15
+  min_frb_records: 20
+  min_h0_sector_records: 4
+  min_frb_classifier_match_rate: 0.65
+  max_frb_classifier_fp_rate: 0.05
+  min_nebula_coupling_match_rate: 0.55
+  min_framework_fit_rate: 1.0
+  min_wh_closure_match_rate: 1.0
+  min_bh_spin_closure_match_rate: 1.0
+  max_sector_h0_error_pct: 8.0
+  max_median_error_pct: 5.0

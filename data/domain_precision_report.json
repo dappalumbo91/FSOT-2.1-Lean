@@ -1,16 +1,14 @@
 {
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "domain_count": 35,
-  "domains_with_numeric_precision": 34,
-  "domains_target_band_2pct": 34,
+  "domains_with_numeric_precision": 35,
+  "domains_target_band_2pct": 35,
   "domains_tolerable_band_5pct": 0,
   "domains_unacceptable": 0,
   "domains_huge_gap": 0,
-  "domains_sign_mismatch": 1,
+  "domains_sign_mismatch": 0,
   "huge_gap_domains": [],
-  "sign_mismatch_domains": [
-    "Seismology"
-  ],
+  "sign_mismatch_domains": [],
   "domains": [
     {
       "neurolab_domain": "Acoustics",
@@ -21,10 +19,10 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 485,
-      "median_error_pct": 0.483271,
-      "p90_error_pct": 1.730169,
-      "max_error_pct": 2.855489,
-      "within_2pct": 452,
+      "median_error_pct": 0.085305,
+      "p90_error_pct": 0.669026,
+      "max_error_pct": 0.995172,
+      "within_2pct": 485,
       "within_5pct": 485,
       "precision_status": "target_band",
       "huge_gap": false,
@@ -32,10 +30,10 @@
         {
           "lab": "smiles_lab",
           "record_count": 485,
-          "median_error_pct": 0.483271,
-          "p90_error_pct": 1.730169,
-          "max_error_pct": 2.855489,
-          "within_2pct": 452,
+          "median_error_pct": 0.085305,
+          "p90_error_pct": 0.669026,
+          "max_error_pct": 0.995172,
+          "within_2pct": 485,
           "within_5pct": 485
         }
       ],
@@ -53,27 +51,27 @@
         {
           "property": "\u00a7105 Autoignition T",
           "records": 12,
-          "median_error_pct": 0.121334
+          "median_error_pct": 0.11138307439389063
         },
         {
           "property": "\u00a713 \u03c7m Magnetic",
           "records": 12,
-          "median_error_pct": 0.483271
+          "median_error_pct": 0.40339
         },
         {
           "property": "\u00a727 Boiling Points",
           "records": 15,
-          "median_error_pct": 0.792126
+          "median_error_pct": 0.274326
         },
         {
           "property": "\u00a728 Melting Points",
           "records": 15,
-          "median_error_pct": 1.029939
+          "median_error_pct": 0.06362649058181588
         },
         {
           "property": "\u00a729 Dielectric \u03b5r",
           "records": 15,
-          "median_error_pct": 0.658987
+          "median_error_pct": 0.175537
         },
         {
           "property": "\u00a730 Refractive nD",
@@ -91,21 +89,21 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 96,
-      "median_error_pct": 0.009964706215270609,
-      "p90_error_pct": 0.487,
-      "max_error_pct": 1.5431110234336303,
-      "within_2pct": 96,
-      "within_5pct": 96,
+      "record_count": 209,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.240731616654418,
+      "max_error_pct": 100.0,
+      "within_2pct": 205,
+      "within_5pct": 206,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
           "lab": "cosmology_lambda_cdm",
           "record_count": 30,
-          "median_error_pct": 0.004296638039763263,
-          "p90_error_pct": 0.11335025724100276,
-          "max_error_pct": 1.5431110234336303,
+          "median_error_pct": 0.0025664942136827593,
+          "p90_error_pct": 0.062029136013863215,
+          "max_error_pct": 0.6788269307563042,
           "within_2pct": 30,
           "within_5pct": 30
         },
@@ -121,43 +119,62 @@
         {
           "lab": "cosmology_extended_lab",
           "record_count": 50,
-          "median_error_pct": 0.021977424424138976,
-          "p90_error_pct": 0.72,
-          "max_error_pct": 1.5431110234336303,
+          "median_error_pct": 0.021477424424138976,
+          "p90_error_pct": 0.6788269307563042,
+          "max_error_pct": 1.127,
           "within_2pct": 50,
           "within_5pct": 50
+        },
+        {
+          "lab": "cosmology_bubble_bleed_lab",
+          "record_count": 113,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 100.0,
+          "within_2pct": 109,
+          "within_5pct": 110
         }
       ],
       "top_properties": [
         {
+          "property": "bh_spin_closure",
+          "records": 5,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "frb_p34_periodicity",
+          "records": 4,
+          "median_error_pct": 1.960784
+        },
+        {
+          "property": "frb_repeater_classifier",
+          "records": 38,
+          "median_error_pct": 0.0
+        },
+        {
           "property": "lambda_cdm",
           "records": 30,
-          "median_error_pct": 0.005633747260469587
+          "median_error_pct": 0.00295952881905694
         },
         {
-          "property": "skeleton",
+          "property": "nebula_framework_fit",
           "records": 20,
-          "median_error_pct": 0.21
+          "median_error_pct": 0.0
         },
         {
-          "property": "wave1",
-          "records": 5,
-          "median_error_pct": 0.11335025724100276
+          "property": "nebula_lensing_coupling",
+          "records": 20,
+          "median_error_pct": 0.0
         },
         {
-          "property": "wave2",
-          "records": 10,
-          "median_error_pct": 0.002173459608308579
+          "property": "nebula_wh_closure",
+          "records": 20,
+          "median_error_pct": 0.0
         },
         {
-          "property": "wave3",
-          "records": 15,
-          "median_error_pct": 0.0019273173307759674
-        },
-        {
-          "property": "wave4",
-          "records": 16,
-          "median_error_pct": 0.011586387979935279
+          "property": "sector_h0_overlay",
+          "records": 6,
+          "median_error_pct": 0.462181
         }
       ],
       "diagnostic": null
@@ -170,12 +187,12 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 208,
-      "median_error_pct": 0.00563396829487013,
-      "p90_error_pct": 0.21,
-      "max_error_pct": 1.5431110234336303,
-      "within_2pct": 208,
-      "within_5pct": 208,
+      "record_count": 321,
+      "median_error_pct": 0.0007352339307450013,
+      "p90_error_pct": 0.14519623144895213,
+      "max_error_pct": 100.0,
+      "within_2pct": 317,
+      "within_5pct": 318,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -191,9 +208,9 @@
         {
           "lab": "cosmology_extended_lab",
           "record_count": 50,
-          "median_error_pct": 0.021977424424138976,
-          "p90_error_pct": 0.72,
-          "max_error_pct": 1.5431110234336303,
+          "median_error_pct": 0.021477424424138976,
+          "p90_error_pct": 0.6788269307563042,
+          "max_error_pct": 1.127,
           "within_2pct": 50,
           "within_5pct": 50
         },
@@ -205,48 +222,57 @@
           "max_error_pct": 0.6313803900161674,
           "within_2pct": 142,
           "within_5pct": 142
+        },
+        {
+          "lab": "cosmology_bubble_bleed_lab",
+          "record_count": 113,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 100.0,
+          "within_2pct": 109,
+          "within_5pct": 110
         }
       ],
       "top_properties": [
         {
+          "property": "bh_spin_closure",
+          "records": 5,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "frb_p34_periodicity",
+          "records": 4,
+          "median_error_pct": 1.960784
+        },
+        {
+          "property": "frb_repeater_classifier",
+          "records": 38,
+          "median_error_pct": 0.0
+        },
+        {
           "property": "lambda_cdm",
           "records": 30,
-          "median_error_pct": 0.005633747260469587
+          "median_error_pct": 0.00295952881905694
         },
         {
-          "property": "skeleton",
+          "property": "nebula_framework_fit",
           "records": 20,
-          "median_error_pct": 0.21
+          "median_error_pct": 0.0
         },
         {
-          "property": "wave10",
-          "records": 10,
-          "median_error_pct": 0.0006556117321513212
+          "property": "nebula_lensing_coupling",
+          "records": 20,
+          "median_error_pct": 0.0
         },
         {
-          "property": "wave4",
-          "records": 16,
-          "median_error_pct": 0.011586387979935279
+          "property": "nebula_wh_closure",
+          "records": 20,
+          "median_error_pct": 0.0
         },
         {
-          "property": "wave5",
-          "records": 22,
-          "median_error_pct": 0.0020773615251059676
-        },
-        {
-          "property": "wave6",
-          "records": 22,
-          "median_error_pct": 0.0003441841587202251
-        },
-        {
-          "property": "wave7",
-          "records": 29,
-          "median_error_pct": 0.003988029700396626
-        },
-        {
-          "property": "wave8",
-          "records": 52,
-          "median_error_pct": 0.014145689288404753
+          "property": "sector_h0_overlay",
+          "records": 6,
+          "median_error_pct": 0.462181
         }
       ],
       "diagnostic": null
@@ -263,12 +289,12 @@
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 47,
+      "record_count": 17450,
       "median_error_pct": 0.0,
-      "p90_error_pct": 0.0,
-      "max_error_pct": 0.0,
-      "within_2pct": 47,
-      "within_5pct": 47,
+      "p90_error_pct": 100.0,
+      "max_error_pct": 100.0,
+      "within_2pct": 14977,
+      "within_5pct": 14977,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -280,12 +306,35 @@
           "max_error_pct": 0.0,
           "within_2pct": 47,
           "within_5pct": 47
+        },
+        {
+          "lab": "climate_lab",
+          "record_count": 17296,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 100.0,
+          "max_error_pct": 100.0,
+          "within_2pct": 14830,
+          "within_5pct": 14830
+        },
+        {
+          "lab": "atmospheric_physics_gap_fill_lab",
+          "record_count": 107,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 100.0,
+          "within_2pct": 100,
+          "within_5pct": 100
         }
       ],
       "top_properties": [
         {
+          "property": "ncei_ghcnd_monthly_temp_anomaly_stability",
+          "records": 17356,
+          "median_error_pct": 0.0
+        },
+        {
           "property": "stability_classifier",
-          "records": 47,
+          "records": 94,
           "median_error_pct": 0.0
         }
       ],
@@ -299,12 +348,12 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 36,
-      "median_error_pct": 0.07716615321446607,
-      "p90_error_pct": 0.714766,
+      "record_count": 116,
+      "median_error_pct": 0.0009504134401228516,
+      "p90_error_pct": 0.333292,
       "max_error_pct": 0.813808,
-      "within_2pct": 36,
-      "within_5pct": 36,
+      "within_2pct": 116,
+      "within_5pct": 116,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -316,23 +365,57 @@
           "max_error_pct": 0.813808,
           "within_2pct": 36,
           "within_5pct": 36
+        },
+        {
+          "lab": "nist_atomic_lab",
+          "record_count": 80,
+          "median_error_pct": 0.0009504134401195033,
+          "p90_error_pct": 0.0009504134401296021,
+          "max_error_pct": 0.0009504134401350574,
+          "within_2pct": 80,
+          "within_5pct": 80
         }
       ],
       "top_properties": [
         {
-          "property": "\u00a766 Particle Masses",
-          "records": 12,
-          "median_error_pct": 0.322515
+          "property": "Angstrom star",
+          "records": 1,
+          "median_error_pct": 0.0009504134401211837
         },
         {
-          "property": "\u00a778 X-ray K\u03b1 Energy",
-          "records": 12,
-          "median_error_pct": 0.0024475156042999594
+          "property": "Avogadro constant",
+          "records": 1,
+          "median_error_pct": 0.000950413440124328
         },
         {
-          "property": "\u00a788 XPS 1s Binding E",
-          "records": 12,
-          "median_error_pct": 0.089934
+          "property": "Bohr magneton",
+          "records": 1,
+          "median_error_pct": 8.814143810298757e-15
+        },
+        {
+          "property": "Bohr magneton in eV/T",
+          "records": 1,
+          "median_error_pct": 0.0009504134401296021
+        },
+        {
+          "property": "Bohr radius",
+          "records": 1,
+          "median_error_pct": 0.000950413440126715
+        },
+        {
+          "property": "Boltzmann constant",
+          "records": 1,
+          "median_error_pct": 1.3121873656878131e-14
+        },
+        {
+          "property": "Compton wavelength",
+          "records": 1,
+          "median_error_pct": 0.0009504134401244556
+        },
+        {
+          "property": "Copper x unit",
+          "records": 1,
+          "median_error_pct": 9.52387420324368e-05
         }
       ],
       "diagnostic": null
@@ -346,10 +429,10 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 166,
-      "median_error_pct": 0.2678785,
-      "p90_error_pct": 1.660145,
-      "max_error_pct": 2.321477,
-      "within_2pct": 161,
+      "median_error_pct": 0.028657,
+      "p90_error_pct": 0.480058,
+      "max_error_pct": 0.98989,
+      "within_2pct": 166,
       "within_5pct": 166,
       "precision_status": "target_band",
       "huge_gap": false,
@@ -357,10 +440,10 @@
         {
           "lab": "smiles_lab",
           "record_count": 128,
-          "median_error_pct": 0.538251,
-          "p90_error_pct": 1.7036,
-          "max_error_pct": 2.321477,
-          "within_2pct": 123,
+          "median_error_pct": 0.07875712869480316,
+          "p90_error_pct": 0.730636,
+          "max_error_pct": 0.98989,
+          "within_2pct": 128,
           "within_5pct": 128
         },
         {
@@ -392,27 +475,27 @@
         {
           "property": "\u00a721 Protein \u0394G",
           "records": 10,
-          "median_error_pct": 0.819727
+          "median_error_pct": 0.19433810355273806
         },
         {
           "property": "\u00a722 Amino Acid pKa",
           "records": 20,
-          "median_error_pct": 0.351972
+          "median_error_pct": 0.061205
         },
         {
           "property": "\u00a723 Drug pKd",
           "records": 10,
-          "median_error_pct": 0.327812
+          "median_error_pct": 0.064046
         },
         {
           "property": "\u00a724 Enzyme kcat",
           "records": 10,
-          "median_error_pct": 0.70505
+          "median_error_pct": 0.100759
         },
         {
           "property": "\u00a735 Michaelis Km",
           "records": 10,
-          "median_error_pct": 1.267814
+          "median_error_pct": 0.05041956982053305
         }
       ],
       "diagnostic": null
@@ -524,9 +607,9 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 99,
-      "median_error_pct": 0.370628,
-      "p90_error_pct": 1.399478,
-      "max_error_pct": 1.932689,
+      "median_error_pct": 0.021463659506869095,
+      "p90_error_pct": 0.717702,
+      "max_error_pct": 0.976185,
       "within_2pct": 99,
       "within_5pct": 99,
       "precision_status": "target_band",
@@ -535,9 +618,9 @@
         {
           "lab": "smiles_lab",
           "record_count": 99,
-          "median_error_pct": 0.370628,
-          "p90_error_pct": 1.399478,
-          "max_error_pct": 1.932689,
+          "median_error_pct": 0.021463659506869095,
+          "p90_error_pct": 0.717702,
+          "max_error_pct": 0.976185,
           "within_2pct": 99,
           "within_5pct": 99
         }
@@ -546,7 +629,7 @@
         {
           "property": "\u00a725 vdW Radii",
           "records": 18,
-          "median_error_pct": 0.65951
+          "median_error_pct": 0.339057
         },
         {
           "property": "\u00a726 Polarizability",
@@ -561,12 +644,12 @@
         {
           "property": "\u00a741 Covalent Radii",
           "records": 18,
-          "median_error_pct": 1.226307
+          "median_error_pct": 0.015388964340886185
         },
         {
           "property": "\u00a772 Electronegativity Ext",
           "records": 12,
-          "median_error_pct": 0.957141
+          "median_error_pct": 0.330009
         },
         {
           "property": "\u00a79 Electron Affinities",
@@ -585,10 +668,10 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 1169,
-      "median_error_pct": 0.2267,
-      "p90_error_pct": 1.102361,
-      "max_error_pct": 2.855489,
-      "within_2pct": 1136,
+      "median_error_pct": 0.0863,
+      "p90_error_pct": 0.6802,
+      "max_error_pct": 0.9952,
+      "within_2pct": 1169,
       "within_5pct": 1169,
       "precision_status": "target_band",
       "huge_gap": false,
@@ -596,10 +679,10 @@
         {
           "lab": "smiles_lab",
           "record_count": 485,
-          "median_error_pct": 0.483271,
-          "p90_error_pct": 1.730169,
-          "max_error_pct": 2.855489,
-          "within_2pct": 452,
+          "median_error_pct": 0.085305,
+          "p90_error_pct": 0.669026,
+          "max_error_pct": 0.995172,
+          "within_2pct": 485,
           "within_5pct": 485
         },
         {
@@ -664,30 +747,30 @@
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": null,
       "sign_mismatch": false,
-      "record_count": 222,
-      "median_error_pct": 0.0052337430649682,
-      "p90_error_pct": 0.21,
-      "max_error_pct": 1.5431110234336303,
-      "within_2pct": 222,
-      "within_5pct": 222,
+      "record_count": 347,
+      "median_error_pct": 0.0008593004744053731,
+      "p90_error_pct": 0.19622923593995978,
+      "max_error_pct": 100.0,
+      "within_2pct": 343,
+      "within_5pct": 344,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
           "lab": "cosmology_lambda_cdm",
           "record_count": 30,
-          "median_error_pct": 0.004296638039763263,
-          "p90_error_pct": 0.11335025724100276,
-          "max_error_pct": 1.5431110234336303,
+          "median_error_pct": 0.0025664942136827593,
+          "p90_error_pct": 0.062029136013863215,
+          "max_error_pct": 0.6788269307563042,
           "within_2pct": 30,
           "within_5pct": 30
         },
         {
           "lab": "cosmology_extended_lab",
           "record_count": 50,
-          "median_error_pct": 0.021977424424138976,
-          "p90_error_pct": 0.72,
-          "max_error_pct": 1.5431110234336303,
+          "median_error_pct": 0.021477424424138976,
+          "p90_error_pct": 0.6788269307563042,
+          "max_error_pct": 1.127,
           "within_2pct": 50,
           "within_5pct": 50
         },
@@ -699,48 +782,66 @@
           "max_error_pct": 0.6313803900161674,
           "within_2pct": 142,
           "within_5pct": 142
+        },
+        {
+          "lab": "cosmology_bubble_bleed_lab",
+          "record_count": 113,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 100.0,
+          "within_2pct": 109,
+          "within_5pct": 110
+        },
+        {
+          "lab": "cosmology_anomalies_lab",
+          "record_count": 12,
+          "median_error_pct": 0.11816499999999999,
+          "p90_error_pct": 0.325823,
+          "max_error_pct": 0.486991,
+          "within_2pct": 12,
+          "within_5pct": 12
         }
       ],
       "top_properties": [
         {
+          "property": "bbn_anomaly",
+          "records": 2,
+          "median_error_pct": 0.486991
+        },
+        {
+          "property": "bh_spin_closure",
+          "records": 5,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "cmb_anomaly",
+          "records": 3,
+          "median_error_pct": 0.140126
+        },
+        {
+          "property": "frb_anomaly",
+          "records": 1,
+          "median_error_pct": 0.042611
+        },
+        {
+          "property": "frb_p34_periodicity",
+          "records": 4,
+          "median_error_pct": 1.960784
+        },
+        {
+          "property": "frb_repeater_classifier",
+          "records": 38,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "hubble_tension",
+          "records": 2,
+          "median_error_pct": 0.227322
+        },
+        {
           "property": "lambda_cdm",
           "records": 30,
-          "median_error_pct": 0.005633747260469587
-        },
-        {
-          "property": "skeleton",
-          "records": 20,
-          "median_error_pct": 0.21
-        },
-        {
-          "property": "wave1",
-          "records": 5,
-          "median_error_pct": 0.11335025724100276
-        },
-        {
-          "property": "wave10",
-          "records": 10,
-          "median_error_pct": 0.0006556117321513212
-        },
-        {
-          "property": "wave2",
-          "records": 10,
-          "median_error_pct": 0.002173459608308579
-        },
-        {
-          "property": "wave3",
-          "records": 15,
-          "median_error_pct": 0.0019273173307759674
-        },
-        {
-          "property": "wave5",
-          "records": 22,
-          "median_error_pct": 0.0020773615251059676
-        },
-        {
-          "property": "wave6",
-          "records": 22,
-          "median_error_pct": 0.0003441841587202251
+          "median_error_pct": 0.00295952881905694
         }
       ],
       "diagnostic": null
@@ -753,15 +854,24 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 12,
-      "median_error_pct": 0.0,
-      "p90_error_pct": 0.5128205128205128,
+      "record_count": 654,
+      "median_error_pct": 0.01778900030816399,
+      "p90_error_pct": 0.022236250385205006,
       "max_error_pct": 0.8595988538681949,
-      "within_2pct": 12,
-      "within_5pct": 12,
+      "within_2pct": 654,
+      "within_5pct": 654,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
+        {
+          "lab": "gbif_ecology_lab",
+          "record_count": 627,
+          "median_error_pct": 0.017789000308164337,
+          "p90_error_pct": 0.022236250385204694,
+          "max_error_pct": 0.8595988538681949,
+          "within_2pct": 627,
+          "within_5pct": 627
+        },
         {
           "lab": "evolution_lab",
           "record_count": 12,
@@ -770,12 +880,41 @@
           "max_error_pct": 0.8595988538681949,
           "within_2pct": 12,
           "within_5pct": 12
+        },
+        {
+          "lab": "biology_strict_lab",
+          "record_count": 15,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.5128205128205128,
+          "max_error_pct": 0.8595988538681949,
+          "within_2pct": 15,
+          "within_5pct": 15
         }
       ],
       "top_properties": [
         {
+          "property": "decimalLatitude",
+          "records": 300,
+          "median_error_pct": 0.022236250385199493
+        },
+        {
+          "property": "decimalLongitude",
+          "records": 300,
+          "median_error_pct": 0.017789000308154796
+        },
+        {
+          "property": "mt_coding_bp_sum",
+          "records": 2,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "mt_operon_count",
+          "records": 2,
+          "median_error_pct": 0.0
+        },
+        {
           "property": "mt_operon_length",
-          "records": 12,
+          "records": 50,
           "median_error_pct": 0.0
         }
       ],
@@ -789,15 +928,24 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 10,
-      "median_error_pct": -0.0007873774796219538,
-      "p90_error_pct": 0.0005995452654275573,
-      "max_error_pct": 0.002670068252275115,
-      "within_2pct": 10,
-      "within_5pct": 10,
+      "record_count": 167,
+      "median_error_pct": 0.12920090413714938,
+      "p90_error_pct": 0.12920090413715682,
+      "max_error_pct": 0.12920090413716007,
+      "within_2pct": 167,
+      "within_5pct": 167,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
+        {
+          "lab": "world_bank_economics_lab",
+          "record_count": 157,
+          "median_error_pct": 0.1292009041371501,
+          "p90_error_pct": 0.12920090413715693,
+          "max_error_pct": 0.12920090413716007,
+          "within_2pct": 157,
+          "within_5pct": 157
+        },
         {
           "lab": "linguistics_lab",
           "record_count": 10,
@@ -809,6 +957,21 @@
         }
       ],
       "top_properties": [
+        {
+          "property": "GDP_current_USD_yoy_growth_pct",
+          "records": 54,
+          "median_error_pct": 0.12920090413714894
+        },
+        {
+          "property": "GDP_per_capita_yoy_growth_pct",
+          "records": 54,
+          "median_error_pct": 0.12920090413715235
+        },
+        {
+          "property": "population_total_yoy_growth_pct",
+          "records": 49,
+          "median_error_pct": 0.12920090413714935
+        },
         {
           "property": "unknown",
           "records": 10,
@@ -828,18 +991,18 @@
       "record_count": 271912,
       "median_error_pct": 0.0,
       "p90_error_pct": 0.0,
-      "max_error_pct": 100.0,
-      "within_2pct": 271909,
-      "within_5pct": 271909,
+      "max_error_pct": 0.976185,
+      "within_2pct": 271912,
+      "within_5pct": 271912,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
           "lab": "smiles_lab",
           "record_count": 99,
-          "median_error_pct": 0.370628,
-          "p90_error_pct": 1.399478,
-          "max_error_pct": 1.932689,
+          "median_error_pct": 0.021463659506869095,
+          "p90_error_pct": 0.717702,
+          "max_error_pct": 0.976185,
           "within_2pct": 99,
           "within_5pct": 99
         },
@@ -848,9 +1011,9 @@
           "record_count": 271813,
           "median_error_pct": 0.0,
           "p90_error_pct": 0.0,
-          "max_error_pct": 100.0,
-          "within_2pct": 271810,
-          "within_5pct": 271810
+          "max_error_pct": 0.0,
+          "within_2pct": 271813,
+          "within_5pct": 271813
         }
       ],
       "top_properties": [
@@ -862,7 +1025,7 @@
         {
           "property": "\u00a725 vdW Radii",
           "records": 18,
-          "median_error_pct": 0.65951
+          "median_error_pct": 0.339057
         },
         {
           "property": "\u00a726 Polarizability",
@@ -877,12 +1040,12 @@
         {
           "property": "\u00a741 Covalent Radii",
           "records": 18,
-          "median_error_pct": 1.226307
+          "median_error_pct": 0.015388964340886185
         },
         {
           "property": "\u00a772 Electronegativity Ext",
           "records": 12,
-          "median_error_pct": 0.957141
+          "median_error_pct": 0.330009
         },
         {
           "property": "\u00a79 Electron Affinities",
@@ -904,15 +1067,24 @@
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 1,
-      "median_error_pct": 0.7000000000000028,
-      "p90_error_pct": 0.7000000000000028,
+      "record_count": 56,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.0,
       "max_error_pct": 0.7000000000000028,
-      "within_2pct": 1,
-      "within_5pct": 1,
+      "within_2pct": 56,
+      "within_5pct": 56,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
+        {
+          "lab": "fluid_dynamics_lab",
+          "record_count": 55,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 0.0,
+          "within_2pct": 55,
+          "within_5pct": 55
+        },
         {
           "lab": "trinary_fluid_computer",
           "record_count": 1,
@@ -925,9 +1097,44 @@
       ],
       "top_properties": [
         {
+          "property": "dataset_artifact",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
           "property": "engine_accuracy",
           "records": 1,
           "median_error_pct": 0.7000000000000028
+        },
+        {
+          "property": "full_dataset_rmse",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "held_out_test_rmse",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "math_rule_schema",
+          "records": 25,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "report_artifact",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "row_count",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "stability_classifier",
+          "records": 25,
+          "median_error_pct": 0.0
         }
       ],
       "diagnostic": "Dual-mode OK: authority=dispersal vs empirical=stability; numeric records align with empirical lean rollup."
@@ -944,12 +1151,12 @@
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 47,
+      "record_count": 547,
       "median_error_pct": 0.0,
       "p90_error_pct": 0.0,
-      "max_error_pct": 0.0,
-      "within_2pct": 47,
-      "within_5pct": 47,
+      "max_error_pct": 100.0,
+      "within_2pct": 531,
+      "within_5pct": 531,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -961,9 +1168,23 @@
           "max_error_pct": 0.0,
           "within_2pct": 47,
           "within_5pct": 47
+        },
+        {
+          "lab": "tectonics_lab",
+          "record_count": 500,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 100.0,
+          "within_2pct": 484,
+          "within_5pct": 484
         }
       ],
       "top_properties": [
+        {
+          "property": "crustal_plate_margin_classifier",
+          "records": 500,
+          "median_error_pct": 0.0
+        },
         {
           "property": "stability_classifier",
           "records": 47,
@@ -1051,10 +1272,10 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 1169,
-      "median_error_pct": 0.2267,
-      "p90_error_pct": 1.102361,
-      "max_error_pct": 2.855489,
-      "within_2pct": 1136,
+      "median_error_pct": 0.0863,
+      "p90_error_pct": 0.6802,
+      "max_error_pct": 0.9952,
+      "within_2pct": 1169,
       "within_5pct": 1169,
       "precision_status": "target_band",
       "huge_gap": false,
@@ -1062,10 +1283,10 @@
         {
           "lab": "smiles_lab",
           "record_count": 485,
-          "median_error_pct": 0.483271,
-          "p90_error_pct": 1.730169,
-          "max_error_pct": 2.855489,
-          "within_2pct": 452,
+          "median_error_pct": 0.085305,
+          "p90_error_pct": 0.669026,
+          "max_error_pct": 0.995172,
+          "within_2pct": 485,
           "within_5pct": 485
         },
         {
@@ -1134,12 +1355,12 @@
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 47,
+      "record_count": 17450,
       "median_error_pct": 0.0,
-      "p90_error_pct": 0.0,
-      "max_error_pct": 0.0,
-      "within_2pct": 47,
-      "within_5pct": 47,
+      "p90_error_pct": 100.0,
+      "max_error_pct": 100.0,
+      "within_2pct": 14977,
+      "within_5pct": 14977,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -1151,12 +1372,35 @@
           "max_error_pct": 0.0,
           "within_2pct": 47,
           "within_5pct": 47
+        },
+        {
+          "lab": "climate_lab",
+          "record_count": 17296,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 100.0,
+          "max_error_pct": 100.0,
+          "within_2pct": 14830,
+          "within_5pct": 14830
+        },
+        {
+          "lab": "meteorology_gap_fill_lab",
+          "record_count": 107,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 100.0,
+          "within_2pct": 100,
+          "within_5pct": 100
         }
       ],
       "top_properties": [
         {
+          "property": "ncei_ghcnd_monthly_temp_anomaly_stability",
+          "records": 17356,
+          "median_error_pct": 0.0
+        },
+        {
           "property": "stability_classifier",
-          "records": 47,
+          "records": 94,
           "median_error_pct": 0.0
         }
       ],
@@ -1171,10 +1415,10 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 608,
-      "median_error_pct": 0.14273799999999998,
-      "p90_error_pct": 1.362236,
-      "max_error_pct": 2.927848,
-      "within_2pct": 586,
+      "median_error_pct": 0.05267069916954621,
+      "p90_error_pct": 0.653315,
+      "max_error_pct": 1.408657,
+      "within_2pct": 608,
       "within_5pct": 608,
       "precision_status": "target_band",
       "huge_gap": false,
@@ -1182,10 +1426,10 @@
         {
           "lab": "smiles_lab",
           "record_count": 608,
-          "median_error_pct": 0.14273799999999998,
-          "p90_error_pct": 1.362236,
-          "max_error_pct": 2.927848,
-          "within_2pct": 586,
+          "median_error_pct": 0.05267069916954621,
+          "p90_error_pct": 0.653315,
+          "max_error_pct": 1.408657,
+          "within_2pct": 608,
           "within_5pct": 608
         }
       ],
@@ -1242,10 +1486,10 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 55,
-      "median_error_pct": 0.265372,
-      "p90_error_pct": 1.7465,
-      "max_error_pct": 2.926885,
-      "within_2pct": 53,
+      "median_error_pct": 0.059472,
+      "p90_error_pct": 0.901573,
+      "max_error_pct": 1.7465,
+      "within_2pct": 55,
       "within_5pct": 55,
       "precision_status": "target_band",
       "huge_gap": false,
@@ -1253,10 +1497,10 @@
         {
           "lab": "smiles_lab",
           "record_count": 39,
-          "median_error_pct": 0.438522,
-          "p90_error_pct": 1.773955,
-          "max_error_pct": 2.926885,
-          "within_2pct": 37,
+          "median_error_pct": 0.03084576678991979,
+          "p90_error_pct": 0.88312,
+          "max_error_pct": 0.927845,
+          "within_2pct": 39,
           "within_5pct": 39
         },
         {
@@ -1278,17 +1522,17 @@
         {
           "property": "\u00a719 NMR \u03b4",
           "records": 12,
-          "median_error_pct": 0.237442
+          "median_error_pct": 0.149246
         },
         {
           "property": "\u00a752 \u00b9\u00b3C NMR \u03b4",
           "records": 15,
-          "median_error_pct": 0.134146
+          "median_error_pct": 0.0152342957866489
         },
         {
           "property": "\u00a753 Fluorescence \u03a6f",
           "records": 12,
-          "median_error_pct": 1.116126
+          "median_error_pct": 0.04198648155348847
         }
       ],
       "diagnostic": null
@@ -1302,10 +1546,10 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 79,
-      "median_error_pct": 0.136738,
-      "p90_error_pct": 1.509076,
-      "max_error_pct": 2.187774,
-      "within_2pct": 76,
+      "median_error_pct": 0.010786065632051698,
+      "p90_error_pct": 0.45056,
+      "max_error_pct": 0.916256,
+      "within_2pct": 79,
       "within_5pct": 79,
       "precision_status": "target_band",
       "huge_gap": false,
@@ -1313,10 +1557,10 @@
         {
           "lab": "smiles_lab",
           "record_count": 51,
-          "median_error_pct": 0.366496,
-          "p90_error_pct": 1.722498,
-          "max_error_pct": 2.187774,
-          "within_2pct": 48,
+          "median_error_pct": 0.080942,
+          "p90_error_pct": 0.632927,
+          "max_error_pct": 0.916256,
+          "within_2pct": 51,
           "within_5pct": 51
         },
         {
@@ -1343,17 +1587,17 @@
         {
           "property": "\u00a764 Neutron \u03c3_a",
           "records": 12,
-          "median_error_pct": 1.184364
+          "median_error_pct": 0.11112036167134416
         },
         {
           "property": "\u00a767 Nuclear \u03bcN",
           "records": 12,
-          "median_error_pct": 0.413329
+          "median_error_pct": 0.04721
         },
         {
           "property": "\u00a782 M\u00f6ssbauer IS",
           "records": 12,
-          "median_error_pct": 1.386517
+          "median_error_pct": 0.023259895459434028
         }
       ],
       "diagnostic": null
@@ -1370,15 +1614,24 @@
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 47,
+      "record_count": 112,
       "median_error_pct": 0.0,
-      "p90_error_pct": 0.0,
-      "max_error_pct": 0.0,
-      "within_2pct": 47,
-      "within_5pct": 47,
+      "p90_error_pct": 0.03017272606769161,
+      "max_error_pct": 0.030172726067698104,
+      "within_2pct": 112,
+      "within_5pct": 112,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
+        {
+          "lab": "noaa_oceanography_lab",
+          "record_count": 65,
+          "median_error_pct": 0.03017272606768673,
+          "p90_error_pct": 0.030172726067693702,
+          "max_error_pct": 0.030172726067698104,
+          "within_2pct": 65,
+          "within_5pct": 65
+        },
         {
           "lab": "weather_lab",
           "record_count": 47,
@@ -1391,8 +1644,28 @@
       ],
       "top_properties": [
         {
+          "property": "max_height_m",
+          "records": 10,
+          "median_error_pct": 0.030172726067692276
+        },
+        {
+          "property": "mean_height_m",
+          "records": 10,
+          "median_error_pct": 0.030172726067688217
+        },
+        {
+          "property": "min_height_m",
+          "records": 10,
+          "median_error_pct": 0.030172726067688796
+        },
+        {
+          "property": "prediction_count",
+          "records": 10,
+          "median_error_pct": 0.030172726067689837
+        },
+        {
           "property": "stability_classifier",
-          "records": 47,
+          "records": 72,
           "median_error_pct": 0.0
         }
       ],
@@ -1407,10 +1680,10 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 485,
-      "median_error_pct": 0.483271,
-      "p90_error_pct": 1.730169,
-      "max_error_pct": 2.855489,
-      "within_2pct": 452,
+      "median_error_pct": 0.085305,
+      "p90_error_pct": 0.669026,
+      "max_error_pct": 0.995172,
+      "within_2pct": 485,
       "within_5pct": 485,
       "precision_status": "target_band",
       "huge_gap": false,
@@ -1418,10 +1691,10 @@
         {
           "lab": "smiles_lab",
           "record_count": 485,
-          "median_error_pct": 0.483271,
-          "p90_error_pct": 1.730169,
-          "max_error_pct": 2.855489,
-          "within_2pct": 452,
+          "median_error_pct": 0.085305,
+          "p90_error_pct": 0.669026,
+          "max_error_pct": 0.995172,
+          "within_2pct": 485,
           "within_5pct": 485
         }
       ],
@@ -1439,27 +1712,27 @@
         {
           "property": "\u00a7105 Autoignition T",
           "records": 12,
-          "median_error_pct": 0.121334
+          "median_error_pct": 0.11138307439389063
         },
         {
           "property": "\u00a713 \u03c7m Magnetic",
           "records": 12,
-          "median_error_pct": 0.483271
+          "median_error_pct": 0.40339
         },
         {
           "property": "\u00a727 Boiling Points",
           "records": 15,
-          "median_error_pct": 0.792126
+          "median_error_pct": 0.274326
         },
         {
           "property": "\u00a728 Melting Points",
           "records": 15,
-          "median_error_pct": 1.029939
+          "median_error_pct": 0.06362649058181588
         },
         {
           "property": "\u00a729 Dielectric \u03b5r",
           "records": 15,
-          "median_error_pct": 0.658987
+          "median_error_pct": 0.175537
         },
         {
           "property": "\u00a730 Refractive nD",
@@ -1478,9 +1751,9 @@
       "lean_sign_positive": false,
       "sign_mismatch": false,
       "record_count": 208,
-      "median_error_pct": 0.00563396829487013,
-      "p90_error_pct": 0.21,
-      "max_error_pct": 1.5431110234336303,
+      "median_error_pct": 0.005577753040363415,
+      "p90_error_pct": 0.19622923593995978,
+      "max_error_pct": 1.127,
       "within_2pct": 208,
       "within_5pct": 208,
       "precision_status": "target_band",
@@ -1498,9 +1771,9 @@
         {
           "lab": "cosmology_extended_lab",
           "record_count": 50,
-          "median_error_pct": 0.021977424424138976,
-          "p90_error_pct": 0.72,
-          "max_error_pct": 1.5431110234336303,
+          "median_error_pct": 0.021477424424138976,
+          "p90_error_pct": 0.6788269307563042,
+          "max_error_pct": 1.127,
           "within_2pct": 50,
           "within_5pct": 50
         },
@@ -1518,7 +1791,7 @@
         {
           "property": "lambda_cdm",
           "records": 30,
-          "median_error_pct": 0.005633747260469587
+          "median_error_pct": 0.00295952881905694
         },
         {
           "property": "skeleton",
@@ -1566,40 +1839,65 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 36,
-      "median_error_pct": 0.07716615321446607,
-      "p90_error_pct": 0.714766,
+      "record_count": 98,
+      "median_error_pct": 0.0025887499285903873,
+      "p90_error_pct": 0.46878,
       "max_error_pct": 0.813808,
-      "within_2pct": 36,
-      "within_5pct": 36,
+      "within_2pct": 98,
+      "within_5pct": 98,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
-          "lab": "smiles_lab",
-          "record_count": 36,
-          "median_error_pct": 0.07716615321446607,
-          "p90_error_pct": 0.714766,
+          "lab": "particle_physics_lab",
+          "record_count": 98,
+          "median_error_pct": 0.0025887499285903873,
+          "p90_error_pct": 0.46878,
           "max_error_pct": 0.813808,
-          "within_2pct": 36,
-          "within_5pct": 36
+          "within_2pct": 98,
+          "within_5pct": 98
         }
       ],
       "top_properties": [
         {
-          "property": "\u00a766 Particle Masses",
-          "records": 12,
-          "median_error_pct": 0.322515
+          "property": "Higgs Branching Ratios",
+          "records": 5,
+          "median_error_pct": 0.0
         },
         {
-          "property": "\u00a778 X-ray K\u03b1 Energy",
-          "records": 12,
-          "median_error_pct": 0.0024475156042999594
+          "property": "Mass Ratios",
+          "records": 3,
+          "median_error_pct": 0.0
         },
         {
-          "property": "\u00a788 XPS 1s Binding E",
-          "records": 12,
-          "median_error_pct": 0.089934
+          "property": "Nuclear Physics",
+          "records": 3,
+          "median_error_pct": 0.1
+        },
+        {
+          "property": "Particle Physics",
+          "records": 7,
+          "median_error_pct": 0.1
+        },
+        {
+          "property": "Z Branching Ratios",
+          "records": 3,
+          "median_error_pct": 0.1
+        },
+        {
+          "property": "auto_expansion_analysis",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "auto_expansion_conditions",
+          "records": 1,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "auto_expansion_constraints",
+          "records": 1,
+          "median_error_pct": 0.0
         }
       ],
       "diagnostic": null
@@ -1613,10 +1911,10 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 608,
-      "median_error_pct": 0.14273799999999998,
-      "p90_error_pct": 1.362236,
-      "max_error_pct": 2.927848,
-      "within_2pct": 586,
+      "median_error_pct": 0.05267069916954621,
+      "p90_error_pct": 0.653315,
+      "max_error_pct": 1.408657,
+      "within_2pct": 608,
       "within_5pct": 608,
       "precision_status": "target_band",
       "huge_gap": false,
@@ -1624,10 +1922,10 @@
         {
           "lab": "smiles_lab",
           "record_count": 608,
-          "median_error_pct": 0.14273799999999998,
-          "p90_error_pct": 1.362236,
-          "max_error_pct": 2.927848,
-          "within_2pct": 586,
+          "median_error_pct": 0.05267069916954621,
+          "p90_error_pct": 0.653315,
+          "max_error_pct": 1.408657,
+          "within_2pct": 608,
           "within_5pct": 608
         }
       ],
@@ -1684,9 +1982,9 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 66,
-      "median_error_pct": 0.019444912684707202,
-      "p90_error_pct": 0.6788269307563042,
-      "max_error_pct": 1.5431110234336303,
+      "median_error_pct": 0.017721515188881255,
+      "p90_error_pct": 0.487,
+      "max_error_pct": 1.127,
       "within_2pct": 66,
       "within_5pct": 66,
       "precision_status": "target_band",
@@ -1704,9 +2002,9 @@
         {
           "lab": "cosmology_extended_lab",
           "record_count": 50,
-          "median_error_pct": 0.021977424424138976,
-          "p90_error_pct": 0.72,
-          "max_error_pct": 1.5431110234336303,
+          "median_error_pct": 0.021477424424138976,
+          "p90_error_pct": 0.6788269307563042,
+          "max_error_pct": 1.127,
           "within_2pct": 50,
           "within_5pct": 50
         }
@@ -1715,7 +2013,7 @@
         {
           "property": "lambda_cdm",
           "records": 30,
-          "median_error_pct": 0.005633747260469587
+          "median_error_pct": 0.00295952881905694
         },
         {
           "property": "skeleton",
@@ -1738,15 +2036,24 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 10,
-      "median_error_pct": -0.0007873774796219538,
-      "p90_error_pct": 0.0005995452654275573,
-      "max_error_pct": 0.002670068252275115,
-      "within_2pct": 10,
-      "within_5pct": 10,
+      "record_count": 170,
+      "median_error_pct": 0.03150616921194593,
+      "p90_error_pct": 0.03150616921195377,
+      "max_error_pct": 0.031506169211957265,
+      "within_2pct": 170,
+      "within_5pct": 170,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
+        {
+          "lab": "openalex_psychology_lab",
+          "record_count": 160,
+          "median_error_pct": 0.03150616921194645,
+          "p90_error_pct": 0.03150616921195413,
+          "max_error_pct": 0.031506169211957265,
+          "within_2pct": 160,
+          "within_5pct": 160
+        },
         {
           "lab": "linguistics_lab",
           "record_count": 10,
@@ -1759,8 +2066,13 @@
       ],
       "top_properties": [
         {
+          "property": "cited_by_count",
+          "records": 150,
+          "median_error_pct": 0.031506169211947085
+        },
+        {
           "property": "unknown",
-          "records": 10,
+          "records": 20,
           "median_error_pct": -0.00036899321083823844
         }
       ],
@@ -1774,15 +2086,24 @@
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": false,
       "sign_mismatch": false,
-      "record_count": 3,
-      "median_error_pct": 0.0,
-      "p90_error_pct": 0.0,
-      "max_error_pct": 0.0,
-      "within_2pct": 3,
-      "within_5pct": 3,
+      "record_count": 180,
+      "median_error_pct": 0.0002953462072651492,
+      "p90_error_pct": 0.0002953462072721851,
+      "max_error_pct": 0.0009504134401349842,
+      "within_2pct": 180,
+      "within_5pct": 180,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
+        {
+          "lab": "quantum_computing_lab",
+          "record_count": 177,
+          "median_error_pct": 0.0002953462072651492,
+          "p90_error_pct": 0.0002953462072721851,
+          "max_error_pct": 0.0009504134401349842,
+          "within_2pct": 177,
+          "within_5pct": 177
+        },
         {
           "lab": "trinary_os",
           "record_count": 3,
@@ -1795,9 +2116,44 @@
       ],
       "top_properties": [
         {
-          "property": "oracle_panel",
-          "records": 3,
-          "median_error_pct": 0.0
+          "property": "Angstrom star",
+          "records": 1,
+          "median_error_pct": 0.0009504134401211837
+        },
+        {
+          "property": "Avogadro constant",
+          "records": 1,
+          "median_error_pct": 0.000950413440124328
+        },
+        {
+          "property": "Bohr magneton",
+          "records": 1,
+          "median_error_pct": 8.814143810298757e-15
+        },
+        {
+          "property": "Bohr magneton in eV/T",
+          "records": 1,
+          "median_error_pct": 0.0009504134401296021
+        },
+        {
+          "property": "Bohr radius",
+          "records": 1,
+          "median_error_pct": 0.000950413440126715
+        },
+        {
+          "property": "Boltzmann constant",
+          "records": 1,
+          "median_error_pct": 1.3121873656878131e-14
+        },
+        {
+          "property": "alpha particle mass",
+          "records": 1,
+          "median_error_pct": 6.3151716457474866e-18
+        },
+        {
+          "property": "alpha particle mass energy equivalent",
+          "records": 1,
+          "median_error_pct": 0.0009504134401297738
         }
       ],
       "diagnostic": null
@@ -1814,12 +2170,12 @@
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 28,
+      "record_count": 141,
       "median_error_pct": 0.0,
-      "p90_error_pct": 0.075,
-      "max_error_pct": 0.718,
-      "within_2pct": 28,
-      "within_5pct": 28,
+      "p90_error_pct": 0.0,
+      "max_error_pct": 100.0,
+      "within_2pct": 137,
+      "within_5pct": 138,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
@@ -1831,6 +2187,15 @@
           "max_error_pct": 0.718,
           "within_2pct": 28,
           "within_5pct": 28
+        },
+        {
+          "lab": "cosmology_bubble_bleed_lab",
+          "record_count": 113,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 100.0,
+          "within_2pct": 109,
+          "within_5pct": 110
         }
       ],
       "top_properties": [
@@ -1838,6 +2203,41 @@
           "property": "STRONG",
           "records": 28,
           "median_error_pct": 0.0
+        },
+        {
+          "property": "bh_spin_closure",
+          "records": 5,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "frb_p34_periodicity",
+          "records": 4,
+          "median_error_pct": 1.960784
+        },
+        {
+          "property": "frb_repeater_classifier",
+          "records": 38,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "nebula_framework_fit",
+          "records": 20,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "nebula_lensing_coupling",
+          "records": 20,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "nebula_wh_closure",
+          "records": 20,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "sector_h0_overlay",
+          "records": 6,
+          "median_error_pct": 0.462181
         }
       ],
       "diagnostic": "Dual-mode OK: authority=dispersal vs empirical=stability; numeric records align with empirical lean rollup."
@@ -1850,35 +2250,74 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 24,
-      "median_error_pct": 1.2125785,
-      "p90_error_pct": 2.481239,
-      "max_error_pct": 2.876083,
-      "within_2pct": 19,
-      "within_5pct": 24,
+      "record_count": 74,
+      "median_error_pct": 0.0009504134401252401,
+      "p90_error_pct": 0.05470068838526623,
+      "max_error_pct": 0.904236,
+      "within_2pct": 74,
+      "within_5pct": 74,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
           "lab": "smiles_lab",
           "record_count": 24,
-          "median_error_pct": 1.2125785,
-          "p90_error_pct": 2.481239,
-          "max_error_pct": 2.876083,
-          "within_2pct": 19,
+          "median_error_pct": 0.020531570348564454,
+          "p90_error_pct": 0.742087,
+          "max_error_pct": 0.904236,
+          "within_2pct": 24,
           "within_5pct": 24
+        },
+        {
+          "lab": "nist_quantum_lab",
+          "record_count": 50,
+          "median_error_pct": 8.652504789967555e-05,
+          "p90_error_pct": 0.0009504134401296021,
+          "max_error_pct": 0.0009504134401350574,
+          "within_2pct": 50,
+          "within_5pct": 50
         }
       ],
       "top_properties": [
         {
-          "property": "\u00a731 Band Gaps",
-          "records": 12,
-          "median_error_pct": 1.058939
+          "property": "Angstrom star",
+          "records": 1,
+          "median_error_pct": 0.0009504134401211837
         },
         {
-          "property": "\u00a777 Effective Mass m*",
-          "records": 12,
-          "median_error_pct": 1.890384
+          "property": "Avogadro constant",
+          "records": 1,
+          "median_error_pct": 0.000950413440124328
+        },
+        {
+          "property": "Bohr magneton",
+          "records": 1,
+          "median_error_pct": 8.814143810298757e-15
+        },
+        {
+          "property": "Bohr magneton in eV/T",
+          "records": 1,
+          "median_error_pct": 0.0009504134401296021
+        },
+        {
+          "property": "Bohr radius",
+          "records": 1,
+          "median_error_pct": 0.000950413440126715
+        },
+        {
+          "property": "Boltzmann constant",
+          "records": 1,
+          "median_error_pct": 1.3121873656878131e-14
+        },
+        {
+          "property": "Compton wavelength",
+          "records": 1,
+          "median_error_pct": 0.0009504134401244556
+        },
+        {
+          "property": "Copper x unit",
+          "records": 1,
+          "median_error_pct": 9.52387420324368e-05
         }
       ],
       "diagnostic": null
@@ -1891,35 +2330,74 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 24,
-      "median_error_pct": 1.2125785,
-      "p90_error_pct": 2.481239,
-      "max_error_pct": 2.876083,
-      "within_2pct": 19,
-      "within_5pct": 24,
+      "record_count": 74,
+      "median_error_pct": 0.0009504134401252401,
+      "p90_error_pct": 0.05470068838526623,
+      "max_error_pct": 0.904236,
+      "within_2pct": 74,
+      "within_5pct": 74,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
         {
           "lab": "smiles_lab",
           "record_count": 24,
-          "median_error_pct": 1.2125785,
-          "p90_error_pct": 2.481239,
-          "max_error_pct": 2.876083,
-          "within_2pct": 19,
+          "median_error_pct": 0.020531570348564454,
+          "p90_error_pct": 0.742087,
+          "max_error_pct": 0.904236,
+          "within_2pct": 24,
           "within_5pct": 24
+        },
+        {
+          "lab": "nist_quantum_lab",
+          "record_count": 50,
+          "median_error_pct": 8.652504789967555e-05,
+          "p90_error_pct": 0.0009504134401296021,
+          "max_error_pct": 0.0009504134401350574,
+          "within_2pct": 50,
+          "within_5pct": 50
         }
       ],
       "top_properties": [
         {
-          "property": "\u00a731 Band Gaps",
-          "records": 12,
-          "median_error_pct": 1.058939
+          "property": "Angstrom star",
+          "records": 1,
+          "median_error_pct": 0.0009504134401211837
         },
         {
-          "property": "\u00a777 Effective Mass m*",
-          "records": 12,
-          "median_error_pct": 1.890384
+          "property": "Avogadro constant",
+          "records": 1,
+          "median_error_pct": 0.000950413440124328
+        },
+        {
+          "property": "Bohr magneton",
+          "records": 1,
+          "median_error_pct": 8.814143810298757e-15
+        },
+        {
+          "property": "Bohr magneton in eV/T",
+          "records": 1,
+          "median_error_pct": 0.0009504134401296021
+        },
+        {
+          "property": "Bohr radius",
+          "records": 1,
+          "median_error_pct": 0.000950413440126715
+        },
+        {
+          "property": "Boltzmann constant",
+          "records": 1,
+          "median_error_pct": 1.3121873656878131e-14
+        },
+        {
+          "property": "Compton wavelength",
+          "records": 1,
+          "median_error_pct": 0.0009504134401244556
+        },
+        {
+          "property": "Copper x unit",
+          "records": 1,
+          "median_error_pct": 9.52387420324368e-05
         }
       ],
       "diagnostic": null
@@ -1930,23 +2408,53 @@
       "application_mode": {
         "authority": "dispersal",
         "empirical": "stability",
-        "dual_mode_resolved": false
+        "dual_mode_resolved": true
       },
       "domain_scalar_S": -0.4459015721103038,
       "neurolab_scalar_sign": "negative",
       "lean_sign_positive": true,
-      "sign_mismatch": true,
-      "record_count": 0,
-      "median_error_pct": null,
-      "p90_error_pct": null,
-      "max_error_pct": null,
-      "within_2pct": 0,
-      "within_5pct": 0,
-      "precision_status": "sign_mismatch",
+      "sign_mismatch": false,
+      "record_count": 1000,
+      "median_error_pct": 0.0,
+      "p90_error_pct": 0.0,
+      "max_error_pct": 100.0,
+      "within_2pct": 965,
+      "within_5pct": 965,
+      "precision_status": "target_band",
       "huge_gap": false,
-      "labs": [],
-      "top_properties": [],
-      "diagnostic": "NeuroLab authority scalar sign disagrees with Lean rollup domain; likely observed=false/CHAOS params \u2014 weather sim uses observed=true D_eff=15."
+      "labs": [
+        {
+          "lab": "seismology_lab",
+          "record_count": 500,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 100.0,
+          "within_2pct": 481,
+          "within_5pct": 481
+        },
+        {
+          "lab": "tectonics_lab",
+          "record_count": 500,
+          "median_error_pct": 0.0,
+          "p90_error_pct": 0.0,
+          "max_error_pct": 100.0,
+          "within_2pct": 484,
+          "within_5pct": 484
+        }
+      ],
+      "top_properties": [
+        {
+          "property": "crustal_plate_margin_classifier",
+          "records": 500,
+          "median_error_pct": 0.0
+        },
+        {
+          "property": "shallow_earthquake_classifier",
+          "records": 500,
+          "median_error_pct": 0.0
+        }
+      ],
+      "diagnostic": "Dual-mode OK: authority=dispersal vs empirical=stability; numeric records align with empirical lean rollup."
     },
     {
       "neurolab_domain": "Sociology",
@@ -1956,15 +2464,33 @@
       "neurolab_scalar_sign": "positive",
       "lean_sign_positive": true,
       "sign_mismatch": false,
-      "record_count": 10,
-      "median_error_pct": -0.0007873774796219538,
-      "p90_error_pct": 0.0005995452654275573,
-      "max_error_pct": 0.002670068252275115,
-      "within_2pct": 10,
-      "within_5pct": 10,
+      "record_count": 410,
+      "median_error_pct": 0.019504399572474972,
+      "p90_error_pct": 0.01950439957248393,
+      "max_error_pct": 0.019504399572488593,
+      "within_2pct": 410,
+      "within_5pct": 410,
       "precision_status": "target_band",
       "huge_gap": false,
       "labs": [
+        {
+          "lab": "openalex_sociology_lab",
+          "record_count": 200,
+          "median_error_pct": 0.019504399572475243,
+          "p90_error_pct": 0.01950439957248393,
+          "max_error_pct": 0.019504399572488593,
+          "within_2pct": 200,
+          "within_5pct": 200
+        },
+        {
+          "lab": "world_bank_sociology_lab",
+          "record_count": 200,
+          "median_error_pct": 0.019504399572475243,
+          "p90_error_pct": 0.01950439957248393,
+          "max_error_pct": 0.019504399572488593,
+          "within_2pct": 200,
+          "within_5pct": 200
+        },
         {
           "lab": "linguistics_lab",
           "record_count": 10,
@@ -1976,6 +2502,16 @@
         }
       ],
       "top_properties": [
+        {
+          "property": "cited_by_count",
+          "records": 300,
+          "median_error_pct": 0.019504399572477397
+        },
+        {
+          "property": "population_total",
+          "records": 100,
+          "median_error_pct": 0.01300293304831265
+        },
         {
           "property": "unknown",
           "records": 10,
@@ -1993,10 +2529,10 @@
       "lean_sign_positive": true,
       "sign_mismatch": false,
       "record_count": 89,
-      "median_error_pct": 0.293812,
-      "p90_error_pct": 1.485817,
-      "max_error_pct": 2.556852,
-      "within_2pct": 86,
+      "median_error_pct": 0.075499,
+      "p90_error_pct": 0.678359,
+      "max_error_pct": 0.938413,
+      "within_2pct": 89,
       "within_5pct": 89,
       "precision_status": "target_band",
       "huge_gap": false,
@@ -2013,10 +2549,10 @@
         {
           "lab": "thermodynamics_smiles",
           "record_count": 83,
-          "median_error_pct": 0.384277,
-          "p90_error_pct": 1.485817,
-          "max_error_pct": 2.556852,
-          "within_2pct": 80,
+          "median_error_pct": 0.112001,
+          "p90_error_pct": 0.678359,
+          "max_error_pct": 0.938413,
+          "within_2pct": 83,
           "within_5pct": 83
         }
       ],

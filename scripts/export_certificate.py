@@ -82,6 +82,7 @@ LEAN_TARGETS = [
     "FSOT.Formal.ThesisSimulationPriors",
     "FSOT.Formal.EmergentDomainPriors",
     "FSOT.Formal.CosmologyExtendedPriors",
+    "FSOT.Formal.BubbleBleedPriors",
     "FSOT.Formal.ParticlePhysicsPriors",
     "FSOT.Formal.CosmologyHigherWavesPriors",
     "FSOT.Formal.CosmologyWave4Priors",

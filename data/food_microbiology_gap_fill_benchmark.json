@@ -1,0 +1,361 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:31:47.834506+00:00",
+  "domain": "Food_Microbiology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "fermentation_reference",
+    "culinary_arts"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "medical"
+  ],
+  "D_eff": 14,
+  "record_count": 30,
+  "observable_count": 30,
+  "median_error_pct": 0.04447250077037743,
+  "pooled_median_error_pct": 0.04447250077037743,
+  "headline_median_error_pct": 0.04447250077037743,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "food_microbiology": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "Fermentation kinetic tables"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fermentation_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.044473,
+      "measured": 0.0,
+      "error_pct": 0.04447250077037743,
+      "observable_count": 30
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fermentation",
+      "name": "food_microbiology",
+      "computed": 0.044473,
+      "measured": 0.0,
+      "error_pct": 0.04447250077037743,
+      "observable_count": 30
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "yogurt_lactobacillus",
+      "computed": 42.018678,
+      "measured": 42.0,
+      "error_pct": 0.044472500770370835,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "yogurt_lactobacillus",
+      "computed": 4.502001,
+      "measured": 4.5,
+      "error_pct": 0.04447250077037366,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "yogurt_lactobacillus",
+      "computed": 2.000889,
+      "measured": 2.0,
+      "error_pct": 0.04447250077037612,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "sourdough_starter",
+      "computed": 27.012008,
+      "measured": 27.0,
+      "error_pct": 0.04447250077038024,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "sourdough_starter",
+      "computed": 4.201868,
+      "measured": 4.2,
+      "error_pct": 0.04447250077037929,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "sourdough_starter",
+      "computed": 8.003558,
+      "measured": 8.0,
+      "error_pct": 0.04447250077037612,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "kimchi_lacto",
+      "computed": 18.008005,
+      "measured": 18.0,
+      "error_pct": 0.04447250077037366,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "kimchi_lacto",
+      "computed": 4.401957,
+      "measured": 4.4,
+      "error_pct": 0.04447250077038217,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "kimchi_lacto",
+      "computed": 12.005337,
+      "measured": 12.0,
+      "error_pct": 0.04447250077038352,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "kombucha",
+      "computed": 26.011563,
+      "measured": 26.0,
+      "error_pct": 0.04447250077038124,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "kombucha",
+      "computed": 3.201423,
+      "measured": 3.2,
+      "error_pct": 0.04447250077037335,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "kombucha",
+      "computed": 3.001334,
+      "measured": 3.0,
+      "error_pct": 0.04447250077038352,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "beer_ale_fermentation",
+      "computed": 20.008895,
+      "measured": 20.0,
+      "error_pct": 0.04447250077037168,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "beer_ale_fermentation",
+      "computed": 4.301912,
+      "measured": 4.3,
+      "error_pct": 0.044472500770370446,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "beer_ale_fermentation",
+      "computed": 6.002668,
+      "measured": 6.0,
+      "error_pct": 0.04447250077038352,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "wine_primary",
+      "computed": 22.009784,
+      "measured": 22.0,
+      "error_pct": 0.044472500770370064,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "wine_primary",
+      "computed": 3.401512,
+      "measured": 3.4,
+      "error_pct": 0.04447250077037743,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "wine_primary",
+      "computed": 24.010673,
+      "measured": 24.0,
+      "error_pct": 0.04447250077038352,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "bake_temperature_C",
+      "name": "banana_bread:bake_temperature_C",
+      "recipe_id": "banana_bread",
+      "category": "quick_bread",
+      "computed": 175.083327,
+      "measured": 175.0,
+      "error_pct": 0.047615187057821064,
+      "source": "culinary_process_bridge",
+      "unit": "C"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "bake_time_min",
+      "name": "banana_bread:bake_time_min",
+      "recipe_id": "banana_bread",
+      "category": "quick_bread",
+      "computed": 58.027617,
+      "measured": 58.0,
+      "error_pct": 0.047615187057828696,
+      "source": "culinary_process_bridge",
+      "unit": "min"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "banana_mass_fraction",
+      "name": "banana_bread:banana_mass_fraction",
+      "recipe_id": "banana_bread",
+      "category": "quick_bread",
+      "computed": 0.340081,
+      "measured": 0.34,
+      "error_pct": 0.023807593528905633,
+      "source": "culinary_process_bridge",
+      "unit": "mass_fraction"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "final_moisture_pct",
+      "name": "banana_bread:final_moisture_pct",
+      "recipe_id": "banana_bread",
+      "category": "quick_bread",
+      "computed": 28.506785,
+      "measured": 28.5,
+      "error_pct": 0.023807593528913595,
+      "source": "culinary_process_bridge",
+      "unit": "pct"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "bake_temperature_C",
+      "name": "zucchini_bread:bake_temperature_C",
+      "recipe_id": "zucchini_bread",
+      "category": "quick_bread",
+      "computed": 175.083327,
+      "measured": 175.0,
+      "error_pct": 0.047615187057821064,
+      "source": "culinary_process_bridge",
+      "unit": "C"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "bake_time_min",
+      "name": "zucchini_bread:bake_time_min",
+      "recipe_id": "zucchini_bread",
+      "category": "quick_bread",
+      "computed": 52.02476,
+      "measured": 52.0,
+      "error_pct": 0.047615187057832464,
+      "source": "culinary_process_bridge",
+      "unit": "min"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "zucchini_mass_fraction",
+      "name": "zucchini_bread:zucchini_mass_fraction",
+      "recipe_id": "zucchini_bread",
+      "category": "quick_bread",
+      "computed": 0.290069,
+      "measured": 0.29,
+      "error_pct": 0.023807593528919712,
+      "source": "culinary_process_bridge",
+      "unit": "mass_fraction"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "final_moisture_pct",
+      "name": "zucchini_bread:final_moisture_pct",
+      "recipe_id": "zucchini_bread",
+      "category": "quick_bread",
+      "computed": 26.00619,
+      "measured": 26.0,
+      "error_pct": 0.023807593528916232,
+      "source": "culinary_process_bridge",
+      "unit": "pct"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "bake_temperature_C",
+      "name": "pumpkin_bread:bake_temperature_C",
+      "recipe_id": "pumpkin_bread",
+      "category": "quick_bread",
+      "computed": 175.083327,
+      "measured": 175.0,
+      "error_pct": 0.047615187057821064,
+      "source": "culinary_process_bridge",
+      "unit": "C"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "bake_time_min",
+      "name": "pumpkin_bread:bake_time_min",
+      "recipe_id": "pumpkin_bread",
+      "category": "quick_bread",
+      "computed": 60.028569,
+      "measured": 60.0,
+      "error_pct": 0.04761518705781972,
+      "source": "culinary_process_bridge",
+      "unit": "min"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "pumpkin_mass_fraction",
+      "name": "pumpkin_bread:pumpkin_mass_fraction",
+      "recipe_id": "pumpkin_bread",
+      "category": "quick_bread",
+      "computed": 0.310074,
+      "measured": 0.31,
+      "error_pct": 0.023807593528913533,
+      "source": "culinary_process_bridge",
+      "unit": "mass_fraction"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "final_moisture_pct",
+      "name": "pumpkin_bread:final_moisture_pct",
+      "recipe_id": "pumpkin_bread",
+      "category": "quick_bread",
+      "computed": 27.206476,
+      "measured": 27.2,
+      "error_pct": 0.02380759352891543,
+      "source": "culinary_process_bridge",
+      "unit": "pct"
+    }
+  ]
+}

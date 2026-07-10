@@ -59,13 +59,18 @@ def build(manifest_path: Path = MANIFEST) -> dict:
     s_em_ref = float(src["magnetic_S_em"])
     kp_scalar_mult = float(src.get("kp_scalar_multiplier", 0.35))
     primary_resolution = str(src.get("kp_primary_resolution", "interpolated_1h"))
+    classifier_mode = str(spec.get("classifier_mode") or "union")
+    union_classifier = classifier_mode == "union"
 
     sys.path.insert(0, str(ROOT / "scripts"))
     from fsot_canonical_adapter import load_fsot_compute  # noqa: E402
     from magnetosphere_timeline import (  # noqa: E402
+        coupled_dst_kp_storm_predicted,
+        dst_storm_predicted,
         kp_interpolated_1h,
         kp_rolling_max,
         kp_slot_3h,
+        kp_storm_predicted,
     )
 
     mod, authority_path = load_fsot_compute()
@@ -103,7 +108,15 @@ def build(manifest_path: Path = MANIFEST) -> dict:
                 continue
             kp_val = _kp_value(tag, mode)
             observed_storm = float(dst) <= dst_thr or kp_val >= kp_thr
-            predicted_storm = float(dst) <= adj_dst or kp_val >= adj_kp
+            predicted_storm = coupled_dst_kp_storm_predicted(
+                float(dst),
+                kp_val,
+                dst_thr=dst_thr,
+                adj_dst=adj_dst,
+                kp_thr=kp_thr,
+                adj_kp=adj_kp,
+                union_classifier=union_classifier,
+            )
             match = observed_storm == predicted_storm
             mode_records.append(
                 {
@@ -130,7 +143,9 @@ def build(manifest_path: Path = MANIFEST) -> dict:
         kp_val = _kp_value(tag, primary_resolution)
 
         dst_obs = float(dst) <= dst_thr
-        dst_pred = float(dst) <= adj_dst
+        dst_pred = dst_storm_predicted(
+            float(dst), dst_thr=dst_thr, adj_dst=adj_dst, union_classifier=union_classifier
+        )
         channel_records["dst_channel"].append(
             {
                 "name": tag,
@@ -141,7 +156,9 @@ def build(manifest_path: Path = MANIFEST) -> dict:
         )
 
         kp_obs = kp_val >= kp_thr
-        kp_pred = kp_val >= adj_kp
+        kp_pred = kp_storm_predicted(
+            kp_val, kp_thr=kp_thr, adj_kp=adj_kp, union_classifier=union_classifier
+        )
         channel_records["kp_channel"].append(
             {
                 "name": tag,
@@ -153,7 +170,15 @@ def build(manifest_path: Path = MANIFEST) -> dict:
         )
 
         coupled_obs = dst_obs or kp_obs
-        coupled_fsot = float(dst) <= adj_dst or kp_val >= adj_kp
+        coupled_fsot = coupled_dst_kp_storm_predicted(
+            float(dst),
+            kp_val,
+            dst_thr=dst_thr,
+            adj_dst=adj_dst,
+            kp_thr=kp_thr,
+            adj_kp=adj_kp,
+            union_classifier=union_classifier,
+        )
         channel_records["coupled_fsot"].append(
             {
                 "name": tag,
@@ -180,10 +205,11 @@ def build(manifest_path: Path = MANIFEST) -> dict:
     overlap_end = max(dst_tags) if dst_tags else None
 
     return {
-        "benchmark_version": "1.1",
+        "benchmark_version": "1.2",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "authority_path": str(authority_path),
         "source": "geomagnetism_x_space_weather_x_magnetic_string",
+        "classifier_mode": classifier_mode,
         "record_count": len(records),
         "observable_count": len(records),
         "stability_match_count": matches,

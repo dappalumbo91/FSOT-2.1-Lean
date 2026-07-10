@@ -1,0 +1,3841 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.503880+00:00",
+  "domain": "Mycology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "GBIF_Fungi",
+    "food_microbiology_bridge"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "ecological"
+  ],
+  "D_eff": 14,
+  "record_count": 420,
+  "observable_count": 420,
+  "median_error_pct": 0.022236250385193498,
+  "pooled_median_error_pct": 0.022236250385193498,
+  "headline_median_error_pct": 0.022236250385193498,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "mycology_gbif": {
+        "sota_typical_error_pct": 7.0,
+        "sota_model": "GBIF fungal occurrence QA"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fungal_occurrence_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236250385193498,
+      "observable_count": 420
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fungal_occurrence",
+      "name": "mycology_gbif",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236250385193498,
+      "observable_count": 420
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Tremella mesenterica",
+      "computed": 59.364137,
+      "measured": 59.35094,
+      "error_pct": 0.022236250385199063,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Tremella mesenterica",
+      "computed": 18.144507,
+      "measured": 18.14128,
+      "error_pct": 0.017789000308146598,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitopsis betulina",
+      "computed": 55.534436,
+      "measured": 55.52209,
+      "error_pct": 0.02223625038520384,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitopsis betulina",
+      "computed": 13.249367,
+      "measured": 13.24701,
+      "error_pct": 0.017789000308149033,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Glaucomaria carpinea",
+      "computed": 56.593782,
+      "measured": 56.5812,
+      "error_pct": 0.02223625038519798,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Glaucomaria carpinea",
+      "computed": 16.420411,
+      "measured": 16.41749,
+      "error_pct": 0.01778900030814985,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phellinus lundellii",
+      "computed": 59.753774,
+      "measured": 59.74049,
+      "error_pct": 0.022236250385204846,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phellinus lundellii",
+      "computed": 17.779432,
+      "measured": 17.77627,
+      "error_pct": 0.017789000308146712,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Puccinia phragmitis",
+      "computed": 58.033132,
+      "measured": 58.02023,
+      "error_pct": 0.022236250385199025,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Puccinia phragmitis",
+      "computed": 14.959221,
+      "measured": 14.95656,
+      "error_pct": 0.017789000308155056,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Physcia adscendens",
+      "computed": 58.033132,
+      "measured": 58.02023,
+      "error_pct": 0.022236250385199025,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Physcia adscendens",
+      "computed": 14.959221,
+      "measured": 14.95656,
+      "error_pct": 0.017789000308155056,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lepraria incana",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lepraria incana",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Tremella mesenterica",
+      "computed": 57.418305,
+      "measured": 57.40554,
+      "error_pct": 0.02223625038519747,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Tremella mesenterica",
+      "computed": 12.025129,
+      "measured": 12.02299,
+      "error_pct": 0.017789000308160288,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Parmelia sulcata",
+      "computed": 59.873741,
+      "measured": 59.86043,
+      "error_pct": 0.022236250385202865,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Parmelia sulcata",
+      "computed": 17.579237,
+      "measured": 17.57611,
+      "error_pct": 0.017789000308154775,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lophodermium piceae",
+      "computed": 57.375655,
+      "measured": 57.3629,
+      "error_pct": 0.022236250385200496,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lophodermium piceae",
+      "computed": 11.959727,
+      "measured": 11.9576,
+      "error_pct": 0.017789000308153884,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Exidia recisa",
+      "computed": 57.477308,
+      "measured": 57.46453,
+      "error_pct": 0.022236250385196332,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Exidia recisa",
+      "computed": 12.066156,
+      "measured": 12.06401,
+      "error_pct": 0.017789000308156104,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Stereum hirsutum",
+      "computed": 59.290411,
+      "measured": 59.27723,
+      "error_pct": 0.022236250385202144,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Stereum hirsutum",
+      "computed": 15.57394,
+      "measured": 15.57117,
+      "error_pct": 0.017789000308158838,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Exidia glandulosa",
+      "computed": 59.366598,
+      "measured": 59.3534,
+      "error_pct": 0.022236250385197512,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Exidia glandulosa",
+      "computed": 18.164781,
+      "measured": 18.16155,
+      "error_pct": 0.01778900030816036,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Evernia prunastri",
+      "computed": 58.041193,
+      "measured": 58.02829,
+      "error_pct": 0.0222362503852016,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Evernia prunastri",
+      "computed": 14.959531,
+      "measured": 14.95687,
+      "error_pct": 0.017789000308150612,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Anaptychia ciliaris",
+      "computed": 63.590437,
+      "measured": 63.5763,
+      "error_pct": 0.022236250385195142,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Anaptychia ciliaris",
+      "computed": 19.68096,
+      "measured": 19.67746,
+      "error_pct": 0.0177890003081483,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 61.543202,
+      "measured": 61.52952,
+      "error_pct": 0.02223625038519656,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 15.153235,
+      "measured": 15.15054,
+      "error_pct": 0.01778900030815854,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Ramalina fastigiata",
+      "computed": 56.593782,
+      "measured": 56.5812,
+      "error_pct": 0.02223625038519798,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Ramalina fastigiata",
+      "computed": 16.420411,
+      "measured": 16.41749,
+      "error_pct": 0.01778900030814985,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Clitocybe nebularis",
+      "computed": 55.547439,
+      "measured": 55.53509,
+      "error_pct": 0.0222362503851929,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Clitocybe nebularis",
+      "computed": 13.250137,
+      "measured": 13.24778,
+      "error_pct": 0.01778900030816123,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Pleurocybella porrigens",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Pleurocybella porrigens",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Xanthoporia radiata",
+      "computed": 59.366598,
+      "measured": 59.3534,
+      "error_pct": 0.022236250385197512,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Xanthoporia radiata",
+      "computed": 18.164781,
+      "measured": 18.16155,
+      "error_pct": 0.01778900030816036,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Physcia tenella",
+      "computed": 59.172295,
+      "measured": 59.15914,
+      "error_pct": 0.022236250385197557,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Physcia tenella",
+      "computed": 16.477881,
+      "measured": 16.47495,
+      "error_pct": 0.017789000308151996,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Trichaptum fuscoviolaceum",
+      "computed": 59.053628,
+      "measured": 59.0405,
+      "error_pct": 0.02223625038519491,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Trichaptum fuscoviolaceum",
+      "computed": 16.8103,
+      "measured": 16.80731,
+      "error_pct": 0.017789000308153658,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Sclerophora pallida",
+      "computed": 59.855657,
+      "measured": 59.84235,
+      "error_pct": 0.022236250385197658,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Sclerophora pallida",
+      "computed": 17.568605,
+      "measured": 17.56548,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lycoperdon lividum",
+      "computed": 56.6318,
+      "measured": 56.61921,
+      "error_pct": 0.02223625038520211,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lycoperdon lividum",
+      "computed": 16.647781,
+      "measured": 16.64482,
+      "error_pct": 0.017789000308159015,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Corticium erikssonii",
+      "computed": 59.289801,
+      "measured": 59.27662,
+      "error_pct": 0.022236250385197123,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Corticium erikssonii",
+      "computed": 15.5721,
+      "measured": 15.56933,
+      "error_pct": 0.017789000308157308,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Hymenochaete ulmicola",
+      "computed": 59.814418,
+      "measured": 59.80112,
+      "error_pct": 0.02223625038520272,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Hymenochaete ulmicola",
+      "computed": 17.664282,
+      "measured": 17.66114,
+      "error_pct": 0.01778900030815756,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Hypogymnia physodes",
+      "computed": 61.528929,
+      "measured": 61.51525,
+      "error_pct": 0.022236250385196922,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Hypogymnia physodes",
+      "computed": 15.161877,
+      "measured": 15.15918,
+      "error_pct": 0.017789000308150123,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Mycenastrum corium",
+      "computed": 56.599123,
+      "measured": 56.58654,
+      "error_pct": 0.02223625038519568,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Mycenastrum corium",
+      "computed": 16.41611,
+      "measured": 16.41319,
+      "error_pct": 0.017789000308155046,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Bryoria capillaris",
+      "computed": 61.528929,
+      "measured": 61.51525,
+      "error_pct": 0.022236250385196922,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Bryoria capillaris",
+      "computed": 15.161877,
+      "measured": 15.15918,
+      "error_pct": 0.017789000308150123,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lecidella elaeochroma",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lecidella elaeochroma",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitopsis pinicola",
+      "computed": 56.76779,
+      "measured": 56.75517,
+      "error_pct": 0.022236250385193133,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitopsis pinicola",
+      "computed": 15.875744,
+      "measured": 15.87292,
+      "error_pct": 0.017789000308155146,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Candelariella xanthostigma",
+      "computed": 56.805309,
+      "measured": 56.79268,
+      "error_pct": 0.022236250385199108,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Candelariella xanthostigma",
+      "computed": 12.885752,
+      "measured": 12.88346,
+      "error_pct": 0.01778900030815388,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Trametes hirsuta",
+      "computed": 59.364137,
+      "measured": 59.35094,
+      "error_pct": 0.022236250385199063,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Trametes hirsuta",
+      "computed": 18.144507,
+      "measured": 18.14128,
+      "error_pct": 0.017789000308146598,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Coniophora puteana",
+      "computed": 59.342063,
+      "measured": 59.32887,
+      "error_pct": 0.022236250385203184,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Coniophora puteana",
+      "computed": 18.130815,
+      "measured": 18.12759,
+      "error_pct": 0.017789000308155504,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phellinopsis conchata",
+      "computed": 59.437834,
+      "measured": 59.42462,
+      "error_pct": 0.022236250385198487,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phellinopsis conchata",
+      "computed": 16.489493,
+      "measured": 16.48656,
+      "error_pct": 0.017789000308157422,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Sarcomyxa serotina",
+      "computed": 56.831564,
+      "measured": 56.81893,
+      "error_pct": 0.022236250385201807,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Sarcomyxa serotina",
+      "computed": 14.766506,
+      "measured": 14.76388,
+      "error_pct": 0.017789000308155892,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitopsis pinicola",
+      "computed": 58.041193,
+      "measured": 58.02829,
+      "error_pct": 0.0222362503852016,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitopsis pinicola",
+      "computed": 14.959531,
+      "measured": 14.95687,
+      "error_pct": 0.017789000308150612,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Hapalopilus rutilans",
+      "computed": 59.364137,
+      "measured": 59.35094,
+      "error_pct": 0.022236250385199063,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Hapalopilus rutilans",
+      "computed": 18.144507,
+      "measured": 18.14128,
+      "error_pct": 0.017789000308146598,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Szczepkamyces campestris",
+      "computed": 59.28483,
+      "measured": 59.27165,
+      "error_pct": 0.022236250385200405,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Szczepkamyces campestris",
+      "computed": 18.127064,
+      "measured": 18.12384,
+      "error_pct": 0.017789000308151177,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Evernia prunastri",
+      "computed": 56.593782,
+      "measured": 56.5812,
+      "error_pct": 0.02223625038519798,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Evernia prunastri",
+      "computed": 16.420411,
+      "measured": 16.41749,
+      "error_pct": 0.01778900030814985,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phlebia radiata",
+      "computed": 59.364007,
+      "measured": 59.35081,
+      "error_pct": 0.022236250385201918,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phlebia radiata",
+      "computed": 18.149988,
+      "measured": 18.14676,
+      "error_pct": 0.017789000308148166,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Xylodon radula",
+      "computed": 59.364137,
+      "measured": 59.35094,
+      "error_pct": 0.022236250385199063,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Xylodon radula",
+      "computed": 18.144507,
+      "measured": 18.14128,
+      "error_pct": 0.017789000308146598,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Xylaria hypoxylon",
+      "computed": 55.68691,
+      "measured": 55.67453,
+      "error_pct": 0.022236250385193574,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Xylaria hypoxylon",
+      "computed": 13.334372,
+      "measured": 13.332,
+      "error_pct": 0.01778900030814954,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Geastrum quadrifidum",
+      "computed": 56.6318,
+      "measured": 56.61921,
+      "error_pct": 0.02223625038520211,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Geastrum quadrifidum",
+      "computed": 16.647781,
+      "measured": 16.64482,
+      "error_pct": 0.017789000308159015,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Geastrum striatum",
+      "computed": 56.6318,
+      "measured": 56.61921,
+      "error_pct": 0.02223625038520211,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Geastrum striatum",
+      "computed": 16.647781,
+      "measured": 16.64482,
+      "error_pct": 0.017789000308159015,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Stereum hirsutum",
+      "computed": 56.605434,
+      "measured": 56.59285,
+      "error_pct": 0.022236250385204832,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Stereum hirsutum",
+      "computed": 16.41626,
+      "measured": 16.41334,
+      "error_pct": 0.01778900030816216,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Tremella mesenterica",
+      "computed": 56.242363,
+      "measured": 56.22986,
+      "error_pct": 0.022236250385195236,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Tremella mesenterica",
+      "computed": 12.681666,
+      "measured": 12.67941,
+      "error_pct": 0.017789000308154116,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Stereum hirsutum",
+      "computed": 56.827193,
+      "measured": 56.81456,
+      "error_pct": 0.02223625038520301,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Stereum hirsutum",
+      "computed": 14.765916,
+      "measured": 14.76329,
+      "error_pct": 0.01778900030815204,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Ramalina fraxinea",
+      "computed": 59.873111,
+      "measured": 59.8598,
+      "error_pct": 0.022236250385195586,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Ramalina fraxinea",
+      "computed": 17.578697,
+      "measured": 17.57557,
+      "error_pct": 0.017789000308147018,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 59.279359,
+      "measured": 59.26618,
+      "error_pct": 0.022236250385193477,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 18.124674,
+      "measured": 18.12145,
+      "error_pct": 0.017789000308149096,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Abrothallus suecicus",
+      "computed": 55.719157,
+      "measured": 55.70677,
+      "error_pct": 0.022236250385204288,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Abrothallus suecicus",
+      "computed": 13.185025,
+      "measured": 13.18268,
+      "error_pct": 0.01778900030815549,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Porodaedalea pini",
+      "computed": 59.364137,
+      "measured": 59.35094,
+      "error_pct": 0.022236250385199063,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Porodaedalea pini",
+      "computed": 18.144507,
+      "measured": 18.14128,
+      "error_pct": 0.017789000308146598,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phellinus igniarius",
+      "computed": 55.539677,
+      "measured": 55.52733,
+      "error_pct": 0.02223625038520187,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phellinus igniarius",
+      "computed": 13.258578,
+      "measured": 13.25622,
+      "error_pct": 0.01778900030814878,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Hypogymnia physodes",
+      "computed": 59.172295,
+      "measured": 59.15914,
+      "error_pct": 0.022236250385197557,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Hypogymnia physodes",
+      "computed": 16.477881,
+      "measured": 16.47495,
+      "error_pct": 0.017789000308151996,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Dacrymyces stillatus",
+      "computed": 56.603994,
+      "measured": 56.59141,
+      "error_pct": 0.02223625038520517,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Dacrymyces stillatus",
+      "computed": 16.41707,
+      "measured": 16.41415,
+      "error_pct": 0.017789000308152978,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Jackrogersella cohaerens",
+      "computed": 55.534436,
+      "measured": 55.52209,
+      "error_pct": 0.02223625038520384,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Jackrogersella cohaerens",
+      "computed": 13.249367,
+      "measured": 13.24701,
+      "error_pct": 0.017789000308149033,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Sclerophora farinacea",
+      "computed": 59.855267,
+      "measured": 59.84196,
+      "error_pct": 0.022236250385194282,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Sclerophora farinacea",
+      "computed": 17.572775,
+      "measured": 17.56965,
+      "error_pct": 0.017789000308148808,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Peniophora incarnata",
+      "computed": 59.366598,
+      "measured": 59.3534,
+      "error_pct": 0.022236250385197512,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Peniophora incarnata",
+      "computed": 18.164781,
+      "measured": 18.16155,
+      "error_pct": 0.01778900030816036,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Infundibulicybe geotropa",
+      "computed": 56.594952,
+      "measured": 56.58237,
+      "error_pct": 0.022236250385196138,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Infundibulicybe geotropa",
+      "computed": 16.412669,
+      "measured": 16.40975,
+      "error_pct": 0.017789000308146213,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Chondrostereum purpureum",
+      "computed": 56.785004,
+      "measured": 56.77238,
+      "error_pct": 0.022236250385199354,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Chondrostereum purpureum",
+      "computed": 14.615189,
+      "measured": 14.61259,
+      "error_pct": 0.017789000308159247,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phellinus pomaceus",
+      "computed": 55.613804,
+      "measured": 55.60144,
+      "error_pct": 0.022236250385197064,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phellinus pomaceus",
+      "computed": 12.995381,
+      "measured": 12.99307,
+      "error_pct": 0.017789000308160916,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phellinus tremulae",
+      "computed": 59.053628,
+      "measured": 59.0405,
+      "error_pct": 0.02223625038519491,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phellinus tremulae",
+      "computed": 16.8103,
+      "measured": 16.80731,
+      "error_pct": 0.017789000308153658,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitopsis pinicola",
+      "computed": 56.5877,
+      "measured": 56.57512,
+      "error_pct": 0.02223625038519802,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitopsis pinicola",
+      "computed": 16.422951,
+      "measured": 16.42003,
+      "error_pct": 0.017789000308159258,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Flammulina velutipes",
+      "computed": 55.64312,
+      "measured": 55.63075,
+      "error_pct": 0.0222362503851959,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Flammulina velutipes",
+      "computed": 14.250575,
+      "measured": 14.24804,
+      "error_pct": 0.01778900030815079,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Hypogymnia physodes",
+      "computed": 58.041193,
+      "measured": 58.02829,
+      "error_pct": 0.0222362503852016,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Hypogymnia physodes",
+      "computed": 14.959531,
+      "measured": 14.95687,
+      "error_pct": 0.017789000308150612,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomes fomentarius",
+      "computed": 58.033132,
+      "measured": 58.02023,
+      "error_pct": 0.022236250385199025,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomes fomentarius",
+      "computed": 14.959221,
+      "measured": 14.95656,
+      "error_pct": 0.017789000308155056,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Trametes ochracea",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Trametes ochracea",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Inonotus ulmicola",
+      "computed": 59.855247,
+      "measured": 59.84194,
+      "error_pct": 0.02223625038520385,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Inonotus ulmicola",
+      "computed": 17.569525,
+      "measured": 17.5664,
+      "error_pct": 0.017789000308159764,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 59.132626,
+      "measured": 59.11948,
+      "error_pct": 0.022236250385199482,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 15.390107,
+      "measured": 15.38737,
+      "error_pct": 0.017789000308156614,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Cylindrobasidium evolvens",
+      "computed": 59.289801,
+      "measured": 59.27662,
+      "error_pct": 0.022236250385197123,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Cylindrobasidium evolvens",
+      "computed": 15.5721,
+      "measured": 15.56933,
+      "error_pct": 0.017789000308157308,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Porodaedalea pini",
+      "computed": 59.873391,
+      "measured": 59.86008,
+      "error_pct": 0.022236250385204097,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Porodaedalea pini",
+      "computed": 17.578286,
+      "measured": 17.57516,
+      "error_pct": 0.01778900030815984,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Evernia prunastri",
+      "computed": 59.854586,
+      "measured": 59.84128,
+      "error_pct": 0.02223625038519905,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Evernia prunastri",
+      "computed": 17.569175,
+      "measured": 17.56605,
+      "error_pct": 0.01778900030815099,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Flammulina velutipes",
+      "computed": 59.753774,
+      "measured": 59.74049,
+      "error_pct": 0.022236250385204846,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Flammulina velutipes",
+      "computed": 17.779432,
+      "measured": 17.77627,
+      "error_pct": 0.017789000308146712,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Xanthoria parietina",
+      "computed": 55.562122,
+      "measured": 55.54977,
+      "error_pct": 0.022236250385198615,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Xanthoria parietina",
+      "computed": 12.912877,
+      "measured": 12.91058,
+      "error_pct": 0.01778900030815535,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Taphrina betulina",
+      "computed": 63.705223,
+      "measured": 63.69106,
+      "error_pct": 0.022236250385201512,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Taphrina betulina",
+      "computed": 20.302871,
+      "measured": 20.29926,
+      "error_pct": 0.01778900030816241,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Pithya cupressina",
+      "computed": 55.710495,
+      "measured": 55.69811,
+      "error_pct": 0.022236250385203882,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Pithya cupressina",
+      "computed": 13.188466,
+      "measured": 13.18612,
+      "error_pct": 0.01778900030815301,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Auricularia mesenterica",
+      "computed": 59.814418,
+      "measured": 59.80112,
+      "error_pct": 0.02223625038520272,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Auricularia mesenterica",
+      "computed": 17.664282,
+      "measured": 17.66114,
+      "error_pct": 0.01778900030815756,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phlyctis argena",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phlyctis argena",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phlebia radiata",
+      "computed": 56.593772,
+      "measured": 56.58119,
+      "error_pct": 0.022236250385203046,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phlebia radiata",
+      "computed": 16.420671,
+      "measured": 16.41775,
+      "error_pct": 0.01778900030815064,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Hyphodiscus hymeniophilus",
+      "computed": 60.684851,
+      "measured": 60.67136,
+      "error_pct": 0.022236250385195017,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Hyphodiscus hymeniophilus",
+      "computed": 15.163887,
+      "measured": 15.16119,
+      "error_pct": 0.01778900030815496,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Evernia prunastri",
+      "computed": 58.07271,
+      "measured": 58.0598,
+      "error_pct": 0.022236250385204732,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Evernia prunastri",
+      "computed": 11.831064,
+      "measured": 11.82896,
+      "error_pct": 0.017789000308147614,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Steccherinum robustius",
+      "computed": 59.177146,
+      "measured": 59.16399,
+      "error_pct": 0.022236250385204305,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Steccherinum robustius",
+      "computed": 15.589883,
+      "measured": 15.58711,
+      "error_pct": 0.01778900030815832,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lecidella elaeochroma",
+      "computed": 59.855157,
+      "measured": 59.84185,
+      "error_pct": 0.022236250385199417,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lecidella elaeochroma",
+      "computed": 17.571215,
+      "measured": 17.56809,
+      "error_pct": 0.01778900030816458,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Flammulina velutipes",
+      "computed": 59.366598,
+      "measured": 59.3534,
+      "error_pct": 0.022236250385197512,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Flammulina velutipes",
+      "computed": 18.164781,
+      "measured": 18.16155,
+      "error_pct": 0.01778900030816036,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lobarina scrobiculata",
+      "computed": 58.041193,
+      "measured": 58.02829,
+      "error_pct": 0.0222362503852016,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lobarina scrobiculata",
+      "computed": 14.959531,
+      "measured": 14.95687,
+      "error_pct": 0.017789000308150612,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Chlorociboria aeruginascens",
+      "computed": 58.041193,
+      "measured": 58.02829,
+      "error_pct": 0.0222362503852016,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Chlorociboria aeruginascens",
+      "computed": 14.959531,
+      "measured": 14.95687,
+      "error_pct": 0.017789000308150612,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Carbonicola anthracophila",
+      "computed": 61.543592,
+      "measured": 61.52991,
+      "error_pct": 0.022236250385199843,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Carbonicola anthracophila",
+      "computed": 15.152685,
+      "measured": 15.14999,
+      "error_pct": 0.017789000308157624,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitopsis betulina",
+      "computed": 57.778945,
+      "measured": 57.7661,
+      "error_pct": 0.02223625038519358,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitopsis betulina",
+      "computed": 11.981491,
+      "measured": 11.97936,
+      "error_pct": 0.01778900030814903,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Cerioporus squamosus",
+      "computed": 55.547439,
+      "measured": 55.53509,
+      "error_pct": 0.0222362503851929,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Cerioporus squamosus",
+      "computed": 13.250137,
+      "measured": 13.24778,
+      "error_pct": 0.01778900030816123,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phellinus pomaceus",
+      "computed": 59.873231,
+      "measured": 59.85992,
+      "error_pct": 0.022236250385197536,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phellinus pomaceus",
+      "computed": 17.575076,
+      "measured": 17.57195,
+      "error_pct": 0.017789000308163137,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Flammulina velutipes",
+      "computed": 59.548979,
+      "measured": 59.53574,
+      "error_pct": 0.02223625038520146,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Flammulina velutipes",
+      "computed": 15.116309,
+      "measured": 15.11362,
+      "error_pct": 0.01778900030815376,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Ascocoryne sarcoides",
+      "computed": 56.599103,
+      "measured": 56.58652,
+      "error_pct": 0.022236250385193244,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Ascocoryne sarcoides",
+      "computed": 16.41657,
+      "measured": 16.41365,
+      "error_pct": 0.017789000308158113,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phlyctis argena",
+      "computed": 59.854586,
+      "measured": 59.84128,
+      "error_pct": 0.02223625038519905,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phlyctis argena",
+      "computed": 17.569175,
+      "measured": 17.56605,
+      "error_pct": 0.01778900030815099,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Panellus stipticus",
+      "computed": 59.178686,
+      "measured": 59.16553,
+      "error_pct": 0.022236250385203625,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Panellus stipticus",
+      "computed": 15.590353,
+      "measured": 15.58758,
+      "error_pct": 0.017789000308153693,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitiporia robusta",
+      "computed": 59.28491,
+      "measured": 59.27173,
+      "error_pct": 0.022236250385197723,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitiporia robusta",
+      "computed": 18.126164,
+      "measured": 18.12294,
+      "error_pct": 0.01778900030815171,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Gyalolechia fulgens",
+      "computed": 56.58765,
+      "measured": 56.57507,
+      "error_pct": 0.022236250385198206,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Gyalolechia fulgens",
+      "computed": 16.476,
+      "measured": 16.47307,
+      "error_pct": 0.017789000308147944,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Xanthoria parietina",
+      "computed": 57.477308,
+      "measured": 57.46453,
+      "error_pct": 0.022236250385196332,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Xanthoria parietina",
+      "computed": 12.066156,
+      "measured": 12.06401,
+      "error_pct": 0.017789000308156104,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phlyctis argena",
+      "computed": 57.534201,
+      "measured": 57.52141,
+      "error_pct": 0.02223625038519551,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phlyctis argena",
+      "computed": 12.559484,
+      "measured": 12.55725,
+      "error_pct": 0.017789000308151205,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Xylaria hypoxylon",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Xylaria hypoxylon",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Evernia prunastri",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Evernia prunastri",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Physcia adscendens",
+      "computed": 63.590357,
+      "measured": 63.57622,
+      "error_pct": 0.022236250385197644,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Physcia adscendens",
+      "computed": 19.682011,
+      "measured": 19.67851,
+      "error_pct": 0.017789000308153752,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Ischnoderma benzoinum",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Ischnoderma benzoinum",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lophodermium pinastri",
+      "computed": 57.363813,
+      "measured": 57.35106,
+      "error_pct": 0.02223625038520187,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lophodermium pinastri",
+      "computed": 12.002675,
+      "measured": 12.00054,
+      "error_pct": 0.01778900030815885,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Parmelia sulcata",
+      "computed": 56.593782,
+      "measured": 56.5812,
+      "error_pct": 0.02223625038519798,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Parmelia sulcata",
+      "computed": 16.420411,
+      "measured": 16.41749,
+      "error_pct": 0.01778900030814985,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 59.364137,
+      "measured": 59.35094,
+      "error_pct": 0.022236250385199063,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 18.144507,
+      "measured": 18.14128,
+      "error_pct": 0.017789000308146598,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phellinus tremulae",
+      "computed": 59.298773,
+      "measured": 59.28559,
+      "error_pct": 0.022236250385203597,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phellinus tremulae",
+      "computed": 15.166998,
+      "measured": 15.1643,
+      "error_pct": 0.017789000308149908,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Xanthoria parietina",
+      "computed": 59.873741,
+      "measured": 59.86043,
+      "error_pct": 0.022236250385202865,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Xanthoria parietina",
+      "computed": 17.579237,
+      "measured": 17.57611,
+      "error_pct": 0.017789000308154775,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Erythricium aurantiacum",
+      "computed": 59.319007,
+      "measured": 59.30582,
+      "error_pct": 0.022236250385201214,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Erythricium aurantiacum",
+      "computed": 18.133865,
+      "measured": 18.13064,
+      "error_pct": 0.017789000308162425,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Ramalina fraxinea",
+      "computed": 56.593782,
+      "measured": 56.5812,
+      "error_pct": 0.02223625038519798,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Ramalina fraxinea",
+      "computed": 16.420411,
+      "measured": 16.41749,
+      "error_pct": 0.01778900030814985,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Evernia prunastri",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Evernia prunastri",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Xanthoparmelia conspersa",
+      "computed": 56.58765,
+      "measured": 56.57507,
+      "error_pct": 0.022236250385198206,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Xanthoparmelia conspersa",
+      "computed": 16.476,
+      "measured": 16.47307,
+      "error_pct": 0.017789000308147944,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Trametes versicolor",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Trametes versicolor",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Chondrostereum purpureum",
+      "computed": 55.593729,
+      "measured": 55.58137,
+      "error_pct": 0.022236250385193883,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Chondrostereum purpureum",
+      "computed": 13.086197,
+      "measured": 13.08387,
+      "error_pct": 0.0177890003081533,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Stereum subtomentosum",
+      "computed": 59.366598,
+      "measured": 59.3534,
+      "error_pct": 0.022236250385197512,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Stereum subtomentosum",
+      "computed": 18.164781,
+      "measured": 18.16155,
+      "error_pct": 0.01778900030816036,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Sarcomyxa serotina",
+      "computed": 59.366598,
+      "measured": 59.3534,
+      "error_pct": 0.022236250385197512,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Sarcomyxa serotina",
+      "computed": 18.164781,
+      "measured": 18.16155,
+      "error_pct": 0.01778900030816036,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitopsis betulina",
+      "computed": 59.364137,
+      "measured": 59.35094,
+      "error_pct": 0.022236250385199063,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitopsis betulina",
+      "computed": 18.144507,
+      "measured": 18.14128,
+      "error_pct": 0.017789000308146598,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lecidella elaeochroma",
+      "computed": 56.593782,
+      "measured": 56.5812,
+      "error_pct": 0.02223625038519798,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lecidella elaeochroma",
+      "computed": 16.420411,
+      "measured": 16.41749,
+      "error_pct": 0.01778900030814985,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Meruliopsis taxicola",
+      "computed": 63.882522,
+      "measured": 63.86832,
+      "error_pct": 0.022236250385201915,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Meruliopsis taxicola",
+      "computed": 20.331566,
+      "measured": 20.32795,
+      "error_pct": 0.01778900030815241,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Xanthoria parietina",
+      "computed": 59.854586,
+      "measured": 59.84128,
+      "error_pct": 0.02223625038519905,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Xanthoria parietina",
+      "computed": 17.569175,
+      "measured": 17.56605,
+      "error_pct": 0.01778900030815099,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Porodaedalea pini",
+      "computed": 59.355616,
+      "measured": 59.34242,
+      "error_pct": 0.022236250385202973,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Porodaedalea pini",
+      "computed": 17.942571,
+      "measured": 17.93938,
+      "error_pct": 0.017789000308154203,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Flammulina velutipes",
+      "computed": 55.543568,
+      "measured": 55.53122,
+      "error_pct": 0.022236250385205023,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Flammulina velutipes",
+      "computed": 13.264589,
+      "measured": 13.26223,
+      "error_pct": 0.01778900030815705,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Taphrina betulina",
+      "computed": 58.044964,
+      "measured": 58.03206,
+      "error_pct": 0.0222362503852026,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Taphrina betulina",
+      "computed": 14.987256,
+      "measured": 14.98459,
+      "error_pct": 0.01778900030815936,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Physcia adscendens",
+      "computed": 55.59604,
+      "measured": 55.58368,
+      "error_pct": 0.022236250385192797,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Physcia adscendens",
+      "computed": 13.012344,
+      "measured": 13.01003,
+      "error_pct": 0.017789000308155813,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitopsis betulina",
+      "computed": 59.366598,
+      "measured": 59.3534,
+      "error_pct": 0.022236250385197512,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitopsis betulina",
+      "computed": 18.164781,
+      "measured": 18.16155,
+      "error_pct": 0.01778900030816036,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Trametes versicolor",
+      "computed": 56.418303,
+      "measured": 56.40576,
+      "error_pct": 0.022236250385193234,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Trametes versicolor",
+      "computed": 13.668111,
+      "measured": 13.66568,
+      "error_pct": 0.017789000308151483,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lyomyces sambuci",
+      "computed": 55.543568,
+      "measured": 55.53122,
+      "error_pct": 0.022236250385205023,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lyomyces sambuci",
+      "computed": 13.264589,
+      "measured": 13.26223,
+      "error_pct": 0.01778900030815705,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Physcia tenella",
+      "computed": 55.68888,
+      "measured": 55.6765,
+      "error_pct": 0.022236250385201436,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Physcia tenella",
+      "computed": 13.419347,
+      "measured": 13.41696,
+      "error_pct": 0.017789000308150945,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitopsis pinicola",
+      "computed": 57.534201,
+      "measured": 57.52141,
+      "error_pct": 0.02223625038519551,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitopsis pinicola",
+      "computed": 12.559484,
+      "measured": 12.55725,
+      "error_pct": 0.017789000308151205,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Usnea dasopoga",
+      "computed": 61.524378,
+      "measured": 61.5107,
+      "error_pct": 0.022236250385200957,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Usnea dasopoga",
+      "computed": 15.157286,
+      "measured": 15.15459,
+      "error_pct": 0.01778900030815569,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Parmelia sulcata",
+      "computed": 59.172295,
+      "measured": 59.15914,
+      "error_pct": 0.022236250385197557,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Parmelia sulcata",
+      "computed": 16.477881,
+      "measured": 16.47495,
+      "error_pct": 0.017789000308151996,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lophodermium pinastri",
+      "computed": 58.041193,
+      "measured": 58.02829,
+      "error_pct": 0.0222362503852016,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lophodermium pinastri",
+      "computed": 14.959531,
+      "measured": 14.95687,
+      "error_pct": 0.017789000308150612,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phellinus tremulae",
+      "computed": 59.867069,
+      "measured": 59.85376,
+      "error_pct": 0.02223625038520023,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phellinus tremulae",
+      "computed": 17.558013,
+      "measured": 17.55489,
+      "error_pct": 0.017789000308145616,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Mycena galopus",
+      "computed": 57.7566,
+      "measured": 57.74376,
+      "error_pct": 0.022236250385196343,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Mycena galopus",
+      "computed": 11.925601,
+      "measured": 11.92348,
+      "error_pct": 0.01778900030816186,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Tremella mesenterica",
+      "computed": 55.68691,
+      "measured": 55.67453,
+      "error_pct": 0.022236250385193574,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Tremella mesenterica",
+      "computed": 13.334372,
+      "measured": 13.332,
+      "error_pct": 0.01778900030814954,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Circinaria calcarea",
+      "computed": 56.589521,
+      "measured": 56.57694,
+      "error_pct": 0.022236250385193754,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Circinaria calcarea",
+      "computed": 16.469599,
+      "measured": 16.46667,
+      "error_pct": 0.01778900030816167,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Auricularia mesenterica",
+      "computed": 59.855157,
+      "measured": 59.84185,
+      "error_pct": 0.022236250385199417,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Auricularia mesenterica",
+      "computed": 17.571215,
+      "measured": 17.56809,
+      "error_pct": 0.01778900030816458,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomes fomentarius",
+      "computed": 56.597302,
+      "measured": 56.58472,
+      "error_pct": 0.022236250385199947,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomes fomentarius",
+      "computed": 16.41996,
+      "measured": 16.41704,
+      "error_pct": 0.01778900030815014,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Thamnolia vermicularis",
+      "computed": 56.589511,
+      "measured": 56.57693,
+      "error_pct": 0.022236250385198816,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Thamnolia vermicularis",
+      "computed": 16.468209,
+      "measured": 16.46528,
+      "error_pct": 0.017789000308149144,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Plicaturopsis crispa",
+      "computed": 56.827193,
+      "measured": 56.81456,
+      "error_pct": 0.02223625038520301,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Plicaturopsis crispa",
+      "computed": 14.765916,
+      "measured": 14.76329,
+      "error_pct": 0.01778900030815204,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Illosporiopsis christiansenii",
+      "computed": 57.477308,
+      "measured": 57.46453,
+      "error_pct": 0.022236250385196332,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Illosporiopsis christiansenii",
+      "computed": 12.066156,
+      "measured": 12.06401,
+      "error_pct": 0.017789000308156104,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitopsis betulina",
+      "computed": 56.76779,
+      "measured": 56.75517,
+      "error_pct": 0.022236250385193133,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitopsis betulina",
+      "computed": 15.875744,
+      "measured": 15.87292,
+      "error_pct": 0.017789000308155146,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Inonotus ulmicola",
+      "computed": 59.855577,
+      "measured": 59.84227,
+      "error_pct": 0.02223625038520031,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Inonotus ulmicola",
+      "computed": 17.568935,
+      "measured": 17.56581,
+      "error_pct": 0.01778900030815653,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 62.518949,
+      "measured": 62.50505,
+      "error_pct": 0.022236250385202567,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 12.462517,
+      "measured": 12.4603,
+      "error_pct": 0.017789000308159636,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phlebia radiata",
+      "computed": 56.808409,
+      "measured": 56.79578,
+      "error_pct": 0.022236250385200117,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phlebia radiata",
+      "computed": 12.886162,
+      "measured": 12.88387,
+      "error_pct": 0.017789000308150175,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Ramalina farinacea",
+      "computed": 57.857973,
+      "measured": 57.84511,
+      "error_pct": 0.02223625038519569,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Ramalina farinacea",
+      "computed": 11.942334,
+      "measured": 11.94021,
+      "error_pct": 0.017789000308154192,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Opegrapha vermicellifera",
+      "computed": 56.337645,
+      "measured": 56.32512,
+      "error_pct": 0.02223625038519969,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Opegrapha vermicellifera",
+      "computed": 13.122244,
+      "measured": 13.11991,
+      "error_pct": 0.01778900030815442,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Cladonia stellaris",
+      "computed": 59.070752,
+      "measured": 59.05762,
+      "error_pct": 0.022236250385196398,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Cladonia stellaris",
+      "computed": 16.801568,
+      "measured": 16.79858,
+      "error_pct": 0.017789000308163425,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitopsis betulina",
+      "computed": 59.071642,
+      "measured": 59.05851,
+      "error_pct": 0.022236250385198036,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitopsis betulina",
+      "computed": 16.803679,
+      "measured": 16.80069,
+      "error_pct": 0.017789000308158328,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Flammulina velutipes",
+      "computed": 56.76779,
+      "measured": 56.75517,
+      "error_pct": 0.022236250385193133,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Flammulina velutipes",
+      "computed": 15.875744,
+      "measured": 15.87292,
+      "error_pct": 0.017789000308155146,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Thelotrema lepadinum",
+      "computed": 56.81373,
+      "measured": 56.8011,
+      "error_pct": 0.022236250385195395,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Thelotrema lepadinum",
+      "computed": 12.891783,
+      "measured": 12.88949,
+      "error_pct": 0.017789000308157166,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Calicium glaucellum",
+      "computed": 56.81393,
+      "measured": 56.8013,
+      "error_pct": 0.022236250385194656,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Calicium glaucellum",
+      "computed": 12.892013,
+      "measured": 12.88972,
+      "error_pct": 0.01778900030815912,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Ramboldia elabens",
+      "computed": 61.958984,
+      "measured": 61.94521,
+      "error_pct": 0.022236250385198122,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Ramboldia elabens",
+      "computed": 14.310745,
+      "measured": 14.3082,
+      "error_pct": 0.01778900030815125,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Arthonia didyma",
+      "computed": 56.336784,
+      "measured": 56.32426,
+      "error_pct": 0.022236250385195337,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Arthonia didyma",
+      "computed": 13.122874,
+      "measured": 13.12054,
+      "error_pct": 0.017789000308148492,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Leptogium saturninum",
+      "computed": 63.590347,
+      "measured": 63.57621,
+      "error_pct": 0.022236250385202144,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Leptogium saturninum",
+      "computed": 19.681481,
+      "measured": 19.67798,
+      "error_pct": 0.017789000308149623,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Geastrum rufescens",
+      "computed": 56.619427,
+      "measured": 56.60684,
+      "error_pct": 0.022236250385195437,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Geastrum rufescens",
+      "computed": 16.649921,
+      "measured": 16.64696,
+      "error_pct": 0.01778900030816381,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Pertusaria hymenea",
+      "computed": 56.336784,
+      "measured": 56.32426,
+      "error_pct": 0.022236250385195337,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Pertusaria hymenea",
+      "computed": 13.122874,
+      "measured": 13.12054,
+      "error_pct": 0.017789000308148492,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Tremella mesenterica",
+      "computed": 55.592369,
+      "measured": 55.58001,
+      "error_pct": 0.022236250385204152,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Tremella mesenterica",
+      "computed": 13.091118,
+      "measured": 13.08879,
+      "error_pct": 0.0177890003081502,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Imshaugia aleurites",
+      "computed": 59.070752,
+      "measured": 59.05762,
+      "error_pct": 0.022236250385196398,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Imshaugia aleurites",
+      "computed": 16.801568,
+      "measured": 16.79858,
+      "error_pct": 0.017789000308163425,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 62.521239,
+      "measured": 62.50734,
+      "error_pct": 0.022236250385199392,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 12.458946,
+      "measured": 12.45673,
+      "error_pct": 0.01778900030816174,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Tulostoma calcareum",
+      "computed": 56.645613,
+      "measured": 56.63302,
+      "error_pct": 0.0222362503851959,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Tulostoma calcareum",
+      "computed": 16.654692,
+      "measured": 16.65173,
+      "error_pct": 0.01778900030816502,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Cladonia stellaris",
+      "computed": 57.792048,
+      "measured": 57.7792,
+      "error_pct": 0.022236250385195,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Cladonia stellaris",
+      "computed": 16.64361,
+      "measured": 16.64065,
+      "error_pct": 0.01778900030816453,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Rhizocarpon geographicum",
+      "computed": 59.070752,
+      "measured": 59.05762,
+      "error_pct": 0.022236250385196398,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Rhizocarpon geographicum",
+      "computed": 16.801568,
+      "measured": 16.79858,
+      "error_pct": 0.017789000308163425,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 62.520239,
+      "measured": 62.50634,
+      "error_pct": 0.022236250385202765,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 12.459576,
+      "measured": 12.45736,
+      "error_pct": 0.017789000308155497,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Cladonia stellaris",
+      "computed": 57.789797,
+      "measured": 57.77695,
+      "error_pct": 0.02223625038520321,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Cladonia stellaris",
+      "computed": 16.64376,
+      "measured": 16.6408,
+      "error_pct": 0.017789000308150203,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lyomyces sambuci",
+      "computed": 55.589978,
+      "measured": 55.57762,
+      "error_pct": 0.022236250385195312,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lyomyces sambuci",
+      "computed": 13.088518,
+      "measured": 13.08619,
+      "error_pct": 0.017789000308153825,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Flammulina velutipes",
+      "computed": 55.593079,
+      "measured": 55.58072,
+      "error_pct": 0.022236250385196346,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Flammulina velutipes",
+      "computed": 13.090088,
+      "measured": 13.08776,
+      "error_pct": 0.017789000308150435,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 59.296642,
+      "measured": 59.28346,
+      "error_pct": 0.022236250385201578,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 15.167998,
+      "measured": 15.1653,
+      "error_pct": 0.01778900030815051,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Stereum rugosum",
+      "computed": 58.102637,
+      "measured": 58.08972,
+      "error_pct": 0.022236250385196506,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Stereum rugosum",
+      "computed": 14.999328,
+      "measured": 14.99666,
+      "error_pct": 0.017789000308156836,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Alyxoria varia",
+      "computed": 59.855657,
+      "measured": 59.84235,
+      "error_pct": 0.022236250385197658,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Alyxoria varia",
+      "computed": 17.568605,
+      "measured": 17.56548,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Lophodermium pinastri",
+      "computed": 59.364137,
+      "measured": 59.35094,
+      "error_pct": 0.022236250385199063,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Lophodermium pinastri",
+      "computed": 18.144507,
+      "measured": 18.14128,
+      "error_pct": 0.017789000308146598,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Byssomerulius corium",
+      "computed": 59.753774,
+      "measured": 59.74049,
+      "error_pct": 0.022236250385204846,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Byssomerulius corium",
+      "computed": 17.779432,
+      "measured": 17.77627,
+      "error_pct": 0.017789000308146712,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phaeophyscia orbicularis",
+      "computed": 55.59604,
+      "measured": 55.58368,
+      "error_pct": 0.022236250385192797,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phaeophyscia orbicularis",
+      "computed": 13.012344,
+      "measured": 13.01003,
+      "error_pct": 0.017789000308155813,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Pertusaria pertusa",
+      "computed": 56.81373,
+      "measured": 56.8011,
+      "error_pct": 0.022236250385195395,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Pertusaria pertusa",
+      "computed": 12.891783,
+      "measured": 12.88949,
+      "error_pct": 0.017789000308157166,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 62.520339,
+      "measured": 62.50644,
+      "error_pct": 0.022236250385202428,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 12.458136,
+      "measured": 12.45592,
+      "error_pct": 0.01778900030815958,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Peniophora quercina",
+      "computed": 57.787457,
+      "measured": 57.77461,
+      "error_pct": 0.02223625038519452,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Peniophora quercina",
+      "computed": 16.64306,
+      "measured": 16.6401,
+      "error_pct": 0.017789000308153023,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 62.518289,
+      "measured": 62.50439,
+      "error_pct": 0.02223625038519797,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 12.463687,
+      "measured": 12.46147,
+      "error_pct": 0.01778900030815008,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Raduliporus aneirinus",
+      "computed": 59.289801,
+      "measured": 59.27662,
+      "error_pct": 0.022236250385197123,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Raduliporus aneirinus",
+      "computed": 15.5721,
+      "measured": 15.56933,
+      "error_pct": 0.017789000308157308,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Porodaedalea pini",
+      "computed": 59.364137,
+      "measured": 59.35094,
+      "error_pct": 0.022236250385199063,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Porodaedalea pini",
+      "computed": 18.144507,
+      "measured": 18.14128,
+      "error_pct": 0.017789000308146598,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phellinopsis conchata",
+      "computed": 59.858707,
+      "measured": 59.8454,
+      "error_pct": 0.022236250385198792,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phellinopsis conchata",
+      "computed": 17.570595,
+      "measured": 17.56747,
+      "error_pct": 0.017789000308151927,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Ramalina fastigiata",
+      "computed": 57.857973,
+      "measured": 57.84511,
+      "error_pct": 0.02223625038519569,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Ramalina fastigiata",
+      "computed": 11.942334,
+      "measured": 11.94021,
+      "error_pct": 0.017789000308154192,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 62.520269,
+      "measured": 62.50637,
+      "error_pct": 0.02223625038520039,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 12.459496,
+      "measured": 12.45728,
+      "error_pct": 0.017789000308148593,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Cladonia arbuscula",
+      "computed": 59.070752,
+      "measured": 59.05762,
+      "error_pct": 0.022236250385196398,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Cladonia arbuscula",
+      "computed": 16.801568,
+      "measured": 16.79858,
+      "error_pct": 0.017789000308163425,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Jackrogersella multiformis",
+      "computed": 55.588118,
+      "measured": 55.57576,
+      "error_pct": 0.022236250385194695,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Jackrogersella multiformis",
+      "computed": 13.089798,
+      "measured": 13.08747,
+      "error_pct": 0.01778900030815037,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phellinus igniarius",
+      "computed": 59.064271,
+      "measured": 59.05114,
+      "error_pct": 0.02223625038519786,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phellinus igniarius",
+      "computed": 16.804339,
+      "measured": 16.80135,
+      "error_pct": 0.01778900030816355,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Exidia recisa",
+      "computed": 59.366598,
+      "measured": 59.3534,
+      "error_pct": 0.022236250385197512,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Exidia recisa",
+      "computed": 18.164781,
+      "measured": 18.16155,
+      "error_pct": 0.01778900030816036,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Xanthoparmelia pulla",
+      "computed": 56.589821,
+      "measured": 56.57724,
+      "error_pct": 0.022236250385205193,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Xanthoparmelia pulla",
+      "computed": 16.47364,
+      "measured": 16.47071,
+      "error_pct": 0.017789000308155698,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Physcia caesia",
+      "computed": 56.589821,
+      "measured": 56.57724,
+      "error_pct": 0.022236250385205193,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Physcia caesia",
+      "computed": 16.466549,
+      "measured": 16.46362,
+      "error_pct": 0.017789000308154054,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Platismatia glauca",
+      "computed": 56.806659,
+      "measured": 56.79403,
+      "error_pct": 0.0222362503851941,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Platismatia glauca",
+      "computed": 12.887502,
+      "measured": 12.88521,
+      "error_pct": 0.01778900030815856,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Stereum rugosum",
+      "computed": 58.041193,
+      "measured": 58.02829,
+      "error_pct": 0.0222362503852016,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Stereum rugosum",
+      "computed": 14.959531,
+      "measured": 14.95687,
+      "error_pct": 0.017789000308150612,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Porodaedalea pini",
+      "computed": 59.364137,
+      "measured": 59.35094,
+      "error_pct": 0.022236250385199063,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Porodaedalea pini",
+      "computed": 18.144507,
+      "measured": 18.14128,
+      "error_pct": 0.017789000308146598,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Phaeolus schweinitzii",
+      "computed": 59.87269,
+      "measured": 59.85938,
+      "error_pct": 0.02223625038519469,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Phaeolus schweinitzii",
+      "computed": 17.581567,
+      "measured": 17.57844,
+      "error_pct": 0.017789000308158304,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomes fomentarius",
+      "computed": 59.854586,
+      "measured": 59.84128,
+      "error_pct": 0.02223625038519905,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomes fomentarius",
+      "computed": 17.569175,
+      "measured": 17.56605,
+      "error_pct": 0.01778900030815099,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Ramalina polymorpha",
+      "computed": 56.589521,
+      "measured": 56.57694,
+      "error_pct": 0.022236250385193754,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Ramalina polymorpha",
+      "computed": 16.469599,
+      "measured": 16.46667,
+      "error_pct": 0.01778900030816167,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Fomitopsis pinicola",
+      "computed": 59.064271,
+      "measured": 59.05114,
+      "error_pct": 0.02223625038519786,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Fomitopsis pinicola",
+      "computed": 16.804339,
+      "measured": 16.80135,
+      "error_pct": 0.01778900030816355,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Xylaria polymorpha",
+      "computed": 55.588018,
+      "measured": 55.57566,
+      "error_pct": 0.022236250385195073,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Xylaria polymorpha",
+      "computed": 13.090178,
+      "measured": 13.08785,
+      "error_pct": 0.017789000308161218,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Normandina pulchella",
+      "computed": 56.808619,
+      "measured": 56.79599,
+      "error_pct": 0.022236250385194334,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Normandina pulchella",
+      "computed": 12.888032,
+      "measured": 12.88574,
+      "error_pct": 0.017789000308151077,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 62.519619,
+      "measured": 62.50572,
+      "error_pct": 0.022236250385202584,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Alectoria sarmentosa",
+      "computed": 12.464327,
+      "measured": 12.46211,
+      "error_pct": 0.017789000308148267,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 59.355586,
+      "measured": 59.34239,
+      "error_pct": 0.022236250385193498,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 17.943721,
+      "measured": 17.94053,
+      "error_pct": 0.017789000308151323,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": "Usnea hirta",
+      "computed": 58.041193,
+      "measured": 58.02829,
+      "error_pct": 0.0222362503852016,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": "Usnea hirta",
+      "computed": 14.959531,
+      "measured": 14.95687,
+      "error_pct": 0.017789000308150612,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 56.609605,
+      "measured": 56.59702,
+      "error_pct": 0.022236250385204374,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "mycology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 16.638729,
+      "measured": 16.63577,
+      "error_pct": 0.017789000308148204,
+      "source": "gbif_fungi_api"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "yogurt_lactobacillus",
+      "computed": 42.018678,
+      "measured": 42.0,
+      "error_pct": 0.044472500770370835,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "yogurt_lactobacillus",
+      "computed": 4.502001,
+      "measured": 4.5,
+      "error_pct": 0.04447250077037366,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "yogurt_lactobacillus",
+      "computed": 2.000889,
+      "measured": 2.0,
+      "error_pct": 0.04447250077037612,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "sourdough_starter",
+      "computed": 27.012008,
+      "measured": 27.0,
+      "error_pct": 0.04447250077038024,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "sourdough_starter",
+      "computed": 4.201868,
+      "measured": 4.2,
+      "error_pct": 0.04447250077037929,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "sourdough_starter",
+      "computed": 8.003558,
+      "measured": 8.0,
+      "error_pct": 0.04447250077037612,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "kimchi_lacto",
+      "computed": 18.008005,
+      "measured": 18.0,
+      "error_pct": 0.04447250077037366,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "kimchi_lacto",
+      "computed": 4.401957,
+      "measured": 4.4,
+      "error_pct": 0.04447250077038217,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "kimchi_lacto",
+      "computed": 12.005337,
+      "measured": 12.0,
+      "error_pct": 0.04447250077038352,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "kombucha",
+      "computed": 26.011563,
+      "measured": 26.0,
+      "error_pct": 0.04447250077038124,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "kombucha",
+      "computed": 3.201423,
+      "measured": 3.2,
+      "error_pct": 0.04447250077037335,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "kombucha",
+      "computed": 3.001334,
+      "measured": 3.0,
+      "error_pct": 0.04447250077038352,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "beer_ale_fermentation",
+      "computed": 20.008895,
+      "measured": 20.0,
+      "error_pct": 0.04447250077037168,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "beer_ale_fermentation",
+      "computed": 4.301912,
+      "measured": 4.3,
+      "error_pct": 0.044472500770370446,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "beer_ale_fermentation",
+      "computed": 6.002668,
+      "measured": 6.0,
+      "error_pct": 0.04447250077038352,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_temp_C",
+      "name": "wine_primary",
+      "computed": 22.009784,
+      "measured": 22.0,
+      "error_pct": 0.044472500770370064,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "optimal_ph",
+      "name": "wine_primary",
+      "computed": 3.401512,
+      "measured": 3.4,
+      "error_pct": 0.04447250077037743,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "lag_phase_h",
+      "name": "wine_primary",
+      "computed": 24.010673,
+      "measured": 24.0,
+      "error_pct": 0.04447250077038352,
+      "source": "fermentation_reference"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "bake_temperature_C",
+      "name": "banana_bread:bake_temperature_C",
+      "recipe_id": "banana_bread",
+      "category": "quick_bread",
+      "computed": 175.083327,
+      "measured": 175.0,
+      "error_pct": 0.047615187057821064,
+      "source": "culinary_process_bridge",
+      "unit": "C"
+    },
+    {
+      "lab": "food_microbiology_lab",
+      "property": "bake_time_min",
+      "name": "banana_bread:bake_time_min",
+      "recipe_id": "banana_bread",
+      "category": "quick_bread",
+      "computed": 58.027617,
+      "measured": 58.0,
+      "error_pct": 0.047615187057828696,
+      "source": "culinary_process_bridge",
+      "unit": "min"
+    }
+  ]
+}

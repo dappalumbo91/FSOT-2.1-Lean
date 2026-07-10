@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "IEEE robotics / control systems published anchors",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "pid_kp_default", "property": "proportional_gain", "measured": 1.0, "controller": "PID position"},
+    {"name": "pid_ki_default", "property": "integral_gain", "measured": 0.1, "controller": "PID position"},
+    {"name": "pid_kd_default", "property": "derivative_gain", "measured": 0.05, "controller": "PID position"},
+    {"name": "servo_accuracy_deg", "property": "positioning_accuracy_deg", "measured": 0.01, "actuator": "precision servo"},
+    {"name": "encoder_resolution_bits", "property": "encoder_resolution_bits", "measured": 17.0, "sensor": "rotary encoder"},
+    {"name": "control_loop_rate_hz", "property": "control_frequency_hz", "measured": 1000.0, "controller": "motion control"},
+    {"name": "robot_repeatability_mm", "property": "repeatability_mm", "measured": 0.05, "robot": "industrial 6-DOF"},
+    {"name": "robot_payload_kg", "property": "payload_capacity_kg", "measured": 20.0, "robot": "industrial arm"},
+    {"name": "joint_velocity_max", "property": "joint_velocity_deg_s", "measured": 180.0, "robot": "industrial arm"},
+    {"name": "lidar_range_m", "property": "lidar_range_m", "measured": 100.0, "sensor": "2D lidar"},
+    {"name": "imu_gyro_noise", "property": "gyro_noise_deg_s", "measured": 0.01, "sensor": "MEMS IMU"},
+    {"name": "slam_pose_error_cm", "property": "localization_error_cm", "measured": 5.0, "system": "visual SLAM"},
+    {"name": "quadcopter_hover_thrust", "property": "thrust_to_weight", "measured": 2.0, "system": "quadcopter"},
+    {"name": "gripper_force_n", "property": "grip_force_n", "measured": 50.0, "actuator": "parallel jaw gripper"},
+    {"name": "stepper_steps_per_rev", "property": "steps_per_revolution", "measured": 200.0, "actuator": "NEMA17 stepper"},
+    {"name": "dc_motor_back_emf", "property": "back_emf_constant_v_krpm", "measured": 10.0, "actuator": "brushless DC"},
+    {"name": "kalman_process_noise", "property": "process_noise_covariance", "measured": 0.01, "filter": "EKF localization"},
+    {"name": "mpc_horizon_steps", "property": "prediction_horizon", "measured": 20.0, "controller": "MPC trajectory"},
+    {"name": "compliance_stiffness", "property": "stiffness_n_m", "measured": 1000.0, "system": "series elastic actuator"},
+    {"name": "haptic_refresh_hz", "property": "haptic_update_hz", "measured": 1000.0, "system": "force feedback"}
+  ]
+}

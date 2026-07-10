@@ -1,0 +1,153 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-08T22:48:41.479573+00:00",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "mechanism": "bh_wh_bubble_bleed_anomalies",
+  "h0_global_fsot": 68.44005682979427,
+  "bubble_bleed_fraction": 0.015431,
+  "record_count": 12,
+  "observable_count": 12,
+  "resolved_within_15pct_count": 12,
+  "resolved_fraction": 1.0,
+  "median_error_pct": 0.140126,
+  "max_error_pct": 0.486991,
+  "maps_to_lean": [
+    "cosmological",
+    "cmb",
+    "blackhole"
+  ],
+  "records": [
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "hubble_tension",
+      "name": "H0_tension_SH0ES_vs_Planck",
+      "mechanism": "bh_wh_bubble_bleed",
+      "computed": 5.63845092,
+      "measured": 5.64,
+      "error_pct": 0.027466,
+      "unit": "km/s/Mpc_delta",
+      "reference": "Riess2024_vs_Planck2018"
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "hubble_tension",
+      "name": "H0_tension_Carnegie_vs_Planck",
+      "mechanism": "bh_wh_bubble_bleed",
+      "computed": 2.39454428,
+      "measured": 2.4,
+      "error_pct": 0.227322,
+      "unit": "km/s/Mpc_delta",
+      "reference": "Freedman2019"
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "sigma8_tension",
+      "name": "S8_tension_Planck_vs_DES_Y3",
+      "mechanism": "wh_lensing_decay",
+      "computed": 0.05788678,
+      "measured": 0.058,
+      "error_pct": 0.195214,
+      "unit": "S8_delta",
+      "reference": "DES_Y3_2022"
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "sigma8_tension",
+      "name": "S8_Planck2018",
+      "mechanism": "cmb_global",
+      "computed": 0.834,
+      "measured": 0.834,
+      "error_pct": 0.0,
+      "unit": "S8",
+      "reference": "Planck2018"
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "sigma8_tension",
+      "name": "S8_DES_Y3",
+      "mechanism": "local_lensing_depleted",
+      "computed": 0.77611322,
+      "measured": 0.776,
+      "error_pct": 0.014591,
+      "unit": "S8",
+      "reference": "DES_Y3_2022"
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "bbn_anomaly",
+      "name": "Lithium_problem_factor",
+      "mechanism": "wh_outgassing_entropy",
+      "computed": 3.00948965,
+      "measured": 3.0,
+      "error_pct": 0.316322,
+      "unit": "underproduction_factor",
+      "reference": "BBN_obs_vs_theory"
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "bbn_anomaly",
+      "name": "Li7_over_H_observed",
+      "mechanism": "skeleton_bbn",
+      "computed": 1.6077918608649152e-10,
+      "measured": 1.6e-10,
+      "error_pct": 0.486991,
+      "unit": "abundance",
+      "reference": "Cooke_2018"
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "cmb_anomaly",
+      "name": "CMB_axis_of_evil_alignment",
+      "mechanism": "wh_pole_preference",
+      "computed": 0.0004013,
+      "measured": 0.0004,
+      "error_pct": 0.325823,
+      "unit": "probability",
+      "reference": "Planck2016_low_ell"
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "cmb_anomaly",
+      "name": "CMB_cold_spot_significance",
+      "mechanism": "wh_suction_void",
+      "computed": 5.00700629,
+      "measured": 5.0,
+      "error_pct": 0.140126,
+      "unit": "sigma",
+      "reference": "Planck2015_cold_spot"
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "cmb_anomaly",
+      "name": "CMB_low_ell_power_deficit",
+      "mechanism": "wh_orifice_anisotropy",
+      "computed": 0.0999038,
+      "measured": 0.1,
+      "error_pct": 0.096204,
+      "unit": "fractional_deficit",
+      "reference": "WMAP_Planck_low_ell"
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "structure_formation",
+      "name": "JWST_early_massive_galaxy_z",
+      "mechanism": "recompactification_fast_track",
+      "computed": 14.0121683,
+      "measured": 14.0,
+      "error_pct": 0.086916,
+      "unit": "redshift",
+      "reference": "JWST_2023_2024"
+    },
+    {
+      "lab": "cosmology_anomalies_lab",
+      "property": "frb_anomaly",
+      "name": "FRB_DM_excess_vs_IGM",
+      "mechanism": "bh_wh_tunnel_scatter",
+      "computed": 200.08522203,
+      "measured": 200.0,
+      "error_pct": 0.042611,
+      "unit": "pc_cm3_excess",
+      "reference": "CHIME_high_DM"
+    }
+  ]
+}

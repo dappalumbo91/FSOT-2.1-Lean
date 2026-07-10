@@ -1,9 +1,9 @@
 # Tier 17 — fsot_compute waves 5–10 (142 observables beyond Wave-4).
-version: "1.0"
-updated: "2026-07-01"
+version: "1.1"
+updated: "2026-07-09"
 
 source:
-  cosmology_root: "C:/Users/damia/Desktop/FSOT Cosmology Lab"
+  cosmology_root: vendor
   fsot_compute: fsot_compute.py
   waves: [5, 6, 7, 8, 9, 10]
 

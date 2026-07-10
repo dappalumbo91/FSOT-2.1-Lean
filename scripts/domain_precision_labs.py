@@ -36,8 +36,40 @@ NEUROSCIENCE_FI_PRECISION_BENCH = ROOT / "data" / "neuroscience_fi_precision_ben
 MULTI_HERO_BENCH = ROOT / "data" / "multi_hero_benchmark.json"
 NEURON_COHORT_REPORT = ROOT / "data" / "neuron_cohort_report.json"
 COSMOLOGY_EXTENDED_BENCH = ROOT / "data" / "cosmology_extended_benchmark.json"
+BUBBLE_BLEED_BENCH = ROOT / "data" / "cosmology_bubble_bleed_benchmark.json"
+COSMOLOGY_ANOMALIES_BENCH = ROOT / "data" / "cosmology_anomalies_benchmark.json"
 HIGGS_BRANCHING_BENCH = ROOT / "data" / "higgs_branching_benchmark.json"
 SPACE_WEATHER_BENCH = ROOT / "data" / "space_weather_benchmark.json"
+SEISMOLOGY_BENCH = ROOT / "data" / "seismology_benchmark.json"
+TECTONICS_BENCH = ROOT / "data" / "tectonics_benchmark.json"
+GAP_FILL_BENCHES: dict[str, Path] = {
+    "Ecology": ROOT / "data" / "ecology_gap_fill_benchmark.json",
+    "Economics": ROOT / "data" / "economics_gap_fill_benchmark.json",
+    "Psychology": ROOT / "data" / "psychology_gap_fill_benchmark.json",
+    "Sociology": ROOT / "data" / "sociology_gap_fill_benchmark.json",
+    "Oceanography": ROOT / "data" / "oceanography_gap_fill_benchmark.json",
+    "Meteorology": ROOT / "data" / "meteorology_gap_fill_benchmark.json",
+    "Atmospheric_Physics": ROOT / "data" / "atmospheric_physics_gap_fill_benchmark.json",
+    "Fluid_Dynamics": ROOT / "data" / "fluid_dynamics_gap_fill_benchmark.json",
+    "Atomic_Physics": ROOT / "data" / "atomic_physics_gap_fill_benchmark.json",
+    "Quantum_Mechanics": ROOT / "data" / "quantum_mechanics_gap_fill_benchmark.json",
+    "Quantum_Optics": ROOT / "data" / "quantum_optics_gap_fill_benchmark.json",
+    "Quantum_Computing": ROOT / "data" / "quantum_computing_gap_fill_benchmark.json",
+    "Particle_Physics": ROOT / "data" / "particle_physics_gap_fill_benchmark.json",
+    "Econometrics": ROOT / "data" / "econometrics_gap_fill_benchmark.json",
+    "Sports_Biomechanics": ROOT / "data" / "sports_biomechanics_gap_fill_benchmark.json",
+    "Architecture_Building_Science": ROOT / "data" / "architecture_building_science_gap_fill_benchmark.json",
+}
+
+EXTENSION_BENCHES: dict[str, Path] = {
+    "Geology_Stratigraphy": ROOT / "data" / "geology_stratigraphy_extension_benchmark.json",
+    "Botany": ROOT / "data" / "botany_extension_benchmark.json",
+    "Zoology": ROOT / "data" / "zoology_extension_benchmark.json",
+    "Clinical_Medicine": ROOT / "data" / "clinical_medicine_extension_benchmark.json",
+    "Chemical_Engineering": ROOT / "data" / "chemical_engineering_extension_benchmark.json",
+    "Environmental_Engineering": ROOT / "data" / "environmental_engineering_extension_benchmark.json",
+    "Anthropology": ROOT / "data" / "anthropology_extension_benchmark.json",
+}
 
 # Human mtDNA reference gene lengths (NCBI NC_012920.1, protein-coding spans).
 HUMAN_MT_OPERON_REF = {
@@ -157,6 +189,20 @@ def extract_cosmology_wave4(registry: dict) -> dict[str, Any]:
     return _summarize_records(records)
 
 
+def extract_cosmology_bubble_bleed(registry: dict) -> dict[str, Any]:
+    if not BUBBLE_BLEED_BENCH.exists():
+        return _summarize_records([])
+    doc = json.loads(BUBBLE_BLEED_BENCH.read_text(encoding="utf-8"))
+    return _summarize_records(doc.get("records") or [])
+
+
+def extract_cosmology_anomalies(registry: dict) -> dict[str, Any]:
+    if not COSMOLOGY_ANOMALIES_BENCH.exists():
+        return _summarize_records([])
+    doc = json.loads(COSMOLOGY_ANOMALIES_BENCH.read_text(encoding="utf-8"))
+    return _summarize_records(doc.get("records") or [])
+
+
 def extract_cosmology_extended(registry: dict) -> dict[str, Any]:
     if not COSMOLOGY_EXTENDED_BENCH.exists():
         return _summarize_records([])
@@ -236,6 +282,20 @@ def extract_space_weather(registry: dict) -> dict[str, Any]:
     if not SPACE_WEATHER_BENCH.exists():
         return _summarize_records([])
     doc = json.loads(SPACE_WEATHER_BENCH.read_text(encoding="utf-8"))
+    return _summarize_records(doc.get("records") or [])
+
+
+def extract_seismology(registry: dict) -> dict[str, Any]:
+    if not SEISMOLOGY_BENCH.exists():
+        return _summarize_records([])
+    doc = json.loads(SEISMOLOGY_BENCH.read_text(encoding="utf-8"))
+    return _summarize_records(doc.get("records") or [])
+
+
+def extract_tectonics(registry: dict) -> dict[str, Any]:
+    if not TECTONICS_BENCH.exists():
+        return _summarize_records([])
+    doc = json.loads(TECTONICS_BENCH.read_text(encoding="utf-8"))
     return _summarize_records(doc.get("records") or [])
 
 
@@ -450,6 +510,48 @@ def extract_evolution_benchmark() -> dict[str, Any]:
     return _summarize_records(doc.get("records") or [])
 
 
+def extract_gap_fill(domain: str) -> dict[str, Any]:
+    path = GAP_FILL_BENCHES.get(domain)
+    if not path or not path.exists():
+        return _summarize_records([])
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    return _summarize_records(doc.get("material_records") or doc.get("records") or [])
+
+
+def extract_extension_bench(domain: str) -> dict[str, Any]:
+    path = EXTENSION_BENCHES.get(domain)
+    if not path or not path.exists():
+        return _summarize_records([])
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    return _summarize_records(doc.get("material_records") or doc.get("records") or [])
+
+
+def extract_particle_physics(registry: dict) -> dict[str, Any]:
+    gap = extract_gap_fill("Particle_Physics")
+    if gap.get("record_count"):
+        return gap
+    if not (ROOT / "data" / "particle_physics_benchmark.json").exists():
+        return _summarize_records([])
+    doc = json.loads((ROOT / "data" / "particle_physics_benchmark.json").read_text(encoding="utf-8"))
+    records: list[dict[str, Any]] = []
+    for key in ("smiles_particle_records", "wave4_rows", "thesis_particle_rows", "math_physics_rows"):
+        for row in doc.get(key) or []:
+            err = row.get("error_pct")
+            if err is None:
+                continue
+            records.append(
+                {
+                    "lab": "particle_physics_lab",
+                    "property": row.get("section") or row.get("category") or row.get("source"),
+                    "name": row.get("name"),
+                    "computed": row.get("computed"),
+                    "measured": row.get("measured"),
+                    "error_pct": float(err),
+                }
+            )
+    return _summarize_records(records)
+
+
 def extract_trinary_os(registry: dict) -> dict[str, Any]:
     lab = registry.get("trinary_os") or {}
     records: list[dict[str, Any]] = []
@@ -552,14 +654,45 @@ def extract_trinary_fluid(registry: dict) -> dict[str, Any]:
     return _summarize_records(records)
 
 
+def _gap(domain: str):
+    return lambda reg, lean=None: extract_gap_fill(domain)
+
+
 LAB_EXTRACTORS = {
     "smiles_lab": lambda reg, lean=None: extract_smiles(lean),
+    "gbif_ecology_lab": _gap("Ecology"),
+    "world_bank_economics_lab": _gap("Economics"),
+    "openalex_psychology_lab": _gap("Psychology"),
+    "openalex_sociology_lab": _gap("Sociology"),
+    "world_bank_sociology_lab": _gap("Sociology"),
+    "noaa_oceanography_lab": _gap("Oceanography"),
+    "meteorology_gap_fill_lab": _gap("Meteorology"),
+    "atmospheric_physics_gap_fill_lab": _gap("Atmospheric_Physics"),
+    "fluid_dynamics_lab": _gap("Fluid_Dynamics"),
+    "nist_atomic_lab": _gap("Atomic_Physics"),
+    "nist_quantum_lab": _gap("Quantum_Mechanics"),
+    "quantum_computing_lab": _gap("Quantum_Computing"),
+    "econometrics_lab": _gap("Econometrics"),
+    "sports_biomechanics_lab": _gap("Sports_Biomechanics"),
+    "architecture_building_science_lab": _gap("Architecture_Building_Science"),
+    "geology_stratigraphy_lab": lambda reg, lean=None: extract_extension_bench("Geology_Stratigraphy"),
+    "botany_lab": lambda reg, lean=None: extract_extension_bench("Botany"),
+    "zoology_lab": lambda reg, lean=None: extract_extension_bench("Zoology"),
+    "clinical_medicine_lab": lambda reg, lean=None: extract_extension_bench("Clinical_Medicine"),
+    "chemical_engineering_lab": lambda reg, lean=None: extract_extension_bench("Chemical_Engineering"),
+    "environmental_engineering_lab": lambda reg, lean=None: extract_extension_bench("Environmental_Engineering"),
+    "anthropology_lab": lambda reg, lean=None: extract_extension_bench("Anthropology"),
+    "particle_physics_lab": lambda reg, lean=None: extract_particle_physics(reg),
     "cosmology_lambda_cdm": lambda reg, lean=None: extract_cosmology_lambda(reg),
     "cosmology_wave4": lambda reg, lean=None: extract_cosmology_wave4(reg),
     "cosmology_extended_lab": lambda reg, lean=None: extract_cosmology_extended(reg),
+    "cosmology_bubble_bleed_lab": lambda reg, lean=None: extract_cosmology_bubble_bleed(reg),
+    "cosmology_anomalies_lab": lambda reg, lean=None: extract_cosmology_anomalies(reg),
     "cosmology_higher_waves_lab": lambda reg, lean=None: extract_cosmology_higher_waves(reg),
     "higgs_branching_lab": lambda reg, lean=None: extract_higgs_branching(reg),
     "space_weather_lab": lambda reg, lean=None: extract_space_weather(reg),
+    "seismology_lab": lambda reg, lean=None: extract_seismology(reg),
+    "tectonics_lab": lambda reg, lean=None: extract_tectonics(reg),
     "linguistics_lab": lambda reg, lean=None: extract_linguistics(reg),
     "fuel_lab": lambda reg, lean=None: extract_fuel(reg),
     "thermodynamics_smiles": lambda reg, lean=None: extract_thermodynamics_smiles(),

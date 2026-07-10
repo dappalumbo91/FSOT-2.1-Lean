@@ -27,17 +27,27 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-08 — Tier 39)
+## Verification status (2026-07-09 — Tier 41)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
-Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml`
+Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_verification_progress.yaml` | Domain map: `data/scientific_domain_expansion_map.json`
 
-- **39/39 verification tiers complete** (space propulsion, electrical power, HVAC thermal, 2024-2026 breakthroughs)
-- **103 scientific domains** (35 NeuroLab + 67 extension bridges)
-- **Game drive cache**: bulk API data at `D:\FSOT-2.1-Lean-PublicData` (override: `FSOT_EXTERNAL_DATA_ROOT`)
-- **Self-contained clone-and-verify**: `strict_empirical.jsonl` (7,941 formulas) bundled under `vendor/formula_corpus/`
-- **65+ proved claims**, 0 active `sorry`, `lean_build_ok: true`
+| Metric | Value |
+|--------|-------|
+| Verification tiers | **39/39 complete** (100%) |
+| Scientific domains | **141** (35 NeuroLab + 105 extension + Intelligence Compression rollup) |
+| Empirical records | **306,680** |
+| Neurolab precision | **35/35** domains ≤2% median error |
+| Coverage tiers | A_strong: 25 · B_verified: 10 · C_thin: **0** · D_needs_work: **0** · unverified: **0** |
+| Lean formal modules | **175** |
+| Proved claims | **65** · 0 active `sorry` |
+| SOTA ledger | **54/54** observables beat or meet baselines |
+| Expansion candidates | **0** (all identified science gaps filled) |
+
+**External data cache** (bulk API ingest): `G:\FSOT-PublicData` — override with `FSOT_EXTERNAL_DATA_ROOT`. Tier F gap-fill cache: `G:\FSOT-PublicData\tier_f_gaps`.
+
+**Self-contained clone-and-verify**: `strict_empirical.jsonl` (7,941 formulas) bundled under `vendor/formula_corpus/`.
 - Genomic exact identities (`FSOT.Formal.Genomic`)
 - Brain component priors (`FSOT.Formal.BrainPriors`) — 10 NeuroLab components
 - 64-codon dual-axis map (`FSOT.Formal.CodonPriors`) — 8 primary + 27 secondary patterns
@@ -116,6 +126,59 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - Electrical power (`FSOT.Formal.ElectricalPowerSystemsPriors`) — batteries, grid, solar, superconductors; 9 observables
 - HVAC thermal (`FSOT.Formal.HvacThermalSystemsPriors`) — SEER/COP/Carnot heat-pump cohort; 7 observables
 - Breakthroughs 2024–2026 (`FSOT.Formal.BreakthroughDiscoveries20242026Priors`) — 20 world-shaking discoveries (NIF, AEPS, Webb, Euclid, Starship)
+- Trinary-OS Tier E (`FSOT.Formal.TrinaryOSTierEPriors`) — unified FSOTB + ISA rebuild + round-trip byte-identical oracle (68 records, 0% pooled)
+
+### Tier A/B/C — NeuroLab gap-fill (20 domains)
+
+Real API anchors + FSOT v1.1 benchmarks for thin neurolab domains. Scripts: `scripts/tier_gap_fill_lib.py`, `build_tier_gap_fill_benchmarks.py`, `gen_tier_gap_fill_lean.py`.
+
+Ecology, Economics, Psychology, Sociology, Oceanography, Meteorology, Atmospheric_Physics, Fluid_Dynamics, Atomic_Physics, Quantum_Mechanics, Quantum_Optics, Quantum_Computing, Particle_Physics, Pharmacokinetics, Food_Microbiology, Agriculture_Agroecology, Maillard_Chemistry, Econometrics, Sports_Biomechanics, Architecture_Building_Science.
+
+### Tier D — Extension wave (7 domains)
+
+`scripts/tier_d_extension_lib.py` · GBIF Plantae/Animalia + clinical/engineering/social bridges.
+
+Geology_Stratigraphy, Botany, Zoology, Clinical_Medicine, Chemical_Engineering, Environmental_Engineering, Anthropology.
+
+### Tier F — Science-gap fill (19 domains, Tier 41)
+
+Closes every remaining expansion candidate before cross-domain coupling simulation. Real APIs: **PBDB** (paleontology), **OBIS** (marine biology), **GBIF** Fungi/Insecta, plus published reference anchors for clinical, engineering, humanities, and industry verticals.
+
+| Domain | Lean module | Primary sources |
+|--------|-------------|-----------------|
+| Paleontology | `PaleontologyExtensionPriors` | PBDB + USGS seismology bridge |
+| Marine_Biology | `MarineBiologyExtensionPriors` | OBIS + NOAA tides |
+| Mycology | `MycologyExtensionPriors` | GBIF Fungi + food microbiology |
+| Entomology | `EntomologyExtensionPriors` | GBIF Insecta + zoology |
+| Virology | `VirologyExtensionPriors` | Reference + immunology + PubChem antivirals |
+| Epidemiology | `EpidemiologyExtensionPriors` | WHO/CDC reference + World Bank health |
+| Cardiology | `CardiologyExtensionPriors` | AHA/ESC reference + clinical medicine |
+| Civil_Engineering | `CivilEngineeringExtensionPriors` | ASCE reference + materials engineering |
+| Mechanical_Engineering | `MechanicalEngineeringExtensionPriors` | ASME reference + thermodynamics rules |
+| Robotics_Control_Systems | `RoboticsControlSystemsExtensionPriors` | IEEE reference + Trinary-OS ISA |
+| Neuroeconomics | `NeuroeconomicsExtensionPriors` | Behavioral econ reference + psychology/econometrics |
+| Paleoclimate | `PaleoclimateExtensionPriors` | Ice-core reference + NOAA NCEI/cryosphere |
+| Speleology | `SpeleologyExtensionPriors` | UIS cave metrics + hydrology/geochemistry |
+| Exogeology | `ExogeologyExtensionPriors` | NASA Exoplanet Archive + planetary structure |
+| Pure_Mathematics | `PureMathematicsExtensionPriors` | Math-generator rules + NIST constants |
+| History | `HistoryExtensionPriors` | OpenAlex historical corpus + anthropology |
+| Law_Policy | `LawPolicyExtensionPriors` | WGI governance + World Bank |
+| Finance_Markets | `FinanceMarketsExtensionPriors` | Market reference + econometrics |
+| Supply_Chain_Logistics | `SupplyChainLogisticsExtensionPriors` | SCOR reference + World Bank trade |
+
+```bash
+# Tier F rebuild (ingest → benchmarks → Lean)
+python scripts/build_tier_f_extension_benchmarks.py --ingest
+python scripts/build_tier_f_extension_benchmarks.py
+python scripts/gen_tier_f_extension_lean.py
+python scripts/build_scientific_domain_expansion_map.py
+python scripts/build_sota_observable_ledger.py
+python scripts/build_fsot_verification_progress.py
+python scripts/build_fsot_verified_scope.py
+lake build
+```
+
+Registry: `data/extension_domains_manifest.yaml` (tier 41 entries) · Benchmarks: `data/*_extension_benchmark.json` · Reference anchors: `data/*_reference_observables.json`.
 
 ### Formula verification honesty (Tier 6)
 
@@ -167,7 +230,9 @@ This project closely follows the structure and justification style of the attach
 
 ## Roadmap
 
+- **141-domain cross-domain coupling simulation** — nodes = all covered domains; edges = `maps_to_lean` overlaps + crosswalk modules + scalar coupling (`fsot_compute.predictions()` cross-ratios); hooks in `thesis_simulation` lab and magnetosphere Dst×Kp×Bz coupling
 - Tighten r_d interval to ±0.01 Mpc
+- Extension domain precision tightening (median error &lt; 1% wave)
 - Extend `select_observable()` hooks for non-IE chemistry/cosmology rows in unified DB
 - Energy / fusion domain dedicated lab certificates (currently partial via fuel_lab proxy)
 

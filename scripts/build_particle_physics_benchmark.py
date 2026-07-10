@@ -16,9 +16,14 @@ except ImportError:
     yaml = None
 
 ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS = ROOT / "scripts"
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
 MANIFEST_PATH = ROOT / "data" / "particle_physics_manifest.yaml"
 OUTPUT = ROOT / "data" / "particle_physics_benchmark.json"
 REGISTRY = ROOT / "data" / "lab_registry.json"
+
+from fsot_paths import fsot_compute_path, manifest_path as repo_path, thesis_root  # noqa: E402
 
 
 def _load_wave4(compute_path: Path) -> list[dict]:
@@ -106,15 +111,15 @@ def build_benchmark(manifest_path: Path = MANIFEST_PATH) -> dict:
     spec = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
     src = spec["source"]
 
-    smiles_path = Path(src["smiles_dataset"])
-    section_map = ROOT / src["section_domain_map"]
+    smiles_path = repo_path(src["smiles_dataset"])
+    section_map = repo_path(src["section_domain_map"])
     if not smiles_path.exists():
         raise FileNotFoundError(f"SMILES dataset missing: {smiles_path}")
 
     smiles = _smiles_particle_rows(smiles_path, section_map)
-    thesis = _thesis_particle_rows(Path(src["thesis_root"]), list(src["thesis_particle_categories"]))
-    wave4 = _load_wave4(Path(src["cosmology_compute"]))
-    rules = _math_physics_rules(Path(src["math_physics_rules"]))
+    thesis = _thesis_particle_rows(thesis_root(), list(src["thesis_particle_categories"]))
+    wave4 = _load_wave4(fsot_compute_path())
+    rules = _math_physics_rules(repo_path(src["math_physics_rules"]))
 
     errs = [float(r["error_pct"]) for r in smiles if r.get("error_pct") is not None]
     errs += [float(r["error_pct"]) for r in wave4 if r.get("error_pct") is not None]

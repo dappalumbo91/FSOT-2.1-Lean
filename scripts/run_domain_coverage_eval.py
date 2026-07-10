@@ -130,7 +130,39 @@ def _lab_record_count(registry: dict, lab_key: str) -> tuple[int, float | None]:
         med = lab.get("median_error_pct")
         return n, float(med) if med is not None else None
 
-    return int(lab.get("count") or lab.get("record_count") or 0), None
+    if lab_key == "particle_physics_lab":
+        n = int(lab.get("observable_count") or lab.get("record_count") or 0)
+        med = lab.get("median_error_pct")
+        return n, float(med) if med is not None else None
+
+    gap_fill_benches = {
+        "gbif_ecology_lab": "ecology_gap_fill_benchmark.json",
+        "world_bank_economics_lab": "economics_gap_fill_benchmark.json",
+        "openalex_psychology_lab": "psychology_gap_fill_benchmark.json",
+        "openalex_sociology_lab": "sociology_gap_fill_benchmark.json",
+        "world_bank_sociology_lab": "sociology_gap_fill_benchmark.json",
+        "noaa_oceanography_lab": "oceanography_gap_fill_benchmark.json",
+        "meteorology_gap_fill_lab": "meteorology_gap_fill_benchmark.json",
+        "atmospheric_physics_gap_fill_lab": "atmospheric_physics_gap_fill_benchmark.json",
+        "fluid_dynamics_lab": "fluid_dynamics_gap_fill_benchmark.json",
+        "nist_atomic_lab": "atomic_physics_gap_fill_benchmark.json",
+        "nist_quantum_lab": "quantum_mechanics_gap_fill_benchmark.json",
+        "quantum_computing_lab": "quantum_computing_gap_fill_benchmark.json",
+        "econometrics_lab": "econometrics_gap_fill_benchmark.json",
+        "sports_biomechanics_lab": "sports_biomechanics_gap_fill_benchmark.json",
+        "architecture_building_science_lab": "architecture_building_science_gap_fill_benchmark.json",
+    }
+    if lab_key in gap_fill_benches:
+        bench_path = ROOT / "data" / gap_fill_benches[lab_key]
+        if bench_path.exists():
+            doc = json.loads(bench_path.read_text(encoding="utf-8"))
+            n = int(doc.get("record_count") or doc.get("observable_count") or 0)
+            med = doc.get("median_error_pct") or doc.get("pooled_median_error_pct")
+            return n, float(med) if med is not None else None
+
+    n = int(lab.get("observable_count") or lab.get("record_count") or lab.get("count") or 0)
+    med = lab.get("median_error_pct")
+    return n, float(med) if med is not None else None
 
 
 def _expected_lean_params(lean_domain: str, overrides_yaml: dict) -> dict | None:

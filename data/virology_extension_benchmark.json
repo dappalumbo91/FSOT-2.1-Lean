@@ -1,0 +1,476 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.512396+00:00",
+  "domain": "Virology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "virology_reference",
+    "immunology",
+    "PubChem_antivirals"
+  ],
+  "maps_to_lean": [
+    "medical",
+    "biological"
+  ],
+  "D_eff": 14,
+  "record_count": 50,
+  "observable_count": 50,
+  "median_error_pct": 0.134848,
+  "pooled_median_error_pct": 0.134848,
+  "headline_median_error_pct": 0.134848,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "virology_panel": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "Virology surrogate baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_viral_observables_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.134848,
+      "measured": 0.0,
+      "error_pct": 0.134848,
+      "observable_count": 50
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "viral_observables",
+      "name": "virology_panel",
+      "computed": 0.134848,
+      "measured": 0.0,
+      "error_pct": 0.134848,
+      "observable_count": 50
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "virology_lab",
+      "property": "viral_load_copies_ml",
+      "name": "hiv_viral_load_suppressed",
+      "computed": 50.022967,
+      "measured": 50.0,
+      "error_pct": 0.04593318440797134,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "replication_doubling_h",
+      "name": "influenza_replication_h",
+      "computed": 6.002756,
+      "measured": 6.0,
+      "error_pct": 0.04593318440798318,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "incubation_period_days",
+      "name": "sars_cov2_incubation_days",
+      "computed": 5.002297,
+      "measured": 5.0,
+      "error_pct": 0.04593318440797134,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "viral_load_log10_iu_ml",
+      "name": "hcv_viral_load_log",
+      "computed": 6.002756,
+      "measured": 6.0,
+      "error_pct": 0.04593318440798318,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "viral_load_log10_iu_ml",
+      "name": "hbv_viral_load_log",
+      "computed": 5.002297,
+      "measured": 5.0,
+      "error_pct": 0.04593318440797134,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "replication_doubling_h",
+      "name": "rsv_replication_h",
+      "computed": 12.005512,
+      "measured": 12.0,
+      "error_pct": 0.04593318440798318,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "viral_load_log10_copies_ml",
+      "name": "ebola_viral_load_peak",
+      "computed": 8.003675,
+      "measured": 8.0,
+      "error_pct": 0.04593318440797578,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "viral_load_log10_copies_ml",
+      "name": "zika_viral_load_peak",
+      "computed": 5.002297,
+      "measured": 5.0,
+      "error_pct": 0.04593318440797134,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "molecular_weight_da",
+      "name": "remdesivir_mw",
+      "computed": 602.876793,
+      "measured": 602.6,
+      "error_pct": 0.045933184407974594,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "molecular_weight_da",
+      "name": "oseltamivir_mw",
+      "computed": 312.543495,
+      "measured": 312.4,
+      "error_pct": 0.045933184407980984,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "molecular_weight_da",
+      "name": "acyclovir_mw",
+      "computed": 225.303442,
+      "measured": 225.2,
+      "error_pct": 0.04593318440797614,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "molecular_weight_da",
+      "name": "ritonavir_mw",
+      "computed": 721.231132,
+      "measured": 720.9,
+      "error_pct": 0.04593318440797562,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "molecular_weight_da",
+      "name": "sofosbuvir_mw",
+      "computed": 529.743216,
+      "measured": 529.5,
+      "error_pct": 0.0459331844079696,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "particle_diameter_nm",
+      "name": "viral_particle_diameter_nm",
+      "computed": 100.045933,
+      "measured": 100.0,
+      "error_pct": 0.04593318440797134,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "genome_size_kb",
+      "name": "phage_t4_genome_kb",
+      "computed": 169.077627,
+      "measured": 169.0,
+      "error_pct": 0.04593318440796881,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "genome_size_kb",
+      "name": "influenza_genome_kb",
+      "computed": 13.506201,
+      "measured": 13.5,
+      "error_pct": 0.045933184407976606,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "basic_reproduction_R0",
+      "name": "morbillivirus_r0",
+      "computed": 15.00689,
+      "measured": 15.0,
+      "error_pct": 0.04593318440797134,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "latency_period_years",
+      "name": "herpes_latency_years",
+      "computed": 40.018373,
+      "measured": 40.0,
+      "error_pct": 0.04593318440797134,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "shedding_duration_days",
+      "name": "norovirus_shed_days",
+      "computed": 14.006431,
+      "measured": 14.0,
+      "error_pct": 0.04593318440797895,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "virology_lab",
+      "property": "particle_diameter_nm",
+      "name": "poxvirus_particle_nm",
+      "computed": 300.1378,
+      "measured": 300.0,
+      "error_pct": 0.04593318440798081,
+      "source": "virology_reference_observables"
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "CI2",
+      "computed": -7.007584181144136,
+      "measured": -7.0,
+      "error_pct": 0.108345
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "barnase",
+      "computed": -8.683186676986617,
+      "measured": -8.8,
+      "error_pct": 1.327424
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "ubiquitin",
+      "computed": -6.854101966249685,
+      "measured": -6.7,
+      "error_pct": 2.300029
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "lysozyme",
+      "computed": -9.160572302574996,
+      "measured": -9.2,
+      "error_pct": 0.428562
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "RNase A",
+      "computed": -8.683186676986617,
+      "measured": -8.7,
+      "error_pct": 0.193257
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "cytochrome c",
+      "computed": -10.081950177328737,
+      "measured": -10.1,
+      "error_pct": 0.178711
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "myoglobin",
+      "computed": -13.70820393249937,
+      "measured": -13.6,
+      "error_pct": 0.795617
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "BPTI",
+      "computed": -11.090169943749475,
+      "measured": -11.0,
+      "error_pct": 0.819727
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "SH3 domain",
+      "computed": -3.533999582927114,
+      "measured": -3.5,
+      "error_pct": 0.971417
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a721 Protein \u0394G",
+      "name": "chymotrypsin inh.",
+      "computed": -4.23606797749979,
+      "measured": -4.3,
+      "error_pct": 1.486791
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Gly_pK\u2081",
+      "computed": 2.2980601642983487,
+      "measured": 2.34,
+      "error_pct": 1.792301
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Gly_pK\u2082",
+      "computed": 9.65725862484998,
+      "measured": 9.6,
+      "error_pct": 0.596444
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Ala_pK\u2081",
+      "computed": 2.2980601642983487,
+      "measured": 2.34,
+      "error_pct": 1.792301
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Ala_pK\u2082",
+      "computed": 9.869604401089358,
+      "measured": 9.87,
+      "error_pct": 0.004008
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Val_pK\u2081",
+      "computed": 2.2980601642983487,
+      "measured": 2.29,
+      "error_pct": 0.351972
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Val_pK\u2082",
+      "computed": 9.716122186194907,
+      "measured": 9.72,
+      "error_pct": 0.039895
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Leu_pK\u2081",
+      "computed": 2.2980601642983487,
+      "measured": 2.33,
+      "error_pct": 1.370808
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Leu_pK\u2082",
+      "computed": 9.716122186194907,
+      "measured": 9.74,
+      "error_pct": 0.245152
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Asp_pKR",
+      "computed": 3.6342474226362644,
+      "measured": 3.65,
+      "error_pct": 0.431577
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Glu_pKR",
+      "computed": 4.23606797749979,
+      "measured": 4.25,
+      "error_pct": 0.327812
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "His_pKR",
+      "computed": 5.938136372072465,
+      "measured": 6.0,
+      "error_pct": 1.03106
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Cys_pKR",
+      "computed": 8.176996891207093,
+      "measured": 8.18,
+      "error_pct": 0.036713
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Tyr_pKR",
+      "computed": 9.869604401089358,
+      "measured": 10.07,
+      "error_pct": 1.990026
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Lys_pKR",
+      "computed": 10.501724959917917,
+      "measured": 10.53,
+      "error_pct": 0.268519
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Arg_pKR",
+      "computed": 12.487638389839253,
+      "measured": 12.48,
+      "error_pct": 0.061205
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Pro_pK\u2081",
+      "computed": 1.9616166720726889,
+      "measured": 1.99,
+      "error_pct": 1.426298
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Pro_pK\u2082",
+      "computed": 10.571672795662035,
+      "measured": 10.6,
+      "error_pct": 0.267238
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Phe_pK\u2081",
+      "computed": 2.575736191370456,
+      "measured": 2.58,
+      "error_pct": 0.165264
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Trp_pK\u2081",
+      "computed": 2.4059747810263383,
+      "measured": 2.38,
+      "error_pct": 1.091377
+    },
+    {
+      "lab": "immunology_lab",
+      "property": "\u00a722 Amino Acid pKa",
+      "name": "Trp_pK\u2082",
+      "computed": 9.4026621941651,
+      "measured": 9.39,
+      "error_pct": 0.134848
+    }
+  ]
+}

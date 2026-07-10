@@ -1,0 +1,23 @@
+# Tier 40 — SOTA competitiveness: FSOT zero-parameter vs mainstream science baselines.
+version: "1.0"
+updated: "2026-07-08"
+
+source:
+  domain_precision_report: data/domain_precision_report.json
+  sota_baseline_registry: data/sota_baseline_registry.yaml
+  prediction_summary: vendor/fsot_aggregate/prediction_rederivation_summary.json
+
+build:
+  script: scripts/run_sota_competitiveness_eval.py
+  output: data/sota_competitiveness_report.json
+
+lean:
+  generator: scripts/gen_sota_competitiveness_lean.py
+  module: FSOT.Formal.SotaCompetitivenessPriors
+
+verification:
+  min_domain_comparisons: 30
+  min_beats_or_meets_sota_fraction: 0.85
+  min_strict_beats_sota_fraction: 0.70
+  max_below_sota_domains: 5
+  require_zero_free_parameters: true

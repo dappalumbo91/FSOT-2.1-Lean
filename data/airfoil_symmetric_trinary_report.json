@@ -1,0 +1,233 @@
+{
+  "goal_rmse": 5.412721340832612,
+  "goal_hit": false,
+  "best": {
+    "id": "FO-210",
+    "variant": "baseline",
+    "readout": "collapsed_ln_transport",
+    "train_metrics": {
+      "r2": 0.24663112667879217,
+      "mae": 4.827429217295361,
+      "rmse": 5.974529380734599
+    },
+    "test_metrics": {
+      "r2": 0.2768186918628138,
+      "mae": 4.765682735496909,
+      "rmse": 5.907214506805364
+    }
+  },
+  "ranked": [
+    {
+      "id": "FO-210",
+      "variant": "baseline",
+      "readout": "collapsed_ln_transport",
+      "train_metrics": {
+        "r2": 0.24663112667879217,
+        "mae": 4.827429217295361,
+        "rmse": 5.974529380734599
+      },
+      "test_metrics": {
+        "r2": 0.2768186918628138,
+        "mae": 4.765682735496909,
+        "rmse": 5.907214506805364
+      }
+    },
+    {
+      "id": "FO-211-A",
+      "variant": "A",
+      "readout": "full_scalar_term3",
+      "train_metrics": {
+        "rmse": 77.63193548792489,
+        "mae": 76.97529186043536,
+        "r2": -126.1982388325496
+      },
+      "test_metrics": {
+        "rmse": 77.34393759049144,
+        "mae": 76.6959634356418,
+        "r2": -122.97504255175225
+      },
+      "delta_theta": "2*pi*f*chord/U"
+    },
+    {
+      "id": "FO-211-B",
+      "variant": "B",
+      "readout": "full_scalar_term3",
+      "train_metrics": {
+        "rmse": 79.5952323141266,
+        "mae": 78.93065659702154,
+        "r2": -132.7132299234311
+      },
+      "test_metrics": {
+        "rmse": 79.73810154790313,
+        "mae": 79.04834537925366,
+        "r2": -130.76907354240493
+      },
+      "delta_theta": "trinary_fold(f,U,\u03b4)->{-\u03c0/3,0,\u03c0/3}"
+    },
+    {
+      "id": "FO-211-C",
+      "variant": "C",
+      "readout": "full_scalar_term3",
+      "train_metrics": {
+        "rmse": 86.15163735597254,
+        "mae": 85.63011703194834,
+        "r2": -155.64889725733934
+      },
+      "test_metrics": {
+        "rmse": 85.29147382094042,
+        "mae": 84.79776100863009,
+        "r2": -149.762367036736
+      },
+      "delta_theta": "(pi/phi)*deg2rad(angle_of_attack_deg)"
+    },
+    {
+      "id": "FO-211-A",
+      "variant": "A",
+      "readout": "balanced_additive_b2",
+      "train_metrics": {
+        "rmse": 86.30813234395923,
+        "mae": 85.75181623507413,
+        "r2": -156.21852155378943
+      },
+      "test_metrics": {
+        "rmse": 86.0010390866742,
+        "mae": 85.4523110222656,
+        "r2": -152.28127580432235
+      },
+      "delta_theta": "2*pi*f*chord/U"
+    },
+    {
+      "id": "FO-211-B",
+      "variant": "B",
+      "readout": "balanced_additive_b2",
+      "train_metrics": {
+        "rmse": 88.16895992587982,
+        "mae": 87.60473316437549,
+        "r2": -163.07095490145542
+      },
+      "test_metrics": {
+        "rmse": 88.27454912847708,
+        "mae": 87.6878790042071,
+        "r2": -160.49263676285517
+      },
+      "delta_theta": "trinary_fold(f,U,\u03b4)->{-\u03c0/3,0,\u03c0/3}"
+    },
+    {
+      "id": "FO-211-C",
+      "variant": "C",
+      "readout": "balanced_additive_b2",
+      "train_metrics": {
+        "rmse": 94.27999599275995,
+        "mae": 93.83934643147492,
+        "r2": -186.60282810353777
+      },
+      "test_metrics": {
+        "rmse": 93.47557116418183,
+        "mae": 93.05535332302728,
+        "r2": -180.083118257592
+      },
+      "delta_theta": "(pi/phi)*deg2rad(angle_of_attack_deg)"
+    },
+    {
+      "id": "FO-211-A",
+      "variant": "A",
+      "readout": "additive",
+      "train_metrics": {
+        "rmse": 95.16473403848778,
+        "mae": 94.64890202436371,
+        "r2": -190.1403366858735
+      },
+      "test_metrics": {
+        "rmse": 94.82220016983788,
+        "mae": 94.31605204703757,
+        "r2": -185.33814407410472
+      },
+      "delta_theta": "2*pi*f*chord/U"
+    },
+    {
+      "id": "FO-211-B",
+      "variant": "B",
+      "readout": "additive",
+      "train_metrics": {
+        "rmse": 97.37758043954351,
+        "mae": 96.87819349904125,
+        "r2": -199.13278039351235
+      },
+      "test_metrics": {
+        "rmse": 97.47458771345937,
+        "mae": 96.95640055731805,
+        "r2": -195.908526963553
+      },
+      "delta_theta": "trinary_fold(f,U,\u03b4)->{-\u03c0/3,0,\u03c0/3}"
+    },
+    {
+      "id": "FO-211-C",
+      "variant": "C",
+      "readout": "additive",
+      "train_metrics": {
+        "rmse": 103.33142769877816,
+        "mae": 102.98098467772074,
+        "r2": -224.3539268491348
+      },
+      "test_metrics": {
+        "rmse": 102.64113430711566,
+        "mae": 102.30484102854228,
+        "r2": -217.3356207225279
+      },
+      "delta_theta": "(pi/phi)*deg2rad(angle_of_attack_deg)"
+    },
+    {
+      "id": "FO-211-B",
+      "variant": "B",
+      "readout": "multiplicative",
+      "train_metrics": {
+        "rmse": 124.1655986880997,
+        "mae": 123.97513694395872,
+        "r2": -324.3889826675094
+      },
+      "test_metrics": {
+        "rmse": 124.05577509809446,
+        "mae": 123.8619479407138,
+        "r2": -317.94491502016666
+      },
+      "delta_theta": "trinary_fold(f,U,\u03b4)->{-\u03c0/3,0,\u03c0/3}"
+    },
+    {
+      "id": "FO-211-A",
+      "variant": "A",
+      "readout": "multiplicative",
+      "train_metrics": {
+        "rmse": 124.31862335499031,
+        "mae": 124.12942066130225,
+        "r2": -325.1915112901019
+      },
+      "test_metrics": {
+        "rmse": 124.13527622140127,
+        "mae": 123.9448975200894,
+        "r2": -318.35383760107464
+      },
+      "delta_theta": "2*pi*f*chord/U"
+    },
+    {
+      "id": "FO-211-C",
+      "variant": "C",
+      "readout": "multiplicative",
+      "train_metrics": {
+        "rmse": 124.9431071171151,
+        "mae": 124.75461298817918,
+        "r2": -328.47682636374043
+      },
+      "test_metrics": {
+        "rmse": 124.77139117598463,
+        "mae": 124.57979368746777,
+        "r2": -321.6351973401011
+      },
+      "delta_theta": "(pi/phi)*deg2rad(angle_of_attack_deg)"
+    }
+  ],
+  "medians_for_B": {
+    "f": 1600.0,
+    "v": 39.6,
+    "d": 0.00485029
+  }
+}

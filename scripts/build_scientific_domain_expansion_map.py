@@ -18,10 +18,7 @@ OUTPUT_JSON = ROOT / "data" / "scientific_domain_expansion_map.json"
 OUTPUT_YAML = ROOT / "data" / "scientific_domain_expansion_map.yaml"
 
 # Candidate domains beyond current 35 + 4 extensions (FSOT 2.0 expansion arc)
-EXPANSION_CANDIDATES = [
-    {"id": "Econometrics", "rationale": "Economics uses linguistics proxy only", "priority": "low"},
-    {"id": "iGEM_Synthetic_Biology", "rationale": "Dedicated iGEM parts-registry strict-empirical bridge", "priority": "medium"},
-]
+EXPANSION_CANDIDATES: list[dict] = []
 
 
 def _load(path: Path) -> dict:
@@ -132,15 +129,25 @@ def build_map() -> dict:
     climate_bench = _load(ROOT / "data" / "climate_observed_benchmark.json")
     bio_strict = _load(ROOT / "data" / "biology_strict_empirical.json")
     neuron_th = _load(ROOT / "data" / "neuron_cohort_train_holdout.json")
-    fic = _load(ROOT / "data" / "fic_sensitivity_report.json")
+    fic_bench = _load(ROOT / "data" / "intelligence_compression_benchmark.json")
+    fic = fic_bench or _load(ROOT / "data" / "fic_sensitivity_report.json")
 
     intelligence_compression = None
     if fic:
+        n = int(
+            fic.get("record_count")
+            or fic.get("sweep_row_count")
+            or fic.get("row_count")
+            or 0
+        )
+        med = fic.get("median_error_pct") or fic.get("headline_median_error_pct") or fic.get(
+            "optimal_median_error_pct"
+        )
         intelligence_compression = {
             "domain": "Intelligence_Compression",
-            "record_count": int(fic.get("sweep_row_count") or fic.get("row_count") or 0),
-            "median_error_pct": fic.get("optimal_median_error_pct"),
-            "coverage_tier": _tier(fic.get("optimal_median_error_pct"), int(fic.get("sweep_row_count") or 0)),
+            "record_count": n,
+            "median_error_pct": med,
+            "coverage_tier": _tier(med, n),
             "lean_module": "FSOT.Formal.IntelligenceCompressionPriors",
         }
 
@@ -179,11 +186,11 @@ def build_map() -> dict:
         "authority_dispersal_domains": sorted(set(sign_dispersal)),
         "expansion_candidates": EXPANSION_CANDIDATES,
         "recommended_next_waves": [
-            "Math-generator per-rule FSOT numeric eval across 1520 formal rules",
+            "Thin neurolab domains: Ecology, Fluid_Dynamics, Psychology, Quantum_Computing depth pass",
+            "Culinary arts fermentation + Maillard kinetics extension",
             "Materials engineering species-catalog machine/molecule bridge",
-            "Trinary-OS oracle bundle in vendor/ for portable coding rebuild",
-            "iGEM parts-registry strict-empirical synthetic biology bridge",
             "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens",
+            "Pharmacokinetics + food microbiology bridges for biochemistry closure",
         ],
     }
 

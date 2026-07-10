@@ -1,0 +1,11 @@
+{
+  "catalog_version": "1.0",
+  "notes": "BH spin/closure indicators — reverse/slow spin ⇒ white pole already closed.",
+  "black_holes": [
+    {"name": "M87_star", "ra_deg": 187.71, "spin_indicator": "slow", "wh_phase": "closing", "jet_observed": true},
+    {"name": "SgrA_star", "ra_deg": 266.42, "spin_indicator": "normal", "wh_phase": "active", "jet_observed": false},
+    {"name": "Cygnus_X1", "ra_deg": 299.59, "spin_indicator": "reverse", "wh_phase": "closing", "jet_observed": true},
+    {"name": "M31_BH", "ra_deg": 10.68, "spin_indicator": "slow", "wh_phase": "closing", "jet_observed": false},
+    {"name": "NGC4261", "ra_deg": 184.15, "spin_indicator": "slow", "wh_phase": "closing", "jet_observed": true}
+  ]
+}

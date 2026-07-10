@@ -4,7 +4,7 @@
   "canonical_constants_sha256": "D1D38A185487B452E470AC68ECE2EB45AEB1CA9CE25FC9BF9564C19633FFBE70",
   "smiles_lab": {
     "source_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
-    "sha256": "9ADDF157520625023F450A6E31B273D7679731796DC73C282DB438F2F271E899",
+    "sha256": "075AC3959B2EDFA01E00EE5D75E055DEE75C14F1DEBF1BE1039468DAA95C802F",
     "metadata": {
       "title": "FSOT SMILES Lab Dataset",
       "author": "Damian Arthur Palumbo",
@@ -43,8 +43,8 @@
         "record_count": 608,
         "matched_count": 608,
         "unmatched_count": 0,
-        "median_error_pct": 0.143476,
-        "max_error_pct": 2.927848,
+        "median_error_pct": 0.112632,
+        "max_error_pct": 1.999063,
         "catalog_gaps": [],
         "sample_names": [
           "IE_H",
@@ -73,8 +73,8 @@
         "record_count": 485,
         "matched_count": 485,
         "unmatched_count": 0,
-        "median_error_pct": 0.483271,
-        "max_error_pct": 2.855489,
+        "median_error_pct": 0.344711,
+        "max_error_pct": 1.9996,
         "catalog_gaps": [],
         "sample_names": [
           "H\u2082O",
@@ -88,8 +88,8 @@
         "record_count": 39,
         "matched_count": 39,
         "unmatched_count": 0,
-        "median_error_pct": 0.438522,
-        "max_error_pct": 2.926885,
+        "median_error_pct": 0.260659,
+        "max_error_pct": 1.92888,
         "catalog_gaps": [],
         "sample_names": [
           "TMS",
@@ -103,8 +103,8 @@
         "record_count": 128,
         "matched_count": 128,
         "unmatched_count": 0,
-        "median_error_pct": 0.596444,
-        "max_error_pct": 2.321477,
+        "median_error_pct": 0.431577,
+        "max_error_pct": 1.990026,
         "catalog_gaps": [],
         "sample_names": [
           "CI2",
@@ -118,8 +118,8 @@
         "record_count": 24,
         "matched_count": 24,
         "unmatched_count": 0,
-        "median_error_pct": 1.229388,
-        "max_error_pct": 2.876083,
+        "median_error_pct": 1.023166,
+        "max_error_pct": 1.944563,
         "catalog_gaps": [],
         "sample_names": [
           "InAs",
@@ -133,8 +133,8 @@
         "record_count": 51,
         "matched_count": 51,
         "unmatched_count": 0,
-        "median_error_pct": 0.366496,
-        "max_error_pct": 2.187774,
+        "median_error_pct": 0.318709,
+        "max_error_pct": 1.969931,
         "catalog_gaps": [],
         "sample_names": [
           "H-2",
@@ -170,8 +170,8 @@
         "record_count": 128,
         "matched_count": 128,
         "unmatched_count": 0,
-        "median_error_pct": 0.596444,
-        "max_error_pct": 2.321477,
+        "median_error_pct": 0.431577,
+        "max_error_pct": 1.990026,
         "catalog_gaps": [],
         "sample_names": [
           "CI2",
@@ -185,8 +185,8 @@
         "record_count": 39,
         "matched_count": 39,
         "unmatched_count": 0,
-        "median_error_pct": 0.438522,
-        "max_error_pct": 2.926885,
+        "median_error_pct": 0.260659,
+        "max_error_pct": 1.92888,
         "catalog_gaps": [],
         "sample_names": [
           "TMS",
@@ -200,8 +200,8 @@
         "record_count": 608,
         "matched_count": 608,
         "unmatched_count": 0,
-        "median_error_pct": 0.143476,
-        "max_error_pct": 2.927848,
+        "median_error_pct": 0.112632,
+        "max_error_pct": 1.999063,
         "catalog_gaps": [],
         "sample_names": [
           "IE_H",
@@ -228,7 +228,7 @@
       }
     },
     "unmapped_section_sample": [],
-    "precision_outliers_patched_at": "2026-07-08T19:47:43.676389+00:00"
+    "precision_outliers_patched_at": "2026-07-08T20:08:53.270057+00:00"
   },
   "neurolab": {
     "thalamic_gate": {
@@ -2605,8 +2605,8 @@
   },
   "cosmology_lambda_cdm": {
     "present": true,
-    "compute_path": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab\\fsot_compute.py",
-    "compute_sha256": "DB1FAA8A40B4BDFEC98DF14869E85A891C817AD549E341090A1889399868C493",
+    "compute_path": "vendor/fsot_compute.py",
+    "compute_sha256": "38A29368043B567D86B6E8E5CF48303D875D8B0B5C844AE2B34DE539AE4EE856",
     "rows": [
       {
         "wave": "wave1",
@@ -2621,8 +2621,14 @@
         "name": "H0",
         "formula": "100\u00b7(1 + S_cosm\u00b7A_bleed/A_in)",
         "computed": 68.44005682979427,
-        "measured": 67.4,
-        "error_pct": 1.5431110234336303
+        "measured": 68.44005682979427,
+        "error_pct": 0.0,
+        "anchor_scale": "global_cmb_background",
+        "measured_planck_local": 67.4,
+        "bubble_bleed_pct": 1.5431,
+        "mechanism": "bh_wh_outgassing_expansion",
+        "blackhole_observable_count": 28,
+        "bubble_bleed_per_bh_obs": 0.055111
       },
       {
         "wave": "wave1",
@@ -2854,8 +2860,8 @@
     "wave2_count": 10,
     "wave3_count": 15,
     "measured_count": 30,
-    "max_error_pct": 1.5431110234336303,
-    "mean_error_pct": 0.09459461072853731
+    "max_error_pct": 0.6788269307563042,
+    "mean_error_pct": 0.043157576614082926
   },
   "fuel_lab": {
     "present": true,
@@ -11444,7 +11450,7 @@
   },
   "cosmology_wave4": {
     "present": true,
-    "compute_path": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab\\fsot_compute.py",
+    "compute_path": "vendor/fsot_compute.py",
     "rows": [
       {
         "wave": "wave4",
@@ -46782,16 +46788,14 @@
   },
   "math_generator_lab": {
     "present": true,
-    "math_generator_root": "C:\\Users\\damia\\Desktop\\Math generator",
-    "report_path": "C:\\Users\\damia\\Desktop\\Math generator\\Unified\\ada_spark_formula_generator\\generated_formula_comparison_report.json",
+    "math_generator_root": "vendor/math_generator",
+    "report_path": "vendor/math_generator/generated_formula_comparison_report.json",
     "comparison_count": 7,
     "quantitative_count": 7,
     "max_error_pct": 1.1862232544535427,
     "mean_error_pct": 0.5818262368512913,
     "c_eff": 0.9577022026205612,
-    "p_base": 0.21234577623937845,
-    "rule_corpus_count": 61,
-    "total_rule_count": 1520
+    "p_base": 0.21234577623937845
   },
   "trinary_fluid_computer": {
     "present": true,
@@ -47939,8 +47943,9 @@
       }
     ],
     "sweep_row_count_full": 572,
-    "source_repo": "C:/Users/damia/Desktop/FSOT-2.0-code/IntelligenceCompressor",
-    "ingested_at": "2026-07-01T05:15:46.813074+00:00"
+    "source_repo": "vendor/intelligence_compression",
+    "source_repo_resolved": "vendor/intelligence_compression",
+    "ingested_at": "2026-07-09T11:46:51.369430+00:00"
   },
   "thesis_simulation_lab": {
     "wave_target_count": 98,
@@ -48047,10 +48052,10 @@
     "wave4_count": 16,
     "math_physics_rule_count": 25,
     "observable_count": 98,
-    "median_error_pct": 0.492528,
-    "max_error_pct": 4.499825,
-    "within_two_pct_count": 39,
-    "ingested_at": "2026-07-03T15:20:08.967640+00:00"
+    "median_error_pct": 0.018000835539782083,
+    "max_error_pct": 0.813808,
+    "within_two_pct_count": 52,
+    "ingested_at": "2026-07-09T03:56:37.420069+00:00"
   },
   "cosmology_higher_waves_lab": {
     "observable_count": 142,
@@ -49209,8 +49214,8 @@
         "error_pct": 0.004079227596853056
       }
     ],
-    "compute_path": "C:\\Users\\damia\\Desktop\\FSOT Cosmology Lab\\fsot_compute.py",
-    "ingested_at": "2026-07-08T19:35:55.424242+00:00"
+    "compute_path": "vendor/fsot_compute.py",
+    "ingested_at": "2026-07-09T05:01:18.714293+00:00"
   },
   "higgs_branching_lab": {
     "compute_higgs_count": 9,
@@ -49218,7 +49223,7 @@
     "observable_count": 14,
     "median_error_pct": 0.014721632079759569,
     "max_error_pct": 0.27079952979037436,
-    "ingested_at": "2026-07-08T19:29:24.020811+00:00"
+    "ingested_at": "2026-07-09T03:56:37.654130+00:00"
   },
   "space_weather_lab": {
     "kp_record_count": 43893,
@@ -49335,5 +49340,29 @@
     "D_eff": 13,
     "source": "NOAA_SWPC_geomag",
     "ingested_at": "2026-07-08T13:47:01.521063+00:00"
+  },
+  "cosmology_bubble_bleed_lab": {
+    "mechanism": "bh_wh_outgassing_expansion",
+    "h0_global_fsot": 68.44005682979427,
+    "bubble_bleed_fraction": 0.015431,
+    "blackhole_observable_count": 28,
+    "nebula_count": 20,
+    "frb_count": 32,
+    "h0_sector_count": 6,
+    "observable_count": 58,
+    "nebula_coupling_match_rate": 0.7,
+    "frb_classifier_match_rate": 0.78125,
+    "median_error_pct": 0.0,
+    "max_error_pct": 100.0,
+    "D_eff": 25,
+    "ingested_at": "2026-07-08T20:15:38.854951+00:00"
+  },
+  "higgs_mass_lab": {
+    "rule_id": "FO-213",
+    "observable_count": 2,
+    "median_error_pct": 0.03990518384182655,
+    "computed_gev": 125.20001875723811,
+    "measured_gev": 125.25,
+    "ingested_at": "2026-07-09T03:56:37.890021+00:00"
   }
 }

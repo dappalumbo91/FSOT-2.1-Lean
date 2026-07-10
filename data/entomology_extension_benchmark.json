@@ -1,0 +1,3925 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.508383+00:00",
+  "domain": "Entomology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "GBIF_Insecta",
+    "zoology_bridge"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "ecological"
+  ],
+  "D_eff": 14,
+  "record_count": 430,
+  "observable_count": 430,
+  "median_error_pct": 0.022236250385189223,
+  "pooled_median_error_pct": 0.022236250385189223,
+  "headline_median_error_pct": 0.022236250385189223,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "entomology_gbif": {
+        "sota_typical_error_pct": 7.0,
+        "sota_model": "GBIF insect occurrence QA"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_insect_occurrence_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236250385189223,
+      "observable_count": 430
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "insect_occurrence",
+      "name": "entomology_gbif",
+      "computed": 0.022236,
+      "measured": 0.0,
+      "error_pct": 0.022236250385189223,
+      "observable_count": 400
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Lemyra imparilis",
+      "computed": 25.162612,
+      "measured": 25.157018,
+      "error_pct": 0.022236250385194587,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Lemyra imparilis",
+      "computed": 121.561548,
+      "measured": 121.539927,
+      "error_pct": 0.0177890003081506,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Lemyra imparilis",
+      "computed": 25.162612,
+      "measured": 25.157018,
+      "error_pct": 0.022236250385194587,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Lemyra imparilis",
+      "computed": 121.561548,
+      "measured": 121.539927,
+      "error_pct": 0.0177890003081506,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Anadevidia peponis",
+      "computed": 25.162612,
+      "measured": 25.157018,
+      "error_pct": 0.022236250385194587,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Anadevidia peponis",
+      "computed": 121.561548,
+      "measured": 121.539927,
+      "error_pct": 0.0177890003081506,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Nyctemera lacticinia",
+      "computed": 25.162612,
+      "measured": 25.157018,
+      "error_pct": 0.022236250385194587,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Nyctemera lacticinia",
+      "computed": 121.561548,
+      "measured": 121.539927,
+      "error_pct": 0.0177890003081506,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Neoreta purpureofascia",
+      "computed": 24.960716,
+      "measured": 24.955167,
+      "error_pct": 0.022236250385197262,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Neoreta purpureofascia",
+      "computed": 121.704785,
+      "measured": 121.683139,
+      "error_pct": 0.017789000308151327,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Acherontia lachesis",
+      "computed": 22.899326,
+      "measured": 22.894235,
+      "error_pct": 0.022236250385206734,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Acherontia lachesis",
+      "computed": 121.268181,
+      "measured": 121.246612,
+      "error_pct": 0.01778900030815094,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Platytomus parvulus",
+      "computed": 21.282331,
+      "measured": 21.2776,
+      "error_pct": 0.022236250385200055,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Platytomus parvulus",
+      "computed": -157.724053,
+      "measured": -157.696,
+      "error_pct": 0.01778900030815287,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Eterusia aedea",
+      "computed": 25.004375,
+      "measured": 24.998816,
+      "error_pct": 0.022236250385205696,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Eterusia aedea",
+      "computed": 121.602705,
+      "measured": 121.581077,
+      "error_pct": 0.01778900030815901,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Marumba cristata",
+      "computed": 24.960716,
+      "measured": 24.955167,
+      "error_pct": 0.022236250385197262,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Marumba cristata",
+      "computed": 121.704785,
+      "measured": 121.683139,
+      "error_pct": 0.017789000308151327,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Antitrygodes divisaria",
+      "computed": 24.960716,
+      "measured": 24.955167,
+      "error_pct": 0.022236250385197262,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Antitrygodes divisaria",
+      "computed": 121.704785,
+      "measured": 121.683139,
+      "error_pct": 0.017789000308151327,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 24.960716,
+      "measured": 24.955167,
+      "error_pct": 0.022236250385197262,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 121.704785,
+      "measured": 121.683139,
+      "error_pct": 0.017789000308151327,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Parectropis subflava",
+      "computed": 23.560881,
+      "measured": 23.555643,
+      "error_pct": 0.02223625038520507,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Parectropis subflava",
+      "computed": 120.832578,
+      "measured": 120.811087,
+      "error_pct": 0.0177890003081516,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Somena scintillans",
+      "computed": 24.960716,
+      "measured": 24.955167,
+      "error_pct": 0.022236250385197262,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Somena scintillans",
+      "computed": 121.704785,
+      "measured": 121.683139,
+      "error_pct": 0.017789000308151327,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Rinaca thibeta",
+      "computed": 24.960716,
+      "measured": 24.955167,
+      "error_pct": 0.022236250385197262,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Rinaca thibeta",
+      "computed": 121.704785,
+      "measured": 121.683139,
+      "error_pct": 0.017789000308151327,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 24.184821,
+      "measured": 24.179444,
+      "error_pct": 0.022236250385198553,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 120.821433,
+      "measured": 120.799944,
+      "error_pct": 0.01778900030815689,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": -35.245921,
+      "measured": -35.238085,
+      "error_pct": 0.022236250385197283,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 149.056054,
+      "measured": 149.029543,
+      "error_pct": 0.01778900030815652,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Olene mendosa",
+      "computed": 24.957188,
+      "measured": 24.95164,
+      "error_pct": 0.022236250385197994,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Olene mendosa",
+      "computed": 121.710436,
+      "measured": 121.688789,
+      "error_pct": 0.017789000308150508,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Ilybius chalconatus",
+      "computed": 56.794106,
+      "measured": 56.78148,
+      "error_pct": 0.022236250385203125,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Ilybius chalconatus",
+      "computed": 15.890676,
+      "measured": 15.88785,
+      "error_pct": 0.017789000308150598,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Acrocercops brongniardella",
+      "computed": 59.350744,
+      "measured": 59.33755,
+      "error_pct": 0.02223625038519392,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Acrocercops brongniardella",
+      "computed": 18.901322,
+      "measured": 18.89796,
+      "error_pct": 0.017789000308163522,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Diplolepis rosae",
+      "computed": 56.590161,
+      "measured": 56.57758,
+      "error_pct": 0.022236250385196395,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Diplolepis rosae",
+      "computed": 16.47258,
+      "measured": 16.46965,
+      "error_pct": 0.017789000308145838,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Acrocercops brongniardella",
+      "computed": 56.600203,
+      "measured": 56.58762,
+      "error_pct": 0.022236250385201703,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Acrocercops brongniardella",
+      "computed": 12.942242,
+      "measured": 12.93994,
+      "error_pct": 0.017789000308150695,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Depressaria depressana",
+      "computed": 59.080514,
+      "measured": 59.06738,
+      "error_pct": 0.022236250385204888,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Depressaria depressana",
+      "computed": 18.230712,
+      "measured": 18.22747,
+      "error_pct": 0.017789000308149523,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Monarthropalpus flavus",
+      "computed": 55.534436,
+      "measured": 55.52209,
+      "error_pct": 0.02223625038520384,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Monarthropalpus flavus",
+      "computed": 13.249367,
+      "measured": 13.24701,
+      "error_pct": 0.017789000308149033,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Lepisma saccharinum",
+      "computed": 55.780801,
+      "measured": 55.7684,
+      "error_pct": 0.022236250385198227,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Lepisma saccharinum",
+      "computed": 13.084667,
+      "measured": 13.08234,
+      "error_pct": 0.017789000308159976,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Lygaeus equestris",
+      "computed": 58.357734,
+      "measured": 58.34476,
+      "error_pct": 0.022236250385193747,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Lygaeus equestris",
+      "computed": 15.863571,
+      "measured": 15.86075,
+      "error_pct": 0.017789000308156357,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Cryptophagus scanicus",
+      "computed": 56.794106,
+      "measured": 56.78148,
+      "error_pct": 0.022236250385203125,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Cryptophagus scanicus",
+      "computed": 15.890676,
+      "measured": 15.88785,
+      "error_pct": 0.017789000308150598,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Stenus solutus",
+      "computed": 57.447071,
+      "measured": 57.4343,
+      "error_pct": 0.022236250385198362,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Stenus solutus",
+      "computed": 11.991793,
+      "measured": 11.98966,
+      "error_pct": 0.01778900030816128,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Stenus clavicornis",
+      "computed": 56.794106,
+      "measured": 56.78148,
+      "error_pct": 0.022236250385203125,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Stenus clavicornis",
+      "computed": 15.890676,
+      "measured": 15.88785,
+      "error_pct": 0.017789000308150598,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Mocyta fungi",
+      "computed": 56.794106,
+      "measured": 56.78148,
+      "error_pct": 0.022236250385203125,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Mocyta fungi",
+      "computed": 15.890676,
+      "measured": 15.88785,
+      "error_pct": 0.017789000308150598,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Scoliopteryx libatrix",
+      "computed": 59.876301,
+      "measured": 59.86299,
+      "error_pct": 0.022236250385200974,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Scoliopteryx libatrix",
+      "computed": 18.811456,
+      "measured": 18.80811,
+      "error_pct": 0.017789000308164094,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Culiseta annulata",
+      "computed": 57.446751,
+      "measured": 57.43398,
+      "error_pct": 0.022236250385197064,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Culiseta annulata",
+      "computed": 12.017857,
+      "measured": 12.01572,
+      "error_pct": 0.017789000308149328,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Diplolepis rosae",
+      "computed": 55.534746,
+      "measured": 55.5224,
+      "error_pct": 0.022236250385197543,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Diplolepis rosae",
+      "computed": 13.246916,
+      "measured": 13.24456,
+      "error_pct": 0.017789000308161437,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Narycia duplicella",
+      "computed": 57.446751,
+      "measured": 57.43398,
+      "error_pct": 0.022236250385197064,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Narycia duplicella",
+      "computed": 12.017857,
+      "measured": 12.01572,
+      "error_pct": 0.017789000308149328,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 59.876301,
+      "measured": 59.86299,
+      "error_pct": 0.022236250385200974,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 18.811456,
+      "measured": 18.80811,
+      "error_pct": 0.017789000308164094,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Chrysoperla carnea",
+      "computed": 58.041193,
+      "measured": 58.02829,
+      "error_pct": 0.0222362503852016,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Chrysoperla carnea",
+      "computed": 14.959531,
+      "measured": 14.95687,
+      "error_pct": 0.017789000308150612,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Lathrobium elongatum",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Lathrobium elongatum",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Anacaena lutescens",
+      "computed": 57.447071,
+      "measured": 57.4343,
+      "error_pct": 0.022236250385198362,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Anacaena lutescens",
+      "computed": 11.991793,
+      "measured": 11.98966,
+      "error_pct": 0.01778900030816128,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Tytthaspis sedecimpunctata",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Tytthaspis sedecimpunctata",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Hypera diversipunctata",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Hypera diversipunctata",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Helophorus grandis",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Helophorus grandis",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Gabrius trossulus",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Gabrius trossulus",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Tinea pellionella",
+      "computed": 57.399421,
+      "measured": 57.38666,
+      "error_pct": 0.02223625038519498,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Tinea pellionella",
+      "computed": 15.816353,
+      "measured": 15.81354,
+      "error_pct": 0.017789000308157218,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Andricus fecundatrix",
+      "computed": 56.81213,
+      "measured": 56.7995,
+      "error_pct": 0.022236250385201328,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Andricus fecundatrix",
+      "computed": 12.893133,
+      "measured": 12.89084,
+      "error_pct": 0.01778900030815605,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Anotylus rugosus",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Anotylus rugosus",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Scolytus ratzeburgii",
+      "computed": 59.227057,
+      "measured": 59.21389,
+      "error_pct": 0.022236250385194736,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Scolytus ratzeburgii",
+      "computed": 17.700098,
+      "measured": 17.69695,
+      "error_pct": 0.017789000308156964,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Saperda perforata",
+      "computed": 59.383022,
+      "measured": 59.36982,
+      "error_pct": 0.022236250385201474,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Saperda perforata",
+      "computed": 17.082098,
+      "measured": 17.07906,
+      "error_pct": 0.01778900030815517,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 57.229983,
+      "measured": 57.21726,
+      "error_pct": 0.022236250385197852,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 16.037802,
+      "measured": 16.03495,
+      "error_pct": 0.017789000308146435,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Amara familiaris",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Amara familiaris",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Acrocercops brongniardella",
+      "computed": 59.785961,
+      "measured": 59.77267,
+      "error_pct": 0.02223625038519602,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Acrocercops brongniardella",
+      "computed": 17.606832,
+      "measured": 17.6037,
+      "error_pct": 0.017789000308161846,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Scoliopteryx libatrix",
+      "computed": 56.718169,
+      "measured": 56.70556,
+      "error_pct": 0.02223625038519452,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Scoliopteryx libatrix",
+      "computed": 13.095819,
+      "measured": 13.09349,
+      "error_pct": 0.017789000308149394,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Melinopterus sphacelatus",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Melinopterus sphacelatus",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Bembidion lampros",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Bembidion lampros",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Myrmica ruginodis",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Myrmica ruginodis",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 55.609713,
+      "measured": 55.59735,
+      "error_pct": 0.02223625038519467,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 13.015035,
+      "measured": 13.01272,
+      "error_pct": 0.017789000308149366,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Olophrum assimile",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Olophrum assimile",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 57.501213,
+      "measured": 57.48843,
+      "error_pct": 0.022236250385195257,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 15.844058,
+      "measured": 15.84124,
+      "error_pct": 0.017789000308158515,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Acupalpus exiguus",
+      "computed": 56.794106,
+      "measured": 56.78148,
+      "error_pct": 0.022236250385203125,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Acupalpus exiguus",
+      "computed": 15.890676,
+      "measured": 15.88785,
+      "error_pct": 0.017789000308150598,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Euaesthetus ruficapillus",
+      "computed": 56.794106,
+      "measured": 56.78148,
+      "error_pct": 0.022236250385203125,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Euaesthetus ruficapillus",
+      "computed": 15.890676,
+      "measured": 15.88785,
+      "error_pct": 0.017789000308150598,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 55.534436,
+      "measured": 55.52209,
+      "error_pct": 0.02223625038520384,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 13.249367,
+      "measured": 13.24701,
+      "error_pct": 0.017789000308149033,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Agonopterix heracliana",
+      "computed": 59.190279,
+      "measured": 59.17712,
+      "error_pct": 0.02223625038520318,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Agonopterix heracliana",
+      "computed": 15.380796,
+      "measured": 15.37806,
+      "error_pct": 0.017789000308155622,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Hypena rostralis",
+      "computed": 58.616451,
+      "measured": 58.60342,
+      "error_pct": 0.022236250385204676,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Hypena rostralis",
+      "computed": 13.446142,
+      "measured": 13.44375,
+      "error_pct": 0.0177890003081491,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 58.07236,
+      "measured": 58.05945,
+      "error_pct": 0.022236250385193765,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 11.832635,
+      "measured": 11.83053,
+      "error_pct": 0.017789000308158883,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Acrotrichis sitkaensis",
+      "computed": 56.794106,
+      "measured": 56.78148,
+      "error_pct": 0.022236250385203125,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Acrotrichis sitkaensis",
+      "computed": 15.890676,
+      "measured": 15.88785,
+      "error_pct": 0.017789000308150598,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 56.785004,
+      "measured": 56.77238,
+      "error_pct": 0.022236250385199354,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Ctenolepisma longicaudatum",
+      "computed": 14.615189,
+      "measured": 14.61259,
+      "error_pct": 0.017789000308159247,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Pediculus humanus",
+      "computed": 59.312746,
+      "measured": 59.29956,
+      "error_pct": 0.022236250385204284,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Pediculus humanus",
+      "computed": 15.156156,
+      "measured": 15.15346,
+      "error_pct": 0.01778900030815466,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Acrocercops brongniardella",
+      "computed": 59.122744,
+      "measured": 59.1096,
+      "error_pct": 0.022236250385201044,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Acrocercops brongniardella",
+      "computed": 18.002262,
+      "measured": 17.99906,
+      "error_pct": 0.01778900030814563,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Adalia bipunctata",
+      "computed": 61.857912,
+      "measured": 61.84416,
+      "error_pct": 0.022236250385197713,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Adalia bipunctata",
+      "computed": 16.571707,
+      "measured": 16.56876,
+      "error_pct": 0.017789000308161728,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Alucita hexadactyla",
+      "computed": 59.082385,
+      "measured": 59.06925,
+      "error_pct": 0.022236250385200624,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Alucita hexadactyla",
+      "computed": 18.224831,
+      "measured": 18.22159,
+      "error_pct": 0.01778900030816336,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Lepisma saccharinum",
+      "computed": 56.974006,
+      "measured": 56.96134,
+      "error_pct": 0.022236250385193956,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Lepisma saccharinum",
+      "computed": 18.236434,
+      "measured": 18.23319,
+      "error_pct": 0.01778900030814575,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Bembidion mannerheimii",
+      "computed": 56.794106,
+      "measured": 56.78148,
+      "error_pct": 0.022236250385203125,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Bembidion mannerheimii",
+      "computed": 15.890676,
+      "measured": 15.88785,
+      "error_pct": 0.017789000308150598,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Oligota pusillima",
+      "computed": 56.794106,
+      "measured": 56.78148,
+      "error_pct": 0.022236250385203125,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Oligota pusillima",
+      "computed": 15.890676,
+      "measured": 15.88785,
+      "error_pct": 0.017789000308150598,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Operophtera brumata",
+      "computed": 56.703546,
+      "measured": 56.69094,
+      "error_pct": 0.022236250385196214,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Operophtera brumata",
+      "computed": 16.337056,
+      "measured": 16.33415,
+      "error_pct": 0.01778900030815199,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Eulecanium tiliae",
+      "computed": 59.172295,
+      "measured": 59.15914,
+      "error_pct": 0.022236250385197557,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Eulecanium tiliae",
+      "computed": 16.477881,
+      "measured": 16.47495,
+      "error_pct": 0.017789000308151996,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Alucita hexadactyla",
+      "computed": 56.718169,
+      "measured": 56.70556,
+      "error_pct": 0.02223625038519452,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Alucita hexadactyla",
+      "computed": 13.095819,
+      "measured": 13.09349,
+      "error_pct": 0.017789000308149394,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Biorhiza pallida",
+      "computed": 58.033132,
+      "measured": 58.02023,
+      "error_pct": 0.022236250385199025,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Biorhiza pallida",
+      "computed": 14.959221,
+      "measured": 14.95656,
+      "error_pct": 0.017789000308155056,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Caloptilia stigmatella",
+      "computed": 59.082385,
+      "measured": 59.06925,
+      "error_pct": 0.022236250385200624,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Caloptilia stigmatella",
+      "computed": 18.224831,
+      "measured": 18.22159,
+      "error_pct": 0.01778900030816336,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Psammoecus bipunctatus",
+      "computed": 57.447071,
+      "measured": 57.4343,
+      "error_pct": 0.022236250385198362,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Psammoecus bipunctatus",
+      "computed": 11.991793,
+      "measured": 11.98966,
+      "error_pct": 0.01778900030816128,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 56.925185,
+      "measured": 56.91253,
+      "error_pct": 0.02223625038520486,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 14.006861,
+      "measured": 14.00437,
+      "error_pct": 0.017789000308160514,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Lepisma saccharinum",
+      "computed": 55.609713,
+      "measured": 55.59735,
+      "error_pct": 0.02223625038519467,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Lepisma saccharinum",
+      "computed": 13.015035,
+      "measured": 13.01272,
+      "error_pct": 0.017789000308149366,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Gymnoscelis rufifasciata",
+      "computed": 59.366378,
+      "measured": 59.35318,
+      "error_pct": 0.0222362503851959,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Gymnoscelis rufifasciata",
+      "computed": 18.205228,
+      "measured": 18.20199,
+      "error_pct": 0.017789000308157495,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Bembidion guttula",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Bembidion guttula",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Nothorhina punctata",
+      "computed": 57.788257,
+      "measured": 57.77541,
+      "error_pct": 0.022236250385203903,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Nothorhina punctata",
+      "computed": 16.64314,
+      "measured": 16.64018,
+      "error_pct": 0.01778900030815819,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Scolopostethus affinis",
+      "computed": 57.447071,
+      "measured": 57.4343,
+      "error_pct": 0.022236250385198362,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Scolopostethus affinis",
+      "computed": 11.991793,
+      "measured": 11.98966,
+      "error_pct": 0.01778900030816128,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Trichocera hiemalis",
+      "computed": 56.925185,
+      "measured": 56.91253,
+      "error_pct": 0.02223625038520486,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Trichocera hiemalis",
+      "computed": 14.006861,
+      "measured": 14.00437,
+      "error_pct": 0.017789000308160514,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Nothorhina punctata",
+      "computed": 57.788137,
+      "measured": 57.77529,
+      "error_pct": 0.022236250385201883,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Nothorhina punctata",
+      "computed": 16.64322,
+      "measured": 16.64026,
+      "error_pct": 0.01778900030816336,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Bembidion gilvipes",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Bembidion gilvipes",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Coccinella septempunctata",
+      "computed": 55.879873,
+      "measured": 55.86745,
+      "error_pct": 0.022236250385193508,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Coccinella septempunctata",
+      "computed": 13.091828,
+      "measured": 13.0895,
+      "error_pct": 0.01778900030815083,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Margarinotus purpurascens",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Margarinotus purpurascens",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Acupalpus exiguus",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Acupalpus exiguus",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Otiorhynchus ovatus",
+      "computed": 59.078834,
+      "measured": 59.0657,
+      "error_pct": 0.02223625038520126,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Otiorhynchus ovatus",
+      "computed": 15.089124,
+      "measured": 15.08644,
+      "error_pct": 0.017789000308154116,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Poecilus versicolor",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Poecilus versicolor",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Ilybius chalconatus",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Ilybius chalconatus",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Amara plebeja",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Amara plebeja",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Amara convexior",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Amara convexior",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Ocyusa maura",
+      "computed": 57.447071,
+      "measured": 57.4343,
+      "error_pct": 0.022236250385198362,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Ocyusa maura",
+      "computed": 11.991793,
+      "measured": 11.98966,
+      "error_pct": 0.01778900030816128,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Amara aenea",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Amara aenea",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Volinus sticticus",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Volinus sticticus",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Amara similata",
+      "computed": 56.752567,
+      "measured": 56.73995,
+      "error_pct": 0.022236250385197054,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Amara similata",
+      "computed": 15.875874,
+      "measured": 15.87305,
+      "error_pct": 0.01778900030815556,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Oryzaephilus surinamensis",
+      "computed": 60.258304,
+      "measured": 60.244908,
+      "error_pct": 0.022236250385194233,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Oryzaephilus surinamensis",
+      "computed": 24.991536,
+      "measured": 24.987091,
+      "error_pct": 0.017789000308155504,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Attagenus woodroffei",
+      "computed": 62.24643,
+      "measured": 62.232592,
+      "error_pct": 0.0222362503851993,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Attagenus woodroffei",
+      "computed": 25.671612,
+      "measured": 25.667046,
+      "error_pct": 0.017789000308151108,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Attagenus woodroffei",
+      "computed": 60.258197,
+      "measured": 60.244801,
+      "error_pct": 0.02223625038519673,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Attagenus woodroffei",
+      "computed": 24.991924,
+      "measured": 24.987479,
+      "error_pct": 0.017789000308158685,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Scoliopteryx libatrix",
+      "computed": 60.561341,
+      "measured": 60.547877,
+      "error_pct": 0.022236250385195437,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Scoliopteryx libatrix",
+      "computed": 22.168718,
+      "measured": 22.164775,
+      "error_pct": 0.01778900030814847,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Conistra rubiginosa",
+      "computed": 60.47189,
+      "measured": 60.458446,
+      "error_pct": 0.022236250385200825,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Conistra rubiginosa",
+      "computed": 22.182053,
+      "measured": 22.178108,
+      "error_pct": 0.017789000308151715,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Scolopostethus thomsoni",
+      "computed": 60.191181,
+      "measured": 60.1778,
+      "error_pct": 0.022236250385203906,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Scolopostethus thomsoni",
+      "computed": 24.668023,
+      "measured": 24.663636,
+      "error_pct": 0.017789000308158092,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Triphosa dubitata",
+      "computed": 60.561341,
+      "measured": 60.547877,
+      "error_pct": 0.022236250385195437,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Triphosa dubitata",
+      "computed": 22.168718,
+      "measured": 22.164775,
+      "error_pct": 0.01778900030814847,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Conistra vaccinii",
+      "computed": 60.47189,
+      "measured": 60.458446,
+      "error_pct": 0.022236250385200825,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Conistra vaccinii",
+      "computed": 22.182053,
+      "measured": 22.178108,
+      "error_pct": 0.017789000308151715,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Macromia illinoiensis",
+      "computed": 43.1535,
+      "measured": 43.143906,
+      "error_pct": 0.02223625038519988,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Macromia illinoiensis",
+      "computed": -84.149654,
+      "measured": -84.134687,
+      "error_pct": 0.01778900030815971,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": -26.481976,
+      "measured": -26.476089,
+      "error_pct": 0.022236250385203247,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 153.115071,
+      "measured": 153.087838,
+      "error_pct": 0.01778900030815024,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Eudonia sabulosella",
+      "computed": -38.140284,
+      "measured": -38.131805,
+      "error_pct": 0.02223625038519969,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Eudonia sabulosella",
+      "computed": 176.334993,
+      "measured": 176.30363,
+      "error_pct": 0.017789000308156958,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Micromus tasmaniae",
+      "computed": -35.004287,
+      "measured": -34.996505,
+      "error_pct": 0.02223625038519394,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Micromus tasmaniae",
+      "computed": 138.645112,
+      "measured": 138.620453,
+      "error_pct": 0.017789000308149013,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Frutioidia bisignata",
+      "computed": 52.564883,
+      "measured": 52.553197,
+      "error_pct": 0.022236250385193147,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Frutioidia bisignata",
+      "computed": 13.392515,
+      "measured": 13.390133,
+      "error_pct": 0.017789000308156132,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Drephalys dumeril",
+      "computed": -12.452063,
+      "measured": -12.449295,
+      "error_pct": 0.022236250385204586,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Drephalys dumeril",
+      "computed": -37.952025,
+      "measured": -37.945275,
+      "error_pct": 0.017789000308152444,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Euthalia aconthea",
+      "computed": 19.072693,
+      "measured": 19.068453,
+      "error_pct": 0.022236250385194983,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Euthalia aconthea",
+      "computed": 73.084632,
+      "measured": 73.071633,
+      "error_pct": 0.017789000308151996,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Eumarozia malachitana",
+      "computed": 26.223327,
+      "measured": 26.217497,
+      "error_pct": 0.0222362503851968,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Eumarozia malachitana",
+      "computed": -98.393325,
+      "measured": -98.375825,
+      "error_pct": 0.017789000308147736,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Geitoneura acantha",
+      "computed": -37.679433,
+      "measured": -37.671056,
+      "error_pct": 0.022236250385197553,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Geitoneura acantha",
+      "computed": 145.917802,
+      "measured": 145.891849,
+      "error_pct": 0.0177890003081564,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Crypsiphona ocultaria",
+      "computed": -27.654025,
+      "measured": -27.647877,
+      "error_pct": 0.022236250385200718,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Crypsiphona ocultaria",
+      "computed": 151.977649,
+      "measured": 151.950619,
+      "error_pct": 0.017789000308151226,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Hamadryas feronia",
+      "computed": -21.866177,
+      "measured": -21.861316,
+      "error_pct": 0.022236250385202303,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Hamadryas feronia",
+      "computed": -42.394613,
+      "measured": -42.387073,
+      "error_pct": 0.017789000308157832,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Vanessa atalanta",
+      "computed": 37.795554,
+      "measured": 37.787152,
+      "error_pct": 0.022236250385207598,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Vanessa atalanta",
+      "computed": -122.494947,
+      "measured": -122.47316,
+      "error_pct": 0.017789000308156923,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Danaus plexippus",
+      "computed": 25.184136,
+      "measured": 25.178537,
+      "error_pct": 0.022236250385196256,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Danaus plexippus",
+      "computed": -80.888635,
+      "measured": -80.874248,
+      "error_pct": 0.017789000308161003,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Harmonia axyridis",
+      "computed": 37.233005,
+      "measured": 37.224728,
+      "error_pct": 0.022236250385198875,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Harmonia axyridis",
+      "computed": -121.943869,
+      "measured": -121.92218,
+      "error_pct": 0.017789000308150303,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Dolba hyloeus",
+      "computed": 29.279612,
+      "measured": 29.273103,
+      "error_pct": 0.0222362503851965,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Dolba hyloeus",
+      "computed": -94.835304,
+      "measured": -94.818437,
+      "error_pct": 0.017789000308156274,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phyllotocus macleayi",
+      "computed": -36.792768,
+      "measured": -36.784588,
+      "error_pct": 0.0222362503852011,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phyllotocus macleayi",
+      "computed": 174.806221,
+      "measured": 174.77513,
+      "error_pct": 0.01778900030815124,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Pseudocoremia leucelaea",
+      "computed": -36.859695,
+      "measured": -36.851501,
+      "error_pct": 0.022236250385192193,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Pseudocoremia leucelaea",
+      "computed": 174.803874,
+      "measured": 174.772784,
+      "error_pct": 0.017789000308153634,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": -17.922708,
+      "measured": -17.918724,
+      "error_pct": 0.02223625038519037,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 146.121719,
+      "measured": 146.09573,
+      "error_pct": 0.01778900030815097,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Hypolimnas bolina",
+      "computed": 12.986933,
+      "measured": 12.984046,
+      "error_pct": 0.022236250385201058,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Hypolimnas bolina",
+      "computed": 77.578375,
+      "measured": 77.564577,
+      "error_pct": 0.017789000308157128,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Coccinella septempunctata",
+      "computed": 45.135527,
+      "measured": 45.125493,
+      "error_pct": 0.022236250385200124,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Coccinella septempunctata",
+      "computed": 10.442337,
+      "measured": 10.44048,
+      "error_pct": 0.017789000308148926,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Chiasmetes limae",
+      "computed": -32.853074,
+      "measured": -32.84577,
+      "error_pct": 0.022236250385207875,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Chiasmetes limae",
+      "computed": -71.009901,
+      "measured": -70.997271,
+      "error_pct": 0.017789000308159737,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Alsophila pometaria",
+      "computed": 41.003896,
+      "measured": 40.99478,
+      "error_pct": 0.022236250385191652,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Alsophila pometaria",
+      "computed": -73.819517,
+      "measured": -73.806388,
+      "error_pct": 0.01778900030815917,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Heteronympha merope",
+      "computed": -37.647492,
+      "measured": -37.639122,
+      "error_pct": 0.02223625038519056,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Heteronympha merope",
+      "computed": 145.270957,
+      "measured": 145.245119,
+      "error_pct": 0.01778900030816412,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Vanessa cardui",
+      "computed": 30.4598,
+      "measured": 30.453028,
+      "error_pct": 0.022236250385199295,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Vanessa cardui",
+      "computed": -97.762338,
+      "measured": -97.74495,
+      "error_pct": 0.017789000308159726,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Danaus plexippus",
+      "computed": 37.492155,
+      "measured": 37.48382,
+      "error_pct": 0.022236250385200603,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Danaus plexippus",
+      "computed": -122.465997,
+      "measured": -122.444215,
+      "error_pct": 0.0177890003081587,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Pyralis farinalis",
+      "computed": -33.906418,
+      "measured": -33.89888,
+      "error_pct": 0.022236250385193352,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Pyralis farinalis",
+      "computed": 151.201147,
+      "measured": 151.174255,
+      "error_pct": 0.01778900030815335,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Agrilus planipennis",
+      "computed": 32.855396,
+      "measured": 32.848092,
+      "error_pct": 0.022236250385208555,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Agrilus planipennis",
+      "computed": -97.502639,
+      "measured": -97.485297,
+      "error_pct": 0.017789000308158064,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Oncometopia orbona",
+      "computed": 38.397767,
+      "measured": 38.389231,
+      "error_pct": 0.022236250385207552,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Oncometopia orbona",
+      "computed": -75.119875,
+      "measured": -75.106514,
+      "error_pct": 0.01778900030815715,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Ischnura ramburii",
+      "computed": 25.722352,
+      "measured": 25.716634,
+      "error_pct": 0.02223625038520067,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Ischnura ramburii",
+      "computed": -80.164367,
+      "measured": -80.150109,
+      "error_pct": 0.017789000308151018,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Sympetrum corruptum",
+      "computed": 38.339102,
+      "measured": 38.330579,
+      "error_pct": 0.022236250385205197,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Sympetrum corruptum",
+      "computed": -122.507887,
+      "measured": -122.486098,
+      "error_pct": 0.017789000308157124,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Coccinella undecimpunctata",
+      "computed": -43.275907,
+      "measured": -43.266286,
+      "error_pct": 0.02223625038519184,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Coccinella undecimpunctata",
+      "computed": 171.791694,
+      "measured": 171.761139,
+      "error_pct": 0.01778900030815468,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Lamprima aurata",
+      "computed": -41.707977,
+      "measured": -41.698705,
+      "error_pct": 0.022236250385204805,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Lamprima aurata",
+      "computed": 147.157429,
+      "measured": 147.131256,
+      "error_pct": 0.01778900030814984,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Austrogomphus guerini",
+      "computed": -35.027557,
+      "measured": -35.01977,
+      "error_pct": 0.022236250385193966,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Austrogomphus guerini",
+      "computed": 138.700079,
+      "measured": 138.67541,
+      "error_pct": 0.017789000308159362,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Polyrhachis demangei",
+      "computed": 22.683189,
+      "measured": 22.678146,
+      "error_pct": 0.022236250385204832,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Polyrhachis demangei",
+      "computed": 113.861808,
+      "measured": 113.841557,
+      "error_pct": 0.017789000308158037,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Leptosia nina",
+      "computed": 6.899337,
+      "measured": 6.897803,
+      "error_pct": 0.022236250385198223,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Leptosia nina",
+      "computed": 100.760574,
+      "measured": 100.742653,
+      "error_pct": 0.01778900030815332,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Apis mellifera",
+      "computed": -33.871577,
+      "measured": -33.864047,
+      "error_pct": 0.02223625038520906,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Apis mellifera",
+      "computed": 151.241536,
+      "measured": 151.214636,
+      "error_pct": 0.01778900030816119,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Glaphyria sesquistrialis",
+      "computed": 27.678444,
+      "measured": 27.672291,
+      "error_pct": 0.02223625038519816,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Glaphyria sesquistrialis",
+      "computed": -97.367488,
+      "measured": -97.35017,
+      "error_pct": 0.01778900030815543,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Eupackardia calleta",
+      "computed": 27.678482,
+      "measured": 27.672329,
+      "error_pct": 0.02223625038519479,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Eupackardia calleta",
+      "computed": -97.367662,
+      "measured": -97.350344,
+      "error_pct": 0.01778900030815653,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": -33.724927,
+      "measured": -33.71743,
+      "error_pct": 0.022236250385189223,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 150.596488,
+      "measured": 150.569703,
+      "error_pct": 0.01778900030815615,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Eristalis tenax",
+      "computed": -37.779536,
+      "measured": -37.771137,
+      "error_pct": 0.022236250385204756,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Eristalis tenax",
+      "computed": 144.967726,
+      "measured": 144.941942,
+      "error_pct": 0.01778900030815974,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Graphium leonidas",
+      "computed": -17.787724,
+      "measured": -17.78377,
+      "error_pct": 0.02223625038518943,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Graphium leonidas",
+      "computed": 25.924534,
+      "measured": 25.919923,
+      "error_pct": 0.017789000308149196,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Didugua argentilinea",
+      "computed": 26.190319,
+      "measured": 26.184497,
+      "error_pct": 0.022236250385204548,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Didugua argentilinea",
+      "computed": -97.681827,
+      "measured": -97.664453,
+      "error_pct": 0.01778900030815769,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Colostygia multistrigaria",
+      "computed": 44.617773,
+      "measured": 44.607854,
+      "error_pct": 0.02223625038520581,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Colostygia multistrigaria",
+      "computed": 1.89836,
+      "measured": 1.898022,
+      "error_pct": 0.01778900030814959,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": 26.22365,
+      "measured": 26.21782,
+      "error_pct": 0.022236250385193664,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": -98.393548,
+      "measured": -98.376048,
+      "error_pct": 0.01778900030815013,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Danaus plexippus",
+      "computed": 33.714003,
+      "measured": 33.706508,
+      "error_pct": 0.022236250385200156,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Danaus plexippus",
+      "computed": -112.051586,
+      "measured": -112.031657,
+      "error_pct": 0.01778900030815899,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Danaus plexippus",
+      "computed": 26.10507,
+      "measured": 26.099267,
+      "error_pct": 0.02223625038520384,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Danaus plexippus",
+      "computed": -81.745436,
+      "measured": -81.730897,
+      "error_pct": 0.01778900030815902,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Psaltoda plaga",
+      "computed": -33.202231,
+      "measured": -33.19485,
+      "error_pct": 0.022236250385192516,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Psaltoda plaga",
+      "computed": 151.589416,
+      "measured": 151.562455,
+      "error_pct": 0.01778900030816044,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Exaireta spinigera",
+      "computed": -40.72538,
+      "measured": -40.716326,
+      "error_pct": 0.022236250385200856,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Exaireta spinigera",
+      "computed": 175.274308,
+      "measured": 175.243134,
+      "error_pct": 0.017789000308158602,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Operophtera brumata",
+      "computed": 49.008603,
+      "measured": 48.997708,
+      "error_pct": 0.022236250385195222,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Operophtera brumata",
+      "computed": 2.212693,
+      "measured": 2.212299,
+      "error_pct": 0.017789000308160736,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Ditaxis biseriata",
+      "computed": -27.654054,
+      "measured": -27.647906,
+      "error_pct": 0.022236250385201523,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Ditaxis biseriata",
+      "computed": 151.977635,
+      "measured": 151.950605,
+      "error_pct": 0.01778900030815633,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Lamprima aurata",
+      "computed": -41.886334,
+      "measured": -41.877022,
+      "error_pct": 0.022236250385197033,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Lamprima aurata",
+      "computed": 148.333785,
+      "measured": 148.307403,
+      "error_pct": 0.017789000308147833,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Heteronympha merope",
+      "computed": -37.407248,
+      "measured": -37.398932,
+      "error_pct": 0.022236250385206154,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Heteronympha merope",
+      "computed": 144.299808,
+      "measured": 144.274143,
+      "error_pct": 0.017789000308160857,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Pieris rapae",
+      "computed": -37.426393,
+      "measured": -37.418073,
+      "error_pct": 0.02223625038520585,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Pieris rapae",
+      "computed": 144.307447,
+      "measured": 144.281781,
+      "error_pct": 0.017789000308155403,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Eurydema ventralis",
+      "computed": 43.423544,
+      "measured": 43.41389,
+      "error_pct": 0.022236250385196294,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Eurydema ventralis",
+      "computed": 0.221273,
+      "measured": 0.221234,
+      "error_pct": 0.017789000308154057,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Melanitis leda",
+      "computed": -19.916458,
+      "measured": -19.91203,
+      "error_pct": 0.02223625038519063,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Melanitis leda",
+      "computed": 23.525371,
+      "measured": 23.521187,
+      "error_pct": 0.01778900030816182,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Heteronympha merope",
+      "computed": -37.647584,
+      "measured": -37.639214,
+      "error_pct": 0.02223625038520741,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Heteronympha merope",
+      "computed": 145.270807,
+      "measured": 145.244969,
+      "error_pct": 0.017789000308148638,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Estigmene acrea",
+      "computed": 30.123476,
+      "measured": 30.116779,
+      "error_pct": 0.022236250385198546,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Estigmene acrea",
+      "computed": -97.322007,
+      "measured": -97.304697,
+      "error_pct": 0.017789000308158377,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Mecistogaster ornata",
+      "computed": 9.18818,
+      "measured": 9.186137,
+      "error_pct": 0.02223625038519091,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Mecistogaster ornata",
+      "computed": -79.430843,
+      "measured": -79.416716,
+      "error_pct": 0.017789000308153047,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Scolecocampa liburna",
+      "computed": 38.868449,
+      "measured": 38.859808,
+      "error_pct": 0.02223625038519793,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Scolecocampa liburna",
+      "computed": -77.510075,
+      "measured": -77.496289,
+      "error_pct": 0.017789000308159834,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Polistes exclamans",
+      "computed": 27.830979,
+      "measured": 27.824792,
+      "error_pct": 0.022236250385199156,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Polistes exclamans",
+      "computed": -97.097924,
+      "measured": -97.080654,
+      "error_pct": 0.017789000308159872,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Lampides boeticus",
+      "computed": -34.270682,
+      "measured": -34.263063,
+      "error_pct": 0.022236250385205613,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Lampides boeticus",
+      "computed": 142.139862,
+      "measured": 142.114581,
+      "error_pct": 0.017789000308157915,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Scolypopa australis",
+      "computed": -36.696953,
+      "measured": -36.688795,
+      "error_pct": 0.022236250385205474,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Scolypopa australis",
+      "computed": 174.699891,
+      "measured": 174.668819,
+      "error_pct": 0.017789000308153398,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": -37.949045,
+      "measured": -37.940608,
+      "error_pct": 0.022236250385189876,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 145.511951,
+      "measured": 145.48607,
+      "error_pct": 0.01778900030814774,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Anchiale austrotessulata",
+      "computed": -21.678586,
+      "measured": -21.673767,
+      "error_pct": 0.022236250385198202,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Anchiale austrotessulata",
+      "computed": 149.35577,
+      "measured": 149.329206,
+      "error_pct": 0.017789000308150893,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Harmonia conformis",
+      "computed": -38.008999,
+      "measured": -38.000549,
+      "error_pct": 0.02223625038520645,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Harmonia conformis",
+      "computed": 145.548894,
+      "measured": 145.523007,
+      "error_pct": 0.01778900030815816,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Xanthocnemis zealandica",
+      "computed": -38.15408,
+      "measured": -38.145598,
+      "error_pct": 0.022236250385201363,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Xanthocnemis zealandica",
+      "computed": 176.314495,
+      "measured": 176.283136,
+      "error_pct": 0.01778900030814934,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": null,
+      "computed": -33.634102,
+      "measured": -33.626625,
+      "error_pct": 0.02223625038520244,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": null,
+      "computed": 150.337776,
+      "measured": 150.311037,
+      "error_pct": 0.017789000308150633,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Tholymis tillarga",
+      "computed": 11.059146,
+      "measured": 11.056687,
+      "error_pct": 0.022236250385197026,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Tholymis tillarga",
+      "computed": 75.880352,
+      "measured": 75.866856,
+      "error_pct": 0.01778900030814559,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phonotaenia balteata",
+      "computed": -17.675932,
+      "measured": -17.672002,
+      "error_pct": 0.022236250385207976,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phonotaenia balteata",
+      "computed": 31.413479,
+      "measured": 31.407892,
+      "error_pct": 0.01778900030815478,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Eurema brigitta",
+      "computed": -17.742549,
+      "measured": -17.738605,
+      "error_pct": 0.02223625038520915,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Eurema brigitta",
+      "computed": 25.891968,
+      "measured": 25.887363,
+      "error_pct": 0.017789000308155882,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Scoliopteryx libatrix",
+      "computed": 51.58197,
+      "measured": 51.570503,
+      "error_pct": 0.02223625038519247,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Scoliopteryx libatrix",
+      "computed": 36.092999,
+      "measured": 36.08658,
+      "error_pct": 0.01778900030815935,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Stagmomantis resacae",
+      "computed": 25.646069,
+      "measured": 25.640368,
+      "error_pct": 0.02223625038519943,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Stagmomantis resacae",
+      "computed": -100.220826,
+      "measured": -100.203001,
+      "error_pct": 0.017789000308156146,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Psychoda alternata",
+      "computed": 47.297075,
+      "measured": 47.28656,
+      "error_pct": 0.022236250385194015,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Psychoda alternata",
+      "computed": 7.707156,
+      "measured": 7.705785,
+      "error_pct": 0.017789000308150126,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Utetheisa pulchella",
+      "computed": 37.721098,
+      "measured": 37.712712,
+      "error_pct": 0.022236250385201467,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Utetheisa pulchella",
+      "computed": -5.100962,
+      "measured": -5.100055,
+      "error_pct": 0.017789000308152985,
+      "source": "gbif_insecta_api"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Theria primaria",
+      "computed": 50.540136,
+      "measured": 50.5289,
+      "error_pct": 0.02223625038519357,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Theria primaria",
+      "computed": -3.609042,
+      "measured": -3.6084,
+      "error_pct": 0.017789000308148954,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLatitude",
+      "name": "Phigalia pilosaria",
+      "computed": 51.711796,
+      "measured": 51.7003,
+      "error_pct": 0.02223625038520254,
+      "source": "zoology_insect_bridge"
+    },
+    {
+      "lab": "entomology_lab",
+      "property": "decimalLongitude",
+      "name": "Phigalia pilosaria",
+      "computed": 0.108719,
+      "measured": 0.1087,
+      "error_pct": 0.01778900030815403,
+      "source": "zoology_insect_bridge"
+    }
+  ]
+}

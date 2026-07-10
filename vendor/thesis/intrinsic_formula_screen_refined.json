@@ -1,0 +1,65 @@
+[
+    {
+        "name":  "ceff_phi_additive",
+        "rmse":  6.7906041594371533,
+        "mae":  5.4650759593601821,
+        "r2":  0.08905360074083557,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / phi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_plus_pbase_additive",
+        "rmse":  6.8028212525775063,
+        "mae":  5.4784499429330751,
+        "r2":  0.085772853391315129,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + ((c_eff / pi) + p_base) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_transport_mix",
+        "rmse":  6.846075948410455,
+        "mae":  5.5235957149639976,
+        "r2":  0.074109946233182233,
+        "formula":  "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + p_new * (ln(abs(frequency_hz) + 1))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_additive",
+        "rmse":  6.846075948410455,
+        "mae":  5.5235957149639976,
+        "r2":  0.074109946233182122,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_n2_frame",
+        "rmse":  6.8471838068260427,
+        "mae":  5.5241662643010718,
+        "r2":  0.073810259787537191,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_output_scale",
+        "rmse":  6.8493155608490968,
+        "mae":  5.5252302304696492,
+        "r2":  0.0732334632213062,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + (c_eff / pi))"
+    },
+    {
+        "name":  "ceff_half_additive",
+        "rmse":  6.8852602865947308,
+        "mae":  5.5611690498037607,
+        "r2":  0.063480728314771584,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / (2 * pi)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_domain_shift",
+        "rmse":  11.714670606558007,
+        "mae":  9.5593909051477048,
+        "r2":  -1.7110414421552711,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + (p_new + (c_eff / pi)) * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)"
+    },
+    {
+        "name":  "ceff_gate_in_denominator",
+        "rmse":  23.63076948900601,
+        "mae":  20.317772726320328,
+        "r2":  -10.031427646036326,
+        "formula":  "ln(1 + abs(((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) + (c_eff / pi) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) * ((phi^8 * e^2) + (pi - a_in)) / ((1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))) * (1 + (c_eff / pi) * (1000 * abs(suction_side_displacement_thickness_m)))))) * (e^2 + pi^2 + p_new)"
+    }
+]

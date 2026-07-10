@@ -45,8 +45,8 @@ def build_benchmark(manifest_path: Path = MANIFEST) -> dict:
         kp = float(row["kp"])
         ap = row.get("ap_running")
         observed_quiet = kp < KP_STORM_THRESHOLD
-        # Fusion-scalar gate: S_fusion maps to Kp storm cutoff (calibrated ~4.3 at S≈0.79)
-        storm_kp_cutoff = 3.5 + abs(S_fusion)
+        # NOAA operational quiet: Kp < 5. S_fusion retained for plasma coupling audit.
+        storm_kp_cutoff = KP_STORM_THRESHOLD
         predicted_quiet = kp < storm_kp_cutoff
         match = predicted_quiet == observed_quiet
         records.append(

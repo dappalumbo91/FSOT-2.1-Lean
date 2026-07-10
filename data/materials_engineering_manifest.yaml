@@ -1,20 +1,35 @@
 # Tier 29 — Materials engineering SMILES mechanical/thermal observables.
-version: "1.0"
-updated: "2026-07-04"
+version: "1.1"
+updated: "2026-07-09"
 
-source:
-  smiles_dataset: "vendor/smiles/FSOT_SMILES_Lab_Dataset.json"
+source_repo: vendor/smiles
+domain_doc: vendor/materials_engineering/Materials_Engineering_Domain.md
+
+D_eff: 14
+maps_to_lean: [material, energy]
+
+sections:
+  - "§34 Young's Modulus"
+  - "§37 Thermal κ"
+  - "§62 Bulk Modulus"
+  - "§70 Shear Modulus"
+  - "§73 Thermal Expansion"
+  - "§84 Poisson Ratio ν"
+  - "§85 Thermal Diffusivity"
 
 build:
-  script: scripts/build_materials_engineering_benchmark.py
+  benchmark: scripts/build_materials_engineering_benchmark.py
   output: data/materials_engineering_benchmark.json
 
 lean:
   generator: scripts/gen_materials_engineering_lean.py
   module: FSOT.Formal.MaterialsEngineeringPriors
-  lean_domain: material
-  sign_theorem: material_raw_S_positive
+  lean_domains: [material, energy]
+  sign_theorems: [material_raw_S_positive]
 
 verification:
   min_records: 50
-  max_median_error_pct: 5.0
+  min_section_count: 5
+  max_pooled_median_error_pct: 2.0
+  max_headline_median_error_pct: 5.0
+  min_beats_sota_headlines: 4

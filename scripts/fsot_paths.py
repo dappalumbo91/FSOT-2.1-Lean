@@ -150,6 +150,66 @@ def rel_repo_path(path: Path) -> str:
         return resolved.as_posix()
 
 
+def intelligence_compression_root(*, require: bool = False) -> Path | None:
+    path = _resolve(
+        "FSOT_INTELLIGENCE_COMPRESSION_ROOT",
+        VENDOR_ROOT / "intelligence_compression",
+        _DESKTOP / "FSOT-2.0-code" / "IntelligenceCompressor",
+    )
+    if path is None and require:
+        raise FileNotFoundError(
+            "Intelligence compression root not found. Set FSOT_INTELLIGENCE_COMPRESSION_ROOT."
+        )
+    return path
+
+
+def quantum_materials_root(*, require: bool = False) -> Path | None:
+    path = _resolve(
+        "FSOT_QUANTUM_MATERIALS_ROOT",
+        VENDOR_ROOT / "quantum_materials",
+        smiles_lab_root(require=False),
+    )
+    if path is None and require:
+        raise FileNotFoundError(
+            "Quantum materials root not found. Set FSOT_QUANTUM_MATERIALS_ROOT."
+        )
+    return path
+
+
+def neuroimmunology_root(*, require: bool = False) -> Path | None:
+    path = _resolve("FSOT_NEUROIMMUNOLOGY_ROOT", VENDOR_ROOT / "neuroimmunology")
+    if path is None and require:
+        raise FileNotFoundError("Neuroimmunology root not found.")
+    return path
+
+
+def oncology_root(*, require: bool = False) -> Path | None:
+    path = _resolve("FSOT_ONCOLOGY_ROOT", VENDOR_ROOT / "oncology")
+    if path is None and require:
+        raise FileNotFoundError("Oncology root not found.")
+    return path
+
+
+def planetary_atmospheres_root(*, require: bool = False) -> Path | None:
+    path = _resolve("FSOT_PLANETARY_ATMOSPHERES_ROOT", VENDOR_ROOT / "planetary_atmospheres")
+    if path is None and require:
+        raise FileNotFoundError("Planetary atmospheres root not found.")
+    return path
+
+
+def materials_engineering_root(*, require: bool = False) -> Path | None:
+    path = _resolve(
+        "FSOT_MATERIALS_ENGINEERING_ROOT",
+        VENDOR_ROOT / "materials_engineering",
+        smiles_lab_root(require=False),
+    )
+    if path is None and require:
+        raise FileNotFoundError(
+            "Materials engineering root not found. Set FSOT_MATERIALS_ENGINEERING_ROOT."
+        )
+    return path
+
+
 def linguistics_root(*, require: bool = False) -> Path | None:
     path = _resolve(
         "FSOT_LINGUISTICS_ROOT",
@@ -615,7 +675,7 @@ def bibliography_corpus_root(*, require: bool = True) -> Path:
 
 def external_data_root(*, require: bool = False) -> Path:
     raw = os.environ.get("FSOT_EXTERNAL_DATA_ROOT", "").strip()
-    root = Path(raw).expanduser() if raw else Path(r"D:\FSOT-2.1-Lean-PublicData")
+    root = Path(raw).expanduser() if raw else Path(r"G:\FSOT-PublicData")
     if require and not root.exists():
         raise FileNotFoundError(
             f"External data root not found: {root}. Set FSOT_EXTERNAL_DATA_ROOT."
@@ -704,6 +764,52 @@ def species_catalog_path(*, require: bool = True) -> Path:
     )
     if path is None and require:
         raise FileNotFoundError("Species catalog not found.")
+    assert path is not None
+    return path
+
+
+def manifest_path(raw: str | Path) -> Path:
+    """Resolve manifest path strings (repo-relative or absolute)."""
+    p = Path(raw)
+    if p.is_absolute():
+        return p.resolve()
+    return (REPO_ROOT / p).resolve()
+
+
+def thesis_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_THESIS_ROOT",
+        VENDOR_ROOT / "thesis",
+        _DESKTOP / "New folder",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Thesis wave root not found. Bundle vendor/thesis or set FSOT_THESIS_ROOT.")
+    assert path is not None
+    return path
+
+
+def cosmology_skeleton_database_path(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_COSMOLOGY_SKELETON_DB",
+        VENDOR_ROOT / "cosmology" / "database" / "FSOT_Mathematical_Database_Unified.json",
+        VENDOR_ROOT / "fsot_aggregate" / "FSOT_Mathematical_Database_Unified.json",
+        _DESKTOP / "FSOT Cosmology Lab" / "database" / "FSOT_Mathematical_Database_Unified.json",
+        _DESKTOP / "New folder" / "database" / "FSOT_Mathematical_Database_Unified.json",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Cosmology skeleton database not found.")
+    assert path is not None
+    return path
+
+
+def math_generator_root(*, require: bool = True) -> Path:
+    path = _resolve(
+        "FSOT_MATH_GENERATOR_ROOT",
+        VENDOR_ROOT / "math_generator",
+        _DESKTOP / "Math generator",
+    )
+    if path is None and require:
+        raise FileNotFoundError("Math generator root not found.")
     assert path is not None
     return path
 

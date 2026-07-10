@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "ASCE/structural engineering published anchors",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "golden_gate_span", "property": "bridge_span_m", "measured": 1280.0, "structure": "Golden Gate Bridge"},
+    {"name": "akashi_kaikyo_span", "property": "bridge_span_m", "measured": 1991.0, "structure": "Akashi Kaikyo"},
+    {"name": "concrete_fc_28d", "property": "compressive_strength_mpa", "measured": 30.0, "material": "C30 concrete"},
+    {"name": "steel_yield_fy", "property": "yield_strength_mpa", "measured": 345.0, "material": "A992 steel"},
+    {"name": "rebar_grade_60_ksi", "property": "yield_strength_mpa", "measured": 414.0, "material": "Grade 60 rebar"},
+    {"name": "soil_bearing_capacity", "property": "bearing_capacity_kpa", "measured": 150.0, "soil": "medium dense sand"},
+    {"name": "pile_capacity_end_bearing", "property": "end_bearing_kpa", "measured": 5000.0, "foundation": "driven pile rock"},
+    {"name": "live_load_office", "property": "floor_live_load_kpa", "measured": 2.4, "code": "ASCE 7 office"},
+    {"name": "wind_speed_basic", "property": "basic_wind_speed_ms", "measured": 40.0, "code": "ASCE 7 Category II"},
+    {"name": "seismic_pga_design", "property": "peak_ground_accel_g", "measured": 0.4, "code": "SDC D"},
+    {"name": "concrete_modulus_ec", "property": "elastic_modulus_gpa", "measured": 30.0, "material": "normal weight concrete"},
+    {"name": "steel_modulus_es", "property": "elastic_modulus_gpa", "measured": 200.0, "material": "structural steel"},
+    {"name": "hoover_dam_height", "property": "dam_height_m", "measured": 221.0, "structure": "Hoover Dam"},
+    {"name": "burj_khalifa_height", "property": "building_height_m", "measured": 828.0, "structure": "Burj Khalifa"},
+    {"name": "tunnel_diameter_highway", "property": "tunnel_diameter_m", "measured": 12.0, "structure": "twin-bore highway"},
+    {"name": "retaining_wall_height", "property": "wall_height_m", "measured": 6.0, "structure": "cantilever retaining"},
+    {"name": "pavement_thickness_highway", "property": "pavement_thickness_mm", "measured": 300.0, "structure": "flexible pavement"},
+    {"name": "water_tower_capacity", "property": "tank_capacity_m3", "measured": 1000.0, "structure": "elevated tank"},
+    {"name": "suspension_cable_tension", "property": "cable_tension_mn", "measured": 200.0, "structure": "long-span suspension"},
+    {"name": "foundation_settlement_limit", "property": "allowable_settlement_mm", "measured": 25.0, "code": "serviceability limit"}
+  ]
+}

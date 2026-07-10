@@ -20,17 +20,22 @@ REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 sys.path.insert(0, str(ROOT / "scripts"))
 from cosmology_lambda import load_fsot_compute  # noqa: E402
 from cosmology_wave4 import summarize_wave4, wave4_observables  # noqa: E402
+from fsot_paths import authority_path_for_export, fsot_compute_path  # noqa: E402
 
 
 def ingest_wave4(manifest_path: Path = MANIFEST_PATH) -> dict:
     if yaml is None:
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
-    root = Path(manifest["cosmology_root"])
-    compute_path = root / manifest["artifacts"]["fsot_compute"]["path"]
+    compute_path = fsot_compute_path()
     mod = load_fsot_compute(compute_path)
     rows = wave4_observables(mod)
-    return {"present": compute_path.exists(), "compute_path": str(compute_path), "rows": rows, **summarize_wave4(rows)}
+    return {
+        "present": compute_path.exists(),
+        "compute_path": authority_path_for_export(compute_path),
+        "rows": rows,
+        **summarize_wave4(rows),
+    }
 
 
 def main() -> int:

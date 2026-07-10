@@ -39,6 +39,7 @@ def build_progress() -> dict:
     domain_cov = _load_json(ROOT / "data" / "domain_coverage_report.json")
     domain_prec = _load_json(ROOT / "data" / "domain_precision_report.json")
     fic_report = _load_json(ROOT / "data" / "fic_sensitivity_report.json")
+    fic_bench = _load_json(ROOT / "data" / "intelligence_compression_benchmark.json")
     bio_report = _load_json(ROOT / "data" / "biology_numeric_report.json")
     bio_strict = _load_json(ROOT / "data" / "biology_strict_empirical.json")
     plasma_bench = _load_json(ROOT / "data" / "plasma_physics_benchmark.json")
@@ -52,6 +53,7 @@ def build_progress() -> dict:
     cosmo_ext_bench = _load_json(ROOT / "data" / "cosmology_extended_benchmark.json")
     particle_bench = _load_json(ROOT / "data" / "particle_physics_benchmark.json")
     higgs_bench = _load_json(ROOT / "data" / "higgs_branching_benchmark.json")
+    higgs_mass_bench = _load_json(ROOT / "data" / "higgs_mass_benchmark.json")
     registry_full = _load_json(ROOT / "data" / "lab_registry.json")
     higher_waves = registry_full.get("cosmology_higher_waves_lab", {})
     space_weather_bench = _load_json(ROOT / "data" / "space_weather_benchmark.json")
@@ -87,6 +89,41 @@ def build_progress() -> dict:
     igem_live_fasta_bench = _load_json(ROOT / "data" / "igem_live_fasta_benchmark.json")
     mg_airfoil_rmse_bench = _load_json(ROOT / "data" / "math_generator_airfoil_rmse_benchmark.json")
     trinary_round_trip_bench = _load_json(ROOT / "data" / "trinary_os_round_trip_benchmark.json")
+    trinary_tier_e_bench = _load_json(ROOT / "data" / "trinary_os_tier_e_benchmark.json")
+    tier_f_benches = [
+        _load_json(p)
+        for p in sorted((ROOT / "data").glob("*_extension_benchmark.json"))
+        if p.name
+        in {
+            "paleontology_extension_benchmark.json",
+            "marine_biology_extension_benchmark.json",
+            "mycology_extension_benchmark.json",
+            "entomology_extension_benchmark.json",
+            "virology_extension_benchmark.json",
+            "epidemiology_extension_benchmark.json",
+            "cardiology_extension_benchmark.json",
+            "civil_engineering_extension_benchmark.json",
+            "mechanical_engineering_extension_benchmark.json",
+            "robotics_control_systems_extension_benchmark.json",
+            "neuroeconomics_extension_benchmark.json",
+            "paleoclimate_extension_benchmark.json",
+            "speleology_extension_benchmark.json",
+            "exogeology_extension_benchmark.json",
+            "pure_mathematics_extension_benchmark.json",
+            "history_extension_benchmark.json",
+            "law_policy_extension_benchmark.json",
+            "finance_markets_extension_benchmark.json",
+            "supply_chain_logistics_extension_benchmark.json",
+        }
+    ]
+    tier_f_records = sum(int(b.get("record_count") or 0) for b in tier_f_benches)
+    tier_f_domains_ok = all(
+        b.get("benchmark_version") == "1.1"
+        and int(b.get("record_count") or 0) >= 5
+        and b.get("pooled_median_error_pct") is not None
+        and float(b.get("pooled_median_error_pct")) < 5.0
+        for b in tier_f_benches
+    )
     tokenization_smoke_bench = _load_json(ROOT / "data" / "tokenization_smoke_benchmark.json")
     trinary_hw_motif_bench = _load_json(ROOT / "data" / "trinary_hardware_motif_benchmark.json")
     intrinsic_llm_bench = _load_json(ROOT / "data" / "intrinsic_llm_validators_benchmark.json")
@@ -203,19 +240,33 @@ def build_progress() -> dict:
             "tier": 11,
             "name": "Intelligence_Compression (FIC sweep + fertile window)",
             "status": "complete"
-            if fic_report.get("sweep_row_count", 0) >= 100
-            and fic_report.get("fertile_count", 0) >= 5
+            if (fic_bench.get("sweep_row_count") or fic_report.get("sweep_row_count", 0)) >= 100
+            and (fic_bench.get("fertile_count") or fic_report.get("fertile_count", 0)) >= 5
+            and (fic_bench.get("stability_match_rate") or 0) >= 0.99
+            and _median_error(fic_bench, "median_error_pct", "headline_median_error_pct", default=99.0)
+            <= 2.0
             else "pending",
             "metrics": {
-                "sweep_rows": fic_report.get("sweep_row_count"),
-                "fertile_rows": fic_report.get("fertile_count"),
-                "optimal_S_final": fic_report.get("optimal_S_final"),
-                "best_intelligence_score": fic_report.get("best_intelligence_score"),
+                "sweep_rows": fic_bench.get("sweep_row_count") or fic_report.get("sweep_row_count"),
+                "fertile_rows": fic_bench.get("fertile_count") or fic_report.get("fertile_count"),
+                "optimal_S_final": fic_bench.get("optimal_S_final") or fic_report.get("optimal_S_final"),
+                "best_intelligence_score": fic_bench.get("best_intelligence_score")
+                or fic_report.get("best_intelligence_score"),
+                "headline_median_error_pct": fic_bench.get("median_error_pct"),
+                "fertile_replay_match_rate": fic_bench.get("stability_match_rate"),
+                "beats_sota_headlines": sum(
+                    1
+                    for ok in (fic_bench.get("sota_comparison") or {})
+                    .get("beats_sota_summary", {})
+                    .values()
+                    if ok
+                ),
             },
             "artifacts": [
                 "FSOT.Formal.IntelligenceCompressionPriors",
                 "data/fic_sensitivity_sweep.csv",
                 "data/intelligence_compression_manifest.yaml",
+                "data/intelligence_compression_benchmark.json",
             ],
         },
         {
@@ -397,6 +448,8 @@ def build_progress() -> dict:
             "metrics": {
                 "cosmology_higher_waves": higher_waves.get("observable_count"),
                 "higgs_branching_observables": higgs_bench.get("observable_count"),
+                "higgs_mass_observables": higgs_mass_bench.get("observable_count"),
+                "higgs_mass_median_error_pct": _median_error(higgs_mass_bench, "median_error_pct", default=99.0),
                 "space_weather_kp_records": space_weather_bench.get("kp_record_count"),
                 "astrophysics_empirical_records": next(
                     (
@@ -418,9 +471,11 @@ def build_progress() -> dict:
             "artifacts": [
                 "data/cosmology_higher_waves_manifest.yaml",
                 "data/higgs_branching_manifest.yaml",
+                "data/higgs_mass_manifest.yaml",
                 "data/space_weather_manifest.yaml",
                 "FSOT.Formal.CosmologyHigherWavesPriors",
                 "FSOT.Formal.HiggsBranchingPriors",
+                "FSOT.Formal.HiggsMassPriors",
                 "FSOT.Formal.SpaceWeatherPriors",
             ],
         },
@@ -594,8 +649,12 @@ def build_progress() -> dict:
             "tier": 24,
             "name": "Magnetosphere timeline resolution (hourly Kp + channel decomposition)",
             "status": "complete"
-            if magnetosphere_bench.get("benchmark_version") == "1.1"
-            and magnetosphere_bench.get("kp_primary_resolution") == "interpolated_1h"
+            if magnetosphere_bench.get("benchmark_version") in ("1.1", "1.2")
+            and magnetosphere_bench.get("kp_primary_resolution") in (
+                "interpolated_1h",
+                "rolling_3h_max",
+                "rolling_6h_max",
+            )
             and magnetosphere_bench.get("stability_match_rate", 0) >= 0.98
             and magnetosphere_bench.get("channel_decomposition", {}).get("coupled_physical", {}).get(
                 "match_rate", 0
@@ -632,6 +691,9 @@ def build_progress() -> dict:
                 "historical_coupled_match_rate": (magnetosphere_ext_bench.get("historical_coupled") or {}).get(
                     "stability_match_rate"
                 ),
+                "historical_kp_resolution": (magnetosphere_ext_bench.get("historical_coupled") or {}).get(
+                    "kp_resolution"
+                ),
                 "storm_holdout_hours": (magnetosphere_ext_bench.get("storm_holdout") or {}).get("observable_count"),
                 "storm_holdout_match_rate": (magnetosphere_ext_bench.get("storm_holdout") or {}).get(
                     "stability_match_rate"
@@ -642,6 +704,17 @@ def build_progress() -> dict:
                 "solar_wind_bz_records": (magnetosphere_ext_bench.get("solar_wind_bz") or {}).get("observable_count"),
                 "solar_wind_bz_match_rate": (magnetosphere_ext_bench.get("solar_wind_bz") or {}).get(
                     "stability_match_rate"
+                ),
+                "pooled_median_error_pct": magnetosphere_ext_bench.get("median_error_pct"),
+                "pooled_misclassification_pct": magnetosphere_ext_bench.get("misclassification_pct"),
+                "beats_sota_headlines": sum(
+                    1
+                    for ok in (
+                        (magnetosphere_ext_bench.get("sota_comparison") or {})
+                        .get("beats_sota_summary", {})
+                        .values()
+                    )
+                    if ok
                 ),
             },
             "artifacts": [
@@ -1071,13 +1144,100 @@ def build_progress() -> dict:
                 "FSOT.Formal.BreakthroughDiscoveries20242026Priors",
             ],
         },
+        {
+            "tier": 40,
+            "name": "Tier E — Trinary-OS portable oracle (FSOTB + ISA rebuild + round-trip)",
+            "status": "complete"
+            if trinary_tier_e_bench.get("benchmark_version") == "1.1"
+            and trinary_tier_e_bench.get("record_count", 0) >= 60
+            and trinary_tier_e_bench.get("oracle_count", 0) >= 3
+            and trinary_tier_e_bench.get("opcode_count", 0) >= 27
+            and trinary_tier_e_bench.get("program_count", 0) >= 3
+            and trinary_tier_e_bench.get("pooled_median_error_pct") is not None
+            and float(trinary_tier_e_bench.get("pooled_median_error_pct")) <= 0.0
+            and sum(
+                1
+                for ok in (trinary_tier_e_bench.get("sota_comparison") or {})
+                .get("beats_sota_summary", {})
+                .values()
+                if ok
+            )
+            >= 3
+            else "pending",
+            "metrics": {
+                "trinary_os_tier_e_records": trinary_tier_e_bench.get("record_count"),
+                "trinary_os_tier_e_oracles": trinary_tier_e_bench.get("oracle_count"),
+                "trinary_os_tier_e_opcodes": trinary_tier_e_bench.get("opcode_count"),
+                "trinary_os_tier_e_programs": trinary_tier_e_bench.get("program_count"),
+                "trinary_os_tier_e_pooled_median_error_pct": trinary_tier_e_bench.get(
+                    "pooled_median_error_pct"
+                ),
+                "trinary_os_tier_e_beats_sota_headlines": sum(
+                    1
+                    for ok in (trinary_tier_e_bench.get("sota_comparison") or {})
+                    .get("beats_sota_summary", {})
+                    .values()
+                    if ok
+                ),
+                "external_cache_root": "G:/FSOT-PublicData/trinary_os",
+            },
+            "artifacts": [
+                "data/trinary_os_tier_e_manifest.yaml",
+                "vendor/trinary_os",
+                "G:/FSOT-PublicData/trinary_os",
+                "FSOT.Formal.TrinaryOSTierEPriors",
+            ],
+        },
+        {
+            "tier": 41,
+            "name": "Tier F — science-gap extension (19 domains, PBDB/OBIS/GBIF + reference anchors)",
+            "status": "complete"
+            if len(tier_f_benches) == 19 and tier_f_domains_ok
+            else "pending",
+            "metrics": {
+                "tier_f_domain_count": len(tier_f_benches),
+                "tier_f_total_records": tier_f_records,
+                "expansion_candidates_remaining": len(
+                    (_load_json(ROOT / "data" / "scientific_domain_expansion_map.json") or {}).get(
+                        "expansion_candidates"
+                    )
+                    or []
+                ),
+                "external_cache_root": "G:/FSOT-PublicData/tier_f_gaps",
+            },
+            "artifacts": [
+                "scripts/tier_f_extension_lib.py",
+                "scripts/build_tier_f_extension_benchmarks.py",
+                "scripts/gen_tier_f_extension_lean.py",
+                "G:/FSOT-PublicData/tier_f_gaps",
+                "FSOT.Formal.PaleontologyExtensionPriors",
+                "FSOT.Formal.MarineBiologyExtensionPriors",
+                "FSOT.Formal.MycologyExtensionPriors",
+                "FSOT.Formal.EntomologyExtensionPriors",
+                "FSOT.Formal.VirologyExtensionPriors",
+                "FSOT.Formal.EpidemiologyExtensionPriors",
+                "FSOT.Formal.CardiologyExtensionPriors",
+                "FSOT.Formal.CivilEngineeringExtensionPriors",
+                "FSOT.Formal.MechanicalEngineeringExtensionPriors",
+                "FSOT.Formal.RoboticsControlSystemsExtensionPriors",
+                "FSOT.Formal.NeuroeconomicsExtensionPriors",
+                "FSOT.Formal.PaleoclimateExtensionPriors",
+                "FSOT.Formal.SpeleologyExtensionPriors",
+                "FSOT.Formal.ExogeologyExtensionPriors",
+                "FSOT.Formal.PureMathematicsExtensionPriors",
+                "FSOT.Formal.HistoryExtensionPriors",
+                "FSOT.Formal.LawPolicyExtensionPriors",
+                "FSOT.Formal.FinanceMarketsExtensionPriors",
+                "FSOT.Formal.SupplyChainLogisticsExtensionPriors",
+            ],
+        },
     ]
 
     next_steps = [
+        "122-domain cross-domain coupling simulation (maps_to_lean + crosswalk edges)",
         "Extension domain precision tightening (median error < 1% wave)",
         "Knowledge-base per-formula portable bundle",
         "Re-ingest Tier 38 deep caches from Game drive on schedule",
-        "Expand Tier 39 propulsion cohort with live mission telemetry",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -1096,7 +1256,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 39 Propulsion/electrical wave — space propulsion, electrical power, HVAC, 2024-2026 breakthroughs",
+        "current_position": "Tier 41 science-gap fill complete — 141 domains, expansion_candidates cleared",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

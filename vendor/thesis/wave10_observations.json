@@ -1,0 +1,114 @@
+{
+  "targets": {
+    "m_mu_over_m_e": {
+      "name": "m_mu / m_e",
+      "category": "Particle Physics",
+      "description": "A Wave 10 particle-physics benchmark for m_mu / m_e.",
+      "benchmark_purpose": "Closes the mass-ratio and precision-QED block with the final hard three-term fits.",
+      "measured": "206.7682827",
+      "unit": "dimensionless",
+      "citation": "CODATA 2022; FSOT Mathematical Key §16 / Wave 10 #1",
+      "sigma_percent": "0.1",
+      "notes": "Measured-reference layer seeded directly from the thesis Wave 10 table."
+    },
+    "electron_g_minus_2_over_2": {
+      "name": "(g-2)/2 (electron)",
+      "category": "Particle Physics",
+      "description": "A Wave 10 particle-physics benchmark for (g-2)/2 (electron).",
+      "benchmark_purpose": "Closes the mass-ratio and precision-QED block with the final hard three-term fits.",
+      "measured": "0.00115965218128",
+      "unit": "dimensionless",
+      "citation": "CODATA 2022; FSOT Mathematical Key §16 / Wave 10 #2",
+      "sigma_percent": "0.1",
+      "notes": "Measured-reference layer seeded directly from the thesis Wave 10 table."
+    },
+    "Logistic_accumulation": {
+      "name": "Logistic accumulation",
+      "category": "Dynamical Systems",
+      "description": "A Wave 10 dynamical-systems benchmark for Logistic accumulation.",
+      "benchmark_purpose": "Tests whether the final wave can still hit the classic logistic-map accumulation landmark.",
+      "measured": "3.569946",
+      "unit": "dimensionless",
+      "citation": "Feigenbaum, J. Stat. Phys. 19, 25-52 (1978); FSOT Mathematical Key §16 / Wave 10 #3",
+      "sigma_percent": "0.9",
+      "notes": "Measured-reference layer seeded directly from the thesis Wave 10 table."
+    },
+    "Cahen_constant": {
+      "name": "Cahen constant",
+      "category": "Mathematical Constants",
+      "description": "A Wave 10 mathematical-constant benchmark for Cahen constant.",
+      "benchmark_purpose": "Checks that the final wave remains coherent on named pure-math constants as well as physical observables.",
+      "measured": "0.643410546288338",
+      "unit": "dimensionless",
+      "citation": "Cahen 1894; Finch, Mathematical Constants (2003); FSOT Mathematical Key §16 / Wave 10 #4",
+      "sigma_percent": "0.0",
+      "notes": "Tightened from the thesis shorthand to the standard high-precision Cahen constant."
+    },
+    "Reciprocal_Fibonacci": {
+      "name": "Reciprocal Fibonacci",
+      "category": "Mathematical Constants",
+      "description": "A Wave 10 mathematical-constant benchmark for Reciprocal Fibonacci.",
+      "benchmark_purpose": "Checks that the final wave remains coherent on named pure-math constants as well as physical observables.",
+      "measured": "3.3598856662431776",
+      "unit": "dimensionless",
+      "citation": "Finch, Mathematical Constants (2003), reciprocal Fibonacci constant; FSOT Mathematical Key §16 / Wave 10 #5",
+      "sigma_percent": "0.0",
+      "notes": "Tightened from the thesis shorthand to the standard high-precision reciprocal Fibonacci constant."
+    },
+    "Water_triple_point_K": {
+      "name": "Water triple point",
+      "category": "Thermodynamics",
+      "description": "A Wave 10 thermodynamic benchmark for Water triple point.",
+      "benchmark_purpose": "Adds a calibration-point thermodynamic observable to the final three-term wave.",
+      "measured": "273.16",
+      "unit": "K",
+      "citation": "CODATA 2022 / ITS-90 benchmark; FSOT Mathematical Key §16 / Wave 10 #6",
+      "sigma_percent": "0.4",
+      "notes": "Measured-reference layer seeded directly from the thesis Wave 10 table."
+    },
+    "CO2_bond_angle_deg": {
+      "name": "CO2 bond angle",
+      "category": "Chemistry",
+      "description": "A Wave 10 chemistry benchmark for CO2 bond angle.",
+      "benchmark_purpose": "Keeps the final wave tied to an intuitive molecular-geometry benchmark rather than only abstract constants.",
+      "measured": "180.0",
+      "unit": "deg",
+      "citation": "NIST CCCBDB; FSOT Mathematical Key §16 / Wave 10 #7",
+      "sigma_percent": "0.1",
+      "notes": "Measured-reference layer seeded directly from the thesis Wave 10 table."
+    },
+    "SAW_connective_hex": {
+      "name": "SAW connective (hex)",
+      "category": "Self-Avoiding Walks",
+      "description": "A Wave 10 self-avoiding-walk benchmark for SAW connective (hex).",
+      "benchmark_purpose": "Uses the exact honeycomb connective constant to test the final wave against a canonical lattice-walk target.",
+      "measured": "1.8477590650225735",
+      "unit": "dimensionless",
+      "citation": "Duminil-Copin and Smirnov, Ann. of Math. 175, 1653-1665 (2012); FSOT Mathematical Key §16 / Wave 10 #8",
+      "sigma_percent": "0.0",
+      "notes": "Tightened from the thesis shorthand to the exact honeycomb connective constant sqrt(2 + sqrt(2))."
+    },
+    "Bessel_J1_first_zero": {
+      "name": "Bessel J1 first zero",
+      "category": "Special Function Zeros",
+      "description": "A Wave 10 special-function-zero benchmark for Bessel J1 first zero.",
+      "benchmark_purpose": "Extends the final wave into a second Bessel-zero benchmark beyond Wave 8's J0 target.",
+      "measured": "3.8317059702075125",
+      "unit": "dimensionless",
+      "citation": "NIST DLMF §10.21; FSOT Mathematical Key §16 / Wave 10 #9",
+      "sigma_percent": "0.0",
+      "notes": "Tightened from the thesis shorthand to the standard high-precision first zero of J1."
+    },
+    "eta_baryon_photon": {
+      "name": "eta baryon-photon",
+      "category": "Cosmology",
+      "description": "A Wave 10 cosmology benchmark for eta baryon-photon.",
+      "benchmark_purpose": "Closes the full ten-wave stack with the baryon-photon ratio scale highlighted in the thesis.",
+      "measured": "6.139749535425554e-10",
+      "unit": "dimensionless",
+      "citation": "Planck 2018; FSOT Mathematical Key §16 / Wave 10 #10",
+      "sigma_percent": "0.1",
+      "notes": "Tightened from the thesis shorthand to a Planck-era baryon-photon central value with a nonzero tolerance."
+    }
+  }
+}

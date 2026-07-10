@@ -17,9 +17,9 @@ def particle_thesis_wave_count : ℕ := 21
 def particle_wave4_count : ℕ := 16
 def particle_math_physics_rule_count : ℕ := 25
 def particle_physics_observable_count : ℕ := 98
-def particle_physics_median_error_pct : ℝ := (0.492528 : ℝ)
-def particle_physics_max_error_pct : ℝ := (4.499825 : ℝ)
-def particle_physics_within_two_pct : ℕ := 39
+def particle_physics_median_error_pct : ℝ := (0.018000835539782083 : ℝ)
+def particle_physics_max_error_pct : ℝ := (0.813808 : ℝ)
+def particle_physics_within_two_pct : ℕ := 52
 
 theorem particle_smiles_record_count_pos : 0 < particle_smiles_record_count := by
   unfold particle_smiles_record_count; norm_num

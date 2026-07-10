@@ -1,0 +1,411 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T12:31:47.834506+00:00",
+  "domain": "Sports_Biomechanics",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "World_Athletics_records",
+    "airfoil_motion_bridge"
+  ],
+  "maps_to_lean": [
+    "biological",
+    "medical",
+    "energy"
+  ],
+  "D_eff": 14,
+  "record_count": 35,
+  "observable_count": 35,
+  "median_error_pct": 0.04447250077037523,
+  "pooled_median_error_pct": 0.04447250077037523,
+  "headline_median_error_pct": 0.04447250077037523,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "sports_biomechanics": {
+        "sota_typical_error_pct": 8.0,
+        "sota_model": "Biomechanical inverse-dynamics tables"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_athletic_performance_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.044473,
+      "measured": 0.0,
+      "error_pct": 0.04447250077037523,
+      "observable_count": 35
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "athletic_performance",
+      "name": "sports_biomechanics",
+      "computed": 0.044473,
+      "measured": 0.0,
+      "error_pct": 0.04447250077037523,
+      "observable_count": 35
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_s",
+      "name": "men_100m_wr",
+      "computed": 9.58426,
+      "measured": 9.58,
+      "error_pct": 0.044472500770376906,
+      "source": "world_athletics_reference",
+      "discipline": "sprint"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_s",
+      "name": "women_100m_wr",
+      "computed": 10.494665,
+      "measured": 10.49,
+      "error_pct": 0.04447250077038305,
+      "source": "world_athletics_reference",
+      "discipline": "sprint"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_s",
+      "name": "men_200m_wr",
+      "computed": 19.198534,
+      "measured": 19.19,
+      "error_pct": 0.04447250077038465,
+      "source": "world_athletics_reference",
+      "discipline": "sprint"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_s",
+      "name": "women_200m_wr",
+      "computed": 21.34949,
+      "measured": 21.34,
+      "error_pct": 0.04447250077038322,
+      "source": "world_athletics_reference",
+      "discipline": "sprint"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_s",
+      "name": "men_400m_wr",
+      "computed": 43.049137,
+      "measured": 43.03,
+      "error_pct": 0.0444725007703739,
+      "source": "world_athletics_reference",
+      "discipline": "sprint"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_s",
+      "name": "women_400m_wr",
+      "computed": 47.621169,
+      "measured": 47.6,
+      "error_pct": 0.04447250077037183,
+      "source": "world_athletics_reference",
+      "discipline": "sprint"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_min",
+      "name": "men_marathon_wr",
+      "computed": 120.633625,
+      "measured": 120.58,
+      "error_pct": 0.04447250077037784,
+      "source": "world_athletics_reference",
+      "discipline": "endurance"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_min",
+      "name": "women_marathon_wr",
+      "computed": 130.237894,
+      "measured": 130.18,
+      "error_pct": 0.04447250077037171,
+      "source": "world_athletics_reference",
+      "discipline": "endurance"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "distance_m",
+      "name": "men_long_jump_wr",
+      "computed": 8.95398,
+      "measured": 8.95,
+      "error_pct": 0.04447250077038568,
+      "source": "world_athletics_reference",
+      "discipline": "jump"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "distance_m",
+      "name": "women_long_jump_wr",
+      "computed": 7.523344,
+      "measured": 7.52,
+      "error_pct": 0.04447250077037896,
+      "source": "world_athletics_reference",
+      "discipline": "jump"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "height_m",
+      "name": "men_high_jump_wr",
+      "computed": 2.45109,
+      "measured": 2.45,
+      "error_pct": 0.04447250077037929,
+      "source": "world_athletics_reference",
+      "discipline": "jump"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "height_m",
+      "name": "women_high_jump_wr",
+      "computed": 2.090929,
+      "measured": 2.09,
+      "error_pct": 0.04447250077037687,
+      "source": "world_athletics_reference",
+      "discipline": "jump"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "distance_m",
+      "name": "men_shot_put_wr",
+      "computed": 23.380393,
+      "measured": 23.37,
+      "error_pct": 0.044472500770371855,
+      "source": "world_athletics_reference",
+      "discipline": "throw"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "distance_m",
+      "name": "women_shot_put_wr",
+      "computed": 22.640064,
+      "measured": 22.63,
+      "error_pct": 0.04447250077038249,
+      "source": "world_athletics_reference",
+      "discipline": "throw"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "distance_m",
+      "name": "men_discus_wr",
+      "computed": 74.112945,
+      "measured": 74.08,
+      "error_pct": 0.044472500770378474,
+      "source": "world_athletics_reference",
+      "discipline": "throw"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "distance_m",
+      "name": "women_discus_wr",
+      "computed": 76.834155,
+      "measured": 76.8,
+      "error_pct": 0.044472500770368725,
+      "source": "world_athletics_reference",
+      "discipline": "throw"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "height_m",
+      "name": "men_pole_vault_wr",
+      "computed": 6.212762,
+      "measured": 6.21,
+      "error_pct": 0.044472500770379085,
+      "source": "world_athletics_reference",
+      "discipline": "jump"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "height_m",
+      "name": "women_pole_vault_wr",
+      "computed": 5.06225,
+      "measured": 5.06,
+      "error_pct": 0.044472500770377794,
+      "source": "world_athletics_reference",
+      "discipline": "jump"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_s",
+      "name": "men_1500m_wr",
+      "computed": 206.091613,
+      "measured": 206.0,
+      "error_pct": 0.044472500770374616,
+      "source": "world_athletics_reference",
+      "discipline": "middle_distance"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_s",
+      "name": "women_1500m_wr",
+      "computed": 228.24146,
+      "measured": 228.14,
+      "error_pct": 0.04447250077038189,
+      "source": "world_athletics_reference",
+      "discipline": "middle_distance"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_s",
+      "name": "men_5000m_wr",
+      "computed": 754.595438,
+      "measured": 754.26,
+      "error_pct": 0.04447250077037259,
+      "source": "world_athletics_reference",
+      "discipline": "endurance"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "race_time_s",
+      "name": "women_5000m_wr",
+      "computed": 821.655248,
+      "measured": 821.29,
+      "error_pct": 0.04447250077038077,
+      "source": "world_athletics_reference",
+      "discipline": "endurance"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "peak_speed_kmh",
+      "name": "peak_sprint_speed_men",
+      "computed": 44.739888,
+      "measured": 44.72,
+      "error_pct": 0.04447250077037044,
+      "source": "world_athletics_reference",
+      "discipline": "biomechanics"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "peak_speed_kmh",
+      "name": "peak_sprint_speed_women",
+      "computed": 40.347936,
+      "measured": 40.33,
+      "error_pct": 0.044472500770377,
+      "source": "world_athletics_reference",
+      "discipline": "biomechanics"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "vo2max_ml_kg_min",
+      "name": "vo2max_elite_cyclist",
+      "computed": 96.743005,
+      "measured": 96.7,
+      "error_pct": 0.04447250077037523,
+      "source": "world_athletics_reference",
+      "discipline": "physiology"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "vo2max_ml_kg_min",
+      "name": "vo2max_elite_runner",
+      "computed": 84.037357,
+      "measured": 84.0,
+      "error_pct": 0.044472500770370835,
+      "source": "world_athletics_reference",
+      "discipline": "physiology"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "vertical_jump_m",
+      "name": "vertical_jump_nba",
+      "computed": 1.120498,
+      "measured": 1.12,
+      "error_pct": 0.04447250077037136,
+      "source": "world_athletics_reference",
+      "discipline": "jump"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "stride_frequency_hz",
+      "name": "stride_frequency_sprint",
+      "computed": 4.502001,
+      "measured": 4.5,
+      "error_pct": 0.04447250077037366,
+      "source": "world_athletics_reference",
+      "discipline": "biomechanics"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "ground_contact_ms",
+      "name": "ground_contact_time_sprint",
+      "computed": 86.038246,
+      "measured": 86.0,
+      "error_pct": 0.04447250077037044,
+      "source": "world_athletics_reference",
+      "discipline": "biomechanics"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "exit_velocity_mph",
+      "name": "batting_exit_velocity_mlb",
+      "computed": 122.454434,
+      "measured": 122.4,
+      "error_pct": 0.044472500770381784,
+      "source": "world_athletics_reference",
+      "discipline": "ball_sport"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "full_dataset_rmse",
+      "rule_id": "FO-212",
+      "computed": 5.061015749458651,
+      "measured": 5.061015749458651,
+      "error_pct": 0.0,
+      "eval_kind": "live_formula_full_dataset",
+      "source": "aerodynamics_motion_bridge"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "held_out_test_rmse",
+      "rule_id": "FO-212",
+      "computed": 5.102551799768952,
+      "measured": 5.102551799768952,
+      "sota_held_out_rmse": 5.412721340832612,
+      "sota_beat": true,
+      "error_pct": 0.0,
+      "eval_kind": "python_split_live_recompute",
+      "train_row_count": 1202,
+      "test_row_count": 301,
+      "fsot_read_rmse": null,
+      "source": "aerodynamics_motion_bridge"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "row_count",
+      "rule_id": "FO-212",
+      "computed": 1503,
+      "measured": 1503,
+      "error_pct": 0.0,
+      "eval_kind": "dataset_shape",
+      "source": "aerodynamics_motion_bridge"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "dataset_artifact",
+      "rule_id": "FO-212",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "eval_kind": "artifact_present",
+      "source": "aerodynamics_motion_bridge"
+    },
+    {
+      "lab": "sports_biomechanics_lab",
+      "property": "report_artifact",
+      "rule_id": "FO-212",
+      "computed": 1,
+      "measured": 1,
+      "error_pct": 0.0,
+      "eval_kind": "artifact_present",
+      "source": "aerodynamics_motion_bridge"
+    }
+  ]
+}

@@ -3,17 +3,17 @@ version: "1.0"
 updated: "2026-07-01"
 
 source:
-  smiles_dataset: "C:/Users/damia/Desktop/FSOT SMILES Lab/FSOT_SMILES_Lab_Dataset.json"
+  smiles_dataset: vendor/smiles/FSOT_SMILES_Lab_Dataset.json
   section_domain_map: data/section_domain_map.json
-  thesis_root: "C:/Users/damia/Desktop/New folder"
+  thesis_root: vendor/thesis
   thesis_particle_categories:
     - Particle Physics
     - Higgs Branching Ratios
     - Mass Ratios
     - Z Branching Ratios
     - Nuclear Physics
-  math_physics_rules: "C:/Users/damia/Desktop/Math generator/MATHEMATICAL_PHYSICS_RULES.json"
-  cosmology_compute: "C:/Users/damia/Desktop/FSOT Cosmology Lab/fsot_compute.py"
+  math_physics_rules: vendor/math_generator/rules/MATHEMATICAL_PHYSICS_RULES.json
+
 
 build:
   script: scripts/build_particle_physics_benchmark.py

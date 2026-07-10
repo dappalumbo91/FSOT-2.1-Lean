@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-08T18:15:14.217643+00:00",
-  "extension_domain_count": 67,
-  "bundled_asset_count": 35,
+  "generated_at": "2026-07-09T05:01:56.546539+00:00",
+  "extension_domain_count": 70,
+  "bundled_asset_count": 37,
   "formula_corpus_portable": true,
   "formula_corpus_records_hint": 7941,
   "missing_benchmark_domains": [],
@@ -43,12 +43,36 @@
       "lean_module": "FSOT.Formal.CosmologyExtendedPriors"
     },
     {
+      "domain": "Cosmology_Bubble_Bleed",
+      "tier": 24,
+      "benchmark_data": "data/cosmology_bubble_bleed_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_cosmology_bubble_bleed_benchmark.py",
+      "lean_module": "FSOT.Formal.BubbleBleedPriors"
+    },
+    {
+      "domain": "Cosmology_Anomalies",
+      "tier": 25,
+      "benchmark_data": "data/cosmology_anomalies_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_cosmology_anomalies_benchmark.py",
+      "lean_module": "FSOT.Formal.CosmologyAnomaliesPriors"
+    },
+    {
       "domain": "Particle_Physics",
       "tier": 16,
       "benchmark_data": "data/particle_physics_benchmark.json",
       "benchmark_present": true,
       "build_script": "scripts/build_particle_physics_benchmark.py",
       "lean_module": "FSOT.Formal.ParticlePhysicsPriors"
+    },
+    {
+      "domain": "Higgs_Mass",
+      "tier": 17,
+      "benchmark_data": "data/higgs_mass_benchmark.json",
+      "benchmark_present": true,
+      "build_script": "scripts/build_higgs_mass_benchmark.py",
+      "lean_module": "FSOT.Formal.HiggsMassPriors"
     },
     {
       "domain": "Space_Weather",
@@ -686,6 +710,16 @@
     {
       "asset": "fsot_aggregate_unified_db",
       "path": "vendor/fsot_aggregate/FSOT_Mathematical_Database_Unified.json",
+      "present": true
+    },
+    {
+      "asset": "thesis_waves",
+      "path": "vendor/thesis",
+      "present": true
+    },
+    {
+      "asset": "cosmology_skeleton_database",
+      "path": "vendor/cosmology/database/FSOT_Mathematical_Database_Unified.json",
       "present": true
     },
     {

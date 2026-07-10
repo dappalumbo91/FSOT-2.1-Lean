@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "source": "World Bank WGI + published policy/governance anchors",
+  "updated": "2026-07-09",
+  "metrics": [
+    {"name": "rule_of_law_global_mean", "property": "governance_index", "measured": 0.0, "source": "WGI rule of law"},
+    {"name": "regulatory_quality_mean", "property": "governance_index", "measured": 0.0, "source": "WGI regulatory quality"},
+    {"name": "government_effectiveness", "property": "governance_index", "measured": 0.0, "source": "WGI effectiveness"},
+    {"name": "voice_accountability", "property": "governance_index", "measured": 0.0, "source": "WGI voice"},
+    {"name": "political_stability", "property": "governance_index", "measured": 0.0, "source": "WGI stability"},
+    {"name": "control_corruption", "property": "governance_index", "measured": 0.0, "source": "WGI corruption"},
+    {"name": "tax_revenue_pct_gdp", "property": "tax_revenue_pct_gdp", "measured": 25.0, "policy": "OECD average"},
+    {"name": "public_debt_pct_gdp", "property": "public_debt_pct_gdp", "measured": 90.0, "policy": "advanced economies"},
+    {"name": "health_spend_pct_gdp", "property": "health_expenditure_pct_gdp", "measured": 10.0, "policy": "OECD average"},
+    {"name": "education_spend_pct_gdp", "property": "education_expenditure_pct_gdp", "measured": 5.0, "policy": "OECD average"},
+    {"name": "gini_coefficient_oecd", "property": "gini_coefficient", "measured": 0.32, "policy": "income inequality"},
+    {"name": "poverty_headcount_215", "property": "poverty_rate_pct", "measured": 10.0, "policy": "WB $2.15/day"},
+    {"name": "life_expectancy_global", "property": "life_expectancy_years", "measured": 73.0, "policy": "WB global"},
+    {"name": "internet_penetration_pct", "property": "internet_users_pct", "measured": 65.0, "policy": "ITU global"},
+    {"name": "renewable_energy_pct", "property": "renewable_energy_pct", "measured": 30.0, "policy": "IEA global electricity"},
+    {"name": "carbon_price_eu_ets", "property": "carbon_price_eur_t", "measured": 60.0, "policy": "EU ETS"},
+    {"name": "minimum_wage_usd_h", "property": "minimum_wage_usd_h", "measured": 7.25, "policy": "US federal"},
+    {"name": "corporate_tax_rate_oecd", "property": "corporate_tax_rate_pct", "measured": 23.0, "policy": "OECD average"},
+    {"name": "trade_openness_pct_gdp", "property": "trade_pct_gdp", "measured": 60.0, "policy": "global trade/GDP"},
+    {"name": "judicial_independence_index", "property": "judicial_independence", "measured": 6.5, "policy": "WJP 0-10 scale"}
+  ]
+}

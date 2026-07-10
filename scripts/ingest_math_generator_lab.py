@@ -18,6 +18,7 @@ MANIFEST_PATH = ROOT / "data" / "math_generator_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import authority_path_for_export, math_generator_comparison_path, rel_repo_path  # noqa: E402
 from math_generator_lab import load_comparison_report, summarize_math_generator  # noqa: E402
 
 
@@ -25,13 +26,12 @@ def ingest_math_generator(manifest_path: Path = MANIFEST_PATH) -> dict:
     if yaml is None:
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
-    math_root = Path(manifest["math_generator_root"])
-    report_path = math_root / manifest["artifacts"]["comparison_report"]["path"]
+    report_path = math_generator_comparison_path()
     data = load_comparison_report(report_path) if report_path.exists() else {}
     return {
         "present": report_path.exists(),
-        "math_generator_root": str(math_root),
-        "report_path": str(report_path),
+        "math_generator_root": rel_repo_path(report_path.parent),
+        "report_path": authority_path_for_export(report_path),
         **summarize_math_generator(data),
     }
 

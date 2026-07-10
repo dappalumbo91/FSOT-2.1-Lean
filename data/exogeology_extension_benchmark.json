@@ -1,0 +1,2900 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-09T23:53:12.578123+00:00",
+  "domain": "Exogeology",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "NASA_Exoplanet_Archive",
+    "planetary_structure"
+  ],
+  "maps_to_lean": [
+    "astronomical",
+    "galactic",
+    "energy"
+  ],
+  "D_eff": 20,
+  "record_count": 316,
+  "observable_count": 316,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "exogeology_panel": {
+        "sota_typical_error_pct": 12.0,
+        "sota_model": "Exoplanet interior models"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_exoplanet_geology_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 316
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "exoplanet_geology",
+      "name": "exogeology_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 316
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1597 b",
+      "computed": 1.06,
+      "measured": 1.06,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1597 b",
+      "computed": 1.2,
+      "measured": 1.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-687 b",
+      "computed": 3.52,
+      "measured": 3.52,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-687 b",
+      "computed": 12.2,
+      "measured": 12.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1596 b",
+      "computed": 1.9,
+      "measured": 1.9,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1596 b",
+      "computed": 4.27,
+      "measured": 4.27,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-692 b",
+      "computed": 3.11,
+      "measured": 3.11,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-692 b",
+      "computed": 9.85,
+      "measured": 9.85,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-150 c",
+      "computed": 3.69,
+      "measured": 3.69,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-150 c",
+      "computed": 13.2,
+      "measured": 13.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1494 b",
+      "computed": 3.07,
+      "measured": 3.07,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1494 b",
+      "computed": 9.64,
+      "measured": 9.64,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1502 b",
+      "computed": 3.18,
+      "measured": 3.18,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1502 b",
+      "computed": 10.2,
+      "measured": 10.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1490 b",
+      "computed": 3.04,
+      "measured": 3.04,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1490 b",
+      "computed": 9.48,
+      "measured": 9.48,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1491 b",
+      "computed": 1.51,
+      "measured": 1.51,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1491 b",
+      "computed": 2.89,
+      "measured": 2.89,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-171 b",
+      "computed": 2.34,
+      "measured": 2.34,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-171 b",
+      "computed": 6.08,
+      "measured": 6.08,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1926 b",
+      "computed": 2.31495961,
+      "measured": 2.31495961,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1926 b",
+      "computed": 5.97,
+      "measured": 5.97,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1631 b",
+      "computed": 1.35,
+      "measured": 1.35,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1631 b",
+      "computed": 2.39,
+      "measured": 2.39,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "KOI-1599.02",
+      "computed": 1.9,
+      "measured": 1.9,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "KOI-1599.02",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-719 b",
+      "computed": 8.52,
+      "measured": 8.52,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-719 b",
+      "computed": 54.5,
+      "measured": 54.5,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-734 b",
+      "computed": 3.56,
+      "measured": 3.56,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-734 b",
+      "computed": 12.4,
+      "measured": 12.4,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1408 b",
+      "computed": 0.89,
+      "measured": 0.89,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1408 b",
+      "computed": 0.64,
+      "measured": 0.64,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1427 b",
+      "computed": 1.1,
+      "measured": 1.1,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1427 b",
+      "computed": 1.37,
+      "measured": 1.37,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1665 b",
+      "computed": 2.83910787,
+      "measured": 2.83910787,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1665 b",
+      "computed": 8.44,
+      "measured": 8.44,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-342 e",
+      "computed": 0.88,
+      "measured": 0.88,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-342 e",
+      "computed": 0.615,
+      "measured": 0.615,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-267 b",
+      "computed": 1.98,
+      "measured": 1.98,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-267 b",
+      "computed": 37.9,
+      "measured": 37.9,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1738 b",
+      "computed": 2.82472883,
+      "measured": 2.82472883,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1738 b",
+      "computed": 8.37,
+      "measured": 8.37,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-746 b",
+      "computed": 1.11,
+      "measured": 1.11,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-746 b",
+      "computed": 1.41,
+      "measured": 1.41,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-760 b",
+      "computed": 3.06,
+      "measured": 3.06,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-760 b",
+      "computed": 9.59,
+      "measured": 9.59,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-272 c",
+      "computed": 1.79,
+      "measured": 1.79,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-272 c",
+      "computed": 97.8,
+      "measured": 97.8,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-775 b",
+      "computed": 1.19,
+      "measured": 1.19,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-775 b",
+      "computed": 1.81,
+      "measured": 1.81,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-498 b",
+      "computed": 3.03,
+      "measured": 3.03,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-498 b",
+      "computed": 9.43,
+      "measured": 9.43,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-877 b",
+      "computed": 2.12,
+      "measured": 2.12,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-877 b",
+      "computed": 5.14,
+      "measured": 5.14,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-865 b",
+      "computed": 2.49,
+      "measured": 2.49,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-865 b",
+      "computed": 6.76,
+      "measured": 6.76,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-288 c",
+      "computed": 2.85,
+      "measured": 2.85,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-288 c",
+      "computed": 8.5,
+      "measured": 8.5,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-794 b",
+      "computed": 2.11,
+      "measured": 2.11,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-794 b",
+      "computed": 5.1,
+      "measured": 5.1,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-340 c",
+      "computed": 3.37,
+      "measured": 3.37,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-340 c",
+      "computed": 11.3,
+      "measured": 11.3,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-333 b",
+      "computed": 1.32,
+      "measured": 1.32,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-333 b",
+      "computed": 28.2,
+      "measured": 28.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-951 b",
+      "computed": 5.59,
+      "measured": 5.59,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-951 b",
+      "computed": 26.7,
+      "measured": 26.7,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-66 b",
+      "computed": 2.8,
+      "measured": 2.8,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-66 b",
+      "computed": 8.25,
+      "measured": 8.25,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1805 b",
+      "computed": 1.54502915,
+      "measured": 1.54502915,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1805 b",
+      "computed": 3.0,
+      "measured": 3.0,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1792 b",
+      "computed": 2.51990972,
+      "measured": 2.51990972,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1792 b",
+      "computed": 6.89,
+      "measured": 6.89,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-276 d",
+      "computed": 2.8,
+      "measured": 2.8,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-276 d",
+      "computed": 16.3,
+      "measured": 16.3,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-372 c",
+      "computed": 2.09,
+      "measured": 2.09,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-372 c",
+      "computed": 5.02,
+      "measured": 5.02,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-114 b",
+      "computed": 1.26,
+      "measured": 1.26,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-114 b",
+      "computed": 1.09,
+      "measured": 1.09,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1207 b",
+      "computed": 1.62,
+      "measured": 1.62,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1207 b",
+      "computed": 3.26,
+      "measured": 3.26,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1249 b",
+      "computed": 2.38,
+      "measured": 2.38,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1249 b",
+      "computed": 6.26,
+      "measured": 6.26,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1859 b",
+      "computed": 1.58313575,
+      "measured": 1.58313575,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1859 b",
+      "computed": 3.13,
+      "measured": 3.13,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1244 b",
+      "computed": 1.35,
+      "measured": 1.35,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1244 b",
+      "computed": 2.39,
+      "measured": 2.39,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-213 c",
+      "computed": 2.34,
+      "measured": 2.34,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-213 c",
+      "computed": 6.08,
+      "measured": 6.08,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1388 b",
+      "computed": 2.59,
+      "measured": 2.59,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1388 b",
+      "computed": 7.22,
+      "measured": 7.22,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-258 c",
+      "computed": 3.61,
+      "measured": 3.61,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-258 c",
+      "computed": 12.7,
+      "measured": 12.7,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-355 b",
+      "computed": 1.46,
+      "measured": 1.46,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-355 b",
+      "computed": 2.73,
+      "measured": 2.73,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-324 e",
+      "computed": 2.03862444,
+      "measured": 2.03862444,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-324 e",
+      "computed": 235.014,
+      "measured": 235.014,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-330 b",
+      "computed": 1.35,
+      "measured": 1.35,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-330 b",
+      "computed": 2.39,
+      "measured": 2.39,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-233 c",
+      "computed": 2.71,
+      "measured": 2.71,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-233 c",
+      "computed": 7.8,
+      "measured": 7.8,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-174 d",
+      "computed": 2.19,
+      "measured": 2.19,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-174 d",
+      "computed": 5.43,
+      "measured": 5.43,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-200 c",
+      "computed": 1.59,
+      "measured": 1.59,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-200 c",
+      "computed": 3.15,
+      "measured": 3.15,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-130 d",
+      "computed": 1.64,
+      "measured": 1.64,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-130 d",
+      "computed": 3.33,
+      "measured": 3.33,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-541 b",
+      "computed": 3.36,
+      "measured": 3.36,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-541 b",
+      "computed": 11.2,
+      "measured": 11.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1585 b",
+      "computed": 1.79,
+      "measured": 1.79,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1585 b",
+      "computed": 3.86,
+      "measured": 3.86,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1275 b",
+      "computed": 1.48,
+      "measured": 1.48,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1275 b",
+      "computed": 2.79,
+      "measured": 2.79,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-60 d",
+      "computed": 1.99,
+      "measured": 1.99,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-60 d",
+      "computed": 4.16,
+      "measured": 4.16,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1176 b",
+      "computed": 2.45,
+      "measured": 2.45,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1176 b",
+      "computed": 6.57,
+      "measured": 6.57,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1225 b",
+      "computed": 1.82,
+      "measured": 1.82,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1225 b",
+      "computed": 3.97,
+      "measured": 3.97,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1394 b",
+      "computed": 1.39,
+      "measured": 1.39,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1394 b",
+      "computed": 2.51,
+      "measured": 2.51,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1649 b",
+      "computed": 1.017,
+      "measured": 1.017,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1649 b",
+      "computed": 1.03,
+      "measured": 1.03,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "TOI-1246 c",
+      "computed": 2.45109846,
+      "measured": 2.45109846,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "TOI-1246 c",
+      "computed": 9.1,
+      "measured": 9.1,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1468 c",
+      "computed": 1.15,
+      "measured": 1.15,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1468 c",
+      "computed": 1.6,
+      "measured": 1.6,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-326 c",
+      "computed": 1.4,
+      "measured": 1.4,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-326 c",
+      "computed": 17.4,
+      "measured": 17.4,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1085 c",
+      "computed": 3.26817741,
+      "measured": 3.26817741,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1085 c",
+      "computed": 10.7,
+      "measured": 10.7,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1229 b",
+      "computed": 1.4,
+      "measured": 1.4,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1229 b",
+      "computed": 2.54,
+      "measured": 2.54,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1542 e",
+      "computed": 0.76,
+      "measured": 0.76,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1542 e",
+      "computed": 0.363,
+      "measured": 0.363,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1178 b",
+      "computed": 1.07,
+      "measured": 1.07,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1178 b",
+      "computed": 1.24,
+      "measured": 1.24,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "K2-187 c",
+      "computed": 1.4,
+      "measured": 1.4,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "K2-187 c",
+      "computed": 2.54,
+      "measured": 2.54,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1060 b",
+      "computed": 2.38,
+      "measured": 2.38,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1060 b",
+      "computed": 6.26,
+      "measured": 6.26,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-990 b",
+      "computed": 2.6,
+      "measured": 2.6,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-990 b",
+      "computed": 7.27,
+      "measured": 7.27,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1126 b",
+      "computed": 1.73,
+      "measured": 1.73,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1126 b",
+      "computed": 3.64,
+      "measured": 3.64,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-100 c",
+      "computed": 2.2,
+      "measured": 2.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-100 c",
+      "computed": 7.05,
+      "measured": 7.05,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-172 c",
+      "computed": 2.86,
+      "measured": 2.86,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-172 c",
+      "computed": 8.55,
+      "measured": 8.55,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-663 b",
+      "computed": 2.6,
+      "measured": 2.6,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-663 b",
+      "computed": 7.27,
+      "measured": 7.27,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HD 102117 b",
+      "computed": 8.47,
+      "measured": 8.47,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HD 102117 b",
+      "computed": 54.0311,
+      "measured": 54.0311,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HD 137388 b",
+      "computed": 9.32,
+      "measured": 9.32,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HD 137388 b",
+      "computed": 63.566,
+      "measured": 63.566,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HD 50554 b",
+      "computed": 12.8,
+      "measured": 12.8,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HD 50554 b",
+      "computed": 1859.29618095,
+      "measured": 1859.29618095,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "WASP-24 b",
+      "computed": 15.46842,
+      "measured": 15.46842,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "WASP-24 b",
+      "computed": 394.1092,
+      "measured": 394.1092,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HD 156846 b",
+      "computed": 12.4,
+      "measured": 12.4,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HD 156846 b",
+      "computed": 3391.2461,
+      "measured": 3391.2461,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "WASP-151 b",
+      "computed": 13.30506009,
+      "measured": 13.30506009,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "WASP-151 b",
+      "computed": 100.43377661,
+      "measured": 100.43377661,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-80 g",
+      "computed": 1.13,
+      "measured": 1.13,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-80 g",
+      "computed": 0.065,
+      "measured": 0.065,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-263 b",
+      "computed": 2.67,
+      "measured": 2.67,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-263 b",
+      "computed": 7.61,
+      "measured": 7.61,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "K2-10 b",
+      "computed": 3.773,
+      "measured": 3.773,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "K2-10 b",
+      "computed": 25.2,
+      "measured": 25.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "TOI-411 b",
+      "computed": 1.362,
+      "measured": 1.362,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "TOI-411 b",
+      "computed": 13.71,
+      "measured": 13.71,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "WASP-120 b",
+      "computed": 15.58048317,
+      "measured": 15.58048317,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "WASP-120 b",
+      "computed": 1541.4755,
+      "measured": 1541.4755,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1006 b",
+      "computed": 1.54,
+      "measured": 1.54,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1006 b",
+      "computed": 2.99,
+      "measured": 2.99,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-398 d",
+      "computed": 0.88,
+      "measured": 0.88,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-398 d",
+      "computed": 0.615,
+      "measured": 0.615,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "TOI-5335 b",
+      "computed": 4.02422162,
+      "measured": 4.02422162,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "TOI-5335 b",
+      "computed": 15.3,
+      "measured": 15.3,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-78 b",
+      "computed": 1.201,
+      "measured": 1.201,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-78 b",
+      "computed": 1.68,
+      "measured": 1.68,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-253 d",
+      "computed": 3.17,
+      "measured": 3.17,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-253 d",
+      "computed": 10.2,
+      "measured": 10.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "K2-62 b",
+      "computed": 2.02,
+      "measured": 2.02,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "K2-62 b",
+      "computed": 4.74,
+      "measured": 4.74,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-369 b",
+      "computed": 1.13,
+      "measured": 1.13,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-369 b",
+      "computed": 1.51,
+      "measured": 1.51,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-657 b",
+      "computed": 3.52,
+      "measured": 3.52,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-657 b",
+      "computed": 12.2,
+      "measured": 12.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-513 b",
+      "computed": 2.2,
+      "measured": 2.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-513 b",
+      "computed": 5.48,
+      "measured": 5.48,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "TOI-1180 b",
+      "computed": 3.072,
+      "measured": 3.072,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "TOI-1180 b",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "11 UMi b",
+      "computed": 12.3,
+      "measured": 12.3,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "11 UMi b",
+      "computed": 4684.8142,
+      "measured": 4684.8142,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1390 b",
+      "computed": 1.18,
+      "measured": 1.18,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1390 b",
+      "computed": 1.76,
+      "measured": 1.76,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "OGLE-2018-BLG-0298L b",
+      "computed": 7.56,
+      "measured": 7.56,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "OGLE-2018-BLG-0298L b",
+      "computed": 44.49597698,
+      "measured": 44.49597698,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "WASP-60 b",
+      "computed": 9.86392,
+      "measured": 9.86392,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "WASP-60 b",
+      "computed": 174.8065,
+      "measured": 174.8065,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1762 b",
+      "computed": 2.76022913,
+      "measured": 2.76022913,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1762 b",
+      "computed": 8.05,
+      "measured": 8.05,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-98 b",
+      "computed": 1.99,
+      "measured": 1.99,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-98 b",
+      "computed": 3.55,
+      "measured": 3.55,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-403 c",
+      "computed": 1.75,
+      "measured": 1.75,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-403 c",
+      "computed": 3.71,
+      "measured": 3.71,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-292 b",
+      "computed": 1.32,
+      "measured": 1.32,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-292 b",
+      "computed": 2.3,
+      "measured": 2.3,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "K2-49 b",
+      "computed": 1.93,
+      "measured": 1.93,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "K2-49 b",
+      "computed": 4.38,
+      "measured": 4.38,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HD 142245 b",
+      "computed": 13.1,
+      "measured": 13.1,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HD 142245 b",
+      "computed": 975.7381,
+      "measured": 975.7381,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "TOI-1452 b",
+      "computed": 1.672,
+      "measured": 1.672,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "TOI-1452 b",
+      "computed": 4.82,
+      "measured": 4.82,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-110 b",
+      "computed": 1.83,
+      "measured": 1.83,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-110 b",
+      "computed": 4.01,
+      "measured": 4.01,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1296 b",
+      "computed": 0.91,
+      "measured": 0.91,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1296 b",
+      "computed": 0.693,
+      "measured": 0.693,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1221 b",
+      "computed": 1.88,
+      "measured": 1.88,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1221 b",
+      "computed": 4.19,
+      "measured": 4.19,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-158 d",
+      "computed": 0.43,
+      "measured": 0.43,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-158 d",
+      "computed": 0.0472,
+      "measured": 0.0472,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "OGLE-2018-BLG-1700L b",
+      "computed": 12.9,
+      "measured": 12.9,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "OGLE-2018-BLG-1700L b",
+      "computed": 1400.0,
+      "measured": 1400.0,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-49 b",
+      "computed": 2.579,
+      "measured": 2.579,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-49 b",
+      "computed": 9.77,
+      "measured": 9.77,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "TOI-1295 b",
+      "computed": 15.69257298,
+      "measured": 15.69257298,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "TOI-1295 b",
+      "computed": 451.31633794,
+      "measured": 451.31633794,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1691 b",
+      "computed": 1.83470985,
+      "measured": 1.83470985,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1691 b",
+      "computed": 4.02,
+      "measured": 4.02,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-180 c",
+      "computed": 3.01,
+      "measured": 3.01,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-180 c",
+      "computed": 9.32,
+      "measured": 9.32,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HATS-33 b",
+      "computed": 13.78707,
+      "measured": 13.78707,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HATS-33 b",
+      "computed": 378.85336,
+      "measured": 378.85336,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "K2-254 c",
+      "computed": 2.19,
+      "measured": 2.19,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "K2-254 c",
+      "computed": 5.43,
+      "measured": 5.43,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HD 38283 b",
+      "computed": 14.0,
+      "measured": 14.0,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HD 38283 b",
+      "computed": 127.132,
+      "measured": 127.132,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "CoRoT-20 b",
+      "computed": 9.41556,
+      "measured": 9.41556,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "CoRoT-20 b",
+      "computed": 1366.669,
+      "measured": 1366.669,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-162 c",
+      "computed": 3.03,
+      "measured": 3.03,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-162 c",
+      "computed": 9.43,
+      "measured": 9.43,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "TOI-375 d",
+      "computed": 13.6,
+      "measured": 13.6,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "TOI-375 d",
+      "computed": 445.59542661,
+      "measured": 445.59542661,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "K2-248 b",
+      "computed": 2.57,
+      "measured": 2.57,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "K2-248 b",
+      "computed": 7.13,
+      "measured": 7.13,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1252 b",
+      "computed": 1.67,
+      "measured": 1.67,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1252 b",
+      "computed": 3.43,
+      "measured": 3.43,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "WASP-35 b",
+      "computed": 14.5717,
+      "measured": 14.5717,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "WASP-35 b",
+      "computed": 225.6593,
+      "measured": 225.6593,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HD 155918 b",
+      "computed": 2.67,
+      "measured": 2.67,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HD 155918 b",
+      "computed": 7.62788177,
+      "measured": 7.62788177,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-300 c",
+      "computed": 2.25,
+      "measured": 2.25,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-300 c",
+      "computed": 5.69,
+      "measured": 5.69,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HD 55696 b",
+      "computed": 12.9,
+      "measured": 12.9,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HD 55696 b",
+      "computed": 1357.12729789,
+      "measured": 1357.12729789,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-787 b",
+      "computed": 1.28,
+      "measured": 1.28,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-787 b",
+      "computed": 2.18,
+      "measured": 2.18,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "WASP-150 b",
+      "computed": 11.99363,
+      "measured": 11.99363,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "WASP-150 b",
+      "computed": 2688.8418,
+      "measured": 2688.8418,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "NGTS-12 b",
+      "computed": 11.747032,
+      "measured": 11.747032,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "NGTS-12 b",
+      "computed": 66.10864,
+      "measured": 66.10864,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "TOI-4155 b",
+      "computed": 3.21,
+      "measured": 3.21,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "TOI-4155 b",
+      "computed": 10.4,
+      "measured": 10.4,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "KMT-2018-BLG-0029L b",
+      "computed": 2.67,
+      "measured": 2.67,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "KMT-2018-BLG-0029L b",
+      "computed": 7.59,
+      "measured": 7.59,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "KMT-2019-BLG-2974L b",
+      "computed": 11.4,
+      "measured": 11.4,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "KMT-2019-BLG-2974L b",
+      "computed": 88.99195396,
+      "measured": 88.99195396,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HATS-28 b",
+      "computed": 13.383546,
+      "measured": 13.383546,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HATS-28 b",
+      "computed": 213.58176,
+      "measured": 213.58176,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-214 c",
+      "computed": 2.13,
+      "measured": 2.13,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-214 c",
+      "computed": 5.18,
+      "measured": 5.18,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HD 33142 b",
+      "computed": 13.7,
+      "measured": 13.7,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HD 33142 b",
+      "computed": 400.46379282,
+      "measured": 400.46379282,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "GJ 4274 b",
+      "computed": 1.53,
+      "measured": 1.53,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "GJ 4274 b",
+      "computed": 2.97,
+      "measured": 2.97,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-385 b",
+      "computed": 2.73,
+      "measured": 2.73,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-385 b",
+      "computed": 12.8,
+      "measured": 12.8,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "HD 27631 b",
+      "computed": 13.5,
+      "measured": 13.5,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "HD 27631 b",
+      "computed": 495.81231492,
+      "measured": 495.81231492,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "KIC 5479689 b",
+      "computed": 14.2,
+      "measured": 14.2,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "KIC 5479689 b",
+      "computed": 158.9142035,
+      "measured": 158.9142035,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "TOI-2120 b",
+      "computed": 2.122,
+      "measured": 2.122,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "TOI-2120 b",
+      "computed": 6.8,
+      "measured": 6.8,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1257 b",
+      "computed": 1.52,
+      "measured": 1.52,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1257 b",
+      "computed": 2.92,
+      "measured": 2.92,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-1744 b",
+      "computed": 3.76754004,
+      "measured": 3.76754004,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-1744 b",
+      "computed": 13.6,
+      "measured": 13.6,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "OGLE-2012-BLG-0026L b",
+      "computed": 7.72,
+      "measured": 7.72,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "OGLE-2012-BLG-0026L b",
+      "computed": 46.1,
+      "measured": 46.1,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "OGLE-2017-BLG-0482L b",
+      "computed": 2.95,
+      "measured": 2.95,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "OGLE-2017-BLG-0482L b",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "Kepler-901 b",
+      "computed": 1.37,
+      "measured": 1.37,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "Kepler-901 b",
+      "computed": 2.45,
+      "measured": 2.45,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_rade",
+      "name": "KELT-6 c",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "exogeology_lab",
+      "property": "pl_bmasse",
+      "name": "KELT-6 c",
+      "computed": 1179.1493,
+      "measured": 1179.1493,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet"
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Mercury",
+      "computed": 5.4305,
+      "measured": 5.427,
+      "error_pct": 0.064396,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Venus",
+      "computed": 5.2438,
+      "measured": 5.204,
+      "error_pct": 0.764363,
+      "within_tol": false
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Earth",
+      "computed": 5.5134,
+      "measured": 5.51,
+      "error_pct": 0.061854,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Mars",
+      "computed": 3.9326,
+      "measured": 3.933,
+      "error_pct": 0.009693,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Jupiter",
+      "computed": 1.3262,
+      "measured": 1.3262,
+      "error_pct": 0.001268,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Saturn",
+      "computed": 0.6871,
+      "measured": 0.687,
+      "error_pct": 0.017906,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Uranus",
+      "computed": 1.2704,
+      "measured": 1.271,
+      "error_pct": 0.046016,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Neptune",
+      "computed": 1.6375,
+      "measured": 1.638,
+      "error_pct": 0.032274,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Pluto",
+      "computed": 1.8596,
+      "measured": 1.86,
+      "error_pct": 0.024003,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Eris",
+      "computed": 2.499,
+      "measured": 2.43,
+      "error_pct": 2.838109,
+      "within_tol": false
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Makemake",
+      "computed": 2.0247,
+      "measured": 1.7,
+      "error_pct": 19.09843,
+      "within_tol": false
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Haumea",
+      "computed": 1.7602,
+      "measured": 2.018,
+      "error_pct": 12.777065,
+      "within_tol": false
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Io",
+      "computed": 3.5275,
+      "measured": 3.528,
+      "error_pct": 0.014547,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Europa",
+      "computed": 3.0129,
+      "measured": 3.013,
+      "error_pct": 0.003991,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Ganymede",
+      "computed": 1.9415,
+      "measured": 1.942,
+      "error_pct": 0.02395,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Callisto",
+      "computed": 1.8339,
+      "measured": 1.834,
+      "error_pct": 0.005956,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Titan",
+      "computed": 1.8803,
+      "measured": 1.88,
+      "error_pct": 0.014338,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Triton",
+      "computed": 2.0648,
+      "measured": 2.065,
+      "error_pct": 0.010088,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Phobos",
+      "computed": 1.9066,
+      "measured": 1.9,
+      "error_pct": 0.346984,
+      "within_tol": true
+    },
+    {
+      "lab": "planetary_structure_lab",
+      "property": "mean_density",
+      "name": "Deimos",
+      "computed": 1.8004,
+      "measured": 1.76,
+      "error_pct": 2.295187,
+      "within_tol": false
+    }
+  ]
+}

@@ -17,6 +17,7 @@ MANIFEST_PATH = ROOT / "data" / "math_generator_manifest.yaml"
 REGISTRY_PATH = ROOT / "data" / "lab_registry.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
+from fsot_paths import math_generator_comparison_path  # noqa: E402
 from math_generator_lab import load_comparison_report, summarize_math_generator  # noqa: E402
 
 
@@ -28,8 +29,7 @@ def verify_math_generator(
         raise RuntimeError("PyYAML required")
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
     ver = manifest.get("verification", {})
-    math_root = Path(manifest["math_generator_root"])
-    report_path = math_root / manifest["artifacts"]["comparison_report"]["path"]
+    report_path = math_generator_comparison_path()
     registry = json.loads(registry_path.read_text(encoding="utf-8")) if registry_path.exists() else {}
     issues: list[str] = []
 

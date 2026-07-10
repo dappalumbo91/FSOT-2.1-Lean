@@ -1,0 +1,21 @@
+# Tier 17 — Higgs boson mass (FO-213 SMILES intrinsic).
+version: "1.0"
+updated: "2026-07-09"
+
+source:
+  smiles_dataset: vendor/smiles/FSOT_SMILES_Lab_Dataset.json
+  overlay_rule: FO-213
+
+build:
+  script: scripts/build_higgs_mass_benchmark.py
+  output: data/higgs_mass_benchmark.json
+
+lean:
+  generator: scripts/gen_higgs_mass_lean.py
+  module: FSOT.Formal.HiggsMassPriors
+  lean_domain: particle
+  sign_theorem: particle_raw_S_positive
+
+verification:
+  min_higgs_mass_observables: 1
+  max_median_error_pct: 0.5
