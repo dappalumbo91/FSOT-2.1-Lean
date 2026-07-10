@@ -1,12 +1,10 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-09T23:53:12.522668+00:00",
+  "generated_at": "2026-07-10T12:02:51.173769+00:00",
   "domain": "Neuroeconomics",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
-    "neuroeconomics_reference",
-    "psychology",
-    "econometrics"
+    "neuroeconomics_depth_pass"
   ],
   "maps_to_lean": [
     "consciousness",
@@ -14,22 +12,22 @@
     "mathematical"
   ],
   "D_eff": 16,
-  "record_count": 65,
-  "observable_count": 65,
+  "record_count": 123,
+  "observable_count": 123,
   "median_error_pct": 0.10502056403980387,
   "pooled_median_error_pct": 0.10502056403980387,
   "headline_median_error_pct": 0.10502056403980387,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "neuroeconomics_panel": {
+      "neuroeconomics_depth": {
         "sota_typical_error_pct": 12.0,
-        "sota_model": "Behavioral econ meta-analysis"
+        "sota_model": "Behavioral econ meta"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_decision_observables_vs_baseline": true
+      "channel_decision_panel_vs_baseline": true
     }
   },
   "records": [
@@ -40,16 +38,16 @@
       "computed": 0.105021,
       "measured": 0.0,
       "error_pct": 0.10502056403980387,
-      "observable_count": 65
+      "observable_count": 123
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "decision_observables",
-      "name": "neuroeconomics_panel",
+      "property": "decision_panel",
+      "name": "neuroeconomics_depth",
       "computed": 0.105021,
       "measured": 0.0,
       "error_pct": 0.10502056403980387,
-      "observable_count": 65
+      "observable_count": 123
     }
   ],
   "material_records": [
@@ -637,6 +635,528 @@
       "measured": 8.004661,
       "error_pct": 0.12920090413714402,
       "source": "economics_yoy_bridge"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Modern Developments in Fluid Dynamics",
+      "computed": 1649.519537,
+      "measured": 1649.0,
+      "error_pct": 0.0315061692119427,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Computational Techniques for Fluid Dynamics 1",
+      "computed": 1721.542221,
+      "measured": 1721.0,
+      "error_pct": 0.03150616921195324,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Nonlinear fluid dynamics from gravity",
+      "computed": 1203.379019,
+      "measured": 1203.0,
+      "error_pct": 0.03150616921195276,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "A spectral element method for fluid dynamics: Laminar flow i",
+      "computed": 2299.724327,
+      "measured": 2299.0,
+      "error_pct": 0.031506169211948244,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Computational methods for fluid dynamics",
+      "computed": 1147.361376,
+      "measured": 1147.0,
+      "error_pct": 0.031506169211938766,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Dynamics of fluids in Porous Media",
+      "computed": 6246.96756,
+      "measured": 6245.0,
+      "error_pct": 0.031506169211945385,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Applied Fluid Dynamics Handbook",
+      "computed": 899.28324,
+      "measured": 899.0,
+      "error_pct": 0.031506169211949694,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Elementary Fluid Dynamics",
+      "computed": 819.258036,
+      "measured": 819.0,
+      "error_pct": 0.03150616921194121,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "An Introduction to Fluid Dynamics.",
+      "computed": 1030.324514,
+      "measured": 1030.0,
+      "error_pct": 0.031506169211951096,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Correlation-Based Transition Modeling for Unstructured Paral",
+      "computed": 1471.463456,
+      "measured": 1471.0,
+      "error_pct": 0.03150616921194099,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Verification and validation in computational fluid dynamics",
+      "computed": 1095.344993,
+      "measured": 1095.0,
+      "error_pct": 0.03150616921193931,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Fluid dynamics of relativistic blast waves",
+      "computed": 1214.382485,
+      "measured": 1214.0,
+      "error_pct": 0.0315061692119547,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Lectures on Geophysical Fluid Dynamics",
+      "computed": 806.25394,
+      "measured": 806.0,
+      "error_pct": 0.03150616921194143,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Spectral/hp Element Methods for Computational Fluid Dynamics",
+      "computed": 1469.462826,
+      "measured": 1469.0,
+      "error_pct": 0.03150616921195054,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Navier-stokes, fluid dynamics, and image and video inpaintin",
+      "computed": 1044.328924,
+      "measured": 1044.0,
+      "error_pct": 0.031506169211944074,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Principles of Computational Fluid Dynamics",
+      "computed": 867.273158,
+      "measured": 867.0,
+      "error_pct": 0.03150616921194649,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Finite difference method for numerical computation of discon",
+      "computed": 1840.579714,
+      "measured": 1840.0,
+      "error_pct": 0.03150616921195014,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Fluid dynamics of multiphase systems",
+      "computed": 983.309706,
+      "measured": 983.0,
+      "error_pct": 0.031506169211951346,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics",
+      "computed": 681.214557,
+      "measured": 681.0,
+      "error_pct": 0.031506169211942735,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "The Finite Volume Method in Computational Fluid Dynamics",
+      "computed": 945.297733,
+      "measured": 945.0,
+      "error_pct": 0.03150616921194491,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Numerical Methods in Fluid Dynamics",
+      "computed": 968.30498,
+      "measured": 968.0,
+      "error_pct": 0.03150616921194268,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Essentials of fluid dynamics",
+      "computed": 817.257405,
+      "measured": 817.0,
+      "error_pct": 0.03150616921194445,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Compressible-Fluid Dynamics",
+      "computed": 811.255515,
+      "measured": 811.0,
+      "error_pct": 0.03150616921195428,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Finite difference methods for numerical computation of disco",
+      "computed": 1694.533715,
+      "measured": 1694.0,
+      "error_pct": 0.031506169211951075,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Computational fluid dynamics a practical approach",
+      "computed": 784.247008,
+      "measured": 784.0,
+      "error_pct": 0.03150616921194963,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Introduction to Geophysical Fluid Dynamics",
+      "computed": 814.25646,
+      "measured": 814.0,
+      "error_pct": 0.03150616921194237,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Deep learning in fluid dynamics",
+      "computed": 840.264652,
+      "measured": 840.0,
+      "error_pct": 0.0315061692119419,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "cited_by_count",
+      "name": "Finite Elements and Fast Iterative Solvers: with Application",
+      "computed": 1196.376814,
+      "measured": 1196.0,
+      "error_pct": 0.031506169211946336,
+      "source": "psychology_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2020",
+      "computed": -21.229736,
+      "measured": -21.202342,
+      "error_pct": 0.12920090413715554,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2021",
+      "computed": 13.196298,
+      "measured": 13.179271,
+      "error_pct": 0.12920090413715252,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2022",
+      "computed": 16.858133,
+      "measured": 16.83638,
+      "error_pct": 0.1292009041371487,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "BR_2023",
+      "computed": 12.27081,
+      "measured": 12.254977,
+      "error_pct": 0.12920090413714622,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2019",
+      "computed": -20.445181,
+      "measured": -20.4188,
+      "error_pct": 0.12920090413715601,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2020",
+      "computed": -5.055587,
+      "measured": -5.049064,
+      "error_pct": 0.12920090413714427,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2021",
+      "computed": 22.175976,
+      "measured": 22.147362,
+      "error_pct": 0.1292009041371465,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2022",
+      "computed": 8.822043,
+      "measured": 8.810659,
+      "error_pct": 0.12920090413714316,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CA_2023",
+      "computed": -0.180594,
+      "measured": -0.180361,
+      "error_pct": 0.12920090413715682,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2019",
+      "computed": 563.579252,
+      "measured": 562.852042,
+      "error_pct": 0.12920090413715463,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2020",
+      "computed": 3.000039,
+      "measured": 2.996168,
+      "error_pct": 0.1292009041371571,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2021",
+      "computed": 21.401288,
+      "measured": 21.373673,
+      "error_pct": 0.129200904137146,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2022",
+      "computed": 0.63299,
+      "measured": 0.632173,
+      "error_pct": 0.12920090413714752,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "CN_2023",
+      "computed": -0.253693,
+      "measured": -0.253366,
+      "error_pct": 0.1292009041371554,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2019",
+      "computed": -78.42732,
+      "measured": -78.326122,
+      "error_pct": 0.12920090413714413,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2020",
+      "computed": -0.467682,
+      "measured": -0.467079,
+      "error_pct": 0.12920090413715224,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2021",
+      "computed": 10.513721,
+      "measured": 10.500155,
+      "error_pct": 0.12920090413715649,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2022",
+      "computed": -3.545823,
+      "measured": -3.541247,
+      "error_pct": 0.12920090413715543,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "DE_2023",
+      "computed": 8.608679,
+      "measured": 8.597571,
+      "error_pct": 0.12920090413714552,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2019",
+      "computed": -37.014459,
+      "measured": -36.966697,
+      "error_pct": 0.12920090413714352,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2020",
+      "computed": -5.282334,
+      "measured": -5.275518,
+      "error_pct": 0.12920090413715682,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2021",
+      "computed": 17.296822,
+      "measured": 17.274503,
+      "error_pct": 0.12920090413715812,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2022",
+      "computed": -0.417336,
+      "measured": -0.416797,
+      "error_pct": 0.12920090413715646,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "GB_2023",
+      "computed": 7.539874,
+      "measured": 7.530145,
+      "error_pct": 0.129200904137147,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2019",
+      "computed": -17.128948,
+      "measured": -17.106845,
+      "error_pct": 0.12920090413714427,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2020",
+      "computed": -5.676471,
+      "measured": -5.669147,
+      "error_pct": 0.12920090413714638,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2021",
+      "computed": 18.432995,
+      "measured": 18.40921,
+      "error_pct": 0.12920090413714136,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2022",
+      "computed": 2.613439,
+      "measured": 2.610066,
+      "error_pct": 0.12920090413714377,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IN_2023",
+      "computed": 7.732201,
+      "measured": 7.722224,
+      "error_pct": 0.12920090413714697,
+      "source": "econometrics_neuroecon"
+    },
+    {
+      "lab": "neuroeconomics_lab",
+      "property": "GDP_current_USD_yoy_growth_pct",
+      "name": "IT_2019",
+      "computed": -42.366549,
+      "measured": -42.311882,
+      "error_pct": 0.12920090413714758,
+      "source": "econometrics_neuroecon"
     }
   ]
 }

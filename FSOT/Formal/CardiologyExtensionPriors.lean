@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def cardiology_ext_observable_count : ℕ := 45
+def cardiology_ext_observable_count : ℕ := 126
 def cardiology_ext_pooled_median_error_pct : ℝ := (0.030622122938654326 : ℝ)
 def cardiology_ext_headline_median_error_pct : ℝ := (0.030622122938654326 : ℝ)
 def cardiology_ext_beats_sota_headlines : ℕ := 2
@@ -32,7 +32,7 @@ theorem cardiology_ext_beats_sota_headlines_pos : 0 < cardiology_ext_beats_sota_
   unfold cardiology_ext_beats_sota_headlines; norm_num
 
 theorem cardiology_ext_bundle :
-    cardiology_ext_observable_count = 45 ∧
+    cardiology_ext_observable_count = 126 ∧
     cardiology_ext_pooled_median_error_pct < (5 : ℝ) ∧
     cardiology_ext_headline_median_error_pct < (5 : ℝ) ∧
     0 < cardiology_ext_beats_sota_headlines ∧

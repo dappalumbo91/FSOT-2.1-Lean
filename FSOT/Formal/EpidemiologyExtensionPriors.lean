@@ -11,9 +11,9 @@ noncomputable section
 
 open Real
 
-def epidemiology_ext_observable_count : ℕ := 20
-def epidemiology_ext_pooled_median_error_pct : ℝ := (0.03062212293865052 : ℝ)
-def epidemiology_ext_headline_median_error_pct : ℝ := (0.03062212293865052 : ℝ)
+def epidemiology_ext_observable_count : ℕ := 220
+def epidemiology_ext_pooled_median_error_pct : ℝ := (0.039895 : ℝ)
+def epidemiology_ext_headline_median_error_pct : ℝ := (0.039895 : ℝ)
 def epidemiology_ext_beats_sota_headlines : ℕ := 2
 def epidemiology_ext_D_eff : ℕ := 15
 
@@ -32,7 +32,7 @@ theorem epidemiology_ext_beats_sota_headlines_pos : 0 < epidemiology_ext_beats_s
   unfold epidemiology_ext_beats_sota_headlines; norm_num
 
 theorem epidemiology_ext_bundle :
-    epidemiology_ext_observable_count = 20 ∧
+    epidemiology_ext_observable_count = 220 ∧
     epidemiology_ext_pooled_median_error_pct < (5 : ℝ) ∧
     epidemiology_ext_headline_median_error_pct < (5 : ℝ) ∧
     0 < epidemiology_ext_beats_sota_headlines ∧

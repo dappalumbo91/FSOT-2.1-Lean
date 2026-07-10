@@ -1,8 +1,8 @@
-generated_at: '2026-07-09T23:53:20.765963+00:00'
+generated_at: '2026-07-10T12:04:02.908427+00:00'
 summary:
   neurolab_domains: 35
-  extension_domains: 105
-  total_scientific_domains_covered: 141
+  extension_domains: 107
+  total_scientific_domains_covered: 143
   total_empirical_records: 306680
   domains_target_band_2pct: 35
   domains_sign_mismatch: 0
@@ -12,7 +12,7 @@ summary:
     C_thin: 0
     D_needs_work: 0
     unverified: 0
-  lean_formal_modules: 175
+  lean_formal_modules: 177
 neurolab_domains:
 - domain: Acoustics
   lean_domain: material
@@ -934,27 +934,27 @@ extension_domains:
   lean_module: FSOT.Formal.EntomologyExtensionPriors
 - domain: Virology
   tier: 41
-  record_count: 50
-  median_error_pct: 0.134848
-  coverage_tier: B_verified
+  record_count: 163
+  median_error_pct: 0.04593318440798183
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.VirologyExtensionPriors
 - domain: Epidemiology
   tier: 41
-  record_count: 20
-  median_error_pct: 0.03062212293865052
-  coverage_tier: B_verified
+  record_count: 220
+  median_error_pct: 0.039895
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.EpidemiologyExtensionPriors
 - domain: Cardiology
   tier: 41
-  record_count: 45
+  record_count: 126
   median_error_pct: 0.030622122938654326
-  coverage_tier: B_verified
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.CardiologyExtensionPriors
 - domain: Civil_Engineering
   tier: 41
-  record_count: 37
-  median_error_pct: 0.0335259880736416
-  coverage_tier: B_verified
+  record_count: 181
+  median_error_pct: 0.033525988073647546
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.CivilEngineeringExtensionPriors
 - domain: Mechanical_Engineering
   tier: 41
@@ -970,9 +970,9 @@ extension_domains:
   lean_module: FSOT.Formal.RoboticsControlSystemsExtensionPriors
 - domain: Neuroeconomics
   tier: 41
-  record_count: 65
+  record_count: 123
   median_error_pct: 0.10502056403980387
-  coverage_tier: B_verified
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.NeuroeconomicsExtensionPriors
 - domain: Paleoclimate
   tier: 41
@@ -982,9 +982,9 @@ extension_domains:
   lean_module: FSOT.Formal.PaleoclimateExtensionPriors
 - domain: Speleology
   tier: 41
-  record_count: 65
-  median_error_pct: 0.04459015721103015
-  coverage_tier: B_verified
+  record_count: 200
+  median_error_pct: 0.0
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.SpeleologyExtensionPriors
 - domain: Exogeology
   tier: 41
@@ -1012,16 +1012,28 @@ extension_domains:
   lean_module: FSOT.Formal.LawPolicyExtensionPriors
 - domain: Finance_Markets
   tier: 41
-  record_count: 150
-  median_error_pct: 0.025840180827433133
+  record_count: 245
+  median_error_pct: 0.025840180827434747
   coverage_tier: A_strong
   lean_module: FSOT.Formal.FinanceMarketsExtensionPriors
 - domain: Supply_Chain_Logistics
   tier: 41
-  record_count: 40
-  median_error_pct: 0.03230022603427978
-  coverage_tier: B_verified
+  record_count: 220
+  median_error_pct: 0.01801902489293558
+  coverage_tier: A_strong
   lean_module: FSOT.Formal.SupplyChainLogisticsExtensionPriors
+- domain: Domain_Coupling_Simulation
+  tier: 42
+  record_count: 2448
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.DomainCouplingSimulationPriors
+- domain: Formula_Corpus_Closure
+  tier: 42
+  record_count: 123
+  median_error_pct: 0.0
+  coverage_tier: A_strong
+  lean_module: FSOT.Formal.FormulaCorpusClosurePriors
 intelligence_compression:
   domain: Intelligence_Compression
   record_count: 572
@@ -1116,9 +1128,8 @@ thin_empirical_coverage: []
 authority_dispersal_domains: []
 expansion_candidates: []
 recommended_next_waves:
-- 'Thin neurolab domains: Ecology, Fluid_Dynamics, Psychology, Quantum_Computing depth
-  pass'
+- Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens
+- Knowledge-base per-formula portable bundle
 - Culinary arts fermentation + Maillard kinetics extension
 - Materials engineering species-catalog machine/molecule bridge
-- Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens
-- Pharmacokinetics + food microbiology bridges for biochemistry closure
+- Re-ingest Tier 38 deep caches from Game drive on schedule

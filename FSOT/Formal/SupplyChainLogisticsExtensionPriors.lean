@@ -11,9 +11,9 @@ noncomputable section
 
 open Real
 
-def supply_chain_ext_observable_count : ℕ := 40
-def supply_chain_ext_pooled_median_error_pct : ℝ := (0.03230022603427978 : ℝ)
-def supply_chain_ext_headline_median_error_pct : ℝ := (0.03230022603427978 : ℝ)
+def supply_chain_ext_observable_count : ℕ := 220
+def supply_chain_ext_pooled_median_error_pct : ℝ := (0.01801902489293558 : ℝ)
+def supply_chain_ext_headline_median_error_pct : ℝ := (0.01801902489293558 : ℝ)
 def supply_chain_ext_beats_sota_headlines : ℕ := 2
 def supply_chain_ext_D_eff : ℕ := 18
 
@@ -32,7 +32,7 @@ theorem supply_chain_ext_beats_sota_headlines_pos : 0 < supply_chain_ext_beats_s
   unfold supply_chain_ext_beats_sota_headlines; norm_num
 
 theorem supply_chain_ext_bundle :
-    supply_chain_ext_observable_count = 40 ∧
+    supply_chain_ext_observable_count = 220 ∧
     supply_chain_ext_pooled_median_error_pct < (5 : ℝ) ∧
     supply_chain_ext_headline_median_error_pct < (5 : ℝ) ∧
     0 < supply_chain_ext_beats_sota_headlines ∧

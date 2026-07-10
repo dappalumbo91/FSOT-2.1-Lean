@@ -27,7 +27,7 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-09 — Tier 41)
+## Verification status (2026-07-10 — Tier 42)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
@@ -35,17 +35,18 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 
 | Metric | Value |
 |--------|-------|
-| Verification tiers | **39/39 complete** (100%) |
+| Verification tiers | **40/40 complete** (100%) |
 | Scientific domains | **141** (35 NeuroLab + 105 extension + Intelligence Compression rollup) |
-| Empirical records | **306,680** |
+| Coupling simulation | **141 nodes · 2,448 edges** (maps_to_lean + cross-ratios + magnetosphere cluster) |
+| Empirical records | **306,680+** |
 | Neurolab precision | **35/35** domains ≤2% median error |
-| Coverage tiers | A_strong: 25 · B_verified: 10 · C_thin: **0** · D_needs_work: **0** · unverified: **0** |
-| Lean formal modules | **175** |
+| Coverage tiers | A_strong: 25+ · B_verified: 10 · C_thin: **0** · D_needs_work: **0** · unverified: **0** |
+| Lean formal modules | **177** |
 | Proved claims | **65** · 0 active `sorry` |
-| SOTA ledger | **54/54** observables beat or meet baselines |
+| SOTA ledger | **65/65** observables beat or meet baselines |
 | Expansion candidates | **0** (all identified science gaps filled) |
 
-**External data cache** (bulk API ingest): `G:\FSOT-PublicData` — override with `FSOT_EXTERNAL_DATA_ROOT`. Tier F gap-fill cache: `G:\FSOT-PublicData\tier_f_gaps`.
+**External data cache** (bulk API ingest): `G:\FSOT-PublicData` — override with `FSOT_EXTERNAL_DATA_ROOT`. Space weather full arc: `G:\FSOT-PublicData\space_weather\space_weather_full_benchmark.json` (271,813 Kp records); portable summary in `data/space_weather_summary_benchmark.json`.
 
 **Self-contained clone-and-verify**: `strict_empirical.jsonl` (7,941 formulas) bundled under `vendor/formula_corpus/`.
 - Genomic exact identities (`FSOT.Formal.Genomic`)
@@ -66,7 +67,10 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 - Linguistics anchors (`FSOT.Formal.LinguisticsPriors`) — 10 targets within 5% FSOT derivations
 - Unified DB inventory (`FSOT.Formal.UnifiedDBPriors`) — 30,984 indexed records, 26 projects (inventory tier)
 - Cosmology Wave-4 (`FSOT.Formal.CosmologyWave4Priors`) — 16 observables (PMNS/CKM/nuclear/dark-energy); legacy `CosmologyWave4.lean` is a deprecation shim
-- GFZ Kp historical arc (`FSOT.Formal.SpaceWeatherPriors`) — **271,813** Kp records (1932–2024), 100% stability match
+- GFZ Kp historical arc (`FSOT.Formal.SpaceWeatherPriors`) — **271,813** Kp records (1932–2024), 100% stability match; portable **501-record** summary in repo, full arc on `G:/FSOT-PublicData`
+- Cross-domain coupling simulation (`FSOT.Formal.DomainCouplingSimulationPriors`) — **141** nodes, **2,448** coupling edges, 0% pooled median
+- Formula corpus closure (`FSOT.Formal.FormulaCorpusClosurePriors`) — **7,941** strict-empirical formulas + **127** extension bridges
+- Tier G depth wave — 8 Tier F domains deepened to **100+** records (Epidemiology 220, Finance_Markets 245, Supply_Chain 220, …)
 - USGS hydrology (`FSOT.Formal.HydrologyPriors`) — monthly streamflow cohort with train/holdout gates
 - Pharmacology ChEMBL (`FSOT.Formal.PharmacologyPriors`) — 120 approved-drug molecular weights, median err &lt;0.01%
 - Cryosphere proxy (`FSOT.Formal.CryospherePriors`) — 1,919 northern freezing-month records, 99.3% classifier match
@@ -230,9 +234,9 @@ This project closely follows the structure and justification style of the attach
 
 ## Roadmap
 
-- **141-domain cross-domain coupling simulation** — nodes = all covered domains; edges = `maps_to_lean` overlaps + crosswalk modules + scalar coupling (`fsot_compute.predictions()` cross-ratios); hooks in `thesis_simulation` lab and magnetosphere Dst×Kp×Bz coupling
+- Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens
+- Knowledge-base per-formula portable bundle
 - Tighten r_d interval to ±0.01 Mpc
-- Extension domain precision tightening (median error &lt; 1% wave)
 - Extend `select_observable()` hooks for non-IE chemistry/cosmology rows in unified DB
 - Energy / fusion domain dedicated lab certificates (currently partial via fuel_lab proxy)
 

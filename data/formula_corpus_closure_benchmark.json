@@ -1,0 +1,2257 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T12:02:55.261426+00:00",
+  "domain": "Formula_Corpus_Closure",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "strict_empirical.jsonl",
+    "extension_benchmarks",
+    "lean_priors"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "mathematical",
+    "medical"
+  ],
+  "D_eff": 17,
+  "strict_empirical_count": 7941,
+  "lean_priors_count": 163,
+  "extension_bridge_count": 127,
+  "record_count": 123,
+  "observable_count": 123,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "formula_corpus_closure": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Per-formula numeric eval baselines"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "strict_empirical_nonzero": true,
+      "extension_bridge_nonzero": true
+    }
+  },
+  "material_records": [
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "strict_empirical_count",
+      "name": "strict_empirical_jsonl",
+      "computed": 7941.0,
+      "measured": 7941.0,
+      "error_pct": 0.0,
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "lean_priors_modules",
+      "name": "formal_priors_count",
+      "computed": 163.0,
+      "measured": 163.0,
+      "error_pct": 0.0,
+      "source": "FSOT/Formal/*Priors.lean"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "extension_bridge_domains",
+      "name": "benchmark_json_domains",
+      "computed": 127.0,
+      "measured": 127.0,
+      "error_pct": 0.0,
+      "source": "data/*_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Agriculture_Agroecology",
+      "computed": 276.0,
+      "measured": 276.0,
+      "error_pct": 0.018019024892929635,
+      "source": "agriculture_agroecology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Anthropology",
+      "computed": 160.0,
+      "measured": 160.0,
+      "error_pct": 0.019504399572476606,
+      "source": "anthropology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Architecture_Building_Science",
+      "computed": 83.0,
+      "measured": 83.0,
+      "error_pct": 0.0,
+      "source": "architecture_building_science_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "arxiv_primitives_v14_benchmark",
+      "computed": 14.0,
+      "measured": 14.0,
+      "error_pct": 0.0,
+      "source": "arxiv_primitives_v14_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Atmospheric_Physics",
+      "computed": 107.0,
+      "measured": 107.0,
+      "error_pct": 0.0,
+      "source": "atmospheric_physics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Atomic_Physics",
+      "computed": 80.0,
+      "measured": 80.0,
+      "error_pct": 0.0009504134401195552,
+      "source": "atomic_physics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "bibliography_lean_corpus_benchmark",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "bibliography_lean_corpus_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "binary_decoder_rendlesham_benchmark",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "source": "binary_decoder_rendlesham_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "biological_cuda_physarum_benchmark",
+      "computed": 35.0,
+      "measured": 35.0,
+      "error_pct": 0.0,
+      "source": "biological_cuda_physarum_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Botany",
+      "computed": 426.0,
+      "measured": 426.0,
+      "error_pct": 0.022236250385193387,
+      "source": "botany_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Breakthrough_Discoveries_2024_2026",
+      "computed": 21.0,
+      "measured": 21.0,
+      "error_pct": 0.0,
+      "source": "breakthrough_discoveries_2024_2026_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Cardiology",
+      "computed": 126.0,
+      "measured": 126.0,
+      "error_pct": 0.030622122938654326,
+      "source": "cardiology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "CERN_Open_Data_LHC",
+      "computed": 83.0,
+      "measured": 83.0,
+      "error_pct": 0.0,
+      "source": "cern_open_data_lhc_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "certified_agent_qwen_benchmark",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "source": "certified_agent_qwen_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Chemical_Engineering",
+      "computed": 186.0,
+      "measured": 186.0,
+      "error_pct": 0.0010333425185953097,
+      "source": "chemical_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Civil_Engineering",
+      "computed": 181.0,
+      "measured": 181.0,
+      "error_pct": 0.033525988073647546,
+      "source": "civil_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "climate_observed_benchmark",
+      "computed": 17296.0,
+      "measured": 17296.0,
+      "error_pct": 0.0,
+      "source": "climate_observed_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Clinical_Medicine",
+      "computed": 260.0,
+      "measured": 260.0,
+      "error_pct": 0.0029447130131637534,
+      "source": "clinical_medicine_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "computational_reasoning_benchmark",
+      "computed": 577.0,
+      "measured": 577.0,
+      "error_pct": 0.0,
+      "source": "computational_reasoning_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "cosmology_anomalies_benchmark",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.140126,
+      "source": "cosmology_anomalies_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "cosmology_bubble_bleed_benchmark",
+      "computed": 113.0,
+      "measured": 113.0,
+      "error_pct": 0.0,
+      "source": "cosmology_bubble_bleed_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "cosmology_extended_benchmark",
+      "computed": 58.0,
+      "measured": 58.0,
+      "error_pct": 0.021954848848277954,
+      "source": "cosmology_extended_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "cryosphere_benchmark",
+      "computed": 1919.0,
+      "measured": 1919.0,
+      "error_pct": 0.0,
+      "source": "cryosphere_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "culinary_arts_benchmark",
+      "computed": 26.0,
+      "measured": 26.0,
+      "error_pct": 0.047615187057821064,
+      "source": "culinary_arts_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Ecology",
+      "computed": 627.0,
+      "measured": 627.0,
+      "error_pct": 0.017789000308164337,
+      "source": "ecology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Econometrics",
+      "computed": 172.0,
+      "measured": 172.0,
+      "error_pct": 0.12920090413715177,
+      "source": "econometrics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Economics",
+      "computed": 157.0,
+      "measured": 157.0,
+      "error_pct": 0.1292009041371501,
+      "source": "economics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Electrical_Power_Systems",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "electrical_power_systems_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "emergent_domains_benchmark",
+      "computed": 29.0,
+      "measured": 29.0,
+      "error_pct": 0.0,
+      "source": "emergent_domains_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Entomology",
+      "computed": 430.0,
+      "measured": 430.0,
+      "error_pct": 0.022236250385189223,
+      "source": "entomology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Environmental_Engineering",
+      "computed": 18416.0,
+      "measured": 18416.0,
+      "error_pct": 0.0,
+      "source": "environmental_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Epidemiology",
+      "computed": 220.0,
+      "measured": 220.0,
+      "error_pct": 0.039895,
+      "source": "epidemiology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Exogeology",
+      "computed": 316.0,
+      "measured": 316.0,
+      "error_pct": 0.0,
+      "source": "exogeology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Finance_Markets",
+      "computed": 245.0,
+      "measured": 245.0,
+      "error_pct": 0.025840180827434747,
+      "source": "finance_markets_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Fluid_Dynamics",
+      "computed": 55.0,
+      "measured": 55.0,
+      "error_pct": 0.0,
+      "source": "fluid_dynamics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Food_Microbiology",
+      "computed": 30.0,
+      "measured": 30.0,
+      "error_pct": 0.04447250077037743,
+      "source": "food_microbiology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "formula_corpus_cnc_benchmark",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "source": "formula_corpus_cnc_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "fsot_aggregate_unified_db_benchmark",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "source": "fsot_aggregate_unified_db_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "GBIF_Species_Occurrence",
+      "computed": 600.0,
+      "measured": 600.0,
+      "error_pct": 0.0,
+      "source": "gbif_species_occurrence_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "geochemistry_benchmark",
+      "computed": 153.0,
+      "measured": 153.0,
+      "error_pct": 0.186623,
+      "source": "geochemistry_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Geology_Stratigraphy",
+      "computed": 1960.0,
+      "measured": 1960.0,
+      "error_pct": 0.0,
+      "source": "geology_stratigraphy_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "geomagnetism_benchmark",
+      "computed": 525.0,
+      "measured": 525.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "grace_cryosphere_benchmark",
+      "computed": 253.0,
+      "measured": 253.0,
+      "error_pct": 0.0,
+      "source": "grace_cryosphere_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "h0_planck_benchmark",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.13329620344595866,
+      "source": "h0_planck_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "higgs_branching_benchmark",
+      "computed": 14.0,
+      "measured": 14.0,
+      "error_pct": 0.014721632079759569,
+      "source": "higgs_branching_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "higgs_mass_benchmark",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.03990518384182655,
+      "source": "higgs_mass_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "History",
+      "computed": 170.0,
+      "measured": 170.0,
+      "error_pct": 0.019504399572477397,
+      "source": "history_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "HVAC_Thermal_Systems",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "source": "hvac_thermal_systems_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "hydrology_benchmark",
+      "computed": 960.0,
+      "measured": 960.0,
+      "error_pct": 0.0,
+      "source": "hydrology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "igem_live_fasta_benchmark",
+      "computed": 42.0,
+      "measured": 42.0,
+      "error_pct": 0.0,
+      "source": "igem_live_fasta_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "igem_synthetic_biology_benchmark",
+      "computed": 54.0,
+      "measured": 54.0,
+      "error_pct": 0.02223625038520417,
+      "source": "igem_synthetic_biology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "immunology_benchmark",
+      "computed": 84.0,
+      "measured": 84.0,
+      "error_pct": 0.451494,
+      "source": "immunology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "intelligence_compression_benchmark",
+      "computed": 572.0,
+      "measured": 572.0,
+      "error_pct": 0.029066672228905688,
+      "source": "intelligence_compression_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "intrinsic_llm_validators_benchmark",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "source": "intrinsic_llm_validators_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Law_Policy",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.019504399572479934,
+      "source": "law_policy_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "linguistics_formal_benchmark",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0013504254899468224,
+      "source": "linguistics_formal_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "magnetosphere_benchmark",
+      "computed": 167.0,
+      "measured": 167.0,
+      "error_pct": 0.0,
+      "source": "magnetosphere_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "magnetosphere_extended_benchmark",
+      "computed": 122295.0,
+      "measured": 122295.0,
+      "error_pct": 0.0,
+      "source": "magnetosphere_extended_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Maillard_Chemistry",
+      "computed": 30.0,
+      "measured": 30.0,
+      "error_pct": 0.09443694019339524,
+      "source": "maillard_chemistry_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Marine_Biology",
+      "computed": 540.0,
+      "measured": 540.0,
+      "error_pct": 0.022236250385192644,
+      "source": "marine_biology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "materials_engineering_benchmark",
+      "computed": 87.0,
+      "measured": 87.0,
+      "error_pct": 0.118765,
+      "source": "materials_engineering_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "materials_species_bridge_benchmark",
+      "computed": 45.0,
+      "measured": 45.0,
+      "error_pct": 0.0,
+      "source": "materials_species_bridge_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "math_generator_airfoil_rmse_benchmark",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "source": "math_generator_airfoil_rmse_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "math_generator_benchmark_formula_eval_benchmark",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "math_generator_benchmark_formula_eval_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "math_generator_rules_benchmark",
+      "computed": 1522.0,
+      "measured": 1522.0,
+      "error_pct": 0.0,
+      "source": "math_generator_rules_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "math_generator_rules_eval_benchmark",
+      "computed": 1522.0,
+      "measured": 1522.0,
+      "error_pct": 0.0,
+      "source": "math_generator_rules_eval_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "mathematics_computational_benchmark",
+      "computed": 21.0,
+      "measured": 21.0,
+      "error_pct": 1.4090183367935627e-14,
+      "source": "mathematics_computational_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Mechanical_Engineering",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.07869745016115025,
+      "source": "mechanical_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Meteorology",
+      "computed": 107.0,
+      "measured": 107.0,
+      "error_pct": 0.0,
+      "source": "meteorology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "multi_hero_benchmark",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.0,
+      "source": "multi_hero_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Mycology",
+      "computed": 420.0,
+      "measured": 420.0,
+      "error_pct": 0.022236250385193498,
+      "source": "mycology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "NASA_Exoplanet_Archive",
+      "computed": 296.0,
+      "measured": 296.0,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet_archive_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Neuroeconomics",
+      "computed": 123.0,
+      "measured": 123.0,
+      "error_pct": 0.10502056403980387,
+      "source": "neuroeconomics_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "neuroimmunology_benchmark",
+      "computed": 92.0,
+      "measured": 92.0,
+      "error_pct": 0.100759,
+      "source": "neuroimmunology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Neuroscience",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.22565000000000002,
+      "source": "neuroscience_fi_precision_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "NIST_CODATA_Constants",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "source": "nist_codata_constants_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "NOAA_Coastal_Tides",
+      "computed": 40.0,
+      "measured": 40.0,
+      "error_pct": 0.0,
+      "source": "noaa_coastal_tides_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Oceanography",
+      "computed": 65.0,
+      "measured": 65.0,
+      "error_pct": 0.03017272606768673,
+      "source": "oceanography_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "omni_theory_genesis_benchmark",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "source": "omni_theory_genesis_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "oncology_benchmark",
+      "computed": 67.0,
+      "measured": 67.0,
+      "error_pct": 0.078779,
+      "source": "oncology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "OpenAlex_Citation_Graph",
+      "computed": 150.0,
+      "measured": 150.0,
+      "error_pct": 0.0,
+      "source": "openalex_citation_graph_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "orbital_mechanics_benchmark",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.106141,
+      "source": "orbital_mechanics_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Paleoclimate",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "source": "paleoclimate_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Paleontology",
+      "computed": 630.0,
+      "measured": 630.0,
+      "error_pct": 0.017836062884406152,
+      "source": "paleontology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "particle_physics_benchmark",
+      "computed": 98.0,
+      "measured": 98.0,
+      "error_pct": 0.018000835539782083,
+      "source": "particle_physics_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Particle_Physics",
+      "computed": 98.0,
+      "measured": 98.0,
+      "error_pct": 0.002729984252880815,
+      "source": "particle_physics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Pharmacokinetics",
+      "computed": 56.0,
+      "measured": 56.0,
+      "error_pct": 0.00241237063663613,
+      "source": "pharmacokinetics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "pharmacology_benchmark",
+      "computed": 120.0,
+      "measured": 120.0,
+      "error_pct": 0.0011715432153059484,
+      "source": "pharmacology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "planetary_atmospheres_benchmark",
+      "computed": 21.0,
+      "measured": 21.0,
+      "error_pct": 0.0,
+      "source": "planetary_atmospheres_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "planetary_structure_benchmark",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.032274,
+      "source": "planetary_structure_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "plasma_physics_benchmark",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "source": "plasma_physics_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "prediction_rederivation_benchmark",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "source": "prediction_rederivation_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Psychology",
+      "computed": 160.0,
+      "measured": 160.0,
+      "error_pct": 0.03150616921194649,
+      "source": "psychology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "PubChem_Compound_Properties",
+      "computed": 29.0,
+      "measured": 29.0,
+      "error_pct": 0.0024238898584426276,
+      "source": "pubchem_compound_properties_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Pure_Mathematics",
+      "computed": 1549.0,
+      "measured": 1549.0,
+      "error_pct": 0.0,
+      "source": "pure_mathematics_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Quantum_Computing",
+      "computed": 177.0,
+      "measured": 177.0,
+      "error_pct": 0.0002953462072651492,
+      "source": "quantum_computing_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "quantum_materials_benchmark",
+      "computed": 168.0,
+      "measured": 168.0,
+      "error_pct": 0.08247836447365957,
+      "source": "quantum_materials_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Quantum_Mechanics",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 9.52387420324368e-05,
+      "source": "quantum_mechanics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Quantum_Optics",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 9.52387420324368e-05,
+      "source": "quantum_optics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "RCSB_PDB_Structures",
+      "computed": 86.0,
+      "measured": 86.0,
+      "error_pct": 0.0,
+      "source": "rcsb_pdb_structures_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Robotics_Control_Systems",
+      "computed": 45.0,
+      "measured": 45.0,
+      "error_pct": 0.0,
+      "source": "robotics_control_systems_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "rust_lean_bridge_benchmark",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "rust_lean_bridge_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "seismology_benchmark",
+      "computed": 500.0,
+      "measured": 500.0,
+      "error_pct": 0.0,
+      "source": "seismology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "seismology_deep_benchmark",
+      "computed": 1000.0,
+      "measured": 1000.0,
+      "error_pct": 0.0,
+      "source": "seismology_deep_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "small_body_orbits_benchmark",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.094587,
+      "source": "small_body_orbits_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Sociology",
+      "computed": 200.0,
+      "measured": 200.0,
+      "error_pct": 0.019504399572475274,
+      "source": "sociology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Space_Propulsion_Systems",
+      "computed": 21.0,
+      "measured": 21.0,
+      "error_pct": 0.0,
+      "source": "space_propulsion_systems_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "space_weather_benchmark",
+      "computed": 271813.0,
+      "measured": 271813.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "space_weather_summary_benchmark",
+      "computed": 271813.0,
+      "measured": 271813.0,
+      "error_pct": 0.0,
+      "source": "space_weather_summary_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Speleology",
+      "computed": 200.0,
+      "measured": 200.0,
+      "error_pct": 0.0,
+      "source": "speleology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Sports_Biomechanics",
+      "computed": 35.0,
+      "measured": 35.0,
+      "error_pct": 0.04447250077037523,
+      "source": "sports_biomechanics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "structure_calibration_benchmark",
+      "computed": 32338.0,
+      "measured": 32338.0,
+      "error_pct": 40.53,
+      "source": "structure_calibration_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Supply_Chain_Logistics",
+      "computed": 220.0,
+      "measured": 220.0,
+      "error_pct": 0.01801902489293558,
+      "source": "supply_chain_logistics_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "synthetic_biology_benchmark",
+      "computed": 21.0,
+      "measured": 21.0,
+      "error_pct": 0.0,
+      "source": "synthetic_biology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "tectonics_benchmark",
+      "computed": 500.0,
+      "measured": 500.0,
+      "error_pct": 0.0,
+      "source": "tectonics_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "thesis_simulation_benchmark",
+      "computed": 156.0,
+      "measured": 156.0,
+      "error_pct": 0.0,
+      "source": "thesis_simulation_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "tokenization_smoke_benchmark",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "tokenization_smoke_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "trinary_hardware_motif_benchmark",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "source": "trinary_hardware_motif_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "trinary_os_isa_rebuild_benchmark",
+      "computed": 38.0,
+      "measured": 38.0,
+      "error_pct": 0.0,
+      "source": "trinary_os_isa_rebuild_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "trinary_os_portable_benchmark",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "source": "trinary_os_portable_benchmark.json"
+    }
+  ],
+  "records": [
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "strict_empirical_count",
+      "name": "strict_empirical_jsonl",
+      "computed": 7941.0,
+      "measured": 7941.0,
+      "error_pct": 0.0,
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "lean_priors_modules",
+      "name": "formal_priors_count",
+      "computed": 163.0,
+      "measured": 163.0,
+      "error_pct": 0.0,
+      "source": "FSOT/Formal/*Priors.lean"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "extension_bridge_domains",
+      "name": "benchmark_json_domains",
+      "computed": 127.0,
+      "measured": 127.0,
+      "error_pct": 0.0,
+      "source": "data/*_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Agriculture_Agroecology",
+      "computed": 276.0,
+      "measured": 276.0,
+      "error_pct": 0.018019024892929635,
+      "source": "agriculture_agroecology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Anthropology",
+      "computed": 160.0,
+      "measured": 160.0,
+      "error_pct": 0.019504399572476606,
+      "source": "anthropology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Architecture_Building_Science",
+      "computed": 83.0,
+      "measured": 83.0,
+      "error_pct": 0.0,
+      "source": "architecture_building_science_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "arxiv_primitives_v14_benchmark",
+      "computed": 14.0,
+      "measured": 14.0,
+      "error_pct": 0.0,
+      "source": "arxiv_primitives_v14_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Atmospheric_Physics",
+      "computed": 107.0,
+      "measured": 107.0,
+      "error_pct": 0.0,
+      "source": "atmospheric_physics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Atomic_Physics",
+      "computed": 80.0,
+      "measured": 80.0,
+      "error_pct": 0.0009504134401195552,
+      "source": "atomic_physics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "bibliography_lean_corpus_benchmark",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "bibliography_lean_corpus_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "binary_decoder_rendlesham_benchmark",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "source": "binary_decoder_rendlesham_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "biological_cuda_physarum_benchmark",
+      "computed": 35.0,
+      "measured": 35.0,
+      "error_pct": 0.0,
+      "source": "biological_cuda_physarum_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Botany",
+      "computed": 426.0,
+      "measured": 426.0,
+      "error_pct": 0.022236250385193387,
+      "source": "botany_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Breakthrough_Discoveries_2024_2026",
+      "computed": 21.0,
+      "measured": 21.0,
+      "error_pct": 0.0,
+      "source": "breakthrough_discoveries_2024_2026_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Cardiology",
+      "computed": 126.0,
+      "measured": 126.0,
+      "error_pct": 0.030622122938654326,
+      "source": "cardiology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "CERN_Open_Data_LHC",
+      "computed": 83.0,
+      "measured": 83.0,
+      "error_pct": 0.0,
+      "source": "cern_open_data_lhc_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "certified_agent_qwen_benchmark",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "source": "certified_agent_qwen_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Chemical_Engineering",
+      "computed": 186.0,
+      "measured": 186.0,
+      "error_pct": 0.0010333425185953097,
+      "source": "chemical_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Civil_Engineering",
+      "computed": 181.0,
+      "measured": 181.0,
+      "error_pct": 0.033525988073647546,
+      "source": "civil_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "climate_observed_benchmark",
+      "computed": 17296.0,
+      "measured": 17296.0,
+      "error_pct": 0.0,
+      "source": "climate_observed_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Clinical_Medicine",
+      "computed": 260.0,
+      "measured": 260.0,
+      "error_pct": 0.0029447130131637534,
+      "source": "clinical_medicine_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "computational_reasoning_benchmark",
+      "computed": 577.0,
+      "measured": 577.0,
+      "error_pct": 0.0,
+      "source": "computational_reasoning_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "cosmology_anomalies_benchmark",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.140126,
+      "source": "cosmology_anomalies_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "cosmology_bubble_bleed_benchmark",
+      "computed": 113.0,
+      "measured": 113.0,
+      "error_pct": 0.0,
+      "source": "cosmology_bubble_bleed_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "cosmology_extended_benchmark",
+      "computed": 58.0,
+      "measured": 58.0,
+      "error_pct": 0.021954848848277954,
+      "source": "cosmology_extended_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "cryosphere_benchmark",
+      "computed": 1919.0,
+      "measured": 1919.0,
+      "error_pct": 0.0,
+      "source": "cryosphere_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "culinary_arts_benchmark",
+      "computed": 26.0,
+      "measured": 26.0,
+      "error_pct": 0.047615187057821064,
+      "source": "culinary_arts_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Ecology",
+      "computed": 627.0,
+      "measured": 627.0,
+      "error_pct": 0.017789000308164337,
+      "source": "ecology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Econometrics",
+      "computed": 172.0,
+      "measured": 172.0,
+      "error_pct": 0.12920090413715177,
+      "source": "econometrics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Economics",
+      "computed": 157.0,
+      "measured": 157.0,
+      "error_pct": 0.1292009041371501,
+      "source": "economics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Electrical_Power_Systems",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "electrical_power_systems_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "emergent_domains_benchmark",
+      "computed": 29.0,
+      "measured": 29.0,
+      "error_pct": 0.0,
+      "source": "emergent_domains_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Entomology",
+      "computed": 430.0,
+      "measured": 430.0,
+      "error_pct": 0.022236250385189223,
+      "source": "entomology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Environmental_Engineering",
+      "computed": 18416.0,
+      "measured": 18416.0,
+      "error_pct": 0.0,
+      "source": "environmental_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Epidemiology",
+      "computed": 220.0,
+      "measured": 220.0,
+      "error_pct": 0.039895,
+      "source": "epidemiology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Exogeology",
+      "computed": 316.0,
+      "measured": 316.0,
+      "error_pct": 0.0,
+      "source": "exogeology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Finance_Markets",
+      "computed": 245.0,
+      "measured": 245.0,
+      "error_pct": 0.025840180827434747,
+      "source": "finance_markets_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Fluid_Dynamics",
+      "computed": 55.0,
+      "measured": 55.0,
+      "error_pct": 0.0,
+      "source": "fluid_dynamics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Food_Microbiology",
+      "computed": 30.0,
+      "measured": 30.0,
+      "error_pct": 0.04447250077037743,
+      "source": "food_microbiology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "formula_corpus_cnc_benchmark",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "source": "formula_corpus_cnc_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "fsot_aggregate_unified_db_benchmark",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "source": "fsot_aggregate_unified_db_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "GBIF_Species_Occurrence",
+      "computed": 600.0,
+      "measured": 600.0,
+      "error_pct": 0.0,
+      "source": "gbif_species_occurrence_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "geochemistry_benchmark",
+      "computed": 153.0,
+      "measured": 153.0,
+      "error_pct": 0.186623,
+      "source": "geochemistry_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Geology_Stratigraphy",
+      "computed": 1960.0,
+      "measured": 1960.0,
+      "error_pct": 0.0,
+      "source": "geology_stratigraphy_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "geomagnetism_benchmark",
+      "computed": 525.0,
+      "measured": 525.0,
+      "error_pct": 0.0,
+      "source": "geomagnetism_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "grace_cryosphere_benchmark",
+      "computed": 253.0,
+      "measured": 253.0,
+      "error_pct": 0.0,
+      "source": "grace_cryosphere_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "h0_planck_benchmark",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.13329620344595866,
+      "source": "h0_planck_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "higgs_branching_benchmark",
+      "computed": 14.0,
+      "measured": 14.0,
+      "error_pct": 0.014721632079759569,
+      "source": "higgs_branching_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "higgs_mass_benchmark",
+      "computed": 2.0,
+      "measured": 2.0,
+      "error_pct": 0.03990518384182655,
+      "source": "higgs_mass_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "History",
+      "computed": 170.0,
+      "measured": 170.0,
+      "error_pct": 0.019504399572477397,
+      "source": "history_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "HVAC_Thermal_Systems",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.0,
+      "source": "hvac_thermal_systems_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "hydrology_benchmark",
+      "computed": 960.0,
+      "measured": 960.0,
+      "error_pct": 0.0,
+      "source": "hydrology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "igem_live_fasta_benchmark",
+      "computed": 42.0,
+      "measured": 42.0,
+      "error_pct": 0.0,
+      "source": "igem_live_fasta_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "igem_synthetic_biology_benchmark",
+      "computed": 54.0,
+      "measured": 54.0,
+      "error_pct": 0.02223625038520417,
+      "source": "igem_synthetic_biology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "immunology_benchmark",
+      "computed": 84.0,
+      "measured": 84.0,
+      "error_pct": 0.451494,
+      "source": "immunology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "intelligence_compression_benchmark",
+      "computed": 572.0,
+      "measured": 572.0,
+      "error_pct": 0.029066672228905688,
+      "source": "intelligence_compression_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "intrinsic_llm_validators_benchmark",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "source": "intrinsic_llm_validators_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Law_Policy",
+      "computed": 180.0,
+      "measured": 180.0,
+      "error_pct": 0.019504399572479934,
+      "source": "law_policy_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "linguistics_formal_benchmark",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0013504254899468224,
+      "source": "linguistics_formal_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "magnetosphere_benchmark",
+      "computed": 167.0,
+      "measured": 167.0,
+      "error_pct": 0.0,
+      "source": "magnetosphere_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "magnetosphere_extended_benchmark",
+      "computed": 122295.0,
+      "measured": 122295.0,
+      "error_pct": 0.0,
+      "source": "magnetosphere_extended_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Maillard_Chemistry",
+      "computed": 30.0,
+      "measured": 30.0,
+      "error_pct": 0.09443694019339524,
+      "source": "maillard_chemistry_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Marine_Biology",
+      "computed": 540.0,
+      "measured": 540.0,
+      "error_pct": 0.022236250385192644,
+      "source": "marine_biology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "materials_engineering_benchmark",
+      "computed": 87.0,
+      "measured": 87.0,
+      "error_pct": 0.118765,
+      "source": "materials_engineering_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "materials_species_bridge_benchmark",
+      "computed": 45.0,
+      "measured": 45.0,
+      "error_pct": 0.0,
+      "source": "materials_species_bridge_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "math_generator_airfoil_rmse_benchmark",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "source": "math_generator_airfoil_rmse_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "math_generator_benchmark_formula_eval_benchmark",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "math_generator_benchmark_formula_eval_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "math_generator_rules_benchmark",
+      "computed": 1522.0,
+      "measured": 1522.0,
+      "error_pct": 0.0,
+      "source": "math_generator_rules_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "math_generator_rules_eval_benchmark",
+      "computed": 1522.0,
+      "measured": 1522.0,
+      "error_pct": 0.0,
+      "source": "math_generator_rules_eval_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "mathematics_computational_benchmark",
+      "computed": 21.0,
+      "measured": 21.0,
+      "error_pct": 1.4090183367935627e-14,
+      "source": "mathematics_computational_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Mechanical_Engineering",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.07869745016115025,
+      "source": "mechanical_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Meteorology",
+      "computed": 107.0,
+      "measured": 107.0,
+      "error_pct": 0.0,
+      "source": "meteorology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "multi_hero_benchmark",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.0,
+      "source": "multi_hero_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Mycology",
+      "computed": 420.0,
+      "measured": 420.0,
+      "error_pct": 0.022236250385193498,
+      "source": "mycology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "NASA_Exoplanet_Archive",
+      "computed": 296.0,
+      "measured": 296.0,
+      "error_pct": 0.0,
+      "source": "nasa_exoplanet_archive_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Neuroeconomics",
+      "computed": 123.0,
+      "measured": 123.0,
+      "error_pct": 0.10502056403980387,
+      "source": "neuroeconomics_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "neuroimmunology_benchmark",
+      "computed": 92.0,
+      "measured": 92.0,
+      "error_pct": 0.100759,
+      "source": "neuroimmunology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Neuroscience",
+      "computed": 16.0,
+      "measured": 16.0,
+      "error_pct": 0.22565000000000002,
+      "source": "neuroscience_fi_precision_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "NIST_CODATA_Constants",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.0,
+      "source": "nist_codata_constants_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "NOAA_Coastal_Tides",
+      "computed": 40.0,
+      "measured": 40.0,
+      "error_pct": 0.0,
+      "source": "noaa_coastal_tides_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Oceanography",
+      "computed": 65.0,
+      "measured": 65.0,
+      "error_pct": 0.03017272606768673,
+      "source": "oceanography_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "omni_theory_genesis_benchmark",
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.0,
+      "source": "omni_theory_genesis_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "oncology_benchmark",
+      "computed": 67.0,
+      "measured": 67.0,
+      "error_pct": 0.078779,
+      "source": "oncology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "OpenAlex_Citation_Graph",
+      "computed": 150.0,
+      "measured": 150.0,
+      "error_pct": 0.0,
+      "source": "openalex_citation_graph_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "orbital_mechanics_benchmark",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.106141,
+      "source": "orbital_mechanics_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Paleoclimate",
+      "computed": 90.0,
+      "measured": 90.0,
+      "error_pct": 0.0,
+      "source": "paleoclimate_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Paleontology",
+      "computed": 630.0,
+      "measured": 630.0,
+      "error_pct": 0.017836062884406152,
+      "source": "paleontology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "particle_physics_benchmark",
+      "computed": 98.0,
+      "measured": 98.0,
+      "error_pct": 0.018000835539782083,
+      "source": "particle_physics_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Particle_Physics",
+      "computed": 98.0,
+      "measured": 98.0,
+      "error_pct": 0.002729984252880815,
+      "source": "particle_physics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Pharmacokinetics",
+      "computed": 56.0,
+      "measured": 56.0,
+      "error_pct": 0.00241237063663613,
+      "source": "pharmacokinetics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "pharmacology_benchmark",
+      "computed": 120.0,
+      "measured": 120.0,
+      "error_pct": 0.0011715432153059484,
+      "source": "pharmacology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "planetary_atmospheres_benchmark",
+      "computed": 21.0,
+      "measured": 21.0,
+      "error_pct": 0.0,
+      "source": "planetary_atmospheres_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "planetary_structure_benchmark",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.032274,
+      "source": "planetary_structure_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "plasma_physics_benchmark",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "source": "plasma_physics_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "prediction_rederivation_benchmark",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "source": "prediction_rederivation_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Psychology",
+      "computed": 160.0,
+      "measured": 160.0,
+      "error_pct": 0.03150616921194649,
+      "source": "psychology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "PubChem_Compound_Properties",
+      "computed": 29.0,
+      "measured": 29.0,
+      "error_pct": 0.0024238898584426276,
+      "source": "pubchem_compound_properties_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Pure_Mathematics",
+      "computed": 1549.0,
+      "measured": 1549.0,
+      "error_pct": 0.0,
+      "source": "pure_mathematics_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Quantum_Computing",
+      "computed": 177.0,
+      "measured": 177.0,
+      "error_pct": 0.0002953462072651492,
+      "source": "quantum_computing_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "quantum_materials_benchmark",
+      "computed": 168.0,
+      "measured": 168.0,
+      "error_pct": 0.08247836447365957,
+      "source": "quantum_materials_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Quantum_Mechanics",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 9.52387420324368e-05,
+      "source": "quantum_mechanics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Quantum_Optics",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 9.52387420324368e-05,
+      "source": "quantum_optics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "RCSB_PDB_Structures",
+      "computed": 86.0,
+      "measured": 86.0,
+      "error_pct": 0.0,
+      "source": "rcsb_pdb_structures_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Robotics_Control_Systems",
+      "computed": 45.0,
+      "measured": 45.0,
+      "error_pct": 0.0,
+      "source": "robotics_control_systems_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "rust_lean_bridge_benchmark",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "rust_lean_bridge_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "seismology_benchmark",
+      "computed": 500.0,
+      "measured": 500.0,
+      "error_pct": 0.0,
+      "source": "seismology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "seismology_deep_benchmark",
+      "computed": 1000.0,
+      "measured": 1000.0,
+      "error_pct": 0.0,
+      "source": "seismology_deep_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "small_body_orbits_benchmark",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.094587,
+      "source": "small_body_orbits_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Sociology",
+      "computed": 200.0,
+      "measured": 200.0,
+      "error_pct": 0.019504399572475274,
+      "source": "sociology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Space_Propulsion_Systems",
+      "computed": 21.0,
+      "measured": 21.0,
+      "error_pct": 0.0,
+      "source": "space_propulsion_systems_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "space_weather_benchmark",
+      "computed": 271813.0,
+      "measured": 271813.0,
+      "error_pct": 0.0,
+      "source": "space_weather_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "space_weather_summary_benchmark",
+      "computed": 271813.0,
+      "measured": 271813.0,
+      "error_pct": 0.0,
+      "source": "space_weather_summary_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Speleology",
+      "computed": 200.0,
+      "measured": 200.0,
+      "error_pct": 0.0,
+      "source": "speleology_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Sports_Biomechanics",
+      "computed": 35.0,
+      "measured": 35.0,
+      "error_pct": 0.04447250077037523,
+      "source": "sports_biomechanics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "structure_calibration_benchmark",
+      "computed": 32338.0,
+      "measured": 32338.0,
+      "error_pct": 40.53,
+      "source": "structure_calibration_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "Supply_Chain_Logistics",
+      "computed": 220.0,
+      "measured": 220.0,
+      "error_pct": 0.01801902489293558,
+      "source": "supply_chain_logistics_extension_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "synthetic_biology_benchmark",
+      "computed": 21.0,
+      "measured": 21.0,
+      "error_pct": 0.0,
+      "source": "synthetic_biology_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "tectonics_benchmark",
+      "computed": 500.0,
+      "measured": 500.0,
+      "error_pct": 0.0,
+      "source": "tectonics_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "thesis_simulation_benchmark",
+      "computed": 156.0,
+      "measured": 156.0,
+      "error_pct": 0.0,
+      "source": "thesis_simulation_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "tokenization_smoke_benchmark",
+      "computed": 9.0,
+      "measured": 9.0,
+      "error_pct": 0.0,
+      "source": "tokenization_smoke_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "trinary_hardware_motif_benchmark",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "source": "trinary_hardware_motif_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "trinary_os_isa_rebuild_benchmark",
+      "computed": 38.0,
+      "measured": 38.0,
+      "error_pct": 0.0,
+      "source": "trinary_os_isa_rebuild_benchmark.json"
+    },
+    {
+      "lab": "formula_corpus_closure_lab",
+      "property": "domain_benchmark_records",
+      "name": "trinary_os_portable_benchmark",
+      "computed": 8.0,
+      "measured": 8.0,
+      "error_pct": 0.0,
+      "source": "trinary_os_portable_benchmark.json"
+    }
+  ]
+}

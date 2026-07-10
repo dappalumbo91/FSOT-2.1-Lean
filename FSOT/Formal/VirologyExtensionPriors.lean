@@ -11,9 +11,9 @@ noncomputable section
 
 open Real
 
-def virology_ext_observable_count : ℕ := 50
-def virology_ext_pooled_median_error_pct : ℝ := (0.134848 : ℝ)
-def virology_ext_headline_median_error_pct : ℝ := (0.134848 : ℝ)
+def virology_ext_observable_count : ℕ := 163
+def virology_ext_pooled_median_error_pct : ℝ := (0.04593318440798183 : ℝ)
+def virology_ext_headline_median_error_pct : ℝ := (0.04593318440798183 : ℝ)
 def virology_ext_beats_sota_headlines : ℕ := 2
 def virology_ext_D_eff : ℕ := 14
 
@@ -32,7 +32,7 @@ theorem virology_ext_beats_sota_headlines_pos : 0 < virology_ext_beats_sota_head
   unfold virology_ext_beats_sota_headlines; norm_num
 
 theorem virology_ext_bundle :
-    virology_ext_observable_count = 50 ∧
+    virology_ext_observable_count = 163 ∧
     virology_ext_pooled_median_error_pct < (5 : ℝ) ∧
     virology_ext_headline_median_error_pct < (5 : ℝ) ∧
     0 < virology_ext_beats_sota_headlines ∧

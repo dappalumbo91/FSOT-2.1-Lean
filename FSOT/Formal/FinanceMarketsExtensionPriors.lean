@@ -11,9 +11,9 @@ noncomputable section
 
 open Real
 
-def finance_markets_ext_observable_count : ℕ := 150
-def finance_markets_ext_pooled_median_error_pct : ℝ := (0.025840180827433133 : ℝ)
-def finance_markets_ext_headline_median_error_pct : ℝ := (0.025840180827433133 : ℝ)
+def finance_markets_ext_observable_count : ℕ := 245
+def finance_markets_ext_pooled_median_error_pct : ℝ := (0.025840180827434747 : ℝ)
+def finance_markets_ext_headline_median_error_pct : ℝ := (0.025840180827434747 : ℝ)
 def finance_markets_ext_beats_sota_headlines : ℕ := 2
 def finance_markets_ext_D_eff : ℕ := 19
 
@@ -32,7 +32,7 @@ theorem finance_markets_ext_beats_sota_headlines_pos : 0 < finance_markets_ext_b
   unfold finance_markets_ext_beats_sota_headlines; norm_num
 
 theorem finance_markets_ext_bundle :
-    finance_markets_ext_observable_count = 150 ∧
+    finance_markets_ext_observable_count = 245 ∧
     finance_markets_ext_pooled_median_error_pct < (5 : ℝ) ∧
     finance_markets_ext_headline_median_error_pct < (5 : ℝ) ∧
     0 < finance_markets_ext_beats_sota_headlines ∧

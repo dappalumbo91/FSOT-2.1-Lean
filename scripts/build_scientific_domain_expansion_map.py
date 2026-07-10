@@ -186,11 +186,11 @@ def build_map() -> dict:
         "authority_dispersal_domains": sorted(set(sign_dispersal)),
         "expansion_candidates": EXPANSION_CANDIDATES,
         "recommended_next_waves": [
-            "Thin neurolab domains: Ecology, Fluid_Dynamics, Psychology, Quantum_Computing depth pass",
+            "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens",
+            "Knowledge-base per-formula portable bundle",
             "Culinary arts fermentation + Maillard kinetics extension",
             "Materials engineering species-catalog machine/molecule bridge",
-            "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens",
-            "Pharmacokinetics + food microbiology bridges for biochemistry closure",
+            "Re-ingest Tier 38 deep caches from Game drive on schedule",
         ],
     }
 

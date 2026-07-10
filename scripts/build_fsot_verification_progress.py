@@ -124,6 +124,32 @@ def build_progress() -> dict:
         and float(b.get("pooled_median_error_pct")) < 5.0
         for b in tier_f_benches
     )
+    tier_g_depth_names = {
+        "epidemiology_extension_benchmark.json",
+        "virology_extension_benchmark.json",
+        "supply_chain_logistics_extension_benchmark.json",
+        "civil_engineering_extension_benchmark.json",
+        "cardiology_extension_benchmark.json",
+        "neuroeconomics_extension_benchmark.json",
+        "finance_markets_extension_benchmark.json",
+        "speleology_extension_benchmark.json",
+    }
+    tier_g_benches = [
+        _load_json(p)
+        for p in sorted((ROOT / "data").glob("*_extension_benchmark.json"))
+        if p.name in tier_g_depth_names
+    ]
+    tier_g_records = sum(int(b.get("record_count") or 0) for b in tier_g_benches)
+    tier_g_domains_ok = all(
+        b.get("benchmark_version") == "1.1"
+        and int(b.get("record_count") or 0) >= 100
+        and b.get("pooled_median_error_pct") is not None
+        and float(b.get("pooled_median_error_pct")) < 5.0
+        for b in tier_g_benches
+    )
+    coupling_bench = _load_json(ROOT / "data" / "domain_coupling_simulation_benchmark.json")
+    formula_closure_bench = _load_json(ROOT / "data" / "formula_corpus_closure_benchmark.json")
+    space_weather_summary_bench = _load_json(ROOT / "data" / "space_weather_summary_benchmark.json")
     tokenization_smoke_bench = _load_json(ROOT / "data" / "tokenization_smoke_benchmark.json")
     trinary_hw_motif_bench = _load_json(ROOT / "data" / "trinary_hardware_motif_benchmark.json")
     intrinsic_llm_bench = _load_json(ROOT / "data" / "intrinsic_llm_validators_benchmark.json")
@@ -1231,13 +1257,52 @@ def build_progress() -> dict:
                 "FSOT.Formal.SupplyChainLogisticsExtensionPriors",
             ],
         },
+        {
+            "tier": 42,
+            "name": "Tier 42 — coupling simulation + Tier G depth + formula corpus closure + space weather split",
+            "status": "complete"
+            if coupling_bench.get("node_count", 0) >= 141
+            and coupling_bench.get("edge_count", 0) >= 100
+            and coupling_bench.get("pooled_median_error_pct") is not None
+            and float(coupling_bench.get("pooled_median_error_pct")) < 5.0
+            and formula_closure_bench.get("record_count", 0) >= 100
+            and formula_closure_bench.get("strict_empirical_count", 0) >= 7000
+            and len(tier_g_benches) == 8
+            and tier_g_domains_ok
+            and space_weather_summary_bench.get("full_record_count", 0) >= 200000
+            else "pending",
+            "metrics": {
+                "coupling_node_count": coupling_bench.get("node_count"),
+                "coupling_edge_count": coupling_bench.get("edge_count"),
+                "coupling_pooled_median_error_pct": coupling_bench.get("pooled_median_error_pct"),
+                "formula_closure_records": formula_closure_bench.get("record_count"),
+                "formula_closure_strict_empirical": formula_closure_bench.get("strict_empirical_count"),
+                "tier_g_domain_count": len(tier_g_benches),
+                "tier_g_total_records": tier_g_records,
+                "space_weather_full_record_count": space_weather_summary_bench.get("full_record_count"),
+                "space_weather_external_full": space_weather_summary_bench.get("external_full_benchmark"),
+            },
+            "artifacts": [
+                "scripts/build_domain_coupling_simulation.py",
+                "scripts/gen_domain_coupling_simulation_lean.py",
+                "scripts/build_tier_g_depth_benchmarks.py",
+                "scripts/build_formula_corpus_closure_benchmark.py",
+                "scripts/build_space_weather_summary_benchmark.py",
+                "data/domain_coupling_simulation_benchmark.json",
+                "data/formula_corpus_closure_benchmark.json",
+                "data/space_weather_summary_benchmark.json",
+                "G:/FSOT-PublicData/space_weather",
+                "FSOT.Formal.DomainCouplingSimulationPriors",
+                "FSOT.Formal.FormulaCorpusClosurePriors",
+            ],
+        },
     ]
 
     next_steps = [
-        "122-domain cross-domain coupling simulation (maps_to_lean + crosswalk edges)",
-        "Extension domain precision tightening (median error < 1% wave)",
+        "Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens",
         "Knowledge-base per-formula portable bundle",
         "Re-ingest Tier 38 deep caches from Game drive on schedule",
+        "Culinary arts fermentation + Maillard kinetics extension",
     ]
 
     completed = [t for t in tiers if t.get("status") == "complete"]
@@ -1256,7 +1321,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 41 science-gap fill complete — 141 domains, expansion_candidates cleared",
+        "current_position": "Tier 42 complete — 141-domain coupling simulation, Tier G A_strong depth, formula corpus closure",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

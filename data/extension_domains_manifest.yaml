@@ -114,7 +114,8 @@ extension_domains:
     build_script: scripts/build_space_weather_benchmark.py
     benchmark_data: data/space_weather_benchmark.json
     lean_module: FSOT.Formal.SpaceWeatherPriors
-    note: "NOAA SWPC Kp/Ap chunked ingest; bridges plasma physics with cosmology-scale dispersal"
+    note: "NOAA SWPC Kp/Ap chunked ingest; portable summary in repo, full 271813-record arc on G:/FSOT-PublicData"
+    summary_benchmark: data/space_weather_summary_benchmark.json
 
   Hydrology:
     tier: 19
@@ -1360,6 +1361,30 @@ extension_domains:
     benchmark_data: data/supply_chain_logistics_extension_benchmark.json
     lean_module: FSOT.Formal.SupplyChainLogisticsExtensionPriors
     note: "Supply chain reference + World Bank trade/agroecology bridge"
+
+  Domain_Coupling_Simulation:
+    tier: 42
+    D_eff: 17
+    delta_psi: 0.95
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, particle, energy, electron, fusion]
+    build_script: scripts/build_domain_coupling_simulation.py
+    benchmark_data: data/domain_coupling_simulation_benchmark.json
+    lean_module: FSOT.Formal.DomainCouplingSimulationPriors
+    note: "141-domain coupling graph — maps_to_lean overlaps + fsot_compute cross-ratios + magnetosphere cluster"
+
+  Formula_Corpus_Closure:
+    tier: 42
+    D_eff: 17
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, mathematical, medical]
+    build_script: scripts/build_formula_corpus_closure_benchmark.py
+    benchmark_data: data/formula_corpus_closure_benchmark.json
+    lean_module: FSOT.Formal.FormulaCorpusClosurePriors
+    note: "strict_empirical.jsonl + extension benchmark bridge + Lean priors module count"
 
 verification:
   min_records_per_domain: 5

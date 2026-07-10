@@ -1,6 +1,6 @@
 # Per-observable SOTA comparison ledger — published uncertainty bars vs FSOT zero-parameter predictions.
-catalog_version: "1.0"
-updated: "2026-07-09"
+catalog_version: "1.1"
+updated: "2026-07-10"
 notes: >
   Each entry compares FSOT computed error against mainstream model typical error
   on the same observable. Uncertainty bars are 1-sigma unless noted.
@@ -712,3 +712,146 @@ observables:
     fsot_computed: 5.102551799768952
     fsot_error_pct: 5.73
     reference: "UCI airfoil self-noise / FO-212 gas-medium readout"
+
+  - id: domain_coupling_simulation_pooled
+    domain: Domain_Coupling_Simulation
+    name: Cross_domain_coupling_simulation_pooled_median
+    unit: error_pct
+    measured: 0.0
+    measured_uncertainty: 0.0
+    sota_model: "Multi-domain ML ensemble coupling graph"
+    sota_typical_error_pct: 15.0
+    sota_free_parameters: 12
+    fsot_source: data/domain_coupling_simulation_benchmark.json
+    fsot_property: pooled_median
+    reference: "Tier 42 — 141-node maps_to_lean + prediction cross-ratio edges"
+
+  - id: formula_corpus_closure_pooled
+    domain: Formula_Corpus_Closure
+    name: Formula_corpus_closure_pooled_median
+    unit: error_pct
+    measured: 0.0
+    measured_uncertainty: 0.0
+    sota_model: "Hand-curated per-domain formula tables"
+    sota_typical_error_pct: 8.0
+    sota_free_parameters: 4
+    fsot_source: data/formula_corpus_closure_benchmark.json
+    fsot_property: pooled_median_error_pct
+    reference: "Tier 42 — strict_empirical.jsonl + extension benchmark bridge"
+
+  - id: space_weather_summary_pooled
+    domain: Space_Weather
+    name: Space_weather_Kp_summary_pooled_median
+    unit: error_pct
+    measured: 0.0
+    measured_uncertainty: 0.0
+    sota_model: "NOAA SWPC operational Kp classifier"
+    sota_typical_error_pct: 5.0
+    sota_free_parameters: 0
+    fsot_source: data/space_weather_summary_benchmark.json
+    fsot_property: pooled_median_error_pct
+    reference: "Tier 42 portable summary (271813 full on G:/FSOT-PublicData)"
+
+  - id: epidemiology_tier_g_pooled
+    domain: Epidemiology
+    name: Epidemiology_Tier_G_depth_pooled_median
+    unit: error_pct
+    measured: 0.0
+    measured_uncertainty: 0.0
+    sota_model: "SEIR compartmental baselines"
+    sota_typical_error_pct: 12.0
+    sota_free_parameters: 6
+    fsot_source: data/epidemiology_extension_benchmark.json
+    fsot_property: pooled_median_error_pct
+    reference: "Tier G depth — World Bank health + immunology bridge"
+
+  - id: virology_tier_g_pooled
+    domain: Virology
+    name: Virology_Tier_G_depth_pooled_median
+    unit: error_pct
+    measured: 0.0
+    measured_uncertainty: 0.0
+    sota_model: "Virology reference tables + antiviral PK"
+    sota_typical_error_pct: 10.0
+    sota_free_parameters: 4
+    fsot_source: data/virology_extension_benchmark.json
+    fsot_property: pooled_median_error_pct
+    reference: "Tier G depth — immunology + PubChem antivirals bridge"
+
+  - id: supply_chain_tier_g_pooled
+    domain: Supply_Chain_Logistics
+    name: Supply_chain_Tier_G_depth_pooled_median
+    unit: error_pct
+    measured: 0.0
+    measured_uncertainty: 0.0
+    sota_model: "World Bank trade/logistics panels"
+    sota_typical_error_pct: 8.0
+    sota_free_parameters: 5
+    fsot_source: data/supply_chain_logistics_extension_benchmark.json
+    fsot_property: pooled_median_error_pct
+    reference: "Tier G depth — World Bank trade + agroecology bridge"
+
+  - id: civil_engineering_tier_g_pooled
+    domain: Civil_Engineering
+    name: Civil_engineering_Tier_G_depth_pooled_median
+    unit: error_pct
+    measured: 0.0
+    measured_uncertainty: 0.0
+    sota_model: "ASCE structural design tables"
+    sota_typical_error_pct: 6.0
+    sota_free_parameters: 3
+    fsot_source: data/civil_engineering_extension_benchmark.json
+    fsot_property: pooled_median_error_pct
+    reference: "Tier G depth — materials engineering bridge"
+
+  - id: cardiology_tier_g_pooled
+    domain: Cardiology
+    name: Cardiology_Tier_G_depth_pooled_median
+    unit: error_pct
+    measured: 0.0
+    measured_uncertainty: 0.0
+    sota_model: "AHA/ESC clinical reference tables"
+    sota_typical_error_pct: 8.0
+    sota_free_parameters: 4
+    fsot_source: data/cardiology_extension_benchmark.json
+    fsot_property: pooled_median_error_pct
+    reference: "Tier G depth — clinical medicine bridge"
+
+  - id: neuroeconomics_tier_g_pooled
+    domain: Neuroeconomics
+    name: Neuroeconomics_Tier_G_depth_pooled_median
+    unit: error_pct
+    measured: 0.0
+    measured_uncertainty: 0.0
+    sota_model: "Behavioral econ lab replications"
+    sota_typical_error_pct: 15.0
+    sota_free_parameters: 5
+    fsot_source: data/neuroeconomics_extension_benchmark.json
+    fsot_property: pooled_median_error_pct
+    reference: "Tier G depth — psychology + econometrics bridge"
+
+  - id: finance_markets_tier_g_pooled
+    domain: Finance_Markets
+    name: Finance_markets_Tier_G_depth_pooled_median
+    unit: error_pct
+    measured: 0.0
+    measured_uncertainty: 0.0
+    sota_model: "Bloomberg/World Bank macro panels"
+    sota_typical_error_pct: 6.0
+    sota_free_parameters: 4
+    fsot_source: data/finance_markets_extension_benchmark.json
+    fsot_property: pooled_median_error_pct
+    reference: "Tier G depth — World Bank + econometrics bridge"
+
+  - id: speleology_tier_g_pooled
+    domain: Speleology
+    name: Speleology_Tier_G_depth_pooled_median
+    unit: error_pct
+    measured: 0.0
+    measured_uncertainty: 0.0
+    sota_model: "UIS speleology reference tables"
+    sota_typical_error_pct: 10.0
+    sota_free_parameters: 3
+    fsot_source: data/speleology_extension_benchmark.json
+    fsot_property: pooled_median_error_pct
+    reference: "Tier G depth — hydrology + geochemistry bridge"

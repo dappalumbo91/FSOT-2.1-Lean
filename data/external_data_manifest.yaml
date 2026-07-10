@@ -187,6 +187,13 @@ bundled:
     external_cache_root: D:/FSOT-2.1-Lean-PublicData/tier39_propulsion_electrical
     external_cache_env: FSOT_EXTERNAL_DATA_ROOT
 
+  space_weather_full_arc:
+    path: data/space_weather_summary_benchmark.json
+    role: Portable Kp summary (501 records); full 271813-record arc on external cache
+    env_override: FSOT_EXTERNAL_DATA_ROOT
+    external_cache_root: G:/FSOT-PublicData/space_weather
+    external_full_benchmark: G:/FSOT-PublicData/space_weather/space_weather_full_benchmark.json
+
   evolution_best_organism:
     path: vendor/evolution/best_evolved_organism.json
     role: best evolved organism metrics for evolution lab verification
@@ -201,6 +208,9 @@ cached_in_repo:
     - data/multi_hero_benchmark.json
     - data/climate_observed_benchmark.json
     - data/space_weather_benchmark.json
+    - data/space_weather_summary_benchmark.json
+    - data/domain_coupling_simulation_benchmark.json
+    - data/formula_corpus_closure_benchmark.json
 
 optional_desktop:
   description: >

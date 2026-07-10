@@ -11,7 +11,7 @@ noncomputable section
 
 open Real
 
-def neuroeconomics_ext_observable_count : ℕ := 65
+def neuroeconomics_ext_observable_count : ℕ := 123
 def neuroeconomics_ext_pooled_median_error_pct : ℝ := (0.10502056403980387 : ℝ)
 def neuroeconomics_ext_headline_median_error_pct : ℝ := (0.10502056403980387 : ℝ)
 def neuroeconomics_ext_beats_sota_headlines : ℕ := 2
@@ -32,7 +32,7 @@ theorem neuroeconomics_ext_beats_sota_headlines_pos : 0 < neuroeconomics_ext_bea
   unfold neuroeconomics_ext_beats_sota_headlines; norm_num
 
 theorem neuroeconomics_ext_bundle :
-    neuroeconomics_ext_observable_count = 65 ∧
+    neuroeconomics_ext_observable_count = 123 ∧
     neuroeconomics_ext_pooled_median_error_pct < (5 : ℝ) ∧
     neuroeconomics_ext_headline_median_error_pct < (5 : ℝ) ∧
     0 < neuroeconomics_ext_beats_sota_headlines ∧
