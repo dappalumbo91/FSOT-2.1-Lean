@@ -170,6 +170,8 @@ def build_progress() -> dict:
         for b in tier_h_depth_benches
     )
     zero_day_bench = _load_json(ROOT / "data" / "zero_day_risk_evaluator_cybersecurity_benchmark.json")
+    external_oss_bench = _load_json(ROOT / "data" / "external_oss_code_genome_benchmark.json")
+    pl_laws_bench = _load_json(ROOT / "data" / "programming_language_laws_benchmark.json")
     tokenization_smoke_bench = _load_json(ROOT / "data" / "tokenization_smoke_benchmark.json")
     trinary_hw_motif_bench = _load_json(ROOT / "data" / "trinary_hardware_motif_benchmark.json")
     intrinsic_llm_bench = _load_json(ROOT / "data" / "intrinsic_llm_validators_benchmark.json")
@@ -1371,6 +1373,38 @@ def build_progress() -> dict:
                 "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
             ],
         },
+        {
+            "tier": 44,
+            "name": "Tier 44 — external OSS code-genome verification + programming language laws",
+            "status": "complete"
+            if external_oss_bench.get("oss_sample_count", 0) >= 10
+            and external_oss_bench.get("pooled_median_error_pct") is not None
+            and float(external_oss_bench.get("pooled_median_error_pct")) < 5.0
+            and pl_laws_bench.get("law_count", 0) >= 10
+            and pl_laws_bench.get("record_count", 0) >= 15
+            and coupling_bench.get("node_count", 0) >= 151
+            else "pending",
+            "metrics": {
+                "external_oss_sample_count": external_oss_bench.get("oss_sample_count"),
+                "external_oss_high_affinity_pairs": external_oss_bench.get("high_affinity_pair_count"),
+                "external_oss_pooled_median_error_pct": external_oss_bench.get("pooled_median_error_pct"),
+                "programming_language_law_count": pl_laws_bench.get("law_count"),
+                "programming_language_laws_records": pl_laws_bench.get("record_count"),
+                "coupling_node_count": coupling_bench.get("node_count"),
+                "external_cache_root": "G:/FSOT-PublicData/github_oss",
+            },
+            "artifacts": [
+                "scripts/ingest_github_oss_code_genome.py",
+                "scripts/tier_i_programming_lib.py",
+                "scripts/build_tier_i_programming_benchmarks.py",
+                "data/github_oss_code_genome_manifest.yaml",
+                "vendor/math_generator/rules/PROGRAMMING_LANGUAGE_RULES.json",
+                "vendor/github_oss",
+                "G:/FSOT-PublicData/github_oss",
+                "FSOT.Formal.ExternalOSSCodeGenomePriors",
+                "FSOT.Formal.ProgrammingLanguageLawsPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -1396,7 +1430,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 43 cybersecurity depth — code-genome 9-language bridges, MalwareBazaar/CISA KEV ingest, zero-day evaluator",
+        "current_position": "Tier 44 programming — GitHub OSS code-genome cross-repo verification, PROGRAMMING_LANGUAGE_RULES corpus",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

@@ -1,0 +1,102 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\zig_std_arraylist.zig",
+  "language": "Zig",
+  "exists": true,
+  "codon_count": 7,
+  "hole_count": 5,
+  "mean_stability": 0.475798,
+  "codons": [
+    {
+      "token": "comptime",
+      "codon_index": 32,
+      "stability": 0.632048
+    },
+    {
+      "token": "return",
+      "codon_index": 17,
+      "stability": 0.866423
+    },
+    {
+      "token": "struct",
+      "codon_index": 20,
+      "stability": 0.819548
+    },
+    {
+      "token": "const",
+      "codon_index": 51,
+      "stability": 0.335173
+    },
+    {
+      "token": "pub",
+      "codon_index": 61,
+      "stability": 0.178923
+    },
+    {
+      "token": "try",
+      "codon_index": 58,
+      "stability": 0.225798
+    },
+    {
+      "token": "fn",
+      "codon_index": 55,
+      "stability": 0.272673
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "comptime",
+        "return",
+        "struct"
+      ],
+      "mean_stability": 0.772673,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "return",
+        "struct",
+        "const"
+      ],
+      "mean_stability": 0.673715,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "struct",
+        "const",
+        "pub"
+      ],
+      "mean_stability": 0.444548,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "const",
+        "pub",
+        "try"
+      ],
+      "mean_stability": 0.246631,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 4,
+      "tokens": [
+        "pub",
+        "try",
+        "fn"
+      ],
+      "mean_stability": 0.225798,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "zig_std_arraylist",
+  "repo": "ziglang/zig",
+  "category": "memory_safe_std",
+  "url": "https://raw.githubusercontent.com/ziglang/zig/master/lib/std/array_list.zig",
+  "source": "live"
+}

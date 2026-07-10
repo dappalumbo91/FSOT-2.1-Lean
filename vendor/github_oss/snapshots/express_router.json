@@ -1,0 +1,57 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\express_router.js",
+  "language": "JavaScript",
+  "exists": true,
+  "codon_count": 4,
+  "hole_count": 2,
+  "mean_stability": 0.510954,
+  "codons": [
+    {
+      "token": "prototype",
+      "codon_index": 39,
+      "stability": 0.522673
+    },
+    {
+      "token": "function",
+      "codon_index": 24,
+      "stability": 0.757048
+    },
+    {
+      "token": "require",
+      "codon_index": 57,
+      "stability": 0.241423
+    },
+    {
+      "token": "module",
+      "codon_index": 39,
+      "stability": 0.522673
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "prototype",
+        "function",
+        "require"
+      ],
+      "mean_stability": 0.507048,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "function",
+        "require",
+        "module"
+      ],
+      "mean_stability": 0.507048,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "express_router",
+  "repo": "expressjs/express",
+  "category": "web_framework",
+  "url": "https://raw.githubusercontent.com/expressjs/express/master/lib/application.js",
+  "source": "live"
+}

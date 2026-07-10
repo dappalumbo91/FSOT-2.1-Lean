@@ -1,0 +1,147 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\redis_sds.c",
+  "language": "C",
+  "exists": true,
+  "codon_count": 10,
+  "hole_count": 8,
+  "mean_stability": 0.738916,
+  "codons": [
+    {
+      "token": "include",
+      "codon_index": 23,
+      "stability": 0.772673
+    },
+    {
+      "token": "sprintf",
+      "codon_index": 25,
+      "stability": 0.391423
+    },
+    {
+      "token": "pointer",
+      "codon_index": 12,
+      "stability": 0.944548
+    },
+    {
+      "token": "return",
+      "codon_index": 42,
+      "stability": 0.475798
+    },
+    {
+      "token": "struct",
+      "codon_index": 28,
+      "stability": 0.694548
+    },
+    {
+      "token": "memcpy",
+      "codon_index": 29,
+      "stability": 0.678923
+    },
+    {
+      "token": "static",
+      "codon_index": 6,
+      "stability": 0.961702
+    },
+    {
+      "token": "void",
+      "codon_index": 18,
+      "stability": 0.850798
+    },
+    {
+      "token": "gets",
+      "codon_index": 10,
+      "stability": 0.625798
+    },
+    {
+      "token": "free",
+      "codon_index": 8,
+      "stability": 0.992952
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "include",
+        "sprintf",
+        "pointer"
+      ],
+      "mean_stability": 0.702881,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "sprintf",
+        "pointer",
+        "return"
+      ],
+      "mean_stability": 0.603923,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "pointer",
+        "return",
+        "struct"
+      ],
+      "mean_stability": 0.704965,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "return",
+        "struct",
+        "memcpy"
+      ],
+      "mean_stability": 0.616423,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 4,
+      "tokens": [
+        "struct",
+        "memcpy",
+        "static"
+      ],
+      "mean_stability": 0.778391,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 5,
+      "tokens": [
+        "memcpy",
+        "static",
+        "void"
+      ],
+      "mean_stability": 0.830474,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 6,
+      "tokens": [
+        "static",
+        "void",
+        "gets"
+      ],
+      "mean_stability": 0.812766,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 7,
+      "tokens": [
+        "void",
+        "gets",
+        "free"
+      ],
+      "mean_stability": 0.823183,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "redis_sds",
+  "repo": "redis/redis",
+  "category": "in_memory_store",
+  "url": "https://raw.githubusercontent.com/redis/redis/unstable/src/sds.c",
+  "source": "live"
+}

@@ -1,0 +1,162 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\rust_std_vec.rs",
+  "language": "Rust",
+  "exists": true,
+  "codon_count": 11,
+  "hole_count": 9,
+  "mean_stability": 0.524371,
+  "codons": [
+    {
+      "token": "from_raw_parts",
+      "codon_index": 52,
+      "stability": 0.0
+    },
+    {
+      "token": "extern",
+      "codon_index": 1,
+      "stability": 0.883577
+    },
+    {
+      "token": "unsafe",
+      "codon_index": 56,
+      "stability": 0.0
+    },
+    {
+      "token": "match",
+      "codon_index": 25,
+      "stability": 0.741423
+    },
+    {
+      "token": "trait",
+      "codon_index": 14,
+      "stability": 0.913298
+    },
+    {
+      "token": "const",
+      "codon_index": 36,
+      "stability": 0.569548
+    },
+    {
+      "token": "impl",
+      "codon_index": 16,
+      "stability": 0.882048
+    },
+    {
+      "token": "pub",
+      "codon_index": 49,
+      "stability": 0.366423
+    },
+    {
+      "token": "mut",
+      "codon_index": 60,
+      "stability": 0.194548
+    },
+    {
+      "token": "mod",
+      "codon_index": 9,
+      "stability": 0.991423
+    },
+    {
+      "token": "fn",
+      "codon_index": 58,
+      "stability": 0.225798
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "from_raw_parts",
+        "extern",
+        "unsafe"
+      ],
+      "mean_stability": 0.294526,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "extern",
+        "unsafe",
+        "match"
+      ],
+      "mean_stability": 0.541667,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "unsafe",
+        "match",
+        "trait"
+      ],
+      "mean_stability": 0.551574,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "match",
+        "trait",
+        "const"
+      ],
+      "mean_stability": 0.741423,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 4,
+      "tokens": [
+        "trait",
+        "const",
+        "impl"
+      ],
+      "mean_stability": 0.788298,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 5,
+      "tokens": [
+        "const",
+        "impl",
+        "pub"
+      ],
+      "mean_stability": 0.606006,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 6,
+      "tokens": [
+        "impl",
+        "pub",
+        "mut"
+      ],
+      "mean_stability": 0.481006,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 7,
+      "tokens": [
+        "pub",
+        "mut",
+        "mod"
+      ],
+      "mean_stability": 0.517465,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 8,
+      "tokens": [
+        "mut",
+        "mod",
+        "fn"
+      ],
+      "mean_stability": 0.47059,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "rust_std_vec",
+  "repo": "rust-lang/rust",
+  "category": "memory_safe_std",
+  "url": "https://raw.githubusercontent.com/rust-lang/rust/master/library/alloc/src/vec/mod.rs",
+  "source": "live"
+}

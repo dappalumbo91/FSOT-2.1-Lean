@@ -1,0 +1,36 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\openssl_mem_clr.c",
+  "language": "C",
+  "exists": true,
+  "codon_count": 4,
+  "hole_count": 0,
+  "mean_stability": 0.88243,
+  "codons": [
+    {
+      "token": "include",
+      "codon_index": 23,
+      "stability": 0.772673
+    },
+    {
+      "token": "pointer",
+      "codon_index": 12,
+      "stability": 0.944548
+    },
+    {
+      "token": "static",
+      "codon_index": 6,
+      "stability": 0.961702
+    },
+    {
+      "token": "void",
+      "codon_index": 18,
+      "stability": 0.850798
+    }
+  ],
+  "holes": [],
+  "sample_id": "openssl_mem_clr",
+  "repo": "openssl/openssl",
+  "category": "crypto_library",
+  "url": "https://raw.githubusercontent.com/openssl/openssl/master/crypto/mem_clr.c",
+  "source": "live"
+}

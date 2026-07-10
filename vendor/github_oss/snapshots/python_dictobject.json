@@ -1,0 +1,132 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\python_dictobject.c",
+  "language": "C",
+  "exists": true,
+  "codon_count": 9,
+  "hole_count": 7,
+  "mean_stability": 0.729957,
+  "codons": [
+    {
+      "token": "include",
+      "codon_index": 23,
+      "stability": 0.772673
+    },
+    {
+      "token": "return",
+      "codon_index": 42,
+      "stability": 0.475798
+    },
+    {
+      "token": "struct",
+      "codon_index": 28,
+      "stability": 0.694548
+    },
+    {
+      "token": "malloc",
+      "codon_index": 17,
+      "stability": 0.516423
+    },
+    {
+      "token": "memcpy",
+      "codon_index": 29,
+      "stability": 0.678923
+    },
+    {
+      "token": "static",
+      "codon_index": 6,
+      "stability": 0.961702
+    },
+    {
+      "token": "void",
+      "codon_index": 18,
+      "stability": 0.850798
+    },
+    {
+      "token": "gets",
+      "codon_index": 10,
+      "stability": 0.625798
+    },
+    {
+      "token": "free",
+      "codon_index": 8,
+      "stability": 0.992952
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "include",
+        "return",
+        "struct"
+      ],
+      "mean_stability": 0.647673,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "return",
+        "struct",
+        "malloc"
+      ],
+      "mean_stability": 0.562256,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "struct",
+        "malloc",
+        "memcpy"
+      ],
+      "mean_stability": 0.629965,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "malloc",
+        "memcpy",
+        "static"
+      ],
+      "mean_stability": 0.719016,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 4,
+      "tokens": [
+        "memcpy",
+        "static",
+        "void"
+      ],
+      "mean_stability": 0.830474,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 5,
+      "tokens": [
+        "static",
+        "void",
+        "gets"
+      ],
+      "mean_stability": 0.812766,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 6,
+      "tokens": [
+        "void",
+        "gets",
+        "free"
+      ],
+      "mean_stability": 0.823183,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "python_dictobject",
+  "repo": "python/cpython",
+  "category": "interpreter_core",
+  "url": "https://raw.githubusercontent.com/python/cpython/main/Objects/dictobject.c",
+  "source": "live"
+}

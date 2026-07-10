@@ -1,4 +1,4 @@
-generated_at: '2026-07-10T13:13:12.564242+00:00'
+generated_at: '2026-07-10T14:02:31.578606+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 183
+  lean_formal_modules: 185
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 41
-  tiers_total: 41
+  tiers_complete: 42
+  tiers_total: 42
   percent_complete: 100.0
-current_tier: Tier 43 cybersecurity depth — code-genome 9-language bridges, MalwareBazaar/CISA
-  KEV ingest, zero-day evaluator
+current_tier: Tier 44 programming — GitHub OSS code-genome cross-repo verification,
+  PROGRAMMING_LANGUAGE_RULES corpus
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -494,6 +494,7 @@ tier_coverage:
   - EvolutionPriors
   - ExogeologyExtensionPriors
   - ExperimentSynthesisPriors
+  - ExternalOSSCodeGenomePriors
   - FinanceMarketsExtensionPriors
   - FluidDynamicsGapFillPriors
   - FoodMicrobiologyGapFillPriors
@@ -566,6 +567,7 @@ tier_coverage:
   - PlanetaryStructurePriors
   - PlasmaPhysicsPriors
   - PredictionRederivationPriors
+  - ProgrammingLanguageLawsPriors
   - ProteinPriors
   - PsychologyGapFillPriors
   - PubchemCompoundPropertiesPriors
@@ -1276,8 +1278,8 @@ tier_coverage:
     weather split
   status: complete
   metrics:
-    coupling_node_count: 149
-    coupling_edge_count: 3032
+    coupling_node_count: 151
+    coupling_edge_count: 3199
     coupling_pooled_median_error_pct: 0.0
     formula_closure_records: 123
     formula_closure_strict_empirical: 7941
@@ -1307,7 +1309,7 @@ tier_coverage:
     tier_h_depth_code_genome_records: 205
     zero_day_risk_tier: RED
     zero_day_hole_count: 82
-    coupling_node_count: 149
+    coupling_node_count: 151
     external_cache_root: G:/FSOT-PublicData/cybersecurity
   artifacts:
   - scripts/ingest_cybersecurity_public_data.py
@@ -1321,6 +1323,27 @@ tier_coverage:
   - FSOT.Formal.MalwareThreatIntelligencePriors
   - FSOT.Formal.CodeGenomeStructurePriors
   - FSOT.Formal.ZeroDayRiskEvaluatorPriors
+- tier: 44
+  name: Tier 44 — external OSS code-genome verification + programming language laws
+  status: complete
+  metrics:
+    external_oss_sample_count: 15
+    external_oss_high_affinity_pairs: 29
+    external_oss_pooled_median_error_pct: 0.0
+    programming_language_law_count: 15
+    programming_language_laws_records: 21
+    coupling_node_count: 151
+    external_cache_root: G:/FSOT-PublicData/github_oss
+  artifacts:
+  - scripts/ingest_github_oss_code_genome.py
+  - scripts/tier_i_programming_lib.py
+  - scripts/build_tier_i_programming_benchmarks.py
+  - data/github_oss_code_genome_manifest.yaml
+  - vendor/math_generator/rules/PROGRAMMING_LANGUAGE_RULES.json
+  - vendor/github_oss
+  - G:/FSOT-PublicData/github_oss
+  - FSOT.Formal.ExternalOSSCodeGenomePriors
+  - FSOT.Formal.ProgrammingLanguageLawsPriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -1988,6 +2011,14 @@ extension_domains:
   tier: 43
   record_count: 26
   lean_module: FSOT.Formal.ZeroDayRiskEvaluatorPriors
+- domain: External_OSS_Code_Genome
+  tier: 44
+  record_count: 87
+  lean_module: FSOT.Formal.ExternalOSSCodeGenomePriors
+- domain: Programming_Language_Laws
+  tier: 44
+  record_count: 21
+  lean_module: FSOT.Formal.ProgrammingLanguageLawsPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -2740,6 +2771,7 @@ lean_formal_modules:
 - EvolutionPriors
 - ExogeologyExtensionPriors
 - ExperimentSynthesisPriors
+- ExternalOSSCodeGenomePriors
 - FinanceMarketsExtensionPriors
 - FluidDynamicsGapFillPriors
 - FoodMicrobiologyGapFillPriors
@@ -2811,6 +2843,7 @@ lean_formal_modules:
 - PlanetaryStructurePriors
 - PlasmaPhysicsPriors
 - PredictionRederivationPriors
+- ProgrammingLanguageLawsPriors
 - ProteinPriors
 - PsychologyGapFillPriors
 - PubchemCompoundPropertiesPriors

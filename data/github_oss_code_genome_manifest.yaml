@@ -1,0 +1,113 @@
+# Curated open-source GitHub files for external code-genome verification (Tier 44).
+version: "1.0"
+updated: "2026-07-10"
+notes: >
+  Portable vendor cache under vendor/github_oss; full ingest on FSOT_EXTERNAL_DATA_ROOT/github_oss.
+  Raw URLs use stable refs — re-ingest refreshes third-party snapshots.
+
+samples:
+  - id: openssl_mem_clr
+    repo: openssl/openssl
+    ref: master
+    path: crypto/mem_clr.c
+    language: C
+    category: crypto_library
+
+  - id: linux_kernel_list
+    repo: torvalds/linux
+    ref: master
+    path: include/linux/list.h
+    language: C
+    category: systems_kernel
+
+  - id: rust_std_vec
+    repo: rust-lang/rust
+    ref: master
+    path: library/alloc/src/vec/mod.rs
+    language: Rust
+    category: memory_safe_std
+
+  - id: python_dictobject
+    repo: python/cpython
+    ref: main
+    path: Objects/dictobject.c
+    language: C
+    category: interpreter_core
+
+  - id: cpython_ceval
+    repo: python/cpython
+    ref: main
+    path: Python/ceval.c
+    language: C
+    category: interpreter_core
+
+  - id: nodejs_buffer
+    repo: nodejs/node
+    ref: main
+    path: lib/buffer.js
+    language: JavaScript
+    category: runtime_stdlib
+
+  - id: express_router
+    repo: expressjs/express
+    ref: master
+    path: lib/application.js
+    language: JavaScript
+    category: web_framework
+
+  - id: golang_http_serve
+    repo: golang/go
+    ref: master
+    path: src/net/http/server.go
+    language: Go
+    category: stdlib_network
+
+  - id: zig_std_arraylist
+    repo: ziglang/zig
+    ref: master
+    path: lib/std/array_list.zig
+    language: Zig
+    category: memory_safe_std
+
+  - id: lean4_core_init
+    repo: leanprover/lean4
+    ref: master
+    path: src/initialize/init.cpp
+    language: C
+    category: proof_assistant_runtime
+
+  - id: sqlite_mem
+    repo: sqlite/sqlite
+    repo_alt: n/a
+    ref: master
+    path: src/mem1.c
+    language: C
+    category: embedded_database
+
+  - id: redis_sds
+    repo: redis/redis
+    ref: unstable
+    path: src/sds.c
+    language: C
+    category: in_memory_store
+
+  - id: pytorch_tensor
+    repo: pytorch/pytorch
+    ref: main
+    path: c10/core/TensorImpl.h
+    language: C
+    category: ml_framework
+
+  - id: kubernetes_client_go
+    repo: kubernetes/client-go
+    ref: master
+    path: rest/request.go
+    language: Go
+    category: cloud_native
+
+  - id: react_hooks
+    repo: facebook/react
+    ref: main
+    path: packages/react/src/ReactHooks.js
+    language: JavaScript
+    category: ui_framework

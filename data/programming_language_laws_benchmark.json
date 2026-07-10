@@ -1,0 +1,266 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:02:14.991499+00:00",
+  "domain": "Programming_Language_Laws",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "PROGRAMMING_LANGUAGE_RULES.json",
+    "math_generator_rules_eval",
+    "linguistics_formal"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "ai",
+    "mathematical"
+  ],
+  "D_eff": 15,
+  "record_count": 21,
+  "observable_count": 21,
+  "median_error_pct": 0.007383655181691928,
+  "pooled_median_error_pct": 0.007383655181691928,
+  "headline_median_error_pct": 0.007383655181691928,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "programming_laws_panel": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "PL semantics textbooks"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_pl_rule_properties_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.007384,
+      "measured": 0.0,
+      "error_pct": 0.007383655181691928,
+      "observable_count": 21
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pl_rule_properties",
+      "name": "programming_laws_panel",
+      "computed": 0.007384,
+      "measured": 0.0,
+      "error_pct": 0.007383655181691928,
+      "observable_count": 21
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-001",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "functional_core"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-002",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "memory_safety"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-003",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "scoping"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-004",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "object_model"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-005",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "concurrency"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-006",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "memory_unsafe"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-007",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "metaprogramming"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-008",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "wasm_semantics"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-009",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "type_theory"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-010",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "computability"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-011",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "type_systems"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-012",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "fsot_isa"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-013",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "fsot_cyber"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-014",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "functional_core"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "pl_rule_property_count",
+      "name": "PL-015",
+      "computed": 2.000148,
+      "measured": 2.0,
+      "error_pct": 0.007383655181691928,
+      "source": "PROGRAMMING_LANGUAGE_RULES.json",
+      "category": "security"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "linguistics_formal_bridge",
+      "name": "Zipf_exponent_English",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "linguistics_formal_benchmark"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "linguistics_formal_bridge",
+      "name": "Mean_dependency_length_EN",
+      "computed": 2.40001358369048,
+      "measured": 2.3,
+      "error_pct": 0.0005659871035364658,
+      "source": "linguistics_formal_benchmark"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "linguistics_formal_bridge",
+      "name": "Mean_phoneme_inventory_size",
+      "computed": 30.9995813680981,
+      "measured": 31.0,
+      "error_pct": -0.0013504254899468224,
+      "source": "linguistics_formal_benchmark"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "linguistics_formal_bridge",
+      "name": "Letter_entropy_English",
+      "computed": 4.18002506099209,
+      "measured": 4.18,
+      "error_pct": 0.0005995452654275573,
+      "source": "linguistics_formal_benchmark"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "linguistics_formal_bridge",
+      "name": "Mean_word_length_English",
+      "computed": 4.49971638840435,
+      "measured": 4.5,
+      "error_pct": -0.006302479903277616,
+      "source": "linguistics_formal_benchmark"
+    },
+    {
+      "lab": "programming_language_laws_lab",
+      "property": "linguistics_formal_bridge",
+      "name": "Saccade_length_reading",
+      "computed": 8.00021360546018,
+      "measured": 8.0,
+      "error_pct": 0.002670068252275115,
+      "source": "linguistics_formal_benchmark"
+    }
+  ],
+  "law_count": 15,
+  "crosswalk_modules": [
+    "FSOT.Formal.ProgrammingLanguageLawsPriors",
+    "FSOT.Formal.CodeGenomeStructurePriors"
+  ]
+}

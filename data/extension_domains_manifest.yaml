@@ -1458,6 +1458,30 @@ extension_domains:
     lean_module: FSOT.Formal.ZeroDayRiskEvaluatorPriors
     note: "FSOT code-genome gap detector rollup — connective stability holes → risk tier"
 
+  External_OSS_Code_Genome:
+    tier: 44
+    D_eff: 16
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [ai, biological, consciousness]
+    build_script: scripts/build_tier_i_programming_benchmarks.py
+    benchmark_data: data/external_oss_code_genome_benchmark.json
+    lean_module: FSOT.Formal.ExternalOSSCodeGenomePriors
+    note: "Curated GitHub OSS snapshots — cross-repo codon affinity vs FSOT internal genome"
+
+  Programming_Language_Laws:
+    tier: 44
+    D_eff: 15
+    delta_psi: 0.88
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, ai, mathematical]
+    build_script: scripts/build_tier_i_programming_benchmarks.py
+    benchmark_data: data/programming_language_laws_benchmark.json
+    lean_module: FSOT.Formal.ProgrammingLanguageLawsPriors
+    note: "PROGRAMMING_LANGUAGE_RULES.json — semantics/safety laws parallel to math/crypto rules"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

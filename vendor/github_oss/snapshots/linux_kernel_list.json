@@ -1,0 +1,87 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\linux_kernel_list.h",
+  "language": "C",
+  "exists": true,
+  "codon_count": 6,
+  "hole_count": 4,
+  "mean_stability": 0.783344,
+  "codons": [
+    {
+      "token": "include",
+      "codon_index": 23,
+      "stability": 0.772673
+    },
+    {
+      "token": "pointer",
+      "codon_index": 12,
+      "stability": 0.944548
+    },
+    {
+      "token": "return",
+      "codon_index": 42,
+      "stability": 0.475798
+    },
+    {
+      "token": "struct",
+      "codon_index": 28,
+      "stability": 0.694548
+    },
+    {
+      "token": "static",
+      "codon_index": 6,
+      "stability": 0.961702
+    },
+    {
+      "token": "void",
+      "codon_index": 18,
+      "stability": 0.850798
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "include",
+        "pointer",
+        "return"
+      ],
+      "mean_stability": 0.731006,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "pointer",
+        "return",
+        "struct"
+      ],
+      "mean_stability": 0.704965,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "return",
+        "struct",
+        "static"
+      ],
+      "mean_stability": 0.710683,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 3,
+      "tokens": [
+        "struct",
+        "static",
+        "void"
+      ],
+      "mean_stability": 0.835683,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "linux_kernel_list",
+  "repo": "torvalds/linux",
+  "category": "systems_kernel",
+  "url": "https://raw.githubusercontent.com/torvalds/linux/master/include/linux/list.h",
+  "source": "live"
+}

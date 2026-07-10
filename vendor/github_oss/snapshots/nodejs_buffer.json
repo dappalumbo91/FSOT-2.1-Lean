@@ -1,0 +1,72 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\nodejs_buffer.js",
+  "language": "JavaScript",
+  "exists": true,
+  "codon_count": 5,
+  "hole_count": 3,
+  "mean_stability": 0.600798,
+  "codons": [
+    {
+      "token": "prototype",
+      "codon_index": 39,
+      "stability": 0.522673
+    },
+    {
+      "token": "function",
+      "codon_index": 24,
+      "stability": 0.757048
+    },
+    {
+      "token": "require",
+      "codon_index": 57,
+      "stability": 0.241423
+    },
+    {
+      "token": "module",
+      "codon_index": 39,
+      "stability": 0.522673
+    },
+    {
+      "token": "const",
+      "codon_index": 11,
+      "stability": 0.960173
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "prototype",
+        "function",
+        "require"
+      ],
+      "mean_stability": 0.507048,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "function",
+        "require",
+        "module"
+      ],
+      "mean_stability": 0.507048,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "require",
+        "module",
+        "const"
+      ],
+      "mean_stability": 0.574756,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "nodejs_buffer",
+  "repo": "nodejs/node",
+  "category": "runtime_stdlib",
+  "url": "https://raw.githubusercontent.com/nodejs/node/main/lib/buffer.js",
+  "source": "live"
+}

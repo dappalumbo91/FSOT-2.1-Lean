@@ -1,0 +1,1357 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-10T14:02:11.408391+00:00",
+  "sample_count": 15,
+  "failure_count": 0,
+  "failures": [],
+  "analyses": [
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\openssl_mem_clr.c",
+      "language": "C",
+      "exists": true,
+      "codon_count": 4,
+      "hole_count": 0,
+      "mean_stability": 0.88243,
+      "codons": [
+        {
+          "token": "include",
+          "codon_index": 23,
+          "stability": 0.772673
+        },
+        {
+          "token": "pointer",
+          "codon_index": 12,
+          "stability": 0.944548
+        },
+        {
+          "token": "static",
+          "codon_index": 6,
+          "stability": 0.961702
+        },
+        {
+          "token": "void",
+          "codon_index": 18,
+          "stability": 0.850798
+        }
+      ],
+      "holes": [],
+      "sample_id": "openssl_mem_clr",
+      "repo": "openssl/openssl",
+      "category": "crypto_library",
+      "url": "https://raw.githubusercontent.com/openssl/openssl/master/crypto/mem_clr.c",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\linux_kernel_list.h",
+      "language": "C",
+      "exists": true,
+      "codon_count": 6,
+      "hole_count": 4,
+      "mean_stability": 0.783344,
+      "codons": [
+        {
+          "token": "include",
+          "codon_index": 23,
+          "stability": 0.772673
+        },
+        {
+          "token": "pointer",
+          "codon_index": 12,
+          "stability": 0.944548
+        },
+        {
+          "token": "return",
+          "codon_index": 42,
+          "stability": 0.475798
+        },
+        {
+          "token": "struct",
+          "codon_index": 28,
+          "stability": 0.694548
+        },
+        {
+          "token": "static",
+          "codon_index": 6,
+          "stability": 0.961702
+        },
+        {
+          "token": "void",
+          "codon_index": 18,
+          "stability": 0.850798
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "include",
+            "pointer",
+            "return"
+          ],
+          "mean_stability": 0.731006,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "pointer",
+            "return",
+            "struct"
+          ],
+          "mean_stability": 0.704965,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 2,
+          "tokens": [
+            "return",
+            "struct",
+            "static"
+          ],
+          "mean_stability": 0.710683,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 3,
+          "tokens": [
+            "struct",
+            "static",
+            "void"
+          ],
+          "mean_stability": 0.835683,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "linux_kernel_list",
+      "repo": "torvalds/linux",
+      "category": "systems_kernel",
+      "url": "https://raw.githubusercontent.com/torvalds/linux/master/include/linux/list.h",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\rust_std_vec.rs",
+      "language": "Rust",
+      "exists": true,
+      "codon_count": 11,
+      "hole_count": 9,
+      "mean_stability": 0.524371,
+      "codons": [
+        {
+          "token": "from_raw_parts",
+          "codon_index": 52,
+          "stability": 0.0
+        },
+        {
+          "token": "extern",
+          "codon_index": 1,
+          "stability": 0.883577
+        },
+        {
+          "token": "unsafe",
+          "codon_index": 56,
+          "stability": 0.0
+        },
+        {
+          "token": "match",
+          "codon_index": 25,
+          "stability": 0.741423
+        },
+        {
+          "token": "trait",
+          "codon_index": 14,
+          "stability": 0.913298
+        },
+        {
+          "token": "const",
+          "codon_index": 36,
+          "stability": 0.569548
+        },
+        {
+          "token": "impl",
+          "codon_index": 16,
+          "stability": 0.882048
+        },
+        {
+          "token": "pub",
+          "codon_index": 49,
+          "stability": 0.366423
+        },
+        {
+          "token": "mut",
+          "codon_index": 60,
+          "stability": 0.194548
+        },
+        {
+          "token": "mod",
+          "codon_index": 9,
+          "stability": 0.991423
+        },
+        {
+          "token": "fn",
+          "codon_index": 58,
+          "stability": 0.225798
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "from_raw_parts",
+            "extern",
+            "unsafe"
+          ],
+          "mean_stability": 0.294526,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "extern",
+            "unsafe",
+            "match"
+          ],
+          "mean_stability": 0.541667,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 2,
+          "tokens": [
+            "unsafe",
+            "match",
+            "trait"
+          ],
+          "mean_stability": 0.551574,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 3,
+          "tokens": [
+            "match",
+            "trait",
+            "const"
+          ],
+          "mean_stability": 0.741423,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 4,
+          "tokens": [
+            "trait",
+            "const",
+            "impl"
+          ],
+          "mean_stability": 0.788298,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 5,
+          "tokens": [
+            "const",
+            "impl",
+            "pub"
+          ],
+          "mean_stability": 0.606006,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 6,
+          "tokens": [
+            "impl",
+            "pub",
+            "mut"
+          ],
+          "mean_stability": 0.481006,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 7,
+          "tokens": [
+            "pub",
+            "mut",
+            "mod"
+          ],
+          "mean_stability": 0.517465,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 8,
+          "tokens": [
+            "mut",
+            "mod",
+            "fn"
+          ],
+          "mean_stability": 0.47059,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "rust_std_vec",
+      "repo": "rust-lang/rust",
+      "category": "memory_safe_std",
+      "url": "https://raw.githubusercontent.com/rust-lang/rust/master/library/alloc/src/vec/mod.rs",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\python_dictobject.c",
+      "language": "C",
+      "exists": true,
+      "codon_count": 9,
+      "hole_count": 7,
+      "mean_stability": 0.729957,
+      "codons": [
+        {
+          "token": "include",
+          "codon_index": 23,
+          "stability": 0.772673
+        },
+        {
+          "token": "return",
+          "codon_index": 42,
+          "stability": 0.475798
+        },
+        {
+          "token": "struct",
+          "codon_index": 28,
+          "stability": 0.694548
+        },
+        {
+          "token": "malloc",
+          "codon_index": 17,
+          "stability": 0.516423
+        },
+        {
+          "token": "memcpy",
+          "codon_index": 29,
+          "stability": 0.678923
+        },
+        {
+          "token": "static",
+          "codon_index": 6,
+          "stability": 0.961702
+        },
+        {
+          "token": "void",
+          "codon_index": 18,
+          "stability": 0.850798
+        },
+        {
+          "token": "gets",
+          "codon_index": 10,
+          "stability": 0.625798
+        },
+        {
+          "token": "free",
+          "codon_index": 8,
+          "stability": 0.992952
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "include",
+            "return",
+            "struct"
+          ],
+          "mean_stability": 0.647673,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "return",
+            "struct",
+            "malloc"
+          ],
+          "mean_stability": 0.562256,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 2,
+          "tokens": [
+            "struct",
+            "malloc",
+            "memcpy"
+          ],
+          "mean_stability": 0.629965,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 3,
+          "tokens": [
+            "malloc",
+            "memcpy",
+            "static"
+          ],
+          "mean_stability": 0.719016,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 4,
+          "tokens": [
+            "memcpy",
+            "static",
+            "void"
+          ],
+          "mean_stability": 0.830474,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 5,
+          "tokens": [
+            "static",
+            "void",
+            "gets"
+          ],
+          "mean_stability": 0.812766,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 6,
+          "tokens": [
+            "void",
+            "gets",
+            "free"
+          ],
+          "mean_stability": 0.823183,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "python_dictobject",
+      "repo": "python/cpython",
+      "category": "interpreter_core",
+      "url": "https://raw.githubusercontent.com/python/cpython/main/Objects/dictobject.c",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\cpython_ceval.c",
+      "language": "C",
+      "exists": true,
+      "codon_count": 7,
+      "hole_count": 4,
+      "mean_stability": 0.813288,
+      "codons": [
+        {
+          "token": "include",
+          "codon_index": 23,
+          "stability": 0.772673
+        },
+        {
+          "token": "pointer",
+          "codon_index": 12,
+          "stability": 0.944548
+        },
+        {
+          "token": "return",
+          "codon_index": 42,
+          "stability": 0.475798
+        },
+        {
+          "token": "struct",
+          "codon_index": 28,
+          "stability": 0.694548
+        },
+        {
+          "token": "static",
+          "codon_index": 6,
+          "stability": 0.961702
+        },
+        {
+          "token": "void",
+          "codon_index": 18,
+          "stability": 0.850798
+        },
+        {
+          "token": "free",
+          "codon_index": 8,
+          "stability": 0.992952
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "include",
+            "pointer",
+            "return"
+          ],
+          "mean_stability": 0.731006,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "pointer",
+            "return",
+            "struct"
+          ],
+          "mean_stability": 0.704965,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 2,
+          "tokens": [
+            "return",
+            "struct",
+            "static"
+          ],
+          "mean_stability": 0.710683,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 3,
+          "tokens": [
+            "struct",
+            "static",
+            "void"
+          ],
+          "mean_stability": 0.835683,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "cpython_ceval",
+      "repo": "python/cpython",
+      "category": "interpreter_core",
+      "url": "https://raw.githubusercontent.com/python/cpython/main/Python/ceval.c",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\nodejs_buffer.js",
+      "language": "JavaScript",
+      "exists": true,
+      "codon_count": 5,
+      "hole_count": 3,
+      "mean_stability": 0.600798,
+      "codons": [
+        {
+          "token": "prototype",
+          "codon_index": 39,
+          "stability": 0.522673
+        },
+        {
+          "token": "function",
+          "codon_index": 24,
+          "stability": 0.757048
+        },
+        {
+          "token": "require",
+          "codon_index": 57,
+          "stability": 0.241423
+        },
+        {
+          "token": "module",
+          "codon_index": 39,
+          "stability": 0.522673
+        },
+        {
+          "token": "const",
+          "codon_index": 11,
+          "stability": 0.960173
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "prototype",
+            "function",
+            "require"
+          ],
+          "mean_stability": 0.507048,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "function",
+            "require",
+            "module"
+          ],
+          "mean_stability": 0.507048,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 2,
+          "tokens": [
+            "require",
+            "module",
+            "const"
+          ],
+          "mean_stability": 0.574756,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "nodejs_buffer",
+      "repo": "nodejs/node",
+      "category": "runtime_stdlib",
+      "url": "https://raw.githubusercontent.com/nodejs/node/main/lib/buffer.js",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\express_router.js",
+      "language": "JavaScript",
+      "exists": true,
+      "codon_count": 4,
+      "hole_count": 2,
+      "mean_stability": 0.510954,
+      "codons": [
+        {
+          "token": "prototype",
+          "codon_index": 39,
+          "stability": 0.522673
+        },
+        {
+          "token": "function",
+          "codon_index": 24,
+          "stability": 0.757048
+        },
+        {
+          "token": "require",
+          "codon_index": 57,
+          "stability": 0.241423
+        },
+        {
+          "token": "module",
+          "codon_index": 39,
+          "stability": 0.522673
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "prototype",
+            "function",
+            "require"
+          ],
+          "mean_stability": 0.507048,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "function",
+            "require",
+            "module"
+          ],
+          "mean_stability": 0.507048,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "express_router",
+      "repo": "expressjs/express",
+      "category": "web_framework",
+      "url": "https://raw.githubusercontent.com/expressjs/express/master/lib/application.js",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\golang_http_serve.go",
+      "language": "Go",
+      "exists": true,
+      "codon_count": 9,
+      "hole_count": 6,
+      "mean_stability": 0.578738,
+      "codons": [
+        {
+          "token": "interface",
+          "codon_index": 59,
+          "stability": 0.210173
+        },
+        {
+          "token": "package",
+          "codon_index": 4,
+          "stability": 0.930452
+        },
+        {
+          "token": "return",
+          "codon_index": 49,
+          "stability": 0.366423
+        },
+        {
+          "token": "struct",
+          "codon_index": 44,
+          "stability": 0.444548
+        },
+        {
+          "token": "unsafe",
+          "codon_index": 21,
+          "stability": 0.803923
+        },
+        {
+          "token": "import",
+          "codon_index": 5,
+          "stability": 0.946077
+        },
+        {
+          "token": "defer",
+          "codon_index": 4,
+          "stability": 0.930452
+        },
+        {
+          "token": "func",
+          "codon_index": 52,
+          "stability": 0.319548
+        },
+        {
+          "token": "go",
+          "codon_index": 56,
+          "stability": 0.257048
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "interface",
+            "package",
+            "return"
+          ],
+          "mean_stability": 0.502349,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "package",
+            "return",
+            "struct"
+          ],
+          "mean_stability": 0.580474,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 2,
+          "tokens": [
+            "return",
+            "struct",
+            "unsafe"
+          ],
+          "mean_stability": 0.538298,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 3,
+          "tokens": [
+            "struct",
+            "unsafe",
+            "import"
+          ],
+          "mean_stability": 0.731516,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 5,
+          "tokens": [
+            "import",
+            "defer",
+            "func"
+          ],
+          "mean_stability": 0.732026,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 6,
+          "tokens": [
+            "defer",
+            "func",
+            "go"
+          ],
+          "mean_stability": 0.502349,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "golang_http_serve",
+      "repo": "golang/go",
+      "category": "stdlib_network",
+      "url": "https://raw.githubusercontent.com/golang/go/master/src/net/http/server.go",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\zig_std_arraylist.zig",
+      "language": "Zig",
+      "exists": true,
+      "codon_count": 7,
+      "hole_count": 5,
+      "mean_stability": 0.475798,
+      "codons": [
+        {
+          "token": "comptime",
+          "codon_index": 32,
+          "stability": 0.632048
+        },
+        {
+          "token": "return",
+          "codon_index": 17,
+          "stability": 0.866423
+        },
+        {
+          "token": "struct",
+          "codon_index": 20,
+          "stability": 0.819548
+        },
+        {
+          "token": "const",
+          "codon_index": 51,
+          "stability": 0.335173
+        },
+        {
+          "token": "pub",
+          "codon_index": 61,
+          "stability": 0.178923
+        },
+        {
+          "token": "try",
+          "codon_index": 58,
+          "stability": 0.225798
+        },
+        {
+          "token": "fn",
+          "codon_index": 55,
+          "stability": 0.272673
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "comptime",
+            "return",
+            "struct"
+          ],
+          "mean_stability": 0.772673,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "return",
+            "struct",
+            "const"
+          ],
+          "mean_stability": 0.673715,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 2,
+          "tokens": [
+            "struct",
+            "const",
+            "pub"
+          ],
+          "mean_stability": 0.444548,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 3,
+          "tokens": [
+            "const",
+            "pub",
+            "try"
+          ],
+          "mean_stability": 0.246631,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 4,
+          "tokens": [
+            "pub",
+            "try",
+            "fn"
+          ],
+          "mean_stability": 0.225798,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "zig_std_arraylist",
+      "repo": "ziglang/zig",
+      "category": "memory_safe_std",
+      "url": "https://raw.githubusercontent.com/ziglang/zig/master/lib/std/array_list.zig",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\lean4_core_init.cpp",
+      "language": "C",
+      "exists": true,
+      "codon_count": 2,
+      "hole_count": 0,
+      "mean_stability": 0.811736,
+      "codons": [
+        {
+          "token": "include",
+          "codon_index": 23,
+          "stability": 0.772673
+        },
+        {
+          "token": "void",
+          "codon_index": 18,
+          "stability": 0.850798
+        }
+      ],
+      "holes": [],
+      "sample_id": "lean4_core_init",
+      "repo": "leanprover/lean4",
+      "category": "proof_assistant_runtime",
+      "url": "https://raw.githubusercontent.com/leanprover/lean4/master/src/initialize/init.cpp",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\sqlite_mem.c",
+      "language": "C",
+      "exists": true,
+      "codon_count": 6,
+      "hole_count": 3,
+      "mean_stability": 0.761724,
+      "codons": [
+        {
+          "token": "include",
+          "codon_index": 23,
+          "stability": 0.772673
+        },
+        {
+          "token": "return",
+          "codon_index": 42,
+          "stability": 0.475798
+        },
+        {
+          "token": "malloc",
+          "codon_index": 17,
+          "stability": 0.516423
+        },
+        {
+          "token": "static",
+          "codon_index": 6,
+          "stability": 0.961702
+        },
+        {
+          "token": "void",
+          "codon_index": 18,
+          "stability": 0.850798
+        },
+        {
+          "token": "free",
+          "codon_index": 8,
+          "stability": 0.992952
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "include",
+            "return",
+            "malloc"
+          ],
+          "mean_stability": 0.588298,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "return",
+            "malloc",
+            "static"
+          ],
+          "mean_stability": 0.651308,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 2,
+          "tokens": [
+            "malloc",
+            "static",
+            "void"
+          ],
+          "mean_stability": 0.776308,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "sqlite_mem",
+      "repo": "sqlite/sqlite",
+      "category": "embedded_database",
+      "url": "https://raw.githubusercontent.com/sqlite/sqlite/master/src/mem1.c",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\redis_sds.c",
+      "language": "C",
+      "exists": true,
+      "codon_count": 10,
+      "hole_count": 8,
+      "mean_stability": 0.738916,
+      "codons": [
+        {
+          "token": "include",
+          "codon_index": 23,
+          "stability": 0.772673
+        },
+        {
+          "token": "sprintf",
+          "codon_index": 25,
+          "stability": 0.391423
+        },
+        {
+          "token": "pointer",
+          "codon_index": 12,
+          "stability": 0.944548
+        },
+        {
+          "token": "return",
+          "codon_index": 42,
+          "stability": 0.475798
+        },
+        {
+          "token": "struct",
+          "codon_index": 28,
+          "stability": 0.694548
+        },
+        {
+          "token": "memcpy",
+          "codon_index": 29,
+          "stability": 0.678923
+        },
+        {
+          "token": "static",
+          "codon_index": 6,
+          "stability": 0.961702
+        },
+        {
+          "token": "void",
+          "codon_index": 18,
+          "stability": 0.850798
+        },
+        {
+          "token": "gets",
+          "codon_index": 10,
+          "stability": 0.625798
+        },
+        {
+          "token": "free",
+          "codon_index": 8,
+          "stability": 0.992952
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "include",
+            "sprintf",
+            "pointer"
+          ],
+          "mean_stability": 0.702881,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "sprintf",
+            "pointer",
+            "return"
+          ],
+          "mean_stability": 0.603923,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 2,
+          "tokens": [
+            "pointer",
+            "return",
+            "struct"
+          ],
+          "mean_stability": 0.704965,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 3,
+          "tokens": [
+            "return",
+            "struct",
+            "memcpy"
+          ],
+          "mean_stability": 0.616423,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 4,
+          "tokens": [
+            "struct",
+            "memcpy",
+            "static"
+          ],
+          "mean_stability": 0.778391,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 5,
+          "tokens": [
+            "memcpy",
+            "static",
+            "void"
+          ],
+          "mean_stability": 0.830474,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 6,
+          "tokens": [
+            "static",
+            "void",
+            "gets"
+          ],
+          "mean_stability": 0.812766,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 7,
+          "tokens": [
+            "void",
+            "gets",
+            "free"
+          ],
+          "mean_stability": 0.823183,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "redis_sds",
+      "repo": "redis/redis",
+      "category": "in_memory_store",
+      "url": "https://raw.githubusercontent.com/redis/redis/unstable/src/sds.c",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\pytorch_tensor.h",
+      "language": "C",
+      "exists": true,
+      "codon_count": 7,
+      "hole_count": 4,
+      "mean_stability": 0.813288,
+      "codons": [
+        {
+          "token": "include",
+          "codon_index": 23,
+          "stability": 0.772673
+        },
+        {
+          "token": "pointer",
+          "codon_index": 12,
+          "stability": 0.944548
+        },
+        {
+          "token": "return",
+          "codon_index": 42,
+          "stability": 0.475798
+        },
+        {
+          "token": "struct",
+          "codon_index": 28,
+          "stability": 0.694548
+        },
+        {
+          "token": "static",
+          "codon_index": 6,
+          "stability": 0.961702
+        },
+        {
+          "token": "void",
+          "codon_index": 18,
+          "stability": 0.850798
+        },
+        {
+          "token": "free",
+          "codon_index": 8,
+          "stability": 0.992952
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "include",
+            "pointer",
+            "return"
+          ],
+          "mean_stability": 0.731006,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "pointer",
+            "return",
+            "struct"
+          ],
+          "mean_stability": 0.704965,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 2,
+          "tokens": [
+            "return",
+            "struct",
+            "static"
+          ],
+          "mean_stability": 0.710683,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 3,
+          "tokens": [
+            "struct",
+            "static",
+            "void"
+          ],
+          "mean_stability": 0.835683,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "pytorch_tensor",
+      "repo": "pytorch/pytorch",
+      "category": "ml_framework",
+      "url": "https://raw.githubusercontent.com/pytorch/pytorch/main/c10/core/TensorImpl.h",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\kubernetes_client_go.go",
+      "language": "Go",
+      "exists": true,
+      "codon_count": 8,
+      "hole_count": 6,
+      "mean_stability": 0.55059,
+      "codons": [
+        {
+          "token": "interface",
+          "codon_index": 59,
+          "stability": 0.210173
+        },
+        {
+          "token": "package",
+          "codon_index": 4,
+          "stability": 0.930452
+        },
+        {
+          "token": "return",
+          "codon_index": 49,
+          "stability": 0.366423
+        },
+        {
+          "token": "struct",
+          "codon_index": 44,
+          "stability": 0.444548
+        },
+        {
+          "token": "import",
+          "codon_index": 5,
+          "stability": 0.946077
+        },
+        {
+          "token": "defer",
+          "codon_index": 4,
+          "stability": 0.930452
+        },
+        {
+          "token": "func",
+          "codon_index": 52,
+          "stability": 0.319548
+        },
+        {
+          "token": "go",
+          "codon_index": 56,
+          "stability": 0.257048
+        }
+      ],
+      "holes": [
+        {
+          "window_start": 0,
+          "tokens": [
+            "interface",
+            "package",
+            "return"
+          ],
+          "mean_stability": 0.502349,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 1,
+          "tokens": [
+            "package",
+            "return",
+            "struct"
+          ],
+          "mean_stability": 0.580474,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 2,
+          "tokens": [
+            "return",
+            "struct",
+            "import"
+          ],
+          "mean_stability": 0.585683,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 3,
+          "tokens": [
+            "struct",
+            "import",
+            "defer"
+          ],
+          "mean_stability": 0.773692,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 4,
+          "tokens": [
+            "import",
+            "defer",
+            "func"
+          ],
+          "mean_stability": 0.732026,
+          "hole_type": "connective_failure"
+        },
+        {
+          "window_start": 5,
+          "tokens": [
+            "defer",
+            "func",
+            "go"
+          ],
+          "mean_stability": 0.502349,
+          "hole_type": "connective_failure"
+        }
+      ],
+      "sample_id": "kubernetes_client_go",
+      "repo": "kubernetes/client-go",
+      "category": "cloud_native",
+      "url": "https://raw.githubusercontent.com/kubernetes/client-go/master/rest/request.go",
+      "source": "live"
+    },
+    {
+      "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\react_hooks.js",
+      "language": "JavaScript",
+      "exists": true,
+      "codon_count": 2,
+      "hole_count": 0,
+      "mean_stability": 0.858611,
+      "codons": [
+        {
+          "token": "function",
+          "codon_index": 24,
+          "stability": 0.757048
+        },
+        {
+          "token": "const",
+          "codon_index": 11,
+          "stability": 0.960173
+        }
+      ],
+      "holes": [],
+      "sample_id": "react_hooks",
+      "repo": "facebook/react",
+      "category": "ui_framework",
+      "url": "https://raw.githubusercontent.com/facebook/react/main/packages/react/src/ReactHooks.js",
+      "source": "live"
+    }
+  ],
+  "external_cache": "G:\\FSOT-PublicData\\github_oss\\snapshots"
+}

@@ -1,0 +1,77 @@
+{
+  "path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\github_oss\\snapshots\\sqlite_mem.c",
+  "language": "C",
+  "exists": true,
+  "codon_count": 6,
+  "hole_count": 3,
+  "mean_stability": 0.761724,
+  "codons": [
+    {
+      "token": "include",
+      "codon_index": 23,
+      "stability": 0.772673
+    },
+    {
+      "token": "return",
+      "codon_index": 42,
+      "stability": 0.475798
+    },
+    {
+      "token": "malloc",
+      "codon_index": 17,
+      "stability": 0.516423
+    },
+    {
+      "token": "static",
+      "codon_index": 6,
+      "stability": 0.961702
+    },
+    {
+      "token": "void",
+      "codon_index": 18,
+      "stability": 0.850798
+    },
+    {
+      "token": "free",
+      "codon_index": 8,
+      "stability": 0.992952
+    }
+  ],
+  "holes": [
+    {
+      "window_start": 0,
+      "tokens": [
+        "include",
+        "return",
+        "malloc"
+      ],
+      "mean_stability": 0.588298,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 1,
+      "tokens": [
+        "return",
+        "malloc",
+        "static"
+      ],
+      "mean_stability": 0.651308,
+      "hole_type": "connective_failure"
+    },
+    {
+      "window_start": 2,
+      "tokens": [
+        "malloc",
+        "static",
+        "void"
+      ],
+      "mean_stability": 0.776308,
+      "hole_type": "connective_failure"
+    }
+  ],
+  "sample_id": "sqlite_mem",
+  "repo": "sqlite/sqlite",
+  "category": "embedded_database",
+  "url": "https://raw.githubusercontent.com/sqlite/sqlite/master/src/mem1.c",
+  "source": "live"
+}
