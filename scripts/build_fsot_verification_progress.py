@@ -176,6 +176,12 @@ def build_progress() -> dict:
     mech_bench = _load_json(ROOT / "data" / "mechanistic_coupling_benchmark.json")
     fals_bench = _load_json(ROOT / "data" / "cve_codon_hole_falsification_benchmark.json")
     spine_bench = _load_json(ROOT / "data" / "theory_completeness_spine_benchmark.json")
+    recursion_bench = _load_json(ROOT / "data" / "fractal_constant_recursion_benchmark.json")
+    prereg_bench = _load_json(ROOT / "data" / "preregistered_predictions_benchmark.json")
+    portable_clone_bench = _load_json(ROOT / "data" / "portable_clone_verify_benchmark.json")
+    observer_bench = _load_json(ROOT / "data" / "observer_channel_derivation_benchmark.json")
+    adversarial_bench = _load_json(ROOT / "data" / "adversarial_fractal_break_benchmark.json")
+    gap_spine_bench = _load_json(ROOT / "data" / "toe_gap_closure_spine_benchmark.json")
     tokenization_smoke_bench = _load_json(ROOT / "data" / "tokenization_smoke_benchmark.json")
     trinary_hw_motif_bench = _load_json(ROOT / "data" / "trinary_hardware_motif_benchmark.json")
     intrinsic_llm_bench = _load_json(ROOT / "data" / "intrinsic_llm_validators_benchmark.json")
@@ -1452,6 +1458,43 @@ def build_progress() -> dict:
                 "FSOT.Formal.TheoryCompletenessSpinePriors",
             ],
         },
+        {
+            "tier": 46,
+            "name": "Tier 46 — ToE gap closure (fractal recursion, prereg predictions, portable clone, observer derive, adversarial)",
+            "status": "complete"
+            if recursion_bench.get("constant_family_count", 0) >= 5
+            and prereg_bench.get("prediction_count", 0) >= 5
+            and int(prereg_bench.get("discriminant_pass_count") or 0) >= 4
+            and portable_clone_bench.get("clone_verify_pass") is True
+            and int(observer_bench.get("quirkmod_derived_count") or 0) >= 10
+            and float(adversarial_bench.get("adversarial_detection_rate") or 0) >= 0.75
+            and gap_spine_bench.get("gap_closure_status") == "GREEN"
+            and coupling_bench.get("node_count", 0) >= 161
+            else "pending",
+            "metrics": {
+                "constant_family_count": recursion_bench.get("constant_family_count"),
+                "preregistered_prediction_count": prereg_bench.get("prediction_count"),
+                "discriminant_pass_count": prereg_bench.get("discriminant_pass_count"),
+                "clone_verify_pass": portable_clone_bench.get("clone_verify_pass"),
+                "quirkmod_derived_count": observer_bench.get("quirkmod_derived_count"),
+                "adversarial_detection_rate": adversarial_bench.get("adversarial_detection_rate"),
+                "gap_closure_status": gap_spine_bench.get("gap_closure_status"),
+                "coupling_node_count": coupling_bench.get("node_count"),
+            },
+            "artifacts": [
+                "data/fractal_constant_recursion.yaml",
+                "data/preregistered_predictions_manifest.yaml",
+                "data/github_oss_adversarial_manifest.yaml",
+                "scripts/tier_k_toe_gap_closure_lib.py",
+                "scripts/build_tier_k_toe_gap_closure_benchmarks.py",
+                "FSOT.Formal.FractalConstantRecursionPriors",
+                "FSOT.Formal.PreregisteredPredictionsPriors",
+                "FSOT.Formal.PortableCloneVerifyPriors",
+                "FSOT.Formal.ObserverChannelDerivationPriors",
+                "FSOT.Formal.AdversarialFractalBreakPriors",
+                "FSOT.Formal.ToEGapClosureSpinePriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -1478,7 +1521,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 45 ToE completeness — formula branching fractal DAG, mechanistic coupling, CISA KEV codon-hole falsification",
+        "current_position": "Tier 46 ToE gap closure — constant fractal recursion, preregistered predictions, portable clone-verify, observer derive, adversarial break tests",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

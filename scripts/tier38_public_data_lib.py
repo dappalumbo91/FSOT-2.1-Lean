@@ -34,9 +34,23 @@ ATOMIC_MASS = {
 }
 
 
+def portable_cache_root() -> Path:
+    path = ROOT / "vendor" / "public_data" / "cache"
+    path.mkdir(parents=True, exist_ok=True)
+    return path
+
+
 def external_data_root() -> Path:
     raw = os.environ.get("FSOT_EXTERNAL_DATA_ROOT", "").strip()
-    root = Path(raw).expanduser() if raw else DEFAULT_EXTERNAL_ROOT
+    portable = os.environ.get("FSOT_PORTABLE_MODE", "").strip().lower() in {"1", "true", "yes", "on"}
+    if raw:
+        root = Path(raw).expanduser()
+    elif portable:
+        root = portable_cache_root()
+    elif DEFAULT_EXTERNAL_ROOT.exists():
+        root = DEFAULT_EXTERNAL_ROOT
+    else:
+        root = portable_cache_root()
     root.mkdir(parents=True, exist_ok=True)
     return root
 

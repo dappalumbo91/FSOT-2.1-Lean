@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T14:15:18.938021+00:00",
+  "generated_at": "2026-07-10T14:19:45.813434+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -702,6 +702,13 @@
     "translation_total": 38
   },
   "formal_theorem_inventory": {
+    "AdversarialFractalBreakPriors": [
+      "adv_brk_observable_count_pos",
+      "adv_brk_pooled_median_under_five_pct",
+      "adv_brk_headline_median_under_five_pct",
+      "adv_brk_beats_sota_headlines_pos",
+      "adv_brk_bundle"
+    ],
     "AetherPrimePriors": [
       "aether_distill_row_count_pos",
       "aether_solver_op_count_eq_six",
@@ -1644,6 +1651,14 @@
       "formula_corpus_tolerable_le_total",
       "formula_corpus_strict_empirical_bundle"
     ],
+    "FractalConstantRecursionPriors": [
+      "const_rec_observable_count_pos",
+      "const_rec_pooled_median_under_five_pct",
+      "const_rec_headline_median_under_five_pct",
+      "const_rec_beats_sota_headlines_pos",
+      "const_rec_families_pos",
+      "const_rec_bundle"
+    ],
     "FsotAggregateUnifiedDbPriors": [
       "fsot_aggregate_unified_db_observable_count_pos",
       "fsot_aggregate_unified_db_median_error_under_five_pct",
@@ -2035,6 +2050,14 @@
       "noaa_coastal_tides_median_error_under_five_pct",
       "noaa_coastal_tides_bundle"
     ],
+    "ObserverChannelDerivationPriors": [
+      "obs_ch_observable_count_pos",
+      "obs_ch_pooled_median_under_five_pct",
+      "obs_ch_headline_median_under_five_pct",
+      "obs_ch_beats_sota_headlines_pos",
+      "obs_ch_quirkmod_derived_pos",
+      "obs_ch_bundle"
+    ],
     "OceanographyGapFillPriors": [
       "oceanography_gap_fill_observable_count_pos",
       "oceanography_gap_fill_pooled_median_under_five_pct",
@@ -2130,10 +2153,25 @@
       "plasma_physics_median_error_under_five_pct",
       "plasma_physics_bundle"
     ],
+    "PortableCloneVerifyPriors": [
+      "clone_vf_observable_count_pos",
+      "clone_vf_pooled_median_under_five_pct",
+      "clone_vf_headline_median_under_five_pct",
+      "clone_vf_beats_sota_headlines_pos",
+      "clone_vf_bundle"
+    ],
     "PredictionRederivationPriors": [
       "prediction_rederivation_observable_count_pos",
       "prediction_rederivation_median_error_under_five_pct",
       "prediction_rederivation_bundle"
+    ],
+    "PreregisteredPredictionsPriors": [
+      "prereg_observable_count_pos",
+      "prereg_pooled_median_under_five_pct",
+      "prereg_headline_median_under_five_pct",
+      "prereg_beats_sota_headlines_pos",
+      "prereg_predictions_pos",
+      "prereg_bundle"
     ],
     "ProgrammingLanguageLawsPriors": [
       "pl_laws_observable_count_pos",
@@ -2412,6 +2450,14 @@
       "thesis_intrinsic_best_rmse_positive",
       "thesis_simulation_components_le_total",
       "thesis_simulation_bundle"
+    ],
+    "ToEGapClosureSpinePriors": [
+      "gap_spine_observable_count_pos",
+      "gap_spine_pooled_median_under_five_pct",
+      "gap_spine_headline_median_under_five_pct",
+      "gap_spine_beats_sota_headlines_pos",
+      "gap_spine_pillars_pos",
+      "gap_spine_bundle"
     ],
     "TokenizationSmokePriors": [
       "tokenization_smoke_observable_count_pos",

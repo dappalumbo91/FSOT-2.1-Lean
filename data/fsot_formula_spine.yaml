@@ -69,3 +69,13 @@ fractal_rules:
     per_maps_to_lean_tag: 1
     per_tier: 0.25
     per_constant_family: 0.5
+
+observer_derivation:
+  method: consciousness_factor_channel_strength
+  formula: "channel = f(D_eff/25, |delta_psi|, consciousness_tag)"
+  quirkmod_threshold: 0.65
+  lean_constants:
+    - consciousness_factor
+    - phase_variance
+    - quirkMod
+  note: "Observer channel derived from spine constants — not boolean observed flag alone"

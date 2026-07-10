@@ -1530,6 +1530,78 @@ extension_domains:
     lean_module: FSOT.Formal.TheoryCompletenessSpinePriors
     note: "ToE completeness rollup — fractal spine + mechanistic coupling + CVE falsification"
 
+  Fractal_Constant_Recursion:
+    tier: 46
+    D_eff: 18
+    delta_psi: 0.92
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, particle]
+    build_script: scripts/build_tier_k_toe_gap_closure_benchmarks.py
+    benchmark_data: data/fractal_constant_recursion_benchmark.json
+    lean_module: FSOT.Formal.FractalConstantRecursionPriors
+    note: "γ/φ/π/e/G constant families — depth-2+ sub-branches to raw_S with Lean morphisms"
+
+  Preregistered_Predictions:
+    tier: 46
+    D_eff: 17
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, particle, biological]
+    build_script: scripts/build_tier_k_toe_gap_closure_benchmarks.py
+    benchmark_data: data/preregistered_predictions_benchmark.json
+    lean_module: FSOT.Formal.PreregisteredPredictionsPriors
+    note: "5 locked predictions discriminating FSOT from ΛCDM/SM baselines"
+
+  Portable_Clone_Verify:
+    tier: 46
+    D_eff: 14
+    delta_psi: 0.75
+    recent_hits: 2
+    observed: false
+    maps_to_lean: [ai, mathematical]
+    build_script: scripts/build_tier_k_toe_gap_closure_benchmarks.py
+    benchmark_data: data/portable_clone_verify_benchmark.json
+    lean_module: FSOT.Formal.PortableCloneVerifyPriors
+    note: "Clone-and-verify without G drive — FSOT_PORTABLE_MODE + vendor/public_data/cache"
+
+  Observer_Channel_Derivation:
+    tier: 46
+    D_eff: 16
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, neural, perceived]
+    build_script: scripts/build_tier_k_toe_gap_closure_benchmarks.py
+    benchmark_data: data/observer_channel_derivation_benchmark.json
+    lean_module: FSOT.Formal.ObserverChannelDerivationPriors
+    note: "quirkMod channel strength derived from D_eff, delta_psi, consciousness_factor spine"
+
+  Adversarial_Fractal_Break_Tests:
+    tier: 46
+    D_eff: 17
+    delta_psi: 0.88
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [ai, biological, medical]
+    build_script: scripts/build_tier_k_toe_gap_closure_benchmarks.py
+    benchmark_data: data/adversarial_fractal_break_benchmark.json
+    lean_module: FSOT.Formal.AdversarialFractalBreakPriors
+    note: "Deliberately broken OSS adversarial corpus stresses fractal attach + hole detection"
+
+  ToE_Gap_Closure_Spine:
+    tier: 46
+    D_eff: 19
+    delta_psi: 0.98
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, particle, consciousness, ai]
+    build_script: scripts/build_tier_k_toe_gap_closure_benchmarks.py
+    benchmark_data: data/toe_gap_closure_spine_benchmark.json
+    lean_module: FSOT.Formal.ToEGapClosureSpinePriors
+    note: "Tier 46 rollup — all five ToE gap pillars certified"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 5.0

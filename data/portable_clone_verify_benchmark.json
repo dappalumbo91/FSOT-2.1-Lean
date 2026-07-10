@@ -1,0 +1,1560 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:19:18.552731+00:00",
+  "domain": "Portable_Clone_Verify",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "external_data_manifest.yaml",
+    "extension_domains_manifest.yaml"
+  ],
+  "maps_to_lean": [
+    "ai",
+    "mathematical"
+  ],
+  "D_eff": 14,
+  "record_count": 166,
+  "observable_count": 166,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "clone_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Machine-specific caches"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_portable_assets_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 166
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "portable_assets",
+      "name": "clone_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 165
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "fsot_compute",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/fsot_compute.py"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "smiles_dataset",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/smiles/FSOT_SMILES_Lab_Dataset.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "evolution_operons",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/evolution/biological_mt_operons.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "linguistics_targets",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/linguistics/data/LINGUISTIC_TARGETS.csv"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "linguistics_derivations",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/linguistics/linguistics_derivations.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "math_generator_comparison",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/math_generator/generated_formula_comparison_report.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "math_generator_rules",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/math_generator/rules"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "trinary_os_oracles",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/trinary_os/target"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "species_catalog",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/species/fsot_species_catalog.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "igem_parts_registry",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/igem/igem_parts_registry.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "math_generator_benchmark_reports",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/math_generator/benchmark_reports"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "trinary_os_isa_registry",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/trinary_os/isa/fsotb_opcode_registry.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "igem_fastas",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/igem/fastas"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "airfoil_dataset",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/math_generator/datasets/airfoil_self_noise.csv"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "trinary_os_fixtures",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/trinary_os/fixtures"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "trinary_os_round_trip",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/trinary_os/round_trip"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "linguistics_derivations_json",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/linguistics/linguistics_derivations.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "tokenization_smoke",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/tokenization"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "trinary_hardware_motif",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/trinary_hardware/motif_influence_profile_stable.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "intrinsic_llm_validators",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/intrinsic_llm/benchmark_results_final.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "biological_cuda_physarum",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/physarum"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "arxiv_primitives_v14",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/arxiv_primitives/v14_run_summary.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "formula_corpus_cnc",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/formula_corpus_cnc"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "binary_decoder_rendlesham",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/binary_decoder/rendlesham_page14_trace.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "certified_agent_qwen",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/certified_agent"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "omni_theory_genesis",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/omni_theory/analysis/genesis/genesis_per_verse_summary.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "formula_corpus_strict_empirical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/formula_corpus/by_domain/strict_empirical.jsonl"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "fsot_aggregate_unified_db",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/fsot_aggregate/FSOT_Mathematical_Database_Unified.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "thesis_waves",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/thesis"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "cosmology_skeleton_database",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/cosmology/database/FSOT_Mathematical_Database_Unified.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "prediction_rederivation_summary",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/fsot_aggregate/prediction_rederivation_summary.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "vl_distill_atlas",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/vl_distill"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "rust_lean_bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/rust_lean_bridge"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "bibliography_corpus",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/bibliography_corpus"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "tier38_public_data",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/public_data"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "tier39_propulsion_electrical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/propulsion_electrical"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "cybersecurity_public_data",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/cybersecurity"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "space_weather_full_arc",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/space_weather_summary_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "evolution_best_organism",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/evolution/best_evolved_organism.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Plasma_Physics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/plasma_physics_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Immunology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/immunology_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Climate_Science",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/climate_observed_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Cosmology_Extended",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/cosmology_extended_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Cosmology_Bubble_Bleed",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/cosmology_bubble_bleed_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Cosmology_Anomalies",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/cosmology_anomalies_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Particle_Physics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/particle_physics_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Higgs_Mass",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/higgs_mass_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Space_Weather",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/space_weather_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Hydrology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/hydrology_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Pharmacology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/pharmacology_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Cryosphere",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/cryosphere_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Seismology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/seismology_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Tectonics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/tectonics_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Geomagnetism",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/geomagnetism_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Planetary_Structure",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/planetary_structure_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Orbital_Mechanics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/orbital_mechanics_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Small_Body_Orbits",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/small_body_orbits_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Magnetosphere",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/magnetosphere_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Grace_Cryosphere",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/grace_cryosphere_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Seismology_Deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/seismology_deep_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Planetary_Atmospheres",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/planetary_atmospheres_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Magnetosphere_Extended",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/magnetosphere_extended_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Geochemistry",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/geochemistry_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Oncology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/oncology_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Neuroimmunology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/neuroimmunology_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Synthetic_Biology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/synthetic_biology_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Quantum_Materials",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/quantum_materials_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Neuron_Multi_Hero",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/multi_hero_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Linguistics_Formal",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/linguistics_formal_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Mathematics_Computational",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/mathematics_computational_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Materials_Engineering",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/materials_engineering_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Computational_Reasoning",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/computational_reasoning_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Math_Generator_Rules_Eval",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/math_generator_rules_eval_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Trinary_OS_Portable",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/trinary_os_portable_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Materials_Species_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/materials_species_bridge_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "IGEM_Synthetic_Biology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/igem_synthetic_biology_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Culinary_Arts",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/culinary_arts_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Pharmacokinetics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/pharmacokinetics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Food_Microbiology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/food_microbiology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Agriculture_Agroecology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/agriculture_agroecology_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Maillard_Chemistry",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/maillard_chemistry_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Econometrics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/econometrics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Sports_Biomechanics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/sports_biomechanics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Architecture_Building_Science",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/architecture_building_science_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Geology_Stratigraphy",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/geology_stratigraphy_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Botany",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/botany_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Zoology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/zoology_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Clinical_Medicine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/clinical_medicine_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Chemical_Engineering",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/chemical_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Environmental_Engineering",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/environmental_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Anthropology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/anthropology_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Math_Generator_Benchmark_Formula_Eval",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/math_generator_benchmark_formula_eval_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Trinary_OS_ISA_Rebuild",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/trinary_os_isa_rebuild_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "IGEM_Live_FASTA_Ingest",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/igem_live_fasta_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Math_Generator_Airfoil_RMSE",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/math_generator_airfoil_rmse_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Trinary_OS_Round_Trip",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/trinary_os_round_trip_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Tokenization_Smoke",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/tokenization_smoke_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Trinary_Hardware_Motif",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/trinary_hardware_motif_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Intrinsic_LLM_Validators",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/intrinsic_llm_validators_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Biological_CUDA_Physarum",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/biological_cuda_physarum_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Arxiv_Primitives_V14",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/arxiv_primitives_v14_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Formula_Corpus_CNC",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/formula_corpus_cnc_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Binary_Decoder_Rendlesham",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/binary_decoder_rendlesham_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Certified_Agent_Qwen",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/certified_agent_qwen_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Omni_Theory_Genesis",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/omni_theory_genesis_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "FSOT_Aggregate_Unified_DB",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fsot_aggregate_unified_db_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Prediction_Rederivation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/prediction_rederivation_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "VL_Distill_Atlas",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/vl_distill_atlas_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Rust_Lean_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/rust_lean_bridge_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Bibliography_Lean_Corpus",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/bibliography_lean_corpus_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "NIST_CODATA_Constants",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/nist_codata_constants_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "GBIF_Species_Occurrence",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/gbif_species_occurrence_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "NOAA_Coastal_Tides",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/noaa_coastal_tides_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "World_Bank_Development",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/world_bank_development_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "NASA_Exoplanet_Archive",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/nasa_exoplanet_archive_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "RCSB_PDB_Structures",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/rcsb_pdb_structures_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "OpenAlex_Citation_Graph",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/openalex_citation_graph_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "PubChem_Compound_Properties",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/pubchem_compound_properties_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "CERN_Open_Data_LHC",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/cern_open_data_lhc_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "UniProt_Protein_Annotations",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/uniprot_protein_annotations_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Space_Propulsion_Systems",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/space_propulsion_systems_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Electrical_Power_Systems",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/electrical_power_systems_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "HVAC_Thermal_Systems",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/hvac_thermal_systems_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Trinary_OS_Tier_E",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/trinary_os_tier_e_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Breakthrough_Discoveries_2024_2026",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/breakthrough_discoveries_2024_2026_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Paleontology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/paleontology_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Marine_Biology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/marine_biology_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Mycology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/mycology_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Entomology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/entomology_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Virology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/virology_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Epidemiology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/epidemiology_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Cardiology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/cardiology_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Civil_Engineering",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/civil_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Mechanical_Engineering",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/mechanical_engineering_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Robotics_Control_Systems",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/robotics_control_systems_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Neuroeconomics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/neuroeconomics_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Paleoclimate",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/paleoclimate_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Speleology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/speleology_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Exogeology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/exogeology_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Pure_Mathematics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/pure_mathematics_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "History",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/history_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Law_Policy",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/law_policy_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Finance_Markets",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/finance_markets_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Supply_Chain_Logistics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/supply_chain_logistics_extension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Domain_Coupling_Simulation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/domain_coupling_simulation_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Formula_Corpus_Closure",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/formula_corpus_closure_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Cryptography_Technology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/cryptography_technology_cybersecurity_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Network_Internet_Protocols",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/network_internet_protocols_cybersecurity_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Malware_Threat_Intelligence",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/malware_threat_intelligence_cybersecurity_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Secure_Software_Engineering",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/secure_software_engineering_cybersecurity_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Code_Genome_Structure",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/code_genome_structure_cybersecurity_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Zero_Day_Risk_Evaluator",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/zero_day_risk_evaluator_cybersecurity_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "External_OSS_Code_Genome",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/external_oss_code_genome_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Programming_Language_Laws",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/programming_language_laws_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Formula_Branching_Fractal",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/formula_branching_fractal_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Mechanistic_Coupling",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/mechanistic_coupling_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "CVE_Codon_Hole_Falsification",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/cve_codon_hole_falsification_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Theory_Completeness_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/theory_completeness_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Fractal_Constant_Recursion",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fractal_constant_recursion_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Preregistered_Predictions",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/preregistered_predictions_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Portable_Clone_Verify",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/portable_clone_verify_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Observer_Channel_Derivation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/observer_channel_derivation_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/adversarial_fractal_break_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "ToE_Gap_Closure_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/toe_gap_closure_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "portable_cache_root_exists",
+      "name": "vendor_public_data_cache",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor\\public_data\\cache"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "g_drive_hardcode_benchmark_count",
+      "name": "no_absolute_external_paths",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/*_benchmark.json scan",
+      "note": "tracked for progressive elimination; clone uses FSOT_PORTABLE_MODE"
+    }
+  ],
+  "bundled_asset_count": 39,
+  "missing_bundled_count": 0,
+  "extension_domain_count": 125,
+  "missing_benchmark_count": 0,
+  "portable_mode_env": "FSOT_PORTABLE_MODE=1",
+  "portable_cache_root": "vendor/public_data/cache",
+  "clone_verify_pass": true,
+  "crosswalk_modules": [
+    "FSOT.Formal.PortableCloneVerifyPriors"
+  ]
+}

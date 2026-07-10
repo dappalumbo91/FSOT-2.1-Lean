@@ -1,0 +1,55 @@
+# Constant-family fractal sub-branches — γ, φ, π, e, G trace to raw_S at depth 2+.
+version: "1.0"
+updated: "2026-07-10"
+
+families:
+  gamma:
+    root_branch: term1.growth_term
+    sub_branches:
+      - growth_term
+      - gamma_euler
+      - alpha
+    morphism: "γ powers in strict-empirical corpus → growth_term channel"
+    lean_hook: FSOT.Formal.Scalar.growth_term
+
+  phi:
+    root_branch: term1.term1_base
+    sub_branches:
+      - phi
+      - perceived_adjust
+      - coherence_efficiency
+    morphism: "φ ratios → term1_base geometric scaling"
+    lean_hook: FSOT.Formal.Scalar.phi
+
+  pi:
+    root_branch: term3.acoustic_bleed
+    sub_branches:
+      - pi
+      - acoustic_bleed
+      - acoustic_inflow
+      - theta_s
+    morphism: "π harmonics → term3 acoustic resonance"
+    lean_hook: FSOT.Formal.Scalar.pi
+
+  e:
+    root_branch: term1.term1_base
+    sub_branches:
+      - e
+      - psi_con
+      - poof_factor
+    morphism: "e exponentials → term1_base decay/growth"
+    lean_hook: FSOT.Formal.Scalar.e
+
+  g_cat:
+    root_branch: term3.chaos_factor
+    sub_branches:
+      - catalan_G
+      - chaos_factor
+      - beta
+    morphism: "G/Catalan constants → term3 chaotic modulation"
+    lean_hook: FSOT.Formal.Scalar.catalan_G
+
+recursion_rules:
+  max_depth: 4
+  depth_increment_per_sub_branch: 0.5
+  attach_to_domain_via: primary_branch

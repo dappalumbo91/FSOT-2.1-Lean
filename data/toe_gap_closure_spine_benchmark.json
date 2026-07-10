@@ -1,0 +1,125 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:19:37.330670+00:00",
+  "domain": "ToE_Gap_Closure_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "tier_k_gap_closure_pillars"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "particle",
+    "consciousness",
+    "ai"
+  ],
+  "D_eff": 19,
+  "record_count": 7,
+  "observable_count": 7,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "closure_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Partial domain theories"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_gap_closure_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 7
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "gap_closure",
+      "name": "closure_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 7
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "toe_gap_closure_spine_lab",
+      "property": "gap_pillar_records",
+      "name": "recursion",
+      "computed": 21.0,
+      "measured": 21.0,
+      "error_pct": 0.0,
+      "source": "Fractal_Constant_Recursion"
+    },
+    {
+      "lab": "toe_gap_closure_spine_lab",
+      "property": "gap_pillar_records",
+      "name": "predictions",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.02009823784840666,
+      "source": "Preregistered_Predictions"
+    },
+    {
+      "lab": "toe_gap_closure_spine_lab",
+      "property": "gap_pillar_records",
+      "name": "portable",
+      "computed": 166.0,
+      "measured": 166.0,
+      "error_pct": 0.0,
+      "source": "Portable_Clone_Verify"
+    },
+    {
+      "lab": "toe_gap_closure_spine_lab",
+      "property": "gap_pillar_records",
+      "name": "observer",
+      "computed": 126.0,
+      "measured": 126.0,
+      "error_pct": 0.052510282019891545,
+      "source": "Observer_Channel_Derivation"
+    },
+    {
+      "lab": "toe_gap_closure_spine_lab",
+      "property": "gap_pillar_records",
+      "name": "adversarial",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.0,
+      "source": "Adversarial_Fractal_Break_Tests"
+    },
+    {
+      "lab": "toe_gap_closure_spine_lab",
+      "property": "preregistration_pass_count",
+      "name": "discriminant_pass",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "source": "preregistered_predictions"
+    },
+    {
+      "lab": "toe_gap_closure_spine_lab",
+      "property": "clone_verify_pass",
+      "name": "portable_clone",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "portable_clone_verify"
+    }
+  ],
+  "pillar_count": 5,
+  "gap_closure_status": "GREEN",
+  "crosswalk_modules": [
+    "FSOT.Formal.ToEGapClosureSpinePriors",
+    "FSOT.Formal.TheoryCompletenessSpinePriors"
+  ]
+}

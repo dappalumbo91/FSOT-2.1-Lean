@@ -1,0 +1,198 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:18:42.480435+00:00",
+  "domain": "Adversarial_Fractal_Break_Tests",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "github_oss_adversarial_manifest.yaml"
+  ],
+  "maps_to_lean": [
+    "ai",
+    "biological",
+    "medical"
+  ],
+  "D_eff": 17,
+  "record_count": 13,
+  "observable_count": 13,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "break_panel": {
+        "sota_typical_error_pct": 35.0,
+        "sota_model": "Heuristic SAST"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_adversarial_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 13
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "adversarial",
+      "name": "break_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 13
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "adversarial_hole_detected",
+      "name": "adv_c_memcpy_chain",
+      "computed": 6.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/github_oss/adversarial/broken_memcpy_chain.c",
+      "expected_holes": true,
+      "match": true
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "fractal_spine_attachment",
+      "name": "adv_c_memcpy_chain__attach",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "formula_branching_fractal",
+      "category": "adversarial_memory_unsafe"
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "adversarial_hole_detected",
+      "name": "adv_c_double_free",
+      "computed": 2.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/github_oss/adversarial/double_free_pattern.c",
+      "expected_holes": true,
+      "match": true
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "fractal_spine_attachment",
+      "name": "adv_c_double_free__attach",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "formula_branching_fractal",
+      "category": "adversarial_memory_unsafe"
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "adversarial_hole_detected",
+      "name": "adv_js_xss_eval",
+      "computed": 2.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/github_oss/adversarial/xss_eval_sink.js",
+      "expected_holes": true,
+      "match": true
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "fractal_spine_attachment",
+      "name": "adv_js_xss_eval__attach",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "formula_branching_fractal",
+      "category": "adversarial_injection"
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "adversarial_hole_detected",
+      "name": "adv_js_prototype_pollution",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/github_oss/adversarial/prototype_pollution.js",
+      "expected_holes": true,
+      "match": true
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "fractal_spine_attachment",
+      "name": "adv_js_prototype_pollution__attach",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "formula_branching_fractal",
+      "category": "adversarial_injection"
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "adversarial_hole_detected",
+      "name": "adv_go_race_unsafe",
+      "computed": 4.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/github_oss/adversarial/race_unsafe.go",
+      "expected_holes": true,
+      "match": true
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "fractal_spine_attachment",
+      "name": "adv_go_race_unsafe__attach",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "formula_branching_fractal",
+      "category": "adversarial_concurrency"
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "adversarial_hole_detected",
+      "name": "adv_secure_control_c",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source": "vendor/cybersecurity/samples/secure_buffer.c",
+      "expected_holes": false,
+      "match": true
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "fractal_spine_attachment",
+      "name": "adv_secure_control_c__attach",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "formula_branching_fractal",
+      "category": "control_secure"
+    },
+    {
+      "lab": "adversarial_fractal_break_lab",
+      "property": "adversarial_detection_rate",
+      "name": "aggregate_adversarial",
+      "computed": 1.000306,
+      "measured": 1.0,
+      "error_pct": 0.03062212293865052,
+      "source": "adversarial_corpus"
+    }
+  ],
+  "adversarial_sample_count": 6,
+  "adversarial_detection_rate": 1.0,
+  "fractal_domain_attachments": 119,
+  "break_test_status": "GREEN",
+  "crosswalk_modules": [
+    "FSOT.Formal.CVECodonHoleFalsificationPriors",
+    "FSOT.Formal.AdversarialFractalBreakPriors"
+  ]
+}

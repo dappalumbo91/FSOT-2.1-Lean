@@ -1,0 +1,68 @@
+# Pre-registered FSOT predictions — locked before independent measurement comparison.
+version: "1.0"
+registered_at: "2026-07-10"
+notes: >
+  Each prediction states FSOT value, ΛCDM/SM baseline, and discriminant threshold.
+  Registration timestamp is authoritative; post-hoc tuning invalidates prereg status.
+
+predictions:
+  - id: PRED-001
+    name: H0_bridge_scalar
+    domain: Cosmology
+    fsot_formula_branch: term1.perceived_adjust
+    fsot_predicted: 70.75
+    unit: "km/s/Mpc"
+    sota_baseline: 67.36
+    sota_label: "Planck2018 ΛCDM"
+    alternate_sota: 73.04
+    alternate_label: "SH0ES 2024"
+    discriminant: "strictly_between_planck_and_sh0es"
+    registered_at: "2026-07-10"
+
+  - id: PRED-002
+    name: S8_effective_lensing
+    domain: Cosmology
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 0.805
+    unit: S8
+    sota_baseline: 0.834
+    sota_label: "Planck2018"
+    alternate_sota: 0.776
+    alternate_label: "DES Y3"
+    discriminant: "between_planck_and_des"
+    registered_at: "2026-07-10"
+
+  - id: PRED-003
+    name: adversarial_codon_hole_rate
+    domain: Code_Genome_Structure
+    fsot_formula_branch: term1.quirkMod
+    fsot_predicted: 0.85
+    unit: fraction
+    sota_baseline: 0.35
+    sota_label: "Semgrep heuristic hit rate"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-004
+    name: muon_g2_excess_direction
+    domain: Particle_Physics
+    fsot_formula_branch: term3.chaos_factor
+    fsot_predicted: 2.49e-9
+    unit: "delta_a_mu"
+    sota_baseline: 0.0
+    sota_label: "SM_only"
+    alternate_sota: 2.5e-9
+    alternate_label: "Fermilab 2021"
+    discriminant: "same_sign_as_fermilab"
+    registered_at: "2026-07-10"
+
+  - id: PRED-005
+    name: lithium_problem_factor_bridge
+    domain: Cosmology
+    fsot_formula_branch: term3.poof_factor
+    fsot_predicted: 2.85
+    unit: underproduction_factor
+    sota_baseline: 3.0
+    sota_label: "BBN theory gap"
+    discriminant: "within_10pct_of_observed_gap"
+    registered_at: "2026-07-10"

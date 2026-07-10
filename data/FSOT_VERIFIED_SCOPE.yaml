@@ -1,4 +1,4 @@
-generated_at: '2026-07-10T14:15:29.289205+00:00'
+generated_at: '2026-07-10T14:19:50.241544+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 189
+  lean_formal_modules: 195
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
-  tiers_complete: 43
-  tiers_total: 43
+  tiers_complete: 44
+  tiers_total: 44
   percent_complete: 100.0
-current_tier: Tier 45 ToE completeness — formula branching fractal DAG, mechanistic
-  coupling, CISA KEV codon-hole falsification
+current_tier: Tier 46 ToE gap closure — constant fractal recursion, preregistered
+  predictions, portable clone-verify, observer derive, adversarial break tests
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -438,6 +438,7 @@ tier_coverage:
   name: Lab ingest (SMILES, NeuroLab, cosmology, …)
   status: complete
   artifacts:
+  - AdversarialFractalBreakPriors
   - AetherPrimePriors
   - AgricultureAgroecologyGapFillPriors
   - AnthropologyExtensionPriors
@@ -503,6 +504,7 @@ tier_coverage:
   - FormulaCorpusClosurePriors
   - FormulaCorpusCncPriors
   - FormulaCorpusPriors
+  - FractalConstantRecursionPriors
   - FsotAggregateUnifiedDbPriors
   - FuelPriors
   - GbifSpeciesOccurrencePriors
@@ -554,6 +556,7 @@ tier_coverage:
   - NeuronMultiHeroPriors
   - NistCodataConstantsPriors
   - NoaaCoastalTidesPriors
+  - ObserverChannelDerivationPriors
   - OceanographyGapFillPriors
   - OmniTheoryGenesisPriors
   - OncologyPriors
@@ -569,7 +572,9 @@ tier_coverage:
   - PlanetaryAtmospheresPriors
   - PlanetaryStructurePriors
   - PlasmaPhysicsPriors
+  - PortableCloneVerifyPriors
   - PredictionRederivationPriors
+  - PreregisteredPredictionsPriors
   - ProgrammingLanguageLawsPriors
   - ProteinPriors
   - PsychologyGapFillPriors
@@ -600,6 +605,7 @@ tier_coverage:
   - TectonicsPriors
   - TheoryCompletenessSpinePriors
   - ThesisSimulationPriors
+  - ToEGapClosureSpinePriors
   - TokenizationSmokePriors
   - TrinaryFluidPriors
   - TrinaryHardwareMotifPriors
@@ -1282,8 +1288,8 @@ tier_coverage:
     weather split
   status: complete
   metrics:
-    coupling_node_count: 155
-    coupling_edge_count: 3555
+    coupling_node_count: 161
+    coupling_edge_count: 3981
     coupling_pooled_median_error_pct: 0.0
     formula_closure_records: 123
     formula_closure_strict_empirical: 7941
@@ -1313,7 +1319,7 @@ tier_coverage:
     tier_h_depth_code_genome_records: 205
     zero_day_risk_tier: RED
     zero_day_hole_count: 82
-    coupling_node_count: 155
+    coupling_node_count: 161
     external_cache_root: G:/FSOT-PublicData/cybersecurity
   artifacts:
   - scripts/ingest_cybersecurity_public_data.py
@@ -1340,7 +1346,7 @@ tier_coverage:
     linguistics_bridge_count: 25
     code_genome_bridge_count: 13
     oss_refresh_cadence_days: 7
-    coupling_node_count: 155
+    coupling_node_count: 161
     external_cache_root: G:/FSOT-PublicData/github_oss
   artifacts:
   - scripts/ingest_github_oss_code_genome.py
@@ -1368,7 +1374,7 @@ tier_coverage:
     kev_falsification_records: 1635
     cwe_codon_overlap_rate: 0.5
     theory_completeness_status: GREEN
-    coupling_node_count: 155
+    coupling_node_count: 161
   artifacts:
   - data/fsot_formula_spine.yaml
   - data/mechanistic_coupling_manifest.yaml
@@ -1378,6 +1384,31 @@ tier_coverage:
   - FSOT.Formal.MechanisticCouplingPriors
   - FSOT.Formal.CVECodonHoleFalsificationPriors
   - FSOT.Formal.TheoryCompletenessSpinePriors
+- tier: 46
+  name: Tier 46 — ToE gap closure (fractal recursion, prereg predictions, portable
+    clone, observer derive, adversarial)
+  status: complete
+  metrics:
+    constant_family_count: 5
+    preregistered_prediction_count: 5
+    discriminant_pass_count: 5
+    clone_verify_pass: true
+    quirkmod_derived_count: 67
+    adversarial_detection_rate: 1.0
+    gap_closure_status: GREEN
+    coupling_node_count: 161
+  artifacts:
+  - data/fractal_constant_recursion.yaml
+  - data/preregistered_predictions_manifest.yaml
+  - data/github_oss_adversarial_manifest.yaml
+  - scripts/tier_k_toe_gap_closure_lib.py
+  - scripts/build_tier_k_toe_gap_closure_benchmarks.py
+  - FSOT.Formal.FractalConstantRecursionPriors
+  - FSOT.Formal.PreregisteredPredictionsPriors
+  - FSOT.Formal.PortableCloneVerifyPriors
+  - FSOT.Formal.ObserverChannelDerivationPriors
+  - FSOT.Formal.AdversarialFractalBreakPriors
+  - FSOT.Formal.ToEGapClosureSpinePriors
 extension_domains:
 - domain: Plasma_Physics
   tier: 12
@@ -2069,6 +2100,30 @@ extension_domains:
   tier: 45
   record_count: 6
   lean_module: FSOT.Formal.TheoryCompletenessSpinePriors
+- domain: Fractal_Constant_Recursion
+  tier: 46
+  record_count: 21
+  lean_module: FSOT.Formal.FractalConstantRecursionPriors
+- domain: Preregistered_Predictions
+  tier: 46
+  record_count: 5
+  lean_module: FSOT.Formal.PreregisteredPredictionsPriors
+- domain: Portable_Clone_Verify
+  tier: 46
+  record_count: 166
+  lean_module: FSOT.Formal.PortableCloneVerifyPriors
+- domain: Observer_Channel_Derivation
+  tier: 46
+  record_count: 126
+  lean_module: FSOT.Formal.ObserverChannelDerivationPriors
+- domain: Adversarial_Fractal_Break_Tests
+  tier: 46
+  record_count: 13
+  lean_module: FSOT.Formal.AdversarialFractalBreakPriors
+- domain: ToE_Gap_Closure_Spine
+  tier: 46
+  record_count: 7
+  lean_module: FSOT.Formal.ToEGapClosureSpinePriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -2765,6 +2820,7 @@ theory_crosswalk:
     - particle_physics_lab
     lean_module: FSOT.Formal.BreakthroughDiscoveries20242026Priors
 lean_formal_modules:
+- AdversarialFractalBreakPriors
 - AetherPrimePriors
 - AgricultureAgroecologyGapFillPriors
 - AnthropologyExtensionPriors
@@ -2830,6 +2886,7 @@ lean_formal_modules:
 - FormulaCorpusClosurePriors
 - FormulaCorpusCncPriors
 - FormulaCorpusPriors
+- FractalConstantRecursionPriors
 - FsotAggregateUnifiedDbPriors
 - FuelPriors
 - GbifSpeciesOccurrencePriors
@@ -2881,6 +2938,7 @@ lean_formal_modules:
 - NeuronMultiHeroPriors
 - NistCodataConstantsPriors
 - NoaaCoastalTidesPriors
+- ObserverChannelDerivationPriors
 - OceanographyGapFillPriors
 - OmniTheoryGenesisPriors
 - OncologyPriors
@@ -2895,7 +2953,9 @@ lean_formal_modules:
 - PlanetaryAtmospheresPriors
 - PlanetaryStructurePriors
 - PlasmaPhysicsPriors
+- PortableCloneVerifyPriors
 - PredictionRederivationPriors
+- PreregisteredPredictionsPriors
 - ProgrammingLanguageLawsPriors
 - ProteinPriors
 - PsychologyGapFillPriors
@@ -2926,6 +2986,7 @@ lean_formal_modules:
 - TectonicsPriors
 - TheoryCompletenessSpinePriors
 - ThesisSimulationPriors
+- ToEGapClosureSpinePriors
 - TokenizationSmokePriors
 - TrinaryFluidPriors
 - TrinaryHardwareMotifPriors

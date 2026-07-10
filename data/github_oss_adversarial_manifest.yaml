@@ -1,0 +1,40 @@
+# Adversarial OSS samples — deliberately broken code to stress fractal attach + hole detection.
+version: "1.0"
+updated: "2026-07-10"
+
+samples:
+  - id: adv_c_memcpy_chain
+    path: vendor/github_oss/adversarial/broken_memcpy_chain.c
+    language: C
+    category: adversarial_memory_unsafe
+    expected_holes: true
+
+  - id: adv_c_double_free
+    path: vendor/github_oss/adversarial/double_free_pattern.c
+    language: C
+    category: adversarial_memory_unsafe
+    expected_holes: true
+
+  - id: adv_js_xss_eval
+    path: vendor/github_oss/adversarial/xss_eval_sink.js
+    language: JavaScript
+    category: adversarial_injection
+    expected_holes: true
+
+  - id: adv_js_prototype_pollution
+    path: vendor/github_oss/adversarial/prototype_pollution.js
+    language: JavaScript
+    category: adversarial_injection
+    expected_holes: true
+
+  - id: adv_go_race_unsafe
+    path: vendor/github_oss/adversarial/race_unsafe.go
+    language: Go
+    category: adversarial_concurrency
+    expected_holes: true
+
+  - id: adv_secure_control_c
+    path: vendor/cybersecurity/samples/secure_buffer.c
+    language: C
+    category: control_secure
+    expected_holes: false

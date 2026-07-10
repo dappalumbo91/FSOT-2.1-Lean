@@ -1,0 +1,1885 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:18:42.468588+00:00",
+  "domain": "Observer_Channel_Derivation",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "fsot_formula_spine.yaml",
+    "extension_domains_manifest.yaml"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "neural",
+    "perceived"
+  ],
+  "D_eff": 16,
+  "record_count": 126,
+  "observable_count": 126,
+  "median_error_pct": 0.052510282019891545,
+  "pooled_median_error_pct": 0.052510282019891545,
+  "headline_median_error_pct": 0.052510282019891545,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "observer_panel": {
+        "sota_typical_error_pct": 6.0,
+        "sota_model": "Boolean observed flags"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_observer_derive_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.05251,
+      "measured": 0.0,
+      "error_pct": 0.052510282019891545,
+      "observable_count": 126
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "observer_derive",
+      "name": "observer_panel",
+      "computed": 0.05251,
+      "measured": 0.0,
+      "error_pct": 0.052510282019891545,
+      "observable_count": 126
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Plasma_Physics",
+      "computed": 0.631999,
+      "measured": 0.631667,
+      "error_pct": 0.05251028201989586,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "energy",
+        "fusion",
+        "plasma"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Immunology",
+      "computed": 0.555291,
+      "measured": 0.555,
+      "error_pct": 0.052510282019897034,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Climate_Science",
+      "computed": 0.635333,
+      "measured": 0.635,
+      "error_pct": 0.052510282019885064,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "energy",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Cosmology_Extended",
+      "computed": 0.753729,
+      "measured": 0.753333,
+      "error_pct": 0.05251028201988912,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "astronomical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Cosmology_Bubble_Bleed",
+      "computed": 0.76707,
+      "measured": 0.766667,
+      "error_pct": 0.0525102820198902,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "blackhole",
+        "cmb"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Cosmology_Anomalies",
+      "computed": 0.76707,
+      "measured": 0.766667,
+      "error_pct": 0.0525102820198902,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "cmb",
+        "blackhole"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Particle_Physics",
+      "computed": 0.677022,
+      "measured": 0.676667,
+      "error_pct": 0.052510282019893724,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "higgs",
+        "nuclear"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Higgs_Mass",
+      "computed": 0.6987,
+      "measured": 0.698333,
+      "error_pct": 0.05251028201988405,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "higgs"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Space_Weather",
+      "computed": 0.626996,
+      "measured": 0.626667,
+      "error_pct": 0.052510282019892184,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "plasma"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Hydrology",
+      "computed": 0.630331,
+      "measured": 0.63,
+      "error_pct": 0.05251028201989894,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "energy",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Pharmacology",
+      "computed": 0.61032,
+      "measured": 0.61,
+      "error_pct": 0.05251028201988391,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "chemical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Cryosphere",
+      "computed": 0.633666,
+      "measured": 0.633333,
+      "error_pct": 0.05251028201988809,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "energy",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Seismology",
+      "computed": 0.730383,
+      "measured": 0.73,
+      "error_pct": 0.05251028201988566,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Tectonics",
+      "computed": 0.667017,
+      "measured": 0.666667,
+      "error_pct": 0.05251028201988678,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Geomagnetism",
+      "computed": 0.588642,
+      "measured": 0.588333,
+      "error_pct": 0.05251028201988995,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "electron",
+        "fusion"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Planetary_Structure",
+      "computed": 0.643671,
+      "measured": 0.643333,
+      "error_pct": 0.052510282019895375,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "galactic",
+        "astronomical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Orbital_Mechanics",
+      "computed": 0.680357,
+      "measured": 0.68,
+      "error_pct": 0.05251028201988364,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Small_Body_Orbits",
+      "computed": 0.67202,
+      "measured": 0.671667,
+      "error_pct": 0.052510282019890275,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Magnetosphere",
+      "computed": 0.606986,
+      "measured": 0.606667,
+      "error_pct": 0.05251028201989515,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "electron",
+        "fusion"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Grace_Cryosphere",
+      "computed": 0.637001,
+      "measured": 0.636667,
+      "error_pct": 0.05251028201989949,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "galactic",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Seismology_Deep",
+      "computed": 0.697033,
+      "measured": 0.696667,
+      "error_pct": 0.052510282019891094,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Planetary_Atmospheres",
+      "computed": 0.647007,
+      "measured": 0.646667,
+      "error_pct": 0.0525102820198894,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "galactic",
+        "astronomical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Magnetosphere_Extended",
+      "computed": 0.615323,
+      "measured": 0.615,
+      "error_pct": 0.05251028201988776,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "electron",
+        "fusion",
+        "plasma"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Geochemistry",
+      "computed": 0.620326,
+      "measured": 0.62,
+      "error_pct": 0.052510282019891545,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "chemical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Oncology",
+      "computed": 0.60365,
+      "measured": 0.603333,
+      "error_pct": 0.05251028201988316,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Neuroimmunology",
+      "computed": 0.606986,
+      "measured": 0.606667,
+      "error_pct": 0.05251028201989515,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Synthetic_Biology",
+      "computed": 0.598647,
+      "measured": 0.598333,
+      "error_pct": 0.052510282019897755,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Quantum_Materials",
+      "computed": 0.626996,
+      "measured": 0.626667,
+      "error_pct": 0.052510282019892184,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "material",
+        "quantum"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Neuron_Multi_Hero",
+      "computed": 0.61032,
+      "measured": 0.61,
+      "error_pct": 0.05251028201988391,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Linguistics_Formal",
+      "computed": 0.762067,
+      "measured": 0.761667,
+      "error_pct": 0.05251028201988713,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Mathematics_Computational",
+      "computed": 0.645339,
+      "measured": 0.645,
+      "error_pct": 0.05251028201989238,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "particle",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Materials_Engineering",
+      "computed": 0.598647,
+      "measured": 0.598333,
+      "error_pct": 0.052510282019897755,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Computational_Reasoning",
+      "computed": 0.803755,
+      "measured": 0.803333,
+      "error_pct": 0.0525102820198906,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Math_Generator_Rules_Eval",
+      "computed": 0.845444,
+      "measured": 0.845,
+      "error_pct": 0.05251028201989727,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "mathematical",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Trinary_OS_Portable",
+      "computed": 0.803755,
+      "measured": 0.803333,
+      "error_pct": 0.0525102820198906,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Materials_Species_Bridge",
+      "computed": 0.598647,
+      "measured": 0.598333,
+      "error_pct": 0.052510282019897755,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "IGEM_Synthetic_Biology",
+      "computed": 0.598647,
+      "measured": 0.598333,
+      "error_pct": 0.052510282019897755,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Culinary_Arts",
+      "computed": 0.616991,
+      "measured": 0.616667,
+      "error_pct": 0.05251028201988465,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "material",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Pharmacokinetics",
+      "computed": 0.598647,
+      "measured": 0.598333,
+      "error_pct": 0.052510282019897755,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Food_Microbiology",
+      "computed": 0.606986,
+      "measured": 0.606667,
+      "error_pct": 0.05251028201989515,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Agriculture_Agroecology",
+      "computed": 0.635333,
+      "measured": 0.635,
+      "error_pct": 0.052510282019885064,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Maillard_Chemistry",
+      "computed": 0.616991,
+      "measured": 0.616667,
+      "error_pct": 0.05251028201988465,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "energy",
+        "medical",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Econometrics",
+      "computed": 0.857117,
+      "measured": 0.856667,
+      "error_pct": 0.052510282019887417,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Sports_Biomechanics",
+      "computed": 0.598647,
+      "measured": 0.598333,
+      "error_pct": 0.052510282019897755,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Architecture_Building_Science",
+      "computed": 0.635333,
+      "measured": 0.635,
+      "error_pct": 0.052510282019885064,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "energy",
+        "material",
+        "acoustical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Geology_Stratigraphy",
+      "computed": 0.680357,
+      "measured": 0.68,
+      "error_pct": 0.05251028201988364,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Botany",
+      "computed": 0.606986,
+      "measured": 0.606667,
+      "error_pct": 0.05251028201989515,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Zoology",
+      "computed": 0.606986,
+      "measured": 0.606667,
+      "error_pct": 0.05251028201989515,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Clinical_Medicine",
+      "computed": 0.620326,
+      "measured": 0.62,
+      "error_pct": 0.052510282019891545,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Chemical_Engineering",
+      "computed": 0.635333,
+      "measured": 0.635,
+      "error_pct": 0.052510282019885064,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "chemical",
+        "electron",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Environmental_Engineering",
+      "computed": 0.650341,
+      "measured": 0.65,
+      "error_pct": 0.05251028201989595,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy",
+        "biological",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Anthropology",
+      "computed": 0.837106,
+      "measured": 0.836667,
+      "error_pct": 0.05251028201988946,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Math_Generator_Benchmark_Formula_Eval",
+      "computed": 0.845444,
+      "measured": 0.845,
+      "error_pct": 0.05251028201989727,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "mathematical",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Trinary_OS_ISA_Rebuild",
+      "computed": 0.803755,
+      "measured": 0.803333,
+      "error_pct": 0.0525102820198906,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "IGEM_Live_FASTA_Ingest",
+      "computed": 0.598647,
+      "measured": 0.598333,
+      "error_pct": 0.052510282019897755,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Math_Generator_Airfoil_RMSE",
+      "computed": 0.845444,
+      "measured": 0.845,
+      "error_pct": 0.05251028201989727,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "mathematical",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Trinary_OS_Round_Trip",
+      "computed": 0.803755,
+      "measured": 0.803333,
+      "error_pct": 0.0525102820198906,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Tokenization_Smoke",
+      "computed": 0.795417,
+      "measured": 0.795,
+      "error_pct": 0.05251028201989627,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Trinary_Hardware_Motif",
+      "computed": 0.803755,
+      "measured": 0.803333,
+      "error_pct": 0.0525102820198906,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Intrinsic_LLM_Validators",
+      "computed": 0.795417,
+      "measured": 0.795,
+      "error_pct": 0.05251028201989627,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Biological_CUDA_Physarum",
+      "computed": 0.720378,
+      "measured": 0.72,
+      "error_pct": 0.052510282019894536,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Arxiv_Primitives_V14",
+      "computed": 0.803755,
+      "measured": 0.803333,
+      "error_pct": 0.0525102820198906,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Formula_Corpus_CNC",
+      "computed": 0.845444,
+      "measured": 0.845,
+      "error_pct": 0.05251028201989727,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "mathematical",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Binary_Decoder_Rendlesham",
+      "computed": 0.803755,
+      "measured": 0.803333,
+      "error_pct": 0.0525102820198906,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Certified_Agent_Qwen",
+      "computed": 0.795417,
+      "measured": 0.795,
+      "error_pct": 0.05251028201989627,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Omni_Theory_Genesis",
+      "computed": 0.883797,
+      "measured": 0.883333,
+      "error_pct": 0.052510282019895146,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "FSOT_Aggregate_Unified_DB",
+      "computed": 0.645339,
+      "measured": 0.645,
+      "error_pct": 0.05251028201989238,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "particle",
+        "mathematical",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Prediction_Rederivation",
+      "computed": 0.598647,
+      "measured": 0.598333,
+      "error_pct": 0.052510282019897755,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "VL_Distill_Atlas",
+      "computed": 0.795417,
+      "measured": 0.795,
+      "error_pct": 0.05251028201989627,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Rust_Lean_Bridge",
+      "computed": 0.747059,
+      "measured": 0.746667,
+      "error_pct": 0.052510282019892565,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Bibliography_Lean_Corpus",
+      "computed": 0.563629,
+      "measured": 0.563333,
+      "error_pct": 0.052510282019888936,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "particle",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "NIST_CODATA_Constants",
+      "computed": 0.586975,
+      "measured": 0.586667,
+      "error_pct": 0.05251028201989833,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "particle",
+        "atomic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "GBIF_Species_Occurrence",
+      "computed": 0.533613,
+      "measured": 0.533333,
+      "error_pct": 0.05251028201988341,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "NOAA_Coastal_Tides",
+      "computed": 0.637001,
+      "measured": 0.636667,
+      "error_pct": 0.05251028201989949,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "energy",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "World_Bank_Development",
+      "computed": 0.950499,
+      "measured": 0.95,
+      "error_pct": 0.05251028201988966,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "economic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "NASA_Exoplanet_Archive",
+      "computed": 0.727049,
+      "measured": 0.726667,
+      "error_pct": 0.052510282019895056,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "RCSB_PDB_Structures",
+      "computed": 0.496928,
+      "measured": 0.496667,
+      "error_pct": 0.05251028201989343,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "OpenAlex_Citation_Graph",
+      "computed": 0.930488,
+      "measured": 0.93,
+      "error_pct": 0.052510282019891545,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "PubChem_Compound_Properties",
+      "computed": 0.513603,
+      "measured": 0.513333,
+      "error_pct": 0.052510282019886584,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.term1_base",
+      "maps_to_lean": [
+        "electron",
+        "chemical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "CERN_Open_Data_LHC",
+      "computed": 0.740389,
+      "measured": 0.74,
+      "error_pct": 0.05251028201989203,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "high_energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "UniProt_Protein_Annotations",
+      "computed": 0.478584,
+      "measured": 0.478333,
+      "error_pct": 0.05251028201988697,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.term1_base",
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Space_Propulsion_Systems",
+      "computed": 0.62366,
+      "measured": 0.623333,
+      "error_pct": 0.05251028201989838,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "astronomical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Electrical_Power_Systems",
+      "computed": 0.506933,
+      "measured": 0.506667,
+      "error_pct": 0.052510282019891635,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "electron",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "HVAC_Thermal_Systems",
+      "computed": 0.580305,
+      "measured": 0.58,
+      "error_pct": 0.05251028201989773,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "energy",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Trinary_OS_Tier_E",
+      "computed": 0.803755,
+      "measured": 0.803333,
+      "error_pct": 0.0525102820198906,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Breakthrough_Discoveries_2024_2026",
+      "computed": 0.770404,
+      "measured": 0.77,
+      "error_pct": 0.05251028201989573,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "astronomical",
+        "cosmological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Paleontology",
+      "computed": 0.680357,
+      "measured": 0.68,
+      "error_pct": 0.05251028201988364,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy",
+        "galactic",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Marine_Biology",
+      "computed": 0.625328,
+      "measured": 0.625,
+      "error_pct": 0.05251028201989528,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "ecological",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Mycology",
+      "computed": 0.606986,
+      "measured": 0.606667,
+      "error_pct": 0.05251028201989515,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Entomology",
+      "computed": 0.606986,
+      "measured": 0.606667,
+      "error_pct": 0.05251028201989515,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "ecological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Virology",
+      "computed": 0.60365,
+      "measured": 0.603333,
+      "error_pct": 0.05251028201988316,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Epidemiology",
+      "computed": 0.620326,
+      "measured": 0.62,
+      "error_pct": 0.052510282019891545,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Cardiology",
+      "computed": 0.620326,
+      "measured": 0.62,
+      "error_pct": 0.052510282019891545,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Civil_Engineering",
+      "computed": 0.635333,
+      "measured": 0.635,
+      "error_pct": 0.052510282019885064,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "material",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Mechanical_Engineering",
+      "computed": 0.635333,
+      "measured": 0.635,
+      "error_pct": 0.052510282019885064,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "material",
+        "energy",
+        "electron"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Robotics_Control_Systems",
+      "computed": 0.823765,
+      "measured": 0.823333,
+      "error_pct": 0.05251028201988846,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Neuroeconomics",
+      "computed": 0.827101,
+      "measured": 0.826667,
+      "error_pct": 0.05251028201989723,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Paleoclimate",
+      "computed": 0.650341,
+      "measured": 0.65,
+      "error_pct": 0.05251028201989595,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy",
+        "galactic",
+        "ecological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Speleology",
+      "computed": 0.635333,
+      "measured": 0.635,
+      "error_pct": 0.052510282019885064,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "energy",
+        "galactic",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Exogeology",
+      "computed": 0.717043,
+      "measured": 0.716667,
+      "error_pct": 0.052510282019888596,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Pure_Mathematics",
+      "computed": 0.855449,
+      "measured": 0.855,
+      "error_pct": 0.05251028201988966,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "History",
+      "computed": 0.808757,
+      "measured": 0.808333,
+      "error_pct": 0.05251028201989349,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Law_Policy",
+      "computed": 0.837106,
+      "measured": 0.836667,
+      "error_pct": 0.05251028201988946,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "economic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Finance_Markets",
+      "computed": 0.865454,
+      "measured": 0.865,
+      "error_pct": 0.05251028201989507,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "economic",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Supply_Chain_Logistics",
+      "computed": 0.855449,
+      "measured": 0.855,
+      "error_pct": 0.05251028201988966,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "economic",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Domain_Coupling_Simulation",
+      "computed": 0.878794,
+      "measured": 0.878333,
+      "error_pct": 0.052510282019892524,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "energy",
+        "electron",
+        "fusion"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Formula_Corpus_Closure",
+      "computed": 0.670352,
+      "measured": 0.67,
+      "error_pct": 0.05251028201989315,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "mathematical",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Cryptography_Technology",
+      "computed": 0.657012,
+      "measured": 0.656667,
+      "error_pct": 0.05251028201989652,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "mathematical",
+        "ai"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Network_Internet_Protocols",
+      "computed": 0.837106,
+      "measured": 0.836667,
+      "error_pct": 0.05251028201988946,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "electron"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Malware_Threat_Intelligence",
+      "computed": 0.642004,
+      "measured": 0.641667,
+      "error_pct": 0.05251028201988576,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "medical",
+        "biological",
+        "ai"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Secure_Software_Engineering",
+      "computed": 0.823765,
+      "measured": 0.823333,
+      "error_pct": 0.05251028201988846,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Code_Genome_Structure",
+      "computed": 0.673687,
+      "measured": 0.673333,
+      "error_pct": 0.05251028201988298,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "ai"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Zero_Day_Risk_Evaluator",
+      "computed": 0.888799,
+      "measured": 0.888333,
+      "error_pct": 0.052510282019885245,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "ai",
+        "medical",
+        "particle",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "External_OSS_Code_Genome",
+      "computed": 0.860452,
+      "measured": 0.86,
+      "error_pct": 0.05251028201989238,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "ai",
+        "biological",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Programming_Language_Laws",
+      "computed": 0.847112,
+      "measured": 0.846667,
+      "error_pct": 0.05251028201989498,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "ai",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Formula_Branching_Fractal",
+      "computed": 0.888799,
+      "measured": 0.888333,
+      "error_pct": 0.052510282019885245,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Mechanistic_Coupling",
+      "computed": 0.870457,
+      "measured": 0.87,
+      "error_pct": 0.05251028201988497,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "energy",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "CVE_Codon_Hole_Falsification",
+      "computed": 0.667017,
+      "measured": 0.666667,
+      "error_pct": 0.05251028201988678,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "medical",
+        "ai",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Theory_Completeness_Spine",
+      "computed": 0.903807,
+      "measured": 0.903333,
+      "error_pct": 0.052510282019893086,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Fractal_Constant_Recursion",
+      "computed": 0.683692,
+      "measured": 0.683333,
+      "error_pct": 0.05251028201988992,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Preregistered_Predictions",
+      "computed": 0.670352,
+      "measured": 0.67,
+      "error_pct": 0.05251028201989315,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "biological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Portable_Clone_Verify",
+      "computed": 0.615323,
+      "measured": 0.615,
+      "error_pct": 0.05251028201988776,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "ai",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Observer_Channel_Derivation",
+      "computed": 0.877127,
+      "measured": 0.876667,
+      "error_pct": 0.05251028201988547,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "perceived"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "computed": 0.667017,
+      "measured": 0.666667,
+      "error_pct": 0.05251028201988678,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "ai",
+        "biological",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "ToE_Gap_Closure_Spine",
+      "computed": 0.903807,
+      "measured": 0.903333,
+      "error_pct": 0.052510282019893086,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness",
+        "ai"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "consciousness_factor_spine",
+      "name": "consciousness_factor",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "FSOT.Formal.Scalar.consciousness_factor"
+    }
+  ],
+  "domain_count": 125,
+  "quirkmod_derived_count": 67,
+  "derivation_method": "consciousness_factor_channel_strength",
+  "crosswalk_modules": [
+    "FSOT.Formal.TheoryCompletenessSpinePriors",
+    "FSOT.Formal.ObserverChannelDerivationPriors"
+  ]
+}

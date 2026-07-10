@@ -1,0 +1,289 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T14:18:41.987146+00:00",
+  "domain": "Fractal_Constant_Recursion",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "fractal_constant_recursion.yaml",
+    "strict_empirical.jsonl"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "particle"
+  ],
+  "D_eff": 18,
+  "record_count": 21,
+  "observable_count": 21,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "recursion_panel": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "Flat constant tables"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_constant_recursion_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 21
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "constant_recursion",
+      "name": "recursion_panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 21
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "constant_family_corpus_count",
+      "name": "gamma",
+      "computed": 717.204434,
+      "measured": 717.0,
+      "error_pct": 0.028512403203740874,
+      "source": "strict_empirical.jsonl",
+      "root_branch": "term1.growth_term",
+      "recursion_depth": 2.5,
+      "lean_hook": "FSOT.Formal.Scalar.growth_term"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "gamma__growth_term",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "\u03b3 powers in strict-empirical corpus \u2192 growth_term channel"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "gamma__gamma_euler",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "\u03b3 powers in strict-empirical corpus \u2192 growth_term channel"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "gamma__alpha",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "\u03b3 powers in strict-empirical corpus \u2192 growth_term channel"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "constant_family_corpus_count",
+      "name": "phi",
+      "computed": 3279.934922,
+      "measured": 3279.0,
+      "error_pct": 0.028512403203745824,
+      "source": "strict_empirical.jsonl",
+      "root_branch": "term1.term1_base",
+      "recursion_depth": 2.5,
+      "lean_hook": "FSOT.Formal.Scalar.phi"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "phi__phi",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "\u03c6 ratios \u2192 term1_base geometric scaling"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "phi__perceived_adjust",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "\u03c6 ratios \u2192 term1_base geometric scaling"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "phi__coherence_efficiency",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "\u03c6 ratios \u2192 term1_base geometric scaling"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "constant_family_corpus_count",
+      "name": "pi",
+      "computed": 2893.824864,
+      "measured": 2893.0,
+      "error_pct": 0.02851240320373812,
+      "source": "strict_empirical.jsonl",
+      "root_branch": "term3.acoustic_bleed",
+      "recursion_depth": 3.0,
+      "lean_hook": "FSOT.Formal.Scalar.pi"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "pi__pi",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "pi__acoustic_bleed",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "pi__acoustic_inflow",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "pi__theta_s",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "\u03c0 harmonics \u2192 term3 acoustic resonance"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "constant_family_corpus_count",
+      "name": "e",
+      "computed": 1365.389194,
+      "measured": 1365.0,
+      "error_pct": 0.028512403203741675,
+      "source": "strict_empirical.jsonl",
+      "root_branch": "term1.term1_base",
+      "recursion_depth": 2.5,
+      "lean_hook": "FSOT.Formal.Scalar.e"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "e__e",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "e exponentials \u2192 term1_base decay/growth"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "e__psi_con",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "e exponentials \u2192 term1_base decay/growth"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "e__poof_factor",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "e exponentials \u2192 term1_base decay/growth"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "constant_family_corpus_count",
+      "name": "g_cat",
+      "computed": 765.21812,
+      "measured": 765.0,
+      "error_pct": 0.02851240320373988,
+      "source": "strict_empirical.jsonl",
+      "root_branch": "term3.chaos_factor",
+      "recursion_depth": 2.5,
+      "lean_hook": "FSOT.Formal.Scalar.catalan_G"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "g_cat__catalan_G",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "G/Catalan constants \u2192 term3 chaotic modulation"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "g_cat__chaos_factor",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "G/Catalan constants \u2192 term3 chaotic modulation"
+    },
+    {
+      "lab": "fractal_constant_recursion_lab",
+      "property": "sub_branch_morphism",
+      "name": "g_cat__beta",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "fractal_constant_recursion.yaml",
+      "morphism": "G/Catalan constants \u2192 term3 chaotic modulation"
+    }
+  ],
+  "constant_family_count": 5,
+  "sub_branch_count": 16,
+  "corpus_constant_histogram": {
+    "gamma": 714,
+    "g_cat": 762,
+    "e": 1362,
+    "pi": 2889,
+    "alpha": 1386,
+    "phi": 3276
+  },
+  "crosswalk_modules": [
+    "FSOT.Formal.FormulaBranchingFractalPriors",
+    "FSOT.Formal.FractalConstantRecursionPriors"
+  ]
+}
