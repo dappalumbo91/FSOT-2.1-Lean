@@ -1680,7 +1680,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 76 Fluid spacetime observable universe — 240/240 extension domains verified, periodic extension CLOSED (Tier 75 Z=164) + time/FPC/cosmology deepening",
+        "current_position": "Tier 77 Post–Tier 76 maintenance — 245/245 extension domains verified, hybrid FI + KB bundle + r_d tightening + coupling refresh + H0/FPC prereg validation",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

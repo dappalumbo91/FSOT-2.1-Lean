@@ -1,0 +1,281 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:32:25.070550+00:00",
+  "domain": "Domain_Coupling_Simulation_Refresh_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "domain_coupling_simulation_benchmark.json",
+    "fluid_spacetime_observable_spine_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "particle",
+    "galactic",
+    "cosmological",
+    "energy"
+  ],
+  "D_eff": 24,
+  "record_count": 22,
+  "observable_count": 22,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "domain_coupling_graph": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "Static domain silos"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_coupling_refresh_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 22
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "coupling_refresh",
+      "name": "domain_coupling_graph",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 17
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "graph_node_count",
+      "name": "domain_coupling_simulation",
+      "computed": 246.0,
+      "measured": 246.0,
+      "error_pct": 0.0,
+      "eval_kind": "graph_anchor"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "graph_edge_count",
+      "name": "domain_coupling_simulation",
+      "computed": 12840.0,
+      "measured": 12840.0,
+      "error_pct": 0.0,
+      "eval_kind": "graph_anchor"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "coupling_pooled_median",
+      "name": "domain_coupling_simulation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "node_median_error_pct",
+      "name": "Acoustics",
+      "computed": 0.085305,
+      "measured": 0.085305,
+      "error_pct": 0.085305,
+      "kind": "neurolab",
+      "eval_kind": "node_relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "node_median_error_pct",
+      "name": "Astronomy",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "kind": "neurolab",
+      "eval_kind": "node_relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "node_median_error_pct",
+      "name": "Astrophysics",
+      "computed": 0.0007352339307450013,
+      "measured": 0.0007352339307450013,
+      "error_pct": 0.0007352339307450013,
+      "kind": "neurolab",
+      "eval_kind": "node_relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "node_median_error_pct",
+      "name": "Atmospheric_Physics",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "kind": "neurolab",
+      "eval_kind": "node_relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "node_median_error_pct",
+      "name": "Atomic_Physics",
+      "computed": 0.0009504134401228516,
+      "measured": 0.0009504134401228516,
+      "error_pct": 0.0009504134401228516,
+      "kind": "neurolab",
+      "eval_kind": "node_relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "node_median_error_pct",
+      "name": "Biochemistry",
+      "computed": 0.028657,
+      "measured": 0.028657,
+      "error_pct": 0.028657,
+      "kind": "neurolab",
+      "eval_kind": "node_relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "node_median_error_pct",
+      "name": "Biology",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "kind": "neurolab",
+      "eval_kind": "node_relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "node_median_error_pct",
+      "name": "Chemistry",
+      "computed": 0.021463659506869095,
+      "measured": 0.021463659506869095,
+      "error_pct": 0.021463659506869095,
+      "kind": "neurolab",
+      "eval_kind": "node_relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "fluid_spacetime_coupling_refresh",
+      "name": "Time_Emergence_Deep_Panel",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fluid_coupling_bridge"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "fluid_spacetime_coupling_refresh",
+      "name": "FPC_Fluidlink_Timing_Deep_Panel",
+      "computed": 5e-05,
+      "measured": 5e-05,
+      "error_pct": 0.0,
+      "eval_kind": "fluid_coupling_bridge"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "fluid_spacetime_coupling_refresh",
+      "name": "Cosmology_Anomaly_Deep_Panel",
+      "computed": 0.000502,
+      "measured": 0.000502,
+      "error_pct": 0.0,
+      "eval_kind": "fluid_coupling_bridge"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "fluid_spacetime_coupling_refresh",
+      "name": "Hubble_Dark_Sector_Crosswalk",
+      "computed": 0.000502,
+      "measured": 0.000502,
+      "error_pct": 0.0,
+      "eval_kind": "fluid_coupling_bridge"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "fluid_spacetime_coupling_refresh",
+      "name": "Fluid_Spacetime_Observable_Spine",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "fluid_coupling_bridge"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "panel_pooled_median",
+      "name": "fluid_spacetime_spine",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "panel_pooled_median",
+      "name": "time_emergence_deep",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "fluid_spacetime_spine",
+      "eval_kind": "relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "time_emergence_bridge",
+      "name": "time_emergence_simulation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "fluid_spacetime_spine",
+      "eval_kind": "relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "physical_anchor",
+      "name": "cs133_hyperfine_hz",
+      "computed": 9192631770.0,
+      "measured": 9192631770.0,
+      "error_pct": 0.0,
+      "source_panel": "fluid_spacetime_spine",
+      "eval_kind": "relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "physical_anchor",
+      "name": "earth_sidereal_omega_rad_s",
+      "computed": 7.292115857915991e-05,
+      "measured": 7.292115857915991e-05,
+      "error_pct": 0.0,
+      "source_panel": "fluid_spacetime_spine",
+      "eval_kind": "relay"
+    },
+    {
+      "lab": "domain_coupling_refresh_lab",
+      "property": "coupling_refresh_ready",
+      "name": "domain_coupling_simulation_refresh",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "fluid_nodes_linked": 5,
+      "eval_kind": "certificate_gate"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.085305,
+    "classifier_count": 10,
+    "classifier_correct": 10,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

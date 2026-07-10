@@ -27,7 +27,7 @@ It was developed in close collaboration with the Python reference implementation
 - **Examples section** with domain sweeps, observer intervention comparisons, stability delta style, and trinary collapse demos.
 - Strong alignment with the attached reference files (`VibRegister.lean`, `RealData.lean`, `Domains.lean`, etc.), including MC + combustion justification in comments.
 
-## Verification status (2026-07-10 — Tier 76)
+## Verification status (2026-07-10 — Tier 77)
 
 Full pipeline: `python scripts/fsot_verification_runner.py`
 
@@ -36,16 +36,16 @@ Public capability map: `data/FSOT_VERIFIED_SCOPE.yaml` | Progress: `data/fsot_ve
 | Metric | Value |
 |--------|-------|
 | Verification tiers | **48/48 complete** (100%) |
-| Extension domains | **240/240** pass `verify_extension_domains.py` (≤0.5% pooled gate) |
-| Scientific domains | **276** (35 NeuroLab + 240 extension + Intelligence Compression rollup) |
+| Extension domains | **245/245** pass `verify_extension_domains.py` (≤0.5% pooled gate) |
+| Scientific domains | **281** (35 NeuroLab + 245 extension + Intelligence Compression rollup) |
 | Coupling simulation | **246 nodes · 12,840 edges** (maps_to_lean + cross-ratios + magnetosphere + cyber stack) |
 | Empirical records | **306,680+** |
 | Neurolab precision | **35/35** domains ≤2% median error |
 | Coverage tiers | A_strong: 25 · B_verified: 10 · C_thin: **0** · D_needs_work: **0** · unverified: **0** |
-| Lean formal modules | **310** |
+| Lean formal modules | **315** |
 | Proved claims | **65** · 0 active `sorry` |
 | SOTA ledger | **65/65** observables beat or meet baselines |
-| Expansion candidates | **0** (roadmap tiers 51–76 complete) |
+| Expansion candidates | **0** (roadmap tiers 51–77 complete) |
 
 **External data cache** (bulk API ingest): `G:\FSOT-PublicData` — override with `FSOT_EXTERNAL_DATA_ROOT`. Space weather full arc: `G:\FSOT-PublicData\space_weather\space_weather_full_benchmark.json` (271,813 Kp records); portable summary in `data/space_weather_summary_benchmark.json`.
 
@@ -215,6 +215,14 @@ Public-data-first panels and preregistration scaffolds. Full tier list: `data/ex
 | 74 | Island-of-stability deep panel, Z120-126 beam synthesis, fusion decay chain prereg, island emergence sim, island completion spine | Z=120-126 half-lives + heavy-ion beam targets + Pd-D/muon decay chain prereg |
 | 75 | Distant island Z128-132, Z164 prereg, decay topology, distant emergence sim, **periodic extension closure spine** | Periodic extension arc **CLOSED** at Z=164 — final nuclear/fusion/lab thread |
 | 76 | Time emergence deep, FPC fluidlink timing, cosmology anomaly deep, Hubble/dark-sector crosswalk, fluid spacetime spine | Fluid spacetime observable universe — time + tau + H0 tension + dark sector |
+| 77 | Hybrid FI multi-hero, KB portable bundle, r_d interval tightening, coupling sim refresh, fluid spacetime prereg validation | Post–Tier 76 maintenance wave — FI heroes, KB bundle, r_d, coupling refresh, H0/FPC prereg |
+
+```bash
+# Tier 77 post–Tier 76 maintenance rebuild
+python scripts/build_tier77_post_tier76_maintenance_benchmarks.py
+python scripts/gen_tiers_77_lean.py
+python scripts/verify_extension_domains.py
+```
 
 ```bash
 # Tier 76 fluid spacetime + cosmology rebuild

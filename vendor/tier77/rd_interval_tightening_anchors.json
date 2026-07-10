@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "note": "FSOT 2.1 Lean r_d interval maintenance — uses Cosmology.lean r_d_canonical, not legacy FSUFT formulas",
+  "fsot_r_d_canonical_mpc": 147.52,
+  "planck_r_d_mpc": 147.09,
+  "lean_interval_lo_mpc": 147.48,
+  "lean_interval_hi_mpc": 147.55,
+  "tightened_half_width_mpc": 0.035,
+  "lean_theorem": "r_d_approx_value",
+  "comparison_anchors": [
+    {"id": "rd_bao_planck", "property": "bao_sound_horizon_mpc", "measured": 147.09, "unit": "Mpc", "reference": "Planck2018_BAO"},
+    {"id": "rd_fsot_canonical", "property": "fsot_r_d_canonical", "measured": 147.52, "unit": "Mpc", "reference": "FSOT.Formal.Cosmology"},
+    {"id": "rd_desi_2024", "property": "bao_sound_horizon_mpc", "measured": 147.5, "unit": "Mpc", "reference": "DESI_2024_combined"}
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:32:25.023149+00:00",
+  "domain": "Knowledge_Base_Portable_Bundle_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "knowledge_base_formula_verification_summary.json",
+    "formula_corpus_closure_benchmark.json",
+    "vendor/formula_corpus/"
+  ],
+  "maps_to_lean": [
+    "mathematical",
+    "particle",
+    "consciousness"
+  ],
+  "D_eff": 19,
+  "record_count": 13,
+  "observable_count": 13,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.018019024892929635,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "per_formula_bundle": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "Unbundled formula catalogs"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_kb_portable_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 13
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "kb_portable",
+      "name": "per_formula_bundle",
+      "computed": 0.018019,
+      "measured": 0.0,
+      "error_pct": 0.018019024892929635,
+      "observable_count": 6
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "kb_portable_metric",
+      "name": "catalog_formulas_total",
+      "computed": 19213.0,
+      "measured": 19213.0,
+      "error_pct": 0.0,
+      "eval_kind": "kb_inventory_anchor"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "kb_portable_metric",
+      "name": "within_target_2pct",
+      "computed": 50.0,
+      "measured": 50.0,
+      "error_pct": 0.0,
+      "eval_kind": "kb_inventory_anchor"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "kb_portable_metric",
+      "name": "within_tolerable_5pct",
+      "computed": 82.0,
+      "measured": 82.0,
+      "error_pct": 0.0,
+      "eval_kind": "kb_inventory_anchor"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "kb_portable_metric",
+      "name": "strict_empirical_matched",
+      "computed": 7941.0,
+      "measured": 7941.0,
+      "error_pct": 0.0,
+      "eval_kind": "kb_inventory_anchor"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "kb_portable_metric",
+      "name": "strict_within_2pct",
+      "computed": 6921.0,
+      "measured": 6921.0,
+      "error_pct": 0.0,
+      "eval_kind": "kb_inventory_anchor"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "strict_empirical_max_error_pct",
+      "name": "strict_empirical_bridge",
+      "computed": 4.841504,
+      "measured": 4.841504,
+      "error_pct": 4.841504,
+      "eval_kind": "kb_bridge_gate"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "formula_corpus_closure_bridge",
+      "name": "formula_corpus_closure",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "strict_empirical_count",
+      "name": "strict_empirical_jsonl",
+      "computed": 7941.0,
+      "measured": 7941.0,
+      "error_pct": 0.0,
+      "eval_kind": "corpus_relay"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "lean_priors_modules",
+      "name": "formal_priors_count",
+      "computed": 163.0,
+      "measured": 163.0,
+      "error_pct": 0.0,
+      "eval_kind": "corpus_relay"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "extension_bridge_domains",
+      "name": "benchmark_json_domains",
+      "computed": 127.0,
+      "measured": 127.0,
+      "error_pct": 0.0,
+      "eval_kind": "corpus_relay"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "domain_benchmark_records",
+      "name": "Agriculture_Agroecology",
+      "computed": 276.0,
+      "measured": 276.0,
+      "error_pct": 0.018019024892929635,
+      "eval_kind": "corpus_relay"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "domain_benchmark_records",
+      "name": "Anthropology",
+      "computed": 160.0,
+      "measured": 160.0,
+      "error_pct": 0.019504399572476606,
+      "eval_kind": "corpus_relay"
+    },
+    {
+      "lab": "kb_portable_bundle_lab",
+      "property": "kb_portable_bundle_ready",
+      "name": "knowledge_base_portable_bundle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_gate"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 4.841504,
+    "classifier_count": 2,
+    "classifier_correct": 2,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5
+}

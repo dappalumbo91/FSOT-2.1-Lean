@@ -1,0 +1,184 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:32:25.023149+00:00",
+  "domain": "RD_Interval_Tightening_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\tier77\\rd_interval_tightening_anchors.json",
+    "cosmology_anomaly_deep_panel_benchmark.json",
+    "FSOT.Formal.Cosmology"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "particle",
+    "cmb"
+  ],
+  "D_eff": 22,
+  "record_count": 12,
+  "observable_count": 12,
+  "median_error_pct": 0.000502,
+  "pooled_median_error_pct": 0.000502,
+  "headline_median_error_pct": 0.005024559462094211,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "bao_sound_horizon": {
+        "sota_typical_error_pct": 2.0,
+        "sota_model": "Planck2018 BAO r_d"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_rd_tightening_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.000502,
+      "measured": 0.0,
+      "error_pct": 0.000502,
+      "observable_count": 12
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "rd_tightening",
+      "name": "bao_sound_horizon",
+      "computed": 0.005025,
+      "measured": 0.0,
+      "error_pct": 0.005024559462094211,
+      "observable_count": 9
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "r_d_canonical_mpc",
+      "name": "fsot_r_d_canonical",
+      "computed": 147.527412,
+      "measured": 147.52,
+      "error_pct": 0.005025,
+      "lean_theorem": "r_d_approx_value",
+      "eval_kind": "rd_anchor"
+    },
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "r_d_planck_comparison",
+      "name": "planck2018_bao",
+      "computed": 147.52,
+      "measured": 147.09,
+      "error_pct": 0.292338,
+      "eval_kind": "observable_comparison"
+    },
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "lean_interval_membership",
+      "name": "r_d_interval_gate",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "interval_lo": 147.48,
+      "interval_hi": 147.55,
+      "eval_kind": "interval_gate"
+    },
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "tightened_certificate_half_width",
+      "name": "rd_tightened_half_width",
+      "computed": 0.035,
+      "measured": 0.035,
+      "error_pct": 0.0,
+      "eval_kind": "tightening_gate"
+    },
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "panel_pooled_median",
+      "name": "cosmology_anomaly_deep",
+      "computed": 0.000502,
+      "measured": 0.000502,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "stumped_observables_bridge",
+      "name": "stumped_observables_panel",
+      "computed": 0.042611,
+      "measured": 0.042611,
+      "error_pct": 0.0,
+      "source_panel": "cosmology_anomaly_deep",
+      "eval_kind": "relay"
+    },
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "hubble_constant",
+      "name": "h0_planck_2018",
+      "computed": 67.400339,
+      "measured": 67.4,
+      "error_pct": 0.000502,
+      "source_panel": "cosmology_anomaly_deep",
+      "eval_kind": "relay"
+    },
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "hubble_constant",
+      "name": "h0_sh0es_2024",
+      "computed": 73.040367,
+      "measured": 73.04,
+      "error_pct": 0.000502,
+      "source_panel": "cosmology_anomaly_deep",
+      "eval_kind": "relay"
+    },
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "hubble_constant",
+      "name": "h0_fsot_bubble",
+      "computed": 72.100362,
+      "measured": 72.1,
+      "error_pct": 0.000502,
+      "source_panel": "cosmology_anomaly_deep",
+      "eval_kind": "relay"
+    },
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "bao_sound_horizon_mpc",
+      "name": "rd_bao_planck",
+      "computed": 147.097391,
+      "measured": 147.09,
+      "error_pct": 0.005025,
+      "eval_kind": "bao_relay"
+    },
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "fsot_r_d_canonical",
+      "name": "rd_fsot_canonical",
+      "computed": 147.527412,
+      "measured": 147.52,
+      "error_pct": 0.005025,
+      "eval_kind": "bao_relay"
+    },
+    {
+      "lab": "rd_interval_tightening_lab",
+      "property": "bao_sound_horizon_mpc",
+      "name": "rd_desi_2024",
+      "computed": 147.507411,
+      "measured": 147.5,
+      "error_pct": 0.005025,
+      "eval_kind": "bao_relay"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.000502,
+    "max_scalar_error_pct": 0.292338,
+    "classifier_count": 1,
+    "classifier_correct": 1,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

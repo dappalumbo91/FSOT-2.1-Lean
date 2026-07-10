@@ -1,0 +1,17 @@
+version: "1.0"
+tier: 77
+domains:
+  - Hybrid_FI_Sim_Multi_Hero_Panel
+  - Knowledge_Base_Portable_Bundle_Panel
+  - RD_Interval_Tightening_Panel
+  - Domain_Coupling_Simulation_Refresh_Panel
+  - Fluid_Spacetime_Prereg_Validation_Panel
+build: scripts/build_tier77_post_tier76_maintenance_benchmarks.py
+lean: scripts/gen_tiers_77_lean.py
+artifacts:
+  - vendor/tier77/rd_interval_tightening_anchors.json
+  - vendor/tier77/fluid_spacetime_prereg_targets.json
+  - data/knowledge_base_formula_verification_summary.json
+  - data/domain_coupling_simulation_benchmark.json
+  - data/multi_hero_benchmark.json
+note: "Post–Tier 76 maintenance — hybrid FI multi-hero, KB portable bundle, r_d tightening, coupling refresh, H0/FPC prereg validation"

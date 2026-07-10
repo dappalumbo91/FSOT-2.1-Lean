@@ -3114,6 +3114,71 @@ extension_domains:
     lean_module: FSOT.Formal.FluidSpacetimeObservableSpinePriors
     note: "Fluid spacetime observable rollup — time + FPC + cosmology anomalies + Hubble/dark sector"
 
+  Hybrid_FI_Sim_Multi_Hero_Panel:
+    tier: 77
+    D_eff: 18
+    delta_psi: 0.93
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [neural, consciousness, biophysics]
+    build_script: scripts/build_tier77_post_tier76_maintenance_benchmarks.py
+    manifest: data/tier77_post_tier76_maintenance_manifest.yaml
+    benchmark_data: data/hybrid_fi_sim_multi_hero_panel_benchmark.json
+    lean_module: FSOT.Formal.HybridFiSimMultiHeroPanelPriors
+    note: "Hybrid FI sim multi-hero — Allen cohort heroes + hybrid neuron scalar bridge"
+
+  Knowledge_Base_Portable_Bundle_Panel:
+    tier: 77
+    D_eff: 19
+    delta_psi: 0.94
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [mathematical, particle, consciousness]
+    build_script: scripts/build_tier77_post_tier76_maintenance_benchmarks.py
+    manifest: data/tier77_post_tier76_maintenance_manifest.yaml
+    benchmark_data: data/knowledge_base_portable_bundle_panel_benchmark.json
+    lean_module: FSOT.Formal.KnowledgeBasePortableBundlePanelPriors
+    note: "Knowledge-base portable bundle — per-formula verify + strict-empirical bridge"
+
+  RD_Interval_Tightening_Panel:
+    tier: 77
+    D_eff: 22
+    delta_psi: 0.95
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, particle, cmb]
+    build_script: scripts/build_tier77_post_tier76_maintenance_benchmarks.py
+    manifest: data/tier77_post_tier76_maintenance_manifest.yaml
+    benchmark_data: data/rd_interval_tightening_panel_benchmark.json
+    lean_module: FSOT.Formal.RdIntervalTighteningPanelPriors
+    note: "r_d interval tightening — Cosmology.lean r_d_canonical vs Planck BAO"
+
+  Domain_Coupling_Simulation_Refresh_Panel:
+    tier: 77
+    D_eff: 24
+    delta_psi: 0.96
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, particle, galactic, cosmological, energy]
+    build_script: scripts/build_tier77_post_tier76_maintenance_benchmarks.py
+    manifest: data/tier77_post_tier76_maintenance_manifest.yaml
+    benchmark_data: data/domain_coupling_simulation_refresh_panel_benchmark.json
+    lean_module: FSOT.Formal.DomainCouplingSimulationRefreshPanelPriors
+    note: "Domain coupling sim refresh — 246-node graph + Tier 76 fluid spacetime links"
+
+  Fluid_Spacetime_Prereg_Validation_Panel:
+    tier: 77
+    D_eff: 25
+    delta_psi: 0.97
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, consciousness, particle, blackhole, cmb]
+    build_script: scripts/build_tier77_post_tier76_maintenance_benchmarks.py
+    manifest: data/tier77_post_tier76_maintenance_manifest.yaml
+    benchmark_data: data/fluid_spacetime_prereg_validation_panel_benchmark.json
+    lean_module: FSOT.Formal.FluidSpacetimePreregValidationPanelPriors
+    note: "Fluid spacetime prereg validation — PRED-024 H0 dual anchor + PRED-025 FPC tau"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

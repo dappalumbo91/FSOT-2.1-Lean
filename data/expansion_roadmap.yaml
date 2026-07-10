@@ -1,5 +1,5 @@
 # FSOT interdisciplinary expansion roadmap — public-data first, preregister before novel claims.
-version: "1.9"
+version: "2.0"
 updated: "2026-07-10"
 policy: >
   Ship verification against published observables in-repo. Reserve novel material,
@@ -119,8 +119,18 @@ completed_tiers:
     - Cosmology_Anomaly_Deep_Panel
     - Hubble_Dark_Sector_Crosswalk
     - Fluid_Spacetime_Observable_Spine
+  tier_77:
+    - Hybrid_FI_Sim_Multi_Hero_Panel
+    - Knowledge_Base_Portable_Bundle_Panel
+    - RD_Interval_Tightening_Panel
+    - Domain_Coupling_Simulation_Refresh_Panel
+    - Fluid_Spacetime_Prereg_Validation_Panel
 
 priority_queue:
+  tier_77_post_tier76_maintenance:
+    status: completed
+    focus: [hybrid_fi_sim_multi_hero, knowledge_base_portable_bundle, rd_interval_tightening, domain_coupling_simulation_refresh, fluid_spacetime_prereg_validation]
+    note: "Post–Tier 76 maintenance wave complete — FI heroes, KB bundle, r_d, coupling refresh, H0/FPC prereg"
   tier_76_fluid_spacetime_cosmology:
     status: completed
     focus: [time_emergence_deep, fpc_fluidlink, cosmology_anomalies, hubble_dark_crosswalk]
@@ -165,15 +175,16 @@ priority_queue:
     note: "Publication-facing ToE claim bundle — proof ledger + prereg outcomes + certificate"
 
 maintenance_queue:
-  post_tier_76:
+  post_tier_77:
     status: ongoing
     focus:
-      - hybrid_fi_sim_multi_hero
-      - knowledge_base_portable_bundle
-      - rd_interval_tightening
-      - domain_coupling_simulation_refresh
-      - fluid_spacetime_prereg_validation
-    note: "Ongoing upkeep after Tier 76 fluid spacetime — FI sim, KB bundle, coupling sim refresh, H0/FPC prereg validation"
+      - legacy_tech_physics_crosswalk_refresh
+      - astrophysical_live_refresh_gaia_wds_gwosc
+      - formula_precision_wave2
+    note: "Ongoing upkeep after Tier 77 — legacy concept crosswalk, live astrophysical ingest, formula precision wave 2"
+  post_tier_76:
+    status: completed
+    note: "Completed as Tier 77 maintenance domains"
   post_tier_74:
     status: completed
     note: "Superseded — periodic extension closed at Tier 75"

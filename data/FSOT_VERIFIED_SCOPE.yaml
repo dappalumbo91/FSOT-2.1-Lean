@@ -1,4 +1,4 @@
-generated_at: '2026-07-10T19:20:53.914079+00:00'
+generated_at: '2026-07-10T19:33:11.464513+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,7 +6,7 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 310
+  lean_formal_modules: 315
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
@@ -504,6 +504,7 @@ tier_coverage:
   - DistantIslandEmergenceSimulationPriors
   - DistantIslandZ128Z132DeepPanelPriors
   - DomainCouplingSimulationPriors
+  - DomainCouplingSimulationRefreshPanelPriors
   - DomainCoveragePriors
   - DomainOrbitalPredictionsPriors
   - DomainPrecisionPriors
@@ -530,6 +531,7 @@ tier_coverage:
   - FluidDynamicsGapFillPriors
   - FluidPhaseCurrentSpinePriors
   - FluidSpacetimeObservableSpinePriors
+  - FluidSpacetimePreregValidationPanelPriors
   - FoldDepthMetricsPriors
   - FoodMicrobiologyGapFillPriors
   - FormulaBranchingFractalPriors
@@ -564,6 +566,7 @@ tier_coverage:
   - HubbleBubbleTensionPriors
   - HubbleDarkSectorCrosswalkPriors
   - HvacThermalSystemsPriors
+  - HybridFiSimMultiHeroPanelPriors
   - HydrologyPriors
   - IGEMLiveFastaPriors
   - IGEMPartsExpandedPriors
@@ -578,6 +581,7 @@ tier_coverage:
   - IntrinsicLLMValidatorsPriors
   - IonosphericChemistryCouplingPriors
   - IslandOfStabilityDeepPanelPriors
+  - KnowledgeBasePortableBundlePanelPriors
   - KnowledgeBasePriors
   - KronosPriors
   - LabSynthesisMetamaterialSpinePriors
@@ -671,6 +675,7 @@ tier_coverage:
   - QuantumMechanicsGapFillPriors
   - QuantumOpticsGapFillPriors
   - RcsbPdbStructuresPriors
+  - RdIntervalTighteningPanelPriors
   - RealityFoldingSpinePriors
   - RoboticsControlSystemsExtensionPriors
   - RustLeanBridgePriors
@@ -3017,6 +3022,26 @@ extension_domains:
   tier: 76
   record_count: 37
   lean_module: FSOT.Formal.FluidSpacetimeObservableSpinePriors
+- domain: Hybrid_FI_Sim_Multi_Hero_Panel
+  tier: 77
+  record_count: 14
+  lean_module: FSOT.Formal.HybridFiSimMultiHeroPanelPriors
+- domain: Knowledge_Base_Portable_Bundle_Panel
+  tier: 77
+  record_count: 13
+  lean_module: FSOT.Formal.KnowledgeBasePortableBundlePanelPriors
+- domain: RD_Interval_Tightening_Panel
+  tier: 77
+  record_count: 12
+  lean_module: FSOT.Formal.RdIntervalTighteningPanelPriors
+- domain: Domain_Coupling_Simulation_Refresh_Panel
+  tier: 77
+  record_count: 22
+  lean_module: FSOT.Formal.DomainCouplingSimulationRefreshPanelPriors
+- domain: Fluid_Spacetime_Prereg_Validation_Panel
+  tier: 77
+  record_count: 19
+  lean_module: FSOT.Formal.FluidSpacetimePreregValidationPanelPriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -3779,6 +3804,7 @@ lean_formal_modules:
 - DistantIslandEmergenceSimulationPriors
 - DistantIslandZ128Z132DeepPanelPriors
 - DomainCouplingSimulationPriors
+- DomainCouplingSimulationRefreshPanelPriors
 - DomainCoveragePriors
 - DomainOrbitalPredictionsPriors
 - DomainPrecisionPriors
@@ -3805,6 +3831,7 @@ lean_formal_modules:
 - FluidDynamicsGapFillPriors
 - FluidPhaseCurrentSpinePriors
 - FluidSpacetimeObservableSpinePriors
+- FluidSpacetimePreregValidationPanelPriors
 - FoldDepthMetricsPriors
 - FoodMicrobiologyGapFillPriors
 - FormulaBranchingFractalPriors
@@ -3839,6 +3866,7 @@ lean_formal_modules:
 - HubbleBubbleTensionPriors
 - HubbleDarkSectorCrosswalkPriors
 - HvacThermalSystemsPriors
+- HybridFiSimMultiHeroPanelPriors
 - HydrologyPriors
 - IGEMLiveFastaPriors
 - IGEMPartsExpandedPriors
@@ -3853,6 +3881,7 @@ lean_formal_modules:
 - IntrinsicLLMValidatorsPriors
 - IonosphericChemistryCouplingPriors
 - IslandOfStabilityDeepPanelPriors
+- KnowledgeBasePortableBundlePanelPriors
 - KnowledgeBasePriors
 - KronosPriors
 - LabSynthesisMetamaterialSpinePriors
@@ -3945,6 +3974,7 @@ lean_formal_modules:
 - QuantumMechanicsGapFillPriors
 - QuantumOpticsGapFillPriors
 - RcsbPdbStructuresPriors
+- RdIntervalTighteningPanelPriors
 - RealityFoldingSpinePriors
 - RoboticsControlSystemsExtensionPriors
 - RustLeanBridgePriors

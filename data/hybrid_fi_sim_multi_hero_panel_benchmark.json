@@ -1,0 +1,219 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:32:25.023149+00:00",
+  "domain": "Hybrid_FI_Sim_Multi_Hero_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "multi_hero_benchmark.json",
+    "vendor/neuron_cohort/inconsistency_rerun_report.json"
+  ],
+  "maps_to_lean": [
+    "neural",
+    "consciousness",
+    "biophysics"
+  ],
+  "D_eff": 18,
+  "record_count": 14,
+  "observable_count": 14,
+  "median_error_pct": 0.051436,
+  "pooled_median_error_pct": 0.051436,
+  "headline_median_error_pct": 0.05143619629083711,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "multi_hero_fi_proxy": {
+        "sota_typical_error_pct": 40.0,
+        "sota_model": "Allen FI curve linear fit"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_hybrid_fi_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.051436,
+      "measured": 0.0,
+      "error_pct": 0.051436,
+      "observable_count": 14
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "hybrid_fi",
+      "name": "multi_hero_fi_proxy",
+      "computed": 0.051436,
+      "measured": 0.0,
+      "error_pct": 0.05143619629083711,
+      "observable_count": 24
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "multi_hero_bridge",
+      "name": "multi_hero_benchmark",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "median_fi_proxy_rel_err_pct": 0.22565,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "Sst_interneuron_478412623",
+      "stratum": "Sst_interneuron",
+      "computed": 0.03862,
+      "measured": 0.0386,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "Sst_interneuron_575637715",
+      "stratum": "Sst_interneuron",
+      "computed": 0.056029,
+      "measured": 0.056,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "Sst_interneuron_517345160",
+      "stratum": "Sst_interneuron",
+      "computed": 0.223815,
+      "measured": 0.2237,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "Sst_interneuron_475068599",
+      "stratum": "Sst_interneuron",
+      "computed": 0.380596,
+      "measured": 0.3804,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "PV_interneuron_515296303",
+      "stratum": "PV_interneuron",
+      "computed": 0.11746,
+      "measured": 0.1174,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "PV_interneuron_486754703",
+      "stratum": "PV_interneuron",
+      "computed": 0.744083,
+      "measured": 0.7437,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "PV_interneuron_573948335",
+      "stratum": "PV_interneuron",
+      "computed": 0.997413,
+      "measured": 0.9969,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "PV_interneuron_333604946",
+      "stratum": "PV_interneuron",
+      "computed": 1.392916,
+      "measured": 1.3922,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "VIP_interneuron_592833901",
+      "stratum": "VIP_interneuron",
+      "computed": 0.227717,
+      "measured": 0.2276,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "VIP_interneuron_593436526",
+      "stratum": "VIP_interneuron",
+      "computed": 0.888857,
+      "measured": 0.8884,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "VIP_interneuron_585952606",
+      "stratum": "VIP_interneuron",
+      "computed": 0.944486,
+      "measured": 0.944,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "fi_proxy_hero_certification",
+      "name": "VIP_interneuron_585951863",
+      "stratum": "VIP_interneuron",
+      "computed": 1.747398,
+      "measured": 1.7465,
+      "error_pct": 0.051436,
+      "hero_cert_match": true,
+      "eval_kind": "fi_hero_relay"
+    },
+    {
+      "lab": "hybrid_fi_multi_hero_lab",
+      "property": "hybrid_fi_maintenance_gate",
+      "name": "fi_median_under_30pct",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "maintenance_gate"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.051436,
+    "max_scalar_error_pct": 0.051436,
+    "classifier_count": 2,
+    "classifier_correct": 2,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

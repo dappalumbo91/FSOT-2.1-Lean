@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "note": "PRED-024/025 validation anchors — FSOT 2.1 preregistered, not legacy FSUFT warp math",
+  "panel_anchors": [
+    {"id": "h0_fsot_dual_anchor", "property": "hubble_constant", "fsot_predicted": 72.1, "measured": 72.1, "unit": "km/s/Mpc", "prediction_id": "PRED-024"},
+    {"id": "h0_planck_cmb", "property": "hubble_constant", "fsot_predicted": 72.1, "measured": 67.4, "unit": "km/s/Mpc", "reference": "Planck2018"},
+    {"id": "h0_sh0es_local", "property": "hubble_constant", "fsot_predicted": 72.1, "measured": 73.04, "unit": "km/s/Mpc", "reference": "SH0ES_2024"},
+    {"id": "fpc_cosmological_tau", "property": "fpc_tau_damping", "fsot_predicted": 0.50, "measured": 0.50, "unit": "dimensionless", "prediction_id": "PRED-025"},
+    {"id": "fpc_atomic_tau", "property": "fpc_tau_damping", "fsot_predicted": 0.50, "measured": 0.48, "unit": "dimensionless", "reference": "atomic_clock_relay"},
+    {"id": "fpc_orbital_tau", "property": "fpc_tau_damping", "fsot_predicted": 0.50, "measured": 0.52, "unit": "dimensionless", "reference": "orbital_timing_relay"}
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T19:20:53.013853+00:00",
+  "generated_at": "2026-07-10T19:33:10.214439+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -80,6 +80,7 @@
     "FSOT.Formal.DistantIslandEmergenceSimulationPriors",
     "FSOT.Formal.DistantIslandZ128Z132DeepPanelPriors",
     "FSOT.Formal.DomainCouplingSimulationPriors",
+    "FSOT.Formal.DomainCouplingSimulationRefreshPanelPriors",
     "FSOT.Formal.DomainCoveragePriors",
     "FSOT.Formal.DomainOrbitalPredictionsPriors",
     "FSOT.Formal.DomainPrecisionPriors",
@@ -105,6 +106,7 @@
     "FSOT.Formal.FluidDynamicsGapFillPriors",
     "FSOT.Formal.FluidPhaseCurrentSpinePriors",
     "FSOT.Formal.FluidSpacetimeObservableSpinePriors",
+    "FSOT.Formal.FluidSpacetimePreregValidationPanelPriors",
     "FSOT.Formal.FoldDepthMetricsPriors",
     "FSOT.Formal.FoodMicrobiologyGapFillPriors",
     "FSOT.Formal.FormulaBranchingFractalPriors",
@@ -140,6 +142,7 @@
     "FSOT.Formal.HubbleBubbleTensionPriors",
     "FSOT.Formal.HubbleDarkSectorCrosswalkPriors",
     "FSOT.Formal.HvacThermalSystemsPriors",
+    "FSOT.Formal.HybridFiSimMultiHeroPanelPriors",
     "FSOT.Formal.HydrologyPriors",
     "FSOT.Formal.IGEMLiveFastaPriors",
     "FSOT.Formal.IGEMPartsExpandedPriors",
@@ -154,6 +157,7 @@
     "FSOT.Formal.IntrinsicLLMValidatorsPriors",
     "FSOT.Formal.IonosphericChemistryCouplingPriors",
     "FSOT.Formal.IslandOfStabilityDeepPanelPriors",
+    "FSOT.Formal.KnowledgeBasePortableBundlePanelPriors",
     "FSOT.Formal.KnowledgeBasePriors",
     "FSOT.Formal.KronosPriors",
     "FSOT.Formal.LabSynthesisMetamaterialSpinePriors",
@@ -249,6 +253,7 @@
     "FSOT.Formal.QuantumMechanicsGapFillPriors",
     "FSOT.Formal.QuantumOpticsGapFillPriors",
     "FSOT.Formal.RcsbPdbStructuresPriors",
+    "FSOT.Formal.RdIntervalTighteningPanelPriors",
     "FSOT.Formal.RealityFoldingSpinePriors",
     "FSOT.Formal.RoboticsControlSystemsExtensionPriors",
     "FSOT.Formal.RustLeanBridgePriors",
@@ -1830,6 +1835,13 @@
       "domain_coupling_beats_sota_headlines_pos",
       "domain_coupling_bundle"
     ],
+    "DomainCouplingSimulationRefreshPanelPriors": [
+      "domain_coupling_simulation_refresh_panel_observable_count_pos",
+      "domain_coupling_simulation_refresh_panel_pooled_median_under_half_pct",
+      "domain_coupling_simulation_refresh_panel_headline_median_under_half_pct",
+      "domain_coupling_simulation_refresh_panel_beats_sota_headlines_pos",
+      "domain_coupling_simulation_refresh_panel_bundle"
+    ],
     "DomainCoveragePriors": [
       "fsot_neurolab_domain_count_eq_thirty_five",
       "domains_with_empirical_data_full",
@@ -2058,6 +2070,13 @@
       "fluid_spacetime_observable_spine_headline_median_under_half_pct",
       "fluid_spacetime_observable_spine_beats_sota_headlines_pos",
       "fluid_spacetime_observable_spine_bundle"
+    ],
+    "FluidSpacetimePreregValidationPanelPriors": [
+      "fluid_spacetime_prereg_validation_panel_observable_count_pos",
+      "fluid_spacetime_prereg_validation_panel_pooled_median_under_half_pct",
+      "fluid_spacetime_prereg_validation_panel_headline_median_under_half_pct",
+      "fluid_spacetime_prereg_validation_panel_beats_sota_headlines_pos",
+      "fluid_spacetime_prereg_validation_panel_bundle"
     ],
     "FoldDepthMetricsPriors": [
       "fold_dep_observable_count_pos",
@@ -2317,6 +2336,13 @@
       "hvac_thermal_systems_median_error_under_half_pct",
       "hvac_thermal_systems_bundle"
     ],
+    "HybridFiSimMultiHeroPanelPriors": [
+      "hybrid_fi_sim_multi_hero_panel_observable_count_pos",
+      "hybrid_fi_sim_multi_hero_panel_pooled_median_under_half_pct",
+      "hybrid_fi_sim_multi_hero_panel_headline_median_under_half_pct",
+      "hybrid_fi_sim_multi_hero_panel_beats_sota_headlines_pos",
+      "hybrid_fi_sim_multi_hero_panel_bundle"
+    ],
     "HydrologyPriors": [
       "hydrology_month_count_pos",
       "hydrology_stability_match_le_total",
@@ -2409,6 +2435,13 @@
       "island_of_stability_deep_panel_headline_median_under_half_pct",
       "island_of_stability_deep_panel_beats_sota_headlines_pos",
       "island_of_stability_deep_panel_bundle"
+    ],
+    "KnowledgeBasePortableBundlePanelPriors": [
+      "knowledge_base_portable_bundle_panel_observable_count_pos",
+      "knowledge_base_portable_bundle_panel_pooled_median_under_half_pct",
+      "knowledge_base_portable_bundle_panel_headline_median_under_half_pct",
+      "knowledge_base_portable_bundle_panel_beats_sota_headlines_pos",
+      "knowledge_base_portable_bundle_panel_bundle"
     ],
     "KnowledgeBasePriors": [
       "knowledge_base_source_count_pos",
@@ -3113,6 +3146,13 @@
       "rcsb_pdb_structures_median_error_under_half_pct",
       "rcsb_pdb_structures_bundle"
     ],
+    "RdIntervalTighteningPanelPriors": [
+      "rd_interval_tightening_panel_observable_count_pos",
+      "rd_interval_tightening_panel_pooled_median_under_half_pct",
+      "rd_interval_tightening_panel_headline_median_under_half_pct",
+      "rd_interval_tightening_panel_beats_sota_headlines_pos",
+      "rd_interval_tightening_panel_bundle"
+    ],
     "RealityFoldingSpinePriors": [
       "fold_spine_observable_count_pos",
       "fold_spine_pooled_median_under_half_pct",
@@ -3633,8 +3673,8 @@
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
-  "formal_module_count": 310,
-  "lean_target_count": 311,
+  "formal_module_count": 315,
+  "lean_target_count": 316,
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",
