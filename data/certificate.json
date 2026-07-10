@@ -1,6 +1,6 @@
 {
   "certificate_version": "1.0",
-  "generated_at": "2026-07-10T19:14:59.498284+00:00",
+  "generated_at": "2026-07-10T19:20:53.013853+00:00",
   "lean_toolchain": "leanprover/lean4:v4.31.0",
   "mathlib_pin": "v4.31.0",
   "lean_build_ok": true,
@@ -59,6 +59,7 @@
     "FSOT.Formal.ConsciousnessGalacticOrbitalBridgePriors",
     "FSOT.Formal.ConsciousnessSoulBridgePriors",
     "FSOT.Formal.CosmologyAnomaliesPriors",
+    "FSOT.Formal.CosmologyAnomalyDeepPanelPriors",
     "FSOT.Formal.CosmologyExtendedPriors",
     "FSOT.Formal.CosmologyHigherWavesPriors",
     "FSOT.Formal.CosmologyWave10Priors",
@@ -76,6 +77,8 @@
     "FSOT.Formal.CVECodonHoleFalsificationPriors",
     "FSOT.Formal.DarkEnergyCPLPriors",
     "FSOT.Formal.DarkSectorOpenProblemsPriors",
+    "FSOT.Formal.DistantIslandEmergenceSimulationPriors",
+    "FSOT.Formal.DistantIslandZ128Z132DeepPanelPriors",
     "FSOT.Formal.DomainCouplingSimulationPriors",
     "FSOT.Formal.DomainCoveragePriors",
     "FSOT.Formal.DomainOrbitalPredictionsPriors",
@@ -101,6 +104,7 @@
     "FSOT.Formal.FinanceMarketsExtensionPriors",
     "FSOT.Formal.FluidDynamicsGapFillPriors",
     "FSOT.Formal.FluidPhaseCurrentSpinePriors",
+    "FSOT.Formal.FluidSpacetimeObservableSpinePriors",
     "FSOT.Formal.FoldDepthMetricsPriors",
     "FSOT.Formal.FoodMicrobiologyGapFillPriors",
     "FSOT.Formal.FormulaBranchingFractalPriors",
@@ -108,6 +112,7 @@
     "FSOT.Formal.FormulaCorpusCncPriors",
     "FSOT.Formal.FormulaCorpusPriors",
     "FSOT.Formal.FormulaPrecisionSpinePriors",
+    "FSOT.Formal.FpcFluidlinkTimingDeepPanelPriors",
     "FSOT.Formal.FPCTemporalCouplingPriors",
     "FSOT.Formal.FractalConstantRecursionPriors",
     "FSOT.Formal.FsotAggregateOrganizedPanelPriors",
@@ -133,6 +138,7 @@
     "FSOT.Formal.HiggsMassPriors",
     "FSOT.Formal.HistoryExtensionPriors",
     "FSOT.Formal.HubbleBubbleTensionPriors",
+    "FSOT.Formal.HubbleDarkSectorCrosswalkPriors",
     "FSOT.Formal.HvacThermalSystemsPriors",
     "FSOT.Formal.HydrologyPriors",
     "FSOT.Formal.IGEMLiveFastaPriors",
@@ -210,7 +216,9 @@
     "FSOT.Formal.ParticleNeuralOrbitalBridgePriors",
     "FSOT.Formal.ParticlePhysicsGapFillPriors",
     "FSOT.Formal.ParticlePhysicsPriors",
+    "FSOT.Formal.PeriodicExtensionDecayTopologyScaffoldPriors",
     "FSOT.Formal.PeriodicTableCompletionSpinePriors",
+    "FSOT.Formal.PeriodicTableExtensionClosureSpinePriors",
     "FSOT.Formal.PeriodicTablePublicPanelPriors",
     "FSOT.Formal.PharmacokineticsGapFillPriors",
     "FSOT.Formal.PharmacologyPriors",
@@ -277,6 +285,7 @@
     "FSOT.Formal.TheoryCompletenessSpinePriors",
     "FSOT.Formal.ThesisSimulationPriors",
     "FSOT.Formal.TimeDomainCrosswalkPriors",
+    "FSOT.Formal.TimeEmergenceDeepPanelPriors",
     "FSOT.Formal.TimeEmergenceSimulationPriors",
     "FSOT.Formal.ToEClaimCertificateBundlePriors",
     "FSOT.Formal.ToEGapClosureSpinePriors",
@@ -304,6 +313,7 @@
     "FSOT.Formal.WorldBankDevelopmentPriors",
     "FSOT.Formal.XRInteractiveMediaMathScaffoldPriors",
     "FSOT.Formal.Z120Z126BeamSynthesisPanelPriors",
+    "FSOT.Formal.Z164DistantIslandPreregScaffoldPriors",
     "FSOT.Formal.ZeroDayRiskEvaluatorPriors",
     "FSOT.Formal.ZoologyExtensionPriors"
   ],
@@ -1676,6 +1686,13 @@
       "cosmology_anomalies_resolved_le_total",
       "cosmology_anomalies_bundle"
     ],
+    "CosmologyAnomalyDeepPanelPriors": [
+      "cosmology_anomaly_deep_panel_observable_count_pos",
+      "cosmology_anomaly_deep_panel_pooled_median_under_half_pct",
+      "cosmology_anomaly_deep_panel_headline_median_under_half_pct",
+      "cosmology_anomaly_deep_panel_beats_sota_headlines_pos",
+      "cosmology_anomaly_deep_panel_bundle"
+    ],
     "CosmologyExtendedPriors": [
       "cosmology_skeleton_derivation_count_pos",
       "cosmology_lambda_cdm_extended_count_pos",
@@ -1790,6 +1807,20 @@
       "dark_sector_headline_median_under_half_pct",
       "dark_sector_beats_sota_headlines_pos",
       "dark_sector_bundle"
+    ],
+    "DistantIslandEmergenceSimulationPriors": [
+      "distant_island_emergence_simulation_observable_count_pos",
+      "distant_island_emergence_simulation_pooled_median_under_half_pct",
+      "distant_island_emergence_simulation_headline_median_under_half_pct",
+      "distant_island_emergence_simulation_beats_sota_headlines_pos",
+      "distant_island_emergence_simulation_bundle"
+    ],
+    "DistantIslandZ128Z132DeepPanelPriors": [
+      "distant_island_z128_z132_deep_panel_observable_count_pos",
+      "distant_island_z128_z132_deep_panel_pooled_median_under_half_pct",
+      "distant_island_z128_z132_deep_panel_headline_median_under_half_pct",
+      "distant_island_z128_z132_deep_panel_beats_sota_headlines_pos",
+      "distant_island_z128_z132_deep_panel_bundle"
     ],
     "DomainCouplingSimulationPriors": [
       "domain_coupling_node_count_pos",
@@ -2021,6 +2052,13 @@
       "fpc_spine_spine_edges_pos",
       "fpc_spine_bundle"
     ],
+    "FluidSpacetimeObservableSpinePriors": [
+      "fluid_spacetime_observable_spine_observable_count_pos",
+      "fluid_spacetime_observable_spine_pooled_median_under_half_pct",
+      "fluid_spacetime_observable_spine_headline_median_under_half_pct",
+      "fluid_spacetime_observable_spine_beats_sota_headlines_pos",
+      "fluid_spacetime_observable_spine_bundle"
+    ],
     "FoldDepthMetricsPriors": [
       "fold_dep_observable_count_pos",
       "fold_dep_pooled_median_under_half_pct",
@@ -2069,6 +2107,13 @@
       "formula_precision_spine_headline_median_under_half_pct",
       "formula_precision_spine_beats_sota_headlines_pos",
       "formula_precision_spine_bundle"
+    ],
+    "FpcFluidlinkTimingDeepPanelPriors": [
+      "fpc_fluidlink_timing_deep_panel_observable_count_pos",
+      "fpc_fluidlink_timing_deep_panel_pooled_median_under_half_pct",
+      "fpc_fluidlink_timing_deep_panel_headline_median_under_half_pct",
+      "fpc_fluidlink_timing_deep_panel_beats_sota_headlines_pos",
+      "fpc_fluidlink_timing_deep_panel_bundle"
     ],
     "FPCTemporalCouplingPriors": [
       "fpc_link_observable_count_pos",
@@ -2259,6 +2304,13 @@
       "hubble_tension_beats_sota_headlines_pos",
       "hubble_tension_h0_sectors_pos",
       "hubble_tension_bundle"
+    ],
+    "HubbleDarkSectorCrosswalkPriors": [
+      "hubble_dark_sector_crosswalk_observable_count_pos",
+      "hubble_dark_sector_crosswalk_pooled_median_under_half_pct",
+      "hubble_dark_sector_crosswalk_headline_median_under_half_pct",
+      "hubble_dark_sector_crosswalk_beats_sota_headlines_pos",
+      "hubble_dark_sector_crosswalk_bundle"
     ],
     "HvacThermalSystemsPriors": [
       "hvac_thermal_systems_observable_count_pos",
@@ -2815,12 +2867,26 @@
       "particle_physics_max_error_under_half_pct",
       "particle_physics_bundle"
     ],
+    "PeriodicExtensionDecayTopologyScaffoldPriors": [
+      "periodic_extension_decay_topology_scaffold_observable_count_pos",
+      "periodic_extension_decay_topology_scaffold_pooled_median_under_half_pct",
+      "periodic_extension_decay_topology_scaffold_headline_median_under_half_pct",
+      "periodic_extension_decay_topology_scaffold_beats_sota_headlines_pos",
+      "periodic_extension_decay_topology_scaffold_bundle"
+    ],
     "PeriodicTableCompletionSpinePriors": [
       "periodic_table_completion_spine_observable_count_pos",
       "periodic_table_completion_spine_pooled_median_under_half_pct",
       "periodic_table_completion_spine_headline_median_under_half_pct",
       "periodic_table_completion_spine_beats_sota_headlines_pos",
       "periodic_table_completion_spine_bundle"
+    ],
+    "PeriodicTableExtensionClosureSpinePriors": [
+      "periodic_table_extension_closure_spine_observable_count_pos",
+      "periodic_table_extension_closure_spine_pooled_median_under_half_pct",
+      "periodic_table_extension_closure_spine_headline_median_under_half_pct",
+      "periodic_table_extension_closure_spine_beats_sota_headlines_pos",
+      "periodic_table_extension_closure_spine_bundle"
     ],
     "PeriodicTablePublicPanelPriors": [
       "periodic_table_public_panel_observable_count_pos",
@@ -3346,6 +3412,13 @@
       "time_xw_crosswalk_domains_pos",
       "time_xw_bundle"
     ],
+    "TimeEmergenceDeepPanelPriors": [
+      "time_emergence_deep_panel_observable_count_pos",
+      "time_emergence_deep_panel_pooled_median_under_half_pct",
+      "time_emergence_deep_panel_headline_median_under_half_pct",
+      "time_emergence_deep_panel_beats_sota_headlines_pos",
+      "time_emergence_deep_panel_bundle"
+    ],
     "TimeEmergenceSimulationPriors": [
       "time_em_observable_count_pos",
       "time_em_pooled_median_under_half_pct",
@@ -3517,6 +3590,13 @@
       "z120_z126_beam_synthesis_panel_beats_sota_headlines_pos",
       "z120_z126_beam_synthesis_panel_bundle"
     ],
+    "Z164DistantIslandPreregScaffoldPriors": [
+      "z164_distant_island_prereg_scaffold_observable_count_pos",
+      "z164_distant_island_prereg_scaffold_pooled_median_under_half_pct",
+      "z164_distant_island_prereg_scaffold_headline_median_under_half_pct",
+      "z164_distant_island_prereg_scaffold_beats_sota_headlines_pos",
+      "z164_distant_island_prereg_scaffold_bundle"
+    ],
     "ZeroDayRiskEvaluatorPriors": [
       "zero_day_eval_observable_count_pos",
       "zero_day_eval_pooled_median_under_half_pct",
@@ -3553,8 +3633,8 @@
     "data/proof_ledger.yaml": "5CEB56FC9C4E9C4827364DB65313E586B913D2A2185F22CA5827699146FEBBFB",
     "data/canonical_constants.json": "EBDE736E5139FCBF32868346E6BDEF576FE6F86BF341F2ADC1318069155D3B16"
   },
-  "formal_module_count": 300,
-  "lean_target_count": 301,
+  "formal_module_count": 310,
+  "lean_target_count": 311,
   "reproduce": {
     "sync_constants": "python scripts/sync_canonical_constants.py",
     "verify_portable": "python scripts/fsot_verification_runner.py --portable",

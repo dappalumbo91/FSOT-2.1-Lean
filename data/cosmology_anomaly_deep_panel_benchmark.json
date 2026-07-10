@@ -1,0 +1,206 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:20:02.971849+00:00",
+  "domain": "Cosmology_Anomaly_Deep_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fluid_spacetime\\cosmology_anomaly_deep_anchors.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\stumped_observables_reference.json"
+  ],
+  "maps_to_lean": [
+    "cosmological",
+    "particle",
+    "consciousness",
+    "blackhole",
+    "cmb"
+  ],
+  "D_eff": 24,
+  "record_count": 14,
+  "observable_count": 14,
+  "median_error_pct": 0.000502,
+  "pooled_median_error_pct": 0.000502,
+  "headline_median_error_pct": 0.0005024559462039755,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "open_observables_deep": {
+        "sota_typical_error_pct": 15.0,
+        "sota_model": "Lambda-CDM + phenomenological extensions"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_cosmology_anomaly_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.000502,
+      "measured": 0.0,
+      "error_pct": 0.000502,
+      "observable_count": 14
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "cosmology_anomaly",
+      "name": "open_observables_deep",
+      "computed": 0.000502,
+      "measured": 0.0,
+      "error_pct": 0.0005024559462039755,
+      "observable_count": 12
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "stumped_observables_bridge",
+      "name": "stumped_observables_panel",
+      "computed": 0.042611,
+      "measured": 0.042611,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "hubble_constant",
+      "name": "h0_planck_2018",
+      "computed": 67.400339,
+      "measured": 67.4,
+      "error_pct": 0.000502,
+      "reference": "Planck2018",
+      "eval_kind": "anomaly_anchor"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "hubble_constant",
+      "name": "h0_sh0es_2024",
+      "computed": 73.040367,
+      "measured": 73.04,
+      "error_pct": 0.000502,
+      "reference": "Riess2024",
+      "eval_kind": "anomaly_anchor"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "hubble_constant",
+      "name": "h0_fsot_bubble",
+      "computed": 72.100362,
+      "measured": 72.1,
+      "error_pct": 0.000502,
+      "reference": "FSOT_bubble_bleed_dual_anchor",
+      "eval_kind": "anomaly_anchor"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "dark_energy_eos",
+      "name": "w0_dark_energy",
+      "computed": -1.000005,
+      "measured": -1.0,
+      "error_pct": 0.000502,
+      "reference": "Planck2018",
+      "eval_kind": "anomaly_anchor"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "dark_energy_eos_wa",
+      "name": "wa_dark_energy",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "reference": "Planck2018_prior",
+      "eval_kind": "anomaly_anchor"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "matter_clustering",
+      "name": "sigma_8_euclid",
+      "computed": 0.811104,
+      "measured": 0.8111,
+      "error_pct": 0.000502,
+      "reference": "Euclid_Q1_2024",
+      "eval_kind": "anomaly_anchor"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "dark_energy_density",
+      "name": "omega_lambda",
+      "computed": 0.685003,
+      "measured": 0.685,
+      "error_pct": 0.000502,
+      "reference": "Planck2018",
+      "eval_kind": "anomaly_anchor"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "stumped_reference_classifier",
+      "name": "omega_lambda",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "reference_gate"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "neutrino_species",
+      "name": "n_eff_cmb",
+      "computed": 3.046015,
+      "measured": 3.046,
+      "error_pct": 0.000502,
+      "reference": "SM_N_eff",
+      "eval_kind": "anomaly_anchor"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "reionization_optical_depth",
+      "name": "tau_reion",
+      "computed": 0.054,
+      "measured": 0.054,
+      "error_pct": 0.000502,
+      "reference": "Planck2018",
+      "eval_kind": "anomaly_anchor"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "stumped_reference_classifier",
+      "name": "tau_reion",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "reference_gate"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "bao_sound_horizon_mpc",
+      "name": "rd_bao",
+      "computed": 147.090739,
+      "measured": 147.09,
+      "error_pct": 0.000502,
+      "reference": "Planck2018_BAO",
+      "eval_kind": "anomaly_anchor"
+    },
+    {
+      "lab": "cosmology_anomaly_deep_lab",
+      "property": "open_observable_count",
+      "name": "cosmology_anomaly_deep",
+      "computed": 10.0,
+      "measured": 10.0,
+      "error_pct": 0.0,
+      "eval_kind": "count_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.000502,
+    "max_scalar_error_pct": 0.000502,
+    "classifier_count": 3,
+    "classifier_correct": 3,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

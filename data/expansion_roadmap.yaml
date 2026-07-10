@@ -1,5 +1,5 @@
 # FSOT interdisciplinary expansion roadmap — public-data first, preregister before novel claims.
-version: "1.8"
+version: "1.9"
 updated: "2026-07-10"
 policy: >
   Ship verification against published observables in-repo. Reserve novel material,
@@ -107,8 +107,28 @@ completed_tiers:
     - Fusion_Decay_Chain_Prereg_Scaffold
     - Superheavy_Island_Emergence_Simulation
     - Superheavy_Island_Completion_Spine
+  tier_75:
+    - Distant_Island_Z128_Z132_Deep_Panel
+    - Z164_Distant_Island_Prereg_Scaffold
+    - Periodic_Extension_Decay_Topology_Scaffold
+    - Distant_Island_Emergence_Simulation
+    - Periodic_Table_Extension_Closure_Spine
+  tier_76:
+    - Time_Emergence_Deep_Panel
+    - FPC_Fluidlink_Timing_Deep_Panel
+    - Cosmology_Anomaly_Deep_Panel
+    - Hubble_Dark_Sector_Crosswalk
+    - Fluid_Spacetime_Observable_Spine
 
 priority_queue:
+  tier_76_fluid_spacetime_cosmology:
+    status: completed
+    focus: [time_emergence_deep, fpc_fluidlink, cosmology_anomalies, hubble_dark_crosswalk]
+    note: "Fluid spacetime observable universe — time emergence + FPC tau + Hubble/dark-sector deepening"
+  tier_75_periodic_extension_closure:
+    status: completed
+    focus: [z128_z132_distant_island, z164_prereg, decay_topology, extension_closure_spine]
+    note: "Periodic extension arc CLOSED at Z=164 — distant island + decay topology + Tiers 71-75 spine"
   tier_74_superheavy_island_deepening:
     status: completed
     focus: [island_z120_z126, beam_synthesis, fusion_decay_chains, island_emergence_sim]
@@ -145,15 +165,18 @@ priority_queue:
     note: "Publication-facing ToE claim bundle — proof ledger + prereg outcomes + certificate"
 
 maintenance_queue:
-  post_tier_74:
+  post_tier_76:
     status: ongoing
     focus:
       - hybrid_fi_sim_multi_hero
       - knowledge_base_portable_bundle
       - rd_interval_tightening
       - domain_coupling_simulation_refresh
-      - island_decay_chain_experimental_validation
-    note: "Ongoing upkeep after Tier 74 island deepening — FI sim, KB bundle, r_d tightening, Z=120-126 prereg validation"
+      - fluid_spacetime_prereg_validation
+    note: "Ongoing upkeep after Tier 76 fluid spacetime — FI sim, KB bundle, coupling sim refresh, H0/FPC prereg validation"
+  post_tier_74:
+    status: completed
+    note: "Superseded — periodic extension closed at Tier 75"
   post_tier_73:
     status: completed
     note: "Superseded by post_tier_74 maintenance queue"

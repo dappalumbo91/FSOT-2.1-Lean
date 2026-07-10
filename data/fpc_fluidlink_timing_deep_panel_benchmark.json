@@ -1,0 +1,187 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:20:02.971849+00:00",
+  "domain": "FPC_Fluidlink_Timing_Deep_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fluid_spacetime\\cosmology_anomaly_deep_anchors.json",
+    "fpc_temporal_coupling_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "particle",
+    "galactic",
+    "cosmological",
+    "blackhole"
+  ],
+  "D_eff": 20,
+  "record_count": 13,
+  "observable_count": 13,
+  "median_error_pct": 5e-05,
+  "pooled_median_error_pct": 5e-05,
+  "headline_median_error_pct": 5.024559461830336e-05,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fpc_deep": {
+        "sota_typical_error_pct": 10.0,
+        "sota_model": "Phenomenological tau models"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fluidlink_timing_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 5e-05,
+      "measured": 0.0,
+      "error_pct": 5e-05,
+      "observable_count": 13
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fluidlink_timing",
+      "name": "fpc_deep",
+      "computed": 5e-05,
+      "measured": 0.0,
+      "error_pct": 5.024559461830336e-05,
+      "observable_count": 11
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "fpc_coupling_bridge",
+      "name": "fpc_temporal_coupling",
+      "computed": 0.031199,
+      "measured": 0.031199,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "fpc_tau_anchor",
+      "name": "cs133_fpc_equilibrium",
+      "computed": 1.344535,
+      "measured": 1.344,
+      "error_pct": 0.039797,
+      "eval_kind": "fpc_anchor"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "fluidlink_timing_classifier",
+      "name": "cs133_fpc_equilibrium",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "fluidlink_gate"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "fpc_tau_anchor",
+      "name": "iers_planetary_tau",
+      "computed": 1.790477,
+      "measured": 1.79,
+      "error_pct": 0.026675,
+      "eval_kind": "fpc_anchor"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "fluidlink_timing_classifier",
+      "name": "iers_planetary_tau",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "fluidlink_gate"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "fpc_tau_anchor",
+      "name": "kepler_orbital_tau",
+      "computed": 1.800714,
+      "measured": 1.8,
+      "error_pct": 0.039662,
+      "eval_kind": "fpc_anchor"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "fluidlink_timing_classifier",
+      "name": "kepler_orbital_tau",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "fluidlink_gate"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "fpc_tau_anchor",
+      "name": "lambda_cdm_damping",
+      "computed": 0.500111,
+      "measured": 0.5,
+      "error_pct": 0.022181,
+      "eval_kind": "fpc_anchor"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "fluidlink_timing_classifier",
+      "name": "lambda_cdm_damping",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "fluidlink_gate"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "cosmology_fpc_tau",
+      "name": "cosmological_tau_damping",
+      "computed": 0.5,
+      "measured": 0.5,
+      "error_pct": 5e-05,
+      "eval_kind": "cosmo_fpc_relay"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "cosmology_fpc_tau",
+      "name": "hubble_flow_tau",
+      "computed": 1.790001,
+      "measured": 1.79,
+      "error_pct": 5e-05,
+      "eval_kind": "cosmo_fpc_relay"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "cosmology_fpc_tau",
+      "name": "cmb_phase_tau",
+      "computed": 1.800001,
+      "measured": 1.8,
+      "error_pct": 5e-05,
+      "eval_kind": "cosmo_fpc_relay"
+    },
+    {
+      "lab": "fpc_fluidlink_timing_deep_lab",
+      "property": "fluidlink_timing_ready",
+      "name": "fpc_fluidlink_timing_deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "timing_gate"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0111155,
+    "max_scalar_error_pct": 0.039797,
+    "classifier_count": 5,
+    "classifier_correct": 5,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

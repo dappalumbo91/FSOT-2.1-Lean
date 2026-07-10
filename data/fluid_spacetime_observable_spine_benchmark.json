@@ -1,0 +1,447 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:20:42.293452+00:00",
+  "domain": "Fluid_Spacetime_Observable_Spine",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fluid_spacetime\\cosmology_anomaly_deep_anchors.json",
+    "fluid_phase_current_spine_benchmark.json",
+    "stumped_observables_spine_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "particle",
+    "galactic",
+    "cosmological",
+    "blackhole",
+    "cmb"
+  ],
+  "D_eff": 26,
+  "record_count": 37,
+  "observable_count": 37,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.000502,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "observable_universe_spine": {
+        "sota_typical_error_pct": 25.0,
+        "sota_model": "No unified fluid-spacetime observable certificate"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_fluid_spacetime_certificate_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 37
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "fluid_spacetime_certificate",
+      "name": "observable_universe_spine",
+      "computed": 0.000502,
+      "measured": 0.0,
+      "error_pct": 0.000502,
+      "observable_count": 30
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "panel_pooled_median",
+      "name": "time_emergence_deep",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "record_count": 17,
+      "eval_kind": "fluid_spacetime_bridge"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "time_emergence_bridge",
+      "name": "time_emergence_simulation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "source_panel": "time_emergence_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "physical_anchor",
+      "name": "cs133_hyperfine_hz",
+      "computed": 9192631770.0,
+      "measured": 9192631770.0,
+      "error_pct": 0.0,
+      "source_panel": "time_emergence_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "physical_anchor",
+      "name": "earth_sidereal_omega_rad_s",
+      "computed": 7.292115857915991e-05,
+      "measured": 7.292115857915991e-05,
+      "error_pct": 0.0,
+      "source_panel": "time_emergence_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "physical_anchor",
+      "name": "moon_sidereal_omega_rad_s",
+      "computed": 2.6616995272150692e-06,
+      "measured": 2.6616995272150692e-06,
+      "error_pct": 0.0,
+      "source_panel": "time_emergence_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "physical_anchor",
+      "name": "hubble_h0_km_s_mpc",
+      "computed": 68.44005682979427,
+      "measured": 68.44005682979427,
+      "error_pct": 0.0,
+      "source_panel": "time_emergence_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "panel_pooled_median",
+      "name": "fpc_fluidlink_deep",
+      "computed": 5e-05,
+      "measured": 5e-05,
+      "error_pct": 0.0,
+      "record_count": 13,
+      "eval_kind": "fluid_spacetime_bridge"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "fpc_coupling_bridge",
+      "name": "fpc_temporal_coupling",
+      "computed": 0.031199,
+      "measured": 0.031199,
+      "error_pct": 0.0,
+      "source_panel": "fpc_fluidlink_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "fpc_tau_anchor",
+      "name": "cs133_fpc_equilibrium",
+      "computed": 1.344535,
+      "measured": 1.344,
+      "error_pct": 0.039797,
+      "source_panel": "fpc_fluidlink_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "fluidlink_timing_classifier",
+      "name": "cs133_fpc_equilibrium",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "fpc_fluidlink_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "fpc_tau_anchor",
+      "name": "iers_planetary_tau",
+      "computed": 1.790477,
+      "measured": 1.79,
+      "error_pct": 0.026675,
+      "source_panel": "fpc_fluidlink_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "fluidlink_timing_classifier",
+      "name": "iers_planetary_tau",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source_panel": "fpc_fluidlink_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "panel_pooled_median",
+      "name": "cosmology_anomaly_deep",
+      "computed": 0.000502,
+      "measured": 0.000502,
+      "error_pct": 0.0,
+      "record_count": 14,
+      "eval_kind": "fluid_spacetime_bridge"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "stumped_observables_bridge",
+      "name": "stumped_observables_panel",
+      "computed": 0.042611,
+      "measured": 0.042611,
+      "error_pct": 0.0,
+      "source_panel": "cosmology_anomaly_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "hubble_constant",
+      "name": "h0_planck_2018",
+      "computed": 67.400339,
+      "measured": 67.4,
+      "error_pct": 0.000502,
+      "source_panel": "cosmology_anomaly_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "hubble_constant",
+      "name": "h0_sh0es_2024",
+      "computed": 73.040367,
+      "measured": 73.04,
+      "error_pct": 0.000502,
+      "source_panel": "cosmology_anomaly_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "hubble_constant",
+      "name": "h0_fsot_bubble",
+      "computed": 72.100362,
+      "measured": 72.1,
+      "error_pct": 0.000502,
+      "source_panel": "cosmology_anomaly_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "dark_energy_eos",
+      "name": "w0_dark_energy",
+      "computed": -1.000005,
+      "measured": -1.0,
+      "error_pct": 0.000502,
+      "source_panel": "cosmology_anomaly_deep",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "panel_pooled_median",
+      "name": "hubble_dark_crosswalk",
+      "computed": 0.000502,
+      "measured": 0.000502,
+      "error_pct": 0.0,
+      "record_count": 20,
+      "eval_kind": "fluid_spacetime_bridge"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "panel_pooled_median",
+      "name": "hubble_bubble",
+      "computed": 0.462181,
+      "measured": 0.462181,
+      "error_pct": 0.0,
+      "source_panel": "hubble_dark_crosswalk",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "sector_h0_overlay",
+      "name": "global_cmb_background",
+      "computed": 68.440057,
+      "measured": 68.44005682979427,
+      "error_pct": 0.0,
+      "source_panel": "hubble_dark_crosswalk",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "sector_h0_overlay",
+      "name": "planck_cmb_local",
+      "computed": 67.383958,
+      "measured": 67.4,
+      "error_pct": 0.023801,
+      "source_panel": "hubble_dark_crosswalk",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "sector_h0_overlay",
+      "name": "sh0es_jwst",
+      "computed": 73.826159,
+      "measured": 73.04,
+      "error_pct": 1.076341,
+      "source_panel": "hubble_dark_crosswalk",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "sector_h0_overlay",
+      "name": "freedman_jwst",
+      "computed": 70.393839,
+      "measured": 70.39,
+      "error_pct": 0.005454,
+      "source_panel": "hubble_dark_crosswalk",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "panel_pooled_median",
+      "name": "fluid_phase_spine",
+      "computed": 0.009504,
+      "measured": 0.009504,
+      "error_pct": 0.0,
+      "record_count": 7,
+      "eval_kind": "fluid_spacetime_bridge"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "fpc_pillar",
+      "name": "time_emergence_simulation",
+      "computed": 28.0,
+      "measured": 28.0,
+      "error_pct": 0.0,
+      "source_panel": "fluid_phase_spine",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "fpc_pillar",
+      "name": "time_domain_crosswalk",
+      "computed": 160.0,
+      "measured": 160.0,
+      "error_pct": 0.025013,
+      "source_panel": "fluid_phase_spine",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "fpc_pillar",
+      "name": "fpc_temporal_coupling",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.031199,
+      "source_panel": "fluid_phase_spine",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "fluidlink_edges",
+      "name": "temporal_coupling",
+      "computed": 6.00057,
+      "measured": 6.0,
+      "error_pct": 0.009504,
+      "source_panel": "fluid_phase_spine",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "crosswalk_domains",
+      "name": "multi_domain_fpc",
+      "computed": 156.014826,
+      "measured": 156.0,
+      "error_pct": 0.009504,
+      "source_panel": "fluid_phase_spine",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "panel_pooled_median",
+      "name": "stumped_spine",
+      "computed": 0.042611,
+      "measured": 0.042611,
+      "error_pct": 0.0,
+      "record_count": 5,
+      "eval_kind": "fluid_spacetime_bridge"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "stumped_pillar",
+      "name": "stumped_observables_panel",
+      "computed": 13.0,
+      "measured": 13.0,
+      "error_pct": 0.042611,
+      "source_panel": "stumped_spine",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "stumped_pillar",
+      "name": "hubble_bubble_tension",
+      "computed": 6.0,
+      "measured": 6.0,
+      "error_pct": 0.462181,
+      "source_panel": "stumped_spine",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "stumped_pillar",
+      "name": "dark_sector_open_problems",
+      "computed": 7.0,
+      "measured": 7.0,
+      "error_pct": 0.006335,
+      "source_panel": "stumped_spine",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "cosmology_anomalies_link",
+      "name": "cosmology_anomalies_tier25",
+      "computed": 12.0,
+      "measured": 12.0,
+      "error_pct": 0.140126,
+      "source_panel": "stumped_spine",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "open_prediction_registry",
+      "name": "w_a_E_con_w0_tracked",
+      "computed": 5.0,
+      "measured": 5.0,
+      "error_pct": 0.0,
+      "source_panel": "stumped_spine",
+      "eval_kind": "fluid_spacetime_relay"
+    },
+    {
+      "lab": "fluid_spacetime_observable_lab",
+      "property": "fluid_spacetime_observable_ready",
+      "name": "fluid_spacetime_observable_spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "certificate_gate",
+      "domains": [
+        "time_emergence",
+        "fpc_fluidlink",
+        "cosmology_anomalies",
+        "hubble_dark_sector"
+      ]
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.000502,
+    "max_scalar_error_pct": 1.076341,
+    "classifier_count": 5,
+    "classifier_correct": 5,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": false
+  },
+  "fsot_precision_gate_pct": 0.5
+}

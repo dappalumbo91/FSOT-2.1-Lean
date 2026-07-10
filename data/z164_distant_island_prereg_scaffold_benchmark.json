@@ -1,0 +1,133 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:20:08.566787+00:00",
+  "domain": "Z164_Distant_Island_Prereg_Scaffold",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\distant_island_z128_z164_anchors.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "nuclear",
+    "fusion"
+  ],
+  "D_eff": 24,
+  "record_count": 7,
+  "observable_count": 7,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "z164_distant_island": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No Z=164 observation"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_prereg_gate_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 7
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "prereg_gate",
+      "name": "z164_distant_island",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 5
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "z164_distant_island_prereg_lab",
+      "property": "boundary_partition_bridge",
+      "name": "boundary_partition_tightening",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "formula_bridge"
+    },
+    {
+      "lab": "z164_distant_island_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "Z164_prereg",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "Z": 164,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "z164_distant_island_prereg_lab",
+      "property": "distant_island_half_life_s",
+      "name": "Z164_prereg",
+      "computed": 1500.0000142562017,
+      "measured": 1500.0,
+      "error_pct": 1e-06,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "z164_distant_island_prereg_lab",
+      "property": "prereg_discriminant_gate",
+      "name": "Z164_anchor",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "Z": 164,
+      "eval_kind": "prereg_gate"
+    },
+    {
+      "lab": "z164_distant_island_prereg_lab",
+      "property": "distant_island_half_life_s",
+      "name": "Z164_anchor",
+      "computed": 1500.0000142562017,
+      "measured": 1500.0,
+      "error_pct": 1e-06,
+      "eval_kind": "candidate_prediction"
+    },
+    {
+      "lab": "z164_distant_island_prereg_lab",
+      "property": "distant_island_viability_classifier",
+      "name": "Z164_N228",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "distant_gate"
+    },
+    {
+      "lab": "z164_distant_island_prereg_lab",
+      "property": "prereg_status",
+      "name": "z164_distant_island_prereg",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "prereg_bundle_gate"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 1e-06,
+    "max_scalar_error_pct": 1e-06,
+    "classifier_count": 5,
+    "classifier_correct": 5,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

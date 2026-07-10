@@ -1,4 +1,4 @@
-generated_at: '2026-07-10T19:15:00.383429+00:00'
+generated_at: '2026-07-10T19:20:53.914079+00:00'
 theory:
   name: Fluid Spacetime Omni-Theory
   acronym: FSOT
@@ -6,15 +6,15 @@ theory:
   verification_standard: Per-record numeric precision + Lean certificate bundles;
     0 sorry
 verification_summary:
-  lean_formal_modules: 300
+  lean_formal_modules: 310
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
   tiers_complete: 48
   tiers_total: 48
   percent_complete: 100.0
-current_tier: Tier 74 Superheavy island deepening — 230/230 extension domains verified,
-  Z=120-126 island anchors + beam synthesis + fusion decay chain prereg
+current_tier: Tier 76 Fluid spacetime observable universe — 240/240 extension domains
+  verified, periodic extension CLOSED (Tier 75 Z=164) + time/FPC/cosmology deepening
 proved_claims:
 - id: cosmological_raw_S_negative
   claim: raw_S(cosmological) < 0
@@ -484,6 +484,7 @@ tier_coverage:
   - ConsciousnessGalacticOrbitalBridgePriors
   - ConsciousnessSoulBridgePriors
   - CosmologyAnomaliesPriors
+  - CosmologyAnomalyDeepPanelPriors
   - CosmologyExtendedPriors
   - CosmologyHigherWavesPriors
   - CosmologyLab
@@ -500,6 +501,8 @@ tier_coverage:
   - CulinaryArtsPriors
   - DarkEnergyCPLPriors
   - DarkSectorOpenProblemsPriors
+  - DistantIslandEmergenceSimulationPriors
+  - DistantIslandZ128Z132DeepPanelPriors
   - DomainCouplingSimulationPriors
   - DomainCoveragePriors
   - DomainOrbitalPredictionsPriors
@@ -526,6 +529,7 @@ tier_coverage:
   - FinanceMarketsExtensionPriors
   - FluidDynamicsGapFillPriors
   - FluidPhaseCurrentSpinePriors
+  - FluidSpacetimeObservableSpinePriors
   - FoldDepthMetricsPriors
   - FoodMicrobiologyGapFillPriors
   - FormulaBranchingFractalPriors
@@ -533,6 +537,7 @@ tier_coverage:
   - FormulaCorpusCncPriors
   - FormulaCorpusPriors
   - FormulaPrecisionSpinePriors
+  - FpcFluidlinkTimingDeepPanelPriors
   - FractalConstantRecursionPriors
   - FsotAggregateOrganizedPanelPriors
   - FsotAggregateUnifiedDbPriors
@@ -557,6 +562,7 @@ tier_coverage:
   - HiggsMassPriors
   - HistoryExtensionPriors
   - HubbleBubbleTensionPriors
+  - HubbleDarkSectorCrosswalkPriors
   - HvacThermalSystemsPriors
   - HydrologyPriors
   - IGEMLiveFastaPriors
@@ -633,7 +639,9 @@ tier_coverage:
   - ParticleNeuralOrbitalBridgePriors
   - ParticlePhysicsGapFillPriors
   - ParticlePhysicsPriors
+  - PeriodicExtensionDecayTopologyScaffoldPriors
   - PeriodicTableCompletionSpinePriors
+  - PeriodicTableExtensionClosureSpinePriors
   - PeriodicTablePublicPanelPriors
   - PharmacokineticsGapFillPriors
   - PharmacologyPriors
@@ -699,6 +707,7 @@ tier_coverage:
   - TheoryCompletenessSpinePriors
   - ThesisSimulationPriors
   - TimeDomainCrosswalkPriors
+  - TimeEmergenceDeepPanelPriors
   - TimeEmergenceSimulationPriors
   - ToEClaimCertificateBundlePriors
   - ToEGapClosureSpinePriors
@@ -726,6 +735,7 @@ tier_coverage:
   - WorldBankDevelopmentPriors
   - XRInteractiveMediaMathScaffoldPriors
   - Z120Z126BeamSynthesisPanelPriors
+  - Z164DistantIslandPreregScaffoldPriors
   - ZeroDayRiskEvaluatorPriors
   - ZoologyExtensionPriors
 - tier: 7
@@ -2967,6 +2977,46 @@ extension_domains:
   tier: 74
   record_count: 43
   lean_module: FSOT.Formal.SuperheavyIslandCompletionSpinePriors
+- domain: Distant_Island_Z128_Z132_Deep_Panel
+  tier: 75
+  record_count: 14
+  lean_module: FSOT.Formal.DistantIslandZ128Z132DeepPanelPriors
+- domain: Z164_Distant_Island_Prereg_Scaffold
+  tier: 75
+  record_count: 7
+  lean_module: FSOT.Formal.Z164DistantIslandPreregScaffoldPriors
+- domain: Periodic_Extension_Decay_Topology_Scaffold
+  tier: 75
+  record_count: 19
+  lean_module: FSOT.Formal.PeriodicExtensionDecayTopologyScaffoldPriors
+- domain: Distant_Island_Emergence_Simulation
+  tier: 75
+  record_count: 36
+  lean_module: FSOT.Formal.DistantIslandEmergenceSimulationPriors
+- domain: Periodic_Table_Extension_Closure_Spine
+  tier: 75
+  record_count: 41
+  lean_module: FSOT.Formal.PeriodicTableExtensionClosureSpinePriors
+- domain: Time_Emergence_Deep_Panel
+  tier: 76
+  record_count: 17
+  lean_module: FSOT.Formal.TimeEmergenceDeepPanelPriors
+- domain: FPC_Fluidlink_Timing_Deep_Panel
+  tier: 76
+  record_count: 13
+  lean_module: FSOT.Formal.FpcFluidlinkTimingDeepPanelPriors
+- domain: Cosmology_Anomaly_Deep_Panel
+  tier: 76
+  record_count: 14
+  lean_module: FSOT.Formal.CosmologyAnomalyDeepPanelPriors
+- domain: Hubble_Dark_Sector_Crosswalk
+  tier: 76
+  record_count: 20
+  lean_module: FSOT.Formal.HubbleDarkSectorCrosswalkPriors
+- domain: Fluid_Spacetime_Observable_Spine
+  tier: 76
+  record_count: 37
+  lean_module: FSOT.Formal.FluidSpacetimeObservableSpinePriors
 theory_crosswalk:
   Aerospace_Engineering:
     tier: 20
@@ -3709,6 +3759,7 @@ lean_formal_modules:
 - ConsciousnessGalacticOrbitalBridgePriors
 - ConsciousnessSoulBridgePriors
 - CosmologyAnomaliesPriors
+- CosmologyAnomalyDeepPanelPriors
 - CosmologyExtendedPriors
 - CosmologyHigherWavesPriors
 - CosmologyLab
@@ -3725,6 +3776,8 @@ lean_formal_modules:
 - CulinaryArtsPriors
 - DarkEnergyCPLPriors
 - DarkSectorOpenProblemsPriors
+- DistantIslandEmergenceSimulationPriors
+- DistantIslandZ128Z132DeepPanelPriors
 - DomainCouplingSimulationPriors
 - DomainCoveragePriors
 - DomainOrbitalPredictionsPriors
@@ -3751,6 +3804,7 @@ lean_formal_modules:
 - FinanceMarketsExtensionPriors
 - FluidDynamicsGapFillPriors
 - FluidPhaseCurrentSpinePriors
+- FluidSpacetimeObservableSpinePriors
 - FoldDepthMetricsPriors
 - FoodMicrobiologyGapFillPriors
 - FormulaBranchingFractalPriors
@@ -3758,6 +3812,7 @@ lean_formal_modules:
 - FormulaCorpusCncPriors
 - FormulaCorpusPriors
 - FormulaPrecisionSpinePriors
+- FpcFluidlinkTimingDeepPanelPriors
 - FractalConstantRecursionPriors
 - FsotAggregateOrganizedPanelPriors
 - FsotAggregateUnifiedDbPriors
@@ -3782,6 +3837,7 @@ lean_formal_modules:
 - HiggsMassPriors
 - HistoryExtensionPriors
 - HubbleBubbleTensionPriors
+- HubbleDarkSectorCrosswalkPriors
 - HvacThermalSystemsPriors
 - HydrologyPriors
 - IGEMLiveFastaPriors
@@ -3858,7 +3914,9 @@ lean_formal_modules:
 - ParticleNeuralOrbitalBridgePriors
 - ParticlePhysicsGapFillPriors
 - ParticlePhysicsPriors
+- PeriodicExtensionDecayTopologyScaffoldPriors
 - PeriodicTableCompletionSpinePriors
+- PeriodicTableExtensionClosureSpinePriors
 - PeriodicTablePublicPanelPriors
 - PharmacokineticsGapFillPriors
 - PharmacologyPriors
@@ -3923,6 +3981,7 @@ lean_formal_modules:
 - TheoryCompletenessSpinePriors
 - ThesisSimulationPriors
 - TimeDomainCrosswalkPriors
+- TimeEmergenceDeepPanelPriors
 - TimeEmergenceSimulationPriors
 - ToEClaimCertificateBundlePriors
 - ToEGapClosureSpinePriors
@@ -3950,6 +4009,7 @@ lean_formal_modules:
 - WorldBankDevelopmentPriors
 - XRInteractiveMediaMathScaffoldPriors
 - Z120Z126BeamSynthesisPanelPriors
+- Z164DistantIslandPreregScaffoldPriors
 - ZeroDayRiskEvaluatorPriors
 - ZoologyExtensionPriors
 certificate_path: data/certificate.json

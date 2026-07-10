@@ -231,3 +231,58 @@ predictions:
     sota_label: "Z=126 not yet synthesized"
     discriminant: "fsot_exceeds_sota_by_0.4"
     registered_at: "2026-07-10"
+
+  - id: PRED-021
+    name: Z132_N184_superheavy_shell_peak
+    domain: Distant_Island_Z128_Z132_Deep_Panel
+    fsot_formula_branch: term1.term1_base
+    fsot_predicted: 3.1e7
+    unit: half_life_s
+    sota_baseline: 0.0
+    sota_label: "Not yet synthesized"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-022
+    name: Z164_N228_distant_island
+    domain: Z164_Distant_Island_Prereg_Scaffold
+    fsot_formula_branch: term3.boundary_partition
+    fsot_predicted: 1.5e3
+    unit: half_life_s
+    sota_baseline: 0.0
+    sota_label: "Not yet synthesized"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-023
+    name: periodic_extension_decay_topology_Z164
+    domain: Periodic_Extension_Decay_Topology_Scaffold
+    fsot_formula_branch: term1.initiation_transformation
+    fsot_predicted: 164
+    unit: atomic_number
+    sota_baseline: 118
+    sota_label: "IUPAC confirmed ceiling"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-024
+    name: h0_dual_anchor_bubble_bleed
+    domain: Hubble_Dark_Sector_Crosswalk
+    fsot_formula_branch: term3.acoustic_bleed
+    fsot_predicted: 72.1
+    unit: "km/s/Mpc"
+    sota_baseline: 67.4
+    sota_label: "Planck CMB H0"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"
+
+  - id: PRED-025
+    name: fpc_cosmological_tau_damping
+    domain: FPC_Fluidlink_Timing_Deep_Panel
+    fsot_formula_branch: term1.coherence_efficiency
+    fsot_predicted: 0.50
+    unit: dimensionless_tau
+    sota_baseline: 0.0
+    sota_label: "No unified FPC tau baseline"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    registered_at: "2026-07-10"

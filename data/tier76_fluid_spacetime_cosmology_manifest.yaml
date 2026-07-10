@@ -1,0 +1,15 @@
+version: "1.0"
+tier: 76
+domains:
+  - Time_Emergence_Deep_Panel
+  - FPC_Fluidlink_Timing_Deep_Panel
+  - Cosmology_Anomaly_Deep_Panel
+  - Hubble_Dark_Sector_Crosswalk
+  - Fluid_Spacetime_Observable_Spine
+build: scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py
+lean: scripts/gen_tiers_76_lean.py
+artifacts:
+  - vendor/fluid_spacetime/cosmology_anomaly_deep_anchors.json
+  - data/stumped_observables_reference.json
+  - data/time_emergence_simulation_benchmark.json
+note: "Fluid spacetime observable universe — time emergence deep + FPC fluidlink + cosmology anomalies + Hubble/dark-sector crosswalk"

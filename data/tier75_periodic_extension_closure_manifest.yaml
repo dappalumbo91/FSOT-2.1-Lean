@@ -1,0 +1,14 @@
+version: "1.0"
+tier: 75
+domains:
+  - Distant_Island_Z128_Z132_Deep_Panel
+  - Z164_Distant_Island_Prereg_Scaffold
+  - Periodic_Extension_Decay_Topology_Scaffold
+  - Distant_Island_Emergence_Simulation
+  - Periodic_Table_Extension_Closure_Spine
+build: scripts/build_tier75_periodic_extension_closure_benchmarks.py
+lean: scripts/gen_tiers_75_lean.py
+artifacts:
+  - vendor/superheavy_island/distant_island_z128_z164_anchors.json
+  - vendor/superheavy_island/decay_topology_prereg_candidates.json
+note: "Periodic extension arc closure — Z=128-132 distant island + Z=164 prereg + decay topology + Tiers 71-75 spine"

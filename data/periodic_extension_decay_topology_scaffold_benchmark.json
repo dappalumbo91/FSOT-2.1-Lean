@@ -1,0 +1,249 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:20:08.566787+00:00",
+  "domain": "Periodic_Extension_Decay_Topology_Scaffold",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\decay_topology_prereg_candidates.json",
+    "fusion_decay_chain_prereg_scaffold_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "fusion",
+    "particle",
+    "nuclear",
+    "energy"
+  ],
+  "D_eff": 22,
+  "record_count": 19,
+  "observable_count": 19,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "periodic_extension_graph": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No unified decay topology"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_decay_topology_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 19
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "decay_topology",
+      "name": "periodic_extension_graph",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 10
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "decay_topology_lab",
+      "property": "fusion_decay_chain_bridge",
+      "name": "fusion_decay_chain_prereg_scaffold",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_step_viability",
+      "name": "Z126_N184__Z128_N184",
+      "computed": 0.52,
+      "measured": 0.52,
+      "error_pct": 0.0,
+      "decay_mode": "alpha",
+      "eval_kind": "topology_edge"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_edge_classifier",
+      "name": "Z126_N184__Z128_N184",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "topology_gate"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_step_viability",
+      "name": "Z128_N184__Z132_N184",
+      "computed": 0.48,
+      "measured": 0.48,
+      "error_pct": 0.0,
+      "decay_mode": "fusion_capture",
+      "eval_kind": "topology_edge"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_edge_classifier",
+      "name": "Z128_N184__Z132_N184",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "topology_gate"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_step_viability",
+      "name": "Z132_N184__Z164_N228",
+      "computed": 0.35,
+      "measured": 0.35,
+      "error_pct": 0.0,
+      "decay_mode": "multi_neutron_capture",
+      "eval_kind": "topology_edge"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_edge_classifier",
+      "name": "Z132_N184__Z164_N228",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "topology_gate"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_step_viability",
+      "name": "pd_d_to_Z120_cascade__Z126_N184",
+      "computed": 0.58,
+      "measured": 0.58,
+      "error_pct": 0.0,
+      "decay_mode": "lab_chain_extension",
+      "eval_kind": "topology_edge"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_edge_classifier",
+      "name": "pd_d_to_Z120_cascade__Z126_N184",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "topology_gate"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_step_viability",
+      "name": "muon_dd_to_Z126_cascade__Z132_N184",
+      "computed": 0.44,
+      "measured": 0.44,
+      "error_pct": 0.0,
+      "decay_mode": "fusion_decay_extension",
+      "eval_kind": "topology_edge"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_edge_classifier",
+      "name": "muon_dd_to_Z126_cascade__Z132_N184",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "topology_gate"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_node_Z",
+      "name": "Z126_N184",
+      "computed": 126.0,
+      "measured": 126.0,
+      "error_pct": 0.0,
+      "role": "island_peak",
+      "eval_kind": "topology_node"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_node_Z",
+      "name": "Z128_N184",
+      "computed": 128.0,
+      "measured": 128.0,
+      "error_pct": 0.0,
+      "role": "shoulder",
+      "eval_kind": "topology_node"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_node_Z",
+      "name": "Z132_N184",
+      "computed": 132.0,
+      "measured": 132.0,
+      "error_pct": 0.0,
+      "role": "superheavy_peak",
+      "eval_kind": "topology_node"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_node_Z",
+      "name": "Z164_N228",
+      "computed": 164.0,
+      "measured": 164.0,
+      "error_pct": 0.0,
+      "role": "distant_island",
+      "eval_kind": "topology_node"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_screening_gate",
+      "name": "min_topology_viability",
+      "computed": 0.35,
+      "measured": 0.35,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_screening_gate",
+      "name": "max_topology_hops",
+      "computed": 4.0,
+      "measured": 4.0,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "topology_screening_gate",
+      "name": "periodic_extension_Z_ceiling",
+      "computed": 164.0,
+      "measured": 164.0,
+      "error_pct": 0.0,
+      "eval_kind": "screening_anchor"
+    },
+    {
+      "lab": "decay_topology_lab",
+      "property": "periodic_extension_Z_ceiling",
+      "name": "decay_topology_Z164",
+      "computed": 164.0,
+      "measured": 164.0,
+      "error_pct": 0.0,
+      "eval_kind": "topology_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 6,
+    "classifier_correct": 6,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

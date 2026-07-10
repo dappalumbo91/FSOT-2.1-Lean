@@ -1,0 +1,231 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:20:02.966715+00:00",
+  "domain": "Time_Emergence_Deep_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "time_emergence_simulation_benchmark.json"
+  ],
+  "maps_to_lean": [
+    "consciousness",
+    "particle",
+    "galactic",
+    "cosmological",
+    "blackhole"
+  ],
+  "D_eff": 19,
+  "record_count": 17,
+  "observable_count": 17,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 5.0245583893760355e-08,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "fpc_six_scale": {
+        "sota_typical_error_pct": 5.0,
+        "sota_model": "GR/SR clock synchronization"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_time_emergence_deep_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 17
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "time_emergence_deep",
+      "name": "fpc_six_scale",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 5.0245583893760355e-08,
+      "observable_count": 15
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "time_emergence_bridge",
+      "name": "time_emergence_simulation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "panel_bridge"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "physical_anchor",
+      "name": "cs133_hyperfine_hz",
+      "computed": 9192631770.0,
+      "measured": 9192631770.0,
+      "error_pct": 0.0,
+      "eval_kind": "time_relay"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "physical_anchor",
+      "name": "earth_sidereal_omega_rad_s",
+      "computed": 7.292115857915991e-05,
+      "measured": 7.292115857915991e-05,
+      "error_pct": 0.0,
+      "eval_kind": "time_relay"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "physical_anchor",
+      "name": "moon_sidereal_omega_rad_s",
+      "computed": 2.6616995272150692e-06,
+      "measured": 2.6616995272150692e-06,
+      "error_pct": 0.0,
+      "eval_kind": "time_relay"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "physical_anchor",
+      "name": "hubble_h0_km_s_mpc",
+      "computed": 68.44005682979427,
+      "measured": 68.44005682979427,
+      "error_pct": 0.0,
+      "eval_kind": "time_relay"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "physical_anchor",
+      "name": "schwarzschild_photon_sphere_dilation",
+      "computed": 0.5773502691896257,
+      "measured": 0.5773502691896257,
+      "error_pct": 0.0,
+      "eval_kind": "time_relay"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "fast_tick_log_ratio",
+      "name": "atomic_cs133",
+      "computed": 1.344299,
+      "measured": 1.344,
+      "error_pct": 0.022272,
+      "eval_kind": "time_relay"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "real_time_anchor",
+      "name": "cs133_hyperfine_hz",
+      "computed": 9192631774.61889,
+      "measured": 9192631770.0,
+      "error_pct": 0.0,
+      "unit": "Hz",
+      "eval_kind": "time_anchor"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "real_time_anchor",
+      "name": "earth_sidereal_period_s",
+      "computed": 86164.090543,
+      "measured": 86164.0905,
+      "error_pct": 0.0,
+      "unit": "s",
+      "eval_kind": "time_anchor"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "real_time_anchor",
+      "name": "earth_sidereal_omega_rad_s",
+      "computed": 7.3e-05,
+      "measured": 7.292115857915991e-05,
+      "error_pct": 0.0,
+      "unit": "rad/s",
+      "eval_kind": "time_anchor"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "real_time_anchor",
+      "name": "moon_sidereal_period_s",
+      "computed": 2360591.511586,
+      "measured": 2360591.5104,
+      "error_pct": 0.0,
+      "unit": "s",
+      "eval_kind": "time_anchor"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "real_time_anchor",
+      "name": "moon_sidereal_omega_rad_s",
+      "computed": 3e-06,
+      "measured": 2.6616995272150692e-06,
+      "error_pct": 0.0,
+      "unit": "rad/s",
+      "eval_kind": "time_anchor"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "real_time_anchor",
+      "name": "hubble_h0_km_s_mpc",
+      "computed": 68.440091,
+      "measured": 68.44005682979427,
+      "error_pct": 5e-05,
+      "unit": "km/s/Mpc",
+      "eval_kind": "time_anchor"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "real_time_anchor",
+      "name": "schwarzschild_photon_sphere_dilation",
+      "computed": 0.57735,
+      "measured": 0.5773502691896257,
+      "error_pct": 0.0,
+      "unit": "dimensionless",
+      "eval_kind": "time_anchor"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "real_time_anchor",
+      "name": "schwarzschild_isco_dilation",
+      "computed": 0.816497,
+      "measured": 0.816496580927726,
+      "error_pct": 0.0,
+      "unit": "dimensionless",
+      "eval_kind": "time_anchor"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "real_time_anchor",
+      "name": "gps_clock_advance_per_day_s",
+      "computed": 3.8e-05,
+      "measured": 3.8e-05,
+      "error_pct": 0.0,
+      "unit": "s/day",
+      "eval_kind": "time_anchor"
+    },
+    {
+      "lab": "time_emergence_deep_lab",
+      "property": "time_is_emergent",
+      "name": "fpc_time_emergence_flag",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.022272,
+    "classifier_count": 2,
+    "classifier_correct": 2,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

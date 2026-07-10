@@ -1,0 +1,11 @@
+{
+  "source": "Distant island-of-stability anchors Z=128-132 and Z=164 — periodic extension capstone",
+  "magic_numbers": {"proton": [114, 120, 126, 132, 164], "neutron": [184, 228]},
+  "distant_candidates": [
+    {"id": "Z128_N184", "Z": 128, "N": 184, "A": 312, "name": "Z=128 island shoulder", "predicted_half_life_s": 1.8e5, "binding_energy_per_nucleon_mev": 7.59, "magic_proximity": 4, "status": "theoretical"},
+    {"id": "Z130_N184", "Z": 130, "N": 184, "A": 314, "name": "Z=130 island mid-shell", "predicted_half_life_s": 5.2e6, "binding_energy_per_nucleon_mev": 7.63, "magic_proximity": 2, "status": "theoretical"},
+    {"id": "Z132_N184", "Z": 132, "N": 184, "A": 316, "name": "Z=132 superheavy shell peak", "predicted_half_life_s": 3.1e7, "binding_energy_per_nucleon_mev": 7.65, "magic_proximity": 0, "status": "island_peak_candidate"},
+    {"id": "Z132_N190", "Z": 132, "N": 190, "A": 322, "name": "Z=132 neutron-rich isomer", "predicted_half_life_s": 2.4e6, "binding_energy_per_nucleon_mev": 7.60, "magic_proximity": 6, "status": "theoretical_isomer"},
+    {"id": "Z164_N228", "Z": 164, "N": 228, "A": 392, "name": "Z=164 distant island", "predicted_half_life_s": 1.5e3, "binding_energy_per_nucleon_mev": 7.42, "magic_proximity": 0, "status": "distant_island_prereg"}
+  ]
+}

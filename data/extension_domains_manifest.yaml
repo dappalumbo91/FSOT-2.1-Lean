@@ -2984,6 +2984,136 @@ extension_domains:
     lean_module: FSOT.Formal.SuperheavyIslandCompletionSpinePriors
     note: "Superheavy island completion rollup — deep panel + beams + decay chains + emergence + Tier 72-73 bridges"
 
+  Distant_Island_Z128_Z132_Deep_Panel:
+    tier: 75
+    D_eff: 23
+    delta_psi: 0.92
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, nuclear, fusion, atomic]
+    build_script: scripts/build_tier75_periodic_extension_closure_benchmarks.py
+    manifest: data/tier75_periodic_extension_closure_manifest.yaml
+    benchmark_data: data/distant_island_z128_z132_deep_panel_benchmark.json
+    lean_module: FSOT.Formal.DistantIslandZ128Z132DeepPanelPriors
+    note: "Z=128-132 distant island deep anchors — half-lives, binding, magic proximity"
+
+  Z164_Distant_Island_Prereg_Scaffold:
+    tier: 75
+    D_eff: 24
+    delta_psi: 0.88
+    recent_hits: 2
+    observed: true
+    maps_to_lean: [particle, nuclear, fusion]
+    build_script: scripts/build_tier75_periodic_extension_closure_benchmarks.py
+    manifest: data/tier75_periodic_extension_closure_manifest.yaml
+    benchmark_data: data/z164_distant_island_prereg_scaffold_benchmark.json
+    lean_module: FSOT.Formal.Z164DistantIslandPreregScaffoldPriors
+    note: "Z=164 distant island prereg — periodic extension ceiling, not claimed synthesized"
+
+  Periodic_Extension_Decay_Topology_Scaffold:
+    tier: 75
+    D_eff: 22
+    delta_psi: 0.94
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [fusion, particle, nuclear, energy]
+    build_script: scripts/build_tier75_periodic_extension_closure_benchmarks.py
+    manifest: data/tier75_periodic_extension_closure_manifest.yaml
+    benchmark_data: data/periodic_extension_decay_topology_scaffold_benchmark.json
+    lean_module: FSOT.Formal.PeriodicExtensionDecayTopologyScaffoldPriors
+    note: "Decay topology graph Z=126→132→164 + fusion chain extensions prereg"
+
+  Distant_Island_Emergence_Simulation:
+    tier: 75
+    D_eff: 25
+    delta_psi: 0.9
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, nuclear, fusion, astronomical]
+    build_script: scripts/build_tier75_periodic_extension_closure_benchmarks.py
+    manifest: data/tier75_periodic_extension_closure_manifest.yaml
+    benchmark_data: data/distant_island_emergence_simulation_benchmark.json
+    lean_module: FSOT.Formal.DistantIslandEmergenceSimulationPriors
+    note: "Distant island emergence pathways — Z=128-164 fusion-decay-chain viability"
+
+  Periodic_Table_Extension_Closure_Spine:
+    tier: 75
+    D_eff: 26
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [particle, nuclear, fusion, atomic, material, energy]
+    build_script: scripts/build_tier75_periodic_extension_closure_benchmarks.py
+    manifest: data/tier75_periodic_extension_closure_manifest.yaml
+    benchmark_data: data/periodic_table_extension_closure_spine_benchmark.json
+    lean_module: FSOT.Formal.PeriodicTableExtensionClosureSpinePriors
+    note: "Periodic extension arc CLOSED — Tiers 71-75 rollup, Z ceiling 164"
+
+  Time_Emergence_Deep_Panel:
+    tier: 76
+    D_eff: 19
+    delta_psi: 0.95
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, particle, galactic, cosmological, blackhole]
+    build_script: scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py
+    manifest: data/tier76_fluid_spacetime_cosmology_manifest.yaml
+    benchmark_data: data/time_emergence_deep_panel_benchmark.json
+    lean_module: FSOT.Formal.TimeEmergenceDeepPanelPriors
+    note: "Time emergence deep panel — NIST/IERS/GR clock anchors + FPC six-scale bridge"
+
+  FPC_Fluidlink_Timing_Deep_Panel:
+    tier: 76
+    D_eff: 20
+    delta_psi: 0.94
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, particle, galactic, cosmological, blackhole]
+    build_script: scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py
+    manifest: data/tier76_fluid_spacetime_cosmology_manifest.yaml
+    benchmark_data: data/fpc_fluidlink_timing_deep_panel_benchmark.json
+    lean_module: FSOT.Formal.FpcFluidlinkTimingDeepPanelPriors
+    note: "FPC fluidlink timing deep — atomic/planetary/orbital/cosmic tau anchors"
+
+  Cosmology_Anomaly_Deep_Panel:
+    tier: 76
+    D_eff: 24
+    delta_psi: 0.96
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, particle, consciousness, blackhole, cmb]
+    build_script: scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py
+    manifest: data/tier76_fluid_spacetime_cosmology_manifest.yaml
+    benchmark_data: data/cosmology_anomaly_deep_panel_benchmark.json
+    lean_module: FSOT.Formal.CosmologyAnomalyDeepPanelPriors
+    note: "Cosmology anomaly deep — H0, w0, sigma8, Omega_Lambda, tau_reion, r_d refresh"
+
+  Hubble_Dark_Sector_Crosswalk:
+    tier: 76
+    D_eff: 25
+    delta_psi: 0.97
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [cosmological, particle, blackhole, cmb]
+    build_script: scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py
+    manifest: data/tier76_fluid_spacetime_cosmology_manifest.yaml
+    benchmark_data: data/hubble_dark_sector_crosswalk_benchmark.json
+    lean_module: FSOT.Formal.HubbleDarkSectorCrosswalkPriors
+    note: "Hubble tension dual-anchor + dark-sector crosswalk — Planck/SH0ES/FSOT bubble"
+
+  Fluid_Spacetime_Observable_Spine:
+    tier: 76
+    D_eff: 26
+    delta_psi: 1.0
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [consciousness, particle, galactic, cosmological, blackhole, cmb]
+    build_script: scripts/build_tier76_fluid_spacetime_cosmology_benchmarks.py
+    manifest: data/tier76_fluid_spacetime_cosmology_manifest.yaml
+    benchmark_data: data/fluid_spacetime_observable_spine_benchmark.json
+    lean_module: FSOT.Formal.FluidSpacetimeObservableSpinePriors
+    note: "Fluid spacetime observable rollup — time + FPC + cosmology anomalies + Hubble/dark sector"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5

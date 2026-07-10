@@ -1,0 +1,453 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T19:20:08.572115+00:00",
+  "domain": "Distant_Island_Emergence_Simulation",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\superheavy_island\\distant_island_z128_z164_anchors.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\periodic_table\\undiscovered_element_prereg_candidates.json"
+  ],
+  "maps_to_lean": [
+    "particle",
+    "nuclear",
+    "fusion",
+    "astronomical"
+  ],
+  "D_eff": 25,
+  "record_count": 36,
+  "observable_count": 36,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "z128_z164_sim": {
+        "sota_typical_error_pct": 100.0,
+        "sota_model": "No distant island observation"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_distant_emergence_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 36
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "distant_emergence",
+      "name": "z128_z164_sim",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 35
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z128_N184__r_process_supernova",
+      "Z": 128,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z128_N184__s_process_agb",
+      "Z": 128,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z128_N184__cosmic_ray_spallation",
+      "Z": 128,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z128_N184__heavy_ion_fusion_lab",
+      "Z": 128,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z128_N184__fsot_fusion_decay_chain",
+      "Z": 128,
+      "pathway": "fsot_fusion_decay_chain",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "distant_emergence_score",
+      "name": "Z128_N184",
+      "Z": 128,
+      "computed": 299042.84057,
+      "measured": 299042.840542,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_score"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "distant_emergence_classifier",
+      "name": "Z128_N184",
+      "Z": 128,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z130_N184__r_process_supernova",
+      "Z": 130,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z130_N184__s_process_agb",
+      "Z": 130,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z130_N184__cosmic_ray_spallation",
+      "Z": 130,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z130_N184__heavy_ion_fusion_lab",
+      "Z": 130,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z130_N184__fsot_fusion_decay_chain",
+      "Z": 130,
+      "pathway": "fsot_fusion_decay_chain",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "distant_emergence_score",
+      "name": "Z130_N184",
+      "Z": 130,
+      "computed": 17125656.976013,
+      "measured": 17125656.974385,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_score"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "distant_emergence_classifier",
+      "name": "Z130_N184",
+      "Z": 130,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z132_N184__r_process_supernova",
+      "Z": 132,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z132_N184__s_process_agb",
+      "Z": 132,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z132_N184__cosmic_ray_spallation",
+      "Z": 132,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z132_N184__heavy_ion_fusion_lab",
+      "Z": 132,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z132_N184__fsot_fusion_decay_chain",
+      "Z": 132,
+      "pathway": "fsot_fusion_decay_chain",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "distant_emergence_score",
+      "name": "Z132_N184",
+      "Z": 132,
+      "computed": 202254946.856047,
+      "measured": 202254946.836825,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_score"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "distant_emergence_classifier",
+      "name": "Z132_N184",
+      "Z": 132,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z132_N190__r_process_supernova",
+      "Z": 132,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z132_N190__s_process_agb",
+      "Z": 132,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z132_N190__cosmic_ray_spallation",
+      "Z": 132,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z132_N190__heavy_ion_fusion_lab",
+      "Z": 132,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z132_N190__fsot_fusion_decay_chain",
+      "Z": 132,
+      "pathway": "fsot_fusion_decay_chain",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "distant_emergence_score",
+      "name": "Z132_N190",
+      "Z": 132,
+      "computed": 2623285.174155,
+      "measured": 2623285.173906,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_score"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "distant_emergence_classifier",
+      "name": "Z132_N190",
+      "Z": 132,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z164_N228__r_process_supernova",
+      "Z": 164,
+      "pathway": "r_process_supernova",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z164_N228__s_process_agb",
+      "Z": 164,
+      "pathway": "s_process_agb",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z164_N228__cosmic_ray_spallation",
+      "Z": 164,
+      "pathway": "cosmic_ray_spallation",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z164_N228__heavy_ion_fusion_lab",
+      "Z": 164,
+      "pathway": "heavy_ion_fusion_lab",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "emergence_pathway_viable",
+      "name": "Z164_N228__fsot_fusion_decay_chain",
+      "Z": 164,
+      "pathway": "fsot_fusion_decay_chain",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_sim"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "distant_emergence_score",
+      "name": "Z164_N228",
+      "Z": 164,
+      "computed": 8697.032787,
+      "measured": 8697.032787,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_score"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "distant_emergence_classifier",
+      "name": "Z164_N228",
+      "Z": 164,
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "emergence_gate"
+    },
+    {
+      "lab": "distant_island_emergence_lab",
+      "property": "periodic_extension_Z_ceiling",
+      "name": "distant_island_Z164",
+      "computed": 164.0,
+      "measured": 164.0,
+      "error_pct": 0.0,
+      "eval_kind": "simulation_anchor"
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 30,
+    "classifier_correct": 30,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
+}

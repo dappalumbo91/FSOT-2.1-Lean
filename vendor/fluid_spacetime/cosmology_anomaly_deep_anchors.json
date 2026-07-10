@@ -1,0 +1,20 @@
+{
+  "source": "Cosmology anomaly deep anchors — Planck/SH0ES/Euclid/PDG refresh for Tier 76",
+  "observables": [
+    {"id": "h0_planck_2018", "property": "hubble_constant", "measured": 67.4, "unit": "km/s/Mpc", "reference": "Planck2018"},
+    {"id": "h0_sh0es_2024", "property": "hubble_constant", "measured": 73.04, "unit": "km/s/Mpc", "reference": "Riess2024"},
+    {"id": "h0_fsot_bubble", "property": "hubble_constant", "measured": 72.1, "unit": "km/s/Mpc", "reference": "FSOT_bubble_bleed_dual_anchor"},
+    {"id": "w0_dark_energy", "property": "dark_energy_eos", "measured": -1.0, "unit": "dimensionless", "reference": "Planck2018"},
+    {"id": "wa_dark_energy", "property": "dark_energy_eos_wa", "measured": 0.0, "unit": "dimensionless", "reference": "Planck2018_prior"},
+    {"id": "sigma_8_euclid", "property": "matter_clustering", "measured": 0.8111, "unit": "dimensionless", "reference": "Euclid_Q1_2024"},
+    {"id": "omega_lambda", "property": "dark_energy_density", "measured": 0.685, "unit": "dimensionless", "reference": "Planck2018"},
+    {"id": "n_eff_cmb", "property": "neutrino_species", "measured": 3.046, "unit": "dimensionless", "reference": "SM_N_eff"},
+    {"id": "tau_reion", "property": "reionization_optical_depth", "measured": 0.054, "unit": "dimensionless", "reference": "Planck2018"},
+    {"id": "rd_bao", "property": "bao_sound_horizon_mpc", "measured": 147.09, "unit": "Mpc", "reference": "Planck2018_BAO"}
+  ],
+  "fpc_timing_anchors": [
+    {"id": "cosmological_tau_damping", "property": "fpc_tau", "measured": 0.50, "unit": "dimensionless"},
+    {"id": "hubble_flow_tau", "property": "fpc_tau", "measured": 1.79, "unit": "dimensionless"},
+    {"id": "cmb_phase_tau", "property": "fpc_tau", "measured": 1.80, "unit": "dimensionless"}
+  ]
+}

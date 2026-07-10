@@ -1,0 +1,22 @@
+{
+  "source": "Periodic extension decay topology prereg — Z=126 through Z=164 chain graph",
+  "channel": "decay_topology_prereg",
+  "topology_nodes": [
+    {"id": "Z126_N184", "Z": 126, "role": "island_peak"},
+    {"id": "Z128_N184", "Z": 128, "role": "shoulder"},
+    {"id": "Z132_N184", "Z": 132, "role": "superheavy_peak"},
+    {"id": "Z164_N228", "Z": 164, "role": "distant_island"}
+  ],
+  "topology_edges": [
+    {"from": "Z126_N184", "to": "Z128_N184", "decay_mode": "alpha", "fsot_branch": "term3.boundary_partition", "fsot_step_viability": 0.52},
+    {"from": "Z128_N184", "to": "Z132_N184", "decay_mode": "fusion_capture", "fsot_branch": "term3.acoustic_bleed", "fsot_step_viability": 0.48},
+    {"from": "Z132_N184", "to": "Z164_N228", "decay_mode": "multi_neutron_capture", "fsot_branch": "term1.initiation_transformation", "fsot_step_viability": 0.35},
+    {"from": "pd_d_to_Z120_cascade", "to": "Z126_N184", "decay_mode": "lab_chain_extension", "fsot_branch": "term3.acoustic_bleed", "fsot_step_viability": 0.58},
+    {"from": "muon_dd_to_Z126_cascade", "to": "Z132_N184", "decay_mode": "fusion_decay_extension", "fsot_branch": "term1.initiation_transformation", "fsot_step_viability": 0.44}
+  ],
+  "screening_gates": [
+    {"id": "min_topology_viability", "value": 0.35},
+    {"id": "max_topology_hops", "value": 4},
+    {"id": "periodic_extension_Z_ceiling", "value": 164}
+  ]
+}
