@@ -59,9 +59,9 @@ def build() -> dict:
         {
             "lab": "prediction_rederivation",
             "property": "free_parameters_zero",
-            "computed": 1 if int(summary.get("free_parameters") or 1) == 0 else 0,
+            "computed": 1 if summary.get("free_parameters", 1) == 0 else 0,
             "measured": 1,
-            "error_pct": 0.0 if int(summary.get("free_parameters") or 1) == 0 else 100.0,
+            "error_pct": 0.0 if summary.get("free_parameters", 1) == 0 else 100.0,
         }
     )
     records.append(

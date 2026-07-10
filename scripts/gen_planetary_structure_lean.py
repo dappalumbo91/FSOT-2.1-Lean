@@ -43,19 +43,19 @@ def planetary_structure_D_eff : ℕ := {d_eff}
 theorem planetary_structure_body_count_pos : 0 < planetary_structure_body_count := by
   unfold planetary_structure_body_count; norm_num
 
-theorem planetary_structure_median_error_under_five_pct :
-    planetary_structure_median_error_pct < (5 : ℝ) := by
+theorem planetary_structure_median_error_under_half_pct :
+    planetary_structure_median_error_pct < (0.5 : ℝ) := by
   unfold planetary_structure_median_error_pct; norm_num
 
 theorem planetary_structure_bundle :
     planetary_structure_body_count = {n} ∧
     planetary_structure_D_eff = {d_eff} ∧
-    planetary_structure_median_error_pct < (5 : ℝ) ∧
+    planetary_structure_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "galactic") > 0 := by
   refine ⟨
     by unfold planetary_structure_body_count; norm_num,
     by unfold planetary_structure_D_eff; norm_num,
-    planetary_structure_median_error_under_five_pct,
+    planetary_structure_median_error_under_half_pct,
     {sign}
   ⟩
 

@@ -36,10 +36,15 @@ def main() -> int:
 
     chunks = load_all_chunks(chunks_dir)
     if len(chunks) >= args.min_chunks:
+        cohort = spec.get("cohort") or {}
+        train_stations = set(cohort.get("train_stations") or [])
         doc = build_benchmark_records(
             chunks,
             anomaly_tolerance_c=float(spec["benchmark"].get("anomaly_tolerance_c", 2.5)),
             D_eff=float(spec["benchmark"].get("D_eff", 16)),
+            train_stations=train_stations or None,
+            stability_penalty=float(spec["benchmark"].get("stability_penalty", 0.35)),
+            use_paleo_recovery=bool(spec["benchmark"].get("use_paleo_recovery", True)),
         )
         doc["ingest_state"] = str(cache_root / "ingest_state.json")
         doc = attach_cohort_metrics(doc, spec)

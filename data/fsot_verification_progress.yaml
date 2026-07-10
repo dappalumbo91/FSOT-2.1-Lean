@@ -1,16 +1,16 @@
-generated_at: '2026-07-10T14:59:42.313381+00:00'
+generated_at: '2026-07-10T17:50:47.013412+00:00'
 repo: C:\Users\damia\Desktop\FSOT-2.1-Lean\FSOT-2.1-Lean-main\FSOT-2.1-Lean-main
 remote: https://github.com/dappalumbo91/FSOT-2.1-Lean.git
 summary:
-  lean_formal_modules: 213
+  lean_formal_modules: 226
   proved_claims: 65
   sorry_count_formal: 0
   lean_build_ok: true
   tiers_complete: 47
-  tiers_total: 47
-  percent_complete: 100.0
-current_position: "Tier 49 Compactification ladder \u2014 10 rungs string\u2192cosmo,\
-  \ adjacent couplings, fold-depth spine, external cache on G:/FSOT-PublicData"
+  tiers_total: 48
+  percent_complete: 97.9
+current_position: "Tier 50 Time emergence / FPC \u2014 emergent \u03C4 spine, multi-domain\
+  \ crosswalk, FluidLink timing hub, Tier 49 fold spine linked"
 tiers:
 - tier: 1
   name: Core scalar + domains
@@ -58,7 +58,9 @@ tiers:
   - CodonPriors
   - CompactificationLadderPriors
   - ComputationalReasoningPriors
+  - ConsciousnessEconPriors
   - ConsciousnessGalacticOrbitalBridgePriors
+  - ConsciousnessSoulBridgePriors
   - CosmologyAnomaliesPriors
   - CosmologyExtendedPriors
   - CosmologyHigherWavesPriors
@@ -73,6 +75,8 @@ tiers:
   - CryospherePriors
   - CryptographyTechnologyPriors
   - CulinaryArtsPriors
+  - DarkEnergyCPLPriors
+  - DarkSectorOpenProblemsPriors
   - DomainCouplingSimulationPriors
   - DomainCoveragePriors
   - DomainOrbitalPredictionsPriors
@@ -91,8 +95,10 @@ tiers:
   - ExogeologyExtensionPriors
   - ExperimentSynthesisPriors
   - ExternalOSSCodeGenomePriors
+  - FPCTemporalCouplingPriors
   - FinanceMarketsExtensionPriors
   - FluidDynamicsGapFillPriors
+  - FluidPhaseCurrentSpinePriors
   - FoldDepthMetricsPriors
   - FoodMicrobiologyGapFillPriors
   - FormulaBranchingFractalPriors
@@ -110,6 +116,7 @@ tiers:
   - HiggsBranchingPriors
   - HiggsMassPriors
   - HistoryExtensionPriors
+  - HubbleBubbleTensionPriors
   - HvacThermalSystemsPriors
   - HydrologyPriors
   - IGEMLiveFastaPriors
@@ -189,6 +196,7 @@ tiers:
   - RealityFoldingSpinePriors
   - RoboticsControlSystemsExtensionPriors
   - RustLeanBridgePriors
+  - SH0ESRefinedPriors
   - SecureSoftwareEngineeringPriors
   - SeismologyDeepPriors
   - SeismologyPriors
@@ -202,11 +210,16 @@ tiers:
   - SpeleologyExtensionPriors
   - SportsBiomechanicsGapFillPriors
   - StructureCalibrationPriors
+  - StumpedObservablesPanelPriors
+  - StumpedObservablesSpinePriors
   - SupplyChainLogisticsExtensionPriors
+  - SymbolicArchetypePanelPriors
   - SyntheticBiologyPriors
   - TectonicsPriors
   - TheoryCompletenessSpinePriors
   - ThesisSimulationPriors
+  - TimeDomainCrosswalkPriors
+  - TimeEmergenceSimulationPriors
   - ToEGapClosureSpinePriors
   - ToEUnificationSpinePriors
   - TokenizationSmokePriors
@@ -381,7 +394,7 @@ tiers:
   metrics:
     cosmology_higher_waves: 142
     higgs_branching_observables: 14
-    higgs_mass_observables: 2
+    higgs_mass_observables: 9
     higgs_mass_median_error_pct: 0.03990518384182655
     space_weather_kp_records: 271813
     astrophysics_empirical_records: 274
@@ -587,7 +600,7 @@ tiers:
     oncology_records: 67
     oncology_median_error_pct: 0.078779
     neuroimmunology_records: 92
-    neuroimmunology_median_error_pct: 0.100759
+    neuroimmunology_median_error_pct: 0.07247823276673726
   artifacts:
   - data/geochemistry_manifest.yaml
   - data/oncology_manifest.yaml
@@ -864,7 +877,7 @@ tiers:
   status: complete
   metrics:
     tier_f_domain_count: 19
-    tier_f_total_records: 5898
+    tier_f_total_records: 4842
     expansion_candidates_remaining: 0
     external_cache_root: G:/FSOT-PublicData/tier_f_gaps
   artifacts:
@@ -894,15 +907,15 @@ tiers:
 - tier: 42
   name: "Tier 42 \u2014 coupling simulation + Tier G depth + formula corpus closure\
     \ + space weather split"
-  status: complete
+  status: pending
   metrics:
-    coupling_node_count: 179
-    coupling_edge_count: 5551
+    coupling_node_count: 183
+    coupling_edge_count: 6138
     coupling_pooled_median_error_pct: 0.0
     formula_closure_records: 123
     formula_closure_strict_empirical: 7941
     tier_g_domain_count: 8
-    tier_g_total_records: 1478
+    tier_g_total_records: 472
     space_weather_full_record_count: 271813
     space_weather_external_full: G:\FSOT-PublicData\space_weather\space_weather_full_benchmark.json
   artifacts:
@@ -928,7 +941,7 @@ tiers:
     tier_h_depth_code_genome_records: 205
     zero_day_risk_tier: RED
     zero_day_hole_count: 82
-    coupling_node_count: 179
+    coupling_node_count: 183
     external_cache_root: G:/FSOT-PublicData/cybersecurity
   artifacts:
   - scripts/ingest_cybersecurity_public_data.py
@@ -956,7 +969,7 @@ tiers:
     linguistics_bridge_count: 25
     code_genome_bridge_count: 13
     oss_refresh_cadence_days: 7
-    coupling_node_count: 179
+    coupling_node_count: 183
     external_cache_root: G:/FSOT-PublicData/github_oss
   artifacts:
   - scripts/ingest_github_oss_code_genome.py
@@ -984,7 +997,7 @@ tiers:
     kev_falsification_records: 1635
     cwe_codon_overlap_rate: 0.5
     theory_completeness_status: GREEN
-    coupling_node_count: 179
+    coupling_node_count: 183
   artifacts:
   - data/fsot_formula_spine.yaml
   - data/mechanistic_coupling_manifest.yaml
@@ -1006,7 +1019,7 @@ tiers:
     quirkmod_derived_count: 67
     adversarial_detection_rate: 1.0
     gap_closure_status: GREEN
-    coupling_node_count: 179
+    coupling_node_count: 183
   artifacts:
   - data/fractal_constant_recursion.yaml
   - data/preregistered_predictions_manifest.yaml
@@ -1032,7 +1045,7 @@ tiers:
     filled_orbital_predictions: 12
     orbital_gap_fill_status: GREEN
     mechanistic_channel_count: 39
-    coupling_node_count: 179
+    coupling_node_count: 183
   artifacts:
   - data/orbital_gap_fill_manifest.yaml
   - data/domain_orbital_prediction_report.json
@@ -1051,7 +1064,7 @@ tiers:
     orbital_prediction_total: 12
     orbital_gap_fill_status: GREEN
     toe_unification_status: GREEN
-    coupling_node_count: 179
+    coupling_node_count: 183
     mechanistic_channel_count: 39
     external_cache_root: G:/FSOT-PublicData/cross_scale_bridges
   artifacts:
@@ -1077,7 +1090,7 @@ tiers:
     fold_metrics_status: GREEN
     folding_spine_status: GREEN
     mechanistic_channel_count: 39
-    coupling_node_count: 179
+    coupling_node_count: 183
     external_cache_root: G:/FSOT-PublicData/compactification_ladder
   artifacts:
   - data/compactification_ladder_manifest.yaml
@@ -1087,6 +1100,30 @@ tiers:
   - G:/FSOT-PublicData/compactification_ladder
   - FSOT.Formal.RealityFoldingSpinePriors
   - FSOT.Formal.CompactificationLadderPriors
+- tier: 50
+  name: "Tier 50 \u2014 Time emergence / FPC (simulation, crosswalk, FluidLink, spine)"
+  status: complete
+  metrics:
+    time_simulation_status: GREEN
+    time_pooled_median_error_pct: 0.0
+    bh_dilation_error_pct: 0.007851
+    crosswalk_status: GREEN
+    crosswalk_domain_count: 156
+    fluidlink_edge_count: 6
+    coupling_status: GREEN
+    fpc_spine_status: GREEN
+    fold_spine_link_status: GREEN
+    mechanistic_channel_count: 39
+    coupling_node_count: 183
+  artifacts:
+  - data/time_emergence_manifest.yaml
+  - scripts/time_emergence_lib.py
+  - scripts/tier_o_time_emergence_lib.py
+  - scripts/build_tier_o_time_emergence_benchmarks.py
+  - scripts/gen_time_emergence_lean.py
+  - scripts/run_time_emergence_simulation.py
+  - FSOT.Formal.FluidPhaseCurrentSpinePriors
+  - FSOT.Formal.TimeEmergenceSimulationPriors
 next_steps:
 - Per-stratum hybrid FI sim (not slope proxy) for multi-hero specimens
 - Knowledge-base per-formula portable bundle

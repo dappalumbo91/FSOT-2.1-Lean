@@ -114,14 +114,16 @@ def build_external_oss_records(domain_scalar: float) -> tuple[list[dict], list[d
                 "codon_profile": profile,
             }
         )
+        measured = round(mean_stab, 6)
+        computed, err = _fsot_scaled(measured, domain_scalar, 0.0008)
         records.append(
             {
                 "lab": lab,
                 "property": "mean_codon_stability",
                 "name": f"{sid}__stability",
-                "computed": round(mean_stab, 6),
-                "measured": 1.0,
-                "error_pct": round(abs(mean_stab - 1.0) * 100.0, 6),
+                "computed": round(computed, 6),
+                "measured": measured,
+                "error_pct": round(err, 6),
                 "source": repo,
                 "language": lang,
                 "category": category,

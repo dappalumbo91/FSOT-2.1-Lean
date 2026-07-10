@@ -40,24 +40,24 @@ def {prefix}_median_error_pct : ℝ := ({med} : ℝ)
 theorem {prefix}_observable_count_pos : 0 < {prefix}_observable_count := by
   unfold {prefix}_observable_count; norm_num
 
-theorem {prefix}_max_error_under_five_pct :
-    {prefix}_max_error_pct < (5 : ℝ) := by
+theorem {prefix}_max_error_under_half_pct :
+    {prefix}_max_error_pct < (0.5 : ℝ) := by
   unfold {prefix}_max_error_pct; norm_num
 
-theorem {prefix}_median_error_under_five_pct :
-    {prefix}_median_error_pct < (5 : ℝ) := by
+theorem {prefix}_median_error_under_half_pct :
+    {prefix}_median_error_pct < (0.5 : ℝ) := by
   unfold {prefix}_median_error_pct; norm_num
 
 /-- Bundle: wave{wave_num} observables within 5% tolerance band. -/
 theorem cosmology_wave{wave_num}_bundle :
     {prefix}_observable_count = {n} ∧
-    {prefix}_max_error_pct < (5 : ℝ) ∧
-    {prefix}_median_error_pct < (5 : ℝ) ∧
+    {prefix}_max_error_pct < (0.5 : ℝ) ∧
+    {prefix}_median_error_pct < (0.5 : ℝ) ∧
     (0 : ℝ) < omega_b_h2_fsot S_cosm_cached S_quant_cached := by
   refine ⟨
     by unfold {prefix}_observable_count; norm_num,
-    {prefix}_max_error_under_five_pct,
-    {prefix}_median_error_under_five_pct,
+    {prefix}_max_error_under_half_pct,
+    {prefix}_median_error_under_half_pct,
     omega_b_h2_fsot_cached_pos
   ⟩
 

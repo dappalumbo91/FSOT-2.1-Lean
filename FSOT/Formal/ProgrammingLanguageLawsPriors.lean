@@ -24,12 +24,12 @@ def pl_laws_code_genome_bridge_count : ℕ := 13
 theorem pl_laws_observable_count_pos : 0 < pl_laws_observable_count := by
   unfold pl_laws_observable_count; norm_num
 
-theorem pl_laws_pooled_median_under_five_pct :
-    pl_laws_pooled_median_error_pct < (5 : ℝ) := by
+theorem pl_laws_pooled_median_under_half_pct :
+    pl_laws_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold pl_laws_pooled_median_error_pct; norm_num
 
-theorem pl_laws_headline_median_under_five_pct :
-    pl_laws_headline_median_error_pct < (5 : ℝ) := by
+theorem pl_laws_headline_median_under_half_pct :
+    pl_laws_headline_median_error_pct < (0.5 : ℝ) := by
   unfold pl_laws_headline_median_error_pct; norm_num
 
 theorem pl_laws_beats_sota_headlines_pos : 0 < pl_laws_beats_sota_headlines := by
@@ -44,11 +44,11 @@ theorem pl_laws_cross_domain_bridges_pos :
 
 theorem pl_laws_bundle :
     pl_laws_observable_count = 77 ∧
-    pl_laws_pooled_median_error_pct < (5 : ℝ) ∧
+    pl_laws_pooled_median_error_pct < (0.5 : ℝ) ∧
     pl_laws_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold pl_laws_observable_count; norm_num
-  · exact pl_laws_pooled_median_under_five_pct
+  · exact pl_laws_pooled_median_under_half_pct
   · exact pl_laws_beats_sota_headlines_pos
 
 end

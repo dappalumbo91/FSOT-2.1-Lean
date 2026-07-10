@@ -61,7 +61,7 @@ def archetype_predicted_S(archetype: str, scalars: dict[str, float]) -> float:
             spheres - 3.0 + res_rate * inner / gate
         ),
         "boundary_partition": (w_comp - radial) * spheres / 5.0,
-        "initiation_transformation": -w_bind * res_rate * 3.0,
+        "initiation_transformation": -w_bind * res_rate * 3.0 * (1.0 - inner / 10.0),
         "restoration_integration": w_bind + w_int / spheres * (6.0 + inner / 2.0),
         "observer_theophany": -(w_bind - gate) * spheres / 4.0,
     }

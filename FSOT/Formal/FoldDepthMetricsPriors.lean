@@ -21,12 +21,12 @@ def fold_dep_fold_span_ten_thousandths : ℕ := 27193
 theorem fold_dep_observable_count_pos : 0 < fold_dep_observable_count := by
   unfold fold_dep_observable_count; norm_num
 
-theorem fold_dep_pooled_median_under_five_pct :
-    fold_dep_pooled_median_error_pct < (5 : ℝ) := by
+theorem fold_dep_pooled_median_under_half_pct :
+    fold_dep_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold fold_dep_pooled_median_error_pct; norm_num
 
-theorem fold_dep_headline_median_under_five_pct :
-    fold_dep_headline_median_error_pct < (5 : ℝ) := by
+theorem fold_dep_headline_median_under_half_pct :
+    fold_dep_headline_median_error_pct < (0.5 : ℝ) := by
   unfold fold_dep_headline_median_error_pct; norm_num
 
 theorem fold_dep_beats_sota_headlines_pos : 0 < fold_dep_beats_sota_headlines := by
@@ -35,11 +35,11 @@ theorem fold_dep_fold_span_pos : 0 < fold_dep_fold_span_ten_thousandths := by un
 
 theorem fold_dep_bundle :
     fold_dep_observable_count = 51 ∧
-    fold_dep_pooled_median_error_pct < (5 : ℝ) ∧
+    fold_dep_pooled_median_error_pct < (0.5 : ℝ) ∧
     fold_dep_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold fold_dep_observable_count; norm_num
-  · exact fold_dep_pooled_median_under_five_pct
+  · exact fold_dep_pooled_median_under_half_pct
   · exact fold_dep_beats_sota_headlines_pos
 
 end

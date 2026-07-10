@@ -30,9 +30,9 @@ def build() -> dict:
         {
             "lab": "arxiv_primitives_v14",
             "property": "exit_code_zero",
-            "computed": 1 if int(summary.get("exit_code") or 1) == 0 else 0,
+            "computed": 1 if summary.get("exit_code", 1) == 0 else 0,
             "measured": 1,
-            "error_pct": 0.0 if int(summary.get("exit_code") or 1) == 0 else 100.0,
+            "error_pct": 0.0 if summary.get("exit_code", 1) == 0 else 100.0,
         }
     )
     topics = int(summary.get("arxiv_topics_loaded") or 0)

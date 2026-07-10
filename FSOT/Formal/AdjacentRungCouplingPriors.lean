@@ -21,12 +21,12 @@ def adj_rung_adjacent_pair_count : ℕ := 9
 theorem adj_rung_observable_count_pos : 0 < adj_rung_observable_count := by
   unfold adj_rung_observable_count; norm_num
 
-theorem adj_rung_pooled_median_under_five_pct :
-    adj_rung_pooled_median_error_pct < (5 : ℝ) := by
+theorem adj_rung_pooled_median_under_half_pct :
+    adj_rung_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold adj_rung_pooled_median_error_pct; norm_num
 
-theorem adj_rung_headline_median_under_five_pct :
-    adj_rung_headline_median_error_pct < (5 : ℝ) := by
+theorem adj_rung_headline_median_under_half_pct :
+    adj_rung_headline_median_error_pct < (0.5 : ℝ) := by
   unfold adj_rung_headline_median_error_pct; norm_num
 
 theorem adj_rung_beats_sota_headlines_pos : 0 < adj_rung_beats_sota_headlines := by
@@ -35,11 +35,11 @@ theorem adj_rung_pairs_complete : adj_rung_adjacent_pair_count = 9 := by unfold 
 
 theorem adj_rung_bundle :
     adj_rung_observable_count = 36 ∧
-    adj_rung_pooled_median_error_pct < (5 : ℝ) ∧
+    adj_rung_pooled_median_error_pct < (0.5 : ℝ) ∧
     adj_rung_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold adj_rung_observable_count; norm_num
-  · exact adj_rung_pooled_median_under_five_pct
+  · exact adj_rung_pooled_median_under_half_pct
   · exact adj_rung_beats_sota_headlines_pos
 
 end

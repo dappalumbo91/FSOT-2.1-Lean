@@ -25,12 +25,12 @@ theorem culinary_arts_observable_count_pos : 0 < culinary_arts_observable_count 
 theorem culinary_arts_section_count_pos : 0 < culinary_arts_section_count := by
   unfold culinary_arts_section_count; norm_num
 
-theorem culinary_arts_pooled_median_under_five_pct :
-    culinary_arts_pooled_median_error_pct < (5 : ℝ) := by
+theorem culinary_arts_pooled_median_under_half_pct :
+    culinary_arts_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold culinary_arts_pooled_median_error_pct; norm_num
 
-theorem culinary_arts_headline_median_under_five_pct :
-    culinary_arts_headline_median_error_pct < (5 : ℝ) := by
+theorem culinary_arts_headline_median_under_half_pct :
+    culinary_arts_headline_median_error_pct < (0.5 : ℝ) := by
   unfold culinary_arts_headline_median_error_pct; norm_num
 
 theorem culinary_arts_beats_sota_headlines_pos : 0 < culinary_arts_beats_sota_headlines := by
@@ -40,16 +40,16 @@ theorem culinary_arts_bundle :
     culinary_arts_observable_count = 26 ∧
     culinary_arts_section_count = 8 ∧
     culinary_arts_D_eff = 15 ∧
-    culinary_arts_pooled_median_error_pct < (5 : ℝ) ∧
-    culinary_arts_headline_median_error_pct < (5 : ℝ) ∧
+    culinary_arts_pooled_median_error_pct < (0.5 : ℝ) ∧
+    culinary_arts_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < culinary_arts_beats_sota_headlines ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨
     by unfold culinary_arts_observable_count; norm_num,
     by unfold culinary_arts_section_count; norm_num,
     by unfold culinary_arts_D_eff; norm_num,
-    culinary_arts_pooled_median_under_five_pct,
-    culinary_arts_headline_median_under_five_pct,
+    culinary_arts_pooled_median_under_half_pct,
+    culinary_arts_headline_median_under_half_pct,
     culinary_arts_beats_sota_headlines_pos,
     medical_raw_S_positive
   ⟩

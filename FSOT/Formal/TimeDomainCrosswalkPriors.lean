@@ -11,12 +11,12 @@ noncomputable section
 
 open Real
 
-def time_xw_observable_count : ℕ := 149
-def time_xw_pooled_median_error_pct : ℝ := (0.023158 : ℝ)
-def time_xw_headline_median_error_pct : ℝ := (0.023158 : ℝ)
+def time_xw_observable_count : ℕ := 160
+def time_xw_pooled_median_error_pct : ℝ := (0.025013 : ℝ)
+def time_xw_headline_median_error_pct : ℝ := (0.025013 : ℝ)
 def time_xw_beats_sota_headlines : ℕ := 2
 def time_xw_D_eff : ℕ := 19
-def time_xw_crosswalk_domain_count : ℕ := 145
+def time_xw_crosswalk_domain_count : ℕ := 156
 
 theorem time_xw_observable_count_pos : 0 < time_xw_observable_count := by
   unfold time_xw_observable_count; norm_num
@@ -34,7 +34,7 @@ theorem time_xw_beats_sota_headlines_pos : 0 < time_xw_beats_sota_headlines := b
 theorem time_xw_crosswalk_domains_pos : 0 < time_xw_crosswalk_domain_count := by unfold time_xw_crosswalk_domain_count; norm_num
 
 theorem time_xw_bundle :
-    time_xw_observable_count = 149 ∧
+    time_xw_observable_count = 160 ∧
     time_xw_pooled_median_error_pct < (0.5 : ℝ) ∧
     time_xw_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩

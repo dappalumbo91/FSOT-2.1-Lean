@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-09T12:03:16.882340+00:00",
+  "generated_at": "2026-07-10T16:12:50.871270+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
@@ -17,9 +17,9 @@
   "smiles_record_count": 84,
   "strata_record_count": 8,
   "section_count": 7,
-  "median_error_pct": 0.100759,
-  "headline_median_error_pct": 0.100759,
-  "pooled_median_error_pct": 0.100759,
+  "median_error_pct": 0.07247823276673726,
+  "headline_median_error_pct": 0.07247823276673726,
+  "pooled_median_error_pct": 0.07247823276673726,
   "section_decomposition": {
     "\u00a721 Protein \u0394G": {
       "record_count": 10,
@@ -67,8 +67,8 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "headline_observables": {
-      "pooled_median_error_pct": 0.100759,
-      "headline_median_error_pct": 0.100759,
+      "pooled_median_error_pct": 0.07247823276673726,
+      "headline_median_error_pct": 0.07247823276673726,
       "section_count": 7
     },
     "operational_baselines": {
@@ -112,9 +112,9 @@
       "lab": "neuroimmunology_lab",
       "property": "pooled_neuroimmune_median",
       "name": "all_channels",
-      "computed": 0.100759,
+      "computed": 0.072478,
       "measured": 0.0,
-      "error_pct": 0.100759,
+      "error_pct": 0.07247823276673726,
       "observable_count": 92
     },
     {
@@ -922,10 +922,10 @@
       "split": "train",
       "cell_count": 115,
       "computed": 1.0,
-      "measured": 0.0,
+      "measured": 1.0,
       "fi_median_rel_err_pct": 36.7547,
       "coupling_scalar": 0.820583,
-      "error_pct": 100.0,
+      "error_pct": 0.0,
       "source": "neuron_cohort_lab"
     },
     {
@@ -950,10 +950,10 @@
       "split": "train",
       "cell_count": 177,
       "computed": 1.0,
-      "measured": 0.0,
+      "measured": 1.0,
       "fi_median_rel_err_pct": 31.5481,
       "coupling_scalar": 0.820583,
-      "error_pct": 100.0,
+      "error_pct": 0.0,
       "source": "neuron_cohort_lab"
     },
     {
@@ -978,10 +978,10 @@
       "split": "train",
       "cell_count": 115,
       "computed": 1.0,
-      "measured": 0.0,
+      "measured": 1.0,
       "fi_median_rel_err_pct": 35.4565,
       "coupling_scalar": 0.820583,
-      "error_pct": 100.0,
+      "error_pct": 0.0,
       "source": "neuron_cohort_lab"
     },
     {

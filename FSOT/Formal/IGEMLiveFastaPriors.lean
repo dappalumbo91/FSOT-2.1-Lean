@@ -18,19 +18,19 @@ def igem_live_fasta_D_eff : ℕ := 14
 theorem igem_live_fasta_observable_count_pos : 0 < igem_live_fasta_observable_count := by
   unfold igem_live_fasta_observable_count; norm_num
 
-theorem igem_live_fasta_median_error_under_five_pct :
-    igem_live_fasta_median_error_pct < (5 : ℝ) := by
+theorem igem_live_fasta_median_error_under_half_pct :
+    igem_live_fasta_median_error_pct < (0.5 : ℝ) := by
   unfold igem_live_fasta_median_error_pct; norm_num
 
 theorem igem_live_fasta_bundle :
     igem_live_fasta_observable_count = 42 ∧
     igem_live_fasta_D_eff = 14 ∧
-    igem_live_fasta_median_error_pct < (5 : ℝ) ∧
+    igem_live_fasta_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
     by unfold igem_live_fasta_observable_count; norm_num,
     by unfold igem_live_fasta_D_eff; norm_num,
-    igem_live_fasta_median_error_under_five_pct,
+    igem_live_fasta_median_error_under_half_pct,
     biological_raw_S_positive
   ⟩
 

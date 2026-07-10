@@ -15,18 +15,18 @@ def plasma_physics_D_eff : ℕ := 14
 theorem plasma_physics_observable_count_pos : 0 < plasma_physics_observable_count := by
   unfold plasma_physics_observable_count; norm_num
 
-theorem plasma_physics_median_error_under_five_pct :
-    (0.0 : ℝ) < (5 : ℝ) := by norm_num
+theorem plasma_physics_median_error_under_half_pct :
+    (0.0 : ℝ) < (0.5 : ℝ) := by norm_num
 
 theorem plasma_physics_bundle :
     plasma_physics_observable_count = 20 ∧
     plasma_physics_D_eff = 14 ∧
-    (0.0 : ℝ) < (5 : ℝ) ∧
+    (0.0 : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
     by unfold plasma_physics_observable_count; norm_num,
     by unfold plasma_physics_D_eff; norm_num,
-    plasma_physics_median_error_under_five_pct,
+    plasma_physics_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩
 

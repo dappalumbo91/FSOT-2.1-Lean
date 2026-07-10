@@ -58,12 +58,12 @@ theorem igem_synthetic_biology_observable_count_pos : 0 < igem_synthetic_biology
 theorem igem_synthetic_biology_part_count_pos : 0 < igem_synthetic_biology_part_count := by
   unfold igem_synthetic_biology_part_count; norm_num
 
-theorem igem_synthetic_biology_pooled_median_under_five_pct :
-    igem_synthetic_biology_pooled_median_error_pct < (5 : ℝ) := by
+theorem igem_synthetic_biology_pooled_median_under_half_pct :
+    igem_synthetic_biology_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold igem_synthetic_biology_pooled_median_error_pct; norm_num
 
-theorem igem_synthetic_biology_headline_median_under_five_pct :
-    igem_synthetic_biology_headline_median_error_pct < (5 : ℝ) := by
+theorem igem_synthetic_biology_headline_median_under_half_pct :
+    igem_synthetic_biology_headline_median_error_pct < (0.5 : ℝ) := by
   unfold igem_synthetic_biology_headline_median_error_pct; norm_num
 
 theorem igem_synthetic_biology_beats_sota_headlines_pos : 0 < igem_synthetic_biology_beats_sota_headlines := by
@@ -73,16 +73,16 @@ theorem igem_synthetic_biology_bundle :
     igem_synthetic_biology_observable_count = {n} ∧
     igem_synthetic_biology_part_count = {parts} ∧
     igem_synthetic_biology_D_eff = {d_eff} ∧
-    igem_synthetic_biology_pooled_median_error_pct < (5 : ℝ) ∧
-    igem_synthetic_biology_headline_median_error_pct < (5 : ℝ) ∧
+    igem_synthetic_biology_pooled_median_error_pct < (0.5 : ℝ) ∧
+    igem_synthetic_biology_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < igem_synthetic_biology_beats_sota_headlines ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
     by unfold igem_synthetic_biology_observable_count; norm_num,
     by unfold igem_synthetic_biology_part_count; norm_num,
     by unfold igem_synthetic_biology_D_eff; norm_num,
-    igem_synthetic_biology_pooled_median_under_five_pct,
-    igem_synthetic_biology_headline_median_under_five_pct,
+    igem_synthetic_biology_pooled_median_under_half_pct,
+    igem_synthetic_biology_headline_median_under_half_pct,
     igem_synthetic_biology_beats_sota_headlines_pos,
     {sign}
   ⟩

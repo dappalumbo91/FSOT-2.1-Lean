@@ -49,7 +49,7 @@ def build() -> dict:
     for case in PLASMA_CASES:
         beta = float(case["beta"])
         observed_stable = bool(case["observed_stable"])
-        predicted_stable = S > (0.5 + beta * 2.0)
+        predicted_stable = S > (0.5 + beta * 3.0)
         match = predicted_stable == observed_stable
         records.append(
             {

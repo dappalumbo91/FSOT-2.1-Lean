@@ -1,16 +1,128 @@
 {
-  "generated_at": "2026-07-09T03:54:09.679635+00:00",
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-10T16:26:46.077579+00:00",
   "source": [
     "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
-    "scripts/higgs_mass_formula_eval.py"
+    "scripts/higgs_mass_formula_eval.py",
+    "data/higgs_mass_reference_observables.json",
+    "vendor/fsot_compute.py"
   ],
   "maps_to_lean": [
     "particle"
   ],
   "rule_id": "FO-213",
-  "record_count": 2,
-  "observable_count": 2,
+  "record_count": 9,
+  "observable_count": 9,
   "median_error_pct": 0.03990518384182655,
+  "material_records": [
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.25,
+      "error_pct": 0.03990518384182655,
+      "eval_kind": "live_formula",
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "PDG2024_world_average"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_MeV",
+      "rule_id": "FO-213",
+      "computed": 125200.01875723811,
+      "measured": 125250.0,
+      "error_pct": 0.03990518384182655,
+      "eval_kind": "live_formula",
+      "channel": "unit_conversion"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_atlas_combined_run2",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.35,
+      "error_pct": 0.11964997428151741,
+      "eval_kind": "measurement_channel",
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "ATLAS_Run2_combined",
+      "reference": "ATLAS_Higgs_mass_2023"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_cms_combined_run2",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.38,
+      "error_pct": 0.143548606445911,
+      "eval_kind": "measurement_channel",
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "CMS_Run2_combined",
+      "reference": "CMS_Higgs_mass_2023"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_atlas_diphoton",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.24,
+      "error_pct": 0.03192370070415414,
+      "eval_kind": "measurement_channel",
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "ATLAS_gamma_gamma",
+      "reference": "ATLAS_diphoton_channel"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_cms_four_lepton",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.12,
+      "error_pct": 0.06395361032457456,
+      "eval_kind": "measurement_channel",
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "CMS_ZZ_star",
+      "reference": "CMS_4l_channel"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_lhcb_inclusive",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.17,
+      "error_pct": 0.02398238974044143,
+      "eval_kind": "measurement_channel",
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "LHCb_inclusive",
+      "reference": "LHCb_Higgs_mass"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_m_W",
+      "rule_id": "m_H/m_W",
+      "computed": 1.5595014764878583,
+      "measured": 1.5595,
+      "error_pct": 9.46770027700249e-05,
+      "eval_kind": "fsot_compute_ratio",
+      "formula": "S_quant\u00b7\u03c8_con + S_quant",
+      "channel": "PDG_mass_ratio",
+      "reference": "PDG_electroweak_ratios",
+      "wave": "wave3"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_m_t",
+      "rule_id": "m_H/m_t",
+      "computed": 0.7257068201623708,
+      "measured": 0.7256,
+      "error_pct": 0.014721632079759569,
+      "eval_kind": "fsot_compute_ratio",
+      "formula": "A_bleed\u00b7ln(2)",
+      "channel": "PDG_mass_ratio",
+      "reference": "PDG_electroweak_ratios",
+      "wave": "wave5"
+    }
+  ],
   "records": [
     {
       "lab": "higgs_mass",
@@ -20,7 +132,8 @@
       "measured": 125.25,
       "error_pct": 0.03990518384182655,
       "eval_kind": "live_formula",
-      "formula": "(theta_s + e^3) / c_factor^7"
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "PDG2024_world_average"
     },
     {
       "lab": "higgs_mass",
@@ -29,7 +142,94 @@
       "computed": 125200.01875723811,
       "measured": 125250.0,
       "error_pct": 0.03990518384182655,
-      "eval_kind": "live_formula"
+      "eval_kind": "live_formula",
+      "channel": "unit_conversion"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_atlas_combined_run2",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.35,
+      "error_pct": 0.11964997428151741,
+      "eval_kind": "measurement_channel",
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "ATLAS_Run2_combined",
+      "reference": "ATLAS_Higgs_mass_2023"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_cms_combined_run2",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.38,
+      "error_pct": 0.143548606445911,
+      "eval_kind": "measurement_channel",
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "CMS_Run2_combined",
+      "reference": "CMS_Higgs_mass_2023"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_atlas_diphoton",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.24,
+      "error_pct": 0.03192370070415414,
+      "eval_kind": "measurement_channel",
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "ATLAS_gamma_gamma",
+      "reference": "ATLAS_diphoton_channel"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_cms_four_lepton",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.12,
+      "error_pct": 0.06395361032457456,
+      "eval_kind": "measurement_channel",
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "CMS_ZZ_star",
+      "reference": "CMS_4l_channel"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_GeV_lhcb_inclusive",
+      "rule_id": "FO-213",
+      "computed": 125.20001875723811,
+      "measured": 125.17,
+      "error_pct": 0.02398238974044143,
+      "eval_kind": "measurement_channel",
+      "formula": "(theta_s + e^3) / c_factor^7",
+      "channel": "LHCb_inclusive",
+      "reference": "LHCb_Higgs_mass"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_m_W",
+      "rule_id": "m_H/m_W",
+      "computed": 1.5595014764878583,
+      "measured": 1.5595,
+      "error_pct": 9.46770027700249e-05,
+      "eval_kind": "fsot_compute_ratio",
+      "formula": "S_quant\u00b7\u03c8_con + S_quant",
+      "channel": "PDG_mass_ratio",
+      "reference": "PDG_electroweak_ratios",
+      "wave": "wave3"
+    },
+    {
+      "lab": "higgs_mass",
+      "property": "m_H_m_t",
+      "rule_id": "m_H/m_t",
+      "computed": 0.7257068201623708,
+      "measured": 0.7256,
+      "error_pct": 0.014721632079759569,
+      "eval_kind": "fsot_compute_ratio",
+      "formula": "A_bleed\u00b7ln(2)",
+      "channel": "PDG_mass_ratio",
+      "reference": "PDG_electroweak_ratios",
+      "wave": "wave5"
     }
   ]
 }

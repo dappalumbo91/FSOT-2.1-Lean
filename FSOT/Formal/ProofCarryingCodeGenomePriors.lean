@@ -21,12 +21,12 @@ def proof_cg_oss_affinity_pair_count : ℕ := 8
 theorem proof_cg_observable_count_pos : 0 < proof_cg_observable_count := by
   unfold proof_cg_observable_count; norm_num
 
-theorem proof_cg_pooled_median_under_five_pct :
-    proof_cg_pooled_median_error_pct < (5 : ℝ) := by
+theorem proof_cg_pooled_median_under_half_pct :
+    proof_cg_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold proof_cg_pooled_median_error_pct; norm_num
 
-theorem proof_cg_headline_median_under_five_pct :
-    proof_cg_headline_median_error_pct < (5 : ℝ) := by
+theorem proof_cg_headline_median_under_half_pct :
+    proof_cg_headline_median_error_pct < (0.5 : ℝ) := by
   unfold proof_cg_headline_median_error_pct; norm_num
 
 theorem proof_cg_beats_sota_headlines_pos : 0 < proof_cg_beats_sota_headlines := by
@@ -35,11 +35,11 @@ theorem proof_cg_oss_pairs_pos : 0 < proof_cg_oss_affinity_pair_count := by unfo
 
 theorem proof_cg_bundle :
     proof_cg_observable_count = 25 ∧
-    proof_cg_pooled_median_error_pct < (5 : ℝ) ∧
+    proof_cg_pooled_median_error_pct < (0.5 : ℝ) ∧
     proof_cg_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold proof_cg_observable_count; norm_num
-  · exact proof_cg_pooled_median_under_five_pct
+  · exact proof_cg_pooled_median_under_half_pct
   · exact proof_cg_beats_sota_headlines_pos
 
 end

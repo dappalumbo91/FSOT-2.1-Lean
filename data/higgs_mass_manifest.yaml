@@ -1,10 +1,11 @@
-# Tier 17 — Higgs boson mass (FO-213 SMILES intrinsic).
-version: "1.0"
-updated: "2026-07-09"
+# Tier 17 — Higgs boson mass (FO-213 SMILES intrinsic + LHC channels).
+version: "1.1"
+updated: "2026-07-10"
 
 source:
   smiles_dataset: vendor/smiles/FSOT_SMILES_Lab_Dataset.json
   overlay_rule: FO-213
+  reference_channels: data/higgs_mass_reference_observables.json
 
 build:
   script: scripts/build_higgs_mass_benchmark.py

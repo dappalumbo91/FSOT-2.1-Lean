@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T15:46:14.790151+00:00",
+  "generated_at": "2026-07-10T17:50:40.993142+00:00",
   "domain": "Time_Emergence_Simulation",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -512,6 +512,18 @@
       "greenwich_tau": 1.419841
     }
   ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.041099,
+    "classifier_count": 7,
+    "classifier_correct": 7,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
   "physics_name": "Fluid_Phase_Current",
   "physics_name_long": "Observer-Locked Emergent Phase Propagation Current",
   "hypothesis": "time_is_emergent_byproduct_not_fundamental",

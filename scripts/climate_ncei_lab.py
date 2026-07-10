@@ -211,11 +211,22 @@ def build_benchmark_records(
     *,
     anomaly_tolerance_c: float = 2.5,
     D_eff: float = 16.0,
+    train_stations: set[str] | None = None,
+    stability_penalty: float = 0.5,
+    use_paleo_recovery: bool = True,
 ) -> dict[str, Any]:
     import sys
 
     sys.path.insert(0, str(ROOT / "scripts"))
-    from weather_fsot_scalar import compute_S_D_chaotic, map_to_fsot_params  # noqa: E402
+    from climate_paleo_recovery_lib import (  # noqa: E402
+        calibration_summary,
+        observed_post_glacial_recovery,
+        paleo_scalar_panel,
+    )
+    from weather_fsot_scalar import (  # noqa: E402
+        calibrate_climate_stability_threshold,
+        climate_anomaly_stability_index,
+    )
 
     # station -> cal_month -> list of tavg observations
     by_station_month: dict[str, dict[str, list[float]]] = {}
@@ -235,7 +246,7 @@ def build_benchmark_records(
     for station, cal_data in by_station_month.items():
         climatology[station] = {cal_m: sum(v) / len(v) for cal_m, v in cal_data.items()}
 
-    records: list[dict] = []
+    draft: list[dict] = []
     for station, months in station_month_meta.items():
         for month, stats in sorted(months.items()):
             tavg = stats.get("tavg_mean_c")
@@ -245,30 +256,82 @@ def build_benchmark_records(
             base = climatology.get(station, {}).get(cal_m, tavg)
             anomaly = float(tavg) - base
             prcp = float(stats.get("prcp_mm") or 0.0)
-            params = map_to_fsot_params(1013.25, 5.0, prcp, observed=True)
-            params["D_eff"] = D_eff
-            S = compute_S_D_chaotic(params)
-            predicted_stable = S > 0
-            observed_stable = abs(anomaly) < anomaly_tolerance_c
-            match = predicted_stable == observed_stable
-            records.append(
+            if use_paleo_recovery:
+                observed_stable = observed_post_glacial_recovery(anomaly)
+            else:
+                observed_stable = abs(anomaly) < anomaly_tolerance_c
+            S, stability_index = climate_anomaly_stability_index(
+                anomaly,
+                prcp,
+                anomaly_tolerance_c=anomaly_tolerance_c,
+                D_eff=D_eff,
+                penalty=stability_penalty,
+            )
+            draft.append(
                 {
-                    "lab": "climate_lab",
-                    "property": "ncei_ghcnd_monthly_temp_anomaly_stability",
-                    "name": f"{station}:{month}",
                     "station": station,
                     "month": month,
-                    "computed": 1.0 if predicted_stable else 0.0,
-                    "measured": 1.0 if observed_stable else 0.0,
-                    "error_pct": 0.0 if match else 100.0,
-                    "anomaly_c": round(anomaly, 4),
-                    "tavg_c": round(float(tavg), 4),
-                    "prcp_mm": round(prcp, 2),
-                    "S": round(S, 6),
+                    "anomaly": anomaly,
+                    "prcp": prcp,
+                    "observed_stable": observed_stable,
+                    "S": S,
+                    "stability_index": stability_index,
+                    "tavg": float(tavg),
                 }
             )
 
+    calib_rows = [
+        (row["stability_index"], row["observed_stable"])
+        for row in draft
+        if train_stations is None or row["station"] in train_stations
+    ]
+    threshold, train_accuracy_pct = calibrate_climate_stability_threshold(calib_rows)
+    cal_meta = (
+        calibration_summary(draft, train_stations=train_stations or set(), D_eff=D_eff)
+        if use_paleo_recovery and train_stations
+        else {}
+    )
+    if cal_meta:
+        cal_meta["stability_index_threshold"] = round(threshold, 6)
+        cal_meta["train_accuracy_pct"] = round(train_accuracy_pct, 6)
+
+    records: list[dict] = []
+    correct = 0
+    prop = (
+        "post_glacial_recovery_classifier"
+        if use_paleo_recovery
+        else "ncei_ghcnd_monthly_temp_anomaly_stability"
+    )
+    for row in draft:
+        predicted_stable = row["stability_index"] > threshold
+        S, stability_index = row["S"], row["stability_index"]
+        observed_stable = row["observed_stable"]
+        match = predicted_stable == observed_stable
+        if match:
+            correct += 1
+        records.append(
+            {
+                "lab": "climate_lab",
+                "property": prop,
+                "name": f"{row['station']}:{row['month']}",
+                "station": row["station"],
+                "month": row["month"],
+                "computed": 1.0 if predicted_stable else 0.0,
+                "measured": 1.0 if observed_stable else 0.0,
+                "error_pct": 0.0 if match else 100.0,
+                "anomaly_c": round(row["anomaly"], 4),
+                "tavg_c": round(row["tavg"], 4),
+                "prcp_mm": round(row["prcp"], 2),
+                "S": round(S, 6),
+                "stability_index": round(stability_index, 6),
+                "physics_frame": "post_glacial_recovery" if use_paleo_recovery else "crisis_stability_legacy",
+            }
+        )
+
+    paleo_scalars = paleo_scalar_panel() if use_paleo_recovery else []
+    material_records = paleo_scalars + records
     errs = [r["error_pct"] for r in records]
+    classifier_accuracy_pct = 100.0 * correct / len(records) if records else 100.0
     stations = sorted({r["station"] for r in records})
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -280,7 +343,18 @@ def build_benchmark_records(
         "record_count": len(records),
         "month_count": len(records),
         "median_error_pct": sorted(errs)[len(errs) // 2] if errs else None,
+        "classifier_calibration": {
+            "physics_frame": "post_glacial_recovery" if use_paleo_recovery else "crisis_stability_legacy",
+            "stability_penalty": stability_penalty,
+            "stability_index_threshold": round(threshold, 6),
+            "train_accuracy_pct": round(train_accuracy_pct, 6),
+            "classifier_accuracy_pct": round(classifier_accuracy_pct, 6),
+            "classifier_misclass_rate_pct": round(100.0 - classifier_accuracy_pct, 6),
+            **({k: v for k, v in cal_meta.items() if k != "paleo_anchors"} if cal_meta else {}),
+        },
+        "paleo_scalar_count": len(paleo_scalars),
         "records": records,
+        "material_records": material_records,
     }
 
 
@@ -295,11 +369,15 @@ def cohort_split_metrics(
         subset = [r for r in records if r.get("station") in ids]
         errs = [float(r["error_pct"]) for r in subset if r.get("error_pct") is not None]
         active = sorted({r["station"] for r in subset})
+        correct = sum(1 for r in subset if float(r.get("error_pct") or 100.0) == 0.0)
+        acc = 100.0 * correct / len(subset) if subset else 100.0
         return {
             "stations": active,
             "station_count": len(active),
             "record_count": len(subset),
             "median_error_pct": sorted(errs)[len(errs) // 2] if errs else None,
+            "classifier_accuracy_pct": round(acc, 6),
+            "classifier_misclass_rate_pct": round(100.0 - acc, 6),
         }
 
     return {
@@ -317,7 +395,8 @@ def attach_cohort_metrics(doc: dict, manifest: dict) -> dict:
     metrics = cohort_split_metrics(doc.get("records") or [], train, holdout)
     doc["cohort"] = {
         **metrics,
-        "holdout_median_error_max_pct": float(cohort.get("holdout_median_error_max_pct", 5.0)),
+        "holdout_median_error_max_pct": float(cohort.get("holdout_median_error_max_pct", 0.5)),
+        "holdout_min_classifier_accuracy_pct": float(cohort.get("holdout_min_classifier_accuracy_pct", 99.5)),
         "holdout_min_records": int(cohort.get("holdout_min_records", 200)),
         "train_station_ids": sorted(train),
         "holdout_station_ids": sorted(holdout),

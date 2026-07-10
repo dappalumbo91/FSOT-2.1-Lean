@@ -22,12 +22,12 @@ def med_gal_br_cross_scale_motif_count : ℕ := 1
 theorem med_gal_br_observable_count_pos : 0 < med_gal_br_observable_count := by
   unfold med_gal_br_observable_count; norm_num
 
-theorem med_gal_br_pooled_median_under_five_pct :
-    med_gal_br_pooled_median_error_pct < (5 : ℝ) := by
+theorem med_gal_br_pooled_median_under_half_pct :
+    med_gal_br_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold med_gal_br_pooled_median_error_pct; norm_num
 
-theorem med_gal_br_headline_median_under_five_pct :
-    med_gal_br_headline_median_error_pct < (5 : ℝ) := by
+theorem med_gal_br_headline_median_under_half_pct :
+    med_gal_br_headline_median_error_pct < (0.5 : ℝ) := by
   unfold med_gal_br_headline_median_error_pct; norm_num
 
 theorem med_gal_br_beats_sota_headlines_pos : 0 < med_gal_br_beats_sota_headlines := by
@@ -36,11 +36,11 @@ theorem med_gal_br_bridge_pairs_pos : 0 < med_gal_br_bridge_pair_count := by unf
 
 theorem med_gal_br_bundle :
     med_gal_br_observable_count = 49 ∧
-    med_gal_br_pooled_median_error_pct < (5 : ℝ) ∧
+    med_gal_br_pooled_median_error_pct < (0.5 : ℝ) ∧
     med_gal_br_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold med_gal_br_observable_count; norm_num
-  · exact med_gal_br_pooled_median_under_five_pct
+  · exact med_gal_br_pooled_median_under_half_pct
   · exact med_gal_br_beats_sota_headlines_pos
 
 end

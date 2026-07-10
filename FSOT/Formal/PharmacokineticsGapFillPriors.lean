@@ -20,12 +20,12 @@ def pharmacokinetics_gap_fill_D_eff : ℕ := 14
 theorem pharmacokinetics_gap_fill_observable_count_pos : 0 < pharmacokinetics_gap_fill_observable_count := by
   unfold pharmacokinetics_gap_fill_observable_count; norm_num
 
-theorem pharmacokinetics_gap_fill_pooled_median_under_five_pct :
-    pharmacokinetics_gap_fill_pooled_median_error_pct < (5 : ℝ) := by
+theorem pharmacokinetics_gap_fill_pooled_median_under_half_pct :
+    pharmacokinetics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold pharmacokinetics_gap_fill_pooled_median_error_pct; norm_num
 
-theorem pharmacokinetics_gap_fill_headline_median_under_five_pct :
-    pharmacokinetics_gap_fill_headline_median_error_pct < (5 : ℝ) := by
+theorem pharmacokinetics_gap_fill_headline_median_under_half_pct :
+    pharmacokinetics_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold pharmacokinetics_gap_fill_headline_median_error_pct; norm_num
 
 theorem pharmacokinetics_gap_fill_beats_sota_headlines_pos : 0 < pharmacokinetics_gap_fill_beats_sota_headlines := by
@@ -33,14 +33,14 @@ theorem pharmacokinetics_gap_fill_beats_sota_headlines_pos : 0 < pharmacokinetic
 
 theorem pharmacokinetics_gap_fill_bundle :
     pharmacokinetics_gap_fill_observable_count = 56 ∧
-    pharmacokinetics_gap_fill_pooled_median_error_pct < (5 : ℝ) ∧
-    pharmacokinetics_gap_fill_headline_median_error_pct < (5 : ℝ) ∧
+    pharmacokinetics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) ∧
+    pharmacokinetics_gap_fill_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < pharmacokinetics_gap_fill_beats_sota_headlines ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨
     by unfold pharmacokinetics_gap_fill_observable_count; norm_num,
-    pharmacokinetics_gap_fill_pooled_median_under_five_pct,
-    pharmacokinetics_gap_fill_headline_median_under_five_pct,
+    pharmacokinetics_gap_fill_pooled_median_under_half_pct,
+    pharmacokinetics_gap_fill_headline_median_under_half_pct,
     pharmacokinetics_gap_fill_beats_sota_headlines_pos,
     medical_raw_S_positive
   ⟩

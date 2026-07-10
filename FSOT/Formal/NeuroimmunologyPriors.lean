@@ -25,12 +25,12 @@ theorem neuroimmunology_observable_count_pos : 0 < neuroimmunology_observable_co
 theorem neuroimmunology_section_count_pos : 0 < neuroimmunology_section_count := by
   unfold neuroimmunology_section_count; norm_num
 
-theorem neuroimmunology_pooled_median_under_five_pct :
-    neuroimmunology_pooled_median_error_pct < (5 : ℝ) := by
+theorem neuroimmunology_pooled_median_under_half_pct :
+    neuroimmunology_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold neuroimmunology_pooled_median_error_pct; norm_num
 
-theorem neuroimmunology_headline_median_under_five_pct :
-    neuroimmunology_headline_median_error_pct < (5 : ℝ) := by
+theorem neuroimmunology_headline_median_under_half_pct :
+    neuroimmunology_headline_median_error_pct < (0.5 : ℝ) := by
   unfold neuroimmunology_headline_median_error_pct; norm_num
 
 theorem neuroimmunology_beats_sota_headlines_pos : 0 < neuroimmunology_beats_sota_headlines := by
@@ -40,16 +40,16 @@ theorem neuroimmunology_bundle :
     neuroimmunology_observable_count = 92 ∧
     neuroimmunology_section_count = 7 ∧
     neuroimmunology_D_eff = 14 ∧
-    neuroimmunology_pooled_median_error_pct < (5 : ℝ) ∧
-    neuroimmunology_headline_median_error_pct < (5 : ℝ) ∧
+    neuroimmunology_pooled_median_error_pct < (0.5 : ℝ) ∧
+    neuroimmunology_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < neuroimmunology_beats_sota_headlines ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨
     by unfold neuroimmunology_observable_count; norm_num,
     by unfold neuroimmunology_section_count; norm_num,
     by unfold neuroimmunology_D_eff; norm_num,
-    neuroimmunology_pooled_median_under_five_pct,
-    neuroimmunology_headline_median_under_five_pct,
+    neuroimmunology_pooled_median_under_half_pct,
+    neuroimmunology_headline_median_under_half_pct,
     neuroimmunology_beats_sota_headlines_pos,
     medical_raw_S_positive
   ⟩

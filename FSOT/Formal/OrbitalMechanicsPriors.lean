@@ -18,19 +18,19 @@ def orbital_mechanics_D_eff : ℕ := 18
 theorem orbital_mechanics_body_count_pos : 0 < orbital_mechanics_body_count := by
   unfold orbital_mechanics_body_count; norm_num
 
-theorem orbital_mechanics_median_error_under_five_pct :
-    orbital_mechanics_median_error_pct < (5 : ℝ) := by
+theorem orbital_mechanics_median_error_under_half_pct :
+    orbital_mechanics_median_error_pct < (0.5 : ℝ) := by
   unfold orbital_mechanics_median_error_pct; norm_num
 
 theorem orbital_mechanics_bundle :
     orbital_mechanics_body_count = 9 ∧
     orbital_mechanics_D_eff = 18 ∧
-    orbital_mechanics_median_error_pct < (5 : ℝ) ∧
+    orbital_mechanics_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "astronomical") > 0 := by
   refine ⟨
     by unfold orbital_mechanics_body_count; norm_num,
     by unfold orbital_mechanics_D_eff; norm_num,
-    orbital_mechanics_median_error_under_five_pct,
+    orbital_mechanics_median_error_under_half_pct,
     astronomical_raw_S_positive
   ⟩
 

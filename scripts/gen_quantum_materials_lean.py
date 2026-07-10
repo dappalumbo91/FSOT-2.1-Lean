@@ -58,12 +58,12 @@ theorem quantum_materials_observable_count_pos : 0 < quantum_materials_observabl
 theorem quantum_materials_section_count_pos : 0 < quantum_materials_section_count := by
   unfold quantum_materials_section_count; norm_num
 
-theorem quantum_materials_pooled_median_under_five_pct :
-    quantum_materials_pooled_median_error_pct < (5 : ℝ) := by
+theorem quantum_materials_pooled_median_under_half_pct :
+    quantum_materials_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold quantum_materials_pooled_median_error_pct; norm_num
 
-theorem quantum_materials_headline_median_under_five_pct :
-    quantum_materials_headline_median_error_pct < (5 : ℝ) := by
+theorem quantum_materials_headline_median_under_half_pct :
+    quantum_materials_headline_median_error_pct < (0.5 : ℝ) := by
   unfold quantum_materials_headline_median_error_pct; norm_num
 
 theorem quantum_materials_beats_sota_headlines_pos : 0 < quantum_materials_beats_sota_headlines := by
@@ -74,16 +74,16 @@ theorem quantum_materials_bundle :
     quantum_materials_observable_count = {n} ∧
     quantum_materials_section_count = {sections} ∧
     quantum_materials_D_eff = {d_eff} ∧
-    quantum_materials_pooled_median_error_pct < (5 : ℝ) ∧
-    quantum_materials_headline_median_error_pct < (5 : ℝ) ∧
+    quantum_materials_pooled_median_error_pct < (0.5 : ℝ) ∧
+    quantum_materials_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < quantum_materials_beats_sota_headlines ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨
     by unfold quantum_materials_observable_count; norm_num,
     by unfold quantum_materials_section_count; norm_num,
     by unfold quantum_materials_D_eff; norm_num,
-    quantum_materials_pooled_median_under_five_pct,
-    quantum_materials_headline_median_under_five_pct,
+    quantum_materials_pooled_median_under_half_pct,
+    quantum_materials_headline_median_under_half_pct,
     quantum_materials_beats_sota_headlines_pos,
     {sign}
   ⟩

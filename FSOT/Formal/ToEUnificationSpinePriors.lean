@@ -22,12 +22,12 @@ def toe_unity_orbital_fill_centipercent : ℕ := 100
 theorem toe_unity_observable_count_pos : 0 < toe_unity_observable_count := by
   unfold toe_unity_observable_count; norm_num
 
-theorem toe_unity_pooled_median_under_five_pct :
-    toe_unity_pooled_median_error_pct < (5 : ℝ) := by
+theorem toe_unity_pooled_median_under_half_pct :
+    toe_unity_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold toe_unity_pooled_median_error_pct; norm_num
 
-theorem toe_unity_headline_median_under_five_pct :
-    toe_unity_headline_median_error_pct < (5 : ℝ) := by
+theorem toe_unity_headline_median_under_half_pct :
+    toe_unity_headline_median_error_pct < (0.5 : ℝ) := by
   unfold toe_unity_headline_median_error_pct; norm_num
 
 theorem toe_unity_beats_sota_headlines_pos : 0 < toe_unity_beats_sota_headlines := by
@@ -36,11 +36,11 @@ theorem toe_unity_coupling_nodes_pos : 0 < toe_unity_coupling_node_count := by u
 
 theorem toe_unity_bundle :
     toe_unity_observable_count = 8 ∧
-    toe_unity_pooled_median_error_pct < (5 : ℝ) ∧
+    toe_unity_pooled_median_error_pct < (0.5 : ℝ) ∧
     toe_unity_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold toe_unity_observable_count; norm_num
-  · exact toe_unity_pooled_median_under_five_pct
+  · exact toe_unity_pooled_median_under_half_pct
   · exact toe_unity_beats_sota_headlines_pos
 
 end

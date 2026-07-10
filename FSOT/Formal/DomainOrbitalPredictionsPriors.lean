@@ -22,12 +22,12 @@ def orb_pred_filled_prediction_count : ℕ := 12
 theorem orb_pred_observable_count_pos : 0 < orb_pred_observable_count := by
   unfold orb_pred_observable_count; norm_num
 
-theorem orb_pred_pooled_median_under_five_pct :
-    orb_pred_pooled_median_error_pct < (5 : ℝ) := by
+theorem orb_pred_pooled_median_under_half_pct :
+    orb_pred_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold orb_pred_pooled_median_error_pct; norm_num
 
-theorem orb_pred_headline_median_under_five_pct :
-    orb_pred_headline_median_error_pct < (5 : ℝ) := by
+theorem orb_pred_headline_median_under_half_pct :
+    orb_pred_headline_median_error_pct < (0.5 : ℝ) := by
   unfold orb_pred_headline_median_error_pct; norm_num
 
 theorem orb_pred_beats_sota_headlines_pos : 0 < orb_pred_beats_sota_headlines := by
@@ -36,11 +36,11 @@ theorem orb_pred_filled_all_predictions : orb_pred_filled_prediction_count = orb
 
 theorem orb_pred_bundle :
     orb_pred_observable_count = 12 ∧
-    orb_pred_pooled_median_error_pct < (5 : ℝ) ∧
+    orb_pred_pooled_median_error_pct < (0.5 : ℝ) ∧
     orb_pred_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold orb_pred_observable_count; norm_num
-  · exact orb_pred_pooled_median_under_five_pct
+  · exact orb_pred_pooled_median_under_half_pct
   · exact orb_pred_beats_sota_headlines_pos
 
 end

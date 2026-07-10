@@ -17,7 +17,7 @@ def fpc_spine_headline_median_error_pct : ℝ := (0.009504 : ℝ)
 def fpc_spine_beats_sota_headlines : ℕ := 2
 def fpc_spine_D_eff : ℕ := 20
 def fpc_spine_fluidlink_edge_count : ℕ := 6
-def fpc_spine_crosswalk_domain_count : ℕ := 145
+def fpc_spine_crosswalk_domain_count : ℕ := 156
 
 theorem fpc_spine_observable_count_pos : 0 < fpc_spine_observable_count := by
   unfold fpc_spine_observable_count; norm_num

@@ -68,6 +68,56 @@ def compute_S_D_chaotic(p: dict) -> float:
     return float(raw_S * k)
 
 
+def map_climate_month_params(
+    anomaly_c: float,
+    prcp_mm: float,
+    *,
+    D_eff: float = 16.0,
+    observed: bool = True,
+) -> dict:
+    """Couple monthly temperature anomaly into FSOT weather state."""
+    pressure_hpa = 1013.25 + anomaly_c * 1.75
+    wind_speed = 2.5 + abs(anomaly_c) * 1.15
+    precip_mm = prcp_mm + max(0.0, -anomaly_c) * 0.15
+    params = map_to_fsot_params(pressure_hpa, wind_speed, precip_mm, observed=observed)
+    params["D_eff"] = D_eff
+    params["delta_psi"] = anomaly_c / 2.5
+    params["trend_bias"] = -abs(anomaly_c) * 0.008
+    return params
+
+
+def climate_anomaly_stability_index(
+    anomaly_c: float,
+    prcp_mm: float,
+    *,
+    anomaly_tolerance_c: float = 2.5,
+    D_eff: float = 16.0,
+    penalty: float = 0.5,
+) -> tuple[float, float]:
+    """Return (S, stability_index). Higher index ⇒ more stable month."""
+    params = map_climate_month_params(anomaly_c, prcp_mm, D_eff=D_eff)
+    S = compute_S_D_chaotic(params)
+    norm = abs(anomaly_c) / max(anomaly_tolerance_c, 1e-6)
+    return S, S - norm * penalty
+
+
+def calibrate_climate_stability_threshold(
+    rows: list[tuple[float, bool]],
+) -> tuple[float, float]:
+    """Return (threshold, train_accuracy_pct) maximizing accuracy on provided rows."""
+    if not rows:
+        return 0.0, 100.0
+    best_th = 0.0
+    best_acc = -1.0
+    for th in sorted({idx for idx, _ in rows}):
+        ok = sum(1 for idx, stable in rows if (idx > th) == stable)
+        acc = ok / len(rows) * 100.0
+        if acc > best_acc:
+            best_acc = acc
+            best_th = th
+    return best_th, best_acc
+
+
 def map_to_fsot_params(pressure_hpa: float, wind_speed: float, precip_mm: float, observed: bool = True) -> dict:
     std_pressure = 1013.25
     delta_psi = (pressure_hpa - std_pressure) / 50.0

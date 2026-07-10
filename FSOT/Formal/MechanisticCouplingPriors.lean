@@ -22,12 +22,12 @@ def mech_cpl_validated_pairs : ℕ := 13
 theorem mech_cpl_observable_count_pos : 0 < mech_cpl_observable_count := by
   unfold mech_cpl_observable_count; norm_num
 
-theorem mech_cpl_pooled_median_under_five_pct :
-    mech_cpl_pooled_median_error_pct < (5 : ℝ) := by
+theorem mech_cpl_pooled_median_under_half_pct :
+    mech_cpl_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold mech_cpl_pooled_median_error_pct; norm_num
 
-theorem mech_cpl_headline_median_under_five_pct :
-    mech_cpl_headline_median_error_pct < (5 : ℝ) := by
+theorem mech_cpl_headline_median_under_half_pct :
+    mech_cpl_headline_median_error_pct < (0.5 : ℝ) := by
   unfold mech_cpl_headline_median_error_pct; norm_num
 
 theorem mech_cpl_beats_sota_headlines_pos : 0 < mech_cpl_beats_sota_headlines := by
@@ -37,11 +37,11 @@ theorem mech_cpl_mechanisms_pos : 0 < mech_cpl_mechanism_count := by
 
 theorem mech_cpl_bundle :
     mech_cpl_observable_count = 78 ∧
-    mech_cpl_pooled_median_error_pct < (5 : ℝ) ∧
+    mech_cpl_pooled_median_error_pct < (0.5 : ℝ) ∧
     mech_cpl_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold mech_cpl_observable_count; norm_num
-  · exact mech_cpl_pooled_median_under_five_pct
+  · exact mech_cpl_pooled_median_under_half_pct
   · exact mech_cpl_beats_sota_headlines_pos
 
 end

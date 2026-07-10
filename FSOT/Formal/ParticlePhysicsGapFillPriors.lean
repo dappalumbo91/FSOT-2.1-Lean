@@ -20,12 +20,12 @@ def particle_physics_gap_fill_D_eff : ℕ := 7
 theorem particle_physics_gap_fill_observable_count_pos : 0 < particle_physics_gap_fill_observable_count := by
   unfold particle_physics_gap_fill_observable_count; norm_num
 
-theorem particle_physics_gap_fill_pooled_median_under_five_pct :
-    particle_physics_gap_fill_pooled_median_error_pct < (5 : ℝ) := by
+theorem particle_physics_gap_fill_pooled_median_under_half_pct :
+    particle_physics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold particle_physics_gap_fill_pooled_median_error_pct; norm_num
 
-theorem particle_physics_gap_fill_headline_median_under_five_pct :
-    particle_physics_gap_fill_headline_median_error_pct < (5 : ℝ) := by
+theorem particle_physics_gap_fill_headline_median_under_half_pct :
+    particle_physics_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold particle_physics_gap_fill_headline_median_error_pct; norm_num
 
 theorem particle_physics_gap_fill_beats_sota_headlines_pos : 0 < particle_physics_gap_fill_beats_sota_headlines := by
@@ -33,14 +33,14 @@ theorem particle_physics_gap_fill_beats_sota_headlines_pos : 0 < particle_physic
 
 theorem particle_physics_gap_fill_bundle :
     particle_physics_gap_fill_observable_count = 98 ∧
-    particle_physics_gap_fill_pooled_median_error_pct < (5 : ℝ) ∧
-    particle_physics_gap_fill_headline_median_error_pct < (5 : ℝ) ∧
+    particle_physics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) ∧
+    particle_physics_gap_fill_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < particle_physics_gap_fill_beats_sota_headlines ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
     by unfold particle_physics_gap_fill_observable_count; norm_num,
-    particle_physics_gap_fill_pooled_median_under_five_pct,
-    particle_physics_gap_fill_headline_median_under_five_pct,
+    particle_physics_gap_fill_pooled_median_under_half_pct,
+    particle_physics_gap_fill_headline_median_under_half_pct,
     particle_physics_gap_fill_beats_sota_headlines_pos,
     particle_raw_S_positive
   ⟩

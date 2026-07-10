@@ -20,12 +20,12 @@ def entomology_ext_D_eff : ℕ := 14
 theorem entomology_ext_observable_count_pos : 0 < entomology_ext_observable_count := by
   unfold entomology_ext_observable_count; norm_num
 
-theorem entomology_ext_pooled_median_under_five_pct :
-    entomology_ext_pooled_median_error_pct < (5 : ℝ) := by
+theorem entomology_ext_pooled_median_under_half_pct :
+    entomology_ext_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold entomology_ext_pooled_median_error_pct; norm_num
 
-theorem entomology_ext_headline_median_under_five_pct :
-    entomology_ext_headline_median_error_pct < (5 : ℝ) := by
+theorem entomology_ext_headline_median_under_half_pct :
+    entomology_ext_headline_median_error_pct < (0.5 : ℝ) := by
   unfold entomology_ext_headline_median_error_pct; norm_num
 
 theorem entomology_ext_beats_sota_headlines_pos : 0 < entomology_ext_beats_sota_headlines := by
@@ -33,14 +33,14 @@ theorem entomology_ext_beats_sota_headlines_pos : 0 < entomology_ext_beats_sota_
 
 theorem entomology_ext_bundle :
     entomology_ext_observable_count = 430 ∧
-    entomology_ext_pooled_median_error_pct < (5 : ℝ) ∧
-    entomology_ext_headline_median_error_pct < (5 : ℝ) ∧
+    entomology_ext_pooled_median_error_pct < (0.5 : ℝ) ∧
+    entomology_ext_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < entomology_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
     by unfold entomology_ext_observable_count; norm_num,
-    entomology_ext_pooled_median_under_five_pct,
-    entomology_ext_headline_median_under_five_pct,
+    entomology_ext_pooled_median_under_half_pct,
+    entomology_ext_headline_median_under_half_pct,
     entomology_ext_beats_sota_headlines_pos,
     biological_raw_S_positive
   ⟩

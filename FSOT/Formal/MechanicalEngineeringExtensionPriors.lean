@@ -20,12 +20,12 @@ def mechanical_engineering_ext_D_eff : ℕ := 16
 theorem mechanical_engineering_ext_observable_count_pos : 0 < mechanical_engineering_ext_observable_count := by
   unfold mechanical_engineering_ext_observable_count; norm_num
 
-theorem mechanical_engineering_ext_pooled_median_under_five_pct :
-    mechanical_engineering_ext_pooled_median_error_pct < (5 : ℝ) := by
+theorem mechanical_engineering_ext_pooled_median_under_half_pct :
+    mechanical_engineering_ext_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold mechanical_engineering_ext_pooled_median_error_pct; norm_num
 
-theorem mechanical_engineering_ext_headline_median_under_five_pct :
-    mechanical_engineering_ext_headline_median_error_pct < (5 : ℝ) := by
+theorem mechanical_engineering_ext_headline_median_under_half_pct :
+    mechanical_engineering_ext_headline_median_error_pct < (0.5 : ℝ) := by
   unfold mechanical_engineering_ext_headline_median_error_pct; norm_num
 
 theorem mechanical_engineering_ext_beats_sota_headlines_pos : 0 < mechanical_engineering_ext_beats_sota_headlines := by
@@ -33,14 +33,14 @@ theorem mechanical_engineering_ext_beats_sota_headlines_pos : 0 < mechanical_eng
 
 theorem mechanical_engineering_ext_bundle :
     mechanical_engineering_ext_observable_count = 50 ∧
-    mechanical_engineering_ext_pooled_median_error_pct < (5 : ℝ) ∧
-    mechanical_engineering_ext_headline_median_error_pct < (5 : ℝ) ∧
+    mechanical_engineering_ext_pooled_median_error_pct < (0.5 : ℝ) ∧
+    mechanical_engineering_ext_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < mechanical_engineering_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨
     by unfold mechanical_engineering_ext_observable_count; norm_num,
-    mechanical_engineering_ext_pooled_median_under_five_pct,
-    mechanical_engineering_ext_headline_median_under_five_pct,
+    mechanical_engineering_ext_pooled_median_under_half_pct,
+    mechanical_engineering_ext_headline_median_under_half_pct,
     mechanical_engineering_ext_beats_sota_headlines_pos,
     material_raw_S_positive
   ⟩

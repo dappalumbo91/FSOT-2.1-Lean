@@ -12,7 +12,7 @@ noncomputable section
 open Real
 
 def higgs_mass_rule_id : String := "FO-213"
-def higgs_mass_observable_count : ℕ := 2
+def higgs_mass_observable_count : ℕ := 9
 def higgs_mass_median_error_pct : ℝ := (0.03990518384182655 : ℝ)
 def higgs_mass_computed_gev : ℝ := (125.20001875723811 : ℝ)
 
@@ -28,7 +28,7 @@ theorem higgs_mass_computed_positive : 0 < higgs_mass_computed_gev := by
 
 /-- Bundle: FO-213 Higgs mass with particle-domain sign proxy. -/
 theorem higgs_mass_bundle :
-    higgs_mass_observable_count = 2 ∧
+    higgs_mass_observable_count = 9 ∧
     higgs_mass_median_error_pct < (0.5 : ℝ) ∧
     0 < higgs_mass_computed_gev ∧
     (0 : ℝ) < raw_S (get_domain_params "particle") := by

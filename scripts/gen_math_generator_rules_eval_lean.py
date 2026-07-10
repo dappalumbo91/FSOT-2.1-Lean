@@ -60,12 +60,12 @@ theorem math_generator_rules_eval_observable_count_pos : 0 < math_generator_rule
 theorem math_generator_rules_eval_corpus_count_pos : 0 < math_generator_rules_eval_corpus_count := by
   unfold math_generator_rules_eval_corpus_count; norm_num
 
-theorem math_generator_rules_eval_pooled_median_under_five_pct :
-    math_generator_rules_eval_pooled_median_error_pct < (5 : ℝ) := by
+theorem math_generator_rules_eval_pooled_median_under_half_pct :
+    math_generator_rules_eval_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold math_generator_rules_eval_pooled_median_error_pct; norm_num
 
-theorem math_generator_rules_eval_headline_median_under_five_pct :
-    math_generator_rules_eval_headline_median_error_pct < (5 : ℝ) := by
+theorem math_generator_rules_eval_headline_median_under_half_pct :
+    math_generator_rules_eval_headline_median_error_pct < (0.5 : ℝ) := by
   unfold math_generator_rules_eval_headline_median_error_pct; norm_num
 
 theorem math_generator_rules_eval_beats_sota_headlines_pos : 0 < math_generator_rules_eval_beats_sota_headlines := by
@@ -76,8 +76,8 @@ theorem math_generator_rules_eval_bundle :
     math_generator_rules_eval_corpus_count = {corpora} ∧
     math_generator_rules_eval_numeric_eval_count = {numeric_n} ∧
     math_generator_rules_eval_D_eff = {d_eff} ∧
-    math_generator_rules_eval_pooled_median_error_pct < (5 : ℝ) ∧
-    math_generator_rules_eval_headline_median_error_pct < (5 : ℝ) ∧
+    math_generator_rules_eval_pooled_median_error_pct < (0.5 : ℝ) ∧
+    math_generator_rules_eval_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < math_generator_rules_eval_beats_sota_headlines ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
@@ -85,8 +85,8 @@ theorem math_generator_rules_eval_bundle :
     by unfold math_generator_rules_eval_corpus_count; norm_num,
     by unfold math_generator_rules_eval_numeric_eval_count; norm_num,
     by unfold math_generator_rules_eval_D_eff; norm_num,
-    math_generator_rules_eval_pooled_median_under_five_pct,
-    math_generator_rules_eval_headline_median_under_five_pct,
+    math_generator_rules_eval_pooled_median_under_half_pct,
+    math_generator_rules_eval_headline_median_under_half_pct,
     math_generator_rules_eval_beats_sota_headlines_pos,
     {sign}
   ⟩

@@ -20,12 +20,12 @@ def history_ext_D_eff : ℕ := 15
 theorem history_ext_observable_count_pos : 0 < history_ext_observable_count := by
   unfold history_ext_observable_count; norm_num
 
-theorem history_ext_pooled_median_under_five_pct :
-    history_ext_pooled_median_error_pct < (5 : ℝ) := by
+theorem history_ext_pooled_median_under_half_pct :
+    history_ext_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold history_ext_pooled_median_error_pct; norm_num
 
-theorem history_ext_headline_median_under_five_pct :
-    history_ext_headline_median_error_pct < (5 : ℝ) := by
+theorem history_ext_headline_median_under_half_pct :
+    history_ext_headline_median_error_pct < (0.5 : ℝ) := by
   unfold history_ext_headline_median_error_pct; norm_num
 
 theorem history_ext_beats_sota_headlines_pos : 0 < history_ext_beats_sota_headlines := by
@@ -33,14 +33,14 @@ theorem history_ext_beats_sota_headlines_pos : 0 < history_ext_beats_sota_headli
 
 theorem history_ext_bundle :
     history_ext_observable_count = 170 ∧
-    history_ext_pooled_median_error_pct < (5 : ℝ) ∧
-    history_ext_headline_median_error_pct < (5 : ℝ) ∧
+    history_ext_pooled_median_error_pct < (0.5 : ℝ) ∧
+    history_ext_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < history_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨
     by unfold history_ext_observable_count; norm_num,
-    history_ext_pooled_median_under_five_pct,
-    history_ext_headline_median_under_five_pct,
+    history_ext_pooled_median_under_half_pct,
+    history_ext_headline_median_under_half_pct,
     history_ext_beats_sota_headlines_pos,
     consciousness_raw_S_positive
   ⟩

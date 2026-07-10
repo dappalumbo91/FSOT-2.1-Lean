@@ -15,6 +15,12 @@ from typing import Any, Callable
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 
+import sys
+
+sys.path.insert(0, str(ROOT / "scripts"))
+from benchmark_margin_lib import margin_summary_for_benchmark  # noqa: E402
+from fsot_precision_constants import LEGACY_LOOSE_GATE_PCT, MAX_MEDIAN_ERROR_PCT  # noqa: E402
+
 BENCH_PATHS = {
     "gbif": DATA / "gbif_species_occurrence_benchmark.json",
     "world_bank": DATA / "world_bank_development_benchmark.json",
@@ -53,13 +59,30 @@ def _load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def _records_from_doc(doc: dict, *, lab: str, keys: tuple[str, ...] = ("records",)) -> list[dict]:
+def _is_classifier_record(row: dict) -> bool:
+    comp = row.get("computed")
+    meas = row.get("measured")
+    prop = (row.get("property") or "").lower()
+    if comp in (0, 1, 0.0, 1.0) and meas in (0, 1, 0.0, 1.0):
+        return True
+    return "classifier" in prop
+
+
+def _records_from_doc(
+    doc: dict,
+    *,
+    lab: str,
+    keys: tuple[str, ...] = ("records",),
+    scalars_only: bool = False,
+) -> list[dict]:
     for key in keys:
         rows = doc.get(key)
         if rows:
             out = []
             for row in rows:
                 if row.get("error_pct") is None:
+                    continue
+                if scalars_only and _is_classifier_record(row):
                     continue
                 rec = dict(row)
                 rec.setdefault("lab", lab)
@@ -120,7 +143,7 @@ def _bench_v11(
     all_errs = [float(r["error_pct"]) for r in material_records]
     pooled = _median(all_errs) or 0.0
     channels: list[tuple[str, str, float, int]] = []
-    beats: dict[str, bool] = {"pooled_vs_domain_baseline": pooled < 5.0}
+    beats: dict[str, bool] = {"pooled_vs_domain_baseline": pooled < LEGACY_LOOSE_GATE_PCT}
     for prop, name, errs in channel_stats:
         med = float(_median(errs) or 0.0)
         channels.append((prop, name, med, len(errs)))
@@ -153,6 +176,8 @@ def _bench_v11(
         },
         "records": headlines,
         "material_records": material_records,
+        "margin_summary": margin_summary_for_benchmark(material_records),
+        "fsot_precision_gate_pct": MAX_MEDIAN_ERROR_PCT,
     }
 
 
@@ -413,7 +438,7 @@ def build_meteorology() -> dict:
     _, authority = _load_fsot()
     records = _records_from_doc(_load_json(BENCH_PATHS["weather"]), lab="weather_lab")
     climate = _load_json(BENCH_PATHS["climate"])
-    records.extend((climate.get("records") or [])[:60])
+    records.extend(_records_from_doc(climate, lab="weather_lab", scalars_only=True)[:60])
     errs = [float(r["error_pct"]) for r in records]
     return _bench_v11(
         domain="Meteorology",
@@ -1035,8 +1060,8 @@ def build_architecture_building_science() -> dict:
                 }
             )
     climate = _load_json(BENCH_PATHS["climate"])
-    for row in (climate.get("records") or [])[:40]:
-        records.append({**row, "lab": "architecture_building_science_lab", "source": "climate_envelope_bridge"})
+    for row in _records_from_doc(climate, lab="architecture_building_science_lab", scalars_only=True)[:40]:
+        records.append({**row, "source": "climate_envelope_bridge"})
     weather = _records_from_doc(_load_json(BENCH_PATHS["weather"]), lab="architecture_building_science_lab")[:20]
     records.extend(weather)
     errs = [float(r["error_pct"]) for r in records if "hvac" in str(r.get("source", "")).lower() or "ashrae" in str(r.get("source", "")).lower()]

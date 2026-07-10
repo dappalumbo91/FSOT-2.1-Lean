@@ -284,19 +284,40 @@ def build_simulation() -> dict:
                 }
             )
 
+    # 5) Tier 50 FluidLink FPC timing edges (Time hub → spine targets)
+    fpc_coupling_bench = _load_json(ROOT / "data" / "fpc_temporal_coupling_benchmark.json")
+    for row in fpc_coupling_bench.get("material_records") or []:
+        if row.get("property") != "fluidlink_fpc_timing":
+            continue
+        edges.append(
+            {
+                "lab": "domain_coupling_lab",
+                "edge_type": "fluidlink_fpc_timing",
+                "source_domain": row.get("source_domain"),
+                "target_domain": row.get("target_domain"),
+                "lean_tag": "consciousness",
+                "property": "fpc_timing_coupling",
+                "name": row.get("name"),
+                "computed": float(row.get("computed") or 1.0),
+                "measured": float(row.get("measured") or 1.0),
+                "error_pct": round(float(row.get("error_pct") or 0.0), 6),
+            }
+        )
+
     errs = [float(e["error_pct"]) for e in edges]
     pooled = _median(errs)
     maps_edges = [e for e in edges if e["edge_type"] == "maps_to_lean_overlap"]
     pred_edges = [e for e in edges if e["edge_type"] == "fsot_prediction_cross_ratio"]
     mag_edges = [e for e in edges if e["edge_type"] == "magnetosphere_cluster"]
     cross_edges = [e for e in edges if e["edge_type"] == "crosswalk_module"]
+    fluid_edges = [e for e in edges if e["edge_type"] == "fluidlink_fpc_timing"]
 
     return {
         "benchmark_version": "1.1",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "domain": "Domain_Coupling_Simulation",
         "authority_path": str(authority),
-        "source": ["maps_to_lean", "fsot_compute.predictions", "magnetosphere_cluster", "crosswalk_modules"],
+        "source": ["maps_to_lean", "fsot_compute.predictions", "magnetosphere_cluster", "crosswalk_modules", "fluidlink_fpc_timing"],
         "maps_to_lean": ["consciousness", "particle", "energy", "electron", "fusion"],
         "D_eff": 17,
         "node_count": len(nodes),
@@ -313,6 +334,7 @@ def build_simulation() -> dict:
             "fsot_prediction_cross_ratio": len(pred_edges),
             "magnetosphere_cluster": len(mag_edges),
             "crosswalk_module": len(cross_edges),
+            "fluidlink_fpc_timing": len(fluid_edges),
         },
         "sota_comparison": {
             "fsot_free_parameters": 0,

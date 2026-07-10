@@ -20,12 +20,12 @@ def chaos_pt_D_eff : ℕ := 17
 theorem chaos_pt_observable_count_pos : 0 < chaos_pt_observable_count := by
   unfold chaos_pt_observable_count; norm_num
 
-theorem chaos_pt_pooled_median_under_five_pct :
-    chaos_pt_pooled_median_error_pct < (5 : ℝ) := by
+theorem chaos_pt_pooled_median_under_half_pct :
+    chaos_pt_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold chaos_pt_pooled_median_error_pct; norm_num
 
-theorem chaos_pt_headline_median_under_five_pct :
-    chaos_pt_headline_median_error_pct < (5 : ℝ) := by
+theorem chaos_pt_headline_median_under_half_pct :
+    chaos_pt_headline_median_error_pct < (0.5 : ℝ) := by
   unfold chaos_pt_headline_median_error_pct; norm_num
 
 theorem chaos_pt_beats_sota_headlines_pos : 0 < chaos_pt_beats_sota_headlines := by
@@ -33,11 +33,11 @@ theorem chaos_pt_beats_sota_headlines_pos : 0 < chaos_pt_beats_sota_headlines :=
 
 theorem chaos_pt_bundle :
     chaos_pt_observable_count = 21 ∧
-    chaos_pt_pooled_median_error_pct < (5 : ℝ) ∧
+    chaos_pt_pooled_median_error_pct < (0.5 : ℝ) ∧
     chaos_pt_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold chaos_pt_observable_count; norm_num
-  · exact chaos_pt_pooled_median_under_five_pct
+  · exact chaos_pt_pooled_median_under_half_pct
   · exact chaos_pt_beats_sota_headlines_pos
 
 end

@@ -43,19 +43,19 @@ def synthetic_biology_D_eff : ℕ := {d_eff}
 theorem synthetic_biology_observable_count_pos : 0 < synthetic_biology_observable_count := by
   unfold synthetic_biology_observable_count; norm_num
 
-theorem synthetic_biology_median_error_under_five_pct :
-    synthetic_biology_median_error_pct < (5 : ℝ) := by
+theorem synthetic_biology_median_error_under_half_pct :
+    synthetic_biology_median_error_pct < (0.5 : ℝ) := by
   unfold synthetic_biology_median_error_pct; norm_num
 
 theorem synthetic_biology_bundle :
     synthetic_biology_observable_count = {n} ∧
     synthetic_biology_D_eff = {d_eff} ∧
-    synthetic_biology_median_error_pct < (5 : ℝ) ∧
+    synthetic_biology_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
     by unfold synthetic_biology_observable_count; norm_num,
     by unfold synthetic_biology_D_eff; norm_num,
-    synthetic_biology_median_error_under_five_pct,
+    synthetic_biology_median_error_under_half_pct,
     {sign}
   ⟩
 

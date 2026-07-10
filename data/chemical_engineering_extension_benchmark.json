@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-09T12:31:59.808637+00:00",
+  "generated_at": "2026-07-10T16:07:02.077778+00:00",
   "domain": "Chemical_Engineering",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -2087,5 +2087,17 @@
       "error_pct": 0.0,
       "source": "math_generator_chem_eng"
     }
-  ]
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0015187182018233183,
+    "max_scalar_error_pct": 0.04078840642308449,
+    "classifier_count": 37,
+    "classifier_correct": 37,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": 100.0,
+    "classifier_misclass_rate_pct": 0.0,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5
 }

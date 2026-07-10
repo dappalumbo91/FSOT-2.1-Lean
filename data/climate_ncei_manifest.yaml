@@ -210,11 +210,14 @@ cohort:
     - USW00012839
     - USW00026616
     - USW00023185
-  holdout_median_error_max_pct: 5.0
+  holdout_median_error_max_pct: 0.5
+  holdout_min_classifier_accuracy_pct: 99.5
   holdout_min_records: 200
 
 benchmark:
   output: data/climate_observed_benchmark.json
   anomaly_tolerance_c: 2.5
   D_eff: 16
+  stability_penalty: 0.35
+  use_paleo_recovery: true
   min_months_total: 120

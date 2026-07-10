@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "source": "PDG 2024 / ATLAS+CMS Run-2 / LHC combination channels",
+  "updated": "2026-07-10",
+  "metrics": [
+    {
+      "name": "pdg_world_average",
+      "property": "m_H_GeV",
+      "measured": 125.25,
+      "channel": "PDG2024_world_average",
+      "reference": "PDG_Higgs_review"
+    },
+    {
+      "name": "atlas_combined_run2",
+      "property": "m_H_GeV",
+      "measured": 125.35,
+      "channel": "ATLAS_Run2_combined",
+      "reference": "ATLAS_Higgs_mass_2023"
+    },
+    {
+      "name": "cms_combined_run2",
+      "property": "m_H_GeV",
+      "measured": 125.38,
+      "channel": "CMS_Run2_combined",
+      "reference": "CMS_Higgs_mass_2023"
+    },
+    {
+      "name": "atlas_diphoton",
+      "property": "m_H_GeV",
+      "measured": 125.24,
+      "channel": "ATLAS_gamma_gamma",
+      "reference": "ATLAS_diphoton_channel"
+    },
+    {
+      "name": "cms_four_lepton",
+      "property": "m_H_GeV",
+      "measured": 125.12,
+      "channel": "CMS_ZZ_star",
+      "reference": "CMS_4l_channel"
+    },
+    {
+      "name": "lhcb_inclusive",
+      "property": "m_H_GeV",
+      "measured": 125.17,
+      "channel": "LHCb_inclusive",
+      "reference": "LHCb_Higgs_mass"
+    },
+    {
+      "name": "m_H_m_W_ratio",
+      "property": "m_H_m_W",
+      "measured": 1.5595,
+      "channel": "PDG_mass_ratio",
+      "reference": "PDG_electroweak_ratios"
+    },
+    {
+      "name": "m_H_m_t_ratio",
+      "property": "m_H_m_t",
+      "measured": 0.7256,
+      "channel": "PDG_mass_ratio",
+      "reference": "PDG_electroweak_ratios"
+    }
+  ]
+}

@@ -22,12 +22,12 @@ def const_rec_sub_branch_count : ℕ := 16
 theorem const_rec_observable_count_pos : 0 < const_rec_observable_count := by
   unfold const_rec_observable_count; norm_num
 
-theorem const_rec_pooled_median_under_five_pct :
-    const_rec_pooled_median_error_pct < (5 : ℝ) := by
+theorem const_rec_pooled_median_under_half_pct :
+    const_rec_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold const_rec_pooled_median_error_pct; norm_num
 
-theorem const_rec_headline_median_under_five_pct :
-    const_rec_headline_median_error_pct < (5 : ℝ) := by
+theorem const_rec_headline_median_under_half_pct :
+    const_rec_headline_median_error_pct < (0.5 : ℝ) := by
   unfold const_rec_headline_median_error_pct; norm_num
 
 theorem const_rec_beats_sota_headlines_pos : 0 < const_rec_beats_sota_headlines := by
@@ -36,11 +36,11 @@ theorem const_rec_families_pos : 0 < const_rec_family_count := by unfold const_r
 
 theorem const_rec_bundle :
     const_rec_observable_count = 21 ∧
-    const_rec_pooled_median_error_pct < (5 : ℝ) ∧
+    const_rec_pooled_median_error_pct < (0.5 : ℝ) ∧
     const_rec_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold const_rec_observable_count; norm_num
-  · exact const_rec_pooled_median_under_five_pct
+  · exact const_rec_pooled_median_under_half_pct
   · exact const_rec_beats_sota_headlines_pos
 
 end

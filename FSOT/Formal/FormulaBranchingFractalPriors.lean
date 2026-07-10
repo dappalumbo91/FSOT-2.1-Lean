@@ -21,12 +21,12 @@ def fractal_domain_attachment_count : ℕ := 135
 theorem fractal_observable_count_pos : 0 < fractal_observable_count := by
   unfold fractal_observable_count; norm_num
 
-theorem fractal_pooled_median_under_five_pct :
-    fractal_pooled_median_error_pct < (5 : ℝ) := by
+theorem fractal_pooled_median_under_half_pct :
+    fractal_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold fractal_pooled_median_error_pct; norm_num
 
-theorem fractal_headline_median_under_five_pct :
-    fractal_headline_median_error_pct < (5 : ℝ) := by
+theorem fractal_headline_median_under_half_pct :
+    fractal_headline_median_error_pct < (0.5 : ℝ) := by
   unfold fractal_headline_median_error_pct; norm_num
 
 theorem fractal_beats_sota_headlines_pos : 0 < fractal_beats_sota_headlines := by
@@ -36,11 +36,11 @@ theorem fractal_attachments_pos : 0 < fractal_domain_attachment_count := by
 
 theorem fractal_bundle :
     fractal_observable_count = 144 ∧
-    fractal_pooled_median_error_pct < (5 : ℝ) ∧
+    fractal_pooled_median_error_pct < (0.5 : ℝ) ∧
     fractal_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold fractal_observable_count; norm_num
-  · exact fractal_pooled_median_under_five_pct
+  · exact fractal_pooled_median_under_half_pct
   · exact fractal_beats_sota_headlines_pos
 
 end

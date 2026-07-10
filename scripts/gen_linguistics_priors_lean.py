@@ -38,7 +38,7 @@ def linguistics_mean_error_pct : ℝ := ({mean_err} : ℝ)
 theorem linguistics_target_count_pos : 0 < linguistics_target_count := by
   unfold linguistics_target_count; norm_num
 
-theorem linguistics_max_error_within_five_pct : linguistics_max_error_pct < (5 : ℝ) := by
+theorem linguistics_max_error_within_five_pct : linguistics_max_error_pct < (0.5 : ℝ) := by
   unfold linguistics_max_error_pct; norm_num
 
 /-- Bundle: 10 measured linguistic anchors within 5% FSOT seed derivations (neural domain). -/
@@ -46,7 +46,7 @@ theorem linguistics_priors_bundle :
     linguistics_target_count = {count} ∧
     linguistics_max_error_pct = ({max_err} : ℝ) ∧
     linguistics_mean_error_pct = ({mean_err} : ℝ) ∧
-    linguistics_max_error_pct < (5 : ℝ) ∧
+    linguistics_max_error_pct < (0.5 : ℝ) ∧
     (0 : ℝ) < raw_S (get_domain_params "neural") := by
   refine ⟨
     by unfold linguistics_target_count; norm_num,

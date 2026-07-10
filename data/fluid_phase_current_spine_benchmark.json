@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T15:46:15.189913+00:00",
+  "generated_at": "2026-07-10T17:50:41.418827+00:00",
   "domain": "Fluid_Phase_Current_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -71,9 +71,9 @@
       "lab": "fluid_phase_current_spine_lab",
       "property": "fpc_pillar",
       "name": "time_domain_crosswalk",
-      "computed": 149.0,
-      "measured": 149.0,
-      "error_pct": 0.023158,
+      "computed": 160.0,
+      "measured": 160.0,
+      "error_pct": 0.025013,
       "source": "Time_Domain_Crosswalk",
       "status": "GREEN"
     },
@@ -100,8 +100,8 @@
       "lab": "fluid_phase_current_spine_lab",
       "property": "crosswalk_domains",
       "name": "multi_domain_fpc",
-      "computed": 145.013781,
-      "measured": 145.0,
+      "computed": 156.014826,
+      "measured": 156.0,
       "error_pct": 0.009504,
       "source": "fluid_phase_current_spine"
     },
@@ -124,8 +124,20 @@
       "source": "fluid_phase_current_spine"
     }
   ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.009504,
+    "max_scalar_error_pct": 0.031199,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
   "fluidlink_edge_count": 6,
-  "crosswalk_domain_count": 145,
+  "crosswalk_domain_count": 156,
   "fold_spine_status": "GREEN",
   "time_simulation_status": "GREEN",
   "crosswalk_status": "GREEN",

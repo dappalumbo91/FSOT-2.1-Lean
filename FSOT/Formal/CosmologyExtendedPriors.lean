@@ -34,8 +34,8 @@ theorem cosmology_extended_components_sum :
   unfold cosmology_skeleton_derivation_count cosmology_lambda_cdm_extended_count
     cosmology_thesis_wave_count cosmology_extended_observable_count; norm_num
 
-theorem cosmology_extended_median_error_under_five_pct :
-    cosmology_extended_median_error_pct < (5 : ℝ) := by
+theorem cosmology_extended_median_error_under_half_pct :
+    cosmology_extended_median_error_pct < (0.5 : ℝ) := by
   unfold cosmology_extended_median_error_pct; norm_num
 
 theorem cosmology_extended_within_le_total :
@@ -49,7 +49,7 @@ theorem cosmology_extended_bundle :
     cosmology_thesis_wave_count = 4 ∧
     cosmology_extended_observable_count = 58 ∧
     cosmology_skeleton_derivation_count + cosmology_lambda_cdm_extended_count + cosmology_thesis_wave_count = 58 ∧
-    cosmology_extended_median_error_pct < (5 : ℝ) ∧
+    cosmology_extended_median_error_pct < (0.5 : ℝ) ∧
     (0 : ℝ) < omega_b_h2_fsot S_cosm_cached S_quant_cached := by
   refine ⟨
     by unfold cosmology_skeleton_derivation_count; norm_num,
@@ -57,7 +57,7 @@ theorem cosmology_extended_bundle :
     by unfold cosmology_thesis_wave_count; norm_num,
     by unfold cosmology_extended_observable_count; norm_num,
     cosmology_extended_components_sum,
-    cosmology_extended_median_error_under_five_pct,
+    cosmology_extended_median_error_under_half_pct,
     omega_b_h2_fsot_cached_pos
   ⟩
 

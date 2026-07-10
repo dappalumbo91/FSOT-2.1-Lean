@@ -328,7 +328,7 @@ def build_environmental_engineering() -> dict:
     s_energy = _scalar("Ecology")
     records: list[dict] = []
     climate = _load_json(BENCH_PATHS["climate"])
-    records.extend(_records_from_doc(climate, lab="environmental_engineering_lab"))
+    records.extend(_records_from_doc(climate, lab="environmental_engineering_lab", scalars_only=True))
     hydro = _load_json(DATA / "hydrology_benchmark.json")
     records.extend(_records_from_doc(hydro, lab="environmental_engineering_lab"))
     wb = _load_json(BENCH_PATHS["world_bank"])

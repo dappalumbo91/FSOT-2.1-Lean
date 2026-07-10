@@ -18,19 +18,19 @@ def breakthrough_discoveries_2024_2026_D_eff : ℕ := 22
 theorem breakthrough_discoveries_2024_2026_observable_count_pos : 0 < breakthrough_discoveries_2024_2026_observable_count := by
   unfold breakthrough_discoveries_2024_2026_observable_count; norm_num
 
-theorem breakthrough_discoveries_2024_2026_median_error_under_five_pct :
-    breakthrough_discoveries_2024_2026_median_error_pct < (5 : ℝ) := by
+theorem breakthrough_discoveries_2024_2026_median_error_under_half_pct :
+    breakthrough_discoveries_2024_2026_median_error_pct < (0.5 : ℝ) := by
   unfold breakthrough_discoveries_2024_2026_median_error_pct; norm_num
 
 theorem breakthrough_discoveries_2024_2026_bundle :
     breakthrough_discoveries_2024_2026_observable_count = 21 ∧
     breakthrough_discoveries_2024_2026_D_eff = 22 ∧
-    breakthrough_discoveries_2024_2026_median_error_pct < (5 : ℝ) ∧
+    breakthrough_discoveries_2024_2026_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
     by unfold breakthrough_discoveries_2024_2026_observable_count; norm_num,
     by unfold breakthrough_discoveries_2024_2026_D_eff; norm_num,
-    breakthrough_discoveries_2024_2026_median_error_under_five_pct,
+    breakthrough_discoveries_2024_2026_median_error_under_half_pct,
     particle_raw_S_positive
   ⟩
 

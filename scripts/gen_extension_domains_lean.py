@@ -207,10 +207,10 @@ theorem {prefix}_observable_count_pos : 0 < {prefix}_observable_count := by
 theorem {prefix}_holdout_month_count_pos : 0 < {prefix}_holdout_month_count := by
   unfold {prefix}_holdout_month_count; norm_num
 
-theorem {prefix}_median_error_under_five_pct : {prefix}_median_error_pct < (5 : ℝ) := by
+theorem {prefix}_median_error_under_half_pct : {prefix}_median_error_pct < (0.5 : ℝ) := by
   unfold {prefix}_median_error_pct; norm_num
 
-theorem {prefix}_holdout_median_error_under_five_pct : {prefix}_holdout_median_error_pct < (5 : ℝ) := by
+theorem {prefix}_holdout_median_error_under_half_pct : {prefix}_holdout_median_error_pct < (0.5 : ℝ) := by
   unfold {prefix}_holdout_median_error_pct; norm_num
 
 theorem {prefix}_bundle :
@@ -219,8 +219,8 @@ theorem {prefix}_bundle :
     {prefix}_holdout_month_count = {ho_n} ∧
     {prefix}_holdout_station_count = {ho_stn} ∧
     {prefix}_D_eff = {d_eff} ∧
-    {prefix}_median_error_pct < (5 : ℝ) ∧
-    {prefix}_holdout_median_error_pct < (5 : ℝ) ∧
+    {prefix}_median_error_pct < (0.5 : ℝ) ∧
+    {prefix}_holdout_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
     by unfold {prefix}_observable_count; norm_num,
@@ -228,8 +228,8 @@ theorem {prefix}_bundle :
     by unfold {prefix}_holdout_month_count; norm_num,
     by unfold {prefix}_holdout_station_count; norm_num,
     by unfold {prefix}_D_eff; norm_num,
-    {prefix}_median_error_under_five_pct,
-    {prefix}_holdout_median_error_under_five_pct,
+    {prefix}_median_error_under_half_pct,
+    {prefix}_holdout_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩
 
@@ -271,18 +271,18 @@ def {name.lower()}_D_eff : ℕ := {d_eff}
 theorem {name.lower()}_observable_count_pos : 0 < {name.lower()}_observable_count := by
   unfold {name.lower()}_observable_count; norm_num
 
-theorem {name.lower()}_median_error_under_five_pct :
-    ({med} : ℝ) < (5 : ℝ) := by norm_num
+theorem {name.lower()}_median_error_under_half_pct :
+    ({med} : ℝ) < (0.5 : ℝ) := by norm_num
 
 theorem {name.lower()}_bundle :
     {name.lower()}_observable_count = {n} ∧
     {name.lower()}_D_eff = {d_eff} ∧
-    ({med} : ℝ) < (5 : ℝ) ∧
+    ({med} : ℝ) < (0.5 : ℝ) ∧
     raw_S (get_domain_params "{lean_dom}") > 0 := by
   refine ⟨
     by unfold {name.lower()}_observable_count; norm_num,
     by unfold {name.lower()}_D_eff; norm_num,
-    {name.lower()}_median_error_under_five_pct,
+    {name.lower()}_median_error_under_half_pct,
     {sign_thm}
   ⟩
 

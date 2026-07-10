@@ -20,12 +20,12 @@ def neuroeconomics_ext_D_eff : ℕ := 16
 theorem neuroeconomics_ext_observable_count_pos : 0 < neuroeconomics_ext_observable_count := by
   unfold neuroeconomics_ext_observable_count; norm_num
 
-theorem neuroeconomics_ext_pooled_median_under_five_pct :
-    neuroeconomics_ext_pooled_median_error_pct < (5 : ℝ) := by
+theorem neuroeconomics_ext_pooled_median_under_half_pct :
+    neuroeconomics_ext_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold neuroeconomics_ext_pooled_median_error_pct; norm_num
 
-theorem neuroeconomics_ext_headline_median_under_five_pct :
-    neuroeconomics_ext_headline_median_error_pct < (5 : ℝ) := by
+theorem neuroeconomics_ext_headline_median_under_half_pct :
+    neuroeconomics_ext_headline_median_error_pct < (0.5 : ℝ) := by
   unfold neuroeconomics_ext_headline_median_error_pct; norm_num
 
 theorem neuroeconomics_ext_beats_sota_headlines_pos : 0 < neuroeconomics_ext_beats_sota_headlines := by
@@ -33,14 +33,14 @@ theorem neuroeconomics_ext_beats_sota_headlines_pos : 0 < neuroeconomics_ext_bea
 
 theorem neuroeconomics_ext_bundle :
     neuroeconomics_ext_observable_count = 123 ∧
-    neuroeconomics_ext_pooled_median_error_pct < (5 : ℝ) ∧
-    neuroeconomics_ext_headline_median_error_pct < (5 : ℝ) ∧
+    neuroeconomics_ext_pooled_median_error_pct < (0.5 : ℝ) ∧
+    neuroeconomics_ext_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < neuroeconomics_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨
     by unfold neuroeconomics_ext_observable_count; norm_num,
-    neuroeconomics_ext_pooled_median_under_five_pct,
-    neuroeconomics_ext_headline_median_under_five_pct,
+    neuroeconomics_ext_pooled_median_under_half_pct,
+    neuroeconomics_ext_headline_median_under_half_pct,
     neuroeconomics_ext_beats_sota_headlines_pos,
     consciousness_raw_S_positive
   ⟩

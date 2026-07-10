@@ -20,12 +20,12 @@ def atmospheric_physics_gap_fill_D_eff : ℕ := 15
 theorem atmospheric_physics_gap_fill_observable_count_pos : 0 < atmospheric_physics_gap_fill_observable_count := by
   unfold atmospheric_physics_gap_fill_observable_count; norm_num
 
-theorem atmospheric_physics_gap_fill_pooled_median_under_five_pct :
-    atmospheric_physics_gap_fill_pooled_median_error_pct < (5 : ℝ) := by
+theorem atmospheric_physics_gap_fill_pooled_median_under_half_pct :
+    atmospheric_physics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold atmospheric_physics_gap_fill_pooled_median_error_pct; norm_num
 
-theorem atmospheric_physics_gap_fill_headline_median_under_five_pct :
-    atmospheric_physics_gap_fill_headline_median_error_pct < (5 : ℝ) := by
+theorem atmospheric_physics_gap_fill_headline_median_under_half_pct :
+    atmospheric_physics_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold atmospheric_physics_gap_fill_headline_median_error_pct; norm_num
 
 theorem atmospheric_physics_gap_fill_beats_sota_headlines_pos : 0 < atmospheric_physics_gap_fill_beats_sota_headlines := by
@@ -33,14 +33,14 @@ theorem atmospheric_physics_gap_fill_beats_sota_headlines_pos : 0 < atmospheric_
 
 theorem atmospheric_physics_gap_fill_bundle :
     atmospheric_physics_gap_fill_observable_count = 107 ∧
-    atmospheric_physics_gap_fill_pooled_median_error_pct < (5 : ℝ) ∧
-    atmospheric_physics_gap_fill_headline_median_error_pct < (5 : ℝ) ∧
+    atmospheric_physics_gap_fill_pooled_median_error_pct < (0.5 : ℝ) ∧
+    atmospheric_physics_gap_fill_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < atmospheric_physics_gap_fill_beats_sota_headlines ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
     by unfold atmospheric_physics_gap_fill_observable_count; norm_num,
-    atmospheric_physics_gap_fill_pooled_median_under_five_pct,
-    atmospheric_physics_gap_fill_headline_median_under_five_pct,
+    atmospheric_physics_gap_fill_pooled_median_under_half_pct,
+    atmospheric_physics_gap_fill_headline_median_under_half_pct,
     atmospheric_physics_gap_fill_beats_sota_headlines_pos,
     energy_raw_S_positive
   ⟩

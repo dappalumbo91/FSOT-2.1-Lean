@@ -46,12 +46,12 @@ theorem domain_coupling_node_count_pos : 0 < domain_coupling_node_count := by
 theorem domain_coupling_edge_count_pos : 0 < domain_coupling_edge_count := by
   unfold domain_coupling_edge_count; norm_num
 
-theorem domain_coupling_pooled_median_under_five_pct :
-    domain_coupling_pooled_median_error_pct < (5 : ℝ) := by
+theorem domain_coupling_pooled_median_under_half_pct :
+    domain_coupling_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold domain_coupling_pooled_median_error_pct; norm_num
 
-theorem domain_coupling_headline_median_under_five_pct :
-    domain_coupling_headline_median_error_pct < (5 : ℝ) := by
+theorem domain_coupling_headline_median_under_half_pct :
+    domain_coupling_headline_median_error_pct < (0.5 : ℝ) := by
   unfold domain_coupling_headline_median_error_pct; norm_num
 
 theorem domain_coupling_beats_sota_headlines_pos : 0 < domain_coupling_beats_sota_headlines := by
@@ -60,15 +60,15 @@ theorem domain_coupling_beats_sota_headlines_pos : 0 < domain_coupling_beats_sot
 theorem domain_coupling_bundle :
     domain_coupling_node_count = {n_nodes} ∧
     domain_coupling_edge_count = {n_edges} ∧
-    domain_coupling_pooled_median_error_pct < (5 : ℝ) ∧
-    domain_coupling_headline_median_error_pct < (5 : ℝ) ∧
+    domain_coupling_pooled_median_error_pct < (0.5 : ℝ) ∧
+    domain_coupling_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < domain_coupling_beats_sota_headlines ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨
     by unfold domain_coupling_node_count; norm_num,
     by unfold domain_coupling_edge_count; norm_num,
-    domain_coupling_pooled_median_under_five_pct,
-    domain_coupling_headline_median_under_five_pct,
+    domain_coupling_pooled_median_under_half_pct,
+    domain_coupling_headline_median_under_half_pct,
     domain_coupling_beats_sota_headlines_pos,
     consciousness_raw_S_positive
   ⟩

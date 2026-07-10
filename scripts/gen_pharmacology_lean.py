@@ -44,19 +44,19 @@ def pharmacology_D_eff : ℕ := {d_eff}
 theorem pharmacology_observable_count_pos : 0 < pharmacology_observable_count := by
   unfold pharmacology_observable_count; norm_num
 
-theorem pharmacology_median_error_under_five_pct :
-    pharmacology_median_error_pct < (5 : ℝ) := by
+theorem pharmacology_median_error_under_half_pct :
+    pharmacology_median_error_pct < (0.5 : ℝ) := by
   unfold pharmacology_median_error_pct; norm_num
 
 theorem pharmacology_bundle :
     pharmacology_observable_count = {n} ∧
     pharmacology_D_eff = {d_eff} ∧
-    pharmacology_median_error_pct < (5 : ℝ) ∧
+    pharmacology_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨
     by unfold pharmacology_observable_count; norm_num,
     by unfold pharmacology_D_eff; norm_num,
-    pharmacology_median_error_under_five_pct,
+    pharmacology_median_error_under_half_pct,
     {sign}
   ⟩
 

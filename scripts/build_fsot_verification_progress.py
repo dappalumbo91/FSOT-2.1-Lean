@@ -190,6 +190,10 @@ def build_progress() -> dict:
     orbital_pred_bench = _load_json(ROOT / "data" / "domain_orbital_predictions_benchmark.json")
     med_gal_bridge_bench = _load_json(ROOT / "data" / "medical_galactic_orbital_bridge_benchmark.json")
     toe_unity_bench = _load_json(ROOT / "data" / "toe_unification_spine_benchmark.json")
+    time_emergence_bench = _load_json(ROOT / "data" / "time_emergence_simulation_benchmark.json")
+    time_crosswalk_bench = _load_json(ROOT / "data" / "time_domain_crosswalk_benchmark.json")
+    fpc_coupling_bench = _load_json(ROOT / "data" / "fpc_temporal_coupling_benchmark.json")
+    fpc_spine_bench = _load_json(ROOT / "data" / "fluid_phase_current_spine_benchmark.json")
     comp_ladder_bench = _load_json(ROOT / "data" / "compactification_ladder_benchmark.json")
     adjacent_rung_bench = _load_json(ROOT / "data" / "adjacent_rung_coupling_benchmark.json")
     fold_depth_bench = _load_json(ROOT / "data" / "fold_depth_metrics_benchmark.json")
@@ -1401,7 +1405,7 @@ def build_progress() -> dict:
             "status": "complete"
             if external_oss_bench.get("oss_sample_count", 0) >= 20
             and external_oss_bench.get("pooled_median_error_pct") is not None
-            and float(external_oss_bench.get("pooled_median_error_pct")) < 5.0
+            and float(external_oss_bench.get("pooled_median_error_pct")) < 0.5
             and pl_laws_bench.get("law_count", 0) >= 25
             and pl_laws_bench.get("record_count", 0) >= 40
             and int(pl_laws_bench.get("linguistics_bridge_count") or 0) >= 5
@@ -1611,6 +1615,45 @@ def build_progress() -> dict:
                 "FSOT.Formal.CompactificationLadderPriors",
             ],
         },
+        {
+            "tier": 50,
+            "name": "Tier 50 — Time emergence / FPC (simulation, crosswalk, FluidLink, spine)",
+            "status": "complete"
+            if time_emergence_bench.get("time_status") == "GREEN"
+            and time_crosswalk_bench.get("crosswalk_status") == "GREEN"
+            and fpc_coupling_bench.get("coupling_status") == "GREEN"
+            and fpc_spine_bench.get("fpc_spine_status") == "GREEN"
+            and int(time_crosswalk_bench.get("crosswalk_domain_count") or 0) >= 30
+            and int(fpc_coupling_bench.get("fluidlink_edge_count") or 0) >= 5
+            and mech_bench.get("mechanism_count", 0) >= 39
+            and coupling_bench.get("node_count", 0) >= 178
+            else "pending",
+            "metrics": {
+                "time_simulation_status": time_emergence_bench.get("time_status"),
+                "time_pooled_median_error_pct": time_emergence_bench.get("pooled_median_error_pct"),
+                "bh_dilation_error_pct": (time_emergence_bench.get("validation_summary") or {}).get(
+                    "bh_dilation_error_pct"
+                ),
+                "crosswalk_status": time_crosswalk_bench.get("crosswalk_status"),
+                "crosswalk_domain_count": time_crosswalk_bench.get("crosswalk_domain_count"),
+                "fluidlink_edge_count": fpc_coupling_bench.get("fluidlink_edge_count"),
+                "coupling_status": fpc_coupling_bench.get("coupling_status"),
+                "fpc_spine_status": fpc_spine_bench.get("fpc_spine_status"),
+                "fold_spine_link_status": fpc_spine_bench.get("fold_spine_status"),
+                "mechanistic_channel_count": mech_bench.get("mechanism_count"),
+                "coupling_node_count": coupling_bench.get("node_count"),
+            },
+            "artifacts": [
+                "data/time_emergence_manifest.yaml",
+                "scripts/time_emergence_lib.py",
+                "scripts/tier_o_time_emergence_lib.py",
+                "scripts/build_tier_o_time_emergence_benchmarks.py",
+                "scripts/gen_time_emergence_lean.py",
+                "scripts/run_time_emergence_simulation.py",
+                "FSOT.Formal.FluidPhaseCurrentSpinePriors",
+                "FSOT.Formal.TimeEmergenceSimulationPriors",
+            ],
+        },
     ]
 
     next_steps = [
@@ -1637,7 +1680,7 @@ def build_progress() -> dict:
             "tiers_total": len(tiers),
             "percent_complete": round(100.0 * len(completed) / max(1, len(tiers)), 1),
         },
-        "current_position": "Tier 49 Compactification ladder — 10 rungs string→cosmo, adjacent couplings, fold-depth spine, external cache on G:/FSOT-PublicData",
+        "current_position": "Tier 50 Time emergence / FPC — emergent τ spine, multi-domain crosswalk, FluidLink timing hub, Tier 49 fold spine linked",
         "tiers": tiers,
         "next_steps": next_steps,
         "key_metrics": {

@@ -20,12 +20,12 @@ def agriculture_agroecology_gap_fill_D_eff : ℕ := 16
 theorem agriculture_agroecology_gap_fill_observable_count_pos : 0 < agriculture_agroecology_gap_fill_observable_count := by
   unfold agriculture_agroecology_gap_fill_observable_count; norm_num
 
-theorem agriculture_agroecology_gap_fill_pooled_median_under_five_pct :
-    agriculture_agroecology_gap_fill_pooled_median_error_pct < (5 : ℝ) := by
+theorem agriculture_agroecology_gap_fill_pooled_median_under_half_pct :
+    agriculture_agroecology_gap_fill_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold agriculture_agroecology_gap_fill_pooled_median_error_pct; norm_num
 
-theorem agriculture_agroecology_gap_fill_headline_median_under_five_pct :
-    agriculture_agroecology_gap_fill_headline_median_error_pct < (5 : ℝ) := by
+theorem agriculture_agroecology_gap_fill_headline_median_under_half_pct :
+    agriculture_agroecology_gap_fill_headline_median_error_pct < (0.5 : ℝ) := by
   unfold agriculture_agroecology_gap_fill_headline_median_error_pct; norm_num
 
 theorem agriculture_agroecology_gap_fill_beats_sota_headlines_pos : 0 < agriculture_agroecology_gap_fill_beats_sota_headlines := by
@@ -33,14 +33,14 @@ theorem agriculture_agroecology_gap_fill_beats_sota_headlines_pos : 0 < agricult
 
 theorem agriculture_agroecology_gap_fill_bundle :
     agriculture_agroecology_gap_fill_observable_count = 276 ∧
-    agriculture_agroecology_gap_fill_pooled_median_error_pct < (5 : ℝ) ∧
-    agriculture_agroecology_gap_fill_headline_median_error_pct < (5 : ℝ) ∧
+    agriculture_agroecology_gap_fill_pooled_median_error_pct < (0.5 : ℝ) ∧
+    agriculture_agroecology_gap_fill_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < agriculture_agroecology_gap_fill_beats_sota_headlines ∧
     raw_S (get_domain_params "biological") > 0 := by
   refine ⟨
     by unfold agriculture_agroecology_gap_fill_observable_count; norm_num,
-    agriculture_agroecology_gap_fill_pooled_median_under_five_pct,
-    agriculture_agroecology_gap_fill_headline_median_under_five_pct,
+    agriculture_agroecology_gap_fill_pooled_median_under_half_pct,
+    agriculture_agroecology_gap_fill_headline_median_under_half_pct,
     agriculture_agroecology_gap_fill_beats_sota_headlines_pos,
     biological_raw_S_positive
   ⟩

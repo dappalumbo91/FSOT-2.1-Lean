@@ -59,12 +59,12 @@ theorem {prefix}_observable_count_pos : 0 < {prefix}_observable_count := by
 theorem {prefix}_oracle_count_pos : 0 < {prefix}_oracle_count := by
   unfold {prefix}_oracle_count; norm_num
 
-theorem {prefix}_pooled_median_under_five_pct :
-    {prefix}_pooled_median_error_pct < (5 : ℝ) := by
+theorem {prefix}_pooled_median_under_half_pct :
+    {prefix}_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold {prefix}_pooled_median_error_pct; norm_num
 
-theorem {prefix}_headline_median_under_five_pct :
-    {prefix}_headline_median_error_pct < (5 : ℝ) := by
+theorem {prefix}_headline_median_under_half_pct :
+    {prefix}_headline_median_error_pct < (0.5 : ℝ) := by
   unfold {prefix}_headline_median_error_pct; norm_num
 
 theorem {prefix}_beats_sota_headlines_pos : 0 < {prefix}_beats_sota_headlines := by
@@ -72,14 +72,14 @@ theorem {prefix}_beats_sota_headlines_pos : 0 < {prefix}_beats_sota_headlines :=
 
 theorem {prefix}_bundle :
     {prefix}_observable_count = {n} ∧
-    {prefix}_pooled_median_error_pct < (5 : ℝ) ∧
-    {prefix}_headline_median_error_pct < (5 : ℝ) ∧
+    {prefix}_pooled_median_error_pct < (0.5 : ℝ) ∧
+    {prefix}_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < {prefix}_beats_sota_headlines ∧
     raw_S (get_domain_params "{lean_domain}") > 0 := by
   refine ⟨
     by unfold {prefix}_observable_count; norm_num,
-    {prefix}_pooled_median_under_five_pct,
-    {prefix}_headline_median_under_five_pct,
+    {prefix}_pooled_median_under_half_pct,
+    {prefix}_headline_median_under_half_pct,
     {prefix}_beats_sota_headlines_pos,
     {sign}
   ⟩

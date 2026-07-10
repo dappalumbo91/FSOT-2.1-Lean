@@ -21,12 +21,12 @@ def e_neu_br_bridge_pair_count : ℕ := 36
 theorem e_neu_br_observable_count_pos : 0 < e_neu_br_observable_count := by
   unfold e_neu_br_observable_count; norm_num
 
-theorem e_neu_br_pooled_median_under_five_pct :
-    e_neu_br_pooled_median_error_pct < (5 : ℝ) := by
+theorem e_neu_br_pooled_median_under_half_pct :
+    e_neu_br_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold e_neu_br_pooled_median_error_pct; norm_num
 
-theorem e_neu_br_headline_median_under_five_pct :
-    e_neu_br_headline_median_error_pct < (5 : ℝ) := by
+theorem e_neu_br_headline_median_under_half_pct :
+    e_neu_br_headline_median_error_pct < (0.5 : ℝ) := by
   unfold e_neu_br_headline_median_error_pct; norm_num
 
 theorem e_neu_br_beats_sota_headlines_pos : 0 < e_neu_br_beats_sota_headlines := by
@@ -35,11 +35,11 @@ theorem e_neu_br_bridge_pairs_pos : 0 < e_neu_br_bridge_pair_count := by unfold 
 
 theorem e_neu_br_bundle :
     e_neu_br_observable_count = 48 ∧
-    e_neu_br_pooled_median_error_pct < (5 : ℝ) ∧
+    e_neu_br_pooled_median_error_pct < (0.5 : ℝ) ∧
     e_neu_br_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold e_neu_br_observable_count; norm_num
-  · exact e_neu_br_pooled_median_under_five_pct
+  · exact e_neu_br_pooled_median_under_half_pct
   · exact e_neu_br_beats_sota_headlines_pos
 
 end

@@ -58,12 +58,12 @@ theorem oncology_observable_count_pos : 0 < oncology_observable_count := by
 theorem oncology_section_count_pos : 0 < oncology_section_count := by
   unfold oncology_section_count; norm_num
 
-theorem oncology_pooled_median_under_five_pct :
-    oncology_pooled_median_error_pct < (5 : ℝ) := by
+theorem oncology_pooled_median_under_half_pct :
+    oncology_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold oncology_pooled_median_error_pct; norm_num
 
-theorem oncology_headline_median_under_five_pct :
-    oncology_headline_median_error_pct < (5 : ℝ) := by
+theorem oncology_headline_median_under_half_pct :
+    oncology_headline_median_error_pct < (0.5 : ℝ) := by
   unfold oncology_headline_median_error_pct; norm_num
 
 theorem oncology_beats_sota_headlines_pos : 0 < oncology_beats_sota_headlines := by
@@ -73,16 +73,16 @@ theorem oncology_bundle :
     oncology_observable_count = {n} ∧
     oncology_section_count = {sections} ∧
     oncology_D_eff = {d_eff} ∧
-    oncology_pooled_median_error_pct < (5 : ℝ) ∧
-    oncology_headline_median_error_pct < (5 : ℝ) ∧
+    oncology_pooled_median_error_pct < (0.5 : ℝ) ∧
+    oncology_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < oncology_beats_sota_headlines ∧
     raw_S (get_domain_params "medical") > 0 := by
   refine ⟨
     by unfold oncology_observable_count; norm_num,
     by unfold oncology_section_count; norm_num,
     by unfold oncology_D_eff; norm_num,
-    oncology_pooled_median_under_five_pct,
-    oncology_headline_median_under_five_pct,
+    oncology_pooled_median_under_half_pct,
+    oncology_headline_median_under_half_pct,
     oncology_beats_sota_headlines_pos,
     {sign}
   ⟩

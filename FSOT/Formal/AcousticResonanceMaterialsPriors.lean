@@ -21,12 +21,12 @@ def acoustic_rm_acoustic_species_count : ℕ := 9
 theorem acoustic_rm_observable_count_pos : 0 < acoustic_rm_observable_count := by
   unfold acoustic_rm_observable_count; norm_num
 
-theorem acoustic_rm_pooled_median_under_five_pct :
-    acoustic_rm_pooled_median_error_pct < (5 : ℝ) := by
+theorem acoustic_rm_pooled_median_under_half_pct :
+    acoustic_rm_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold acoustic_rm_pooled_median_error_pct; norm_num
 
-theorem acoustic_rm_headline_median_under_five_pct :
-    acoustic_rm_headline_median_error_pct < (5 : ℝ) := by
+theorem acoustic_rm_headline_median_under_half_pct :
+    acoustic_rm_headline_median_error_pct < (0.5 : ℝ) := by
   unfold acoustic_rm_headline_median_error_pct; norm_num
 
 theorem acoustic_rm_beats_sota_headlines_pos : 0 < acoustic_rm_beats_sota_headlines := by
@@ -35,11 +35,11 @@ theorem acoustic_rm_acoustic_species_pos : 0 < acoustic_rm_acoustic_species_coun
 
 theorem acoustic_rm_bundle :
     acoustic_rm_observable_count = 29 ∧
-    acoustic_rm_pooled_median_error_pct < (5 : ℝ) ∧
+    acoustic_rm_pooled_median_error_pct < (0.5 : ℝ) ∧
     acoustic_rm_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold acoustic_rm_observable_count; norm_num
-  · exact acoustic_rm_pooled_median_under_five_pct
+  · exact acoustic_rm_pooled_median_under_half_pct
   · exact acoustic_rm_beats_sota_headlines_pos
 
 end

@@ -18,19 +18,19 @@ def mathematics_computational_D_eff : ℕ := 17
 theorem mathematics_computational_observable_count_pos : 0 < mathematics_computational_observable_count := by
   unfold mathematics_computational_observable_count; norm_num
 
-theorem mathematics_computational_median_error_under_five_pct :
-    mathematics_computational_median_error_pct < (5 : ℝ) := by
+theorem mathematics_computational_median_error_under_half_pct :
+    mathematics_computational_median_error_pct < (0.5 : ℝ) := by
   unfold mathematics_computational_median_error_pct; norm_num
 
 theorem mathematics_computational_bundle :
     mathematics_computational_observable_count = 21 ∧
     mathematics_computational_D_eff = 17 ∧
-    mathematics_computational_median_error_pct < (5 : ℝ) ∧
+    mathematics_computational_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "particle") > 0 := by
   refine ⟨
     by unfold mathematics_computational_observable_count; norm_num,
     by unfold mathematics_computational_D_eff; norm_num,
-    mathematics_computational_median_error_under_five_pct,
+    mathematics_computational_median_error_under_half_pct,
     particle_raw_S_positive
   ⟩
 

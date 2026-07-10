@@ -25,10 +25,10 @@ theorem climate_science_observable_count_pos : 0 < climate_science_observable_co
 theorem climate_science_holdout_month_count_pos : 0 < climate_science_holdout_month_count := by
   unfold climate_science_holdout_month_count; norm_num
 
-theorem climate_science_median_error_under_five_pct : climate_science_median_error_pct < (5 : ℝ) := by
+theorem climate_science_median_error_under_half_pct : climate_science_median_error_pct < (0.5 : ℝ) := by
   unfold climate_science_median_error_pct; norm_num
 
-theorem climate_science_holdout_median_error_under_five_pct : climate_science_holdout_median_error_pct < (5 : ℝ) := by
+theorem climate_science_holdout_median_error_under_half_pct : climate_science_holdout_median_error_pct < (0.5 : ℝ) := by
   unfold climate_science_holdout_median_error_pct; norm_num
 
 theorem climate_science_bundle :
@@ -37,8 +37,8 @@ theorem climate_science_bundle :
     climate_science_holdout_month_count = 1920 ∧
     climate_science_holdout_station_count = 4 ∧
     climate_science_D_eff = 16 ∧
-    climate_science_median_error_pct < (5 : ℝ) ∧
-    climate_science_holdout_median_error_pct < (5 : ℝ) ∧
+    climate_science_median_error_pct < (0.5 : ℝ) ∧
+    climate_science_holdout_median_error_pct < (0.5 : ℝ) ∧
     raw_S (get_domain_params "energy") > 0 := by
   refine ⟨
     by unfold climate_science_observable_count; norm_num,
@@ -46,8 +46,8 @@ theorem climate_science_bundle :
     by unfold climate_science_holdout_month_count; norm_num,
     by unfold climate_science_holdout_station_count; norm_num,
     by unfold climate_science_D_eff; norm_num,
-    climate_science_median_error_under_five_pct,
-    climate_science_holdout_median_error_under_five_pct,
+    climate_science_median_error_under_half_pct,
+    climate_science_holdout_median_error_under_half_pct,
     energy_raw_S_positive
   ⟩
 

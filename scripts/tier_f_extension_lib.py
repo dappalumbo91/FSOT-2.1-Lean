@@ -637,7 +637,7 @@ def build_paleoclimate() -> dict:
     _, authority = _load_fsot()
     records = _ref_records(REF["paleoclimate"], "paleoclimate_lab", "Ecology", 0.0005)
     climate = _load_json(BENCH_PATHS["climate"])
-    records.extend(_records_from_doc(climate, lab="paleoclimate_lab")[:50])
+    records.extend(_records_from_doc(climate, lab="paleoclimate_lab", scalars_only=True)[:50])
     cryo = _load_json(DATA / "cryosphere_benchmark.json")
     records.extend(_records_from_doc(cryo, lab="paleoclimate_lab")[:20])
     errs = [float(r["error_pct"]) for r in records]

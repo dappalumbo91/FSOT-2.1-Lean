@@ -85,12 +85,12 @@ def {prefix}_D_eff : ℕ := {int(bench.get('D_eff', 18))}
 theorem {prefix}_observable_count_pos : 0 < {prefix}_observable_count := by
   unfold {prefix}_observable_count; norm_num
 
-theorem {prefix}_pooled_median_under_five_pct :
-    {prefix}_pooled_median_error_pct < (5 : ℝ) := by
+theorem {prefix}_pooled_median_under_half_pct :
+    {prefix}_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold {prefix}_pooled_median_error_pct; norm_num
 
-theorem {prefix}_headline_median_under_five_pct :
-    {prefix}_headline_median_error_pct < (5 : ℝ) := by
+theorem {prefix}_headline_median_under_half_pct :
+    {prefix}_headline_median_error_pct < (0.5 : ℝ) := by
   unfold {prefix}_headline_median_error_pct; norm_num
 
 theorem {prefix}_beats_sota_headlines_pos : 0 < {prefix}_beats_sota_headlines := by
@@ -98,11 +98,11 @@ theorem {prefix}_beats_sota_headlines_pos : 0 < {prefix}_beats_sota_headlines :=
 {extra_thms}
 theorem {prefix}_bundle :
     {prefix}_observable_count = {n} ∧
-    {prefix}_pooled_median_error_pct < (5 : ℝ) ∧
+    {prefix}_pooled_median_error_pct < (0.5 : ℝ) ∧
     {prefix}_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold {prefix}_observable_count; norm_num
-  · exact {prefix}_pooled_median_under_five_pct
+  · exact {prefix}_pooled_median_under_half_pct
   · exact {prefix}_beats_sota_headlines_pos
 
 end

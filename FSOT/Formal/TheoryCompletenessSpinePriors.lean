@@ -22,12 +22,12 @@ def toe_spine_mechanism_count : ℕ := 25
 theorem toe_spine_observable_count_pos : 0 < toe_spine_observable_count := by
   unfold toe_spine_observable_count; norm_num
 
-theorem toe_spine_pooled_median_under_five_pct :
-    toe_spine_pooled_median_error_pct < (5 : ℝ) := by
+theorem toe_spine_pooled_median_under_half_pct :
+    toe_spine_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold toe_spine_pooled_median_error_pct; norm_num
 
-theorem toe_spine_headline_median_under_five_pct :
-    toe_spine_headline_median_error_pct < (5 : ℝ) := by
+theorem toe_spine_headline_median_under_half_pct :
+    toe_spine_headline_median_error_pct < (0.5 : ℝ) := by
   unfold toe_spine_headline_median_error_pct; norm_num
 
 theorem toe_spine_beats_sota_headlines_pos : 0 < toe_spine_beats_sota_headlines := by
@@ -37,11 +37,11 @@ theorem toe_spine_spine_complete_attachments : 0 < toe_spine_domain_attachment_c
 
 theorem toe_spine_bundle :
     toe_spine_observable_count = 6 ∧
-    toe_spine_pooled_median_error_pct < (5 : ℝ) ∧
+    toe_spine_pooled_median_error_pct < (0.5 : ℝ) ∧
     toe_spine_beats_sota_headlines > 0 := by
   refine ⟨?h1, ?h2, ?h3⟩
   · unfold toe_spine_observable_count; norm_num
-  · exact toe_spine_pooled_median_under_five_pct
+  · exact toe_spine_pooled_median_under_half_pct
   · exact toe_spine_beats_sota_headlines_pos
 
 end

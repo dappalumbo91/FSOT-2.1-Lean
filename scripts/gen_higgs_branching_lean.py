@@ -56,12 +56,12 @@ theorem higgs_branching_components_sum :
     higgs_compute_branching_count + higgs_thesis_target_count = higgs_branching_observable_count := by
   unfold higgs_compute_branching_count higgs_thesis_target_count higgs_branching_observable_count; norm_num
 
-theorem higgs_branching_median_error_under_five_pct :
-    higgs_branching_median_error_pct < (5 : ℝ) := by
+theorem higgs_branching_median_error_under_half_pct :
+    higgs_branching_median_error_pct < (0.5 : ℝ) := by
   unfold higgs_branching_median_error_pct; norm_num
 
-theorem higgs_branching_max_error_under_five_pct :
-    higgs_branching_max_error_pct < (5 : ℝ) := by
+theorem higgs_branching_max_error_under_half_pct :
+    higgs_branching_max_error_pct < (0.5 : ℝ) := by
   unfold higgs_branching_max_error_pct; norm_num
 
 /-- Bundle: Higgs BR from fsot_compute + thesis wave8 with higgs-domain sign proxy. -/
@@ -70,16 +70,16 @@ theorem higgs_branching_bundle :
     higgs_thesis_target_count = {thesis_n} ∧
     higgs_branching_observable_count = {total} ∧
     higgs_compute_branching_count + higgs_thesis_target_count = {total} ∧
-    higgs_branching_median_error_pct < (5 : ℝ) ∧
-    higgs_branching_max_error_pct < (5 : ℝ) ∧
+    higgs_branching_median_error_pct < (0.5 : ℝ) ∧
+    higgs_branching_max_error_pct < (0.5 : ℝ) ∧
     (0 : ℝ) < raw_S (get_domain_params "higgs") := by
   refine ⟨
     by unfold higgs_compute_branching_count; norm_num,
     by unfold higgs_thesis_target_count; norm_num,
     by unfold higgs_branching_observable_count; norm_num,
     higgs_branching_components_sum,
-    higgs_branching_median_error_under_five_pct,
-    higgs_branching_max_error_under_five_pct,
+    higgs_branching_median_error_under_half_pct,
+    higgs_branching_max_error_under_half_pct,
     {sign}
   ⟩
 

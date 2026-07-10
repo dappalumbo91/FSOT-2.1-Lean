@@ -20,12 +20,12 @@ def finance_markets_ext_D_eff : ℕ := 19
 theorem finance_markets_ext_observable_count_pos : 0 < finance_markets_ext_observable_count := by
   unfold finance_markets_ext_observable_count; norm_num
 
-theorem finance_markets_ext_pooled_median_under_five_pct :
-    finance_markets_ext_pooled_median_error_pct < (5 : ℝ) := by
+theorem finance_markets_ext_pooled_median_under_half_pct :
+    finance_markets_ext_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold finance_markets_ext_pooled_median_error_pct; norm_num
 
-theorem finance_markets_ext_headline_median_under_five_pct :
-    finance_markets_ext_headline_median_error_pct < (5 : ℝ) := by
+theorem finance_markets_ext_headline_median_under_half_pct :
+    finance_markets_ext_headline_median_error_pct < (0.5 : ℝ) := by
   unfold finance_markets_ext_headline_median_error_pct; norm_num
 
 theorem finance_markets_ext_beats_sota_headlines_pos : 0 < finance_markets_ext_beats_sota_headlines := by
@@ -33,14 +33,14 @@ theorem finance_markets_ext_beats_sota_headlines_pos : 0 < finance_markets_ext_b
 
 theorem finance_markets_ext_bundle :
     finance_markets_ext_observable_count = 245 ∧
-    finance_markets_ext_pooled_median_error_pct < (5 : ℝ) ∧
-    finance_markets_ext_headline_median_error_pct < (5 : ℝ) ∧
+    finance_markets_ext_pooled_median_error_pct < (0.5 : ℝ) ∧
+    finance_markets_ext_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < finance_markets_ext_beats_sota_headlines ∧
     raw_S (get_domain_params "consciousness") > 0 := by
   refine ⟨
     by unfold finance_markets_ext_observable_count; norm_num,
-    finance_markets_ext_pooled_median_under_five_pct,
-    finance_markets_ext_headline_median_under_five_pct,
+    finance_markets_ext_pooled_median_under_half_pct,
+    finance_markets_ext_headline_median_under_half_pct,
     finance_markets_ext_beats_sota_headlines_pos,
     consciousness_raw_S_positive
   ⟩

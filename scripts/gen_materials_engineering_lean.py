@@ -58,12 +58,12 @@ theorem materials_engineering_observable_count_pos : 0 < materials_engineering_o
 theorem materials_engineering_section_count_pos : 0 < materials_engineering_section_count := by
   unfold materials_engineering_section_count; norm_num
 
-theorem materials_engineering_pooled_median_under_five_pct :
-    materials_engineering_pooled_median_error_pct < (5 : ℝ) := by
+theorem materials_engineering_pooled_median_under_half_pct :
+    materials_engineering_pooled_median_error_pct < (0.5 : ℝ) := by
   unfold materials_engineering_pooled_median_error_pct; norm_num
 
-theorem materials_engineering_headline_median_under_five_pct :
-    materials_engineering_headline_median_error_pct < (5 : ℝ) := by
+theorem materials_engineering_headline_median_under_half_pct :
+    materials_engineering_headline_median_error_pct < (0.5 : ℝ) := by
   unfold materials_engineering_headline_median_error_pct; norm_num
 
 theorem materials_engineering_beats_sota_headlines_pos : 0 < materials_engineering_beats_sota_headlines := by
@@ -74,16 +74,16 @@ theorem materials_engineering_bundle :
     materials_engineering_observable_count = {n} ∧
     materials_engineering_section_count = {sections} ∧
     materials_engineering_D_eff = {d_eff} ∧
-    materials_engineering_pooled_median_error_pct < (5 : ℝ) ∧
-    materials_engineering_headline_median_error_pct < (5 : ℝ) ∧
+    materials_engineering_pooled_median_error_pct < (0.5 : ℝ) ∧
+    materials_engineering_headline_median_error_pct < (0.5 : ℝ) ∧
     0 < materials_engineering_beats_sota_headlines ∧
     raw_S (get_domain_params "material") > 0 := by
   refine ⟨
     by unfold materials_engineering_observable_count; norm_num,
     by unfold materials_engineering_section_count; norm_num,
     by unfold materials_engineering_D_eff; norm_num,
-    materials_engineering_pooled_median_under_five_pct,
-    materials_engineering_headline_median_under_five_pct,
+    materials_engineering_pooled_median_under_half_pct,
+    materials_engineering_headline_median_under_half_pct,
     materials_engineering_beats_sota_headlines_pos,
     {sign}
   ⟩

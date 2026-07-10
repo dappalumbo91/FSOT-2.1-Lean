@@ -55,8 +55,8 @@ theorem cosmology_higher_waves_partition :
     cosmology_wave8_count cosmology_wave9_count cosmology_wave10_count
     cosmology_higher_waves_total; norm_num
 
-theorem cosmology_higher_waves_max_error_under_five_pct :
-    cosmology_higher_waves_max_error_pct < (5 : ℝ) := by
+theorem cosmology_higher_waves_max_error_under_half_pct :
+    cosmology_higher_waves_max_error_pct < (0.5 : ℝ) := by
   unfold cosmology_higher_waves_max_error_pct; norm_num
 
 /-- Bundle: 142 higher-wave observables (electroweak, Higgs, lattice, mega-wave). -/
@@ -70,7 +70,7 @@ theorem cosmology_higher_waves_bundle :
     cosmology_wave10_count = {w10} ∧
     cosmology_wave5_count + cosmology_wave6_count + cosmology_wave7_count +
       cosmology_wave8_count + cosmology_wave9_count + cosmology_wave10_count = {total} ∧
-    cosmology_higher_waves_max_error_pct < (5 : ℝ) ∧
+    cosmology_higher_waves_max_error_pct < (0.5 : ℝ) ∧
     (0 : ℝ) < omega_b_h2_fsot S_cosm_cached S_quant_cached := by
   refine ⟨
     by unfold cosmology_higher_waves_total; norm_num,
@@ -81,7 +81,7 @@ theorem cosmology_higher_waves_bundle :
     by unfold cosmology_wave9_count; norm_num,
     by unfold cosmology_wave10_count; norm_num,
     cosmology_higher_waves_partition,
-    cosmology_higher_waves_max_error_under_five_pct,
+    cosmology_higher_waves_max_error_under_half_pct,
     omega_b_h2_fsot_cached_pos
   ⟩
 
