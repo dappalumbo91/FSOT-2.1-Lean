@@ -30,7 +30,7 @@ def main() -> int:
     harness = run_esp32_hardware_harness(port=port, flash=not args.no_flash)
     doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "88_esp32_hardware_serial_boot",
+        "tier": "91_esp32_rf_observer_enow",
         "port": port,
         "harness": harness,
         "overall_ok": harness.get("status") == "passed",
@@ -41,7 +41,7 @@ def main() -> int:
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")
     serial = harness.get("serial_capture") or {}
-    print("ESP32 FSOT SERIAL HARNESS (Tier 88)")
+    print("ESP32 FSOT SERIAL HARNESS (Tier 91)")
     print(f"  port: {port or 'n/a'}")
     print(f"  flash: {(harness.get('flash') or {}).get('status', 'n/a')}")
     print(

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tier 88 — build ESP32 fsot_esp32_observer firmware."""
+"""Tier 91 — build ESP32 fsot_esp32_observer firmware (RF observer + ESP-NOW)."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from esp32_fsot_serial_lib import build_esp32_firmware  # noqa: E402
 
 def main() -> int:
     result = build_esp32_firmware()
-    print("ESP32 FSOT OBSERVER BUILD (Tier 88)")
+    print("ESP32 FSOT OBSERVER BUILD (Tier 91)")
     print(f"  status: {result.get('status')}")
     print(f"  elf: {result.get('elf', 'n/a')}")
     print(f"  bin: {result.get('bin', 'n/a')}")

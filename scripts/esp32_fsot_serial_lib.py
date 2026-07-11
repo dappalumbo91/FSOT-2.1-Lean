@@ -15,7 +15,7 @@ GOLDEN_SERIAL = ROOT / "verification" / "esp32" / "golden_boot_serial.txt"
 BOOT_SCALAR = 0.09928895626861721
 SCALAR_TOLERANCE = 5e-17
 DEFAULT_BAUD = 115_200
-DEFAULT_CAPTURE_S = 12
+DEFAULT_CAPTURE_S = 30
 
 
 def resolve_espflash() -> str | None:
@@ -182,8 +182,10 @@ def capture_serial_output(port: str | None = None, seconds: int = DEFAULT_CAPTUR
                 raw = ser.read(4096)
                 if raw:
                     chunks.append(raw.decode("utf-8", errors="replace"))
-                if "FSOT_ESP32_HARDWARE_BOOT=ok" in "".join(chunks):
-                    break
+                joined = "".join(chunks)
+                if "FSOT_ESP32_OBSERVER_TIER=91" in joined or "FSOT_ESP32_HARDWARE_BOOT=ok" in joined:
+                    if "FSOT_ESP32_OBSERVER_TIER=91" in joined:
+                        break
                 time.sleep(0.05)
         text = "".join(chunks)
         markers = _parse_esp32_markers(text)
@@ -194,9 +196,27 @@ def capture_serial_output(port: str | None = None, seconds: int = DEFAULT_CAPTUR
         hardware_ok = markers.get("hardware_boot") == "ok"
         golden_ok = _golden_subset_match(markers, golden) if golden else True
         emergence_ok = "POSITIVE (Emergence)" in text
+        rf_scalar = markers.get("rf_scalar")
+        rf_ok = isinstance(rf_scalar, float) and abs(rf_scalar) < 1e6 and rf_scalar == rf_scalar
+        trinary_ok = markers.get("trinary_state") in ("+1", "0", "-1")
+        tier_ok = markers.get("observer_tier") == 91
+        wifi_ok = isinstance(markers.get("wifi_ap_count"), int)
+        ble_ok = markers.get("ble_stack") in ("ok", "fail")
+        enow_ok = markers.get("enow_sent") in ("ok", "fail")
         return {
             "status": "passed"
-            if boot_ok and canonical_ok and dynamic_ok and hardware_ok and emergence_ok and golden_ok
+            if boot_ok
+            and canonical_ok
+            and dynamic_ok
+            and hardware_ok
+            and emergence_ok
+            and golden_ok
+            and rf_ok
+            and trinary_ok
+            and tier_ok
+            and wifi_ok
+            and ble_ok
+            and enow_ok
             else "failed",
             "port": port,
             "baud": DEFAULT_BAUD,
@@ -204,9 +224,15 @@ def capture_serial_output(port: str | None = None, seconds: int = DEFAULT_CAPTUR
             "canonical": markers.get("canonical"),
             "dynamic_check": markers.get("dynamic_check"),
             "hardware_boot": markers.get("hardware_boot"),
+            "rf_scalar": rf_scalar,
+            "trinary_state": markers.get("trinary_state"),
+            "wifi_ap_count": markers.get("wifi_ap_count"),
+            "ble_stack": markers.get("ble_stack"),
+            "enow_sent": markers.get("enow_sent"),
+            "observer_tier": markers.get("observer_tier"),
             "golden_match": golden_ok,
             "emergence_detected": emergence_ok,
-            "serial_capture": text[-4000:],
+            "serial_capture": text[-5000:],
         }
     except Exception as e:
         return {"status": "failed", "reason": str(e), "port": port}
@@ -230,8 +256,8 @@ def run_esp32_hardware_harness(port: str | None = None, flash: bool = True) -> d
         "flash": flash_result,
         "serial_capture": serial,
         "note": (
-            "Tier 88 validates ESP32 UART boot with FSOT_ESP32_* markers, "
-            "chaining Tier 87 QEMU disk boot parity."
+            "Tier 91 validates ESP32 UART boot + WiFi RF sonar + BLE stack + "
+            "ESP-NOW gossip with FSOT_ESP32_* markers."
         ),
     }
 
@@ -244,6 +270,9 @@ def _golden_subset_match(markers: dict, golden: dict) -> bool:
         if isinstance(expected, float) and isinstance(got, float):
             if abs(got - expected) >= SCALAR_TOLERANCE:
                 return False
+        elif isinstance(expected, int) and isinstance(got, int):
+            if got != expected:
+                return False
         elif got != expected:
             return False
     return True
@@ -255,11 +284,31 @@ def _parse_esp32_markers(text: str) -> dict:
         "boot_scalar": r"FSOT_ESP32_BOOT_SCALAR=([0-9.eE+-]+)",
         "canonical": r"FSOT_ESP32_CANONICAL=([0-9.eE+-]+)",
         "dynamic_check": r"FSOT_ESP32_DYNAMIC_CHECK=([0-9.eE+-]+)",
+        "rf_scalar": r"FSOT_ESP32_RF_SCALAR=([0-9.eE+-]+)",
+        "rssi_var": r"FSOT_ESP32_RSSI_VAR=([0-9.eE+-]+)",
+        "temp_c": r"FSOT_ESP32_TEMP_C=([0-9.eE+-]+)",
     }
     for key, pat in patterns.items():
         m = re.search(pat, text)
         if m:
             out[key] = float(m.group(1))
+    int_patterns = {
+        "wifi_ap_count": r"FSOT_ESP32_WIFI_AP_COUNT=(\d+)",
+        "observer_tier": r"FSOT_ESP32_OBSERVER_TIER=(\d+)",
+    }
+    for key, pat in int_patterns.items():
+        m = re.search(pat, text)
+        if m:
+            out[key] = int(m.group(1))
+    str_patterns = {
+        "trinary_state": r"FSOT_ESP32_TRINARY_STATE=([+-]?1|0)",
+        "ble_stack": r"FSOT_ESP32_BLE_STACK=(ok|fail)",
+        "enow_sent": r"FSOT_ESP32_ENOW_SENT=(ok|fail)",
+    }
+    for key, pat in str_patterns.items():
+        m = re.search(pat, text)
+        if m:
+            out[key] = m.group(1)
     if "FSOT_ESP32_HARDWARE_BOOT=ok" in text:
         out["hardware_boot"] = "ok"
     return out

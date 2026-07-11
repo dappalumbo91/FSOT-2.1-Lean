@@ -1,7 +1,7 @@
 # Tier 79 — Multi-framework cross-proof verification (Lean → Coq / Isabelle / Python oracle)
 version: '1.0'
 updated: '2026-07-10'
-tier: 88
+tier: 91
 
 philosophy: >
   Same pattern as rust_lean_bridge: export obligations from Lean authority,
@@ -74,7 +74,8 @@ status_local:
   rust_lean_bridge_runtime_parity: passed
   fstar_scalar_spec: passed
   qemu_serial_harness: passed
-  esp32_hardware_harness: build_ready
+  esp32_hardware_harness: passed
+  esp32_rf_observer: passed
   full_triangulation: true
   four_way_verification: true
   five_way_runtime: true
@@ -98,6 +99,9 @@ coverage_audit:
   tier_86_achieved: F* scalar spec + QEMU serial harness layered on runtime parity
   tier_87_achieved: full no_std QEMU disk boot image (bootloader 0.9 + bootimage)
   tier_88_achieved: ESP32 hardware UART boot (esp-hal + shared fsot_scalar_kernel no_std)
+  tier_89_achieved: WiFi RF sonar → dynamic scalar (passive scan, no association)
+  tier_90_achieved: BLE stack + trinary collapse + GPIO2 LED actuation
+  tier_91_achieved: ESP-NOW scalar gossip + full observer UART harness
 
 isabelle_install:
   script: scripts/install_isabelle_windows.ps1

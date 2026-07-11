@@ -568,7 +568,7 @@ def main() -> int:
 
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "tier": "88",
+        "tier": "91",
         "connective_spine": {
             "obligation_count": connective["obligation_count"],
             "python_decimal": {"status": "passed" if py_conn_ok else "failed"},
@@ -701,8 +701,8 @@ def main() -> int:
             and qemu_harness.get("disk_status") == "passed"
             and esp32_harness.get("status") == "passed",
         "note": (
-            "Tier 88: Lean+Coq+Isabelle+Rust replay+rust_lean_bridge parity+F* scalar spec "
-            "+ QEMU serial/disk boot + ESP32 hardware UART harness."
+            "Tier 91: Lean+Coq+Isabelle+Rust replay+rust_lean_bridge parity+F* scalar spec "
+            "+ QEMU serial/disk boot + ESP32 RF observer (WiFi/BLE/ESP-NOW) harness."
         ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
@@ -712,7 +712,7 @@ def main() -> int:
         cwd=str(ROOT),
     )
 
-    print("CROSS-PROOF VERIFICATION (Tier 88 wide)")
+    print("CROSS-PROOF VERIFICATION (Tier 91 wide)")
     print(f"  connective obligations: {connective['obligation_count']}")
     print(f"  full formal obligations: {formal['obligation_count']} ({formal.get('modules_exported')} modules)")
     print(f"  provable: {len(provable_formal)} | margin violations: {len(margin_violations)}")

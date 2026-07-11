@@ -14,7 +14,7 @@ from esp32_fsot_serial_lib import detect_cp210x_port, flash_esp32_firmware  # no
 
 def main() -> int:
     port = detect_cp210x_port()
-    print("ESP32 FSOT FLASH (Tier 88)")
+    print("ESP32 FSOT FLASH (Tier 91)")
     print(f"  detected port: {port or 'none'}")
     if not port:
         print("  Connect CP210x ESP32 and retry.")
