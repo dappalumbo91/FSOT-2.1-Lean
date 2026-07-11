@@ -69,12 +69,31 @@ def is_contested_record(record: dict) -> bool:
     return False
 
 
+def _stumped_canonical_property(record: dict) -> str:
+    """Map record id/name aliases to stumped observable property keys."""
+    prop = str(record.get("property") or "")
+    for key in (prop, str(record.get("name") or ""), str(record.get("id") or "")):
+        if not key:
+            continue
+        stumped = load_stumped_ids().get(key)
+        if stumped and stumped.get("property"):
+            return str(stumped["property"])
+    return prop
+
+
 def resolve_reference_uncertainty_pct(record: dict) -> float | None:
     """Return literature relative uncertainty (%) when known."""
     row = record or {}
     if row.get("reference_uncertainty_pct") is not None:
         try:
             return float(row["reference_uncertainty_pct"])
+        except (TypeError, ValueError):
+            pass
+
+    sci = row.get("scientific_measurement") or {}
+    if sci.get("reference_uncertainty_pct") is not None:
+        try:
+            return float(sci["reference_uncertainty_pct"])
         except (TypeError, ValueError):
             pass
 
@@ -97,7 +116,7 @@ def resolve_reference_uncertainty_pct(record: dict) -> float | None:
         except (TypeError, ValueError):
             pass
 
-    prop = str(row.get("property") or "")
+    prop = _stumped_canonical_property(row)
     anchors = load_anchors()
     anchor = anchors.get(prop)
     if anchor and anchor.get("measured_uncertainty_pct") is not None:

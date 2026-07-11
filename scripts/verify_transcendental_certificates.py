@@ -37,7 +37,8 @@ def build() -> dict:
         "version": "1.0",
         "prover_note": (
             "Coq TranscendentalBoundsNative proves pi/e base intervals natively; "
-            "Isabelle uses certified axioms; this audit decimal-triangulates the bounds."
+            "Isabelle TranscendentalBoundsNative.thy uses HOL-Decision_Procs.Approximation; "
+            "this audit decimal-triangulates the bounds."
         ),
         "overall_ok": all_ok,
         "checks": checks,

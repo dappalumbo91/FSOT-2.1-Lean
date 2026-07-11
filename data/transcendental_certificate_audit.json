@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-11T17:04:46.687415+00:00",
+  "generated_at": "2026-07-11T19:38:08.460729+00:00",
   "version": "1.0",
-  "prover_note": "Coq TranscendentalBoundsNative + Isabelle approximation prove pi/e base intervals; this audit decimal-triangulates the certified bounds.",
+  "prover_note": "Coq TranscendentalBoundsNative proves pi/e base intervals natively; Isabelle TranscendentalBoundsNative.thy uses HOL-Decision_Procs.Approximation; this audit decimal-triangulates the bounds.",
   "overall_ok": true,
   "checks": [
     {

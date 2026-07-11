@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T19:23:36.886455+00:00",
+  "generated_at": "2026-07-11T19:38:08.214622+00:00",
   "tier": "83_transcendental_bounds_gap",
   "bounds_lean_file": "FSOT\\Formal\\Bounds.lean",
   "exported_float_obligations_from_bounds": 24,
@@ -95,6 +95,6 @@
   "transcendental_lemma_count": 68,
   "tier_83_status": "coq_and_isabelle_artifacts_generated",
   "tier_83_obligations_json": "verification/obligations/transcendental_bounds.json",
-  "next_tier_scope": "Replace certified axioms with internal Taylor/interval proofs in Coq and Isabelle; add Agda/Metamath fourth checks.",
-  "note": "Tier 83 exports 68 transcendental Bounds lemmas to Coq+Isabelle with Python decimal certificates. Float spine still covers 24 numeric Bounds obligations; pi/e tight intervals use certified base axioms bridged from Lean Mathlib."
+  "next_tier_scope": "Optional fourth-prover checks (Agda/Metamath); deepen independent proof scripts beyond numeric literal replay for structural theorems.",
+  "note": "Tier 83 exports 68 transcendental Bounds lemmas to Coq+Isabelle with Python decimal certificates. Float spine still covers 24 numeric Bounds obligations; pi/e tight intervals use native Coq Taylor/lra proofs and Isabelle HOL-Decision_Procs.Approximation."
 }

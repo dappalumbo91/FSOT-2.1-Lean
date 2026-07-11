@@ -244,6 +244,8 @@ def export_obligations() -> dict[str, Any]:
             continue
         meta = classify_obligation(lemma_id, lean_type)
         py_ok = python_verify_lean_type(lean_type)
+        if py_ok is None and "consciousness_factor" in lean_type:
+            py_ok = python_verify_lean_type(lean_type_to_coq(lean_type).replace("%R", ": ℝ"))
         obligations.append(
             {
                 "id": lemma_id,

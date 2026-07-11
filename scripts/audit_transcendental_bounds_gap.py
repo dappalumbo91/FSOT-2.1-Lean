@@ -109,13 +109,13 @@ def main() -> int:
         "tier_83_status": "coq_and_isabelle_artifacts_generated",
         "tier_83_obligations_json": "verification/obligations/transcendental_bounds.json",
         "next_tier_scope": (
-            "Replace certified axioms with internal Taylor/interval proofs in Coq and Isabelle; "
-            "add Agda/Metamath fourth checks."
+            "Optional fourth-prover checks (Agda/Metamath); deepen independent proof scripts beyond "
+            "numeric literal replay for structural theorems."
         ),
         "note": (
             "Tier 83 exports 68 transcendental Bounds lemmas to Coq+Isabelle with Python decimal "
             "certificates. Float spine still covers 24 numeric Bounds obligations; pi/e tight intervals "
-            "use certified base axioms bridged from Lean Mathlib."
+            "use native Coq Taylor/lra proofs and Isabelle HOL-Decision_Procs.Approximation."
         ),
     }
     OUT.write_text(json.dumps(doc, indent=2), encoding="utf-8")

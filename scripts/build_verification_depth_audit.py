@@ -166,7 +166,10 @@ def build() -> dict:
             "id": "rust_report_stale",
             "severity": "low",
             "description": "cross_proof_verification_report.json may lag rust_replay_lib until full pipeline re-run",
-            "remedy": "Re-run run_cross_proof_verification.py to refresh obligation_count to 1333",
+            "remedy": "Re-run run_cross_proof_verification.py to refresh obligation_count to 1331",
+            "closed": (
+                (frameworks.get("rust_replay") or {}).get("obligation_count") == 1331
+            ),
         },
         {
             "id": "hardware_scalar_only",

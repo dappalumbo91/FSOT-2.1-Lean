@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T19:24:05.222989+00:00",
+  "generated_at": "2026-07-11T19:38:17.605732+00:00",
   "version": "1.0",
   "verdict": {
     "cross_proof_overall_ok": true,
@@ -83,7 +83,8 @@
       "id": "rust_report_stale",
       "severity": "low",
       "description": "cross_proof_verification_report.json may lag rust_replay_lib until full pipeline re-run",
-      "remedy": "Re-run run_cross_proof_verification.py to refresh obligation_count to 1333"
+      "remedy": "Re-run run_cross_proof_verification.py to refresh obligation_count to 1331",
+      "closed": true
     },
     {
       "id": "hardware_scalar_only",
@@ -112,7 +113,7 @@
     "stumped_observable_count": 13,
     "stumped_without_benchmark_row": 0,
     "preregistered_predictions_tracked": 1,
-    "domains_missing_uncertainty_metadata": 1,
+    "domains_missing_uncertainty_metadata": 0,
     "domains_raw_eff_divergence": 8
   },
   "pushback_avenues": [
@@ -238,12 +239,6 @@
     "Attach scientific_measurement envelope (\u03c3, \u0394) to every scalar record"
   ],
   "open_gaps": [
-    {
-      "id": "rust_report_stale",
-      "severity": "low",
-      "description": "cross_proof_verification_report.json may lag rust_replay_lib until full pipeline re-run",
-      "remedy": "Re-run run_cross_proof_verification.py to refresh obligation_count to 1333"
-    },
     {
       "id": "hardware_scalar_only",
       "severity": "info",

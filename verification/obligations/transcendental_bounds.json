@@ -1,7 +1,7 @@
 {
   "tier": "83_transcendental_bounds",
   "obligation_count": 68,
-  "python_decimal_verified_count": 65,
+  "python_decimal_verified_count": 66,
   "by_proof_template": {
     "exp_neg_one": 2,
     "certified_point": 43,
@@ -534,7 +534,7 @@
       "lean_type": "exp (consciousness_factor * phase_variance) < (1.338 : \u211d)",
       "coq_statement": "exp (0.2903%R) < (1.338%R)",
       "isabelle_statement": "exp (0.2903 :: real) < (1.338 :: real)",
-      "python_decimal_verified": null,
+      "python_decimal_verified": true,
       "source_file": "Bounds.lean",
       "source_tier": "transcendental_bounds",
       "proof_template": "exp_direct",

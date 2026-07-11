@@ -894,6 +894,10 @@ def main() -> int:
         [sys.executable, str(ROOT / "scripts" / "build_verification_depth_audit.py")],
         cwd=str(ROOT),
     )
+    subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "build_deep_verification_audit.py")],
+        cwd=str(ROOT),
+    )
 
     print("CROSS-PROOF VERIFICATION (Tier 91 wide)")
     print(f"  connective obligations: {connective['obligation_count']}")

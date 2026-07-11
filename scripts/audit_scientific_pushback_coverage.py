@@ -208,6 +208,10 @@ def build() -> dict:
         ],
         key=lambda x: -(x.get("max_effective_scalar_error_pct") or 0),
     )[:20]
+    raw_eff_domains = sorted(
+        [r for r in domain_rows if (r.get("raw_eff_divergence_count") or 0) > 0],
+        key=lambda x: -(x.get("raw_eff_divergence_count") or 0),
+    )[:25]
 
     covered_props = _collect_benchmark_properties()
     stumped = _stumped_coverage(covered_props)
@@ -269,6 +273,15 @@ def build() -> dict:
         "preregistered_predictions": prereg_tracked,
         "high_pushback_domains": high_pushback,
         "missing_uncertainty_domains": missing_unc_domains[:25],
+        "raw_eff_divergence_domains": [
+            {
+                "domain": r.get("domain"),
+                "count": r.get("raw_eff_divergence_count"),
+                "top": (r.get("top_raw_eff_divergence") or [None])[0],
+                "green_gate_pass": r.get("green_gate_pass"),
+            }
+            for r in raw_eff_domains
+        ],
         "failing_green_gate_domains": failing_green[:25],
         "remediation_priority": [
             "Propagate literature_uncertainty_anchors to stumped-property rows via enrich_benchmark_scientific_metadata.py",
