@@ -44,6 +44,34 @@ def _bench_value(doc: dict, prop: str) -> tuple[float | None, float | None]:
     return None, None
 
 
+def _comparison_class(row: dict) -> str:
+    explicit = row.get("comparison_class")
+    if explicit:
+        return str(explicit)
+    oid = str(row.get("id") or "")
+    name = str(row.get("name") or "").lower()
+    unit = str(row.get("unit") or "")
+    if oid.startswith("mgr_") or "formula_corpus_closure" in oid:
+        return "internal_pipeline_metric"
+    if any(
+        tok in oid
+        for tok in (
+            "_pooled",
+            "_section",
+            "_gap_fill_pooled",
+            "_tier_g_pooled",
+            "_tier_e_pooled",
+            "_bridge",
+        )
+    ):
+        return "internal_pipeline_metric"
+    if "pooled_median" in name or "section_median" in name:
+        return "internal_pipeline_metric"
+    if unit == "misclassification_pct":
+        return "classifier_pipeline_metric"
+    return "external_observable"
+
+
 def _compare_observable(row: dict, computed: float | None, fsot_err: float | None) -> tuple[str, float | None]:
     metric = row.get("comparison_metric") or "error_pct"
     if metric == "rmse":
@@ -75,6 +103,7 @@ def build(ledger_path: Path = LEDGER) -> dict:
     spec = yaml.safe_load(ledger_path.read_text(encoding="utf-8"))
     records: list[dict] = []
     beats = 0
+    headline_beats = 0
     for row in spec.get("observables") or []:
         fsot_err = row.get("fsot_error_pct")
         computed = row.get("fsot_computed")
@@ -87,10 +116,19 @@ def build(ledger_path: Path = LEDGER) -> dict:
             if err is not None:
                 fsot_err = err
         status, margin = _compare_observable(row, computed, fsot_err)
+        comp_class = _comparison_class(row)
+        exclude_headline = bool(
+            row.get("exclude_from_headline_beats")
+            or comp_class != "external_observable"
+        )
         if status in ("beats_sota", "meets_sota"):
             beats += 1
+            if not exclude_headline:
+                headline_beats += 1
         entry = {
             **row,
+            "comparison_class": comp_class,
+            "exclude_from_headline_beats": exclude_headline,
             "fsot_computed": computed,
             "fsot_error_pct": fsot_err,
             "margin_vs_sota_pct": margin,
@@ -105,14 +143,27 @@ def build(ledger_path: Path = LEDGER) -> dict:
         records.append(entry)
     compared = [r for r in records if r.get("fsot_error_pct") is not None]
     below = [r["id"] for r in records if r.get("status") == "below_sota"]
+    headline_records = [r for r in records if not r.get("exclude_from_headline_beats")]
+    headline_below = [r["id"] for r in headline_records if r.get("status") == "below_sota"]
+    internal_count = sum(
+        1 for r in records if r.get("comparison_class") == "internal_pipeline_metric"
+    )
     return {
-        "report_version": "1.0",
+        "report_version": "1.1",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "observable_count": len(records),
+        "headline_eligible_count": len(headline_records),
+        "internal_pipeline_metric_count": internal_count,
         "compared_count": len(compared),
         "beats_or_meets_sota_count": beats,
+        "headline_beats_or_meets_count": headline_beats,
         "below_sota_ids": below,
+        "headline_below_sota_ids": headline_below,
         "fsot_free_parameters": int(spec.get("fsot_engine", {}).get("free_parameters", 0)),
+        "parameter_audit_note": (
+            "See data/parameter_count_audit.json — engine uses intrinsic constants "
+            "plus per-domain D_eff/δψ assignments, not a zero-knob claim."
+        ),
         "records": records,
     }
 

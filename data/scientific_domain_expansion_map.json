@@ -1,20 +1,27 @@
 {
-  "generated_at": "2026-07-10T18:58:29.805434+00:00",
+  "generated_at": "2026-07-11T15:00:30.527574+00:00",
   "summary": {
     "neurolab_domains": 35,
-    "extension_domains": 220,
-    "total_scientific_domains_covered": 256,
+    "extension_domains": 246,
+    "total_scientific_domains_covered": 282,
     "total_empirical_records": 306680,
     "domains_target_band_2pct": 35,
     "domains_sign_mismatch": 0,
-    "tier_distribution": {
+    "neurolab_tier_distribution": {
       "A_strong": 25,
       "B_verified": 10,
       "C_thin": 0,
       "D_needs_work": 0,
       "unverified": 0
     },
-    "lean_formal_modules": 290
+    "tier_distribution": {
+      "A_strong": 88,
+      "B_verified": 120,
+      "C_thin": 74,
+      "D_needs_work": 0,
+      "unverified": 0
+    },
+    "lean_formal_modules": 320
   },
   "neurolab_domains": [
     {
@@ -553,7 +560,7 @@
       "domain": "Particle_Physics",
       "tier": 16,
       "record_count": 98,
-      "median_error_pct": 0.018000835539782083,
+      "median_error_pct": 0.014415233331492876,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.ParticlePhysicsPriors"
     },
@@ -689,7 +696,7 @@
       "domain": "Geochemistry",
       "tier": 26,
       "record_count": 153,
-      "median_error_pct": 0.186623,
+      "median_error_pct": 0.015388964340886185,
       "coverage_tier": "A_strong",
       "lean_module": "FSOT.Formal.GeochemistryPriors"
     },
@@ -2260,6 +2267,214 @@
       "median_error_pct": 0.0,
       "coverage_tier": "B_verified",
       "lean_module": "FSOT.Formal.PeriodicTableCompletionSpinePriors"
+    },
+    {
+      "domain": "Heavy_Ion_Lab_Synthesis_Panel",
+      "tier": 73,
+      "record_count": 39,
+      "median_error_pct": 9.5e-05,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.HeavyIonLabSynthesisPanelPriors"
+    },
+    {
+      "domain": "Element_Synthesis_Condition_Scaffold",
+      "tier": 73,
+      "record_count": 45,
+      "median_error_pct": 0.000787,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.ElementSynthesisConditionScaffoldPriors"
+    },
+    {
+      "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+      "tier": 73,
+      "record_count": 22,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.ColdFusionLabSynthesisCrosswalkPriors"
+    },
+    {
+      "domain": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+      "tier": 73,
+      "record_count": 25,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.MetamaterialFluidDesignPreregScaffoldPriors"
+    },
+    {
+      "domain": "Lab_Synthesis_Metamaterial_Spine",
+      "tier": 73,
+      "record_count": 43,
+      "median_error_pct": 3.4e-05,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.LabSynthesisMetamaterialSpinePriors"
+    },
+    {
+      "domain": "Island_Of_Stability_Deep_Panel",
+      "tier": 74,
+      "record_count": 23,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.IslandOfStabilityDeepPanelPriors"
+    },
+    {
+      "domain": "Z120_Z126_Beam_Synthesis_Panel",
+      "tier": 74,
+      "record_count": 20,
+      "median_error_pct": 9.5e-05,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.Z120Z126BeamSynthesisPanelPriors"
+    },
+    {
+      "domain": "Fusion_Decay_Chain_Prereg_Scaffold",
+      "tier": 74,
+      "record_count": 18,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.FusionDecayChainPreregScaffoldPriors"
+    },
+    {
+      "domain": "Superheavy_Island_Emergence_Simulation",
+      "tier": 74,
+      "record_count": 44,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.SuperheavyIslandEmergenceSimulationPriors"
+    },
+    {
+      "domain": "Superheavy_Island_Completion_Spine",
+      "tier": 74,
+      "record_count": 43,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.SuperheavyIslandCompletionSpinePriors"
+    },
+    {
+      "domain": "Distant_Island_Z128_Z132_Deep_Panel",
+      "tier": 75,
+      "record_count": 14,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.DistantIslandZ128Z132DeepPanelPriors"
+    },
+    {
+      "domain": "Z164_Distant_Island_Prereg_Scaffold",
+      "tier": 75,
+      "record_count": 7,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.Z164DistantIslandPreregScaffoldPriors"
+    },
+    {
+      "domain": "Periodic_Extension_Decay_Topology_Scaffold",
+      "tier": 75,
+      "record_count": 19,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.PeriodicExtensionDecayTopologyScaffoldPriors"
+    },
+    {
+      "domain": "Distant_Island_Emergence_Simulation",
+      "tier": 75,
+      "record_count": 36,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.DistantIslandEmergenceSimulationPriors"
+    },
+    {
+      "domain": "Periodic_Table_Extension_Closure_Spine",
+      "tier": 75,
+      "record_count": 41,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.PeriodicTableExtensionClosureSpinePriors"
+    },
+    {
+      "domain": "Time_Emergence_Deep_Panel",
+      "tier": 76,
+      "record_count": 17,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.TimeEmergenceDeepPanelPriors"
+    },
+    {
+      "domain": "FPC_Fluidlink_Timing_Deep_Panel",
+      "tier": 76,
+      "record_count": 13,
+      "median_error_pct": 5e-05,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.FpcFluidlinkTimingDeepPanelPriors"
+    },
+    {
+      "domain": "Cosmology_Anomaly_Deep_Panel",
+      "tier": 76,
+      "record_count": 14,
+      "median_error_pct": 0.000502,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.CosmologyAnomalyDeepPanelPriors"
+    },
+    {
+      "domain": "Hubble_Dark_Sector_Crosswalk",
+      "tier": 76,
+      "record_count": 20,
+      "median_error_pct": 0.000502,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.HubbleDarkSectorCrosswalkPriors"
+    },
+    {
+      "domain": "Fluid_Spacetime_Observable_Spine",
+      "tier": 76,
+      "record_count": 37,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.FluidSpacetimeObservableSpinePriors"
+    },
+    {
+      "domain": "Hybrid_FI_Sim_Multi_Hero_Panel",
+      "tier": 77,
+      "record_count": 14,
+      "median_error_pct": 0.051436,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.HybridFiSimMultiHeroPanelPriors"
+    },
+    {
+      "domain": "Knowledge_Base_Portable_Bundle_Panel",
+      "tier": 77,
+      "record_count": 13,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.KnowledgeBasePortableBundlePanelPriors"
+    },
+    {
+      "domain": "RD_Interval_Tightening_Panel",
+      "tier": 77,
+      "record_count": 12,
+      "median_error_pct": 0.000502,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.RdIntervalTighteningPanelPriors"
+    },
+    {
+      "domain": "Domain_Coupling_Simulation_Refresh_Panel",
+      "tier": 77,
+      "record_count": 22,
+      "median_error_pct": 0.0,
+      "coverage_tier": "B_verified",
+      "lean_module": "FSOT.Formal.DomainCouplingSimulationRefreshPanelPriors"
+    },
+    {
+      "domain": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "tier": 77,
+      "record_count": 19,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.FluidSpacetimePreregValidationPanelPriors"
+    },
+    {
+      "domain": "Warp_BH_WH_Portal_Panel",
+      "tier": 78,
+      "record_count": 11,
+      "median_error_pct": 0.0,
+      "coverage_tier": "C_thin",
+      "lean_module": "FSOT.Formal.WarpBhWhPortalPriors"
     }
   ],
   "intelligence_compression": {

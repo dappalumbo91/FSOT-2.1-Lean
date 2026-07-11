@@ -6,7 +6,10 @@ notes: >
   on the same observable. Uncertainty bars are 1-sigma unless noted.
 
 fsot_engine:
+  # Intrinsic constant spine + per-domain D_eff/δψ table — see parameter_count_audit.json
   free_parameters: 0
+  parameter_audit: data/parameter_count_audit.json
+  honest_framing: "No per-observable least-squares fit; not literally zero tunable slots"
 
 observables:
   - id: H0_planck

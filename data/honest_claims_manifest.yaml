@@ -1,0 +1,74 @@
+# FSOT 2.1 Lean — honest claims vs evidence map (fail-closed for auditors/AI)
+version: "1.0"
+updated: "2026-07-11"
+authoritative_artifacts:
+  cross_proof: data/cross_proof_verification_report.json
+  parameter_audit: data/parameter_count_audit.json
+  domain_map: data/scientific_domain_expansion_map.json
+  sota_ledger: data/sota_observable_ledger_report.json
+  formula_corpus: vendor/formula_corpus/by_domain/strict_empirical.jsonl
+
+claims:
+  zero_free_parameters:
+    headline: "Intrinsic constant spine with per-domain assignments"
+    verdict: NOT_LITERAL_ZERO
+    evidence: data/parameter_count_audit.json
+    honest_statement: >
+      FSOT uses φ/e/π/γ-derived constants plus manifest-declared per-domain
+      D_eff, δψ, and hits — no per-observable least-squares tuning in the
+      verification pipeline, but not literally zero tunable slots.
+
+  beats_sota_everywhere:
+    headline: "External observables beat published typical errors"
+    verdict: PARTIAL_EXTERNAL_ONLY
+    evidence: data/sota_observable_ledger_report.json
+    honest_statement: >
+      Headline SOTA beats count only external_observable ledger rows.
+      Pooled medians, section medians, and classifier pipeline metrics are
+      tracked separately (comparison_class != external_observable).
+
+  lean_beats_sota_headlines_theorems:
+    headline: "Domain Priors theorems named *_beats_sota_headlines_pos"
+    verdict: COUNT_CERTIFICATE_ONLY
+    honest_statement: >
+      These Lean theorems prove a positive ℕ headline count baked into each
+      Priors module — they do NOT prove superiority over an external model.
+
+  formula_corpus_7941_checks:
+    headline: "7,941 strict-empirical rows"
+    verdict: ROW_COUNT_WITH_TRIPLICATION
+    honest_statement: >
+      strict_empirical.jsonl has 7,941 rows; ~1,325 unique observables
+      (concept+formula+target) triplicated across source projects.
+      verify_formula_corpus.py reports both totals and runs live recompute
+      on a deterministic 200-row sample.
+
+  all_domains_verified:
+    headline: "Extension domains pass pooled ≤0.5% gate"
+    verdict: GATED_NOT_UNIVERSAL_SOTA
+    evidence: scripts/verify_extension_domains.py
+    honest_statement: >
+      245 extension domains pass pooled median ≤0.5% + classifier gates.
+      Per-record max scalar >0.5% is tracked in extension_scalar_precision_debt.json
+      (not silently ignored). C_thin domains exist — see tier_distribution in
+      scientific_domain_expansion_map.json (full aggregate, not NeuroLab-only).
+
+  theory_of_everything:
+    headline: "Cross-domain scalar spine with Lean sign certificates"
+    verdict: STRUCTURAL_PLUS_NUMERIC_BANDS
+    honest_statement: >
+      Lean proves raw_S sign structure and engine lemmas (0 sorry in FSOT/Formal).
+      Numeric bands (≤2% target, ≤0.5% extension gate) are empirically checked
+      per domain — not a single unified physical proof of all phenomena.
+
+verification_gates:
+  - script: scripts/audit_parameter_count.py
+    must_pass: true
+  - script: scripts/verify_sota_observable_ledger.py
+    must_pass: true
+  - script: scripts/verify_formula_corpus.py
+    must_pass: true
+  - script: scripts/verify_extension_domains.py
+    must_pass: true
+  - script: scripts/run_cross_proof_verification.py
+    must_pass: true

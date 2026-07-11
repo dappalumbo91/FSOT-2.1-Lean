@@ -9,7 +9,13 @@ artifacts:
 
 verification:
   records_min: 7900
+  unique_observables_min: 1300
   matched_min: 7900
+  unique_matched_min: 1300
   within_target_2pct_min: 6900
+  unique_within_target_2pct_min: 1100
   within_tolerable_5pct_min: 7900
   unmatched_max: 0
+  live_recompute_enabled: true
+  live_recompute_sample_size: 200
+  live_recompute_max_drift_pct: 0.05

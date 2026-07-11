@@ -65,7 +65,13 @@ def build_map() -> dict:
     prec_by_name = {d["neurolab_domain"]: d for d in (precision.get("domains") or [])}
 
     neurolab_domains = []
-    tier_counts = {"A_strong": 0, "B_verified": 0, "C_thin": 0, "D_needs_work": 0, "unverified": 0}
+    neurolab_tier_counts = {
+        "A_strong": 0,
+        "B_verified": 0,
+        "C_thin": 0,
+        "D_needs_work": 0,
+        "unverified": 0,
+    }
     weak_accuracy = []
     thin_empirical = []
     sign_dispersal = []
@@ -76,7 +82,7 @@ def build_map() -> dict:
         med = prec.get("median_error_pct")
         rec = int(prec.get("record_count") or dom.get("empirical_records") or 0)
         tier = _tier(med, rec)
-        tier_counts[tier] = tier_counts.get(tier, 0) + 1
+        neurolab_tier_counts[tier] = neurolab_tier_counts.get(tier, 0) + 1
         entry = {
             "domain": name,
             "lean_domain": dom.get("lean_domain"),
@@ -154,6 +160,18 @@ def build_map() -> dict:
     total_covered = len(neurolab_domains) + len(extensions) + (1 if intelligence_compression else 0)
     total_records = int(coverage.get("total_empirical_records") or 0)
 
+    # Aggregate coverage tiers across NeuroLab + extension + rollup (not NeuroLab-only).
+    tier_counts = {
+        "A_strong": 0,
+        "B_verified": 0,
+        "C_thin": 0,
+        "D_needs_work": 0,
+        "unverified": 0,
+    }
+    for entry in neurolab_domains + extensions + ([intelligence_compression] if intelligence_compression else []):
+        ct = entry.get("coverage_tier") or "unverified"
+        tier_counts[ct] = tier_counts.get(ct, 0) + 1
+
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "summary": {
@@ -163,6 +181,7 @@ def build_map() -> dict:
             "total_empirical_records": total_records,
             "domains_target_band_2pct": precision.get("domains_target_band_2pct"),
             "domains_sign_mismatch": precision.get("domains_sign_mismatch"),
+            "neurolab_tier_distribution": neurolab_tier_counts,
             "tier_distribution": tier_counts,
             "lean_formal_modules": len(list((ROOT / "FSOT" / "Formal").glob("*.lean"))),
         },

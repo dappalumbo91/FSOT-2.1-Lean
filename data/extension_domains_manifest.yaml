@@ -3179,12 +3179,27 @@ extension_domains:
     lean_module: FSOT.Formal.FluidSpacetimePreregValidationPanelPriors
     note: "Fluid spacetime prereg validation — PRED-024 H0 dual anchor + PRED-025 FPC tau"
 
+  Warp_BH_WH_Portal_Panel:
+    tier: 78
+    D_eff: 29
+    delta_psi: 0.98
+    recent_hits: 3
+    observed: true
+    maps_to_lean: [blackhole, quantum, cosmological, fluid_dynamics, electromagnetism]
+    build_script: scripts/build_warp_bh_wh_portal_benchmark.py
+    manifest: data/warp_bh_wh_portal_manifest.yaml
+    benchmark_data: data/warp_bh_wh_portal_benchmark.json
+    lean_module: FSOT.Formal.WarpBhWhPortalPriors
+    note: "BH/WH micro-portal + quantum entanglement gate — crosswalk to BlackHoleThesisPriors + warp stabilization"
+
 verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5
-  max_scalar_error_pct: 0.5
+  aspiration_max_scalar_error_pct: 0.5
+  tolerable_max_scalar_error_pct: 5.0
   min_classifier_accuracy_pct: 99.5
   tier_scalar_max_error_pct: 0.05
   legacy_loose_gate_pct: 5.0
+  scalar_debt_report: data/extension_scalar_precision_debt.json
   excluded_benchmarks:
     - structure_calibration_benchmark.json

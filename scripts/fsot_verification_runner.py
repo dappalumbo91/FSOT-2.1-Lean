@@ -658,6 +658,7 @@ def main() -> int:
             ("verify_soul_sibling.py", "Soul Sibling verification failed"),
             ("verify_lean_proofs_bridge.py", "Lean Proofs bridge verification failed"),
             ("verify_formula_corpus.py", "Formula corpus strict-empirical verification failed"),
+            ("verify_sota_observable_ledger.py", "SOTA observable ledger verification failed"),
             ("verify_cellular_lab.py", "Cellular lab verification failed"),
             ("verify_blackhole_thesis.py", "BlackHole thesis verification failed"),
             ("verify_cosmology_bubble_bleed.py", "Cosmology bubble bleed verification failed"),
@@ -1138,9 +1139,11 @@ def main() -> int:
     print("  All checks passed.")
 
     for meta_script in (
+        "audit_parameter_count.py",
         "audit_portable_vendor_coverage.py",
         "build_fsot_verification_progress.py",
         "build_scientific_domain_expansion_map.py",
+        "build_sota_observable_ledger.py",
         "build_fsot_verified_scope.py",
     ):
         script = ROOT / "scripts" / meta_script
