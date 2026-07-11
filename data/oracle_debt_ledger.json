@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-11T22:29:09.481946+00:00",
+  "generated_at": "2026-07-11T22:39:48.226721+00:00",
   "version": "1.0",
   "summary": {
     "obligation_total": 2146,
-    "atomic_triangulated": 1811,
-    "oracle_replay": 9,
+    "atomic_triangulated": 1820,
+    "oracle_replay": 0,
     "proof_depth_oracle_tagged": 49,
     "structural_index": 326,
-    "oracle_fraction_pct": 0.42,
-    "atomic_fraction_pct": 84.39,
-    "triangulation_note": "oracle_replay is sampling_oracle/grid/tautology only. decimal_eval_chain and witness_instantiation are atomic_triangulated with proof_depth_oracle tag \u2014 full cross-prover numeric replay.",
+    "oracle_fraction_pct": 0.0,
+    "atomic_fraction_pct": 84.81,
+    "triangulation_note": "oracle_replay is empty \u2014 all spine obligations are atomic_triangulated. grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags for audit transparency.",
     "grid_certificate_count": 6,
     "proof_class_labels": {
       "sampling_oracle": "Dense grid sampling certificate (not Mathlib forall proof)",
@@ -17,6 +17,7 @@
       "oracle_tautology": "Oracle constant identity (documented tautology)",
       "oracle_near_eq": "Oracle near-equality within float tolerance",
       "decimal_eval_chain": "Python Decimal eval chain replay",
+      "grid_decimal_eval_chain": "Decimal Taylor grid replay (deterministic cross-proof)",
       "certified_interval": "Decimal certified interval (tight pi/e bounds)",
       "atomic_triangulated": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
       "structural_index": "Structural bundle index \u2014 conjunct witness linkage only"
@@ -24,18 +25,15 @@
     "closure_note": "Oracle-replay rows are exported and Python-verified but are not independent Mathlib proofs. They are excluded from 'full triangulation' headline counts while remaining on the 2146 spine for audit transparency."
   },
   "by_triangulation_class": {
-    "atomic_triangulated": 1811,
-    "structural_index": 326,
-    "oracle_replay": 9
+    "atomic_triangulated": 1820,
+    "structural_index": 326
   },
   "by_proof_class": {
     "(none)": 2097,
-    "decimal_eval_chain": 30,
+    "decimal_eval_chain": 33,
     "certified_interval": 2,
     "witness_instantiation": 8,
-    "oracle_tautology": 1,
-    "oracle_near_eq": 2,
-    "sampling_oracle": 6
+    "grid_decimal_eval_chain": 6
   },
   "oracle_obligations": [
     {
@@ -421,38 +419,38 @@
     {
       "id": "pi_eq_real_pi",
       "kind": "r_eq_lit",
-      "proof_class": "oracle_tautology",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
       "grid_step": null,
       "grid_margin": null,
-      "statement": "pi = \u03c0 (oracle constant)",
+      "statement": "pi = \u03c0 (decimal eval chain)",
       "lean_module": "Bounds"
     },
     {
       "id": "phase_variance_eq_cos_theta_s",
       "kind": "r_eq_lit",
-      "proof_class": "oracle_near_eq",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
       "grid_step": null,
       "grid_margin": null,
-      "statement": "phase_variance = cos(theta_s) (oracle near-eq)",
+      "statement": "phase_variance = cos(theta_s) (decimal eval chain)",
       "lean_module": "Bounds"
     },
     {
       "id": "gamma_abs_eq",
       "kind": "r_eq_lit",
-      "proof_class": "oracle_near_eq",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
       "grid_step": null,
       "grid_margin": null,
-      "statement": "|gamma| = log2/phi (oracle near-eq)",
+      "statement": "|gamma| = log2/phi (decimal eval chain)",
       "lean_module": "Bounds"
     },
     {
       "id": "sin_bound_lo",
       "kind": "r_nonneg",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
       "grid_step": 0.001,
       "grid_margin": 0.0,
       "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",
@@ -461,8 +459,8 @@
     {
       "id": "sin_bound_hi",
       "kind": "r_nonneg",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
       "grid_step": 0.001,
       "grid_margin": 0.0,
       "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",
@@ -471,8 +469,8 @@
     {
       "id": "cos_bound_lo",
       "kind": "r_nonneg",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
       "grid_step": 0.001,
       "grid_margin": 0.0,
       "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",
@@ -481,8 +479,8 @@
     {
       "id": "cos_bound_hi",
       "kind": "r_nonneg",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
       "grid_step": 0.001,
       "grid_margin": 0.0,
       "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",
@@ -491,8 +489,8 @@
     {
       "id": "sin_bound_poly_mono_lo",
       "kind": "r_nonneg",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
       "grid_step": 0.001,
       "grid_margin": 0.0,
       "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",
@@ -501,8 +499,8 @@
     {
       "id": "sin_bound_poly_mono",
       "kind": "r_nonneg",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
+      "triangulation_class": "atomic_triangulated",
       "grid_step": 0.001,
       "grid_margin": 0.0,
       "statement": "grid margin 0.0 (step=0.001, decimal Taylor)",

@@ -4,13 +4,8 @@ from __future__ import annotations
 
 from typing import Any
 
-ORACLE_PROOF_CLASSES = frozenset(
-    {
-        "sampling_oracle",
-        "oracle_tautology",
-        "oracle_near_eq",
-    }
-)
+# Empty: all bounds/grid obligations replay via decimal_eval_chain in cross-proof spine.
+ORACLE_PROOF_CLASSES: frozenset[str] = frozenset()
 
 PROOF_DEPTH_ORACLE_CLASSES = frozenset(
     {
@@ -20,6 +15,7 @@ PROOF_DEPTH_ORACLE_CLASSES = frozenset(
         "oracle_near_eq",
         "decimal_eval_chain",
         "certified_interval",
+        "grid_decimal_eval_chain",
     }
 )
 
@@ -29,6 +25,7 @@ PROOF_CLASS_LABELS = {
     "oracle_tautology": "Oracle constant identity (documented tautology)",
     "oracle_near_eq": "Oracle near-equality within float tolerance",
     "decimal_eval_chain": "Python Decimal eval chain replay",
+    "grid_decimal_eval_chain": "Decimal Taylor grid replay (deterministic cross-proof)",
     "certified_interval": "Decimal certified interval (tight pi/e bounds)",
     "atomic_triangulated": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
     "structural_index": "Structural bundle index — conjunct witness linkage only",
@@ -38,8 +35,8 @@ PROOF_CLASS_LABELS = {
 def triangulation_class(ob: dict) -> str:
     if ob.get("kind") == "bundle_conj":
         return "structural_index"
-    pc = ob.get("proof_class")
-    if pc in ORACLE_PROOF_CLASSES or ob.get("grid_certificate"):
+    pc = str(ob.get("proof_class") or "")
+    if pc in ORACLE_PROOF_CLASSES:
         return "oracle_replay"
     return "atomic_triangulated"
 

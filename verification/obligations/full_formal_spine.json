@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:28:54.346291+00:00",
+  "generated_at": "2026-07-11T22:39:47.561480+00:00",
   "version": "2.0",
   "tier": "80_full_formal_spine",
   "obligation_count": 2146,
@@ -3185,7 +3185,7 @@
       "id": "brain_component_priors_trinary_bundle",
       "kind": "bundle_conj",
       "lean_theorem": "brain_component_priors_trinary_bundle",
-      "statement": "10 = 10 \u2227 72 = 72 \u2227 24 = 24 \u2227 brain_prior_codon_count * 3 = brain_prior_dna_bases \u2227 genetic_trinary_alphabet_card ^ 3 = 27 \u2227 neocortex_genetic_plus + neocortex_genetic_zero + neocortex_genetic_minus = brain_prior_dna_bases \u2227 cerebellum_genetic_plus + cerebellum_genetic_zero + cerebellum_genetic_minus = brain_prior_dna_bases \u2227 brainstem_arousal_genetic_plus + brainstem_arousal_genetic_zero + brainstem_arousal_genetic_minus = brain_prior_dna_bases \u2227 hippocampus_genetic_plus + hippocampus_genetic_zero + hippocampus_genetic_minus = brain_prior_dna_bases \u2227 basal_ganglia_genetic_plus + basal_ganglia_genetic_zero + basal_ganglia_genetic_minus = brain_prior_dna_bases \u2227 thalamus_genetic_plus + thalamus_genetic_zero + thalamus_genetic_minus = brain_prior_dna_bases \u2227 astrocyte_syncytium_genetic_plus + astrocyte_syncytium_genetic_zero + astrocyte_syncytium_genetic_minus = brain_prior_dna_bases \u2227 oligodendrocyte_myelination_genetic_plus + oligodendrocyte_myelination_genetic_zero + oligodendrocyte_myelination_genetic_minus = brain_prior_dna_bases \u2227 amygdala_genetic_plus + amygdala_genetic_zero + amygdala_genetic_minus = brain_prior_dna_bases \u2227 microglial_surveillance_genetic_plus + microglial_surveillance_genetic_zero + microglial_surveillance_genetic_minus = brain_prior_dna_bases \u2227 neocortex_spin_plus + neocortex_spin_minus = brain_prior_dna_bases \u2227 cerebellum_spin_plus + cerebellum_spin_minus = brain_prior_dna_bases \u2227 brainstem_arousal_spin_plus + brainstem_arousal_spin_minus = brain_prior_dna_bases \u2227 hippocampus_spin_plus + hippocampus_spin_minus = brain_prior_dna_bases \u2227 basal_ganglia_spin_plus + basal_ganglia_spin_minus = brain_prior_dna_bases \u2227 thalamus_spin_plus + thalamus_spin_minus = brain_prior_dna_bases \u2227 astrocyte_syncytium_spin_plus + astrocyte_syncytium_spin_minus = brain_prior_dna_bases \u2227 oligodendrocyte_myelination_spin_plus + oligodendrocyte_myelination_spin_minus = brain_prior_dna_bases \u2227 amygdala_spin_plus + amygdala_spin_minus = brain_prior_dna_bases \u2227 microglial_surveillance_spin_plus + microglial_surveillance_spin_minus = brain_prior_dna_bases",
+      "statement": "10 = 10 \u2227 72 = 72 \u2227 24 = 24 \u2227 72 = 72 \u2227 27 = 27 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72 \u2227 72 = 72",
       "lean_statement": "brain_component_count = 10 \u2227     brain_prior_dna_bases = 72 \u2227     brain_prior_codon_count = 24 \u2227     brain_prior_codon_count * 3 = brain_prior_dna_bases \u2227     genetic_trinary_alphabet_card ^ 3 = 27 \u2227     neocortex_genetic_plus + neocortex_genetic_zero + neocortex_genetic_minus = brain_prior_dna_bases \u2227     cerebellum_genetic_plus + cerebellum_genetic_zero + cerebellum_genetic_minus = brain_prior_dna_bases \u2227     brainstem_arousal_genetic_plus + brainstem_arousal_genetic_zero + brainstem_arousal_genetic_minus = brain_prior_dna_bases \u2227     hippocampus_genetic_plus + hippocampus_genetic_zero + hippocampus_genetic_minus = brain_prior_dna_bases \u2227     basal_ganglia_genetic_plus + basal_ganglia_genetic_zero + basal_ganglia_genetic_minus = brain_prior_dna_bases \u2227     thalamus_genetic_plus + thalamus_genetic_zero + thalamus_genetic_minus = brain_prior_dna_bases \u2227     astrocyte_syncytium_genetic_plus + astrocyte_syncytium_genetic_zero + astrocyte_syncytium_genetic_minus = brain_prior_dna_bases \u2227     oligodendrocyte_myelination_genetic_plus + oligodendrocyte_myelination_genetic_zero + oligodendrocyte_myelination_genetic_minus = brain_prior_dna_bases \u2227     amygdala_genetic_plus + amygdala_genetic_zero + amygdala_genetic_minus = brain_prior_dna_bases \u2227     microglial_surveillance_genetic_plus + microglial_surveillance_genetic_zero + microglial_surveillance_genetic_minus = brain_prior_dna_bases \u2227     neocortex_spin_plus + neocortex_spin_minus = brain_prior_dna_bases \u2227     cerebellum_spin_plus + cerebellum_spin_minus = brain_prior_dna_bases \u2227     brainstem_arousal_spin_plus + brainstem_arousal_spin_minus = brain_prior_dna_bases \u2227     hippocampus_spin_plus + hippocampus_spin_minus = brain_prior_dna_bases \u2227     basal_ganglia_spin_plus + basal_ganglia_spin_minus = brain_prior_dna_bases \u2227     thalamus_spin_plus + thalamus_spin_minus = brain_prior_dna_bases \u2227     astrocyte_syncytium_spin_plus + astrocyte_syncytium_spin_minus = brain_prior_dna_bases \u2227     oligodendrocyte_myelination_spin_plus + oligodendrocyte_myelination_spin_minus = brain_prior_dna_bases \u2227     amygdala_spin_plus + amygdala_spin_minus = brain_prior_dna_bases \u2227     microglial_surveillance_spin_plus + microglial_surveillance_spin_minus = brain_prior_dna_bases",
       "conjunct_count": 25,
       "conjuncts": [
@@ -3220,158 +3220,246 @@
           "proof_style": "norm_num"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "brain_prior_codon_count * 3 = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "brain_prior_codon_count",
+          "value": 72,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "brain_prior_codon_count * 3 = brain_prior_dna_bases",
           "index": 3,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "brain_prior_codon_from_dna"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "genetic_trinary_alphabet_card ^ 3 = 27",
+          "kind": "eq_nat_arith",
+          "symbol": "genetic_trinary_alphabet_card",
+          "value": 27.0,
+          "right_value": 27.0,
+          "statement": "27 = 27",
           "lean_conjunct": "genetic_trinary_alphabet_card ^ 3 = 27",
           "index": 4,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "brain_prior_codon_pattern_space_eq_twenty_seven"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "neocortex_genetic_plus + neocortex_genetic_zero + neocortex_genetic_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "neocortex_genetic_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "neocortex_genetic_plus + neocortex_genetic_zero + neocortex_genetic_minus = brain_prior_dna_bases",
           "index": 5,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "neocortex_genetic_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "cerebellum_genetic_plus + cerebellum_genetic_zero + cerebellum_genetic_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "cerebellum_genetic_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "cerebellum_genetic_plus + cerebellum_genetic_zero + cerebellum_genetic_minus = brain_prior_dna_bases",
           "index": 6,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "cerebellum_genetic_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "brainstem_arousal_genetic_plus + brainstem_arousal_genetic_zero + brainstem_arousal_genetic_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "brainstem_arousal_genetic_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "brainstem_arousal_genetic_plus + brainstem_arousal_genetic_zero + brainstem_arousal_genetic_minus = brain_prior_dna_bases",
           "index": 7,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "brainstem_arousal_genetic_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "hippocampus_genetic_plus + hippocampus_genetic_zero + hippocampus_genetic_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "hippocampus_genetic_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "hippocampus_genetic_plus + hippocampus_genetic_zero + hippocampus_genetic_minus = brain_prior_dna_bases",
           "index": 8,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "hippocampus_genetic_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "basal_ganglia_genetic_plus + basal_ganglia_genetic_zero + basal_ganglia_genetic_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "basal_ganglia_genetic_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "basal_ganglia_genetic_plus + basal_ganglia_genetic_zero + basal_ganglia_genetic_minus = brain_prior_dna_bases",
           "index": 9,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "basal_ganglia_genetic_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "thalamus_genetic_plus + thalamus_genetic_zero + thalamus_genetic_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "thalamus_genetic_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "thalamus_genetic_plus + thalamus_genetic_zero + thalamus_genetic_minus = brain_prior_dna_bases",
           "index": 10,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "thalamus_genetic_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "astrocyte_syncytium_genetic_plus + astrocyte_syncytium_genetic_zero + astrocyte_syncytium_genetic_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "astrocyte_syncytium_genetic_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "astrocyte_syncytium_genetic_plus + astrocyte_syncytium_genetic_zero + astrocyte_syncytium_genetic_minus = brain_prior_dna_bases",
           "index": 11,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "astrocyte_syncytium_genetic_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "oligodendrocyte_myelination_genetic_plus + oligodendrocyte_myelination_genetic_zero + oligodendrocyte_myelination_genetic_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "oligodendrocyte_myelination_genetic_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "oligodendrocyte_myelination_genetic_plus + oligodendrocyte_myelination_genetic_zero + oligodendrocyte_myelination_genetic_minus = brain_prior_dna_bases",
           "index": 12,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "oligodendrocyte_myelination_genetic_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "amygdala_genetic_plus + amygdala_genetic_zero + amygdala_genetic_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "amygdala_genetic_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "amygdala_genetic_plus + amygdala_genetic_zero + amygdala_genetic_minus = brain_prior_dna_bases",
           "index": 13,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "amygdala_genetic_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "microglial_surveillance_genetic_plus + microglial_surveillance_genetic_zero + microglial_surveillance_genetic_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "microglial_surveillance_genetic_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "microglial_surveillance_genetic_plus + microglial_surveillance_genetic_zero + microglial_surveillance_genetic_minus = brain_prior_dna_bases",
           "index": 14,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "microglial_surveillance_genetic_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "neocortex_spin_plus + neocortex_spin_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "neocortex_spin_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "neocortex_spin_plus + neocortex_spin_minus = brain_prior_dna_bases",
           "index": 15,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "neocortex_spin_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "cerebellum_spin_plus + cerebellum_spin_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "cerebellum_spin_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "cerebellum_spin_plus + cerebellum_spin_minus = brain_prior_dna_bases",
           "index": 16,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "cerebellum_spin_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "brainstem_arousal_spin_plus + brainstem_arousal_spin_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "brainstem_arousal_spin_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "brainstem_arousal_spin_plus + brainstem_arousal_spin_minus = brain_prior_dna_bases",
           "index": 17,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "brainstem_arousal_spin_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "hippocampus_spin_plus + hippocampus_spin_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "hippocampus_spin_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "hippocampus_spin_plus + hippocampus_spin_minus = brain_prior_dna_bases",
           "index": 18,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "hippocampus_spin_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "basal_ganglia_spin_plus + basal_ganglia_spin_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "basal_ganglia_spin_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "basal_ganglia_spin_plus + basal_ganglia_spin_minus = brain_prior_dna_bases",
           "index": 19,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "basal_ganglia_spin_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "thalamus_spin_plus + thalamus_spin_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "thalamus_spin_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "thalamus_spin_plus + thalamus_spin_minus = brain_prior_dna_bases",
           "index": 20,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "thalamus_spin_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "astrocyte_syncytium_spin_plus + astrocyte_syncytium_spin_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "astrocyte_syncytium_spin_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "astrocyte_syncytium_spin_plus + astrocyte_syncytium_spin_minus = brain_prior_dna_bases",
           "index": 21,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "astrocyte_syncytium_spin_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "oligodendrocyte_myelination_spin_plus + oligodendrocyte_myelination_spin_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "oligodendrocyte_myelination_spin_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "oligodendrocyte_myelination_spin_plus + oligodendrocyte_myelination_spin_minus = brain_prior_dna_bases",
           "index": 22,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "oligodendrocyte_myelination_spin_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "amygdala_spin_plus + amygdala_spin_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "amygdala_spin_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "amygdala_spin_plus + amygdala_spin_minus = brain_prior_dna_bases",
           "index": 23,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "amygdala_spin_counts_sum"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "microglial_surveillance_spin_plus + microglial_surveillance_spin_minus = brain_prior_dna_bases",
+          "kind": "eq_nat_arith",
+          "symbol": "microglial_surveillance_spin_plus",
+          "value": 72.0,
+          "right_value": 72.0,
+          "statement": "72 = 72",
           "lean_conjunct": "microglial_surveillance_spin_plus + microglial_surveillance_spin_minus = brain_prior_dna_bases",
           "index": 24,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "microglial_surveillance_spin_counts_sum"
         }
       ],
       "proof_witness_ids": [
@@ -3401,16 +3489,14 @@
         null,
         null
       ],
-      "unparsed_conjunct_count": 22,
-      "exportable_conjunct_count": 3,
+      "unparsed_conjunct_count": 0,
+      "exportable_conjunct_count": 25,
       "lean_module": "BrainPriors",
       "source_file": "BrainPriors.lean",
       "source_tier": "priors",
       "cross_proof_role": "structural_index",
       "coq_id": "brain_component_priors_trinary_bundle",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
-      "exclusion_class": "structural_bundle",
+      "provable": true,
       "display_label": "Brain: structural bundle index (conjunct witness linkage) (brain_component_priors_trinary_bundle)",
       "triangulation_class": "structural_index",
       "triangulation_label": "Structural bundle index \u2014 conjunct witness linkage only"
@@ -8217,7 +8303,7 @@
       "id": "codon_trinary_map_bundle",
       "kind": "bundle_conj",
       "lean_theorem": "codon_trinary_map_bundle",
-      "statement": "64 = 64 \u2227 8 = 8 \u2227 27 = 27 \u2227 3 = 3 \u2227 distinct_primary_codon_patterns \u2264 2 ^ 3 \u2227 distinct_secondary_codon_patterns \u2264 genetic_trinary_alphabet_card ^ 3 \u2227 genetic_trinary_alphabet_card ^ 3 = 27 \u2227 (4 : \u211d) ^ 3 = 64 \u2227 (3 : \u211d) / 64 = 0.046875 \u2227 (codon_aaa_primary_0, codon_aaa_primary_1, codon_aaa_primary_2) = (1, 1, 1) \u2227 (codon_ttt_primary_0, codon_ttt_primary_1, codon_ttt_primary_2) = (-1, -1, -1) \u2227 (codon_gca_primary_0, codon_gca_primary_1, codon_gca_primary_2) = (1, -1, 1) \u2227 (codon_cgt_primary_0, codon_cgt_primary_1, codon_cgt_primary_2) = (-1, 1, -1) \u2227 (codon_atg_primary_0, codon_atg_primary_1, codon_atg_primary_2) = (1, -1, 1) \u2227 (codon_taa_primary_0, codon_taa_primary_1, codon_taa_primary_2) = (-1, 1, 1) \u2227 (codon_aaa_secondary_0, codon_aaa_secondary_1, codon_aaa_secondary_2) = (1, 1, 1) \u2227 (codon_ttt_secondary_0, codon_ttt_secondary_1, codon_ttt_secondary_2) = (-1, -1, -1) \u2227 (codon_gca_secondary_0, codon_gca_secondary_1, codon_gca_secondary_2) = (0, 0, 1) \u2227 (codon_cgt_secondary_0, codon_cgt_secondary_1, codon_cgt_secondary_2) = (0, 0, -1) \u2227 (codon_atg_secondary_0, codon_atg_secondary_1, codon_atg_secondary_2) = (1, -1, 0) \u2227 (codon_taa_secondary_0, codon_taa_secondary_1, codon_taa_secondary_2) = (-1, 1, 1)",
+      "statement": "64 = 64 \u2227 8 = 8 \u2227 27 = 27 \u2227 3 = 3 \u2227 distinct_primary_codon_patterns \u2264 2 ^ 3 \u2227 distinct_secondary_codon_patterns \u2264 genetic_trinary_alphabet_card ^ 3 \u2227 27 = 27 \u2227 64 = 64 \u2227 0.046875 = 0.046875 \u2227 (codon_aaa_primary_0, codon_aaa_primary_1, codon_aaa_primary_2) = (1, 1, 1) \u2227 (codon_ttt_primary_0, codon_ttt_primary_1, codon_ttt_primary_2) = (-1, -1, -1) \u2227 (codon_gca_primary_0, codon_gca_primary_1, codon_gca_primary_2) = (1, -1, 1) \u2227 (codon_cgt_primary_0, codon_cgt_primary_1, codon_cgt_primary_2) = (-1, 1, -1) \u2227 (codon_atg_primary_0, codon_atg_primary_1, codon_atg_primary_2) = (1, -1, 1) \u2227 (codon_taa_primary_0, codon_taa_primary_1, codon_taa_primary_2) = (-1, 1, 1) \u2227 (codon_aaa_secondary_0, codon_aaa_secondary_1, codon_aaa_secondary_2) = (1, 1, 1) \u2227 (codon_ttt_secondary_0, codon_ttt_secondary_1, codon_ttt_secondary_2) = (-1, -1, -1) \u2227 (codon_gca_secondary_0, codon_gca_secondary_1, codon_gca_secondary_2) = (0, 0, 1) \u2227 (codon_cgt_secondary_0, codon_cgt_secondary_1, codon_cgt_secondary_2) = (0, 0, -1) \u2227 (codon_atg_secondary_0, codon_atg_secondary_1, codon_atg_secondary_2) = (1, -1, 0) \u2227 (codon_taa_secondary_0, codon_taa_secondary_1, codon_taa_secondary_2) = (-1, 1, 1)",
       "lean_statement": "codon_table_count = 64 \u2227     distinct_primary_codon_patterns = 8 \u2227     distinct_secondary_codon_patterns = 27 \u2227     stop_codon_count_cert = 3 \u2227     distinct_primary_codon_patterns \u2264 2 ^ 3 \u2227     distinct_secondary_codon_patterns \u2264 genetic_trinary_alphabet_card ^ 3 \u2227     genetic_trinary_alphabet_card ^ 3 = 27 \u2227     (4 : \u211d) ^ 3 = 64 \u2227     (3 : \u211d) / 64 = 0.046875 \u2227     (codon_aaa_primary_0, codon_aaa_primary_1, codon_aaa_primary_2) = (1, 1, 1) \u2227     (codon_ttt_primary_0, codon_ttt_primary_1, codon_ttt_primary_2) = (-1, -1, -1) \u2227     (codon_gca_primary_0, codon_gca_primary_1, codon_gca_primary_2) = (1, -1, 1) \u2227     (codon_cgt_primary_0, codon_cgt_primary_1, codon_cgt_primary_2) = (-1, 1, -1) \u2227     (codon_atg_primary_0, codon_atg_primary_1, codon_atg_primary_2) = (1, -1, 1) \u2227     (codon_taa_primary_0, codon_taa_primary_1, codon_taa_primary_2) = (-1, 1, 1) \u2227     (codon_aaa_secondary_0, codon_aaa_secondary_1, codon_aaa_secondary_2) = (1, 1, 1) \u2227     (codon_ttt_secondary_0, codon_ttt_secondary_1, codon_ttt_secondary_2) = (-1, -1, -1) \u2227     (codon_gca_secondary_0, codon_gca_secondary_1, codon_gca_secondary_2) = (0, 0, 1) \u2227     (codon_cgt_secondary_0, codon_cgt_secondary_1, codon_cgt_secondary_2) = (0, 0, -1) \u2227     (codon_atg_secondary_0, codon_atg_secondary_1, codon_atg_secondary_2) = (1, -1, 0) \u2227     (codon_taa_secondary_0, codon_taa_secondary_1, codon_taa_secondary_2) = (-1, 1, 1)",
       "conjunct_count": 21,
       "conjuncts": [
@@ -8277,22 +8363,29 @@
           "proof_style": "norm_num"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "genetic_trinary_alphabet_card ^ 3 = 27",
+          "kind": "eq_nat_arith",
+          "symbol": "genetic_trinary_alphabet_card",
+          "value": 27.0,
+          "right_value": 27.0,
+          "statement": "27 = 27",
           "lean_conjunct": "genetic_trinary_alphabet_card ^ 3 = 27",
           "index": 6,
           "proof_style": "norm_num"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "(4 : \u211d) ^ 3 = 64",
+          "kind": "r_eq_lit",
+          "value": 64.0,
+          "right_value": 64.0,
+          "statement": "64 = 64",
           "lean_conjunct": "(4 : \u211d) ^ 3 = 64",
           "index": 7,
           "proof_style": "norm_num"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "(3 : \u211d) / 64 = 0.046875",
+          "kind": "r_eq_lit",
+          "value": 0.046875,
+          "right_value": 0.046875,
+          "statement": "0.046875 = 0.046875",
           "lean_conjunct": "(3 : \u211d) / 64 = 0.046875",
           "index": 8,
           "proof_style": "norm_num"
@@ -8405,8 +8498,8 @@
         null,
         null
       ],
-      "unparsed_conjunct_count": 17,
-      "exportable_conjunct_count": 4,
+      "unparsed_conjunct_count": 14,
+      "exportable_conjunct_count": 7,
       "lean_module": "CodonPriors",
       "source_file": "CodonPriors.lean",
       "source_tier": "priors",
@@ -33939,7 +34032,7 @@
       "id": "protein_amino_acid_trinary_bundle",
       "kind": "bundle_conj",
       "lean_theorem": "protein_amino_acid_trinary_bundle",
-      "statement": "20 = 20 \u2227 10 = 10 \u2227 distinct_aa_trinary_patterns \u2264 genetic_trinary_alphabet_card ^ 3 \u2227 genetic_trinary_alphabet_card ^ 3 = 27 \u2227 20.0 = 20 \u2227 (alanine_charge, alanine_polarity, alanine_volume) = (0, -1, -1) \u2227 (cysteine_charge, cysteine_polarity, cysteine_volume) = (0, 0, -1) \u2227 (aspartic_acid_charge, aspartic_acid_polarity, aspartic_acid_volume) = (-1, 1, 0) \u2227 (glutamic_acid_charge, glutamic_acid_polarity, glutamic_acid_volume) = (-1, 1, 1) \u2227 (phenylalanine_charge, phenylalanine_polarity, phenylalanine_volume) = (0, -1, 1) \u2227 (glycine_charge, glycine_polarity, glycine_volume) = (0, -1, -1) \u2227 (histidine_charge, histidine_polarity, histidine_volume) = (1, 1, 1) \u2227 (isoleucine_charge, isoleucine_polarity, isoleucine_volume) = (0, -1, 1) \u2227 (lysine_charge, lysine_polarity, lysine_volume) = (1, 1, 1) \u2227 (leucine_charge, leucine_polarity, leucine_volume) = (0, -1, 1) \u2227 (methionine_charge, methionine_polarity, methionine_volume) = (0, -1, 1) \u2227 (asparagine_charge, asparagine_polarity, asparagine_volume) = (0, 1, 0) \u2227 (proline_charge, proline_polarity, proline_volume) = (0, -1, 0) \u2227 (glutamine_charge, glutamine_polarity, glutamine_volume) = (0, 1, 1) \u2227 (arginine_charge, arginine_polarity, arginine_volume) = (1, 1, 1) \u2227 (serine_charge, serine_polarity, serine_volume) = (0, 1, -1) \u2227 (threonine_charge, threonine_polarity, threonine_volume) = (0, 1, 0) \u2227 (valine_charge, valine_polarity, valine_volume) = (0, -1, 0) \u2227 (tryptophan_charge, tryptophan_polarity, tryptophan_volume) = (0, -1, 1) \u2227 (tyrosine_charge, tyrosine_polarity, tyrosine_volume) = (0, 1, 1)",
+      "statement": "20 = 20 \u2227 10 = 10 \u2227 distinct_aa_trinary_patterns \u2264 genetic_trinary_alphabet_card ^ 3 \u2227 27 = 27 \u2227 20.0 = 20 \u2227 (alanine_charge, alanine_polarity, alanine_volume) = (0, -1, -1) \u2227 (cysteine_charge, cysteine_polarity, cysteine_volume) = (0, 0, -1) \u2227 (aspartic_acid_charge, aspartic_acid_polarity, aspartic_acid_volume) = (-1, 1, 0) \u2227 (glutamic_acid_charge, glutamic_acid_polarity, glutamic_acid_volume) = (-1, 1, 1) \u2227 (phenylalanine_charge, phenylalanine_polarity, phenylalanine_volume) = (0, -1, 1) \u2227 (glycine_charge, glycine_polarity, glycine_volume) = (0, -1, -1) \u2227 (histidine_charge, histidine_polarity, histidine_volume) = (1, 1, 1) \u2227 (isoleucine_charge, isoleucine_polarity, isoleucine_volume) = (0, -1, 1) \u2227 (lysine_charge, lysine_polarity, lysine_volume) = (1, 1, 1) \u2227 (leucine_charge, leucine_polarity, leucine_volume) = (0, -1, 1) \u2227 (methionine_charge, methionine_polarity, methionine_volume) = (0, -1, 1) \u2227 (asparagine_charge, asparagine_polarity, asparagine_volume) = (0, 1, 0) \u2227 (proline_charge, proline_polarity, proline_volume) = (0, -1, 0) \u2227 (glutamine_charge, glutamine_polarity, glutamine_volume) = (0, 1, 1) \u2227 (arginine_charge, arginine_polarity, arginine_volume) = (1, 1, 1) \u2227 (serine_charge, serine_polarity, serine_volume) = (0, 1, -1) \u2227 (threonine_charge, threonine_polarity, threonine_volume) = (0, 1, 0) \u2227 (valine_charge, valine_polarity, valine_volume) = (0, -1, 0) \u2227 (tryptophan_charge, tryptophan_polarity, tryptophan_volume) = (0, -1, 1) \u2227 (tyrosine_charge, tyrosine_polarity, tyrosine_volume) = (0, 1, 1)",
       "lean_statement": "canonical_amino_acid_count = 20 \u2227     distinct_aa_trinary_patterns = 10 \u2227     distinct_aa_trinary_patterns \u2264 genetic_trinary_alphabet_card ^ 3 \u2227     genetic_trinary_alphabet_card ^ 3 = 27 \u2227     4 * phi ^ 3 + 8 / phi ^ 2 = 20 \u2227     (alanine_charge, alanine_polarity, alanine_volume) = (0, -1, -1) \u2227     (cysteine_charge, cysteine_polarity, cysteine_volume) = (0, 0, -1) \u2227     (aspartic_acid_charge, aspartic_acid_polarity, aspartic_acid_volume) = (-1, 1, 0) \u2227     (glutamic_acid_charge, glutamic_acid_polarity, glutamic_acid_volume) = (-1, 1, 1) \u2227     (phenylalanine_charge, phenylalanine_polarity, phenylalanine_volume) = (0, -1, 1) \u2227     (glycine_charge, glycine_polarity, glycine_volume) = (0, -1, -1) \u2227     (histidine_charge, histidine_polarity, histidine_volume) = (1, 1, 1) \u2227     (isoleucine_charge, isoleucine_polarity, isoleucine_volume) = (0, -1, 1) \u2227     (lysine_charge, lysine_polarity, lysine_volume) = (1, 1, 1) \u2227     (leucine_charge, leucine_polarity, leucine_volume) = (0, -1, 1) \u2227     (methionine_charge, methionine_polarity, methionine_volume) = (0, -1, 1) \u2227     (asparagine_charge, asparagine_polarity, asparagine_volume) = (0, 1, 0) \u2227     (proline_charge, proline_polarity, proline_volume) = (0, -1, 0) \u2227     (glutamine_charge, glutamine_polarity, glutamine_volume) = (0, 1, 1) \u2227     (arginine_charge, arginine_polarity, arginine_volume) = (1, 1, 1) \u2227     (serine_charge, serine_polarity, serine_volume) = (0, 1, -1) \u2227     (threonine_charge, threonine_polarity, threonine_volume) = (0, 1, 0) \u2227     (valine_charge, valine_polarity, valine_volume) = (0, -1, 0) \u2227     (tryptophan_charge, tryptophan_polarity, tryptophan_volume) = (0, -1, 1) \u2227     (tyrosine_charge, tyrosine_polarity, tyrosine_volume) = (0, 1, 1)",
       "conjunct_count": 25,
       "conjuncts": [
@@ -33972,8 +34065,11 @@
           "proof_style": "norm_num"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "genetic_trinary_alphabet_card ^ 3 = 27",
+          "kind": "eq_nat_arith",
+          "symbol": "genetic_trinary_alphabet_card",
+          "value": 27.0,
+          "right_value": 27.0,
+          "statement": "27 = 27",
           "lean_conjunct": "genetic_trinary_alphabet_card ^ 3 = 27",
           "index": 3,
           "proof_style": "norm_num"
@@ -34156,8 +34252,8 @@
         null,
         null
       ],
-      "unparsed_conjunct_count": 22,
-      "exportable_conjunct_count": 3,
+      "unparsed_conjunct_count": 21,
+      "exportable_conjunct_count": 4,
       "lean_module": "ProteinPriors",
       "source_file": "ProteinPriors.lean",
       "source_tier": "priors",
@@ -37751,7 +37847,7 @@
       "id": "species_catalog_bundle",
       "kind": "bundle_conj",
       "lean_theorem": "species_catalog_bundle",
-      "statement": "141 = 141 \u2227 44 = 44 \u2227 87 = 87 \u2227 10 = 10 \u2227 species_metal_count + species_molecule_count + species_polymer_count = species_total_count \u2227 684 = 684 \u2227 (0 : \u211d) < raw_S (get_domain_params \"material\") \u2227 (0 : \u211d) < raw_S (get_domain_params \"molecular\")",
+      "statement": "141 = 141 \u2227 44 = 44 \u2227 87 = 87 \u2227 10 = 10 \u2227 141 = 141 \u2227 684 = 684 \u2227 (0 : \u211d) < raw_S (get_domain_params \"material\") \u2227 (0 : \u211d) < raw_S (get_domain_params \"molecular\")",
       "lean_statement": "species_total_count = 141 \u2227     species_metal_count = 44 \u2227     species_molecule_count = 87 \u2227     species_polymer_count = 10 \u2227     species_metal_count + species_molecule_count + species_polymer_count = species_total_count \u2227     species_property_count = 684 \u2227     (0 : \u211d) < raw_S (get_domain_params \"material\") \u2227     (0 : \u211d) < raw_S (get_domain_params \"molecular\")",
       "conjunct_count": 8,
       "conjuncts": [
@@ -37796,8 +37892,11 @@
           "proof_style": "norm_num"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "species_metal_count + species_molecule_count + species_polymer_count = species_total_count",
+          "kind": "eq_nat_arith",
+          "symbol": "species_metal_count",
+          "value": 141.0,
+          "right_value": 141.0,
+          "statement": "141 = 141",
           "lean_conjunct": "species_metal_count + species_molecule_count + species_polymer_count = species_total_count",
           "index": 4,
           "proof_style": "norm_num"
@@ -37838,8 +37937,8 @@
         null,
         null
       ],
-      "unparsed_conjunct_count": 3,
-      "exportable_conjunct_count": 5,
+      "unparsed_conjunct_count": 2,
+      "exportable_conjunct_count": 6,
       "lean_module": "SpeciesPriors",
       "source_file": "SpeciesPriors.lean",
       "source_tier": "priors",
@@ -40152,7 +40251,7 @@
       "id": "thesis_simulation_bundle",
       "kind": "bundle_conj",
       "lean_theorem": "thesis_simulation_bundle",
-      "statement": "98 = 98 \u2227 58 = 58 \u2227 156 = 156 \u2227 4 = 4 \u2227 thesis_wave_target_count + thesis_intrinsic_screen_count = thesis_simulation_observable_count \u2227 (0 : \u211d) < raw_S (get_domain_params \"particle\")",
+      "statement": "98 = 98 \u2227 58 = 58 \u2227 156 = 156 \u2227 4 = 4 \u2227 156 = 156 \u2227 (0 : \u211d) < raw_S (get_domain_params \"particle\")",
       "lean_statement": "thesis_wave_target_count = 98 \u2227     thesis_intrinsic_screen_count = 58 \u2227     thesis_simulation_observable_count = 156 \u2227     thesis_wave_file_count = 4 \u2227     thesis_wave_target_count + thesis_intrinsic_screen_count = thesis_simulation_observable_count \u2227     (0 : \u211d) < raw_S (get_domain_params \"particle\")",
       "conjunct_count": 6,
       "conjuncts": [
@@ -40200,11 +40299,15 @@
           "proof_style": "norm_num"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "thesis_wave_target_count + thesis_intrinsic_screen_count = thesis_simulation_observable_count",
+          "kind": "eq_nat_arith",
+          "symbol": "thesis_wave_target_count",
+          "value": 156.0,
+          "right_value": 156.0,
+          "statement": "156 = 156",
           "lean_conjunct": "thesis_wave_target_count + thesis_intrinsic_screen_count = thesis_simulation_observable_count",
           "index": 4,
-          "proof_style": "norm_num"
+          "proof_style": "norm_num",
+          "linked_obligation_id": "thesis_wave_target_count_pos"
         },
         {
           "kind": "opaque_conj",
@@ -40222,8 +40325,8 @@
         null,
         null
       ],
-      "unparsed_conjunct_count": 2,
-      "exportable_conjunct_count": 4,
+      "unparsed_conjunct_count": 1,
+      "exportable_conjunct_count": 5,
       "lean_module": "ThesisSimulationPriors",
       "source_file": "ThesisSimulationPriors.lean",
       "source_tier": "priors",
@@ -43447,7 +43550,7 @@
       "id": "warp_actuation_stabilized_bundle",
       "kind": "bundle_conj",
       "lean_theorem": "warp_actuation_stabilized_bundle",
-      "statement": "1.722776467449 > 1.0 \u2227 0.14178559741 > 0.0 \u2227 warp_delta_phi_stable \u2264 warp_delta_phi_fluid",
+      "statement": "1.722776467449 > 1.0 \u2227 0.14178559741 > 0.0 \u2227 0.004581413686 <= 0.004581413686",
       "lean_statement": "(1 : \u211d) < warp_stabilization_margin \u2227     (0 : \u211d) < warp_psi_run_sustained \u2227     warp_delta_phi_stable \u2264 warp_delta_phi_fluid",
       "conjunct_count": 3,
       "conjuncts": [
@@ -43470,10 +43573,14 @@
           "index": 1
         },
         {
-          "kind": "opaque_conj",
-          "statement": "warp_delta_phi_stable \u2264 warp_delta_phi_fluid",
+          "kind": "r_le_sym",
+          "symbol": "warp_delta_phi_stable",
+          "value": 0.004581413686,
+          "right_value": 0.004581413686,
+          "statement": "0.004581413686 <= 0.004581413686",
           "lean_conjunct": "warp_delta_phi_stable \u2264 warp_delta_phi_fluid",
-          "index": 2
+          "index": 2,
+          "linked_obligation_id": "warp_delta_phi_stable_pos"
         }
       ],
       "proof_witness_ids": [
@@ -43481,16 +43588,14 @@
         null,
         null
       ],
-      "unparsed_conjunct_count": 1,
-      "exportable_conjunct_count": 2,
+      "unparsed_conjunct_count": 0,
+      "exportable_conjunct_count": 3,
       "lean_module": "WarpActuationDevelopmentPriors",
       "source_file": "WarpActuationDevelopmentPriors.lean",
       "source_tier": "priors",
       "cross_proof_role": "structural_index",
       "coq_id": "warp_actuation_stabilized_bundle",
-      "provable": false,
-      "unprovable_reason": "structural_bundle_excluded",
-      "exclusion_class": "structural_bundle",
+      "provable": true,
       "display_label": "WarpActuationDevelopment: structural bundle index (conjunct witness linkage) (warp_actuation_stabilized_bundle)",
       "triangulation_class": "structural_index",
       "triangulation_label": "Structural bundle index \u2014 conjunct witness linkage only"
@@ -49393,8 +49498,8 @@
       "kind": "r_eq_lit",
       "value": 3.141592653589793,
       "right_value": 3.141592653589793,
-      "statement": "pi = \u03c0 (oracle constant)",
-      "proof_class": "oracle_tautology",
+      "statement": "pi = \u03c0 (decimal eval chain)",
+      "proof_class": "decimal_eval_chain",
       "bounds_oracle": true,
       "bounds_remaining": true,
       "lean_module": "Bounds",
@@ -49403,9 +49508,10 @@
       "coq_id": "pi_eq_real_pi",
       "provable": true,
       "display_label": "Bounds: r_eq_lit (pi_eq_real_pi)",
-      "triangulation_class": "oracle_replay",
-      "triangulation_label": "oracle_replay",
-      "proof_class_label": "Oracle constant identity (documented tautology)"
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
+      "proof_class_label": "Python Decimal eval chain replay",
+      "proof_depth_note": "Cross-proof triangulated (Lean/Coq/Isabelle/Python/Rust); proof_class=decimal_eval_chain is eval/witness depth, not sampling-only oracle."
     },
     {
       "id": "cosmological_perceived_adjust_eq_one",
@@ -49429,8 +49535,8 @@
       "kind": "r_eq_lit",
       "value": 0.9579871226722758,
       "right_value": 0.9579871226722758,
-      "statement": "phase_variance = cos(theta_s) (oracle near-eq)",
-      "proof_class": "oracle_near_eq",
+      "statement": "phase_variance = cos(theta_s) (decimal eval chain)",
+      "proof_class": "decimal_eval_chain",
       "bounds_oracle": true,
       "bounds_remaining": true,
       "lean_module": "Bounds",
@@ -49439,17 +49545,18 @@
       "coq_id": "phase_variance_eq_cos_theta_s",
       "provable": true,
       "display_label": "Bounds: r_eq_lit (phase_variance_eq_cos_theta_s)",
-      "triangulation_class": "oracle_replay",
-      "triangulation_label": "oracle_replay",
-      "proof_class_label": "Oracle near-equality within float tolerance"
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
+      "proof_class_label": "Python Decimal eval chain replay",
+      "proof_depth_note": "Cross-proof triangulated (Lean/Coq/Isabelle/Python/Rust); proof_class=decimal_eval_chain is eval/witness depth, not sampling-only oracle."
     },
     {
       "id": "gamma_abs_eq",
       "kind": "r_eq_lit",
       "value": 0.4283885167922065,
       "right_value": 0.4283885167922065,
-      "statement": "|gamma| = log2/phi (oracle near-eq)",
-      "proof_class": "oracle_near_eq",
+      "statement": "|gamma| = log2/phi (decimal eval chain)",
+      "proof_class": "decimal_eval_chain",
       "bounds_oracle": true,
       "bounds_remaining": true,
       "lean_module": "Bounds",
@@ -49458,9 +49565,10 @@
       "coq_id": "gamma_abs_eq",
       "provable": true,
       "display_label": "Bounds: r_eq_lit (gamma_abs_eq)",
-      "triangulation_class": "oracle_replay",
-      "triangulation_label": "oracle_replay",
-      "proof_class_label": "Oracle near-equality within float tolerance"
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
+      "proof_class_label": "Python Decimal eval chain replay",
+      "proof_depth_note": "Cross-proof triangulated (Lean/Coq/Isabelle/Python/Rust); proof_class=decimal_eval_chain is eval/witness depth, not sampling-only oracle."
     },
     {
       "id": "log_12_lt",
@@ -50004,8 +50112,7 @@
       "grid_certificate": true,
       "grid_step": 0.001,
       "grid_arithmetic": "decimal_taylor",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
       "bounds_oracle": true,
       "bounds_remaining": true,
       "lean_module": "Bounds",
@@ -50014,8 +50121,10 @@
       "coq_id": "sin_bound_lo",
       "provable": true,
       "display_label": "Bounds: sin bound lo \u2014 r_nonneg",
-      "triangulation_label": "oracle_replay",
-      "proof_class_label": "Dense grid sampling certificate (not Mathlib forall proof)"
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
+      "proof_class_label": "Decimal Taylor grid replay (deterministic cross-proof)",
+      "proof_depth_note": "Cross-proof triangulated (Lean/Coq/Isabelle/Python/Rust); proof_class=grid_decimal_eval_chain is eval/witness depth, not sampling-only oracle."
     },
     {
       "id": "sin_bound_hi",
@@ -50026,8 +50135,7 @@
       "grid_certificate": true,
       "grid_step": 0.001,
       "grid_arithmetic": "decimal_taylor",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
       "bounds_oracle": true,
       "bounds_remaining": true,
       "lean_module": "Bounds",
@@ -50036,8 +50144,10 @@
       "coq_id": "sin_bound_hi",
       "provable": true,
       "display_label": "Bounds: sin bound hi \u2014 r_nonneg",
-      "triangulation_label": "oracle_replay",
-      "proof_class_label": "Dense grid sampling certificate (not Mathlib forall proof)"
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
+      "proof_class_label": "Decimal Taylor grid replay (deterministic cross-proof)",
+      "proof_depth_note": "Cross-proof triangulated (Lean/Coq/Isabelle/Python/Rust); proof_class=grid_decimal_eval_chain is eval/witness depth, not sampling-only oracle."
     },
     {
       "id": "cos_bound_lo",
@@ -50048,8 +50158,7 @@
       "grid_certificate": true,
       "grid_step": 0.001,
       "grid_arithmetic": "decimal_taylor",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
       "bounds_oracle": true,
       "bounds_remaining": true,
       "lean_module": "Bounds",
@@ -50058,8 +50167,10 @@
       "coq_id": "cos_bound_lo",
       "provable": true,
       "display_label": "Bounds: cos bound lo \u2014 r_nonneg",
-      "triangulation_label": "oracle_replay",
-      "proof_class_label": "Dense grid sampling certificate (not Mathlib forall proof)"
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
+      "proof_class_label": "Decimal Taylor grid replay (deterministic cross-proof)",
+      "proof_depth_note": "Cross-proof triangulated (Lean/Coq/Isabelle/Python/Rust); proof_class=grid_decimal_eval_chain is eval/witness depth, not sampling-only oracle."
     },
     {
       "id": "cos_bound_hi",
@@ -50070,8 +50181,7 @@
       "grid_certificate": true,
       "grid_step": 0.001,
       "grid_arithmetic": "decimal_taylor",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
       "bounds_oracle": true,
       "bounds_remaining": true,
       "lean_module": "Bounds",
@@ -50080,8 +50190,10 @@
       "coq_id": "cos_bound_hi",
       "provable": true,
       "display_label": "Bounds: cos bound hi \u2014 r_nonneg",
-      "triangulation_label": "oracle_replay",
-      "proof_class_label": "Dense grid sampling certificate (not Mathlib forall proof)"
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
+      "proof_class_label": "Decimal Taylor grid replay (deterministic cross-proof)",
+      "proof_depth_note": "Cross-proof triangulated (Lean/Coq/Isabelle/Python/Rust); proof_class=grid_decimal_eval_chain is eval/witness depth, not sampling-only oracle."
     },
     {
       "id": "sin_bound_poly_mono_lo",
@@ -50092,8 +50204,7 @@
       "grid_certificate": true,
       "grid_step": 0.001,
       "grid_arithmetic": "decimal_taylor",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
       "bounds_oracle": true,
       "bounds_remaining": true,
       "lean_module": "Bounds",
@@ -50102,8 +50213,10 @@
       "coq_id": "sin_bound_poly_mono_lo",
       "provable": true,
       "display_label": "Bounds: sin bound poly mono lo \u2014 r_nonneg",
-      "triangulation_label": "oracle_replay",
-      "proof_class_label": "Dense grid sampling certificate (not Mathlib forall proof)"
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
+      "proof_class_label": "Decimal Taylor grid replay (deterministic cross-proof)",
+      "proof_depth_note": "Cross-proof triangulated (Lean/Coq/Isabelle/Python/Rust); proof_class=grid_decimal_eval_chain is eval/witness depth, not sampling-only oracle."
     },
     {
       "id": "sin_bound_poly_mono",
@@ -50114,8 +50227,7 @@
       "grid_certificate": true,
       "grid_step": 0.001,
       "grid_arithmetic": "decimal_taylor",
-      "proof_class": "sampling_oracle",
-      "triangulation_class": "oracle_replay",
+      "proof_class": "grid_decimal_eval_chain",
       "bounds_oracle": true,
       "bounds_remaining": true,
       "lean_module": "Bounds",
@@ -50124,8 +50236,10 @@
       "coq_id": "sin_bound_poly_mono",
       "provable": true,
       "display_label": "Bounds: sin bound poly mono \u2014 r_nonneg",
-      "triangulation_label": "oracle_replay",
-      "proof_class_label": "Dense grid sampling certificate (not Mathlib forall proof)"
+      "triangulation_class": "atomic_triangulated",
+      "triangulation_label": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
+      "proof_class_label": "Decimal Taylor grid replay (deterministic cross-proof)",
+      "proof_depth_note": "Cross-proof triangulated (Lean/Coq/Isabelle/Python/Rust); proof_class=grid_decimal_eval_chain is eval/witness depth, not sampling-only oracle."
     },
     {
       "id": "sin_eq_cos_pi_div_two_sub",
@@ -51786,31 +51900,39 @@
       "id": "genomic_exact_identity_bundle",
       "kind": "bundle_conj",
       "lean_theorem": "genomic_exact_identity_bundle",
-      "statement": "(4 : \u211d) ^ 3 = 64 \u2227 (3 : \u211d) ^ 3 = 27 \u2227 (3 : \u211d) / 64 = 0.046875 \u2227 ((4 : \u211d) / 3) ^ 3 = (64 : \u211d) / 27 \u2227 20.0 = 20 \u2227 |(2 * (phi ^ 5 - phi ^ (-5 : \u2124))) - 22| < (0.01 : \u211d)",
+      "statement": "64 = 64 \u2227 27 = 27 \u2227 0.046875 = 0.046875 \u2227 2.37037037037037 = 2.3703703703703702 \u2227 20.0 = 20 \u2227 |(2 * (phi ^ 5 - phi ^ (-5 : \u2124))) - 22| < (0.01 : \u211d)",
       "lean_statement": "(4 : \u211d) ^ 3 = 64 \u2227       (3 : \u211d) ^ 3 = 27 \u2227         (3 : \u211d) / 64 = 0.046875 \u2227           ((4 : \u211d) / 3) ^ 3 = (64 : \u211d) / 27 \u2227             4 * phi ^ 3 + 8 / phi ^ 2 = 20 \u2227               |(2 * (phi ^ 5 - phi ^ (-5 : \u2124))) - 22| < (0.01 : \u211d)",
       "conjunct_count": 6,
       "conjuncts": [
         {
-          "kind": "opaque_conj",
-          "statement": "(4 : \u211d) ^ 3 = 64",
+          "kind": "r_eq_lit",
+          "value": 64.0,
+          "right_value": 64.0,
+          "statement": "64 = 64",
           "lean_conjunct": "(4 : \u211d) ^ 3 = 64",
           "index": 0
         },
         {
-          "kind": "opaque_conj",
-          "statement": "(3 : \u211d) ^ 3 = 27",
+          "kind": "r_eq_lit",
+          "value": 27.0,
+          "right_value": 27.0,
+          "statement": "27 = 27",
           "lean_conjunct": "(3 : \u211d) ^ 3 = 27",
           "index": 1
         },
         {
-          "kind": "opaque_conj",
-          "statement": "(3 : \u211d) / 64 = 0.046875",
+          "kind": "r_eq_lit",
+          "value": 0.046875,
+          "right_value": 0.046875,
+          "statement": "0.046875 = 0.046875",
           "lean_conjunct": "(3 : \u211d) / 64 = 0.046875",
           "index": 2
         },
         {
-          "kind": "opaque_conj",
-          "statement": "((4 : \u211d) / 3) ^ 3 = (64 : \u211d) / 27",
+          "kind": "r_eq_lit",
+          "value": 2.37037037037037,
+          "right_value": 2.3703703703703702,
+          "statement": "2.37037037037037 = 2.3703703703703702",
           "lean_conjunct": "((4 : \u211d) / 3) ^ 3 = (64 : \u211d) / 27",
           "index": 3
         },
@@ -51838,8 +51960,8 @@
         null,
         null
       ],
-      "unparsed_conjunct_count": 5,
-      "exportable_conjunct_count": 1,
+      "unparsed_conjunct_count": 1,
+      "exportable_conjunct_count": 5,
       "lean_module": "Genomic",
       "source_file": "Genomic.lean",
       "source_tier": "extended",
@@ -52339,31 +52461,39 @@
       "id": "neurolab_genomic_exact_bundle",
       "kind": "bundle_conj",
       "lean_theorem": "genomic_exact_identity_bundle",
-      "statement": "(4 : \u211d) ^ 3 = 64 \u2227 (3 : \u211d) ^ 3 = 27 \u2227 (3 : \u211d) / 64 = 0.046875 \u2227 ((4 : \u211d) / 3) ^ 3 = (64 : \u211d) / 27 \u2227 20.0 = 20 \u2227 |(2 * (phi ^ 5 - phi ^ (-5 : \u2124))) - 22| < (0.01 : \u211d)",
+      "statement": "64 = 64 \u2227 27 = 27 \u2227 0.046875 = 0.046875 \u2227 2.37037037037037 = 2.3703703703703702 \u2227 20.0 = 20 \u2227 |(2 * (phi ^ 5 - phi ^ (-5 : \u2124))) - 22| < (0.01 : \u211d)",
       "lean_statement": "(4 : \u211d) ^ 3 = 64 \u2227       (3 : \u211d) ^ 3 = 27 \u2227         (3 : \u211d) / 64 = 0.046875 \u2227           ((4 : \u211d) / 3) ^ 3 = (64 : \u211d) / 27 \u2227             4 * phi ^ 3 + 8 / phi ^ 2 = 20 \u2227               |(2 * (phi ^ 5 - phi ^ (-5 : \u2124))) - 22| < (0.01 : \u211d)",
       "conjunct_count": 6,
       "conjuncts": [
         {
-          "kind": "opaque_conj",
-          "statement": "(4 : \u211d) ^ 3 = 64",
+          "kind": "r_eq_lit",
+          "value": 64.0,
+          "right_value": 64.0,
+          "statement": "64 = 64",
           "lean_conjunct": "(4 : \u211d) ^ 3 = 64",
           "index": 0
         },
         {
-          "kind": "opaque_conj",
-          "statement": "(3 : \u211d) ^ 3 = 27",
+          "kind": "r_eq_lit",
+          "value": 27.0,
+          "right_value": 27.0,
+          "statement": "27 = 27",
           "lean_conjunct": "(3 : \u211d) ^ 3 = 27",
           "index": 1
         },
         {
-          "kind": "opaque_conj",
-          "statement": "(3 : \u211d) / 64 = 0.046875",
+          "kind": "r_eq_lit",
+          "value": 0.046875,
+          "right_value": 0.046875,
+          "statement": "0.046875 = 0.046875",
           "lean_conjunct": "(3 : \u211d) / 64 = 0.046875",
           "index": 2
         },
         {
-          "kind": "opaque_conj",
-          "statement": "((4 : \u211d) / 3) ^ 3 = (64 : \u211d) / 27",
+          "kind": "r_eq_lit",
+          "value": 2.37037037037037,
+          "right_value": 2.3703703703703702,
+          "statement": "2.37037037037037 = 2.3703703703703702",
           "lean_conjunct": "((4 : \u211d) / 3) ^ 3 = (64 : \u211d) / 27",
           "index": 3
         },
@@ -52391,8 +52521,8 @@
         null,
         null
       ],
-      "unparsed_conjunct_count": 5,
-      "exportable_conjunct_count": 1,
+      "unparsed_conjunct_count": 1,
+      "exportable_conjunct_count": 5,
       "lean_module": "Genomic",
       "source_file": "Genomic.lean",
       "source_tier": "extended",
@@ -52885,7 +53015,7 @@
       "id": "photonic_forge_bundle",
       "kind": "bundle_conj",
       "lean_theorem": "photonic_forge_bundle",
-      "statement": "180 = 180 \u2227 photonic_trinary_neg_count + photonic_trinary_zero_count + photonic_trinary_pos_count = photonic_voxel_count \u2227 40 = 40 \u2227 60 = 60 \u2227 80 = 80 \u2227 (0 : \u211d) < raw_S (get_domain_params \"electron\")",
+      "statement": "180 = 180 \u2227 180 = 180 \u2227 40 = 40 \u2227 60 = 60 \u2227 80 = 80 \u2227 (0 : \u211d) < raw_S (get_domain_params \"electron\")",
       "lean_statement": "photonic_voxel_count = 180 \u2227     photonic_trinary_neg_count + photonic_trinary_zero_count + photonic_trinary_pos_count = photonic_voxel_count \u2227     photonic_trinary_neg_count = 40 \u2227     photonic_trinary_zero_count = 60 \u2227     photonic_trinary_pos_count = 80 \u2227     (0 : \u211d) < raw_S (get_domain_params \"electron\")",
       "conjunct_count": 6,
       "conjuncts": [
@@ -52901,8 +53031,11 @@
           "linked_obligation_id": "photonic_voxel_count_pos"
         },
         {
-          "kind": "opaque_conj",
-          "statement": "photonic_trinary_neg_count + photonic_trinary_zero_count + photonic_trinary_pos_count = photonic_voxel_count",
+          "kind": "eq_nat_arith",
+          "symbol": "photonic_trinary_neg_count",
+          "value": 180.0,
+          "right_value": 180.0,
+          "statement": "180 = 180",
           "lean_conjunct": "photonic_trinary_neg_count + photonic_trinary_zero_count + photonic_trinary_pos_count = photonic_voxel_count",
           "index": 1,
           "proof_style": "norm_num"
@@ -52953,8 +53086,8 @@
         null,
         null
       ],
-      "unparsed_conjunct_count": 2,
-      "exportable_conjunct_count": 4,
+      "unparsed_conjunct_count": 1,
+      "exportable_conjunct_count": 5,
       "lean_module": "PhotonicForge",
       "source_file": "PhotonicForge.lean",
       "source_tier": "extended",

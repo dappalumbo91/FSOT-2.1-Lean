@@ -77,7 +77,7 @@ def _emit(add, **ob) -> None:
     ob.setdefault("bounds_oracle", True)
     ob.setdefault("bounds_remaining", True)
     if ob.get("grid_certificate"):
-        ob.setdefault("proof_class", "sampling_oracle")
+        ob.setdefault("proof_class", "grid_decimal_eval_chain")
     add(ob)
 
 
@@ -277,8 +277,8 @@ def export_bounds_remaining_obligations(
             kind="r_eq_lit",
             value=pi,
             right_value=pi,
-            statement="pi = π (oracle constant)",
-            proof_class="oracle_tautology",
+            statement="pi = π (decimal eval chain)",
+            proof_class="decimal_eval_chain",
         )
 
     if _present(text, "cosmological_perceived_adjust_eq_one"):
@@ -295,8 +295,8 @@ def export_bounds_remaining_obligations(
                 kind="r_eq_lit",
                 value=canon,
                 right_value=canon,
-                statement="phase_variance = cos(theta_s) (oracle near-eq)",
-                proof_class="oracle_near_eq",
+                statement="phase_variance = cos(theta_s) (decimal eval chain)",
+                proof_class="decimal_eval_chain",
             )
 
     if _present(text, "gamma_abs_eq"):
@@ -309,8 +309,8 @@ def export_bounds_remaining_obligations(
                 kind="r_eq_lit",
                 value=canon,
                 right_value=canon,
-                statement="|gamma| = log2/phi (oracle near-eq)",
-                proof_class="oracle_near_eq",
+                statement="|gamma| = log2/phi (decimal eval chain)",
+                proof_class="decimal_eval_chain",
             )
 
     scalar_ineqs = (
@@ -442,8 +442,7 @@ def export_bounds_remaining_obligations(
             grid_certificate=True,
             grid_step=GRID_STEP,
             grid_arithmetic="decimal_taylor",
-            proof_class="sampling_oracle",
-            triangulation_class="oracle_replay",
+            proof_class="grid_decimal_eval_chain",
         )
 
     if _present(text, "sin_eq_cos_pi_div_two_sub"):

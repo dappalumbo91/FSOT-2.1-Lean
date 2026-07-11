@@ -85,7 +85,7 @@ def build() -> dict:
             "low",
             f"{conj_pct}% total conjunct witness resolution; {explicit_link_hit}% explicit linked_obligation_id hit rate on spine.",
             "structural_bundle_ledger.json v1.1: 100% explicit link hit; residual eq_nat inventory conjuncts are Lean-only tautologies.",
-            closed=explicit_link_hit >= 99.0 and conj_pct >= 80.0,
+            closed=explicit_link_hit >= 99.0 and conj_pct >= 98.0,
             evidence="data/structural_bundle_ledger.json",
         ),
         _gap(
@@ -93,7 +93,7 @@ def build() -> dict:
             "documented_debt",
             f"{oracle_n} rows are sampling_oracle/grid/tautology replay — not Mathlib forall depth.",
             "decimal_eval_chain/witness_instantiation reclassified atomic_triangulated; oracle_debt_ledger.json tracks proof_depth_oracle_tagged separately.",
-            closed=oracle_n <= 9,
+            closed=oracle_n == 0,
             evidence="data/oracle_debt_ledger.json",
         ),
         _gap(

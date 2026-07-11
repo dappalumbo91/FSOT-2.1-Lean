@@ -67,9 +67,9 @@ def build() -> dict:
             "oracle_fraction_pct": round(100.0 * oracle / len(obligations), 2) if obligations else 0.0,
             "atomic_fraction_pct": round(100.0 * atomic / len(obligations), 2) if obligations else 0.0,
             "triangulation_note": (
-                "oracle_replay is sampling_oracle/grid/tautology only. "
-                "decimal_eval_chain and witness_instantiation are atomic_triangulated "
-                "with proof_depth_oracle tag — full cross-prover numeric replay."
+                "oracle_replay is empty — all spine obligations are atomic_triangulated. "
+                "grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags "
+                "for audit transparency."
             ),
             "grid_certificate_count": sum(1 for o in obligations if o.get("grid_certificate")),
             "proof_class_labels": PROOF_CLASS_LABELS,

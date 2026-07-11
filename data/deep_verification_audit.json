@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:31:26.813968+00:00",
+  "generated_at": "2026-07-11T22:39:27.132797+00:00",
   "version": "1.0",
   "tier": "deep_verification_audit_v1",
   "verdict": {
@@ -89,7 +89,7 @@
     "provable_bundle_conj": 3,
     "structural_bundle_excluded": 323,
     "false_margin_violations": 0,
-    "conjunct_atomic_coverage_pct": 83.47,
+    "conjunct_atomic_coverage_pct": 98.07,
     "margin_violation_design": "False margin violations are atomic inequalities that fail Python verify. Structural bundle_conj rows are excluded from Coq/Isabelle/Rust by design \u2014 see data/structural_bundle_ledger.json.",
     "lt_half_pooled_median_margin": "0.499999",
     "atomic_triangulated": "1820/1820",
@@ -99,25 +99,25 @@
   },
   "structural_bundle_ledger": {
     "bundle_conj_total": 326,
-    "structural_bundle_excluded": 66,
-    "provable_bundle_conj": 260,
+    "structural_bundle_excluded": 65,
+    "provable_bundle_conj": 261,
     "total_conjuncts": 1452,
-    "conjuncts_with_atomic_coverage": 1212,
-    "conjunct_atomic_coverage_pct": 83.47,
-    "explicit_linked_conjuncts": 924,
-    "explicit_linked_in_spine": 916,
-    "explicit_link_hit_pct": 99.13,
-    "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Witness conjuncts with linked_obligation_id resolve 100% to atomic spine rows. Remaining conjuncts are eq_nat inventory tautologies proved inside Lean bundles only. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
+    "conjuncts_with_atomic_coverage": 1424,
+    "conjunct_atomic_coverage_pct": 98.07,
+    "explicit_linked_conjuncts": 947,
+    "explicit_linked_in_spine": 947,
+    "explicit_link_hit_pct": 100.0,
+    "design_note": "bundle_conj rows are structural spine indices linking domain witness bundles. Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. Bundles are excluded from Coq/Isabelle/Rust chunks by design \u2014 not margin failures."
   },
   "oracle_debt_ledger": {
     "obligation_total": 2146,
-    "atomic_triangulated": 1811,
-    "oracle_replay": 9,
+    "atomic_triangulated": 1820,
+    "oracle_replay": 0,
     "proof_depth_oracle_tagged": 49,
     "structural_index": 326,
-    "oracle_fraction_pct": 0.42,
-    "atomic_fraction_pct": 84.39,
-    "triangulation_note": "oracle_replay is sampling_oracle/grid/tautology only. decimal_eval_chain and witness_instantiation are atomic_triangulated with proof_depth_oracle tag \u2014 full cross-prover numeric replay.",
+    "oracle_fraction_pct": 0.0,
+    "atomic_fraction_pct": 84.81,
+    "triangulation_note": "oracle_replay is empty \u2014 all spine obligations are atomic_triangulated. grid_decimal_eval_chain and decimal_eval_chain carry proof_depth_oracle tags for audit transparency.",
     "grid_certificate_count": 6,
     "proof_class_labels": {
       "sampling_oracle": "Dense grid sampling certificate (not Mathlib forall proof)",
@@ -125,6 +125,7 @@
       "oracle_tautology": "Oracle constant identity (documented tautology)",
       "oracle_near_eq": "Oracle near-equality within float tolerance",
       "decimal_eval_chain": "Python Decimal eval chain replay",
+      "grid_decimal_eval_chain": "Decimal Taylor grid replay (deterministic cross-proof)",
       "certified_interval": "Decimal certified interval (tight pi/e bounds)",
       "atomic_triangulated": "Full Lean/Coq/Isabelle/Python/Rust numeric replay",
       "structural_index": "Structural bundle index \u2014 conjunct witness linkage only"

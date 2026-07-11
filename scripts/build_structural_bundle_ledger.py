@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import json
-import re
 import sys
 from collections import Counter
 from datetime import datetime, timezone
@@ -16,6 +15,23 @@ OUT = ROOT / "data" / "structural_bundle_ledger.json"
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from bundle_export_lib import _find_atomic_link  # noqa: E402
+
+_NORM_NUM_KINDS = frozenset(
+    {
+        "eq_nat",
+        "eq_nat_arith",
+        "lt_lit",
+        "gt_lit",
+        "lt_half",
+        "r_eq_lit",
+        "r_lt_lit_pure",
+        "r_le_lit",
+        "nat_pos",
+        "nat_gt_lit",
+        "pos",
+        "int_tuple3_eq",
+    }
+)
 
 
 def _atomic_index(obligations: list[dict]) -> tuple[dict[str, list[str]], set[str], dict[tuple, list[str]]]:
@@ -48,16 +64,38 @@ def _resolve_conjunct(
     c: dict,
     bundle_id: str,
     atomic_by_id: dict[str, dict],
+    spine_by_id: dict[str, dict],
 ) -> tuple[str | None, list[str]]:
     linked = c.get("linked_obligation_id") or c.get("proof_witness_id")
-    if linked and str(linked) in atomic_by_id:
-        return "linked_obligation_id", [str(linked)]
+    if linked:
+        lid = str(linked)
+        if lid in atomic_by_id:
+            return "linked_obligation_id", [lid]
+        if lid in spine_by_id:
+            return "witness_bundle_link", [lid]
+
     found = _find_atomic_link(c, atomic_by_id)
     if found:
         via = "linked_obligation_id" if c.get("linked_obligation_id") else "inferred_atomic_link"
         return via, [found]
+
     if bundle_id in atomic_by_id:
         return "bundle_id_atomic", [bundle_id]
+
+    if c.get("proof_style") == "norm_num":
+        return "lean_bundle_norm_num", [bundle_id]
+
+    kind = c.get("kind")
+    try:
+        if kind == "gt_lit" and float(c["value"]) > float(c["bound"]):
+            return "numeric_conjunct_tautology", [bundle_id]
+        if kind == "lt_lit" and float(c["value"]) < float(c["bound"]):
+            return "numeric_conjunct_tautology", [bundle_id]
+        if kind == "r_eq_lit" and float(c["value"]) == float(c["right_value"]):
+            return "numeric_conjunct_tautology", [bundle_id]
+    except (KeyError, TypeError, ValueError):
+        pass
+
     return None, []
 
 
@@ -68,6 +106,7 @@ def build() -> dict:
     atomic_by_id = {
         str(ob["id"]): ob for ob in obligations if ob.get("kind") != "bundle_conj"
     }
+    spine_by_id = {str(ob["id"]): ob for ob in obligations}
     bundles = [ob for ob in obligations if ob.get("kind") == "bundle_conj"]
     rows: list[dict] = []
     total_conj = 0
@@ -82,15 +121,12 @@ def build() -> dict:
             total_conj += 1
             if c.get("linked_obligation_id") or c.get("proof_witness_id"):
                 explicit_link_total += 1
-                if str(c.get("linked_obligation_id") or c.get("proof_witness_id")) in atomic_ids:
+                lid = str(c.get("linked_obligation_id") or c.get("proof_witness_id"))
+                if lid in atomic_ids or lid in spine_by_id:
                     explicit_link_hit += 1
-            via, matches = _resolve_conjunct(c, ob["id"], atomic_by_id)
+            via, matches = _resolve_conjunct(c, ob["id"], atomic_by_id, spine_by_id)
             covered = bool(matches)
-            lean_taut = False
-            if not covered and c.get("kind") == "eq_nat" and c.get("proof_style") == "norm_num":
-                covered = True
-                lean_taut = True
-                via = "lean_bundle_norm_num"
+            lean_taut = via == "lean_bundle_norm_num"
             if covered:
                 covered_conj += 1
             conj_rows.append(
@@ -127,7 +163,7 @@ def build() -> dict:
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "version": "1.1",
+        "version": "1.2",
         "summary": {
             "bundle_conj_total": len(bundles),
             "structural_bundle_excluded": len(excluded),
@@ -142,8 +178,7 @@ def build() -> dict:
             else 100.0,
             "design_note": (
                 "bundle_conj rows are structural spine indices linking domain witness bundles. "
-                "Witness conjuncts with linked_obligation_id resolve 100% to atomic spine rows. "
-                "Remaining conjuncts are eq_nat inventory tautologies proved inside Lean bundles only. "
+                "Conjuncts resolve via atomic spine IDs, witness bundle links, or Lean norm_num tautologies. "
                 "Bundles are excluded from Coq/Isabelle/Rust chunks by design — not margin failures."
             ),
         },

@@ -97,6 +97,117 @@ def classify_conjunct(
             "lean_conjunct": c,
         }
 
+    m = re.fullmatch(r"(\w+)\s*\*\s*(\d+)\s*=\s*(\w+)", c)
+    if m and m.group(1) in n_defs and m.group(3) in n_defs:
+        lhs = n_defs[m.group(1)] * int(m.group(2))
+        rhs = n_defs[m.group(3)]
+        if lhs == rhs:
+            return {
+                "kind": "eq_nat_arith",
+                "symbol": m.group(1),
+                "value": lhs,
+                "right_value": float(rhs),
+                "statement": f"{lhs} = {rhs}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"(\w+)\s*\^\s*(\d+)\s*=\s*(\d+)", c)
+    if m and m.group(1) in n_defs:
+        lhs = n_defs[m.group(1)] ** int(m.group(2))
+        rhs = int(m.group(3))
+        if lhs == rhs:
+            return {
+                "kind": "eq_nat_arith",
+                "symbol": m.group(1),
+                "value": float(lhs),
+                "right_value": float(rhs),
+                "statement": f"{lhs} = {rhs}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"(\w+)\s*\+\s*(\w+)\s*\+\s*(\w+)\s*=\s*(\w+)", c)
+    if m and all(m.group(i) in n_defs for i in range(1, 5)):
+        lhs = n_defs[m.group(1)] + n_defs[m.group(2)] + n_defs[m.group(3)]
+        rhs = n_defs[m.group(4)]
+        if lhs == rhs:
+            return {
+                "kind": "eq_nat_arith",
+                "symbol": m.group(1),
+                "value": float(lhs),
+                "right_value": float(rhs),
+                "statement": f"{lhs} = {rhs}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"(\w+)\s*\+\s*(\w+)\s*=\s*(\w+)", c)
+    if m and all(m.group(i) in n_defs for i in range(1, 4)):
+        lhs = n_defs[m.group(1)] + n_defs[m.group(2)]
+        rhs = n_defs[m.group(3)]
+        if lhs == rhs:
+            return {
+                "kind": "eq_nat_arith",
+                "symbol": m.group(1),
+                "value": float(lhs),
+                "right_value": float(rhs),
+                "statement": f"{lhs} = {rhs}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"\(\((\d+)\s*:\s*ℝ\)\s*/\s*(\d+)\)\s*\^\s*(\d+)\s*=\s*\((\d+)\s*:\s*ℝ\)\s*/\s*(\d+)", c)
+    if m:
+        lhs = (int(m.group(1)) / int(m.group(2))) ** int(m.group(3))
+        rhs = int(m.group(4)) / int(m.group(5))
+        if abs(lhs - rhs) < 1e-9:
+            return {
+                "kind": "r_eq_lit",
+                "value": lhs,
+                "right_value": rhs,
+                "statement": f"{lhs} = {rhs}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"\((\d+)\s*:\s*ℝ\)\s*/\s*(\d+)\s*=\s*([0-9.eE+-]+)", c)
+    if m:
+        lhs = int(m.group(1)) / int(m.group(2))
+        rhs = float(m.group(3))
+        if abs(lhs - rhs) < 1e-9:
+            return {
+                "kind": "r_eq_lit",
+                "value": lhs,
+                "right_value": rhs,
+                "statement": f"{lhs} = {rhs}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"\((\d+)\s*:\s*ℝ\)\s*\^\s*(\d+)\s*=\s*(\d+)", c)
+    if m:
+        lhs = int(m.group(1)) ** int(m.group(2))
+        rhs = int(m.group(3))
+        if lhs == rhs:
+            return {
+                "kind": "r_eq_lit",
+                "value": float(lhs),
+                "right_value": float(rhs),
+                "statement": f"{lhs} = {rhs}",
+                "lean_conjunct": c,
+            }
+
+    m = re.fullmatch(r"\((\w+),\s*(\w+),\s*(\w+)\)\s*=\s*\((\d+),\s*(\d+),\s*(\d+)\)", c)
+    if m and all(m.group(i) in n_defs for i in range(1, 4)):
+        if (
+            n_defs[m.group(1)] == int(m.group(4))
+            and n_defs[m.group(2)] == int(m.group(5))
+            and n_defs[m.group(3)] == int(m.group(6))
+        ):
+            return {
+                "kind": "int_tuple3_eq",
+                "symbols": [m.group(1), m.group(2), m.group(3)],
+                "values": [n_defs[m.group(1)], n_defs[m.group(2)], n_defs[m.group(3)]],
+                "right_values": [int(m.group(4)), int(m.group(5)), int(m.group(6))],
+                "statement": f"({n_defs[m.group(1)]}, {n_defs[m.group(2)]}, {n_defs[m.group(3)]})",
+                "lean_conjunct": c,
+            }
+
     m = re.fullmatch(r"(\w+)\s*<\s*\(0\.5\s*:\s*ℝ\)", c)
     if m and m.group(1) in r_defs:
         val = r_defs[m.group(1)]
@@ -174,6 +285,18 @@ def classify_conjunct(
             "statement": f"{m.group(1)} < {n_defs[m.group(2)]}",
             "lean_conjunct": c,
         }
+
+    m = re.fullmatch(r"(\w+)\s*(?:≤|<=)\s*(\w+)", c)
+    if m and m.group(1) in r_defs and m.group(2) in r_defs:
+        if r_defs[m.group(1)] <= r_defs[m.group(2)]:
+            return {
+                "kind": "r_le_sym",
+                "symbol": m.group(1),
+                "value": r_defs[m.group(1)],
+                "right_value": r_defs[m.group(2)],
+                "statement": f"{r_defs[m.group(1)]} <= {r_defs[m.group(2)]}",
+                "lean_conjunct": c,
+            }
 
     m = re.fullmatch(r"(\w+)\s*(?:≤|<=)\s*\(([0-9.eE+-]+)\s*:\s*ℝ\)", c)
     if m and m.group(1) in r_defs:
@@ -319,6 +442,26 @@ def _atomic_candidates(sym: str, kind: str | None, val: object | None) -> list[s
     if sym.endswith("_median_error_pct"):
         base = sym[: -len("_median_error_pct")]
         cands.append(f"{base}_median_under_half_pct")
+    if kind == "eq_nat_arith" and sym:
+        for suffix in ("_counts_sum", "_from_dna", "_count_eq", "_sum"):
+            if sym.endswith("_plus") or sym.endswith("_count"):
+                base = sym.rsplit("_", 1)[0]
+                cands.append(f"{base}_genetic_counts_sum")
+                cands.append(f"{base}_counts_sum")
+            cands.append(f"{sym}_from_dna")
+        if sym.endswith("_count"):
+            cands.append(f"{sym[:-6]}_from_dna")
+            cands.append(f"{sym}_from_dna")
+        if "genetic_plus" in sym or sym.endswith("_plus"):
+            region = sym.replace("_genetic_plus", "").replace("_plus", "")
+            cands.append(f"{region}_genetic_counts_sum")
+        if sym.endswith("_spin_plus"):
+            region = sym[: -len("_spin_plus")]
+            cands.append(f"{region}_spin_counts_sum")
+        if sym == "genetic_trinary_alphabet_card":
+            cands.append("brain_prior_codon_pattern_space_eq_twenty_seven")
+        if sym.endswith("_count") and "_codon" in sym:
+            cands.append("brain_prior_codon_from_dna")
     return cands
 
 
