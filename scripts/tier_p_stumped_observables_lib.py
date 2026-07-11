@@ -127,6 +127,132 @@ def _anomaly_panel_records(mod, bleed_frac: float, aux: tuple) -> list[dict]:
     return records
 
 
+def _linked_sector_readout_records(mod, waves: dict[str, dict], aux: tuple) -> list[dict]:
+    """Promote open-science sector readouts from domain benchmarks into the panel."""
+    sectors_doc, nebulae, frbs = aux
+    from dark_energy_dual_readout_lib import compute_dark_energy_readouts  # noqa: WPS433
+
+    readouts = compute_dark_energy_readouts(mod)
+    records: list[dict] = []
+
+    planck_h0 = _h0_sector_value(sectors_doc, nebulae, frbs, "planck_cmb")
+    if planck_h0 is None:
+        planck_doc = _load_json(DATA / "h0_planck_benchmark.json")
+        for row in planck_doc.get("records") or []:
+            if row.get("property") == "H0_planck_km_s_Mpc":
+                planck_h0 = float(row["computed"])
+                break
+    if planck_h0 is not None:
+        records.append(
+            {
+                "lab": "stumped_observables_panel",
+                "property": "hubble_constant",
+                "name": "H0_Planck_CMB",
+                "computed": round(planck_h0, 6),
+                "measured": 67.4,
+                "error_pct": round(_error_pct(planck_h0, 67.4), 6),
+                "unit": "km/s/Mpc",
+                "status": "cmb_sector_resolved",
+                "fsot_source": "FO-200",
+                "reference": "Planck2018",
+                "eval_kind": "contested_observable",
+                "comparison_class": "cmb_sector_prediction",
+                "measured_uncertainty": 0.54,
+            }
+        )
+
+    sh0es_h0 = _h0_sector_value(sectors_doc, nebulae, frbs, "sh0es_jwst")
+    if sh0es_h0 is None:
+        deep = _load_json(DATA / "cosmology_anomaly_deep_panel_benchmark.json")
+        for row in deep.get("material_records") or []:
+            if row.get("name") == "h0_sh0es_2024":
+                sh0es_h0 = float(row["computed"])
+                break
+    if sh0es_h0 is not None:
+        records.append(
+            {
+                "lab": "stumped_observables_panel",
+                "property": "hubble_constant",
+                "name": "H0_SH0ES_local",
+                "computed": round(sh0es_h0, 6),
+                "measured": 73.04,
+                "error_pct": round(_error_pct(sh0es_h0, 73.04), 6),
+                "unit": "km/s/Mpc",
+                "status": "local_sector_resolved",
+                "fsot_source": "bubble_bleed_sector",
+                "reference": "Riess2024",
+                "eval_kind": "contested_observable",
+                "comparison_class": "tension_sector_prediction",
+                "measured_uncertainty": 1.04,
+            }
+        )
+
+    w0_cmb = float(readouts["w0_cmb"])
+    records.append(
+        {
+            "lab": "stumped_observables_panel",
+            "property": "dark_energy_eos",
+            "name": "w0_CMB",
+            "computed": round(w0_cmb, 6),
+            "measured": -1.03,
+            "error_pct": round(_error_pct(w0_cmb, -1.03), 6),
+            "unit": "dimensionless",
+            "status": "cmb_sector_resolved",
+            "fsot_source": "wave4",
+            "formula": readouts["w0_cmb_formula"],
+            "reference": "Planck2018_w0_prior",
+            "eval_kind": "contested_observable",
+            "comparison_class": "cmb_sector_prediction",
+            "measured_uncertainty": 0.03,
+        }
+    )
+
+    w0_bao = float(readouts["w0_bao"])
+    records.append(
+        {
+            "lab": "stumped_observables_panel",
+            "property": "dark_energy_eos",
+            "name": "w0_BAO",
+            "computed": round(w0_bao, 6),
+            "measured": -0.727,
+            "error_pct": round(_error_pct(w0_bao, -0.727), 6),
+            "unit": "dimensionless",
+            "status": "bao_sector_resolved",
+            "fsot_source": "wave4",
+            "formula": readouts["w0_bao_formula"],
+            "reference": "DESI_DR2",
+            "eval_kind": "contested_observable",
+            "comparison_class": "bao_sector_prediction",
+            "measured_uncertainty": 0.031,
+        }
+    )
+
+    econ = _load_json(DATA / "consciousness_econ_benchmark.json")
+    for row in econ.get("econ_open_anchors") or []:
+        if row.get("name") == "Homo_sapiens" and row.get("property") == "E_con":
+            computed = float(row["computed"])
+            measured = float(row["measured"])
+            records.append(
+                {
+                    "lab": "stumped_observables_panel",
+                    "property": "brain_power",
+                    "name": "E_con_Homo_sapiens",
+                    "computed": computed,
+                    "measured": measured,
+                    "error_pct": round(_error_pct(computed, measured), 6),
+                    "unit": "W",
+                    "status": "consciousness_resolved",
+                    "fsot_source": "consciousness_econ",
+                    "reference": "human_brain_metabolic",
+                    "eval_kind": "resting_information_floor",
+                    "comparison_class": "consciousness_open",
+                }
+            )
+            break
+
+    return records
+
+
 def _precision_panel_records(mod, waves: dict[str, dict], aux: tuple) -> list[dict]:
     sectors_doc, nebulae, frbs = aux
     records: list[dict] = []
@@ -221,6 +347,7 @@ def build_stumped_observables_panel() -> dict:
 
     records.extend(_anomaly_panel_records(mod, bleed_frac, aux))
     records.extend(_precision_panel_records(mod, waves, aux))
+    records.extend(_linked_sector_readout_records(mod, waves, aux))
 
     from dark_energy_dual_readout_lib import compute_dark_energy_readouts  # noqa: WPS433
 
@@ -269,16 +396,7 @@ def build_stumped_observables_panel() -> dict:
                     }
                 )
         elif item.get("id") in ("e_con", "w0", "h0_planck", "h0_sh0es"):
-            open_predictions.append(
-                {
-                    "id": item.get("id"),
-                    "name": item.get("name"),
-                    "measured": float(item["measured"]),
-                    "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
-                    "status": item.get("status"),
-                    "reference": item.get("reference"),
-                }
-            )
+            continue
 
     from benchmark_margin_lib import classify_record
 

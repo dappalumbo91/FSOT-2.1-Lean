@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T20:10:07.816823+00:00",
+  "generated_at": "2026-07-11T23:01:47.811203+00:00",
   "domain": "Stumped_Observables_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -45,20 +45,7 @@
       "computed": 0.009407,
       "measured": 0.0,
       "error_pct": 0.009407,
-      "observable_count": 5,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.009407,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 5
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -67,20 +54,7 @@
       "computed": 0.009407,
       "measured": 0.0,
       "error_pct": 0.009407,
-      "observable_count": 5,
-      "domain_display_name": "tier gap fill",
-      "display_name": "open problem rollup",
-      "scientific_measurement": {
-        "delta": 0.009407,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 5
     }
   ],
   "material_records": [
@@ -88,24 +62,11 @@
       "lab": "stumped_observables_spine_lab",
       "property": "stumped_pillar",
       "name": "stumped_observables_panel",
-      "computed": 14.0,
-      "measured": 14.0,
+      "computed": 19.0,
+      "measured": 19.0,
       "error_pct": 0.039905,
       "source": "Stumped_Observables_Panel",
-      "status": "GREEN",
-      "domain_display_name": "stumped observables spine",
-      "display_name": "stumped observables panel",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "status": "GREEN"
     },
     {
       "lab": "stumped_observables_spine_lab",
@@ -115,20 +76,7 @@
       "measured": 6.0,
       "error_pct": 0.0,
       "source": "Hubble_Bubble_Tension",
-      "status": "GREEN",
-      "domain_display_name": "stumped observables spine",
-      "display_name": "hubble bubble tension",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "status": "GREEN"
     },
     {
       "lab": "stumped_observables_spine_lab",
@@ -138,20 +86,7 @@
       "measured": 10.0,
       "error_pct": 0.009407,
       "source": "Dark_Sector_Open_Problems",
-      "status": "GREEN",
-      "domain_display_name": "stumped observables spine",
-      "display_name": "dark sector open problems",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "status": "GREEN"
     },
     {
       "lab": "stumped_observables_spine_lab",
@@ -161,43 +96,17 @@
       "measured": 12.0,
       "error_pct": 0.140126,
       "source": "Cosmology_Anomalies",
-      "status": "GREEN",
-      "domain_display_name": "stumped observables spine",
-      "display_name": "cosmology anomalies tier25",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "status": "GREEN"
     },
     {
       "lab": "stumped_observables_spine_lab",
       "property": "open_prediction_registry",
       "name": "w_a_E_con_w0_tracked",
-      "computed": 4.0,
-      "measured": 4.0,
+      "computed": 0.0,
+      "measured": 0.0,
       "error_pct": 0.0,
       "source": "stumped_observables_reference",
-      "status": "OPEN",
-      "domain_display_name": "stumped observables spine",
-      "display_name": "w a E con w0 tracked",
-      "scientific_measurement": {
-        "delta": 0.0,
-        "delta_pct": 0.0,
-        "effective_error_pct": 0.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "status": "OPEN"
     }
   ],
   "margin_summary": {
@@ -216,7 +125,7 @@
   "panel_status": "GREEN",
   "tension_status": "GREEN",
   "dark_sector_status": "GREEN",
-  "open_prediction_count": 4,
+  "open_prediction_count": 0,
   "h0_sector_count": 6,
   "stumped_spine_status": "GREEN",
   "crosswalk_modules": [
@@ -226,19 +135,5 @@
     "FSOT.Formal.DarkSectorOpenProblemsPriors",
     "FSOT.Formal.BubbleBleedPriors",
     "FSOT.Formal.CosmologyAnomaliesPriors"
-  ],
-  "display_name": "Stumped Observables Spine",
-  "tier_label": "Consciousness soul bridge + symbolic archetype",
-  "scientific_precision_summary": {
-    "scalar_count": 5,
-    "median_error_pct": 0.009407,
-    "max_error_pct": 0.140126,
-    "mean_abs_delta": 0.0,
-    "precision_tier_counts": {
-      "green": 5
-    },
-    "green_gate_fraction": 1.0,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.759095+00:00"
+  ]
 }

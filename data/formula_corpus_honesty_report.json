@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T22:29:09.928124+00:00",
+  "generated_at": "2026-07-11T23:01:48.566480+00:00",
   "version": "1.0",
   "verdict": "ROW_COUNT_WITH_DEDUPED_UNIQUE",
   "headline_row_count": 7941,
@@ -12,11 +12,11 @@
     "checked": 1325,
     "skipped_unsupported": 0,
     "unevaluable_unique_gap": 0,
-    "ok": 1318,
-    "ok_ratio": 0.9947,
-    "drift_debt_count": 7
+    "ok": 1325,
+    "ok_ratio": 1.0,
+    "drift_debt_count": 0
   },
-  "honest_statement": "strict_empirical.jsonl contains 7,941 rows representing 1,325 unique observables (concept+formula+target); ~5.993\u00d7 project triplication. Live recompute on deduped uniques: 1318/1325 OK; 0 skipped (unsupported eval).",
+  "honest_statement": "strict_empirical.jsonl contains 7,941 rows representing 1,325 unique observables (concept+formula+target); ~5.993\u00d7 project triplication. Live recompute on deduped uniques: 1325/1325 OK; 0 skipped (unsupported eval).",
   "verification_issues": [],
   "verification_passed": true,
   "full_summary": {
@@ -52,10 +52,10 @@
     "live_recompute_sample_size": 1325,
     "live_recompute_checked": 1325,
     "live_recompute_skipped_unsupported": 0,
-    "live_recompute_ok": 1318,
-    "live_recompute_ok_ratio": 0.9947,
-    "live_recompute_drift_debt_count": 7,
-    "live_recompute_max_drift_pct": 199.569542,
+    "live_recompute_ok": 1325,
+    "live_recompute_ok_ratio": 1.0,
+    "live_recompute_drift_debt_count": 0,
+    "live_recompute_max_drift_pct": 0.0,
     "live_recompute_debt_report": "data\\formula_live_recompute_debt.json",
     "issues": 0
   }

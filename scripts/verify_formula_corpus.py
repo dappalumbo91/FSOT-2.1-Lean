@@ -45,6 +45,7 @@ def _extended_eval_context() -> dict[str, float]:
             "pbase": ctx["pbase"],
             "b_in": ctx["b_in"],
             "poof": ctx["poof"],
+            "c_factor": ctx["c_factor"],
         }
     )
     return ctx

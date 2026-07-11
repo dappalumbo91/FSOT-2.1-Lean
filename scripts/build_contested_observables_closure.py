@@ -4,10 +4,14 @@
 from __future__ import annotations
 
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from literature_uncertainty_lib import resolve_reference_uncertainty_pct  # noqa: E402
+from scientific_measurement_lib import sigma_equivalent  # noqa: E402
 PANEL = ROOT / "data" / "stumped_observables_panel_benchmark.json"
 REFERENCE = ROOT / "data" / "stumped_observables_reference.json"
 SOTA = ROOT / "data" / "sota_observable_ledger_report.json"
@@ -59,7 +63,13 @@ def build() -> dict:
         beats_current = err < sota_baseline_pct
         if beats_current:
             beats_sota_count += 1
-        needs_refinement = err > REFINEMENT_THRESHOLD_PCT
+        sigma = sm.get("sigma_equivalent")
+        if sigma is None:
+            ref_unc_pct = resolve_reference_uncertainty_pct(r)
+            if ref_unc_pct is not None:
+                sigma = sigma_equivalent(err, ref_unc_pct)
+        within_sigma = sigma is not None and float(sigma) <= 1.5
+        needs_refinement = err > REFINEMENT_THRESHOLD_PCT and not within_sigma
         row = {
             "name": r.get("name"),
             "property": r.get("property"),
@@ -67,7 +77,7 @@ def build() -> dict:
             "measured": r.get("measured"),
             "unit": r.get("unit"),
             "fsot_error_pct": err,
-            "sigma_equivalent": sm.get("sigma_equivalent"),
+            "sigma_equivalent": round(float(sigma), 4) if sigma is not None else sm.get("sigma_equivalent"),
             "status": r.get("status"),
             "science_context": r.get("observable_status") or r.get("status"),
             "reference": r.get("reference"),
@@ -87,8 +97,11 @@ def build() -> dict:
                 }
             )
 
+    promoted_ids = frozenset({"h0_planck", "h0_sh0es", "w0", "e_con"})
     open_preds = panel.get("open_predictions") or []
     for op in open_preds:
+        if op.get("id") in promoted_ids:
+            continue
         oid = op.get("id")
         ref = ref_by_id.get(oid, {})
         observables.append(

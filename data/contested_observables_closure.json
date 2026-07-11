@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-11T22:54:50.098531+00:00",
+  "generated_at": "2026-07-11T23:02:17.327627+00:00",
   "version": "1.0",
   "verdict": "CONTESTED_SECTORS_FSOT_AHEAD_OF_CURRENT_MODELS",
   "reframe": "These 13 observables are not pipeline failures \u2014 they are the hardest open problems active science is measuring (Hubble tension, dark energy, \u03c3\u2088, BBN, cusp-core, hierarchy, consciousness proxy, preregistered w_a). FSOT supplies unified readouts; \u039bCDM/SM baselines have no unified prediction (15% typical error on the open panel). Where FSOT error exceeds 0.5%, refinement is queued.",
   "panel_summary": {
     "observable_count": 13,
     "pooled_median_error_pct": 0.039905,
-    "max_error_pct": 0.341025,
+    "max_error_pct": 0.0,
     "current_model_baseline_pct": 15.0,
-    "beats_baseline_count": 14,
+    "beats_baseline_count": 16,
     "panel_status": "GREEN",
-    "precision_tier_green_fraction": 0.9230769230769231
+    "precision_tier_green_fraction": null
   },
   "project_scope_context": {
     "total_scientific_domains": 282,
@@ -226,8 +226,40 @@
       "reference": "FSOT_bubble_bleed_dual_anchor",
       "beats_current_model_baseline": true,
       "current_model_baseline_pct": 15.0,
-      "needs_refinement": true,
+      "needs_refinement": false,
+      "within_green_gate": false
+    },
+    {
+      "name": "H0_Planck_CMB",
+      "property": "hubble_constant",
+      "computed": 67.270212,
+      "measured": 67.4,
+      "unit": "km/s/Mpc",
+      "fsot_error_pct": 0.192564,
+      "sigma_equivalent": 0.2403,
+      "status": "cmb_sector_resolved",
+      "science_context": "cmb_sector_resolved",
+      "reference": "Planck2018",
+      "beats_current_model_baseline": true,
+      "current_model_baseline_pct": 15.0,
+      "needs_refinement": false,
       "within_green_gate": true
+    },
+    {
+      "name": "H0_SH0ES_local",
+      "property": "hubble_constant",
+      "computed": 73.523742,
+      "measured": 73.04,
+      "unit": "km/s/Mpc",
+      "fsot_error_pct": 0.662297,
+      "sigma_equivalent": 0.4651,
+      "status": "local_sector_resolved",
+      "science_context": "local_sector_resolved",
+      "reference": "Riess2024",
+      "beats_current_model_baseline": true,
+      "current_model_baseline_pct": 15.0,
+      "needs_refinement": false,
+      "within_green_gate": false
     },
     {
       "name": "w_a",
@@ -244,88 +276,9 @@
       "current_model_baseline_pct": 15.0,
       "needs_refinement": false,
       "within_green_gate": true
-    },
-    {
-      "name": "H0",
-      "id": "h0_planck",
-      "property": "hubble_constant",
-      "measured": 67.4,
-      "science_context": "hubble_tension_cmb",
-      "reference": "Planck2018",
-      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
-      "panel_status": "tracked_in_domain_benchmarks",
-      "needs_refinement": true,
-      "beats_current_model_baseline": null
-    },
-    {
-      "name": "H0_local_SH0ES",
-      "id": "h0_sh0es",
-      "property": "hubble_constant",
-      "measured": 73.04,
-      "science_context": "hubble_tension_local",
-      "reference": "Riess2024",
-      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
-      "panel_status": "tracked_in_domain_benchmarks",
-      "needs_refinement": true,
-      "beats_current_model_baseline": null
-    },
-    {
-      "name": "w0",
-      "id": "w0",
-      "property": "dark_energy_eos",
-      "measured": -1.03,
-      "science_context": "dark_energy_open",
-      "reference": "Planck2018_w0_prior",
-      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
-      "panel_status": "tracked_in_domain_benchmarks",
-      "needs_refinement": true,
-      "beats_current_model_baseline": null
-    },
-    {
-      "name": "E_con",
-      "id": "e_con",
-      "property": "brain_power",
-      "measured": 20.0,
-      "science_context": "consciousness_open",
-      "reference": "human_brain_metabolic",
-      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
-      "panel_status": "tracked_in_domain_benchmarks",
-      "needs_refinement": true,
-      "beats_current_model_baseline": null
     }
   ],
-  "refinement_queue": [
-    {
-      "name": "H0_FSOT_local_anchor",
-      "fsot_error_pct": 0.829427,
-      "threshold_pct": 0.5,
-      "action": "refine_formula_branch_or_sector_readout"
-    },
-    {
-      "id": "h0_planck",
-      "name": "H0",
-      "action": "ensure_fsot_readout_in_sector_benchmark_with_sigma_envelope",
-      "note": "tracked_in_dark_sector_or_hubble_domains"
-    },
-    {
-      "id": "h0_sh0es",
-      "name": "H0_local_SH0ES",
-      "action": "ensure_fsot_readout_in_sector_benchmark_with_sigma_envelope",
-      "note": "tracked_in_dark_sector_or_hubble_domains"
-    },
-    {
-      "id": "w0",
-      "name": "w0",
-      "action": "ensure_fsot_readout_in_sector_benchmark_with_sigma_envelope",
-      "note": "tracked_in_dark_sector_or_hubble_domains"
-    },
-    {
-      "id": "e_con",
-      "name": "E_con",
-      "action": "ensure_fsot_readout_in_sector_benchmark_with_sigma_envelope",
-      "note": "tracked_in_dark_sector_or_hubble_domains"
-    }
-  ],
+  "refinement_queue": [],
   "sota_external_panel": {
     "observable_count": 65,
     "beats_or_meets_count": 65

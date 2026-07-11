@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-11T20:10:07.802994+00:00",
+  "generated_at": "2026-07-11T23:01:47.796048+00:00",
   "domain": "Stumped_Observables_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -16,8 +16,8 @@
     "blackhole"
   ],
   "D_eff": 22,
-  "record_count": 14,
-  "observable_count": 14,
+  "record_count": 19,
+  "observable_count": 19,
   "scalar_record_count": 13,
   "scalar_gate_applicable": true,
   "median_error_pct": 0.039905,
@@ -44,20 +44,7 @@
       "computed": 0.039905,
       "measured": 0.0,
       "error_pct": 0.039905,
-      "observable_count": 14,
-      "domain_display_name": "tier gap fill",
-      "display_name": "all channels",
-      "scientific_measurement": {
-        "delta": 0.039905,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 19
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -66,20 +53,7 @@
       "computed": 0.039905,
       "measured": 0.0,
       "error_pct": 0.039905,
-      "observable_count": 13,
-      "domain_display_name": "tier gap fill",
-      "display_name": "open observable panel",
-      "scientific_measurement": {
-        "delta": 0.039905,
-        "delta_pct": 100.0,
-        "effective_error_pct": 100.0,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true
-      }
+      "observable_count": 13
     }
   ],
   "material_records": [
@@ -94,22 +68,7 @@
       "status": "tension_resolved",
       "fsot_source": "cosmology_anomalies_physics",
       "mechanism": "bh_wh_bubble_bleed",
-      "reference": "Riess2024_vs_Planck2018",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "H0 tension SH0ES vs Planck",
-      "scientific_measurement": {
-        "delta": -0.00154908,
-        "delta_pct": 0.027466,
-        "effective_error_pct": 0.027466,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference": "Riess2024_vs_Planck2018",
-        "unit": "km/s/Mpc_delta"
-      }
+      "reference": "Riess2024_vs_Planck2018"
     },
     {
       "lab": "stumped_observables_panel",
@@ -122,22 +81,7 @@
       "status": "tension_resolved",
       "fsot_source": "cosmology_anomalies_physics",
       "mechanism": "bh_wh_bubble_bleed",
-      "reference": "Freedman2019",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "H0 tension Carnegie vs Planck",
-      "scientific_measurement": {
-        "delta": -0.00545572,
-        "delta_pct": 0.227322,
-        "effective_error_pct": 0.227322,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference": "Freedman2019",
-        "unit": "km/s/Mpc_delta"
-      }
+      "reference": "Freedman2019"
     },
     {
       "lab": "stumped_observables_panel",
@@ -150,22 +94,7 @@
       "status": "tension_resolved",
       "fsot_source": "cosmology_anomalies_physics",
       "mechanism": "wh_lensing_decay",
-      "reference": "DES_Y3_2022",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "S8 tension Planck vs DES Y3",
-      "scientific_measurement": {
-        "delta": -0.00011322,
-        "delta_pct": 0.195207,
-        "effective_error_pct": 0.195207,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference": "DES_Y3_2022",
-        "unit": "S8_delta"
-      }
+      "reference": "DES_Y3_2022"
     },
     {
       "lab": "stumped_observables_panel",
@@ -178,22 +107,7 @@
       "status": "tension_resolved",
       "fsot_source": "cosmology_anomalies_physics",
       "mechanism": "wh_outgassing_entropy",
-      "reference": "BBN_obs_vs_theory",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "Lithium problem factor",
-      "scientific_measurement": {
-        "delta": 0.00948965,
-        "delta_pct": 0.316322,
-        "effective_error_pct": 0.316322,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference": "BBN_obs_vs_theory",
-        "unit": "underproduction_factor"
-      }
+      "reference": "BBN_obs_vs_theory"
     },
     {
       "lab": "stumped_observables_panel",
@@ -206,22 +120,7 @@
       "status": "tension_resolved",
       "fsot_source": "cosmology_anomalies_physics",
       "mechanism": "bh_wh_tunnel_scatter",
-      "reference": "CHIME_high_DM",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "FRB DM excess vs IGM",
-      "scientific_measurement": {
-        "delta": 0.08522203,
-        "delta_pct": 0.042611,
-        "effective_error_pct": 0.042611,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference": "CHIME_high_DM",
-        "unit": "pc_cm3_excess"
-      }
+      "reference": "CHIME_high_DM"
     },
     {
       "lab": "stumped_observables_panel",
@@ -233,21 +132,7 @@
       "unit": "dimensionless",
       "status": "open_observable_resolved",
       "fsot_source": "wave2",
-      "formula": "P_new\u00b7e\u00b7\u03c0 + ln(\u03c6)",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "N eff",
-      "scientific_measurement": {
-        "delta": -0.00028655,
-        "delta_pct": 0.009407,
-        "effective_error_pct": 0.009407,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "dimensionless"
-      }
+      "formula": "P_new\u00b7e\u00b7\u03c0 + ln(\u03c6)"
     },
     {
       "lab": "stumped_observables_panel",
@@ -259,21 +144,7 @@
       "unit": "dimensionless",
       "status": "open_observable_resolved",
       "fsot_source": "wave2",
-      "formula": "S_quant/e + \u03b3\u00b2",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "Omega Lambda",
-      "scientific_measurement": {
-        "delta": -1.095e-05,
-        "delta_pct": 0.0016,
-        "effective_error_pct": 0.0016,
-        "comparison_kind": "display_precision",
-        "within_literature_band": false,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "dimensionless"
-      }
+      "formula": "S_quant/e + \u03b3\u00b2"
     },
     {
       "lab": "stumped_observables_panel",
@@ -285,22 +156,7 @@
       "unit": "dimensionless",
       "status": "open_observable_resolved",
       "fsot_source": "wave2",
-      "formula": "|S_cosm|\u00b7S_quant + |Chaos|",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "sigma 8",
-      "scientific_measurement": {
-        "delta": 2.4e-05,
-        "delta_pct": 0.00296,
-        "effective_error_pct": 0.00296,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.004,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.74,
-        "unit": "dimensionless"
-      }
+      "formula": "|S_cosm|\u00b7S_quant + |Chaos|"
     },
     {
       "lab": "stumped_observables_panel",
@@ -312,22 +168,7 @@
       "unit": "dimensionless",
       "status": "open_observable_resolved",
       "fsot_source": "wave2",
-      "formula": "\u03c6\u00b7|Chaos| \u2212 ln(\u03c6)",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "tau reion",
-      "scientific_measurement": {
-        "delta": -3.45e-06,
-        "delta_pct": 0.006335,
-        "effective_error_pct": 0.006335,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0005,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 13.0,
-        "unit": "dimensionless"
-      }
+      "formula": "\u03c6\u00b7|Chaos| \u2212 ln(\u03c6)"
     },
     {
       "lab": "stumped_observables_panel",
@@ -339,21 +180,7 @@
       "unit": "dimensionless",
       "status": "open_observable_resolved",
       "fsot_source": "wave5",
-      "formula": "1/(\u03c0\u2074\u00b7e\u2076)",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "D H ratio",
-      "scientific_measurement": {
-        "delta": -2e-08,
-        "delta_pct": 0.090986,
-        "effective_error_pct": 0.090986,
-        "comparison_kind": "display_precision",
-        "within_literature_band": true,
-        "sigma_equivalent": null,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "unit": "dimensionless"
-      }
+      "formula": "1/(\u03c0\u2074\u00b7e\u2076)"
     },
     {
       "lab": "stumped_observables_panel",
@@ -366,24 +193,7 @@
       "status": "cusp_core_resolved",
       "fsot_source": "poof_softening",
       "formula": "eta_eff*phi - poof",
-      "reference": "Fornax_dwarf",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "r c",
-      "scientific_measurement": {
-        "delta": 0.00204615,
-        "delta_pct": 0.341025,
-        "effective_error_pct": 0.341025,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.0204,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 16.7,
-        "reference": "Fornax_dwarf",
-        "observable_status": "cusp_core_problem",
-        "unit": "kpc"
-      }
+      "reference": "Fornax_dwarf"
     },
     {
       "lab": "stumped_observables_panel",
@@ -395,24 +205,7 @@
       "unit": "GeV",
       "status": "hierarchy_resolved",
       "fsot_source": "FO-213",
-      "reference": "ATLAS_CMS_combined",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "m H",
-      "scientific_measurement": {
-        "delta": -0.04998124,
-        "delta_pct": 0.039905,
-        "effective_error_pct": 0.039905,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.2934,
-        "precision_tier": "green",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.136,
-        "reference": "ATLAS_CMS_combined",
-        "observable_status": "hierarchy_problem",
-        "unit": "GeV"
-      }
+      "reference": "ATLAS_CMS_combined"
     },
     {
       "lab": "stumped_observables_panel",
@@ -427,24 +220,83 @@
       "reference": "FSOT_bubble_bleed_dual_anchor",
       "eval_kind": "contested_observable",
       "comparison_class": "tension_sector_prediction",
-      "measured_uncertainty": 0.6,
-      "domain_display_name": "stumped observables panel",
-      "display_name": "H0 FSOT local anchor",
-      "scientific_measurement": {
-        "delta": -0.598017,
-        "delta_pct": 0.829427,
-        "effective_error_pct": 0.829427,
-        "comparison_kind": "uncertainty_band",
-        "within_literature_band": true,
-        "sigma_equivalent": 0.9967,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.8321775312066574,
-        "reference": "FSOT_bubble_bleed_dual_anchor",
-        "observable_status": "fsot_dual_anchor",
-        "unit": "km/s/Mpc"
-      }
+      "measured_uncertainty": 0.6
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "hubble_constant",
+      "name": "H0_Planck_CMB",
+      "computed": 67.270212,
+      "measured": 67.4,
+      "error_pct": 0.192564,
+      "unit": "km/s/Mpc",
+      "status": "cmb_sector_resolved",
+      "fsot_source": "FO-200",
+      "reference": "Planck2018",
+      "eval_kind": "contested_observable",
+      "comparison_class": "cmb_sector_prediction",
+      "measured_uncertainty": 0.54
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "hubble_constant",
+      "name": "H0_SH0ES_local",
+      "computed": 73.523742,
+      "measured": 73.04,
+      "error_pct": 0.662297,
+      "unit": "km/s/Mpc",
+      "status": "local_sector_resolved",
+      "fsot_source": "bubble_bleed_sector",
+      "reference": "Riess2024",
+      "eval_kind": "contested_observable",
+      "comparison_class": "tension_sector_prediction",
+      "measured_uncertainty": 1.04
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "dark_energy_eos",
+      "name": "w0_CMB",
+      "computed": -1.029981,
+      "measured": -1.03,
+      "error_pct": 0.001816,
+      "unit": "dimensionless",
+      "status": "cmb_sector_resolved",
+      "fsot_source": "wave4",
+      "formula": "\u2212P_new\u00b7\u03c0/G",
+      "reference": "Planck2018_w0_prior",
+      "eval_kind": "contested_observable",
+      "comparison_class": "cmb_sector_prediction",
+      "measured_uncertainty": 0.03
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "dark_energy_eos",
+      "name": "w0_BAO",
+      "computed": -0.729679,
+      "measured": -0.727,
+      "error_pct": 0.368503,
+      "unit": "dimensionless",
+      "status": "bao_sector_resolved",
+      "fsot_source": "wave4",
+      "formula": "w0_cmb\u00b7(1 \u2212 G/\u03c0)",
+      "reference": "DESI_DR2",
+      "eval_kind": "contested_observable",
+      "comparison_class": "bao_sector_prediction",
+      "measured_uncertainty": 0.031
+    },
+    {
+      "lab": "stumped_observables_panel",
+      "property": "brain_power",
+      "name": "E_con_Homo_sapiens",
+      "computed": 20.0,
+      "measured": 20.0,
+      "error_pct": 0.0,
+      "unit": "W",
+      "status": "consciousness_resolved",
+      "fsot_source": "consciousness_econ",
+      "reference": "human_brain_metabolic",
+      "eval_kind": "resting_information_floor",
+      "comparison_class": "consciousness_open"
     },
     {
       "lab": "stumped_observables_panel",
@@ -461,24 +313,7 @@
       "formula": "wa_cmb + w0_bao\u00b7(G/\u03c0)",
       "reference": "DESI_DR2",
       "eval_kind": "preregistered_falsifiable",
-      "comparison_class": "bao_sector_prediction",
-      "domain_display_name": "stumped observables panel",
-      "display_name": "w a",
-      "scientific_measurement": {
-        "delta": -0.002856,
-        "delta_pct": 0.28055,
-        "effective_error_pct": 0.000595,
-        "comparison_kind": "preregistered_falsifiable",
-        "within_literature_band": true,
-        "sigma_equivalent": 1.0,
-        "precision_tier": "contested",
-        "within_green_gate": true,
-        "within_aspiration_gate": true,
-        "reference_uncertainty_pct": 0.000595,
-        "reference": "DESI_DR2",
-        "observable_status": "unconfirmed_prediction",
-        "unit": "dimensionless"
-      }
+      "comparison_class": "bao_sector_prediction"
     }
   ],
   "margin_summary": {
@@ -494,55 +329,7 @@
   },
   "fsot_precision_gate_pct": 0.5,
   "tier": 51,
-  "open_prediction_count": 4,
-  "open_predictions": [
-    {
-      "id": "h0_planck",
-      "name": "H0",
-      "measured": 67.4,
-      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
-      "status": "hubble_tension_cmb",
-      "reference": "Planck2018"
-    },
-    {
-      "id": "h0_sh0es",
-      "name": "H0_local_SH0ES",
-      "measured": 73.04,
-      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
-      "status": "hubble_tension_local",
-      "reference": "Riess2024"
-    },
-    {
-      "id": "w0",
-      "name": "w0",
-      "measured": -1.03,
-      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
-      "status": "dark_energy_open",
-      "reference": "Planck2018_w0_prior"
-    },
-    {
-      "id": "e_con",
-      "name": "E_con",
-      "measured": 20.0,
-      "fsot_note": "tracked_in_dark_sector_or_hubble_domains",
-      "status": "consciousness_open",
-      "reference": "human_brain_metabolic"
-    }
-  ],
-  "panel_status": "GREEN",
-  "display_name": "Stumped Observables Panel",
-  "tier_label": "Consciousness soul bridge + symbolic archetype",
-  "scientific_precision_summary": {
-    "scalar_count": 13,
-    "median_error_pct": 0.042611,
-    "max_error_pct": 0.341025,
-    "mean_abs_delta": 0.012079850769230769,
-    "precision_tier_counts": {
-      "green": 12,
-      "contested": 1
-    },
-    "green_gate_fraction": 0.9230769230769231,
-    "matches_domain_spine": true
-  },
-  "scientific_metadata_enriched_at": "2026-07-11T22:30:01.759095+00:00"
+  "open_prediction_count": 0,
+  "open_predictions": [],
+  "panel_status": "GREEN"
 }

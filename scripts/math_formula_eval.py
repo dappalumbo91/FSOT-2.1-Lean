@@ -155,6 +155,7 @@ def normalize_formula(text: str) -> str:
     out = re.sub(r"\s+", "", out)
     out = re.sub(r"\btheta_s\b", "theta_s", out)
     out = re.sub(r"\btheta\b(?!_)", "theta_s", out)
+    out = re.sub(r"ln\(pi\)/c\b", "ln(pi)/c_factor", out)
     out = re.sub(r"\bg\b(?![_a-z])", "g_cat", out)
     out = re.sub(r"\bc\b(?![_a-z])", "g_cat", out)
     return out
@@ -274,9 +275,9 @@ class _FormulaParser:
         if name == "exp":
             return math.exp(args[0])
         if name == "arccos":
-            return math.acos(args[0])
+            return math.degrees(math.acos(args[0]))
         if name == "acos":
-            return math.acos(args[0])
+            return math.degrees(math.acos(args[0]))
         if name == "arcsin":
             return math.asin(args[0])
         if name == "asin":
@@ -317,8 +318,8 @@ def _starts_expr(token: str) -> bool:
 def _canonicalize_fsot_v4_formula(normalized: str) -> str:
     """Align portable eval with fsot_numeric_eval_v4 SMILES electrode conventions."""
     compact = normalized.replace(" ", "")
-    if compact == "theta-phi":
-        return "phi-theta"
+    if compact in ("theta-phi", "theta_s-phi"):
+        return "phi-theta_s"
     return normalized
 
 
