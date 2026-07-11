@@ -152,7 +152,7 @@ def main() -> int:
                 "fstar_scalar_boot",
                 "fsot_observer_serial",
             ],
-            "planned_tier_87": ["qemu_disk_boot_image"],
+            "tier_87_achieved": ["qemu_disk_boot_image", "bootloader_bootimage"],
             "deferred": ["metamath", "agda"],
             "all_free_no_account": True,
         },

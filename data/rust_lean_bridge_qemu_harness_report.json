@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-10T23:33:53.204623+00:00",
-  "tier": "86_rust_lean_bridge_qemu_harness",
+  "generated_at": "2026-07-11T00:21:42.447852+00:00",
+  "tier": "87_rust_lean_bridge_qemu_disk_boot",
   "serial_harness": {
     "status": "passed",
     "crate": "fsot_observer_serial",
@@ -12,12 +12,25 @@
     "returncode": 0,
     "stderr_tail": "FSOT 2.0 Bare-Metal Observer Kernel POC v0.1\nFluid Spacetime Omni-Theory - Parameter Free | QEMU x86_64\nBuilt with Rust no_std | FSOT Native Scalar Engine\n\nMapping boot to FSOT domain: KernelInit (D_eff=8, observed=True)\nComputed FSOT Scalar S_D_chaotic = 0.099289\nInterpretation: POSITIVE (Emergence) - New information flow detected.\nSystem entering high-coherence boot phase. Fluid spacetime active.\n\nFSOT k-scaled output demonstrates ~99% domain fit principle in bare metal.\nThis POC proves FSOT scalar computation is viable in no-OS environments.\n\nFSOT_SERIAL_BOOT_SCALAR=0.09928895626861721\nFSOT_SERIAL_CANONICAL=0.09928895626861721\nFSOT_SERIAL_DYNAMIC_CHECK=0.09928895626861721\n"
   },
+  "disk_boot": {
+    "status": "passed",
+    "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
+    "image": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\qemu\\fsot-kernel-bios.bin",
+    "bios": "C:\\Program Files\\qemu\\share\\bios.bin",
+    "boot_scalar": 0.0992889562686172,
+    "canonical": 0.0992889562686172,
+    "disk_boot": "ok",
+    "golden_match": true,
+    "emergence_detected": true,
+    "returncode": 33,
+    "serial_capture": "FSOT 2.0 Bare-Metal Observer Kernel POC v0.1\nFluid Spacetime Omni-Theory - Parameter Free | QEMU x86_64\nBuilt with Rust no_std | FSOT Native Scalar Engine\n\nMapping boot to FSOT domain: KernelInit (D_eff=8, observed=True)\nComputed FSOT Scalar S_D_chaotic = 0.099288\nInterpretation: POSITIVE (Emergence) - New information flow detected.\nSystem entering high-coherence boot phase. Fluid spacetime active.\n\nFSOT k-scaled output demonstrates ~99% domain fit principle in bare metal.\nThis POC proves FSOT scalar computation is viable in no-OS environments.\n\nTier 87 disk boot complete \u2014 halting for harness capture.\nFSOT_QEMU_BOOT_SCALAR=0.09928895626861720\nFSOT_QEMU_CANONICAL=0.09928895626861720\nFSOT_QEMU_DISK_BOOT=ok\n"
+  },
   "qemu": {
     "status": "passed",
-    "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.EXE",
+    "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
     "version": "QEMU emulator version 11.0.50 (v11.0.0-12631-g54e84cdc7a)",
-    "harness_mode": "serial_stdout_parity",
-    "note": "QEMU available; Tier 86 validates serial boot capture that mirrors VGA POC. Full no_std disk image boot is Tier 87.",
+    "harness_mode": "serial_stdout_parity_plus_disk_boot",
+    "note": "Tier 87 validates full no_std bootloader disk image boot with harness markers and chains Tier 86 serial stdout parity.",
     "serial_parity": {
       "status": "passed",
       "crate": "fsot_observer_serial",
@@ -29,8 +42,21 @@
       "returncode": 0,
       "stderr_tail": "FSOT 2.0 Bare-Metal Observer Kernel POC v0.1\nFluid Spacetime Omni-Theory - Parameter Free | QEMU x86_64\nBuilt with Rust no_std | FSOT Native Scalar Engine\n\nMapping boot to FSOT domain: KernelInit (D_eff=8, observed=True)\nComputed FSOT Scalar S_D_chaotic = 0.099289\nInterpretation: POSITIVE (Emergence) - New information flow detected.\nSystem entering high-coherence boot phase. Fluid spacetime active.\n\nFSOT k-scaled output demonstrates ~99% domain fit principle in bare metal.\nThis POC proves FSOT scalar computation is viable in no-OS environments.\n\nFSOT_SERIAL_BOOT_SCALAR=0.09928895626861721\nFSOT_SERIAL_CANONICAL=0.09928895626861721\nFSOT_SERIAL_DYNAMIC_CHECK=0.09928895626861721\n"
     },
+    "disk_boot": {
+      "status": "passed",
+      "tool": "C:\\Program Files\\qemu\\qemu-system-x86_64.exe",
+      "image": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\qemu\\fsot-kernel-bios.bin",
+      "bios": "C:\\Program Files\\qemu\\share\\bios.bin",
+      "boot_scalar": 0.0992889562686172,
+      "canonical": 0.0992889562686172,
+      "disk_boot": "ok",
+      "golden_match": true,
+      "emergence_detected": true,
+      "returncode": 33,
+      "serial_capture": "FSOT 2.0 Bare-Metal Observer Kernel POC v0.1\nFluid Spacetime Omni-Theory - Parameter Free | QEMU x86_64\nBuilt with Rust no_std | FSOT Native Scalar Engine\n\nMapping boot to FSOT domain: KernelInit (D_eff=8, observed=True)\nComputed FSOT Scalar S_D_chaotic = 0.099288\nInterpretation: POSITIVE (Emergence) - New information flow detected.\nSystem entering high-coherence boot phase. Fluid spacetime active.\n\nFSOT k-scaled output demonstrates ~99% domain fit principle in bare metal.\nThis POC proves FSOT scalar computation is viable in no-OS environments.\n\nTier 87 disk boot complete \u2014 halting for harness capture.\nFSOT_QEMU_BOOT_SCALAR=0.09928895626861720\nFSOT_QEMU_CANONICAL=0.09928895626861720\nFSOT_QEMU_DISK_BOOT=ok\n"
+    },
     "returncode": 0
   },
   "overall_ok": true,
-  "note": "Serial harness mirrors bare-metal VGA boot lines; QEMU layer confirms emulator availability and chains serial parity."
+  "note": "Serial harness mirrors VGA boot lines; disk boot runs bootimage-fsot-observer-kernel.bin under QEMU and captures FSOT_QEMU_* markers."
 }

@@ -95,7 +95,7 @@ coverage_audit:
   tier_84_achieved: rust f64 obligation replay (1309 obligations, cargo test)
   tier_85_achieved: rust_lean_bridge host runtime parity (bare-metal scalar kernel)
   tier_86_achieved: F* scalar spec + QEMU serial harness layered on runtime parity
-  tier_87_goal: full no_std QEMU disk boot image (bootloader crate)
+  tier_87_achieved: full no_std QEMU disk boot image (bootloader 0.9 + bootimage)
 
 isabelle_install:
   script: scripts/install_isabelle_windows.ps1
@@ -130,7 +130,7 @@ other_frameworks:
     status: implemented
     role: bare_metal_qemu_layer
     path: verification/rust/fsot_observer_serial
-    note: serial stdout parity + QEMU smoke (full disk boot Tier 87)
+    note: serial stdout parity + QEMU disk boot (Tier 87 bootimage)
     install_script: scripts/install_qemu_windows.ps1
     account_required: false
   - name: metamath

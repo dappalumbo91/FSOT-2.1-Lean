@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-11T00:21:22.496149+00:00",
+  "tier": "87_rust_lean_bridge_bootimage",
+  "kernel_root": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge",
+  "bootimage": "C:\\Users\\damia\\.cargo\\bin\\bootimage.EXE",
+  "build": {
+    "status": "passed",
+    "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\target\\x86_64-fsot-kernel\\release\\bootimage-fsot-observer-kernel.bin",
+    "output": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\verification\\qemu\\fsot-kernel-bios.bin",
+    "size_bytes": 85504,
+    "boot_signature": "55aa",
+    "returncode": 0,
+    "stderr_tail": "Building kernel\nBuilding bootloader\nCreated bootimage for `fsot-observer-kernel` at `C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge\\target\\x86_64-fsot-kernel\\release\\bootimage-fsot-observer-kernel.bin`\n   Compiling fsot-observer-kernel v0.1.0 (C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\rust_lean_bridge)\nwarning: function `inb` is never used\n  --> src\\main.rs:68:11\n   |\n68 | unsafe fn inb(port: u16) -> u8 {\n   |           ^^^\n   |\n   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default\n\nwarning: `fsot-observer-kernel` (bin \"fsot-observer-kernel\") generated 1 warning\n    Finished `release` profile [optimized] target(s) in 1.16s\n   Compiling bootloader v0.9.35 (C:\\Users\\damia\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\bootloader-0.9.35)\n    Finished `release` profile [optimized + debuginfo] target(s) in 2.79s\n"
+  },
+  "overall_ok": true
+}

@@ -3,19 +3,14 @@ name = "fsot-observer-kernel"
 version = "0.1.0"
 edition = "2021"
 authors = ["Damian Arthur Palumbo <dappalumbo91> + Grok (FSOT 2.0 Native)"]
-description = "FSOT 2.0 Native Bare-Metal Proof-of-Concept Kernel - Boots in QEMU, computes core scalar at boot as observer"
+description = "FSOT 2.0 Native Bare-Metal Kernel — Tier 87 bootloader QEMU disk boot"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/dappalumbo91/FSOT-2.0-code"
+repository = "https://github.com/dappalumbo91/FSOT-2.1-Lean"
 
 [dependencies]
-# For math functions in no_std (sin, cos, exp, ln, sqrt, etc.)
+bootloader = { version = "0.9.35", features = ["sse"] }
 libm = "0.2"
 
-# VGA buffer writing (volatile writes to prevent optimization)
-volatile = "0.4"
-
-# Optional but recommended for x86_64 instructions if expanding later
-# x86_64 = { version = "0.14", default-features = false, features = ["instructions"] }
 
 [profile.dev]
 panic = "abort"
@@ -23,9 +18,26 @@ opt-level = 1
 
 [profile.release]
 panic = "abort"
-opt-level = "z"  # Optimize for size, good for embedded-like
+opt-level = 3
 
-# Note for user: To build the bootable image you will need the `bootloader` crate
-# and proper target setup on your machine. This POC is structured to be easily
-# integrated with https://crates.io/crates/bootloader (v0.9+ recommended).
-# See build instructions in the README below or in response.
+[package.metadata.bootloader]
+kernel-stack-size = 256
+
+[package.metadata.bootimage]
+run-args = [
+    "-display", "none",
+    "-chardev", "stdio,mux=on,id=char0,signal=off",
+    "-serial", "chardev:char0",
+    "-device", "isa-debugcon,chardev=char0,iobase=0xe9",
+    "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04",
+    "-no-reboot",
+]
+test-args = [
+    "-display", "none",
+    "-chardev", "stdio,mux=on,id=char0,signal=off",
+    "-serial", "chardev:char0",
+    "-device", "isa-debugcon,chardev=char0,iobase=0xe9",
+    "-device", "isa-debug-exit,iobase=0xf4,iosize=0x04",
+    "-no-reboot",
+]
+test-timeout = 15

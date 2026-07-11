@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Tier 86 wide cross-proof verification runner.
+Tier 87 wide cross-proof verification runner.
 
 Layers:
   1. Export obligations from full FSOT/Formal corpus
@@ -13,7 +13,8 @@ Layers:
   8. Rust f64 executable obligation replay (fourth check)
   9. rust_lean_bridge host runtime parity (bare-metal scalar kernel)
   10. F* programming-language formal verification (scalar spec)
-  11. QEMU bare-metal serial harness (stdout parity + QEMU smoke)
+  11. QEMU bare-metal serial harness (stdout parity)
+  12. QEMU no_std disk boot image (bootloader crate + harness markers)
 """
 
 from __future__ import annotations
@@ -404,6 +405,7 @@ def run_qemu_harness() -> dict:
         return {
             "status": "passed" if r.returncode == 0 else "failed",
             "serial_status": (doc.get("serial_harness") or {}).get("status"),
+            "disk_status": (doc.get("disk_boot") or {}).get("status"),
             "qemu_status": (doc.get("qemu") or {}).get("status"),
             "returncode": r.returncode,
             "stderr_tail": ((r.stdout or "") + (r.stderr or ""))[-2000:],
@@ -648,9 +650,15 @@ def main() -> int:
             and bridge_parity.get("status") == "passed"
             and fstar.get("status") == "passed"
             and qemu_harness.get("status") == "passed",
+        "seven_way_bare_metal": py_ok
+            and rust.get("status") == "passed"
+            and bridge_parity.get("status") == "passed"
+            and fstar.get("status") == "passed"
+            and qemu_harness.get("status") == "passed"
+            and qemu_harness.get("disk_status") == "passed",
         "note": (
-            "Tier 86: Lean+Coq+Isabelle+Rust replay+rust_lean_bridge parity+F* scalar spec "
-            "+ QEMU serial harness."
+            "Tier 87: Lean+Coq+Isabelle+Rust replay+rust_lean_bridge parity+F* scalar spec "
+            "+ QEMU serial harness + no_std disk boot image."
         ),
     }
     REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
@@ -660,7 +668,7 @@ def main() -> int:
         cwd=str(ROOT),
     )
 
-    print("CROSS-PROOF VERIFICATION (Tier 86 wide)")
+    print("CROSS-PROOF VERIFICATION (Tier 87 wide)")
     print(f"  connective obligations: {connective['obligation_count']}")
     print(f"  full formal obligations: {formal['obligation_count']} ({formal.get('modules_exported')} modules)")
     print(f"  provable: {len(provable_formal)} | margin violations: {len(margin_violations)}")
@@ -694,8 +702,10 @@ def main() -> int:
     print(f"  fstar_refinement: {'PASS' if fstar_refinement_ok else 'FAIL'}")
     print(
         f"  qemu_harness: {qemu_harness.get('status')} "
-        f"(serial={qemu_harness.get('serial_status')}, qemu={qemu_harness.get('qemu_status')})"
+        f"(serial={qemu_harness.get('serial_status')}, disk={qemu_harness.get('disk_status')}, "
+        f"qemu={qemu_harness.get('qemu_status')})"
     )
+    print(f"  seven_way_bare_metal: {report.get('seven_way_bare_metal')}")
     print(f"  four_way_verification: {report.get('four_way_verification')}")
     print(f"  five_way_runtime: {report.get('five_way_runtime')}")
     print(f"  six_way_formal_executable: {report.get('six_way_formal_executable')}")

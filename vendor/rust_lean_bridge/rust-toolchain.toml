@@ -1,0 +1,5 @@
+[toolchain]
+channel = "nightly"
+components = ["rust-src", "llvm-tools-preview"]
+targets = ["x86_64-unknown-none"]
+# custom target via x86_64-fsot-kernel.json in project root
