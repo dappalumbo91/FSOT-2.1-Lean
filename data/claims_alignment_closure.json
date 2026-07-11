@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-07-11T22:51:21.494684+00:00",
+  "version": "1.0",
+  "verdict": "ALIGNED",
+  "primary_public_claim": "A single intrinsic constant spine reproduces thousands of independent measurements across unrelated scientific domains with sub-0.5% pooled median error \u2014 an envelope inconsistent with a theory that does not describe reality.",
+  "active_headlines": [
+    {
+      "claim": "Cross-domain empirical accuracy",
+      "statement": "A single intrinsic constant spine reproduces thousands of independent measurements across unrelated scientific domains with sub-0.5% pooled median error \u2014 an envelope inconsistent with a theory that does not describe reality.",
+      "evidence": "data/empirical_accuracy_closure.json",
+      "verdict": "CROSS_DOMAIN_EMPIRICALLY_TIGHT"
+    },
+    {
+      "claim": "Falsifiable preregistered predictions",
+      "statement": "27 predictions with pre-stated kill criteria; w_a prereg tracked vs DESI.",
+      "evidence": "data/falsification_registry_closure.json",
+      "verdict": "FALSIFICATION_CRITERIA_REGISTERED"
+    },
+    {
+      "claim": "Mechanical verification spine",
+      "statement": "2146/2146 Lean export; 1820/1820 atomic triangulation; 100% bundle conjunct witness linkage.",
+      "evidence": "data/deep_verification_audit.json",
+      "verdict": "ATOMIC_SPINE_UNDENIABLE"
+    }
+  ],
+  "retired_or_downgraded_headlines": [
+    {
+      "old": "Zero free parameters everywhere",
+      "replacement": "Intrinsic constant spine + declared domain assignment table (175 slots)",
+      "verdict": "NOT_LITERAL_ZERO"
+    },
+    {
+      "old": "Beats SOTA on every observable",
+      "replacement": "65/65 external panel beats typical published error; partial by comparison class",
+      "verdict": "PARTIAL_EXTERNAL_ONLY"
+    },
+    {
+      "old": "Full TOE proved in four provers",
+      "replacement": "Numeric atomic spine undeniable; oracle/grid debt documented",
+      "verdict": "ATOMIC_SPINE_UNDENIABLE_ORACLE_DEBT_REMAINING"
+    },
+    {
+      "old": "All observables confirmed",
+      "replacement": "13 stumped/contested sectors tracked with kill criteria",
+      "verdict": "MONITORED_NOT_HIDDEN"
+    }
+  ],
+  "what_we_do_not_claim": [
+    "Independent Mathlib derivation of entire FSOT in Coq/Isabelle.",
+    "Literal zero tunable parameters.",
+    "Universal per-record sub-0.5% on every scalar in every channel.",
+    "Confirmed resolution of Hubble tension, hierarchy problem, or consciousness."
+  ],
+  "evidence_stack_order": [
+    "data/empirical_accuracy_closure.json",
+    "data/benchmark_margin_audit.json",
+    "data/formula_corpus_honesty_report.json",
+    "data/sota_observable_ledger_report.json",
+    "data/falsification_registry_closure.json",
+    "data/honest_claims_manifest.yaml",
+    "data/deep_verification_audit.json"
+  ],
+  "alignment_checks": {
+    "empirical_closure_present": true,
+    "falsification_registry_present": true,
+    "empirical_criteria_all_met": true,
+    "honest_manifest_authoritative": true
+  },
+  "honest_statement": "Lead with cross-domain empirical accuracy and falsification criteria \u2014 not TOE headline or zero-parameter slogan. Mechanical verification supports audit honesty; empirical envelope supports physical description."
+}

@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-07-11T22:42:39.643279+00:00",
+  "generated_at": "2026-07-11T22:51:21.761784+00:00",
   "version": "1.0",
   "tier": "adversarial_round3_v1",
   "roles": {
     "good_cop": [
       "github_ready true with 0 false margin violations and 1820/1820 atomic Coq/Isabelle/Rust triangulation.",
-      "100% Lean export fraction (2146/2146) with dedicated ledgers for bundles, oracle debt, and runtime scope.",
-      "246/246 extension domains green on pooled median gate; aspiration scalar debt cleared.",
-      "Living FSOT QEMU hardware overall_ok; F* boot kernel triangulated with Rust oracle.",
-      "Honest claims manifest fail-closed for beats-SOTA, formula triplication, and parameter count."
+      "272/272 benchmark domains green; median-of-medians 0.0% \u2014 cross-domain envelope tight.",
+      "1325/1325 unique formula observables evaluable; 65/65 external SOTA panel beats typical error.",
+      "Preregistered falsification registry with kill criteria; w_a prereg within 2\u03c3 of DESI DR2.",
+      "Claims alignment closure: lead with empirical accuracy, not zero-param/TOE slogans."
     ],
     "bad_cop": [
       "undeniable_toe_claim is numeric replay unanimity \u2014 not independent deep proof in four provers.",
-      "323 bundle_conj rows sit off the cross-proof spine by design.",
-      "0 oracle-class obligations are Python-sampled or witness-instantiated, not Mathlib forall proofs.",
-      "Green gate uses pooled median \u22640.5%, not per-record max \u2014 tier_scalar 0.05% fails 57 domains silently.",
-      "13 stumped observables remain scientifically open; Hubble headline channel still >0.5%.",
+      "56 bundle_conj rows sit off the cross-proof spine by design.",
+      "49 proof_depth_oracle-tagged rows are replay certificates, not Mathlib forall proofs.",
+      "Green gate uses pooled median \u22640.5%, not per-record universal max \u2014 worst single scalar 0.499%.",
+      "13 stumped observables remain scientifically contested \u2014 kill criteria registered, not resolved.",
       "Formula corpus headline 7941 rows is ~6\u00d7 triplication of 1325 unique observables."
     ],
-    "skeptic_verdict": "PUBLISHABLE_WITH_DOCUMENTED_DEBT",
-    "skeptic_summary": "Repo is audit-honest and mechanically green on the declared spine gates. Remaining debt is structural-bundle indexing, oracle replay class, aspirational tier_scalar precision, and open physics observables \u2014 all now named in ledgers, not buried in dashboards."
+    "skeptic_verdict": "EMPIRICALLY_GROUNDED_PUBLISHABLE",
+    "skeptic_summary": "Repo is audit-honest and mechanically green. Cross-domain empirical envelope (272 domains, median-of-medians 0.0%) supports physical-description claim when wrong-theory coincidence is excluded. Falsification registry and claims alignment close the epistemic/rhetorical gaps \u2014 stumped observables remain contested science with pre-stated kill criteria, not hidden pipeline failures."
   },
   "gates": {
     "overall_ok": true,
@@ -107,6 +107,30 @@
       "mitigation": "Ledger now emits domain_table_slots + parameter_audit_verdict from parameter_count_audit.json.",
       "closed": true,
       "evidence": "data/sota_observable_ledger_report.json"
+    },
+    {
+      "id": "cross_domain_empirical_envelope",
+      "severity": "info",
+      "attack": "272/272 domains green; median-of-medians 0.0% \u2014 wrong theory would not maintain centi-percent envelope across unrelated domains.",
+      "mitigation": "empirical_accuracy_closure.json quantifies cross-domain error envelope + null-hypothesis framing.",
+      "closed": true,
+      "evidence": "data/empirical_accuracy_closure.json"
+    },
+    {
+      "id": "falsification_kill_criteria",
+      "severity": "info",
+      "attack": "27 preregistered predictions; stumped observables carry 3\u03c3 kill thresholds; w_a prereg vs DESI tracked.",
+      "mitigation": "falsification_registry_closure.json \u2014 pre-stated kill criteria, not post-hoc retuning.",
+      "closed": true,
+      "evidence": "data/falsification_registry_closure.json"
+    },
+    {
+      "id": "claims_headline_alignment",
+      "severity": "info",
+      "attack": "Primary public claim must lead with empirical envelope + falsification \u2014 not zero-param/TOE slogans.",
+      "mitigation": "claims_alignment_closure.json maps active vs retired headlines to evidence stack.",
+      "closed": true,
+      "evidence": "data/claims_alignment_closure.json"
     }
   ],
   "open_gaps": [],

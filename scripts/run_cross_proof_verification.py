@@ -954,6 +954,9 @@ def main() -> int:
         "audit_scientific_pushback_coverage.py",
         "build_adversarial_round3_audit.py",
         "build_tier_scalar_precision_closure.py",
+        "build_empirical_accuracy_closure.py",
+        "build_falsification_registry_closure.py",
+        "build_claims_alignment_closure.py",
     ):
         subprocess.run([sys.executable, str(ROOT / "scripts" / script)], cwd=str(ROOT))
 

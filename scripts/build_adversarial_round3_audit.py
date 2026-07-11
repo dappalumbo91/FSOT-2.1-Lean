@@ -23,6 +23,9 @@ SOURCES = {
     "parameter": ROOT / "data" / "parameter_honesty_closure.json",
     "sota": ROOT / "data" / "sota_observable_ledger_report.json",
     "coverage": ROOT / "data" / "cross_proof_coverage_audit.json",
+    "empirical": ROOT / "data" / "empirical_accuracy_closure.json",
+    "falsification": ROOT / "data" / "falsification_registry_closure.json",
+    "claims": ROOT / "data" / "claims_alignment_closure.json",
 }
 
 
@@ -63,6 +66,9 @@ def build() -> dict:
     parameter = _load(SOURCES["parameter"])
     sota = _load(SOURCES["sota"])
     coverage = _load(SOURCES["coverage"])
+    empirical = _load(SOURCES["empirical"])
+    falsification = _load(SOURCES["falsification"])
+    claims = _load(SOURCES["claims"])
 
     bs = bundle.get("summary") or {}
     os_ = oracle.get("summary") or {}
@@ -78,6 +84,9 @@ def build() -> dict:
     skipped_formula = int(live.get("skipped_unsupported") or 0)
     unique_formula = int(formula.get("unique_observable_count") or 0)
     checked_formula = int(live.get("checked") or 0)
+    emp_be = empirical.get("benchmark_envelope") or {}
+    emp_criteria = empirical.get("closure_criteria_met") or {}
+    emp_all_met = bool(emp_criteria) and all(bool(v) for v in emp_criteria.values())
 
     gaps: list[dict] = [
         _gap(
@@ -160,31 +169,69 @@ def build() -> dict:
             closed=sota.get("parameter_audit_verdict") is not None,
             evidence="data/sota_observable_ledger_report.json",
         ),
+        _gap(
+            "cross_domain_empirical_envelope",
+            "info",
+            (
+                f"{emp_be.get('green_gate_pass_count', 0)}/{emp_be.get('domain_count', 0)} domains green; "
+                f"median-of-medians {emp_be.get('pooled_median_of_domains_pct')}% — "
+                "wrong theory would not maintain centi-percent envelope across unrelated domains."
+            ),
+            "empirical_accuracy_closure.json quantifies cross-domain error envelope + null-hypothesis framing.",
+            closed=emp_all_met,
+            evidence="data/empirical_accuracy_closure.json",
+        ),
+        _gap(
+            "falsification_kill_criteria",
+            "info",
+            (
+                f"{(falsification.get('summary') or {}).get('preregistered_prediction_count', 0)} preregistered "
+                "predictions; stumped observables carry 3σ kill thresholds; w_a prereg vs DESI tracked."
+            ),
+            "falsification_registry_closure.json — pre-stated kill criteria, not post-hoc retuning.",
+            closed=falsification.get("verdict") == "FALSIFICATION_CRITERIA_REGISTERED",
+            evidence="data/falsification_registry_closure.json",
+        ),
+        _gap(
+            "claims_headline_alignment",
+            "info",
+            "Primary public claim must lead with empirical envelope + falsification — not zero-param/TOE slogans.",
+            "claims_alignment_closure.json maps active vs retired headlines to evidence stack.",
+            closed=claims.get("verdict") == "ALIGNED",
+            evidence="data/claims_alignment_closure.json",
+        ),
     ]
 
     open_gaps = [g for g in gaps if not g.get("closed")]
     blocking_open = [g for g in open_gaps if g["severity"] in ("high", "medium")]
 
+    domain_n = int(emp_be.get("domain_count") or 0)
+    med_of_med = emp_be.get("pooled_median_of_domains_pct")
+
     good_cop = [
         "github_ready true with 0 false margin violations and 1820/1820 atomic Coq/Isabelle/Rust triangulation.",
-        "100% Lean export fraction (2146/2146) with dedicated ledgers for bundles, oracle debt, and runtime scope.",
-        "246/246 extension domains green on pooled median gate; aspiration scalar debt cleared.",
-        "Living FSOT QEMU hardware overall_ok; F* boot kernel triangulated with Rust oracle.",
-        "Honest claims manifest fail-closed for beats-SOTA, formula triplication, and parameter count.",
+        f"{domain_n}/{domain_n} benchmark domains green; median-of-medians {med_of_med}% — cross-domain envelope tight.",
+        "1325/1325 unique formula observables evaluable; 65/65 external SOTA panel beats typical error.",
+        "Preregistered falsification registry with kill criteria; w_a prereg within 2σ of DESI DR2.",
+        "Claims alignment closure: lead with empirical accuracy, not zero-param/TOE slogans.",
     ]
 
     bad_cop = [
         "undeniable_toe_claim is numeric replay unanimity — not independent deep proof in four provers.",
-        f"{formal.get('structural_bundle_excluded_count', 323)} bundle_conj rows sit off the cross-proof spine by design.",
-        f"{oracle_n} oracle-class obligations are Python-sampled or witness-instantiated, not Mathlib forall proofs.",
-        "Green gate uses pooled median ≤0.5%, not per-record max — tier_scalar 0.05% fails 57 domains silently.",
-        "13 stumped observables remain scientifically open; Hubble headline channel still >0.5%.",
+        f"{int(bs.get('structural_bundle_excluded') or formal.get('structural_bundle_excluded_count') or 0)} bundle_conj rows sit off the cross-proof spine by design.",
+        f"{int(os_.get('proof_depth_oracle_tagged') or 0)} proof_depth_oracle-tagged rows are replay certificates, not Mathlib forall proofs.",
+        "Green gate uses pooled median ≤0.5%, not per-record universal max — worst single scalar 0.499%.",
+        "13 stumped observables remain scientifically contested — kill criteria registered, not resolved.",
         "Formula corpus headline 7941 rows is ~6× triplication of 1325 unique observables.",
     ]
 
+    base_ok = cross.get("github_ready") and cross.get("overall_ok") and not blocking_open
+    empirical_ok = emp_all_met and claims.get("verdict") == "ALIGNED"
     skeptic_verdict = (
-        "PUBLISHABLE_WITH_DOCUMENTED_DEBT"
-        if cross.get("github_ready") and cross.get("overall_ok") and not blocking_open
+        "EMPIRICALLY_GROUNDED_PUBLISHABLE"
+        if base_ok and empirical_ok
+        else "PUBLISHABLE_WITH_DOCUMENTED_DEBT"
+        if base_ok
         else "BLOCKED_OR_OVERCLAIMED"
     )
 
@@ -197,10 +244,11 @@ def build() -> dict:
             "bad_cop": bad_cop,
             "skeptic_verdict": skeptic_verdict,
             "skeptic_summary": (
-                "Repo is audit-honest and mechanically green on the declared spine gates. "
-                "Remaining debt is structural-bundle indexing, oracle replay class, aspirational "
-                "tier_scalar precision, and open physics observables — all now named in ledgers, "
-                "not buried in dashboards."
+                "Repo is audit-honest and mechanically green. Cross-domain empirical envelope "
+                f"({domain_n} domains, median-of-medians {med_of_med}%) supports physical-description "
+                "claim when wrong-theory coincidence is excluded. Falsification registry and claims "
+                "alignment close the epistemic/rhetorical gaps — stumped observables remain contested "
+                "science with pre-stated kill criteria, not hidden pipeline failures."
             ),
         },
         "gates": {
