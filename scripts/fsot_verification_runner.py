@@ -659,6 +659,7 @@ def main() -> int:
             ("verify_lean_proofs_bridge.py", "Lean Proofs bridge verification failed"),
             ("verify_formula_corpus.py", "Formula corpus strict-empirical verification failed"),
             ("verify_sota_observable_ledger.py", "SOTA observable ledger verification failed"),
+            ("audit_all_benchmark_margins.py", "Benchmark margin audit failed"),
             ("verify_cellular_lab.py", "Cellular lab verification failed"),
             ("verify_blackhole_thesis.py", "BlackHole thesis verification failed"),
             ("verify_cosmology_bubble_bleed.py", "Cosmology bubble bleed verification failed"),

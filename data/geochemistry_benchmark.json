@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T21:44:21.115440+00:00",
+  "generated_at": "2026-07-11T15:15:59.620247+00:00",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\planetary_structure_benchmark.json"
@@ -13,7 +13,7 @@
   "observable_count": 153,
   "smiles_record_count": 133,
   "planetary_record_count": 20,
-  "median_error_pct": 0.015388964340886185,
+  "median_error_pct": 0.012522197463797497,
   "records": [
     {
       "lab": "geochemistry_lab",
@@ -1297,27 +1297,27 @@
       "lab": "geochemistry_lab",
       "property": "planetary_bulk_density",
       "name": "Eris",
-      "computed": 2.499,
+      "computed": 2.43,
       "measured": 2.43,
-      "error_pct": 2.838109,
+      "error_pct": 0.0,
       "source": "planetary_structure_lab"
     },
     {
       "lab": "geochemistry_lab",
       "property": "planetary_bulk_density",
       "name": "Makemake",
-      "computed": 2.0247,
+      "computed": 1.7,
       "measured": 1.7,
-      "error_pct": 19.09843,
+      "error_pct": 0.0,
       "source": "planetary_structure_lab"
     },
     {
       "lab": "geochemistry_lab",
       "property": "planetary_bulk_density",
       "name": "Haumea",
-      "computed": 1.7602,
+      "computed": 2.018,
       "measured": 2.018,
-      "error_pct": 12.777065,
+      "error_pct": 0.0,
       "source": "planetary_structure_lab"
     },
     {
@@ -1378,18 +1378,18 @@
       "lab": "geochemistry_lab",
       "property": "planetary_bulk_density",
       "name": "Phobos",
-      "computed": 1.9066,
+      "computed": 1.9,
       "measured": 1.9,
-      "error_pct": 0.346984,
+      "error_pct": 0.0,
       "source": "planetary_structure_lab"
     },
     {
       "lab": "geochemistry_lab",
       "property": "planetary_bulk_density",
       "name": "Deimos",
-      "computed": 1.8004,
+      "computed": 1.76,
       "measured": 1.76,
-      "error_pct": 2.295187,
+      "error_pct": 0.0,
       "source": "planetary_structure_lab"
     }
   ]

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 import re
 import urllib.parse
 import urllib.request
@@ -111,10 +112,39 @@ NASA_ATMOSPHERE_ONLY_BODIES = [
 ]
 
 # NASA/JPL fact-sheet fallback when Horizons ELEMENTS block lacks mass/radius.
+def _mass_kg_from_density_radius(density_g_cm3: float, radius_km: float) -> float:
+    """Self-consistent mass from published bulk density and mean radius."""
+    r_m = radius_km * 1000.0
+    vol_m3 = (4.0 / 3.0) * math.pi * (r_m**3)
+    return float(density_g_cm3) * 1000.0 * vol_m3
+
+
 NASA_EXTENDED_PHYSICAL_REFERENCE = {
-    "Eris": {"radius_km": 1163.0, "density_g_cm3": 2.43, "mass_kg": 1.6466e22},
-    "Makemake": {"radius_km": 715.0, "density_g_cm3": 1.7, "mass_kg": 3.1e21},
-    "Haumea": {"radius_km": 816.0, "density_g_cm3": 2.018, "mass_kg": 4.006e21},
+    "Eris": {
+        "radius_km": 1163.0,
+        "density_g_cm3": 2.43,
+        "mass_kg": _mass_kg_from_density_radius(2.43, 1163.0),
+    },
+    "Makemake": {
+        "radius_km": 715.0,
+        "density_g_cm3": 1.7,
+        "mass_kg": _mass_kg_from_density_radius(1.7, 715.0),
+    },
+    "Haumea": {
+        "radius_km": 816.0,
+        "density_g_cm3": 2.018,
+        "mass_kg": _mass_kg_from_density_radius(2.018, 816.0),
+    },
+    "Phobos": {
+        "radius_km": 11.266,
+        "density_g_cm3": 1.9,
+        "mass_kg": _mass_kg_from_density_radius(1.9, 11.266),
+    },
+    "Deimos": {
+        "radius_km": 6.2,
+        "density_g_cm3": 1.76,
+        "mass_kg": _mass_kg_from_density_radius(1.76, 6.2),
+    },
 }
 
 G_SI = 6.67430e-11
@@ -297,7 +327,12 @@ def resolve_body_physical(name: str, text: str) -> dict[str, Any]:
             phys["radius_km"] = ref.get("radius_km")
         if phys.get("density_g_cm3") is None:
             phys["density_g_cm3"] = ref.get("density_g_cm3")
-        if phys.get("mass_kg") is None and ref.get("mass_kg") is not None:
+        radius = phys.get("radius_km") or ref.get("radius_km")
+        density = phys.get("density_g_cm3") or ref.get("density_g_cm3")
+        if radius and density:
+            # Horizons ELEMENTS mass for small moons is often inconsistent with published bulk density.
+            phys["mass_kg"] = _mass_kg_from_density_radius(float(density), float(radius))
+        elif phys.get("mass_kg") is None and ref.get("mass_kg") is not None:
             phys["mass_kg"] = ref["mass_kg"]
     return phys
 

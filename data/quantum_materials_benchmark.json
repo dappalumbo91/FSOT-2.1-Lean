@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-09T11:54:47.441193+00:00",
+  "generated_at": "2026-07-11T15:12:53.357588+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
   "source_repo": "vendor/smiles",
@@ -12,62 +12,62 @@
   "record_count": 168,
   "observable_count": 168,
   "section_count": 13,
-  "median_error_pct": 0.08247836447365957,
-  "headline_median_error_pct": 0.08247836447365957,
-  "pooled_median_error_pct": 0.08247836447365957,
+  "median_error_pct": 0.024318115591995593,
+  "headline_median_error_pct": 0.01692529386942307,
+  "pooled_median_error_pct": 0.024318115591995593,
   "section_decomposition": {
     "\u00a713 \u03c7m Magnetic": {
       "record_count": 12,
-      "median_error_pct": 0.40339,
-      "max_error_pct": 0.788741,
+      "median_error_pct": 0.07886241597993855,
+      "max_error_pct": 0.483271,
       "min_error_pct": 0.007155
     },
     "\u00a718 Crystal Field \u0394o": {
       "record_count": 10,
-      "median_error_pct": 0.458047,
-      "max_error_pct": 0.953594,
+      "median_error_pct": 0.07662024786017463,
+      "max_error_pct": 0.458047,
       "min_error_pct": 0.01251966434214848
     },
     "\u00a719 NMR \u03b4": {
       "record_count": 12,
-      "median_error_pct": 0.149246,
-      "max_error_pct": 0.819727,
-      "min_error_pct": 0.0004998357268674407
+      "median_error_pct": 0.059472,
+      "max_error_pct": 0.451494,
+      "min_error_pct": 1.6148698540002278e-14
     },
     "\u00a729 Dielectric \u03b5r": {
       "record_count": 15,
-      "median_error_pct": 0.175537,
-      "max_error_pct": 0.930326,
+      "median_error_pct": 0.010899057024009184,
+      "max_error_pct": 0.175537,
       "min_error_pct": 0.0011130444684067755
     },
     "\u00a731 Band Gaps": {
       "record_count": 12,
-      "median_error_pct": 0.022457617256372974,
-      "max_error_pct": 0.742087,
+      "median_error_pct": 0.012196976490588003,
+      "max_error_pct": 0.476604,
       "min_error_pct": 0.00105
     },
     "\u00a733 Debye Temps": {
       "record_count": 15,
-      "median_error_pct": 0.0783670756628441,
-      "max_error_pct": 0.857198,
+      "median_error_pct": 0.074182,
+      "max_error_pct": 0.489023,
       "min_error_pct": 0.0012926646978643696
     },
     "\u00a738 Resistivity \u03c1": {
       "record_count": 15,
-      "median_error_pct": 0.07994658656356664,
-      "max_error_pct": 0.902477,
+      "median_error_pct": 0.0187340061680476,
+      "max_error_pct": 0.366839,
       "min_error_pct": 0.0005618458987341083
     },
     "\u00a74b Lattice Energies": {
       "record_count": 11,
-      "median_error_pct": 0.622205,
-      "max_error_pct": 0.810213,
+      "median_error_pct": 0.05409120281816008,
+      "max_error_pct": 0.424443,
       "min_error_pct": 0.0001252130200375463
     },
     "\u00a752 \u00b9\u00b3C NMR \u03b4": {
       "record_count": 15,
       "median_error_pct": 0.0152342957866489,
-      "max_error_pct": 0.927845,
+      "max_error_pct": 0.134146,
       "min_error_pct": 0.0
     },
     "\u00a755 \u03bceff Magnetic": {
@@ -78,28 +78,28 @@
     },
     "\u00a763 Lattice Param": {
       "record_count": 15,
-      "median_error_pct": 0.145379,
-      "max_error_pct": 0.63899,
+      "median_error_pct": 0.045255551811745114,
+      "max_error_pct": 0.325376,
       "min_error_pct": 4.336236162789793e-05
     },
     "\u00a775 Superconducting Tc": {
       "record_count": 12,
-      "median_error_pct": 0.11911,
-      "max_error_pct": 0.977055,
+      "median_error_pct": 0.01692529386942307,
+      "max_error_pct": 0.243155,
       "min_error_pct": 0.0014301003278479221
     },
     "\u00a776 Magnetic Ordering T": {
       "record_count": 12,
-      "median_error_pct": 0.05572483548518381,
-      "max_error_pct": 0.669026,
+      "median_error_pct": 0.036760785806193276,
+      "max_error_pct": 0.342402,
       "min_error_pct": 0.0007
     }
   },
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "headline_observables": {
-      "pooled_median_error_pct": 0.08247836447365957,
-      "headline_median_error_pct": 0.08247836447365957,
+      "pooled_median_error_pct": 0.024318115591995593,
+      "headline_median_error_pct": 0.01692529386942307,
       "section_count": 13
     },
     "operational_baselines": {
@@ -148,18 +148,18 @@
       "lab": "quantum_materials_lab",
       "property": "pooled_condensed_matter_median",
       "name": "all_sections",
-      "computed": 0.082478,
+      "computed": 0.024318,
       "measured": 0.0,
-      "error_pct": 0.08247836447365957,
+      "error_pct": 0.024318115591995593,
       "observable_count": 168
     },
     {
       "lab": "quantum_materials_lab",
       "property": "section_median_sec31_band_gaps",
       "name": "\u00a731 Band Gaps",
-      "computed": 0.022458,
+      "computed": 0.012197,
       "measured": 0.0,
-      "error_pct": 0.022457617256372974,
+      "error_pct": 0.012196976490588003,
       "observable_count": 12,
       "section": "\u00a731 Band Gaps"
     },
@@ -167,9 +167,9 @@
       "lab": "quantum_materials_lab",
       "property": "section_median_sec18_crystal_field_deltao",
       "name": "\u00a718 Crystal Field \u0394o",
-      "computed": 0.458047,
+      "computed": 0.07662,
       "measured": 0.0,
-      "error_pct": 0.458047,
+      "error_pct": 0.07662024786017463,
       "observable_count": 10,
       "section": "\u00a718 Crystal Field \u0394o"
     },
@@ -187,9 +187,9 @@
       "lab": "quantum_materials_lab",
       "property": "section_median_sec75_superconducting_tc",
       "name": "\u00a775 Superconducting Tc",
-      "computed": 0.11911,
+      "computed": 0.016925,
       "measured": 0.0,
-      "error_pct": 0.11911,
+      "error_pct": 0.01692529386942307,
       "observable_count": 12,
       "section": "\u00a775 Superconducting Tc"
     }
@@ -207,9 +207,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a74b Lattice Energies",
       "name": "KCl",
-      "computed": 709.4484782780166,
+      "computed": 715.8461282477037,
       "measured": 715.0,
-      "error_pct": 0.776437
+      "error_pct": 0.11833961506346094
     },
     {
       "lab": "quantum_materials_lab",
@@ -231,25 +231,25 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a74b Lattice Energies",
       "name": "MgO",
-      "computed": 3876.1464572090867,
+      "computed": 3848.3007135394014,
       "measured": 3850.0,
-      "error_pct": 0.679129
+      "error_pct": 0.04413731066489907
     },
     {
       "lab": "quantum_materials_lab",
       "property": "\u00a74b Lattice Energies",
       "name": "CaO",
-      "computed": 3438.482021400196,
+      "computed": 3459.1279034704635,
       "measured": 3461.0,
-      "error_pct": 0.650621
+      "error_pct": 0.05409120281816008
     },
     {
       "lab": "quantum_materials_lab",
       "property": "\u00a74b Lattice Energies",
       "name": "CsCl",
-      "computed": 652.7614999116079,
+      "computed": 657.5009994934722,
       "measured": 657.0,
-      "error_pct": 0.645129
+      "error_pct": 0.07625563066548705
     },
     {
       "lab": "quantum_materials_lab",
@@ -263,9 +263,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a74b Lattice Energies",
       "name": "KBr",
-      "computed": 677.7565650989357,
+      "computed": 681.7391833887611,
       "measured": 682.0,
-      "error_pct": 0.622205
+      "error_pct": 0.03824290487373192
     },
     {
       "lab": "quantum_materials_lab",
@@ -279,9 +279,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a74b Lattice Energies",
       "name": "MgF\u2082",
-      "computed": 2980.9579870417283,
+      "computed": 2953.920187285829,
       "measured": 2957.0,
-      "error_pct": 0.810213
+      "error_pct": 0.10415328759455908
     },
     {
       "lab": "quantum_materials_lab",
@@ -295,25 +295,25 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a713 \u03c7m Magnetic",
       "name": "NaCl",
-      "computed": -30.0903110861226,
+      "computed": -30.30958099228724,
       "measured": -30.3,
-      "error_pct": 0.692043
+      "error_pct": 0.031620436591552864
     },
     {
       "lab": "quantum_materials_lab",
       "property": "\u00a713 \u03c7m Magnetic",
       "name": "C(diamond)",
-      "computed": -5.938136372072465,
+      "computed": -5.898305706806974,
       "measured": -5.9,
-      "error_pct": 0.646379
+      "error_pct": 0.028716833780100707
     },
     {
       "lab": "quantum_materials_lab",
       "property": "\u00a713 \u03c7m Magnetic",
       "name": "C\u2086H\u2086",
-      "computed": -54.36776986267844,
+      "computed": -54.75678339604299,
       "measured": -54.8,
-      "error_pct": 0.788741
+      "error_pct": 0.07886241597993855
     },
     {
       "lab": "quantum_materials_lab",
@@ -343,9 +343,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a713 \u03c7m Magnetic",
       "name": "Si",
-      "computed": -3.141592653589793,
+      "computed": -3.1203064173375847,
       "measured": -3.12,
-      "error_pct": 0.692072
+      "error_pct": 0.00982106851232789
     },
     {
       "lab": "quantum_materials_lab",
@@ -383,9 +383,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a718 Crystal Field \u0394o",
       "name": "[Ti(H\u2082O)\u2086]\u00b3\u207a",
-      "computed": 20431.790000290413,
+      "computed": 20302.618488435135,
       "measured": 20300.0,
-      "error_pct": 0.649212
+      "error_pct": 0.012898957808547181
     },
     {
       "lab": "quantum_materials_lab",
@@ -415,9 +415,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a718 Crystal Field \u0394o",
       "name": "[Cr(CN)\u2086]\u00b3\u207b",
-      "computed": 26853.655929795324,
+      "computed": 26650.091125009265,
       "measured": 26600.0,
-      "error_pct": 0.953594
+      "error_pct": 0.1883125000348306
     },
     {
       "lab": "quantum_materials_lab",
@@ -439,9 +439,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a718 Crystal Field \u0394o",
       "name": "[Fe(H\u2082O)\u2086]\u00b2\u207a",
-      "computed": 10486.448687229142,
+      "computed": 10415.98506936773,
       "measured": 10400.0,
-      "error_pct": 0.831237
+      "error_pct": 0.1537025900743349
     },
     {
       "lab": "quantum_materials_lab",
@@ -455,9 +455,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a718 Crystal Field \u0394o",
       "name": "[Mn(H\u2082O)\u2086]\u00b2\u207a",
-      "computed": 8560.607961933852,
+      "computed": 8506.512721068115,
       "measured": 8500.0,
-      "error_pct": 0.713035
+      "error_pct": 0.07662024786017463
     },
     {
       "lab": "quantum_materials_lab",
@@ -535,9 +535,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a719 NMR \u03b4",
       "name": "RCOOH",
-      "computed": 11.090169943749475,
+      "computed": 11.000000000000002,
       "measured": 11.0,
-      "error_pct": 0.819727
+      "error_pct": 1.6148698540002278e-14
     },
     {
       "lab": "quantum_materials_lab",
@@ -559,9 +559,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a729 Dielectric \u03b5r",
       "name": "PTFE",
-      "computed": 2.0861612696304874,
+      "computed": 2.0998868055179294,
       "measured": 2.1,
-      "error_pct": 0.658987
+      "error_pct": 0.0053902134319380865
     },
     {
       "lab": "quantum_materials_lab",
@@ -607,17 +607,17 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a729 Dielectric \u03b5r",
       "name": "CH\u2083COOH",
-      "computed": 6.199366119843095,
+      "computed": 6.152148753020613,
       "measured": 6.15,
-      "error_pct": 0.802701
+      "error_pct": 0.03493907350590267
     },
     {
       "lab": "quantum_materials_lab",
       "property": "\u00a729 Dielectric \u03b5r",
       "name": "n-butanol",
-      "computed": 17.94427190999916,
+      "computed": 17.842950726356825,
       "measured": 17.84,
-      "error_pct": 0.584484
+      "error_pct": 0.01653994594633175
     },
     {
       "lab": "quantum_materials_lab",
@@ -631,9 +631,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a729 Dielectric \u03b5r",
       "name": "C\u2082H\u2085OH",
-      "computed": 24.321604900687458,
+      "computed": 24.54806131238867,
       "measured": 24.55,
-      "error_pct": 0.930326
+      "error_pct": 0.007896894547178462
     },
     {
       "lab": "quantum_materials_lab",
@@ -647,25 +647,25 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a729 Dielectric \u03b5r",
       "name": "glycerol",
-      "computed": 42.742645786248005,
+      "computed": 42.51055612807173,
       "measured": 42.5,
-      "error_pct": 0.570931
+      "error_pct": 0.024837948404063035
     },
     {
       "lab": "quantum_materials_lab",
       "property": "\u00a729 Dielectric \u03b5r",
       "name": "DMSO",
-      "computed": 46.97871376374779,
+      "computed": 46.70335771980633,
       "measured": 46.7,
-      "error_pct": 0.596817
+      "error_pct": 0.007189978172000333
     },
     {
       "lab": "quantum_materials_lab",
       "property": "\u00a729 Dielectric \u03b5r",
       "name": "formic acid",
-      "computed": 58.83421801064403,
+      "computed": 58.494777076136735,
       "measured": 58.5,
-      "error_pct": 0.571313
+      "error_pct": 0.008928074979939896
     },
     {
       "lab": "quantum_materials_lab",
@@ -695,9 +695,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a731 Band Gaps",
       "name": "Si",
-      "computed": 1.1283113704165975,
+      "computed": 1.1197105734345842,
       "measured": 1.12,
-      "error_pct": 0.742087
+      "error_pct": 0.025841657626416277
     },
     {
       "lab": "quantum_materials_lab",
@@ -735,9 +735,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a731 Band Gaps",
       "name": "CdS",
-      "computed": 2.4059747810263383,
+      "computed": 2.420433612942127,
       "measured": 2.42,
-      "error_pct": 0.579555
+      "error_pct": 0.017917890170535522
     },
     {
       "lab": "quantum_materials_lab",
@@ -767,9 +767,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a731 Band Gaps",
       "name": "diamond",
-      "computed": 5.439652817888142,
+      "computed": 5.470239074519245,
       "measured": 5.47,
-      "error_pct": 0.554793
+      "error_pct": 0.004370649346353588
     },
     {
       "lab": "quantum_materials_lab",
@@ -839,9 +839,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a733 Debye Temps",
       "name": "W",
-      "computed": 403.4287934927351,
+      "computed": 400.097272462368,
       "measured": 400.0,
-      "error_pct": 0.857198
+      "error_pct": 0.024318115591995593
     },
     {
       "lab": "quantum_materials_lab",
@@ -895,9 +895,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a738 Resistivity \u03c1",
       "name": "Ag",
-      "computed": 1.5789724997061827,
+      "computed": 1.5900383231090056,
       "measured": 1.59,
-      "error_pct": 0.693553
+      "error_pct": 0.002410258428020981
     },
     {
       "lab": "quantum_materials_lab",
@@ -911,9 +911,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a738 Resistivity \u03c1",
       "name": "Au",
-      "computed": 2.4179795517886737,
+      "computed": 2.44009581866226,
       "measured": 2.44,
-      "error_pct": 0.902477
+      "error_pct": 0.003926994354924627
     },
     {
       "lab": "quantum_materials_lab",
@@ -967,9 +967,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a738 Resistivity \u03c1",
       "name": "Pt",
-      "computed": 10.657545193365802,
+      "computed": 10.600976357504635,
       "measured": 10.6,
-      "error_pct": 0.542879
+      "error_pct": 0.009210919855050159
     },
     {
       "lab": "quantum_materials_lab",
@@ -991,9 +991,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a738 Resistivity \u03c1",
       "name": "SS304",
-      "computed": 72.5424219431434,
+      "computed": 71.97728410922835,
       "measured": 72.0,
-      "error_pct": 0.753364
+      "error_pct": 0.03154984829395839
     },
     {
       "lab": "quantum_materials_lab",
@@ -1031,9 +1031,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a752 \u00b9\u00b3C NMR \u03b4",
       "name": "R-CH\u2082-R",
-      "computed": 23.213404357363387,
+      "computed": 22.99516711048985,
       "measured": 23.0,
-      "error_pct": 0.927845
+      "error_pct": 0.02101256308761418
     },
     {
       "lab": "quantum_materials_lab",
@@ -1087,17 +1087,17 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a752 \u00b9\u00b3C NMR \u03b4",
       "name": "C=O_acid",
-      "computed": 173.42224665149885,
+      "computed": 174.87509405333662,
       "measured": 175.0,
-      "error_pct": 0.901573
+      "error_pct": 0.07137482666478588
     },
     {
       "lab": "quantum_materials_lab",
       "property": "\u00a752 \u00b9\u00b3C NMR \u03b4",
       "name": "C=O_ester",
-      "computed": 168.49869602576427,
+      "computed": 169.97058314499208,
       "measured": 170.0,
-      "error_pct": 0.88312
+      "error_pct": 0.017304032357602035
     },
     {
       "lab": "quantum_materials_lab",
@@ -1127,9 +1127,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a752 \u00b9\u00b3C NMR \u03b4",
       "name": "C=O_amide",
-      "computed": 168.49869602576427,
+      "computed": 169.97058314499208,
       "measured": 170.0,
-      "error_pct": 0.88312
+      "error_pct": 0.017304032357602035
     },
     {
       "lab": "quantum_materials_lab",
@@ -1247,9 +1247,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a763 Lattice Param",
       "name": "Au_fcc",
-      "computed": 4.0575582477670125,
+      "computed": 4.079845521402883,
       "measured": 4.078,
-      "error_pct": 0.501269
+      "error_pct": 0.045255551811745114
     },
     {
       "lab": "quantum_materials_lab",
@@ -1295,9 +1295,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a763 Lattice Param",
       "name": "W_bcc",
-      "computed": 3.185224035383305,
+      "computed": 3.1645255180753904,
       "measured": 3.165,
-      "error_pct": 0.63899
+      "error_pct": 0.014991530003464067
     },
     {
       "lab": "quantum_materials_lab",
@@ -1359,9 +1359,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a775 Superconducting Tc",
       "name": "Pb",
-      "computed": 7.151322572630313,
+      "computed": 7.192568447123156,
       "measured": 7.19,
-      "error_pct": 0.537934
+      "error_pct": 0.03572249128171787
     },
     {
       "lab": "quantum_materials_lab",
@@ -1423,25 +1423,25 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a775 Superconducting Tc",
       "name": "Al",
-      "computed": 1.1700479788599398,
+      "computed": 1.1798979796276863,
       "measured": 1.18,
-      "error_pct": 0.843392
+      "error_pct": 0.008645794263869522
     },
     {
       "lab": "quantum_materials_lab",
       "property": "\u00a775 Superconducting Tc",
       "name": "Ga",
-      "computed": 1.06944780907167,
+      "computed": 1.080059202480188,
       "measured": 1.08,
-      "error_pct": 0.977055
+      "error_pct": 0.00548171112851675
     },
     {
       "lab": "quantum_materials_lab",
       "property": "\u00a775 Superconducting Tc",
       "name": "Zn",
-      "computed": 0.8444663350679361,
+      "computed": 0.8499757313516031,
       "measured": 0.85,
-      "error_pct": 0.651019
+      "error_pct": 0.002855135105515964
     },
     {
       "lab": "quantum_materials_lab",
@@ -1479,17 +1479,17 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a776 Magnetic Ordering T",
       "name": "Dy_Tc",
-      "computed": 87.53948663291308,
+      "computed": 88.0053362584175,
       "measured": 88.0,
-      "error_pct": 0.523311
+      "error_pct": 0.006063930019886951
     },
     {
       "lab": "quantum_materials_lab",
       "property": "\u00a776 Magnetic Ordering T",
       "name": "EuO_Tc",
-      "computed": 68.62409951856577,
+      "computed": 68.92104084251176,
       "measured": 69.0,
-      "error_pct": 0.544783
+      "error_pct": 0.11443356157716264
     },
     {
       "lab": "quantum_materials_lab",
@@ -1535,9 +1535,9 @@
       "lab": "quantum_materials_lab",
       "property": "\u00a776 Magnetic Ordering T",
       "name": "Fe2O3_TN",
-      "computed": 961.3891935753045,
+      "computed": 954.5350916090546,
       "measured": 955.0,
-      "error_pct": 0.669026
+      "error_pct": 0.048681506905280086
     }
   ],
   "crosswalk_modules": [

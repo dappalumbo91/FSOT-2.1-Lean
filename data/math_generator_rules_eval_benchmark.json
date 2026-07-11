@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-09T12:15:21.350920+00:00",
+  "generated_at": "2026-07-11T15:12:49.546402+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "vendor/math_generator/rules",
   "source_repo": "vendor/math_generator/rules",
@@ -10,8 +10,8 @@
     "consciousness"
   ],
   "D_eff": 17,
-  "record_count": 1522,
-  "observable_count": 1522,
+  "record_count": 1552,
+  "observable_count": 1552,
   "median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
@@ -410,6 +410,14 @@
         "symbolic_schema": 25
       }
     },
+    "PROGRAMMING_LANGUAGE": {
+      "rule_count": 30,
+      "median_error_pct": 0.0,
+      "schema_pass_count": 30,
+      "eval_kind_counts": {
+        "symbolic_schema": 30
+      }
+    },
     "QUANTUM_COMPUTING": {
       "rule_count": 12,
       "median_error_pct": 0.0,
@@ -511,11 +519,11 @@
     "live_benchmark": {
       "record_count": 6,
       "median_error_pct": 0.0,
-      "max_error_pct": 0.03990518384182655,
+      "max_error_pct": 0.0,
       "min_error_pct": 0.0
     },
     "symbolic_schema": {
-      "record_count": 1516,
+      "record_count": 1546,
       "median_error_pct": 0.0,
       "max_error_pct": 0.0,
       "min_error_pct": 0.0
@@ -553,10 +561,10 @@
       "live_benchmark_vs_formula_eval": true
     }
   },
-  "rule_corpus_count": 61,
-  "total_rule_count": 1522,
+  "rule_corpus_count": 62,
+  "total_rule_count": 1552,
   "eval_kind_counts": {
-    "symbolic_schema": 1516,
+    "symbolic_schema": 1546,
     "live_benchmark": 6
   },
   "corpora": {
@@ -609,6 +617,7 @@
     "OPTIMIZATION": 25,
     "PROBABILITY_APPLICATIONS": 25,
     "PROBABILITY": 26,
+    "PROGRAMMING_LANGUAGE": 30,
     "QUANTUM_COMPUTING": 12,
     "REAL_ANALYSIS": 25,
     "ROBOTICS": 12,
@@ -624,7 +633,7 @@
   },
   "numeric_eval_count": 6,
   "numeric_eval_median_error_pct": 0.0,
-  "schema_pass_count": 1522,
+  "schema_pass_count": 1552,
   "schema_pass_rate_pct": 100.0,
   "records": [
     {
@@ -634,7 +643,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 1522
+      "observable_count": 1552
     },
     {
       "lab": "math_generator_rules_eval_lab",
@@ -643,7 +652,7 @@
       "computed": 100.0,
       "measured": 100.0,
       "error_pct": 0.0,
-      "observable_count": 1522
+      "observable_count": 1552
     },
     {
       "lab": "math_generator_rules_eval_lab",
@@ -6860,7 +6869,7 @@
       "corpus": "FSOT_OVERLAY",
       "eval_kind": "live_benchmark",
       "lean_domain": "consciousness",
-      "error_pct": 0.03990518384182655,
+      "error_pct": 0.0,
       "schema_valid": true,
       "benchmark_formula": "(theta_s + e^3) / c_factor^7"
     },
@@ -10676,6 +10685,246 @@
     {
       "rule_id": "PR-071",
       "corpus": "PROBABILITY",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-001",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-002",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-003",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-004",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-005",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-006",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-007",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-008",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-009",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-010",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-011",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-012",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-013",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-014",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-015",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-016",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-017",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-018",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-019",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-020",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-021",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-022",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-023",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-024",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-025",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-026",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-027",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-028",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-029",
+      "corpus": "PROGRAMMING_LANGUAGE",
+      "eval_kind": "symbolic_schema",
+      "lean_domain": "mathematical",
+      "error_pct": 0.0,
+      "schema_valid": true
+    },
+    {
+      "rule_id": "PL-030",
+      "corpus": "PROGRAMMING_LANGUAGE",
       "eval_kind": "symbolic_schema",
       "lean_domain": "mathematical",
       "error_pct": 0.0,

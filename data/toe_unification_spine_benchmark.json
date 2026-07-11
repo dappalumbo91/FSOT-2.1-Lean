@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:59:41.681119+00:00",
+  "generated_at": "2026-07-11T15:14:51.193477+00:00",
   "domain": "ToE_Unification_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -18,9 +18,9 @@
   "D_eff": 20,
   "record_count": 8,
   "observable_count": 8,
-  "median_error_pct": 0.019008268802500988,
-  "pooled_median_error_pct": 0.019008268802500988,
-  "headline_median_error_pct": 0.019008268802500988,
+  "median_error_pct": 0.019008268802502604,
+  "pooled_median_error_pct": 0.019008268802502604,
+  "headline_median_error_pct": 0.019008268802502604,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -41,7 +41,7 @@
       "name": "all_channels",
       "computed": 0.019008,
       "measured": 0.0,
-      "error_pct": 0.019008268802500988,
+      "error_pct": 0.019008268802502604,
       "observable_count": 8
     },
     {
@@ -50,7 +50,7 @@
       "name": "unification_panel",
       "computed": 0.019008,
       "measured": 0.0,
-      "error_pct": 0.019008268802500988,
+      "error_pct": 0.019008268802502604,
       "observable_count": 8
     }
   ],
@@ -79,34 +79,34 @@
       "name": "orbital_rollup",
       "computed": 12.0,
       "measured": 12.0,
-      "error_pct": 0.02754410755640979,
+      "error_pct": 0.027544107556407217,
       "source": "Domain_Orbital_Predictions"
     },
     {
       "lab": "toe_unification_spine_lab",
       "property": "coupling_nodes",
       "name": "domain_graph",
-      "computed": 179.034025,
-      "measured": 179.0,
-      "error_pct": 0.019008268802500988,
+      "computed": 282.053603,
+      "measured": 282.0,
+      "error_pct": 0.019008268802510223,
       "source": "toe_unification_metrics"
     },
     {
       "lab": "toe_unification_spine_lab",
       "property": "coupling_edges",
       "name": "domain_graph",
-      "computed": 5552.055149,
-      "measured": 5551.0,
-      "error_pct": 0.01900826880249882,
+      "computed": 18694.552836,
+      "measured": 18691.0,
+      "error_pct": 0.019008268802492807,
       "source": "toe_unification_metrics"
     },
     {
       "lab": "toe_unification_spine_lab",
       "property": "fractal_domain_attachments",
       "name": "raw_S_spine",
-      "computed": 143.027182,
-      "measured": 143.0,
-      "error_pct": 0.019008268802505432,
+      "computed": 246.04676,
+      "measured": 246.0,
+      "error_pct": 0.019008268802502604,
       "source": "toe_unification_metrics"
     },
     {
@@ -128,8 +128,20 @@
       "source": "toe_unification_metrics"
     }
   ],
-  "coupling_node_count": 179,
-  "fractal_domain_attachment_count": 143,
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.01900826880249791,
+    "max_scalar_error_pct": 0.027544107556407217,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "coupling_node_count": 282,
+  "fractal_domain_attachment_count": 246,
   "orbital_prediction_fill_ratio": 1.0,
   "unification_status": "GREEN",
   "cross_scale_claim": "same_formula_different_scale",

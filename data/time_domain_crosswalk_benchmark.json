@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T17:50:41.313000+00:00",
+  "generated_at": "2026-07-11T15:14:54.529998+00:00",
   "domain": "Time_Domain_Crosswalk",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -17,11 +17,11 @@
     "mathematical"
   ],
   "D_eff": 19,
-  "record_count": 160,
-  "observable_count": 160,
-  "median_error_pct": 0.025013,
-  "pooled_median_error_pct": 0.025013,
-  "headline_median_error_pct": 0.025013,
+  "record_count": 250,
+  "observable_count": 250,
+  "median_error_pct": 0.028056,
+  "pooled_median_error_pct": 0.028056,
+  "headline_median_error_pct": 0.028056,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -40,19 +40,19 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.025013,
+      "computed": 0.028056,
       "measured": 0.0,
-      "error_pct": 0.025013,
-      "observable_count": 160
+      "error_pct": 0.028056,
+      "observable_count": 250
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "crosswalk",
       "name": "extension_panel",
-      "computed": 0.025013,
+      "computed": 0.028056,
       "measured": 0.0,
-      "error_pct": 0.025013,
-      "observable_count": 160
+      "error_pct": 0.028056,
+      "observable_count": 250
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -235,6 +235,27 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Astrophysical_Structure_Crosswalk",
+      "source_domain": "Astrophysical_Structure_Crosswalk",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029819,
+      "source_median_error_pct": 0.0,
+      "D_eff": 18,
+      "S": 0.748626,
+      "omega_rad_s": 0.00012542439275615506,
+      "fpc_time_coupling": 0.000398318,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic",
+        "particle"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\astrophysical_structure_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Bibliography_Lean_Corpus",
       "source_domain": "Bibliography_Lean_Corpus",
       "computed": 1.000131,
@@ -297,6 +318,27 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Biophysics_Public_Panel",
+      "source_domain": "Biophysics_Public_Panel",
+      "computed": 1.000176,
+      "measured": 1.0,
+      "error_pct": 0.017605,
+      "source_median_error_pct": 0.0,
+      "D_eff": 12,
+      "S": 0.45811,
+      "omega_rad_s": 0.00010792331469715667,
+      "fpc_time_coupling": 0.000384293,
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "neural"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\biophysics_public_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Botany",
       "source_domain": "Botany",
       "computed": 1.0002,
@@ -313,6 +355,27 @@
       ],
       "priority": false,
       "benchmark_path": "data\\botany_extension_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Boundary_Partition_Tightening",
+      "source_domain": "Boundary_Partition_Tightening",
+      "computed": 1.000227,
+      "measured": 1.0,
+      "error_pct": 0.022713,
+      "source_median_error_pct": 0.254432,
+      "D_eff": 17,
+      "S": 0.573378,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic",
+        "mathematical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\boundary_partition_tightening_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -463,6 +526,28 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Chemical_Structure_Stability_Panel",
+      "source_domain": "Chemical_Structure_Stability_Panel",
+      "computed": 1.000263,
+      "measured": 1.0,
+      "error_pct": 0.026266,
+      "source_median_error_pct": 0.00206,
+      "D_eff": 14,
+      "S": 0.67485,
+      "omega_rad_s": 0.00011375700738348947,
+      "fpc_time_coupling": 0.000389206,
+      "maps_to_lean": [
+        "chemical",
+        "material",
+        "particle",
+        "electron"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\chemical_structure_stability_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Civil_Engineering",
       "source_domain": "Civil_Engineering",
       "computed": 1.000226,
@@ -508,7 +593,7 @@
       "computed": 1.000211,
       "measured": 1.0,
       "error_pct": 0.02106,
-      "source_median_error_pct": 0.002945,
+      "source_median_error_pct": 0.002458,
       "D_eff": 15,
       "S": 0.537843,
       "omega_rad_s": 0.00011667385372665586,
@@ -540,6 +625,72 @@
       ],
       "priority": false,
       "benchmark_path": "data\\code_genome_structure_cybersecurity_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Cold_Fusion_Candidate_Prereg_Scaffold",
+      "source_domain": "Cold_Fusion_Candidate_Prereg_Scaffold",
+      "computed": 1.000279,
+      "measured": 1.0,
+      "error_pct": 0.027946,
+      "source_median_error_pct": 7.9e-05,
+      "D_eff": 14,
+      "S": 0.718019,
+      "omega_rad_s": 0.00011375700738348947,
+      "fpc_time_coupling": 0.000389206,
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "particle",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\cold_fusion_candidate_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+      "source_domain": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+      "computed": 1.000335,
+      "measured": 1.0,
+      "error_pct": 0.033507,
+      "source_median_error_pct": 0.0,
+      "D_eff": 15,
+      "S": 0.855719,
+      "omega_rad_s": 0.00011667385372665586,
+      "fpc_time_coupling": 0.000391569,
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material",
+        "energy"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\cold_fusion_lab_synthesis_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Compact_Object_Binary_Events",
+      "source_domain": "Compact_Object_Binary_Events",
+      "computed": 1.000321,
+      "measured": 1.0,
+      "error_pct": 0.032077,
+      "source_median_error_pct": 0.0,
+      "D_eff": 20,
+      "S": 0.796827,
+      "omega_rad_s": 0.00013125808544248784,
+      "fpc_time_coupling": 0.000402561,
+      "maps_to_lean": [
+        "astronomical",
+        "particle",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\compact_object_binary_events_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -672,6 +823,29 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Cosmology_Anomaly_Deep_Panel",
+      "source_domain": "Cosmology_Anomaly_Deep_Panel",
+      "computed": 1.000342,
+      "measured": 1.0,
+      "error_pct": 0.034248,
+      "source_median_error_pct": 0.000502,
+      "D_eff": 24,
+      "S": 0.834277,
+      "omega_rad_s": 0.00014292547081515343,
+      "fpc_time_coupling": 0.000410509,
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "consciousness",
+        "blackhole",
+        "cmb"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\cosmology_anomaly_deep_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Cosmology_Bubble_Bleed",
       "source_domain": "Cosmology_Bubble_Bleed",
       "computed": 1.000362,
@@ -709,6 +883,29 @@
       ],
       "priority": true,
       "benchmark_path": "data\\cosmology_extended_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Creative_Arts_Math_Spine",
+      "source_domain": "Creative_Arts_Math_Spine",
+      "computed": 1.00028,
+      "measured": 1.0,
+      "error_pct": 0.028045,
+      "source_median_error_pct": 2.9e-05,
+      "D_eff": 16,
+      "S": 0.712034,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "mathematical",
+        "acoustical",
+        "ai"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\creative_arts_math_spine_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -815,6 +1012,50 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Distant_Island_Emergence_Simulation",
+      "source_domain": "Distant_Island_Emergence_Simulation",
+      "computed": 1.000311,
+      "measured": 1.0,
+      "error_pct": 0.031142,
+      "source_median_error_pct": 0.0,
+      "D_eff": 25,
+      "S": 0.755146,
+      "omega_rad_s": 0.00014584231715831982,
+      "fpc_time_coupling": 0.000412394,
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "astronomical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\distant_island_emergence_simulation_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Distant_Island_Z128_Z132_Deep_Panel",
+      "source_domain": "Distant_Island_Z128_Z132_Deep_Panel",
+      "computed": 1.000321,
+      "measured": 1.0,
+      "error_pct": 0.03215,
+      "source_median_error_pct": 0.0,
+      "D_eff": 23,
+      "S": 0.786858,
+      "omega_rad_s": 0.000140008624471987,
+      "fpc_time_coupling": 0.000408585,
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\distant_island_z128_z132_deep_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Domain_Coupling_Simulation",
       "source_domain": "Domain_Coupling_Simulation",
       "computed": 1.000336,
@@ -834,6 +1075,29 @@
       ],
       "priority": true,
       "benchmark_path": "data\\domain_coupling_simulation_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Domain_Coupling_Simulation_Refresh_Panel",
+      "source_domain": "Domain_Coupling_Simulation_Refresh_Panel",
+      "computed": 1.000342,
+      "measured": 1.0,
+      "error_pct": 0.034248,
+      "source_median_error_pct": 0.0,
+      "D_eff": 24,
+      "S": 0.834277,
+      "omega_rad_s": 0.00014292547081515343,
+      "fpc_time_coupling": 0.000410509,
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "energy"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\domain_coupling_simulation_refresh_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -862,6 +1126,26 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Ecology",
+      "source_domain": "Ecology",
+      "computed": 1.000118,
+      "measured": 1.0,
+      "error_pct": 0.011759,
+      "source_median_error_pct": 0.0,
+      "D_eff": 15,
+      "S": 0.300317,
+      "omega_rad_s": 0.00011667385372665586,
+      "fpc_time_coupling": 0.000391569,
+      "maps_to_lean": [
+        "biological",
+        "energy"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\ecology_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Econometrics",
       "source_domain": "Econometrics",
       "computed": 1.000204,
@@ -882,6 +1166,27 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Econophysics",
+      "source_domain": "Econophysics",
+      "computed": 1.00026,
+      "measured": 1.0,
+      "error_pct": 0.026006,
+      "source_median_error_pct": 0.0,
+      "D_eff": 20,
+      "S": 0.646005,
+      "omega_rad_s": 0.00013125808544248784,
+      "fpc_time_coupling": 0.000402561,
+      "maps_to_lean": [
+        "consciousness",
+        "mathematical",
+        "energy"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\econophysics_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Electrical_Power_Systems",
       "source_domain": "Electrical_Power_Systems",
       "computed": 1.000114,
@@ -898,6 +1203,29 @@
       ],
       "priority": false,
       "benchmark_path": "data\\electrical_power_systems_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Element_Synthesis_Condition_Scaffold",
+      "source_domain": "Element_Synthesis_Condition_Scaffold",
+      "computed": 1.000307,
+      "measured": 1.0,
+      "error_pct": 0.030742,
+      "source_median_error_pct": 0.000787,
+      "D_eff": 14,
+      "S": 0.789854,
+      "omega_rad_s": 0.00011375700738348947,
+      "fpc_time_coupling": 0.000389206,
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material",
+        "thermodynamics"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\element_synthesis_condition_scaffold_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1024,6 +1352,26 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Exoplanet_System_Architecture",
+      "source_domain": "Exoplanet_System_Architecture",
+      "computed": 1.000283,
+      "measured": 1.0,
+      "error_pct": 0.028291,
+      "source_median_error_pct": 0.0,
+      "D_eff": 21,
+      "S": 0.699221,
+      "omega_rad_s": 0.00013417493178565423,
+      "fpc_time_coupling": 0.000404613,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\exoplanet_system_architecture_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "External_OSS_Code_Genome",
       "source_domain": "External_OSS_Code_Genome",
       "computed": 1.000308,
@@ -1041,6 +1389,29 @@
       ],
       "priority": false,
       "benchmark_path": "data\\external_oss_code_genome_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "FPC_Fluidlink_Timing_Deep_Panel",
+      "source_domain": "FPC_Fluidlink_Timing_Deep_Panel",
+      "computed": 1.000331,
+      "measured": 1.0,
+      "error_pct": 0.033126,
+      "source_median_error_pct": 5e-05,
+      "D_eff": 20,
+      "S": 0.822883,
+      "omega_rad_s": 0.00013125808544248784,
+      "fpc_time_coupling": 0.000402561,
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\fpc_fluidlink_timing_deep_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1064,6 +1435,27 @@
       ],
       "priority": false,
       "benchmark_path": "data\\fpc_temporal_coupling_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "FSOT_Aggregate_Organized_Panel",
+      "source_domain": "FSOT_Aggregate_Organized_Panel",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029777,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.751712,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "medical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\fsot_aggregate_organized_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1130,6 +1522,53 @@
       ],
       "priority": false,
       "benchmark_path": "data\\fluid_phase_current_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Fluid_Spacetime_Observable_Spine",
+      "source_domain": "Fluid_Spacetime_Observable_Spine",
+      "computed": 1.000362,
+      "measured": 1.0,
+      "error_pct": 0.036214,
+      "source_median_error_pct": 0.000502,
+      "D_eff": 26,
+      "S": 0.874222,
+      "omega_rad_s": 0.0001487591635014862,
+      "fpc_time_coupling": 0.000414242,
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole",
+        "cmb"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\fluid_spacetime_observable_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "source_domain": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "computed": 1.000348,
+      "measured": 1.0,
+      "error_pct": 0.034765,
+      "source_median_error_pct": 0.0,
+      "D_eff": 25,
+      "S": 0.843016,
+      "omega_rad_s": 0.00014584231715831982,
+      "fpc_time_coupling": 0.000412394,
+      "maps_to_lean": [
+        "cosmological",
+        "consciousness",
+        "particle",
+        "blackhole",
+        "cmb"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\fluid_spacetime_prereg_validation_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1238,6 +1677,28 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Formula_Precision_Spine",
+      "source_domain": "Formula_Precision_Spine",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.751397,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "mathematical",
+        "consciousness",
+        "material",
+        "particle"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\formula_precision_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Fractal_Constant_Recursion",
       "source_domain": "Fractal_Constant_Recursion",
       "computed": 1.00032,
@@ -1254,6 +1715,115 @@
       ],
       "priority": false,
       "benchmark_path": "data\\fractal_constant_recursion_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Fuel_Candidate_Prereg_Scaffold",
+      "source_domain": "Fuel_Candidate_Prereg_Scaffold",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "source_median_error_pct": 0.0,
+      "D_eff": 16,
+      "S": 0.754878,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "energy",
+        "chemical",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\fuel_candidate_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Fuel_Thermochemistry_Public_Anchors",
+      "source_domain": "Fuel_Thermochemistry_Public_Anchors",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "source_median_error_pct": 0.0,
+      "D_eff": 16,
+      "S": 0.754878,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "energy",
+        "chemical",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\fuel_thermochemistry_public_anchors_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Fusion_Decay_Chain_Prereg_Scaffold",
+      "source_domain": "Fusion_Decay_Chain_Prereg_Scaffold",
+      "computed": 1.000325,
+      "measured": 1.0,
+      "error_pct": 0.032507,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.820619,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "energy"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\fusion_decay_chain_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Fusion_Lab_Certificate_Spine",
+      "source_domain": "Fusion_Lab_Certificate_Spine",
+      "computed": 1.000361,
+      "measured": 1.0,
+      "error_pct": 0.036132,
+      "source_median_error_pct": 0.0,
+      "D_eff": 20,
+      "S": 0.897552,
+      "omega_rad_s": 0.00013125808544248784,
+      "fpc_time_coupling": 0.000402561,
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "plasma",
+        "particle",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\fusion_lab_certificate_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Fusion_Physics_Public_Panel",
+      "source_domain": "Fusion_Physics_Public_Panel",
+      "computed": 1.000336,
+      "measured": 1.0,
+      "error_pct": 0.033598,
+      "source_median_error_pct": 9.5e-05,
+      "D_eff": 18,
+      "S": 0.843486,
+      "omega_rad_s": 0.00012542439275615506,
+      "fpc_time_coupling": 0.000398318,
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "particle",
+        "plasma"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\fusion_physics_public_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1278,12 +1848,114 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "GWOSC_Live_Event_Deep",
+      "source_domain": "GWOSC_Live_Event_Deep",
+      "computed": 1.000321,
+      "measured": 1.0,
+      "error_pct": 0.032077,
+      "source_median_error_pct": 0.0,
+      "D_eff": 20,
+      "S": 0.796827,
+      "omega_rad_s": 0.00013125808544248784,
+      "fpc_time_coupling": 0.000402561,
+      "maps_to_lean": [
+        "astronomical",
+        "particle",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\gwosc_live_event_deep_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Gaia_Astrometry_Panel_Deep",
+      "source_domain": "Gaia_Astrometry_Panel_Deep",
+      "computed": 1.00031,
+      "measured": 1.0,
+      "error_pct": 0.030994,
+      "source_median_error_pct": 0.111276,
+      "D_eff": 20,
+      "S": 0.769918,
+      "omega_rad_s": 0.00013125808544248784,
+      "fpc_time_coupling": 0.000402561,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\gaia_astrometry_panel_deep_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Gaia_DR3_TAP_Deep",
+      "source_domain": "Gaia_DR3_TAP_Deep",
+      "computed": 1.000321,
+      "measured": 1.0,
+      "error_pct": 0.032077,
+      "source_median_error_pct": 0.111276,
+      "D_eff": 20,
+      "S": 0.796827,
+      "omega_rad_s": 0.00013125808544248784,
+      "fpc_time_coupling": 0.000402561,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\gaia_dr3_tap_deep_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Galactic_Structure_Sample",
+      "source_domain": "Galactic_Structure_Sample",
+      "computed": 1.000299,
+      "measured": 1.0,
+      "error_pct": 0.029899,
+      "source_median_error_pct": 0.111276,
+      "D_eff": 20,
+      "S": 0.74271,
+      "omega_rad_s": 0.00013125808544248784,
+      "fpc_time_coupling": 0.000402561,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\galactic_structure_sample_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Genomic_Sciences",
+      "source_domain": "Genomic_Sciences",
+      "computed": 1.000177,
+      "measured": 1.0,
+      "error_pct": 0.017698,
+      "source_median_error_pct": 0.0,
+      "D_eff": 12,
+      "S": 0.460529,
+      "omega_rad_s": 0.00010792331469715667,
+      "fpc_time_coupling": 0.000384293,
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "neural"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\genomic_sciences_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Geochemistry",
       "source_domain": "Geochemistry",
       "computed": 1.000211,
       "measured": 1.0,
       "error_pct": 0.02106,
-      "source_median_error_pct": 0.186623,
+      "source_median_error_pct": 0.014338,
       "D_eff": 15,
       "S": 0.537843,
       "omega_rad_s": 0.00011667385372665586,
@@ -1378,6 +2050,28 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Heavy_Ion_Lab_Synthesis_Panel",
+      "source_domain": "Heavy_Ion_Lab_Synthesis_Panel",
+      "computed": 1.000323,
+      "measured": 1.0,
+      "error_pct": 0.032349,
+      "source_median_error_pct": 9.5e-05,
+      "D_eff": 13,
+      "S": 0.836375,
+      "omega_rad_s": 0.00011084016104032306,
+      "fpc_time_coupling": 0.000386782,
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\heavy_ion_lab_synthesis_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Higgs_Mass",
       "source_domain": "Higgs_Mass",
       "computed": 1.000337,
@@ -1439,6 +2133,49 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Hubble_Dark_Sector_Crosswalk",
+      "source_domain": "Hubble_Dark_Sector_Crosswalk",
+      "computed": 1.000348,
+      "measured": 1.0,
+      "error_pct": 0.034765,
+      "source_median_error_pct": 0.000502,
+      "D_eff": 25,
+      "S": 0.843016,
+      "omega_rad_s": 0.00014584231715831982,
+      "fpc_time_coupling": 0.000412394,
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "blackhole",
+        "cmb"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\hubble_dark_sector_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Hybrid_FI_Sim_Multi_Hero_Panel",
+      "source_domain": "Hybrid_FI_Sim_Multi_Hero_Panel",
+      "computed": 1.000325,
+      "measured": 1.0,
+      "error_pct": 0.032538,
+      "source_median_error_pct": 0.051436,
+      "D_eff": 18,
+      "S": 0.816892,
+      "omega_rad_s": 0.00012542439275615506,
+      "fpc_time_coupling": 0.000398318,
+      "maps_to_lean": [
+        "neural",
+        "consciousness",
+        "biophysics"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\hybrid_fi_sim_multi_hero_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Hydrology",
       "source_domain": "Hydrology",
       "computed": 1.000241,
@@ -1479,6 +2216,26 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "IGEM_Parts_Expanded",
+      "source_domain": "IGEM_Parts_Expanded",
+      "computed": 1.000268,
+      "measured": 1.0,
+      "error_pct": 0.026823,
+      "source_median_error_pct": 7.2e-05,
+      "D_eff": 14,
+      "S": 0.689181,
+      "omega_rad_s": 0.00011375700738348947,
+      "fpc_time_coupling": 0.000389206,
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\igem_parts_expanded_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "IGEM_Synthetic_Biology",
       "source_domain": "IGEM_Synthetic_Biology",
       "computed": 1.000178,
@@ -1504,7 +2261,7 @@
       "computed": 1.000123,
       "measured": 1.0,
       "error_pct": 0.012271,
-      "source_median_error_pct": 0.451494,
+      "source_median_error_pct": 0.061205,
       "D_eff": 13,
       "S": 0.317267,
       "omega_rad_s": 0.00011084016104032306,
@@ -1515,6 +2272,116 @@
       ],
       "priority": false,
       "benchmark_path": "data\\immunology_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Inertial_Confinement_Fusion_Panel",
+      "source_domain": "Inertial_Confinement_Fusion_Panel",
+      "computed": 1.00032,
+      "measured": 1.0,
+      "error_pct": 0.031966,
+      "source_median_error_pct": 7.9e-05,
+      "D_eff": 17,
+      "S": 0.806972,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "plasma",
+        "particle"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\inertial_confinement_fusion_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Information_Theory_Public_Panel",
+      "source_domain": "Information_Theory_Public_Panel",
+      "computed": 1.000152,
+      "measured": 1.0,
+      "error_pct": 0.01524,
+      "source_median_error_pct": 0.0,
+      "D_eff": 8,
+      "S": 0.407907,
+      "omega_rad_s": 9.625592932449109e-05,
+      "fpc_time_coupling": 0.000373616,
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "consciousness",
+        "neural"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\information_theory_public_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Initiation_Transformation_Archetype",
+      "source_domain": "Initiation_Transformation_Archetype",
+      "computed": 1.000227,
+      "measured": 1.0,
+      "error_pct": 0.022713,
+      "source_median_error_pct": 0.193398,
+      "D_eff": 17,
+      "S": 0.573378,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic",
+        "mathematical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\initiation_transformation_archetype_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Interactive_Media_Prereg_Scaffold",
+      "source_domain": "Interactive_Media_Prereg_Scaffold",
+      "computed": 1.000225,
+      "measured": 1.0,
+      "error_pct": 0.022491,
+      "source_median_error_pct": 0.0,
+      "D_eff": 14,
+      "S": 0.577863,
+      "omega_rad_s": 0.00011375700738348947,
+      "fpc_time_coupling": 0.000389206,
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural",
+        "mathematical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\interactive_media_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Interdisciplinary_Spine_Crosswalk",
+      "source_domain": "Interdisciplinary_Spine_Crosswalk",
+      "computed": 1.000309,
+      "measured": 1.0,
+      "error_pct": 0.030871,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.779339,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "astronomical",
+        "chemical",
+        "biological",
+        "material",
+        "particle"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\interdisciplinary_spine_crosswalk_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1562,6 +2429,72 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Island_Of_Stability_Deep_Panel",
+      "source_domain": "Island_Of_Stability_Deep_Panel",
+      "computed": 1.000331,
+      "measured": 1.0,
+      "error_pct": 0.033099,
+      "source_median_error_pct": 0.0,
+      "D_eff": 19,
+      "S": 0.826523,
+      "omega_rad_s": 0.00012834123909932145,
+      "fpc_time_coupling": 0.000400464,
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\island_of_stability_deep_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Knowledge_Base_Portable_Bundle_Panel",
+      "source_domain": "Knowledge_Base_Portable_Bundle_Panel",
+      "computed": 1.000331,
+      "measured": 1.0,
+      "error_pct": 0.033099,
+      "source_median_error_pct": 0.008381,
+      "D_eff": 19,
+      "S": 0.826523,
+      "omega_rad_s": 0.00012834123909932145,
+      "fpc_time_coupling": 0.000400464,
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\knowledge_base_portable_bundle_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Lab_Synthesis_Metamaterial_Spine",
+      "source_domain": "Lab_Synthesis_Metamaterial_Spine",
+      "computed": 1.000361,
+      "measured": 1.0,
+      "error_pct": 0.0361,
+      "source_median_error_pct": 3.4e-05,
+      "D_eff": 18,
+      "S": 0.906309,
+      "omega_rad_s": 0.00012542439275615506,
+      "fpc_time_coupling": 0.000398318,
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material",
+        "energy"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\lab_synthesis_metamaterial_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Law_Policy",
       "source_domain": "Law_Policy",
       "computed": 1.000203,
@@ -1598,6 +2531,50 @@
       ],
       "priority": false,
       "benchmark_path": "data\\linguistics_formal_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Live_Ingest_Spine",
+      "source_domain": "Live_Ingest_Spine",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.751397,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "material",
+        "chemical",
+        "neural",
+        "astronomical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\live_ingest_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Magnetic_Confinement_Fusion_Panel",
+      "source_domain": "Magnetic_Confinement_Fusion_Panel",
+      "computed": 1.000308,
+      "measured": 1.0,
+      "error_pct": 0.030831,
+      "source_median_error_pct": 0.0,
+      "D_eff": 16,
+      "S": 0.782769,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "plasma",
+        "particle"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\magnetic_confinement_fusion_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1706,12 +2683,56 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Material_In_Silico_Screening_Scaffold",
+      "source_domain": "Material_In_Silico_Screening_Scaffold",
+      "computed": 1.00028,
+      "measured": 1.0,
+      "error_pct": 0.028003,
+      "source_median_error_pct": 0.00206,
+      "D_eff": 15,
+      "S": 0.715139,
+      "omega_rad_s": 0.00011667385372665586,
+      "fpc_time_coupling": 0.000391569,
+      "maps_to_lean": [
+        "material",
+        "chemical",
+        "particle",
+        "energy"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\material_in_silico_screening_scaffold_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Material_Property_Verification_Scaffold",
+      "source_domain": "Material_Property_Verification_Scaffold",
+      "computed": 1.00028,
+      "measured": 1.0,
+      "error_pct": 0.028003,
+      "source_median_error_pct": 0.002271,
+      "D_eff": 15,
+      "S": 0.715139,
+      "omega_rad_s": 0.00011667385372665586,
+      "fpc_time_coupling": 0.000391569,
+      "maps_to_lean": [
+        "material",
+        "chemical",
+        "energy",
+        "particle"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\material_property_verification_scaffold_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Materials_Engineering",
       "source_domain": "Materials_Engineering",
       "computed": 1.000178,
       "measured": 1.0,
       "error_pct": 0.017802,
-      "source_median_error_pct": 0.118765,
+      "source_median_error_pct": 0.02717,
       "D_eff": 14,
       "S": 0.457382,
       "omega_rad_s": 0.00011375700738348947,
@@ -1726,12 +2747,54 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Materials_Genome_Crosswalk",
+      "source_domain": "Materials_Genome_Crosswalk",
+      "computed": 1.000263,
+      "measured": 1.0,
+      "error_pct": 0.026329,
+      "source_median_error_pct": 0.01731,
+      "D_eff": 15,
+      "S": 0.672387,
+      "omega_rad_s": 0.00011667385372665586,
+      "fpc_time_coupling": 0.000391569,
+      "maps_to_lean": [
+        "material",
+        "energy",
+        "particle"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\materials_genome_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Materials_Project_Live_Panel",
+      "source_domain": "Materials_Project_Live_Panel",
+      "computed": 1.000134,
+      "measured": 1.0,
+      "error_pct": 0.013397,
+      "source_median_error_pct": 0.0,
+      "D_eff": 16,
+      "S": 0.340126,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "material",
+        "particle",
+        "energy"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\materials_project_live_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Materials_Species_Bridge",
       "source_domain": "Materials_Species_Bridge",
       "computed": 1.000178,
       "measured": 1.0,
       "error_pct": 0.017802,
-      "source_median_error_pct": 0.0,
+      "source_median_error_pct": 0.00273,
       "D_eff": 14,
       "S": 0.457382,
       "omega_rad_s": 0.00011375700738348947,
@@ -1834,7 +2897,7 @@
       "computed": 1.000226,
       "measured": 1.0,
       "error_pct": 0.022641,
-      "source_median_error_pct": 0.078697,
+      "source_median_error_pct": 0.01731,
       "D_eff": 16,
       "S": 0.574841,
       "omega_rad_s": 0.00011959070006982226,
@@ -1887,6 +2950,50 @@
       ],
       "priority": false,
       "benchmark_path": "data\\medical_galactic_orbital_bridge_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+      "source_domain": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "source_median_error_pct": 0.0,
+      "D_eff": 16,
+      "S": 0.754878,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "material",
+        "fusion",
+        "energy",
+        "particle"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\metamaterial_fluid_design_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Music_Harmonics_Public_Panel",
+      "source_domain": "Music_Harmonics_Public_Panel",
+      "computed": 1.000118,
+      "measured": 1.0,
+      "error_pct": 0.01182,
+      "source_median_error_pct": 0.0,
+      "D_eff": 10,
+      "S": 0.311797,
+      "omega_rad_s": 0.00010208962201082387,
+      "fpc_time_coupling": 0.000379107,
+      "maps_to_lean": [
+        "acoustical",
+        "mathematical",
+        "consciousness",
+        "neural"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\music_harmonics_public_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -1971,6 +3078,28 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Natural_Formation_Element_Simulation",
+      "source_domain": "Natural_Formation_Element_Simulation",
+      "computed": 1.000306,
+      "measured": 1.0,
+      "error_pct": 0.030564,
+      "source_median_error_pct": 0.0,
+      "D_eff": 11,
+      "S": 0.800656,
+      "omega_rad_s": 0.00010500646835399027,
+      "fpc_time_coupling": 0.000381736,
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "astronomical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\natural_formation_element_simulation_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Network_Internet_Protocols",
       "source_domain": "Network_Internet_Protocols",
       "computed": 1.000263,
@@ -1988,6 +3117,27 @@
       ],
       "priority": false,
       "benchmark_path": "data\\network_internet_protocols_cybersecurity_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Network_Science_Public_Panel",
+      "source_domain": "Network_Science_Public_Panel",
+      "computed": 1.000254,
+      "measured": 1.0,
+      "error_pct": 0.025353,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.640021,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\network_science_public_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2038,7 +3188,7 @@
       "computed": 1.0002,
       "measured": 1.0,
       "error_pct": 0.020016,
-      "source_median_error_pct": 0.072478,
+      "source_median_error_pct": 0.05042,
       "D_eff": 14,
       "S": 0.514273,
       "omega_rad_s": 0.00011375700738348947,
@@ -2049,6 +3199,52 @@
       ],
       "priority": false,
       "benchmark_path": "data\\neuroimmunology_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Neurolab_Gaps_Math_Spine",
+      "source_domain": "Neurolab_Gaps_Math_Spine",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.751397,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "mathematical",
+        "biological",
+        "energy",
+        "electron",
+        "ai"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\neurolab_gaps_math_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Neurolab_Residual_Math_Spine",
+      "source_domain": "Neurolab_Residual_Math_Spine",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.751397,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "mathematical",
+        "biological",
+        "quantum",
+        "ai",
+        "consciousness"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\neurolab_residual_math_spine_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2119,7 +3315,7 @@
       "computed": 1.000191,
       "measured": 1.0,
       "error_pct": 0.019096,
-      "source_median_error_pct": 0.078779,
+      "source_median_error_pct": 0.05042,
       "D_eff": 14,
       "S": 0.490629,
       "omega_rad_s": 0.00011375700738348947,
@@ -2150,6 +3346,27 @@
       ],
       "priority": false,
       "benchmark_path": "data\\openalex_citation_graph_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "OpenNeuro_Full_Panel",
+      "source_domain": "OpenNeuro_Full_Panel",
+      "computed": 1.000164,
+      "measured": 1.0,
+      "error_pct": 0.016394,
+      "source_median_error_pct": 0.0,
+      "D_eff": 14,
+      "S": 0.421218,
+      "omega_rad_s": 0.00011375700738348947,
+      "fpc_time_coupling": 0.000389206,
+      "maps_to_lean": [
+        "neural",
+        "consciousness",
+        "ai"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\openneuro_full_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2240,7 +3457,7 @@
       "computed": 1.000379,
       "measured": 1.0,
       "error_pct": 0.037857,
-      "source_median_error_pct": 0.018001,
+      "source_median_error_pct": 0.014415,
       "D_eff": 18,
       "S": 0.950413,
       "omega_rad_s": 0.00012542439275615506,
@@ -2252,6 +3469,97 @@
       ],
       "priority": false,
       "benchmark_path": "data\\particle_physics_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Periodic_Extension_Decay_Topology_Scaffold",
+      "source_domain": "Periodic_Extension_Decay_Topology_Scaffold",
+      "computed": 1.000332,
+      "measured": 1.0,
+      "error_pct": 0.033177,
+      "source_median_error_pct": 0.0,
+      "D_eff": 22,
+      "S": 0.815922,
+      "omega_rad_s": 0.00013709177812882062,
+      "fpc_time_coupling": 0.00040662,
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "energy"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\periodic_extension_decay_topology_scaffold_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Periodic_Table_Completion_Spine",
+      "source_domain": "Periodic_Table_Completion_Spine",
+      "computed": 1.000359,
+      "measured": 1.0,
+      "error_pct": 0.035936,
+      "source_median_error_pct": 1e-06,
+      "D_eff": 12,
+      "S": 0.935132,
+      "omega_rad_s": 0.00010792331469715667,
+      "fpc_time_coupling": 0.000384293,
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "atomic",
+        "fusion",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\periodic_table_completion_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Periodic_Table_Extension_Closure_Spine",
+      "source_domain": "Periodic_Table_Extension_Closure_Spine",
+      "computed": 1.000362,
+      "measured": 1.0,
+      "error_pct": 0.036214,
+      "source_median_error_pct": 0.0,
+      "D_eff": 26,
+      "S": 0.874222,
+      "omega_rad_s": 0.0001487591635014862,
+      "fpc_time_coupling": 0.000414242,
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic",
+        "material",
+        "energy"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\periodic_table_extension_closure_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Periodic_Table_Public_Panel",
+      "source_domain": "Periodic_Table_Public_Panel",
+      "computed": 1.000331,
+      "measured": 1.0,
+      "error_pct": 0.033145,
+      "source_median_error_pct": 9.5e-05,
+      "D_eff": 9,
+      "S": 0.880573,
+      "omega_rad_s": 9.917277566765747e-05,
+      "fpc_time_coupling": 0.000376402,
+      "maps_to_lean": [
+        "particle",
+        "atomic",
+        "nuclear",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\periodic_table_public_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2342,7 +3650,7 @@
       "computed": 1.000253,
       "measured": 1.0,
       "error_pct": 0.025291,
-      "source_median_error_pct": 0.032274,
+      "source_median_error_pct": 0.017906,
       "D_eff": 16,
       "S": 0.64212,
       "omega_rad_s": 0.00011959070006982226,
@@ -2419,6 +3727,28 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Preregistered_Outcome_Tracking",
+      "source_domain": "Preregistered_Outcome_Tracking",
+      "computed": 1.000309,
+      "measured": 1.0,
+      "error_pct": 0.030871,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.779339,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "biological",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\preregistered_outcome_tracking_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Preregistered_Predictions",
       "source_domain": "Preregistered_Predictions",
       "computed": 1.000309,
@@ -2436,6 +3766,29 @@
       ],
       "priority": false,
       "benchmark_path": "data\\preregistered_predictions_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Preregistered_Predictions_Verification_Scaffold",
+      "source_domain": "Preregistered_Predictions_Verification_Scaffold",
+      "computed": 1.000309,
+      "measured": 1.0,
+      "error_pct": 0.030871,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.779339,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "biological",
+        "material",
+        "ai"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\preregistered_predictions_verification_scaffold_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2482,6 +3835,28 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Proof_Ledger_Closure_Spine",
+      "source_domain": "Proof_Ledger_Closure_Spine",
+      "computed": 1.000362,
+      "measured": 1.0,
+      "error_pct": 0.036201,
+      "source_median_error_pct": 0.0,
+      "D_eff": 25,
+      "S": 0.877823,
+      "omega_rad_s": 0.00014584231715831982,
+      "fpc_time_coupling": 0.000412394,
+      "maps_to_lean": [
+        "mathematical",
+        "cosmological",
+        "particle",
+        "consciousness"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\proof_ledger_closure_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "PubChem_Compound_Properties",
       "source_domain": "PubChem_Compound_Properties",
       "computed": 1.000125,
@@ -2498,6 +3873,69 @@
       ],
       "priority": false,
       "benchmark_path": "data\\pubchem_compound_properties_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "PubChem_Live_Deep",
+      "source_domain": "PubChem_Live_Deep",
+      "computed": 1.000125,
+      "measured": 1.0,
+      "error_pct": 0.012485,
+      "source_median_error_pct": 0.00206,
+      "D_eff": 8,
+      "S": 0.334177,
+      "omega_rad_s": 9.625592932449109e-05,
+      "fpc_time_coupling": 0.000373616,
+      "maps_to_lean": [
+        "electron",
+        "chemical",
+        "medical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\pubchem_live_deep_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "PubChem_Stability_Panel",
+      "source_domain": "PubChem_Stability_Panel",
+      "computed": 1.000252,
+      "measured": 1.0,
+      "error_pct": 0.02516,
+      "source_median_error_pct": 0.002424,
+      "D_eff": 14,
+      "S": 0.646457,
+      "omega_rad_s": 0.00011375700738348947,
+      "fpc_time_coupling": 0.000389206,
+      "maps_to_lean": [
+        "electron",
+        "chemical",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\pubchem_stability_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Published_Fuel_Property_Panel",
+      "source_domain": "Published_Fuel_Property_Panel",
+      "computed": 1.000297,
+      "measured": 1.0,
+      "error_pct": 0.029733,
+      "source_median_error_pct": 0.0,
+      "D_eff": 16,
+      "S": 0.754878,
+      "omega_rad_s": 0.00011959070006982226,
+      "fpc_time_coupling": 0.000393874,
+      "maps_to_lean": [
+        "energy",
+        "chemical",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\published_fuel_property_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2523,12 +3961,33 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Quantum_Information",
+      "source_domain": "Quantum_Information",
+      "computed": 1.000359,
+      "measured": 1.0,
+      "error_pct": 0.035902,
+      "source_median_error_pct": 0.0,
+      "D_eff": 11,
+      "S": 0.940496,
+      "omega_rad_s": 0.00010500646835399027,
+      "fpc_time_coupling": 0.000381736,
+      "maps_to_lean": [
+        "quantum",
+        "ai",
+        "mathematical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\quantum_information_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Quantum_Materials",
       "source_domain": "Quantum_Materials",
       "computed": 1.000202,
       "measured": 1.0,
       "error_pct": 0.020185,
-      "source_median_error_pct": 0.082478,
+      "source_median_error_pct": 0.024318,
       "D_eff": 16,
       "S": 0.51247,
       "omega_rad_s": 0.00011959070006982226,
@@ -2559,6 +4018,27 @@
       ],
       "priority": false,
       "benchmark_path": "data\\rcsb_pdb_structures_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "RD_Interval_Tightening_Panel",
+      "source_domain": "RD_Interval_Tightening_Panel",
+      "computed": 1.000337,
+      "measured": 1.0,
+      "error_pct": 0.033696,
+      "source_median_error_pct": 0.000502,
+      "D_eff": 22,
+      "S": 0.828675,
+      "omega_rad_s": 0.00013709177812882062,
+      "fpc_time_coupling": 0.00040662,
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "cmb"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\rd_interval_tightening_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2649,6 +4129,26 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "SIMBAD_Stellar_Identity_Deep",
+      "source_domain": "SIMBAD_Stellar_Identity_Deep",
+      "computed": 1.000321,
+      "measured": 1.0,
+      "error_pct": 0.032077,
+      "source_median_error_pct": 0.0,
+      "D_eff": 20,
+      "S": 0.796827,
+      "omega_rad_s": 0.00013125808544248784,
+      "fpc_time_coupling": 0.000402561,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\simbad_stellar_identity_deep_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Secure_Software_Engineering",
       "source_domain": "Secure_Software_Engineering",
       "computed": 1.000252,
@@ -2708,6 +4208,27 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Semiconductor_Physics_Public_Panel",
+      "source_domain": "Semiconductor_Physics_Public_Panel",
+      "computed": 1.000197,
+      "measured": 1.0,
+      "error_pct": 0.019737,
+      "source_median_error_pct": 0.0,
+      "D_eff": 11,
+      "S": 0.517021,
+      "omega_rad_s": 0.00010500646835399027,
+      "fpc_time_coupling": 0.000381736,
+      "maps_to_lean": [
+        "electron",
+        "material",
+        "particle"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\semiconductor_physics_public_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Small_Body_Orbits",
       "source_domain": "Small_Body_Orbits",
       "computed": 1.000282,
@@ -2723,6 +4244,26 @@
       ],
       "priority": false,
       "benchmark_path": "data\\small_body_orbits_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Solar_System_Structure_Deep",
+      "source_domain": "Solar_System_Structure_Deep",
+      "computed": 1.000309,
+      "measured": 1.0,
+      "error_pct": 0.030923,
+      "source_median_error_pct": 0.003991,
+      "D_eff": 18,
+      "S": 0.776334,
+      "omega_rad_s": 0.00012542439275615506,
+      "fpc_time_coupling": 0.000398318,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\solar_system_structure_deep_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2774,7 +4315,7 @@
       "computed": 1.000226,
       "measured": 1.0,
       "error_pct": 0.022641,
-      "source_median_error_pct": 0.04459,
+      "source_median_error_pct": 0.003407,
       "D_eff": 16,
       "S": 0.574841,
       "omega_rad_s": 0.00011959070006982226,
@@ -2807,6 +4348,67 @@
       ],
       "priority": false,
       "benchmark_path": "data\\sports_biomechanics_gap_fill_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Statistical_Mechanics_Public_Panel",
+      "source_domain": "Statistical_Mechanics_Public_Panel",
+      "computed": 1.000223,
+      "measured": 1.0,
+      "error_pct": 0.022325,
+      "source_median_error_pct": 0.0,
+      "D_eff": 12,
+      "S": 0.58095,
+      "omega_rad_s": 0.00010792331469715667,
+      "fpc_time_coupling": 0.000384293,
+      "maps_to_lean": [
+        "energy",
+        "particle",
+        "thermodynamics"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\statistical_mechanics_public_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Stellar_Multiplicity_Catalog",
+      "source_domain": "Stellar_Multiplicity_Catalog",
+      "computed": 1.00031,
+      "measured": 1.0,
+      "error_pct": 0.030959,
+      "source_median_error_pct": 0.0,
+      "D_eff": 19,
+      "S": 0.773079,
+      "omega_rad_s": 0.00012834123909932145,
+      "fpc_time_coupling": 0.000400464,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\stellar_multiplicity_catalog_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Stellar_Multiplicity_Live_Deep",
+      "source_domain": "Stellar_Multiplicity_Live_Deep",
+      "computed": 1.00031,
+      "measured": 1.0,
+      "error_pct": 0.030959,
+      "source_median_error_pct": 0.0,
+      "D_eff": 19,
+      "S": 0.773079,
+      "omega_rad_s": 0.00012834123909932145,
+      "fpc_time_coupling": 0.000400464,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\stellar_multiplicity_live_deep_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2852,6 +4454,73 @@
       ],
       "priority": false,
       "benchmark_path": "data\\stumped_observables_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Superheavy_Element_Stability_Panel",
+      "source_domain": "Superheavy_Element_Stability_Panel",
+      "computed": 1.000316,
+      "measured": 1.0,
+      "error_pct": 0.031602,
+      "source_median_error_pct": 1e-06,
+      "D_eff": 10,
+      "S": 0.833604,
+      "omega_rad_s": 0.00010208962201082387,
+      "fpc_time_coupling": 0.000379107,
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "atomic",
+        "fusion"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\superheavy_element_stability_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Superheavy_Island_Completion_Spine",
+      "source_domain": "Superheavy_Island_Completion_Spine",
+      "computed": 1.000362,
+      "measured": 1.0,
+      "error_pct": 0.036161,
+      "source_median_error_pct": 0.0,
+      "D_eff": 22,
+      "S": 0.889301,
+      "omega_rad_s": 0.00013709177812882062,
+      "fpc_time_coupling": 0.00040662,
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\superheavy_island_completion_spine_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Superheavy_Island_Emergence_Simulation",
+      "source_domain": "Superheavy_Island_Emergence_Simulation",
+      "computed": 1.00031,
+      "measured": 1.0,
+      "error_pct": 0.031014,
+      "source_median_error_pct": 0.0,
+      "D_eff": 21,
+      "S": 0.766521,
+      "omega_rad_s": 0.00013417493178565423,
+      "fpc_time_coupling": 0.000404613,
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "astronomical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\superheavy_island_emergence_simulation_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -2937,6 +4606,28 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Term3_Acoustic_Bleed_Depth",
+      "source_domain": "Term3_Acoustic_Bleed_Depth",
+      "computed": 1.000308,
+      "measured": 1.0,
+      "error_pct": 0.030802,
+      "source_median_error_pct": 0.008381,
+      "D_eff": 15,
+      "S": 0.786626,
+      "omega_rad_s": 0.00011667385372665586,
+      "fpc_time_coupling": 0.000391569,
+      "maps_to_lean": [
+        "material",
+        "particle",
+        "energy",
+        "acoustical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\term3_acoustic_bleed_depth_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "Theory_Completeness_Spine",
       "source_domain": "Theory_Completeness_Spine",
       "computed": 1.000351,
@@ -2964,7 +4655,7 @@
       "computed": 1.000336,
       "measured": 1.0,
       "error_pct": 0.033624,
-      "source_median_error_pct": 0.023158,
+      "source_median_error_pct": 0.028056,
       "D_eff": 19,
       "S": 0.839618,
       "omega_rad_s": 0.00012834123909932145,
@@ -2979,6 +4670,29 @@
       ],
       "priority": false,
       "benchmark_path": "data\\time_domain_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Time_Emergence_Deep_Panel",
+      "source_domain": "Time_Emergence_Deep_Panel",
+      "computed": 1.000336,
+      "measured": 1.0,
+      "error_pct": 0.033624,
+      "source_median_error_pct": 0.0,
+      "D_eff": 19,
+      "S": 0.839618,
+      "omega_rad_s": 0.00012834123909932145,
+      "fpc_time_coupling": 0.000400464,
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\time_emergence_deep_panel_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3002,6 +4716,28 @@
       ],
       "priority": false,
       "benchmark_path": "data\\time_emergence_simulation_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "ToE_Claim_Certificate_Bundle",
+      "source_domain": "ToE_Claim_Certificate_Bundle",
+      "computed": 1.000362,
+      "measured": 1.0,
+      "error_pct": 0.036201,
+      "source_median_error_pct": 0.0,
+      "D_eff": 25,
+      "S": 0.877823,
+      "omega_rad_s": 0.00014584231715831982,
+      "fpc_time_coupling": 0.000412394,
+      "maps_to_lean": [
+        "cosmological",
+        "mathematical",
+        "particle",
+        "consciousness"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\toe_claim_certificate_bundle_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3178,6 +4914,28 @@
     {
       "lab": "time_domain_crosswalk_lab",
       "property": "fpc_tau_unity_coupling",
+      "name": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+      "source_domain": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+      "computed": 1.000294,
+      "measured": 1.0,
+      "error_pct": 0.029363,
+      "source_median_error_pct": 0.0,
+      "D_eff": 10,
+      "S": 0.774538,
+      "omega_rad_s": 0.00010208962201082387,
+      "fpc_time_coupling": 0.000379107,
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "atomic",
+        "fusion"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\undiscovered_element_candidate_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
       "name": "UniProt_Protein_Annotations",
       "source_domain": "UniProt_Protein_Annotations",
       "computed": 1.000177,
@@ -3194,6 +4952,71 @@
       ],
       "priority": false,
       "benchmark_path": "data\\uniprot_protein_annotations_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "UniProt_Structure_Annotations_Deep",
+      "source_domain": "UniProt_Structure_Annotations_Deep",
+      "computed": 1.000279,
+      "measured": 1.0,
+      "error_pct": 0.027884,
+      "source_median_error_pct": 0.0,
+      "D_eff": 13,
+      "S": 0.720933,
+      "omega_rad_s": 0.00011084016104032306,
+      "fpc_time_coupling": 0.000386782,
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\uniprot_structure_annotations_deep_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Unified_DB_Candidate_Crosswalk",
+      "source_domain": "Unified_DB_Candidate_Crosswalk",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.751397,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "medical",
+        "ai"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\unified_db_candidate_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Unified_DB_Crosswalk_Spine",
+      "source_domain": "Unified_DB_Crosswalk_Spine",
+      "computed": 1.000298,
+      "measured": 1.0,
+      "error_pct": 0.029765,
+      "source_median_error_pct": 0.0,
+      "D_eff": 17,
+      "S": 0.751397,
+      "omega_rad_s": 0.00012250754641298867,
+      "fpc_time_coupling": 0.000396122,
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "medical",
+        "ai"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\unified_db_crosswalk_spine_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3224,7 +5047,7 @@
       "computed": 1.000191,
       "measured": 1.0,
       "error_pct": 0.019096,
-      "source_median_error_pct": 0.134848,
+      "source_median_error_pct": 0.045933,
       "D_eff": 14,
       "S": 0.490629,
       "omega_rad_s": 0.00011375700738348947,
@@ -3235,6 +5058,70 @@
       ],
       "priority": false,
       "benchmark_path": "data\\virology_extension_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "VizieR_WDS_TAP_Live_Deep",
+      "source_domain": "VizieR_WDS_TAP_Live_Deep",
+      "computed": 1.000362,
+      "measured": 1.0,
+      "error_pct": 0.036165,
+      "source_median_error_pct": 0.0,
+      "D_eff": 21,
+      "S": 0.893814,
+      "omega_rad_s": 0.00013417493178565423,
+      "fpc_time_coupling": 0.000404613,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic",
+        "cmb"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\vizier_wds_tap_live_deep_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "WDS_Live_Multiplicity_Deep",
+      "source_domain": "WDS_Live_Multiplicity_Deep",
+      "computed": 1.00031,
+      "measured": 1.0,
+      "error_pct": 0.030959,
+      "source_median_error_pct": 0.0,
+      "D_eff": 19,
+      "S": 0.773079,
+      "omega_rad_s": 0.00012834123909932145,
+      "fpc_time_coupling": 0.000400464,
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\wds_live_multiplicity_deep_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Warp_BH_WH_Portal_Panel",
+      "source_domain": "Warp_BH_WH_Portal_Panel",
+      "computed": 1.000353,
+      "measured": 1.0,
+      "error_pct": 0.035319,
+      "source_median_error_pct": 0.0,
+      "D_eff": 29,
+      "S": 0.841766,
+      "omega_rad_s": 0.0001575097025309854,
+      "fpc_time_coupling": 0.000419577,
+      "maps_to_lean": [
+        "blackhole",
+        "quantum",
+        "cosmological",
+        "fluid_dynamics",
+        "electromagnetism"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\warp_bh_wh_portal_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3255,6 +5142,72 @@
       ],
       "priority": false,
       "benchmark_path": "data\\world_bank_development_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "XR_Interactive_Media_Math_Scaffold",
+      "source_domain": "XR_Interactive_Media_Math_Scaffold",
+      "computed": 1.0002,
+      "measured": 1.0,
+      "error_pct": 0.020016,
+      "source_median_error_pct": 0.0,
+      "D_eff": 14,
+      "S": 0.514273,
+      "omega_rad_s": 0.00011375700738348947,
+      "fpc_time_coupling": 0.000389206,
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural",
+        "mathematical",
+        "acoustical"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\xr_interactive_media_math_scaffold_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Z120_Z126_Beam_Synthesis_Panel",
+      "source_domain": "Z120_Z126_Beam_Synthesis_Panel",
+      "computed": 1.000315,
+      "measured": 1.0,
+      "error_pct": 0.031524,
+      "source_median_error_pct": 9.5e-05,
+      "D_eff": 20,
+      "S": 0.783076,
+      "omega_rad_s": 0.00013125808544248784,
+      "fpc_time_coupling": 0.000402561,
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\z120_z126_beam_synthesis_panel_benchmark.json"
+    },
+    {
+      "lab": "time_domain_crosswalk_lab",
+      "property": "fpc_tau_unity_coupling",
+      "name": "Z164_Distant_Island_Prereg_Scaffold",
+      "source_domain": "Z164_Distant_Island_Prereg_Scaffold",
+      "computed": 1.0003,
+      "measured": 1.0,
+      "error_pct": 0.030045,
+      "source_median_error_pct": 0.0,
+      "D_eff": 24,
+      "S": 0.731888,
+      "omega_rad_s": 0.00014292547081515343,
+      "fpc_time_coupling": 0.000410509,
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion"
+      ],
+      "priority": false,
+      "benchmark_path": "data\\z164_distant_island_prereg_scaffold_benchmark.json"
     },
     {
       "lab": "time_domain_crosswalk_lab",
@@ -3356,7 +5309,7 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.025013,
+    "scalar_pooled_median_error_pct": 0.0280505,
     "max_scalar_error_pct": 0.074365,
     "classifier_count": 0,
     "classifier_correct": 0,
@@ -3367,7 +5320,7 @@
     "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5,
-  "crosswalk_domain_count": 156,
+  "crosswalk_domain_count": 246,
   "priority_domain_count": 10,
   "clock_anchor_count": 4,
   "crosswalk_status": "GREEN",

@@ -3196,6 +3196,7 @@ verification:
   min_records_per_domain: 5
   max_median_error_pct: 0.5
   aspiration_max_scalar_error_pct: 0.5
+  hard_max_scalar_error_pct: 2.0
   tolerable_max_scalar_error_pct: 5.0
   min_classifier_accuracy_pct: 99.5
   tier_scalar_max_error_pct: 0.05

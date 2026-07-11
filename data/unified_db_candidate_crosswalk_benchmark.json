@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T18:38:30.496677+00:00",
+  "generated_at": "2026-07-11T15:13:10.390709+00:00",
   "domain": "Unified_DB_Candidate_Crosswalk",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -168,8 +168,8 @@
       "lab": "unified_db_crosswalk_lab",
       "property": "lean_priors_modules",
       "name": "formal_priors_count",
-      "computed": 163.0,
-      "measured": 163.0,
+      "computed": 308.0,
+      "measured": 308.0,
       "error_pct": 0.0,
       "source_panel": "formula_corpus_closure",
       "eval_kind": "candidate_relay"
@@ -178,8 +178,38 @@
       "lab": "unified_db_crosswalk_lab",
       "property": "extension_bridge_domains",
       "name": "benchmark_json_domains",
-      "computed": 127.0,
-      "measured": 127.0,
+      "computed": 268.0,
+      "measured": 268.0,
+      "error_pct": 0.0,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "domain_benchmark_records",
+      "name": "Acoustic_Resonance_Materials",
+      "computed": 29.0,
+      "measured": 29.0,
+      "error_pct": 0.008381497018412922,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "domain_benchmark_records",
+      "name": "Adjacent_Rung_Coupling",
+      "computed": 36.0,
+      "measured": 36.0,
+      "error_pct": 0.020098237848404983,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "domain_benchmark_records",
+      "name": "Adversarial_Fractal_Break_Tests",
+      "computed": 13.0,
+      "measured": 13.0,
       "error_pct": 0.0,
       "source_panel": "formula_corpus_closure",
       "eval_kind": "candidate_relay"
@@ -197,6 +227,16 @@
     {
       "lab": "unified_db_crosswalk_lab",
       "property": "domain_benchmark_records",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "computed": 48.0,
+      "measured": 48.0,
+      "error_pct": 0.005168558627176231,
+      "source_panel": "formula_corpus_closure",
+      "eval_kind": "candidate_relay"
+    },
+    {
+      "lab": "unified_db_crosswalk_lab",
+      "property": "domain_benchmark_records",
       "name": "Anthropology",
       "computed": 160.0,
       "measured": 160.0,
@@ -208,49 +248,9 @@
       "lab": "unified_db_crosswalk_lab",
       "property": "domain_benchmark_records",
       "name": "Architecture_Building_Science",
-      "computed": 83.0,
-      "measured": 83.0,
-      "error_pct": 0.0,
-      "source_panel": "formula_corpus_closure",
-      "eval_kind": "candidate_relay"
-    },
-    {
-      "lab": "unified_db_crosswalk_lab",
-      "property": "domain_benchmark_records",
-      "name": "arxiv_primitives_v14_benchmark",
-      "computed": 14.0,
-      "measured": 14.0,
-      "error_pct": 0.0,
-      "source_panel": "formula_corpus_closure",
-      "eval_kind": "candidate_relay"
-    },
-    {
-      "lab": "unified_db_crosswalk_lab",
-      "property": "domain_benchmark_records",
-      "name": "Atmospheric_Physics",
-      "computed": 107.0,
-      "measured": 107.0,
-      "error_pct": 0.0,
-      "source_panel": "formula_corpus_closure",
-      "eval_kind": "candidate_relay"
-    },
-    {
-      "lab": "unified_db_crosswalk_lab",
-      "property": "domain_benchmark_records",
-      "name": "Atomic_Physics",
-      "computed": 80.0,
-      "measured": 80.0,
-      "error_pct": 0.0009504134401195552,
-      "source_panel": "formula_corpus_closure",
-      "eval_kind": "candidate_relay"
-    },
-    {
-      "lab": "unified_db_crosswalk_lab",
-      "property": "domain_benchmark_records",
-      "name": "bibliography_lean_corpus_benchmark",
-      "computed": 9.0,
-      "measured": 9.0,
-      "error_pct": 0.0,
+      "computed": 43.0,
+      "measured": 43.0,
+      "error_pct": 0.07869745016115058,
       "source_panel": "formula_corpus_closure",
       "eval_kind": "candidate_relay"
     },
@@ -502,14 +502,14 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.9345794392523363,
-    "classifier_count": 5,
-    "classifier_correct": 5,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
     "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": 100.0,
-    "classifier_misclass_rate_pct": 0.0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5
 }

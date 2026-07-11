@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:18:42.480435+00:00",
+  "generated_at": "2026-07-11T15:14:18.552577+00:00",
   "domain": "Adversarial_Fractal_Break_Tests",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -187,9 +187,21 @@
       "source": "adversarial_corpus"
     }
   ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.03062212293865052,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
   "adversarial_sample_count": 6,
   "adversarial_detection_rate": 1.0,
-  "fractal_domain_attachments": 119,
+  "fractal_domain_attachments": 246,
   "break_test_status": "GREEN",
   "crosswalk_modules": [
     "FSOT.Formal.CVECodonHoleFalsificationPriors",

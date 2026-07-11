@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T18:29:22.560544+00:00",
+  "generated_at": "2026-07-11T15:13:05.623183+00:00",
   "domain": "Material_In_Silico_Screening_Scaffold",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -196,8 +196,8 @@
       "lab": "material_emergence_in_silico_scaffold_lab",
       "property": "panel_pooled_median",
       "name": "materials_genome_crosswalk",
-      "computed": 0.0,
-      "measured": 0.0,
+      "computed": 0.01731,
+      "measured": 0.01731,
       "error_pct": 0.0,
       "record_count": 38,
       "eval_kind": "scaffold_bridge"
@@ -206,8 +206,8 @@
       "lab": "material_emergence_in_silico_scaffold_lab",
       "property": "panel_pooled_median",
       "name": "materials_engineering",
-      "computed": 0.118765,
-      "measured": 0.118765,
+      "computed": 0.02717,
+      "measured": 0.02717,
       "error_pct": 0.0,
       "source_panel": "materials_genome_crosswalk",
       "eval_kind": "panel_relay"
@@ -216,9 +216,9 @@
       "lab": "material_emergence_in_silico_scaffold_lab",
       "property": "pooled_engineering_median",
       "name": "all_sections",
-      "computed": 0.118765,
+      "computed": 0.02717,
       "measured": 0.0,
-      "error_pct": 0.118765,
+      "error_pct": 0.027170334947435038,
       "source_panel": "materials_genome_crosswalk",
       "eval_kind": "panel_relay"
     },
@@ -226,9 +226,9 @@
       "lab": "material_emergence_in_silico_scaffold_lab",
       "property": "section_median_sec34_youngs_modulus",
       "name": "\u00a734 Young's Modulus",
-      "computed": 0.360682,
+      "computed": 0.067217,
       "measured": 0.0,
-      "error_pct": 0.360682,
+      "error_pct": 0.06721669152527372,
       "source_panel": "materials_genome_crosswalk",
       "eval_kind": "panel_relay"
     },
@@ -236,9 +236,9 @@
       "lab": "material_emergence_in_silico_scaffold_lab",
       "property": "section_median_sec37_thermal_kappa",
       "name": "\u00a737 Thermal \u03ba",
-      "computed": 0.264239,
+      "computed": 0.039768,
       "measured": 0.0,
-      "error_pct": 0.26423885832201555,
+      "error_pct": 0.03976772759072059,
       "source_panel": "materials_genome_crosswalk",
       "eval_kind": "panel_relay"
     },
@@ -246,9 +246,9 @@
       "lab": "material_emergence_in_silico_scaffold_lab",
       "property": "section_median_sec62_bulk_modulus",
       "name": "\u00a762 Bulk Modulus",
-      "computed": 0.322536,
+      "computed": 0.01731,
       "measured": 0.0,
-      "error_pct": 0.322536,
+      "error_pct": 0.017310023021640548,
       "source_panel": "materials_genome_crosswalk",
       "eval_kind": "panel_relay"
     },
@@ -256,9 +256,9 @@
       "lab": "material_emergence_in_silico_scaffold_lab",
       "property": "section_median_sec84_poisson_ratio_nu",
       "name": "\u00a784 Poisson Ratio \u03bd",
-      "computed": 0.312058,
+      "computed": 0.02326,
       "measured": 0.0,
-      "error_pct": 0.312058,
+      "error_pct": 0.023259895459434028,
       "source_panel": "materials_genome_crosswalk",
       "eval_kind": "panel_relay"
     },
@@ -266,8 +266,8 @@
       "lab": "material_emergence_in_silico_scaffold_lab",
       "property": "panel_pooled_median",
       "name": "quantum_materials",
-      "computed": 0.082478,
-      "measured": 0.082478,
+      "computed": 0.024318,
+      "measured": 0.024318,
       "error_pct": 0.0,
       "source_panel": "materials_genome_crosswalk",
       "eval_kind": "panel_relay"
@@ -276,9 +276,9 @@
       "lab": "material_emergence_in_silico_scaffold_lab",
       "property": "pooled_condensed_matter_median",
       "name": "all_sections",
-      "computed": 0.082478,
+      "computed": 0.024318,
       "measured": 0.0,
-      "error_pct": 0.08247836447365957,
+      "error_pct": 0.024318115591995593,
       "source_panel": "materials_genome_crosswalk",
       "eval_kind": "panel_relay"
     },
@@ -296,8 +296,8 @@
       "lab": "material_emergence_in_silico_scaffold_lab",
       "property": "panel_pooled_median",
       "name": "materials_engineering",
-      "computed": 0.118765,
-      "measured": 0.118765,
+      "computed": 0.02717,
+      "measured": 0.02717,
       "error_pct": 0.0,
       "source_panel": "material_property_verification_scaffold",
       "eval_kind": "panel_relay"
@@ -316,9 +316,9 @@
       "lab": "material_emergence_in_silico_scaffold_lab",
       "property": "\u00a734 Young's Modulus",
       "name": "Mg",
-      "computed": 45.3606797749979,
+      "computed": 45.00137640336734,
       "measured": 45.0,
-      "error_pct": 0.801511,
+      "error_pct": 0.003058674149640537,
       "source_panel": "material_property_verification_scaffold",
       "eval_kind": "panel_relay"
     },
@@ -474,15 +474,15 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.0021155,
-    "max_scalar_error_pct": 0.801511,
-    "classifier_count": 2,
-    "classifier_correct": 2,
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
     "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": 100.0,
-    "classifier_misclass_rate_pct": 0.0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5
 }

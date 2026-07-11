@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:18:41.987146+00:00",
+  "generated_at": "2026-07-11T15:14:17.774712+00:00",
   "domain": "Fractal_Constant_Recursion",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -272,6 +272,18 @@
       "morphism": "G/Catalan constants \u2192 term3 chaotic modulation"
     }
   ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
   "constant_family_count": 5,
   "sub_branch_count": 16,
   "corpus_constant_histogram": {

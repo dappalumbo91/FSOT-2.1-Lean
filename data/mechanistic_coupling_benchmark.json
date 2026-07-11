@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:59:21.175459+00:00",
+  "generated_at": "2026-07-11T15:13:36.194583+00:00",
   "domain": "Mechanistic_Coupling",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -1022,6 +1022,186 @@
     {
       "lab": "mechanistic_coupling_lab",
       "property": "affinity_edge_error",
+      "name": "Astronomy__Astrophysical_Structure_Crosswalk__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Stellar_Multiplicity_Catalog__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Compact_Object_Binary_Events__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Galactic_Structure_Sample__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Solar_System_Structure_Deep__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Exoplanet_System_Architecture__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Interdisciplinary_Spine_Crosswalk__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__GWOSC_Live_Event_Deep__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Stellar_Multiplicity_Live_Deep__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__SIMBAD_Stellar_Identity_Deep__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Gaia_Astrometry_Panel_Deep__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__WDS_Live_Multiplicity_Deep__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Gaia_DR3_TAP_Deep__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__VizieR_WDS_TAP_Live_Deep__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Live_Ingest_Spine__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Natural_Formation_Element_Simulation__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Superheavy_Island_Emergence_Simulation__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
+      "name": "Astronomy__Distant_Island_Emergence_Simulation__astronomical",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "domain_coupling_simulation",
+      "edge_type": "maps_to_lean_overlap"
+    },
+    {
+      "lab": "mechanistic_coupling_lab",
+      "property": "affinity_edge_error",
       "name": "Atomic_Physics__Particle_Physics__particle",
       "computed": 1.0,
       "measured": 1.0,
@@ -1148,188 +1328,20 @@
       "error_pct": 0.0,
       "source": "domain_coupling_simulation",
       "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Breakthrough_Discoveries_2024_2026__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Pure_Mathematics__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Domain_Coupling_Simulation__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Formula_Corpus_Closure__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Cryptography_Technology__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Zero_Day_Risk_Evaluator__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Formula_Branching_Fractal__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Mechanistic_Coupling__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Theory_Completeness_Spine__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Fractal_Constant_Recursion__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Preregistered_Predictions__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__ToE_Gap_Closure_Spine__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Acoustic_Resonance_Materials__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Chaos_Mediated_Phase_Transitions__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Particle_Neural_Orbital_Bridge__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Domain_Orbital_Predictions__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__ToE_Unification_Spine__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
-    },
-    {
-      "lab": "mechanistic_coupling_lab",
-      "property": "affinity_edge_error",
-      "name": "Atomic_Physics__Compactification_Ladder__particle",
-      "computed": 1.0,
-      "measured": 1.0,
-      "error_pct": 0.0,
-      "source": "domain_coupling_simulation",
-      "edge_type": "maps_to_lean_overlap"
     }
   ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0073836551816993294,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
   "mechanism_count": 39,
   "validated_mechanism_pairs": 37,
   "causal_manifest": [

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:31:14.976342+00:00",
+  "generated_at": "2026-07-11T15:14:38.512892+00:00",
   "domain": "ToE_Gap_Closure_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -65,17 +65,17 @@
       "lab": "toe_gap_closure_spine_lab",
       "property": "gap_pillar_records",
       "name": "predictions",
-      "computed": 8.0,
-      "measured": 8.0,
-      "error_pct": 0.02009823784840936,
+      "computed": 27.0,
+      "measured": 27.0,
+      "error_pct": 0.020098237848408945,
       "source": "Preregistered_Predictions"
     },
     {
       "lab": "toe_gap_closure_spine_lab",
       "property": "gap_pillar_records",
       "name": "portable",
-      "computed": 176.0,
-      "measured": 176.0,
+      "computed": 290.0,
+      "measured": 290.0,
       "error_pct": 0.0,
       "source": "Portable_Clone_Verify"
     },
@@ -83,9 +83,9 @@
       "lab": "toe_gap_closure_spine_lab",
       "property": "gap_pillar_records",
       "name": "observer",
-      "computed": 136.0,
-      "measured": 136.0,
-      "error_pct": 0.052510282019891545,
+      "computed": 247.0,
+      "measured": 247.0,
+      "error_pct": 0.0525102820198906,
       "source": "Observer_Channel_Derivation"
     },
     {
@@ -101,8 +101,8 @@
       "lab": "toe_gap_closure_spine_lab",
       "property": "preregistration_pass_count",
       "name": "discriminant_pass",
-      "computed": 8.0,
-      "measured": 8.0,
+      "computed": 24.0,
+      "measured": 24.0,
       "error_pct": 0.0,
       "source": "preregistered_predictions"
     },
@@ -116,6 +116,18 @@
       "source": "portable_clone_verify"
     }
   ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
   "pillar_count": 5,
   "gap_closure_status": "GREEN",
   "crosswalk_modules": [

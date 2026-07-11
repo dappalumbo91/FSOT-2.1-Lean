@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T23:58:47.102374+00:00",
+  "generated_at": "2026-07-11T15:12:49.239160+00:00",
   "source": [
     "vendor/math_generator/rules",
     "vendor/math_generator/benchmark_reports"
@@ -10,9 +10,9 @@
     "consciousness"
   ],
   "D_eff": 17,
-  "rule_count": 9,
-  "record_count": 9,
-  "observable_count": 9,
+  "rule_count": 13,
+  "record_count": 13,
+  "observable_count": 13,
   "median_error_pct": 0.0,
   "records": [
     {
@@ -48,10 +48,10 @@
     {
       "rule_id": "FO-210",
       "eval_kind": "live_report_rmse",
-      "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^9) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
+      "formula": "ln(1 + abs((((free_stream_velocity_ms / sqrt(abs(frequency_hz))) + p_new * (ln(abs(frequency_hz) + 1)) * (1 / (1 + 1000 * abs(suction_side_displacement_thickness_m)))) + ((c_eff / pi) / phi) * (ln(abs(frequency_hz) + 1)) + (((c_eff / phi) + p_base) / (1 + (1000 * abs(suction_side_displacement_thickness_m)) / phi))) * (e^6 - e^4) / (1 + (k^7) * (1000 * abs(suction_side_displacement_thickness_m))))) * (e^2 + pi^2 + p_new)",
       "computed": 6.247387360026391,
-      "measured": 6.247387360026391,
-      "error_pct": 0.0,
+      "measured": 5.907214506805364,
+      "error_pct": 5.758599976844136,
       "lab": "math_generator_benchmark_formula",
       "name": "Airfoil Benchmark Report Promotion"
     },
@@ -61,8 +61,8 @@
       "name": "Airfoil Benchmark Report Promotion",
       "property": "benchmark_summary_metric",
       "eval_kind": "summary_crosscheck",
-      "computed": 6.247387360026391,
-      "measured": 6.247387360026391,
+      "computed": 5.907214506805364,
+      "measured": 5.907214506805364,
       "error_pct": 0.0
     },
     {
@@ -73,6 +73,40 @@
       "eval_kind": "artifact_present",
       "computed": 1,
       "measured": 1,
+      "error_pct": 0.0
+    },
+    {
+      "rule_id": "FO-212",
+      "eval_kind": "skipped",
+      "error_pct": 100.0,
+      "lab": "math_generator_benchmark_formula",
+      "name": "Airfoil Gas-Medium Similarity Readout"
+    },
+    {
+      "lab": "math_generator_benchmark_formula",
+      "rule_id": "FO-212",
+      "name": "Airfoil Gas-Medium Similarity Readout",
+      "property": "benchmark_summary_metric",
+      "eval_kind": "summary_crosscheck",
+      "computed": 5.102551799768952,
+      "measured": 5.102551799768952,
+      "error_pct": 0.0
+    },
+    {
+      "rule_id": "FO-213",
+      "eval_kind": "skipped",
+      "error_pct": 100.0,
+      "lab": "math_generator_benchmark_formula",
+      "name": "Higgs Mass SMILES Intrinsic"
+    },
+    {
+      "lab": "math_generator_benchmark_formula",
+      "rule_id": "FO-213",
+      "name": "Higgs Mass SMILES Intrinsic",
+      "property": "benchmark_summary_metric",
+      "eval_kind": "summary_crosscheck",
+      "computed": 0.039861,
+      "measured": 0.039861,
       "error_pct": 0.0
     },
     {

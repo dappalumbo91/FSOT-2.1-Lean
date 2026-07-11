@@ -47,6 +47,7 @@ def main() -> int:
     min_records = int(ver.get("min_records_per_domain", 5))
     max_median = float(ver.get("max_median_error_pct", 0.5))
     aspiration_scalar = float(ver.get("aspiration_max_scalar_error_pct", MAX_SCALAR_ERROR_PCT))
+    hard_scalar = float(ver.get("hard_max_scalar_error_pct", 2.0))
     tolerable_scalar = float(ver.get("tolerable_max_scalar_error_pct", LEGACY_LOOSE_GATE_PCT))
     min_classifier_acc = float(ver.get("min_classifier_accuracy_pct", 99.5))
     excluded = set(ver.get("excluded_benchmarks") or [])
@@ -88,6 +89,15 @@ def main() -> int:
                 aspiration_debt.append(debt_row)
             if err_f > tolerable_scalar:
                 tolerable_debt.append({**debt_row, "severity": "unacceptable"})
+        if (
+            margin.get("scalar_count", 0) > 0
+            and max_scalar_err is not None
+            and float(max_scalar_err) > hard_scalar
+        ):
+            issues.append(
+                f"{name}: FSOT prediction max scalar {max_scalar_err}% > {hard_scalar}% "
+                f"({margin.get('max_scalar_property')})"
+            )
         if margin.get("classifier_count", 0) > 0 and not margin.get("classifier_pass"):
             issues.append(
                 f"{name}: classifier accuracy {cls_acc}% < {min_classifier_acc}%"
@@ -96,6 +106,7 @@ def main() -> int:
     debt_doc = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "aspiration_max_scalar_error_pct": aspiration_scalar,
+        "hard_max_scalar_error_pct": hard_scalar,
         "tolerable_max_scalar_error_pct": tolerable_scalar,
         "aspiration_debt_count": len(aspiration_debt),
         "unacceptable_scalar_count": len(tolerable_debt),

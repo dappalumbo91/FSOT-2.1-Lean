@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-09T11:57:57.268659+00:00",
+  "generated_at": "2026-07-11T15:12:48.018217+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
   "source_repo": "vendor/smiles",
@@ -12,44 +12,44 @@
   "record_count": 87,
   "observable_count": 87,
   "section_count": 7,
-  "median_error_pct": 0.118765,
-  "headline_median_error_pct": 0.312058,
-  "pooled_median_error_pct": 0.118765,
+  "median_error_pct": 0.027170334947435038,
+  "headline_median_error_pct": 0.027170334947435038,
+  "pooled_median_error_pct": 0.027170334947435038,
   "section_decomposition": {
     "\u00a734 Young's Modulus": {
       "record_count": 12,
-      "median_error_pct": 0.360682,
-      "max_error_pct": 0.881848,
+      "median_error_pct": 0.06721669152527372,
+      "max_error_pct": 0.396966,
       "min_error_pct": 0.0
     },
     "\u00a737 Thermal \u03ba": {
       "record_count": 15,
-      "median_error_pct": 0.26423885832201555,
-      "max_error_pct": 0.975141,
+      "median_error_pct": 0.03976772759072059,
+      "max_error_pct": 0.393853,
       "min_error_pct": 0.003188329795662879
     },
     "\u00a762 Bulk Modulus": {
       "record_count": 12,
-      "median_error_pct": 0.322536,
-      "max_error_pct": 0.880057,
-      "min_error_pct": 0.01167754377224071
+      "median_error_pct": 0.017310023021640548,
+      "max_error_pct": 0.322536,
+      "min_error_pct": 0.004583204008517656
     },
     "\u00a770 Shear Modulus": {
       "record_count": 12,
       "median_error_pct": 0.01731,
-      "max_error_pct": 0.819727,
+      "max_error_pct": 0.412118,
       "min_error_pct": 0.0007594387341680245
     },
     "\u00a773 Thermal Expansion": {
       "record_count": 12,
       "median_error_pct": 0.027170334947435038,
-      "max_error_pct": 0.967287,
+      "max_error_pct": 0.309601,
       "min_error_pct": 0.0
     },
     "\u00a784 Poisson Ratio \u03bd": {
       "record_count": 12,
-      "median_error_pct": 0.312058,
-      "max_error_pct": 0.995172,
+      "median_error_pct": 0.023259895459434028,
+      "max_error_pct": 0.491159,
       "min_error_pct": 0.0019323939162618046
     },
     "\u00a785 Thermal Diffusivity": {
@@ -62,8 +62,8 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "headline_observables": {
-      "pooled_median_error_pct": 0.118765,
-      "headline_median_error_pct": 0.312058,
+      "pooled_median_error_pct": 0.027170334947435038,
+      "headline_median_error_pct": 0.027170334947435038,
       "section_count": 7
     },
     "operational_baselines": {
@@ -112,18 +112,18 @@
       "lab": "materials_engineering_lab",
       "property": "pooled_engineering_median",
       "name": "all_sections",
-      "computed": 0.118765,
+      "computed": 0.02717,
       "measured": 0.0,
-      "error_pct": 0.118765,
+      "error_pct": 0.027170334947435038,
       "observable_count": 87
     },
     {
       "lab": "materials_engineering_lab",
       "property": "section_median_sec34_youngs_modulus",
       "name": "\u00a734 Young's Modulus",
-      "computed": 0.360682,
+      "computed": 0.067217,
       "measured": 0.0,
-      "error_pct": 0.360682,
+      "error_pct": 0.06721669152527372,
       "observable_count": 12,
       "section": "\u00a734 Young's Modulus"
     },
@@ -131,9 +131,9 @@
       "lab": "materials_engineering_lab",
       "property": "section_median_sec37_thermal_kappa",
       "name": "\u00a737 Thermal \u03ba",
-      "computed": 0.264239,
+      "computed": 0.039768,
       "measured": 0.0,
-      "error_pct": 0.26423885832201555,
+      "error_pct": 0.03976772759072059,
       "observable_count": 15,
       "section": "\u00a737 Thermal \u03ba"
     },
@@ -141,9 +141,9 @@
       "lab": "materials_engineering_lab",
       "property": "section_median_sec62_bulk_modulus",
       "name": "\u00a762 Bulk Modulus",
-      "computed": 0.322536,
+      "computed": 0.01731,
       "measured": 0.0,
-      "error_pct": 0.322536,
+      "error_pct": 0.017310023021640548,
       "observable_count": 12,
       "section": "\u00a762 Bulk Modulus"
     },
@@ -151,9 +151,9 @@
       "lab": "materials_engineering_lab",
       "property": "section_median_sec84_poisson_ratio_nu",
       "name": "\u00a784 Poisson Ratio \u03bd",
-      "computed": 0.312058,
+      "computed": 0.02326,
       "measured": 0.0,
-      "error_pct": 0.312058,
+      "error_pct": 0.023259895459434028,
       "observable_count": 12,
       "section": "\u00a784 Poisson Ratio \u03bd"
     }
@@ -171,9 +171,9 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a734 Young's Modulus",
       "name": "Mg",
-      "computed": 45.3606797749979,
+      "computed": 45.00137640336734,
       "measured": 45.0,
-      "error_pct": 0.801511
+      "error_pct": 0.003058674149640537
     },
     {
       "lab": "materials_engineering_lab",
@@ -219,9 +219,9 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a734 Young's Modulus",
       "name": "Ni",
-      "computed": 198.23630361533583,
+      "computed": 199.79429768652713,
       "measured": 200.0,
-      "error_pct": 0.881848
+      "error_pct": 0.10285115673643475
     },
     {
       "lab": "materials_engineering_lab",
@@ -251,17 +251,17 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a734 Young's Modulus",
       "name": "diamond",
-      "computed": 1056.190293404343,
+      "computed": 1049.8726049268328,
       "measured": 1050.0,
-      "error_pct": 0.589552
+      "error_pct": 0.01213286411116531
     },
     {
       "lab": "materials_engineering_lab",
       "property": "\u00a737 Thermal \u03ba",
       "name": "He_gas",
-      "computed": 0.1534822148944508,
+      "computed": 0.15196307398447872,
       "measured": 0.152,
-      "error_pct": 0.975141
+      "error_pct": 0.024293431263994338
     },
     {
       "lab": "materials_engineering_lab",
@@ -291,9 +291,9 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a737 Thermal \u03ba",
       "name": "Ti",
-      "computed": 21.70357091193756,
+      "computed": 21.89129086765763,
       "measured": 21.9,
-      "error_pct": 0.896936
+      "error_pct": 0.03976772759072059
     },
     {
       "lab": "materials_engineering_lab",
@@ -355,9 +355,9 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a737 Thermal \u03ba",
       "name": "Cu",
-      "computed": 403.4287934927351,
+      "computed": 401.08044771138935,
       "measured": 401.0,
-      "error_pct": 0.605684
+      "error_pct": 0.020061773413803996
     },
     {
       "lab": "materials_engineering_lab",
@@ -403,9 +403,9 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a762 Bulk Modulus",
       "name": "Cu",
-      "computed": 141.02410300364596,
+      "computed": 140.00807746832479,
       "measured": 140.0,
-      "error_pct": 0.731502
+      "error_pct": 0.005769620231989491
     },
     {
       "lab": "materials_engineering_lab",
@@ -419,25 +419,25 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a762 Bulk Modulus",
       "name": "Au",
-      "computed": 169.97058314499202,
+      "computed": 171.03481333412972,
       "measured": 171.0,
-      "error_pct": 0.601998
+      "error_pct": 0.020358674929662434
     },
     {
       "lab": "materials_engineering_lab",
       "property": "\u00a762 Bulk Modulus",
       "name": "Ag",
-      "computed": 104.79814713293308,
+      "computed": 103.99523346783114,
       "measured": 104.0,
-      "error_pct": 0.767449
+      "error_pct": 0.004583204008517656
     },
     {
       "lab": "materials_engineering_lab",
       "property": "\u00a762 Bulk Modulus",
       "name": "Pt",
-      "computed": 230.00652916778503,
+      "computed": 228.03946685248934,
       "measured": 228.0,
-      "error_pct": 0.880057
+      "error_pct": 0.017310023021640548
     },
     {
       "lab": "materials_engineering_lab",
@@ -467,9 +467,9 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a762 Bulk Modulus",
       "name": "Si",
-      "computed": 97.40910870745367,
+      "computed": 98.0122852361088,
       "measured": 98.0,
-      "error_pct": 0.60295
+      "error_pct": 0.012535955213056185
     },
     {
       "lab": "materials_engineering_lab",
@@ -523,9 +523,9 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a770 Shear Modulus",
       "name": "Ti",
-      "computed": 44.3606797749979,
+      "computed": 43.983469574867584,
       "measured": 44.0,
-      "error_pct": 0.819727
+      "error_pct": 0.03756914802821789
     },
     {
       "lab": "materials_engineering_lab",
@@ -627,9 +627,9 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a773 Thermal Expansion",
       "name": "Ti",
-      "computed": 8.683186676986617,
+      "computed": 8.597588141040656,
       "measured": 8.6,
-      "error_pct": 0.967287
+      "error_pct": 0.028044871620269182
     },
     {
       "lab": "materials_engineering_lab",
@@ -691,17 +691,17 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a784 Poisson Ratio \u03bd",
       "name": "Au",
-      "computed": 0.44437875543962385,
+      "computed": 0.43998755504601206,
       "measured": 0.44,
-      "error_pct": 0.995172
+      "error_pct": 0.002828398633623759
     },
     {
       "lab": "materials_engineering_lab",
       "property": "\u00a784 Poisson Ratio \u03bd",
       "name": "Ag",
-      "computed": 0.3679228124712124,
+      "computed": 0.3699139383868001,
       "measured": 0.37,
-      "error_pct": 0.561402
+      "error_pct": 0.023259895459434028
     },
     {
       "lab": "materials_engineering_lab",
@@ -739,9 +739,9 @@
       "lab": "materials_engineering_lab",
       "property": "\u00a784 Poisson Ratio \u03bd",
       "name": "Pb",
-      "computed": 0.44437875543962385,
+      "computed": 0.43998755504601206,
       "measured": 0.44,
-      "error_pct": 0.995172
+      "error_pct": 0.002828398633623759
     },
     {
       "lab": "materials_engineering_lab",

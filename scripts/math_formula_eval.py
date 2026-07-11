@@ -70,12 +70,18 @@ def core_context() -> dict[str, float]:
         "g": g_cat,
         "pnew": p_new,
         "pbase": p_base,
+        "p_base": p_base,
+        "p_new": p_new,
+        "c_eff": c_eff,
         "thetas": theta_s,
+        "theta_s": theta_s,
         "psicon": psi_con,
+        "psi_con": psi_con,
         "ceff": c_eff,
         "ableed": a_bleed,
         "ain": a_in,
         "mathcal_c": c_cosm,
+        "eta_eff": eta_eff,
     }
     return values
 
@@ -152,21 +158,25 @@ class _FormulaParser:
         return value
 
     def _parse_power(self) -> float:
-        value = self._parse_unary()
-        if self._peek() == "^":
-            self._consume("^")
-            value = value ** self._parse_power()
-        return value
+        return self._parse_unary()
 
     def _parse_unary(self) -> float:
         token = self._peek()
         if token == "-":
             self._consume("-")
-            return -self._parse_unary()
+            # -pi^2 means -(pi^2), not (-pi)^2
+            return -self._parse_power_body()
         if token == "+":
             self._consume("+")
-            return self._parse_unary()
-        return self._parse_atom()
+            return self._parse_power_body()
+        return self._parse_power_body()
+
+    def _parse_power_body(self) -> float:
+        value = self._parse_atom()
+        if self._peek() == "^":
+            self._consume("^")
+            value = value ** self._parse_power_body()
+        return value
 
     def _parse_atom(self) -> float:
         token = self._peek()

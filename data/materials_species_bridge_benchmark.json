@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T23:13:36.456293+00:00",
+  "generated_at": "2026-07-11T15:12:48.274469+00:00",
   "source": [
     "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
     "vendor/species/fsot_species_catalog.json"
@@ -24,16 +24,16 @@
   ],
   "record_count": 45,
   "observable_count": 45,
-  "median_error_pct": 0.0,
+  "median_error_pct": 0.002730116109889546,
   "records": [
     {
       "lab": "materials_species_bridge",
       "metal": "Ti",
       "property": "\u00a737 Thermal \u03ba",
       "species_property": "thermal_cond_W_mK",
-      "computed": 21.70357091193756,
+      "computed": 21.89129086765763,
       "measured": 21.70357091193756,
-      "error_pct": 0.0
+      "error_pct": 0.8649265896462162
     },
     {
       "lab": "materials_species_bridge",
@@ -49,9 +49,9 @@
       "metal": "Fe",
       "property": "\u00a737 Thermal \u03ba",
       "species_property": "thermal_cond_W_mK",
-      "computed": 79.46481912400328,
+      "computed": 80.40256341715572,
       "measured": 80.4047585604223,
-      "error_pct": 1.1690097119222957
+      "error_pct": 0.002730116109889546
     },
     {
       "lab": "materials_species_bridge",
@@ -76,9 +76,9 @@
       "metal": "Al",
       "property": "\u00a737 Thermal \u03ba",
       "species_property": "thermal_cond_W_mK",
-      "computed": 240.13753580571478,
+      "computed": 236.37375390577682,
       "measured": 237.0,
-      "error_pct": 1.3238547703437875
+      "error_pct": 0.26423885832201555
     },
     {
       "lab": "materials_species_bridge",
@@ -94,9 +94,9 @@
       "metal": "Cu",
       "property": "\u00a737 Thermal \u03ba",
       "species_property": "thermal_cond_W_mK",
-      "computed": 403.4287934927351,
+      "computed": 401.08044771138935,
       "measured": 403.4287934927351,
-      "error_pct": 0.0
+      "error_pct": 0.5820967217076054
     },
     {
       "lab": "materials_species_bridge",
@@ -130,9 +130,9 @@
       "metal": "Cu",
       "property": "\u00a762 Bulk Modulus",
       "species_property": "bulk_GPa",
-      "computed": 141.02410300364596,
+      "computed": 140.00807746832479,
       "measured": 141.02410300364596,
-      "error_pct": 0.0
+      "error_pct": 0.720462327843992
     },
     {
       "lab": "materials_species_bridge",
@@ -148,36 +148,36 @@
       "metal": "Au",
       "property": "\u00a762 Bulk Modulus",
       "species_property": "bulk_GPa",
-      "computed": 169.97058314499202,
+      "computed": 171.03481333412972,
       "measured": 169.97058314499202,
-      "error_pct": 0.0
+      "error_pct": 0.6261261033798243
     },
     {
       "lab": "materials_species_bridge",
       "metal": "Ag",
       "property": "\u00a762 Bulk Modulus",
       "species_property": "bulk_GPa",
-      "computed": 104.79814713293308,
+      "computed": 103.99523346783114,
       "measured": 104.79814713293308,
-      "error_pct": 0.0
+      "error_pct": 0.7661525390171925
     },
     {
       "lab": "materials_species_bridge",
       "metal": "Pt",
       "property": "\u00a762 Bulk Modulus",
       "species_property": "bulk_GPa",
-      "computed": 230.00652916778503,
+      "computed": 228.03946685248934,
       "measured": 230.00652916778503,
-      "error_pct": 0.0
+      "error_pct": 0.8552202071884494
     },
     {
       "lab": "materials_species_bridge",
       "metal": "Ti",
       "property": "\u00a762 Bulk Modulus",
       "species_property": "bulk_GPa",
-      "computed": 107.27869543509179,
+      "computed": 109.91205875478008,
       "measured": 109.99055899603007,
-      "error_pct": 2.4655421207888977
+      "error_pct": 0.07136998117523077
     },
     {
       "lab": "materials_species_bridge",
@@ -193,27 +193,27 @@
       "metal": "Pb",
       "property": "\u00a762 Bulk Modulus",
       "species_property": "bulk_GPa",
-      "computed": 46.97871376374779,
+      "computed": 45.97937748391752,
       "measured": 46.0,
-      "error_pct": 2.1276386168430244
+      "error_pct": 0.04483155670104976
     },
     {
       "lab": "materials_species_bridge",
       "metal": "Fe",
       "property": "\u00a770 Shear Modulus",
       "species_property": "shear_GPa",
-      "computed": 82.86725758374611,
+      "computed": 81.98265591930021,
       "measured": 82.0,
-      "error_pct": 1.0576311996903776
+      "error_pct": 0.021151317926568283
     },
     {
       "lab": "materials_species_bridge",
       "metal": "Cu",
       "property": "\u00a770 Shear Modulus",
       "species_property": "shear_GPa",
-      "computed": 47.20909393421359,
+      "computed": 48.01009892021143,
       "measured": 48.0,
-      "error_pct": 1.6477209703883517
+      "error_pct": 0.021039417107152993
     },
     {
       "lab": "materials_species_bridge",
@@ -229,27 +229,27 @@
       "metal": "Au",
       "property": "\u00a770 Shear Modulus",
       "species_property": "shear_GPa",
-      "computed": 27.41640786499874,
+      "computed": 27.000814497888015,
       "measured": 27.0,
-      "error_pct": 1.5422513518471808
+      "error_pct": 0.0030166588445013076
     },
     {
       "lab": "materials_species_bridge",
       "metal": "Pt",
       "property": "\u00a770 Shear Modulus",
       "species_property": "shear_GPa",
-      "computed": 61.98720613207489,
+      "computed": 60.99953674237216,
       "measured": 61.0,
-      "error_pct": 1.6183707083194891
+      "error_pct": 0.0007594387341680245
     },
     {
       "lab": "materials_species_bridge",
       "metal": "Ti",
       "property": "\u00a770 Shear Modulus",
       "species_property": "shear_GPa",
-      "computed": 44.3606797749979,
+      "computed": 43.983469574867584,
       "measured": 44.3606797749979,
-      "error_pct": 0.0
+      "error_pct": 0.8503255631869582
     },
     {
       "lab": "materials_species_bridge",
@@ -265,36 +265,36 @@
       "metal": "Al",
       "property": "\u00a773 Thermal Expansion",
       "species_property": "expansion_e6_per_K",
-      "computed": 22.803818751646713,
+      "computed": 23.095247412030183,
       "measured": 23.10092850280591,
-      "error_pct": 1.286137702746926
+      "error_pct": 0.024592478068738162
     },
     {
       "lab": "materials_species_bridge",
       "metal": "Cu",
       "property": "\u00a773 Thermal Expansion",
       "species_property": "expansion_e6_per_K",
-      "computed": 17.367255094728623,
+      "computed": 17.003471556649526,
       "measured": 17.0,
-      "error_pct": 2.1603240866389606
+      "error_pct": 0.020420921467798874
     },
     {
       "lab": "materials_species_bridge",
       "metal": "Fe",
       "property": "\u00a773 Thermal Expansion",
       "species_property": "expansion_e6_per_K",
-      "computed": 11.667385608651006,
+      "computed": 11.798131478696373,
       "measured": 11.800283807427723,
-      "error_pct": 1.1262288343697604
+      "error_pct": 0.018239635304326367
     },
     {
       "lab": "materials_species_bridge",
       "metal": "Au",
       "property": "\u00a773 Thermal Expansion",
       "species_property": "expansion_e6_per_K",
-      "computed": 13.70820393249937,
+      "computed": 13.996196153107359,
       "measured": 14.0,
-      "error_pct": 2.084257625004504
+      "error_pct": 0.027170334947435038
     },
     {
       "lab": "materials_species_bridge",
@@ -328,9 +328,9 @@
       "metal": "Ti",
       "property": "\u00a773 Thermal Expansion",
       "species_property": "expansion_e6_per_K",
-      "computed": 8.683186676986617,
+      "computed": 8.597588141040656,
       "measured": 8.683186676986617,
-      "error_pct": 0.0
+      "error_pct": 0.9857963341134384
     },
     {
       "lab": "materials_species_bridge",
@@ -373,27 +373,27 @@
       "metal": "Au",
       "property": "\u00a784 Poisson Ratio \u03bd",
       "species_property": "poisson_ratio",
-      "computed": 0.44437875543962385,
+      "computed": 0.43998755504601206,
       "measured": 0.44437875543962385,
-      "error_pct": 0.0
+      "error_pct": 0.988166139775872
     },
     {
       "lab": "materials_species_bridge",
       "metal": "Ag",
       "property": "\u00a784 Poisson Ratio \u03bd",
       "species_property": "poisson_ratio",
-      "computed": 0.3679228124712124,
+      "computed": 0.3699139383868001,
       "measured": 0.3679228124712124,
-      "error_pct": 0.0
+      "error_pct": 0.541180336770635
     },
     {
       "lab": "materials_species_bridge",
       "metal": "W",
       "property": "\u00a784 Poisson Ratio \u03bd",
       "species_property": "poisson_ratio",
-      "computed": 0.2769133882311614,
+      "computed": 0.27996700253223056,
       "measured": 0.2799984268314835,
-      "error_pct": 1.101805690565124
+      "error_pct": 0.01122302707503086
     },
     {
       "lab": "materials_species_bridge",
@@ -409,9 +409,9 @@
       "metal": "Ni",
       "property": "\u00a784 Poisson Ratio \u03bd",
       "species_property": "poisson_ratio",
-      "computed": 0.3048460791141165,
+      "computed": 0.3099940095788596,
       "measured": 0.30998746099588353,
-      "error_pct": 1.6585773712425496
+      "error_pct": 0.002112531569829656
     },
     {
       "lab": "materials_species_bridge",
@@ -427,9 +427,9 @@
       "metal": "Pb",
       "property": "\u00a784 Poisson Ratio \u03bd",
       "species_property": "poisson_ratio",
-      "computed": 0.44437875543962385,
+      "computed": 0.43998755504601206,
       "measured": 0.44437875543962385,
-      "error_pct": 0.0
+      "error_pct": 0.988166139775872
     }
   ]
 }

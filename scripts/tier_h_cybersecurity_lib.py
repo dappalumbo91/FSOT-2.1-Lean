@@ -244,6 +244,8 @@ def build_zero_day_risk_evaluator() -> dict:
             "computed": float(hole_count),
             "measured": 0.0,
             "error_pct": float(hole_count),
+            "eval_kind": "gap_detection",
+            "record_kind": "structural",
             "source": "code_genome_gap_detection",
             "risk_tier": risk_tier,
         }

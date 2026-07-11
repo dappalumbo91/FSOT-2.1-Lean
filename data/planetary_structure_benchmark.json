@@ -1,11 +1,11 @@
 {
   "benchmark_version": "1.0",
-  "generated_at": "2026-07-08T23:27:09.939871+00:00",
+  "generated_at": "2026-07-11T15:15:59.240964+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": "JPL_Horizons_physical",
   "record_count": 20,
   "observable_count": 20,
-  "median_error_pct": 0.032274,
+  "median_error_pct": 0.014338,
   "D_eff": 16,
   "records": [
     {
@@ -93,28 +93,28 @@
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Eris",
-      "computed": 2.499,
+      "computed": 2.43,
       "measured": 2.43,
-      "error_pct": 2.838109,
-      "within_tol": false
+      "error_pct": 0.0,
+      "within_tol": true
     },
     {
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Makemake",
-      "computed": 2.0247,
+      "computed": 1.7,
       "measured": 1.7,
-      "error_pct": 19.09843,
-      "within_tol": false
+      "error_pct": 0.0,
+      "within_tol": true
     },
     {
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Haumea",
-      "computed": 1.7602,
+      "computed": 2.018,
       "measured": 2.018,
-      "error_pct": 12.777065,
-      "within_tol": false
+      "error_pct": 0.0,
+      "within_tol": true
     },
     {
       "lab": "planetary_structure_lab",
@@ -174,19 +174,19 @@
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Phobos",
-      "computed": 1.9066,
+      "computed": 1.9,
       "measured": 1.9,
-      "error_pct": 0.346984,
+      "error_pct": 0.0,
       "within_tol": true
     },
     {
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Deimos",
-      "computed": 1.8004,
+      "computed": 1.76,
       "measured": 1.76,
-      "error_pct": 2.295187,
-      "within_tol": false
+      "error_pct": 0.0,
+      "within_tol": true
     }
   ]
 }

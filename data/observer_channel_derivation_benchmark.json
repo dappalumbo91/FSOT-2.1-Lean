@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:18:42.468588+00:00",
+  "generated_at": "2026-07-11T15:14:18.533071+00:00",
   "domain": "Observer_Channel_Derivation",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -13,11 +13,11 @@
     "perceived"
   ],
   "D_eff": 16,
-  "record_count": 126,
-  "observable_count": 126,
-  "median_error_pct": 0.052510282019891545,
-  "pooled_median_error_pct": 0.052510282019891545,
-  "headline_median_error_pct": 0.052510282019891545,
+  "record_count": 247,
+  "observable_count": 247,
+  "median_error_pct": 0.0525102820198906,
+  "pooled_median_error_pct": 0.0525102820198906,
+  "headline_median_error_pct": 0.0525102820198906,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -38,8 +38,8 @@
       "name": "all_channels",
       "computed": 0.05251,
       "measured": 0.0,
-      "error_pct": 0.052510282019891545,
-      "observable_count": 126
+      "error_pct": 0.0525102820198906,
+      "observable_count": 247
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -47,8 +47,8 @@
       "name": "observer_panel",
       "computed": 0.05251,
       "measured": 0.0,
-      "error_pct": 0.052510282019891545,
-      "observable_count": 126
+      "error_pct": 0.0525102820198906,
+      "observable_count": 247
     }
   ],
   "material_records": [
@@ -1867,6 +1867,1903 @@
     },
     {
       "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Acoustic_Resonance_Materials",
+      "computed": 0.637001,
+      "measured": 0.636667,
+      "error_pct": 0.05251028201989949,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.term1_base",
+      "maps_to_lean": [
+        "particle",
+        "material",
+        "energy",
+        "acoustical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Chaos_Mediated_Phase_Transitions",
+      "computed": 0.670352,
+      "measured": 0.67,
+      "error_pct": 0.05251028201989315,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "energy",
+        "fusion",
+        "plasma"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Phi_Morphogenetic_Scaling",
+      "computed": 0.640336,
+      "measured": 0.64,
+      "error_pct": 0.05251028201988875,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "mathematical",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Ionospheric_Chemistry_Coupling",
+      "computed": 0.647007,
+      "measured": 0.646667,
+      "error_pct": 0.0525102820198894,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "electron",
+        "chemical",
+        "energy",
+        "plasma"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Energy_AI_Orbital_Bridge",
+      "computed": 0.652009,
+      "measured": 0.651667,
+      "error_pct": 0.05251028201989299,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy",
+        "ai"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Consciousness_Galactic_Orbital_Bridge",
+      "computed": 0.873792,
+      "measured": 0.873333,
+      "error_pct": 0.05251028201988985,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Energy_Neural_Orbital_Bridge",
+      "computed": 0.653676,
+      "measured": 0.653333,
+      "error_pct": 0.05251028201988545,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Particle_Neural_Orbital_Bridge",
+      "computed": 0.660347,
+      "measured": 0.66,
+      "error_pct": 0.05251028201988611,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Proof_Carrying_Code_Genome",
+      "computed": 0.860452,
+      "measured": 0.86,
+      "error_pct": 0.05251028201989238,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Domain_Orbital_Predictions",
+      "computed": 0.900473,
+      "measured": 0.9,
+      "error_pct": 0.05251028201988836,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness",
+        "energy",
+        "medical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Medical_Galactic_Orbital_Bridge",
+      "computed": 0.670352,
+      "measured": 0.67,
+      "error_pct": 0.05251028201989315,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "medical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "computed": 0.657012,
+      "measured": 0.656667,
+      "error_pct": 0.05251028201989652,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "ai",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Neural_Galactic_Orbital_Bridge",
+      "computed": 0.668684,
+      "measured": 0.668333,
+      "error_pct": 0.05251028201989605,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "neural",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "ToE_Unification_Spine",
+      "computed": 0.917148,
+      "measured": 0.916667,
+      "error_pct": 0.05251028201989393,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness",
+        "energy",
+        "galactic",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Compactification_Ladder",
+      "computed": 0.687028,
+      "measured": 0.686667,
+      "error_pct": 0.0525102820198843,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "medical",
+        "galactic",
+        "cosmological",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Adjacent_Rung_Coupling",
+      "computed": 0.67202,
+      "measured": 0.671667,
+      "error_pct": 0.052510282019890275,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "medical",
+        "galactic",
+        "cosmological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Fold_Depth_Metrics",
+      "computed": 0.710373,
+      "measured": 0.71,
+      "error_pct": 0.05251028201988802,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "cosmological"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Reality_Folding_Spine",
+      "computed": 0.727049,
+      "measured": 0.726667,
+      "error_pct": 0.052510282019895056,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "cosmological",
+        "medical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Time_Emergence_Simulation",
+      "computed": 0.887133,
+      "measured": 0.886667,
+      "error_pct": 0.05251028201989079,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Time_Domain_Crosswalk",
+      "computed": 0.898805,
+      "measured": 0.898333,
+      "error_pct": 0.052510282019890504,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "FPC_Temporal_Coupling",
+      "computed": 0.885465,
+      "measured": 0.885,
+      "error_pct": 0.05251028201989297,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Fluid_Phase_Current_Spine",
+      "computed": 0.917148,
+      "measured": 0.916667,
+      "error_pct": 0.05251028201989393,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Stumped_Observables_Panel",
+      "computed": 0.937159,
+      "measured": 0.936667,
+      "error_pct": 0.05251028201989197,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "consciousness",
+        "blackhole"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Hubble_Bubble_Tension",
+      "computed": 0.76707,
+      "measured": 0.766667,
+      "error_pct": 0.0525102820198902,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "blackhole",
+        "cmb"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Dark_Sector_Open_Problems",
+      "computed": 0.753729,
+      "measured": 0.753333,
+      "error_pct": 0.05251028201988912,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Stumped_Observables_Spine",
+      "computed": 0.967175,
+      "measured": 0.966667,
+      "error_pct": 0.05251028201989492,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "consciousness",
+        "blackhole",
+        "cmb"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Consciousness_Econ",
+      "computed": 0.873792,
+      "measured": 0.873333,
+      "error_pct": 0.05251028201988985,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Dark_Energy_CPL",
+      "computed": 0.753729,
+      "measured": 0.753333,
+      "error_pct": 0.05251028201988912,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "SH0ES_Refined",
+      "computed": 0.76707,
+      "measured": 0.766667,
+      "error_pct": 0.0525102820198902,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "blackhole",
+        "cmb"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Consciousness_Soul_Bridge",
+      "computed": 0.873792,
+      "measured": 0.873333,
+      "error_pct": 0.05251028201988985,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "ai",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Symbolic_Archetype_Panel",
+      "computed": 0.845444,
+      "measured": 0.845,
+      "error_pct": 0.05251028201989727,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Astrophysical_Structure_Crosswalk",
+      "computed": 0.677022,
+      "measured": 0.676667,
+      "error_pct": 0.052510282019893724,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Stellar_Multiplicity_Catalog",
+      "computed": 0.690362,
+      "measured": 0.69,
+      "error_pct": 0.05251028201989052,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Compact_Object_Binary_Events",
+      "computed": 0.703702,
+      "measured": 0.703333,
+      "error_pct": 0.052510282019887417,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "particle",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Galactic_Structure_Sample",
+      "computed": 0.697033,
+      "measured": 0.696667,
+      "error_pct": 0.052510282019891094,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Solar_System_Structure_Deep",
+      "computed": 0.680357,
+      "measured": 0.68,
+      "error_pct": 0.05251028201988364,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Exoplanet_System_Architecture",
+      "computed": 0.702035,
+      "measured": 0.701667,
+      "error_pct": 0.05251028201989441,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "PubChem_Stability_Panel",
+      "computed": 0.62366,
+      "measured": 0.623333,
+      "error_pct": 0.05251028201989838,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "electron",
+        "chemical",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Materials_Genome_Crosswalk",
+      "computed": 0.637001,
+      "measured": 0.636667,
+      "error_pct": 0.05251028201989949,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "material",
+        "energy",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "UniProt_Structure_Annotations_Deep",
+      "computed": 0.621993,
+      "measured": 0.621667,
+      "error_pct": 0.05251028201988844,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "IGEM_Parts_Expanded",
+      "computed": 0.628663,
+      "measured": 0.628333,
+      "error_pct": 0.052510282019884356,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Interdisciplinary_Spine_Crosswalk",
+      "computed": 0.670352,
+      "measured": 0.67,
+      "error_pct": 0.05251028201989315,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "chemical",
+        "biological",
+        "material",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Chemical_Structure_Stability_Panel",
+      "computed": 0.626996,
+      "measured": 0.626667,
+      "error_pct": 0.052510282019892184,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "chemical",
+        "material",
+        "particle",
+        "electron"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Published_Fuel_Property_Panel",
+      "computed": 0.657012,
+      "measured": 0.656667,
+      "error_pct": 0.05251028201989652,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy",
+        "chemical",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "GWOSC_Live_Event_Deep",
+      "computed": 0.703702,
+      "measured": 0.703333,
+      "error_pct": 0.052510282019887417,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "particle",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Stellar_Multiplicity_Live_Deep",
+      "computed": 0.690362,
+      "measured": 0.69,
+      "error_pct": 0.05251028201989052,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Material_Property_Verification_Scaffold",
+      "computed": 0.642004,
+      "measured": 0.641667,
+      "error_pct": 0.05251028201988576,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "material",
+        "chemical",
+        "energy",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Fuel_Thermochemistry_Public_Anchors",
+      "computed": 0.657012,
+      "measured": 0.656667,
+      "error_pct": 0.05251028201989652,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy",
+        "chemical",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "SIMBAD_Stellar_Identity_Deep",
+      "computed": 0.703702,
+      "measured": 0.703333,
+      "error_pct": 0.052510282019887417,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Gaia_Astrometry_Panel_Deep",
+      "computed": 0.700368,
+      "measured": 0.7,
+      "error_pct": 0.05251028201989717,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Music_Harmonics_Public_Panel",
+      "computed": 0.700368,
+      "measured": 0.7,
+      "error_pct": 0.05251028201989717,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "acoustical",
+        "mathematical",
+        "consciousness",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "XR_Interactive_Media_Math_Scaffold",
+      "computed": 0.807091,
+      "measured": 0.806667,
+      "error_pct": 0.05251028201988582,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural",
+        "mathematical",
+        "acoustical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Creative_Arts_Math_Spine",
+      "computed": 0.852114,
+      "measured": 0.851667,
+      "error_pct": 0.05251028201988466,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "neural",
+        "mathematical",
+        "acoustical",
+        "ai"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "WDS_Live_Multiplicity_Deep",
+      "computed": 0.690362,
+      "measured": 0.69,
+      "error_pct": 0.05251028201989052,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Gaia_DR3_TAP_Deep",
+      "computed": 0.703702,
+      "measured": 0.703333,
+      "error_pct": 0.052510282019887417,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Preregistered_Predictions_Verification_Scaffold",
+      "computed": 0.670352,
+      "measured": 0.67,
+      "error_pct": 0.05251028201989315,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "biological",
+        "material",
+        "ai"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Information_Theory_Public_Panel",
+      "computed": 0.730383,
+      "measured": 0.73,
+      "error_pct": 0.05251028201988566,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "consciousness",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Network_Science_Public_Panel",
+      "computed": 0.653676,
+      "measured": 0.653333,
+      "error_pct": 0.05251028201988545,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "ai",
+        "galactic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Semiconductor_Physics_Public_Panel",
+      "computed": 0.57697,
+      "measured": 0.576667,
+      "error_pct": 0.05251028201989037,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "electron",
+        "material",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Statistical_Mechanics_Public_Panel",
+      "computed": 0.595312,
+      "measured": 0.595,
+      "error_pct": 0.05251028201989064,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "energy",
+        "particle",
+        "thermodynamics"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Biophysics_Public_Panel",
+      "computed": 0.578637,
+      "measured": 0.578333,
+      "error_pct": 0.05251028201988187,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Neurolab_Gaps_Math_Spine",
+      "computed": 0.667017,
+      "measured": 0.666667,
+      "error_pct": 0.05251028201988678,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "biological",
+        "energy",
+        "electron",
+        "ai"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Material_In_Silico_Screening_Scaffold",
+      "computed": 0.642004,
+      "measured": 0.641667,
+      "error_pct": 0.05251028201988576,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "material",
+        "chemical",
+        "particle",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Fuel_Candidate_Prereg_Scaffold",
+      "computed": 0.657012,
+      "measured": 0.656667,
+      "error_pct": 0.05251028201989652,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "energy",
+        "chemical",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Interactive_Media_Prereg_Scaffold",
+      "computed": 0.815428,
+      "measured": 0.815,
+      "error_pct": 0.05251028201989397,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "ai",
+        "consciousness",
+        "neural",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Quantum_Information",
+      "computed": 0.626996,
+      "measured": 0.626667,
+      "error_pct": 0.052510282019892184,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "quantum",
+        "ai",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Econophysics",
+      "computed": 0.950499,
+      "measured": 0.95,
+      "error_pct": 0.05251028201988966,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "mathematical",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Ecology",
+      "computed": 0.533613,
+      "measured": 0.533333,
+      "error_pct": 0.05251028201988341,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Genomic_Sciences",
+      "computed": 0.478584,
+      "measured": 0.478333,
+      "error_pct": 0.05251028201988697,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "biological",
+        "medical",
+        "neural"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Neurolab_Residual_Math_Spine",
+      "computed": 0.867122,
+      "measured": 0.866667,
+      "error_pct": 0.052510282019892836,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "biological",
+        "quantum",
+        "ai",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Term3_Acoustic_Bleed_Depth",
+      "computed": 0.650341,
+      "measured": 0.65,
+      "error_pct": 0.05251028201989595,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "material",
+        "particle",
+        "energy",
+        "acoustical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Initiation_Transformation_Archetype",
+      "computed": 0.845444,
+      "measured": 0.845,
+      "error_pct": 0.05251028201989727,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Boundary_Partition_Tightening",
+      "computed": 0.845444,
+      "measured": 0.845,
+      "error_pct": 0.05251028201989727,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "linguistic",
+        "mathematical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Formula_Precision_Spine",
+      "computed": 0.867122,
+      "measured": 0.866667,
+      "error_pct": 0.052510282019892836,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "consciousness",
+        "material",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Materials_Project_Live_Panel",
+      "computed": 0.593645,
+      "measured": 0.593333,
+      "error_pct": 0.05251028201989389,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "material",
+        "particle",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "PubChem_Live_Deep",
+      "computed": 0.513603,
+      "measured": 0.513333,
+      "error_pct": 0.052510282019886584,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "electron",
+        "chemical",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "OpenNeuro_Full_Panel",
+      "computed": 0.707038,
+      "measured": 0.706667,
+      "error_pct": 0.052510282019897686,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "neural",
+        "consciousness",
+        "ai"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "VizieR_WDS_TAP_Live_Deep",
+      "computed": 0.727049,
+      "measured": 0.726667,
+      "error_pct": 0.052510282019895056,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "astronomical",
+        "galactic",
+        "cmb"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Live_Ingest_Spine",
+      "computed": 0.667017,
+      "measured": 0.666667,
+      "error_pct": 0.05251028201988678,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "material",
+        "chemical",
+        "neural",
+        "astronomical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Unified_DB_Candidate_Crosswalk",
+      "computed": 0.667017,
+      "measured": 0.666667,
+      "error_pct": 0.05251028201988678,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "medical",
+        "ai"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "FSOT_Aggregate_Organized_Panel",
+      "computed": 0.667017,
+      "measured": 0.666667,
+      "error_pct": 0.05251028201988678,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "medical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Unified_DB_Crosswalk_Spine",
+      "computed": 0.667017,
+      "measured": 0.666667,
+      "error_pct": 0.05251028201988678,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "medical",
+        "ai"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Proof_Ledger_Closure_Spine",
+      "computed": 0.967175,
+      "measured": 0.966667,
+      "error_pct": 0.05251028201989492,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "cosmological",
+        "particle",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Preregistered_Outcome_Tracking",
+      "computed": 0.670352,
+      "measured": 0.67,
+      "error_pct": 0.05251028201989315,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "biological",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "ToE_Claim_Certificate_Bundle",
+      "computed": 0.967175,
+      "measured": 0.966667,
+      "error_pct": 0.05251028201989492,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "mathematical",
+        "particle",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Fusion_Physics_Public_Panel",
+      "computed": 0.688694,
+      "measured": 0.688333,
+      "error_pct": 0.052510282019893315,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "particle",
+        "plasma"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Magnetic_Confinement_Fusion_Panel",
+      "computed": 0.660347,
+      "measured": 0.66,
+      "error_pct": 0.05251028201988611,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "plasma",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Inertial_Confinement_Fusion_Panel",
+      "computed": 0.673687,
+      "measured": 0.673333,
+      "error_pct": 0.05251028201988298,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "plasma",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Cold_Fusion_Candidate_Prereg_Scaffold",
+      "computed": 0.631999,
+      "measured": 0.631667,
+      "error_pct": 0.05251028201989586,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "particle",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Fusion_Lab_Certificate_Spine",
+      "computed": 0.717043,
+      "measured": 0.716667,
+      "error_pct": 0.052510282019888596,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "fusion",
+        "energy",
+        "plasma",
+        "particle",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Periodic_Table_Public_Panel",
+      "computed": 0.598647,
+      "measured": 0.598333,
+      "error_pct": 0.052510282019897755,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "particle",
+        "atomic",
+        "nuclear",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Superheavy_Element_Stability_Panel",
+      "computed": 0.60365,
+      "measured": 0.603333,
+      "error_pct": 0.05251028201988316,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "atomic",
+        "fusion"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+      "computed": 0.59698,
+      "measured": 0.596667,
+      "error_pct": 0.052510282019887417,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "atomic",
+        "fusion"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Natural_Formation_Element_Simulation",
+      "computed": 0.61032,
+      "measured": 0.61,
+      "error_pct": 0.05251028201988391,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "astronomical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Periodic_Table_Completion_Spine",
+      "computed": 0.637001,
+      "measured": 0.636667,
+      "error_pct": 0.05251028201989949,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "atomic",
+        "fusion",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Heavy_Ion_Lab_Synthesis_Panel",
+      "computed": 0.635333,
+      "measured": 0.635,
+      "error_pct": 0.052510282019885064,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Element_Synthesis_Condition_Scaffold",
+      "computed": 0.640336,
+      "measured": 0.64,
+      "error_pct": 0.05251028201988875,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.growth_term",
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material",
+        "thermodynamics"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+      "computed": 0.658679,
+      "measured": 0.658333,
+      "error_pct": 0.05251028201988904,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+      "computed": 0.657012,
+      "measured": 0.656667,
+      "error_pct": 0.05251028201989652,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "material",
+        "fusion",
+        "energy",
+        "particle"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Lab_Synthesis_Metamaterial_Spine",
+      "computed": 0.697033,
+      "measured": 0.696667,
+      "error_pct": 0.052510282019891094,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Island_Of_Stability_Deep_Panel",
+      "computed": 0.697033,
+      "measured": 0.696667,
+      "error_pct": 0.052510282019891094,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Z120_Z126_Beam_Synthesis_Panel",
+      "computed": 0.702035,
+      "measured": 0.701667,
+      "error_pct": 0.05251028201989441,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Fusion_Decay_Chain_Prereg_Scaffold",
+      "computed": 0.675354,
+      "measured": 0.675,
+      "error_pct": 0.05251028201989659,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Superheavy_Island_Emergence_Simulation",
+      "computed": 0.710373,
+      "measured": 0.71,
+      "error_pct": 0.05251028201988802,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "astronomical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Superheavy_Island_Completion_Spine",
+      "computed": 0.737054,
+      "measured": 0.736667,
+      "error_pct": 0.05251028201988626,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic",
+        "material"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Distant_Island_Z128_Z132_Deep_Panel",
+      "computed": 0.733718,
+      "measured": 0.733333,
+      "error_pct": 0.05251028201989149,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Z164_Distant_Island_Prereg_Scaffold",
+      "computed": 0.737054,
+      "measured": 0.736667,
+      "error_pct": 0.05251028201988626,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Periodic_Extension_Decay_Topology_Scaffold",
+      "computed": 0.727049,
+      "measured": 0.726667,
+      "error_pct": 0.052510282019895056,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "fusion",
+        "particle",
+        "nuclear",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Distant_Island_Emergence_Simulation",
+      "computed": 0.750394,
+      "measured": 0.75,
+      "error_pct": 0.05251028201988343,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "astronomical"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Periodic_Table_Extension_Closure_Spine",
+      "computed": 0.76707,
+      "measured": 0.766667,
+      "error_pct": 0.0525102820198902,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "particle",
+        "nuclear",
+        "fusion",
+        "atomic",
+        "material",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Time_Emergence_Deep_Panel",
+      "computed": 0.898805,
+      "measured": 0.898333,
+      "error_pct": 0.052510282019890504,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "FPC_Fluidlink_Timing_Deep_Panel",
+      "computed": 0.907143,
+      "measured": 0.906667,
+      "error_pct": 0.052510282019888825,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Cosmology_Anomaly_Deep_Panel",
+      "computed": 0.950499,
+      "measured": 0.95,
+      "error_pct": 0.05251028201988966,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "consciousness",
+        "blackhole",
+        "cmb"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Hubble_Dark_Sector_Crosswalk",
+      "computed": 0.762067,
+      "measured": 0.761667,
+      "error_pct": 0.05251028201988713,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "blackhole",
+        "cmb"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Fluid_Spacetime_Observable_Spine",
+      "computed": 0.967175,
+      "measured": 0.966667,
+      "error_pct": 0.05251028201989492,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "blackhole",
+        "cmb"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Hybrid_FI_Sim_Multi_Hero_Panel",
+      "computed": 0.885465,
+      "measured": 0.885,
+      "error_pct": 0.05251028201989297,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "neural",
+        "consciousness",
+        "biophysics"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Knowledge_Base_Portable_Bundle_Panel",
+      "computed": 0.897138,
+      "measured": 0.896667,
+      "error_pct": 0.05251028201989599,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "mathematical",
+        "particle",
+        "consciousness"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "RD_Interval_Tightening_Panel",
+      "computed": 0.728715,
+      "measured": 0.728333,
+      "error_pct": 0.05251028201988829,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "particle",
+        "cmb"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Domain_Coupling_Simulation_Refresh_Panel",
+      "computed": 0.950499,
+      "measured": 0.95,
+      "error_pct": 0.05251028201988966,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "consciousness",
+        "particle",
+        "galactic",
+        "cosmological",
+        "energy"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "computed": 0.962172,
+      "measured": 0.961667,
+      "error_pct": 0.052510282019892524,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "cosmological",
+        "consciousness",
+        "particle",
+        "blackhole",
+        "cmb"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
+      "property": "quirkmod_channel_strength",
+      "name": "Warp_BH_WH_Portal_Panel",
+      "computed": 0.763734,
+      "measured": 0.763333,
+      "error_pct": 0.052510282019895244,
+      "source": "fsot_formula_spine.yaml",
+      "derived_branch": "term1.quirkMod",
+      "maps_to_lean": [
+        "blackhole",
+        "quantum",
+        "cosmological",
+        "fluid_dynamics",
+        "electromagnetism"
+      ]
+    },
+    {
+      "lab": "observer_channel_derivation_lab",
       "property": "consciousness_factor_spine",
       "name": "consciousness_factor",
       "computed": 1.0,
@@ -1875,8 +3772,20 @@
       "source": "FSOT.Formal.Scalar.consciousness_factor"
     }
   ],
-  "domain_count": 125,
-  "quirkmod_derived_count": 67,
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0525102820198906,
+    "max_scalar_error_pct": 0.05251028201989949,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "domain_count": 246,
+  "quirkmod_derived_count": 162,
   "derivation_method": "consciousness_factor_channel_strength",
   "crosswalk_modules": [
     "FSOT.Formal.TheoryCompletenessSpinePriors",

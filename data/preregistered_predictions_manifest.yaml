@@ -286,3 +286,27 @@ predictions:
     sota_label: "No unified FPC tau baseline"
     discriminant: "fsot_exceeds_sota_by_0.4"
     registered_at: "2026-07-10"
+
+  - id: PRED-032
+    name: bh_wh_micro_portal_doorway
+    domain: Warp_BH_WH_Portal_Panel
+    fsot_formula_branch: term3.poof_factor
+    fsot_predicted: 0.009663204175
+    unit: dimensionless_portal
+    sota_baseline: 0.0
+    sota_label: "No synthetic BH/WH doorway baseline"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    note: "Value locked from legacy warp_actuation_formula_fsot21.json psi_portal_doorway at build time"
+    registered_at: "2026-07-10"
+
+  - id: PRED-033
+    name: quantum_entanglement_gate_pair
+    domain: Warp_BH_WH_Portal_Panel
+    fsot_formula_branch: term1.perceived_adjust
+    fsot_predicted: 0.04803163401
+    unit: dimensionless_entanglement
+    sota_baseline: 0.0
+    sota_label: "No paired-gate entanglement baseline"
+    discriminant: "fsot_exceeds_sota_by_0.4"
+    note: "Value locked from legacy formula psi_entangle_gate at build time"
+    registered_at: "2026-07-10"

@@ -1,116 +1,15 @@
 {
-  "generated_at": "2026-07-11T15:01:10.002629+00:00",
+  "generated_at": "2026-07-11T15:17:23.237523+00:00",
   "aspiration_max_scalar_error_pct": 0.5,
+  "hard_max_scalar_error_pct": 2.0,
   "tolerable_max_scalar_error_pct": 5.0,
-  "aspiration_debt_count": 65,
-  "unacceptable_scalar_count": 21,
+  "aspiration_debt_count": 30,
+  "unacceptable_scalar_count": 5,
   "aspiration_debt": [
-    {
-      "domain": "Astrophysical_Structure_Crosswalk",
-      "max_scalar_error_pct": 13788.888889,
-      "property": "kepler_mass_closure",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Cosmology_Bubble_Bleed",
-      "max_scalar_error_pct": 100.0,
-      "property": "nebula_lensing_coupling",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Domain_Orbital_Predictions",
-      "max_scalar_error_pct": 99.0,
-      "property": "prediction_gap_fill",
-      "pooled_median_error_pct": 0.022773388129102783
-    },
-    {
-      "domain": "Biological_CUDA_Physarum",
-      "max_scalar_error_pct": 98.60353480253109,
-      "property": "codon_weight_count",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Zero_Day_Risk_Evaluator",
-      "max_scalar_error_pct": 82.0,
-      "property": "detected_hole_count",
-      "pooled_median_error_pct": 0.010337117254355377
-    },
-    {
-      "domain": "Warp_BH_WH_Portal_Panel",
-      "max_scalar_error_pct": 72.277647,
-      "property": "stabilization_margin",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Code_Genome_Structure",
-      "max_scalar_error_pct": 62.4202,
-      "property": "mean_codon_stability",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "External_OSS_Code_Genome",
-      "max_scalar_error_pct": 51.7506,
-      "property": "mean_codon_stability",
-      "pooled_median_error_pct": 0.011814
-    },
-    {
-      "domain": "Programming_Language_Laws",
-      "max_scalar_error_pct": 51.7506,
-      "property": "mean_codon_stability",
-      "pooled_median_error_pct": 0.007383655181691928
-    },
-    {
-      "domain": "Omni_Theory_Genesis",
-      "max_scalar_error_pct": 41.66666666666667,
-      "property": "positive_S_verse_count",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Formula_Corpus_Closure",
-      "max_scalar_error_pct": 40.53,
-      "property": "domain_benchmark_records",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Synthetic_Biology",
-      "max_scalar_error_pct": 31.22699016235138,
-      "property": "mt_genome_bp",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Planetary_Structure",
-      "max_scalar_error_pct": 19.09843,
-      "property": "mean_density",
-      "pooled_median_error_pct": 0.028138499999999997
-    },
-    {
-      "domain": "Geochemistry",
-      "max_scalar_error_pct": 19.09843,
-      "property": "planetary_bulk_density",
-      "pooled_median_error_pct": 0.015388964340886185
-    },
-    {
-      "domain": "Exogeology",
-      "max_scalar_error_pct": 19.09843,
-      "property": "mean_density",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Solar_System_Structure_Deep",
-      "max_scalar_error_pct": 19.09843,
-      "property": "mean_density",
-      "pooled_median_error_pct": 0.0082295
-    },
     {
       "domain": "Domain_Coupling_Simulation",
       "max_scalar_error_pct": 17.112096,
       "property": "cross_domain_ratio",
-      "pooled_median_error_pct": 0.0318035
-    },
-    {
-      "domain": "Formula_Corpus_CNC",
-      "max_scalar_error_pct": 11.764705882352942,
-      "property": "gauntlet_pass_rate_pct",
       "pooled_median_error_pct": 0.0
     },
     {
@@ -132,76 +31,28 @@
       "pooled_median_error_pct": 0.0
     },
     {
-      "domain": "Knowledge_Base_Portable_Bundle_Panel",
-      "max_scalar_error_pct": 4.841504,
-      "property": "strict_empirical_max_error_pct",
+      "domain": "Math_Generator_Benchmark_Formula_Eval",
+      "max_scalar_error_pct": 5.758599976844136,
+      "property": null,
       "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Consciousness_Econ",
-      "max_scalar_error_pct": 4.308988,
-      "property": "info_uplift_fraction",
-      "pooled_median_error_pct": 0.010557
     },
     {
       "domain": "Consciousness_Soul_Bridge",
-      "max_scalar_error_pct": 4.145039,
-      "property": "vib_avg_S",
+      "max_scalar_error_pct": 3.956881,
+      "property": "vib_pattern_stability",
       "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Materials_Species_Bridge",
-      "max_scalar_error_pct": 2.4655421207888977,
-      "property": "\u00a762 Bulk Modulus",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Materials_Genome_Crosswalk",
-      "max_scalar_error_pct": 2.4655421207888977,
-      "property": "\u00a762 Bulk Modulus",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Immunology",
-      "max_scalar_error_pct": 2.321477,
-      "property": "\u00a735 Michaelis Km",
-      "pooled_median_error_pct": 0.44153549999999997
-    },
-    {
-      "domain": "Clinical_Medicine",
-      "max_scalar_error_pct": 2.321477,
-      "property": "\u00a735 Michaelis Km",
-      "pooled_median_error_pct": 0.0028993480516637856
-    },
-    {
-      "domain": "Virology",
-      "max_scalar_error_pct": 2.321477,
-      "property": "\u00a735 Michaelis Km",
-      "pooled_median_error_pct": 0.04593318440798183
-    },
-    {
-      "domain": "Epidemiology",
-      "max_scalar_error_pct": 2.321477,
-      "property": "\u00a735 Michaelis Km",
-      "pooled_median_error_pct": 0.038304000000000005
     },
     {
       "domain": "Malware_Threat_Intelligence",
       "max_scalar_error_pct": 2.300029,
       "property": "\u00a721 Protein \u0394G",
-      "pooled_median_error_pct": 0.03062212293865052
+      "pooled_median_error_pct": 0.03062212293865394
     },
     {
-      "domain": "Cardiology",
-      "max_scalar_error_pct": 1.990026,
-      "property": "\u00a722 Amino Acid pKa",
-      "pooled_median_error_pct": 0.030622122938654326
-    },
-    {
-      "domain": "Speleology",
-      "max_scalar_error_pct": 1.399478,
-      "property": "\u00a725 vdW Radii",
-      "pooled_median_error_pct": 0.04459015721103299
+      "domain": "Cosmology_Bubble_Bleed",
+      "max_scalar_error_pct": 2.040816,
+      "property": "frb_p34_periodicity",
+      "pooled_median_error_pct": 0.0
     },
     {
       "domain": "Orbital_Mechanics",
@@ -219,7 +70,7 @@
       "domain": "Pure_Mathematics",
       "max_scalar_error_pct": 1.1862232544535427,
       "property": "hubble_constant_km_s_mpc",
-      "pooled_median_error_pct": 1.3070933694645246e-14
+      "pooled_median_error_pct": 0.0
     },
     {
       "domain": "Hubble_Bubble_Tension",
@@ -237,7 +88,7 @@
       "domain": "Fluid_Spacetime_Observable_Spine",
       "max_scalar_error_pct": 1.076341,
       "property": "sector_h0_overlay",
-      "pooled_median_error_pct": 0.000502
+      "pooled_median_error_pct": 0.000251
     },
     {
       "domain": "Small_Body_Orbits",
@@ -246,34 +97,10 @@
       "pooled_median_error_pct": 0.0754595
     },
     {
-      "domain": "Materials_Engineering",
-      "max_scalar_error_pct": 0.995172,
+      "domain": "Materials_Species_Bridge",
+      "max_scalar_error_pct": 0.988166139775872,
       "property": "\u00a784 Poisson Ratio \u03bd",
-      "pooled_median_error_pct": 0.1360405
-    },
-    {
-      "domain": "Civil_Engineering",
-      "max_scalar_error_pct": 0.995172,
-      "property": "\u00a784 Poisson Ratio \u03bd",
-      "pooled_median_error_pct": 0.07869745016115814
-    },
-    {
-      "domain": "Oncology",
-      "max_scalar_error_pct": 0.98989,
-      "property": "\u00a765 Enzyme pKi",
-      "pooled_median_error_pct": 0.078779
-    },
-    {
-      "domain": "Neuroimmunology",
-      "max_scalar_error_pct": 0.98989,
-      "property": "\u00a765 Enzyme pKi",
-      "pooled_median_error_pct": 0.100759
-    },
-    {
-      "domain": "Quantum_Materials",
-      "max_scalar_error_pct": 0.977055,
-      "property": "\u00a775 Superconducting Tc",
-      "pooled_median_error_pct": 0.08247836447365957
+      "pooled_median_error_pct": 0.002730116109889546
     },
     {
       "domain": "Phi_Morphogenetic_Scaling",
@@ -282,75 +109,27 @@
       "pooled_median_error_pct": 0.0565
     },
     {
-      "domain": "Symbolic_Archetype_Panel",
-      "max_scalar_error_pct": 0.945436,
-      "property": "archetype_mean_S",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Initiation_Transformation_Archetype",
-      "max_scalar_error_pct": 0.945436,
-      "property": "archetype_mean_S",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Formula_Precision_Spine",
-      "max_scalar_error_pct": 0.945436,
-      "property": "archetype_mean_S",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "FSOT_Aggregate_Unified_DB",
-      "max_scalar_error_pct": 0.9345794392523363,
-      "property": "smiles_derivation_section_count",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Unified_DB_Candidate_Crosswalk",
-      "max_scalar_error_pct": 0.9345794392523363,
-      "property": "smiles_derivation_section_count",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Unified_DB_Crosswalk_Spine",
-      "max_scalar_error_pct": 0.9345794392523363,
-      "property": "smiles_derivation_section_count",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Culinary_Arts",
-      "max_scalar_error_pct": 0.934321,
-      "property": "\u00a750 Diffusion D",
-      "pooled_median_error_pct": 0.047615187057821064
-    },
-    {
-      "domain": "Maillard_Chemistry",
-      "max_scalar_error_pct": 0.934321,
-      "property": "\u00a750 Diffusion D",
-      "pooled_median_error_pct": 0.094436940193395
-    },
-    {
-      "domain": "Creative_Arts_Math_Spine",
-      "max_scalar_error_pct": 0.934321,
-      "property": "\u00a750 Diffusion D",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Interactive_Media_Prereg_Scaffold",
-      "max_scalar_error_pct": 0.934321,
-      "property": "\u00a750 Diffusion D",
-      "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Material_Property_Verification_Scaffold",
-      "max_scalar_error_pct": 0.881848,
-      "property": "\u00a734 Young's Modulus",
-      "pooled_median_error_pct": 0.002271
-    },
-    {
       "domain": "Planetary_Atmospheres",
       "max_scalar_error_pct": 0.881383,
       "property": "surface_pressure",
+      "pooled_median_error_pct": 0.0
+    },
+    {
+      "domain": "Materials_Genome_Crosswalk",
+      "max_scalar_error_pct": 0.8649265896462162,
+      "property": "\u00a737 Thermal \u03ba",
+      "pooled_median_error_pct": 0.017310023021640548
+    },
+    {
+      "domain": "Oncology",
+      "max_scalar_error_pct": 0.8595988538681949,
+      "property": "mt_operon_length",
+      "pooled_median_error_pct": 0.050774284910266525
+    },
+    {
+      "domain": "Synthetic_Biology",
+      "max_scalar_error_pct": 0.8595988538681949,
+      "property": "mt_operon_length",
       "pooled_median_error_pct": 0.0
     },
     {
@@ -363,25 +142,25 @@
       "domain": "IGEM_Parts_Expanded",
       "max_scalar_error_pct": 0.8595988538681949,
       "property": "biology_strict_operon_replication",
-      "pooled_median_error_pct": 7.613550227080146e-05
+      "pooled_median_error_pct": 7.999993600270692e-05
     },
     {
-      "domain": "Material_In_Silico_Screening_Scaffold",
-      "max_scalar_error_pct": 0.801511,
-      "property": "\u00a734 Young's Modulus",
-      "pooled_median_error_pct": 0.0021155
+      "domain": "Planetary_Structure",
+      "max_scalar_error_pct": 0.764363,
+      "property": "mean_density",
+      "pooled_median_error_pct": 0.012213
     },
     {
-      "domain": "Fuel_Candidate_Prereg_Scaffold",
-      "max_scalar_error_pct": 0.801511,
-      "property": "\u00a734 Young's Modulus",
+      "domain": "Geochemistry",
+      "max_scalar_error_pct": 0.764363,
+      "property": "planetary_bulk_density",
+      "pooled_median_error_pct": 0.012522197463797497
+    },
+    {
+      "domain": "Exogeology",
+      "max_scalar_error_pct": 0.764363,
+      "property": "mean_density",
       "pooled_median_error_pct": 0.0
-    },
-    {
-      "domain": "Lab_Synthesis_Metamaterial_Spine",
-      "max_scalar_error_pct": 0.776437,
-      "property": "\u00a74b Lattice Energies",
-      "pooled_median_error_pct": 9.5e-05
     },
     {
       "domain": "Acoustic_Resonance_Materials",
@@ -390,136 +169,29 @@
       "pooled_median_error_pct": 0.008381497018412922
     },
     {
+      "domain": "Creative_Arts_Math_Spine",
+      "max_scalar_error_pct": 0.6395,
+      "property": "acoustic_impedance_MRayl",
+      "pooled_median_error_pct": 0.0
+    },
+    {
       "domain": "Term3_Acoustic_Bleed_Depth",
       "max_scalar_error_pct": 0.6395,
       "property": "acoustic_impedance_MRayl",
       "pooled_median_error_pct": 0.008381497018408523
+    },
+    {
+      "domain": "Formula_Precision_Spine",
+      "max_scalar_error_pct": 0.6395,
+      "property": "acoustic_impedance_MRayl",
+      "pooled_median_error_pct": 0.0
     }
   ],
   "unacceptable_scalar_debt": [
     {
-      "domain": "Astrophysical_Structure_Crosswalk",
-      "max_scalar_error_pct": 13788.888889,
-      "property": "kepler_mass_closure",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Cosmology_Bubble_Bleed",
-      "max_scalar_error_pct": 100.0,
-      "property": "nebula_lensing_coupling",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Domain_Orbital_Predictions",
-      "max_scalar_error_pct": 99.0,
-      "property": "prediction_gap_fill",
-      "pooled_median_error_pct": 0.022773388129102783,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Biological_CUDA_Physarum",
-      "max_scalar_error_pct": 98.60353480253109,
-      "property": "codon_weight_count",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Zero_Day_Risk_Evaluator",
-      "max_scalar_error_pct": 82.0,
-      "property": "detected_hole_count",
-      "pooled_median_error_pct": 0.010337117254355377,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Warp_BH_WH_Portal_Panel",
-      "max_scalar_error_pct": 72.277647,
-      "property": "stabilization_margin",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Code_Genome_Structure",
-      "max_scalar_error_pct": 62.4202,
-      "property": "mean_codon_stability",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "External_OSS_Code_Genome",
-      "max_scalar_error_pct": 51.7506,
-      "property": "mean_codon_stability",
-      "pooled_median_error_pct": 0.011814,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Programming_Language_Laws",
-      "max_scalar_error_pct": 51.7506,
-      "property": "mean_codon_stability",
-      "pooled_median_error_pct": 0.007383655181691928,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Omni_Theory_Genesis",
-      "max_scalar_error_pct": 41.66666666666667,
-      "property": "positive_S_verse_count",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Formula_Corpus_Closure",
-      "max_scalar_error_pct": 40.53,
-      "property": "domain_benchmark_records",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Synthetic_Biology",
-      "max_scalar_error_pct": 31.22699016235138,
-      "property": "mt_genome_bp",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Planetary_Structure",
-      "max_scalar_error_pct": 19.09843,
-      "property": "mean_density",
-      "pooled_median_error_pct": 0.028138499999999997,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Geochemistry",
-      "max_scalar_error_pct": 19.09843,
-      "property": "planetary_bulk_density",
-      "pooled_median_error_pct": 0.015388964340886185,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Exogeology",
-      "max_scalar_error_pct": 19.09843,
-      "property": "mean_density",
-      "pooled_median_error_pct": 0.0,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Solar_System_Structure_Deep",
-      "max_scalar_error_pct": 19.09843,
-      "property": "mean_density",
-      "pooled_median_error_pct": 0.0082295,
-      "severity": "unacceptable"
-    },
-    {
       "domain": "Domain_Coupling_Simulation",
       "max_scalar_error_pct": 17.112096,
       "property": "cross_domain_ratio",
-      "pooled_median_error_pct": 0.0318035,
-      "severity": "unacceptable"
-    },
-    {
-      "domain": "Formula_Corpus_CNC",
-      "max_scalar_error_pct": 11.764705882352942,
-      "property": "gauntlet_pass_rate_pct",
       "pooled_median_error_pct": 0.0,
       "severity": "unacceptable"
     },
@@ -541,6 +213,13 @@
       "domain": "Fluid_Spacetime_Prereg_Validation_Panel",
       "max_scalar_error_pct": 6.973294,
       "property": "hubble_constant",
+      "pooled_median_error_pct": 0.0,
+      "severity": "unacceptable"
+    },
+    {
+      "domain": "Math_Generator_Benchmark_Formula_Eval",
+      "max_scalar_error_pct": 5.758599976844136,
+      "property": null,
       "pooled_median_error_pct": 0.0,
       "severity": "unacceptable"
     }

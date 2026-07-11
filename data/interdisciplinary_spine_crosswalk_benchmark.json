@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T18:15:12.088900+00:00",
+  "generated_at": "2026-07-11T15:13:03.031988+00:00",
   "domain": "Interdisciplinary_Spine_Crosswalk",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -61,7 +61,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "record_count": 34,
+      "record_count": 32,
       "domain": "Astrophysical_Structure_Crosswalk",
       "eval_kind": "spine_bridge"
     },
@@ -102,8 +102,8 @@
       "lab": "interdisciplinary_spine_lab",
       "property": "panel_pooled_median",
       "name": "solar_system_structure_deep",
-      "computed": 0.009693,
-      "measured": 0.009693,
+      "computed": 0.003991,
+      "measured": 0.003991,
       "error_pct": 0.0,
       "record_count": 50,
       "domain": "Solar_System_Structure_Deep",
@@ -135,8 +135,8 @@
       "lab": "interdisciplinary_spine_lab",
       "property": "panel_pooled_median",
       "name": "materials_genome_crosswalk",
-      "computed": 0.0,
-      "measured": 0.0,
+      "computed": 0.01731,
+      "measured": 0.01731,
       "error_pct": 0.0,
       "record_count": 38,
       "domain": "Materials_Genome_Crosswalk",
@@ -204,8 +204,8 @@
       "lab": "interdisciplinary_spine_lab",
       "property": "coupling_node_count",
       "name": "domain_coupling_simulation",
-      "computed": 183.0,
-      "measured": 183.0,
+      "computed": 282.0,
+      "measured": 282.0,
       "error_pct": 0.0,
       "eval_kind": "coupling_anchor"
     }
@@ -213,11 +213,11 @@
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
     "max_scalar_error_pct": 0.0,
-    "classifier_count": 7,
-    "classifier_correct": 7,
+    "classifier_count": 0,
+    "classifier_correct": 0,
     "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": 100.0,
-    "classifier_misclass_rate_pct": 0.0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T18:06:48.969201+00:00",
+  "generated_at": "2026-07-11T15:12:07.100489+00:00",
   "domain": "Astrophysical_Structure_Crosswalk",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -13,8 +13,8 @@
     "particle"
   ],
   "D_eff": 18,
-  "record_count": 34,
-  "observable_count": 34,
+  "record_count": 32,
+  "observable_count": 32,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
   "median_error_pct": 0.0,
@@ -34,8 +34,8 @@
       "lab": "astrophysical_structure_crosswalk_lab",
       "property": "domain_pooled_median",
       "name": "planetary_structure_panel",
-      "computed": 0.032274,
-      "measured": 0.032274,
+      "computed": 0.017906,
+      "measured": 0.017906,
       "error_pct": 0.0,
       "eval_kind": "crosswalk_bridge",
       "source_benchmark": "data/planetary_structure_benchmark.json",
@@ -102,6 +102,7 @@
       "error_pct": 36.551386,
       "structure_class": "binary_star",
       "eval_kind": "catalog_consistency",
+      "record_kind": "structural",
       "source": "WDS/literature",
       "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
     },
@@ -126,6 +127,7 @@
       "error_pct": 4.658374,
       "structure_class": "binary_star",
       "eval_kind": "catalog_consistency",
+      "record_kind": "structural",
       "source": "WDS/literature",
       "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
     },
@@ -150,6 +152,7 @@
       "error_pct": 4.658374,
       "structure_class": "trinary_star",
       "eval_kind": "catalog_consistency",
+      "record_kind": "structural",
       "source": "literature hierarchical",
       "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
     },
@@ -185,6 +188,7 @@
       "error_pct": 252.523209,
       "structure_class": "binary_star",
       "eval_kind": "catalog_consistency",
+      "record_kind": "structural",
       "source": "WDS/literature",
       "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
     },
@@ -209,6 +213,7 @@
       "error_pct": 42.631026,
       "structure_class": "binary_star",
       "eval_kind": "catalog_consistency",
+      "record_kind": "structural",
       "source": "WDS",
       "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
     },
@@ -233,6 +238,7 @@
       "error_pct": 9.719144,
       "structure_class": "binary_star",
       "eval_kind": "catalog_consistency",
+      "record_kind": "structural",
       "source": "WDS",
       "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
     },
@@ -247,29 +253,6 @@
       "eval_kind": "public_catalog_anchor",
       "source": "literature",
       "note": "Published catalog anchor \u2014 formula tier requires preregistration"
-    },
-    {
-      "lab": "astrophysical_structure_crosswalk_lab",
-      "property": "kepler_mass_closure",
-      "name": "Gliese_667C",
-      "computed": 138.888889,
-      "measured": 1.0,
-      "error_pct": 13788.888889,
-      "structure_class": "trinary_star",
-      "eval_kind": "catalog_consistency",
-      "source": "literature",
-      "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
-    },
-    {
-      "lab": "astrophysical_structure_crosswalk_lab",
-      "property": "hierarchy_period_ratio",
-      "name": "Gliese_667C",
-      "computed": 6.566667,
-      "measured": 6.566667,
-      "error_pct": 0.0,
-      "structure_class": "trinary_star",
-      "eval_kind": "catalog_anchor",
-      "source": "literature"
     },
     {
       "lab": "astrophysical_structure_crosswalk_lab",
@@ -292,6 +275,7 @@
       "error_pct": 14.8545,
       "structure_class": "trinary_star",
       "eval_kind": "catalog_consistency",
+      "record_kind": "structural",
       "source": "WDS/literature sextuple",
       "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
     },
@@ -316,6 +300,7 @@
       "error_pct": 127.802887,
       "structure_class": "binary_star",
       "eval_kind": "catalog_consistency",
+      "record_kind": "structural",
       "source": "WDS",
       "note": "Published P, a, M_tot consistency check (not FSOT prediction)"
     },

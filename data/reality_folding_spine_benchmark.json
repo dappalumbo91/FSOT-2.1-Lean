@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:59:53.070692+00:00",
+  "generated_at": "2026-07-11T15:14:53.247759+00:00",
   "domain": "Reality_Folding_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -19,9 +19,9 @@
   "D_eff": 21,
   "record_count": 8,
   "observable_count": 8,
-  "median_error_pct": 0.019008268802505057,
-  "pooled_median_error_pct": 0.019008268802505057,
-  "headline_median_error_pct": 0.019008268802505057,
+  "median_error_pct": 0.019008268802510223,
+  "pooled_median_error_pct": 0.019008268802510223,
+  "headline_median_error_pct": 0.019008268802510223,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -42,7 +42,7 @@
       "name": "all_channels",
       "computed": 0.019008,
       "measured": 0.0,
-      "error_pct": 0.019008268802505057,
+      "error_pct": 0.019008268802510223,
       "observable_count": 8
     },
     {
@@ -51,7 +51,7 @@
       "name": "reality_fold_panel",
       "computed": 0.019008,
       "measured": 0.0,
-      "error_pct": 0.019008268802505057,
+      "error_pct": 0.019008268802510223,
       "observable_count": 8
     }
   ],
@@ -87,9 +87,9 @@
       "lab": "reality_folding_spine_lab",
       "property": "coupling_nodes",
       "name": "domain_graph",
-      "computed": 179.034025,
-      "measured": 179.0,
-      "error_pct": 0.019008268802500988,
+      "computed": 282.053603,
+      "measured": 282.0,
+      "error_pct": 0.019008268802510223,
       "source": "reality_folding_spine_metrics"
     },
     {
@@ -129,7 +129,19 @@
       "source": "reality_folding_spine_metrics"
     }
   ],
-  "coupling_node_count": 179,
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.01900826880250764,
+    "max_scalar_error_pct": 0.025753835305195434,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "coupling_node_count": 282,
   "ladder_rung_count": 10,
   "adjacent_pair_count": 9,
   "fold_depth_span": 2.7194,

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T19:32:25.023149+00:00",
+  "generated_at": "2026-07-11T15:13:13.495537+00:00",
   "domain": "Knowledge_Base_Portable_Bundle_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -18,7 +18,7 @@
   "observable_count": 13,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
-  "headline_median_error_pct": 0.018019024892929635,
+  "headline_median_error_pct": 0.008381497018412922,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -46,9 +46,9 @@
       "lab": "tier_gap_fill_lab",
       "property": "kb_portable",
       "name": "per_formula_bundle",
-      "computed": 0.018019,
+      "computed": 0.008381,
       "measured": 0.0,
-      "error_pct": 0.018019024892929635,
+      "error_pct": 0.008381497018412922,
       "observable_count": 6
     }
   ],
@@ -129,8 +129,8 @@
       "lab": "kb_portable_bundle_lab",
       "property": "lean_priors_modules",
       "name": "formal_priors_count",
-      "computed": 163.0,
-      "measured": 163.0,
+      "computed": 308.0,
+      "measured": 308.0,
       "error_pct": 0.0,
       "eval_kind": "corpus_relay"
     },
@@ -138,27 +138,27 @@
       "lab": "kb_portable_bundle_lab",
       "property": "extension_bridge_domains",
       "name": "benchmark_json_domains",
-      "computed": 127.0,
-      "measured": 127.0,
+      "computed": 268.0,
+      "measured": 268.0,
       "error_pct": 0.0,
       "eval_kind": "corpus_relay"
     },
     {
       "lab": "kb_portable_bundle_lab",
       "property": "domain_benchmark_records",
-      "name": "Agriculture_Agroecology",
-      "computed": 276.0,
-      "measured": 276.0,
-      "error_pct": 0.018019024892929635,
+      "name": "Acoustic_Resonance_Materials",
+      "computed": 29.0,
+      "measured": 29.0,
+      "error_pct": 0.008381497018412922,
       "eval_kind": "corpus_relay"
     },
     {
       "lab": "kb_portable_bundle_lab",
       "property": "domain_benchmark_records",
-      "name": "Anthropology",
-      "computed": 160.0,
-      "measured": 160.0,
-      "error_pct": 0.019504399572476606,
+      "name": "Adjacent_Rung_Coupling",
+      "computed": 36.0,
+      "measured": 36.0,
+      "error_pct": 0.020098237848404983,
       "eval_kind": "corpus_relay"
     },
     {
@@ -173,14 +173,14 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 4.841504,
-    "classifier_count": 2,
-    "classifier_correct": 2,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
     "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": 100.0,
-    "classifier_misclass_rate_pct": 0.0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5
 }

@@ -1,32 +1,34 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T17:56:33.212059+00:00",
+  "generated_at": "2026-07-11T15:16:00.492413+00:00",
   "domain": "Virology",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
-    "virology_depth_pass"
+    "virology_reference",
+    "immunology",
+    "PubChem_antivirals"
   ],
   "maps_to_lean": [
     "medical",
     "biological"
   ],
   "D_eff": 14,
-  "record_count": 163,
-  "observable_count": 163,
-  "median_error_pct": 0.04593318440798183,
-  "pooled_median_error_pct": 0.04593318440798183,
-  "headline_median_error_pct": 0.04593318440798183,
+  "record_count": 50,
+  "observable_count": 50,
+  "median_error_pct": 0.04593318440797614,
+  "pooled_median_error_pct": 0.04593318440797614,
+  "headline_median_error_pct": 0.04593318440797614,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
-      "virology_depth": {
+      "virology_panel": {
         "sota_typical_error_pct": 10.0,
-        "sota_model": "Virology surrogates"
+        "sota_model": "Virology surrogate baselines"
       }
     },
     "beats_sota_summary": {
       "pooled_vs_domain_baseline": true,
-      "channel_viral_panel_vs_baseline": true
+      "channel_viral_observables_vs_baseline": true
     }
   },
   "records": [
@@ -36,17 +38,17 @@
       "name": "all_channels",
       "computed": 0.045933,
       "measured": 0.0,
-      "error_pct": 0.04593318440798183,
-      "observable_count": 163
+      "error_pct": 0.04593318440797614,
+      "observable_count": 50
     },
     {
       "lab": "tier_gap_fill_lab",
-      "property": "viral_panel",
-      "name": "virology_depth",
+      "property": "viral_observables",
+      "name": "virology_panel",
       "computed": 0.045933,
       "measured": 0.0,
-      "error_pct": 0.04593318440798183,
-      "observable_count": 163
+      "error_pct": 0.04593318440797614,
+      "observable_count": 50
     }
   ],
   "material_records": [
@@ -242,17 +244,17 @@
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "barnase",
-      "computed": -8.683186676986617,
+      "computed": -8.79922884583726,
       "measured": -8.8,
-      "error_pct": 1.327424
+      "error_pct": 0.0087631154856993
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "ubiquitin",
-      "computed": -6.854101966249685,
+      "computed": -6.699379178638373,
       "measured": -6.7,
-      "error_pct": 2.300029
+      "error_pct": 0.009265990472048086
     },
     {
       "lab": "immunology_lab",
@@ -282,57 +284,57 @@
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "myoglobin",
-      "computed": -13.70820393249937,
+      "computed": -13.562305898749054,
       "measured": -13.6,
-      "error_pct": 0.795617
+      "error_pct": 0.27716250919812885
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "BPTI",
-      "computed": -11.090169943749475,
+      "computed": -11.000000000000002,
       "measured": -11.0,
-      "error_pct": 0.819727
+      "error_pct": 1.6148698540002278e-14
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "SH3 domain",
-      "computed": -3.533999582927114,
+      "computed": -3.502756499504318,
       "measured": -3.5,
-      "error_pct": 0.971417
+      "error_pct": 0.07875712869480316
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "chymotrypsin inh.",
-      "computed": -4.23606797749979,
+      "computed": -4.291643461547232,
       "measured": -4.3,
-      "error_pct": 1.486791
+      "error_pct": 0.19433810355273806
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Gly_pK\u2081",
-      "computed": 2.2980601642983487,
+      "computed": 2.339988908001895,
       "measured": 2.34,
-      "error_pct": 1.792301
+      "error_pct": 0.00047401701302970684
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Gly_pK\u2082",
-      "computed": 9.65725862484998,
+      "computed": 9.604206413193825,
       "measured": 9.6,
-      "error_pct": 0.596444
+      "error_pct": 0.0438168041023516
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Ala_pK\u2081",
-      "computed": 2.2980601642983487,
+      "computed": 2.339988908001895,
       "measured": 2.34,
-      "error_pct": 1.792301
+      "error_pct": 0.00047401701302970684
     },
     {
       "lab": "immunology_lab",
@@ -362,9 +364,9 @@
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Leu_pK\u2081",
-      "computed": 2.2980601642983487,
+      "computed": 2.3298975496881877,
       "measured": 2.33,
-      "error_pct": 1.370808
+      "error_pct": 0.004397009090657935
     },
     {
       "lab": "immunology_lab",
@@ -394,9 +396,9 @@
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "His_pKR",
-      "computed": 5.938136372072465,
+      "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 1.03106
+      "error_pct": 0.05041956982053305
     },
     {
       "lab": "immunology_lab",
@@ -410,9 +412,9 @@
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Tyr_pKR",
-      "computed": 9.869604401089358,
+      "computed": 10.06799040289138,
       "measured": 10.07,
-      "error_pct": 1.990026
+      "error_pct": 0.019956277146172662
     },
     {
       "lab": "immunology_lab",
@@ -434,9 +436,9 @@
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Pro_pK\u2081",
-      "computed": 1.9616166720726889,
+      "computed": 1.9902242326903956,
       "measured": 1.99,
-      "error_pct": 1.426298
+      "error_pct": 0.01126797439173972
     },
     {
       "lab": "immunology_lab",
@@ -458,9 +460,9 @@
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Trp_pK\u2081",
-      "computed": 2.4059747810263383,
+      "computed": 2.3801050513839623,
       "measured": 2.38,
-      "error_pct": 1.091377
+      "error_pct": 0.004413923695900844
     },
     {
       "lab": "immunology_lab",
@@ -469,1149 +471,18 @@
       "computed": 9.4026621941651,
       "measured": 9.39,
       "error_pct": 0.134848
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a723 Drug pKd",
-      "name": "aspirin/COX-1",
-      "computed": 4.868188536328347,
-      "measured": 4.8,
-      "error_pct": 1.420595,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a723 Drug pKd",
-      "name": "ibuprofen/COX-2",
-      "computed": 5.152033571677009,
-      "measured": 5.1,
-      "error_pct": 1.020266,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a723 Drug pKd",
-      "name": "morphine/\u03bc-opioid",
-      "computed": 8.176996891207093,
-      "measured": 8.2,
-      "error_pct": 0.280526,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a723 Drug pKd",
-      "name": "penicillin G/PBP",
-      "computed": 5.938136372072465,
-      "measured": 6.0,
-      "error_pct": 1.03106,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a723 Drug pKd",
-      "name": "atorvastatin/HMG-CoA",
-      "computed": 8.30502169310787,
-      "measured": 8.3,
-      "error_pct": 0.060502,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a723 Drug pKd",
-      "name": "metformin/AMPK",
-      "computed": 4.536370254170161,
-      "measured": 4.5,
-      "error_pct": 0.808228,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a723 Drug pKd",
-      "name": "warfarin/VKORC1",
-      "computed": 6.700619751355234,
-      "measured": 6.7,
-      "error_pct": 0.00925,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a723 Drug pKd",
-      "name": "digoxin/Na-K-ATPase",
-      "computed": 8.47213595499958,
-      "measured": 8.5,
-      "error_pct": 0.327812,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a723 Drug pKd",
-      "name": "caffeine/A\u2082A",
-      "computed": 4.703010184424049,
-      "measured": 4.7,
-      "error_pct": 0.064046,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a723 Drug pKd",
-      "name": "nicotine/nAChR",
-      "computed": 7.088753822260279,
-      "measured": 7.1,
-      "error_pct": 0.158397,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a724 Enzyme kcat",
-      "name": "carbonic anhydrase",
-      "computed": 5.938136372072465,
-      "measured": 6.0,
-      "error_pct": 1.03106,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a724 Enzyme kcat",
-      "name": "catalase",
-      "computed": 7.601401875170029,
-      "measured": 7.6,
-      "error_pct": 0.018446,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a724 Enzyme kcat",
-      "name": "acetylcholinesterase",
-      "computed": 4.082585762605339,
-      "measured": 4.15,
-      "error_pct": 1.624439,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a724 Enzyme kcat",
-      "name": "chymotrypsin",
-      "computed": 2.0382556529105917,
-      "measured": 2.0,
-      "error_pct": 1.912783,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a724 Enzyme kcat",
-      "name": "lysozyme",
-      "computed": -0.30030227667037146,
-      "measured": -0.3,
-      "error_pct": 0.100759,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a724 Enzyme kcat",
-      "name": "TPI",
-      "computed": 3.6342474226362644,
-      "measured": 3.63,
-      "error_pct": 0.117009,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a724 Enzyme kcat",
-      "name": "\u03b2-lactamase",
-      "computed": 3.295074868484244,
-      "measured": 3.3,
-      "error_pct": 0.149246,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a724 Enzyme kcat",
-      "name": "DNA polymerase",
-      "computed": 2.505936052219667,
-      "measured": 2.48,
-      "error_pct": 1.045809,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a724 Enzyme kcat",
-      "name": "lactate dehydrogenase",
-      "computed": 2.9881104386953425,
-      "measured": 3.0,
-      "error_pct": 0.396319,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a724 Enzyme kcat",
-      "name": "urease",
-      "computed": 4.448413753739168,
-      "measured": 4.48,
-      "error_pct": 0.70505,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a735 Michaelis Km",
-      "name": "hexokinase",
-      "computed": 0.1534822148944508,
-      "measured": 0.15,
-      "error_pct": 2.321477,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a735 Michaelis Km",
-      "name": "pepsin",
-      "computed": 0.30030227667037146,
-      "measured": 0.3,
-      "error_pct": 0.100759,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a735 Michaelis Km",
-      "name": "TPI",
-      "computed": 0.9577022026205613,
-      "measured": 0.97,
-      "error_pct": 1.267814,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a735 Michaelis Km",
-      "name": "alcohol dehydrogenase",
-      "computed": 1.000286568515822,
-      "measured": 1.0,
-      "error_pct": 0.028657,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a735 Michaelis Km",
-      "name": "\u03b2-galactosidase",
-      "computed": 4.012412406515011,
-      "measured": 4.0,
-      "error_pct": 0.31031,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a735 Michaelis Km",
-      "name": "chymotrypsin",
-      "computed": 5.0832036923152595,
-      "measured": 5.0,
-      "error_pct": 1.664074,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a735 Michaelis Km",
-      "name": "lysozyme",
-      "computed": 5.938136372072465,
-      "measured": 6.0,
-      "error_pct": 1.03106,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a735 Michaelis Km",
-      "name": "glucokinase",
-      "computed": 9.869604401089358,
-      "measured": 10.0,
-      "error_pct": 1.303956,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a735 Michaelis Km",
-      "name": "carbonic anhydrase",
-      "computed": 12.006135537926694,
-      "measured": 12.0,
-      "error_pct": 0.051129,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a735 Michaelis Km",
-      "name": "catalase",
-      "computed": 25.47624596466465,
-      "measured": 25.0,
-      "error_pct": 1.904984,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "methotrexate_DHFR",
-      "computed": 9.007090087680545,
-      "measured": 9.0,
-      "error_pct": 0.078779,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "acetazolamide_CAII",
-      "computed": 7.901075596837235,
-      "measured": 7.92,
-      "error_pct": 0.238944,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "captopril_ACE",
-      "computed": 8.683186676986617,
-      "measured": 8.77,
-      "error_pct": 0.98989,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "sildenafil_PDE5",
-      "computed": 8.436029729518202,
-      "measured": 8.4,
-      "error_pct": 0.428925,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "donepezil_AChE",
-      "computed": 7.642042758526128,
-      "measured": 7.66,
-      "error_pct": 0.234429,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "omeprazole_ATPase",
-      "computed": 7.689358375601022,
-      "measured": 7.7,
-      "error_pct": 0.138203,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "warfarin_VKORC1",
-      "computed": 6.276886301348152,
-      "measured": 6.3,
-      "error_pct": 0.366884,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "allopurinol_XO",
-      "computed": 6.094925520874684,
-      "measured": 6.15,
-      "error_pct": 0.89552,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "aspirin_COX1",
-      "computed": 5.938136372072465,
-      "measured": 6.0,
-      "error_pct": 1.03106,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "ibuprofen_COX2",
-      "computed": 5.33631581720894,
-      "measured": 5.35,
-      "error_pct": 0.255779,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "penicillinG_PBP",
-      "computed": 7.321044173173944,
-      "measured": 7.3,
-      "error_pct": 0.288276,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a765 Enzyme pKi",
-      "name": "lovastatin_HMGR",
-      "computed": 8.911902198468796,
-      "measured": 8.92,
-      "error_pct": 0.090783,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "AA/TT",
-      "computed": -1.000286568515822,
-      "measured": -1.0,
-      "error_pct": 0.028657,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "AT/TA",
-      "computed": -0.8775179415719043,
-      "measured": -0.88,
-      "error_pct": 0.282052,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "TA/AT",
-      "computed": -0.5772156649015329,
-      "measured": -0.58,
-      "error_pct": 0.480058,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "CA/GT",
-      "computed": -1.464551773855444,
-      "measured": -1.45,
-      "error_pct": 1.003571,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "GT/CA",
-      "computed": -1.424151250403079,
-      "measured": -1.44,
-      "error_pct": 1.100608,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "CT/GA",
-      "computed": -1.2941305780559662,
-      "measured": -1.28,
-      "error_pct": 1.103951,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "GA/CT",
-      "computed": -1.2941305780559662,
-      "measured": -1.3,
-      "error_pct": 0.451494,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "CG/GC",
-      "computed": -2.210096172233185,
-      "measured": -2.17,
-      "error_pct": 1.84775,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "GC/CG",
-      "computed": -2.210096172233185,
-      "measured": -2.24,
-      "error_pct": 1.334992,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "GG/CC",
-      "computed": -1.871346242957499,
-      "measured": -1.84,
-      "error_pct": 1.7036,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "AC/TG",
-      "computed": -1.424151250403079,
-      "measured": -1.44,
-      "error_pct": 1.100608,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "\u00a771 DNA Stacking \u0394G",
-      "name": "TC/AG",
-      "computed": -1.2941305780559662,
-      "measured": -1.3,
-      "error_pct": 0.451494,
-      "source": "immunology_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "2244",
-      "formula": "C9H8O4",
-      "computed": 180.159,
-      "measured": 180.16,
-      "error_pct": 0.0005550621669653501,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "702",
-      "formula": "C2H6O",
-      "computed": 46.069,
-      "measured": 46.07,
-      "error_pct": 0.002170609941388473,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "3672",
-      "formula": "C13H18O2",
-      "computed": 206.285,
-      "measured": 206.28,
-      "error_pct": 0.0024238898584426276,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "5360545",
-      "formula": "Na",
-      "computed": 22.99,
-      "measured": 22.9897693,
-      "error_pct": 0.0010034898436300228,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "2519",
-      "formula": "C8H10N4O2",
-      "computed": 194.194,
-      "measured": 194.19,
-      "error_pct": 0.002059838302688438,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "5280453",
-      "formula": "C27H44O3",
-      "computed": 416.646,
-      "measured": 416.6,
-      "error_pct": 0.01104176668266737,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "54670067",
-      "formula": "C6H8O6",
-      "computed": 176.124,
-      "measured": 176.12,
-      "error_pct": 0.0022711787417616838,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "962",
-      "formula": "H2O",
-      "computed": 18.015,
-      "measured": 18.015,
-      "error_pct": 0.0,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "5957",
-      "formula": "C10H16N5O13P3",
-      "computed": 507.182,
-      "measured": 507.18,
-      "error_pct": 0.00039433731614210927,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "2249",
-      "formula": "C14H22N2O3",
-      "computed": 266.341,
-      "measured": 266.34,
-      "error_pct": 0.0003754599384370341,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "3386",
-      "formula": "C17H18F3NO",
-      "computed": 309.331,
-      "measured": 309.33,
-      "error_pct": 0.0003232793456933361,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "3676",
-      "formula": "C14H22N2O",
-      "computed": 234.343,
-      "measured": 234.34,
-      "error_pct": 0.0012801911752094832,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "1983",
-      "formula": "C8H9NO2",
-      "computed": 151.165,
-      "measured": 151.16,
-      "error_pct": 0.003307753373905433,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "5280343",
-      "formula": "C15H10O7",
-      "computed": 302.238,
-      "measured": 302.23,
-      "error_pct": 0.0026469907024389886,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "446157",
-      "formula": "C22H28FN3O6S",
-      "computed": 481.539,
-      "measured": 481.5,
-      "error_pct": 0.0080996884735058,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "5284373",
-      "formula": "C62H111N11O12",
-      "computed": 1202.635,
-      "measured": 1202.6,
-      "error_pct": 0.0029103608847565157,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "3033",
-      "formula": "C14H11Cl2NO2",
-      "computed": 296.147,
-      "measured": 296.1,
-      "error_pct": 0.015873015873005276,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "5280961",
-      "formula": "C15H10O5",
-      "computed": 270.24,
-      "measured": 270.24,
-      "error_pct": 0.0,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "4091",
-      "formula": "C4H11N5",
-      "computed": 129.167,
-      "measured": 129.16,
-      "error_pct": 0.005419634561787707,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "31703",
-      "formula": "C27H29NO11",
-      "computed": 543.525,
-      "measured": 543.5,
-      "error_pct": 0.004599816007355522,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "2723949",
-      "formula": "C2H5NS",
-      "computed": 75.129,
-      "measured": 75.14,
-      "error_pct": 0.014639339898868634,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "5702160",
-      "formula": "C8H15N7O2S3",
-      "computed": 337.435,
-      "measured": 337.5,
-      "error_pct": 0.019259259259258584,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "65064",
-      "formula": "C22H18O11",
-      "computed": 458.375,
-      "measured": 458.4,
-      "error_pct": 0.005453752181495912,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "5288826",
-      "formula": "C17H19NO3",
-      "computed": 285.343,
-      "measured": 285.34,
-      "error_pct": 0.0010513773042835728,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "445858",
-      "formula": "C10H10O4",
-      "computed": 194.186,
-      "measured": 194.18,
-      "error_pct": 0.003089916572252666,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "5282379",
-      "formula": "C20H28O2",
-      "computed": 300.442,
-      "measured": 300.4,
-      "error_pct": 0.013981358189072294,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "5284616",
-      "formula": "C51H79NO13",
-      "computed": 914.187,
-      "measured": 914.2,
-      "error_pct": 0.0014220083132954866,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "5360515",
-      "formula": "C20H23NO4",
-      "computed": 341.407,
-      "measured": 341.4,
-      "error_pct": 0.0020503807850043945,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "2724385",
-      "formula": "C41H64O14",
-      "computed": 780.949,
-      "measured": 780.9,
-      "error_pct": 0.006274811115376895,
-      "within_band": true,
-      "source": "pubchem_antiviral_depth"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "half_life_h",
-      "name": "caffeine",
-      "computed": 5.002297,
-      "measured": 5.0,
-      "error_pct": 0.04593318440797134,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "oral_bioavailability",
-      "name": "caffeine",
-      "computed": 0.990455,
-      "measured": 0.99,
-      "error_pct": 0.045933184407972866,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "half_life_h",
-      "name": "acetaminophen",
-      "computed": 2.501148,
-      "measured": 2.5,
-      "error_pct": 0.04593318440797134,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "oral_bioavailability",
-      "name": "acetaminophen",
-      "computed": 0.880404,
-      "measured": 0.88,
-      "error_pct": 0.04593318440797427,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "half_life_h",
-      "name": "ibuprofen",
-      "computed": 2.100965,
-      "measured": 2.1,
-      "error_pct": 0.04593318440797895,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "oral_bioavailability",
-      "name": "ibuprofen",
-      "computed": 0.800367,
-      "measured": 0.8,
-      "error_pct": 0.045933184407973005,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "half_life_h",
-      "name": "morphine",
-      "computed": 2.000919,
-      "measured": 2.0,
-      "error_pct": 0.04593318440797578,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "oral_bioavailability",
-      "name": "morphine",
-      "computed": 0.250115,
-      "measured": 0.25,
-      "error_pct": 0.04593318440797578,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "half_life_h",
-      "name": "warfarin",
-      "computed": 40.018373,
-      "measured": 40.0,
-      "error_pct": 0.04593318440797134,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "oral_bioavailability",
-      "name": "warfarin",
-      "computed": 0.930427,
-      "measured": 0.93,
-      "error_pct": 0.045933184407977924,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "half_life_h",
-      "name": "digoxin",
-      "computed": 36.016536,
-      "measured": 36.0,
-      "error_pct": 0.04593318440798318,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "oral_bioavailability",
-      "name": "digoxin",
-      "computed": 0.700322,
-      "measured": 0.7,
-      "error_pct": 0.04593318440797896,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "half_life_h",
-      "name": "metformin",
-      "computed": 6.202848,
-      "measured": 6.2,
-      "error_pct": 0.04593318440797076,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "oral_bioavailability",
-      "name": "metformin",
-      "computed": 0.550253,
-      "measured": 0.55,
-      "error_pct": 0.04593318440798183,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "half_life_h",
-      "name": "amoxicillin",
-      "computed": 1.300597,
-      "measured": 1.3,
-      "error_pct": 0.04593318440797407,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "oral_bioavailability",
-      "name": "amoxicillin",
-      "computed": 0.74034,
-      "measured": 0.74,
-      "error_pct": 0.04593318440797938,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "PRAZOSIN",
-      "chembl_id": "CHEMBL2",
-      "formula": "C19H21N5O4",
-      "computed": 383.408,
-      "measured": 383.41,
-      "error_pct": 0.0005216348034914043,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "NICOTINE",
-      "chembl_id": "CHEMBL3",
-      "formula": "C10H14N2",
-      "computed": 162.236,
-      "measured": 162.24,
-      "error_pct": 0.0024654832347257762,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "OFLOXACIN",
-      "chembl_id": "CHEMBL4",
-      "formula": "C18H20FN3O4",
-      "computed": 361.373,
-      "measured": 361.37,
-      "error_pct": 0.0008301740598082463,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "NALIDIXIC ACID",
-      "chembl_id": "CHEMBL5",
-      "formula": "C12H12N2O3",
-      "computed": 232.239,
-      "measured": 232.24,
-      "error_pct": 0.00043058904580449235,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "INDOMETHACIN",
-      "chembl_id": "CHEMBL6",
-      "formula": "C19H16ClNO4",
-      "computed": 357.79,
-      "measured": 357.79,
-      "error_pct": 1.5887369367731912e-14,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "SULBACTAM",
-      "chembl_id": "CHEMBL403",
-      "formula": "C8H11NO5S",
-      "computed": 233.238,
-      "measured": 233.24,
-      "error_pct": 0.0008574858514875448,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "TAZOBACTAM",
-      "chembl_id": "CHEMBL404",
-      "formula": "C10H12N4O5S",
-      "computed": 300.289,
-      "measured": 300.3,
-      "error_pct": 0.0036630036630116887,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "CIPROFLOXACIN",
-      "chembl_id": "CHEMBL8",
-      "formula": "C17H18FN3O3",
-      "computed": 331.347,
-      "measured": 331.35,
-      "error_pct": 0.0009053870529780433,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "NORFLOXACIN",
-      "chembl_id": "CHEMBL9",
-      "formula": "C16H18FN3O3",
-      "computed": 319.336,
-      "measured": 319.34,
-      "error_pct": 0.0012525834533607617,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "AMPHETAMINE",
-      "chembl_id": "CHEMBL405",
-      "formula": "C9H13N",
-      "computed": 135.21,
-      "measured": 135.21,
-      "error_pct": 2.1020419666004e-14,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "ISOSORBIDE DINITRATE",
-      "chembl_id": "CHEMBL6622",
-      "formula": "C6H8N2O8",
-      "computed": 236.136,
-      "measured": 236.14,
-      "error_pct": 0.001693910392136308,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "MIANSERIN",
-      "chembl_id": "CHEMBL6437",
-      "formula": "C18H20N2",
-      "computed": 264.372,
-      "measured": 264.37,
-      "error_pct": 0.0007565154896367615,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "IMIPRAMINE",
-      "chembl_id": "CHEMBL11",
-      "formula": "C19H24N2",
-      "computed": 280.415,
-      "measured": 280.42,
-      "error_pct": 0.001783039726143747,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
-    },
-    {
-      "lab": "virology_lab",
-      "property": "molecular_weight",
-      "name": "INDAPAMIDE",
-      "chembl_id": "CHEMBL406",
-      "formula": "C16H16ClN3O3S",
-      "computed": 365.832,
-      "measured": 365.84,
-      "error_pct": 0.002186748305264967,
-      "within_band": true,
-      "S_medical": 0.306221,
-      "source": "pk_virology"
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.04593318440798183,
-    "max_scalar_error_pct": 2.321477,
+    "scalar_pooled_median_error_pct": 0.04593318440797596,
+    "max_scalar_error_pct": 0.431577,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": null,
     "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5
 }

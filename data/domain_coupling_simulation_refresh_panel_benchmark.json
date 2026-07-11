@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T19:32:25.070550+00:00",
+  "generated_at": "2026-07-11T15:13:13.562528+00:00",
   "domain": "Domain_Coupling_Simulation_Refresh_Panel",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -58,8 +58,8 @@
       "lab": "domain_coupling_refresh_lab",
       "property": "graph_node_count",
       "name": "domain_coupling_simulation",
-      "computed": 246.0,
-      "measured": 246.0,
+      "computed": 282.0,
+      "measured": 282.0,
       "error_pct": 0.0,
       "eval_kind": "graph_anchor"
     },
@@ -67,8 +67,8 @@
       "lab": "domain_coupling_refresh_lab",
       "property": "graph_edge_count",
       "name": "domain_coupling_simulation",
-      "computed": 12840.0,
-      "measured": 12840.0,
+      "computed": 18691.0,
+      "measured": 18691.0,
       "error_pct": 0.0,
       "eval_kind": "graph_anchor"
     },
@@ -269,11 +269,11 @@
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
     "max_scalar_error_pct": 0.085305,
-    "classifier_count": 10,
-    "classifier_correct": 10,
+    "classifier_count": 0,
+    "classifier_correct": 0,
     "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": 100.0,
-    "classifier_misclass_rate_pct": 0.0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },

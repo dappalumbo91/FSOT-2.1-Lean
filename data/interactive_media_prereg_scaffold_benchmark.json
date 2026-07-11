@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T18:29:22.558448+00:00",
+  "generated_at": "2026-07-11T15:13:05.621177+00:00",
   "domain": "Interactive_Media_Prereg_Scaffold",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -289,7 +289,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "record_count": 22,
+      "record_count": 60,
       "eval_kind": "scaffold_bridge"
     },
     {
@@ -416,9 +416,9 @@
       "lab": "novel_game_mechanic_predictions_scaffold_lab",
       "property": "\u00a750 Diffusion D",
       "name": "glucose",
-      "computed": 0.6792879831636383,
+      "computed": 0.6727328685350314,
       "measured": 0.673,
-      "error_pct": 0.934321,
+      "error_pct": 0.039692639668439104,
       "source_panel": "creative_arts_math_spine",
       "eval_kind": "panel_relay"
     },
@@ -475,14 +475,14 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.934321,
-    "classifier_count": 5,
-    "classifier_correct": 5,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
     "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": 100.0,
-    "classifier_misclass_rate_pct": 0.0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
-    "fsot_precision_aligned": false
+    "fsot_precision_aligned": true
   },
   "fsot_precision_gate_pct": 0.5
 }

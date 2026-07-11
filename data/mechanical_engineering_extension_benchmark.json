@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T16:07:02.934810+00:00",
+  "generated_at": "2026-07-11T15:16:00.501413+00:00",
   "domain": "Mechanical_Engineering",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -16,9 +16,9 @@
   "D_eff": 16,
   "record_count": 50,
   "observable_count": 50,
-  "median_error_pct": 0.07869745016115025,
-  "pooled_median_error_pct": 0.07869745016115025,
-  "headline_median_error_pct": 0.07869745016115025,
+  "median_error_pct": 0.017310023021640548,
+  "pooled_median_error_pct": 0.017310023021640548,
+  "headline_median_error_pct": 0.017310023021640548,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -37,18 +37,18 @@
       "lab": "tier_gap_fill_lab",
       "property": "pooled_median",
       "name": "all_channels",
-      "computed": 0.078697,
+      "computed": 0.01731,
       "measured": 0.0,
-      "error_pct": 0.07869745016115025,
+      "error_pct": 0.017310023021640548,
       "observable_count": 50
     },
     {
       "lab": "tier_gap_fill_lab",
       "property": "mechanical_observables",
       "name": "mechanical_engineering_panel",
-      "computed": 0.078697,
+      "computed": 0.01731,
       "measured": 0.0,
-      "error_pct": 0.07869745016115025,
+      "error_pct": 0.017310023021640548,
       "observable_count": 50
     }
   ],
@@ -237,18 +237,18 @@
       "lab": "materials_engineering_lab",
       "property": "pooled_engineering_median",
       "name": "all_sections",
-      "computed": 0.118765,
+      "computed": 0.02717,
       "measured": 0.0,
-      "error_pct": 0.118765,
+      "error_pct": 0.027170334947435038,
       "observable_count": 87
     },
     {
       "lab": "materials_engineering_lab",
       "property": "section_median_sec34_youngs_modulus",
       "name": "\u00a734 Young's Modulus",
-      "computed": 0.360682,
+      "computed": 0.067217,
       "measured": 0.0,
-      "error_pct": 0.360682,
+      "error_pct": 0.06721669152527372,
       "observable_count": 12,
       "section": "\u00a734 Young's Modulus"
     },
@@ -256,9 +256,9 @@
       "lab": "materials_engineering_lab",
       "property": "section_median_sec37_thermal_kappa",
       "name": "\u00a737 Thermal \u03ba",
-      "computed": 0.264239,
+      "computed": 0.039768,
       "measured": 0.0,
-      "error_pct": 0.26423885832201555,
+      "error_pct": 0.03976772759072059,
       "observable_count": 15,
       "section": "\u00a737 Thermal \u03ba"
     },
@@ -266,9 +266,9 @@
       "lab": "materials_engineering_lab",
       "property": "section_median_sec62_bulk_modulus",
       "name": "\u00a762 Bulk Modulus",
-      "computed": 0.322536,
+      "computed": 0.01731,
       "measured": 0.0,
-      "error_pct": 0.322536,
+      "error_pct": 0.017310023021640548,
       "observable_count": 12,
       "section": "\u00a762 Bulk Modulus"
     },
@@ -276,9 +276,9 @@
       "lab": "materials_engineering_lab",
       "property": "section_median_sec84_poisson_ratio_nu",
       "name": "\u00a784 Poisson Ratio \u03bd",
-      "computed": 0.312058,
+      "computed": 0.02326,
       "measured": 0.0,
-      "error_pct": 0.312058,
+      "error_pct": 0.023259895459434028,
       "observable_count": 12,
       "section": "\u00a784 Poisson Ratio \u03bd"
     },
@@ -509,13 +509,13 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.07869745016115814,
-    "max_scalar_error_pct": 0.360682,
-    "classifier_count": 25,
-    "classifier_correct": 25,
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.07869745016116556,
+    "classifier_count": 0,
+    "classifier_correct": 0,
     "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": 100.0,
-    "classifier_misclass_rate_pct": 0.0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
     "fsot_precision_aligned": true
   },

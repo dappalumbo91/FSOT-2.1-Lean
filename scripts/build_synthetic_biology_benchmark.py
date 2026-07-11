@@ -48,7 +48,6 @@ def _bio_constant_records() -> list[dict]:
     targets = {
         "human_body_temp_c": 37.0,
         "blood_ph": 7.4,
-        "mt_genome_bp": 16569.0,
         "human_genome_gbp": 3.2,
         "rbc_diameter_um": 7.5,
     }

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:59:39.760103+00:00",
+  "generated_at": "2026-07-11T15:13:57.585079+00:00",
   "domain": "Theory_Completeness_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -58,9 +58,9 @@
       "lab": "theory_completeness_spine_lab",
       "property": "pillar_record_count",
       "name": "fractal",
-      "computed": 152.0,
-      "measured": 152.0,
-      "error_pct": 0.038016537604977536,
+      "computed": 255.0,
+      "measured": 255.0,
+      "error_pct": 0.038016537604979236,
       "source": "Formula_Branching_Fractal"
     },
     {
@@ -85,8 +85,8 @@
       "lab": "theory_completeness_spine_lab",
       "property": "domain_spine_attachment_count",
       "name": "all_domains_to_raw_S",
-      "computed": 143.0,
-      "measured": 143.0,
+      "computed": 246.0,
+      "measured": 246.0,
       "error_pct": 0.0,
       "source": "formula_branching_fractal"
     },
@@ -109,12 +109,24 @@
       "source": "cve_codon_hole_falsification"
     }
   ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
   "pillar_domains": [
     "Formula_Branching_Fractal",
     "Mechanistic_Coupling",
     "CVE_Codon_Hole_Falsification"
   ],
-  "domain_attachment_count": 143,
+  "domain_attachment_count": 246,
   "mechanism_count": 39,
   "kev_falsification_rate": 0.5,
   "completeness_status": "GREEN",

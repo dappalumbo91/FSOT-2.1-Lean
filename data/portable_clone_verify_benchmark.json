@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:19:18.552731+00:00",
+  "generated_at": "2026-07-11T15:14:18.935555+00:00",
   "domain": "Portable_Clone_Verify",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -12,8 +12,8 @@
     "mathematical"
   ],
   "D_eff": 14,
-  "record_count": 166,
-  "observable_count": 166,
+  "record_count": 290,
+  "observable_count": 290,
   "median_error_pct": 0.0,
   "pooled_median_error_pct": 0.0,
   "headline_median_error_pct": 0.0,
@@ -38,7 +38,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 166
+      "observable_count": 290
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -47,7 +47,7 @@
       "computed": 0.0,
       "measured": 0.0,
       "error_pct": 0.0,
-      "observable_count": 165
+      "observable_count": 289
     }
   ],
   "material_records": [
@@ -396,11 +396,38 @@
     {
       "lab": "portable_clone_verify_lab",
       "property": "bundled_asset_present",
+      "name": "cross_scale_bridges",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/orbital_bridge_scientific_framing.yaml"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "compactification_ladder",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/compactification_ladder_manifest.yaml"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
       "name": "evolution_best_organism",
       "computed": 1.0,
       "measured": 1.0,
       "error_pct": 0.0,
       "source": "vendor/evolution/best_evolved_organism.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "bundled_asset_present",
+      "name": "stellar_structures_catalog",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "vendor/stellar_structures/public_multiplicity_catalog.json"
     },
     {
       "lab": "portable_clone_verify_lab",
@@ -1529,6 +1556,1095 @@
     },
     {
       "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Acoustic_Resonance_Materials",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/acoustic_resonance_materials_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Chaos_Mediated_Phase_Transitions",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/chaos_mediated_phase_transitions_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Phi_Morphogenetic_Scaling",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/phi_morphogenetic_scaling_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Ionospheric_Chemistry_Coupling",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/ionospheric_chemistry_coupling_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Energy_AI_Orbital_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/energy_ai_orbital_bridge_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Consciousness_Galactic_Orbital_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/consciousness_galactic_orbital_bridge_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Energy_Neural_Orbital_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/energy_neural_orbital_bridge_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Particle_Neural_Orbital_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/particle_neural_orbital_bridge_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Proof_Carrying_Code_Genome",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/proof_carrying_code_genome_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Domain_Orbital_Predictions",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/domain_orbital_predictions_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Medical_Galactic_Orbital_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/medical_galactic_orbital_bridge_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "AI_Galactic_Orbital_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/ai_galactic_orbital_bridge_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Neural_Galactic_Orbital_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/neural_galactic_orbital_bridge_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "ToE_Unification_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/toe_unification_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Compactification_Ladder",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/compactification_ladder_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Adjacent_Rung_Coupling",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/adjacent_rung_coupling_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Fold_Depth_Metrics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fold_depth_metrics_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Reality_Folding_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/reality_folding_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Time_Emergence_Simulation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/time_emergence_simulation_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Time_Domain_Crosswalk",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/time_domain_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "FPC_Temporal_Coupling",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fpc_temporal_coupling_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Fluid_Phase_Current_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fluid_phase_current_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Stumped_Observables_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/stumped_observables_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Hubble_Bubble_Tension",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/hubble_bubble_tension_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Dark_Sector_Open_Problems",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/dark_sector_open_problems_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Stumped_Observables_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/stumped_observables_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Consciousness_Econ",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/consciousness_econ_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Dark_Energy_CPL",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/dark_energy_cpl_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "SH0ES_Refined",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/sh0es_refined_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Consciousness_Soul_Bridge",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/consciousness_soul_bridge_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Symbolic_Archetype_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/symbolic_archetype_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Astrophysical_Structure_Crosswalk",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/astrophysical_structure_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Stellar_Multiplicity_Catalog",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/stellar_multiplicity_catalog_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Compact_Object_Binary_Events",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/compact_object_binary_events_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Galactic_Structure_Sample",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/galactic_structure_sample_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Solar_System_Structure_Deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/solar_system_structure_deep_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Exoplanet_System_Architecture",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/exoplanet_system_architecture_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "PubChem_Stability_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/pubchem_stability_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Materials_Genome_Crosswalk",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/materials_genome_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "UniProt_Structure_Annotations_Deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/uniprot_structure_annotations_deep_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "IGEM_Parts_Expanded",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/igem_parts_expanded_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Interdisciplinary_Spine_Crosswalk",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/interdisciplinary_spine_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Chemical_Structure_Stability_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/chemical_structure_stability_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Published_Fuel_Property_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/published_fuel_property_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "GWOSC_Live_Event_Deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/gwosc_live_event_deep_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Stellar_Multiplicity_Live_Deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/stellar_multiplicity_live_deep_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Material_Property_Verification_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/material_property_verification_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Fuel_Thermochemistry_Public_Anchors",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fuel_thermochemistry_public_anchors_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "SIMBAD_Stellar_Identity_Deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/simbad_stellar_identity_deep_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Gaia_Astrometry_Panel_Deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/gaia_astrometry_panel_deep_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Music_Harmonics_Public_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/music_harmonics_public_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "XR_Interactive_Media_Math_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/xr_interactive_media_math_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Creative_Arts_Math_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/creative_arts_math_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "WDS_Live_Multiplicity_Deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/wds_live_multiplicity_deep_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Gaia_DR3_TAP_Deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/gaia_dr3_tap_deep_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Preregistered_Predictions_Verification_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/preregistered_predictions_verification_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Information_Theory_Public_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/information_theory_public_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Network_Science_Public_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/network_science_public_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Semiconductor_Physics_Public_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/semiconductor_physics_public_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Statistical_Mechanics_Public_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/statistical_mechanics_public_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Biophysics_Public_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/biophysics_public_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Neurolab_Gaps_Math_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/neurolab_gaps_math_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Material_In_Silico_Screening_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/material_in_silico_screening_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Fuel_Candidate_Prereg_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fuel_candidate_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Interactive_Media_Prereg_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/interactive_media_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Quantum_Information",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/quantum_information_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Econophysics",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/econophysics_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Ecology",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/ecology_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Genomic_Sciences",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/genomic_sciences_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Neurolab_Residual_Math_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/neurolab_residual_math_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Term3_Acoustic_Bleed_Depth",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/term3_acoustic_bleed_depth_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Initiation_Transformation_Archetype",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/initiation_transformation_archetype_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Boundary_Partition_Tightening",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/boundary_partition_tightening_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Formula_Precision_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/formula_precision_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Materials_Project_Live_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/materials_project_live_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "PubChem_Live_Deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/pubchem_live_deep_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "OpenNeuro_Full_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/openneuro_full_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "VizieR_WDS_TAP_Live_Deep",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/vizier_wds_tap_live_deep_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Live_Ingest_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/live_ingest_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Unified_DB_Candidate_Crosswalk",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/unified_db_candidate_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "FSOT_Aggregate_Organized_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fsot_aggregate_organized_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Unified_DB_Crosswalk_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/unified_db_crosswalk_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Proof_Ledger_Closure_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/proof_ledger_closure_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Preregistered_Outcome_Tracking",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/preregistered_outcome_tracking_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "ToE_Claim_Certificate_Bundle",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/toe_claim_certificate_bundle_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Fusion_Physics_Public_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fusion_physics_public_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Magnetic_Confinement_Fusion_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/magnetic_confinement_fusion_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Inertial_Confinement_Fusion_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/inertial_confinement_fusion_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Cold_Fusion_Candidate_Prereg_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/cold_fusion_candidate_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Fusion_Lab_Certificate_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fusion_lab_certificate_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Periodic_Table_Public_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/periodic_table_public_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Superheavy_Element_Stability_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/superheavy_element_stability_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/undiscovered_element_candidate_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Natural_Formation_Element_Simulation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/natural_formation_element_simulation_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Periodic_Table_Completion_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/periodic_table_completion_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Heavy_Ion_Lab_Synthesis_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/heavy_ion_lab_synthesis_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Element_Synthesis_Condition_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/element_synthesis_condition_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/cold_fusion_lab_synthesis_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/metamaterial_fluid_design_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Lab_Synthesis_Metamaterial_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/lab_synthesis_metamaterial_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Island_Of_Stability_Deep_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/island_of_stability_deep_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Z120_Z126_Beam_Synthesis_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/z120_z126_beam_synthesis_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Fusion_Decay_Chain_Prereg_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fusion_decay_chain_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Superheavy_Island_Emergence_Simulation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/superheavy_island_emergence_simulation_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Superheavy_Island_Completion_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/superheavy_island_completion_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Distant_Island_Z128_Z132_Deep_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/distant_island_z128_z132_deep_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Z164_Distant_Island_Prereg_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/z164_distant_island_prereg_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Periodic_Extension_Decay_Topology_Scaffold",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/periodic_extension_decay_topology_scaffold_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Distant_Island_Emergence_Simulation",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/distant_island_emergence_simulation_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Periodic_Table_Extension_Closure_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/periodic_table_extension_closure_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Time_Emergence_Deep_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/time_emergence_deep_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "FPC_Fluidlink_Timing_Deep_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fpc_fluidlink_timing_deep_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Cosmology_Anomaly_Deep_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/cosmology_anomaly_deep_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Hubble_Dark_Sector_Crosswalk",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/hubble_dark_sector_crosswalk_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Fluid_Spacetime_Observable_Spine",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fluid_spacetime_observable_spine_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Hybrid_FI_Sim_Multi_Hero_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/hybrid_fi_sim_multi_hero_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Knowledge_Base_Portable_Bundle_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/knowledge_base_portable_bundle_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "RD_Interval_Tightening_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/rd_interval_tightening_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Domain_Coupling_Simulation_Refresh_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/domain_coupling_simulation_refresh_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/fluid_spacetime_prereg_validation_panel_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
+      "property": "extension_benchmark_present",
+      "name": "Warp_BH_WH_Portal_Panel",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "source": "data/warp_bh_wh_portal_benchmark.json"
+    },
+    {
+      "lab": "portable_clone_verify_lab",
       "property": "portable_cache_root_exists",
       "name": "vendor_public_data_cache",
       "computed": 1.0,
@@ -1540,16 +2656,28 @@
       "lab": "portable_clone_verify_lab",
       "property": "g_drive_hardcode_benchmark_count",
       "name": "no_absolute_external_paths",
-      "computed": 1.0,
-      "measured": 1.0,
+      "computed": 4.0,
+      "measured": 4.0,
       "error_pct": 0.0,
       "source": "data/*_benchmark.json scan",
       "note": "tracked for progressive elimination; clone uses FSOT_PORTABLE_MODE"
     }
   ],
-  "bundled_asset_count": 39,
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "bundled_asset_count": 42,
   "missing_bundled_count": 0,
-  "extension_domain_count": 125,
+  "extension_domain_count": 246,
   "missing_benchmark_count": 0,
   "portable_mode_env": "FSOT_PORTABLE_MODE=1",
   "portable_cache_root": "vendor/public_data/cache",

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T18:22:04.952313+00:00",
+  "generated_at": "2026-07-11T15:13:04.316985+00:00",
   "domain": "Creative_Arts_Math_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -89,9 +89,9 @@
       "lab": "creative_arts_spine_lab",
       "property": "\u00a750 Diffusion D",
       "name": "glucose",
-      "computed": 0.6792879831636383,
+      "computed": 0.6727328685350314,
       "measured": 0.673,
-      "error_pct": 0.934321,
+      "error_pct": 0.039692639668439104,
       "source_panel": "culinary_arts",
       "eval_kind": "creative_relay"
     },
@@ -616,12 +616,12 @@
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 0.934321,
-    "classifier_count": 5,
-    "classifier_correct": 5,
+    "max_scalar_error_pct": 0.6395,
+    "classifier_count": 0,
+    "classifier_correct": 0,
     "classifier_misclass_count": 0,
-    "classifier_accuracy_pct": 100.0,
-    "classifier_misclass_rate_pct": 0.0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
     "classifier_pass": true,
     "fsot_precision_aligned": false
   },

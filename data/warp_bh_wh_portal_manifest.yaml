@@ -1,0 +1,29 @@
+# Tier 78 — Warp BH/WH micro-portal + quantum entanglement gate crosswalk.
+version: "1.0"
+tier: 78
+domain: Warp_BH_WH_Portal_Panel
+note: >
+  Physics-only promotion from legacy warp actuation development.
+  Maps synthetic stabilized BH↔WH doorway to verified BlackHoleThesisPriors.
+  NOT blueprint schematics or device build instructions.
+
+legacy_sources:
+  formula: C:/Users/damia/Desktop/FSOT-Legacy-Physics-Connections/concept_refinement/warp_actuation_formula_fsot21.json
+  crosswalk_doc: WARP_BH_WH_PORTAL_CROSSWALK.md
+
+fsot_anchors:
+  lean_modules:
+    - FSOT.Formal.BlackHoleThesisPriors
+    - FSOT.Formal.FluidSpacetimeObservableSpinePriors
+    - FSOT.Formal.WarpActuationDevelopmentPriors
+  bubble_bleed: scripts/bubble_bleed_physics.py
+
+prereg_candidates:
+  - PRED-032
+  - PRED-033
+
+build:
+  benchmark_script: scripts/build_warp_bh_wh_portal_benchmark.py
+  lean_script: scripts/gen_warp_bh_wh_portal_lean.py
+  benchmark_data: data/warp_bh_wh_portal_benchmark.json
+  lean_module: FSOT.Formal.WarpBhWhPortalPriors

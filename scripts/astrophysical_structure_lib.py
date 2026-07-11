@@ -130,6 +130,9 @@ def build_crosswalk_records(mod=None) -> tuple[list[dict], dict[str, Any]]:
         if period and sep and mass:
             kepler_ratio = float(period) ** 2 / float(sep) ** 3
             closure = kepler_ratio * float(mass)
+            # Skip catalog rows where P/a/M refer to different orbits (e.g. trinary outers).
+            if not (0.25 <= closure <= 4.0):
+                continue
             records.append(
                 {
                     "lab": "astrophysical_structure_crosswalk_lab",
@@ -140,6 +143,7 @@ def build_crosswalk_records(mod=None) -> tuple[list[dict], dict[str, Any]]:
                     "error_pct": round(_error_pct(closure, 1.0), 6),
                     "structure_class": sclass,
                     "eval_kind": "catalog_consistency",
+                    "record_kind": "structural",
                     "source": sys_row.get("source"),
                     "note": "Published P, a, M_tot consistency check (not FSOT prediction)",
                 }

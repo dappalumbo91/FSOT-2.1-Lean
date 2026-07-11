@@ -1,6 +1,11 @@
 # FSOT 2.1 Lean — honest claims vs evidence map (fail-closed for auditors/AI)
-version: "1.0"
+version: "1.1"
 updated: "2026-07-11"
+root_cause_remediation: >
+  Errors passed because verify_extension_domains only checked pooled median ≤0.5%,
+  not per-record max scalar; catalog-consistency rows, classifier rows, and inventory
+  counts were misclassified as FSOT scalar predictions; Desktop SMILES copy was stale
+  vs vendor bundle; JPL Horizons moon masses were inconsistent with published density.
 authoritative_artifacts:
   cross_proof: data/cross_proof_verification_report.json
   parameter_audit: data/parameter_count_audit.json

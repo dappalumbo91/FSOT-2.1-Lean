@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T19:20:42.293452+00:00",
+  "generated_at": "2026-07-11T15:13:13.068870+00:00",
   "domain": "Fluid_Spacetime_Observable_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -320,9 +320,9 @@
       "lab": "fluid_spacetime_observable_lab",
       "property": "fpc_pillar",
       "name": "time_domain_crosswalk",
-      "computed": 160.0,
-      "measured": 160.0,
-      "error_pct": 0.025013,
+      "computed": 250.0,
+      "measured": 250.0,
+      "error_pct": 0.028056,
       "source_panel": "fluid_phase_spine",
       "eval_kind": "fluid_spacetime_relay"
     },
@@ -350,8 +350,8 @@
       "lab": "fluid_spacetime_observable_lab",
       "property": "crosswalk_domains",
       "name": "multi_domain_fpc",
-      "computed": 156.014826,
-      "measured": 156.0,
+      "computed": 246.02338,
+      "measured": 246.0,
       "error_pct": 0.009504,
       "source_panel": "fluid_phase_spine",
       "eval_kind": "fluid_spacetime_relay"
@@ -433,10 +433,10 @@
     }
   ],
   "margin_summary": {
-    "scalar_pooled_median_error_pct": 0.000502,
+    "scalar_pooled_median_error_pct": 0.000251,
     "max_scalar_error_pct": 1.076341,
-    "classifier_count": 5,
-    "classifier_correct": 5,
+    "classifier_count": 2,
+    "classifier_correct": 2,
     "classifier_misclass_count": 0,
     "classifier_accuracy_pct": 100.0,
     "classifier_misclass_rate_pct": 0.0,

@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:59:21.098545+00:00",
+  "generated_at": "2026-07-11T15:13:36.057495+00:00",
   "domain": "Formula_Branching_Fractal",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -14,11 +14,11 @@
     "consciousness"
   ],
   "D_eff": 18,
-  "record_count": 152,
-  "observable_count": 152,
-  "median_error_pct": 0.038016537604977536,
-  "pooled_median_error_pct": 0.038016537604977536,
-  "headline_median_error_pct": 0.038016537604977536,
+  "record_count": 255,
+  "observable_count": 255,
+  "median_error_pct": 0.038016537604979236,
+  "pooled_median_error_pct": 0.038016537604979236,
+  "headline_median_error_pct": 0.038016537604979236,
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "operational_baselines": {
@@ -44,8 +44,8 @@
       "name": "all_channels",
       "computed": 0.038017,
       "measured": 0.0,
-      "error_pct": 0.038016537604977536,
-      "observable_count": 152
+      "error_pct": 0.038016537604979236,
+      "observable_count": 255
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -53,8 +53,8 @@
       "name": "fractal_branch_panel",
       "computed": 0.038017,
       "measured": 0.0,
-      "error_pct": 0.03801653760497784,
-      "observable_count": 143
+      "error_pct": 0.03801653760497961,
+      "observable_count": 246
     },
     {
       "lab": "tier_gap_fill_lab",
@@ -1499,6 +1499,1036 @@
     },
     {
       "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Time_Emergence_Simulation",
+      "computed": 16.756368,
+      "measured": 16.75,
+      "error_pct": 0.03801653760497141,
+      "source": "term1.coherence_efficiency",
+      "branch": "term1.coherence_efficiency"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Time_Domain_Crosswalk",
+      "computed": 16.106121,
+      "measured": 16.1,
+      "error_pct": 0.03801653760497944,
+      "source": "scaled_S",
+      "branch": "scaled_S"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "FPC_Temporal_Coupling",
+      "computed": 16.756368,
+      "measured": 16.75,
+      "error_pct": 0.03801653760497141,
+      "source": "term1.coherence_efficiency",
+      "branch": "term1.coherence_efficiency"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Fluid_Phase_Current_Spine",
+      "computed": 17.106501,
+      "measured": 17.1,
+      "error_pct": 0.03801653760498331,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Stumped_Observables_Panel",
+      "computed": 16.65633,
+      "measured": 16.65,
+      "error_pct": 0.038016537604970965,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Hubble_Bubble_Tension",
+      "computed": 16.306197,
+      "measured": 16.3,
+      "error_pct": 0.038016537604980256,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Dark_Sector_Open_Problems",
+      "computed": 15.956064,
+      "measured": 15.95,
+      "error_pct": 0.03801653760497882,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Stumped_Observables_Spine",
+      "computed": 17.006463,
+      "measured": 17.0,
+      "error_pct": 0.03801653760498295,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Consciousness_Econ",
+      "computed": 16.306197,
+      "measured": 16.3,
+      "error_pct": 0.038016537604980256,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Dark_Energy_CPL",
+      "computed": 15.956064,
+      "measured": 15.95,
+      "error_pct": 0.03801653760497882,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "SH0ES_Refined",
+      "computed": 16.306197,
+      "measured": 16.3,
+      "error_pct": 0.038016537604980256,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Consciousness_Soul_Bridge",
+      "computed": 16.65633,
+      "measured": 16.65,
+      "error_pct": 0.038016537604970965,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Symbolic_Archetype_Panel",
+      "computed": 16.306197,
+      "measured": 16.3,
+      "error_pct": 0.038016537604980256,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Astrophysical_Structure_Crosswalk",
+      "computed": 16.556292,
+      "measured": 16.55,
+      "error_pct": 0.03801653760497051,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Stellar_Multiplicity_Catalog",
+      "computed": 16.456254,
+      "measured": 16.45,
+      "error_pct": 0.03801653760497005,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Compact_Object_Binary_Events",
+      "computed": 16.806387,
+      "measured": 16.8,
+      "error_pct": 0.0380165376049822,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Galactic_Structure_Sample",
+      "computed": 16.456254,
+      "measured": 16.45,
+      "error_pct": 0.03801653760497005,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Solar_System_Structure_Deep",
+      "computed": 16.706349,
+      "measured": 16.7,
+      "error_pct": 0.03801653760498182,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Exoplanet_System_Architecture",
+      "computed": 16.706349,
+      "measured": 16.7,
+      "error_pct": 0.03801653760498182,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "PubChem_Stability_Panel",
+      "computed": 17.306577,
+      "measured": 17.3,
+      "error_pct": 0.03801653760498403,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Materials_Genome_Crosswalk",
+      "computed": 17.306577,
+      "measured": 17.3,
+      "error_pct": 0.03801653760498403,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "UniProt_Structure_Annotations_Deep",
+      "computed": 17.556672,
+      "measured": 17.55,
+      "error_pct": 0.03801653760497479,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "IGEM_Parts_Expanded",
+      "computed": 17.206539,
+      "measured": 17.2,
+      "error_pct": 0.03801653760498368,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Interdisciplinary_Spine_Crosswalk",
+      "computed": 18.507033,
+      "measured": 18.5,
+      "error_pct": 0.038016537604988035,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Chemical_Structure_Stability_Panel",
+      "computed": 18.1569,
+      "measured": 18.15,
+      "error_pct": 0.038016537604977134,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Published_Fuel_Property_Panel",
+      "computed": 17.806767,
+      "measured": 17.8,
+      "error_pct": 0.03801653760498576,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "GWOSC_Live_Event_Deep",
+      "computed": 18.056862,
+      "measured": 18.05,
+      "error_pct": 0.03801653760497675,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Stellar_Multiplicity_Live_Deep",
+      "computed": 17.706729,
+      "measured": 17.7,
+      "error_pct": 0.038016537604985426,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Material_Property_Verification_Scaffold",
+      "computed": 18.65709,
+      "measured": 18.65,
+      "error_pct": 0.03801653760497897,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Fuel_Thermochemistry_Public_Anchors",
+      "computed": 18.306957,
+      "measured": 18.3,
+      "error_pct": 0.0380165376049874,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "SIMBAD_Stellar_Identity_Deep",
+      "computed": 18.206919,
+      "measured": 18.2,
+      "error_pct": 0.038016537604987084,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Gaia_Astrometry_Panel_Deep",
+      "computed": 18.206919,
+      "measured": 18.2,
+      "error_pct": 0.038016537604987084,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Music_Harmonics_Public_Panel",
+      "computed": 19.15728,
+      "measured": 19.15,
+      "error_pct": 0.038016537604980714,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "XR_Interactive_Media_Math_Scaffold",
+      "computed": 19.507413,
+      "measured": 19.5,
+      "error_pct": 0.03801653760497277,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Creative_Arts_Math_Spine",
+      "computed": 19.507413,
+      "measured": 19.5,
+      "error_pct": 0.03801653760497277,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "WDS_Live_Multiplicity_Deep",
+      "computed": 18.707109,
+      "measured": 18.7,
+      "error_pct": 0.03801653760496965,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Gaia_DR3_TAP_Deep",
+      "computed": 18.707109,
+      "measured": 18.7,
+      "error_pct": 0.03801653760496965,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Preregistered_Predictions_Verification_Scaffold",
+      "computed": 20.007603,
+      "measured": 20.0,
+      "error_pct": 0.03801653760497459,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Information_Theory_Public_Panel",
+      "computed": 19.907565,
+      "measured": 19.9,
+      "error_pct": 0.03801653760497423,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Network_Science_Public_Panel",
+      "computed": 19.557432,
+      "measured": 19.55,
+      "error_pct": 0.03801653760498204,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Semiconductor_Physics_Public_Panel",
+      "computed": 19.557432,
+      "measured": 19.55,
+      "error_pct": 0.03801653760498204,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Statistical_Mechanics_Public_Panel",
+      "computed": 19.557432,
+      "measured": 19.55,
+      "error_pct": 0.03801653760498204,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Biophysics_Public_Panel",
+      "computed": 19.557432,
+      "measured": 19.55,
+      "error_pct": 0.03801653760498204,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Neurolab_Gaps_Math_Spine",
+      "computed": 20.257698,
+      "measured": 20.25,
+      "error_pct": 0.03801653760498424,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Material_In_Silico_Screening_Scaffold",
+      "computed": 20.15766,
+      "measured": 20.15,
+      "error_pct": 0.038016537604983934,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Fuel_Candidate_Prereg_Scaffold",
+      "computed": 19.807527,
+      "measured": 19.8,
+      "error_pct": 0.038016537604973866,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Interactive_Media_Prereg_Scaffold",
+      "computed": 20.15766,
+      "measured": 20.15,
+      "error_pct": 0.038016537604983934,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Quantum_Information",
+      "computed": 20.057622,
+      "measured": 20.05,
+      "error_pct": 0.03801653760498362,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Econophysics",
+      "computed": 20.057622,
+      "measured": 20.05,
+      "error_pct": 0.03801653760498362,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Ecology",
+      "computed": 19.707489,
+      "measured": 19.7,
+      "error_pct": 0.038016537604973505,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Genomic_Sciences",
+      "computed": 20.057622,
+      "measured": 20.05,
+      "error_pct": 0.03801653760498362,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Neurolab_Residual_Math_Spine",
+      "computed": 20.757888,
+      "measured": 20.75,
+      "error_pct": 0.03801653760498572,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Term3_Acoustic_Bleed_Depth",
+      "computed": 20.65785,
+      "measured": 20.65,
+      "error_pct": 0.03801653760498543,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Initiation_Transformation_Archetype",
+      "computed": 20.307717,
+      "measured": 20.3,
+      "error_pct": 0.038016537604975635,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Boundary_Partition_Tightening",
+      "computed": 20.307717,
+      "measured": 20.3,
+      "error_pct": 0.038016537604975635,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Formula_Precision_Spine",
+      "computed": 20.65785,
+      "measured": 20.65,
+      "error_pct": 0.03801653760498543,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Materials_Project_Live_Panel",
+      "computed": 20.557812,
+      "measured": 20.55,
+      "error_pct": 0.038016537604985134,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "PubChem_Live_Deep",
+      "computed": 20.557812,
+      "measured": 20.55,
+      "error_pct": 0.038016537604985134,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "OpenNeuro_Full_Panel",
+      "computed": 20.557812,
+      "measured": 20.55,
+      "error_pct": 0.038016537604985134,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "VizieR_WDS_TAP_Live_Deep",
+      "computed": 20.557812,
+      "measured": 20.55,
+      "error_pct": 0.038016537604985134,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Live_Ingest_Spine",
+      "computed": 20.907945,
+      "measured": 20.9,
+      "error_pct": 0.038016537604977654,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Unified_DB_Candidate_Crosswalk",
+      "computed": 21.15804,
+      "measured": 21.15,
+      "error_pct": 0.03801653760498685,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "FSOT_Aggregate_Organized_Panel",
+      "computed": 20.807907,
+      "measured": 20.8,
+      "error_pct": 0.03801653760497732,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Unified_DB_Crosswalk_Spine",
+      "computed": 21.15804,
+      "measured": 21.15,
+      "error_pct": 0.03801653760498685,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Proof_Ledger_Closure_Spine",
+      "computed": 21.408136,
+      "measured": 21.4,
+      "error_pct": 0.038016537604979236,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Preregistered_Outcome_Tracking",
+      "computed": 21.408136,
+      "measured": 21.4,
+      "error_pct": 0.038016537604979236,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "ToE_Claim_Certificate_Bundle",
+      "computed": 21.408136,
+      "measured": 21.4,
+      "error_pct": 0.038016537604979236,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Fusion_Physics_Public_Panel",
+      "computed": 21.658231,
+      "measured": 21.65,
+      "error_pct": 0.038016537604971805,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Magnetic_Confinement_Fusion_Panel",
+      "computed": 21.658231,
+      "measured": 21.65,
+      "error_pct": 0.038016537604971805,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Inertial_Confinement_Fusion_Panel",
+      "computed": 21.658231,
+      "measured": 21.65,
+      "error_pct": 0.038016537604971805,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Cold_Fusion_Candidate_Prereg_Scaffold",
+      "computed": 21.658231,
+      "measured": 21.65,
+      "error_pct": 0.038016537604971805,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Fusion_Lab_Certificate_Spine",
+      "computed": 22.008364,
+      "measured": 22.0,
+      "error_pct": 0.03801653760498105,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Periodic_Table_Public_Panel",
+      "computed": 21.908326,
+      "measured": 21.9,
+      "error_pct": 0.03801653760498075,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Superheavy_Element_Stability_Panel",
+      "computed": 21.908326,
+      "measured": 21.9,
+      "error_pct": 0.03801653760498075,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+      "computed": 21.908326,
+      "measured": 21.9,
+      "error_pct": 0.03801653760498075,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Natural_Formation_Element_Simulation",
+      "computed": 21.908326,
+      "measured": 21.9,
+      "error_pct": 0.03801653760498075,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Periodic_Table_Completion_Spine",
+      "computed": 22.258459,
+      "measured": 22.25,
+      "error_pct": 0.03801653760497379,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Heavy_Ion_Lab_Synthesis_Panel",
+      "computed": 22.158421,
+      "measured": 22.15,
+      "error_pct": 0.03801653760497346,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Element_Synthesis_Condition_Scaffold",
+      "computed": 22.508554,
+      "measured": 22.5,
+      "error_pct": 0.038016537604982484,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+      "computed": 22.508554,
+      "measured": 22.5,
+      "error_pct": 0.038016537604982484,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+      "computed": 22.158421,
+      "measured": 22.15,
+      "error_pct": 0.03801653760497346,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Lab_Synthesis_Metamaterial_Spine",
+      "computed": 22.508554,
+      "measured": 22.5,
+      "error_pct": 0.038016537604982484,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Island_Of_Stability_Deep_Panel",
+      "computed": 22.408516,
+      "measured": 22.4,
+      "error_pct": 0.038016537604982206,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Z120_Z126_Beam_Synthesis_Panel",
+      "computed": 22.408516,
+      "measured": 22.4,
+      "error_pct": 0.038016537604982206,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Fusion_Decay_Chain_Prereg_Scaffold",
+      "computed": 22.408516,
+      "measured": 22.4,
+      "error_pct": 0.038016537604982206,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Superheavy_Island_Emergence_Simulation",
+      "computed": 22.408516,
+      "measured": 22.4,
+      "error_pct": 0.038016537604982206,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Superheavy_Island_Completion_Spine",
+      "computed": 22.758649,
+      "measured": 22.75,
+      "error_pct": 0.03801653760497537,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Distant_Island_Z128_Z132_Deep_Panel",
+      "computed": 22.658611,
+      "measured": 22.65,
+      "error_pct": 0.03801653760497506,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Z164_Distant_Island_Prereg_Scaffold",
+      "computed": 22.308478,
+      "measured": 22.3,
+      "error_pct": 0.038016537604981915,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Periodic_Extension_Decay_Topology_Scaffold",
+      "computed": 22.658611,
+      "measured": 22.65,
+      "error_pct": 0.03801653760497506,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Distant_Island_Emergence_Simulation",
+      "computed": 22.658611,
+      "measured": 22.65,
+      "error_pct": 0.03801653760497506,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Periodic_Table_Extension_Closure_Spine",
+      "computed": 23.358877,
+      "measured": 23.35,
+      "error_pct": 0.038016537604977176,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Time_Emergence_Deep_Panel",
+      "computed": 23.258839,
+      "measured": 23.25,
+      "error_pct": 0.038016537604976884,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "FPC_Fluidlink_Timing_Deep_Panel",
+      "computed": 23.258839,
+      "measured": 23.25,
+      "error_pct": 0.038016537604976884,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Cosmology_Anomaly_Deep_Panel",
+      "computed": 23.258839,
+      "measured": 23.25,
+      "error_pct": 0.038016537604976884,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Hubble_Dark_Sector_Crosswalk",
+      "computed": 22.908706,
+      "measured": 22.9,
+      "error_pct": 0.03801653760498359,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Fluid_Spacetime_Observable_Spine",
+      "computed": 23.608972,
+      "measured": 23.6,
+      "error_pct": 0.038016537604985426,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Hybrid_FI_Sim_Multi_Hero_Panel",
+      "computed": 22.808668,
+      "measured": 22.8,
+      "error_pct": 0.03801653760498331,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Knowledge_Base_Portable_Bundle_Panel",
+      "computed": 22.808668,
+      "measured": 22.8,
+      "error_pct": 0.03801653760498331,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "RD_Interval_Tightening_Panel",
+      "computed": 22.808668,
+      "measured": 22.8,
+      "error_pct": 0.03801653760498331,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Domain_Coupling_Simulation_Refresh_Panel",
+      "computed": 23.508934,
+      "measured": 23.5,
+      "error_pct": 0.03801653760498517,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Fluid_Spacetime_Prereg_Validation_Panel",
+      "computed": 23.508934,
+      "measured": 23.5,
+      "error_pct": 0.03801653760498517,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
+      "property": "domain_divergence_depth",
+      "name": "Warp_BH_WH_Portal_Panel",
+      "computed": 23.759029,
+      "measured": 23.75,
+      "error_pct": 0.03801653760497833,
+      "source": "term1.quirkMod",
+      "branch": "term1.quirkMod"
+    },
+    {
+      "lab": "formula_branching_fractal_lab",
       "property": "corpus_branch_attachment_count",
       "name": "term1.growth_term",
       "computed": 420.119752,
@@ -1579,10 +2609,22 @@
       "source": "fsot_formula_spine.yaml"
     }
   ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.03801653760497961,
+    "max_scalar_error_pct": 0.038016537604988035,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
   "fractal_dag": {
     "root": "raw_S",
-    "node_count": 149,
-    "edge_count": 8233,
+    "node_count": 252,
+    "edge_count": 8439,
     "nodes": [
       {
         "id": "domain::Plasma_Physics",
@@ -3532,6 +4574,1523 @@
         "D_eff": 21
       },
       {
+        "id": "domain::Time_Emergence_Simulation",
+        "kind": "extension_domain",
+        "name": "Time_Emergence_Simulation",
+        "primary_branch": "term1.coherence_efficiency",
+        "divergence_depth": 16.75,
+        "maps_to_lean": [
+          "consciousness",
+          "particle",
+          "galactic",
+          "cosmological",
+          "blackhole"
+        ],
+        "tier": 50,
+        "D_eff": 18
+      },
+      {
+        "id": "domain::Time_Domain_Crosswalk",
+        "kind": "extension_domain",
+        "name": "Time_Domain_Crosswalk",
+        "primary_branch": "scaled_S",
+        "divergence_depth": 16.1,
+        "maps_to_lean": [
+          "consciousness",
+          "particle",
+          "galactic",
+          "cosmological",
+          "blackhole",
+          "mathematical"
+        ],
+        "tier": 50,
+        "D_eff": 19
+      },
+      {
+        "id": "domain::FPC_Temporal_Coupling",
+        "kind": "extension_domain",
+        "name": "FPC_Temporal_Coupling",
+        "primary_branch": "term1.coherence_efficiency",
+        "divergence_depth": 16.75,
+        "maps_to_lean": [
+          "consciousness",
+          "particle",
+          "galactic",
+          "cosmological",
+          "blackhole"
+        ],
+        "tier": 50,
+        "D_eff": 18
+      },
+      {
+        "id": "domain::Fluid_Phase_Current_Spine",
+        "kind": "extension_domain",
+        "name": "Fluid_Phase_Current_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 17.1,
+        "maps_to_lean": [
+          "consciousness",
+          "particle",
+          "galactic",
+          "cosmological",
+          "blackhole",
+          "mathematical"
+        ],
+        "tier": 50,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Stumped_Observables_Panel",
+        "kind": "extension_domain",
+        "name": "Stumped_Observables_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.65,
+        "maps_to_lean": [
+          "cosmological",
+          "particle",
+          "consciousness",
+          "blackhole"
+        ],
+        "tier": 51,
+        "D_eff": 22
+      },
+      {
+        "id": "domain::Hubble_Bubble_Tension",
+        "kind": "extension_domain",
+        "name": "Hubble_Bubble_Tension",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.3,
+        "maps_to_lean": [
+          "cosmological",
+          "blackhole",
+          "cmb"
+        ],
+        "tier": 51,
+        "D_eff": 25
+      },
+      {
+        "id": "domain::Dark_Sector_Open_Problems",
+        "kind": "extension_domain",
+        "name": "Dark_Sector_Open_Problems",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 15.95,
+        "maps_to_lean": [
+          "cosmological",
+          "particle"
+        ],
+        "tier": 51,
+        "D_eff": 24
+      },
+      {
+        "id": "domain::Stumped_Observables_Spine",
+        "kind": "extension_domain",
+        "name": "Stumped_Observables_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 17.0,
+        "maps_to_lean": [
+          "cosmological",
+          "particle",
+          "consciousness",
+          "blackhole",
+          "cmb"
+        ],
+        "tier": 51,
+        "D_eff": 25
+      },
+      {
+        "id": "domain::Consciousness_Econ",
+        "kind": "extension_domain",
+        "name": "Consciousness_Econ",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.3,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "medical"
+        ],
+        "tier": 51,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Dark_Energy_CPL",
+        "kind": "extension_domain",
+        "name": "Dark_Energy_CPL",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 15.95,
+        "maps_to_lean": [
+          "cosmological",
+          "particle"
+        ],
+        "tier": 51,
+        "D_eff": 24
+      },
+      {
+        "id": "domain::SH0ES_Refined",
+        "kind": "extension_domain",
+        "name": "SH0ES_Refined",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.3,
+        "maps_to_lean": [
+          "cosmological",
+          "blackhole",
+          "cmb"
+        ],
+        "tier": 51,
+        "D_eff": 25
+      },
+      {
+        "id": "domain::Consciousness_Soul_Bridge",
+        "kind": "extension_domain",
+        "name": "Consciousness_Soul_Bridge",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.65,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "ai",
+          "medical"
+        ],
+        "tier": 51,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Symbolic_Archetype_Panel",
+        "kind": "extension_domain",
+        "name": "Symbolic_Archetype_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.3,
+        "maps_to_lean": [
+          "consciousness",
+          "linguistic",
+          "mathematical"
+        ],
+        "tier": 51,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Astrophysical_Structure_Crosswalk",
+        "kind": "extension_domain",
+        "name": "Astrophysical_Structure_Crosswalk",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.55,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic",
+          "particle"
+        ],
+        "tier": 52,
+        "D_eff": 18
+      },
+      {
+        "id": "domain::Stellar_Multiplicity_Catalog",
+        "kind": "extension_domain",
+        "name": "Stellar_Multiplicity_Catalog",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.45,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic"
+        ],
+        "tier": 53,
+        "D_eff": 19
+      },
+      {
+        "id": "domain::Compact_Object_Binary_Events",
+        "kind": "extension_domain",
+        "name": "Compact_Object_Binary_Events",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.8,
+        "maps_to_lean": [
+          "astronomical",
+          "particle",
+          "galactic"
+        ],
+        "tier": 53,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Galactic_Structure_Sample",
+        "kind": "extension_domain",
+        "name": "Galactic_Structure_Sample",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.45,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic"
+        ],
+        "tier": 53,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Solar_System_Structure_Deep",
+        "kind": "extension_domain",
+        "name": "Solar_System_Structure_Deep",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.7,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic"
+        ],
+        "tier": 54,
+        "D_eff": 18
+      },
+      {
+        "id": "domain::Exoplanet_System_Architecture",
+        "kind": "extension_domain",
+        "name": "Exoplanet_System_Architecture",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 16.7,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic"
+        ],
+        "tier": 54,
+        "D_eff": 21
+      },
+      {
+        "id": "domain::PubChem_Stability_Panel",
+        "kind": "extension_domain",
+        "name": "PubChem_Stability_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 17.3,
+        "maps_to_lean": [
+          "electron",
+          "chemical",
+          "material"
+        ],
+        "tier": 55,
+        "D_eff": 14
+      },
+      {
+        "id": "domain::Materials_Genome_Crosswalk",
+        "kind": "extension_domain",
+        "name": "Materials_Genome_Crosswalk",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 17.3,
+        "maps_to_lean": [
+          "material",
+          "energy",
+          "particle"
+        ],
+        "tier": 55,
+        "D_eff": 15
+      },
+      {
+        "id": "domain::UniProt_Structure_Annotations_Deep",
+        "kind": "extension_domain",
+        "name": "UniProt_Structure_Annotations_Deep",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 17.55,
+        "maps_to_lean": [
+          "biological",
+          "medical",
+          "material"
+        ],
+        "tier": 56,
+        "D_eff": 13
+      },
+      {
+        "id": "domain::IGEM_Parts_Expanded",
+        "kind": "extension_domain",
+        "name": "IGEM_Parts_Expanded",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 17.2,
+        "maps_to_lean": [
+          "biological",
+          "medical"
+        ],
+        "tier": 56,
+        "D_eff": 14
+      },
+      {
+        "id": "domain::Interdisciplinary_Spine_Crosswalk",
+        "kind": "extension_domain",
+        "name": "Interdisciplinary_Spine_Crosswalk",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 18.5,
+        "maps_to_lean": [
+          "astronomical",
+          "chemical",
+          "biological",
+          "material",
+          "particle"
+        ],
+        "tier": 57,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Chemical_Structure_Stability_Panel",
+        "kind": "extension_domain",
+        "name": "Chemical_Structure_Stability_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 18.15,
+        "maps_to_lean": [
+          "chemical",
+          "material",
+          "particle",
+          "electron"
+        ],
+        "tier": 57,
+        "D_eff": 14
+      },
+      {
+        "id": "domain::Published_Fuel_Property_Panel",
+        "kind": "extension_domain",
+        "name": "Published_Fuel_Property_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 17.8,
+        "maps_to_lean": [
+          "energy",
+          "chemical",
+          "material"
+        ],
+        "tier": 57,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::GWOSC_Live_Event_Deep",
+        "kind": "extension_domain",
+        "name": "GWOSC_Live_Event_Deep",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 18.05,
+        "maps_to_lean": [
+          "astronomical",
+          "particle",
+          "galactic"
+        ],
+        "tier": 58,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Stellar_Multiplicity_Live_Deep",
+        "kind": "extension_domain",
+        "name": "Stellar_Multiplicity_Live_Deep",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 17.7,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic"
+        ],
+        "tier": 58,
+        "D_eff": 19
+      },
+      {
+        "id": "domain::Material_Property_Verification_Scaffold",
+        "kind": "extension_domain",
+        "name": "Material_Property_Verification_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 18.65,
+        "maps_to_lean": [
+          "material",
+          "chemical",
+          "energy",
+          "particle"
+        ],
+        "tier": 59,
+        "D_eff": 15
+      },
+      {
+        "id": "domain::Fuel_Thermochemistry_Public_Anchors",
+        "kind": "extension_domain",
+        "name": "Fuel_Thermochemistry_Public_Anchors",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 18.3,
+        "maps_to_lean": [
+          "energy",
+          "chemical",
+          "material"
+        ],
+        "tier": 59,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::SIMBAD_Stellar_Identity_Deep",
+        "kind": "extension_domain",
+        "name": "SIMBAD_Stellar_Identity_Deep",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 18.2,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic"
+        ],
+        "tier": 60,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Gaia_Astrometry_Panel_Deep",
+        "kind": "extension_domain",
+        "name": "Gaia_Astrometry_Panel_Deep",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 18.2,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic"
+        ],
+        "tier": 60,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Music_Harmonics_Public_Panel",
+        "kind": "extension_domain",
+        "name": "Music_Harmonics_Public_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 19.15,
+        "maps_to_lean": [
+          "acoustical",
+          "mathematical",
+          "consciousness",
+          "neural"
+        ],
+        "tier": 61,
+        "D_eff": 10
+      },
+      {
+        "id": "domain::XR_Interactive_Media_Math_Scaffold",
+        "kind": "extension_domain",
+        "name": "XR_Interactive_Media_Math_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 19.5,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "neural",
+          "mathematical",
+          "acoustical"
+        ],
+        "tier": 61,
+        "D_eff": 14
+      },
+      {
+        "id": "domain::Creative_Arts_Math_Spine",
+        "kind": "extension_domain",
+        "name": "Creative_Arts_Math_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 19.5,
+        "maps_to_lean": [
+          "consciousness",
+          "neural",
+          "mathematical",
+          "acoustical",
+          "ai"
+        ],
+        "tier": 61,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::WDS_Live_Multiplicity_Deep",
+        "kind": "extension_domain",
+        "name": "WDS_Live_Multiplicity_Deep",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 18.7,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic"
+        ],
+        "tier": 62,
+        "D_eff": 19
+      },
+      {
+        "id": "domain::Gaia_DR3_TAP_Deep",
+        "kind": "extension_domain",
+        "name": "Gaia_DR3_TAP_Deep",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 18.7,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic"
+        ],
+        "tier": 62,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Preregistered_Predictions_Verification_Scaffold",
+        "kind": "extension_domain",
+        "name": "Preregistered_Predictions_Verification_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.0,
+        "maps_to_lean": [
+          "cosmological",
+          "particle",
+          "biological",
+          "material",
+          "ai"
+        ],
+        "tier": 63,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Information_Theory_Public_Panel",
+        "kind": "extension_domain",
+        "name": "Information_Theory_Public_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 19.9,
+        "maps_to_lean": [
+          "mathematical",
+          "ai",
+          "consciousness",
+          "neural"
+        ],
+        "tier": 64,
+        "D_eff": 8
+      },
+      {
+        "id": "domain::Network_Science_Public_Panel",
+        "kind": "extension_domain",
+        "name": "Network_Science_Public_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 19.55,
+        "maps_to_lean": [
+          "mathematical",
+          "ai",
+          "galactic"
+        ],
+        "tier": 64,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Semiconductor_Physics_Public_Panel",
+        "kind": "extension_domain",
+        "name": "Semiconductor_Physics_Public_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 19.55,
+        "maps_to_lean": [
+          "electron",
+          "material",
+          "particle"
+        ],
+        "tier": 64,
+        "D_eff": 11
+      },
+      {
+        "id": "domain::Statistical_Mechanics_Public_Panel",
+        "kind": "extension_domain",
+        "name": "Statistical_Mechanics_Public_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 19.55,
+        "maps_to_lean": [
+          "energy",
+          "particle",
+          "thermodynamics"
+        ],
+        "tier": 64,
+        "D_eff": 12
+      },
+      {
+        "id": "domain::Biophysics_Public_Panel",
+        "kind": "extension_domain",
+        "name": "Biophysics_Public_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 19.55,
+        "maps_to_lean": [
+          "biological",
+          "medical",
+          "neural"
+        ],
+        "tier": 64,
+        "D_eff": 12
+      },
+      {
+        "id": "domain::Neurolab_Gaps_Math_Spine",
+        "kind": "extension_domain",
+        "name": "Neurolab_Gaps_Math_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.25,
+        "maps_to_lean": [
+          "mathematical",
+          "biological",
+          "energy",
+          "electron",
+          "ai"
+        ],
+        "tier": 64,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Material_In_Silico_Screening_Scaffold",
+        "kind": "extension_domain",
+        "name": "Material_In_Silico_Screening_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.15,
+        "maps_to_lean": [
+          "material",
+          "chemical",
+          "particle",
+          "energy"
+        ],
+        "tier": 65,
+        "D_eff": 15
+      },
+      {
+        "id": "domain::Fuel_Candidate_Prereg_Scaffold",
+        "kind": "extension_domain",
+        "name": "Fuel_Candidate_Prereg_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 19.8,
+        "maps_to_lean": [
+          "energy",
+          "chemical",
+          "material"
+        ],
+        "tier": 65,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::Interactive_Media_Prereg_Scaffold",
+        "kind": "extension_domain",
+        "name": "Interactive_Media_Prereg_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.15,
+        "maps_to_lean": [
+          "ai",
+          "consciousness",
+          "neural",
+          "mathematical"
+        ],
+        "tier": 65,
+        "D_eff": 14
+      },
+      {
+        "id": "domain::Quantum_Information",
+        "kind": "extension_domain",
+        "name": "Quantum_Information",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.05,
+        "maps_to_lean": [
+          "quantum",
+          "ai",
+          "mathematical"
+        ],
+        "tier": 66,
+        "D_eff": 11
+      },
+      {
+        "id": "domain::Econophysics",
+        "kind": "extension_domain",
+        "name": "Econophysics",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.05,
+        "maps_to_lean": [
+          "consciousness",
+          "mathematical",
+          "energy"
+        ],
+        "tier": 66,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Ecology",
+        "kind": "extension_domain",
+        "name": "Ecology",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 19.7,
+        "maps_to_lean": [
+          "biological",
+          "energy"
+        ],
+        "tier": 66,
+        "D_eff": 15
+      },
+      {
+        "id": "domain::Genomic_Sciences",
+        "kind": "extension_domain",
+        "name": "Genomic_Sciences",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.05,
+        "maps_to_lean": [
+          "biological",
+          "medical",
+          "neural"
+        ],
+        "tier": 66,
+        "D_eff": 12
+      },
+      {
+        "id": "domain::Neurolab_Residual_Math_Spine",
+        "kind": "extension_domain",
+        "name": "Neurolab_Residual_Math_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.75,
+        "maps_to_lean": [
+          "mathematical",
+          "biological",
+          "quantum",
+          "ai",
+          "consciousness"
+        ],
+        "tier": 66,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Term3_Acoustic_Bleed_Depth",
+        "kind": "extension_domain",
+        "name": "Term3_Acoustic_Bleed_Depth",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.65,
+        "maps_to_lean": [
+          "material",
+          "particle",
+          "energy",
+          "acoustical"
+        ],
+        "tier": 67,
+        "D_eff": 15
+      },
+      {
+        "id": "domain::Initiation_Transformation_Archetype",
+        "kind": "extension_domain",
+        "name": "Initiation_Transformation_Archetype",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.3,
+        "maps_to_lean": [
+          "consciousness",
+          "linguistic",
+          "mathematical"
+        ],
+        "tier": 67,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Boundary_Partition_Tightening",
+        "kind": "extension_domain",
+        "name": "Boundary_Partition_Tightening",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.3,
+        "maps_to_lean": [
+          "consciousness",
+          "linguistic",
+          "mathematical"
+        ],
+        "tier": 67,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Formula_Precision_Spine",
+        "kind": "extension_domain",
+        "name": "Formula_Precision_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.65,
+        "maps_to_lean": [
+          "mathematical",
+          "consciousness",
+          "material",
+          "particle"
+        ],
+        "tier": 67,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Materials_Project_Live_Panel",
+        "kind": "extension_domain",
+        "name": "Materials_Project_Live_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.55,
+        "maps_to_lean": [
+          "material",
+          "particle",
+          "energy"
+        ],
+        "tier": 68,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::PubChem_Live_Deep",
+        "kind": "extension_domain",
+        "name": "PubChem_Live_Deep",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.55,
+        "maps_to_lean": [
+          "electron",
+          "chemical",
+          "medical"
+        ],
+        "tier": 68,
+        "D_eff": 8
+      },
+      {
+        "id": "domain::OpenNeuro_Full_Panel",
+        "kind": "extension_domain",
+        "name": "OpenNeuro_Full_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.55,
+        "maps_to_lean": [
+          "neural",
+          "consciousness",
+          "ai"
+        ],
+        "tier": 68,
+        "D_eff": 14
+      },
+      {
+        "id": "domain::VizieR_WDS_TAP_Live_Deep",
+        "kind": "extension_domain",
+        "name": "VizieR_WDS_TAP_Live_Deep",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.55,
+        "maps_to_lean": [
+          "astronomical",
+          "galactic",
+          "cmb"
+        ],
+        "tier": 68,
+        "D_eff": 21
+      },
+      {
+        "id": "domain::Live_Ingest_Spine",
+        "kind": "extension_domain",
+        "name": "Live_Ingest_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.9,
+        "maps_to_lean": [
+          "material",
+          "chemical",
+          "neural",
+          "astronomical"
+        ],
+        "tier": 68,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Unified_DB_Candidate_Crosswalk",
+        "kind": "extension_domain",
+        "name": "Unified_DB_Candidate_Crosswalk",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.15,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "medical",
+          "ai"
+        ],
+        "tier": 69,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::FSOT_Aggregate_Organized_Panel",
+        "kind": "extension_domain",
+        "name": "FSOT_Aggregate_Organized_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 20.8,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "medical"
+        ],
+        "tier": 69,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Unified_DB_Crosswalk_Spine",
+        "kind": "extension_domain",
+        "name": "Unified_DB_Crosswalk_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.15,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "medical",
+          "ai"
+        ],
+        "tier": 69,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Proof_Ledger_Closure_Spine",
+        "kind": "extension_domain",
+        "name": "Proof_Ledger_Closure_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.4,
+        "maps_to_lean": [
+          "mathematical",
+          "cosmological",
+          "particle",
+          "consciousness"
+        ],
+        "tier": 70,
+        "D_eff": 25
+      },
+      {
+        "id": "domain::Preregistered_Outcome_Tracking",
+        "kind": "extension_domain",
+        "name": "Preregistered_Outcome_Tracking",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.4,
+        "maps_to_lean": [
+          "cosmological",
+          "particle",
+          "biological",
+          "material"
+        ],
+        "tier": 70,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::ToE_Claim_Certificate_Bundle",
+        "kind": "extension_domain",
+        "name": "ToE_Claim_Certificate_Bundle",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.4,
+        "maps_to_lean": [
+          "cosmological",
+          "mathematical",
+          "particle",
+          "consciousness"
+        ],
+        "tier": 70,
+        "D_eff": 25
+      },
+      {
+        "id": "domain::Fusion_Physics_Public_Panel",
+        "kind": "extension_domain",
+        "name": "Fusion_Physics_Public_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.65,
+        "maps_to_lean": [
+          "fusion",
+          "energy",
+          "particle",
+          "plasma"
+        ],
+        "tier": 71,
+        "D_eff": 18
+      },
+      {
+        "id": "domain::Magnetic_Confinement_Fusion_Panel",
+        "kind": "extension_domain",
+        "name": "Magnetic_Confinement_Fusion_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.65,
+        "maps_to_lean": [
+          "fusion",
+          "energy",
+          "plasma",
+          "particle"
+        ],
+        "tier": 71,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::Inertial_Confinement_Fusion_Panel",
+        "kind": "extension_domain",
+        "name": "Inertial_Confinement_Fusion_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.65,
+        "maps_to_lean": [
+          "fusion",
+          "energy",
+          "plasma",
+          "particle"
+        ],
+        "tier": 71,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Cold_Fusion_Candidate_Prereg_Scaffold",
+        "kind": "extension_domain",
+        "name": "Cold_Fusion_Candidate_Prereg_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.65,
+        "maps_to_lean": [
+          "fusion",
+          "energy",
+          "particle",
+          "material"
+        ],
+        "tier": 71,
+        "D_eff": 14
+      },
+      {
+        "id": "domain::Fusion_Lab_Certificate_Spine",
+        "kind": "extension_domain",
+        "name": "Fusion_Lab_Certificate_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.0,
+        "maps_to_lean": [
+          "fusion",
+          "energy",
+          "plasma",
+          "particle",
+          "material"
+        ],
+        "tier": 71,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Periodic_Table_Public_Panel",
+        "kind": "extension_domain",
+        "name": "Periodic_Table_Public_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.9,
+        "maps_to_lean": [
+          "particle",
+          "atomic",
+          "nuclear",
+          "material"
+        ],
+        "tier": 72,
+        "D_eff": 9
+      },
+      {
+        "id": "domain::Superheavy_Element_Stability_Panel",
+        "kind": "extension_domain",
+        "name": "Superheavy_Element_Stability_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.9,
+        "maps_to_lean": [
+          "particle",
+          "nuclear",
+          "atomic",
+          "fusion"
+        ],
+        "tier": 72,
+        "D_eff": 10
+      },
+      {
+        "id": "domain::Undiscovered_Element_Candidate_Prereg_Scaffold",
+        "kind": "extension_domain",
+        "name": "Undiscovered_Element_Candidate_Prereg_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.9,
+        "maps_to_lean": [
+          "particle",
+          "nuclear",
+          "atomic",
+          "fusion"
+        ],
+        "tier": 72,
+        "D_eff": 10
+      },
+      {
+        "id": "domain::Natural_Formation_Element_Simulation",
+        "kind": "extension_domain",
+        "name": "Natural_Formation_Element_Simulation",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 21.9,
+        "maps_to_lean": [
+          "particle",
+          "nuclear",
+          "fusion",
+          "astronomical"
+        ],
+        "tier": 72,
+        "D_eff": 11
+      },
+      {
+        "id": "domain::Periodic_Table_Completion_Spine",
+        "kind": "extension_domain",
+        "name": "Periodic_Table_Completion_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.25,
+        "maps_to_lean": [
+          "particle",
+          "nuclear",
+          "atomic",
+          "fusion",
+          "material"
+        ],
+        "tier": 72,
+        "D_eff": 12
+      },
+      {
+        "id": "domain::Heavy_Ion_Lab_Synthesis_Panel",
+        "kind": "extension_domain",
+        "name": "Heavy_Ion_Lab_Synthesis_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.15,
+        "maps_to_lean": [
+          "fusion",
+          "particle",
+          "nuclear",
+          "material"
+        ],
+        "tier": 73,
+        "D_eff": 13
+      },
+      {
+        "id": "domain::Element_Synthesis_Condition_Scaffold",
+        "kind": "extension_domain",
+        "name": "Element_Synthesis_Condition_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.5,
+        "maps_to_lean": [
+          "fusion",
+          "particle",
+          "nuclear",
+          "material",
+          "thermodynamics"
+        ],
+        "tier": 73,
+        "D_eff": 14
+      },
+      {
+        "id": "domain::Cold_Fusion_Lab_Synthesis_Crosswalk",
+        "kind": "extension_domain",
+        "name": "Cold_Fusion_Lab_Synthesis_Crosswalk",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.5,
+        "maps_to_lean": [
+          "fusion",
+          "particle",
+          "nuclear",
+          "material",
+          "energy"
+        ],
+        "tier": 73,
+        "D_eff": 15
+      },
+      {
+        "id": "domain::Metamaterial_Fluid_Design_Prereg_Scaffold",
+        "kind": "extension_domain",
+        "name": "Metamaterial_Fluid_Design_Prereg_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.15,
+        "maps_to_lean": [
+          "material",
+          "fusion",
+          "energy",
+          "particle"
+        ],
+        "tier": 73,
+        "D_eff": 16
+      },
+      {
+        "id": "domain::Lab_Synthesis_Metamaterial_Spine",
+        "kind": "extension_domain",
+        "name": "Lab_Synthesis_Metamaterial_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.5,
+        "maps_to_lean": [
+          "fusion",
+          "particle",
+          "nuclear",
+          "material",
+          "energy"
+        ],
+        "tier": 73,
+        "D_eff": 18
+      },
+      {
+        "id": "domain::Island_Of_Stability_Deep_Panel",
+        "kind": "extension_domain",
+        "name": "Island_Of_Stability_Deep_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.4,
+        "maps_to_lean": [
+          "particle",
+          "nuclear",
+          "fusion",
+          "atomic"
+        ],
+        "tier": 74,
+        "D_eff": 19
+      },
+      {
+        "id": "domain::Z120_Z126_Beam_Synthesis_Panel",
+        "kind": "extension_domain",
+        "name": "Z120_Z126_Beam_Synthesis_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.4,
+        "maps_to_lean": [
+          "fusion",
+          "particle",
+          "nuclear",
+          "material"
+        ],
+        "tier": 74,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Fusion_Decay_Chain_Prereg_Scaffold",
+        "kind": "extension_domain",
+        "name": "Fusion_Decay_Chain_Prereg_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.4,
+        "maps_to_lean": [
+          "fusion",
+          "particle",
+          "nuclear",
+          "energy"
+        ],
+        "tier": 74,
+        "D_eff": 17
+      },
+      {
+        "id": "domain::Superheavy_Island_Emergence_Simulation",
+        "kind": "extension_domain",
+        "name": "Superheavy_Island_Emergence_Simulation",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.4,
+        "maps_to_lean": [
+          "particle",
+          "nuclear",
+          "fusion",
+          "astronomical"
+        ],
+        "tier": 74,
+        "D_eff": 21
+      },
+      {
+        "id": "domain::Superheavy_Island_Completion_Spine",
+        "kind": "extension_domain",
+        "name": "Superheavy_Island_Completion_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.75,
+        "maps_to_lean": [
+          "particle",
+          "nuclear",
+          "fusion",
+          "atomic",
+          "material"
+        ],
+        "tier": 74,
+        "D_eff": 22
+      },
+      {
+        "id": "domain::Distant_Island_Z128_Z132_Deep_Panel",
+        "kind": "extension_domain",
+        "name": "Distant_Island_Z128_Z132_Deep_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.65,
+        "maps_to_lean": [
+          "particle",
+          "nuclear",
+          "fusion",
+          "atomic"
+        ],
+        "tier": 75,
+        "D_eff": 23
+      },
+      {
+        "id": "domain::Z164_Distant_Island_Prereg_Scaffold",
+        "kind": "extension_domain",
+        "name": "Z164_Distant_Island_Prereg_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.3,
+        "maps_to_lean": [
+          "particle",
+          "nuclear",
+          "fusion"
+        ],
+        "tier": 75,
+        "D_eff": 24
+      },
+      {
+        "id": "domain::Periodic_Extension_Decay_Topology_Scaffold",
+        "kind": "extension_domain",
+        "name": "Periodic_Extension_Decay_Topology_Scaffold",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.65,
+        "maps_to_lean": [
+          "fusion",
+          "particle",
+          "nuclear",
+          "energy"
+        ],
+        "tier": 75,
+        "D_eff": 22
+      },
+      {
+        "id": "domain::Distant_Island_Emergence_Simulation",
+        "kind": "extension_domain",
+        "name": "Distant_Island_Emergence_Simulation",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.65,
+        "maps_to_lean": [
+          "particle",
+          "nuclear",
+          "fusion",
+          "astronomical"
+        ],
+        "tier": 75,
+        "D_eff": 25
+      },
+      {
+        "id": "domain::Periodic_Table_Extension_Closure_Spine",
+        "kind": "extension_domain",
+        "name": "Periodic_Table_Extension_Closure_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 23.35,
+        "maps_to_lean": [
+          "particle",
+          "nuclear",
+          "fusion",
+          "atomic",
+          "material",
+          "energy"
+        ],
+        "tier": 75,
+        "D_eff": 26
+      },
+      {
+        "id": "domain::Time_Emergence_Deep_Panel",
+        "kind": "extension_domain",
+        "name": "Time_Emergence_Deep_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 23.25,
+        "maps_to_lean": [
+          "consciousness",
+          "particle",
+          "galactic",
+          "cosmological",
+          "blackhole"
+        ],
+        "tier": 76,
+        "D_eff": 19
+      },
+      {
+        "id": "domain::FPC_Fluidlink_Timing_Deep_Panel",
+        "kind": "extension_domain",
+        "name": "FPC_Fluidlink_Timing_Deep_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 23.25,
+        "maps_to_lean": [
+          "consciousness",
+          "particle",
+          "galactic",
+          "cosmological",
+          "blackhole"
+        ],
+        "tier": 76,
+        "D_eff": 20
+      },
+      {
+        "id": "domain::Cosmology_Anomaly_Deep_Panel",
+        "kind": "extension_domain",
+        "name": "Cosmology_Anomaly_Deep_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 23.25,
+        "maps_to_lean": [
+          "cosmological",
+          "particle",
+          "consciousness",
+          "blackhole",
+          "cmb"
+        ],
+        "tier": 76,
+        "D_eff": 24
+      },
+      {
+        "id": "domain::Hubble_Dark_Sector_Crosswalk",
+        "kind": "extension_domain",
+        "name": "Hubble_Dark_Sector_Crosswalk",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.9,
+        "maps_to_lean": [
+          "cosmological",
+          "particle",
+          "blackhole",
+          "cmb"
+        ],
+        "tier": 76,
+        "D_eff": 25
+      },
+      {
+        "id": "domain::Fluid_Spacetime_Observable_Spine",
+        "kind": "extension_domain",
+        "name": "Fluid_Spacetime_Observable_Spine",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 23.6,
+        "maps_to_lean": [
+          "consciousness",
+          "particle",
+          "galactic",
+          "cosmological",
+          "blackhole",
+          "cmb"
+        ],
+        "tier": 76,
+        "D_eff": 26
+      },
+      {
+        "id": "domain::Hybrid_FI_Sim_Multi_Hero_Panel",
+        "kind": "extension_domain",
+        "name": "Hybrid_FI_Sim_Multi_Hero_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.8,
+        "maps_to_lean": [
+          "neural",
+          "consciousness",
+          "biophysics"
+        ],
+        "tier": 77,
+        "D_eff": 18
+      },
+      {
+        "id": "domain::Knowledge_Base_Portable_Bundle_Panel",
+        "kind": "extension_domain",
+        "name": "Knowledge_Base_Portable_Bundle_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.8,
+        "maps_to_lean": [
+          "mathematical",
+          "particle",
+          "consciousness"
+        ],
+        "tier": 77,
+        "D_eff": 19
+      },
+      {
+        "id": "domain::RD_Interval_Tightening_Panel",
+        "kind": "extension_domain",
+        "name": "RD_Interval_Tightening_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 22.8,
+        "maps_to_lean": [
+          "cosmological",
+          "particle",
+          "cmb"
+        ],
+        "tier": 77,
+        "D_eff": 22
+      },
+      {
+        "id": "domain::Domain_Coupling_Simulation_Refresh_Panel",
+        "kind": "extension_domain",
+        "name": "Domain_Coupling_Simulation_Refresh_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 23.5,
+        "maps_to_lean": [
+          "consciousness",
+          "particle",
+          "galactic",
+          "cosmological",
+          "energy"
+        ],
+        "tier": 77,
+        "D_eff": 24
+      },
+      {
+        "id": "domain::Fluid_Spacetime_Prereg_Validation_Panel",
+        "kind": "extension_domain",
+        "name": "Fluid_Spacetime_Prereg_Validation_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 23.5,
+        "maps_to_lean": [
+          "cosmological",
+          "consciousness",
+          "particle",
+          "blackhole",
+          "cmb"
+        ],
+        "tier": 77,
+        "D_eff": 25
+      },
+      {
+        "id": "domain::Warp_BH_WH_Portal_Panel",
+        "kind": "extension_domain",
+        "name": "Warp_BH_WH_Portal_Panel",
+        "primary_branch": "term1.quirkMod",
+        "divergence_depth": 23.75,
+        "maps_to_lean": [
+          "blackhole",
+          "quantum",
+          "cosmological",
+          "fluid_dynamics",
+          "electromagnetism"
+        ],
+        "tier": 78,
+        "D_eff": 29
+      },
+      {
         "id": "constant::phi",
         "kind": "constant_primitive",
         "name": "phi",
@@ -5299,6 +7858,1242 @@
       },
       {
         "from": "raw_S",
+        "to": "term1.coherence_efficiency",
+        "kind": "spine_branch",
+        "domain": "Time_Emergence_Simulation"
+      },
+      {
+        "from": "term1.coherence_efficiency",
+        "to": "domain::Time_Emergence_Simulation",
+        "kind": "domain_attachment",
+        "domain": "Time_Emergence_Simulation"
+      },
+      {
+        "from": "raw_S",
+        "to": "scaled_S",
+        "kind": "spine_branch",
+        "domain": "Time_Domain_Crosswalk"
+      },
+      {
+        "from": "scaled_S",
+        "to": "domain::Time_Domain_Crosswalk",
+        "kind": "domain_attachment",
+        "domain": "Time_Domain_Crosswalk"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.coherence_efficiency",
+        "kind": "spine_branch",
+        "domain": "FPC_Temporal_Coupling"
+      },
+      {
+        "from": "term1.coherence_efficiency",
+        "to": "domain::FPC_Temporal_Coupling",
+        "kind": "domain_attachment",
+        "domain": "FPC_Temporal_Coupling"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Fluid_Phase_Current_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Fluid_Phase_Current_Spine",
+        "kind": "domain_attachment",
+        "domain": "Fluid_Phase_Current_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Stumped_Observables_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Stumped_Observables_Panel",
+        "kind": "domain_attachment",
+        "domain": "Stumped_Observables_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Hubble_Bubble_Tension"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Hubble_Bubble_Tension",
+        "kind": "domain_attachment",
+        "domain": "Hubble_Bubble_Tension"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Dark_Sector_Open_Problems"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Dark_Sector_Open_Problems",
+        "kind": "domain_attachment",
+        "domain": "Dark_Sector_Open_Problems"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Stumped_Observables_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Stumped_Observables_Spine",
+        "kind": "domain_attachment",
+        "domain": "Stumped_Observables_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Consciousness_Econ"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Consciousness_Econ",
+        "kind": "domain_attachment",
+        "domain": "Consciousness_Econ"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Dark_Energy_CPL"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Dark_Energy_CPL",
+        "kind": "domain_attachment",
+        "domain": "Dark_Energy_CPL"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "SH0ES_Refined"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::SH0ES_Refined",
+        "kind": "domain_attachment",
+        "domain": "SH0ES_Refined"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Consciousness_Soul_Bridge"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Consciousness_Soul_Bridge",
+        "kind": "domain_attachment",
+        "domain": "Consciousness_Soul_Bridge"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Symbolic_Archetype_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Symbolic_Archetype_Panel",
+        "kind": "domain_attachment",
+        "domain": "Symbolic_Archetype_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Astrophysical_Structure_Crosswalk"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Astrophysical_Structure_Crosswalk",
+        "kind": "domain_attachment",
+        "domain": "Astrophysical_Structure_Crosswalk"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Stellar_Multiplicity_Catalog"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Stellar_Multiplicity_Catalog",
+        "kind": "domain_attachment",
+        "domain": "Stellar_Multiplicity_Catalog"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Compact_Object_Binary_Events"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Compact_Object_Binary_Events",
+        "kind": "domain_attachment",
+        "domain": "Compact_Object_Binary_Events"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Galactic_Structure_Sample"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Galactic_Structure_Sample",
+        "kind": "domain_attachment",
+        "domain": "Galactic_Structure_Sample"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Solar_System_Structure_Deep"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Solar_System_Structure_Deep",
+        "kind": "domain_attachment",
+        "domain": "Solar_System_Structure_Deep"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Exoplanet_System_Architecture"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Exoplanet_System_Architecture",
+        "kind": "domain_attachment",
+        "domain": "Exoplanet_System_Architecture"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "PubChem_Stability_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::PubChem_Stability_Panel",
+        "kind": "domain_attachment",
+        "domain": "PubChem_Stability_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Materials_Genome_Crosswalk"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Materials_Genome_Crosswalk",
+        "kind": "domain_attachment",
+        "domain": "Materials_Genome_Crosswalk"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "UniProt_Structure_Annotations_Deep"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::UniProt_Structure_Annotations_Deep",
+        "kind": "domain_attachment",
+        "domain": "UniProt_Structure_Annotations_Deep"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "IGEM_Parts_Expanded"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::IGEM_Parts_Expanded",
+        "kind": "domain_attachment",
+        "domain": "IGEM_Parts_Expanded"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Interdisciplinary_Spine_Crosswalk"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Interdisciplinary_Spine_Crosswalk",
+        "kind": "domain_attachment",
+        "domain": "Interdisciplinary_Spine_Crosswalk"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Chemical_Structure_Stability_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Chemical_Structure_Stability_Panel",
+        "kind": "domain_attachment",
+        "domain": "Chemical_Structure_Stability_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Published_Fuel_Property_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Published_Fuel_Property_Panel",
+        "kind": "domain_attachment",
+        "domain": "Published_Fuel_Property_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "GWOSC_Live_Event_Deep"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::GWOSC_Live_Event_Deep",
+        "kind": "domain_attachment",
+        "domain": "GWOSC_Live_Event_Deep"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Stellar_Multiplicity_Live_Deep"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Stellar_Multiplicity_Live_Deep",
+        "kind": "domain_attachment",
+        "domain": "Stellar_Multiplicity_Live_Deep"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Material_Property_Verification_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Material_Property_Verification_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Material_Property_Verification_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Fuel_Thermochemistry_Public_Anchors"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Fuel_Thermochemistry_Public_Anchors",
+        "kind": "domain_attachment",
+        "domain": "Fuel_Thermochemistry_Public_Anchors"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "SIMBAD_Stellar_Identity_Deep"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::SIMBAD_Stellar_Identity_Deep",
+        "kind": "domain_attachment",
+        "domain": "SIMBAD_Stellar_Identity_Deep"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Gaia_Astrometry_Panel_Deep"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Gaia_Astrometry_Panel_Deep",
+        "kind": "domain_attachment",
+        "domain": "Gaia_Astrometry_Panel_Deep"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Music_Harmonics_Public_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Music_Harmonics_Public_Panel",
+        "kind": "domain_attachment",
+        "domain": "Music_Harmonics_Public_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "XR_Interactive_Media_Math_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::XR_Interactive_Media_Math_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "XR_Interactive_Media_Math_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Creative_Arts_Math_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Creative_Arts_Math_Spine",
+        "kind": "domain_attachment",
+        "domain": "Creative_Arts_Math_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "WDS_Live_Multiplicity_Deep"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::WDS_Live_Multiplicity_Deep",
+        "kind": "domain_attachment",
+        "domain": "WDS_Live_Multiplicity_Deep"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Gaia_DR3_TAP_Deep"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Gaia_DR3_TAP_Deep",
+        "kind": "domain_attachment",
+        "domain": "Gaia_DR3_TAP_Deep"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Preregistered_Predictions_Verification_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Preregistered_Predictions_Verification_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Preregistered_Predictions_Verification_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Information_Theory_Public_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Information_Theory_Public_Panel",
+        "kind": "domain_attachment",
+        "domain": "Information_Theory_Public_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Network_Science_Public_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Network_Science_Public_Panel",
+        "kind": "domain_attachment",
+        "domain": "Network_Science_Public_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Semiconductor_Physics_Public_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Semiconductor_Physics_Public_Panel",
+        "kind": "domain_attachment",
+        "domain": "Semiconductor_Physics_Public_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Statistical_Mechanics_Public_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Statistical_Mechanics_Public_Panel",
+        "kind": "domain_attachment",
+        "domain": "Statistical_Mechanics_Public_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Biophysics_Public_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Biophysics_Public_Panel",
+        "kind": "domain_attachment",
+        "domain": "Biophysics_Public_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Neurolab_Gaps_Math_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Neurolab_Gaps_Math_Spine",
+        "kind": "domain_attachment",
+        "domain": "Neurolab_Gaps_Math_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Material_In_Silico_Screening_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Material_In_Silico_Screening_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Material_In_Silico_Screening_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Fuel_Candidate_Prereg_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Fuel_Candidate_Prereg_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Fuel_Candidate_Prereg_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Interactive_Media_Prereg_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Interactive_Media_Prereg_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Interactive_Media_Prereg_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Quantum_Information"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Quantum_Information",
+        "kind": "domain_attachment",
+        "domain": "Quantum_Information"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Econophysics"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Econophysics",
+        "kind": "domain_attachment",
+        "domain": "Econophysics"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Ecology"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Ecology",
+        "kind": "domain_attachment",
+        "domain": "Ecology"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Genomic_Sciences"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Genomic_Sciences",
+        "kind": "domain_attachment",
+        "domain": "Genomic_Sciences"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Neurolab_Residual_Math_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Neurolab_Residual_Math_Spine",
+        "kind": "domain_attachment",
+        "domain": "Neurolab_Residual_Math_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Term3_Acoustic_Bleed_Depth"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Term3_Acoustic_Bleed_Depth",
+        "kind": "domain_attachment",
+        "domain": "Term3_Acoustic_Bleed_Depth"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Initiation_Transformation_Archetype"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Initiation_Transformation_Archetype",
+        "kind": "domain_attachment",
+        "domain": "Initiation_Transformation_Archetype"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Boundary_Partition_Tightening"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Boundary_Partition_Tightening",
+        "kind": "domain_attachment",
+        "domain": "Boundary_Partition_Tightening"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Formula_Precision_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Formula_Precision_Spine",
+        "kind": "domain_attachment",
+        "domain": "Formula_Precision_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Materials_Project_Live_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Materials_Project_Live_Panel",
+        "kind": "domain_attachment",
+        "domain": "Materials_Project_Live_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "PubChem_Live_Deep"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::PubChem_Live_Deep",
+        "kind": "domain_attachment",
+        "domain": "PubChem_Live_Deep"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "OpenNeuro_Full_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::OpenNeuro_Full_Panel",
+        "kind": "domain_attachment",
+        "domain": "OpenNeuro_Full_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "VizieR_WDS_TAP_Live_Deep"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::VizieR_WDS_TAP_Live_Deep",
+        "kind": "domain_attachment",
+        "domain": "VizieR_WDS_TAP_Live_Deep"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Live_Ingest_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Live_Ingest_Spine",
+        "kind": "domain_attachment",
+        "domain": "Live_Ingest_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Unified_DB_Candidate_Crosswalk"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Unified_DB_Candidate_Crosswalk",
+        "kind": "domain_attachment",
+        "domain": "Unified_DB_Candidate_Crosswalk"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "FSOT_Aggregate_Organized_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::FSOT_Aggregate_Organized_Panel",
+        "kind": "domain_attachment",
+        "domain": "FSOT_Aggregate_Organized_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Unified_DB_Crosswalk_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Unified_DB_Crosswalk_Spine",
+        "kind": "domain_attachment",
+        "domain": "Unified_DB_Crosswalk_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Proof_Ledger_Closure_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Proof_Ledger_Closure_Spine",
+        "kind": "domain_attachment",
+        "domain": "Proof_Ledger_Closure_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Preregistered_Outcome_Tracking"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Preregistered_Outcome_Tracking",
+        "kind": "domain_attachment",
+        "domain": "Preregistered_Outcome_Tracking"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "ToE_Claim_Certificate_Bundle"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::ToE_Claim_Certificate_Bundle",
+        "kind": "domain_attachment",
+        "domain": "ToE_Claim_Certificate_Bundle"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Fusion_Physics_Public_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Fusion_Physics_Public_Panel",
+        "kind": "domain_attachment",
+        "domain": "Fusion_Physics_Public_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Magnetic_Confinement_Fusion_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Magnetic_Confinement_Fusion_Panel",
+        "kind": "domain_attachment",
+        "domain": "Magnetic_Confinement_Fusion_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Inertial_Confinement_Fusion_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Inertial_Confinement_Fusion_Panel",
+        "kind": "domain_attachment",
+        "domain": "Inertial_Confinement_Fusion_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Cold_Fusion_Candidate_Prereg_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Cold_Fusion_Candidate_Prereg_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Cold_Fusion_Candidate_Prereg_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Fusion_Lab_Certificate_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Fusion_Lab_Certificate_Spine",
+        "kind": "domain_attachment",
+        "domain": "Fusion_Lab_Certificate_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Periodic_Table_Public_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Periodic_Table_Public_Panel",
+        "kind": "domain_attachment",
+        "domain": "Periodic_Table_Public_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Superheavy_Element_Stability_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Superheavy_Element_Stability_Panel",
+        "kind": "domain_attachment",
+        "domain": "Superheavy_Element_Stability_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Undiscovered_Element_Candidate_Prereg_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Undiscovered_Element_Candidate_Prereg_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Undiscovered_Element_Candidate_Prereg_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Natural_Formation_Element_Simulation"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Natural_Formation_Element_Simulation",
+        "kind": "domain_attachment",
+        "domain": "Natural_Formation_Element_Simulation"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Periodic_Table_Completion_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Periodic_Table_Completion_Spine",
+        "kind": "domain_attachment",
+        "domain": "Periodic_Table_Completion_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Heavy_Ion_Lab_Synthesis_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Heavy_Ion_Lab_Synthesis_Panel",
+        "kind": "domain_attachment",
+        "domain": "Heavy_Ion_Lab_Synthesis_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Element_Synthesis_Condition_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Element_Synthesis_Condition_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Element_Synthesis_Condition_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Cold_Fusion_Lab_Synthesis_Crosswalk",
+        "kind": "domain_attachment",
+        "domain": "Cold_Fusion_Lab_Synthesis_Crosswalk"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Metamaterial_Fluid_Design_Prereg_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Metamaterial_Fluid_Design_Prereg_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Metamaterial_Fluid_Design_Prereg_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Lab_Synthesis_Metamaterial_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Lab_Synthesis_Metamaterial_Spine",
+        "kind": "domain_attachment",
+        "domain": "Lab_Synthesis_Metamaterial_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Island_Of_Stability_Deep_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Island_Of_Stability_Deep_Panel",
+        "kind": "domain_attachment",
+        "domain": "Island_Of_Stability_Deep_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Z120_Z126_Beam_Synthesis_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Z120_Z126_Beam_Synthesis_Panel",
+        "kind": "domain_attachment",
+        "domain": "Z120_Z126_Beam_Synthesis_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Fusion_Decay_Chain_Prereg_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Fusion_Decay_Chain_Prereg_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Fusion_Decay_Chain_Prereg_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Superheavy_Island_Emergence_Simulation"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Superheavy_Island_Emergence_Simulation",
+        "kind": "domain_attachment",
+        "domain": "Superheavy_Island_Emergence_Simulation"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Superheavy_Island_Completion_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Superheavy_Island_Completion_Spine",
+        "kind": "domain_attachment",
+        "domain": "Superheavy_Island_Completion_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Distant_Island_Z128_Z132_Deep_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Distant_Island_Z128_Z132_Deep_Panel",
+        "kind": "domain_attachment",
+        "domain": "Distant_Island_Z128_Z132_Deep_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Z164_Distant_Island_Prereg_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Z164_Distant_Island_Prereg_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Z164_Distant_Island_Prereg_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Periodic_Extension_Decay_Topology_Scaffold"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Periodic_Extension_Decay_Topology_Scaffold",
+        "kind": "domain_attachment",
+        "domain": "Periodic_Extension_Decay_Topology_Scaffold"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Distant_Island_Emergence_Simulation"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Distant_Island_Emergence_Simulation",
+        "kind": "domain_attachment",
+        "domain": "Distant_Island_Emergence_Simulation"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Periodic_Table_Extension_Closure_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Periodic_Table_Extension_Closure_Spine",
+        "kind": "domain_attachment",
+        "domain": "Periodic_Table_Extension_Closure_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Time_Emergence_Deep_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Time_Emergence_Deep_Panel",
+        "kind": "domain_attachment",
+        "domain": "Time_Emergence_Deep_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "FPC_Fluidlink_Timing_Deep_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::FPC_Fluidlink_Timing_Deep_Panel",
+        "kind": "domain_attachment",
+        "domain": "FPC_Fluidlink_Timing_Deep_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Cosmology_Anomaly_Deep_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Cosmology_Anomaly_Deep_Panel",
+        "kind": "domain_attachment",
+        "domain": "Cosmology_Anomaly_Deep_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Hubble_Dark_Sector_Crosswalk"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Hubble_Dark_Sector_Crosswalk",
+        "kind": "domain_attachment",
+        "domain": "Hubble_Dark_Sector_Crosswalk"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Fluid_Spacetime_Observable_Spine"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Fluid_Spacetime_Observable_Spine",
+        "kind": "domain_attachment",
+        "domain": "Fluid_Spacetime_Observable_Spine"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Hybrid_FI_Sim_Multi_Hero_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Hybrid_FI_Sim_Multi_Hero_Panel",
+        "kind": "domain_attachment",
+        "domain": "Hybrid_FI_Sim_Multi_Hero_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Knowledge_Base_Portable_Bundle_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Knowledge_Base_Portable_Bundle_Panel",
+        "kind": "domain_attachment",
+        "domain": "Knowledge_Base_Portable_Bundle_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "RD_Interval_Tightening_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::RD_Interval_Tightening_Panel",
+        "kind": "domain_attachment",
+        "domain": "RD_Interval_Tightening_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Domain_Coupling_Simulation_Refresh_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Domain_Coupling_Simulation_Refresh_Panel",
+        "kind": "domain_attachment",
+        "domain": "Domain_Coupling_Simulation_Refresh_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Fluid_Spacetime_Prereg_Validation_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Fluid_Spacetime_Prereg_Validation_Panel",
+        "kind": "domain_attachment",
+        "domain": "Fluid_Spacetime_Prereg_Validation_Panel"
+      },
+      {
+        "from": "raw_S",
+        "to": "term1.quirkMod",
+        "kind": "spine_branch",
+        "domain": "Warp_BH_WH_Portal_Panel"
+      },
+      {
+        "from": "term1.quirkMod",
+        "to": "domain::Warp_BH_WH_Portal_Panel",
+        "kind": "domain_attachment",
+        "domain": "Warp_BH_WH_Portal_Panel"
+      },
+      {
+        "from": "raw_S",
         "to": "term1.growth_term",
         "kind": "corpus_formula",
         "concept": "IE_H"
@@ -32344,1242 +36139,6 @@
         "to": "term1.term1_base",
         "kind": "corpus_formula",
         "concept": "W"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Al"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Au"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ag"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "diamond"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ag"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cu"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Au"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Al"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Na"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "W"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Zn"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ni"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Fe"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Pt"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Pb"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ti"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "SS304"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Hg"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "nichrome"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CO\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "O\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Air"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "N\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "He"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C\u2082H\u2085OH"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Hg"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u2082O"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "glycerol"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "steel"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Li\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Na\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "K\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Rb\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cs\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Be\u00b2\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Mg\u00b2\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ca\u00b2\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "F\u207b"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cl\u207b"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Br\u207b"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "I\u207b"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "O\u00b2\u207b"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "S\u00b2\u207b"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Al\u00b3\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cu\u00b2\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "N"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "O"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "F"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Si"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "P"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "S"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cl"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ge"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "As"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Se"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Br"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "I"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Fe"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cu"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Au"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H-2"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "He-3"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "He-4"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Li-6"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Li-7"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Be-9"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C-12"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "N-14"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "O-16"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Fe-56"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ni-62"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "U-235"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "U-238"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Pu-239"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Pb-208"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "HF"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "HCl"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "HI"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u2082O"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "NH\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "SO\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CH\u2083Cl"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CH\u2083OH"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CH\u2082Cl\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CHCl\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "acetone"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "DMSO"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "NaCl_gas"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "KBr_gas"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CsF_gas"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "benzene_B"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "naphthalene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "anthracene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "\u03b2-carotene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "chlorophyll_a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "KMnO\u2084"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "methyl_orange"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "crystal_violet"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "methylene_blue"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "indigo"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "rhodamine_B"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "eosin_Y"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u2082+I\u2082\u21922HI"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CH\u2083CHO_decomp"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "N\u2082O\u2085_decomp"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "2NO\u2082\u21922NO+O\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CH\u2083Br+OH\u207b"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C\u2082H\u2086\u21922CH\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u2082O\u2082_decomp"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CO+O\u2082\u2192CO\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "NH\u2083_synthesis"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "sucrose_hydrolysis"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "ethanol_combust"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "SO\u2082Cl\u2082_decomp"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "He"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ne"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "O\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u2082O"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CH\u2084"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C\u2083H\u2088"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "n-C\u2084H\u2081\u2080"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "SO\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cl\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "He"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ne"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "N\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ar"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CH\u2084"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C\u2082H\u2086"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C\u2083H\u2088"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "NH\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "HCl"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u2082O"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "ethanol"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "diethyl_ether"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "He"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ne"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "N\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "O\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ar"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "NH\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u2082O"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "ethanol"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "acetic_acid"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Al"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Fe"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cu"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Ag"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Au"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "HCl"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "NaOH"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "NaCl"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "KNO\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "AgNO\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CaCl\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "BaCl\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u2082SO\u2084"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "LiCl"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "H\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "OH\u207b"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Na\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "K\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Cl\u207b"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Mg\u00b2\u207a"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "SO\u2084\u00b2\u207b"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "glucose"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "sucrose"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "urea"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "O\u2082_aq"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "CO\u2082_aq"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "naphthalene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "anthracene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "benzene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "toluene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "phenol"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "aniline"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "chlorobenzene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "nitrobenzene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "benzoic_acid"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "aspirin"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "paracetamol"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "R-CH\u2083"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "R-CH\u2082-R"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C\u2261C"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C=C"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "benzene_C"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C=O_aldehyde"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C=O_ketone"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C=O_acid"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C=O_ester"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C-OH_alcohol"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C-NH\u2082"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C-Cl"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C=O_amide"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "rhodamine_B"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "quinine_sulfate"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "anthracene"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Li"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "Be"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "B"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "C"
-      },
-      {
-        "from": "raw_S",
-        "to": "term1.term1_base",
-        "kind": "corpus_formula",
-        "concept": "N"
       }
     ],
     "corpus_constant_histogram": {
@@ -33595,9 +36154,9 @@
       "term1.term1_base": 6426,
       "term3.acoustic_bleed": 1095
     },
-    "domain_attachment_count": 143
+    "domain_attachment_count": 246
   },
-  "domain_attachment_count": 143,
+  "domain_attachment_count": 246,
   "corpus_strict_count": 7941,
   "rollup_status": "GREEN",
   "crosswalk_modules": [

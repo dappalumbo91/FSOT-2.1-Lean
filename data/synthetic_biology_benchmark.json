@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T22:49:59.023673+00:00",
+  "generated_at": "2026-07-11T15:17:06.541231+00:00",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\evolution_operon_benchmark.json",
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\biology_strict_empirical.json"
@@ -9,8 +9,8 @@
     "medical"
   ],
   "D_eff": 14,
-  "record_count": 21,
-  "observable_count": 21,
+  "record_count": 20,
+  "observable_count": 20,
   "evolution_record_count": 12,
   "biology_strict_record_count": 16,
   "median_error_pct": 0.0,
@@ -179,15 +179,6 @@
       "computed": 7.403291,
       "measured": 7.4,
       "error_pct": 0.04447250077037072,
-      "source": "fsot_biology_scalar"
-    },
-    {
-      "lab": "synthetic_biology_lab",
-      "property": "bio_constant",
-      "name": "mt_genome_bp",
-      "computed": 16576.368649,
-      "measured": 16569.0,
-      "error_pct": 0.044472500770367254,
       "source": "fsot_biology_scalar"
     },
     {

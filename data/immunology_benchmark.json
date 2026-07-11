@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-01T05:39:41.623802+00:00",
-  "source": "C:\\Users\\damia\\Desktop\\FSOT SMILES Lab\\FSOT_SMILES_Lab_Dataset.json",
+  "generated_at": "2026-07-11T15:12:40.889126+00:00",
+  "source": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
   "maps_to_lean": [
     "medical",
     "biological"
   ],
   "D_eff": 13,
   "record_count": 84,
-  "median_error_pct": 0.451494,
+  "median_error_pct": 0.061205,
   "records": [
     {
       "lab": "immunology_lab",
@@ -21,17 +21,17 @@
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "barnase",
-      "computed": -8.683186676986617,
+      "computed": -8.79922884583726,
       "measured": -8.8,
-      "error_pct": 1.327424
+      "error_pct": 0.0087631154856993
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "ubiquitin",
-      "computed": -6.854101966249685,
+      "computed": -6.699379178638373,
       "measured": -6.7,
-      "error_pct": 2.300029
+      "error_pct": 0.009265990472048086
     },
     {
       "lab": "immunology_lab",
@@ -61,57 +61,57 @@
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "myoglobin",
-      "computed": -13.70820393249937,
+      "computed": -13.562305898749054,
       "measured": -13.6,
-      "error_pct": 0.795617
+      "error_pct": 0.27716250919812885
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "BPTI",
-      "computed": -11.090169943749475,
+      "computed": -11.000000000000002,
       "measured": -11.0,
-      "error_pct": 0.819727
+      "error_pct": 1.6148698540002278e-14
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "SH3 domain",
-      "computed": -3.533999582927114,
+      "computed": -3.502756499504318,
       "measured": -3.5,
-      "error_pct": 0.971417
+      "error_pct": 0.07875712869480316
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "chymotrypsin inh.",
-      "computed": -4.23606797749979,
+      "computed": -4.291643461547232,
       "measured": -4.3,
-      "error_pct": 1.486791
+      "error_pct": 0.19433810355273806
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Gly_pK\u2081",
-      "computed": 2.2980601642983487,
+      "computed": 2.339988908001895,
       "measured": 2.34,
-      "error_pct": 1.792301
+      "error_pct": 0.00047401701302970684
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Gly_pK\u2082",
-      "computed": 9.65725862484998,
+      "computed": 9.604206413193825,
       "measured": 9.6,
-      "error_pct": 0.596444
+      "error_pct": 0.0438168041023516
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Ala_pK\u2081",
-      "computed": 2.2980601642983487,
+      "computed": 2.339988908001895,
       "measured": 2.34,
-      "error_pct": 1.792301
+      "error_pct": 0.00047401701302970684
     },
     {
       "lab": "immunology_lab",
@@ -141,9 +141,9 @@
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Leu_pK\u2081",
-      "computed": 2.2980601642983487,
+      "computed": 2.3298975496881877,
       "measured": 2.33,
-      "error_pct": 1.370808
+      "error_pct": 0.004397009090657935
     },
     {
       "lab": "immunology_lab",
@@ -173,9 +173,9 @@
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "His_pKR",
-      "computed": 5.938136372072465,
+      "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 1.03106
+      "error_pct": 0.05041956982053305
     },
     {
       "lab": "immunology_lab",
@@ -189,9 +189,9 @@
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Tyr_pKR",
-      "computed": 9.869604401089358,
+      "computed": 10.06799040289138,
       "measured": 10.07,
-      "error_pct": 1.990026
+      "error_pct": 0.019956277146172662
     },
     {
       "lab": "immunology_lab",
@@ -213,9 +213,9 @@
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Pro_pK\u2081",
-      "computed": 1.9616166720726889,
+      "computed": 1.9902242326903956,
       "measured": 1.99,
-      "error_pct": 1.426298
+      "error_pct": 0.01126797439173972
     },
     {
       "lab": "immunology_lab",
@@ -237,9 +237,9 @@
       "lab": "immunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Trp_pK\u2081",
-      "computed": 2.4059747810263383,
+      "computed": 2.3801050513839623,
       "measured": 2.38,
-      "error_pct": 1.091377
+      "error_pct": 0.004413923695900844
     },
     {
       "lab": "immunology_lab",
@@ -253,17 +253,17 @@
       "lab": "immunology_lab",
       "property": "\u00a723 Drug pKd",
       "name": "aspirin/COX-1",
-      "computed": 4.868188536328347,
+      "computed": 4.799985466052134,
       "measured": 4.8,
-      "error_pct": 1.420595
+      "error_pct": 0.0003027905805345436
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a723 Drug pKd",
       "name": "ibuprofen/COX-2",
-      "computed": 5.152033571677009,
+      "computed": 5.098467250120926,
       "measured": 5.1,
-      "error_pct": 1.020266
+      "error_pct": 0.030053919197521404
     },
     {
       "lab": "immunology_lab",
@@ -277,9 +277,9 @@
       "lab": "immunology_lab",
       "property": "\u00a723 Drug pKd",
       "name": "penicillin G/PBP",
-      "computed": 5.938136372072465,
+      "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 1.03106
+      "error_pct": 0.05041956982053305
     },
     {
       "lab": "immunology_lab",
@@ -293,9 +293,9 @@
       "lab": "immunology_lab",
       "property": "\u00a723 Drug pKd",
       "name": "metformin/AMPK",
-      "computed": 4.536370254170161,
+      "computed": 4.499756240982774,
       "measured": 4.5,
-      "error_pct": 0.808228
+      "error_pct": 0.005416867049470556
     },
     {
       "lab": "immunology_lab",
@@ -333,9 +333,9 @@
       "lab": "immunology_lab",
       "property": "\u00a724 Enzyme kcat",
       "name": "carbonic anhydrase",
-      "computed": 5.938136372072465,
+      "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 1.03106
+      "error_pct": 0.05041956982053305
     },
     {
       "lab": "immunology_lab",
@@ -349,17 +349,17 @@
       "lab": "immunology_lab",
       "property": "\u00a724 Enzyme kcat",
       "name": "acetylcholinesterase",
-      "computed": 4.082585762605339,
+      "computed": 4.150702399695581,
       "measured": 4.15,
-      "error_pct": 1.624439
+      "error_pct": 0.01692529386942307
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a724 Enzyme kcat",
       "name": "chymotrypsin",
-      "computed": 2.0382556529105917,
+      "computed": 2.0,
       "measured": 2.0,
-      "error_pct": 1.912783
+      "error_pct": 0.0
     },
     {
       "lab": "immunology_lab",
@@ -389,9 +389,9 @@
       "lab": "immunology_lab",
       "property": "\u00a724 Enzyme kcat",
       "name": "DNA polymerase",
-      "computed": 2.505936052219667,
+      "computed": 2.4799461039763027,
       "measured": 2.48,
-      "error_pct": 1.045809
+      "error_pct": 0.002173226761988694
     },
     {
       "lab": "immunology_lab",
@@ -405,17 +405,17 @@
       "lab": "immunology_lab",
       "property": "\u00a724 Enzyme kcat",
       "name": "urease",
-      "computed": 4.448413753739168,
+      "computed": 4.47964174690591,
       "measured": 4.48,
-      "error_pct": 0.70505
+      "error_pct": 0.007996720850222959
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "hexokinase",
-      "computed": 0.1534822148944508,
+      "computed": 0.1498912826508499,
       "measured": 0.15,
-      "error_pct": 2.321477
+      "error_pct": 0.07247823276673726
     },
     {
       "lab": "immunology_lab",
@@ -429,9 +429,9 @@
       "lab": "immunology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "TPI",
-      "computed": 0.9577022026205613,
+      "computed": 0.9702311355036954,
       "measured": 0.97,
-      "error_pct": 1.267814
+      "error_pct": 0.023828402442831718
     },
     {
       "lab": "immunology_lab",
@@ -453,25 +453,25 @@
       "lab": "immunology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "chymotrypsin",
-      "computed": 5.0832036923152595,
+      "computed": 4.999568084592974,
       "measured": 5.0,
-      "error_pct": 1.664074
+      "error_pct": 0.008638308140511697
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "lysozyme",
-      "computed": 5.938136372072465,
+      "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 1.03106
+      "error_pct": 0.05041956982053305
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "glucokinase",
-      "computed": 9.869604401089358,
+      "computed": 10.0,
       "measured": 10.0,
-      "error_pct": 1.303956
+      "error_pct": 0.0
     },
     {
       "lab": "immunology_lab",
@@ -485,9 +485,9 @@
       "lab": "immunology_lab",
       "property": "\u00a735 Michaelis Km",
       "name": "catalase",
-      "computed": 25.47624596466465,
+      "computed": 25.001165610844783,
       "measured": 25.0,
-      "error_pct": 1.904984
+      "error_pct": 0.004662443379132242
     },
     {
       "lab": "immunology_lab",
@@ -509,9 +509,9 @@
       "lab": "immunology_lab",
       "property": "\u00a765 Enzyme pKi",
       "name": "captopril_ACE",
-      "computed": 8.683186676986617,
+      "computed": 8.768246556133533,
       "measured": 8.77,
-      "error_pct": 0.98989
+      "error_pct": 0.0199936586826242
     },
     {
       "lab": "immunology_lab",
@@ -549,17 +549,17 @@
       "lab": "immunology_lab",
       "property": "\u00a765 Enzyme pKi",
       "name": "allopurinol_XO",
-      "computed": 6.094925520874684,
+      "computed": 6.152148753020613,
       "measured": 6.15,
-      "error_pct": 0.89552
+      "error_pct": 0.03493907350590267
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a765 Enzyme pKi",
       "name": "aspirin_COX1",
-      "computed": 5.938136372072465,
+      "computed": 6.003025174189232,
       "measured": 6.0,
-      "error_pct": 1.03106
+      "error_pct": 0.05041956982053305
     },
     {
       "lab": "immunology_lab",
@@ -613,25 +613,25 @@
       "lab": "immunology_lab",
       "property": "\u00a771 DNA Stacking \u0394G",
       "name": "CA/GT",
-      "computed": -1.464551773855444,
+      "computed": -1.4492779683778432,
       "measured": -1.45,
-      "error_pct": 1.003571
+      "error_pct": 0.04979528428667465
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a771 DNA Stacking \u0394G",
       "name": "GT/CA",
-      "computed": -1.424151250403079,
+      "computed": -1.4399623905429433,
       "measured": -1.44,
-      "error_pct": 1.100608
+      "error_pct": 0.002611767851157243
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a771 DNA Stacking \u0394G",
       "name": "CT/GA",
-      "computed": -1.2941305780559662,
+      "computed": -1.2796363252433056,
       "measured": -1.28,
-      "error_pct": 1.103951
+      "error_pct": 0.02841209036675077
     },
     {
       "lab": "immunology_lab",
@@ -645,33 +645,33 @@
       "lab": "immunology_lab",
       "property": "\u00a771 DNA Stacking \u0394G",
       "name": "CG/GC",
-      "computed": -2.210096172233185,
+      "computed": -2.1673761839859265,
       "measured": -2.17,
-      "error_pct": 1.84775
+      "error_pct": 0.12091318037204912
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a771 DNA Stacking \u0394G",
       "name": "GC/CG",
-      "computed": -2.210096172233185,
+      "computed": -2.2403440561097856,
       "measured": -2.24,
-      "error_pct": 1.334992
+      "error_pct": 0.015359647758276092
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a771 DNA Stacking \u0394G",
       "name": "GG/CC",
-      "computed": -1.871346242957499,
+      "computed": -1.8366053309085486,
       "measured": -1.84,
-      "error_pct": 1.7036
+      "error_pct": 0.1844928854049714
     },
     {
       "lab": "immunology_lab",
       "property": "\u00a771 DNA Stacking \u0394G",
       "name": "AC/TG",
-      "computed": -1.424151250403079,
+      "computed": -1.4399623905429433,
       "measured": -1.44,
-      "error_pct": 1.100608
+      "error_pct": 0.002611767851157243
     },
     {
       "lab": "immunology_lab",

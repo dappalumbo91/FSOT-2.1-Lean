@@ -1,27 +1,5 @@
 {
-  "drift_debt_count": 3,
-  "drift_debt": [
-    {
-      "concept_name": "cytochrome c",
-      "formula": "- pi ^ 2 - P_BASE",
-      "cached_error_pct": 0.178711,
-      "live_error_pct": 195.61642202821764,
-      "drift_pct": 195.43771102821765
-    },
-    {
-      "concept_name": "HCl",
-      "formula": "- e ^ 2 + sin ( 1 )",
-      "cached_error_pct": 3.929922,
-      "live_error_pct": 230.64328704346897,
-      "drift_pct": 226.71336504346897
-    },
-    {
-      "concept_name": "CO\u2082(g)",
-      "formula": "- e ^ 6 + pi ^ 2",
-      "cached_error_pct": 0.0125,
-      "live_error_pct": 205.02868996818998,
-      "drift_pct": 205.01618996819
-    }
-  ],
+  "drift_debt_count": 0,
+  "drift_debt": [],
   "note": "Rows where portable math_formula_eval disagrees with cached fsot_numeric_eval outcomes."
 }

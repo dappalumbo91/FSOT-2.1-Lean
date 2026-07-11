@@ -110,6 +110,8 @@ def _nebula_records(nebulae: list[dict], mod, spec: dict) -> list[dict]:
                 "computed": round(fsot_idx, 8),
                 "measured": round(obs_idx, 8),
                 "error_pct": 0.0 if match else 100.0,
+                "eval_kind": "classifier_match",
+                "record_kind": "classifier",
                 "kappa_lensing": kappa,
                 "mass_msun": mass,
                 "S_cosm": round(s_cosm, 6),

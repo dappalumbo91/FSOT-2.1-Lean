@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:30:02.295386+00:00",
+  "generated_at": "2026-07-11T15:14:38.843248+00:00",
   "domain": "Chaos_Mediated_Phase_Transitions",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -212,9 +212,9 @@
       "lab": "chaos_phase_transition_lab",
       "property": "mhd_beta_phase",
       "name": "z_pinch",
-      "computed": 1.000315,
-      "measured": 1.0,
-      "error_pct": 0.03147898006445882,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
       "source": "plasma_physics_benchmark.json",
       "beta": 0.12,
       "formula_branch": "term3.chaos_factor"
@@ -245,9 +245,9 @@
       "lab": "chaos_phase_transition_lab",
       "property": "mhd_beta_phase",
       "name": "reverse_field_pinch",
-      "computed": 1.000315,
-      "measured": 1.0,
-      "error_pct": 0.03147898006445882,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
       "source": "plasma_physics_benchmark.json",
       "beta": 0.11,
       "formula_branch": "term3.chaos_factor"
@@ -267,9 +267,9 @@
       "lab": "chaos_phase_transition_lab",
       "property": "mhd_beta_phase",
       "name": "fusion_ignition_edge",
-      "computed": 1.000315,
-      "measured": 1.0,
-      "error_pct": 0.03147898006445882,
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
       "source": "plasma_physics_benchmark.json",
       "beta": 0.14,
       "formula_branch": "term3.chaos_factor"
@@ -285,6 +285,18 @@
       "formula_branch": "term3.chaos_factor"
     }
   ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.03147898006445882,
+    "max_scalar_error_pct": 0.03147898006445882,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
   "formula_branch": "term3.chaos_factor",
   "plasma_phase_count": 20,
   "crosswalk_modules": [

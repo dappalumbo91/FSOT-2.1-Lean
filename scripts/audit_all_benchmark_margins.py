@@ -95,6 +95,14 @@ def main() -> int:
             op = r["official_pooled_median_error_pct"]
             ops = f"{op:.4f}" if op is not None else "n/a"
             print(f"  pooled={ops}  {r['domain'][:45]}")
+    if strict_fails:
+        print(f"\nSTRICT scalar max failures: {len(strict_fails)}")
+        for r in strict_fails[:15]:
+            print(
+                f"  {r['max_scalar_error_pct']:.4f}% {r.get('max_scalar_property')} "
+                f"— {r['domain'][:40]}"
+            )
+        return 1
     return 0
 
 

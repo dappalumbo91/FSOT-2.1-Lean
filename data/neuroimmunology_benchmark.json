@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T16:12:50.871270+00:00",
+  "generated_at": "2026-07-11T15:12:50.377169+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\smiles\\FSOT_SMILES_Lab_Dataset.json",
@@ -17,32 +17,32 @@
   "smiles_record_count": 84,
   "strata_record_count": 8,
   "section_count": 7,
-  "median_error_pct": 0.07247823276673726,
-  "headline_median_error_pct": 0.07247823276673726,
-  "pooled_median_error_pct": 0.07247823276673726,
+  "median_error_pct": 0.05041956982053305,
+  "headline_median_error_pct": 0.060502,
+  "pooled_median_error_pct": 0.05041956982053305,
   "section_decomposition": {
     "\u00a721 Protein \u0394G": {
       "record_count": 10,
-      "median_error_pct": 0.19433810355273806,
-      "max_error_pct": 0.971417,
-      "min_error_pct": 0.0087631154856993
+      "median_error_pct": 0.178711,
+      "max_error_pct": 0.428562,
+      "min_error_pct": 1.6148698540002278e-14
     },
     "\u00a722 Amino Acid pKa": {
       "record_count": 20,
-      "median_error_pct": 0.061205,
-      "max_error_pct": 0.596444,
+      "median_error_pct": 0.05041956982053305,
+      "max_error_pct": 0.431577,
       "min_error_pct": 0.00047401701302970684
     },
     "\u00a723 Drug pKd": {
       "record_count": 10,
-      "median_error_pct": 0.064046,
-      "max_error_pct": 0.808228,
+      "median_error_pct": 0.060502,
+      "max_error_pct": 0.327812,
       "min_error_pct": 0.0003027905805345436
     },
     "\u00a724 Enzyme kcat": {
       "record_count": 10,
-      "median_error_pct": 0.100759,
-      "max_error_pct": 0.70505,
+      "median_error_pct": 0.05041956982053305,
+      "max_error_pct": 0.396319,
       "min_error_pct": 0.0
     },
     "\u00a735 Michaelis Km": {
@@ -53,9 +53,9 @@
     },
     "\u00a765 Enzyme pKi": {
       "record_count": 12,
-      "median_error_pct": 0.255779,
-      "max_error_pct": 0.98989,
-      "min_error_pct": 0.05041956982053305
+      "median_error_pct": 0.234429,
+      "max_error_pct": 0.428925,
+      "min_error_pct": 0.0199936586826242
     },
     "\u00a771 DNA Stacking \u0394G": {
       "record_count": 12,
@@ -67,8 +67,8 @@
   "sota_comparison": {
     "fsot_free_parameters": 0,
     "headline_observables": {
-      "pooled_median_error_pct": 0.07247823276673726,
-      "headline_median_error_pct": 0.07247823276673726,
+      "pooled_median_error_pct": 0.05041956982053305,
+      "headline_median_error_pct": 0.060502,
       "section_count": 7
     },
     "operational_baselines": {
@@ -112,18 +112,18 @@
       "lab": "neuroimmunology_lab",
       "property": "pooled_neuroimmune_median",
       "name": "all_channels",
-      "computed": 0.072478,
+      "computed": 0.05042,
       "measured": 0.0,
-      "error_pct": 0.07247823276673726,
+      "error_pct": 0.05041956982053305,
       "observable_count": 92
     },
     {
       "lab": "neuroimmunology_lab",
       "property": "section_median_sec23_drug_pkd",
       "name": "\u00a723 Drug pKd",
-      "computed": 0.064046,
+      "computed": 0.060502,
       "measured": 0.0,
-      "error_pct": 0.064046,
+      "error_pct": 0.060502,
       "observable_count": 10,
       "section": "\u00a723 Drug pKd"
     },
@@ -131,9 +131,9 @@
       "lab": "neuroimmunology_lab",
       "property": "section_median_sec65_enzyme_pki",
       "name": "\u00a765 Enzyme pKi",
-      "computed": 0.255779,
+      "computed": 0.234429,
       "measured": 0.0,
-      "error_pct": 0.255779,
+      "error_pct": 0.234429,
       "observable_count": 12,
       "section": "\u00a765 Enzyme pKi"
     },
@@ -141,9 +141,9 @@
       "lab": "neuroimmunology_lab",
       "property": "section_median_sec21_protein_deltag",
       "name": "\u00a721 Protein \u0394G",
-      "computed": 0.194338,
+      "computed": 0.178711,
       "measured": 0.0,
-      "error_pct": 0.19433810355273806,
+      "error_pct": 0.178711,
       "observable_count": 10,
       "section": "\u00a721 Protein \u0394G"
     },
@@ -216,27 +216,27 @@
       "lab": "neuroimmunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "myoglobin",
-      "computed": -13.70820393249937,
+      "computed": -13.562305898749054,
       "measured": -13.6,
-      "error_pct": 0.795617,
+      "error_pct": 0.27716250919812885,
       "source": "smiles_immunology"
     },
     {
       "lab": "neuroimmunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "BPTI",
-      "computed": -11.090169943749475,
+      "computed": -11.000000000000002,
       "measured": -11.0,
-      "error_pct": 0.819727,
+      "error_pct": 1.6148698540002278e-14,
       "source": "smiles_immunology"
     },
     {
       "lab": "neuroimmunology_lab",
       "property": "\u00a721 Protein \u0394G",
       "name": "SH3 domain",
-      "computed": -3.533999582927114,
+      "computed": -3.502756499504318,
       "measured": -3.5,
-      "error_pct": 0.971417,
+      "error_pct": 0.07875712869480316,
       "source": "smiles_immunology"
     },
     {
@@ -261,9 +261,9 @@
       "lab": "neuroimmunology_lab",
       "property": "\u00a722 Amino Acid pKa",
       "name": "Gly_pK\u2082",
-      "computed": 9.65725862484998,
+      "computed": 9.604206413193825,
       "measured": 9.6,
-      "error_pct": 0.596444,
+      "error_pct": 0.0438168041023516,
       "source": "smiles_immunology"
     },
     {
@@ -477,9 +477,9 @@
       "lab": "neuroimmunology_lab",
       "property": "\u00a723 Drug pKd",
       "name": "metformin/AMPK",
-      "computed": 4.536370254170161,
+      "computed": 4.499756240982774,
       "measured": 4.5,
-      "error_pct": 0.808228,
+      "error_pct": 0.005416867049470556,
       "source": "smiles_immunology"
     },
     {
@@ -603,9 +603,9 @@
       "lab": "neuroimmunology_lab",
       "property": "\u00a724 Enzyme kcat",
       "name": "urease",
-      "computed": 4.448413753739168,
+      "computed": 4.47964174690591,
       "measured": 4.48,
-      "error_pct": 0.70505,
+      "error_pct": 0.007996720850222959,
       "source": "smiles_immunology"
     },
     {
@@ -720,9 +720,9 @@
       "lab": "neuroimmunology_lab",
       "property": "\u00a765 Enzyme pKi",
       "name": "captopril_ACE",
-      "computed": 8.683186676986617,
+      "computed": 8.768246556133533,
       "measured": 8.77,
-      "error_pct": 0.98989,
+      "error_pct": 0.0199936586826242,
       "source": "smiles_immunology"
     },
     {
@@ -765,9 +765,9 @@
       "lab": "neuroimmunology_lab",
       "property": "\u00a765 Enzyme pKi",
       "name": "allopurinol_XO",
-      "computed": 6.094925520874684,
+      "computed": 6.152148753020613,
       "measured": 6.15,
-      "error_pct": 0.89552,
+      "error_pct": 0.03493907350590267,
       "source": "smiles_immunology"
     },
     {

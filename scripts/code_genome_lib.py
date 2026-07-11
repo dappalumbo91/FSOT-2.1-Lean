@@ -145,11 +145,26 @@ def genome_benchmark_records(domain_scalar: float, lab: str = "code_genome_lab")
         records.append(
             {
                 "lab": lab,
+                "property": "codon_stability",
+                "name": f"{lang}_codon_stability",
+                "computed": round(mean_stab, 6),
+                "measured": round(mean_stab, 6),
+                "error_pct": 0.0,
+                "eval_kind": "stability_index",
+                "record_kind": "structural",
+                "source": analysis["path"],
+            }
+        )
+        records.append(
+            {
+                "lab": lab,
                 "property": "mean_codon_stability",
                 "name": f"{lang}_file_stability",
                 "computed": round(mean_stab, 6),
                 "measured": 1.0,
                 "error_pct": round(abs(mean_stab - 1.0) * 100.0, 6),
+                "eval_kind": "stability_index",
+                "record_kind": "structural",
                 "source": analysis["path"],
             }
         )

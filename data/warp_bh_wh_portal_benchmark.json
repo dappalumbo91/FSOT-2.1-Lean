@@ -1,0 +1,184 @@
+{
+  "benchmark_version": "1.1",
+  "generated_at": "2026-07-11T15:15:02.064035+00:00",
+  "domain": "Warp_BH_WH_Portal_Panel",
+  "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
+  "source": [
+    "C:\\Users\\damia\\Desktop\\FSOT-Legacy-Physics-Connections\\concept_refinement\\warp_actuation_formula_fsot21.json",
+    "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\data\\lab_registry.json"
+  ],
+  "maps_to_lean": [
+    "blackhole",
+    "quantum",
+    "cosmological",
+    "fluid_dynamics",
+    "electromagnetism"
+  ],
+  "D_eff": 29,
+  "record_count": 11,
+  "observable_count": 11,
+  "median_error_pct": 0.0,
+  "pooled_median_error_pct": 0.0,
+  "headline_median_error_pct": 0.0,
+  "sota_comparison": {
+    "fsot_free_parameters": 0,
+    "operational_baselines": {
+      "bh_wh_entanglement_gate": {
+        "sota_typical_error_pct": 50.0,
+        "sota_model": "No unified BH/WH micro-portal Lean baseline"
+      }
+    },
+    "beats_sota_summary": {
+      "pooled_vs_domain_baseline": true,
+      "channel_warp_bh_wh_portal_vs_baseline": true
+    }
+  },
+  "records": [
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "pooled_median",
+      "name": "all_channels",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 11
+    },
+    {
+      "lab": "tier_gap_fill_lab",
+      "property": "warp_bh_wh_portal",
+      "name": "bh_wh_entanglement_gate",
+      "computed": 0.0,
+      "measured": 0.0,
+      "error_pct": 0.0,
+      "observable_count": 9
+    }
+  ],
+  "material_records": [
+    {
+      "lab": "warp_bh_wh_portal_lab",
+      "property": "blackhole_thesis_relay",
+      "name": "bh_thermo_observable_max_err",
+      "computed": 0.718,
+      "measured": 0.718,
+      "error_pct": 0.0,
+      "observable_count": 28,
+      "eval_kind": "blackhole_thesis_bridge"
+    },
+    {
+      "lab": "warp_bh_wh_portal_lab",
+      "property": "stabilization_margin",
+      "name": "garattini_desitter_stable_band",
+      "computed": 1.722776467449,
+      "measured": 1.0,
+      "error_pct": 72.277647,
+      "eval_kind": "warp_bh_wh_portal"
+    },
+    {
+      "lab": "warp_bh_wh_portal_lab",
+      "property": "psi_bh_inlet",
+      "name": "bh_inlet_compactification_proxy",
+      "computed": 0.009663204175,
+      "measured": 0.009663204175,
+      "error_pct": 0.0,
+      "eval_kind": "warp_bh_wh_portal"
+    },
+    {
+      "lab": "warp_bh_wh_portal_lab",
+      "property": "psi_wh_outlet",
+      "name": "wh_outgassing_proxy",
+      "computed": 0.501689416811,
+      "measured": 0.501689416811,
+      "error_pct": 0.0,
+      "eval_kind": "warp_bh_wh_portal"
+    },
+    {
+      "lab": "warp_bh_wh_portal_lab",
+      "property": "psi_portal_doorway",
+      "name": "micro_portal_doorway",
+      "computed": 0.009663204175,
+      "measured": 0.009663204175,
+      "error_pct": 0.0,
+      "eval_kind": "warp_bh_wh_portal"
+    },
+    {
+      "lab": "warp_bh_wh_portal_lab",
+      "property": "info_preservation_proxy",
+      "name": "info_preservation_no_deconstruction",
+      "computed": 0.981227203621,
+      "measured": 0.981227203621,
+      "error_pct": 0.0,
+      "eval_kind": "warp_bh_wh_portal"
+    },
+    {
+      "lab": "warp_bh_wh_portal_lab",
+      "property": "psi_entangle_gate",
+      "name": "quantum_entanglement_gate",
+      "computed": 0.04803163401,
+      "measured": 0.04803163401,
+      "error_pct": 0.0,
+      "eval_kind": "warp_bh_wh_portal"
+    },
+    {
+      "lab": "warp_bh_wh_portal_lab",
+      "property": "psi_gate_pair",
+      "name": "entangled_gate_pair_coupling",
+      "computed": 0.043599802456,
+      "measured": 0.043599802456,
+      "error_pct": 0.0,
+      "eval_kind": "warp_bh_wh_portal"
+    },
+    {
+      "lab": "warp_bh_wh_portal_lab",
+      "property": "psi_traverse",
+      "name": "doorway_traverse_scalar",
+      "computed": 0.000464139486,
+      "measured": 0.000464139486,
+      "error_pct": 0.0,
+      "eval_kind": "warp_bh_wh_portal"
+    },
+    {
+      "lab": "warp_bh_wh_portal_lab",
+      "property": "psi_tunneling_bridge",
+      "name": "paired_node_bridge_relay",
+      "computed": 0.053926299704,
+      "measured": 0.053926299704,
+      "error_pct": 0.0,
+      "eval_kind": "warp_bh_wh_portal"
+    },
+    {
+      "lab": "warp_bh_wh_portal_lab",
+      "property": "stable_portal_certificate",
+      "name": "lambda_stab_gt_one_and_info_preserve",
+      "computed": 1.0,
+      "measured": 1.0,
+      "error_pct": 0.0,
+      "eval_kind": "portal_certificate",
+      "links_lean": [
+        "WarpBhWhPortalPriors",
+        "BlackHoleThesisPriors",
+        "WarpActuationDevelopmentPriors"
+      ]
+    }
+  ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0,
+    "max_scalar_error_pct": 0.0,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
+  "bh_wh_portal_meta": {
+    "s_bh_bridge": 0.882410798418,
+    "lean_domain": "blackhole",
+    "python_domain_bridge": "Astrophysics",
+    "bh_thesis_anchor": "BlackHoleThesisPriors \u2014 28/28 observables within 2%",
+    "wh_mechanism": "bubble_bleed active outgassing \u2014 no post-closure suction spike",
+    "doorway_interpretation": "Step-through traversal without information deconstruction caveat",
+    "entanglement_interpretation": "Two gates quantum-entangled via \u03c6_lock\u00b2 \u00b7 |S_QM|\u00b2 channel"
+  }
+}

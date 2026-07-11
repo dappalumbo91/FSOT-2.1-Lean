@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:30:03.172568+00:00",
+  "generated_at": "2026-07-11T15:14:40.435110+00:00",
   "domain": "Proof_Carrying_Code_Genome",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -319,6 +319,18 @@
       "formula_branch": "term1.perceived_adjust"
     }
   ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.0051685586271776884,
+    "max_scalar_error_pct": 0.005906924145354116,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
   "oss_affinity_pair_count": 8,
   "formula_branch": "term1.perceived_adjust",
   "crosswalk_modules": [

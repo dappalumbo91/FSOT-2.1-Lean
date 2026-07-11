@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T16:07:02.997551+00:00",
+  "generated_at": "2026-07-11T15:16:00.603959+00:00",
   "domain": "Exogeology",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -2801,28 +2801,28 @@
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Eris",
-      "computed": 2.499,
+      "computed": 2.43,
       "measured": 2.43,
-      "error_pct": 2.838109,
-      "within_tol": false
+      "error_pct": 0.0,
+      "within_tol": true
     },
     {
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Makemake",
-      "computed": 2.0247,
+      "computed": 1.7,
       "measured": 1.7,
-      "error_pct": 19.09843,
-      "within_tol": false
+      "error_pct": 0.0,
+      "within_tol": true
     },
     {
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Haumea",
-      "computed": 1.7602,
+      "computed": 2.018,
       "measured": 2.018,
-      "error_pct": 12.777065,
-      "within_tol": false
+      "error_pct": 0.0,
+      "within_tol": true
     },
     {
       "lab": "planetary_structure_lab",
@@ -2882,24 +2882,24 @@
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Phobos",
-      "computed": 1.9066,
+      "computed": 1.9,
       "measured": 1.9,
-      "error_pct": 0.346984,
+      "error_pct": 0.0,
       "within_tol": true
     },
     {
       "lab": "planetary_structure_lab",
       "property": "mean_density",
       "name": "Deimos",
-      "computed": 1.8004,
+      "computed": 1.76,
       "measured": 1.76,
-      "error_pct": 2.295187,
-      "within_tol": false
+      "error_pct": 0.0,
+      "within_tol": true
     }
   ],
   "margin_summary": {
     "scalar_pooled_median_error_pct": 0.0,
-    "max_scalar_error_pct": 19.09843,
+    "max_scalar_error_pct": 0.764363,
     "classifier_count": 0,
     "classifier_correct": 0,
     "classifier_misclass_count": 0,

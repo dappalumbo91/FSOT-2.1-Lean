@@ -125,8 +125,14 @@ completed_tiers:
     - RD_Interval_Tightening_Panel
     - Domain_Coupling_Simulation_Refresh_Panel
     - Fluid_Spacetime_Prereg_Validation_Panel
+  tier_78:
+    - Warp_BH_WH_Portal_Panel
 
 priority_queue:
+  tier_78_warp_bh_wh_portal:
+    status: completed
+    focus: [warp_bh_wh_portal, blackhole_thesis_crosswalk, quantum_entanglement_gate]
+    note: "Synthetic stabilized BH↔WH doorway + entangled gate pair — physics from legacy warp actuation, linked to BlackHoleThesisPriors"
   tier_77_post_tier76_maintenance:
     status: completed
     focus: [hybrid_fi_sim_multi_hero, knowledge_base_portable_bundle, rd_interval_tightening, domain_coupling_simulation_refresh, fluid_spacetime_prereg_validation]

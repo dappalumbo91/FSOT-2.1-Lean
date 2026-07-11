@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T14:59:21.223919+00:00",
+  "generated_at": "2026-07-11T15:13:36.257168+00:00",
   "domain": "CVE_Codon_Hole_Falsification",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -102,9 +102,9 @@
       "error_pct": 0.009186636881580057,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
+        "strcpy",
         "memcpy",
-        "malloc",
-        "strcpy"
+        "malloc"
       ]
     },
     {
@@ -116,8 +116,8 @@
       "error_pct": 0.009186636881593031,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
-        "free",
-        "malloc"
+        "malloc",
+        "free"
       ]
     },
     {
@@ -129,9 +129,9 @@
       "error_pct": 0.009186636881591562,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
+        "strcpy",
         "memcpy",
-        "malloc",
-        "strcpy"
+        "malloc"
       ]
     },
     {
@@ -242,8 +242,8 @@
       "error_pct": 0.009186636881584795,
       "source": "cisa_kev_summary.json",
       "risk_tokens": [
-        "malloc",
-        "strcpy"
+        "strcpy",
+        "malloc"
       ]
     },
     {
@@ -300,8 +300,8 @@
       "lab": "cve_codon_falsification_lab",
       "property": "sample_hole_detected",
       "name": "cpython_ceval",
-      "computed": 4.0,
-      "measured": 4.0,
+      "computed": 5.0,
+      "measured": 5.0,
       "error_pct": 0.0,
       "source": "vendor\\github_oss\\snapshots\\cpython_ceval.c",
       "cwe_token_overlap": [
@@ -309,7 +309,7 @@
         "static",
         "void"
       ],
-      "hole_count": 4
+      "hole_count": 5
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -343,8 +343,8 @@
       "lab": "cve_codon_falsification_lab",
       "property": "sample_hole_detected",
       "name": "redis_sds",
-      "computed": 7.0,
-      "measured": 7.0,
+      "computed": 8.0,
+      "measured": 8.0,
       "error_pct": 0.0,
       "source": "vendor\\github_oss\\snapshots\\redis_sds.c",
       "cwe_token_overlap": [
@@ -353,7 +353,7 @@
         "static",
         "void"
       ],
-      "hole_count": 7
+      "hole_count": 8
     },
     {
       "lab": "cve_codon_falsification_lab",
@@ -423,6 +423,18 @@
       "source": "cwe_codon_map"
     }
   ],
+  "margin_summary": {
+    "scalar_pooled_median_error_pct": 0.009186636881580057,
+    "max_scalar_error_pct": 0.03062212293865052,
+    "classifier_count": 0,
+    "classifier_correct": 0,
+    "classifier_misclass_count": 0,
+    "classifier_accuracy_pct": null,
+    "classifier_misclass_rate_pct": null,
+    "classifier_pass": true,
+    "fsot_precision_aligned": true
+  },
+  "fsot_precision_gate_pct": 0.5,
   "kev_record_count": 1635,
   "sample_analyzed_count": 12,
   "hole_detection_rate": 0.75,

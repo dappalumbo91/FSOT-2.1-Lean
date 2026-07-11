@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-10T17:50:41.418827+00:00",
+  "generated_at": "2026-07-11T15:14:54.728915+00:00",
   "domain": "Fluid_Phase_Current_Spine",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
@@ -71,9 +71,9 @@
       "lab": "fluid_phase_current_spine_lab",
       "property": "fpc_pillar",
       "name": "time_domain_crosswalk",
-      "computed": 160.0,
-      "measured": 160.0,
-      "error_pct": 0.025013,
+      "computed": 250.0,
+      "measured": 250.0,
+      "error_pct": 0.028056,
       "source": "Time_Domain_Crosswalk",
       "status": "GREEN"
     },
@@ -100,8 +100,8 @@
       "lab": "fluid_phase_current_spine_lab",
       "property": "crosswalk_domains",
       "name": "multi_domain_fpc",
-      "computed": 156.014826,
-      "measured": 156.0,
+      "computed": 246.02338,
+      "measured": 246.0,
       "error_pct": 0.009504,
       "source": "fluid_phase_current_spine"
     },
@@ -137,7 +137,7 @@
   },
   "fsot_precision_gate_pct": 0.5,
   "fluidlink_edge_count": 6,
-  "crosswalk_domain_count": 156,
+  "crosswalk_domain_count": 246,
   "fold_spine_status": "GREEN",
   "time_simulation_status": "GREEN",
   "crosswalk_status": "GREEN",

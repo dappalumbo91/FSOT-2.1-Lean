@@ -1,6 +1,6 @@
 {
   "benchmark_version": "1.1",
-  "generated_at": "2026-07-09T12:15:21.853117+00:00",
+  "generated_at": "2026-07-11T15:12:30.928319+00:00",
   "authority_path": "C:\\Users\\damia\\Desktop\\FSOT-2.1-Lean\\FSOT-2.1-Lean-main\\FSOT-2.1-Lean-main\\vendor\\fsot_compute.py",
   "source": [
     "vendor/smiles/FSOT_SMILES_Lab_Dataset.json",
@@ -36,8 +36,8 @@
     },
     "\u00a750 Diffusion D": {
       "record_count": 2,
-      "median_error_pct": 0.934321,
-      "max_error_pct": 0.934321,
+      "median_error_pct": 0.039692639668439104,
+      "max_error_pct": 0.039692639668439104,
       "min_error_pct": 0.01022181171193495
     },
     "\u00a751 Solubility logS": {
@@ -82,7 +82,7 @@
     },
     "smiles_food_chemistry": {
       "record_count": 10,
-      "median_error_pct": 0.052193
+      "median_error_pct": 0.04553530974273094
     }
   },
   "sota_comparison": {
@@ -213,9 +213,9 @@
       "lab": "culinary_arts_lab",
       "property": "\u00a750 Diffusion D",
       "name": "glucose",
-      "computed": 0.6792879831636383,
+      "computed": 0.6727328685350314,
       "measured": 0.673,
-      "error_pct": 0.934321,
+      "error_pct": 0.039692639668439104,
       "source": "smiles_food_chemistry"
     },
     {
